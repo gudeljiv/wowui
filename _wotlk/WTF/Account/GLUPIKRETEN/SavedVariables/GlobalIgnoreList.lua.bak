@@ -58,7 +58,7 @@ GlobalIgnoreDB = {
 		"[contains=WTS] or [contains=WTB]", -- [9]
 		"[nonlatin]", -- [10]
 	},
-	["trackChanges"] = true,
+	["autoTime"] = 600,
 	["autoCount"] = 3,
 	["sameserver"] = true,
 	["ignoreList"] = {
@@ -92,7 +92,7 @@ GlobalIgnoreDB = {
 		"Rikaya-Golemagg", -- [28]
 		"Tirbuson-Golemagg", -- [29]
 	},
-	["autoUpdate"] = true,
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 		"Horde", -- [1]
@@ -256,7 +256,7 @@ GlobalIgnoreDB = {
 		"rude moron", -- [28]
 		"annoying", -- [29]
 	},
-	["autoTime"] = 600,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
 	["syncInfo"] = {
 		{

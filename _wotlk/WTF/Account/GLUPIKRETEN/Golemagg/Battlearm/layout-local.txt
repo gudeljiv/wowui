@@ -60,7 +60,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 78
+W: 80
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
@@ -90,13 +90,6 @@ X: -350
 Y: -158
 W: 325
 H: 375
-Frame: BagnonInventoryFrame1
-FrameLevel: 1
-Anchor: RIGHT
-X: -363
-Y: -112
-W: 414
-H: 460
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

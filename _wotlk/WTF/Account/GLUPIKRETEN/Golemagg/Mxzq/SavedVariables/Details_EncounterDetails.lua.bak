@@ -3522,14 +3522,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sartharion",
 		},
-		[50155] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Keristrasza",
-		},
 		[5246] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -3538,13 +3530,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Warhak",
-		},
-		[55078] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Jaffrost",
 		},
 		[28798] = {
 			["school"] = 1,
@@ -3563,6 +3548,20 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Unrelenting Rider",
+		},
+		[56438] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+		},
+		[348809] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Heigan the Unclean",
 		},
 		[60065] = {
 			["school"] = 1,
@@ -3590,19 +3589,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nexus Lord",
 		},
-		[56438] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[54362] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Grobbulus Cloud",
 		},
-		[348809] = {
+		[55078] = {
 			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Heigan the Unclean",
+			["source"] = "Jaffrost",
 		},
 		[61248] = {
 			["school"] = 1,
@@ -3623,15 +3624,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ormorok the Tree-Shaper",
 		},
-		[54362] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Grobbulus Cloud",
-		},
 		[49668] = {
 			["school"] = 32,
 			["token"] = {
@@ -3640,6 +3632,14 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Crystal Handler",
+		},
+		[50155] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Keristrasza",
 		},
 		[28547] = {
 			["school"] = 16,
@@ -3670,14 +3670,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sapphiron",
 		},
-		[49356] = {
+		[57570] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "The Prophet Tharon'ja",
+			["source"] = "Tenebron",
 		},
 		[49805] = {
 			["school"] = 32,
@@ -3708,13 +3707,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rokmar the Crackler",
 		},
-		[57570] = {
+		[49356] = {
 			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Tenebron",
+			["source"] = "The Prophet Tharon'ja",
 		},
 		[61632] = {
 			["school"] = 1,
@@ -3723,22 +3723,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sartharion",
 		},
+		[42972] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Dragonflayer Strategist",
+		},
 		[50475] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Jaffrost",
-		},
-		[28882] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Baron Rivendare",
 		},
 		[28834] = {
 			["school"] = 1,
@@ -3756,15 +3755,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bhamiko",
 		},
-		[42972] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Dragonflayer Strategist",
-		},
 		[49548] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -3774,6 +3764,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "The Prophet Tharon'ja",
+		},
+		[28882] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Baron Rivendare",
 		},
 		[48819] = {
 			["school"] = 2,
@@ -3791,13 +3791,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scion of Eternity",
 		},
-		[15496] = {
-			["school"] = 1,
+		[35322] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Plagued Warrior",
+			["source"] = "Gatewatcher Iron-Hand",
 		},
 		[27819] = {
 			["school"] = 32,
@@ -3915,14 +3914,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Novos the Summoner",
 		},
-		[28131] = {
+		[50092] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Patchwerk",
+			["source"] = "7th Legion Rifleman",
 		},
 		[56405] = {
 			["school"] = 32,
@@ -3991,14 +3990,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Stalagg",
 		},
-		[50092] = {
+		[28131] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "7th Legion Rifleman",
+			["source"] = "Patchwerk",
 		},
 		[47944] = {
 			["school"] = 1,
@@ -4058,12 +4057,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Eaine",
 		},
-		[35322] = {
-			["school"] = 32,
+		[15496] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Gatewatcher Iron-Hand",
+			["source"] = "Plagued Warrior",
 		},
 		[42740] = {
 			["school"] = 32,

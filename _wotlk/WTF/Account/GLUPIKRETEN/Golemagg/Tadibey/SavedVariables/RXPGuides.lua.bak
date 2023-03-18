@@ -1,25 +1,24 @@
 
 RXPCData = {
-	["stepSkip"] = {
-		[15] = true,
-		[7] = true,
-	},
+	["GA"] = true,
 	["completedWaypoints"] = {
-		[18] = {
-		},
 	},
-	["currentStep"] = 18,
-	["currentGuideName"] = "22-25 Hillsbrad / South Barrens",
-	["currentGuideGroup"] = "RestedXP Horde 1-30",
+	["currentStep"] = 1,
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
+		[61] = "Splintertree Post, Ashenvale",
+		[77] = "Camp Taurajo, The Barrens",
+		[58] = "Zoram'gar Outpost, Ashenvale",
+		[10] = "The Sepulcher, Silverpine Forest",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[11] = "Undercity, Tirisfal",
 		[80] = "Ratchet, The Barrens",
-		[25] = "Crossroads, The Barrens",
-		[10] = "The Sepulcher, Silverpine Forest",
 		[23] = "Orgrimmar, Durotar",
-		[77] = "Camp Taurajo, The Barrens",
+		[25] = "Crossroads, The Barrens",
 	},
-	["GA"] = false,
+	["currentGuideGroup"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -38,10 +37,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 12,
-							["weekday"] = 6,
+							["minute"] = 30,
 							["year"] = 2022,
 							["hour"] = 13,
-							["minute"] = 30,
+							["weekday"] = 6,
 						},
 						["started"] = 0,
 					},
@@ -85,12 +84,12 @@ RXPCComms = {
 					["xp"] = 58,
 				},
 				["Klegg"] = {
-					["isRxp"] = true,
+					["class"] = "ROGUE",
 					["lastSeen"] = 59377.458,
 					["xpPercentage"] = 47,
-					["level"] = 17,
+					["isRxp"] = true,
 					["timePlayed"] = 3142.248,
-					["class"] = "ROGUE",
+					["level"] = 17,
 				},
 				["Logges"] = {
 					["timePlayed"] = 1704.800000000047,
@@ -102,35 +101,35 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1260,
 				},
-				["Ayatolla"] = {
-					["timePlayed"] = 3142.248,
-					["class"] = "PALADIN",
-					["xp"] = 277,
+				["Shync"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 178,
 				},
 				["Wlm"] = {
 					["timePlayed"] = 0,
 					["class"] = "PALADIN",
 					["xp"] = 1260,
 				},
-				["Palepala"] = {
-					["timePlayed"] = 1227.956000000006,
+				["Astaltceva"] = {
+					["timePlayed"] = 1918.859000000055,
 					["class"] = "PALADIN",
-					["xp"] = 277,
+					["xp"] = 170,
 				},
 				["Tirbuson"] = {
 					["timePlayed"] = 3142.248,
 					["class"] = "PALADIN",
 					["xp"] = 277,
 				},
-				["Astaltceva"] = {
-					["timePlayed"] = 1918.859000000055,
+				["Palepala"] = {
+					["timePlayed"] = 1227.956000000006,
 					["class"] = "PALADIN",
-					["xp"] = 170,
+					["xp"] = 277,
 				},
-				["Shync"] = {
-					["timePlayed"] = 0,
-					["class"] = "WARRIOR",
-					["xp"] = 178,
+				["Ayatolla"] = {
+					["timePlayed"] = 3142.248,
+					["class"] = "PALADIN",
+					["xp"] = 277,
 				},
 				["Grotbag"] = {
 					["timePlayed"] = 2291.224000000104,
@@ -152,21 +151,21 @@ RXPCSettings = {
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableTargetAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["enableBindAutomation"] = false,
 			["xprate"] = 1.2,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableFlyStepAnnouncements"] = false,
+			["frameHeight"] = 125.0001068115234,
 			["alwaysSendBranded"] = false,
 			["enableQuestRewardAutomation"] = true,
 			["hideInRaid"] = false,
-			["frameHeight"] = 125.0001068115234,
+			["enableFlyStepAnnouncements"] = false,
 		},
 	},
 }
