@@ -90,13 +90,6 @@ X: -359
 Y: 102
 W: 960
 H: 640
-Frame: BagnonBankFrame1
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 199
-Y: -91
-W: 414
-H: 740
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
