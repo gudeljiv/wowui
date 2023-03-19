@@ -60,7 +60,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 313
 Y: -74
-W: 78
+W: 81
 H: 40
 Frame: Dejunk_ParentFrame
 FrameLevel: 1
@@ -90,6 +90,13 @@ X: -359
 Y: 102
 W: 960
 H: 640
+Frame: BagnonBankFrame1
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 199
+Y: -91
+W: 414
+H: 740
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
