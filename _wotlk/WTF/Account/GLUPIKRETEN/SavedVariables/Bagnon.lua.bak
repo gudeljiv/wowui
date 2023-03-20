@@ -196,10 +196,10 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 106.6655731201172,
+			["x"] = 198.8560333251953,
 			["search"] = true,
 			["broker"] = false,
-			["y"] = -281.1646728515625,
+			["y"] = -91.4501953125,
 			["hiddenRules"] = {
 			},
 			["itemScale"] = 1,

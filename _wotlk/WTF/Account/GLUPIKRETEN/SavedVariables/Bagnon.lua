@@ -191,13 +191,13 @@ Bagnon_Sets = {
 			["alpha"] = 1,
 			["scale"] = 1,
 			["bagBreak"] = false,
-			["x"] = 106.6655731201172,
+			["x"] = 198.8560333251953,
 			["search"] = true,
 			["broker"] = false,
 			["itemScale"] = 1,
 			["hiddenRules"] = {
 			},
-			["y"] = -281.1646728515625,
+			["y"] = -91.4501953125,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
