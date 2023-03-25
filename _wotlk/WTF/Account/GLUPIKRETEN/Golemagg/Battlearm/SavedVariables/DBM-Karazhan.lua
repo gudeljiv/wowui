@@ -19,7 +19,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Oz"] = {
+	["RomuloAndJulianne"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -38,7 +38,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Hyakiss"] = {
+	["Curator"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -96,7 +96,7 @@ DBMKarazhan_SavedStats = {
 		["challengePulls"] = 0,
 	},
 	["Attumen"] = {
-		["normalPulls"] = 4,
+		["normalPulls"] = 5,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
 		["mythicKills"] = 0,
@@ -104,16 +104,16 @@ DBMKarazhan_SavedStats = {
 		["heroic25Pulls"] = 0,
 		["lfr25Pulls"] = 0,
 		["normal25Pulls"] = 0,
-		["normalLastTime"] = 266.23199999996,
-		["normalKills"] = 4,
+		["normalLastTime"] = 245.9749999999767,
+		["normalKills"] = 5,
 		["mythicPulls"] = 0,
-		["heroic25Kills"] = 0,
+		["normalBestTime"] = 245.9749999999767,
 		["heroicKills"] = 0,
 		["timewalkerPulls"] = 0,
 		["normal25Kills"] = 0,
 		["heroicPulls"] = 0,
 		["timewalkerKills"] = 0,
-		["normalBestTime"] = 266.23199999996,
+		["heroic25Kills"] = 0,
 		["challengePulls"] = 0,
 	},
 	["Netherspite"] = {
@@ -154,7 +154,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["Curator"] = {
+	["Hyakiss"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -268,7 +268,7 @@ DBMKarazhan_SavedStats = {
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["RomuloAndJulianne"] = {
+	["Oz"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,

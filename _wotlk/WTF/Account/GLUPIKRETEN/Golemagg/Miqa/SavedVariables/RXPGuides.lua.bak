@@ -1,15 +1,30 @@
 
 RXPCData = {
-	["GA"] = true,
-	["completedWaypoints"] = {
-	},
-	["currentStep"] = 1,
-	["currentGuideName"] = "",
 	["stepSkip"] = {
+		[46] = true,
+		[33] = true,
+		[50] = true,
+		[37] = true,
+		[39] = true,
+		[15] = true,
+		[21] = true,
+		[34] = true,
+		[13] = true,
+		[7] = true,
+		[11] = true,
+		[4] = true,
+		[41] = true,
 	},
+	["completedWaypoints"] = {
+		[58] = {
+		},
+	},
+	["currentStep"] = 58,
+	["currentGuideName"] = "06-10 Durotar",
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
 	["flightPaths"] = {
 	},
-	["currentGuideGroup"] = "",
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -28,10 +43,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -57,18 +72,23 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Miqa - Golemagg"] = {
+			["notifyOnTargetUpdates"] = false,
+			["enableBindAutomation"] = false,
 			["enableFPAutomation"] = false,
 			["hardcore"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableMinimapButton"] = false,
 			["activeItemsScale"] = 1.2,
 			["checkVersions"] = false,
+			["enableTargetMacro"] = false,
+			["enableTargetAutomation"] = false,
 			["enableTracker"] = false,
-			["frameHeight"] = 125.000114440918,
-			["enableLevelUpAnnounceSolo"] = false,
+			["frameHeight"] = 125.0001068115234,
+			["macroAnnounced"] = true,
+			["xprate"] = 1.2,
 			["alwaysSendBranded"] = false,
-			["enableBindAutomation"] = false,
 			["enableFlyStepAnnouncements"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
 		},
 	},
 }

@@ -215,7 +215,17 @@ data = {
         "secondary": []
     },
     "priest": {
-        "main": [],
+        "main": [
+            {"name": "shoot", "type": "GetSpellTexture", "id": 5019, "key": "1"},
+            {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
+            {"name": "power word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
+            {"name": "power word pain mouseover", "type": "GetSpellTexture", "id": 47948, "key": "1", "modifier": "lshift"},
+            {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},
+            {"name": "smite", "type": "GetSpellTexture", "id": 591, "key": "5", "modifier": "lshift"},
+            {"name": "lesser heal", "type": "GetSpellTexture", "id": 2052, "key": "e"},
+            {"name": "renew", "type": "GetSpellTexture", "id": 139, "key": "g"},
+            {"name": "inner fire", "type": "GetSpellTexture", "id": 588, "key": "f6"},
+        ],
         "secondary": []
     }
 }
