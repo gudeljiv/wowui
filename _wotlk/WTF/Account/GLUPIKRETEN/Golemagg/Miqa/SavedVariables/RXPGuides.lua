@@ -1,17 +1,18 @@
 
 RXPCData = {
-	["GA"] = false,
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
+	["GA"] = false,
 	["stepSkip"] = {
 	},
 	["flightPaths"] = {
-		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
+		[23] = "Orgrimmar, Durotar",
+		[80] = "Ratchet, The Barrens",
 	},
-	["currentGuideGroup"] = "",
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -30,10 +31,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -52,13 +53,13 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Santasanni"] = {
+					["class"] = "MAGE",
+					["level"] = 9,
+					["lastSeen"] = 783331.454,
 					["xpPercentage"] = 65,
 					["isRxp"] = true,
-					["lastSeen"] = 783331.454,
-					["timePlayed"] = 86.10600000002887,
-					["level"] = 9,
 					["xp"] = 54,
-					["class"] = "MAGE",
+					["timePlayed"] = 86.10600000002887,
 				},
 			},
 		},

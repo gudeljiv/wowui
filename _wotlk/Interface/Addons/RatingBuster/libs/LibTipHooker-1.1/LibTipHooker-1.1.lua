@@ -116,6 +116,8 @@ local TooltipList = {
     "MirrorTooltip",-- Mirror
     "TooltipExchange_TooltipShow",-- TooltipExchange
     "AtlasQuestTooltip",-- AtlasQuest
+	"votingframe_ShoppingTooltip1",--RClootcouncil
+	"votingframe_ShoppingTooltip2",--RClootcouncil
   },
   buff = {
     "GameTooltip",
@@ -300,10 +302,16 @@ local function CreateFrameHook(frameType, name, parent, inheritFrame)
           --print("CreateFrameHook("..tipType..") = "..name)
           local tooltip = _G[name]
           for _, methodName in ipairs(MethodList[tipType]) do
-            if (type(tooltip[methodName]) == "function") and (not TipHooker.HookedFrames[name]) then
-              hooksecurefunc(tooltip, methodName, Set[tipType])
+            
+			if HookedFrames then
 
+			--print("InitializeHook("..tipType..") = "..name)
 			
+				if (type(tooltip[methodName]) == "function") then --and (not TipHooker.HookedFrames[name]) then
+				  hooksecurefunc(tooltip, methodName, Set[tipType])
+
+				
+				end
 			end
           end
         break

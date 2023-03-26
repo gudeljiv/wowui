@@ -216,7 +216,7 @@ data = {
     },
     "priest": {
         "main": [
-            {"name": "shoot", "type": "GetSpellTexture", "id": 5019, "key": "1"},
+            {"name": "shoot", "type": "GetSpellTexture", "id": 3018, "key": "1"},
             {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             {"name": "power word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
             {"name": "power word pain mouseover", "type": "GetSpellTexture", "id": 47948, "key": "1", "modifier": "lshift"},
