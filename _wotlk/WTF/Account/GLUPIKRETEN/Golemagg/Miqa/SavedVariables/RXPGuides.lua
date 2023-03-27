@@ -1,18 +1,18 @@
 
 RXPCData = {
-	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = false,
+	["currentGuideName"] = "",
 	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[25] = "Crossroads, The Barrens",
 		[23] = "Orgrimmar, Durotar",
 		[80] = "Ratchet, The Barrens",
 	},
-	["stepSkip"] = {
-	},
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -31,10 +31,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -53,18 +53,23 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Santasanni"] = {
+					["level"] = 9,
+					["class"] = "MAGE",
+					["lastSeen"] = 783331.454,
 					["timePlayed"] = 86.10600000002887,
 					["isRxp"] = true,
-					["lastSeen"] = 783331.454,
-					["xpPercentage"] = 65,
-					["class"] = "MAGE",
 					["xp"] = 54,
-					["level"] = 9,
+					["xpPercentage"] = 65,
 				},
 				["Bigtrollsky"] = {
 					["timePlayed"] = 495.5109999999404,
 					["class"] = "PRIEST",
 					["xp"] = 43,
+				},
+				["Phatkhan"] = {
+					["timePlayed"] = 87.6019999999553,
+					["class"] = "PRIEST",
+					["xp"] = 53,
 				},
 				["Erebeer"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -94,7 +99,7 @@ RXPCSettings = {
 			["enableBindAutomation"] = false,
 			["macroAnnounced"] = true,
 			["xprate"] = 1.2,
-			["frameHeight"] = 125.000114440918,
+			["frameHeight"] = 125.0001068115234,
 			["alwaysSendBranded"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
