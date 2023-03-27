@@ -59,26 +59,26 @@ GDKPd_DB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
+			["movable"] = false,
+			["appearScale"] = 1.2,
 			["playerbalancepoint"] = {
 				["y"] = 316.6665649414063,
 				["relative"] = "RIGHT",
 				["point"] = "RIGHT",
 				["x"] = -263.6590881347656,
 			},
-			["showAuctionDurationTimerText"] = true,
-			["movable"] = false,
-			["appearScale"] = 1.2,
-			["statuspoint"] = {
-				["y"] = -331.8890686035156,
-				["relative"] = "TOPRIGHT",
-				["point"] = "TOPRIGHT",
-				["x"] = -227.468505859375,
-			},
 			["point"] = {
 				["y"] = -262.6085815429688,
 				["relative"] = "TOPRIGHT",
 				["point"] = "TOPRIGHT",
 				["x"] = -121.0488967895508,
+			},
+			["showAuctionDurationTimerText"] = true,
+			["statuspoint"] = {
+				["y"] = -331.8890686035156,
+				["relative"] = "TOPRIGHT",
+				["point"] = "TOPRIGHT",
+				["x"] = -227.468505859375,
 			},
 		},
 		["Moolatz - Golemagg"] = {

@@ -48,6 +48,13 @@ X: -83
 Y: 143
 W: 780
 H: 600
+Frame: TellMeWhen_ConfigWarning
+FrameLevel: 1
+Anchor: TOP
+X: 8
+Y: -208
+W: 330
+H: 113
 Frame: Dejunk_JunkFrame
 FrameLevel: 2
 Anchor: TOPRIGHT

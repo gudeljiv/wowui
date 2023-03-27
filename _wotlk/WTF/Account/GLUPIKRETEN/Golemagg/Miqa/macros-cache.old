@@ -1,9 +1,3 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Smite
-/cast Berserking
-END
 VER 3 0000000001000006 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,harm][] Shadow Word: Pain
@@ -29,4 +23,10 @@ END
 VER 3 0000000001000005 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,help][@target,exists,help][] Renew
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Smite
+/cast Berserking
 END
