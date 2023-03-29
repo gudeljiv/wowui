@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9761,
+	["session"] = 9763,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'DBM-Core' tried to call the protected function 'CopyToClipboard()'.",
