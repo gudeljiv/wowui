@@ -3,8 +3,8 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["5.3.10"] = 1680104243,
-		["lastLoadedOn"] = 1680104243,
+		["5.3.10"] = 1680274260,
+		["lastLoadedOn"] = 1680274260,
 		["5.3.2"] = 1677011490,
 		["5.2.0"] = 1675856197,
 		["5.2.1"] = 1675921266,
@@ -149,13 +149,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["closeAuctioneerOnStart"] = false,
+			["Mutators"] = {
+			},
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
-			["Mutators"] = {
-			},
 			["enableGDKPQueuesByDefault"] = false,
+			["closeAuctioneerOnStart"] = false,
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,

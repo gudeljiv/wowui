@@ -219,6 +219,7 @@ data = {
             {"name": "shoot", "type": "GetSpellTexture", "id": 74178, "key": "1"},
             {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             {"name": "power word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
+            {"name": "devouring plague", "type": "GetSpellTexture", "id": 2944, "key": "9"},
             {"name": "power word pain mouseover", "type": "GetSpellTexture", "id": 47948, "key": "1", "modifier": "lshift"},
             {"name": "mind blast", "type": "GetSpellTexture", "id": 8092, "key": "5"},
             {"name": "smite", "type": "GetSpellTexture", "id": 591, "key": "5", "modifier": "lshift"},
@@ -226,6 +227,9 @@ data = {
             {"name": "renew", "type": "GetSpellTexture", "id": 139, "key": "g"},
             {"name": "inner fire", "type": "GetSpellTexture", "id": 588, "key": "f6"},
             {"name": "power word fortitude", "type": "GetSpellTexture", "id": 1244, "key": "f1"},
+            {"name": "cure disease", "type": "GetSpellTexture", "id": 528, "key": "t"},
+            {"name": "dispel magic", "type": "GetSpellTexture", "id": 527, "key": "t", "modifier": "lshift"},
+            {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
         ],
         "secondary": []
     }
