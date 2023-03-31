@@ -1,18 +1,19 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = false,
-	["stepSkip"] = {
-	},
-	["flightPaths"] = {
-		[25] = "Crossroads, The Barrens",
-		[23] = "Orgrimmar, Durotar",
-		[80] = "Ratchet, The Barrens",
-	},
 	["currentGuideName"] = "",
+	["currentGuideGroup"] = "",
+	["flightPaths"] = {
+		[80] = "Ratchet, The Barrens",
+		[77] = "Camp Taurajo, The Barrens",
+		[23] = "Orgrimmar, Durotar",
+		[25] = "Crossroads, The Barrens",
+	},
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -53,12 +54,12 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Luschi"] = {
-					["isRxp"] = true,
+					["level"] = 15,
 					["lastSeen"] = 966050.568,
 					["xpPercentage"] = 78,
-					["level"] = 15,
-					["timePlayed"] = 28.38699999998789,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 28.38699999998789,
+					["isRxp"] = true,
 				},
 				["Erebeer"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -66,23 +67,43 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
-					["class"] = "MAGE",
 					["level"] = 9,
+					["class"] = "MAGE",
 					["lastSeen"] = 783331.454,
-					["xpPercentage"] = 65,
+					["timePlayed"] = 86.10600000002887,
 					["isRxp"] = true,
 					["xp"] = 54,
-					["timePlayed"] = 86.10600000002887,
+					["xpPercentage"] = 65,
+				},
+				["Bigtrollsky"] = {
+					["timePlayed"] = 495.5109999999404,
+					["class"] = "PRIEST",
+					["xp"] = 43,
+				},
+				["Passable"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "WARLOCK",
+					["xp"] = 170,
+				},
+				["Bananatree"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "DRUID",
+					["xp"] = 170,
 				},
 				["Phatkhan"] = {
 					["timePlayed"] = 87.6019999999553,
 					["class"] = "PRIEST",
 					["xp"] = 53,
 				},
-				["Bigtrollsky"] = {
-					["timePlayed"] = 495.5109999999404,
-					["class"] = "PRIEST",
-					["xp"] = 43,
+				["Nerfholy"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "PALADIN",
+					["xp"] = 170,
+				},
+				["Stormbrake"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "SHAMAN",
+					["xp"] = 170,
 				},
 			},
 		},

@@ -59,7 +59,7 @@ Bagnon_Sets = {
 			},
 			["spacing"] = 3,
 			["y"] = 343.3735656738281,
-			["x"] = -362.522705078125,
+			["x"] = -362.52294921875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
