@@ -1,12 +1,11 @@
 
 RXPCData = {
-	["currentGuideGroup"] = "",
+	["currentGuideName"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
 	["GA"] = false,
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
 		[25] = "Crossroads, The Barrens",
@@ -14,7 +13,8 @@ RXPCData = {
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
-	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -33,10 +33,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 							["year"] = 2022,
 							["hour"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 						},
 						["started"] = 0,
 					},
@@ -55,12 +55,12 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Luschi"] = {
-					["class"] = "WARRIOR",
+					["level"] = 15,
 					["lastSeen"] = 966050.568,
 					["xpPercentage"] = 78,
-					["isRxp"] = true,
+					["class"] = "WARRIOR",
 					["timePlayed"] = 28.38699999998789,
-					["level"] = 15,
+					["isRxp"] = true,
 				},
 				["Erebeer"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -68,13 +68,13 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
-					["class"] = "MAGE",
-					["level"] = 9,
+					["timePlayed"] = 86.10600000002887,
+					["isRxp"] = true,
 					["lastSeen"] = 783331.454,
 					["xpPercentage"] = 65,
-					["isRxp"] = true,
+					["class"] = "MAGE",
 					["xp"] = 54,
-					["timePlayed"] = 86.10600000002887,
+					["level"] = 9,
 				},
 				["Bigtrollsky"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -96,14 +96,14 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 53,
 				},
-				["Nerfholy"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "PALADIN",
-					["xp"] = 170,
-				},
 				["Stormbrake"] = {
 					["timePlayed"] = 3177.739999999991,
 					["class"] = "SHAMAN",
+					["xp"] = 170,
+				},
+				["Nerfholy"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "PALADIN",
 					["xp"] = 170,
 				},
 			},

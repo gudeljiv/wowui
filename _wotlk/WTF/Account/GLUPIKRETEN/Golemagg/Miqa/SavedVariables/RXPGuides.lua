@@ -1,10 +1,11 @@
 
 RXPCData = {
-	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["GA"] = false,
+	["currentGuideName"] = "",
 	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
@@ -13,8 +14,7 @@ RXPCData = {
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
-	["stepSkip"] = {
-	},
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -33,10 +33,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -55,12 +55,12 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Luschi"] = {
-					["level"] = 15,
+					["isRxp"] = true,
 					["lastSeen"] = 966050.568,
 					["xpPercentage"] = 78,
-					["class"] = "WARRIOR",
+					["level"] = 15,
 					["timePlayed"] = 28.38699999998789,
-					["isRxp"] = true,
+					["class"] = "WARRIOR",
 				},
 				["Erebeer"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -68,13 +68,13 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
+					["level"] = 9,
+					["class"] = "MAGE",
+					["lastSeen"] = 783331.454,
 					["timePlayed"] = 86.10600000002887,
 					["isRxp"] = true,
-					["lastSeen"] = 783331.454,
-					["xpPercentage"] = 65,
-					["class"] = "MAGE",
 					["xp"] = 54,
-					["level"] = 9,
+					["xpPercentage"] = 65,
 				},
 				["Bigtrollsky"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -96,14 +96,14 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 53,
 				},
-				["Stormbrake"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "SHAMAN",
-					["xp"] = 170,
-				},
 				["Nerfholy"] = {
 					["timePlayed"] = 3177.739999999991,
 					["class"] = "PALADIN",
+					["xp"] = 170,
+				},
+				["Stormbrake"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "SHAMAN",
 					["xp"] = 170,
 				},
 			},
