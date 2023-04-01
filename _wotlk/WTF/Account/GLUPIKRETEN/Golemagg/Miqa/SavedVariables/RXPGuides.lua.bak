@@ -1,19 +1,20 @@
 
 RXPCData = {
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
-	["currentGuideName"] = "",
-	["currentGuideGroup"] = "",
+	["GA"] = false,
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
-		[77] = "Camp Taurajo, The Barrens",
-		[23] = "Orgrimmar, Durotar",
 		[25] = "Crossroads, The Barrens",
+		[22] = "Thunder Bluff, Mulgore",
+		[23] = "Orgrimmar, Durotar",
+		[77] = "Camp Taurajo, The Barrens",
 	},
-	["GA"] = false,
+	["currentGuideName"] = "",
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -54,12 +55,12 @@ RXPCComms = {
 		["Miqa - Golemagg"] = {
 			["players"] = {
 				["Luschi"] = {
-					["level"] = 15,
+					["class"] = "WARRIOR",
 					["lastSeen"] = 966050.568,
 					["xpPercentage"] = 78,
-					["class"] = "WARRIOR",
-					["timePlayed"] = 28.38699999998789,
 					["isRxp"] = true,
+					["timePlayed"] = 28.38699999998789,
+					["level"] = 15,
 				},
 				["Erebeer"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -67,13 +68,13 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
-					["level"] = 9,
 					["class"] = "MAGE",
+					["level"] = 9,
 					["lastSeen"] = 783331.454,
-					["timePlayed"] = 86.10600000002887,
+					["xpPercentage"] = 65,
 					["isRxp"] = true,
 					["xp"] = 54,
-					["xpPercentage"] = 65,
+					["timePlayed"] = 86.10600000002887,
 				},
 				["Bigtrollsky"] = {
 					["timePlayed"] = 495.5109999999404,
