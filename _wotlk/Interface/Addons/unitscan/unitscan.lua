@@ -343,8 +343,12 @@ SLASH_UNITSCAN2 = '/us'
 function SlashCmdList.UNITSCAN(parameter)
 	local _, _, name = strfind(parameter, '^%s*(.-)%s*$')
 	if name == '' then
-		for _, key in ipairs(unitscan.sorted_targets()) do
-			unitscan.print(_G.YELLOW_FONT_COLOR_CODE .. key)
+		if getn(unitscan.sorted_targets()) == 0 then
+			unitscan.print(_G.BLUE_FONT_COLOR_CODE .. 'no creatures in list')
+		else
+			for _, key in ipairs(unitscan.sorted_targets()) do
+				unitscan.print(_G.YELLOW_FONT_COLOR_CODE .. key)
+			end
 		end
 	else
 		unitscan.toggle_target(name)

@@ -1,19 +1,20 @@
 
 RXPCData = {
-	["GA"] = false,
+	["stepSkip"] = {
+	},
 	["completedWaypoints"] = {
 	},
 	["currentStep"] = 1,
 	["currentGuideName"] = "",
-	["stepSkip"] = {
-	},
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
-		[25] = "Crossroads, The Barrens",
 		[80] = "Ratchet, The Barrens",
+		[25] = "Crossroads, The Barrens",
+		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
-	["currentGuideGroup"] = "",
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -32,10 +33,10 @@ RXPCTrackingData = {
 							["monthDay"] = 13,
 							["day"] = 0,
 							["month"] = 11,
-							["minute"] = 40,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 11,
-							["weekday"] = 1,
+							["minute"] = 40,
 						},
 						["started"] = 0,
 					},
@@ -67,13 +68,13 @@ RXPCComms = {
 					["xp"] = 43,
 				},
 				["Santasanni"] = {
-					["xpPercentage"] = 65,
-					["isRxp"] = true,
+					["level"] = 9,
+					["class"] = "MAGE",
 					["lastSeen"] = 783331.454,
 					["timePlayed"] = 86.10600000002887,
-					["level"] = 9,
+					["isRxp"] = true,
 					["xp"] = 54,
-					["class"] = "MAGE",
+					["xpPercentage"] = 65,
 				},
 				["Bigtrollsky"] = {
 					["timePlayed"] = 495.5109999999404,
@@ -95,14 +96,14 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 53,
 				},
-				["Stormbrake"] = {
-					["timePlayed"] = 3177.739999999991,
-					["class"] = "SHAMAN",
-					["xp"] = 170,
-				},
 				["Nerfholy"] = {
 					["timePlayed"] = 3177.739999999991,
 					["class"] = "PALADIN",
+					["xp"] = 170,
+				},
+				["Stormbrake"] = {
+					["timePlayed"] = 3177.739999999991,
+					["class"] = "SHAMAN",
 					["xp"] = 170,
 				},
 			},

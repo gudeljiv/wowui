@@ -230,6 +230,7 @@ data = {
             {"name": "cure disease", "type": "GetSpellTexture", "id": 528, "key": "t"},
             {"name": "dispel magic", "type": "GetSpellTexture", "id": 527, "key": "t", "modifier": "lshift"},
             {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
+            {"name": "holy nova", "type": "GetSpellTexture", "id": 15237, "key": "8"},
         ],
         "secondary": []
     }
