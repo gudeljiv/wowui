@@ -84,7 +84,7 @@ function ItemRack.ProcessAutoQueue(slot)
 end
 
 function ItemRack.ItemNearReady(id)
-	local start,duration = GetItemCooldown(id)
+	local start,duration = C_Container.GetItemCooldown(id)
 	if start==0 or math.max(start + duration - GetTime(),0)<=30 then
 		return true
 	end

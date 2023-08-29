@@ -40,18 +40,18 @@ Postal3DB = {
 		["Battledog - Gehennas"] = "Battledog - Gehennas",
 		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
-		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 	},
 	["profiles"] = {
@@ -103,32 +103,13 @@ Postal3DB = {
 		},
 		["Battledog - Gehennas"] = {
 		},
-		["Tadibey - Golemagg"] = {
-		},
-		["Handrmandr - Golemagg"] = {
-		},
 		["Tudum - Ashbringer"] = {
-		},
-		["Battlearm - Gehennas"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Tudum - Jin'do"] = {
 		},
-		["Provokator - Jin'do"] = {
-		},
-		["Mxyzptlk - Golemagg"] = {
-		},
-		["Battlearm - Jin'do"] = {
-		},
-		["Poklopac - Mirage Raceway"] = {
-		},
-		["Miqa - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Battlearm|Golemagg|Horde", -- [1]
-				},
-			},
+		["Tadibey - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -139,9 +120,17 @@ Postal3DB = {
 				},
 			},
 		},
-		["Pitchwise - Ashbringer"] = {
+		["Battlearm - Jin'do"] = {
 		},
-		["Tudum - Jin'do"] = {
+		["Poklopac - Mirage Raceway"] = {
+		},
+		["Provokator - Jin'do"] = {
+		},
+		["Handrmandr - Golemagg"] = {
+		},
+		["Battlearm - Gehennas"] = {
+		},
+		["Moolatz - Golemagg"] = {
 		},
 		["Wells - Jin'do"] = {
 		},

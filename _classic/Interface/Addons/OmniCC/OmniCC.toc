@@ -1,11 +1,13 @@
-## Interface: 11302
+## Interface: 100100
 ## Title: OmniCC
 ## Notes: Cooldown count for everything
 ## Notes-koKR: 모든 것을 위한 쿨다운 카운트
 ## Author: Tuller
-## Version: 8.1.1
-## SavedVariables: OmniCC4Config
-libs\libs.xml
+## Version: 10.1.1
+## SavedVariables: OmniCCDB, OmniCC4Config
+## IconTexture: Interface/Icons/spell_nature_timestop
+## AddonCompartmentFunc: OmniCC_Launch
+embeds.xml
 localization\localization.xml
 main.lua
 core\core.xml

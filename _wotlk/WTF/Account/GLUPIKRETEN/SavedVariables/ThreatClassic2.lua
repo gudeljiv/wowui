@@ -35,7 +35,6 @@ ThreatClassic2DB = {
 				["size"] = 10,
 			},
 			["frame"] = {
-				["headerShow"] = false,
 				["color"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -47,17 +46,12 @@ ThreatClassic2DB = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
-					0, -- [4]
-				},
-				["locked"] = true,
-				["height"] = 140,
-				["headerColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
 					655, -- [4]
 					-340, -- [5]
 				},
+				["locked"] = true,
+				["headerShow"] = false,
+				["height"] = 140,
 			},
 			["bar"] = {
 				["count"] = 8,

@@ -1,6 +1,18 @@
-from libs.resources_new import data
-from libs.resources_new import monitor_settings
-from libs.resources_new import keyCodeMap
+import sys
+
+if len(sys.argv) != 2:
+    mode = "wotlk"
+else:
+    mode = sys.argv[1]
+
+if mode == "wotlk":
+    from libs.resources_wotlk import data
+    from libs.resources_wotlk import monitor_settings
+    from libs.resources_wotlk import keyCodeMap
+else:
+    from libs.resources_classic import data
+    from libs.resources_classic import monitor_settings
+    from libs.resources_classic import keyCodeMap
 
 from libs.interception import *
 from libs.ctypes_custom import KeyPress as cKeyPress
@@ -63,6 +75,7 @@ print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.no
 print("PRINT:", dprint)
 print("DEBUG:", debug)
 print("ROTATION:", not pause)
+print("MODE:", mode.upper())
 print("CLASS:", wow_class_loaded.upper())
 
 

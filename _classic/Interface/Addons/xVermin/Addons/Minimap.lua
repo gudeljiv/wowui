@@ -2,7 +2,7 @@ local _, xVermin = ...
 local count
 
 Minimap:ClearAllPoints()
-Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
+Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -19)
 
 UIWidgetBelowMinimapContainerFrame:HookScript(
 	'OnUpdate',

@@ -1,7 +1,9 @@
 -- A cooldown text display
-local Addon = _G[...]
+local _, Addon = ...
 
-local ICON_SIZE = 36 -- the expected size of an icon
+-- the expected size of an icon
+local ICON_SIZE = 36
+local DEFAULT_STATE = 'seconds'
 
 local After = _G.C_Timer.After
 local GetTickTime = _G.GetTickTime
@@ -11,7 +13,7 @@ local UIParent = _G.UIParent
 
 local displays = {}
 
-local Display = Addon:CreateHiddenFrame("Frame")
+local Display = Addon:CreateHiddenFrame('Frame')
 
 Display.__index = Display
 
@@ -20,67 +22,70 @@ function Display:Get(owner)
 end
 
 function Display:GetOrCreate(owner)
-    if not owner then return end
+    if not owner then
+        return
+    end
 
     return displays[owner] or self:Create(owner)
 end
 
 function Display:Create(owner)
-    local display = setmetatable(Addon:CreateHiddenFrame("Frame", nil, owner), Display)
+    local display = setmetatable(Addon:CreateHiddenFrame('Frame', nil, owner), Display)
 
-    display:SetScript("OnSizeChanged", self.OnSizeChanged)
-    display.text = display:CreateFontString(nil, "OVERLAY")
-    display.text:SetFont(STANDARD_TEXT_FONT, 8, "THIN")
-
+    display.text = display:CreateFontString(nil, 'OVERLAY')
     display.cooldowns = {}
-    display.updateScaleCallback = function() display:OnScaleChanged() end
+
+    display.updateSize = function()
+        local oldSize = display.sizeRatio
+        local newSize = display:CalculateSizeRatio()
+
+        local oldScale = display.scaleRatio
+        local newScale = display:CalculateScaleRatio()
+
+        if not (oldSize == newSize and oldScale == newScale) then
+            display:UpdateCooldownTextPositionSizeAndColor()
+        end
+
+        display.updatingSize = nil
+    end
+
+    display:UpdateSize()
+    display:SetScript('OnSizeChanged', self.UpdateSize)
 
     displays[owner] = display
     return display
 end
 
--- adjust font size whenever the timer's size changes
--- and hide if it gets too tiny
-function Display:OnSizeChanged()
-    local oldSize = self.sizeRatio
-
-    if oldSize ~= self:CalculateSizeRatio() then
-        self:UpdateCooldownTextStyle()
-        self:UpdateCooldownTextShown()
+-- defer updating size until the next frame
+-- this is to work around SUF scaling auras after setting timers
+function Display:UpdateSize()
+    if self.updatingSize then
+        return
     end
+
+    self.updatingSize = true
+    After(GetTickTime(), self.updateSize)
 end
 
--- adjust font size whenever the timer's size changes
--- and hide if it gets too tiny
-function Display:OnScaleChanged()
-    local oldScale = self.scaleRatio
-
-    if oldScale ~= self:CalculateScaleRatio() then
-        self:UpdateCooldownTextStyle()
-        self:UpdateCooldownTextShown()
-    end
-end
 -- update text when the timer notifies us of a change
-function Display:OnTimerTextUpdated(timer)
-    if self.timer == timer then
-        self.text:SetText(self.timer and self.timer.text or "")
+function Display:OnTimerTextUpdated(timer, text)
+    if timer ~= self.timer then
+        return
     end
+
+    self.text:SetText(text or '')
 end
 
 function Display:OnTimerStateUpdated(timer, state)
-    if self.timer == timer then
-        self:UpdateCooldownTextStyle()
+    if timer ~= self.timer then
+        return
     end
-end
 
-function Display:OnTimerFinished(timer)
-    if self.timer == timer then
-        local cooldown = self.activeCooldown
+    state = state or DEFAULT_STATE
 
-        local settings = cooldown._occ_settings
-        if settings and (settings.minEffectDuration or 0) <= cooldown._occ_duration then
-            Addon.FX:Run(self.activeCooldown, settings.effect or "none")
-        end
+    if (self.state ~= state) then
+        self.state = state
+        self:UpdateCooldownTextPositionSizeAndColor()
     end
 end
 
@@ -91,7 +96,14 @@ function Display:OnTimerDestroyed(timer)
 end
 
 function Display:CalculateSizeRatio()
-    local sizeRatio = round(min(self:GetSize())) / ICON_SIZE
+    local sizeRatio
+    local sets = self:GetSettings()
+
+    if sets and sets.scaleText then
+        sizeRatio = round(min(self:GetSize())) / ICON_SIZE
+    else
+        sizeRatio = 1
+    end
 
     self.sizeRatio = sizeRatio
 
@@ -107,37 +119,37 @@ function Display:CalculateScaleRatio()
 end
 
 function Display:AddCooldown(cooldown)
-    local cooldowns = self.cooldowns
-    if not cooldowns[cooldown] then
-        cooldowns[cooldown] = true
-    end
-
-    self:UpdatePrimaryCooldown()
-    self:UpdateTimer()
+    self.cooldowns[cooldown] = true
+    self:UpdateActiveCooldown()
 end
 
 function Display:RemoveCooldown(cooldown)
     local cooldowns = self.cooldowns
+
     if cooldowns[cooldown] then
         cooldowns[cooldown] = nil
-
-        self:UpdatePrimaryCooldown()
-        self:UpdateTimer()
+        self:UpdateActiveCooldown()
     end
 end
 
-function Display:UpdatePrimaryCooldown()
-    local oldCooldown = self.activeCooldown
-    local newCooldown = self:GetCooldownWithHighestPriority()
+function Display:UpdateActiveCooldown()
+    local cooldown = self:GetCooldownWithHighestPriority()
 
-    if oldCooldown ~= newCooldown then
-        self.activeCooldown = newCooldown
+    if self.activeCooldown ~= cooldown then
+        self.activeCooldown = cooldown
 
-        if newCooldown then
-            self:SetAllPoints(newCooldown)
-            self:SetFrameLevel(newCooldown:GetFrameLevel() + 7)
+        -- reposition the display to be above the cooldown
+        if cooldown then
+            self:SetAllPoints(cooldown)
+            self:SetFrameLevel(cooldown:GetFrameLevel() + 7)
+            self:UpdateCooldownTextFont()
+            self:UpdateCooldownTextPositionSizeAndColor()
         end
     end
+
+    -- always try to update the timer here
+    -- as the active cooldown's duration may have changed
+    self:UpdateTimer()
 end
 
 function Display:UpdateTimer()
@@ -162,13 +174,12 @@ function Display:UpdateTimer()
 
         -- only update text if the timer we're watching has changed
         if newTimerKey ~= oldTimerKey then
-            self:UpdateCooldownText()
-            self.text:SetText(newTimer.text or "")
+            self:OnTimerTextUpdated(newTimer, newTimer.text)
+            self:OnTimerStateUpdated(newTimer, newTimer.state)
             self:Show()
         end
 
-        -- SUF hack to update scale of frames after cooldowns are set
-        After(GetTickTime(), self.updateScaleCallback)
+        self:UpdateSize()
     else
         self:Hide()
     end
@@ -222,57 +233,60 @@ do
 end
 
 function Display:UpdateCooldownText()
-    self:UpdateCooldownTextPosition()
-    self:UpdateCooldownTextStyle()
-    self:UpdateCooldownTextShown()
+    self:UpdateCooldownTextFont()
+    self:UpdateCooldownTextPositionSizeAndColor()
 end
 
-function Display:UpdateCooldownTextShown()
+function Display:UpdateCooldownTextFont()
     local sets = self:GetSettings()
-    if not sets then return end
+    local text = self.text
 
-    -- compare as ints to avoid floating point math errors
+    if sets then
+        if not text:SetFont(sets.fontFace, sets.fontSize, sets.fontOutline) then
+            text:SetFont(STANDARD_TEXT_FONT, sets.fontSize, sets.fontOutline)
+        end
+
+        local shadow = sets.fontShadow
+        text:SetShadowColor(shadow.r, shadow.g, shadow.b, shadow.a)
+        text:SetShadowOffset(shadow.x, shadow.y)
+    else
+        text:SetFont(STANDARD_TEXT_FONT, 8, 'OUTLINE')
+    end
+end
+
+-- props:{size, scale, state, anchor, xOff, yOff}
+function Display:UpdateCooldownTextPositionSizeAndColor()
+    local sets = self:GetSettings()
+    if not sets then
+        return
+    end
+
+    local text = self.text
     local sizeRatio = self.sizeRatio or self:CalculateSizeRatio()
     local scaleRatio = self.scaleRatio or self:CalculateScaleRatio()
 
-    if (sizeRatio * scaleRatio) >= (sets.minSize or 0) then
-        self.text:Show()
-    else
-        self.text:Hide()
-    end
-end
-
-function Display:UpdateCooldownTextStyle()
-    local sets = self:GetSettings()
-    if not sets then return end
-
-    local text = self.text
-    local face = sets.fontFace
-    local outline = sets.fontOutline
-    local style = sets.styles[self.timer and self.timer.state or "seconds"]
-
-    local size = sets.fontSize * style.scale
-    if sets.scaleText then
-        size = size * (self.sizeRatio or self:CalculateSizeRatio())
+    -- hide text if the display size is below our min ratio
+    if (sizeRatio * scaleRatio) <= (sets.minSize or 0) then
+        text:Hide()
+        return
     end
 
-    if size > 0 then
-        if not text:SetFont(face, size, outline) then
-            text:SetFont(STANDARD_TEXT_FONT, size, outline)
-        end
+    local style = sets.textStyles[self.state or DEFAULT_STATE]
+    local styleRatio = style and style.scale or 1
 
-        text:SetTextColor(style.r, style.g, style.b, style.a)
+    -- hide text if the scale ratio is zero or below
+    if styleRatio <= 0 then
+        text:Hide()
+        return
     end
-end
 
-function Display:UpdateCooldownTextPosition()
-    local sets = self:GetSettings()
-    if not sets then return end
+    local textScale = sizeRatio * styleRatio
+    text:Show()
+    text:SetScale(textScale)
+    text:SetTextColor(style.r, style.g, style.b, style.a)
 
-    local sizeRatio = self.sizeRatio or self:CalculateSizeRatio()
-
-    self.text:ClearAllPoints()
-    self.text:SetPoint(sets.anchor, sets.xOff * sizeRatio, sets.yOff * sizeRatio)
+    text:ClearAllPoints()
+    text:SetPoint(sets.anchor, sets.xOff / textScale, sets.yOff / textScale)
 end
 
 function Display:GetSettings()
@@ -282,7 +296,7 @@ end
 function Display:ForAll(method, ...)
     for _, display in pairs(displays) do
         local func = display[method]
-        if type(func) == "function" then
+        if type(func) == 'function' then
             func(display, ...)
         end
     end
@@ -292,7 +306,7 @@ function Display:ForActive(method, ...)
     for _, display in pairs(displays) do
         if display.timer ~= nil then
             local func = display[method]
-            if type(func) == "function" then
+            if type(func) == 'function' then
                 func(display, ...)
             end
         end

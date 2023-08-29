@@ -4,3 +4,11 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nPower: disabled
 nHealth: disabled
+Grid2: disabled
+Grid2LDB: disabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2RaidDebuffsOptions: disabled
+nTooltip: disabled
+WeakAuras: enabled
+xVermin: enabled
