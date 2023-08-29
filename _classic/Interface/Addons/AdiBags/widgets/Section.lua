@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -56,7 +56,8 @@ local HEADER_SIZE = addon.HEADER_SIZE
 --------------------------------------------------------------------------------
 
 local categoryOrder = {
-	[L["Free space"]] = -100
+	[L['Free space']] = -100,
+	[L['Reagent Free space']] = -101
 }
 
 function addon:SetCategoryOrder(name, order)
@@ -81,35 +82,34 @@ end
 -- Initialization and release
 --------------------------------------------------------------------------------
 
-local sectionClass, sectionProto = addon:NewClass("Section", "Frame", "ABEvent-1.0")
-local sectionPool = addon:CreatePool(sectionClass, "AcquireSection")
+local sectionClass, sectionProto = addon:NewClass('Section', 'Frame', 'ABEvent-1.0')
+local sectionPool = addon:CreatePool(sectionClass, 'AcquireSection')
 
 function sectionProto:OnCreate()
 	self.buttons = {}
 	self.slots = {}
 	self.freeSlots = {}
 
-	local header = CreateFrame("Button", nil, self)
+	local header = CreateFrame('Button', nil, self)
 	header.section = self
-	header:SetNormalFontObject(addon.sectionFont)
-	header:SetPoint("TOPLEFT", 0, 0)
-	header:SetPoint("TOPRIGHT", SECTION_SPACING - ITEM_SPACING, 0)
+	header:SetPoint('TOPLEFT', 0, 0)
+	header:SetPoint('TOPRIGHT', SECTION_SPACING - ITEM_SPACING, 0)
 	header:SetHeight(HEADER_SIZE)
 	header:EnableMouse(true)
-	header:SetText("DUMMY")
+	header:SetText('DUMMY')
 	header:GetFontString():SetAllPoints()
 	addon.SetupTooltip(
 		header,
 		function(header, tooltip)
 			return self:ShowHeaderTooltip(header, tooltip)
 		end,
-		"ANCHOR_NONE"
+		'ANCHOR_NONE'
 	)
 	self.Header = header
-	self:SendMessage("AdiBags_SectionCreated", self)
+	self:SendMessage('AdiBags_SectionCreated', self)
 
-	self:SetScript("OnShow", self.OnShow)
-	self:SetScript("OnHide", self.OnHide)
+	self:SetScript('OnShow', self.OnShow)
+	self:SetScript('OnHide', self.OnHide)
 end
 
 function sectionProto:OnShow()
@@ -125,18 +125,19 @@ function sectionProto:OnHide()
 end
 
 function sectionProto:ToString()
-	return format("Section[%q,%q]", tostring(self.name), tostring(self.category))
+	return format('Section[%q,%q]', tostring(self.name), tostring(self.category))
 end
 
 function sectionProto:OnAcquire(container, name, category)
 	self:SetParent(container)
-	self.name = name == "Miscellaneous" and "Misc" or name
+	self.name = name
 	self.category = category or name
 	self.key = BuildSectionKey(name, category)
 	self:SetSizeInSlots(0, 0)
 	self.count = 0
 	self.container = container
-	self:RegisterMessage("AdiBags_OrderChanged", "FullLayout")
+	self:RegisterMessage('AdiBags_OrderChanged', 'FullLayout')
+	self.Header:SetNormalFontObject(addon.fonts[string.lower(container.name)].sectionFont)
 	self.Header:SetText(self.name)
 	self:UpdateHeaderScripts()
 end
@@ -148,6 +149,19 @@ function sectionProto:OnRelease()
 	self.name = nil
 	self.category = nil
 	self.container = nil
+end
+
+function sectionProto:UpdateFont()
+	local font
+	if self.container.isReagentBank then
+		font = addon.fonts.reagentBank.sectionFont
+		self.Header:SetNormalFontObject(font)
+		font:ApplySettings()
+	else
+		font = addon.fonts[string.lower(self.container.name)].sectionFont
+		self.Header:SetNormalFontObject(font)
+		font:ApplySettings()
+	end
 end
 
 function sectionProto:GetOrder()
@@ -171,7 +185,7 @@ function sectionProto:SetCollapsed(collapsed)
 		else
 			self:Show()
 		end
-		self:SendMessage("AdiBags_LayoutChanged")
+		self:SendMessage('AdiBags_LayoutChanged')
 	end
 end
 
@@ -179,47 +193,47 @@ end
 -- Section hooks
 --------------------------------------------------------------------------------
 
-local scriptDispatcher = LibStub("CallbackHandler-1.0"):New(addon, "RegisterSectionHeaderScript", "UnregisterSectionHeaderScript", "UnregisterAllSectionHeaderScripts")
+local scriptDispatcher = LibStub('CallbackHandler-1.0'):New(addon, 'RegisterSectionHeaderScript', 'UnregisterSectionHeaderScript', 'UnregisterAllSectionHeaderScripts')
 
 local DispatchOnClick = function(...)
-	return scriptDispatcher:Fire("OnClick", ...)
+	return scriptDispatcher:Fire('OnClick', ...)
 end
 local DispatchOnReceiveDrag = function(...)
-	return scriptDispatcher:Fire("DispatchOnReceiveDrag", ...)
+	return scriptDispatcher:Fire('DispatchOnReceiveDrag', ...)
 end
 
 function sectionProto:ShowHeaderTooltip(header, tooltip)
 	local self = header.section
-	tooltip:SetPoint("BOTTOMRIGHT", self.container, "TOPRIGHT", 0, 4)
+	tooltip:SetPoint('BOTTOMRIGHT', self.container, 'TOPRIGHT', 0, 4)
 	if self.category ~= self.name then
-		tooltip:AddDoubleLine(self.name, "(" .. self.category .. ")", 1, 1, 1)
+		tooltip:AddDoubleLine(self.name, '(' .. self.category .. ')', 1, 1, 1)
 	else
 		tooltip:AddLine(self.name, 1, 1, 1)
 	end
-	scriptDispatcher:Fire("OnTooltipUpdate", header, tooltip)
+	scriptDispatcher:Fire('OnTooltipUpdate', header, tooltip)
 end
 
 local usedScripts = {}
 
 function sectionProto:UpdateHeaderScripts()
 	local header = self.Header
-	if usedScripts.OnClick and not header:GetScript("OnClick") then
-		header:SetScript("OnClick", DispatchOnClick)
-		header:RegisterForClicks("AnyUp")
-	elseif not usedScripts.OnClick and header:GetScript("OnClick") then
-		header:SetScript("OnClick", nil)
+	if usedScripts.OnClick and not header:GetScript('OnClick') then
+		header:SetScript('OnClick', DispatchOnClick)
+		header:RegisterForClicks('AnyUp')
+	elseif not usedScripts.OnClick and header:GetScript('OnClick') then
+		header:SetScript('OnClick', nil)
 		header:RegisterForClicks()
 	end
-	if usedScripts.OnReceiveDrag and not header:GetScript("OnReceiveDrag") then
-		header:SetScript("OnReceiveDrag", DispatchOnReceiveDrag)
-	elseif not usedScripts.OnReceiveDrag and header:GetScript("OnReceiveDrag") then
-		header:SetScript("OnReceiveDrag", nil)
+	if usedScripts.OnReceiveDrag and not header:GetScript('OnReceiveDrag') then
+		header:SetScript('OnReceiveDrag', DispatchOnReceiveDrag)
+	elseif not usedScripts.OnReceiveDrag and header:GetScript('OnReceiveDrag') then
+		header:SetScript('OnReceiveDrag', nil)
 	end
 end
 
 function scriptDispatcher:OnUsed(_, name)
-	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
-		addon:Debug("Used SectionHeaderScript", name)
+	if name == 'OnClick' or name == 'OnReceiveDrag' or name == 'OnTooltipUpdate' then
+		addon:Debug('Used SectionHeaderScript', name)
 		usedScripts[name] = true
 		for section in sectionPool:IterateActiveObjects() do
 			section:UpdateHeaderScripts()
@@ -228,8 +242,8 @@ function scriptDispatcher:OnUsed(_, name)
 end
 
 function scriptDispatcher:OnUnused(_, name)
-	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
-		addon:Debug("Used SectionHeaderScript", name)
+	if name == 'OnClick' or name == 'OnReceiveDrag' or name == 'OnTooltipUpdate' then
+		addon:Debug('Used SectionHeaderScript', name)
 		usedScripts[name] = nil
 		for section in sectionPool:IterateActiveObjects() do
 			section:UpdateHeaderScripts()
@@ -326,7 +340,7 @@ function sectionProto:PutButtonAt(button, index)
 		return
 	end
 	local row, col = floor((index - 1) / self.width), (index - 1) % self.width
-	button:SetPoint("TOPLEFT", self, "TOPLEFT", col * SLOT_OFFSET, -HEADER_SIZE - row * SLOT_OFFSET)
+	button:SetPoint('TOPLEFT', self, 'TOPLEFT', col * SLOT_OFFSET, -HEADER_SIZE - row * SLOT_OFFSET)
 end
 
 function sectionProto:SetSizeInSlots(width, height)
@@ -340,7 +354,7 @@ function sectionProto:SetSizeInSlots(width, height)
 	else
 		self:SetSize(SLOT_OFFSET * width - ITEM_SPACING, HEADER_SIZE + SLOT_OFFSET * height - ITEM_SPACING)
 	end
-	self:Debug("SetSizeInSlots", width, height, "=>", self:GetSize())
+	self:Debug('SetSizeInSlots', width, height, '=>', self:GetSize())
 	return true
 end
 
@@ -348,9 +362,9 @@ function sectionProto:SetHeaderOverflow(overflow)
 	if self.headerOverflow ~= overflow then
 		self.headerOverflow = overflow
 		if overflow then
-			self.Header:SetPoint("TOPRIGHT", SECTION_SPACING, 0)
+			self.Header:SetPoint('TOPRIGHT', SECTION_SPACING, 0)
 		else
-			self.Header:SetPoint("TOPRIGHT", 0, 0)
+			self.Header:SetPoint('TOPRIGHT', 0, 0)
 		end
 	end
 end
@@ -374,7 +388,7 @@ function sectionProto:FullLayout()
 	end
 	tsort(buttonOrder, CompareButtons)
 
-	self:Debug("FullLayout", #buttonOrder, "buttons")
+	self:Debug('FullLayout', #buttonOrder, 'buttons')
 
 	local slots, freeSlots = self.slots, self.freeSlots
 	wipe(freeSlots)
@@ -427,8 +441,8 @@ local sortingFuncs = {
 	default = function(linkA, linkB, nameA, nameB)
 		local _, _, qualityA, levelA, _, classA, subclassA, _, equipSlotA = GetItemInfo(linkA)
 		local _, _, qualityB, levelB, _, classB, subclassB, _, equipSlotB = GetItemInfo(linkB)
-		local equipLocA = EQUIP_LOCS[equipSlotA or ""]
-		local equipLocB = EQUIP_LOCS[equipSlotB or ""]
+		local equipLocA = EQUIP_LOCS[equipSlotA or '']
+		local equipLocB = EQUIP_LOCS[equipSlotB or '']
 		if equipLocA and equipLocB and equipLocA ~= equipLocB then
 			return equipLocA < equipLocB
 		elseif classA ~= classB then
@@ -466,7 +480,7 @@ local itemCompareCache =
 	{},
 	{
 		__index = function(t, key)
-			local linkA, linkB = strsplit(";", key, 2)
+			local linkA, linkB = strsplit(';', key, 2)
 			local nameA, nameB = GetItemInfo(linkA), GetItemInfo(linkB)
 			if nameA and nameB then
 				local result = currentSortingFunc(linkA, linkB, nameA, nameB)
@@ -482,18 +496,24 @@ local itemCompareCache =
 function addon:SetSortingOrder(order)
 	local func = sortingFuncs[order]
 	if func and func ~= currentSortingFunc then
-		self:Debug("SetSortingOrder", order, func)
+		self:Debug('SetSortingOrder', order, func)
 		currentSortingFunc = func
 		wipe(itemCompareCache)
-		self:SendMessage("AdiBags_OrderChanged")
+		self:SendMessage('AdiBags_OrderChanged')
 	end
 end
 
 function CompareButtons(a, b)
+	if not a then
+		return
+	end
+	if not b then
+		return
+	end
 	local linkA, linkB = a:GetItemLink(), b:GetItemLink()
 	if linkA and linkB then
 		if linkA ~= linkB then
-			return itemCompareCache[format("%s;%s", linkA, linkB)]
+			return itemCompareCache[format('%s;%s', linkA, linkB)]
 		else
 			return a:GetCount() > b:GetCount()
 		end

@@ -1,0 +1,6 @@
+SimpleRaidTargetIcons: enabled
+Blizzard_CompactRaidFrames: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+nPower: disabled
+nHealth: disabled

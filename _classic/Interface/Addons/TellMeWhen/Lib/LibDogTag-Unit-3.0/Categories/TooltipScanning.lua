@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20211111185719"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20230711215112"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -11,28 +11,48 @@ local UnitName, UnitFactionGroup, UnitPlayerControlled, UnitIsPlayer, UnitIsVisi
 local InCombatLockdown, GetNumFactions, GetFactionInfo, ExpandFactionHeader, CollapseFactionHeader, GetGuildInfo =
 	  InCombatLockdown, GetNumFactions, GetFactionInfo, ExpandFactionHeader, CollapseFactionHeader, GetGuildInfo
 
+local GetClassicExpansionLevel = GetClassicExpansionLevel
+
 DogTag_Unit_funcs[#DogTag_Unit_funcs+1] = function(DogTag_Unit, DogTag)
 
 local L = DogTag_Unit.L
 
-local tt = CreateFrame("GameTooltip")
-tt:SetOwner(UIParent, "ANCHOR_NONE")
-tt.left = {}
-tt.right = {}
-for i = 1, 30 do
-	tt.left[i] = tt:CreateFontString()
-	tt.left[i]:SetFontObject(GameFontNormal)
-	tt.right[i] = tt:CreateFontString()
-	tt.right[i]:SetFontObject(GameFontNormal)
-	tt:AddFontStrings(tt.left[i], tt.right[i])
+local tt
+if not C_TooltipInfo then
+	tt = CreateFrame("GameTooltip")
+	tt:SetOwner(UIParent, "ANCHOR_NONE")
+	tt.left = {}
+	tt.right = {}
+	for i = 1, 30 do
+		tt.left[i] = tt:CreateFontString()
+		tt.left[i]:SetFontObject(GameFontNormal)
+		tt.right[i] = tt:CreateFontString()
+		tt.right[i]:SetFontObject(GameFontNormal)
+		tt:AddFontStrings(tt.left[i], tt.right[i])
+	end
 end
 local nextTime = 0
 local lastName
 local lastUnit
 local function updateTT(unit)
+	if C_TooltipInfo then
+		local tooltipData = C_TooltipInfo.GetUnit(unit)
+		TooltipUtil.SurfaceArgs(tooltipData)
+		for _, line in ipairs(tooltipData.lines) do
+			TooltipUtil.SurfaceArgs(line)
+		end
+
+		return tooltipData
+	end
+
 	local name = UnitName(unit)
 	local time = GetTime()
 	if lastUnit == unit and lastName == name and nextTime < time then
+		return
+	end
+	-- Parnic: temp: don't do any of this while Wrath Classic is crashing in these functions under certain conditions.
+	-- https://github.com/parnic/LibDogTag-Unit-3.0/issues/8
+	if InCombatLockdown() and GetClassicExpansionLevel and GetClassicExpansionLevel() == LE_EXPANSION_WRATH_OF_THE_LICH_KING then
 		return
 	end
 	lastUnit = unit
@@ -45,11 +65,36 @@ local function updateTT(unit)
 	end
 end
 
+-- tooltips can contain any data, including quest info, so check for the type of the line before using it, if present
+local function TooltipLineCouldBeGuild(line)
+	if not line then
+		return false
+	end
+	if not Enum or not Enum.TooltipDataLineType then
+		return false
+	end
+
+	return line.type == Enum.TooltipDataLineType.None
+end
+
+-- there's no special flag for factions vs guilds as of this writing, but if that gets added, this will make things easier
+local function TooltipLineCouldBeFaction(line)
+	return TooltipLineCouldBeGuild(line)
+end
+
 local LEVEL_start = "^" .. (type(LEVEL) == "string" and LEVEL or "Level")
 local function FigureNPCGuild(unit)
-	updateTT(unit)
-	local left_2 = tt.left[2]:GetText()
+	local info = updateTT(unit)
+	local left_2
+	if info then
+		left_2 = info.lines[2] and info.lines[2].leftText or nil
+	elseif tt then
+		left_2 = tt.left[2] and tt.left[2]:GetText() or nil
+	end
 	if not left_2 or left_2:find(LEVEL_start) then
+		return nil
+	end
+	if info and not TooltipLineCouldBeGuild(info.lines[2]) then
 		return nil
 	end
 	return left_2
@@ -64,14 +109,27 @@ local function FigureFaction(unit)
 		return faction
 	end
 
-	updateTT(unit)
-	local left_2 = tt.left[2]:GetText()
-	local left_3 = tt.left[3]:GetText()
+	local info = updateTT(unit)
+	local left_2
+	local left_3
+	if info then
+		left_2 = info.lines[2] and info.lines[2].leftText or nil
+		left_3 = info.lines[3] and info.lines[3].leftText or nil
+	elseif tt then
+		left_2 = tt.left[2] and tt.left[2]:GetText() or nil
+		left_3 = tt.left[3] and tt.left[3]:GetText() or nil
+	end
 	if not left_2 or not left_3 then
 		return faction
 	end
 	local hasGuild = not left_2:find(LEVEL_start)
-	local factionText = not hasGuild and left_3 or tt.left[4]:GetText()
+	local left_4
+	if info and info.lines[4] then
+		left_4 = info.lines[4].leftText
+	elseif tt and tt.left[4] then
+		left_4 = tt.left[4]:GetText()
+	end
+	local factionText = not hasGuild and left_3 or left_4
 	if factionText == PVP then
 		return faction
 	end
@@ -87,22 +145,45 @@ local function FigureZone(unit)
 	if not UnitIsConnected(unit) then
 		return nil
 	end
-	updateTT(unit)
-	local left_2 = tt.left[2]:GetText()
-	local left_3 = tt.left[3]:GetText()
+	local info = updateTT(unit)
+	local left_2
+	local left_3
+	local left_4
+	local left_5
+	if info then
+		left_2 = info.lines[2] and info.lines[2].leftText or nil
+		left_3 = info.lines[3] and info.lines[3].leftText or nil
+		left_4 = info.lines[4] and info.lines[4].leftText or nil
+		left_5 = info.lines[5] and info.lines[5].leftText or nil
+	elseif tt then
+		left_2 = tt.left[2] and tt.left[2]:GetText() or nil
+		left_3 = tt.left[3] and tt.left[3]:GetText() or nil
+		left_4 = tt.left[4] and tt.left[4]:GetText() or nil
+		left_5 = tt.left[5] and tt.left[5]:GetText() or nil
+	end
 	if not left_2 or not left_3 then
 		return nil
 	end
 	local hasGuild = not left_2:find(LEVEL_start)
-	local factionText = not hasGuild and left_3 or tt.left[4]:GetText()
+	if info and not TooltipLineCouldBeGuild(info.lines[2]) then
+		hasGuild = false
+	end
+	local factionText = not hasGuild and left_3 or left_4
+	if info then
+		if not hasGuild then
+			factionText = TooltipLineCouldBeFaction(info.lines[3]) and left_3 or nil
+		else
+			factionText = TooltipLineCouldBeFaction(info.lines[4]) and left_4 or nil
+		end
+	end
 	if factionText == PVP then
 		factionText = nil
 	end
 	local hasFaction = factionText and not UnitPlayerControlled(unit) and not UnitIsPlayer(unit) and (UnitFactionGroup(unit) or factionList[factionText])
 	if hasGuild and hasFaction then
-		return tt.left[5]:GetText()
+		return left_5
 	elseif hasGuild or hasFaction then
-		return tt.left[4]:GetText()
+		return left_4
 	else
 		return left_3
 	end

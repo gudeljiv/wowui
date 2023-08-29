@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 
 --[[-----------------------------------------------------------------------------
 WeakAurasTemplateGroup Container
@@ -68,6 +68,7 @@ local function Constructor()
   content:SetPoint("TOPLEFT", 20, 0)
   content:SetPoint("BOTTOMRIGHT", 0, 15)
 
+  --- @type table<string, any>
   local widget = {
     frame     = frame,
     content   = content,

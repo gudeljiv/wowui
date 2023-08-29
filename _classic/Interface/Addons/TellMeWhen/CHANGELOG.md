@@ -1,7 +1,122 @@
+## v10.1.6
+* Support for WoW Classic Era 1.14.4. The classic era codebase has been merged into the main codebase, so some features that don't support classic may be present in a non-working state.
+
+## v10.1.5
+* Support for WoW 10.1.5
+
+## v10.1.1
+* Fix #2081 - Cooldown of Eternity Surge not trackable when Font of Magic learned.
+* Fix #2082 - Increase Insanity condition max to 150.
+
+## v10.1.0
+* Fixes for WoW 10.1.
+
+## v10.0.9
+* The "Buff - Number Of" and "Debuff - Number Of" conditions now support tracking multiple units (e.g. `group 1-40`). (#1989)
+* Fix #2066 - Enrage effects were not being stored properly when fetching auras for noncached units.
+* Fix #2059 - Condition update were not happening at the proper time for spell cooldown conditions.
+* Fix #2038 - Fix more scenarios in which talent loadout name is not available immediately after talent events fire.
+* Fix #2075 - Spell cast percent completion was not filtering by name.
+* Fix #2072 - Swing timer monitors were not initializing dual-wield state until an equipment change was observed.
+* Fix #2071 - Tooltip Number conditions not working on retail. Also switched these conditions to use modern APIs, resulting in substantially better performance.
+* Workaround #1978, #2055  - Add hardcoded workarounds for a few reported covenant abilities that can't be tracked properly by name (Soul Rot, Adaptive Swarm).
+* Workaround #2065 - Blizzard's cooldown bling effect ignores opacity, so suppress it for hidden icons.
+
+## v10.0.8
+* #2054 - Workaround Blizzard issue breaking tracking Execute cooldown by name.
+* Workaround rare aura tracking error in arenas (Auras.lua:302: attempt to index local "instance" (a nil value)).
+* Try to fix issues with `focus` unit handling when focused arena teammates join a match after you.
+* Wrath: #2046 - Blizzard moved GetItemCooldown for no good reason.
+* Wrath: Fix Talents.lua:399: attempt to index global 'C_ClassTalents' (a nil value) and other similar errors.
+
+## v10.0.7
+* #2053 - Fix an issue that broke tracking of Void Eruption and other similar spells in 10.0.6.
+
+## v10.0.6
+* Loss of Control icons now show the locked out spell school in the `[LocType]` tag.
+* Fix icon GUIDs not getting persisted when inserted into DogTag strings.
+* Fix an issue where Missing Buffs/Debuffs icon type sometimes functioned as if the 'Only cast by me' setting was enabled, even when it wasn't.
+* Fix #2048 - names in spell equivalency lists were not being lowercased, resulting in spells listed by name not working in buff/debuff icons.
+
+## v10.0.5
+* Implement new WoW 10.0 Aura handling capabilities, resulting in an overwhelming performance improvement for the buff/debuff handling parts of TMW.
+* #2025 - Add events to Combat Event icons for empowered spell casts.
+* Fix #2026 - [string "Condition_ITEMSPELL"]:3: attempt to index field '?' (a nil value)
+* Fix #2027 - Shapeshift, Zone/Subzone, Loadout, Name, NpcID, and Creature Type conditions broken.
+* Fix #2029 - Unit Exists condition against "player" is always `true`, even if False is checked.
+* Fix #2030 - Unit Conditions were being ignored
+
+## v10.0.4
+*  Fix bugs in totem conditions (and a few others) introduced in 10.0.3
+
+## v10.0.3
+* Fix ClassSpellCache.lua:171: attempt to index field 'SpellData' (a nil value)
+* Fix #2019 - Expired totems are now treated as absent by the totem icon type, even if the wow API says they still exist.
+* Fix #2017 - Add workarounds for Blizzard bugs around some Evoker ability and talent combinations.
+* Wrath: Fix #2011 - PlayerNames.lua:100 attempt to concatenate field '?' (a nil value) 
+* Wrath: Fix #2016 - "Unknown class DRUID"
+* Wrath: Fix #2006 - Totems conditions once again function against any totem rank.
+
+## v10.0.2
+* Unified codebase for Retail and Wrath versions.
+* #1992 - Added Talent Loadout condition.
+* #1749 - Item Cooldown conditions no longer treat unusable items as having a cooldown of zero.
+* #1758 - Added Spell Cast Percent Completion condition
+* Wrath: #1996 - Add Rune Strike as a swing timer trigger
+* Fix #1984 - attempt to index local 'conditionData' (a nil value)
+* Fix #1998 - Error with Raid Warning (Fake) text notifications
+* Fix #2001 - Points in talent not updating when switching specs
+
+## v10.0.1
+* Fix #1974 - Assorted warnings about XML attributes
+* Fix #1981 - Fix integration with ElvUI's timer text
+* Retail: Fix #1977 - Texts.lua:696: bad argument #1 to 'SetEndDelay' (must be a finite number)
+
+## v10.0.0
+* Retail: Updates for Dragonflight.
+* Improvements to Swing Timers, especially around changes in attack speed (#1947)
+
+### Bug Fixes
+* #1956 - Fix Loss of Control states being backwards from their labels.
+
+## v9.2.6
+* Wrath: Added Ignore Runes settings for Cooldown and Reactive icon types.
+* Wrath: Added missing items to the Stance condition suggestion list.
+* Wrath: Fix outdated DR categories.
+* Wrath: Restore the Interruptible option to the Spell Cast condition.
+* Wrath: Restored the Unit Controls Vehicle condition.
+* Wrath: #1958 - Fix mismatch of rune types between configuration and actual behavior in the Rune Cooldown icon.
+* Wrath: #1965 - Slam does not reset the swing timer.
+* Wrath: #1955 - Fix dual spec changes not triggering updates when the player has no unspent talent points.
+
+## v9.2.5
+* Fix for Blizzard changing WOW_PROJECT_ID without warning.
+
+## v9.2.4
+* Wrath: Supports Wrath Classic
+* #1935 - More informative tooltips on "previews" of meta icon components.
+* When exporting an icon, icons referenced by its conditions will be included as related data.
+* When exporting a meta icon that includes an entire group, that group will be included as related data.
+* Wrath: Fix #1938 - The Points in Talent condition would fail to work in some circumstances.
+
+## v9.2.3
+### Bug Fixes
+* Fix #1936 - Syntax error in the version mismatch popup.
+
+## v9.2.2
+### Bug Fixes
+* Fix #1931 - Group controller Buff/Debuff icons not checking any specific aura were not responding to UNIT_AURA events.
+  
+## v9.2.1
+### Bug Fixes
+* Fix #1930 - Buff/Debuff icons checking dispel types were not responding to events.
+  
+## v9.2.0
+* #1929 - Utilize new payload for UNIT_AURA event to greatly improve performance.
+
 ## v9.1.2
 * New icon type: Lua Value (community contribution by Taurlog of Wyrmrest Accord)
 * Minor performance improvements
-* Support for Classic SoM patch (1.14).
   
 ### Bug Fixes
 * Fixed #1918 - Combo point resource display icons now update properly.
@@ -29,7 +144,6 @@
 
 ### Bug Fixes
 * Fixed an issue with some types of items in the item suggestion list.
-* Fix #1878 - Couldn't find inherited node: BackdropTemplate
 
 ## v9.0.5
 
@@ -39,22 +153,35 @@
 * Fixed #1868 - Lua errors and broken sliders in WoW 9.0.5.
 
 ## v9.0.4
+* New Condition: Torghast Anima Power Count
+* New Condition: Soulbind Active
 * #1811 - The group/target point of a group will now be preserved when moving a shrunk group via click-and-drag.
+### Bug Fixes
+* #1840 - Talents granted by Torghast powers are now correctly reflected by the Talent Learned condition.
+* #1844 - The Totem icon type has been updated for Monks to better support the wide range of "totems" that Monks have.
+* #1842 - Fixed handling of Shadowlands legendaries in item suggestion lists
 
 ## v9.0.3
 ### Bug Fixes
 * #1824 - Fix incorrect detection of Defensive mode in the Pet Attack Mode condition.
+* #1828 - Fix tooltips mentioning obsolete ways of tracking PvP trinkets.
+* #1829 - Fixed Guardians icon type Felguard timer (15 -> 17 seconds).
+* #1831 - Blacklist "Sinful Revelation" from the last cast condition
 * #1819 - Cloning notifications will now always clone all condition settings for condition-based triggers.
+* #1821 - Fix errors caused by Brewmaster stagger APIs returning nil in loading screens.
 * #1822 - All-Unit Buffs/Debuffs icons configured to only show when All Absent should now function as such.
 
 ## v9.0.2
 ### Bug Fixes
 * #1814 - Fix issues with range checking for some abilities
+* #1815 - Fix Weapon Imbue icon type & conditions
 
-## v8.7.6
-* Totem timer functions are once again based on Blizzard's GetTotemInfo API that was restored in patch 1.13.4.
+## v9.0.0
+* Initial Shadowlands/Patch 9.0 support. Please report bugs to https://github.com/ascott18/TellMeWhen/issues. Additional support for Shadowlands features (soulbinds, conduits, etc) will be added closer to the expansion's launch.
 
 ## v8.7.5
+* #1787 - Added Vulpera and Mechagnomes to Unit Race condition.
+* #1784 - Let OmniCC detect charge-type cooldowns 
 
 ### Bug Fixes
 * Fix #1764 - Fix resizing of the main configuration window, the color picker, and a few others.
@@ -63,64 +190,44 @@
 
 ## v8.7.4
 ### Bug Fixes
-* Fixed Fire Resistance Totem being classified as a fire totem rather than a water totem.
-* Fix #1761 - Earth and Water totems were switched with one another.
-* Fix #1764 - Fix resizing of the main configuration window, the color picker, and a few others.
+* Fix #1762 - Suggestion list insertion via left-click not working due to bizarre new focus-clearing mechanism in WoW 8.3.
 
 ## v8.7.3
 * Added a new "Any Totem" condition that will check all totem slots.
-* Updated totem checking to account for removal of totem APIs in 1.13.3. Totem deaths cannot be accounted for.
 
 ### Bug Fixes
 * Fix #1742 - Errors related to improper escaping of user input for the suggestion list.
-* Fixed error `bad argument #1 to 'strlower' (string expected, got boolean)` when using Diminishing Returns icons
 * Fix #1755 - Swing Timer conditions with durations other than zero seconds were not triggering updates at the proper moment.
-* Fixed error `PlayerNames.lua:96: attempt to concatenate field "?" (a nil value)`
 
 ## v8.7.2
 ### Bug Fixes
 * Fixed handling of spell names in French that have a space before a colon.
-* Classic: Fixed detection of weapon imbues with charges.
+* More fixes for Blizzard's weird change in 8.2.5 that prevented UnitAura from defaulting to buffs unless explicitly told to.
 
 ## v8.7.1
-* Classic: Added a pet happiness condition.
-
 ### Bug Fixes
-* Classic: Fixed errors when checking the health of non-existent units with Real Mob Health installed.
+* Fixed the buff/debuff "Either" setting for WoW 8.2.5.
 
 ## v8.7.0
-* Classic: Updated the Cast condition and icon type to use LibClassicCasterino for approximations of others' spell casts.
-* Classic: Aura durations might now be correct for abilities whose durations are variable by combopoints.
 * The Missing Buffs/Debuffs icon type now sorts by lowest duration first.
 * Switched to DRList-1.0 (from DRData-1.0) for DR category data.
 * Added events to the Combat Event icon type for swing & spell dodges/blocks/parries.
-* Classic: Added support for Real Mob Health and LibClassicMobHealth. Real Mob Health is the better approach, and must be installed standalone.
-* Classic: Added instructions to the Swing Timer icon type on how to get Wand "swing" timers.
 * Added an option to Spell Cooldown icons and Cooldown conditions to prevent the GCD from being ignored.
-* Classic: Added a Spell Autocasting condition.
 
 ### Bug Fixes
 * Fixed an uncommon issue that could cause some event-driven icons to not update correctly after one of the units being tracked by an icon stops existing.
-* Classic: Fixed the Unit Class condition's options.
-* Classic: Fixed the Weapon Imbue icon type & Condition for offhands.
-* Classic: Fixed talented aura duration tracking.
-* Classic: Fixed combopoint tracking.
 
 ## v8.6.9
-* Classic: Aura durations now account for learned talents.
-* Classic: Swing Timer now accounts for next-swing abilities.
-* Classic: Added Spell Queued condition (for Heroic Strike & other next-attack abilities)
-
 ### Bug Fixes
 * Fixed an issue with Unit Conditions where the initial state of the conditions sometimes wouldn't be taken into account.
 * Changed the Slowed equivalency to track Crippling Poison by ID to prevent it from picking up the Rogue buff by the same name.
 * When scrolling with the mousewheel, sliders that happen to land under your mouse will no longer be adjusted as long as your cursor does not move.
 * Fixed an issue where the Artificial Maximum setting for Bar groups was not properly saving its value as a number.
-* Classic: Fixed the Tracking Active condition.
-* Classic: Fixed errors with the Spell Cast icon type.
 
 ## v8.6.8
-* Classic: Fixed the logic for checking if the client is Classic or Retail.
+* Re-releasing TellMeWhen for Retail WoW as 8.6.8 so it will be the latest file for people with out-of-date Twitch apps.
+ * IMPORTANT: If your Twitch app was installing TellMeWhen Classic into your Retail WoW installation, that means your Twitch app is out of date and needs to be updated.
+ * To update your Twitch app, open the menu in the top-left corner of the app and choose "Check for Updates" under the "Help" menu.
 
 ## v8.6.7
 * Added an Inset option to the border for both Bar and Icon views.
@@ -130,11 +237,19 @@
 * Added Heal Crit & Non-Crit events to the Combat Event icon (#1685).
 
 ### Bug Fixes
+* Fixed a number of errors around the Azerite Essence Active conditions that would occur for characters without a Heart of Azeroth (i.e. sub level 120).
 * Fixed an issue that prevented a descriptive message from being visible in the icon editor when no icon is loaded.
 * Added workarounds to errors that will arise when anchoring a group to a "restricted" region (like a nameplate).
 * Fixed #1696: When swapping profiles, run snippets before setting up icons.
 
+## v8.6.5
+### Bug Fixes
+* The Major Azerite Essence Active condition will now properly update after changing essence.
+
 ## v8.6.4
+* New Conditions: 
+ * Azerite Essence Active
+ * Major Azerite Essence Active
 * Added better error messages when testing sounds for sound notifications.
 
 ### Bug Fixes
@@ -153,6 +268,7 @@
 
 ## v8.6.1
 * Buff/Debuff equivalency improvements
+* Added Kul Tiran and Zandalari to the Unit Race condition
 
 ### Bug Fixes
 * Fixed #1690: Framelevel issue with latest alphas of Masque.

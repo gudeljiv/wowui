@@ -1,7 +1,7 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
 Private.barmodels = {}
@@ -54,19 +54,19 @@ local function PreShow(self)
 
   -- Adjust model
   local modelId
-  if not WeakAuras.IsRetail() then
+  if WeakAuras.IsClassicEra() then
     modelId = data.model_path
   else
     modelId = tonumber(data.model_fileId)
   end
   if modelId then
-    self:SetModel(modelId)
+    pcall(self.SetModel, self, modelId)
   end
 
   self:ClearTransform()
   if (data.api) then
     self:MakeCurrentCameraCustom()
-    self:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+    self:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
       rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
       data.model_st_us / 1000);
   else
@@ -79,6 +79,7 @@ end
 local function CreateModel()
   local model =  CreateFrame("PlayerModel", nil, UIParent)
   model.PreShow = PreShow;
+  model.SetTransformFixed = model.GetResizeBounds and Private.ModelSetTransformFixed or model.SetTransform  -- TODO change test to WeakAuras.IsWrathOrRetail() after 3.4.1 release
   return model
 end
 
@@ -94,8 +95,6 @@ local function AcquireModel(region, data)
   Private.barmodels[model] = true
   model.api = data.api
 
-  model:ClearAllPoints()
-
   local anchor
   if region.parentType == "aurabar" then
     anchor = region.parent.bar
@@ -109,6 +108,7 @@ local function AcquireModel(region, data)
     extra_height = data.extra_height or 0
   end
 
+  model:ClearAllPoints()
   model:SetPoint("TOPLEFT", anchor ,"TOPLEFT", -extra_width/2, extra_height/2)
   model:SetPoint("BOTTOMRIGHT", anchor ,"BOTTOMRIGHT", extra_width/2, -extra_height/2)
 
@@ -118,19 +118,19 @@ local function AcquireModel(region, data)
 
   -- Adjust model
   local modelId
-  if not WeakAuras.IsRetail() then
+  if WeakAuras.IsClassicEra() then
     modelId = data.model_path
   else
     modelId = tonumber(data.model_fileId)
   end
   if modelId then
-    model:SetModel(modelId)
+    pcall(model.SetModel, model, modelId)
   end
 
   model:ClearTransform()
   if (data.api) then
     model:MakeCurrentCameraCustom()
-    model:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+    model:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
       rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
       data.model_st_us / 1000);
   else
@@ -197,7 +197,7 @@ local funcs = {
 }
 
 local function create()
-  local subRegion = CreateFrame("FRAME", nil, UIParent)
+  local subRegion = CreateFrame("Frame", nil, UIParent)
   subRegion:SetClipsChildren(true)
 
   for k, v in pairs(funcs) do
@@ -233,7 +233,7 @@ local function modify(parent, region, parentData, data, first)
   local anchor
   if parentData.regionType == "aurabar" then
     if data.bar_model_clip then
-      anchor = parent.bar.fgFrame
+      anchor = parent.bar.fgMask
     else
       anchor = parent.bar
     end
@@ -247,6 +247,7 @@ local function modify(parent, region, parentData, data, first)
     extra_height = data.extra_height or 0
   end
 
+  region:ClearAllPoints()
   region:SetPoint("TOPLEFT", anchor ,"TOPLEFT", -extra_width/2, extra_height/2)
   region:SetPoint("BOTTOMRIGHT", anchor ,"BOTTOMRIGHT", extra_width/2, -extra_height/2)
 

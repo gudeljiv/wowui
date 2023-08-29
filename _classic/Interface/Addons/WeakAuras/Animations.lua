@@ -1,5 +1,7 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
+local L = WeakAuras.L
 
 -- Animations
 local animations = {}
@@ -8,13 +10,13 @@ local anim_function_strings = Private.anim_function_strings;
 
 local function noopErrorHandler() end
 
-local frame = WeakAuras.frames["WeakAuras Main Frame"]
+local frame = Private.frames["WeakAuras Main Frame"]
 
 local updatingAnimations;
 local last_update = GetTime();
 local function UpdateAnimations()
   Private.StartProfileSystem("animations");
-  local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or geterrorhandler()
+
   for groupUid, groupRegion in pairs(pending_controls) do
     pending_controls[groupUid] = nil;
     groupRegion:DoPositionChildren();
@@ -72,6 +74,7 @@ local function UpdateAnimations()
     progress = anim.easeFunc(progress, anim.easeStrength or 3)
     Private.ActivateAuraEnvironmentForRegion(anim.region)
     if(anim.translateFunc) then
+      local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or Private.GetErrorHandlerUid(anim.auraUID, L["Slide Animation"])
       if (anim.region.SetOffsetAnim) then
         local ok, x, y = xpcall(anim.translateFunc, errorHandler, progress, 0, 0, anim.dX, anim.dY);
         anim.region:SetOffsetAnim(x, y);
@@ -84,6 +87,7 @@ local function UpdateAnimations()
       end
     end
     if(anim.alphaFunc) then
+      local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or Private.GetErrorHandlerUid(anim.auraUID, L["Fade Animation"])
       local ok, alpha = xpcall(anim.alphaFunc, errorHandler, progress, anim.startAlpha, anim.dAlpha);
       if (ok) then
         if (anim.region.SetAnimAlpha) then
@@ -94,6 +98,7 @@ local function UpdateAnimations()
       end
     end
     if(anim.scaleFunc) then
+      local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or Private.GetErrorHandlerUid(anim.auraUID, L["Zoom Animation"])
       local ok, scaleX, scaleY = xpcall(anim.scaleFunc, errorHandler, progress, 1, 1, anim.scaleX, anim.scaleY);
       if (ok) then
         if(anim.region.Scale) then
@@ -104,18 +109,21 @@ local function UpdateAnimations()
         end
       end
     end
-    if(anim.rotateFunc and anim.region.Rotate) then
-      local ok, rotate = xpcall(anim.rotateFunc, errorHandler, progress, anim.startRotation, anim.rotate);
+    if(anim.rotateFunc and anim.region.SetAnimRotation) then
+      local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or Private.GetErrorHandlerUid(anim.auraUID, L["Rotate Animation"])
+      local ok, rotate = xpcall(anim.rotateFunc, errorHandler, progress, anim.region:GetBaseRotation(), anim.rotate);
       if (ok) then
-        anim.region:Rotate(rotate);
+        anim.region:SetAnimRotation(rotate);
       end
     end
     if(anim.colorFunc and anim.region.ColorAnim) then
+      local errorHandler = WeakAuras.IsOptionsOpen() and noopErrorHandler or Private.GetErrorHandlerUid(anim.auraUID, L["Color Animation"])
       local startR, startG, startB, startA = anim.region:GetColor();
       startR, startG, startB, startA = startR or 1, startG or 1, startB or 1, startA or 1;
       local ok, r, g, b, a = xpcall(anim.colorFunc, errorHandler, progress, startR, startG, startB, startA, anim.colorR, anim.colorG, anim.colorB, anim.colorA);
       if (ok) then
-        anim.region:ColorAnim(r, g, b, a);
+        local errorHandler = Private.GetErrorHandlerId(anim.region.id, "Custom Color")
+        xpcall(anim.region.ColorAnim, errorHandler, anim.region, r, g, b, a)
       end
     end
     Private.ActivateAuraEnvironment(nil);
@@ -141,10 +149,8 @@ local function UpdateAnimations()
             anim.region:SetHeight(anim.startHeight);
           end
         end
-        if(anim.startRotation) then
-          if(anim.region.Rotate) then
-            anim.region:Rotate(anim.startRotation);
-          end
+        if(anim.region.SetAnimRotation) then
+          anim.region:SetAnimRotation(nil)
         end
         if(anim.region.ColorAnim) then
           anim.region:ColorAnim(nil);
@@ -174,14 +180,14 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
   local auraDisplayName = Private.UIDtoID(uid)
   local key = tostring(region);
   local valid;
-  if(anim and anim.type == "custom" and (anim.use_translate or anim.use_alpha or (anim.use_scale and region.Scale) or (anim.use_rotate and region.Rotate) or (anim.use_color and region.Color))) then
+  if(anim and anim.type == "custom" and (anim.use_translate or anim.use_alpha or (anim.use_scale and region.Scale) or (anim.use_rotate and region.SetAnimRotation) or (anim.use_color and region.Color))) then
     valid = true;
   elseif(anim and anim.type == "preset" and anim.preset and Private.anim_presets[anim.preset]) then
     anim = Private.anim_presets[anim.preset];
     valid = true;
   end
   if(valid) then
-    local progress, duration, selfPoint, anchor, anchorPoint, startX, startY, startAlpha, startWidth, startHeight, startRotation, easeType, easeStrength;
+    local progress, duration, selfPoint, anchor, anchorPoint, startX, startY, startAlpha, startWidth, startHeight, easeType, easeStrength;
     local translateFunc, alphaFunc, scaleFunc, rotateFunc, colorFunc, easeFunc;
     if(animations[key]) then
       if(animations[key].type == type and not loop) then
@@ -196,7 +202,6 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
       anim.scaley = anim.scaley or 1;
       startWidth, startHeight = animations[key].startWidth, animations[key].startHeight;
       anim.rotate = anim.rotate or 0;
-      startRotation = animations[key].startRotation;
       anim.colorR = anim.colorR or 1;
       anim.colorG = anim.colorG or 1;
       anim.colorB = anim.colorB or 1;
@@ -213,7 +218,6 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
       anim.scaley = anim.scaley or 1;
       startWidth, startHeight = region:GetWidth(), region:GetHeight();
       anim.rotate = anim.rotate or 0;
-      startRotation = region.GetRotation and region:GetRotation() or 0;
       anim.colorR = anim.colorR or 1;
       anim.colorG = anim.colorG or 1;
       anim.colorB = anim.colorB or 1;
@@ -226,7 +230,7 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
         anim.translateFunc = anim_function_strings[anim.translateType]
       end
       if (anim.translateFunc) then
-        translateFunc = WeakAuras.LoadFunction("return " .. anim.translateFunc, auraDisplayName, "translate animation");
+        translateFunc = WeakAuras.LoadFunction("return " .. anim.translateFunc);
       else
         if (region.SetOffsetAnim) then
           region:SetOffsetAnim(0, 0);
@@ -247,7 +251,7 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
         anim.alphaFunc = anim_function_strings[anim.alphaType]
       end
       if (anim.alphaFunc) then
-        alphaFunc = WeakAuras.LoadFunction("return " .. anim.alphaFunc, auraDisplayName, "alpha animation");
+        alphaFunc = WeakAuras.LoadFunction("return " .. anim.alphaFunc);
       else
         if (region.SetAnimAlpha) then
           region:SetAnimAlpha(nil);
@@ -268,7 +272,7 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
         anim.scaleFunc = anim_function_strings[anim.scaleType]
       end
       if (anim.scaleFunc) then
-        scaleFunc = WeakAuras.LoadFunction("return " .. anim.scaleFunc, auraDisplayName, "scale animation");
+        scaleFunc = WeakAuras.LoadFunction("return " .. anim.scaleFunc);
       else
         region:Scale(1, 1);
       end
@@ -281,12 +285,12 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
         anim.rotateFunc = anim_function_strings[anim.rotateType]
       end
       if (anim.rotateFunc) then
-        rotateFunc = WeakAuras.LoadFunction("return " .. anim.rotateFunc, auraDisplayName, "rotate animation");
+        rotateFunc = WeakAuras.LoadFunction("return " .. anim.rotateFunc);
       else
-        region:Rotate(startRotation);
+        region:SetAnimRotation(nil)
       end
-    elseif(region.Rotate) then
-      region:Rotate(startRotation);
+    elseif(region.SetAnimRotation) then
+      region:SetAnimRotation(nil)
     end
     if(anim.use_color) then
       if not(anim.colorType == "custom" and anim.colorFunc) then
@@ -294,7 +298,7 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
         anim.colorFunc = anim_function_strings[anim.colorType]
       end
       if (anim.colorFunc) then
-        colorFunc = WeakAuras.LoadFunction("return " .. anim.colorFunc, auraDisplayName, "color animation");
+        colorFunc = WeakAuras.LoadFunction("return " .. anim.colorFunc);
       else
         region:ColorAnim(nil);
       end
@@ -308,7 +312,7 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
     if(namespace == "display" and type == "main" and not onFinished and not anim.duration_type == "relative") then
       local data = Private.GetDataByUID(uid);
       if(data and data.parent) then
-        local parentRegion = WeakAuras.regions[data.parent].region;
+        local parentRegion = WeakAuras.GetRegion(data.parent)
         if(parentRegion and parentRegion.controlledRegions) then
           for index, regionData in pairs(parentRegion.controlledRegions) do
             local childRegion = regionData.region;
@@ -331,7 +335,6 @@ function Private.Animate(namespace, uid, type, anim, region, inverse, onFinished
     animation.startAlpha = startAlpha
     animation.startWidth = startWidth
     animation.startHeight = startHeight
-    animation.startRotation = startRotation
     animation.dX = (anim.use_translate and anim.x)
     animation.dY = (anim.use_translate and anim.y)
     animation.dAlpha = (anim.use_alpha and (anim.alpha - startAlpha))
@@ -407,8 +410,8 @@ function Private.CancelAnimation(region, resetPos, resetAlpha, resetScale, reset
         anim.region:SetHeight(anim.startHeight);
       end
     end
-    if(resetRotation and anim.region.Rotate) then
-      anim.region:Rotate(anim.startRotation);
+    if(resetRotation and anim.region.SetAnimRotation) then
+      anim.region:SetAnimRotation(nil)
     end
     if(resetColor and anim.region.ColorAnim) then
       anim.region:ColorAnim(nil);

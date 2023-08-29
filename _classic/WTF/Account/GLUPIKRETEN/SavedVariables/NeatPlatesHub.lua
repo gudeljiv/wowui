@@ -42,10 +42,10 @@ NeatPlatesHubSettings = {
 			["r"] = 0.9999977946281433,
 		},
 		["StyleEnemyBarsClickThrough"] = false,
-		["StyleFriendlyBarsClickThrough"] = false,
+		["StyleFriendlyBarsClickThrough"] = true,
 		["DefaultEnemyNameplatesOnNPCs"] = false,
 		["StatusTextRight"] = 7,
-		["StyleFriendlyBarsOnPlayers"] = false,
+		["StyleFriendlyBarsOnPlayers"] = true,
 		["DefaultFriendlyNameplatesOnNPCs"] = false,
 		["WidgetAuraTrackCurse"] = true,
 		["ColorSchoolFrost"] = {
@@ -94,9 +94,9 @@ NeatPlatesHubSettings = {
 			["g"] = 0.9999977946281433,
 			["r"] = 0.9999977946281433,
 		},
-		["StyleFriendlyBarsOnElite"] = false,
+		["StyleFriendlyBarsOnElite"] = true,
 		["CastBarWidth"] = 1,
-		["StyleFriendlyBarsOnActive"] = false,
+		["StyleFriendlyBarsOnActive"] = true,
 		["FriendlyBarColorMode"] = "ByReaction",
 		["ColorRangeFar"] = {
 			["a"] = 0.9999977946281433,
@@ -146,6 +146,12 @@ NeatPlatesHubSettings = {
 		["DefaultNeutralNameplatesOnNPCs"] = false,
 		["StyleFriendlyMode"] = 2,
 		["AdvancedEnableUnitCache"] = true,
+		["FriendlySubtextColor"] = {
+			["a"] = 0,
+			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
+		},
 		["HighlightMouseoverMode"] = 1,
 		["OpacityFilterNeutralUnits"] = false,
 		["TextColorFriendlyNPC"] = {
@@ -156,6 +162,12 @@ NeatPlatesHubSettings = {
 		},
 		["OpacityFilterEnemyNPC"] = false,
 		["TextNameColorMode"] = 1,
+		["EnemySubtextColor"] = {
+			["a"] = 0,
+			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
+		},
 		["ClassEnemyIcon"] = false,
 		["OpacityTarget"] = 1,
 		["TextColorHostilePlayer"] = {
@@ -194,9 +206,9 @@ NeatPlatesHubSettings = {
 			["g"] = 0.627449631690979,
 			["r"] = 0.9999977946281433,
 		},
-		["FriendlyHeadlineColor"] = "ByReaction",
+		["FriendlyHeadlineColor"] = "ByClass",
 		["EnemyHeadlineColor"] = "ByReaction",
-		["ScaleSpotlight"] = 1.2,
+		["ScaleSpotlight"] = 1,
 		["CastbarDurationMode"] = "TimeElapsed",
 		["ColorFocus"] = {
 			["a"] = 0.9999977946281433,
@@ -242,6 +254,7 @@ NeatPlatesHubSettings = {
 			["g"] = 0.588234007358551,
 			["r"] = 0.05882339924573898,
 		},
+		["NameplateNoStackingFriendly"] = false,
 		["OpacityFilterFriendlyNPC"] = false,
 		["ColorRangeMelee"] = {
 			["a"] = 0,
@@ -412,10 +425,334 @@ NeatPlatesHubSettings = {
 		},
 		["Customization"] = {
 			["NameOnly"] = {
+				["name"] = {
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["align"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["size"] = {
+						["value"] = 8,
+						["type"] = "actual",
+					},
+				},
+				["threatborder"] = {
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["enabled"] = {
+						["value"] = false,
+						["type"] = "actual",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+				},
 			},
 			["Default"] = {
+				["customtext"] = {
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["align"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["size"] = {
+						["value"] = 11,
+						["type"] = "actual",
+					},
+				},
+				["name"] = {
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["align"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["y"] = {
+						["value"] = 18,
+						["type"] = "offset",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["size"] = {
+						["value"] = 8,
+						["type"] = "actual",
+					},
+				},
+				["focus"] = {
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+				},
+				["threatborder"] = {
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["enabled"] = {
+						["value"] = false,
+						["type"] = "actual",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+				},
+				["mouseover"] = {
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+				},
+				["healthbar"] = {
+					["y"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["h"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["enabled"] = {
+						["value"] = true,
+						["type"] = "actual",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["height"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["w"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["width"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+				},
 			},
 			["WidgetConfig"] = {
+				["ThreatLineWidget"] = {
+					["anchor"] = {
+						["value"] = "CENTER",
+						["type"] = "actual",
+					},
+					["x"] = {
+						["value"] = 0,
+						["type"] = "offset",
+					},
+					["y"] = {
+						["value"] = -12,
+						["type"] = "offset",
+					},
+				},
+				["ThreatPercentageWidget"] = {
+					["anchor"] = {
+						["value"] = "RIGHT",
+						["type"] = "actual",
+					},
+					["x"] = {
+						["value"] = 20,
+						["type"] = "offset",
+					},
+					["y"] = {
+						["value"] = -9,
+						["type"] = "offset",
+					},
+				},
 			},
 		},
 		["OpacityFilterEnemyPet"] = false,
@@ -441,7 +778,7 @@ NeatPlatesHubSettings = {
 		["WidgetDebuffTrackList"] = "",
 		["BuffSeparationMode"] = 1,
 		["TextStatusForceShadow"] = false,
-		["OpacitySpotlight"] = 0.85,
+		["OpacityFiltered"] = 0,
 		["HeadlineFriendlySubtext"] = "RoleGuildLevel",
 		["OpacitySpotlightRaidMarked"] = false,
 		["StyleFriendlyBarsNoMinions"] = false,
@@ -472,6 +809,7 @@ NeatPlatesHubSettings = {
 				["y"] = 0,
 				["x"] = 0,
 			},
+			["anchor"] = "TOP",
 		},
 		["StyleEnemyBarsOnPlayers"] = true,
 		["ScaleFunctionMode"] = "ByThreat",
@@ -524,7 +862,7 @@ NeatPlatesHubSettings = {
 		},
 		["LowHealthThreshold"] = 0.3,
 		["HighlightFocusMode"] = 1,
-		["OpacityFiltered"] = 0,
+		["OpacitySpotlight"] = 0.85,
 		["TextColorNormal"] = {
 			["a"] = 0.3999991118907929,
 			["b"] = 0.6509789824485779,
@@ -579,8 +917,8 @@ NeatPlatesHubSettings = {
 			["g"] = 0.7529395222663879,
 			["r"] = 0.5137243866920471,
 		},
-		["StyleFriendlyBarsOnNPC"] = false,
+		["StyleFriendlyBarsOnNPC"] = true,
 		["SpellIconEnable"] = false,
-		["FrameBarWidth"] = 1,
+		["FrameBarWidth"] = 1.2,
 	},
 }

@@ -81,7 +81,7 @@ options_button_template = DF.table.copy({}, options_button_template)
 options_button_template.backdropcolor = {.2, .2, .2, .8}
 
 Plater.APIList = {
-	{Name = "SetNameplateColor", 		Signature = "Plater.SetNameplateColor (unitFrame, color)", 				Desc = "Set the color of the nameplate.\n\nColor formats are:\n|cFFFFFF00Just Values|r: r, g, b\n|cFFFFFF00Index Table|r: {r, g, b}\n|cFFFFFF00Hash Table|r: {r = 1, g = 1, b = 1}\n|cFFFFFF00Hex|r: '#FFFF0000' or '#FF0000'\n|cFFFFFF00Name|r: 'yellow' 'white'\n\nCalling without passing width and height reset the color to default."},
+	{Name = "SetNameplateColor", 		Signature = "Plater.SetNameplateColor (unitFrame, color)", 				Desc = "Set the color of the nameplate.\n\nColor formats are:\n|cFFFFFF00Just Values|r: r, g, b\n|cFFFFFF00Index Table|r: {r, g, b}\n|cFFFFFF00Hash Table|r: {r = 1, g = 1, b = 1}\n|cFFFFFF00Hex|r: '#FFFF0000' or '#FF0000'\n|cFFFFFF00Name|r: 'yellow' 'white'\n\nCalling without passing a color will reset the color to default."},
 	{Name = "SetNameplateSize", 		Signature = "Plater.SetNameplateSize (unitFrame, width, height)",		Desc = "Adjust the nameplate size.\n\nCalling without passing width and height reset the size to default."},
 	{Name = "SetBorderColor", 			Signature = "Plater.SetBorderColor (unitFrame, r, g, b, a)",					Desc = "Set the border color.\n\nCalling without passing any color reset the color to default."},
 	
@@ -408,7 +408,7 @@ end
 			--call the external function to import this script with ignoreRevision, overrideExisting and showDebug
 			local importSuccess, newObject = Plater.ImportScriptString (text, true, true, true, keepExisting)
 			if (importSuccess) then
-				PlaterOptionsPanelContainer:SelectIndex (Plater, PLATER_OPTIONS_HOOKING_TAB)
+				PlaterOptionsPanelContainer:SelectTabByIndex (PLATER_OPTIONS_HOOKING_TAB)
 				local mainFrame = PlaterOptionsPanelContainer
 				local hookFrame = mainFrame.AllFrames [PLATER_OPTIONS_HOOKING_TAB]
 				hookFrame.EditScript (newObject)
@@ -417,7 +417,7 @@ end
 		elseif (scriptType == "script") then
 			local importSuccess, newObject = Plater.ImportScriptString (text, true, true, true, keepExisting)
 			if (importSuccess) then
-				PlaterOptionsPanelContainer:SelectIndex (Plater, PLATER_OPTIONS_SCRIPTING_TAB)
+				PlaterOptionsPanelContainer:SelectTabByIndex (PLATER_OPTIONS_SCRIPTING_TAB)
 				local mainFrame = PlaterOptionsPanelContainer
 				local scriptingFrame = mainFrame.AllFrames [PLATER_OPTIONS_SCRIPTING_TAB]
 				scriptingFrame.EditScript (newObject)
@@ -461,7 +461,7 @@ end
 				end
 				
 				if promptToOverwrite then
-					DF:ShowPromptPanel ("This Mod/Script already exists. Do you want to overwrite it?\nClicking 'No' will create a copy instead.\nTo cancel close this window wiht the 'x'.", function() do_script_or_hook_import (text, scriptType, false) end, function() do_script_or_hook_import (text, scriptType, true) end, true, 550)
+					DF:ShowPromptPanel ("This Mod/Script already exists. Do you want to overwrite it?\nClicking 'No' will create a copy instead.\nTo cancel close this window with the 'x'.", function() do_script_or_hook_import (text, scriptType, false) end, function() do_script_or_hook_import (text, scriptType, true) end, true, 550)
 				else
 					do_script_or_hook_import (text, scriptType, true)
 				end
@@ -689,7 +689,8 @@ end
 						local profilesFrame = mainFrame.AllFrames [PLATER_OPTIONS_PROFILES_TAB]
 						
 						if profileExists then
-							DF:ShowPromptPanel (format (L["OPTIONS_PROFILE_IMPORT_OVERWRITE"], profileName), function() profilesFrame.DoProfileImport(profileName, profile, true, isWagoUpdate) end, function() end, true, 500)
+							local LOC = DF.Language.GetLanguageTable(addonName)
+							DF:ShowPromptPanel(string.format(LOC["OPTIONS_PROFILE_IMPORT_OVERWRITE"], profileName), function() profilesFrame.DoProfileImport(profileName, profile, true, isWagoUpdate) end, function() end, true, 500)
 						else
 							profilesFrame.DoProfileImport(profileName, profile, false, false)
 						end
@@ -713,7 +714,7 @@ end
 					end
 					
 					if promptToOverwrite then
-						DF:ShowPromptPanel ("This Mod/Script already exists. Do you want to overwrite it?\nClicking 'No' will create a copy instead.\nTo cancel close this window wiht the 'x'.", function() do_script_or_hook_import (encoded, scriptType, false) end, function() do_script_or_hook_import (encoded, scriptType, true) end, true, 550)
+						DF:ShowPromptPanel ("This Mod/Script already exists. Do you want to overwrite it?\nClicking 'No' will create a copy instead.\nTo cancel close this window with the 'x'.", function() do_script_or_hook_import (encoded, scriptType, false) end, function() do_script_or_hook_import (encoded, scriptType, true) end, true, 550)
 					else
 						do_script_or_hook_import (encoded, scriptType, true)
 					end
@@ -919,12 +920,12 @@ end
 		elseif (option == "wago_slugs") then
 			import_from_wago(scriptId)
 			update_wago_slug_data()
-			mainFrame.wagoSlugFrame.ScriptSelectionScrollBox:Refresh()
+			mainFrame.ScriptSelectionScrollBox:Refresh()
 			
 		elseif (option == "wago_stash") then
 			import_from_wago(scriptId, true)
 			update_wago_stash_data()
-			mainFrame.wagoStashFrame.ScriptSelectionScrollBox:Refresh()
+			mainFrame.ScriptSelectionScrollBox:Refresh()
 			
 		end
 		

@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local SharedMedia = LibStub("LibSharedMedia-3.0");
@@ -92,25 +92,46 @@ local function createOptions(id, data)
       name = L["Bar Color Settings"],
       order = 39
     },
+    enableGradient = {
+      type = "toggle",
+      width = WeakAuras.normalWidth,
+      name = L["Enable Gradient"],
+      order = 39.1
+    },
+    gradientOrientation = {
+      type = "select",
+      width = WeakAuras.normalWidth,
+      values = OptionsPrivate.Private.gradient_orientations,
+      name = L["Gradient Orientation"],
+      order = 39.2
+    },
     barColor = {
       type = "color",
       width = WeakAuras.normalWidth,
-      name = L["Bar Color"],
+      name = L["Bar Color/Gradient Start"],
       hasAlpha = true,
-      order = 39.1
+      order = 39.3
+    },
+    barColor2 = {
+      type = "color",
+      width = WeakAuras.normalWidth,
+      name = L["Gradient End"],
+      hasAlpha = true,
+      order = 39.4
     },
     backgroundColor = {
       type = "color",
       width = WeakAuras.normalWidth,
       name = L["Background Color"],
       hasAlpha = true,
-      order = 39.2
+      order = 39.5
     },
     alpha = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Bar Alpha"],
-      order = 39.3,
+      order = 39.6,
       min = 0,
       max = 1,
       bigStep = 0.01,
@@ -212,6 +233,7 @@ local function createOptions(id, data)
     },
     zoom = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Zoom"],
       order = 40.91,
@@ -298,6 +320,7 @@ local function createOptions(id, data)
     },
     sparkWidth = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Width"],
       order = 44.6,
@@ -309,6 +332,7 @@ local function createOptions(id, data)
     },
     sparkHeight = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Height"],
       order = 44.7,
@@ -320,6 +344,7 @@ local function createOptions(id, data)
     },
     sparkOffsetX = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Offset"],
       order = 44.8,
@@ -331,6 +356,7 @@ local function createOptions(id, data)
     },
     sparkOffsetY = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Offset"],
       order = 44.9,
@@ -351,6 +377,7 @@ local function createOptions(id, data)
     },
     sparkRotation = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Rotation"],
       min = 0,
@@ -456,7 +483,7 @@ end
 -- Create preview thumbnail
 local function createThumbnail()
   -- Preview frame
-  local borderframe = CreateFrame("FRAME", nil, UIParent);
+  local borderframe = CreateFrame("Frame", nil, UIParent);
   borderframe:SetWidth(32);
   borderframe:SetHeight(32);
 
@@ -467,13 +494,13 @@ local function createThumbnail()
   border:SetTexCoord(0.2, 0.8, 0.2, 0.8);
 
   -- Main region
-  local region = CreateFrame("FRAME", nil, borderframe);
+  local region = CreateFrame("Frame", nil, borderframe);
   borderframe.region = region;
   region:SetWidth(32);
   region:SetHeight(32);
 
   -- Status-bar frame
-  local bar = CreateFrame("FRAME", nil, region);
+  local bar = CreateFrame("Frame", nil, region);
   borderframe.bar = bar;
 
   -- Fake status-bar
@@ -614,7 +641,7 @@ local function modifyThumbnail(parent, borderframe, data, fullModify, width, hei
     end
 
     if data then
-      local name, icon = WeakAuras.GetNameAndIcon(data)
+      local _, icon = WeakAuras.GetNameAndIcon(data)
       borderframe:SetIcon(icon)
     end
 
@@ -638,7 +665,7 @@ local function createIcon()
   };
 
   -- Create and configure thumbnail
-  local thumbnail = createThumbnail(UIParent);
+  local thumbnail = createThumbnail();
   modifyThumbnail(UIParent, thumbnail, data, nil, 32, 18);
   thumbnail:SetIcon("Interface\\Icons\\INV_Sword_62");
 

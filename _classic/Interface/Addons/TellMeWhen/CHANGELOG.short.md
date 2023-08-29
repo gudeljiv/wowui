@@ -1,11 +1,6 @@
 
-## v9.1.2
-* New icon type: Lua Value (community contribution by Taurlog of Wyrmrest Accord)
-* Minor performance improvements
-* Support for Classic SoM patch (1.14).
-  
-### Bug Fixes
-* Fixed #1918 - Combo point resource display icons now update properly.
+## v10.1.6
+* Support for WoW Classic Era 1.14.4. The classic era codebase has been merged into the main codebase, so some features that don't support classic may be present in a non-working state.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/37ddac6194ebf414807e9908ca24d6063f0c6ae2/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/417ec7a24296326ce5fb3a80b69b261e4f82fe9c/CHANGELOG.md)

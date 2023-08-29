@@ -303,8 +303,8 @@ local function CreatePluginFrames()
 	SOF:SetMovable (true)
 	SOF:SetResizable (true)
 	SOF:SetClampedToScreen (true)
-	SOF:SetMinResize (150, 40)
-	SOF:SetMaxResize (800, 1024)
+
+	SOF:SetResizeBounds(150, 40, 800, 1024)
 	
 	function StreamOverlay:SaveWindowSizeAnLocation()
 		--> save size first

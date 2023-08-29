@@ -1,14 +1,12 @@
-if not WeakAuras.IsCorrectVersion() then
-  return
-end
-
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 local L = WeakAuras.L
 
 local pairs, next, type, unpack = pairs, next, type, unpack
 
-local Type, Version = "WeakAurasPendingUpdateButton", 1
+local Type, Version = "WeakAurasPendingUpdateButton", 5
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then
   return
@@ -76,7 +74,7 @@ local methods = {
     self.frame:SetScript("OnMouseUp", function()
       Hide_Tooltip()
       self:SetMenu()
-      EasyMenu(self.menu, WeakAuras_DropDownMenu, self.frame, 0, 0, "MENU")
+      LibDD:EasyMenu(self.menu, WeakAuras_DropDownMenu, self.frame, 0, 0, "MENU")
     end)
 
     self.frame:SetScript("OnEnter", function()
@@ -101,7 +99,10 @@ local methods = {
                 func = function()
                   local auraData = WeakAuras.GetData(auraId)
                   if auraData then
-                    WeakAuras.Import(self.companionData.encoded, auraData)
+                    local success, error = WeakAuras.Import(self.companionData.encoded, auraData)
+                    if not success and error ~= nil then
+                      WeakAuras.prettyPrint(error)
+                    end
                   end
                 end
               },
@@ -216,7 +217,7 @@ local methods = {
       self:ReleaseThumbnail()
       self:AcquireThumbnail()
     else
-      local option = WeakAuras.regionOptions[self.thumbnailType]
+      local option = OptionsPrivate.Private.regionOptions[self.thumbnailType]
       if option and option.modifyThumbnail then
         option.modifyThumbnail(self.frame, self.thumbnail, self.data)
       end
@@ -230,7 +231,7 @@ local methods = {
 
     if self.thumbnail then
       local regionType = self.thumbnailType
-      local option = WeakAuras.regionOptions[regionType]
+      local option = OptionsPrivate.Private.regionOptions[regionType]
       if self.thumbnail.icon then
         self.thumbnail.icon:SetDesaturated(false)
       end
@@ -253,7 +254,7 @@ local methods = {
     local regionType = self.data.regionType
     self.thumbnailType = regionType
 
-    local option = WeakAuras.regionOptions[regionType]
+    local option = OptionsPrivate.Private.regionOptions[regionType]
     if option and option.acquireThumbnail then
       self.thumbnail = option.acquireThumbnail(button, self.data)
       if self.thumbnail.icon then
@@ -289,7 +290,7 @@ Constructor
 
 local function Constructor()
   local name = "WeakAurasPendingUpdateButton" .. AceGUI:GetNextWidgetNum(Type)
-  local button = CreateFrame("BUTTON", name, UIParent)
+  local button = CreateFrame("Button", name, UIParent)
   button:SetHeight(32)
   button:SetWidth(1000)
   button.data = {}
@@ -320,7 +321,7 @@ local function Constructor()
 
   button.description = {}
 
-  local update = CreateFrame("BUTTON", nil, button)
+  local update = CreateFrame("Button", nil, button)
   button.update = update
   update.disabled = true
   update.func = function()
@@ -334,12 +335,14 @@ local function Constructor()
   -- Add logo
   local updateLogo = CreateFrame("Frame", nil, button)
   button.updateLogo = updateLogo
-  local tex = updateLogo:CreateTexture(nil, "OVERLAY")
+  local tex = updateLogo:CreateTexture()
   tex:SetTexture([[Interface\AddOns\WeakAuras\Media\Textures\wagoupdate_logo.tga]])
   tex:SetAllPoints()
   updateLogo.tex = tex
   updateLogo:SetSize(24, 24)
   updateLogo:SetPoint("CENTER", update)
+  updateLogo:SetFrameStrata(update:GetFrameStrata())
+  updateLogo:SetFrameLevel(update:GetFrameLevel()-1)
 
   -- Animation On Hover
   local animGroup = update:CreateAnimationGroup()
@@ -360,6 +363,7 @@ local function Constructor()
   update:Hide()
   updateLogo:Hide()
 
+  --- @type table<string, any>
   local widget = {
     frame = button,
     title = title,

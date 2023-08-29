@@ -3,8 +3,8 @@ GargulDB = {
 	["BoostedRolls"] = {
 	},
 	["LoadDetails"] = {
-		["5.3.10"] = 1680274260,
-		["lastLoadedOn"] = 1680274260,
+		["5.3.10"] = 1693315214,
+		["lastLoadedOn"] = 1693315214,
 		["5.3.2"] = 1677011490,
 		["5.2.0"] = 1675856197,
 		["5.2.1"] = 1675921266,
@@ -149,13 +149,13 @@ GargulDB = {
 			["enableBidderQueue"] = true,
 			["enableGDKPBidderQueue"] = true,
 			["minimizeBidderQueue"] = false,
-			["Mutators"] = {
-			},
+			["closeAuctioneerOnStart"] = false,
 			["announceNewBidInRW"] = true,
 			["minimumBid"] = 100,
 			["showHistoryOnTooltip"] = true,
+			["Mutators"] = {
+			},
 			["enableGDKPQueuesByDefault"] = false,
-			["closeAuctioneerOnStart"] = false,
 			["customPotExportHeader"] = "Player,Cut",
 			["queueIsHalted"] = false,
 			["time"] = 30,
@@ -443,8 +443,6 @@ GargulDB = {
 		},
 		["28942415643091600374"] = {
 			["checksum"] = "28942415643091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -475,8 +473,6 @@ GargulDB = {
 		},
 		["30572471327194665130"] = {
 			["checksum"] = "30572471327194665130",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -567,8 +563,6 @@ GargulDB = {
 		},
 		["73327518770004894000"] = {
 			["checksum"] = "73327518770004894000",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -644,8 +638,6 @@ GargulDB = {
 		},
 		["11689222242719466513"] = {
 			["checksum"] = "11689222242719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -976,8 +968,6 @@ GargulDB = {
 		},
 		["19008059603091600374"] = {
 			["checksum"] = "19008059603091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1098,8 +1088,6 @@ GargulDB = {
 		},
 		["41331074196808231430"] = {
 			["checksum"] = "41331074196808231430",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1205,8 +1193,6 @@ GargulDB = {
 		},
 		["10888027527000489400"] = {
 			["checksum"] = "10888027527000489400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1312,8 +1298,6 @@ GargulDB = {
 		},
 		["14799986133091600374"] = {
 			["checksum"] = "14799986133091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1329,8 +1313,6 @@ GargulDB = {
 		},
 		["35712897983920055792"] = {
 			["checksum"] = "35712897983920055792",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1346,8 +1328,6 @@ GargulDB = {
 		},
 		["42727394626808231430"] = {
 			["checksum"] = "42727394626808231430",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1408,8 +1388,6 @@ GargulDB = {
 		},
 		["40329129243091600374"] = {
 			["checksum"] = "40329129243091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1470,8 +1448,6 @@ GargulDB = {
 		},
 		["24676891570004894000"] = {
 			["checksum"] = "24676891570004894000",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1532,8 +1508,6 @@ GargulDB = {
 		},
 		["35041426873656972919"] = {
 			["checksum"] = "35041426873656972919",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1579,32 +1553,6 @@ GargulDB = {
 		},
 		["14777239392165529280"] = {
 			["checksum"] = "14777239392165529280",
-			["Rolls"] = {
-				{
-					["player"] = "Lekx",
-					["time"] = 1679065477,
-					["amount"] = 64,
-					["class"] = "deathknight",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [1]
-				{
-					["player"] = "Farsken",
-					["time"] = 1679065479,
-					["amount"] = 39,
-					["class"] = "mage",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [2]
-				{
-					["player"] = "Dád",
-					["time"] = 1679065480,
-					["amount"] = 46,
-					["class"] = "mage",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [3]
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1666,8 +1614,6 @@ GargulDB = {
 		},
 		["36063949243091600374"] = {
 			["checksum"] = "36063949243091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1698,8 +1644,6 @@ GargulDB = {
 		},
 		["38276844371927059010"] = {
 			["checksum"] = "38276844371927059010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -1790,8 +1734,6 @@ GargulDB = {
 		},
 		["35448156452509983927"] = {
 			["checksum"] = "35448156452509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2092,8 +2034,6 @@ GargulDB = {
 		},
 		["22300001357000489400"] = {
 			["checksum"] = "22300001357000489400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2109,8 +2049,6 @@ GargulDB = {
 		},
 		["21453241733091600374"] = {
 			["checksum"] = "21453241733091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2246,8 +2184,6 @@ GargulDB = {
 		},
 		["66981783823318178320"] = {
 			["checksum"] = "66981783823318178320",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2293,8 +2229,6 @@ GargulDB = {
 		},
 		["69243191268082314300"] = {
 			["checksum"] = "69243191268082314300",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2490,32 +2424,6 @@ GargulDB = {
 		},
 		["32624723194016369854"] = {
 			["checksum"] = "32624723194016369854",
-			["Rolls"] = {
-				{
-					["player"] = "Fattigjonen",
-					["time"] = 1679065864,
-					["amount"] = 53,
-					["class"] = "warlock",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [1]
-				{
-					["player"] = "Nálkás",
-					["time"] = 1679065865,
-					["amount"] = 29,
-					["class"] = "paladin",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [2]
-				{
-					["player"] = "Beebah",
-					["time"] = 1679065867,
-					["amount"] = 33,
-					["class"] = "shaman",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [3]
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2577,8 +2485,6 @@ GargulDB = {
 		},
 		["11944786562509983927"] = {
 			["checksum"] = "11944786562509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2609,8 +2515,6 @@ GargulDB = {
 		},
 		["14925428262719466513"] = {
 			["checksum"] = "14925428262719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2761,8 +2665,6 @@ GargulDB = {
 		},
 		["17893114932509983927"] = {
 			["checksum"] = "17893114932509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2853,8 +2755,6 @@ GargulDB = {
 		},
 		["65234966427194665130"] = {
 			["checksum"] = "65234966427194665130",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2915,8 +2815,6 @@ GargulDB = {
 		},
 		["28036390233091600374"] = {
 			["checksum"] = "28036390233091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2932,16 +2830,6 @@ GargulDB = {
 		},
 		["35782672641675283720"] = {
 			["checksum"] = "35782672641675283720",
-			["Rolls"] = {
-				{
-					["player"] = "Nezoko",
-					["time"] = 1679065888,
-					["amount"] = 17,
-					["class"] = "paladin",
-					["classification"] = "MS",
-					["priority"] = 2,
-				}, -- [1]
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -2988,8 +2876,6 @@ GargulDB = {
 		},
 		["22246350111927059010"] = {
 			["checksum"] = "22246350111927059010",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3065,8 +2951,6 @@ GargulDB = {
 		},
 		["79815167870004894000"] = {
 			["checksum"] = "79815167870004894000",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3127,8 +3011,6 @@ GargulDB = {
 		},
 		["14413529633091600374"] = {
 			["checksum"] = "14413529633091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3174,8 +3056,6 @@ GargulDB = {
 		},
 		["31115153883091600374"] = {
 			["checksum"] = "31115153883091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3251,8 +3131,6 @@ GargulDB = {
 		},
 		["37260330353920055792"] = {
 			["checksum"] = "37260330353920055792",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3268,8 +3146,6 @@ GargulDB = {
 		},
 		["17459786413920055792"] = {
 			["checksum"] = "17459786413920055792",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3345,8 +3221,6 @@ GargulDB = {
 		},
 		["15141417262719466513"] = {
 			["checksum"] = "15141417262719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3512,8 +3386,6 @@ GargulDB = {
 		},
 		["15886237322509983927"] = {
 			["checksum"] = "15886237322509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3589,8 +3461,6 @@ GargulDB = {
 		},
 		["16135840012719466513"] = {
 			["checksum"] = "16135840012719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3666,8 +3536,6 @@ GargulDB = {
 		},
 		["27757932142719466513"] = {
 			["checksum"] = "27757932142719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3803,8 +3671,6 @@ GargulDB = {
 		},
 		["39689315170004894000"] = {
 			["checksum"] = "39689315170004894000",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3835,8 +3701,6 @@ GargulDB = {
 		},
 		["25669700802509983927"] = {
 			["checksum"] = "25669700802509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3867,8 +3731,6 @@ GargulDB = {
 		},
 		["81719856525099839270"] = {
 			["checksum"] = "81719856525099839270",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3930,8 +3792,6 @@ GargulDB = {
 		},
 		["32450791482509983927"] = {
 			["checksum"] = "32450791482509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -3962,8 +3822,6 @@ GargulDB = {
 		},
 		["14586573903920055792"] = {
 			["checksum"] = "14586573903920055792",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4024,8 +3882,6 @@ GargulDB = {
 		},
 		["24225570772331817832"] = {
 			["checksum"] = "24225570772331817832",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4192,8 +4048,6 @@ GargulDB = {
 		},
 		["17399266485779218760"] = {
 			["checksum"] = "17399266485779218760",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4209,8 +4063,6 @@ GargulDB = {
 		},
 		["32549424265779218760"] = {
 			["checksum"] = "32549424265779218760",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4331,8 +4183,6 @@ GargulDB = {
 		},
 		["39694065977000489400"] = {
 			["checksum"] = "39694065977000489400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4438,8 +4288,6 @@ GargulDB = {
 		},
 		["37694419592509983927"] = {
 			["checksum"] = "37694419592509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4530,8 +4378,6 @@ GargulDB = {
 		},
 		["30902689813091600374"] = {
 			["checksum"] = "30902689813091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4682,8 +4528,6 @@ GargulDB = {
 		},
 		["19646577332719466513"] = {
 			["checksum"] = "19646577332719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4744,8 +4588,6 @@ GargulDB = {
 		},
 		["13541601257000489400"] = {
 			["checksum"] = "13541601257000489400",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4791,8 +4633,6 @@ GargulDB = {
 		},
 		["35028642703091600374"] = {
 			["checksum"] = "35028642703091600374",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4808,8 +4648,6 @@ GargulDB = {
 		},
 		["17623318413920055792"] = {
 			["checksum"] = "17623318413920055792",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4825,8 +4663,6 @@ GargulDB = {
 		},
 		["26970806012509983927"] = {
 			["checksum"] = "26970806012509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4842,8 +4678,6 @@ GargulDB = {
 		},
 		["40364581862719466513"] = {
 			["checksum"] = "40364581862719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4859,8 +4693,6 @@ GargulDB = {
 		},
 		["27110032962719466513"] = {
 			["checksum"] = "27110032962719466513",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4891,8 +4723,6 @@ GargulDB = {
 		},
 		["13591427964046212820"] = {
 			["checksum"] = "13591427964046212820",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4908,8 +4738,6 @@ GargulDB = {
 		},
 		["74651119827194665130"] = {
 			["checksum"] = "74651119827194665130",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4925,8 +4753,6 @@ GargulDB = {
 		},
 		["35077233782509983927"] = {
 			["checksum"] = "35077233782509983927",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,
@@ -4942,8 +4768,6 @@ GargulDB = {
 		},
 		["34502229133999067890"] = {
 			["checksum"] = "34502229133999067890",
-			["Rolls"] = {
-			},
 			["OS"] = false,
 			["WL"] = false,
 			["TMB"] = false,

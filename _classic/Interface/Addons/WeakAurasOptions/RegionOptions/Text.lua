@@ -1,10 +1,10 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
-local screenWidth, screenHeight = math.ceil(GetScreenWidth() / 20) * 20, math.ceil(GetScreenHeight() / 20) * 20;
+local screenWidth = math.ceil(GetScreenWidth() / 20) * 20;
 
 local indentWidth = 0.15
 local hiddenFontExtra = function()
@@ -55,6 +55,7 @@ local function createOptions(id, data)
     },
     fontSize = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Size"],
       order = 46,
@@ -153,6 +154,7 @@ local function createOptions(id, data)
     },
     shadowXOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth - indentWidth,
       name = L["Shadow X Offset"],
       softMin = -15,
@@ -163,6 +165,7 @@ local function createOptions(id, data)
     },
     shadowYOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Shadow Y Offset"],
       softMin = -15,
@@ -215,6 +218,7 @@ local function createOptions(id, data)
       width = WeakAuras.normalWidth,
       order = 49.1,
       type = "range",
+      control = "WeakAurasSpinBox",
       min = 1,
       softMax = screenWidth,
       bigStep = 1,
@@ -290,7 +294,7 @@ local function createOptions(id, data)
   end
 
   local total, index = 0, 1
-  for child in OptionsPrivate.Private.TraverseLeafsOrAura(data) do
+  for _ in OptionsPrivate.Private.TraverseLeafsOrAura(data) do
     total = total + 1
   end
 
@@ -299,7 +303,7 @@ local function createOptions(id, data)
       return child["displayText_format_" .. key]
     end
     local input = child.displayText
-    OptionsPrivate.AddTextFormatOption(input, true, get, addOption, hidden, setHidden, index, total)
+    OptionsPrivate.AddTextFormatOption(input, true, get, addOption, hidden, setHidden, false, index, total)
     index = index + 1
   end
 
@@ -317,7 +321,7 @@ local function createOptions(id, data)
 end
 
 local function createThumbnail()
-  local borderframe = CreateFrame("FRAME", nil, UIParent);
+  local borderframe = CreateFrame("Frame", nil, UIParent);
   borderframe:SetWidth(32);
   borderframe:SetHeight(32);
 
@@ -407,7 +411,7 @@ local function createIcon()
     displayText = "World\nof\nWarcraft";
   };
 
-  local thumbnail = createThumbnail(UIParent);
+  local thumbnail = createThumbnail();
   modifyThumbnail(UIParent, thumbnail, data);
   thumbnail.mask:SetPoint("BOTTOMLEFT", thumbnail, "BOTTOMLEFT", 3, 3);
   thumbnail.mask:SetPoint("TOPRIGHT", thumbnail, "TOPRIGHT", -3, -3);

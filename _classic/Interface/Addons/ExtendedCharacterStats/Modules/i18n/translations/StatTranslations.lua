@@ -37,12 +37,33 @@ local statTranslations = {
         ["zhCN"] = "暴击几率",
         ["ruRU"] = "Крит",
     },
+    ["Armor Pen."] = {
+        ["enUS"] = true,
+        ["deDE"] = "Rüstungsdurchschlagskraft",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Проник. способ. броня",
+    },
+    ["Armor Pen. Rating"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Rüstungsdurchschlagwertung",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = false,
+    },
     ["Expertise"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Waffenkunde",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Мастерство",
+    },
+    ["Expertise Rating"] = {
         ["enUS"] = true,
         ["deDE"] = "Waffenkundewertung",
         ["frFR"] = false,
         ["zhCN"] = false,
-        ["ruRU"] = "Мастерство",
+        ["ruRU"] = "Рейтинг мастерства",
     },
     ["Hit"] = {
         ["enUS"] = true,
@@ -78,6 +99,20 @@ local statTranslations = {
         ["frFR"] = "Rater (Lvl + 3)",
         ["zhCN"] = "未命中 (等级 + 3)",
         ["ruRU"] = "Сопрот. (+3 ур.)",
+    },
+    ["Haste Rating"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Tempowertung",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Рейтинг скорости",
+    },
+    ["Haste Bonus"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Tempobonus",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Бонус к скорости",
     },
     ["Attack Speed"] = {
         ["enUS"] = true,
@@ -127,6 +162,13 @@ local statTranslations = {
         ["frFR"] = false,
         ["zhCN"] = false,
         ["ruRU"] = "Снижение крита",
+    },
+    ["Avoidance"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Vermeidung",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Избежание",
     },
     ["Defense Rating"] = {
         ["enUS"] = true,
@@ -211,6 +253,13 @@ local statTranslations = {
         ["frFR"] = "MP5 (Lancer)",
         ["zhCN"] = "附魔回蓝",
         ["ruRU"] = "MP5 (каст)",
+    },
+    ["MP5 (Not casting)"] = {
+        ["enUS"] = true,
+        ["deDE"] = "MP5 (Nicht zaubernd)",
+        ["frFR"] = "MP5 (pas de diffusion)",
+        ["zhCN"] = "MP5（非铸造）",
+        ["ruRU"] = "MP5 (не каст)",
     },
     ["Spell"] = {
         ["enUS"] = true,

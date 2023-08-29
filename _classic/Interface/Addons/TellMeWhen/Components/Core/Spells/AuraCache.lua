@@ -20,10 +20,10 @@ local print = TMW.print
 local clientVersion = select(4, GetBuildInfo())
 local CL_CONTROL_PLAYER = COMBATLOG_OBJECT_CONTROL_PLAYER
 local bitband = bit.band
-local strlowerCache = TMW.strlowerCache
+
 
 TMW:RegisterDatabaseDefaults{
-	locale = {
+	global = {
 		AuraCache	= {
 		},
 	},
@@ -44,8 +44,8 @@ AuraCache.CONST = {
 
 --[[ Returns the main cache table. Structure:
 Cache = {
-	[spellName] = AuraCache.CONST.AURA_TYPE_NONPLAYER,
-	[spellName] = AuraCache.CONST.AURA_TYPE_PLAYER,
+	[spellID] = AuraCache.CONST.AURA_TYPE_NONPLAYER,
+	[spellID] = AuraCache.CONST.AURA_TYPE_PLAYER,
 }
 ]]
 function AuraCache:GetCache()
@@ -66,35 +66,32 @@ end
 -- PRIVATE:
 
 TMW:RegisterCallback("TMW_DB_INITIALIZED", function()
-	-- This is the old aura cache.
-	-- Storing it directly in the DB is a terrible practice, so just wipe and start again from scratch.
-	-- (Users experiencing this wipe for the first time are probably loading in fresh with MoP anyway)
-	TellMeWhenDB.AuraCache = nil
-	
-	Cache = TMW.db.locale.AuraCache
+	Cache = TMW.db.global.AuraCache
 	
 	-- Always be listening for new auras,
 	-- store them in the main DB until the options DB is loaded.
-	AuraCache:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+	if not TMW.isClassic then
+		-- The aura cache is only useful if we can harvest spellIDs.
+		-- Otherwise, it fills with too much useless data.
+		-- Since the combat log in classic doesnt have spellids, disable it.
+		AuraCache:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+	end
 end)
 
 function AuraCache:COMBAT_LOG_EVENT_UNFILTERED()
-	local _, p,_, g, _, f, _, _, _, _, _, id, name = CombatLogGetCurrentEventInfo()
-	if p == "SPELL_AURA_APPLIED" then
-		name = strlowerCache[name]
-		if Cache[name] then
-			-- nothing
-		elseif bitband(f, CL_CONTROL_PLAYER) == CL_CONTROL_PLAYER then
-			Cache[name] = self.CONST.AURA_TYPE_PLAYER
+	local _, p,_, g, _, f, _, _, _, _, _, i = CombatLogGetCurrentEventInfo()
+	if p == "SPELL_AURA_APPLIED" and not Cache[i] then
+		if bitband(f, CL_CONTROL_PLAYER) == CL_CONTROL_PLAYER then
+			Cache[i] = self.CONST.AURA_TYPE_PLAYER
 		else
-			Cache[name] = self.CONST.AURA_TYPE_NONPLAYER
+			Cache[i] = self.CONST.AURA_TYPE_NONPLAYER
 		end
 	end
 end
 
 TMW:RegisterCallback("TMW_OPTIONS_LOADING", function()
 	TMW.IE:RegisterDatabaseDefaults{
-		locale = {
+		global = {
 			XPac_AuraCache = 0,
 			AuraCache	= {
 
@@ -105,9 +102,9 @@ end)
 
 TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 
-	local Cache_OptDB = TMW.IE.db.locale.AuraCache
+	local Cache_OptDB = TMW.IE.db.global.AuraCache
 
-	if Cache == TMW.db.locale.AuraCache then
+	if Cache == TMW.db.global.AuraCache then
 
 		for k, v in pairs(Cache) do
 			-- import into the options DB and take it out of the main DB
@@ -129,9 +126,9 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 	
 	-- Wipe the aura cache if user is running a new expansion (expansions have drastic spell changes)
 	local XPac = tonumber(strsub(clientVersion, 1, 1))
-	if TMW.IE.db.locale.XPac_AuraCache < XPac then
+	if TMW.IE.db.global.XPac_AuraCache < XPac then
 		wipe(Cache_OptDB)
-		TMW.IE.db.locale.XPac_AuraCache = XPac
+		TMW.IE.db.global.XPac_AuraCache = XPac
 	end
 	
 	OptionsAreLoaded = true

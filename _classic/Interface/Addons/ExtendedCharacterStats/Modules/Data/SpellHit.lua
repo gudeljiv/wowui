@@ -6,7 +6,7 @@ local DataUtils = ECSLoader:ImportModule("DataUtils")
 local _SpellHit = {}
 
 function Data:SpellMissChanceSameLevel()
-    local missChance = 4
+    local missChance = ECS.IsWotlk and 3 or 4
 
     missChance = missChance - _SpellHit:GetTalentSpellHitBonus()
     local mod = _SpellHit:GetSpellHitBonus()
@@ -14,7 +14,9 @@ function Data:SpellMissChanceSameLevel()
         missChance = missChance - mod
     end
 
-    if missChance < 1 then
+    if ECS.IsWotlk and missChance < 0 then
+        missChance = 0
+    elseif (not ECS.IsWotlk) and missChance < 1 then
         missChance = 1
     elseif missChance > 100 then
         missChance = 100
@@ -32,7 +34,9 @@ function Data:SpellMissChanceBossLevel()
         missChance = missChance - mod
     end
 
-    if missChance < 1 then
+    if ECS.IsWotlk and missChance < 0 then
+        missChance = 0
+    elseif (not ECS.IsWotlk) and missChance < 1 then
         missChance = 1
     elseif missChance > 100 then
         missChance = 100
@@ -46,44 +50,57 @@ function _SpellHit:GetTalentSpellHitBonus()
     local bonus = 0
 
     if classId == Data.PRIEST then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 5)
-        bonus = points * 2 -- 0-10% from Shadow Focus
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
+            bonus = points -- 0-3% from Shadow Focus
+        else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 5)
+            bonus = points * 2 -- 0-10% from Shadow Focus
+        end
     end
 
-    if classId == Data.PALADIN and ECS.IsTBC then
+    if classId == Data.PALADIN and (not ECS.IsWotlk) then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
         bonus = points * 1 -- 0-3% Precision
     end
 
     if classId == Data.MAGE then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
-        if ECS.IsTBC then
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 17)
             bonus = points * 1 -- 0-3% from Elemental Precision
         else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 3)
             bonus = points * 2 -- 0-6% from Elemental Precision
         end
     end
 
     if classId == Data.SHAMAN then
-        if ECS.IsTBC then
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 15)
-            bonus = points * 2 -- 0-6% from Elemental Precision
-        end
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 16)
+                bonus = points -- 0-3% from Elemental Precision
+            end
 
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 6)
-        bonus = bonus + points * 1 -- 0-3% Nature's Guidance
+        if (not ECS.IsWotlk) then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 6)
+            bonus = bonus + points * 1 -- 0-3% Nature's Guidance
+        end
     end
 
     if classId == Data.DRUID then
-        if ECS.IsTBC then
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 16)
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 13)
             bonus = points * 2 -- 0-4% from Balance of Power
         end
     end
 
     if classId == Data.WARLOCK then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 1)
-        bonus = points * 2 -- 0-10% from Suppression
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 5)
+            bonus = points -- 0-3% from Suppression
+        else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(1, 1)
+            bonus = points * 2 -- 0-10% from Suppression
+        end
     end
 
     return bonus
@@ -94,7 +111,7 @@ function _SpellHit:GetSpellHitBonus()
     if CR_HIT_SPELL then
         return GetCombatRatingBonus(CR_HIT_SPELL) + _SpellHit:GetSpellHitFromBuffs()
     end
-    return GetSpellHitModifier() / 7 -- For 1% hit on gear GetSpellHitModifier returns 7
+    return (GetSpellHitModifier() or 0) / 7 -- For 1% hit on gear GetSpellHitModifier returns 7
 end
 
 function _SpellHit:GetSpellHitFromBuffs()
@@ -117,7 +134,7 @@ function _SpellHit:GetSpellHitFromBuffs()
         end
     end
 
-    if (not otherDraeneiInGroup) and IsSpellKnown(28878) then
+    if (not otherDraeneiInGroup) and (IsSpellKnown(28878) or IsSpellKnown(6562)) then
         mod = mod + 1
     end
 

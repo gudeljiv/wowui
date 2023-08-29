@@ -42,7 +42,7 @@ function _QuestieJourney.questsByZone:ManageTree(container, zoneTree)
         local treePath = {...}
 
         if not treePath[2] then
-            Questie:Debug(Questie.DEBUG_CRITICAL, "[zoneTreeFrame:OnClick]", "No tree path given in Journey.")
+            Questie:Debug(Questie.DEBUG_CRITICAL, "[zoneTreeFrame:OnClick] No tree path given in Journey.")
             return
         end
         -- if they clicked on a header, don't do anything
@@ -147,6 +147,7 @@ function _QuestieJourney.questsByZone:CollectZoneQuests(zoneId)
             else
                 local queryResult = QuestieDB.QueryQuest(
                         questId,
+                        {
                         "exclusiveTo",
                         "nextQuestInChain",
                         "parentQuest",
@@ -154,6 +155,7 @@ function _QuestieJourney.questsByZone:CollectZoneQuests(zoneId)
                         "preQuestGroup",
                         "requiredMinRep",
                         "requiredMaxRep"
+                        }
                 ) or {}
                 local exclusiveTo = queryResult[1]
                 local nextQuestInChain = queryResult[2]
@@ -206,7 +208,7 @@ function _QuestieJourney.questsByZone:CollectZoneQuests(zoneId)
                         prequestMissingCounter = prequestMissingCounter + 1
                     end
                 -- Repeatable quests
-                elseif QuestieDB:IsRepeatable(questId) then
+                elseif QuestieDB.IsRepeatable(questId) then
                     tinsert(zoneTree[4].children, temp)
                     repeatableCounter = repeatableCounter + 1
                 -- Available quests

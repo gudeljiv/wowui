@@ -136,6 +136,13 @@ if not _G["BigWigs"] then
 	SlashCmdList["DEADLYBOSSMODSBREAK"] = function(msg)
 		Break(tonumber(msg) or 10)
 	end
+	if C_PartyInfo then
+		C_PartyInfo.DoCountdown = function(msg)
+			if SlashCmdList.DEADLYBOSSMODSPULL then
+				SlashCmdList.DEADLYBOSSMODSPULL(msg)
+			end
+		end
+	end
 end
 
 SLASH_DEADLYBOSSMODSRPULL1 = "/rpull"
@@ -265,6 +272,7 @@ SlashCmdList["DEADLYBOSSMODS"] = function(msg)
 			return
 		end
 		local hudType, target, duration = string.split(" ", cmd:sub(4):trim())
+		local _, targetOG, _ = string.split(" ", msg:sub(4):trim())
 		if hudType == "" then
 			for _, v in ipairs(L.HUD_USAGE) do
 				DBM:AddMsg(v)
@@ -290,7 +298,7 @@ SlashCmdList["DEADLYBOSSMODS"] = function(msg)
 			elseif isRetail and target == "focus" and UnitExists("focus") then
 				uId = "focus"
 			else -- Try to use it as player name
-				uId = DBM:GetRaidUnitId(target)
+				uId = DBM:GetRaidUnitId(targetOG)
 			end
 			if not uId then
 				DBM:AddMsg(L.HUD_INVALID_TARGET)
@@ -352,6 +360,7 @@ SlashCmdList["DEADLYBOSSMODS"] = function(msg)
 			return
 		end
 		local x, y, z = string.split(" ", cmd:sub(6):trim())
+		local xOG, _, _ = string.split(" ", msg:sub(6):trim())
 		local xNum, yNum, zNum = tonumber(x or ""), tonumber(y or ""), tonumber(z or "")
 		if xNum and yNum then
 			DBM.Arrow:ShowRunTo(xNum, yNum, 0)
@@ -373,8 +382,8 @@ SlashCmdList["DEADLYBOSSMODS"] = function(msg)
 			elseif subCmd == "map" then
 				DBM.Arrow:ShowRunTo(yNum, zNum, 0, nil, true)
 				return
-			elseif DBM:GetRaidUnitId(subCmd) then
-				DBM.Arrow:ShowRunTo(subCmd)
+			elseif DBM:GetRaidUnitId(xOG:trim()) then
+				DBM.Arrow:ShowRunTo(xOG:trim())
 				return
 			end
 		end

@@ -8,6 +8,7 @@ local CSC_ScanTooltipPrefix = "CSC_ScanTooltip";
 
 local g_lastSeenBaseManaRegen = 0;
 local g_lastSeenCastingManaRegen = 0;
+g_APFromADItems = 0;
 
 -- GENERAL UTIL FUNCTIONS --
 local function CSC_GetAppropriateDamage(unit, category)
@@ -42,9 +43,10 @@ local function CSC_GetAppropriateAttackRaiting(unit, category)
 	return attackWithModifier;
 end
 
-local function CSC_PaperDollFrame_SetLabelAndText(statFrame, label, text, isPercentage, numericValue)
+local function CSC_PaperDollFrame_SetLabelAndText(statFrame, label, text, isPercentage, numericValue, precision)
 	if ( isPercentage ) then
-		statFrame.Value:SetText(format("%.1F%%", numericValue));
+		precision = precision or "%.1F%%";
+		statFrame.Value:SetText(format(precision, numericValue));
 	else
 		statFrame.Value:SetText(text);
 	end
@@ -105,6 +107,27 @@ local function CSC_GetMP5FromGear(unit)
 		end
 	end
 
+	local unitClassId = select(3, UnitClass(unit));
+	if (unitClassId == CSC_PRIEST_CLASS_ID) then
+		local zgEnchantMp5 = CSC_GetMp5FromPriestZGEnchants(unit);
+		if (zgEnchantMp5 > 0) then
+			mp5 = mp5 + zgEnchantMp5;
+		end
+	end
+
+	if (CSC_HasEnchant(unit, INVSLOT_WRIST, 2565)) then -- Mana Regen
+		mp5 = mp5 + 4;
+	end
+
+	if (CSC_HasEnchant(unit, INVSLOT_SHOULDER, 2715)) then -- Resilience of the Scourge
+		mp5 = mp5 + 5;
+	end
+
+	local tempMHEnchantId = select(4, GetWeaponEnchantInfo());
+	if (tempMHEnchantId == 2629) then -- Brilliant Mana Oil
+		mp5 = mp5 + 12;
+	end
+
 	return mp5;
 end
 
@@ -137,9 +160,8 @@ local function CSC_GetSkillRankAndModifier(skillHeader, skillName)
 	return skillRank, skillModifier;
 end
 
-function CSC_GetPlayerWeaponSkill(unit)
+function CSC_GetPlayerWeaponSkill(unit, weaponSlotId)
 	local totalWeaponSkill = nil;
-	local mainHandItemId = 16;
 
 	local unitClassId = select(3, UnitClass(unit));
 	-- Druid checks
@@ -151,7 +173,7 @@ function CSC_GetPlayerWeaponSkill(unit)
 	if (unitClassId == CSC_DRUID_CLASS_ID) and (shapeIndex > 0) then
 		totalWeaponSkill = UnitLevel(unit) * 5;
 	else
-		local itemId = GetInventoryItemID(unit, mainHandItemId);
+		local itemId = GetInventoryItemID(unit, weaponSlotId);
 		if (itemId) then
 			local itemSubtypeId = select(7, GetItemInfoInstant(itemId));
 			if itemSubtypeId then
@@ -200,6 +222,140 @@ function CSC_GetPlayerMissChances(unit, playerHit, totalWeaponSkill)
 	missChanceVsPlayer = math.max(0, missChanceVsPlayer - playerHit);
 
 	return missChanceVsNPC, missChanceVsBoss, missChanceVsPlayer, dwMissChanceVsNpc, dwMissChanceVsBoss, dwMissChanceVsPlayer;
+end
+
+function CSC_HasEnchant(unit, slotId, enchantId)
+	local itemLink = GetInventoryItemLink(unit, slotId);
+	if itemLink then
+		local itemId, enchant = itemLink:match("item:(%d+):(%d*)");
+		if enchant then
+			if tonumber(enchant) == enchantId then
+				return true;
+			end
+		end
+	end
+
+	return false;
+end
+
+function CSC_GetAttackPowerFromArgentDawnItems(unit)
+	local chestId = GetInventoryItemID(unit, INVSLOT_CHEST);
+	local glovesId = GetInventoryItemID(unit, INVSLOT_HAND);
+	local bracerId = GetInventoryItemID(unit, INVSLOT_WRIST);
+	local trinketFirst = GetInventoryItemID(unit, INVSLOT_TRINKET1);
+	local trinketSecond = GetInventoryItemID(unit, INVSLOT_TRINKET2);
+
+	local apVsUndead = 0;
+	
+	if (g_ArgentDawnAPItems[chestId] ~= nil) then
+		apVsUndead = apVsUndead + g_ArgentDawnAPItems[chestId];
+	end
+
+	if (g_ArgentDawnAPItems[glovesId] ~= nil) then
+		apVsUndead = apVsUndead + g_ArgentDawnAPItems[glovesId];
+	end
+
+	if (g_ArgentDawnAPItems[bracerId] ~= nil) then
+		apVsUndead = apVsUndead + g_ArgentDawnAPItems[bracerId];
+	end
+
+	if (g_ArgentDawnAPItems[trinketFirst] ~= nil) then
+		apVsUndead = apVsUndead + g_ArgentDawnAPItems[trinketFirst];
+	end
+
+	if (g_ArgentDawnAPItems[trinketSecond] ~= nil) then
+		apVsUndead = apVsUndead + g_ArgentDawnAPItems[trinketSecond];
+	end
+
+	local tempMHEnchantId = select(4, GetWeaponEnchantInfo());
+	if (tempMHEnchantId == 2684) then -- Consecrated Sharpening Stone
+		apVsUndead = apVsUndead + 100;
+	end
+
+	local tempOHEnchantId = select(8, GetWeaponEnchantInfo());
+	if (tempOHEnchantId == 2684) then -- Consecrated Sharpening Stone
+		apVsUndead = apVsUndead + 100;
+	end
+
+	return apVsUndead;
+end
+
+function CSC_GetSpellkPowerFromArgentDawnItems(unit)
+	local chestId = GetInventoryItemID(unit, INVSLOT_CHEST);
+	local glovesId = GetInventoryItemID(unit, INVSLOT_HAND);
+	local bracerId = GetInventoryItemID(unit, INVSLOT_WRIST);
+	local trinketFirst = GetInventoryItemID(unit, INVSLOT_TRINKET1);
+	local trinketSecond = GetInventoryItemID(unit, INVSLOT_TRINKET2);
+
+	local spVsUndead = 0;
+	
+	if (g_ArgentDawnSPItems[chestId] ~= nil) then
+		spVsUndead = spVsUndead + g_ArgentDawnSPItems[chestId];
+	end
+
+	if (g_ArgentDawnSPItems[glovesId] ~= nil) then
+		spVsUndead = spVsUndead + g_ArgentDawnSPItems[glovesId];
+	end
+
+	if (g_ArgentDawnSPItems[bracerId] ~= nil) then
+		spVsUndead = spVsUndead + g_ArgentDawnSPItems[bracerId];
+	end
+
+	if (g_ArgentDawnSPItems[trinketFirst] ~= nil) then
+		spVsUndead = spVsUndead + g_ArgentDawnSPItems[trinketFirst];
+	end
+
+	if (g_ArgentDawnSPItems[trinketSecond] ~= nil) then
+		spVsUndead = spVsUndead + g_ArgentDawnSPItems[trinketSecond];
+	end
+
+	local tempMHEnchantId = select(4, GetWeaponEnchantInfo());
+	if (tempMHEnchantId == 2685) then -- Blessed Wizard Oil
+		spVsUndead = spVsUndead + 60;
+	end
+
+	local tempOHEnchantId = select(8, GetWeaponEnchantInfo());
+	if (tempOHEnchantId == 2685) then -- Blessed Wizard Oil
+		spVsUndead = spVsUndead + 60;
+	end
+
+	return spVsUndead;
+end
+
+function CSC_CacheAPFromADItems(unit)
+	g_APFromADItems = CSC_GetAttackPowerFromArgentDawnItems(unit);
+end
+
+function CSC_GetDefense(unit)
+	local numSkills = GetNumSkillLines();
+	local skillIndex = 0;
+	local currentHeader = nil;
+	local playerLevel = UnitLevel(unit);
+
+	for i = 1, numSkills do
+		local skillName = select(1, GetSkillLineInfo(i));
+		local isHeader = select(2, GetSkillLineInfo(i));
+
+		if isHeader ~= nil and isHeader then
+			currentHeader = skillName;
+		else
+			if (currentHeader == CSC_WEAPON_SKILLS_HEADER and skillName == CSC_DEFENSE) then
+				skillIndex = i;
+				break;
+			end
+		end
+	end
+
+	local skillRank, skillModifier;
+	if (skillIndex > 0) then
+		skillRank = select(4, GetSkillLineInfo(skillIndex));
+		skillModifier = select(6, GetSkillLineInfo(skillIndex));
+	else
+		-- Use this as a backup, just in case something goes wrong
+		skillRank, skillModifier = UnitDefense(unit); --Not working properly
+	end
+
+	return skillRank, skillModifier, playerLevel;
 end
 -- GENERAL UTIL FUNCTIONS END --
 
@@ -295,13 +451,20 @@ function CSC_PaperDollFrame_SetDamage(statFrame, unit, category)
 	if speed == nil or speed == 0 then
 		speed = 1;
 	end
+
+	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+		local bonusDPS = g_APFromADItems / ATTACK_POWER_MAGIC_NUMBER;
+		local bonusDmgMainHand = speed * bonusDPS;
+		minDamage = minDamage + bonusDmgMainHand;
+		maxDamage = maxDamage + bonusDmgMainHand;
+	end
     
     local displayMin = max(floor(minDamage),1);
-    local displayMax = max(ceil(maxDamage),1);
+	local displayMax = max(ceil(maxDamage),1);
     
     minDamage = (minDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
-    maxDamage = (maxDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
-    
+	maxDamage = (maxDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
+	
     local baseDamage = (minDamage + maxDamage) * 0.5;
 	local fullDamage = (baseDamage + physicalBonusPos + physicalBonusNeg) * percentMod;
 	local totalBonus = (fullDamage - baseDamage);
@@ -368,6 +531,13 @@ function CSC_PaperDollFrame_SetDamage(statFrame, unit, category)
 			offhandSpeed = 1;
 		end
 
+		if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+			local bonusDPS = g_APFromADItems / ATTACK_POWER_MAGIC_NUMBER;
+			local bonusDmgOffHand = offhandSpeed * bonusDPS;
+			minOffHandDamage = minOffHandDamage + bonusDmgOffHand;
+			maxOffHandDamage = maxOffHandDamage + bonusDmgOffHand;
+		end
+
 		minOffHandDamage = (minOffHandDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
 		maxOffHandDamage = (maxOffHandDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
 
@@ -424,12 +594,16 @@ end
 function CSC_PaperDollFrame_SetMeleeAttackPower(statFrame, unit)
     
 	local base, posBuff, negBuff = UnitAttackPower(unit);
+
+	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+		posBuff = posBuff + g_APFromADItems;
+	end
     
     local valueText, tooltipText = CSC_PaperDollFormatStat(MELEE_ATTACK_POWER, base, posBuff, negBuff);
     local valueNum = max(0, base + posBuff + negBuff);
     CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_ATTACK_POWER, valueText, false, valueNum);
     statFrame.tooltip = tooltipText;
-    statFrame.tooltip2 = format(MELEE_ATTACK_POWER_TOOLTIP, max((base+posBuff+negBuff), 0)/ATTACK_POWER_MAGIC_NUMBER);
+	statFrame.tooltip2 = format(MELEE_ATTACK_POWER_TOOLTIP, max((base+posBuff+negBuff), 0)/ATTACK_POWER_MAGIC_NUMBER);
 	statFrame:Show();
 end
 
@@ -449,6 +623,11 @@ function CSC_PaperDollFrame_SetRangedAttackPower(statFrame, unit)
 	end
 
 	local base, posBuff, negBuff = UnitRangedAttackPower(unit);
+
+	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+		posBuff = posBuff + g_APFromADItems;
+	end
+	
     local valueText, tooltipText = CSC_PaperDollFormatStat(RANGED_ATTACK_POWER, base, posBuff, negBuff);
     local valueNum = max(0, base + posBuff + negBuff);
     CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_ATTACK_POWER, valueText, false, valueNum);
@@ -458,28 +637,32 @@ function CSC_PaperDollFrame_SetRangedAttackPower(statFrame, unit)
 end
 
 -- SECONDARY STATS --
-function CSC_PaperDollFrame_SetCritChance(statFrame, unit, category)
+function CSC_PaperDollFrame_SetCritChance(statFrame, unit)
 	
 	statFrame:SetScript("OnEnter", CSC_CharacterMeleeCritFrame_OnEnter)
 	statFrame:SetScript("OnLeave", function()
 		GameTooltip:Hide()
     end)
 	
-	local critChance;
-
-    if category == PLAYERSTAT_MELEE_COMBAT then
-        critChance = GetCritChance();
-	elseif category == PLAYERSTAT_RANGED_COMBAT then
-		if not IsRangedWeapon() then
-			CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_CRITICAL_STRIKE, NOT_APPLICABLE, false, 0);
-			statFrame:Show();
-			return;
-		end
-        critChance = GetRangedCritChance();
-    end
+	local critChance = GetCritChance();
 
     CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_CRITICAL_STRIKE, critChance, true, critChance);
 	statFrame.criticalStrikeTxt = format(PAPERDOLLFRAME_TOOLTIP_FORMAT, STAT_CRITICAL_STRIKE).." "..format("%.2F%%", critChance);
+    statFrame:Show();
+end
+
+function CSC_PaperDollFrame_SetRangedCritChance(statFrame, unit)
+
+	if not IsRangedWeapon() then
+		CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_CRITICAL_STRIKE, NOT_APPLICABLE, false, 0);
+		statFrame:Show();
+		return;
+	end
+
+	local critChance = GetRangedCritChance();
+
+    CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_CRITICAL_STRIKE, critChance, true, critChance);
+	statFrame.tooltip = format(PAPERDOLLFRAME_TOOLTIP_FORMAT, STAT_CRITICAL_STRIKE).." "..format("%.2F%%", critChance);
     statFrame:Show();
 end
 
@@ -528,6 +711,8 @@ function CSC_PaperDollFrame_SetSpellCritChance(statFrame, unit)
 		end
 	elseif (unitClassId == CSC_PRIEST_CLASS_ID) then
 		local priestHolyCrit = CSC_GetPriestCritStatsFromTalents();
+		priestHolyCrit = priestHolyCrit + CSC_GetHolyCritFromBenediction(unit);
+		
 		if (priestHolyCrit > 0) then
 			statFrame.holyCrit = statFrame.holyCrit + priestHolyCrit;
 			-- set the new maximum
@@ -543,13 +728,24 @@ function CSC_PaperDollFrame_SetSpellCritChance(statFrame, unit)
 			maxSpellCrit = max(maxSpellCrit, tmpMax);
 		end
 	elseif (unitClassId == CSC_SHAMAN_CLASS_ID) then
-		local natureCritFromSet = CSC_GetShamanT2SpellCrit(unit);
-		if (natureCritFromSet > 0) then
-			statFrame.natureCrit = statFrame.natureCrit + natureCritFromSet;
-			-- set the new maximum
-			maxSpellCrit = max(maxSpellCrit, statFrame.natureCrit);
+		statFrame.lightningCrit = statFrame.natureCrit;
+		
+		local callOfThunderCrit = CSC_GetShamanCallOfThunderCrit();
+		if callOfThunderCrit > 0 then
+			statFrame.lightningCrit = statFrame.lightningCrit + callOfThunderCrit;
 		end
+
+		local tidalMastery = CSC_GetShamanTidalMasteryCrit();
+		if tidalMastery > 0 then
+			statFrame.lightningCrit = statFrame.lightningCrit + tidalMastery;
+			statFrame.natureCrit = statFrame.natureCrit + tidalMastery;
+		end
+
+		local tmpMax = max(statFrame.lightningCrit, statFrame.natureCrit);
+		-- set the new maximum
+		maxSpellCrit = max(maxSpellCrit, tmpMax);
 	end
+	statFrame.unitClassId = unitClassId;
 
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_CRITICAL_STRIKE, maxSpellCrit, true, maxSpellCrit);
 
@@ -586,7 +782,7 @@ local function CSC_GetHitFromBiznicksAccurascope(unit)
 		local itemId, enchantId = itemLink:match("item:(%d+):(%d*)");
 		if enchantId then
 			if tonumber(enchantId) == 2523 then
-				hitFromScope = hitFromScope + 3;
+				hitFromScope = 3;
 			end
 		end
 	end
@@ -601,6 +797,11 @@ function CSC_PaperDollFrame_SetRangedHitChance(statFrame, unit)
 		statFrame:Show();
 		return;
 	end
+
+	statFrame:SetScript("OnEnter", CSC_CharacterRangedHitChanceFrame_OnEnter)
+	statFrame:SetScript("OnLeave", function()
+		GameTooltip:Hide()
+	end)
 	
 	local hitChance = GetHitModifier();
 	
@@ -615,8 +816,7 @@ function CSC_PaperDollFrame_SetRangedHitChance(statFrame, unit)
 
 	local hitChanceText = hitChance;
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_HIT_CHANCE, hitChanceText, true, hitChance);
-	statFrame.tooltip = STAT_HIT_CHANCE.." "..hitChanceText;
-	statFrame.tooltip2 = format(CR_HIT_RANGED_TOOLTIP, UnitLevel(unit), hitChance);
+	statFrame.hitChance = hitChance;
 	statFrame:Show();
 end
 
@@ -631,6 +831,10 @@ function CSC_PaperDollFrame_SetSpellHitChance(statFrame, unit)
 	
 	if not hitChance then
 		hitChance = 0;
+	end
+
+	if hitChance > 0 then
+		hitChance = hitChance / 7;  -- dirty fix because the api is changed with the SOM update
 	end
 
 	local unitClassId = select(3, UnitClass(unit));
@@ -714,32 +918,12 @@ end
 
 function CSC_PaperDollFrame_SetDefense(statFrame, unit)
 
-	local numSkills = GetNumSkillLines();
-	local skillIndex = 0;
-	local currentHeader = nil;
+	statFrame:SetScript("OnEnter", CSC_CharacterDefenseFrame_OnEnter)
+	statFrame:SetScript("OnLeave", function()
+		GameTooltip:Hide()
+	end)
 
-	for i = 1, numSkills do
-		local skillName = select(1, GetSkillLineInfo(i));
-		local isHeader = select(2, GetSkillLineInfo(i));
-
-		if isHeader ~= nil and isHeader then
-			currentHeader = skillName;
-		else
-			if (currentHeader == CSC_WEAPON_SKILLS_HEADER and skillName == CSC_DEFENSE) then
-				skillIndex = i;
-				break;
-			end
-		end
-	end
-
-	local skillRank, skillModifier;
-	if (skillIndex > 0) then
-		skillRank = select(4, GetSkillLineInfo(skillIndex));
-		skillModifier = select(6, GetSkillLineInfo(skillIndex));
-	else
-		-- Use this as a backup, just in case something goes wrong
-		skillRank, skillModifier = UnitDefense(unit); --Not working properly
-	end
+	local  skillRank, skillModifier, playerLevel = CSC_GetDefense(unit);
 
 	local posBuff = 0;
 	local negBuff = 0;
@@ -748,20 +932,16 @@ function CSC_PaperDollFrame_SetDefense(statFrame, unit)
 	elseif ( skillModifier < 0 ) then
 		negBuff = skillModifier;
 	end
-	local valueText, tooltipText = CSC_PaperDollFormatStat(DEFENSE_COLON, skillRank, posBuff, negBuff);
+	local valueText, defenseText = CSC_PaperDollFormatStat(DEFENSE_COLON, skillRank, posBuff, negBuff);
 	local valueNum = max(0, skillRank + posBuff + negBuff);
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, CSC_DEFENSE, valueText, false, valueNum);
-	statFrame.tooltip = tooltipText;
-	tooltipText = format(DEFAULT_STATDEFENSE_TOOLTIP, valueNum, 0, valueNum*0.04, valueNum*0.04);
-	tooltipText = tooltipText:gsub('.-\n', '', 1);
-	tooltipText = tooltipText:gsub('%b()', '');
-	statFrame.tooltip2 = tooltipText;
+	statFrame.defense = defenseText;
 	statFrame:Show();
 end
 
 function CSC_PaperDollFrame_SetDodge(statFrame, unit)
 	local chance = GetDodgeChance();
-	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_DODGE, chance, true, chance);
+	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_DODGE, chance, true, chance, "%.2F%%");
 	statFrame.tooltip = format(PAPERDOLLFRAME_TOOLTIP_FORMAT, DODGE_CHANCE).." "..string.format("%.2F", chance).."%";
 	--statFrame.tooltip2 = format(CR_DODGE_TOOLTIP, GetCombatRating(CR_DODGE), GetCombatRatingBonus(CR_DODGE));
 	statFrame:Show();
@@ -769,7 +949,7 @@ end
 
 function CSC_PaperDollFrame_SetParry(statFrame, unit)
 	local chance = GetParryChance();
-	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_PARRY, chance, true, chance);
+	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_PARRY, chance, true, chance, "%.2F%%");
 	statFrame.tooltip = format(PAPERDOLLFRAME_TOOLTIP_FORMAT, PARRY_CHANCE).." "..string.format("%.2F", chance).."%";
 	--statFrame.tooltip2 = format(CR_PARRY_TOOLTIP, GetCombatRating(CR_PARRY), GetCombatRatingBonus(CR_PARRY));
 	statFrame:Show();
@@ -837,7 +1017,7 @@ function CSC_PaperDollFrame_SetBlock(statFrame, unit)
 	end)
 	
 	local blockChance = GetBlockChance();
-	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_BLOCK, blockChance, true, blockChance);
+	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_BLOCK, blockChance, true, blockChance, "%.2F%%");
 
 	statFrame.blockChance = string.format("%.2F", blockChance).."%";
 	statFrame:Show();
@@ -861,6 +1041,12 @@ function CSC_PaperDollFrame_SetSpellPower(statFrame, unit)
 		maxSpellDmg = max(maxSpellDmg, bonusDamage);
 	end
 
+	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+		local spFromAD = CSC_GetSpellkPowerFromArgentDawnItems(unit);
+		maxSpellDmg = maxSpellDmg + spFromAD;
+		statFrame.spVsUndead = maxSpellDmg;
+	end
+
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_SPELLPOWER, BreakUpLargeNumbers(maxSpellDmg), false, maxSpellDmg);
 	statFrame:Show();
 end
@@ -874,7 +1060,18 @@ local function CSC_GetMP5FromAuras()
 		local spellId = select(10, UnitAura("player", i, "HELPFUL", "PLAYER"));
 		if spellId then
 			if g_AuraIdToMp5[spellId] then
-				mp5FromAuras = mp5FromAuras + g_AuraIdToMp5[spellId];
+				local auraMp5 = g_AuraIdToMp5[spellId];
+				
+				local unitClassId = select(3, UnitClass("player"));
+				if (unitClassId == CSC_PALADIN_CLASS_ID and CSC_IsBoWSpellId(spellId)) then
+					local improvedBoWModifier = CSC_GetPaladinImprovedBoWModifier();
+					
+					if (improvedBoWModifier > 0) then
+						auraMp5 = auraMp5 + auraMp5 * improvedBoWModifier;
+					end
+				end
+
+				mp5FromAuras = mp5FromAuras + auraMp5;
 			elseif g_CombatManaRegenSpellIdToModifier[spellId] then
 				mp5CombatModifier = mp5CombatModifier + g_CombatManaRegenSpellIdToModifier[spellId];
 			end
@@ -919,7 +1116,7 @@ function CSC_PaperDollFrame_SetManaRegen(statFrame, unit)
 	end
 	
 	-- All mana regen stats are displayed as mana/5 sec.
-	local regenWhenNotCasting = floor(base * 5.0) + mp5FromGear + mp5FromAuras;
+	local regenWhenNotCasting = (base * 5.0) + mp5FromGear + mp5FromAuras;
 	casting = mp5FromGear + mp5FromAuras; -- if GetManaRegen() gets fixed ever, this should be changed
 
 	if mp5ModifierCasting > 0 then
@@ -937,7 +1134,9 @@ function CSC_PaperDollFrame_SetManaRegen(statFrame, unit)
 end
 
 function CSC_PaperDollFrame_SetHealing(statFrame, unit)
+	local unitClassId = select(3, UnitClass(unit));
 	local healing = GetSpellBonusHealing();
+
 	local healingText = healing;
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, STAT_SPELLHEALING, healingText, false, healing);
 	statFrame.tooltip = STAT_SPELLHEALING.." "..healing;

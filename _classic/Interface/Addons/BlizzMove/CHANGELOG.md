@@ -1,9 +1,7 @@
-# [v3.2.9](https://github.com/Kiatra/BlizzMove/tree/v3.2.9) (2021-12-31)
+# BlizzMove
 
-[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.2.8...v3.2.9)
+## [v3.5.14](https://github.com/Kiatra/BlizzMove/tree/v3.5.14) (2023-08-23)
+[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.5.13...v3.5.14) [Previous Releases](https://github.com/Kiatra/BlizzMove/releases)
 
-Mark W (2):
-
-- Fixed an issue with Adventure Journal tooltips
-- Added Archeology digsite frame and Achievement search result frame
-
+- Classic TOC bump  
+- Minor cleanup, and fixing classic 1.14.4 support  

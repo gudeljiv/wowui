@@ -1,7 +1,8 @@
-## Interface: 11401
+## Interface: 100105
 ## Title: WeakAuras Options
 ## Author: The WeakAuras Team
-## Version: 3.7.6
+## Version: 5.7.0
+## IconTexture: Interface\AddOns\WeakAuras\Media\Textures\icon.blp
 ## Notes: Options for WeakAuras
 ## Notes-esES: Opciones para WeakAuras
 ## Notes-deDE: Optionen für WeakAuras
@@ -47,7 +48,6 @@ ActionOptions.lua
 AnimationOptions.lua
 InformationOptions.lua
 
-BuffTrigger.lua
 BuffTrigger2.lua
 GenericTrigger.lua
 
@@ -64,6 +64,8 @@ OptionsFrames\ImportExport.lua
 OptionsFrames\ModelPicker.lua
 OptionsFrames\TextEditor.lua
 OptionsFrames\TexturePicker.lua
+OptionsFrames\Update.lua
+OptionsFrames\DebugLogFrame.lua
 
 # Misc frames
 OptionsFrames\MoverSizer.lua
@@ -82,11 +84,15 @@ AceGUI-Widgets\AceGUIWidget-WeakAurasIconButton.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasMultiLineEditBox.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasNewButton.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasImportButton.lua
-AceGUI-Widgets\AceGUIWidget-WeakAurasSortedDropDown.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasToolbarButton.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasTwoColumnDropDown.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasSnippetButton.lua
+AceGUI-Widgets\AceGUIWidget-WeakAurasAnchorButtons.lua
 AceGUI-Widgets\AceGUIContainer-WeakAurasTreeGroup.lua
-AceGUI-Widgets\AceGUIWidget-WeakAurasSnippetButton.lua
 AceGUI-Widgets\AceGUIContainer-WeakAurasInlineGroup.lua
 AceGUI-Widgets\AceGUIWidget-WeakAurasExpandAnchor.lua
+AceGUI-Widgets\AceGUIWidget-WeakAurasSpacer.lua
+AceGUI-Widgets\AceGuiWidget-WeakAurasProgressBar.lua
+AceGUI-Widgets\AceGUIWidget-WeakAurasSpinBox.lua
+AceGUI-Widgets\AceGUIWidget-WeakAurasMiniTalent_Dragonflight.lua
+AceGUI-Widgets\AceGUIWidget-WeakAurasScrollArea.lua

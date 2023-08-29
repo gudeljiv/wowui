@@ -1,18 +1,19 @@
-local F1 = CreateFrame("BUTTON", "RotBotF1")
-local F2 = CreateFrame("BUTTON", "RotBotF2")
-SetBindingClick("SHIFT-F1", F1:GetName())
-SetBindingClick("SHIFT-F2", F2:GetName())
+local start = CreateFrame('BUTTON', 'RotBotF1')
+local stop = CreateFrame('BUTTON', 'RotBotF2')
 
-F1:SetScript(
-	"OnClick",
+SetBindingClick('HOME', start:GetName())
+SetBindingClick('END', stop:GetName())
+
+start:SetScript(
+	'OnClick',
 	function(self, event)
-		print("Single target mode")
+		RotationFrame1:SetBackdropColor(0, 1, 0, 0.9)
 	end
 )
 
-F2:SetScript(
-	"OnClick",
+stop:SetScript(
+	'OnClick',
 	function(self, event)
-		print("AOE mode")
+		RotationFrame1:SetBackdropColor(1, 0, 0, 0.9)
 	end
 )

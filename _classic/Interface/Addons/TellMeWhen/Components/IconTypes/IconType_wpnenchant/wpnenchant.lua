@@ -201,7 +201,7 @@ local function WpnEnchant_OnUpdate(icon, time)
 				duration = d
 			end
 		else
-			-- We don't know the enchant name, which is fucked.
+			-- We don't know the enchant name, which is bad.
 			-- The timer sweep won't work, but timer texts will.
 			duration = expiration
 		end

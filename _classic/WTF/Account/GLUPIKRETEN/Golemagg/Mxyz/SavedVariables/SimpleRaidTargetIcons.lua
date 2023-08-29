@@ -5,7 +5,7 @@ SRTISaved = {
 	["radialscale"] = 1,
 	["double"] = true,
 	["ctrl"] = true,
-	["hovertime"] = 0.200000002980232,
+	["hovertime"] = 0.2000000029802322,
 	["doublehover"] = false,
 	["shift"] = false,
 	["speed"] = 0.25,
@@ -15,6 +15,11 @@ SRTIExternalUF = {
 	["blizzard_compactraidframes"] = {
 		"CompactRaidFrame1", -- [1]
 		"CompactRaidFrame2", -- [2]
+	},
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
 	},
 	["grid2"] = {
 		"Grid2LayoutHeader1UnitButton1", -- [1]

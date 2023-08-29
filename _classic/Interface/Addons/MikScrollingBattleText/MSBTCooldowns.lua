@@ -29,6 +29,7 @@ local DisplayEvent = MikSBT.Animations.DisplayEvent
 local HandleCooldowns = MSBTTriggers.HandleCooldowns
 
 
+
 -------------------------------------------------------------------------------
 -- Constants.
 -------------------------------------------------------------------------------
@@ -48,7 +49,6 @@ local RUNE_COOLDOWN = 10
 
 -- Parameter locations.
 local ITEM_INFO_TEXTURE_POSITION = 10
-
 
 -------------------------------------------------------------------------------
 -- Private variables.
@@ -426,7 +426,7 @@ local function UseContainerItemHook(bag, slot)
 	if (not itemCooldownsEnabled) then return end
 
 	-- Get item id for the used bag and slot.
-	local itemID = GetContainerItemID(bag, slot)
+	local itemID = C_Container.GetContainerItemID(bag, slot)
 	if (itemID) then OnItemUse(itemID) end
 end
 
@@ -452,7 +452,11 @@ end
 
 -- Setup event frame.
 eventFrame:Hide()
-eventFrame:SetScript("OnEvent", function (self, event, ...) if (self[event]) then self[event](self, ...) end end)
+eventFrame:SetScript("OnEvent", function (self, event, ...)
+	if (self[event]) then
+		self[event](self, ...)
+	end
+end)
 eventFrame:SetScript("OnUpdate", OnUpdate)
 
 -- Get the player's class.
@@ -461,7 +465,7 @@ _, playerClass = UnitClass("player")
 -- Setup hooks.
 hooksecurefunc("UseAction", UseActionHook)
 hooksecurefunc("UseInventoryItem", UseInventoryItemHook)
-hooksecurefunc("UseContainerItem", UseContainerItemHook)
+hooksecurefunc(C_Container, "UseContainerItem", UseContainerItemHook)
 hooksecurefunc("UseItemByName", UseItemByNameHook)
 
 -- Specify the abilities that reset cooldowns.

@@ -1,6 +1,6 @@
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 local isClassic = WOW_PROJECT_ID == (WOW_PROJECT_CLASSIC or 2)
-local isModernAPI = DBM:GetTOC() > 30400
+local isModernAPI = DBM:GetTOC() > 11403
 
 local L		= DBM_GUI_L
 local CL	= DBM_COMMON_L
@@ -20,8 +20,11 @@ local function parseDescription(name, usesHTML)
 		name = name:gsub("%$spell:ej(%d+)", "$journal:%1")
 	end
 	if name:find("%$spell:") then
-		name = name:gsub("%$spell:(%d+)", function(id)
+		name = name:gsub("%$spell:(%-?%d+)", function(id)
 			local spellId = tonumber(id)
+			if spellId < 0 then
+			    return "$journal:" .. -spellId
+			end
 			spellName = DBM:GetSpellInfo(spellId)
 			if not spellName then
 				spellName = CL.UNKNOWN
@@ -272,26 +275,26 @@ do
 		{ text = "SA 2", value = 2 },
 		{ text = "SA 3", value = 3 },
 		{ text = "SA 4", value = 4 },
-		-- Inject DBMs custom media that's not available to LibSharedMedia because it uses SoundKit Id (which LSM doesn't support)
+		-- Inject DBMs custom media that's not available to LibSharedMedia because I haven't added it yet
 		--{ text = "AirHorn (DBM)", value = "Interface\\AddOns\\DBM-Core\\sounds\\AirHorn.ogg" },
-		{ text = "Algalon: Beware!", value = isRetail and 15391 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\UR_Algalon_BHole01.ogg" },
-		{ text = "BB Wolf: Run Away", value = not isClassic and 9278 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\HoodWolfTransformPlayer01.ogg" },
-		{ text = "Illidan: Not Prepared", value = not isClassic and 11466 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\BLACK_Illidan_04.ogg" },
-		{ text = "Illidan: Not Prepared2", value = isRetail and 68563 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\VO_703_Illidan_Stormrage_03.ogg" },
-		{ text = "Kil'Jaeden: Destruction", value = not isClassic and 12506 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\KILJAEDEN02.ogg" },
-		{ text = "Loatheb: I see you", value = isRetail and 128466 or 8826 },
-		{ text = "Night Elf Bell", value = isRetail and 11742 or 6674 },
-		{ text = "PvP Flag", value = 8174 },
+		{ text = "Algalon: Beware!", value = isRetail and 543587 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\UR_Algalon_BHole01.ogg" },
+		{ text = "BB Wolf: Run Away", value = not isClassic and 552035 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\HoodWolfTransformPlayer01.ogg" },
+		{ text = "Illidan: Not Prepared", value = not isClassic and 552503 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\BLACK_Illidan_04.ogg" },
+		{ text = "Illidan: Not Prepared2", value = isRetail and 1412178 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\VO_703_Illidan_Stormrage_03.ogg" },
+		{ text = "Kil'Jaeden: Destruction", value = not isClassic and 553193 or "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\KILJAEDEN02.ogg" },
+		{ text = "Loatheb: I see you", value = 554236 },
+		{ text = "Night Elf Bell", value = 566558 },
+		{ text = "PvP Flag", value = 569200 },
 	})
 	if isRetail then
-		tinsert(sounds, { text = "Blizzard Raid Emote", value = 37666 })
-		tinsert(sounds, { text = "C'Thun: You Will Die!", value = 8585 })
-		tinsert(sounds, { text = "Headless Horseman: Laugh", value = 11965 })
-		tinsert(sounds, { text = "Kaz'rogal: Marked", value = 11052 })
-		tinsert(sounds, { text = "Lady Malande: Flee", value = 11482 })
-		tinsert(sounds, { text = "Milhouse: Light You Up", value = 49764 })
-		tinsert(sounds, { text = "Void Reaver: Marked", value = 11213 })
-		tinsert(sounds, { text = "Yogg Saron: Laugh", value = 15757 })
+		tinsert(sounds, { text = "Blizzard Raid Emote", value = 876098 })
+		tinsert(sounds, { text = "C'Thun: You Will Die!", value = 546633 })
+		tinsert(sounds, { text = "Headless Horseman: Laugh", value = 551703 })
+		tinsert(sounds, { text = "Kaz'rogal: Marked", value = 553050 })
+		tinsert(sounds, { text = "Lady Malande: Flee", value = 553566 })
+		tinsert(sounds, { text = "Milhouse: Light You Up", value = 555337 })
+		tinsert(sounds, { text = "Void Reaver: Marked", value = 563787 })
+		tinsert(sounds, { text = "Yogg Saron: Laugh", value = 564859 })
 	end
 
 	local function RGBPercToHex(r, g, b)
@@ -302,14 +305,15 @@ do
 	end
 
 	local tcolors = {
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorR or 1, DBT.Options.StartColorG or 1, DBT.Options.StartColorB or 1)..L.CBTGeneric.."|r", value = 0 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorAR or 1, DBT.Options.StartColorAG or 1, DBT.Options.StartColorAB or 1)..L.CBTAdd.."|r", value = 1 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorAER or 1, DBT.Options.StartColorAEG or 1, DBT.Options.StartColorAEB or 1)..L.CBTAOE.."|r", value = 2 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorDR or 1, DBT.Options.StartColorDG or 1, DBT.Options.StartColorDB or 1)..L.CBTTargeted.."|r", value = 3 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorIR or 1, DBT.Options.StartColorIG or 1, DBT.Options.StartColorIB or 1)..L.CBTInterrupt.."|r", value = 4 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorRR or 1, DBT.Options.StartColorRG or 1, DBT.Options.StartColorRB or 1)..L.CBTRole.."|r", value = 5 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorPR or 1, DBT.Options.StartColorPG or 1, DBT.Options.StartColorPB or 1)..L.CBTPhase.."|r", value = 6 },
-		{ text = "|cff"..RGBPercToHex(DBT.Options.StartColorUIR or 1, DBT.Options.StartColorUIG or 1, DBT.Options.StartColorUIB or 1)..L.CBTImportant.."|r", value = 7 }
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorR or 1, DBT.Options.StartColorG or 1, DBT.Options.StartColorB or 1)..L.ColorDropGeneric.."|r", value = 0 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorAR or 1, DBT.Options.EndColorAG or 1, DBT.Options.EndColorAB or 1)..L.ColorDrop1.."|r", value = 1 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorAER or 1, DBT.Options.EndColorAEG or 1, DBT.Options.StartColorAEB or 1)..L.ColorDrop2.."|r", value = 2 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorDR or 1, DBT.Options.EndColorDG or 1, DBT.Options.EndColorDB or 1)..L.ColorDrop3.."|r", value = 3 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorIR or 1, DBT.Options.EndColorIG or 1, DBT.Options.EndColorIB or 1)..L.ColorDrop4.."|r", value = 4 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorRR or 1, DBT.Options.EndColorRG or 1, DBT.Options.EndColorRB or 1)..L.ColorDrop5.."|r", value = 5 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorPR or 1, DBT.Options.EndColorPG or 1, DBT.Options.EndColorPB or 1)..L.ColorDrop6.."|r", value = 6 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorUIR or 1, DBT.Options.EndColorUIG or 1, DBT.Options.EndColorUIB or 1)..L.CDDImportant1.."|r", value = 7 },
+		{ text = "|cff"..RGBPercToHex(DBT.Options.EndColorI2R or 1, DBT.Options.EndColorI2G or 1, DBT.Options.EndColorI2B or 1)..L.CDDImportant2.."|r", value = 8 }
 	}
 	local cvoice = MixinCountTable({
 		{ text = L.None, value = 0 },
@@ -374,14 +378,18 @@ do
 					frame2:SetSize(25, 25)
 					frame2:SetText("|TInterface/FriendsFrame/UI-FriendsFrame-Note.blp:14:0:2:-1|t")
 					frame2.mytype = "button"
-					frame2:SetScript("OnClick", function(self)
+					frame2:SetScript("OnClick", function()
 						DBM:ShowNoteEditor(mod, modvar, noteSpellName)
 					end)
 					textPad = 2
 				end
 			end
 			frame.myheight = 0
-			frame2.myheight = 0
+			if frame2 then
+				frame2.myheight = 0
+			else
+				textPad = 37
+			end
 		end
 		local buttonText
 		if desc then -- Switch all checkbutton frame to SimpleHTML frame (auto wrap)
@@ -399,15 +407,15 @@ do
 				else -- "journal:contentType:contentID:difficulty"
 					local _, contentType, contentID = strsplit(":", data)
 					if contentType == "2" then
-						local name, description = DBM:EJ_GetSectionInfo(tonumber(contentID))
-						GameTooltip:AddLine(name or CL.UNKNOWN, 255, 255, 255, 0)
+						local spellName, spellDesc = DBM:EJ_GetSectionInfo(tonumber(contentID))
+						GameTooltip:AddLine(spellName or CL.UNKNOWN, 255, 255, 255, 0)
 						GameTooltip:AddLine(" ")
-						GameTooltip:AddLine(description or CL.UNKNOWN, NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
+						GameTooltip:AddLine(spellDesc or CL.UNKNOWN, NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
 					end
 				end
 				GameTooltip:Show()
 				currActiveButton = self:GetParent()
-				updateFrame:SetScript("OnUpdate", function(self)
+				updateFrame:SetScript("OnUpdate", function()
 					local inHitBox = GetCursorPosition() - currActiveButton:GetCenter() < -100
 					if currActiveButton.fakeHighlight and not inHitBox then
 						currActiveButton:UnlockHighlight()
@@ -442,7 +450,11 @@ do
 		end
 		button.textObj = buttonText
 		button.text = desc or CL.UNKNOWN
-		button.widthPad = frame and frame:GetWidth() + frame2:GetWidth() or 0
+		if frame2 then
+			button.widthPad = frame and frame:GetWidth() + frame2:GetWidth() or 0
+		else
+			button.widthPad = frame and frame:GetWidth() or 0
+		end
 		buttonText:SetWidth(self.frame:GetWidth() - button.widthPad)
 		if textLeft then
 			buttonText:ClearAllPoints()
@@ -505,23 +517,36 @@ function PanelPrototype:CreateArea(name)
 	})
 end
 
-function PanelPrototype:CreateAbility(titleText, icon)
+local function handleWAKeyHyperlink(self, link)
+	local _, linkType, arg1, arg2 = strsplit(":", link)
+	if linkType == "DBM" and arg1 == "wacopy" then
+		DBM:ShowUpdateReminder(nil, nil, DBM_CORE_L.COPY_WA_DIALOG, arg2)
+	end
+end
+
+function PanelPrototype:CreateAbility(titleText, icon, spellID)
 	local area = CreateFrame("Frame", "DBM_GUI_Option_" .. self:GetNewID(), self.frame, "TooltipBorderBackdropTemplate")
 	area.mytype = "ability"
 	area.hidden = not DBM.Options.AutoExpandSpellGroups
 	area:SetBackdropColor(0.15, 0.15, 0.15, 0.2)
 	area:SetBackdropBorderColor(0.4, 0.4, 0.4)
+	area:SetHyperlinksEnabled(true)
+	area:SetScript("OnHyperlinkClick", handleWAKeyHyperlink)
 	if select("#", self.frame:GetChildren()) == 1 then
 		area:SetPoint("TOPLEFT", self.frame, 5, -20)
 	else
 		area:SetPoint("TOPLEFT", select(-2, self.frame:GetChildren()) or self.frame, "BOTTOMLEFT", 0, -20)
 	end
 	local title = area:CreateFontString("$parentTitle", "BACKGROUND", "GameFontHighlightSmall")
+	local key = ""
+	if DBM.Options.ShowWAKeys and spellID then
+		key = DBM_CORE_L.WEAKAURA_KEY:format(spellID)
+	end
 	if icon then
 		local markup = CreateTextureMarkup(icon, 0, 0, 16, 16, 0, 0, 0, 0, 0, 0)
-		title:SetText(markup .. titleText)
+		title:SetText(markup .. titleText .. key)
 	else
-		title:SetText(titleText)
+		title:SetText(titleText .. key)
 	end
 	title:ClearAllPoints()
 	title:SetPoint("BOTTOMLEFT", area, "TOPLEFT", 20, 0)
@@ -544,7 +569,7 @@ function PanelPrototype:CreateAbility(titleText, icon)
 		button.toggle:SetPushedTexture(area.hidden and 130836 or 130820) -- "Interface\\Buttons\\UI-PlusButton-DOWN", "Interface\\Buttons\\UI-MinusButton-DOWN"
 		_G["DBM_GUI_OptionsFrame"]:DisplayFrame(DBM_GUI.currentViewing)
 	end
-	if not isModernAPI then
+	if not isModernAPI then--TODO, see if this work around is needed anymore in 1.14.4
 		button:RegisterForClicks('')
 	end
 	--

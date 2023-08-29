@@ -46,6 +46,7 @@ for i, v in pairs(
 		PartyMemberFrame3PetFrameTexture,
 		PartyMemberFrame4PetFrameTexture,
 		TargetFrameToTTextureFrameTexture,
+		FocusFrameToTTextureFrameTexture,
 		CastingBarFrame.Border,
 		MirrorTimer1Border,
 		MirrorTimer2Border,

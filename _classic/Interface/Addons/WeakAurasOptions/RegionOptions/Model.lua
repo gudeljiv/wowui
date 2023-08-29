@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L;
@@ -39,6 +39,7 @@ local function createOptions(id, data)
     },
     sequence = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Animation Sequence"],
       min = 0,
@@ -52,7 +53,7 @@ local function createOptions(id, data)
       type = "toggle",
       name = L["Use SetTransform"],
       order = 7,
-      width = WeakAuras.normalWidth
+      width = WeakAuras.normalWidth,
     },
     portraitZoom = {
       type = "toggle",
@@ -63,6 +64,7 @@ local function createOptions(id, data)
     -- old settings
     model_z = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Offset"],
       softMin = -20,
@@ -74,6 +76,7 @@ local function createOptions(id, data)
     },
     model_x = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Offset"],
       softMin = -20,
@@ -85,6 +88,7 @@ local function createOptions(id, data)
     },
     model_y = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Offset"],
       softMin = -20,
@@ -96,6 +100,7 @@ local function createOptions(id, data)
     },
     rotation = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Rotation"],
       min = 0,
@@ -108,6 +113,7 @@ local function createOptions(id, data)
     -- New Settings
     model_st_tx = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Offset"],
       softMin = -1000,
@@ -119,6 +125,7 @@ local function createOptions(id, data)
     },
     model_st_ty = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Offset"],
       softMin = -1000,
@@ -130,6 +137,7 @@ local function createOptions(id, data)
     },
     model_st_tz = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Offset"],
       softMin = -1000,
@@ -141,6 +149,7 @@ local function createOptions(id, data)
     },
     model_st_rx = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["X Rotation"],
       min = 0,
@@ -152,6 +161,7 @@ local function createOptions(id, data)
     },
     model_st_ry = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Y Rotation"],
       min = 0,
@@ -163,6 +173,7 @@ local function createOptions(id, data)
     },
     model_st_rz = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Z Rotation"],
       min = 0,
@@ -174,6 +185,7 @@ local function createOptions(id, data)
     },
     model_st_us = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Scale"],
       min = 5,
@@ -190,7 +202,7 @@ local function createOptions(id, data)
     },
   };
 
-  if WeakAuras.BuildInfo > 80100 then
+  if not WeakAuras.IsClassic() then
     options.modelDisplayInfo = {
       type = "toggle",
       width = WeakAuras.normalWidth,
@@ -223,8 +235,14 @@ local function createOptions(id, data)
   };
 end
 
+-- Duplicated because Private does not exist when we want to create the first thumnail
+local function ModelSetTransformFixed(self, tx, ty, tz, rx, ry, rz, s)
+  -- In Dragonflight the api changed, this converts to the new api
+  self:SetTransform(CreateVector3D(tx, ty, tz), CreateVector3D(rx, ry, rz), -s)
+end
+
 local function createThumbnail()
-  local borderframe = CreateFrame("FRAME", nil, UIParent);
+  local borderframe = CreateFrame("Frame", nil, UIParent);
   borderframe:SetWidth(32);
   borderframe:SetHeight(32);
 
@@ -235,6 +253,7 @@ local function createThumbnail()
 
   local model = CreateFrame("PlayerModel", nil, borderframe);
   borderframe.model = model;
+  model.SetTransformFixed = model.GetResizeBounds and ModelSetTransformFixed or model.SetTransform -- TODO change test to WeakAuras.IsWrathOrRetail() after 3.4.1 release
   model:SetFrameStrata("FULLSCREEN");
 
   return borderframe;
@@ -254,8 +273,8 @@ local function modifyThumbnail(parent, region, data)
   model:SetScript("OnShow", function()
     WeakAuras.SetModel(model, data.model_path, data.model_fileId, data.modelIsUnit, data.modelDisplayInfo)
     model:SetPortraitZoom(data.portraitZoom and 1 or 0)
-    if (data.api) then
-      model:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+    if data.api then
+      model:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
         rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
         data.model_st_us / 1000);
     else
@@ -265,8 +284,8 @@ local function modifyThumbnail(parent, region, data)
     end
   end);
 
-  if (data.api) then
-    model:SetTransform(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
+  if data.api then
+    model:SetTransformFixed(data.model_st_tx / 1000, data.model_st_ty / 1000, data.model_st_tz / 1000,
       rad(data.model_st_rx), rad(data.model_st_ry), rad(data.model_st_rz),
       data.model_st_us / 1000);
   else
@@ -291,8 +310,8 @@ local function createIcon()
     width = 40
   };
 
-  local thumbnail = createThumbnail(UIParent);
-  modifyThumbnail(UIParent, thumbnail, data, nil, 50);
+  local thumbnail = createThumbnail();
+  modifyThumbnail(UIParent, thumbnail, data);
 
   return thumbnail;
 end
@@ -411,4 +430,5 @@ if WeakAuras.IsRetail() then
   })
 end
 
-WeakAuras.RegisterRegionOptions("model", createOptions, createIcon, L["Model"], createThumbnail, modifyThumbnail, L["Shows a 3D model from the game files"], templates);
+WeakAuras.RegisterRegionOptions("model", createOptions, createIcon, L["Model"], createThumbnail, modifyThumbnail,
+                                L["Shows a 3D model from the game files"], templates);

@@ -19,10 +19,11 @@ local print = TMW.print
 
 local CNDT = TMW.CNDT
 
-local tostring, loadstring, setfenv, wipe, type, next, pairs, max, select
-	= tostring, loadstring, setfenv, wipe, type, next, pairs, max, select
+local tostring, loadstring, setfenv, format, wipe, type, next, pairs, max, select
+	= tostring, loadstring, setfenv, format, wipe, type, next, pairs, max, select
 local huge = math.huge
 
+local strlowerCache = TMW.strlowerCache
 
 
 --- A [[api/conditions/api-documentation/condition-object/|ConditionObject]] represents a group of individual conditions. 
@@ -89,7 +90,6 @@ function ConditionObject:CompileUpdateFunction(Conditions)
 		local condition = CNDT.ConditionsByType[t]
 		
 		if condition and condition.events then
-			local voidNext
 			for n, argCheckerString in TMW:Vararg(TMW.get(condition.events, self, c)) do
 				if argCheckerString == false or argCheckerString == nil then
 					return
@@ -108,7 +108,8 @@ function ConditionObject:CompileUpdateFunction(Conditions)
 		end
 
 		-- handle code that anticipates when a change in state will occur.
-		-- this is usually used to predict when a duration threshold will be used, but you could really use it for whatever you want.
+		-- this is usually used to predict when a duration threshold will be reached,
+		-- but you could really use it for whatever you want.
 		if condition.anticipate then
 			numAnticipatorResults = numAnticipatorResults + 1
 
@@ -410,6 +411,99 @@ function ConditionObject:GenerateNormalEventString(event, ...)
 	return str
 end
 
+function ConditionObject:IsUnitAuraEventRelevant(updatedAuras, spell, onlyMine)
+	for i = 1, #updatedAuras do
+		local updatedAura = updatedAuras[i]
+		-- Check if the aura fits into the icons filters.
+		-- Checking name/id + OnlyMine are the only 2 worthwhile checks here.
+		-- Anything else (like isHarmful/isHelpful) is just not likely to yield meaningful benefit
+		if
+			(not onlyMine or (updatedAura.sourceUnit == "player" or updatedAura.sourceUnit == "pet")) and
+			(spell == updatedAura.spellId or spell == strlowerCache[updatedAura.name])
+		then
+			return true
+		end
+	end
+end
+
+function ConditionObject:IsTmwAuraEventRelevant(updatedAuras, spellSet, onlyMine)
+	-- updatedAuras = { [name | id | dispelType] = mightBeMine(bool) }
+
+	local Hash = spellSet.Hash
+	for identifier, mightBeMine in next, updatedAuras do
+		if Hash[identifier] and (mightBeMine or not OnlyMine) then
+			return true
+		end
+	end
+end
+
+function ConditionObject:GenerateUnitAuraString(unit, spell, onlyMine)
+	local unitCheck = type(unit) == "table"
+		-- unit is a UnitSet:
+		and ("%s[arg1]"):format(CNDT:GetTableSubstitution(unit.UnitsLookup))
+		-- unit is a unitID:
+		or ("arg1 == %q"):format(unit)
+
+
+	if TMW.COMMON.Auras then
+		local canUsePacked, auraEvent = TMW.COMMON.Auras:RequestUnits(unit)
+		
+		self:RequestEvent(auraEvent)
+		self:SetNumEventArgs(2)
+
+		if type(spell) == "table" then
+			-- If we were passed a spell set that only contains one spell,
+			-- inline that spell so we can avoid the function call to IsTmwAuraEventRelevant
+			if #spell.Array == 1 then
+				spell = spell.First
+			end
+		end
+
+		local str = ("event == %q and %s and"):format(auraEvent, unitCheck)
+
+		-- arg2 is payload:
+		-- If it is nil, the event is a general update for the unit.
+		-- If it is a table, its keys are names/ids of what changed
+		-- and the values indicate if the aura might have been mine.
+		if type(spell) == "table" then
+			-- Spell is a SpellSet 
+			str = str .. " (not arg2 or ConditionObject:IsTmwAuraEventRelevant(arg2,"
+			.. CNDT:GetTableSubstitution(spell) 
+			.. ", "
+			.. tostring(onlyMine)
+			.. "))"
+		else
+			-- Spell is a name/id
+			str = str .. " (not arg2 or arg2["
+			.. (type(spell) == "string" and format("%q", spell) or tostring(spell))
+			.. "]"
+			.. (onlyMine and "" or " ~= nil")
+			.. ")"
+		end
+		
+		return str
+	else
+		self:RequestEvent("UNIT_AURA")
+		self:SetNumEventArgs(3)
+			
+		local str = ("event == %q and %s"):format("UNIT_AURA", unitCheck)
+
+		if type(spell) == "string" then
+			-- arg2 is isFullUpdate:
+			-- If it is nil, the client doesn't support the new UNIT_AURA payload.
+			-- If it is true, the event isn't about any particular aura.
+			-- If it is false, then arg3 is `updatedAuras`.
+			str = str .. " and (arg2 ~= false or ConditionObject:IsUnitAuraEventRelevant(arg3,"
+			.. (type(spell) == "string" and format("%q", spell) or tostring(spell))
+			.. ", "
+			.. tostring(onlyMine)
+			.. "))"
+		end
+		
+		return str
+	end
+end
+
 --- (//For use in the events function of a condition type declaration//)
 -- Gets an event checker string that will have the proper event checking for monitoring when the unit changes (you change target, summon a pet, etc).
 -- @param unit [string] A unitID to check the unit for. Should be the return value of a call to CNDT:GetUnit(unit).
@@ -418,10 +512,16 @@ end
 -- @usage events = function(ConditionObject, c)
 --   return
 --     ConditionObject:GetUnitChangedEventString(CNDT:GetUnit(c.Unit)),
---     ConditionObject:GenerateNormalEventString("UNIT_AURA", CNDT:GetUnit(c.Unit))
+--     ConditionObject:GenerateNormalEventString("UNIT_HEALTH", CNDT:GetUnit(c.Unit))
 -- end,
 function ConditionObject:GetUnitChangedEventString(unit)
-	if unit == "player" then
+	if type(unit) == "table" then
+		-- unit is a UnitSet
+		if not unit.allUnitsChangeOnEvent then 
+			return false 
+		end
+		return unit.event
+	elseif unit == "player" then
 		-- Returning false (as a string, not a boolean) won't cause responses to any events,
 		-- and it also won't make the ConditionObject default to being OnUpdate driven.
 		
@@ -430,12 +530,16 @@ function ConditionObject:GetUnitChangedEventString(unit)
 		return self:GenerateNormalEventString("PLAYER_TARGET_CHANGED")
 	elseif unit == "pet" then
 		return self:GenerateNormalEventString("UNIT_PET", "player")
+	elseif unit == "focus" then
+		return self:GenerateNormalEventString("PLAYER_FOCUS_CHANGED")
 	elseif unit:find("^raid%d+$") then
 		return self:GenerateNormalEventString("GROUP_ROSTER_UPDATE")
 	elseif unit:find("^party%d+$") then
 		return self:GenerateNormalEventString("GROUP_ROSTER_UPDATE")
 	elseif unit:find("^boss%d+$") then
 		return self:GenerateNormalEventString("INSTANCE_ENCOUNTER_ENGAGE_UNIT")
+	elseif unit:find("^arena%d+$") then
+		return self:GenerateNormalEventString("ARENA_OPPONENT_UPDATE")
 	end
 	
 	return false

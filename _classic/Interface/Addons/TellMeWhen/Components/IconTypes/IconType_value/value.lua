@@ -18,11 +18,11 @@ local print = TMW.print
 local UnitPower, UnitPowerMax, UnitPowerType, UnitPowerDisplayMod, GetComboPoints, MAX_COMBO_POINTS
     = UnitPower, UnitPowerMax, UnitPowerType, UnitPowerDisplayMod, GetComboPoints, MAX_COMBO_POINTS
 
-local UnitHealth = TMW.UnitHealth
-local UnitHealthMax = TMW.UnitHealthMax
+local UnitHealth = UnitHealth
+local UnitHealthMax = UnitHealthMax
 
 local pairs
-    = pairs
+	= pairs  
 	
 local _, pclass = UnitClass("Player")
 local GetSpellTexture = TMW.GetSpellTexture
@@ -83,7 +83,6 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 	self:SetTitle(L["ICONMENU_VALUE_POWERTYPE"])
 
 	local types = {
-
 		{ order = -2, id = -2, name = L["CONDITIONPANEL_POWER"], },
 		{ order = -1, id = -1, name = HEALTH, },
 	    { order = 1,  id = Enum.PowerType.Mana, name = MANA, },
@@ -91,8 +90,25 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 		{ order = 3,  id = Enum.PowerType.Energy, name = ENERGY, },
 		{ order = 4,  id = Enum.PowerType.ComboPoints, name = COMBO_POINTS, },
 		{ order = 5,  id = Enum.PowerType.Focus, name = FOCUS, },
+		{ order = 6,  id = Enum.PowerType.RunicPower, name = RUNIC_POWER, }
 	}
 
+	if UnitStagger then
+		types[#types+1] = { order = 20,  id = -3, name = STAGGER, }
+	end
+	if TMW.isRetail then
+		types[#types+1] = { order = 7,  id = Enum.PowerType.SoulShards, name = SOUL_SHARDS_POWER, }
+		types[#types+1] = { order = 8,  id = Enum.PowerType.HolyPower, name = HOLY_POWER, }
+		types[#types+1] = { order = 9,  id = Enum.PowerType.Chi, name = CHI_POWER; }
+		types[#types+1] = { order = 10,  id = Enum.PowerType.Maelstrom, name = MAELSTROM_POWER, }
+		types[#types+1] = { order = 11,  id = Enum.PowerType.ArcaneCharges, name = ARCANE_CHARGES_POWER, }
+		types[#types+1] = { order = 12,  id = Enum.PowerType.LunarPower, name = LUNAR_POWER, }
+		types[#types+1] = { order = 13,  id = Enum.PowerType.Insanity, name = INSANITY_POWER, }
+		types[#types+1] = { order = 14,  id = Enum.PowerType.Fury, name = FURY, }
+		types[#types+1] = { order = 15,  id = Enum.PowerType.Pain, name = PAIN, }
+		types[#types+1] = { order = 16,  id = Enum.PowerType.Alternate, name = L["CONDITIONPANEL_ALTPOWER"], }
+		types[#types+1] = { order = 17,  id = Enum.PowerType.Essence, name = POWER_TYPE_ESSENCE, }
+	end
 
 
 	self.PowerType = TMW.C.Config_DropDownMenu:New("Frame", "$parent", self, "TMW_DropDownMenuTemplate")
@@ -105,12 +121,14 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 	end
 	self.PowerType:SetFunction(function(self)
 		for _, data in TMW:OrderedPairs(types) do
-			local info = TMW.DD:CreateInfo()
-			info.text = data.name
-			info.func = DropdownOnClick
-			info.arg1 = data.id
-			info.checked = info.arg1 == TMW.CI.ics.PowerType
-			TMW.DD:AddButton(info)
+			if data.id then
+				local info = TMW.DD:CreateInfo()
+				info.text = data.name
+				info.func = DropdownOnClick
+				info.arg1 = data.id
+				info.checked = info.arg1 == TMW.CI.ics.PowerType
+				TMW.DD:AddButton(info)
+			end
 		end
 	end)
 
@@ -162,8 +180,7 @@ PowerBarColor[-1] = {{r=1, g=0, b=0, a=1}, {r=1, g=1, b=0, a=1}, {r=0, g=1, b=0,
 PowerBarColor[-3] = {{r=0, g=1, b=0, a=1}, {r=1, g=1, b=0, a=1}, {r=1, g=0, b=0, a=1}}
 
 local function Value_OnEvent(icon, event, arg1, arg2)
-	
-	if event == "TMW_UNITSET_UPDATED" and arg1 == icon.UnitSet then
+	if event == icon.UnitSet.event then
 		-- A unit was just added or removed from icon.Units, so schedule an update.
 		icon.NextUpdateTime = 0
 	elseif arg2 == "COMBO_POINTS" or icon.UnitSet.UnitsLookup[arg1] then
@@ -187,12 +204,17 @@ local function Value_OnUpdate(icon, time)
 			local value, maxValue, valueColor
 			if PowerType == -1 then
 				value, maxValue, valueColor = UnitHealth(unit), UnitHealthMax(unit), PowerBarColor[PowerType]
-			elseif PowerType == Enum.PowerType.ComboPoints then
+			elseif PowerType == -3 then
+				value, maxValue, valueColor = UnitStagger(unit) or 0, UnitHealthMax(unit), PowerBarColor[PowerType]
+			elseif not TMW.isRetail and PowerType == Enum.PowerType.ComboPoints then
 				-- combo points
 				value, maxValue, valueColor = GetComboPoints("player", unit), MAX_COMBO_POINTS, PowerBarColor[PowerType]
 			else
 				if PowerType == -2 then
 					PowerType = UnitPowerType(unit)
+				end
+				if PowerType == Enum.PowerType.ComboPoints then
+					unit = "player"
 				end
 				
 				value, maxValue, valueColor = UnitPower(unit, PowerType, ValueFragments), UnitPowerMax(unit, PowerType, ValueFragments), PowerBarColor[PowerType]
@@ -244,12 +266,13 @@ function Type:Setup(icon)
 
 	if icon.UnitSet.allUnitsChangeOnEvent then
 		icon:SetUpdateMethod("manual")
+		icon:SetScript("OnEvent", Value_OnEvent)
 		
 		if icon.PowerType == -3 then
 			icon:RegisterEvent("UNIT_ABSORB_AMOUNT_CHANGED")
 			icon:RegisterEvent("UNIT_MAXHEALTH")
 		elseif icon.PowerType == -1 then
-			icon:RegisterEvent("UNIT_HEALTH")
+			icon:RegisterEvent(not TMW.isRetail and "UNIT_HEALTH_FREQUENT" or "UNIT_HEALTH")
 			icon:RegisterEvent("UNIT_MAXHEALTH")
 		elseif icon.PowerType == -2 then
 			icon:RegisterEvent("UNIT_POWER_FREQUENT")
@@ -260,8 +283,7 @@ function Type:Setup(icon)
 			icon:RegisterEvent("UNIT_MAXPOWER")
 		end
 	
-		icon:SetScript("OnEvent", Value_OnEvent)
-		TMW:RegisterCallback("TMW_UNITSET_UPDATED", Value_OnEvent, icon)
+		icon:RegisterEvent(icon.UnitSet.event)
 	end
 	
 	icon:SetUpdateFunction(Value_OnUpdate)

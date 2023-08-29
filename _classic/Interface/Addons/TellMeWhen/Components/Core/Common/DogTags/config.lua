@@ -67,7 +67,7 @@ TMW:NewClass("Config_EditBox_DogTags", "Config_EditBox"){
 	end,
 
 	METHOD_EXTENSIONS_PRE = {
-		OnTextChanged = function(self, userInput)			
+		OnTextChanged = function(self, userInput)
 			if userInput and (GetLocale() == "zhCN" or GetLocale() == "zhTW") then
 				-- It seems that bad things happen here while typing chinese characters
 				-- See http://wow.curseforge.com/addons/tellmewhen/tickets/641-typing-chinese-error/
@@ -148,14 +148,14 @@ Module.noTexture = true
 --Module.noTab = true
 
 local colors = {
-    tag = "00ffff", -- cyan
-    number = "ff7f7f", -- pink
-    modifier = "00ff00", -- green
-    literal = "ff7f7f", -- pink
-    operator = "ff7fff", -- fuchsia
-    grouping = "ffffff", -- white
-    kwarg = "ff0000", -- red
-    result = "ffffff", -- white
+	tag = "00ffff", -- cyan
+	number = "ff7f7f", -- pink
+	modifier = "00ff00", -- green
+	literal = "ff7f7f", -- pink
+	operator = "ff7fff", -- fuchsia
+	grouping = "ffffff", -- white
+	kwarg = "ff0000", -- red
+	result = "ffffff", -- white
 }
 
 local extendedTags = {
@@ -197,39 +197,39 @@ local function getCurrentTag(editbox)
 	local text = editbox:GetText()
 	for i = editbox:GetCursorPosition(), 1, -1 do
 		local color = text:match("^|cff(%x%x%x%x%x%x)", i)
-	    
-	    if color then
+
+		if color then
 			local tokenType = TMW.tContains(colors, color)
 			if tokenType == "tag" or tokenType == "modifier" then
 
 				local startPos, endPos = text:find("(.-)|cff", i+10)
 				if endPos then endPos = endPos - 4 end
 				
-		        if not endPos then
+				if not endPos then
 					startPos, endPos = text:find("(.-)|r", i+10)
 					if endPos then endPos = endPos - 2 end
 				end
 
 				if not endPos then
 					startPos, endPos = text:find("(.*)", i+10)
-		        else
+				else
 					local whitespace = text:match("([ \t\r\n]*)|cff", startPos) or ""
+					
+					-- If there is whitespace separating our cursor and the end of the tag that is being matched,
+					-- don't match it so that a new suggestion list will be shown
+					if (endPos - #whitespace < editbox:GetCursorPosition()) then
+						return nil
+					end
 
-		       		-- If there is whitespace separating our cursor and the end of the tag that is being matched,
-		       		-- don't match it so that a new suggestion list will be shown
-		       		if (endPos - #whitespace < editbox:GetCursorPosition()) then
-		       			return nil
-		       		end
-
-		        end
+				end
 				local tag = text:sub(startPos, endPos):trim()
 
 
-		        return tag, startPos, endPos
-		    else
+				return tag, startPos, endPos
+			else
 				return nil
-		    end
-	    end
+			end
+		end
 	end
 end
 
@@ -330,7 +330,7 @@ function Module:Entry_AddToList_1(f, tagName)
 	f.insert = tagName
 	f.overrideInsertName = L["SUG_INSERTTEXTSUB"]
 	
-	f.tooltipmethod = "TMW_SetDogTag"
+	f.tooltipmethod = TMW.GameTooltip_SetDogTag
 	f.tooltiparg = tagName
 end
 function Module.Sorter(a, b)
@@ -400,12 +400,12 @@ local function generateArgFormattedTagString(tag, tagData)
 	return retstring
 end
 
-function GameTooltip:TMW_SetDogTag(tagName)
+function TMW.GameTooltip_SetDogTag(self, tagName)
 	local tag = "[" .. tagName .. "]"
 	local colorized = DogTag:ColorizeCode(tag)
 		
-	GameTooltip:AddLine(colorized, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, false)
-	GameTooltip:AddLine(" ", 1, 1, 1, false)
+	self:AddLine(colorized, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, false)
+	self:AddLine(" ", 1, 1, 1, false)
 	
 	local numTags = tagName:find(":") or 0
 	local desc = ""
@@ -422,19 +422,19 @@ function GameTooltip:TMW_SetDogTag(tagName)
 			local tag_colorized = generateArgFormattedTagString(tag, tagData)
 		
 			if tag_colorized then
-				GameTooltip:AddLine(tag_colorized .. " |cff888888- " .. ns .. "", HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, false)
-				GameTooltip:AddLine(doc or "<???>", NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, true)
+				self:AddLine(tag_colorized .. " |cff888888- " .. ns .. "", HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, false)
+				self:AddLine(doc or "<???>", NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, true)
 
 				for i, v in TMW:Vararg((";"):split(tagData.example)) do
 					local tag, result = v:trim():match("^(.*) => \"(.*)\"$")
 					result = "\"|cffffffff" .. result .. "\""
 
 					local example = "   • " .. DogTag:ColorizeCode(tag) .. " => " .. result
-					GameTooltip:AddLine(example, 1, 1, 1, false)
+					self:AddLine(example, 1, 1, 1, false)
 				end
 			end
 			if i ~= numTags then
-				GameTooltip:AddLine(" ", 1, 1, 1, false)
+				self:AddLine(" ", 1, 1, 1, false)
 			end
 		end
 	end

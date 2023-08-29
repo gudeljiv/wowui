@@ -57,7 +57,7 @@ local MAX_COMMODITY_STACKS_PER_AUCTION = 40
 
 function PostScan.OnInitialize()
 	private.operationsChangedTimer = Delay.CreateTimer("POST_SCAN_OPERATIONS_CHANGED", private.UpdateOperationDB)
-	BagTracking.RegisterCallback(private.UpdateOperationDB)
+	BagTracking.RegisterQuantityCallback(private.UpdateOperationDB)
 	DefaultUI.RegisterAuctionHouseVisibleCallback(private.UpdateOperationDB, true)
 	private.operationDB = Database.NewSchema("AUCTIONING_OPERATIONS")
 		:AddUniqueStringField("autoBaseItemString")
@@ -864,8 +864,7 @@ function private.GetPostBagSlot(itemString, quantity)
 		return nil, nil
 	end
 	local _, _, _, quality = Container.GetItemInfo(bag, slot)
-	assert(quality)
-	if quality == -1 then
+	if not quality or quality == -1 then
 		-- the game client doesn't have item info cached for this item, so we can't post it yet
 		TempTable.Release(removeContext)
 		private.DebugLogInsert(itemString, "No item info")

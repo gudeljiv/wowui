@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -54,8 +54,8 @@ local wipe = _G.wipe
 local BuildSectionKey = addon.BuildSectionKey
 local SplitSectionKey = addon.SplitSectionKey
 
-local JUNK, FREE_SPACE = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 0), L["Free space"]
-local JUNK_KEY, FREE_SPACE_KEY = BuildSectionKey(JUNK, JUNK), BuildSectionKey(FREE_SPACE, FREE_SPACE)
+local JUNK, FREE_SPACE, REAGENT_FREE_SPACE = GetItemSubClassInfo(_G.Enum.ItemClass.Miscellaneous, 0), L["Free space"], L["Reagent Free space"]
+local JUNK_KEY, FREE_SPACE_KEY, REAGENT_FREE_SPACE_KEY = BuildSectionKey(JUNK, JUNK), BuildSectionKey(FREE_SPACE, FREE_SPACE), BuildSectionKey(REAGENT_FREE_SPACE, REAGENT_FREE_SPACE)
 
 local mod = addon:RegisterFilter("FilterOverride", 95, "ABEvent-1.0")
 mod.uiName = L['Manual filtering']
@@ -115,10 +115,14 @@ end
 
 function mod:OnEnable()
 	self:UpdateOptions()
-	self:RegisterEvent('CURSOR_UPDATE')
+	if addon.isRetail or addon.isWrath then
+		self:RegisterEvent('CURSOR_CHANGED')
+	else
+		self:RegisterEvent('CURSOR_UPDATE', 'CURSOR_CHANGED')
+	end
 	addon.RegisterSectionHeaderScript(self, 'OnTooltipUpdate', 'OnTooltipUpdateSectionHeader')
 	addon.RegisterSectionHeaderScript(self, 'OnClick', 'OnClickSectionHeader')
-	self:CURSOR_UPDATE()
+	self:CURSOR_CHANGED()
 end
 
 function mod:OnDisable()
@@ -258,6 +262,7 @@ function mod:GetOptions()
 				name = L['Items'],
 				desc = L['Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list.'],
 				type = 'multiselect',
+				width = 'full',
 				dialogControl = 'ItemList',
 				order = 40,
 				get = function() return true end,
@@ -443,7 +448,7 @@ do
 		local itemKey = mod.db.profile.overrides[itemId]
 		for i, key in ipairs(sections) do
 			local _, _, name, category, title = container:GetSectionInfo(key)
-			if name ~= FREE_SPACE then
+			if name ~= FREE_SPACE or REAGENT_FREE_SPACE then
 				-- Add an radio button for each section
 				wipe(info)
 				info.text = title
@@ -479,7 +484,7 @@ end
 function mod:OnTooltipUpdateSectionHeader(_, header, tooltip)
 	if GetCursorInfo() == "item" then
 		if header.section.name ~= FREE_SPACE then
-			tooltip:AddLine(L["Drop your item there to add it to this section."])
+			tooltip:AddLine(L["Click here with your item to add it to this section."])
 			tooltip:AddLine(L["Press Alt while doing so to open a dropdown menu."])
 		end
 	elseif header.section:GetKey() ~= JUNK_KEY  then
@@ -520,7 +525,7 @@ function mod:OnReceiveDragSectionHeader(_, header)
 	end
 end
 
-function mod:CURSOR_UPDATE()
+function mod:CURSOR_CHANGED()
 	if GetCursorInfo() == "item" then
 		addon.RegisterSectionHeaderScript(self, 'OnReceiveDrag', 'OnReceiveDragSectionHeader')
 	else

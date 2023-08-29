@@ -106,7 +106,7 @@ local SPELLID_AUTOSHOT = 75
 -- Spell names.
 local SPELL_BLINK					= GetSkillName(1953)
 --local SPELL_BLIZZARD				= GetSkillName(10)
---local SPELL_BLOOD_STRIKE			= GetSkillName(60945)
+local SPELL_BLOOD_STRIKE			= WOW_PROJECT_ID < WOW_PROJECT_CLASSIC and GetSkillName(60945)
 --local SPELL_BLOOD_STRIKE_OFF_HAND	= GetSkillName(66215)
 --local SPELL_HELLFIRE				= GetSkillName(1949)
 --local SPELL_HURRICANE				= GetSkillName(16914)
@@ -605,6 +605,29 @@ local function HandleHolyPower(amount, powerType)
 end
 
 -- ****************************************************************************
+-- Handle essence changes.
+-- ****************************************************************************
+local function HandleEssence(amount, powerType)
+	-- Get the correct event settings.
+	local eventSettings = MSBTProfiles.currentProfile.events.NOTIFICATION_ESSENCE_CHANGE
+	local maxAmount = UnitPowerMax("player", powerType)
+	if (amount == maxAmount) then eventSettings = MSBTProfiles.currentProfile.events.NOTIFICATION_ESSENCE_FULL end
+
+	-- Don't do anything if the event is disabled.
+	if (eventSettings.disabled) then return end
+
+	-- Don't do anything if 0 Essence
+	if (amount == 0) then return end
+
+	-- Display the event.
+	if amount <= 0 then
+		return
+	end
+
+	DisplayEvent(eventSettings, FormatEvent(eventSettings.message, amount))
+end
+
+-- ****************************************************************************
 -- Handle monster emotes.
 -- ****************************************************************************
 local function HandleMonsterEmotes(emoteString)
@@ -682,7 +705,7 @@ local function MergeEvents(numEvents, currentProfile)
 				-- Increment the number of merged events.
 				mergedEvent.numMerged = mergedEvent.numMerged + 1
 
-				-- Increment the number of crits if the event being merged is a crit.  Clear the crit flag for the merged event if it isn't.
+				-- Increment the number of crits if the event being merged is a crit. Clear the crit flag for the merged event if it isn't.
 				if (unmergedEvent.isCrit) then mergedEvent.numCrits = mergedEvent.numCrits + 1 else mergedEvent.isCrit = false end
 
 				-- Break out of the merged events loop since the event has been merged.
@@ -1105,7 +1128,8 @@ local function ParserEventsHandler(parserEvent)
 
 	-- Local copies for faster access.
 	local damageType = parserEvent.damageType
-	local skillID = parserEvent.skillID	
+	local skillID = parserEvent.skillID
+
 	-- Recharacterize hunter auto shots to melee damage.
 	if (skillID == SPELLID_AUTOSHOT) then
 		skillID = nil
@@ -1134,8 +1158,9 @@ local function ParserEventsHandler(parserEvent)
 		if ((eventType == "dispel" or eventType == "interrupt" or (eventType == "miss" and parserEvent.missType == "RESIST")) and parserEvent.extraSkillID) then
 			_, _, effectTexture = GetSpellInfo(parserEvent.extraSkillID)
 		end
-		-- DaMaGepy
-		if (effectTexture==nil and effectName~=nil) then _, _, effectTexture = GetSpellInfo(effectName) end
+		if (not effectTexture and effectName) then
+			_, _, effectTexture = GetSpellInfo(effectName)
+		end
 	end
 
 	-- Event is not eligible to be merged so just display it now without processing the impossible fields.
@@ -1200,7 +1225,7 @@ local function ParserEventsHandler(parserEvent)
 
 			-- Check if there is a throttle duration for the ability.
 			if (throttleDuration and throttleDuration > 0) then
-				-- Get throttle info for the ability.  Create it if it hasn't already been.
+				-- Get throttle info for the ability. Create it if it hasn't already been.
 				local throttledAbility = throttledAbilities[effectName]
 				if (not throttledAbility) then
 					throttledAbility = {}
@@ -1375,6 +1400,11 @@ function eventFrame:UNIT_POWER_UPDATE(unitID, powerToken)
 		if (powerAmount ~= lastPowerAmount) then HandleArcanePower(powerAmount, powerType) end
 		doFullDetect = false
 
+	-- Handle Essence uniquely.
+	elseif (powerToken == "ESSENCE" and playerClass == "EVOKER") then
+		if (powerAmount ~= lastPowerAmount) then HandleEssence(powerAmount, powerType) end
+		doFullDetect = false
+
 	end
 
 	-- Detect power gains if show all power gains is enabled.
@@ -1499,9 +1529,9 @@ ignoreAuras[SPELL_BLINK] = true
 ignoreAuras[SPELL_RAIN_OF_FIRE] = true
 
 -- Get localized off-hand trailer and convert to a lua search pattern.
-if (SPELL_BLOOD_STRIKE ~= UNKNOWN) then
+if (SPELL_BLOOD_STRIKE and SPELL_BLOOD_STRIKE ~= UNKNOWN) then
 	--offHandTrailer = string_gsub(SPELL_BLOOD_STRIKE_OFF_HAND, SPELL_BLOOD_STRIKE, "")
-	--offHandPattern = string_gsub(SPELL_BLOOD_STRIKE, "([%^%(%)%.%[%]%*%+%-%?])", "%%%1")
+	offHandPattern = string_gsub(SPELL_BLOOD_STRIKE, "([%^%(%)%.%[%]%*%+%-%?])", "%%%1")
 end
 
 

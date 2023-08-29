@@ -101,14 +101,20 @@ TMW:RegisterCallback("TMW_GLOBAL_UPDATE", function()
 end)
 
 
-local function ICD_OnEvent(icon, event, unit, _, spellID)
-	local valid, spellName, _
-
+-- Auras that don't report a source, but can only be self-applied,
+-- so if the destination is the player, we know its the player's proc.
+local noSource = {
+	[159679] = true, -- mark of blackrock
+	[159678] = true, -- mark of shadowmoon
+}
+local function ICD_OnEvent(icon, event, ...)
+	local valid, spellID, spellName, _
+	
 	if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 		local cevent, sourceGUID
 		_, cevent, _, sourceGUID, _, _, _, destGUID, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
 
-		valid = (sourceGUID == pGUID) and (
+		valid = (sourceGUID == pGUID or (noSource[spellID] and destGUID == pGUID)) and (
 			cevent == "SPELL_AURA_APPLIED" or
 			cevent == "SPELL_AURA_REFRESH" or
 			cevent == "SPELL_ENERGIZE" or
@@ -118,21 +124,32 @@ local function ICD_OnEvent(icon, event, unit, _, spellID)
 			cevent == "SPELL_MISSED"
 		)
 
-	elseif unit == "player" and (event == "UNIT_SPELLCAST_SUCCEEDED" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "UNIT_SPELLCAST_START") then
+	elseif 
+			event == "UNIT_SPELLCAST_SUCCEEDED" 
+			or event == "UNIT_SPELLCAST_CHANNEL_START" 
+			or event == "UNIT_SPELLCAST_START" 
+			or event == "UNIT_SPELLCAST_EMPOWER_START"
+			then
+		local unit
+		unit, _, spellID = ...
 		spellName = GetSpellInfo(spellID)
-		valid = true
+
+		valid = unit == "player"
 	end
 
 	if valid then
-		local NameHash = icon.Spells.StringHash
-		local Key = NameHash[strlowerCache[spellName]]
+		local NameHash = icon.Spells.Hash
+		local Key = 
+			spellID == 0 and icon.Spells.StringHash[strlowerCache[spellName]] or 
+			(NameHash[spellID] or NameHash[strlowerCache[spellName]])
+			
 		if Key and not (icon.DontRefresh and (TMW.time - icon.ICDStartTime) < icon.Spells.Durations[Key]) then
 			-- Make sure we don't reset a running timer if we shouldn't.
 			-- If everything is good, record the data about this event and schedule an icon update.
 
 			icon.ICDStartTime = TMW.time
 			icon.ICDDuration = icon.Spells.Durations[Key]
-			icon:SetInfo("spell; texture",
+			icon:SetInfo("spell; texture", 
 				icon.ICDID,
 				GetSpellTexture(spellID == 0 and spellName or spellID)
 			)

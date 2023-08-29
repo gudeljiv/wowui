@@ -1,6 +1,10 @@
 AtlasLoot.AtlasLootDBDefaults = {
 	profile = {
+		-- tooltip
+		showTooltipInfoGlobal = false,
 		showIDsInTT = false,
+		showItemLvlInTT = true,
+		showCompanionLearnedInfo = true,
 		showLvlRange = true,
 		enableBossLevel = false,
 		showMinEnterLvl = false,
@@ -10,11 +14,12 @@ AtlasLoot.AtlasLootDBDefaults = {
 		enableAutoSelectBoss = true,
 		showDropRate = true,
 		enableAtlasMapIntegration = true,
+		enableColorsInNames = true,
 		ContentPhase = {
-			enableOnLootTable = true,
-			enableOnItems = true,
-			enableOnCrafting = true,
-			enableOnSets = true,
+			enableOnLootTable = false,
+			enableOnItems = false,
+			enableOnCrafting = false,
+			enableOnSets = false,
 			enableTT = false,
 		},
 		Tooltip = {	-- Core\Tooltip.lua
@@ -84,5 +89,6 @@ AtlasLoot.AtlasLootDBDefaults = {
 	},
 	global = {
 		Addons = {},
+		VendorPrice = {}
 	}
 }

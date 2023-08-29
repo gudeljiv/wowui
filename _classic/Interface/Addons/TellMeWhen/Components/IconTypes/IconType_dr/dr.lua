@@ -20,6 +20,7 @@ local gsub, pairs, ipairs, tostring, format, wipe, bitband =
 local UnitGUID =
 	  UnitGUID
 
+local isNumber = TMW.isNumber
 local strlowerCache = TMW.strlowerCache
 local GetSpellTexture = TMW.GetSpellTexture
 
@@ -28,16 +29,8 @@ local CL_CONTROL_PLAYER = COMBATLOG_OBJECT_CONTROL_PLAYER
 
 -- GLOBALS: TellMeWhen_ChooseName
 
-
-local DRList = LibStub("DRList-1.0")
-	
-local DRSpells = DRList:GetSpells()
 local PvEDRs = {}
-for spellName, data in pairs(DRSpells) do
-	if DRList:IsPvECategory(data.category) then
-		PvEDRs[strlowerCache[spellName]] = 1
-	end
-end
+local DRList = LibStub("DRList-1.0")
 
 
 local Type = TMW.Classes.IconType:New("dr")
@@ -165,45 +158,96 @@ end)
 TMW:RegisterCallback("TMW_EQUIVS_PROCESSING", function()
 	-- Create our own DR equivalencies in TMW using the data from DRList-1.0
 
-	if DRList then
-		local myCategories = {
-			incapacitate = "DR-Incapacitate",
-			stun =         "DR-ControlledStun",
-			fear =         "DR-Fear",
-			mind_control = "DR-MindControl",
-			random_root =  "DR-RandomRoot",
-			random_stun =  "DR-RandomStun",
-			root =         "DR-ControlledRoot",
-			kidney_shot =  "DR-KidneyShot",
-		}
+	local myCategories = TMW.isWrath and {
+		incapacitate = "DR-Incapacitate",
+		stun =         "DR-ControlledStun",
+		fear =         "DR-Fear",
+		mind_control = "DR-MindControl",
+		random_root =  "DR-RandomRoot",
+		random_stun =  "DR-RandomStun",
+		root =         "DR-ControlledRoot",
+		silence =      "DR-Silence",
+		opener_stun =  "DR-OpenerStun",
+		horror =       "DR-Horrify",
+		disarm =       "DR-Disarm",
+		scatter =      "DR-Scatter",
+	} or TMW.isClassic and {
+		incapacitate = "DR-Incapacitate",
+		stun =         "DR-ControlledStun",
+		fear =         "DR-Fear",
+		mind_control = "DR-MindControl",
+		random_root =  "DR-RandomRoot",
+		random_stun =  "DR-RandomStun",
+		root =         "DR-ControlledRoot",
+		kidney_shot =  "DR-KidneyShot",
+	} or {
+		stun			= "DR-Stun",
+		silence			= "DR-Silence",
+		disorient		= "DR-Disorient",
+		root			= "DR-Root", 
+		incapacitate	= "DR-Incapacitate",
+		taunt 			= "DR-Taunt",
+		disarm 			= "DR-Disarm",
+	}
 
-		local ignored = {
-			knockback = true,
-			frost_shock = true,
-		}
+	local ignored = TMW.isWrath and {
+		knockback = true,
+		frost_shock = true,
+		cyclone = true,
+		counterattack = true,
+		charge = true,
+	} or TMW.isClassic and {
+		knockback = true,
+		frost_shock = true,
+	} or {
+		rndstun = true,
+		fear = true,
+		mc = true,
+		cyclone = true,
+		shortdisorient = true,
+		horror = true,
+		disarm = true,
+		shortroot = true,
+		knockback = true,
+	}
 	
-		TMW.BE.dr = {}
-		local dr = TMW.BE.dr
-
-		local usedCategories = {}
-		for spellName, data in pairs(DRList:GetSpells()) do
-			local spellID, category = data.spellID, data.category
-			local k = myCategories[category]
-
-			if k then
-				usedCategories[category] = true
-				dr[k] = dr[k] or {}
-				tinsert(dr[k], spellID)
-			elseif TMW.debug and not ignored[category] then
-				TMW:Error("The DR category %q is undefined!", category)
+	TMW.BE.dr = {}
+	local dr = TMW.BE.dr
+	local usedCategories = {}
+	for spell, data in pairs(DRList:GetSpells()) do
+		local spellID, category
+		if type(data) == "table" then
+			-- wow classic (DrList uses a different format in classic)
+			-- that maps spellName to a table {spellID, category}
+			spellID, category = data.spellID, data.category
+		
+			if DRList:IsPvECategory(category) then
+				PvEDRs[spellID] = 1
+				PvEDRs[strlowerCache[spell --[[spell name]] ]] = 1
+			end
+		else
+			spellID, category = spell, data
+		
+			if DRList:IsPvECategory(category) then
+				PvEDRs[spellID] = 1
 			end
 		end
 
-		if TMW.debug then
-			for category, myCategory in pairs(myCategories) do
-				if not usedCategories[category] then
-					TMW:Error("The DR category %q isn't used!", category)
-				end
+		local k = myCategories[category]
+
+		if k then
+			usedCategories[category] = true
+			dr[k] = dr[k] or {}
+			tinsert(dr[k], spellID)
+		elseif TMW.debug and not ignored[category] then
+			TMW:Error("The DR category %q is undefined!", category)
+		end
+	end
+
+	if TMW.debug then
+		for category, myCategory in pairs(myCategories) do
+			if not usedCategories[category] then
+				TMW:Error("The DR category %q isn't used!", category)
 			end
 		end
 	end
@@ -212,18 +256,35 @@ end)
 local function DR_OnEvent(icon, event, arg1)
 	if event == "COMBAT_LOG_EVENT_UNFILTERED" then
 		local _, cevent, _, _, _, _, _, destGUID, _, destFlags, _, spellID, spellName, _, auraType = CombatLogGetCurrentEventInfo()
-
-		if auraType == "DEBUFF" and (
-			cevent == "SPELL_AURA_REMOVED" or 
-			cevent == "SPELL_AURA_APPLIED" or 
-			(icon.CheckRefresh and cevent == "SPELL_AURA_REFRESH")
-		) then
+		
+		if auraType == "DEBUFF" and (cevent == "SPELL_AURA_REMOVED" or cevent == "SPELL_AURA_APPLIED" or (icon.CheckRefresh and cevent == "SPELL_AURA_REFRESH")) then
 			spellName = strlowerCache[spellName]
-			local NameHash = icon.Spells.StringHash
-			if NameHash[spellName] then
+			
 
+			local match = false
+
+			if TMW.isClassic then
+				match = icon.Spells.StringHash[spellName] 
+				
+				if match then
+					-- FOR WOW CLASSIC: SpellID will always be zero in the combat log.
+					-- If someone typed in IDs (e.g. they used an equivalency composed of IDs),
+					-- then use that to reverse the match back out to what they typed in
+					-- using the reverse mapping feature of SpellSet's hash tables
+					-- whose values are the position in the array that the entry came from:
+					spellID = icon.Spells.Array[match]
+					-- If we couldn't get an ID, perform all remaining functions that use spellID
+					-- using the name instead:
+					spellID = isNumber[spellID] or spellName 
+				end
+			else
+				local NameHash = icon.Spells.Hash
+				match = NameHash[spellID] or NameHash[spellName]
+			end
+
+			if match then
 				-- Check that either the spell always has DR, or that the target is a player (or pet).
-				if PvEDRs[spellName] or bitband(destFlags, CL_CONTROL_PLAYER) == CL_CONTROL_PLAYER then
+				if PvEDRs[spellID] or bitband(destFlags, CL_CONTROL_PLAYER) == CL_CONTROL_PLAYER then
 					-- dr is the table that holds the DR info for this target GUID.
 					local dr = icon.DRInfo[destGUID]
 
@@ -243,7 +304,7 @@ local function DR_OnEvent(icon, event, arg1)
 								amt = 50,
 								start = TMW.time,
 								duration = icon.DRDuration,
-								tex = GetSpellTexture(spellName)
+								tex = GetSpellTexture(spellID)
 							}
 							icon.DRInfo[destGUID] = dr
 						else
@@ -254,7 +315,7 @@ local function DR_OnEvent(icon, event, arg1)
 								dr.amt = amt > 25 and amt/2 or 0
 								dr.duration = icon.DRDuration
 								dr.start = TMW.time
-								dr.tex = GetSpellTexture(spellName)
+								dr.tex = GetSpellTexture(spellID)
 							end
 						end
 					end
@@ -264,7 +325,7 @@ local function DR_OnEvent(icon, event, arg1)
 				end
 			end
 		end
-	elseif event == "TMW_UNITSET_UPDATED" and arg1 == icon.UnitSet then
+	elseif event == icon.UnitSet.event then
 		-- A unit was just added or removed from icon.Units, so schedule an update.
 		icon.NextUpdateTime = 0
 	end
@@ -454,14 +515,14 @@ function Type:Setup(icon)
 
 
 	-- Setup events and update functions
+	icon:SetScript("OnEvent", DR_OnEvent)
 	if icon.UnitSet.allUnitsChangeOnEvent then
 		icon:SetUpdateMethod("manual")
 		
-		TMW:RegisterCallback("TMW_UNITSET_UPDATED", DR_OnEvent, icon)
+		icon:RegisterEvent(icon.UnitSet.event)
 	end
 	
 	icon:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
-	icon:SetScript("OnEvent", DR_OnEvent)
 
 	icon:SetUpdateFunction(DR_OnUpdate)
 	icon:Update()

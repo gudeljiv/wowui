@@ -12,12 +12,12 @@ local Container = TSM.Include("Util.Container")
 local Database = TSM.Include("Util.Database")
 local Event = TSM.Include("Util.Event")
 local SlotId = TSM.Include("Util.SlotId")
+local Table = TSM.Include("Util.Table")
 local TempTable = TSM.Include("Util.TempTable")
 local ItemString = TSM.Include("Util.ItemString")
 local Reactive = TSM.Include("Util.Reactive")
 local Future = TSM.Include("Util.Future")
 local Log = TSM.Include("Util.Log")
-local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local CustomPrice = TSM.Include("Service.CustomPrice")
@@ -92,13 +92,19 @@ function Destroying.OnInitialize()
 		:RegisterCallback("deMaxQuality", private.UpdateBagDB)
 		:RegisterCallback("includeSoulbound", private.UpdateBagDB)
 
-	local currentTime = time()
-	for _, entries in pairs(private.settings.destroyingHistory) do
-		for i = #entries, 1, -1 do
-			local value = entries[i]
-			if value.time < currentTime - CLEANUP_THRESHOLD then
-				tremove(entries, i)
+	local cleanupTime = time() - CLEANUP_THRESHOLD
+	for spellId, entries in pairs(private.settings.destroyingHistory) do
+		-- Rely on the entries being sorted in ascending time
+		local removeThroughIndex = nil
+		for i = 1, #entries do
+			if entries[i].time > cleanupTime then
+				break
 			end
+			removeThroughIndex = i
+		end
+		if removeThroughIndex then
+			Log.Info("Removing %d old entries for %s", removeThroughIndex, tostring(spellId))
+			Table.RemoveRange(entries, 1, removeThroughIndex)
 		end
 	end
 
@@ -138,9 +144,6 @@ function Destroying.OnInitialize()
 
 	if Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) then
 		hooksecurefunc(C_TradeSkillUI, "CraftSalvage", function(spellId, _, itemLocation)
-			if not ProfessionInfo.IsSalvage(spellId) then
-				return
-			end
 			private.destroySpellId = spellId
 			private.itemSpellId = Container.GetItemId(itemLocation.bagID, itemLocation.slotIndex)
 		end)
@@ -376,7 +379,7 @@ function private.SpellCastEventHandler(event, unit, _, spellId)
 	if unit ~= "player" then
 		return
 	end
-	if Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) and event == "UNIT_SPELLCAST_START" and not ProfessionInfo.IsSalvage(spellId) then
+	if Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) and event == "UNIT_SPELLCAST_START" then
 		private.destroySpellId = nil
 		private.itemSpellId = nil
 	end
@@ -531,7 +534,7 @@ function private.IsDestroyable(itemString)
 	end
 
 	local hasSourceItem = false
-	for _, _, _, _, _, skillRequired in Conversions.TargetItemsByMethodIterator(itemString, conversionMethod) do
+	for _, _, _, _, _, _, _, skillRequired in Conversions.TargetItemsByMethodIterator(itemString, conversionMethod) do
 		if not skillRequired or (conversionMethod == Conversions.METHOD.PROSPECT and private.jewelcraftSkillLevel and skillRequired and private.jewelcraftSkillLevel >= skillRequired) or (conversionMethod == Conversions.METHOD.MILL and private.inscriptionSkillLevel and skillRequired and private.inscriptionSkillLevel >= skillRequired) then
 			hasSourceItem = true
 		end

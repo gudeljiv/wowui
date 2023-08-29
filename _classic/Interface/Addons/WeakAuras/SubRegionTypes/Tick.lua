@@ -1,10 +1,10 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
-local default = function(parentType)
+local default = function()
   return {
     tick_visible = true,
     tick_color = {1, 1, 1, 1},
@@ -107,8 +107,10 @@ local auraBarAnchorInverse = {
 }
 
 local function create()
-  local subRegion = CreateFrame("FRAME", nil, UIParent)
+  local subRegion = CreateFrame("Frame", nil, UIParent)
   subRegion.texture = subRegion:CreateTexture()
+  subRegion.texture:SetSnapToPixelGrid(false)
+  subRegion.texture:SetTexelSnappingBias(0)
   subRegion.texture:SetDrawLayer("ARTWORK", 3)
   subRegion.texture:SetAllPoints(subRegion)
   return subRegion
@@ -190,16 +192,18 @@ local funcs = {
     end
   end,
   UpdateTimerTick = function(self)
-    if self.tick_placement_mode == "ValueOffset" and self.state and self.state.progressType == "timed" and not self.paused then
+    if self.tick_placement_mode == "ValueOffset"
+       and self.state
+       and self.state.progressType == "timed"
+       and not self.paused
+    then
       if not self.TimerTick then
         self.TimerTick = self.UpdateTickPlacement
-        self.parent:UpdateRegionHasTimerTick()
         self.parent.subRegionEvents:AddSubscriber("TimerTick", self)
       end
     else
       if self.TimerTick then
         self.TimerTick = nil
-        self.parent:UpdateRegionHasTimerTick()
         self.parent.subRegionEvents:RemoveSubscriber("TimerTick", self)
       end
     end
@@ -272,7 +276,9 @@ local funcs = {
     end
     local side = inverse and auraBarAnchorInverse or auraBarAnchor
     self:ClearAllPoints()
-    self:SetPoint("CENTER", self.parent.bar, side[self.orientation], offsetx + self.tick_xOffset, offsety + self.tick_yOffset)
+    self:SetPoint("CENTER", self.parent.bar, side[self.orientation],
+                  offsetx + self.tick_xOffset,
+                  offsety + self.tick_yOffset)
   end,
   SetAutomaticLength = function(self, automatic_length)
     if self.automatic_length ~= automatic_length then
@@ -410,4 +416,5 @@ local function supports(regionType)
   return regionType == "aurabar"
 end
 
-WeakAuras.RegisterSubRegionType("subtick", L["Tick"], supports, create, modify, onAcquire, onRelease, default, nil, properties);
+WeakAuras.RegisterSubRegionType("subtick", L["Tick"], supports, create, modify, onAcquire, onRelease,
+                                default, nil, properties);

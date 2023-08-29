@@ -1,182 +1,395 @@
 local _, xVermin = ...
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:SetScript("OnEvent",
+local function xInstallAddon()
+	SetCVar('autoQuestWatch', 1)
+	SetCVar('autoQuestProgress', 1)
+	SetCVar('instantQuestText', 1)
+	SetCVar('nameplateMaxDistance', 80)
+	SetCVar('ffxGlow', 1)
+	SetCVar('ffxDeath', 0)
+	SetCVar('ffxNether', 0)
+	SetCVar('violenceLevel', 5)
+	SetCVar('cameraDistanceMax', 50)
+	SetCVar('cameraDistanceMaxFactor', 4.0)
+	SetCVar('cameraDistanceMaxZoomFactor', 4.0)
+	SetCVar('chatClassColorOverride', 0)
+	SetCVar('ShowClassColorInFriendlyNameplate', 1)
+	SetCVar('scriptErrors', 1)
+	SetCVar('alwaysShowActionBars', 1)
+	SetCVar('AutoInteract', 0)
+	SetCVar('cursorsizepreferred', 0)
+
+	C_CVar.SetCVar('showArenaEnemyFrames', '0')
+	C_CVar.SetCVar('showArenaEnemyCastbar', '0')
+	C_CVar.SetCVar('showArenaEnemyPets', '0')
+
+	if Grid2 then
+		Grid2.db:SetProfile('xVermin')
+	end
+	if Details then
+		Details:ApplyProfile('xVermin')
+	end
+	if Plater then
+		Plater.db:SetProfile('xVermin')
+	end
+	if TMW then
+		TMW.db:SetProfile(xVermin.Class)
+		if not TMW.db.profile.Locked then
+			TMW:LockToggle()
+		end
+	end
+
+	ShowHelm(false)
+	ShowCloak(false)
+
+	-- SetActionBarToggles(1, 1, 1, 1, 1)
+	-- local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
+	-- for i = 1, #action_bars do
+	-- 	action_bars[i]:SetChecked(1)
+	-- 	action_bars[i]:GetScript('OnClick')(action_bars[i])
+	-- end
+
+	-- local s, b = 'SHOW_MULTI_ACTIONBAR_'
+	-- b = 1
+	-- for i = 1, 4 do
+	-- 	_G[s .. i] = b
+	-- end
+	-- InterfaceOptions_UpdateMultiActionBars()
+end
+
+SLASH_XINSTALL1 = '/xinstall'
+SlashCmdList['XINSTALL'] = function(msg)
+	xInstallAddon()
+end
+
+local f = CreateFrame('Frame')
+f:RegisterEvent('PLAYER_ENTERING_WORLD')
+f:SetScript(
+	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if isInitialLogin or isReloadingUi then
-			SHOW_MULTI_ACTIONBAR_1 = 1
-			SHOW_MULTI_ACTIONBAR_2 = 1
-			SHOW_MULTI_ACTIONBAR_3 = 1
-			SHOW_MULTI_ACTIONBAR_4 = 1
-			ALWAYS_SHOW_MULTIBARS = 1
-			LOCK_ACTIONBAR = 1
-			InterfaceOptions_UpdateMultiActionBars()
+		xInstallAddon()
 
-			-------------------------------------------
-			-- Position of choco bars
-			-------------------------------------------
-			ChocolateBar1:ClearAllPoints()
-			ChocolateBar1:SetPoint("LEFT", CustomContainer_1, "LEFT", 5, 0)
-			ChocolateBar1:SetWidth(145)
-			ChocolateBar2:ClearAllPoints()
-			ChocolateBar2:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
-			ChocolateBar2:SetWidth(145)
-
-			-------------------------------------------
-			-- Reposition toast frame.
-			-------------------------------------------
-			if not BNToastFrame.SetBackdrop then
-				Mixin(BNToastFrame, BackdropTemplateMixin)
-			end
-			BNToastFrame:ClearAllPoints()
-			BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame4, "TOPLEFT", 0, 35)
-			BNToastFrame.CloseButton:Hide()
-			BNToastFrame:SetBackdrop(
-				{
-					bgFile = "Interface\\Buttons\\WHITE8x8",
-					edgeFile = "",
-					tile = false,
-					tileSize = 0,
-					edgeSize = 0,
-					insets = {left = 0, right = 0, top = 0, bottom = 0}
-				}
-			)
-			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
-			BNToastFrame:SetWidth(250)
-			BNToastFrame:CreateBeautyBorder(8)
-			BNToastFrame.ClearAllPoints = function() end
-			BNToastFrame.SetPoint = function() end
-
-			-------------------------------------------
-			-- Reposition loot frame.
-			-------------------------------------------
-			LootFrame:HookScript(
-				"OnShow",
-				function(self)
-					LootFrame:ClearAllPoints()
-					LootFrame:SetPoint("BOTTOMLEFT", CustomContainer_Combat, "TOPLEFT", 450, 500)
-				end
-			)
-
-			-------------------------------------------
-			-- Reposition quest timer frame.
-			-------------------------------------------
-			QuestTimerFrame:HookScript(
-				"OnUpdate",
-				function(self)
-					QuestTimerFrame:ClearAllPoints()
-					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_2, "BOTTOMLEFT", 0, -9)
-				end
-			)
-
-			-------------------------------------------
-			-- druability frame
-			-------------------------------------------
-			-- DurabilityFrame:ClearAllPoints()
-			-- DurabilityFrame:SetPoint("TOPRIGHT", "EavesDropFrame", "BOTTOMRIGHT", -40, 0)
-			-- DurabilityFrame.ClearAllPoints = function()
-			-- end
-			-- DurabilityFrame.SetPoint = function()
-			-- end
-
-			-------------------------------------------
-			-- CastingBarFrame Text
-			-------------------------------------------
-			CastingBarFrame.Text:ClearAllPoints()
-			CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
-
-			-------------------------------------------
-			-- minimap
-			-------------------------------------------
-			Minimap:ClearAllPoints()
-			Minimap:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -40, -40)
-			Minimap.SetPoint = function() end
-
-			-------------------------------------------
-			--- pet, player and target frame positioning
-			-------------------------------------------
-			PetFrame:HookScript(
-				"OnUpdate",
-				function(self)
-					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
-					PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
-					PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 2, -22)
-					PetFrameHealthBarText.SetPoint = function() end
-					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
-					PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
-					PetFrameManaBarText.SetPoint = function() end
-					PetFrameHealthBarText:Hide()
-					PetFrameManaBarText:Hide()
-					PetName:Hide()
-				end
-			)
-
-			PlayerFrameManaBarText:SetScale(0.8)
-
-			PlayerFrame:ClearAllPoints()
-			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
-			PlayerFrame.ClearAllPoints = function() end
-			PlayerFrame.SetPoint = function() end
-
-			TargetFrame:ClearAllPoints()
-			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
-			TargetFrame.ClearAllPoints = function() end
-			TargetFrame.SetPoint = function() end
+		if not BNToastFrame.SetBackdrop then
+			Mixin(BNToastFrame, BackdropTemplateMixin)
 		end
 
-		MiniMapWorldMapButton:Hide()
+		BNToastFrame:ClearAllPoints()
+		BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
+		BNToastFrame.ClearAllPoints = function()
+		end
+		BNToastFrame.SetPoint = function()
+		end
+		BNToastFrame.CloseButton:Hide()
+		BNToastFrame:SetBackdrop(
+			{
+				bgFile = 'Interface\\Buttons\\WHITE8x8',
+				edgeFile = '',
+				tile = false,
+				tileSize = 0,
+				edgeSize = 0,
+				insets = {left = 0, right = 0, top = 0, bottom = 0}
+			}
+		)
+		BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
+		BNToastFrame:SetWidth(250)
+		BNToastFrame:CreateBeautyBorder(8)
+
+		LSToastAnchor1:ClearAllPoints()
+		LSToastAnchor1:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 30, 45)
+
+		CastingBarFrame.Text:ClearAllPoints()
+		CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
+
+		LootFrame:HookScript(
+			'OnShow',
+			function(self)
+				LootFrame:ClearAllPoints()
+				LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
+			end
+		)
+
+		--------------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		-- UNITFRAMES ------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		if PlayerFrame and PlayerFrame:IsVisible() then
+		
+			PlayerFrame:SetMovable(true)
+			PlayerFrame:ClearAllPoints()
+			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
+			PlayerFrame:SetUserPlaced(true)
+			PlayerFrame:SetMovable(false)
+
+			PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
+			PlayerFrameHealthBarText:SetScale(0.85)
+			PlayerFrameHealthBarTextLeft:SetPoint('LEFT', PlayerFrameHealthBar, 'LEFT', 5, 0)
+			PlayerFrameHealthBarTextLeft:SetScale(0.85)
+			PlayerFrameHealthBarTextRight:SetPoint('RIGHT', PlayerFrameHealthBar, 'RIGHT', -1, 0)
+			PlayerFrameHealthBarTextRight:SetScale(0.85)
+			PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
+			PlayerFrameManaBarText:SetScale(0.75)
+			PlayerFrameManaBarTextLeft:SetPoint('LEFT', PlayerFrameManaBar, 'LEFT', 7, -1)
+			PlayerFrameManaBarTextLeft:SetScale(0.75)
+			PlayerFrameManaBarTextRight:SetPoint('RIGHT', PlayerFrameManaBar, 'RIGHT', -2, -1)
+			PlayerFrameManaBarTextRight:SetScale(0.75)
+			PlayerName:SetPoint('CENTER', PlayerFrameBackground, 'CENTER', 0, 10)
+
+			if PlayerFrameAlternateManaBar then
+				PlayerFrameAlternateManaBar:Hide()
+			end
+			-- PlayerFrameAlternateManaBar:HookScript(
+			-- 	'OnShow',
+			-- 	function(self)
+			-- 		self:Hide()
+			-- 	end
+			-- )
+
+			xVermin.CheckIfLoadedWithTimer(
+				'PlayerFrame',
+				function()
+					PlayerFrame:HookScript(
+						'OnUpdate',
+						function()
+							if UnitHealth('player') > 0 then
+								PlayerFrameHealthBarText:SetText(xVermin.FormatValue(UnitHealth('player')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('player')))
+							else
+								PlayerFrameHealthBarText:Hide()
+								PlayerFrameManaBarText:Hide()
+							end
+						end
+					)
+				end
+			)
+		end
+
+		if TargetFrame and TargetFrame:IsVisible() then
+			TargetFrame:SetMovable(true)
+			TargetFrame:ClearAllPoints()
+			TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
+			TargetFrame:SetUserPlaced(true)
+			TargetFrame:SetMovable(false)
+
+			-- TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+			TargetFrameTextureFrame.HealthBarText:SetPoint('CENTER', TargetFrameHealthBar, 'CENTER', 0, 0)
+			TargetFrameTextureFrame.HealthBarText:SetScale(0.85)
+			TargetFrameTextureFrame.HealthBarTextLeft:SetPoint('LEFT', TargetFrameHealthBar, 'LEFT', 1, 0)
+			TargetFrameTextureFrame.HealthBarTextLeft:SetScale(0.85)
+			TargetFrameTextureFrame.HealthBarTextRight:SetPoint('RIGHT', TargetFrameHealthBar, 'RIGHT', -5, 0)
+			TargetFrameTextureFrame.HealthBarTextRight:SetScale(0.85)
+			TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
+			TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
+			TargetFrameTextureFrame.ManaBarTextLeft:SetPoint('LEFT', TargetFrameManaBar, 'LEFT', 2, -1)
+			TargetFrameTextureFrame.ManaBarTextLeft:SetScale(0.75)
+			TargetFrameTextureFrame.ManaBarTextRight:SetPoint('RIGHT', TargetFrameManaBar, 'RIGHT', -7, -1)
+			TargetFrameTextureFrame.ManaBarTextRight:SetScale(0.75)
+			-- TargetFrameTextureFrameName:ClearAllPoints()
+			TargetFrameTextureFrameName:SetPoint('CENTER', TargetFrameNameBackground, 'CENTER', 0, -1)
+			TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+			TargetFrameNameBackground.SetVertexColor = function() end
+	
+			xVermin.CheckIfLoadedWithTimer(
+				'TargetFrame',
+				function()
+					TargetFrame:HookScript(
+						'OnUpdate',
+						function()
+							if UnitHealth('target') > 0 then
+								TargetFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('target')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('target')))
+							else
+								TargetFrameTextureFrame.HealthBarText:Hide()
+								TargetFrameTextureFrame.ManaBarText:Hide()
+							end
+						end
+					)
+				end
+			)
+		end
+
+		if FocusFrame and FocusFrame:IsVisible() then
+
+			FocusFrame:SetMovable(true)
+			FocusFrame:ClearAllPoints()
+			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
+			FocusFrame:SetUserPlaced(true)
+			FocusFrame:SetMovable(false)
+
+			FocusFrameTextureFrame.HealthBarText:SetPoint('CENTER', FocusFrameHealthBar, 'CENTER', 0, 0)
+			FocusFrameTextureFrame.HealthBarText:SetScale(0.85)
+			FocusFrameTextureFrame.HealthBarTextLeft:SetPoint('LEFT', FocusFrameHealthBar, 'LEFT', 1, 0)
+			FocusFrameTextureFrame.HealthBarTextLeft:SetScale(0.85)
+			FocusFrameTextureFrame.HealthBarTextRight:SetPoint('RIGHT', FocusFrameHealthBar, 'RIGHT', -5, 0)
+			FocusFrameTextureFrame.HealthBarTextRight:SetScale(0.85)
+			FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
+			FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
+			FocusFrameTextureFrame.ManaBarTextLeft:SetPoint('LEFT', FocusFrameManaBar, 'LEFT', 2, -1)
+			FocusFrameTextureFrame.ManaBarTextLeft:SetScale(0.75)
+			FocusFrameTextureFrame.ManaBarTextRight:SetPoint('RIGHT', FocusFrameManaBar, 'RIGHT', -7, -1)
+			FocusFrameTextureFrame.ManaBarTextRight:SetScale(0.75)
+			-- FocusFrameTextureFrameName:ClearAllPoints()
+			FocusFrameTextureFrameName:SetPoint('CENTER', FocusFrameNameBackground, 'CENTER', 0, -1)
+			FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+			FocusFrameNameBackground.SetVertexColor = function()
+			end
+			FocusFrame:HookScript(
+				'OnUpdate',
+				function()
+					if UnitHealth('focus') > 0 then
+						FocusFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('focus')))
+					else
+						FocusFrameTextureFrame.HealthBarText:Hide()
+						FocusFrameTextureFrame.ManaBarText:Hide()
+					end
+				end
+			)
+		end
+
+		if PetFrame and PetFrame:IsVisible() then
+			xVermin.CheckIfLoadedWithTimer(
+				'PetFrame',
+				function()
+					PetFrameHealthBarText:Hide()
+					PetFrameHealthBarTextLeft:Hide()
+					PetFrameHealthBarTextRight:Hide()
+					PetFrameHealthBarText.Show = function()
+					end
+					PetFrameHealthBarTextLeft.Show = function()
+					end
+					PetFrameHealthBarTextRight.Show = function()
+					end
+					PetFrameManaBarText:Hide()
+					PetFrameManaBarTextLeft:Hide()
+					PetFrameManaBarTextRight:Hide()
+					PetFrameManaBarText.Show = function()
+					end
+					PetFrameManaBarTextLeft.Show = function()
+					end
+					PetFrameManaBarTextRight.Show = function()
+					end
+				end
+			)
+
+			-- PetFrame:HookScript(
+			-- 	'OnEnter',
+			-- 	function(self)
+			-- 		print('mouseover')
+			-- 		self.OnEnter = function()
+			-- 		end
+			-- 	end
+			-- )
+		end
+
+		-- MiniMapInstanceDifficulty:ClearAllPoints()
+		-- MiniMapInstanceDifficulty:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 0, 0)
+
+		if RuneFrame and RuneFrame:IsVisible() then
+			xVermin.CheckIfLoadedWithTimer(
+				'RuneFrame',
+				function()
+					RuneFrame:SetScale(1.05)
+					RuneFrame:ClearAllPoints()
+					RuneFrame:SetPoint('TOPRIGHT', PlayerFrameManaBar, 'BOTTOMRIGHT', 10, -5)
+				end
+			)
+		end
 	end
 )
 
-local function TargetFrameTextAdjustment()
-	TargetFrameHealthBarText:ClearAllPoints()
-	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
-	TargetFrameManaBarText:SetScale(0.8)
-end
-hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
+-- local f = Test or CreateFrame('Frame', 'Test', UIParent)
 
+-- local function TestPrint(self, key)
+-- 	ChatFrame6:AddMessage(self:GetName() .. ': ' .. key)
+-- end
 
+-- f:SetScript('OnKeyDown', TestPrint)
+-- f:SetPropagateKeyboardInput(true)
 
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
+-- PlayerFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function()
+-- 		print(xVermin.R6_Occupied)
+-- 	end
+-- )
 
--- local function ListBuffs()
--- 	for i=1,40 do 
--- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId=UnitBuff("target",i)
--- 		if name then 
--- 			print(i.."="..name..", "..icon..", "..format("%.2f",-1*(GetTime()-expirationTime)/60).." minutes left.")
--- 		end 
+-- FixArenaFrames = function()
+-- 	ArenaEnemyFrame1:ClearAllPoints()
+-- 	ArenaEnemyFrame1:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -50)
+-- 	ArenaEnemyFrame1HealthBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame1ManaBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame1HealthBarTextRight:SetScale(0.7)
+-- 	ArenaEnemyFrame1ManaBarTextRight:SetScale(0.7)
+
+-- 	ArenaEnemyFrame2:ClearAllPoints()
+-- 	ArenaEnemyFrame2:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -100)
+-- 	ArenaEnemyFrame2HealthBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame2ManaBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame2HealthBarTextRight:SetScale(0.7)
+-- 	ArenaEnemyFrame2ManaBarTextRight:SetScale(0.7)
+
+-- 	ArenaEnemyFrame3:ClearAllPoints()
+-- 	ArenaEnemyFrame3:SetPoint('RIGHT', PlayerFrame, 'LEFT', -30, -150)
+-- 	ArenaEnemyFrame3HealthBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame3ManaBarTextLeft:SetScale(0.7)
+-- 	ArenaEnemyFrame3HealthBarTextRight:SetScale(0.7)
+-- 	ArenaEnemyFrame3ManaBarTextRight:SetScale(0.7)
+
+-- 	ArenaEnemyFrame1:SetScale(1.4)
+-- 	ArenaEnemyFrame2:SetScale(1.4)
+-- 	ArenaEnemyFrame3:SetScale(1.4)
+
+-- 	ArenaEnemyFrame1.SetPoint = function()
+-- 	end
+-- 	ArenaEnemyFrame2.SetPoint = function()
+-- 	end
+-- 	ArenaEnemyFrame3.SetPoint = function()
 -- 	end
 -- end
 
+-- if IsAddOnLoaded('Blizzard_ArenaUI') then
+-- 	FixArenaFrames()
+-- else
+-- 	local f = CreateFrame('Frame')
+-- 	f:RegisterEvent('ADDON_LOADED')
+-- 	f:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, addonName)
+-- 			if addonName ~= 'Blizzard_ArenaUI' then
+-- 				return
+-- 			end
 
--- local tf = CreateFrame("Frame")
--- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
--- tf:SetScript("OnEvent", ListBuffs)
--- TargetFrame:HookScript("OnUpdate", ListBuffs)
--- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
+-- 			FixArenaFrames()
 
+-- 			self:UnregisterEvent('ADDON_LOADED')
+-- 			self:SetScript('OnEvent', nil)
+-- 		end
+-- 	)
+-- end
 
+-- local bestp, besti = 0
+-- local questSkin = function()
+-- 	for i = 1, GetNumQuestChoices() do
+-- 		local name, _, qty = GetQuestItemInfo('choice', i)
+-- 		local link = GetQuestItemLink('choice', i)
 
--- local function ListBuffs()
--- 	for i=1,40 do 
--- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitAura("target", i)
--- 		if name then 
--- 			print(i, "name:", name, "icon:", icon, "count:", count, "duration:", duration, "exp:", expirationTime)
--- 		end 
+-- 		print(name)
+
+-- 		local price = link and select(11, GetItemInfo(link))
+-- 		if not price then
+-- 			return
+-- 		elseif (price * (qty or 1)) > bestp then
+-- 			bestp = price * (qty or 1)
+-- 			besti = i
+-- 		end
 -- 	end
 -- end
 
-
--- local tf = CreateFrame("Frame")
--- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
--- tf:SetScript("OnEvent", ListBuffs)
--- TargetFrame:HookScript("OnUpdate", ListBuffs)
--- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
-
-
-
+-- hooksecurefunc('QuestInfo_GetRewardButton', questSkin)
+-- hooksecurefunc('QuestInfoItem_OnClick', questSkin)
+-- hooksecurefunc('QuestInfo_ShowRewards', questSkin)
+-- hooksecurefunc('QuestInfo_ShowRequiredMoney', questSkin)
+-- hooksecurefunc('QuestFrameProgressItems_Update', questSkin)
+-- hooksecurefunc('QuestLog_Update', questSkin)
+-- hooksecurefunc('QuestLogUpdateQuestCount', questSkin)
+-- hooksecurefunc('QuestLog_UpdateQuestDetails', questSkin)
+-- hooksecurefunc('QuestFrameItems_Update', questSkin)
+-- hooksecurefunc('QuestInfo_Display', questSkin)
+-- hooksecurefunc('QuestFrameGreetingPanel_OnShow', questSkin)

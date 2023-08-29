@@ -1,13 +1,14 @@
-## Interface: 11401
-## Title: |cFFFFFFFFQuestie|r|cFF00FF00 v6.8.2|r
+## Interface: 11404
+## Title: Questie|cFF00FF00 v8.8.7|r
 ## Author: Aero/Logon/Muehe/TheCrux(BreakBB)/Drejjmit/Dyaxler/Schaka/Zoey/Everyone else
 ## Notes: A standalone Classic QuestHelper
-## Version: 6.8.2
+## Version: 8.8.7
 ## RequiredDeps:
-## OptionalDeps: Ace3, CallbackHandler-1.0, HereBeDragons, LibCompress, LibDataBroker-1.1, LibDBIcon-1.0, LibQuestXP, LibSharedMedia-3.0, LibStub, LibUIDropDownMenu
+## OptionalDeps: Ace3, CallbackHandler-1.0, HereBeDragons, LibDataBroker-1.1, LibDBIcon-1.0, LibSharedMedia-3.0, LibStub, LibUIDropDownMenu
 ## SavedVariables: QuestieConfig
 ## SavedVariablesPerCharacter: QuestieConfigCharacter
 ## X-Curse-Project-ID: 334372
+## X-Wago-ID: qv634BKb
 
 Modules\WorldMapTaintWorkaround.lua
 
@@ -15,22 +16,33 @@ embeds.xml
 
 Modules\VersionCheck.lua
 
+# Loader module
+Modules\Libs\QuestieLoader.lua
+Modules\QuestieCompat.lua
+
 Libs\LibUIDropDownMenu\LibUIDropDownMenu.xml
 Libs\HereBeDragons\HereBeDragons-2.0.lua
 Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
 Libs\HereBeDragons\HereBeDragons-Migrate.lua
 
-LibsOnlyClassic\LibQuestXP\LibQuestXP.xml
-
 # Loader module
 Modules\Libs\QuestieLoader.lua
+
+# Thread Manager
+Modules\Libs\ThreadLib.lua
+#Message Handler
+Modules\Libs\MessageHandler.lua
+
+#Quest XP
+Database\QuestXP\QuestieXP.lua
+Database\QuestXP\DB\xpDB-classic.lua
 
 # stream module (used by DB)
 Modules\QuestieStream.lua
 
 # Zones
-Database\Zones\zoneDB.lua
 Database\Zones\zoneTables.lua
+Database\Zones\zoneDB.lua
 
 # Databases
 Database\Classic\classicItemDB.lua
@@ -54,11 +66,14 @@ Database\Corrections\QuestieQuestBlacklist.lua
 Database\Corrections\SoMPhases.lua
 Database\Corrections\QuestieEvent.lua
 
+# Automatic General Corrections
+Database\Corrections\Automatic\itemStartFixes.lua
+
 # Classic Corrections
-Database\Corrections\Classic\classicQuestFixes.lua
-Database\Corrections\Classic\classicNPCFixes.lua
-Database\Corrections\Classic\classicItemFixes.lua
-Database\Corrections\Classic\classicObjectFixes.lua
+Database\Corrections\classicQuestFixes.lua
+Database\Corrections\classicNPCFixes.lua
+Database\Corrections\classicItemFixes.lua
+Database\Corrections\classicObjectFixes.lua
 
 # Compiler
 Database\compiler.lua
@@ -76,12 +91,12 @@ Localization\lookups\Classic\lookupQuests\lookupQuests.xml
 
 # Libs
 Modules\Libs\QuestieLib.lua
-#Modules\Libs\QuestieCompress.lua
 Modules\Libs\QuestieSerializer.lua
 Modules\Libs\QuestieCombatQueue.lua
-Modules\Libs\QuestieHash.lua
+Modules\Libs\RamerDouglasPeucker.lua
 
 # Modules
+Modules\QuestieValidateGameCache.lua
 Modules\QuestieInit.lua
 Modules\MinimapIcon.lua
 Modules\QuestieProfessions.lua
@@ -90,6 +105,8 @@ Modules\QuestieEventHandler.lua
 Modules\Migration.lua
 Modules\QuestieMenu.lua
 Modules\QuestieAnnounce.lua
+Modules\QuestieShutUp.lua
+Modules\Sounds.lua
 Modules\TaskQueue.lua
 Modules\QuestiePlayer.lua
 
@@ -118,7 +135,11 @@ Modules\Map\QuestieMapUtils.lua
 Modules\Map\HBDHooks.lua
 
 # Quest
+Modules\Quest\QuestLogCache.lua
 Modules\Quest\DailyQuests.lua
+Modules\Quest\IsleOfQuelDanas.lua
+Modules\Quest\QuestEventHandler.lua
+Modules\Quest\QuestgiverFrame.lua
 Modules\Quest\QuestieQuest.lua
 Modules\Quest\QuestieQuestPrivates.lua
 
@@ -147,10 +168,14 @@ Modules\Journey\QuestieSearchResults.lua
 
 # Tracker
 Modules\Tracker\QuestieTracker.lua
-Modules\Tracker\QuestieTrackerUtils.lua
-Modules\Tracker\QuestieTrackerMenu.lua
-Modules\Tracker\QuestieTrackerPrivates.lua
-Modules\Tracker\QuestieQuestTimers.lua
+Modules\Tracker\TrackerUtils.lua
+Modules\Tracker\TrackerMenu.lua
+Modules\Tracker\TrackerFadeTicker.lua
+Modules\Tracker\TrackerBaseFrame.lua
+Modules\Tracker\TrackerHeaderFrame.lua
+Modules\Tracker\TrackerQuestFrame.lua
+Modules\Tracker\TrackerQuestTimers.lua
+Modules\Tracker\TrackerLinePool.lua
 
 Modules\QuestieDBMIntegration.lua
 Modules\QuestieSlash.lua
@@ -165,6 +190,7 @@ Modules\Options\GeneralTab\QuestieOptionsGeneral.lua
 Modules\Options\MapTab\QuestieOptionsMap.lua
 Modules\Options\MinimapTab\QuestieOptionsMinimap.lua
 Modules\Options\NameplateTab\QuestieOptionsNameplate.lua
+Modules\Options\SocialTab\QuestieOptionsSocial.lua
 Modules\Options\TrackerTab\QuestieOptionsTracker.lua
 Modules\Options\TooltipTab\QuestieOptionsTooltip.lua
 

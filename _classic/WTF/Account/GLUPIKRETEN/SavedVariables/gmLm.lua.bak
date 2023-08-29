@@ -1,0 +1,9 @@
+
+GMLM_CFG = {
+	["EQUIPONLY"] = false,
+	["MINQUALITY"] = 3,
+	["MYSELF"] = true,
+	["MAXLOOTS"] = 20,
+	["SCALE"] = 1,
+	["MINIMAP"] = false,
+}

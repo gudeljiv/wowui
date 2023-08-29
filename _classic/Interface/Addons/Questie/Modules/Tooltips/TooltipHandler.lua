@@ -21,7 +21,7 @@ function _QuestieTooltips:AddUnitDataToTooltip()
 
     local type, _, _, _, _, npcId, _ = strsplit("-", guid or "");
 
-    if name and type == "Creature" and (
+    if name and (type == "Creature" or type == "Vehicle") and (
         name ~= QuestieTooltips.lastGametooltipUnit or
         (not QuestieTooltips.lastGametooltipCount) or
         _QuestieTooltips:CountTooltip() < QuestieTooltips.lastGametooltipCount or
@@ -85,9 +85,12 @@ function _QuestieTooltips:AddObjectDataToTooltip(name)
 
             if type(gameObjectId) == "number" and tooltipData then
                 for _, v in pairs (tooltipData) do
-                    if tooltipData[2] and string.find(tooltipData[2], "1/1") then
-                        -- We don't want to show completed objectives on game objects
-                        break;
+                    if tooltipData[2] then
+                        local _, _, acquired, needed = string.find(tooltipData[2], "(%d+)/(%d+)")
+                        if acquired and acquired == needed then
+                            -- We don't want to show completed objectives on game objects
+                            break;
+                        end
                     end
 
                     GameTooltip:AddLine(v)

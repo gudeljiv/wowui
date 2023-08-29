@@ -32,6 +32,10 @@ local ConvertType = MSBTTriggers.ConvertType
 local fonts = MSBTMedia.fonts
 local sounds = MSBTMedia.sounds
 
+local IsWrathClassic = WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
+local IsVanillaClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
+
+
 
 -------------------------------------------------------------------------------
 -- Private constants.
@@ -116,7 +120,7 @@ end
 -- Creates a new generic popup.
 -- ****************************************************************************
 local function CreatePopup()
-	local frame = CreateFrame("Frame", nil, UIParent)
+	local frame = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	frame:Hide()
 	frame:EnableMouse(true)
 	frame:SetMovable(true)
@@ -540,7 +544,7 @@ local function CreateFontPopup()
 	frame.normalControlsFrame = normalControlsFrame
 
 	-- Normal font dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(normalControlsFrame)
+	local dropdown = MSBTControls.CreateDropdown(normalControlsFrame)
 	local objLocale = L.DROPDOWNS["normalFont"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetListboxHeight(200)
@@ -553,7 +557,7 @@ local function CreateFontPopup()
 	frame.normalFontDropdown = dropdown
 
 	-- Normal outline dropdown.
-	dropdown =  MSBTControls.CreateDropdown(normalControlsFrame)
+	dropdown = MSBTControls.CreateDropdown(normalControlsFrame)
 	objLocale = L.DROPDOWNS["normalOutline"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.normalFontDropdown, "BOTTOMLEFT", 0, -20)
@@ -683,7 +687,7 @@ local function CreateFontPopup()
 	frame.critControlsFrame = critControlsFrame
 
 	-- Crit font dropdown.
-	dropdown =  MSBTControls.CreateDropdown(critControlsFrame)
+	dropdown = MSBTControls.CreateDropdown(critControlsFrame)
 	objLocale = L.DROPDOWNS["critFont"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetListboxHeight(200)
@@ -696,7 +700,7 @@ local function CreateFontPopup()
 	frame.critFontDropdown = dropdown
 
 	-- Crit outline dropdown.
-	dropdown =  MSBTControls.CreateDropdown(critControlsFrame)
+	dropdown = MSBTControls.CreateDropdown(critControlsFrame)
 	objLocale = L.DROPDOWNS["critOutline"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.critFontDropdown, "BOTTOMLEFT", 0, -20)
@@ -1175,13 +1179,20 @@ end
 -- Class color frame functions.
 -------------------------------------------------------------------------------
 
+local classString = "DEATHKNIGHT DRUID HUNTER MAGE MONK PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR DEMONHUNTER EVOKER"
+if IsWrathClassic then
+	classString = "DEATHKNIGHT DRUID HUNTER MAGE PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR"
+elseif IsVanillaClassic then
+	classString = "DRUID HUNTER MAGE PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR"
+end
+
 -- ****************************************************************************
 -- Creates the popup class colors frame.
 -- ****************************************************************************
 local function CreateClassColors()
 	local frame = CreatePopup()
 	frame:SetWidth(260)
-	frame:SetHeight(300)
+	frame:SetHeight(350)
 
 	-- Close button.
 	local button = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
@@ -1204,7 +1215,7 @@ local function CreateClassColors()
 	local anchor = checkbox
 	local globalStringSchoolIndex = 0
 	local colorswatch, fontString
-	for class in string.gmatch("DEATHKNIGHT DRUID HUNTER MAGE MONK PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR DEMONHUNTER", "[^%s]+") do
+	for class in string.gmatch(classString, "[^%s]+") do
 		colorswatch = MSBTControls.CreateColorswatch(frame)
 		colorswatch:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", anchor == checkbox and 20 or 0, anchor == checkbox and -10 or -5)
 		colorswatch:SetColorChangedHandler(
@@ -1251,7 +1262,7 @@ local function ShowClassColors(configTable)
 	frame.colorCheckbox:SetChecked(not MSBTProfiles.currentProfile.classColoringDisabled)
 
 	local profileEntry
-	for class in string.gmatch("DEATHKNIGHT DRUID HUNTER MAGE MONK PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR DEMONHUNTER", "[^%s]+") do
+	for class in string.gmatch(classString, "[^%s]+") do
 		profileEntry = MSBTProfiles.currentProfile[class]
 		frame[class .. "Colorswatch"]:SetColor(profileEntry.colorR, profileEntry.colorG, profileEntry.colorB)
 		frame[class .. "Checkbox"]:SetChecked(not profileEntry.disabled)
@@ -1540,7 +1551,7 @@ local function CreateScrollAreaMoverFrame(scrollArea)
 	local moverFrames = popupFrames.scrollAreaConfigFrame.moverFrames
 
 	if (not moverFrames[scrollArea]) then
-		local frame = CreateFrame("FRAME", nil, UIParent)
+		local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		frame:Hide()
 		frame:SetMovable(true)
 		frame:EnableMouse(true)
@@ -1620,7 +1631,7 @@ local function CreateScrollAreaConfig()
 	)
 
 	-- Scroll area dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(frame)
+	local dropdown = MSBTControls.CreateDropdown(frame)
 	local objLocale = L.DROPDOWNS["scrollArea"]
 	dropdown:Configure(200, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOP", frame, "TOP", 0, -20)
@@ -1642,7 +1653,7 @@ local function CreateScrollAreaConfig()
 
 
 	-- Normal animation style dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["animationStyle"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", texture, "BOTTOMLEFT", 5, -15)
@@ -1657,7 +1668,7 @@ local function CreateScrollAreaConfig()
 	frame.animationStyleDropdown = dropdown
 
 	-- Sticky animation style dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["stickyAnimationStyle"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("LEFT", frame.animationStyleDropdown, "RIGHT", 15, 0)
@@ -1672,7 +1683,7 @@ local function CreateScrollAreaConfig()
 	frame.stickyAnimationStyleDropdown = dropdown
 
 	-- Normal direction dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["direction"]
 	dropdown:Configure(135,objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.animationStyleDropdown, "BOTTOMLEFT", 0, -10)
@@ -1684,7 +1695,7 @@ local function CreateScrollAreaConfig()
 	frame.directionDropdown = dropdown
 
 	-- Sticky direction dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["direction"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.stickyAnimationStyleDropdown, "BOTTOMLEFT", 0, -10)
@@ -1696,7 +1707,7 @@ local function CreateScrollAreaConfig()
 	frame.stickyDirectionDropdown = dropdown
 
 	-- Normal behavior dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["behavior"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.directionDropdown, "BOTTOMLEFT", 0, -10)
@@ -1708,7 +1719,7 @@ local function CreateScrollAreaConfig()
 	frame.behaviorDropdown = dropdown
 
 	-- Sticky behavior dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["behavior"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.stickyDirectionDropdown, "BOTTOMLEFT", 0, -10)
@@ -1720,7 +1731,7 @@ local function CreateScrollAreaConfig()
 	frame.stickyBehaviorDropdown = dropdown
 
 	-- Normal text align dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["textAlign"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.behaviorDropdown, "BOTTOMLEFT", 0, -10)
@@ -1735,7 +1746,7 @@ local function CreateScrollAreaConfig()
 	frame.textAlignDropdown = dropdown
 
 	-- Sticky text align dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["textAlign"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.stickyBehaviorDropdown, "BOTTOMLEFT", 0, -10)
@@ -1851,7 +1862,7 @@ local function CreateScrollAreaConfig()
 
 
 	-- Icon align dropdown.
-	dropdown =  MSBTControls.CreateDropdown(frame)
+	dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["iconAlign"]
 	dropdown:Configure(135, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame.xOffsetEditbox, "BOTTOMLEFT", 0, -10)
@@ -1988,7 +1999,7 @@ local function CreateScrollAreaSelection()
 
 
 	-- Scroll area dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(frame)
+	local dropdown = MSBTControls.CreateDropdown(frame)
 	local objLocale = L.DROPDOWNS["outputScrollArea"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame, "TOPLEFT", 20, -45)
@@ -2095,10 +2106,15 @@ end
 
 
 -- ****************************************************************************
--- Validates if the passed skill name does not already exist and is valid.
+-- Validates if the passed sound file path is valid.
 -- ****************************************************************************
-local function ValidateSoundFileName(fileName)
-	if (not string.find(fileName, ".mp3") and not string.find(fileName, ".ogg")) then
+local function ValidateSoundFileName(soundPath)
+	if (not soundPath) then return L.MSG_INVALID_SOUND_FILE end
+	-- Ensure that the custom file path is either a number (FileDataID)
+	if (type(soundPath) ~= "string") then return end
+	local soundPathLower = string.lower(soundPath)
+	-- Or a string that begins with "Interface" and ends with either ".mp3" or ".ogg"
+	if (soundPath == "" or (string.find(soundPathLower, "interface") or 0) ~= 1 or (not string.find(soundPathLower, ".mp3") and not string.find(soundPathLower, ".ogg"))) then
 		return L.MSG_INVALID_SOUND_FILE
 	end
 end
@@ -2128,7 +2144,7 @@ local function CreateEvent()
 	frame.titleFontString = fontString
 
 	-- Scroll area dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(frame)
+	local dropdown = MSBTControls.CreateDropdown(frame)
 	local objLocale = L.DROPDOWNS["outputScrollArea"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", frame, "TOPLEFT", 20, -60)
@@ -2142,7 +2158,7 @@ local function CreateEvent()
 	controls.messageEditbox = editbox
 
 	-- Sound dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(frame)
+	local dropdown = MSBTControls.CreateDropdown(frame)
 	objLocale = L.DROPDOWNS["sound"]
 	dropdown:Configure(150, objLocale.label, objLocale.tooltip)
 	dropdown:SetPoint("TOPLEFT", controls.messageEditbox, "BOTTOMLEFT", 0, -20)
@@ -2183,8 +2199,22 @@ local function CreateEvent()
 			for soundName, soundPath in MikSBT.IterateSounds() do
 				if (soundName == soundFile) then soundFile = soundPath end
 			end
-			soundFile = string.find(soundFile, "\\", nil, 1) and soundFile or DEFAULT_SOUND_PATH .. soundFile
-			PlaySoundFile(soundFile, "Master")
+			--print(soundFile)
+			if (type(soundFile) == "string") then
+				if (soundFile ~= "") then
+					local soundFileLower = string.lower(soundFile)
+					-- If the sound file doesn't contain any slashes, assume it is in MSBT's sound folder
+					if (soundFile ~= "" and not string.find(soundFile, "\\", nil, 1) and not string.find(soundFile, "/", nil, 1)) then
+						soundFile = DEFAULT_SOUND_PATH .. soundFile
+					-- If the sound file doesn't begin with "Interface", don't bother trying
+					elseif ((string.find(soundFileLower, "interface", nil, 1) or 0) ~= 1) then
+						return
+					end
+					PlaySoundFile(soundFile, "Master")
+				end
+			else
+				PlaySoundFile(soundFile, "Master")
+			end
 		end
 	)
 	controls[#controls+1] = button
@@ -2340,7 +2370,7 @@ local function CreateClasses()
 	frame.allClassesCheckbox = checkbox
 
 	local anchor = checkbox
-	for class in string.gmatch("DEATHKNIGHT DRUID HUNTER MAGE MONK PALADIN PRIEST ROGUE SHAMAN WARLOCK WARRIOR", "[^ ]+") do
+	for class in string.gmatch(classString, "[^ ]+") do
 		checkbox = MSBTControls.CreateCheckbox(frame)
 		checkbox:Configure(24, CLASS_NAMES[class], nil)
 		checkbox:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", anchor == frame.allClassesCheckbox and 20 or 0, anchor == frame.allClassesCheckbox and -10 or 0)
@@ -2648,8 +2678,8 @@ local function EditConditionButtonOnClick(this)
 
 	EraseTable(tempConfig)
 	tempConfig.conditionType = frame.eventConditions[line.conditionNum]
-	tempConfig.conditionRelation = frame.eventConditions[line.conditionNum+1]
-	tempConfig.conditionValue = frame.eventConditions[line.conditionNum+2]
+	tempConfig.conditionRelation = frame.eventConditions[line.conditionNum + 1]
+	tempConfig.conditionValue = frame.eventConditions[line.conditionNum + 2]
 	tempConfig.availableConditions = conditionData and conditionData.availableConditions
 	tempConfig.saveHandler = SaveMainEventCondition
 	tempConfig.saveArg1 = line.conditionNum
@@ -2678,7 +2708,7 @@ local function CreateMainEventConditionsLine(this)
 	button:SetPoint("LEFT", frame, "LEFT", 0, 0)
 	button:SetClickHandler(EditConditionButtonOnClick)
 	frame.editConditionButton = button
-	controls[#controls+1] = button
+	controls[#controls + 1] = button
 
 	-- Delete condition button.
 	button = MSBTControls.CreateIconButton(frame, "Delete")
@@ -2737,7 +2767,7 @@ local function CreateMainEvent()
 
 
 	-- Main event dropdown.
-	local dropdown =  MSBTControls.CreateDropdown(frame)
+	local dropdown = MSBTControls.CreateDropdown(frame)
 	local objLocale = L.DROPDOWNS["mainEvent"]
 	dropdown:Configure(200, objLocale.label, nil)
 	dropdown:SetListboxHeight(200)
@@ -2748,7 +2778,7 @@ local function CreateMainEvent()
 			local conditionData = popupFrames.triggerFrame.eventConditionData[id]
 			if (conditionData and conditionData.defaultConditions and conditionData.defaultConditions ~= "") then
 				for conditionEntry in string.gmatch(conditionData.defaultConditions .. ";;", "(.-);;") do
-					frame.eventConditions[#frame.eventConditions+1] = ConvertType(conditionEntry)
+					frame.eventConditions[#frame.eventConditions + 1] = ConvertType(conditionEntry)
 				end
 			end
 			UpdateMainEventConditions()
@@ -2759,7 +2789,7 @@ local function CreateMainEvent()
 	end
 	dropdown:Sort()
 	frame.mainEventDropdown = dropdown
-	controls[#controls+1] = dropdown
+	controls[#controls + 1] = dropdown
 
 
 	-- Trigger conditions label.
@@ -2789,7 +2819,7 @@ local function CreateMainEvent()
 			tempConfig.conditionValue = conditionValue or ""
 			tempConfig.availableConditions = conditionData and conditionData.availableConditions
 			tempConfig.saveHandler = SaveMainEventCondition
-			tempConfig.saveArg1 = #frame.eventConditions+1
+			tempConfig.saveArg1 = #frame.eventConditions + 1
 			tempConfig.parentFrame = frame
 			tempConfig.anchorFrame = this
 			tempConfig.anchorPoint = "BOTTOMLEFT"
@@ -2799,7 +2829,7 @@ local function CreateMainEvent()
 			ShowTriggerCondition(tempConfig)
 		end
 	)
-	controls[#controls+1] = button
+	controls[#controls + 1] = button
 
 	-- Main event conditions listbox.
 	local listbox = MSBTControls.CreateListbox(frame)
@@ -2808,7 +2838,7 @@ local function CreateMainEvent()
 	listbox:SetCreateLineHandler(CreateMainEventConditionsLine)
 	listbox:SetDisplayHandler(DisplayMainEventConditionsLine)
 	frame.conditionsListbox = listbox
-	controls[#controls+1] = listbox
+	controls[#controls + 1] = listbox
 
 
 
@@ -3450,10 +3480,14 @@ local function CreateTriggerPopup()
 	}
 
 	-- Localized warrior stances.
-	local warriorStances = {
-		[1] = GetSkillName(2457),
-		[2] = GetSkillName(71),
-	}
+	local warriorStances
+	if WOW_PROJECT_ID >= WOW_PROJECT_CLASSIC then
+		warriorStances = {
+			[1] = GetSkillName(2457),
+			[2] = GetSkillName(71),
+			[3] = GetSkillName(2458),
+		}
+	end
 
 	-- Localized zone types.
 	local zoneTypes = {arena = objLocale["zoneTypeArena"], pvp = objLocale["zoneTypePvP"], party = objLocale["zoneTypeParty"], raid = objLocale["zoneTypeRaid"]}
@@ -3526,10 +3560,13 @@ local function CreateTriggerPopup()
 		recentlyFired = {controlType = "slider", minValue = 1, maxValue = 30, step = 1, default = 5, relations = lessThanRelations, defaultRelation = "lt"},
 		trivialTarget = {controlType = "dropdown", items = booleanItems, default = "false", relations = booleanRelations},
 		unavailableSkill = {controlType = "editbox", relations = equalityRelations},
-		warriorStance = {controlType = "dropdown", items = warriorStances, default = 1, relations = booleanRelations},
 		zoneName = {controlType = "editbox", relations = stringRelations},
 		zoneType = {controlType = "dropdown", items = zoneTypes, default = "arena", relations = booleanRelations},
 	}
+
+	if warriorStances then
+		frame.conditionData["warriorStance"] = {controlType = "dropdown", items = warriorStances, default = 1, relations = booleanRelations}
+	end
 
 	-- Event condition data.
 	local commonSourceFields = "sourceName sourceAffiliation sourceReaction sourceControl sourceUnitType "
@@ -3577,7 +3614,7 @@ local function CreateTriggerPopup()
 
 		-- Cast events.
 		SPELL_CAST_START = {availableConditions = commonSourceFields .. commonSkillFields, defaultConditions="sourceReaction;;eq;;" .. MSBTParser.REACTION_HOSTILE .. ";;skillName;;eq;;" .. UNKNOWN},
-		SPELL_CAST_SUCCESS  = {availableConditions = commonLogFields .. commonSkillFields, defaultConditions="sourceReaction;;eq;;" .. MSBTParser.REACTION_HOSTILE .. ";;skillName;;eq;;" .. UNKNOWN},
+		SPELL_CAST_SUCCESS = {availableConditions = commonLogFields .. commonSkillFields, defaultConditions="sourceReaction;;eq;;" .. MSBTParser.REACTION_HOSTILE .. ";;skillName;;eq;;" .. UNKNOWN},
 
 		-- Kill events.
 		PARTY_KILL = {availableConditions = commonLogFields, defaultConditions="recipientName;;eq;;" .. UNKNOWN},

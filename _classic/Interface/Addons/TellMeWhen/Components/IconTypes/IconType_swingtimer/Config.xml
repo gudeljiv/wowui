@@ -40,6 +40,9 @@
 			<OnLoad>
 				TMW:CInit(self)
 				
+
+				self:SetTitle(GetSpellInfo(75))
+				self.Text:SetText(TMW.L["ICONTYPE_SWINGTIMER_TIP"])
 				self:CScriptAdd("PanelSetup", function(self, panel, panelInfo)
 					local settings = self:GetSettingTable()
 					local supplementalData = panelInfo.supplementalData
@@ -60,7 +63,6 @@
 					self.Text:SetWidth(self:GetWidth() - 15)
 					self:SetHeight(self.Text:GetStringHeight() + 43)
 				end)
-				
 			</OnLoad>
 			<OnSizeChanged>
 				self:SetHeight(self.Text:GetStringHeight() + 43)

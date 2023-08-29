@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 -- Lua APIs
@@ -11,6 +11,8 @@ local CreateFrame = CreateFrame
 
 local AceGUI = LibStub("AceGUI-3.0")
 local SharedMedia = LibStub("LibSharedMedia-3.0")
+local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+
 local IndentationLib = IndentationLib
 
 local WeakAuras = WeakAuras
@@ -55,6 +57,7 @@ local editor_themes = {
 }
 
 if not WeakAurasSaved.editor_tab_spaces then WeakAurasSaved.editor_tab_spaces = 4 end
+if not WeakAurasSaved.editor_font_size then WeakAurasSaved.editor_font_size = 12 end -- set default font size if missing
 local color_scheme = {[0] = "|r"}
 local function set_scheme()
   if not WeakAurasSaved.editor_theme then
@@ -149,19 +152,20 @@ end]=]
 }
 
 local function ConstructTextEditor(frame)
-  local group = AceGUI:Create("InlineGroup")
+  local group = AceGUI:Create("WeakAurasInlineGroup")
   group.frame:SetParent(frame)
-  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -17, 12)
-  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 17, -10)
+  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 17, -63);
+  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -17, 46);
   group.frame:Hide()
-  group:SetLayout("fill")
+  group:SetLayout("flow")
 
   local editor = AceGUI:Create("MultiLineEditBox")
-  editor:SetWidth(400)
-  editor.button:Hide()
+  editor:SetFullWidth(true)
+  editor:SetFullHeight(true)
+  editor:DisableButton(true)
   local fontPath = SharedMedia:Fetch("font", "Fira Mono Medium")
   if (fontPath) then
-    editor.editBox:SetFont(fontPath, 12)
+    editor.editBox:SetFont(fontPath, WeakAurasSaved.editor_font_size, "")
   end
   group:AddChild(editor)
   editor.frame:SetClipsChildren(true)
@@ -191,7 +195,7 @@ local function ConstructTextEditor(frame)
       group:CancelClose()
     end
   )
-  cancel:SetPoint("BOTTOMRIGHT", -27, 13)
+  cancel:SetPoint("BOTTOMRIGHT", -20, -24)
   cancel:SetFrameLevel(cancel:GetFrameLevel() + 1)
   cancel:SetHeight(20)
   cancel:SetWidth(100)
@@ -218,29 +222,14 @@ local function ConstructTextEditor(frame)
   settings_frame:RegisterForClicks("LeftButtonUp")
 
   local helpButton = CreateFrame("Button", nil, group.frame, "UIPanelButtonTemplate")
-  helpButton:SetPoint("BOTTOMLEFT", 12, 13)
+  helpButton:SetPoint("BOTTOMLEFT", 0, -24)
   helpButton:SetFrameLevel(cancel:GetFrameLevel() + 1)
   helpButton:SetHeight(20)
   helpButton:SetWidth(100)
   helpButton:SetText(L["Help"])
 
-  local urlText = CreateFrame("editbox", nil, group.frame)
-  urlText:SetFrameLevel(cancel:GetFrameLevel() + 1)
-  urlText:SetFont(STANDARD_TEXT_FONT, 12)
-  urlText:EnableMouse(true)
-  urlText:SetAutoFocus(false)
-  urlText:SetCountInvisibleLetters(false)
-  urlText:Hide()
+  local dropdown = LibDD:Create_UIDropDownMenu("SettingsMenuFrame", settings_frame)
 
-  local urlCopyLabel = urlText:CreateFontString(nil, "BACKGROUND", "GameFontHighlightSmall")
-  urlCopyLabel:SetPoint("BOTTOMLEFT", group.frame, "BOTTOMLEFT", 12, 18)
-  urlCopyLabel:SetText(L["Press Ctrl+C to copy"])
-  urlCopyLabel:Hide()
-
-  urlText:SetPoint("TOPLEFT", urlCopyLabel, "TOPRIGHT", 12, 13)
-  urlText:SetPoint("RIGHT", settings_frame, "LEFT")
-
-  local dropdown = CreateFrame("Frame", "SettingsMenuFrame", settings_frame, "UIDropDownMenuTemplate")
 
   local function settings_dropdown_initialize(frame, level, menu)
     if level == 1 then
@@ -257,9 +246,9 @@ local function ConstructTextEditor(frame)
             editor.editBox:SetText(editor.editBox:GetText())
           end
         }
-        UIDropDownMenu_AddButton(item, level)
+        LibDD:UIDropDownMenu_AddButton(item, level)
       end
-      UIDropDownMenu_AddButton(
+      LibDD:UIDropDownMenu_AddButton(
         {
           text = L["Bracket Matching"],
           isNotRadio = true,
@@ -271,7 +260,7 @@ local function ConstructTextEditor(frame)
           end
         },
       level)
-      UIDropDownMenu_AddButton(
+      LibDD:UIDropDownMenu_AddButton(
         {
           text = L["Indent Size"],
           hasArrow = true,
@@ -279,10 +268,18 @@ local function ConstructTextEditor(frame)
           menuList = "spaces"
         },
       level)
+      LibDD:UIDropDownMenu_AddButton(
+        {
+          text = WeakAuras.newFeatureString .. L["Font Size"],
+          hasArrow = true,
+          notCheckable = true,
+          menuList = "sizes"
+        },
+      level)
     elseif menu == "spaces" then
       local spaces = {2,4}
       for _, i in pairs(spaces) do
-        UIDropDownMenu_AddButton(
+        LibDD:UIDropDownMenu_AddButton(
           {
             text = i,
             isNotRadio = false,
@@ -298,20 +295,37 @@ local function ConstructTextEditor(frame)
           },
         level)
       end
+    elseif menu == "sizes" then
+      local sizes = {10, 12, 14, 16}
+      for _, i in pairs(sizes) do
+        LibDD:UIDropDownMenu_AddButton(
+          {
+            text = i,
+            isNotRadio = false,
+            checked = function()
+              return WeakAurasSaved.editor_font_size == i
+            end,
+            func = function()
+              WeakAurasSaved.editor_font_size = i
+              editor.editBox:SetFont(fontPath, WeakAurasSaved.editor_font_size, "")
+            end
+          },
+        level)
+      end
     end
   end
-  UIDropDownMenu_Initialize(dropdown, settings_dropdown_initialize, "MENU")
+  LibDD:UIDropDownMenu_Initialize(dropdown, settings_dropdown_initialize, "MENU")
 
   settings_frame:SetScript(
     "OnClick",
     function(self, button, down)
-      ToggleDropDownMenu(1, nil, dropdown, settings_frame, 0, 0)
+      LibDD:ToggleDropDownMenu(1, nil, dropdown, settings_frame, 0, 0)
     end
   )
 
   -- Make Snippets button (top right, near the line number)
   local snippetsButton = CreateFrame("Button", "WASnippetsButton", group.frame, "UIPanelButtonTemplate")
-  snippetsButton:SetPoint("BOTTOMRIGHT", editor.frame, "TOPRIGHT", 0, -15)
+  snippetsButton:SetPoint("BOTTOMRIGHT", editor.frame, "TOPRIGHT", -20, -10)
   snippetsButton:SetFrameLevel(group.frame:GetFrameLevel() + 2)
   snippetsButton:SetHeight(20)
   snippetsButton:SetWidth(100)
@@ -407,10 +421,12 @@ local function ConstructTextEditor(frame)
   end
 
   -- Make sidebar for snippets
-  local snippetsFrame = CreateFrame("FRAME", "WeakAurasSnippets", group.frame, BackdropTemplateMixin and "BackdropTemplate")
+  local snippetsFrame = CreateFrame("Frame", "WeakAurasSnippets", group.frame, "PortraitFrameTemplate")
+  ButtonFrameTemplate_HidePortrait(snippetsFrame)
   snippetsFrame:SetPoint("TOPLEFT", group.frame, "TOPRIGHT", 20, 0)
   snippetsFrame:SetPoint("BOTTOMLEFT", group.frame, "BOTTOMRIGHT", 20, 0)
   snippetsFrame:SetWidth(250)
+  --[[
   snippetsFrame:SetBackdrop(
     {
       bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -422,11 +438,11 @@ local function ConstructTextEditor(frame)
     }
   )
   snippetsFrame:SetBackdropColor(0, 0, 0, 1)
-
+]]
   -- Add button to save new snippet
   local AddSnippetButton = CreateFrame("Button", nil, snippetsFrame, "UIPanelButtonTemplate")
-  AddSnippetButton:SetPoint("TOPLEFT", snippetsFrame, "TOPLEFT", 13, -10)
-  AddSnippetButton:SetPoint("TOPRIGHT", snippetsFrame, "TOPRIGHT", -13, -10)
+  AddSnippetButton:SetPoint("TOPLEFT", snippetsFrame, "TOPLEFT", 13, -25)
+  AddSnippetButton:SetPoint("TOPRIGHT", snippetsFrame, "TOPRIGHT", -13, -25)
   AddSnippetButton:SetHeight(20)
   AddSnippetButton:SetText(L["Add Snippet"])
   AddSnippetButton:RegisterForClicks("LeftButtonUp")
@@ -438,7 +454,7 @@ local function ConstructTextEditor(frame)
   snippetsScrollContainer:SetFullHeight(true)
   snippetsScrollContainer:SetLayout("Fill")
   snippetsScrollContainer.frame:SetParent(snippetsFrame)
-  snippetsScrollContainer.frame:SetPoint("TOPLEFT", snippetsFrame, "TOPLEFT", 17, -35)
+  snippetsScrollContainer.frame:SetPoint("TOPLEFT", snippetsFrame, "TOPLEFT", 17, -50)
   snippetsScrollContainer.frame:SetPoint("BOTTOMRIGHT", snippetsFrame, "BOTTOMRIGHT", -10, 10)
   local snippetsScroll = AceGUI:Create("ScrollFrame")
   snippetsScroll:SetLayout("List")
@@ -489,15 +505,12 @@ local function ConstructTextEditor(frame)
       end
   )
 
-  -- CTRL + S saves and closes, ESC cancels and closes
+  -- CTRL + S saves and closes
   editor.editBox:HookScript(
     "OnKeyDown",
     function(_, key)
       if IsControlKeyDown() and key == "S" then
         group:Close()
-      end
-      if key == "ESCAPE" then
-        group:CancelClose()
       end
     end
   )
@@ -522,53 +535,33 @@ local function ConstructTextEditor(frame)
   )
 
   local editorError = group.frame:CreateFontString(nil, "OVERLAY")
-  editorError:SetFont(STANDARD_TEXT_FONT, 12)
+  editorError:SetFont(STANDARD_TEXT_FONT, 12, "")
   editorError:SetJustifyH("LEFT")
   editorError:SetJustifyV("TOP")
   editorError:SetTextColor(1, 0, 0)
   editorError:SetPoint("LEFT", helpButton, "RIGHT", 0, 4)
   editorError:SetPoint("RIGHT", settings_frame, "LEFT")
 
-  local editorLine = CreateFrame("Editbox", nil, group.frame)
+  local editorLine = CreateFrame("EditBox", nil, group.frame, "InputBoxTemplate")
   -- Set script on enter pressed..
-  editorLine:SetPoint("BOTTOMRIGHT", editor.frame, "TOPRIGHT", -100, -15)
-  editorLine:SetFont(STANDARD_TEXT_FONT, 10)
+  editorLine:SetPoint("RIGHT", snippetsButton, "LEFT", -10, 0)
+  editorLine:SetFont(STANDARD_TEXT_FONT, 10, "")
   editorLine:SetJustifyH("RIGHT")
-  editorLine:SetWidth(80)
+  editorLine:SetWidth(30)
   editorLine:SetHeight(20)
   editorLine:SetNumeric(true)
-  editorLine:SetTextInsets(10, 10, 0, 0)
+  editorLine:SetTextInsets(0, 5, 0, 0)
   editorLine:SetAutoFocus(false)
 
-  urlText:SetScript(
-    "OnChar",
-    function(self)
-      self:SetText(group.url)
-      self:HighlightText()
-    end
-  )
-  urlText:SetScript(
-    "OnEscapePressed",
-    function()
-      urlText:ClearFocus()
-      urlText:Hide()
-      urlCopyLabel:Hide()
-      helpButton:Show()
-      editor:SetFocus()
-    end
-  )
+  local editorLineText = group.frame:CreateFontString(nil, "OVERLAY")
+  editorLineText:SetFont(STANDARD_TEXT_FONT, 10)
+  editorLineText:SetTextColor(1, 1, 1)
+  editorLineText:SetText(L["Line"])
+  editorLineText:SetPoint("RIGHT", editorLine, "LEFT", -8, 0)
 
-  helpButton:SetScript(
-    "OnClick",
-    function()
-      urlText:Show()
-      urlText:SetFocus()
-      urlText:HighlightText()
-      urlCopyLabel:Show()
-      helpButton:Hide()
-      editorError:Hide()
-    end
-  )
+  helpButton:SetScript("OnClick", function()
+    OptionsPrivate.ToggleTip(helpButton, group.url, L["Help"], "")
+  end)
 
   local oldOnCursorChanged = editor.editBox:GetScript("OnCursorChanged")
   editor.editBox:SetScript(
@@ -610,9 +603,6 @@ local function ConstructTextEditor(frame)
     self.reloadOptions = reloadOptions
     self.setOnParent = setOnParent
     self.url = url
-    urlText:SetText(url or "")
-    urlText:Hide()
-    urlCopyLabel:Hide()
     if url then
       helpButton:Show()
     else
@@ -638,7 +628,7 @@ local function ConstructTextEditor(frame)
     editor.editBox:SetScript(
       "OnEscapePressed",
       function()
-        group:CancelClose()
+        -- catch it so that escape doesn't default to losing focus (after which another escape would close config)
       end
     )
     self.oldOnTextChanged = editor.editBox:GetScript("OnTextChanged")
@@ -662,8 +652,6 @@ local function ConstructTextEditor(frame)
             end
           end
           if errorString then
-            urlText:Hide()
-            urlCopyLabel:Hide()
             if self.url then
               helpButton:Show()
             end
@@ -721,6 +709,7 @@ local function ConstructTextEditor(frame)
   function group.CancelClose(self)
     editor.editBox:SetScript("OnTextChanged", self.oldOnTextChanged)
     editor:ClearFocus()
+    frame:HideTip()
     frame.window = "default"
     frame:UpdateFrameVisible()
   end
@@ -780,6 +769,7 @@ local function ConstructTextEditor(frame)
 
     editor.editBox:SetScript("OnTextChanged", self.oldOnTextChanged)
     editor:ClearFocus()
+
     frame.window = "default"
     frame:UpdateFrameVisible()
     WeakAuras.FillOptions()

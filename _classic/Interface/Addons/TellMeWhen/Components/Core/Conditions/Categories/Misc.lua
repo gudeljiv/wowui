@@ -148,6 +148,24 @@ ConditionCategory:RegisterCondition(1.3,	"ICONHIDDENTME", {
 	end,
 })
 
+-- Include icons referenced by conditions
+TMW:RegisterCallback("TMW_EXPORT_SETTINGS_REQUESTED", function(event, strings, type, settings)
+	if type == "icon" then
+		for n, conditionSettings in TMW:InNLengthTable(settings.Conditions) do
+			local Type = conditionSettings.Type
+			local conditionData = CNDT.ConditionsByType[Type]
+			if conditionData.isicon then
+				local GUID = conditionSettings.Icon
+				local type = TMW:ParseGUID(GUID)
+				local settings = TMW:GetSettingsFromGUID(GUID)
+				if type == "icon" and settings then
+					TMW:GetSettingsStrings(strings, type, settings, TMW.Icon_Defaults)
+				end
+			end
+		end
+	end
+end)
+
 
 ConditionCategory:RegisterCondition(3,	 "MOUSEOVER", {
 	text = L["MOUSEOVERCONDITION"],
@@ -207,7 +225,7 @@ ConditionCategory:RegisterCondition(12,	 "TIMEOFDAY", {
 		--return CNDT.COMMON.formatSeconds(k*60)
 	end,
 	unit = false,
-	icon = "Interface\\Icons\\inv_misc_pocketwatch_02",
+	icon = not TMW.isRetail and "Interface\\Icons\\inv_misc_pocketwatch_02" or "Interface\\Icons\\Ability_Racial_TimeIsMoney",
 	tcoords = CNDT.COMMON.standardtcoords,
 	Env = {
 		GetDaysElapsedMinutes = function()
@@ -252,7 +270,7 @@ ConditionCategory:RegisterCondition(21,	 "QUESTCOMPLETE", {
 	},
 	funcstr = function(c)
 		if c.Name ~= "" then
-			return [[BOOLCHECK( IsQuestFlaggedCompleted(c.NameFirst) )]]
+			return [[BOOLCHECK( IsQuestFlaggedCompleted(c.Name) )]]
 		else
 			return [[false]]
 		end

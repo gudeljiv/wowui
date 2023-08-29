@@ -11,11 +11,11 @@ Grid2Options: disabled
 Grid2RaidDebuffs: disabled
 Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
-Bagnon: enabled
-Bagnon_Config: enabled
-Bagnon_GuildBank: enabled
-Bagnon_VoidStorage: enabled
-BagBrother: enabled
+Bagnon: disabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
+Bagnon_VoidStorage: disabled
+BagBrother: disabled
 RXPGuides: enabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
@@ -102,8 +102,8 @@ Questie: enabled
 oUF: disabled
 oUF_Neav: disabled
 oUF_NeavRaid: disabled
-FarmHud: enabled
-FarmHud_QuestArrow: enabled
+FarmHud: disabled
+FarmHud_QuestArrow: disabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
@@ -171,7 +171,7 @@ Details_RaidCheck: enabled
 Details_DataStorage: enabled
 Details_Streamer: enabled
 Details_Vanguard: enabled
-FarmHud_TrailPath: enabled
+FarmHud_TrailPath: disabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 NovaWorldBuffs: disabled
@@ -196,3 +196,4 @@ WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
+GatherMate2_GasClouds: disabled

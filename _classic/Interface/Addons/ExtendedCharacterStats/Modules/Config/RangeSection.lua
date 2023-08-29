@@ -53,6 +53,70 @@ function _Config:LoadRangeSection()
                     Stats:RebuildStatInfos()
                 end,
             },
+            penetration = {
+                type = "toggle",
+                order = 2.3,
+                name = function() return i18n("Armor Pen.") end,
+                desc = function() return i18n("Shows/Hides the armor penetration value.") end,
+                width = 1.5,
+                hidden = function()
+                    return (not ECS.IsWotlk)
+                end,
+                disabled = function() return (not ExtendedCharacterStats.profile.ranged.display); end,
+                get = function () return ExtendedCharacterStats.profile.ranged.penetration.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.ranged.penetration.display = value
+                    Stats:RebuildStatInfos()
+                end,
+            },
+            penetrationRating = {
+                type = "toggle",
+                order = 2.4,
+                name = function() return i18n("Armor Pen. Rating") end,
+                desc = function() return i18n("Shows/Hides the armor penetration rating value.") end,
+                width = 1.5,
+                hidden = function()
+                    return (not ECS.IsWotlk)
+                end,
+                disabled = function() return (not ExtendedCharacterStats.profile.ranged.display); end,
+                get = function () return ExtendedCharacterStats.profile.ranged.penetrationRating.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.ranged.penetrationRating.display = value
+                    Stats:RebuildStatInfos()
+                end,
+            },
+            hasteRating = {
+                type = "toggle",
+                order = 2.6,
+                name = function() return i18n("Haste Rating") end,
+                desc = function() return i18n("Shows/Hides the ranged haste rating.") end,
+                width = 1.5,
+                hidden = function()
+                    return (not ECS.IsWotlk)
+                end,
+                disabled = function() return (not ExtendedCharacterStats.profile.ranged.display); end,
+                get = function () return ExtendedCharacterStats.profile.ranged.hasteRating.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.ranged.hasteRating.display = value
+                    Stats:RebuildStatInfos()
+                end,
+            },
+            hasteBonus = {
+                type = "toggle",
+                order = 2.7,
+                name = function() return i18n("Haste Bonus") end,
+                desc = function() return i18n("Shows/Hides the ranged haste bonus value.") end,
+                width = 1.5,
+                hidden = function()
+                    return (not ECS.IsWotlk)
+                end,
+                disabled = function() return (not ExtendedCharacterStats.profile.ranged.display); end,
+                get = function () return ExtendedCharacterStats.profile.ranged.hasteBonus.display; end,
+                set = function (_, value)
+                    ExtendedCharacterStats.profile.ranged.hasteBonus.display = value
+                    Stats:RebuildStatInfos()
+                end,
+            },
             rangedAttackSpeed = {
                 type = "toggle",
                 order = 3,
@@ -92,7 +156,7 @@ function _Config:LoadRangeSection()
                         desc = function() return i18n("Shows/Hides the ranged hit rating.") end,
                         width = 1.5,
                         hidden = function()
-                            return (not ECS.IsTBC)
+                            return (not ECS.IsWotlk)
                         end,
                         disabled = function()
                             return ((not ExtendedCharacterStats.profile.ranged.display) or

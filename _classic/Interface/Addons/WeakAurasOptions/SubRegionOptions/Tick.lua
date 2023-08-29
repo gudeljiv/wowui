@@ -1,10 +1,7 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
-local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
-
-local indentWidth = WeakAuras.normalWidth * 0.06
 
 local function createOptions(parentData, data, index, subIndex)
   local hiddentickextras = function()
@@ -43,6 +40,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     tick_thickness = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Thickness"],
       order = 5,
@@ -107,6 +105,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     tick_length = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Length"],
       order = 8,
@@ -170,6 +169,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     tick_rotation = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Rotation"],
       min = 0,
@@ -187,6 +187,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     tick_xOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["x-Offset"],
       order = 16,
@@ -196,6 +197,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     tick_yOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["y-Offset"],
       order = 17,

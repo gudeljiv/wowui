@@ -44,6 +44,20 @@ local rangedConfigTranslations = {
         ["zhCN"] = "显示/隐藏 远程暴击",
         ["ruRU"] = "Показать/скрыть шанс критического урона",
     },
+    ["Shows/Hides the ranged haste rating."] = {
+        ["enUS"] = true,
+        ["deDE"] = "Zeigt/Versteckt die Fernkampftempowertung.",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Показать/скрыть значение рейтинга скорости дальнего боя",
+    },
+    ["Shows/Hides the ranged haste bonus value."] = {
+        ["enUS"] = true,
+        ["deDE"] = "Zeigt/Versteckt den Fernkampftempobonus.",
+        ["frFR"] = false,
+        ["zhCN"] = false,
+        ["ruRU"] = "Показать/скрыть значение бонуса к скорости дальнего боя",
+    },
     ["Shows/Hides the ranged attack speed."] = {
         ["enUS"] = true,
         ["deDE"] = "Zeigt/Versteckt das Fernkampf Angriffstempo.",

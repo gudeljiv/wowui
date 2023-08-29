@@ -1,6 +1,9 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("PlaterNameplates", "deDE") 
-if not L then return end 
+do
+    local addonId = ...
+    local languageTable = DetailsFramework.Language.RegisterLanguage(addonId, "deDE")
+    local L = languageTable
 
+------------------------------------------------------------
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER"] = "Hover Over Highlight"
 --[[Translation missing --]]
@@ -8,30 +11,18 @@ L["HIGHLIGHT_HOVEROVER_ALPHA"] = "Hover Over Highlight Alpha"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_DESC"] = "Highlight effect when the mouse is over the nameplate."
 L["OPTIONS_ALPHA"] = "Alpha"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Transparency multiplier."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "Default Transparency"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_DEFAULT_DESC"] = "Amount of transparency applyed to all the components of a single nameplate."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES"] = "Enable For Enemies"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES_DESC"] = "Apply Transparency settings to enemy units."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY"] = "Enable For Friendly"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY_DESC"] = "Apply Transparency settings to friendly units."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE"] = "Target Alpha/In-Range"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE_DESC"] = "Transparency for targets or in-range units."
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TITLE_ENEMIES"] = "Transparency Amount Per Frame (enemies)"
---[[Translation missing --]]
-L["OPTIONS_ALPHABYFRAME_TITLE_FRIENDLY"] = "Transparency Amount Per Frame (friendly)"
---[[Translation missing --]]
-L["OPTIONS_AMOUNT"] = "Amount"
+L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Transparenz-Multiplikator."
+L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "Standard-Transparenz"
+L["OPTIONS_ALPHABYFRAME_DEFAULT_DESC"] = "Höhe der Transparenz, die auf alle Komponenten eines einzelnen Namensschilds angewendet wird."
+L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES"] = "Aktivieren für Feinde"
+L["OPTIONS_ALPHABYFRAME_ENABLE_ENEMIES_DESC"] = "Transparenz-Einstellungen auf gegnerische Einheiten anwenden."
+L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY"] = "Für freundliche Ziele Aktivieren"
+L["OPTIONS_ALPHABYFRAME_ENABLE_FRIENDLY_DESC"] = "Transparenzeinstellungen auf befreundete Einheiten anwenden."
+L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE"] = "Ziel-Alpha/Reichweite"
+L["OPTIONS_ALPHABYFRAME_TARGET_INRANGE_DESC"] = "Transparenz für Ziele oder Einheiten in Reichweite."
+L["OPTIONS_ALPHABYFRAME_TITLE_ENEMIES"] = "Transparenzbetrag pro Frame (Feinde)"
+L["OPTIONS_ALPHABYFRAME_TITLE_FRIENDLY"] = "Transparenzbetrag pro Frame (freundlich)"
+L["OPTIONS_AMOUNT"] = "Menge"
 L["OPTIONS_ANCHOR"] = "Ankerpunkt"
 L["OPTIONS_ANCHOR_BOTTOM"] = "Unten"
 L["OPTIONS_ANCHOR_BOTTOMLEFT"] = "Unten links"
@@ -300,6 +291,17 @@ L["OPTIONS_NOCOMBATALPHA_ENABLED"] = "Use No Combat Alpha"
 L["OPTIONS_NOCOMBATALPHA_ENABLED_DESC"] = [=[Changes the nameplate alpha when you are in combat and the unit isn't.
 
 |cFFFFFF00 Important |r:If the unit isn't in combat, it overrides the alpha from the range check.]=]
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_DESC"] = [=[On updating Plater, it is common for the new version to also update scripts from the scripts tab.
+This may sometimes overwrite changes made by the creator of the profile. The option below prevents Plater from modifying scripts when the addon receives an update.
+
+Note: During major patches and bug fixes, Plater may still update scripts.]=]
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_NAME"] = "Disable non-essential script updates during Plater version upgrades."
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_SKIP_ALERT"] = "Skipped non-essential patch:"
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_TITLE"] = "Skip Non Essential Script Patches"
 L["OPTIONS_OKAY"] = "Okay"
 L["OPTIONS_OUTLINE"] = "Umriss"
 --[[Translation missing --]]
@@ -519,3 +521,5 @@ L["TARGET_OVERLAY_ALPHA"] = "Target Overlay Alpha"
 L["TARGET_OVERLAY_TEXTURE"] = "Target Overlay Texture"
 --[[Translation missing --]]
 L["TARGET_OVERLAY_TEXTURE_DESC"] = "Used above the health bar when it is the current target."
+
+end

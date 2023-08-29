@@ -5,11 +5,11 @@ local _, xVermin = ...
 -- end
 
 LootFrame:HookScript(
-	"OnShow",
+	'OnShow',
 	function()
 		local numLootItems = GetNumLootItems()
 		for i = GetNumLootItems(), 1, -1 do
-			local frame = _G["LootButton" .. i]
+			local frame = _G['LootButton' .. i]
 			if (frame ~= nil) then
 				frame:CreateBeautyBorder(6)
 			end

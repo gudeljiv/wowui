@@ -28,17 +28,31 @@ local function BorderItemInspectSlots(counter)
 	) do
 		v:CreateBeautyBorder(8)
 
-		itemLink = GetInventoryItemLink("target", i)
-		-- print(i, itemLink)
+		if v.ItemLevelText then
+			v.ItemLevelText:SetText('')
+		end
+
+		itemLink = GetInventoryItemLink('target', i)
 		if (itemLink) then
-			_, _, itemRarity = GetItemInfo(itemLink)
-			if (itemRarity and itemRarity > 1) then
-				r, g, b = GetItemQualityColor(itemRarity)
+			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
+			if (itemQuality and itemQuality > 1) then
+				r, g, b = GetItemQualityColor(itemQuality)
 				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				v:SetBeautyBorderColor(r, g, b, 1)
 			else
 				v:SetBeautyBorderTexture(xVermin.Config.border.default)
 				v:SetBeautyBorderColor(1, 1, 1, 1)
+			end
+
+			if itemLevel then
+				if not v.ItemLevelText then
+					v.ItemLevelText = v:CreateFontString(nil, 'ARTWORK')
+					v.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					v.ItemLevelText:SetShadowOffset(0, 0)
+					v.ItemLevelText:SetPoint('BOTTOMRIGHT', v, 'BOTTOMRIGHT', -2, 2)
+					v.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+				v.ItemLevelText:SetText(itemLevel)
 			end
 		else
 			v:SetBeautyBorderTexture(xVermin.Config.border.default)
@@ -48,15 +62,15 @@ local function BorderItemInspectSlots(counter)
 end
 
 local InspectFrameHooked = false
-local addonLoadedFrame = CreateFrame("Frame")
-addonLoadedFrame:RegisterEvent("ADDON_LOADED")
+local addonLoadedFrame = CreateFrame('Frame')
+addonLoadedFrame:RegisterEvent('ADDON_LOADED')
 addonLoadedFrame:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event, arg1, ...)
-		if not InspectFrameHooked and arg1 == "Blizzard_InspectUI" then
+		if not InspectFrameHooked and arg1 == 'Blizzard_InspectUI' then
 			hooksecurefunc(
 				InspectFrame,
-				"Show",
+				'Show',
 				function()
 					local counter = 0
 					C_Timer.After(
@@ -72,23 +86,29 @@ addonLoadedFrame:SetScript(
 	end
 )
 
-local btn = CreateFrame("BUTTON", "MyBindingInspectTargetButton")
-SetBindingClick("I", btn:GetName())
-btn:SetScript(
-	"OnClick",
-	function(self, button, down)
-		-- 1 = Inspect, 28 yards
-		-- 2 = Trade, 11.11 yards
-		-- 3 = Duel, 9.9 yards
-		-- 4 = Follow, 28 yards
-		if (TargetFrame:IsShown()) then
-			if (CheckInteractDistance("target", 1)) then
-				InspectUnit("target")
-			else
-				print("Can't inspect. Target too far.")
-			end
-		else
-			print("No target")
-		end
-	end
-)
+-- local btn = CreateFrame("BUTTON", "MyBindingInspectTargetButton")
+-- btn:SetSize(10,10)
+-- btn:CreateBeautyBorder(4)
+-- SetBindingClick("I", "MyBindingInspectTargetButton")
+-- btn:SetScript(
+-- 	"OnClick",
+-- 	function(self, button, down)
+-- 		-- 1 = Inspect, 28 yards
+-- 		-- 2 = Trade, 11.11 yards
+-- 		-- 3 = Duel, 9.9 yards
+-- 		-- 4 = Follow, 28 yards
+-- 		if (TargetFrame:IsShown()) then
+-- 			if (CheckInteractDistance("target", 1)) then
+-- 				if (InspectFrame and InspectFrame:IsShown()) then
+-- 					InspectFrame:Hide()
+-- 				else
+-- 					InspectUnit("target")
+-- 				end
+-- 			else
+-- 				print("Can't inspect. Target too far.")
+-- 			end
+-- 		else
+-- 			print("No target")
+-- 		end
+-- 	end
+-- )

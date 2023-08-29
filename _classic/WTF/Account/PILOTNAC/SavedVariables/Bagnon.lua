@@ -4,21 +4,26 @@ Bagnon_Sets = {
 	},
 	["leatherColor"] = {
 	},
+	["fridgeColor"] = {
+	},
+	["displayCraft"] = false,
 	["engineerColor"] = {
+	},
+	["inscribeColor"] = {
 	},
 	["herbColor"] = {
 	},
+	["glowUnusable"] = true,
 	["displayMail"] = false,
-	["inscribeColor"] = {
-	},
+	["displayBank"] = false,
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
-	["displayBank"] = false,
+	["glowQuest"] = true,
+	["displayAuction"] = false,
 	["quiverColor"] = {
 	},
-	["fridgeColor"] = {
-	},
+	["glowQuality"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
@@ -27,8 +32,7 @@ Bagnon_Sets = {
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
-	["keyColor"] = {
-	},
+	["glowNew"] = false,
 	["normalColor"] = {
 	},
 	["profiles"] = {
@@ -36,10 +40,9 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "9.0.4",
-	["displayCraft"] = false,
-	["displayAuction"] = false,
-	["colorSlots"] = true,
+	["version"] = "9.1.4",
+	["keyColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -66,24 +69,30 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMRIGHT",
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
-				[-2] = true,
 			},
 			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.791406214237213, -- [4]
 			},
 			["hiddenRules"] = {
 			},
-			["options"] = false,
-			["y"] = 99.9999771118164,
-			["x"] = -50,
-			["sort"] = true,
-			["borderColor"] = {
-			},
-			["broker"] = false,
+			["y"] = -485.6473388671875,
+			["x"] = -214.66064453125,
 			["search"] = false,
-			["bagToggle"] = true,
-			["money"] = true,
+			["borderColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["sort"] = true,
+			["options"] = false,
+			["bagToggle"] = false,
+			["broker"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -174,21 +183,38 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["options"] = false,
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
+			["sort"] = true,
+			["spacing"] = 2,
+			["bagToggle"] = false,
+			["columns"] = 18,
+			["alpha"] = 1,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["bagBreak"] = false,
+			["x"] = -665.8687744140625,
+			["search"] = false,
+			["broker"] = false,
+			["y"] = -315.9873046875,
 			["hiddenRules"] = {
 			},
-			["y"] = -317.181884765625,
-			["x"] = 95,
-			["search"] = false,
-			["borderColor"] = {
-			},
-			["point"] = "TOPLEFT",
-			["broker"] = false,
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
+	["colorSlots"] = false,
+	["glowPoor"] = false,
 	["displayScrapping"] = false,
 }

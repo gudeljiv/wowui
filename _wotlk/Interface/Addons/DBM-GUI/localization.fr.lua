@@ -84,7 +84,6 @@ L.Editbox_WindowWidth		= "Largeur de la fenêtre"
 L.Editbox_WindowHeight		= "Hauteur de la fenêtre"
 
 L.UIGroupingOptions			= "Options d'interface partagées (requiet de recharger l'interface pour tout module qui serait déjà chargé)"
-L.GroupOptionsBySpell		= "Options de modules regroupées par capacité (pour les modules compatibles)"
 L.GroupOptionsExcludeIcon	= "Exclure l'option \"Définir l'icône sur\" du regroupement par capacité (elles seront regroupées dans la catégorie \"Icônes\" comme avant)"
 L.AutoExpandSpellGroups		= "Déplier automatiquement les options liées à la même capacité"
 --L.ShowSpellDescWhenExpanded	= "Continue showing spell description when groups are expanded"--Might not be used
@@ -226,7 +225,6 @@ L.WorldBuffAlert			= "Afficher une alerte et un décompte lorsqu'un évênement 
 
 L.Area_BugAlerts			= "Options des rapports de bugs"
 L.BadTimerAlert				= "Afficher un message quand DBM détecte un décompte erroné avec au moins 1 seconde de différence"
-L.BadIDAlert				= "Afficher un message quand DBM détecte une capacité ou entrée de journal erronée"
 
 -- Panel: Spoken Alerts Frame
 L.Panel_SpokenAlerts		= "Alertes vocales"

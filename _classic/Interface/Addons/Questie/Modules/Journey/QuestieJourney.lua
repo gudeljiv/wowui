@@ -13,6 +13,8 @@ local QuestieOptions = QuestieLoader:ImportModule("QuestieOptions")
 local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+---@type QuestieCombatQueue
+local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
 
 -- Useful doc about the AceGUI TreeGroup: https://github.com/hurricup/WoW-Ace3/blob/master/AceGUI-3.0/widgets/AceGUIContainer-TreeGroup.lua
 
@@ -34,29 +36,36 @@ local notesPopupWinIsOpen = false
 QuestieJourney.questCategoryKeys = {
     EASTERN_KINGDOMS = 1,
     KALIMDOR = 2,
-    DUNGEONS = 3,
-    BATTLEGROUNDS = 4,
-    CLASS = 5,
-    PROFESSIONS = 6,
-    EVENTS = 7,
+    OUTLAND = 3,
+    NORTHREND = 4,
+    DUNGEONS = 5,
+    BATTLEGROUNDS = 6,
+    CLASS = 7,
+    PROFESSIONS = 8,
+    EVENTS = 9,
 }
+
 
 function QuestieJourney:Initialize()
     local continents = {}
     for id, name in pairs(l10n.continentLookup) do
-        continents[id] = l10n(name)
+        if not (name == "Outland" and Questie.IsClassic) and not (name == "Northrend" and (Questie.IsClassic or Questie.IsTBC)) then
+            continents[id] = l10n(name)
+        end
     end
+    coroutine.yield()
     continents[QuestieJourney.questCategoryKeys.CLASS] = QuestiePlayer:GetLocalizedClassName()
 
+    coroutine.yield()
     self.continents = continents
-    self.zoneMap = ZoneDB:GetZonesWithQuests()
+    self.zoneMap = ZoneDB:GetZonesWithQuests(true)
     self.zones = ZoneDB:GetRelevantZones()
-
+    coroutine.yield()
     self:BuildMainFrame()
 end
 
 function QuestieJourney:BuildMainFrame()
-    if (QuestieJourneyFrame == nil) then
+    if not QuestieJourneyFrame then
         local journeyFrame = AceGUI:Create("Frame")
         journeyFrame:SetCallback("OnClose", function()
             isWindowShown = false
@@ -68,7 +77,7 @@ function QuestieJourney:BuildMainFrame()
         end)
         journeyFrame:SetTitle(l10n("%s's Journey", UnitName("player")))
         journeyFrame:SetLayout("Fill")
-        journeyFrame.frame:SetMinResize(550, 400)
+        QuestieCompat.SetResizeBounds(journeyFrame.frame, 550, 400)
 
         local tabGroup = AceGUI:Create("TabGroup")
         tabGroup:SetLayout("Flow")
@@ -97,8 +106,10 @@ function QuestieJourney:BuildMainFrame()
         settingsButton:SetPoint("TOPRIGHT", journeyFrame.frame, "TOPRIGHT", -50, -13)
         settingsButton:SetText(l10n('Questie Options'))
         settingsButton:SetCallback("OnClick", function()
-            QuestieJourney:ToggleJourneyWindow()
-            QuestieOptions:OpenConfigWindow()
+            QuestieCombatQueue:Queue(function()
+                QuestieJourney:ToggleJourneyWindow()
+                QuestieOptions:OpenConfigWindow()
+            end)
         end)
         journeyFrame:AddChild(settingsButton)
 
@@ -113,19 +124,24 @@ function QuestieJourney:IsShown()
 end
 
 function QuestieJourney:ToggleJourneyWindow()
-    if (not isWindowShown) then
-        PlaySound(882)
+    -- There are ways to toggle this function before the frame has been created
+    if QuestieJourneyFrame then
+        if (not isWindowShown) then
+            PlaySound(882)
 
-        local treeGroup = _QuestieJourney:HandleTabChange(_QuestieJourney.containerCache, _QuestieJourney.lastOpenWindow)
-        if treeGroup then
-            _QuestieJourney.treeCache = treeGroup
+            local treeGroup = _QuestieJourney:HandleTabChange(_QuestieJourney.containerCache, _QuestieJourney.lastOpenWindow)
+            if treeGroup then
+                _QuestieJourney.treeCache = treeGroup
+            end
+
+            QuestieJourneyFrame:Show()
+            isWindowShown = true
+        else
+            QuestieJourneyFrame:Hide()
+            isWindowShown = false
         end
-
-        QuestieJourneyFrame:Show()
-        isWindowShown = true
     else
-        QuestieJourneyFrame:Hide()
-        isWindowShown = false
+        Questie:Error("QuestieJourney:ToggleJourneyWindow() called before QuestieJourneyFrame was initialized!")
     end
 end
 
@@ -148,7 +164,7 @@ function QuestieJourney:AcceptQuest(questId)
         Event = "Quest",
         SubType = "Accept",
         Quest = questId,
-        Level = QuestiePlayer:GetPlayerLevel(),
+        Level = QuestiePlayer.GetPlayerLevel(),
         Timestamp = time()
     }
 
@@ -177,7 +193,7 @@ function QuestieJourney:AbandonQuest(questId)
             Event = "Quest",
             SubType = "Abandon",
             Quest = questId,
-            Level = QuestiePlayer:GetPlayerLevel(),
+            Level = QuestiePlayer.GetPlayerLevel(),
             Timestamp = time()
         }
 
@@ -192,7 +208,7 @@ function QuestieJourney:CompleteQuest(questId)
         Event = "Quest",
         SubType = "Complete",
         Quest = questId,
-        Level = QuestiePlayer:GetPlayerLevel(),
+        Level = QuestiePlayer.GetPlayerLevel(),
         Timestamp = time()
     }
 

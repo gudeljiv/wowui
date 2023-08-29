@@ -32,12 +32,83 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 
 	local Encounters = {}
 
+	local function scan()
+		if not EJ_GetNumTiers then return end
+
+		for t = 1, EJ_GetNumTiers() do
+			EJ_SelectTier(t)
+			local tierName = EJ_GetTierInfo(t)
+			for raid = 0, 1 do
+				local index = 1
+				
+				repeat
+					local instanceID, instanceName = EJ_GetInstanceByIndex(index, raid == 1)
+					if not instanceID then break end
+					
+					EJ_SelectInstance(instanceID)
+					
+					local eindex = 1
+					
+					repeat
+						local name, description, encounterID = EJ_GetEncounterInfoByIndex(eindex)
+						if not name then break end
+
+						local _, _, _, _, bossImage = EJ_GetCreatureInfo(1, encounterID)
+						
+						tinsert(Encounters, {tier = tierName, instance = instanceName, name = name, index = eindex, tex = bossImage})
+
+						eindex = eindex + 1
+					until not name
+					
+					index = index + 1
+				until not instanceID
+			end
+		end
+	end
+
+	local function doScan()
+		if EncounterJournal then
+			
+			local oldTier = EJ_GetCurrentTier()
+			local oldInstance = EncounterJournal.instanceID
+			local oldEncounter = EncounterJournal.encounterID
+			local oldDifficulty = EJ_GetDifficulty()
+			
+			EncounterJournal:SetScript("OnEvent", nil)
+			
+			scan()
+			
+			EJ_SelectTier(oldTier)
+			if oldInstance then
+				EJ_SelectInstance(oldInstance)
+			end
+			if oldEncounter then
+				EJ_SelectEncounter(oldEncounter)
+			end
+			if oldDifficulty then
+				EJ_SetDifficulty(oldDifficulty)
+			end
+			
+			EncounterJournal:SetScript("OnEvent", EncounterJournal_OnEvent)
+		else
+			scan()
+		end
+
+		doScan = nil
+		scan = nil
+	end
+
+
 	local Module = SUG:NewModule("bossfights", SUG:GetModule("default"))
 	Module.noMin = true
 	Module.showColorHelp = false
 	Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
 	
 	function Module:Table_Get()
+		if doScan then
+			doScan()
+		end
+
 		return Encounters
 	end
 
@@ -165,12 +236,6 @@ ConditionCategory:RegisterCondition(1,	 "BIGWIGS_TIMER", {
 		check:SetTexts(L["MODTIMER_PATTERN"], L["MODTIMER_PATTERN_DESC"])
 	end,
 	formatter = TMW.C.Formatter.TIME_0ABSENT,
-	icon = function()
-		if not BigWigsLoader then
-			return "Interface\\Icons\\INV_Misc_QuestionMark"
-		end
-		return "Interface\\AddOns\\BigWigs\\Media\\Textures\\icons\\core-disabled"
-	end,
 
 	tcoords = CNDT.COMMON.standardtcoords,
 	disabled = function()
@@ -271,12 +336,6 @@ ConditionCategory:RegisterCondition(2,	 "BIGWIGS_ENGAGED", {
 		editbox:SetTexts(L["ENCOUNTERTOCHECK"], L["ENCOUNTERTOCHECK_DESC_BIGWIGS"])
 	end,
 	useSUG = "bossfights",
-	icon = function()
-		if not BigWigsLoader then
-			return "Interface\\Icons\\INV_Misc_QuestionMark"
-		end
-		return "Interface\\AddOns\\BigWigs\\Media\\Textures\\icons\\core-enabled"
-	end,
 
 	tcoords = CNDT.COMMON.standardtcoords,
 	disabled = function()
@@ -371,12 +430,6 @@ ConditionCategory:RegisterCondition(10,	 "DBM_TIMER", {
 		check:SetTexts(L["MODTIMER_PATTERN"], L["MODTIMER_PATTERN_DESC"])
 	end,
 	formatter = TMW.C.Formatter.TIME_0ABSENT,
-	icon = function()
-		if not DBM then
-			return "Interface\\Icons\\INV_Misc_QuestionMark"
-		end
-		return "Interface\\AddOns\\DBM-Core\\textures\\GuardTower"
-	end,
 
 	tcoords = CNDT.COMMON.standardtcoords,
 	disabled = function()
@@ -475,12 +528,6 @@ ConditionCategory:RegisterCondition(11,	 "DBM_ENGAGED", {
 		editbox:SetTexts(L["ENCOUNTERTOCHECK"], L["ENCOUNTERTOCHECK_DESC_DBM"])
 	end,
 	useSUG = "bossfights",
-	icon = function()
-		if not DBM then
-			return "Interface\\Icons\\INV_Misc_QuestionMark"
-		end
-		return "Interface\\AddOns\\DBM-Core\\textures\\OrcTower"
-	end,
 
 	tcoords = CNDT.COMMON.standardtcoords,
 	disabled = function()

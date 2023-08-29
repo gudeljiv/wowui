@@ -1,6 +1,10 @@
+@Tercioo:
+- Framework updates.
+
 @cont1nuity:
-- Fixing and error on quest recognition rework.
-- Fixing and error for hiding blizzard healthbars.
-- Fixing some errors about unit flag changes when units are entering/leaving combat or change being attackable or not.
-- Fixing some default values for 'hide blizzard healthbars' on the different WoW versions.
+- Fixing profile imports not adding renamed NPCs properly.
+- NPC Colors tab can now be searched by npcID as well.
+- Adding option for 'Lock to Screen (Bottom Side)'.
+- Fixing AugVoker Ebon Might and Monk Stagger bar scaling being off.
+- CreateIconGlow' won't use the show-animation by default, fourth parameter enables it.
 

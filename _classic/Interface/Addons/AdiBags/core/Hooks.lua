@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,16 +18,20 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
 --<GLOBALS
 local _G = _G
-local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER
+local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Backpack ) or 0
+local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
 local ContainerFrame_GenerateFrame = _G.ContainerFrame_GenerateFrame
 local ContainerFrame_GetOpenFrame = _G.ContainerFrame_GetOpenFrame
-local GetContainerNumSlots = _G.GetContainerNumSlots
+local GetContainerNumSlots = C_Container and _G.C_Container.GetContainerNumSlots or _G.GetContainerNumSlots
 local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
+local NUM_REAGENTBAG_SLOTS = _G.NUM_REAGENTBAG_SLOTS
+local NUM_TOTAL_EQUIPPED_BAG_SLOTS = _G.NUM_TOTAL_EQUIPPED_BAG_SLOTS
 local NUM_BANKBAGSLOTS = _G.NUM_BANKBAGSLOTS
 local NUM_CONTAINER_FRAMES = _G.NUM_CONTAINER_FRAMES
 local pairs = _G.pairs
@@ -42,7 +46,7 @@ addon.hookedBags = hookedBags
 local containersFrames = {}
 do
 	for i = 1, NUM_CONTAINER_FRAMES, 1 do
-		containersFrames[i] = _G["ContainerFrame" .. i]
+		containersFrames[i] = _G["ContainerFrame"..i]
 	end
 end
 
@@ -60,7 +64,11 @@ do
 
 	function IterateBuiltInContainers()
 		if addon:GetInteractingWindow() == "BANKFRAME" then
-			return iter, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS, -1
+			if addon.isRetail then
+				return iter, NUM_TOTAL_EQUIPPED_BAG_SLOTS+1 + NUM_BANKBAGSLOTS, -1
+			else
+				return iter, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS, -1
+			end
 		else
 			return iter, NUM_BAG_SLOTS, -1
 		end
@@ -76,7 +84,7 @@ function addon:GetContainerFrame(id, spawn)
 	if spawn then
 		local size = GetContainerNumSlots(id)
 		if size > 0 then
-			local frame = ContainerFrame_GetOpenFrame()
+			local frame = ContainerFrame_GetOpenFrame(id)
 			ContainerFrame_GenerateFrame(frame, size, id)
 		end
 	end
@@ -106,9 +114,7 @@ function addon:ToggleAllBags()
 end
 
 function addon:OpenAllBags(requesterFrame)
-	if requesterFrame then
-		return
-	end -- UpdateInteractingWindow takes care of these cases
+	if requesterFrame then return end -- UpdateInteractingWindow takes care of these cases
 	for _, bag in self:IterateBags() do
 		bag:Open()
 	end
@@ -118,9 +124,7 @@ function addon:OpenAllBags(requesterFrame)
 end
 
 function addon:CloseAllBags(requesterFrame)
-	if requesterFrame then
-		return
-	end -- UpdateInteractingWindow takes care of these cases
+	if requesterFrame then return end -- UpdateInteractingWindow takes care of these cases
 	local found = false
 	for i, bag in self:IterateBags() do
 		if bag:Close() then
@@ -175,7 +179,7 @@ function addon:OpenBackpack()
 		ourBackpack:Open()
 	else
 		local frame = self:GetContainerFrame(BACKPACK_CONTAINER, true)
-		self.backpackWasOpen = not (not frame)
+		self.backpackWasOpen = not not frame
 	end
 	return self.backpackWasOpen
 end
@@ -209,6 +213,5 @@ function addon:ToggleBackpack()
 end
 
 function addon:CloseSpecialWindows()
-	local found = self.hooks.CloseSpecialWindows()
-	return self:CloseAllBags() or found
+	return self:CloseAllBags()
 end

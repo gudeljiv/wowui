@@ -2,6 +2,145 @@
 
 This mod is distributed under Version 2 of the GPL.  A copy of the GPL is included in this zip file with links to non-english translations.
 
+## v3.1.2 (Apr. 05, 2023)
+
+- fix lua errors
+- update translations
+- Add missing PvP items
+- Update ClassFilter
+- Update loottables
+
+## v3.1.1 (Feb. 04, 2023)
+
+- fix lua errors
+- update transaltions
+- #324 Fixes: Favorite list Import/Export issue, Empty item notes removing
+- #312 Fixes error when trying to retrieve favourite list name from a global list
+- #310 Fix missing selection highlight for Select Button
+- #308 (Updated for v3.1.0) Add Day of the Dead and Pilgrim's Bounty, Coren Wrath
+- #306 add more titan rune loot
+- #305 Add a few missing items
+- #304 Update layout for titan rune items
+
+## v3.1.0 (Jan. 18, 2023)
+
+- add fixes for new patch from cwilson21
+- update korean transaltions #272
+
+## v3.0.7 (Oct, 13, 2022)
+
+- add mounts into raid AC tables
+- add Missing Venomhide Ravasaur and Sea Turtle in Wrath mounts #262
+- add missing spellthreads #268
+- add missing green, red, meta, and Perfect gems #265
+- fix Naxx now shows wrath version not classic
+
+## v3.0.6 (Oct, 08, 2022)
+
+- fix classic Naxxramas opens when in Wotlk #260
+- add missing orange gems pr #259
+
+## v3.0.5 (Oct, 04, 2022)
+
+- add missing prismatic gems #257
+- add missing Pattern: Dragonscale Ammo Pouch #255
+- add Pattern: Nerubian Reinforced Quiver #254
+- add Deadman's Hand for Arcanist Doan (bcc)
+- add Burning Skull Pendant into Gundrak normal trash
+- fix Gundrak level range 71, 76, 78 #252
+- Include InstanceIDs in Wrath DungeonsAndRaids #256
+
+## v3.0.4 (Oct, 01, 2022)
+
+- fix lua error with ruRU clients
+- add Revered Helm Enchants from Factions #247
+- add missing red AP gems #249
+
+## v3.0.3 (Sep, 29, 2022)
+
+- add content phase data for wrath (must be enabled in options)
+- add missing spell power food into cooking #242
+- add Wintergrasp items
+- add missing Armor/Weapon Velums #243
+- update Profession ranks #236
+- update Children's Week for Wrath PR #238
+- update Ahune for Wrath PR #238
+- update Headless Horseman for Wrath PR #238
+- update Apothecary Hummel for Wrath PR #238
+- fix Knights of the Ebon Blade Honored/Revered switched #240
+
+## v3.0.2 (Sep, 12, 2022)
+
+- add Wrath Scourge Invasion into collections
+- add Scourge Bosses pr #231
+- add missing S4 backs and trinkets #232
+- fix lua error with russian clients
+
+## v3.0.1 (Sep, 11, 2022)
+
+- rework pet and mount display
+- tooltip extras can now shown in every tooltip
+- add collected indicator for pets/mounts
+- add some emblem prices
+- add companions into collections
+- fix item name and description fields are to short
+- #229 fix missing classic dungeon levels for wrath/bcc
+
+## v3.0.0 (Sep, 09, 2022)
+
+- move to a multiple game version build
+- move Mining and Herbalism into Gathering Professions
+- add Wrath classic support
+- add support for switching game version and stay at the same entry if exist
+- add Wrath dungeons and raids
+- add Wrath T Sets
+- add Wrath factions
+- add Wrath Collection items
+- add Wrath profession data
+- add Inscription
+- add Fishing profession
+- add PvP Arena Season 5
+- add Atlas_WrathoftheLichKing support
+- add option to show ItemID and ItemLevel in tooltips
+- add Vendor scan for every currency registered by AtlasLoot
+- add Heirlooms into Collections
+- add Emblem and Dalaran Vendors
+- fix filter button for crafting items
+- fix game version detection for wrath
+- fix skill rank get cutted on profession entrys
+- #222 add raw gems into jewelcrafting
+
+## v2.4.4-bcc (May, 13, 2022)
+
+- add Vendor prices into tooltips
+
+## v2.4.3 (May, 09, 2022)
+
+- Update .toc version
+- (bcc) Remove vendor items from sunwell loot tables and add them as tokens
+- (bcc) Add sunmote vendor
+- (bcc) Add sunwell sunmote prices to boss drops (PR #204)
+- (bcc) Remove Gladiators Maul from S3 (#205)
+- (bcc) Add Vendor scan that updates prices after visiting a vendor
+
+## v2.4.2 (Apr, 13, 2022)
+
+- (bcc) Update vendor prices
+- (bcc) #203 add Fist weapons for Hunter
+- (bcc) Update BoJ Vendors
+
+## v2.4.1-bcc (Jan, 19, 2022)
+
+- (bcc) update .toc version
+- (bcc) update vendor prices
+- (bcc) remove Heavy Netherweave Net
+
+## v2.4.0 (Nov, 10, 2021)
+
+- update classic .toc version
+- (classic) fix lua error on start
+- (bcc) update vendor prices
+
 ## v2.3.4-bcc (Sep, 30, 2021)
 
 - restore classic version of midsummer festival

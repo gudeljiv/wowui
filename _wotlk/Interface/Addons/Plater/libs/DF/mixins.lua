@@ -166,7 +166,7 @@ detailsFramework.FrameMixin = {
 
 	SetBackdropBorderColor = function(self, ...)
 		self = getFrame(self)
-		getFrame(self):SetBackdropBorderColor(...)
+		self:SetBackdropBorderColor(...)
 	end,
 }
 
@@ -267,7 +267,13 @@ detailsFramework.SetPointMixin = {
 	end,
 }
 
---mixin for options functions
+---mixin for options
+---@class df_optionsmixin
+---@field options table
+---@field SetOption fun(self, optionName: string, optionValue: any)
+---@field GetOption fun(self, optionName: string):any
+---@field GetAllOptions fun(self):table
+---@field BuildOptionsTable fun(self, defaultOptions: table, userOptions: table)
 detailsFramework.OptionsFunctions = {
 	SetOption = function(self, optionName, optionValue)
 		if (self.options) then
@@ -374,14 +380,14 @@ detailsFramework.ScriptHookMixin = {
 				local isRemoval = false
 				for i = #self.HookList[hookType], 1, -1 do
 					if (self.HookList[hookType][i] == func) then
-						tremove(self.HookList[hookType], i)
+						table.remove(self.HookList[hookType], i)
 						isRemoval = true
 						break
 					end
 				end
 
 				if (not isRemoval) then
-					tinsert(self.HookList[hookType], func)
+					table.insert(self.HookList[hookType], func)
 				end
 			else
 				if (detailsFramework.debug) then
@@ -417,7 +423,7 @@ detailsFramework.ScriptHookMixin = {
 
 ---mixin to use with DetailsFramework:Mixin(table, detailsFramework.SortFunctions)
 ---add methods to be used on scrollframes
----@class DetailsFramework.ScrollBoxFunctions
+---@class df_scrollboxmixin
 detailsFramework.ScrollBoxFunctions = {
 	---refresh the scrollbox by resetting all lines created with :CreateLine(), then calling the refresh_func which was set at :CreateScrollBox()
 	---@param self table
@@ -426,7 +432,9 @@ detailsFramework.ScrollBoxFunctions = {
 		--hide all frames and tag as not in use
 		self._LinesInUse = 0
 		for index, frame in ipairs(self.Frames) do
-			frame:Hide()
+			if (not self.DontHideChildrenOnPreRefresh) then
+				frame:Hide()
+			end
 			frame._InUse = nil
 		end
 
@@ -684,6 +692,9 @@ detailsFramework.ScrollBoxFunctions = {
 	end,
 }
 
+--back compatibility, can be removed in the future (28/04/2023)
+---@class DetailsFramework.ScrollBoxFunctions : df_scrollboxmixin
+
 local SortMember = ""
 local SortByMember = function(t1, t2)
 	return t1[SortMember] > t2[SortMember]
@@ -710,6 +721,24 @@ detailsFramework.SortFunctions = {
 		end
 	end
 }
+
+---@class df_data : table
+---@field _dataInfo {data: table, dataCurrentIndex: number, callbacks: function[]}
+---@field callbacks table<function, any[]>
+---@field dataCurrentIndex number
+---@field DataConstructor fun(self: df_data)
+---@field AddDataChangeCallback fun(self: df_data, callback: function, ...: any)
+---@field RemoveDataChangeCallback fun(self: df_data, callback: function)
+---@field GetData fun(self: df_data)
+---@field GetDataSize fun(self: df_data) : number
+---@field GetDataFirstValue fun(self: df_data) : any
+---@field GetDataLastValue fun(self: df_data) : any
+---@field GetDataMinMaxValues fun(self: df_data) : number, number
+---@field GetDataMinMaxValueFromSubTable fun(self: df_data, key: string) : number, number when data uses sub tables, get the min max values from a specific index or key, if the value stored is number, return the min and max values
+---@field SetData fun(self: df_data, data: table, anyValue: any)
+---@field SetDataRaw fun(self: df_data, data: table) set the data without triggering callback
+---@field GetDataNextValue fun(self: df_data) : any
+---@field ResetDataIndex fun(self: df_data)
 
 ---mixin to use with DetailsFramework:Mixin(table, detailsFramework.DataMixin)
 ---add 'data' to a table, this table can be used to store data for the object
@@ -744,17 +773,27 @@ detailsFramework.DataMixin = {
 		allCallbacks[func] = nil
 	end,
 
+	---set the data without callback
+	---@param self table
+	---@param data table
+	SetDataRaw = function(self, data)
+		assert(type(data) == "table", "invalid table for SetData.")
+		self._dataInfo.data = data
+		self:ResetDataIndex()
+	end,
+
 	---set the data table
 	---@param self table
 	---@param data table
-	SetData = function(self, data)
+	---@param anyValue any @any value to pass to the callback functions before the payload is added
+	SetData = function(self, data, anyValue)
 		assert(type(data) == "table", "invalid table for SetData.")
 		self._dataInfo.data = data
 		self:ResetDataIndex()
 
 		local allCallbacks = self._dataInfo.callbacks
 		for	func, payload in pairs(allCallbacks) do
-			xpcall(func, geterrorhandler(), data, unpack(payload))
+			xpcall(func, geterrorhandler(), data, anyValue, unpack(payload))
 		end
 	end,
 
@@ -775,6 +814,7 @@ detailsFramework.DataMixin = {
 	end,
 
 	---reset the data index, making GetDataNextValue() return the first value again
+	---@param self table
 	ResetDataIndex = function(self)
 		self._dataInfo.dataCurrentIndex = 1
 	end,
@@ -802,6 +842,7 @@ detailsFramework.DataMixin = {
 	end,
 
 	---get the min and max values from the data table, if the value stored is number, return the min and max values
+	---could be used together with SetMinMaxValues from the df_value mixin
 	---@param self table
 	---@return number, number
 	GetDataMinMaxValues = function(self)
@@ -845,45 +886,296 @@ detailsFramework.DataMixin = {
 	end,
 }
 
+---@class df_value : table
+---@field minValue number
+---@field maxValue number
+---@field ValueConstructor fun(self: df_value)
+---@field SetMinMaxValues fun(self: df_value, minValue: number, maxValue: number)
+---@field GetMinMaxValues fun(self: df_value) : number, number
+---@field ResetMinMaxValues fun(self: df_value)
+---@field GetMinValue fun(self: df_value) : number
+---@field GetMaxValue fun(self: df_value) : number
+---@field SetMinValue fun(self: df_value, minValue: number)
+---@field SetMinValueIfLower fun(self: df_value, ...: number)
+---@field SetMaxValue fun(self: df_value, maxValue: number)
+---@field SetMaxValueIfBigger fun(self: df_value, ...: number)
+
 ---mixin to use with DetailsFramework:Mixin(table, detailsFramework.ValueMixin)
 ---add support to min value and max value into a table or object
 ---@class DetailsFramework.ValueMixin
 detailsFramework.ValueMixin = {
+	---initialize the value table
+	---@param self table
 	ValueConstructor = function(self)
-		self.minValue = 0
-		self.maxValue = 1
+		self:ResetMinMaxValues()
 	end,
 
+	---set the min and max values
+	---@param self table
+	---@param minValue number
+	---@param maxValue number
 	SetMinMaxValues = function(self, minValue, maxValue)
 		self.minValue = minValue
 		self.maxValue = maxValue
 	end,
 
+	---get the min and max values
+	---@param self table
+	---@return number, number
 	GetMinMaxValues = function(self)
 		return self.minValue, self.maxValue
 	end,
 
+	---reset the min and max values
+	---@param self table
+	ResetMinMaxValues = function(self)
+		self.minValue = 0
+		self.maxValue = 1
+	end,
+
+	---get the min value
+	---@param self table
+	---@return number
 	GetMinValue = function(self)
 		return self.minValue
 	end,
 
+	---get the max value
+	---@param self table
+	---@return number
 	GetMaxValue = function(self)
 		return self.maxValue
 	end,
 
+	---set the min value
+	---@param self table
+	---@param minValue number
 	SetMinValue = function(self, minValue)
 		self.minValue = minValue
 	end,
 
+	---set the min value if one of the values passed is lower than the current min value
+	---@param self table
+	---@param ... number
 	SetMinValueIfLower = function(self, ...)
-		self.minValue = min(self.minValue, ...)
+		self.minValue = math.min(self.minValue, ...)
 	end,
 
+	---set the max value
+	---@param self table
+	---@param maxValue number
 	SetMaxValue = function(self, maxValue)
 		self.maxValue = maxValue
 	end,
 
+	---set the max value if one of the values passed is bigger than the current max value
+	---@param self table
+	---@param ... number
 	SetMaxValueIfBigger = function(self, ...)
-		self.maxValue = max(self.maxValue, ...)
+		self.maxValue = math.max(self.maxValue, ...)
+	end,
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--statusbar mixin
+
+--[=[
+	collection of functions to embed into a statusbar
+	the statusBar need to have a member called 'barTexture' for the texture set on SetStatusBarTexture
+	statusBar:GetTexture()
+	statusBar:SetTexture(texture)
+	statusBar:SetColor (unparsed color)
+	statusBar:GetColor()
+	statusBar:
+	statusBar:
+--]=]
+
+detailsFramework.StatusBarFunctions = {
+	SetTexture = function(self, texture, isTemporary)
+		self.barTexture:SetTexture(texture)
+		if (not isTemporary) then
+			self.barTexture.currentTexture = texture
+		end
+	end,
+
+	ResetTexture = function(self)
+		self.barTexture:SetTexture(self.barTexture.currentTexture)
+	end,
+
+	GetTexture = function(self)
+		return self.barTexture:GetTexture()
+	end,
+
+	SetAtlas = function(self, atlasName)
+		self.barTexture:SetAtlas(atlasName)
+	end,
+
+	GetAtlas = function(self)
+		self.barTexture:GetAtlas()
+	end,
+
+	SetTexCoord = function(self, ...)
+		return self.barTexture:SetTexCoord(...)
+	end,
+
+	GetTexCoord = function(self)
+		return self.barTexture:GetTexCoord()
+	end,
+
+	SetColor = function(self, r, g, b, a)
+		r, g, b, a = detailsFramework:ParseColors(r, g, b, a)
+		self:SetStatusBarColor(r, g, b, a)
+	end,
+
+	GetColor = function(self)
+		return self:GetStatusBarColor()
+	end,
+
+	SetMaskTexture = function(self, ...)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		self.barTextureMask:SetTexture(...)
+	end,
+
+	GetMaskTexture = function(self)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		self.barTextureMask:GetTexture()
+	end,
+
+	--SetMaskTexCoord = function(self, ...) --MaskTexture doesn't not support texcoord
+	--	if (not self:HasTextureMask()) then
+	--		return
+	--	end
+	--	self.barTextureMask:SetTexCoord(...)
+	--end,
+
+	--GetMaskTexCoord = function(self, ...)
+	--	if (not self:HasTextureMask()) then
+	--		return
+	--	end
+	--	self.barTextureMask:GetTexCoord()
+	--end,
+
+	SetMaskAtlas = function(self, atlasName)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		self.barTextureMask:SetAtlas(atlasName)
+	end,
+
+	GetMaskAtlas = function(self)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		self.barTextureMask:GetAtlas()
+	end,
+
+	AddMaskTexture = function(self, object)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		if (object.GetObjectType and object:GetObjectType() == "Texture") then
+			object:AddMaskTexture(self.barTextureMask)
+		else
+			detailsFramework:Msg("Invalid 'Texture' to object:AddMaskTexture(Texture)", debugstack())
+		end
+	end,
+
+	CreateTextureMask = function(self)
+		local barTexture = self:GetStatusBarTexture() or self.barTexture
+		if (not barTexture) then
+			detailsFramework:Msg("Object doesn't not have a statubar texture, create one and object:SetStatusBarTexture(textureObject)", debugstack())
+			return
+		end
+
+		if (self.barTextureMask) then
+			return self.barTextureMask
+		end
+
+		--statusbar texture mask
+		self.barTextureMask = self:CreateMaskTexture(nil, "artwork")
+		self.barTextureMask:SetAllPoints()
+		self.barTextureMask:SetTexture([[Interface\CHATFRAME\CHATFRAMEBACKGROUND]])
+
+		--border texture
+		self.barBorderTextureForMask = self:CreateTexture(nil, "overlay", nil, 7)
+		self.barBorderTextureForMask:SetAllPoints()
+		--self.barBorderTextureForMask:SetPoint("topleft", self, "topleft", -1, 1)
+		--self.barBorderTextureForMask:SetPoint("bottomright", self, "bottomright", 1, -1)
+		self.barBorderTextureForMask:Hide()
+
+		barTexture:AddMaskTexture(self.barTextureMask)
+
+		return self.barTextureMask
+	end,
+
+	HasTextureMask = function(self)
+		if (not self.barTextureMask) then
+			detailsFramework:Msg("Object doesn't not have a texture mask, create one using object:CreateTextureMask()", debugstack())
+			return false
+		end
+		return true
+	end,
+
+	SetBorderTexture = function(self, texture)
+		if (not self:HasTextureMask()) then
+			return
+		end
+
+		texture = texture or ""
+
+		self.barBorderTextureForMask:SetTexture(texture)
+
+		if (texture == "") then
+			self.barBorderTextureForMask:Hide()
+		else
+			self.barBorderTextureForMask:Show()
+		end
+	end,
+
+	GetBorderTexture = function(self)
+		if (not self:HasTextureMask()) then
+			return
+		end
+		return self.barBorderTextureForMask:GetTexture()
+	end,
+
+	SetBorderColor = function(self, r, g, b, a)
+		r, g, b, a = detailsFramework:ParseColors(r, g, b, a)
+
+		if (self.barBorderTextureForMask and self.barBorderTextureForMask:IsShown()) then
+			self.barBorderTextureForMask:SetVertexColor(r, g, b, a)
+
+			--if there's a square border on the widget, remove its color
+			if (self.border and self.border.UpdateSizes and self.border.SetVertexColor) then
+				self.border:SetVertexColor(0, 0, 0, 0)
+			end
+
+			return
+		end
+
+		if (self.border and self.border.UpdateSizes and self.border.SetVertexColor) then
+			self.border:SetVertexColor(r, g, b, a)
+
+			--adjust the mask border texture ask well in case the user set the mask color texture before setting a texture on it
+			if (self.barBorderTextureForMask) then
+				self.barBorderTextureForMask:SetVertexColor(r, g, b, a)
+			end
+			return
+		end
+	end,
+
+	GetBorderColor = function(self)
+		if (self.barBorderTextureForMask and self.barBorderTextureForMask:IsShown()) then
+			return self.barBorderTextureForMask:GetVertexColor()
+		end
+
+		if (self.border and self.border.UpdateSizes and self.border.GetVertexColor) then
+			return self.border:GetVertexColor()
+		end
 	end,
 }

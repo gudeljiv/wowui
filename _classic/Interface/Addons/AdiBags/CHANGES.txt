@@ -1,15 +1,24 @@
-tag 464ca7c60a67f5eb12032a9acf4ea78d08c7a0d7 v1.9.20-classic
-Author:	Talyrius <contact@talyrius.net>
-Date:	Sun Jun 28 10:21:35 2020 -0700
+lightweight tag a4ba03dbff7baa51eefd6b8eb771c26d0b04a96b v1.10.6
+Author:	GitHub <noreply@github.com>
+Date:	Tue Jan 17 16:55:45 2023 -0800
 
-commit ae5316728d565b03325cfa48c3e1ee213aa37304
-Author: Janne Virtala <wibestn@gmail.com>
-Date:   Sun Jun 28 20:02:59 2020 +0300
+commit a4ba03dbff7baa51eefd6b8eb771c26d0b04a96b
+Author: Antonio Lobato <aj.lobato@gmail.com>
+Date:   Tue Jan 17 16:55:45 2023 -0800
 
-    Junk: Fixed support for Scrap.
+    Fixed a bug in Wrath to work around Blizzard not sending the BAG_UPDATE_DELAYED event randomly when taking item actions. (#911)
+
+commit 9a07002a42ae966158bcf5a559b79c12fac5bd09
+Author: Antonio Lobato <aj.lobato@gmail.com>
+Date:   Thu Jan 12 14:24:53 2023 -0800
+
+    Updated README with Discord information.
+
+commit bccb140b1b70c4b2ad8cb54fc1f295d04472d19c
+Author: Antonio Lobato <aj.lobato@gmail.com>
+Date:   Thu Jan 12 14:16:18 2023 -0800
+
+    Adding Annotations (#902)
     
-    Fixes #416.
-    
-    Co-authored-by: veyh <veyh@users.noreply.github.com>
-    Co-authored-by: Talyrius <contact@talyrius.net>
+    [Internal] Added type annotations for many parts of the codebase.
 

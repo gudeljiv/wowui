@@ -4,8 +4,6 @@ local pairs, next, type, ipairs, setmetatable, mfloor, mmax = pairs, next, type,
 local CreateFrame, GameFontNormalSmall = CreateFrame, GameFontNormalSmall
 local DBM = DBM
 
-local isModernAPI = DBM:GetTOC() > 30400
-
 local defaultFont, defaultFontSize = GameFontHighlightSmall:GetFont()
 
 local tabFrame1 = CreateFrame("ScrollFrame", "DBM_GUI_DropDown", _G["DBM_GUI_OptionsFrame"], "DBM_GUI_DropDownTemplate")
@@ -17,9 +15,7 @@ tabFrame1.backdropInfo = {
 	edgeSize	= 16,
 	insets		= { left = 3, right = 3, top = 5, bottom = 3 }
 }
-if not isModernAPI then
-	tabFrame1.backdropInfo.bgFile = nil
-end
+
 tabFrame1:Hide()
 tabFrame1:SetFrameStrata("TOOLTIP")
 tabFrame1.offset = 0
@@ -234,7 +230,7 @@ function DBM_GUI:CreateDropdown(title, values, vartype, var, callfunc, width, he
 	local dropdownButton = _G[dropdown:GetName() .. "Button"]
 	dropdownButton:SetScript("OnMouseDown", nil)
 	dropdownButton:SetScript("OnClick", function(self)
-		DBM:PlaySound(856)
+		DBM:PlaySoundFile(567407)
 		if tabFrame1:IsShown() then
 			tabFrame1:Hide()
 			tabFrame1.dropdown = nil

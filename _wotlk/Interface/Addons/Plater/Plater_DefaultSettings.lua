@@ -129,6 +129,7 @@ PLATER_DEFAULT_SETTINGS = {
 		--store audio cues for spells
 		--format: [SpellID] = filePath
 		cast_audiocues = {},
+		cast_audiocues_channel = "Master",
 
 		--store the cast colors customized by the user
 		cast_colors = {}, --[spellId] = {[1] = color, [2] = enabled, [3] = custom spell name}
@@ -637,13 +638,17 @@ PLATER_DEFAULT_SETTINGS = {
 		
 		show_healthbars_on_not_attackable = false,
 		show_healthbars_on_softinteract = true,
-		ignore_softinteract_objects = true,
+		ignore_softinteract_objects = false,
+		hide_name_on_game_objects = true,
+		show_softinteract_icons = true,
 		
 		enable_masque_support = false,
 		
 		use_name_translit = false,
 		
 		use_player_combat_state = false,
+		
+		opt_out_auto_accept_npc_colors = true,
 		
 		shadowMode = 1,
 		
@@ -942,6 +947,7 @@ PLATER_DEFAULT_SETTINGS = {
 		},
 		
 		bossmod_support_enabled = true,
+		bossmod_support_bars_enabled = false,
 		bossmod_aura_height = 32,
 		bossmod_aura_width = 32,
 		bossmod_cooldown_text_size = 16,
@@ -1020,6 +1026,8 @@ PLATER_DEFAULT_SETTINGS = {
 			enemy_ic = false,
 			friendly_ooc = false,
 			enemy_ooc = false,
+			blizz_healthbar_ic = false,
+			blizz_healthbar_ooc = false,
 		},
 
 		spell_animations = true,

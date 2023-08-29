@@ -1,4 +1,5 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
+--- @type string, Private
 local AddonName, Private = ...
 
 local SharedMedia = LibStub("LibSharedMedia-3.0");
@@ -34,7 +35,7 @@ local properties = {
 
 
 local function create()
-  local region = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
+  local region = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
   return region
 end
 
@@ -49,7 +50,8 @@ end
 local function modify(parent, region, parentData, data, first)
   region:SetParent(parent)
 
-  parent:AnchorSubRegion(region, "area", parentData.regionType == "aurabar" and data.border_anchor, nil, data.border_offset, data.border_offset)
+  parent:AnchorSubRegion(region, "area", parentData.regionType == "aurabar" and data.border_anchor,
+                         nil, data.border_offset, data.border_offset)
 
   local edgeFile = SharedMedia:Fetch("border", data.border_edge)
   if edgeFile and edgeFile ~= "" then
@@ -58,7 +60,8 @@ local function modify(parent, region, parentData, data, first)
       edgeSize = data.border_size,
       bgFile = nil,
     })
-    region:SetBackdropBorderColor(data.border_color[1], data.border_color[2], data.border_color[3], data.border_color[4])
+    region:SetBackdropBorderColor(data.border_color[1], data.border_color[2],
+                                  data.border_color[3], data.border_color[4])
     region:SetBackdropColor(0, 0, 0, 0)
   end
 
@@ -86,4 +89,5 @@ local function supports(regionType)
          or regionType == "aurabar"
 end
 
-WeakAuras.RegisterSubRegionType("subborder", L["Border"], supports, create, modify, onAcquire, onRelease, default, nil, properties);
+WeakAuras.RegisterSubRegionType("subborder", L["Border"], supports, create, modify, onAcquire, onRelease,
+                                default, nil, properties)

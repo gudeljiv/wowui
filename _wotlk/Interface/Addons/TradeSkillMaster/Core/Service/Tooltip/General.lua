@@ -160,7 +160,7 @@ function private.PopulateFullDestroyLines(tooltip, itemString)
 		tooltip:EndSection()
 		return
 	end
-	local value, method = CustomPrice.GetConversionsValue(itemString, private.settings.destroyValueSource)
+	local value, method = TSM.Crafting.GetConversionsValue(itemString, private.settings.destroyValueSource)
 	if not value then
 		return nil, nil
 	end
@@ -174,17 +174,20 @@ function private.PopulateFullDestroyLines(tooltip, itemString)
 		for targetItemString in DisenchantInfo.TargetItemIterator() do
 			local amountOfMats, matRate, minAmount, maxAmount = DisenchantInfo.GetTargetItemSourceInfo(targetItemString, classId, quality, itemLevel, expansion)
 			if amountOfMats then
-				local matValue = CustomPrice.GetItemPrice(targetItemString, private.settings.destroyValueSource) or 0
+				local matValue = CustomPrice.GetSourcePrice(targetItemString, private.settings.destroyValueSource) or 0
 				if matValue > 0 then
 					tooltip:AddSubItemValueLine(targetItemString, matValue, amountOfMats, matRate, minAmount, maxAmount)
 				end
 			end
 		end
 	else
-		for targetItemString, amountOfMats, matRate, minAmount, maxAmount in Conversions.TargetItemsByMethodIterator(itemString, method) do
-			local matValue = CustomPrice.GetItemPrice(targetItemString, private.settings.destroyValueSource) or 0
+		for targetItemString, amountOfMats, matRate, minAmount, maxAmount, targetQuality, sourceQuality in Conversions.TargetItemsByMethodIterator(itemString, method) do
+			local matValue = CustomPrice.GetSourcePrice(targetItemString, private.settings.destroyValueSource) or TSM.Crafting.GetConversionsValue(targetItemString, private.settings.destroyValueSource) or 0
 			if matValue > 0 then
-				tooltip:AddSubItemValueLine(targetItemString, matValue, amountOfMats, matRate, minAmount, maxAmount)
+				local quality = sourceQuality and TSM.Crafting.DFCrafting.GetExpectedSalvageResult(method, sourceQuality)
+				if not targetQuality or targetQuality == quality then
+					tooltip:AddSubItemValueLine(targetItemString, matValue, amountOfMats, matRate, minAmount, maxAmount)
+				end
 			end
 		end
 	end
@@ -198,7 +201,7 @@ function private.PopulateSimpleDestroyLines(tooltip, itemString)
 		value = 20
 		method = Conversions.METHOD.PROSPECT
 	else
-		value, method = CustomPrice.GetConversionsValue(itemString, private.settings.destroyValueSource)
+		value, method = TSM.Crafting.GetConversionsValue(itemString, private.settings.destroyValueSource)
 	end
 	if not value then
 		return nil, nil
@@ -264,7 +267,7 @@ function private.GetConvertTooltipInfo(itemString, sourcesResultTbl)
 	for i = 1, #CONVERT_METHODS do
 		method = CONVERT_METHODS[i]
 		for sourceItemString, rate in Conversions.SourceItemsByMethodIterator(itemString, method) do
-			local value = CustomPrice.GetItemPrice(sourceItemString, private.settings.destroyValueSource)
+			local value = CustomPrice.GetSourcePrice(sourceItemString, private.settings.destroyValueSource)
 			if value then
 				if sourcesResultTbl then
 					tinsert(sourcesResultTbl, sourceItemString)

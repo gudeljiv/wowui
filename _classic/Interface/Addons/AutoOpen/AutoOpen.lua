@@ -155,8 +155,8 @@ function E:BAG_UPDATE(B)
     end
 
     --for B = 0, NUM_BAG_SLOTS do
-    for S = 1, GetContainerNumSlots(B) do
-        local _, _, locked, _, _, lootable, itemLink = GetContainerItemInfo(B, S)
+    for S = 1, C_Container.GetContainerNumSlots(B) do
+        local _, _, locked, _, _, lootable, itemLink = C_Container.GetContainerItemInfo(B, S)
         local itemName = itemLink and string.match(itemLink, "%[(.*)%]") or nil
 
         if itemLink then

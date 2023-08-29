@@ -6,15 +6,12 @@ local DataUtils = ECSLoader:ImportModule("DataUtils")
 local _Defense = {}
 
 local _, _, classId = UnitClass("player")
-local MAX_SKILL_LINES = 75 -- Something high, because we stop if we are too far
 
-local LEVEL_70_MAX_SKILL = 350
+local MAX_SKILL = (UnitLevel("player")) * 5
 -- A tank needs to reduce the chance to be critically hit by 5.6% to achieve crit immunity
 local CRIT_IMMUNITY_CAP = 5.6
 -- Every 25 defense reduce the chance to be critically hit by 1 %
 local DEFENSE_FOR_CRIT_REDUCTION = 25
--- Every 39.4231 resilience reduce the chance to be critically hit by 1 %
-local RESILIENCE_FOR_CRIT_REDUCTION = 39.4231
 
 
 ---@return number
@@ -25,23 +22,25 @@ end
 
 ---@return number
 function _Defense:GetCritReduction()
-    local defSkillRank, defSkillModifier = _Defense:GetDefenseValues()
-    local resilience = Data:GetResilienceRating()
-
-    local defBonus = defSkillRank + defSkillModifier
+    local defBonus = Data:GetDefenseValue()
 
     local talentBonus = 0
     if classId == Data.DRUID then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
-        talentBonus = points * 1 -- 0-3% from Survival of the Fittest
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 18)
+            talentBonus = points * 2 -- 0-6% from Survival of the Fittest
+        else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
+            talentBonus = points * 1 -- 0-3% from Survival of the Fittest
+        end
     end
 
     -- Only the defense value above 350 counts towards crit immunity
-    local critReductionFromDefense =  (defBonus - LEVEL_70_MAX_SKILL) / DEFENSE_FOR_CRIT_REDUCTION
+    local critReductionFromDefense =  (defBonus - MAX_SKILL) / DEFENSE_FOR_CRIT_REDUCTION
     if critReductionFromDefense < 0 then
         critReductionFromDefense = 0
     end
-    local critReducingFromResilience = resilience / RESILIENCE_FOR_CRIT_REDUCTION
+    local critReducingFromResilience = GetCombatRatingBonus(15)
 
     return critReductionFromDefense + critReducingFromResilience + talentBonus
 end
@@ -63,41 +62,35 @@ function Data:GetCritReduction()
     return DataUtils:Round(_Defense:GetCritReduction(), 2) .. "%"
 end
 
+---@return string
+function Data:GetAvoidance()
+    local enemyAttackRating = (UnitLevel("player")) * 5
+
+    local avoidance
+    if ECS.IsWotlk then
+        local defense = math.floor(GetCombatRatingBonus(CR_DEFENSE_SKILL));
+        local enemyMissCoef = classId == Data.DRUID and 0.972 or 0.956; -- 0.972 for bears
+        local baseMissChance = 5 - (enemyAttackRating - select(1, UnitDefense("player"))) * 0.04; -- vs lvl 80
+        local enemyMissChance = baseMissChance + 1 / (0.0625 + enemyMissCoef / (defense * 0.04));
+        avoidance = enemyMissChance + GetDodgeChance() + GetParryChance() + GetBlockChance()
+    else
+        local defense = Data:GetDefenseValue()
+        local enemyMissChance = 5 + (((defense) - enemyAttackRating) * .04)
+        avoidance = enemyMissChance + GetDodgeChance() + GetParryChance() + GetBlockChance()
+    end
+
+    return DataUtils:Round(avoidance, 2) .. "%"
+end
+
 ---@return number
 function Data:GetDefenseRating()
     return DataUtils:Round(GetCombatRating(CR_DEFENSE_SKILL), 2)
 end
 
----@return table<number, number>
-function _Defense:GetDefenseValues()
-    local skillRank = 0
-    local skillModifier = 0
-
-    for i = 1, MAX_SKILL_LINES do
-        local skillName, isHeader, _, rank, _, modifier  = GetSkillLineInfo(i)
-        if (not skillName) then
-            -- We exceeded the available skill lines
-            break
-        end
-
-        if (not isHeader) and (skillName == DEFENSE) then
-            skillRank = rank
-            skillModifier = modifier
-            break
-        end
-    end
-
-    if ECS.IsTBC then
-        skillModifier = skillModifier + math.floor(GetCombatRatingBonus(CR_DEFENSE_SKILL))
-    end
-
-    return skillRank, skillModifier
-end
-
----@return string
-function Data:GetDefenseValueString()
-    local skillRank, skillModifier = _Defense:GetDefenseValues()
-    return skillRank .. " + " .. skillModifier
+---@return number
+function Data:GetDefenseValue()
+    local skillRank, skillModifier = UnitDefense("player")
+    return skillRank + skillModifier
 end
 
 

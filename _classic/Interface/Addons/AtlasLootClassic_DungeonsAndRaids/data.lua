@@ -13,16 +13,17 @@ local format = string.format
 -- ----------------------------------------------------------------------------
 local addonname = ...
 local AtlasLoot = _G.AtlasLoot
-local data = AtlasLoot.ItemDB:Add(addonname, 1, 1)
+local data = AtlasLoot.ItemDB:Add(addonname, 1, AtlasLoot.CLASSIC_VERSION_NUM)
 
 local AL = AtlasLoot.Locales
 local ALIL = AtlasLoot.IngameLocales
 
 local GetForVersion = AtlasLoot.ReturnForGameVersion
 
-local NORMAL_DIFF = data:AddDifficulty(AL["Normal"], "n", 1, nil, true)
-local RAID20_DIFF = data:AddDifficulty(AL["20 Raid"], "r20", 9)
-local RAID40_DIFF = data:AddDifficulty(AL["40 Raid"], "r40", 9)
+local NORMAL_DIFF = data:AddDifficulty("NORMAL", nil, nil, nil, true)
+local RAID20_DIFF = data:AddDifficulty("20RAID")
+local RAID40_DIFF = data:AddDifficulty("40RAID")
+
 local ALLIANCE_DIFF, HORDE_DIFF, LOAD_DIFF
 if UnitFactionGroup("player") == "Horde" then
 	HORDE_DIFF = data:AddDifficulty(FACTION_HORDE, "horde", nil, 1)
@@ -46,12 +47,12 @@ local RAID40_CONTENT = data:AddContentType(AL["40 Raids"], ATLASLOOT_RAID40_COLO
 
 local ATLAS_MODULE_NAME = "Atlas_ClassicWoW"
 
-local BLUE = "|cff6666ff"
-local GREY = "|cff999999"
-local GREN = "|cff66cc33"
-local _RED = "|cffcc6666"
-local PURP = "|cff9900ff"
-local WHIT = "|cffffffff"
+local BLUE = "|cff6666ff%s|r"
+--local GREY = "|cff999999%s|r"
+local GREEN = "|cff66cc33%s|r"
+local _RED = "|cffcc6666%s|r"
+local PURP = "|cff9900ff%s|r"
+local WHIT = "|cffffffff%s|r"
 
 local NAME_COLOR, NAME_COLOR_BOSS = "|cffC0C0C0", "|cffC0C0C0"
 local NAME_BRD_RING_OF_LAW = NAME_COLOR_BOSS..AL["Ring of Law"]..":|r %s" -- Tempest Keep
@@ -641,17 +642,6 @@ data["ShadowfangKeep"] = {
 				{ 3,  3191 }, -- Arced War Axe
 			},
 		},
-		{ -- SFKSever
-			name = AL["Sever"],
-			npcID = 14682,
-			DisplayIDs = {{1061}},
-			AtlasMapBossID = 7,
-			ContentPhase = 6,
-			[NORMAL_DIFF] = {
-				{ 1,  23173 }, -- Abomination Skin Leggings
-				{ 2,  23171 }, -- The Axe of Severing
-			},
-		},
 		{ -- SFKOdotheBlindwatcher
 			name = AL["Odo the Blindwatcher"],
 			npcID = 4279,
@@ -736,6 +726,40 @@ data["ShadowfangKeep"] = {
 				{ 11, 1484 }, -- Witching Stave
 			},
 		},
+		{ -- SFKSever
+			name = AL["Sever"],
+			npcID = 14682,
+			DisplayIDs = {{1061}},
+			AtlasMapBossID = 7,
+			ContentPhase = 6,
+			specialType = "scourgeInvasion",
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  23173 }, -- Abomination Skin Leggings
+				{ 2,  23171 }, -- The Axe of Severing
+			},
+		},
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { -- SFKApothecaryH
+			name = AL["Apothecary Hummel <Crown Chemical Co.>"],
+			npcID = 36296,
+			Level = 83,
+			DisplayIDs = {{31167}},
+			AtlasMapBossID = 3,
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  51804 }, -- Winking Eye of Love
+				{ 2,  51805 }, -- Heartbreak Charm
+				{ 3,  51806 }, -- Shard of Pirouetting Happiness
+				{ 4,  51807 }, -- Sweet Perfume Broach
+				{ 5,  51808 }, -- Choker of the Pure Heart
+				{ 7,  49641 }, -- Faded Lovely Greeting Card
+				{ 8,  49715 }, -- Forever-Lovely Rose
+				{ 9,  50250 }, -- X-45 Heartbreaker
+				{ 10,  50446 }, -- Toxic Wasteling
+				{ 11,  50471 }, -- The Heartbreaker
+				{ 12,  50741 }, -- Vile Fumigator's Mask
+			},
+		}),
 		{ -- SFKJordansHammer
 			name = AL["Jordan's Smithing Hammer"],
 			ExtraList = true,
@@ -1012,6 +1036,8 @@ data["Gnomeregan"] = {
 				--{ 23, 4376 }, -- Flame Deflector
 				{ 19, 7742 }, -- Schematic: Gnomish Cloaking Device
 				--{ 26, 4397 }, -- Gnomish Cloaking Device
+				{ 20, 11828 }, -- Schematic: Pet Bombling
+				--{ 29, 11825 }, -- Pet Bombling
 			},
 		},
 		{ -- GnTrash
@@ -1028,6 +1054,8 @@ data["Gnomeregan"] = {
 				{ 8,  9486 }, -- Supercharger Battle Axe
 				{ 9,  9490 }, -- Gizmotron Megachopper
 				{ 11, 9489 }, -- Gyromatic Icemaker
+				{ 12, 11827 }, -- Schematic: Lil' Smoky
+				--{ 15, 11826 }, -- Lil' Smoky
 				{ 16, 9327 }, -- Security DELTA Data Access Card
 				{ 18, 7191 }, -- Fused Wiring
 				{ 19, 9308 }, -- Grime-Encrusted Object
@@ -1263,32 +1291,44 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 14, 7730 }, -- Cobalt Crusher
 			},
 		},
---[====[@version-bcc@
-        { -- SMHeadlessHorseman
-            name = AL["Headless Horseman"],
-            npcID = 23682,
-            Level = 70,
-            DisplayIDs = {{22351}},
-            AtlasMapBossID = nil,
+		{ -- SMScorn
+			name = AL["Scorn"],
+			npcID = 14693,
+			DisplayIDs = {{16197}},
+			AtlasMapBossID = 1,
+			ContentPhase = 6,
+			specialType = "scourgeInvasion",
 			ExtraList = true,
-            [NORMAL_DIFF] = {
-                { 1, 34075 }, -- Ring of Ghoulish Delight
-                { 2, 34073 }, -- The Horseman's Signet Ring
-                { 3, 34074 }, -- Witches Band
-                { 5, 33808 }, -- The Horseman's Helm
-                { 6, 38175 }, -- The Horseman's Blade
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 33182 }, -- Swift Flying Broom        280% flying
-                { 19, 33176 }, -- Flying Broom              60% flying
-                { 21, 33184 }, -- Swift Magic Broom         100% ground
-                { 22, 37011 }, -- Magic Broom               60% ground
-                { 24, 33154 }, -- Sinister Squashling
-            }
-        },
---@end-version-bcc@]====]
+			[NORMAL_DIFF] = {
+				{ 1, 23169 }, -- Scorn's Icy Choker
+				{ 2, 23170 }, -- The Frozen Clutch
+				{ 3, 23168 }, -- Scorn's Focal Dagger
+			},
+		},
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { -- SMHeadlessHorseman
+			name = AL["Headless Horseman"],
+			npcID = 23682,
+			Level = 83,
+			DisplayIDs = {{22351}},
+			AtlasMapBossID = nil,
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1, 49121 }, -- Ring of Ghoulish Glee
+				{ 2, 49123 }, -- The Horseman's Seal
+				{ 3, 49124 }, -- Wicked Witch's Band
+				{ 5, 49126 }, -- The Horseman's Horrific Helm
+				{ 6, 49128 }, -- The Horseman's Baleful Blade
+				{ 8, 33292 }, -- Hallowed Helm
+				{ 10, 34068 }, -- Weighted Jack-o'-Lantern
+				{ 12, 33277 }, -- Tome of Thomas Thomson
+				{ 16, 37012 }, -- The Horseman's Reins
+				{ 18, 33182 }, -- Swift Flying Broom        280% flying
+				{ 19, 33176 }, -- Flying Broom              60% flying
+				{ 21, 33184 }, -- Swift Magic Broom         100% ground
+				{ 22, 37011 }, -- Magic Broom               60% ground
+				{ 24, 33154 }, -- Sinister Squashling
+			}
+		}),
 		KEYS,
 	},
 }
@@ -1332,6 +1372,7 @@ data["ScarletMonasteryLibrary"] = {
 				{ 2,  7713 }, -- Illusionary Rod
 				{ 4,  7712 }, -- Mantle of Doan
 				{ 5,  7711 }, -- Robe of Doan
+				AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM, { 16,  34227 }), -- Deadman's Hand
 			},
 		},
 		{ -- SMLTrash
@@ -2938,27 +2979,28 @@ data["BlackrockDepths"] = {
 				{ 4,  22317 }, -- Lefty's Brass Knuckle
 			},
 		},
-		{ -- BRRDCorenDirebrew
+		AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM, { -- BRRDCorenDirebrew
 			name = AL["Coren Direbrew"],
 			npcID = 23872,
 			DisplayIDs = {{21824}},
 			AtlasMapBossID = 15,
-			Level = 73,
+			Level = 82,
 			ExtraList = true,
 			[NORMAL_DIFF] = {
-				{ 1,  37128 }, -- Balebrew Charm
-				{ 2,  37127 }, -- Brightbrew Charm
-				{ 3,  38287 }, -- Empty Mug of Direbrew
-				{ 4,  38290 }, -- Dark Iron Smoking Pipe
-				{ 5,  38288 }, -- Direbrew Hops
-				{ 6,  38289 }, -- Coren's Lucky Coin
-				{ 8,  37597 }, -- Direbrew's Shanker
+				{ 1,  49116 }, -- Bitter Balebrew Charm
+				{ 2,  49118 }, -- Bubbling Brightbrew Charm
+				{ 3,  49074 }, -- Coren's Chromium Coaster
+				{ 4,  49076 }, -- Mithril Pocketwatch
+				{ 5,  49078 }, -- Ancient Pickled Egg
+				{ 6,  49080 }, -- Brawler's Souvenir
+				{ 8,  49120 }, -- Direbrew's Bloody Shanker
+				{ 9,  48663 }, -- Tankard O' Terror
 				{ 16,  33977 }, -- Swift Brewfest Ram
 				{ 17,  37828 }, -- Great Brewfest Kodo
 				{ 19,  37863 }, -- Direbrew's Remote
 				{ 21,  38280 }, -- Direbrew's Dire Brew
 			},
-		},
+        }),
 	},
 }
 
@@ -3716,6 +3758,20 @@ data["DireMaulWest"] = {
 				{ 7,  18332 }, -- Libram of Rapidity
 			},
 		},
+		{ -- DMWRevanchion
+			name = AL["Revanchion"],
+			npcID = 14690,
+			DisplayIDs = {{14695}},
+			AtlasMapBossID = 2,
+			ContentPhase = 6,
+			specialType = "scourgeInvasion",
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1, 23127 }, -- Cloak of Revanchion
+				{ 2, 23129 }, -- Bracers of Mending
+				{ 3, 23128 }, -- The Shadow's Grasp
+			},
+		},
 		{ -- DMWShendralarProvisioner
 			name = AL["Shen'dralar Provisioner"],
 			npcID = 14371,
@@ -4382,6 +4438,20 @@ data["Scholomance"] = {
 				{ 29, 13920 }, -- Healthy Dragon Scale
 			},
 		},
+		{ -- SCHOLOLordB
+			name = AL["Lord Blackwood"],
+			npcID = 14695,
+			DisplayIDs = {{14699}},
+			AtlasMapBossID = 2,
+			ContentPhase = 6,
+			specialType = "scourgeInvasion",
+			ExtraList = true,
+			[NORMAL_DIFF] = {
+				{ 1,  23132 }, -- Lord Blackwood's Blade
+				{ 2,  23156 }, -- Blackwood's Thigh
+				{ 3,  23139 }, -- Lord Blackwood's Buckler
+			},
+		},
 		{ -- SCHOLOKormok
 			name = AL["Kormok"].." - "..format(AL["Tier %s Sets"], "0.5"),
 			npcID = 16118,
@@ -4421,7 +4491,8 @@ data["Stratholme"] = {
 	LevelRange = GetForVersion({37, 58, 60}, {45, 58, 60}),
 	items = {
 		{ -- STRATSkull
-			name = GREN..AL["Skul"],
+			name = AL["Skul"],
+			NameColor = GREEN,
 			npcID = 10393,
 			Level = 58,
 			DisplayIDs = {{2606}},
@@ -4434,7 +4505,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATStratholmeCourier
-			name = GREN..AL["Stratholme Courier"],
+			name = AL["Stratholme Courier"],
+			NameColor = GREEN,
 			npcID = 11082,
 			Level = 57,
 			DisplayIDs = {{10547}},
@@ -4449,7 +4521,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATHearthsingerForresten
-			name = GREN..AL["Hearthsinger Forresten"],
+			name = AL["Hearthsinger Forresten"],
+			NameColor = GREEN,
 			npcID = 10558,
 			Level = 57,
 			SubAreaID = 32277,
@@ -4465,7 +4538,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATTheUnforgiven
-			name = GREN..AL["The Unforgiven"],
+			name = AL["The Unforgiven"],
+			NameColor = GREEN,
 			npcID = 10516,
 			Level = 57,
 			SubAreaID = 32281,
@@ -4480,7 +4554,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATPostmaster
-			name = GREN..AL["Postmaster Malown"],
+			name = AL["Postmaster Malown"],
+			NameColor = GREEN,
 			npcID = 11143,
 			Level = 60,
 			DisplayIDs = {{10669}},
@@ -4495,7 +4570,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATTimmytheCruel
-			name = GREN..AL["Timmy the Cruel"],
+			name = AL["Timmy the Cruel"],
+			NameColor = GREEN,
 			npcID = 10808,
 			Level = 58,
 			SubAreaID = 32319,
@@ -4510,7 +4586,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATMalorsStrongbox
-			name = GREN..AL["Malor the Zealous"],
+			name = AL["Malor the Zealous"],
+			NameColor = GREEN,
 			npcID = 11032,
 			ObjectID = 176112,
 			Level = 60,
@@ -4523,7 +4600,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATCrimsonHammersmith
-			name = GREN..AL["Crimson Hammersmith"],
+			name = AL["Crimson Hammersmith"],
+			NameColor = GREEN,
 			npcID = 11120,
 			Level = 60,
 			SubAreaID = 32357,
@@ -4535,7 +4613,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATCannonMasterWilley
-			name = GREN..AL["Cannon Master Willey"],
+			name = AL["Cannon Master Willey"],
+			NameColor = GREEN,
 			npcID = 10997,
 			Level = 60,
 			SubAreaID = 32357,
@@ -4557,7 +4636,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATArchivistGalford
-			name = GREN..AL["Archivist Galford"],
+			name = AL["Archivist Galford"],
+			NameColor = GREEN,
 			npcID = 10811,
 			Level = 60,
 			SubAreaID = 32331,
@@ -4574,7 +4654,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATBalnazzar
-			name = GREN..AL["Balnazzar"],
+			name = AL["Balnazzar"],
+			NameColor = GREEN,
 			npcID = {10812, 10813},
 			Level = 999,
 			SubAreaID = 32367,
@@ -4599,7 +4680,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATMagistrateBarthilas
-			name = PURP..AL["Magistrate Barthilas"],
+			name = AL["Magistrate Barthilas"],
+			NameColor = PURP,
 			npcID = 10435,
 			Level = 58,
 			SubAreaID = 32342,
@@ -4616,7 +4698,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATStonespine
-			name = PURP..AL["Stonespine"],
+			name = AL["Stonespine"],
+			NameColor = PURP,
 			npcID = 10809,
 			Level = 60,
 			SubAreaID = 32303,
@@ -4630,7 +4713,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATBaronessAnastari
-			name = PURP..AL["Baroness Anastari"],
+			name = AL["Baroness Anastari"],
+			NameColor = PURP,
 			npcID = 10436,
 			Level = 59,
 			SubAreaID = 32344,
@@ -4650,7 +4734,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATBlackGuardSwordsmith
-			name = PURP..AL["Black Guard Swordsmith"],
+			name = AL["Black Guard Swordsmith"],
+			NameColor = PURP,
 			npcID = 11121,
 			Level = {61, 62},
 			SubAreaID = 32345,
@@ -4665,7 +4750,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATNerubenkan
-			name = PURP..AL["Nerub'enkan"],
+			name = AL["Nerub'enkan"],
+			NameColor = PURP,
 			npcID = 10437,
 			Level = 60,
 			SubAreaID = 32345,
@@ -4685,7 +4771,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATMalekithePallid
-			name = PURP..AL["Maleki the Pallid"],
+			name = AL["Maleki the Pallid"],
+			NameColor = PURP,
 			npcID = 10438,
 			Level = 61,
 			SubAreaID = 32349,
@@ -4706,7 +4793,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATRamsteintheGorger
-			name = PURP..AL["Ramstein the Gorger"],
+			name = AL["Ramstein the Gorger"],
+			NameColor = PURP,
 			npcID = 10439,
 			Level = 61,
 			SubAreaID = 32301,
@@ -4723,7 +4811,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATBaronRivendare
-			name = PURP..AL["Baron Rivendare"],
+			name = AL["Baron Rivendare"],
+			NameColor = PURP,
 			npcID = 10440,
 			Level = 62,
 			SubAreaID = 32352,
@@ -4799,7 +4888,8 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATAtiesh
-			name = GREN..AL["Atiesh"],
+			name = AL["Atiesh"],
+			NameColor = GREEN,
 			ExtraList = true,
 			AtlasMapBossID = 2,
 			ContentPhase = 6,
@@ -4808,20 +4898,23 @@ data["Stratholme"] = {
 			},
 		},
 		{ -- STRATBalzaphon
-			name = GREN..AL["Balzaphon"],
+			name = AL["Balzaphon"],
+			NameColor = GREEN,
 			ExtraList = true,
+			specialType = "scourgeInvasion",
 			npcID = 14684,
 			DisplayIDs = {{7919}},
 			AtlasMapBossID = 2,
 			ContentPhase = 6,
 			[NORMAL_DIFF] = {
-				{ 1,  23125 }, -- Chains of the Lich
-				{ 2,  23126 }, -- Waistband of Balzaphon
+				{ 1,  23126 }, -- Waistband of Balzaphon
+				{ 2,  23125 }, -- Chains of the Lich
 				{ 3,  23124 }, -- Staff of Balzaphon
 			},
 		},
 		{ -- STRATSothosJarien
-			name = GREN..AL["Sothos and Jarien's Heirlooms"].." - "..format(AL["Tier %s Sets"], "0.5"),
+			name = AL["Sothos and Jarien's Heirlooms"].." - "..format(AL["Tier %s Sets"], "0.5"),
+			NameColor = GREEN,
 			ExtraList = true,
 			ContentPhase = 5,
 			AtlasMapBossID = 11,
@@ -6561,7 +6654,7 @@ data["TheTempleofAhnQiraj"] = { -- AQ40
 
 data["Naxxramas"] = {
 	MapID = 3456,
-	InstanceID = 533,
+	InstanceID = AtlasLoot:GameVersion_LT(AtlasLoot.WRATH_VERSION_NUM,533,nil),
 	AtlasModule = ATLAS_MODULE_NAME,
 	AtlasMapID = "Naxxramas",
 	AtlasMapFile = "CL_Naxxramas",
@@ -6576,7 +6669,8 @@ data["Naxxramas"] = {
 			npcID = 15956,
 			Level = 999,
 			DisplayIDs = {{15931}},
-			AtlasMapBossID = BLUE.."1",
+			AtlasMapBossID = "1",
+			NameColor = BLUE,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6595,7 +6689,8 @@ data["Naxxramas"] = {
 			npcID = 15953,
 			Level = 999,
 			DisplayIDs = {{15940}},
-			AtlasMapBossID = BLUE.."2",
+			AtlasMapBossID = "2",
+			NameColor = BLUE,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6614,7 +6709,8 @@ data["Naxxramas"] = {
 			npcID = 15952,
 			Level = 999,
 			DisplayIDs = {{15928}},
-			AtlasMapBossID = BLUE.."3",
+			AtlasMapBossID = "3",
+			NameColor = BLUE,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6634,7 +6730,8 @@ data["Naxxramas"] = {
 			npcID = 15954,
 			Level = 999,
 			DisplayIDs = {{16590}},
-			AtlasMapBossID = PURP.."1",
+			AtlasMapBossID = "1",
+			NameColor = PURP,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6655,7 +6752,8 @@ data["Naxxramas"] = {
 			npcID = 15936,
 			Level = 999,
 			DisplayIDs = {{16309}},
-			AtlasMapBossID = PURP.."2",
+			AtlasMapBossID = "2",
+			NameColor = PURP,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6674,7 +6772,8 @@ data["Naxxramas"] = {
 			npcID = 16011,
 			Level = 999,
 			DisplayIDs = {{16110}},
-			AtlasMapBossID = PURP.."3",
+			AtlasMapBossID = "3",
+			NameColor = PURP,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6694,7 +6793,8 @@ data["Naxxramas"] = {
 			npcID = 16061,
 			Level = 999,
 			DisplayIDs = {{16582}},
-			AtlasMapBossID = _RED.."1",
+			AtlasMapBossID = "1",
+			NameColor = _RED,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6714,7 +6814,8 @@ data["Naxxramas"] = {
 			npcID = 16060,
 			Level = 999,
 			DisplayIDs = {{16279}},
-			AtlasMapBossID = _RED.."2",
+			AtlasMapBossID = "2",
+			NameColor = _RED,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6733,7 +6834,8 @@ data["Naxxramas"] = {
 			npcID = {16064, 16065, 16062, 16063},
 			Level = 999,
 			DisplayIDs = {{16155},{16153},{16139},{16154}},
-			AtlasMapBossID = _RED.."3",
+			AtlasMapBossID = "3",
+			NameColor = _RED,
 			[NORMAL_DIFF] = {
 				{ 1,  22726 }, -- Splinter of Atiesh
 				{ 2,  22727 }, -- Frame of Atiesh
@@ -6840,7 +6942,8 @@ data["Naxxramas"] = {
 			npcID = 15989,
 			Level = 999,
 			DisplayIDs = {{16033}},
-			AtlasMapBossID = GREN.."1",
+			AtlasMapBossID = "1",
+			NameColor = GREEN,
 			[NORMAL_DIFF] = {
 				{ 1,  23050 }, -- Cloak of the Necropolis
 				{ 2,  23045 }, -- Shroud of Dominion
@@ -6863,7 +6966,8 @@ data["Naxxramas"] = {
 			npcID = 15990,
 			Level = 999,
 			DisplayIDs = {{15945}},
-			AtlasMapBossID = GREN.."2",
+			AtlasMapBossID = "2",
+			NameColor = GREEN,
 			[NORMAL_DIFF] = {
 				{ 1,  23057 }, -- Gem of Trapped Innocents
 				{ 2,  23053 }, -- Stormrage's Talisman of Seething

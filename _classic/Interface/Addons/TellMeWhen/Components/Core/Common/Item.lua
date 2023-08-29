@@ -17,12 +17,14 @@ local TMW = TMW
 local L = TMW.L
 local print = TMW.print
 
-local IsEquippedItem, GetItemCount, GetItemInfo, GetItemCooldown, GetItemIcon, IsItemInRange
-	= IsEquippedItem, GetItemCount, GetItemInfo, GetItemCooldown, GetItemIcon, IsItemInRange
+local IsEquippedItem, GetItemCount, GetItemInfo, GetItemIcon, IsItemInRange
+	= IsEquippedItem, GetItemCount, GetItemInfo, GetItemIcon, IsItemInRange
 local GetInventoryItemTexture, GetInventoryItemCooldown, GetInventoryItemID, GetInventoryItemLink
 	= GetInventoryItemTexture, GetInventoryItemCooldown, GetInventoryItemID, GetInventoryItemLink
 local tonumber, type, pairs, strfind, strmatch, ipairs, strtrim, error
 	= tonumber, type, pairs, strfind, strmatch, ipairs, strtrim, error
+
+local GetItemCooldown = GetItemCooldown or (C_Container and C_Container.GetItemCooldown)
 
 local INVSLOT_LAST_EQUIPPED = INVSLOT_LAST_EQUIPPED
 
@@ -77,7 +79,7 @@ function TMW:GetItems(setting)
 	local items = {}
 
 	for k, item in ipairs(names) do
-		item = strtrim(item, " \t\r\n;") -- trim crap
+		item = strtrim(item, " \t\r\n;") -- trim junk
 
 		items[#items + 1] = Item:GetRepresentation(item)
 	end
@@ -142,17 +144,21 @@ end
 function Item:GetName()
 	error("This function must be overridden by subclasses")
 end
--- These two functions give the remaining cooldown time for an icon.
+-- These two functions give the remaining cooldown time for an item.
 function Item:GetCooldownDuration()
-	local start, duration = self:GetCooldown()
-	if duration then
+	local start, duration, enable = self:GetCooldown()
+	if enable == 0 then
+		return math.huge
+	elseif duration then
 		return (duration == 0 and 0) or (duration - (TMW.time - start))
 	end
 	return 0
 end
 function Item:GetCooldownDurationNoGCD()
-	local start, duration = self:GetCooldown()
-	if duration then
+	local start, duration, enable = self:GetCooldown()
+	if enable == 0 then
+		return math.huge
+	elseif duration then
 		return ((duration == 0 or OnGCD(duration)) and 0) or (duration - (TMW.time - start))
 	end
 	return 0

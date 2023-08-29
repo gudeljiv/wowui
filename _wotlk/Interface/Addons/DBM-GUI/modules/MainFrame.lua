@@ -24,12 +24,7 @@ frame:SetClampedToScreen(true)
 frame:SetUserPlaced(true)
 frame:RegisterForDrag("LeftButton")
 frame:SetFrameLevel(frame:GetFrameLevel() + 4)
-if DBM:GetTOC() < 30401 then -- Legacy API
-	frame:SetMinResize(800, 400)
-	frame:SetMaxResize(UIParent:GetWidth(), UIParent:GetHeight())
-else -- Is Modern API
-	frame:SetResizeBounds(800, 400, UIParent:GetWidth(), UIParent:GetHeight())
-end
+frame:SetResizeBounds(800, 400, UIParent:GetWidth(), UIParent:GetHeight())
 frame:Hide()
 frame.backdropInfo = {
 	bgFile		= "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", -- 131071
@@ -112,7 +107,7 @@ do
 		count = count + 1
 		if count == 3 then
 			count = 0
-			DBM:PlaySound("1304911", true)
+			DBM:PlaySoundFile(1304911, true)
 		end
 	end)
 end

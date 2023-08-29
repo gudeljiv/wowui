@@ -7,7 +7,7 @@ DBM_GUI = {
 
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 
-local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor = next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor
+local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor, slower = next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor, string.lower
 local CreateFrame, C_Timer, GetExpansionLevel, IsAddOnLoaded, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent = CreateFrame, C_Timer, GetExpansionLevel, IsAddOnLoaded, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent
 local RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION = RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION
 local LibStub, DBM, DBM_GUI, DBM_OPTION_SPACER = _G["LibStub"], DBM, DBM_GUI, DBM_OPTION_SPACER
@@ -104,7 +104,7 @@ do
 				-- Filter duplicates
 				local insertme = true
 				for _, v2 in next, result do
-					if v2.value == v then
+					if slower(v2.value) == slower(v) then
 						insertme = false
 						break
 					end
@@ -118,8 +118,7 @@ do
 						ins.texture = true
 					elseif mediatype == "font" then
 						ins.font = true
-					-- Only insert paths from addons folder, ignore file data ID, since there is no clean way to handle supporitng both FDID and soundkit at same time
-					elseif mediatype == "sound" and type(v) == "string" and v:lower():find("addons") then
+					elseif mediatype == "sound" then--and type(v) == "string" and v:lower():find("addons")
 						ins.sound = true
 					end
 					if ins.texture or ins.font or ins.sound then
@@ -323,7 +322,7 @@ local function addOptions(mod, catpanel, v)
 			catbutton:SetScript("OnShow", function(self)
 				self:SetChecked(mod.Options[v])
 			end)
-			catbutton:SetScript("OnClick", function(self)
+			catbutton:SetScript("OnClick", function()
 				mod.Options[v] = not mod.Options[v]
 				if mod.optionFuncs and mod.optionFuncs[v] then
 					mod.optionFuncs[v]()
@@ -396,28 +395,39 @@ function DBM_GUI:CreateBossModPanel(mod)
 	local reset = panel:CreateButton(L.Mod_Reset, 155, 30, nil, GameFontNormalSmall)
 	reset.myheight = 40
 	reset:SetPoint("TOPRIGHT", panel.frame, "TOPRIGHT", -24, -4)
-	reset:SetScript("OnClick", function(self)
+	reset:SetScript("OnClick", function()
 		DBM:LoadModDefaultOption(mod)
 	end)
 	local button = panel:CreateCheckButton(L.Mod_Enabled, true)
 	button:SetChecked(mod.Options.Enabled)
 	button:SetPoint("TOPLEFT", panel.frame, "TOPLEFT", 8, -14)
-	button:SetScript("OnClick", function(self)
+	button:SetScript("OnClick", function()
 		mod:Toggle()
 	end)
 
-	if mod.addon and not mod.addon.oldOptions and DBM.Options.GroupOptionsBySpell then
+	if mod.addon then
 		for spellID, options in getmetatable(mod.groupOptions).__pairs(mod.groupOptions) do
 			if spellID:find("^line") then
 				panel:CreateLine(options)
 			else
 				local title, desc, _, icon
-				if tonumber(spellID) then
-					local _title = DBM:GetSpellInfo(spellID)
-					if _title then
-						title, desc, icon = _title, tonumber(spellID), GetSpellTexture(spellID)
-					else--Not a valid spellid (Such as a ptr/beta mod loaded on live
-						title, desc, icon = spellID, L.NoDescription, 136116
+				local usedSpellID
+				if mod.groupOptions[spellID] and mod.groupOptions[spellID].customKeys then
+					usedSpellID = mod.groupOptions[spellID].customKeys--Color coding would be done in customKeys, not here
+				end
+				if mod.groupOptions[spellID].title then--Custom title, it's a bogus spellId, so we completely ignore it and bundle with localized custom title
+					title, desc, icon = mod.groupOptions[spellID].title, L.CustomOptions, 136116
+				elseif tonumber(spellID) then
+					spellID = tonumber(spellID)
+					if spellID < 0 then
+					    title, desc, _, icon = DBM:EJ_GetSectionInfo(-spellID)
+					else
+						local _title = DBM:GetSpellInfo(spellID)
+						if _title then
+							title, desc, icon = _title, tonumber(spellID), GetSpellTexture(spellID)
+						else--Not a valid spellid (Such as a ptr/beta mod loaded on live
+							title, desc, icon = spellID, L.NoDescription, 136116
+						end
 					end
 				elseif spellID:find("^ej") then
 					title, desc, _, icon = DBM:EJ_GetSectionInfo(spellID:gsub("ej", ""))
@@ -427,7 +437,10 @@ function DBM_GUI:CreateBossModPanel(mod)
 				else
 					title = spellID
 				end
-				local catpanel = panel:CreateAbility(title, icon)
+				if not usedSpellID then
+					usedSpellID = "|Hgarrmission:DBM:wacopy:"..spellID.."|h|cff69ccf0"..spellID.."|r|h"
+				end
+				local catpanel = panel:CreateAbility(title, icon, usedSpellID)
 				if desc then
 					catpanel:CreateSpellDesc(desc)
 				end
@@ -726,7 +739,7 @@ do
 				}
 				if (mod.addon.type == "PARTY" or mod.addon.type == "SCENARIO") or -- Fixes dungeons being labled incorrectly
 					(mod.addon.type == "RAID" and statSplit["timewalker"]) or -- Fixes raids with timewalker being labled incorrectly
-					(mod.addon.modId == "DBM-SiegeOfOrgrimmarV2") then -- Fixes SoO being labled incorrectly
+					(mod.instanceId == 369) then -- Fixes SoO being labled incorrectly
 					statTypes.normal = PLAYER_DIFFICULTY1
 					statTypes.heroic = PLAYER_DIFFICULTY2
 				end

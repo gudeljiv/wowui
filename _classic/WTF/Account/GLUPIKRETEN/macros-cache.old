@@ -1,11 +1,11 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2287
+/use [nocombat]item:7097
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
@@ -13,6 +13,14 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:4599
 END
+VER 3 0000000000000010 "Potion" "Inv_misc_questionmark"
+#showtooltip
+/use item:0
+END
+VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
+#showtooltip
+/use item:0
+END
 VER 3 000000000000000B "TEST" "132089"
-/run WeakAurasCooldowntargetdebuffs:Hide()
+/run print(TargetFrame:IsVisible())
 END

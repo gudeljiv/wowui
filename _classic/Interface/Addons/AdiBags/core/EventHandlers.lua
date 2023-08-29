@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2014 Adirelle (adirelle@gmail.com)
+Copyright 2014-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 
 local _G = _G
@@ -31,40 +32,24 @@ local type = _G.type
 local wipe = _G.wipe
 local xpcall = _G.xpcall
 
-local CBH = LibStub("CallbackHandler-1.0")
+local CBH = LibStub('CallbackHandler-1.0')
 
 -- Event dispatching and messagging
 
+---@type ABEvent-1.0
 local eventLib = LibStub:NewLibrary("ABEvent-1.0", 1)
 
-local events = CBH:New(eventLib, "RegisterEvent", "UnregisterEvent", "UnregisterAllEvents")
+local events = CBH:New(eventLib, 'RegisterEvent', 'UnregisterEvent', 'UnregisterAllEvents')
 local eventFrame = CreateFrame("Frame")
-eventFrame:SetScript(
-	"OnEvent",
-	function(_, ...)
-		return events:Fire(...)
-	end
-)
-function events:OnUsed(_, event)
-	return eventFrame:RegisterEvent(event)
-end
-function events:OnUnused(_, event)
-	return eventFrame:UnregisterEvent(event)
-end
+eventFrame:SetScript('OnEvent', function(_, ...) return events:Fire(...) end)
+function events:OnUsed(_, event) return eventFrame:RegisterEvent(event) end
+function events:OnUnused(_, event) return eventFrame:UnregisterEvent(event) end
 
-local messages = CBH:New(eventLib, "RegisterMessage", "UnregisterMessage", "UnregisterAllMessages")
+local messages = CBH:New(eventLib, 'RegisterMessage', 'UnregisterMessage', 'UnregisterAllMessages')
 eventLib.SendMessage = messages.Fire
 
 function eventLib:Embed(target)
-	for _, name in ipairs {
-		"RegisterEvent",
-		"UnregisterEvent",
-		"UnregisterAllEvents",
-		"RegisterMessage",
-		"UnregisterMessage",
-		"UnregisterAllMessages",
-		"SendMessage"
-	} do
+	for _, name in ipairs{'RegisterEvent', 'UnregisterEvent', 'UnregisterAllEvents', 'RegisterMessage', 'UnregisterMessage', 'UnregisterAllMessages', 'SendMessage'} do
 		target[name] = eventLib[name]
 	end
 end
@@ -80,18 +65,15 @@ local bucketLib = LibStub:NewLibrary("ABBucket-1.0", 1)
 local buckets = {}
 
 local function RegisterBucket(target, event, delay, callback, regFunc, unregFunc)
+
 	local received, timer, cancelled = {}, false, false
 	local handle = tostring(received):sub(8)
 
 	local actualCallback
 	if type(callback) == "string" then
-		actualCallback = function()
-			return target[callback](target, received)
-		end
+		actualCallback = function() return target[callback](target, received) end
 	else
-		actualCallback = function()
-			return callback(received)
-		end
+		actualCallback = function() return callback(received) end
 	end
 
 	local function Fire()
@@ -151,16 +133,14 @@ function bucketLib:UnregisterBucket(handle)
 end
 
 function bucketLib:UnregisterAllBuckets()
-	if not buckets[self] then
-		return
-	end
+	if not buckets[self] then return end
 	for _, cancel in pairs(buckets[self]) do
 		xpcall(cancel, geterrorhandler())
 	end
 end
 
 function bucketLib:Embed(target)
-	for _, name in ipairs {"RegisterBucketEvent", "RegisterBucketMessage", "UnregisterBucket", "UnregisterAllBuckets"} do
+	for _, name in ipairs{"RegisterBucketEvent", "RegisterBucketMessage", "UnregisterBucket", "UnregisterAllBuckets"} do
 		target[name] = bucketLib[name]
 	end
 end

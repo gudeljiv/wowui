@@ -17,23 +17,24 @@ local l10n = QuestieLoader:ImportModule("l10n")
 QuestieOptions.tabs.advanced = {...}
 local optionsDefaults = QuestieOptionsDefaults:Load()
 
-StaticPopupDialogs["QUESTIE_LANG_CHANGED_RELOAD"] = {
-    button1 = l10n('Reload UI'),
-    button2 = l10n('Cancel'),
-    OnAccept = function()
-        ReloadUI()
-    end,
-    text = l10n('The database needs to be updated to change language. Press reload to apply the new language'),
-    OnShow = function(self)
-        self:SetFrameStrata("TOOLTIP")
-    end,
-    timeout = 0,
-    whileDead = true,
-    hideOnEscape = true,
-    preferredIndex = 3
-}
-
 function QuestieOptions.tabs.advanced:Initialize()
+    -- This needs to be called inside of the Init process for l10n to be fully loaded
+    StaticPopupDialogs["QUESTIE_LANG_CHANGED_RELOAD"] = {
+        button1 = l10n('Reload UI'),
+        button2 = l10n('Cancel'),
+        OnAccept = function()
+            ReloadUI()
+        end,
+        text = l10n('The database needs to be updated to change language. Press reload to apply the new language'),
+        OnShow = function(self)
+            self:SetFrameStrata("TOOLTIP")
+        end,
+        timeout = 0,
+        whileDead = true,
+        hideOnEscape = true,
+        preferredIndex = 3
+    }
+
     return {
         name = function() return l10n('Advanced'); end,
         type = "group",
@@ -72,6 +73,17 @@ function QuestieOptions.tabs.advanced:Initialize()
                     QuestieOptionsUtils:Delay(0.5, QuestieQuest.SmoothReset, l10n('Setting icon limit value to %s : Redrawing!', value))
                 end,
             },
+            bugWorkarounds = {
+                type = "toggle",
+                order = 1.3,
+                name = function() return l10n('Enable bug workarounds'); end,
+                desc = function() return l10n('When enabled, Questie will hotfix vanilla UI bugs.'); end,
+                width = "full",
+                get = function() return Questie.db.global.bugWorkarounds; end,
+                set = function (_, value)
+                    Questie.db.global.bugWorkarounds = value
+                end
+            },
             seperatingHeader2 = {
                 type = "header",
                 order = 2,
@@ -86,7 +98,6 @@ function QuestieOptions.tabs.advanced:Initialize()
                 get = function() return Questie.db.global.enableTooltipsQuestID; end,
                 set = function (_, value)
                     Questie.db.global.enableTooltipsQuestID = value
-                    QuestieTracker:ResetLinesForChange()
                     QuestieTracker:Update()
                 end
             },

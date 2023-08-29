@@ -16,6 +16,11 @@ SRTIExternalUF = {
 		"CompactRaidFrame1", -- [1]
 		"CompactRaidFrame2", -- [2]
 	},
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+	},
 	["grid2"] = {
 		"Grid2LayoutHeader1UnitButton1", -- [1]
 		"Grid2LayoutHeader1UnitButton2", -- [2]

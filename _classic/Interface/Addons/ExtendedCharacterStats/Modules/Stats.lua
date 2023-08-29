@@ -37,7 +37,7 @@ local lastYOffset = 20
 
 
 --- Creates the main frame for the Stats window
-function Stats:CreateWindow()
+function Stats.CreateWindow()
     local ecs = ExtendedCharacterStats
 
     local mainFrame = CreateFrame("Frame", "ECS_StatsFrame", PaperDollItemsFrame, "BasicFrameTemplateWithInset")
@@ -73,7 +73,7 @@ function Stats:CreateWindow()
         if OutfitterButton then -- See #89
             toggleButton:SetPoint("TOPRIGHT", PaperDollItemsFrame, "TOPRIGHT", -55, -16)
         else
-            toggleButton:SetPoint("TOPRIGHT", PaperDollItemsFrame, "TOPRIGHT", -38, -4)
+            toggleButton:SetPoint("TOPRIGHT", PaperDollItemsFrame, "TOPRIGHT", -57, -16)
         end
     else
         toggleButton:SetPoint("BOTTOMRIGHT", PaperDollItemsFrame, "BOTTOMRIGHT", -38, 87)
@@ -102,7 +102,7 @@ function Stats:CreateWindow()
     end)
 
     _CreateStatInfos()
-    Config:CreateWindow()
+    Config.CreateWindow()
 end
 
 function Stats:UpdateWindowSize()
@@ -134,6 +134,10 @@ function Stats:HideWindow()
     _Stats.frame:SetShown(false)
 end
 
+function Stats:ShowWindow()
+    _Stats.frame:SetShown(true)
+end
+
 function Stats:GetFrame()
     return _Stats.frame
 end
@@ -146,16 +150,16 @@ end
 --- Helper function to iteracte all field of a given category and create them if they should be displayed
 ---@param category Category|SubCategory
 _CreateStatInfo = function(category, ...)
-    if (not ECS.IsTBC) and category.isTbcOnly then
+    if (not ECS.IsWotlk) and category.isTbcOnly then
         return
     end
 
-    if category.display == true then
+    if category.display then
         _CreateHeader(category.refName, i18n(category.text), category.isSubGroup)
         local stats = {...}
         -- Loop through all stats
         for _, stat in pairs(stats) do
-            if type(stat) == "table" and stat.display == true and ((not stat.isTbcOnly) or ECS.IsTBC) then
+            if type(stat) == "table" and stat.display and ((not stat.isTbcOnly) or ECS.IsWotlk) then
                 _CreateText(stat.refName, _FormatStatsText(stat), category.isSubGroup)
             end
         end
@@ -170,7 +174,6 @@ _FormatStatsText = function(stat)
         return Utils:Colorize(statText, colors.GRAY) .. Utils:Colorize(statValue, colors.WHITE)
     end
 
-    --local statTextColor, statValueColor, percentColor = Utils:GetColorsForStatTextRef(statTextRef)
     local textColor = stat.textColor or colors.DEFENSE_SECONDARY
     local statColor = stat.statColor or colors.DEFENSE_PRIMARY
 
@@ -185,8 +188,9 @@ _CreateStatInfos = function()
     _CreateStatInfo(category, category.movementSpeed)
 
     category = profile.melee
-    if ECS.IsTBC then
-        _CreateStatInfo(category, category.attackPower, category.crit, category.expertise)
+    if ECS.IsWotlk then
+        _CreateStatInfo(category, category.attackPower, category.crit, category.penetration, category.penetrationRating, category.expertise,
+                category.expertiseRating, category.hasteRating, category.hasteBonus)
     else
         _CreateStatInfo(category, category.attackPower, category.crit)
     end
@@ -198,21 +202,32 @@ _CreateStatInfos = function()
     end
 
     category = profile.ranged
-    _CreateStatInfo(category, category.attackPower, category.crit, category.attackSpeed)
+    if ECS.IsWotlk then
+        _CreateStatInfo(category, category.attackPower, category.crit, category.penetration, category.penetrationRating,
+                category.hasteRating, category.hasteBonus, category.attackSpeed)
+    else
+        _CreateStatInfo(category, category.attackPower, category.crit, category.attackSpeed)
+    end
+
     if category.display then
         category = category.hit
         _CreateStatInfo(category, category.rating, category.bonus, category.sameLevel, category.bossLevel)
     end
 
     category = profile.defense
-    _CreateStatInfo(category, category.armor, category.critImmunity, category.critReduction, category.defenseRating, category.defense,
-            category.blockChance, category.blockValue, category.parry, category.dodge, category.resilience)
+    _CreateStatInfo(category, category.armor, category.critImmunity, category.critReduction, category.avoidance, category.defenseRating,
+            category.defense, category.blockChance, category.blockValue, category.parry, category.dodge, category.resilience)
 
     category = profile.regen
-    _CreateStatInfo(category, category.mp5Items, category.mp5Spirit, category.mp5Buffs, category.mp5Casting)
+    _CreateStatInfo(category, category.mp5Items, category.mp5Spirit, category.mp5Buffs, category.mp5Casting, category.mp5NotCasting)
 
     category = profile.spell
-    _CreateStatInfo(category, category.crit, category.penetration)
+    if ECS.IsWotlk then
+        _CreateStatInfo(category, category.crit, category.hasteRating, category.hasteBonus, category.penetration)
+    else
+        _CreateStatInfo(category, category.crit, category.penetration)
+    end
+
     if category.display then
         category = category.hit
         _CreateStatInfo(category, category.rating, category.bonus, category.sameLevel, category.bossLevel)
@@ -301,7 +316,7 @@ function Stats:UpdateInformation()
 
     -- Loop through all categories
     for _, category in pairs(ExtendedCharacterStats.profile) do
-        if category and category.display == true then
+        if category and category.display then
             -- Loop through all stats
             _UpdateStats(category)
         end
@@ -315,12 +330,11 @@ _UpdateStats = function(category)
         if type(stat) == "table" then
             if stat.isSubGroup then
                 for _, subStat in pairs(stat) do
-                    if type(subStat) == "table" and subStat.display == true then
+                    if type(subStat) == "table" and subStat.display then
                         _UpdateItem(subStat.refName, _FormatStatsText(subStat))
                     end
                 end
-            elseif stat.display == true then
-                --_UpdateItem(stat.refName, i18n(stat.text) .. Data:GetStatInfo(stat.refName))
+            elseif stat.display then
                 _UpdateItem(stat.refName, _FormatStatsText(stat))
             end
         end

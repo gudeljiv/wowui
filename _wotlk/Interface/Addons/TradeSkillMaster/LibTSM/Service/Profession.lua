@@ -14,9 +14,9 @@ local ItemString = TSM.Include("Util.ItemString")
 local CraftString = TSM.Include("Util.CraftString")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local private = {
-	classicSpellIdLookup = {},
 	categoryInfoTemp = {},
 }
+local EMPTY_TABLE = {}
 
 
 
@@ -144,7 +144,7 @@ function Profession.HasCooldown(craftString)
 	if Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) then
 		return select(2, C_TradeSkillUI.GetRecipeCooldown(spellId)) and true or false
 	else
-		spellId = private.classicSpellIdLookup[spellId] or spellId
+		spellId = Scanner.GetClassicSpellId(spellId) or spellId
 		return GetTradeSkillCooldown(spellId) and true or false
 	end
 end
@@ -162,7 +162,7 @@ function Profession.GetRemainingCooldown(craftString)
 		end
 		cooldown = cooldownTime
 	else
-		spellId = private.classicSpellIdLookup[spellId] or spellId
+		spellId = Scanner.GetClassicSpellId(spellId) or spellId
 		cooldown = GetTradeSkillCooldown(spellId)
 	end
 	return cooldown and floor(cooldown) or nil
@@ -174,6 +174,13 @@ end
 ---@return number @The upper bound of the crafted quantity
 function Profession.GetCraftedQuantityRange(craftString)
 	return Scanner.GetCraftedQuantityRange(craftString)
+end
+
+---Gets the item GUIDs for the specified list of mats.
+---@param mats number[] The list of mats as itemIds
+---@return CraftingTargetItem[]
+function Profession.GetTargetItems(mats)
+	return C_TradeSkillUI.GetCraftingTargetItems(mats)
 end
 
 ---Gets the result of a recipe.
@@ -237,7 +244,7 @@ function Profession.GetResultInfo(craftString)
 			local name, _, icon = GetSpellInfo(indirectSpellId)
 			return nil, icon, name
 		else
-			local name, _, icon = GetSpellInfo(Profession.IsClassicCrafting() and GetCraftInfo(not Environment.IsRetail() and private.classicSpellIdLookup[spellId] or spellId) or spellId)
+			local name, _, icon = GetSpellInfo(Profession.IsClassicCrafting() and GetCraftInfo(not Environment.IsRetail() and Scanner.GetClassicSpellId(spellId) or spellId) or spellId)
 			return nil, icon, name
 		end
 	elseif strfind(resultItem, "item:") then
@@ -253,6 +260,13 @@ end
 ---@return boolean
 function Profession.IsEnchant(craftString)
 	return Scanner.IsEnchant(craftString)
+end
+
+---Returns whether or not a recipe is an salvage.
+---@param craftString string The craft string for the recipe
+---@return boolean
+function Profession.IsSalvage(craftString)
+	return Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) and Scanner.GetRecipeTypeByCraftString(craftString) == Enum.TradeskillRecipeType.Salvage
 end
 
 ---Returns whether or not a recipe is a tinker.
@@ -276,7 +290,7 @@ function Profession.NeededTools(craftString)
 		return nil
 	else
 		local toolsStr, hasTools = nil, nil
-		spellId = private.classicSpellIdLookup[spellId] or spellId
+		spellId = Scanner.GetClassicSpellId(spellId) or spellId
 		if Profession.IsClassicCrafting() then
 			toolsStr, hasTools = GetCraftSpellFocus(spellId)
 		else
@@ -284,6 +298,16 @@ function Profession.NeededTools(craftString)
 		end
 		return not hasTools and toolsStr or nil
 	end
+end
+
+---Gets the description for a recipe.
+---@param craftString string The craft string for the recipe
+---@return string
+function Profession.GetRecipeDescription(craftString)
+	if not craftString or not Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) then
+		return ""
+	end
+	return C_TradeSkillUI.GetRecipeDescription(CraftString.GetSpellId(craftString), EMPTY_TABLE)
 end
 
 ---Gets the link for a recipe.
@@ -294,7 +318,7 @@ function Profession.GetRecipeLink(craftString)
 	if Environment.HasFeature(Environment.FEATURES.C_TRADE_SKILL_UI) then
 		return C_TradeSkillUI.GetRecipeLink(spellId)
 	else
-		spellId = private.classicSpellIdLookup[spellId] or spellId
+		spellId = Scanner.GetClassicSpellId(spellId) or spellId
 		if Profession.IsClassicCrafting() then
 			return GetCraftRecipeLink(spellId)
 		else
@@ -355,6 +379,9 @@ end
 ---@param craftString string The craft string for the recipe
 ---@return number? baseDifficulty
 ---@return number? quality
+---@return boolean? hasQualityMats
+---@return number? inspirationAmount
+---@return number? inspirationChance
 function Profession.GetRecipeQualityInfo(craftString)
 	return Scanner.GetRecipeQualityInfo(craftString)
 end
@@ -467,16 +494,17 @@ end
 ---Gets the mat string for a specified slot id.
 ---@param craftString string
 ---@param slotId number
----@return string The mat string
+---@return string
 function Profession.GetOptionalMatString(craftString, slotId)
 	return Scanner.GetOptionalMatString(craftString, slotId)
 end
 
----Returns whether or not there are any optional mats for a craft string.
+---Gets the number of optional mats of a given type.
 ---@param craftString string The craft string
----@return boolean
-function Profession.HasOptionalMats(craftString)
-	return Scanner.HasOptionalMats(craftString)
+---@param matType table The mat type
+---@return number
+function Profession.GetNumOptionalMats(craftString, matType)
+	return Scanner.GetNumOptionalMats(craftString, matType)
 end
 
 ---Gets the quantity for a mat by item id within the current profession.

@@ -33,9 +33,12 @@ local next, pairs, error, rawget, next, wipe, tinsert, sort, strsplit, table, as
 
 local bitband = bit.band
 
-local function ClearScripts(f)
-	f:SetScript("OnEvent", nil)
-	f:SetScript("OnUpdate", nil)
+local function ClearScripts(icon)
+	icon:UnregisterAllEvents()
+	icon:UnregisterAllSimpleUpdateEvents()
+	icon:SetScript("OnEvent", nil)
+	icon:SetScript("OnUpdate", nil)
+	icon:SetUpdateFunction(nil)
 end
 
 local UPD_INTV
@@ -236,22 +239,33 @@ function Icon.RegisterEvent(icon, event)
 		icon.registeredEvents = {}
 	end
 	icon.registeredEvents[event] = true
+	if event:find("^TMW_") then
+		if not icon.OnEvent then
+			TMW:Error("icon:SetScript('OnEvent', func) needs to be done before registering for TMW events on an icon with RegisterEvent.")
+		end
 
-	icon:RegisterEvent_Blizz(event)
+		TMW:RegisterCallback(event, icon.OnEvent, icon)
+	else
+		icon:RegisterEvent_Blizz(event)
+	end
 end
 
 -- [WRAPPER] (no documentation needed)
 Icon.UnregisterAllEvents_Blizz = Icon.UnregisterAllEvents
 function Icon.UnregisterAllEvents(icon, event)
-	-- UnregisterAllEvents_Blizz uses a metric fuckton of CPU, so don't do it.
-	-- Instead, keep track of events that we register, and unregister them by hand.
+	if not icon.registeredEvents then return end
+	for event in pairs(icon.registeredEvents) do
+		if event:find("^TMW_") then
+			if not icon.OnEvent then
+				TMW:Error("icon:SetScript('OnEvent', func) needs to be done after unregistering for TMW events on an icon with RegisterEvent.")
+			end
 	
-	if icon.registeredEvents then
-		for event in pairs(icon.registeredEvents) do
+			TMW:UnregisterCallback(event, icon.OnEvent, icon)
+		else
 			icon:UnregisterEvent(event)
 		end
-		wipe(icon.registeredEvents)
 	end
+	wipe(icon.registeredEvents)
 end
 
 -- [SCRIPT HANDLER] (no documentation needed)
@@ -879,11 +893,8 @@ end
 -- @param soft [boolean] True if the icon might not be getting permanantly disabled (in which case this method just serves as a reset)
 function Icon.DisableIcon(icon, soft)
 	
-	icon:UnregisterAllEvents()
-	icon:UnregisterAllSimpleUpdateEvents()
 	ClearScripts(icon)
 	icon:SetUpdateMethod("auto")
-	icon:SetUpdateFunction(nil)
 	icon:Hide()
 
 	if not soft then
@@ -1069,7 +1080,6 @@ function Icon.Setup(icon)
 		-- Put the icon in a configurable state.
 		icon:Show()
 		ClearScripts(icon)
-		icon:SetUpdateFunction(nil)
 		
 		icon:SetInfo(
 			"alphaOverride; start, duration; stack, stackText",
@@ -1094,7 +1104,7 @@ function Icon.Setup(icon)
 			icon:InheritDataFromIcon(icon.group.Controller)
 		else
 			-- In config mode, give controller icons the special texture,
-			-- and make them slightly transparent for the hell of it.
+			-- and make them slightly transparent for the fun of it.
 			icon:SetInfo("texture; alphaOverride",
 				"Interface\\AddOns\\TellMeWhen\\Textures\\Controlled",
 				icon.Enabled and 0.95 or 0.5
@@ -1154,7 +1164,6 @@ function Icon.SetModulesToEnabledStateOfIcon(icon, sourceIcon)
 end
 
 
--- If you want me to explain wtf this is, send me (Cybeloras) a PM on CurseForge.
 TMW.IconStateArbitrator = {
 	StateHandlers = {},
 	
@@ -1201,8 +1210,7 @@ TMW.IconStateArbitrator = {
 				-- This happens when undoing to a blank icon from a non-blank icon, for example.
 				print("NO ALPHA ON STATE:", handlerToUse.attribute, icon, icon:GetName(), state.Alpha, state)
 			end
-			icon:SetInfo_INTERNAL("realAlpha", state.Alpha or 0)
-			icon:SetInfo_INTERNAL("calculatedState", state)
+			icon:SetInfo_INTERNAL("realAlpha; calculatedState", state.Alpha or 0, state)
 		end
 	end,
 

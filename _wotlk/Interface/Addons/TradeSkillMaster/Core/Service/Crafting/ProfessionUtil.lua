@@ -8,6 +8,7 @@ local TSM = select(2, ...) ---@type TSM
 local ProfessionUtil = TSM.Crafting:NewPackage("ProfessionUtil")
 local Environment = TSM.Include("Environment")
 local CraftString = TSM.Include("Util.CraftString")
+local SlotId = TSM.Include("Util.SlotId")
 local Event = TSM.Include("Util.Event")
 local Log = TSM.Include("Util.Log")
 local Delay = TSM.Include("Util.Delay")
@@ -94,7 +95,7 @@ function ProfessionUtil.GetNumCraftable(craftString)
 	local num, numAll = math.huge, math.huge
 	for i = 1, Profession.GetNumMats(craftString) do
 		local itemString, quantity = Profession.GetMatInfo(craftString, i)
-		local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
+		local totalQuantity = CustomPrice.GetSourcePrice(itemString, "NumInventory") or 0
 		if not itemString or not quantity or totalQuantity == 0 then
 			return 0, 0
 		end
@@ -113,7 +114,7 @@ function ProfessionUtil.GetNumCraftableRecipeString(recipeString)
 	for i = 1, Profession.GetNumMats(craftString) do
 		local itemString, quantity, _, isQuality = Profession.GetMatInfo(craftString, i)
 		if not isQuality then
-			local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
+			local totalQuantity = CustomPrice.GetSourcePrice(itemString, "NumInventory") or 0
 			if not itemString or not quantity or totalQuantity == 0 then
 				return 0, 0
 			end
@@ -124,7 +125,7 @@ function ProfessionUtil.GetNumCraftableRecipeString(recipeString)
 	end
 	for _, _, itemId in RecipeString.OptionalMatIterator(recipeString) do
 		local itemString = ItemString.Get(itemId)
-		local totalQuantity = CustomPrice.GetItemPrice(itemString, "NumInventory") or 0
+		local totalQuantity = CustomPrice.GetSourcePrice(itemString, "NumInventory") or 0
 		if totalQuantity == 0 then
 			return 0, 0
 		end
@@ -183,12 +184,14 @@ function ProfessionUtil.GetNumCraftableFromDBRecipeString(recipeString)
 	return num
 end
 
-function ProfessionUtil.PrepareToCraft(craftString, recipeString, quantity, level)
+function ProfessionUtil.PrepareToCraft(craftString, recipeString, quantity, level, salvageSlotId)
 	local spellId = CraftString.GetSpellId(craftString)
-	if recipeString then
-		quantity = min(quantity, ProfessionUtil.GetNumCraftableRecipeString(recipeString))
-	else
-		quantity = min(quantity, ProfessionUtil.GetNumCraftable(craftString))
+	if not salvageSlotId then
+		if recipeString then
+			quantity = min(quantity, ProfessionUtil.GetNumCraftableRecipeString(recipeString))
+		else
+			quantity = min(quantity, ProfessionUtil.GetNumCraftable(craftString))
+		end
 	end
 	if quantity == 0 then
 		return
@@ -200,11 +203,13 @@ function ProfessionUtil.PrepareToCraft(craftString, recipeString, quantity, leve
 	private.preparedTime = GetTime()
 end
 
-function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callback)
+function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, salvageSlotId, callback)
 	local spellId = nil
 	local level = nil
 	local hasOptionalMats = false
-	if type(recipeId) == "string" then
+	if salvageSlotId then
+		spellId = RecipeString.GetSpellId(recipeId)
+	elseif type(recipeId) == "string" then
 		spellId = RecipeString.GetSpellId(recipeId)
 		level = RecipeString.GetLevel(recipeId)
 		hasOptionalMats = RecipeString.HasOptionalMats(recipeId)
@@ -261,7 +266,14 @@ function ProfessionUtil.Craft(craftString, recipeId, quantity, useVellum, callba
 		if enchantItemLocation then
 			C_TradeSkillUI.CraftEnchant(spellId, quantity, optionalMats, enchantItemLocation)
 		else
-			C_TradeSkillUI.CraftRecipe(spellId, quantity, optionalMats, level)
+			if salvageSlotId then
+				local salvageItemLocation = ItemLocation:CreateFromBagAndSlot(SlotId.Split(salvageSlotId))
+				if salvageItemLocation and pcall(C_Item.DoesItemExist, salvageItemLocation) then
+					C_TradeSkillUI.CraftSalvage(spellId, quantity, salvageItemLocation)
+				end
+			else
+				C_TradeSkillUI.CraftRecipe(spellId, quantity, optionalMats, level)
+			end
 		end
 		for _, info in pairs(optionalMats) do
 			TempTable.Release(info)

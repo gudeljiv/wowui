@@ -6,8 +6,8 @@
 		
 		local version, build, date, tocversion = GetBuildInfo()
 
-		_detalhes.build_counter = 222
-		_detalhes.alpha_build_counter = 222 --if this is higher than the regular counter, use it instead
+		_detalhes.build_counter = 224
+		_detalhes.alpha_build_counter = 224 --if this is higher than the regular counter, use it instead
 		_detalhes.game_version = version
 		_detalhes.userversion = version .. _detalhes.build_counter
 		_detalhes.realversion = 142 --core version, this is used to check API version for scripts and plugins (see alias below)

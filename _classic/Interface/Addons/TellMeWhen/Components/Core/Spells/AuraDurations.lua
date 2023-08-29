@@ -12,6 +12,10 @@
 
 
 if not TMW then return end
+if not TMW.isClassic then
+    TMW.UnitAura = UnitAura
+    return
+end
 
 local TMW = TMW
 local L = TMW.L

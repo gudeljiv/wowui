@@ -17,11 +17,8 @@ local L = TMW.L
 local print = TMW.print
 local pairs, ipairs =
 	  pairs, ipairs
-local GetSpellInfo, UnitGUID =
-	  GetSpellInfo, UnitGUID
-
-local UnitCastingInfo = TMW.UnitCastingInfo
-local UnitChannelInfo = TMW.UnitChannelInfo
+local GetSpellInfo, UnitCastingInfo, UnitChannelInfo =
+	  GetSpellInfo, UnitCastingInfo, UnitChannelInfo
 
 local strlowerCache = TMW.strlowerCache
 
@@ -58,7 +55,10 @@ Type:SetModuleAllowance("IconModule_PowerBar_Overlay", true)
 
 Type:RegisterIconDefaults{
 	-- The unit(s) to check for casts
-	Unit					= "player",
+	Unit					= "player", 
+
+	-- True if the icon should only check interruptible casts.
+	Interruptible			= false,
 
 	-- True if the icon should display blanks instead of the pocketwatch texture.
 	NoPocketwatch			= false,
@@ -83,10 +83,10 @@ Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
 Type:RegisterConfigPanel_ConstructorFunc(150, "TellMeWhen_CastSettings", function(self)
 	self:SetTitle(Type.name)
 	self:BuildSimpleCheckSettingFrame({
-		-- function(check)
-		-- 	check:SetTexts(L["ICONMENU_ONLYINTERRUPTIBLE"], L["ICONMENU_ONLYINTERRUPTIBLE_DESC"])
-		-- 	check:SetSetting("Interruptible")
-		-- end,
+		function(check)
+			check:SetTexts(L["ICONMENU_ONLYINTERRUPTIBLE"], L["ICONMENU_ONLYINTERRUPTIBLE_DESC"])
+			check:SetSetting("Interruptible")
+		end,
 		function(check)
 			check:SetTexts(L["ICONMENU_NOPOCKETWATCH"], L["ICONMENU_NOPOCKETWATCH_DESC"])
 			check:SetSetting("NoPocketwatch")
@@ -96,8 +96,36 @@ end)
 
 
 
+-- The unit spellcast events that the icon will register.
+-- We keep them in a table because there's a lot of them.
+local events = {
+	UNIT_SPELLCAST_START = true,
+	UNIT_SPELLCAST_STOP = true,
+	UNIT_SPELLCAST_SUCCEEDED = true,
+	UNIT_SPELLCAST_FAILED = true,
+	UNIT_SPELLCAST_FAILED_QUIET = true,
+	UNIT_SPELLCAST_DELAYED = true,
+	UNIT_SPELLCAST_INTERRUPTED = true,
+	UNIT_SPELLCAST_CHANNEL_START = true,
+	UNIT_SPELLCAST_CHANNEL_UPDATE = true,
+	UNIT_SPELLCAST_CHANNEL_STOP = true
+}
+if TMW.isRetail then
+	-- not available in wrath
+	events.UNIT_SPELLCAST_EMPOWER_START = true
+	events.UNIT_SPELLCAST_EMPOWER_UPDATE = true
+	events.UNIT_SPELLCAST_EMPOWER_STOP = true
+	events.UNIT_SPELLCAST_INTERRUPTIBLE = true
+	events.UNIT_SPELLCAST_NOT_INTERRUPTIBLE = true
+end
+
+
 local function Cast_OnEvent(icon, event, arg1)
-	if event == "TMW_UNITSET_UPDATED" and arg1 == icon.UnitSet then
+	if events[event] and icon.UnitSet.UnitsLookup[arg1] then
+		-- A UNIT_SPELLCAST_ event
+		-- If the icon is checking the unit, schedule an update for the icon.
+		icon.NextUpdateTime = 0
+	elseif event == icon.UnitSet.event then
 		-- A unit was just added or removed from icon.Units, so schedule an update.
 		icon.NextUpdateTime = 0
 	end
@@ -106,8 +134,8 @@ end
 local function Cast_OnUpdate(icon, time)
 
 	-- Upvalue things that will be referenced a lot in our loops.
-	local NameFirst, NameStringHash, Units =
-	icon.Spells.First, icon.Spells.StringHash, icon.Units
+	local NameFirst, NameStringHash, Units, Interruptible =
+	icon.Spells.First, icon.Spells.StringHash, icon.Units, icon.Interruptible
 
 	for u = 1, #Units do
 		local unit = Units[u]
@@ -115,18 +143,18 @@ local function Cast_OnUpdate(icon, time)
 
 		if GUID then
 
-			local name, _, iconTexture, start, endTime, _, _ = UnitCastingInfo(unit)
+			local name, _, iconTexture, start, endTime, _, _, notInterruptible = UnitCastingInfo(unit)
 			-- Reverse is used to reverse the timer sweep masking behavior. Regular casts should have it be false.
 			local reverse = false
 
 			-- There is no regular spellcast. Check for a channel.
 			if not name then
-				name, _, iconTexture, start, endTime, _ = UnitChannelInfo(unit)
+				name, _, iconTexture, start, endTime, _, notInterruptible = UnitChannelInfo(unit)
 				-- Channeled casts should reverse the timer sweep behavior.
 				reverse = true
 			end
 
-			if name and (NameFirst == "" or NameStringHash[strlowerCache[name]]) then
+			if name and not (notInterruptible and Interruptible) and (NameFirst == "" or NameStringHash[strlowerCache[name]]) then
 				
 				-- Times reported by the cast APIs are in milliseconds for some reason.
 				start, endTime = start/1000, endTime/1000
@@ -206,13 +234,14 @@ function Type:Setup(icon)
 	-- Setup events and update functions.
 	if icon.UnitSet.allUnitsChangeOnEvent then
 		icon:SetUpdateMethod("manual")
-
-		-- We can't check against the unit for TMW_UNIT_CAST_UPDATE because LibClassicCasterino's events don't
-		-- work like the blizzard events do - they don't fire with every valid unitID.
-		icon:RegisterSimpleUpdateEvent("TMW_UNIT_CAST_UPDATE")
-		
-		TMW:RegisterCallback("TMW_UNITSET_UPDATED", Cast_OnEvent, icon)
 		icon:SetScript("OnEvent", Cast_OnEvent)
+	
+		-- Register the UNIT_SPELLCAST_ events
+		for event in pairs(events) do
+			icon:RegisterEvent(event)
+		end
+	
+		icon:RegisterEvent(icon.UnitSet.event)
 	end
 
 	icon:SetUpdateFunction(Cast_OnUpdate)

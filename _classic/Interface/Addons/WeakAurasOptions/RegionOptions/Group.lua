@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L;
@@ -66,6 +66,7 @@ local function createDistributeAlignOptions(id, data)
         if(#data.controlledChildren < 1) then
           return nil;
         end
+        ---@type AnchorPoint?, AnchorPoint?, AnchorPoint?
         local alignedCenter, alignedRight, alignedLeft = "CENTER", "RIGHT", "LEFT";
         for index, childId in pairs(data.controlledChildren) do
           local childData = WeakAuras.GetData(childId);
@@ -132,6 +133,7 @@ local function createDistributeAlignOptions(id, data)
         if(#data.controlledChildren < 1) then
           return nil;
         end
+        ---@type AnchorPoint?, AnchorPoint?, AnchorPoint?
         local alignedCenter, alignedBottom, alignedTop = "CENTER", "RIGHT", "LEFT";
         for index, childId in pairs(data.controlledChildren) do
           local childData = WeakAuras.GetData(childId);
@@ -190,6 +192,7 @@ local function createDistributeAlignOptions(id, data)
     },
     distribute_h = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Distribute Horizontally"],
       order = 20,
@@ -273,6 +276,7 @@ local function createDistributeAlignOptions(id, data)
     },
     distribute_v = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Distribute Vertically"],
       order = 25,
@@ -356,6 +360,7 @@ local function createDistributeAlignOptions(id, data)
     },
     space_h = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Space Horizontally"],
       order = 30,
@@ -410,7 +415,7 @@ local function createDistributeAlignOptions(id, data)
           local childData = WeakAuras.GetData(childId);
           local childRegion = WeakAuras.GetRegion(childId)
           if(childData and childRegion) then
-            if(v > 0) then
+            if(v >= 0) then
               if(childData.selfPoint:find("LEFT")) then
                 childData.xOffset = xOffset;
               elseif(childData.selfPoint:find("RIGHT")) then
@@ -439,6 +444,7 @@ local function createDistributeAlignOptions(id, data)
     },
     space_v = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Space Vertically"],
       order = 35,
@@ -451,7 +457,7 @@ local function createDistributeAlignOptions(id, data)
         end
         local spaced;
         local previousData;
-        for index, childId in pairs(data.controlledChildren) do
+        for _, childId in pairs(data.controlledChildren) do
           local childData = WeakAuras.GetData(childId);
           if(childData) then
             local _, bottom, _, top = getRect(childData);
@@ -493,7 +499,7 @@ local function createDistributeAlignOptions(id, data)
           local childData = WeakAuras.GetData(childId);
           local childRegion = WeakAuras.GetRegion(childId)
           if(childData and childRegion) then
-            if(v > 0) then
+            if(v >= 0) then
               if(childData.selfPoint:find("BOTTOM")) then
                 childData.yOffset = yOffset;
               elseif(childData.selfPoint:find("TOP")) then
@@ -560,6 +566,7 @@ local function createOptions(id, data)
     -- Alignment/Distribute options are added below
     scale = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Group Scale"],
       order = 45,
@@ -624,7 +631,7 @@ end
 
 local function createThumbnail()
   -- frame
-  local thumbnail = CreateFrame("FRAME", nil, UIParent);
+  local thumbnail = CreateFrame("Frame", nil, UIParent);
   thumbnail:SetWidth(32);
   thumbnail:SetHeight(32);
 
@@ -643,7 +650,7 @@ end
 
 local function createDefaultIcon(parent)
   -- default Icon
-  local defaultIcon = CreateFrame("FRAME", nil, parent);
+  local defaultIcon = CreateFrame("Frame", nil, parent);
   parent.defaultIcon = defaultIcon;
 
   local t1 = defaultIcon:CreateTexture(nil, "ARTWORK");
@@ -667,9 +674,9 @@ end
 
 -- Modify preview thumbnail
 local function modifyThumbnail(parent, frame, data)
-  function frame:SetIcon(path)
+  function frame:SetIcon()
     if data.groupIcon then
-      local success = frame.icon:SetTexture(data.groupIcon)
+      local success = WeakAuras.SetTextureOrAtlas(frame.icon, data.groupIcon)
       if success then
         if frame.defaultIcon then
           frame.defaultIcon:Hide()
@@ -688,15 +695,16 @@ local function modifyThumbnail(parent, frame, data)
     frame.defaultIcon:Show()
   end
 
-  frame:SetIcon(nil)
+  frame:SetIcon()
 end
 
 -- Create "new region" preview
 local function createIcon()
-  local thumbnail = createThumbnail(UIParent)
+  local thumbnail = createThumbnail()
   thumbnail.defaultIcon = createDefaultIcon(thumbnail)
   return thumbnail
 end
 
 -- Register new region type options with WeakAuras
-WeakAuras.RegisterRegionOptions("group", createOptions, createIcon, L["Group"], createThumbnail, modifyThumbnail, L["Controls the positioning and configuration of multiple displays at the same time"]);
+WeakAuras.RegisterRegionOptions("group", createOptions, createIcon, L["Group"], createThumbnail, modifyThumbnail,
+                                L["Controls the positioning and configuration of multiple displays at the same time"])
