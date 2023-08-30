@@ -13,31 +13,51 @@ _G.SECOND_ONELETTER_ABBR = '|cffffffff%d|r'
 -- _G.DEBUFF_MAX_DISPLAY = 32 -- show more debuffs
 -- _G.BUFF_MIN_ALPHA = 1
 --]]
-local origSecondsToTimeAbbrev = _G.SecondsToTimeAbbrev
+-- local origSecondsToTimeAbbrev = _G.SecondsToTimeAbbrev
 local function SecondsToTimeAbbrevHook(seconds)
-	origSecondsToTimeAbbrev(seconds)
+	-- origSecondsToTimeAbbrev(seconds)
 
-	local tempTime
-	if (seconds >= 86400) then
-		tempTime = ceil(seconds / 86400)
+	-- local tempTime
+	-- if (seconds >= 86400) then
+	-- 	tempTime = ceil(seconds / 86400)
+	-- 	return "|cffffffff%dd|r", tempTime
+	-- end
+
+	-- if (seconds >= 3600) then
+	-- 	tempTime = ceil(seconds / 3600)
+	-- 	return "|cffffffff%dh|r", tempTime
+	-- end
+
+	-- if (seconds >= 60) then
+	-- 	tempTime = ceil(seconds / 60)
+	-- 	return "|cffffffff%dm|r", tempTime
+	-- end
+
+
+	local tempTime;
+	local threshold = 1.5
+	if ( seconds >= SECONDS_PER_DAY * threshold ) then
+		tempTime = ceil(seconds / SECONDS_PER_DAY);
+		-- return DAY_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dd|r", tempTime
 	end
-
-	if (seconds >= 3600) then
-		tempTime = ceil(seconds / 3600)
+	if ( seconds >= SECONDS_PER_HOUR * threshold ) then
+		tempTime = ceil(seconds / SECONDS_PER_HOUR);
+		-- return HOUR_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dh|r", tempTime
 	end
-
-	if (seconds >= 60) then
-		tempTime = ceil(seconds / 60)
+	if ( seconds >= SECONDS_PER_MIN * threshold ) then
+		tempTime = ceil(seconds / SECONDS_PER_MIN);
+		-- return MINUTE_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dm|r", tempTime
 	end
+	-- return SECOND_ONELETTER_ABBR, seconds;
 
 	return "|cffffffff%d|r", seconds
 end
-SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
+-- SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
 
-BuffFrame:SetScript("OnUpdate", nil)
+-- BuffFrame:SetScript("OnUpdate", nil)
 
 -- TemporaryEnchantFrame ...
 TempEnchant1:ClearAllPoints()

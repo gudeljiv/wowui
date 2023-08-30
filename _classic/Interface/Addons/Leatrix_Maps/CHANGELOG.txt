@@ -1,5 +1,63 @@
-1.14.26 - 19th January 2022
-- Maintenance update.
+1.14.122 - 23rd August 2023
+- Updated for game version 14.4.
+
+1.14.114 - 28th June 2023
+- Updated LibDBIcon.
+
+1.14.82 - 8th February 2023
+- For 'Show points of interest', clicking a travel icon or a portal icon will now show the destination map.
+- Updated LibDBIcon.
+
+1.14.73 - 5th December 2022
+- Adjusted world map frame strata.
+
+1.14.72 - 30th November 2022
+- Reformatted the texture file.
+
+1.14.69 - 15th November 2022
+- Updated LibDBIcon.
+
+1.14.61 - 21st September 2022
+- File structure updates.
+
+1.14.60 - 14th September 2022
+- Locale updates.
+
+1.14.53 - 27th July 2022
+- For 'Unlock map frame', added a fix for Demodal preventing the map frame from being moved to the top edge of the screen.
+
+1.14.52 - 20th July 2022
+- Fixed a minor cosmetic issue with 'Show zone menus' which may have sometimes caused menus to overlap.  Added skins for ElvUI.
+
+1.14.51 - 13th July 2022
+- Added a new setting 'Show zone menus'.  If enabled, continent and zone dropdown menus will be shown in the map frame allowing you to see the current map zone and change it as you wish.  It's enabled by default.
+- For 'Show zone crossings', Mulgore and Thunder Bluff maps now show north and south zone crossing arrows.
+
+1.14.48 - 22nd June 2022
+- In the game key bindings menu, you can now set a keybind to toggle Leatrix Maps.
+
+1.14.46 - 8th June 2022
+- Added 'Ravenholdt Manor' zone crossing to Hillsbrad Foothills and Alterac Mountains maps.
+
+1.14.39 - 20th April 2022
+- Updated for game version 1.14.3.
+
+1.14.36 - 30th March 2022
+- Removed the incorrectly placed spirit healers in Winterspring and Badlands.
+- For developers, you can now configure Leatrix Maps from your own addon or script using the following as a guide:
+
+-- Ensure Leatrix Maps does not replace LeaMapsDB on next reload
+SlashCmdList["Leatrix_Maps"]("nosave")
+-- Clear the settings database (optional but recommended)
+wipe(LeaMapsDB)
+-- Configure the settings (add any settings you like here)
+LeaMapsDB["NoMapBorder"] = "On"
+-- Reload the UI to apply the settings
+ReloadUI()
+
+1.14.29 - 9th February 2022
+- Updated for game version 1.14.2.
+- For 'Center map on player', releasing shift (after holding it down to prevent the map from centering) will no longer cause the map to center.  Centering will only will start again when you do something that requires a map update without shift being held down.  This includes zooming, panning, clicking an area of the map that isn't a button, toggling the map, etc.  This applies to both the world map and battleground map.
 
 1.14.16 - 22nd December 2021
 - Added missing Duskwood to Deadwind pass zone crossing.

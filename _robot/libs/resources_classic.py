@@ -15,9 +15,7 @@ data = {
     "globals": [],
     "healing": [
         {"name": "healthstone", "type": "GetSpellTexture", "id": 5720,  "key": "4", "modifier": "lalt"},
-        {"name": "healing potion", "type": "GetSpellTexture", "id": 28491, "key": "5", "modifier": "lalt"},
-        {"name": "fel blossom", "type": "GetSpellTexture", "id": 28527, "key": "6", "modifier": "lalt"},
-        {"name": "lifeblood", "type": "GetSpellTexture", "id": 55428, "key": "7", "modifier": "lalt"},
+        {"name": "healing potion", "type": "GetSpellTexture", "id": 29203, "key": "5", "modifier": "lalt"},
     ],
     "shaman": {
         "main": [

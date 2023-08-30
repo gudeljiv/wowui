@@ -29,6 +29,7 @@ hooksecurefunc('ActionButton_UpdateHotkeys', function(self)
 		text = gsub(text, KEY_HOME, 'Hm')
 		text = gsub(text, KEY_DELETE, 'Del')
 
+		hotkey:SetWidth(30)
 		hotkey:SetText(text)
 	end
 end)

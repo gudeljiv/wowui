@@ -4,6 +4,9 @@
 ## Version: 54000
 ## SavedVariablesPerCharacter: xKillCount
 
+libs\LibStub-1.0\LibStub.lua
+libs\LibRangeCheck-2.0\LibRangeCheck-2.0.lua
+
 _Config.lua
 _Core.lua
 _Debug.lua
@@ -53,10 +56,9 @@ Addons/RXPGuide.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua
 
-GarbageCollector.lua
-RotBot.lua
+# GarbageCollector.lua
 
-SpellCount/SpellCount.lua
+# SpellCount/SpellCount.lua
 
 Helpers/ActionButton.lua
 Helpers/AutoBuyAmmo.lua
@@ -75,13 +77,13 @@ Helpers/FastLoot.lua
 Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
-# Helpers/PlayerTargetSetMark.lua
+Helpers/ShamanBlueColor.lua
 Helpers/SkinBuffs.lua
 Helpers/TooltipItemID.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua
 Helpers/UIScale.lua
-Helpers/SortBags.lua
+# Helpers/SortBags.lua
 
 xVermin.lua
 
@@ -90,9 +92,5 @@ Rotation/_Core.lua
 Rotation/_Frames.lua
 Rotation/AOE.lua
 Rotation/BehindTarget.lua
-Rotation/DeathKnight.lua
-# Rotation/DeathKnight_Rotation.lua
 Rotation/Warrior.lua
 
-
-xxTest.lua

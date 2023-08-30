@@ -82,6 +82,9 @@ local function BorderItemSlots()
 	end
 end
 
+CharacterModelFrameRotateRightButton:Hide()
+CharacterModelFrameRotateLeftButton:Hide()
+
 local f = CreateFrame('Frame')
 f:RegisterEvent('UNIT_INVENTORY_CHANGED')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')

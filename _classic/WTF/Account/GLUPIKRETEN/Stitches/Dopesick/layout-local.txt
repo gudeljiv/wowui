@@ -19,7 +19,7 @@ Anchor: TOP
 X: -8
 Y: -211
 W: 330
-H: 113
+H: 125
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

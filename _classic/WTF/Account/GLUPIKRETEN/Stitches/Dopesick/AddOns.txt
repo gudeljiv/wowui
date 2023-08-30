@@ -12,3 +12,4 @@ Grid2RaidDebuffsOptions: disabled
 nTooltip: disabled
 WeakAuras: enabled
 xVermin: enabled
+RXPGuides: disabled

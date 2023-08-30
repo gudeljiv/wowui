@@ -25,6 +25,7 @@ import mss.tools
 import mss
 import sys
 import os
+import multiprocessing
 import pyautogui
 import cv2
 import _thread
@@ -77,7 +78,6 @@ print("DEBUG:", debug)
 print("ROTATION:", not pause)
 print("MODE:", mode.upper())
 print("CLASS:", wow_class_loaded.upper())
-
 
 def toKeyCode(c):
     keyCode = keyCodeMap[c]

@@ -92,8 +92,10 @@ f:SetScript(
 		BNToastFrame:SetWidth(250)
 		BNToastFrame:CreateBeautyBorder(8)
 
-		LSToastAnchor1:ClearAllPoints()
-		LSToastAnchor1:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 30, 45)
+		if LSToastAnchor1 then
+			LSToastAnchor1:ClearAllPoints()
+			LSToastAnchor1:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 30, 45)
+		end
 
 		CastingBarFrame.Text:ClearAllPoints()
 		CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)

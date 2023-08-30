@@ -203,12 +203,12 @@ RXPCComms = {
 					["xp"] = 8180,
 				},
 				["Bntp"] = {
-					["isRxp"] = true,
+					["level"] = 79,
 					["lastSeen"] = 59679.141,
 					["xpPercentage"] = 0,
-					["level"] = 79,
-					["timePlayed"] = 132.4069999999992,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 132.4069999999992,
+					["isRxp"] = true,
 				},
 				["Halldora"] = {
 					["timePlayed"] = 337.7830000002869,
@@ -231,12 +231,12 @@ RXPCComms = {
 					["xp"] = 4090,
 				},
 				["Painsempai"] = {
-					["isRxp"] = true,
+					["level"] = 80,
 					["lastSeen"] = 596168.656,
 					["xpPercentage"] = 0,
-					["level"] = 80,
-					["timePlayed"] = 0,
 					["class"] = "SHAMAN",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Nofacepala"] = {
 					["timePlayed"] = 79.00900000007823,
@@ -249,12 +249,12 @@ RXPCComms = {
 					["xp"] = 30150,
 				},
 				["Yéti"] = {
-					["isRxp"] = true,
+					["level"] = 77,
 					["lastSeen"] = 280727.025,
 					["xpPercentage"] = 28,
-					["level"] = 77,
-					["timePlayed"] = 954.5420000000158,
 					["class"] = "DEATHKNIGHT",
+					["timePlayed"] = 954.5420000000158,
+					["isRxp"] = true,
 				},
 				["Shotek"] = {
 					["timePlayed"] = 85.72200000006706,
@@ -297,12 +297,12 @@ RXPCComms = {
 					["xp"] = 30150,
 				},
 				["Kaldoxx"] = {
-					["class"] = "DRUID",
+					["isRxp"] = true,
 					["lastSeen"] = 45076.885,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 622.106000000007,
 					["level"] = 80,
+					["timePlayed"] = 622.106000000007,
+					["class"] = "DRUID",
 				},
 				["Kronwall"] = {
 					["timePlayed"] = 1298.44299999997,
@@ -380,12 +380,12 @@ RXPCComms = {
 					["xp"] = 1268,
 				},
 				["Shydot"] = {
-					["level"] = 80,
+					["class"] = "WARLOCK",
 					["lastSeen"] = 65948.16100000001,
 					["xpPercentage"] = 0,
-					["class"] = "WARLOCK",
-					["timePlayed"] = 0,
 					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 80,
 				},
 				["Soliina"] = {
 					["timePlayed"] = 2557.462999999989,
@@ -473,12 +473,12 @@ RXPCComms = {
 					["xp"] = 920,
 				},
 				["Purree"] = {
-					["level"] = 80,
+					["class"] = "WARRIOR",
 					["lastSeen"] = 602245.591,
 					["xpPercentage"] = 0,
-					["class"] = "WARRIOR",
-					["timePlayed"] = 0,
 					["isRxp"] = true,
+					["timePlayed"] = 0,
+					["level"] = 80,
 				},
 				["Vinterax"] = {
 					["timePlayed"] = 30.3019999996759,
@@ -566,12 +566,12 @@ RXPCComms = {
 					["xp"] = 4090,
 				},
 				["Gøbellerbue"] = {
-					["isRxp"] = true,
+					["level"] = 74,
 					["lastSeen"] = 1592546.788,
 					["xpPercentage"] = 62,
-					["level"] = 74,
-					["timePlayed"] = 30.03899999987334,
 					["class"] = "HUNTER",
+					["timePlayed"] = 30.03899999987334,
+					["isRxp"] = true,
 				},
 				["Chobi"] = {
 					["timePlayed"] = 208.0380000001751,
@@ -619,12 +619,12 @@ RXPCComms = {
 					["xp"] = 30150,
 				},
 				["Thuglord"] = {
-					["isRxp"] = true,
+					["level"] = 80,
 					["lastSeen"] = 1274637.758,
 					["xpPercentage"] = 0,
-					["level"] = 80,
-					["timePlayed"] = 0,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Rogatek"] = {
 					["timePlayed"] = 0,
@@ -632,12 +632,12 @@ RXPCComms = {
 					["xp"] = 40901,
 				},
 				["Thelichlight"] = {
-					["class"] = "PALADIN",
+					["isRxp"] = true,
 					["lastSeen"] = 1274638.242,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
 					["level"] = 80,
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
 				},
 				["Missnothing"] = {
 					["timePlayed"] = 954.5420000000158,
@@ -645,12 +645,12 @@ RXPCComms = {
 					["xp"] = 7875,
 				},
 				["Nálkás"] = {
-					["class"] = "PALADIN",
+					["isRxp"] = true,
 					["lastSeen"] = 98098.773,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 0,
 					["level"] = 80,
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
 				},
 				["Làfáy"] = {
 					["timePlayed"] = 0.02300000004470348,
@@ -698,12 +698,12 @@ RXPCComms = {
 					["xp"] = 8180,
 				},
 				["Krafnica"] = {
-					["isRxp"] = true,
+					["level"] = 73,
 					["lastSeen"] = 2763976.476,
 					["xpPercentage"] = 42,
-					["level"] = 73,
-					["timePlayed"] = 1298.44299999997,
 					["class"] = "MAGE",
+					["timePlayed"] = 1298.44299999997,
+					["isRxp"] = true,
 				},
 				["Progwyborczy"] = {
 					["timePlayed"] = 954.5420000000158,
@@ -746,12 +746,12 @@ RXPCComms = {
 					["xp"] = 920,
 				},
 				["Bóris"] = {
-					["class"] = "DEATHKNIGHT",
+					["isRxp"] = true,
 					["lastSeen"] = 1737889.096,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
-					["timePlayed"] = 2557.462999999989,
 					["level"] = 70,
+					["timePlayed"] = 2557.462999999989,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Nayld"] = {
 					["timePlayed"] = 173.0210000000661,
@@ -763,10 +763,10 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 8180,
 				},
-				["Talanjii"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "PRIEST",
-					["xp"] = 1376,
+				["Yascha"] = {
+					["timePlayed"] = 1525.030000000028,
+					["class"] = "PALADIN",
+					["xp"] = 754,
 				},
 				["Starytank"] = {
 					["timePlayed"] = 0.02300000004470348,
@@ -793,10 +793,10 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 4090,
 				},
-				["Yascha"] = {
-					["timePlayed"] = 1525.030000000028,
-					["class"] = "PALADIN",
-					["xp"] = 754,
+				["Talanjii"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "PRIEST",
+					["xp"] = 1376,
 				},
 				["Tinofspam"] = {
 					["timePlayed"] = 1549.380999999994,
@@ -850,12 +850,6 @@ RXPCComms = {
 				},
 			},
 			["announcements"] = {
-				["78-79 The Storm Peaks"] = {
-					["collect"] = {
-					},
-					["complete"] = {
-					},
-				},
 				["79-80 Icecrown"] = {
 					["collect"] = {
 					},
@@ -863,6 +857,12 @@ RXPCComms = {
 					},
 				},
 				["72-74 Dragonblight"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+				["78-79 The Storm Peaks"] = {
 					["collect"] = {
 					},
 					["complete"] = {
