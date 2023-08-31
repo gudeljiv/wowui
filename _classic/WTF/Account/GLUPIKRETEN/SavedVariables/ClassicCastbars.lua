@@ -33,6 +33,7 @@ ClassicCastbarsDB = {
 		},
 		["showForFriendly"] = true,
 		["height"] = 11,
+		["borderPaddingHeight"] = 1.3,
 		["castFontSize"] = 8,
 		["showTimer"] = false,
 		["iconPositionY"] = 0,
@@ -49,14 +50,11 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
+		["borderPaddingWidth"] = 1.17,
+		["frameStrata"] = "HIGH",
 		["width"] = 106,
-		["position"] = {
-			"CENTER", -- [1]
-			7.3, -- [2]
-			-23.1, -- [3]
-		},
 		["textOutline"] = "",
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["iconPositionX"] = -3,
 		["showBorderShield"] = true,
 		["statusColor"] = {
 			1, -- [1]
@@ -64,13 +62,18 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["iconPositionX"] = -3,
+		["position"] = {
+			"CENTER", -- [1]
+			7.3, -- [2]
+			-23.1, -- [3]
+		},
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -78,30 +81,46 @@ ClassicCastbarsDB = {
 			1, -- [4]
 		},
 	},
+	["npcCastTimeCache"] = {
+		["15990Frostbolt"] = 2000,
+		["15989Frost Breath"] = 7000,
+		["3101Fireball"] = 3016.999999999825,
+	},
 	["usePerCharacterSettings"] = false,
 	["locale"] = "enUS",
 	["party"] = {
-		["castFontSize"] = 9,
-		["autoPosition"] = false,
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
 		["textPoint"] = "CENTER",
-		["iconPositionX"] = -5,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
-		["showIcon"] = true,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 16,
 		["statusColorUninterruptible"] = {
 			0.7, -- [1]
 			0.7, -- [2]
 			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = false,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
 			1, -- [4]
 		},
 		["position"] = {
@@ -109,46 +128,38 @@ ClassicCastbarsDB = {
 			141, -- [2]
 			6, -- [3]
 		},
+		["height"] = 12,
+		["borderPaddingHeight"] = 1.3,
+		["castFontSize"] = 9,
+		["showTimer"] = false,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 0,
+		["showSpark"] = true,
+		["hideIconBorder"] = false,
+		["showIcon"] = true,
+		["iconSize"] = 16,
 		["statusColorSuccess"] = {
 			0, -- [1]
 			1, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = false,
-		["textPositionY"] = 0,
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
-		["castFont"] = "Fonts\\FRIZQT__.TTF",
-		["iconPositionY"] = 0,
-		["width"] = 120,
+		["frameStrata"] = "HIGH",
 		["textOutline"] = "",
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
+		["borderPaddingWidth"] = 1.17,
+		["width"] = 120,
+		["iconPositionX"] = -5,
 		["showBorderShield"] = true,
-		["height"] = 12,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["showTimer"] = false,
+		["autoPosition"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -156,29 +167,40 @@ ClassicCastbarsDB = {
 			1, -- [4]
 		},
 	},
-	["version"] = "29",
+	["version"] = "34",
 	["focus"] = {
-		["castFontSize"] = 10,
-		["showTimer"] = true,
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
 		["textPoint"] = "CENTER",
-		["autoPosition"] = false,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
 		["ignoreParentAlpha"] = false,
-		["hideIconBorder"] = false,
-		["showIcon"] = true,
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 16,
 		["statusColorUninterruptible"] = {
 			0.7, -- [1]
 			0.7, -- [2]
 			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = true,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
 			1, -- [4]
 		},
 		["position"] = {
@@ -186,46 +208,38 @@ ClassicCastbarsDB = {
 			-10.7, -- [2]
 			-80.7, -- [3]
 		},
+		["height"] = 15,
+		["borderPaddingHeight"] = 1.3,
+		["castFontSize"] = 10,
+		["showTimer"] = true,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 0,
+		["showSpark"] = true,
+		["hideIconBorder"] = false,
+		["showIcon"] = true,
+		["iconSize"] = 16,
 		["statusColorSuccess"] = {
 			0, -- [1]
 			1, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = true,
-		["textPositionY"] = 0,
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\Tooltips\\UI-Tooltip-Border",
-		["castFont"] = "Fonts\\FRIZQT__.TTF",
-		["iconPositionY"] = 0,
-		["width"] = 150,
+		["frameStrata"] = "HIGH",
 		["textOutline"] = "",
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
+		["borderPaddingWidth"] = 1.17,
+		["width"] = 150,
+		["iconPositionX"] = -5,
 		["showBorderShield"] = true,
-		["height"] = 15,
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["iconPositionX"] = -5,
+		["autoPosition"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -283,8 +297,8 @@ ClassicCastbarsDB = {
 		["11881Boulder"] = true,
 		["12265Fireball"] = true,
 		["14943Stun Bomb Attack"] = true,
+		["14020Ignite Flesh"] = true,
 		["11490Sacrifice"] = true,
-		["16446Stoneskin"] = true,
 		["12459Demon Portal"] = true,
 		["8127Chain Lightning"] = true,
 		["12264Arcane Explosion"] = true,
@@ -301,7 +315,7 @@ ClassicCastbarsDB = {
 		["16452Arcane Explosion"] = true,
 		["14945Stun Bomb Attack"] = true,
 		["15247Mind Flay"] = true,
-		["14020Ignite Flesh"] = true,
+		["16446Stoneskin"] = true,
 		["11729Toxic Spit"] = true,
 		["15979Spike Volley"] = true,
 		["17770Foul Spores"] = true,
@@ -343,27 +357,38 @@ ClassicCastbarsDB = {
 		["13996Bomb"] = true,
 	},
 	["arena"] = {
-		["castFontSize"] = 10,
-		["autoPosition"] = false,
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
 		["textPoint"] = "CENTER",
-		["iconPositionX"] = -5,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
-		["showIcon"] = true,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 16,
 		["statusColorUninterruptible"] = {
 			0.7, -- [1]
 			0.7, -- [2]
 			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = false,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
 			1, -- [4]
 		},
 		["position"] = {
@@ -371,46 +396,38 @@ ClassicCastbarsDB = {
 			-149, -- [2]
 			-5, -- [3]
 		},
+		["height"] = 15,
+		["borderPaddingHeight"] = 1.3,
+		["castFontSize"] = 10,
+		["showTimer"] = false,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 0,
+		["showSpark"] = true,
+		["hideIconBorder"] = false,
+		["showIcon"] = true,
+		["iconSize"] = 16,
 		["statusColorSuccess"] = {
 			0, -- [1]
 			1, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = false,
-		["textPositionY"] = 0,
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-		["castFont"] = "Fonts\\FRIZQT__.TTF",
-		["iconPositionY"] = 0,
-		["width"] = 150,
+		["frameStrata"] = "HIGH",
 		["textOutline"] = "",
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
+		["borderPaddingWidth"] = 1.17,
+		["width"] = 150,
+		["iconPositionX"] = -5,
 		["showBorderShield"] = true,
-		["height"] = 15,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["showTimer"] = false,
+		["autoPosition"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -419,27 +436,38 @@ ClassicCastbarsDB = {
 		},
 	},
 	["player"] = {
-		["castFontSize"] = 12,
-		["autoPosition"] = true,
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
 		["textPoint"] = "CENTER",
-		["iconPositionX"] = -10,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
-		["showIcon"] = true,
-		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 22,
 		["statusColorUninterruptible"] = {
 			0.7, -- [1]
 			0.7, -- [2]
 			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = false,
+		["textPositionY"] = 1,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
 			1, -- [4]
 		},
 		["position"] = {
@@ -447,46 +475,39 @@ ClassicCastbarsDB = {
 			-18, -- [2]
 			-87, -- [3]
 		},
+		["height"] = 20,
+		["borderPaddingHeight"] = 1.3,
+		["showTotalTimer"] = false,
+		["castFontSize"] = 12,
+		["showTimer"] = false,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 0,
+		["showSpark"] = true,
+		["hideIconBorder"] = false,
+		["showIcon"] = true,
+		["iconSize"] = 22,
 		["statusColorSuccess"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = false,
-		["textPositionY"] = 1,
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
-		["castFont"] = "Fonts\\FRIZQT__.TTF",
-		["iconPositionY"] = 0,
-		["width"] = 190,
+		["frameStrata"] = "HIGH",
 		["textOutline"] = "",
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
+		["borderPaddingWidth"] = 1.17,
+		["width"] = 190,
+		["iconPositionX"] = -10,
 		["showBorderShield"] = false,
-		["height"] = 20,
+		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["showTimer"] = false,
+		["autoPosition"] = true,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -495,27 +516,38 @@ ClassicCastbarsDB = {
 		},
 	},
 	["target"] = {
-		["castFontSize"] = 10,
-		["autoPosition"] = false,
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
 		["textPoint"] = "CENTER",
-		["iconPositionX"] = -5,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
-		["showIcon"] = true,
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 16,
 		["statusColorUninterruptible"] = {
 			0.7, -- [1]
 			0.7, -- [2]
 			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = true,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
 			1, -- [4]
 		},
 		["position"] = {
@@ -523,46 +555,38 @@ ClassicCastbarsDB = {
 			7.9, -- [2]
 			-84, -- [3]
 		},
+		["height"] = 15,
+		["borderPaddingHeight"] = 1.3,
+		["castFontSize"] = 10,
+		["showTimer"] = true,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 0,
+		["showSpark"] = true,
+		["hideIconBorder"] = false,
+		["showIcon"] = true,
+		["iconSize"] = 16,
 		["statusColorSuccess"] = {
 			0, -- [1]
 			1, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = true,
-		["textPositionY"] = 0,
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\Tooltips\\UI-Tooltip-Border",
-		["castFont"] = "Fonts\\FRIZQT__.TTF",
-		["iconPositionY"] = 0,
-		["width"] = 150,
+		["frameStrata"] = "HIGH",
 		["textOutline"] = "",
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
+		["borderPaddingWidth"] = 1.17,
+		["width"] = 150,
+		["iconPositionX"] = -5,
 		["showBorderShield"] = true,
-		["height"] = 15,
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["showTimer"] = true,
+		["autoPosition"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]

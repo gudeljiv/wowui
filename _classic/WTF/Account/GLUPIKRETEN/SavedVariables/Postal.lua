@@ -8,9 +8,9 @@ Postal3ClassicDB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Dopeclaw|Stitches|Horde|8|DRUID", -- [1]
-				"Dopesick|Stitches|Horde|5|WARRIOR", -- [2]
-				"Dopesnare|Stitches|Horde|1|HUNTER", -- [3]
+				"Dopeclaw|Stitches|Horde|9|DRUID", -- [1]
+				"Dopesick|Stitches|Horde|1|WARRIOR", -- [2]
+				"Dopesnare|Stitches|Horde|4|HUNTER", -- [3]
 			},
 		},
 	},

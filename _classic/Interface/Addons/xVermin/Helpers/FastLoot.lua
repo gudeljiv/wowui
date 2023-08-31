@@ -1,7 +1,7 @@
 local _, xVermin = ...
 
 local delay = 0
-local fastloot = true
+local fastloot = false
 local function FastLoot()
 	if fastloot and GetTime() - delay >= 0.3 then
 		delay = GetTime()

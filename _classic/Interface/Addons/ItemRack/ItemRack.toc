@@ -1,6 +1,7 @@
-## Interface: 20501
-## Title: ItemRack
-## Author: Gello - Updated for Classic by Rottenbeer
+## Interface: 11403
+## Title: ItemRack - Classic
+## Version: 3.75
+## Author: Gello - Updated for Classic by Rottenbeer,Roadblock
 ## SavedVariables: ItemRackSettings, ItemRackItems, ItemRackEvents
 ## SavedVariablesPerCharacter: ItemRackUser
 ## OptionalDeps: Masque

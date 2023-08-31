@@ -1,5 +1,6 @@
 -- ItemRackQueue.lua
 local _
+local GetItemCooldown = _G.GetItemCooldown or C_Container.GetItemCooldown
 
 function ItemRack.PeriodicQueueCheck()
 	if SpellIsTargeting() then
@@ -84,7 +85,8 @@ function ItemRack.ProcessAutoQueue(slot)
 end
 
 function ItemRack.ItemNearReady(id)
-	local start,duration = C_Container.GetItemCooldown(id)
+	local start,duration = GetItemCooldown(id)
+	if not tonumber(start) then return end -- can return nil shortly after loading screen
 	if start==0 or math.max(start + duration - GetTime(),0)<=30 then
 		return true
 	end

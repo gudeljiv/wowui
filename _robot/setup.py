@@ -68,10 +68,10 @@ file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 if os.name == "posix":
-    abilities_folder = dir_path + "/images/" + monitor
+    abilities_folder = dir_path + "/images/" + mode + "/" + monitor
     slash = "/"
 else:
-    abilities_folder = dir_path + "\images\\" + monitor
+    abilities_folder = dir_path + "\images\\" + mode + "\\" + monitor
     slash = "\\"
 
 if not os.path.exists(abilities_folder):

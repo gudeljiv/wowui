@@ -45,37 +45,14 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /cast Revenge
 /use 10
 END
-VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Vigilance
-/cast [@focus,exists] Vigilance
-END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
 /cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
 /cast [nocombat] Charge; [combat] Intercept
-END
-VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 8
-/use 8
 END
 VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:3] Recklessness
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
-END
-VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]14;[spec:2]15
-END
-VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]13;[spec:2]10
-/use Loatheb's Shadow
-/use Blood Fury
-END
-VER 3 000000000100001E " " "134400"
-#showtooltip
-/startattack
-/cast [@mouseover,exists][]Heroic Throw
 END

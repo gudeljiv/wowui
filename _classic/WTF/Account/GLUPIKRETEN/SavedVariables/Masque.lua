@@ -305,7 +305,6 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["ItemRack_Map icon menu"] = {
-					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -585,7 +584,6 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["ItemRack_Character info menus"] = {
-					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -1071,7 +1069,6 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["ItemRack_On screen panels"] = {
-					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -1292,7 +1289,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack_On screen menus"] = {
-					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -2757,9 +2753,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_dJleqPjLxEJ"] = {
+				["WeakAuras_75DF4O2TOMv"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Brownstone",
+					["SkinID"] = "Cainyx",
 					["Inherit"] = false,
 				},
 				["AdiBags_Backpack"] = {
@@ -2767,7 +2763,7 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_q6yzOhDKLje"] = {
+				["WeakAuras_dJleqPjLxEJ"] = {
 					["Upgraded"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
@@ -2858,7 +2854,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack"] = {
-					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -3097,10 +3092,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["AdiBags"] = {
-					["Disabled"] = true,
-					["SkinID"] = "Brownstone",
+				["WeakAuras_4MOHRbfHTt3"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
 				},
 				["WeakAuras_wtf8K2fnmWZ"] = {
 					["Upgraded"] = true,
@@ -3117,8 +3112,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
-				["WeakAuras_t6iVMaddGDD"] = {
-					["Upgraded"] = true,
+				["AdiBags"] = {
+					["Disabled"] = true,
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
@@ -3241,10 +3236,10 @@ MasqueDB = {
 					["SkinID"] = "Cainyx",
 					["Inherit"] = false,
 				},
-				["WeakAuras_4MOHRbfHTt3"] = {
+				["WeakAuras_t6iVMaddGDD"] = {
 					["Upgraded"] = true,
-					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
 				},
 				["WeakAuras_BCbY1a(PPrP"] = {
 					["Upgraded"] = true,
@@ -3404,9 +3399,9 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
-				["WeakAuras_75DF4O2TOMv"] = {
+				["WeakAuras_q6yzOhDKLje"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Cainyx",
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_5zK181hdG4N"] = {
@@ -3999,7 +3994,12 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 			},
-			["API_VERSION"] = 100007,
+			["LDB"] = {
+				["minimapPos"] = 210.5709698114854,
+				["position"] = 0,
+				["hide"] = true,
+			},
+			["API_VERSION"] = 100105,
 		},
 	},
 }

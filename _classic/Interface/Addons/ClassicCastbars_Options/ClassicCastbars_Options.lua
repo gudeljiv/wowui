@@ -1,7 +1,7 @@
 local L = LibStub("AceLocale-3.0"):GetLocale("ClassicCastbars")
 local LSM = LibStub("LibSharedMedia-3.0")
 
-local isClassic = _G.WOW_PROJECT_ID == _G.WOW_PROJECT_CLASSIC
+local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 
 local TEXT_POINTS = {
     ["CENTER"] = "CENTER",
@@ -9,12 +9,21 @@ local TEXT_POINTS = {
     ["LEFT"] = "LEFT",
 }
 
-local TEXT_OUTLINES = {
+local TEXT_OUTLINES = { -- font flags
     [""] = L.DEFAULT,
     ["OUTLINE"] = "OUTLINE",
-    ["THICKOUTLINE"] = "THICKOUTLINE",
+    ["THICK"] = "THICK",
+    ["THICK,OUTLINE"] = "THICK OUTLINE",
     ["MONOCHROME"] = "MONOCHROME",
-    ["MONOCHROME,OUTLINE"] = "MONOCHROME OUTLINE"
+    ["MONOCHROME,OUTLINE"] = "MONOCHROME OUTLINE",
+    ["MONOCHROME,THICK"] = "MONOCHROME THICK",
+}
+
+local CASTBAR_FRAME_STRATAS = {
+    ["HIGH"] = "HIGH",
+    ["MEDIUM"] = "MEDIUM",
+    ["LOW"] = "LOW",
+    ["BACKGROUND"] = "BACKGROUND",
 }
 
 local function GetLSMTable(lsmType)
@@ -56,11 +65,12 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
         name = format("%s %s", L.CASTBAR, localizedUnit),
         order = order,
         type = "group",
-        get = function(info)
+
+        get = function(info) -- db.unit.key
             return ClassicCastbars.db[info[1]][info[3]]
         end,
-        set = function(info, value)
-            ClassicCastbars.db[info[1]][info[3]] = value -- db.unit.x = value
+        set = function(info, value) -- db.unit.key = value
+            ClassicCastbars.db[info[1]][info[3]] = value
             ClassicCastbars_TestMode:OnOptionChanged(unitID)
         end,
 
@@ -72,23 +82,23 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                 inline = false,
 
                 args = {
-                    -- keys here has to match savedvariables key
-                    -- or else you have to set a new 'get' and 'set' func
+                    -- WARN: Keys here has to match savedvariables/db key names,
+                    -- or else you have to set a new 'get' and 'set' func to override the main ones above
                     enabled = {
                         order = 1,
                         name = GetStatusColoredEnableText(unitID),
                         desc = L.TOGGLE_CASTBAR_TOOLTIP,
                         width = "full", -- these have to be full to not truncate text in non-english locales
                         type = "toggle",
-                        hidden = isClassic and unitID == "focus",
+                        hidden = isClassicEra and unitID == "focus",
                         confirm = function()
                             return unitID == "player" and ClassicCastbars.db[unitID].enabled and L.REQUIRES_RESTART or false
                         end,
                         set = function(_, value)
                             ClassicCastbars.db[unitID].enabled = value
                             ClassicCastbars:ToggleUnitEvents(true)
-                            if ClassicCastbars.DisableBlizzardCastbar then -- is TBC
-                                ClassicCastbars:DisableBlizzardCastbar(unitID, value)
+                            if ClassicCastbars.DisableBlizzardCastbar then -- is TBC+
+                                ClassicCastbars:DisableBlizzardCastbar()
                             end
                             if unitID == "player" then
                                 if value == false then
@@ -131,6 +141,15 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         type = "toggle",
                         disabled = ModuleIsDisabled,
                     },
+                    showTotalTimer = {
+                        order = 5,
+                        width = "full",
+                        name = L.SHOW_TOTAL_TIMER,
+                        desc = L.SHOW_TOTAL_TIMER_TOOLTIP,
+                        type = "toggle",
+                        hidden = unitID ~= "player",
+                        disabled = ModuleIsDisabled,
+                    },
                     showSpark = {
                         order = 6,
                         width = "full",
@@ -157,6 +176,8 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         hidden = unitID == "player",
                     },
                     posX = {
+                        -- Position slider X for nameplate castbars only
+                        -- TODO: is there a better way to do this after nameplate GetPoint() changes?
                         order = 9,
                         name = "Position X",
                         desc = "Position X",
@@ -165,7 +186,6 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         min = -999,
                         max = 999,
                         step = 1,
-                        bigStep = 10,
                         hidden = unitID ~= "nameplate",
                         get = function() return ClassicCastbars.db[unitID].position[2] end,
                         set = function(_, value)
@@ -177,6 +197,8 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         end,
                     },
                     posY = {
+                        -- Position slider Y for nameplate castbars only
+                        -- TODO: is there a better way to do this after nameplate GetPoint() changes?
                         order = 10,
                         name = "Position Y",
                         desc = "Position Y",
@@ -185,7 +207,6 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         min = -999,
                         max = 999,
                         step = 1,
-                        bigStep = 10,
                         hidden = unitID ~= "nameplate",
                         get = function()
                             return ClassicCastbars.db[unitID].position[3]
@@ -233,6 +254,26 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         max = 200,
                         step = 1,
                         bigStep = 10,
+                    },
+                    borderPaddingHeight = {
+                        order = 3,
+                        name = L.BORDER_PADDING_HEIGHT,
+                        width = 2,
+                        type = "range",
+                        min = 0.01,
+                        max = 5.0,
+                        step = 0.01,
+                        bigStep = 0.01,
+                    },
+                    borderPaddingWidth = {
+                        order = 4,
+                        name = L.BORDER_PADDING_WIDTH,
+                        width = 2,
+                        type = "range",
+                        min = 0.01,
+                        max = 5.0,
+                        step = 0.01,
+                        bigStep = 0.01,
                     },
                 },
             },
@@ -509,6 +550,9 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         end,
                         set = function(info, value)
                             ClassicCastbars.db[info[1]][info[3]] = GetLSMTable("border")[value]
+                            if ClassicCastbars.db[info[1]].showBorderShield then
+                                print("ClassicCastbars: " .. L.CAST_BORDER_SHIELD_NOTICE) --luacheck: ignore
+                            end
                             ClassicCastbars_TestMode:OnOptionChanged(unitID)
                         end,
                     },
@@ -525,6 +569,13 @@ local function CreateUnitTabGroup(unitID, localizedUnit, order)
                         min = 0,
                         max = 99,
                         bigStep = 5,
+                    },
+                    frameStrata = {
+                        order = 8,
+                        name = L.FRAME_STRATA,
+                        desc = L.FRAME_STRATA_DESC,
+                        type = "select",
+                        values = CASTBAR_FRAME_STRATAS,
                     },
                 },
            },
@@ -568,9 +619,9 @@ local function GetOptionsTable()
             target = CreateUnitTabGroup("target", L.TARGET, 1),
             nameplate = CreateUnitTabGroup("nameplate", L.NAMEPLATE, 2),
             party = CreateUnitTabGroup("party", L.PARTY, 3),
-            player = CreateUnitTabGroup("player", L.PLAYER, 4),
+            player = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and CreateUnitTabGroup("player", L.PLAYER, 4) or nil,
             focus = CreateUnitTabGroup("focus", _G.FOCUS or "Focus", 5),
-            arena = not isClassic and CreateUnitTabGroup("arena", _G.ARENA or "Arena", 6) or nil,
+            arena = not isClassicEra and CreateUnitTabGroup("arena", _G.ARENA or "Arena", 6) or nil,
 
             resetAllSettings = {
                 order = 6,
@@ -582,11 +633,8 @@ local function GetOptionsTable()
                 func = function()
                     local shouldReloadUI = ClassicCastbars.db.player.enabled
                     -- Reset savedvariables to default
-                    local oldUninterruptibleData = CopyTable(ClassicCastbars.db.npcCastUninterruptibleCache)
                     ClassicCastbarsCharDB = {}
                     ClassicCastbarsDB = CopyTable(ClassicCastbars.defaultConfig)
-                    ClassicCastbarsDB.npcCastUninterruptibleCache = oldUninterruptibleData -- no reason to reset this data
-                    ClassicCastbars.npcCastUninterruptibleCache = ClassicCastbarsDB.npcCastUninterruptibleCache -- update pointer
                     ClassicCastbars.db = ClassicCastbarsDB -- update pointer
 
                     ClassicCastbars_TestMode:OnOptionChanged("target")
@@ -629,15 +677,3 @@ end
 -- Initialize option panel
 LibStub("AceConfig-3.0"):RegisterOptionsTable("ClassicCastbars", GetOptionsTable)
 LibStub("AceConfigDialog-3.0"):AddToBlizOptions("ClassicCastbars")
-
--- Slash commands to open panel
-SLASH_CLASSICCASTBARS1 = "/castbars"
-SLASH_CLASSICCASTBARS2 = "/castbar"
-SLASH_CLASSICCASTBARS3 = "/classiccastbars"
-SLASH_CLASSICCASTBARS4 = "/classicastbars"
-SlashCmdList["CLASSICCASTBARS"] = function()
-    LibStub("AceConfigDialog-3.0"):Open("ClassicCastbars")
-    if LibStub("AceConfigDialog-3.0").OpenFrames["ClassicCastbars"] then
-        LibStub("AceConfigDialog-3.0").OpenFrames["ClassicCastbars"]:SetStatusText("https://www.curseforge.com/wow/addons/classiccastbars")
-    end
-end

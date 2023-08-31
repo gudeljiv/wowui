@@ -1,4 +1,8 @@
 {
 	"git.ignoreLimitWarning": true,
-	"Lua.workspace.maxPreload": 10000
+	"Lua.workspace.maxPreload": 10000,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8"
+	},
+	"python.formatting.provider": "none"
 }

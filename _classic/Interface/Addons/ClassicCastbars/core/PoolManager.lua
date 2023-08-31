@@ -7,11 +7,16 @@ local function ResetterFunc(pool, frame)
     frame:SetParent(nil)
     frame:ClearAllPoints()
 
+    if frame.animationGroup and frame.animationGroup:IsPlaying() then
+        frame.animationGroup:Stop()
+    end
+
     if frame._data then
         frame._data = nil
     end
 end
 
+-- TODO: with retails changes to SmallCastingBarFrameTemplate we should look into creating our own template soon
 local framePool = CreateFramePool("Statusbar", UIParent, "SmallCastingBarFrameTemplate", ResetterFunc)
 local framesCreated = 0
 local framesActive = 0
@@ -38,14 +43,23 @@ function PoolManager:ReleaseFrame(frame)
 end
 
 function PoolManager:InitializeNewFrame(frame)
-    frame:Hide() -- New frames are always shown, hide it while we're updating it
-
     -- Some of the points set by SmallCastingBarFrameTemplate doesn't
     -- work well when user modify castbar size, so set our own points instead
     frame.Border:ClearAllPoints()
     frame.Icon:ClearAllPoints()
     frame.Text:ClearAllPoints()
     frame.Icon:SetPoint("LEFT", frame, -15, 0)
+
+    -- Dragonflight / retail
+    if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+        frame.TextBorder:SetAlpha(0)
+        frame.BorderShield:SetTexture("Interface\\CastingBar\\UI-CastingBar-Small-Shield")
+        frame.Border:SetTexture("Interface\\CastingBar\\UI-CastingBar-Border-Small")
+        frame.Flash:SetTexture("Interface\\CastingBar\\UI-CastingBar-Flash-Small")
+        frame.Spark:SetTexture("Interface\\CastingBar\\UI-CastingBar-Spark")
+        frame.Spark:SetBlendMode("ADD")
+        frame.Spark:SetSize(32, 32)
+    end
 
     -- Clear any scripts inherited from frame template
     frame:UnregisterAllEvents()

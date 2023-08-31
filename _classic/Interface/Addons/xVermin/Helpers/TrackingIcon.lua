@@ -28,7 +28,7 @@ local function TrackingIcon()
 
 	for i = 1, C_Minimap.GetNumTrackingTypes() do
 		local n, t, a = C_Minimap.GetTrackingInfo(i)
-		if a and (t == 136025 or t == 133939 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275 or t == 135974) then
+		if a and (t == 136025 or t == 2383 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275 or t == 135974) then
 			texture = t
 		end
 	end
@@ -43,7 +43,7 @@ local function TrackingIcon()
 		end
 
 		-- Herbs
-		if (texture == 133939) then
+		if (texture == 2383) then
 			titm.text:SetText('HERBS')
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\inv_misc_flower_02')
@@ -133,15 +133,26 @@ local function InitializeTracking()
 	local i = 1
 	while true do
 		local spellName, spellSubName = GetSpellBookItemName(i, BOOKTYPE_SPELL)
+		
 		if not spellName then
 			do
 				break
 			end
 		end
 
-		if
-			(spellName == 'Find Minerals' or spellName == 'Find Herbs' or spellName == 'Track Beasts' or spellName == 'Track Humanoids' or spellName == 'Track Undead' or spellName == 'Track Hidden' or spellName == 'Track Demons' or spellName == 'Track Elementals' or spellName == 'Track Dragonkin' or spellName == 'Track Giants' or spellName == 'Sense Undead')
-		 then
+		if (
+			spellName == 'Find Minerals' or 
+			spellName == 'Find Herbs' or 
+			spellName == 'Track Beasts' or 
+			spellName == 'Track Humanoids' or 
+			spellName == 'Track Undead' or 
+			spellName == 'Track Hidden' or 
+			spellName == 'Track Demons' or 
+			spellName == 'Track Elementals' or 
+			spellName == 'Track Dragonkin' or 
+			spellName == 'Track Giants' or 
+			spellName == 'Sense Undead'
+		) then
 			TrackingIconFrame:RegisterUnitEvent('UNIT_AURA', 'player')
 			TrackingIconFrame:SetScript('OnEvent', TrackingIcon)
 			TrackingIcon()
@@ -154,7 +165,7 @@ end
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:RegisterEvent('CHAT_MSG_SKILL')
--- f:RegisterEvent('MINIMAP_UPDATE_TRACKING')
+f:RegisterEvent('MINIMAP_UPDATE_TRACKING')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
@@ -167,10 +178,12 @@ f:SetScript(
 	end
 )
 
--- MiniMapTracking:Hide()
--- MiniMapTracking:HookScript(
--- 	'OnShow',
--- 	function()
--- 		MiniMapTracking:Hide()
--- 	end
--- )
+MiniMapTrackingFrame:Hide()
+MiniMapTrackingFrame:HookScript(
+	'OnShow',
+	function()
+		MiniMapTrackingFrame:Hide()
+	end
+)
+
+

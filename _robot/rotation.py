@@ -66,7 +66,7 @@ p_clss_left = monitor_settings[monitor]["p_clss_left"]
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + monitor
+abilities_folder = dir_path + "\images\\" + mode + "\\" + monitor
 debug_folder = dir_path + "\images\\_\\"
 
 

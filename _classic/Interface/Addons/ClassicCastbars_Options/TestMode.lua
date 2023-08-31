@@ -52,6 +52,29 @@ local function OnDragStop(self)
     self:SetPoint("CENTER", self.parent, x, y)
 end
 
+function TestMode:ToggleArenaContainer(showFlag)
+    if EditModeManagerFrame and EditModeManagerFrame.AccountSettings then -- Dragonflight
+        EditModeManagerFrame.AccountSettings:SetArenaFramesShown(showFlag)
+        EditModeManagerFrame.AccountSettings:RefreshArenaFrames()
+    elseif ArenaEnemyFrames then
+        ArenaEnemyFrames:SetShown(showFlag)
+    end
+end
+
+function TestMode:TogglePartyContainer(showFlag)
+    if EditModeManagerFrame then
+        if showFlag then
+            ShowUIPanel(EditModeManagerFrame)
+        else
+            HideUIPanel(EditModeManagerFrame)
+        end
+
+        --EditModeManagerFrame.AccountSettings:SetPartyFramesShown(showFlag)
+        --EditModeManagerFrame.AccountSettings:SetRaidFramesShown(showFlag)
+        --EditModeManagerFrame.AccountSettings:RefreshPartyFrames()
+    end
+end
+
 function TestMode:OnOptionChanged(unitID)
     if unitID == "nameplate" then
         unitID = "nameplate-testmode"
@@ -89,14 +112,14 @@ function TestMode:ToggleCastbarMovable(unitID)
     if self.isTesting[unitID] then
         self:SetCastbarImmovable(unitID)
         self.isTesting[unitID] = false
-        if unitID == "nameplate-testmode" then
-            self:UnregisterEvent("PLAYER_TARGET_CHANGED")
-        end
+        --if unitID == "nameplate-testmode" then
+            --self:UnregisterEvent("PLAYER_TARGET_CHANGED")
+        --end
     else
         if self:SetCastbarMovable(unitID) then
             self.isTesting[unitID] = true
 
-            if ClassicCastbars.db.nameplate.enabled and unitID == "nameplate-testmode" then
+            if (ClassicCastbars.db.nameplate.enabled and unitID == "nameplate-testmode") or (ClassicCastbars.db.target.enabled and unitID == "target") then
                 self:RegisterEvent("PLAYER_TARGET_CHANGED")
             end
         end
@@ -112,7 +135,7 @@ function TestMode:SetCastbarMovable(unitID, parent)
         return false
     end
 
-    local castbar = ClassicCastbars:GetCastbarFrame(unitID)
+    local castbar = unitID == "player" and _G.CastingBarFrame or ClassicCastbars:GetCastbarFrame(unitID)
     if unitID ~= "nameplate-testmode" then -- Blizzard broke drag functionality for frames that are anchored to restricted frames in TBC :(
         castbar:SetMovable(true)
         castbar:SetClampedToScreen(true)
@@ -146,7 +169,8 @@ function TestMode:SetCastbarMovable(unitID, parent)
     end
 
     if unitID == "party-testmode" or unitID == "arena-testmode" then
-        if unitID == "arena-testmode" and ArenaEnemyFrames then ArenaEnemyFrames:Show() end
+        if unitID == "arena-testmode" then TestMode:ToggleArenaContainer(true) end
+        if unitID == "party-testmode" then TestMode:TogglePartyContainer(true) end
         parentFrame:SetAlpha(1)
         parentFrame:Show()
     end
@@ -177,7 +201,7 @@ function TestMode:SetCastbarMovable(unitID, parent)
 end
 
 function TestMode:SetCastbarImmovable(unitID)
-    local castbar = ClassicCastbars:GetCastbarFrame(unitID)
+    local castbar = unitID == "player" and _G.CastingBarFrame or ClassicCastbars:GetCastbarFrame(unitID)
     castbar:Hide()
     if castbar.tooltip then
         castbar.tooltip:Hide()
@@ -192,12 +216,13 @@ function TestMode:SetCastbarImmovable(unitID)
     if unitID == "party-testmode" then
         local parentFrame = castbar.parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
         if parentFrame and not UnitExists("party1") then
+            TestMode:TogglePartyContainer(false)
             parentFrame:Hide()
         end
     elseif unitID == "arena-testmode" then
         local parentFrame = castbar.parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
         if parentFrame and not UnitExists("arena1") then
-            if ArenaEnemyFrames then ArenaEnemyFrames:Hide() end
+            TestMode:ToggleArenaContainer(false)
             parentFrame:Hide()
         end
     end
@@ -223,12 +248,13 @@ TestMode:SetScript("OnEvent", function(self)
     if self.isTesting["nameplate-testmode"] then
         C_Timer.After(0.2, TestMode.ReanchorOnNameplateTargetSwitch)
     end
-end)
 
-if date("%d.%m") == "01.04" then -- April Fools :)
-    C_Timer.After(1800, function()
-        if not UnitIsDeadOrGhost("player") and not IsInRaid() then
-            DoEmote(math.random(0, 1) == 1 and "fart" or "nosepick")
+    if self.isTesting["target"] and ClassicCastbars.db.target.enabled then
+        local anchor = ClassicCastbars.AnchorManager:GetAnchor("target")
+        if anchor then
+            TestMode:SetCastbarMovable("target", anchor)
+        else
+            TestMode:SetCastbarImmovable("target")
         end
-    end)
-end
+    end
+end)
