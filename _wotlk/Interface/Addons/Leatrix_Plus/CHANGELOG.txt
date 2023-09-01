@@ -1,3 +1,85 @@
+3.0.147 - 30th August 2023
+- Added flight times.
+
+3.0.146 - 23rd August 2023
+- Added flight times.
+
+3.0.144 - 8th August 2023
+- Added flight times.
+
+3.0.143 - 2nd August 2023
+- Added flight times.
+
+3.0.142 - 26th July 2023
+- For 'Sell junk automatically' ('Automation'), increased the exclusion list limit to 2000 characters (was 600).
+- Added flight times.
+
+3.0.141 - 18th July 2023
+- Added flight times.
+
+3.0.140 - 12th July 2023
+- The 'Resize mail text', 'Resize quest text' and 'Resize book text' options ('Text') now have a maximum font size of 30 (reduced from 36).
+- Fixed an issue with 'Block shared quests' ('Social') which caused a few quests to be incorrectly declined.
+- Added flight times.
+
+3.0.139 - 5th July 2023
+- Added flight times.
+
+3.0.138 - 28th June 2023
+- Updated LibDBIcon.
+- Added flight times.
+
+3.0.137 - 24th June 2023
+- Updated for game version 3.4.2.
+- The 'Disable bag automation' option ('System') no longer applies to mailboxes.
+- Added flight times.
+
+3.0.136 - 19th June 2023
+- Added flight times. 
+
+3.0.135 - 11th June 2023
+- The /ltp slash command has returned.  /run leaplus() has been removed.
+- PTR (3.4.2) - Fixed an issue with 'Recent chat window' which caused a Lua error when the window is shown.
+
+3.0.134 - 3rd June 2023
+- Added flight times.
+
+3.0.133 - 27th May 2023
+- For 'Sell junk automatically' ('Automation'), Leatrix Plus will stop attempting to sell items if your character is at the gold cap.
+- Added flight times.
+
+3.0.132 - 20th May 2023
+- Added flight times.
+
+3.0.131 - 10th May 2023
+- Added flight times.
+
+3.0.130 - 3rd May 2023
+- For 'Enhance tooltip' ('Interface'), fixed an issue with 'Hide health bar' which caused the health bar to not be hidden.
+- For 'Easy item destroy' ('System'), fixed an issue which caused a Lua error when clicking outside of the destroy confirmation.
+
+3.0.129 - 25th April 2023
+- Added flight times.
+
+3.0.128 - 22nd April 2023
+- Added flight times.
+
+3.0.127 - 19th April 2023
+- Added flight times.
+- Fixed /run leaplus("quest <id>") functionality.
+
+3.0.126 - 15th April 2023
+- Added flight times.
+
+3.0.125 - 2nd April 2023
+- Added flight times.
+
+3.0.124 - 31st March 2023
+- Added flight times.
+
+3.0.123 - 27th March 2023
+- Added flight times.
+
 3.0.122 - 26th March 2023
 - Added flight times.
 

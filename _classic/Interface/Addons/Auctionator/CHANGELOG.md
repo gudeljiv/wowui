@@ -1,7 +1,10 @@
 # Auctionator
 
-## [10.1.18](https://github.com/Auctionator/Auctionator/tree/10.1.18) (2023-08-23)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.17...10.1.18) 
+## [10.1.19](https://github.com/Auctionator/Auctionator/tree/10.1.19) (2023-08-30)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.18...10.1.19) 
 
-- Vanilla: Update for 14.4.4  
-- Selling: Scroll selected item into view in bag display when doing next/previous  
+- Fix leftover end  
+- Shopping: Reduce Populate() calls from drag events for lists view  
+- Remove compatibility code for old SetElementInitializer calls  
+- [Fixes #1266] Selling: Skip button in price warning popup when posting  
+- Mainline: Selling: Fix time left period for item search results  

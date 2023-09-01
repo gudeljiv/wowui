@@ -73,6 +73,18 @@ L["Action Button Glow"] = "动作条按钮发光"
 L["Action Usable"] = "动作可以使用"
 L["Actions"] = "动作"
 L["Active"] = "活跃"
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "添加"
 L["Add Missing Auras"] = "添加缺少的光环"
 L["Additional Trigger Replacements"] = "额外触发器动态文字"
@@ -201,6 +213,14 @@ L["Blood-Queen Lana'thel"] = "兰娜瑟尔女王"
 L["Border"] = "边框"
 L["Boss"] = "首领"
 L["Boss Emote"] = "首领表情"
+--[[Translation missing --]]
+L["Boss Mod Announce"] = "Boss Mod Announce"
+--[[Translation missing --]]
+L["Boss Mod Stage"] = "Boss Mod Stage"
+--[[Translation missing --]]
+L["Boss Mod Stage (Event)"] = "Boss Mod Stage (Event)"
+--[[Translation missing --]]
+L["Boss Mod Timer"] = "Boss Mod Timer"
 L["Boss Whisper"] = "首领密语"
 L["Bottom"] = "下"
 L["Bottom Left"] = "左下"
@@ -262,6 +282,7 @@ L["Charged Combo Point 3"] = "充能连击点 3"
 L["Charged Combo Point 4"] = "充能连击点 4"
 L["Charges"] = "充能"
 L["Charges Changed Event"] = "充能变化事件"
+L["Charging"] = "正在充能"
 L["Chat Frame"] = "聊天窗口"
 L["Chat Message"] = "聊天信息"
 L["Check if a single talent match a Rank"] = "检查一个天赋是否满足等级"
@@ -305,6 +326,7 @@ L["Critical Rating"] = "暴击等级"
 L["Crowd Controlled"] = "被控制"
 L["Crushing"] = "碾压"
 L["C'thun"] = "克苏恩"
+L["Current Essence"] = "当前精华"
 L["Current Experience"] = "当前经验值"
 L["Current Movement Speed (%)"] = "当前移动速度 (%)"
 L["Current Stage"] = "当前阶段"
@@ -361,6 +383,7 @@ L["Destination Reaction"] = "目标反应"
 L["Destination Unit"] = "目标单位"
 L["Destination unit's raid mark index"] = "目标单位的团队标记编号"
 L["Destination unit's raid mark texture"] = "目标单位的团队标记材质"
+L["Difficulty"] = "难度"
 L["Disable Spell Known Check"] = "忽略法术已知检查"
 L["Disabled Spell Known Check"] = "已忽略法术已知检查"
 L["Disease"] = "疾病"
@@ -389,6 +412,7 @@ L["Dungeon (Timewalking)"] = "地下城（时空漫游）"
 L["Dungeons"] = "地下城"
 L["Durability Damage"] = "耐久度下降"
 L["Durability Damage All"] = "耐久度上限下降"
+L["Duration"] = "持续时间"
 L["Duration Function"] = "持续时间函数"
 L["Duration Function (fallback state)"] = "持续时间函数（后备状态）"
 L["Dynamic Information"] = "动态信息"
@@ -422,12 +446,13 @@ L["Enchant Name or ID"] = "附魔名称或 ID"
 L["Enchant Removed"] = "附魔移除"
 L["Enchanted"] = "已附魔"
 L["Enchanting Cast Bar"] = "附魔施法条"
-L["Encounter ID(s)"] = "BOSS 战 ID"
+L["Encounter ID(s)"] = "首领战 ID"
 L["Energize"] = "能量值恢复"
 L["Enrage"] = "激怒"
 L["Enter static or relative values with %"] = "输入绝对值或者是带有%的相对值"
 L["Entering"] = "进入"
 L["Entering/Leaving Combat"] = "进入/离开战斗"
+L["Entering/Leaving Encounter"] = "进入/离开首领战斗"
 L["Entry Order"] = "条目排序"
 L["Environment Type"] = "环境伤害类型"
 L["Environmental"] = "环境伤害"
@@ -445,11 +470,19 @@ L["Error deserializing"] = "反序列化错误。"
 L["Error Frame"] = "错误信息框架"
 L["ERROR in '%s' unknown or incompatible sub element type '%s'"] = "错误：光环 %s 中存在未知或不兼容的子元素类型 %s 。"
 L["Error not receiving display information from %s"] = "错误：未收到来自 %s 的显示信息"
+L["Essence"] = "精华"
+L["Essence #1"] = "精华 #1"
+L["Essence #2"] = "精华 #2"
+L["Essence #3"] = "精华 #3"
+L["Essence #4"] = "精华 #4"
+L["Essence #5"] = "精华 #5"
+L["Essence #6"] = "精华 #6"
 L["Evade"] = "闪避"
 L["Event"] = "事件"
 L["Event(s)"] = "事件"
 L["Every Frame"] = "所有帧"
 L["Every Frame (High CPU usage)"] = "所有帧（高CPU占用）"
+L["Evoker Essence"] = "唤魔师精华"
 L["Experience (%)"] = "经验值百分比"
 L["Expertise Bonus"] = "精准加成"
 L["Expertise Rating"] = "精准等级"
@@ -498,6 +531,7 @@ L["Formats |cFFFF0000%unit|r"] = "格式化 |cFFFF0000%unit|r"
 L["Formats Player's |cFFFF0000%guid|r"] = "格式化玩家的 |cFFFF0000%guid|r"
 L["Forward"] = "正向"
 L["Forward, Reverse Loop"] = "正向，反向循环"
+L["Fourth Value of Tooltip Text"] = "鼠标提示文本的第四项值"
 L["Frame Selector"] = "选择框体"
 L["Frequency"] = "频率"
 L["Freya"] = "弗蕾亚"
@@ -591,6 +625,7 @@ L["Icecrown Citadel"] = "冰冠堡垒"
 L["Icon"] = "图标"
 L["Icon Function"] = "图标函数"
 L["Icon Function (fallback state)"] = "图标函数（后备状态）"
+L["Id"] = "ID"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "如果你需要进一步的协助，请在 GitHub 上提交工单或是访问我们的 Discord：https://discord.gg/weakauras！"
 L["Ignis the Furnace Master"] = "掌炉者伊格尼斯"
 L["Ignore Dead"] = "忽略已死亡"
@@ -661,6 +696,7 @@ L["Jin'do the Hexxer"] = "妖术师金度"
 L["Journal Stage"] = "指南阶段"
 L["Keep Inside"] = "保持在内"
 L["Kel'Thuzad"] = "克尔苏加德"
+L["Key"] = "Key"
 L["Kologarn"] = "科隆加恩"
 L["Koralon the Flame Watcher"] = "火焰看守者科拉隆"
 L["Kurinnaxx"] = "库林纳克斯"
@@ -780,6 +816,12 @@ L["Neutral"] = "中立"
 L["Never"] = "从不"
 L["Next Combat"] = "下次战斗"
 L["Next Encounter"] = "下次首领战斗"
+--[[Translation missing --]]
+L[ [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["No Extend"] = "不伸展"
 L["No Instance"] = "野外"
 L["No Profiling information saved."] = "没有已保存的性能分析信息。"
@@ -796,6 +838,7 @@ L["Note, that cross realm transmission is possible if you are on the same group"
 L["Note: Due to how complicated the swing timer behavior is and the lack of APIs from Blizzard, results are inaccurate in edge cases."] = "注意：由于近战攻击计时器的复杂性和暴雪提供的API的缺失，结果在边缘情况下不准确。"
 L["Note: 'Hide Alone' is not available in the new aura tracking system. A load option can be used instead."] = "注意：“不在队伍时隐藏”在新光环追踪系统中不可用，使用加载选项来达到相同效果。"
 L["Note: The available text replacements for multi triggers match the normal triggers now."] = "注意：现在普通触发器也可使用多目标触发器可用的文本替换。"
+L["Note: This trigger relies on the WoW API, which returns incorrect information in some cases."] = "注意：此触发器依赖于WoW API，它会在某些情况下返回错误的信息。"
 L["Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"] = "注意：此类型的触发器只是在预估和单位之间的距离，实际和友方玩家的距离一般要比预估值多 3 码。距离预估的可用数值取决于你的职业、已学技能与目标单位类型，某些距离数值不适用于特定NPC。|n|n|cFFAAFFAA友方单位：|r %s|n|cFFFFAAAA敌方单位：|r %s|n|cFFAAAAFF非特定单位：|r %s"
 L["Noth the Plaguebringer"] = "瘟疫使者诺斯"
 L["NPC"] = "NPC"
@@ -803,14 +846,58 @@ L["Npc ID"] = "NPC ID"
 L["Number"] = "数字"
 L["Number Affected"] = "影响数"
 L["Object"] = "对象"
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if BigWigs shows it on it's bar]=] ] = [=[事件发生的次数，光环不再加载时重置
+可以为值的范围
+可以有多个条目，由英文逗号或空格分隔
+
+例如：
+第二、第五和第六次事件：2, 5, 6
+第二到第六次事件：2-6
+每两次事件：/2
+从第二次开始每三次事件：2/3
+从第二到第十一次事件开始每三次事件：2-11/3
+
+仅当BigWigs在它的进度条上显示]=]
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if DBM shows it on it's bar]=] ] = [=[事件发生的次数，光环不再加载时重置
+可以为值的范围
+可以有多个条目，由英文逗号或空格分隔
+
+例如：
+第二、第五和第六次事件：2, 5, 6
+第二到第六次事件：2-6
+每两次事件：/2
+从第二次开始每三次事件：2/3
+从第二到第十一次事件开始每三次事件：2-11/3
+
+仅当DBM在它的进度条上显示]=]
 L["Officer"] = "官员"
 L["Offset from progress"] = "于进度偏移量"
 L["Offset Timer"] = "位移计时器"
 L["Old Blizzard (2h | 3m | 10s | 2.4)"] = "传统暴雪格式 （2h | 3m | 10s | 2.4）"
 L["On Cooldown"] = "冷却中"
 L["On Taxi"] = "在载具中"
-L["Only if BigWigs shows it on it's bar"] = "仅当其在 BigWigs 条上出现时"
-L["Only if DBM shows it on it's bar"] = "仅当其在 DBM 条上出现时"
 L["Only if on a different realm"] = "仅当在不同服务器上"
 L["Only if Primary"] = "仅当是首要时"
 L["Onyxia"] = "奥妮克希亚"
@@ -881,6 +968,7 @@ L["Precision"] = "精度"
 L["Preset"] = "预设"
 L["Princess Huhuran"] = "哈霍兰公主"
 L["Print Profiling Results"] = "输出性能分析结果"
+L["Proc Glow"] = "触发发光"
 L["Professor Putricide"] = "普崔塞德教授"
 L["Profiling already started."] = "性能分析已开始。"
 L["Profiling automatically started."] = "性能分析自动开始。"
@@ -1018,6 +1106,8 @@ L["Show Heal Absorb"] = "显示治疗吸收量"
 L["Show Incoming Heal"] = "显示即将到来的治疗"
 L["Show Loss of Control"] = "显示失控效果"
 L["Show On"] = "显示于"
+L["Show Override"] = "显示替代"
+L["Show Override Spell"] = "显示替代法术"
 L["Show Rested Overlay"] = "显示休息覆盖层"
 L["Shrink"] = "收缩"
 L["Silithid Royalty"] = "安其拉三宝"
@@ -1100,6 +1190,7 @@ L["Stamina"] = "耐力"
 L["Stance/Form/Aura"] = "姿态/形态/光环"
 L["Standing"] = "级别"
 L["Star Shake"] = "摇动"
+L["Start Animation"] = "开始动画"
 L["Start Now"] = "现在开始"
 L["Status"] = "状态"
 L["Status Bar"] = "状态条"
@@ -1110,6 +1201,7 @@ L["String"] = "字符串"
 L["Subtract Cast"] = "减去施法时间"
 L["Subtract Channel"] = "减去引导时间"
 L["Subtract GCD"] = "减去 GCD"
+L["Success"] = "成功"
 L["Sulfuron Harbinger"] = "萨弗隆先驱者"
 L["Summon"] = "召唤"
 L["Supports multiple entries, separated by commas"] = "支持多个条目，由英文逗号分隔"
@@ -1145,6 +1237,7 @@ L["The aura has overwritten the global '%s', this might affect other auras."] = 
 L["The effective level differs from the level in e.g. Time Walking dungeons."] = "有效等级和实际等级的差，例如：在时光漫游副本中的等级差。"
 L["The Eye of Eternity"] = "永恒之眼"
 L["The Four Horsemen"] = "天启四骑士"
+L["The 'Key' value can be found in the BigWigs options of a specific spell"] = "特定法术的\"ID\"值可以在BigWigs选项中找到"
 L["The Lich King"] = "巫妖王"
 L["The Obsidian Sanctum"] = "黑曜石圣殿"
 L["The Prophet Skeram"] = "预言者斯克拉姆"
@@ -1177,6 +1270,7 @@ L["Tooltip"] = "鼠标提示"
 L["Tooltip Value 1"] = "鼠标提示值 1"
 L["Tooltip Value 2"] = "鼠标提示值 2"
 L["Tooltip Value 3"] = "鼠标提示值 3"
+L["Tooltip Value 4"] = "鼠标提示值 4"
 L["Top"] = "上"
 L["Top Left"] = "左上"
 L["Top Right"] = "右上"
@@ -1185,6 +1279,7 @@ L["Toravon the Ice Watcher"] = "寒冰看守者图拉旺"
 L["Torghast"] = "托加斯特"
 L["Total"] = "总量"
 L["Total Duration"] = "总时长"
+L["Total Essence"] = "总精华"
 L["Total Experience"] = "最大经验值"
 L["Total Match Count"] = "总共匹配计数"
 L["Total Stacks"] = "总层数"

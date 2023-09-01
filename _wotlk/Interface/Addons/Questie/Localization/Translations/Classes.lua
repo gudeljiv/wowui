@@ -110,6 +110,18 @@ local classLocales = {
         ["zhTW"] = "Warlock",
         ["zhCN"] = "术士",
     },
+    ["Death Knight"] = {
+        ["ptBR"] = "Cavaleiro da Morte",
+        ["ruRU"] = "Рыцарь смерти",
+        ["deDE"] = "Todesritter",
+        ["koKR"] = "죽음의 기사,죽음의 기사",
+        ["esMX"] = "Caballero de la Muerte",
+        ["enUS"] = true,
+        ["frFR"] = "Chevalier de la mort",
+        ["esES"] = "Caballero de la Muerte",
+        ["zhTW"] = "死亡騎士,死亡騎士",
+        ["zhCN"] = "死亡骑士,死亡骑士",
+    },
 }
 
 for k, v in pairs(classLocales) do

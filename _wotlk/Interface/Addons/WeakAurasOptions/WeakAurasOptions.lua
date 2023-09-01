@@ -474,25 +474,29 @@ StaticPopupDialogs["WEAKAURAS_CONFIRM_DELETE"] = {
   preferredindex = STATICPOPUP_NUMDIALOGS,
 }
 
-StaticPopupDialogs["WEAKAURAS_CONFIRM_IGNORE_UPDATES"] = {
-  text = L["Do you want to ignore all future updates for this aura"],
-  button1 = L["Yes"],
-  button2 = L["Cancel"],
-  OnAccept = function(self)
-    if self.data then
-      local auraData = WeakAuras.GetData(self.data)
+function OptionsPrivate.IsWagoUpdateIgnored(auraId)
+    local auraData = WeakAuras.GetData(auraId)
       if auraData then
         for child in OptionsPrivate.Private.TraverseAll(auraData) do
-          child.ignoreWagoUpdate = true
+          if child.ignoreWagoUpdate then
+            return true
+          end
         end
       end
-      OptionsPrivate.SortDisplayButtons(nil, true)
+    return false
+end
+
+function OptionsPrivate.HasWagoUrl(auraId)
+  local auraData = WeakAuras.GetData(auraId)
+    if auraData then
+      for child in OptionsPrivate.Private.TraverseAll(auraData) do
+        if child.url and child.url ~= "" then
+          return true
+        end
+      end
     end
-  end,
-  OnCancel = function(self) end,
-  whileDead = true,
-  preferredindex = STATICPOPUP_NUMDIALOGS,
-}
+  return false
+end
 
 function OptionsPrivate.ConfirmDelete(toDelete, parents)
   if toDelete then
@@ -807,6 +811,10 @@ function WeakAuras.ShowOptions(msg)
     OptionsPrivate.Private.personalRessourceDisplayFrame:OptionsOpened();
   end
 
+  if frame.moversizer then
+    frame.moversizer:OptionsOpened()
+  end
+
   if not(firstLoad) then
     -- Show what was last shown
     local suspended = OptionsPrivate.Private.PauseAllDynamicGroups()
@@ -837,6 +845,7 @@ function WeakAuras.ShowOptions(msg)
   if firstLoad then
     frame:ShowTip()
   end
+
 end
 
 function OptionsPrivate.UpdateOptions()

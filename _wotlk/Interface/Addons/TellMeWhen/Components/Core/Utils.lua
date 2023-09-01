@@ -1409,14 +1409,14 @@ function TMW.GetSpellCost(spell)
 	end
 end
 
-if TMW.isWrath then
+if not GetSpecializationInfoByID then
 	local classInfo = {
 		[1] = C_CreatureInfo.GetClassInfo(1),
 		[2] = C_CreatureInfo.GetClassInfo(2),
 		[3] = C_CreatureInfo.GetClassInfo(3),
 		[4] = C_CreatureInfo.GetClassInfo(4),
 		[5] = C_CreatureInfo.GetClassInfo(5),
-		[6] = C_CreatureInfo.GetClassInfo(6),
+		[6] = C_CreatureInfo.GetClassInfo(6), -- Death Knight
 		[7] = C_CreatureInfo.GetClassInfo(7),
 		[8] = C_CreatureInfo.GetClassInfo(8),
 		[9] = C_CreatureInfo.GetClassInfo(9),
@@ -1567,31 +1567,64 @@ else
 	end
 end
 
+
+if TMW.isClassic then
+	local LibClassicCasterino = LibStub("LibClassicCasterino")
+	local UnitIsUnit, CastingInfo, ChannelInfo
+		= UnitIsUnit, CastingInfo, ChannelInfo
+
+	local castEventHandler = function(event, unit)
+		TMW:Fire("TMW_UNIT_CAST_UPDATE", unit)
+	end
+
+	-- TODO: Do we need to also register the game's UNIT_SPELLCAST_SUCCEEDED and UNIT_SPELLCAST_FAILED_QUIET? Casterino doesn't provide them.
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_START", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_DELAYED", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_STOP", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_FAILED", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_INTERRUPTED", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_START", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_UPDATE", castEventHandler)
+	LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_STOP", castEventHandler)
+
+	function TMW.UnitCastingInfo(unit)
+		if unit == "player" or UnitIsUnit(unit, "player") then
+			return CastingInfo()
+		else
+			return LibClassicCasterino:UnitCastingInfo(unit)
+		end
+	end
+	function TMW.UnitChannelInfo(unit)
+		if unit == "player" or UnitIsUnit(unit, "player") then
+			return ChannelInfo()
+		else
+			return LibClassicCasterino:UnitChannelInfo(unit)
+		end
+	end
+end
+
+
+
 do	-- TMW:GetParser()
 	local Parser, LT1, LT2, LT3, RT1, RT2, RT3
 	function TMW:GetParser()
 		if not Parser then
-			Parser = CreateFrame("GameTooltip")
+			Parser = CreateFrame("GameTooltip", "TMWParser", nil, "GameTooltipTemplate")
 			if TooltipDataHandlerMixin then
 				-- in theory this could use TooltipDataHandlerMixin,
 				-- but the blizzard PTR tooltips explode if we dont use GameTooltipDataMixin
 				-- because somehow for some reason they need GetUnit?
 				Mixin(Parser, GameTooltipDataMixin)
 			end
-
-			LT1 = Parser:CreateFontString()
-			RT1 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT1, RT1)
-
-			LT2 = Parser:CreateFontString()
-			RT2 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT2, RT2)
-
-			LT3 = Parser:CreateFontString()
-			RT3 = Parser:CreateFontString()
-			Parser:AddFontStrings(LT3, RT3)
 		end
-		return Parser, LT1, LT2, LT3, RT1, RT2, RT3
+		return 
+			Parser, 
+			TMWParserTextLeft1,
+			TMWParserTextLeft2,
+			TMWParserTextLeft3,
+			TMWParserTextRight1,
+			TMWParserTextRight2,
+			TMWParserTextRight3
 	end
 end
 

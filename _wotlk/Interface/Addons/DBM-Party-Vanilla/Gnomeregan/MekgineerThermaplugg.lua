@@ -4,7 +4,7 @@ local isBCC = WOW_PROJECT_ID == (WOW_PROJECT_BURNING_CRUSADE_CLASSIC or 5)
 local mod	= DBM:NewMod(422, "DBM-Party-Vanilla", isRetail and 4 or 7, 231)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230218211048")
+mod:SetRevision("20230814030644")
 mod:SetCreatureID(7800)
 mod:SetEncounterID(382)
 

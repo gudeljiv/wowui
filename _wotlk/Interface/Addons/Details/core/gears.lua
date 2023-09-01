@@ -1,4 +1,4 @@
-local _detalhes = 		_G._detalhes
+local _detalhes = 		_G.Details
 local addonName, Details222 = ...
 local Loc = LibStub("AceLocale-3.0"):GetLocale ( "Details" )
 
@@ -232,7 +232,8 @@ end
 					local statusbar_enabled1 = window1.show_statusbar
 					local statusbar_enabled2 = window2.show_statusbar
 
-					table.wipe(window1.snap); table.wipe(window2.snap)
+					Details:Destroy(window1.snap)
+					Details:Destroy(window2.snap)
 					window1.snap [3] = 2; window2.snap [1] = 1;
 					window1.horizontalSnap = true; window2.horizontalSnap = true
 
@@ -345,15 +346,13 @@ end
 
 ------------------------------------------------------------------------------------------------------------
 
-function _detalhes:SetDeathLogLimit (limit)
-
+function _detalhes:SetDeathLogLimit(limit)
 	if (limit and type(limit) == "number" and limit >= 8) then
 		_detalhes.deadlog_events = limit
 
-		local combat = _detalhes.tabela_vigente
+		local combatObject = Details:GetCurrentCombat()
 
-		local wipe = table.wipe
-		for player_name, event_table in pairs(combat.player_last_events) do
+		for player_name, event_table in pairs(combatObject.player_last_events) do
 			if (limit > #event_table) then
 				for i = #event_table + 1, limit do
 					event_table [i] = {}
@@ -361,7 +360,7 @@ function _detalhes:SetDeathLogLimit (limit)
 			else
 				event_table.n = 1
 				for _, t in ipairs(event_table) do
-					wipe (t)
+					Details:Destroy(t)
 				end
 			end
 		end
@@ -402,7 +401,8 @@ function _detalhes:TrackSpecsNow (track_everything)
 		end
 	else
 		local combatlist = {}
-		for _, combat in ipairs(_detalhes.tabela_historico.tabelas) do
+		local segmentsTable = Details:GetCombatSegments()
+		for _, combat in ipairs(segmentsTable) do
 			tinsert(combatlist, combat)
 		end
 		tinsert(combatlist, _detalhes.tabela_vigente)
@@ -442,7 +442,7 @@ function _detalhes:ResetSpecCache (forced)
 	local isininstance = IsInInstance()
 
 	if (forced or (not isininstance and not _detalhes.in_group)) then
-		table.wipe(_detalhes.cached_specs)
+		Details:Destroy(_detalhes.cached_specs)
 
 		if (_detalhes.track_specs) then
 			local my_spec = DetailsFramework.GetSpecialization()
@@ -458,7 +458,7 @@ function _detalhes:ResetSpecCache (forced)
 		end
 
 	elseif (_detalhes.in_group and not isininstance) then
-		table.wipe(_detalhes.cached_specs)
+		Details:Destroy(_detalhes.cached_specs)
 
 		if (_detalhes.track_specs) then
 			if (IsInRaid()) then
@@ -504,20 +504,23 @@ function _detalhes:RefreshUpdater(suggested_interval)
 	_detalhes.atualizador = Details.Schedules.NewTicker(updateInterval, Details.RefreshMainWindow, Details, -1)
 end
 
-function _detalhes:SetWindowUpdateSpeed(interval, nosave)
+---set the amount of time between each update of all windows
+---@param interval number?
+---@param bNoSave boolean?
+function Details:SetWindowUpdateSpeed(interval, bNoSave)
 	if (not interval) then
-		interval = _detalhes.update_speed
+		interval = Details.update_speed
 	end
 
 	if (type(interval) ~= "number") then
-		interval = _detalhes.update_speed or 0.3
+		interval = Details.update_speed or 0.3
 	end
 
-	if (not nosave) then
-		_detalhes.update_speed = interval
+	if (not bNoSave) then
+		Details.update_speed = interval
 	end
 
-	_detalhes:RefreshUpdater(interval)
+	Details:RefreshUpdater(interval)
 end
 
 function _detalhes:SetUseAnimations(enabled, nosave)
@@ -1913,7 +1916,7 @@ end
 
 --test
 --/run _detalhes.ilevel:CalcItemLevel ("player", UnitGUID("player"), true)
---/run wipe (_detalhes.item_level_pool)
+--/run wipe(_detalhes.item_level_pool)
 
 function ilvl_core:CalcItemLevel (unitid, guid, shout)
 
@@ -2176,7 +2179,7 @@ function ilvl_core:QueryInspect (unitName, callback, param1)
 end
 
 function ilvl_core:ClearQueryInspectQueue()
-	wipe (ilvl_core.forced_inspects)
+	Details:Destroy(ilvl_core.forced_inspects)
 	ilvl_core.clear_queued_list = nil
 end
 
@@ -2464,6 +2467,7 @@ Details.specToRole = {
 	--EVOKER
 	[1467] = "DAMAGER", --Devastation Evoker
 	[1468] = "HEALER", --Preservation Evoker
+	[1473] = "DAMAGER", --Augmentation Evoker
 }
 
 --oldschool talent tree
@@ -3288,7 +3292,7 @@ function Details222.Cache.DoMaintenance()
 	if (currentTime > Details.latest_spell_pool_access + delay) then
 		local spellIdPoolBackup = DetailsFramework.table.copy({}, Details.spell_pool)
 
-		wipe(Details.spell_pool)
+		Details:Destroy(Details.spell_pool)
 
 		--preserve ignored spells spellId
 		for spellId in pairs(Details.spellid_ignored) do
@@ -3296,31 +3300,31 @@ function Details222.Cache.DoMaintenance()
 		end
 
 		Details.latest_spell_pool_access = currentTime
-		wipe(spellIdPoolBackup)
+		Details:Destroy(spellIdPoolBackup)
 	end
 
 	if (currentTime > Details.latest_npcid_pool_access + delay) then
 		local npcIdPoolBackup = DetailsFramework.table.copy({}, Details.npcid_pool)
 
-		wipe(Details.npcid_pool)
+		Details:Destroy(Details.npcid_pool)
 
 		--preserve ignored npcs npcId
 		for npcId in pairs (Details.npcid_ignored) do
 			Details.npcid_pool[npcId] = npcIdPoolBackup[npcId]
 		end
 		Details.latest_npcid_pool_access = currentTime
-		wipe(npcIdPoolBackup)
+		Details:Destroy(npcIdPoolBackup)
 	end
 
 	if (currentTime > Details.latest_encounter_spell_pool_access + delay) then
-		wipe(Details.encounter_spell_pool)
+		Details:Destroy(Details.encounter_spell_pool)
 		Details.latest_encounter_spell_pool_access = currentTime
 	end
 
 	if (Details.boss_mods_timers and Details.boss_mods_timers.latest_boss_mods_access) then
 		if (currentTime > Details.boss_mods_timers.latest_boss_mods_access + delay) then
-			wipe(Details.boss_mods_timers.encounter_timers_bw)
-			wipe(Details.boss_mods_timers.encounter_timers_dbm)
+			Details:Destroy(Details.boss_mods_timers.encounter_timers_bw)
+			Details:Destroy(Details.boss_mods_timers.encounter_timers_dbm)
 			Details.boss_mods_timers.latest_boss_mods_access = currentTime
 		end
 	end

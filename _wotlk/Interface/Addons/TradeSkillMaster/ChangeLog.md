@@ -1,5 +1,6 @@
-## v4.13.11 Changes
+## v4.13.12 Changes
 
-* [Classic] Fixed various errors with patch 1.14.4
+* [All] Various performance improvements
+* [Classic] Fixed issue loading HC region AuctionDB data
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

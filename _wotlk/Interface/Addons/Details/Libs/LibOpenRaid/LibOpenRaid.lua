@@ -14,33 +14,6 @@ Code Rules:
     - Internal callbacks are the internal communication of the library, e.g. when an event triggers it send to all modules that registered that event.
     - Public callbacks are callbacks registered by an external addon.
 
-Change Log (most recent on 2022 Nov 18):
-    - added racials with cooldown type 9
-    - added buff duration in the index 6 of the cooldownInfo table returned on any cooldown event
-    - added 'durationSpellId' for cooldowns where the duration effect is another spell other than the casted cooldown spellId, add this member on cooldown table at LIB_OPEN_RAID_COOLDOWNS_INFO
-
-------- Nov 07 and older
-    - added:
-        * added openRaidLib.GetSpellFilters(spellId, defaultFilterOnly, customFiltersOnly) (see docs)
-    - passing a spellId of a non registered cooldown on LIB_OPEN_RAID_COOLDOWNS_INFO will trigger a diagnostic error if diagnostic errors are enabled.
-    - player cast doesn't check anymore for cooldowns in the player spec, now it check towards the cache LIB_OPEN_RAID_PLAYERCOOLDOWNS.
-        LIB_OPEN_RAID_PLAYERCOOLDOWNS is a cache built with cooldowns present in the player spellbook.
-
-    - things to maintain now has 1 file per expansion
-    - player conduits, covenant internally renamed to playerInfo1 and playerInfo2 to make the lib more future proof
-    - player conduits tree is now Borrowed Talents Tree, for future proof
-    - removed the talent size limitation on 7 indexes
-
-    - added:
-        * openRaidLib.GetFlaskInfoBySpellId(spellId)
-        * openRaidLib.GetFlaskTierFromAura(auraInfo)
-        * openRaidLib.GetFoodInfoBySpellId(spellId)
-        * openRaidLib.GetFoodTierFromAura(auraInfo)
-        * added dragonflight talents support
-        * added openRaidLib.RequestCooldownInfo(spellId)
-        * added openRaidLib.AddCooldownFilter(filterName, spells)
-    - ensure to register events after 'PLAYER_ENTERING_WORLD' has triggered
-
 TODO:
     - add into gear info how many tier set parts the player has
     - raid lockouts normal-heroic-mythic
@@ -49,6 +22,8 @@ BUGS:
     - after a /reload, it is not starting new tickers for spells under cooldown
 
 --]=]
+
+LIB_OPEN_RAID_CAN_LOAD = false
 
 local versionString, revision, launchDate, gameVersion = GetBuildInfo()
 
@@ -64,19 +39,15 @@ if (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and not isExpansion_Dragonflight()) t
 end
 
 local major = "LibOpenRaid-1.0"
-local CONST_LIB_VERSION = 97
+local CONST_LIB_VERSION = 111
 
-if (not LIB_OPEN_RAID_MAX_VERSION) then
-    LIB_OPEN_RAID_MAX_VERSION = CONST_LIB_VERSION
-else
-    LIB_OPEN_RAID_MAX_VERSION = math.max(LIB_OPEN_RAID_MAX_VERSION, CONST_LIB_VERSION)
+if (LIB_OPEN_RAID_MAX_VERSION) then
+    if (CONST_LIB_VERSION <= LIB_OPEN_RAID_MAX_VERSION) then
+        return
+    end
 end
 
-LIB_OPEN_RAID_CAN_LOAD = false
-
-local unpack = table.unpack or _G.unpack
-
---declae the library within the LibStub
+--declare the library within the LibStub
     local libStub = _G.LibStub
     local openRaidLib = libStub:NewLibrary(major, CONST_LIB_VERSION)
 
@@ -85,8 +56,11 @@ local unpack = table.unpack or _G.unpack
     end
 
     openRaidLib.__version = CONST_LIB_VERSION
-
     LIB_OPEN_RAID_CAN_LOAD = true
+    LIB_OPEN_RAID_MAX_VERSION = CONST_LIB_VERSION
+
+    --locals
+    local unpack = table.unpack or _G.unpack
 
     openRaidLib.__errors = {} --/dump LibStub:GetLibrary("LibOpenRaid-1.0").__errors
 
@@ -268,7 +242,8 @@ function openRaidLib.PrintTempCacheDebug()
 end
 
 function tempCache.SaveDebugText()
-    C_CVar.SetCVar(CONST_CVAR_TEMPCACHE_DEBUG, tempCache.debugString)
+    C_CVar.SetCVar(CONST_CVAR_TEMPCACHE_DEBUG, "0")
+    --C_CVar.SetCVar(CONST_CVAR_TEMPCACHE_DEBUG, tempCache.debugString)
 end
 
 function tempCache.AddDebugText(text)
@@ -276,13 +251,14 @@ function tempCache.AddDebugText(text)
 end
 
 function tempCache.SaveCacheOnCVar(data)
-    C_CVar.SetCVar(CONST_CVAR_TEMPCACHE, data)
+    C_CVar.SetCVar(CONST_CVAR_TEMPCACHE, "0")
+    --C_CVar.SetCVar(CONST_CVAR_TEMPCACHE, data)
     tempCache.AddDebugText("CVars Saved on saveCahceOnCVar(), Size: " .. #data)
 end
 
 function tempCache.RestoreData()
     local data = C_CVar.GetCVar(CONST_CVAR_TEMPCACHE)
-    if (data and type(data) == "string" and string.len(data) > 1) then
+    if (data and type(data) == "string" and string.len(data) > 2) then
         local LibAceSerializer = LibStub:GetLibrary("AceSerializer-3.0", true)
         if (LibAceSerializer) then
             local okay, cacheInfo = LibAceSerializer:Deserialize(data)
@@ -1387,7 +1363,8 @@ end
 --talent update (when the player changes a talent and the lib needs to notify other players in the group)
 function openRaidLib.UnitInfoManager.SendTalentUpdate()
     --talents
-    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo("player", true)
+    local playerName = UnitName("player")
+    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo(playerName, true)
     local talentsToSend = unitInfo.talents
     local dataToSend = "" .. CONST_COMM_PLAYERINFO_TALENTS_PREFIX .. ","
     local talentsString = openRaidLib.PackTable(talentsToSend)
@@ -1399,16 +1376,25 @@ function openRaidLib.UnitInfoManager.SendTalentUpdate()
 end
 
 function openRaidLib.UnitInfoManager.OnPlayerTalentChanged()
-    --update the local player
-    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo("player", true)
-    local unitName = UnitName("player")
-    openRaidLib.UnitInfoManager.SetUnitInfo(unitName, unitInfo, nil, nil, nil, openRaidLib.UnitInfoManager.GetPlayerTalents())
+    --this talent update could be a specialization change, so we need to pass the specId as well
+    local playerName = UnitName("player")
+    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo(playerName, true)
+    local specId = 0
 
-    --schedule send to the group
-    openRaidLib.Schedules.NewUniqueTimer(1 + math.random(0, 1), openRaidLib.UnitInfoManager.SendTalentUpdate, "UnitInfoManager", "sendTalent_Schedule")
+    if (getSpecializationVersion() == CONST_SPECIALIZATION_VERSION_MODERN) then
+        local selectedSpecialization = GetSpecialization()
+        if (selectedSpecialization) then
+            specId = GetSpecializationInfo(selectedSpecialization) or 0
+        end
+    end
+
+    openRaidLib.UnitInfoManager.SetUnitInfo(playerName, unitInfo, specId, nil, nil, openRaidLib.UnitInfoManager.GetPlayerTalents())
 
     --trigger public callback event
     openRaidLib.publicCallback.TriggerCallback("TalentUpdate", "player", unitInfo.talents, unitInfo, openRaidLib.UnitInfoManager.GetAllUnitsInfo())
+
+    --schedule send to the group
+    openRaidLib.Schedules.NewUniqueTimer(1 + math.random(0, 1), openRaidLib.UnitInfoManager.SendTalentUpdate, "UnitInfoManager", "sendTalent_Schedule")
 end
 openRaidLib.internalCallback.RegisterCallback("talentUpdate", openRaidLib.UnitInfoManager.OnPlayerTalentChanged)
 
@@ -1427,7 +1413,8 @@ openRaidLib.commHandler.RegisterComm(CONST_COMM_PLAYERINFO_TALENTS_PREFIX, openR
 --pvp talent update (when the player changes a pvp talent and the lib needs to notify other players in the group)
 function openRaidLib.UnitInfoManager.SendPvPTalentUpdate()
     --pvp talents
-    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo("player", true)
+    local playerName = UnitName("player")
+    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo(playerName, true)
     local pvpTalentsToSend = unitInfo.pvpTalents
     local pvpTalentsString = openRaidLib.PackTable(pvpTalentsToSend)
 
@@ -1441,9 +1428,9 @@ end
 
 function openRaidLib.UnitInfoManager.OnPlayerPvPTalentChanged()
     --update the local player
-    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo("player", true)
-    local unitName = UnitName("player")
-    openRaidLib.UnitInfoManager.SetUnitInfo(unitName, unitInfo, nil, nil, nil, nil, nil, openRaidLib.UnitInfoManager.GetPlayerPvPTalents())
+    local playerName = UnitName("player")
+    local unitInfo = openRaidLib.UnitInfoManager.GetUnitInfo(playerName, true)
+    openRaidLib.UnitInfoManager.SetUnitInfo(playerName, unitInfo, nil, nil, nil, nil, nil, openRaidLib.UnitInfoManager.GetPlayerPvPTalents())
 
     --schedule send to the group
     openRaidLib.Schedules.NewUniqueTimer(1 + math.random(0, 1), openRaidLib.UnitInfoManager.SendPvPTalentUpdate, "UnitInfoManager", "sendPvPTalent_Schedule")
@@ -1608,7 +1595,7 @@ openRaidLib.internalCallback.RegisterCallback("onLeaveCombat", openRaidLib.UnitI
         local itemLevel = openRaidLib.GearManager.GetPlayerItemLevel()
 
         --repair status
-        local gearDurability = openRaidLib.GearManager.GetPlayerGearDurability()
+        local gearDurability, lowestItemDurability = openRaidLib.GearManager.GetPlayerGearDurability()
 
         --get weapon enchant
         local weaponEnchant, mainHandEnchantId, offHandEnchantId = openRaidLib.GearManager.GetPlayerWeaponEnchant()
@@ -1713,7 +1700,9 @@ openRaidLib.internalCallback.RegisterCallback("onLeaveCombat", openRaidLib.UnitI
         dataToSend = dataToSend .. playerGearInfo[3] .. "," --weapon enchant
         dataToSend = dataToSend .. openRaidLib.PackTable(playerGearInfo[4]) .. "," --slots without enchant
         dataToSend = dataToSend .. openRaidLib.PackTable(playerGearInfo[5]) .. "," -- slots with empty gem sockets
-        dataToSend = dataToSend .. openRaidLib.PackTableAndSubTables(playerGearInfo[6]) --full equipped equipment
+        dataToSend = dataToSend .. openRaidLib.PackTableAndSubTables(playerGearInfo[6]) .. "," --full equipped equipment
+        dataToSend = dataToSend .. playerGearInfo[7] .. "," --main hand weapon enchant
+        dataToSend = dataToSend .. playerGearInfo[8] --off hand weapon enchant
 
         --send the data
         openRaidLib.commHandler.SendCommData(dataToSend)
@@ -2398,6 +2387,14 @@ end
 function openRaidLib.CooldownManager.OnReceiveUnitCooldowns(data, unitName)
     --unpack the table as a pairs table
     local unpackedTable = openRaidLib.UnpackTable(data, 1, true, true, CONST_COOLDOWN_INFO_SIZE)
+
+    --[=[ --debug for data received from Evokers
+    local _, class = UnitClass(unitName)
+    if (class == "EVOKER") then
+        print(unitName)
+        dumpt(unpackedTable)
+    end
+    --]=]
 
     --add the list of cooldowns
     openRaidLib.CooldownManager.AddUnitCooldownsList(unitName, unpackedTable)

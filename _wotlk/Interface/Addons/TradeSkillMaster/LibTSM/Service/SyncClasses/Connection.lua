@@ -54,8 +54,8 @@ Connection:OnSettingsLoad(function()
 	end
 	Comm.RegisterHandler(Constants.DATA_TYPES.WHOAMI_ACCOUNT, private.WhoAmIAccountHandler)
 	Comm.RegisterHandler(Constants.DATA_TYPES.WHOAMI_ACK, private.WhoAmIAckHandler)
-	Comm.RegisterHandler(Constants.DATA_TYPES.CONNECTION_REQUEST, private.ConnectionHandler)
-	Comm.RegisterHandler(Constants.DATA_TYPES.CONNECTION_REQUEST_ACK, private.ConnectionHandler)
+	Comm.RegisterHandler(Constants.DATA_TYPES.CONNECTION_REQUEST, private.ConnectionRequestAndAckHandler)
+	Comm.RegisterHandler(Constants.DATA_TYPES.CONNECTION_REQUEST_ACK, private.ConnectionRequestAndAckHandler)
 	Comm.RegisterHandler(Constants.DATA_TYPES.DISCONNECT, private.DisconnectHandler)
 	Comm.RegisterHandler(Constants.DATA_TYPES.HEARTBEAT, private.HeartbeatHandler)
 
@@ -159,8 +159,7 @@ end
 -- Message Handlers
 -- ============================================================================
 
-function private.WhoAmIAckHandler(dataType, sourceAccount, sourceCharacter, data)
-	assert(dataType == Constants.DATA_TYPES.WHOAMI_ACK)
+function private.WhoAmIAckHandler(sourceAccount, sourceCharacter, data)
 	if not private.newCharacter or strlower(private.newCharacter) ~= strlower(sourceCharacter) then
 		-- we aren't trying to connect with a new account
 		return
@@ -170,8 +169,7 @@ function private.WhoAmIAckHandler(dataType, sourceAccount, sourceCharacter, data
 	private.CheckNewAccountStatus()
 end
 
-function private.WhoAmIAccountHandler(dataType, sourceAccount, sourceCharacter, data)
-	assert(dataType == Constants.DATA_TYPES.WHOAMI_ACCOUNT)
+function private.WhoAmIAccountHandler(sourceAccount, sourceCharacter, data)
 	if not private.newCharacter then
 		-- we aren't trying to connect with a new account
 		return
@@ -186,15 +184,14 @@ function private.WhoAmIAccountHandler(dataType, sourceAccount, sourceCharacter, 
 	private.CheckNewAccountStatus()
 end
 
-function private.ConnectionHandler(dataType, sourceAccount, sourceCharacter, data)
+function private.ConnectionRequestAndAckHandler(sourceAccount, sourceCharacter, data)
 	if not private.threadRunning[sourceAccount] then
 		return
 	end
 	private.connectionRequestReceived[sourceAccount] = true
 end
 
-function private.DisconnectHandler(dataType, sourceAccount, sourceCharacter, data)
-	assert(dataType == Constants.DATA_TYPES.DISCONNECT)
+function private.DisconnectHandler(sourceAccount, sourceCharacter, data)
 	if not private.threadRunning[sourceAccount] then
 		return
 	end
@@ -205,8 +202,7 @@ function private.DisconnectHandler(dataType, sourceAccount, sourceCharacter, dat
 	private.suppressThreadTime[sourceAccount] = time() + 2
 end
 
-function private.HeartbeatHandler(dataType, sourceAccount, sourceCharacter)
-	assert(dataType == Constants.DATA_TYPES.HEARTBEAT)
+function private.HeartbeatHandler(sourceAccount, sourceCharacter)
 	if not Connection.IsCharacterConnected(sourceCharacter) then
 		-- we're not connected to this player
 		return

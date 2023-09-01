@@ -1,24 +1,28 @@
-lightweight tag a4ba03dbff7baa51eefd6b8eb771c26d0b04a96b v1.10.6
+lightweight tag 666101e777b81e317341f873778584808f7f9c02 v1.10.20
 Author:	GitHub <noreply@github.com>
-Date:	Tue Jan 17 16:55:45 2023 -0800
+Date:	Sun Aug 27 23:25:56 2023 -0700
 
-commit a4ba03dbff7baa51eefd6b8eb771c26d0b04a96b
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Tue Jan 17 16:55:45 2023 -0800
+commit 666101e777b81e317341f873778584808f7f9c02
+Author: Talyrius <contact@talyrius.net>
+Date:   Sun Aug 27 23:25:56 2023 -0700
 
-    Fixed a bug in Wrath to work around Blizzard not sending the BAG_UPDATE_DELAYED event randomly when taking item actions. (#911)
+    Update AdiBags_Config_Vanilla.toc
 
-commit 9a07002a42ae966158bcf5a559b79c12fac5bd09
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Thu Jan 12 14:24:53 2023 -0800
+commit b2738da6ba499d29c15cad30d4b61dfa801e1be7
+Author: VanironCZ <hrdlicka.luk@gmail.com>
+Date:   Mon Aug 28 08:22:38 2023 +0200
 
-    Updated README with Discord information.
-
-commit bccb140b1b70c4b2ad8cb54fc1f295d04472d19c
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Thu Jan 12 14:16:18 2023 -0800
-
-    Adding Annotations (#902)
+    Updated for Classic Era (Vanilla).
     
-    [Internal] Added type annotations for many parts of the codebase.
+    * Fix CURSOR_UPDATE error
+    
+    Fixes #983 #985
+    
+    * Update AdiBags_Vanilla.toc to 1.14.4
+    
+    * Whitespace.
+    
+    ---------
+    
+    Co-authored-by: Talyrius <contact@talyrius.net>
 

@@ -20,13 +20,6 @@ X: -167
 Y: 134
 W: 30
 H: 30
-Frame: Dejunk_JunkFrame
-FrameLevel: 2
-Anchor: TOP
-X: 467
-Y: -211
-W: 325
-H: 375
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOP
@@ -34,3 +27,10 @@ X: -8
 Y: -211
 W: 330
 H: 125
+Frame: Dejunk_JunkFrame
+FrameLevel: 2
+Anchor: TOP
+X: 467
+Y: -211
+W: 325
+H: 375

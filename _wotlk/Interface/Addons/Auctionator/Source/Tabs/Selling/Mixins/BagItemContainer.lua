@@ -3,26 +3,14 @@ AuctionatorBagItemContainerMixin = {}
 function AuctionatorBagItemContainerMixin:OnLoad()
   self.iconSize = Auctionator.Config.Get(Auctionator.Config.Options.SELLING_ICON_SIZE)
 
-  self.items = {}
   self.buttons = {}
-  self.buttonPool = CreateAndInitFromMixin(Auctionator.Utilities.PoolMixin)
-  self.buttonPool:SetCreator(function()
-    local button = CreateFrame("Button", nil, self, "AuctionatorBagItem")
-    button:SetSize(self.iconSize, self.iconSize)
-
-    return button
-  end)
+  self.buttonPool = CreateFramePool("Button", self, "AuctionatorBagItem", FramePool_HideAndClearAnchors, false)
 end
 
 function AuctionatorBagItemContainerMixin:Reset()
-  self.items = {}
-
-  for _, item in ipairs(self.buttons) do
-    item:Hide()
-    self.buttonPool:Return(item)
-  end
-
   self.buttons = {}
+
+  self.buttonPool:ReleaseAll()
 end
 
 function AuctionatorBagItemContainerMixin:GetRowLength()
@@ -33,7 +21,12 @@ function AuctionatorBagItemContainerMixin:GetRowWidth()
   return self:GetRowLength() * self.iconSize
 end
 
+function AuctionatorBagItemContainerMixin:GetSelectedButton()
+  return self.selectedButton
+end
+
 function AuctionatorBagItemContainerMixin:AddItems(itemList)
+  self.selectedButton = nil
   for _, item in ipairs(itemList) do
     self:AddItem(item)
   end
@@ -42,14 +35,21 @@ function AuctionatorBagItemContainerMixin:AddItems(itemList)
 end
 
 function AuctionatorBagItemContainerMixin:AddItem(item)
-  local button = self.buttonPool:Get()
+  local button = self.buttonPool:Acquire()
 
   button:Show()
 
   button:SetItemInfo(item)
 
+  -- Note: We set the size here rather than in a frame pool initialization
+  -- function because the initialization function doesn't work on classic era
+  button:SetSize(self.iconSize, self.iconSize)
+
   table.insert(self.buttons, button)
-  table.insert(self.items, item)
+
+  if item.selected then
+    self.selectedButton = button
+  end
 end
 
 function AuctionatorBagItemContainerMixin:DrawButtons()
@@ -76,5 +76,5 @@ function AuctionatorBagItemContainerMixin:DrawButtons()
 end
 
 function AuctionatorBagItemContainerMixin:GetNumItems()
-  return #self.items
+  return #self.buttons
 end

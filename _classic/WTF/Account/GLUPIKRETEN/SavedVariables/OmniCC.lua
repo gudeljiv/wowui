@@ -1,9 +1,11 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
-		["Dopesick - Stitches"] = "Default",
-		["Dopeclaw - Stitches"] = "Default",
 		["Dopesnare - Stitches"] = "Default",
+		["Dopecure - Stitches"] = "Default",
+		["Dopeclaw - Stitches"] = "Default",
+		["Dopeah - Stitches"] = "Default",
+		["Dopesick - Stitches"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,

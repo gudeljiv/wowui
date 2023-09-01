@@ -1,4 +1,4 @@
-## Interface: 30401
+## Interface: 30402
 ## Title: RatingBuster, reborn by l'ancestre
 ## Notes: Item stat breakdown, analysis and comparison
 ## Notes-zhTW: 裝備數值解析與比較

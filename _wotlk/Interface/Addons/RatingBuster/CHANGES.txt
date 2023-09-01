@@ -1,12 +1,12 @@
-lightweight tag 675457e579745c2dc9b1f0a271127e9db8244113 3.4.1.08
+lightweight tag 90a018b08806598abac04b99f72e71ca87a51784 3.4.2.01
 Author:	LANCESTRE <lancetre@intenebris.org>
-Date:	Sat Mar 25 14:55:56 2023 +0100
+Date:	Wed Jun 21 21:36:49 2023 +0200
 
-commit 675457e579745c2dc9b1f0a271127e9db8244113
+commit 90a018b08806598abac04b99f72e71ca87a51784
 Author: LANCESTRE <lancetre@intenebris.org>
-Date:   Sat Mar 25 14:55:56 2023 +0100
+Date:   Wed Jun 21 21:36:49 2023 +0200
 
-    Update LibTipHooker-1.1.lua
+    Update RatingBuster.toc
     
-    Fix RC loot Hook Tooltip
+    30402
 

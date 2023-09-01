@@ -1,16 +1,16 @@
-lightweight tag 70c5ad0df6e618bfb5b1ca0752b2f70c9d7adf79 v1.0.17
+lightweight tag e2de76d6875c504e8ad5c9bd497855ec7e2e8643 v1.0.19
 Author:	GitHub <noreply@github.com>
-Date:	Sat Sep 24 16:32:26 2022 -0700
+Date:	Sat Jul 1 19:41:26 2023 -0700
 
-commit 91041c55e4b18b4b94b06584368dc0af163185f3
-Author: WindowsDesktop <anonymouse@nunya.biz>
-Date:   Sat Sep 24 16:25:21 2022 -0700
+commit cbb942de161d6a2bcdb7f13f799299f39f0ac12b
+Author: Trevor Lanz <trevorlanz@yahoo.com>
+Date:   Sat Jul 1 19:39:01 2023 -0700
 
-    revert forced tracking
+    updated Ace libs and addon version for 30042
 
-commit 91041c55e4b18b4b94b06584368dc0af163185f3
-Author: WindowsDesktop <anonymouse@nunya.biz>
-Date:   Sat Sep 24 16:25:21 2022 -0700
+commit cbb942de161d6a2bcdb7f13f799299f39f0ac12b
+Author: Trevor Lanz <trevorlanz@yahoo.com>
+Date:   Sat Jul 1 19:39:01 2023 -0700
 
-    revert forced tracking
+    updated Ace libs and addon version for 30042
 

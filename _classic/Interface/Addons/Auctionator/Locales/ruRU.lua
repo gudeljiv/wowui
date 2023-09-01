@@ -167,12 +167,9 @@ L["CONFIG_SELLING_POSSESSED_FAVOURITES_FIRST_TOOLTIP_TEXT"] = "Установи�
 L["CONFIG_SELLING_POST_SHORTCUT"] = "Сочетание клавиш/мыши для выставления текущего предмета:"
 L["CONFIG_SELLING_POST_SHORTCUT_TOOLTIP_TEXT"] = "Нажмите, а затем нажмите кнопки, которые хотите использовать в качестве ярлыка. Этот ярлык будет активен только на вкладке «Продажа» и не повлияет на другие ярлыки, привязанные к кнопкам."
 L["CONFIG_SELLING_PREV_SHORTCUT"] = "Ярлык для возврата к ранее выбранному предмету"
---[[Translation missing --]]
-L["CONFIG_SELLING_RESELECT_ITEM"] = "Select the last item selected for posting when opening the Selling tab"
---[[Translation missing --]]
-L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_HEADER"] = "Reselect previous item"
---[[Translation missing --]]
-L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_TEXT"] = "After closing the Selling tab and reopening it either during the current session or a later one (including logging out and back in) restore the item selected for posting."
+L["CONFIG_SELLING_RESELECT_ITEM"] = "Выберите последний выбранный для выставления товар при открытии вкладки «Продажи»."
+L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_HEADER"] = "Повторно выбрать предыдущий предмет"
+L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_TEXT"] = "После закрытия вкладки «Продажи» и ее повторного открытия либо во время текущего сеанса, либо в более позднем (включая выход из системы и повторный вход) восстановите выбранный для выставления предмет."
 L["CONFIG_SELLING_SHORTCUTS_CATEGORY"] = "Продажа: Ярлыки"
 L["CONFIG_SELLING_SHORTCUTS_TEXT"] = "Параметры сочетаний клавиш и мыши на вкладке \"Продажа\""
 L["CONFIG_SELLING_SHOW_BID_PRICE"] = "Показывать опцию цены предложения при размещении позиции (требуется перезагрузка)"

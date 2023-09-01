@@ -98,6 +98,18 @@ L["Action Button Glow"] = "Botón de acción resplandeciente"
 L["Action Usable"] = "Acción utilizable"
 L["Actions"] = "Acciones"
 L["Active"] = "Activo"
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "Agregar"
 --[[Translation missing --]]
 L["Add Missing Auras"] = "Add Missing Auras"
@@ -297,6 +309,14 @@ L["Blood-Queen Lana'thel"] = "Blood-Queen Lana'thel"
 L["Border"] = "Borde"
 L["Boss"] = "Jefe"
 L["Boss Emote"] = "Emoción del Jefe"
+--[[Translation missing --]]
+L["Boss Mod Announce"] = "Boss Mod Announce"
+--[[Translation missing --]]
+L["Boss Mod Stage"] = "Boss Mod Stage"
+--[[Translation missing --]]
+L["Boss Mod Stage (Event)"] = "Boss Mod Stage (Event)"
+--[[Translation missing --]]
+L["Boss Mod Timer"] = "Boss Mod Timer"
 L["Boss Whisper"] = "Mensaje del Jefe"
 L["Bottom"] = "Abajo"
 L["Bottom Left"] = "Abajo a la izquierda"
@@ -394,6 +414,8 @@ L["Charged Combo Point 4"] = "Charged Combo Point 4"
 L["Charges"] = "Cargas"
 --[[Translation missing --]]
 L["Charges Changed Event"] = "Charges Changed Event"
+--[[Translation missing --]]
+L["Charging"] = "Charging"
 L["Chat Frame"] = "Cuadro de chat"
 L["Chat Message"] = "Mensaje de chat"
 --[[Translation missing --]]
@@ -460,6 +482,8 @@ L["Critical Rating"] = "Critical Rating"
 L["Crowd Controlled"] = "Bajo control"
 L["Crushing"] = "Golpe aplastador"
 L["C'thun"] = "C'thun"
+--[[Translation missing --]]
+L["Current Essence"] = "Current Essence"
 --[[Translation missing --]]
 L["Current Experience"] = "Current Experience"
 --[[Translation missing --]]
@@ -554,6 +578,8 @@ L["Destination unit's raid mark index"] = "Destination unit's raid mark index"
 --[[Translation missing --]]
 L["Destination unit's raid mark texture"] = "Destination unit's raid mark texture"
 --[[Translation missing --]]
+L["Difficulty"] = "Difficulty"
+--[[Translation missing --]]
 L["Disable Spell Known Check"] = "Disable Spell Known Check"
 --[[Translation missing --]]
 L["Disabled Spell Known Check"] = "Disabled Spell Known Check"
@@ -598,6 +624,8 @@ L["Dungeon (Timewalking)"] = "Dungeon (Timewalking)"
 L["Dungeons"] = "Mazmorras"
 L["Durability Damage"] = "Daño de durabilidad"
 L["Durability Damage All"] = "Daño de durabilidad total"
+--[[Translation missing --]]
+L["Duration"] = "Duration"
 --[[Translation missing --]]
 L["Duration Function"] = "Duration Function"
 --[[Translation missing --]]
@@ -671,6 +699,8 @@ L["Enter static or relative values with %"] = "Enter static or relative values w
 L["Entering"] = "Entrando"
 L["Entering/Leaving Combat"] = "Entrando/abandonando batalla"
 --[[Translation missing --]]
+L["Entering/Leaving Encounter"] = "Entering/Leaving Encounter"
+--[[Translation missing --]]
 L["Entry Order"] = "Entry Order"
 L["Environment Type"] = "Tipo de entorno"
 L["Environmental"] = "Ambiental"
@@ -698,12 +728,28 @@ L["Error Frame"] = "Error Frame"
 L["ERROR in '%s' unknown or incompatible sub element type '%s'"] = "ERROR in '%s' unknown or incompatible sub element type '%s'"
 --[[Translation missing --]]
 L["Error not receiving display information from %s"] = "Error not receiving display information from %s"
+--[[Translation missing --]]
+L["Essence"] = "Essence"
+--[[Translation missing --]]
+L["Essence #1"] = "Essence #1"
+--[[Translation missing --]]
+L["Essence #2"] = "Essence #2"
+--[[Translation missing --]]
+L["Essence #3"] = "Essence #3"
+--[[Translation missing --]]
+L["Essence #4"] = "Essence #4"
+--[[Translation missing --]]
+L["Essence #5"] = "Essence #5"
+--[[Translation missing --]]
+L["Essence #6"] = "Essence #6"
 L["Evade"] = "Evadir"
 L["Event"] = "Event"
 L["Event(s)"] = "Evento(s)"
 L["Every Frame"] = "Todos los macros"
 --[[Translation missing --]]
 L["Every Frame (High CPU usage)"] = "Every Frame (High CPU usage)"
+--[[Translation missing --]]
+L["Evoker Essence"] = "Evoker Essence"
 --[[Translation missing --]]
 L["Experience (%)"] = "Experience (%)"
 --[[Translation missing --]]
@@ -786,6 +832,8 @@ L["Formats Player's |cFFFF0000%guid|r"] = "Formats Player's |cFFFF0000%guid|r"
 L["Forward"] = "Forward"
 --[[Translation missing --]]
 L["Forward, Reverse Loop"] = "Forward, Reverse Loop"
+--[[Translation missing --]]
+L["Fourth Value of Tooltip Text"] = "Fourth Value of Tooltip Text"
 --[[Translation missing --]]
 L["Frame Selector"] = "Frame Selector"
 --[[Translation missing --]]
@@ -945,6 +993,8 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
+L["Id"] = "Id"
+--[[Translation missing --]]
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"
 --[[Translation missing --]]
 L["Ignis the Furnace Master"] = "Ignis the Furnace Master"
@@ -1061,6 +1111,8 @@ L["Journal Stage"] = "Journal Stage"
 L["Keep Inside"] = "Keep Inside"
 --[[Translation missing --]]
 L["Kel'Thuzad"] = "Kel'Thuzad"
+--[[Translation missing --]]
+L["Key"] = "Key"
 --[[Translation missing --]]
 L["Kologarn"] = "Kologarn"
 --[[Translation missing --]]
@@ -1265,6 +1317,12 @@ L["Next Combat"] = "Next Combat"
 --[[Translation missing --]]
 L["Next Encounter"] = "Next Encounter"
 --[[Translation missing --]]
+L[ [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
 L["No Extend"] = "No Extend"
 L["No Instance"] = "Fuera de instancia"
 --[[Translation missing --]]
@@ -1291,6 +1349,8 @@ L["Note: 'Hide Alone' is not available in the new aura tracking system. A load o
 --[[Translation missing --]]
 L["Note: The available text replacements for multi triggers match the normal triggers now."] = "Note: The available text replacements for multi triggers match the normal triggers now."
 --[[Translation missing --]]
+L["Note: This trigger relies on the WoW API, which returns incorrect information in some cases."] = "Note: This trigger relies on the WoW API, which returns incorrect information in some cases."
+--[[Translation missing --]]
 L["Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"] = "Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"
 --[[Translation missing --]]
 L["Noth the Plaguebringer"] = "Noth the Plaguebringer"
@@ -1302,6 +1362,54 @@ L["Number"] = "Número"
 L["Number Affected"] = "Dependiente de números"
 --[[Translation missing --]]
 L["Object"] = "Object"
+--[[Translation missing --]]
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if BigWigs shows it on it's bar]=] ] = [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if BigWigs shows it on it's bar]=]
+--[[Translation missing --]]
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if DBM shows it on it's bar]=] ] = [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if DBM shows it on it's bar]=]
 L["Officer"] = "Oficial"
 --[[Translation missing --]]
 L["Offset from progress"] = "Offset from progress"
@@ -1312,10 +1420,6 @@ L["Old Blizzard (2h | 3m | 10s | 2.4)"] = "Old Blizzard (2h | 3m | 10s | 2.4)"
 L["On Cooldown"] = "Está en tiempo de reutilización"
 --[[Translation missing --]]
 L["On Taxi"] = "On Taxi"
---[[Translation missing --]]
-L["Only if BigWigs shows it on it's bar"] = "Only if BigWigs shows it on it's bar"
---[[Translation missing --]]
-L["Only if DBM shows it on it's bar"] = "Only if DBM shows it on it's bar"
 --[[Translation missing --]]
 L["Only if on a different realm"] = "Only if on a different realm"
 L["Only if Primary"] = "Solo primario"
@@ -1428,6 +1532,8 @@ L["Preset"] = "Predefinido"
 L["Princess Huhuran"] = "Princess Huhuran"
 --[[Translation missing --]]
 L["Print Profiling Results"] = "Print Profiling Results"
+--[[Translation missing --]]
+L["Proc Glow"] = "Proc Glow"
 --[[Translation missing --]]
 L["Professor Putricide"] = "Professor Putricide"
 --[[Translation missing --]]
@@ -1660,6 +1766,10 @@ L["Show Loss of Control"] = "Show Loss of Control"
 --[[Translation missing --]]
 L["Show On"] = "Show On"
 --[[Translation missing --]]
+L["Show Override"] = "Show Override"
+--[[Translation missing --]]
+L["Show Override Spell"] = "Show Override Spell"
+--[[Translation missing --]]
 L["Show Rested Overlay"] = "Show Rested Overlay"
 L["Shrink"] = "Encoger"
 --[[Translation missing --]]
@@ -1798,6 +1908,8 @@ L["Standing"] = "Standing"
 --[[Translation missing --]]
 L["Star Shake"] = "Star Shake"
 --[[Translation missing --]]
+L["Start Animation"] = "Start Animation"
+--[[Translation missing --]]
 L["Start Now"] = "Start Now"
 L["Status"] = "Estado"
 --[[Translation missing --]]
@@ -1815,6 +1927,8 @@ L["Subtract Cast"] = "Subtract Cast"
 L["Subtract Channel"] = "Subtract Channel"
 --[[Translation missing --]]
 L["Subtract GCD"] = "Subtract GCD"
+--[[Translation missing --]]
+L["Success"] = "Success"
 --[[Translation missing --]]
 L["Sulfuron Harbinger"] = "Sulfuron Harbinger"
 L["Summon"] = "Invocar"
@@ -1876,6 +1990,8 @@ L["The Eye of Eternity"] = "The Eye of Eternity"
 --[[Translation missing --]]
 L["The Four Horsemen"] = "The Four Horsemen"
 --[[Translation missing --]]
+L["The 'Key' value can be found in the BigWigs options of a specific spell"] = "The 'Key' value can be found in the BigWigs options of a specific spell"
+--[[Translation missing --]]
 L["The Lich King"] = "The Lich King"
 --[[Translation missing --]]
 L["The Obsidian Sanctum"] = "The Obsidian Sanctum"
@@ -1927,6 +2043,8 @@ L["Tooltip Value 1"] = "Tooltip Value 1"
 L["Tooltip Value 2"] = "Tooltip Value 2"
 --[[Translation missing --]]
 L["Tooltip Value 3"] = "Tooltip Value 3"
+--[[Translation missing --]]
+L["Tooltip Value 4"] = "Tooltip Value 4"
 L["Top"] = "Superior"
 L["Top Left"] = "Superior izquierda"
 L["Top Right"] = "Superior derecha"
@@ -1938,6 +2056,8 @@ L["Torghast"] = "Torghast"
 --[[Translation missing --]]
 L["Total"] = "Total"
 L["Total Duration"] = "Duración total"
+--[[Translation missing --]]
+L["Total Essence"] = "Total Essence"
 --[[Translation missing --]]
 L["Total Experience"] = "Total Experience"
 --[[Translation missing --]]

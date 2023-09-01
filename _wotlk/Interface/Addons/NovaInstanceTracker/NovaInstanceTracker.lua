@@ -63,8 +63,8 @@ elseif (NIT.isRetail) then
 else
 	NIT.noRaidLockouts = true;
 	NIT.hourlyLimit = 5;
-	NIT.dailyLimit = 30;
-	NIT.maxLevel = 70;
+	NIT.dailyLimit = 999;
+	NIT.maxLevel = 60;
 	NIT.noRaidLockout = nil;
 end
 NIT.prefixColor = "|cFFFF6900";
@@ -79,6 +79,9 @@ function NIT:OnInitialize()
 	self.NITOptions = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("NovaInstanceTracker", "NovaInstanceTracker");
 	self:RegisterComm(self.commPrefix);
 	self:buildDatabase();
+	self:doOnceAfterWeeklyReset();
+	self:resetWeeklyData();
+	self:updateWeeklyResetTime();
 	self.chatColor = "|cff" .. self:RGBToHex(self.db.global.chatColorR, self.db.global.chatColorG, self.db.global.chatColorB);
 	self.mergeColor = "|cff" .. self:RGBToHex(self.db.global.mergeColorR, self.db.global.mergeColorG, self.db.global.mergeColorB);
 	self.prefixColor = "|cff" .. self:RGBToHex(self.db.global.prefixColorR, self.db.global.prefixColorG, self.db.global.prefixColorB);
@@ -737,7 +740,7 @@ function NIT:ticker()
 		local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
 		local countMsg = " (" .. NIT.prefixColor .. hourCount24 .. NIT.chatColor .. " " .. L["thisHour24"] .. ")";
 		NIT:print(L["newInstanceNow"] .. countMsg .. ".");
-	elseif (hourCount < lockoutNum and lockoutNum == 5 and GetServerTime() - NIT.lastMerge > 3) then
+	elseif (hourCount < lockoutNum and lockoutNum == NIT.hourlyLimit and GetServerTime() - NIT.lastMerge > 3) then
 		local texture = "|TInterface\\AddOns\\NovaInstanceTracker\\Media\\redX2:12:12:0:0|t";
 		local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
 		local countMsg = " (" .. NIT.prefixColor .. hourCount .. NIT.chatColor .. " " .. L["thisHour"] .. ")";
@@ -904,7 +907,7 @@ function NIT:updateMinimapButton(tooltip, frame)
 			if (data.honor) then
 				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
 			end
-			if (not NIT.isClassic and not NIT.isTBC and UnitLevel("player") ~= NIT.maxLevel and data.type ~= "arena") then
+			if (UnitLevel("player") ~= NIT.maxLevel and data.type ~= "arena") then
 				tooltip:AddLine("|cFF9CD6DE" .. L["experience"] .. ":|r |cFFFFFFFF" .. (NIT:commaValue(data.xpFromChat) or "Unknown"));
 			end
 			if (not data.isPvp) then
@@ -1506,6 +1509,9 @@ function NIT:openInstanceLogFrame()
 	if (NITInstanceFrame:IsShown()) then
 		NITInstanceFrame:Hide();
 	else
+		NIT:doOnceAfterWeeklyReset();
+		NIT:resetWeeklyData();
+		NIT:updateWeeklyResetTime();
 		if (not _G["titleNITInstanceLine"]) then
 			NIT:createTitleInstanceLineFrame();
 			_G["titleNITInstanceLine"]:Show();
@@ -2062,7 +2068,7 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 		end
 		if (data.mythicPlus) then
 			local mythicData = data.mythicPlus;
-			text = text .. "\n\n|cFFFFFF00" .. L["Mythic Plus"] .. " (+" .. mythicData.level .. "):|r";
+			text = text .. "\n\n|cFFFFFF00" .. L["Mythic Plus"] .. " (+" .. (mythicData.level or 0) .. "):|r";
 			if (not mythicData.completed) then
 				--Not completed.
 				text = text .. "\n |cFFFF0000Incomplete|r";
@@ -4032,6 +4038,51 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					text = text .. attunements;
 				end
 			end
+			
+			if (data.quests and next(data.quests)) then
+				local header = "\n\n|cFFFFFF00" .. L["weeklyQuests"] .. "|r";
+				local foundQuests;
+				local questString = "";
+				for k, v in NIT:pairsByKeys(data.quests) do
+					if (v > GetServerTime()) then
+						questString = questString .. "\n  " .. color1 .. k .. "|r " .. color2 .. "completed.|r";
+						foundQuests = true;
+					end
+				end
+				if (foundQuests) then
+					text = text .. header .. questString;
+				end
+			end
+			
+			if (NIT.isRetail and ((data.keystoneData and next(data.keystoneData)) or NIT.maxLevel == data.level)) then
+				local mplusString = "\n\n|cFFFFFF00" .. L["mythicPlusShort"] .. "|r";
+				if (data.weeklyCache) then
+					mplusString = mplusString .. "\n  |cff00ff00Has weekly loot cache to collect!|r";
+				end
+				local score = (data.keystoneScore or 0);
+				local scoreColor = C_ChallengeMode.GetDungeonScoreRarityColor(score);
+				mplusString = mplusString .. "\n  " .. color1 .. "Score:|r |c" .. scoreColor:GenerateHexColor() .. score .. "|r";
+				if (data.keystoneData and next(data.keystoneData)) then
+					--This will only show for max level, there is no stored data on lower levels.
+					if (data.keystoneData.itemLink) then
+						local name = string.match(data.keystoneData.itemLink, "|Hkeystone:%d+:%d+:%d+:%d+:%d+:%d+:%d+|h%[.+: (.+)%]|h");
+						if (name) then
+							mplusString = mplusString .. "\n  " .. color1 .. "Current Keystone: |cffa335ee" .. name .. "|r";
+						else
+							mplusString = mplusString .. "\n  " .. color1 .. "Keystone data corrupt.|r";
+						end
+						if (data.keystoneData.bestMapName and data.keystoneData.bestLevel) then
+							mplusString = mplusString .. "\n  " .. color1 .. "Best This Week: " .. color2 .. data.keystoneData.bestMapName .. " (" .. data.keystoneData.bestLevel .. ")|r";
+						end
+					else
+						mplusString = mplusString .. "\n  " .. color1 .. "No keystone data recorded.|r";
+					end
+				else
+					mplusString = mplusString .. "\n  " .. color1 .. "No keystone data recorded.|r";
+				end
+				text = text .. mplusString;
+			end
+			
 			text = text .. "\n\n|cFFFFFF00" .. L["currentRaidLockouts"] .. "|r";
 			local foundLockout;
 			local lockoutString = "";

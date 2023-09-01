@@ -60,7 +60,14 @@ if GameTooltip.SetRecipeReagentItem then -- Dragonflight
   TooltipHandlers["SetRecipeReagentItem"] = function( tip, recipeID, slotID )
     local itemLink = C_TradeSkillUI.GetRecipeFixedReagentItemLink(recipeID, slotID)
 
-    local schematic = C_TradeSkillUI.GetRecipeSchematic(recipeID, false, ProfessionsFrame.CraftingPage.SchematicForm:GetCurrentRecipeLevel())
+    local recipeLevel
+    if ProfessionsFrame and ProfessionsFrame.CraftingPage:IsVisible() then
+      recipeLevel = ProfessionsFrame.CraftingPage.SchematicForm:GetCurrentRecipeLevel()
+    elseif ProfessionsFrame and ProfessionsFrame.OrdersPage:IsVisible() then
+      recipeLevel =  ProfessionsFrame.OrdersPage.OrderView.OrderDetails.SchematicForm:GetCurrentRecipeLevel()
+    end
+
+    local schematic = C_TradeSkillUI.GetRecipeSchematic(recipeID, false, recipeLevel)
 
     for _, reagentSlotSchematic in ipairs(schematic.reagentSlotSchematics) do
       if reagentSlotSchematic.dataSlotIndex == slotID then
@@ -246,7 +253,6 @@ if GameTooltip.SetItemKey then
     if info == nil then
       return
     end
-    TooltipUtil.SurfaceArgs(info)
     if info.hyperlink then
       local hyperlink = info.hyperlink
       -- Necessary as for recipes the crafted item is returned info.hyperlink,
@@ -280,12 +286,13 @@ end
 if TooltipDataProcessor then
   TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tooltip, data)
     if tooltip == GameTooltip or tooltip == ItemRefTooltip then
-      if not tooltip.info or not tooltip.info.getterName or tooltip.info.excludeLines then
+      local info = tooltip.info or tooltip.processingInfo
+      if not info or not info.getterName or info.excludeLines then
         return
       end
-      local handler = TooltipHandlers[tooltip.info.getterName:gsub("^Get", "Set")]
+      local handler = TooltipHandlers[info.getterName:gsub("^Get", "Set")]
       if handler ~= nil then
-        handler(tooltip, unpack(tooltip.info.getterArgs))
+        handler(tooltip, unpack(info.getterArgs))
       end
     end
   end)

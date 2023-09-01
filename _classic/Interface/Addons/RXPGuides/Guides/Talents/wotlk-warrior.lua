@@ -1,3 +1,0 @@
-local _, addon = ...
-
-if addon.player.class ~= "WARRIOR" then return end

@@ -37,13 +37,11 @@ local LDBIcon = LDB and _G.LibStub("LibDBIcon-1.0", true)
 local addonName, Details222 = ...
 local _ = nil
 local unpack = _G.unpack
-local tinsert = _G.tinsert
+local tinsert = table.insert
 
 local startX = 200
 local startY = -40
 local heightSize = 540
-local optionsWidth, optionsHeight = 1100, 650
-local mainHeightSize = 800
 local presetVersion = 3
 
 --templates
@@ -56,30 +54,29 @@ local options_button_template = DF:GetTemplate("button", "OPTIONS_BUTTON_TEMPLAT
 local subSectionTitleTextTemplate = DF:GetTemplate("font", "ORANGE_FONT_TEMPLATE")
 
 local font_select_icon, font_select_texcoord = [[Interface\AddOns\Details\images\icons]], {472/512, 513/512, 186/512, 230/512}
-local texture_select_icon, texture_select_texcoord = [[Interface\AddOns\Details\images\icons]], {472/512, 513/512, 186/512, 230/512}
 
 --store the current instance being edited
 local currentInstance
 
-function Details.options.SetCurrentInstance(instance)
+function Details222.OptionsPanel.SetCurrentInstance(instance)
     currentInstance = instance
 end
 
-function Details.options.SetCurrentInstanceAndRefresh(instance)
+function Details222.OptionsPanel.SetCurrentInstanceAndRefresh(instance)
     currentInstance = instance
     _G.DetailsOptionsWindow.instance = instance
 
     --get all the frames created and update the options
-    for i = 1, Details.options.maxSectionIds do
-        local sectionFrame = Details.options.GetOptionsSection(i)
+    for i = 1, Details222.OptionsPanel.maxSectionIds do
+        local sectionFrame = Details222.OptionsPanel.GetOptionsSection(i)
         if (sectionFrame.RefreshOptions) then
             sectionFrame:RefreshOptions()
         end
     end
-    Details.options.UpdateAutoHideSettings(instance)
+    Details222.OptionsPanel.UpdateAutoHideSettings(instance)
 end
 
-function Details.options.UpdateAutoHideSettings(instance)
+function Details222.OptionsPanel.UpdateAutoHideSettings(instance)
     for contextId, line in ipairs(_G.DetailsOptionsWindowTab13.AutoHideOptions) do --tab13 = automation settings
         line.enabledCheckbox:SetValue(instance.hide_on_context[contextId].enabled)
         line.reverseCheckbox:SetValue(instance.hide_on_context[contextId].inverse)
@@ -87,7 +84,7 @@ function Details.options.UpdateAutoHideSettings(instance)
     end
 end
 
-function Details.options.RefreshInstances(instance)
+function Details222.OptionsPanel.RefreshInstances(instance)
     if (instance) then
         Details:InstanceGroupCall(instance, "InstanceRefreshRows")
         instance:InstanceReset()
@@ -97,16 +94,16 @@ function Details.options.RefreshInstances(instance)
     end
 end
 
-function Details.options.GetCurrentInstanceInOptionsPanel()
+function Details222.OptionsPanel.GetCurrentInstanceInOptionsPanel()
     return currentInstance
 end
 
 local afterUpdate = function(instance)
-    _detalhes:SendOptionsModifiedEvent(instance or currentInstance)
+    Details:SendOptionsModifiedEvent(instance or currentInstance)
 end
 
 local isGroupEditing = function()
-    return _detalhes.options_group_edit
+    return Details.options_group_edit
 end
 
 local editInstanceSetting = function(instance, funcName, ...)
@@ -154,8 +151,8 @@ do
             local iconsize = {14, 14}
 
             local onSelectTimeAbbreviation = function(_, _, abbreviationtype)
-                _detalhes.ps_abbreviation = abbreviationtype
-                _detalhes:UpdateToKFunctions()
+                Details.ps_abbreviation = abbreviationtype
+                Details:UpdateToKFunctions()
                 afterUpdate()
             end
 
@@ -175,7 +172,7 @@ do
 
         --number system
             local onSelectNumeralSystem = function(_, _, systemNumber)
-                _detalhes:SelectNumericalSystem(systemNumber)
+                Details:SelectNumericalSystem(systemNumber)
             end
 
             local asian1K, asian10K, asian1B = DF:GetAsianNumberSymbols()
@@ -198,15 +195,17 @@ do
 
         --time measure type
             local onSelectTimeType = function(_, _, timetype)
-                _detalhes.time_type = timetype
-                _detalhes.time_type_original = timetype
-                _detalhes:RefreshMainWindow(-1, true)
+                Details.time_type = timetype
+                Details.time_type_original = timetype
+                Details:RefreshMainWindow(-1, true)
                 afterUpdate()
             end
+
             local timetypeOptions = {
                 --localize-me
                 {value = 1, label = "Activity Time", onclick = onSelectTimeType, icon = "Interface\\Icons\\Achievement_Quests_Completed_Daily_08", iconcolor = {1, .9, .9}, texcoord = {0.078125, 0.921875, 0.078125, 0.921875}},
                 {value = 2, label = "Effective Time", onclick = onSelectTimeType, icon = "Interface\\Icons\\Achievement_Quests_Completed_08"},
+                --{value = 3, label = "Real Time", onclick = onSelectTimeType, icon = "Interface\\Icons\\Ability_Evoker_TipTheScales"},
             }
             local buildTimeTypeMenu = function()
                 return timetypeOptions
@@ -214,7 +213,7 @@ do
 
         --auto erase | erase data
             local onSelectEraseData = function(_, _, eraseType)
-                _detalhes.segments_auto_erase = eraseType
+                Details.segments_auto_erase = eraseType
                 afterUpdate()
             end
 
@@ -231,9 +230,9 @@ do
             {type = "label", get = function() return Loc ["STRING_OPTIONS_GENERAL_ANCHOR"] end, text_template = subSectionTitleTextTemplate},
             {--animate bars
                 type = "toggle",
-                get = function() return _detalhes.use_row_animations end,
+                get = function() return Details.use_row_animations end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetUseAnimations(value)
+                    Details:SetUseAnimations(value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_ANIMATEBARS"],
@@ -242,9 +241,9 @@ do
             },
             {--scroll speed
                 type = "range",
-                get = function() return _detalhes.scroll_speed end,
+                get = function() return Details.scroll_speed end,
                 set = function(self, fixedparam, value)
-                    _detalhes.scroll_speed = value
+                    Details.scroll_speed = value
                 end,
                 min = 1,
                 max = 3,
@@ -254,9 +253,9 @@ do
             },
             {--instances amount
                 type = "range",
-                get = function() return _detalhes.instances_amount end,
+                get = function() return Details.instances_amount end,
                 set = function(self, fixedparam, value)
-                    _detalhes.instances_amount = value
+                    Details.instances_amount = value
                 end,
                 min = 1,
                 max = 30,
@@ -266,7 +265,7 @@ do
             },
             {--abbreviation type
                 type = "select",
-                get = function() return _detalhes.ps_abbreviation end,
+                get = function() return Details.ps_abbreviation end,
                 values = function()
                     return buildAbbreviationMenu()
                 end,
@@ -275,7 +274,7 @@ do
             },
             {--number system
                 type = "select",
-                get = function() return _detalhes.numerical_system end,
+                get = function() return Details.numerical_system end,
                 values = function()
                     return buildNumeralSystemsMenu()
                 end,
@@ -284,9 +283,9 @@ do
             },
             {--update speed
                 type = "range",
-                get = function() return _detalhes.update_speed end,
+                get = function() return Details.update_speed end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetWindowUpdateSpeed(value)
+                    Details:SetWindowUpdateSpeed(value)
                     afterUpdate()
                 end,
                 min = 0.05,
@@ -298,12 +297,45 @@ do
             },
             {--time measure
                 type = "select",
-                get = function() return _detalhes.time_type end,
+                get = function() return Details.time_type end,
                 values = function()
                     return buildTimeTypeMenu()
                 end,
                 name = Loc ["STRING_OPTIONS_TIMEMEASURE"],
                 desc = Loc ["STRING_OPTIONS_TIMEMEASURE_DESC"],
+            },
+
+            {--use real time
+                type = "toggle",
+                get = function() return Details.use_realtimedps end,
+                set = function(self, fixedparam, value)
+                    Details.use_realtimedps = value
+                end,
+                name = "Show 'Real Time' DPS",
+                desc = "If Enabled and while in combat, show the damage done of the latest 5 seconds divided by 5.",
+                boxfirst = true,
+            },
+
+            {--real time dps order bars
+                type = "toggle",
+                get = function() return Details.realtimedps_order_bars end,
+                set = function(self, fixedparam, value)
+                    Details.realtimedps_order_bars = value
+                end,
+                name = "Order Bars By Real Time DPS",
+                desc = "If Enabled, players dealing more real time DPS are place above other players in the window.",
+                boxfirst = true,
+            },
+
+            {--always use real time in arenas
+                type = "toggle",
+                get = function() return Details.realtimedps_always_arena end,
+                set = function(self, fixedparam, value)
+                    Details.realtimedps_always_arena = value
+                end,
+                name = "Always Use Real Time in Arenas",
+                desc = "If Enabled, real time DPS is always used in arenas, even if the option above is disabled.",
+                boxfirst = true,
             },
 
             {type = "blank"},
@@ -322,9 +354,9 @@ do
 
             {--battleground remote parser
                 type = "toggle",
-                get = function() return _detalhes.use_battleground_server_parser end,
+                get = function() return Details.use_battleground_server_parser end,
                 set = function(self, fixedparam, value)
-                    _detalhes.use_battleground_server_parser = value
+                    Details.use_battleground_server_parser = value
                  end,
                 name = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT"],
                 desc = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT_DESC"],
@@ -332,9 +364,9 @@ do
             },
             {--battleground show enemies
                 type = "toggle",
-                get = function() return _detalhes.pvp_as_group end,
+                get = function() return Details.pvp_as_group end,
                 set = function(self, fixedparam, value)
-                    _detalhes.pvp_as_group = value
+                    Details.pvp_as_group = value
                  end,
                 name = Loc ["STRING_OPTIONS_BG_ALL_ALLY"],
                 desc = Loc ["STRING_OPTIONS_BG_ALL_ALLY_DESC"],
@@ -343,9 +375,9 @@ do
 
             {--max segments
                 type = "range",
-                get = function() return _detalhes.segments_amount end,
+                get = function() return Details.segments_amount end,
                 set = function(self, fixedparam, value)
-                    _detalhes.segments_amount = value
+                    Details.segments_amount = value
                     afterUpdate()
                 end,
                 min = 1,
@@ -357,9 +389,9 @@ do
 
             {--max segments saved
                 type = "range",
-                get = function() return _detalhes.segments_amount_to_save end,
+                get = function() return Details.segments_amount_to_save end,
                 set = function(self, fixedparam, value)
-                    _detalhes.segments_amount_to_save = value
+                    Details.segments_amount_to_save = value
                     afterUpdate()
                 end,
                 min = 1,
@@ -374,7 +406,7 @@ do
 
             {--auto erase settings | erase data
                 type = "select",
-                get = function() return _detalhes.segments_auto_erase end,
+                get = function() return Details.segments_auto_erase end,
                 values = function()
                     return buildEraseDataMenu()
                 end,
@@ -384,9 +416,9 @@ do
 
             {--auto erase trash segments
                 type = "toggle",
-                get = function() return _detalhes.trash_auto_remove end,
+                get = function() return Details.trash_auto_remove end,
                 set = function(self, fixedparam, value)
-                    _detalhes.trash_auto_remove = value
+                    Details.trash_auto_remove = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_CLEANUP"],
@@ -395,9 +427,9 @@ do
             },
             {--auto erase world segments
                 type = "toggle",
-                get = function() return _detalhes.world_combat_is_trash end,
+                get = function() return Details.world_combat_is_trash end,
                 set = function(self, fixedparam, value)
-                    _detalhes.world_combat_is_trash = value
+                    Details.world_combat_is_trash = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_PERFORMANCE_ERASEWORLD"],
@@ -406,9 +438,9 @@ do
             },
             {--erase chart data
                 type = "toggle",
-                get = function() return _detalhes.clear_graphic end,
+                get = function() return Details.clear_graphic end,
                 set = function(self, fixedparam, value)
-                    _detalhes.clear_graphic = value
+                    Details.clear_graphic = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_ERASECHARTDATA"],
@@ -421,9 +453,9 @@ do
 
             {--erase overall data on new boss
                 type = "toggle",
-                get = function() return _detalhes.overall_clear_newboss end,
+                get = function() return Details.overall_clear_newboss end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetOverallResetOptions(value)
+                    Details:SetOverallResetOptions(value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_NEWBOSS"],
@@ -432,9 +464,9 @@ do
             },
             {--erase overall data on mythic plus
                 type = "toggle",
-                get = function() return _detalhes.overall_clear_newchallenge end,
+                get = function() return Details.overall_clear_newchallenge end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetOverallResetOptions(nil, value)
+                    Details:SetOverallResetOptions(nil, value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_MYTHICPLUS"],
@@ -443,9 +475,9 @@ do
             },
             {--erase overall data on logout
                 type = "toggle",
-                get = function() return _detalhes.overall_clear_pvp end,
+                get = function() return Details.overall_clear_pvp end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetOverallResetOptions(nil, nil, nil, value)
+                    Details:SetOverallResetOptions(nil, nil, nil, value)
                     afterUpdate()
                 end,
                 name = "Clear On Start PVP", --localize-me
@@ -454,9 +486,9 @@ do
             },
             {--erase overall data on logout
                 type = "toggle",
-                get = function() return _detalhes.overall_clear_logout end,
+                get = function() return Details.overall_clear_logout end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetOverallResetOptions(nil, nil, value)
+                    Details:SetOverallResetOptions(nil, nil, value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_LOGOFF"],
@@ -465,7 +497,7 @@ do
             },
             {--auto switch to dynamic overall data when selecting overall data
                 type = "toggle",
-                get = function() return _detalhes.auto_swap_to_dynamic_overall end,
+                get = function() return Details.auto_swap_to_dynamic_overall end,
                 set = function(self, fixedparam, value)
                     Details.auto_swap_to_dynamic_overall = value
                     afterUpdate()
@@ -482,7 +514,7 @@ do
                 type = "execute",
                 func = function(self)
                     local instanceLockButton = currentInstance.baseframe.lock_button
-                    _detalhes.lock_instance_function(instanceLockButton, "leftclick", true, true)
+                    Details.lock_instance_function(instanceLockButton, "leftclick", true, true)
                 end,
                 icontexture = [[Interface\PetBattles\PetBattle-LockIcon]],
                 icontexcoords = {0.0703125, 0.9453125, 0.0546875, 0.9453125},
@@ -512,7 +544,7 @@ do
             {--create instance
                 type = "execute",
                 func = function(self)
-                    _detalhes:CreateInstance()
+                    Details:CreateInstance()
                 end,
                 icontexture = [[Interface\Buttons\UI-AttributeButton-Encourage-Up]],
                 --icontexcoords = {160/512, 179/512, 142/512, 162/512},
@@ -525,7 +557,7 @@ do
             {--class colors
                 type = "execute",
                 func = function(self)
-                    _detalhes:OpenClassColorsConfig()
+                    Details:OpenClassColorsConfig()
                 end,
                 icontexture = [[Interface\AddOns\Details\images\icons]],
                 icontexcoords = {432/512, 464/512, 276/512, 309/512},
@@ -535,7 +567,7 @@ do
             {--bookmarks
                 type = "execute",
                 func = function(self)
-                    _detalhes:OpenBookmarkConfig()
+                    Details:OpenBookmarkConfig()
                 end,
                 icontexture = [[Interface\LootFrame\toast-star]],
                 icontexcoords = {0.1, .64, 0.1, .69},
@@ -560,9 +592,9 @@ do
 
             {--always show players even on stardard mode
                 type = "toggle",
-                get = function() return _detalhes.all_players_are_group end,
+                get = function() return Details.all_players_are_group end,
                 set = function(self, fixedparam, value)
-                    _detalhes.all_players_are_group = value
+                    Details.all_players_are_group = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_ALWAYSSHOWPLAYERS"],
@@ -575,12 +607,12 @@ do
             {type = "label", get = function() return Loc ["STRING_OPTIONS_SOCIAL"] end, text_template = subSectionTitleTextTemplate},
             {--nickname
                 type = "textentry",
-                get = function() return _detalhes:GetNickname(_G.UnitName("player"), _G.UnitName("player"), true) or "" end,
+                get = function() return Details:GetNickname(_G.UnitName("player"), _G.UnitName("player"), true) or "" end,
                 func = function(self, _, text)
-                    local accepted, errortext = _detalhes:SetNickname(text)
+                    local accepted, errortext = Details:SetNickname(text)
                     if (not accepted) then
                         Details:ResetPlayerPersona()
-                        Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                        Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     end
                     afterUpdate()
                 end,
@@ -591,7 +623,7 @@ do
                 type = "execute",
                 func = function(self)
                     Details:ResetPlayerPersona()
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                 end,
                 icontexture = [[Interface\GLUES\LOGIN\Glues-CheckBox-Check]],
                 --icontexcoords = {160/512, 179/512, 142/512, 162/512},
@@ -600,9 +632,9 @@ do
             },
             {--ignore nicknames
                 type = "toggle",
-                get = function() return _detalhes.ignore_nicktag end,
+                get = function() return Details.ignore_nicktag end,
                 set = function(self, fixedparam, value)
-                    _detalhes.ignore_nicktag = value
+                    Details.ignore_nicktag = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_IGNORENICKNAME"],
@@ -612,9 +644,9 @@ do
 
             {--remove realm name
                 type = "toggle",
-                get = function() return _detalhes.remove_realm_from_name end,
+                get = function() return Details.remove_realm_from_name end,
                 set = function(self, fixedparam, value)
-                    _detalhes.remove_realm_from_name = value
+                    Details.remove_realm_from_name = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_REALMNAME"],
@@ -658,7 +690,7 @@ do
 
         sectionFrame.sectionOptions = sectionOptions
         sectionOptions.always_boxfirst = true
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+20, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+40, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection) --optionsSection is declared on boot.lua
@@ -688,7 +720,7 @@ do
 
             local buildSkinMenu = function()
                 local skinOptions = {}
-                for skin_name, skin_table in pairs(_detalhes.skins) do
+                for skin_name, skin_table in pairs(Details.skins) do
                     local file = skin_table.file:gsub([[Interface\AddOns\Details\images\skins\]], "")
                     local desc = "Author: |cFFFFFFFF" .. skin_table.author .. "|r\nVersion: |cFFFFFFFF" .. skin_table.version .. "|r\nSite: |cFFFFFFFF" .. skin_table.site .. "|r\n\nDesc: |cFFFFFFFF" .. skin_table.desc .. "|r\n\nFile: |cFFFFFFFF" .. file .. ".tga|r"
                     skinOptions [#skinOptions+1] = {value = skin_name, label = skin_name, onclick = onSelectSkin, icon = "Interface\\GossipFrame\\TabardGossipIcon", desc = desc}
@@ -710,7 +742,7 @@ do
                 }
                 
                 for key, value in pairs(currentInstance) do
-                    if (_detalhes.instance_defaults[key] ~= nil) then
+                    if (Details.instance_defaults[key] ~= nil) then
                         if (type(value) == "table") then
                             savedObject[key] = Details.CopyTable(value)
                         else
@@ -720,7 +752,7 @@ do
                 end
                 
                 if (not dontSave) then
-                    _detalhes.savedStyles[#_detalhes.savedStyles+1] = savedObject
+                    Details.savedStyles[#Details.savedStyles+1] = savedObject
                 end
 
                 return savedObject
@@ -737,7 +769,7 @@ do
 
                 --overwrite all instance parameters with saved ones
                 for key, value in pairs(skinObject) do
-                    if (key ~= "skin" and not _detalhes.instance_skin_ignored_values[key]) then
+                    if (key ~= "skin" and not Details.instance_skin_ignored_values[key]) then
                         if (type(value) == "table") then
                             instance[key] = Details.CopyTable(value)
                         else
@@ -760,7 +792,7 @@ do
         --import skin string
             local importSaved = function()
                 --when clicking in the okay button in the import window, it send the text in the first argument
-                _detalhes:ShowImportWindow("", function(skinString)
+                Details:ShowImportWindow("", function(skinString)
                     if (type(skinString) ~= "string" or string.len(skinString) < 2) then
                         return
                     end
@@ -770,9 +802,9 @@ do
                     local dataTable = Details:DecompressData (skinString, "print")
                     if (dataTable) then
                         --add the new skin
-                        _detalhes.savedStyles [#_detalhes.savedStyles+1] = dataTable
-                        _detalhes:Msg(Loc ["STRING_OPTIONS_SAVELOAD_IMPORT_OKEY"])
-                        Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                        Details.savedStyles [#Details.savedStyles+1] = dataTable
+                        Details:Msg(Loc ["STRING_OPTIONS_SAVELOAD_IMPORT_OKEY"])
+                        Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                         afterUpdate()
                     else
                         Details:Msg(Loc ["STRING_CUSTOM_IMPORT_ERROR"])
@@ -810,7 +842,7 @@ do
                 type = "execute",
                 func = function(self)
                     Details:InstanceGroupCall(currentInstance, "SetUserCustomSkinFile", "")
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
                 end,
                 icontexture = [[Interface\GLUES\LOGIN\Glues-CheckBox-Check]],
@@ -824,8 +856,8 @@ do
                 get = function() return "" end,
                 set = function(self, _, text)
                     saveAsSkin(text)
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
-                    _detalhes:Msg(Loc ["STRING_OPTIONS_SAVELOAD_SKINCREATED"])
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details:Msg(Loc ["STRING_OPTIONS_SAVELOAD_SKINCREATED"])
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_SAVELOAD_SAVE"],
@@ -837,7 +869,7 @@ do
                 func = function(self)
                     local tempPreset = saveAsSkin("temp", true)
 
-                    for instanceId, instance in _detalhes:ListInstances() do
+                    for instanceId, instance in Details:ListInstances() do
                         if (instance ~= currentInstance) then
                             if (not instance:IsStarted()) then
                                 instance:RestoreWindow()
@@ -850,8 +882,8 @@ do
                         end
                     end
                     
-                    _detalhes:Msg(Loc ["STRING_OPTIONS_SAVELOAD_APPLYALL"])
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details:Msg(Loc ["STRING_OPTIONS_SAVELOAD_APPLYALL"])
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
                 end,
                 icontexture = [[Interface\Buttons\UI-HomeButton]],
@@ -870,7 +902,7 @@ do
                 end,
                 values = function()
                     local loadtable = {}
-                    for index, _table in ipairs(_detalhes.savedStyles) do
+                    for index, _table in ipairs(Details.savedStyles) do
                         tinsert(loadtable, {value = index, label = _table.name, onclick = function() loadSkin(currentInstance, _table) end,
                         icon = "Interface\\GossipFrame\\TabardGossipIcon", iconcolor = {.7, .7, .5, 1}})
                     end
@@ -887,12 +919,12 @@ do
                 end,
                 values = function()
                     local loadtable = {}
-                    for index, _table in ipairs(_detalhes.savedStyles) do
+                    for index, _table in ipairs(Details.savedStyles) do
                         tinsert(loadtable, {value = index, label = _table.name, onclick = function(_, _, index)
-                            table.remove (_detalhes.savedStyles, index)
-                            Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                            table.remove (Details.savedStyles, index)
+                            Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                             afterUpdate()
-                            _detalhes:Msg(Loc ["STRING_OPTIONS_SKIN_REMOVED"])
+                            Details:Msg(Loc ["STRING_OPTIONS_SKIN_REMOVED"])
                         end,
                         icon = [[Interface\Glues\LOGIN\Glues-CheckBox-Check]], color = {1, 1, 1}, iconcolor = {1, .9, .9, 0.8}})
                     end
@@ -909,15 +941,15 @@ do
                 end,
                 values = function()
                     local loadtable = {}
-                    for index, _table in ipairs(_detalhes.savedStyles) do
+                    for index, _table in ipairs(Details.savedStyles) do
                         tinsert(loadtable, {value = index, label = _table.name, onclick = function(_, _, index)
-                            local compressedData = Details:CompressData(_detalhes.savedStyles[index], "print")
+                            local compressedData = Details:CompressData(Details.savedStyles[index], "print")
                             if (compressedData) then
-                                _detalhes:ShowImportWindow(compressedData, nil, "Details! Export Skin")
+                                Details:ShowImportWindow(compressedData, nil, "Details! Export Skin")
                             else
                                 Details:Msg("failed to export skin.") --localize-me
                             end
-                            Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                            Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                             afterUpdate()
                         end,
                         icon = [[Interface\Buttons\UI-GuildButton-MOTD-Up]], color = {1, 1, 1}, iconcolor = {1, .9, .9, 0.8}, texcoord = {1, 0, 0, 1}})
@@ -944,10 +976,10 @@ do
 
             {--chat tab embed enabled
                 type = "toggle",
-                get = function() return _detalhes.chat_tab_embed.enabled end,
+                get = function() return Details.chat_tab_embed.enabled end,
                 set = function(self, fixedparam, value)
-                    _detalhes.chat_embed:SetTabSettings(nil, value)
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details.chat_embed:SetTabSettings(nil, value)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_ENABLED"],
@@ -956,9 +988,9 @@ do
 
             {--tab name
                 type = "textentry",
-                get = function() return _detalhes.chat_tab_embed.tab_name or "" end,
+                get = function() return Details.chat_tab_embed.tab_name or "" end,
                 func = function(self, _, text)
-                    _detalhes.chat_embed:SetTabSettings(text)
+                    Details.chat_embed:SetTabSettings(text)
                 end,
                 name = Loc ["STRING_OPTIONS_TABEMB_TABNAME"],
                 desc = Loc ["STRING_OPTIONS_TABEMB_TABNAME_DESC"],
@@ -966,10 +998,10 @@ do
 
             {--single window
                 type = "toggle",
-                get = function() return _detalhes.chat_tab_embed.single_window end,
+                get = function() return Details.chat_tab_embed.single_window end,
                 set = function(self, fixedparam, value)
-                    _detalhes.chat_embed:SetTabSettings (nil, nil, value)
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details.chat_embed:SetTabSettings (nil, nil, value)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_TABEMB_SINGLE"],
@@ -978,11 +1010,11 @@ do
 
             {--chat tab width offset
                 type = "range",
-                get = function() return tonumber(_detalhes.chat_tab_embed.x_offset) end,
+                get = function() return tonumber(Details.chat_tab_embed.x_offset) end,
                 set = function(self, fixedparam, value)
-                    _detalhes.chat_tab_embed.x_offset = value
-                    if (_detalhes.chat_embed.enabled) then
-                        _detalhes.chat_embed:DoEmbed()
+                    Details.chat_tab_embed.x_offset = value
+                    if (Details.chat_embed.enabled) then
+                        Details.chat_embed:DoEmbed()
                     end
                     afterUpdate()
                 end,
@@ -995,11 +1027,11 @@ do
 
             {--chat tab height offset
                 type = "range",
-                get = function() return tonumber(_detalhes.chat_tab_embed.y_offset) end,
+                get = function() return tonumber(Details.chat_tab_embed.y_offset) end,
                 set = function(self, fixedparam, value)
-                    _detalhes.chat_tab_embed.y_offset = value
-                    if (_detalhes.chat_embed.enabled) then
-                        _detalhes.chat_embed:DoEmbed()
+                    Details.chat_tab_embed.y_offset = value
+                    if (Details.chat_embed.enabled) then
+                        Details.chat_embed:DoEmbed()
                     end
                     afterUpdate()
                 end,
@@ -1056,7 +1088,7 @@ do
     --sort direction
     local set_bar_sorting = function(_, instance, value)
         editInstanceSetting(currentInstance, "bars_sort_direction", value)
-        _detalhes:RefreshMainWindow(-1, true)
+        Details:RefreshMainWindow(-1, true)
         afterUpdate()
     end
 
@@ -1182,9 +1214,9 @@ do
 
             {--disable highlight
                 type = "toggle",
-                get = function() return _detalhes.instances_disable_bar_highlight end,
+                get = function() return Details.instances_disable_bar_highlight end,
                 set = function(self, fixedparam, value)
-                    _detalhes.instances_disable_bar_highlight = value
+                    Details.instances_disable_bar_highlight = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_BARHIGHLIGHT"],
@@ -1284,7 +1316,7 @@ do
                 get = function()
                     local r, g, b = unpack(currentInstance.row_info.fixed_texture_color)
                     local alpha = currentInstance.row_info.alpha
-                    return {r, g, b, a}
+                    return {r, g, b, alpha}
 				end,
 				set = function(self, r, g, b, a)
                     editInstanceSetting(currentInstance, "SetBarSettings", nil, nil, nil, {r, g, b})
@@ -1348,8 +1380,7 @@ do
 			{--background color
                 type = "color",
                 get = function()
-                    local r, g, b = unpack(currentInstance.row_info.fixed_texture_background_color)
-                    local alpha = currentInstance.row_info.alpha
+                    local r, g, b, a = unpack(currentInstance.row_info.fixed_texture_background_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
@@ -1413,7 +1444,7 @@ do
                         editInstanceSetting(currentInstance, "SetBarSettings", nil, nil, nil, nil, nil, nil, nil, nil, text)
                     end
 
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"],
@@ -1516,7 +1547,7 @@ do
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "use_multi_fontstrings", value)
                     editInstanceSetting(currentInstance, "InstanceRefreshRows")
-                    _detalhes:RefreshMainWindow(-1, true)
+                    Details:RefreshMainWindow(-1, true)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_ENABLED"],
@@ -1529,7 +1560,7 @@ do
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "use_auto_align_multi_fontstrings", value)
                     editInstanceSetting(currentInstance, "InstanceRefreshRows")
-                    _detalhes:RefreshMainWindow(-1, true)
+                    Details:RefreshMainWindow(-1, true)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_AUTOALIGN"],
@@ -1543,7 +1574,7 @@ do
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "fontstrings_text_limit_offset", value)
                     editInstanceSetting(currentInstance, "InstanceRefreshRows")
-                    Details.options.RefreshInstances(currentInstance)
+                    Details222.OptionsPanel.RefreshInstances(currentInstance)
                     afterUpdate()
                 end,
                 min = -30,
@@ -1608,7 +1639,7 @@ do
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "total_bar", "enabled", value)
                     afterUpdate()
-                    Details.options.RefreshInstances(currentInstance)
+                    Details222.OptionsPanel.RefreshInstances(currentInstance)
                 end,
                 name = Loc ["STRING_ENABLED"],
                 desc = Loc ["STRING_OPTIONS_SHOW_TOTALBAR_DESC"],
@@ -1906,7 +1937,7 @@ do
 			{--outline small color 10
                 type = "color",
                 get = function()
-                    local r, g, b = unpack(currentInstance.row_info.textL_outline_small_color)
+                    local r, g, b, a = unpack(currentInstance.row_info.textL_outline_small_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
@@ -1971,7 +2002,7 @@ do
                         editInstanceSetting(currentInstance, "SetBarTextSettings", nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, text)
                         afterUpdate()
                     end
-                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textL_custom_text, callback, _G.DetailsOptionsWindow, _detalhes.instance_defaults.row_info.textL_custom_text)
+                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textL_custom_text, callback, _G.DetailsOptionsWindow, Details.instance_defaults.row_info.textL_custom_text)
                 end,
                 icontexture = [[Interface\GLUES\LOGIN\Glues-CheckBox-Check]],
                 --icontexcoords = {160/512, 179/512, 142/512, 162/512},
@@ -2016,7 +2047,7 @@ do
 			{--outline small color 21
                 type = "color",
                 get = function()
-                    local r, g, b = unpack(currentInstance.row_info.textR_outline_small_color)
+                    local r, g, b, a = unpack(currentInstance.row_info.textR_outline_small_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
@@ -2104,7 +2135,7 @@ do
                         editInstanceSetting(currentInstance, "SetBarTextSettings", nil, nil, nil, nil, nil, nil, nil, nil, text)
                         afterUpdate()
                     end
-                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textR_custom_text, callback, _G.DetailsOptionsWindow, _detalhes.instance_defaults.row_info.textL_custom_text)
+                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textR_custom_text, callback, _G.DetailsOptionsWindow, Details.instance_defaults.row_info.textL_custom_text)
                 end,
                 icontexture = [[Interface\GLUES\LOGIN\Glues-CheckBox-Check]],
                 --icontexcoords = {160/512, 179/512, 142/512, 162/512},
@@ -2120,8 +2151,8 @@ do
         local separatorOption = sectionFrame.widget_list[25]
         local bracketOption = sectionFrame.widget_list[26]
         local warningLabel = sectionFrame.widget_list[27]
-        Details.options.textSeparatorOption = separatorOption
-        Details.options.textbracketOption = bracketOption
+        Details222.OptionsPanel.textSeparatorOption = separatorOption
+        Details222.OptionsPanel.textbracketOption = bracketOption
 
         sectionFrame:SetScript("OnShow", function()
             if (currentInstance.use_multi_fontstrings) then
@@ -2150,7 +2181,7 @@ do
 
     --menu text face
         local onSelectFont = function(_, _, fontName)
-            _detalhes.font_faces.menus = fontName
+            Details.font_faces.menus = fontName
         end
         
         local buildFontMenu = function()
@@ -2277,7 +2308,7 @@ do
                 type = "toggle",
                 get = function() return currentInstance.disable_alldisplays_window end,
                 set = function(self, fixedparam, value)
-                    _detalhes.disable_alldisplays_window = value
+                    Details.disable_alldisplays_window = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_ALLDISPLAYSWINDOW"],
@@ -2422,7 +2453,7 @@ do
 
             {--title bar icons position X
                 type = "range",
-                get = function() return currentInstance.menu_anchor[1] end,
+                get = function() return currentInstance.toolbar_side == 1 and currentInstance.menu_anchor[1] or currentInstance.menu_anchor_down[1] end,
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "MenuAnchor", value)
                     afterUpdate()
@@ -2436,7 +2467,7 @@ do
 
             {--title bar icons position Y
                 type = "range",
-                get = function() return currentInstance.menu_anchor[2] end,
+                get = function() return currentInstance.toolbar_side == 1 and currentInstance.menu_anchor[2] or currentInstance.menu_anchor_down[2] end,
                 set = function(self, fixedparam, value)
                     editInstanceSetting(currentInstance, "MenuAnchor", nil, value)
                     afterUpdate()
@@ -2495,9 +2526,9 @@ do
 
             {--disable reset button
                 type = "toggle",
-                get = function() return _detalhes.disable_reset_button end,
+                get = function() return Details.disable_reset_button end,
                 set = function(self, fixedparam, value)
-                    _detalhes.disable_reset_button = value
+                    Details.disable_reset_button = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_RESET"],
@@ -2506,9 +2537,9 @@ do
 
             {--click to open menus
                 type = "toggle",
-                get = function() return _detalhes.instances_menu_click_to_open end,
+                get = function() return Details.instances_menu_click_to_open end,
                 set = function(self, fixedparam, value)
-                    _detalhes.instances_menu_click_to_open = value
+                    Details.instances_menu_click_to_open = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_CLICK_TO_OPEN_MENUS"],
@@ -2722,20 +2753,20 @@ do
 
         local buildInstanceMenu = function()
             local instanceList = {}
-            for index = 1, math.min (#_detalhes.tabela_instancias, _detalhes.instances_amount) do
-                local instance = _detalhes.tabela_instancias[index]
+            for index = 1, math.min (#Details.tabela_instancias, Details.instances_amount) do
+                local instance = Details.tabela_instancias[index]
 
                 --what the window is showing
                 local atributo = instance.atributo
                 local sub_atributo = instance.sub_atributo
                 
                 if (atributo == 5) then --custom
-                    local CustomObject = _detalhes.custom [sub_atributo]
+                    local CustomObject = Details.custom [sub_atributo]
                     if (not CustomObject) then
                         instance:ResetAttribute()
                         atributo = instance.atributo
                         sub_atributo = instance.sub_atributo
-                        instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. _detalhes.atributos.lista [atributo] .. " - " .. _detalhes.sub_atributos [atributo].lista [sub_atributo], onclick = onSelectInstance, icon = _detalhes.sub_atributos [atributo].icones[sub_atributo] [1], texcoord = _detalhes.sub_atributos [atributo].icones[sub_atributo] [2]}
+                        instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. Details.atributos.lista [atributo] .. " - " .. Details.sub_atributos [atributo].lista [sub_atributo], onclick = onSelectInstance, icon = Details.sub_atributos [atributo].icones[sub_atributo] [1], texcoord = Details.sub_atributos [atributo].icones[sub_atributo] [2]}
                     else
                         instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. CustomObject.name, onclick = onSelectInstance, icon = CustomObject.icon}
                     end
@@ -2743,8 +2774,8 @@ do
                     local modo = instance.modo
                     
                     if (modo == 1) then --solo plugin
-                        atributo = _detalhes.SoloTables.Mode or 1
-                        local SoloInfo = _detalhes.SoloTables.Menu [atributo]
+                        atributo = Details.SoloTables.Mode or 1
+                        local SoloInfo = Details.SoloTables.Menu [atributo]
                         if (SoloInfo) then
                             instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. SoloInfo [1], onclick = onSelectInstance, icon = SoloInfo [2]}
                         else
@@ -2754,7 +2785,7 @@ do
                     elseif (modo == 4) then --raid plugin
                         local plugin_name = instance.current_raid_plugin or instance.last_raid_plugin
                         if (plugin_name) then
-                            local plugin_object = _detalhes:GetPlugin (plugin_name)
+                            local plugin_object = Details:GetPlugin (plugin_name)
                             if (plugin_object) then
                                 instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. plugin_object.__name, onclick = onSelectInstance, icon = plugin_object.__icon}
                             else
@@ -2764,7 +2795,7 @@ do
                             instanceList [#instanceList+1] = {value = index, label = "#".. index .. " unknown", onclick = onSelectInstance, icon = ""}
                         end
                     else
-                        instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. _detalhes.atributos.lista [atributo] .. " - " .. _detalhes.sub_atributos [atributo].lista [sub_atributo], onclick = onSelectInstance, icon = _detalhes.sub_atributos [atributo].icones[sub_atributo] [1], texcoord = _detalhes.sub_atributos [atributo].icones[sub_atributo] [2]}
+                        instanceList [#instanceList+1] = {value = index, label = "#".. index .. " " .. Details.atributos.lista [atributo] .. " - " .. Details.sub_atributos [atributo].lista [sub_atributo], onclick = onSelectInstance, icon = Details.sub_atributos [atributo].icones[sub_atributo] [1], texcoord = Details.sub_atributos [atributo].icones[sub_atributo] [2]}
                     end
                 end
             end
@@ -2894,9 +2925,9 @@ do
 
             {--disable grouping
                 type = "toggle",
-                get = function() return _detalhes.disable_window_groups end,
+                get = function() return Details.disable_window_groups end,
                 set = function(self, fixedparam, value)
-                    _detalhes.disable_window_groups = value
+                    Details.disable_window_groups = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_GROUPS"],
@@ -2905,9 +2936,9 @@ do
 
             {--disable resize buttons
                 type = "toggle",
-                get = function() return _detalhes.disable_lock_ungroup_buttons end,
+                get = function() return Details.disable_lock_ungroup_buttons end,
                 set = function(self, fixedparam, value)
-                    _detalhes.disable_lock_ungroup_buttons = value
+                    Details.disable_lock_ungroup_buttons = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_LOCK_RESIZE"],
@@ -2916,9 +2947,9 @@ do
 
             {--disable stretch button
                 type = "toggle",
-                get = function() return _detalhes.disable_stretch_button end,
+                get = function() return Details.disable_stretch_button end,
                 set = function(self, fixedparam, value)
-                    _detalhes.disable_stretch_button = value
+                    Details.disable_stretch_button = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DISABLE_STRETCH_BUTTON"],
@@ -2979,7 +3010,7 @@ do
                     local selectedWindow = profileDropdown:GetValue()
 
                     if (selectedWindow) then
-                        _detalhes:DeleteInstance(selectedWindow)
+                        Details:DeleteInstance(selectedWindow)
                         ReloadUI()
                     end
                 end,
@@ -3206,11 +3237,11 @@ do
                 local anchor, index = unpack(micro_display)
 
                 if (index == -1) then
-                    return _detalhes.StatusBar:SetPlugin (currentInstance, -1, anchor)
+                    return Details.StatusBar:SetPlugin (currentInstance, -1, anchor)
                 end
                 
-                local absolute_name = _detalhes.StatusBar.Plugins [index].real_name
-                _detalhes.StatusBar:SetPlugin (currentInstance, absolute_name, anchor)
+                local absolute_name = Details.StatusBar.Plugins [index].real_name
+                Details.StatusBar:SetPlugin (currentInstance, absolute_name, anchor)
                 
                 updateMicroFrames() -- in development
                 afterUpdate()
@@ -3219,21 +3250,21 @@ do
             --dropdown options
             local buildLeftMicroMenu = function()
                 local options = {}
-                for index, _name_and_icon in ipairs(_detalhes.StatusBar.Menu) do 
+                for index, _name_and_icon in ipairs(Details.StatusBar.Menu) do 
                     options [#options+1] = {value = {"left", index}, label = _name_and_icon [1], onclick = onMicroDisplaySelect, icon = _name_and_icon [2]}
                 end
                 return options
             end
             local buildCenterMicroMenu = function()
                 local options = {}
-                for index, _name_and_icon in ipairs(_detalhes.StatusBar.Menu) do 
+                for index, _name_and_icon in ipairs(Details.StatusBar.Menu) do 
                     options [#options+1] = {value = {"center", index}, label = _name_and_icon [1], onclick = onMicroDisplaySelect, icon = _name_and_icon [2]}
                 end
                 return options
             end
             local buildRightMicroMenu = function()
                 local options = {}
-                for index, _name_and_icon in ipairs(_detalhes.StatusBar.Menu) do 
+                for index, _name_and_icon in ipairs(Details.StatusBar.Menu) do 
                     options [#options+1] = {value = {"right", index}, label = _name_and_icon [1], onclick = onMicroDisplaySelect, icon = _name_and_icon [2]}
                 end
                 return options
@@ -3258,9 +3289,9 @@ do
 
             local hideLeftMicroFrameButton = DF:NewButton(sectionFrame.MicroDisplayLeftDropdown, _, "$parenthideLeftMicroFrameButton", "hideLeftMicroFrameButton", 22, 22, function(self, button)
                 if (currentInstance.StatusBar ["left"].options.isHidden) then
-                    _detalhes.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["left"].real_name, "left")
+                    Details.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["left"].real_name, "left")
                 else
-                    _detalhes.StatusBar:SetPlugin (currentInstance, -1, "left")
+                    Details.StatusBar:SetPlugin (currentInstance, -1, "left")
                 end
                 if (currentInstance.StatusBar ["left"].options.isHidden) then
                     self:GetNormalTexture():SetDesaturated(false)
@@ -3283,9 +3314,9 @@ do
 
             local HideCenterMicroFrameButton = DF:NewButton(sectionFrame.MicroDisplayCenterDropdown, _, "$parentHideCenterMicroFrameButton", "HideCenterMicroFrameButton", 22, 22, function(self)
                 if (currentInstance.StatusBar ["center"].options.isHidden) then
-                    _detalhes.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["center"].real_name, "center")
+                    Details.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["center"].real_name, "center")
                 else
-                    _detalhes.StatusBar:SetPlugin (currentInstance, -1, "center")
+                    Details.StatusBar:SetPlugin (currentInstance, -1, "center")
                 end
                 
                 if (currentInstance.StatusBar ["center"].options.isHidden) then
@@ -3308,9 +3339,9 @@ do
             
             local HideRightMicroFrameButton = DF:NewButton(sectionFrame.MicroDisplayRightDropdown, _, "$parentHideRightMicroFrameButton", "HideRightMicroFrameButton", 20, 20, function(self)
                 if (currentInstance.StatusBar ["right"].options.isHidden) then
-                    _detalhes.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["right"].real_name, "right")
+                    Details.StatusBar:SetPlugin (currentInstance, currentInstance.StatusBar ["right"].real_name, "right")
                 else
-                    _detalhes.StatusBar:SetPlugin (currentInstance, -1, "right")
+                    Details.StatusBar:SetPlugin (currentInstance, -1, "right")
                 end
                 if (currentInstance.StatusBar ["right"].options.isHidden) then
                     self:GetNormalTexture():SetDesaturated(false)
@@ -3467,7 +3498,7 @@ do
         
         --toolbar plugins loop
         local i = 1
-        local allplugins_toolbar = _detalhes.ToolBar.NameTable --where is store all plugins for the title bar
+        local allplugins_toolbar = Details.ToolBar.NameTable --where is store all plugins for the title bar
     
         --first loop and see which plugins isn't installed
         --then add a 'ghost' plugin so the player can download
@@ -3515,8 +3546,8 @@ do
             DF:NewLabel(bframe, _, "$parentToolbarPluginsLabel3"..i, "toolbarPluginsLabel3"..i, pluginObject.__version)
             bframe ["toolbarPluginsLabel3"..i]:SetPoint("topleft", anchorFrame, "topleft", 290, y-4)
             
-            local plugin_stable = _detalhes:GetPluginSavedTable (absName)
-            local plugin = _detalhes:GetPlugin (absName)
+            local plugin_stable = Details:GetPluginSavedTable (absName)
+            local plugin = Details:GetPlugin (absName)
             DF:NewSwitch (bframe, _, "$parentToolbarSlider"..i, "toolbarPluginsSlider"..i, 60, 20, _, _, plugin_stable.enabled, nil, nil, nil, nil, options_switch_template)
             bframe ["toolbarPluginsSlider"..i].PluginName = absName
             tinsert(anchorFrame.plugin_widgets, bframe ["toolbarPluginsSlider"..i])
@@ -3526,9 +3557,9 @@ do
                 plugin_stable.enabled = value
                 plugin.__enabled = value
                 if (value) then
-                    _detalhes:SendEvent("PLUGIN_ENABLED", plugin)
+                    Details:SendEvent("PLUGIN_ENABLED", plugin)
                 else
-                    _detalhes:SendEvent("PLUGIN_DISABLED", plugin)
+                    Details:SendEvent("PLUGIN_DISABLED", plugin)
                 end
             end
             
@@ -3625,7 +3656,7 @@ do
         y = y - 30
         
         local i = 1
-        local allplugins_raid = _detalhes.RaidTables.NameTable
+        local allplugins_raid = Details.RaidTables.NameTable
         for absName, pluginObject in pairs(allplugins_raid) do 
     
             local bframe = CreateFrame("frame", "OptionsPluginRaidBG", anchorFrame, "BackdropTemplate")
@@ -3650,8 +3681,8 @@ do
             DF:NewLabel(bframe, _, "$parentRaidPluginsLabel3"..i, "raidPluginsLabel3"..i, pluginObject.__version)
             bframe ["raidPluginsLabel3"..i]:SetPoint("topleft", anchorFrame, "topleft", 290, y-4)
             
-            local plugin_stable = _detalhes:GetPluginSavedTable (absName)
-            local plugin = _detalhes:GetPlugin (absName)
+            local plugin_stable = Details:GetPluginSavedTable (absName)
+            local plugin = Details:GetPlugin (absName)
             DF:NewSwitch (bframe, _, "$parentRaidSlider"..i, "raidPluginsSlider"..i, 60, 20, _, _, plugin_stable.enabled, nil, nil, nil, nil, options_switch_template)
             tinsert(anchorFrame.plugin_widgets, bframe ["raidPluginsSlider"..i])
             bframe ["raidPluginsSlider"..i].PluginName = absName
@@ -3661,10 +3692,10 @@ do
                 plugin_stable.enabled = value
                 plugin.__enabled = value
                 if (not value) then
-                    for index, instancia in ipairs(_detalhes.tabela_instancias) do
+                    for index, instancia in ipairs(Details.tabela_instancias) do
                         if (instancia.modo == 4) then -- 4 = raid
                             if (instancia:IsEnabled()) then
-                                _detalhes:TrocaTabela(instancia, 0, 1, 1, nil, 2)
+                                Details:TrocaTabela(instancia, 0, 1, 1, nil, 2)
                             else
                                 instancia.modo = 2 -- group mode
                             end
@@ -3763,7 +3794,7 @@ do
         y = y - 30
         
         local i = 1
-        local allplugins_solo = _detalhes.SoloTables.NameTable
+        local allplugins_solo = Details.SoloTables.NameTable
         for absName, pluginObject in pairs(allplugins_solo) do 
         
             local bframe = CreateFrame("frame", "OptionsPluginSoloBG", anchorFrame,"BackdropTemplate")
@@ -3788,8 +3819,8 @@ do
             DF:NewLabel(bframe, _, "$parentSoloPluginsLabel3"..i, "soloPluginsLabel3"..i, pluginObject.__version)
             bframe ["soloPluginsLabel3"..i]:SetPoint("topleft", anchorFrame, "topleft", 290, y-4)
             
-            local plugin_stable = _detalhes:GetPluginSavedTable (absName)
-            local plugin = _detalhes:GetPlugin (absName)
+            local plugin_stable = Details:GetPluginSavedTable (absName)
+            local plugin = Details:GetPlugin (absName)
             DF:NewSwitch (bframe, _, "$parentSoloSlider"..i, "soloPluginsSlider"..i, 60, 20, _, _, plugin_stable.enabled, nil, nil, nil, nil, options_switch_template)
             tinsert(anchorFrame.plugin_widgets, bframe ["soloPluginsSlider"..i])
             bframe ["soloPluginsSlider"..i].PluginName = absName
@@ -3799,9 +3830,9 @@ do
                 plugin_stable.enabled = value
                 plugin.__enabled = value
                 if (not value) then
-                    for index, instancia in ipairs(_detalhes.tabela_instancias) do
+                    for index, instancia in ipairs(Details.tabela_instancias) do
                         if (instancia.modo == 1 and instancia.baseframe) then -- 1 = solo
-                            _detalhes:TrocaTabela(instancia, 0, 1, 1, nil, 2)
+                            Details:TrocaTabela(instancia, 0, 1, 1, nil, 2)
                         end
                     end
                 end
@@ -3838,27 +3869,27 @@ do
 
         --build profile menu for "always use this profile" feature
 		local profile_selected_alwaysuse = function(_, instance, profile_name)
-			_detalhes.always_use_profile_name = profile_name
+			Details.always_use_profile_name = profile_name
 			local unitname = UnitName ("player")
-			_detalhes.always_use_profile_exception [unitname] = nil
+			Details.always_use_profile_exception [unitname] = nil
 			
-			_detalhes:ApplyProfile (profile_name)
+			Details:ApplyProfile (profile_name)
 			
-			_detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_LOADED"], profile_name)
+			Details:Msg(Loc ["STRING_OPTIONS_PROFILE_LOADED"], profile_name)
 			afterUpdate()
 		end
 		local buildProfileMenuForAlwaysUse = function()
 			local menu = {}
-			for index, profile_name in ipairs(_detalhes:GetProfileList()) do 
+			for index, profile_name in ipairs(Details:GetProfileList()) do 
 				menu [#menu+1] = {value = profile_name, label = profile_name, onclick = profile_selected_alwaysuse, icon = "Interface\\MINIMAP\\Vehicle-HammerGold-3"}
 			end
 			return menu
 		end
 
         local selectProfile = function(_, _, profileName)
-            _detalhes:ApplyProfile(profileName)
-            _detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_LOADED"], profileName)
-            --Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+            Details:ApplyProfile(profileName)
+            Details:Msg(Loc ["STRING_OPTIONS_PROFILE_LOADED"], profileName)
+            --Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
             --afterUpdate()
             _G.DetailsOptionsWindow:Hide()
             Details:OpenOptionsWindow(currentInstance, false, 9)
@@ -3866,7 +3897,7 @@ do
         
 		local buildProfileMenu = function(func)
 			local menu = {}
-			for index, profileName in ipairs(_detalhes:GetProfileList()) do
+			for index, profileName in ipairs(Details:GetProfileList()) do
 				menu [#menu+1] = {value = profileName, label = profileName, onclick = selectProfile, icon = "Interface\\MINIMAP\\Vehicle-HammerGold-3"}
 			end
 			return menu
@@ -3874,8 +3905,8 @@ do
         
 		local buildProfileMenuToDelete = function()
 			local menu = {}
-            for index, profileName in ipairs(_detalhes:GetProfileList()) do
-                if (profileName ~= _detalhes:GetCurrentProfileName()) then
+            for index, profileName in ipairs(Details:GetProfileList()) do
+                if (profileName ~= Details:GetCurrentProfileName()) then
                     menu [#menu+1] = {value = profileName, label = profileName, onclick = function()end, icon = [[Interface\Glues\LOGIN\Glues-CheckBox-Check]], color = {1, 1, 1}, iconcolor = {1, .9, .9, 0.8}}
                 end
 			end
@@ -3887,7 +3918,7 @@ do
 
             {--select profile
                 type = "select",
-                get = function() return _detalhes:GetCurrentProfileName() end,
+                get = function() return Details:GetCurrentProfileName() end,
                 values = function() return buildProfileMenu() end,
                 name = Loc ["STRING_OPTIONS_PROFILES_SELECT"],
                 desc = Loc ["STRING_OPTIONS_PROFILES_SELECT"],
@@ -3897,10 +3928,10 @@ do
 
             {--save size and positioning
                 type = "toggle",
-                get = function() return _detalhes.profile_save_pos end,
+                get = function() return Details.profile_save_pos end,
                 set = function(self, fixedparam, value)
-                    _detalhes.profile_save_pos = value
-                    _detalhes:SetProfileCProp (nil, "profile_save_pos", value)
+                    Details.profile_save_pos = value
+                    Details:SetProfileCProp (nil, "profile_save_pos", value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_PROFILE_POSSIZE"],
@@ -3924,19 +3955,19 @@ do
                     local profileName = profileNameString:GetText()
 
                     if (profileName == "") then
-                        return _detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_FIELDEMPTY"])
+                        return Details:Msg(Loc ["STRING_OPTIONS_PROFILE_FIELDEMPTY"])
                     end
                     
                     profileNameString:SetText("")
                     profileNameString:ClearFocus()
 
-                    local new_profile = _detalhes:CreateProfile(profileName)
+                    local new_profile = Details:CreateProfile(profileName)
                     if (new_profile) then
-                        _detalhes:ApplyProfile(profileName)
+                        Details:ApplyProfile(profileName)
                         afterUpdate()
-                        Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                        Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     else
-                        return _detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_NOTCREATED"])
+                        return Details:Msg(Loc ["STRING_OPTIONS_PROFILE_NOTCREATED"])
                     end
                 end,
                 --icontexture = [[Interface\PetBattles\PetBattle-LockIcon]],
@@ -3961,22 +3992,22 @@ do
                     local profileName = profileDropdown:GetValue()
 
                     if (profileName == "") then
-                        return _detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_FIELDEMPTY"])
+                        return Details:Msg(Loc ["STRING_OPTIONS_PROFILE_FIELDEMPTY"])
                     end
 
-                    if (#_detalhes:GetProfileList() == 1) then
+                    if (#Details:GetProfileList() == 1) then
                         return Details:Msg("There's only one profile.")
                     end
 
-                    if (profileName == _detalhes:GetCurrentProfileName()) then
+                    if (profileName == Details:GetCurrentProfileName()) then
                         return Details:Msg("Can't delete current profile.")
                     end
 
-                    _detalhes:EraseProfile(profileName)
+                    Details:EraseProfile(profileName)
 
-                    Details.options.SetCurrentInstanceAndRefresh(currentInstance)
+                    Details222.OptionsPanel.SetCurrentInstanceAndRefresh(currentInstance)
                     afterUpdate()
-                    _detalhes:Msg(Loc ["STRING_OPTIONS_PROFILE_REMOVEOKEY"])
+                    Details:Msg(Loc ["STRING_OPTIONS_PROFILE_REMOVEOKEY"])
                 end,
                 name = Loc ["STRING_OPTIONS_PROFILES_ERASE"],
             },
@@ -3988,7 +4019,7 @@ do
                 func = function(self)
                     local str = Details:ExportCurrentProfile()
                     if (str) then
-                        _detalhes:ShowImportWindow (str, nil, "Details! Export Profile")
+                        Details:ShowImportWindow (str, nil, "Details! Export Profile")
                     end
                 end,
                 name = Loc["STRING_OPTIONS_EXPORT_PROFILE"],
@@ -4035,31 +4066,31 @@ do
 
             {--use on all characters
                 type = "toggle",
-                get = function() return _detalhes.always_use_profile end,
+                get = function() return Details.always_use_profile end,
                 set = function(self, fixedparam, value)
-                    _detalhes.always_use_profile = value
+                    Details.always_use_profile = value
                     
                     if (value) then
-                        _detalhes.always_use_profile = true
-                        _detalhes.always_use_profile_name = sectionFrame.widget_list_by_type.dropdown[3]:GetValue()
+                        Details.always_use_profile = true
+                        Details.always_use_profile_name = sectionFrame.widget_list_by_type.dropdown[3]:GetValue()
                         
                         --enable the dropdown
                         sectionFrame.widget_list_by_type.dropdown[3]:Enable()
                         
                         --set the dropdown value to the current profile selected
-                        sectionFrame.widget_list_by_type.dropdown[3]:Select(_detalhes.always_use_profile_name)
+                        sectionFrame.widget_list_by_type.dropdown[3]:Select(Details.always_use_profile_name)
                         
                         --remove this character from the exception list
                         local unitname = UnitName ("player")
-                        _detalhes.always_use_profile_exception [unitname] = nil
+                        Details.always_use_profile_exception [unitname] = nil
                     else
-                        _detalhes.always_use_profile = false
+                        Details.always_use_profile = false
                         --disable the dropdown
                         sectionFrame.widget_list_by_type.dropdown[3]:Disable()
                         
                         --remove this character from the exception list
                         local unitname = UnitName ("player")
-                        _detalhes.always_use_profile_exception [unitname] = nil
+                        Details.always_use_profile_exception [unitname] = nil
                     end
 
                     afterUpdate()
@@ -4070,7 +4101,7 @@ do
 
             {--select a profile to use on all characters
                 type = "select",
-                get = function() return _detalhes.always_use_profile_name end,
+                get = function() return Details.always_use_profile_name end,
                 values = function() return buildProfileMenuForAlwaysUse() end,
                 name = "Select Profile",
                 desc = Loc ["STRING_OPTIONS_PROFILE_GLOBAL"],
@@ -4095,7 +4126,7 @@ do
         --button for anchor toggle
         local refreshToggleAnchor = function()
             local buttonToggleAnchor = sectionFrame.widget_list_by_type.button[1]
-            if (_detalhes.tooltip.anchored_to == 1) then
+            if (Details.tooltip.anchored_to == 1) then
                 buttonToggleAnchor:Disable()
             else
                 buttonToggleAnchor:Enable()
@@ -4104,8 +4135,8 @@ do
 
 		--text face
             local on_select_tooltip_font = function(self, _, fontName)
-                _detalhes.tooltip.fontface = fontName
-                _detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
+                Details.tooltip.fontface = fontName
+                Details:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
             end
             
             local buildTooltipFontOptions = function()
@@ -4124,13 +4155,13 @@ do
             local iconsize = {14, 14}
         
             local onSelectTimeAbbreviation = function(_, _, abbreviationtype)
-                _detalhes.tooltip.abbreviation = abbreviationtype
+                Details.tooltip.abbreviation = abbreviationtype
                 
-                _detalhes.atributo_damage:UpdateSelectedToKFunction()
-                _detalhes.atributo_heal:UpdateSelectedToKFunction()
-                _detalhes.atributo_energy:UpdateSelectedToKFunction()
-                _detalhes.atributo_misc:UpdateSelectedToKFunction()
-                _detalhes.atributo_custom:UpdateSelectedToKFunction()
+                Details.atributo_damage:UpdateSelectedToKFunction()
+                Details.atributo_heal:UpdateSelectedToKFunction()
+                Details.atributo_energy:UpdateSelectedToKFunction()
+                Details.atributo_misc:UpdateSelectedToKFunction()
+                Details.atributo_custom:UpdateSelectedToKFunction()
                 
                 afterUpdate()
             end
@@ -4151,12 +4182,12 @@ do
 
         --maximize method
             local onSelectMaximize = function(_, _, maximizeType)
-                _detalhes.tooltip.maximize_method = maximizeType
-                _detalhes.atributo_damage:UpdateSelectedToKFunction()
-                _detalhes.atributo_heal:UpdateSelectedToKFunction()
-                _detalhes.atributo_energy:UpdateSelectedToKFunction()
-                _detalhes.atributo_misc:UpdateSelectedToKFunction()
-                _detalhes.atributo_custom:UpdateSelectedToKFunction()
+                Details.tooltip.maximize_method = maximizeType
+                Details.atributo_damage:UpdateSelectedToKFunction()
+                Details.atributo_heal:UpdateSelectedToKFunction()
+                Details.atributo_energy:UpdateSelectedToKFunction()
+                Details.atributo_misc:UpdateSelectedToKFunction()
+                Details.atributo_custom:UpdateSelectedToKFunction()
                 
                 afterUpdate()
             end
@@ -4178,7 +4209,7 @@ do
 
         --tooltip side
             local onSelectAnchorPoint = function(_, _, selected_anchor)
-                _detalhes.tooltip.anchor_point = selected_anchor
+                Details.tooltip.anchor_point = selected_anchor
                 afterUpdate()
             end
             
@@ -4199,7 +4230,7 @@ do
 
         --tooltip relative side
 			local onSelectAnchorRelative = function(_, _, selected_anchor)
-				_detalhes.tooltip.anchor_relative = selected_anchor
+				Details.tooltip.anchor_relative = selected_anchor
                 afterUpdate()
 			end
 			
@@ -4220,7 +4251,7 @@ do
 
         --anchor
             local onSelectAnchor = function(_, _, selected_anchor)
-                _detalhes.tooltip.anchored_to = selected_anchor
+                Details.tooltip.anchored_to = selected_anchor
                 refreshToggleAnchor()
                 afterUpdate()
             end
@@ -4238,9 +4269,9 @@ do
 
             {--text shadow
                 type = "toggle",
-                get = function() return _detalhes.tooltip.fontshadow end,
+                get = function() return Details.tooltip.fontshadow end,
                 set = function(self, fixedparam, value)
-                    _detalhes.tooltip.fontshadow = value
+                    Details.tooltip.fontshadow = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_TEXT_LOUTILINE"],
@@ -4249,9 +4280,9 @@ do
 
             {--text size
                 type = "range",
-                get = function() return _detalhes.tooltip.fontsize end,
+                get = function() return Details.tooltip.fontsize end,
                 set = function(self, fixedparam, value)
-                    _detalhes.tooltip.fontsize = value
+                    Details.tooltip.fontsize = value
                     afterUpdate()
                 end,
                 min = 5,
@@ -4263,7 +4294,7 @@ do
 
             {--text font
                 type = "select",
-                get = function() return _detalhes.tooltip.fontface end,
+                get = function() return Details.tooltip.fontface end,
                 values = function()
                     return buildTooltipFontOptions()
                 end,
@@ -4278,11 +4309,11 @@ do
 			{--text color left
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.fontcolor)
+                    local r, g, b, a = unpack(Details.tooltip.fontcolor)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.fontcolor
+                    local color = Details.tooltip.fontcolor
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4296,11 +4327,11 @@ do
 			{--text color right
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.fontcolor_right)
+                    local r, g, b, a = unpack(Details.tooltip.fontcolor_right)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.fontcolor_right
+                    local color = Details.tooltip.fontcolor_right
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4314,11 +4345,11 @@ do
 			{--text color header
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.header_text_color)
+                    local r, g, b, a = unpack(Details.tooltip.header_text_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.header_text_color
+                    local color = Details.tooltip.header_text_color
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4335,11 +4366,11 @@ do
 			{--bar color
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.bar_color)
+                    local r, g, b, a = unpack(Details.tooltip.bar_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.bar_color
+                    local color = Details.tooltip.bar_color
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4353,11 +4384,11 @@ do
 			{--background color
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.background)
+                    local r, g, b, a = unpack(Details.tooltip.background)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.background
+                    local color = Details.tooltip.background
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4371,11 +4402,11 @@ do
 			{--divisor color
                 type = "color",
                 get = function()
-                    local r, g, b, a = unpack(_detalhes.tooltip.divisor_color)
+                    local r, g, b, a = unpack(Details.tooltip.divisor_color)
                     return {r, g, b, a}
                 end,
                 set = function(self, r, g, b, a)
-                    local color = _detalhes.tooltip.divisor_color
+                    local color = Details.tooltip.divisor_color
                     color[1] = r
                     color[2] = g
                     color[3] = b
@@ -4390,9 +4421,9 @@ do
 
             {--show amount
                 type = "toggle",
-                get = function() return _detalhes.tooltip.show_amount end,
+                get = function() return Details.tooltip.show_amount end,
                 set = function(self, fixedparam, value)
-                    _detalhes.tooltip.show_amount = value
+                    Details.tooltip.show_amount = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_TOOLTIPS_SHOWAMT"],
@@ -4401,7 +4432,7 @@ do
 
             {--number system
                 type = "select",
-                get = function() return _detalhes.tooltip.abbreviation end,
+                get = function() return Details.tooltip.abbreviation end,
                 values = function()
                     return buildAbbreviationMenu()
                 end,
@@ -4411,7 +4442,7 @@ do
 
             {--maximize method
                 type = "select",
-                get = function() return _detalhes.tooltip.maximize_method end,
+                get = function() return Details.tooltip.maximize_method end,
                 values = function()
                     return buildMaximizeMenu()
                 end,
@@ -4424,7 +4455,7 @@ do
 
             {--anchor
                 type = "select",
-                get = function() return _detalhes.tooltip.anchored_to end,
+                get = function() return Details.tooltip.anchored_to end,
                 values = function()
                     return buildAnchorMenu()
                 end,
@@ -4447,7 +4478,7 @@ do
 
             {--tooltip anchor side
                 type = "select",
-                get = function() return _detalhes.tooltip.anchor_point end,
+                get = function() return Details.tooltip.anchor_point end,
                 values = function()
                     return buildAnchorPointMenu()
                 end,
@@ -4457,7 +4488,7 @@ do
 
             {--tooltip anchor side
                 type = "select",
-                get = function() return _detalhes.tooltip.anchor_relative end,
+                get = function() return Details.tooltip.anchor_relative end,
                 values = function()
                     return buildAnchorRelativeMenu()
                 end,
@@ -4467,9 +4498,9 @@ do
 
             {--anchor offset x
                 type = "range",
-                get = function() return _detalhes.tooltip.anchor_offset[1] end,
+                get = function() return Details.tooltip.anchor_offset[1] end,
                 set = function(self, fixedparam, value)
-                    _detalhes.tooltip.anchor_offset[1] = value
+                    Details.tooltip.anchor_offset[1] = value
                     afterUpdate()
                 end,
                 min = -100,
@@ -4481,9 +4512,9 @@ do
 
             {--anchor offset y
                 type = "range",
-                get = function() return _detalhes.tooltip.anchor_offset[2] end,
+                get = function() return Details.tooltip.anchor_offset[2] end,
                 set = function(self, fixedparam, value)
-                    _detalhes.tooltip.anchor_offset[2] = value
+                    Details.tooltip.anchor_offset[2] = value
                     afterUpdate()
                 end,
                 min = -100,
@@ -4511,7 +4542,7 @@ do
     local buildSection = function(sectionFrame)
 
         local onSelectMinimapAction = function(_, _, option)
-            _detalhes.minimap.onclick_what_todo = option
+            Details.minimap.onclick_what_todo = option
             afterUpdate()
         end
         local menu = {
@@ -4524,8 +4555,8 @@ do
         end
 
 		local onSelectTimeAbbreviation = function(_, _, abbreviationtype)
-			_detalhes.tooltip.abbreviation = abbreviationtype
-			_detalhes:BrokerTick()
+			Details.tooltip.abbreviation = abbreviationtype
+			Details:BrokerTick()
 			afterUpdate()
 		end
 		local icon = [[Interface\COMMON\mini-hourglass]]
@@ -4551,14 +4582,14 @@ do
 
             {--minimap icon enabled
                 type = "toggle",
-                get = function() return not _detalhes.minimap.hide end,
+                get = function() return not Details.minimap.hide end,
                 set = function(self, fixedparam, value)
-                    _detalhes.minimap.hide = not value
+                    Details.minimap.hide = not value
 
                     local LDBIcon = LDB and LibStub("LibDBIcon-1.0", true)
 
-                    LDBIcon:Refresh("Details", _detalhes.minimap)
-                    if (_detalhes.minimap.hide) then
+                    LDBIcon:Refresh("Details", Details.minimap)
+                    if (Details.minimap.hide) then
                         LDBIcon:Hide("Details")
                     else
                         LDBIcon:Show("Details")
@@ -4572,7 +4603,7 @@ do
 
             {--minimap button on click
                 type = "select",
-                get = function() return _detalhes.minimap.onclick_what_todo end,
+                get = function() return Details.minimap.onclick_what_todo end,
                 values = function()
                     return buildMiniMapButtonAction()
                 end,
@@ -4585,10 +4616,10 @@ do
 
             {--broker text
                 type = "textentry",
-                get = function() return _detalhes.data_broker_text or "" end,
+                get = function() return Details.data_broker_text or "" end,
                 func = function(self, _, text)
                     local brokerText = text or ""
-                    _detalhes:SetDataBrokerText (brokerText)
+                    Details:SetDataBrokerText (brokerText)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DATABROKER_TEXT"],
@@ -4598,7 +4629,7 @@ do
             {--open broker text editor
                 type = "execute",
                 func = function(self)
-                    _detalhes:OpenBrokerTextEditor()
+                    Details:OpenBrokerTextEditor()
                 end,
                 icontexture = [[Interface\HELPFRAME\OpenTicketIcon]],
                 icontexcoords = {.1, .9, .1, .9},
@@ -4608,7 +4639,7 @@ do
 
             {--broker text format
                 type = "select",
-                get = function() return _detalhes.minimap.text_format end,
+                get = function() return Details.minimap.text_format end,
                 values = function()
                     return buildAbbreviationMenu()
                 end,
@@ -4621,9 +4652,9 @@ do
 
             {--item level tracker enabled
                 type = "toggle",
-                get = function() return _detalhes.ilevel:IsTrackerEnabled() end,
+                get = function() return Details.ilevel:IsTrackerEnabled() end,
                 set = function(self, fixedparam, value)
-                    _detalhes.ilevel:TrackItemLevel(value)
+                    Details.ilevel:TrackItemLevel(value)
                     afterUpdate()
                 end,
                 name = Loc ["STRING_ENABLED"],
@@ -4635,9 +4666,9 @@ do
 
             {--enabled heal spell links
                 type = "toggle",
-                get = function() return _detalhes.report_heal_links end,
+                get = function() return Details.report_heal_links end,
                 set = function(self, fixedparam, value)
-                    _detalhes.report_heal_links = value
+                    Details.report_heal_links = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_REPORT_HEALLINKS"],
@@ -4952,7 +4983,7 @@ do
                         local path = "Interface\\" .. text
                         editbox:ClearFocus()
                         instance:InstanceWallpaper (path, "all", 0.50, {0, 1, 0, 1}, 256, 256, {1, 1, 1, 1})
-                        _detalhes:OpenOptionsWindow (instance)
+                        Details:OpenOptionsWindow (instance)
                         sectionFrame:UpdateWallpaperInfo()
                     end
                     local okey = DF:NewButton(f, _, "$parentOkeyButton", nil, 105, 20, okey_func, nil, nil, nil, Loc ["STRING_OPTIONS_WALLPAPER_LOAD_OKEY"], 1, options_button_template)
@@ -5091,7 +5122,7 @@ do
                 {value = 0, label = "do not switch", color = {.7, .7, .7, 1}, onclick = Current_Switch_Func, icon = [[Interface\Glues\LOGIN\Glues-CheckBox-Check]]}
             }
             
-            local attributes = _detalhes.sub_atributos
+            local attributes = Details.sub_atributos
             local i = 1
             
             for atributo, sub_atributo in ipairs(attributes) do
@@ -5104,7 +5135,7 @@ do
                 end
             end
             
-            for index, ptable in ipairs(_detalhes.RaidTables.Menu) do
+            for index, ptable in ipairs(Details.RaidTables.Menu) do
                 tinsert(t, {value = i, label = ptable [1], onclick = Current_Switch_Func, icon = ptable [2]})
                 sectionFrame.lastSwitchList [i] = {"raid", ptable [4], i}
                 i = i + 1
@@ -5205,7 +5236,7 @@ do
             local switchTable = currentInstance[switchName]
             if (switchTable) then
                 if (switchTable[1] == "raid") then
-                    local pluginObject = _detalhes:GetPlugin(switchTable[2])
+                    local pluginObject = Details:GetPlugin(switchTable[2])
                     if (pluginObject) then
                         return pluginObject.__name
                     else
@@ -5232,7 +5263,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchDamagerNoCombat
                     return buildSwitchMenu() 
                 end,
-                name = _detalhes:AddRoleIcon("", "DAMAGER", 18),
+                name = Details:AddRoleIcon("", "DAMAGER", 18),
             },
 
             {--HEALER role out of combat
@@ -5244,7 +5275,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchHealerNoCombat
                     return buildSwitchMenu()
                 end,
-                name = _detalhes:AddRoleIcon("", "HEALER", 18),
+                name = Details:AddRoleIcon("", "HEALER", 18),
             },
 
             {--TANK role out of combat
@@ -5256,7 +5287,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchTankNoCombat
                     return buildSwitchMenu()
                 end,
-                name = _detalhes:AddRoleIcon("", "TANK", 18),
+                name = Details:AddRoleIcon("", "TANK", 18),
             },
 
             {type = "blank"},
@@ -5271,7 +5302,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchDamagerInCombat
                     return buildSwitchMenu() 
                 end,
-                name = _detalhes:AddRoleIcon("", "DAMAGER", 18),
+                name = Details:AddRoleIcon("", "DAMAGER", 18),
             },
 
             {--HEALER role in combat
@@ -5283,7 +5314,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchHealerInCombat
                     return buildSwitchMenu()
                 end,
-                name = _detalhes:AddRoleIcon("", "HEALER", 18),
+                name = Details:AddRoleIcon("", "HEALER", 18),
             },
 
             {--TANK role in combat
@@ -5295,7 +5326,7 @@ do
                     Current_Switch_Func = onSelectAutoSwitchTankInCombat
                     return buildSwitchMenu()
                 end,
-                name = _detalhes:AddRoleIcon("", "TANK", 18),
+                name = Details:AddRoleIcon("", "TANK", 18),
             },
 
             {type = "blank"},
@@ -5328,9 +5359,9 @@ do
 
             {--trash suppression
                 type = "range",
-                get = function() return _detalhes.instances_suppress_trash end,
+                get = function() return Details.instances_suppress_trash end,
                 set = function(self, fixedparam, value)
-                    _detalhes:SetTrashSuppression(value)
+                    Details:SetTrashSuppression(value)
                     afterUpdate()
                 end,
                 min = 0,
@@ -5500,7 +5531,7 @@ do
 			sectionFrame.AutoHideOptions[i] = line
         end
 
-        Details.options.UpdateAutoHideSettings(currentInstance)
+        Details222.OptionsPanel.UpdateAutoHideSettings(currentInstance)
 
         --profile by spec
         
@@ -5539,7 +5570,7 @@ do --raid tools
 
         --on select channel for interrip announcer
 		local on_select_channel = function(self, _, channel)
-            _detalhes.announce_interrupts.channel = channel
+            Details.announce_interrupts.channel = channel
             C_Timer.After(0, function()
                 if (channel == "WHISPER") then
                     sectionFrame.widget_list_by_type.textentry[1]:Enable()
@@ -5562,7 +5593,7 @@ do --raid tools
         
 		--on select channel for cooldown announcer
 		local on_select_channel = function(self, _, channel)
-			_detalhes.announce_cooldowns.channel = channel
+			Details.announce_cooldowns.channel = channel
 			afterUpdate()
 		end
 		
@@ -5579,11 +5610,11 @@ do --raid tools
 
         --on select channel for report deaths
 		local on_select_channel = function(self, _, channel)
-			_detalhes.announce_deaths.where = channel
+			Details.announce_deaths.where = channel
 			afterUpdate()
 		end
 		
-		local officer = _detalhes.GetReportIconAndColor ("OFFICER")
+		local officer = Details.GetReportIconAndColor ("OFFICER")
 		
 		local channel_list = {
 			{value = 1, icon = [[Interface\FriendsFrame\UI-Toast-ToastIcons]], iconcolor = {1, 0, 1}, iconsize = {14, 14}, texcoord = {0.53125, 0.7265625, 0.078125, 0.40625}, label = Loc ["STRING_OPTIONS_RT_DEATHS_WHERE1"], onclick = on_select_channel},
@@ -5634,9 +5665,9 @@ do --raid tools
                 local on_switch_func = function(self, spellid, value)
                     if (spellid) then
                         if (not value) then
-                            _detalhes.announce_cooldowns.ignored_cooldowns [spellid] = nil
+                            Details.announce_cooldowns.ignored_cooldowns [spellid] = nil
                         else
-                            _detalhes.announce_cooldowns.ignored_cooldowns [spellid] = true
+                            Details.announce_cooldowns.ignored_cooldowns [spellid] = true
                         end
                     end
 				end
@@ -5675,9 +5706,9 @@ do --raid tools
 				end
 				
 				function f:Open()
-					local _GetSpellInfo = _detalhes.getspellinfo --details api
+					local _GetSpellInfo = Details.getspellinfo --details api
 					
-					for index, spellid in ipairs(_detalhes:GetCooldownList()) do
+					for index, spellid in ipairs(Details:GetCooldownList()) do
 						local name, _, icon = _GetSpellInfo(spellid)
 						if (name) then
 							local label = f.labels [index] or f:CreateLabel()
@@ -5685,7 +5716,7 @@ do --raid tools
                             label.text.text = name
 
 							label.switch:SetFixedParameter(spellid)
-							label.switch:SetValue(_detalhes.announce_cooldowns.ignored_cooldowns[spellid])
+							label.switch:SetValue(Details.announce_cooldowns.ignored_cooldowns[spellid])
 							label.icon:Show()
 							label.text:Show()
 							label.switch:Show()
@@ -5706,9 +5737,9 @@ do --raid tools
                 get = function() return Details.announce_interrupts.enabled end,
                 set = function(self, fixedparam, value)
                     if (value) then
-                        _detalhes:EnableInterruptAnnouncer()
+                        Details:EnableInterruptAnnouncer()
                     else
-                        _detalhes:DisableInterruptAnnouncer()
+                        Details:DisableInterruptAnnouncer()
                     end
                     afterUpdate()
                 end,
@@ -5718,7 +5749,7 @@ do --raid tools
 
             {--channel to report
                 type = "select",
-                get = function() return _detalhes.announce_interrupts.channel end,
+                get = function() return Details.announce_interrupts.channel end,
                 values = function() 
                     return buildInterruptChannelMenu()
                 end,
@@ -5730,14 +5761,14 @@ do --raid tools
                 type = "textentry",
                 get = function() 
                     C_Timer.After(0, function()
-                        if (_detalhes.announce_interrupts.channel ~= "WHISPER") then
+                        if (Details.announce_interrupts.channel ~= "WHISPER") then
                             sectionFrame.widget_list_by_type.textentry[1]:Disable()
                         end
                     end)
-                    return _detalhes.announce_interrupts.whisper 
+                    return Details.announce_interrupts.whisper 
                 end,
                 func = function(_, _, text)
-                    _detalhes.announce_interrupts.whisper = text or ""
+                    Details.announce_interrupts.whisper = text or ""
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_RT_INTERRUPTS_WHISPER"],
@@ -5747,10 +5778,10 @@ do --raid tools
             {--next player to cut, whisper the person
                 type = "textentry",
                 get = function() 
-                    return _detalhes.announce_interrupts.next
+                    return Details.announce_interrupts.next
                 end,
                 func = function(_, _, text)
-                    _detalhes.announce_interrupts.next = text or ""
+                    Details.announce_interrupts.next = text or ""
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_RT_INTERRUPTS_NEXT"],
@@ -5760,10 +5791,10 @@ do --raid tools
             {--custom text field
                 type = "textentry",
                 get = function() 
-                    return _detalhes.announce_interrupts.custom
+                    return Details.announce_interrupts.custom
                 end,
                 func = function(_, _, text)
-                    _detalhes.announce_interrupts.custom = text or ""
+                    Details.announce_interrupts.custom = text or ""
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_RT_INTERRUPTS_CUSTOM"],
@@ -5773,10 +5804,10 @@ do --raid tools
                 type = "execute",
                 func = function(self)
                     local text = sectionFrame.widget_list_by_type.textentry[3]:GetText()
-                    local channel = _detalhes.announce_interrupts.channel
-                    _detalhes.announce_interrupts.channel = "PRINT"
-                    _detalhes:interrupt_announcer (nil, nil, nil, _detalhes.playername, nil, nil, "A Monster", nil, 1766, "Kick", nil, 106523, "Cataclysm", nil)
-                    _detalhes.announce_interrupts.channel = channel
+                    local channel = Details.announce_interrupts.channel
+                    Details.announce_interrupts.channel = "PRINT"
+                    Details:interrupt_announcer (nil, nil, nil, Details.playername, nil, nil, "A Monster", nil, 1766, "Kick", nil, 106523, "Cataclysm", nil)
+                    Details.announce_interrupts.channel = channel
                 end,
                 icontexture = [[Interface\CHATFRAME\ChatFrameExpandArrow]],
                 name = "Test",
@@ -5788,12 +5819,12 @@ do --raid tools
 
             {--enable cooldown announcer
                 type = "toggle",
-                get = function() return _detalhes.announce_cooldowns.enabled end,
+                get = function() return Details.announce_cooldowns.enabled end,
                 set = function(self, fixedparam, value)
                     if (value) then
-                        _detalhes:EnableCooldownAnnouncer()
+                        Details:EnableCooldownAnnouncer()
                     else
-                        _detalhes:DisableCooldownAnnouncer()
+                        Details:DisableCooldownAnnouncer()
                     end
                     afterUpdate()
                 end,
@@ -5803,7 +5834,7 @@ do --raid tools
 
             {--channel to report
                 type = "select",
-                get = function() return _detalhes.announce_cooldowns.channel end,
+                get = function() return Details.announce_cooldowns.channel end,
                 values = function() 
                     return buildCooldownsChannelMenu()
                 end,
@@ -5814,10 +5845,10 @@ do --raid tools
             {--custom text field
                 type = "textentry",
                 get = function() 
-                    return _detalhes.announce_cooldowns.custom
+                    return Details.announce_cooldowns.custom
                 end,
                 func = function(_, _, text)
-                    _detalhes.announce_cooldowns.custom = text or ""
+                    Details.announce_cooldowns.custom = text or ""
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_RT_COOLDOWNS_CUSTOM"],
@@ -5828,10 +5859,10 @@ do --raid tools
                 type = "execute",
                 func = function(self)
                     local text = sectionFrame.widget_list_by_type.textentry[4]:GetText()
-                    local channel = _detalhes.announce_cooldowns.channel
-                    _detalhes.announce_cooldowns.channel = "PRINT"
-                    _detalhes:cooldown_announcer (nil, nil, nil, _detalhes.playername, nil, nil, "Tyrande Whisperwind", nil, 47788, "Guardian Spirit")
-                    _detalhes.announce_cooldowns.channel = channel
+                    local channel = Details.announce_cooldowns.channel
+                    Details.announce_cooldowns.channel = "PRINT"
+                    Details:cooldown_announcer (nil, nil, nil, Details.playername, nil, nil, "Tyrande Whisperwind", nil, 47788, "Guardian Spirit")
+                    Details.announce_cooldowns.channel = channel
                 end,
                 icontexture = [[Interface\CHATFRAME\ChatFrameExpandArrow]],
                 name = "Test",
@@ -5854,12 +5885,12 @@ do --raid tools
 
             {--enable death announcer
                 type = "toggle",
-                get = function() return _detalhes.announce_deaths.enabled end,
+                get = function() return Details.announce_deaths.enabled end,
                 set = function(self, fixedparam, value)
                     if (value) then
-                        _detalhes:EnableDeathAnnouncer()
+                        Details:EnableDeathAnnouncer()
                     else
-                        _detalhes:DisableDeathAnnouncer()
+                        Details:DisableDeathAnnouncer()
                     end
                     afterUpdate()
                 end,
@@ -5869,9 +5900,9 @@ do --raid tools
 
             {--max hits to show
                 type = "range",
-                get = function() return _detalhes.announce_deaths.last_hits end,
+                get = function() return Details.announce_deaths.last_hits end,
                 set = function(self, fixedparam, value)
-                    _detalhes.announce_deaths.last_hits = value
+                    Details.announce_deaths.last_hits = value
                     afterUpdate()
                 end,
                 min = 1,
@@ -5883,9 +5914,9 @@ do --raid tools
 
             {--max hits to show
                 type = "range",
-                get = function() return _detalhes.announce_deaths.only_first end,
+                get = function() return Details.announce_deaths.only_first end,
                 set = function(self, fixedparam, value)
-                    _detalhes.announce_deaths.only_first = value
+                    Details.announce_deaths.only_first = value
                     afterUpdate()
                 end,
                 min = 1,
@@ -5897,7 +5928,7 @@ do --raid tools
 
             {--death report channel
                 type = "select",
-                get = function() return _detalhes.announce_deaths.where end,
+                get = function() return Details.announce_deaths.where end,
                 values = function() 
                     return buildDeathLogAnnouncerMenu()
                 end,
@@ -5910,9 +5941,9 @@ do --raid tools
 
             {--enable death recap
                 type = "toggle",
-                get = function() return _detalhes.death_recap.enabled end,
+                get = function() return Details.death_recap.enabled end,
                 set = function(self, fixedparam, value)
-                    _detalhes.death_recap.enabled = value
+                    Details.death_recap.enabled = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_ENABLED"],
@@ -5921,9 +5952,9 @@ do --raid tools
 
             {--relevance time
                 type = "range",
-                get = function() return _detalhes.death_recap.relevance_time end,
+                get = function() return Details.death_recap.relevance_time end,
                 set = function(self, fixedparam, value)
-                    _detalhes.death_recap.relevance_time = value
+                    Details.death_recap.relevance_time = value
                     afterUpdate()
                 end,
                 min = 1,
@@ -5935,9 +5966,9 @@ do --raid tools
 
             {--show life percent
                 type = "toggle",
-                get = function() return _detalhes.death_recap.show_life_percent end,
+                get = function() return Details.death_recap.show_life_percent end,
                 set = function(self, fixedparam, value)
-                    _detalhes.death_recap.show_life_percent = value
+                    Details.death_recap.show_life_percent = value
                     afterUpdate()
                 end,
                 name = "Life Percent", --localize-me
@@ -5946,9 +5977,9 @@ do --raid tools
 
             {--show segment list
                 type = "toggle",
-                get = function() return _detalhes.death_recap.show_segments end,
+                get = function() return Details.death_recap.show_segments end,
                 set = function(self, fixedparam, value)
-                    _detalhes.death_recap.show_segments = value
+                    Details.death_recap.show_segments = value
                     afterUpdate()
                 end,
                 name = "Segment List", --localize-me
@@ -5960,9 +5991,9 @@ do --raid tools
 
             {--show first hit
                 type = "toggle",
-                get = function() return _detalhes.announce_firsthit.enabled end,
+                get = function() return Details.announce_firsthit.enabled end,
                 set = function(self, fixedparam, value)
-                    _detalhes.announce_firsthit.enabled = value
+                    Details.announce_firsthit.enabled = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_RT_FIRST_HIT"],
@@ -5971,9 +6002,9 @@ do --raid tools
 
             {--show death menu
                 type = "toggle",
-                get = function() return _detalhes.on_death_menu end,
+                get = function() return Details.on_death_menu end,
                 set = function(self, fixedparam, value)
-                    _detalhes.on_death_menu = value
+                    Details.on_death_menu = value
                     afterUpdate()
                 end,
                 name = "Show Death Menu", --localize-me
@@ -6194,9 +6225,9 @@ do
 
             {--no window alerts
                 type = "toggle",
-                get = function() return _detalhes.streamer_config.no_alerts end,
+                get = function() return Details.streamer_config.no_alerts end,
                 set = function(self, fixedparam, value)
-                    _detalhes.streamer_config.no_alerts = value
+                    Details.streamer_config.no_alerts = value
                     afterUpdate()
                 end,
                 name = "Suppress Alerts", --localize-me
@@ -6205,10 +6236,10 @@ do
 
             {--60hz updates
                 type = "toggle",
-                get = function() return _detalhes.streamer_config.faster_updates end,
+                get = function() return Details.streamer_config.faster_updates end,
                 set = function(self, fixedparam, value)
-                    _detalhes.streamer_config.faster_updates = value
-                    _detalhes:RefreshUpdater()
+                    Details.streamer_config.faster_updates = value
+                    Details:RefreshUpdater()
                     afterUpdate()
                 end,
                 name = "60 Updates per Second", --localize-me
@@ -6217,9 +6248,9 @@ do
 
             {--quick player info
                 type = "toggle",
-                get = function() return _detalhes.streamer_config.quick_detection end,
+                get = function() return Details.streamer_config.quick_detection end,
                 set = function(self, fixedparam, value)
-                    _detalhes.streamer_config.quick_detection = value
+                    Details.streamer_config.quick_detection = value
                     afterUpdate()
                 end,
                 name = "Quick Player Info Detection", --localize-me
@@ -6228,9 +6259,9 @@ do
 
             {--disable M+ shenanigans
                 type = "toggle",
-                get = function() return _detalhes.streamer_config.disable_mythic_dungeon end,
+                get = function() return Details.streamer_config.disable_mythic_dungeon end,
                 set = function(self, fixedparam, value)
-                    _detalhes.streamer_config.disable_mythic_dungeon = value
+                    Details.streamer_config.disable_mythic_dungeon = value
                     afterUpdate()
                 end,
                 name = "Disable Mythic+ Stuff", --localize-me
@@ -6239,9 +6270,9 @@ do
 
             {--disable M+ charts
                 type = "toggle",
-                get = function() return _detalhes.mythic_plus.show_damage_graphic end,
+                get = function() return Details.mythic_plus.show_damage_graphic end,
                 set = function(self, fixedparam, value)
-                    _detalhes.mythic_plus.show_damage_graphic = value
+                    Details.mythic_plus.show_damage_graphic = value
                     afterUpdate()
                 end,
                 name = "Disable Mythic+ Chart", --localize-me
@@ -6250,9 +6281,9 @@ do
 
             {--clear cache regurlary
                 type = "toggle",
-                get = function() return _detalhes.mythic_plus.show_damage_graphic end,
+                get = function() return Details.mythic_plus.show_damage_graphic end,
                 set = function(self, fixedparam, value)
-                    _detalhes.mythic_plus.show_damage_graphic = value
+                    Details.mythic_plus.show_damage_graphic = value
                     afterUpdate()
                 end,
                 name = "Clear Cache Regularly", --localize-me
@@ -6275,16 +6306,16 @@ do
     local buildSection = function(sectionFrame)
 
 		local name_entry_func = function(index, text)
-			_detalhes:UserCustomSpellUpdate (index, text) 
+			Details:UserCustomSpellUpdate (index, text) 
 		end
 		local icon_func = function(index, icon)
-			_detalhes:UserCustomSpellUpdate (index, nil, icon)
+			Details:UserCustomSpellUpdate (index, nil, icon)
 		end
 		local remove_func = function(index)
-			_detalhes:UserCustomSpellRemove (index)
+			Details:UserCustomSpellRemove (index)
 		end
 		local reset_func = function(index)
-			_detalhes:UserCustomSpellReset (index)
+			Details:UserCustomSpellReset (index)
 		end
 	
 	--custom spells panel
@@ -6298,10 +6329,10 @@ do
 		}
 
 		local total_lines = function()
-			return #_detalhes.savedCustomSpells
+			return #Details.savedCustomSpells
 		end
 		local fill_row = function(index)
-			local data = _detalhes.savedCustomSpells [index]
+			local data = Details.savedCustomSpells [index]
 			if (data) then
 				return {index, data [2], data [3], data [1], ""}
 			else
@@ -6334,7 +6365,7 @@ do
 					spellname_entry:SetText(spellname) 
 					addframe.spellIconButton.icon.texture = icon
 				else
-					_detalhes:Msg(Loc ["STRING_OPTIONS_SPELL_NOTFOUND"])
+					Details:Msg(Loc ["STRING_OPTIONS_SPELL_NOTFOUND"])
 				end
 			end
 			local spellid_entry = DF:NewSpellEntry (addframe, spellid_entry_func, 160, 20, nil, nil, "spellidEntry", "$parentSpellidEntry")
@@ -6357,20 +6388,20 @@ do
 			local addspell = function()
 				local id = spellid_entry.text
 				if (id == "") then
-					return _detalhes:Msg(Loc ["STRING_OPTIONS_SPELL_IDERROR"])
+					return Details:Msg(Loc ["STRING_OPTIONS_SPELL_IDERROR"])
 				end
 				local name = spellname_entry.text
 				if (name == "") then
-					return _detalhes:Msg(Loc ["STRING_OPTIONS_SPELL_NAMEERROR"])
+					return Details:Msg(Loc ["STRING_OPTIONS_SPELL_NAMEERROR"])
 				end
 				local icon = addframe.spellIconButton.icon.texture
 				
 				id = tonumber(id)
 				if (not id) then
-					return _detalhes:Msg(Loc ["STRING_OPTIONS_SPELL_IDERROR"])
+					return Details:Msg(Loc ["STRING_OPTIONS_SPELL_IDERROR"])
 				end
 				
-				_detalhes:UserCustomSpellAdd (id, name, icon)
+				Details:UserCustomSpellAdd (id, name, icon)
 				
 				panel:Refresh()
 				
@@ -6408,16 +6439,16 @@ do
 		
 	--consilidade spells
 		DF:NewLabel(sectionFrame, _, "$parentConsolidadeSpellsLabel", "ConsolidadeSpellsLabel", Loc ["STRING_OPTIONSMENU_SPELLS_CONSOLIDATE"], "GameFontHighlightLeft")
-		DF:NewSwitch (sectionFrame, _, "$parentConsolidadeSpellsSwitch", "ConsolidadeSpellsSwitch", 60, 20, nil, nil, _detalhes.override_spellids, nil, nil, nil, nil, options_switch_template)
+		DF:NewSwitch (sectionFrame, _, "$parentConsolidadeSpellsSwitch", "ConsolidadeSpellsSwitch", 60, 20, nil, nil, Details.override_spellids, nil, nil, nil, nil, options_switch_template)
 		sectionFrame.ConsolidadeSpellsLabel:SetPoint("left", sectionFrame.ConsolidadeSpellsSwitch, "right", 3)
 		sectionFrame.ConsolidadeSpellsSwitch:SetAsCheckBox()
 		sectionFrame.ConsolidadeSpellsSwitch.OnSwitch = function(self, instance, value)
-			_detalhes.override_spellids = value
-			_detalhes:UpdateParserGears()
+			Details.override_spellids = value
+			Details:UpdateParserGears()
 		end
 
 		sectionFrame.ConsolidadeSpellsSwitch:SetPoint(startX, startY - 20)
-        _detalhes:SetFontSize(sectionFrame.ConsolidadeSpellsLabel, 12)
+        Details:SetFontSize(sectionFrame.ConsolidadeSpellsLabel, 12)
         
         local sectionOptions = {
 
@@ -6442,7 +6473,7 @@ do
     titulo_datacharts_desc.width = 350
 
 --warning
-    if (not _detalhes:GetPlugin ("DETAILS_PLUGIN_CHART_VIEWER")) then
+    if (not Details:GetPlugin ("DETAILS_PLUGIN_CHART_VIEWER")) then
         local label = DF:NewLabel(sectionFrame, _, "$parentPluginWarningLabel", "PluginWarningLabel", Loc ["STRING_OPTIONS_CHART_PLUGINWARNING"], "GameFontNormal")
         local image = DF:NewImage(sectionFrame, [[Interface\DialogFrame\UI-Dialog-Icon-AlertNew]])
         label:SetPoint("topright", sectionFrame, "topright", -42, -10)
@@ -6454,7 +6485,7 @@ do
 
 --panel
     local edit_name = function(index, name)
-        _detalhes:TimeDataUpdate (index, name)
+        Details:TimeDataUpdate (index, name)
         sectionFrame.userTimeCaptureFillPanel:Refresh()
     end
     
@@ -6470,7 +6501,7 @@ do
     local accept = function()
         big_code_editor:ClearFocus()
         if (not big_code_editor.is_export) then
-            _detalhes:TimeDataUpdate (big_code_editor.index, nil, big_code_editor:GetText())
+            Details:TimeDataUpdate (big_code_editor.index, nil, big_code_editor:GetText())
         end
         big_code_editor:Hide()
     end
@@ -6492,12 +6523,12 @@ do
     cancel_changes:SetText(Loc ["STRING_OPTIONS_CHART_CANCEL"])
 
     local edit_code = function(index)
-        local data = _detalhes.savedTimeCaptures [index]
+        local data = Details.savedTimeCaptures [index]
         if (data) then
             local func = data [2]
             
             if (type(func) == "function") then
-                return _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_CODELOADED"])
+                return Details:Msg(Loc ["STRING_OPTIONS_CHART_CODELOADED"])
             end
             
             big_code_editor:SetText(func)
@@ -6516,15 +6547,15 @@ do
     end
     
     local edit_icon = function(index, icon)
-        _detalhes:TimeDataUpdate (index, nil, nil, nil, nil, nil, icon)
+        Details:TimeDataUpdate (index, nil, nil, nil, nil, nil, icon)
         sectionFrame.userTimeCaptureFillPanel:Refresh()
     end
     local edit_author = function(index, author)
-        _detalhes:TimeDataUpdate (index, nil, nil, nil, author)
+        Details:TimeDataUpdate (index, nil, nil, nil, author)
         sectionFrame.userTimeCaptureFillPanel:Refresh()
     end
     local edit_version = function(index, version)
-        _detalhes:TimeDataUpdate (index, nil, nil, nil, nil, version)
+        Details:TimeDataUpdate (index, nil, nil, nil, nil, version)
         sectionFrame.userTimeCaptureFillPanel:Refresh()
     end
     
@@ -6549,7 +6580,7 @@ do
     close_export:SetTemplate(options_button_template)
     
     local export_function = function(index)
-        local data = _detalhes.savedTimeCaptures [index]
+        local data = Details.savedTimeCaptures [index]
         if (data) then
             local encoded = Details:CompressData (data, "print")
             if (encoded) then
@@ -6565,15 +6596,15 @@ do
     end
     
     local remove_capture = function(index)
-        _detalhes:TimeDataUnregister (index)
+        Details:TimeDataUnregister (index)
         sectionFrame.userTimeCaptureFillPanel:Refresh()
     end
     
     local edit_enabled = function(index, enabled, a, b)
         if (enabled) then
-            _detalhes:TimeDataUpdate (index, nil, nil, nil, nil, nil, nil, false)
+            Details:TimeDataUpdate (index, nil, nil, nil, nil, nil, nil, false)
         else
-            _detalhes:TimeDataUpdate (index, nil, nil, nil, nil, nil, nil, true)
+            Details:TimeDataUpdate (index, nil, nil, nil, nil, nil, nil, true)
         end
         
         sectionFrame.userTimeCaptureFillPanel:Refresh()
@@ -6591,10 +6622,10 @@ do
     }
     
     local total_lines = function()
-        return #_detalhes.savedTimeCaptures
+        return #Details.savedTimeCaptures
     end
     local fill_row = function(index)
-        local data = _detalhes.savedTimeCaptures [index]
+        local data = Details.savedTimeCaptures [index]
         if (data) then
         
             local enabled_texture
@@ -6717,21 +6748,21 @@ do
                 
                 if (type(unserialize) == "table") then
                     if (unserialize[1] and unserialize[2] and unserialize[3] and unserialize[4] and unserialize[5]) then
-                        local register = _detalhes:TimeDataRegister (unpack(unserialize))
+                        local register = Details:TimeDataRegister (unpack(unserialize))
                         if (type(register) == "string") then
-                            _detalhes:Msg(register)
+                            Details:Msg(register)
                         end
                     else
-                        _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_IMPORTERROR"])
+                        Details:Msg(Loc ["STRING_OPTIONS_CHART_IMPORTERROR"])
                     end
                 else
-                    _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_IMPORTERROR"])
+                    Details:Msg(Loc ["STRING_OPTIONS_CHART_IMPORTERROR"])
                 end
                 
                 importframe:Hide()
                 panel:Refresh()
             else
-                _detalhes:Msg(Loc ["STRING_CUSTOM_IMPORT_ERROR"])
+                Details:Msg(Loc ["STRING_CUSTOM_IMPORT_ERROR"])
                 return
             end
         end
@@ -6779,27 +6810,27 @@ do
         local addcapture = function()
             local name = capture_name_entry.text
             if (name == "") then
-                return _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_NAMEERROR"])
+                return Details:Msg(Loc ["STRING_OPTIONS_CHART_NAMEERROR"])
             end
             
             local author = capture_author_entry.text
             if (author == "") then
-                return _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_AUTHORERROR"])
+                return Details:Msg(Loc ["STRING_OPTIONS_CHART_AUTHORERROR"])
             end
             
             local icon = addframe.iconButton.iconTexture
             
             local version = capture_version_entry.text
             if (version == "") then
-                return _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_VERSIONERROR"])
+                return Details:Msg(Loc ["STRING_OPTIONS_CHART_VERSIONERROR"])
             end
             
             local func = capture_func_entry:GetText()
             if (func == "") then
-                return _detalhes:Msg(Loc ["STRING_OPTIONS_CHART_FUNCERROR"])
+                return Details:Msg(Loc ["STRING_OPTIONS_CHART_FUNCERROR"])
             end
             
-            _detalhes:TimeDataRegister (name, func, nil, author, version, icon, true)
+            Details:TimeDataRegister (name, func, nil, author, version, icon, true)
             
             panel:Refresh()
             
@@ -6879,6 +6910,16 @@ do
                 desc = "When the run is done, make an overall segment.",
             },
 
+            {--overall only with bosses
+                type = "toggle",
+                get = function() return Details.mythic_plus.make_overall_boss_only end,
+                set = function(self, fixedparam, value)
+                    Details.mythic_plus.make_overall_boss_only = value
+                end,
+                name = "Overall Segment Boss Only",
+                desc = "Only add boss segments on the overall.",
+            },
+
             {--merge trash
                 type = "toggle",
                 get = function() return Details.mythic_plus.merge_boss_trash end,
@@ -6929,7 +6970,7 @@ do
     local buildSection = function(sectionFrame)
         --deathlog limit
         local onSelectDeathLogLimit = function(_, _, limitAmount)
-            _detalhes:SetDeathLogLimit(limitAmount)
+            Details:SetDeathLogLimit(limitAmount)
         end
         local DeathLogLimitOptions = {
             {value = 16, label = "16 Records", onclick = onSelectDeathLogLimit, icon = [[Interface\WorldStateFrame\ColumnIcon-GraveyardDefend0]]},
@@ -6974,9 +7015,9 @@ do
 
             {--pvp frags
                 type = "toggle",
-                get = function() return _detalhes.only_pvp_frags end,
+                get = function() return Details.only_pvp_frags end,
                 set = function(self, fixedparam, value)
-                    _detalhes.only_pvp_frags = value
+                    Details.only_pvp_frags = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_PVPFRAGS"],
@@ -6986,7 +7027,7 @@ do
 
             {--death log size
                 type = "select",
-                get = function() return _detalhes.deadlog_events end,
+                get = function() return Details.deadlog_events end,
                 values = function()
                     return buildDeathLogLimitMenu()
                 end,
@@ -6996,9 +7037,9 @@ do
 
             {--death log min healing
                 type = "range",
-                get = function() return _detalhes.deathlog_healingdone_min end,
+                get = function() return Details.deathlog_healingdone_min end,
                 set = function(self, fixedparam, value)
-                    _detalhes.deathlog_healingdone_min = value
+                    Details.deathlog_healingdone_min = value
                     afterUpdate()
                 end,
                 min = 0,
@@ -7012,9 +7053,9 @@ do
             {type = "label", get = function() return "Damage Options:" end, text_template = subSectionTitleTextTemplate},
             {--damage taken everything
                 type = "toggle",
-                get = function() return _detalhes.damage_taken_everything end,
+                get = function() return Details.damage_taken_everything end,
                 set = function(self, fixedparam, value)
-                    _detalhes.damage_taken_everything = value
+                    Details.damage_taken_everything = value
                     afterUpdate()
                 end,
                 name = Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING"],
@@ -7038,7 +7079,7 @@ do
             {type = "blank"},
             {type = "label", get = function() return "Class Options:" end, text_template = subSectionTitleTextTemplate},
 
-            {--damage taken everything
+            {--hunter track pet frenzy
                 type = "toggle",
                 get = function() return Details.combat_log.track_hunter_frenzy end,
                 set = function(self, fixedparam, value)
@@ -7051,6 +7092,75 @@ do
                 boxfirst = true,
             },
 
+            {--show evoker bar
+                type = "toggle",
+                get = function() return Details.combat_log.evoker_calc_damage end,
+                set = function(self, fixedparam, value)
+                    Details.combat_log.evoker_calc_damage = value
+                    afterUpdate()
+                    Details:ClearParserCache()
+                end,
+                name = DF:AddClassIconToText("Predict Augmentation Buffs", false, "EVOKER"),
+                desc = "Calculate how much the Augmentation Evoker are buffing other players",
+                boxfirst = true,
+            },
+
+            {--use realtime dps for evoker augmentataion
+                type = "toggle",
+                get = function() return Details.combat_log.evoker_show_realtimedps end,
+                set = function(self, fixedparam, value)
+                    Details.combat_log.evoker_show_realtimedps = value
+                    afterUpdate()
+                    Details:ClearParserCache()
+                end,
+                name = DF:AddClassIconToText("Use Real Time Dps for Aug. Evoker", false, "EVOKER"),
+                desc = "Use Real Time Dps for Augmentation Evoker",
+                boxfirst = true,
+            },
+
+            {type = "blank"},
+            {type = "label", get = function() return "Parser Options:" end, text_template = subSectionTitleTextTemplate},
+
+            {--overheal shields
+                type = "toggle",
+                get = function() return Details.parser_options.shield_overheal end,
+                set = function(self, fixedparam, value)
+                    Details.parser_options.shield_overheal = value
+                    afterUpdate()
+                    Details:ClearParserCache()
+                    Details:UpdateParserGears()
+                end,
+                name = "Calculate Shield Wasted Amount",
+                desc = "This is the 'overheal' of shields, it is calculated when a shield get replaced or removed.",
+                boxfirst = true,
+            },
+
+            {--energy wasted energy overflown
+                type = "toggle",
+                get = function() return Details.parser_options.energy_overflow end,
+                set = function(self, fixedparam, value)
+                    Details.parser_options.energy_overflow = value
+                    afterUpdate()
+                    Details:ClearParserCache()
+                    Details:UpdateParserGears()
+                end,
+                name = "Calculate Energy Wasted Amount",
+                desc = "Compute the energy wasted by players when they are at maximum energy.",
+                boxfirst = true,
+            },
+
+            {--merge healing criticals
+                type = "toggle",
+                get = function() return Details.combat_log.merge_critical_heals end,
+                set = function(self, fixedparam, value)
+                    Details.combat_log.merge_critical_heals = value
+                    afterUpdate()
+                    Details:ClearParserCache()
+                end,
+                name = "Merge Critical Heals",
+                desc = "Merges spells like Atonement and Awakened Faeline with their critical damage component.",
+                boxfirst = true,
+            },
         }
 
         sectionFrame.sectionOptions = sectionOptions

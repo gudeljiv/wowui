@@ -149,7 +149,7 @@ end)
 
 ConditionCategory:RegisterSpacer(5.5)
 
-local FirstStances = TMW.isWrath and {
+local FirstStances = not TMW.isRetail and {
 	DRUID = 5487, 		-- Bear Form
 	PRIEST = 15473, 	-- Shadowform
 	ROGUE = 1784, 		-- Stealth
@@ -246,7 +246,7 @@ TMW:RegisterUpgrade(73019, {
 })
 local PetModes = {
 	PET_MODE_ASSIST = 1, -- Retail
-	PET_MODE_AGRESSIVE = 1, -- Wrath
+	PET_MODE_AGRESSIVE = 1, -- Wrath/Classic
 	PET_MODE_DEFENSIVE = 2,
 	PET_MODE_DEFENSIVEASSIST = 2, -- Added in 8.3
 	PET_MODE_PASSIVE = 3,
@@ -258,13 +258,13 @@ ConditionCategory:RegisterCondition(13.1, "PETMODE2", {
 	bitFlagTitle = L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_TYPES"],
 	bitFlags = {
 		[0] = L["CONDITIONPANEL_PETMODE_NONE"],
-		[1] = TMW.isWrath and PET_MODE_AGRESSIVE or PET_MODE_ASSIST,
+		[1] = not TMW.isRetail and PET_MODE_AGRESSIVE or PET_MODE_ASSIST,
 		[2] = PET_MODE_DEFENSIVE,
 		[3] = PET_MODE_PASSIVE
 	},
 
 	unit = false,
-	icon = TMW.isWrath and PET_PASSIVE_TEXTURE or PET_ASSIST_TEXTURE,
+	icon = not TMW.isRetail and PET_PASSIVE_TEXTURE or PET_ASSIST_TEXTURE,
 	tcoords = CNDT.COMMON.standardtcoords,
 
 	Env = {
@@ -329,11 +329,28 @@ ConditionCategory:RegisterSpacer(15.5)
 
 
 Env.Tracking = {}
-function CNDT:MINIMAP_UPDATE_TRACKING()
-	wipe(Env.Tracking)
-	for i = 1, GetNumTrackingTypes() do
-		local name, _, active = GetTrackingInfo(i)
-		Env.Tracking[strlower(name)] = active and 1 or nil
+if not TMW.isClassic then
+	-- Wrath+
+	function CNDT:MINIMAP_UPDATE_TRACKING()
+		wipe(Env.Tracking)
+		for i = 1, GetNumTrackingTypes() do
+			local name, _, active = GetTrackingInfo(i)
+			Env.Tracking[strlower(name)] = active and 1 or nil
+		end
+	end
+else
+	-- WoW Classic
+	local Parser, LT1 = TMW:GetParser()
+	function CNDT:MINIMAP_UPDATE_TRACKING()
+		wipe(Env.Tracking)
+		Parser:SetOwner(UIParent, "ANCHOR_NONE")
+		Parser:SetTrackingSpell()
+		local text = LT1:GetText() or ""
+		Parser:Hide()
+
+		if text and text ~= "" then
+			Env.Tracking[strlower(text)] = 1
+		end
 	end
 end
 ConditionCategory:RegisterCondition(16,	 "TRACKING", {

@@ -69,6 +69,7 @@ local QuestieItemStartFixes = QuestieLoader:ImportModule("QuestieItemStartFixes"
 QuestieCorrections.TBC_ONLY = 1
 QuestieCorrections.CLASSIC_ONLY = 2
 QuestieCorrections.WOTLK_ONLY = 3
+QuestieCorrections.TBC_AND_WOTLK = 4
 
 QuestieCorrections.killCreditObjectiveFirst = {} -- Only used for TBC quests
 
@@ -101,6 +102,12 @@ local function filterExpansion(values)
                 values[k] = nil
             else
                 values[k] = true
+            end
+        elseif v == QuestieCorrections.TBC_AND_WOTLK then
+            if isTBC or isWotlk then
+                values[k] = true
+            else
+                values[k] = nil
             end
         end
     end
@@ -141,6 +148,17 @@ function QuestieCorrections:MinimalInit() -- db already compiled
                 QuestieDB.questDataOverrides[id] = {}
             end
             QuestieDB.questDataOverrides[id][key] = value
+        end
+    end
+
+    if (Questie.IsWotlk) then
+        for id, data in pairs(QuestieWotlkNpcFixes:LoadFactionFixes()) do
+            for key, value in pairs(data) do
+                if not QuestieDB.npcDataOverrides[id] then
+                    QuestieDB.npcDataOverrides[id] = {}
+                end
+                QuestieDB.npcDataOverrides[id][key] = value
+            end
         end
     end
 

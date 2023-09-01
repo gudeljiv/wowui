@@ -164,15 +164,6 @@ local fixSpellMap = {
 			return 367226
 		end
 	end,
-	[382411] = function()
-		-- Evoker https://github.com/ascott18/TellMeWhen/issues/2017
-		-- 375783: Font of Magic (talent)
-		-- 382411: Eternity Surge (Devastation baseline, with Font of Magic LEARNED)
-		-- 359073: Eternity Surge (Devastation baseline, with Font of Magic UNLEARNED)
-		if not IsPlayerSpell(382411) and not IsPlayerSpell(375783) then
-			return 359073
-		end
-	end,
 	[280735] = function()
 		-- Fury Execute https://github.com/ascott18/TellMeWhen/issues/2054
 		-- 206315: Massacre (fury talent)
@@ -586,7 +577,7 @@ TMW:MakeSingleArgFunctionCached(TMW, "EquivToTable")
 ---------------------------------
 -- Constant spell data
 ---------------------------------
-if TMW.isWrath then
+if not TMW.isRetail then
 	TMW.COMMON.CurrentClassTotems = {
 		name = L["ICONMENU_TOTEM"],
 		desc = L["ICONMENU_TOTEM_DESC"],
@@ -640,7 +631,10 @@ if TMW.isWrath then
 		
 		data.spellName = GetSpellInfo(spellID)
 		if not data.spellName then
-			TMW:Debug("Bad totem ID: " .. spellID)
+			if not TMW.isClassic then
+				-- don't debug on classic - we use wrath's data and filter out totems that don't exist
+				TMW:Debug("Bad totem ID: " .. spellID)
+			end
 			return
 		end
 		data.spellNameLower = strlower(data.spellName)
@@ -659,13 +653,38 @@ if TMW.isWrath then
 		end
 	end
 
+	if TMW.isClassic then
+		Totem(1535, 1)  -- Fire Nova Totem
+		Totem(8498, 2)  -- Fire Nova Totem
+		Totem(8499, 3)  -- Fire Nova Totem
+		Totem(11314, 4)  -- Fire Nova Totem
+		Totem(11315, 5)  -- Fire Nova Totem
+
+		Totem(8835, 1)  -- Grace of Air Totem
+		Totem(10627, 2)  -- Grace of Air Totem
+		Totem(25359, 3)  -- Grace of Air Totem
+
+		Totem(8166, 1)  -- Poison Cleansing Totem
+		Totem(25908, 1)  -- Tranquil Air Totem
+
+		Totem(10613, 2)  -- Windfury Totem
+		Totem(10614, 3)  -- Windfury Totem
+
+		Totem(15107, 1)  -- Windwall Totem
+		Totem(15111, 2)  -- Windwall Totem
+		Totem(15112, 3)  -- Windwall Totem
+	end
+
 	Totem(8170, 1)  -- Cleansing Totem
-
 	Totem(2062, 1)  -- Earth Elemental Totem
-
 	Totem(2484, 1)  -- Earthbind Totem
-
 	Totem(2894, 1)  -- Fire Elemental Totem
+	Totem(30706, 7) -- Totem of Wrath
+	Totem(8143, 1)  -- Tremor Totem
+	Totem(8512, 1)  -- Windfury Totem
+	Totem(3738, 1)  -- Wrath of Air Totem
+	Totem(8177, 1)  -- Grounding Totem
+	Totem(6495, 1)  -- Sentry Totem
 
 	Totem(8184, 1)  -- Fire Resistance Totem
 	Totem(10537, 2) -- Fire Resistance Totem
@@ -689,8 +708,6 @@ if TMW.isWrath then
 	Totem(25560, 4) -- Frost Resistance Totem
 	Totem(58741, 5) -- Frost Resistance Totem
 	Totem(58745, 6) -- Frost Resistance Totem
-
-	Totem(8177, 1)  -- Grounding Totem
 
 	Totem(5394, 1)  -- Healing Stream Totem
 	Totem(6375, 2)  -- Healing Stream Totem
@@ -739,8 +756,6 @@ if TMW.isWrath then
 	Totem(58703, 9) -- Searing Totem
 	Totem(58704, 10) -- Searing Totem
 
-	Totem(6495, 1)  -- Sentry Totem
-
 	Totem(5730, 1)  -- Stoneclaw Totem
 	Totem(6390, 2)  -- Stoneclaw Totem
 	Totem(6391, 3)  -- Stoneclaw Totem
@@ -771,14 +786,6 @@ if TMW.isWrath then
 	Totem(25528, 6) -- Strength of Earth Totem
 	Totem(57622, 7) -- Strength of Earth Totem
 	Totem(58643, 8) -- Strength of Earth Totem
-
-	Totem(30706, 7) -- Totem of Wrath
-
-	Totem(8143, 1)  -- Tremor Totem
-
-	Totem(8512, 1)  -- Windfury Totem
-
-	Totem(3738, 1)  -- Wrath of Air Totem
 else
 
 	local genericTotemSlots = {
@@ -881,3 +888,79 @@ else
 	end
 
 end
+
+
+TMW.DS = {
+	Magic 	= "Interface\\Icons\\spell_fire_immolation",
+	Curse 	= "Interface\\Icons\\spell_shadow_curseofsargeras",
+	Disease = "Interface\\Icons\\spell_nature_nullifydisease",
+	Poison 	= "Interface\\Icons\\spell_nature_corrosivebreath",
+	Enraged = "Interface\\Icons\\ability_druid_challangingroar",
+}
+
+local function ProcessEquivalencies()
+	TMW.EquivOriginalLookup = {}
+	TMW.EquivFullIDLookup = {}
+	TMW.EquivFullNameLookup = {}
+	TMW.EquivFirstIDLookup = {}
+
+	TMW:Fire("TMW_EQUIVS_PROCESSING")
+	TMW:UnregisterAllCallbacks("TMW_EQUIVS_PROCESSING")
+
+	for dispeltype, texture in pairs(TMW.DS) do
+		TMW.EquivFirstIDLookup[dispeltype] = texture
+		TMW.SpellTexturesMetaIndex[strlower(dispeltype)] = texture
+	end
+
+	for category, b in pairs(TMW.BE) do
+		for equiv, tbl in pairs(b) do
+			TMW.EquivOriginalLookup[equiv] = CopyTable(tbl)
+			TMW.EquivFirstIDLookup[equiv] = abs(tbl[1])
+			TMW.EquivFullIDLookup[equiv] = ""
+			TMW.EquivFullNameLookup[equiv] = ""
+
+			-- turn all negative IDs into their localized name.
+			-- When defining equavalancies, dont put a negative on every single one,
+			-- but do use it for spells that do not have any other spells with the same name and different effects.
+
+			for i, spellID in pairs(tbl) do
+
+				local realSpellID = abs(spellID)
+				local name, _, tex = GetSpellInfo(realSpellID)
+
+				TMW.EquivFullIDLookup[equiv] = TMW.EquivFullIDLookup[equiv] .. ";" .. realSpellID
+				TMW.EquivFullNameLookup[equiv] = TMW.EquivFullNameLookup[equiv] .. ";" .. (name or realSpellID)
+
+				if spellID < 0 then
+
+					-- name will be nil if the ID isn't a valid spell (possibly the spell was removed in a patch).
+					if name then
+						-- this will insert the spell name into the table of spells for capitalization restoration.
+						TMW:LowerNames(name)
+
+						-- map the spell's name and ID to its texture for the spell texture cache
+						TMW.SpellTexturesMetaIndex[realSpellID] = tex
+						TMW.SpellTexturesMetaIndex[TMW.strlowerCache[name]] = tex
+
+						tbl[i] = name
+					else
+						TMW:Debug("Invalid spellID found: %s (%s - %s)!", realSpellID, category, equiv)
+
+						tbl[i] = realSpellID
+					end
+				else
+					tbl[i] = realSpellID
+				end
+			end
+
+			for _, spell in pairs(tbl) do
+				if type(spell) == "number" and not GetSpellInfo(spell) then
+					TMW:Debug("Invalid spellID found: %s (%s - %s)!",
+						spell, category, equiv)
+				end
+			end
+		end
+	end
+end
+
+TMW:RegisterCallback("TMW_INITIALIZE", ProcessEquivalencies)

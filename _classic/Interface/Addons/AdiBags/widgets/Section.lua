@@ -18,7 +18,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-local addonName, addon = ...
+
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
 --<GLOBALS
@@ -56,8 +59,8 @@ local HEADER_SIZE = addon.HEADER_SIZE
 --------------------------------------------------------------------------------
 
 local categoryOrder = {
-	[L['Free space']] = -100,
-	[L['Reagent Free space']] = -101
+	[L["Free space"]] = -100,
+	[L["Reagent Free space"]] = -101
 }
 
 function addon:SetCategoryOrder(name, order)
@@ -82,29 +85,23 @@ end
 -- Initialization and release
 --------------------------------------------------------------------------------
 
-local sectionClass, sectionProto = addon:NewClass('Section', 'Frame', 'ABEvent-1.0')
-local sectionPool = addon:CreatePool(sectionClass, 'AcquireSection')
+local sectionClass, sectionProto = addon:NewClass("Section", "Frame", "ABEvent-1.0")
+local sectionPool = addon:CreatePool(sectionClass, "AcquireSection")
 
 function sectionProto:OnCreate()
 	self.buttons = {}
 	self.slots = {}
 	self.freeSlots = {}
 
-	local header = CreateFrame('Button', nil, self)
+	local header = CreateFrame("Button", nil, self)
 	header.section = self
-	header:SetPoint('TOPLEFT', 0, 0)
-	header:SetPoint('TOPRIGHT', SECTION_SPACING - ITEM_SPACING, 0)
+	header:SetPoint("TOPLEFT", 0, 0)
+	header:SetPoint("TOPRIGHT", SECTION_SPACING - ITEM_SPACING, 0)
 	header:SetHeight(HEADER_SIZE)
 	header:EnableMouse(true)
-	header:SetText('DUMMY')
+	header:SetText("DUMMY")
 	header:GetFontString():SetAllPoints()
-	addon.SetupTooltip(
-		header,
-		function(header, tooltip)
-			return self:ShowHeaderTooltip(header, tooltip)
-		end,
-		'ANCHOR_NONE'
-	)
+	addon.SetupTooltip(header, function(header, tooltip) return self:ShowHeaderTooltip(header, tooltip) end, "ANCHOR_NONE")
 	self.Header = header
 	self:SendMessage('AdiBags_SectionCreated', self)
 
@@ -125,7 +122,7 @@ function sectionProto:OnHide()
 end
 
 function sectionProto:ToString()
-	return format('Section[%q,%q]', tostring(self.name), tostring(self.category))
+	return format("Section[%q,%q]", tostring(self.name), tostring(self.category))
 end
 
 function sectionProto:OnAcquire(container, name, category)
@@ -135,6 +132,8 @@ function sectionProto:OnAcquire(container, name, category)
 	self.key = BuildSectionKey(name, category)
 	self:SetSizeInSlots(0, 0)
 	self.count = 0
+	self.total = 0
+	self.height = 0
 	self.container = container
 	self:RegisterMessage('AdiBags_OrderChanged', 'FullLayout')
 	self.Header:SetNormalFontObject(addon.fonts[string.lower(container.name)].sectionFont)
@@ -149,6 +148,8 @@ function sectionProto:OnRelease()
 	self.name = nil
 	self.category = nil
 	self.container = nil
+	self.total = 0
+	self.height = 0
 end
 
 function sectionProto:UpdateFont()
@@ -177,7 +178,7 @@ function sectionProto:IsCollapsed()
 end
 
 function sectionProto:SetCollapsed(collapsed)
-	collapsed = not (not collapsed)
+	collapsed = not not collapsed
 	if addon.db.char.collapsedSections[self.key] ~= collapsed then
 		addon.db.char.collapsedSections[self.key] = collapsed
 		if collapsed then
@@ -195,18 +196,14 @@ end
 
 local scriptDispatcher = LibStub('CallbackHandler-1.0'):New(addon, 'RegisterSectionHeaderScript', 'UnregisterSectionHeaderScript', 'UnregisterAllSectionHeaderScripts')
 
-local DispatchOnClick = function(...)
-	return scriptDispatcher:Fire('OnClick', ...)
-end
-local DispatchOnReceiveDrag = function(...)
-	return scriptDispatcher:Fire('DispatchOnReceiveDrag', ...)
-end
+local DispatchOnClick = function(...) return scriptDispatcher:Fire('OnClick', ...) end
+local DispatchOnReceiveDrag = function(...) return scriptDispatcher:Fire('DispatchOnReceiveDrag', ...) end
 
 function sectionProto:ShowHeaderTooltip(header, tooltip)
 	local self = header.section
-	tooltip:SetPoint('BOTTOMRIGHT', self.container, 'TOPRIGHT', 0, 4)
+	tooltip:SetPoint("BOTTOMRIGHT", self.container, "TOPRIGHT", 0, 4)
 	if self.category ~= self.name then
-		tooltip:AddDoubleLine(self.name, '(' .. self.category .. ')', 1, 1, 1)
+		tooltip:AddDoubleLine(self.name, "("..self.category..")", 1, 1, 1)
 	else
 		tooltip:AddLine(self.name, 1, 1, 1)
 	end
@@ -219,7 +216,7 @@ function sectionProto:UpdateHeaderScripts()
 	local header = self.Header
 	if usedScripts.OnClick and not header:GetScript('OnClick') then
 		header:SetScript('OnClick', DispatchOnClick)
-		header:RegisterForClicks('AnyUp')
+		header:RegisterForClicks("AnyUp")
 	elseif not usedScripts.OnClick and header:GetScript('OnClick') then
 		header:SetScript('OnClick', nil)
 		header:RegisterForClicks()
@@ -232,7 +229,7 @@ function sectionProto:UpdateHeaderScripts()
 end
 
 function scriptDispatcher:OnUsed(_, name)
-	if name == 'OnClick' or name == 'OnReceiveDrag' or name == 'OnTooltipUpdate' then
+	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
 		addon:Debug('Used SectionHeaderScript', name)
 		usedScripts[name] = true
 		for section in sectionPool:IterateActiveObjects() do
@@ -242,7 +239,7 @@ function scriptDispatcher:OnUsed(_, name)
 end
 
 function scriptDispatcher:OnUnused(_, name)
-	if name == 'OnClick' or name == 'OnReceiveDrag' or name == 'OnTooltipUpdate' then
+	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
 		addon:Debug('Used SectionHeaderScript', name)
 		usedScripts[name] = nil
 		for section in sectionPool:IterateActiveObjects() do
@@ -336,23 +333,22 @@ function sectionProto:PutButtonAt(button, index)
 		self.slots[button] = index
 		self.freeSlots[index] = nil
 	end
-	if self.width == 0 then
-		return
-	end
-	local row, col = floor((index - 1) / self.width), (index - 1) % self.width
-	button:SetPoint('TOPLEFT', self, 'TOPLEFT', col * SLOT_OFFSET, -HEADER_SIZE - row * SLOT_OFFSET)
+	if self.width == 0 then return end
+	local row, col = floor((index-1) / self.width), (index-1) % self.width
+	button:SetPoint("TOPLEFT", self, "TOPLEFT", col * SLOT_OFFSET, - HEADER_SIZE - row * SLOT_OFFSET)
 end
 
 function sectionProto:SetSizeInSlots(width, height)
-	if self.width == width and self.height == height then
-		return
-	end
+	if self.width == width and self.height == height then return end
 	self.width, self.height, self.total = width, height, width * height
 
 	if width == 0 or height == 0 then
 		self:SetSize(0.5, 0.5)
 	else
-		self:SetSize(SLOT_OFFSET * width - ITEM_SPACING, HEADER_SIZE + SLOT_OFFSET * height - ITEM_SPACING)
+		self:SetSize(
+			SLOT_OFFSET * width - ITEM_SPACING,
+			HEADER_SIZE + SLOT_OFFSET * height - ITEM_SPACING
+		)
 	end
 	self:Debug('SetSizeInSlots', width, height, '=>', self:GetSize())
 	return true
@@ -362,9 +358,9 @@ function sectionProto:SetHeaderOverflow(overflow)
 	if self.headerOverflow ~= overflow then
 		self.headerOverflow = overflow
 		if overflow then
-			self.Header:SetPoint('TOPRIGHT', SECTION_SPACING, 0)
+			self.Header:SetPoint("TOPRIGHT", SECTION_SPACING, 0)
 		else
-			self.Header:SetPoint('TOPRIGHT', 0, 0)
+			self.Header:SetPoint("TOPRIGHT", 0, 0)
 		end
 	end
 end
@@ -380,6 +376,10 @@ function sectionProto:FullLayout()
 		return
 	elseif self:IsCollapsed() then
 		return self:Hide()
+	end
+
+	if self.total < 0 or self.count < 0 then
+		return
 	end
 
 	for button in pairs(self.buttons) do
@@ -434,15 +434,16 @@ local EQUIP_LOCS = {
 	INVTYPE_RANGEDRIGHT = 18,
 	INVTYPE_RELIC = 18,
 	INVTYPE_TABARD = 19,
-	INVTYPE_BAG = 20
+	INVTYPE_BAG = 20,
 }
 
 local sortingFuncs = {
+
 	default = function(linkA, linkB, nameA, nameB)
 		local _, _, qualityA, levelA, _, classA, subclassA, _, equipSlotA = GetItemInfo(linkA)
 		local _, _, qualityB, levelB, _, classB, subclassB, _, equipSlotB = GetItemInfo(linkB)
-		local equipLocA = EQUIP_LOCS[equipSlotA or '']
-		local equipLocB = EQUIP_LOCS[equipSlotB or '']
+		local equipLocA = EQUIP_LOCS[equipSlotA or ""]
+		local equipLocB = EQUIP_LOCS[equipSlotB or ""]
 		if equipLocA and equipLocB and equipLocA ~= equipLocB then
 			return equipLocA < equipLocB
 		elseif classA ~= classB then
@@ -457,9 +458,11 @@ local sortingFuncs = {
 			return nameA < nameB
 		end
 	end,
+
 	byName = function(linkA, linkB, nameA, nameB)
 		return nameA < nameB
 	end,
+
 	byQualityAndLevel = function(linkA, linkB, nameA, nameB)
 		local _, _, qualityA, levelA = GetItemInfo(linkA)
 		local _, _, qualityB, levelB = GetItemInfo(linkB)
@@ -470,28 +473,25 @@ local sortingFuncs = {
 		else
 			return nameA < nameB
 		end
-	end
+	end,
+
 }
 
 local currentSortingFunc = sortingFuncs.default
 
-local itemCompareCache =
-	setmetatable(
-	{},
-	{
-		__index = function(t, key)
-			local linkA, linkB = strsplit(';', key, 2)
-			local nameA, nameB = GetItemInfo(linkA), GetItemInfo(linkB)
-			if nameA and nameB then
-				local result = currentSortingFunc(linkA, linkB, nameA, nameB)
-				t[key] = result
-				return result
-			else
-				return linkA < linkB
-			end
+local itemCompareCache = setmetatable({}, {
+	__index = function(t, key)
+		local linkA, linkB = strsplit(';', key, 2)
+		local nameA, nameB = GetItemInfo(linkA), GetItemInfo(linkB)
+		if nameA and nameB then
+			local result = currentSortingFunc(linkA, linkB, nameA, nameB)
+			t[key] = result
+			return result
+		else
+			return linkA < linkB
 		end
-	}
-)
+	end
+})
 
 function addon:SetSortingOrder(order)
 	local func = sortingFuncs[order]
@@ -504,16 +504,10 @@ function addon:SetSortingOrder(order)
 end
 
 function CompareButtons(a, b)
-	if not a then
-		return
-	end
-	if not b then
-		return
-	end
 	local linkA, linkB = a:GetItemLink(), b:GetItemLink()
 	if linkA and linkB then
 		if linkA ~= linkB then
-			return itemCompareCache[format('%s;%s', linkA, linkB)]
+			return itemCompareCache[format("%s;%s", linkA, linkB)]
 		else
 			return a:GetCount() > b:GetCount()
 		end

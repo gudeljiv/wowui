@@ -33,6 +33,12 @@
             <Anchor point="BOTTOMRIGHT"/>
           </Anchors>
         </Texture>
+        <Texture parentKey="IconSelectedHighlight" atlas="bags-glow-artifact">
+          <Anchors>
+            <Anchor point="TOPLEFT"/>
+            <Anchor point="BOTTOMRIGHT"/>
+          </Anchors>
+        </Texture>
       </Layer>
       <Layer>
         <FontString parentKey="Text" inherits="NumberFontNormal" justifyH="RIGHT" maxLines="1">

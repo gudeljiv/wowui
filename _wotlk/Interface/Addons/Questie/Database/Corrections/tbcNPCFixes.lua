@@ -10,8 +10,15 @@ function QuestieTBCNpcFixes:Load()
     local npcKeys = QuestieDB.npcKeys
     local zoneIDs = ZoneDB.zoneIDs
     local npcFlags = QuestieDB.npcFlags
+    local waypointPresets = QuestieDB.waypointPresets
 
     return {
+        [331] = {
+            [npcKeys.questStarts] = {8250,64038},
+        },
+        [2385] = {
+            [npcKeys.spawns] = {[zoneIDs.HILLSBRAD_FOOTHILLS] = {{63.59,67.96},{58.52,55.59},{60.98,50.92},{70.35,67.98},{61.14,66.86},{57.56,49.97},{66.26,74.09},{60.16,58.47},{56.7,60.08},{58.98,56.53},{57.68,59.31},{67.97,80.87},{61.79,69.02},{66.33,75.32},{64.98,66.4},{64.87,69.26},{65.09,72.99},{62.62,71.43}}},
+        },
         [2552] = {
             [npcKeys.spawns] = {[zoneIDs.ARATHI_HIGHLANDS] = {{32.04,46.29},{35.61,49.41},{37.5,40.95},{35.1,46.16}}},
         },
@@ -131,6 +138,11 @@ function QuestieTBCNpcFixes:Load()
         [15669] = {
             [npcKeys.waypoints] = {},
         },
+        [15895] = {
+            [npcKeys.spawns] = {[1657]={{33.89,13.87}},[1497]={{65.62,36.0}},[1637]={{41.66,31.98}},[1638]={{71.12,28.2}},[1537]={{28.85,16.23}},[1519]={{23.22,53.24}}, -- original data
+                               [zoneIDs.THE_EXODAR]={{74,57.5}}, -- correction
+                               [zoneIDs.SILVERMOON_CITY]={{73.1,82.6}}},
+        },
         [15920] = {
             [npcKeys.waypoints] = {[zoneIDs.EVERSONG_WOODS]={{{30,58.6}}}},
         },
@@ -192,6 +204,9 @@ function QuestieTBCNpcFixes:Load()
         [17087] = {
             [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{71.8,40.2}}},
         },
+        [17101] = {
+            [npcKeys.waypoints] = {},
+        },
         [17110] = {
             [npcKeys.waypoints] = {},
         },
@@ -202,6 +217,10 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.THE_EXODAR] = {{29.8,32.8}}},
             [npcKeys.waypoints] = {[zoneIDs.THE_EXODAR] = {{{29.8,32.8},{30.3,33.2},{31,32.4},{31,28.9},{31.3,27.7},{31,28.9},{31,32.4},{30.3,33.2},{29.8,32.8}}}},
             [npcKeys.zoneID] = zoneIDs.THE_EXODAR,
+        },
+        [17206] = {
+            [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE]={{11.36,82.34}}},
+            [npcKeys.zoneID] = zoneIDs.AZUREMYST_ISLE,
         },
         [17214] = {
             [npcKeys.waypoints] = {},
@@ -233,10 +252,9 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.zoneID] = zoneIDs.THE_SHATTERED_HALLS,
         },
         [17311] = {
-            [npcKeys.spawns] = {
-                [zoneIDs.BLOODMYST_ISLE]={{54.08,55.1}},
-                [zoneIDs.AZUREMYST_ISLE] = {{16.6,94.4}},
-            },
+            [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{16.6,94.4}}},
+            [npcKeys.zoneID] = zoneIDs.AZUREMYST_ISLE,
+            [npcKeys.waypoints] = {},
         },
         [17318] = {
             [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{18.48,84.35}}},
@@ -247,16 +265,26 @@ function QuestieTBCNpcFixes:Load()
         [17352] = {
             [npcKeys.spawns] = {[zoneIDs.BLOODMYST_ISLE]={{36,75.6},{36.4,74},{36.4,74.6},{36.8,71.6},{36.8,74.4},{37.4,75.8},{43.8,91},{45.6,53.4},{45.8,55},{46.8,54.4},{47.2,54.8},{47.4,53.2},{48,53.4},{48,61.2},{48,68.4},{48.4,58.4},{48.4,73.2},{48.4,73.8},{48.4,86.6},{48.6,56.8},{48.6,73},{49,71.4},{49,72.4},{49,83.6},{49.2,74.2},{49.4,55.8},{49.6,51.6},{49.6,72.4},{49.8,74.4},{49.8,74.6},{49.8,76.6},{50,44},{50,54},{50,75.8},{50.2,49.6},{50.2,51.2},{50.2,53},{50.4,72.8},{50.6,71},{50.6,71.8},{50.6,73},{51,48.4},{51.2,48.6},{51.2,74.2},{51.2,79.4},{51.4,74.6},{51.6,51.2},{51.6,74},{51.6,74.6},{51.8,48.6},{51.8,73.4},{52.2,48},{52.8,80.8},{53.4,63.8},{53.4,79.6},{53.6,65.4},{53.6,82},{54,72.6},{55.4,47},{55.4,72.8},{56,47},{56,63.6},{56.2,45.2},{56.2,49.2},{56.4,48.4},{56.4,50.6},{56.4,60.6},{57,50.8},{57.4,68},{57.8,49.2},{57.8,60.8},{58,49.6},{58.2,68},{58.4,64},{58.6,50.4},{59.6,53},{59.6,59.2},{60,60},{61.2,57.4},{62.8,52.8},{63.2,59.8}}},
         },
+        [17359] = {
+            [npcKeys.spawns] = {[zoneIDs.BLOODMYST_ISLE]={{25.94,40.96}}},
+            [npcKeys.zoneID] = zoneIDs.BLOODMYST_ISLE,
+        },
         [17413] = {
             [npcKeys.spawns] = {[zoneIDs.HELLFIRE_PENINSULA]={{26.9,37.46}}},
         },
-        [17496] = {
-            [npcKeys.waypoints] = {},
+        [17527] = {
+            [npcKeys.spawns] = {[zoneIDs.BLOODMYST_ISLE]={{28.06,62.73},{24.3,63.8},{26.4,57.9},{36.25,55.46},{30.41,61.4},{25.73,60.87},{25.8,47.18},{31.96,59.48},{33.61,60.7},{31.77,52.59},{36.32,48.56},{27.22,48.75},{23.34,48.27},{27.8,43.92},{24.86,43.0},{25.45,45.19},{32.67,54.68},{29.72,55.59},{26.27,55.7},{24.23,46.11},{26.62,46.33},{27.43,47.8},{28.21,50.03},{34.67,57.85},{33.42,57.18},{30.91,54.27},{31.14,56.93},{34.8,52.67},{33.4,51.94},{32.37,64.86},{30.73,59.36},{28.96,61.8},{28.78,58.66},{27.69,58.03},{30.14,69.42},{29.3,69.88},{30.88,71.57}}},
         },
         [17550] = {
             [npcKeys.waypoints] = {},
         },
+        [17587] = {
+            [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE]={{42.86,57.14},{37.84,18.12},{39.6,37.8},{56.83,59.81},{40.27,71.21},{46.6,31.9},{55.2,28.6},{53.6,42.6},{58.6,41.6},{55.2,47.4}}},
+        },
         [17610] = {
+            [npcKeys.waypoints] = {},
+        },
+        [17682] = {
             [npcKeys.waypoints] = {},
         },
         [17702] = {
@@ -274,6 +302,10 @@ function QuestieTBCNpcFixes:Load()
         },
         [17336] = {
             [npcKeys.waypoints] = {},
+        },
+        [17537] = {
+            [npcKeys.spawns] = {[zoneIDs.HELLFIRE_RAMPARTS] = {{-1,-1}}},
+            [npcKeys.zoneID] = zoneIDs.HELLFIRE_RAMPARTS,
         },
         [17544] = {
             [npcKeys.spawns] = {[zoneIDs.SILVERMOON_CITY] = {{92.6,37.5}}},
@@ -298,6 +330,10 @@ function QuestieTBCNpcFixes:Load()
         },
         [17923] = {
             [npcKeys.waypoints] = {[zoneIDs.ZANGARMARSH] = {{{19,62.4},{19,63.5},{19.2,64.6}}}},
+        },
+        [17975] = {
+            [npcKeys.spawns] = {[zoneIDs.THE_BOTANICA] = {{-1,-1}}},
+            [npcKeys.zoneID] = zoneIDs.THE_BOTANICA,
         },
         [17976] = {
             [npcKeys.spawns] = {[zoneIDs.THE_BOTANICA] = {{-1,-1}}},
@@ -524,10 +560,12 @@ function QuestieTBCNpcFixes:Load()
         [22817] = {
             [npcKeys.spawns] = {[zoneIDs.SHATTRATH_CITY]={{75.23,48.0},},},
             [npcKeys.zoneID] = zoneIDs.SHATTRATH_CITY,
+            [npcKeys.questStarts] = {10945,10951,10953,10963,10967,11975}, -- removed the SWP quest
         },
         [22818] = {
             [npcKeys.spawns] = {[zoneIDs.SHATTRATH_CITY]={{75.23,48.0},},},
             [npcKeys.zoneID] = zoneIDs.SHATTRATH_CITY,
+            [npcKeys.questEnds] = {10943,10950,10952,10962}, -- removed the horde starting quest
         },
         [22890] = {
             [npcKeys.spawns] = {[zoneIDs.SHADOW_LABYRINTH] = {{-1,-1}}},
@@ -560,6 +598,9 @@ function QuestieTBCNpcFixes:Load()
         [23068] = {
             [npcKeys.spawns] = {[zoneIDs.TEROKKAR_FOREST] = {{70.1,74.4},},},
         },
+        [23100] = {
+            [npcKeys.spawns] = {[zoneIDs.TEROKKAR_FOREST] = {{44.2,41.0},},},
+        },
         [23338] = {
             [npcKeys.spawns] = {[zoneIDs.TEROKKAR_FOREST] = {{46.5,45.1},{60.6,60.1},},},
         },
@@ -578,6 +619,9 @@ function QuestieTBCNpcFixes:Load()
         [23904] = {
             [npcKeys.spawns] = {[zoneIDs.SCARLET_MONASTERY] = {{-1,-1}}},
             [npcKeys.zoneID] = zoneIDs.SCARLET_MONASTERY,
+        },
+        [23905] = {
+            [npcKeys.spawns] = {[zoneIDs.DUSTWALLOW_MARSH] = {{69.61,51.77}}},
         },
         [24202] = {
             [npcKeys.spawns] = {[zoneIDs.ORGRIMMAR] = {{52,66.6}},[zoneIDs.IRONFORGE]={{30.2,66.5}}},
@@ -740,34 +784,6 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.zoneID] = zoneIDs.SILVERMOON_CITY,
             [npcKeys.spawns] = {[zoneIDs.SILVERMOON_CITY] = {{92.3,36.5}}},
             [npcKeys.friendlyToFaction] = "H",
-        },
-
-        -- Below are fake IDs to show specific quest starts/ends only at one specific location even though the
-        -- corresponding real NPC has multiple spawns (e.g. "The Kessel Run" requires you to run to Azure Watch even
-        -- though "Exarch Menelaous" also spawns at Bloodmyst Isle)
-
-        [40000] = {
-            [npcKeys.name] = "Exarch Menelaous",
-            [npcKeys.minLevel] = 14,
-            [npcKeys.maxLevel] = 14,
-            [npcKeys.zoneID] = zoneIDs.AZUREMYST_ISLE,
-            [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{47.11,50.6}}},
-            [npcKeys.friendlyToFaction] = "A",
-        },
-        [40001] = {
-            [npcKeys.name] = "Admiral Odesyus",
-            [npcKeys.minLevel] = 60,
-            [npcKeys.maxLevel] = 60,
-            [npcKeys.zoneID] = zoneIDs.AZUREMYST_ISLE,
-            [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{47.04,70.21}}},
-            [npcKeys.friendlyToFaction] = "A",
-        },
-        [40002] = {
-            [npcKeys.name] = "Bristlelimb Furbolgs",
-            [npcKeys.minLevel] = 10,
-            [npcKeys.maxLevel] = 12,
-            [npcKeys.zoneID] = zoneIDs.BLOODMYST_ISLE,
-            [npcKeys.spawns] = {[zoneIDs.BLOODMYST_ISLE] = {{68,81},{64.9,81.6},{64.2,76.4}}},
         },
     }
 end

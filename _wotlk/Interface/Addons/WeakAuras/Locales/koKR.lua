@@ -83,6 +83,18 @@ L["Action Button Glow"] = "동작 버튼 반짝임"
 L["Action Usable"] = "사용 가능"
 L["Actions"] = "동작"
 L["Active"] = "활성화"
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "추가"
 L["Add Missing Auras"] = "없어진 효과 추가"
 L["Additional Trigger Replacements"] = "추가 활성 조건 교체"
@@ -222,6 +234,14 @@ L["Blood-Queen Lana'thel"] = "피의 여왕 라나텔"
 L["Border"] = "테두리"
 L["Boss"] = "우두머리"
 L["Boss Emote"] = "우두머리 감정 표현"
+--[[Translation missing --]]
+L["Boss Mod Announce"] = "Boss Mod Announce"
+--[[Translation missing --]]
+L["Boss Mod Stage"] = "Boss Mod Stage"
+--[[Translation missing --]]
+L["Boss Mod Stage (Event)"] = "Boss Mod Stage (Event)"
+--[[Translation missing --]]
+L["Boss Mod Timer"] = "Boss Mod Timer"
 L["Boss Whisper"] = "우두머리 귓속말"
 L["Bottom"] = "하단"
 L["Bottom Left"] = "좌측 하단"
@@ -305,6 +325,8 @@ L["Charged Combo Point 3"] = "Charged Combo Point 3"
 L["Charged Combo Point 4"] = "Charged Combo Point 4"
 L["Charges"] = "충전량"
 L["Charges Changed Event"] = "충전량 변경 이벤트"
+--[[Translation missing --]]
+L["Charging"] = "Charging"
 L["Chat Frame"] = "대화창"
 L["Chat Message"] = "대화 메시지"
 L["Check if a single talent match a Rank"] = "단일 특성이 등급과 일치하는지 확인"
@@ -354,6 +376,8 @@ L["Critical Rating"] = "치명타 및 극대화"
 L["Crowd Controlled"] = "군중 제어됨"
 L["Crushing"] = "강타"
 L["C'thun"] = "쑨"
+--[[Translation missing --]]
+L["Current Essence"] = "Current Essence"
 L["Current Experience"] = "현재 경험치"
 L["Current Movement Speed (%)"] = "현재 이동 속도 (%)"
 L["Current Stage"] = "현재 단계"
@@ -418,6 +442,8 @@ L["Destination unit's raid mark index"] = "Destination unit's raid mark index"
 --[[Translation missing --]]
 L["Destination unit's raid mark texture"] = "Destination unit's raid mark texture"
 --[[Translation missing --]]
+L["Difficulty"] = "Difficulty"
+--[[Translation missing --]]
 L["Disable Spell Known Check"] = "Disable Spell Known Check"
 --[[Translation missing --]]
 L["Disabled Spell Known Check"] = "Disabled Spell Known Check"
@@ -449,6 +475,8 @@ L["Dungeon (Timewalking)"] = "던전 (시간여행)"
 L["Dungeons"] = "던전"
 L["Durability Damage"] = "내구도 손상"
 L["Durability Damage All"] = "모든 내구도 손상"
+--[[Translation missing --]]
+L["Duration"] = "Duration"
 --[[Translation missing --]]
 L["Duration Function"] = "Duration Function"
 --[[Translation missing --]]
@@ -508,6 +536,8 @@ L["Enrage"] = "격노"
 L["Enter static or relative values with %"] = "Enter static or relative values with %"
 L["Entering"] = "시작"
 L["Entering/Leaving Combat"] = "전투 시작/종료"
+--[[Translation missing --]]
+L["Entering/Leaving Encounter"] = "Entering/Leaving Encounter"
 L["Entry Order"] = "항목 순서"
 L["Environment Type"] = "환경 종류"
 L["Environmental"] = "환경"
@@ -529,11 +559,27 @@ L["Error Frame"] = "오류창"
 --[[Translation missing --]]
 L["ERROR in '%s' unknown or incompatible sub element type '%s'"] = "ERROR in '%s' unknown or incompatible sub element type '%s'"
 L["Error not receiving display information from %s"] = "%s 에서 표시 정보를 받지 못하는 오류"
+--[[Translation missing --]]
+L["Essence"] = "Essence"
+--[[Translation missing --]]
+L["Essence #1"] = "Essence #1"
+--[[Translation missing --]]
+L["Essence #2"] = "Essence #2"
+--[[Translation missing --]]
+L["Essence #3"] = "Essence #3"
+--[[Translation missing --]]
+L["Essence #4"] = "Essence #4"
+--[[Translation missing --]]
+L["Essence #5"] = "Essence #5"
+--[[Translation missing --]]
+L["Essence #6"] = "Essence #6"
 L["Evade"] = "벗어남"
 L["Event"] = "이벤트"
 L["Event(s)"] = "이벤트"
 L["Every Frame"] = "매 프레임"
 L["Every Frame (High CPU usage)"] = "매 프레임 (CPU 사용량 높음)"
+--[[Translation missing --]]
+L["Evoker Essence"] = "Evoker Essence"
 L["Experience (%)"] = "경험치 (%)"
 L["Expertise Bonus"] = "숙련 보너스"
 L["Expertise Rating"] = "숙련도"
@@ -589,6 +635,8 @@ L["Formats Player's |cFFFF0000%guid|r"] = "플레이어의 |cFFFF0000%GUID|r 형
 L["Forward"] = "Forward"
 --[[Translation missing --]]
 L["Forward, Reverse Loop"] = "Forward, Reverse Loop"
+--[[Translation missing --]]
+L["Fourth Value of Tooltip Text"] = "Fourth Value of Tooltip Text"
 --[[Translation missing --]]
 L["Frame Selector"] = "Frame Selector"
 L["Frequency"] = "빈도"
@@ -705,6 +753,8 @@ L["Icon"] = "아이콘"
 L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
+--[[Translation missing --]]
+L["Id"] = "Id"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "추가 지원이 필요한 경우, GitHub에서 티켓을 열거나 Discord( https://discord.gg/weakauras )를 방문해 주세요!"
 L["Ignis the Furnace Master"] = "용광로 군주 이그니스"
 L["Ignore Dead"] = "죽음 무시"
@@ -780,6 +830,8 @@ L["Jin'do the Hexxer"] = "주술사 진도"
 L["Journal Stage"] = "도감 단계"
 L["Keep Inside"] = "내부에 보관"
 L["Kel'Thuzad"] = "켈투자드"
+--[[Translation missing --]]
+L["Key"] = "Key"
 L["Kologarn"] = "콜로간"
 L["Koralon the Flame Watcher"] = "화염 감시자 코랄론"
 L["Kurinnaxx"] = "쿠린낙스"
@@ -916,6 +968,12 @@ L["Never"] = "절대 안 함"
 L["Next Combat"] = "다음 전투"
 L["Next Encounter"] = "다음 교전"
 --[[Translation missing --]]
+L[ [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
 L["No Extend"] = "No Extend"
 L["No Instance"] = "인스턴스가 아닐 때"
 L["No Profiling information saved."] = "저장된 프로파일링 정보가 없습니다."
@@ -935,6 +993,8 @@ L["Note: 'Hide Alone' is not available in the new aura tracking system. A load o
 --[[Translation missing --]]
 L["Note: The available text replacements for multi triggers match the normal triggers now."] = "Note: The available text replacements for multi triggers match the normal triggers now."
 --[[Translation missing --]]
+L["Note: This trigger relies on the WoW API, which returns incorrect information in some cases."] = "Note: This trigger relies on the WoW API, which returns incorrect information in some cases."
+--[[Translation missing --]]
 L["Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"] = "Note: This trigger type estimates the range to the hitbox of a unit. The actual range of friendly players is usually 3 yards more than the estimate. Range checking capabilities depend on your current class and known abilities as well as the type of unit being checked. Some of the ranges may also not work with certain NPCs.|n|n|cFFAAFFAAFriendly Units:|r %s|n|cFFFFAAAAHarmful Units:|r %s|n|cFFAAAAFFMiscellanous Units:|r %s"
 L["Noth the Plaguebringer"] = "역병술사 노스"
 L["NPC"] = "NPC"
@@ -942,6 +1002,54 @@ L["Npc ID"] = "NPC ID"
 L["Number"] = "횟수"
 L["Number Affected"] = "영향 받은 횟수"
 L["Object"] = "객체"
+--[[Translation missing --]]
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if BigWigs shows it on it's bar]=] ] = [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if BigWigs shows it on it's bar]=]
+--[[Translation missing --]]
+L[ [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if DBM shows it on it's bar]=] ] = [=[Occurrence of the event, reset when aura is unloaded
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Only if DBM shows it on it's bar]=]
 L["Officer"] = "길드관리자"
 --[[Translation missing --]]
 L["Offset from progress"] = "Offset from progress"
@@ -951,8 +1059,6 @@ L["Old Blizzard (2h | 3m | 10s | 2.4)"] = "옛 블리자드 (2h | 3m | 10s | 2.4
 L["On Cooldown"] = "재사용 대기 중일 때"
 --[[Translation missing --]]
 L["On Taxi"] = "On Taxi"
-L["Only if BigWigs shows it on it's bar"] = "BigWigs가 바에 표시하는 경우에만"
-L["Only if DBM shows it on it's bar"] = "DBM이 바에 표시하는 경우에만"
 --[[Translation missing --]]
 L["Only if on a different realm"] = "Only if on a different realm"
 L["Only if Primary"] = "주 자원일때만"
@@ -1032,6 +1138,8 @@ L["Precision"] = "정밀도"
 L["Preset"] = "프리셋"
 L["Princess Huhuran"] = "공주 후후란"
 L["Print Profiling Results"] = "프로파일링 결과 출력"
+--[[Translation missing --]]
+L["Proc Glow"] = "Proc Glow"
 L["Professor Putricide"] = "교수 퓨트리사이드"
 L["Profiling already started."] = "프로파일링이 이미 시작되었습니다."
 L["Profiling automatically started."] = "프로파일링이 자동으로 시작되었습니다."
@@ -1194,6 +1302,10 @@ L["Show Loss of Control"] = "제어 상실 표시"
 --[[Translation missing --]]
 L["Show On"] = "Show On"
 --[[Translation missing --]]
+L["Show Override"] = "Show Override"
+--[[Translation missing --]]
+L["Show Override Spell"] = "Show Override Spell"
+--[[Translation missing --]]
 L["Show Rested Overlay"] = "Show Rested Overlay"
 L["Shrink"] = "축소"
 L["Silithid Royalty"] = "실리시드 왕실"
@@ -1297,6 +1409,8 @@ L["Stance/Form/Aura"] = "태세/변신/효과"
 --[[Translation missing --]]
 L["Standing"] = "Standing"
 L["Star Shake"] = "별모양 흔들림"
+--[[Translation missing --]]
+L["Start Animation"] = "Start Animation"
 L["Start Now"] = "지금 시작"
 L["Status"] = "상태"
 --[[Translation missing --]]
@@ -1311,6 +1425,8 @@ L["Subtract Cast"] = "Subtract Cast"
 L["Subtract Channel"] = "Subtract Channel"
 --[[Translation missing --]]
 L["Subtract GCD"] = "Subtract GCD"
+--[[Translation missing --]]
+L["Success"] = "Success"
 L["Sulfuron Harbinger"] = "설퍼론 사자"
 L["Summon"] = "소환"
 L["Supports multiple entries, separated by commas"] = "쉼표로 구분된 여러 항목을 지원합니다"
@@ -1354,6 +1470,8 @@ L["The aura has overwritten the global '%s', this might affect other auras."] = 
 L["The effective level differs from the level in e.g. Time Walking dungeons."] = "실제 레벨은 예를 들어 시간여행 던전의 레벨과는 다릅니다."
 L["The Eye of Eternity"] = "영원의 눈"
 L["The Four Horsemen"] = "4기사단"
+--[[Translation missing --]]
+L["The 'Key' value can be found in the BigWigs options of a specific spell"] = "The 'Key' value can be found in the BigWigs options of a specific spell"
 L["The Lich King"] = "리치 왕"
 L["The Obsidian Sanctum"] = "흑요석 성소"
 L["The Prophet Skeram"] = "예언자 스케람"
@@ -1389,6 +1507,8 @@ L["Tooltip"] = "툴팁"
 L["Tooltip Value 1"] = "툴팁 값 1"
 L["Tooltip Value 2"] = "툴팁 값 2"
 L["Tooltip Value 3"] = "툴팁 값 3"
+--[[Translation missing --]]
+L["Tooltip Value 4"] = "Tooltip Value 4"
 L["Top"] = "위"
 L["Top Left"] = "왼쪽 위"
 L["Top Right"] = "오른쪽 위"
@@ -1397,6 +1517,8 @@ L["Toravon the Ice Watcher"] = "얼음 감시자 토라본"
 L["Torghast"] = "토르가스트"
 L["Total"] = "전체"
 L["Total Duration"] = "총 지속시간"
+--[[Translation missing --]]
+L["Total Essence"] = "Total Essence"
 L["Total Experience"] = "전체 경험치"
 L["Total Match Count"] = "총 일치 횟수"
 L["Total Stacks"] = "총 중첩"

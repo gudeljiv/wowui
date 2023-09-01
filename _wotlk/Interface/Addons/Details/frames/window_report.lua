@@ -1,7 +1,7 @@
 
 local Loc = LibStub("AceLocale-3.0"):GetLocale("Details")
 
-local Details = _G._detalhes
+local Details = _G.Details
 local gump = Details.gump
 local _
 
@@ -761,6 +761,8 @@ local createDropdown = function(thisFrame)
 
 		Details.janela_report = window
 		Details:InstallRPSkin("defaultSkin", defaultSkin)
+
+		DetailsFramework:AddRoundedCornersToFrame(window, Details.PlayerBreakdown.RoundedCornerPreset)
 
 		--recently reported:
 		window.recently_report_buttons = {}

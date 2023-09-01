@@ -1,14 +1,10 @@
 # Auctionator
 
-## [10.0.43](https://github.com/Auctionator/Auctionator/tree/10.0.43) (2023-03-24)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.0.42...10.0.43) 
+## [10.1.19](https://github.com/Auctionator/Auctionator/tree/10.1.19) (2023-08-30)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.18...10.1.19) 
 
-- Mainline: CraftingInfo: Reposition for Blizz layout change of crafting screen  
-- Update toc for 10.0.7  
-- [Fixes #1293] Mainline: Add expansion filter for shopping searches  
-- Shopping refactor (#1367)  
-    * Refactor shopping list code  
-    * Use ScrollBox for export list options frame  
-    * Use ScrollBox for import/export text frames  
-- [Fixes #1370] Mainline: CraftingInfo: Lua error in abominable stitching  
-- Restore "[Fixes #1364] Mainline: Cancelling: Option to ignore item level and"  
+- Fix leftover end  
+- Shopping: Reduce Populate() calls from drag events for lists view  
+- Remove compatibility code for old SetElementInitializer calls  
+- [Fixes #1266] Selling: Skip button in price warning popup when posting  
+- Mainline: Selling: Fix time left period for item search results  

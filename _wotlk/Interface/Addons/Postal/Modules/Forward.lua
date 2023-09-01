@@ -64,7 +64,7 @@ local function FreeBagSpace()
 	local FreeSpace = 0
 	for bagID = 0, 4, 1 do
 		local numberOfFreeSlots, bagType
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			numberOfFreeSlots, bagType = GetContainerNumFreeSlots(bagID)
 		else
 			numberOfFreeSlots, bagType = C_Container.GetContainerNumFreeSlots(bagID)
@@ -155,7 +155,7 @@ function Postal_Forward_ForwardMailItems(action)
 	if action == 2 then
 		Postal_Forward:UnregisterEvent("BAG_UPDATE_DELAYED","Postal_Forward_ForwardMailItemsEvent")
 		bagID, itemIndex = Postal_Inventory_Change(2)
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			PickupContainerItem(bagID, itemIndex)
 		else
 			C_Container.PickupContainerItem(bagID, itemIndex)

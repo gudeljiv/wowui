@@ -24,7 +24,7 @@ local strlowerCache = TMW.strlowerCache
 local huge = math.huge
 local empty = {}
 
-local UnitAura = UnitAura
+local UnitAura = TMW.UnitAura
 local GetAuras = TMW.COMMON.Auras and TMW.COMMON.Auras.GetAuras
 
 function Env.AuraStacks(unit, name, filter)
@@ -268,7 +268,7 @@ function Env.AuraTooltipNumber(...)
 			local index = 0
 		    Parser:SetOwner(UIParent, "ANCHOR_NONE")
 		    Parser:SetUnitAura(unit, n, filter)
-			local text = (TMW.isRetail and LT1 or LT2):GetText() or ""
+			local text = LT2:GetText() or ""
 			Parser:Hide()
 
 			local number
@@ -324,16 +324,7 @@ function Env.AuraTooltipNumberPacked(unit, name, kindKey, onlyMine, requestedInd
 
 				local data = C_TooltipInfo[kindKey == "isHelpful" and "GetUnitBuffByAuraInstanceID" or "GetUnitDebuffByAuraInstanceID"](unit, auraInstanceID)
 				
-				local text
-				-- Only look at the second line (first line after the title):
-				-- (third line is the duration)
-				for _, arg in pairs(data.lines[2].args) do
-					if arg.field == "leftText" then
-						text = arg.stringVal
-						break
-					end
-				end
-
+				local text = data.lines[2].leftText
 				instance.tmwTooltipNumbers = {}
 				local index = 0
 				local number
@@ -537,7 +528,7 @@ ConditionCategory:RegisterCondition(4,	 "BUFFTOOLTIP", {
 	end,
 	icon = "Interface\\Icons\\inv_elemental_primal_mana",
 	tcoords = CNDT.COMMON.standardtcoords,
-	hidden = TMW.isWrath,
+	hidden = not TMW.isRetail,
 	funcstr = function(c)
 		if CanUsePackedAuras(c) then
 			return [[AuraVariableNumberPacked(c.Unit, c.Spells.First, "isHelpful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]
@@ -563,7 +554,7 @@ for i = 1, 3 do -- BUFFTOOLTIPSCAN
 		check = function(check)
 			check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 		end,
-		icon = TMW.isWrath and "Interface\\Icons\\spell_ice_lament" or "Interface\\Icons\\ability_priest_clarityofwill",
+		icon = not TMW.isRetail and "Interface\\Icons\\spell_ice_lament" or "Interface\\Icons\\ability_priest_clarityofwill",
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = function(c)
 			if CanUsePackedAuras(c) then
@@ -706,7 +697,7 @@ ConditionCategory:RegisterCondition(12.5,"DEBUFFPERC", {
 		check:SetTexts(L["ONLYCHECKMINE"], L["ONLYCHECKMINE_DESC"])
 	end,
 	formatter = TMW.C.Formatter.PERCENT,
-	icon = TMW.isWrath and "Interface\\Icons\\ability_rogue_dualweild" or "Interface\\Icons\\spell_priest_voidshift",
+	icon = not TMW.isRetail and "Interface\\Icons\\ability_rogue_dualweild" or "Interface\\Icons\\spell_priest_voidshift",
 	tcoords = CNDT.COMMON.standardtcoords,
 	funcstr = function(c)
 		if CanUsePackedAuras(c) then
@@ -804,7 +795,7 @@ ConditionCategory:RegisterCondition(14,	 "DEBUFFTOOLTIP", {
 	end,
 	icon = "Interface\\Icons\\spell_shadow_lifedrain",
 	tcoords = CNDT.COMMON.standardtcoords,
-	hidden = TMW.isWrath,
+	hidden = not TMW.isRetail,
 	funcstr = function(c)
 		if CanUsePackedAuras(c) then
 			return [[AuraVariableNumberPacked(c.Unit, c.Spells.First, "isHarmful", ]] .. (tostring(c.Checked)) .. [[) c.Operator c.Level]]

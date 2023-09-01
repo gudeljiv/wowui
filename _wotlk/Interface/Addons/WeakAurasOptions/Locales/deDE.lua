@@ -21,6 +21,10 @@ local L = WeakAuras.L
 	L["%d |4aura:auras; modified"] = "%d |4aura:auras; modified"
 	L["%i auras selected"] = "%i Auren ausgew\\195\\164hlt"
 	--[[Translation missing --]]
+	L["%i."] = "%i."
+	--[[Translation missing --]]
+	L["%i. %s"] = "%i. %s"
+	--[[Translation missing --]]
 	L["%s - %i. Trigger"] = "%s - %i. Trigger"
 	--[[Translation missing --]]
 	L["%s - Alpha Animation"] = "%s - Alpha Animation"
@@ -115,6 +119,8 @@ local L = WeakAuras.L
 	L["%s, Offset: %0.2f;%0.2f"] = "%s, Offset: %0.2f;%0.2f"
 	--[[Translation missing --]]
 	L["%s, offset: %0.2f;%0.2f"] = "%s, offset: %0.2f;%0.2f"
+	--[[Translation missing --]]
+	L["%s, Start Animation"] = "%s, Start Animation"
 	--[[Translation missing --]]
 	L["%s|cFFFF0000custom|r texture with |cFFFF0000%s|r blend mode%s%s"] = "%s|cFFFF0000custom|r texture with |cFFFF0000%s|r blend mode%s%s"
 	L["(Right click to rename)"] = "(Rechtsklick zum Umbenennen)"
@@ -225,11 +231,12 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["Anchored To"] = "Angeheftet an"
 	L["And "] = "Und"
 	L["and"] = "und"
+	--[[Translation missing --]]
+	L["and %s"] = "and %s"
 	L["and aligned left"] = "und links ausgerichtet"
 	L["and aligned right"] = "und rechts ausgerichtet"
 	L["and rotated left"] = "und nach links gedreht"
 	L["and rotated right"] = "und nach rechts gedreht"
-	L["and Trigger %s"] = "und Auslöser %s"
 	--[[Translation missing --]]
 	L["and with width |cFFFF0000%s|r and %s"] = "and with width |cFFFF0000%s|r and %s"
 	L["Angle"] = "Winkel"
@@ -258,6 +265,8 @@ Falls die Dauer der Animation auf |cFF00CC0010%|r gesetzt wurde und für die Anz
 	--[[Translation missing --]]
 	L["At a position a bit left of Right HUD position"] = "At a position a bit left of Right HUD position"
 	L["At the same position as Blizzard's spell alert"] = "An der Position von Blizzards Zauberwarnmeldung"
+	--[[Translation missing --]]
+	L["Aura"] = "Aura"
 	--[[Translation missing --]]
 	L[ [=[Aura is
 Off Screen]=] ] = [=[Aura is
@@ -379,7 +388,6 @@ Off Screen]=]
 	--[[Translation missing --]]
 	L["Compatibility Options"] = "Compatibility Options"
 	L["Compress"] = "Stauchen"
-	L["Condition %i"] = "Bedingung %i"
 	L["Conditions"] = "Bedingungen"
 	--[[Translation missing --]]
 	L["Configure what options appear on this panel."] = "Configure what options appear on this panel."
@@ -449,7 +457,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Custom Variables"] = "Custom Variables"
 	L["Debuff Type"] = "Debufftyp"
 	--[[Translation missing --]]
-	L["Debug Console"] = "Debug Console"
+	L["Debug Log"] = "Debug Log"
 	--[[Translation missing --]]
 	L["Debug Log:"] = "Debug Log:"
 	L["Default"] = "Standard"
@@ -477,12 +485,16 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Distribute Vertically"] = "Vertikal verteilen"
 	L["Do not group this display"] = "Diese Anzeige nicht kopieren"
 	--[[Translation missing --]]
-	L["Do you want to ignore all future updates for this aura"] = "Do you want to ignore all future updates for this aura"
+	L["Do you want to enable updates for this aura"] = "Do you want to enable updates for this aura"
+	--[[Translation missing --]]
+	L["Do you want to ignore updates for this aura"] = "Do you want to ignore updates for this aura"
 	L["Documentation"] = "Dokumentation"
 	L["Done"] = "Fertig"
 	L["Drag to move"] = "Ziehen, um diese Anzeige zu verschieben"
 	L["Duplicate"] = "Duplizieren"
 	L["Duplicate All"] = "Alle duplizieren"
+	--[[Translation missing --]]
+	L["Duration"] = "Duration"
 	L["Duration (s)"] = "Dauer (s)"
 	L["Duration Info"] = "Dauerinformationen"
 	--[[Translation missing --]]
@@ -511,7 +523,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	--[[Translation missing --]]
 	L["Else If"] = "Else If"
 	--[[Translation missing --]]
-	L["Else If Trigger %s"] = "Else If Trigger %s"
+	L["Else If %s"] = "Else If %s"
 	--[[Translation missing --]]
 	L["Enable \"Edge\" part of the overlay"] = "Enable \"Edge\" part of the overlay"
 	--[[Translation missing --]]
@@ -644,8 +656,6 @@ Can use \ to escape -.]=]
 	L["Frequency"] = "Häufigkeit"
 	--[[Translation missing --]]
 	L["Full Circle"] = "Full Circle"
-	--[[Translation missing --]]
-	L["Get Help"] = "Get Help"
 	L["Global Conditions"] = "Globale Bedingungen"
 	L["Glow %s"] = "Leuchten %s"
 	L["Glow Action"] = "Leuchtaktion"
@@ -729,12 +739,16 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["Icon Info"] = "Symbolinfo"
 	L["Icon Inset"] = "Symboleinrückung"
 	--[[Translation missing --]]
+	L["Icon Picker"] = "Icon Picker"
+	--[[Translation missing --]]
 	L["Icon Position"] = "Icon Position"
 	--[[Translation missing --]]
 	L["Icon Settings"] = "Icon Settings"
 	--[[Translation missing --]]
 	L["Icon Source"] = "Icon Source"
 	L["If"] = "Falls"
+	--[[Translation missing --]]
+	L["If %s"] = "If %s"
 	--[[Translation missing --]]
 	L["If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."] = "If checked, then the user will see a multi line edit box. This is useful for inputting large amounts of text."
 	--[[Translation missing --]]
@@ -749,7 +763,6 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["If checked, then this separator will not merge with other separators when selecting multiple auras."] = "If checked, then this separator will not merge with other separators when selecting multiple auras."
 	--[[Translation missing --]]
 	L["If checked, then this space will span across multiple lines."] = "If checked, then this space will span across multiple lines."
-	L["If Trigger %s"] = "Falls Auslöser %s"
 	--[[Translation missing --]]
 	L["If unchecked, then a default color will be used (usually yellow)"] = "If unchecked, then a default color will be used (usually yellow)"
 	--[[Translation missing --]]
@@ -764,6 +777,8 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["Ignore Self"] = "Ignore Self"
 	--[[Translation missing --]]
 	L["Ignore updates"] = "Ignore updates"
+	--[[Translation missing --]]
+	L["Ignore Wago updates"] = "Ignore Wago updates"
 	L["Ignored"] = "Ignoriert"
 	--[[Translation missing --]]
 	L["Ignored Aura Name"] = "Ignored Aura Name"
@@ -774,6 +789,8 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	--[[Translation missing --]]
 	L["Ignored Spell ID"] = "Ignored Spell ID"
 	L["Import"] = "Importieren"
+	--[[Translation missing --]]
+	L["Import / Export"] = "Import / Export"
 	L["Import a display from an encoded string"] = "Anzeige von Klartext importieren"
 	--[[Translation missing --]]
 	L["Import as Copy"] = "Import as Copy"
@@ -822,6 +839,8 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["Is Stealable"] = "Ist stehlbar"
 	--[[Translation missing --]]
 	L["Is Unit"] = "Is Unit"
+	--[[Translation missing --]]
+	L["Join Discord"] = "Join Discord"
 	L["Justify"] = "Ausrichten"
 	--[[Translation missing --]]
 	L["Keep Aspect Ratio"] = "Keep Aspect Ratio"
@@ -838,6 +857,8 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	--[[Translation missing --]]
 	L["Length of |cFFFF0000%s|r"] = "Length of |cFFFF0000%s|r"
 	L["Limit"] = "Limit"
+	--[[Translation missing --]]
+	L["Line"] = "Line"
 	--[[Translation missing --]]
 	L["Lines & Particles"] = "Lines & Particles"
 	--[[Translation missing --]]
@@ -873,6 +894,8 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["Model"] = "Modell"
 	--[[Translation missing --]]
 	L["Model %s"] = "Model %s"
+	--[[Translation missing --]]
+	L["Model Picker"] = "Model Picker"
 	--[[Translation missing --]]
 	L["Model Settings"] = "Model Settings"
 	--[[Translation missing --]]
@@ -913,6 +936,8 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Nameplates"] = "Nameplates"
 	L["Negator"] = "Nicht"
 	L["New Aura"] = "Neue Aura"
+	--[[Translation missing --]]
+	L["New Template"] = "New Template"
 	L["New Value"] = "Neuer Wert"
 	L["No Children"] = "Keine Kinder"
 	--[[Translation missing --]]
@@ -929,7 +954,7 @@ Nur ein Wert kann ausgewählt werden.]=]
 	--[[Translation missing --]]
 	L["Number of Entries"] = "Number of Entries"
 	--[[Translation missing --]]
-	L[ [=[Occurence of the event, reset when aura is unloaded
+	L[ [=[Occurrence of the event, reset when aura is unloaded
 Can be a range of values
 Can have multiple values separated by a comma or a space
 
@@ -938,7 +963,7 @@ Examples:
 2nd to 6th: 2-6
 every 2 events: /2
 every 3 events starting from 2nd: 2/3
-every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[Occurence of the event, reset when aura is unloaded
+every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[Occurrence of the event, reset when aura is unloaded
 Can be a range of values
 Can have multiple values separated by a comma or a space
 
@@ -949,12 +974,16 @@ every 2 events: /2
 every 3 events starting from 2nd: 2/3
 every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	--[[Translation missing --]]
+	L["OFF"] = "OFF"
+	--[[Translation missing --]]
 	L["Offer a guided way to create auras for your character"] = "Offer a guided way to create auras for your character"
 	--[[Translation missing --]]
 	L["Offset by |cFFFF0000%s|r/|cFFFF0000%s|r"] = "Offset by |cFFFF0000%s|r/|cFFFF0000%s|r"
 	--[[Translation missing --]]
 	L["Offset by 1px"] = "Offset by 1px"
 	L["Okay"] = "Okey"
+	--[[Translation missing --]]
+	L["ON"] = "ON"
 	L["On Hide"] = "Beim Ausblenden"
 	L["On Init"] = "Beim Initialisieren"
 	L["On Show"] = "Beim Einblenden"
@@ -975,7 +1004,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Options will open after combat ends."] = "Options will open after combat ends."
 	L["or"] = "oder"
 	--[[Translation missing --]]
-	L["or Trigger %s"] = "or Trigger %s"
+	L["or %s"] = "or %s"
 	L["Orange Rune"] = "Orange Rune"
 	L["Orientation"] = "Orientierung"
 	--[[Translation missing --]]
@@ -1092,7 +1121,6 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	--[[Translation missing --]]
 	L["Saved Data"] = "Saved Data"
 	L["Scale"] = "Skalierung"
-	L["Search"] = "Suchen"
 	--[[Translation missing --]]
 	L["Select Talent"] = "Select Talent"
 	L["Select the auras you always want to be listed first"] = "Wähle die Auren aus, die immer an oberster Stelle angezeigt werden sollen"
@@ -1206,6 +1234,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Start"] = "Start"
 	L["Start Angle"] = "Startwinkel"
 	--[[Translation missing --]]
+	L["Start Animation"] = "Start Animation"
+	--[[Translation missing --]]
 	L["Start Collapsed"] = "Start Collapsed"
 	--[[Translation missing --]]
 	L["Start of %s"] = "Start of %s"
@@ -1231,6 +1261,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Texture"] = "Textur"
 	L["Texture Info"] = "Texturinfo"
 	--[[Translation missing --]]
+	L["Texture Picker"] = "Texture Picker"
+	--[[Translation missing --]]
 	L["Texture Rotation"] = "Texture Rotation"
 	--[[Translation missing --]]
 	L["Texture Settings"] = "Texture Settings"
@@ -1255,7 +1287,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	--[[Translation missing --]]
 	L["This adds %role, %roleIcon as text replacements. Does nothing if the unit is not a group member."] = "This adds %role, %roleIcon as text replacements. Does nothing if the unit is not a group member."
 	--[[Translation missing --]]
-	L["This adds %tooltip, %tooltip1, %tooltip2, %tooltip3 as text replacements and also allows filtering based on the tooltip content/values."] = "This adds %tooltip, %tooltip1, %tooltip2, %tooltip3 as text replacements and also allows filtering based on the tooltip content/values."
+	L["This adds %tooltip, %tooltip1, %tooltip2, %tooltip3 and %tooltip4 as text replacements and also allows filtering based on the tooltip content/values."] = "This adds %tooltip, %tooltip1, %tooltip2, %tooltip3 and %tooltip4 as text replacements and also allows filtering based on the tooltip content/values."
 	--[[Translation missing --]]
 	L[ [=[This aura contains custom Lua code.
 Make sure you can trust the person who sent it!]=] ] = [=[This aura contains custom Lua code.
@@ -1315,8 +1347,10 @@ It might not work correctly with your version!]=]
 	--[[Translation missing --]]
 	L["Total Time"] = "Total Time"
 	L["Trigger"] = "Auslöser"
-	L["Trigger %d"] = "Auslöser %d"
-	L["Trigger %s"] = "Auslöser %s"
+	--[[Translation missing --]]
+	L["Trigger %i"] = "Trigger %i"
+	--[[Translation missing --]]
+	L["Trigger %i: %s"] = "Trigger %i: %s"
 	--[[Translation missing --]]
 	L["Trigger Combination"] = "Trigger Combination"
 	L["True"] = "Wahr"
@@ -1394,15 +1428,20 @@ It might not work correctly with your version!]=]
 	L["Y Rotation"] = "Y-Rotation"
 	L["Y Scale"] = "Skalierung (Y)"
 	L["Yellow Rune"] = "Gelbe Rune"
-	L["Yes"] = "Ja"
+	L["Y-Offset"] = "Y-Versatz"
 	--[[Translation missing --]]
 	L["y-Offset"] = "y-Offset"
-	L["Y-Offset"] = "Y-Versatz"
 	--[[Translation missing --]]
 	L["You already have this group/aura. Importing will create a duplicate."] = "You already have this group/aura. Importing will create a duplicate."
 	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "Du bist im Begriff %d Aura/Auren zu löschen. |cFFFF0000Das Löschen kann nicht rückgängig gemacht werden!|r Willst du fortfahren?"
 	--[[Translation missing --]]
 	L["You are about to delete a trigger. |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "You are about to delete a trigger. |cFFFF0000This cannot be undone!|r Would you like to continue?"
+	--[[Translation missing --]]
+	L[ [=[You can add a comma-separated list of state values here that (when changed) WeakAuras should also run the Anchor Code on.
+
+WeakAuras will always run custom anchor code if you include 'changed' in this list, or when a region is added, removed, or re-ordered.]=] ] = [=[You can add a comma-separated list of state values here that (when changed) WeakAuras should also run the Anchor Code on.
+
+WeakAuras will always run custom anchor code if you include 'changed' in this list, or when a region is added, removed, or re-ordered.]=]
 	--[[Translation missing --]]
 	L[ [=[You can add a comma-separated list of state values here that (when changed) WeakAuras should also run the Grow Code on.
 

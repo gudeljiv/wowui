@@ -1,0 +1,4 @@
+VER 3 0000000001000001 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Lesser Heal
+END

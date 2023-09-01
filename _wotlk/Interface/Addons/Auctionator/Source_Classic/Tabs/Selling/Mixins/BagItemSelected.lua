@@ -1,5 +1,12 @@
 AuctionatorBagItemSelectedMixin = CreateFromMixins(AuctionatorBagItemMixin)
 
+function AuctionatorBagItemSelectedMixin:SetItemInfo(info, ...)
+  AuctionatorBagItemMixin.SetItemInfo(self, info, ...)
+  self.IconSelectedHighlight:Hide()
+  self.IconBorder:SetShown(info ~= nil)
+  self.Icon:SetAlpha(1)
+end
+
 local seenBag, seenSlot
 
 function AuctionatorBagItemSelectedMixin:OnClick(button)
@@ -62,8 +69,8 @@ function AuctionatorBagItemSelectedMixin:ProcessCursor()
     return true
   end
 
+  Auctionator.Selling.ShowCannotSellReason(itemInfo.location)
   Auctionator.Debug.Message("AuctionatorBagItemSelected", "err")
-  UIErrorsFrame:AddMessage(ERR_AUCTION_BOUND_ITEM, 1.0, 0.1, 0.1, 1.0)
   return false
 end
 

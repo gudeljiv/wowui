@@ -1,7 +1,7 @@
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	local _detalhes = _G._detalhes
+	local _detalhes = _G.Details
 	local Loc = LibStub("AceLocale-3.0"):GetLocale ( "Details" )
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@
 	function _detalhes:UpdateSolo()
 		local SoloInstance = _detalhes.tabela_instancias[_detalhes.solo]
 		_detalhes.SoloTables.CombatIDLast = _detalhes.SoloTables.CombatID
-		_detalhes.SoloTables.CombatID = _detalhes:NumeroCombate()
+		_detalhes.SoloTables.CombatID = _detalhes:GetOrSetCombatId()
 		_detalhes.SoloTables.Attribute = SoloInstance.atributo
 	end
 

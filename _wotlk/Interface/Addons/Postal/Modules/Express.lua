@@ -156,7 +156,7 @@ end
 function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, button)
 	if button == "LeftButton" and IsAltKeyDown() and SendMailFrame:IsVisible() and not CursorHasItem() then
 		local texture, count
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			texture = select(1, GetContainerItemInfo(bag, slot))
 			count = select(2, GetContainerItemInfo(bag, slot))
 		else
@@ -169,7 +169,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 				count = 0
 			end
 		end
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			PickupContainerItem(bag, slot)
 		else
 			C_Container.PickupContainerItem(bag, slot)
@@ -193,7 +193,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 		end
 		if not itemid then return end
 		local itemlocked
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			itemlocked = select(3, GetContainerItemInfo(bag,slot))
 		else
 			if C_Container and C_Container.GetContainerItemInfo(bag,slot) then
@@ -220,7 +220,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 				end
 				for b = 0,bmax do
 					local numberOfSlots
-					if Postal.WOWClassic or Postal.WOWBCClassic then
+					if Postal.WOWBCClassic then
 						numberOfSlots = GetContainerNumSlots(b)
 					else
 						numberOfSlots = C_Container.GetContainerNumSlots(b)
@@ -233,7 +233,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 							tid = C_Container.GetContainerItemID(b, s)
 						end
 						local itemlocked2
-						if Postal.WOWClassic or Postal.WOWBCClassic then
+						if Postal.WOWBCClassic then
 							itemlocked2 = select(3, GetContainerItemInfo(b,s))
 						else
 							if C_Container and C_Container.GetContainerItemInfo(b,s) then
@@ -258,14 +258,14 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 							or (pass == 4 and tq == itemq)   -- same quality
 							then
 								ClearCursor()
-								if Postal.WOWClassic or Postal.WOWBCClassic then
+								if Postal.WOWBCClassic then
 									PickupContainerItem(b, s)
 								else
 									C_Container.PickupContainerItem(b, s)
 								end
 								ClickSendMailItemButton()
 								local itemlocked3
-								if Postal.WOWClassic or Postal.WOWBCClassic then
+								if Postal.WOWBCClassic then
 									itemlocked3 = select(3, GetContainerItemInfo(b,s))
 								else
 									if C_Container and C_Container.GetContainerItemInfo(b,s) then

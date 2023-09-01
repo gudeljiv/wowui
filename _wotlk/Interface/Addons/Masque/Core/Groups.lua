@@ -61,6 +61,7 @@ local function NewGroup(ID, Addon, Group, StaticID)
 		Addon = Addon,
 		Group = Group,
 		Buttons = {},
+		Callbacks = {},
 		SubList = (not Group and {}) or nil,
 		StaticID = (Group and StaticID) or nil,
 	}
@@ -98,17 +99,6 @@ end
 Core.GetID = GetID
 Core.Groups = Groups
 Core.GetGroup = GetGroup
-
--- Cleans the database.
-function Core.CleanDB()
-	local db = Core.db.profile.Groups
-
-	for ID in pairs(db) do
-		if not Groups[ID] then
-			db[ID] = nil
-		end
-	end
-end
 
 ----------------------------------------
 -- API

@@ -1,11 +1,14 @@
 --@curseforge-project-slug: libspecialization@
 if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then return end
 
-local LS, oldminor = LibStub:NewLibrary("LibSpecialization", 4)
+local LS, oldminor = LibStub:NewLibrary("LibSpecialization", 6)
 if not LS then return end -- No upgrade needed
 
+LS.callbackMap = LS.callbackMap or {}
+LS.frame = LS.frame or CreateFrame("Frame")
+
 -- Positions of roles
-LS.positionTable = LS.positionTable or {
+local positionTable = {
 	-- Death Knight
 	[250] = "MELEE", -- Blood (Tank)
 	[251] = "MELEE", -- Frost (DPS)
@@ -21,6 +24,7 @@ LS.positionTable = LS.positionTable or {
 	-- Evoker
 	[1467] = "RANGED", -- Devastation (DPS)
 	[1468] = "RANGED", -- Preservation (Heal)
+	[1473] = "RANGED", -- Augmentation (DPS)
 	-- Hunter
 	[253] = "RANGED", -- Beast Mastery
 	[254] = "RANGED", -- Marksmanship
@@ -59,7 +63,7 @@ LS.positionTable = LS.positionTable or {
 	[73] = "MELEE", -- Protection (Tank)
 }
 -- Player roles
-LS.roleTable = LS.roleTable or {
+local roleTable = {
 	-- Death Knight
 	[250] = "TANK", -- Blood (Tank)
 	[251] = "DAMAGER", -- Frost (DPS)
@@ -75,6 +79,7 @@ LS.roleTable = LS.roleTable or {
 	-- Evoker
 	[1467] = "DAMAGER", -- Devastation (DPS)
 	[1468] = "HEALER", -- Preservation (Heal)
+	[1473] = "DAMAGER", -- Augmentation (DPS)
 	-- Hunter
 	[253] = "DAMAGER", -- Beast Mastery
 	[254] = "DAMAGER", -- Marksmanship
@@ -112,14 +117,7 @@ LS.roleTable = LS.roleTable or {
 	[72] = "DAMAGER", -- Fury (DPS)
 	[73] = "TANK", -- Protection (Tank)
 }
-LS.callbackMap = LS.callbackMap or {}
-LS.frame = LS.frame or CreateFrame("Frame")
-
-local callbackMap = LS.callbackMap
-local positionTable = LS.positionTable
-local roleTable = LS.roleTable
-local frame = LS.frame
-
+-- Starter specs
 local starterSpecs = {
 	[1444] = true, -- Shaman
 	[1446] = true, -- Warrior
@@ -136,8 +134,11 @@ local starterSpecs = {
 	[1465] = true, -- Evoker
 }
 
+local callbackMap = LS.callbackMap
+local frame = LS.frame
+
 local next, type, error, tonumber, format = next, type, error, tonumber, string.format
-local Ambiguate, geterrorhandler, GetTime, IsInGroup = Ambiguate, geterrorhandler, GetTime, IsInGroup
+local Ambiguate, GetTime, IsInGroup = Ambiguate, GetTime, IsInGroup
 local GetSpecialization, GetSpecializationInfo = GetSpecialization, GetSpecializationInfo
 local SendAddonMessage, CTimerAfter = C_ChatInfo.SendAddonMessage, C_Timer.After
 local pName = UnitName("player")
@@ -244,7 +245,7 @@ function LS:MySpecialization()
 			if position then
 				return specId, role, position
 			elseif not starterSpecs[specId] then
-				geterrorhandler()(format("LibSpecialization: Unknown specId %q", specId))
+				error(format("LibSpecialization: Unknown specId %q", specId))
 			end
 		end
 	end

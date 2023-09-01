@@ -530,6 +530,14 @@ NIT.options = {
 			get = "getInstanceStatsOutputRep",
 			set = "setInstanceStatsOutputRep",
 		},
+		instanceStatsOutputHK = {
+			type = "toggle",
+			name = L["instanceStatsOutputHKTitle"],
+			desc = L["instanceStatsOutputHKDesc"],
+			order = 88,
+			get = "getInstanceStatsOutputHK",
+			set = "setInstanceStatsOutputHK",
+		},
 		trimDataHeader = {
 			type = "header",
 			name = L["trimDataHeaderDesc"],
@@ -645,6 +653,7 @@ NIT.optionDefaults = {
 		instanceStatsOutputGold = true,
 		instanceStatsOutputAverageGroupLevel = false,
 		instanceStatsOutputRep = true,
+		instanceStatsOutputHK = true,
 		instanceStatsOutputXpPerHour = true,
 		lastVersionMsg = 0,
 		moneyString = "textures",
@@ -1046,6 +1055,15 @@ end
 
 function NIT:getInstanceStatsOutputRep(info)
 	return self.db.global.instanceStatsOutputRep;
+end
+
+--Honor kills stats output when exiting bg.
+function NIT:setInstanceStatsOutputHK(info, value)
+	self.db.global.instanceStatsOutputHK = value;
+end
+
+function NIT:getInstanceStatsOutputHK(info)
+	return self.db.global.instanceStatsOutputHK;
 end
 
 --Instance window dimensions.

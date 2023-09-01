@@ -508,7 +508,7 @@ if TMW.isRetail then
 	ConditionCategory:RegisterCondition(90.0 - offset, "INSANITY", {
 		text = INSANITY_POWER,
 		min = 0,
-		max = 100,
+		max = 150, -- 150 with talent Voidtouched
 		icon = "Interface\\Icons\\spell_shadow_painandsuffering",
 		tcoords = CNDT.COMMON.standardtcoords,
 		funcstr = ([[UnitPower("player", %d) c.Operator c.Level]]):format(Enum.PowerType.Insanity),
@@ -634,7 +634,7 @@ ConditionCategory:RegisterCondition(102.2, "DEFAULT_MAX", {
 	end,
 })
 
-offset = TMW.tContains({"PALADIN", "PRIEST", "SHAMAN", "MAGE", "WARLOCK", "DRUID", "MONK", TMW.isWrath and "HUNTER" or nil}, pclass) and S or 0
+offset = TMW.tContains({"PALADIN", "PRIEST", "SHAMAN", "MAGE", "WARLOCK", "DRUID", "MONK", not TMW.isRetail and "HUNTER" or nil}, pclass) and S or 0
 ConditionCategory:RegisterCondition(103.0 - offset, "MANA", {
 	text = MANA .. " - " .. L["CONDITIONPANEL_PERCENT"],
 	percent = true,

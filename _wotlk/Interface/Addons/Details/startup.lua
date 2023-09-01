@@ -15,6 +15,8 @@ function Details:StartMeUp()
 	end
 	Details.AndIWillNeverStop = true
 
+	--note: this runs after profile loaded
+
 	--set default time for arena and bg to be the Details! load time in case the client loads mid event
 	Details.lastArenaStartTime = GetTime()
 	Details.lastBattlegroundStartTime = GetTime()
@@ -25,6 +27,11 @@ function Details:StartMeUp()
 		return Details.AddOnStartTime or GetTime()
 	end
 
+	C_Timer.After(3, function()
+		--load custom spells on login
+		Details:FillUserCustomSpells()
+	end)
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --row single click, this determines what happen when the user click on a bar
 
@@ -34,7 +41,7 @@ function Details:StartMeUp()
 		--healing, hps, overheal, healing taken
 			Details.row_singleclick_overwrite[2] = {true, true, true, true, false, Details.atributo_heal.ReportSingleDamagePreventedLine}
 		--mana, rage, energy, runepower
-			Details.row_singleclick_overwrite[3] = {true, true, true, true}
+			Details.row_singleclick_overwrite[3] = {true, true, true, true} --missing other resources and alternate power
 		--cc breaks, ress, interrupts, dispells, deaths
 			Details.row_singleclick_overwrite[4] = {true, true, true, true, Details.atributo_misc.ReportSingleDeadLine, Details.atributo_misc.ReportSingleCooldownLine, Details.atributo_misc.ReportSingleBuffUptimeLine, Details.atributo_misc.ReportSingleDebuffUptimeLine}
 
@@ -80,7 +87,7 @@ function Details:StartMeUp()
 	if (Details.ocd_tracker.show_options) then
 		Details:InitializeCDTrackerWindow()
 	end
-
+	--/run Details.ocd_tracker.show_options = true; ReloadUI()
 	--custom window
 	Details.custom = Details.custom or {}
 
@@ -92,8 +99,8 @@ function Details:StartMeUp()
 	Details.MicroButtonAlert:Hide()
 
 	--actor details window
-	Details.playerDetailWindow = Details.gump:CriaJanelaInfo()
-	Details.FadeHandler.Fader(Details.playerDetailWindow, 1)
+	Details.BreakdownWindowFrame = Details:CreateBreakdownWindow()
+	Details.FadeHandler.Fader(Details.BreakdownWindowFrame, 1)
 
 	--copy and paste window
 	Details:CreateCopyPasteWindow()
@@ -106,7 +113,7 @@ function Details:StartMeUp()
 	Details:GetLowerInstanceNumber()
 
 	--start time machine
-	Details.timeMachine:TurnOn()
+	Details222.TimeMachine.Start()
 
 	--update abbreviation shortcut
 	Details.atributo_damage:UpdateSelectedToKFunction()
@@ -309,7 +316,7 @@ function Details:StartMeUp()
 		Details.AnnounceStartup = nil
 	end
 
-	Details.Schedules.NewTimer(5, Details.AnnounceStartup, Details)
+	Details.Schedules.NewTimer(4, Details.AnnounceStartup, Details)
 
 	if (Details.failed_to_load) then
 		Details.failed_to_load:Cancel()
@@ -341,6 +348,25 @@ function Details:StartMeUp()
 
 	--check is this is the first run of this version
 	if (Details.is_version_first_run) then
+		local breakdownData = Details.breakdown_spell_tab
+		if (breakdownData) then
+			local spellContainerHeaders = breakdownData.spellcontainer_headers
+			if (spellContainerHeaders) then
+				if (spellContainerHeaders.overheal) then
+					spellContainerHeaders.overheal.enabled = true
+					spellContainerHeaders.overheal.width = 70
+				end
+			end
+
+			local targetContainerHeaders = breakdownData.targetcontainer_headers
+			if (targetContainerHeaders) then
+				if (targetContainerHeaders.overheal) then
+					targetContainerHeaders.overheal.enabled = true
+					targetContainerHeaders.overheal.width = 70
+				end
+			end
+		end
+
 		local lowerInstanceId = Details:GetLowerInstanceNumber()
 		if (lowerInstanceId) then
 			lowerInstanceId = Details:GetInstance(lowerInstanceId)
@@ -412,7 +438,6 @@ function Details:StartMeUp()
 		--Details:OpenCustomDisplayWindow()
 		--Details:OpenWelcomeWindow()
 	end
-
 	Details.Schedules.NewTimer(2, Details.OpenOptionsWindowAtStart, Details)
 	--Details:OpenCustomDisplayWindow()
 
@@ -442,16 +467,18 @@ function Details:StartMeUp()
 	Details:LoadFramesForBroadcastTools()
 	Details:BrokerTick()
 
-	--build trinket data
+	---return the table where the trinket data is stored
+	---@return table<spellid, trinketdata>
 	function Details:GetTrinketData()
 		return Details.trinket_data
 	end
 
-	local customSpellList = Details:GetDefaultCustomSpellsList()
+	local customSpellList = Details:GetDefaultCustomItemList()
 	local trinketData = Details:GetTrinketData()
 	for spellId, trinketTable in pairs(customSpellList) do
 		if (trinketTable.isPassive) then
 			if (not trinketData[spellId]) then
+				---@type trinketdata
 				local thisTrinketData = {
 					itemName = C_Item.GetItemNameByID(trinketTable.itemId),
 					spellName = GetSpellInfo(spellId) or "spell not found",
@@ -483,8 +510,8 @@ function Details:StartMeUp()
 	--dailly reset of the cache for talents and specs
 	local today = date("%d")
 	if (Details.last_day ~= today) then
-		wipe(Details.cached_specs)
-		wipe(Details.cached_talents)
+		Details:Destroy(Details.cached_specs)
+		Details:Destroy(Details.cached_talents)
 	end
 
 	--get the player spec
@@ -493,7 +520,7 @@ function Details:StartMeUp()
 	--embed windows on the chat window
 	Details.chat_embed:CheckChatEmbed(true)
 
-	if (Details.player_details_window.skin ~= "ElvUI") then
+	if (Details.player_details_window.skin ~= "ElvUI") then --obsolete
 		local setDefaultSkinOnPlayerBreakdownWindow = function()
 			Details:ApplyPDWSkin("ElvUI")
 		end
@@ -524,7 +551,7 @@ function Details:StartMeUp()
 	if (not DetailsFramework.IsClassicWow()) then
 		--i'm not in classc wow
 	else
-		print("|CFFFFFF00[Details!]: you're using Details! for RETAIL on Classic WOW, please get the classic version (Details! Damage Meter Classic WoW), if you need help see our Discord (/details discord).")
+		--print("|CFFFFFF00[Details!]: you're using Details! for RETAIL on Classic WOW, please get the classic version (Details! Damage Meter Classic WoW), if you need help see our Discord (/details discord).")
 	end
 
 	Details:InstallHook("HOOK_DEATH", Details.Coach.Client.SendMyDeath)
@@ -541,12 +568,12 @@ function Details:StartMeUp()
 
 	if (GetExpansionLevel() == 9) then
 		if (not Details.data_wipes_exp["10"]) then
-			wipe(Details.encounter_spell_pool or {})
-			wipe(Details.boss_mods_timers or {})
-			wipe(Details.spell_school_cache or {})
-			wipe(Details.spell_pool or {})
-			wipe(Details.npcid_pool or {})
-			wipe(Details.current_exp_raid_encounters or {})
+			Details:Destroy(Details.encounter_spell_pool or {})
+			Details:Destroy(Details.boss_mods_timers or {})
+			Details:Destroy(Details.spell_school_cache or {})
+			Details:Destroy(Details.spell_pool or {})
+			Details:Destroy(Details.npcid_pool or {})
+			Details:Destroy(Details.current_exp_raid_encounters or {})
 			Details.data_wipes_exp["10"] = true
 		end
 	end
@@ -554,10 +581,14 @@ function Details:StartMeUp()
 	Details.boss_mods_timers.encounter_timers_dbm = Details.boss_mods_timers.encounter_timers_dbm or {}
 	Details.boss_mods_timers.encounter_timers_bw = Details.boss_mods_timers.encounter_timers_bw or {}
 
-	--clear overall data on new session
-	if (Details.overall_clear_logout) then
-		Details.tabela_overall = Details.combate:NovaTabela()
+	if (Details.time_type == 3 or not Details.time_type) then
+		Details.time_type = 2
 	end
+
+	--clear overall data on new session
+	--if (Details.overall_clear_logout) then --this is suppose to be in the load data file
+	--	Details.tabela_overall = Details.combate:NovaTabela()
+	--end
 
 	if (not DetailsFramework.IsTimewalkWoW()) then
 		--wipe overall on torghast - REMOVE ON 10.0
@@ -566,7 +597,7 @@ function Details:StartMeUp()
 		torghastTracker:SetScript("OnEvent", function(self, event, level, towerType)
 			if (level == 1) then
 				if (Details.overall_clear_newtorghast) then
-					Details.historico:resetar_overall()
+					Details.historico:ResetOverallData()
 					Details:Msg("overall data are now reset.") --localize-me
 				end
 			end
@@ -586,9 +617,13 @@ function Details:StartMeUp()
 		_G["UpdateAddOnMemoryUsage"] = Details.UpdateAddOnMemoryUsage_Custom
 	end
 
+	Details.InitializeSpellBreakdownTab()
+
 	pcall(Details222.EJCache.MakeCache)
 
 	pcall(Details222.ClassCache.MakeCache)
+
+	Details:BuildSpecsNameCache()
 
 	Details222.Cache.DoMaintenance()
 
@@ -597,7 +632,7 @@ function Details:StartMeUp()
 	end
 
 	if (DetailsFramework:IsNearlyEqual(Details.class_coords.ROGUE[4], 0.25)) then
-		DetailsFramework.table.copy(Details.class_coords, _detalhes.default_profile.class_coords)
+		DetailsFramework.table.copy(Details.class_coords, Details.default_profile.class_coords)
 	end
 
 	--shutdown the old OnDeathMenu

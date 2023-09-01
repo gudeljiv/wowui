@@ -2106,6 +2106,14 @@ else
     [5] = L["Rune #5"],
     [6] = L["Rune #6"]
   }
+  Private.essence_specific_types = {
+    [1] = L["Essence #1"],
+    [2] = L["Essence #2"],
+    [3] = L["Essence #3"],
+    [4] = L["Essence #4"],
+    [5] = L["Essence #5"],
+    [6] = L["Essence #6"]
+  }
 end
 
 Private.custom_trigger_types = {
@@ -2823,6 +2831,11 @@ Private.combat_event_type = {
   PLAYER_REGEN_DISABLED = L["Entering"]
 }
 
+Private.encounter_event_type = {
+  ENCOUNTER_END = L["Leaving"],
+  ENCOUNTER_START = L["Entering"]
+}
+
 Private.bool_types = {
   [0] = L["False"],
   [1] = L["True"]
@@ -3316,6 +3329,13 @@ Private.glow_types = {
   Pixel = L["Pixel Glow"],
   buttonOverlay = L["Action Button Glow"],
 }
+
+if WeakAuras.IsRetail() then
+  local build = select(4, GetBuildInfo())
+  if build >= 100105 then
+    Private.glow_types.Proc = L["Proc Glow"]
+  end
+end
 
 Private.font_sizes = {
   small = L["Small"],

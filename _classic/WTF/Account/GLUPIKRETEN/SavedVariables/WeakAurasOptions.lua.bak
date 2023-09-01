@@ -1,8 +1,20 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["spellCacheAchievements"] = true,
 	["savedSnippets"] = {
+	},
+	["spellCacheAchievements"] = true,
+	["spellCacheAchivements"] = true,
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.7.0",
+	["lockPositions"] = false,
+	["spellCacheStrings"] = true,
+	["frame"] = {
+		["xOffset"] = 1502.681823730469,
+		["width"] = 1032.918579101563,
+		["height"] = 1043.524291992188,
+		["yOffset"] = 1222.825561523438,
 	},
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
@@ -16356,7 +16368,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "21530=136235",
 		},
 		["Attack"] = {
-			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=135154,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825",
+			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=133052,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825",
 		},
 		["Swift Frostsaber"] = {
 			["spells"] = "23221=132267",
@@ -31275,17 +31287,5 @@ WeakAurasOptionsSaved = {
 			["spells"] = "18109=136235",
 		},
 	},
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.7.0",
-	["lockPositions"] = false,
-	["frame"] = {
-		["xOffset"] = 1882.998596191406,
-		["yOffset"] = 1290.761962890625,
-		["height"] = 1043.524291992188,
-		["width"] = 1032.918823242188,
-	},
-	["spellCacheAchivements"] = true,
-	["spellCacheStrings"] = true,
 	["build"] = "51146",
 }

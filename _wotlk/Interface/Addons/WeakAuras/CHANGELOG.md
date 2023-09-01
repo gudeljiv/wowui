@@ -1,30 +1,24 @@
-# [5.4.3](https://github.com/WeakAuras/WeakAuras2/tree/5.4.3) (2023-03-22)
+# [5.7.0](https://github.com/WeakAuras/WeakAuras2/tree/5.7.0) (2023-08-08)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.4.2...5.4.3)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.6.0...5.7.0)
 
 ## Highlights
 
-  
+ - New unified Boss Mod trigger that works with both DBM and BigWigs
+- Bug fixes and performance improvements :KEKW: 
 
 ## Commits
 
-InfusOnWoW (3):
+InfusOnWoW (5):
 
-- Fix regression in dynamic conditions
-- Tweak AuraBars once more
-- Tweak Unit Spellcast Succeded trigger
+- Trigger Player/Conditions Instance Size: Fix events
+- BT2: On GROUP_ROSTER_UPDATE do a full check
+- Block more chat frames/chat actions
+- Updated Holy Paladin Premade auras
+- BT2: Handle UNIT_TARGETABLE_CHANGED
 
-Stanzilla (1):
+mrbuds (2):
 
-- Update TOC for Retail Patch 10.0.7
-
-emptyrivers (1):
-
-- decrement nameSource on deleting subOption that precedes the name source
-
-mrbuds (3):
-
-- Unit Spellcast Succeded trigger: set %name / %n to spell's name
-- Aura Trigger: fix "Cast by a player character"  option (#4352)
-- Aura trigger: fix Lua error with new API (#4351)
+- New "Boss Mod" triggers working with both DBM & BigWigs (#4537)
+- Proc Glow: add more options in actions & external glow conditions, and fixes #4532
 

@@ -40,6 +40,7 @@ Reputation/Reputation.lua
 Addons/AdiBags.lua
 Addons/BISTooltip.lua
 Addons/ChocolateBar.lua
+Addons/Deathlog.lua
 Addons/ECS.lua
 Addons/GDKP.lua
 Addons/ItemRack.lua
@@ -73,12 +74,12 @@ Helpers/Chat.lua
 Helpers/DalaranAuctionHouse.lua
 Helpers/DamageFont.lua
 Helpers/ErrorsFilter.lua
-Helpers/FastLoot.lua
+# Helpers/FastLoot.lua
 Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
 Helpers/ShamanBlueColor.lua
-Helpers/SkinBuffs.lua
+# Helpers/SkinBuffs.lua
 Helpers/TooltipItemID.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua

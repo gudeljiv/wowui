@@ -193,6 +193,7 @@ NIT.companionCreatures = {
 	[194795] = "Fishspeaker Irtusk",
 	[32641] = "Drix Blackwrench", --Tundra mount.
 	[32642] = "Mojodishu", --Tundra mount.
+	[196534] = "Hoplet", --6 month sub.
 }
 
 NIT.critterCreatures = {

@@ -1,0 +1,84 @@
+VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast feign death
+/stopattack
+/stopcasting
+END
+VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@pet,dead] Revive Pet
+/cast [nopet] Call Pet
+/cast Mend Pet
+END
+VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Hunter's Mark
+END
+VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
+#showtooltip Serpent Sting
+/startattack
+/cast !Auto Shot
+/cast Serpent Sting
+END
+VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Rapid Fire
+/cast Blood Fury
+/cast Bestial Wrath
+/use 13
+/use 14
+END
+VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
+#showtooltip Multi-Shot
+/cast !Auto Shot
+/startattack
+/cast Multi-Shot
+END
+VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
+#showtooltip Arcane Shot
+/startattack
+/cast !Auto Shot
+/cast Arcane Shot
+END
+VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
+#showtooltip Explosive Shot
+/cast [nochanneling: volley] Explosive Shot
+END
+VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast Wing Clip
+END
+VER 3 000000000100000A " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Kill Command
+/cast Bestial Wrath
+END
+VER 3 000000000100000B " " "INV_Misc_QuestionMark"
+#showtooltip Kill Shot
+/stopcasting
+/cast [nochanneling: volley] Kill Shot
+END
+VER 3 000000000100000C " " "INV_Misc_QuestionMark"
+#showtooltip Steady Shot
+/cast Steady Shot
+END
+VER 3 000000000100000D " " "INV_Misc_QuestionMark"
+#showtooltip
+/dismount
+/petattack [@mouseover,exists,harm][]
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END
+VER 3 000000000100000E " " "INV_Misc_QuestionMark"
+#showtooltip 
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END
+VER 3 000000000100000F " " "INV_Misc_QuestionMark"
+#showtooltip
+/dismount
+/petfollow
+END
+VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
+#showtooltip 
+/cast [@pet,exists][]Volley
+END

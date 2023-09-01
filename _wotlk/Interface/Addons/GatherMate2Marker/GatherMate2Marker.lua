@@ -229,7 +229,7 @@ local aboutOptions = {
 		versionText = {
 			order = 4,
 			type = 'description',
-			name = '\r\nCurrent version: ' .. addonVersion,
+			name = '\r\nCurrent Addon version: ' .. addonVersion,
 			width = 'full',
 			fontSize = 'medium'
 		},

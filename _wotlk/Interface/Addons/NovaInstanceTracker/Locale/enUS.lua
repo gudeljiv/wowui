@@ -337,6 +337,9 @@ L["statsRep"] = "Rep:";
 L["instanceStatsOutputRepTitle"] = "Reputation Gained";
 L["instanceStatsOutputRepDesc"] = "Show how much repuation gained while inside the dungeon?";
 
+L["instanceStatsOutputHKTitle"] = "Honor Kills";
+L["instanceStatsOutputHKDesc"] = "Show how many honor kills gained while inside a battleground?";
+
 L["experiencePerHour"] = "XP/Hour";
 
 L["instanceStatsOutputXpPerHourTitle"] = "Show XP/Hour";
@@ -376,5 +379,8 @@ L["autoCavernsArthasTitle"] = "Auto CoS Arthas";
 L["autoCavernsArthasDesc"] = "Auto dialogue owith arthas in the Culling of Strathholme in Wrath.";
 
 L["Mythic Plus"] = "Mythic Plus";
+L["mythicPlusShort"] = "Mythic+";
 
 L["noCurrentRaidLockouts"] = "No current raid lockouts.";
+
+L["weeklyQuests"] = "Weekly Quests";

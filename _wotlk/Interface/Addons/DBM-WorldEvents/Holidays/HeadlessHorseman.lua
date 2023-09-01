@@ -1,7 +1,7 @@
-local mod	= DBM:NewMod("d285", "DBM-WorldEvents", 1)
+local mod	= DBM:NewMod("d285", "DBM-WorldEvents")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230521190609")
+mod:SetRevision("20230814030644")
 mod:SetCreatureID(23682, 23775)
 --mod:SetModelID(22351)--Model doesn't work/render for some reason.
 
@@ -14,7 +14,7 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 42380 42514",
-	"UNIT_SPELLCAST_SUCCEEDED target focus",
+	"UNIT_SPELLCAST_SUCCEEDED",
 	"CHAT_MSG_MONSTER_SAY",
 	"UNIT_DIED"
 )
@@ -59,7 +59,6 @@ end
 --Use syncing since these unit events require "target" or "focus" to detect.
 --At least someone in group should be targeting this stuff and sync it to those that aren't (like a healer)
 function mod:OnSync(event)
-	if not self:IsInCombat() then return end
 	if event == "HeadRepositions" then
 		warnHorsemanHead:Show()
 	elseif event == "BodyStage1" then

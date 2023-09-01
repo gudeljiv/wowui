@@ -72,8 +72,17 @@ function AuctionatorShoppingListMixin:InsertItem(newItem, index)
   self.manager:FireItemChangeEvent(self:GetName())
 end
 
+function AuctionatorShoppingListMixin:AppendItems(newItems)
+  for _, i in ipairs(newItems) do
+    assert(type(i) == "string")
+    table.insert(self.data.items, i)
+  end
+
+  self.manager:FireItemChangeEvent(self:GetName())
+end
+
 function AuctionatorShoppingListMixin:Sort()
-  table.sort(self.selectedList.items, function(a, b)
+  table.sort(self.data.items, function(a, b)
     return a:lower():gsub("\"", "") < b:lower():gsub("\"", "")
   end)
   self.manager:FireItemChangeEvent(self:GetName())

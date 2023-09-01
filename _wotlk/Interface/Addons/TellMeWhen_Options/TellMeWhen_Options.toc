@@ -1,8 +1,9 @@
-## Interface: 100005
+## Interface: 100105
 ## Title: TellMeWhen Options
 
 ## Author: Cybeloras of Aerie Peak
 ## Notes: Options and configuration for TellMeWhen
+## IconTexture: Interface\Addons\TellMeWhen\Textures\LDB Icon
 ## RequiredDeps: TellMeWhen
 ## LoadOnDemand: 1
 ## SavedVariables: TMWOptDB

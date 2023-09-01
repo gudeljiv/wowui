@@ -350,7 +350,7 @@ function Postal_Select:ProcessNext()
 				local free = 0
 				for bag = 0, NUM_BAG_SLOTS do
 					local bagFree, bagFam
-					if Postal.WOWClassic or Postal.WOWBCClassic then
+					if Postal.WOWBCClassic then
 						bagFree, bagFam = GetContainerNumFreeSlots(bag)
 					else
 						bagFree, bagFam = C_Container.GetContainerNumFreeSlots(bag)
@@ -378,14 +378,14 @@ function Postal_Select:ProcessNext()
 				if itemID and stackSize and GetItemCount(itemID) > 0 then
 					for bag = 0, NUM_BAG_SLOTS do
 						local ContainerNumSlots
-						if Postal.WOWClassic or Postal.WOWBCClassic then
+						if Postal.WOWBCClassic then
 							ContainerNumSlots = GetContainerNumSlots(bag)
 						else
 							ContainerNumSlots = C_Container.GetContainerNumSlots(bag)
 						end
 						for slot = 1, ContainerNumSlots do
 							local count2, link2
-							if Postal.WOWClassic or Postal.WOWBCClassic then
+							if Postal.WOWBCClassic then
 								count2 = select(2, GetContainerItemInfo(bag, slot))
 								link2 = select(7, GetContainerItemInfo(bag, slot))
 							else

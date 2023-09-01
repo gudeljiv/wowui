@@ -52,7 +52,7 @@ end
 --precisa converter um wipe em um trash segment? provavel que sim
 
 -- at the end of a mythic run, if enable on settings, merge all the segments from the mythic run into only one
-function DetailsMythicPlusFrame.MergeSegmentsOnEnd()
+function DetailsMythicPlusFrame.MergeSegmentsOnEnd() --~merge
     if (DetailsMythicPlusFrame.DevelopmentDebug) then
         print("Details!", "MergeSegmentsOnEnd() > starting to merge mythic segments.", "InCombatLockdown():", InCombatLockdown())
     end
@@ -64,7 +64,7 @@ function DetailsMythicPlusFrame.MergeSegmentsOnEnd()
 
     --get the current combat just created and the table with all past segments
     local newCombat = Details:GetCurrentCombat()
-    local segmentHistory = Details:GetCombatSegments()
+    local segmentsTable = Details:GetCombatSegments()
 
     local totalTime = 0
     local startDate, endDate = "", ""
@@ -73,14 +73,14 @@ function DetailsMythicPlusFrame.MergeSegmentsOnEnd()
 
     if (Details.mythic_plus.reverse_death_log) then
         for i = 1, 40 do --copy the deaths from the first segment to the last one
-            local thisCombat = segmentHistory[i]
+            local thisCombat = segmentsTable[i]
             if (thisCombat and thisCombat.is_mythic_dungeon_run_id == Details.mythic_dungeon_id) then
                 newCombat:CopyDeathsFrom(thisCombat, true)
             end
         end
     else
         for i = 40, 1, -1 do --copy the deaths from the last segment to the new segment
-            local thisCombat = segmentHistory[i]
+            local thisCombat = segmentsTable[i]
             if (thisCombat) then
                 if (thisCombat.is_mythic_dungeon_run_id == Details.mythic_dungeon_id) then
                     newCombat:CopyDeathsFrom(thisCombat, true)
@@ -91,9 +91,14 @@ function DetailsMythicPlusFrame.MergeSegmentsOnEnd()
 
     --add all boss segments from this run to this new segment
     for i = 1, 40 do --from the newer combat to the oldest
-        local thisCombat = segmentHistory[i]
+        local thisCombat = segmentsTable[i]
         if (thisCombat and thisCombat.is_mythic_dungeon_run_id == Details.mythic_dungeon_id) then
             local canAddThisSegment = true
+            if (Details.mythic_plus.make_overall_boss_only) then
+                if (not thisCombat.is_boss) then
+                    canAddThisSegment = false
+                end
+            end
 
             if (canAddThisSegment) then
                 newCombat = newCombat + thisCombat
@@ -153,10 +158,10 @@ function DetailsMythicPlusFrame.MergeSegmentsOnEnd()
     Details:SairDoCombate()
 
     --update all windows
-    Details:InstanciaCallFunction(Details.FadeHandler.Fader, "IN", nil, "barras")
-    Details:InstanciaCallFunction(Details.AtualizaSegmentos)
-    Details:InstanciaCallFunction(Details.AtualizaSoloMode_AfertReset)
-    Details:InstanciaCallFunction(Details.ResetaGump)
+    Details:InstanceCallDetailsFunc(Details.FadeHandler.Fader, "IN", nil, "barras")
+    Details:InstanceCallDetailsFunc(Details.UpdateCombatObjectInUse)
+    Details:InstanceCallDetailsFunc(Details.AtualizaSoloMode_AfertReset)
+    Details:InstanceCallDetailsFunc(Details.ResetaGump)
     Details:RefreshMainWindow(-1, true)
 
     if (DetailsMythicPlusFrame.DevelopmentDebug) then
@@ -246,15 +251,15 @@ function DetailsMythicPlusFrame.MergeTrashCleanup (isFromSchedule)
         newCombat:SetDate (startDate, endDate)
 
         if (DetailsMythicPlusFrame.DevelopmentDebug) then
-            print("Details!", "MergeTrashCleanup() > finished merging trash segments.", _detalhes.tabela_vigente, _detalhes.tabela_vigente.is_boss)
+            print("Details!", "MergeTrashCleanup() > finished merging trash segments.", Details.tabela_vigente, Details.tabela_vigente.is_boss)
         end
 
         --delete all segments that were merged
-        local segmentHistory = Details:GetCombatSegments()
-        for segmentId = #segmentHistory, 1, -1 do
-            local segment = segmentHistory[segmentId]
+        local segmentsTable = Details:GetCombatSegments()
+        for segmentId = #segmentsTable, 1, -1 do
+            local segment = segmentsTable[segmentId]
             if (segment and segment._trashoverallalreadyadded) then
-                tremove(segmentHistory, segmentId)
+                tremove(segmentsTable, segmentId)
             end
         end
 
@@ -266,10 +271,10 @@ function DetailsMythicPlusFrame.MergeTrashCleanup (isFromSchedule)
         Details:SendEvent("DETAILS_DATA_SEGMENTREMOVED")
 
         --update all windows
-        Details:InstanciaCallFunction(Details.FadeHandler.Fader, "IN", nil, "barras")
-        Details:InstanciaCallFunction(Details.AtualizaSegmentos)
-        Details:InstanciaCallFunction(Details.AtualizaSoloMode_AfertReset)
-        Details:InstanciaCallFunction(Details.ResetaGump)
+        Details:InstanceCallDetailsFunc(Details.FadeHandler.Fader, "IN", nil, "barras")
+        Details:InstanceCallDetailsFunc(Details.UpdateCombatObjectInUse)
+        Details:InstanceCallDetailsFunc(Details.AtualizaSoloMode_AfertReset)
+        Details:InstanceCallDetailsFunc(Details.ResetaGump)
         Details:RefreshMainWindow(-1, true)
     else
         Details222.MythicPlus.LogStep("MergeTrashCleanup | no segments to merge.")
@@ -337,16 +342,16 @@ function DetailsMythicPlusFrame.MergeRemainingTrashAfterAllBossesDone()
 
     --remove trash segments from the segment history after the merge
     local removedCurrentSegment = false
-    local segmentHistory = Details:GetCombatSegments()
+    local segmentsTable = Details:GetCombatSegments()
     for _, pastCombat in ipairs(segmentsToMerge) do
-        for i = #segmentHistory, 1, -1 do
-            local segment = segmentHistory [i]
+        for i = #segmentsTable, 1, -1 do
+            local segment = segmentsTable [i]
             if (segment == pastCombat) then
                 --remove the segment
-                if (_detalhes.tabela_vigente == segment) then
+                if (Details.tabela_vigente == segment) then
                     removedCurrentSegment = true
                 end
-                tremove(segmentHistory, i)
+                tremove(segmentsTable, i)
                 break
             end
         end
@@ -358,20 +363,20 @@ function DetailsMythicPlusFrame.MergeRemainingTrashAfterAllBossesDone()
 
     if (removedCurrentSegment) then
         --find another current segment
-        local segmentHistory = Details:GetCombatSegments()
-        _detalhes.tabela_vigente = segmentHistory [1]
+        local segmentsTable = Details:GetCombatSegments()
+        Details.tabela_vigente = segmentsTable [1]
 
-        if (not _detalhes.tabela_vigente) then
+        if (not Details.tabela_vigente) then
             --assuming there's no segment from the dungeon run
             Details:EntrarEmCombate()
             Details:SairDoCombate()
         end
 
         --update all windows
-        Details:InstanciaCallFunction(Details.FadeHandler.Fader, "IN", nil, "barras")
-        Details:InstanciaCallFunction(Details.AtualizaSegmentos)
-        Details:InstanciaCallFunction(Details.AtualizaSoloMode_AfertReset)
-        Details:InstanciaCallFunction(Details.ResetaGump)
+        Details:InstanceCallDetailsFunc(Details.FadeHandler.Fader, "IN", nil, "barras")
+        Details:InstanceCallDetailsFunc(Details.UpdateCombatObjectInUse)
+        Details:InstanceCallDetailsFunc(Details.AtualizaSoloMode_AfertReset)
+        Details:InstanceCallDetailsFunc(Details.ResetaGump)
         Details:RefreshMainWindow(-1, true)
     end
 
@@ -396,7 +401,7 @@ function DetailsMythicPlusFrame.BossDefeated(this_is_end_end, encounterID, encou
     local zoneName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceMapID, instanceGroupSize = GetInstanceInfo()
 
     --add the mythic dungeon info to the combat
-    _detalhes.tabela_vigente.is_mythic_dungeon = {
+    Details.tabela_vigente.is_mythic_dungeon = {
         StartedAt = Details.MythicPlus.StartedAt, --the start of the run
         EndedAt = time(), --when the boss got killed
         SegmentID = Details.MythicPlus.SegmentID, --segment number within the dungeon
@@ -411,20 +416,20 @@ function DetailsMythicPlusFrame.BossDefeated(this_is_end_end, encounterID, encou
     }
 
     local mythicLevel = C_ChallengeMode.GetActiveKeystoneInfo()
-    local mPlusTable = _detalhes.tabela_vigente.is_mythic_dungeon
+    local mPlusTable = Details.tabela_vigente.is_mythic_dungeon
     Details222.MythicPlus.LogStep("BossDefeated | key level: | " .. mythicLevel .. " | " .. (mPlusTable.EncounterName or "") .. " | " .. (mPlusTable.ZoneName or ""))
 
     --check if need to merge the trash for this boss
-    if (_detalhes.mythic_plus.merge_boss_trash and not Details.MythicPlus.IsRestoredState) then
+    if (Details.mythic_plus.merge_boss_trash and not Details.MythicPlus.IsRestoredState) then
         --store on an table all segments which should be merged
         local segmentsToMerge = DetailsMythicPlusFrame.TrashMergeScheduled or {}
 
         --table with all past semgnets
-        local segmentHistory = Details:GetCombatSegments()
+        local segmentsTable = Details:GetCombatSegments()
 
         --iterate among segments
         for i = 1, 25 do --from the newer combat to the oldest
-            local pastCombat = segmentHistory [i]
+            local pastCombat = segmentsTable [i]
             --does the combat exists
             if (pastCombat and not pastCombat._trashoverallalreadyadded and pastCombat.is_mythic_dungeon_trash) then
                 --is the combat a mythic segment from this run?
@@ -446,7 +451,7 @@ function DetailsMythicPlusFrame.BossDefeated(this_is_end_end, encounterID, encou
         segmentsToMerge.PreviousBossKilledAt = Details.MythicPlus.PreviousBossKilledAt
 
         --reduce this boss encounter time from the trash lenght time, since the boss doesn't count towards the time spent cleaning trash
-        segmentsToMerge.LastBossKilledAt = time() - _detalhes.tabela_vigente:GetCombatTime()
+        segmentsToMerge.LastBossKilledAt = time() - Details.tabela_vigente:GetCombatTime()
 
         DetailsMythicPlusFrame.TrashMergeScheduled = segmentsToMerge
 
@@ -477,7 +482,7 @@ function DetailsMythicPlusFrame.BossDefeated(this_is_end_end, encounterID, encou
         Details.MythicPlus.PreviousBossKilledAt = time()
 
         --update the saved table inside the profile
-        _detalhes:UpdateState_CurrentMythicDungeonRun (true, Details.MythicPlus.SegmentID, Details.MythicPlus.PreviousBossKilledAt)
+        Details:UpdateState_CurrentMythicDungeonRun (true, Details.MythicPlus.SegmentID, Details.MythicPlus.PreviousBossKilledAt)
     end
 end
 
@@ -505,7 +510,7 @@ function DetailsMythicPlusFrame.MythicDungeonFinished (fromZoneLeft)
         local segmentsToMerge = {}
 
         --check if there is trash segments after the last boss. need to merge these segments with the trash segment of the last boss
-        local bCanMergeBossTrash = _detalhes.mythic_plus.merge_boss_trash
+        local bCanMergeBossTrash = Details.mythic_plus.merge_boss_trash
         Details222.MythicPlus.LogStep("MythicDungeonFinished() | merge_boss_trash = " .. (bCanMergeBossTrash and "true" or "false"))
         if (bCanMergeBossTrash and not Details.MythicPlus.IsRestoredState and not fromZoneLeft) then
             --is the current combat not a boss fight?
@@ -517,10 +522,10 @@ function DetailsMythicPlusFrame.MythicDungeonFinished (fromZoneLeft)
                 end
 
                 --table with all past semgnets
-                local segmentHistory = Details:GetCombatSegments()
+                local segmentsTable = Details:GetCombatSegments()
 
-                for i = 1, #segmentHistory do
-                    local pastCombat = segmentHistory [i]
+                for i = 1, #segmentsTable do
+                    local pastCombat = segmentsTable [i]
                     --does the combat exists
 
                     if (pastCombat and not pastCombat._trashoverallalreadyadded and pastCombat:GetCombatTime() > 5) then
@@ -557,10 +562,10 @@ function DetailsMythicPlusFrame.MythicDungeonFinished (fromZoneLeft)
             end
 
             --find the latest trash overall
-            local segmentHistory = Details:GetCombatSegments()
+            local segmentsTable = Details:GetCombatSegments()
             local latestTrashOverall
-            for i = 1, #segmentHistory do
-                local pastCombat = segmentHistory [i]
+            for i = 1, #segmentsTable do
+                local pastCombat = segmentsTable [i]
                 if (pastCombat and pastCombat.is_mythic_dungeon and pastCombat.is_mythic_dungeon.SegmentID == "trashoverall") then
                     latestTrashOverall = pastCombat
                     break
@@ -589,7 +594,7 @@ function DetailsMythicPlusFrame.MythicDungeonFinished (fromZoneLeft)
         end
 
         --merge segments
-        if (_detalhes.mythic_plus.make_overall_when_done and not Details.MythicPlus.IsRestoredState and not fromZoneLeft) then
+        if (Details.mythic_plus.make_overall_when_done and not Details.MythicPlus.IsRestoredState and not fromZoneLeft) then
             --if (not InCombatLockdown() and not UnitAffectingCombat("player")) then
                 if (DetailsMythicPlusFrame.DevelopmentDebug) then
                     print("Details!", "MythicDungeonFinished() > not in combat, creating overall segment now")
@@ -668,7 +673,7 @@ function DetailsMythicPlusFrame.MythicDungeonStarted()
 
     local name, groupType, difficultyID, difficult = GetInstanceInfo()
     if (groupType == "party" and Details.overall_clear_newchallenge) then
-        Details.historico:resetar_overall()
+        Details.historico:ResetOverallData()
         Details:Msg("overall data are now reset.")
 
         if (Details.debug) then
@@ -706,7 +711,7 @@ function DetailsMythicPlusFrame.OnChallengeModeStart()
         if (not Details.MythicPlus.Started and Details.MythicPlus.DungeonID == currentZoneID and Details.MythicPlus.Level == mythicLevel) then
             Details.MythicPlus.Started = true
             Details.MythicPlus.EndedAt = nil
-            _detalhes.mythic_dungeon_currentsaved.started = true
+            Details.mythic_dungeon_currentsaved.started = true
             DetailsMythicPlusFrame.IsDoingMythicDungeon = true
 
             --print("D! mythic dungeon was NOT already started! debug 2")
@@ -730,7 +735,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 
     elseif (event == "COMBAT_PLAYER_LEAVE") then
         --ignore the event if ignoring mythic dungeon special treatment
-        if (_detalhes.streamer_config.disable_mythic_dungeon) then
+        if (Details.streamer_config.disable_mythic_dungeon) then
             return
         end
 
@@ -751,8 +756,8 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
                     Details.tabela_vigente.is_mythic_dungeon_trash = {
                         ZoneName = zoneName,
                         MapID = instanceMapID,
-                        Level = _detalhes.MythicPlus.Level,
-                        EJID = _detalhes.MythicPlus.ejID,
+                        Level = Details.MythicPlus.Level,
+                        EJID = Details.MythicPlus.ejID,
                     }
 
                     Details222.MythicPlus.LogStep("COMBAT_PLAYER_LEAVE | wiped on boss | key level: | " .. mythicLevel .. " | " .. (encounterName or "") .. " " .. zoneName)
@@ -765,7 +770,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 
     elseif (event == "COMBAT_ENCOUNTER_START") then
         --ignore the event if ignoring mythic dungeon special treatment
-        if (_detalhes.streamer_config.disable_mythic_dungeon) then
+        if (Details.streamer_config.disable_mythic_dungeon) then
             Details222.MythicPlus.LogStep("COMBAT_ENCOUNTER_START | streamer_config.disable_mythic_dungeon is true and the code cannot continue.")
             return
         end
@@ -775,7 +780,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 
     elseif (event == "COMBAT_ENCOUNTER_END") then
         --ignore the event if ignoring mythic dungeon special treatment
-        if (_detalhes.streamer_config.disable_mythic_dungeon) then
+        if (Details.streamer_config.disable_mythic_dungeon) then
             Details222.MythicPlus.LogStep("COMBAT_ENCOUNTER_END | streamer_config.disable_mythic_dungeon is true and the code cannot continue.")
             return
         end
@@ -784,9 +789,9 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
         --nothing
 
     elseif (event == "COMBAT_MYTHICDUNGEON_START") then
-        local lowerInstance = _detalhes:GetLowerInstanceNumber()
+        local lowerInstance = Details:GetLowerInstanceNumber()
         if (lowerInstance) then
-            lowerInstance = _detalhes:GetInstance(lowerInstance)
+            lowerInstance = Details:GetInstance(lowerInstance)
             if (lowerInstance) then
                 C_Timer.After(3, function()
                     if (lowerInstance:IsEnabled()) then
@@ -798,13 +803,13 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
         end
 
         --ignore the event if ignoring mythic dungeon special treatment
-        if (_detalhes.streamer_config.disable_mythic_dungeon) then
+        if (Details.streamer_config.disable_mythic_dungeon) then
             return
         end
 
         --reset spec cache if broadcaster requested
-        if (_detalhes.streamer_config.reset_spec_cache) then
-            wipe (_detalhes.cached_specs)
+        if (Details.streamer_config.reset_spec_cache) then
+            Details:Destroy(Details.cached_specs)
         end
 
         C_Timer.After(0.5, DetailsMythicPlusFrame.OnChallengeModeStart)
@@ -824,7 +829,7 @@ function DetailsMythicPlusFrame.EventListener.OnDetailsEvent(contextObject, even
 
     elseif (event == "COMBAT_MYTHICDUNGEON_END") then
         --ignore the event if ignoring mythic dungeon special treatment
-        if (_detalhes.streamer_config.disable_mythic_dungeon) then
+        if (Details.streamer_config.disable_mythic_dungeon) then
             Details222.MythicPlus.LogStep("COMBAT_MYTHICDUNGEON_END | streamer_config.disable_mythic_dungeon is true and the code cannot continue.")
             return
         end
@@ -847,7 +852,7 @@ DetailsMythicPlusFrame:SetScript("OnEvent", function(_, event, ...)
             end
 
             --ignore the event if ignoring mythic dungeon special treatment
-            if (_detalhes.streamer_config.disable_mythic_dungeon) then
+            if (Details.streamer_config.disable_mythic_dungeon) then
                 Details222.MythicPlus.LogStep("ZONE_CHANGED_NEW_AREA | streamer_config.disable_mythic_dungeon is true and the code cannot continue.")
                 return
             end
@@ -861,7 +866,7 @@ DetailsMythicPlusFrame:SetScript("OnEvent", function(_, event, ...)
                 Details222.MythicPlus.LogStep("ZONE_CHANGED_NEW_AREA | player has left the dungeon and Details! finished the dungeon because of that.")
 
                 --send mythic dungeon end event
-                _detalhes:SendEvent("COMBAT_MYTHICDUNGEON_END")
+                Details:SendEvent("COMBAT_MYTHICDUNGEON_END")
 
                 --finish the segment
                 DetailsMythicPlusFrame.BossDefeated(true)

@@ -472,7 +472,7 @@ function private.GetObject(str)
 		for _, source, convertArg in obj:DependantSourceIterator() do
 			if source == "convert" then
 				if not private.priceSourceInfo[convertArg] or private.priceSourceInfo[convertArg].sourceType ~= CustomPrice.SOURCE_TYPE.PRICE_DB then
-					return nil, format(L["'%s' is not a valid argument for convert()."], errTokenStr)
+					return nil, format(L["'%s' is not a valid argument for convert()."], convertArg)
 				end
 			elseif not private.priceSourceInfo[source] and not private.settings.customPriceSources[source] then
 				return nil, format(L["%s is not a valid source."], source)

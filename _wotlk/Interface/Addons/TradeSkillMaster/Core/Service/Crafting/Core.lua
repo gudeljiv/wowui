@@ -263,7 +263,7 @@ end
 function Crafting.CreateMatItemQuery()
 	return private.matItemDB:NewQuery()
 		:VirtualField("name", "string", ItemInfo.GetName, "itemString", "?")
-		:VirtualField("matCost", "number", TSM.Crafting.Cost.GetMatCost, "itemString", Math.GetNan())
+		:VirtualField("matCost", "number", private.GetMatCost, "itemString")
 		:VirtualField("totalQuantity", "number", private.GetTotalQuantity, "itemString")
 end
 
@@ -880,6 +880,10 @@ end
 
 function private.GetTotalQuantity(itemString)
 	return CustomPrice.GetSourcePrice(itemString, "NumInventory") or 0
+end
+
+function private.GetMatCost(itemString)
+	return CustomPrice.GetSourcePrice(itemString, "MatPrice") or Math.GetNan()
 end
 
 function private.MatItemDBUpdateOrInsert(itemString, profession)

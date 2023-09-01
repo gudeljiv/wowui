@@ -2,6 +2,9 @@
 ---@class QuestieCompat
 QuestieCompat = {}
 
+---@type QuestieDB
+local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
+
 local errorMsg = "Questie tried to call a blizzard API function that does not exist..."
 
 ---[SetMinResize Documentation](https://wowpedia.fandom.com/wiki/API_Frame_SetMinResize)
@@ -56,7 +59,7 @@ function QuestieCompat.GetAvailableQuests()
             availableQuests[index + 4] = availableQuest.repeatable
             availableQuests[index + 5] = availableQuest.isLegendary
             availableQuests[index + 6] = availableQuest.isIgnored
-            index = index + 6
+            index = index + 7
         end
         return unpack(availableQuests)
     elseif GetGossipAvailableQuests then
@@ -77,10 +80,10 @@ function QuestieCompat.GetActiveQuests()
             activeQuests[index] = activeQuest.title
             activeQuests[index + 1] = activeQuest.questLevel
             activeQuests[index + 2] = activeQuest.isTrivial
-            activeQuests[index + 3] = activeQuest.isComplete
+            activeQuests[index + 3] = activeQuest.isComplete or QuestieDB.IsComplete(activeQuest.questID) == 1
             activeQuests[index + 4] = activeQuest.isLegendary
             activeQuests[index + 5] = activeQuest.isIgnored
-            index = index + 5
+            index = index + 6
         end
         return unpack(activeQuests)
     elseif GetGossipActiveQuests then

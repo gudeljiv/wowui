@@ -1,9 +1,9 @@
-## Interface: 90207
+## Interface: 30402
 ## Title: GatherMate2Marker
 ## X-FullName: GatherMate 2 Marker
-## Author: Froboz @ Old Blanchy (TBC Classic)
+## Author: Froboz @ Old Blanchy (WotLK Classic)
 ## Notes: Mark mini-map nodes as seen. Requires GatherMate2.
-## Version: 1.0.17
+## Version: 1.0.19
 ## Dependencies: GatherMate2
 ## SavedVariables: GatherMate2MarkerDB
 ## X-Curse-Project-ID: 565501

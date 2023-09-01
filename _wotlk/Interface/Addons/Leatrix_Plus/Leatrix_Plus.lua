@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.122 (26th March 2023)
+-- 	Leatrix Plus 3.0.147 (30th August 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.122"
+	LeaPlusLC["AddonVer"] = "3.0.147"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -34,6 +34,9 @@
 				print(L["LEATRIX PLUS: WRONG VERSION INSTALLED!"])
 			end)
 			return
+		end
+		if gametocversion and gametocversion == 30402 then -- 3.4.2
+			LeaPlusLC.NewPatch = true
 		end
 	end
 
@@ -96,7 +99,7 @@
 	function LeaPlusLC:CheckIfQuestIsSharedAndShouldBeDeclined()
 		if LeaPlusLC["NoSharedQuests"] == "On" then
 			local npcName = UnitName("questnpc")
-			if npcName then
+			if npcName and UnitIsPlayer(npcName) then
 				if UnitInParty(npcName) or UnitInRaid(npcName) then
 					if not LeaPlusLC:FriendCheck(npcName) then
 						DeclineQuest()
@@ -751,14 +754,18 @@
 					StaticPopup1EditBox:Hide()
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
-					StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n" .. link)
+					if link then
+						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n" .. link)
+					end
 				else
 					-- Item does not require player to type delete so just show item link
 					StaticPopup1:SetHeight(StaticPopup1:GetHeight() + 40)
 					StaticPopup1EditBox:Hide()
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
-					StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n|n" .. link)
+					if link then
+						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n|n" .. link)
+					end
 				end
 			end)
 
@@ -2374,7 +2381,7 @@
 			eb.Text:SetWidth(150)
 			eb.Text:SetPoint("TOPLEFT", eb.scroll)
 			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll)
-			eb.Text:SetMaxLetters(600)
+			eb.Text:SetMaxLetters(2000)
 			eb.Text:SetFontObject(GameFontNormalLarge)
 			eb.Text:SetAutoFocus(false)
 			eb.Text:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
@@ -2638,6 +2645,8 @@
 				elseif event == "UI_ERROR_MESSAGE" then
 					if arg1 == 46 then
 						StopSelling() -- Vendor refuses to buy items
+					elseif arg1 == 635 then
+						StopSelling() -- At gold limit
 					end
 				end
 			end)
@@ -3005,7 +3014,7 @@
 			local QuestTextPanel = LeaPlusLC:CreatePanel("Resize quest text", "QuestTextPanel")
 
 			LeaPlusLC:MakeTx(QuestTextPanel, "Text size", 16, -72)
-			LeaPlusLC:MakeSL(QuestTextPanel, "LeaPlusQuestFontSize", "Drag to set the font size of quest text.", 10, 36, 1, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(QuestTextPanel, "LeaPlusQuestFontSize", "Drag to set the font size of quest text.", 10, 30, 1, 16, -92, "%.0f")
 
 			-- Function to update the font size
 			local function QuestSizeUpdate()
@@ -3065,7 +3074,7 @@
 			local MailTextPanel = LeaPlusLC:CreatePanel("Resize mail text", "MailTextPanel")
 
 			LeaPlusLC:MakeTx(MailTextPanel, "Text size", 16, -72)
-			LeaPlusLC:MakeSL(MailTextPanel, "LeaPlusMailFontSize", "Drag to set the font size of mail text.", 10, 36, 1, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(MailTextPanel, "LeaPlusMailFontSize", "Drag to set the font size of mail text.", 10, 30, 1, 16, -92, "%.0f")
 
 			-- Function to set the text size
 			local function MailSizeUpdate()
@@ -3125,7 +3134,7 @@
 			local BookTextPanel = LeaPlusLC:CreatePanel("Resize book text", "BookTextPanel")
 
 			LeaPlusLC:MakeTx(BookTextPanel, "Text size", 16, -72)
-			LeaPlusLC:MakeSL(BookTextPanel, "LeaPlusBookFontSize", "Drag to set the font size of book text.", 10, 36, 1, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(BookTextPanel, "LeaPlusBookFontSize", "Drag to set the font size of book text.", 10, 30, 1, 16, -92, "%.0f")
 
 			-- Function to set the text size
 			local function BookSizeUpdate()
@@ -4693,9 +4702,7 @@
 						OnTooltipShow = function(tooltip)
 							if not tooltip or not tooltip.AddLine then return end
 							tooltip:AddLine(name)
-							tooltip:AddLine(L["This is a custom button."], 1, 1, 1)
-							tooltip:AddLine(L["Please ask the addon author to use LibDBIcon."], 1, 1, 1)
-							tooltip:AddLine(L["There is a helpful guide on leatrix.com."], 1, 1, 1)
+							tooltip:AddLine(L["This addon uses a custom button."], 1, 1, 1)
 						end,
 					})
 					LeaPlusDB["CustomAddonButtons"][name] = LeaPlusDB["CustomAddonButtons"][name] or {}
@@ -10291,7 +10298,11 @@
 				end
 				titleFrame.m:SetText(L["Messages"] .. ": " .. totalMsgCount)
 				editFrame:SetVerticalScroll(0)
-				C_Timer.After(0.1, function() editFrame.ScrollBar.ScrollDownButton:Click() end)
+				if LeaPlusLC.NewPatch then
+					editFrame.ScrollBar:ScrollToEnd()
+				else
+					C_Timer.After(0.1, function() editFrame.ScrollBar.ScrollDownButton:Click() end)
+				end
 				editFrame:Show()
 				editBox:ClearFocus()
 			end
@@ -10934,7 +10945,9 @@
 
 			-- Hide health bar
 			if LeaPlusLC["TipNoHealthBar"] == "On" then
-				GameTooltipStatusBar:SetStatusBarTexture("")
+				local tipHide = GameTooltip.Hide
+				GameTooltipStatusBar:HookScript("OnShow", tipHide)
+				GameTooltipStatusBar:Hide()
 			end
 
 			---------------------------------------------------------------------------------------------------------
@@ -11686,7 +11699,7 @@
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
 
-			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/run leaplus()", 0, 0)
+			local slashTitle = LeaPlusLC:MakeTx(interPanel, "/ltp", 0, 0)
 			slashTitle:SetFont(slashTitle:GetFont(), 72)
 			slashTitle:ClearAllPoints()
 			slashTitle:SetPoint("BOTTOM", subTitle, "TOP", 0, 40)
@@ -11708,7 +11721,7 @@
 		-- Show first run message
 		if not LeaPlusDB["FirstRunMessageSeen"] then
 			C_Timer.After(1, function()
-				LeaPlusLC:Print(L["Enter"] .. " |cff00ff00" .. "/run leaplus()" .. "|r " .. L["or click the minimap button to open Leatrix Plus."])
+				LeaPlusLC:Print(L["Enter"] .. " |cff00ff00" .. "/ltp" .. "|r " .. L["or click the minimap button to open Leatrix Plus."])
 				LeaPlusDB["FirstRunMessageSeen"] = true
 			end)
 		end
@@ -12878,13 +12891,13 @@
 				LeaPlusLC:LoadVarChk("HideMacroText", "Off")				-- Hide macro text
 
 				LeaPlusLC:LoadVarChk("MailFontChange", "Off")				-- Resize mail text
-				LeaPlusLC:LoadVarNum("LeaPlusMailFontSize", 15, 10, 36)		-- Mail text slider
+				LeaPlusLC:LoadVarNum("LeaPlusMailFontSize", 15, 10, 30)		-- Mail text slider
 
 				LeaPlusLC:LoadVarChk("QuestFontChange", "Off")				-- Resize quest text
-				LeaPlusLC:LoadVarNum("LeaPlusQuestFontSize", 12, 10, 36)	-- Quest text slider
+				LeaPlusLC:LoadVarNum("LeaPlusQuestFontSize", 12, 10, 30)	-- Quest text slider
 
 				LeaPlusLC:LoadVarChk("BookFontChange", "Off")				-- Resize book text
-				LeaPlusLC:LoadVarNum("LeaPlusBookFontSize", 15, 10, 36)		-- Book text slider
+				LeaPlusLC:LoadVarNum("LeaPlusBookFontSize", 15, 10, 30)		-- Book text slider
 
 				-- Interface
 				LeaPlusLC:LoadVarChk("MinimapModder", "Off")				-- Enhance minimap
@@ -14235,7 +14248,7 @@
 				-- Show quest completed status
 				if arg1 and arg1 ~= "" then
 					if tonumber(arg1) and tonumber(arg1) < 999999999 then
-						local questCompleted = IsQuestFlaggedCompleted(arg1)
+						local questCompleted = C_QuestLog.IsQuestFlaggedCompleted(arg1)
 						local questTitle = C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
 						C_Timer.After(0.5, function()
 							local questTitle = C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
@@ -15647,9 +15660,8 @@
 	end
 
 	-- Slash command for global function
-	-- _G.SLASH_Leatrix_Plus1 = "/ltp"
-	-- _G.SLASH_Leatrix_Plus2 = "/leaplus"
-	_G.SLASH_Leatrix_Plus1 = "/ztp" -- temp
+	_G.SLASH_Leatrix_Plus1 = "/ltp"
+	_G.SLASH_Leatrix_Plus2 = "/leaplus"
 
 	SlashCmdList["Leatrix_Plus"] = function(self)
 		-- Run slash command function
@@ -15665,13 +15677,11 @@
 		ReloadUI()
 	end
 
-	-- Replacement for broken slash command system
-	function leaplus(self)
-		LeaPlusLC:SlashFunc(self)
-	end
-
-	-- To reproduce slash command bug, enter combat, enter an addn related slash command, toggle tracking on a
-	-- quest 4 times then click that quest in the objective tracker.
+	-- There is a slash command bug in the game code.  To reproduce it, enter combat, enter any addon related
+	-- slash command, toggle tracking on a quest 4 times then click that quest in the objective tracker.
+	-- The bug was originally found in Dragonflight.  Then Blizzard copied a lot of Dragonflight code to Wrath
+	-- Classic and the bug was copied along with it.  The bug has since been fixed in Dragonflight but has not
+	-- been fixed in Wrath Classic.
 
 ----------------------------------------------------------------------
 -- 	L90: Create options panel pages (no content yet)
@@ -15960,7 +15970,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -232, 	false,	"If checked, you will be able to mute your own choice of sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant or bank.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CharAddonList"				, 	"Show character addons"			, 	340, -112, 	true,	"If checked, the addon list (accessible from the game menu) will show character based addons by default.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoConfirmLoot"				, 	"Disable loot warnings"			,	340, -132, 	false,	"If checked, confirmations will no longer appear when you choose a loot roll option or attempt to sell or mail a tradable item.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -152, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")

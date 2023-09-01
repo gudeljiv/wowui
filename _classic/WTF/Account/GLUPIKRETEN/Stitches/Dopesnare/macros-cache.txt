@@ -17,7 +17,6 @@ END
 VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 #showtooltip Serpent Sting
 /cast !Auto Shot
-/startattack
 /cast Serpent Sting
 END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
@@ -36,8 +35,8 @@ VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 #showtooltip Arcane Shot
-/cast !Auto Shot
 /startattack
+/cast !Auto Shot
 /cast Arcane Shot
 END
 VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
@@ -45,9 +44,11 @@ VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
 /cast [nochanneling: volley] Explosive Shot
 END
 VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
-#showtooltip
+#showtooltip Wing Clip
 /startattack
 /cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip

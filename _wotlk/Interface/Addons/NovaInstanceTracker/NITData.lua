@@ -6,12 +6,10 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
 local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots;
 local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
+local GetContainerItemCooldown = GetContainerItemCooldown or C_Container.GetContainerItemCooldown;
+local GetContainerItemLink = GetContainerItemLink or C_Container.GetContainerItemLink;
+local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
 
---TBC compatibility.
-local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted;
-if (C_QuestLog.IsQuestFlaggedCompleted) then
-	IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
-end
 --Some of this addon comm stuff is copied from my other addon NovaWorldBuffs and is left here incase of future stuff being added.
 function NIT:OnCommReceived(commPrefix, string, distribution, sender)
 	--if (NIT.isDebug) then
@@ -213,6 +211,10 @@ f:RegisterEvent("CURRENCY_DISPLAY_UPDATE");
 if (NIT.isRetail) then
 	f:RegisterEvent("CHALLENGE_MODE_START");
 	f:RegisterEvent("CHALLENGE_MODE_COMPLETED");
+	f:RegisterEvent("CHALLENGE_MODE_MAPS_UPDATE")
+	f:RegisterEvent("CHAT_MSG_LOOT");
+	f:RegisterEvent("ITEM_CHANGED");
+	f:RegisterEvent("WEEKLY_REWARDS_UPDATE");
 end
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_LEAVING_WORLD" ) then
@@ -244,6 +246,9 @@ f:SetScript('OnEvent', function(self, event, ...)
 			--Need to add a delay for pet data to load properly at logon.
 			C_Timer.After(5, function()
 				NIT:recordCharacterData();
+			end)
+			C_Timer.After(10, function()
+				NIT:recordKeystoneData();
 			end)
 		else
 			NIT:recordCharacterData();
@@ -289,10 +294,16 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:chatMsgCombatXpGain(...);
 		NIT:throddleEventByFunc(event, 2, "recordGroupInfo", ...);
 	elseif (event == "ENCOUNTER_END") then
+		local _, _, _, _, success = ...;
 		NIT:throddleEventByFunc(event, 2, "recordGroupInfo", ...);
 		C_Timer.After(3, function()
 			NIT:recordLockoutData();
 		end)
+		if (success) then
+			C_Timer.After(2, function()
+				NIT:recordKeystoneData();
+			end)
+		end
 	elseif (event == "CHAT_MSG_COMBAT_FACTION_CHANGE") then
 		NIT:chatMsgCombatFactionChange(...);
 	elseif (event == "CHAT_MSG_COMBAT_HONOR_GAIN") then
@@ -323,6 +334,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NIT:throddleEventByFunc(event, 3, "recordInventoryData", ...);
 	elseif (event == "QUEST_TURNED_IN") then
 		NIT:throddleEventByFunc(event, 2, "recordPlayerLevelData", ...);
+		NIT:throddleEventByFunc(event, 1, "recordQuests", ...);
 	elseif (event == "CHAT_MSG_SKILL") then
 		NIT:throddleEventByFunc(event, 4, "recordSkillUpData", ...);
 	elseif (event == "UNIT_RANGEDDAMAGE" or event == "LOCALPLAYER_PET_RENAMED" or event == "UNIT_PET"
@@ -375,6 +387,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			--record +key times for the dung
 		end
 	elseif (event == "CHALLENGE_MODE_COMPLETED") then
+		NIT:debug("challenge mode completed")
 		if (NIT.inInstance and NIT.data.instances[1]) then
 			if (not NIT.data.instances[1].mythicPlus) then
 				NIT.data.instances[1].mythicPlus = {};
@@ -394,7 +407,29 @@ f:SetScript('OnEvent', function(self, event, ...)
 			data.deaths = deaths;
 			data.timeLost = timeLost;
 			--data.totalScore = C_ChallengeMode.GetOverallDungeonScore(); --Total score same as new score.
+			C_Timer.After(2, function()
+				NIT:recordKeystoneData();
+			end)
 		end
+	elseif (event == "CHAT_MSG_LOOT") then
+		NIT:chatMsgLoot(...)
+	elseif (event == "ITEM_CHANGED") then
+		NIT:debug("item changed");
+		C_Timer.After(1, function()
+			NIT:recordKeystoneData();
+		end)
+	elseif (event == "CHALLENGE_MODE_MAPS_UPDATE") then
+		C_Timer.After(1, function()
+			NIT:challengeModeMapsUpdate();
+		end)
+	elseif (event == "WEEKLY_REWARDS_UPDATE") then
+		--Some issues with speed of update after looting vault.
+		C_Timer.After(1, function()
+			NIT:recordKeystoneData();
+		end)
+		C_Timer.After(5, function()
+			NIT:checkRewards();
+		end)
 	end
 end)
 
@@ -415,6 +450,42 @@ function NIT:trimTrades()
 			table.remove(NIT.data.trades, i);
 		end
 	end
+end
+
+function NIT:chatMsgLoot(...)
+	local msg = ...;
+	local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType,
+				itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice, itemClassID, itemSubClassID;
+    --Get itemlink by checking all possible matches for self loot msgs and other players loot msg.
+    --Check multiple msgs first so you dont end up with item links with x2 on the end.
+    --Self receive multiple loot "You receive loot: [Item]x2"
+    local amount;
+    local name = UnitName("Player");
+    local otherPlayer;
+    --Self loot multiple item "You receive loot: [Item]x2"
+	local itemLink, amount = strmatch(msg, string.gsub(string.gsub(LOOT_ITEM_SELF_MULTIPLE, "%%s", "(.+)"), "%%d", "(%%d+)"));
+	if (not itemLink) then
+ 		--Self receive single loot "You receive loot: [Item]"
+    	itemLink = msg:match(LOOT_ITEM_SELF:gsub("%%s", "(.+)"));
+		if (not itemLink) then
+ 			--Self receive single item "You receive item: [Item]"
+			itemLink = msg:match(LOOT_ITEM_PUSHED_SELF:gsub("%%s", "(.+)"));
+		end
+    end
+    if (itemLink) then
+    	if (string.match(itemLink, "|Hkeystone:(.+)|h") or string.match(itemLink, "item:180653")) then
+    		C_Timer.After(1, function()
+    			NIT:debug("looted keystone");
+				NIT:recordKeystoneData(true);
+			end)
+			C_Timer.After(5, function()
+				NIT:checkRewards();
+			end)
+			C_Timer.After(15, function()
+				NIT:checkRewards();
+			end)
+    	end
+    end
 end
 
 function NIT:combatLogEventUnfiltered(...)
@@ -970,6 +1041,9 @@ function NIT:leftInstance()
 		end
 		NIT:pushInstanceLeft(NIT.data.instances[1].instanceName, NIT.data.instances[1].instanceID);
 	end
+	C_Timer.After(5, function()
+		NIT:recordKeystoneData();
+	end)
 	NIT.inInstance = nil;
 	NIT.lastNpcID = 999999999;
 	NIT.lastInstanceName = "(Unknown Instance)";
@@ -1028,6 +1102,9 @@ function NIT:showInstanceStats(id, output, showAll)
 	if (data.isPvp) then
 		if (data.type == "bg") then
 			text = text .. pColor .. " " .. L["Honor"] .. ":|r " .. sColor .. (data.honor or 0) .. "|r";
+			if (NIT.db.global.instanceStatsOutputHK) then
+				text = text .. pColor .. " " .. L["HKs"] .. ":|r " .. sColor .. (data.hk or 0) .. "|r";
+			end
 		end
 		if (not NIT.isClassic and not NIT.isTBC and data.type ~= "arena") then
 			if ((NIT.db.global.instanceStatsOutputXP or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
@@ -1704,6 +1781,40 @@ function NIT:recordCharacterData()
 	NIT:recordArenaPoints();
 	NIT:recordMarksData();
 	NIT:recordCooldowns();
+	NIT:recordQuests();
+end
+
+local recordQuests = {
+	[70893] = L["Feast Weekly"],
+	[70866] = L["Siege on Dragonbane Keep"],
+	[70906] = L["Grand Hunt (1st Time)"],
+	[71136] = L["Grand Hunt (2nd Time)"],
+	[71137] = L["Grand Hunt (3rd Time)"],
+	[71995] = L["Trial of Elements"],
+	[71033] = L["Trial of Flood"],
+	[69927] = L["World Boss (Bazual)"],
+	[69928] = L["World Boss (Liskanoth)"],
+	[69929] = L["World Boss (Strunraan)"],
+	[69930] = L["World Boss (Basrikron)"],
+};
+
+function NIT:recordQuests()
+	if (not C_DateAndTime or not C_DateAndTime.GetSecondsUntilWeeklyReset) then
+		return;
+	end
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (not NIT.data.myChars[char].quests) then
+		NIT.data.myChars[char].quests = {};
+	end
+	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilWeeklyReset();
+	for k, v in pairs(recordQuests) do
+		if (IsQuestFlaggedCompleted(k)) then
+			NIT.data.myChars[char].quests[v] = resetTime;
+		end
+	end
 end
 
 function NIT:recordAttunementKeys()
@@ -1901,22 +2012,140 @@ function NIT:resetOldLockouts()
 	end
 end
 
+function NIT:recordKeystoneData(lootedKeystone)
+	if (not NIT.isRetail) then
+		return;
+	end
+	C_MythicPlus.RequestMapInfo(); --Instead of a timer this should be changed to wait for CHALLENGE_MODE_MAPS_UPDATE later.
+	if (lootedKeystone) then
+		--Force record data if we just looted a keystone from the vault.
+		--For some reason running C_MythicPlus.RequestMapInfo() right after loot doesn't trigger any event.
+		--Maybe a throddle?
+		NIT:challengeModeMapsUpdate();
+	end
+end
+
+function NIT:challengeModeMapsUpdate()
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (not NIT.data.myChars[char].keystoneData) then
+		NIT.data.myChars[char].keystoneData = {};
+	end
+	NIT.data.myChars[char].keystoneScore = C_ChallengeMode.GetOverallDungeonScore();
+	local _, class = UnitClass("player");
+	local keystone, bestMap, bestLevel;
+	for bag = 0, NUM_BAG_SLOTS do
+		for slot = 1, GetContainerNumSlots(bag) do
+      		local item = GetContainerItemLink(bag,slot);
+      		if (item and strfind(item, "|Hkeystone")) then
+      			keystone = item;
+      			break;
+			end
+		end
+	end
+	--if (keystone) then
+	--	level = C_MythicPlus.GetOwnedKeystoneLevel();
+	--	local mapID = C_MythicPlus.GetOwnedKeystoneMapID();
+	--	local mapName = C_ChallengeMode.GetMapUIInfo(mapID);
+	--	mapData = C_Map.GetMapInfo(mapID);
+	--end
+	if (keystone) then
+		NIT.data.myChars[char].keystoneData.itemLink = keystone;
+	end
+	local bestLevel, bestScore = 0, 0;
+	local bestMapName, bestMapID;
+	local weeklyRuns = C_MythicPlus.GetRunHistory(false, true);
+	for i = 1, #weeklyRuns do
+		local run = weeklyRuns[i];
+		if (run.thisWeek and run.level > bestLevel) then
+			bestLevel = run.level;
+		end
+	end
+	--Check all keys equal to our max level done to find the best score so we can display which map it was.
+	for i = 1, #weeklyRuns do
+		local run = weeklyRuns[i];
+		if (run.thisWeek and run.level == bestLevel) then
+			if (run.runScore > bestScore or bestScore == 0) then
+				bestScore = run.runScore;
+				bestMapID = run.mapChallengeModeID;
+			end
+		end
+	end
+	if (bestMapID and bestLevel > 0) then
+		bestMapName = C_ChallengeMode.GetMapUIInfo(bestMapID);
+		NIT.data.myChars[char].keystoneData.bestMapName = bestMapName;
+		NIT.data.myChars[char].keystoneData.bestLevel = bestLevel;
+	end
+	if (C_WeeklyRewards.HasAvailableRewards()) then
+		NIT.data.myChars[char].weeklyCache = true;
+	else
+		NIT.data.myChars[char].weeklyCache = nil;
+	end
+end
+
+function NIT:checkRewards()
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (C_WeeklyRewards.HasAvailableRewards()) then
+		NIT.data.myChars[char].weeklyCache = true;
+	else
+		NIT.data.myChars[char].weeklyCache = nil;
+	end
+end
+
+function NIT:resetWeeklyData()
+	for realm, realmData in pairs(NIT.db.global) do
+		if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "data") then
+			if (realmData.myChars) then
+				local resetTime = (realmData.weeklyResetTime or 0);
+				for char, charData in pairs(realmData.myChars) do
+					if (charData.quests) then
+						for k, v in pairs(charData.quests) do
+							if (v < GetServerTime()) then
+								NIT.db.global[realm].myChars[char].quests[k] = nil;
+							end
+						end
+					end
+					if (charData.keystoneData) then
+						if (resetTime < GetServerTime()) then
+							NIT.db.global[realm].myChars[char].keystoneData = nil;
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+function NIT:updateWeeklyResetTime()
+	NIT.db.global[NIT.realm].weeklyResetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilWeeklyReset();
+end
+
+function NIT:doOnceAfterWeeklyReset()
+	for realm, realmData in pairs(NIT.db.global) do
+		if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "data") then
+			if (realmData.myChars) then
+				local resetTime = (realmData.weeklyResetTime or 0);
+				if (GetServerTime() > resetTime) then
+					--resetTime is set after this func is run at logon so it's easy to check if it's first logon after weekly reset.
+					--If it's first logon after weekly reset we do things like setting flags that chars need to loot weekly cache etc.
+					for char, charData in pairs(realmData.myChars) do
+						if (charData.keystoneData and charData.keystoneData.bestLevel and charData.keystoneData.bestLevel > 0) then
+							NIT.db.global[realm].myChars[char].weeklyCache = true;
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
 --These are structured like this so there's a sort order.
 --minLvl is min lvl that you need to cast the spells that require them.
-NIT.trackItemsPRIEST = {
-	[1] = {
-		id = 17029,
-		name = "Sacred Candle",
-		texture = "Interface\\Icons\\inv_misc_candle_02",
-		minLvl = 56,
-	},
-	[2] = {
-		id = 17056,
-		name = "Light Feather",
-		texture = "Interface\\Icons\\inv_feather_04",
-		minLvl = 24,
-	},
-};
 
 NIT.trackItemsMAGE = {
 	[1] = {
@@ -1960,6 +2189,20 @@ if (NIT.isTBC or NIT.isPrepatch) then
 			minLvl = 70;
 		},
 	};
+	NIT.trackItemsPRIEST = {
+		[1] = {
+			id = 17029,
+			name = "Sacred Candle",
+			texture = "Interface\\Icons\\inv_misc_candle_02",
+			minLvl = 56,
+		},
+		[2] = {
+			id = 17056,
+			name = "Light Feather",
+			texture = "Interface\\Icons\\inv_feather_04",
+			minLvl = 24,
+		},
+	};
 elseif (NIT.isWrath) then
 	NIT.trackItemsDRUID = {
 		[1] = {
@@ -1975,6 +2218,20 @@ elseif (NIT.isWrath) then
 			minLvl = 80;
 		},
 	};
+	NIT.trackItemsPRIEST = {
+		[1] = {
+			id = 44615,
+			name = "Devout Candle",
+			texture = "Interface\\Icons\\inv_misc_candle_01",
+			minLvl = 56,
+		},
+		[2] = {
+			id = 17056,
+			name = "Light Feather",
+			texture = "Interface\\Icons\\inv_feather_04",
+			minLvl = 24,
+		},
+	};
 else
 	NIT.trackItemsDRUID = {
 		[1] = {
@@ -1988,6 +2245,20 @@ else
 			name = "Ironwood Seed",
 			texture = "Interface\\Icons\\inv_misc_food_02",
 			minLvl = 60;
+		},
+	};
+	NIT.trackItemsPRIEST = {
+		[1] = {
+			id = 17029,
+			name = "Sacred Candle",
+			texture = "Interface\\Icons\\inv_misc_candle_02",
+			minLvl = 56,
+		},
+		[2] = {
+			id = 17056,
+			name = "Light Feather",
+			texture = "Interface\\Icons\\inv_feather_04",
+			minLvl = 24,
 		},
 	};
 end
@@ -2086,10 +2357,13 @@ local currencyItems = {
 	[334365] = "Emblem of Frost",
 	[134375] = "Stone Keeper's Shards",
 	[133408] = "Wintergrasp Mark of Honor",
+	[237235] = "Sidereal Essence",
+	[236246] = "Champion's Seal",
 	--Profession tokens.
 	[134411] = "Epicurean's Award",
 	[134138] = "Dalaran Jewelcrafter's Token",
 };
+
 function NIT:recordCurrency()
 	if (NIT.isClassic or NIT.isTBC or NIT.isRetail) then
 		return;
@@ -2275,10 +2549,12 @@ end
 	[14342] = L["Tailoring"], --Mooncloth.
 };]]
 
-local itemCooldowns = {
-	[15846] = L["Salt Shaker"],
-	--[6948] = L["Hearthstone"],
-}
+local itemCooldowns = {};
+if (NIT.isClassic) then
+	itemCooldowns = {
+		[15846] = L["Salt Shaker"],
+	}
+end
 
 function NIT:recordCooldowns()
 	if (NIT.isRetail) then

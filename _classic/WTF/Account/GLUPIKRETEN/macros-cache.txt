@@ -1,8 +1,8 @@
-VER 3 0000000000000012 " " "136173"
-/click BehindTarget
-END
 VER 3 0000000000000011 " " "136106"
 /inspect
+END
+VER 3 0000000000000012 " " "136173"
+/click BehindTarget
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -12,7 +12,7 @@ END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:117
-/castsequence [combat] reset=combat item:118
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:4599
@@ -21,7 +21,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:0
 END
 VER 3 0000000000000019 "prowl" "INV_Misc_QuestionMark"
 #showtooltip Prowl
