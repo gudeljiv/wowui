@@ -1,29 +1,33 @@
 
 Postal3ClassicDB = {
 	["profileKeys"] = {
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
-		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
 		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
 		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
 	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Dopeclaw|Stitches|Horde|9|DRUID", -- [1]
-				"Dopecure|Stitches|Horde|1|PRIEST", -- [2]
-				"Dopesick|Stitches|Horde|6|WARRIOR", -- [3]
-				"Dopesnare|Stitches|Horde|6|HUNTER", -- [4]
+				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
+				"Dopeclaw|Stitches|Horde|9|DRUID", -- [2]
+				"Dopecure|Stitches|Horde|1|PRIEST", -- [3]
+				"Dopesick|Stitches|Horde|9|WARRIOR", -- [4]
+				"Dopesnare|Stitches|Horde|6|HUNTER", -- [5]
 			},
 		},
 	},
 	["profiles"] = {
-		["Dopesick - Stitches"] = {
-		},
-		["Dopeclaw - Stitches"] = {
-		},
 		["Dopesnare - Stitches"] = {
 		},
 		["Dopecure - Stitches"] = {
+		},
+		["Dopeclaw - Stitches"] = {
+		},
+		["Dopesick - Stitches"] = {
+		},
+		["Dopeah - Stitches"] = {
 		},
 	},
 }

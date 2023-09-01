@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 9952,
+	["session"] = 9954,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7611,21 +7611,13 @@ BugGrabberDB = {
 			["counter"] = 121,
 		}, -- [995]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2006: Usage: SaveBindings(1||2)",
-			["time"] = "2023/08/31 09:10:25",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2006: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 9925,
-			["counter"] = 5,
-		}, -- [996]
-		{
 			["message"] = "bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))",
 			["time"] = "2023/09/01 10:34:57",
 			["locals"] = "(*temporary) = \"bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `CreateTexture'\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:586: in function <Interface/AddOns/ChocolateBar/Core.lua:580>\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:593: in function `GetPointer'\n[string \"@Interface/AddOns/ChocolateBar/Bar.lua\"]:390: in function `Drag'\n[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:74: in function `Start'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:334: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:307>",
 			["session"] = 9939,
 			["counter"] = 4,
-		}, -- [997]
+		}, -- [996]
 		{
 			["message"] = "Interface/AddOns/ChocolateBar/DragAndDrop.lua:86: attempt to index upvalue 'focus' (a nil value)",
 			["time"] = "2023/09/01 10:34:59",
@@ -7633,7 +7625,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:86: in function `Stop'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:347: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:341>",
 			["session"] = 9939,
 			["counter"] = 4,
-		}, -- [998]
+		}, -- [997]
 		{
 			["message"] = "TellMeWhen: [string \"return xAOE(8) == 1\"]:1: attempt to call global 'xAOE' (a nil value)",
 			["time"] = "2023/08/29 21:19:58",
@@ -7641,7 +7633,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2813: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2770>",
 			["session"] = 9946,
 			["counter"] = 3,
-		}, -- [999]
+		}, -- [998]
 		{
 			["message"] = "Interface/AddOns/AdiBags/widgets/ItemButton.lua:487: attempt to call method 'UpdateItemLevel' (a nil value)",
 			["time"] = "2023/09/01 16:15:51",
@@ -7649,6 +7641,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:487: in function `UpdateBorder'\n[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:368: in function `Update'\n[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:281: in function <Interface/AddOns/AdiBags/widgets/ItemButton.lua:269>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:1086: in function `PrepareSections'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:1208: in function `FullUpdate'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:645: in function <Interface/AddOns/AdiBags/widgets/ContainerFrame.lua:631>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/core/Utility.lua\"]:108: in function <Interface/AddOns/AdiBags/core/Utility.lua:100>\n[string \"@Interface/AddOns/AdiBags/widgets/LayeredRegion.lua\"]:119: in function <Interface/AddOns/AdiBags/widgets/LayeredRegion.lua:108>",
 			["session"] = 9948,
 			["counter"] = 10,
+		}, -- [999]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2006: Usage: SaveBindings(1||2)",
+			["time"] = "2023/08/31 09:10:25",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2006: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 9954,
+			["counter"] = 6,
 		}, -- [1000]
 	},
 }

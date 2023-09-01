@@ -25,8 +25,8 @@ FrameLevel: 1
 Anchor: RIGHT
 X: -486
 Y: 115
-W: 267
-H: 181
+W: 404
+H: 259
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: CENTER
