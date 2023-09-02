@@ -227,7 +227,7 @@ local function Constructor()
 	editbox:SetHeight(19)
 
 	local label = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-	label:SetFont("Fonts\\blei00d.TTF", 13, "")
+	label:SetFont("Fonts\\FRIZQT__.TTF", 13, "")
 	label:SetPoint("TOPLEFT", 5, -6)
 	label:SetPoint("TOPRIGHT", 0, -6)
 	label:SetJustifyH("LEFT")

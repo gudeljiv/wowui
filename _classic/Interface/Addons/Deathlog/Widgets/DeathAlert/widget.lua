@@ -14,7 +14,7 @@ local sounds = LSM30:HashTable("sound")
 sounds["default_hardcore"] = 8959
 sounds["golfclap"] = "Interface\\AddOns\\Deathlog\\Sounds\\golfclap.ogg"
 local fonts = LSM30:HashTable("font")
-fonts["blei00d"] = "Fonts\\blei00d.TTF"
+fonts["blei00d"] = "Fonts\\FRIZQT__.TTF"
 fonts["BreatheFire"] = "Interface\\AddOns\\Deathlog\\Fonts\\BreatheFire.ttf"
 fonts["BlackChancery"] = "Interface\\AddOns\\Deathlog\\Fonts\\BLKCHCRY.TTF"
 fonts["ArgosGeorge"] = "Interface\\AddOns\\Deathlog\\Fonts\\ArgosGeorge.ttf"
@@ -46,7 +46,7 @@ death_alert_frame.text:SetText(
 		.. " in Elywynn Forest."
 )
 
-death_alert_frame.text:SetFont("Fonts\\blei00d.TTF", 22, "")
+death_alert_frame.text:SetFont("Fonts\\FRIZQT__.TTF", 22, "")
 death_alert_frame.text:SetTextColor(1, 1, 1, 1)
 death_alert_frame.text:SetJustifyH("CENTER")
 death_alert_frame.text:SetParent(death_alert_frame)

@@ -8,13 +8,13 @@ ThreatClassic2DB = {
 		["Tadibey - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Dopesnare - Stitches"] = "Default",
+		["Dopecure - Stitches"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Dopeah - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Dopecure - Stitches"] = "Default",
-		["Dopesnare - Stitches"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -55,7 +55,6 @@ ThreatClassic2DB = {
 					0, -- [4]
 				},
 				["locked"] = true,
-				["height"] = 140,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -63,6 +62,7 @@ ThreatClassic2DB = {
 					655, -- [4]
 					-340, -- [5]
 				},
+				["height"] = 140,
 			},
 			["bar"] = {
 				["count"] = 8,

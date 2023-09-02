@@ -1,12 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[109] = {
-		},
-		["tip"] = {
+		[112] = {
 		},
 	},
-	["currentStep"] = 109,
+	["currentStep"] = 112,
 	["questObjectivesCache"] = {
 		[0] = 26,
 		[818] = {
@@ -175,6 +173,24 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[794] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Burning Blade Medallion: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6081] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[786] = {
 			{
 				["type"] = "object",
@@ -197,24 +213,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [3]
-		},
-		[6081] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["generated"] = true,
-				["text"] = "Objective Complete",
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[794] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Burning Blade Medallion: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[813] = {
 			{
@@ -252,33 +250,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[815] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Taillasher Egg: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6083] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Tame a Surf Crawler",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6082] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Tame an Armored Scorpid",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[784] = {
 			{
 				["type"] = "monster",
@@ -301,6 +272,33 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [3]
+		},
+		[6083] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Tame a Surf Crawler",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6082] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Tame an Armored Scorpid",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[815] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 3,
+				["text"] = "Taillasher Egg: 0/3",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 		[817] = {
 			{
@@ -337,9 +335,9 @@ RXPCData = {
 		[6394] = "Thazz'ril's Pick",
 		[794] = "Burning Blade Medallion",
 		[835] = "Securing the Lines",
-		[825] = "From The Wreckage....",
-		[812] = "Need for a Cure",
 		[786] = "Thwarting Kolkar Aggression",
+		[812] = "Need for a Cure",
+		[825] = "From The Wreckage....",
 		[813] = "Finding the Antidote",
 		[6062] = "Taming the Beast",
 		[5441] = "Lazy Peons",
@@ -379,8 +377,8 @@ RXPCData = {
 		[102] = true,
 		[44] = true,
 		[52] = true,
-		[90] = true,
 		[93] = true,
+		[90] = true,
 		[3] = true,
 		[89] = true,
 		[53] = true,
@@ -389,7 +387,7 @@ RXPCData = {
 		[23] = true,
 		[98] = true,
 	},
-	["currentStepId"] = 4201454889,
+	["currentStepId"] = 4201454976,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -519,10 +517,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Durotar"] = {
-							[826] = 850,
 							[817] = 700,
-							[825] = 700,
 							[808] = 775,
+							[825] = 700,
+							[826] = 850,
 						},
 					},
 				},
@@ -574,6 +572,29 @@ RXPCTrackingData = {
 						},
 					},
 				},
+				[12] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 2,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 36,
+							["year"] = 2023,
+							["hour"] = 19,
+							["weekday"] = 7,
+						},
+						["started"] = 28669,
+					},
+					["quests"] = {
+						["Orgrimmar"] = {
+							[5726] = 900,
+						},
+					},
+				},
 				[9] = {
 					["groupExperience"] = 306,
 					["deaths"] = 0,
@@ -613,12 +634,20 @@ RXPCTrackingData = {
 					},
 				},
 				[11] = {
-					["groupExperience"] = 0,
+					["groupExperience"] = 591,
 					["deaths"] = 0,
 					["mobs"] = {
 						["Durotar"] = {
-							["xp"] = 1558,
-							["count"] = 10,
+							["xp"] = 7820,
+							["count"] = 75,
+						},
+						["The Barrens"] = {
+							["xp"] = 271,
+							["count"] = 3,
+						},
+						["Orgrimmar"] = {
+							["xp"] = 1360,
+							["count"] = 2,
 						},
 					},
 					["timestamp"] = {
@@ -631,11 +660,27 @@ RXPCTrackingData = {
 							["hour"] = 17,
 							["weekday"] = 7,
 						},
+						["finished"] = 28668,
+						["dateFinished"] = {
+							["monthDay"] = 2,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 36,
+							["year"] = 2023,
+							["hour"] = 19,
+							["weekday"] = 7,
+						},
 						["started"] = 24346,
 					},
 					["quests"] = {
 						["Durotar"] = {
+							[806] = 900,
 							[835] = 875,
+							[828] = 90,
+							[827] = 900,
+						},
+						["Orgrimmar"] = {
+							[829] = 460,
 						},
 					},
 				},
@@ -663,26 +708,13 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["xp"] = 47,
 				},
-				["Langer"] = {
-					["timePlayed"] = 75.67499999998836,
-					["class"] = "HUNTER",
-					["xp"] = 33,
-				},
 				["Raec"] = {
-					["class"] = "SHAMAN",
+					["isRxp"] = true,
 					["lastSeen"] = 170405.206,
 					["xpPercentage"] = 38,
-					["isRxp"] = true,
-					["timePlayed"] = 111.0260000000126,
 					["level"] = 9,
-				},
-				["Ecstasia"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 163094.381,
-					["xpPercentage"] = 16,
-					["level"] = 7,
-					["timePlayed"] = 21.1020000000135,
-					["class"] = "WARLOCK",
+					["timePlayed"] = 111.0260000000126,
+					["class"] = "SHAMAN",
 				},
 				["Назроут"] = {
 					["timePlayed"] = 41.70399999999791,
@@ -690,12 +722,40 @@ RXPCComms = {
 					["xp"] = 44,
 				},
 				["Putsos"] = {
-					["class"] = "DRUID",
+					["isRxp"] = true,
 					["lastSeen"] = 168779.249,
 					["xpPercentage"] = 21,
-					["isRxp"] = true,
-					["timePlayed"] = 537.5260000000126,
 					["level"] = 11,
+					["timePlayed"] = 537.5260000000126,
+					["class"] = "DRUID",
+				},
+				["Baldurr"] = {
+					["timePlayed"] = 200.7049999999872,
+					["class"] = "WARRIOR",
+					["xp"] = 43,
+				},
+				["Langer"] = {
+					["timePlayed"] = 75.67499999998836,
+					["class"] = "HUNTER",
+					["xp"] = 33,
+				},
+				["Поминки"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 41,
+				},
+				["Unluckydead"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARLOCK",
+					["xp"] = 41,
+				},
+				["Ecstasia"] = {
+					["level"] = 7,
+					["lastSeen"] = 163094.381,
+					["xpPercentage"] = 16,
+					["class"] = "WARLOCK",
+					["timePlayed"] = 21.1020000000135,
+					["isRxp"] = true,
 				},
 			},
 		},
