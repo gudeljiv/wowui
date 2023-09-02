@@ -35,8 +35,8 @@ VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 #showtooltip Arcane Shot
-/startattack
 /cast !Auto Shot
+/startattack
 /cast Arcane Shot
 END
 VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
@@ -59,10 +59,6 @@ VER 3 000000000100000B " " "INV_Misc_QuestionMark"
 #showtooltip Kill Shot
 /stopcasting
 /cast [nochanneling: volley] Kill Shot
-END
-VER 3 000000000100000C " " "INV_Misc_QuestionMark"
-#showtooltip Steady Shot
-/cast Steady Shot
 END
 VER 3 000000000100000D " " "INV_Misc_QuestionMark"
 #showtooltip

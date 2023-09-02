@@ -6,13 +6,13 @@ VER 3 0000000000000011 " " "136106"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4540
-/castsequence [combat] reset=combat 
+/use [nocombat]item:11584
+/castsequence [combat] reset=combat item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:4599
@@ -21,7 +21,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:118
 END
 VER 3 0000000000000019 "prowl" "INV_Misc_QuestionMark"
 #showtooltip Prowl
@@ -31,6 +31,16 @@ VER 3 0000000000000019 "prowl" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
+END
+VER 3 0000000000000021 "RXPTargeting" "Ability_eyeoftheowl"
+/targetexact Makasgar
+/targetexact Captain Flat Tusk
+/targetexact Voodoo Trolls
+/targetexact Dustwind Storm Witch
+/targetexact Fizzle Darkstorm
+/targetexact Durotar Tiger
+/targetexact Bloodtalon Taillasher
+/targetlasttarget [dead]
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip

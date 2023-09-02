@@ -1,3 +1,4 @@
 Blizzard_CompactRaidFrames: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+RXPGuides: enabled

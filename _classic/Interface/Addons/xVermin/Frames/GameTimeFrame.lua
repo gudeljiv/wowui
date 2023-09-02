@@ -1,0 +1,3 @@
+local _, xVermin = ...
+
+GameTimeFrame:Hide()
