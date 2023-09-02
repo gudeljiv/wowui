@@ -3,8 +3,6 @@ RXPCData = {
 	["completedWaypoints"] = {
 		{
 		}, -- [1]
-		["tip"] = {
-		},
 	},
 	["currentStep"] = 1,
 	["questObjectivesCache"] = {
@@ -36,20 +34,20 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[5441] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Peons Awoken: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[789] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 10,
 				["text"] = "Scorpid Worker Tail: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[5441] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Peons Awoken: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -88,10 +86,10 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 49,
 							["year"] = 2023,
 							["hour"] = 8,
-							["minute"] = 49,
+							["weekday"] = 7,
 						},
 						["started"] = 0,
 					},

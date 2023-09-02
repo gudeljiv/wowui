@@ -44,7 +44,7 @@ local function TrackingIcon(texture)
 	end
 
 	-- Humanoids HUNTER
-	if (texture == 135942) then
+	if (texture == 19883) then
 		titm.text:SetText('HUMANOIDS')
 		TrackingIconFrame:Show()
 		TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_holy_prayerofhealing')
@@ -175,7 +175,8 @@ f2:SetScript(
 		if (
 			spell_id == 2580 or 
 			spell_id == 2383 or
-			spell_id == 1494 
+			spell_id == 1494 or
+			spell_id == 19883
 		) then
 			TrackingIcon(spell_id)
 		end

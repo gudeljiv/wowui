@@ -60,10 +60,6 @@ VER 3 000000000100000B " " "INV_Misc_QuestionMark"
 /stopcasting
 /cast [nochanneling: volley] Kill Shot
 END
-VER 3 000000000100000C " " "INV_Misc_QuestionMark"
-#showtooltip Steady Shot
-/cast Steady Shot
-END
 VER 3 000000000100000D " " "INV_Misc_QuestionMark"
 #showtooltip
 /dismount

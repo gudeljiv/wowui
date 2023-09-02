@@ -1,0 +1,15 @@
+------------------------------------------------------------------------
+r591 | Zimzarina | 2023-09-01 18:12:26 +0000 (Fri, 01 Sep 2023) | 1 line
+Changed paths:
+   M /trunk/Modules/BlackBook.lua
+   M /trunk/Modules/Express.lua
+   M /trunk/Modules/Forward.lua
+   M /trunk/Modules/OpenAll.lua
+   M /trunk/Modules/Rake.lua
+   M /trunk/Modules/Select.lua
+   M /trunk/Modules/TradeBlock.lua
+   M /trunk/Postal.lua
+
+All known remaining issues caused by Blizzard WoW Classic patch 1.14.4 have been fixed in this update.  This includes a fix for issue #349.
+------------------------------------------------------------------------
+

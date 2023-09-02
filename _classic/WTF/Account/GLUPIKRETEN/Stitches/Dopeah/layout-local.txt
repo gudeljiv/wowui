@@ -34,6 +34,13 @@ X: 3
 Y: -87
 W: 784
 H: 260
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 423
+Y: -116
+W: 128
+H: 64
 Frame: RXPTargetFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -41,10 +48,3 @@ X: 471
 Y: -109
 W: 99
 H: 68
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: CENTER
-X: 423
-Y: -116
-W: 252
-H: 175
