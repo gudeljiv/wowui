@@ -2,7 +2,7 @@
 GMMONEY = {
 	["Stitches"] = {
 		["Dopede"] = {
-			["GOLD"] = 167,
+			["GOLD"] = 230,
 			["CLASS"] = "SHAMAN",
 		},
 		["Dopeclaw"] = {
@@ -14,7 +14,7 @@ GMMONEY = {
 			["CLASS"] = "PRIEST",
 		},
 		["Dopeah"] = {
-			["GOLD"] = 5146,
+			["GOLD"] = 286,
 			["CLASS"] = "SHAMAN",
 		},
 		["Dopesick"] = {

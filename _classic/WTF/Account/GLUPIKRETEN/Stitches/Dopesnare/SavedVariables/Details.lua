@@ -7,19 +7,18 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 386,
+					["combatId"] = 407,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003928,
+							["totalabsorbed"] = 0.003546,
 							["friendlyfire"] = {
 							},
 							["damage_from"] = {
-								["Windfury Matriarch"] = true,
 							},
 							["targets"] = {
-								["Windfury Matriarch"] = 190,
+								["Flatland Prowler"] = 178,
 							},
 							["colocacao"] = 1,
 							["pets"] = {
@@ -28,10 +27,10 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 117.003928,
+							["total_without_pet"] = 102.003546,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["total"] = 190.003928,
+							["total"] = 178.003546,
 							["classe"] = "HUNTER",
 							["serial"] = "Player-5220-01B468FB",
 							["nome"] = "Dopesnare",
@@ -43,16 +42,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["n_max"] = 27,
 										["targets"] = {
-											["Windfury Matriarch"] = 104,
+											["Flatland Prowler"] = 94,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 104,
-										["n_min"] = 20,
+										["n_dmg"] = 94,
+										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 104,
+										["counter"] = 4,
+										["total"] = 94,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
@@ -63,60 +62,60 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									["Arcane Shot"] = {
+									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 13,
+										["n_max"] = 4,
 										["targets"] = {
-											["Windfury Matriarch"] = 13,
+											["Flatland Prowler"] = 8,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 13,
-										["n_min"] = 13,
+										["n_dmg"] = 8,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
+										["counter"] = 2,
+										["total"] = 8,
 										["c_max"] = 0,
-										["id"] = "Arcane Shot",
+										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["end_time"] = 1693738037,
-							["last_dps"] = 23.05872912623966,
+							["end_time"] = 1693747250,
+							["last_dps"] = 22.14525329683873,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 55.003928,
-							["start_time"] = 1693738028,
+							["damage_taken"] = 0.003546,
+							["start_time"] = 1693747242,
 							["delay"] = 0,
-							["last_event"] = 1693738036,
+							["last_event"] = 1693747249,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00137,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["totalabsorbed"] = 0.003757,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["damage_from"] = {
-								["Windfury Matriarch"] = true,
+								["Flatland Prowler"] = true,
 							},
 							["targets"] = {
-								["Windfury Matriarch"] = 73,
+								["Flatland Prowler"] = 76,
 							},
 							["pets"] = {
 							},
@@ -124,59 +123,30 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 73.00137000000001,
+							["total_without_pet"] = 76.00375700000001,
 							["dps_started"] = false,
-							["total"] = 73.00137000000001,
+							["total"] = 76.00375700000001,
 							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 10,
-										["targets"] = {
-											["Windfury Matriarch"] = 57,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 48,
-										["n_min"] = 9,
-										["g_dmg"] = 9,
-										["counter"] = 6,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 27,
 										["targets"] = {
-											["Windfury Matriarch"] = 16,
+											["Flatland Prowler"] = 27,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 16,
+										["n_dmg"] = 27,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 16,
+										["total"] = 27,
 										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
@@ -191,91 +161,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1693738037,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 9.00137,
-							["start_time"] = 1693738028,
-							["delay"] = 0,
-							["last_event"] = 1693738035,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00591,
-							["monster"] = true,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 9,
-								["Dopesnare"] = 55,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 64.00591,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 64.00591,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5252-1-82-2965-0000745D6E",
-							["nome"] = "Windfury Matriarch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Dopesnare"] = 55,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 55,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 55,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 10,
 										["targets"] = {
-											["Wolf <Dopesnare>"] = 9,
+											["Flatland Prowler"] = 49,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 9,
+										["n_dmg"] = 49,
 										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 9,
+										["counter"] = 6,
+										["total"] = 49,
 										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -285,7 +187,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -293,451 +195,58 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693738037,
+							["end_time"] = 1693747250,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 190.00591,
-							["start_time"] = 1693738029,
+							["damage_taken"] = 39.003757,
+							["start_time"] = 1693747242,
 							["delay"] = 0,
-							["last_event"] = 1693738034,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 386,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 386,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 386,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Dopesnare",
-							["buff_uptime"] = 9,
-							["spell_cast"] = {
-								["Auto Shot"] = 5,
-								["Arcane Shot"] = 1,
-							},
-							["pets"] = {
-								"Wolf <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["activedamt"] = 1,
-										["id"] = "Aspect of the Hawk",
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693738037,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Bite"] = 1,
-								["Growl"] = 2,
-							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
-							["last_event"] = 0,
+							["last_event"] = 1693747249,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Windfury Matriarch",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
-							},
-							["last_event"] = 0,
+							["totalabsorbed"] = 0.00886,
 							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2965-0000745D6E",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 386,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["tempo_start"] = 1693738028,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["TotalElapsedCombatTime"] = 152873.326,
-				["enemy"] = "Windfury Matriarch",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					254, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					117, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["last_events_tables"] = {
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 190.003928,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 152873.326,
-				["instance_type"] = "none",
-				["combat_id"] = 386,
-				["combat_counter"] = 439,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 152873.326,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "12:47:17",
-				["data_inicio"] = "12:47:09",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Matriarch"] = 1,
-				},
-				["start_time"] = 152864.853,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Matriarch",
-			}, -- [1]
-			{
-				{
-					["combatId"] = 385,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005478,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Wolf <Dopesnare>"] = true,
 							},
 							["targets"] = {
-								["Wolf <Dopesnare>"] = 64,
+								["Wolf <Dopesnare>"] = 39,
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 64.005478,
-							["monster"] = true,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1693738024,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 39.00886,
 							["on_hold"] = false,
-							["nome"] = "Windfury Sorceress",
+							["dps_started"] = false,
+							["total"] = 39.00886,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-1-578-3566-000074874A",
+							["nome"] = "Flatland Prowler",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 11,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Wolf <Dopesnare>"] = 19,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 11,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 11,
-									},
-									["Frostbolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["n_max"] = 10,
 										["targets"] = {
-											["Wolf <Dopesnare>"] = 45,
+											["Wolf <Dopesnare>"] = 39,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 45,
-										["n_min"] = 22,
+										["n_dmg"] = 39,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 45,
+										["counter"] = 4,
+										["total"] = 39,
 										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 64.005478,
-							["serial"] = "Creature-0-5252-1-82-2964-0000745D54",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693738023,
-							["damage_taken"] = 190.005478,
-							["start_time"] = 1693738015,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008442,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Windfury Sorceress"] = 190,
-							},
-							["pets"] = {
-								"Wolf <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 80.008442,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["end_time"] = 1693738024,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Windfury Sorceress"] = 67,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 67,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 67,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Windfury Sorceress"] = 13,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 190.008442,
-							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 21.53314165912799,
-							["custom"] = 0,
-							["last_event"] = 1693738023,
-							["damage_taken"] = 0.008442,
-							["start_time"] = 1693738015,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005585,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
-							["damage_from"] = {
-								["Windfury Sorceress"] = true,
-							},
-							["targets"] = {
-								["Windfury Sorceress"] = 110,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 110.005585,
-							["dps_started"] = false,
-							["total"] = 110.005585,
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 19,
-										["g_amt"] = 2,
-										["n_max"] = 20,
-										["targets"] = {
-											["Windfury Sorceress"] = 90,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 51,
-										["n_min"] = 10,
-										["g_dmg"] = 20,
-										["counter"] = 7,
-										["total"] = 90,
-										["c_max"] = 19,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -749,84 +258,74 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 19,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Windfury Sorceress"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693738024,
+							["end_time"] = 1693747250,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 64.005585,
-							["start_time"] = 1693738015,
+							["damage_taken"] = 178.00886,
+							["start_time"] = 1693747243,
 							["delay"] = 0,
-							["last_event"] = 1693738023,
+							["last_event"] = 1693747249,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 385,
+					["combatId"] = 407,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 385,
+					["combatId"] = 407,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 385,
+					["combatId"] = 407,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 9,
 							["spell_cast"] = {
-								["Auto Shot"] = 3,
-								["Arcane Shot"] = 1,
+								["Auto Shot"] = 4,
+								["Serpent Sting"] = 1,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 8,
 							["tipo"] = 4,
+							["last_event"] = 1693747250,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -846,7 +345,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Hawk",
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -855,7 +354,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693738024,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -866,31 +365,15 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								["Bite"] = 1,
-								["Growl"] = 1,
+								["Growl"] = 2,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["last_event"] = 0,
 						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["nome"] = "Windfury Sorceress",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2964-0000745D54",
-							["classe"] = "UNKNOW",
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 385,
+					["combatId"] = 407,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -898,19 +381,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152861.867,
-				["tempo_start"] = 1693738015,
+				["CombatStartedAt"] = 162078.265,
+				["tempo_start"] = 1693747242,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Windfury Sorceress",
-				["combat_counter"] = 438,
+				["enemy"] = "Flatland Prowler",
+				["combat_counter"] = 463,
 				["playing_solo"] = true,
 				["totals"] = {
-					254, -- [1]
+					217, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -937,15 +420,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 152860.799,
+				["CombatEndedAt"] = 162086.37,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "12:46:55",
-				["end_time"] = 152860.799,
+				["data_inicio"] = "15:20:42",
+				["end_time"] = 162086.37,
 				["totals_grupo"] = {
-					80, -- [1]
+					102, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -965,8 +448,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 385,
-				["TotalElapsedCombatTime"] = 9.723999999987427,
+				["combat_id"] = 407,
+				["TotalElapsedCombatTime"] = 8.104999999981374,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -983,36 +466,36 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 190.008442,
+							["Dopesnare"] = 178.003546,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
-					["Windfury Sorceress"] = 1,
+					["Flatland Prowler"] = 1,
 				},
-				["data_fim"] = "12:47:05",
+				["data_fim"] = "15:20:51",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152851.075,
-				["contra"] = "Windfury Sorceress",
+				["start_time"] = 162078.265,
+				["contra"] = "Flatland Prowler",
 				["TimeData"] = {
 				},
-			}, -- [2]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 384,
+					["combatId"] = 406,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002746,
+							["totalabsorbed"] = 0.001171,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 389,
+								["Prairie Wolf Alpha"] = 201,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -1020,64 +503,35 @@ _detalhes_database = {
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 215.002746,
+							["total_without_pet"] = 113.001171,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["end_time"] = 1693737995,
+							["end_time"] = 1693747210,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Raptor Strike"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 27,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 0,
+											["Prairie Wolf Alpha"] = 87,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 87,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 5,
+										["total"] = 87,
 										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 80,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Prairie Wolf Alpha"] = 176,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 96,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 176,
-										["c_max"] = 40,
+										["MISS"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1087,9 +541,9 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
-										["c_min"] = 40,
+										["c_min"] = 0,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
@@ -1098,214 +552,18 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 13,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 39,
+											["Prairie Wolf Alpha"] = 26,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 39,
+										["n_dmg"] = 26,
 										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 39,
+										["counter"] = 2,
+										["total"] = 26,
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 389.002746,
-							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 16.9744183793573,
-							["custom"] = 0,
-							["last_event"] = 1693737994,
-							["damage_taken"] = 0.002746,
-							["start_time"] = 1693737971,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007234,
-							["damage_from"] = {
-								["Wolf <Dopesnare>"] = true,
-								["Dopesnare"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 142,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 142.007234,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1693737995,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Wolf"] = 0,
-											["Wolf <Dopesnare>"] = 142,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 142,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 22,
-										["DODGE"] = 1,
-										["total"] = 142,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Threatening Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Threatening Growl",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 142.007234,
-							["serial"] = "Creature-0-5252-1-82-2960-00007443CC",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693737993,
-							["damage_taken"] = 389.007234,
-							["start_time"] = 1693737972,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001863,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
-							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
-							},
-							["targets"] = {
-								["Prairie Wolf Alpha"] = 174,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 174.001863,
-							["dps_started"] = false,
-							["total"] = 174.001863,
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 14,
-										["g_amt"] = 1,
-										["n_max"] = 17,
-										["targets"] = {
-											["Prairie Wolf Alpha"] = 133,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 112,
-										["n_min"] = 3,
-										["g_dmg"] = 7,
-										["counter"] = 17,
-										["total"] = 133,
-										["c_max"] = 14,
-										["DODGE"] = 2,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 3,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 14,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Prairie Wolf Alpha"] = 41,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 41,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 41,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1318,33 +576,202 @@ _detalhes_database = {
 									},
 								},
 							},
+							["grupo"] = true,
+							["total"] = 201.001171,
+							["serial"] = "Player-5220-01B468FB",
+							["last_dps"] = 17.49357449957902,
+							["custom"] = 0,
+							["last_event"] = 1693747209,
+							["damage_taken"] = 0.001171,
+							["start_time"] = 1693747198,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003592,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 47,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 47.003592,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1693747210,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Prairie Wolf Alpha",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Wolf"] = 0,
+											["Wolf <Dopesnare>"] = 47,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 47,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 47.003592,
+							["serial"] = "Creature-0-5210-1-578-2960-0000745E30",
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693737995,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693747208,
+							["damage_taken"] = 201.003592,
+							["start_time"] = 1693747199,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007828,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["damage_from"] = {
+								["Prairie Wolf Alpha"] = true,
+							},
+							["targets"] = {
+								["Prairie Wolf Alpha"] = 88,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 88.007828,
+							["dps_started"] = false,
+							["total"] = 88.007828,
+							["classe"] = "PET",
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 29,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 75,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 46,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["MISS"] = 1,
+										["total"] = 75,
+										["c_max"] = 16,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 13,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693747210,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 142.001863,
-							["start_time"] = 1693737972,
+							["damage_taken"] = 47.007828,
+							["start_time"] = 1693747198,
 							["delay"] = 0,
-							["last_event"] = 1693737994,
+							["last_event"] = 1693747209,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 384,
+					["combatId"] = 406,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 384,
+					["combatId"] = 406,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 384,
+					["combatId"] = 406,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1353,11 +780,10 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 24,
+							["buff_uptime"] = 12,
 							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Raptor Strike"] = 1,
-								["Arcane Shot"] = 2,
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -1372,7 +798,7 @@ _detalhes_database = {
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["actived_at"] = 1693738011,
+										["actived_at"] = 1693747238,
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
@@ -1384,7 +810,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Hawk",
 										["targets"] = {
 										},
-										["uptime"] = 24,
+										["uptime"] = 12,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1393,7 +819,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693738011,
+							["last_event"] = 1693747238,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1404,31 +830,16 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 4,
+								["Growl"] = 2,
+								["Bite"] = 1,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["last_event"] = 0,
 						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["nome"] = "Prairie Wolf Alpha",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Threatening Growl"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2960-00007443CC",
-							["classe"] = "UNKNOW",
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 384,
+					["combatId"] = 406,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1436,19 +847,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["tempo_start"] = 1693737971,
+				["tempo_start"] = 1693747198,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 152832.006,
+				["TotalElapsedCombatTime"] = 162046.636,
 				["enemy"] = "Prairie Wolf Alpha",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					531, -- [1]
+					247.998598, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1471,7 +882,7 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					215, -- [1]
+					113, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1513,43 +924,43 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 389.002746,
+							["Dopesnare"] = 201.001171,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 152832.006,
+				["end_time"] = 162046.636,
 				["instance_type"] = "none",
-				["combat_id"] = 384,
-				["combat_counter"] = 437,
+				["combat_id"] = 406,
+				["combat_counter"] = 462,
 				["player_last_events"] = {
 				},
-				["CombatEndedAt"] = 152832.006,
+				["CombatEndedAt"] = 162046.636,
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "12:46:36",
-				["data_inicio"] = "12:46:12",
+				["data_fim"] = "15:20:11",
+				["data_inicio"] = "15:19:59",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Prairie Wolf Alpha"] = 2,
+					["Prairie Wolf Alpha"] = 1,
 				},
-				["start_time"] = 152807.938,
+				["start_time"] = 162034.896,
 				["TimeData"] = {
 				},
 				["contra"] = "Prairie Wolf Alpha",
-			}, -- [3]
+			}, -- [2]
 			{
 				{
-					["combatId"] = 383,
+					["combatId"] = 405,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00567,
+							["totalabsorbed"] = 0.007822,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Taloned Swoop"] = 181,
+								["Elder Plainstrider"] = 181,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -1557,12 +968,12 @@ _detalhes_database = {
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 82.00567000000001,
+							["total_without_pet"] = 104.007822,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["end_time"] = 1693737949,
+							["end_time"] = 1693747187,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Dopesnare",
@@ -1574,16 +985,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 28,
+										["n_max"] = 24,
 										["targets"] = {
-											["Taloned Swoop"] = 69,
+											["Elder Plainstrider"] = 91,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 69,
-										["n_min"] = 20,
+										["n_dmg"] = 91,
+										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 69,
+										["counter"] = 4,
+										["total"] = 91,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
@@ -1594,7 +1005,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -1605,7 +1016,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 13,
 										["targets"] = {
-											["Taloned Swoop"] = 13,
+											["Elder Plainstrider"] = 13,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13,
@@ -1630,25 +1041,25 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
-							["total"] = 181.00567,
+							["total"] = 181.007822,
 							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 20.9134222992518,
+							["last_dps"] = 22.84298611812485,
 							["custom"] = 0,
-							["last_event"] = 1693737948,
-							["damage_taken"] = 0.00567,
-							["start_time"] = 1693737940,
+							["last_event"] = 1693747187,
+							["damage_taken"] = 0.007822,
+							["start_time"] = 1693747179,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003334,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["totalabsorbed"] = 0.00702,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["damage_from"] = {
-								["Taloned Swoop"] = true,
+								["Elder Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Taloned Swoop"] = 99,
+								["Elder Plainstrider"] = 77,
 							},
 							["pets"] = {
 							},
@@ -1656,60 +1067,30 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 99.003334,
+							["total_without_pet"] = 77.00702,
 							["dps_started"] = false,
-							["total"] = 99.003334,
+							["total"] = 77.00702,
 							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 37,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Taloned Swoop"] = 82,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 45,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 82,
-										["c_max"] = 37,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 37,
-									},
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 17,
+										["n_max"] = 14,
 										["targets"] = {
-											["Taloned Swoop"] = 17,
+											["Elder Plainstrider"] = 14,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 17,
-										["n_min"] = 17,
+										["n_dmg"] = 14,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 17,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
@@ -1724,42 +1105,101 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Elder Plainstrider"] = 63,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 63,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Growl"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Elder Plainstrider"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = "Growl",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693737949,
+							["end_time"] = 1693747187,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 39.003334,
-							["start_time"] = 1693737940,
+							["damage_taken"] = 19.00702,
+							["start_time"] = 1693747179,
 							["delay"] = 0,
-							["last_event"] = 1693737948,
+							["last_event"] = 1693747187,
 						}, -- [2]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002684,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008121,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Wolf <Dopesnare>"] = true,
 							},
 							["targets"] = {
-								["Wolf <Dopesnare>"] = 39,
+								["Wolf <Dopesnare>"] = 19,
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 39.002684,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1693737949,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 19.008121,
 							["on_hold"] = false,
-							["nome"] = "Taloned Swoop",
+							["dps_started"] = false,
+							["total"] = 19.008121,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-1-578-2957-0000745D22",
+							["nome"] = "Elder Plainstrider",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -1771,59 +1211,58 @@ _detalhes_database = {
 										["n_max"] = 10,
 										["targets"] = {
 											["Wolf"] = 0,
-											["Wolf <Dopesnare>"] = 39,
+											["Wolf <Dopesnare>"] = 19,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 39,
+										["n_dmg"] = 19,
 										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 39,
+										["counter"] = 3,
+										["total"] = 19,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
-							["total"] = 39.002684,
-							["serial"] = "Creature-0-5252-1-82-2971-00007463BD",
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1693747187,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693737948,
-							["damage_taken"] = 181.002684,
-							["start_time"] = 1693737940,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 181.008121,
+							["start_time"] = 1693747179,
+							["delay"] = 0,
+							["last_event"] = 1693747183,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 383,
+					["combatId"] = 405,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 383,
+					["combatId"] = 405,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 383,
+					["combatId"] = 405,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1832,10 +1271,9 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 9,
+							["buff_uptime"] = 8,
 							["spell_cast"] = {
-								["Auto Shot"] = 3,
-								["Arcane Shot"] = 1,
+								["Auto Shot"] = 5,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -1850,7 +1288,7 @@ _detalhes_database = {
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["actived_at"] = 1693737970,
+										["actived_at"] = 1693747195,
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
@@ -1862,7 +1300,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Hawk",
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1871,7 +1309,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737970,
+							["last_event"] = 1693747195,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1883,15 +1321,15 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["spell_cast"] = {
 								["Bite"] = 1,
-								["Growl"] = 2,
+								["Growl"] = 1,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 383,
+					["combatId"] = 405,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1899,19 +1337,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152807.604,
-				["tempo_start"] = 1693737940,
+				["CombatStartedAt"] = 162034.345,
+				["tempo_start"] = 1693747179,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Taloned Swoop",
-				["combat_counter"] = 436,
+				["enemy"] = "Elder Plainstrider",
+				["combat_counter"] = 461,
 				["playing_solo"] = true,
 				["totals"] = {
-					219.992771, -- [1]
+					200, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1938,15 +1376,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 152785.936,
+				["CombatEndedAt"] = 162023.487,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "12:45:40",
-				["end_time"] = 152785.936,
+				["data_inicio"] = "15:19:40",
+				["end_time"] = 162023.487,
 				["totals_grupo"] = {
-					82, -- [1]
+					104, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1966,8 +1404,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 383,
-				["TotalElapsedCombatTime"] = 9.592000000004191,
+				["combat_id"] = 405,
+				["TotalElapsedCombatTime"] = 162023.487,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -1984,38 +1422,36 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 181.00567,
+							["Dopesnare"] = 181.007822,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
-					["Taloned Swoop"] = 1,
-					["Prairie Wolf Alpha"] = 1,
+					["Elder Plainstrider"] = 1,
 				},
-				["data_fim"] = "12:45:50",
+				["data_fim"] = "15:19:48",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152776.344,
-				["contra"] = "Taloned Swoop",
+				["start_time"] = 162015.563,
 				["TimeData"] = {
 				},
-			}, -- [4]
+				["pvp"] = true,
+			}, -- [3]
 			{
 				{
-					["combatId"] = 382,
+					["combatId"] = 404,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006793,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007073,
 							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 228,
+								["Elder Plainstrider"] = 159,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -2023,12 +1459,12 @@ _detalhes_database = {
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 145.006793,
+							["total_without_pet"] = 77.00707299999999,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["end_time"] = 1693737890,
+							["end_time"] = 1693747167,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Dopesnare",
@@ -2036,21 +1472,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 37,
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 23,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 145,
+											["Elder Plainstrider"] = 64,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 108,
-										["n_min"] = 19,
+										["n_dmg"] = 64,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 145,
-										["c_max"] = 37,
+										["counter"] = 4,
+										["total"] = 64,
+										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2059,28 +1496,27 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["b_dmg"] = 20,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 37,
+										["c_min"] = 0,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 13,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 0,
+											["Elder Plainstrider"] = 13,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 0,
+										["total"] = 13,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
@@ -2090,32 +1526,32 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 228.006793,
+							["total"] = 159.007073,
 							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 17.63802839019648,
+							["last_dps"] = 20.23763179333352,
 							["custom"] = 0,
-							["last_event"] = 1693737889,
-							["damage_taken"] = 10.006793,
-							["start_time"] = 1693737878,
+							["last_event"] = 1693747167,
+							["damage_taken"] = 0.007073,
+							["start_time"] = 1693747159,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004123,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["totalabsorbed"] = 0.006639,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
+								["Elder Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 83,
+								["Elder Plainstrider"] = 82,
 							},
 							["pets"] = {
 							},
@@ -2123,9 +1559,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 83.00412299999999,
+							["total_without_pet"] = 82.006639,
 							["dps_started"] = false,
-							["total"] = 83.00412299999999,
+							["total"] = 82.006639,
 							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
@@ -2137,25 +1573,23 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 17,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 67,
+											["Elder Plainstrider"] = 67,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 67,
-										["n_min"] = 7,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["DODGE"] = 1,
+										["counter"] = 7,
 										["total"] = 67,
 										["c_max"] = 0,
-										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
@@ -2168,24 +1602,23 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 15,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 16,
+											["Elder Plainstrider"] = 15,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 16,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
+										["counter"] = 1,
+										["total"] = 15,
 										["c_max"] = 0,
-										["a_amt"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
@@ -2197,64 +1630,533 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693737890,
+							["end_time"] = 1693747167,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 59.004123,
-							["start_time"] = 1693737878,
+							["damage_taken"] = 17.006639,
+							["start_time"] = 1693747159,
 							["delay"] = 0,
-							["last_event"] = 1693737889,
+							["last_event"] = 1693747167,
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005168,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003875,
 							["damage_from"] = {
-								["Wolf <Dopesnare>"] = true,
-								["Malmros"] = true,
 								["Dopesnare"] = true,
+								["Wolf <Dopesnare>"] = true,
 							},
 							["targets"] = {
-								["Wolf <Dopesnare>"] = 59,
-								["Malmros"] = 7,
-								["Dopesnare"] = 10,
+								["Wolf <Dopesnare>"] = 17,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 17.003875,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 17.003875,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5210-1-578-2957-0000745CAF",
+							["nome"] = "Elder Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 17,
+											["Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 17,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693747167,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 159.003875,
+							["start_time"] = 1693747163,
+							["delay"] = 0,
+							["last_event"] = 1693747165,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 404,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 404,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 404,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Dopesnare",
+							["buff_uptime"] = 8,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693747175,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Aspect of the Hawk"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Hawk",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["last_event"] = 1693747175,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["nome"] = "Elder Plainstrider",
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Dust Cloud"] = 1,
+							},
+							["serial"] = "Creature-0-5210-1-578-2957-0000745CAF",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 404,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 162015.462,
+				["tempo_start"] = 1693747159,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Elder Plainstrider",
+				["combat_counter"] = 460,
+				["playing_solo"] = true,
+				["totals"] = {
+					176, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 162004.103,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:19:20",
+				["end_time"] = 162004.103,
+				["totals_grupo"] = {
+					77, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 404,
+				["TotalElapsedCombatTime"] = 8.489999999990687,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopesnare"] = 159.007073,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Elder Plainstrider"] = 1,
+				},
+				["data_fim"] = "15:19:28",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 161995.613,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [4]
+			{
+				{
+					["combatId"] = 403,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.00191,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 188,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 118.00191,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1693747072,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 105,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 105,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 105,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 188.00191,
+							["serial"] = "Player-5220-01B468FB",
+							["last_dps"] = 16.55383551991718,
+							["custom"] = 0,
+							["last_event"] = 1693747071,
+							["damage_taken"] = 0.00191,
+							["start_time"] = 1693747061,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 69905,
+							["totalabsorbed"] = 0.003057,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 70,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 70.003057,
+							["dps_started"] = false,
+							["total"] = 70.003057,
+							["classe"] = "PET",
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 22,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 22,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Flatland Prowler"] = 48,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 3,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693747072,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 46.003057,
+							["start_time"] = 1693747061,
+							["delay"] = 0,
+							["last_event"] = 1693747070,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.003378,
+							["damage_from"] = {
+								["Dopesnare"] = true,
+								["Wolf <Dopesnare>"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 46,
 							},
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 76.005168,
+							["total_without_pet"] = 46.003378,
 							["monster"] = true,
 							["fight_component"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1693737940,
+							["end_time"] = 1693747072,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
-							["nome"] = "Prairie Wolf Alpha",
+							["nome"] = "Flatland Prowler",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 11,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10,
+										["n_max"] = 11,
 										["targets"] = {
-											["Malmros"] = 7,
-											["Wolf <Dopesnare>"] = 59,
-											["Wolf"] = 0,
-											["Dopesnare"] = 10,
+											["Wolf <Dopesnare>"] = 46,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 65,
-										["n_min"] = 7,
+										["n_dmg"] = 46,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 76,
-										["c_max"] = 11,
-										["DODGE"] = 1,
+										["counter"] = 5,
+										["total"] = 46,
+										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2264,9 +2166,556 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 8,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
-										["c_min"] = 11,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 46.003378,
+							["serial"] = "Creature-0-5210-1-578-3566-00007468B5",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693747069,
+							["damage_taken"] = 188.003378,
+							["start_time"] = 1693747061,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 403,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 403,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 403,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Dopesnare",
+							["buff_uptime"] = 11,
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693747157,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Aspect of the Hawk"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Hawk",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["last_event"] = 1693747157,
+						}, -- [1]
+						{
+							["flag_original"] = 69905,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 2,
+							},
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 403,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["tempo_start"] = 1693747061,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 161908.904,
+				["enemy"] = "Flatland Prowler",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					233.992397, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					118, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopesnare"] = 188.00191,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 161908.904,
+				["instance_type"] = "none",
+				["combat_id"] = 403,
+				["combat_counter"] = 459,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 161908.904,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "15:17:53",
+				["data_inicio"] = "15:17:42",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
+				["start_time"] = 161897.547,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Prowler",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 402,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005253,
+							["damage_from"] = {
+								["Prairie Wolf Alpha"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 197,
+								["Prairie Wolf Alpha"] = 178,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 241.005253,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693747034,
+							["dps_started"] = false,
+							["total"] = 375.005253,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 108,
+											["Prairie Wolf Alpha"] = 107,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 215,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 215,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+											["Prairie Wolf Alpha"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 26,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5220-01B468FB",
+							["last_dps"] = 17.46891754786075,
+							["custom"] = 0,
+							["last_event"] = 1693747033,
+							["damage_taken"] = 7.005253,
+							["start_time"] = 1693747013,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002541,
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+								["Prairie Wolf Alpha"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 76,
+								["Prairie Wolf Alpha"] = 58,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 134.002541,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["end_time"] = 1693747034,
+							["dps_started"] = false,
+							["total"] = 134.002541,
+							["on_hold"] = false,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Flatland Prowler"] = 63,
+											["Prairie Wolf Alpha"] = 45,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 108,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["DODGE"] = 1,
+										["total"] = 108,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+											["Prairie Wolf Alpha"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 26,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693747060,
+							["damage_taken"] = 145.002541,
+							["start_time"] = 1693747013,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00849,
+							["damage_from"] = {
+								["Dopesnare"] = true,
+								["Wolf <Dopesnare>"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 101,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5210-1-578-3566-0000746DCB",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 101.00849,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 101.00849,
+							["end_time"] = 1693747034,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 101,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 101,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 101,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 7,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693747033,
+							["damage_taken"] = 197.00849,
+							["start_time"] = 1693747014,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006125,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Cestlavie"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 44,
+								["Cestlavie"] = 11,
+								["Dopesnare"] = 7,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5210-1-578-2960-000074735E",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 62.006125,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 62.006125,
+							["end_time"] = 1693747061,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Prairie Wolf Alpha",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Cestlavie"] = 11,
+											["Wolf <Dopesnare>"] = 44,
+											["Wolf"] = 0,
+											["Dopesnare"] = 7,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 62,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 62,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 6,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									["Threatening Growl"] = {
 										["c_amt"] = 0,
@@ -2297,34 +2746,33 @@ _detalhes_database = {
 									},
 								},
 							},
-							["total"] = 76.005168,
-							["serial"] = "Creature-0-5252-1-82-2960-0000746231",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693737939,
-							["damage_taken"] = 277.005168,
-							["start_time"] = 1693737877,
+							["last_event"] = 1693747059,
+							["damage_taken"] = 259.006125,
+							["start_time"] = 1693747014,
 							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [3]
+						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 382,
+					["combatId"] = 402,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 382,
+					["combatId"] = 402,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 382,
+					["combatId"] = 402,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -2333,10 +2781,10 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 16,
+							["buff_uptime"] = 21,
 							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 1,
+								["Auto Shot"] = 10,
+								["Arcane Shot"] = 2,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -2347,13 +2795,13 @@ _detalhes_database = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Furious Howl"] = {
-										["activedamt"] = 2,
+										["activedamt"] = 1,
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["actived_at"] = 1693737936,
-										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["actived_at"] = 1693747059,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = true,
 										["counter"] = 0,
@@ -2363,7 +2811,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Hawk",
 										["targets"] = {
 										},
-										["uptime"] = 13,
+										["uptime"] = 21,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2372,7 +2820,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737936,
+							["last_event"] = 1693747059,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -2383,15 +2831,14 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								["Growl"] = 3,
-								["Furious Howl"] = 1,
+								["Growl"] = 4,
 								["Bite"] = 2,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["last_event"] = 0,
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
 							["nome"] = "Prairie Wolf Alpha",
 							["tipo"] = 4,
 							["pets"] = {
@@ -2402,13 +2849,13 @@ _detalhes_database = {
 							},
 							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2960-0000746231",
+							["serial"] = "Creature-0-5210-1-578-2960-000074735E",
 							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 382,
+					["combatId"] = 402,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2416,19 +2863,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["tempo_start"] = 1693737877,
+				["CombatStartedAt"] = 161894.294,
+				["tempo_start"] = 1693747013,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 152726.419,
-				["enemy"] = "Prairie Wolf Alpha",
-				["cleu_events"] = {
-					["n"] = 1,
+				["last_events_tables"] = {
 				},
+				["enemy"] = "Prairie Wolf Alpha",
+				["combat_counter"] = 458,
 				["playing_solo"] = true,
 				["totals"] = {
-					303.99429, -- [1]
+					537.996281, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2450,8 +2897,20 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 161871.241,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:16:54",
+				["end_time"] = 161871.241,
 				["totals_grupo"] = {
-					145, -- [1]
+					241, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2471,13 +2930,9 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["last_events_tables"] = {
-				},
+				["combat_id"] = 402,
+				["TotalElapsedCombatTime"] = 161871.241,
 				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2493,43 +2948,37 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 228.006793,
+							["Dopesnare"] = 375.005253,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 152726.419,
-				["instance_type"] = "none",
-				["combat_id"] = 382,
-				["combat_counter"] = 435,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 152726.419,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "12:44:51",
-				["data_inicio"] = "12:44:38",
-				["CombatSkillCache"] = {
-				},
 				["frags"] = {
+					["Flatland Prowler"] = 1,
 					["Prairie Wolf Alpha"] = 1,
 				},
-				["start_time"] = 152713.492,
+				["data_fim"] = "15:17:15",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 161849.774,
+				["contra"] = "Prairie Wolf Alpha",
 				["TimeData"] = {
 				},
-				["contra"] = "Prairie Wolf Alpha",
-			}, -- [5]
+			}, -- [6]
 			{
 				{
-					["combatId"] = 381,
+					["combatId"] = 401,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006553,
+							["totalabsorbed"] = 0.006326,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Flatland Prowler"] = 196,
+								["Flatland Prowler"] = 178,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
@@ -2537,12 +2986,12 @@ _detalhes_database = {
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 108.006553,
+							["total_without_pet"] = 102.006326,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["end_time"] = 1693737851,
+							["end_time"] = 1693746955,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Dopesnare",
@@ -2554,16 +3003,483 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 30,
 										["targets"] = {
-											["Flatland Prowler"] = 95,
+											["Flatland Prowler"] = 76,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 95,
-										["n_min"] = 21,
+										["n_dmg"] = 76,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 76,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 26,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Flatland Prowler"] = 26,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 26,
+										["c_max"] = 26,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 26,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 178.006326,
+							["serial"] = "Player-5220-01B468FB",
+							["last_dps"] = 18.27392731756143,
+							["custom"] = 0,
+							["last_event"] = 1693746954,
+							["damage_taken"] = 0.006326,
+							["start_time"] = 1693746946,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00885,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 76,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 76.00885,
+							["dps_started"] = false,
+							["total"] = 76.00885,
+							["classe"] = "PET",
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Flatland Prowler"] = 63,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 63,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693746955,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 47.00885,
+							["start_time"] = 1693746946,
+							["delay"] = 0,
+							["last_event"] = 1693746954,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004149,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Cestlavie"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Cestlavie"] = 17,
+								["Wolf <Dopesnare>"] = 47,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 64.004149,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1693747013,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 47,
+											["Cestlavie"] = 17,
+											["Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 64,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["DODGE"] = 1,
+										["total"] = 64,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 64.004149,
+							["serial"] = "Creature-0-5210-1-578-3566-000074775B",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693747012,
+							["damage_taken"] = 287.004149,
+							["start_time"] = 1693746945,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 401,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 401,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 401,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Dopesnare",
+							["buff_uptime"] = 10,
+							["spell_cast"] = {
+								["Auto Shot"] = 3,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693747012,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Aspect of the Hawk"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Hawk",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["last_event"] = 1693747012,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 401,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 161848.556,
+				["tempo_start"] = 1693746945,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["combat_counter"] = 457,
+				["playing_solo"] = true,
+				["totals"] = {
+					241.99204, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 161791.791,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:15:46",
+				["end_time"] = 161791.791,
+				["totals_grupo"] = {
+					102, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 401,
+				["TotalElapsedCombatTime"] = 161791.791,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopesnare"] = 178.006326,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
+				["data_fim"] = "15:15:56",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 161782.05,
+				["contra"] = "Flatland Prowler",
+				["TimeData"] = {
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 400,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.008627,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 183,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 98.008627,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1693746930,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 85,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 85,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 95,
+										["total"] = 85,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
@@ -2610,25 +3526,25 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
-							["total"] = 196.006553,
+							["total"] = 183.008627,
 							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 19.29578194527278,
+							["last_dps"] = 18.53251918987342,
 							["custom"] = 0,
-							["last_event"] = 1693737850,
-							["damage_taken"] = 0.006553,
-							["start_time"] = 1693737840,
+							["last_event"] = 1693746929,
+							["damage_taken"] = 0.008627,
+							["start_time"] = 1693746919,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006602,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["totalabsorbed"] = 0.005555,
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["damage_from"] = {
 								["Flatland Prowler"] = true,
 							},
 							["targets"] = {
-								["Flatland Prowler"] = 88,
+								["Flatland Prowler"] = 85,
 							},
 							["pets"] = {
 							},
@@ -2636,9 +3552,9 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 88.006602,
+							["total_without_pet"] = 85.005555,
 							["dps_started"] = false,
-							["total"] = 88.006602,
+							["total"] = 85.005555,
 							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
@@ -2646,22 +3562,22 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 30,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 16,
 										["targets"] = {
-											["Flatland Prowler"] = 72,
+											["Flatland Prowler"] = 85,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 72,
-										["n_min"] = 8,
+										["n_dmg"] = 55,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
 										["counter"] = 8,
-										["total"] = 72,
-										["c_max"] = 0,
-										["DODGE"] = 1,
+										["total"] = 85,
+										["c_max"] = 16,
+										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2671,72 +3587,43 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Flatland Prowler"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 14,
 									},
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1693737851,
+							["end_time"] = 1693746930,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 39.006602,
-							["start_time"] = 1693737840,
+							["damage_taken"] = 37.005555,
+							["start_time"] = 1693746919,
 							["delay"] = 0,
-							["last_event"] = 1693737850,
+							["last_event"] = 1693746929,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008716,
+							["totalabsorbed"] = 0.007877,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Wolf <Dopesnare>"] = true,
 							},
 							["targets"] = {
-								["Wolf <Dopesnare>"] = 39,
+								["Wolf <Dopesnare>"] = 37,
 							},
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 39.008716,
+							["total_without_pet"] = 37.007877,
 							["monster"] = true,
 							["fight_component"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1693737851,
+							["end_time"] = 1693746930,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Flatland Prowler",
@@ -2748,19 +3635,19 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 11,
+										["n_max"] = 10,
 										["targets"] = {
-											["Wolf <Dopesnare>"] = 39,
 											["Wolf"] = 0,
+											["Wolf <Dopesnare>"] = 37,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 39,
+										["n_dmg"] = 37,
 										["n_min"] = 9,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 39,
+										["total"] = 37,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["DODGE"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2776,34 +3663,34 @@ _detalhes_database = {
 									},
 								},
 							},
-							["total"] = 39.008716,
-							["serial"] = "Creature-0-5252-1-82-3566-0000745E15",
+							["total"] = 37.007877,
+							["serial"] = "Creature-0-5210-1-578-3566-00007486E2",
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693737848,
-							["damage_taken"] = 196.008716,
-							["start_time"] = 1693737842,
+							["last_event"] = 1693746927,
+							["damage_taken"] = 183.007877,
+							["start_time"] = 1693746919,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 381,
+					["combatId"] = 400,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 381,
+					["combatId"] = 400,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 381,
+					["combatId"] = 400,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -2812,7 +3699,7 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 11,
+							["buff_uptime"] = 13,
 							["spell_cast"] = {
 								["Auto Shot"] = 4,
 								["Arcane Shot"] = 1,
@@ -2826,14 +3713,15 @@ _detalhes_database = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Furious Howl"] = {
-										["activedamt"] = 0,
+										["activedamt"] = 3,
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["actived_at"] = 1693746945,
+										["uptime"] = 2,
+										["appliedamt"] = 3,
 										["refreshamt"] = 0,
-										["actived"] = false,
+										["actived"] = true,
 										["counter"] = 0,
 									},
 									["Aspect of the Hawk"] = {
@@ -2850,7 +3738,7 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737851,
+							["last_event"] = 1693746945,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -2862,15 +3750,15 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["spell_cast"] = {
 								["Growl"] = 2,
-								["Bite"] = 1,
+								["Furious Howl"] = 2,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["serial"] = "Pet-0-5251-1-333-2960-030082FAB6",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 381,
+					["combatId"] = 400,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2878,8 +3766,8 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152711.907,
-				["tempo_start"] = 1693737840,
+				["CombatStartedAt"] = 161780.431,
+				["tempo_start"] = 1693746919,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
@@ -2887,10 +3775,10 @@ _detalhes_database = {
 				["last_events_tables"] = {
 				},
 				["enemy"] = "Flatland Prowler",
-				["combat_counter"] = 434,
+				["combat_counter"] = 456,
 				["playing_solo"] = true,
 				["totals"] = {
-					235, -- [1]
+					220, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2917,15 +3805,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 152687.217,
+				["CombatEndedAt"] = 161766.67,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "12:44:01",
-				["end_time"] = 152687.217,
+				["data_inicio"] = "15:15:20",
+				["end_time"] = 161766.67,
 				["totals_grupo"] = {
-					108, -- [1]
+					98, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2945,8 +3833,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 381,
-				["TotalElapsedCombatTime"] = 152687.217,
+				["combat_id"] = 400,
+				["TotalElapsedCombatTime"] = 11.00900000002002,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -2963,85 +3851,145 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 196.006553,
+							["Dopesnare"] = 183.008627,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
 					["Flatland Prowler"] = 1,
 				},
-				["data_fim"] = "12:44:11",
+				["data_fim"] = "15:15:31",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152676.825,
+				["start_time"] = 161755.661,
 				["contra"] = "Flatland Prowler",
 				["TimeData"] = {
 				},
-			}, -- [6]
+			}, -- [8]
 			{
 				{
-					["combatId"] = 380,
 					["tipo"] = 2,
+					["combatId"] = 399,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003576,
+							["totalabsorbed"] = 0.006212,
 							["damage_from"] = {
-								["Windfury Sorceress"] = true,
-								["Environment (Falling)"] = true,
+								["Flatland Prowler"] = true,
 							},
 							["targets"] = {
-								["Windfury Sorceress"] = 165,
+								["Arra'chea"] = 456,
+								["Flatland Prowler"] = 187,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["last_event"] = 1693742705,
+							["end_time"] = 1693742707,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 67.00357600000001,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["total_without_pet"] = 502.006212,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1693737769,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["total"] = 643.006212,
+							["classe"] = "HUNTER",
+							["damage_taken"] = 92.006212,
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Arra'chea"] = 276,
+											["Flatland Prowler"] = 20,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 296,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 296,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 28,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 15,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+									["Raptor Strike"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 21,
 										["targets"] = {
-											["Windfury Sorceress"] = 54,
+											["Flatland Prowler"] = 62,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 54,
-										["n_min"] = 24,
+										["n_dmg"] = 62,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 54,
+										["counter"] = 3,
+										["total"] = 62,
 										["c_max"] = 0,
-										["id"] = "!Autoshot",
+										["id"] = "Raptor Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 92,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 92,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 92,
+										["c_max"] = 0,
 										["c_min"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
@@ -3050,7 +3998,583 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 13,
 										["targets"] = {
-											["Windfury Sorceress"] = 13,
+											["Arra'chea"] = 39,
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 52,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 52,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 11.13141542456797,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742649,
+							["serial"] = "Player-5220-01B468FB",
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005098,
+							["damage_from"] = {
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 80,
+								["Dopesnare"] = 92,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1693742703,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 172.005098,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 172.005098,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 187.005098,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 80,
+											["Wolf"] = 0,
+											["Dopesnare"] = 92,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 172,
+										["c_min"] = 0,
+										["n_min"] = 7,
+										["MISS"] = 2,
+										["counter"] = 22,
+										["r_amt"] = 0,
+										["total"] = 172,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 7,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 17,
+										["a_amt"] = 0,
+										["g_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["last_dps"] = 0,
+							["end_time"] = 1693742707,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742657,
+							["serial"] = "Creature-0-5210-1-578-3566-0000746976",
+							["fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007415,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 164,
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 164.007415,
+							["last_event"] = 1693742675,
+							["fight_component"] = true,
+							["total"] = 164.007415,
+							["delay"] = 1693742675,
+							["classe"] = "UNKNOW",
+							["nome"] = "Arra'chea",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 164,
+											["Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 164,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["c_min"] = 0,
+										["total"] = 164,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 15,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 11,
+										["DODGE"] = 2,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 456.007415,
+							["end_time"] = 1693742707,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742680,
+							["serial"] = "Creature-0-5210-1-578-3058-000074762D",
+							["dps_started"] = false,
+						}, -- [3]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00427,
+							["damage_from"] = {
+								["Arra'chea"] = true,
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Arra'chea"] = 141,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 244.00427,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 141.00427,
+							["last_event"] = 1693742674,
+							["dps_started"] = false,
+							["total"] = 141.00427,
+							["delay"] = 1693742674,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["c_dmg"] = 0,
+										["g_amt"] = 4,
+										["n_max"] = 8,
+										["targets"] = {
+											["Arra'chea"] = 117,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 82,
+										["n_min"] = 1,
+										["g_dmg"] = 35,
+										["counter"] = 18,
+										["total"] = 117,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Arra'chea"] = 24,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693742707,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742681,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 399,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 399,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 399,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Concussive Shot"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Concussive Shot",
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 58,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Furious Howl",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 58,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 16,
+								["Concussive Shot"] = 1,
+								["Raptor Strike"] = 3,
+								["Arcane Shot"] = 4,
+							},
+							["nome"] = "Dopesnare",
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["last_event"] = 1693742707,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 4,
+								["Bite"] = 2,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["nome"] = "Arra'chea",
+							["spell_cast"] = {
+								["Head Butt"] = 1,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5210-1-578-3058-000074762D",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 399,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157485.214,
+				["tempo_start"] = 1693742649,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					979, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					502, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:05:07",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 57.76499999998487,
+				["CombatEndedAt"] = 157542.979,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 643.006212,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157542.979,
+				["combat_id"] = 399,
+				["frags"] = {
+					["Arra'chea"] = 1,
+					["Flatland Prowler"] = 1,
+				},
+				["combat_counter"] = 454,
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "14:04:09",
+				["start_time"] = 157485.214,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 398,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005989,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Prairie Wolf Alpha"] = 142,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 100.005989,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742638,
+							["total"] = 142.005989,
+							["damage_taken"] = 0.005989,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 87,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 87,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 13,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13,
@@ -3061,291 +4585,288 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 165.003576,
-							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 18.76960254806599,
 							["custom"] = 0,
-							["last_event"] = 1693737769,
-							["damage_taken"] = 18.003576,
-							["start_time"] = 1693737760,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["last_dps"] = 23.13554724663646,
+							["colocacao"] = 1,
+							["last_event"] = 1693742638,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742631,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006673,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002423,
 							["damage_from"] = {
-								["Windfury Sorceress"] = true,
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+								["Jmeka"] = true,
 							},
 							["targets"] = {
-								["Windfury Sorceress"] = 98,
+								["Stoneclaw Totem"] = 23,
+								["Jmeka"] = 10,
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 98.006673,
-							["dps_started"] = false,
-							["total"] = 98.006673,
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
+							["total_without_pet"] = 33.002423,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1693742638,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 182.002423,
+							["nome"] = "Prairie Wolf Alpha",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 10,
 										["targets"] = {
-											["Windfury Sorceress"] = 80,
+											["Stoneclaw Totem"] = 23,
+											["Jmeka"] = 10,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 80,
-										["n_min"] = 9,
+										["n_dmg"] = 33,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 80,
+										["counter"] = 4,
+										["total"] = 33,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Threatening Growl"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Threatening Growl",
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 33.002423,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742637,
+							["on_hold"] = false,
+							["start_time"] = 1693742632,
+							["serial"] = "Creature-0-5210-1-578-2960-00007473C1",
+							["fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005802,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Prairie Wolf Alpha"] = 42,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 0.005802,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 42.005802,
+							["last_event"] = 1693742637,
+							["dps_started"] = false,
+							["total"] = 42.005802,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 28,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 14,
 										["targets"] = {
-											["Windfury Sorceress"] = 18,
+											["Prairie Wolf Alpha"] = 14,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 18,
-										["n_min"] = 18,
+										["n_dmg"] = 14,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 18,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1693737769,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 25.006673,
-							["start_time"] = 1693737760,
-							["delay"] = 0,
-							["last_event"] = 1693737769,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006912,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 25,
-								["Dopesnare"] = 17,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 42.006912,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1693737769,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Windfury Sorceress",
-							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Wolf <Dopesnare>"] = 7,
-											["Wolf"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 7,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Wolf <Dopesnare>"] = 18,
-											["Dopesnare"] = 17,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 35,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
 							},
-							["total"] = 42.006912,
-							["serial"] = "Creature-0-5252-1-82-2964-000074511A",
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1693742638,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693737768,
-							["damage_taken"] = 165.006912,
-							["start_time"] = 1693737762,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742634,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 380,
 					["tipo"] = 3,
+					["combatId"] = 398,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 380,
 					["tipo"] = 7,
+					["combatId"] = 398,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 380,
 					["tipo"] = 9,
+					["combatId"] = 398,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 9,
-							["spell_cast"] = {
-								["Auto Shot"] = 2,
-								["Arcane Shot"] = 1,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["last_event"] = 1693742647,
+							["buff_uptime"] = 7,
 							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 3,
+							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Furious Howl"] = {
 										["activedamt"] = 1,
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["actived_at"] = 1693737840,
+										["actived_at"] = 1693742647,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Aspect of the Hawk",
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737840,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -3353,193 +4874,115 @@ _detalhes_database = {
 							["nome"] = "Wolf <Dopesnare>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
-								["Growl"] = 2,
 								["Bite"] = 1,
+								["Growl"] = 1,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["classe"] = "PET",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Windfury Sorceress",
-							["tipo"] = 4,
+							["last_event"] = 0,
+							["nome"] = "Prairie Wolf Alpha",
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2964-000074511A",
 							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Threatening Growl"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-5210-1-578-2960-00007473C1",
+							["fight_component"] = true,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 380,
 					["tipo"] = 2,
+					["combatId"] = 398,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152675.89,
-				["tempo_start"] = 1693737760,
-				["cleu_timeline"] = {
+				["tempo_start"] = 1693742631,
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Windfury Sorceress",
-				["combat_counter"] = 433,
+				["combat_counter"] = 453,
 				["playing_solo"] = true,
 				["totals"] = {
-					206.996416, -- [1]
+					174.995156, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-					["Dopesnare"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							1, -- [3]
-							1693737814.799, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
+				["totals_grupo"] = {
+					100, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:03:59",
+				["cleu_timeline"] = {
 				},
-				["CombatEndedAt"] = 152605.467,
+				["enemy"] = "Prairie Wolf Alpha",
+				["TotalElapsedCombatTime"] = 157474.706,
+				["CombatEndedAt"] = 157474.706,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "12:42:41",
-				["end_time"] = 152605.467,
-				["totals_grupo"] = {
-					67, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["combat_id"] = 380,
-				["TotalElapsedCombatTime"] = 152605.467,
-				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 142.005989,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3548,66 +4991,2086 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 165.003576,
-						}, -- [1]
-					},
 				},
-				["frags"] = {
-					["Windfury Sorceress"] = 1,
-				},
-				["data_fim"] = "12:42:50",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
+				["end_time"] = 157474.706,
+				["combat_id"] = 398,
+				["player_last_events"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 152596.676,
-				["contra"] = "Windfury Sorceress",
+				["data_inicio"] = "14:03:52",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Prairie Wolf Alpha",
+				["start_time"] = 157467.933,
 				["TimeData"] = {
 				},
-			}, -- [7]
+				["frags"] = {
+					["Prairie Wolf Alpha"] = 1,
+				},
+			}, -- [10]
 			{
 				{
-					["combatId"] = 379,
 					["tipo"] = 2,
+					["combatId"] = 397,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004214,
+							["totalabsorbed"] = 0.005515,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 181,
+								["Prairie Wolf Alpha"] = 215,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["total"] = 215.005515,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 97.00421399999999,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1693737692,
+							["total_without_pet"] = 134.005515,
+							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 181.004214,
-							["colocacao"] = 1,
+							["end_time"] = 1693742620,
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.005515,
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 121,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 121,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 121,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 17.72948915645912,
+							["colocacao"] = 1,
+							["last_event"] = 1693742619,
+							["on_hold"] = false,
+							["start_time"] = 1693742608,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008331,
+							["damage_from"] = {
+								["Prairie Wolf Alpha"] = true,
+							},
+							["targets"] = {
+								["Prairie Wolf Alpha"] = 81,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 50.008331,
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 81.008331,
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1693742620,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 14,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 69,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 55,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 69,
+										["c_max"] = 14,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 14,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693742617,
+							["on_hold"] = false,
+							["start_time"] = 1693742608,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["total"] = 81.008331,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005817,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+								["Jmeka"] = true,
+							},
+							["targets"] = {
+								["Stoneclaw Totem"] = 22,
+								["Wolf <Dopesnare>"] = 50,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["end_time"] = 1693742631,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 72.00581700000001,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 72.00581700000001,
+							["dps_started"] = false,
+							["damage_taken"] = 249.005817,
+							["nome"] = "Prairie Wolf Alpha",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 12,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 50,
+											["Stoneclaw Totem"] = 22,
+											["Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 60,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 72,
+										["c_max"] = 12,
+										["c_min"] = 12,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+									["Threatening Growl"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Threatening Growl",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742630,
+							["on_hold"] = false,
+							["start_time"] = 1693742608,
+							["serial"] = "Creature-0-5210-1-578-2960-000074747D",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 397,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 397,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 397,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693742628,
+							["buff_uptime"] = 12,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693742628,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["last_event"] = 0,
+							["nome"] = "Prairie Wolf Alpha",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Threatening Growl"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-5210-1-578-2960-000074747D",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 397,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157467.149,
+				["tempo_start"] = 1693742608,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					286.987159, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					134, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:03:40",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf Alpha",
+				["TotalElapsedCombatTime"] = 157456.123,
+				["CombatEndedAt"] = 157456.123,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 215.005515,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157456.123,
+				["combat_id"] = 397,
+				["combat_counter"] = 452,
+				["frags"] = {
+					["Prairie Wolf Alpha"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "14:03:28",
+				["start_time"] = 157443.996,
+				["contra"] = "Prairie Wolf Alpha",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 396,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.008648,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 180,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 105.008648,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742547,
+							["total"] = 180.008648,
+							["damage_taken"] = 0.008648,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Flatland Prowler"] = 92,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 92,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 17.60131495064775,
+							["colocacao"] = 1,
+							["last_event"] = 1693742546,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742536,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007175,
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 75,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 55.007175,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.007175,
+							["last_event"] = 1693742545,
+							["dps_started"] = false,
+							["total"] = 75.007175,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Flatland Prowler"] = 53,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 53,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["c_min"] = 0,
+										["total"] = 53,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 6,
+										["DODGE"] = 1,
+										["MISS"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 22,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 22,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693742547,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742536,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002832,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 55,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 55.002832,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1693742547,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 180.002832,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 55,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 55,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 55,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 55.002832,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742546,
+							["on_hold"] = false,
+							["start_time"] = 1693742536,
+							["serial"] = "Creature-0-5210-1-578-3566-0000744034",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 396,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 396,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 396,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693742607,
+							["buff_uptime"] = 11,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693742607,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 11,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 2,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 396,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157441.611,
+				["tempo_start"] = 1693742536,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					235, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					105, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:02:28",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 157383.428,
+				["CombatEndedAt"] = 157383.428,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 180.008648,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157383.428,
+				["combat_id"] = 396,
+				["combat_counter"] = 451,
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "14:02:16",
+				["start_time"] = 157372.102,
+				["contra"] = "Flatland Prowler",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [12]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 395,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002281,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 67,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 67.002281,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1693742486,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 371.002281,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 67,
+											["Wolf"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 67,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["c_min"] = 0,
+										["total"] = 67,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 67.002281,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742485,
+							["on_hold"] = false,
+							["start_time"] = 1693742467,
+							["serial"] = "Creature-0-5210-1-578-3566-0000745A77",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.00406,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 371,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 205.00406,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742486,
+							["total"] = 371.00406,
+							["damage_taken"] = 0.00406,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Flatland Prowler"] = 179,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 179,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 179,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 26,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 26,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 20.40501924980672,
+							["colocacao"] = 1,
+							["last_event"] = 1693742485,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742467,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00627,
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 166,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 67.00627,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 166.00627,
+							["last_event"] = 1693742485,
+							["dps_started"] = false,
+							["total"] = 166.00627,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 18,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Flatland Prowler"] = 126,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 108,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 126,
+										["c_max"] = 18,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 18,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 27,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 40,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 40,
+										["c_max"] = 27,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["c_min"] = 27,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693742486,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742467,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 395,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 395,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 395,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693742534,
+							["buff_uptime"] = 19,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 8,
+								["Arcane Shot"] = 2,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693742534,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 4,
+								["Bite"] = 2,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 395,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157351.118,
+				["tempo_start"] = 1693742467,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					438, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					205, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:01:27",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 157322.827,
+				["CombatEndedAt"] = 157322.827,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 371.00406,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157322.827,
+				["combat_id"] = 395,
+				["combat_counter"] = 450,
+				["frags"] = {
+					["Flatland Prowler"] = 2,
+				},
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "14:01:08",
+				["start_time"] = 157303.428,
+				["contra"] = "Flatland Prowler",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [13]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 394,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007521,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 105,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 105.007521,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1693742402,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 216.007521,
+							["nome"] = "Taloned Swoop",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 15,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 82,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 67,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 82,
+										["c_max"] = 15,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 15,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Swoop"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
 										["n_max"] = 23,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 84,
+											["Wolf <Dopesnare>"] = 23,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = "Swoop",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 105.007521,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742399,
+							["on_hold"] = false,
+							["start_time"] = 1693742386,
+							["serial"] = "Creature-0-5210-1-578-2971-0000744A0D",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005056,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Taloned Swoop"] = 216,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 137.005056,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742402,
+							["total"] = 216.005056,
+							["damage_taken"] = 0.005056,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Taloned Swoop"] = 124,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 124,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 124,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Taloned Swoop"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 14.29171999470557,
+							["colocacao"] = 1,
+							["last_event"] = 1693742401,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742386,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008179,
+							["damage_from"] = {
+								["Taloned Swoop"] = true,
+							},
+							["targets"] = {
+								["Taloned Swoop"] = 79,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 105.008179,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 79.008179,
+							["last_event"] = 1693742401,
+							["dps_started"] = false,
+							["total"] = 79.008179,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Taloned Swoop"] = 66,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 66,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 66,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Taloned Swoop"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 13,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693742402,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742386,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 394,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 394,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 394,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693742466,
+							["buff_uptime"] = 16,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693742466,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 16,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 3,
+								["Bite"] = 2,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["last_event"] = 0,
+							["nome"] = "Taloned Swoop",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Swoop"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-5210-1-578-2971-0000744A0D",
+							["fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 394,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157300.192,
+				["tempo_start"] = 1693742386,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					321, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					137, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:00:02",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Taloned Swoop",
+				["TotalElapsedCombatTime"] = 157237.989,
+				["CombatEndedAt"] = 157237.989,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 216.005056,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157237.989,
+				["combat_id"] = 394,
+				["combat_counter"] = 449,
+				["frags"] = {
+					["Taloned Swoop"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "13:59:46",
+				["start_time"] = 157222.342,
+				["contra"] = "Taloned Swoop",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [14]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 393,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005958,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Dopesnare"] = 12,
+								["Wolf <Dopesnare>"] = 27,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 39.005958,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1693742321,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 176.005958,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Wolf <Dopesnare>"] = 27,
+											["Wolf"] = 0,
+											["Dopesnare"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 39,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["c_min"] = 0,
+										["total"] = 39,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["DODGE"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 39.005958,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742319,
+							["on_hold"] = false,
+							["start_time"] = 1693742309,
+							["serial"] = "Creature-0-5210-1-578-3566-0000745A58",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00532,
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 176,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 97.00532,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742321,
+							["total"] = 176.00532,
+							["damage_taken"] = 12.00532,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Flatland Prowler"] = 84,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 84,
@@ -3618,16 +7081,482 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 15.2491180038297,
+							["colocacao"] = 1,
+							["last_event"] = 1693742320,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693742309,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007513,
+							["damage_from"] = {
+								["Flatland Prowler"] = true,
+							},
+							["targets"] = {
+								["Flatland Prowler"] = 79,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 27.007513,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 79.007513,
+							["last_event"] = 1693742320,
+							["dps_started"] = false,
+							["total"] = 79.007513,
+							["delay"] = 0,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Flatland Prowler"] = 65,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 65,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 65,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Flatland Prowler"] = 14,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1693742321,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1693742309,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["classe"] = "PET",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 393,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 393,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 393,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693742385,
+							["buff_uptime"] = 12,
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["activedamt"] = 1,
+										["id"] = "Furious Howl",
+										["targets"] = {
+										},
+										["actived_at"] = 1693742385,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-5220-01B468FB",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Dopesnare",
+							["nome"] = "Wolf <Dopesnare>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 2,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 393,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopesnare"] = true,
+				},
+				["CombatStartedAt"] = 157220.208,
+				["tempo_start"] = 1693742309,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					215, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					97, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "13:58:42",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 157157.605,
+				["CombatEndedAt"] = 157157.605,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 176.00532,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 157157.605,
+				["combat_id"] = 393,
+				["combat_counter"] = 448,
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "13:58:29",
+				["start_time"] = 157145.078,
+				["contra"] = "Flatland Prowler",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 392,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004393,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Dopesnare"] = 8,
+								["Wolf <Dopesnare>"] = 67,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["end_time"] = 1693742178,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.004393,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 75.004393,
+							["dps_started"] = false,
+							["damage_taken"] = 203.004393,
+							["nome"] = "Prairie Wolf Alpha",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 12,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Dopesnare"] = 8,
+											["Wolf <Dopesnare>"] = 67,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 63,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 75,
+										["c_max"] = 12,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 12,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1693742176,
+							["on_hold"] = false,
+							["start_time"] = 1693742165,
+							["serial"] = "Creature-0-5210-1-578-2960-0000746E33",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007828,
+							["damage_from"] = {
+								["Prairie Wolf Alpha"] = true,
+							},
+							["targets"] = {
+								["Prairie Wolf Alpha"] = 203,
+							},
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["tipo"] = 1,
+							["total"] = 203.007828,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 116.007828,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1693742178,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 8.007828,
+							["nome"] = "Dopesnare",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Prairie Wolf Alpha"] = 103,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
@@ -3647,287 +7576,191 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-5220-01B468FB",
-							["last_dps"] = 18.17493864845401,
 							["custom"] = 0,
-							["last_event"] = 1693737690,
-							["damage_taken"] = 0.004214,
-							["start_time"] = 1693737681,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
+							["last_dps"] = 17.40614147303369,
+							["colocacao"] = 1,
+							["last_event"] = 1693742177,
+							["on_hold"] = false,
+							["start_time"] = 1693742166,
+							["serial"] = "Player-5220-01B468FB",
+							["friendlyfire"] = {
+							},
+						}, -- [2]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008631,
+							["totalabsorbed"] = 0.003041,
 							["damage_from"] = {
 								["Prairie Wolf Alpha"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 84,
+								["Prairie Wolf Alpha"] = 87,
 							},
 							["pets"] = {
 							},
+							["damage_taken"] = 67.003041,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 84.00863100000001,
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
-							["end_time"] = 1693737692,
+							["total_without_pet"] = 87.003041,
+							["tipo"] = 1,
 							["dps_started"] = false,
-							["total"] = 84.00863100000001,
-							["on_hold"] = false,
+							["end_time"] = 1693742178,
+							["delay"] = 0,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 28,
 										["g_amt"] = 0,
-										["n_max"] = 15,
+										["n_max"] = 14,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 55,
+											["Prairie Wolf Alpha"] = 75,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 55,
+										["n_dmg"] = 47,
 										["n_min"] = 6,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 55,
-										["c_max"] = 0,
+										["counter"] = 8,
+										["total"] = 75,
+										["c_max"] = 14,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 14,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Bite"] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 29,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 12,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 29,
+											["Prairie Wolf Alpha"] = 12,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 29,
+										["total"] = 12,
+										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 29,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693737689,
-							["damage_taken"] = 28.008631,
-							["start_time"] = 1693737681,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005311,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 28,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5252-1-82-2960-0000744930",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 28.005311,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 28.005311,
-							["end_time"] = 1693737692,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Wolf"] = 0,
-											["Wolf <Dopesnare>"] = 28,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 28,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Threatening Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Threatening Growl",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
 							},
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693737689,
-							["damage_taken"] = 181.005311,
-							["start_time"] = 1693737682,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1693742176,
+							["on_hold"] = false,
+							["start_time"] = 1693742166,
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
+							["total"] = 87.003041,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 379,
 					["tipo"] = 3,
+					["combatId"] = 392,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 379,
 					["tipo"] = 7,
+					["combatId"] = 392,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 379,
 					["tipo"] = 9,
+					["combatId"] = 392,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["buff_uptime"] = 11,
-							["spell_cast"] = {
-								["Auto Shot"] = 4,
-								["Arcane Shot"] = 1,
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["last_event"] = 1693742308,
+							["buff_uptime"] = 16,
 							["tipo"] = 4,
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Arcane Shot"] = 1,
+							},
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Furious Howl"] = {
-										["activedamt"] = 1,
+										["activedamt"] = 2,
 										["id"] = "Furious Howl",
 										["targets"] = {
 										},
-										["actived_at"] = 1693737759,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["actived_at"] = 1693742308,
+										["uptime"] = 3,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Aspect of the Hawk",
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["uptime"] = 11,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737759,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -3935,116 +7768,104 @@ _detalhes_database = {
 							["nome"] = "Wolf <Dopesnare>",
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
 								["Growl"] = 2,
+								["Furious Howl"] = 1,
 								["Bite"] = 1,
 							},
-							["serial"] = "Pet-0-5209-1-80-2960-010082FAB6",
+							["classe"] = "PET",
 							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["nome"] = "Prairie Wolf Alpha",
+							["serial"] = "Pet-0-5251-1-333-2960-010082FAB6",
 							["tipo"] = 4,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Threatening Growl"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5252-1-82-2960-0000744930",
-							["classe"] = "UNKNOW",
-						}, -- [3]
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 379,
 					["tipo"] = 2,
+					["combatId"] = 392,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152594.141,
-				["tempo_start"] = 1693737681,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
+				["CombatStartedAt"] = 157144.66,
+				["tempo_start"] = 1693742165,
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Prairie Wolf Alpha",
-				["combat_counter"] = 432,
-				["playing_solo"] = true,
-				["totals"] = {
-					209, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
+				["alternate_power"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 152528.553,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "12:41:21",
-				["end_time"] = 152528.553,
-				["totals_grupo"] = {
-					97, -- [1]
+				["playing_solo"] = true,
+				["totals"] = {
+					278, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					116, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 379,
-				["TotalElapsedCombatTime"] = 152528.553,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "13:56:19",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf Alpha",
+				["TotalElapsedCombatTime"] = 157014.617,
+				["CombatEndedAt"] = 157014.617,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Dopesnare"] = 203.007828,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4053,115 +7874,73 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 181.004214,
-						}, -- [1]
-					},
 				},
+				["end_time"] = 157014.617,
+				["combat_id"] = 392,
+				["combat_counter"] = 447,
 				["frags"] = {
 					["Prairie Wolf Alpha"] = 1,
 				},
-				["data_fim"] = "12:41:33",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
+				["player_last_events"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 152517.293,
-				["contra"] = "Prairie Wolf Alpha",
 				["TimeData"] = {
 				},
-			}, -- [8]
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "13:56:06",
+				["start_time"] = 157001.739,
+				["contra"] = "Prairie Wolf Alpha",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 378,
+					["combatId"] = 391,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006307,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001135,
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 44,
+								["Flatland Prowler"] = 180,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["total"] = 44.006307,
-							["last_event"] = 1693679866,
+							["on_hold"] = false,
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006307,
+							["total_without_pet"] = 129.001135,
 							["serial"] = "Player-5220-01B468FB",
 							["dps_started"] = false,
-							["end_time"] = 1693679898,
-							["damage_taken"] = 58.006307,
+							["end_time"] = 1693740138,
+							["classe"] = "HUNTER",
 							["friendlyfire"] = {
 							},
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 1.264985253535685,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693679894,
-							["delay"] = 1693679866,
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002437,
-							["damage_from"] = {
-								["Mcyerba"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Mcyerba"] = 38,
-								["Wolf <Dopesnare>"] = 78,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 116.002437,
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["end_time"] = 1693737681,
-							["serial"] = "Creature-0-5251-1-602-2960-0000737FDC",
-							["dps_started"] = false,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 30,
 										["targets"] = {
-											["Mcyerba"] = 38,
-											["Wolf <Dopesnare>"] = 78,
+											["Flatland Prowler"] = 116,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 116,
-										["n_min"] = 6,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 17,
+										["counter"] = 5,
 										["total"] = 116,
 										["c_max"] = 0,
-										["id"] = "!Melee",
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -4170,33 +7949,60 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 17,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Flatland Prowler"] = 13,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["total"] = 116.002437,
-							["on_hold"] = false,
-							["last_event"] = 1693737680,
-							["friendlyfire"] = {
-							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 24.43675468374821,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 93.002437,
-							["start_time"] = 1693679875,
-							["delay"] = 1693679877,
-							["last_dps"] = 0,
-						}, -- [2]
+							["last_event"] = 1693740138,
+							["damage_taken"] = 0.001135,
+							["start_time"] = 1693740131,
+							["delay"] = 0,
+							["total"] = 180.001135,
+						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00211,
+							["totalabsorbed"] = 0.00675,
 							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
+								["Flatland Prowler"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 44,
+								["Flatland Prowler"] = 51,
 							},
 							["pets"] = {
 							},
@@ -4204,30 +8010,60 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 44.00211,
-							["total"] = 44.00211,
+							["total_without_pet"] = 51.00675,
+							["classe"] = "PET",
 							["dps_started"] = false,
-							["end_time"] = 1693679898,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
+							["total"] = 51.00675,
+							["serial"] = "Pet-0-5210-1-578-2960-010082FAB6",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
 							["spells"] = {
 								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Flatland Prowler"] = 38,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 38,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 38,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["n_max"] = 13,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 25,
+											["Flatland Prowler"] = 13,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 25,
-										["n_min"] = 25,
+										["n_dmg"] = 13,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 25,
+										["total"] = 13,
 										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
@@ -4242,6 +8078,46 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1693740138,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1693740136,
+							["damage_taken"] = 28.00675,
+							["start_time"] = 1693740131,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001474,
+							["damage_from"] = {
+								["Wolf <Dopesnare>"] = true,
+								["Dopesnare"] = true,
+							},
+							["targets"] = {
+								["Wolf <Dopesnare>"] = 28,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 28.001474,
+							["serial"] = "Creature-0-5210-1-578-3566-00007466B2",
+							["monster"] = true,
+							["total"] = 28.001474,
+							["damage_taken"] = 180.001474,
+							["on_hold"] = false,
+							["nome"] = "Flatland Prowler",
+							["spells"] = {
+								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -4249,14 +8125,14 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 10,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 19,
+											["Wolf <Dopesnare>"] = 28,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
+										["n_dmg"] = 28,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
+										["counter"] = 3,
+										["total"] = 28,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -4267,74 +8143,65 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 3,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
 							["tipo"] = 1,
+							["end_time"] = 1693740138,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693679866,
-							["damage_taken"] = 78.00211,
-							["start_time"] = 1693679894,
-							["delay"] = 1693679866,
-							["classe"] = "PET",
+							["last_event"] = 1693740136,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1693740132,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 378,
+					["combatId"] = 391,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 378,
+					["combatId"] = 391,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 378,
+					["combatId"] = 391,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Dopesnare",
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
+							["nome"] = "Dopesnare",
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+							},
+							["classe"] = "HUNTER",
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["classe"] = "HUNTER",
-							["buff_uptime"] = 35,
+							["last_event"] = 1693740138,
+							["buff_uptime"] = 7,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Furious Howl"] = {
-										["activedamt"] = 1,
-										["id"] = "Furious Howl",
-										["targets"] = {
-										},
-										["actived_at"] = 1693737680,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
 									["Aspect of the Hawk"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 35,
+										["uptime"] = 7,
 										["id"] = "Aspect of the Hawk",
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4344,7 +8211,7 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["last_event"] = 1693737680,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -4355,7 +8222,7 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
+							["serial"] = "Pet-0-5210-1-578-2960-010082FAB6",
 							["spell_cast"] = {
 								["Bite"] = 1,
 								["Growl"] = 1,
@@ -4365,579 +8232,26 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 378,
+					["combatId"] = 391,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 152515.675,
-				["tempo_start"] = 1693679863,
+				["CombatStartedAt"] = 157000.622,
+				["tempo_start"] = 1693740131,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 429,
+				["combat_counter"] = 445,
 				["playing_solo"] = true,
 				["totals"] = {
-					159.983905, -- [1]
+					208, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-					["Dopesnare"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							49, -- [3]
-							1693680043.775, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							9, -- [3]
-							1693680048.22, -- [4]
-							239, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 3,
-					},
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:38:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf Alpha",
-				["TotalElapsedCombatTime"] = 202489.686,
-				["CombatEndedAt"] = 202489.686,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:44",
-				["end_time"] = 202489.686,
-				["combat_id"] = 378,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Prairie Wolf Alpha"] = 1,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 202454.898,
-				["contra"] = "Prairie Wolf Alpha",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 44.006307,
-						}, -- [1]
-					},
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 377,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002836,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 165,
-							},
-							["pets"] = {
-								"Wolf <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693679299,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 45.002836,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693679300,
-							["damage_taken"] = 0.002836,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Flatland Cougar"] = 24,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Flatland Cougar"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 8.334739404963974,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693679281,
-							["delay"] = 0,
-							["total"] = 165.002836,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004798,
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 120,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 120.004798,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 120.004798,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 36,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Flatland Cougar"] = 99,
-											["Prairie Wolf Alpha"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["DODGE"] = 1,
-										["total"] = 99,
-										["c_max"] = 24,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 12,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 11,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Flatland Cougar"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693679300,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693679863,
-							["damage_taken"] = 57.004798,
-							["start_time"] = 1693679281,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005861,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 57,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 57.005861,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 57.005861,
-							["serial"] = "Creature-0-5251-1-602-3035-0000F37B67",
-							["dps_started"] = false,
-							["end_time"] = 1693679300,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Wolf"] = 0,
-											["Wolf <Dopesnare>"] = 57,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 57,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 57,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1693679298,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 165.005861,
-							["start_time"] = 1693679280,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 377,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 377,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 377,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Dopesnare",
-							["spell_cast"] = {
-								["Raptor Strike"] = 1,
-							},
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Wolf <Dopesnare>", -- [1]
-							},
-							["last_event"] = 1693679862,
-							["buff_uptime"] = 20,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Furious Howl"] = {
-										["activedamt"] = 1,
-										["id"] = "Furious Howl",
-										["targets"] = {
-										},
-										["actived_at"] = 1693679862,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 20,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-5220-01B468FB",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 3,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 377,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 202451.663,
-				["tempo_start"] = 1693679280,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 428,
-				["playing_solo"] = true,
-				["totals"] = {
-					221.984419, -- [1]
-					0, -- [2]
-					{
-						-0.004576000000000136, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -4961,29 +8275,29 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "20:28:21",
+				["data_fim"] = "13:22:19",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Cougar",
-				["TotalElapsedCombatTime"] = 19.79699999999139,
-				["CombatEndedAt"] = 201891.63,
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 154974.49,
+				["CombatEndedAt"] = 154974.49,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "20:28:01",
-				["end_time"] = 201891.63,
-				["combat_id"] = 377,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
+				["data_inicio"] = "13:22:11",
+				["end_time"] = 154974.49,
+				["combat_id"] = 391,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
 				["totals_grupo"] = {
-					45, -- [1]
+					129, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -5005,10 +8319,10 @@ _detalhes_database = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["contra"] = "Flatland Cougar",
-				["start_time"] = 201871.833,
 				["TimeData"] = {
 				},
+				["start_time"] = 154967.124,
+				["contra"] = "Flatland Prowler",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5024,37 +8338,37 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 165.002836,
+							["Dopesnare"] = 180.001135,
 						}, -- [1]
 					},
 				},
-			}, -- [10]
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 376,
+					["combatId"] = 390,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004243,
+							["totalabsorbed"] = 0.004342,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 182,
+								["Flatland Prowler"] = 179,
 							},
 							["pets"] = {
 								"Wolf <Dopesnare>", -- [1]
 							},
 							["friendlyfire_total"] = 0,
-							["last_event"] = 1693679127,
+							["last_event"] = 1693740017,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 117.004243,
+							["total_without_pet"] = 106.004342,
 							["serial"] = "Player-5220-01B468FB",
 							["dps_started"] = false,
-							["end_time"] = 1693679129,
-							["damage_taken"] = 0.004243,
+							["end_time"] = 1693740018,
+							["damage_taken"] = 0.004342,
 							["friendlyfire"] = {
 							},
 							["nome"] = "Dopesnare",
@@ -5063,29 +8377,29 @@ _detalhes_database = {
 									["!Autoshot"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 42,
+										["c_dmg"] = 44,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["n_max"] = 28,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 104,
+											["Flatland Prowler"] = 93,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 62,
-										["n_min"] = 19,
+										["n_dmg"] = 49,
+										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 104,
-										["c_max"] = 42,
+										["counter"] = 3,
+										["total"] = 93,
+										["c_max"] = 44,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 42,
+										["c_min"] = 44,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5096,7 +8410,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 13,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 13,
+											["Flatland Prowler"] = 13,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13,
@@ -5123,22 +8437,22 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["colocacao"] = 1,
-							["last_dps"] = 16.20263892102549,
+							["last_dps"] = 24.35101918108,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1693679117,
+							["start_time"] = 1693740010,
 							["delay"] = 0,
-							["total"] = 182.004243,
+							["total"] = 179.004342,
 						}, -- [1]
 						{
-							["flag_original"] = 69905,
-							["totalabsorbed"] = 0.003491,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004318,
 							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
+								["Flatland Prowler"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf Alpha"] = 65,
+								["Flatland Prowler"] = 73,
 							},
 							["pets"] = {
 							},
@@ -5146,440 +8460,31 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 65.003491,
+							["total_without_pet"] = 73.004318,
 							["classe"] = "PET",
 							["dps_started"] = false,
-							["total"] = 65.003491,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
+							["total"] = 73.004318,
+							["serial"] = "Pet-0-5210-1-578-2960-010082FAB6",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Wolf <Dopesnare>",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 15,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 16,
 										["targets"] = {
-											["Prairie Wolf Alpha"] = 52,
+											["Flatland Prowler"] = 60,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 52,
+										["n_dmg"] = 45,
 										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 52,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 8,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Prairie Wolf Alpha"] = 13,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693679129,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693679127,
-							["damage_taken"] = 40.003491,
-							["start_time"] = 1693679117,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007871,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Wolf <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Wolf <Dopesnare>"] = 40,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 40.007871,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 40.007871,
-							["serial"] = "Creature-0-5251-1-602-2960-0000737893",
-							["dps_started"] = false,
-							["end_time"] = 1693679129,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Wolf <Dopesnare>"] = 40,
-											["Wolf"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 40,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 6,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Threatening Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Threatening Growl",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1693679127,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 182.007871,
-							["start_time"] = 1693679119,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 376,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 376,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 376,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Dopesnare",
-							["spell_cast"] = {
-								["Auto Shot"] = 4,
-								["Arcane Shot"] = 1,
-							},
-							["classe"] = "HUNTER",
-							["pets"] = {
-								"Wolf <Dopesnare>", -- [1]
-							},
-							["last_event"] = 1693679277,
-							["buff_uptime"] = 12,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Furious Howl"] = {
-										["activedamt"] = 1,
-										["id"] = "Furious Howl",
-										["targets"] = {
-										},
-										["actived_at"] = 1693679277,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-5220-01B468FB",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 69905,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Wolf <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5251-1-602-2960-010082FAB6",
-							["spell_cast"] = {
-								["Bite"] = 1,
-								["Growl"] = 2,
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Prairie Wolf Alpha",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Threatening Growl"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5251-1-602-2960-0000737893",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 376,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["tempo_start"] = 1693679117,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 427,
-				["playing_solo"] = true,
-				["totals"] = {
-					221.990764, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:25:30",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf Alpha",
-				["TotalElapsedCombatTime"] = 201720.118,
-				["CombatEndedAt"] = 201720.118,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:25:18",
-				["end_time"] = 201720.118,
-				["combat_id"] = 376,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Prairie Wolf Alpha"] = 1,
-				},
-				["totals_grupo"] = {
-					117, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 201708.885,
-				["contra"] = "Prairie Wolf Alpha",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 182.004243,
-						}, -- [1]
-					},
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 375,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004186,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Dopesnare"] = 131,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 131.004186,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 131.004186,
-							["serial"] = "Creature-0-5251-1-602-2960-0000737AB1",
-							["dps_started"] = false,
-							["end_time"] = 1693679065,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 31,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Dopesnare"] = 131,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 100,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 131,
-										["c_max"] = 16,
+										["counter"] = 6,
+										["total"] = 60,
+										["c_max"] = 15,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5589,2034 +8494,6 @@ _detalhes_database = {
 										["c_min"] = 15,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Threatening Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Threatening Growl",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1693679064,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.004186,
-							["start_time"] = 1693679049,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007224,
-							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007224,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 0.007224,
-							["serial"] = "Player-5220-01B468FB",
-							["end_time"] = 1693679065,
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 131.007224,
-							["start_time"] = 1693679065,
-							["delay"] = 0,
-							["classe"] = "HUNTER",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 375,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 375,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 375,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Tame Beast"] = {
-										["activedamt"] = -1,
-										["id"] = "Tame Beast",
-										["targets"] = {
-										},
-										["actived_at"] = 1693679065,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["nome"] = "Dopesnare",
-							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 32,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1693679114,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Tame Beast"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = "Tame Beast",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Furious Howl"] = {
-										["activedamt"] = 1,
-										["id"] = "Furious Howl",
-										["targets"] = {
-										},
-										["actived_at"] = 1693679114,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									["Aspect of the Monkey"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = "Aspect of the Monkey",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-5220-01B468FB",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Prairie Wolf Alpha",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Threatening Growl"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5251-1-602-2960-0000737AB1",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 375,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 201708.383,
-				["tempo_start"] = 1693679049,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 426,
-				["playing_solo"] = true,
-				["totals"] = {
-					131, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:24:26",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf Alpha",
-				["TotalElapsedCombatTime"] = 201656.724,
-				["CombatEndedAt"] = 201656.724,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:24:10",
-				["end_time"] = 201656.724,
-				["combat_id"] = 375,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Prairie Wolf Alpha",
-				["start_time"] = 201640.089,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 0.007224,
-						}, -- [1]
-					},
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 374,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00182,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sunscale Screecher"] = 281,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693678303,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 205.00182,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693678305,
-							["damage_taken"] = 0.00182,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Sunscale Screecher"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Sunscale Screecher"] = 163,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 163,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 163,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Sunscale Screecher"] = 26,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 18.44328038854807,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693678288,
-							["delay"] = 0,
-							["total"] = 281.00182,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007041,
-							["damage_from"] = {
-								["Sunscale Screecher"] = true,
-							},
-							["targets"] = {
-								["Sunscale Screecher"] = 76,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 76.007041,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 76.007041,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 3,
-										["n_max"] = 12,
-										["targets"] = {
-											["Sunscale Screecher"] = 65,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 33,
-										["n_min"] = 10,
-										["g_dmg"] = 32,
-										["counter"] = 8,
-										["DODGE"] = 1,
-										["total"] = 65,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Sunscale Screecher"] = 11,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693678305,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678303,
-							["damage_taken"] = 119.007041,
-							["start_time"] = 1693678288,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00308,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Dopeboar <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Dopeboar <Dopesnare>"] = 119,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 119.00308,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 119.00308,
-							["serial"] = "Creature-0-5250-1-405-3255-0000737AAC",
-							["dps_started"] = false,
-							["end_time"] = 1693678305,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sunscale Screecher",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 60,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Dopeboar <Dopesnare>"] = 119,
-											["Dopeboar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 59,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["DODGE"] = 1,
-										["total"] = 119,
-										["c_max"] = 32,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 28,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1693678302,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 281.00308,
-							["start_time"] = 1693678291,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 374,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 374,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 374,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 13,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 13,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 8,
-								["Arcane Shot"] = 2,
-								["Serpent Sting"] = 2,
-							},
-							["nome"] = "Dopesnare",
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1693678305,
-							["serial"] = "Player-5220-01B468FB",
-							["buff_uptime"] = 17,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Bite"] = 2,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 374,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 201636.685,
-				["tempo_start"] = 1693678288,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 425,
-				["playing_solo"] = true,
-				["totals"] = {
-					400, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:11:46",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sunscale Screecher",
-				["TotalElapsedCombatTime"] = 16.18600000001607,
-				["CombatEndedAt"] = 200896.165,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:11:29",
-				["end_time"] = 200896.165,
-				["combat_id"] = 374,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Sunscale Screecher"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals_grupo"] = {
-					205, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Sunscale Screecher",
-				["start_time"] = 200879.979,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 281.00182,
-						}, -- [1]
-					},
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 373,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004909,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Greater Plainstrider"] = 231,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693678236,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 148.004909,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693678237,
-							["damage_taken"] = 0.004909,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Greater Plainstrider"] = 8,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 38,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Greater Plainstrider"] = 114,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 76,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 114,
-										["c_max"] = 38,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 38,
-										["successful_casted"] = 0,
-										["b_dmg"] = 12,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Greater Plainstrider"] = 26,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 15.84504485904611,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693678223,
-							["delay"] = 0,
-							["total"] = 231.004909,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007568,
-							["damage_from"] = {
-								["Greater Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Greater Plainstrider"] = 83,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 83.00756799999999,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 83.00756799999999,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Greater Plainstrider"] = 14,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 14,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 14,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 13,
-										["targets"] = {
-											["Greater Plainstrider"] = 69,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 57,
-										["n_min"] = 10,
-										["g_dmg"] = 12,
-										["counter"] = 7,
-										["total"] = 69,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693678237,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678236,
-							["damage_taken"] = 78.00756799999999,
-							["start_time"] = 1693678223,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.005733,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Dopeboar <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Dopeboar <Dopesnare>"] = 78,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 78.00573299999999,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["total"] = 78.00573299999999,
-							["serial"] = "Creature-0-5250-1-405-3244-0000F37A5E",
-							["damage_taken"] = 231.005733,
-							["nome"] = "Greater Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Dopeboar <Dopesnare>"] = 78,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 78,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["end_time"] = 1693678237,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678234,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1693678222,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 373,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 373,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 373,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 15,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 8,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 5,
-								["Serpent Sting"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Dopesnare",
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1693678237,
-							["serial"] = "Player-5220-01B468FB",
-							["buff_uptime"] = 15,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 2,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 373,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 200813.428,
-				["tempo_start"] = 1693678222,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 424,
-				["playing_solo"] = true,
-				["totals"] = {
-					308.987982, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					148, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:10:37",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Greater Plainstrider",
-				["TotalElapsedCombatTime"] = 14.57899999999791,
-				["CombatEndedAt"] = 200828.007,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:10:23",
-				["end_time"] = 200828.007,
-				["combat_id"] = 373,
-				["frags"] = {
-					["Greater Plainstrider"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 200813.428,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 231.004909,
-						}, -- [1]
-					},
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 372,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008911,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sunscale Lashtail"] = 198,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693678219,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 142.008911,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693678220,
-							["damage_taken"] = 0.008911,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Sunscale Lashtail"] = 12,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Sunscale Lashtail"] = 117,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 117,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 117,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Sunscale Lashtail"] = 13,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 13,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 19.09071644812401,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693678209,
-							["delay"] = 0,
-							["total"] = 198.008911,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004208,
-							["damage_from"] = {
-								["Sunscale Lashtail"] = true,
-							},
-							["targets"] = {
-								["Sunscale Lashtail"] = 56,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 56.004208,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 56.004208,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 3,
-										["n_max"] = 12,
-										["targets"] = {
-											["Greater Plainstrider"] = 0,
-											["Sunscale Lashtail"] = 56,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 23,
-										["n_min"] = 11,
-										["g_dmg"] = 33,
-										["counter"] = 6,
-										["total"] = 56,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sunscale Lashtail"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693678220,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678222,
-							["damage_taken"] = 84.004208,
-							["start_time"] = 1693678209,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007833,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Dopeboar <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Dopeboar <Dopesnare>"] = 84,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 84.007833,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 84.007833,
-							["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
-							["dps_started"] = false,
-							["end_time"] = 1693678220,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sunscale Lashtail",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Dopeboar <Dopesnare>"] = 84,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 84,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Lash"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lash",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1693678219,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 198.007833,
-							["start_time"] = 1693678209,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 372,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 372,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 372,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 9,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Dopesnare",
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1693678220,
-							["serial"] = "Player-5220-01B468FB",
-							["buff_uptime"] = 11,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["spell_cast"] = {
-								["Growl"] = 2,
-								["Bite"] = 1,
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Sunscale Lashtail",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Lash"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 372,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["tempo_start"] = 1693678209,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 423,
-				["playing_solo"] = true,
-				["totals"] = {
-					282, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:10:21",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sunscale Lashtail",
-				["TotalElapsedCombatTime"] = 200811.815,
-				["CombatEndedAt"] = 200811.815,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:10:10",
-				["end_time"] = 200811.815,
-				["combat_id"] = 372,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Sunscale Lashtail"] = 1,
-				},
-				["totals_grupo"] = {
-					142, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 200800.693,
-				["contra"] = "Sunscale Lashtail",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 198.008911,
-						}, -- [1]
-					},
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 371,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003604,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Greater Plainstrider"] = 230,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693678197,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 148.003604,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693678198,
-							["damage_taken"] = 0.003604,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Greater Plainstrider"] = 12,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Greater Plainstrider"] = 110,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 110,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 110,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 13,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Greater Plainstrider"] = 26,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 19.293985739448,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693678186,
-							["delay"] = 0,
-							["total"] = 230.003604,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008065,
-							["damage_from"] = {
-								["Greater Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Greater Plainstrider"] = 82,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 82.008065,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 82.008065,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 13,
-										["targets"] = {
-											["Greater Plainstrider"] = 75,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 58,
-										["n_min"] = 11,
-										["g_dmg"] = 17,
-										["counter"] = 6,
-										["total"] = 75,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
 										["n_amt"] = 5,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
@@ -7626,386 +8503,9 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Greater Plainstrider"] = 7,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693678198,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678196,
-							["damage_taken"] = 56.008065,
-							["start_time"] = 1693678186,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001858,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Dopeboar <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Dopeboar <Dopesnare>"] = 56,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 56.001858,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["total"] = 56.001858,
-							["serial"] = "Creature-0-5250-1-405-3244-0000F3781C",
-							["damage_taken"] = 230.001858,
-							["nome"] = "Greater Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Dopeboar"] = 0,
-											["Dopeboar <Dopesnare>"] = 56,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 56,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["end_time"] = 1693678198,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693678196,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1693678186,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 371,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 371,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 371,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 10,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 10,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
-								["Serpent Sting"] = 1,
-							},
-							["nome"] = "Dopesnare",
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1693678198,
-							["serial"] = "Player-5220-01B468FB",
-							["buff_uptime"] = 12,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5250-1-405-3099-010082EAD7",
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Bite"] = 1,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 371,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 200800.163,
-				["tempo_start"] = 1693678186,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 422,
-				["playing_solo"] = true,
-				["totals"] = {
-					286, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					148, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:09:59",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Greater Plainstrider",
-				["TotalElapsedCombatTime"] = 11.9210000000021,
-				["CombatEndedAt"] = 200789.229,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:09:47",
-				["end_time"] = 200789.229,
-				["combat_id"] = 371,
-				["frags"] = {
-					["Greater Plainstrider"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 200777.308,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 230.003604,
-						}, -- [1]
-					},
-				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 370,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006705,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-								["Zhevra Runner"] = 302,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693677383,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 238.006705,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["end_time"] = 1693677384,
-							["damage_taken"] = 175.006705,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Zhevra Runner"] = 24,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
 										["n_max"] = 13,
 										["targets"] = {
-											["Zhevra Runner"] = 13,
+											["Flatland Prowler"] = 13,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 13,
@@ -8014,7 +8514,7 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 13,
 										["c_max"] = 0,
-										["id"] = "Raptor Strike",
+										["id"] = "Bite",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -8027,868 +8527,106 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Zhevra Runner"] = 162,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 162,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 162,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 12,
-										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Zhevra Runner"] = 39,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 39,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 39,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 14.36280520285306,
-							["custom"] = 0,
+							["end_time"] = 1693740018,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1693677363,
-							["delay"] = 0,
-							["total"] = 302.006705,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004184,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Dopeboar <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Dopeboar <Dopesnare>"] = 189,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 189.004184,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["total"] = 189.004184,
-							["serial"] = "Creature-0-5250-1-405-3242-00007373C6",
-							["damage_taken"] = 302.004184,
-							["nome"] = "Zhevra Runner",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Dopeboar"] = 0,
-											["Dopeboar <Dopesnare>"] = 189,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 189,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 189,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 14,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["end_time"] = 1693677384,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693677382,
+							["last_event"] = 1693740017,
+							["damage_taken"] = 31.004318,
+							["start_time"] = 1693740010,
+							["delay"] = 0,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1693677363,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006931,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008934,
 							["damage_from"] = {
-								["Zhevra Runner"] = true,
+								["Dopesnare"] = true,
+								["Wolf <Dopesnare>"] = true,
 							},
 							["targets"] = {
-								["Zhevra Runner"] = 64,
+								["Wolf <Dopesnare>"] = 31,
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
+							["total"] = 31.008934,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 64.00693100000001,
-							["classe"] = "PET",
+							["total_without_pet"] = 31.008934,
+							["serial"] = "Creature-0-5210-1-578-3566-0000746BCD",
 							["dps_started"] = false,
-							["total"] = 64.00693100000001,
-							["serial"] = "Pet-0-5210-1-791-3099-030082EAD7",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
+							["end_time"] = 1693740018,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Flatland Prowler",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Zhevra Runner"] = 12,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 4,
+										["g_amt"] = 0,
 										["n_max"] = 11,
 										["targets"] = {
-											["Zhevra Runner"] = 52,
+											["Wolf <Dopesnare>"] = 31,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["g_dmg"] = 31,
+										["n_dmg"] = 31,
 										["n_min"] = 10,
-										["MISS"] = 1,
-										["counter"] = 11,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["DODGE"] = 2,
-										["total"] = 52,
-									},
-									["Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Zhevra Runner"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 3,
+										["total"] = 31,
 										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1693677384,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693677383,
-							["damage_taken"] = 189.006931,
-							["start_time"] = 1693677363,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 370,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 370,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 370,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Concussive Shot"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 4,
-										["id"] = "Concussive Shot",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 19,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Dopeboar <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 21,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 23,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Raptor Strike"] = 1,
-								["Auto Shot"] = 9,
-								["Concussive Shot"] = 1,
-								["Arcane Shot"] = 3,
-								["Serpent Sting"] = 2,
-							},
-							["nome"] = "Dopesnare",
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1693677384,
-							["serial"] = "Player-5220-01B468FB",
-							["buff_uptime"] = 21,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Dopeboar <Dopesnare>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-5210-1-791-3099-030082EAD7",
-							["spell_cast"] = {
-								["Growl"] = 4,
-								["Bite"] = 2,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 370,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopesnare"] = true,
-				},
-				["CombatStartedAt"] = 199954.281,
-				["tempo_start"] = 1693677363,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 421,
-				["playing_solo"] = true,
-				["totals"] = {
-					490.9430300000001, -- [1]
-					0, -- [2]
-					{
-						-0.007218999999999198, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					238, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:56:25",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Zhevra Runner",
-				["TotalElapsedCombatTime"] = 21.02699999997276,
-				["CombatEndedAt"] = 199975.308,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:56:04",
-				["end_time"] = 199975.308,
-				["combat_id"] = 370,
-				["frags"] = {
-					["Zhevra Runner"] = 1,
-				},
-				["player_last_events"] = {
-					["Dopesnare"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							68, -- [3]
-							1693677628.458, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							107, -- [3]
-							1693677825.35, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 3,
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 199954.281,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 302.006705,
-						}, -- [1]
-					},
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005869,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-								["Bloodtalon Scythemaw"] = 169,
-							},
-							["pets"] = {
-								"Crab <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 34.005869,
-							["serial"] = "Player-5220-01B468FB",
-							["dps_started"] = false,
-							["total"] = 169.005869,
-							["damage_taken"] = 123.005869,
-							["on_hold"] = false,
-							["nome"] = "Dopesnare",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Bloodtalon Scythemaw"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Bloodtalon Scythemaw"] = 13,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 11.6757077029314,
-							["custom"] = 0,
-							["last_event"] = 1693675858,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1693675845,
-							["delay"] = 0,
-							["end_time"] = 1693675860,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001118,
-							["damage_from"] = {
-								["Bloodtalon Scythemaw"] = true,
-							},
-							["targets"] = {
-								["Bloodtalon Scythemaw"] = 135,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 135.001118,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 135.001118,
-							["serial"] = "Pet-0-5210-1-791-3108-010082F68B",
-							["ownerName"] = "Dopesnare",
-							["nome"] = "Crab <Dopesnare>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 26,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Bloodtalon Scythemaw"] = 98,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 72,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 98,
-										["c_max"] = 26,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 26,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 3,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Claw"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 18,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Bloodtalon Scythemaw"] = 37,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 37,
-										["c_max"] = 18,
-										["DODGE"] = 1,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 18,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1693675860,
-							["tipo"] = 1,
+							["last_event"] = 1693740017,
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693675857,
-							["damage_taken"] = 42.001118,
-							["start_time"] = 1693675845,
+							["tipo"] = 1,
+							["damage_taken"] = 179.008934,
+							["start_time"] = 1693740010,
 							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002076,
-							["damage_from"] = {
-								["Dopesnare"] = true,
-								["Crab <Dopesnare>"] = true,
-							},
-							["targets"] = {
-								["Crab <Dopesnare>"] = 42,
-							},
-							["pets"] = {
-							},
-							["dps_started"] = false,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 42.002076,
-							["serial"] = "Creature-0-5210-1-791-3123-000073710C",
-							["fight_component"] = true,
-							["total"] = 42.002076,
 							["monster"] = true,
-							["damage_taken"] = 169.002076,
-							["nome"] = "Bloodtalon Scythemaw",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Crab"] = 0,
-											["Crab <Dopesnare>"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["DODGE"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 5,
-										["spellschool"] = 1,
-										["total"] = 42,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["end_time"] = 1693675860,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1693675857,
-							["on_hold"] = false,
-							["start_time"] = 1693675847,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 369,
+					["combatId"] = 390,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 369,
+					["combatId"] = 390,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 369,
+					["combatId"] = 390,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -8896,24 +8634,34 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["nome"] = "Dopesnare",
-							["pets"] = {
-								"Crab <Dopesnare>", -- [1]
-							},
-							["last_event"] = 1693675860,
-							["buff_uptime"] = 15,
-							["tipo"] = 4,
 							["spell_cast"] = {
-								["Auto Shot"] = 1,
-								["Arcane Shot"] = 1,
+								["Auto Shot"] = 3,
 							},
+							["classe"] = "HUNTER",
+							["pets"] = {
+								"Wolf <Dopesnare>", -- [1]
+							},
+							["last_event"] = 1693740131,
+							["buff_uptime"] = 12,
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
+									["Furious Howl"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = "Furious Howl",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									["Aspect of the Hawk"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 15,
+										["uptime"] = 8,
 										["id"] = "Aspect of the Hawk",
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8923,46 +8671,44 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-5220-01B468FB",
-							["classe"] = "HUNTER",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["ownerName"] = "Dopesnare",
-							["nome"] = "Crab <Dopesnare>",
+							["nome"] = "Wolf <Dopesnare>",
 							["pets"] = {
 							},
-							["spell_cast"] = {
-								["Growl"] = 2,
-								["Claw"] = 4,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5210-1-791-3108-010082F68B",
 							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Pet-0-5210-1-578-2960-010082FAB6",
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
 						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 369,
+					["combatId"] = 390,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Dopesnare"] = true,
 				},
-				["CombatStartedAt"] = 198436.557,
-				["tempo_start"] = 1693675845,
+				["CombatStartedAt"] = 154966.007,
+				["tempo_start"] = 1693740010,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 444,
 				["playing_solo"] = true,
 				["totals"] = {
-					210.9514969999999, -- [1]
+					210, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -8984,8 +8730,34 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "13:20:19",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Prowler",
+				["TotalElapsedCombatTime"] = 154854.823,
+				["CombatEndedAt"] = 154854.823,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "13:20:11",
+				["end_time"] = 154854.823,
+				["combat_id"] = 390,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Flatland Prowler"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
-					34, -- [1]
+					106, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -9005,18 +8777,11 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:31:00",
-				["cleu_timeline"] = {
+				["CombatSkillCache"] = {
 				},
-				["enemy"] = "Bloodtalon Scythemaw",
-				["TotalElapsedCombatTime"] = 14.47500000000582,
-				["CombatEndedAt"] = 198451.032,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
+				["contra"] = "Flatland Prowler",
+				["start_time"] = 154846.772,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -9033,134 +8798,10 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopesnare"] = 169.005869,
+							["Dopesnare"] = 179.004342,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 198451.032,
-				["combat_id"] = 369,
-				["combat_counter"] = 418,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Bloodtalon Scythemaw"] = 1,
-				},
-				["player_last_events"] = {
-					["Dopesnare"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							42, -- [3]
-							1693676033.296, -- [4]
-							246, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							2, -- [3]
-							1693676050.53, -- [4]
-							246, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							15, -- [3]
-							1693676515.202, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							64, -- [3]
-							1693676838.153, -- [4]
-							263, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 5,
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Bloodtalon Scythemaw",
-				["start_time"] = 198436.557,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "19:30:46",
 			}, -- [18]
 		},
 	},
@@ -9202,9 +8843,9 @@ _detalhes_database = {
 			["updatespeed"] = 1,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["playSound"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
 			["useclasscolors"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["playSound"] = false,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -9221,28 +8862,23 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["use_square_mode"] = false,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["row_height"] = 18,
+			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["point"] = "RIGHT",
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["author"] = "Details! Team",
+			["use_spark"] = false,
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -9254,9 +8890,9 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -9264,23 +8900,30 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["font_size"] = 10,
-			["scale"] = 1,
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["use_square_mode"] = false,
 		},
 	},
 	["cached_talents"] = {
 	},
 	["last_day"] = "03",
-	["cached_roles"] = {
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -9293,15 +8936,80 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["character_data"] = {
+		["logons"] = 52,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["local_instances_config"] = {
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["is_open"] = true,
+			["isLocked"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -1101.599021911621,
+					["w"] = 234.8974151611328,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["segment"] = 0,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["is_open"] = true,
+			["isLocked"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4414672851562,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 138.5456237792969,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
 	},
-	["combat_id"] = 386,
+	["combat_id"] = 407,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -9737,12 +9445,8 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["combat_counter"] = 439,
+	["force_font_outline"] = "",
+	["combat_counter"] = 463,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -9773,42 +9477,48 @@ _detalhes_database = {
 						["Clattering Scorpid"] = 0,
 						["Dustwind Pillager"] = 0,
 						["Bloodtalon Taillasher"] = 0,
+						["Arra'chea"] = 0,
 						["Sunscale Lashtail"] = 0,
 						["Kolkar Drudge"] = 0,
 						["Lieutenant Benedict"] = 0,
 						["Prairie Wolf Alpha"] = 0,
 						["Dustwind Storm Witch"] = 0,
+						["Greater Plainstrider"] = 0,
+						["Windfury Sorceress"] = 0,
 						["Watch Commander Zalaphil"] = 0,
-						["Vile Familiar"] = 0,
+						["Taloned Swoop"] = 0,
+						["Windfury Matriarch"] = 0,
+						["Flatland Prowler"] = 0,
 						["Zhevra Runner"] = 0,
 						["Dopesnare"] = 0,
 						["Razormane Scout"] = 0,
-						["Kul Tiras Marine"] = 0,
-						["Razormane Quilboar"] = 0,
 						["Flatland Cougar"] = 0,
+						["Razormane Quilboar"] = 0,
+						["Kul Tiras Marine"] = 0,
 						["Kul Tiras Sailor"] = 0,
 						["Corrupted Dreadmaw Crocolisk"] = 0,
 						["Makrura Shellhide"] = 0,
-						["Burning Blade Apprentice"] = 0,
-						["Mottled Boar"] = 0,
-						["Kolkar Outrunner"] = 0,
-						["Dustwind Savage"] = 0,
 						["Venomtail Scorpid"] = 0,
+						["Mottled Boar"] = 0,
+						["Dustwind Savage"] = 0,
+						["Kolkar Outrunner"] = 0,
+						["Burning Blade Apprentice"] = 0,
 						["Sunscale Screecher"] = 0,
 						["Dreadmaw Crocolisk"] = 0,
-						["Greater Plainstrider"] = 0,
+						["Vile Familiar"] = 0,
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.001505,
+					["on_hold"] = false,
 					["classe"] = "HUNTER",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001505,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["dps_started"] = false,
 					["end_time"] = 1693478276,
-					["delay"] = 0,
+					["serial"] = "Player-5220-01B468FB",
 					["total"] = 0.001505,
 					["nome"] = "Dopesnare",
 					["spells"] = {
@@ -9827,9 +9537,11 @@ _detalhes_database = {
 									["Scorpid Worker"] = 0,
 									["Watch Commander Zalaphil"] = 0,
 									["Felstalker"] = 0,
+									["Flatland Prowler"] = 0,
 									["Zhevra Runner"] = 0,
 									["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
 									["Razormane Scout"] = 0,
+									["Dire Mottled Boar"] = 0,
 									["Razormane Quilboar"] = 0,
 									["Kul Tiras Marine"] = 0,
 									["Kul Tiras Sailor"] = 0,
@@ -9839,8 +9551,8 @@ _detalhes_database = {
 									["Mottled Boar"] = 0,
 									["Kolkar Drudge"] = 0,
 									["Voidwalker Minion"] = 0,
-									["Dire Mottled Boar"] = 0,
 									["Clattering Scorpid"] = 0,
+									["Prairie Wolf Alpha"] = 0,
 									["Dreadmaw Crocolisk"] = 0,
 									["Vile Familiar"] = 0,
 								},
@@ -9853,15 +9565,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Raptor Strike",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -9884,12 +9596,13 @@ _detalhes_database = {
 									["Kul Tiras Sailor"] = 0,
 									["Corrupted Dreadmaw Crocolisk"] = 0,
 									["Makrura Shellhide"] = 0,
+									["Flatland Prowler"] = 0,
 									["Mottled Boar"] = 0,
 									["Kolkar Drudge"] = 0,
 									["Lieutenant Benedict"] = 0,
 									["Flatland Cougar"] = 0,
-									["Clattering Scorpid"] = 0,
 									["Voidwalker Minion"] = 0,
+									["Clattering Scorpid"] = 0,
 									["Vile Familiar"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -9901,92 +9614,6 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Arcane Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Burning Blade Fanatic"] = 0,
-									["Bloodtalon Scythemaw"] = 0,
-									["Pygmy Surf Crawler"] = 0,
-									["Elder Mottled Boar"] = 0,
-									["Makrura Clacker"] = 0,
-									["Venomtail Scorpid"] = 0,
-									["Dreadmaw Crocolisk"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Prairie Wolf Alpha"] = 0,
-									["Clattering Scorpid"] = 0,
-									["Dustwind Savage"] = 0,
-									["Zhevra Runner"] = 0,
-									["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
-									["Razormane Scout"] = 0,
-									["Dustwind Harpy"] = 0,
-									["Razormane Quilboar"] = 0,
-									["Kul Tiras Marine"] = 0,
-									["Kul Tiras Sailor"] = 0,
-									["Corrupted Dreadmaw Crocolisk"] = 0,
-									["Bloodtalon Taillasher"] = 0,
-									["Watch Commander Zalaphil"] = 0,
-									["Sunscale Lashtail"] = 0,
-									["Burning Blade Apprentice"] = 0,
-									["Dustwind Pillager"] = 0,
-									["Dire Mottled Boar"] = 0,
-									["Sunscale Screecher"] = 0,
-									["Dustwind Storm Witch"] = 0,
-									["Greater Plainstrider"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Arcane Shot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Concussive Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Razormane Quilboar"] = 0,
-									["Razormane Scout"] = 0,
-									["Dustwind Storm Witch"] = 0,
-									["Voidwalker Minion"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Concussive Shot",
-								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
@@ -9996,69 +9623,6 @@ _detalhes_database = {
 								["n_amt"] = 0,
 								["c_min"] = 0,
 								["r_amt"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Burning Blade Fanatic"] = 0,
-									["Bloodtalon Scythemaw"] = 0,
-									["Pygmy Surf Crawler"] = 0,
-									["Elder Mottled Boar"] = 0,
-									["Makrura Clacker"] = 0,
-									["Scorpid Worker"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Felstalker"] = 0,
-									["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
-									["Dire Mottled Boar"] = 0,
-									["Dustwind Harpy"] = 0,
-									["Clattering Scorpid"] = 0,
-									["Dustwind Pillager"] = 0,
-									["Bloodtalon Taillasher"] = 0,
-									["Sunscale Lashtail"] = 0,
-									["Kolkar Drudge"] = 0,
-									["Lieutenant Benedict"] = 0,
-									["Prairie Wolf Alpha"] = 0,
-									["Dustwind Storm Witch"] = 0,
-									["Watch Commander Zalaphil"] = 0,
-									["Zhevra Runner"] = 0,
-									["Razormane Scout"] = 0,
-									["Vile Familiar"] = 0,
-									["Razormane Quilboar"] = 0,
-									["Kul Tiras Marine"] = 0,
-									["Kul Tiras Sailor"] = 0,
-									["Corrupted Dreadmaw Crocolisk"] = 0,
-									["Makrura Shellhide"] = 0,
-									["Burning Blade Apprentice"] = 0,
-									["Mottled Boar"] = 0,
-									["Dustwind Savage"] = 0,
-									["Kolkar Outrunner"] = 0,
-									["Venomtail Scorpid"] = 0,
-									["Sunscale Screecher"] = 0,
-									["Dreadmaw Crocolisk"] = 0,
-									["Greater Plainstrider"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
 							},
 							["Serpent Sting"] = {
 								["c_amt"] = 0,
@@ -10088,7 +9652,7 @@ _detalhes_database = {
 									["Watch Commander Zalaphil"] = 0,
 									["Zhevra Runner"] = 0,
 									["Razormane Scout"] = 0,
-									["Vile Familiar"] = 0,
+									["Greater Plainstrider"] = 0,
 									["Razormane Quilboar"] = 0,
 									["Kul Tiras Marine"] = 0,
 									["Kul Tiras Sailor"] = 0,
@@ -10097,11 +9661,11 @@ _detalhes_database = {
 									["Dustwind Savage"] = 0,
 									["Mottled Boar"] = 0,
 									["Venomtail Scorpid"] = 0,
-									["Burning Blade Apprentice"] = 0,
 									["Kolkar Outrunner"] = 0,
+									["Burning Blade Apprentice"] = 0,
 									["Sunscale Screecher"] = 0,
 									["Dreadmaw Crocolisk"] = 0,
-									["Greater Plainstrider"] = 0,
+									["Vile Familiar"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10111,6 +9675,37 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Serpent Sting",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Concussive Shot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Voidwalker Minion"] = 0,
+									["Razormane Scout"] = 0,
+									["Dustwind Storm Witch"] = 0,
+									["Razormane Quilboar"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Concussive Shot",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
@@ -10122,19 +9717,146 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
+							["!Autoshot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Burning Blade Fanatic"] = 0,
+									["Bloodtalon Scythemaw"] = 0,
+									["Pygmy Surf Crawler"] = 0,
+									["Elder Mottled Boar"] = 0,
+									["Makrura Clacker"] = 0,
+									["Scorpid Worker"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Felstalker"] = 0,
+									["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
+									["Dire Mottled Boar"] = 0,
+									["Dustwind Harpy"] = 0,
+									["Clattering Scorpid"] = 0,
+									["Dustwind Pillager"] = 0,
+									["Bloodtalon Taillasher"] = 0,
+									["Arra'chea"] = 0,
+									["Sunscale Lashtail"] = 0,
+									["Kolkar Drudge"] = 0,
+									["Lieutenant Benedict"] = 0,
+									["Prairie Wolf Alpha"] = 0,
+									["Dustwind Storm Witch"] = 0,
+									["Watch Commander Zalaphil"] = 0,
+									["Greater Plainstrider"] = 0,
+									["Windfury Sorceress"] = 0,
+									["Taloned Swoop"] = 0,
+									["Zhevra Runner"] = 0,
+									["Windfury Matriarch"] = 0,
+									["Razormane Scout"] = 0,
+									["Flatland Prowler"] = 0,
+									["Razormane Quilboar"] = 0,
+									["Kul Tiras Marine"] = 0,
+									["Kul Tiras Sailor"] = 0,
+									["Corrupted Dreadmaw Crocolisk"] = 0,
+									["Makrura Shellhide"] = 0,
+									["Burning Blade Apprentice"] = 0,
+									["Mottled Boar"] = 0,
+									["Dustwind Savage"] = 0,
+									["Venomtail Scorpid"] = 0,
+									["Kolkar Outrunner"] = 0,
+									["Sunscale Screecher"] = 0,
+									["Dreadmaw Crocolisk"] = 0,
+									["Vile Familiar"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Autoshot",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							},
+							["Arcane Shot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Burning Blade Fanatic"] = 0,
+									["Dustwind Savage"] = 0,
+									["Pygmy Surf Crawler"] = 0,
+									["Elder Mottled Boar"] = 0,
+									["Makrura Clacker"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
+									["Dire Mottled Boar"] = 0,
+									["Dustwind Harpy"] = 0,
+									["Clattering Scorpid"] = 0,
+									["Dustwind Pillager"] = 0,
+									["Bloodtalon Taillasher"] = 0,
+									["Arra'chea"] = 0,
+									["Sunscale Lashtail"] = 0,
+									["Burning Blade Apprentice"] = 0,
+									["Prairie Wolf Alpha"] = 0,
+									["Dustwind Storm Witch"] = 0,
+									["Watch Commander Zalaphil"] = 0,
+									["Zhevra Runner"] = 0,
+									["Razormane Scout"] = 0,
+									["Razormane Quilboar"] = 0,
+									["Kul Tiras Marine"] = 0,
+									["Kul Tiras Sailor"] = 0,
+									["Corrupted Dreadmaw Crocolisk"] = 0,
+									["Greater Plainstrider"] = 0,
+									["Taloned Swoop"] = 0,
+									["Windfury Sorceress"] = 0,
+									["Flatland Prowler"] = 0,
+									["Windfury Matriarch"] = 0,
+									["Bloodtalon Scythemaw"] = 0,
+									["Sunscale Screecher"] = 0,
+									["Dreadmaw Crocolisk"] = 0,
+									["Venomtail Scorpid"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Arcane Shot",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.001505,
 					["start_time"] = 1693478273,
-					["serial"] = "Player-5220-01B468FB",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -10142,26 +9864,26 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopesnare"] = 0,
+						["Dñb"] = 0,
 						["Falkoro"] = 0,
 						["Roybatty"] = 0,
 						["Mogal"] = 0,
-						["Епалдремал"] = 0,
-						["Murkchlak"] = 0,
 						["Mentesana"] = 0,
-						["Dñb"] = 0,
+						["Murkchlak"] = 0,
+						["Епалдремал"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001987,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693478276,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5253-1-134-3098-00006F2E66",
 					["on_hold"] = false,
 					["nome"] = "Mottled Boar",
 					["spells"] = {
@@ -10173,14 +9895,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
+									["Dñb"] = 0,
 									["Falkoro"] = 0,
 									["Roybatty"] = 0,
 									["Mogal"] = 0,
-									["Епалдремал"] = 0,
-									["Murkchlak"] = 0,
 									["Mentesana"] = 0,
-									["Dñb"] = 0,
+									["Murkchlak"] = 0,
+									["Епалдремал"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10191,15 +9913,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -10209,11 +9931,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.001987,
 					["start_time"] = 1693478273,
-					["serial"] = "Creature-0-5253-1-134-3098-00006F2E66",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
@@ -10238,7 +9960,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006914,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5209-1-108-3101-00007077AC",
 					["dps_started"] = false,
 					["end_time"] = 1693481266,
 					["friendlyfire_total"] = 0,
@@ -10271,15 +9993,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Fireball"] = {
 								["c_amt"] = 0,
@@ -10301,27 +10023,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fireball",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.006914,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006914,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.006914,
 					["start_time"] = 1693481263,
-					["serial"] = "Creature-0-5209-1-108-3101-00007077AC",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [3]
 				{
@@ -10330,21 +10052,21 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Bøzø"] = 0,
-						["Saragkoo"] = 0,
 						["Dopesnare"] = 0,
+						["Saragkoo"] = 0,
+						["Bøzø"] = 0,
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00718,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693481266,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5209-1-108-3124-000070752F",
 					["on_hold"] = false,
 					["nome"] = "Scorpid Worker",
 					["spells"] = {
@@ -10356,9 +10078,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bøzø"] = 0,
-									["Saragkoo"] = 0,
 									["Dopesnare"] = 0,
+									["Saragkoo"] = 0,
+									["Bøzø"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10369,15 +10091,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Weak Poison",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -10386,9 +10108,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Bøzø"] = 0,
-									["Saragkoo"] = 0,
 									["Dopesnare"] = 0,
+									["Saragkoo"] = 0,
+									["Bøzø"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10399,15 +10121,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -10417,11 +10139,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.00718,
 					["start_time"] = 1693481263,
-					["serial"] = "Creature-0-5209-1-108-3124-000070752F",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 68168,
@@ -10429,10 +10151,10 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Mogal"] = 0,
+						["Dopesnare"] = 0,
 						["Cormillito"] = 0,
 						["Lazkin <Mogal>"] = 0,
-						["Dopesnare"] = 0,
+						["Mogal"] = 0,
 					},
 					["pets"] = {
 					},
@@ -10443,7 +10165,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004082,
-					["serial"] = "Creature-0-5251-1-126-3102-000070CC20",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
 					["friendlyfire_total"] = 0,
@@ -10458,10 +10180,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Mogal"] = 0,
+									["Dopesnare"] = 0,
 									["Cormillito"] = 0,
 									["Lazkin <Mogal>"] = 0,
-									["Dopesnare"] = 0,
+									["Mogal"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10472,27 +10194,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.004082,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.004082,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.004082,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3102-000070CC20",
 					["monster"] = true,
 				}, -- [5]
 				{
@@ -10505,16 +10227,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.004694,
 					["classe"] = "WARLOCK",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004694,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
-					["serial"] = "Player-5220-01B6ED97",
+					["delay"] = 0,
 					["total"] = 0.004694,
 					["nome"] = "Mogal",
 					["spells"] = {
@@ -10537,15 +10258,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Immolate",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -10565,28 +10286,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.004694,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-5220-01B6ED97",
+					["friendlyfire"] = {
+					},
 				}, -- [6]
 				{
 					["flag_original"] = 1298,
@@ -10598,48 +10320,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.004588,
 					["classe"] = "SHAMAN",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004588,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
-					["serial"] = "Player-5220-01B6ED42",
+					["delay"] = 0,
 					["total"] = 0.004588,
 					["nome"] = "Muertoxcebra",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Yarrog Baneshadow"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
 							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -10658,15 +10351,43 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Yarrog Baneshadow"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Earth Shock"] = {
 								["c_amt"] = 0,
@@ -10686,28 +10407,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Earth Shock",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.004588,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-5220-01B6ED42",
+					["friendlyfire"] = {
+					},
 				}, -- [7]
 				{
 					["flag_original"] = 1298,
@@ -10720,48 +10442,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.004451,
 					["classe"] = "WARLOCK",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004451,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
-					["serial"] = "Player-5220-01B6F5DD",
+					["delay"] = 0,
 					["total"] = 0.004451,
 					["nome"] = "Cécaré",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Immolate"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Yarrog Baneshadow"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Immolate",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
 							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -10780,15 +10473,43 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Immolate"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Yarrog Baneshadow"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Immolate",
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Shadow Bolt"] = {
 								["c_amt"] = 0,
@@ -10808,28 +10529,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shadow Bolt",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.004451,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-5220-01B6F5DD",
+					["friendlyfire"] = {
+					},
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -10848,7 +10570,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002528,
-					["serial"] = "Creature-0-5251-1-126-3183-000070CB6E",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
 					["friendlyfire_total"] = 0,
@@ -10874,15 +10596,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Immolate",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -10902,27 +10624,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.002528,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.002528,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.002528,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3183-000070CB6E",
 					["monster"] = true,
 				}, -- [9]
 				{
@@ -10931,20 +10653,20 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopesnare"] = 0,
 						["Mogal"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005734,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693502711,
-					["serial"] = "",
+					["delay"] = 0,
 					["on_hold"] = false,
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
@@ -10956,8 +10678,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
 									["Mogal"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -10968,15 +10690,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Falling",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -10986,11 +10708,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.005734,
 					["start_time"] = 1693502708,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "",
+					["fight_component"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 68136,
@@ -11004,22 +10726,22 @@ _detalhes_database = {
 						["Xichtskrapfn"] = 0,
 						["Crab <Dopesnare>"] = 0,
 						["Iggra"] = 0,
-						["Ruplop"] = 0,
-						["Chrysten"] = 0,
 						["Rwx"] = 0,
+						["Chrysten"] = 0,
+						["Ruplop"] = 0,
 						["Aunil"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005483,
-					["dps_started"] = false,
+					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693505092,
-					["serial"] = "Creature-0-5251-1-126-3106-000070D4F6",
+					["delay"] = 0,
 					["last_dps"] = 0,
 					["nome"] = "Pygmy Surf Crawler",
 					["spells"] = {
@@ -11037,9 +10759,9 @@ _detalhes_database = {
 									["Xichtskrapfn"] = 0,
 									["Crab <Dopesnare>"] = 0,
 									["Iggra"] = 0,
-									["Ruplop"] = 0,
-									["Chrysten"] = 0,
 									["Rwx"] = 0,
+									["Chrysten"] = 0,
+									["Ruplop"] = 0,
 									["Aunil"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -11051,15 +10773,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -11069,11 +10791,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["on_hold"] = false,
 					["start_time"] = 1693505089,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3106-000070D4F6",
+					["dps_started"] = false,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -11091,7 +10813,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006017,
-					["serial"] = "Creature-0-5251-1-126-3104-000070D336",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693505092,
 					["friendlyfire_total"] = 0,
@@ -11117,28 +10839,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.006017,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.006017,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693505089,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3104-000070D336",
 					["dps_started"] = false,
 				}, -- [12]
 				{
@@ -11148,8 +10870,8 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Gamorá"] = 0,
-						["Dopesnare"] = 0,
 						["Taurenfemboy"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
@@ -11159,7 +10881,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006581,
-					["serial"] = "Creature-0-5251-1-126-3103-000070D435",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693505092,
 					["friendlyfire_total"] = 0,
@@ -11175,8 +10897,8 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Gamorá"] = 0,
-									["Dopesnare"] = 0,
 									["Taurenfemboy"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11187,28 +10909,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.006581,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.006581,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693505089,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3103-000070D435",
 					["dps_started"] = false,
 				}, -- [13]
 				{
@@ -11218,11 +10940,11 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Cécaré"] = 0,
-						["Dopesnare"] = 0,
+						["Aunil"] = 0,
 						["Frozenhell"] = 0,
 						["Mageibibli"] = 0,
 						["Ruplop"] = 0,
-						["Aunil"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
@@ -11232,7 +10954,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004283,
-					["serial"] = "Creature-0-5251-1-126-3119-000170D033",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693505092,
 					["friendlyfire_total"] = 0,
@@ -11248,11 +10970,11 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Cécaré"] = 0,
-									["Dopesnare"] = 0,
+									["Aunil"] = 0,
 									["Frozenhell"] = 0,
 									["Mageibibli"] = 0,
 									["Ruplop"] = 0,
-									["Aunil"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11263,15 +10985,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Dust Cloud"] = {
 								["c_amt"] = 0,
@@ -11290,28 +11012,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Dust Cloud",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.004283,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.004283,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693505089,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3119-000170D033",
 					["dps_started"] = false,
 				}, -- [14]
 				{
@@ -11321,8 +11043,8 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Sunkan"] = 0,
-						["Jospin"] = 0,
 						["Mageibibli"] = 0,
+						["Jospin"] = 0,
 						["Lanni"] = 0,
 						["Dopesnare"] = 0,
 					},
@@ -11335,7 +11057,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00776,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-126-3120-000070D801",
 					["dps_started"] = false,
 					["end_time"] = 1693636807,
 					["friendlyfire_total"] = 0,
@@ -11350,8 +11072,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
 									["Jospin"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11362,15 +11084,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shoot",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -11379,8 +11101,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Jospin"] = 0,
 									["Mageibibli"] = 0,
+									["Jospin"] = 0,
 									["Lanni"] = 0,
 									["Sunkan"] = 0,
 								},
@@ -11393,27 +11115,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.00776,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.00776,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.00776,
 					["start_time"] = 1693636804,
-					["serial"] = "Creature-0-5251-1-126-3120-000070D801",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [15]
 				{
@@ -11427,16 +11149,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.006975,
 					["classe"] = "WARLOCK",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006975,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693641188,
-					["serial"] = "Player-5220-01B8BE4F",
+					["delay"] = 0,
 					["total"] = 0.006975,
 					["nome"] = "Ecstasia",
 					["spells"] = {
@@ -11460,15 +11181,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Immolate",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Shadow Bolt"] = {
 								["c_amt"] = 0,
@@ -11488,28 +11209,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shadow Bolt",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006975,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-5220-01B8BE4F",
+					["friendlyfire"] = {
+					},
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
@@ -11527,7 +11249,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004754,
-					["serial"] = "Creature-0-5210-1-661-3128-000072E714",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1693641188,
 					["friendlyfire_total"] = 0,
@@ -11553,15 +11275,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Rushing Charge",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -11581,27 +11303,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.004754,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.004754,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3128-000072E714",
 					["fight_component"] = true,
 				}, -- [17]
 				{
@@ -11611,21 +11333,20 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Kul Tiras Marine"] = 0,
-						["Watch Commander Zalaphil"] = 0,
 						["Lieutenant Benedict"] = 0,
+						["Watch Commander Zalaphil"] = 0,
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.002186,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002186,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693641188,
-					["serial"] = "Player-5220-01B6DE83",
+					["delay"] = 0,
 					["total"] = 0.002186,
 					["nome"] = "Назроут",
 					["spells"] = {
@@ -11649,15 +11370,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Rend",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -11667,8 +11388,8 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Kul Tiras Marine"] = 0,
-									["Watch Commander Zalaphil"] = 0,
 									["Lieutenant Benedict"] = 0,
+									["Watch Commander Zalaphil"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11679,15 +11400,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Heroic Strike"] = {
 								["c_amt"] = 0,
@@ -11696,8 +11417,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Watch Commander Zalaphil"] = 0,
 									["Lieutenant Benedict"] = 0,
+									["Watch Commander Zalaphil"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11708,28 +11429,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Heroic Strike",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.002186,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-5220-01B6DE83",
+					["friendlyfire"] = {
+					},
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -11737,8 +11459,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Ecstasia"] = 0,
 						["Dopesnare"] = 0,
+						["Ecstasia"] = 0,
 					},
 					["pets"] = {
 					},
@@ -11748,7 +11470,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004704,
-					["serial"] = "Creature-0-5210-1-661-3192-000072E350",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1693641188,
 					["friendlyfire_total"] = 0,
@@ -11757,7 +11479,7 @@ _detalhes_database = {
 					["nome"] = "Lieutenant Benedict",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Defensive Stance"] = {
+							["Improved Blocking"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -11772,17 +11494,17 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Defensive Stance",
+								["id"] = "Improved Blocking",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Shield Bash"] = {
 								["c_amt"] = 0,
@@ -11802,15 +11524,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shield Bash",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -11819,8 +11541,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Ecstasia"] = 0,
 									["Dopesnare"] = 0,
+									["Ecstasia"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11831,17 +11553,17 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
-							["Improved Blocking"] = {
+							["Defensive Stance"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -11856,29 +11578,29 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Improved Blocking",
+								["id"] = "Defensive Stance",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.004704,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.004704,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3192-000072E350",
 					["fight_component"] = true,
 				}, -- [19]
 				{
@@ -11898,7 +11620,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002079,
-					["serial"] = "Creature-0-5210-1-661-3129-000072E506",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1693641188,
 					["friendlyfire_total"] = 0,
@@ -11926,15 +11648,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Shield Bash"] = {
 								["c_amt"] = 0,
@@ -11954,27 +11676,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shield Bash",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.002079,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.002079,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3129-000072E506",
 					["fight_component"] = true,
 				}, -- [20]
 				{
@@ -11993,7 +11715,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008735,
-					["serial"] = "Creature-0-5210-1-661-5809-000072E384",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1693641188,
 					["friendlyfire_total"] = 0,
@@ -12002,14 +11724,13 @@ _detalhes_database = {
 					["nome"] = "Watch Commander Zalaphil",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Shield Bash"] = {
+							["Defensive Stance"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -12018,17 +11739,17 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Shield Bash",
+								["id"] = "Defensive Stance",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -12048,23 +11769,24 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
-							["Defensive Stance"] = {
+							["Shield Bash"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -12073,29 +11795,29 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Defensive Stance",
+								["id"] = "Shield Bash",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.008735,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.008735,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1693641185,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-5809-000072E384",
 					["fight_component"] = true,
 				}, -- [21]
 				{
@@ -12104,8 +11826,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopesnare"] = 0,
 						["Defacelol"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
@@ -12115,7 +11837,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001322,
-					["serial"] = "Creature-0-5210-1-661-3125-000072E4B8",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1693644286,
 					["friendlyfire_total"] = 0,
@@ -12142,15 +11864,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Poison"] = {
 								["c_amt"] = 0,
@@ -12159,8 +11881,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
 									["Defacelol"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -12171,27 +11893,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Poison",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001322,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.001322,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1693644283,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3125-000072E4B8",
 					["fight_component"] = true,
 				}, -- [22]
 				{
@@ -12206,15 +11928,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002532,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693644803,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3099-000072F1FD",
 					["last_dps"] = 0,
 					["nome"] = "Dire Mottled Boar",
 					["spells"] = {
@@ -12240,15 +11962,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -12258,11 +11980,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1693644800,
-					["serial"] = "Creature-0-5210-1-661-3099-000072F1FD",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -12270,8 +11992,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Oztruth"] = 0,
 						["Kehrun"] = 0,
+						["Oztruth"] = 0,
 						["Stabolina"] = 0,
 						["Dopesnare"] = 0,
 					},
@@ -12284,7 +12006,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006341,
-					["serial"] = "Creature-0-5210-1-661-3112-0000F30BB0",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693662617,
 					["friendlyfire_total"] = 0,
@@ -12299,8 +12021,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Oztruth"] = 0,
 									["Kehrun"] = 0,
+									["Oztruth"] = 0,
 									["Stabolina"] = 0,
 									["Dopesnare"] = 0,
 								},
@@ -12313,15 +12035,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Shoot",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -12330,8 +12052,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Oztruth"] = 0,
 									["Kehrun"] = 0,
+									["Oztruth"] = 0,
 									["Stabolina"] = 0,
 									["Dopesnare"] = 0,
 								},
@@ -12344,27 +12066,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.006341,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.006341,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.006341,
 					["start_time"] = 1693662614,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3112-0000F30BB0",
 					["monster"] = true,
 				}, -- [24]
 				{
@@ -12373,8 +12095,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopesnare"] = 0,
 						["Kehrun"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
@@ -12385,7 +12107,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001848,
-					["serial"] = "Creature-0-5210-1-661-3111-0001730B82",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1693662617,
 					["friendlyfire_total"] = 0,
@@ -12400,8 +12122,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopesnare"] = 0,
 									["Kehrun"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -12412,15 +12134,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Razor Mane"] = {
 								["c_amt"] = 0,
@@ -12440,27 +12162,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Razor Mane",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001848,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.001848,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.001848,
 					["start_time"] = 1693662614,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-661-3111-0001730B82",
 					["monster"] = true,
 				}, -- [25]
 				{
@@ -12479,7 +12201,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008142,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-227-3126-0000732492",
 					["monster"] = true,
 					["end_time"] = 1693665970,
 					["friendlyfire_total"] = 0,
@@ -12506,27 +12228,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.008142,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008142,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1693665967,
-					["serial"] = "Creature-0-5208-1-227-3126-0000732492",
+					["delay"] = 0,
 					["fight_component"] = true,
 				}, -- [26]
 				{
@@ -12539,15 +12261,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008818,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693665970,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-227-3107-00007324FA",
 					["damage_taken"] = 0.008818,
 					["nome"] = "Surf Crawler",
 					["spells"] = {
@@ -12570,15 +12292,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -12588,11 +12310,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1693665967,
-					["serial"] = "Creature-0-5208-1-227-3107-00007324FA",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
@@ -12610,7 +12332,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00147,
-					["serial"] = "Creature-0-5208-1-378-3116-0000734C30",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693666566,
 					["friendlyfire_total"] = 0,
@@ -12637,15 +12359,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Rend Flesh"] = {
 								["c_amt"] = 0,
@@ -12665,28 +12387,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Rend Flesh",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.00147,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.00147,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693666563,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3116-0000734C30",
 					["dps_started"] = false,
 				}, -- [28]
 				{
@@ -12706,7 +12428,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002534,
-					["serial"] = "Creature-0-5208-1-378-3115-0000F34C1B",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693666566,
 					["friendlyfire_total"] = 0,
@@ -12734,28 +12456,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.002534,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.002534,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693666563,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3115-0000F34C1B",
 					["dps_started"] = false,
 				}, -- [29]
 				{
@@ -12769,15 +12491,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007913,
-					["dps_started"] = false,
+					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693666566,
-					["serial"] = "Creature-0-5208-1-378-3100-0000734871",
+					["delay"] = 0,
 					["last_dps"] = 0,
 					["nome"] = "Elder Mottled Boar",
 					["spells"] = {
@@ -12802,15 +12524,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -12820,11 +12542,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["on_hold"] = false,
 					["start_time"] = 1693666563,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3100-0000734871",
+					["dps_started"] = false,
 				}, -- [30]
 				{
 					["flag_original"] = 2632,
@@ -12842,7 +12564,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00126,
-					["serial"] = "Creature-0-5208-1-378-3122-00007346C1",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693666566,
 					["friendlyfire_total"] = 0,
@@ -12869,28 +12591,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.00126,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.00126,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693666563,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3122-00007346C1",
 					["dps_started"] = false,
 				}, -- [31]
 				{
@@ -12911,7 +12633,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008825,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3127-0000734DB7",
 					["dps_started"] = false,
 					["end_time"] = 1693667166,
 					["friendlyfire_total"] = 0,
@@ -12939,15 +12661,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Venom Sting"] = {
 								["c_amt"] = 0,
@@ -12968,27 +12690,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Venom Sting",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.008825,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008825,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.008825,
 					["start_time"] = 1693667163,
-					["serial"] = "Creature-0-5208-1-378-3127-0000734DB7",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [32]
 				{
@@ -12997,8 +12719,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopeboar <Dopesnare>"] = 0,
 						["Crab <Dopesnare>"] = 0,
+						["Dopeboar <Dopesnare>"] = 0,
 						["Boar <Dopesnare>"] = 0,
 						["Dopesnare"] = 0,
 					},
@@ -13011,7 +12733,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006657,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3123-0000734BC8",
 					["dps_started"] = false,
 					["end_time"] = 1693667166,
 					["friendlyfire_total"] = 0,
@@ -13042,15 +12764,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Rushing Charge"] = {
 								["c_amt"] = 0,
@@ -13069,27 +12791,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Rushing Charge",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.006657,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006657,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.006657,
 					["start_time"] = 1693667163,
-					["serial"] = "Creature-0-5208-1-378-3123-0000734BC8",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [33]
 				{
@@ -13108,7 +12830,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006565,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3117-0000735520",
 					["monster"] = true,
 					["end_time"] = 1693672286,
 					["friendlyfire_total"] = 0,
@@ -13124,8 +12846,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar <Dopesnare>"] = 0,
 									["Dopeboar"] = 0,
+									["Dopeboar <Dopesnare>"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -13136,27 +12858,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.006565,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006565,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1693672283,
-					["serial"] = "Creature-0-5208-1-378-3117-0000735520",
+					["delay"] = 0,
 					["fight_component"] = true,
 				}, -- [34]
 				{
@@ -13165,8 +12887,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopeboar <Dopesnare>"] = 0,
 						["Dopesnare"] = 0,
+						["Dopeboar <Dopesnare>"] = 0,
 					},
 					["pets"] = {
 					},
@@ -13176,7 +12898,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001247,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5208-1-378-3118-00007350DF",
 					["monster"] = true,
 					["end_time"] = 1693672286,
 					["friendlyfire_total"] = 0,
@@ -13192,8 +12914,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar"] = 0,
 									["Dopeboar <Dopesnare>"] = 0,
+									["Dopeboar"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -13204,15 +12926,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Lightning Bolt"] = {
 								["c_amt"] = 0,
@@ -13234,27 +12956,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lightning Bolt",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.001247,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.001247,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1693672283,
-					["serial"] = "Creature-0-5208-1-378-3118-00007350DF",
+					["delay"] = 0,
 					["fight_component"] = true,
 				}, -- [35]
 				{
@@ -13275,7 +12997,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001071,
-					["serial"] = "Creature-0-5210-1-791-3110-0001F3650F",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693672875,
 					["friendlyfire_total"] = 0,
@@ -13290,8 +13012,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar"] = 0,
 									["Dopeboar <Dopesnare>"] = 0,
+									["Dopeboar"] = 0,
 									["Nonbinarytwo"] = 0,
 									["Dopesnare"] = 0,
 								},
@@ -13304,15 +13026,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Muscle Tear"] = {
 								["c_amt"] = 0,
@@ -13333,28 +13055,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Muscle Tear",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001071,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.001071,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693672872,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-3110-0001F3650F",
 					["dps_started"] = false,
 				}, -- [36]
 				{
@@ -13363,8 +13085,8 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Dopesnare"] = 0,
 						["Dopeboar <Dopesnare>"] = 0,
+						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
@@ -13374,7 +13096,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005605,
-					["serial"] = "Creature-0-5210-1-791-3231-00007362C9",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1693672875,
 					["friendlyfire_total"] = 0,
@@ -13402,15 +13124,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Decayed Agility"] = {
 								["c_amt"] = 0,
@@ -13429,28 +13151,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Decayed Agility",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.005605,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.005605,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693672872,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-3231-00007362C9",
 					["dps_started"] = false,
 				}, -- [37]
 				{
@@ -13459,21 +13181,22 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Burning Blade Apprentice"] = 0,
 						["Burning Blade Fanatic"] = 0,
+						["Burning Blade Apprentice"] = 0,
 						["Voidwalker Minion"] = 0,
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.006249,
+					["on_hold"] = false,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006249,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["dps_started"] = false,
 					["end_time"] = 1693676258,
-					["delay"] = 0,
+					["serial"] = "Player-5220-01B970BA",
 					["total"] = 0.006249,
 					["nome"] = "Baldurr",
 					["spells"] = {
@@ -13497,15 +13220,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Thunder Clap",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -13514,8 +13237,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Burning Blade Apprentice"] = 0,
 									["Burning Blade Fanatic"] = 0,
+									["Burning Blade Apprentice"] = 0,
 									["Voidwalker Minion"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -13527,15 +13250,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Rend"] = {
 								["c_amt"] = 0,
@@ -13556,15 +13279,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Rend",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Hamstring"] = {
 								["c_amt"] = 0,
@@ -13584,15 +13307,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Hamstring",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Heroic Strike"] = {
 								["c_amt"] = 0,
@@ -13613,29 +13336,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Heroic Strike",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.006249,
 					["start_time"] = 1693676255,
-					["serial"] = "Player-5220-01B970BA",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [38]
 				{
 					["flag_original"] = 2632,
@@ -13660,7 +13382,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007294,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-3198-0000F37075",
 					["dps_started"] = false,
 					["end_time"] = 1693676258,
 					["friendlyfire_total"] = 0,
@@ -13668,19 +13390,13 @@ _detalhes_database = {
 					["nome"] = "Burning Blade Apprentice",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Shadow Bolt"] = {
+							["Summon Voidwalker"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Fronyos"] = 0,
-									["Crab <Dopesnare>"] = 0,
-									["Baldurr"] = 0,
-									["Unihornicorn"] = 0,
-									["Ghostey"] = 0,
-									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -13689,17 +13405,17 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Shadow Bolt",
+								["id"] = "Summon Voidwalker",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -13723,23 +13439,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
-							["Summon Voidwalker"] = {
+							["Shadow Bolt"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Fronyos"] = 0,
+									["Crab <Dopesnare>"] = 0,
+									["Baldurr"] = 0,
+									["Unihornicorn"] = 0,
+									["Ghostey"] = 0,
+									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -13748,29 +13470,29 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Summon Voidwalker",
+								["id"] = "Shadow Bolt",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.007294,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.007294,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.007294,
 					["start_time"] = 1693676255,
-					["serial"] = "Creature-0-5210-1-791-3198-0000F37075",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [39]
 				{
@@ -13787,15 +13509,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003297,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693676258,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-8996-000073707B",
 					["on_hold"] = false,
 					["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
 					["spells"] = {
@@ -13822,15 +13544,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -13840,11 +13562,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.003297,
 					["start_time"] = 1693676255,
-					["serial"] = "Creature-0-5210-1-791-8996-000073707B",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [40]
 				{
 					["flag_original"] = 68168,
@@ -13854,8 +13576,8 @@ _detalhes_database = {
 					["targets"] = {
 						["Crab <Dopesnare>"] = 0,
 						["Baldurr"] = 0,
-						["Gorderas"] = 0,
 						["Ghostey"] = 0,
+						["Gorderas"] = 0,
 						["Terlonwame"] = 0,
 					},
 					["pets"] = {
@@ -13867,7 +13589,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004689,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-3197-0000F37075",
 					["dps_started"] = false,
 					["end_time"] = 1693676258,
 					["friendlyfire_total"] = 0,
@@ -13892,15 +13614,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fanatic Blade",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -13913,8 +13635,8 @@ _detalhes_database = {
 									["Crab <Dopesnare>"] = 0,
 									["Baldurr"] = 0,
 									["Fronyos"] = 0,
-									["Ghostey"] = 0,
 									["Gorderas"] = 0,
+									["Ghostey"] = 0,
 									["Terlonwame"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -13926,15 +13648,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Fanatic Blade Effect"] = {
 								["c_amt"] = 0,
@@ -13955,27 +13677,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fanatic Blade Effect",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.004689,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.004689,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.004689,
 					["start_time"] = 1693676255,
-					["serial"] = "Creature-0-5210-1-791-3197-0000F37075",
+					["delay"] = 0,
 					["monster"] = true,
 				}, -- [41]
 				{
@@ -13990,15 +13712,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003399,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693676258,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-8996-0000736EC3",
 					["on_hold"] = false,
 					["nome"] = "Voidwalker Minion",
 					["spells"] = {
@@ -14023,15 +13745,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -14041,11 +13763,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.003399,
 					["start_time"] = 1693676255,
-					["serial"] = "Creature-0-5210-1-791-8996-0000736EC3",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [42]
 				{
 					["flag_original"] = 68136,
@@ -14057,15 +13779,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002734,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693676258,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5210-1-791-3108-0000735E69",
 					["on_hold"] = false,
 					["nome"] = "Encrusted Surf Crawler",
 					["spells"] = {
@@ -14088,15 +13810,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -14106,11 +13828,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 0.002734,
 					["start_time"] = 1693676255,
-					["serial"] = "Creature-0-5210-1-791-3108-0000735E69",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [43]
 				{
 					["flag_original"] = 2632,
@@ -14118,19 +13840,22 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Mcyerba"] = 0,
 						["Wolf <Dopesnare>"] = 0,
+						["Stoneclaw Totem"] = 0,
+						["Mcyerba"] = 0,
+						["Jmeka"] = 0,
+						["Malmros"] = 0,
 						["Dopesnare"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003523,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-602-2960-0000737FDC",
 					["fight_component"] = true,
 					["end_time"] = 1693737105,
 					["friendlyfire_total"] = 0,
@@ -14145,9 +13870,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Mcyerba"] = 0,
 									["Wolf <Dopesnare>"] = 0,
+									["Stoneclaw Totem"] = 0,
+									["Jmeka"] = 0,
+									["Mcyerba"] = 0,
 									["Wolf"] = 0,
+									["Malmros"] = 0,
 									["Dopesnare"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -14159,15 +13887,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Threatening Growl"] = {
 								["c_amt"] = 0,
@@ -14186,28 +13914,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Threatening Growl",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.003523,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.003523,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5251-1-602-2960-0000737FDC",
+					["delay"] = 0,
 					["dps_started"] = false,
 				}, -- [44]
 				{
@@ -14220,13 +13948,13 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008257,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5251-1-602-3035-0000F37B67",
 					["fight_component"] = true,
 					["end_time"] = 1693737105,
 					["friendlyfire_total"] = 0,
@@ -14241,8 +13969,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Wolf <Dopesnare>"] = 0,
 									["Wolf"] = 0,
+									["Wolf <Dopesnare>"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14253,28 +13981,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.008257,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008257,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5251-1-602-3035-0000F37B67",
+					["delay"] = 0,
 					["dps_started"] = false,
 				}, -- [45]
 				{
@@ -14287,13 +14015,13 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007377,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5250-1-405-3255-0000737AAC",
 					["fight_component"] = true,
 					["end_time"] = 1693737105,
 					["friendlyfire_total"] = 0,
@@ -14308,8 +14036,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar"] = 0,
 									["Dopeboar <Dopesnare>"] = 0,
+									["Dopeboar"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14320,28 +14048,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.007377,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.007377,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5250-1-405-3255-0000737AAC",
+					["delay"] = 0,
 					["dps_started"] = false,
 				}, -- [46]
 				{
@@ -14354,16 +14082,16 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001877,
-					["last_dps"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693737105,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-5250-1-405-3244-0000F37A5E",
+					["last_dps"] = 0,
 					["nome"] = "Greater Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14374,8 +14102,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar <Dopesnare>"] = 0,
 									["Dopeboar"] = 0,
+									["Dopeboar <Dopesnare>"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14386,15 +14114,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -14404,11 +14132,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5250-1-405-3244-0000F37A5E",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [47]
 				{
 					["flag_original"] = 68168,
@@ -14420,13 +14148,13 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008346,
-					["delay"] = 0,
+					["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
 					["fight_component"] = true,
 					["end_time"] = 1693737105,
 					["friendlyfire_total"] = 0,
@@ -14452,15 +14180,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Lash"] = {
 								["c_amt"] = 0,
@@ -14479,28 +14207,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lash",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.008346,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008346,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
+					["delay"] = 0,
 					["dps_started"] = false,
 				}, -- [48]
 				{
@@ -14513,16 +14241,16 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001802,
-					["last_dps"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693737105,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-5250-1-405-3242-00007373C6",
+					["last_dps"] = 0,
 					["nome"] = "Zhevra Runner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14533,8 +14261,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Dopeboar <Dopesnare>"] = 0,
 									["Dopeboar"] = 0,
+									["Dopeboar <Dopesnare>"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14545,15 +14273,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -14563,12 +14291,434 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1693737102,
-					["serial"] = "Creature-0-5250-1-405-3242-00007373C6",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [49]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.004542,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Wolf <Dopesnare>"] = 0,
+						["Dopesnare"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004542,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.004542,
+					["serial"] = "Creature-0-5252-1-82-2965-0000745D6E",
+					["monster"] = true,
+					["end_time"] = 1693739748,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Windfury Matriarch",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dopesnare"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.004542,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1693739745,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [50]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.006363,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Dopesnare"] = 0,
+						["Wolf <Dopesnare>"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006363,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006363,
+					["serial"] = "Creature-0-5252-1-82-2964-0000745D54",
+					["monster"] = true,
+					["end_time"] = 1693739748,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Windfury Sorceress",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf"] = 0,
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Frostbolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dopesnare"] = 0,
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Frostbolt",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006363,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1693739745,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [51]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.00752,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Wolf <Dopesnare>"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.00752,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.00752,
+					["serial"] = "Creature-0-5252-1-82-2971-00007463BD",
+					["monster"] = true,
+					["end_time"] = 1693739748,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Taloned Swoop",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf"] = 0,
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Swoop"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Swoop",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.00752,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1693739745,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [52]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.006952,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Dopesnare"] = 0,
+						["Wolf <Dopesnare>"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006952,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006952,
+					["serial"] = "Creature-0-5252-1-82-3566-0000745E15",
+					["monster"] = true,
+					["end_time"] = 1693739748,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Flatland Prowler",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf"] = 0,
+									["Wolf <Dopesnare>"] = 0,
+									["Dopesnare"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006952,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1693739745,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [53]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.004811,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Wolf <Dopesnare>"] = 0,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.004811,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1693746841,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Arra'chea",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Wolf"] = 0,
+									["Wolf <Dopesnare>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire_total"] = 0,
+					["total"] = 0.004811,
+					["serial"] = "Creature-0-5210-1-578-3058-000074762D",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.004811,
+					["start_time"] = 1693746838,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [54]
 			},
 		}, -- [1]
 		{
@@ -14586,18 +14736,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["totalover_without_pet"] = 0.007615,
+					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["healing_taken"] = 0.007615,
 					["totalover"] = 0.007615,
 					["total_without_pet"] = 0.007615,
-					["start_time"] = 1693478273,
-					["iniciar_hps"] = false,
-					["fight_component"] = true,
 					["total"] = 0.007615,
-					["healing_taken"] = 0.007615,
-					["delay"] = 0,
+					["totalover_without_pet"] = 0.007615,
+					["fight_component"] = true,
+					["end_time"] = 1693478276,
+					["heal_enemy_amt"] = 0,
+					["serial"] = "Player-5220-01ACD531",
 					["nome"] = "Pdhorot",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14621,29 +14771,29 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
 								["c_min"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["m_amt"] = 0,
+								["n_curado"] = 0,
+								["n_amt"] = 0,
+								["totaldenied"] = 0,
+								["m_healed"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
-					["end_time"] = 1693478276,
-					["last_event"] = 0,
-					["heal_enemy"] = {
-					},
 					["targets_absorbs"] = {
 					},
+					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy"] = {
+					},
+					["totaldenied"] = 0.007615,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
-					["totaldenied"] = 0.007615,
-					["serial"] = "Player-5220-01ACD531",
-					["heal_enemy_amt"] = 0,
+					["start_time"] = 1693478273,
+					["delay"] = 0,
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
@@ -14658,33 +14808,33 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["classe"] = "HUNTER",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.00371,
 					["total_without_pet"] = 0.00371,
-					["totaldenied"] = 0.00371,
+					["end_time"] = 1693478276,
 					["totalover_without_pet"] = 0.00371,
 					["healing_taken"] = 0.00371,
 					["total"] = 0.00371,
-					["delay"] = 0,
+					["serial"] = "Player-5220-01B468FB",
+					["classe"] = "HUNTER",
+					["nome"] = "Dopesnare",
+					["targets_absorbs"] = {
+					},
+					["grupo"] = true,
+					["start_time"] = 1693478273,
+					["heal_enemy"] = {
+					},
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 3,
 					},
-					["nome"] = "Dopesnare",
-					["targets_absorbs"] = {
-					},
-					["grupo"] = true,
-					["end_time"] = 1693478276,
-					["heal_enemy"] = {
-					},
-					["tipo"] = 2,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["on_hold"] = false,
-					["start_time"] = 1693478273,
-					["serial"] = "Player-5220-01B468FB",
-					["heal_enemy_amt"] = 0,
+					["totaldenied"] = 0.00371,
+					["delay"] = 0,
+					["tipo"] = 2,
 				}, -- [2]
 			},
 		}, -- [2]
@@ -14719,12 +14869,12 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["totalover"] = 0.002858,
+					["flag_original"] = 1298,
 					["tipo"] = 3,
 					["alternatepower"] = 0.002858,
 					["last_event"] = 0,
 					["serial"] = "Player-5220-01B6DE83",
-					["flag_original"] = 1298,
+					["totalover"] = 0.002858,
 				}, -- [1]
 				{
 					["received"] = 0.004798,
@@ -14763,12 +14913,12 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1304,
+					["totalover"] = 0.004798,
 					["tipo"] = 3,
 					["alternatepower"] = 0.004798,
 					["last_event"] = 0,
 					["serial"] = "Player-5220-01B970BA",
-					["totalover"] = 0.004798,
+					["flag_original"] = 1304,
 				}, -- [2]
 			},
 		}, -- [3]
@@ -14779,14 +14929,14 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							["Tame Beast"] = {
-								["id"] = "Tame Beast",
+							["Concussive Shot"] = {
+								["id"] = "Concussive Shot",
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							["Tame Armored Scorpid"] = {
-								["id"] = "Tame Armored Scorpid",
+							["Tame Beast"] = {
+								["id"] = "Tame Beast",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -14797,14 +14947,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							["Concussive Shot"] = {
-								["id"] = "Concussive Shot",
+							["Tame Surf Crawler"] = {
+								["id"] = "Tame Surf Crawler",
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							["Tame Surf Crawler"] = {
-								["id"] = "Tame Surf Crawler",
+							["Tame Armored Scorpid"] = {
+								["id"] = "Tame Armored Scorpid",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -14868,25 +15018,25 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Dopesnare",
+					["debuff_uptime_targets"] = {
+					},
 					["grupo"] = true,
 					["spell_cast"] = {
 						["Raptor Strike"] = 0,
-						["Arcane Shot"] = 0,
+						["Serpent Sting"] = 0,
 						["Tame Dire Mottled Boar"] = 0,
 						["Concussive Shot"] = 0,
 						["Auto Shot"] = 0,
-						["Serpent Sting"] = 0,
+						["Arcane Shot"] = 0,
 					},
 					["buff_uptime_targets"] = {
 					},
 					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
+					["nome"] = "Dopesnare",
+					["last_event"] = 0,
+					["serial"] = "Player-5220-01B468FB",
 					["pets"] = {
 					},
-					["serial"] = "Player-5220-01B468FB",
-					["last_event"] = 0,
 				}, -- [1]
 				{
 					["fight_component"] = true,
@@ -14895,27 +15045,27 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Lesser Heal"] = 0,
 					},
-					["pets"] = {
-					},
+					["flag_original"] = 1304,
 					["classe"] = "UNGROUPPLAYER",
 					["last_event"] = 0,
 					["serial"] = "Player-5220-01ACD531",
-					["flag_original"] = 1304,
+					["pets"] = {
+					},
 				}, -- [2]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Vile Familiar",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5209-1-108-3101-000270775C",
 					["spell_cast"] = {
 						["Fireball"] = 0,
 					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5209-1-108-3101-000270775C",
+					["classe"] = "UNKNOW",
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
@@ -14930,7 +15080,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "WARLOCK",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -14944,7 +15095,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -14953,19 +15104,18 @@ _detalhes_database = {
 					},
 					["nome"] = "Cécaré",
 					["last_event"] = 0,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
-					["tipo"] = 4,
+					["buff_uptime"] = 0,
 					["serial"] = "Player-5220-01B6F5DD",
-					["pets"] = {
-					},
+					["tipo"] = 4,
 				}, -- [4]
 				{
 					["flag_original"] = 1047,
+					["nome"] = "Muertoxcebra",
+					["grupo"] = true,
 					["buff_uptime_targets"] = {
 					},
-					["grupo"] = true,
-					["nome"] = "Muertoxcebra",
 					["spell_cast"] = {
 						["Lightning Bolt"] = 0,
 						["Earth Shock"] = 0,
@@ -15014,7 +15164,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "WARLOCK",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -15028,7 +15179,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -15036,70 +15187,69 @@ _detalhes_database = {
 					},
 					["nome"] = "Mogal",
 					["last_event"] = 0,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
-					["tipo"] = 4,
+					["buff_uptime"] = 0,
 					["serial"] = "Player-5220-01B6ED97",
-					["pets"] = {
-					},
+					["tipo"] = 4,
 				}, -- [6]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Yarrog Baneshadow",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5251-1-126-3183-000070CB6E",
 					["spell_cast"] = {
 						["Immolate"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5251-1-126-3183-000070CB6E",
-					["classe"] = "UNKNOW",
 				}, -- [7]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Kolkar Drudge",
 					["pets"] = {
 					},
-					["spell_cast"] = {
-						["Dust Cloud"] = 0,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5251-1-126-3119-000170D033",
-					["classe"] = "UNKNOW",
-				}, -- [8]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Kolkar Outrunner",
-					["pets"] = {
-					},
 					["classe"] = "UNKNOW",
 					["flag_original"] = 68168,
 					["tipo"] = 4,
 					["fight_component"] = true,
-					["serial"] = "Creature-0-5251-1-126-3120-000070D801",
+					["serial"] = "Creature-0-5251-1-126-3119-000170D033",
+					["spell_cast"] = {
+						["Dust Cloud"] = 0,
+					},
+				}, -- [8]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Kolkar Outrunner",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						["Shoot"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5251-1-126-3120-000070D801",
+					["classe"] = "UNKNOW",
 				}, -- [9]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							["Rend"] = {
-								["id"] = "Rend",
+							["Charge Stun"] = {
+								["id"] = "Charge Stun",
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							["Charge Stun"] = {
-								["id"] = "Charge Stun",
+							["Rend"] = {
+								["id"] = "Rend",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -15127,7 +15277,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -15138,12 +15288,12 @@ _detalhes_database = {
 					},
 					["nome"] = "Назроут",
 					["tipo"] = 4,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
+					["last_event"] = 0,
+					["serial"] = "Player-5220-01B6DE83",
 					["pets"] = {
 					},
-					["serial"] = "Player-5220-01B6DE83",
-					["last_event"] = 0,
 				}, -- [10]
 				{
 					["flag_original"] = 1047,
@@ -15158,8 +15308,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["classe"] = "WARLOCK",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -15173,7 +15322,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -15182,59 +15331,60 @@ _detalhes_database = {
 					},
 					["nome"] = "Ecstasia",
 					["last_event"] = 0,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["serial"] = "Player-5220-01B8BE4F",
-					["buff_uptime"] = 0,
+					["tipo"] = 4,
 				}, -- [11]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Lieutenant Benedict",
 					["pets"] = {
 					},
-					["spell_cast"] = {
-						["Shield Bash"] = 0,
-						["Defensive Stance"] = 0,
-						["Improved Blocking"] = 0,
-					},
+					["classe"] = "UNKNOW",
 					["flag_original"] = 2632,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["fight_component"] = true,
 					["serial"] = "Creature-0-5210-1-661-3192-000072E350",
-					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						["Improved Blocking"] = 0,
+						["Defensive Stance"] = 0,
+						["Shield Bash"] = 0,
+					},
 				}, -- [12]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Kul Tiras Marine",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-661-3129-000072E49E",
 					["spell_cast"] = {
 						["Shield Bash"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-661-3129-000072E49E",
-					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Watch Commander Zalaphil",
 					["pets"] = {
 					},
-					["spell_cast"] = {
-						["Shield Bash"] = 0,
-						["Defensive Stance"] = 0,
-					},
+					["classe"] = "UNKNOW",
 					["flag_original"] = 68168,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["fight_component"] = true,
 					["serial"] = "Creature-0-5210-1-661-5809-000072E384",
-					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						["Defensive Stance"] = 0,
+						["Shield Bash"] = 0,
+					},
 				}, -- [14]
 				{
 					["fight_component"] = true,
@@ -15243,42 +15393,42 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Boar Charge"] = 0,
 					},
-					["pets"] = {
-					},
+					["flag_original"] = 68136,
 					["tipo"] = 4,
 					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-5210-1-661-3099-000072F1FD",
-					["flag_original"] = 68136,
+					["pets"] = {
+					},
 				}, -- [15]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Razormane Scout",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-661-3112-0000F30BB0",
 					["spell_cast"] = {
 						["Shoot"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-661-3112-0000F30BB0",
-					["classe"] = "UNKNOW",
 				}, -- [16]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Razormane Quilboar",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-661-3111-0001730B82",
 					["spell_cast"] = {
 						["Razor Mane"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-661-3111-0001730B82",
-					["classe"] = "UNKNOW",
 				}, -- [17]
 				{
 					["fight_component"] = true,
@@ -15287,102 +15437,102 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Boar Charge"] = 0,
 					},
-					["flag_original"] = 68136,
+					["pets"] = {
+					},
 					["tipo"] = 4,
 					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-5208-1-378-3100-000073489B",
-					["pets"] = {
-					},
+					["flag_original"] = 68136,
 				}, -- [18]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Venomtail Scorpid",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5208-1-378-3127-0000734DB7",
 					["spell_cast"] = {
 						["Venom Sting"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5208-1-378-3127-0000734DB7",
+					["classe"] = "UNKNOW",
 				}, -- [19]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Dustwind Pillager",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5208-1-378-3116-0000734C45",
 					["spell_cast"] = {
 						["Rend Flesh"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5208-1-378-3116-0000734C45",
+					["classe"] = "UNKNOW",
 				}, -- [20]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Dustwind Storm Witch",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5208-1-378-3118-00007350DF",
 					["spell_cast"] = {
 						["Lightning Bolt"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5208-1-378-3118-00007350DF",
+					["classe"] = "UNKNOW",
 				}, -- [21]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Dreadmaw Crocolisk",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-791-3110-00007362E9",
 					["spell_cast"] = {
 						["Muscle Tear"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-791-3110-00007362E9",
-					["classe"] = "UNKNOW",
 				}, -- [22]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Corrupted Dreadmaw Crocolisk",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-791-3231-00007362C9",
 					["spell_cast"] = {
 						["Decayed Agility"] = 0,
 					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-791-3231-00007362C9",
-					["classe"] = "UNKNOW",
 				}, -- [23]
 				{
 					["monster"] = true,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["nome"] = "Bloodtalon Scythemaw",
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-791-3123-00007357CD",
 					["spell_cast"] = {
 						["Rushing Charge"] = 0,
 					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-791-3123-00007357CD",
-					["classe"] = "UNKNOW",
 				}, -- [24]
 				{
 					["flag_original"] = 1298,
@@ -15394,14 +15544,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							["Charge Stun"] = {
-								["id"] = "Charge Stun",
+							["Thunder Clap"] = {
+								["id"] = "Thunder Clap",
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							["Thunder Clap"] = {
-								["id"] = "Thunder Clap",
+							["Charge Stun"] = {
+								["id"] = "Charge Stun",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -15430,7 +15580,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -15443,42 +15593,42 @@ _detalhes_database = {
 					},
 					["nome"] = "Baldurr",
 					["last_event"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
-					["buff_uptime"] = 0,
-					["serial"] = "Player-5220-01B970BA",
 					["tipo"] = 4,
+					["serial"] = "Player-5220-01B970BA",
+					["buff_uptime"] = 0,
 				}, -- [25]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Burning Blade Apprentice",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						["Summon Voidwalker"] = 0,
+						["Shadow Bolt"] = 0,
+					},
 					["flag_original"] = 2632,
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["fight_component"] = true,
 					["serial"] = "Creature-0-5210-1-791-3198-0000F37075",
-					["spell_cast"] = {
-						["Shadow Bolt"] = 0,
-						["Summon Voidwalker"] = 0,
-					},
+					["classe"] = "UNKNOW",
 				}, -- [26]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Burning Blade Fanatic",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5210-1-791-3197-0002737054",
 					["spell_cast"] = {
 						["Fanatic Blade"] = 0,
 					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-791-3197-0002737054",
+					["classe"] = "UNKNOW",
 				}, -- [27]
 				{
 					["fight_component"] = true,
@@ -15487,43 +15637,102 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Quick Sidestep"] = 0,
 					},
-					["pets"] = {
-					},
+					["flag_original"] = 68136,
 					["classe"] = "UNKNOW",
 					["last_event"] = 0,
 					["serial"] = "Creature-0-5210-1-791-3108-0000735E69",
-					["flag_original"] = 68136,
+					["pets"] = {
+					},
 				}, -- [28]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Prairie Wolf Alpha",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5251-1-602-2960-0000737893",
 					["spell_cast"] = {
 						["Threatening Growl"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5251-1-602-2960-0000737893",
+					["classe"] = "UNKNOW",
 				}, -- [29]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Sunscale Lashtail",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
 					["spell_cast"] = {
 						["Lash"] = 0,
 					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5250-1-405-3254-0000737A1F",
+					["classe"] = "UNKNOW",
 				}, -- [30]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Windfury Matriarch",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						["Lightning Bolt"] = 0,
+					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5252-1-82-2965-0000745D6E",
+					["classe"] = "UNKNOW",
+				}, -- [31]
+				{
+					["monster"] = true,
+					["tipo"] = 4,
+					["nome"] = "Windfury Sorceress",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						["Frostbolt"] = 0,
+					},
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5252-1-82-2964-0000745D54",
+					["classe"] = "UNKNOW",
+				}, -- [32]
+				{
+					["fight_component"] = true,
+					["nome"] = "Arra'chea",
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["flag_original"] = 68136,
+					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						["Head Butt"] = 0,
+					},
+					["serial"] = "Creature-0-5210-1-578-3058-000074762D",
+					["last_event"] = 0,
+				}, -- [33]
+				{
+					["monster"] = true,
+					["nome"] = "Taloned Swoop",
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						["Swoop"] = 0,
+					},
+					["flag_original"] = 68168,
+					["last_event"] = 0,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-5210-1-578-2971-0000744A0D",
+					["classe"] = "UNKNOW",
+				}, -- [34]
 			},
 		}, -- [4]
 		{
@@ -15546,21 +15755,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
-			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -15570,7 +15779,36 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
+		["frags"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
 		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
 		},
 		["totals_grupo"] = {
 			0, -- [1]
@@ -15579,128 +15817,38 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
 	},
-	["force_font_outline"] = "",
-	["local_instances_config"] = {
-		{
-			["segment"] = 0,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["is_open"] = true,
-			["isLocked"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["segment"] = 0,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["is_open"] = true,
-			["isLocked"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
 	},
-	["character_data"] = {
-		["logons"] = 49,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -15708,9 +15856,7 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
 	},

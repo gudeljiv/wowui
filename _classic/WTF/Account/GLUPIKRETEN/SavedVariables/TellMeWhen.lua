@@ -169,19 +169,11 @@ TellMeWhenDB = {
 		["HUNTER"] = {
 			["Groups"] = {
 				{
-					["Point"] = {
-						["y"] = -4.996173281900221,
-						["x"] = -0.0002605930177353105,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
 					["Scale"] = 1.0008,
 					["Rows"] = 3,
 					["Locked"] = true,
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
 					["Columns"] = 20,
-					["Alpha"] = 0,
-					["Name"] = "SPELLS",
 					["Icons"] = {
 						{
 							["BuffOrDebuff"] = "HARMFUL",
@@ -189,7 +181,7 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Serpent Sting",
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "CURRENTSPELL",
@@ -213,9 +205,9 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["PrtsAfter"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "<=",
 									["AndOr"] = "OR",
+									["Unit"] = "target",
 									["Name"] = "Serpent Sting",
 									["Level"] = 2.5,
 								}, -- [4]
@@ -232,7 +224,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
 							["States"] = {
 								{
 								}, -- [1]
@@ -253,10 +245,10 @@ TellMeWhenDB = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["Type"] = "cooldown",
-							["Name"] = "Hunter's Mark",
 							["ShowTimerText"] = true,
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["ManaCheck"] = true,
+							["Name"] = "Hunter's Mark",
 							["States"] = {
 								{
 								}, -- [1]
@@ -278,8 +270,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH_ABS",
-									["Operator"] = ">=",
 									["Unit"] = "target",
+									["Operator"] = ">=",
 									["Level"] = 300000,
 								}, -- [2]
 								["n"] = 2,
@@ -350,7 +342,7 @@ TellMeWhenDB = {
 						{
 							["Type"] = "reactive",
 							["Name"] = "Kill Shot",
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1ZNfjO2NI8Ga",
 							["CooldownCheck"] = true,
 							["States"] = {
 								{
@@ -367,7 +359,7 @@ TellMeWhenDB = {
 							},
 							["RangeCheck"] = true,
 							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1ZNfjO2NI8Ga",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
@@ -377,8 +369,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = "<=",
+									["Unit"] = "target",
 									["Name"] = "Kill Shot",
 									["Level"] = 20,
 								}, -- [2]
@@ -456,7 +448,7 @@ TellMeWhenDB = {
 						{
 							["Type"] = "reactive",
 							["Name"] = "Kill Command",
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YYUluwZXp0V",
 							["CooldownCheck"] = true,
 							["States"] = {
 								{
@@ -471,7 +463,7 @@ TellMeWhenDB = {
 							},
 							["RangeCheck"] = true,
 							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1YYUluwZXp0V",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "EXISTS",
@@ -524,8 +516,8 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Operator"] = "<=",
 									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Name"] = "Black Arrow",
 									["Level"] = 1,
 								}, -- [1]
@@ -595,9 +587,9 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["PrtsAfter"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "<=",
 									["AndOr"] = "OR",
+									["Unit"] = "target",
 									["Name"] = "Explosive Shot",
 									["Level"] = 1,
 								}, -- [2]
@@ -696,8 +688,8 @@ TellMeWhenDB = {
 								}, -- [3]
 								{
 									["Type"] = "MANA_MAX",
-									["Operator"] = ">=",
 									["Unit"] = "target",
+									["Operator"] = ">=",
 									["Level"] = 5000,
 								}, -- [4]
 								{
@@ -785,8 +777,8 @@ TellMeWhenDB = {
 							["Unit"] = "pet",
 							["Type"] = "cooldown",
 							["Name"] = "Mend Pet",
-							["GUID"] = "TMW:icon:1X=OmHlbqz67",
 							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1X=OmHlbqz67",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon1",
@@ -813,8 +805,8 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Operator"] = "<=",
 									["Unit"] = "pet",
+									["Operator"] = "<=",
 									["Level"] = 90,
 								}, -- [1]
 								{
@@ -878,8 +870,8 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
-									["Operator"] = "~=",
 									["Unit"] = "target",
+									["Operator"] = "~=",
 									["Name"] = "Serpent Sting",
 								}, -- [1]
 								["n"] = 1,
@@ -1032,8 +1024,8 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "THREATSCALED",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 									["Level"] = 99,
 								}, -- [1]
 								["n"] = 1,
@@ -1070,8 +1062,8 @@ TellMeWhenDB = {
 						{
 							["Type"] = "cooldown",
 							["Name"] = "Raptor Strike",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1ayCWLUPE1CN",
+							["ManaCheck"] = true,
 							["Enabled"] = true,
 							["States"] = {
 								{
@@ -1413,8 +1405,8 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "pet",
 									["Operator"] = "<=",
+									["Unit"] = "pet",
 									["Level"] = 40,
 								}, -- [1]
 								{
@@ -1490,6 +1482,14 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1ZFP_8OauieW",
 						}, -- [60]
 					},
+					["Name"] = "SPELLS",
+					["Point"] = {
+						["y"] = -4.996173281900221,
+						["x"] = -0.0002605930177353105,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Alpha"] = 0,
 				}, -- [1]
 				{
 					["Point"] = {
@@ -9206,17 +9206,15 @@ TellMeWhenDB = {
 		},
 		["SHAMAN"] = {
 			["Locked"] = true,
-			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Columns"] = 20,
 					["Scale"] = 1,
 					["Rows"] = 3,
+					["Alpha"] = 0,
+					["Name"] = "SHAMAN SPELLS",
+					["Locked"] = true,
 					["Icons"] = {
 						{
 							["ManaCheck"] = true,
@@ -9284,10 +9282,10 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
-									["Operator"] = ">",
-									["Level"] = 4,
 									["Name"] = "Flame Shock",
+									["Level"] = 4,
 									["Unit"] = "target",
+									["Operator"] = ">",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -9851,12 +9849,12 @@ TellMeWhenDB = {
 							},
 						}, -- [41]
 						{
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1a3BehMeWjaB",
 							["Type"] = "buff",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "mouseover",
 							["Name"] = "Poison; Disease",
-							["GUID"] = "TMW:icon:1a3BehMeWjaB",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Unit"] = "mouseover",
@@ -10060,6 +10058,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
+							["GUID"] = "TMW:icon:1ZBi1G1LSN04",
 							["States"] = {
 								{
 								}, -- [1]
@@ -10069,7 +10068,6 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["GUID"] = "TMW:icon:1ZBi1G1LSN04",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -10085,6 +10083,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "33447; 43531; 22829; 929; 13446; 33092; 3928; 39671; 43569; 858; 1710; 118; 28100; 32947; 4596; 33934; 31853; 18839; 31839; 31852; 23822; 31838",
+							["GUID"] = "TMW:icon:1ZhjptZBAxKW",
 							["States"] = {
 								{
 								}, -- [1]
@@ -10094,7 +10093,6 @@ TellMeWhenDB = {
 								{
 								}, -- [4]
 							},
-							["GUID"] = "TMW:icon:1ZhjptZBAxKW",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -10107,20 +10105,21 @@ TellMeWhenDB = {
 							["OnlyInBags"] = true,
 						}, -- [60]
 					},
-					["Name"] = "SHAMAN SPELLS",
-					["Locked"] = true,
-					["Alpha"] = 0,
-					["Columns"] = 20,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 					["OnlyInCombat"] = true,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Alpha"] = 0,
 					["Point"] = {
 						["y"] = -20.00000522536274,
 						["x"] = -229.9999934656047,
 					},
 					["Name"] = "Other",
-					["Alpha"] = 0,
 					["Scale"] = 1.5,
 					["Columns"] = 1,
 					["Icons"] = {
@@ -10574,6 +10573,7 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["Version"] = 101600,
+			["NumGroups"] = 5,
 		},
 		["Dopeclaw - Stitches"] = {
 			["Version"] = 101600,

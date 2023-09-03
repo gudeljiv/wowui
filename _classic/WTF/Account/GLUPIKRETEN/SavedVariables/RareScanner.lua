@@ -1,10 +1,11 @@
 
 RareScannerDB = {
 	["profileKeys"] = {
-		["Dopesick - Stitches"] = "Default",
-		["Dopeclaw - Stitches"] = "Default",
 		["Dopede - Stitches"] = "Default",
 		["Dopesnare - Stitches"] = "Default",
+		["Dopesick - Stitches"] = "Default",
+		["Dopeclaw - Stitches"] = "Default",
+		["Dopeah - Stitches"] = "Default",
 	},
 	["global"] = {
 		["object_names"] = {
