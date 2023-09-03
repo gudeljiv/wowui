@@ -584,15 +584,15 @@ TradeSkillMasterDB = {
 			["BOE Items`Armor"] = true,
 			["BOE Items"] = true,
 			["BOE Items`Weapons"] = true,
-			["Materials`Pigments and Ink"] = true,
+			["Materials`Food"] = true,
 			["Materials`Reagents"] = true,
 			["Materials`Herbs"] = true,
 			["BOE Items`Armor`White"] = true,
 			["Materials`Motes and Primals"] = true,
 			["Materials`Enchanting"] = true,
-			["Materials`Food"] = true,
-			["Materials`Engineering"] = true,
 			["Materials`Glyphs"] = true,
+			["Materials`Engineering"] = true,
+			["Materials`Pigments and Ink"] = true,
 			["Materials`Eternals"] = true,
 			["Materials`Potions"] = true,
 			["Materials"] = true,
@@ -5628,11 +5628,11 @@ TradeSkillMasterDB = {
 		["i:43126"] = 6,
 		["i:40441"] = 1,
 		["i:34996"] = 1,
-		["i:33919"] = 1,
-		["i:40406"] = 1,
 		["i:34651"] = 1,
-		["i:38663"] = 1,
+		["i:40406"] = 1,
 		["i:38668"] = 1,
+		["i:38663"] = 1,
+		["i:33919"] = 1,
 		["i:40407"] = 1,
 		["i:2771"] = 1,
 		["i:34650"] = 1,
@@ -5757,15 +5757,15 @@ TradeSkillMasterDB = {
 	["s@Nitwit - Horde - Dreadnaught@internalData@classKey"] = "ROGUE",
 	["s@Dopesnare - Horde - Stitches@internalData@playerProfessions"] = {
 		["First Aid"] = {
-			["maxLevel"] = 75,
 			["isSecondary"] = false,
 			["level"] = 44,
+			["maxLevel"] = 75,
 			["skillId"] = -1,
 		},
 		["Mining"] = {
-			["maxLevel"] = 150,
 			["isSecondary"] = false,
-			["level"] = 70,
+			["level"] = 71,
+			["maxLevel"] = 150,
 			["skillId"] = -1,
 		},
 	},
@@ -5835,9 +5835,9 @@ TradeSkillMasterDB = {
 		["Blue Leather Bagi:85612300"] = 1641420784,
 		["Tigerseyei:8181693"] = 1641630458,
 		["Scroll of Agilityi:301211481"] = 1641679407,
-		["Linen Clothi:25895205"] = 1641585005,
+		["Worn Turtle Shell Shieldi:644716600"] = 1641712604,
 		["Dwarven Hatchet of Strengthi:2073:614632"] = 1641415536,
-		["Beaded Wraps of Spiriti:14094:16112999"] = 1641712604,
+		["Linen Clothi:25895205"] = 1641585005,
 		["Formula: Enchant Weapon - Minor Beastslayeri:634811495"] = 1641712604,
 		["Shredder Operating Manual - Page 12i:166561407"] = 1641630458,
 		["Linen Clothi:25897287"] = 1641630458,
@@ -5848,7 +5848,7 @@ TradeSkillMasterDB = {
 		["Bandit Buckler of Agilityi:9778:1815500"] = 1641712604,
 		["Scroll of Strengthi:9541896"] = 1641679407,
 		["Silver Bari:284244096"] = 1641630458,
-		["Bruiseweedi:24531218"] = 1641679407,
+		["Shredder Operating Manual - Page 4i:1664811997"] = 1641630458,
 		["Linen Clothi:258916864"] = 1641415536,
 		["Linen Clothi:2589202440"] = 1641712604,
 		["Bloodspattered Sash of the Tigeri:15492:67012449"] = 1641415536,
@@ -5856,7 +5856,7 @@ TradeSkillMasterDB = {
 		["Grizzly Pants of the Whalei:15303:1010118899"] = 1641420784,
 		["Snakeskin Bagi:6446110000"] = 1641712604,
 		["Rigid Gloves of the Eaglei:15115:848110200"] = 1641630458,
-		["Light Featheri:170564708"] = 1641712604,
+		["Bruiseweedi:24531218"] = 1641679407,
 		["Wool Clothi:259284904"] = 1641712604,
 		["Lesser Healing Potioni:8582464"] = 1641712604,
 		["Linen Clothi:2589201080"] = 1641415536,
@@ -5881,14 +5881,14 @@ TradeSkillMasterDB = {
 		["Prospector's Sashi:1455913199"] = 1641679407,
 		["Robust Bracers of Nature's Wrathi:15122:199312799"] = 1641679407,
 		["Feral Gloves of the Owli:15310:759114000"] = 1641420784,
-		["Shredder Operating Manual - Page 4i:1664811997"] = 1641630458,
+		["Light Featheri:170564708"] = 1641712604,
 		["Lesser Healing Potioni:858276"] = 1641630458,
 		["Light Featheri:17056174301"] = 1641415536,
 		["Hunting Bowi:818012425"] = 1641420784,
 		["Perfect Deviate Scalei:6471215000"] = 1641712604,
 		["Silk Clothi:430661650"] = 1641630458,
 		["Copper Orei:27702590"] = 1641415536,
-		["Worn Turtle Shell Shieldi:644716600"] = 1641712604,
+		["Beaded Wraps of Spiriti:14094:16112999"] = 1641712604,
 	},
 	["s@Battlearm - Horde - Hydraxian Waterlords@internalData@auctionQuantity"] = {
 	},
@@ -6113,11 +6113,11 @@ TradeSkillMasterDB = {
 	["g@ @auctionUIContext@showDefault"] = false,
 	["s@Poklopac - Horde - Mirage Raceway@internalData@bagQuantity"] = {
 		["i:6948"] = 1,
-		["i:117"] = 1,
-		["i:1370"] = 1,
-		["i:2649"] = 1,
-		["i:4865"] = 2,
 		["i:2512"] = 195,
+		["i:1370"] = 1,
+		["i:117"] = 1,
+		["i:4865"] = 2,
+		["i:2649"] = 1,
 	},
 	["c@Grgur - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
 		["collapsed"] = {
@@ -6421,102 +6421,102 @@ TradeSkillMasterDB = {
 		},
 		[13262] = {
 			{
+				["item"] = "i:14205:1022",
 				["time"] = 1693746154,
 				["result"] = {
 					["i:11083"] = 4,
 				},
-				["item"] = "i:14205:1022",
 			}, -- [1]
 			{
+				["item"] = "i:6548:1182",
 				["time"] = 1693746163,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:6548:1182",
 			}, -- [2]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746167,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14025",
 			}, -- [3]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746171,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14025",
 			}, -- [4]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746176,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:14025",
 			}, -- [5]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746182,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14025",
 			}, -- [6]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746200,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:14025",
 			}, -- [7]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746204,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14025",
 			}, -- [8]
 			{
+				["item"] = "i:14123:25",
 				["time"] = 1693746210,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14123:25",
 			}, -- [9]
 			{
+				["item"] = "i:14025",
 				["time"] = 1693746215,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14025",
 			}, -- [10]
 			{
+				["item"] = "i:14563",
 				["time"] = 1693746219,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14563",
 			}, -- [11]
 			{
+				["item"] = "i:4711",
 				["time"] = 1693746695,
 				["result"] = {
 					["i:11082"] = 1,
 				},
-				["item"] = "i:4711",
 			}, -- [12]
 			{
+				["item"] = "i:4251",
 				["time"] = 1693746699,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:4251",
 			}, -- [13]
 			{
+				["item"] = "i:4251",
 				["time"] = 1693746704,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:4251",
 			}, -- [14]
 		},
 		[31252] = {
@@ -6702,24 +6702,24 @@ TradeSkillMasterDB = {
 		["i:4540"] = 5,
 		["i:159"] = 5,
 		["i:2488"] = 536,
-		["i:5483"] = 140,
+		["i:11284"] = 5,
 		["i:4400"] = 2000,
 		["i:7005"] = 82,
 		["i:4470"] = 38,
-		["i:3107"] = 0,
+		["i:5483"] = 140,
 		["i:2596"] = 120,
 		["i:2403"] = 220,
 		["i:3770"] = 100,
-		["i:2516"] = 0,
+		["i:5956"] = 18,
 		["i:2947"] = 0,
 		["i:2400"] = 437,
-		["i:4341"] = 500,
+		["i:2516"] = 0,
 		["i:2512"] = 0,
-		["i:1645"] = 400,
+		["i:4541"] = 25,
 		["i:2131"] = 54,
 		["i:2520"] = 24628,
 		["i:17037"] = 1400,
-		["i:2130"] = 54,
+		["i:1645"] = 400,
 		["i:4498"] = 2500,
 		["i:2025"] = 5304,
 		["i:17036"] = 800,
@@ -6728,11 +6728,11 @@ TradeSkillMasterDB = {
 		["i:2024"] = 6078,
 		["i:4599"] = 400,
 		["i:2665"] = 20,
-		["i:4541"] = 25,
+		["i:2130"] = 54,
 		["i:11362"] = 1000,
-		["i:5956"] = 18,
+		["i:4341"] = 500,
 		["i:1844"] = 728,
-		["i:11284"] = 5,
+		["i:3107"] = 0,
 		["i:2391"] = 38,
 		["i:4471"] = 135,
 		["i:15905"] = 2130,
@@ -6799,8 +6799,8 @@ TradeSkillMasterDB = {
 		["Compact Shotguni:457711431"] = 1641144605,
 		["Shredder Operating Manual - Page 2i:166461378"] = 1641933912,
 		["Bronze Bari:284152340"] = 1641380706,
+		["Light Featheri:1705662664"] = 1640776132,
 		["Bronze Bari:2841209360"] = 1641380080,
-		["Shredder Operating Manual - Page 1i:1664512442"] = 1641933912,
 		["Rough Stonei:283519437"] = 1640205277,
 		["Barbed Club of Staminai:15222:2214500"] = 1641631063,
 		["Light Featheri:1705681440"] = 1641144605,
@@ -6813,7 +6813,7 @@ TradeSkillMasterDB = {
 		["Bloodspattered Loincloth of Strengthi:15493:11511499"] = 1641500030,
 		["Wise Man's Belti:478616999"] = 1640776132,
 		["Rigid Cape of the Monkeyi:15114:58712105"] = 1641492984,
-		["Light Featheri:1705662664"] = 1640776132,
+		["Shredder Operating Manual - Page 1i:1664512442"] = 1641933912,
 		["Tin Orei:27713369"] = 1641933912,
 		["Wool Clothi:259243444"] = 1641492984,
 		["Barbaric Cloth Robei:653114995"] = 1641500030,
@@ -7005,32 +7005,32 @@ TradeSkillMasterDB = {
 				},
 				["stackSizeIsCap"] = false,
 			},
-			["100x2 (48h)"] = {
-				["cancelRepost"] = true,
+			["100x1 (48h)"] = {
+				["aboveMax"] = "maxPrice",
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
-				["cancelUndercut"] = true,
+				["duration"] = 3,
 				["matchStackSize"] = false,
-				["keepQuantity"] = "0",
+				["blacklist"] = "",
 				["postCap"] = "100",
 				["bidPercent"] = 1,
 				["relationships"] = {
 				},
 				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
 				["ignoreLowDuration"] = 0,
-				["stackSize"] = "2",
+				["stackSize"] = "1",
 				["ignoreFactionrealm"] = {
 				},
 				["undercut"] = "1c",
 				["maxExpires"] = "0",
 				["stackSizeIsCap"] = false,
 				["priceReset"] = "minPrice",
+				["keepQuantity"] = "0",
+				["cancelRepostThreshold"] = "1g",
+				["cancelRepost"] = true,
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["cancelUndercut"] = true,
 				["ignorePlayer"] = {
 				},
-				["cancelRepostThreshold"] = "1g",
-				["aboveMax"] = "maxPrice",
-				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
-				["duration"] = 3,
-				["blacklist"] = "",
 			},
 			["200x1 (48h)"] = {
 				["cancelRepost"] = true,
@@ -7059,32 +7059,32 @@ TradeSkillMasterDB = {
 				["duration"] = 3,
 				["blacklist"] = "",
 			},
-			["#Default"] = {
-				["aboveMax"] = "normalPrice",
+			["100x2 (48h)"] = {
+				["cancelRepost"] = true,
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
 				["cancelUndercut"] = true,
 				["matchStackSize"] = false,
 				["keepQuantity"] = "0",
-				["postCap"] = "5",
+				["postCap"] = "100",
 				["bidPercent"] = 1,
-				["stackSizeIsCap"] = false,
-				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(5*avg(crafting,dbmarket,dbregionmarketavg),30*vendorsell))",
-				["ignoreLowDuration"] = 0,
-				["stackSize"] = "1",
-				["ignoreFactionrealm"] = {
-				},
-				["cancelRepostThreshold"] = "1g",
-				["maxExpires"] = "0",
-				["duration"] = 2,
-				["priceReset"] = "none",
-				["undercut"] = "1c",
-				["blacklist"] = "",
-				["cancelRepost"] = true,
-				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
 				["relationships"] = {
 				},
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
+				["ignoreLowDuration"] = 0,
+				["stackSize"] = "2",
+				["ignoreFactionrealm"] = {
+				},
+				["undercut"] = "1c",
+				["maxExpires"] = "0",
+				["stackSizeIsCap"] = false,
+				["priceReset"] = "minPrice",
 				["ignorePlayer"] = {
 				},
+				["cancelRepostThreshold"] = "1g",
+				["aboveMax"] = "maxPrice",
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["duration"] = 3,
+				["blacklist"] = "",
 			},
 			["50x10 (48h)"] = {
 				["cancelRepost"] = true,
@@ -7113,30 +7113,30 @@ TradeSkillMasterDB = {
 				},
 				["stackSizeIsCap"] = false,
 			},
-			["100x1 (48h)"] = {
-				["aboveMax"] = "maxPrice",
+			["#Default"] = {
+				["aboveMax"] = "normalPrice",
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
-				["duration"] = 3,
+				["cancelUndercut"] = true,
 				["matchStackSize"] = false,
-				["blacklist"] = "",
-				["postCap"] = "100",
+				["keepQuantity"] = "0",
+				["postCap"] = "5",
 				["bidPercent"] = 1,
-				["relationships"] = {
-				},
-				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
+				["stackSizeIsCap"] = false,
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(5*avg(crafting,dbmarket,dbregionmarketavg),30*vendorsell))",
 				["ignoreLowDuration"] = 0,
 				["stackSize"] = "1",
 				["ignoreFactionrealm"] = {
 				},
-				["undercut"] = "1c",
-				["maxExpires"] = "0",
-				["stackSizeIsCap"] = false,
-				["priceReset"] = "minPrice",
-				["keepQuantity"] = "0",
 				["cancelRepostThreshold"] = "1g",
+				["maxExpires"] = "0",
+				["duration"] = 2,
+				["priceReset"] = "none",
+				["undercut"] = "1c",
+				["blacklist"] = "",
 				["cancelRepost"] = true,
 				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
-				["cancelUndercut"] = true,
+				["relationships"] = {
+				},
 				["ignorePlayer"] = {
 				},
 			},
@@ -7175,11 +7175,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "1",
-				["minProfit"] = "100g",
-				["craftPriceMethod"] = "",
-				["maxRestock"] = "3",
 				["ignorePlayer"] = {
 				},
+				["minProfit"] = "100g",
+				["maxRestock"] = "3",
+				["craftPriceMethod"] = "",
 			},
 			["Potions and elixirs"] = {
 				["ignoreFactionrealm"] = {
@@ -7187,11 +7187,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "5",
-				["minProfit"] = "1s",
-				["craftPriceMethod"] = "",
-				["maxRestock"] = "70",
 				["ignorePlayer"] = {
 				},
+				["minProfit"] = "1s",
+				["maxRestock"] = "70",
+				["craftPriceMethod"] = "",
 			},
 			["Low demand potions"] = {
 				["ignoreFactionrealm"] = {
@@ -7199,39 +7199,39 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "5",
-				["minProfit"] = "1s",
-				["craftPriceMethod"] = "",
-				["maxRestock"] = "30",
 				["ignorePlayer"] = {
 				},
+				["minProfit"] = "1s",
+				["maxRestock"] = "30",
+				["craftPriceMethod"] = "",
 			},
 		},
 		["Sniper"] = {
 			["#Default"] = {
-				["belowPrice"] = "vendorsell-1c",
-				["ignoreFactionrealm"] = {
+				["ignorePlayer"] = {
 				},
+				["belowPrice"] = "vendorsell-1c",
 				["relationships"] = {
 				},
-				["ignorePlayer"] = {
+				["ignoreFactionrealm"] = {
 				},
 			},
 			["New Operation 1"] = {
+				["ignorePlayer"] = {
+				},
 				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
 				},
 				["belowPrice"] = "max(ifgte(ItemQuality, 1, minprice * ifgte(minprice, 250g, 80, ifgte(minprice, 100g, (minprice - 100g) * (80 - 70) / (250g - 100g) + 70, ifgte(minprice, 50g, (minprice - 50g) * (70 - 60) / (100g - 50g) + 60, ifgte(minprice, 10g, (minprice - 10g) * (60 - 40) / (50g - 10g) + 50, ifgte(minprice, 5g, (minprice - 5g) * (40 - 30) / (10g - 5g) + 30, ifgte(minprice, 1g, (minprice - 1g) * (30 - 10) / (5g - 1g) + 10, 0)))))) / 100), VendorSell - 1c)",
-				["relationships"] = {
-				},
-				["ignorePlayer"] = {
-				},
 			},
 			["default"] = {
-				["belowPrice"] = "max(vendorsell - 50c, destroy - 1s)",
-				["ignorePlayer"] = {
+				["ignoreFactionrealm"] = {
 				},
+				["belowPrice"] = "max(vendorsell - 50c, destroy - 1s)",
 				["relationships"] = {
 				},
-				["ignoreFactionrealm"] = {
+				["ignorePlayer"] = {
 				},
 			},
 		},
@@ -7308,12 +7308,12 @@ TradeSkillMasterDB = {
 				["keepBankQuantity"] = 0,
 				["relationships"] = {
 				},
-				["restockKeepBankQuantity"] = 0,
-				["restockQuantity"] = 0,
-				["restockStackSize"] = 0,
-				["keepBagQuantity"] = 0,
 				["ignorePlayer"] = {
 				},
+				["restockQuantity"] = 0,
+				["restockKeepBankQuantity"] = 0,
+				["keepBagQuantity"] = 0,
+				["restockStackSize"] = 0,
 			},
 		},
 	},
@@ -7797,11 +7797,8 @@ TradeSkillMasterDB = {
 		["leftWidth"] = 272,
 	},
 	["c@Dopede - Stitches@internalData@auctionMessages"] = {
-		["Your auction of Strange Dust sold."] = "|cffffffff|Hitem:10940::::::::5:::::::::|h[Strange Dust]|h|r",
-		["Your auction of Greater Astral Essence sold."] = "|cff1eff00|Hitem:11082::::::::5:::::::::|h[Greater Astral Essence]|h|r",
-		["Your auction of Soul Dust sold."] = "|cffffffff|Hitem:11083::::::::5:::::::::|h[Soul Dust]|h|r",
-		["Your auction of Greater Magic Essence sold."] = "|cff1eff00|Hitem:10939::::::::5:::::::::|h[Greater Magic Essence]|h|r",
 		["Your auction of Small Glowing Shard sold."] = "|cff0070dd|Hitem:11138::::::::5:::::::::|h[Small Glowing Shard]|h|r",
+		["Your auction of Greater Astral Essence sold."] = "|cff1eff00|Hitem:11082::::::::5:::::::::|h[Greater Astral Essence]|h|r",
 	},
 	["g@ @userData@savedAuctioningSearches"] = {
 		["searchTypes"] = {
@@ -8506,10 +8503,10 @@ TradeSkillMasterDB = {
 			["Materials`Reagents"] = true,
 			["Materials`Herbs"] = true,
 			["Materials`Vellums"] = true,
-			["Materials`Eternals"] = true,
+			["Materials`Motes and Primals"] = true,
 			["Materials`Enchanting"] = true,
 			["Materials`Pigments and Ink"] = true,
-			["Materials`Engineering"] = true,
+			["Materials`Eternals"] = true,
 			["Materials`Glyphs"] = true,
 			["Materials`Food"] = true,
 			["Materials`Potions"] = true,
@@ -8517,7 +8514,7 @@ TradeSkillMasterDB = {
 			["Materials`Jewelcrafting"] = true,
 			["Materials`Ores and Bars"] = true,
 			["Materials`Cloth"] = true,
-			["Materials`Motes and Primals"] = true,
+			["Materials`Engineering"] = true,
 			["Materials`Gems"] = true,
 		},
 		["collapsed"] = {
@@ -8827,13 +8824,13 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 88,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 226,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 226,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["timeLeft"] = 26,
 			["buyout"] = 115,
 		},
@@ -8951,7 +8948,7 @@ TradeSkillMasterDB = {
 	},
 	["c@Battledog - Gehennas@internalData@auctionPrices"] = {
 	},
-	["s@Dopede - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693746676,
+	["s@Dopede - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693748504,
 	["g@ @userData@ungroupedItemMode"] = "base",
 	["c@Tandaram - Jin'do@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
@@ -9743,7 +9740,7 @@ TradeSkillMasterDB = {
 		["|cffffffff|Hitem:2592::::::::18:::::::::|h[Wool Cloth]|h|r"] = {
 		},
 	},
-	["s@Dopeclaw - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693737086,
+	["s@Dopeclaw - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693749392,
 	["f@Horde - Hydraxian Waterlords@internalData@craftingQueue"] = {
 	},
 	["c@Mxyzptlk - Golemagg@craftingUIContext@groupTree"] = {
@@ -10168,9 +10165,6 @@ TradeSkillMasterDB = {
 	["s@Dopede - Horde - Stitches@internalData@auctionQuantity"] = {
 		["i:11082"] = 1,
 		["i:11138"] = 1,
-		["i:10939"] = 2,
-		["i:10940"] = 4,
-		["i:11083"] = 6,
 	},
 	["r@Stitches@internalData@saveTimeSales"] = "1693467140,1693467140,1693467140,1693680298,1693680298,1693680298,1693680298,1693725759,1693725759,1693725759,1693746823,1693746823",
 	["f@Horde - Hydraxian Waterlords@internalData@mats"] = {
@@ -11694,13 +11688,13 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 88,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 407,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 407,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["timeLeft"] = 26,
 			["buyout"] = 115,
 		},
@@ -12309,7 +12303,10 @@ TradeSkillMasterDB = {
 	},
 	["s@Grgur - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1602403412,
 	["s@Provokator - Horde - Jin'do@internalData@goldLogLastUpdate"] = 1665606603,
-	["s@Augustin - Horde - Golemagg@internalData@classKey"] = "MAGE",
+	["c@Battlearm - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
+		["collapsed"] = {
+		},
+	},
 	["c@Battitude - Golemagg@bankingUIContext@warehousingGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -12318,12 +12315,7 @@ TradeSkillMasterDB = {
 	},
 	["s@Grgur - Horde - Golemagg@internalData@mailQuantity"] = {
 	},
-	["f@Horde - Ashbringer@internalData@pendingMail"] = {
-		["Tudum"] = {
-		},
-		["Pitchwise"] = {
-		},
-	},
+	["s@Augustin - Horde - Golemagg@internalData@classKey"] = "MAGE",
 	["s@Tadibey - Horde - Golemagg@internalData@playerProfessions"] = {
 	},
 	["c@Konac - Dreadnaught@internalData@craftingCooldowns"] = {
@@ -12436,31 +12428,32 @@ TradeSkillMasterDB = {
 	},
 	["s@Handrmandr - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n27828502,0",
 	["s@Dopesnare - Horde - Stitches@internalData@bagQuantity"] = {
-		["i:2589"] = 2,
-		["i:2515"] = 1419,
-		["i:2447"] = 15,
-		["i:4775"] = 2,
+		["i:2589"] = 5,
+		["i:2515"] = 1321,
+		["i:2447"] = 20,
+		["i:4775"] = 4,
 		["i:159"] = 15,
 		["i:11584"] = 8,
 		["i:6948"] = 1,
-		["i:765"] = 13,
+		["i:765"] = 16,
 		["i:1251"] = 20,
 		["i:1417"] = 1,
 		["i:2901"] = 1,
-		["i:2835"] = 12,
-		["i:2449"] = 6,
-		["i:3299"] = 1,
+		["i:2835"] = 13,
+		["i:2672"] = 3,
+		["i:2449"] = 7,
+		["i:3299"] = 3,
 		["i:7096"] = 1,
 		["i:5088"] = 1,
 		["i:2652"] = 1,
 		["i:3300"] = 1,
+		["i:9751"] = 1,
 		["i:4941"] = 9,
-		["i:4814"] = 5,
-		["i:2770"] = 12,
+		["i:2770"] = 18,
 		["i:118"] = 9,
+		["i:4814"] = 8,
 		["i:5062"] = 2,
-		["i:4813"] = 5,
-		["i:4780"] = 1,
+		["i:4813"] = 7,
 	},
 	["s@Battlearm - Horde - Jin'do@internalData@mailQuantity"] = {
 	},
@@ -12674,13 +12667,13 @@ TradeSkillMasterDB = {
 	["c@Augustin - Golemagg@mailingUIContext@groupTree"] = {
 		["collapsed"] = {
 			["Cards"] = true,
+			["BOE Items`Armor`Blue"] = true,
 			["Class Books"] = true,
-			["BOE Items`Armor"] = true,
 			["BOE Items`Armor`Green"] = true,
 			["BOE Items`Weapons`Blue"] = true,
 			["BOE Items`Weapons`Green"] = true,
 			["BOE Items`Weapons"] = true,
-			["BOE Items`Armor`Blue"] = true,
+			["BOE Items`Armor"] = true,
 		},
 		["unselected"] = {
 			["Alchemy"] = true,
@@ -12904,7 +12897,11 @@ TradeSkillMasterDB = {
 	},
 	["c@Mxzq - Golemagg@internalData@auctionPrices"] = {
 	},
-	["c@Moolatz - Golemagg@internalData@craftingCooldowns"] = {
+	["c@Koloman - Golemagg@auctionUIContext@shoppingGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["f@Horde - Golemagg@internalData@expiringAuction"] = {
 		["Moolatz"] = 1678089369,
@@ -12921,7 +12918,8 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["s@Konac - Horde - Dreadnaught@internalData@goldLogLastUpdate"] = 1641934159,
+	["c@Moolatz - Golemagg@internalData@craftingCooldowns"] = {
+	},
 	["c@Antun - Golemagg@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -13219,13 +13217,13 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["c@Battlearm - Golemagg@bankingUIContext@auctioningGroupTree"] = {
+	["c@Dopesick - Stitches@mailingUIContext@groupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
 		},
 	},
-	["c@Dopesick - Stitches@mailingUIContext@groupTree"] = {
+	["c@Battlearm - Golemagg@bankingUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -13234,12 +13232,12 @@ TradeSkillMasterDB = {
 	["s@Dopede - Horde - Stitches@internalData@bagQuantity"] = {
 		["i:6948"] = 1,
 	},
-	["c@Poklopac - Mirage Raceway@internalData@auctionPrices"] = {
+	["s@Jaroslav - Horde - Golemagg@internalData@bankQuantity"] = {
 	},
 	["r@Dreadnaught@internalData@csvIncome"] = "type,amount,otherPlayer,player,time\nMoney Transfer,100000,Poklopac,Moolatz,1641736574\nMoney Transfer,600000,Poklopac,Konac,1641222509",
 	["s@Dmitar - Horde - Golemagg@internalData@auctionQuantity"] = {
 	},
-	["s@Jaroslav - Horde - Golemagg@internalData@bankQuantity"] = {
+	["c@Poklopac - Mirage Raceway@internalData@auctionPrices"] = {
 	},
 	["g@ @auctioningOptions@scanCompleteSound"] = "TSM_NO_SOUND",
 	["c@Mxyzptlk - Golemagg@internalData@auctionSaleHints"] = {
@@ -13314,6 +13312,13 @@ TradeSkillMasterDB = {
 		},
 	},
 	["s@Mxyz - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1693315067,
+	["f@Horde - Gehennas@internalData@mailExcessGoldChar"] = "",
+	["c@Provokator - Jin'do@auctionUIContext@auctioningGroupTree"] = {
+		["unselected"] = {
+		},
+		["collapsed"] = {
+		},
+	},
 	["s@Dopesick - Horde - Stitches@internalData@playerProfessions"] = {
 		["First Aid"] = {
 			["isSecondary"] = false,
@@ -13322,40 +13327,6 @@ TradeSkillMasterDB = {
 			["skillId"] = -1,
 		},
 	},
-	["s@Moolatz - Horde - Golemagg@internalData@bagQuantity"] = {
-		["i:40071"] = 1,
-		["i:37371"] = 1,
-		["i:46378"] = 1,
-		["i:40370"] = 1,
-		["i:44014"] = 1,
-		["i:37368"] = 1,
-		["i:37630"] = 1,
-		["i:38365"] = 1,
-		["i:40379"] = 1,
-		["i:44579"] = 1,
-		["i:7005"] = 1,
-		["i:37220"] = 1,
-		["i:46377"] = 10,
-		["i:40711"] = 1,
-		["i:33447"] = 50,
-		["i:40300"] = 1,
-		["i:40258"] = 1,
-		["i:6948"] = 1,
-		["i:37218"] = 1,
-		["i:40249"] = 1,
-		["i:43157"] = 1,
-		["i:44605"] = 30,
-		["i:37230"] = 1,
-		["i:40304"] = 1,
-		["i:34722"] = 20,
-		["i:40566"] = 1,
-		["i:35953"] = 18,
-		["i:44283"] = 1,
-		["i:40323"] = 1,
-		["i:33445"] = 49,
-		["i:33448"] = 25,
-	},
-	["f@Horde - Gehennas@internalData@mailExcessGoldChar"] = "",
 	["c@Dopesick - Stitches@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -13610,10 +13581,10 @@ TradeSkillMasterDB = {
 	["f@Horde - Jin'do@gatheringContext@crafter"] = "",
 	["g@ @craftingUIContext@gatheringScrollingTable"] = {
 		["colWidth"] = {
-			["need"] = 50,
-			["sources"] = 160,
-			["name"] = 210,
 			["have"] = 50,
+			["sources"] = 160,
+			["need"] = 50,
+			["name"] = 210,
 		},
 		["colHidden"] = {
 		},
@@ -13944,13 +13915,13 @@ TradeSkillMasterDB = {
 		["Greater Magic Essencei:1093911510"] = 1693746731,
 		["Soul Dusti:1108342240"] = 1693746731,
 		["Copper Bari:28407441"] = 1693745586,
-		["Greater Astral Essencei:1108214098"] = 1693740972,
-		["Soul Dusti:1108321116"] = 1693746731,
-		["Small Glowing Shardi:1113814994"] = 1693746731,
-		["Strange Dusti:109403312"] = 1693746731,
-		["Greater Astral Essencei:1108214092"] = 1693746731,
-		["Soul Dusti:110831568"] = 1693740972,
 		["Strange Dusti:10940202120"] = 1693746316,
+		["Greater Astral Essencei:1108214098"] = 1693740972,
+		["Small Glowing Shardi:1113814994"] = 1693748511,
+		["Strange Dusti:109403312"] = 1693746731,
+		["Greater Astral Essencei:1108214092"] = 1693748511,
+		["Soul Dusti:110831568"] = 1693740972,
+		["Soul Dusti:1108321116"] = 1693746731,
 		["Strange Dusti:109401106"] = 1693746731,
 	},
 	["s@Battlearm - Horde - Golemagg@internalData@playerProfessions"] = {
@@ -14069,11 +14040,11 @@ TradeSkillMasterDB = {
 	},
 	["s@Vermina - Horde - Golemagg@internalData@auctionQuantity"] = {
 	},
-	["s@Moolatz - Horde - Dreadnaught@internalData@playerProfessions"] = {
-	},
 	["f@Horde - Jin'do@internalData@expiringAuction"] = {
 	},
 	["r@Hydraxian Waterlords@internalData@saveTimeBuys"] = "",
+	["s@Moolatz - Horde - Dreadnaught@internalData@playerProfessions"] = {
+	},
 	["g@ @tooltipOptions@destroyTooltipFormat"] = "simple",
 	["c@Antun - Golemagg@mailingUIContext@groupTree"] = {
 		["collapsed"] = {
@@ -14148,18 +14119,6 @@ TradeSkillMasterDB = {
 	["c@Dopede - Stitches@internalData@auctionPrices"] = {
 		["|cff0070dd|Hitem:11138::::::::5:::::::::|h[Small Glowing Shard]|h|r"] = {
 			4994, -- [1]
-		},
-		["|cffffffff|Hitem:10940::::::::5:::::::::|h[Strange Dust]|h|r"] = {
-			106, -- [1]
-			312, -- [2]
-		},
-		["|cff1eff00|Hitem:10939::::::::5:::::::::|h[Greater Magic Essence]|h|r"] = {
-			1510, -- [1]
-			1510, -- [2]
-		},
-		["|cffffffff|Hitem:11083::::::::5:::::::::|h[Soul Dust]|h|r"] = {
-			1116, -- [1]
-			2240, -- [2]
 		},
 		["|cff1eff00|Hitem:11082::::::::5:::::::::|h[Greater Astral Essence]|h|r"] = {
 			4092, -- [1]
@@ -14240,7 +14199,7 @@ TradeSkillMasterDB = {
 	["s@Koloman - Horde - Golemagg@internalData@auctionQuantity"] = {
 	},
 	["g@ @coreOptions@destroyValueSource"] = "dbmarket",
-	["s@Dopesnare - Horde - Stitches@internalData@money"] = 136,
+	["s@Dopesnare - Horde - Stitches@internalData@money"] = 195,
 	["s@Tudum - Horde - Ashbringer@internalData@bagQuantity"] = {
 		["i:7099"] = 3,
 		["i:1366"] = 3,
@@ -14291,13 +14250,13 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 86,
-			["stack"] = 40,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
-			["item"] = 273,
-			["itemBid"] = 115,
-			["bid"] = 115,
 			["posts"] = 40,
+			["bidPct"] = 40,
+			["itemBid"] = 115,
+			["item"] = 273,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["stack"] = 40,
 			["icon"] = 24,
 			["buyout"] = 115,
 		},
@@ -14330,11 +14289,38 @@ TradeSkillMasterDB = {
 	},
 	["c@Dopecure - Stitches@internalData@craftingCooldowns"] = {
 	},
-	["c@Provokator - Jin'do@auctionUIContext@auctioningGroupTree"] = {
-		["unselected"] = {
-		},
-		["collapsed"] = {
-		},
+	["s@Moolatz - Horde - Golemagg@internalData@bagQuantity"] = {
+		["i:40071"] = 1,
+		["i:37371"] = 1,
+		["i:46378"] = 1,
+		["i:40370"] = 1,
+		["i:44014"] = 1,
+		["i:37368"] = 1,
+		["i:37630"] = 1,
+		["i:38365"] = 1,
+		["i:40379"] = 1,
+		["i:44579"] = 1,
+		["i:7005"] = 1,
+		["i:37220"] = 1,
+		["i:46377"] = 10,
+		["i:40711"] = 1,
+		["i:33447"] = 50,
+		["i:40300"] = 1,
+		["i:40258"] = 1,
+		["i:6948"] = 1,
+		["i:37218"] = 1,
+		["i:40249"] = 1,
+		["i:43157"] = 1,
+		["i:44605"] = 30,
+		["i:37230"] = 1,
+		["i:40304"] = 1,
+		["i:34722"] = 20,
+		["i:40566"] = 1,
+		["i:35953"] = 18,
+		["i:44283"] = 1,
+		["i:40323"] = 1,
+		["i:33445"] = 49,
+		["i:33448"] = 25,
 	},
 	["c@Tudum - Ashbringer@mainUIContext@groupsManagementGroupTree"] = {
 		["collapsed"] = {
@@ -14413,9 +14399,9 @@ TradeSkillMasterDB = {
 	},
 	["f@Horde - Dreadnaught@internalData@mailDisenchantablesChar"] = "",
 	["s@Moolatz - Horde - Golemagg@internalData@auctionQuantity"] = {
+		["i:45912"] = 1,
 		["i:36906"] = 10,
 		["i:38561"] = 7,
-		["i:45912"] = 1,
 	},
 	["s@Dmitar - Horde - Golemagg@internalData@reagentBankQuantity"] = {
 	},
@@ -14427,10 +14413,10 @@ TradeSkillMasterDB = {
 		["i:11122"] = 1,
 		["i:34999"] = 1,
 		["i:40321"] = 1,
-		["i:41592"] = 1,
-		["i:34989"] = 1,
 		["i:35001"] = 1,
+		["i:34989"] = 1,
 		["i:41589"] = 1,
+		["i:41592"] = 1,
 		["i:35135"] = 1,
 		["i:35137"] = 1,
 		["i:35152"] = 1,
@@ -14462,12 +14448,7 @@ TradeSkillMasterDB = {
 	},
 	["c@Jaroslav - Golemagg@internalData@auctionMessages"] = {
 	},
-	["c@Koloman - Golemagg@auctionUIContext@shoppingGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
-	},
+	["s@Konac - Horde - Dreadnaught@internalData@goldLogLastUpdate"] = 1641934159,
 	["c@Provokator - Jin'do@craftingUIContext@groupTree"] = {
 		["collapsed"] = {
 		},
@@ -14798,8 +14779,10 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["c@Battlearm - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
-		["collapsed"] = {
+	["f@Horde - Ashbringer@internalData@pendingMail"] = {
+		["Tudum"] = {
+		},
+		["Pitchwise"] = {
 		},
 	},
 	["p@Default@userData@groups"] = {
@@ -16072,10 +16055,10 @@ TradeSkillMasterDB = {
 		},
 		["c:11301362"] = {
 			["mats"] = {
-				["i:4387"] = 1,
-				["i:4382"] = 1,
-				["i:4234"] = 4,
 				["i:4389"] = 1,
+				["i:4387"] = 1,
+				["i:4234"] = 4,
+				["i:4382"] = 1,
 			},
 			["itemString"] = "i:4392",
 			["profession"] = "Engineering",
@@ -16548,10 +16531,10 @@ TradeSkillMasterDB = {
 		},
 		["c:12561518"] = {
 			["mats"] = {
-				["i:4387"] = 2,
-				["i:4382"] = 1,
-				["i:4234"] = 4,
 				["i:4389"] = 2,
+				["i:4387"] = 2,
+				["i:4234"] = 4,
+				["i:4382"] = 1,
 			},
 			["itemString"] = "i:4391",
 			["profession"] = "Engineering",
@@ -18304,9 +18287,9 @@ TradeSkillMasterDB = {
 		},
 		["c:7372128"] = {
 			["mats"] = {
+				["i:2318"] = 6,
 				["i:2320"] = 4,
 				["i:4231"] = 3,
-				["i:2318"] = 6,
 			},
 			["itemString"] = "i:4243",
 			["profession"] = "Leatherworking",
@@ -19071,9 +19054,9 @@ TradeSkillMasterDB = {
 		},
 		["c:5993753"] = {
 			["mats"] = {
+				["i:39354"] = 1,
 				["i:39774"] = 1,
 				["i:43115"] = 1,
-				["i:39354"] = 1,
 			},
 			["itemString"] = "i:37168",
 			["profession"] = "Inscription",
@@ -19857,9 +19840,9 @@ TradeSkillMasterDB = {
 		},
 		["c:13102168"] = {
 			["mats"] = {
+				["i:43121"] = 2,
 				["i:43120"] = 1,
 				["i:39501"] = 1,
-				["i:43121"] = 2,
 			},
 			["itemString"] = "i:44163",
 			["profession"] = "Inscription",
@@ -21348,16 +21331,17 @@ TradeSkillMasterDB = {
 				["Vermin"] = true,
 			},
 		},
-		["c:11633560"] = {
+		["c:7101046"] = {
 			["mats"] = {
-				["i:36929"] = 1,
+				["i:39774"] = 1,
+				["i:39354"] = 1,
 			},
-			["itemString"] = "i:39964",
-			["profession"] = "Jewelcrafting",
+			["itemString"] = "i:1711",
+			["profession"] = "Inscription",
 			["players"] = {
 				["Battlearm"] = true,
 			},
-			["name"] = "Stalwart Huge Citrine",
+			["name"] = "Scroll of Stamina II",
 			["numResult"] = 1,
 		},
 		["c:7219749"] = {
@@ -21412,18 +21396,19 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of the Hawk",
 			["numResult"] = 1,
 		},
-		["c:7101046"] = {
+		["c:8310824"] = {
 			["mats"] = {
-				["i:39774"] = 1,
-				["i:39354"] = 1,
+				["i:39349"] = 1,
+				["i:11178"] = 2,
+				["i:11176"] = 2,
 			},
-			["itemString"] = "i:1711",
-			["profession"] = "Inscription",
-			["players"] = {
-				["Battlearm"] = true,
-			},
-			["name"] = "Scroll of Stamina II",
+			["itemString"] = "i:38845",
+			["profession"] = "Enchanting",
 			["numResult"] = 1,
+			["name"] = "Scroll of Enchant 2H Weapon - Greater Impact",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:322103"] = {
 			["mats"] = {
@@ -21477,19 +21462,17 @@ TradeSkillMasterDB = {
 			["name"] = "Glyph of Incinerate",
 			["numResult"] = 1,
 		},
-		["c:8310824"] = {
+		["c:11633560"] = {
 			["mats"] = {
-				["i:39349"] = 1,
-				["i:11178"] = 2,
-				["i:11176"] = 2,
+				["i:36929"] = 1,
 			},
-			["itemString"] = "i:38845",
-			["profession"] = "Enchanting",
-			["numResult"] = 1,
-			["name"] = "Scroll of Enchant 2H Weapon - Greater Impact",
+			["itemString"] = "i:39964",
+			["profession"] = "Jewelcrafting",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
+			["name"] = "Stalwart Huge Citrine",
+			["numResult"] = 1,
 		},
 		["c:1898727"] = {
 			["mats"] = {
@@ -21562,9 +21545,9 @@ TradeSkillMasterDB = {
 		},
 		["c:2133432"] = {
 			["mats"] = {
+				["i:43121"] = 5,
 				["i:39501"] = 10,
 				["i:43120"] = 2,
-				["i:43121"] = 5,
 			},
 			["itemString"] = "i:43661",
 			["profession"] = "Inscription",
@@ -22316,9 +22299,9 @@ TradeSkillMasterDB = {
 		},
 		["c:6542612"] = {
 			["mats"] = {
+				["i:12803"] = 4,
 				["i:12804"] = 4,
 				["i:12364"] = 2,
-				["i:12803"] = 4,
 			},
 			["itemString"] = "i:21791",
 			["profession"] = "Jewelcrafting",
@@ -23141,10 +23124,10 @@ TradeSkillMasterDB = {
 		["i:7099"] = 1,
 		["i:7098"] = 9,
 		["i:6948"] = 1,
-		["i:117"] = 7,
-		["i:1370"] = 1,
-		["i:4865"] = 5,
 		["i:1368"] = 1,
+		["i:1370"] = 1,
+		["i:117"] = 7,
+		["i:4865"] = 5,
 		["i:2652"] = 1,
 	},
 	["r@Golemagg@internalData@csvExpired"] = "itemString,stackSize,quantity,player,time\ni:3864,10,10,Battlearm,1677787847\ni:4338,8,8,Vermin,1677811281\ni:10300,1,1,Vermin,1677811288\ni:21944,1,1,Vermin,1677811288\ni:7909,1,1,Vermin,1677811292\ni:4338,10,10,Battlearm,1677822471\ni:2772,4,4,Battlearm,1677822542\ni:36932,20,40,Battlearm,1677831922\ni:2772,4,4,Battlearm,1677876268\ni:36927,1,9,Battlearm,1677876283\ni:36921,1,10,Battlearm,1677876301\ni:36923,20,120,Battlearm,1678000930\ni:36929,20,120,Battlearm,1678000936\ni:36932,20,140,Battlearm,1678000948\ni:39996,1,19,Battlearm,1678001785\ni:36929,5,5,Battlearm,1678001824\ni:37646,1,1,Battlearm,1678041108\ni:36921,1,2,Battlearm,1678073846\ni:11178,1,1,Vermin,1678099540\ni:20747,1,17,Mxzq,1678189626\ni:14047,20,40,Vermin,1678199407\ni:16204,7,7,Vermin,1678199469\ni:14047,12,12,Vermin,1678199491\ni:48126,1,1,Vermin,1678199492\ni:38558,20,440,Miqa,1678206418\ni:38558,20,220,Mxyz,1678206454\ni:34052,1,1,Vermin,1678273025\ni:11178,1,1,Vermin,1678273042\ni:38558,20,440,Miqa,1678384136\ni:38558,20,160,Mxyz,1678384207\ni:36917,20,20,Battlearm,1678443358\ni:36926,5,25,Battlearm,1678443398\ni:3864,5,35,Battlearm,1678444512\ni:3864,1,1,Battlearm,1678444519\ni:38558,20,580,Miqa,1678478270\ni:41432,1,2,Battlearm,1678555157\ni:5107,1,1,Battlearm,1678728137\ni:1529,5,15,Battlearm,1678728508\ni:1705,5,30,Battlearm,1678728534\ni:4306,5,5,Tadibey,1678830761\ni:2879,1,1,Tadibey,1678830766\ni:4363,1,1,Miqa,1678993192\ni:1705,5,55,Battlearm,1679001033\ni:41432,1,10,Battlearm,1679001046\ni:39997,1,2,Battlearm,1679001058\ni:39996,1,10,Battlearm,1679106361\ni:41432,1,10,Battlearm,1679120628\ni:1705,5,5,Battlearm,1679120634\ni:41432,1,16,Battlearm,1679150327\ni:36930,1,13,Battlearm,1679179506\ni:39997,1,2,Battlearm,1679179567\ni:41432,1,1,Battlearm,1679222686\ni:41432,1,10,Battlearm,1679298968\ni:43127,20,160,Battlearm,1679338418\ni:43127,20,160,Battlearm,1679395713\ni:43127,12,12,Battlearm,1679395719\ni:13446,2,2,Vermin,1679397281\ni:22450,1,4,Vermin,1679483700\ni:25294:-37,1,1,Battlearm,1679830250\ni:25295:-16,1,1,Battlearm,1679830255\ni:24911:-8,1,1,Battlearm,1679830256\ni:24916:-20,1,1,Battlearm,1679830266\ni:48118,1,1,Miqa,1680019035",
@@ -23211,7 +23194,7 @@ TradeSkillMasterDB = {
 		},
 	},
 	["f@Horde - Stitches@internalData@mailExcessGoldChar"] = "",
-	["s@Dopesnare - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693746859,
+	["s@Dopesnare - Horde - Stitches@internalData@goldLogLastUpdate"] = 1693748931,
 	["c@Battlearm - Hydraxian Waterlords@mailingUIContext@groupTree"] = {
 		["collapsed"] = {
 		},
@@ -23301,11 +23284,16 @@ TradeSkillMasterDB = {
 		},
 	},
 	["s@Dopeclaw - Horde - Stitches@internalData@bagQuantity"] = {
-		["i:6948"] = 1,
-		["i:7005"] = 1,
-		["i:118"] = 4,
-		["i:117"] = 4,
+		["i:2447"] = 3,
+		["i:6889"] = 1,
 		["i:159"] = 17,
+		["i:6948"] = 1,
+		["i:765"] = 2,
+		["i:7005"] = 1,
+		["i:2672"] = 2,
+		["i:117"] = 4,
+		["i:3299"] = 1,
+		["i:118"] = 4,
 	},
 	["s@Dopesnare - Horde - Stitches@internalData@classKey"] = "HUNTER",
 	["c@Mxzq - Golemagg@internalData@craftingCooldowns"] = {
@@ -23329,7 +23317,7 @@ TradeSkillMasterDB = {
 	},
 	["c@Dopesnare - Stitches@internalData@auctionSaleHints"] = {
 	},
-	["g@ @internalData@lastCharacter"] = "Dopesnare - Stitches",
+	["g@ @internalData@lastCharacter"] = "Dopeclaw - Stitches",
 	["c@Dopesick - Stitches@auctionUIContext@shoppingGroupTree"] = {
 		["unselected"] = {
 		},

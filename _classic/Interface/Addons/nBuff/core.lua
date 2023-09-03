@@ -55,7 +55,7 @@ local function SecondsToTimeAbbrevHook(seconds)
 
 	return "|cffffffff%d|r", seconds
 end
--- SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
+SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
 
 -- BuffFrame:SetScript("OnUpdate", nil)
 
