@@ -393,3 +393,18 @@ f:SetScript(
 -- hooksecurefunc('QuestFrameItems_Update', questSkin)
 -- hooksecurefunc('QuestInfo_Display', questSkin)
 -- hooksecurefunc('QuestFrameGreetingPanel_OnShow', questSkin)
+
+
+
+
+-- -- The default tooltip border color
+-- TOOLTIP_DEFAULT_COLOR = { r = 1, g = 1, b = 1 };
+-- TOOLTIP_DEFAULT_BACKGROUND_COLOR = { r = 0.09, g = 0.09, b = 0.19 };
+
+-- function GameTooltip_OnHide(self)
+-- 	self:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b);
+-- 	self:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b);
+-- 	self.default = nil;
+-- 	GameTooltip_ClearMoney(self);
+-- 	GameTooltip_ClearStatusBars(self);
+-- end

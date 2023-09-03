@@ -20,6 +20,7 @@ ChocolateBarDB = {
 		["Elohssa - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
+		["Dopede - Stitches"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Spija - Genesis"] = "Default",
 		["Testxv - Golemagg"] = "Default",
@@ -95,12 +96,21 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["iconSize"] = 0.7000000000000001,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -187,7 +197,7 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["ItemRack"] = {
-					["index"] = 4,
+					["index"] = 3,
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
@@ -291,10 +301,12 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["picoFPS"] = {
-					["index"] = 1,
+					["widthBehavior"] = "free",
 					["align"] = "right",
 					["isNew"] = false,
+					["width"] = 57,
 					["barName"] = "ChocolateBar2",
+					["index"] = 1,
 				},
 				["Masque"] = {
 					["enabled"] = false,
@@ -403,6 +415,12 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
+				["gmMoney"] = {
+					["index"] = 1,
+					["isNew"] = false,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+				},
 				["Broker_KillTrack"] = {
 					["index"] = 2,
 					["showLabel"] = true,
@@ -410,12 +428,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
 					["customLabel"] = "KT",
-				},
-				["gmMoney"] = {
-					["index"] = 1,
-					["isNew"] = false,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 				},
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -434,6 +446,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "AL",
 				},
+				["FarmHud"] = {
+					["enabled"] = false,
+					["index"] = 2,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
+					["customLabel"] = "FH",
+				},
 				["Skada"] = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
@@ -444,21 +466,11 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["BugSack"] = {
-					["index"] = 4,
+					["index"] = 2,
 					["isNew"] = false,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
-				},
-				["FarmHud"] = {
-					["enabled"] = false,
-					["index"] = 2,
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
-					["showText"] = false,
-					["customLabel"] = "FH",
 				},
 				["gmLm"] = {
 					["index"] = 2,
@@ -479,18 +491,13 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "LFG",
 				},
-				["CB_ItemLevel"] = {
-					["enabled"] = false,
-					["index"] = 5,
-					["barName"] = "ChocolateBar1",
-				},
 				["NPCScan"] = {
 					["isNew"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["CB_Entertainer"] = {
+				["CB_ItemLevel"] = {
 					["enabled"] = false,
-					["index"] = 2,
+					["index"] = 5,
 					["barName"] = "ChocolateBar1",
 				},
 				["AddonCpuUsage"] = {
@@ -502,6 +509,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["showText"] = false,
 					["customLabel"] = "ACU",
+				},
+				["RareScannerLDB"] = {
+					["enabled"] = false,
+					["index"] = 2,
+					["isNew"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
 				},
 				["KiwiPlates"] = {
 					["align"] = "right",
@@ -521,6 +535,13 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["index"] = 3,
+				},
+				["MoreChocolate"] = {
+					["enabled"] = false,
+					["align"] = "right",
+					["isNew"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -553,13 +574,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["MoreChocolate"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["isNew"] = false,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-				},
 				["|cff00fe00LootAppraiser Wrath|r"] = {
 					["enabled"] = false,
 					["index"] = 3,
@@ -577,8 +591,13 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
+				["CB_Entertainer"] = {
+					["enabled"] = false,
+					["index"] = 2,
+					["barName"] = "ChocolateBar1",
+				},
 				["TradeSkillMaster"] = {
-					["index"] = 3,
+					["index"] = 1,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showText"] = false,
@@ -677,16 +696,7 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["iconSize"] = 0.7000000000000001,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -726,10 +736,8 @@ CB_PlayedTime = {
 	["Vermin-"] = {
 		["total"] = 271466,
 	},
-	["Battlearm-Golemagg"] = {
-		["total"] = 1022825,
-		["timeStamp"] = 435868.025,
-		["timeAtThisLevel"] = 693150,
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -737,8 +745,10 @@ CB_PlayedTime = {
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8794,
+	["Battlearm-Golemagg"] = {
+		["total"] = 1022825,
+		["timeStamp"] = 435868.025,
+		["timeAtThisLevel"] = 693150,
 	},
 	["Battitude-Golemagg"] = {
 		["total"] = 17339,
@@ -748,31 +758,29 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
-	},
-	["Mxzq-"] = {
-		["total"] = 356150,
+	["Mxyzptlk-"] = {
+		["total"] = 8794,
 	},
 	["Vermina-Golemagg"] = {
 		["total"] = 375771,
 		["timeAtThisLevel"] = 2048,
 		["timeStamp"] = 479279.819,
 	},
-	["Mxzq-Golemagg"] = {
-		["total"] = 1182045,
-		["timeAtThisLevel"] = 151025,
-		["timeStamp"] = 435953.614,
+	["Mxzq-"] = {
+		["total"] = 356150,
+	},
+	["Mxyzptlk-Golemagg"] = {
+		["total"] = 53083,
+		["timeAtThisLevel"] = 2821,
+		["timeStamp"] = 777447.689,
 	},
 	["Pitchwise-Ashbringer"] = {
 		["total"] = 2973,
 		["timeStamp"] = 1551182.832,
 		["timeAtThisLevel"] = 2973,
 	},
-	["Tudum-Jin'do"] = {
-		["total"] = 316,
-		["timeAtThisLevel"] = 316,
-		["timeStamp"] = 60887.198,
+	["Dotwise-"] = {
+		["total"] = 3924,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -785,10 +793,10 @@ CB_PlayedTime = {
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
-	["Wells-Jin'do"] = {
-		["total"] = 11721,
-		["timeAtThisLevel"] = 4960,
-		["timeStamp"] = 774953.806,
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeAtThisLevel"] = 316,
+		["timeStamp"] = 60887.198,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
@@ -898,16 +906,18 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 897814,
 		["timeStamp"] = 690123.853,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
+	["Wells-Jin'do"] = {
+		["total"] = 11721,
+		["timeAtThisLevel"] = 4960,
+		["timeStamp"] = 774953.806,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Mxyzptlk-Golemagg"] = {
-		["total"] = 53083,
-		["timeAtThisLevel"] = 2821,
-		["timeStamp"] = 777447.689,
+	["Mxzq-Golemagg"] = {
+		["total"] = 1182045,
+		["timeAtThisLevel"] = 151025,
+		["timeStamp"] = 435953.614,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,

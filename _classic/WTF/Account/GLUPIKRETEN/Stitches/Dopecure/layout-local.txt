@@ -27,6 +27,13 @@ X: 3
 Y: -87
 W: 784
 H: 260
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 423
+Y: -116
+W: 128
+H: 64
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOPRIGHT

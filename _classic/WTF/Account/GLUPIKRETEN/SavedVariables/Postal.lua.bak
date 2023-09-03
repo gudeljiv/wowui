@@ -3,12 +3,16 @@ Postal3DB = {
 	["profileKeys"] = {
 		["Dopeah - Stitches"] = "Dopeah - Stitches",
 		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopede - Stitches"] = "Dopede - Stitches",
 	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
-				"Dopesnare|Stitches|Horde|12|HUNTER", -- [2]
+				"Dopecure|Stitches|Horde|1|PRIEST", -- [2]
+				"Dopede|Stitches|Horde|3|SHAMAN", -- [3]
+				"Dopesnare|Stitches|Horde|12|HUNTER", -- [4]
 			},
 		},
 	},
@@ -21,6 +25,10 @@ Postal3DB = {
 					"Dopeah|Stitches|Horde", -- [1]
 				},
 			},
+		},
+		["Dopecure - Stitches"] = {
+		},
+		["Dopede - Stitches"] = {
 		},
 	},
 }
