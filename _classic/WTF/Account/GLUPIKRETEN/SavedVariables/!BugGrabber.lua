@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10070,
 	["lastSanitation"] = 3,
-	["session"] = 10069,
 	["errors"] = {
 		{
 			["message"] = "Interface/SharedXML/SharedTooltipTemplates.lua:276: attempt to call method 'GetRGB' (a nil value)",

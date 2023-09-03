@@ -1,23 +1,24 @@
 local _, xVermin = ...
 
 local function xInstallAddon()
-	SetCVar('autoQuestWatch', 1)
-	SetCVar('autoQuestProgress', 1)
-	SetCVar('instantQuestText', 1)
-	SetCVar('nameplateMaxDistance', 80)
-	SetCVar('ffxGlow', 1)
-	SetCVar('ffxDeath', 0)
-	SetCVar('ffxNether', 0)
-	SetCVar('violenceLevel', 5)
-	SetCVar('cameraDistanceMax', 50)
-	SetCVar('cameraDistanceMaxFactor', 4.0)
-	SetCVar('cameraDistanceMaxZoomFactor', 4.0)
-	SetCVar('chatClassColorOverride', 0)
-	SetCVar('ShowClassColorInFriendlyNameplate', 1)
-	SetCVar('scriptErrors', 1)
-	SetCVar('alwaysShowActionBars', 1)
-	SetCVar('AutoInteract', 0)
-	SetCVar('cursorsizepreferred', 0)
+	C_CVar.SetCVar('autoQuestWatch', 1)
+	C_CVar.SetCVar('autoQuestProgress', 1)
+	C_CVar.SetCVar('instantQuestText', 1)
+	C_CVar.SetCVar('nameplateMaxDistance', 80)
+	C_CVar.SetCVar('ffxGlow', 1)
+	C_CVar.SetCVar('ffxDeath', 0)
+	C_CVar.SetCVar('ffxNether', 0)
+	C_CVar.SetCVar('violenceLevel', 5)
+	C_CVar.SetCVar('cameraDistanceMax', 50)
+	C_CVar.SetCVar('cameraDistanceMaxFactor', 4.0)
+	C_CVar.SetCVar('cameraDistanceMaxZoomFactor', 4.0)
+	C_CVar.SetCVar('chatClassColorOverride', 0)
+	C_CVar.SetCVar('ShowClassColorInFriendlyNameplate', 1)
+	C_CVar.SetCVar('scriptErrors', 1)
+	C_CVar.SetCVar('alwaysShowActionBars', 1)
+	C_CVar.SetCVar('AutoInteract', 0)
+	C_CVar.SetCVar('cursorsizepreferred', 0)
+	C_CVar.SetCVar("autoLootDefault", "1")
 
 	C_CVar.SetCVar('showArenaEnemyFrames', '0')
 	C_CVar.SetCVar('showArenaEnemyCastbar', '0')
@@ -54,6 +55,8 @@ local function xInstallAddon()
 	-- for i = 1, 4 do
 	-- 	_G[s .. i] = b
 	-- end
+
+	-- /run C_CVar.SetCVar('alwaysShowActionBars', '0')
 	-- InterfaceOptions_UpdateMultiActionBars()
 end
 

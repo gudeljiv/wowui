@@ -42,7 +42,7 @@ Y: -128
 W: 384
 H: 512
 Frame: LootFrame
-FrameLevel: 10
+FrameLevel: 2
 Anchor: CENTER
 X: 480
 Y: 254
@@ -83,3 +83,10 @@ X: 0
 Y: -20
 W: 200
 H: 50
+Frame: EventTrace
+FrameLevel: 1
+Anchor: RIGHT
+X: -313
+Y: -27
+W: 735
+H: 825
