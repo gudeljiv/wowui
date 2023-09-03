@@ -281,62 +281,23 @@ WeakAurasSaved = {
 				["key"] = "4",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["cooldown"] = true,
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = -1,
-						["variable"] = "incombat",
-						["value"] = 0,
-					},
-					["changes"] = {
-						{
-							["value"] = 0.5,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "insufficientResources",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.50196078431373, -- [1]
-								0.50196078431373, -- [2]
-								1, -- [3]
-								1, -- [4]
-							},
-							["property"] = "color",
-						}, -- [1]
-					},
-				}, -- [2]
-			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
-			["cooldownTextDisabled"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.2,
-			["semver"] = "2.4.1",
-			["tocversion"] = 30401,
-			["id"] = "Volley Ulduar (Hodir & Vezax)",
-			["alpha"] = 1,
-			["useCooldownModRate"] = false,
-			["width"] = 36,
-			["frameStrata"] = 1,
-			["uid"] = "AM3siOViGxT",
-			["inverse"] = true,
 			["authorOptions"] = {
 				{
 					["useName"] = true,
@@ -373,25 +334,64 @@ WeakAurasSaved = {
 					["desc"] = "Toggle showing key.",
 				}, -- [4]
 			},
+			["cooldown"] = true,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = -1,
+						["variable"] = "incombat",
+						["value"] = 0,
+					},
+					["changes"] = {
+						{
+							["value"] = 0.5,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "insufficientResources",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.50196078431373, -- [1]
+								0.50196078431373, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["property"] = "color",
+						}, -- [1]
+					},
+				}, -- [2]
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["cooldownTextDisabled"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.2,
+			["semver"] = "2.4.1",
+			["tocversion"] = 30401,
+			["id"] = "Volley Ulduar (Hodir & Vezax)",
+			["alpha"] = 1,
+			["useCooldownModRate"] = false,
+			["width"] = 36,
+			["frameStrata"] = 1,
+			["uid"] = "AM3siOViGxT",
+			["inverse"] = true,
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 132222,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Rune Strike"] = {
 			["sparkWidth"] = 10,
@@ -640,8 +640,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Druid",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -721,7 +720,12 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -866,19 +870,15 @@ WeakAurasSaved = {
 			["id"] = "Mark of the Wild",
 			["alpha"] = 1,
 			["width"] = 36,
-			["parent"] = "Vermin Druid",
+			["authorOptions"] = {
+			},
 			["uid"] = "dSKOb6n5acg",
 			["inverse"] = false,
 			["cooldownTextDisabled"] = false,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 		},
 		["Sweeping Strikes"] = {
 			["sparkWidth"] = 10,
@@ -1450,11 +1450,11 @@ WeakAurasSaved = {
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["arcLength"] = 360,
+			["xOffset"] = 20,
 			["version"] = 1,
 			["subRegions"] = {
 			},
-			["selfPoint"] = "LEFT",
+			["arcLength"] = 360,
 			["internalVersion"] = 66,
 			["load"] = {
 				["talent"] = {
@@ -1475,16 +1475,16 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["rotation"] = 0,
+			["selfPoint"] = "LEFT",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
+			["rotation"] = 0,
 			["animate"] = false,
-			["xOffset"] = 20,
+			["fullCircle"] = true,
 			["scale"] = 0.6,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -3448,15 +3448,59 @@ WeakAurasSaved = {
 				["key"] = "3",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -3557,7 +3601,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -3570,61 +3619,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "f702KEDlvCK",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = "135130",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Heightened Reflexes"] = {
 			["sparkWidth"] = 10,
@@ -4560,15 +4560,59 @@ WeakAurasSaved = {
 				["key"] = "3",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -4669,7 +4713,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -4682,61 +4731,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "n5VL6FEj6FZ",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 132330,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Energy Bar"] = {
 			["overlays"] = {
@@ -5398,10 +5398,9 @@ WeakAurasSaved = {
 			["desc"] = "Big display of target health percentage with Colors",
 			["stagger"] = 0,
 			["version"] = 2,
-			["anchorPoint"] = "CENTER",
-			["config"] = {
-			},
-			["groupIcon"] = 136168,
+			["rotation"] = 0,
+			["borderInset"] = 1,
+			["radius"] = 200,
 			["load"] = {
 				["zoneIds"] = "",
 				["ingroup"] = {
@@ -5462,16 +5461,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["fullCircle"] = true,
+			["grow"] = "DOWN",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["radius"] = 200,
+			["anchorPoint"] = "CENTER",
 			["animate"] = false,
-			["selfPoint"] = "TOP",
+			["rowSpace"] = 1,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -5479,7 +5478,7 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 1,
-			["grow"] = "DOWN",
+			["uid"] = "RtwiT9kw4p3",
 			["sort"] = "none",
 			["constantFactor"] = "RADIUS",
 			["authorOptions"] = {
@@ -5491,17 +5490,18 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "RtwiT9kw4p3",
-			["borderInset"] = 1,
+			["fullCircle"] = true,
+			["config"] = {
+			},
+			["groupIcon"] = 136168,
 			["useLimit"] = true,
-			["rowSpace"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rotation"] = 0,
+			["selfPoint"] = "TOP",
 		},
 		["Adamantite Ore"] = {
 			["iconSource"] = -1,
@@ -7142,15 +7142,59 @@ WeakAurasSaved = {
 				["key"] = "3",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -7251,7 +7295,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -7264,61 +7313,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "iwhqRjvFCwh",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 135130,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["TP Wrath Hunter Rotation"] = {
 			["arcLength"] = 360,
@@ -8989,7 +8989,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 121.503601074219,
-			["internalVersion"] = 66,
+			["gridType"] = "RD",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -9031,7 +9031,7 @@ WeakAurasSaved = {
 			},
 			["limit"] = 5,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -9059,7 +9059,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["arcLength"] = 360,
+			["stagger"] = 0,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "N5YikxjcJsU",
 			["borderOffset"] = 16,
@@ -9073,7 +9073,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["borderInset"] = 0,
-			["stagger"] = 0,
+			["internalVersion"] = 66,
 			["useLimit"] = false,
 			["conditions"] = {
 			},
@@ -9081,7 +9081,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 		},
 		["Clearcasting"] = {
 			["sparkWidth"] = 10,
@@ -9628,7 +9628,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["rowSpace"] = 1,
+			["grow"] = "LEFT",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -9675,7 +9675,7 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = true,
-			["internalVersion"] = 66,
+			["useLimit"] = false,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -9685,7 +9685,7 @@ WeakAurasSaved = {
 			["sort"] = "none",
 			["authorOptions"] = {
 			},
-			["useLimit"] = false,
+			["fullCircle"] = true,
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -9698,14 +9698,14 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["limit"] = 5,
 			["uid"] = "NLkveGaWbw7",
-			["fullCircle"] = true,
+			["rowSpace"] = 1,
 			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["grow"] = "LEFT",
+			["internalVersion"] = 66,
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "RIGHT",
@@ -9758,26 +9758,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 20,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
+			["gridType"] = "RD",
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -9815,7 +9796,7 @@ WeakAurasSaved = {
 			},
 			["limit"] = 5,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -9824,7 +9805,7 @@ WeakAurasSaved = {
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["internalVersion"] = 66,
-			["arcLength"] = 360,
+			["stagger"] = 0,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "XLzBWxn1LoM",
 			["borderOffset"] = 16,
@@ -9838,7 +9819,26 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["borderInset"] = 0,
-			["stagger"] = 0,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
 			["useLimit"] = false,
 			["conditions"] = {
 			},
@@ -9846,7 +9846,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 		},
 		["MANA BAR + DRUID / ROGUE CPOINTS"] = {
 			["controlledChildren"] = {
@@ -10367,21 +10367,21 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 11305,
 			["id"] = "Nameplate Combo Points",
-			["selfPoint"] = "BOTTOMLEFT",
+			["yOffset"] = 0,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOMLEFT",
+			["borderInset"] = 1,
 			["config"] = {
 			},
 			["uid"] = "iOnxJbg5Fqx",
-			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["groupOffset"] = true,
 			},
-			["yOffset"] = 0,
+			["xOffset"] = 0,
 		},
 		["MEND PET"] = {
 			["sparkWidth"] = 10,
@@ -13085,15 +13085,59 @@ WeakAurasSaved = {
 				["key"] = "E",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -13176,7 +13220,12 @@ WeakAurasSaved = {
 					},
 				}, -- [4]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -13189,61 +13238,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "JQ)TYroDxGP",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 135826,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Power Bar Group"] = {
 			["backdropColor"] = {
@@ -15120,7 +15120,8 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Paladin",
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -15179,8 +15180,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Paladin",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -15188,7 +15188,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -15362,12 +15367,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -15592,15 +15592,59 @@ WeakAurasSaved = {
 				["key"] = "Q",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -15653,7 +15697,12 @@ WeakAurasSaved = {
 					},
 				}, -- [3]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -15666,61 +15715,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "inqutrejdmY",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = "132213",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Hyperspeed Acceleration"] = {
 			["sparkWidth"] = 10,
@@ -18443,15 +18443,59 @@ WeakAurasSaved = {
 				["key"] = "E",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -18559,7 +18603,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -18572,61 +18621,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "ROxdzB8dM7u",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 136181,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Info - ThreatSituation"] = {
 			["sparkWidth"] = 5,
@@ -20139,15 +20139,59 @@ WeakAurasSaved = {
 				["key"] = "3",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -20248,7 +20292,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -20261,61 +20310,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "KSG78u8)44t",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = "135130",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["CP1"] = {
 			["color"] = {
@@ -20777,15 +20777,59 @@ WeakAurasSaved = {
 				["key"] = "3",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -20886,7 +20930,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -20899,61 +20948,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "v1YllVpPifZ",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 132330,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["targetdebuffs  2"] = {
 			["iconSource"] = -1,
@@ -22372,21 +22372,19 @@ WeakAurasSaved = {
 				},
 			},
 			["align"] = "CENTER",
-			["borderColor"] = {
-				0.086274509803922, -- [1]
-				0.090196078431373, -- [2]
-				0.10196078431373, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "WiRsd0lRNQ2",
 			["frameStrata"] = 1,
-			["anchorPoint"] = "CENTER",
+			["yOffset"] = 250,
 			["stagger"] = 0,
-			["selfPoint"] = "TOP",
+			["authorOptions"] = {
+			},
 			["version"] = 2,
 			["subRegions"] = {
 			},
-			["useLimit"] = false,
-			["rotation"] = 0,
+			["rowSpace"] = 1,
+			["sortHybridTable"] = {
+				["Info - ThreatSituation"] = false,
+			},
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -22407,49 +22405,51 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["radius"] = 200,
+			["borderColor"] = {
+				0.086274509803922, -- [1]
+				0.090196078431373, -- [2]
+				0.10196078431373, -- [3]
+				1, -- [4]
+			},
 			["backdropColor"] = {
 				0.086274509803922, -- [1]
 				0.090196078431373, -- [2]
 				0.10196078431373, -- [3]
 				0.65000000596047, -- [4]
 			},
-			["rowSpace"] = 1,
-			["animate"] = false,
-			["uid"] = "WiRsd0lRNQ2",
+			["selfPoint"] = "TOP",
+			["source"] = "import",
+			["borderInset"] = 1,
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
-			["borderEdge"] = "Blizzard Tooltip",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 5,
+			["limit"] = 5,
+			["animate"] = false,
 			["sort"] = "none",
-			["anchorFrameFrame"] = "PlayerFrame",
-			["source"] = "import",
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.1",
 			["tocversion"] = 11305,
 			["id"] = "Threat List",
-			["limit"] = 5,
+			["rotation"] = 0,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
+			["borderEdge"] = "Blizzard Tooltip",
 			["config"] = {
 			},
-			["borderInset"] = 1,
-			["authorOptions"] = {
-			},
-			["sortHybridTable"] = {
-				["Info - ThreatSituation"] = false,
-			},
+			["useLimit"] = false,
+			["anchorPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["yOffset"] = 250,
+			["radius"] = 200,
 		},
 		["Barkskin"] = {
 			["sparkWidth"] = 10,
@@ -22739,14 +22739,19 @@ WeakAurasSaved = {
 			["align"] = "RIGHT",
 			["centerType"] = "LR",
 			["limit"] = 5,
-			["useAnchorPerUnit"] = false,
-			["rotation"] = 0,
-			["useLimit"] = false,
+			["rowSpace"] = 1,
+			["stagger"] = 0,
+			["radius"] = 200,
 			["version"] = 5,
 			["subRegions"] = {
 			},
-			["stagger"] = 0,
-			["radius"] = 200,
+			["anchorPoint"] = "TOPRIGHT",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -22767,22 +22772,16 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["rotation"] = 0,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "6GCI4uu)d8g",
+			["borderInset"] = 1,
 			["animate"] = false,
-			["config"] = {
-			},
+			["useAnchorPerUnit"] = false,
 			["scale"] = 1,
 			["customAnchor"] = "ChatFrame3",
 			["border"] = false,
@@ -22790,6 +22789,20 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
+			["groupIcon"] = 132281,
+			["frameStrata"] = 1,
+			["constantFactor"] = "RADIUS",
+			["arcLength"] = 360,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.4",
+			["tocversion"] = 11302,
+			["id"] = "Professions Skill Tracker",
+			["anchorFrameFrame"] = "ChatFrame3",
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SELECTFRAME",
+			["config"] = {
+			},
+			["uid"] = "6GCI4uu)d8g",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22810,28 +22823,15 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["frameStrata"] = 1,
-			["constantFactor"] = "RADIUS",
-			["arcLength"] = 360,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.4",
-			["tocversion"] = 11302,
-			["id"] = "Professions Skill Tracker",
-			["anchorFrameFrame"] = "ChatFrame3",
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SELECTFRAME",
-			["authorOptions"] = {
-			},
-			["borderInset"] = 1,
-			["anchorPoint"] = "TOPRIGHT",
-			["groupIcon"] = 132281,
+			["useLimit"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
 		},
 		["PST bar"] = {
 			["sparkWidth"] = 10,
@@ -24844,21 +24844,16 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["gridWidth"] = 5,
-			["gridType"] = "RD",
+			["selfPoint"] = "TOP",
 			["stagger"] = 0,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["useLimit"] = false,
 			["version"] = 14,
 			["subRegions"] = {
 			},
-			["useLimit"] = false,
 			["sortHybridTable"] = {
 				["Av Timers"] = false,
 			},
+			["gridType"] = "RD",
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -24919,7 +24914,12 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "TOP",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 		},
 		["Loss of Control Alert (WOTLK)"] = {
 			["controlledChildren"] = {
@@ -25025,21 +25025,21 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert (WOTLK)",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["groupIcon"] = 136071,
+			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
 			["config"] = {
 			},
 			["uid"] = "RaWaTrdL9bd",
-			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["groupIcon"] = 136071,
 		},
 		["Jade"] = {
 			["iconSource"] = -1,
@@ -26289,26 +26289,7 @@ WeakAurasSaved = {
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["space"] = 2,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -26336,7 +26317,7 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = true,
-			["radius"] = 200,
+			["xOffset"] = -135,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -26345,7 +26326,7 @@ WeakAurasSaved = {
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["rotation"] = 0,
-			["xOffset"] = -135,
+			["grow"] = "LEFT",
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -26358,14 +26339,33 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["limit"] = 5,
 			["uid"] = "H67q1C9K6oT",
-			["grow"] = "LEFT",
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["selfPoint"] = "RIGHT",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["space"] = 2,
+			["radius"] = 200,
 		},
 		["Leaving Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -32511,26 +32511,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["internalVersion"] = 66,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -32558,7 +32539,7 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = true,
-			["useLimit"] = false,
+			["rowSpace"] = 1,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -32568,7 +32549,7 @@ WeakAurasSaved = {
 			["sort"] = "none",
 			["authorOptions"] = {
 			},
-			["rowSpace"] = 1,
+			["arcLength"] = 360,
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -32581,14 +32562,33 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["limit"] = 5,
 			["uid"] = "D9TtZ3sXWX0",
-			["arcLength"] = 360,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 66,
+			["useLimit"] = false,
 		},
 		["Chimera Shot native"] = {
 			["iconSource"] = 0,
@@ -32849,15 +32849,59 @@ WeakAurasSaved = {
 				["key"] = "2",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -32958,7 +33002,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -32971,61 +33020,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "l5NYWp0ZXt2",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 236176,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Mana Bar "] = {
 			["sparkWidth"] = 10,
@@ -33865,26 +33865,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["useLimit"] = false,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -33912,7 +33893,7 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = true,
-			["radius"] = 200,
+			["grow"] = "LEFT",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -33926,7 +33907,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["grow"] = "LEFT",
+			["rowSpace"] = 1,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "uIfZeMoFAaJ",
 			["borderOffset"] = 4,
@@ -33939,7 +33920,26 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["config"] = {
 			},
-			["rowSpace"] = 1,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["conditions"] = {
@@ -33947,7 +33947,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useLimit"] = false,
+			["radius"] = 200,
 		},
 		["Lifebloom"] = {
 			["sparkWidth"] = 10,
@@ -34630,15 +34630,59 @@ WeakAurasSaved = {
 				["key"] = "1",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -34745,7 +34789,12 @@ WeakAurasSaved = {
 					},
 				}, -- [5]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -34758,62 +34807,13 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "YjYmKNSUG2Y",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 132204,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = false,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Fel Iron Ore"] = {
 			["iconSource"] = -1,
@@ -37581,7 +37581,7 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["stagger"] = 0,
-			["space"] = 2,
+			["internalVersion"] = 66,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -37614,7 +37614,7 @@ WeakAurasSaved = {
 			},
 			["borderEdge"] = "Square Full White",
 			["animate"] = true,
-			["xOffset"] = -135,
+			["useLimit"] = false,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -37623,7 +37623,7 @@ WeakAurasSaved = {
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["rotation"] = 0,
-			["useLimit"] = false,
+			["arcLength"] = 360,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "jqdDR4yB1fg",
 			["borderOffset"] = 4,
@@ -37636,14 +37636,14 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["config"] = {
 			},
-			["arcLength"] = 360,
+			["space"] = 2,
 			["selfPoint"] = "RIGHT",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 66,
+			["xOffset"] = -135,
 		},
 		["Copper Ore"] = {
 			["iconSource"] = -1,
@@ -39979,15 +39979,59 @@ WeakAurasSaved = {
 				["key"] = "F",
 				["showKey"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+					["custom"] = "",
+					["do_message"] = false,
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
 			},
 			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "Features",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [1]
+				{
+					["text"] = "Type in the keybind to show on the icon.",
+					["type"] = "description",
+					["fontSize"] = "medium",
+					["width"] = 1.25,
+				}, -- [2]
+				{
+					["type"] = "input",
+					["useDesc"] = true,
+					["width"] = 0.25,
+					["default"] = "K",
+					["name"] = "Key",
+					["multiline"] = false,
+					["key"] = "key",
+					["length"] = 4,
+					["desc"] = "Which key to show on the icon.",
+					["useLength"] = true,
+				}, -- [3]
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 0.5,
+					["name"] = "Show Key",
+					["useDesc"] = true,
+					["key"] = "showKey",
+					["desc"] = "Toggle showing key.",
+				}, -- [4]
+			},
 			["cooldown"] = true,
 			["conditions"] = {
 				{
@@ -40027,7 +40071,12 @@ WeakAurasSaved = {
 					},
 				}, -- [2]
 			},
-			["url"] = "https://wago.io/3A4AdMt5N/29",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.2,
@@ -40040,61 +40089,12 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "4DecfzEPTZT",
 			["inverse"] = true,
-			["authorOptions"] = {
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "Features",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [1]
-				{
-					["text"] = "Type in the keybind to show on the icon.",
-					["type"] = "description",
-					["fontSize"] = "medium",
-					["width"] = 1.25,
-				}, -- [2]
-				{
-					["type"] = "input",
-					["useDesc"] = true,
-					["width"] = 0.25,
-					["default"] = "K",
-					["name"] = "Key",
-					["multiline"] = false,
-					["key"] = "key",
-					["length"] = 4,
-					["desc"] = "Which key to show on the icon.",
-					["useLength"] = true,
-				}, -- [3]
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 0.5,
-					["name"] = "Show Key",
-					["useDesc"] = true,
-					["key"] = "showKey",
-					["desc"] = "Toggle showing key.",
-				}, -- [4]
-			},
+			["url"] = "https://wago.io/3A4AdMt5N/29",
 			["displayIcon"] = 132212,
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "",
-					["do_message"] = false,
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Vermin Priest"] = {
 			["grow"] = "LEFT",
@@ -40145,7 +40145,7 @@ WeakAurasSaved = {
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["rotation"] = 0,
-			["selfPoint"] = "RIGHT",
+			["arcLength"] = 360,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -40192,7 +40192,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameFrame"] = "PlayerFrame",
 			["animate"] = true,
-			["space"] = 2,
+			["xOffset"] = -135,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -40201,7 +40201,7 @@ WeakAurasSaved = {
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["fullCircle"] = true,
-			["xOffset"] = -135,
+			["internalVersion"] = 66,
 			["constantFactor"] = "RADIUS",
 			["uid"] = "S3ES06vW5Vw",
 			["borderOffset"] = 4,
@@ -40214,14 +40214,14 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["config"] = {
 			},
-			["internalVersion"] = 66,
+			["selfPoint"] = "RIGHT",
 			["stagger"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["arcLength"] = 360,
+			["space"] = 2,
 		},
 	},
 	["lastUpgrade"] = 1693317446,

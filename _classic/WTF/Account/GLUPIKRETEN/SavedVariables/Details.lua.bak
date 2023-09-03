@@ -51,7 +51,7 @@ _detalhes_global = {
 		["Vortex"] = 64,
 		["Horn of Winter"] = 1,
 		["Nether Detonation"] = 64,
-		["Plague Strike"] = 1,
+		["Sear Beam"] = 4,
 		["Death and Decay"] = 32,
 		["Infected Bite"] = 8,
 		["Firebomb"] = 4,
@@ -95,12 +95,12 @@ _detalhes_global = {
 		["Revenge"] = 1,
 		["Deep Wounds"] = 1,
 		["Titanic Power"] = 64,
-		["Pyrobuffet"] = 4,
+		["Curse of Mending"] = 32,
 		["Electro Shock"] = 8,
 		["Felfire Shock"] = 4,
 		["Woe Strike"] = 32,
 		["Stampede"] = 1,
-		["Rapid Shot"] = 1,
+		["Leeching Swarm"] = 8,
 		["Bloodthirst"] = 1,
 		["Rearing Stomp"] = 1,
 		["Spirit Burst"] = 32,
@@ -111,7 +111,7 @@ _detalhes_global = {
 		["Web Grab"] = 1,
 		["Shroud of Darkness"] = 32,
 		["Smoldering Bones"] = 4,
-		["Knockdown"] = 1,
+		["Lumberjack Slam"] = 1,
 		["Throw"] = 1,
 		["Sunder Armor"] = 1,
 		["Mojo Volley"] = 8,
@@ -204,7 +204,7 @@ _detalhes_global = {
 		["Seal of Righteousness"] = 2,
 		["Frost Buffet"] = 16,
 		["Mana Break"] = 32,
-		["Lumberjack Slam"] = 1,
+		["Knockdown"] = 1,
 		["Spellbreaker"] = 1,
 		["Corpse Explode"] = 8,
 		["Unholy Aura"] = 32,
@@ -244,7 +244,7 @@ _detalhes_global = {
 		["Sphere Detonation"] = 64,
 		["Arcane Bomb"] = 64,
 		["Temporal Vortex"] = 64,
-		["Fel Fire"] = 4,
+		["Plague Strike"] = 1,
 		["Piercing Blow"] = 1,
 		["Foul Spores"] = 32,
 		["Poison Cloud"] = 8,
@@ -285,8 +285,8 @@ _detalhes_global = {
 		["Mangle!"] = 1,
 		["Frost Breath"] = 16,
 		["Mangle (Cat)"] = 1,
-		["Curse of Mending"] = 32,
-		["Leeching Swarm"] = 8,
+		["Pyrobuffet"] = 4,
+		["Rapid Shot"] = 1,
 		["Poison Bolt"] = 8,
 		["Deadly Poison"] = 8,
 		["Shadow Whip"] = 32,
@@ -304,7 +304,7 @@ _detalhes_global = {
 		["Choking Cloud"] = 8,
 		["Deathbloom"] = 8,
 		["Melee"] = 1,
-		["Sear Beam"] = 4,
+		["Fel Fire"] = 4,
 		["Locust Swarm"] = 8,
 		["Knock Away"] = 1,
 		["Ravenous Claw"] = 1,
@@ -399,9 +399,9 @@ _detalhes_global = {
 	["displays_by_spec"] = {
 	},
 	["plugin_window_pos"] = {
-		["y"] = 41.30995178222656,
-		["x"] = -278.975341796875,
-		["point"] = "RIGHT",
+		["y"] = 41.30984497070313,
+		["x"] = 17.04299926757813,
+		["point"] = "CENTER",
 		["scale"] = 1,
 	},
 	["last_changelog_size"] = 9746,
@@ -493,8 +493,9 @@ _detalhes_global = {
 		["relevance_time"] = 7,
 	},
 	["spell_pool"] = {
-		["Corruption"] = 9,
+		["Battle Shout"] = 1,
 		["Charge"] = 1,
+		["Healing Wave"] = 7,
 		["Bloodrage"] = 1,
 		["Tame Armored Scorpid"] = 3,
 		["Immolate"] = 9,
@@ -503,9 +504,9 @@ _detalhes_global = {
 		["Overpower"] = 1,
 		["Spirit"] = 11,
 		["Heroic Strike"] = 1,
-		["Healing Potion"] = 1,
+		["Blood Fury"] = 1,
 		["Raptor Strike"] = 3,
-		["Battle Shout"] = 1,
+		["Healing Potion"] = 1,
 		["Food"] = 1,
 		["Tame Dire Mottled Boar"] = 3,
 		["Drain Life"] = 3,
@@ -513,7 +514,7 @@ _detalhes_global = {
 		["Bear Form"] = 11,
 		["Well Fed"] = 7,
 		["Lightning Shield"] = 7,
-		["Tame Surf Crawler"] = 3,
+		["Rend"] = 1,
 		["Aspect of the Monkey"] = 3,
 		["Wrath"] = 11,
 		["Concussive Shot"] = 3,
@@ -524,7 +525,7 @@ _detalhes_global = {
 		["Furious Howl"] = 3,
 		["Hunter's Mark"] = 3,
 		["Auto Shot"] = 3,
-		["Rend"] = 1,
+		["Tame Surf Crawler"] = 3,
 		["Maul"] = 11,
 		["Sapta Sight"] = 7,
 		["Growl"] = 11,
@@ -546,10 +547,10 @@ _detalhes_global = {
 		["Trap"] = 3,
 		["Charge Stun"] = 1,
 		["!Melee"] = 11,
+		["Corruption"] = 9,
 		["Aspect of the Hawk"] = 3,
-		["Serpent Sting"] = 3,
 		["Rejuvenation"] = 11,
-		["Blood Fury"] = 1,
+		["Serpent Sting"] = 3,
 		["Thorns"] = 11,
 	},
 	["shield_spellid_cache"] = {
@@ -1160,7 +1161,11 @@ _detalhes_global = {
 					["toolbar_side"] = 1,
 					["bg_g"] = 0.1333333333333333,
 					["bg_b"] = 0.1333333333333333,
-					["backdrop_texture"] = "Details Ground",
+					["switch_healer_in_combat"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
 					["color"] = {
 						0.07058823529411765, -- [1]
 						0.07058823529411765, -- [2]
@@ -1324,11 +1329,7 @@ _detalhes_global = {
 						["onleave"] = 1,
 					},
 					["__snapH"] = true,
-					["switch_healer_in_combat"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
+					["micro_displays_locked"] = false,
 					["__was_opened"] = true,
 					["strata"] = "LOW",
 					["clickthrough_incombatonly"] = false,
@@ -1380,14 +1381,14 @@ _detalhes_global = {
 					},
 					["grab_on_top"] = false,
 					["bars_sort_direction"] = 1,
-					["bg_alpha"] = 0,
+					["backdrop_texture"] = "Details Ground",
 					["auto_current"] = true,
+					["bg_alpha"] = 0,
 					["switch_tank_in_combat"] = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
 					},
-					["micro_displays_locked"] = false,
 					["clickthrough_rows"] = false,
 					["hide_in_combat"] = false,
 					["posicao"] = {
@@ -1410,7 +1411,7 @@ _detalhes_global = {
 						["textL_outline"] = false,
 						["textR_outline_small"] = true,
 						["textL_outline_small"] = true,
-						["show_faction_icon"] = true,
+						["textL_enable_custom_text"] = false,
 						["fixed_text_color"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1441,13 +1442,13 @@ _detalhes_global = {
 						["height"] = 19,
 						["font_size"] = 11,
 						["textL_custom_text"] = "{data1}. {data3}{data2}",
-						["percent_type"] = 1,
+						["show_faction_icon"] = true,
 						["textL_translit_text"] = false,
 						["texture_custom_file"] = "Interface\\",
 						["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 						["icon_size_offset"] = 0,
 						["start_after_icon"] = true,
-						["textL_enable_custom_text"] = false,
+						["percent_type"] = 1,
 						["overlay_color"] = {
 							0.7, -- [1]
 							0.7, -- [2]
@@ -1898,7 +1899,7 @@ _detalhes_global = {
 						["textL_outline"] = false,
 						["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
 						["textL_outline_small"] = true,
-						["percent_type"] = 1,
+						["show_faction_icon"] = true,
 						["fixed_text_color"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1931,7 +1932,7 @@ _detalhes_global = {
 							["upper_enabled"] = false,
 						},
 						["textL_custom_text"] = "{data1}. {data3}{data2}",
-						["textL_enable_custom_text"] = false,
+						["percent_type"] = 1,
 						["textL_translit_text"] = false,
 						["height"] = 19,
 						["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
@@ -1942,7 +1943,7 @@ _detalhes_global = {
 							0, -- [3]
 							1, -- [4]
 						},
-						["show_faction_icon"] = true,
+						["textL_enable_custom_text"] = false,
 						["overlay_color"] = {
 							0.7, -- [1]
 							0.7, -- [2]
@@ -2132,10 +2133,10 @@ _detalhes_global = {
 					1, -- [2]
 					0.25, -- [3]
 				},
-				["UNGROUPPLAYER"] = {
-					0.4, -- [1]
-					0.4, -- [2]
-					0.4, -- [3]
+				["SELF"] = {
+					0.89019, -- [1]
+					0.32156, -- [2]
+					0.89019, -- [3]
 				},
 				["DRUID"] = {
 					1, -- [1]
@@ -2199,20 +2200,20 @@ _detalhes_global = {
 					0.0196, -- [3]
 					1, -- [4]
 				},
-				["PET"] = {
-					0.3, -- [1]
+				["UNGROUPPLAYER"] = {
+					0.4, -- [1]
 					0.4, -- [2]
-					0.5, -- [3]
+					0.4, -- [3]
 				},
 				["ARENA_GREEN"] = {
 					0.4, -- [1]
 					1, -- [2]
 					0.4, -- [3]
 				},
-				["SELF"] = {
-					0.89019, -- [1]
-					0.32156, -- [2]
-					0.89019, -- [3]
+				["PET"] = {
+					0.3, -- [1]
+					0.4, -- [2]
+					0.5, -- [3]
 				},
 				["Unknow"] = {
 					0.2, -- [1]
@@ -2345,11 +2346,11 @@ _detalhes_global = {
 					0, -- [3]
 					0.125, -- [4]
 				},
-				["ROGUE"] = {
-					0.248046875, -- [1]
-					0.37109375, -- [2]
-					0, -- [3]
-					0.125, -- [4]
+				["PALADIN"] = {
+					0, -- [1]
+					0.125, -- [2]
+					0.25, -- [3]
+					0.375, -- [4]
 				},
 				["MAGE"] = {
 					0.125, -- [1]
@@ -2387,11 +2388,11 @@ _detalhes_global = {
 					0.375, -- [3]
 					0.5, -- [4]
 				},
-				["SHAMAN"] = {
-					0.125, -- [1]
-					0.248046875, -- [2]
-					0.125, -- [3]
-					0.25, -- [4]
+				["ROGUE"] = {
+					0.248046875, -- [1]
+					0.37109375, -- [2]
+					0, -- [3]
+					0.125, -- [4]
 				},
 				["UNKNOW"] = {
 					0.25, -- [1]
@@ -2435,11 +2436,11 @@ _detalhes_global = {
 					0.375, -- [3]
 					0.5, -- [4]
 				},
-				["PALADIN"] = {
-					0, -- [1]
-					0.125, -- [2]
-					0.25, -- [3]
-					0.375, -- [4]
+				["SHAMAN"] = {
+					0.125, -- [1]
+					0.248046875, -- [2]
+					0.125, -- [3]
+					0.25, -- [4]
 				},
 				["EVOKER"] = {
 					0.50390625, -- [1]
@@ -3848,9 +3849,9 @@ _detalhes_global = {
 	["data_sync"] = false,
 	["tutorial"] = {
 		["unlock_button"] = 4,
-		["main_help_button"] = 11334,
+		["main_help_button"] = 11358,
 		["ATTRIBUTE_SELECT_TUTORIAL1"] = true,
-		["logons"] = 11334,
+		["logons"] = 11358,
 		["STREAMER_FEATURES_POPUP1"] = true,
 		["ctrl_click_close_tutorial"] = false,
 		["STREAMER_PLUGIN_FIRSTRUN"] = true,

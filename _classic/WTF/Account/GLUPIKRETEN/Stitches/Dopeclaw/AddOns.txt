@@ -214,3 +214,6 @@ SharedMedia_xVermin: enabled
 ThreatClassic2: enabled
 unitscan: disabled
 WideQuestLogPlus: enabled
+Deathlog: enabled
+RareScanner: enabled
+SortBags: enabled

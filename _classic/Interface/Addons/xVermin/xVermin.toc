@@ -52,6 +52,7 @@ Addons/MultiCastActionBarFrame.lua
 Addons/nMainBar.lua
 Addons/NugKeyFeedback.lua
 Addons/PallyPower.lua
+Addons/RareScanner.lua
 Addons/ShadowedUnitFrames.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua

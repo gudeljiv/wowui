@@ -95,9 +95,6 @@ local ItemToolTipComp2 = CreateFrame("GameTooltip", "RSMapItemToolTipComp2", nil
 local InfoToolTip = CreateFrame("GameTooltip", "RSMapInfoToolTip", nil, "GameTooltipTemplate")
 ItemToolTip.shoppingTooltips = { ItemToolTipComp1, ItemToolTipComp2 }
 
-TOOLTIP_DEFAULT_COLOR = { r = 1, g = 1, b = 1 };
-TOOLTIP_DEFAULT_BACKGROUND_COLOR = { r = 0.09, g = 0.09, b = 0.19 };
-
 local function showItemToolTip(cell, args)
 	local itemID, itemLink, itemClassID, itemSubClassID = unpack(args)
 	ItemToolTip:SetScale(RSConfigDB.GetWorldMapLootAchievTooltipsScale())

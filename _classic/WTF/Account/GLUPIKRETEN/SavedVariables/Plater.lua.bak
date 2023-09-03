@@ -6057,7 +6057,7 @@ PlaterDB = {
 				["nameplateShowFriendlyNPCs"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateSelectedScale"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateMinAlphaDistance"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
-				["nameplateMotion"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:8990: in function `RefreshAutoToggle'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3041: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4597: in function `EventHandler'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4608: in function `RunFunctionForEvent'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4614: in function <Interface/AddOns/Plater/Plater.lua:4611>\n",
+				["nameplateMotion"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:8988: in function `RefreshAutoToggle'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:3041: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4597: in function `EventHandler'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4608: in function `RunFunctionForEvent'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4614: in function <Interface/AddOns/Plater/Plater.lua:4611>\n",
 				["nameplateRemovalAnimation"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateMinScale"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
 				["nameplateShowOnlyNames"] = "[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2316: in function <Interface/AddOns/Plater/Plater.lua:2297>\n",
@@ -12278,7 +12278,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateLargeTopInset"] = "0.085",
 				["nameplateShowFriends"] = "0",
-				["nameplateMotion"] = "1",
+				["nameplateMotion"] = "0",
 				["ShowClassColorInNameplate"] = "1",
 				["nameplateMinScale"] = "1",
 				["nameplateOccludedAlphaMult"] = "0",
@@ -12293,7 +12293,7 @@ PlaterDB = {
 				["nameplateMinAlphaDistance"] = "-158489.31924611",
 				["nameplatePersonalShowAlways"] = "1",
 			},
-			["login_counter"] = 8301,
+			["login_counter"] = 8325,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -12400,14 +12400,14 @@ PlaterDB = {
 						4, -- [2]
 					},
 					["power_percent_text_font"] = "Accidental Presidency",
-					["percent_text_size"] = 8,
-					["spellpercent_text_size"] = 9,
-					["percent_show_health"] = true,
 					["spellpercent_text_enabled"] = true,
+					["spellpercent_text_size"] = 9,
 					["level_text_alpha"] = 0.29999998211861,
+					["percent_text_size"] = 8,
+					["percent_show_health"] = true,
 					["percent_text_font"] = "Accidental Presidency",
 					["buff_frame_y_offset"] = 0,
-					["percent_text_outline"] = "NONE",
+					["quest_enabled"] = true,
 					["spellname_text_color"] = {
 						0.95294117647059, -- [1]
 						[3] = 0.9921568627451,
@@ -12428,7 +12428,7 @@ PlaterDB = {
 					["big_actorname_text_font"] = "Accidental Presidency",
 					["percent_text_enabled"] = true,
 					["actorname_text_size"] = 12,
-					["quest_enabled"] = true,
+					["percent_text_outline"] = "NONE",
 					["level_text_enabled"] = true,
 				},
 				["friendlynpc"] = {
@@ -13973,8 +13973,7 @@ PlaterDB = {
 				{
 					["Enabled"] = false,
 					["Revision"] = 55,
-					["HooksTemp"] = {
-					},
+					["LastHookEdited"] = "Constructor",
 					["Author"] = "Izimode-Azralon",
 					["Desc"] = "Tint nameplates of Reaping Soul units (Mythic Dungeon Affix) depending on its target and role of the player",
 					["Hooks"] = {
@@ -13983,11 +13982,7 @@ PlaterDB = {
 						["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --npcs affected by this script\n    \n    envTable.npcIDs = {\n        [148716] = true, --risen soul\n        [148893] = true, --tormented soul\n        [148894] = true, --lost soul\n        \n        [127278] = true, --skittering feeder (tests and debug, also need to disable the load conditions)\n    }\n    \n    --detect aggro, if true it will see which group member the soul is attacking and override the color\n    envTable.detectAggro = true\n    \n    \nend\n\n\n",
 					},
 					["Prio"] = 99,
-					["Name"] = "M+ Bwonsamdi Reaping",
-					["PlaterCore"] = 1,
-					["LastHookEdited"] = "Constructor",
 					["Time"] = 1579030189,
-					["Icon"] = 2446016,
 					["LoadConditions"] = {
 						["talent"] = {
 						},
@@ -14013,6 +14008,11 @@ PlaterDB = {
 							["Enabled"] = true,
 							["117"] = true,
 						},
+					},
+					["PlaterCore"] = 1,
+					["Name"] = "M+ Bwonsamdi Reaping",
+					["Icon"] = 2446016,
+					["HooksTemp"] = {
 					},
 				}, -- [15]
 				{
@@ -38243,25 +38243,25 @@ PlaterLanguage = {
 }
 PlaterLogs = {
 	["_general_logs"] = {
-		"2023-09-03 10:33:22 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [1]
-		"2023-09-03 10:26:30 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [2]
-		"2023-09-03 10:26:07 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [3]
-		"2023-09-03 10:25:42 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [4]
-		"2023-09-03 10:05:57 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [5]
-		"2023-09-03 10:05:32 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [6]
-		"2023-09-03 10:03:35 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [7]
-		"2023-09-03 10:00:11 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [8]
-		"2023-09-03 09:59:19 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [9]
-		"2023-09-03 09:57:57 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [10]
-		"2023-09-03 09:54:56 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [11]
-		"2023-09-03 09:45:50 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [12]
-		"2023-09-03 09:44:13 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [13]
-		"2023-09-03 09:37:38 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [14]
-		"2023-09-03 09:31:26 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [15]
-		"2023-09-03 09:30:23 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [16]
-		"2023-09-03 09:28:44 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopecure", -- [17]
-		"2023-09-03 09:25:36 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopeah", -- [18]
-		"2023-09-03 09:24:35 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopeah", -- [19]
+		"2023-09-03 12:31:45 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopesnare", -- [1]
+		"2023-09-03 12:30:00 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopeclaw", -- [2]
+		"2023-09-03 12:28:48 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopesick", -- [3]
+		"2023-09-03 12:28:13 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopesick", -- [4]
+		"2023-09-03 12:20:39 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [5]
+		"2023-09-03 12:16:26 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [6]
+		"2023-09-03 12:15:38 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [7]
+		"2023-09-03 12:14:51 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [8]
+		"2023-09-03 12:08:45 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [9]
+		"2023-09-03 12:06:55 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [10]
+		"2023-09-03 11:59:33 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [11]
+		"2023-09-03 11:47:25 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [12]
+		"2023-09-03 11:41:18 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [13]
+		"2023-09-03 11:33:42 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [14]
+		"2023-09-03 11:31:34 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [15]
+		"2023-09-03 11:29:34 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [16]
+		"2023-09-03 11:25:51 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [17]
+		"2023-09-03 11:25:29 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [18]
+		"2023-09-03 11:22:57 | INIT | Plater-v563-Classic | Framework v458 | 1.14.4 | enUS | Dopede", -- [19]
 	},
 	["_error_logs"] = {
 	},

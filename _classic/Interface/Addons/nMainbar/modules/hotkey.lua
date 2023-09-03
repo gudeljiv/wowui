@@ -1,9 +1,15 @@
 
 local gsub = string.gsub
 
+_G['RANGE_INDICATOR'] = "•"
+
 hooksecurefunc('ActionButton_UpdateHotkeys', function(self)
+	local frame = _G[self:GetName()]
 	local hotkey = _G[self:GetName()..'HotKey']
 	local text = hotkey:GetText()
+
+	-- print(hotkey:GetName())
+	-- print("-->",text,"<--")
 
 	if(text) then
 		text = gsub(text, '(s%-)', 'S-')
@@ -29,7 +35,15 @@ hooksecurefunc('ActionButton_UpdateHotkeys', function(self)
 		text = gsub(text, KEY_HOME, 'Hm')
 		text = gsub(text, KEY_DELETE, 'Del')
 
-		hotkey:SetWidth(30)
-		hotkey:SetText(text)
+		hotkey:SetWidth(40)
+
+		if text == _G['RANGE_INDICATOR'] then
+			hotkey:SetPoint("TOPRIGHT", frame, "TOPRIGHT", "1", "1")
+		else
+			hotkey:SetText(text)
+		end
 	end
 end)
+
+
+-- MultiBarBottomRightButton9:GetText()

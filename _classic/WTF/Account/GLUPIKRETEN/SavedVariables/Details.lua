@@ -51,7 +51,7 @@ _detalhes_global = {
 		["Melee"] = 1,
 		["Horn of Winter"] = 1,
 		["Nether Detonation"] = 64,
-		["Sear Beam"] = 4,
+		["Fel Fire"] = 4,
 		["Death and Decay"] = 32,
 		["Infected Bite"] = 8,
 		["Poison"] = 8,
@@ -95,12 +95,12 @@ _detalhes_global = {
 		["Revenge"] = 1,
 		["Deep Wounds"] = 1,
 		["Titanic Power"] = 64,
-		["Pyrobuffet"] = 4,
+		["Curse of Mending"] = 32,
 		["Electro Shock"] = 8,
 		["Felfire Shock"] = 4,
 		["Woe Strike"] = 32,
 		["Stampede"] = 1,
-		["Rapid Shot"] = 1,
+		["Leeching Swarm"] = 8,
 		["Bloodthirst"] = 1,
 		["Rearing Stomp"] = 1,
 		["Spirit Burst"] = 32,
@@ -111,7 +111,7 @@ _detalhes_global = {
 		["Web Grab"] = 1,
 		["Shroud of Darkness"] = 32,
 		["Smoldering Bones"] = 4,
-		["Lumberjack Slam"] = 1,
+		["Knockdown"] = 1,
 		["Throw"] = 1,
 		["Sunder Armor"] = 1,
 		["Mojo Volley"] = 8,
@@ -216,7 +216,7 @@ _detalhes_global = {
 		["Death Strike"] = 1,
 		["Deadly Poison VII"] = 8,
 		["Mandible Crush"] = 1,
-		["Fel Fire"] = 4,
+		["Plague Strike"] = 1,
 		["Claw Slash"] = 1,
 		["Dark Blast"] = 32,
 		["Pulsing Shockwave"] = 8,
@@ -286,9 +286,9 @@ _detalhes_global = {
 		["Frost Breath"] = 16,
 		["Mangle (Cat)"] = 1,
 		["Freezing Breath"] = 16,
-		["Curse of Mending"] = 32,
+		["Pyrobuffet"] = 4,
 		["Shadow Whip"] = 32,
-		["Leeching Swarm"] = 8,
+		["Rapid Shot"] = 1,
 		["Poison Bolt"] = 8,
 		["Smite"] = 2,
 		["Deadly Poison"] = 8,
@@ -304,7 +304,7 @@ _detalhes_global = {
 		["Choking Cloud"] = 8,
 		["Burning Winds"] = 4,
 		["Vortex"] = 64,
-		["Plague Strike"] = 1,
+		["Sear Beam"] = 4,
 		["Locust Swarm"] = 8,
 		["Gouge"] = 1,
 		["Ravenous Claw"] = 1,
@@ -323,7 +323,7 @@ _detalhes_global = {
 		["Paralyzed"] = 8,
 		["Shadow Axe"] = 32,
 		["Withering Strike"] = 1,
-		["Knockdown"] = 1,
+		["Lumberjack Slam"] = 1,
 		["Ice Shard"] = 16,
 		["Shiver"] = 32,
 		["Curse of Agony"] = 32,
@@ -399,9 +399,9 @@ _detalhes_global = {
 	["displays_by_spec"] = {
 	},
 	["plugin_window_pos"] = {
-		["y"] = 41.30995178222656,
-		["x"] = -278.975341796875,
-		["point"] = "RIGHT",
+		["y"] = 41.30984497070313,
+		["x"] = 17.04299926757813,
+		["point"] = "CENTER",
 		["scale"] = 1,
 	},
 	["last_changelog_size"] = 9746,
@@ -447,6 +447,8 @@ _detalhes_global = {
 		[3114] = "Razormane Battleguard",
 		[3051] = "Supervisor Fizsprocket",
 		[3115] = "Dustwind Harpy",
+		[3102] = "Felstalker",
+		[3130] = "Thunder Lizard",
 		[2989] = "Bael'dun Digger",
 		[3255] = "Sunscale Screecher",
 		[3125] = "Clattering Scorpid",
@@ -474,11 +476,11 @@ _detalhes_global = {
 		[3122] = "Bloodtalon Taillasher",
 		[3281] = "Sarkoth",
 		[3104] = "Makrura Shellhide",
-		[3130] = "Thunder Lizard",
+		[2964] = "Windfury Sorceress",
 		[8554] = "Chief Sharptusk Thornmantle",
 		[3103] = "Makrura Clacker",
 		[3416] = "Savannah Matriarch",
-		[3102] = "Felstalker",
+		[2965] = "Windfury Matriarch",
 		[3116] = "Dustwind Pillager",
 		[2951] = "Palemane Poacher",
 		[5826] = "Geolord Mottle",
@@ -495,10 +497,11 @@ _detalhes_global = {
 	["spell_pool"] = {
 		["Corruption"] = 9,
 		["Charge"] = 1,
+		["Healing Wave"] = 7,
 		["Bloodrage"] = 1,
 		["Aspect of the Hawk"] = 3,
 		["Immolate"] = 9,
-		["Serpent Sting"] = 3,
+		["Mark of the Wild"] = 11,
 		["Stoneskin"] = 7,
 		["Overpower"] = 1,
 		["Spirit"] = 11,
@@ -520,11 +523,11 @@ _detalhes_global = {
 		["War Stomp"] = 11,
 		["Earth Shock"] = 7,
 		["Healing Touch"] = 11,
-		["Battle Shout"] = 1,
+		["Rend"] = 1,
 		["Furious Howl"] = 3,
 		["Armor"] = 3,
 		["Auto Shot"] = 3,
-		["Rend"] = 1,
+		["Tame Surf Crawler"] = 3,
 		["Hunter's Mark"] = 3,
 		["Sapta Sight"] = 7,
 		["Growl"] = 11,
@@ -546,10 +549,10 @@ _detalhes_global = {
 		["Trap"] = 3,
 		["Charge Stun"] = 1,
 		["!Melee"] = 11,
-		["Tame Surf Crawler"] = 3,
+		["Battle Shout"] = 1,
 		["Tame Armored Scorpid"] = 3,
 		["Rejuvenation"] = 11,
-		["Mark of the Wild"] = 11,
+		["Serpent Sting"] = 3,
 		["Thorns"] = 11,
 	},
 	["shield_spellid_cache"] = {
@@ -1608,7 +1611,7 @@ _detalhes_global = {
 						["textL_outline"] = false,
 						["textR_outline_small"] = true,
 						["textL_outline_small"] = true,
-						["percent_type"] = 1,
+						["show_faction_icon"] = true,
 						["fixed_text_color"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1646,7 +1649,7 @@ _detalhes_global = {
 							["enabled"] = false,
 							["texture"] = "ThreatPlatesBorder",
 						},
-						["textL_enable_custom_text"] = false,
+						["percent_type"] = 1,
 						["textL_translit_text"] = false,
 						["height"] = 19,
 						["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
@@ -1656,7 +1659,7 @@ _detalhes_global = {
 							["left"] = 0,
 							["between"] = 1,
 						},
-						["show_faction_icon"] = true,
+						["textL_enable_custom_text"] = false,
 						["overlay_color"] = {
 							0.7, -- [1]
 							0.7, -- [2]
@@ -2096,7 +2099,7 @@ _detalhes_global = {
 						["textL_outline"] = false,
 						["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
 						["textL_outline_small"] = true,
-						["textL_enable_custom_text"] = false,
+						["percent_type"] = 1,
 						["fixed_text_color"] = {
 							1, -- [1]
 							1, -- [2]
@@ -2122,7 +2125,7 @@ _detalhes_global = {
 							["enabled"] = false,
 							["texture"] = "ThreatPlatesBorder",
 						},
-						["show_faction_icon"] = true,
+						["textL_enable_custom_text"] = false,
 						["textL_translit_text"] = false,
 						["texture_custom_file"] = "Interface\\",
 						["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
@@ -2132,7 +2135,7 @@ _detalhes_global = {
 							["left"] = 0,
 							["between"] = 1,
 						},
-						["percent_type"] = 1,
+						["show_faction_icon"] = true,
 						["overlay_color"] = {
 							0.7, -- [1]
 							0.7, -- [2]
@@ -2308,11 +2311,11 @@ _detalhes_global = {
 					0, -- [3]
 					0.125, -- [4]
 				},
-				["ROGUE"] = {
-					0.248046875, -- [1]
-					0.37109375, -- [2]
-					0, -- [3]
-					0.125, -- [4]
+				["PALADIN"] = {
+					0, -- [1]
+					0.125, -- [2]
+					0.25, -- [3]
+					0.375, -- [4]
 				},
 				["MAGE"] = {
 					0.125, -- [1]
@@ -2350,11 +2353,11 @@ _detalhes_global = {
 					0.125, -- [3]
 					0.25, -- [4]
 				},
-				["SHAMAN"] = {
-					0.125, -- [1]
-					0.248046875, -- [2]
-					0.125, -- [3]
-					0.25, -- [4]
+				["ROGUE"] = {
+					0.248046875, -- [1]
+					0.37109375, -- [2]
+					0, -- [3]
+					0.125, -- [4]
 				},
 				["UNKNOW"] = {
 					0.25, -- [1]
@@ -2368,11 +2371,11 @@ _detalhes_global = {
 					0.125, -- [3]
 					0.25, -- [4]
 				},
-				["PALADIN"] = {
-					0, -- [1]
-					0.125, -- [2]
-					0.25, -- [3]
-					0.375, -- [4]
+				["SHAMAN"] = {
+					0.125, -- [1]
+					0.248046875, -- [2]
+					0.125, -- [3]
+					0.25, -- [4]
 				},
 				["Alliance"] = {
 					0.248046875, -- [1]
@@ -2463,10 +2466,10 @@ _detalhes_global = {
 					1, -- [2]
 					0.25, -- [3]
 				},
-				["PET"] = {
-					0.3, -- [1]
+				["UNGROUPPLAYER"] = {
+					0.4, -- [1]
 					0.4, -- [2]
-					0.5, -- [3]
+					0.4, -- [3]
 				},
 				["DRUID"] = {
 					1, -- [1]
@@ -2534,20 +2537,20 @@ _detalhes_global = {
 					0.0196, -- [3]
 					1, -- [4]
 				},
-				["SELF"] = {
-					0.89019, -- [1]
-					0.32156, -- [2]
-					0.89019, -- [3]
+				["PET"] = {
+					0.3, -- [1]
+					0.4, -- [2]
+					0.5, -- [3]
 				},
 				["ARENA_GREEN"] = {
 					0.4, -- [1]
 					1, -- [2]
 					0.4, -- [3]
 				},
-				["UNGROUPPLAYER"] = {
-					0.4, -- [1]
-					0.4, -- [2]
-					0.4, -- [3]
+				["SELF"] = {
+					0.89019, -- [1]
+					0.32156, -- [2]
+					0.89019, -- [3]
 				},
 				["Hunter"] = {
 					0.67, -- [1]
@@ -4031,7 +4034,7 @@ _detalhes_global = {
 	["data_sync"] = false,
 	["tutorial"] = {
 		["unlock_button"] = 4,
-		["main_help_button"] = 11335,
+		["main_help_button"] = 11359,
 		["ATTRIBUTE_SELECT_TUTORIAL1"] = true,
 		["MIN_COMBAT_TIME"] = true,
 		["STREAMER_FEATURES_POPUP1"] = true,
@@ -4059,7 +4062,7 @@ _detalhes_global = {
 		["HISTORYPANEL_TUTORIAL"] = true,
 		["bookmark_tutorial"] = false,
 		["DETAILS_INFO_TUTORIAL2"] = 10,
-		["logons"] = 11335,
+		["logons"] = 11359,
 	},
 	["show_warning_id1"] = true,
 	["mythic_plus"] = {

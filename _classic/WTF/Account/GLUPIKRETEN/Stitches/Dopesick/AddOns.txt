@@ -83,3 +83,6 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 WideQuestLogPlus: enabled
 Deathlog: enabled
+RareScanner: enabled
+SortBags: enabled
+TradeSkillMaster_AppHelper: enabled
