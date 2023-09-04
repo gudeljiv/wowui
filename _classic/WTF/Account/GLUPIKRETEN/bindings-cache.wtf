@@ -153,3 +153,4 @@ bind ALT-G Open/Close LFGBulletinBoard
 bind SHIFT-S CLICK RingMenuRingFrame1Button2:1
 bind ALT-S CLICK RingMenuRingFrame1Button3:1
 bind CTRL-SHIFT-R TOGGLEFPS
+bind ALT-H TOGGLEFARMHUD

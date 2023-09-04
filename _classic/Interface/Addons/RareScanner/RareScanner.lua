@@ -439,8 +439,12 @@ function scanner_button:ShowButton()
 
 		-- show model
 		if (self.displayID and RSConfigDB.IsDisplayingModel()) then
-			self.ModelView:SetDisplayInfo(self.displayID)
-			self.ModelView:Show()
+			self.ModelView:SetCreature(self.npcID, self.displayID)
+			
+			C_Timer.After(1, function()
+				self.ModelView:SetCreature(self.npcID, self.displayID)
+				self.ModelView:Show() 
+			end)
 		else
 			self.ModelView:Hide()
 		end

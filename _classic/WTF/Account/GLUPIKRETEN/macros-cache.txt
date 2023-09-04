@@ -1,9 +1,9 @@
-VER 3 0000000000000012 " " "136173"
-/click BehindTarget
-END
 VER 3 0000000000000011 " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000012 " " "136173"
+/click BehindTarget
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -12,7 +12,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:4540
 /castsequence [combat] reset=combat item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"

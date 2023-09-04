@@ -1,0 +1,16 @@
+## Interface: 100105
+## Interface-Wrath: 30402
+## Interface-Classic: 11403
+## Title: HizurosSharedTools
+## Notes: My little shared tools library for my addons
+## Author: Hizuro
+## IconTexture: 986485
+## Version: r20
+## SavedVariables:
+## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibColors-1.0
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibColors-1.0\LibColors-1.0.lua
+
+HizurosSharedTools.lua

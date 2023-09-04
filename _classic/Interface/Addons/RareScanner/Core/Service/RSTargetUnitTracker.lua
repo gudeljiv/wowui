@@ -139,6 +139,9 @@ local function CheckUnits(rareScannerButton)
 
 	-- Gets NPCs in the current map
 	local npcIDs, mapID, newMap = GetMapNpcs()
+	if (not npcIDs) then
+		return
+	end
 	
 	if (checkUnitsRoutine and checkUnitsRoutine:IsRunning()) then
 		KeepRunningRoutine(rareScannerButton, npcIDs, mapID)
@@ -146,17 +149,15 @@ local function CheckUnits(rareScannerButton)
 	end
 	
 	-- Gets MAPID from players position
-	if (npcIDs) then
-		-- Launches new routine
-		if (newMap) then
-			if (not checkUnitsRoutine) then
-				checkUnitsRoutine = RSRoutines.LoopIndexRoutineNew()
-			end
-			checkUnitsRoutine:Init(function() return npcIDs end, 10)
+	-- Launches new routine
+	if (newMap) then
+		if (not checkUnitsRoutine) then
+			checkUnitsRoutine = RSRoutines.LoopIndexRoutineNew()
 		end
-		
-		checkUnitsRoutine:Reset()
+		checkUnitsRoutine:Init(function() return npcIDs end, 10)
 	end
+	
+	checkUnitsRoutine:Reset()
 end
 
 ---============================================================================
