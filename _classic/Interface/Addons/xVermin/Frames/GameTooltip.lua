@@ -171,12 +171,17 @@ local function HandleUnit(self, ...)
 		local specIcon = ''
 
 		local name, realm = UnitName(unit)
+		mainSpeed, offSpeed = UnitAttackSpeed(unit);
 
 		if UnitIsAFK(unit) then
 			self:AppendText('|cff00ff00 <' .. CHAT_MSG_AFK .. '>|r')
 		elseif UnitIsDND(unit) then
 			self:AppendText('|cff00ff00 <' .. DEFAULT_DND_MESSAGE .. '>|r')
 		end
+
+		-- add attack speed
+		-- if offSpeed ~= nil then os = "/" .. xVermin:Round(offSpeed, 2) else os = "" end
+		-- self:AddLine('Attack speed: ' .. xVermin:Round(mainSpeed, 2) .. os)
 
 		-- Move the healthbar inside the tooltip
 		if GameTooltipStatusBar:IsShown() then
@@ -205,6 +210,7 @@ local function HandleUnit(self, ...)
 			self:SetBeautyBorderTexture('white')
 			self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
 		end
+
 	end
 end
 
