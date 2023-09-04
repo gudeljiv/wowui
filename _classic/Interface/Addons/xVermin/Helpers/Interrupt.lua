@@ -9,80 +9,171 @@ local HandleRotationFrame = function(on)
 	return
 end
 
-local HandleUnit = function(unit)
-	if xVermin.IfUnitIsCastingInteruptable(unit) then
-		-- WARRIOR INTERRUPT
-		if (xVermin.Class == 'WARRIOR') then
-			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
-			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
-			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-			if defensive then
-				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
-				end
-			end
-			if berserker then
-				if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
-					HandleRotationFrame(true)
-				end
-			end
-			if battle and IsEquippedItemType('Shields') then
-				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
-				end
-			end
-		end
+-- local HandleUnit = function(unit)
 
-		-- PALADIN INTERRUPT
-		if (xVermin.Class == 'PALADIN') then
-			if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
-				HandleRotationFrame(true)
-			end
-		end
+-- 	-- print(unit, xVermin.IfUnitIsCastingInteruptable(unit))
 
-		-- DRUID INTERRUPT
-		if (xVermin.Class == 'DRUID') then
-			local _, bear = GetShapeshiftFormInfo(1) -- ako je bear form
-			local _, aquatic = GetShapeshiftFormInfo(2) -- ako je aquatic form
-			local _, cat = GetShapeshiftFormInfo(3) -- ako je cat form
-			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
-			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
-			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-			if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
-				HandleRotationFrame(true)
-			end
-		-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
-		-- 	HandleRotationFrame(true)
-		-- end
-		end
+-- 	if xVermin.IfUnitIsCastingInteruptable(unit) then
+-- 		-- WARRIOR INTERRUPT
+-- 		if (xVermin.Class == 'WARRIOR') then
+-- 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
+-- 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
+-- 			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
+-- 			if defensive then
+-- 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+-- 					HandleRotationFrame(true)
+-- 				end
+-- 			end
+-- 			if berserker then
+-- 				if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
+-- 					HandleRotationFrame(true)
+-- 				end
+-- 			end
+-- 			if battle and IsEquippedItemType('Shields') then
+-- 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+-- 					HandleRotationFrame(true)
+-- 				end
+-- 			end
+-- 		end
 
-		-- DEATHKNIGHT INTERRUPT
-		if xVermin.Class == 'DEATHKNIGHT' then
-			if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', unit) == 1 then
-				HandleRotationFrame(true)
-			end
-		end
+-- 		-- PALADIN INTERRUPT
+-- 		if (xVermin.Class == 'PALADIN') then
+-- 			if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 		end
 
-		-- SHAMAN INTERRUPT
-		if xVermin.Class == 'SHAMAN' then
-			if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
-				HandleRotationFrame(true)
-			end
-		end
+-- 		-- DRUID INTERRUPT
+-- 		if (xVermin.Class == 'DRUID') then
+-- 			local _, bear = GetShapeshiftFormInfo(1) -- ako je bear form
+-- 			local _, aquatic = GetShapeshiftFormInfo(2) -- ako je aquatic form
+-- 			local _, cat = GetShapeshiftFormInfo(3) -- ako je cat form
+-- 			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
+-- 			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
+-- 			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
+-- 			if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 		-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
+-- 		-- 	HandleRotationFrame(true)
+-- 		-- end
+-- 		end
 
-		-- HUNTER INTERRUPT
-		if xVermin.Class == 'HUNTER' then
-			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
-				HandleRotationFrame(true)
-			end
-			if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
-				HandleRotationFrame(true)
+-- 		-- DEATHKNIGHT INTERRUPT
+-- 		if xVermin.Class == 'DEATHKNIGHT' then
+-- 			if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', unit) == 1 then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 		end
+
+-- 		-- SHAMAN INTERRUPT
+-- 		if xVermin.Class == 'SHAMAN' then
+-- 			if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 		end
+
+-- 		-- HUNTER INTERRUPT
+-- 		if xVermin.Class == 'HUNTER' then
+-- 			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 			if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
+-- 				HandleRotationFrame(true)
+-- 			end
+-- 		end
+-- 	else
+-- 		HandleRotationFrame(false)
+-- 	end
+-- end
+
+
+xVermin.Interrupt = function(input)
+
+	if input and input == false then 
+		HandleRotationFrame(false)
+		return 
+	end
+
+	local HRF = false
+
+	-- WARRIOR INTERRUPT
+	if (xVermin.Class == 'WARRIOR') then
+		local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
+		local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
+		local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
+		if defensive then
+			if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+				HRF = true
 			end
 		end
-	else
+		if berserker then
+			if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
+				HRF = true
+			end
+		end
+		if battle and IsEquippedItemType('Shields') then
+			if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
+				HRF = true
+			end
+		end
+	end
+
+	-- PALADIN INTERRUPT
+	if (xVermin.Class == 'PALADIN') then
+		if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
+			HRF = true
+		end
+	end
+
+	-- DRUID INTERRUPT
+	if (xVermin.Class == 'DRUID') then
+		local _, bear = GetShapeshiftFormInfo(1) -- ako je bear form
+		local _, aquatic = GetShapeshiftFormInfo(2) -- ako je aquatic form
+		local _, cat = GetShapeshiftFormInfo(3) -- ako je cat form
+		local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
+		local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
+		local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
+		if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
+			HRF = true
+		end
+	-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
+	-- 	HRF = true
+	-- end
+	end
+
+	-- DEATHKNIGHT INTERRUPT
+	if xVermin.Class == 'DEATHKNIGHT' then
+		if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', unit) == 1 then
+			HRF = true
+		end
+	end
+
+	-- SHAMAN INTERRUPT
+	if xVermin.Class == 'SHAMAN' then
+		if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
+			HRF = true
+		end
+	end
+
+	-- HUNTER INTERRUPT
+	if xVermin.Class == 'HUNTER' then
+		if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
+			HRF = true
+		end
+		if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
+			HRF = true
+		end
+	end
+
+	if HRF then 
+		HandleRotationFrame(true)
+	else 
 		HandleRotationFrame(false)
 	end
+
 end
+xInterrupt = xVermin.Interrupt
 
 -- CheckInteractDistance
 -- 1 = Inspect, 28 yards
@@ -92,12 +183,8 @@ end
 UIParent:HookScript(
 	'OnUpdate',
 	function(self)
-		if UnitExists('focus') then
-			HandleUnit('focus')
-		elseif UnitExists('target') then
-			HandleUnit('target')
-		else
-			return
+		if not UnitExists('target') then
+			HandleRotationFrame(false)
 		end
 	end
 )

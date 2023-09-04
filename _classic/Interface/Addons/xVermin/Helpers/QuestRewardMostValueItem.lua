@@ -24,6 +24,7 @@ hooksecurefunc(
 
 function QUEST_COMPLETE()
 	local firstItem = _G.QuestInfoRewardsFrameQuestInfoItem1
+	print(firstItem)
 	if not firstItem then
 		return
 	end
@@ -46,6 +47,8 @@ function QUEST_COMPLETE()
 		end
 	end
 
+	print(bestItem)
+
 	if bestItem then
 		local btn = _G['QuestInfoRewardsFrameQuestInfoItem' .. bestItem]
 		if btn and btn.type == 'choice' then
@@ -57,6 +60,6 @@ function QUEST_COMPLETE()
 end
 
 local f = CreateFrame('Frame')
-f:RegisterEvent('QUEST_COMPLETE', QUEST_COMPLETE())
-f:RegisterEvent('QUEST_ITEM_UPDATE', QUEST_COMPLETE())
-f:RegisterEvent('GET_ITEM_INFO_RECEIVED', QUEST_COMPLETE())
+f:RegisterEvent('QUEST_COMPLETE', QUEST_COMPLETE)
+f:RegisterEvent('QUEST_ITEM_UPDATE', QUEST_COMPLETE)
+f:RegisterEvent('GET_ITEM_INFO_RECEIVED', QUEST_COMPLETE)

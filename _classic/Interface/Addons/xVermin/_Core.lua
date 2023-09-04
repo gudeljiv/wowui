@@ -200,9 +200,16 @@ xVermin.HasValue = function(table, value)
 	return false
 end
 
+local CastingInfo = _G.CastingInfo
+local ChannelInfo = _G.ChannelInfo
+
 xVermin.IfUnitIsCastingInteruptable = function(unit)
-	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
-	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
+
+	-- print("1. ", CastingInfo(unit))
+	-- print("2.", ChannelInfo(unit))
+
 	if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
 		return true
 	end
@@ -211,8 +218,8 @@ end
 xUnitCastingInteruptable = xVermin.IfUnitIsCastingInteruptable
 
 xVermin.IfUnitIsCastingNonInteruptable = function(unit)
-	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
-	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 	if (name_casting ~= nil and notInterruptible_casting) or (name_channeling ~= nil and notInterruptible_chanelling) then
 		return true
 	end
@@ -221,8 +228,8 @@ end
 xUnitCastingNonInteruptable = xVermin.IfUnitIsCastingNonInteruptable
 
 xVermin.IfUnitIsCasting = function(unit)
-	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
-	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 	if name_casting ~= nil or name_channeling ~= nil then
 		return true
 	end

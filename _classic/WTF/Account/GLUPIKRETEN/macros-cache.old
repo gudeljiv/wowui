@@ -1,9 +1,9 @@
-VER 3 0000000000000012 " " "136173"
-/click BehindTarget
-END
 VER 3 0000000000000011 " " "136106"
 /inspect
 /run SortBags()
+END
+VER 3 0000000000000012 " " "136173"
+/click BehindTarget
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -12,7 +12,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4604
+/use [nocombat]item:117
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
@@ -42,10 +42,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run FramerateLabel:SetScale(0.65)
-/run FramerateText:SetScale(0.65)
-/run FramerateLabel:ClearAllPoints()
-/run FramerateLabel:SetPoint("TOP", CustomContainer_Combat, "TOP", -15, -20)
+/run print(CastingInfo("target"))
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

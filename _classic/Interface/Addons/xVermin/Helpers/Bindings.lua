@@ -319,7 +319,7 @@ local function ClearAllBindings()
 	SetBinding('CTRL-F10', 'NONE', 1)
 	SetBinding('CTRL-F11', 'NONE', 1)
 	SetBinding('CTRL-F12', 'NONE', 1)
-
+	
 	FixBindings()
 	SaveBindings(1)
 end
