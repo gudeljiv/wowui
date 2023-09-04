@@ -43,7 +43,7 @@ data = {
             # {"name": "devastate", "type": "GetSpellTexture", "id": 20243, "key": "2", "modifier": "lshift"},
             # {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "2", "modifier": "lshift"},
             {"name": "berserker rage", "type": "GetSpellTexture", "id": 18499, "key": "4", "modifier": "lshift"},
-            {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "5", "modifier": "lshift"},
+            # {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "5", "modifier": "lshift"},
             {"name": "rend", "type": "GetSpellTexture", "id": 772, "key": "r", "modifier": "lshift"},
             # {"name": "victory rush", "type": "GetSpellTexture", "id": 34428, "key": "e", "modifier": "lshift"},
             # {"name": "disarm", "type": "GetSpellTexture", "id": 676, "key": "e", "modifier": "lshift"},
@@ -61,7 +61,7 @@ data = {
             {"name": "thunder clap", "type": "GetSpellTexture", "id": 6343, "key": "e"},
             {"name": "shield slam", "type": "GetSpellTexture", "id": 23922, "key": "4"},
             # {"name": "concussion blow", "type": "GetSpellTexture", "id": 12809, "key": "8"},
-            # {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "1"},
+            {"name": "hamstring", "type": "GetSpellTexture", "id": 1715, "key": "1"},
             # {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
         ],
         "secondary": [

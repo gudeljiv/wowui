@@ -117,6 +117,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -232,8 +233,6 @@ OmniCC4Config = {
 			["yOff"] = 0,
 		},
 	},
-	["version"] = "8.1.1",
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -244,4 +243,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+	["engine"] = "AniUpdater",
 }

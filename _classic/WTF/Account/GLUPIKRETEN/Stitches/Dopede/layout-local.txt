@@ -83,3 +83,10 @@ X: 0
 Y: -20
 W: 200
 H: 50
+Frame: TellMeWhen_ConfigWarning
+FrameLevel: 1
+Anchor: CENTER
+X: 40
+Y: 268
+W: 330
+H: 125
