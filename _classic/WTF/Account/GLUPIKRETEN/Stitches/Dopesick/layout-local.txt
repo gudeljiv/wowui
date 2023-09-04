@@ -27,6 +27,13 @@ X: -273
 Y: -60
 W: 232
 H: 100
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: RIGHT
+X: -486
+Y: 115
+W: 128
+H: 64
 Frame: ACP_AddonList
 FrameLevel: 0
 Anchor: CENTER
@@ -41,13 +48,6 @@ X: 0
 Y: -20
 W: 200
 H: 50
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: RIGHT
-X: -486
-Y: 115
-W: 324
-H: 131
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: CENTER

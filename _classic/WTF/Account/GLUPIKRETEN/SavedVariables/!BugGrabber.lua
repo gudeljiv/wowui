@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 10128,
 	["lastSanitation"] = 3,
+	["session"] = 10131,
 	["errors"] = {
 		{
 			["message"] = "Interface/SharedXML/SharedTooltipTemplates.lua:276: attempt to call method 'GetRGB' (a nil value)",
@@ -148,28 +148,44 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [18]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2006: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/03 12:28:52",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2006: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10126,
-			["counter"] = 5,
-		}, -- [19]
-		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
 			["time"] = "2023/09/04 16:26:25",
 			["locals"] = "(*temporary) = \"bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10127,
 			["counter"] = 2,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nMainbar' tried to call the protected function 'ActionButton10:Show()'.",
 			["time"] = "2023/09/04 12:12:56",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:368: in function <Interface/FrameXML/ActionButton.lua:342>\n[string \"=[C]\"]: in function `ActionButton_Update'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:705: in function `ActionButton_OnEvent'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:208: in function <Interface/FrameXML/ActionButton.lua:205>",
-			["session"] = 10128,
-			["counter"] = 14,
+			["session"] = 10129,
+			["counter"] = 15,
+		}, -- [20]
+		{
+			["message"] = "bad argument #2 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetZoom(zoomFactor))",
+			["time"] = "2023/09/04 18:22:21",
+			["locals"] = "(*temporary) = Minimap {\n 0 = <userdata>\n GetRight = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:227\n beautyShadow = <table> {\n }\n GetLeft = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:226\n EnableMouse = <function> defined =[C]:-1\n SetAlpha = <function> defined =[C]:-1\n GetBottom = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:228\n GetEffectiveScale = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:225\n GetWidth = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:221\n SetZoom = <function> defined =[C]:-1\n GetSize = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:223\n SetMaskTexture = <function> defined =[C]:-1\n beautyBorder = <table> {\n }\n GetTop = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:229\n GetHeight = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:222\n timer = 0\n SetPlayerTexture = <function> defined =[C]:-1\n GetCenter = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:224\n CreateTexture = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:185\n}\n(*temporary) = -1\n(*temporary) = \"outside of expected range 0 to 4294967295 - Usage: self:SetZoom(zoomFactor)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetZoom'\n[string \"@Interface/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua\"]:427: in function `IsMinimapInside'\n[string \"@Interface/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua\"]:70: in function <...e/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua:39>\n[string \"=[C]\"]: ?",
+			["session"] = 10129,
+			["counter"] = 6,
 		}, -- [21]
+		{
+			["message"] = "Interface/FrameXML/BuffFrame.lua:429: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DebuffButton1:SetPoint.",
+			["time"] = "2023/09/04 18:23:39",
+			["locals"] = "(*temporary) = DebuffButton1 {\n 0 = <userdata>\n Shadow = DebuffButton1Shadow {\n }\n symbol = FontString {\n }\n parent = BuffFrame {\n }\n duration = DebuffButton1Duration {\n }\n unit = \"player\"\n count = DebuffButton1Count {\n }\n filter = \"HARMFUL\"\n expirationTime = 17464.779000\n offsetY = 60\n timeLeft = 57.967000\n timeMod = 1\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = BuffFrame {\n 0 = <userdata>\n BuffAlphaValue = 0.585606\n numEnchants = 0\n BuffFrameFlashState = 1\n BuffFrameFlashTime = 0.443994\n BuffFrameUpdateTime = 0.016994\n numConsolidated = 0\n bottomEdgeExtent = 148\n}\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = 0\n(*temporary) = -60\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface/FrameXML/BuffFrame.lua\"]:429: in function <Interface/FrameXML/BuffFrame.lua:410>\n[string \"=[C]\"]: in function `DebuffButton_UpdateAnchors'\n[string \"@Interface/FrameXML/BuffFrame.lua\"]:171: in function <Interface/FrameXML/BuffFrame.lua:135>\n[string \"=[C]\"]: in function `AuraButton_Update'\n[string \"@Interface/FrameXML/BuffFrame.lua\"]:115: in function `BuffFrame_Update'\n[string \"@Interface/FrameXML/SettingDefinitions/InterfaceOverrides.lua\"]:80: in function <...e/FrameXML/SettingDefinitions/InterfaceOverrides.lua:79>\n[string \"=[C]\"]: ?\n[string \"@Interface/SharedXML/CallbackRegistry.lua\"]:178: in function <Interface/SharedXML/CallbackRegistry.lua:177>\n[string \"=[C]\"]: ?\n[string \"@Interface/SharedXML/CallbackRegistry.lua\"]:181: in function `TriggerEvent'\n[string \"@Interface/SharedXML/CvarUtil.lua\"]:114: in function <Interface/SharedXML/CvarUtil.lua:106>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/SharedXML/ClassicCvarUtil.lua\"]:7: in function <Interface/SharedXML/ClassicCvarUtil.lua:3>\n[string \"=[C]\"]: in function `SetCVar'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:8962: in function `RefreshAutoToggle'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:2864: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:4597: in function <Interface/AddOns/Plater/Plater.lua:4593>",
+			["session"] = 10129,
+			["counter"] = 8,
+		}, -- [22]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2006: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/03 12:28:52",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2006: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10131,
+			["counter"] = 6,
+		}, -- [23]
 	},
 }
