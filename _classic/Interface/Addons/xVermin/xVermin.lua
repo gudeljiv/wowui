@@ -411,3 +411,4 @@ f:SetScript(
 -- 	GameTooltip_ClearMoney(self);
 -- 	GameTooltip_ClearStatusBars(self);
 -- end
+

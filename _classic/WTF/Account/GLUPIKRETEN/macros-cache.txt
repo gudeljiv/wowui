@@ -7,22 +7,22 @@ VER 3 0000000000000012 " " "136173"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2070
-/castsequence [combat] reset=combat item:118
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:2287
 /cast feed pet
-/use item:0
+/use item:2287
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:0
 END
 VER 3 0000000000000019 "prowl" "INV_Misc_QuestionMark"
 #showtooltip Prowl
@@ -42,7 +42,10 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(UnitSpeed)
+/run FramerateLabel:SetScale(0.65)
+/run FramerateText:SetScale(0.65)
+/run FramerateLabel:ClearAllPoints()
+/run FramerateLabel:SetPoint("TOP", CustomContainer_Combat, "TOP", -15, -20)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
