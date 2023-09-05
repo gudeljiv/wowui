@@ -343,12 +343,6 @@ function addon:DisplayCastbar(castbar, unitID)
         castbar.Spark:SetPoint("CENTER", castbar, "LEFT", 0, 0)
     end
 
-	if not cast.isUninterruptible then
-		xInterrupt(true)
-	else 
-		xInterrupt(false)
-	end
-
     castbar:SetParent(parentFrame)
     castbar.Flash:Hide()
     castbar:SetAlpha(1)

@@ -81,7 +81,7 @@ TradeSkillMaster: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-WideQuestLogPlus: enabled
+WideQuestLogPlus: disabled
 Deathlog: enabled
 RareScanner: enabled
 SortBags: enabled

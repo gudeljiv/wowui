@@ -5,6 +5,7 @@ END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
 /startattack
+/cast bloodrage
 /cast [@focus,exists][][stance:1/2]Shield Bash
 /cast [@focus,exists][][stance:3]Pummel
 END
@@ -55,4 +56,18 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:3] Recklessness
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
+END
+VER 3 000000000100001B " " "134400"
+/equip [noequipped:shields] Thun'grim's Axe; Cauldron Stirrer
+/equip [noequipped:shields] Tribal Warrior's Shield
+END
+VER 3 000000000100001C " " "134400"
+#showtooltip Thunder Clap
+/cast [nostance:1,nocombat] Battle Stance;
+/cast Thunder Clap
+END
+VER 3 000000000100001D " " "134400"
+#showtooltip Overpower
+/cast [nostance:1,nocombat] Battle Stance;
+/cast Overpower
 END

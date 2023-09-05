@@ -1,6 +1,7 @@
-## v4.13.13 Changes
+## v4.13.14 Changes
 
-* [All] Fixed error when using invalid source within convert()
-* [Classic] Gold graph will now round to the nearest 1g instead of 100g
+* [All] Fixed account syncing error while in combat
+* [Retail] Support for 10.1.7
+* [Classic] Fixed error with Enchanting UI
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

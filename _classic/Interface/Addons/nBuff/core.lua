@@ -61,7 +61,8 @@ SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
 
 -- TemporaryEnchantFrame ...
 TempEnchant1:ClearAllPoints()
-TempEnchant1:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -15, 0)
+-- TempEnchant1:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -15, 0)
+TempEnchant1:SetPoint("TOPRIGHT", MinimapCluster, "TOPLEFT", 0, -41)
 -- TempEnchant1.SetPoint = function() end
 
 TempEnchant2:ClearAllPoints()

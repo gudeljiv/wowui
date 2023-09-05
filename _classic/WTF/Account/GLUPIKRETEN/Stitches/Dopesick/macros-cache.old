@@ -5,6 +5,7 @@ END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
 /startattack
+/cast bloodrage
 /cast [@focus,exists][][stance:1/2]Shield Bash
 /cast [@focus,exists][][stance:3]Pummel
 END
@@ -45,18 +46,10 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /cast Revenge
 /use 10
 END
-VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Vigilance
-/cast [@focus,exists] Vigilance
-END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
 /cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
 /cast [nocombat] Charge; [combat] Intercept
-END
-VER 3 0000000001000019 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 8
-/use 8
 END
 VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -64,18 +57,17 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 000000000100001C " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]14;[spec:2]15
+VER 3 000000000100001B " " "134400"
+/equip [noequipped:shields] Thun'grim's Axe; Severing Axe of the Eagle
+/equip [noequipped:shields] Tribal Warrior's Shield
 END
-VER 3 000000000100001D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use [spec:1]13;[spec:2]10
-/use Loatheb's Shadow
-/use Blood Fury
+VER 3 000000000100001C " " "134400"
+#showtooltip Thunder Clap
+/cast [nostance:1,nocombat] Battle Stance;
+/cast Thunder Clap
 END
-VER 3 000000000100001E " " "134400"
-#showtooltip
-/startattack
-/cast [@mouseover,exists][]Heroic Throw
+VER 3 000000000100001D " " "134400"
+#showtooltip Overpower
+/cast [nostance:1,nocombat] Battle Stance;
+/cast Overpower
 END

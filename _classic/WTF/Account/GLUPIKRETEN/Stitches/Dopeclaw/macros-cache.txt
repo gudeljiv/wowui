@@ -2,10 +2,6 @@ VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Healing Touch
 END
-VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Nourish
-END
 VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 #showtooltip
 /startattack
@@ -29,10 +25,6 @@ VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 /cast [noform:3] Cat Form 
 /cast Dash
 END
-VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
-#showtooltip Rejuvenation
-/cast [@focus,help,nodead] Rejuvenation
-END
 VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast [stealth] Ravage
@@ -41,23 +33,14 @@ VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
 /cast [form:1] Enrage
 /cast [form:3] Shred
 END
-VER 3 000000000100000A " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [form:1] Mangle (Bear)
-/cast [form:3] Mangle (Cat)
-/cast Innervate
-END
-VER 3 000000000100000B " " "136085"
+VER 3 000000000100000B " " "134400"
 #showtoltip 
+/startattack [form:1][form:3]
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
 END
 VER 3 000000000100000C " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,exists,nodead][] Growl
-END
-VER 3 000000000100000D " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Regrowth
 END
 VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 #showtooltip

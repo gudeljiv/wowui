@@ -458,7 +458,6 @@ function CraftDetails:SetState(craftingType, craftingQuantity)
 		CraftCreateButton:SetFrameLevel(200)
 		CraftCreateButton:DisableDrawLayer("BACKGROUND")
 		CraftCreateButton:DisableDrawLayer("ARTWORK")
-		CraftCreateButton:SetHighlightTexture(nil)
 		if self._state.canCraft then
 			CraftCreateButton:Enable()
 		else

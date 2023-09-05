@@ -139,9 +139,12 @@ local function FixBindings()
 	-- 	SetBindingClick('CTRL-F' .. i, 'RingMenuRingFrame1Button' .. i)
 	-- end
 	-- SetBindingClick('SHIFT-R', 'RingMenuRingFrame1Button1', 1)
-	SetBindingClick('SHIFT-S', 'RingMenuRingFrame1Button2', 1)
-	SetBindingClick('ALT-S', 'RingMenuRingFrame1Button3', 1)
+	SetBindingClick('ALT-S', 'RingMenuRingFrame1Button5', 1)
+	SetBindingClick('SHIFT-S', 'RingMenuRingFrame1Button6', 1)
 
+	SetBinding('ALT-H', 'TOGGLEFARMHUD', 1)
+	SetBinding('ESC', 'TOGGLEGAMEMENU', 1)
+	
 	-- SetBinding('CTRL-F1', 'EXTRABARBUTTON1', 1)
 	-- SetBinding('CTRL-F2', 'EXTRABARBUTTON2', 1)
 	-- SetBinding('CTRL-F3', 'EXTRABARBUTTON3', 1)
@@ -319,6 +322,11 @@ local function ClearAllBindings()
 	SetBinding('CTRL-F10', 'NONE', 1)
 	SetBinding('CTRL-F11', 'NONE', 1)
 	SetBinding('CTRL-F12', 'NONE', 1)
+	
+	SetBinding('ESC', 'NONE', 1)
+	SetBinding('ESC', 'NONE', 2)
+	SetBinding('ALT-H', 'NONE', 1)
+	SetBinding('ALT-H', 'NONE', 2)
 	
 	FixBindings()
 	SaveBindings(1)

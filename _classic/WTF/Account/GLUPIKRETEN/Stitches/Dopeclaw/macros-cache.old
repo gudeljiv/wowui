@@ -48,7 +48,7 @@ VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 /cast Innervate
 END
 VER 3 000000000100000B " " "136085"
-#showtoltip
+#showtoltip 
 /cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
 END
 VER 3 000000000100000C " " "INV_Misc_QuestionMark"

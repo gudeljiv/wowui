@@ -142,6 +142,17 @@ function addon:StartCast(unitGUID, unitID)
     castbar._data = cast -- set ref to current cast data
     self:CheckCastModifiers(unitID, cast)
     self:DisplayCastbar(castbar, unitID)
+
+	if castbar._data.isUninterruptible then 
+		-- print("not interruptable")
+		-- xInterrupt(false)
+		_G.IfUnitIsCastingInteruptable = false
+	else
+		-- print("interruptable")
+		-- xInterrupt(true)
+		_G.IfUnitIsCastingInteruptable = true
+	end
+
 end
 
 function addon:StopCast(unitID, noFadeOut)
@@ -151,6 +162,9 @@ function addon:StopCast(unitID, noFadeOut)
     if not castbar.isTesting then
         self:HideCastbar(castbar, unitID, noFadeOut)
     end
+
+	-- xInterrupt(false)
+	_G.IfUnitIsCastingInteruptable = false
 
     castbar._data = nil
 end
@@ -168,6 +182,8 @@ end
 function addon:StopAllCasts(unitGUID, noFadeOut)
     for unitID, guid in pairs(activeGUIDs) do
         if guid == unitGUID then
+			-- xInterrupt(false)
+			_G.IfUnitIsCastingInteruptable = false
             self:StopCast(unitID, noFadeOut)
         end
     end

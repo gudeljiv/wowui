@@ -9,6 +9,7 @@ local Connection = TSM.Init("Service.SyncClasses.Connection")
 local L = TSM.Include("Locale").GetTable()
 local Delay = TSM.Include("Util.Delay")
 local Log = TSM.Include("Util.Log")
+local Table = TSM.Include("Util.Table")
 local TempTable = TSM.Include("Util.TempTable")
 local Event = TSM.Include("Util.Event")
 local Settings = TSM.Include("Service.Settings")
@@ -52,6 +53,7 @@ Connection:OnSettingsLoad(function()
 	for _ in Settings.SyncAccountIterator() do
 		private.isActive = true
 	end
+	Comm.SetDisconnectFunction(private.DisconnectCharacter)
 	Comm.RegisterHandler(Constants.DATA_TYPES.WHOAMI_ACCOUNT, private.WhoAmIAccountHandler)
 	Comm.RegisterHandler(Constants.DATA_TYPES.WHOAMI_ACK, private.WhoAmIAckHandler)
 	Comm.RegisterHandler(Constants.DATA_TYPES.CONNECTION_REQUEST, private.ConnectionRequestAndAckHandler)
@@ -64,7 +66,7 @@ end)
 
 Connection:OnModuleUnload(function()
 	for _, player in pairs(private.connectedCharacter) do
-		Comm.SendData(Constants.DATA_TYPES.DISCONNECT, player)
+		private.DisconnectCharacter(player)
 	end
 end)
 
@@ -79,12 +81,7 @@ function Connection.RegisterConnectionChangedCallback(handler)
 end
 
 function Connection.IsCharacterConnected(targetCharacter)
-	for _, player in pairs(private.connectedCharacter) do
-		if player == targetCharacter then
-			return true
-		end
-	end
-	return false
+	return Table.KeyByValue(private.connectedCharacter, targetCharacter) ~= nil
 end
 
 function Connection.ConnectedAccountIterator()
@@ -143,8 +140,7 @@ end
 
 function Connection.Remove(account)
 	if private.threadRunning[account] then
-		Threading.Kill(private.threadId[account])
-		private.ConnectionThreadDone(account)
+		private.KillConnectionThread(account)
 	end
 	Settings.RemoveSyncAccount(account)
 end
@@ -197,8 +193,7 @@ function private.DisconnectHandler(sourceAccount, sourceCharacter, data)
 	end
 
 	-- kill the thread and prevent it from running again for 2 seconds
-	Threading.Kill(private.threadId[sourceAccount])
-	private.ConnectionThreadDone(sourceAccount)
+	private.KillConnectionThread(sourceAccount)
 	private.suppressThreadTime[sourceAccount] = time() + 2
 end
 
@@ -445,4 +440,18 @@ function private.ChatMsgSystemEventHandler(_, msg)
 			end
 		end
 	end
+end
+
+function private.DisconnectCharacter(character)
+	local account = Table.KeyByValue(private.connectedCharacter, character)
+	if not account or not private.threadRunning[account] then
+		return
+	end
+	Comm.SendData(Constants.DATA_TYPES.DISCONNECT, character)
+	private.KillConnectionThread(account)
+end
+
+function private.KillConnectionThread(account)
+	Threading.Kill(private.threadId[account])
+	private.ConnectionThreadDone(account)
 end

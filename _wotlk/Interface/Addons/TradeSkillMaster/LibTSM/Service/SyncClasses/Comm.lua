@@ -12,6 +12,7 @@ local Log = TSM.Include("Util.Log")
 local Settings = TSM.Include("Service.Settings")
 local Constants = TSM.Include("Service.SyncClasses.Constants")
 local private = {
+	disconnectFunc = nil,
 	handler = {},
 	queuedPacket = {},
 	queuedSourceCharacter = {},
@@ -39,6 +40,10 @@ end)
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
+
+function Comm.SetDisconnectFunction(func)
+	private.disconnectFunc = func
+end
 
 function Comm.RegisterHandler(dataType, handler)
 	assert(Table.KeyByValue(Constants.DATA_TYPES, dataType) ~= nil)
@@ -90,6 +95,11 @@ function private.ProcessReceivedPacket(msg, sourceCharacter)
 		Log.Err("We own the source character")
 		Settings.ShowSyncSVCopyError()
 		return
+	end
+
+	-- In combat, so drop the connection
+	if InCombatLockdown() then
+		return private.disconnectFunc(sourceCharacter)
 	end
 
 	-- Decode and decompress
