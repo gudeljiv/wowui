@@ -44,7 +44,7 @@ MSQ:AddSkin(
 			Width = 40,
 			Height = 40,
 			DrawLayer = 'ARTWORK',
-			DrawLevel = 0
+			DrawLevel = 0,
 			-- Color = {0, 144 / 255, 1, 0.9}
 		},
 		Checked = {

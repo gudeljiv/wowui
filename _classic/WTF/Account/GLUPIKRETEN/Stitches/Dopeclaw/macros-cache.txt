@@ -11,25 +11,25 @@ VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 /cast [form:1] Enrage
 /cast [form:3] Claw
 END
-VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
+VER 3 0000000001000005 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Abolish Poison
 END
-VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
+VER 3 0000000001000006 " " "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Remove Curse
 END
-VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
+VER 3 0000000001000007 " " "134400"
 #showtooltip Dash
 /cancelform [noform:3] 
 /cast [noform:3] Cat Form 
 /cast Dash
 END
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+VER 3 0000000001000009 " " "134400"
 #showtooltip
 /cast [stealth] Ravage
 /cast [form:0][form:4] Moonfire
-/cast [form:1] Swipe (Bear)
+/cast [form:1] Swipe
 /cast [form:1] Enrage
 /cast [form:3] Shred
 END
@@ -50,4 +50,18 @@ END
 VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast [@mouseover,help,nodead][] Rejuvenation
+END
+VER 3 0000000001000013 " " "134400"
+#showtooltip Prowl
+/cancelform [noform:3] 
+/cast [noform:3] Cat Form 
+/cast Prowl
+END
+VER 3 0000000001000014 " " "134400"
+#showtooltip Bash
+/startattack
+/cancelform [noform:1] 
+/cast [noform:1] Bear Form 
+/cast [form:1] Bash
+/cast [form:1] Enrage
 END

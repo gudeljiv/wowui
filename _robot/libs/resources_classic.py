@@ -78,7 +78,7 @@ data = {
     },
     "druid": {
         "main": [
-            {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
+            # {"name": "swipe", "type": "GetSpellTexture", "id": 50256, "key": "2"},
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
             # {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
             # {"name": "savage roar", "type": "GetSpellTexture", "id": 52610, "key": "e", "modifier": "lshift"},

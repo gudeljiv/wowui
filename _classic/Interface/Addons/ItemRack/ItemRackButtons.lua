@@ -107,24 +107,59 @@ end
 
 function ItemRack.AddButton(id)
 	ItemRackUser.Buttons[id] = {}
-	local button = _G["ItemRackButton"..id]
+	local button = _G['ItemRackButton' .. id]
 	button:ClearAllPoints()
 	if ItemRack.NewAnchor and ItemRackUser.Buttons[ItemRack.NewAnchor] then
-		ItemRackUser.Buttons[id].Side = "LEFT"
+		ItemRackUser.Buttons[id].Side = 'LEFT'
 		ItemRackUser.Buttons[id].DockTo = ItemRack.NewAnchor
 		local dockinfo = ItemRack.DockInfo[ItemRackUser.Buttons[id].Side]
-		button:SetPoint("LEFT","ItemRackButton"..ItemRack.NewAnchor,"RIGHT",dockinfo.xoff*(ItemRackUser.ButtonSpacing or 4),dockinfo.yoff*(ItemRackUser.ButtonSpacing or 4))
+		button:SetPoint('LEFT', 'ItemRackButton' .. ItemRack.NewAnchor, 'RIGHT', dockinfo.xoff * (ItemRackUser.ButtonSpacing or 4), dockinfo.yoff * (ItemRackUser.ButtonSpacing or 4))
 	else
-		button:SetPoint("CENTER",UIParent,"CENTER")
+		button:SetPoint('CENTER', UIParent, 'CENTER')
 	end
 	ItemRack.NewAnchor = id
-	_G["ItemRackButton"..id.."Icon"]:SetTexture(ItemRack.GetTextureBySlot(id))
+	_G['ItemRackButton' .. id .. 'Icon']:SetTexture(ItemRack.GetTextureBySlot(id))
 	button:Show()
 	ItemRack.UpdateButtonCooldowns()
-	if id==20 then
+	if id == 20 then
 		ItemRack.UpdateCurrentSet()
 		if ItemRack.ReflectEventsRunning then
 			ItemRack.ReflectEventsRunning()
+		end
+	end
+
+	local iiid
+	if button then
+		iiid = string.match(ItemRack.GetID(id), '%d+')
+		button:CreateBeautyBorder(8)
+		if iiid and iiid ~= 0 then
+			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(iiid)
+			if (itemQuality and itemQuality > 1) then
+				local r, g, b = GetItemQualityColor(itemQuality)
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
+				button:SetBeautyBorderColor(r, g, b)
+			else
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
+			if itemLevel then
+				if not button.ItemLevelText then
+					button.ItemLevelText = button:CreateFontString(nil, 'ARTWORK')
+					button.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					button.ItemLevelText:SetShadowOffset(0, 0)
+					button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
+					button.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+				button.ItemLevelText:SetText(itemLevel)
+			else
+				button.ItemLevelText:SetText('')
+			end
+		else
+			if button.ItemLevelText then
+				button.ItemLevelText:SetText('')
+			end
+			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+			button:SetBeautyBorderColor(1, 1, 1)
 		end
 	end
 end
@@ -354,17 +389,51 @@ end
 -- updates icons for equipment slots by grabbing the texture directly from the player's worn items
 function ItemRack.UpdateButtons()
 	for i in pairs(ItemRackUser.Buttons) do
-		if i<20 then
-			_G["ItemRackButton"..i.."Icon"]:SetTexture(ItemRack.GetTextureBySlot(i))
+		if i < 20 then
+			_G['ItemRackButton' .. i .. 'Icon']:SetTexture(ItemRack.GetTextureBySlot(i))
 		end
 		--ranged ammo is now infinite, so the below ammo count updater has been commented out
-		if i==0 then --ranged "ammo" slot
-			local baseID = ItemRack.GetIRString(ItemRack.GetID(0),true) --get the ItemRack-style ID for the ammo item in inventory slot 0 (ranged ammo) and convert it to just its baseID
-			if baseID~=0 then -- verify that we properly have the ammo item's baseID
+		if i == 0 then --ranged "ammo" slot
+			local baseID = ItemRack.GetIRString(ItemRack.GetID(0), true) --get the ItemRack-style ID for the ammo item in inventory slot 0 (ranged ammo) and convert it to just its baseID
+			if baseID ~= 0 then -- verify that we properly have the ammo item's baseID
 				ItemRackButton0Count:SetText(GetItemCount(baseID)) -- write the ammo count on top of the slot
 			else
-				ItemRackButton0Count:SetText("") -- clear the ammo count since there is no ammo in the slot
+				ItemRackButton0Count:SetText('') -- clear the ammo count since there is no ammo in the slot
 			end
+		end
+
+		local iiid
+		local button = _G['ItemRackButton' .. i]
+		iiid = string.match(ItemRack.GetID(i), '%d+')
+		button:CreateBeautyBorder(8)
+		if iiid and iiid ~= 0 then
+			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(iiid)
+			if (itemQuality and itemQuality > 1) then
+				local r, g, b = GetItemQualityColor(itemQuality)
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
+				button:SetBeautyBorderColor(r, g, b)
+			else
+				button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
+			if itemLevel then
+				if not button.ItemLevelText then
+					button.ItemLevelText = button:CreateFontString(nil, 'ARTWORK')
+					button.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					button.ItemLevelText:SetShadowOffset(0, 0)
+					button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
+					button.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+				button.ItemLevelText:SetText(itemLevel)
+			else
+				button.ItemLevelText:SetText('')
+			end
+		else
+			if button.ItemLevelText then
+				button.ItemLevelText:SetText('')
+			end
+			button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
+			button:SetBeautyBorderColor(1, 1, 1)
 		end
 	end
 	ItemRack.UpdateCurrentSet()

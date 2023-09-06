@@ -30,6 +30,7 @@ Frames/QuestTimerFrame.lua
 Frames/RaidFrames.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
+Frames/TimeManagerFrame.lua
 Frames/TradeSkillReagentFrame.lua
 Frames/Unit.lua
 
@@ -57,6 +58,7 @@ Addons/RareScanner.lua
 Addons/ShadowedUnitFrames.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
+Addons/RingMenu.lua
 Addons/RXPGuide.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua

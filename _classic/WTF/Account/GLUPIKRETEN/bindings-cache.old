@@ -150,8 +150,8 @@ bind F6 MULTIACTIONBAR3BUTTON6
 bind CTRL-D MULTIACTIONBAR4BUTTON9
 bind J CLICK RingMenuToggleRing1:LeftButton
 bind ALT-G Open/Close LFGBulletinBoard
-bind SHIFT-S CLICK RingMenuRingFrame1Button2:1
-bind ALT-S CLICK RingMenuRingFrame1Button3:1
+bind SHIFT-S CLICK RingMenuRingFrame1Button6:1
+bind ALT-S CLICK RingMenuRingFrame1Button5:1
 bind CTRL-SHIFT-R TOGGLEFPS
 bind ALT-H TOGGLEFARMHUD
 bind ALT- NONE

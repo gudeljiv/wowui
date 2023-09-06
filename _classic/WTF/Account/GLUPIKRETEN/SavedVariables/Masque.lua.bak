@@ -313,6 +313,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack_Map icon menu"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
@@ -592,6 +593,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack_Character info menus"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
@@ -1077,6 +1079,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack_On screen panels"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
@@ -1297,6 +1300,7 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["ItemRack_On screen menus"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
@@ -2862,6 +2866,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["ItemRack"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
 				},
