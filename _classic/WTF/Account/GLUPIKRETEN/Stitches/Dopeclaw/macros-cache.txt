@@ -13,7 +13,7 @@ VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000005 " " "134400"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Abolish Poison
+/cast [@mouseover,exists,nodead][help][] Cure Poison
 END
 VER 3 0000000001000006 " " "134400"
 #showtooltip
