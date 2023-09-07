@@ -72,7 +72,7 @@ L["Absorb Display"] = "Affichage de l'Absorption"
 --[[Translation missing --]]
 L["Absorb Heal Display"] = "Absorb Heal Display"
 L["Absorbed"] = "Absorbé"
-L["Action Button Glow"] = "Bouton d'action surbrillant"
+L["Action Button Glow"] = "Bouton d'action brillant"
 L["Action Usable"] = "Action utilisable"
 L["Actions"] = "Actions"
 L["Active"] = [=[Actif
@@ -642,6 +642,8 @@ L["Expertise Rating"] = "Expertise Rating"
 L["Extend Outside"] = "Étendre à l'extérieur"
 L["Extra Amount"] = "Quantité extra"
 L["Extra Attacks"] = "Attaque extra"
+--[[Translation missing --]]
+L["Extra Spell Id"] = "Extra Spell Id"
 L["Extra Spell Name"] = "Nom de Sort supplémentaire"
 L["Faction"] = "Faction"
 --[[Translation missing --]]
@@ -742,9 +744,8 @@ L["General Vezax"] = "General Vezax"
 L["General Zarithrian"] = "General Zarithrian"
 L["Glancing"] = "Erafle"
 L["Global Cooldown"] = "Temps de recharge global"
-L["Glow"] = "Surbrillance"
---[[Translation missing --]]
-L["Glow External Element"] = "Glow External Element"
+L["Glow"] = "Brillance"
+L["Glow External Element"] = "Élément externe brillant"
 --[[Translation missing --]]
 L["Gluth"] = "Gluth"
 --[[Translation missing --]]
@@ -914,6 +915,8 @@ L["Is Death Rune"] = "Is Death Rune"
 L["Is Exactly"] = "Est exactement"
 L["Is Moving"] = "Est en mouvement"
 L["Is Off Hand"] = "Est une Main gauche"
+--[[Translation missing --]]
+L["Is Paused"] = "Is Paused"
 L["is useable"] = "est utilisable"
 --[[Translation missing --]]
 L["Island Expedition (Heroic)"] = "Island Expedition (Heroic)"
@@ -1258,7 +1261,7 @@ L["Pet Specialization"] = "Spécialisation du familier"
 L["Pet Spell"] = "Sort du familier"
 L["Pets only"] = "Familiers seulement"
 L["Phase"] = "Phase"
-L["Pixel Glow"] = "Pixel surbrillant"
+L["Pixel Glow"] = "Pixel brillant"
 L["Placement"] = "Placement"
 --[[Translation missing --]]
 L["Placement Mode"] = "Placement Mode"
@@ -1292,8 +1295,7 @@ L["Preset"] = "Préréglé"
 L["Princess Huhuran"] = "Princess Huhuran"
 --[[Translation missing --]]
 L["Print Profiling Results"] = "Print Profiling Results"
---[[Translation missing --]]
-L["Proc Glow"] = "Proc Glow"
+L["Proc Glow"] = "Génère une brillance"
 --[[Translation missing --]]
 L["Professor Putricide"] = "Professor Putricide"
 L["Profiling already started."] = "Le profilage a déjà commencé."
@@ -1561,7 +1563,7 @@ L["Specific Type"] = "Type spécifique"
 L["Specific Unit"] = "Unité spécifique"
 L["Spell"] = "Sort"
 L["Spell (Building)"] = "Sort (croissant)"
-L["Spell Activation Overlay Glow"] = "Surbrillance pendant que le sort est actif"
+L["Spell Activation Overlay Glow"] = "Brillance pendant que le sort est actif"
 --[[Translation missing --]]
 L["Spell Cast Succeeded"] = "Spell Cast Succeeded"
 L["Spell Cost"] = "Coût des sorts"

@@ -20,16 +20,16 @@ function Data:GetSpellCrit(school)
         crit = crit + GetSpellCritChance(school) + itemBonus + setBonus
     end
 
-    crit = crit + _SpellCrit:GetSpellCritFromBuffs()
+    crit = crit + _SpellCrit:GetSpellCritFromBuffs(school)
 
     return DataUtils:Round(crit, 2) .. "%"
 end
 
-function _SpellCrit:GetSpellCritFromBuffs()
+function _SpellCrit:GetSpellCritFromBuffs(school)
     local mod = 0
 
     for i = 1, 40 do
-        local _, _, _, _, _, _, _, _, _, spellId, _ = UnitAura("player", i, "HELPFUL")
+        local _, _, count, _, _, _, _, _, _, spellId, _ = UnitAura("player", i, "HELPFUL")
         if spellId == nil then
             break
         end
@@ -60,6 +60,15 @@ function _SpellCrit:GetSpellCritFromBuffs()
         if (ECS.IsWotlk and spellId == 51470) then
             mod = mod + 5 -- 5% from Elemental Oath Rank 2
         end
+        if (ECS.IsWotlk and school == Data.FIRE_SCHOOL and spellId == 11129) then
+            mod = mod + 50 -- 50% from Combustion
+        end
+        if (ECS.IsWotlk and school == Data.FIRE_SCHOOL and spellId == 28682) then
+            mod = mod + (count * 10) -- 10% for each stack from Combustion
+        end
+        if ((not ECS.IsWotlk) and school == Data.FIRE_SCHOOL and spellId == 11129) then
+            mod = mod + 10 -- 10% from Combustion
+        end
     end
 
     return mod
@@ -79,7 +88,7 @@ function _SpellCrit:GetGeneralTalentModifier()
     local mod = 0
 
     if classId == Data.MAGE then
-        local talentSlot = ECS.IsWotlk and 17 or 15;
+        local talentSlot = ECS.IsWotlk and 17 or 14;
         local _, _, _, _, points, _, _, _ = GetTalentInfo(1, talentSlot)
         mod = points * 1 -- 0-3% Arcane Instability
     end
@@ -126,7 +135,7 @@ function _SpellCrit:GetTalentModifierHolyCrit()
     local mod = 0
 
     if classId == Data.PRIEST then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 2)
         mod = points * 1 -- 0-5% Holy Specialization
     end
     if classId == Data.PALADIN then
@@ -142,8 +151,7 @@ function _SpellCrit:GetTalentModifierFireCrit()
     local mod = 0
 
     if classId == Data.MAGE then
-        local talentSlot = ECS.IsWotlk and 11 or 13;
-        local _, _, _, _, criticalMassPoints, _, _, _ = GetTalentInfo(2, talentSlot)
+        local _, _, _, _, criticalMassPoints, _, _, _ = GetTalentInfo(2, 1)
         mod = criticalMassPoints * 2 -- 0-6% Critical Mass
 
         if ECS.IsWotlk then

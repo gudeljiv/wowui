@@ -220,3 +220,5 @@ SortBags: enabled
 Ace3: enabled
 AceGUI-3.0_SFX-Widgets: enabled
 LibDBIcon-1.0: enabled
+DugisGuideViewerZ: disabled
+mUI: disabled

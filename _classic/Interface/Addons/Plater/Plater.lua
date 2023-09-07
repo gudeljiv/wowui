@@ -40,7 +40,7 @@ end
 local unpack = unpack
 local ipairs = ipairs
 local rawset = rawset
-local rawget = rawget
+--local rawget = rawget --200 locals limit
 --local setfenv = setfenv --200 locals limit
 local xpcall = xpcall
 local InCombatLockdown = InCombatLockdown
@@ -140,6 +140,7 @@ platerInternal.Frames = {}
 platerInternal.Data = {}
 platerInternal.Date = {}
 platerInternal.Logs = {}
+platerInternal.Audio = {}
 
 function platerInternal.Date.GetDateForLogs()
 	return date("%Y-%m-%d %H:%M:%S")
@@ -369,6 +370,8 @@ Plater.HookScripts = { --private
 	"Player Logon",
 	"Receive Comm Message",
 	"Send Comm Message",
+	"Option Changed",
+	"Mod Option Changed",
 }
 
 Plater.HookScriptsDesc = { --private
@@ -400,6 +403,8 @@ Plater.HookScriptsDesc = { --private
 	["Player Logon"] = "Run when the player login into the game.\n\nUse to register textures, indicators, etc.\n\n|cFF44FF44Do not run on nameplates,\nrun only once after login\nor /reload|r.",
 	["Receive Comm Message"] = "Executed when a comm is received, a comm can be sent using Plater.SendComm(payload) in 'Send Comm Message' hook.",
 	["Send Comm Message"] = "Executed on an internal timer for each mod. Used to send comm data via Plater.SendComm(payload).",
+	["Option Changed"] = "Executed when a option in the options panel has changed",
+	["Mod Option Changed"] = "Executed when a option in the mod options panel has changed",
 }
 
 -- ~hook (hook scripts are cached in the indexed part of these tales, for performance the member ScriptAmount caches the amount of scripts inside the indexed table)
@@ -426,7 +431,11 @@ local HOOK_MOD_INITIALIZATION = {ScriptAmount = 0}
 local HOOK_MOD_DEINITIALIZATION = {ScriptAmount = 0}
 local HOOK_COMM_RECEIVED_MESSAGE = {ScriptAmount = 0}
 local HOOK_COMM_SEND_MESSAGE = {ScriptAmount = 0}
+local HOOK_OPTION_CHANGED = {ScriptAmount = 0}
+local HOOK_MOD_OPTION_CHANGED = {ScriptAmount = 0}
 local HOOK_NAMEPLATE_DESTRUCTOR = {ScriptAmount = 0}
+
+platerInternal.HOOK_MOD_OPTION_CHANGED = HOOK_MOD_OPTION_CHANGED --triggered from Plater.ScriptingOptions.lua
 
 local PLATER_GLOBAL_MOD_ENV = {}  -- contains modEnv for each mod, identified by "<mod name>"
 local PLATER_GLOBAL_SCRIPT_ENV = {} -- contains modEnv for each script, identified by "<script name>"
@@ -2718,6 +2727,7 @@ Plater.AnchorNamesByPhraseId = {
 			end
 		end	
 	end
+
 	function Plater.ScheduleZoneChangeHook()
 		if (Plater.ScheduledZoneChangeTriggerHook) then
 			Plater.ScheduledZoneChangeTriggerHook:Cancel()
@@ -2729,6 +2739,13 @@ Plater.AnchorNamesByPhraseId = {
 		for i = 1, HOOK_LOAD_SCREEN.ScriptAmount do
 			local hookInfo = HOOK_LOAD_SCREEN [i]
 			Plater.ScriptMetaFunctions.ScriptRunNoAttach (hookInfo, "Load Screen")
+		end
+	end
+
+	function platerInternal.OnOptionChanged()
+		for i = 1, HOOK_OPTION_CHANGED.ScriptAmount do
+			local hookInfo = HOOK_OPTION_CHANGED[i]
+			Plater.ScriptMetaFunctions.ScriptRunNoAttach(hookInfo, "Option Changed")
 		end
 	end
 	
@@ -5588,26 +5605,6 @@ function Plater.OnInit() --private --~oninit ~init
 
 					--spell color
 					self.castColorTexture:Hide()
-
-					--play audio cue
-					local audioCue = profile.cast_audiocues[self.spellID]
-					if (audioCue) then
-						if (platerInternal.LatestHandleForAudioPlayed) then
-							StopSound(platerInternal.LatestHandleForAudioPlayed, 0.5)
-						end
-						local validChannels = {
-							["Master"] = "Master",
-							["Music"] = "Music",
-							["SFX"] = "SFX",
-							["Ambience"] = "Ambience",
-							["Dialog"] = "Dialog",
-						}
-						local channel = validChannels[profile.cast_audiocues_channel or "Master"] or "Master"
-						local willPlay, soundHandle = PlaySoundFile(audioCue, channel)
-						if (willPlay) then
-							platerInternal.LatestHandleForAudioPlayed = soundHandle
-						end
-					end
 
 					--cast color (from options tab Cast Colors)
 					local castColors = profile.cast_colors
@@ -9745,9 +9742,12 @@ end
 					end
 				end
 			end
+
 			if (spellName) then
 				Plater.LastCombat.spellNames[spellName] = true
 			end
+
+			platerInternal.Audio.PlaySoundForCastStart(spellID)
 		end,
 
 		SPELL_AURA_APPLIED = function (time, token, hidding, sourceGUID, sourceName, sourceFlag, sourceFlag2, targetGUID, targetName, targetFlag, targetFlag2, spellID, spellName, spellType, amount, overKill, school, resisted, blocked, absorbed, isCritical)
@@ -12147,6 +12147,8 @@ end
 		HOOK_MOD_INITIALIZATION,
 		HOOK_COMM_RECEIVED_MESSAGE,
 		HOOK_COMM_SEND_MESSAGE,
+		HOOK_OPTION_CHANGED,
+		HOOK_MOD_OPTION_CHANGED,
 		HOOK_NAMEPLATE_DESTRUCTOR,
 	}
 
@@ -12211,6 +12213,10 @@ end
 			return HOOK_COMM_RECEIVED_MESSAGE
 		elseif (hookName == "Send Comm Message") then
 			return HOOK_COMM_SEND_MESSAGE
+		elseif (hookName == "Option Changed") then
+			return HOOK_OPTION_CHANGED
+		elseif (hookName == "Mod Option Changed") then
+			return HOOK_MOD_OPTION_CHANGED
 		elseif (hookName == "Destructor") then
 			return HOOK_NAMEPLATE_DESTRUCTOR
 		else

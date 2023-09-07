@@ -805,6 +805,8 @@ L["Extra Amount"] = "Extra Amount"
 --[[Translation missing --]]
 L["Extra Attacks"] = "Extra Attacks"
 --[[Translation missing --]]
+L["Extra Spell Id"] = "Extra Spell Id"
+--[[Translation missing --]]
 L["Extra Spell Name"] = "Extra Spell Name"
 --[[Translation missing --]]
 L["Faction"] = "Faction"
@@ -1169,6 +1171,8 @@ L["Is Exactly"] = "Is Exactly"
 L["Is Moving"] = "Is Moving"
 --[[Translation missing --]]
 L["Is Off Hand"] = "Is Off Hand"
+--[[Translation missing --]]
+L["Is Paused"] = "Is Paused"
 --[[Translation missing --]]
 L["is useable"] = "is useable"
 --[[Translation missing --]]

@@ -86,3 +86,4 @@ Deathlog: enabled
 RareScanner: enabled
 SortBags: enabled
 TradeSkillMaster_AppHelper: enabled
+DugisGuideViewerZ: disabled

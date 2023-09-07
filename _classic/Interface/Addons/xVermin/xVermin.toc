@@ -84,6 +84,7 @@ Helpers/ErrorsFilter.lua
 Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
+Helpers/QuestRewardMostValueItem.lua
 Helpers/ShamanBlueColor.lua
 # Helpers/SkinBuffs.lua
 Helpers/TooltipItemID.lua

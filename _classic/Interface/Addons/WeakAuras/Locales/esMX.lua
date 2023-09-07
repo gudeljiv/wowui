@@ -760,6 +760,8 @@ L["Expertise Rating"] = "Expertise Rating"
 L["Extend Outside"] = "Extend Outside"
 L["Extra Amount"] = "Cantidad adicional"
 L["Extra Attacks"] = "Ataques adicionales"
+--[[Translation missing --]]
+L["Extra Spell Id"] = "Extra Spell Id"
 L["Extra Spell Name"] = "Apagar"
 --[[Translation missing --]]
 L["Faction"] = "Faction"
@@ -1068,6 +1070,8 @@ L["Is Death Rune"] = "Is Death Rune"
 L["Is Exactly"] = "Es exactamente"
 L["Is Moving"] = "Se está moviendo"
 L["Is Off Hand"] = "Está fuera de alcance"
+--[[Translation missing --]]
+L["Is Paused"] = "Is Paused"
 L["is useable"] = "se puede utilizar"
 --[[Translation missing --]]
 L["Island Expedition (Heroic)"] = "Island Expedition (Heroic)"

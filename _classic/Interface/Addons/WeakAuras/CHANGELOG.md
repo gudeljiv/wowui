@@ -1,24 +1,42 @@
-# [5.7.0](https://github.com/WeakAuras/WeakAuras2/tree/5.7.0) (2023-08-08)
+# [5.7.1](https://github.com/WeakAuras/WeakAuras2/tree/5.7.1) (2023-09-06)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.6.0...5.7.0)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.7.0...5.7.1)
 
 ## Highlights
 
- - New unified Boss Mod trigger that works with both DBM and BigWigs
-- Bug fixes and performance improvements :KEKW: 
+ - Improvements to triggers
+- Sound previews on dropdown selections
+- Bug fixes 
 
 ## Commits
 
-InfusOnWoW (5):
+InfusOnWoW (4):
 
-- Trigger Player/Conditions Instance Size: Fix events
-- BT2: On GROUP_ROSTER_UPDATE do a full check
-- Block more chat frames/chat actions
-- Updated Holy Paladin Premade auras
-- BT2: Handle UNIT_TARGETABLE_CHANGED
+- Templates: Add Grove Guardins
+- BT2: Fix tooltip parsing for negative numbers
+- BT2: Update auras 2s after initial login
+- Add a paused condition for timed durations (#4573)
 
-mrbuds (2):
+Jods (1):
 
-- New "Boss Mod" triggers working with both DBM & BigWigs (#4537)
-- Proc Glow: add more options in actions & external glow conditions, and fixes #4532
+- fix #4575
+
+Stanzilla (2):
+
+- Bump TOC for Retail
+- Bump TOC for Era
+
+mrbuds (11):
+
+- Fix spell fields focus for non-aura triggers and load options
+- Fix anchor to screen for auras in a group
+- Bossmod Timer fix (#4584)
+- Sub Text Element: Show formatting options for all %-replacements
+- Condition of Text type auras can edit text
+- Combat Log trigger: add extraSpellId for apropriate subEvents
+- Add sound preview on sound selection dropdowns
+- Delay & Duration fields show time converted to [[HH:]MM:]ss format
+- tune "spell" option width & alignment
+- On Aura trigger, show spell name when typing spell id
+- For Combat Log, DBM Timer, BigWigs Timer triggers, spellId field show icon & name of spell
 

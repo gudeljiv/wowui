@@ -94,8 +94,8 @@ function RingMenu_UpdateRing(ringID)
                     end
                 end
                 local relx, rely = UIParent:GetMousePosition()
-                local x = relx * UIParent:GetWidth()
-                local y = rely * UIParent:GetHeight()
+                local x = UIParent:GetWidth() / 2 + 400
+                local y = UIParent:GetHeight() / 2 + 250
                 rf:SetPoint("CENTER", UIParent, "BOTTOMLEFT", x, y)
                 rf:Show()
             end

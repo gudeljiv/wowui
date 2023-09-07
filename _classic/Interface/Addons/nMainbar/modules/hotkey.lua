@@ -1,7 +1,7 @@
 
 local gsub = string.gsub
 
-_G['RANGE_INDICATOR'] = "•"
+-- RANGE_INDICATOR = "•"
 
 hooksecurefunc('ActionButton_UpdateHotkeys', function(self)
 	local frame = _G[self:GetName()]
@@ -37,7 +37,8 @@ hooksecurefunc('ActionButton_UpdateHotkeys', function(self)
 
 		hotkey:SetWidth(40)
 
-		if text == _G['RANGE_INDICATOR'] then
+		if text == RANGE_INDICATOR then
+			hotkey:SetText("•")
 			hotkey:SetPoint("TOPRIGHT", frame, "TOPRIGHT", "1", "1")
 		else
 			hotkey:SetText(text)

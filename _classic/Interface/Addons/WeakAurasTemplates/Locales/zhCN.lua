@@ -7,10 +7,8 @@ end
 local L = WeakAuras.L
 
 -- WeakAuras/Templates
-	--[[Translation missing --]]
-	L["< 4 stacks"] = "< 4 stacks"
-	--[[Translation missing --]]
-	L["5 stacks"] = "5 stacks"
+	L["< 4 stacks"] = "小于4层"
+	L["5 stacks"] = "5层"
 	L["Abilities"] = "技能"
 	L["Add Triggers"] = "添加触发器"
 	L["Always Active"] = "总是激活"

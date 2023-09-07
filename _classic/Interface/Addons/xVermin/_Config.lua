@@ -20,7 +20,7 @@ xVermin.Config = {
 		damage = 'Interface\\AddOns\\xVermin\\Media\\Damage.ttf'
 	},
 	texture = {
-        coins = 'Interface\\AddOns\\xVermin\\Media\\textureNormal\\Coins'
+		coins = 'Interface\\AddOns\\xVermin\\Media\\Coins'
 	},
 	background = {
 		white = 'Interface\\Buttons\\WHITE8x8'

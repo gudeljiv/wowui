@@ -58,7 +58,7 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2] Shield Wall
 END
 VER 3 000000000100001B " " "134400"
-/equip [noequipped:shields] Thun'grim's Axe; Cauldron Stirrer
+/equip [noequipped:shields] Thun'grim's Axe; Twin-bladed Axe of the Bear
 /equip [noequipped:shields] Tribal Warrior's Shield
 END
 VER 3 000000000100001C " " "134400"
