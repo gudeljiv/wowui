@@ -29,7 +29,7 @@ function _Defense:GetCritReduction()
         if ECS.IsWotlk then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 18)
             talentBonus = points * 2 -- 0-6% from Survival of the Fittest
-        else
+        elseif ECS.IsTBC then
             local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
             talentBonus = points * 1 -- 0-3% from Survival of the Fittest
         end

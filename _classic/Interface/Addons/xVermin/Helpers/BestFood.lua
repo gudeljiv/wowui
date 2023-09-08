@@ -1,19 +1,27 @@
 local _, xVermin = ...
 local TKInstances = {550, 552, 553, 554}
 
+-- local defaultFoodMacro = [[#showtooltip
+-- /use [nocombat]<food>
+-- /castsequence [combat] reset=combat <hPotions>
+-- ]]
+
+-- local defaultDrinkMacro = [[#showtooltip
+-- /use [nocombat]<drink>
+-- /castsequence [combat] reset=combat <mPotions>
+-- ]]
+
 local defaultFoodMacro = [[#showtooltip
-/use [nocombat]<food>
-/castsequence [combat] reset=combat <hPotions>
+/use <food>
+]]
+
+local defaultDrinkMacro = [[#showtooltip
+/use <drink>
 ]]
 
 local defaultPetFoodMacro = [[#showtooltip <petfood>
 /cast feed pet
 /use <petfood>
-]]
-
-local defaultDrinkMacro = [[#showtooltip
-/use [nocombat]<drink>
-/castsequence [combat] reset=combat <mPotions>
 ]]
 
 local defaultHealthstoneMacro = [[#showtooltip

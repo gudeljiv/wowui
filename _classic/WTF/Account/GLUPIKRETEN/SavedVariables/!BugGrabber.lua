@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10262,
+	["session"] = 10266,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -107,5 +107,13 @@ BugGrabberDB = {
 			["session"] = 10258,
 			["counter"] = 2,
 		}, -- [14]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/08 08:02:36",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10263,
+			["counter"] = 1,
+		}, -- [15]
 	},
 }

@@ -21,7 +21,6 @@ hooksecurefunc(
 	function()
 		if xVermin.QuestRewardGoldIconFrame then
 			xVermin.QuestRewardGoldIconFrame:Hide()
-			print("hide")
 		end
 	end
 )
@@ -125,7 +124,7 @@ local function QUEST_COMPLETE(self, event, ...)
 		if (_G["QuestInfoRewardsFrameQuestInfoItem" .. id]) then
 			xVermin.QuestRewardGoldIconFrame:Show();
 			xVermin.QuestRewardGoldIconFrame:SetParent(_G["QuestInfoRewardsFrameQuestInfoItem" .. id]);
-			xVermin_QuestRewardGoldIconFrame:SetPoint("TOPRIGHT", _G["QuestInfoRewardsFrameQuestInfoItem" .. id], "TOPRIGHT", 8, 10);
+			xVermin.QuestRewardGoldIconFrame:SetPoint("TOPRIGHT", _G["QuestInfoRewardsFrameQuestInfoItem" .. id], "TOPRIGHT", 4, 8);
 		end
 	elseif (event == "QUEST_FINISHED" or event == "QUEST_TURNED_IN") then
 		if (xVermin.QuestRewardGoldIconFrame) then

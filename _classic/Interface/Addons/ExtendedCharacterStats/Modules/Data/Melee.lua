@@ -67,24 +67,19 @@ function _Melee:GetHitTalentBonus()
                 mod = mod + dualWielding * 2 -- 0-6% Dual Wielding Specialization
             end
         else
-            local _, _, _, _, naturesGuidance, _, _, _ = GetTalentInfo(3, 6)
+            local _, _, _, _, naturesGuidance, _, _, _ = GetTalentInfo(3, 3)
             mod = naturesGuidance * 1 -- 0-3% Nature's Guidance
         end
     end
 
-    if (not ECS.IsWotlk) and classId == Data.PALADIN then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
+    if ECS.IsTBC and classId == Data.PALADIN then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 15)
         mod = points * 1 -- 0-3% Precision
     end
 
     if classId == Data.ROGUE then
-        if ECS.IsWotlk then
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 1)
-            mod = points * 1 -- 0-5% Precision
-        else
-            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 6)
-            mod = points * 1 -- 0-5% Precision
-        end
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 1)
+        mod = points * 1 -- 0-5% Precision
     end
 
     -- This assumes a DK is dual wielding and not only using a one-hand main hand weapon
