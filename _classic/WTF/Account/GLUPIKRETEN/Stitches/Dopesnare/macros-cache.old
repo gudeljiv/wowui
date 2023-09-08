@@ -70,12 +70,15 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
-VER 3 000000000100000F " " "INV_Misc_QuestionMark"
+VER 3 000000000100000F " " "132328"
 #showtooltip
-/dismount
 /petfollow
 END
 VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@pet,exists][]Volley
+END
+VER 3 0000000001000011 " " "132152"
+#showtooltip 
+/petattack [@mouseover,harm][]
 END

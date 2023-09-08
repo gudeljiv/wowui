@@ -48,6 +48,13 @@ X: 480
 Y: 254
 W: 170
 H: 240
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: -362
+Y: 226
+W: 128
+H: 64
 Frame: FriendsFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -97,10 +104,3 @@ X: 40
 Y: 268
 W: 330
 H: 125
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: CENTER
-X: -362
-Y: 226
-W: 533
-H: 372

@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10300,
+	["session"] = 10308,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -171,5 +171,57 @@ BugGrabberDB = {
 			["session"] = 10285,
 			["counter"] = 1,
 		}, -- [22]
+		{
+			["message"] = "bad argument #2 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetZoom(zoomFactor))",
+			["time"] = "2023/09/08 19:42:00",
+			["locals"] = "(*temporary) = Minimap {\n 0 = <userdata>\n GetRight = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:227\n beautyShadow = <table> {\n }\n GetLeft = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:226\n EnableMouse = <function> defined =[C]:-1\n SetAlpha = <function> defined =[C]:-1\n GetBottom = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:228\n GetEffectiveScale = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:225\n GetWidth = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:221\n SetZoom = <function> defined =[C]:-1\n GetSize = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:223\n SetMaskTexture = <function> defined =[C]:-1\n beautyBorder = <table> {\n }\n GetTop = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:229\n GetHeight = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:222\n timer = 0\n SetPlayerTexture = <function> defined =[C]:-1\n GetCenter = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:224\n CreateTexture = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:185\n}\n(*temporary) = -1\n(*temporary) = \"outside of expected range 0 to 4294967295 - Usage: self:SetZoom(zoomFactor)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetZoom'\n[string \"@Interface/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua\"]:427: in function `IsMinimapInside'\n[string \"@Interface/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua\"]:70: in function <...e/AddOns/Questie/Modules/Tooltips/MapIconTooltip.lua:39>\n[string \"=[C]\"]: ?",
+			["session"] = 10302,
+			["counter"] = 2,
+		}, -- [23]
+		{
+			["message"] = "[string \"IsSpellInRange(2,\"pet\",\"target\").\"]:1: '<name>' expected near '<eof>'",
+			["time"] = "2023/09/08 19:45:52",
+			["locals"] = "(*temporary) = \"IsSpellInRange(2,\"pet\",\"target\").\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10302,
+			["counter"] = 1,
+		}, -- [24]
+		{
+			["message"] = "[string \"print( IsSpellInRange(\"Claw\"),unit))\"]:1: unexpected symbol near ')'",
+			["time"] = "2023/09/08 19:48:34",
+			["locals"] = "(*temporary) = \"print( IsSpellInRange(\"Claw\"),unit))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10302,
+			["counter"] = 1,
+		}, -- [25]
+		{
+			["message"] = "[string \"print(GetBagName(0))\"]:1: attempt to call global 'GetBagName' (a nil value)",
+			["time"] = "2023/09/08 20:48:38",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetBagName' (a nil value)\"\n",
+			["stack"] = "[string \"print(GetBagName(0))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10302,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:105: attempt to call global 'GetBagName' (a nil value)",
+			["time"] = "2023/09/08 20:53:44",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:68\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:96\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:48\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:250\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:85\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:131\n IfUnitIsCastingInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:206\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:140\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:240\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:277\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n Config = <table> {\n }\n ClassColor = <table> {\n }\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:123\n WaitTimeUntillAddonLoaded = 30\n R6_Occupied = false\n Class = \"HUNTER\"\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:194\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:230\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:220\n}\nBuyAmmo = <function> defined @Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:3\nf = Frame {\n 0 = <userdata>\n}\n(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetBagName' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua\"]:105: in main chunk",
+			["session"] = 10304,
+			["counter"] = 1,
+		}, -- [27]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
+			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
+			["counter"] = 1,
+		}, -- [28]
+		{
+			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
+			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
+			["counter"] = 1,
+		}, -- [29]
 	},
 }

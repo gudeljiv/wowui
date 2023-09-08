@@ -11,16 +11,16 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:414
+/use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:3770
 /cast feed pet
-/use item:2287
+/use item:3770
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:0
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
@@ -33,7 +33,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run xVermin_QuestRewardGoldIconFrame:SetPoint("TOPRIGHT", _G["QuestInfoRewardsFrameQuestInfoItem2"], "TOPRIGHT", 4, 8);
+/run print( IsSpellInRange(1,BOOKTYPE_PET,"target") )
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

@@ -66,13 +66,18 @@ local function BuyAmmo()
 	if index and buy then
 		MaxAmmoInInventory = MaxStackSize
 		if xVermin.Class == 'HUNTER' then
-			MaxAmmoInInventory = C_Container.GetContainerNumSlots(1) * MaxStackSize
+			MaxAmmoInInventory = C_Container.GetContainerNumSlots(GetInventorySlotInfo('AmmoSlot')) * MaxStackSize
 			-- MaxAmmoInInventory = 8000
 		end
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 		local needtobuy = MaxAmmoInInventory - ammoCount
 
-		print(MaxStackSize,MaxAmmoInInventory,needtobuy)
+		-- print(MaxStackSize,MaxAmmoInInventory,needtobuy)
+
+		-- for i = 4,1,1 
+		-- do 
+		-- 	print(GetBagName(i)) 
+		-- end
 
 		if needtobuy > 0 then
 			local remainder = needtobuy % MaxStackSize
@@ -94,3 +99,15 @@ end
 local f = CreateFrame('Frame')
 f:RegisterEvent('MERCHANT_SHOW')
 f:SetScript('OnEvent', BuyAmmo)
+
+
+-- for bag = 0, 4 do 
+
+-- 	local bagtype = GetItemFamily(C_Container.GetBagName(bag))
+
+-- 	-- if ammo quiver
+-- 	if bagtype == 1 then 
+-- 		local numberOfSlots = GetContainerNumSlots(bag);
+
+-- 	end
+-- end
