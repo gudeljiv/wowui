@@ -79,6 +79,7 @@ print("ROTATION:", not pause)
 print("MODE:", mode.upper())
 print("CLASS:", wow_class_loaded.upper())
 
+
 def toKeyCode(c):
     keyCode = keyCodeMap[c]
     return int(keyCode, base=16)
@@ -366,6 +367,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     # white --> green
                     if interrupt == (0, 255, 0):
                         press_interception_key("F9")
+                        continue
 
 # rotation
                     main_skill = numpy.array(main_image)[:, :, :3]

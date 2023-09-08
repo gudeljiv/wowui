@@ -46,7 +46,7 @@ data = {
             {"name": "battle shout", "type": "GetSpellTexture", "id": 6673, "key": "f10"},
             {"name": "demoralizing shout", "type": "GetSpellTexture", "id": 1160, "key": "f5"},
             {"name": "sunder armor", "type": "GetSpellTexture", "id": 7386, "key": "k"},
-            {"name": "overpower", "type": "GetSpellTexture", "id": 7384, "key": "6"},
+            {"name": "overpower", "type": "GetSpellTexture", "id": 7384, "key": "7"},
             {"name": "execute", "type": "GetSpellTexture", "id": 5308, "key": "f"},
             {"name": "whirlwind", "type": "GetSpellTexture", "id": 1680, "key": "6"},
             {"name": "thunder clap", "type": "GetSpellTexture", "id": 6343, "key": "e"},
