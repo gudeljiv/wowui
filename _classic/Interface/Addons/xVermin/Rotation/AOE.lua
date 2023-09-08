@@ -99,29 +99,35 @@ local skills_range = {
 -- aoe:SetPoint('RIGHT', PlayerFrame, 'LEFT', 15, 3)
 -- aoe_casting:SetPoint('RIGHT', PlayerFrame, 'LEFT', 21, 4)
 
-local aoe = CreateFrame('Frame', 'AOE_TARGETS')
-aoe:SetPoint('CENTER', UIParent, 'CENTER', -55, -30)
-aoe:SetWidth(50)
-aoe:SetHeight(50)
+local aoe_wrap = CreateFrame('Frame', 'AOE_WRAP')
+aoe_wrap:SetPoint('CENTER', UIParent, 'CENTER', 0, -25)
+aoe_wrap:SetWidth(130)
+aoe_wrap:SetHeight(30)
+-- aoe_wrap:CreateBeautyBorder(6)
+
+local aoe = CreateFrame('Frame', 'AOE_TARGETS', aoe_wrap)
+aoe:SetPoint('LEFT', aoe_wrap, 'LEFT', 5, -5)
+-- aoe:SetWidth(50)
+-- aoe:SetHeight(50)
+-- aoe:CreateBeautyBorder(6)
 aoe:SetFrameStrata("LOW")
 aoe.text = aoe:CreateFontString(aoe:GetName() .. 'Title', 'BACKGROUND')
 aoe.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
-aoe.text:SetPoint('CENTER', aoe, 'CENTER', 0, 0)
+aoe.text:SetPoint('LEFT', aoe, 'LEFT', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-
 aoe.text:SetShadowColor(0, 0, 0, 1.0)
 aoe.text:SetShadowOffset(2, -2)
 
-local aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING')
-aoe_casting:SetPoint('CENTER', UIParent, 'CENTER', 55, -30)
-aoe_casting:SetWidth(50)
-aoe_casting:SetHeight(50)
+local aoe_casting = CreateFrame('Frame', 'AOE_TARGETS_CASTING', aoe_wrap)
+aoe_casting:SetPoint('RIGHT', aoe_wrap, 'RIGHT', -5, -5)
+-- aoe_casting:SetWidth(50)
+-- aoe_casting:SetHeight(50)
+-- aoe_casting:CreateBeautyBorder(6)
 aoe_casting:SetFrameStrata("LOW")
 aoe_casting.text = aoe_casting:CreateFontString(aoe_casting:GetName() .. 'Title', 'BACKGROUND')
-aoe_casting.text:SetFont(xVermin.Config.font.arial, 18, 'NONE')
-aoe_casting.text:SetPoint('CENTER', aoe_casting, 'CENTER', 0, 0)
+aoe_casting.text:SetFont(xVermin.Config.font.arial, 14, 'NONE')
+aoe_casting.text:SetPoint('RIGHT', aoe_casting, 'RIGHT', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-
 aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
 aoe_casting.text:SetShadowOffset(2, -2)
 
@@ -163,7 +169,40 @@ UIParent:HookScript(
 			end
 		end
 
-		aoe.text:SetText(aoe_number)
-		aoe_casting.text:SetText(aoe_casting_number)
+		if InCombatLockdown() then 
+			aoe.text:SetText(aoe_number)
+			aoe:SetWidth(aoe.text:GetStringWidth())
+			aoe:SetHeight(aoe.text:GetStringHeight())
+			aoe:Show()
+		else 
+			aoe:Hide()
+		end
+
+		-- aoe_casting.text:SetText(aoe_casting_number)
+
+
+		local ttd = xTTD
+		if ttd > 10000 then ttd = 0 end
+		if not InCombatLockdown() then 
+			xTTD = 0
+			ttd = 0
+		end
+		if not UnitExists("target") then 
+			xTTD = 0
+			ttd = 0
+		end
+		if UnitIsDead("target") then 
+			xTTD = 0
+			ttd = 0
+		end
+
+		if ttd > 0 then 
+			aoe_casting.text:SetText(xVermin.Round(ttd, 1))
+			aoe_casting:SetWidth(aoe_casting.text:GetStringWidth())
+			aoe_casting:SetHeight(aoe_casting.text:GetStringHeight())
+			aoe_casting:Show()
+		else 
+			aoe_casting:Hide()
+		end
 	end
 )

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10273,
+	["session"] = 10301,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -131,5 +131,45 @@ BugGrabberDB = {
 			["session"] = 10268,
 			["counter"] = 1,
 		}, -- [17]
+		{
+			["message"] = "Interface/AddOns/BlizzMove/BlizzMove.lua:456: BlizzMove: The frame you just moved (QuestFrame) is probably in a broken state, possibly because of other addons. Copy the text from the popup window, and report it to the addon author.",
+			["time"] = "2023/09/08 15:18:59",
+			["locals"] = "(*temporary) = \"BlizzMove: The frame you just moved (QuestFrame) is probably in a broken state, possibly because of other addons. Copy the text from the popup window, and report it to the addon author.\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/BlizzMove/BlizzMove.lua\"]:456: in function <Interface/AddOns/BlizzMove/BlizzMove.lua:430>\n[string \"@Interface/AddOns/BlizzMove/BlizzMove.lua\"]:693: in function <Interface/AddOns/BlizzMove/BlizzMove.lua:676>\n[string \"=(tail call)\"]: ?",
+			["session"] = 10276,
+			["counter"] = 1,
+		}, -- [18]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'EditMacro()'.",
+			["time"] = "2023/09/08 15:31:23",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `EditMacro'\n[string \"@Interface/AddOns/Blizzard_MacroUI/Blizzard_MacroUI.lua\"]:330: in function `SaveMacro'\n[string \"@Interface/AddOns/Blizzard_MacroUI/Blizzard_MacroUI.lua\"]:128: in function `ChangeTab'\n[string \"@Interface/AddOns/Blizzard_MacroUI/Blizzard_MacroUI.lua\"]:123: in function `SelectTab'\n[string \"*Blizzard_MacroUI.xml:205_OnClick\"]:1: in function <[string \"*Blizzard_MacroUI.xml:205_OnClick\"]:1>",
+			["session"] = 10276,
+			["counter"] = 1,
+		}, -- [19]
+		{
+			["message"] = "[string \"print(xVermin.TTD)\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2023/09/08 15:42:30",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"print(xVermin.TTD)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10278,
+			["counter"] = 1,
+		}, -- [20]
+		{
+			["message"] = "[string \"print(xVermin:Round(2.32, 1))\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2023/09/08 16:07:28",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"print(xVermin:Round(2.32, 1))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10285,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "[string \"print(xVermin.Round(2.32, 1))\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2023/09/08 16:07:38",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"print(xVermin.Round(2.32, 1))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10285,
+			["counter"] = 1,
+		}, -- [22]
 	},
 }

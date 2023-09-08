@@ -65,7 +65,7 @@ data = {
             # {"name": "shattering throw", "type": "GetSpellTexture", "id": 64382, "key": "7"},
         ],
         "secondary": [
-            {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "4", "modifier": "lshift"},
+            {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "5", "modifier": "lshift"},
             {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "lshift"},
             {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "e", "modifier": "lalt"},
             {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "f", "modifier": "lalt"},

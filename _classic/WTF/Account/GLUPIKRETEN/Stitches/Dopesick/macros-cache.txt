@@ -5,7 +5,7 @@ END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
 /startattack
-/cast bloodrage
+/cast Bloodrage
 /cast [@focus,exists][][stance:1/2]Shield Bash
 /cast [@focus,exists][][stance:3]Pummel
 END
@@ -58,8 +58,8 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2] Shield Wall
 END
 VER 3 000000000100001B " " "134400"
-/equip [noequipped:shields] Thun'grim's Axe; Twin-bladed Axe of the Bear
-/equip [noequipped:shields] Tribal Warrior's Shield
+/equip [noequipped:shields] Thun'grim's Axe; Zhovur Axe
+/equip [noequipped:shields] Cobalt Buckler
 END
 VER 3 000000000100001C " " "134400"
 #showtooltip Thunder Clap
@@ -70,4 +70,10 @@ VER 3 000000000100001D " " "134400"
 #showtooltip Overpower
 /cast [nostance:1,nocombat] Battle Stance;
 /cast Overpower
+END
+VER 3 000000000100001E " " "134400"
+#showtooltip 
+/startattack
+/cast Sunder Armor
+/cast Bloodrage
 END
