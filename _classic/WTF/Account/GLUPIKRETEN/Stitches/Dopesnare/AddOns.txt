@@ -80,3 +80,8 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 WideQuestLogPlus: enabled
 xVermin: enabled
+ACP: enabled
+FarmHud: enabled
+FarmHud_QuestArrow: enabled
+Leatrix_Plus: enabled
+SpeedyAutoLoot: enabled

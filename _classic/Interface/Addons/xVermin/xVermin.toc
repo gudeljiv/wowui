@@ -87,6 +87,7 @@ Helpers/MaxStackSize.lua
 Helpers/QuestRewardMostValueItem.lua
 Helpers/ShamanBlueColor.lua
 # Helpers/SkinBuffs.lua
+Helpers/Threat.lua
 Helpers/TimeToDie.lua
 Helpers/TooltipItemID.lua
 Helpers/TooltipSpellID.lua

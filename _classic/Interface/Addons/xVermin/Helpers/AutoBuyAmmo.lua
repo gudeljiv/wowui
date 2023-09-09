@@ -6,6 +6,7 @@ local function BuyAmmo()
 	local playerLevel = UnitLevel('player')
 
 	ammoLevel = 0
+	numberOfSlots = 0
 
 	-- if playerLevel >= 1 then
 	-- 	ammoLevel = 1
@@ -66,18 +67,22 @@ local function BuyAmmo()
 	if index and buy then
 		MaxAmmoInInventory = MaxStackSize
 		if xVermin.Class == 'HUNTER' then
-			MaxAmmoInInventory = C_Container.GetContainerNumSlots(GetInventorySlotInfo('AmmoSlot')) * MaxStackSize
-			-- MaxAmmoInInventory = 8000
+
+			for bag = 0, 4 do 
+				local bagtype = GetItemFamily(C_Container.GetBagName(bag))
+				-- if ammo quiver
+				if bagtype == 1 then 
+					numberOfSlots = C_Container.GetContainerNumSlots(bag);
+				end
+			end
+
+			-- MaxAmmoInInventory = C_Container.GetContainerNumSlots(GetInventorySlotInfo('AmmoSlot')) * MaxStackSize
+			MaxAmmoInInventory = numberOfSlots * MaxStackSize
 		end
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 		local needtobuy = MaxAmmoInInventory - ammoCount
 
-		-- print(MaxStackSize,MaxAmmoInInventory,needtobuy)
-
-		-- for i = 4,1,1 
-		-- do 
-		-- 	print(GetBagName(i)) 
-		-- end
+		print(numberOfSlots, MaxStackSize, MaxAmmoInInventory, needtobuy)
 
 		if needtobuy > 0 then
 			local remainder = needtobuy % MaxStackSize
