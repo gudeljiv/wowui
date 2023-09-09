@@ -3,7 +3,7 @@ EventTraceSavedVars = {
 	["ShowTimestamp"] = true,
 	["Size"] = {
 		["Height"] = 824.82177734375,
-		["Width"] = 734.821533203125,
+		["Width"] = 734.8216552734375,
 	},
 	["ShowArguments"] = true,
 	["Filters"] = {

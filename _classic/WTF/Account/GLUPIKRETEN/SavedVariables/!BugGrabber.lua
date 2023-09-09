@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10354,
 	["lastSanitation"] = 3,
-	["session"] = 10331,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -205,14 +205,14 @@ BugGrabberDB = {
 		}, -- [26]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [27]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [28]
 		{
@@ -263,5 +263,113 @@ BugGrabberDB = {
 			["session"] = 10330,
 			["counter"] = 3,
 		}, -- [34]
+		{
+			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2673: [string \"return xTTD() > 8\"]:1: attempt to call global 'xTTD' (a number value)",
+			["time"] = "2023/09/09 16:04:06",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"return xTTD() > 8\"]:1: attempt to call global 'xTTD' (a number value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2673: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2662>",
+			["session"] = 10335,
+			["counter"] = 1,
+		}, -- [35]
+		{
+			["message"] = "[string \"return xTTD() > 8\"]:1: attempt to call global 'xTTD' (a number value)",
+			["time"] = "2023/09/09 16:04:05",
+			["locals"] = "(*temporary) = 0\n(*temporary) = \"attempt to call global 'xTTD' (a number value)\"\n",
+			["stack"] = "[string \"return xTTD() > 8\"]:1: in function `LF_00000203B1E34280'\n[string \"Condition_CURRENTSPELL_CREATURETYPE_DEBUFFDUR_DEBUFFDUR_DEBUFFDUR_BUFFDUR_CASTING_LUA\"]:10: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function <...eWhen/Components/Core/Conditions/ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface/AddOns/TellMeWhen/Options/IconConfig.lua\"]:71: in function <Interface/AddOns/TellMeWhen/Options/IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:974: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:962>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1034: in function `CScriptBubble'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1463: in function `OnSettingSaved'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2051: in function `SaveSetting'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2023: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:2020>\n[string \"=[C]\"]: in function `Hide'\n[string \"*TellMeWhen_Options.xml:1903_OnClick\"]:3: in function <[string \"*TellMeWhen_Options.xml:1903_OnClick\"]:1>",
+			["session"] = 10335,
+			["counter"] = 458,
+		}, -- [36]
+		{
+			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
+			["time"] = "2023/09/09 16:52:16",
+			["locals"] = "(*temporary) = \"bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10338,
+			["counter"] = 4,
+		}, -- [37]
+		{
+			["message"] = "Interface/AddOns/ClassicCastbars/Core/Frames.lua:96: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2023/09/09 19:28:17",
+			["locals"] = "self = ClassicCastbars {\n NAME_PLATE_UNIT_REMOVED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:473\n StoreCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193\n CreateOrUpdateSecureFocusButton = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:559\n PLAYER_ENTERING_WORLD = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:345\n SkinPlayerCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:455\n ToggleUnitEvents = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:315\n DeleteCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:238\n NAME_PLATE_UNIT_ADDED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:461\n DisplayCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:312\n SetBorderShieldStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:108\n AnchorManager = <table> {\n }\n SetFocusDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:607\n StartCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:131\n SetCastbarFonts = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:256\n CheckCastModifiers = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:61\n SetCastbarIconAndText = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:83\n ADDON_LOADED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:426\n CastPushback = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:255\n StopCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:158\n GROUP_ROSTER_UPDATE = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:484\n GetCastbarFrame = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:34\n LibClassicDurationsInitialized = true\n SetTargetCastbarPosition = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:47\n ClearFocus = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:590\n UNIT_AURA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:439\n db = <table> {\n }\n PLAYER_GUID = \"Player-5220-01B468FB\"\n activeTimers = <table> {\n }\n SetCastbarStatusColorsOnDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:299\n StopAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:182\n CreateFadeAnimationGroup = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:284\n 0 = <userdata>\n activeFrames = <table> {\n }\n ZONE_CHANGED_NEW_AREA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:360\n SetLSMBorders = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:231\n SetCastbarStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:156\n StartAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:172\n defaultConfig = <table> {\n }\n HideCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:354\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:517\n GetUnitType = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:50\n PLAYER_TARGET_CHANGED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:454\n}\ncastbar = StatusBar {\n 0 = <userdata>\n animationGroup = AnimationGroup {\n }\n Border = Texture {\n }\n Flash = Texture {\n }\n showCastbar = true\n _data = <table> {\n }\n Icon = Texture {\n }\n startChannelColor = <table> {\n }\n finishedCastColor = <table> {\n }\n nonInterruptibleColor = <table> {\n }\n Text = FontString {\n }\n BorderFrameLSM = Frame {\n }\n fade = Alpha {\n }\n currWidth = 300\n Timer = FontString {\n }\n BorderShield = Texture {\n }\n Spark = Texture {\n }\n startCastColor = <table> {\n }\n flashColorSameAsStart = true\n notInterruptible = false\n failedCastColor = <table> {\n }\n}\ncast ",
+			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:96: in function `SetCastbarIconAndText'\n[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:330: in function `DisplayCastbar'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:144: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:177: in function `StartAllCasts'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:234: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?",
+			["session"] = 10339,
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "Interface/AddOns/ClassicCastbars/Core/Frames.lua:97: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2023/09/09 19:29:22",
+			["locals"] = "self = ClassicCastbars {\n NAME_PLATE_UNIT_REMOVED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:473\n StoreCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193\n CreateOrUpdateSecureFocusButton = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:560\n PLAYER_ENTERING_WORLD = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:345\n SkinPlayerCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:456\n ToggleUnitEvents = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:315\n DeleteCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:238\n NAME_PLATE_UNIT_ADDED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:461\n DisplayCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:313\n SetBorderShieldStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:109\n AnchorManager = <table> {\n }\n SetFocusDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:608\n StartCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:131\n SetCastbarFonts = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:257\n CheckCastModifiers = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:61\n SetCastbarIconAndText = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:83\n ADDON_LOADED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:426\n CastPushback = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:255\n StopCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:158\n GROUP_ROSTER_UPDATE = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:484\n GetCastbarFrame = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:34\n LibClassicDurationsInitialized = true\n SetTargetCastbarPosition = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:47\n ClearFocus = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:591\n UNIT_AURA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:439\n db = <table> {\n }\n PLAYER_GUID = \"Player-5220-01B468FB\"\n activeTimers = <table> {\n }\n SetCastbarStatusColorsOnDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:300\n StopAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:182\n CreateFadeAnimationGroup = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:285\n 0 = <userdata>\n activeFrames = <table> {\n }\n ZONE_CHANGED_NEW_AREA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:360\n SetLSMBorders = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:232\n SetCastbarStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:157\n StartAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:172\n defaultConfig = <table> {\n }\n HideCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:355\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:517\n GetUnitType = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:50\n PLAYER_TARGET_CHANGED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:454\n}\ncastbar = StatusBar {\n 0 = <userdata>\n animationGroup = AnimationGroup {\n }\n Border = Texture {\n }\n Flash = Texture {\n }\n showCastbar = true\n _data = <table> {\n }\n Icon = Texture {\n }\n startChannelColor = <table> {\n }\n finishedCastColor = <table> {\n }\n nonInterruptibleColor = <table> {\n }\n Text = FontString {\n }\n BorderFrameLSM = Frame {\n }\n fade = Alpha {\n }\n currWidth = 300\n Timer = FontString {\n }\n BorderShield = Texture {\n }\n Spark = Texture {\n }\n startCastColor = <table> {\n }\n flashColorSameAsStart = true\n notInterruptible = false\n failedCastColor = <table> {\n }\n}\ncast ",
+			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:97: in function `SetCastbarIconAndText'\n[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:331: in function `DisplayCastbar'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:144: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:177: in function `StartAllCasts'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:234: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?",
+			["session"] = 10340,
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "Interface/AddOns/ClassicCastbars/Core/Frames.lua:151: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2023/09/09 19:32:00",
+			["locals"] = "self = ClassicCastbars {\n NAME_PLATE_UNIT_REMOVED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:473\n StoreCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193\n CreateOrUpdateSecureFocusButton = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:558\n PLAYER_ENTERING_WORLD = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:345\n SkinPlayerCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:454\n ToggleUnitEvents = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:315\n DeleteCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:238\n NAME_PLATE_UNIT_ADDED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:461\n DisplayCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:311\n SetBorderShieldStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:106\n AnchorManager = <table> {\n }\n SetFocusDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:606\n StartCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:131\n SetCastbarFonts = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:255\n CheckCastModifiers = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:61\n SetCastbarIconAndText = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:83\n ADDON_LOADED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:426\n CastPushback = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:255\n StopCast = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:158\n GROUP_ROSTER_UPDATE = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:484\n GetCastbarFrame = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:34\n LibClassicDurationsInitialized = true\n SetTargetCastbarPosition = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:47\n ClearFocus = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:589\n UNIT_AURA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:439\n db = <table> {\n }\n PLAYER_GUID = \"Player-5220-01B468FB\"\n activeTimers = <table> {\n }\n SetCastbarStatusColorsOnDisplay = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:298\n StopAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:182\n CreateFadeAnimationGroup = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:283\n 0 = <userdata>\n activeFrames = <table> {\n }\n ZONE_CHANGED_NEW_AREA = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:360\n SetLSMBorders = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:230\n SetCastbarStyle = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:155\n StartAllCasts = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:172\n defaultConfig = <table> {\n }\n HideCastbar = <function> defined @Interface/AddOns/ClassicCastbars/Core/Frames.lua:353\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:517\n GetUnitType = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:50\n PLAYER_TARGET_CHANGED = <function> defined @Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:454\n}\ncastbar = StatusBar {\n 0 = <userdata>\n animationGroup = AnimationGroup {\n }\n Border = Texture {\n }\n Flash = Texture {\n }\n showCastbar = true\n _data = <table> {\n }\n Icon = Texture {\n }\n startChannelColor = <table> {\n }\n finishedCastColor = <table> {\n }\n nonInterruptibleColor = <table> {\n }\n Text = FontString {\n }\n BorderFrameLSM = Frame {\n }\n fade = Alpha {\n }\n currWidth = 300\n Timer = FontString {\n }\n BorderShield = Texture {\n }\n Spark = Texture {\n }\n startCastColor = <table> {\n }\n flashColorSameAsStart = true\n notInterruptible = false\n failedCastColor = <table> {\n }\n}\ncast ",
+			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:151: in function `SetBorderShieldStyle'\n[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:222: in function `SetCastbarStyle'\n[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:328: in function `DisplayCastbar'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:144: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:177: in function `StartAllCasts'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:234: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:193>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?",
+			["session"] = 10341,
+			["counter"] = 1,
+		}, -- [40]
+		{
+			["message"] = "[string \"castbar.BorderFrameLSM:SetAlpha(0)\"]:1: attempt to index global 'castbar' (a nil value)",
+			["time"] = "2023/09/09 19:34:02",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'castbar' (a nil value)\"\n",
+			["stack"] = "[string \"castbar.BorderFrameLSM:SetAlpha(0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10342,
+			["counter"] = 2,
+		}, -- [41]
+		{
+			["message"] = "[string \"castbar.BorderFrameLSM:SetAlpha(1)\"]:1: attempt to index global 'castbar' (a nil value)",
+			["time"] = "2023/09/09 19:34:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'castbar' (a nil value)\"\n",
+			["stack"] = "[string \"castbar.BorderFrameLSM:SetAlpha(1)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10342,
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "[string \"castbar.BorderFrameLSM:CreateBeautyBorder(8...\"]:1: attempt to index global 'castbar' (a nil value)",
+			["time"] = "2023/09/09 19:34:29",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'castbar' (a nil value)\"\n",
+			["stack"] = "[string \"castbar.BorderFrameLSM:CreateBeautyBorder(8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10342,
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'NugKeyFeedback' tried to call the protected function 'CopyToClipboard()'.",
+			["time"] = "2023/09/09 20:33:17",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface/AddOns/Blizzard_DebugTools/Blizzard_DebugTools.lua\"]:103: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface/AddOns/Blizzard_DebugTools/Blizzard_DebugTools.lua\"]:73: in function `command'\n[string \"@Interface/SharedXML/KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface/SharedXML/KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface/AddOns/Blizzard_DebugTools/Blizzard_DebugTools.lua\"]:316: in function <...e/AddOns/Blizzard_DebugTools/Blizzard_DebugTools.lua:315>",
+			["session"] = 10350,
+			["counter"] = 1,
+		}, -- [44]
+		{
+			["message"] = "...e/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:95: attempt to index field '?' (a nil value)",
+			["time"] = "2023/09/09 20:42:13",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:68\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:96\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:48\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:250\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:85\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:131\n IfUnitIsCastingInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:206\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:140\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:240\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:277\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n Config = <table> {\n }\n ClassColor = <table> {\n }\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:123\n WaitTimeUntillAddonLoaded = 30\n R6_Occupied = false\n Class = \"SHAMAN\"\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:194\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:230\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:220\n}\nLoDMap = <table> {\n Blizzard_Calendar = <table> {\n }\n Blizzard_AuctionUI = <table> {\n }\n Blizzard_TrainerUI = <table> {\n }\n Blizzard_InspectUI = <table> {\n }\n Blizzard_TradeSkillUI = <table> {\n }\n Blizzard_MacroUI = <table> {\n }\n Blizzard_TalentUI = <table> {\n }\n Blizzard_CraftUI = <table> {\n }\n}\nf = Frame {\n 0 = <userdata>\n}\n(for index) = 1\n(for limit) = 50\n(for step) = 1\nmailbox = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = \"Button\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = QuestFrame {\n 0 = <userdata>\n SetWidth = <function> defined =[C]:-1\n SetScript = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPoint = <function> defined =[C]:-1\n}\n(*temporary) = PetStableFrame {\n 0 = <userdata>\n SetWidth = <function> defined =[C]:-1\n SetScript = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPoint = <function> defined =[C]:-1\n}\n(*temporary) = GossipFrame {\n 0 = <userdata>\n SetScript = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPortraitShown = <function> defined @Interface/SharedXML/PortraitFrame.lua:102\n GetTitleText = <function> defined @Interface/SharedXML/PortraitFrame.lua:28\n SetPortraitTexCoord = <function> defined @Interface/SharedXML/PortraitFrame.lua:98\n tutorialButtons = <table> {\n }\n SetPortraitTextureRaw = <function> defined @Interface/SharedXML/PortraitFrame.lua:84\n OnShow = <function> defined @Interface/FrameXML/GossipFrameShared.lua:149\n SetGossipTitle = <function> defined @Interface/FrameXML/GossipFrameShared.lua:261\n SetTitleMaxLinesAndHeight = <function> defined @Interface/SharedXML/PortraitFrame.lua:49\n SetTitleColor = <function> defined @Interface/SharedXML/PortraitFrame.lua:32\n SetWidth = <function> defined =[C]:-1\n SetTitle = <function> defined @Interface/SharedXML/PortraitFrame.lua:36\n SetTitleOffsets = <function> defined @Interface/SharedXML/PortraitFrame.lua:54\n SetBorder = <function> defined @Interface/SharedXML/PortraitFrame.lua:67\n Update = <function> defined @Interface/FrameXML/GossipFrameShared.lua:208\n GreetingPanel = Frame {\n }\n SetFrameLevelsFromBaseLevel = <function> defined @Interface/SharedXML/PortraitFrame.lua:120\n SetPortraitToBag = <function> defined @Interface/SharedXML/PortraitFrame.lua:80\n SetPortraitAtlasRaw = <function> defined @Interface/SharedXML/PortraitFrame.lua:88\n SetPortraitToUnit = <function> defined @Interface/SharedXML/PortraitFrame.lua:76\n PortraitContainer = Frame {\n }\n SetPoint = <function> defined =[C]:-1\n CloseButton = Button {\n }\n GetPortrait = <function> defined @Interfac",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua\"]:95: in main chunk",
+			["session"] = 10351,
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
+			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
+			["counter"] = 1,
+		}, -- [46]
+		{
+			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
+			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
+			["counter"] = 1,
+		}, -- [47]
+		{
+			["message"] = "...e/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:103: attempt to index field '?' (a nil value)",
+			["time"] = "2023/09/09 20:43:48",
+			["locals"] = "self = Frame {\n 0 = <userdata>\n}\nevent = \"MAIL_SHOW\"\n(for index) = 1\n(for limit) = 50\n(for step) = 1\nmailbox = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = \"Button\"\n(*temporary) = \"attempt to index field '?' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua\"]:103: in function <...e/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:101>\n[string \"=[C]\"]: in function `TurnOrActionStop'\n[string \"TURNORACTION\"]:4: in function <[string \"TURNORACTION\"]:1>",
+			["session"] = 10353,
+			["counter"] = 5,
+		}, -- [48]
 	},
 }

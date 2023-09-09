@@ -8,6 +8,7 @@ for i, v in pairs(
 		FriendsFrame,
 		QuestLogFrame,
 		MailFrame,
+		OpenMailFrame,
 		ItemTextFrame,
 		DressUpFrame,
 		TaxiFrame,
@@ -85,3 +86,4 @@ f:SetScript(
 		end
 	end
 )
+

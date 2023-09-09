@@ -148,7 +148,7 @@ function addon:SetBorderShieldStyle(castbar, cast, db, unitID)
             castbar.IconShield:Hide()
         end
         castbar.Icon:SetPoint("LEFT", castbar, db.iconPositionX - db.iconSize, db.iconPositionY)
-    end
+	end
 end
 
 function addon:SetCastbarStyle(castbar, cast, db, unitID)

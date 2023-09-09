@@ -3,4003 +3,4003 @@ Blizzard_Console_SavedVars = {
 	["version"] = 3,
 	["messageHistory"] = {
 		{
-			"Multithreaded alpha water volumes pass enabled.", -- [1]
+			"Skill 136 increased from 55 to 56", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
-			"Multithreaded daynight update enabled.", -- [1]
+			"Skill 136 increased from 56 to 57", -- [1]
 			0, -- [2]
 		}, -- [2]
 		{
-			"Water detail changed to 2", -- [1]
+			"Skill 186 increased from 80 to 81", -- [1]
 			0, -- [2]
 		}, -- [3]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Skill 182 increased from 65 to 66", -- [1]
 			0, -- [2]
 		}, -- [4]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Skill 95 increased from 56 to 57", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Skill 182 increased from 66 to 67", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Skill 182 increased from 67 to 68", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"Projected textures enabled.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"Spell Clutter set to dynamic", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"Shadow mode changed to 3 - 3 band dynamic shadows on units and terrain, 2048", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [11]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [12]
 		{
-			"Shadow cascade blending changed to 1", -- [1]
-			0, -- [2]
+			"Unknown console command (overridefarclip 1)", -- [1]
+			3, -- [2]
 		}, -- [13]
 		{
-			"Shadow RT mode changed to 0 (Disabled)", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [14]
 		{
-			"maxLightCount must be in range 0 to 32.", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [15]
 		{
-			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
-			0, -- [2]
+			"Unknown console command (SSAODistance 750)", -- [1]
+			3, -- [2]
 		}, -- [16]
 		{
-			"SSAO mode set to 4", -- [1]
-			0, -- [2]
+			"Unknown console command (extshadowquality 5)", -- [1]
+			3, -- [2]
 		}, -- [17]
 		{
-			"SSAO type set to 0", -- [1]
-			0, -- [2]
+			"Unknown console command (smallcull 0)", -- [1]
+			3, -- [2]
 		}, -- [18]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"SkyCloudLOD set to 2", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
-			"Texture filtering mode updated.", -- [1]
-			0, -- [2]
+			"Unknown console command (showfootprints 1)", -- [1]
+			3, -- [2]
 		}, -- [20]
 		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
+			"Unknown console command (environmentDetail 150)", -- [1]
+			3, -- [2]
 		}, -- [21]
 		{
-			"Render scale changed to 1", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [22]
 		{
-			"Resample quality changed to 3", -- [1]
-			0, -- [2]
+			"Unknown console command (detailDoodadAlpha 100)", -- [1]
+			3, -- [2]
 		}, -- [23]
 		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
+			"Unknown console command (characterAmbient 1)", -- [1]
+			3, -- [2]
 		}, -- [24]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [25]
 		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
+			"Unsupported ripple detail mode.", -- [1]
 			0, -- [2]
 		}, -- [26]
 		{
-			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [27]
 		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
-			0, -- [2]
+			"Unknown console command (spellEffectLevel 30)", -- [1]
+			3, -- [2]
 		}, -- [28]
 		{
-			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
-			0, -- [2]
+			"Unknown console command (doodadLodDist 1000)", -- [1]
+			3, -- [2]
 		}, -- [29]
 		{
-			"lodObjectSizeScale cannot be changed.", -- [1]
-			0, -- [2]
+			"Unknown console command (horizonfarclip 6226)", -- [1]
+			3, -- [2]
 		}, -- [30]
 		{
-			"dynamicLod enabled", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [31]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Total: 0d 15h 48m 40s", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"World load object sort enabled.", -- [1]
+			"Level: 0d 1h 14m 15s", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
-			"World preload non critical disabled.", -- [1]
+			"Skill 129 increased from 73 to 74", -- [1]
 			0, -- [2]
 		}, -- [34]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Skill 129 increased from 74 to 75", -- [1]
 			0, -- [2]
 		}, -- [35]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Skill 129 increased from 75 to 76", -- [1]
 			0, -- [2]
 		}, -- [36]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [37]
 		{
-			"Error display disabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [38]
 		{
-			"Error display shown", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [39]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"Now filtering: all messages", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
+			"Unknown console command (overridefarclip 1)", -- [1]
+			3, -- [2]
 		}, -- [43]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
+			"Unknown console command (SSAODistance 750)", -- [1]
+			3, -- [2]
 		}, -- [46]
 		{
-			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
+			"Unknown console command (extshadowquality 5)", -- [1]
+			3, -- [2]
 		}, -- [47]
 		{
-			"[GlueLogin] [F] Resetting", -- [1]
-			0, -- [2]
+			"Unknown console command (smallcull 0)", -- [1]
+			3, -- [2]
 		}, -- [48]
 		{
-			"[IBN_Login] [F] Initializing", -- [1]
+			"SkyCloudLOD set to 2", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
+			"Unknown console command (showfootprints 1)", -- [1]
+			3, -- [2]
 		}, -- [50]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
-			0, -- [2]
+			"Unknown console command (environmentDetail 150)", -- [1]
+			3, -- [2]
 		}, -- [51]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
-			0, -- [2]
+			"Unknown console command (detailDoodadAlpha 100)", -- [1]
+			3, -- [2]
 		}, -- [53]
 		{
-			"[GlueLogin] [F] Logon complete.", -- [1]
-			0, -- [2]
+			"Unknown console command (characterAmbient 1)", -- [1]
+			3, -- [2]
 		}, -- [54]
 		{
-			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694193899\" expirationTime=\"1694208299\"", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			"Unsupported ripple detail mode.", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
+			"Unknown console command (spellEffectLevel 30)", -- [1]
+			3, -- [2]
 		}, -- [58]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
-			0, -- [2]
+			"Unknown console command (doodadLodDist 1000)", -- [1]
+			3, -- [2]
 		}, -- [59]
 		{
-			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
+			"Unknown console command (horizonfarclip 6226)", -- [1]
+			3, -- [2]
 		}, -- [60]
 		{
-			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"[GlueLogin] [F] Realm list ready.", -- [1]
+			"Total: 0d 16h 26m 17s", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
+			"Level: 0d 1h 51m 52s", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"Got new connection 2", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
+			"Total: 0d 16h 29m 33s", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
+			"Level: 0d 1h 55m 8s", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 0d 16h 35m 40s", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Level: 0d 2h 1m 15s", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"Proficiency in item class 2 set to 0x0000004000", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"Proficiency in item class 2 set to 0x0000004004", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Proficiency in item class 4 set to 0x0000000200", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000201", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"Time set to 9/8/2023 (Fri) 19:25", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Proficiency in item class 4 set to 0x0000000205", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 4 set to 0x0000000245", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"Total: 0d 12h 50m 51s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"Level: 0d 0h 45m 0s", -- [1]
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"Skill 182 increased from 56 to 57", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"Skill 186 increased from 79 to 80", -- [1]
+			"Time set to 9/9/2023 (Sat) 10:47", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"Skill 182 increased from 57 to 58", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"Skill 182 increased from 58 to 59", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"Skill 182 increased from 59 to 60", -- [1]
+			"Total: 0d 5h 35m 41s", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"Skill 125 increased from 70 to 75", -- [1]
+			"Level: 0d 3h 45m 39s", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"Skill 261 increased from 70 to 75", -- [1]
+			"Skill 333 increased from 36 to 37", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"Skill 50 increased from 70 to 75", -- [1]
+			"Skill 333 increased from 37 to 38", -- [1]
 			0, -- [2]
 		}, -- [102]
 		{
-			"Skill 51 increased from 70 to 75", -- [1]
+			"Skill 333 increased from 38 to 39", -- [1]
 			0, -- [2]
 		}, -- [103]
 		{
-			"Skill 183 increased from 70 to 75", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [104]
 		{
-			"Skill 163 increased from 70 to 75", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [105]
 		{
-			"Skill 136 increased from 38 to 39", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [106]
 		{
-			"Skill 95 increased from 53 to 54", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [107]
 		{
-			"Skill 45 increased from 70 to 71", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [108]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"Skill 45 increased from 71 to 72", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"Skill 45 increased from 72 to 73", -- [1]
+			"Proficiency in item class 2 set to 0x0000004000", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"Skill 136 increased from 39 to 40", -- [1]
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"Skill 45 increased from 73 to 74", -- [1]
+			"Proficiency in item class 2 set to 0x0000004004", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"Skill 182 increased from 60 to 61", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
-			"Skill 129 increased from 64 to 65", -- [1]
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
 			0, -- [2]
 		}, -- [115]
 		{
-			"Skill 129 increased from 65 to 66", -- [1]
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
 		}, -- [116]
 		{
-			"Skill 129 increased from 66 to 67", -- [1]
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
 		}, -- [117]
 		{
-			"Skill 129 increased from 67 to 68", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [118]
 		{
-			"Skill 129 increased from 68 to 69", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [119]
 		{
-			"Skill 129 increased from 69 to 70", -- [1]
+			"Time set to 9/9/2023 (Sat) 10:55", -- [1]
 			0, -- [2]
 		}, -- [120]
 		{
-			"Skill 129 increased from 70 to 71", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [121]
 		{
-			"Skill 129 increased from 71 to 72", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [122]
 		{
-			"Skill 129 increased from 72 to 73", -- [1]
+			"Total: 0d 16h 37m 4s", -- [1]
 			0, -- [2]
 		}, -- [123]
 		{
-			"Skill 136 increased from 40 to 41", -- [1]
+			"Level: 0d 2h 2m 39s", -- [1]
 			0, -- [2]
 		}, -- [124]
 		{
-			"Skill 136 increased from 41 to 42", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [125]
 		{
-			"Skill 136 increased from 42 to 43", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
-			"Skill 182 increased from 61 to 62", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [127]
 		{
-			"Skill 45 increased from 74 to 75", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"Skill 136 increased from 43 to 44", -- [1]
+			"Total: 0d 16h 39m 7s", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Skill 182 increased from 62 to 63", -- [1]
+			"Level: 0d 2h 4m 42s", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"Skill 95 increased from 54 to 55", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"Skill 136 increased from 44 to 45", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Total: 0d 16h 46m 13s", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Time played:", -- [1]
+			"Level: 0d 2h 11m 48s", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"Total: 0d 14h 16m 43s", -- [1]
+			"Skill 136 increased from 57 to 58", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"Level: 0d 0h 54m 28s", -- [1]
+			"Skill 136 increased from 58 to 59", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 136 increased from 59 to 60", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 136 increased from 60 to 61", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Skill 95 increased from 57 to 58", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 136 increased from 61 to 62", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 136 increased from 62 to 63", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
-			"Time played:", -- [1]
+			"Skill 136 increased from 63 to 64", -- [1]
 			0, -- [2]
 		}, -- [144]
 		{
-			"Total: 0d 14h 19m 11s", -- [1]
+			"Skill 136 increased from 64 to 65", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Level: 0d 0h 56m 56s", -- [1]
+			"Skill 95 increased from 58 to 59", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Skill 136 increased from 65 to 66", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 136 increased from 66 to 67", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"Time played:", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"Total: 0d 14h 19m 38s", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"Level: 0d 0h 57m 23s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Total: 0d 17h 0m 19s", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Level: 0d 2h 25m 54s", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 136 increased from 67 to 68", -- [1]
 			0, -- [2]
 		}, -- [155]
 		{
-			"Time played:", -- [1]
+			"Skill 182 increased from 68 to 69", -- [1]
 			0, -- [2]
 		}, -- [156]
 		{
-			"Total: 0d 14h 21m 2s", -- [1]
+			"Skill 125 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [157]
 		{
-			"Level: 0d 0h 58m 47s", -- [1]
+			"Skill 261 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [158]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Skill 50 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [159]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 51 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [160]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 183 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [161]
 		{
-			"Time played:", -- [1]
+			"Skill 163 increased from 80 to 85", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
-			"Total: 0d 14h 24m 5s", -- [1]
+			"Skill 45 increased from 80 to 81", -- [1]
 			0, -- [2]
 		}, -- [163]
 		{
-			"Level: 0d 1h 1m 50s", -- [1]
+			"Skill 136 increased from 68 to 69", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Skill 45 increased from 81 to 82", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Skill 45 increased from 82 to 83", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 186 increased from 81 to 82", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 45 increased from 83 to 84", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"Got new connection 3", -- [1]
+			"Skill 136 increased from 69 to 70", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"Proficiency in item class 4 set to 0x0000000200", -- [1]
+			"Skill 136 increased from 70 to 71", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"Proficiency in item class 4 set to 0x0000000201", -- [1]
+			"Skill 95 increased from 59 to 60", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"Skill 182 increased from 69 to 70", -- [1]
 			0, -- [2]
 		}, -- [174]
 		{
-			"Proficiency in item class 4 set to 0x0000000205", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [175]
 		{
-			"Proficiency in item class 4 set to 0x0000000245", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [176]
 		{
-			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [177]
 		{
-			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [178]
 		{
-			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [179]
 		{
-			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [180]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [181]
 		{
-			"Time set to 9/8/2023 (Fri) 21:01", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [182]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [183]
 		{
-			"Time played:", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [184]
 		{
-			"Total: 0d 5h 34m 57s", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [185]
 		{
-			"Level: 0d 3h 44m 55s", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [186]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Multithreaded particulate volumes pass disabled.", -- [1]
 			0, -- [2]
 		}, -- [187]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Multithreaded alpha water volumes pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [188]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Multithreaded daynight update enabled.", -- [1]
 			0, -- [2]
 		}, -- [189]
 		{
-			"Time played:", -- [1]
+			"Water detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"Total: 0d 5h 35m 9s", -- [1]
+			"Ripple detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"Level: 0d 3h 45m 7s", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [193]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Sunshafts quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [194]
 		{
-			"Sorting particles normally.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [195]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Spell Clutter intensity value set", -- [1]
 			0, -- [2]
 		}, -- [196]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
 			0, -- [2]
 		}, -- [197]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Shadow texture size changed to 1024.", -- [1]
 			0, -- [2]
 		}, -- [198]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [199]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Shadow cascade blending changed to 0", -- [1]
 			0, -- [2]
 		}, -- [200]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Shadow RT mode changed to 0 (Disabled)", -- [1]
 			0, -- [2]
 		}, -- [201]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [202]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [203]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"SSAO mode set to 0", -- [1]
 			0, -- [2]
 		}, -- [204]
 		{
-			"Multithreaded particulate volumes pass disabled.", -- [1]
+			"SSAO type set to 0", -- [1]
 			0, -- [2]
 		}, -- [205]
 		{
-			"Multithreaded alpha water volumes pass enabled.", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [206]
 		{
-			"Multithreaded daynight update enabled.", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [207]
 		{
-			"Water detail changed to 2", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [208]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Render scale changed to 0.75", -- [1]
 			0, -- [2]
 		}, -- [209]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [210]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [211]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [212]
 		{
-			"Projected textures enabled.", -- [1]
+			"Variable Rate Shading not supported on this hardware", -- [1]
 			0, -- [2]
 		}, -- [213]
 		{
-			"Spell Clutter set to dynamic", -- [1]
+			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [214]
 		{
-			"Shadow mode changed to 3 - 3 band dynamic shadows on units and terrain, 2048", -- [1]
+			"Variable Rate Shading not supported on this hardware", -- [1]
 			0, -- [2]
 		}, -- [215]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [216]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [217]
 		{
-			"Shadow cascade blending changed to 1", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [218]
 		{
-			"Shadow RT mode changed to 0 (Disabled)", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [219]
 		{
-			"maxLightCount must be in range 0 to 32.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [220]
 		{
-			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [221]
 		{
-			"SSAO mode set to 4", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [222]
 		{
-			"SSAO type set to 0", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [223]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [224]
 		{
-			"Texture filtering mode updated.", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [225]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [226]
 		{
-			"Render scale changed to 1", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [227]
 		{
-			"Resample quality changed to 3", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [228]
 		{
-			"MSAA disabled", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [229]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [230]
 		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [231]
 		{
-			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [232]
 		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [233]
 		{
-			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [234]
 		{
-			"lodObjectSizeScale cannot be changed.", -- [1]
+			"[GlueLogin] [F] Resetting", -- [1]
 			0, -- [2]
 		}, -- [235]
 		{
-			"dynamicLod enabled", -- [1]
+			"[IBN_Login] [F] Initializing", -- [1]
 			0, -- [2]
 		}, -- [236]
 		{
-			"World preload object sort enabled.", -- [1]
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [237]
 		{
-			"World load object sort enabled.", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [238]
 		{
-			"World preload non critical disabled.", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [239]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [240]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"[GlueLogin] [F] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [241]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694254725\" expirationTime=\"1694269125\"", -- [1]
 			0, -- [2]
 		}, -- [242]
 		{
-			"Error display disabled", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [243]
 		{
-			"Error display shown", -- [1]
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [244]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [245]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [246]
 		{
-			"Now filtering: all messages", -- [1]
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [247]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [248]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[GlueLogin] [F] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [249]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
 			0, -- [2]
 		}, -- [250]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [251]
 		{
-			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [252]
 		{
-			"[GlueLogin] [F] Resetting", -- [1]
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [253]
 		{
-			"[IBN_Login] [F] Initializing", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [254]
 		{
-			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [255]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [256]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [257]
 		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [258]
 		{
-			"[GlueLogin] [F] Logon complete.", -- [1]
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [259]
 		{
-			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694241111\" expirationTime=\"1694255511\"", -- [1]
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [260]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [261]
 		{
-			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [262]
 		{
-			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [263]
 		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [264]
 		{
-			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [265]
 		{
-			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			"Proficiency in item class 2 set to 0x0000004000", -- [1]
 			0, -- [2]
 		}, -- [266]
 		{
-			"[GlueLogin] [F] Realm list ready.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
 			0, -- [2]
 		}, -- [267]
 		{
-			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
+			"Proficiency in item class 2 set to 0x0000004004", -- [1]
 			0, -- [2]
 		}, -- [268]
 		{
-			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [269]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
 			0, -- [2]
 		}, -- [270]
 		{
-			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
 		}, -- [271]
 		{
-			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
 		}, -- [272]
 		{
-			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [273]
 		{
-			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [274]
 		{
-			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Time set to 9/9/2023 (Sat) 12:19", -- [1]
 			0, -- [2]
 		}, -- [275]
 		{
-			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [276]
 		{
-			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [277]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [278]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [279]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [280]
 		{
-			"Got new connection 3", -- [1]
+			"Total: 0d 17h 30m 16s", -- [1]
 			0, -- [2]
 		}, -- [281]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Level: 0d 0h 25m 10s", -- [1]
 			0, -- [2]
 		}, -- [282]
 		{
-			"Proficiency in item class 2 set to 0x0000004000", -- [1]
+			"Shadow mode changed to 3 - 3 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [283]
 		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [284]
 		{
-			"Proficiency in item class 2 set to 0x0000004004", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [285]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Shadow cascade blending changed to 1", -- [1]
 			0, -- [2]
 		}, -- [286]
 		{
-			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [287]
 		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [288]
 		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [289]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [290]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [291]
 		{
-			"Time set to 9/9/2023 (Sat) 8:36", -- [1]
+			"Skill 136 increased from 71 to 72", -- [1]
 			0, -- [2]
 		}, -- [292]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Skill 45 increased from 84 to 85", -- [1]
 			0, -- [2]
 		}, -- [293]
 		{
-			"Time played:", -- [1]
+			"Skill 186 increased from 82 to 83", -- [1]
 			0, -- [2]
 		}, -- [294]
 		{
-			"Total: 0d 14h 27m 38s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [295]
 		{
-			"Level: 0d 1h 5m 23s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [296]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [297]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [298]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [299]
 		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [300]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [301]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [302]
 		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [303]
 		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [304]
 		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [305]
 		{
-			"SkyCloudLOD set to 2", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [306]
 		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [307]
 		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [308]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [309]
 		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [310]
 		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [311]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
-			"Unsupported ripple detail mode.", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [313]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [314]
 		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [315]
 		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [316]
 		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [317]
 		{
-			"Time played:", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [318]
 		{
-			"Total: 0d 14h 28m 29s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [319]
 		{
-			"Level: 0d 1h 6m 14s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [320]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [321]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [322]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [323]
 		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [324]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [325]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [326]
 		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [327]
 		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
+			0, -- [2]
 		}, -- [328]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [329]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [330]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [331]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [332]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [333]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [334]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [335]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [336]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [337]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [338]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [339]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [340]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [341]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [342]
-		{
-			"Total: 0d 14h 28m 52s", -- [1]
-			0, -- [2]
-		}, -- [343]
-		{
-			"Level: 0d 1h 6m 37s", -- [1]
-			0, -- [2]
-		}, -- [344]
-		{
-			"Skill 125 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [345]
-		{
-			"Skill 261 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [346]
-		{
-			"Skill 50 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [347]
-		{
-			"Skill 51 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [348]
-		{
-			"Skill 183 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [349]
-		{
-			"Skill 163 increased from 75 to 80", -- [1]
-			0, -- [2]
-		}, -- [350]
-		{
-			"Skill 136 increased from 45 to 46", -- [1]
-			0, -- [2]
-		}, -- [351]
-		{
-			"Skill 136 increased from 46 to 47", -- [1]
-			0, -- [2]
-		}, -- [352]
-		{
-			"Skill 136 increased from 47 to 48", -- [1]
-			0, -- [2]
-		}, -- [353]
-		{
-			"Skill 136 increased from 48 to 49", -- [1]
-			0, -- [2]
-		}, -- [354]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [355]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [356]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [357]
-		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
-		}, -- [358]
-		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [359]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [360]
-		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
-		}, -- [361]
-		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
-		}, -- [362]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [363]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [364]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [365]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [366]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [367]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [368]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [369]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [370]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [371]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [372]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [373]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [374]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [375]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [376]
-		{
-			"Total: 0d 14h 46m 20s", -- [1]
-			0, -- [2]
-		}, -- [377]
-		{
-			"Level: 0d 0h 11m 55s", -- [1]
-			0, -- [2]
-		}, -- [378]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [379]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [380]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [381]
-		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
-		}, -- [382]
-		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [383]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [384]
-		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
-		}, -- [385]
-		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
-		}, -- [386]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [387]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [388]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [389]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [390]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [391]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [392]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [393]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [394]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [395]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [396]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [397]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [398]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [399]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [400]
-		{
-			"Total: 0d 14h 46m 45s", -- [1]
-			0, -- [2]
-		}, -- [401]
-		{
-			"Level: 0d 0h 12m 20s", -- [1]
-			0, -- [2]
-		}, -- [402]
-		{
-			"Skill 45 increased from 75 to 76", -- [1]
-			0, -- [2]
-		}, -- [403]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [404]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [405]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [406]
-		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
-		}, -- [407]
-		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [408]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [409]
-		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
-		}, -- [410]
-		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
-		}, -- [411]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [412]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [413]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [414]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [415]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [416]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [417]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [418]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [419]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [420]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [421]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [422]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [423]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [424]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [425]
-		{
-			"Total: 0d 14h 49m 22s", -- [1]
-			0, -- [2]
-		}, -- [426]
-		{
-			"Level: 0d 0h 14m 57s", -- [1]
-			0, -- [2]
-		}, -- [427]
-		{
-			"Skill 45 increased from 76 to 77", -- [1]
-			0, -- [2]
-		}, -- [428]
-		{
-			"Skill 45 increased from 77 to 78", -- [1]
-			0, -- [2]
-		}, -- [429]
-		{
-			"Skill 182 increased from 63 to 64", -- [1]
-			0, -- [2]
-		}, -- [430]
-		{
-			"Skill 136 increased from 49 to 50", -- [1]
-			0, -- [2]
-		}, -- [431]
-		{
-			"Skill 45 increased from 78 to 79", -- [1]
-			0, -- [2]
-		}, -- [432]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [433]
-		{
-			"Skill 136 increased from 50 to 51", -- [1]
-			0, -- [2]
-		}, -- [434]
-		{
-			"Skill 45 increased from 79 to 80", -- [1]
-			0, -- [2]
-		}, -- [435]
-		{
-			"Skill 182 increased from 64 to 65", -- [1]
-			0, -- [2]
-		}, -- [436]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [437]
-		{
-			"Skill 136 increased from 51 to 52", -- [1]
-			0, -- [2]
-		}, -- [438]
-		{
-			"Skill 136 increased from 52 to 53", -- [1]
-			0, -- [2]
-		}, -- [439]
-		{
-			"Skill 136 increased from 53 to 54", -- [1]
-			0, -- [2]
-		}, -- [440]
-		{
-			"Skill 136 increased from 54 to 55", -- [1]
-			0, -- [2]
-		}, -- [441]
-		{
-			"Skill 95 increased from 55 to 56", -- [1]
-			0, -- [2]
-		}, -- [442]
-		{
-			"Skill 136 increased from 55 to 56", -- [1]
-			0, -- [2]
-		}, -- [443]
-		{
-			"Skill 136 increased from 56 to 57", -- [1]
-			0, -- [2]
-		}, -- [444]
-		{
-			"Skill 186 increased from 80 to 81", -- [1]
-			0, -- [2]
-		}, -- [445]
-		{
-			"Skill 182 increased from 65 to 66", -- [1]
-			0, -- [2]
-		}, -- [446]
-		{
-			"Skill 95 increased from 56 to 57", -- [1]
-			0, -- [2]
-		}, -- [447]
-		{
-			"Skill 182 increased from 66 to 67", -- [1]
-			0, -- [2]
-		}, -- [448]
-		{
-			"Skill 182 increased from 67 to 68", -- [1]
-			0, -- [2]
-		}, -- [449]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [450]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [451]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [452]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [453]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [454]
-		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
-		}, -- [455]
-		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [456]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [457]
-		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
-		}, -- [458]
-		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
-		}, -- [459]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [460]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [461]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [462]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [463]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [464]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [465]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [466]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [467]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [468]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [469]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [470]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [471]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [472]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [473]
-		{
-			"Total: 0d 15h 48m 40s", -- [1]
-			0, -- [2]
-		}, -- [474]
-		{
-			"Level: 0d 1h 14m 15s", -- [1]
-			0, -- [2]
-		}, -- [475]
-		{
-			"Skill 129 increased from 73 to 74", -- [1]
-			0, -- [2]
-		}, -- [476]
-		{
-			"Skill 129 increased from 74 to 75", -- [1]
-			0, -- [2]
-		}, -- [477]
-		{
-			"Skill 129 increased from 75 to 76", -- [1]
-			0, -- [2]
-		}, -- [478]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [479]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [480]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [481]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [482]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [483]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [484]
-		{
-			"Unknown console command (overridefarclip 1)", -- [1]
-			3, -- [2]
-		}, -- [485]
-		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [486]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [487]
-		{
-			"Unknown console command (SSAODistance 750)", -- [1]
-			3, -- [2]
-		}, -- [488]
-		{
-			"Unknown console command (extshadowquality 5)", -- [1]
-			3, -- [2]
-		}, -- [489]
-		{
-			"Unknown console command (smallcull 0)", -- [1]
-			3, -- [2]
-		}, -- [490]
-		{
-			"SkyCloudLOD set to 2", -- [1]
-			0, -- [2]
-		}, -- [491]
-		{
-			"Unknown console command (showfootprints 1)", -- [1]
-			3, -- [2]
-		}, -- [492]
-		{
-			"Unknown console command (environmentDetail 150)", -- [1]
-			3, -- [2]
-		}, -- [493]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [494]
-		{
-			"Unknown console command (detailDoodadAlpha 100)", -- [1]
-			3, -- [2]
-		}, -- [495]
-		{
-			"Unknown console command (characterAmbient 1)", -- [1]
-			3, -- [2]
-		}, -- [496]
-		{
-			"Reflection mode changed to 3", -- [1]
-			0, -- [2]
-		}, -- [497]
-		{
-			"Unsupported ripple detail mode.", -- [1]
-			0, -- [2]
-		}, -- [498]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [499]
-		{
-			"Unknown console command (spellEffectLevel 30)", -- [1]
-			3, -- [2]
-		}, -- [500]
-		{
-			"Unknown console command (doodadLodDist 1000)", -- [1]
-			3, -- [2]
-		}, -- [501]
-		{
-			"Unknown console command (horizonfarclip 6226)", -- [1]
-			3, -- [2]
-		}, -- [502]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [503]
-		{
-			"Total: 0d 16h 26m 17s", -- [1]
-			0, -- [2]
-		}, -- [504]
-		{
-			"Level: 0d 1h 51m 52s", -- [1]
-			0, -- [2]
-		}, -- [505]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [506]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [507]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [508]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [509]
-		{
-			"Total: 0d 16h 29m 33s", -- [1]
-			0, -- [2]
-		}, -- [510]
-		{
-			"Level: 0d 1h 55m 8s", -- [1]
-			0, -- [2]
-		}, -- [511]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [512]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [513]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [514]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [515]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [516]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [517]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [518]
-		{
-			"Total: 0d 16h 35m 40s", -- [1]
-			0, -- [2]
-		}, -- [519]
-		{
-			"Level: 0d 2h 1m 15s", -- [1]
-			0, -- [2]
-		}, -- [520]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [521]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [522]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [523]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [524]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [525]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [526]
-		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
-			0, -- [2]
-		}, -- [527]
-		{
-			"Proficiency in item class 4 set to 0x0000000200", -- [1]
-			0, -- [2]
-		}, -- [528]
-		{
-			"Proficiency in item class 4 set to 0x0000000201", -- [1]
-			0, -- [2]
-		}, -- [529]
-		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
-			0, -- [2]
-		}, -- [530]
-		{
-			"Proficiency in item class 4 set to 0x0000000205", -- [1]
-			0, -- [2]
-		}, -- [531]
-		{
-			"Proficiency in item class 4 set to 0x0000000245", -- [1]
-			0, -- [2]
-		}, -- [532]
-		{
-			"Proficiency in item class 4 set to 0x0000000247", -- [1]
-			0, -- [2]
-		}, -- [533]
-		{
-			"Proficiency in item class 2 set to 0x0000004410", -- [1]
-			0, -- [2]
-		}, -- [534]
-		{
-			"Proficiency in item class 2 set to 0x0000004410", -- [1]
-			0, -- [2]
-		}, -- [535]
-		{
-			"Proficiency in item class 4 set to 0x0000000247", -- [1]
-			0, -- [2]
-		}, -- [536]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [537]
-		{
-			"Time set to 9/9/2023 (Sat) 10:47", -- [1]
-			0, -- [2]
-		}, -- [538]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [539]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [540]
-		{
-			"Total: 0d 5h 35m 41s", -- [1]
-			0, -- [2]
-		}, -- [541]
-		{
-			"Level: 0d 3h 45m 39s", -- [1]
-			0, -- [2]
-		}, -- [542]
-		{
-			"Skill 333 increased from 36 to 37", -- [1]
-			0, -- [2]
-		}, -- [543]
-		{
-			"Skill 333 increased from 37 to 38", -- [1]
-			0, -- [2]
-		}, -- [544]
-		{
-			"Skill 333 increased from 38 to 39", -- [1]
-			0, -- [2]
-		}, -- [545]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [546]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [547]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [548]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [549]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [550]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [551]
-		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
-			0, -- [2]
-		}, -- [552]
-		{
-			"Proficiency in item class 2 set to 0x0000004000", -- [1]
-			0, -- [2]
-		}, -- [553]
-		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
-			0, -- [2]
-		}, -- [554]
-		{
-			"Proficiency in item class 2 set to 0x0000004004", -- [1]
-			0, -- [2]
-		}, -- [555]
-		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
-			0, -- [2]
-		}, -- [556]
-		{
-			"Proficiency in item class 2 set to 0x0000004005", -- [1]
-			0, -- [2]
-		}, -- [557]
-		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
-			0, -- [2]
-		}, -- [558]
-		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
-			0, -- [2]
-		}, -- [559]
-		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
-			0, -- [2]
-		}, -- [560]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [561]
-		{
-			"Time set to 9/9/2023 (Sat) 10:55", -- [1]
-			0, -- [2]
-		}, -- [562]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [563]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [564]
-		{
-			"Total: 0d 16h 37m 4s", -- [1]
-			0, -- [2]
-		}, -- [565]
-		{
-			"Level: 0d 2h 2m 39s", -- [1]
-			0, -- [2]
-		}, -- [566]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [567]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [568]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [569]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [570]
-		{
-			"Total: 0d 16h 39m 7s", -- [1]
-			0, -- [2]
-		}, -- [571]
-		{
-			"Level: 0d 2h 4m 42s", -- [1]
-			0, -- [2]
-		}, -- [572]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [573]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [574]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [575]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [576]
-		{
-			"Total: 0d 16h 46m 13s", -- [1]
-			0, -- [2]
-		}, -- [577]
-		{
-			"Level: 0d 2h 11m 48s", -- [1]
-			0, -- [2]
-		}, -- [578]
-		{
-			"Skill 136 increased from 57 to 58", -- [1]
-			0, -- [2]
-		}, -- [579]
-		{
-			"Skill 136 increased from 58 to 59", -- [1]
-			0, -- [2]
-		}, -- [580]
-		{
-			"Skill 136 increased from 59 to 60", -- [1]
-			0, -- [2]
-		}, -- [581]
-		{
-			"Skill 136 increased from 60 to 61", -- [1]
-			0, -- [2]
-		}, -- [582]
-		{
-			"Skill 95 increased from 57 to 58", -- [1]
-			0, -- [2]
-		}, -- [583]
-		{
-			"Skill 136 increased from 61 to 62", -- [1]
-			0, -- [2]
-		}, -- [584]
-		{
-			"Skill 136 increased from 62 to 63", -- [1]
-			0, -- [2]
-		}, -- [585]
-		{
-			"Skill 136 increased from 63 to 64", -- [1]
-			0, -- [2]
-		}, -- [586]
-		{
-			"Skill 136 increased from 64 to 65", -- [1]
-			0, -- [2]
-		}, -- [587]
-		{
-			"Skill 95 increased from 58 to 59", -- [1]
-			0, -- [2]
-		}, -- [588]
-		{
-			"Skill 136 increased from 65 to 66", -- [1]
-			0, -- [2]
-		}, -- [589]
-		{
-			"Skill 136 increased from 66 to 67", -- [1]
-			0, -- [2]
-		}, -- [590]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [591]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [592]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [593]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [594]
-		{
-			"Total: 0d 17h 0m 19s", -- [1]
-			0, -- [2]
-		}, -- [595]
-		{
-			"Level: 0d 2h 25m 54s", -- [1]
-			0, -- [2]
-		}, -- [596]
-		{
-			"Skill 136 increased from 67 to 68", -- [1]
-			0, -- [2]
-		}, -- [597]
-		{
-			"Skill 182 increased from 68 to 69", -- [1]
-			0, -- [2]
-		}, -- [598]
-		{
-			"Skill 125 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [599]
-		{
-			"Skill 261 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [600]
-		{
-			"Skill 50 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [601]
-		{
-			"Skill 51 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [602]
-		{
-			"Skill 183 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [603]
-		{
-			"Skill 163 increased from 80 to 85", -- [1]
-			0, -- [2]
-		}, -- [604]
-		{
-			"Skill 45 increased from 80 to 81", -- [1]
-			0, -- [2]
-		}, -- [605]
-		{
-			"Skill 136 increased from 68 to 69", -- [1]
-			0, -- [2]
-		}, -- [606]
-		{
-			"Skill 45 increased from 81 to 82", -- [1]
-			0, -- [2]
-		}, -- [607]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [608]
-		{
-			"Skill 45 increased from 82 to 83", -- [1]
-			0, -- [2]
-		}, -- [609]
-		{
-			"Skill 186 increased from 81 to 82", -- [1]
-			0, -- [2]
-		}, -- [610]
-		{
-			"Skill 45 increased from 83 to 84", -- [1]
-			0, -- [2]
-		}, -- [611]
-		{
-			"Skill 136 increased from 69 to 70", -- [1]
-			0, -- [2]
-		}, -- [612]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [613]
-		{
-			"Skill 136 increased from 70 to 71", -- [1]
-			0, -- [2]
-		}, -- [614]
-		{
-			"Skill 95 increased from 59 to 60", -- [1]
-			0, -- [2]
-		}, -- [615]
-		{
-			"Skill 182 increased from 69 to 70", -- [1]
-			0, -- [2]
-		}, -- [616]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [617]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [618]
-		{
-			"Sorting particles normally.", -- [1]
-			0, -- [2]
-		}, -- [619]
-		{
-			"Multithreaded rendering enabled.", -- [1]
-			0, -- [2]
-		}, -- [620]
-		{
-			"Multithreaded BeginDraw enabled.", -- [1]
-			0, -- [2]
-		}, -- [621]
-		{
-			"Multithread shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [622]
-		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
-		}, -- [623]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [624]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [625]
-		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [626]
-		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [627]
-		{
-			"Multithreaded terrain pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [628]
-		{
-			"Multithreaded particulate volumes pass disabled.", -- [1]
-			0, -- [2]
-		}, -- [629]
-		{
-			"Multithreaded alpha water volumes pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [630]
-		{
-			"Multithreaded daynight update enabled.", -- [1]
-			0, -- [2]
-		}, -- [631]
-		{
-			"Water detail changed to 0", -- [1]
-			0, -- [2]
-		}, -- [632]
-		{
-			"Ripple detail changed to 0", -- [1]
-			0, -- [2]
-		}, -- [633]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [634]
-		{
-			"Reflection downscale changed to 0", -- [1]
-			0, -- [2]
-		}, -- [635]
-		{
-			"Sunshafts quality changed to 0", -- [1]
-			0, -- [2]
-		}, -- [636]
-		{
-			"Projected textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [637]
-		{
-			"Spell Clutter intensity value set", -- [1]
-			0, -- [2]
-		}, -- [638]
-		{
-			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
-			0, -- [2]
-		}, -- [639]
-		{
-			"Shadow texture size changed to 1024.", -- [1]
-			0, -- [2]
-		}, -- [640]
-		{
-			"Soft shadows changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [641]
-		{
-			"Shadow cascade blending changed to 0", -- [1]
-			0, -- [2]
-		}, -- [642]
-		{
-			"Shadow RT mode changed to 0 (Disabled)", -- [1]
-			0, -- [2]
-		}, -- [643]
-		{
-			"maxLightCount must be in range 0 to 32.", -- [1]
-			0, -- [2]
-		}, -- [644]
-		{
-			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [645]
-		{
-			"SSAO mode set to 0", -- [1]
-			0, -- [2]
-		}, -- [646]
-		{
-			"SSAO type set to 0", -- [1]
-			0, -- [2]
-		}, -- [647]
-		{
-			"SkyCloudLOD set to 0", -- [1]
-			0, -- [2]
-		}, -- [648]
-		{
-			"Texture filtering mode updated.", -- [1]
-			0, -- [2]
-		}, -- [649]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [650]
-		{
-			"Render scale changed to 0.75", -- [1]
-			0, -- [2]
-		}, -- [651]
-		{
-			"Resample quality changed to 3", -- [1]
-			0, -- [2]
-		}, -- [652]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [653]
-		{
-			"MSAA for alpha-test enabled.", -- [1]
-			0, -- [2]
-		}, -- [654]
-		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
-			0, -- [2]
-		}, -- [655]
-		{
-			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [656]
-		{
-			"Variable Rate Shading not supported on this hardware", -- [1]
-			0, -- [2]
-		}, -- [657]
-		{
-			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [658]
-		{
-			"lodObjectSizeScale cannot be changed.", -- [1]
-			0, -- [2]
-		}, -- [659]
-		{
-			"dynamicLod enabled", -- [1]
-			0, -- [2]
-		}, -- [660]
-		{
-			"World preload object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [661]
-		{
-			"World load object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [662]
-		{
-			"World preload non critical enabled.", -- [1]
-			0, -- [2]
-		}, -- [663]
-		{
-			"World preload high res textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [664]
-		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
-			0, -- [2]
-		}, -- [665]
-		{
-			"Full memory crash dump disabled", -- [1]
-			0, -- [2]
-		}, -- [666]
-		{
-			"Error display disabled", -- [1]
-			0, -- [2]
-		}, -- [667]
-		{
-			"Error display shown", -- [1]
-			0, -- [2]
-		}, -- [668]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [669]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [670]
-		{
-			"Now filtering: all messages", -- [1]
-			0, -- [2]
-		}, -- [671]
-		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [672]
-		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [673]
-		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [674]
-		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [675]
-		{
-			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
-		}, -- [676]
-		{
-			"[GlueLogin] [F] Resetting", -- [1]
-			0, -- [2]
-		}, -- [677]
-		{
-			"[IBN_Login] [F] Initializing", -- [1]
-			0, -- [2]
-		}, -- [678]
-		{
-			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
-		}, -- [679]
-		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [680]
-		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [681]
-		{
-			"[GlueLogin] [F] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [682]
-		{
-			"[GlueLogin] [F] Logon complete.", -- [1]
-			0, -- [2]
-		}, -- [683]
-		{
-			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694254725\" expirationTime=\"1694269125\"", -- [1]
-			0, -- [2]
-		}, -- [684]
-		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [685]
-		{
-			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
-			0, -- [2]
-		}, -- [686]
-		{
-			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [687]
-		{
-			"[GlueLogin] [F] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [688]
-		{
-			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [689]
-		{
-			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [690]
-		{
-			"[GlueLogin] [F] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [691]
-		{
-			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
-			0, -- [2]
-		}, -- [692]
-		{
-			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [693]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [694]
-		{
-			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [695]
-		{
-			"Got new connection 2", -- [1]
-			0, -- [2]
-		}, -- [696]
-		{
-			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [697]
-		{
-			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [698]
-		{
-			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [699]
-		{
-			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [700]
-		{
-			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [701]
-		{
-			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
-			0, -- [2]
-		}, -- [702]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [703]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [704]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [705]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [706]
-		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
-			0, -- [2]
-		}, -- [707]
-		{
-			"Proficiency in item class 2 set to 0x0000004000", -- [1]
-			0, -- [2]
-		}, -- [708]
-		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
-			0, -- [2]
-		}, -- [709]
-		{
-			"Proficiency in item class 2 set to 0x0000004004", -- [1]
-			0, -- [2]
-		}, -- [710]
-		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
-			0, -- [2]
-		}, -- [711]
-		{
-			"Proficiency in item class 2 set to 0x0000004005", -- [1]
-			0, -- [2]
-		}, -- [712]
-		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
-			0, -- [2]
-		}, -- [713]
-		{
-			"Proficiency in item class 2 set to 0x0000004405", -- [1]
-			0, -- [2]
-		}, -- [714]
-		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
-			0, -- [2]
-		}, -- [715]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [716]
-		{
-			"Time set to 9/9/2023 (Sat) 12:19", -- [1]
-			0, -- [2]
-		}, -- [717]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [718]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [719]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [720]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [721]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [722]
-		{
-			"Total: 0d 17h 30m 16s", -- [1]
-			0, -- [2]
-		}, -- [723]
-		{
-			"Level: 0d 0h 25m 10s", -- [1]
-			0, -- [2]
-		}, -- [724]
-		{
-			"Shadow mode changed to 3 - 3 band dynamic shadows on units and terrain, 2048", -- [1]
-			0, -- [2]
-		}, -- [725]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [726]
-		{
-			"Soft shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [727]
-		{
-			"Shadow cascade blending changed to 1", -- [1]
-			0, -- [2]
-		}, -- [728]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [729]
-		{
-			"SSAO mode set to 4", -- [1]
-			0, -- [2]
-		}, -- [730]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [731]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [732]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [733]
-		{
-			"Skill 136 increased from 71 to 72", -- [1]
-			0, -- [2]
-		}, -- [734]
-		{
-			"Skill 45 increased from 84 to 85", -- [1]
-			0, -- [2]
-		}, -- [735]
-		{
-			"Skill 186 increased from 82 to 83", -- [1]
-			0, -- [2]
-		}, -- [736]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [737]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [738]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [739]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [740]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [741]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [742]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [743]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [744]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [745]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [746]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [747]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [748]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [749]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [750]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [751]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [752]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [753]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [754]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [755]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [756]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [757]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [758]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [759]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [760]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [761]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [762]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [763]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [764]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [765]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [766]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [767]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [768]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [769]
-		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
-			0, -- [2]
-		}, -- [770]
 		{
 			"Skill 136 increased from 72 to 73", -- [1]
 			0, -- [2]
-		}, -- [771]
+		}, -- [329]
 		{
 			"Skill 136 increased from 73 to 74", -- [1]
 			0, -- [2]
-		}, -- [772]
+		}, -- [330]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [773]
+		}, -- [331]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [774]
+		}, -- [332]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [775]
+		}, -- [333]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [776]
+		}, -- [334]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [777]
+		}, -- [335]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [778]
+		}, -- [336]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [779]
+		}, -- [337]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [780]
+		}, -- [338]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [781]
+		}, -- [339]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [782]
+		}, -- [340]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [783]
+		}, -- [341]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [784]
+		}, -- [342]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [785]
+		}, -- [343]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [786]
+		}, -- [344]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [787]
+		}, -- [345]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [788]
+		}, -- [346]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [789]
+		}, -- [347]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [790]
+		}, -- [348]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [791]
+		}, -- [349]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [792]
+		}, -- [350]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [793]
+		}, -- [351]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [794]
+		}, -- [352]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [795]
+		}, -- [353]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [796]
+		}, -- [354]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [797]
+		}, -- [355]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [798]
+		}, -- [356]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [799]
+		}, -- [357]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [800]
+		}, -- [358]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [801]
+		}, -- [359]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [802]
+		}, -- [360]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [803]
+		}, -- [361]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [804]
+		}, -- [362]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [805]
+		}, -- [363]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [806]
+		}, -- [364]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [807]
+		}, -- [365]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [808]
+		}, -- [366]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [809]
+		}, -- [367]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [810]
+		}, -- [368]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [811]
+		}, -- [369]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [812]
+		}, -- [370]
 		{
 			"Skill 95 increased from 60 to 61", -- [1]
 			0, -- [2]
-		}, -- [813]
+		}, -- [371]
 		{
 			"Skill 182 increased from 70 to 71", -- [1]
 			0, -- [2]
-		}, -- [814]
+		}, -- [372]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [815]
+		}, -- [373]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [816]
+		}, -- [374]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [817]
+		}, -- [375]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [818]
+		}, -- [376]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [819]
+		}, -- [377]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [820]
+		}, -- [378]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [821]
+		}, -- [379]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [822]
+		}, -- [380]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [823]
+		}, -- [381]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [824]
+		}, -- [382]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [825]
+		}, -- [383]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [826]
+		}, -- [384]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [827]
+		}, -- [385]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [828]
+		}, -- [386]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [829]
+		}, -- [387]
 		{
 			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13591, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
-		}, -- [830]
+		}, -- [388]
 		{
 			"Skill 186 increased from 83 to 84", -- [1]
 			0, -- [2]
-		}, -- [831]
+		}, -- [389]
 		{
 			"Skill 136 increased from 74 to 75", -- [1]
 			0, -- [2]
-		}, -- [832]
+		}, -- [390]
 		{
 			"Skill 182 increased from 71 to 72", -- [1]
 			0, -- [2]
-		}, -- [833]
+		}, -- [391]
 		{
 			"Skill 186 increased from 84 to 85", -- [1]
 			0, -- [2]
-		}, -- [834]
+		}, -- [392]
 		{
 			"Skill 95 increased from 61 to 62", -- [1]
 			0, -- [2]
-		}, -- [835]
+		}, -- [393]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [836]
+		}, -- [394]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [837]
+		}, -- [395]
 		{
 			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
-		}, -- [838]
+		}, -- [396]
 		{
 			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [839]
+		}, -- [397]
 		{
 			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [840]
+		}, -- [398]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [841]
+		}, -- [399]
 		{
 			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
-		}, -- [842]
+		}, -- [400]
 		{
 			"Proficiency in item class 2 set to 0x0000004000", -- [1]
 			0, -- [2]
-		}, -- [843]
+		}, -- [401]
 		{
 			"Proficiency in item class 4 set to 0x0000000005", -- [1]
 			0, -- [2]
-		}, -- [844]
+		}, -- [402]
 		{
 			"Proficiency in item class 2 set to 0x0000004004", -- [1]
 			0, -- [2]
-		}, -- [845]
+		}, -- [403]
 		{
 			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
-		}, -- [846]
+		}, -- [404]
 		{
 			"Proficiency in item class 2 set to 0x0000004005", -- [1]
 			0, -- [2]
-		}, -- [847]
+		}, -- [405]
 		{
 			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
-		}, -- [848]
+		}, -- [406]
 		{
 			"Proficiency in item class 2 set to 0x0000004405", -- [1]
 			0, -- [2]
-		}, -- [849]
+		}, -- [407]
 		{
 			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
-		}, -- [850]
+		}, -- [408]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [851]
+		}, -- [409]
 		{
 			"Time set to 9/9/2023 (Sat) 13:16", -- [1]
 			0, -- [2]
-		}, -- [852]
+		}, -- [410]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [853]
+		}, -- [411]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [854]
+		}, -- [412]
 		{
 			"Total: 0d 18h 16m 4s", -- [1]
 			0, -- [2]
-		}, -- [855]
+		}, -- [413]
 		{
 			"Level: 0d 1h 10m 58s", -- [1]
 			0, -- [2]
-		}, -- [856]
+		}, -- [414]
 		{
 			"Skill 125 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [857]
+		}, -- [415]
 		{
 			"Skill 261 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [858]
+		}, -- [416]
 		{
 			"Skill 50 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [859]
+		}, -- [417]
 		{
 			"Skill 51 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [860]
+		}, -- [418]
 		{
 			"Skill 183 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [861]
+		}, -- [419]
 		{
 			"Skill 163 increased from 85 to 90", -- [1]
 			0, -- [2]
-		}, -- [862]
+		}, -- [420]
 		{
 			"Skill 182 increased from 72 to 73", -- [1]
 			0, -- [2]
-		}, -- [863]
+		}, -- [421]
 		{
 			"Skill 45 increased from 85 to 86", -- [1]
 			0, -- [2]
-		}, -- [864]
+		}, -- [422]
 		{
 			"Skill 182 increased from 73 to 74", -- [1]
 			0, -- [2]
-		}, -- [865]
+		}, -- [423]
 		{
 			"Skill 186 increased from 85 to 86", -- [1]
 			0, -- [2]
-		}, -- [866]
+		}, -- [424]
 		{
 			"Skill 45 increased from 86 to 87", -- [1]
 			0, -- [2]
-		}, -- [867]
+		}, -- [425]
 		{
 			"Skill 45 increased from 87 to 88", -- [1]
 			0, -- [2]
-		}, -- [868]
+		}, -- [426]
 		{
 			"Skill 136 increased from 75 to 76", -- [1]
 			0, -- [2]
-		}, -- [869]
+		}, -- [427]
 		{
 			"Skill 182 increased from 74 to 75", -- [1]
 			0, -- [2]
-		}, -- [870]
+		}, -- [428]
 		{
 			"Skill 136 increased from 76 to 77", -- [1]
 			0, -- [2]
-		}, -- [871]
+		}, -- [429]
 		{
 			"Skill 95 increased from 62 to 63", -- [1]
 			0, -- [2]
-		}, -- [872]
+		}, -- [430]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [873]
+		}, -- [431]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [874]
+		}, -- [432]
 		{
 			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
-		}, -- [875]
+		}, -- [433]
 		{
 			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [876]
+		}, -- [434]
 		{
 			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [877]
+		}, -- [435]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [878]
+		}, -- [436]
 		{
 			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
-		}, -- [879]
+		}, -- [437]
 		{
 			"Proficiency in item class 4 set to 0x0000000200", -- [1]
 			0, -- [2]
-		}, -- [880]
+		}, -- [438]
 		{
 			"Proficiency in item class 4 set to 0x0000000201", -- [1]
 			0, -- [2]
-		}, -- [881]
+		}, -- [439]
 		{
 			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
-		}, -- [882]
+		}, -- [440]
 		{
 			"Proficiency in item class 4 set to 0x0000000205", -- [1]
 			0, -- [2]
-		}, -- [883]
+		}, -- [441]
 		{
 			"Proficiency in item class 4 set to 0x0000000245", -- [1]
 			0, -- [2]
-		}, -- [884]
+		}, -- [442]
 		{
 			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
-		}, -- [885]
+		}, -- [443]
 		{
 			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
-		}, -- [886]
+		}, -- [444]
 		{
 			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
-		}, -- [887]
+		}, -- [445]
 		{
 			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
-		}, -- [888]
+		}, -- [446]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [889]
+		}, -- [447]
 		{
 			"Time set to 9/9/2023 (Sat) 13:43", -- [1]
 			0, -- [2]
-		}, -- [890]
+		}, -- [448]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [891]
+		}, -- [449]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [892]
+		}, -- [450]
 		{
 			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [893]
+		}, -- [451]
 		{
 			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [894]
+		}, -- [452]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [895]
+		}, -- [453]
 		{
 			"Total: 0d 5h 44m 19s", -- [1]
 			0, -- [2]
-		}, -- [896]
+		}, -- [454]
 		{
 			"Level: 0d 3h 54m 17s", -- [1]
 			0, -- [2]
-		}, -- [897]
+		}, -- [455]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [898]
+		}, -- [456]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [899]
+		}, -- [457]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [900]
+		}, -- [458]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [901]
+		}, -- [459]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [902]
+		}, -- [460]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [903]
+		}, -- [461]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [904]
+		}, -- [462]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [905]
+		}, -- [463]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [906]
+		}, -- [464]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [907]
+		}, -- [465]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [908]
+		}, -- [466]
 		{
 			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [909]
+		}, -- [467]
 		{
 			"Multithreaded particulate volumes pass disabled.", -- [1]
 			0, -- [2]
-		}, -- [910]
+		}, -- [468]
 		{
 			"Multithreaded alpha water volumes pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [911]
+		}, -- [469]
 		{
 			"Multithreaded daynight update enabled.", -- [1]
 			0, -- [2]
-		}, -- [912]
+		}, -- [470]
 		{
 			"Water detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [913]
+		}, -- [471]
 		{
 			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
-		}, -- [914]
+		}, -- [472]
 		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [915]
+		}, -- [473]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [916]
+		}, -- [474]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [917]
+		}, -- [475]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [918]
+		}, -- [476]
 		{
 			"Spell Clutter set to dynamic", -- [1]
 			0, -- [2]
-		}, -- [919]
+		}, -- [477]
 		{
 			"Shadow mode changed to 3 - 3 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
-		}, -- [920]
+		}, -- [478]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [921]
+		}, -- [479]
 		{
 			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [922]
+		}, -- [480]
 		{
 			"Shadow cascade blending changed to 1", -- [1]
 			0, -- [2]
-		}, -- [923]
+		}, -- [481]
 		{
 			"Shadow RT mode changed to 0 (Disabled)", -- [1]
 			0, -- [2]
-		}, -- [924]
+		}, -- [482]
 		{
 			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
-		}, -- [925]
+		}, -- [483]
 		{
 			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [926]
+		}, -- [484]
 		{
 			"SSAO mode set to 4", -- [1]
 			0, -- [2]
-		}, -- [927]
+		}, -- [485]
 		{
 			"SSAO type set to 0", -- [1]
 			0, -- [2]
-		}, -- [928]
+		}, -- [486]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [929]
+		}, -- [487]
 		{
 			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
-		}, -- [930]
+		}, -- [488]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [931]
+		}, -- [489]
 		{
 			"Render scale changed to 0.75", -- [1]
 			0, -- [2]
-		}, -- [932]
+		}, -- [490]
 		{
 			"Resample quality changed to 3", -- [1]
 			0, -- [2]
-		}, -- [933]
+		}, -- [491]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [934]
+		}, -- [492]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [935]
+		}, -- [493]
 		{
 			"Variable Rate Shading not supported on this hardware", -- [1]
 			0, -- [2]
-		}, -- [936]
+		}, -- [494]
 		{
 			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [937]
+		}, -- [495]
 		{
 			"Variable Rate Shading not supported on this hardware", -- [1]
 			0, -- [2]
-		}, -- [938]
+		}, -- [496]
 		{
 			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [939]
+		}, -- [497]
 		{
 			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
-		}, -- [940]
+		}, -- [498]
 		{
 			"dynamicLod enabled", -- [1]
 			0, -- [2]
-		}, -- [941]
+		}, -- [499]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [942]
+		}, -- [500]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [943]
+		}, -- [501]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [944]
+		}, -- [502]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [945]
+		}, -- [503]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [946]
+		}, -- [504]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [947]
+		}, -- [505]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [948]
+		}, -- [506]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [949]
+		}, -- [507]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [950]
+		}, -- [508]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [951]
+		}, -- [509]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [952]
+		}, -- [510]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [953]
+		}, -- [511]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [954]
+		}, -- [512]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [955]
+		}, -- [513]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [956]
+		}, -- [514]
 		{
 			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [957]
+		}, -- [515]
 		{
 			"[GlueLogin] [F] Resetting", -- [1]
 			0, -- [2]
-		}, -- [958]
+		}, -- [516]
 		{
 			"[IBN_Login] [F] Initializing", -- [1]
 			0, -- [2]
-		}, -- [959]
+		}, -- [517]
 		{
 			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [960]
+		}, -- [518]
 		{
 			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [961]
+		}, -- [519]
 		{
 			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [962]
+		}, -- [520]
 		{
 			"[GlueLogin] [F] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [963]
+		}, -- [521]
 		{
 			"[GlueLogin] [F] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [964]
+		}, -- [522]
 		{
 			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694264557\" expirationTime=\"1694278957\"", -- [1]
 			0, -- [2]
-		}, -- [965]
+		}, -- [523]
 		{
 			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [966]
+		}, -- [524]
 		{
 			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [967]
+		}, -- [525]
 		{
 			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [968]
+		}, -- [526]
 		{
 			"[GlueLogin] [F] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [969]
+		}, -- [527]
 		{
 			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [970]
+		}, -- [528]
 		{
 			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [971]
+		}, -- [529]
 		{
 			"[GlueLogin] [F] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [972]
+		}, -- [530]
 		{
 			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
 			0, -- [2]
-		}, -- [973]
+		}, -- [531]
 		{
 			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [974]
+		}, -- [532]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [975]
+		}, -- [533]
 		{
 			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [976]
+		}, -- [534]
 		{
 			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [977]
+		}, -- [535]
 		{
 			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [978]
+		}, -- [536]
 		{
 			"Got new connection 2", -- [1]
 			0, -- [2]
-		}, -- [979]
+		}, -- [537]
 		{
 			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [980]
+		}, -- [538]
 		{
 			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [981]
+		}, -- [539]
 		{
 			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [982]
+		}, -- [540]
 		{
 			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
 			0, -- [2]
-		}, -- [983]
+		}, -- [541]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [984]
+		}, -- [542]
 		{
 			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [985]
+		}, -- [543]
 		{
 			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [986]
+		}, -- [544]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [987]
+		}, -- [545]
 		{
 			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
-		}, -- [988]
+		}, -- [546]
 		{
 			"Proficiency in item class 4 set to 0x0000000200", -- [1]
 			0, -- [2]
-		}, -- [989]
+		}, -- [547]
 		{
 			"Proficiency in item class 4 set to 0x0000000201", -- [1]
 			0, -- [2]
-		}, -- [990]
+		}, -- [548]
 		{
 			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
-		}, -- [991]
+		}, -- [549]
 		{
 			"Proficiency in item class 4 set to 0x0000000205", -- [1]
 			0, -- [2]
-		}, -- [992]
+		}, -- [550]
 		{
 			"Proficiency in item class 4 set to 0x0000000245", -- [1]
 			0, -- [2]
-		}, -- [993]
+		}, -- [551]
 		{
 			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
-		}, -- [994]
+		}, -- [552]
 		{
 			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
-		}, -- [995]
+		}, -- [553]
 		{
 			"Proficiency in item class 2 set to 0x0000004410", -- [1]
 			0, -- [2]
-		}, -- [996]
+		}, -- [554]
 		{
 			"Proficiency in item class 4 set to 0x0000000247", -- [1]
 			0, -- [2]
-		}, -- [997]
+		}, -- [555]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [998]
+		}, -- [556]
 		{
 			"Time set to 9/9/2023 (Sat) 15:03", -- [1]
 			0, -- [2]
-		}, -- [999]
+		}, -- [557]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [558]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [559]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [560]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [561]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [562]
+		{
+			"Total: 0d 5h 45m 16s", -- [1]
+			0, -- [2]
+		}, -- [563]
+		{
+			"Level: 0d 3h 55m 14s", -- [1]
+			0, -- [2]
+		}, -- [564]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [565]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [566]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [567]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [568]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [569]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [570]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [571]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [572]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [573]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [574]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [575]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [576]
+		{
+			"Multithreaded particulate volumes pass disabled.", -- [1]
+			0, -- [2]
+		}, -- [577]
+		{
+			"Multithreaded alpha water volumes pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [578]
+		{
+			"Multithreaded daynight update enabled.", -- [1]
+			0, -- [2]
+		}, -- [579]
+		{
+			"Water detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [580]
+		{
+			"Ripple detail changed to 1", -- [1]
+			0, -- [2]
+		}, -- [581]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [582]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [583]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [584]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [585]
+		{
+			"Spell Clutter set to dynamic", -- [1]
+			0, -- [2]
+		}, -- [586]
+		{
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			0, -- [2]
+		}, -- [587]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [588]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [589]
+		{
+			"Shadow cascade blending changed to 1", -- [1]
+			0, -- [2]
+		}, -- [590]
+		{
+			"Shadow RT mode changed to 0 (Disabled)", -- [1]
+			0, -- [2]
+		}, -- [591]
+		{
+			"maxLightCount must be in range 0 to 32.", -- [1]
+			0, -- [2]
+		}, -- [592]
+		{
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [593]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [594]
+		{
+			"SSAO type set to 0", -- [1]
+			0, -- [2]
+		}, -- [595]
+		{
+			"SkyCloudLOD set to 2", -- [1]
+			0, -- [2]
+		}, -- [596]
+		{
+			"Texture filtering mode updated.", -- [1]
+			0, -- [2]
+		}, -- [597]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [598]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [599]
+		{
+			"Resample quality changed to 3", -- [1]
+			0, -- [2]
+		}, -- [600]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [601]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [602]
+		{
+			"Variable Rate Shading not supported on this hardware", -- [1]
+			0, -- [2]
+		}, -- [603]
+		{
+			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [604]
+		{
+			"Variable Rate Shading not supported on this hardware", -- [1]
+			0, -- [2]
+		}, -- [605]
+		{
+			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [606]
+		{
+			"lodObjectSizeScale cannot be changed.", -- [1]
+			0, -- [2]
+		}, -- [607]
+		{
+			"dynamicLod enabled", -- [1]
+			0, -- [2]
+		}, -- [608]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [609]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [610]
+		{
+			"World preload non critical disabled.", -- [1]
+			0, -- [2]
+		}, -- [611]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [612]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [613]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [614]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [615]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [616]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [617]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [618]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [619]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [620]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [621]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [622]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [623]
+		{
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [624]
+		{
+			"[GlueLogin] [F] Resetting", -- [1]
+			0, -- [2]
+		}, -- [625]
+		{
+			"[IBN_Login] [F] Initializing", -- [1]
+			0, -- [2]
+		}, -- [626]
+		{
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [627]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [628]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [629]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [630]
+		{
+			"[GlueLogin] [F] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [631]
+		{
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694266206\" expirationTime=\"1694280606\"", -- [1]
+			0, -- [2]
+		}, -- [632]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [633]
+		{
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [634]
+		{
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [635]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [636]
+		{
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [637]
+		{
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [638]
+		{
+			"[GlueLogin] [F] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [639]
+		{
+			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
+			0, -- [2]
+		}, -- [640]
+		{
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [641]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [642]
+		{
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [643]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [644]
+		{
+			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [645]
+		{
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [646]
+		{
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [647]
+		{
+			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [648]
+		{
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [649]
+		{
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
+			0, -- [2]
+		}, -- [650]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [651]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [652]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [653]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [654]
+		{
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			0, -- [2]
+		}, -- [655]
+		{
+			"Proficiency in item class 2 set to 0x0000004000", -- [1]
+			0, -- [2]
+		}, -- [656]
+		{
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			0, -- [2]
+		}, -- [657]
+		{
+			"Proficiency in item class 2 set to 0x0000004004", -- [1]
+			0, -- [2]
+		}, -- [658]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [659]
+		{
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			0, -- [2]
+		}, -- [660]
+		{
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			0, -- [2]
+		}, -- [661]
+		{
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			0, -- [2]
+		}, -- [662]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [663]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [664]
+		{
+			"Time set to 9/9/2023 (Sat) 15:30", -- [1]
+			0, -- [2]
+		}, -- [665]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [666]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [667]
+		{
+			"Total: 0d 18h 42m 32s", -- [1]
+			0, -- [2]
+		}, -- [668]
+		{
+			"Level: 0d 0h 24m 5s", -- [1]
+			0, -- [2]
+		}, -- [669]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [670]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [671]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [672]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [673]
+		{
+			"Total: 0d 18h 44m 31s", -- [1]
+			0, -- [2]
+		}, -- [674]
+		{
+			"Level: 0d 0h 26m 4s", -- [1]
+			0, -- [2]
+		}, -- [675]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [676]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [677]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [678]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [679]
+		{
+			"Total: 0d 18h 46m 42s", -- [1]
+			0, -- [2]
+		}, -- [680]
+		{
+			"Level: 0d 0h 28m 15s", -- [1]
+			0, -- [2]
+		}, -- [681]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [682]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [683]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [684]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [685]
+		{
+			"Total: 0d 18h 50m 3s", -- [1]
+			0, -- [2]
+		}, -- [686]
+		{
+			"Level: 0d 0h 31m 36s", -- [1]
+			0, -- [2]
+		}, -- [687]
+		{
+			"Skill 182 increased from 75 to 76", -- [1]
+			0, -- [2]
+		}, -- [688]
+		{
+			"Skill 186 increased from 86 to 87", -- [1]
+			0, -- [2]
+		}, -- [689]
+		{
+			"Skill 182 increased from 76 to 77", -- [1]
+			0, -- [2]
+		}, -- [690]
+		{
+			"Skill 45 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [691]
+		{
+			"Skill 182 increased from 77 to 78", -- [1]
+			0, -- [2]
+		}, -- [692]
+		{
+			"Skill 182 increased from 78 to 79", -- [1]
+			0, -- [2]
+		}, -- [693]
+		{
+			"Skill 186 increased from 87 to 88", -- [1]
+			0, -- [2]
+		}, -- [694]
+		{
+			"Skill 182 increased from 79 to 80", -- [1]
+			0, -- [2]
+		}, -- [695]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [696]
+		{
+			"Skill 182 increased from 80 to 81", -- [1]
+			0, -- [2]
+		}, -- [697]
+		{
+			"Skill 182 increased from 81 to 82", -- [1]
+			0, -- [2]
+		}, -- [698]
+		{
+			"Skill 182 increased from 82 to 83", -- [1]
+			0, -- [2]
+		}, -- [699]
+		{
+			"Skill 136 increased from 77 to 78", -- [1]
+			0, -- [2]
+		}, -- [700]
+		{
+			"Skill 45 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [701]
+		{
+			"Skill 136 increased from 78 to 79", -- [1]
+			0, -- [2]
+		}, -- [702]
+		{
+			"Skill 95 increased from 63 to 64", -- [1]
+			0, -- [2]
+		}, -- [703]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [704]
+		{
+			"Skill 136 increased from 79 to 80", -- [1]
+			0, -- [2]
+		}, -- [705]
+		{
+			"Skill 95 increased from 64 to 65", -- [1]
+			0, -- [2]
+		}, -- [706]
+		{
+			"Skill 182 increased from 83 to 84", -- [1]
+			0, -- [2]
+		}, -- [707]
+		{
+			"Skill 182 increased from 84 to 85", -- [1]
+			0, -- [2]
+		}, -- [708]
+		{
+			"Skill 182 increased from 85 to 86", -- [1]
+			0, -- [2]
+		}, -- [709]
+		{
+			"Skill 95 increased from 65 to 66", -- [1]
+			0, -- [2]
+		}, -- [710]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [711]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [712]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [713]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [714]
+		{
+			"Total: 0d 19h 47m 33s", -- [1]
+			0, -- [2]
+		}, -- [715]
+		{
+			"Level: 0d 1h 29m 6s", -- [1]
+			0, -- [2]
+		}, -- [716]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [717]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [718]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [719]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [720]
+		{
+			"Total: 0d 19h 52m 20s", -- [1]
+			0, -- [2]
+		}, -- [721]
+		{
+			"Level: 0d 1h 33m 53s", -- [1]
+			0, -- [2]
+		}, -- [722]
+		{
+			"Skill 136 increased from 80 to 81", -- [1]
+			0, -- [2]
+		}, -- [723]
+		{
+			"Skill 186 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [724]
+		{
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9140, effect aura: 99, which is wrong", -- [1]
+			0, -- [2]
+		}, -- [725]
+		{
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9140, effect aura: 124, which is wrong", -- [1]
+			0, -- [2]
+		}, -- [726]
+		{
+			"Skill 125 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [727]
+		{
+			"Skill 261 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [728]
+		{
+			"Skill 50 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [729]
+		{
+			"Skill 51 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [730]
+		{
+			"Skill 183 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [731]
+		{
+			"Skill 163 increased from 90 to 95", -- [1]
+			0, -- [2]
+		}, -- [732]
+		{
+			"Skill 45 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [733]
+		{
+			"Skill 45 increased from 91 to 92", -- [1]
+			0, -- [2]
+		}, -- [734]
+		{
+			"Skill 182 increased from 86 to 87", -- [1]
+			0, -- [2]
+		}, -- [735]
+		{
+			"Skill 45 increased from 92 to 93", -- [1]
+			0, -- [2]
+		}, -- [736]
+		{
+			"Skill 95 increased from 66 to 67", -- [1]
+			0, -- [2]
+		}, -- [737]
+		{
+			"Skill 136 increased from 81 to 82", -- [1]
+			0, -- [2]
+		}, -- [738]
+		{
+			"Skill 45 increased from 93 to 94", -- [1]
+			0, -- [2]
+		}, -- [739]
+		{
+			"Skill 182 increased from 87 to 88", -- [1]
+			0, -- [2]
+		}, -- [740]
+		{
+			"Skill 182 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [741]
+		{
+			"Skill 95 increased from 67 to 68", -- [1]
+			0, -- [2]
+		}, -- [742]
+		{
+			"Skill 186 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [743]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [744]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [745]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [746]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [747]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [748]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [749]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [750]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [751]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [752]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [753]
+		{
+			"Multithreaded terrain pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [754]
+		{
+			"Multithreaded particulate volumes pass disabled.", -- [1]
+			0, -- [2]
+		}, -- [755]
+		{
+			"Multithreaded alpha water volumes pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [756]
+		{
+			"Multithreaded daynight update enabled.", -- [1]
+			0, -- [2]
+		}, -- [757]
+		{
+			"Water detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [758]
+		{
+			"Ripple detail changed to 1", -- [1]
+			0, -- [2]
+		}, -- [759]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [760]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [761]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [762]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [763]
+		{
+			"Spell Clutter set to dynamic", -- [1]
+			0, -- [2]
+		}, -- [764]
+		{
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			0, -- [2]
+		}, -- [765]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [766]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [767]
+		{
+			"Shadow cascade blending changed to 1", -- [1]
+			0, -- [2]
+		}, -- [768]
+		{
+			"Shadow RT mode changed to 0 (Disabled)", -- [1]
+			0, -- [2]
+		}, -- [769]
+		{
+			"maxLightCount must be in range 0 to 32.", -- [1]
+			0, -- [2]
+		}, -- [770]
+		{
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [771]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [772]
+		{
+			"SSAO type set to 0", -- [1]
+			0, -- [2]
+		}, -- [773]
+		{
+			"SkyCloudLOD set to 2", -- [1]
+			0, -- [2]
+		}, -- [774]
+		{
+			"Texture filtering mode updated.", -- [1]
+			0, -- [2]
+		}, -- [775]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [776]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [777]
+		{
+			"Resample quality changed to 3", -- [1]
+			0, -- [2]
+		}, -- [778]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [779]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [780]
+		{
+			"Variable Rate Shading not supported on this hardware", -- [1]
+			0, -- [2]
+		}, -- [781]
+		{
+			"CVar 'vrsWorldGeo' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [782]
+		{
+			"Variable Rate Shading not supported on this hardware", -- [1]
+			0, -- [2]
+		}, -- [783]
+		{
+			"CVar 'vrsParticles' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [784]
+		{
+			"lodObjectSizeScale cannot be changed.", -- [1]
+			0, -- [2]
+		}, -- [785]
+		{
+			"dynamicLod enabled", -- [1]
+			0, -- [2]
+		}, -- [786]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [787]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [788]
+		{
+			"World preload non critical disabled.", -- [1]
+			0, -- [2]
+		}, -- [789]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [790]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [791]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [792]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [793]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [794]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [795]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [796]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [797]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [798]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [799]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [800]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [801]
+		{
+			"[GlueLogin] [F] Starting login launcherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [802]
+		{
+			"[GlueLogin] [F] Resetting", -- [1]
+			0, -- [2]
+		}, -- [803]
+		{
+			"[IBN_Login] [F] Initializing", -- [1]
+			0, -- [2]
+		}, -- [804]
+		{
+			"[IBN_Login] [F] Attempting logon host=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [805]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [806]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [807]
+		{
+			"[GlueLogin] [F] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [808]
+		{
+			"[GlueLogin] [F] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [809]
+		{
+			"[GlueLogin] [F] Reconnect token saved;  creationTime=\"1694278702\" expirationTime=\"1694293102\"", -- [1]
+			0, -- [2]
+		}, -- [810]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [811]
+		{
+			"[IBN_Login] [F] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [812]
+		{
+			"[IBN_Login] [F] Received realm list ticket code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [813]
+		{
+			"[GlueLogin] [F] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [814]
+		{
+			"[IBN_Login] [F] Received sub region list code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [815]
+		{
+			"[IBN_Login] [F] Requesting last played chars numSubRegions=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [816]
+		{
+			"[GlueLogin] [F] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [817]
+		{
+			"[IBN_Login] [F] Joining realm subRegion=\"83-4-89\" realmAddress=\"83-4-24\"", -- [1]
+			0, -- [2]
+		}, -- [818]
+		{
+			"[IBN_Login] [F] OnRealmJoin code=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [819]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [820]
+		{
+			"[GlueLogin] [F] Received AuthedToWoW result=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [821]
+		{
+			"[IBN_Login] [F] Front disconnecting connectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [822]
+		{
+			"[GlueLogin] [F] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [823]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [824]
+		{
+			"[IBN_BackInterface] [F] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [825]
+		{
+			"[WowEntitlements] [BNetAccount-0-0000000BDA51] [WowAccount-0-000000457FD6] Initialized with 2 entitlements.", -- [1]
+			0, -- [2]
+		}, -- [826]
+		{
+			"[IBN_Login] [F] Front disconnected connectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [827]
+		{
+			"[GlueLogin] [F] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [828]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [829]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [830]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [831]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [832]
+		{
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			0, -- [2]
+		}, -- [833]
+		{
+			"Proficiency in item class 2 set to 0x0000004000", -- [1]
+			0, -- [2]
+		}, -- [834]
+		{
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			0, -- [2]
+		}, -- [835]
+		{
+			"Proficiency in item class 2 set to 0x0000004004", -- [1]
+			0, -- [2]
+		}, -- [836]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [837]
+		{
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			0, -- [2]
+		}, -- [838]
+		{
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			0, -- [2]
+		}, -- [839]
+		{
+			"Proficiency in item class 2 set to 0x0000004405", -- [1]
+			0, -- [2]
+		}, -- [840]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [841]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [842]
+		{
+			"Time set to 9/9/2023 (Sat) 18:58", -- [1]
+			0, -- [2]
+		}, -- [843]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [844]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [845]
+		{
+			"Total: 0d 20h 33m 25s", -- [1]
+			0, -- [2]
+		}, -- [846]
+		{
+			"Level: 0d 0h 24m 22s", -- [1]
+			0, -- [2]
+		}, -- [847]
+		{
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9140, effect aura: 99, which is wrong", -- [1]
+			0, -- [2]
+		}, -- [848]
+		{
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9140, effect aura: 124, which is wrong", -- [1]
+			0, -- [2]
+		}, -- [849]
+		{
+			"Skill 136 increased from 82 to 83", -- [1]
+			0, -- [2]
+		}, -- [850]
+		{
+			"Skill 182 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [851]
+		{
+			"Skill 186 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [852]
+		{
+			"Skill 182 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [853]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [854]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [855]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [856]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [857]
+		{
+			"Total: 0d 21h 2m 13s", -- [1]
+			0, -- [2]
+		}, -- [858]
+		{
+			"Level: 0d 0h 53m 10s", -- [1]
+			0, -- [2]
+		}, -- [859]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [860]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [861]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [862]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [863]
+		{
+			"Total: 0d 21h 3m 16s", -- [1]
+			0, -- [2]
+		}, -- [864]
+		{
+			"Level: 0d 0h 54m 13s", -- [1]
+			0, -- [2]
+		}, -- [865]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [866]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [867]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [868]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [869]
+		{
+			"Total: 0d 21h 5m 57s", -- [1]
+			0, -- [2]
+		}, -- [870]
+		{
+			"Level: 0d 0h 56m 54s", -- [1]
+			0, -- [2]
+		}, -- [871]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [872]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [873]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [874]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [875]
+		{
+			"Total: 0d 21h 6m 53s", -- [1]
+			0, -- [2]
+		}, -- [876]
+		{
+			"Level: 0d 0h 57m 50s", -- [1]
+			0, -- [2]
+		}, -- [877]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [878]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [879]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [880]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [881]
+		{
+			"Total: 0d 21h 12m 24s", -- [1]
+			0, -- [2]
+		}, -- [882]
+		{
+			"Level: 0d 1h 3m 21s", -- [1]
+			0, -- [2]
+		}, -- [883]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [884]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [885]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [886]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [887]
+		{
+			"Total: 0d 21h 12m 56s", -- [1]
+			0, -- [2]
+		}, -- [888]
+		{
+			"Level: 0d 1h 3m 53s", -- [1]
+			0, -- [2]
+		}, -- [889]
+		{
+			"Skill 182 increased from 91 to 92", -- [1]
+			0, -- [2]
+		}, -- [890]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [891]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [892]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [893]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [894]
+		{
+			"Total: 0d 21h 21m 37s", -- [1]
+			0, -- [2]
+		}, -- [895]
+		{
+			"Level: 0d 1h 12m 34s", -- [1]
+			0, -- [2]
+		}, -- [896]
+		{
+			"Skill 45 increased from 94 to 95", -- [1]
+			0, -- [2]
+		}, -- [897]
+		{
+			"Skill 136 increased from 83 to 84", -- [1]
+			0, -- [2]
+		}, -- [898]
+		{
+			"Skill 125 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [899]
+		{
+			"Skill 261 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [900]
+		{
+			"Skill 50 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [901]
+		{
+			"Skill 51 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [902]
+		{
+			"Skill 183 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [903]
+		{
+			"Skill 163 increased from 95 to 100", -- [1]
+			0, -- [2]
+		}, -- [904]
+		{
+			"Skill 136 increased from 84 to 85", -- [1]
+			0, -- [2]
+		}, -- [905]
+		{
+			"Skill 162 increased from 1 to 2", -- [1]
+			0, -- [2]
+		}, -- [906]
+		{
+			"Skill 162 increased from 2 to 3", -- [1]
+			0, -- [2]
+		}, -- [907]
+		{
+			"Skill 162 increased from 3 to 4", -- [1]
+			0, -- [2]
+		}, -- [908]
+		{
+			"Skill 136 increased from 85 to 86", -- [1]
+			0, -- [2]
+		}, -- [909]
+		{
+			"Skill 95 increased from 68 to 69", -- [1]
+			0, -- [2]
+		}, -- [910]
+		{
+			"Skill 136 increased from 86 to 87", -- [1]
+			0, -- [2]
+		}, -- [911]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [912]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [913]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [914]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [915]
+		{
+			"Skill 118 increased from 0 to 100", -- [1]
+			0, -- [2]
+		}, -- [916]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [917]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [918]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [919]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [920]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [921]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [922]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [923]
+		{
+			"Proficiency in item class 4 set to 0x0000000200", -- [1]
+			0, -- [2]
+		}, -- [924]
+		{
+			"Proficiency in item class 4 set to 0x0000000201", -- [1]
+			0, -- [2]
+		}, -- [925]
+		{
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			0, -- [2]
+		}, -- [926]
+		{
+			"Proficiency in item class 4 set to 0x0000000205", -- [1]
+			0, -- [2]
+		}, -- [927]
+		{
+			"Proficiency in item class 4 set to 0x0000000245", -- [1]
+			0, -- [2]
+		}, -- [928]
+		{
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			0, -- [2]
+		}, -- [929]
+		{
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			0, -- [2]
+		}, -- [930]
+		{
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			0, -- [2]
+		}, -- [931]
+		{
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			0, -- [2]
+		}, -- [932]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [933]
+		{
+			"Time set to 9/9/2023 (Sat) 20:18", -- [1]
+			0, -- [2]
+		}, -- [934]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [935]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [936]
+		{
+			"Total: 0d 5h 47m 36s", -- [1]
+			0, -- [2]
+		}, -- [937]
+		{
+			"Level: 0d 3h 57m 34s", -- [1]
+			0, -- [2]
+		}, -- [938]
+		{
+			"Skill 333 increased from 39 to 40", -- [1]
+			0, -- [2]
+		}, -- [939]
+		{
+			"Skill 333 increased from 40 to 41", -- [1]
+			0, -- [2]
+		}, -- [940]
+		{
+			"Skill 333 increased from 41 to 42", -- [1]
+			0, -- [2]
+		}, -- [941]
+		{
+			"Skill 333 increased from 42 to 43", -- [1]
+			0, -- [2]
+		}, -- [942]
+		{
+			"Skill 333 increased from 43 to 44", -- [1]
+			0, -- [2]
+		}, -- [943]
+		{
+			"Skill 333 increased from 44 to 45", -- [1]
+			0, -- [2]
+		}, -- [944]
+		{
+			"Skill 333 increased from 45 to 46", -- [1]
+			0, -- [2]
+		}, -- [945]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [946]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [947]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [948]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [949]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [950]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [951]
+		{
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			0, -- [2]
+		}, -- [952]
+		{
+			"Proficiency in item class 4 set to 0x0000000200", -- [1]
+			0, -- [2]
+		}, -- [953]
+		{
+			"Proficiency in item class 4 set to 0x0000000201", -- [1]
+			0, -- [2]
+		}, -- [954]
+		{
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			0, -- [2]
+		}, -- [955]
+		{
+			"Proficiency in item class 4 set to 0x0000000205", -- [1]
+			0, -- [2]
+		}, -- [956]
+		{
+			"Proficiency in item class 4 set to 0x0000000245", -- [1]
+			0, -- [2]
+		}, -- [957]
+		{
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			0, -- [2]
+		}, -- [958]
+		{
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			0, -- [2]
+		}, -- [959]
+		{
+			"Proficiency in item class 2 set to 0x0000004410", -- [1]
+			0, -- [2]
+		}, -- [960]
+		{
+			"Proficiency in item class 4 set to 0x0000000247", -- [1]
+			0, -- [2]
+		}, -- [961]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [962]
+		{
+			"Time set to 9/9/2023 (Sat) 20:29", -- [1]
+			0, -- [2]
+		}, -- [963]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [964]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [965]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [966]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [967]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [968]
+		{
+			"Total: 0d 0h 45m 50s", -- [1]
+			0, -- [2]
+		}, -- [969]
+		{
+			"Level: 0d 0h 45m 50s", -- [1]
+			0, -- [2]
+		}, -- [970]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [971]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [972]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [973]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [974]
+		{
+			"Total: 0d 0h 46m 13s", -- [1]
+			0, -- [2]
+		}, -- [975]
+		{
+			"Level: 0d 0h 46m 13s", -- [1]
+			0, -- [2]
+		}, -- [976]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [977]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [978]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [979]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [980]
+		{
+			"Total: 0d 0h 47m 28s", -- [1]
+			0, -- [2]
+		}, -- [981]
+		{
+			"Level: 0d 0h 47m 28s", -- [1]
+			0, -- [2]
+		}, -- [982]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [983]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [984]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [985]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [986]
+		{
+			"Total: 0d 0h 57m 36s", -- [1]
+			0, -- [2]
+		}, -- [987]
+		{
+			"Level: 0d 0h 57m 36s", -- [1]
+			0, -- [2]
+		}, -- [988]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [989]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [990]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [991]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [992]
+		{
+			"Total: 0d 0h 59m 6s", -- [1]
+			0, -- [2]
+		}, -- [993]
+		{
+			"Level: 0d 0h 59m 6s", -- [1]
+			0, -- [2]
+		}, -- [994]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [995]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [996]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [997]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [998]
+		{
+			"Total: 0d 1h 0m 11s", -- [1]
+			0, -- [2]
+		}, -- [999]
+		{
+			"Level: 0d 1h 0m 11s", -- [1]
 			0, -- [2]
 		}, -- [1000]
 		{
@@ -4019,11 +4019,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1004]
 		{
-			"Total: 0d 5h 45m 16s", -- [1]
+			"Total: 0d 1h 1m 47s", -- [1]
 			0, -- [2]
 		}, -- [1005]
 		{
-			"Level: 0d 3h 55m 14s", -- [1]
+			"Level: 0d 1h 1m 47s", -- [1]
 			0, -- [2]
 		}, -- [1006]
 	},

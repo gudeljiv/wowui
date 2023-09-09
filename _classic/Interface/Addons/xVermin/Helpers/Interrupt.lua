@@ -205,3 +205,16 @@ UIParent:HookScript(
 		end
 	end
 )
+
+
+
+-- hooksecurefunc(ClassicCastbars, "StartCast", function(...) print(...) end)
+
+
+-- hooksecurefunc(
+-- 	ClassicCastbars,
+-- 	'StartCast',
+-- 	function(self, unitGUID, unitID)
+-- 		print("cc: ", self, unitGUID, unitID)
+-- 	end
+-- )

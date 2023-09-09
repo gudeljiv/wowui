@@ -25,6 +25,7 @@ Frames/KillCount.lua
 Frames/LootFrame.lua
 Frames/MailBoxFrame.lua
 Frames/MerchantFrame.lua
+Frames/OpenMailFrame.lua
 Frames/PlayerPetTargetHealthPercentage.lua
 Frames/QuestTimerFrame.lua
 Frames/RaidFrames.lua
