@@ -18,7 +18,7 @@ VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 /cast Serpent Sting
 END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
-#showtooltip
+#showtooltip Blood Fury
 /cast Rapid Fire
 /cast Blood Fury
 /cast Bestial Wrath
@@ -37,21 +37,12 @@ VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 /startattack
 /cast Arcane Shot
 END
-VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
-#showtooltip Explosive Shot
-/cast [nochanneling: volley] Explosive Shot
-END
 VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
 #showtooltip Wing Clip
 /startattack
 /cast Wing Clip
 /cast Wing Clip(Rank 2)
 /cast Wing Clip(Rank 1)
-END
-VER 3 000000000100000A " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast Kill Command
-/cast Bestial Wrath
 END
 VER 3 000000000100000B " " "INV_Misc_QuestionMark"
 #showtooltip Kill Shot
@@ -72,13 +63,15 @@ VER 3 000000000100000F " " "132328"
 #showtooltip
 /petfollow
 END
-VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
-#showtooltip 
-/cast [@pet,exists][]Volley
-END
 VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast feign death
 /stopattack
 /stopcasting
+END
+VER 3 0000000001000012 " " "134400"
+#showtooltip Serpent Sting
+/petattack [@mouseover,harm][]
+/cast !Auto Shot
+/cast [@mouseover,harm,exists][]Serpent Sting
 END

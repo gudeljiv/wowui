@@ -1,8 +1,6 @@
-VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast feign death
-/stopattack
-/stopcasting
+VER 3 0000000001000011 " " "132152"
+#showtooltip 
+/petattack [@mouseover,harm][]
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -78,7 +76,15 @@ VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@pet,exists][]Volley
 END
-VER 3 0000000001000011 " " "132152"
-#showtooltip 
+VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast feign death
+/stopattack
+/stopcasting
+END
+VER 3 0000000001000012 " " "134400"
+#showtooltip Serpent Sting
 /petattack [@mouseover,harm][]
+/cast !Auto Shot
+/cast [@mouseover,harm,exists][]Serpent Sting
 END
