@@ -167,6 +167,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             found_class = False
 
             found_class, wow_class = get_class(clss, color_distance)
+            # print(found_class, wow_class, hex)
             if not found_class:
                 continue
 
