@@ -51,8 +51,8 @@ H: 240
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
-X: -362
-Y: 226
+X: -267
+Y: 144
 W: 128
 H: 64
 Frame: FriendsFrame

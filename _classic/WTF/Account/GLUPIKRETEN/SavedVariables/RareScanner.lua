@@ -1445,13 +1445,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[6576] = {
-				"|cff1eff00|Hitem:6576::::::::10:::::::::|h[Defender Girdle]|h|r", -- [1]
+			[3292] = {
+				"|cff1eff00|Hitem:3292::::::::13:::::::::|h[Ancestral Tunic]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132511, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				135011, -- [4]
 				4, -- [5]
-				3, -- [6]
+				1, -- [6]
 			},
 			[3280] = {
 				"|cffffffff|Hitem:3280::::::::5:::::::::|h[Battle Chain Bracers]|h|r", -- [1]
@@ -1525,12 +1525,12 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[2781] = {
-				"|cff9d9d9d|Hitem:2781::::::::17:::::::::|h[Dirty Blunderbuss]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				135610, -- [4]
-				2, -- [5]
+			[6576] = {
+				"|cff1eff00|Hitem:6576::::::::10:::::::::|h[Defender Girdle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132511, -- [4]
+				4, -- [5]
 				3, -- [6]
 			},
 			[6518] = {
@@ -1765,13 +1765,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[3292] = {
-				"|cff1eff00|Hitem:3292::::::::13:::::::::|h[Ancestral Tunic]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135011, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[2781] = {
+				"|cff9d9d9d|Hitem:2781::::::::17:::::::::|h[Dirty Blunderbuss]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				135610, -- [4]
+				2, -- [5]
+				3, -- [6]
 			},
 			[6578] = {
 				"|cff1eff00|Hitem:6578::::::::10:::::::::|h[Defender Leggings]|h|r", -- [1]
@@ -1805,11 +1805,11 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[7097] = {
-				"|cffffffff|Hitem:7097::::::::3:::::::::|h[Leg Meat]|h|r", -- [1]
+			[954] = {
+				"|cffffffff|Hitem:954::::::::17:::::::::|h[Scroll of Strength]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133974, -- [4]
+				134938, -- [4]
 				0, -- [5]
 				0, -- [6]
 			},
@@ -3397,13 +3397,13 @@ RareScannerDB = {
 				12, -- [5]
 				0, -- [6]
 			},
-			[6586] = {
-				"|cff1eff00|Hitem:6586::::::::15:::::::::|h[Scouting Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132961, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[7097] = {
+				"|cffffffff|Hitem:7097::::::::3:::::::::|h[Leg Meat]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133974, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
 			[1495] = {
 				"|cff9d9d9d|Hitem:1495::::::::14:::::::::|h[Calico Shoes]|h|r", -- [1]
@@ -3429,13 +3429,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[954] = {
-				"|cffffffff|Hitem:954::::::::17:::::::::|h[Scroll of Strength]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134938, -- [4]
-				0, -- [5]
-				0, -- [6]
+			[6586] = {
+				"|cff1eff00|Hitem:6586::::::::15:::::::::|h[Scouting Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132961, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[11417] = {
 				"|cff9d9d9d|Hitem:11417::::::::17:::::::::|h[Feathery Wing]|h|r", -- [1]
@@ -3932,10 +3932,10 @@ RareScannerDB = {
 				[8278] = "Smoldar",
 				[8282] = "Highlord Mastrogonde",
 				[1425] = "Grizlak",
-				[3872] = "Deathsworn Captain",
+				[8302] = "Deatheye",
 				[14426] = "Harb Foulmountain",
 				[17075] = "Sandworm",
-				[8302] = "Deatheye",
+				[2850] = "Broken Tooth",
 				[2184] = "Lady Moongazer",
 				[14446] = "Fingat",
 				[10358] = "Fellicent's Shade",
@@ -3978,9 +3978,9 @@ RareScannerDB = {
 				[5935] = "Ironeye the Invincible",
 				[3773] = "Akkrilus",
 				[8981] = "Malfunctioning Reaver",
-				[11580] = "Kelemis the Lifeless",
+				[10558] = "Hearthsinger Forresten",
 				[599] = "Marisa du'Paige",
-				[5798] = "Thora Feathermoon",
+				[11580] = "Kelemis the Lifeless",
 				[5828] = "Humar the Pridelord",
 				[5786] = "Snagglespear",
 				[5832] = "Thunderstomp",
@@ -3988,7 +3988,7 @@ RareScannerDB = {
 				[5399] = "Veyzhak the Cannibal",
 				[5794] = "Thurmonde the Devout",
 				[5796] = "Ben",
-				[10558] = "Hearthsinger Forresten",
+				[5798] = "Thora Feathermoon",
 				[5800] = "Marcus Bel",
 				[10119] = "Volchan",
 				[10263] = "Burning Felguard",
@@ -4020,8 +4020,8 @@ RareScannerDB = {
 				[5345] = "Diamond Head",
 				[5347] = "Antilus the Soarer",
 				[5349] = "Arash-ethis",
-				[5864] = "Swinegart Spearhide",
 				[14267] = "Emogg the Crusher",
+				[4842] = "Earthcaller Halmgar",
 				[14271] = "Ribchaser",
 				[14275] = "Tamra Stormpike",
 				[14279] = "Creepthess",
@@ -4034,7 +4034,7 @@ RareScannerDB = {
 				[10641] = "Branch Snapper",
 				[10640] = "Oakpaw",
 				[7017] = "Lord Sinslayer",
-				[4842] = "Earthcaller Halmgar",
+				[5864] = "Swinegart Spearhide",
 				[471] = "Mother Fang",
 				[10239] = "Tepolar",
 				[8199] = "Warleader Krazzilak",
@@ -4081,7 +4081,7 @@ RareScannerDB = {
 				[4015] = "Pridewing Patriarch",
 				[14492] = "Verifonix",
 				[8204] = "Soriid the Devourer",
-				[2850] = "Broken Tooth",
+				[3872] = "Deathsworn Captain",
 				[8298] = "Akubar the Seer",
 				[1936] = "Farmer Solliden",
 				[8208] = "Murderous Blisterpaw",

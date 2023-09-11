@@ -4,10 +4,10 @@ Postal3DB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
-				"Dopeclaw|Stitches|Horde|18|DRUID", -- [2]
+				"Dopeclaw|Stitches|Horde|20|DRUID", -- [2]
 				"Dopecure|Stitches|Horde|1|PRIEST", -- [3]
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
-				"Dopesick|Stitches|Horde|19|WARRIOR", -- [5]
+				"Dopesick|Stitches|Horde|20|WARRIOR", -- [5]
 				"Dopesnare|Stitches|Horde|19|HUNTER", -- [6]
 			},
 		},
@@ -42,11 +42,17 @@ Postal3DB = {
 		["Dopesick - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Dopede|Stitches|Horde", -- [1]
+					"Dopeah|Stitches|Horde", -- [1]
+					"Dopede|Stitches|Horde", -- [2]
 				},
 			},
 		},
 		["Dopeah - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
+				},
+			},
 		},
 	},
 }

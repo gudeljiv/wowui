@@ -87,6 +87,7 @@ ClassicCastbarsDB = {
 		["3258Poisoned Shot"] = 2505.999999993946,
 		["3263Flamestrike"] = 2695.999999996275,
 		["3263Fireball"] = 2919.00000005262,
+		["11917Fireball"] = 2996.000000042841,
 	},
 	["usePerCharacterSettings"] = false,
 	["locale"] = "enUS",
