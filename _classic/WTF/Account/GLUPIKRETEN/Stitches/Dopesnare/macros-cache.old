@@ -1,6 +1,9 @@
-VER 3 0000000001000011 " " "132152"
-#showtooltip 
-/petattack [@mouseover,harm][]
+VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+#showtooltip Wing Clip
+/startattack
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -18,7 +21,7 @@ VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 /cast Serpent Sting
 END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
-#showtooltip
+#showtooltip Blood Fury
 /cast Rapid Fire
 /cast Blood Fury
 /cast Bestial Wrath
@@ -37,21 +40,11 @@ VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 /startattack
 /cast Arcane Shot
 END
-VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
-#showtooltip Explosive Shot
-/cast [nochanneling: volley] Explosive Shot
-END
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
-#showtooltip Wing Clip
-/startattack
-/cast Wing Clip
-/cast Wing Clip(Rank 2)
-/cast Wing Clip(Rank 1)
-END
-VER 3 000000000100000A " " "INV_Misc_QuestionMark"
+VER 3 0000000001000013 " " "134400"
 #showtooltip
-/cast Kill Command
-/cast Bestial Wrath
+/petfollow
+/stopattack
+/cast Freezing Trap
 END
 VER 3 000000000100000B " " "INV_Misc_QuestionMark"
 #showtooltip Kill Shot
@@ -68,13 +61,11 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
-VER 3 000000000100000F " " "132328"
-#showtooltip
-/petfollow
-END
-VER 3 0000000001000010 " " "INV_Misc_QuestionMark"
-#showtooltip 
-/cast [@pet,exists][]Volley
+VER 3 0000000001000012 " " "134400"
+#showtooltip Serpent Sting
+/petattack [@mouseover,harm][]
+/cast !Auto Shot
+/cast [@mouseover,harm,exists][]Serpent Sting
 END
 VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -82,9 +73,11 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 /stopattack
 /stopcasting
 END
-VER 3 0000000001000012 " " "134400"
-#showtooltip Serpent Sting
+VER 3 0000000001000011 "Pet Attack" "132152"
+#showtooltip 
 /petattack [@mouseover,harm][]
-/cast !Auto Shot
-/cast [@mouseover,harm,exists][]Serpent Sting
+END
+VER 3 000000000100000F "Pet Follow" "132328"
+#showtooltip
+/petfollow
 END

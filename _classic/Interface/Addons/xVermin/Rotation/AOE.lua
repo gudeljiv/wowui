@@ -182,18 +182,18 @@ UIParent:HookScript(
 
 
 		local ttd = xTTD
-		if ttd > 10000 then ttd = 0 end
+		if ttd > 10000 then ttd = -1 end
 		if not InCombatLockdown() then 
-			xTTD = 0
-			ttd = 0
+			xTTD = -1
+			ttd = -1
 		end
 		if not UnitExists("target") then 
-			xTTD = 0
-			ttd = 0
+			xTTD = -1
+			ttd = -1
 		end
 		if UnitIsDead("target") then 
-			xTTD = 0
-			ttd = 0
+			xTTD = -1
+			ttd = -1
 		end
 
 		if ttd > 0 then 

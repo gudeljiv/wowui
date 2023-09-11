@@ -1,13 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Dopede - Stitches"] = "Dopede - Stitches",
-		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-		["Dopecure - Stitches"] = "Dopecure - Stitches",
-		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopeah - Stitches"] = "Dopeah - Stitches",
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -16,9 +8,17 @@ Postal3DB = {
 				"Dopecure|Stitches|Horde|1|PRIEST", -- [3]
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
 				"Dopesick|Stitches|Horde|20|WARRIOR", -- [5]
-				"Dopesnare|Stitches|Horde|19|HUNTER", -- [6]
+				"Dopesnare|Stitches|Horde|20|HUNTER", -- [6]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Dopede - Stitches"] = "Dopede - Stitches",
+		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
 	},
 	["profiles"] = {
 		["Dopede - Stitches"] = {
@@ -27,6 +27,7 @@ Postal3DB = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Dopeah|Stitches|Horde", -- [1]
+					"Dopesick|Stitches|Horde", -- [2]
 				},
 			},
 		},
@@ -39,13 +40,18 @@ Postal3DB = {
 				},
 			},
 		},
-		["Dopeah - Stitches"] = {
-		},
 		["Dopesick - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Dopeah|Stitches|Horde", -- [1]
 					"Dopede|Stitches|Horde", -- [2]
+				},
+			},
+		},
+		["Dopeah - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
 				},
 			},
 		},

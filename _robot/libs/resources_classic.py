@@ -113,7 +113,7 @@ data = {
             {"name": "hunter's mark", "type": "GetSpellTexture", "id": 1130, "key": "3", "modifier": "lalt"},
             {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
             {"name": "mend pet", "type": "GetSpellTexture", "id": 136, "key": "v"},
-            {"name": "wing clip", "type": "GetSpellTexture", "id": 2974, "key": "g"},
+            {"name": "wing clip", "type": "GetSpellTexture", "id": 2974, "key": "f", "modifier": "lalt"},
             {"name": "raptor strike", "type": "GetSpellTexture", "id": 2973, "key": "k"},
             # {"name": "viper sting", "type": "GetSpellTexture", "id": 3034, "key": "4", "modifier": "lshift"},
             # {"name": "deterrence", "type": "GetSpellTexture", "id": 19263, "key": "t", "modifier": "lshift"},
