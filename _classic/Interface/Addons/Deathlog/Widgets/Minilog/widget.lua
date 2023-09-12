@@ -1,5 +1,6 @@
 local ace_refresh_timer_handle = nil
 local entry_cache = {}
+local font_handle = nil
 local deathlog_instance_tbl = {
 	{ 33, "SHADOWFANGKEEP", "Shadowfang Keep" },
 	{ 36, "DEADMINES", "Deadmines" },
@@ -48,6 +49,7 @@ local presets = {
 	["Hardcore (legacy)"] = "Hardcore (legacy)",
 	["concise"] = "concise",
 	["Yazpad"] = "Yazpad",
+	["ChefCarlos"] = "ChefCarlos",
 }
 
 local LSM30 = LibStub("LibSharedMedia-3.0", true)
@@ -213,9 +215,16 @@ local subtitle_metadata = {
 	},
 	["Lvl"] = {
 		"Lvl",
-		20,
+		40,
 		function(_entry)
 			return _entry.player_data["level"] or ""
+		end,
+	},
+	["LastWords"] = {
+		"LastWords",
+		100,
+		function(_entry)
+			return _entry.player_data["last_words"] or ""
 		end,
 	},
 	["ClassLogo1"] = {
@@ -401,7 +410,7 @@ local function setupRowEntries()
 		_entry.background:SetDrawLayer("OVERLAY", 2)
 		_entry.background:SetVertexColor(0.5, 0.5, 0.5, (i % 2) / 10)
 		_entry.background:SetHeight(16)
-		_entry.background:SetWidth(500)
+		_entry.background:SetWidth(1000)
 		_entry.background:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
 
 		_entry:SetHeight(40)
@@ -522,10 +531,26 @@ local function setupRowEntries()
 				GameTooltip:AddLine("Race: " .. race_name, 1, 1, 1)
 			end
 
-			if deathlog_settings[widget_name]["tooltip_zone"] and _entry.player_data["map_id"] then
-				local map_info = C_Map.GetMapInfo(_entry.player_data["map_id"])
-				if map_info then
-					GameTooltip:AddLine("Zone: " .. map_info.name, 1, 1, 1, true)
+			if deathlog_settings[widget_name]["tooltip_zone"] then
+				if _entry.player_data["map_id"] then
+					local map_info = C_Map.GetMapInfo(_entry.player_data["map_id"])
+					if map_info then
+						GameTooltip:AddLine("Zone/Instance: " .. map_info.name, 1, 1, 1, true)
+					end
+				elseif _entry.player_data["instance_id"] then
+					GameTooltip:AddLine(
+						"Zone/Instance: "
+							.. (
+								deathlog_id_to_instance_tbl[_entry.player_data["instance_id"]]
+								or _entry.player_data["instance_id"]
+							),
+						1,
+						1,
+						1,
+						true
+					)
+				else
+					GameTooltip:AddLine("Zone/Instance: ------", 1, 1, 1, true)
 				end
 			end
 
@@ -569,6 +594,15 @@ function deathlog_widget_minilog_createEntry(player_data)
 		return
 	end
 	entry_cache[player_data["name"]] = 1
+	if
+		player_data["level"]
+		and (
+			player_data["level"] < deathlog_settings[widget_name]["min_lvl"]
+			or player_data["level"] > deathlog_settings[widget_name]["max_lvl"]
+		)
+	then
+		return
+	end
 	for i = 1, 19 do
 		if row_entry[i + 1].player_data ~= nil then
 			shiftEntry(row_entry[i + 1], row_entry[i])
@@ -665,6 +699,8 @@ local defaults = {
 	["entry_x_offset"] = 0,
 	["entry_y_offset"] = 0,
 	["border_alpha"] = 1.0,
+	["min_lvl"] = 1,
+	["max_lvl"] = MAX_PLAYER_LEVEL,
 	["pos_x"] = 470,
 	["pos_y"] = -100,
 	["size_x"] = 255,
@@ -703,20 +739,17 @@ end
 
 local options = nil
 local optionsframe = nil
-function Deathlog_minilog_applySettings(rebuild_ace)
-	applyDefaults(defaults)
-	if rebuild_ace then
-		setSubtitleData()
-		if loaded == false then
-			setupRowEntries()
-		end
-	end
-
+local function applyFont()
+	local success = true
 	death_log_frame.titletext:SetFont(
 		fonts[deathlog_settings[widget_name]["font"]],
 		deathlog_settings[widget_name]["title_font_size"],
 		"THICK"
 	)
+
+	if fonts[deathlog_settings[widget_name]["font"]] ~= death_log_frame.titletext:GetFont() then
+		success = false
+	end
 	death_log_frame.titletext:SetTextColor(
 		deathlog_settings[widget_name]["title_color_r"],
 		deathlog_settings[widget_name]["title_color_g"],
@@ -738,8 +771,29 @@ function Deathlog_minilog_applySettings(rebuild_ace)
 				deathlog_settings[widget_name]["entry_font_size"],
 				""
 			)
+
+			if fonts[deathlog_settings[widget_name]["entry_font"]] ~= row_entry[i].font_strings[v[1]]:GetFont() then
+				success = false
+			end
 		end
 	end
+
+	if success == true then
+		if font_handle then
+			font_handle:Cancel()
+		end
+	end
+end
+function Deathlog_minilog_applySettings(rebuild_ace)
+	applyDefaults(defaults)
+	if rebuild_ace then
+		setSubtitleData()
+		if loaded == false then
+			setupRowEntries()
+		end
+	end
+	applyFont()
+	font_handle = C_Timer.NewTicker(1, applyFont)
 
 	if deathlog_settings[widget_name]["enable"] == nil or deathlog_settings[widget_name]["enable"] == true then
 		death_log_frame.frame:Show()
@@ -1221,6 +1275,36 @@ options = {
 					deathlog_settings[widget_name]["title_color_b"] = 1
 					deathlog_settings[widget_name]["title_color_a"] = 1
 				end
+				if deathlog_settings[widget_name]["presets"] == "ChefCarlos" then
+					deathlog_settings[widget_name]["enable"] = true
+					deathlog_settings[widget_name]["font"] = "2002 Bold"
+					deathlog_settings[widget_name]["entry_font"] = "2002 Bold"
+					deathlog_settings[widget_name]["title_font_size"] = 14
+					deathlog_settings[widget_name]["entry_font_size"] = 11
+					deathlog_settings[widget_name]["title_x_offset"] = -20
+					deathlog_settings[widget_name]["title_y_offset"] = 0
+					deathlog_settings[widget_name]["border_alpha"] = 1.0
+					deathlog_settings[widget_name]["size_x"] = 500
+					deathlog_settings[widget_name]["size_y"] = 150
+					deathlog_settings[widget_name]["show_icon"] = false
+					deathlog_settings[widget_name]["show_title"] = true
+					deathlog_settings[widget_name]["entry_x_offset"] = 0
+					deathlog_settings[widget_name]["entry_y_offset"] = 0
+					deathlog_settings[widget_name]["columns"] = {
+						"Name", -- [1]
+						"ClassLogo1", -- [2]
+						"Lvl", -- [3]
+						"Source", -- [4]
+						"LastWords", -- [5]
+					}
+					deathlog_settings[widget_name]["theme"] = "None"
+					deathlog_settings[widget_name]["hide_subtitle_heading"] = false
+					deathlog_settings[widget_name]["presets"] = "ChefCarlos"
+					deathlog_settings[widget_name]["title_color_r"] = 1
+					deathlog_settings[widget_name]["title_color_g"] = 1
+					deathlog_settings[widget_name]["title_color_b"] = 1
+					deathlog_settings[widget_name]["title_color_a"] = 1
+				end
 				Deathlog_minilog_applySettings()
 			end,
 		},
@@ -1399,6 +1483,51 @@ options = {
 					end,
 					set = function(self, key)
 						columnFunc(6, key)
+					end,
+				},
+			},
+		},
+		minilog_lvl_filter = {
+			type = "group",
+			name = "Filter Options",
+			order = 11,
+			inline = true,
+			args = {
+				min_lvl = {
+					type = "range",
+					name = "Min. Lvl. to Display",
+					desc = "Minimum level to display",
+					min = 1,
+					max = MAX_PLAYER_LEVEL,
+					step = 1,
+					order = 1,
+					disabled = function()
+						return deathlog_settings[widget_name]["min_lvl_player"]
+					end,
+					get = function()
+						if deathlog_settings[widget_name]["min_lvl_player"] then
+							return UnitLevel("player")
+						end
+						return deathlog_settings[widget_name]["min_lvl"]
+					end,
+					set = function(self, value)
+						deathlog_settings[widget_name]["min_lvl"] = value
+						Deathlog_DeathAlertWidget_applySettings()
+					end,
+				},
+				max_lvl = {
+					type = "range",
+					name = "Max. Lvl. to Display",
+					desc = "Maximum level to display",
+					min = 1,
+					max = MAX_PLAYER_LEVEL,
+					step = 1,
+					get = function()
+						return deathlog_settings[widget_name]["max_lvl"]
+					end,
+					set = function(self, value)
+						deathlog_settings[widget_name]["max_lvl"] = value
+						Deathlog_minilog_applySettings()
 					end,
 				},
 			},

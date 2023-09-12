@@ -15,6 +15,7 @@ local sounds = LSM30:HashTable("sound")
 sounds["default_hardcore"] = 8959
 sounds["golfclap"] = "Interface\\AddOns\\Deathlog\\Sounds\\golfclap.ogg"
 sounds["hunger_games"] = "Interface\\AddOns\\Deathlog\\Sounds\\hunger_games.ogg"
+sounds["HeroFallen"] = "Interface\\AddOns\\Deathlog\\Sounds\\HeroFallen.ogg"
 local fonts = LSM30:HashTable("font")
 fonts["blei00d"] = "Fonts\\blei00d.TTF"
 fonts["BreatheFire"] = "Interface\\AddOns\\Deathlog\\Fonts\\BreatheFire.ttf"
@@ -142,6 +143,18 @@ function Deathlog_DeathAlertPlay(entry)
 	if entry["source_id"] == -3 then
 		msg = deathlog_settings[widget_name]["fall_message"]
 	end
+	if entry["source_id"] == -4 then
+		msg = deathlog_settings[widget_name]["fatigue_message"]
+	end
+	if entry["source_id"] == -5 then
+		msg = deathlog_settings[widget_name]["fire_message"]
+	end
+	if entry["source_id"] == -6 then
+		msg = deathlog_settings[widget_name]["lava_message"]
+	end
+	if entry["source_id"] == -7 then
+		msg = deathlog_settings[widget_name]["slime_message"]
+	end
 	msg = msg:gsub("%<name>", entry["name"])
 	msg = msg:gsub("%<class>", class)
 	msg = msg:gsub("%<race>", race)
@@ -165,6 +178,10 @@ function Deathlog_DeathAlertPlay(entry)
 			.. "."
 	)
 
+	death_alert_frame.text:SetFont(
+		fonts[deathlog_settings[widget_name]["font"]],
+		deathlog_settings[widget_name]["font_size"]
+	)
 	death_alert_frame.text:SetText(msg)
 
 	if
@@ -182,7 +199,19 @@ function Deathlog_DeathAlertPlay(entry)
 				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Ability_Suffocate")
 			elseif entry["source_id"] == -3 then
 				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Spell_Magic_FeatherFall")
+			elseif entry["source_id"] == -4 then
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Spell_Nature_Sleep")
+			elseif entry["source_id"] == -5 then
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Spell_Fire_Fire")
+			elseif entry["source_id"] == -6 then
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Spell_Fire_Volcano")
+			elseif entry["source_id"] == -7 then
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\INV_Misc_Slime_01")
+			else
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\INV_Misc_Bone_ElfSkull_01")
 			end
+		else
+			death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\INV_Misc_Bone_ElfSkull_01")
 		end
 	elseif
 		deathlog_settings[widget_name]["style"] == "boss_banner_enemy_icon_animated"
@@ -287,6 +316,10 @@ local defaults = {
 	["message"] = "<name> the <race> <class> has been slain\nby <source> at lvl <level> in <zone>.",
 	["fall_message"] = "<name> the <race> <class> fell to\ndeath at lvl <level> in <zone>.",
 	["drown_message"] = "<name> the <race> <class> drowned\n at lvl <level> in <zone>.",
+	["slime_message"] = "<name> the <race> <class> has died from slime.\n at lvl <level> in <zone>.",
+	["lava_message"] = "<name> the <race> <class> drowned in lava.\n at lvl <level> in <zone>.",
+	["fire_message"] = "<name> the <race> <class> has died from fire.\n at lvl <level> in <zone>.",
+	["fatigue_message"] = "<name> the <race> <class> has died from fatigue.\n at lvl <level> in <zone>.",
 	["min_lvl"] = 1,
 	["min_lvl_player"] = false,
 	["max_lvl"] = MAX_PLAYER_LEVEL,
