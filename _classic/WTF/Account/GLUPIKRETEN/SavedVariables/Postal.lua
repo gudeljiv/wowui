@@ -7,7 +7,7 @@ Postal3DB = {
 				"Dopeclaw|Stitches|Horde|20|DRUID", -- [2]
 				"Dopecure|Stitches|Horde|1|PRIEST", -- [3]
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
-				"Dopesick|Stitches|Horde|20|WARRIOR", -- [5]
+				"Dopesick|Stitches|Horde|21|WARRIOR", -- [5]
 				"Dopesnare|Stitches|Horde|20|HUNTER", -- [6]
 			},
 		},

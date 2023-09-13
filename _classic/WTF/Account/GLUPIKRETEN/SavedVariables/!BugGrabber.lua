@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10392,
+	["session"] = 10394,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -411,5 +411,21 @@ BugGrabberDB = {
 			["session"] = 10391,
 			["counter"] = 1,
 		}, -- [53]
+		{
+			["message"] = "[string \"/equipslot 17 [equipped:shields] Battle Knife of the Bear\"]:1: unexpected symbol near '/'",
+			["time"] = "2023/09/13 17:36:56",
+			["locals"] = "(*temporary) = \"/equipslot 17 [equipped:shields] Battle Knife of the Bear\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10393,
+			["counter"] = 1,
+		}, -- [54]
+		{
+			["message"] = "Lua error in aura 'Overpower': Trigger 1\nWeakAuras Version: 5.7.1\nAura Version: 1.0.5\n[string \"return function() aura_env.unitIds = {}\"]:28: attempt to call global 'GetNumGlyphSockets' (a nil value)",
+			["time"] = "2023/09/13 18:18:44",
+			["locals"] = "(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetNumGlyphSockets' (a nil value)\"\n",
+			["stack"] = "[string \"return function() aura_env.unitIds = {}\"]:28: in function `IsGlyphEquipped'\n[string \"return function(allstates, event, timestamp, subEvent, _, sourceGuid, _, _, _, destGuid, _, _, _, ...)\"]:40: in function <[string \"return function(allstates, event, timestamp...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:578: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:563>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:810: in function `ScanEventsInternal'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:755: in function `ScanEvents'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:985: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:975>",
+			["session"] = 10393,
+			["counter"] = 1,
+		}, -- [55]
 	},
 }

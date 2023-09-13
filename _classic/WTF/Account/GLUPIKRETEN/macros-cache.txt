@@ -33,7 +33,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print( UnitDetailedThreatSituation("player", "target") )
+/run print( UnitArmor("target") )
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

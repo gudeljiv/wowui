@@ -7,7 +7,7 @@ VER 3 0000000000000011 " " "136106"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1205
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -20,20 +20,20 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:858
+/use item:929
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 0000000000000022 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Pridewing Patriarch
 /targetexact Sister Riven
+/targetexact Foreman Rigger
+/targetexact Bloodfury Slayer
 /targetexact Taskmaster Whipfang
 /targetexact Sorrow Wing
 /targetexact Bloodfury Ripper
-/targetexact Bloodfury Slayer
-/targetexact Besseleth
-/targetexact Foreman Rigger
+/targetexact Pridewing Patriarch
+/targetexact Tsunaman
 /targetlasttarget [dead]
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
@@ -41,7 +41,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print( UnitDetailedThreatSituation("player", "target") )
+/run print( UnitArmor("target") )
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
