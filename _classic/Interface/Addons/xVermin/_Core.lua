@@ -238,6 +238,7 @@ end
 xUnitCasting = xVermin.IfUnitIsCasting
 
 xVermin.GetRange = function(unit)
+	unit = unit or 'target'
 	if UnitExists(unit) then
 		minRange, maxRange = RangeCheck:GetRange(unit)
 		return minRange, maxRange

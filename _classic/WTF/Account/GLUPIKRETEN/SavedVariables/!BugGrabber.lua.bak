@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 10388,
 	["lastSanitation"] = 3,
+	["session"] = 10391,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:02:46",
 			["session"] = 10254,
+			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:02:46",
 			["session"] = 10254,
+			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:04:17",
 			["session"] = 10256,
+			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:04:17",
 			["session"] = 10256,
+			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -189,14 +189,14 @@ BugGrabberDB = {
 		}, -- [24]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["time"] = "2023/09/08 20:53:46",
 			["session"] = 10304,
+			["time"] = "2023/09/08 20:53:46",
 			["counter"] = 1,
 		}, -- [25]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["time"] = "2023/09/08 20:53:46",
 			["session"] = 10304,
+			["time"] = "2023/09/08 20:53:46",
 			["counter"] = 1,
 		}, -- [26]
 		{
@@ -321,14 +321,14 @@ BugGrabberDB = {
 		}, -- [41]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["session"] = 10351,
 			["time"] = "2023/09/09 20:42:15",
+			["session"] = 10351,
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["session"] = 10351,
 			["time"] = "2023/09/09 20:42:15",
+			["session"] = 10351,
 			["counter"] = 1,
 		}, -- [43]
 		{
@@ -364,21 +364,13 @@ BugGrabberDB = {
 			["counter"] = 6,
 		}, -- [47]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/08 08:02:36",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10376,
-			["counter"] = 4,
-		}, -- [48]
-		{
 			["message"] = "Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:233: attempt to call global 'GetContainerNumSlots' (a nil value)",
 			["time"] = "2023/09/12 14:31:21",
 			["locals"] = "(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetContainerNumSlots' (a nil value)\"\natBank = nil\natMail = nil\natMerchant = nil\ninCombat = nil\nisLooting = nil\ninTrade = nil\ninCraft = nil\nAllowedItemsList = <table> {\n 10752 = true\n 19153 = true\n 15874 = true\n 21743 = true\n 23022 = true\n 20229 = true\n 20233 = true\n 21512 = true\n 21528 = true\n 17962 = true\n 8505 = true\n 15902 = true\n 9529 = true\n 22568 = true\n 21042 = true\n 9537 = true\n 7973 = true\n 9541 = true\n 10569 = true\n 19297 = true\n 10834 = true\n 16783 = true\n 6715 = true\n 10595 = true\n 11107 = true\n 22154 = true\n 22158 = true\n 22162 = true\n 22166 = true\n 22170 = true\n 22178 = true\n 21162 = true\n 18636 = true\n 19150 = true\n 19154 = true\n 19425 = true\n 21979 = true\n 20708 = true\n 21740 = true\n 20469 = true\n 20230 = true\n 21509 = true\n 21513 = true\n 11938 = true\n 21266 = true\n 21270 = true\n 17963 = true\n 6755 = true\n 5738 = true\n 21812 = true\n 8647 = true\n 20808 = true\n 10695 = true\n 19035 = true\n 19298 = true\n 18804 = true\n 10456 = true\n 20601 = true\n 22649 = true\n 21131 = true\n 22155 = true\n 22159 = true\n 22163 = true\n 22167 = true\n 22171 = true\n 21163 = true\n 21191 = true\n 19155 = true\n 5523 = true\n 5524 = true\n 19422 = true\n 21980 = true\n 11024 = true\n 10773 = true\n 21741 = true\n 8484 = true\n 21243 = true\n 11617 = true\n 20231 = true\n 21510 = true\n 21132 = true\n 21113 = true\n 13247 = true\n 9265 = true\n 8502 = true\n 17964 = true\n 8506 = true\n 11568 = true\n 12339 = true\n 9532 = true\n 12849 = true\n 20393 = true\n 7870 = true\n 9540 = true\n 6827 = true\n 20809 = true\n 13881 = true\n 21327 = true\n 20767 = true\n 9363 = true\n 21315 = true\n 13891 = true\n 17726 = true\n 17685 = true\n 17727 = true\n 21216 = true\n 21363 = true\n 20602 = true\n 11966 = true\n 22650 = true\n 20805 = true\n 15699 = true\n 22152 = true\n 22156 = true\n 22160 = true\n 22164 = true\n 22168 = true\n 11883 = true\n 21156 = true\n 11887 = true\n 21164 = true\n 21640 = true\n 19151 = true\n 12122 = true\n 21975 = true\n 23224 = true\n 7190 = true\n 19152 = true\n 6351 = true\n 6352 = true\n 6353 = true\n 21386 = true\n 5335 = true\n 6356 = true\n 6357 = true\n 11912 = true\n 21228 = true\n 21742 = true\n 21746 = true\n 20768 = true\n 15876 = true\n 20228 = true\n 11423 = true\n 21511 = true\n 11937 = true\n 5858 = true\n 21150 = true\n 6307 = true\n 20766 = true\n 17965 = true\n 17969 = true\n 10479 = true\n 8504 = true\n 11955 = true\n 22320 = true\n 20367 = true\n 22648 = true\n 8507 = true\n 13874 = true\n 8503 = true\n 8049 = true\n 11422 = true\n 5857 = true\n 19296 = true\n 22172 = true\n 6643 = true\n 6644 = true\n 6645 = true\n 6646 = true\n 6647 = true\n 22746 = true\n 20603 = true\n 22137 = true\n 21981 = true\n 21271 = true\n 21310 = true\n 21133 = true\n 22157 = true\n 22161 = true\n 22165 = true\n 22169 = true\n 9539 = true\n 8366 = true\n 20236 = true\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:233: in function `AutomaticOpener'\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:347: in function <Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:346>\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:224: in function `?'\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:3: in function <Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:3>",
 			["session"] = 10377,
 			["counter"] = 5,
-		}, -- [49]
+		}, -- [48]
 		{
 			["message"] = "Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:234: attempt to call global 'GetContainerItemID' (a nil value)",
 			["time"] = "2023/09/12 14:34:41",
@@ -386,7 +378,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:234: in function `AutomaticOpener'\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:347: in function <Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:346>\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:224: in function `?'\n[string \"@Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua\"]:3: in function <Interface/AddOns/Open-Sesame/Open-Sesame_Vanilla.lua:3>",
 			["session"] = 10378,
 			["counter"] = 3,
-		}, -- [50]
+		}, -- [49]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RareScanner' tried to call the protected function 'scanner_button:SetPoint()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -394,7 +386,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface/AddOns/xVermin/Addons/RareScanner.lua\"]:7: in function <Interface/AddOns/xVermin/Addons/RareScanner.lua:5>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10385,
 			["counter"] = 2,
-		}, -- [51]
+		}, -- [50]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -402,6 +394,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Addons/nMainBar.lua\"]:80: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:79>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10385,
 			["counter"] = 2,
+		}, -- [51]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/08 08:02:36",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10390,
+			["counter"] = 5,
 		}, -- [52]
+		{
+			["message"] = "[string \"print(xRange())\"]:1: attempt to call global 'xRange' (a nil value)",
+			["time"] = "2023/09/13 16:20:40",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'xRange' (a nil value)\"\n",
+			["stack"] = "[string \"print(xRange())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 10391,
+			["counter"] = 1,
+		}, -- [53]
 	},
 }

@@ -1,12 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[109] = {
-		},
-		["tip"] = {
+		[112] = {
 		},
 	},
-	["currentStep"] = 109,
+	["currentStep"] = 112,
 	["questObjectivesCache"] = {
 		[0] = 26,
 		[818] = {
@@ -175,11 +173,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[825] = {
+		[794] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Gnomish Tools: 0/3",
+				["numRequired"] = 1,
+				["text"] = "Burning Blade Medallion: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -193,14 +191,28 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[817] = {
+		[786] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 4,
-				["text"] = "Durotar Tiger Fur: 0/4",
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Valley of Trials destroyed: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Sen'jin Village destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Orgrimmar destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[813] = {
 			{
@@ -216,6 +228,24 @@ RXPCData = {
 				["type"] = "event",
 				["numRequired"] = 1,
 				["text"] = "Tame a Dire Mottled Boar",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[792] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 12,
+				["text"] = "Vile Familiar slain: 0/12",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[816] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Kron's Amulet: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -243,6 +273,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[6083] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Tame a Surf Crawler",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[6082] = {
 			{
 				["type"] = "event",
@@ -261,61 +300,20 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6083] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Tame a Surf Crawler",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[816] = {
+		[817] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Kron's Amulet: 0/1",
+				["numRequired"] = 4,
+				["text"] = "Durotar Tiger Fur: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[792] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 12,
-				["text"] = "Vile Familiar slain: 0/12",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[786] = {
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Valley of Trials destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Sen'jin Village destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Orgrimmar destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[794] = {
+		[825] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Burning Blade Medallion: 0/1",
+				["numRequired"] = 3,
+				["text"] = "Gnomish Tools: 0/3",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -336,20 +334,20 @@ RXPCData = {
 		[4402] = "Galgar's Cactus Apple Surprise",
 		[6394] = "Thazz'ril's Pick",
 		[794] = "Burning Blade Medallion",
-		[792] = "Vile Familiars",
-		[817] = "Practical Prey",
+		[835] = "Securing the Lines",
+		[786] = "Thwarting Kolkar Aggression",
 		[812] = "Need for a Cure",
-		[4641] = "Your Place In The World",
+		[825] = "From The Wreckage....",
 		[813] = "Finding the Antidote",
 		[6062] = "Taming the Beast",
 		[5441] = "Lazy Peons",
-		[815] = "Break a Few Eggs",
 		[784] = "Vanquish the Betrayers",
+		[815] = "Break a Few Eggs",
 		[831] = "The Admiral's Orders",
 		[816] = "Lost But Not Forgotten",
-		[825] = "From The Wreckage....",
-		[786] = "Thwarting Kolkar Aggression",
-		[835] = "Securing the Lines",
+		[4641] = "Your Place In The World",
+		[817] = "Practical Prey",
+		[792] = "Vile Familiars",
 	},
 	["currentGuideName"] = "06-13 Orc/Troll",
 	["stepSkip"] = {
@@ -379,17 +377,17 @@ RXPCData = {
 		[102] = true,
 		[44] = true,
 		[52] = true,
-		[98] = true,
-		[23] = true,
-		[95] = true,
+		[93] = true,
+		[90] = true,
+		[3] = true,
 		[89] = true,
 		[53] = true,
 		[61] = true,
-		[3] = true,
-		[90] = true,
-		[93] = true,
+		[95] = true,
+		[23] = true,
+		[98] = true,
 	},
-	["currentStepId"] = 4201454889,
+	["currentStepId"] = 4201454976,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -408,10 +406,10 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 8,
-							["weekday"] = 4,
+							["minute"] = 48,
 							["year"] = 2023,
 							["hour"] = 13,
-							["minute"] = 48,
+							["weekday"] = 4,
 						},
 						["started"] = 0,
 					},
@@ -432,10 +430,10 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 45,
 							["year"] = 2023,
 							["hour"] = 8,
-							["minute"] = 45,
+							["weekday"] = 7,
 						},
 						["finished"] = 8359,
 						["started"] = 1,
@@ -461,20 +459,20 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 45,
 							["year"] = 2023,
 							["hour"] = 8,
-							["minute"] = 45,
+							["weekday"] = 7,
 						},
 						["finished"] = 13425,
 						["dateFinished"] = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 45,
 							["year"] = 2023,
 							["hour"] = 10,
-							["minute"] = 45,
+							["weekday"] = 7,
 						},
 						["started"] = 8360,
 					},
@@ -500,29 +498,29 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 45,
 							["year"] = 2023,
 							["hour"] = 10,
-							["minute"] = 45,
+							["weekday"] = 7,
 						},
 						["finished"] = 16203,
 						["dateFinished"] = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 31,
+							["weekday"] = 7,
 							["year"] = 2023,
 							["hour"] = 11,
-							["weekday"] = 7,
+							["minute"] = 31,
 						},
 						["started"] = 13426,
 					},
 					["quests"] = {
 						["Durotar"] = {
-							[808] = 775,
-							[826] = 850,
-							[825] = 700,
 							[817] = 700,
+							[808] = 775,
+							[825] = 700,
+							[826] = 850,
 						},
 					},
 				},
@@ -544,20 +542,20 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 57,
 							["year"] = 2023,
 							["hour"] = 15,
-							["minute"] = 57,
+							["weekday"] = 7,
 						},
 						["finished"] = 24345,
 						["dateFinished"] = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 26,
 							["year"] = 2023,
 							["hour"] = 17,
-							["minute"] = 26,
+							["weekday"] = 7,
 						},
 						["started"] = 20106,
 					},
@@ -571,6 +569,29 @@ RXPCTrackingData = {
 						["Orgrimmar"] = {
 							[6081] = 420,
 							[831] = 625,
+						},
+					},
+				},
+				[12] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 2,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 36,
+							["year"] = 2023,
+							["hour"] = 19,
+							["weekday"] = 7,
+						},
+						["started"] = 28669,
+					},
+					["quests"] = {
+						["Orgrimmar"] = {
+							[5726] = 900,
 						},
 					},
 				},
@@ -588,20 +609,20 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 31,
+							["weekday"] = 7,
 							["year"] = 2023,
 							["hour"] = 11,
-							["weekday"] = 7,
+							["minute"] = 31,
 						},
 						["finished"] = 20105,
 						["dateFinished"] = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 57,
 							["year"] = 2023,
 							["hour"] = 15,
-							["minute"] = 57,
+							["weekday"] = 7,
 						},
 						["started"] = 16204,
 					},
@@ -613,16 +634,20 @@ RXPCTrackingData = {
 					},
 				},
 				[11] = {
-					["groupExperience"] = 0,
+					["groupExperience"] = 591,
 					["deaths"] = 0,
 					["mobs"] = {
 						["Durotar"] = {
-							["xp"] = 2673,
-							["count"] = 22,
+							["xp"] = 7820,
+							["count"] = 75,
 						},
 						["The Barrens"] = {
-							["xp"] = 100,
-							["count"] = 1,
+							["xp"] = 271,
+							["count"] = 3,
+						},
+						["Orgrimmar"] = {
+							["xp"] = 1360,
+							["count"] = 2,
 						},
 					},
 					["timestamp"] = {
@@ -630,16 +655,32 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 26,
 							["year"] = 2023,
 							["hour"] = 17,
-							["minute"] = 26,
+							["weekday"] = 7,
+						},
+						["finished"] = 28668,
+						["dateFinished"] = {
+							["monthDay"] = 2,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 36,
+							["year"] = 2023,
+							["hour"] = 19,
+							["weekday"] = 7,
 						},
 						["started"] = 24346,
 					},
 					["quests"] = {
 						["Durotar"] = {
+							[806] = 900,
 							[835] = 875,
+							[828] = 90,
+							[827] = 900,
+						},
+						["Orgrimmar"] = {
+							[829] = 460,
 						},
 					},
 				},
@@ -667,39 +708,54 @@ RXPCComms = {
 					["class"] = "HUNTER",
 					["xp"] = 47,
 				},
-				["Langer"] = {
-					["timePlayed"] = 75.67499999998836,
-					["class"] = "HUNTER",
-					["xp"] = 33,
-				},
 				["Raec"] = {
-					["level"] = 9,
+					["isRxp"] = true,
 					["lastSeen"] = 170405.206,
 					["xpPercentage"] = 38,
-					["class"] = "SHAMAN",
+					["level"] = 9,
 					["timePlayed"] = 111.0260000000126,
-					["isRxp"] = true,
-				},
-				["Putsos"] = {
-					["level"] = 11,
-					["lastSeen"] = 168779.249,
-					["xpPercentage"] = 21,
-					["class"] = "DRUID",
-					["timePlayed"] = 537.5260000000126,
-					["isRxp"] = true,
+					["class"] = "SHAMAN",
 				},
 				["Назроут"] = {
 					["timePlayed"] = 41.70399999999791,
 					["class"] = "WARRIOR",
 					["xp"] = 44,
 				},
-				["Ecstasia"] = {
+				["Putsos"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 168779.249,
+					["xpPercentage"] = 21,
+					["level"] = 11,
+					["timePlayed"] = 537.5260000000126,
+					["class"] = "DRUID",
+				},
+				["Baldurr"] = {
+					["timePlayed"] = 200.7049999999872,
+					["class"] = "WARRIOR",
+					["xp"] = 43,
+				},
+				["Langer"] = {
+					["timePlayed"] = 75.67499999998836,
+					["class"] = "HUNTER",
+					["xp"] = 33,
+				},
+				["Поминки"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 41,
+				},
+				["Unluckydead"] = {
+					["timePlayed"] = 0,
 					["class"] = "WARLOCK",
+					["xp"] = 41,
+				},
+				["Ecstasia"] = {
+					["level"] = 7,
 					["lastSeen"] = 163094.381,
 					["xpPercentage"] = 16,
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 					["timePlayed"] = 21.1020000000135,
-					["level"] = 7,
+					["isRxp"] = true,
 				},
 			},
 		},

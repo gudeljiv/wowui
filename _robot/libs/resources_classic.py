@@ -105,10 +105,10 @@ data = {
     },
     "hunter": {
         "main": [
+            {"name": "auto shot", "type": "GetSpellTexture", "id": 75, "key": "2"},
             {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "1", "modifier": "lshift"},
             {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "2", "modifier": "lshift"},
             {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "3", "modifier": "lshift"},
-            {"name": "auto shot", "type": "GetSpellTexture", "id": 1583, "key": "5", "modifier": "lshift"},
             {"name": "trueshot aura", "type": "GetSpellTexture", "id": 19506, "key": "1", "modifier": "lalt"},
             {"name": "hunter's mark", "type": "GetSpellTexture", "id": 1130, "key": "3", "modifier": "lalt"},
             {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},

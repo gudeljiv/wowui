@@ -41,7 +41,7 @@ VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
 /cast Arcane Shot
 END
 VER 3 0000000001000013 " " "134400"
-#showtooltip
+#showtooltip 
 /petfollow
 /stopattack
 /cast Freezing Trap
@@ -73,11 +73,11 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 /stopattack
 /stopcasting
 END
-VER 3 0000000001000011 "Pet Attack" "132152"
-#showtooltip 
+VER 3 0000000001000011 " " "132152"
+#showtooltip
 /petattack [@mouseover,harm][]
 END
-VER 3 000000000100000F "Pet Follow" "132328"
+VER 3 000000000100000F " " "132328"
 #showtooltip
 /petfollow
 END
