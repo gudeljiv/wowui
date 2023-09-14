@@ -53,11 +53,11 @@ local presets = {
 }
 
 local LSM30 = LibStub("LibSharedMedia-3.0", true)
-local default_font = "Fonts\\blei00d.TTF"
+local default_font = "Fonts\\FRIZQT__.TTF"
 local widget_name = "minilog"
 
 local fonts = LSM30:HashTable("font")
-fonts["blei00d"] = "Fonts\\blei00d.TTF"
+fonts["blei00d"] = "Fonts\\FRIZQT__.TTF"
 fonts["BreatheFire"] = "Interface\\AddOns\\Deathlog\\Fonts\\BreatheFire.ttf"
 fonts["BlackChancery"] = "Interface\\AddOns\\Deathlog\\Fonts\\BLKCHCRY.TTF"
 fonts["ArgosGeorge"] = "Interface\\AddOns\\Deathlog\\Fonts\\ArgosGeorge.ttf"
@@ -139,7 +139,7 @@ local death_log_frame = AceGUI:Create("Deathlog_MiniLog")
 death_log_frame.frame:SetMovable(false)
 death_log_frame.frame:EnableMouse(false)
 death_log_frame:SetTitle("Deathlog")
-death_log_frame.titletext:SetFont("Fonts\\blei00d.TTF", 19, "THICK")
+death_log_frame.titletext:SetFont("Fonts\\FRIZQT__.TTF", 19, "THICK")
 local subtitle_metadata = {
 	["ColoredName"] = {
 		"Name",
@@ -402,7 +402,7 @@ local function setupRowEntries()
 				_entry.font_strings[v[1]]:SetWidth(v[2])
 			end
 			_entry.font_strings[v[1]]:SetTextColor(1, 1, 1)
-			_entry.font_strings[v[1]]:SetFont("Fonts\\blei00d.TTF", 14, "")
+			_entry.font_strings[v[1]]:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
 		end
 
 		_entry.background = _entry.frame:CreateTexture(nil, "OVERLAY")

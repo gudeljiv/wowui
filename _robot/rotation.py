@@ -316,6 +316,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 start_time = time.time()
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+                if active_window != "World of Warcraft":
+                    time.sleep(2)
+                    continue
 
 # defining regions
                 p_main = {"top": 2, "left": 2, "width": x, "height": y}
