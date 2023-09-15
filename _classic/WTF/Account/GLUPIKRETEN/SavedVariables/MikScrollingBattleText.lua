@@ -8,62 +8,6 @@ MSBTProfiles_SavedVars = {
 			["hideFullHoTOverheals"] = false,
 			["dotThrottleDuration"] = 0,
 			["creationVersion"] = "5.7.123",
-			["groupNumbers"] = true,
-			["hideNames"] = true,
-			["scrollAreas"] = {
-				["Notification"] = {
-					["disabled"] = true,
-					["offsetY"] = 250,
-				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
-				},
-				["Custom2"] = {
-					["critFontSize"] = 22,
-					["scrollHeight"] = 110,
-					["offsetX"] = 270,
-					["scrollWidth"] = 10,
-					["stickyBehavior"] = "Jiggle",
-					["offsetY"] = 125,
-					["name"] = "PET outgoing",
-					["normalFontSize"] = 10,
-				},
-				["Custom3"] = {
-					["critFontSize"] = 16,
-					["scrollWidth"] = 10,
-					["offsetX"] = -270,
-					["name"] = "PET incoming",
-					["offsetY"] = 125,
-					["scrollHeight"] = 110,
-					["normalFontSize"] = 10,
-				},
-				["Static"] = {
-					["disabled"] = true,
-				},
-				["Custom1"] = {
-					["direction"] = "Up",
-					["disabled"] = true,
-					["stickyBehavior"] = "Normal",
-					["stickyDirection"] = "Up",
-					["scrollHeight"] = 160,
-					["name"] = "CRIT",
-					["offsetY"] = 1,
-					["critFontSize"] = 36,
-					["offsetX"] = -20,
-				},
-				["Outgoing"] = {
-					["stickyTextAlignIndex"] = 3,
-					["offsetX"] = 360,
-					["iconAlign"] = "Left",
-					["offsetY"] = 50,
-					["textAlignIndex"] = 3,
-				},
-			},
-			["normalFontName"] = "MSBT Yellowjacket",
 			["events"] = {
 				["PET_INCOMING_HOT_CRIT"] = {
 					["scrollArea"] = "Custom3",
@@ -138,7 +82,7 @@ MSBTProfiles_SavedVars = {
 					["scrollArea"] = "Custom2",
 				},
 				["NOTIFICATION_POWER_LOSS"] = {
-					["scrollArea"] = "Custom3",
+					["scrollArea"] = "Custom1",
 				},
 				["NOTIFICATION_AC_FULL"] = {
 					["disabled"] = true,
@@ -215,10 +159,10 @@ MSBTProfiles_SavedVars = {
 				["PET_OUTGOING_SPELL_RESIST"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_INCOMING_DAMAGE_CRIT"] = {
+				["PET_INCOMING_ABSORB"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_ABSORB"] = {
+				["PET_INCOMING_DAMAGE_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_ABSORB"] = {
@@ -264,7 +208,7 @@ MSBTProfiles_SavedVars = {
 					["scrollArea"] = "Custom2",
 				},
 				["NOTIFICATION_POWER_GAIN"] = {
-					["scrollArea"] = "Custom3",
+					["scrollArea"] = "Custom1",
 				},
 				["PET_OUTGOING_DODGE"] = {
 					["scrollArea"] = "Custom2",
@@ -333,22 +277,76 @@ MSBTProfiles_SavedVars = {
 					["disabled"] = true,
 				},
 			},
+			["groupNumbers"] = true,
+			["hideNames"] = true,
+			["scrollAreas"] = {
+				["Notification"] = {
+					["offsetY"] = 275,
+					["disabled"] = true,
+				},
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+				},
+				["Custom2"] = {
+					["scrollHeight"] = 110,
+					["stickyBehavior"] = "Jiggle",
+					["critFontSize"] = 22,
+					["scrollWidth"] = 10,
+					["name"] = "PET outgoing",
+					["offsetX"] = 270,
+					["offsetY"] = 125,
+					["normalFontSize"] = 10,
+				},
+				["Custom3"] = {
+					["critFontSize"] = 16,
+					["scrollHeight"] = 110,
+					["name"] = "PET incoming",
+					["offsetX"] = -270,
+					["scrollWidth"] = 10,
+					["offsetY"] = 125,
+					["normalFontSize"] = 10,
+				},
+				["Static"] = {
+					["disabled"] = true,
+				},
+				["Custom1"] = {
+					["direction"] = "Up",
+					["stickyBehavior"] = "Normal",
+					["stickyDirection"] = "Up",
+					["scrollHeight"] = 160,
+					["name"] = "Mana used",
+					["offsetY"] = 1,
+					["offsetX"] = -20,
+					["critFontSize"] = 36,
+				},
+				["Outgoing"] = {
+					["stickyTextAlignIndex"] = 3,
+					["offsetX"] = 360,
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 3,
+				},
+			},
+			["normalFontName"] = "MSBT Yellowjacket",
 			["normalFontSize"] = 15,
 		},
 		["Multibox master"] = {
 			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
-			["hideFullHoTOverheals"] = false,
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
-					["behavior"] = "MSBT_NORMAL",
 					["iconAlign"] = "Left",
+					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
-					["animationStyle"] = "Straight",
 					["textAlignIndex"] = 3,
+					["animationStyle"] = "Straight",
 				},
 				["Notification"] = {
 					["disabled"] = true,
@@ -366,13 +364,14 @@ MSBTProfiles_SavedVars = {
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
 					["offsetX"] = -400,
-					["textAlignIndex"] = 1,
-					["behavior"] = "MSBT_NORMAL",
-					["offsetY"] = 50,
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
 				},
 			},
+			["hideFullHoTOverheals"] = false,
 			["normalFontName"] = "MSBT Yellowjacket",
 			["groupNumbers"] = true,
 			["creationVersion"] = "5.7.123",
