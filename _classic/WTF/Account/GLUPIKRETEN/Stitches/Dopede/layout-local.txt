@@ -104,3 +104,10 @@ X: 40
 Y: 268
 W: 330
 H: 125
+Frame: AtlasLoot_GUI-Frame
+FrameLevel: 1
+Anchor: RIGHT
+X: -346
+Y: 103
+W: 920
+H: 600

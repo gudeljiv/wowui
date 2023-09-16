@@ -2,7 +2,7 @@ data = dict()
 
 data = {
     "colors": {
-        "shaman": {"#0092f1", "#4090ea"},
+        "shaman": {"#0092f1", "#4090ea", "#3d7aff"},
         "warrior": {"#dfb990"},
         "druid": {"#ff9f13"},
         "death knight": {"#dd365a"},

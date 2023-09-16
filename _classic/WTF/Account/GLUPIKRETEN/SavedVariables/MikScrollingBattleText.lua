@@ -150,20 +150,20 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_MISS"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["NOTIFICATION_DEBUFF"] = {
+				["NOTIFICATION_ITEM_BUFF"] = {
 					["disabled"] = true,
 				},
 				["PET_INCOMING_SPELL_RESIST"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_SPELL_RESIST"] = {
+				["NOTIFICATION_BUFF"] = {
+					["disabled"] = true,
+				},
+				["NOTIFICATION_SKILL_GAIN"] = {
+					["disabled"] = true,
+				},
+				["PET_OUTGOING_ABSORB"] = {
 					["scrollArea"] = "Custom2",
-				},
-				["PET_INCOMING_ABSORB"] = {
-					["scrollArea"] = "Custom3",
-				},
-				["PET_INCOMING_DAMAGE_CRIT"] = {
-					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_ABSORB"] = {
 					["scrollArea"] = "Custom3",
@@ -174,8 +174,8 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_DAMAGE"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_SPELL_BLOCK"] = {
-					["scrollArea"] = "Custom2",
+				["NOTIFICATION_AC_CHANGE"] = {
+					["disabled"] = true,
 				},
 				["NOTIFICATION_NPC_KILLING_BLOW"] = {
 					["disabled"] = false,
@@ -186,11 +186,11 @@ MSBTProfiles_SavedVars = {
 				["NOTIFICATION_PC_KILLING_BLOW"] = {
 					["disabled"] = true,
 				},
-				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
+				["NOTIFICATION_ALT_POWER_LOSS"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_SPELL_DEFLECT"] = {
-					["scrollArea"] = "Custom3",
+				["NOTIFICATION_EXTRA_ATTACK"] = {
+					["disabled"] = true,
 				},
 				["PET_OUTGOING_SPELL_DOT"] = {
 					["scrollArea"] = "Custom2",
@@ -204,16 +204,16 @@ MSBTProfiles_SavedVars = {
 				["NOTIFICATION_COMBAT_LEAVE"] = {
 					["disabled"] = true,
 				},
-				["PET_OUTGOING_MISS"] = {
-					["scrollArea"] = "Custom2",
+				["NOTIFICATION_COMBAT_ENTER"] = {
+					["disabled"] = true,
 				},
-				["NOTIFICATION_POWER_GAIN"] = {
-					["scrollArea"] = "Custom1",
+				["NOTIFICATION_HOLY_POWER_CHANGE"] = {
+					["disabled"] = true,
 				},
-				["PET_OUTGOING_DODGE"] = {
-					["scrollArea"] = "Custom2",
+				["NOTIFICATION_DEBUFF_FADE"] = {
+					["disabled"] = true,
 				},
-				["PET_OUTGOING_SPELL_DODGE"] = {
+				["PET_OUTGOING_SPELL_EVADE"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["NOTIFICATION_MONSTER_EMOTE"] = {
@@ -225,26 +225,26 @@ MSBTProfiles_SavedVars = {
 				["NOTIFICATION_DEBUFF_STACK"] = {
 					["disabled"] = true,
 				},
-				["PET_OUTGOING_SPELL_DOT_CRIT"] = {
-					["scrollArea"] = "Custom2",
-				},
 				["PET_INCOMING_SPELL_BLOCK"] = {
 					["scrollArea"] = "Custom3",
+				},
+				["PET_OUTGOING_SPELL_DOT_CRIT"] = {
+					["scrollArea"] = "Custom2",
 				},
 				["NOTIFICATION_HOLY_POWER_FULL"] = {
 					["disabled"] = true,
 				},
-				["PET_OUTGOING_SPELL_EVADE"] = {
+				["PET_OUTGOING_SPELL_DODGE"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["NOTIFICATION_DEBUFF_FADE"] = {
-					["disabled"] = true,
+				["PET_OUTGOING_DODGE"] = {
+					["scrollArea"] = "Custom2",
 				},
-				["NOTIFICATION_HOLY_POWER_CHANGE"] = {
-					["disabled"] = true,
+				["NOTIFICATION_POWER_GAIN"] = {
+					["scrollArea"] = "Custom1",
 				},
-				["NOTIFICATION_COMBAT_ENTER"] = {
-					["disabled"] = true,
+				["PET_OUTGOING_MISS"] = {
+					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_SPELL_DAMAGE_CRIT"] = {
 					["scrollArea"] = "Custom3",
@@ -252,37 +252,75 @@ MSBTProfiles_SavedVars = {
 				["NOTIFICATION_BUFF_STACK"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_EXTRA_ATTACK"] = {
-					["disabled"] = true,
-				},
-				["NOTIFICATION_ALT_POWER_LOSS"] = {
+				["PET_INCOMING_SPELL_DEFLECT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["NOTIFICATION_AC_CHANGE"] = {
-					["disabled"] = true,
+				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
+					["scrollArea"] = "Custom3",
+				},
+				["PET_OUTGOING_SPELL_BLOCK"] = {
+					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_HOT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_ABSORB"] = {
+				["PET_INCOMING_ABSORB"] = {
+					["scrollArea"] = "Custom3",
+				},
+				["PET_INCOMING_DAMAGE_CRIT"] = {
+					["scrollArea"] = "Custom3",
+				},
+				["PET_OUTGOING_SPELL_RESIST"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["NOTIFICATION_SKILL_GAIN"] = {
-					["disabled"] = true,
-				},
-				["NOTIFICATION_BUFF"] = {
-					["disabled"] = true,
-				},
-				["NOTIFICATION_ITEM_BUFF"] = {
+				["NOTIFICATION_DEBUFF"] = {
 					["disabled"] = true,
 				},
 			},
 			["groupNumbers"] = true,
-			["hideNames"] = true,
 			["scrollAreas"] = {
 				["Notification"] = {
-					["offsetY"] = 275,
 					["disabled"] = true,
+					["offsetY"] = 275,
+				},
+				["Outgoing"] = {
+					["stickyTextAlignIndex"] = 3,
+					["offsetX"] = 360,
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 3,
+				},
+				["Custom2"] = {
+					["critFontSize"] = 22,
+					["scrollHeight"] = 110,
+					["name"] = "PET outgoing",
+					["scrollWidth"] = 10,
+					["stickyBehavior"] = "Jiggle",
+					["offsetY"] = 125,
+					["offsetX"] = 270,
+					["normalFontSize"] = 10,
+				},
+				["Custom1"] = {
+					["stickyDirection"] = "Up",
+					["direction"] = "Up",
+					["name"] = "Mana used",
+					["critFontSize"] = 36,
+					["stickyBehavior"] = "Normal",
+					["offsetY"] = 1,
+					["offsetX"] = -20,
+					["scrollHeight"] = 160,
+				},
+				["Static"] = {
+					["disabled"] = true,
+				},
+				["Custom3"] = {
+					["critFontSize"] = 16,
+					["scrollHeight"] = 110,
+					["name"] = "PET incoming",
+					["offsetX"] = -270,
+					["offsetY"] = 125,
+					["scrollWidth"] = 10,
+					["normalFontSize"] = 10,
 				},
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
@@ -291,65 +329,34 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 50,
 					["textAlignIndex"] = 1,
 				},
-				["Custom2"] = {
-					["scrollHeight"] = 110,
-					["stickyBehavior"] = "Jiggle",
-					["critFontSize"] = 22,
-					["scrollWidth"] = 10,
-					["name"] = "PET outgoing",
-					["offsetX"] = 270,
-					["offsetY"] = 125,
-					["normalFontSize"] = 10,
-				},
-				["Custom3"] = {
-					["critFontSize"] = 16,
-					["scrollHeight"] = 110,
-					["name"] = "PET incoming",
-					["offsetX"] = -270,
-					["scrollWidth"] = 10,
-					["offsetY"] = 125,
-					["normalFontSize"] = 10,
-				},
-				["Static"] = {
-					["disabled"] = true,
-				},
-				["Custom1"] = {
-					["direction"] = "Up",
-					["stickyBehavior"] = "Normal",
-					["stickyDirection"] = "Up",
-					["scrollHeight"] = 160,
-					["name"] = "Mana used",
-					["offsetY"] = 1,
-					["offsetX"] = -20,
-					["critFontSize"] = 36,
-				},
-				["Outgoing"] = {
-					["stickyTextAlignIndex"] = 3,
-					["offsetX"] = 360,
-					["iconAlign"] = "Left",
-					["offsetY"] = 50,
-					["textAlignIndex"] = 3,
-				},
 			},
 			["normalFontName"] = "MSBT Yellowjacket",
+			["hideNames"] = true,
 			["normalFontSize"] = 15,
 		},
 		["Multibox master"] = {
-			["normalFontSize"] = 15,
+			["creationVersion"] = "5.7.123",
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
+			["groupNumbers"] = true,
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
+					["animationStyle"] = "Straight",
 					["iconAlign"] = "Left",
-					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["textAlignIndex"] = 3,
-					["animationStyle"] = "Straight",
+					["behavior"] = "MSBT_NORMAL",
 				},
-				["Notification"] = {
-					["disabled"] = true,
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["textAlignIndex"] = 1,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -361,20 +368,13 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["animationStyle"] = "Straight",
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
-					["behavior"] = "MSBT_NORMAL",
+				["Notification"] = {
+					["disabled"] = true,
 				},
 			},
-			["hideFullHoTOverheals"] = false,
 			["normalFontName"] = "MSBT Yellowjacket",
-			["groupNumbers"] = true,
-			["creationVersion"] = "5.7.123",
+			["hideFullHoTOverheals"] = false,
+			["normalFontSize"] = 15,
 		},
 	},
 }

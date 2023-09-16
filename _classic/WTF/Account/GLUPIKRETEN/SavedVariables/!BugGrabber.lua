@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10452,
 	["lastSanitation"] = 3,
-	["session"] = 10427,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -189,14 +189,14 @@ BugGrabberDB = {
 		}, -- [24]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [25]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [26]
 		{
@@ -313,14 +313,14 @@ BugGrabberDB = {
 		}, -- [40]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [42]
 		{
@@ -412,21 +412,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [53]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/08 08:02:36",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10400,
-			["counter"] = 7,
-		}, -- [54]
-		{
 			["message"] = "[string \"activeTimers\"]:1: '=' expected near '<eof>'",
 			["time"] = "2023/09/14 17:30:58",
 			["locals"] = "(*temporary) = \"activeTimers\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10406,
 			["counter"] = 1,
-		}, -- [55]
+		}, -- [54]
 		{
 			["message"] = "[string \"print(activeTimers[\"player\"])\"]:1: attempt to index global 'activeTimers' (a nil value)",
 			["time"] = "2023/09/14 17:31:19",
@@ -434,7 +426,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(activeTimers[\"player\"])\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10406,
 			["counter"] = 1,
-		}, -- [56]
+		}, -- [55]
 		{
 			["message"] = "[string \"print(ClassicCastbars:activeTimers(\"player\"...\"]:1: attempt to call method 'activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:32:46",
@@ -442,7 +434,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(ClassicCastbars:activeTimers(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10407,
 			["counter"] = 1,
-		}, -- [57]
+		}, -- [56]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:218: attempt to call method 'activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:32:18",
@@ -450,7 +442,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:218: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:217>\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:447: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:443>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10407,
 			["counter"] = 2,
-		}, -- [58]
+		}, -- [57]
 		{
 			["message"] = "[string \"print(ClassicCastbars.activeTimers(\"player\"...\"]:1: attempt to call field 'activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:34:29",
@@ -458,7 +450,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(ClassicCastbars.activeTimers(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10407,
 			["counter"] = 1,
-		}, -- [59]
+		}, -- [58]
 		{
 			["message"] = "[string \"print(addon.activeTimers(\"player\"))\"]:1: attempt to index global 'addon' (a nil value)",
 			["time"] = "2023/09/14 17:34:39",
@@ -466,7 +458,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(addon.activeTimers(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10407,
 			["counter"] = 1,
-		}, -- [60]
+		}, -- [59]
 		{
 			["message"] = "[string \"print(_G.activeTimers(\"player\"))\"]:1: attempt to call field 'activeTimers' (a nil value)",
 			["time"] = "2023/09/14 17:34:51",
@@ -474,7 +466,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(_G.activeTimers(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10407,
 			["counter"] = 1,
-		}, -- [61]
+		}, -- [60]
 		{
 			["message"] = "[string \"print(CCB_activeTimers(\"player\"))\"]:1: attempt to call global 'CCB_activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:36:58",
@@ -482,7 +474,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(CCB_activeTimers(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10408,
 			["counter"] = 2,
-		}, -- [62]
+		}, -- [61]
 		{
 			["message"] = "[string \"print(CCB_activeTimers(\"players\"))\"]:1: attempt to call global 'CCB_activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:37:16",
@@ -490,7 +482,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(CCB_activeTimers(\"players\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10408,
 			["counter"] = 1,
-		}, -- [63]
+		}, -- [62]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:218: attempt to call global 'CCB_activeTimers' (a table value)",
 			["time"] = "2023/09/14 17:36:23",
@@ -498,7 +490,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:218: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:217>\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:448: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:444>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10408,
 			["counter"] = 2,
-		}, -- [64]
+		}, -- [63]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:218: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/14 17:42:34",
@@ -506,7 +498,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:218: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:217>\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:448: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:444>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10412,
 			["counter"] = 6,
-		}, -- [65]
+		}, -- [64]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:228: attempt to call global 'dumps' (a nil value)",
 			["time"] = "2023/09/14 17:53:48",
@@ -514,7 +506,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:228: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:227>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:456: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:452>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10414,
 			["counter"] = 3,
-		}, -- [66]
+		}, -- [65]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:240: attempt to index local 'cast' (a nil value)",
 			["time"] = "2023/09/14 17:52:59",
@@ -522,7 +514,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:240: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:237>\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:456: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:452>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10415,
 			["counter"] = 6,
-		}, -- [67]
+		}, -- [66]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:241: attempt to index local 'cast' (a nil value)",
 			["time"] = "2023/09/14 17:55:14",
@@ -530,7 +522,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:241: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:238>\n[string \"=[C]\"]: in function `StartCast'\n[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars.lua\"]:453: in function <Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:449>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:485: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
 			["session"] = 10416,
 			["counter"] = 2,
-		}, -- [68]
+		}, -- [67]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RingMenu' tried to call the protected function 'SpellStopCasting()'.",
 			["time"] = "2023/09/09 12:26:26",
@@ -538,7 +530,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SpellStopCasting'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3497: in function `ToggleGameMenu'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:347: in function `TransitionBackOpeningPanel'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:336: in function `ExitWithCommit'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:305: in function `Close'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:71: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:70>",
 			["session"] = 10418,
 			["counter"] = 2,
-		}, -- [69]
+		}, -- [68]
 		{
 			["message"] = "Interface/AddOns/LFG113/Main.lua:3931: attempt to index global 'UnitPopupButtons' (a nil value)",
 			["time"] = "2023/09/15 10:18:48",
@@ -546,7 +538,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/LFG113/Main.lua\"]:3931: in function <Interface/AddOns/LFG113/Main.lua:3872>",
 			["session"] = 10423,
 			["counter"] = 2,
-		}, -- [70]
+		}, -- [69]
 		{
 			["message"] = "Interface/AddOns/LFGBulletinBoard/LfgToolList.lua:217: attempt to index global 'LFGBrowseFrame' (a nil value)",
 			["time"] = "2023/09/15 10:21:57",
@@ -554,7 +546,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/LFGBulletinBoard/LfgToolList.lua\"]:217: in function `UpdateLfgTool'\n[string \"@Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.lua\"]:251: in function `BtnRefresh'\n[string \"*GroupBulletinBoard.xml:104_OnMouseDown\"]:1: in function <[string \"*GroupBulletinBoard.xml:104_OnMouseDown\"]:1>",
 			["session"] = 10423,
 			["counter"] = 1,
-		}, -- [71]
+		}, -- [70]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:581: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -562,7 +554,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:581: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:579>",
 			["session"] = 10427,
 			["counter"] = 1,
-		}, -- [72]
+		}, -- [71]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:572: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -570,6 +562,50 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:572: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:570>",
 			["session"] = 10427,
 			["counter"] = 2,
+		}, -- [72]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/08 08:02:36",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10428,
+			["counter"] = 8,
 		}, -- [73]
+		{
+			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
+			["time"] = "2023/09/15 14:05:57",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 10438,
+			["counter"] = 1,
+		}, -- [74]
+		{
+			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
+			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
+			["counter"] = 1,
+		}, -- [75]
+		{
+			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
+			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
+			["counter"] = 1,
+		}, -- [76]
+		{
+			["message"] = "Interface/AddOns/!Beautycase/!Beautycase.lua:32: attempt to index local 'self' (a nil value)",
+			["time"] = "2023/09/15 14:06:44",
+			["locals"] = "self = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'self' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/!Beautycase/!Beautycase.lua\"]:32: in function `HasBeautyBorder'\n[string \"@Interface/AddOns/xVermin/Frames/GameTooltip.lua\"]:100: in function <Interface/AddOns/xVermin/Frames/GameTooltip.lua:87>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
+			["session"] = 10439,
+			["counter"] = 320,
+		}, -- [77]
+		{
+			["message"] = "[string \"TimeManagerClockTicker:Scale(0.8)\"]:1: attempt to call method 'Scale' (a nil value)",
+			["time"] = "2023/09/16 09:58:38",
+			["locals"] = "(*temporary) = nil\n(*temporary) = TimeManagerClockTicker {\n 0 = <userdata>\n}\n(*temporary) = 0.800000\n(*temporary) = \"attempt to call method 'Scale' (a nil value)\"\n",
+			["stack"] = "[string \"TimeManagerClockTicker:Scale(0.8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10452,
+			["counter"] = 1,
+		}, -- [78]
 	},
 }

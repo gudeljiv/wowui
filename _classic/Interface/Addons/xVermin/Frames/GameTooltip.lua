@@ -114,33 +114,30 @@ for _, tooltip in pairs(
 	xVermin.CheckIfLoadedWithTimer(
 		tooltip:GetName(),
 		function()
-			if tooltip.beautyBorder or tooltip:GetName() == 'AtlasLootTooltip' then
-				tooltip:HookScript(
-					'OnTooltipSetItem',
-					function(self)
-						local name, item = self:GetItem()
-						if item then
-							local quality = select(3, GetItemInfo(item))
-							if quality then
-								local r, g, b = GetItemQualityColor(quality)
+			tooltip:HookScript(
+				'OnTooltipSetItem', 
+				function (self, ...)
+					local _, itemLink = self:GetItem()
+					if itemLink ~= nil then
+						local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
+						local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
+						if itemId then
+							if itemQuality and itemQuality > 1 then
+								local r, g, b = GetItemQualityColor(itemQuality)
 								self:SetBeautyBorderTexture('white')
 								self:SetBeautyBorderColor(r, g, b)
+							else 
+								self:SetBeautyBorderTexture('default')
+								self:SetBeautyBorderColor(1, 1, 1)
 							end
 						end
 					end
-				)
-
-				tooltip:HookScript(
-					'OnTooltipCleared',
-					function(self)
-						self:SetBeautyBorderTexture('default')
-						self:SetBeautyBorderColor(1, 1, 1)
-					end
-				)
-			end
+				end
+			)
 		end
 	)
 end
+
 
 local function SetHealthBarColor(unit)
 	local r, g, b = 0, 1, 0
