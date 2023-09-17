@@ -40,7 +40,6 @@ from pynput import keyboard
 
 driver = interception()
 
-
 combat = False
 dprint = False
 debug = False
@@ -172,7 +171,14 @@ def load_skills_healing(wow_class):
         for skill in data["healing"]:
             if not skill["name"] in healing:
                 healing[skill["name"]] = {}
-            healing[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png")
+
+            image = abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png"
+            if (not os.path.isfile(image)):
+                print(image, "MISSING")
+                continue
+            else:
+                healing[skill["name"]]["image"] = cv2.imread(image)
+
             if "modifier" in skill.keys():
                 healing[skill["name"]]["modifier"] = skill["modifier"]
             healing[skill["name"]]["key"] = skill["key"]
@@ -191,7 +197,14 @@ def load_skills_globals(wow_class):
         for skill in data["globals"]:
             if not skill["name"] in global_skills:
                 global_skills[skill["name"]] = {}
-            global_skills[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png")
+
+            image = abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png"
+            if (not os.path.isfile(image)):
+                print(image, "MISSING")
+                continue
+            else:
+                global_skills[skill["name"]]["image"] = cv2.imread(image)
+
             if "modifier" in skill.keys():
                 global_skills[skill["name"]]["modifier"] = skill["modifier"]
             global_skills[skill["name"]]["key"] = skill["key"]
@@ -210,7 +223,14 @@ def load_skills_main(wow_class):
         for skill in data[wow_class]["main"]:
             if not skill["name"] in main_abilities:
                 main_abilities[skill["name"]] = {}
-            main_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png")
+
+            image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png"
+            if (not os.path.isfile(image)):
+                print(image, "MISSING")
+                continue
+            else:
+                main_abilities[skill["name"]]["image"] = cv2.imread(image)
+
             if "modifier" in skill.keys():
                 main_abilities[skill["name"]]["modifier"] = skill["modifier"]
             main_abilities[skill["name"]]["key"] = skill["key"]
@@ -229,7 +249,14 @@ def load_skills_secondary(wow_class):
         for skill in data[wow_class]["secondary"]:
             if not skill["name"] in secondary_abilities:
                 secondary_abilities[skill["name"]] = {}
-            secondary_abilities[skill["name"]]["image"] = cv2.imread(abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png")
+
+            image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png"
+            if (not os.path.isfile(image)):
+                print(image, "MISSING")
+                continue
+            else:
+                secondary_abilities[skill["name"]]["image"] = cv2.imread(image)
+
             if "modifier" in skill.keys():
                 secondary_abilities[skill["name"]]["modifier"] = skill["modifier"]
             secondary_abilities[skill["name"]]["key"] = skill["key"]

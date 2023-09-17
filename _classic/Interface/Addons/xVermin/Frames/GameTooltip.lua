@@ -126,6 +126,9 @@ for _, tooltip in pairs(
 								local r, g, b = GetItemQualityColor(itemQuality)
 								self:SetBeautyBorderTexture('white')
 								self:SetBeautyBorderColor(r, g, b)
+							elseif itemType and itemType == 'Quest' then
+								self:SetBeautyBorderTexture('white')
+								self:SetBeautyBorderColor(1, 0.964, 0, 1)
 							else 
 								self:SetBeautyBorderTexture('default')
 								self:SetBeautyBorderColor(1, 1, 1)
@@ -145,7 +148,10 @@ local function SetHealthBarColor(unit)
 	if unit and UnitIsPlayer(unit) then
 		local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
 		r, g, b = classColor.r, classColor.g, classColor.b
-	elseif UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player') then
+	end
+	
+	-- if UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player') then
+	if UnitIsTrivial(unit) then
 		r, g, b = unpack(cfg.reaction['grey'])
 	end
 
@@ -202,8 +208,9 @@ local function HandleUnit(self, ...)
 			end
 		end
 
-		-- Dead or ghost recoloring
-		if UnitIsDead(unit) or UnitIsGhost(unit) or (UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player')) then
+		-- Dead or ghost or trivial recoloring
+		-- if UnitIsDead(unit) or UnitIsGhost(unit) or (UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player')) then
+		if UnitIsDead(unit) or UnitIsGhost(unit) or UnitIsTrivial(unit) then
 			self:SetBeautyBorderTexture('white')
 			self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
 		end
