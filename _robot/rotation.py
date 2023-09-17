@@ -40,7 +40,6 @@ from pynput import keyboard
 
 driver = interception()
 
-
 combat = False
 dprint = False
 debug = False

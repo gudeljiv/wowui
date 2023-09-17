@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class interception_key_state(Enum):
     INTERCEPTION_KEY_DOWN = 0x00
     INTERCEPTION_KEY_UP = 0x01
@@ -8,6 +9,7 @@ class interception_key_state(Enum):
     INTERCEPTION_KEY_TERMSRV_SET_LED = 0x08
     INTERCEPTION_KEY_TERMSRV_SHADOW = 0x10
     INTERCEPTION_KEY_TERMSRV_VKPACKET = 0x20
+
 
 class interception_filter_key_state(Enum):
     INTERCEPTION_FILTER_KEY_NONE = 0x0000
@@ -19,6 +21,7 @@ class interception_filter_key_state(Enum):
     INTERCEPTION_FILTER_KEY_TERMSRV_SET_LED = interception_key_state.INTERCEPTION_KEY_TERMSRV_SET_LED.value << 1
     INTERCEPTION_FILTER_KEY_TERMSRV_SHADOW = interception_key_state.INTERCEPTION_KEY_TERMSRV_SHADOW.value << 1
     INTERCEPTION_FILTER_KEY_TERMSRV_VKPACKET = interception_key_state.INTERCEPTION_KEY_TERMSRV_VKPACKET.value << 1
+
 
 class interception_mouse_state (Enum):
     INTERCEPTION_MOUSE_LEFT_BUTTON_DOWN = 0x001
@@ -42,6 +45,7 @@ class interception_mouse_state (Enum):
 
     INTERCEPTION_MOUSE_WHEEL = 0x400
     INTERCEPTION_MOUSE_HWHEEL = 0x800
+
 
 class interception_filter_mouse_state(Enum):
     INTERCEPTION_FILTER_MOUSE_NONE = 0x0000
@@ -70,6 +74,7 @@ class interception_filter_mouse_state(Enum):
     INTERCEPTION_FILTER_MOUSE_HWHEEL = interception_mouse_state.INTERCEPTION_MOUSE_HWHEEL.value
     INTERCEPTION_FILTER_MOUSE_MOVE = 0x1000
 
+
 class interception_mouse_flag(Enum):
     INTERCEPTION_MOUSE_MOVE_RELATIVE = 0x000
     INTERCEPTION_MOUSE_MOVE_ABSOLUTE = 0x001
@@ -77,3 +82,15 @@ class interception_mouse_flag(Enum):
     INTERCEPTION_MOUSE_ATTRIBUTES_CHANGED = 0x004
     INTERCEPTION_MOUSE_MOVE_NOCOALESCE = 0x008
     INTERCEPTION_MOUSE_TERMSRV_SRC_SHADOW = 0x100
+
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
