@@ -81,3 +81,7 @@ VER 3 000000000100000F " " "132328"
 #showtooltip
 /petfollow
 END
+VER 3 0000000001000014 " " "134400"
+#showtooltip
+/cast !Auto Shot
+END
