@@ -97,13 +97,6 @@ X: -346
 Y: 103
 W: 920
 H: 600
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: RIGHT
-X: -335
-Y: 121
-W: 616
-H: 752
 Frame: scanner_button
 FrameLevel: 200
 Anchor: TOP
@@ -118,3 +111,10 @@ X: 40
 Y: 268
 W: 330
 H: 125
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -335
+Y: 121
+W: 616
+H: 752

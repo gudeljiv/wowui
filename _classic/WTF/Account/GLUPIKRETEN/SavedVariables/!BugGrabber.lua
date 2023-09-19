@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 10478,
 	["lastSanitation"] = 3,
+	["session"] = 10485,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:02:46",
 			["session"] = 10254,
+			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:02:46",
 			["session"] = 10254,
+			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:04:17",
 			["session"] = 10256,
+			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["time"] = "2023/09/07 16:04:17",
 			["session"] = 10256,
+			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -189,14 +189,14 @@ BugGrabberDB = {
 		}, -- [24]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["time"] = "2023/09/08 20:53:46",
 			["session"] = 10304,
+			["time"] = "2023/09/08 20:53:46",
 			["counter"] = 1,
 		}, -- [25]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["time"] = "2023/09/08 20:53:46",
 			["session"] = 10304,
+			["time"] = "2023/09/08 20:53:46",
 			["counter"] = 1,
 		}, -- [26]
 		{
@@ -313,14 +313,14 @@ BugGrabberDB = {
 		}, -- [40]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["session"] = 10351,
 			["time"] = "2023/09/09 20:42:15",
+			["session"] = 10351,
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["session"] = 10351,
 			["time"] = "2023/09/09 20:42:15",
+			["session"] = 10351,
 			["counter"] = 1,
 		}, -- [42]
 		{
@@ -541,14 +541,14 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["time"] = "2023/09/15 14:05:59",
 			["session"] = 10438,
+			["time"] = "2023/09/15 14:05:59",
 			["counter"] = 1,
 		}, -- [70]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["time"] = "2023/09/15 14:05:59",
 			["session"] = 10438,
+			["time"] = "2023/09/15 14:05:59",
 			["counter"] = 1,
 		}, -- [71]
 		{
@@ -601,14 +601,14 @@ BugGrabberDB = {
 		}, -- [77]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["time"] = "2023/09/16 12:30:04",
 			["session"] = 10456,
+			["time"] = "2023/09/16 12:30:04",
 			["counter"] = 1,
 		}, -- [78]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["time"] = "2023/09/16 12:30:04",
 			["session"] = 10456,
+			["time"] = "2023/09/16 12:30:04",
 			["counter"] = 1,
 		}, -- [79]
 		{
@@ -699,5 +699,21 @@ BugGrabberDB = {
 			["session"] = 10472,
 			["counter"] = 8,
 		}, -- [90]
+		{
+			["message"] = "Interface/AddOns/WeakAuras/Prototypes.lua:9695: attempt to concatenate local 'v' (a boolean value)",
+			["time"] = "2023/09/19 13:02:12",
+			["locals"] = "v = true\n(*temporary) = \"|T\"\n(*temporary) = true\n(*temporary) = \":12:12:0:0:64:64:4:60:4:60|t\"\n(*temporary) = \"attempt to concatenate local 'v' (a boolean value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/WeakAuras/Prototypes.lua\"]:9695: in function `func'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4564: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/SubRegionTypes/SubText.lua\"]:322: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:90: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4313: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4308>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4404: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4366>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4514: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4215: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3028: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2883>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3051: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
+			["session"] = 10479,
+			["counter"] = 2,
+		}, -- [91]
+		{
+			["message"] = "Lua error in aura 'Druid DPS': Icon Function\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
+			["time"] = "2023/09/19 13:05:20",
+			["locals"] = "e = <table> {\n type = \"custom\"\n subeventSuffix = \"_CAST_START\"\n events = \"PLAYER_ENTERING_WORLD, PLAYER_EQUIPMENT_CHANGED\"\n event = \"Health\"\n unit = \"player\"\n names = <table> {\n }\n spellIds = <table> {\n }\n custom = \"function ()\n    local thingy1 = IsSetEquipped(aura_env.config[\"set\"])\n    if thingy1 == true then\n        return true\n    end\nend\"\n customIcon = \"function(e)\n    if ItemRackUser.Sets[aura_env.config[\"set\"]] then\n        return ItemRackUser.Sets[set].icon\n    end\nend\"\n check = \"event\"\n subeventPrefix = \"SPELL\"\n custom_type = \"status\"\n debuffType = \"HELPFUL\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\n",
+			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:425: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:421>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:527: in function `ActivateEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:666: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:563>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:958: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
+			["session"] = 10479,
+			["counter"] = 2,
+		}, -- [92]
 	},
 }

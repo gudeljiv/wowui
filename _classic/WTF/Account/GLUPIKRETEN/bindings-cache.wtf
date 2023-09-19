@@ -52,6 +52,7 @@ bind F8 NONE
 bind F9 ACTIONBUTTON9
 bind F10 MULTIACTIONBAR3BUTTON7
 bind F11 NONE
+bind F12 NONE
 bind SHIFT-P TOGGLECHARACTER4
 bind SHIFT-M NONE
 bind Y MULTIACTIONBAR2BUTTON11
@@ -144,6 +145,8 @@ bind J CLICK RingMenuToggleRing1:LeftButton
 bind ALT-G Open/Close LFGBulletinBoard
 bind ALT-S CLICK RingMenuRingFrame1Button5:1
 bind SHIFT-S CLICK RingMenuRingFrame1Button6:1
+bind ALT-F1 NONE
+bind ALT-F2 NONE
 modifiedclick NONE SELFCAST
 modifiedclick NONE AUTOLOOTTOGGLE
 modifiedclick NONE MAILAUTOLOOTTOGGLE

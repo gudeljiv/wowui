@@ -114,5 +114,5 @@ ItemRackUser = {
 		},
 	},
 	["MenuScale"] = 1.202602624893189,
-	["CurrentSet"] = "dps",
+	["CurrentSet"] = "heal",
 }
