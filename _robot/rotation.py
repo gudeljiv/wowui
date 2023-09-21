@@ -174,7 +174,7 @@ def load_skills_healing(wow_class):
 
             image = abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png"
             if (not os.path.isfile(image)):
-                print(image, "MISSING")
+                print(skill["name"], "MISSING")
                 continue
             else:
                 healing[skill["name"]]["image"] = cv2.imread(image)
@@ -184,7 +184,6 @@ def load_skills_healing(wow_class):
             healing[skill["name"]]["key"] = skill["key"]
             healing[skill["name"]]["name"] = skill["name"]
     except Exception as e:
-        print(e)
         print("healing abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return healing
@@ -200,7 +199,7 @@ def load_skills_globals(wow_class):
 
             image = abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png"
             if (not os.path.isfile(image)):
-                print(image, "MISSING")
+                print(skill["name"], "MISSING")
                 continue
             else:
                 global_skills[skill["name"]]["image"] = cv2.imread(image)
@@ -210,7 +209,6 @@ def load_skills_globals(wow_class):
             global_skills[skill["name"]]["key"] = skill["key"]
             global_skills[skill["name"]]["name"] = skill["name"]
     except Exception as e:
-        print(e)
         print("global abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return global_skills
@@ -226,7 +224,7 @@ def load_skills_main(wow_class):
 
             image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png"
             if (not os.path.isfile(image)):
-                print(image, "MISSING")
+                print(skill["name"], "MISSING")
                 continue
             else:
                 main_abilities[skill["name"]]["image"] = cv2.imread(image)
@@ -236,7 +234,6 @@ def load_skills_main(wow_class):
             main_abilities[skill["name"]]["key"] = skill["key"]
             main_abilities[skill["name"]]["name"] = skill["name"]
     except Exception as e:
-        print(e)
         print("main abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return main_abilities
@@ -252,7 +249,7 @@ def load_skills_secondary(wow_class):
 
             image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png"
             if (not os.path.isfile(image)):
-                print(image, "MISSING")
+                print(skill["name"], "MISSING")
                 continue
             else:
                 secondary_abilities[skill["name"]]["image"] = cv2.imread(image)
@@ -262,7 +259,6 @@ def load_skills_secondary(wow_class):
             secondary_abilities[skill["name"]]["key"] = skill["key"]
             secondary_abilities[skill["name"]]["name"] = skill["name"]
     except Exception as e:
-        print(e)
         print("offgcd abilities missing", wow_class, dt.now().strftime("%H:%M:%S"))
 
     return secondary_abilities
@@ -289,11 +285,9 @@ def main_rotation(main_skill, main_abilities):
                         print_debug(ability, score)
                     press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
             except Exception as e:
-                print(e)
                 print("score, diff not found for main ability", ability["name"], dt.now().strftime("%H:%M:%S"))
                 pause = True
     except Exception as e:
-        print(e)
         print("error skill loop", dt.now().strftime("%H:%M:%S"))
         pause = True
 
@@ -310,11 +304,9 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                             print_debug(ability, score)
                         press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
                 except Exception as e:
-                    print(e)
                     print("score, diff not found for offgcd", ability["name"], dt.now().strftime("%H:%M:%S"))
                     pause = True
     except Exception as e:
-        print(e)
         print("offgcd error missing class --> ", wow_class, dt.now().strftime("%H:%M:%S"))
         pause = True
 

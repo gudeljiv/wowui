@@ -82,7 +82,7 @@ local function BuyAmmo()
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 		local needtobuy = MaxAmmoInInventory - ammoCount
 
-		print(numberOfSlots, MaxStackSize, MaxAmmoInInventory, needtobuy)
+		-- print(numberOfSlots, MaxStackSize, MaxAmmoInInventory, needtobuy)
 
 		if needtobuy > 0 then
 			local remainder = needtobuy % MaxStackSize

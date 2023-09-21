@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10485,
+	["session"] = 10505,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -568,21 +568,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [73]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/08 08:02:36",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10453,
-			["counter"] = 9,
-		}, -- [74]
-		{
 			["message"] = "Interface/AddOns/MSBTOptions/MSBTOptionsTabs.lua:1902: attempt to index local 'eventSettings' (a nil value)",
 			["time"] = "2023/09/16 12:23:58",
 			["locals"] = "this = Frame {\n 0 = <userdata>\n displayFrame = Frame {\n }\n GetOffset = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:79\n Enable = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:499\n selectedItem = 0\n SetSelectedItem = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:435\n SetCreateLineHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:339\n SetOffset = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:87\n Clear = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:467\n lineHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsTabs.lua:1842\n lineCache = <table> {\n }\n items = <table> {\n }\n RemoveItem = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:402\n Disable = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:488\n lines = <table> {\n }\n lineHeight = 25\n GetNumItems = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:419\n highlightFrame = Frame {\n }\n SetDisplayHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:349\n linesPerPage = 12\n SetClickHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:358\n Configure = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:309\n GetNumLines = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:459\n Refresh = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:95\n upButton = Button {\n }\n AddItem = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:374\n displayHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsTabs.lua:1894\n GetLine = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:450\n sliderFrame = Slider {\n }\n GetSelectedItem = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:427\n configured = true\n GetItem = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:366\n downButton = Button {\n }\n}\nline = Button {\n 0 = <userdata>\n itemNumber = 23\n colorSwatch = Button {\n }\n codes = \"%a - Amount of essence you have.\n\"\n eventType = \"NOTIFICATION_ESSENCE_CHANGE\"\n enableCheckbox = Frame {\n }\n messageFontString = FontString {\n }\n lineNumber = 12\n}\nkey = 23\nisSelected = false\nevents = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n}\neventType = \"NOTIFICATION_ESSENCE_CHANGE\"\neventSettings = nil\nobjLocale = <table> {\n codes = \"%a - Amount of essence you have.\n\"\n tooltip = \"Enable when you change essence.\"\n eventType = \"NOTIFICATION_ESSENCE_CHANGE\"\n label = \"Essence Changes\"\n}\n(*temporary) = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:1756\n(*temporary) = Button {\n 0 = <userdata>\n r = 1\n Enable = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:1859\n oldDisableHandler = <function> defined =[C]:-1\n SetColorChangedHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:1834\n b = 0\n SetTooltip = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:1842\n g = 0.500000\n oldEnableHandler = <function> defined =[C]:-1\n colorChangedHandler = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsTabs.lua:1703\n borderTexture = Texture {\n }\n Disable = <function> defined @Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:1850\n SetColor = <function> def",
 			["stack"] = "[string \"@Interface/AddOns/MSBTOptions/MSBTOptionsTabs.lua\"]:1902: in function `displayHandler'\n[string \"@Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua\"]:124: in function <Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:95>\n[string \"@Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua\"]:227: in function <Interface/AddOns/MSBTOptions/MSBTOptionsControls.lua:226>",
 			["session"] = 10454,
 			["counter"] = 38,
-		}, -- [75]
+		}, -- [74]
 		{
 			["message"] = "Interface/AddOns/LFGBulletinBoard/LfgToolList.lua:217: attempt to index global 'LFGBrowseFrame' (a nil value)",
 			["time"] = "2023/09/15 10:21:57",
@@ -590,7 +582,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/LFGBulletinBoard/LfgToolList.lua\"]:217: in function `UpdateLfgTool'\n[string \"@Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.lua\"]:251: in function `BtnRefresh'\n[string \"*GroupBulletinBoard.xml:104_OnMouseDown\"]:1: in function <[string \"*GroupBulletinBoard.xml:104_OnMouseDown\"]:1>",
 			["session"] = 10454,
 			["counter"] = 2,
-		}, -- [76]
+		}, -- [75]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
 			["time"] = "2023/09/16 12:30:01",
@@ -598,19 +590,19 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 10456,
 			["counter"] = 1,
-		}, -- [77]
+		}, -- [76]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
 			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
 			["counter"] = 1,
-		}, -- [78]
+		}, -- [77]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
 			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
 			["counter"] = 1,
-		}, -- [79]
+		}, -- [78]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:581: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -618,7 +610,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:581: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:579>",
 			["session"] = 10468,
 			["counter"] = 2,
-		}, -- [80]
+		}, -- [79]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:572: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -626,7 +618,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:572: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:570>",
 			["session"] = 10468,
 			["counter"] = 4,
-		}, -- [81]
+		}, -- [80]
 		{
 			["message"] = "Lua error in aura 'S3': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:23:47",
@@ -634,7 +626,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 1,
-		}, -- [82]
+		}, -- [81]
 		{
 			["message"] = "Lua error in aura 'S4': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:23:47",
@@ -642,7 +634,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 1,
-		}, -- [83]
+		}, -- [82]
 		{
 			["message"] = "Lua error in aura 'S6': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:23:47",
@@ -650,7 +642,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 3,
-		}, -- [84]
+		}, -- [83]
 		{
 			["message"] = "Lua error in aura 'S3': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:4: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:25:29",
@@ -658,7 +650,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:4: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 2,
-		}, -- [85]
+		}, -- [84]
 		{
 			["message"] = "Lua error in aura 'S4': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:4: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:25:29",
@@ -666,7 +658,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:4: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 2,
-		}, -- [86]
+		}, -- [85]
 		{
 			["message"] = "Lua error in aura 'S5': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:23:47",
@@ -674,7 +666,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10469,
 			["counter"] = 3,
-		}, -- [87]
+		}, -- [86]
 		{
 			["message"] = "Lua error in aura 'S1': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:4: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:58:36",
@@ -682,7 +674,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:4: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1165: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1127>",
 			["session"] = 10471,
 			["counter"] = 1,
-		}, -- [88]
+		}, -- [87]
 		{
 			["message"] = "Lua error in aura 'S2': Icon Function (fallback state)\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:4: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/18 14:58:36",
@@ -690,7 +682,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:4: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:4148: in function `CreateFallbackState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3799: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:3788>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4506: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:970: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1165: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1127>",
 			["session"] = 10471,
 			["counter"] = 2,
-		}, -- [89]
+		}, -- [88]
 		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
 			["time"] = "2023/09/09 16:52:16",
@@ -698,7 +690,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10472,
 			["counter"] = 8,
-		}, -- [90]
+		}, -- [89]
 		{
 			["message"] = "Interface/AddOns/WeakAuras/Prototypes.lua:9695: attempt to concatenate local 'v' (a boolean value)",
 			["time"] = "2023/09/19 13:02:12",
@@ -706,7 +698,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/WeakAuras/Prototypes.lua\"]:9695: in function `func'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4564: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/SubRegionTypes/SubText.lua\"]:322: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:90: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4313: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4308>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4404: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4366>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4514: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4215: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3028: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2883>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3051: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 10479,
 			["counter"] = 2,
-		}, -- [91]
+		}, -- [90]
 		{
 			["message"] = "Lua error in aura 'Druid DPS': Icon Function\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 			["time"] = "2023/09/19 13:05:20",
@@ -714,6 +706,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function(e)\"]:3: in function <[string \"return function(e)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:425: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:421>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:527: in function `ActivateEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:666: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:563>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:958: in function `ScanWithFakeEvent'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1291: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1901: in function `LoadDisplays'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1685: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:1530>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:1878: in function `Resume'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua\"]:170: in function <...dOns/WeakAurasOptions/OptionsFrames/OptionsFrame.lua:150>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2651: in function `HideUIPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:213: in function `HideParentPanel'\n[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:180: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:174>",
 			["session"] = 10479,
 			["counter"] = 2,
+		}, -- [91]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/08 08:02:36",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10486,
+			["counter"] = 10,
 		}, -- [92]
+		{
+			["message"] = "Interface/AddOns/AdiBags/widgets/ItemButton.lua:487: attempt to call method 'UpdateItemLevel' (a nil value)",
+			["time"] = "2023/09/21 09:40:41",
+			["locals"] = "self = AdiBagsItemButton121 {\n NormalTexture = AdiBagsItemButton121NormalTexture {\n }\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n flashAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton121IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface/FrameXML/ContainerFrame_Shared.lua:1333\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton121Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n IconQuestTexture = AdiBagsItemButton121IconQuestTexture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton121IconTexture {\n }\n JunkIcon = Texture {\n }\n Stock = AdiBagsItemButton121Stock {\n }\n slot = 1\n count = 1\n stack = AdiBagsStackButton1 {\n }\n GetCount = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:565\n Count = AdiBagsItemButton121Count {\n }\n timeSinceUpgradeCheck = 0\n 0 = <userdata>\n searchOverlay = AdiBagsItemButton121SearchOverlay {\n }\n ExtendedOverlay2 = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n}\nisolatedEvent = nil\ntexture = nil\nr = nil\ng = nil\nb = nil\na = nil\nx1 = nil\nx2 = nil\ny1 = nil\ny2 = nil\nblendMode = nil\nquality = nil\n(*temporary) = nil\n(*temporary) = AdiBagsItemButton121 {\n NormalTexture = AdiBagsItemButton121NormalTexture {\n }\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n flashAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton121IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface/FrameXML/ContainerFrame_Shared.lua:1333\n ExtendedOverlay = Texture {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton121Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = Texture {\n }\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n IconQuestTexture = AdiBagsItemButton121IconQuestTexture {\n }\n hasItem = false\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton121IconTexture {\n }\n JunkIcon = Texture {\n }\n Stock = AdiBagsItemButton121Stock {\n }\n slot = 1\n count = 1\n stack = AdiBagsStackButton1 {\n }\n GetCount = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:565\n Count = AdiBagsItemButton121Count {\n }\n timeSinceUpgradeCheck = 0\n 0 = <userdata>\n searchOverlay = AdiBagsItemButton121SearchOverlay {\n }\n ExtendedOverlay2 = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n}\n(*temporary) = \"attempt to call method 'UpdateItemLevel' (a nil value)\"\naddon = <table> {\n AcquireItemButton = <function> defined @Interface/AddOns/AdiBags/widgets/ItemButton.lua:184\n FAMILY_TAGS = <table> {\n }\n SectionFontDefault = <table> {\n }\n SecureHook = <function> defined @Interface/AddOns/AdiBags/libs/AceHook-3.0/AceHook-3.0.lua:335\n defaultModulePrototype = <table> {\n }\n GetContainerItemTexture = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:444\n ConfigChanged = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:373\n GetSlotId = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:76\n Filter = <function> defined @Interface/AddOns/AdiBags/core/Filters.lua:146\n IsEnabled = <function> defined @Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:447\n Reconfigure = <function> defined @Interface/AddOns/AdiBags/core/Core.lua:215\n SetupTooltip = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:133\n GetContainerItemTextureCountLocked = <function> defined @Interface/AddOns/AdiBags/core/Utility.lua:448\n DeleteTheme = <function> defined @Interface/AddOns/AdiBags/core/Theme.lua:92\n hooks = <table> {\n }\n GetDistinctItemID = <function> defined @Interface/AddOns/AdiBags/core/Ut",
+			["stack"] = "[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:487: in function `UpdateBorder'\n[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:368: in function `Update'\n[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:710: in function `Update'\n[string \"@Interface/AddOns/AdiBags/widgets/ItemButton.lua\"]:642: in function `AddSlot'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:880: in function `CreateItemButton'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:894: in function `DispatchItem'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:946: in function `UpdateButtons'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:517: in function `RefreshContents'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:502: in function `ResumeUpdates'\n[string \"@Interface/AddOns/AdiBags/widgets/ContainerFrame.lua\"]:482: in function <Interface/AddOns/AdiBags/widgets/ContainerFrame.lua:474>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/AdiBags/core/Bags.lua\"]:96: in function `Open'\n[string \"@Interface/AddOns/AdiBags/core/Bags.lua\"]:126: in function <Interface/AddOns/AdiBags/core/Bags.lua:122>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"TOGGLEBACKPACK\"]:1: in function <[string \"TOGGLEBACKPACK\"]:1>",
+			["session"] = 10496,
+			["counter"] = 3,
+		}, -- [93]
 	},
 }

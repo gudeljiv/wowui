@@ -1,6 +1,11 @@
 local ace_refresh_timer_handle = nil
 local entry_cache = {}
 local font_handle = nil
+
+local main_font = "Fonts\\FRIZQT__.TTF"
+if GetLocale() == "ruRU" then
+	main_font = "Fonts\\ARIALN.TTF"
+end
 local deathlog_instance_tbl = {
 	{ 33, "SHADOWFANGKEEP", "Shadowfang Keep" },
 	{ 36, "DEADMINES", "Deadmines" },
@@ -375,10 +380,18 @@ local function setupRowEntries()
 			end
 		end
 
+		local function checkSpoof()
+			if death_tomb_frame.clicked_name then
+				C_FriendList.SendWho(death_tomb_frame.clicked_name)
+			end
+		end
+
 		if level == 1 then
 			info.text, info.hasArrow, info.func, info.disabled = "Show death location", false, openWorldMap, false
 			UIDropDownMenu_AddButton(info)
 			info.text, info.hasArrow, info.func, info.disabled = "Block user", false, blockUser, false
+			UIDropDownMenu_AddButton(info)
+			info.text, info.hasArrow, info.func, info.disabled = "Inspect user", false, checkSpoof, false
 			UIDropDownMenu_AddButton(info)
 		end
 	end
@@ -414,7 +427,7 @@ local function setupRowEntries()
 		_entry.background:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
 
 		_entry:SetHeight(40)
-		_entry:SetFont("Fonts\\FRIZQT__.TTF", 16, "")
+		_entry:SetFont(main_font, 16, "")
 		_entry:SetColor(1, 1, 1)
 		_entry:SetText(" ")
 
@@ -449,6 +462,9 @@ local function setupRowEntries()
 					row_entry[selected]:deselect()
 				end
 				_entry:select()
+				if IsShiftKeyDown() then
+					C_FriendList.SendWho(_entry["player_data"]["name"])
+				end
 			elseif click_type == "RightButton" then
 				local dropDown = CreateFrame("Frame", "WPDemoContextMenu", UIParent, "UIDropDownMenuTemplate")
 				-- Bind an initializer function to the dropdown; see previous sections for initializer function examples.
@@ -887,7 +903,7 @@ function Deathlog_minilog_applySettings(rebuild_ace)
 		}
 		death_log_frame.frame:SetBackdrop(PaneBackdrop)
 		death_log_frame.frame:SetBackdropColor(0, 0, 0, 0.6)
-		death_log_frame.frame:SetBackdropBorderColor(1, 1, 1, 1)
+		death_log_frame.frame:SetBackdropBorderColor(1, 1, 1, deathlog_settings[widget_name]["border_alpha"])
 	end
 
 	if optionsframe == nil then

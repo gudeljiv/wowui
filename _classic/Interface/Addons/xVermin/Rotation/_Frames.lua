@@ -3,8 +3,8 @@ local _, xVermin = ...
 local start = CreateFrame('BUTTON', 'RotBotF1')
 local stop = CreateFrame('BUTTON', 'RotBotF2')
 
-SetBindingClick('HOME', start:GetName())
-SetBindingClick('END', stop:GetName())
+SetBindingClick('HOME', "RotBotF1")
+SetBindingClick('END', "RotBotF2")
 
 start:SetScript(
 	'OnClick',

@@ -157,6 +157,9 @@ local function FixBindings()
 	-- SetBinding('CTRL-F10', 'EXTRABARBUTTON10', 1)
 	-- SetBinding('CTRL-F11', 'EXTRABARBUTTON11', 1)
 	-- SetBinding('CTRL-F12', 'EXTRABARBUTTON12', 1)
+
+	SetBindingClick('HOME', "RotBotF1")
+	SetBindingClick('END', "RotBotF2")
 end
 
 local function ClearAllBindings()
@@ -240,6 +243,15 @@ local function ClearAllBindings()
 	SetBinding('F10', 'NONE', 2)
 	SetBinding('F11', 'NONE', 2)
 	SetBinding('F12', 'NONE', 21)
+
+	SetBinding('END', 'NONE', 1)
+	SetBinding('END', 'NONE', 2)
+	SetBinding('HOME', 'NONE', 1)
+	SetBinding('HOME', 'NONE', 2)
+	SetBinding('PAGEUP', 'NONE', 1)
+	SetBinding('PAGEUP', 'NONE', 2)
+	SetBinding('PAGEDOWN', 'NONE', 1)
+	SetBinding('PAGEDOWN', 'NONE', 2)
 
 	SetBinding('ALT-F1', 'NONE', 1)
 	SetBinding('ALT-F2', 'NONE', 1)

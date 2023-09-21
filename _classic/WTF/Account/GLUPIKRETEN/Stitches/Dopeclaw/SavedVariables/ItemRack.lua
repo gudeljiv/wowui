@@ -88,7 +88,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "heal",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -98,8 +98,6 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 		[13] = {
 			"41589::::::::76:::::::::", -- [1]
@@ -113,6 +111,8 @@ ItemRackUser = {
 			0, -- [3]
 		},
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.202602624893189,
-	["CurrentSet"] = "heal",
+	["EnableEvents"] = "ON",
 }

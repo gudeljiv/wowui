@@ -76,10 +76,12 @@ END
 VER 3 0000000001000011 " " "132152"
 #showtooltip
 /petattack [@mouseover,harm][]
+/petdefensive
 END
 VER 3 000000000100000F " " "132328"
 #showtooltip
 /petfollow
+/petpassive
 END
 VER 3 0000000001000014 " " "134400"
 #showtooltip

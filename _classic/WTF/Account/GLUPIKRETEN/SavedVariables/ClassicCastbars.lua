@@ -174,7 +174,7 @@ ClassicCastbarsDB = {
 			1, -- [4]
 		},
 	},
-	["version"] = "35",
+	["version"] = "36",
 	["focus"] = {
 		["autoPosition"] = false,
 		["textPoint"] = "CENTER",

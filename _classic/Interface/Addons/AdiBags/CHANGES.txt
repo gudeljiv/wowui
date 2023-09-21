@@ -1,28 +1,10 @@
-lightweight tag 666101e777b81e317341f873778584808f7f9c02 v1.10.20
-Author:	GitHub <noreply@github.com>
-Date:	Sun Aug 27 23:25:56 2023 -0700
+tag a6ea6138e7cedb10810f38150211d570cf90a41b v1.10.21
+Author:	Talyrius <contact@talyrius.net>
+Date:	Wed Sep 6 17:54:31 2023 -0700
 
-commit 666101e777b81e317341f873778584808f7f9c02
+commit 09c9e004a6cd6cd1707468f150fd718190f81606
 Author: Talyrius <contact@talyrius.net>
-Date:   Sun Aug 27 23:25:56 2023 -0700
+Date:   Wed Sep 6 17:53:42 2023 -0700
 
-    Update AdiBags_Config_Vanilla.toc
-
-commit b2738da6ba499d29c15cad30d4b61dfa801e1be7
-Author: VanironCZ <hrdlicka.luk@gmail.com>
-Date:   Mon Aug 28 08:22:38 2023 +0200
-
-    Updated for Classic Era (Vanilla).
-    
-    * Fix CURSOR_UPDATE error
-    
-    Fixes #983 #985
-    
-    * Update AdiBags_Vanilla.toc to 1.14.4
-    
-    * Whitespace.
-    
-    ---------
-    
-    Co-authored-by: Talyrius <contact@talyrius.net>
+    Updated for Patch 10.1.7: Fury Incarnate.
 
