@@ -1,10 +1,8 @@
 # Auctionator
 
-## [10.1.19](https://github.com/Auctionator/Auctionator/tree/10.1.19) (2023-08-30)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.18...10.1.19) 
+## [10.1.21](https://github.com/Auctionator/Auctionator/tree/10.1.21) (2023-09-10)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.20...10.1.21) 
 
-- Fix leftover end  
-- Shopping: Reduce Populate() calls from drag events for lists view  
-- Remove compatibility code for old SetElementInitializer calls  
-- [Fixes #1266] Selling: Skip button in price warning popup when posting  
-- Mainline: Selling: Fix time left period for item search results  
+- Mainline: Shopping Buying: Refresh commodities listing after a purchase  
+- Classic: Remove compatibility code for API calls without C\_Container  
+- Remove auto-opening Basic Options from main options as it doesn't work  

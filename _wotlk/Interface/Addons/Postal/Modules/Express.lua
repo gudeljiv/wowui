@@ -39,7 +39,7 @@ function Postal_Express:MAIL_SHOW()
 			hooksecurefunc("HandleModifiedItemClick", Postal_Express.HandleModifiedItemClick)
 		end
 	end
-	if Postal.WOWClassic or Postal.WOWBCClassic or Postal.WOWWotLKClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_CLOSED", "Reset")
 	else
 		Postal_Express:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", "Reset")
@@ -57,7 +57,7 @@ function Postal_Express:Reset(event)
 			self:Unhook("ContainerFrameItemButton_OnModifiedClick")
 		end
 	end
-	if Postal.WOWClassic or Postal.WOWBCClassic or Postal.WOWWotLKClassic then
+	if Postal.WOWBCClassic then
 		self:UnregisterEvent("MAIL_CLOSED")
 	else
 		self:UnregisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE")
@@ -70,7 +70,7 @@ function Postal_Express:OnEnable()
 	self:RawHook("InboxFrame_OnModifiedClick", "InboxFrame_OnClick", true) -- Eat all modified clicks too
 	self:RawHook("InboxFrameItem_OnEnter", true)
 
-	if Postal.WOWClassic or Postal.WOWBCClassic or Postal.WOWWotLKClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_SHOW")
 	else
 		Postal_Express:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW")
@@ -186,7 +186,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 		end
 	elseif button == "LeftButton" and IsControlKeyDown() and SendMailFrame:IsVisible() and not CursorHasItem() then
 		local itemid
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			itemid = GetContainerItemID(bag, slot)
 		else
 			itemid = C_Container.GetContainerItemID(bag, slot)
@@ -227,7 +227,7 @@ function Postal_Express:ContainerFrameItemButtonOnModifiedClick(bag, slot, butto
 					end
 					for s = 1, numberOfSlots do
 						local tid
-						if Postal.WOWClassic or Postal.WOWBCClassic then
+						if Postal.WOWBCClassic then
 							tid = GetContainerItemID(b, s)
 						else
 							tid = C_Container.GetContainerItemID(b, s)

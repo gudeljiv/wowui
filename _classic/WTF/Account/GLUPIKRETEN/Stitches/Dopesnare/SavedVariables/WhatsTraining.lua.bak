@@ -24,8 +24,10 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Nature Resistance"] = {
+	["Growl"] = {
+		["Rank 3"] = true,
 		["Rank 1"] = true,
+		["Rank 2"] = true,
 	},
 	["Arcane Resistance"] = {
 		["Rank 1"] = true,
@@ -39,10 +41,8 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Growl"] = {
-		["Rank 3"] = true,
+	["Nature Resistance"] = {
 		["Rank 1"] = true,
-		["Rank 2"] = true,
 	},
 }
 WT_NeedsToOpenBeastTraining = false

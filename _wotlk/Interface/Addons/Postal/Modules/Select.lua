@@ -131,7 +131,7 @@ function Postal_Select:OnEnable()
 	end
 
 	self:RawHook("InboxFrame_Update", true)
-	if Postal.WOWClassic or Postal.WOWBCClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_SHOW")
 	else
 		Postal_Select:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW")
@@ -167,7 +167,7 @@ function Postal_Select:OnDisable()
 end
 
 function Postal_Select:MAIL_SHOW()
-	if Postal.WOWClassic or Postal.WOWBCClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_CLOSED", "Reset")
 	else
 		Postal_Select:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", "Reset")
@@ -556,7 +556,7 @@ function Postal_Select:Reset(event, ...)
 	currentMode = nil
 	local paneType = ...
 	if event == "MAIL_CLOSED" or event == "PLAYER_LEAVING_WORLD" or (event == "PLAYER_INTERACTION_MANAGER_FRAME_HIDE" and paneType == Enum.PlayerInteractionType.MailInfo) then
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			self:UnregisterEvent("MAIL_CLOSED")
 		else
 			self:UnregisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE")

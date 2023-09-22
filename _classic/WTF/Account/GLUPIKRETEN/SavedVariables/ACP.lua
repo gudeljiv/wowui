@@ -4,7 +4,6 @@ ACP_Data = {
 	["NoRecurse"] = false,
 	["NoChildren"] = true,
 	["collapsed"] = {
-		["Blizzard Addons"] = true,
 	},
 	["ProtectedAddons"] = {
 		["ACP"] = true,

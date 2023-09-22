@@ -2,6 +2,33 @@
 ---NovaInstanceTracker data---
 ------------------------------
 
+local locale = GetLocale();
+if (locale == "deDE" and NIT.expansionNum < 5) then
+	--Temporary fix for german clients having broken XP global strings that don't show the amount gained.
+	--Not sure when this started but it was reported and tested 15/09/2023
+	--Credit to user Tomatensalat and an addon https://www.wowinterface.com/downloads/download25450-aPVPName1s2s by Razyel.
+	--Only fixing a few strings that are important to this addon while normal grouping for xp in dungs.
+	COMBATLOG_XPGAIN_EXHAUSTION1_RAID = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus, -%d Schlachtzugsmalus)"
+	COMBATLOG_XPGAIN_FIRSTPERSON = "%s stirbt, Ihr bekommt %d Erfahrung."
+	COMBATLOG_XPGAIN_FIRSTPERSON_UNNAMED_RAID = "Ihr bekommt %d Erfahrung. (-%d Schlachtzugsmalus)"
+	COMBATLOG_XPGAIN_FIRSTPERSON_GROUP = "%s stirbt, Ihr bekommt %d Erfahrung. (+%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION1_GROUP = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus, +%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION5_GROUP = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Abzug, +%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION2_GROUP = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus, +%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION2 = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus)"
+	COMBATLOG_XPGAIN_FIRSTPERSON_UNNAMED = "Ihr bekommt %d Erfahrung."
+	COMBATLOG_XPGAIN_EXHAUSTION5 = "%s stirbt, Ihr bekommt %d Erfahrung. (%s-Erf. %s-Abzug)"
+	COMBATLOG_XPGAIN_FIRSTPERSON_RAID = "%s stirbt, Ihr bekommt %d Erfahrung. (-%d Schlachtzugsmalus)"
+	COMBATLOG_XPGAIN_FIRSTPERSON_UNNAMED_GROUP = "Ihr bekommt %d Erfahrung. (+%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION4_GROUP = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Abzug, +%d Gruppen-Bonus)"
+	COMBATLOG_XPGAIN_EXHAUSTION5_RAID = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Abzug, -%d Schlachtzugsmalus)"
+	COMBATLOG_XPGAIN_EXHAUSTION4 = "%s stirbt, Ihr bekommt %d Erfahrung. (%s-Erf. %s-Abzug)"
+	COMBATLOG_XPGAIN_EXHAUSTION4_RAID = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Abzug, -%d Schlachtzugsmalus)"
+	COMBATLOG_XPGAIN_EXHAUSTION1 = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus)"
+	COMBATLOG_XPGAIN_QUEST = "Ihr bekommt %d Erfahrung. (%s EP-Bonus durch %s)"
+	COMBATLOG_XPGAIN_EXHAUSTION2_RAID = "%s stirbt, Ihr bekommt %d Erfahrung. (%s Erf. %s Bonus, -%d Schlachtzugsmalus)"
+end
+
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaInstanceTracker");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
 local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetContainerNumFreeSlots;
@@ -1066,7 +1093,7 @@ function NIT:leftInstance()
 	end
 end
 
-function NIT:showInstanceStats(id, output, showAll)
+function NIT:showInstanceStats(id, output, showAll, customPrefix, showDate)
 	if (not id) then
 		id = 1;
 	end
@@ -1075,6 +1102,7 @@ function NIT:showInstanceStats(id, output, showAll)
 		return;
 	end
 	local data = NIT.data.instances[id];
+	local level = data.enteredLevel or UnitLevel("player");
 	local timeSpent = "";
 	local timeSpentRaw = 0;
 	if (data.enteredTime and data.leftTime and data.enteredTime > 0 and data.leftTime > 0) then
@@ -1099,6 +1127,21 @@ function NIT:showInstanceStats(id, output, showAll)
 	local text = sColor .. data.instanceName .. "|r";
 	local mobCount = 0;
 	local money = 0;
+	if (showDate) then
+		local dateString;
+		local useTime = data.enteredTime;
+		if (data.leftTime and data.leftTime > 0) then
+			useTime = data.leftTime;
+		end
+		if (GetServerTime() - useTime < 86400) then
+			--If within last 24h then show as time ago instead of date.
+			local timeAgo = GetServerTime() - useTime;
+			dateString = "|cFFFFFFFF(" .. NIT:getTimeString(timeAgo, true, "short") .. " " .. L["ago"] .. ")|r";
+		else
+			dateString = "|cFFFFFFFF(" .. NIT:getTimeFormat(useTime, true, true) .. ")|r";
+		end
+		text = dateString .. " " .. text;
+	end
 	if (data.isPvp) then
 		if (data.type == "bg") then
 			text = text .. pColor .. " " .. L["Honor"] .. ":|r " .. sColor .. (data.honor or 0) .. "|r";
@@ -1107,7 +1150,7 @@ function NIT:showInstanceStats(id, output, showAll)
 			end
 		end
 		if (not NIT.isClassic and not NIT.isTBC and data.type ~= "arena") then
-			if ((NIT.db.global.instanceStatsOutputXP or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
+			if ((NIT.db.global.instanceStatsOutputXP or showAll) and level ~= NIT.maxLevel) then
 				text = text .. pColor .. " " .. L["statsXP"] .. "|r " .. sColor .. NIT:commaValue(data.xpFromChat) .. "|r";
 			end
 		end
@@ -1123,20 +1166,20 @@ function NIT:showInstanceStats(id, output, showAll)
 			--text = text .. " |cFF9CD6DEMobs: " .. data.mobCount;
 			text = text .. pColor .. " " .. L["statsMobs"] .. "|r " .. sColor .. mobCount .. "|r";
 		end
-		if ((NIT.db.global.instanceStatsOutputXP or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
+		if ((NIT.db.global.instanceStatsOutputXP or showAll) and level ~= NIT.maxLevel) then
 			text = text .. pColor .. " " .. L["statsXP"] .. "|r " .. sColor .. NIT:commaValue(data.xpFromChat) .. "|r";
 		end
-		if ((NIT.db.global.instanceStatsOutputXpPerHour or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
+		if ((NIT.db.global.instanceStatsOutputXpPerHour or showAll) and level ~= NIT.maxLevel) then
 			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0) then
 				local xpPerHour = NIT:commaValue(NIT:round((tonumber(data.xpFromChat) / timeSpentRaw) * 3600));
 				text = text .. pColor .. " " .. L["experiencePerHour"] .. ":|r " .. sColor .. xpPerHour .. "|r";
 			end
 		end
-		if ((NIT.db.global.instanceStatsOutputAverageXP or showAll) and UnitLevel("player") ~= NIT.maxLevel) then
+		if ((NIT.db.global.instanceStatsOutputAverageXP or showAll) and level ~= NIT.maxLevel) then
 			--if (data.xpFromChat and data.xpFromChat > 0 and data.mobCount and data.mobCount > 0) then
 			if (data.xpFromChat and data.xpFromChat > 0) then
 				local averageXP = data.xpFromChat / mobCount;
-				text = text .. pColor .. " " .. L["statsAverageXP"] .. "|r " .. sColor .. NIT:round(averageXP, 2) .. "|r";
+				text = text .. pColor .. " " .. L["statsAverageXP"] .. "|r " .. sColor .. NIT:commaValue(NIT:round(averageXP, 2)) .. "|r";
 			else
 				text = text .. pColor .. " " .. L["statsAverageXP"] .. "|r " .. sColor .. "0|r";
 			end
@@ -1197,14 +1240,20 @@ function NIT:showInstanceStats(id, output, showAll)
 	end
 	if (output) then
 		local prefix = "Last Dungeon";
-		if (NIT.inInstance) then
-			prefix = "Current Dungeon";
+		if (customPrefix) then
+			prefix = customPrefix;
+		else
+			if (NIT.inInstance and id == 1) then
+				prefix = "Current Dungeon";
+			end
 		end
-		if (output == "group") then
+		if (output == "copypaste") then
+			NIT:openNITCopyFrame("[NIT] " .. NIT:stripColors(prefix.. " " .. text));
+		elseif (output == "group") then
 			if (IsInRaid()) then
-		  		SendChatMessage("[NIT] " .. prefix.. " " .. NIT:stripColors(text), "RAID");
+		  		SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "RAID");
 	  		elseif (IsInGroup()) then
-	  			SendChatMessage("[NIT] " .. prefix.. " " .. NIT:stripColors(text), "PARTY");
+	  			SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "PARTY");
 			else
 				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
 			end
@@ -1217,7 +1266,7 @@ function NIT:showInstanceStats(id, output, showAll)
 		  		NIT:print("You are not in a party.");
 		  		return;
 			end
-			SendChatMessage("[NIT] " .. prefix.. " " .. NIT:stripColors(text), string.upper(output));
+			SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), string.upper(output));
 		elseif (output == "self") then
 			NIT:print(NIT.prefixColor .. prefix.. " " .. text);
 		elseif (output == "send") then
@@ -1225,12 +1274,12 @@ function NIT:showInstanceStats(id, output, showAll)
 			if (NIT.db.global.instanceStatsOutputWhere == "group") then
 				if (IsInRaid()) then
 					if (NIT.db.global.showStatsInRaid) then
-		  				SendChatMessage("[NIT] " .. prefix.. " " .. NIT:stripColors(text), "RAID");
+		  				SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "RAID");
 		  			elseif (NIT.db.global.printRaidInstead) then
 		  				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
 		  			end
 		  		elseif (IsInGroup()) then
-		  			SendChatMessage("[NIT] " .. prefix.. " " .. NIT:stripColors(text), "PARTY");
+		  			SendChatMessage("[NIT] " .. NIT:stripColors(prefix.. " " .. text), "PARTY");
 				end
 			else
 				NIT:print(NIT.prefixColor .. prefix.. " " .. text);
@@ -2309,7 +2358,6 @@ NIT.trackItemsPALADIN = {
 
 --Sometimes we only need to update inventory data.
 function NIT:recordInventoryData()
-	local classLocalized, classEnglish = UnitClass("player");
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};
@@ -2614,7 +2662,6 @@ function NIT:recordCooldowns()
 		end
 	end
 	for bag = 0, NUM_BAG_SLOTS do
-		local _, bagType = GetContainerNumFreeSlots(bag);
 		for slot = 1, GetContainerNumSlots(bag) do
 			local item = Item:CreateFromBagAndSlot(bag, slot);
 			if (item) then

@@ -222,3 +222,7 @@ AceGUI-3.0_SFX-Widgets: enabled
 LibDBIcon-1.0: enabled
 DugisGuideViewerZ: disabled
 mUI: disabled
+ACP: enabled
+Open-Sesame: enabled
+SpeedyAutoLoot: enabled
+WhatsTraining: enabled

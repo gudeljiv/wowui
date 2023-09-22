@@ -81,7 +81,7 @@ local function Postal_Inventory_Change(action)
 	if action == 1 then	-- take snap shot of current container free space tables and store
 		wipe(PostalForwardTable)
 		for bagID = 0, 4, 1 do
-			if Postal.WOWClassic or Postal.WOWBCClassic then
+			if Postal.WOWBCClassic then
 				table.insert(PostalForwardTable, GetContainerFreeSlots(bagID))
 			else
 				table.insert(PostalForwardTable, C_Container.GetContainerFreeSlots(bagID))
@@ -92,7 +92,7 @@ local function Postal_Inventory_Change(action)
 	if action == 2 then	-- take new snap shot of current container free space tables and compared with stored one
 		wipe(TempTable)
 		for bagID = 0, 4, 1 do
-			if Postal.WOWClassic or Postal.WOWBCClassic then
+			if Postal.WOWBCClassic then
 				TempTable = GetContainerFreeSlots(bagID)
 			else
 				TempTable = C_Container.GetContainerFreeSlots(bagID)

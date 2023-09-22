@@ -3896,7 +3896,7 @@ function Private.ParseTooltipText(tooltipText)
   local debuffType = "none";
   local tooltipSize = {};
   if(tooltipText) then
-    for t in tooltipText:gmatch("(%d[%d%.,]*)") do
+    for t in tooltipText:gmatch("(-?%d[%d%.,]*)") do
       if (LARGE_NUMBER_SEPERATOR == ",") then
         t = t:gsub(",", "");
       else
@@ -4909,7 +4909,8 @@ end
 function Private.CreateFormatters(input, getter, withoutColor)
   local seenSymbols = {}
   local formatters = {}
-  Private.ParseTextStr(input, function(symbol)
+
+  local parseFn = function(symbol)
     if not seenSymbols[symbol] then
       local _, sym = string.match(symbol, "(.+)%.(.+)")
       sym = sym or symbol
@@ -4924,7 +4925,15 @@ function Private.CreateFormatters(input, getter, withoutColor)
       end
     end
     seenSymbols[symbol] = true
-  end)
+  end
+
+  if type(input) == "string" then
+    Private.ParseTextStr(input, parseFn)
+  elseif type(input) == "table" then
+    for _, v in ipairs(input) do
+      Private.ParseTextStr(v, parseFn)
+    end
+  end
 
   return formatters
 end
@@ -5529,7 +5538,7 @@ function Private.AnchorFrame(data, region, parent)
 
     local anchorPoint = data.anchorPoint
     if data.parent then
-      if data.anchorFrameType == "SCREEN" or data.anchorFrameType == "UIPARENT" or data.anchorFrameType == "MOUSE" then
+      if data.anchorFrameType == "SCREEN" or data.anchorFrameType == "MOUSE" then
         anchorPoint = "CENTER"
       end
     else

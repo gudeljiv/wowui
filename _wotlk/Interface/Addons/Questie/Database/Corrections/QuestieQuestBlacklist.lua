@@ -518,7 +518,6 @@ function QuestieQuestBlacklist:Load()
         [12135] = true,
         [12139] = true,
         [12191] = true,
-        [12194] = true,
         [12278] = true,
         [12155] = true,
         [12286] = true,
@@ -675,6 +674,8 @@ function QuestieQuestBlacklist:Load()
         [14022] = true,
 
         --- Brewfest
+        [12193] = true,
+        [12194] = true,
         [13931] = true,
         [13932] = true,
 
@@ -1033,6 +1034,24 @@ function QuestieQuestBlacklist:Load()
         [64064] = true, -- Boosted character quest
         [64128] = true, -- Boosted character quest
         [64217] = true, -- Boosted character quest
+        [64845] = QuestieCorrections.TBC_AND_WOTLK, -- Alliance War Effort
+        [70395] = true, -- First quest for boosted characters. Blocked to not show for others
+        [70396] = true, -- First quest for boosted characters. Blocked to not show for others
+        [70397] = true, -- Boosted character quest
+        [70398] = true, -- Boosted character quest
+        [70401] = true, -- Boosted character quest
+        [70411] = true, -- Boosted character quest
+        [70734] = true, -- Boosted character quest
+        [70735] = true, -- Boosted character quest
+        [70736] = true, -- Boosted character quest
+        [70737] = true, -- Boosted character quest
+        [70761] = true, -- Boosted character quest
+        [70762] = true, -- First quest for boosted characters. Blocked to not show for others
+        [70764] = true, -- Boosted character quest
+        [70765] = true, -- Boosted character quest
+        [70865] = true, -- Boosted character quest
+        [70869] = true, -- Boosted character quest
+        [70870] = true, -- Boosted character quest
 
 		-- Paladin class quests with SWP patch
         [64319] = true, -- removed in wotlk
@@ -1056,9 +1075,9 @@ function QuestieQuestBlacklist:Load()
         [3366] = true,
         [3381] = true,
         [5627] = true,
-        [5641] = true,
-        [5645] = true,
-        [5647] = true,
+        [5641] = QuestieCorrections.TBC_AND_WOTLK,
+        [5645] = QuestieCorrections.TBC_AND_WOTLK,
+        [5647] = QuestieCorrections.TBC_AND_WOTLK,
         [6131] = true,
         [6221] = true,
         [6241] = true,
@@ -1136,11 +1155,19 @@ function QuestieQuestBlacklist:Load()
         [10885] = QuestieCorrections.WOTLK_ONLY, -- no longer exists in wotlk
         [10888] = QuestieCorrections.WOTLK_ONLY, -- Got replaced by 13430
         [10901] = QuestieCorrections.WOTLK_ONLY, -- Got replaced by 13431
+        [6144] = QuestieCorrections.WOTLK_ONLY, -- Got replaced by 14349
         [6821] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [6822] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [6823] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [6824] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
         [7486] = QuestieCorrections.WOTLK_ONLY, -- Not in the game
+        [5634] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5635] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5636] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5637] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5638] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5639] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
+        [5640] = QuestieCorrections.WOTLK_ONLY, -- removed in wotlk
         [14351] = true, -- Not in the game
         [14353] = true, -- Not in the game
         [11621] = true, -- Not in the game

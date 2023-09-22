@@ -6,6 +6,7 @@
 	local _tempo = time()
 	local _
 	local addonName, Details222 = ...
+	local detailsFramework = DetailsFramework
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --local pointers
@@ -1629,7 +1630,7 @@
 		GameCooltip:AddStatusBar (100, 1, 0, 0, 0, 0.8)
 	end
 
-	function Details:AddTooltipBackgroundStatusbar (side, value, useSpark)
+	function Details:AddTooltipBackgroundStatusbar (side, value, useSpark, statusBarColor)
 		Details.tooltip.background [4] = 0.8
 		Details.tooltip.icon_size.W = Details.tooltip.line_height
 		Details.tooltip.icon_size.H = Details.tooltip.line_height
@@ -1661,6 +1662,9 @@
 
 		if (not side) then
 			local r, g, b, a = unpack(Details.tooltip.bar_color)
+			if (statusBarColor) then
+				r, g, b, a = detailsFramework:ParseColors(statusBarColor)
+			end
 			local rBG, gBG, bBG, aBG = unpack(Details.tooltip.background)
 			GameCooltip:AddStatusBar (value, 1, r, g, b, a, useSpark, {value = 100, color = {rBG, gBG, bBG, aBG}, texture = [[Interface\AddOns\Details\images\bar_serenity]]})
 
@@ -1743,6 +1747,10 @@
 		end
 	end
 
+	---@param self instance
+	---@param frame table
+	---@param whichRowLine number
+	---@param keydown string
 	function Details:MontaTooltip(frame, whichRowLine, keydown)
 		self:BuildInstanceBarTooltip(frame)
 
@@ -1773,6 +1781,9 @@
 		if (not object.ToolTip) then
 			if (object.__destroyed) then
 				Details:Msg("object:ToolTip() is invalid.", object.__destroyedBy)
+				self:ResetWindow()
+				self:RefreshWindow(true)
+				return
 			end
 		end
 
@@ -1892,7 +1903,7 @@
 		dumpt(t)
 	end
 
-	function Details:ForceRefresh()
+	function Details:ForceRefresh() --getting deprecated soon
 		self:RefreshMainWindow(true)
 	end
 

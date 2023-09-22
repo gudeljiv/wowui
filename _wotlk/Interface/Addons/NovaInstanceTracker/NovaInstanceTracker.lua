@@ -828,6 +828,8 @@ function NIT:createBroker()
 				end
 			elseif (button == "RightButton") then
 				NIT:openAltsFrame();
+			elseif (button == "MiddleButton") then
+				NIT:openLockoutsFrame();
 			end
 		end,
 		OnEnter = function(self, button)
@@ -955,6 +957,7 @@ function NIT:updateMinimapButton(tooltip, frame)
 	end
 	tooltip:AddLine("|cFF9CD6DELeft-Click|r " .. L["openInstanceFrame"]);
 	tooltip:AddLine("|cFF9CD6DERight-Click|r " .. L["openYourChars"]);
+	tooltip:AddLine("|cFF9CD6DEMiddle-Click|r " .. L["openLockouts"]);
 	tooltip:AddLine("|cFF9CD6DEShift Left-Click|r " .. L["openTradeLog"]);
 	tooltip:AddLine("|cFF9CD6DEShift Right-Click|r " .. L["config"]);
 	C_Timer.After(0.1, function()
@@ -1136,12 +1139,16 @@ end)
 NITInstanceFrame.fs = NITInstanceFrame.EditBox:CreateFontString("NITInstanceFrameFS", "ARTWORK");
 NITInstanceFrame.fs:SetPoint("TOP", 0, -0);
 NITInstanceFrame.fs:SetFont(NIT.regionFont, 14);
-NITInstanceFrame.fs2 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS", "ARTWORK");
+NITInstanceFrame.fs2 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS2", "ARTWORK");
 NITInstanceFrame.fs2:SetPoint("TOPLEFT", 0, -14);
 NITInstanceFrame.fs2:SetFont(NIT.regionFont, 14);
-NITInstanceFrame.fs3 = NITInstanceFrame:CreateFontString("NITbuffListFrameFS", "ARTWORK");
+NITInstanceFrame.fs3 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS3", "ARTWORK");
 NITInstanceFrame.fs3:SetPoint("BOTTOM", 0, -20);
 NITInstanceFrame.fs3:SetFont(NIT.regionFont, 14);
+NITInstanceFrame.fs4 = NITInstanceFrame:CreateFontString("NITInstanceFrameFS4", "ARTWORK");
+NITInstanceFrame.fs4:SetPoint("TOP", NITInstanceFrame.fs, "BOTTOM", 0, -3);
+--NITInstanceFrame.fs4:SetPoint("TOP", -20, -45);
+NITInstanceFrame.fs4:SetFont(NIT.regionFont, 14);
 
 local NITInstanceDragFrame = CreateFrame("Frame", "NITlayerDragFrame", NITInstanceFrame);
 NITInstanceDragFrame:SetToplevel(true);
@@ -1482,6 +1489,7 @@ function NIT:setInstanceLogFrameHeader()
 				.. "   |TInterface\\AddOns\\NovaInstanceTracker\\Media\\RaidSquare:10:10:0:0|t " .. L["raid"] .. pvp;
 	end
 	NITInstanceFrame.fs:SetText(header);
+	NITInstanceFrame.fs4:SetText("|cFF9CD6DEClick an entry to post stats.");
 end
 
 function NIT:openInstanceLogFrame()
@@ -1506,6 +1514,7 @@ function NIT:openInstanceLogFrame()
 	NITInstanceFrame.fs:SetFont(NIT.regionFont, 14);
 	NITInstanceFrame.fs2:SetFont(NIT.regionFont, 14);
 	NITInstanceFrame.fs3:SetFont(NIT.regionFont, 14);
+	NITInstanceFrame.fs4:SetFont(NIT.regionFont, 13);
 	if (NITInstanceFrame:IsShown()) then
 		NITInstanceFrame:Hide();
 	else
@@ -1560,9 +1569,123 @@ function NIT:createInstanceLineFrames(skipRecalc)
 	end
 end
 
+local lastPostInstanceStats = 0;
+local NITPostInstanceStatsFrame = CreateFrame("Frame", "NITPostInstanceStatsFrame", NITInstanceFrame, NIT:addBackdrop());
+NITPostInstanceStatsFrame:Hide();
+NITPostInstanceStatsFrame:SetSize(120, 70);
+--NITPostInstanceStatsFrame:SetToplevel(true);
+--NITPostInstanceStatsFrame:SetMovable(true);
+--NITPostInstanceStatsFrame:EnableMouse(true);
+tinsert(UISpecialFrames, "NITPostInstanceStatsFrame");
+--NITPostInstanceStatsFrame:SetPoint("CENTER", UIParent, 0, 100);
+NITPostInstanceStatsFrame:SetBackdrop({
+	bgFile = "Interface\\Buttons\\WHITE8x8",
+	edgeFile = "Interface\\ChatFrame\\ChatFrameBackground",
+	tile = true,
+	tileSize = 16,
+	edgeSize = 2,
+	insets = {top = 0, left = 0, bottom = 0, right = 0}
+});
+NITPostInstanceStatsFrame:SetBackdropColor(0,0,0,1);
+--NITPostInstanceStatsFrame:SetBackdropBorderColor(1,1,0,.7);
+NITPostInstanceStatsFrame:SetBackdropBorderColor(1,105/255,0,.7);
+
+NITPostInstanceStatsFrame:SetFrameStrata("HIGH");
+NITPostInstanceStatsFrame:SetFrameLevel(20);
+NITPostInstanceStatsFrame:SetScript("OnLeave", function(self, arg)
+	if (not MouseIsOver(NITPostInstanceStatsFrame)) then
+		NITPostInstanceStatsFrame:Hide();
+	end
+end)
+
+for i = 1, 3 do
+	local frame = CreateFrame("Button", "$parentButton" .. i, NITPostInstanceStatsFrame, NIT:addBackdrop());
+	frame:SetScript("OnClick", function(self, arg)
+		NITPostInstanceStatsFrame:Hide();
+	end)
+	frame:SetBackdrop({
+		bgFile = "Interface\\Buttons\\WHITE8x8",
+		--edgeFile = "Interface\\ChatFrame\\ChatFrameBackground",
+		--tile = true,
+		--tileSize = 16,
+		--edgeSize = 0.5,
+		insets = {top = 0, left = 0, bottom = 0, right = 0}
+	});
+	frame:SetBackdropColor(1,1,1,.15);
+	--frame:SetBackdropBorderColor(1,1,1,.8);
+	frame:SetSize(105, 12);
+	frame:SetPoint("CENTER", 0, 0);
+	frame.fs = frame:CreateFontString("frameFS", "ARTWORK");
+	frame.fs:SetPoint("CENTER", 0, 0);
+	frame.fs:SetFont(NIT.regionFont, 12);
+	frame.highlightTexture = frame:CreateTexture(nil, "HIGHLIGHT");
+	frame.highlightTexture:SetTexture("Interface\\Buttons\\ButtonHilight-Square");
+	frame.highlightTexture:SetBlendMode("ADD");
+	frame.highlightTexture:SetAllPoints();
+	frame:SetHighlightTexture(frame.highlightTexture);
+	NITPostInstanceStatsFrame["button" .. i] = frame;
+end
+NITPostInstanceStatsFrame.button1:SetPoint("TOP", 0, -21);
+NITPostInstanceStatsFrame.button2:SetPoint("TOP", 0, -35);
+NITPostInstanceStatsFrame.button3:SetPoint("TOP", 0, -49);
+NITPostInstanceStatsFrame.button1.fs:SetText("|cffaaaaffParty");
+NITPostInstanceStatsFrame.button2.fs:SetText("|cff40ff40Guild");
+NITPostInstanceStatsFrame.button3.fs:SetText("|cFFFFAE42Copy Paste");
+--Update the text depending on if in group, this is a bit of a lazy way to do it but this frame is very rarely shown so it won't run much.
+NITPostInstanceStatsFrame.button1:SetScript("OnUpdate", function(self, arg)
+	if (IsInGroup()) then
+		NITPostInstanceStatsFrame.button1.fs:SetText("|cffaaaaffParty");
+	else
+		NITPostInstanceStatsFrame.button1.fs:SetText("|cffffffffPrint");
+	end
+end)
+
+NITPostInstanceStatsFrame.fs = NITPostInstanceStatsFrame:CreateFontString("NITPostInstanceStatsFrameFS", "ARTWORK");
+NITPostInstanceStatsFrame.fs:SetPoint("TOP", 0, -5);
+NITPostInstanceStatsFrame.fs:SetFont(NIT.regionFont, 12);
+
+local function openPostInstanceStatsFrame(lineFrame)
+	NITPostInstanceStatsFrame.fs:SetText("|cFFFFFF00Post Stats for log:|cFF00FF00 " .. lineFrame.id);
+	local customPrefix;
+	if (NIT.inInstance and lineFrame.id == 1) then
+		customPrefix = "Current Dungeon Stats";
+	else
+		customPrefix = "Log Entry [|cFF00FF00" .. lineFrame.id .. "|r]";
+	end
+	NITPostInstanceStatsFrame.button1:SetScript("OnClick", function(self, arg)
+		if (GetTime() > lastPostInstanceStats + 1) then
+			if (IsInGroup()) then
+				NIT:showInstanceStats(lineFrame.id, "group", true, customPrefix, true);
+			else
+				NIT:showInstanceStats(lineFrame.id, "self", true, customPrefix, true);
+			end
+			lastPostInstanceStats = GetTime();
+			NITPostInstanceStatsFrame:Hide();
+		end
+	end)
+	NITPostInstanceStatsFrame.button2:SetScript("OnClick", function(self, arg)
+		if (GetTime() > lastPostInstanceStats + 1) then
+			NIT:showInstanceStats(lineFrame.id, "guild", true, customPrefix, true);
+			lastPostInstanceStats = GetTime();
+			NITPostInstanceStatsFrame:Hide();
+		end
+	end)
+	NITPostInstanceStatsFrame.button3:SetScript("OnClick", function(self, arg)
+		if (GetTime() > lastPostInstanceStats + 1) then
+			NIT:showInstanceStats(lineFrame.id, "copypaste", true, "Log Entry [|cFF00FF00" .. lineFrame.id .. "|r]", true);
+			lastPostInstanceStats = GetTime();
+			NITPostInstanceStatsFrame:Hide();
+		end
+	end)
+	local scale, x, y = NITPostInstanceStatsFrame:GetEffectiveScale(), GetCursorPosition();
+	NITPostInstanceStatsFrame:SetPoint("CENTER", nil, "BOTTOMLEFT", (x / scale) - 20, (y / scale) - 10);
+	local id = lineFrame.id;
+	NITPostInstanceStatsFrame:Show();
+end
+
 function NIT:createInstanceLineFrame(type, data, count)
 	if (not _G[type .. "NITInstanceLine"]) then
-		local obj = CreateFrame("Frame", type .. "NITInstanceLine", NITInstanceFrame.EditBox);
+		local obj = CreateFrame("Button", type .. "NITInstanceLine", NITInstanceFrame.EditBox);
 		obj.name = data.name;
 		obj.count = count;
 		--Keep track of the real instance ID and not just the frame count for use with tooltip data etc.
@@ -1576,6 +1699,11 @@ function NIT:createInstanceLineFrame(type, data, count)
 		--obj.fs:SetWordWrap(false);
 		--obj.fs:SetNonSpaceWrap(false);
 		obj.fs:SetFont(NIT.regionFont, 14);
+		obj.highlightTexture = obj:CreateTexture(nil, "HIGHLIGHT");
+		obj.highlightTexture:SetTexture("Interface\\Buttons\\ButtonHilight-Square");
+		obj.highlightTexture:SetBlendMode("ADD");
+		obj.highlightTexture:SetAllPoints();
+		obj:SetHighlightTexture(obj.highlightTexture);
 		--They don't quite line up properly without justify on top of set point left.
 		obj.fs:SetJustifyH("LEFT");
 		obj.tooltip = CreateFrame("Frame", type .. "NITInstanceLineTooltip", NITInstanceFrame, "TooltipBorderedFrameTemplate");
@@ -1604,6 +1732,9 @@ function NIT:createInstanceLineFrame(type, data, count)
 			end
 		end)
 		obj:SetScript("OnEnter", function(self)
+			if (NITPostInstanceStatsFrame:IsShown()) then
+				return;
+			end
 			obj.tooltip:Show();
 			NIT:recalcInstanceLineFramesTooltip(obj);
 			local scale, x, y = obj.tooltip:GetEffectiveScale(), GetCursorPosition();
@@ -1611,6 +1742,10 @@ function NIT:createInstanceLineFrame(type, data, count)
 		end)
 		obj:SetScript("OnLeave", function(self)
 			obj.tooltip:Hide();
+			--NITPostInstanceStatsFrame:Hide();
+		end)
+		obj:SetScript("OnClick", function(self)
+			openPostInstanceStatsFrame(obj)
 		end)
 		obj.tooltip:Hide();
 		--obj:SetScript("OnMouseDown", function(self)
@@ -1618,7 +1753,8 @@ function NIT:createInstanceLineFrame(type, data, count)
 		--end)
 		
 		obj.removeButton = CreateFrame("Button", type .. "NITInstanceLineRB", obj, "UIPanelButtonTemplate");
-		obj.removeButton:SetPoint("LEFT", obj, "RIGHT", 34, 0);
+		--obj.removeButton:SetPoint("LEFT", obj, "RIGHT", 34, 0);
+		obj.removeButton:SetPoint("LEFT", obj, "RIGHT", 1, 0);
 		obj.removeButton:SetWidth(13);
 		obj.removeButton:SetHeight(13);
 		--obj.removeButton:SetText("X");
@@ -1717,7 +1853,8 @@ function NIT:recalcInstanceLineFrames()
 					end
 					frame.fs:SetText(line);
 					--Leave enough room on the right of frame to not overlap the scroll bar (-20) and remove button (-20).
-					frame:SetWidth(NITInstanceFrame:GetWidth() - 120);
+					--frame:SetWidth(NITInstanceFrame:GetWidth() - 120);
+					frame:SetWidth(NITInstanceFrame:GetWidth() - 86); --Adjusted when lineframes were changed to button for clicking and highlight to fit better.
 					frame:SetHeight(frame.fs:GetHeight());
 					frame.removeButton.count = count;
 					frame.removeButton:SetScript("OnClick", function(self, arg)
@@ -4213,6 +4350,42 @@ f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "GOSSIP_SHOW") then
 		local isInstance, instanceType = IsInInstance();
 		local g1, type1, g2, type2, g3, type3, g4, type4, g5, type5, g6, type6, g7, type7, g8, type8 = GetGossipOptions();
+		--Fix for for when it was moved to C_GossipInfo and changed to a table instead of strings, but still backwards compatible.
+		if (g1 and type(g1) == "table") then
+			--If there are no gossip options we still get an empty table so set g1 to nil;
+			if (not next(g1)) then
+				g1 = nil;
+			else
+				--Sort by orderIndex so the options line up correctly.
+				table.sort(g1, function(a, b) return a.orderIndex < b.orderIndex end);
+				--Convert locals to original gossip strings given by GetGossipOptions().
+				--g1 must be done last since it holds the table data in the new format.
+				if (g1[2] and g1[2].name) then
+					g2 = g1[2].name;
+				end
+				if (g1[3] and g1[3].name) then
+					g3 = g1[3].name;
+				end
+				if (g1[4] and g1[4].name) then
+					g4 = g1[4].name;
+				end
+				if (g1[5] and g1[5].name) then
+					g5 = g1[5].name;
+				end
+				if (g1[6] and g1[6].name) then
+					g6 = g1[6].name;
+				end
+				if (g1[7] and g1[7].name) then
+					g7 = g1[7].name;
+				end
+				if (g1[8] and g1[8].name) then
+					g8 = g1[8].name;
+				end
+				if (g1[1] and g1[1].name) then
+					g1 = g1[1].name;
+				end
+			end
+		end
 		local npcGUID = UnitGUID("npc");
 		local npcID;
 		if (npcGUID) then
@@ -4419,4 +4592,97 @@ function NIT:createSimpleTextFrame(name, width, height, x, y, borderSpacing)
 	end)
 	frame:Hide();
 	return frame;
+end
+
+local NITCopyFrame = CreateFrame("ScrollFrame", "NITCopyFrame", nil, NIT:addBackdrop("NIT_InputScrollFrameTemplate"));
+NITCopyFrame:Hide();
+NITCopyFrame:SetToplevel(true);
+NITCopyFrame:SetMovable(true);
+NITCopyFrame:EnableMouse(true);
+tinsert(UISpecialFrames, "NITCopyFrame");
+NITCopyFrame:SetPoint("CENTER", UIParent, -100, 100);
+NITCopyFrame:SetBackdrop({bgFile = "Interface\\Buttons\\WHITE8x8",insets = {top = -2, left = -3, bottom = -3, right = -3}});
+NITCopyFrame:SetBackdropColor(0,0,0,.9);
+NITCopyFrame.CharCount:Hide();
+NITCopyFrame:SetFrameLevel(129);
+NITCopyFrame:SetFrameStrata("TOOLTIP");
+local NITCopyFrameTopBar = CreateFrame("Frame", "NITCopyFrameTopBar", NITCopyFrame, "ThinGoldEdgeTemplate");
+NITCopyFrameTopBar:SetPoint("TOP", -8, 22);
+NITCopyFrameTopBar:SetWidth(100);
+NITCopyFrameTopBar:SetHeight(18);
+NITCopyFrameTopBar.fs = NITCopyFrameTopBar:CreateFontString("topBarFS", "OVERLAY", "NumberFont_Shadow_Tiny");
+NITCopyFrameTopBar.fs:SetText("NIT Copy Paste");
+NITCopyFrameTopBar.fs:SetPoint("CENTER", 0, 0);
+NITCopyFrameTopBar:SetMovable(true);
+NITCopyFrameTopBar:EnableMouse(true);
+NITCopyFrameTopBar:SetScript("OnMouseDown", function(self, button)
+	if (button == "LeftButton" and not self:GetParent().isMoving) then
+		self:GetParent():StartMoving();
+		self:GetParent().isMoving = true;
+	end
+end)
+NITCopyFrameTopBar:SetScript("OnMouseUp", function(self, button)
+	if (button == "LeftButton" and self:GetParent().isMoving) then
+		self:GetParent():StopMovingOrSizing();
+		self:GetParent().isMoving = false;
+	end
+end)
+NITCopyFrameTopBar:SetScript("OnHide", function(self)
+	if (self:GetParent().isMoving) then
+		self:GetParent():StopMovingOrSizing();
+		self:GetParent().isMoving = false;
+	end
+end)
+
+--Top right X close button
+local NITCopyFrameCloseButton = CreateFrame("Button", "NITCopyFrameCloseButton", NITCopyFrame, "UIPanelCloseButton");
+NITCopyFrameCloseButton:SetPoint("TOPRIGHT", 12, 27);
+NITCopyFrameCloseButton:SetWidth(29);
+NITCopyFrameCloseButton:SetHeight(29);
+NITCopyFrameCloseButton:SetScript("OnClick", function(self, arg)
+	NITCopyFrame:Hide();
+end)
+
+--Bottom Close button
+local NITCopyFrameBottomButton = CreateFrame("Button", "NITCopyFrameBottomButton", NITCopyFrame, "UIPanelButtonTemplate");
+NITCopyFrameBottomButton:SetPoint("BOTTOM", 0, -23);
+NITCopyFrameBottomButton:SetWidth(80);
+NITCopyFrameBottomButton:SetHeight(22);
+NITCopyFrameBottomButton:SetText("Close");
+NITCopyFrameBottomButton:SetNormalFontObject("GameFontNormalSmall");
+NITCopyFrameBottomButton:SetScript("OnClick", function(self, arg)
+	NITCopyFrame:Hide();
+end)
+NITCopyFrameBottomButton:SetScript("OnMouseDown", function(self, button)
+	if (button == "LeftButton" and not self:GetParent().isMoving) then
+		self:GetParent():StartMoving();
+		self:GetParent().isMoving = true;
+	end
+end)
+NITCopyFrameBottomButton:SetScript("OnMouseUp", function(self, button)
+	if (button == "LeftButton" and self:GetParent().isMoving) then
+		self:GetParent():StopMovingOrSizing();
+		self:GetParent().isMoving = false;
+	end
+end)
+NITCopyFrameBottomButton:SetScript("OnHide", function(self)
+	if (self:GetParent().isMoving) then
+		self:GetParent():StopMovingOrSizing();
+		self:GetParent().isMoving = false;
+	end
+end)
+
+function NIT:openNITCopyFrame(text)
+	NITCopyFrame:SetHeight(70);
+	NITCopyFrame:SetWidth(300);
+	NITCopyFrame.EditBox:SetFont("Fonts\\ARIALN.ttf", 11, "");
+	NITCopyFrame.EditBox:SetText("");
+	NITCopyFrame.EditBox:Insert(text);
+	NITCopyFrame.EditBox:SetWidth(NITCopyFrame:GetWidth() - 30);
+	NITCopyFrameTopBar:SetWidth(NITCopyFrame:GetWidth() - 6);
+	NITCopyFrame:Show();
+	NITCopyFrame.EditBox:HighlightText();
+	C_Timer.After(0.1, function()
+		NITCopyFrame.EditBox:SetFocus();
+	end)
 end

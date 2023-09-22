@@ -17,6 +17,8 @@ local QuestieQuestBlacklist = QuestieLoader:ImportModule("QuestieQuestBlacklist"
 local QuestieNPCBlacklist = QuestieLoader:ImportModule("QuestieNPCBlacklist")
 ---@type QuestieItemBlacklist
 local QuestieItemBlacklist = QuestieLoader:ImportModule("QuestieItemBlacklist")
+---@type HardcoreBlacklist
+local HardcoreBlacklist = QuestieLoader:ImportModule("HardcoreBlacklist")
 
 ---@type QuestieQuestFixes
 local QuestieQuestFixes = QuestieLoader:ImportModule("QuestieQuestFixes")
@@ -66,16 +68,12 @@ local QuestieItemStartFixes = QuestieLoader:ImportModule("QuestieItemStartFixes"
 --]]
 
 -- flags that can be used in corrections (currently only blacklists)
-QuestieCorrections.TBC_ONLY = 1
-QuestieCorrections.CLASSIC_ONLY = 2
-QuestieCorrections.WOTLK_ONLY = 3
-QuestieCorrections.TBC_AND_WOTLK = 4
+QuestieCorrections.TBC_ONLY = 1 -- Hide only in TBC
+QuestieCorrections.CLASSIC_ONLY = 2 -- Hide only in Classic
+QuestieCorrections.WOTLK_ONLY = 3 -- Hide only in Wotlk
+QuestieCorrections.TBC_AND_WOTLK = 4 -- Hide in TBC and Wotlk
 
 QuestieCorrections.killCreditObjectiveFirst = {} -- Only used for TBC quests
-
--- used during Precompile, how fast to run operations (lower = slower but less lag)
-local TICKS_PER_YIELD_DEBUG = 4000
-local TICKS_PER_YIELD = 72
 
 -- this function filters a table of values, if the value is TBC_ONLY or CLASSIC_ONLY, set it to true or nil if that case is met
 ---@generic T
@@ -182,6 +180,12 @@ function QuestieCorrections:MinimalInit() -- db already compiled
             if (QuestieCorrections.hiddenQuests[id] == nil) then
                 QuestieCorrections.hiddenQuests[id] = hide
             end
+        end
+    end
+
+    if (Questie.IsHardcore) then
+        for id, _ in pairs(HardcoreBlacklist:Load()) do
+            QuestieCorrections.hiddenQuests[id] = true
         end
     end
 

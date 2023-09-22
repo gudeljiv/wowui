@@ -384,3 +384,5 @@ L["mythicPlusShort"] = "Mythic+";
 L["noCurrentRaidLockouts"] = "No current raid lockouts.";
 
 L["weeklyQuests"] = "Weekly Quests";
+
+L["openLockouts"] = "Open Lockouts";

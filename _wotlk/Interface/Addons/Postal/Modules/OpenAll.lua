@@ -124,7 +124,7 @@ function Postal_OpenAll:OnEnable()
 		Postal_OpenAllMenuButton:SetFrameLevel(Postal_OpenAllMenuButton:GetFrameLevel() + 1)
 	end
 
-	if Postal.WOWClassic or Postal.WOWBCClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_SHOW")
 	else
 		Postal_OpenAll:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW")
@@ -145,7 +145,7 @@ function Postal_OpenAll:OnDisable()
 end
 
 function Postal_OpenAll:MAIL_SHOW()
-	if Postal.WOWClassic or Postal.WOWBCClassic then
+	if Postal.WOWBCClassic then
 		self:RegisterEvent("MAIL_CLOSED", "Reset")
 	else
 		Postal_OpenAll:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", "Reset")
@@ -400,7 +400,7 @@ function Postal_OpenAll:Reset(event)
 	Postal:DisableInbox()
 	InboxFrame_Update()
 	if event == "MAIL_CLOSED" or event == "PLAYER_LEAVING_WORLD" or (event == "PLAYER_INTERACTION_MANAGER_FRAME_HIDE" and paneType == Enum.PlayerInteractionType.MailInfo) then
-		if Postal.WOWClassic or Postal.WOWBCClassic then
+		if Postal.WOWBCClassic then
 			self:UnregisterEvent("MAIL_CLOSED")
 		else
 			self:UnregisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE")

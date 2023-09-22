@@ -745,6 +745,8 @@ L["Expertise Rating"] = "Expertise Rating"
 L["Extend Outside"] = "Extend Outside"
 L["Extra Amount"] = "Quantidade Extra"
 L["Extra Attacks"] = "Ataques Extras"
+--[[Translation missing --]]
+L["Extra Spell Id"] = "Extra Spell Id"
 L["Extra Spell Name"] = "Nome da Magia Extra"
 --[[Translation missing --]]
 L["Faction"] = "Faction"
@@ -1095,6 +1097,8 @@ L["Is Exactly"] = "Is Exactly"
 L["Is Moving"] = "Is Moving"
 --[[Translation missing --]]
 L["Is Off Hand"] = "Is Off Hand"
+--[[Translation missing --]]
+L["Is Paused"] = "Is Paused"
 --[[Translation missing --]]
 L["is useable"] = "is useable"
 --[[Translation missing --]]
