@@ -1,5 +1,5 @@
 nPower: enabled
-nHealth: disabled
+nHealth: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Immersion: disabled

@@ -3,8 +3,7 @@ VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 /cast [@mouseover,exists,nodead][help][] Healing Touch
 END
 VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
-#showtooltip
-/startattack
+#showtooltip [stealth]Pounce;[form:0][form:4]Wrath;[form:1]Maul;[form:3]Claw
 /cast [stealth] Pounce
 /cast [form:0][form:4] Wrath
 /cast [form:1] Maul
@@ -26,7 +25,7 @@ VER 3 0000000001000007 " " "134400"
 /cast Dash
 END
 VER 3 0000000001000009 " " "134400"
-#showtooltip
+#showtooltip [stealth]Ravage;[form:1]Swipe;[form:3]Shred;[form:0][form:4]Moonfire
 /cast [stealth] Ravage
 /cast [form:0][form:4] Moonfire
 /cast [form:1] Swipe
@@ -70,4 +69,10 @@ VER 3 0000000001000015 " " "134400"
 /cancelform [noform:1]
 /cast [form:1] Bear Form
 /cast [noform:1] !Bear Form
+END
+VER 3 0000000001000016 " " "134400"
+#showtooltip Cat Form
+/cancelform [noform:3]
+/cast [form:3] Cat Form
+/cast [noform:3] !Cat Form
 END
