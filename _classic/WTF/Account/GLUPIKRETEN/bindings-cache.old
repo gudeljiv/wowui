@@ -146,3 +146,4 @@ bind J CLICK RingMenuToggleRing1:LeftButton
 bind ALT-G Open/Close LFGBulletinBoard
 bind ALT-S CLICK RingMenuRingFrame1Button5:1
 bind SHIFT-S CLICK RingMenuRingFrame1Button6:1
+bind ALT-Q CLICK MyBindingLootHelper:LeftButton

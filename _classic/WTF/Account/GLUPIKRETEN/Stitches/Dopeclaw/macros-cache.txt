@@ -34,9 +34,9 @@ VER 3 0000000001000009 " " "134400"
 /cast [form:3] Shred
 END
 VER 3 000000000100000B " " "134400"
-#showtoltip 
+#showtooltip
 /startattack [form:1][form:3]
-/cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][] Regrowth
+/cast [stealth] Pounce; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][]Regrowth
 END
 VER 3 000000000100000C " " "INV_Misc_QuestionMark"
 #showtooltip
