@@ -11,12 +11,11 @@ _Config.lua
 _Core.lua
 _Debug.lua
 
+Frames/_Misc_Frames.lua
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
-Frames/FramerateFrame.lua
-Frames/GameTimeFrame.lua
 Frames/GameTooltip.lua
 Frames/GameTooltipStatusBar.lua
 Frames/GroopLootFrame.lua
@@ -31,7 +30,6 @@ Frames/QuestTimerFrame.lua
 Frames/RaidFrames.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
-Frames/TimeManagerFrame.lua
 Frames/TradeSkillReagentFrame.lua
 Frames/Unit.lua
 

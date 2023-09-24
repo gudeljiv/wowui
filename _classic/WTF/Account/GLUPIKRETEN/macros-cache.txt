@@ -17,15 +17,15 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:7097
+/use item:117
 END
 VER 3 0000000000000023 "IR" "132093"
 /itemrack toggle dps,heal
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:5503
 /cast feed pet
-/use item:3770
+/use item:5503
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
