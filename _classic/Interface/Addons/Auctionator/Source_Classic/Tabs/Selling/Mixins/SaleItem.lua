@@ -520,7 +520,9 @@ function AuctionatorSaleItemMixin:SetQuantity()
     numStacks = 1
   end
 
-  if defaultStacks.numStacks == 0 then
+  if self.itemInfo.count == 0 then
+    self.Stacks.NumStacks:SetNumber(0)
+  elseif defaultStacks.numStacks == 0 then
     self.Stacks.NumStacks:SetNumber(numStacks)
   else
     self.Stacks.NumStacks:SetNumber(math.min(numStacks, defaultStacks.numStacks))
@@ -531,7 +533,9 @@ end
 
 function AuctionatorSaleItemMixin:DisplayMaxNumStacks()
   local numStacks = math.floor(self.itemInfo.count / self:GetStackSize())
-  if numStacks == 0 or self:GetStackSize() == 0 then
+  if self:GetStackSize() == 0 then
+    numStacks = 0
+  elseif numStacks == 0 then
     numStacks = 1
   end
 
@@ -645,7 +649,7 @@ function AuctionatorSaleItemMixin:GetConfirmationMessage()
   local itemInfo = { GetItemInfo(self.itemInfo.itemLink) }
   local vendorPrice = itemInfo[Auctionator.Constants.ITEM_INFO.SELL_PRICE]
   if Auctionator.Utilities.IsVendorable(itemInfo) and
-     vendorPrice * self:GetStackSize() * self:GetNumStacks() + self:GetDeposit()
+     vendorPrice * self:GetStackSize() * self:GetNumStacks()
        > math.floor(effectiveUnitPrice * self:GetStackSize() * self:GetNumStacks() * Auctionator.Constants.AfterAHCut) then
     return AUCTIONATOR_L_CONFIRM_POST_BELOW_VENDOR
   end

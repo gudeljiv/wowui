@@ -4,10 +4,10 @@ OmniCCDB = {
 		["Dopede - Stitches"] = "Default",
 		["Dopesnare - Stitches"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
-		["Dopesick - Stitches"] = "Default",
+		["Dopecure - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
 		["Dopeah - Stitches"] = "Default",
-		["Dopecure - Stitches"] = "Default",
+		["Dopesick - Stitches"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,
@@ -119,17 +119,18 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["effect"] = "pulse",
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["minEffectDuration"] = 30,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -224,18 +225,16 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["minEffectDuration"] = 30,
-			["yOff"] = 0,
 			["minDuration"] = 3,
+			["scaleText"] = true,
 		},
 	},
-	["version"] = "8.1.1",
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -246,4 +245,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+	["engine"] = "AniUpdater",
 }

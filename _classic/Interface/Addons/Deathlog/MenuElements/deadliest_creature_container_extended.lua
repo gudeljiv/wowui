@@ -40,7 +40,7 @@ local function createDeadliestCreaturesEntry()
 
 	frame.creature_name = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	frame.creature_name:SetPoint("LEFT", frame, "LEFT", 10, 0)
-	frame.creature_name:SetFont("Fonts\\FRIZQT__.TTF", 14, "OUTLINE")
+	frame.creature_name:SetFont(L.deadliest_creature_container_font, 14, "OUTLINE")
 	frame.creature_name:SetTextColor(0.9, 0.9, 0.9)
 	frame.creature_name:SetText("AAA")
 	frame.creature_name:Show()
@@ -73,6 +73,15 @@ local function createDeadliestCreaturesEntry()
 
 	return frame
 end
+
+local environment_damage = {
+	[-2] = "Drowning",
+	[-3] = "Falling",
+	[-4] = "Fatigue",
+	[-5] = "Fire",
+	[-6] = "Lava",
+	[-7] = "Slime",
+}
 local deadliest_creatures_textures = {}
 for i = 1, max_row_num do
 	deadliest_creatures_textures[i] = createDeadliestCreaturesEntry()
@@ -83,7 +92,7 @@ if deadliest_creatures_container.heading == nil then
 	deadliest_creatures_container.heading =
 		deadliest_creatures_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	deadliest_creatures_container.heading:SetText("Deadliest Creatures")
-	deadliest_creatures_container.heading:SetFont("Fonts\\FRIZQT__.TTF", 18, "")
+	deadliest_creatures_container.heading:SetFont(L.deadliest_creature_container_font, 18, "")
 	deadliest_creatures_container.heading:SetJustifyV("TOP")
 	deadliest_creatures_container.heading:SetTextColor(0.9, 0.9, 0.9)
 	deadliest_creatures_container.heading:SetPoint("TOP", deadliest_creatures_container, "TOP", 0, 20)
@@ -94,7 +103,7 @@ if deadliest_creatures_container.page_str == nil then
 	deadliest_creatures_container.page_str =
 		deadliest_creatures_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	deadliest_creatures_container.page_str:SetText("Page " .. page_number)
-	deadliest_creatures_container.page_str:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	deadliest_creatures_container.page_str:SetFont(L.deadliest_creature_container_font, 14, "")
 	deadliest_creatures_container.page_str:SetJustifyV("BOTTOM")
 	deadliest_creatures_container.page_str:SetJustifyH("CENTER")
 	deadliest_creatures_container.page_str:SetTextColor(0.7, 0.7, 0.7)
@@ -145,7 +154,7 @@ if deadliest_creatures_container.heading_description == nil then
 	deadliest_creatures_container.heading_description =
 		deadliest_creatures_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	deadliest_creatures_container.heading_description:SetText("Click to view stats.")
-	deadliest_creatures_container.heading_description:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.heading_description:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.heading_description:SetJustifyV("TOP")
 	deadliest_creatures_container.heading_description:SetTextColor(0.6, 0.6, 0.6)
 	deadliest_creatures_container.heading_description:SetPoint(
@@ -219,7 +228,7 @@ function deadliest_creatures_container.updateMenuElement(
 	end
 
 	deadliest_creatures_container.sort_by_text:SetPoint("TOPLEFT", deadliest_creatures_container, "TOPLEFT", 0, -8)
-	deadliest_creatures_container.sort_by_text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.sort_by_text:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.sort_by_text:SetTextColor(255 / 255, 215 / 255, 0)
 	deadliest_creatures_container.sort_by_text:SetText("Sort Metric")
 	deadliest_creatures_container.sort_by_text:SetJustifyH("LEFT")
@@ -237,7 +246,7 @@ function deadliest_creatures_container.updateMenuElement(
 		150,
 		-8
 	)
-	deadliest_creatures_container.sort_by_class_text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.sort_by_class_text:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.sort_by_class_text:SetTextColor(255 / 255, 215 / 255, 0)
 	deadliest_creatures_container.sort_by_class_text:SetText("Against Class")
 	deadliest_creatures_container.sort_by_class_text:SetJustifyH("LEFT")
@@ -341,7 +350,7 @@ function deadliest_creatures_container.updateMenuElement(
 	deadliest_creatures_container.player_search_box:SetPoint("TOP", deadliest_creatures_container, "TOP", 75, -20)
 	deadliest_creatures_container.player_search_box:SetPoint("BOTTOM", deadliest_creatures_container, "TOP", 75, -50)
 	deadliest_creatures_container.player_search_box:SetWidth(130)
-	deadliest_creatures_container.player_search_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	deadliest_creatures_container.player_search_box:SetFont(L.deadliest_creature_container_font, 14, "")
 	deadliest_creatures_container.player_search_box:SetMovable(false)
 	deadliest_creatures_container.player_search_box:SetBlinkSpeed(1)
 	deadliest_creatures_container.player_search_box:SetAutoFocus(false)
@@ -366,7 +375,7 @@ function deadliest_creatures_container.updateMenuElement(
 		0,
 		15
 	)
-	deadliest_creatures_container.player_search_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.player_search_box.text:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.player_search_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	deadliest_creatures_container.player_search_box.text:SetText("Name Filter")
 	deadliest_creatures_container.player_search_box.text:Show()
@@ -374,7 +383,7 @@ function deadliest_creatures_container.updateMenuElement(
 	deadliest_creatures_container.lvl_min_search_box:SetPoint("TOP", deadliest_creatures_container, "TOP", 170, -20)
 	deadliest_creatures_container.lvl_min_search_box:SetPoint("BOTTOM", deadliest_creatures_container, "TOP", 170, -50)
 	deadliest_creatures_container.lvl_min_search_box:SetWidth(45)
-	deadliest_creatures_container.lvl_min_search_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	deadliest_creatures_container.lvl_min_search_box:SetFont(L.deadliest_creature_container_font, 14, "")
 	deadliest_creatures_container.lvl_min_search_box:SetMovable(false)
 	deadliest_creatures_container.lvl_min_search_box:SetBlinkSpeed(1)
 	deadliest_creatures_container.lvl_min_search_box:SetAutoFocus(false)
@@ -409,7 +418,7 @@ function deadliest_creatures_container.updateMenuElement(
 		0,
 		15
 	)
-	deadliest_creatures_container.lvl_min_search_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.lvl_min_search_box.text:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.lvl_min_search_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	deadliest_creatures_container.lvl_min_search_box.text:SetText("Min. Lvl.")
 	deadliest_creatures_container.lvl_min_search_box.text:Show()
@@ -417,7 +426,7 @@ function deadliest_creatures_container.updateMenuElement(
 	deadliest_creatures_container.lvl_max_search_box:SetPoint("TOP", deadliest_creatures_container, "TOP", 220, -20)
 	deadliest_creatures_container.lvl_max_search_box:SetPoint("BOTTOM", deadliest_creatures_container, "TOP", 220, -50)
 	deadliest_creatures_container.lvl_max_search_box:SetWidth(45)
-	deadliest_creatures_container.lvl_max_search_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	deadliest_creatures_container.lvl_max_search_box:SetFont(L.deadliest_creature_container_font, 14, "")
 	deadliest_creatures_container.lvl_max_search_box:SetMovable(false)
 	deadliest_creatures_container.lvl_max_search_box:SetBlinkSpeed(1)
 	deadliest_creatures_container.lvl_max_search_box:SetText(max_lvl)
@@ -452,7 +461,7 @@ function deadliest_creatures_container.updateMenuElement(
 		0,
 		15
 	)
-	deadliest_creatures_container.lvl_max_search_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.lvl_max_search_box.text:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.lvl_max_search_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	deadliest_creatures_container.lvl_max_search_box.text:SetText("Max. Lvl.")
 	deadliest_creatures_container.lvl_max_search_box.text:Show()
@@ -504,7 +513,7 @@ function deadliest_creatures_container.updateMenuElement(
 		GameTooltip:Hide()
 	end)
 
-	deadliest_creatures_container.normalized_metric_desc:SetFont("Fonts\\FRIZQT__.TTF", 14, "OUTLINE")
+	deadliest_creatures_container.normalized_metric_desc:SetFont(L.deadliest_creature_container_font, 14, "OUTLINE")
 	deadliest_creatures_container.normalized_metric_desc:SetTextColor(0.8, 0.8, 0.8)
 	deadliest_creatures_container.normalized_metric_desc:SetText("Mouseover for\nmetric details")
 	deadliest_creatures_container.normalized_metric_desc:SetPoint(
@@ -539,10 +548,17 @@ function deadliest_creatures_container.updateMenuElement(
 	end
 
 	if filter == nil then
-		filtered_most_deadly_units = most_deadly_units
+		for k, v in ipairs(most_deadly_units) do
+			if v[1] ~= -1 then
+				filtered_most_deadly_units[#filtered_most_deadly_units + 1] = v
+			end
+		end
 	else
 		for k, v in ipairs(most_deadly_units) do
-			if filter(id_to_npc[v[1]]) and lvlFunction(_stats["all"]["all"]["all"][v[1]]["avg_lvl"]) then
+			if
+				filter(id_to_npc[v[1]] or environment_damage[v[1]])
+				and lvlFunction(_stats["all"]["all"]["all"][v[1]]["avg_lvl"])
+			then
 				filtered_most_deadly_units[#filtered_most_deadly_units + 1] = v
 			end
 		end
@@ -572,7 +588,13 @@ function deadliest_creatures_container.updateMenuElement(
 				deadliest_creatures_textures[i]:SetBackgroundWidth(
 					deadliest_creatures_container:GetWidth() * filtered_most_deadly_units[idx][2] / max_kills
 				)
-				deadliest_creatures_textures[i]:SetCreatureName(id_to_npc[filtered_most_deadly_units[idx][1]])
+				if id_to_npc[filtered_most_deadly_units[idx][1]] ~= nil then
+					deadliest_creatures_textures[i]:SetCreatureName(id_to_npc[filtered_most_deadly_units[idx][1]])
+				elseif environment_damage[filtered_most_deadly_units[idx][1]] ~= nil then
+					deadliest_creatures_textures[i]:SetCreatureName(
+						environment_damage[filtered_most_deadly_units[idx][1]]
+					)
+				end
 				deadliest_creatures_textures[i]:SetNumKills(filtered_most_deadly_units[idx][2], metric)
 				if valid_map then
 					deadliest_creatures_textures[i]:SetScript("OnMouseDown", function()

@@ -108,7 +108,7 @@ ARKai_T.ttf			AR ZhongkaiGBK Medium			X		-		X		X		X
 bHEI00M.ttf			AR Heiti2 Medium B5				-		-		-		-		X
 bHEI01B.ttf			AR Heiti2 Bold B5				-		-		-		-		X
 bKAI00M.ttf			AR Kaiti Medium B5				-		-		-		-		X
-FRIZQT__.TTF			AR Leisu Demi B5				-		-		-		-		X
+bLEI00D.ttf			AR Leisu Demi B5				-		-		-		-		X
 FRIZQT__.TTF		Friz Quadrata TT				X		-		-		-		-
 FRIZQT___CYR.TTF	FrizQuadrataCTT					x		-		X		-		-
 K_Damage.TTF		YDIWingsM						-		X		X		-		-
@@ -148,7 +148,7 @@ elseif locale == "zhTW" then
 	SML_MT_font["提示訊息"]		= [[Fonts\bHEI00M.ttf]]
 	SML_MT_font["聊天"]			= [[Fonts\bHEI01B.ttf]]
 	SML_MT_font["傷害數字"]		= [[Fonts\bKAI00M.ttf]]
-	SML_MT_font["預設"]			= [[Fonts\FRIZQT__.TTF]]
+	SML_MT_font["預設"]			= [[Fonts\bLEI00D.ttf]]
 --
 	lib.DefaultMedia["font"] = "預設" -- someone from zhTW please adjust if needed
 

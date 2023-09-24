@@ -29,3 +29,5 @@ xVermin.CheckIfLoadedWithTimer(
 		FramerateLabel:SetPoint("TOP", CustomContainer_Combat, "TOP", -15, -22)
 	end
 )
+
+CharacterRangedSlotCount:SetScale(0.75)

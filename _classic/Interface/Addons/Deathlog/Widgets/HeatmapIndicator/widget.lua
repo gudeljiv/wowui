@@ -19,7 +19,7 @@ heatmap_indicator_frame.tex:Show()
 
 heatmap_indicator_frame.numeric_text = heatmap_indicator_frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 heatmap_indicator_frame.numeric_text:SetText("")
-heatmap_indicator_frame.numeric_text:SetFont("Fonts\\FRIZQT__.TTF", 10, "")
+heatmap_indicator_frame.numeric_text:SetFont(L.menu_font, 10, "")
 heatmap_indicator_frame.numeric_text:SetJustifyH("CENTER")
 heatmap_indicator_frame.numeric_text:SetParent(heatmap_indicator_frame)
 heatmap_indicator_frame.numeric_text:SetPoint("BOTTOM", heatmap_indicator_frame, "BOTTOM", 0, 0)
@@ -32,7 +32,6 @@ function updateHeatmap(map_id)
 		return
 	end
 	last_calculated_map_id = map_id
-	_skull_locs = precomputed_skull_locs
 	if heatmap_indicator_frame.heatmap == nil then
 		heatmap_indicator_frame.heatmap = {}
 		for i = 1, 100 do
@@ -66,28 +65,28 @@ function updateHeatmap(map_id)
 		},
 	}
 	local max_intensity = 0
-	if _skull_locs[map_id] then
-		for idx, v in ipairs(_skull_locs[map_id]) do
-			local x = ceil(v[1] / 10)
-			local y = ceil(v[2] / 10)
-			for xi = 1, 3 do
-				for yj = 1, 3 do
-					local x_in_map = x - 2 + xi
-					local y_in_map = y - 2 + yj
-					if
-						heatmap_indicator_frame.heatmap[x_in_map]
-						and heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
-					then
-						heatmap_indicator_frame.heatmap[x_in_map][y_in_map] = heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
-							+ iv[xi][yj]
-						if heatmap_indicator_frame.heatmap[x_in_map][y_in_map] > max_intensity then
-							max_intensity = heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
-						end
-					end
-				end
-			end
-		end
-	end
+	-- if _skull_locs[map_id] then
+	-- 	for idx, v in ipairs(_skull_locs[map_id]) do
+	-- 		local x = ceil(v[1] / 10)
+	-- 		local y = ceil(v[2] / 10)
+	-- 		for xi = 1, 3 do
+	-- 			for yj = 1, 3 do
+	-- 				local x_in_map = x - 2 + xi
+	-- 				local y_in_map = y - 2 + yj
+	-- 				if
+	-- 					heatmap_indicator_frame.heatmap[x_in_map]
+	-- 					and heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
+	-- 				then
+	-- 					heatmap_indicator_frame.heatmap[x_in_map][y_in_map] = heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
+	-- 						+ iv[xi][yj]
+	-- 					if heatmap_indicator_frame.heatmap[x_in_map][y_in_map] > max_intensity then
+	-- 						max_intensity = heatmap_indicator_frame.heatmap[x_in_map][y_in_map]
+	-- 					end
+	-- 				end
+	-- 			end
+	-- 		end
+	-- 	end
+	-- end
 
 	for i = 1, 100 do
 		for j = 1, 100 do

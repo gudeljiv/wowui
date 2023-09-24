@@ -11,10 +11,10 @@ WeakAurasOptionsSaved = {
 	["lockPositions"] = false,
 	["spellCacheAchivements"] = true,
 	["frame"] = {
-		["xOffset"] = 1765.668334960938,
+		["xOffset"] = 1697.731811523438,
 		["width"] = 1147.839599609375,
 		["height"] = 1025.111694335938,
-		["yOffset"] = 1229.174682617188,
+		["yOffset"] = 1296.476318359375,
 	},
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {

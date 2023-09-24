@@ -20,78 +20,14 @@ along with the Deathlog AddOn. If not, see <http://www.gnu.org/licenses/>.
 --
 --
 
-deathlog_instance_tbl = {
-	["Shadowfang Keep"] = 33,
-	["Stormwind Stockade"] = 34,
-	["Deadmines"] = 36,
-	["Wailing Caverns"] = 43,
-	["Razorfen Kraul"] = 47,
-	["Blackfathom Deeps"] = 48,
-	["Uldaman"] = 70,
-	["Gnomeregan"] = 90,
-	["Sunken Temple"] = 109,
-	["Razorfen Downs"] = 129,
-	["Scarlet Monastery"] = 189,
-	["Zul'Farrak"] = 209,
-	["Blackrock Spire"] = 229,
-	["Blackrock Depths"] = 230,
-	["Scholomance"] = 289,
-	["Stratholme"] = 329,
-	["Maraudon"] = 349,
-	["Ragefire Chasm"] = 389,
-	["Dire Maul"] = 429,
-}
+deathlog_instance_tbl = L.instance_tbl
 
 deathlog_id_to_instance_tbl = {}
 for k, v in pairs(deathlog_instance_tbl) do
 	deathlog_id_to_instance_tbl[v] = k
 end
 
-deathlog_zone_tbl = {
-	["Azeroth"] = 947,
-	["Durotar"] = 1411,
-	["Mulgore"] = 1412,
-	["The Barrens"] = 1413,
-	["Kalimdor"] = 1414,
-	["Eastern Kingdoms"] = 1415,
-	["Alterac Mountains"] = 1416,
-	["Arathi Highlands"] = 1417,
-	["Badlands"] = 1418,
-	["Blasted Lands"] = 1419,
-	["Tirisfal Glades"] = 1420,
-	["Silverpine Forest"] = 1421,
-	["Western Plaguelands"] = 1422,
-	["Eastern Plaguelands"] = 1423,
-	["Hillsbrad Foothills"] = 1424,
-	["The Hinterlands"] = 1425,
-	["Dun Morogh"] = 1426,
-	["Searing Gorge"] = 1427,
-	["Burning Steppes"] = 1428,
-	["Elwynn Forest"] = 1429,
-	["Deadwind Pass"] = 1430,
-	["Duskwood"] = 1431,
-	["Loch Modan"] = 1432,
-	["Redridge Mountains"] = 1433,
-	["Stranglethorn Vale"] = 1434,
-	["Swamp of Sorrows"] = 1435,
-	["Westfall"] = 1436,
-	["Wetlands"] = 1437,
-	["Teldrassil"] = 1438,
-	["Darkshore"] = 1439,
-	["Ashenvale"] = 1440,
-	["Thousand Needles"] = 1441,
-	["Stonetalon Mountains"] = 1442,
-	["Desolace"] = 1443,
-	["Feralas"] = 1444,
-	["Dustwallow Marsh"] = 1445,
-	["Tanaris"] = 1446,
-	["Azshara"] = 1447,
-	["Felwood"] = 1448,
-	["Un'Goro Crater"] = 1449,
-	["Moonglade"] = 1450,
-	["Silithus"] = 1451,
-	["Winterspring"] = 1452,
-}
+deathlog_zone_tbl = L.deathlog_zone_tbl
 
 deathlog_class_tbl = {
 	["Warrior"] = 1,
@@ -103,6 +39,15 @@ deathlog_class_tbl = {
 	["Mage"] = 8,
 	["Warlock"] = 9,
 	["Druid"] = 11,
+}
+
+local environment_damage = {
+	[-2] = "Drowning",
+	[-3] = "Falling",
+	[-4] = "Fatigue",
+	[-5] = "Fire",
+	[-6] = "Lava",
+	[-7] = "Slime",
 }
 
 deathlog_class_colors = {}
@@ -362,7 +307,9 @@ function deathlogGetOrdered(stats, parameters)
 			for _, v in ipairs(post_parameters) do
 				postfix_stats = postfix_stats[v]
 			end
-			table.insert(unordered_list, { k, postfix_stats["num_entries"] })
+			if k ~= -1 then
+				table.insert(unordered_list, { k, postfix_stats["num_entries"] })
+			end
 		end
 	end
 	for i, v in
@@ -632,4 +579,101 @@ function deathlog_calculateSkullLocs(_deathlog_data)
 		end
 	end
 	return skull_locs
+end
+
+function deathlog_setTooltipFromEntry(_entry)
+	if _entry == nil then
+		return
+	end
+	local _name = _entry["name"]
+	local _level = _entry["level"]
+	local _guild = _entry["guild"]
+	local _race = nil
+	local _class = nil
+	local _source = id_to_npc[_entry["source_id"]] or environment_damage[_entry["source_id"]] or nil
+	local _zone = nil
+	local _loc = _entry["map_pos"]
+	local _date = nil
+	if _entry["date"] then
+		_date = date("%m/%d/%y", _entry["date"])
+	end
+	local _last_words = nil
+	if _entry["last_words"] ~= nil and not _entry["last_words"]:match("^%s*$") then
+		_last_words = _entry["last_words"]
+	end
+
+	if _entry["race_id"] ~= nil then
+		local race_info = C_CreatureInfo.GetRaceInfo(_entry["race_id"])
+		if race_info then
+			_race = race_info.raceName
+		end
+	end
+
+	if _entry["class_id"] ~= nil then
+		local class_str, _, _ = GetClassInfo(_entry["class_id"])
+		if class_str then
+			_class = class_str
+		end
+	end
+
+	if _entry["map_id"] then
+		local map_info = C_Map.GetMapInfo(_entry["map_id"])
+		if map_info then
+			_zone = map_info.name
+		end
+	elseif _entry["instance_id"] then
+		_zone = (deathlog_id_to_instance_tbl[_entry["instance_id"]] or _entry["instance_id"])
+	end
+	deathlog_setTooltip(_name, _level, _guild, _race, _class, _source, _zone, _date, _last_words)
+end
+
+function deathlog_setTooltip(_name, _lvl, _guild, _race, _class, _source, _zone, _date, _last_words)
+	if _name == nil or _lvl == nil then
+		return
+	end
+	if string.sub(_name, #_name) == "s" then
+		GameTooltip:AddDoubleLine(_name .. "' Death", "Lvl. " .. _lvl, 1, 1, 1, 0.5, 0.5, 0.5)
+	else
+		GameTooltip:AddDoubleLine(_name .. "'s Death", "Lvl. " .. _lvl, 1, 1, 1, 0.5, 0.5, 0.5)
+	end
+
+	if deathlog_settings["minilog"]["tooltip_name"] and _name then
+		GameTooltip:AddLine("Name: " .. _name, 1, 1, 1)
+	end
+	if deathlog_settings["minilog"]["tooltip_guild"] and _guild then
+		GameTooltip:AddLine("Guild: " .. _guild, 1, 1, 1)
+	end
+
+	if deathlog_settings["minilog"]["tooltip_race"] and _race then
+		GameTooltip:AddLine("Race: " .. _race, 1, 1, 1)
+	end
+
+	if deathlog_settings["minilog"]["tooltip_class"] and _class then
+		GameTooltip:AddLine("Class: " .. _class, 1, 1, 1)
+	end
+	if deathlog_settings["colored_tooltips"] == nil or deathlog_settings["colored_tooltips"] == false then
+		if deathlog_settings["minilog"]["tooltip_killedby"] and _source then
+			GameTooltip:AddLine("Killed by: " .. _source, 1, 1, 1)
+		end
+		if deathlog_settings["minilog"]["tooltip_zone"] and _zone then
+			GameTooltip:AddLine("Zone/Instance: " .. _zone, 1, 1, 1)
+		end
+	else
+		if deathlog_settings["minilog"]["tooltip_killedby"] and _source then
+			GameTooltip:AddLine("Killed by: |cfffda172" .. _source .. "|r", 1, 1, 1)
+		end
+		if deathlog_settings["minilog"]["tooltip_zone"] and _zone then
+			GameTooltip:AddLine("Zone/Instance: |cff9fe2bf" .. _zone .. "|r", 1, 1, 1)
+		end
+	end
+
+	if deathlog_settings["minilog"]["tooltip_date"] and _date then
+		GameTooltip:AddLine("Date: " .. _date, 1, 1, 1)
+	end
+
+	if deathlog_settings["minilog"]["tooltip_lastwords"] then
+		if _last_words and _last_words ~= "" then
+			GameTooltip:AddLine("Last words: " .. _last_words, 1, 1, 0, true)
+		end
+	end
 end

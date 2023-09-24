@@ -117,7 +117,14 @@ Anchor: CENTER
 X: 2
 Y: 317
 W: 330
-H: 127
+H: 125
+Frame: WeakAurasOptions
+FrameLevel: 1
+Anchor: CENTER
+X: -9
+Y: 75
+W: 1148
+H: 1025
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

@@ -23,11 +23,16 @@ local _menu_height = 600
 local current_map_id = nil
 local max_rows = 25
 local page_number = 1
+local environment_damage = {
+	[-2] = "Drowning",
+	[-3] = "Falling",
+	[-4] = "Fatigue",
+	[-5] = "Fire",
+	[-6] = "Lava",
+	[-7] = "Slime",
+}
 
-local main_font = "Fonts\\FRIZQT__.TTF"
-if GetLocale() == "ruRU" then
-	main_font = "Fonts\\ARIALN.TTF"
-end
+local main_font = L.main_font
 
 local deathlog_tabcontainer = nil
 
@@ -120,9 +125,9 @@ end)
 local subtitle_data = {
 	{
 		"Date",
-		60,
+		105,
 		function(_entry, _server_name)
-			return date("%m/%d/%y", _entry["date"]) or ""
+			return date("%m/%d/%y, %H:%M", _entry["date"]) or ""
 		end,
 	},
 	{
@@ -190,7 +195,7 @@ local subtitle_data = {
 		"Death Source",
 		140,
 		function(_entry, _server_name)
-			return id_to_npc[_entry["source_id"]] or ""
+			return id_to_npc[_entry["source_id"]] or environment_damage[_entry["source_id"]] or ""
 		end,
 	},
 	{
@@ -309,7 +314,6 @@ end
 local _deathlog_data = {}
 local _stats = {}
 local _log_normal_params = {}
-local _skull_locs = {}
 local initialized = false
 
 local function drawLogTab(container)
@@ -424,7 +428,7 @@ local function drawLogTab(container)
 	end
 
 	font_container.server_dd.text:SetPoint("LEFT", font_container.server_dd, "LEFT", 20, 20)
-	font_container.server_dd.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.server_dd.text:SetFont(L.menu_font, 12, "")
 	font_container.server_dd.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.server_dd.text:SetText("Server")
 	font_container.server_dd.text:Show()
@@ -487,7 +491,7 @@ local function drawLogTab(container)
 	end
 
 	font_container.race_dd.text:SetPoint("LEFT", font_container.race_dd, "LEFT", 20, 20)
-	font_container.race_dd.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.race_dd.text:SetFont(L.menu_font, 12, "")
 	font_container.race_dd.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.race_dd.text:SetText("Race")
 	font_container.race_dd.text:Show()
@@ -550,7 +554,7 @@ local function drawLogTab(container)
 	end
 
 	font_container.class_dd.text:SetPoint("LEFT", font_container.class_dd, "LEFT", 20, 20)
-	font_container.class_dd.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.class_dd.text:SetFont(L.menu_font, 12, "")
 	font_container.class_dd.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.class_dd.text:SetText("Class")
 	font_container.class_dd.text:Show()
@@ -626,7 +630,7 @@ local function drawLogTab(container)
 	end
 
 	font_container.zone_dd.text:SetPoint("LEFT", font_container.zone_dd, "LEFT", 20, 20)
-	font_container.zone_dd.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.zone_dd.text:SetFont(L.menu_font, 12, "")
 	font_container.zone_dd.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.zone_dd.text:SetText("Zone")
 	font_container.zone_dd.text:Show()
@@ -692,7 +696,7 @@ local function drawLogTab(container)
 	end
 
 	font_container.instance_dd.text:SetPoint("LEFT", font_container.instance_dd, "LEFT", 20, 20)
-	font_container.instance_dd.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.instance_dd.text:SetFont(L.menu_font, 12, "")
 	font_container.instance_dd.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.instance_dd.text:SetText("Dungeon")
 	font_container.instance_dd.text:Show()
@@ -707,7 +711,7 @@ local function drawLogTab(container)
 	font_container.min_level_box:SetPoint("TOPLEFT", font_container.instance_dd, "TOPRIGHT", 0, 0)
 	font_container.min_level_box:SetPoint("BOTTOMLEFT", font_container.instance_dd, "TOPRIGHT", 0, -30)
 	font_container.min_level_box:SetWidth(50)
-	font_container.min_level_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	font_container.min_level_box:SetFont(L.menu_font, 14, "")
 	font_container.min_level_box:SetMovable(false)
 	font_container.min_level_box:SetBlinkSpeed(1)
 	font_container.min_level_box:SetAutoFocus(false)
@@ -732,7 +736,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.min_level_box.text:SetPoint("LEFT", font_container.min_level_box, "LEFT", 0, 15)
-	font_container.min_level_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.min_level_box.text:SetFont(L.menu_font, 12, "")
 	font_container.min_level_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.min_level_box.text:SetText("Min. Lvl")
 	font_container.min_level_box.text:Show()
@@ -747,7 +751,7 @@ local function drawLogTab(container)
 	font_container.max_level_box:SetPoint("TOPLEFT", font_container.min_level_box, "TOPRIGHT", 5, 0)
 	font_container.max_level_box:SetPoint("BOTTOMLEFT", font_container.min_level_box, "TOPRIGHT", 5, -30)
 	font_container.max_level_box:SetWidth(50)
-	font_container.max_level_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	font_container.max_level_box:SetFont(L.menu_font, 14, "")
 	font_container.max_level_box:SetMovable(false)
 	font_container.max_level_box:SetBlinkSpeed(1)
 	font_container.max_level_box:SetAutoFocus(false)
@@ -772,7 +776,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.max_level_box.text:SetPoint("LEFT", font_container.max_level_box, "LEFT", 0, 15)
-	font_container.max_level_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.max_level_box.text:SetFont(L.menu_font, 12, "")
 	font_container.max_level_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.max_level_box.text:SetText("Max. Lvl")
 	font_container.max_level_box.text:Show()
@@ -787,7 +791,7 @@ local function drawLogTab(container)
 	font_container.player_search_box:SetPoint("TOPLEFT", font_container.max_level_box, "TOPRIGHT", 5, 0)
 	font_container.player_search_box:SetPoint("BOTTOMLEFT", font_container.max_level_box, "TOPRIGHT", 5, -30)
 	font_container.player_search_box:SetWidth(100)
-	font_container.player_search_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	font_container.player_search_box:SetFont(L.menu_font, 14, "")
 	font_container.player_search_box:SetMovable(false)
 	font_container.player_search_box:SetBlinkSpeed(1)
 	font_container.player_search_box:SetAutoFocus(false)
@@ -813,7 +817,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.player_search_box.text:SetPoint("LEFT", font_container.player_search_box, "LEFT", 0, 15)
-	font_container.player_search_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.player_search_box.text:SetFont(L.menu_font, 12, "")
 	font_container.player_search_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.player_search_box.text:SetText("Player Name")
 	font_container.player_search_box.text:Show()
@@ -828,7 +832,7 @@ local function drawLogTab(container)
 	font_container.guild_search_box:SetPoint("TOPLEFT", font_container.player_search_box, "TOPRIGHT", 5, 0)
 	font_container.guild_search_box:SetPoint("BOTTOMLEFT", font_container.player_search_box, "TOPRIGHT", 5, -30)
 	font_container.guild_search_box:SetWidth(100)
-	font_container.guild_search_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	font_container.guild_search_box:SetFont(L.menu_font, 14, "")
 	font_container.guild_search_box:SetMovable(false)
 	font_container.guild_search_box:SetBlinkSpeed(1)
 	font_container.guild_search_box:SetAutoFocus(false)
@@ -854,7 +858,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.guild_search_box.text:SetPoint("LEFT", font_container.guild_search_box, "LEFT", 0, 15)
-	font_container.guild_search_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.guild_search_box.text:SetFont(L.menu_font, 12, "")
 	font_container.guild_search_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.guild_search_box.text:SetText("Guild Name")
 	font_container.guild_search_box.text:Show()
@@ -869,7 +873,7 @@ local function drawLogTab(container)
 	font_container.death_source_box:SetPoint("TOPLEFT", font_container.guild_search_box, "TOPRIGHT", 5, 0)
 	font_container.death_source_box:SetPoint("BOTTOMLEFT", font_container.guild_search_box, "TOPRIGHT", 5, -30)
 	font_container.death_source_box:SetWidth(100)
-	font_container.death_source_box:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	font_container.death_source_box:SetFont(L.menu_font, 14, "")
 	font_container.death_source_box:SetMovable(false)
 	font_container.death_source_box:SetBlinkSpeed(1)
 	font_container.death_source_box:SetAutoFocus(false)
@@ -898,7 +902,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.death_source_box.text:SetPoint("LEFT", font_container.death_source_box, "LEFT", 0, 15)
-	font_container.death_source_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.death_source_box.text:SetFont(L.menu_font, 12, "")
 	font_container.death_source_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.death_source_box.text:SetText("Death Source")
 	font_container.death_source_box.text:Show()
@@ -932,7 +936,7 @@ local function drawLogTab(container)
 	end)
 
 	font_container.last_words_check_box.text:SetPoint("LEFT", font_container.last_words_check_box, "LEFT", 21, 0)
-	font_container.last_words_check_box.text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	font_container.last_words_check_box.text:SetFont(L.menu_font, 12, "")
 	font_container.last_words_check_box.text:SetTextColor(255 / 255, 215 / 255, 0)
 	font_container.last_words_check_box.text:SetText("Last Words Only")
 	font_container.last_words_check_box.text:Show()
@@ -1054,23 +1058,7 @@ local function drawLogTab(container)
 			if font_strings[i] and font_strings[i]["Last Words"] then
 				_last_words = font_strings[i]["Last Words"]:GetText() or ""
 			end
-
-			if string.sub(_name, #_name) == "s" then
-				GameTooltip:AddDoubleLine(_name .. "' Death", "Lvl. " .. _level, 1, 1, 1, 0.5, 0.5, 0.5)
-			else
-				GameTooltip:AddDoubleLine(_name .. "'s Death", "Lvl. " .. _level, 1, 1, 1, 0.5, 0.5, 0.5)
-			end
-			GameTooltip:AddLine("Name: " .. _name, 1, 1, 1)
-			GameTooltip:AddLine("Guild: " .. _guild, 1, 1, 1)
-			GameTooltip:AddLine("Race: " .. _race, 1, 1, 1)
-			GameTooltip:AddLine("Class: " .. _class, 1, 1, 1)
-			GameTooltip:AddLine("Killed by: " .. _source, 1, 1, 1)
-			GameTooltip:AddLine("Zone/Instance: " .. _zone, 1, 1, 1)
-			GameTooltip:AddLine("Date: " .. _date, 1, 1, 1)
-			if _last_words and _last_words ~= "" then
-				GameTooltip:AddLine("Last words: " .. _last_words, 1, 1, 0, true)
-			end
-
+			deathlog_setTooltip(_name, _level, _guild, _race, _class, _source, _zone, _date, _last_words)
 			GameTooltip:Show()
 		end)
 
@@ -1083,7 +1071,7 @@ local function drawLogTab(container)
 	if font_container.page_str == nil then
 		font_container.page_str = font_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 		font_container.page_str:SetText("Page " .. page_number)
-		font_container.page_str:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+		font_container.page_str:SetFont(L.menu_font, 14, "")
 		font_container.page_str:SetJustifyV("BOTTOM")
 		font_container.page_str:SetJustifyH("CENTER")
 		font_container.page_str:SetTextColor(0.7, 0.7, 0.7)
@@ -1143,7 +1131,7 @@ local function drawLogTab(container)
 
 	-- 	local font_str = font_container.import_hc_button:GetFontString()
 	-- 	font_str:SetPoint("TOPLEFT", 12, -1)
-	-- 	font_str:SetFont("Fonts\\FRIZQT__.TTF", 16, "")
+	-- 	font_str:SetFont(L.menu_font, 16, "")
 	-- end
 
 	-- font_container.import_hc_button:SetScript("OnClick", function()
@@ -1174,7 +1162,7 @@ local function drawCreatureStatisticsTab(container)
 	local title_label = AceGUI:Create("Heading")
 	title_label:SetFullWidth(true)
 	title_label:SetText("Death Statistics - Azeroth")
-	title_label.label:SetFont("Fonts\\FRIZQT__.TTF", 24, "")
+	title_label.label:SetFont(L.menu_font, 24, "")
 	scroll_frame:AddChild(title_label)
 	local function modifyTitle(zone)
 		title_label:SetText("Death Statistics - " .. zone)
@@ -1183,7 +1171,7 @@ local function drawCreatureStatisticsTab(container)
 	local description_label = AceGUI:Create("Label")
 	description_label:SetFullWidth(true)
 	description_label:SetText("Death Statistics - Azeroth")
-	description_label.label:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	description_label.label:SetFont(L.menu_font, 14, "")
 	description_label.label:SetTextColor(0.6, 0.6, 0.6, 1.0)
 	description_label.label:SetJustifyH("CENTER")
 	scroll_frame:AddChild(description_label)
@@ -1217,7 +1205,6 @@ local function drawCreatureStatisticsTab(container)
 			modifyDescription(current_creature_id, name)
 		end
 		local stats_tbl = {
-			["skull_locs"] = _skull_locs,
 			["stats"] = _stats,
 			["log_normal_params"] = _log_normal_params,
 		}
@@ -1250,7 +1237,7 @@ local function drawStatisticsTab(container)
 	local title_label = AceGUI:Create("Heading")
 	title_label:SetFullWidth(true)
 	title_label:SetText("Death Statistics - Azeroth")
-	title_label.label:SetFont("Fonts\\FRIZQT__.TTF", 24, "")
+	title_label.label:SetFont(L.menu_font, 24, "")
 	scroll_frame:AddChild(title_label)
 	local function modifyTitle(zone)
 		title_label:SetText("Death Statistics - " .. zone)
@@ -1259,7 +1246,7 @@ local function drawStatisticsTab(container)
 	local description_label = AceGUI:Create("Label")
 	description_label:SetFullWidth(true)
 	description_label:SetText("Death Statistics - Azeroth")
-	description_label.label:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	description_label.label:SetFont(L.menu_font, 14, "")
 	description_label.label:SetTextColor(0.6, 0.6, 0.6, 1.0)
 	description_label.label:SetJustifyH("CENTER")
 	scroll_frame:AddChild(description_label)
@@ -1294,7 +1281,6 @@ local function drawStatisticsTab(container)
 			modifyDescription(map_id, name)
 		end
 		local stats_tbl = {
-			["skull_locs"] = _skull_locs,
 			["stats"] = _stats,
 			["log_normal_params"] = _log_normal_params,
 		}
@@ -1328,7 +1314,7 @@ local function drawClassStatisticsTab(container)
 	local title_label = AceGUI:Create("Heading")
 	title_label:SetFullWidth(true)
 	title_label:SetText("Death Statistics - Azeroth")
-	title_label.label:SetFont("Fonts\\FRIZQT__.TTF", 24, "")
+	title_label.label:SetFont(L.menu_font, 24, "")
 	scroll_frame:AddChild(title_label)
 	local function modifyTitle(zone)
 		title_label:SetText("Death Statistics - " .. zone)
@@ -1347,7 +1333,6 @@ local function drawClassStatisticsTab(container)
 			modifyTitle(name)
 		end
 		local stats_tbl = {
-			["skull_locs"] = _skull_locs,
 			["stats"] = _stats,
 			["log_normal_params"] = _log_normal_params,
 		}
@@ -1381,7 +1366,7 @@ local function drawInstanceStatisticsTab(container)
 	local title_label = AceGUI:Create("Heading")
 	title_label:SetFullWidth(true)
 	title_label:SetText("Death Statistics - Azeroth")
-	title_label.label:SetFont("Fonts\\FRIZQT__.TTF", 24, "")
+	title_label.label:SetFont(L.menu_font, 24, "")
 	scroll_frame:AddChild(title_label)
 	local function modifyTitle(zone)
 		title_label:SetText("Death Statistics - " .. zone)
@@ -1401,7 +1386,6 @@ local function drawInstanceStatisticsTab(container)
 			modifyTitle(name)
 		end
 		local stats_tbl = {
-			["skull_locs"] = _skull_locs,
 			["stats"] = _stats,
 			["log_normal_params"] = _log_normal_params,
 		}
@@ -1456,13 +1440,7 @@ local function createDeathlogMenu()
 	end
 
 	deathlog_tabcontainer = AceGUI:Create("DeathlogTabGroup") -- "InlineGroup" is also good
-	local tab_table = {
-		{ value = "ClassStatisticsTab", text = "Class Statistics" },
-		{ value = "CreatureStatisticsTab", text = "Creature Statistics" },
-		{ value = "InstanceStatisticsTab", text = "Instance Statistics" },
-		{ value = "StatisticsTab", text = "Zone Statistics" },
-		{ value = "LogTab", text = "Search" },
-	}
+	local tab_table = L.tab_table
 	deathlog_tabcontainer:SetTabs(tab_table)
 	deathlog_tabcontainer:SetFullWidth(true)
 	deathlog_tabcontainer:SetFullHeight(true)
@@ -1491,13 +1469,12 @@ end
 
 deathlog_menu = createDeathlogMenu()
 
-function deathlogShowMenu(deathlog_data, stats, log_normal_params, skull_locs)
+function deathlogShowMenu(deathlog_data, stats, log_normal_params)
 	deathlog_menu:Show()
 	deathlog_tabcontainer:SelectTab("LogTab")
 	_deathlog_data = deathlog_data
 	_stats = stats
 	_log_normal_params = log_normal_params
-	_skull_locs = skull_locs
 	setDeathlogMenuLogData(_deathlog_data)
 end
 

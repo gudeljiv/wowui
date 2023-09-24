@@ -2,30 +2,8 @@ local ace_refresh_timer_handle = nil
 local entry_cache = {}
 local font_handle = nil
 
-local main_font = "Fonts\\FRIZQT__.TTF"
-if GetLocale() == "ruRU" then
-	main_font = "Fonts\\ARIALN.TTF"
-end
-local deathlog_instance_tbl = {
-	{ 33, "SHADOWFANGKEEP", "Shadowfang Keep" },
-	{ 36, "DEADMINES", "Deadmines" },
-	{ 34, "STORMWINDSTOCKADES", "Stockades" },
-	{ 43, "WAILINGCAVERNS", "Wailing Caverns" },
-	{ 47, "RAZORFENKRAUL", "Razorfen Kraul" },
-	{ 48, "BLACKFATHOMDEEPS", "Blackfathom Deeps" },
-	{ 90, "GNOMEREGAN", "Gnomeregan" },
-	{ 18, "SCARLETMONASTERY", "Scarlet Monastery" },
-	{ 70, "ULDAMAN", "Uldaman" },
-	{ 109, "SUNKENTEMPLE", "Sunken Temple" },
-	{ 129, "RAZORFENDOWNS", "Razorfen Downs" },
-	{ 209, "ZULFARAK", "Zul'Farak" },
-	{ 229, "BLACKROCKSPIRE", "Blackrock Spire" },
-	{ 239, "BLACKROCKDEPTHS", "Blackrock Depths" },
-	{ 289, "SCHOLOMANCE", "Scholomance" },
-	{ 329, "STRATHOLME", "Stratholme" },
-	{ 349, "MARAUDON", "Maraudon" },
-	{ 429, "DIREMAUL", "Diremaul" },
-}
+local main_font = L.main_font
+local deathlog_instance_tbl = L.instance_tbl
 
 local tmap = {
 	["Warrior"] = { 0, 0.25, 0, 0.25 },
@@ -58,11 +36,11 @@ local presets = {
 }
 
 local LSM30 = LibStub("LibSharedMedia-3.0", true)
-local default_font = "Fonts\\FRIZQT__.TTF"
+local default_font = L.mini_log_font
 local widget_name = "minilog"
 
 local fonts = LSM30:HashTable("font")
-fonts["blei00d"] = "Fonts\\FRIZQT__.TTF"
+fonts["default_font"] = default_font
 fonts["BreatheFire"] = "Interface\\AddOns\\Deathlog\\Fonts\\BreatheFire.ttf"
 fonts["BlackChancery"] = "Interface\\AddOns\\Deathlog\\Fonts\\BLKCHCRY.TTF"
 fonts["ArgosGeorge"] = "Interface\\AddOns\\Deathlog\\Fonts\\ArgosGeorge.ttf"
@@ -144,7 +122,7 @@ local death_log_frame = AceGUI:Create("Deathlog_MiniLog")
 death_log_frame.frame:SetMovable(false)
 death_log_frame.frame:EnableMouse(false)
 death_log_frame:SetTitle("Deathlog")
-death_log_frame.titletext:SetFont("Fonts\\FRIZQT__.TTF", 19, "THICK")
+death_log_frame.titletext:SetFont(L.mini_log_font, 19, "THICK")
 local subtitle_metadata = {
 	["ColoredName"] = {
 		"Name",
@@ -188,7 +166,9 @@ local subtitle_metadata = {
 			if _entry.player_data["source_id"] == nil then
 				return ""
 			end
-			return id_to_npc[_entry.player_data["source_id"]] or ""
+			return id_to_npc[_entry.player_data["source_id"]]
+				or environment_damage[_entry.player_data["source_id"]]
+				or ""
 		end,
 	},
 	["Class"] = {
@@ -415,7 +395,7 @@ local function setupRowEntries()
 				_entry.font_strings[v[1]]:SetWidth(v[2])
 			end
 			_entry.font_strings[v[1]]:SetTextColor(1, 1, 1)
-			_entry.font_strings[v[1]]:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+			_entry.font_strings[v[1]]:SetFont(L.mini_log_font, 14, "")
 		end
 
 		_entry.background = _entry.frame:CreateTexture(nil, "OVERLAY")
@@ -484,107 +464,7 @@ local function setupRowEntries()
 				return
 			end
 			GameTooltip_SetDefaultAnchor(GameTooltip, WorldFrame)
-
-			if string.sub(_entry.player_data["name"], #_entry.player_data["name"]) == "s" then
-				GameTooltip:AddDoubleLine(
-					_entry.player_data["name"] .. "' Death",
-					"Lvl. " .. _entry.player_data["level"],
-					1,
-					1,
-					1,
-					0.5,
-					0.5,
-					0.5
-				)
-			else
-				GameTooltip:AddDoubleLine(
-					_entry.player_data["name"] .. "'s Death",
-					"Lvl. " .. _entry.player_data["level"],
-					1,
-					1,
-					1,
-					0.5,
-					0.5,
-					0.5
-				)
-			end
-			if deathlog_settings[widget_name]["tooltip_name"] then
-				GameTooltip:AddLine("Name: " .. _entry.player_data["name"], 1, 1, 1)
-			end
-			if deathlog_settings[widget_name]["tooltip_guild"] then
-				GameTooltip:AddLine("Guild: " .. _entry.player_data["guild"], 1, 1, 1)
-			end
-			if _entry.player_data["race_id"] ~= nil then
-				local race_info = C_CreatureInfo.GetRaceInfo(_entry.player_data["race_id"])
-				if deathlog_settings[widget_name]["tooltip_race"] and race_info then
-					GameTooltip:AddLine("Race: " .. race_info.raceName, 1, 1, 1)
-				end
-			end
-
-			if deathlog_settings[widget_name]["tooltip_class"] and _entry.player_data["class_id"] then
-				local class_str, _, _ = GetClassInfo(_entry.player_data["class_id"])
-				if class_str then
-					GameTooltip:AddLine("Class: " .. class_str, 1, 1, 1)
-				end
-			end
-
-			if deathlog_settings[widget_name]["tooltip_killedby"] and _entry.player_data["source_id"] then
-				local source_id = id_to_npc[_entry.player_data["source_id"]]
-				if source_id then
-					GameTooltip:AddLine("Killed by: " .. source_id, 1, 1, 1, true)
-				elseif environment_damage[_entry.player_data["source_id"]] then
-					GameTooltip:AddLine(
-						"Died from: " .. environment_damage[_entry.player_data["source_id"]],
-						1,
-						1,
-						1,
-						true
-					)
-				end
-			end
-
-			if deathlog_settings[widget_name]["tooltip_race"] and race_name then
-				GameTooltip:AddLine("Race: " .. race_name, 1, 1, 1)
-			end
-
-			if deathlog_settings[widget_name]["tooltip_zone"] then
-				if _entry.player_data["map_id"] then
-					local map_info = C_Map.GetMapInfo(_entry.player_data["map_id"])
-					if map_info then
-						GameTooltip:AddLine("Zone/Instance: " .. map_info.name, 1, 1, 1, true)
-					end
-				elseif _entry.player_data["instance_id"] then
-					GameTooltip:AddLine(
-						"Zone/Instance: "
-							.. (
-								deathlog_id_to_instance_tbl[_entry.player_data["instance_id"]]
-								or _entry.player_data["instance_id"]
-							),
-						1,
-						1,
-						1,
-						true
-					)
-				else
-					GameTooltip:AddLine("Zone/Instance: ------", 1, 1, 1, true)
-				end
-			end
-
-			if deathlog_settings[widget_name]["tooltip_loc"] and _entry.player_data["map_pos"] then
-				GameTooltip:AddLine("Loc: " .. _entry.player_data["map_pos"], 1, 1, 1, true)
-			end
-
-			if deathlog_settings[widget_name]["tooltip_date"] and _entry.player_data["date"] then
-				GameTooltip:AddLine("Date: " .. date("%m/%d/%y", _entry.player_data["date"]) or "", 1, 1, 1, true)
-			end
-
-			if
-				deathlog_settings[widget_name]["tooltip_lastwords"]
-				and _entry.player_data["last_words"]
-				and not _entry.player_data["last_words"]:match("^%s*$")
-			then
-				GameTooltip:AddLine("Last words: " .. _entry.player_data["last_words"], 1, 1, 0, true)
-			end
+			deathlog_setTooltipFromEntry(_entry.player_data)
 			GameTooltip:Show()
 		end)
 
@@ -632,11 +512,17 @@ function deathlog_widget_minilog_createEntry(player_data)
 end
 death_log_icon_frame:RegisterForDrag("LeftButton")
 death_log_icon_frame:SetScript("OnDragStart", function(self, button)
+	if deathlog_settings[widget_name]["lock"] ~= nil and deathlog_settings[widget_name]["lock"] == true then
+		return
+	end
 	death_log_frame.frame:ClearAllPoints()
 	self:StartMoving()
 	death_log_frame.frame:SetPoint("TOPLEFT", death_log_icon_frame, "TOPLEFT", 10, -10)
 end)
 death_log_icon_frame:SetScript("OnDragStop", function(self)
+	if deathlog_settings[widget_name]["lock"] ~= nil and deathlog_settings[widget_name]["lock"] == true then
+		return
+	end
 	self:StopMovingOrSizing()
 	local x, y = self:GetCenter()
 	local px = (GetScreenWidth() * UIParent:GetEffectiveScale()) / 2
@@ -706,8 +592,8 @@ local default_text_color_r, default_text_color_g, default_text_color_b, default_
 
 local defaults = {
 	["enable"] = true,
-	["font"] = "blei00d",
-	["entry_font"] = "blei00d",
+	["font"] = "default_font",
+	["entry_font"] = "default_font",
 	["title_font_size"] = 19,
 	["entry_font_size"] = 14,
 	["title_x_offset"] = 0,
@@ -740,6 +626,7 @@ local defaults = {
 	["tooltip_loc"] = true,
 	["tooltip_date"] = true,
 	["tooltip_lastwords"] = true,
+	["lock"] = false,
 }
 
 local function applyDefaults(_defaults, force)
@@ -974,6 +861,25 @@ options = {
 				end
 				deathlog_settings[widget_name]["enable"] = not deathlog_settings[widget_name]["enable"]
 				Deathlog_minilog_applySettings()
+			end,
+			order = 1,
+		},
+		lock_position = {
+			type = "toggle",
+			name = "Lock position",
+			desc = "Lock position of the death log.",
+			get = function()
+				if deathlog_settings[widget_name]["lock"] == nil or deathlog_settings[widget_name]["lock"] == false then
+					return false
+				else
+					return true
+				end
+			end,
+			set = function()
+				if deathlog_settings[widget_name]["lock"] == nil then
+					deathlog_settings[widget_name]["lock"] = true
+				end
+				deathlog_settings[widget_name]["lock"] = not deathlog_settings[widget_name]["lock"]
 			end,
 			order = 1,
 		},
@@ -1239,7 +1145,7 @@ options = {
 				if deathlog_settings[widget_name]["presets"] == "concise" then
 					deathlog_settings[widget_name]["enable"] = true
 					deathlog_settings[widget_name]["font"] = "BreatheFire"
-					deathlog_settings[widget_name]["entry_font"] = "blei00d"
+					deathlog_settings[widget_name]["entry_font"] = "default_font"
 					deathlog_settings[widget_name]["title_font_size"] = 19
 					deathlog_settings[widget_name]["entry_font_size"] = 16
 					deathlog_settings[widget_name]["title_x_offset"] = 13
@@ -1264,7 +1170,7 @@ options = {
 				if deathlog_settings[widget_name]["presets"] == "Yazpad" then
 					deathlog_settings[widget_name]["enable"] = true
 					deathlog_settings[widget_name]["font"] = "BreatheFire"
-					deathlog_settings[widget_name]["entry_font"] = "blei00d"
+					deathlog_settings[widget_name]["entry_font"] = "default_font"
 					deathlog_settings[widget_name]["title_font_size"] = 19
 					deathlog_settings[widget_name]["entry_font_size"] = 16
 					deathlog_settings[widget_name]["title_x_offset"] = 13

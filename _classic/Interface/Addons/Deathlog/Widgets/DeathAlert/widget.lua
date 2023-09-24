@@ -17,7 +17,7 @@ sounds["golfclap"] = "Interface\\AddOns\\Deathlog\\Sounds\\golfclap.ogg"
 sounds["hunger_games"] = "Interface\\AddOns\\Deathlog\\Sounds\\hunger_games.ogg"
 sounds["HeroFallen"] = "Interface\\AddOns\\Deathlog\\Sounds\\HeroFallen.ogg"
 local fonts = LSM30:HashTable("font")
-fonts["blei00d"] = "Fonts\\FRIZQT__.TTF"
+fonts["blei00d"] = "Fonts\\blei00d.TTF"
 fonts["BreatheFire"] = "Interface\\AddOns\\Deathlog\\Fonts\\BreatheFire.ttf"
 fonts["BlackChancery"] = "Interface\\AddOns\\Deathlog\\Fonts\\BLKCHCRY.TTF"
 fonts["ArgosGeorge"] = "Interface\\AddOns\\Deathlog\\Fonts\\ArgosGeorge.ttf"
@@ -49,7 +49,7 @@ death_alert_frame.text:SetText(
 		.. " in Elywynn Forest."
 )
 
-death_alert_frame.text:SetFont("Fonts\\FRIZQT__.TTF", 22, "")
+death_alert_frame.text:SetFont(L.death_alert_font, 22, "")
 death_alert_frame.text:SetTextColor(1, 1, 1, 1)
 death_alert_frame.text:SetJustifyH("CENTER")
 death_alert_frame.text:SetParent(death_alert_frame)
@@ -87,6 +87,22 @@ function Deathlog_DeathAlertPlay(entry)
 		or deathlog_settings[widget_name]["min_lvl"]
 	if entry["level"] and (entry["level"] < min_lvl or entry["level"] > deathlog_settings[widget_name]["max_lvl"]) then
 		return
+	end
+
+	if
+		deathlog_settings[widget_name]["current_zone_filter"] ~= nil
+		and deathlog_settings[widget_name]["current_zone_filter"] == true
+	then
+		local my_current_map = C_Map.GetBestMapForUnit("player")
+		if my_current_map == nil then
+			local _, _, _, _, _, _, _, _instance_id, _, _ = GetInstanceInfo()
+			if entry["instance_id"] ~= instance_id then
+				return
+			end
+		end
+		if entry["map_id"] ~= my_current_map then
+			return
+		end
 	end
 
 	if deathlog_settings[widget_name]["guild_only"] then
@@ -313,13 +329,13 @@ local defaults = {
 	["font_color_g"] = 1,
 	["font_color_b"] = 1,
 	["font_color_a"] = 1,
-	["message"] = "<name> the <race> <class> has been slain\nby <source> at lvl <level> in <zone>.",
-	["fall_message"] = "<name> the <race> <class> fell to\ndeath at lvl <level> in <zone>.",
-	["drown_message"] = "<name> the <race> <class> drowned\n at lvl <level> in <zone>.",
-	["slime_message"] = "<name> the <race> <class> has died from slime.\n at lvl <level> in <zone>.",
-	["lava_message"] = "<name> the <race> <class> drowned in lava.\n at lvl <level> in <zone>.",
-	["fire_message"] = "<name> the <race> <class> has died from fire.\n at lvl <level> in <zone>.",
-	["fatigue_message"] = "<name> the <race> <class> has died from fatigue.\n at lvl <level> in <zone>.",
+	["message"] = L.death_alert_default_message,
+	["fall_message"] = L.death_alert_default_fall_message,
+	["drown_message"] = L.death_alert_default_drown_message,
+	["slime_message"] = L.death_alert_default_slime_message,
+	["lava_message"] = L.death_alert_default_lava_message,
+	["fire_message"] = L.death_alert_default_fire_message,
+	["fatigue_message"] = L.death_alert_default_fatigue_message,
 	["min_lvl"] = 1,
 	["min_lvl_player"] = false,
 	["max_lvl"] = MAX_PLAYER_LEVEL,
@@ -328,13 +344,12 @@ local defaults = {
 	["accent_color_g"] = 1,
 	["accent_color_b"] = 1,
 	["accent_color_a"] = 1,
+	["current_zone_filter"] = false,
 	["alert_sound"] = "default_hardcore",
 }
 
 local function applyDefaults(_defaults, force)
-	if deathlog_settings[widget_name] == nil then
-		deathlog_settings[widget_name] = {}
-	end
+	deathlog_settings[widget_name] = deathlog_settings[widget_name] or {}
 	for k, v in pairs(_defaults) do
 		if deathlog_settings[widget_name][k] == nil or force then
 			deathlog_settings[widget_name][k] = v
@@ -780,6 +795,20 @@ options = {
 			end,
 			set = function()
 				deathlog_settings[widget_name]["guild_only"] = not deathlog_settings[widget_name]["guild_only"]
+				Deathlog_DeathAlertWidget_applySettings()
+			end,
+		},
+		my_zone_only_toggle = {
+			type = "toggle",
+			name = "Current zone only alerts",
+			desc = "Only show alerts for deaths within the player's current zone.",
+			order = 1,
+			get = function()
+				return deathlog_settings[widget_name]["current_zone_filter"]
+			end,
+			set = function()
+				deathlog_settings[widget_name]["current_zone_filter"] =
+					not deathlog_settings[widget_name]["current_zone_filter"]
 				Deathlog_DeathAlertWidget_applySettings()
 			end,
 		},

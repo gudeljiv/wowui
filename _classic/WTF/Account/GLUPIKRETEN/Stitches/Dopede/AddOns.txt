@@ -77,3 +77,4 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 WideQuestLogPlus: enabled
 xVermin: enabled
+OPie_Classic: disabled

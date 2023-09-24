@@ -35,7 +35,7 @@ local function SecondsToTimeAbbrevHook(seconds)
 
 
 	local tempTime;
-	local threshold = 1.5
+	local threshold = 1
 	if ( seconds >= SECONDS_PER_DAY * threshold ) then
 		tempTime = ceil(seconds / SECONDS_PER_DAY);
 		-- return DAY_ONELETTER_ABBR, tempTime;

@@ -87,3 +87,4 @@ RareScanner: enabled
 SortBags: enabled
 TradeSkillMaster_AppHelper: enabled
 DugisGuideViewerZ: disabled
+OPie_Classic: disabled

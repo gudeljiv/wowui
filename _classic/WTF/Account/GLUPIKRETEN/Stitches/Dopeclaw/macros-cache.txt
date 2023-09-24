@@ -77,3 +77,11 @@ VER 3 0000000001000016 " " "134400"
 /cast [form:3] Cat Form
 /cast [noform:3] !Cat Form
 END
+VER 3 0000000001000017 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Healing Touch(Rank 1)
+END
+VER 3 0000000001000018 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Healing Touch(Rank 2)
+END

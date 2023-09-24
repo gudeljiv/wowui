@@ -110,4 +110,4 @@ Anchor: CENTER
 X: 40
 Y: 268
 W: 330
-H: 127
+H: 125

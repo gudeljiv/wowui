@@ -18,6 +18,14 @@ along with the Deathlog AddOn. If not, see <http://www.gnu.org/licenses/>.
 --]]
 --
 local deadliest_creatures_container = CreateFrame("Frame")
+local environment_damage = {
+	[-2] = "Drowning",
+	[-3] = "Falling",
+	[-4] = "Fatigue",
+	[-5] = "Fire",
+	[-6] = "Lava",
+	[-7] = "Slime",
+}
 deadliest_creatures_container:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 local function createDeadliestCreaturesEntry()
 	local frame = CreateFrame("Frame")
@@ -35,7 +43,7 @@ local function createDeadliestCreaturesEntry()
 
 	frame.creature_name = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	frame.creature_name:SetPoint("LEFT", frame, "LEFT", 10, 0)
-	frame.creature_name:SetFont("Fonts\\FRIZQT__.TTF", 14, "OUTLINE")
+	frame.creature_name:SetFont(L.deadliest_creature_container_font, 14, "OUTLINE")
 	frame.creature_name:SetTextColor(0.9, 0.9, 0.9)
 	frame.creature_name:SetText("AAA")
 	frame.creature_name:Show()
@@ -70,7 +78,7 @@ if deadliest_creatures_container.heading == nil then
 	deadliest_creatures_container.heading =
 		deadliest_creatures_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	deadliest_creatures_container.heading:SetText("Deadliest Creatures")
-	deadliest_creatures_container.heading:SetFont("Fonts\\FRIZQT__.TTF", 18, "")
+	deadliest_creatures_container.heading:SetFont(L.deadliest_creature_container_font, 18, "")
 	deadliest_creatures_container.heading:SetJustifyV("TOP")
 	deadliest_creatures_container.heading:SetTextColor(0.9, 0.9, 0.9)
 	deadliest_creatures_container.heading:SetPoint("TOP", deadliest_creatures_container, "TOP", 0, -20)
@@ -81,7 +89,7 @@ if deadliest_creatures_container.heading_description == nil then
 	deadliest_creatures_container.heading_description =
 		deadliest_creatures_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	deadliest_creatures_container.heading_description:SetText("Mouseover to view on map.")
-	deadliest_creatures_container.heading_description:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	deadliest_creatures_container.heading_description:SetFont(L.deadliest_creature_container_font, 12, "")
 	deadliest_creatures_container.heading_description:SetJustifyV("TOP")
 	deadliest_creatures_container.heading_description:SetTextColor(0.6, 0.6, 0.6)
 	deadliest_creatures_container.heading_description:SetPoint(
@@ -156,7 +164,9 @@ function deadliest_creatures_container.updateMenuElement(scroll_frame, current_m
 				deadliest_creatures_textures[i]:SetBackgroundWidth(
 					deadliest_creatures_container:GetWidth() * most_deadly_units[i][2] / max_kills
 				)
-				deadliest_creatures_textures[i]:SetCreatureName(id_to_npc[most_deadly_units[i][1]])
+				deadliest_creatures_textures[i]:SetCreatureName(
+					id_to_npc[most_deadly_units[i][1]] or environment_damage[most_deadly_units[i][1]]
+				)
 				deadliest_creatures_textures[i]:SetNumKills(most_deadly_units[i][2])
 				if valid_map then
 					deadliest_creatures_textures[i]:SetScript("OnEnter", function()

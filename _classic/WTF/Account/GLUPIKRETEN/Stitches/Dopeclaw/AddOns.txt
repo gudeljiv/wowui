@@ -226,3 +226,4 @@ ACP: enabled
 Open-Sesame: enabled
 SpeedyAutoLoot: enabled
 WhatsTraining: enabled
+OPie_Classic: disabled

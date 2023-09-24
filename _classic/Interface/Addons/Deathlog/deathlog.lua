@@ -23,7 +23,6 @@ local last_attack_source = nil
 local recent_msg = nil
 local general_stats = {}
 local log_normal_params = {}
-local skull_locs = {}
 local class_data = {}
 local most_deadly_units = {
 	["all"] = { -- server
@@ -41,8 +40,9 @@ local most_deadly_units_normalized = {
 	},
 }
 
-deathlog_data = {}
-deathlog_settings = {}
+deathlog_data = deathlog_data or {}
+deathlog_data_map = deathlog_data_map or {}
+deathlog_settings = deathlog_settings or {}
 
 local deathlog_minimap_button_stub = nil
 local deathlog_minimap_button_info = {}
@@ -51,7 +51,7 @@ local deathlog_minimap_button = LibStub("LibDataBroker-1.1"):NewDataObject("Deat
 	text = "Deathlog",
 	icon = "Interface\\TARGETINGFRAME\\UI-TargetingFrame-Skull",
 	OnClick = function(self, btn)
-		deathlogShowMenu(deathlog_data, general_stats, log_normal_params, skull_locs)
+		deathlogShowMenu(deathlog_data, general_stats, log_normal_params)
 	end,
 })
 local function initMinimapButton()
@@ -118,26 +118,21 @@ local function handleEvent(self, event, ...)
 		if use_precomputed then
 			general_stats = precomputed_general_stats
 			log_normal_params = precomputed_log_normal_params
-			skull_locs = precomputed_skull_locs
 			dev_precomputed_general_stats = nil
 			dev_precomputed_log_normal_params = nil
-			dev_precomputed_skull_locs = nil
 			dev_class_data = nil
 		else
 			Deathlog_LoadFromHardcore()
 			general_stats = deathlog_calculate_statistics(deathlog_data, nil)
 			log_normal_params = deathlog_calculateLogNormalParameters(deathlog_data)
-			skull_locs = deathlog_calculateSkullLocs(deathlog_data)
 			class_data = deathlog_calculateClassData(deathlog_data)
 			if save_precompute then
 				dev_precomputed_general_stats = general_stats
 				dev_precomputed_log_normal_params = log_normal_params
-				dev_precomputed_skull_locs = skull_locs
 				dev_class_data = class_data
 			else
 				dev_precomputed_general_stats = nil
 				dev_precomputed_log_normal_params = nil
-				dev_precomputed_skull_locs = nil
 			end
 		end
 		most_deadly_units["all"]["all"]["all"] = deathlogGetOrdered(general_stats, { "all", "all", "all", nil })
@@ -152,7 +147,7 @@ local function SlashHandler(msg, editbox)
 	elseif msg == "alert" then
 		Deathlog_DeathAlertFakeDeath()
 	else
-		deathlogShowMenu(deathlog_data, general_stats, log_normal_params, skull_locs)
+		deathlogShowMenu(deathlog_data, general_stats, log_normal_params)
 	end
 end
 
@@ -215,6 +210,21 @@ local options = {
 				end
 			end,
 		},
+		colored_tooltips = {
+			type = "toggle",
+			name = "Colored tooltips",
+			desc = "Toggles whether tooltips have colored fields.",
+			width = 1.3,
+			get = function()
+				if deathlog_settings["colored_tooltips"] == nil then
+					deathlog_settings["colored_tooltips"] = false
+				end
+				return deathlog_settings["colored_tooltips"]
+			end,
+			set = function()
+				deathlog_settings["colored_tooltips"] = not deathlog_settings["colored_tooltips"]
+			end,
+		},
 	},
 }
 
@@ -227,8 +237,17 @@ DeathNotificationLib_HookOnNewEntry(function(_player_data, _checksum, num_peer_c
 	if deathlog_data == nil then
 		deathlog_data = {}
 	end
+
+	if deathlog_data_map == nil then
+		deathlog_data_map = {}
+	end
+
 	if deathlog_data[realmName] == nil then
 		deathlog_data[realmName] = {}
+	end
+
+	if deathlog_data_map[realmName] == nil then
+		deathlog_data_map[realmName] = {}
 	end
 
 	local function deathlog_modified_fletcher16(_player_data)
@@ -254,6 +273,7 @@ DeathNotificationLib_HookOnNewEntry(function(_player_data, _checksum, num_peer_c
 	deathlog_data[realmName][modified_checksum] = _player_data
 	deathlog_widget_minilog_createEntry(_player_data)
 	Deathlog_DeathAlertPlay(_player_data)
+	deathlog_data_map[realmName][_player_data["name"]] = modified_checksum
 end)
 
 -- DeathNotificationLib_HookOnNewEntrySecure(function()
