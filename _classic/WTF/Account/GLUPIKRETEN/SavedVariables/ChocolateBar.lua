@@ -96,7 +96,6 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["iconSize"] = 0.7000000000000001,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -107,10 +106,8 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["iconSize"] = 0.7000000000000001,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -702,7 +699,10 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -767,20 +767,18 @@ CB_PlayedTime = {
 	["Vermins-"] = {
 		["total"] = 3014,
 	},
-	["Mxzq-Golemagg"] = {
-		["total"] = 1182045,
-		["timeStamp"] = 435953.614,
-		["timeAtThisLevel"] = 151025,
-	},
-	["Vermina-Golemagg"] = {
-		["total"] = 375771,
-		["timeStamp"] = 479279.819,
-		["timeAtThisLevel"] = 2048,
-	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 53083,
 		["timeStamp"] = 777447.689,
 		["timeAtThisLevel"] = 2821,
+	},
+	["Mxzq-"] = {
+		["total"] = 356150,
+	},
+	["Mxzq-Golemagg"] = {
+		["total"] = 1182045,
+		["timeStamp"] = 435953.614,
+		["timeAtThisLevel"] = 151025,
 	},
 	["Tandaram-Jin'do"] = {
 		["total"] = 97,
@@ -922,8 +920,10 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Mxzq-"] = {
-		["total"] = 356150,
+	["Vermina-Golemagg"] = {
+		["total"] = 375771,
+		["timeStamp"] = 479279.819,
+		["timeAtThisLevel"] = 2048,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

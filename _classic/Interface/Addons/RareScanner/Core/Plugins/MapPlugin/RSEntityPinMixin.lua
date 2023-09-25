@@ -20,7 +20,6 @@ local RSTooltip = private.ImportLib("RareScannerTooltip")
 -- RareScanner services
 local RSGuidePOI = private.ImportLib("RareScannerGuidePOI")
 local RSTomtom = private.ImportLib("RareScannerTomtom")
-local RSWaypoints = private.ImportLib("RareScannerWaypoints")
 
 -- RareScanner general libraries
 local RSUtils = private.ImportLib("RareScannerUtils")

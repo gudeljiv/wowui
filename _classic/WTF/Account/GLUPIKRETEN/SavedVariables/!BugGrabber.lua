@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10578,
+	["session"] = 10584,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -692,21 +692,13 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [89]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/08 08:02:36",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10538,
-			["counter"] = 12,
-		}, -- [90]
-		{
 			["message"] = "Frame:StartMoving(): Frame is not movable",
 			["time"] = "2023/09/23 11:40:45",
 			["locals"] = "(*temporary) = Frame {\n 0 = <userdata>\n height = 600\n width = 1100\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n BottomRightCorner = Texture {\n }\n Center = Texture {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n obj = <table> {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\n",
 			["stack"] = "[string \"=[C]\"]: in function `StartMoving'\n[string \"@Interface/AddOns/Deathlog/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-DeathlogMenu.lua\"]:45: in function <.../AceGUI-3.0/widgets/AceGUIContainer-DeathlogMenu.lua:44>",
 			["session"] = 10543,
 			["counter"] = 2,
-		}, -- [91]
+		}, -- [90]
 		{
 			["message"] = "Interface_Vanilla/FrameXML/UIParent.lua:1850: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: FramerateLabel:SetPoint.",
 			["time"] = "2023/09/23 12:00:23",
@@ -714,7 +706,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1850: in function <Interface_Vanilla/FrameXML/UIParent.lua:1763>\n[string \"=[C]\"]: in function `securecall'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2454: in function `UIParentManageFramePositions'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1868: in function <Interface_Vanilla/FrameXML/UIParent.lua:1855>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2592: in function <Interface_Vanilla/FrameXML/UIParent.lua:2590>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UIParent_ManageFramePositions'\n[string \"@Interface/FrameXML/FloatingChatFrame.lua\"]:1275: in function `FCF_RestorePositionAndDimensions'\n[string \"@Interface/FrameXML/FloatingChatFrame.lua\"]:227: in function `FloatingChatFrame_Update'\n[string \"@Interface/FrameXML/FloatingChatFrame.lua\"]:112: in function `FloatingChatFrame_OnEvent'\n[string \"*FloatingChatFrame.xml:769_OnEvent\"]:2: in function <[string \"*FloatingChatFrame.xml:769_OnEvent\"]:1>",
 			["session"] = 10544,
 			["counter"] = 14,
-		}, -- [92]
+		}, -- [91]
 		{
 			["message"] = "[string \"CharacterRandedSlotCount:SetScale(0.8)\"]:1: attempt to index global 'CharacterRandedSlotCount' (a nil value)",
 			["time"] = "2023/09/24 19:57:22",
@@ -722,7 +714,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"CharacterRandedSlotCount:SetScale(0.8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10564,
 			["counter"] = 1,
-		}, -- [93]
+		}, -- [92]
 		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
 			["time"] = "2023/09/09 16:52:16",
@@ -730,7 +722,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 10565,
 			["counter"] = 10,
-		}, -- [94]
+		}, -- [93]
 		{
 			["message"] = "Interface/AddOns/ShadowedUF_Options/config.lua:6513: attempt to concatenate field '?' (a nil value)",
 			["time"] = "2023/09/24 21:04:48",
@@ -738,7 +730,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6513: in function `member'\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:215: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:164>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:337: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:310>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1114: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:200: in function <...Libs/AceGUI-3.0/widgets/AceGUIContainer-TabGroup.lua:197>",
 			["session"] = 10565,
 			["counter"] = 2,
-		}, -- [95]
+		}, -- [94]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:55: attempt to index global 'UnitPopupButtons' (a nil value)",
 			["time"] = "2023/09/25 11:41:05",
@@ -746,19 +738,19 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/QuickGuildInvite/main.lua\"]:55: in main chunk",
 			["session"] = 10571,
 			["counter"] = 1,
-		}, -- [96]
+		}, -- [95]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
 			["session"] = 10571,
 			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
-		}, -- [97]
+		}, -- [96]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
 			["session"] = 10571,
 			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
-		}, -- [98]
+		}, -- [97]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:581: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -766,7 +758,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:581: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:579>",
 			["session"] = 10577,
 			["counter"] = 23,
-		}, -- [99]
+		}, -- [98]
 		{
 			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:572: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2023/09/15 12:34:15",
@@ -774,6 +766,38 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:572: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:570>",
 			["session"] = 10577,
 			["counter"] = 15,
+		}, -- [99]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/08 08:02:36",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10579,
+			["counter"] = 13,
 		}, -- [100]
+		{
+			["message"] = "...ner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:179: attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)",
+			["time"] = "2023/09/25 18:55:26",
+			["locals"] = "self = WorldMapButtonDropDownMenu {\n 0 = <userdata>\n menuList = 1\n point = \"TOPLEFT\"\n Right = WorldMapButtonDropDownMenuRight {\n }\n Left = WorldMapButtonDropDownMenuLeft {\n }\n initialize = <function> defined @Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:128\n Button = WorldMapButtonDropDownMenuButton {\n }\n Icon = WorldMapButtonDropDownMenuIcon {\n }\n Middle = WorldMapButtonDropDownMenuMiddle {\n }\n Text = WorldMapButtonDropDownMenuText {\n }\n}\nlevel = 2\nmenuList = 1\ninfo = <table> {\n disabled = false\n checked = true\n arg1 = \"rsHideNotDiscoveredRareNpcs\"\n text = \"|TInterface\\AddOns\\RareScanner\\Media\\Icons\\RedSkullDark.blp:18:18:::::0:32:0:32|t Show not discovered rare NPC icons on map\"\n keepShownOnClick = false\n func = <function> defined @Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:44\n isNotRadio = true\n}\n(*temporary) = \"|A:\"\n(*temporary) = nil\n(*temporary) = \":18:18::::|a Show not completed achievement rare NPC icons on map\"\n(*temporary) = \"Show not completed achievement rare NPC icons on map\"\n(*temporary) = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:970\n(*temporary) = \"attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)\"\nLibDD = <table> {\n UIDropDownMenu_SetButtonText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2056\n containsMouse = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1892\n UIDropDownMenu_DisableButton = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2040\n Create_UIDropDownCustomMenuEntry = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2255\n UIDropDownMenu_Refresh = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1426\n UIDropDownMenu_Initialize = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:750\n UIDropDownMenu_SetWidth = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1936\n UIDropDownMenu_SetDropDownEnabled = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2082\n UIDropDownMenu_SetButtonClickable = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2069\n UIDropDownMenu_GetSelectedID = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1566\n UIDropDownMenu_MatchTextWidth = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1925\n DropDownExpandArrowMixin = <table> {\n }\n UIDropDownMenu_GetSelectedName = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1562\n UIDropDownMenu_InitializeHelper = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:92\n DropDownMenuButtonMixin = <table> {\n }\n UIDropDownMenuButton_GetName = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2027\n UIDropDownMenu_ClearAll = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1972\n UIDropDownMenu_GetCurrentDropDown = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2015\n UIDropDownMenu_JustifyText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1991\n UIDropDownMenu_IsEnabled = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2131\n UIDropDownMenu_RefreshDropDownSize = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:805\n UIDropDownMenu_EnableButton = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2044\n UIDropDownMenu_SetText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1962\n UIDropDownMenu_AddButton = <function> ",
+			["stack"] = "[string \"@Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua\"]:179: in function `initFunction'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:759: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:1753: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/Auctionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:248: in function <...ionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:243>\n[string \"@Interface/AddOns/Auctionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:347: in function <...ionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:346>",
+			["session"] = 10580,
+			["counter"] = 1,
+		}, -- [101]
+		{
+			["message"] = "...ner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:210: attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)",
+			["time"] = "2023/09/25 18:55:34",
+			["locals"] = "self = WorldMapButtonDropDownMenu {\n 0 = <userdata>\n menuList = 2\n point = \"TOPLEFT\"\n Right = WorldMapButtonDropDownMenuRight {\n }\n Left = WorldMapButtonDropDownMenuLeft {\n }\n initialize = <function> defined @Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:128\n Button = WorldMapButtonDropDownMenuButton {\n }\n Icon = WorldMapButtonDropDownMenuIcon {\n }\n Middle = WorldMapButtonDropDownMenuMiddle {\n }\n Text = WorldMapButtonDropDownMenuText {\n }\n}\nlevel = 2\nmenuList = 2\ninfo = <table> {\n disabled = false\n checked = true\n arg1 = \"rsHideNotDiscoveredContainers\"\n text = \"|TInterface\\AddOns\\RareScanner\\Media\\Icons\\RedChest.blp:18:18:::::0:32:0:32|t Show not discovered container icons on map\"\n keepShownOnClick = false\n func = <function> defined @Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:44\n isNotRadio = true\n}\n(*temporary) = \"|A:\"\n(*temporary) = nil\n(*temporary) = \":18:18::::|a Show not completed achievement container icons on map\"\n(*temporary) = \"Show not completed achievement container icons on map\"\n(*temporary) = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:970\n(*temporary) = \"attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)\"\nLibDD = <table> {\n UIDropDownMenu_SetButtonText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2056\n containsMouse = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1892\n UIDropDownMenu_DisableButton = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2040\n Create_UIDropDownCustomMenuEntry = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2255\n UIDropDownMenu_Refresh = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1426\n UIDropDownMenu_Initialize = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:750\n UIDropDownMenu_SetWidth = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1936\n UIDropDownMenu_SetDropDownEnabled = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2082\n UIDropDownMenu_SetButtonClickable = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2069\n UIDropDownMenu_GetSelectedID = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1566\n UIDropDownMenu_MatchTextWidth = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1925\n DropDownExpandArrowMixin = <table> {\n }\n UIDropDownMenu_GetSelectedName = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1562\n UIDropDownMenu_InitializeHelper = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:92\n DropDownMenuButtonMixin = <table> {\n }\n UIDropDownMenuButton_GetName = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2027\n UIDropDownMenu_ClearAll = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1972\n UIDropDownMenu_GetCurrentDropDown = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2015\n UIDropDownMenu_JustifyText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1991\n UIDropDownMenu_IsEnabled = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2131\n UIDropDownMenu_RefreshDropDownSize = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:805\n UIDropDownMenu_EnableButton = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:2044\n UIDropDownMenu_SetText = <function> defined @Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:1962\n UIDropDownMenu_AddButton = <function>",
+			["stack"] = "[string \"@Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua\"]:210: in function `initFunction'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:759: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:1753: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/RareScanner/ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:133: in function <...ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua:128>\n[string \"@Interface/AddOns/RareScanner/ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:436: in function <...ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua:435>",
+			["session"] = 10580,
+			["counter"] = 2,
+		}, -- [102]
+		{
+			["message"] = "Interface/FrameXML/UIDropDownMenu.lua:985: attempt to index local 'button' (a nil value)",
+			["time"] = "2023/09/25 18:59:01",
+			["locals"] = "level = 1\nvalue = nil\ndropDownFrame = nil\nanchorName = Minimap {\n SetPlayerTexture = <function> defined =[C]:-1\n SetMaskTexture = <function> defined =[C]:-1\n beautyShadow = <table> {\n }\n CreateTexture = <function> defined @Interface/AddOns/FarmHud/FarmHud.lua:185\n beautyBorder = <table> {\n }\n EnableMouse = <function> defined =[C]:-1\n SetAlpha = <function> defined =[C]:-1\n timer = 0\n 0 = <userdata>\n SetZoom = <function> defined =[C]:-1\n}\nxOffset = -98.000053\nyOffset = -3\nmenuList = nil\nbutton = nil\nautoHideDelay = nil\nlistFrame = DropDownList1 {\n 0 = <userdata>\n dropdown = BrowseDropDown {\n }\n shouldRefresh = true\n numButtons = 6\n maxWidth = 107.288891\n}\nlistFrameName = \"DropDownList1\"\ntempFrame = nil\npoint = nil\nrelativePoint = nil\nrelativeTo = nil\n(*temporary) = <function> defined @Interface/FrameXML/UIDropDownMenu.lua:25\n(*temporary) = nil\n(*temporary) = \"createframes\"\n(*temporary) = true\n(*temporary) = <function> defined @Interface/FrameXML/UIDropDownMenu.lua:296\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = 24\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nUIDropDownMenuDelegate = Frame {\n 0 = <userdata>\n}\nGetChild = <function> defined @Interface/FrameXML/UIDropDownMenu.lua:63\n",
+			["stack"] = "[string \"@Interface/FrameXML/UIDropDownMenu.lua\"]:985: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/nMinimap/core.lua\"]:120: in function <Interface/AddOns/nMinimap/core.lua:118>",
+			["session"] = 10583,
+			["counter"] = 1,
+		}, -- [103]
 	},
 }

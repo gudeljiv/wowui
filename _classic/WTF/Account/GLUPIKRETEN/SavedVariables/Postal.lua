@@ -16,8 +16,8 @@ Postal3DB = {
 	["profileKeys"] = {
 		["Dopede - Stitches"] = "Dopede - Stitches",
 		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
 		["Dopeah - Stitches"] = "Dopeah - Stitches",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
@@ -38,6 +38,8 @@ Postal3DB = {
 				},
 			},
 		},
+		["Dopecure - Stitches"] = {
+		},
 		["Dopesick - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -45,8 +47,6 @@ Postal3DB = {
 					"Dopede|Stitches|Horde", -- [2]
 				},
 			},
-		},
-		["Dopecure - Stitches"] = {
 		},
 		["Dopeclaw - Stitches"] = {
 			["BlackBook"] = {

@@ -35,58 +35,18 @@ xVermin.CheckIfLoadedWithTimer(
 			local in_instance, type_of_instance = IsInInstance()
 
 			_, numQuests = GetNumQuestLogEntries()
-			showQuestieFrame = (not in_instance and numQuests > 0 and not UnitInRaid('player')) and true or false
+			-- showQuestieFrame = (not in_instance and numQuests > 0 and not UnitInRaid('player')) and true or false
+			showQuestieFrame = numQuests > 0 and true or false
 
 			if showQuestieFrame then
 				if not Questie_BaseFrame:IsVisible() then
 					Questie_BaseFrame:Show()
-				-- if PallyPowerFrame then
-				-- 	PallyPowerFrame:ClearAllPoints()
-				-- 	PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
-				-- end
 				end
 			else
 				if Questie_BaseFrame:IsVisible() then
 					Questie_BaseFrame:Hide()
-				-- if PallyPowerFrame then
-				-- 	PallyPowerFrame:ClearAllPoints()
-				-- 	PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
-				-- end
 				end
 			end
-
-			-- PallyPowerFrame:ClearAllPoints()
-			-- if Questie_BaseFrame and Questie_BaseFrame:IsVisible() then
-			-- 	PallyPowerFrame:SetPoint('TOPLEFT', Questie_BaseFrame, 'TOPLEFT', -105, -66)
-			-- else
-			-- 	PallyPowerFrame:SetPoint('TOPRIGHT', CustomContainer_2, 'BOTTOMRIGHT', -100, -76)
-			-- end
-
-			-- if numQuests > 0 then
-			-- 	if not Questie_BaseFrame:IsVisible() then
-			-- 		Questie_BaseFrame:Show()
-			-- 	end
-			-- else
-			-- 	if Questie_BaseFrame:IsVisible() then
-			-- 		Questie_BaseFrame:Hide()
-			-- 	end
-			-- end
-
-			-- if IsInInstance() then
-			-- 	if Questie_BaseFrame:IsVisible() then
-			-- 		Questie_BaseFrame:Hide()
-			-- 	end
-			-- else
-			-- 	if numQuests > 0 then
-			-- 		if not Questie_BaseFrame:IsVisible() then
-			-- 			Questie_BaseFrame:Show()
-			-- 		end
-			-- 	end
-			-- end
-
-			-- if (Questie_BaseFrame:GetWidth() < width) then
-			-- 	Questie_BaseFrame:SetWidth(width)
-			-- end
 
 			for i = 1, 32 do
 				ib = _G['Questie_ItemButton' .. i]

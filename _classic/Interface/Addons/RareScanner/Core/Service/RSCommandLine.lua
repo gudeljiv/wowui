@@ -18,7 +18,6 @@ local RSUtils = private.ImportLib("RareScannerUtils")
 local RSLogger = private.ImportLib("RareScannerLogger")
 
 -- RareScanner services
-local RSWaypoints = private.ImportLib("RareScannerWaypoints")
 local RSRecentlySeenTracker = private.ImportLib("RareScannerRecentlySeenTracker")
 
 -- RareScanner other addons integration services
