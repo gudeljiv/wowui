@@ -58,18 +58,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.004304,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20.004304,
 							["delay"] = 1693736587,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 20.004304,
 							["monster"] = true,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["nome"] = "Swoop",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -121,8 +120,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
@@ -137,10 +136,11 @@ _detalhes_database = {
 							["end_time"] = 1693736598,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004304,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1693736595,
 							["serial"] = "Creature-0-5252-1-82-2970-0000745CCD",
-							["dps_started"] = false,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -191,12 +191,10 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 99,
 				["playing_solo"] = true,
 				["totals"] = {
-					19.45376500000128, -- [1]
+					19.43474400000147, -- [1]
 					0, -- [2]
 					{
 						-0.0207259999999998, -- [1]
@@ -218,6 +216,61 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:23:19",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Swoop",
+				["TotalElapsedCombatTime"] = 151434.547,
+				["CombatEndedAt"] = 151434.547,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Dopede"] = 0.006914,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 151434.547,
+				["combat_id"] = 60,
 				["player_last_events"] = {
 					["Dopede"] = {
 						{
@@ -297,72 +350,19 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:23:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Swoop",
-				["TotalElapsedCombatTime"] = 151434.547,
-				["CombatEndedAt"] = 151434.547,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
+				["spells_cast_timeline"] = {
 				},
 				["data_inicio"] = "12:23:06",
-				["end_time"] = 151434.547,
-				["combat_id"] = 60,
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["frags"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Dopede"] = 0.006914,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 99,
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Swoop",
 				["start_time"] = 151421.586,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
 				},
 			}, -- [1]
 			{
@@ -417,18 +417,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11.001991,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 11.001991,
 							["monster"] = true,
-							["damage_taken"] = 0.001991,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Prairie Wolf",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -469,10 +469,10 @@ _detalhes_database = {
 							["end_time"] = 1693735859,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["damage_taken"] = 0.001991,
 							["start_time"] = 1693735849,
 							["serial"] = "Creature-0-5252-1-82-2958-000074573A",
-							["dps_started"] = false,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -509,9 +509,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 94,
 				["playing_solo"] = true,
 				["totals"] = {
 					11, -- [1]
@@ -536,24 +534,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:11:00",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf",
-				["TotalElapsedCombatTime"] = 150695.374,
-				["CombatEndedAt"] = 150695.374,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "12:10:50",
-				["end_time"] = 150695.374,
-				["combat_id"] = 59,
 				["totals_grupo"] = {
 					0, -- [1]
 					0, -- [2]
@@ -575,7 +555,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:11:00",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf",
+				["TotalElapsedCombatTime"] = 150695.374,
+				["CombatEndedAt"] = 150695.374,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -596,14 +587,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 94,
+				["end_time"] = 150695.374,
+				["combat_id"] = 59,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "12:10:50",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Prairie Wolf",
 				["start_time"] = 150685.65,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
 				},
 			}, -- [2]
 			{
@@ -622,16 +622,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 235.00302,
 							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 235.00302,
+							["fight_component"] = true,
 							["end_time"] = 1693735807,
+							["total"] = 235.00302,
 							["damage_taken"] = 123.00302,
 							["nome"] = "Prairie Wolf",
 							["spells"] = {
@@ -650,8 +650,8 @@ _detalhes_database = {
 										["n_min"] = 5,
 										["g_dmg"] = 0,
 										["counter"] = 46,
-										["r_amt"] = 0,
 										["total"] = 235,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
@@ -686,8 +686,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
@@ -706,7 +706,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1693735734,
 							["serial"] = "Creature-0-5252-1-82-2958-0000F4573A",
-							["fight_component"] = true,
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -719,17 +719,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 123.005488,
+							["end_time"] = 1693735807,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 123.005488,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1693735807,
+							["total"] = 123.005488,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 235.005488,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -755,8 +756,8 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["RESIST"] = 1,
@@ -777,17 +778,17 @@ _detalhes_database = {
 										["n_min"] = 26,
 										["g_dmg"] = 79,
 										["counter"] = 17,
-										["r_amt"] = 0,
 										["total"] = 105,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 5,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_dmg"] = 0,
 										["n_amt"] = 1,
@@ -831,11 +832,10 @@ _detalhes_database = {
 							["last_dps"] = 1.722452326607189,
 							["colocacao"] = 1,
 							["last_event"] = 1693735806,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 235.005488,
 							["start_time"] = 1693735736,
 							["serial"] = "Player-5220-01BB9E3B",
-							["classe"] = "SHAMAN",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -851,7 +851,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.00621,
 							["total_without_pet"] = 162.00621,
 							["total"] = 162.00621,
@@ -893,12 +893,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
 										["n_amt"] = 4,
 										["n_curado"] = 162,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -907,13 +907,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["tipo"] = 2,
-							["custom"] = 0,
 							["last_event"] = 1693735785,
+							["custom"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.00621,
 							["start_time"] = 1693735795,
 							["delay"] = 1693735785,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "SHAMAN",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -944,7 +944,7 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["classe"] = "SHAMAN",
+							["tipo"] = 4,
 							["nome"] = "Dopede",
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -955,8 +955,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
 							["fight_component"] = true,
 						}, -- [2]
@@ -977,9 +977,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 93,
 				["playing_solo"] = true,
 				["totals"] = {
 					358, -- [1]
@@ -1004,24 +1002,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:10:08",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf",
-				["TotalElapsedCombatTime"] = 150643.497,
-				["CombatEndedAt"] = 150643.497,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "12:08:55",
-				["end_time"] = 150643.497,
-				["combat_id"] = 58,
 				["totals_grupo"] = {
 					123, -- [1]
 					162, -- [2]
@@ -1043,7 +1023,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:10:08",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Wolf",
+				["TotalElapsedCombatTime"] = 150643.497,
+				["CombatEndedAt"] = 150643.497,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -1065,15 +1056,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 93,
+				["end_time"] = 150643.497,
+				["combat_id"] = 58,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Prairie Wolf"] = 1,
+				},
+				["data_inicio"] = "12:08:55",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 150570.616,
 				["contra"] = "Prairie Wolf",
-				["frags"] = {
-					["Prairie Wolf"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [3]
 			{
@@ -1092,17 +1092,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["tipo"] = 1,
 							["classe"] = "SHAMAN",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 95.008662,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734810,
+							["total"] = 95.008662,
+							["friendlyfire"] = {
+							},
 							["damage_taken"] = 23.008662,
-							["on_hold"] = false,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1129,9 +1130,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 6,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -1144,11 +1145,10 @@ _detalhes_database = {
 							["last_dps"] = 5.982536490136774,
 							["custom"] = 0,
 							["last_event"] = 1693734809,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1693734794,
 							["delay"] = 0,
-							["total"] = 95.008662,
+							["end_time"] = 1693734810,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -1161,18 +1161,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 23.005478,
 							["serial"] = "Creature-0-5252-1-82-2954-0000745333",
-							["dps_started"] = false,
+							["fight_component"] = true,
 							["total"] = 23.005478,
 							["monster"] = true,
-							["damage_taken"] = 95.005478,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Bristleback Battleboar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1199,9 +1199,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 6,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -1214,10 +1214,10 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1693734808,
-							["on_hold"] = false,
+							["damage_taken"] = 95.005478,
 							["start_time"] = 1693734796,
 							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1254,7 +1254,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 89,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					117.98512, -- [1]
@@ -1279,32 +1281,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:53:31",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Battleboar",
-				["TotalElapsedCombatTime"] = 149646.624,
-				["CombatEndedAt"] = 149646.624,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:53:15",
-				["end_time"] = 149646.624,
-				["combat_id"] = 57,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Bristleback Battleboar"] = 1,
-				},
 				["totals_grupo"] = {
 					95, -- [1]
 					0, -- [2]
@@ -1326,12 +1302,19 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:53:31",
+				["cleu_timeline"] = {
 				},
-				["TimeData"] = {
+				["enemy"] = "Bristleback Battleboar",
+				["TotalElapsedCombatTime"] = 149646.624,
+				["CombatEndedAt"] = 149646.624,
+				["aura_timeline"] = {
 				},
-				["start_time"] = 149630.743,
-				["contra"] = "Bristleback Battleboar",
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1351,6 +1334,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149646.624,
+				["combat_id"] = 57,
+				["combat_counter"] = 89,
+				["frags"] = {
+					["Bristleback Battleboar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 149630.743,
+				["contra"] = "Bristleback Battleboar",
+				["data_inicio"] = "11:53:15",
 			}, -- [4]
 			{
 				{
@@ -1370,17 +1370,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734775,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734775,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 194.007935,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734776,
+							["total"] = 194.007935,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 85.007935,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1452,11 +1453,10 @@ _detalhes_database = {
 							["last_dps"] = 5.517388590279483,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 85.007935,
 							["start_time"] = 1693734740,
 							["delay"] = 0,
-							["total"] = 194.007935,
+							["end_time"] = 1693734776,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -1469,16 +1469,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 66.006055,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734776,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 66.006055,
 							["serial"] = "Creature-0-5252-1-82-3229-00007452A1",
-							["monster"] = true,
-							["end_time"] = 1693734776,
 							["fight_component"] = true,
+							["total"] = 66.006055,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "\"Squealer\" Thornmantle",
 							["spells"] = {
@@ -1498,7 +1498,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 15,
 										["MISS"] = 1,
-										["total"] = 66,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = "!Melee",
@@ -1512,7 +1512,7 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["n_amt"] = 13,
 										["spellschool"] = 1,
-										["r_amt"] = 0,
+										["total"] = 66,
 									},
 								},
 								["tipo"] = 2,
@@ -1526,7 +1526,7 @@ _detalhes_database = {
 							["damage_taken"] = 108.006055,
 							["start_time"] = 1693734741,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -1539,16 +1539,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 19.001913,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734776,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19.001913,
 							["serial"] = "Creature-0-5252-1-82-2953-00007452A1",
-							["monster"] = true,
-							["end_time"] = 1693734776,
 							["fight_component"] = true,
+							["total"] = 19.001913,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Shaman",
 							["spells"] = {
@@ -1574,11 +1574,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
@@ -1604,9 +1604,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 4,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -1623,7 +1623,7 @@ _detalhes_database = {
 							["damage_taken"] = 86.001913,
 							["start_time"] = 1693734762,
 							["delay"] = 1693734757,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1639,7 +1639,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "SHAMAN",
 							["totalover"] = 0.001728,
 							["total_without_pet"] = 40.001728,
 							["total"] = 40.001728,
@@ -1681,12 +1681,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["n_curado"] = 40,
 										["n_amt"] = 1,
-										["m_healed"] = 0,
 										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -1695,13 +1695,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1693734765,
+							["tipo"] = 2,
 							["start_time"] = 1693734775,
 							["totaldenied"] = 0.001728,
 							["delay"] = 1693734765,
-							["tipo"] = 2,
+							["last_event"] = 1693734765,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -1783,7 +1783,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 88,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					278.993728, -- [1]
@@ -1808,33 +1810,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:52:57",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "\"Squealer\" Thornmantle",
-				["TotalElapsedCombatTime"] = 149613.028,
-				["CombatEndedAt"] = 149613.028,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:52:21",
-				["end_time"] = 149613.028,
-				["combat_id"] = 56,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["\"Squealer\" Thornmantle"] = 1,
-					["Bristleback Shaman"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					194, -- [1]
 					40, -- [2]
@@ -1856,11 +1831,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:52:57",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "\"Squealer\" Thornmantle",
-				["start_time"] = 149576.448,
-				["TimeData"] = {
+				["enemy"] = "\"Squealer\" Thornmantle",
+				["TotalElapsedCombatTime"] = 149613.028,
+				["CombatEndedAt"] = 149613.028,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -1882,6 +1864,24 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149613.028,
+				["combat_id"] = 56,
+				["combat_counter"] = 88,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["\"Squealer\" Thornmantle"] = 1,
+					["Bristleback Shaman"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "\"Squealer\" Thornmantle",
+				["start_time"] = 149576.448,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:52:21",
 			}, -- [5]
 			{
 				{
@@ -1899,17 +1899,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734728,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734728,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 78.006108,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734728,
+							["total"] = 78.006108,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 9.006108,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1950,11 +1951,10 @@ _detalhes_database = {
 							["last_dps"] = 8.133261182370505,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 9.006108,
 							["start_time"] = 1693734719,
 							["delay"] = 0,
-							["total"] = 78.006108,
+							["end_time"] = 1693734728,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -1967,16 +1967,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 9.007557,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734728,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9.007557,
 							["serial"] = "Creature-0-5252-1-82-2953-0000745319",
-							["monster"] = true,
-							["end_time"] = 1693734728,
 							["fight_component"] = true,
+							["total"] = 9.007557,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Shaman",
 							["spells"] = {
@@ -2004,9 +2004,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -2032,11 +2032,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 								},
@@ -2051,7 +2051,7 @@ _detalhes_database = {
 							["damage_taken"] = 78.00755699999999,
 							["start_time"] = 1693734719,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2103,7 +2103,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 87,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					87, -- [1]
@@ -2128,32 +2130,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:52:09",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Shaman",
-				["TotalElapsedCombatTime"] = 9.691999999980908,
-				["CombatEndedAt"] = 149565.172,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:52:00",
-				["end_time"] = 149565.172,
-				["combat_id"] = 55,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Shaman"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					78, -- [1]
 					0, -- [2]
@@ -2175,11 +2151,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:52:09",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Shaman",
-				["start_time"] = 149555.48,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Shaman",
+				["TotalElapsedCombatTime"] = 9.691999999980908,
+				["CombatEndedAt"] = 149565.172,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -2200,6 +2183,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149565.172,
+				["combat_id"] = 55,
+				["combat_counter"] = 87,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Shaman"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Shaman",
+				["start_time"] = 149555.48,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:52:00",
 			}, -- [6]
 			{
 				{
@@ -2217,17 +2217,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734711,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734711,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 77.003567,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734711,
+							["total"] = 77.003567,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 9.003567,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2297,11 +2298,10 @@ _detalhes_database = {
 							["last_dps"] = 7.351175847251286,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 9.003567,
 							["start_time"] = 1693734700,
 							["delay"] = 0,
-							["total"] = 77.003567,
+							["end_time"] = 1693734711,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2314,16 +2314,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 9.00677,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734711,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9.00677,
 							["serial"] = "Creature-0-5252-1-82-2953-0000745309",
-							["monster"] = true,
-							["end_time"] = 1693734711,
 							["fight_component"] = true,
+							["total"] = 9.00677,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Shaman",
 							["spells"] = {
@@ -2349,11 +2349,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
@@ -2397,7 +2397,7 @@ _detalhes_database = {
 							["damage_taken"] = 77.00677,
 							["start_time"] = 1693734703,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2423,13 +2423,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 1,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2462,7 +2462,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 86,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					86, -- [1]
@@ -2487,32 +2489,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:51:52",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Shaman",
-				["TotalElapsedCombatTime"] = 149548.174,
-				["CombatEndedAt"] = 149548.174,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:51:41",
-				["end_time"] = 149548.174,
-				["combat_id"] = 54,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Bristleback Shaman"] = 1,
-				},
 				["totals_grupo"] = {
 					77, -- [1]
 					0, -- [2]
@@ -2534,12 +2510,19 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:51:52",
+				["cleu_timeline"] = {
 				},
-				["TimeData"] = {
+				["enemy"] = "Bristleback Shaman",
+				["TotalElapsedCombatTime"] = 149548.174,
+				["CombatEndedAt"] = 149548.174,
+				["aura_timeline"] = {
 				},
-				["start_time"] = 149537.115,
-				["contra"] = "Bristleback Shaman",
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2559,6 +2542,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149548.174,
+				["combat_id"] = 54,
+				["combat_counter"] = 86,
+				["frags"] = {
+					["Bristleback Shaman"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 149537.115,
+				["contra"] = "Bristleback Shaman",
+				["data_inicio"] = "11:51:41",
 			}, -- [7]
 			{
 				{
@@ -2576,17 +2576,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734690,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734690,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 76.00873200000001,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734691,
+							["total"] = 76.00873200000001,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 18.008732,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2613,9 +2614,9 @@ _detalhes_database = {
 										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
@@ -2658,11 +2659,10 @@ _detalhes_database = {
 							["last_dps"] = 5.373540615051249,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 18.008732,
 							["start_time"] = 1693734676,
 							["delay"] = 0,
-							["total"] = 76.00873200000001,
+							["end_time"] = 1693734691,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2675,16 +2675,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 18.004069,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734691,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18.004069,
 							["serial"] = "Creature-0-5252-1-82-2952-000074536C",
-							["monster"] = true,
-							["end_time"] = 1693734691,
 							["fight_component"] = true,
+							["total"] = 18.004069,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -2730,7 +2730,7 @@ _detalhes_database = {
 							["damage_taken"] = 76.004069,
 							["start_time"] = 1693734679,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2756,13 +2756,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 1,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -2781,7 +2781,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 85,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					94, -- [1]
@@ -2806,32 +2808,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:51:32",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149527.54,
-				["CombatEndedAt"] = 149527.54,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:51:17",
-				["end_time"] = 149527.54,
-				["combat_id"] = 53,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					76, -- [1]
 					0, -- [2]
@@ -2853,11 +2829,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:51:32",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149512.661,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149527.54,
+				["CombatEndedAt"] = 149527.54,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -2878,6 +2861,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149527.54,
+				["combat_id"] = 53,
+				["combat_counter"] = 85,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149512.661,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:51:17",
 			}, -- [8]
 			{
 				{
@@ -2895,16 +2895,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 34.003069,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734659,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 34.003069,
 							["serial"] = "Creature-0-5252-1-82-8554-00007451D6",
-							["monster"] = true,
-							["end_time"] = 1693734659,
 							["fight_component"] = true,
+							["total"] = 34.003069,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Chief Sharptusk Thornmantle",
 							["spells"] = {
@@ -2924,7 +2924,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 10,
 										["MISS"] = 1,
-										["total"] = 34,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 2,
 										["id"] = "!Melee",
@@ -2938,7 +2938,7 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["n_amt"] = 7,
 										["spellschool"] = 1,
-										["r_amt"] = 0,
+										["total"] = 34,
 									},
 								},
 								["tipo"] = 2,
@@ -2952,7 +2952,7 @@ _detalhes_database = {
 							["damage_taken"] = 110.003069,
 							["start_time"] = 1693734640,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -2965,17 +2965,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734659,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734659,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 110.006866,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734659,
+							["total"] = 110.006866,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 34.006866,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3046,11 +3047,10 @@ _detalhes_database = {
 							["last_dps"] = 5.830958655789079,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 34.006866,
 							["start_time"] = 1693734641,
 							["delay"] = 0,
-							["total"] = 110.006866,
+							["end_time"] = 1693734659,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3076,13 +3076,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 2,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3101,7 +3101,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 84,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					144, -- [1]
@@ -3126,32 +3128,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:51:00",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Chief Sharptusk Thornmantle",
-				["TotalElapsedCombatTime"] = 149495.496,
-				["CombatEndedAt"] = 149495.496,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:50:41",
-				["end_time"] = 149495.496,
-				["combat_id"] = 52,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Chief Sharptusk Thornmantle"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					110, -- [1]
 					0, -- [2]
@@ -3173,11 +3149,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:51:00",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Chief Sharptusk Thornmantle",
-				["start_time"] = 149476.58,
-				["TimeData"] = {
+				["enemy"] = "Chief Sharptusk Thornmantle",
+				["TotalElapsedCombatTime"] = 149495.496,
+				["CombatEndedAt"] = 149495.496,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -3198,6 +3181,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149495.496,
+				["combat_id"] = 52,
+				["combat_counter"] = 84,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Chief Sharptusk Thornmantle"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Chief Sharptusk Thornmantle",
+				["start_time"] = 149476.58,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:50:41",
 			}, -- [9]
 			{
 				{
@@ -3215,17 +3215,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734633,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734633,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 89.002238,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734633,
+							["total"] = 89.002238,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 24.002238,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3295,11 +3296,10 @@ _detalhes_database = {
 							["last_dps"] = 7.039645495541237,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 24.002238,
 							["start_time"] = 1693734621,
 							["delay"] = 0,
-							["total"] = 89.002238,
+							["end_time"] = 1693734633,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3312,16 +3312,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 24.00137,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734633,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 24.00137,
 							["serial"] = "Creature-0-5252-1-82-2952-0000745233",
-							["monster"] = true,
-							["end_time"] = 1693734633,
 							["fight_component"] = true,
+							["total"] = 24.00137,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -3367,7 +3367,7 @@ _detalhes_database = {
 							["damage_taken"] = 89.00137000000001,
 							["start_time"] = 1693734622,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3404,7 +3404,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 83,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					113, -- [1]
@@ -3429,32 +3431,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:50:34",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149469.941,
-				["CombatEndedAt"] = 149469.941,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:50:21",
-				["end_time"] = 149469.941,
-				["combat_id"] = 51,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					89, -- [1]
 					0, -- [2]
@@ -3476,11 +3452,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:50:34",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149457.298,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149469.941,
+				["CombatEndedAt"] = 149469.941,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -3501,6 +3484,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149469.941,
+				["combat_id"] = 51,
+				["combat_counter"] = 83,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149457.298,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:50:21",
 			}, -- [10]
 			{
 				{
@@ -3518,17 +3518,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734614,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734614,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 86.003793,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734615,
+							["total"] = 86.003793,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 8.003793,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3598,11 +3599,10 @@ _detalhes_database = {
 							["last_dps"] = 8.99809510358758,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 8.003793,
 							["start_time"] = 1693734605,
 							["delay"] = 0,
-							["total"] = 86.003793,
+							["end_time"] = 1693734615,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3615,16 +3615,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 8.006263,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734615,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8.006263,
 							["serial"] = "Creature-0-5252-1-82-2952-00007453B0",
-							["monster"] = true,
-							["end_time"] = 1693734615,
 							["fight_component"] = true,
+							["total"] = 8.006263,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -3652,9 +3652,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -3671,7 +3671,7 @@ _detalhes_database = {
 							["damage_taken"] = 86.006263,
 							["start_time"] = 1693734607,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3697,13 +3697,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 3,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3722,7 +3722,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 82,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					94, -- [1]
@@ -3747,32 +3749,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:50:16",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149451.376,
-				["CombatEndedAt"] = 149451.376,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:50:06",
-				["end_time"] = 149451.376,
-				["combat_id"] = 50,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					86, -- [1]
 					0, -- [2]
@@ -3794,11 +3770,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:50:16",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149441.668,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149451.376,
+				["CombatEndedAt"] = 149451.376,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -3819,6 +3802,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149451.376,
+				["combat_id"] = 50,
+				["combat_counter"] = 82,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149441.668,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:50:06",
 			}, -- [11]
 			{
 				{
@@ -3836,17 +3836,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734598,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734598,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 97.005036,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734599,
+							["total"] = 97.005036,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 6.005036,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3916,11 +3917,10 @@ _detalhes_database = {
 							["last_dps"] = 9.56468507198494,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 6.005036,
 							["start_time"] = 1693734588,
 							["delay"] = 0,
-							["total"] = 97.005036,
+							["end_time"] = 1693734599,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3933,16 +3933,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 6.003443,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734599,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6.003443,
 							["serial"] = "Creature-0-5252-1-82-2952-00007452F9",
-							["monster"] = true,
-							["end_time"] = 1693734599,
 							["fight_component"] = true,
+							["total"] = 6.003443,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -3970,9 +3970,9 @@ _detalhes_database = {
 										["b_dmg"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -3989,7 +3989,7 @@ _detalhes_database = {
 							["damage_taken"] = 97.003443,
 							["start_time"] = 1693734592,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4015,13 +4015,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 3,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4040,7 +4040,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 81,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					103, -- [1]
@@ -4065,32 +4067,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:50:00",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149435.613,
-				["CombatEndedAt"] = 149435.613,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:49:49",
-				["end_time"] = 149435.613,
-				["combat_id"] = 49,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					97, -- [1]
 					0, -- [2]
@@ -4112,11 +4088,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:50:00",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149424.587,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149435.613,
+				["CombatEndedAt"] = 149435.613,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4137,6 +4120,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149435.613,
+				["combat_id"] = 49,
+				["combat_counter"] = 81,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149424.587,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:49:49",
 			}, -- [12]
 			{
 				{
@@ -4154,17 +4154,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734582,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734582,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 94.007875,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734582,
+							["total"] = 94.007875,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 18.007875,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4234,11 +4235,10 @@ _detalhes_database = {
 							["last_dps"] = 9.887239692888503,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 18.007875,
 							["start_time"] = 1693734572,
 							["delay"] = 0,
-							["total"] = 94.007875,
+							["end_time"] = 1693734582,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4251,16 +4251,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 18.004587,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734582,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18.004587,
 							["serial"] = "Creature-0-5252-1-82-2954-00007452EF",
-							["monster"] = true,
-							["end_time"] = 1693734582,
 							["fight_component"] = true,
+							["total"] = 18.004587,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Battleboar",
 							["spells"] = {
@@ -4285,11 +4285,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
@@ -4333,7 +4333,7 @@ _detalhes_database = {
 							["damage_taken"] = 94.004587,
 							["start_time"] = 1693734576,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4359,13 +4359,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 2,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4399,7 +4399,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 80,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					112, -- [1]
@@ -4424,32 +4426,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:49:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Battleboar",
-				["TotalElapsedCombatTime"] = 149418.615,
-				["CombatEndedAt"] = 149418.615,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:49:33",
-				["end_time"] = 149418.615,
-				["combat_id"] = 48,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Battleboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					94, -- [1]
 					0, -- [2]
@@ -4471,11 +4447,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:49:43",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Battleboar",
-				["start_time"] = 149409.057,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Battleboar",
+				["TotalElapsedCombatTime"] = 149418.615,
+				["CombatEndedAt"] = 149418.615,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4496,6 +4479,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149418.615,
+				["combat_id"] = 48,
+				["combat_counter"] = 80,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Battleboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Battleboar",
+				["start_time"] = 149409.057,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:49:33",
 			}, -- [13]
 			{
 				{
@@ -4513,17 +4513,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734567,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734567,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 91.00519299999999,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734567,
+							["total"] = 91.00519299999999,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 19.005193,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4593,11 +4594,10 @@ _detalhes_database = {
 							["last_dps"] = 8.142184217592575,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 19.005193,
 							["start_time"] = 1693734556,
 							["delay"] = 0,
-							["total"] = 91.00519299999999,
+							["end_time"] = 1693734567,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4610,16 +4610,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 19.008062,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734567,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 19.008062,
 							["serial"] = "Creature-0-5252-1-82-2952-0000745323",
-							["monster"] = true,
-							["end_time"] = 1693734567,
 							["fight_component"] = true,
+							["total"] = 19.008062,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -4665,7 +4665,7 @@ _detalhes_database = {
 							["damage_taken"] = 91.008062,
 							["start_time"] = 1693734558,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4691,13 +4691,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 2,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4716,7 +4716,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 79,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					110, -- [1]
@@ -4741,32 +4743,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:49:28",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149403.986,
-				["CombatEndedAt"] = 149403.986,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:49:17",
-				["end_time"] = 149403.986,
-				["combat_id"] = 47,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					91, -- [1]
 					0, -- [2]
@@ -4788,11 +4764,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:49:28",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149392.526,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149403.986,
+				["CombatEndedAt"] = 149403.986,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4813,6 +4796,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149403.986,
+				["combat_id"] = 47,
+				["combat_counter"] = 79,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149392.526,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:49:17",
 			}, -- [14]
 			{
 				{
@@ -4830,17 +4830,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734551,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734551,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 78.004816,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734552,
+							["total"] = 78.004816,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 10.004816,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4910,11 +4911,10 @@ _detalhes_database = {
 							["last_dps"] = 7.670844330813538,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 10.004816,
 							["start_time"] = 1693734541,
 							["delay"] = 0,
-							["total"] = 78.004816,
+							["end_time"] = 1693734552,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4927,16 +4927,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 10.005167,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734552,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10.005167,
 							["serial"] = "Creature-0-5252-1-82-2952-0000745386",
-							["monster"] = true,
-							["end_time"] = 1693734552,
 							["fight_component"] = true,
+							["total"] = 10.005167,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -4982,7 +4982,7 @@ _detalhes_database = {
 							["damage_taken"] = 78.005167,
 							["start_time"] = 1693734545,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5019,7 +5019,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 78,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					88, -- [1]
@@ -5044,32 +5046,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:49:13",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Quilboar",
-				["TotalElapsedCombatTime"] = 149388.99,
-				["CombatEndedAt"] = 149388.99,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:49:02",
-				["end_time"] = 149388.99,
-				["combat_id"] = 46,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					78, -- [1]
 					0, -- [2]
@@ -5091,11 +5067,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:49:13",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Quilboar",
-				["start_time"] = 149378.037,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Quilboar",
+				["TotalElapsedCombatTime"] = 149388.99,
+				["CombatEndedAt"] = 149388.99,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -5116,6 +5099,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149388.99,
+				["combat_id"] = 46,
+				["combat_counter"] = 78,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Quilboar",
+				["start_time"] = 149378.037,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:49:02",
 			}, -- [15]
 			{
 				{
@@ -5133,17 +5133,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1693734535,
 							["classe"] = "SHAMAN",
+							["last_event"] = 1693734535,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 95.008039,
 							["serial"] = "Player-5220-01BB9E3B",
 							["dps_started"] = false,
-							["end_time"] = 1693734536,
+							["total"] = 95.008039,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 16.008039,
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5213,11 +5214,10 @@ _detalhes_database = {
 							["last_dps"] = 9.171545419444916,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 16.008039,
 							["start_time"] = 1693734524,
 							["delay"] = 0,
-							["total"] = 95.008039,
+							["end_time"] = 1693734536,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5230,16 +5230,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 16.003059,
-							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["end_time"] = 1693734536,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 16.003059,
 							["serial"] = "Creature-0-5252-1-82-2954-0000745396",
-							["monster"] = true,
-							["end_time"] = 1693734536,
 							["fight_component"] = true,
+							["total"] = 16.003059,
+							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Bristleback Battleboar",
 							["spells"] = {
@@ -5285,7 +5285,7 @@ _detalhes_database = {
 							["damage_taken"] = 95.00305900000001,
 							["start_time"] = 1693734529,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5311,13 +5311,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 2,
 							},
-							["tipo"] = 4,
-							["classe"] = "SHAMAN",
 							["serial"] = "Player-5220-01BB9E3B",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5336,7 +5336,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 77,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					111, -- [1]
@@ -5361,32 +5363,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:48:56",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Battleboar",
-				["TotalElapsedCombatTime"] = 149372.357,
-				["CombatEndedAt"] = 149372.357,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:48:45",
-				["end_time"] = 149372.357,
-				["combat_id"] = 45,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Bristleback Battleboar"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					95, -- [1]
 					0, -- [2]
@@ -5408,11 +5384,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:48:56",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Bristleback Battleboar",
-				["start_time"] = 149361.017,
-				["TimeData"] = {
+				["enemy"] = "Bristleback Battleboar",
+				["TotalElapsedCombatTime"] = 149372.357,
+				["CombatEndedAt"] = 149372.357,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -5433,6 +5416,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 149372.357,
+				["combat_id"] = 45,
+				["combat_counter"] = 77,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Bristleback Battleboar"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bristleback Battleboar",
+				["start_time"] = 149361.017,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:48:45",
 			}, -- [16]
 			{
 				{
@@ -5450,18 +5450,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 105.003065,
+							["end_time"] = 1693734404,
 							["last_event"] = 1693734404,
-							["friendlyfire_total"] = 0,
+							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 105.003065,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1693734404,
+							["total"] = 105.003065,
+							["damage_taken"] = 31.003065,
 							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5532,10 +5531,11 @@ _detalhes_database = {
 							["last_dps"] = 5.025753362374541,
 							["colocacao"] = 1,
 							["tipo"] = 1,
-							["damage_taken"] = 31.003065,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1693734383,
 							["serial"] = "Player-5220-01BB9E3B",
-							["classe"] = "SHAMAN",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5548,17 +5548,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["damage_taken"] = 105.002552,
 							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 31.002552,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 31.002552,
 							["monster"] = true,
-							["on_hold"] = false,
+							["damage_taken"] = 105.002552,
 							["nome"] = "Bristleback Battleboar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5584,8 +5585,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
@@ -5600,11 +5601,10 @@ _detalhes_database = {
 							["end_time"] = 1693734404,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1693734391,
 							["serial"] = "Creature-0-5252-1-82-2954-0000745376",
-							["dps_started"] = false,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5641,9 +5641,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 75,
 				["playing_solo"] = true,
 				["totals"] = {
 					136, -- [1]
@@ -5668,24 +5666,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:46:45",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bristleback Battleboar",
-				["TotalElapsedCombatTime"] = 149240.457,
-				["CombatEndedAt"] = 149240.457,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:46:24",
-				["end_time"] = 149240.457,
-				["combat_id"] = 44,
 				["totals_grupo"] = {
 					105, -- [1]
 					0, -- [2]
@@ -5707,8 +5687,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
-					["Bristleback Battleboar"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:46:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bristleback Battleboar",
+				["TotalElapsedCombatTime"] = 149240.457,
+				["CombatEndedAt"] = 149240.457,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -5729,14 +5719,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 75,
+				["end_time"] = 149240.457,
+				["combat_id"] = 44,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "11:46:24",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Bristleback Battleboar",
 				["start_time"] = 149219.564,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Bristleback Battleboar"] = 1,
 				},
 			}, -- [17]
 			{
@@ -5755,18 +5755,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 88.001316,
+							["end_time"] = 1693734350,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 88.001316,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1693734350,
+							["total"] = 88.001316,
+							["on_hold"] = false,
 							["damage_taken"] = 15.001316,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Dopede",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5836,10 +5835,11 @@ _detalhes_database = {
 							["last_dps"] = 7.252457227630283,
 							["colocacao"] = 1,
 							["last_event"] = 1693734349,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1693734337,
 							["serial"] = "Player-5220-01BB9E3B",
-							["classe"] = "SHAMAN",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5852,16 +5852,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 15.007163,
 							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 15.007163,
+							["monster"] = true,
 							["end_time"] = 1693734350,
+							["total"] = 15.007163,
 							["damage_taken"] = 88.00716299999999,
 							["nome"] = "Bristleback Quilboar",
 							["spells"] = {
@@ -5888,8 +5888,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
@@ -5908,7 +5908,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1693734339,
 							["serial"] = "Creature-0-5252-1-82-2952-0000F451A2",
-							["monster"] = true,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5985,9 +5985,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "11:45:37",
-				["end_time"] = 149186.598,
-				["combat_id"] = 43,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -6007,7 +6004,11 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["spells_cast_timeline"] = {
+				["end_time"] = 149186.598,
+				["combat_id"] = 43,
+				["data_inicio"] = "11:45:37",
+				["frags"] = {
+					["Bristleback Quilboar"] = 1,
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -6039,8 +6040,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 149173.323,
 				["contra"] = "Bristleback Quilboar",
-				["frags"] = {
-					["Bristleback Quilboar"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -6103,7 +6103,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["use_square_mode"] = false,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -6114,17 +6117,17 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["author"] = "Details! Team",
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["use_spark"] = false,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -6134,11 +6137,7 @@ _detalhes_database = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
+			["use_spark"] = false,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -6150,15 +6149,15 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["font_size"] = 10,
 			["scale"] = 1,
 			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["last_day"] = "24",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -6170,10 +6169,11 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["cached_roles"] = {
-	},
 	["cached_talents"] = {
 	},
+	["cached_roles"] = {
+	},
+	["last_day"] = "25",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -6203,7 +6203,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -6383,13 +6383,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["version"] = 3,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -6412,7 +6412,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -6428,11 +6428,15 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
-			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -6449,13 +6453,9 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
+			["bars_grow_direction"] = 1,
 			["auto_current"] = true,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -6568,7 +6568,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -6623,7 +6623,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 174,
+	["combat_counter"] = 176,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -6694,11 +6694,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -6730,11 +6730,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Earth Shock"] = {
@@ -6758,11 +6758,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -6788,10 +6788,10 @@ _detalhes_database = {
 						["Seathy"] = 0,
 						["Dopede"] = 0,
 						["Krislok"] = 0,
-						["Catrabbit"] = 0,
 						["Krauty"] = 0,
-						["Milchturbine"] = 0,
 						["Theooeight"] = 0,
+						["Milchturbine"] = 0,
+						["Catrabbit"] = 0,
 					},
 					["pets"] = {
 					},
@@ -6800,11 +6800,11 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006505,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1693726658,
 					["serial"] = "Creature-0-5210-1-578-2955-00007434B6",
-					["on_hold"] = false,
+					["damage_taken"] = 0.006505,
 					["nome"] = "Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6818,10 +6818,10 @@ _detalhes_database = {
 									["Seathy"] = 0,
 									["Dopede"] = 0,
 									["Krislok"] = 0,
-									["Catrabbit"] = 0,
 									["Krauty"] = 0,
-									["Milchturbine"] = 0,
 									["Theooeight"] = 0,
+									["Milchturbine"] = 0,
+									["Catrabbit"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -6835,23 +6835,23 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.006505,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006505,
+					["last_dps"] = 0,
 					["start_time"] = 1693726655,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -6872,11 +6872,11 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005014,
-					["dps_started"] = false,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693729541,
 					["serial"] = "Creature-0-5210-1-578-2961-0000744177",
-					["damage_taken"] = 0.005014,
+					["last_dps"] = 0,
 					["nome"] = "Mountain Cougar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6902,23 +6902,23 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.005014,
 					["total"] = 0.005014,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1693729538,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -6933,18 +6933,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003283,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003283,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1693734078,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003283,
 					["nome"] = "Battleboar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6968,8 +6967,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -6984,10 +6983,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1693734075,
 					["serial"] = "Creature-0-5252-1-82-2966-00007453F3",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [4]
 				{
 					["flag_original"] = 68168,
@@ -6999,17 +6999,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001428,
 					["serial"] = "Creature-0-5252-1-82-2954-0000745376",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693734444,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001428,
+					["last_dps"] = 0,
 					["nome"] = "Bristleback Battleboar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7034,11 +7035,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Boar Charge"] = {
@@ -7060,8 +7061,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -7076,11 +7077,10 @@ _detalhes_database = {
 					["total"] = 0.001428,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001428,
 					["start_time"] = 1693734441,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
@@ -7092,17 +7092,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007962,
 					["serial"] = "Creature-0-5252-1-82-2952-0000F451A2",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1693734444,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007962,
+					["last_dps"] = 0,
 					["nome"] = "Bristleback Quilboar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7127,11 +7128,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -7142,11 +7143,10 @@ _detalhes_database = {
 					["total"] = 0.007962,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007962,
 					["start_time"] = 1693734441,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
@@ -7158,18 +7158,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.003331,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003331,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1693735173,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "\"Squealer\" Thornmantle",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7193,8 +7193,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -7209,10 +7209,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.003331,
+					["last_dps"] = 0,
 					["start_time"] = 1693735170,
 					["serial"] = "Creature-0-5252-1-82-3229-00007452A1",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
@@ -7224,18 +7224,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.002404,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002404,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1693735173,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bristleback Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7259,8 +7259,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -7287,8 +7287,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -7303,10 +7303,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.002404,
+					["last_dps"] = 0,
 					["start_time"] = 1693735170,
 					["serial"] = "Creature-0-5252-1-82-2953-00007452A1",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -7318,18 +7318,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.00589,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00589,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1693735173,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Chief Sharptusk Thornmantle",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7353,8 +7353,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -7369,10 +7369,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.00589,
+					["last_dps"] = 0,
 					["start_time"] = 1693735170,
 					["serial"] = "Creature-0-5252-1-82-8554-00007451D6",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
@@ -7384,18 +7384,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.001421,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001421,
 					["serial"] = "Creature-0-5252-1-82-2958-000074573A",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1693736090,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Prairie Wolf",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7420,11 +7420,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Threatening Growl"] = {
@@ -7447,11 +7447,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -7462,10 +7462,10 @@ _detalhes_database = {
 					["total"] = 0.001421,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.001421,
+					["last_dps"] = 0,
 					["start_time"] = 1693736087,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
@@ -7477,18 +7477,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.006286,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006286,
 					["serial"] = "Creature-0-5252-1-82-2970-0000745CCD",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1693738643,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006286,
 					["nome"] = "Swoop",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7513,11 +7512,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Swoop"] = {
@@ -7540,11 +7539,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -7555,10 +7554,11 @@ _detalhes_database = {
 					["total"] = 0.006286,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1693738640,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [11]
 			},
 		}, -- [1]
@@ -7577,31 +7577,19 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["iniciar_hps"] = false,
+					["totalover_without_pet"] = 0.003209,
 					["targets_overheal"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "SHAMAN",
 					["totalover"] = 0.003209,
 					["total_without_pet"] = 0.003209,
-					["totalover_without_pet"] = 0.003209,
+					["iniciar_hps"] = false,
 					["totaldenied"] = 0.003209,
 					["fight_component"] = true,
-					["total"] = 0.003209,
-					["healing_taken"] = 0.003209,
-					["classe"] = "SHAMAN",
-					["nome"] = "Dopede",
-					["targets_absorbs"] = {
-					},
-					["grupo"] = true,
 					["end_time"] = 1693734078,
-					["heal_enemy"] = {
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1693734075,
-					["serial"] = "Player-5220-01BB9E3B",
+					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.003209,
+					["nome"] = "Dopede",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Healing Wave"] = {
@@ -7623,16 +7611,28 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["total"] = 0.003209,
+					["heal_enemy"] = {
+					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1693734075,
+					["serial"] = "Player-5220-01BB9E3B",
+					["targets_absorbs"] = {
 					},
 				}, -- [1]
 			},
@@ -7661,6 +7661,11 @@ _detalhes_database = {
 					},
 					["nome"] = "Dopede",
 					["grupo"] = true,
+					["pets"] = {
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Healing Wave"] = 0,
 						["Lightning Bolt"] = 0,
@@ -7668,14 +7673,9 @@ _detalhes_database = {
 						["War Stomp"] = 0,
 						["Earth Shock"] = 0,
 					},
-					["debuff_uptime_targets"] = {
-					},
-					["classe"] = "SHAMAN",
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["serial"] = "Player-5220-01BB9E3B",
 					["tipo"] = 4,
+					["serial"] = "Player-5220-01BB9E3B",
+					["classe"] = "SHAMAN",
 				}, -- [1]
 				{
 					["monster"] = true,
@@ -7908,7 +7908,7 @@ _detalhes_database = {
 		}, -- [2]
 	},
 	["character_data"] = {
-		["logons"] = 111,
+		["logons"] = 113,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,

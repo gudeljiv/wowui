@@ -79,7 +79,6 @@ data = {
     "druid": {
         "main": [
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
-            {"name": "swipe", "type": "GetSpellTexture", "id": 779, "key": "2"},
             {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
             {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
             # {"name": "shred", "type": "GetSpellTexture", "id": 5221, "key": "8"},
@@ -100,6 +99,7 @@ data = {
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
+            {"name": "swipe", "type": "GetSpellTexture", "id": 779, "key": "2"},
             # {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
         ]
     },

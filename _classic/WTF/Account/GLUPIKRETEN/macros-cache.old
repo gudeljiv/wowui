@@ -17,10 +17,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3770
-END
-VER 3 0000000000000023 "IR" "132093"
-/itemrack toggle dps,heal
+/use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:5503
@@ -29,7 +26,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:0
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
