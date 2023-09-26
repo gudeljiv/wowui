@@ -20,7 +20,7 @@ xVermin.CheckIfLoadedWithTimer(
 				insets = {left = 0, right = 0, top = 0, bottom = 0}
 			}
 		)
-		-- Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.6)
+		-- Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.4)
 		Questie_BaseFrame:ClearAllPoints()
 		Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 1, -10)
 		-- if (Questie_BaseFrame:GetWidth() < width) then
@@ -28,6 +28,9 @@ xVermin.CheckIfLoadedWithTimer(
 		-- end
 
 		local function Update_Questie_BaseFrame()
+			
+			Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.4)
+			
 			if InCombatLockdown() then
 				return
 			end

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10592,
 	["lastSanitation"] = 3,
-	["session"] = 10583,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -181,14 +181,14 @@ BugGrabberDB = {
 		}, -- [23]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [24]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [25]
 		{
@@ -305,14 +305,14 @@ BugGrabberDB = {
 		}, -- [39]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [40]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [41]
 		{
@@ -525,14 +525,14 @@ BugGrabberDB = {
 		}, -- [67]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [68]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [69]
 		{
@@ -577,14 +577,14 @@ BugGrabberDB = {
 		}, -- [74]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [75]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [76]
 		{
@@ -741,32 +741,16 @@ BugGrabberDB = {
 		}, -- [95]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [96]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [97]
-		{
-			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:581: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
-			["time"] = "2023/09/15 12:34:15",
-			["locals"] = "(*temporary) = GameTooltip {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:290\n SetHyperlink = <function> defined =[C]:-1\n SetGuildBankItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:294\n SetVoidDepositItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidWithdrawalItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n questOrder = <table> {\n }\n SetCraftItem = <function> defined =[C]:-1\n comparing = false\n beautyBorder = <table> {\n }\n TopOverlay = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:298\n npcOrder = <table> {\n }\n SetUnitDebuff = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetLootItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBorderBlendMode = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:302\n FadeOut = <function> defined @Interface/AddOns/TacoTip/main.lua:740\n SetTradeSkillItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n _owner = QuestieFrame324 {\n }\n manualOrder = <table> {\n }\n SetInboxItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n layoutType = \"TooltipDefaultLayout\"\n shoppingTooltips = <table> {\n }\n SetRecipeReagentItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestLogItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBuybackItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetUnitBuff = <function> defined =[C]:-1\n Background = TooltipBackground {\n }\n SetTradePlayerItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n BottomOverlay = Texture {\n }\n SetSendMailItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantCostItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n updateTooltip = 0.133000\n SetInventoryItem = <function> defined =[C]:-1\n SetTradeTargetItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n NineSlice = Frame {\n }\n TooltipBackdropOnLoad = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:271\n SetUnitAura = <function> defined =[C]:-1\n SetLootRollItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionSellItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n miniMapIcon = true\n SetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:286\n SetRecipeResultItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n}\n(*temporary) = nil\n",
-			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:581: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:579>",
-			["session"] = 10577,
-			["counter"] = 23,
-		}, -- [98]
-		{
-			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:572: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
-			["time"] = "2023/09/15 12:34:15",
-			["locals"] = "(*temporary) = GameTooltip {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:290\n SetHyperlink = <function> defined =[C]:-1\n SetGuildBankItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:294\n SetVoidDepositItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidWithdrawalItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n questOrder = <table> {\n }\n SetCraftItem = <function> defined =[C]:-1\n comparing = false\n beautyBorder = <table> {\n }\n TopOverlay = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:298\n npcOrder = <table> {\n }\n SetUnitDebuff = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetLootItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBorderBlendMode = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:302\n FadeOut = <function> defined @Interface/AddOns/TacoTip/main.lua:740\n SetTradeSkillItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n _owner = QuestieFrame324 {\n }\n manualOrder = <table> {\n }\n SetInboxItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n layoutType = \"TooltipDefaultLayout\"\n shoppingTooltips = <table> {\n }\n SetRecipeReagentItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestLogItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBuybackItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetUnitBuff = <function> defined =[C]:-1\n Background = TooltipBackground {\n }\n SetTradePlayerItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n BottomOverlay = Texture {\n }\n SetSendMailItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantCostItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n updateTooltip = 0.133000\n SetInventoryItem = <function> defined =[C]:-1\n SetTradeTargetItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n NineSlice = Frame {\n }\n TooltipBackdropOnLoad = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:271\n SetUnitAura = <function> defined =[C]:-1\n SetLootRollItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionSellItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n miniMapIcon = true\n SetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:286\n SetRecipeResultItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n}\n(*temporary) = nil\n",
-			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:572: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:570>",
-			["session"] = 10577,
-			["counter"] = 15,
-		}, -- [99]
 		{
 			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2044: Usage: SaveBindings(1||2)",
 			["time"] = "2023/09/08 08:02:36",
@@ -774,7 +758,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2044: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
 			["session"] = 10579,
 			["counter"] = 13,
-		}, -- [100]
+		}, -- [98]
 		{
 			["message"] = "...ner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:179: attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)",
 			["time"] = "2023/09/25 18:55:26",
@@ -782,7 +766,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua\"]:179: in function `initFunction'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:759: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:1753: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/Auctionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:248: in function <...ionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:243>\n[string \"@Interface/AddOns/Auctionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:347: in function <...ionator/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua:346>",
 			["session"] = 10580,
 			["counter"] = 1,
-		}, -- [101]
+		}, -- [99]
 		{
 			["message"] = "...ner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua:210: attempt to concatenate field 'ACHIEVEMENT_ICON_ATLAS' (a nil value)",
 			["time"] = "2023/09/25 18:55:34",
@@ -790,7 +774,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/RareScanner/Core/Plugins/MapPlugin/RSWorldMapButtonMixin.lua\"]:210: in function `initFunction'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:759: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/AddOns/WeakAuras/Libs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:1753: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/RareScanner/ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:133: in function <...ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua:128>\n[string \"@Interface/AddOns/RareScanner/ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua\"]:436: in function <...ExternalLibs/LibUIDropDownMenu/LibUIDropDownMenu.lua:435>",
 			["session"] = 10580,
 			["counter"] = 2,
-		}, -- [102]
+		}, -- [100]
 		{
 			["message"] = "Interface/FrameXML/UIDropDownMenu.lua:985: attempt to index local 'button' (a nil value)",
 			["time"] = "2023/09/25 18:59:01",
@@ -798,6 +782,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/FrameXML/UIDropDownMenu.lua\"]:985: in function `ToggleDropDownMenu'\n[string \"@Interface/AddOns/nMinimap/core.lua\"]:120: in function <Interface/AddOns/nMinimap/core.lua:118>",
 			["session"] = 10583,
 			["counter"] = 1,
+		}, -- [101]
+		{
+			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:581: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
+			["time"] = "2023/09/15 12:34:15",
+			["locals"] = "(*temporary) = GameTooltip {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:290\n SetHyperlink = <function> defined =[C]:-1\n SetGuildBankItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:294\n SetVoidDepositItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidWithdrawalItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n questOrder = <table> {\n }\n SetCraftItem = <function> defined =[C]:-1\n comparing = false\n beautyBorder = <table> {\n }\n TopOverlay = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:298\n npcOrder = <table> {\n }\n SetUnitDebuff = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetLootItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBorderBlendMode = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:302\n FadeOut = <function> defined @Interface/AddOns/TacoTip/main.lua:740\n SetTradeSkillItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n _owner = QuestieFrame324 {\n }\n manualOrder = <table> {\n }\n SetInboxItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n layoutType = \"TooltipDefaultLayout\"\n shoppingTooltips = <table> {\n }\n SetRecipeReagentItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestLogItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBuybackItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetUnitBuff = <function> defined =[C]:-1\n Background = TooltipBackground {\n }\n SetTradePlayerItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n BottomOverlay = Texture {\n }\n SetSendMailItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantCostItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n updateTooltip = 0.133000\n SetInventoryItem = <function> defined =[C]:-1\n SetTradeTargetItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n NineSlice = Frame {\n }\n TooltipBackdropOnLoad = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:271\n SetUnitAura = <function> defined =[C]:-1\n SetLootRollItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionSellItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n miniMapIcon = true\n SetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:286\n SetRecipeResultItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n}\n(*temporary) = nil\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:581: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:579>",
+			["session"] = 10587,
+			["counter"] = 25,
+		}, -- [102]
+		{
+			["message"] = "...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:572: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
+			["time"] = "2023/09/15 12:34:15",
+			["locals"] = "(*temporary) = GameTooltip {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:290\n SetHyperlink = <function> defined =[C]:-1\n SetGuildBankItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:294\n SetVoidDepositItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetVoidWithdrawalItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n questOrder = <table> {\n }\n SetCraftItem = <function> defined =[C]:-1\n comparing = false\n beautyBorder = <table> {\n }\n TopOverlay = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:298\n npcOrder = <table> {\n }\n SetUnitDebuff = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetLootItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBorderBlendMode = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:302\n FadeOut = <function> defined @Interface/AddOns/TacoTip/main.lua:740\n SetTradeSkillItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n _owner = QuestieFrame324 {\n }\n manualOrder = <table> {\n }\n SetInboxItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n layoutType = \"TooltipDefaultLayout\"\n shoppingTooltips = <table> {\n }\n SetRecipeReagentItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetQuestLogItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBuybackItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetUnitBuff = <function> defined =[C]:-1\n Background = TooltipBackground {\n }\n SetTradePlayerItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n BottomOverlay = Texture {\n }\n SetSendMailItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetMerchantCostItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n updateTooltip = 0.133000\n SetInventoryItem = <function> defined =[C]:-1\n SetTradeTargetItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n NineSlice = Frame {\n }\n TooltipBackdropOnLoad = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:271\n SetUnitAura = <function> defined =[C]:-1\n SetLootRollItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionSellItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n miniMapIcon = true\n SetBackdropColor = <function> defined @Interface/SharedXML/SharedTooltipTemplates.lua:286\n SetRecipeResultItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n SetAuctionItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104\n}\n(*temporary) = nil\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface_Vanilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:572: in function <...nilla/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:570>",
+			["session"] = 10587,
+			["counter"] = 16,
 		}, -- [103]
 	},
 }
