@@ -233,3 +233,7 @@ LibDataBroker-1.1: enabled
 LibSharedMedia-3.0: enabled
 LibStub: enabled
 LibUIDropDownMenu: enabled
+Bagnon_Masque: enabled
+ClassicBestiary: enabled
+Prat-3.0: enabled
+Prat-3.0_Libraries: enabled

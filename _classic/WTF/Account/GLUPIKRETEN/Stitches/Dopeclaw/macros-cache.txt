@@ -49,7 +49,8 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
 #showtooltip
-/cast [@mouseover,help,nodead][] Rejuvenation
+/startattack [form:1][form:3]
+/cast [stealth] Shred;[@mouseover,help,nodead][]Rejuvenation
 END
 VER 3 0000000001000013 " " "134400"
 #showtooltip Prowl
