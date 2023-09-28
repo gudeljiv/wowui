@@ -2,8 +2,8 @@ local ace_refresh_timer_handle = nil
 local entry_cache = {}
 local font_handle = nil
 
-local main_font = L.main_font
-local deathlog_instance_tbl = L.instance_tbl
+local main_font = Deathlog_L.main_font
+local deathlog_instance_tbl = Deathlog_L.instance_tbl
 
 local tmap = {
 	["Warrior"] = { 0, 0.25, 0, 0.25 },
@@ -36,7 +36,7 @@ local presets = {
 }
 
 local LSM30 = LibStub("LibSharedMedia-3.0", true)
-local default_font = L.mini_log_font
+local default_font = Deathlog_L.mini_log_font
 local widget_name = "minilog"
 
 local fonts = LSM30:HashTable("font")
@@ -73,12 +73,14 @@ death_log_icon_frame:Show()
 
 local black_round_tex = death_log_icon_frame:CreateTexture(nil, "OVERLAY")
 black_round_tex:SetPoint("CENTER", death_log_icon_frame, "CENTER", -5, 4)
+black_round_tex:SetParent(UIParent)
 black_round_tex:SetDrawLayer("OVERLAY", 2)
 black_round_tex:SetHeight(40)
 black_round_tex:SetWidth(40)
 black_round_tex:SetTexture("Interface\\PVPFrame\\PVP-Separation-Circle-Cooldown-overlay")
 
 local hc_fire_tex = death_log_icon_frame:CreateTexture(nil, "OVERLAY")
+hc_fire_tex:SetParent(UIParent)
 hc_fire_tex:SetPoint("CENTER", death_log_icon_frame, "CENTER", -4, 4)
 hc_fire_tex:SetDrawLayer("OVERLAY", 3)
 hc_fire_tex:SetHeight(25)
@@ -86,6 +88,7 @@ hc_fire_tex:SetWidth(25)
 hc_fire_tex:SetTexture("Interface\\TARGETINGFRAME\\UI-TargetingFrame-Skull")
 
 local gold_ring_tex = death_log_icon_frame:CreateTexture(nil, "OVERLAY")
+gold_ring_tex:SetParent(UIParent)
 gold_ring_tex:SetPoint("CENTER", death_log_icon_frame, "CENTER", 0, 0)
 gold_ring_tex:SetDrawLayer("OVERLAY", 4)
 gold_ring_tex:SetHeight(50)
@@ -122,18 +125,20 @@ local death_log_frame = AceGUI:Create("Deathlog_MiniLog")
 death_log_frame.frame:SetMovable(false)
 death_log_frame.frame:EnableMouse(false)
 death_log_frame:SetTitle("Deathlog")
-death_log_frame.titletext:SetFont(L.mini_log_font, 19, "THICK")
+death_log_frame.titletext:SetFont(Deathlog_L.mini_log_font, 19, "THICK")
 local subtitle_metadata = {
 	["ColoredName"] = {
 		"Name",
 		80,
 		function(_entry)
 			local class_str, _, _ = GetClassInfo(_entry.player_data["class_id"])
-			if RAID_CLASS_COLORS[class_str:upper()] then
-				return "|c"
-					.. RAID_CLASS_COLORS[class_str:upper()].colorStr
-					.. (_entry.player_data["name"] or "")
-					.. "|r"
+			if Deathlog_L.class_table[class_str] then
+				if RAID_CLASS_COLORS[Deathlog_L.class_table[class_str]:upper()] then
+					return "|c"
+						.. RAID_CLASS_COLORS[Deathlog_L.class_table[class_str]:upper()].colorStr
+						.. (_entry.player_data["name"] or "")
+						.. "|r"
+				end
 			end
 			return class_str or ""
 		end,
@@ -177,8 +182,13 @@ local subtitle_metadata = {
 		function(_entry)
 			local class_str, _, _ = GetClassInfo(_entry.player_data["class_id"])
 			if class_str then
-				if RAID_CLASS_COLORS[class_str:upper()] then
-					return "|c" .. RAID_CLASS_COLORS[class_str:upper()].colorStr .. class_str .. "|r"
+				if Deathlog_L.class_table[class_str] then
+					if RAID_CLASS_COLORS[Deathlog_L.class_table[class_str]:upper()] then
+						return "|c"
+							.. RAID_CLASS_COLORS[Deathlog_L.class_table[class_str]:upper()].colorStr
+							.. class_str
+							.. "|r"
+					end
 				end
 			end
 			return class_str or ""
@@ -395,7 +405,7 @@ local function setupRowEntries()
 				_entry.font_strings[v[1]]:SetWidth(v[2])
 			end
 			_entry.font_strings[v[1]]:SetTextColor(1, 1, 1)
-			_entry.font_strings[v[1]]:SetFont(L.mini_log_font, 14, "")
+			_entry.font_strings[v[1]]:SetFont(Deathlog_L.mini_log_font, 14, "")
 		end
 
 		_entry.background = _entry.frame:CreateTexture(nil, "OVERLAY")

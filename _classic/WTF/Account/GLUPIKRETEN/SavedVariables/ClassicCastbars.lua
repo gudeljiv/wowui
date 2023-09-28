@@ -86,6 +86,7 @@ ClassicCastbarsDB = {
 		["3671Healing Touch"] = 2508,
 		["15989Frost Breath"] = 7000,
 		["3258Poisoned Shot"] = 2502,
+		["3377Shoot"] = 420,
 		["3991Fireball"] = 3033,
 		["3263Fireball"] = 3019,
 		["2990Lesser Heal"] = 2020,

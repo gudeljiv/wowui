@@ -97,12 +97,15 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["iconSize"] = 0.7000000000000001,
+			["petBattleHideBars"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["iconSize"] = 0.7000000000000001,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["Puggle_Broker"] = {
 					["index"] = 3,
@@ -688,13 +691,12 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
-			["desaturated"] = false,
-			["forceColor"] = false,
+			["locked"] = false,
 			["gap"] = 0,
+			["forceColor"] = false,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -705,6 +707,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
+			["strata"] = "HIGH",
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,

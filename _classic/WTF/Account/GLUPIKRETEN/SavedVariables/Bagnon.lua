@@ -217,14 +217,14 @@ Bagnon_Sets = {
 	["display"] = {
 		["merchant"] = false,
 		["tradePartner"] = false,
-		["mailInfo"] = false,
+		["mailInfo"] = true,
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
 		["voidStorageBanker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = false,
+		["banker"] = true,
 	},
 	["fridgeColor"] = {
 	},

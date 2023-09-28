@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10608,
+	["session"] = 10620,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -815,5 +815,13 @@ BugGrabberDB = {
 			["session"] = 10606,
 			["counter"] = 3,
 		}, -- [105]
+		{
+			["message"] = "[string \"CHocolateBar1:SetFrameStrata(\"HIGH\")\"]:1: attempt to index global 'CHocolateBar1' (a nil value)",
+			["time"] = "2023/09/28 11:51:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'CHocolateBar1' (a nil value)\"\n",
+			["stack"] = "[string \"CHocolateBar1:SetFrameStrata(\"HIGH\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10610,
+			["counter"] = 1,
+		}, -- [106]
 	},
 }

@@ -1,4 +1,4 @@
-strings_it = {
+deathlog_strings_it = {
 	main_font = "Fonts\\FRIZQT__.TTF",
 	class_font = "Fonts\\blei00d.TTF",
 	death_alert_font = "Fonts\\blei00d.TTF",
@@ -14,6 +14,27 @@ strings_it = {
 	death_alert_default_fatigue_message = "<name> the <race> <class> has died from fatigue.\n at lvl <level> in <zone>.",
 	corpse_word = "Cadavere",
 	of_word = "Di",
+	minimap_btn_left_click = "|cFF666666Left Click:|r View log",
+	minimap_btn_right_click = "|cFF666666Right Click:|r ",
+	class_word = "Class",
+	killed_by_word = "Killed by",
+	zone_instance_word = "Zone/Instance",
+	date_word = "Date",
+	last_words_word = "Last words",
+	death_word = "Death",
+	guild_word = "Guild",
+	race_word = "Race",
+	class_table = {
+		Warrior = "warrior";
+		Rogue = "rogue";
+		Mage = "mage";
+		Priest = "priest";
+		Paladin = "paladin";
+		Shaman = "shaman";
+		Druid = "druid";
+		Warlock = "warlock";
+	   	Hunter = "hunter";
+	},
 	tab_table = {
 		{ value = "ClassStatisticsTab", text = "Class Statistics" },
 		{ value = "CreatureStatisticsTab", text = "Creature Statistics" },

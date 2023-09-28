@@ -41,7 +41,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(InCombatLockdown() and not IsCurrentSpell(6603))
+/run CustomContainer_1:SetFrameStrata("HIGH")
+/run ChocolateBar1:SetFrameStrata("HIGH")
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

@@ -16,6 +16,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with the Deathlog AddOn. If not, see <http://www.gnu.org/licenses/>.
 --]]
+local addonName, addon = ...
 
 local save_precompute = false
 local use_precomputed = true
@@ -46,12 +47,22 @@ deathlog_settings = deathlog_settings or {}
 
 local deathlog_minimap_button_stub = nil
 local deathlog_minimap_button_info = {}
-local deathlog_minimap_button = LibStub("LibDataBroker-1.1"):NewDataObject("Deathlog", {
+local deathlog_minimap_button = LibStub("LibDataBroker-1.1"):NewDataObject(addonName, {
 	type = "data source",
-	text = "Deathlog",
+	text = addonName,
 	icon = "Interface\\TARGETINGFRAME\\UI-TargetingFrame-Skull",
 	OnClick = function(self, btn)
-		deathlogShowMenu(deathlog_data, general_stats, log_normal_params)
+		if btn == "LeftButton" then
+			deathlogShowMenu(deathlog_data, general_stats, log_normal_params)
+		else
+			InterfaceAddOnsList_Update()
+			InterfaceOptionsFrame_OpenToCategory(addonName)
+		end
+	end,
+	OnTooltipShow = function(tooltip)
+		tooltip:AddLine(addonName)
+		tooltip:AddLine(Deathlog_L.minimap_btn_left_click)
+		tooltip:AddLine(Deathlog_L.minimap_btn_right_click .. GAMEOPTIONS_MENU)
 	end,
 })
 local function initMinimapButton()
@@ -69,6 +80,7 @@ end
 local function loadWidgets()
 	Deathlog_minilog_applySettings(true)
 	Deathlog_CRTWidget_applySettings()
+	Deathlog_CTTWidget_applySettings()
 	Deathlog_HIWidget_applySettings()
 	Deathlog_HWMWidget_applySettings()
 	Deathlog_DeathAlertWidget_applySettings()
@@ -115,6 +127,9 @@ end
 local function handleEvent(self, event, ...)
 	if event == "PLAYER_ENTERING_WORLD" then
 		initMinimapButton()
+		if deathlog_data[GetRealmName()] and deathlog_data_map[GetRealmName()] then
+			DeathNotificationLib_attachDB(deathlog_data[GetRealmName()], deathlog_data_map[GetRealmName()])
+		end
 		if use_precomputed then
 			general_stats = precomputed_general_stats
 			log_normal_params = precomputed_log_normal_params
@@ -231,8 +246,7 @@ local options = {
 LibStub("AceConfig-3.0"):RegisterOptionsTable("Deathlog", options)
 optionsFrame = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("Deathlog", "Deathlog", nil)
 
--- Hook to DeathNotificationLib
-DeathNotificationLib_HookOnNewEntry(function(_player_data, _checksum, num_peer_checks, in_guild)
+local function newEntry(_player_data, _checksum, num_peer_checks, in_guild)
 	local realmName = GetRealmName()
 	if deathlog_data == nil then
 		deathlog_data = {}
@@ -274,7 +288,16 @@ DeathNotificationLib_HookOnNewEntry(function(_player_data, _checksum, num_peer_c
 	deathlog_widget_minilog_createEntry(_player_data)
 	Deathlog_DeathAlertPlay(_player_data)
 	deathlog_data_map[realmName][_player_data["name"]] = modified_checksum
-end)
+end
+
+-- Hook to DeathNotificationLib
+DeathNotificationLib_HookOnNewEntry(newEntry)
+
+-- C_Timer.After(4, function()
+-- DeathNotificationLib_queryTarget("Hogbishop", "Yazpad")
+-- DeathNotificationLib_queryYell("Hogbishop")
+-- Deathlog_queryGuild("Hogbishop")
+-- end)
 
 -- DeathNotificationLib_HookOnNewEntrySecure(function()
 -- 	print("secure!")

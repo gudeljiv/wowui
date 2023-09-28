@@ -8,6 +8,7 @@ local death_alert_styles = {
 	["boss_banner_enemy_icon_small"] = "boss_banner_enemy_icon_small",
 	["boss_banner_enemy_icon_medium"] = "boss_banner_enemy_icon_medium",
 	["boss_banner_enemy_icon_animated"] = "boss_banner_enemy_icon_animated",
+	["text_only"] = "text_only",
 	-- ["lf_animated"] = "lf_animated",
 }
 local LSM30 = LibStub("LibSharedMedia-3.0", true)
@@ -49,7 +50,7 @@ death_alert_frame.text:SetText(
 		.. " in Elywynn Forest."
 )
 
-death_alert_frame.text:SetFont(L.death_alert_font, 22, "")
+death_alert_frame.text:SetFont(Deathlog_L.death_alert_font, 22, "")
 death_alert_frame.text:SetTextColor(1, 1, 1, 1)
 death_alert_frame.text:SetJustifyH("CENTER")
 death_alert_frame.text:SetParent(death_alert_frame)
@@ -116,10 +117,12 @@ function Deathlog_DeathAlertPlay(entry)
 	end
 	alert_cache[entry["name"]] = 1
 
-	if deathlog_settings[widget_name]["alert_sound"] == "default_hardcore" then
-		PlaySound(8959)
-	else
-		PlaySoundFile(sounds[deathlog_settings[widget_name]["alert_sound"]])
+	if deathlog_settings[widget_name]["enable_sound"] then
+		if deathlog_settings[widget_name]["alert_sound"] == "default_hardcore" then
+			PlaySound(8959)
+		else
+			PlaySoundFile(sounds[deathlog_settings[widget_name]["alert_sound"]])
+		end
 	end
 	death_alert_frame.text:SetText("Some text")
 
@@ -195,6 +198,12 @@ function Deathlog_DeathAlertPlay(entry)
 	)
 
 	death_alert_frame.text:SetText(msg)
+
+	if deathlog_settings[widget_name]["style"] == "text_only" then
+		for _, v in pairs(death_alert_frame.textures) do
+			v:Hide()
+		end
+	end
 
 	if
 		deathlog_settings[widget_name]["style"] == "boss_banner_enemy_icon_small"
@@ -316,6 +325,7 @@ end
 
 local defaults = {
 	["enable"] = true,
+	["enable_sound"] = true,
 	["pos_x"] = 0,
 	["pos_y"] = 250,
 	["size_x"] = 600,
@@ -329,13 +339,13 @@ local defaults = {
 	["font_color_g"] = 1,
 	["font_color_b"] = 1,
 	["font_color_a"] = 1,
-	["message"] = L.death_alert_default_message,
-	["fall_message"] = L.death_alert_default_fall_message,
-	["drown_message"] = L.death_alert_default_drown_message,
-	["slime_message"] = L.death_alert_default_slime_message,
-	["lava_message"] = L.death_alert_default_lava_message,
-	["fire_message"] = L.death_alert_default_fire_message,
-	["fatigue_message"] = L.death_alert_default_fatigue_message,
+	["message"] = Deathlog_L.death_alert_default_message,
+	["fall_message"] = Deathlog_L.death_alert_default_fall_message,
+	["drown_message"] = Deathlog_L.death_alert_default_drown_message,
+	["slime_message"] = Deathlog_L.death_alert_default_slime_message,
+	["lava_message"] = Deathlog_L.death_alert_default_lava_message,
+	["fire_message"] = Deathlog_L.death_alert_default_fire_message,
+	["fatigue_message"] = Deathlog_L.death_alert_default_fatigue_message,
 	["min_lvl"] = 1,
 	["min_lvl_player"] = false,
 	["max_lvl"] = MAX_PLAYER_LEVEL,
@@ -742,6 +752,8 @@ function Deathlog_DeathAlertWidget_applySettings()
 		initializeBossBanner("enemy_icon", "animated")
 	elseif deathlog_settings[widget_name]["style"] == "lf_animated" then
 		initializeLFBanner("enemy_icon", "animated")
+	elseif deathlog_settings[widget_name]["style"] == "text_only" then
+		initializeBossBanner("enemy_icon", "medium")
 	end
 
 	death_alert_frame.text:SetFont(
@@ -782,6 +794,19 @@ options = {
 			end,
 			set = function()
 				deathlog_settings[widget_name]["enable"] = not deathlog_settings[widget_name]["enable"]
+				Deathlog_DeathAlertWidget_applySettings()
+			end,
+		},
+		enable_sound = {
+			type = "toggle",
+			name = "Enable Sound",
+			desc = "Enable alert sound.",
+			order = 0,
+			get = function()
+				return deathlog_settings[widget_name]["enable_sound"]
+			end,
+			set = function()
+				deathlog_settings[widget_name]["enable_sound"] = not deathlog_settings[widget_name]["enable_sound"]
 				Deathlog_DeathAlertWidget_applySettings()
 			end,
 		},
