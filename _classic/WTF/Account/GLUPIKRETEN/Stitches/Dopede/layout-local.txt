@@ -29,8 +29,8 @@ W: 784
 H: 260
 Frame: TargetFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -273
+Anchor: CENTER
+X: 225
 Y: -60
 W: 232
 H: 100
@@ -92,8 +92,8 @@ W: 36
 H: 36
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
-Anchor: RIGHT
-X: -346
+Anchor: CENTER
+X: 291
 Y: 103
 W: 920
 H: 600

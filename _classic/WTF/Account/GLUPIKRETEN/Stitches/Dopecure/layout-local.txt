@@ -1,11 +1,4 @@
 Version: 1
-Frame: RXPG_ARROW
-FrameLevel: 1
-Anchor: CENTER
-X: -163
-Y: -187
-W: 32
-H: 32
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -36,8 +29,8 @@ W: 784
 H: 260
 Frame: TargetFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -273
+Anchor: CENTER
+X: 225
 Y: -60
 W: 232
 H: 100
@@ -97,6 +90,13 @@ X: -368
 Y: -93
 W: 36
 H: 36
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -91
+Y: 121
+W: 616
+H: 752
 Frame: scanner_button
 FrameLevel: 200
 Anchor: TOP
@@ -110,4 +110,4 @@ Anchor: TOPRIGHT
 X: -488
 Y: -327
 W: 330
-H: 125
+H: 113
