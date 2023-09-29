@@ -55,23 +55,23 @@ Bagnon_Sets = {
 			["reverseBags"] = false,
 			["options"] = true,
 			["money"] = true,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["spacing"] = 3,
+			["y"] = 342.7383728027344,
+			["x"] = -805.6986083984375,
+			["search"] = true,
+			["broker"] = false,
+			["reverseSlots"] = false,
+			["alpha"] = 1,
+			["bagBreak"] = false,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["hiddenRules"] = {
-			},
-			["y"] = 342.7383728027344,
-			["bagBreak"] = false,
-			["x"] = -805.6986083984375,
-			["search"] = true,
-			["broker"] = false,
-			["reverseSlots"] = false,
-			["alpha"] = 1,
-			["spacing"] = 3,
-			["itemScale"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -146,8 +146,8 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["columns"] = 10,
 			["spacing"] = 3,
+			["columns"] = 10,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -190,21 +190,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 805.83984375,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 382.8352355957031,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 805.83984375,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 382.8352355957031,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -213,7 +213,7 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "10.1.11",
+	["version"] = "10.1.12",
 	["display"] = {
 		["merchant"] = false,
 		["tradePartner"] = false,
@@ -221,10 +221,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = true,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = true,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -242,20 +242,20 @@ Bagnon_Sets = {
 	["enchantColor"] = {
 	},
 	["glowAlpha"] = 1,
-	["tipCount"] = true,
+	["displayCraft"] = false,
 	["glowNew"] = true,
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
 	["keyColor"] = {
 	},
-	["soulColor"] = {
-	},
-	["glowQuality"] = true,
+	["glowPoor"] = true,
 	["normalColor"] = {
 	},
-	["glowPoor"] = true,
+	["glowQuality"] = true,
+	["soulColor"] = {
+	},
 	["colorSlots"] = true,
-	["displayCraft"] = false,
+	["tipCount"] = true,
 	["displayScrapping"] = false,
 }

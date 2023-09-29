@@ -1241,6 +1241,8 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 			if ItemRack.menuOpen==0 then
 				count = ItemRack.GetCountByID(ItemRack.Menu[i])
 				_G["ItemRackMenu"..i.."Count"]:SetText(count>0 and count or "")
+				_G["ItemRackMenu1Count"]:SetScale(0.7)
+				_G["ItemRackMenu1Count"]:SetPoint('TOPRIGHT', _G["ItemRackMenu1"], 'TOPRIGHT', -3, 27)
 			else
 				_G["ItemRackMenu"..i.."Count"]:SetText("")
 			end

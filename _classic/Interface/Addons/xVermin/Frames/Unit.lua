@@ -10,7 +10,7 @@ if xVermin.Class == 'HUNTER' then
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil, 'ARTWORK')
 	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, -1)
+	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
 	ac.text:SetText('')
 
 	CharacterAmmoSlotCount:Hide()
@@ -65,7 +65,7 @@ fbs:SetWidth(10)
 fbs:SetHeight(10)
 fbs.text = fbs:CreateFontString(nil, 'ARTWORK')
 fbs.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-fbs.text:SetPoint('LEFT', CustomContainer_Combat, 'LEFT', 5, -1)
+fbs.text:SetPoint('LEFT', CustomContainer_Combat, 'LEFT', 5, 0)
 
 local function CalculateFreeBagSpace()
 	for bag = 0, 4 do

@@ -12,6 +12,7 @@ WT_LearnedPetAbilities = {
 	["Great Stamina"] = {
 		["Rank 3"] = true,
 		["Rank 1"] = true,
+		["Rank 4"] = true,
 		["Rank 2"] = true,
 	},
 	["Shadow Resistance"] = {
@@ -21,11 +22,14 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 	},
 	["Bite"] = {
+		["Rank 3"] = true,
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Nature Resistance"] = {
+	["Growl"] = {
+		["Rank 3"] = true,
 		["Rank 1"] = true,
+		["Rank 2"] = true,
 	},
 	["Arcane Resistance"] = {
 		["Rank 1"] = true,
@@ -37,12 +41,11 @@ WT_LearnedPetAbilities = {
 	["Natural Armor"] = {
 		["Rank 3"] = true,
 		["Rank 1"] = true,
+		["Rank 4"] = true,
 		["Rank 2"] = true,
 	},
-	["Growl"] = {
-		["Rank 3"] = true,
+	["Nature Resistance"] = {
 		["Rank 1"] = true,
-		["Rank 2"] = true,
 	},
 }
 WT_NeedsToOpenBeastTraining = false

@@ -103,16 +103,10 @@ end
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('MERCHANT_SHOW')
-f:SetScript('OnEvent', BuyAmmo)
+-- f:SetScript('OnEvent', BuyAmmo)
 
 
--- for bag = 0, 4 do 
-
--- 	local bagtype = GetItemFamily(C_Container.GetBagName(bag))
-
--- 	-- if ammo quiver
--- 	if bagtype == 1 then 
--- 		local numberOfSlots = GetContainerNumSlots(bag);
-
--- 	end
--- end
+SLASH_BUYAMMO1 = '/ammo'
+SlashCmdList['BUYAMMO'] = function()
+	BuyAmmo()
+end

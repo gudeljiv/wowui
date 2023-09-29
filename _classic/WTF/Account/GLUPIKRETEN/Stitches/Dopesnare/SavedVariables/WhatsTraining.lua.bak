@@ -11,6 +11,7 @@ WT_LearnedPetAbilities = {
 	},
 	["Great Stamina"] = {
 		["Rank 3"] = true,
+		["Rank 4"] = true,
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
@@ -21,6 +22,7 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 	},
 	["Bite"] = {
+		["Rank 3"] = true,
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
@@ -36,6 +38,7 @@ WT_LearnedPetAbilities = {
 	},
 	["Natural Armor"] = {
 		["Rank 3"] = true,
+		["Rank 4"] = true,
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},

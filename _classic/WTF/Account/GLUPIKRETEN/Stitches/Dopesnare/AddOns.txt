@@ -96,3 +96,13 @@ Open-Sesame: enabled
 WhatsTraining: enabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
+Ace3: enabled
+!BlizzBugsSuck: enabled
+!ClassColors: enabled
+CallbackHandler-1.0: enabled
+HereBeDragons: enabled
+LibDataBroker-1.1: enabled
+LibDBIcon-1.0: enabled
+LibSharedMedia-3.0: enabled
+LibStub: enabled
+LibUIDropDownMenu: enabled

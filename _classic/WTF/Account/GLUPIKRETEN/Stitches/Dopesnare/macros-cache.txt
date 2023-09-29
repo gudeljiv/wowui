@@ -21,7 +21,7 @@ VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 /cast Serpent Sting
 END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
-#showtooltip Blood Fury
+#showtooltip
 /cast Rapid Fire
 /cast Blood Fury
 /cast Bestial Wrath
@@ -46,11 +46,6 @@ VER 3 0000000001000013 " " "134400"
 /stopattack
 /cast Freezing Trap
 END
-VER 3 000000000100000B " " "INV_Misc_QuestionMark"
-#showtooltip Kill Shot
-/stopcasting
-/cast [nochanneling: volley] Kill Shot
-END
 VER 3 000000000100000D " " "INV_Misc_QuestionMark"
 #showtooltip
 /dismount
@@ -69,7 +64,7 @@ VER 3 0000000001000012 " " "134400"
 END
 VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 #showtooltip
-/cast feign death
+/cast Feign Death
 /stopattack
 /stopcasting
 END

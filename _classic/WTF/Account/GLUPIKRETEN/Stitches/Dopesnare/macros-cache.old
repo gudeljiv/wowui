@@ -46,11 +46,6 @@ VER 3 0000000001000013 " " "134400"
 /stopattack
 /cast Freezing Trap
 END
-VER 3 000000000100000B " " "INV_Misc_QuestionMark"
-#showtooltip Kill Shot
-/stopcasting
-/cast [nochanneling: volley] Kill Shot
-END
 VER 3 000000000100000D " " "INV_Misc_QuestionMark"
 #showtooltip
 /dismount
@@ -63,13 +58,13 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000012 " " "134400"
 #showtooltip Serpent Sting
+/cast [@mouseover,harm,exists][]Serpent Sting
 /petattack [@mouseover,harm][]
 /cast !Auto Shot
-/cast [@mouseover,harm,exists][]Serpent Sting
 END
 VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 #showtooltip
-/cast feign death
+/cast Feign Death
 /stopattack
 /stopcasting
 END

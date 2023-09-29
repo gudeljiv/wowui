@@ -218,9 +218,24 @@ local function HandleUnit(self, ...)
 	end
 end
 
+local function HandleShow(self, ...)
+	-- local link = self:GetHyperlink()
+
+	if not self:HasBeautyBorder() then
+		self:CreateBeautyBorder(12)
+		local bgOffset, borderSize = 3, 12
+		self.Background = self:CreateTexture('TooltipBackground', 'BORDER')
+		self.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
+		self.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
+		self.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
+	end
+
+	self:SetBeautyBorderTexture('white')
+	self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
+end
+
 local function HandleStatusBar(self, ...)
 	local _, unit = self:GetUnit()
-
 	if UnitExists(unit) and UnitName(unit) ~= UNKNOWN and GameTooltipStatusBar:IsShown() then
 		SetHealthBarColor(unit)
 	end
@@ -228,6 +243,8 @@ end
 
 GameTooltip:HookScript('OnTooltipSetUnit', HandleUnit)
 GameTooltip:HookScript('OnUpdate', HandleStatusBar)
+ItemRefTooltip:HookScript('OnShow', HandleShow)
+-- ItemRefTooltip:HookScript('OnUpdate', HandleShow)
 
 GameTooltip:HookScript(
 	'OnTooltipCleared',

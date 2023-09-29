@@ -105,7 +105,7 @@ data = {
     },
     "hunter": {
         "main": [
-            {"name": "auto shot", "type": "GetSpellTexture", "id": 75, "key": "2"},
+            {"name": "auto shot", "type": "GetSpellTexture", "id": 75, "key": "8"},
             {"name": "multi-shot", "type": "GetSpellTexture", "id": 2643, "key": "1", "modifier": "lshift"},
             {"name": "arcane shot", "type": "GetSpellTexture", "id": 3044, "key": "2", "modifier": "lshift"},
             {"name": "serpent sting", "type": "GetSpellTexture", "id": 1978, "key": "3", "modifier": "lshift"},
@@ -113,8 +113,8 @@ data = {
             {"name": "hunter's mark", "type": "GetSpellTexture", "id": 1130, "key": "3", "modifier": "lalt"},
             {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
             {"name": "mend pet", "type": "GetSpellTexture", "id": 136, "key": "v"},
-            {"name": "wing clip", "type": "GetSpellTexture", "id": 2974, "key": "f", "modifier": "lalt"},
-            {"name": "raptor strike", "type": "GetSpellTexture", "id": 2973, "key": "k"},
+            {"name": "wing clip", "type": "GetSpellTexture", "id": 2974, "key": "1", "modifier": "lalt"},
+            {"name": "raptor strike", "type": "GetSpellTexture", "id": 2973, "key": "2", "modifier": "lalt"},
             # {"name": "viper sting", "type": "GetSpellTexture", "id": 3034, "key": "4", "modifier": "lshift"},
             # {"name": "deterrence", "type": "GetSpellTexture", "id": 19263, "key": "t", "modifier": "lshift"},
             # {"name": "misdirection", "type": "GetSpellTexture", "id": 34477, "key": "2", "modifier": "lalt"},
