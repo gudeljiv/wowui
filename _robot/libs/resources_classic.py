@@ -156,7 +156,7 @@ data = {
     },
     "priest": {
         "main": [
-            {"name": "shoot", "type": "GetSpellTexture", "id": 74178, "key": "1"},
+            {"name": "shoot", "type": "GetSpellTexture", "id": 6660, "key": "1"},
             {"name": "power word shield", "type": "GetSpellTexture", "id": 17, "key": "h"},
             {"name": "power word pain", "type": "GetSpellTexture", "id": 589, "key": "4"},
             {"name": "devouring plague", "type": "GetSpellTexture", "id": 2944, "key": "9"},
