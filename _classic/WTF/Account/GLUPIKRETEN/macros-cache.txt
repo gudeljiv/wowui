@@ -13,16 +13,16 @@ VER 3 0000000000000024 " " "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4540
+/use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3770
 /cast feed pet
-/use item:0
+/use item:3770
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
@@ -41,8 +41,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run _G["ItemRackMenu1Count"]:SetPoint('TOPRIGHT', _G["ItemRackMenu1"], 'TOPRIGHT', -3, 27)
-/run _G["ItemRackMenu1Count"]:SetScale(0.7)
+/run print(IsCurrentAction(1))
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
