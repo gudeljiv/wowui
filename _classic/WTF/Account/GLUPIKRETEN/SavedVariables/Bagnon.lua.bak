@@ -40,8 +40,9 @@ Bagnon_Sets = {
 			},
 			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
-				[-2] = true,
+				false, -- [1]
 				[4] = false,
+				[-2] = false,
 			},
 			["scale"] = 1,
 			["sort"] = true,
@@ -63,9 +64,9 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 342.7383728027344,
+			["y"] = 277.3416748046875,
 			["bagBreak"] = false,
-			["x"] = -805.6986083984375,
+			["x"] = -805.0643310546875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -192,13 +193,13 @@ Bagnon_Sets = {
 			["alpha"] = 1,
 			["scale"] = 1,
 			["bagBreak"] = false,
-			["x"] = 805.83984375,
+			["x"] = 809.6493530273438,
 			["search"] = true,
 			["broker"] = false,
 			["itemScale"] = 1,
 			["hiddenRules"] = {
 			},
-			["y"] = 382.8352355957031,
+			["y"] = 277.4383850097656,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -236,18 +237,17 @@ Bagnon_Sets = {
 	["displayBank"] = false,
 	["quiverColor"] = {
 	},
-	["slotBackground"] = 1,
+	["locked"] = true,
+	["tipCount"] = true,
 	["gemColor"] = {
 	},
 	["enchantColor"] = {
 	},
 	["glowAlpha"] = 1,
-	["tipCount"] = true,
+	["displayCraft"] = false,
 	["glowNew"] = true,
 	["displayAuction"] = false,
 	["profiles"] = {
-	},
-	["keyColor"] = {
 	},
 	["soulColor"] = {
 	},
@@ -255,7 +255,9 @@ Bagnon_Sets = {
 	["normalColor"] = {
 	},
 	["glowPoor"] = true,
-	["colorSlots"] = true,
-	["displayCraft"] = false,
+	["keyColor"] = {
+	},
+	["colorSlots"] = false,
+	["slotBackground"] = 1,
 	["displayScrapping"] = false,
 }

@@ -73,8 +73,7 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonEOE"] = false,
 	["FilterDungeonBAD"] = true,
 	["FilterDungeonOCC"] = false,
-	["GroupList"] = {
-	},
+	["FilterDungeonHOL"] = false,
 	["FilterDungeonVOA"] = false,
 	["FilterDungeonLBRS"] = true,
 	["FilterDungeonULDAR"] = false,
@@ -115,8 +114,9 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonUBRS"] = true,
 	["FilterDungeonBT"] = false,
 	["FilterDungeonDM"] = true,
-	["FilterDungeonHOL"] = false,
 	["FilterDungeonSV"] = false,
+	["GroupList"] = {
+	},
 	["FilterDungeonDME"] = true,
 	["FilterDungeonDMN"] = true,
 	["FilterDungeonDMW"] = true,

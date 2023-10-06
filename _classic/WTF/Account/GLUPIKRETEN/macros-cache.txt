@@ -20,9 +20,9 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:3731
 /cast feed pet
-/use item:3770
+/use item:3731
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
@@ -32,9 +32,7 @@ VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 0000000000000022 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Warsong Runner
-/targetexact Marukai
-/targetlasttarget [dead]
+/targetexact Miner Hackett
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip

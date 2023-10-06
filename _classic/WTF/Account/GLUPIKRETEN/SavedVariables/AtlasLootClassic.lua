@@ -509,15 +509,15 @@ AtlasLootClassicDB = {
 			[50464] = "EmblemOfFrost:30",
 			[28333] = "honor:3800",
 			[35065] = "honor:5700",
-			[35152] = "honor:7600",
+			[40267] = "EmblemOfValor:25",
 			[28381] = "honor:4750",
 			[40714] = "EmblemOfHeroism:15",
 			[33946] = "honor:3990",
 			[44902] = "cpvpWintergrasp:40",
 			[28445] = "honor:4750",
 			[42025] = "honor:16590",
-			[34577] = "honor:3990",
-			[34129] = "honor:16650",
+			[45830] = "EmblemOfConquest:28",
+			[41290] = "EmblemOfHeroism:30",
 			[28909] = "arcanerune:8",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
@@ -538,14 +538,14 @@ AtlasLootClassicDB = {
 			[35024] = "honor:9500",
 			[34033] = "honor:4275",
 			[28813] = "honor:3800",
-			[18839] = "honor:1",
-			[40267] = "EmblemOfValor:25",
+			[40715] = "EmblemOfHeroism:15",
+			[35152] = "honor:7600",
 			[28861] = "honor:3800",
 			[28130] = "honor:4750",
 			[31962] = "honor:6650",
 			[31978] = "honor:3325",
 			[28925] = "honor:3800",
-			[40715] = "EmblemOfHeroism:15",
+			[18839] = "honor:1",
 			[32026] = "honor:6650",
 			[32042] = "honor:6650",
 			[32058] = "honor:6650",
@@ -553,7 +553,7 @@ AtlasLootClassicDB = {
 			[41291] = "EmblemOfValor:30",
 			[32819] = "honor:3990",
 			[40683] = "EmblemOfHeroism:40",
-			[45830] = "EmblemOfConquest:28",
+			[34577] = "honor:3990",
 			[41770] = "EmblemOfHeroism:30",
 			[40779] = "EmblemOfHeroism:45",
 			[40723] = "EmblemOfValor:25",
@@ -816,7 +816,7 @@ AtlasLootClassicDB = {
 			[33690] = "honor:6840",
 			[33722] = "honor:8550",
 			[33754] = "honor:8550",
-			[41290] = "EmblemOfHeroism:30",
+			[34129] = "honor:16650",
 			[35088] = "honor:9500",
 			[44231] = "EmblemOfHeroism:200",
 			[42066] = "honor:33180",
@@ -1105,6 +1105,10 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = {
 		},
 		["Dopesick - Stitches"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1113,10 +1117,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Dopecure - Stitches"] = {
@@ -1161,18 +1161,18 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopesnare - Stitches"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"RazorfenKraul", -- [2]
+					8, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {
@@ -1357,6 +1357,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopede - Stitches"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					"RIGHT", -- [1]
@@ -1372,10 +1376,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Paydo - Dreadmist"] = {

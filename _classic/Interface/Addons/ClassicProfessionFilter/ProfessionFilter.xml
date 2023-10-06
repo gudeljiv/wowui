@@ -1,0 +1,30 @@
+<Ui
+	xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+
+	<EditBox name="ClassicProfessionFilterSearchBoxTemplate" inherits="SearchBoxTemplate" mixin="ClassicProfessionFilterSearchBoxMixIn" autoFocus="false" virtual="true">
+		<Size>
+			<AbsDimension x="200" y="22"/>
+		</Size>
+		<Scripts>
+			<OnTextChanged method="OnTextChanged" />
+			<OnChar method="OnChar" />
+			<OnEscapePressed method="OnEscapePressed" />
+		</Scripts>
+	</EditBox>
+
+	<CheckButton name="ClassicProfessionFilterCheckButtonTemplate" mixin="ClassicProfessionFilterCheckButtonMixIn" inherits="UICheckButtonTemplate" virtual="true">
+		<Size>
+			<AbsDimension x="20" y="20"/>
+		</Size>
+		<HitRectInsets>
+			<AbsInset left="0" right="-95" top="0" bottom="0"/>
+		</HitRectInsets>
+		<Scripts>
+			<OnClick method="OnClick" />
+			<OnEnter method="OnEnter" />
+			<OnLeave method="OnLeave" />
+		</Scripts>
+	</CheckButton>
+</Ui>

@@ -11,7 +11,7 @@ deathlog_strings_ko = {
 	death_alert_default_slime_message = "<level>레벨 <race> <class> <name> 가\n <zone> 에서 산성에 죽었습니다.",
 	death_alert_default_lava_message = "<level>레벨 <race> <class> <name> 가\n <zone> 에서 용암에 빠져 죽었습니다.",
 	death_alert_default_fire_message = "<level>레벨 <race> <class> <name> 가\n <zone> 에서 불에 타 죽었습니다.",
-	death_alert_default_fatigue_message = "<level>레벨 <race> <class> <name> 가\n <zone> 에서 탈진으로 사망하였습니다.",
+	death_alert_default_fatigue_message = "<level>레벨 <race> <class> <name> 가\n <zone> 에서 피로사 하였습니다.",
 	corpse_word = "시체",
 	of_word = "~의",
 	minimap_btn_left_click = "|cFF666666좌클릭:|r 로그 열기",
@@ -24,16 +24,17 @@ deathlog_strings_ko = {
 	death_word = "Death",
 	guild_word = "Guild",
 	race_word = "Race",
+	show_heatmap = "사망자 발생 구간 보기",
 	class_table = {
-		Warrior = "warrior";
-		Rogue = "rogue";
-		Mage = "mage";
-		Priest = "priest";
-		Paladin = "paladin";
-		Shaman = "shaman";
-		Druid = "druid";
-		Warlock = "warlock";
-	   	Hunter = "hunter";
+		Warrior = "warrior",
+		Rogue = "rogue",
+		Mage = "mage",
+		Priest = "priest",
+		Paladin = "paladin",
+		Shaman = "shaman",
+		Druid = "druid",
+		Warlock = "warlock",
+		Hunter = "hunter",
 	},
 	tab_table = {
 		{ value = "ClassStatisticsTab", text = "직업 통계" },
@@ -50,17 +51,39 @@ deathlog_strings_ko = {
 		{ 47, "RAZORFENKRAUL", "가시덩굴 우리" },
 		{ 48, "BLACKFATHOMDEEPS", "검은심연의 나락" },
 		{ 90, "GNOMEREGAN", "놈리건" },
-		{ 18, "SCARLETMONASTERY", "붉은십자군 수도원" },
+		{ 189, "SCARLETMONASTERY", "붉은십자군 수도원" },
 		{ 70, "ULDAMAN", "울다만" },
 		{ 109, "SUNKENTEMPLE", "가라앉은 사원" },
 		{ 129, "RAZORFENDOWNS", "가시덩굴 구릉" },
 		{ 209, "ZULFARAK", "줄파락" },
 		{ 229, "BLACKROCKSPIRE", "검은바위 첨탑" },
-		{ 239, "BLACKROCKDEPTHS", "검은바위 나락" },
+		{ 230, "BLACKROCKDEPTHS", "검은바위 나락" },
 		{ 289, "SCHOLOMANCE", "스칼로맨스" },
 		{ 329, "STRATHOLME", "스트라솔름" },
 		{ 349, "MARAUDON", "마라우돈" },
+		{ 389, "RAGEFIRECHASM", "Ragefire Chasm" },
 		{ 429, "DIREMAUL", "혈투의 전장" },
+	},
+	instance_map = {
+		["그림자송곳니 성채"] = 33,
+		["스톰윈드 지하감옥"] = 34,
+		["죽음의 폐광"] = 36,
+		["통곡의 동굴"] = 43,
+		["가시덩굴 우리"] = 47,
+		["검은심연의 나락"] = 48,
+		["울다만"] = 70,
+		["놈리건"] = 90,
+		["가라앉은 사원"] = 109,
+		["가시덩굴 구릉"] = 129,
+		["붉은십자군 수도원"] = 189,
+		["줄파락"] = 209,
+		["검은바위 첨탑"] = 229,
+		["검은바위 나락"] = 230,
+		["스칼로맨스"] = 289,
+		["스트라솔름"] = 329,
+		["마라우돈"] = 349,
+		["Ragefire Chasm"] = 389,
+		["혈투의 전장"] = 429,
 	},
 	deathlog_zone_tbl = {
 		["아제로스"] = 947,
