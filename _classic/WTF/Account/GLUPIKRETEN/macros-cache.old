@@ -13,11 +13,11 @@ VER 3 0000000000000012 " " "136173"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:1708
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4540
+/use item:3771
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:3731
@@ -26,7 +26,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:929
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
