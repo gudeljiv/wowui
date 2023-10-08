@@ -359,8 +359,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.7.2"
-local buildTime = "20231007223642"
+local versionString = "5.8.0"
+local buildTime = "20231008151253"
 
 local flavorFromToc = GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -372,7 +372,7 @@ local flavorFromTocToNumber = {
 local flavor = flavorFromTocToNumber[flavorFromToc]
 
 --[==[@debug@
-if versionStringFromToc == "5.7.2" then
+if versionStringFromToc == "5.8.0" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
 end

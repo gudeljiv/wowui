@@ -1,55 +1,21 @@
-# [5.7.2](https://github.com/WeakAuras/WeakAuras2/tree/5.7.2) (2023-10-02)
+# [5.8.0](https://github.com/WeakAuras/WeakAuras2/tree/5.8.0) (2023-10-08)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.7.1...5.7.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.7.2...5.8.0)
 
 ## Highlights
 
- - Add a few new Fonts
-- Improve Trigger UI/UX
-- Bug fixes
-- Enable boss units in WoTLK 
+ - This is a re-release of 5.7.2 with a proper version number and two bug fixes.
+
+- NOTE: This version has a change that affects some aura's scaling. If you log in and things look different and you just want them to look the same as before, go to the "Position Settings" in the "Display" tab and disable "Set Parent to Anchor".
+
+- If, after doing that, things still don't look right, please create an issue! As always making a backup of your settings before upgrading is a good idea. Please be aware that trying to revert to an old version of WeakAuras will brick your data, we fixed an issue with that but for this upgrade, make sure you do your backup before trying to revert to an older release.
+
+- Also, if you shared your aura with someone and they say it broke their auras, don't panic and let them know that all they have to do is to update the WeakAuras addon. 
 
 ## Commits
 
-InfusOnWoW (17):
+InfusOnWoW (2):
 
-- Fonts: Add a selection of Fira fonts
-- BTW: Handle TOOLTIP_DATA_UPDATE which fixes tooltip data after first login
-- Fix tooltip calls for old BT2 UnitAura usage
-- Make some lua annotations
-- Introduce GenericTrigger.GetPrototype and use it
-- Fix multi-selection with new trigger/load layout
-- TTS: Use a better fallback for voiceId
-- TTS: Use correct destination
-- TTS: Update voices on VOICE_CHAT_TTS_VOICES_UPDATE event
-- Fix pvp flag not restting after leaving BG
-- BT2: Add InRange check
-- Add UnitInRange filter for Health/Power and similar triggers
-- Optimize drag and drop some more
-- Dynamic Groups: Fix anchorByFrame handling
-- Options: Make Dropping and Deleting use a corotinue
-- Also use %q for IsSpellKnownForLoad
-- Remove unused getWithFocus
-
-mrbuds (19):
-
-- Fix remaining time condition with modRate < 1
-- Wotlk: enable boss units
-- Fix error in cast trigger's GetNameAndIcon
-- Move regionPrototype to Private
-- Add tooltip to inRange option and update on ignoreInvisible tooltip
-- UI+++ (#4592)
-- Use MultiLineEditBoxWithEnter for custom trigger's events field
-- Automatic Repair: add strong warning that user should backup their WTF
-- Do not let install auras made with internalVersion higher than installed version of WeakAuras
-- Dynamic Groups: fix "set parent to anchor" applied when it shouldn't, fixes #4600
-- Boss Mod Announce trigger: add Count filter, fixes #4562
-- Fix issue with a trigger with a delay converted to custom trigger #4596
-- Dynamic Groups: proper fix for anchorByFrame handling
-- Support multiple entries for various triggers & load condition
-- fix spell's get on focus
-- Disable Evoker Essence trigger on classic
-- Classic Era: enable zone id option
-- Classic Era: enable soft targetting options
-- Classic Era: show TTS voice list in actions
+- Fix regression in "Continously update Move Speed"
+- Add AceGUIWidget-WeakAurasMultiLineEditBoxWithEnter to all .toc files
 

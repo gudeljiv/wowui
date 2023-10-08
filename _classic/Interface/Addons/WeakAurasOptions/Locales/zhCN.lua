@@ -524,8 +524,7 @@ Can use \ to escape -.]=] ] = [=[过滤格式：'名称'，'名称-服务器'，
 	L["If unchecked, then this space will fill the entire line it is on in User Mode."] = "如果不勾选，则在用户模式下此空白区域将填充一整行。"
 	L["Ignore Dead"] = "忽略已死亡"
 	L["Ignore Disconnected"] = "忽略已离线"
-	--[[Translation missing --]]
-	L["Ignore out of casting range"] = "Ignore out of casting range"
+	L["Ignore out of casting range"] = "忽略超出施法范围"
 	L["Ignore out of checking range"] = "忽略超出检查范围"
 	L["Ignore Self"] = "忽略自身"
 	L["Ignore Wago updates"] = "忽略Wago更新"
@@ -936,10 +935,8 @@ Upgrade your version of WeakAuras or wait for next release before installing thi
 	L["Used in Auras:"] = "在下列光环中被使用："
 	L["Used in auras:"] = "在下列光环中被使用："
 	L["Uses Texture Coordinates to rotate the texture."] = "使用材质坐标以旋转材质"
-	--[[Translation missing --]]
-	L["Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."] = "Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."
-	--[[Translation missing --]]
-	L["Uses UnitIsVisible() to check if game client has loaded a object for this unit. This distance is around 100 yards. This is polled every second."] = "Uses UnitIsVisible() to check if game client has loaded a object for this unit. This distance is around 100 yards. This is polled every second."
+	L["Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."] = "使用UnitInRange()检查是否在范围内。根据你的职业和专精决定范围为25或40码，与默认团队框架的在或不在范围表现一致。"
+	L["Uses UnitIsVisible() to check if game client has loaded a object for this unit. This distance is around 100 yards. This is polled every second."] = "使用UnitIsVisible()检查游戏客户端是否加载此单位的对象。此距离大概为100码。每秒检查一次。"
 	L["Value %i"] = "值 %i"
 	L["Values are in normalized rgba format."] = "数值为标准化的 RGBA 格式"
 	L["Values:"] = "值："
