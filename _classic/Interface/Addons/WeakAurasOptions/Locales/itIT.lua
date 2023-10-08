@@ -485,6 +485,8 @@ Off Screen]=]
 	--[[Translation missing --]]
 	L["Delete Entry"] = "Delete Entry"
 	--[[Translation missing --]]
+	L["Deleting auras: "] = "Deleting auras: "
+	--[[Translation missing --]]
 	L["Desaturate"] = "Desaturate"
 	L["Description"] = "Descrizione"
 	--[[Translation missing --]]
@@ -686,6 +688,8 @@ Can use \ to escape -.]=]
 	--[[Translation missing --]]
 	L["Finish"] = "Finish"
 	--[[Translation missing --]]
+	L["Finishing..."] = "Finishing..."
+	--[[Translation missing --]]
 	L["Fire Orb"] = "Fire Orb"
 	--[[Translation missing --]]
 	L["Font"] = "Font"
@@ -853,6 +857,8 @@ Can use \ to escape -.]=]
 	L["Ignore Dead"] = "Ignore Dead"
 	--[[Translation missing --]]
 	L["Ignore Disconnected"] = "Ignore Disconnected"
+	--[[Translation missing --]]
+	L["Ignore out of casting range"] = "Ignore out of casting range"
 	--[[Translation missing --]]
 	L["Ignore out of checking range"] = "Ignore out of checking range"
 	--[[Translation missing --]]
@@ -1028,6 +1034,8 @@ Can use \ to escape -.]=]
 	--[[Translation missing --]]
 	L["Move Up"] = "Move Up"
 	--[[Translation missing --]]
+	L["Moving auras: "] = "Moving auras: "
+	--[[Translation missing --]]
 	L["Multiple Displays"] = "Multiple Displays"
 	--[[Translation missing --]]
 	L["Multiselect ignored tooltip"] = "Multiselect ignored tooltip"
@@ -1185,6 +1193,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=]
 	L["Premade Auras"] = "Premade Auras"
 	--[[Translation missing --]]
 	L["Premade Snippets"] = "Premade Snippets"
+	--[[Translation missing --]]
+	L["Preparing auras: "] = "Preparing auras: "
 	--[[Translation missing --]]
 	L["Preset"] = "Preset"
 	--[[Translation missing --]]
@@ -1523,8 +1533,8 @@ It might not work correctly!]=] ] = [=[This aura was created with a different ve
 It might not work correctly!]=]
 	--[[Translation missing --]]
 	L[ [=[This aura was created with a newer version of WeakAuras.
-It might not work correctly with your version!]=] ] = [=[This aura was created with a newer version of WeakAuras.
-It might not work correctly with your version!]=]
+Upgrade your version of WeakAuras or wait for next release before installing this aura.]=] ] = [=[This aura was created with a newer version of WeakAuras.
+Upgrade your version of WeakAuras or wait for next release before installing this aura.]=]
 	--[[Translation missing --]]
 	L["This display is currently loaded"] = "This display is currently loaded"
 	--[[Translation missing --]]
@@ -1644,7 +1654,9 @@ It might not work correctly with your version!]=]
 	--[[Translation missing --]]
 	L["Uses Texture Coordinates to rotate the texture."] = "Uses Texture Coordinates to rotate the texture."
 	--[[Translation missing --]]
-	L["Uses UnitIsVisible() to check if in range. This is polled every second."] = "Uses UnitIsVisible() to check if in range. This is polled every second."
+	L["Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."] = "Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."
+	--[[Translation missing --]]
+	L["Uses UnitIsVisible() to check if game client has loaded a object for this unit. This distance is around 100 yards. This is polled every second."] = "Uses UnitIsVisible() to check if game client has loaded a object for this unit. This distance is around 100 yards. This is polled every second."
 	--[[Translation missing --]]
 	L["Value %i"] = "Value %i"
 	--[[Translation missing --]]

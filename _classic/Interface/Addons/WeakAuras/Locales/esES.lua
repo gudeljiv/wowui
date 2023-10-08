@@ -513,6 +513,8 @@ L["Entering/Leaving Encounter"] = "Entering/Leaving Encounter"
 L["Entry Order"] = "Entry Order"
 L["Environment Type"] = "Tipo de Entorno"
 L["Environmental"] = "Ambiental"
+--[[Translation missing --]]
+L["Equipment"] = "Equipment"
 L["Equipment Set"] = "Conjunto de equipo"
 L["Equipment Set Equipped"] = "Conjunto de equipo equipado"
 L["Equipment Slot"] = "Ranura para equipo"
@@ -549,6 +551,8 @@ L["Every Frame"] = "Cada Uno de los Marcos"
 L["Every Frame (High CPU usage)"] = "Cada fotograma (uso elevado de CPU)"
 --[[Translation missing --]]
 L["Evoker Essence"] = "Evoker Essence"
+--[[Translation missing --]]
+L["Exact Spell ID(s)"] = "Exact Spell ID(s)"
 L["Experience (%)"] = "Experiencia (%)"
 --[[Translation missing --]]
 L["Expertise Bonus"] = "Expertise Bonus"
@@ -640,11 +644,15 @@ L["Garr"] = "Garr"
 --[[Translation missing --]]
 L["Gehennas"] = "Gehennas"
 --[[Translation missing --]]
+L["General"] = "General"
+--[[Translation missing --]]
 L["General Rajaxx"] = "General Rajaxx"
 --[[Translation missing --]]
 L["General Vezax"] = "General Vezax"
 --[[Translation missing --]]
 L["General Zarithrian"] = "General Zarithrian"
+--[[Translation missing --]]
+L["GetNameAndIcon Function (fallback state)"] = "GetNameAndIcon Function (fallback state)"
 L["Glancing"] = "de refilón"
 L["Global Cooldown"] = "Recarga Global"
 L["Glow"] = "Brillante"
@@ -771,7 +779,11 @@ L["In Group"] = "En grupo"
 L["In Party"] = "In Party"
 L["In Pet Battle"] = "En duelo de mascotas"
 L["In Raid"] = "En banda"
+--[[Translation missing --]]
+L["In Range"] = "In Range"
 L["In Vehicle"] = "Conduciendo"
+--[[Translation missing --]]
+L["In War Mode"] = "In War Mode"
 L["Include Bank"] = "Incluye el Banco"
 L["Include Charges"] = "Incluye las Cargas"
 --[[Translation missing --]]
@@ -877,8 +889,6 @@ L["Legacy Looking for Raid"] = "Legacy Looking for Raid"
 L["Legacy RGB Gradient"] = "Legacy RGB Gradient"
 --[[Translation missing --]]
 L["Legacy RGB Gradient Pulse"] = "Legacy RGB Gradient Pulse"
---[[Translation missing --]]
-L["Legacy Spellname"] = "Legacy Spellname"
 L["Legion"] = "Legion"
 L["Length"] = "Longitud"
 L["Level"] = "Nivel"
@@ -886,6 +896,8 @@ L["Limited"] = "Limitado"
 L["Lines & Particles"] = "Líneas y partículas"
 L["Load Conditions"] = "Condiciones de carga"
 L["Loatheb"] = "Loatheb"
+--[[Translation missing --]]
+L["Location"] = "Location"
 L["Looking for Raid"] = "Buscador de banda"
 L["Loop"] = "Bucle"
 L["Lord Jaraxxus"] = "Lord Jaraxxus"
@@ -984,6 +996,8 @@ L["Name Function"] = "Name Function"
 --[[Translation missing --]]
 L["Name Function (fallback state)"] = "Name Function (fallback state)"
 L["Name of Caster's Target"] = "Nombre del objetivo del lanzador"
+--[[Translation missing --]]
+L["Name(s)"] = "Name(s)"
 L["Name/Realm of Caster's Target"] = "Nombre/Reino del objetivo del lanzador"
 L["Nameplate"] = "Placa"
 L["Nameplate Type"] = "Tipo de placa"
@@ -1031,6 +1045,30 @@ L["Npc ID"] = "ID de pnj"
 L["Number"] = "Número"
 L["Number Affected"] = "Dependiente de números"
 L["Object"] = "Objeto"
+--[[Translation missing --]]
+L[ [=[Occurrence of the event
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Works only if Boss Mod addon show counter]=] ] = [=[Occurrence of the event
+Can be a range of values
+Can have multiple values separated by a comma or a space
+
+Examples:
+2nd 5th and 6th events: 2, 5, 6
+2nd to 6th: 2-6
+every 2 events: /2
+every 3 events starting from 2nd: 2/3
+every 3 events starting from 2nd and ending at 11th: 2-11/3
+
+Works only if Boss Mod addon show counter]=]
 --[[Translation missing --]]
 L[ [=[Occurrence of the event, reset when aura is unloaded
 Can be a range of values
@@ -1516,6 +1554,8 @@ L["Spell Peneration Percent"] = "Spell Peneration Percent"
 L["Spell School"] = "Spell School"
 --[[Translation missing --]]
 L["Spell Usable"] = "Spell Usable"
+--[[Translation missing --]]
+L["Spellname"] = "Spellname"
 L["Spin"] = "Girar"
 L["Spiral"] = "Espiral"
 L["Spiral In And Out"] = "Espiral de Dentro a Fuera"
@@ -1807,6 +1847,8 @@ L["Use Legacy floor rounding"] = "Use Legacy floor rounding"
 --[[Translation missing --]]
 L["Use Watched Faction"] = "Use Watched Faction"
 --[[Translation missing --]]
+L["Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."] = "Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."
+--[[Translation missing --]]
 L["Using WeakAuras.clones is deprecated. Use WeakAuras.GetRegion(id, cloneId) instead."] = "Using WeakAuras.clones is deprecated. Use WeakAuras.GetRegion(id, cloneId) instead."
 --[[Translation missing --]]
 L["Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."] = "Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."
@@ -1839,8 +1881,6 @@ L["Visibility"] = "Visibility"
 --[[Translation missing --]]
 L["Visions of N'Zoth"] = "Visions of N'Zoth"
 --[[Translation missing --]]
-L["War Mode Active"] = "War Mode Active"
---[[Translation missing --]]
 L["Warfront (Heroic)"] = "Warfront (Heroic)"
 --[[Translation missing --]]
 L["Warfront (Normal)"] = "Warfront (Normal)"
@@ -1864,10 +1904,14 @@ L["WeakAuras Built-In (63:42 | 3:07 | 10 | 2.4)"] = "WeakAuras Built-In (63:42 |
 L[ [=[WeakAuras has detected that it has been downgraded.
 Your saved auras may no longer work properly.
 Would you like to run the |cffff0000EXPERIMENTAL|r repair tool? This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=] ] = [=[WeakAuras has detected that it has been downgraded.
+Last upgrade: %s
+
+|cffff0000You should BACKUP your WTF folder BEFORE pressing this button.|r]=] ] = [=[WeakAuras has detected that it has been downgraded.
 Your saved auras may no longer work properly.
 Would you like to run the |cffff0000EXPERIMENTAL|r repair tool? This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=]
+Last upgrade: %s
+
+|cffff0000You should BACKUP your WTF folder BEFORE pressing this button.|r]=]
 --[[Translation missing --]]
 L["WeakAuras has encountered an error during the login process. Please report this issue at https://github.com/WeakAuras/Weakauras2/issues/new."] = "WeakAuras has encountered an error during the login process. Please report this issue at https://github.com/WeakAuras/Weakauras2/issues/new."
 --[[Translation missing --]]

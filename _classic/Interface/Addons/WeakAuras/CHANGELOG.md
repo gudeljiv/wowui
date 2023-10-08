@@ -1,42 +1,55 @@
-# [5.7.1](https://github.com/WeakAuras/WeakAuras2/tree/5.7.1) (2023-09-06)
+# [5.7.2](https://github.com/WeakAuras/WeakAuras2/tree/5.7.2) (2023-10-02)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.7.0...5.7.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.7.1...5.7.2)
 
 ## Highlights
 
- - Improvements to triggers
-- Sound previews on dropdown selections
-- Bug fixes 
+ - Add a few new Fonts
+- Improve Trigger UI/UX
+- Bug fixes
+- Enable boss units in WoTLK 
 
 ## Commits
 
-InfusOnWoW (4):
+InfusOnWoW (17):
 
-- Templates: Add Grove Guardins
-- BT2: Fix tooltip parsing for negative numbers
-- BT2: Update auras 2s after initial login
-- Add a paused condition for timed durations (#4573)
+- Fonts: Add a selection of Fira fonts
+- BTW: Handle TOOLTIP_DATA_UPDATE which fixes tooltip data after first login
+- Fix tooltip calls for old BT2 UnitAura usage
+- Make some lua annotations
+- Introduce GenericTrigger.GetPrototype and use it
+- Fix multi-selection with new trigger/load layout
+- TTS: Use a better fallback for voiceId
+- TTS: Use correct destination
+- TTS: Update voices on VOICE_CHAT_TTS_VOICES_UPDATE event
+- Fix pvp flag not restting after leaving BG
+- BT2: Add InRange check
+- Add UnitInRange filter for Health/Power and similar triggers
+- Optimize drag and drop some more
+- Dynamic Groups: Fix anchorByFrame handling
+- Options: Make Dropping and Deleting use a corotinue
+- Also use %q for IsSpellKnownForLoad
+- Remove unused getWithFocus
 
-Jods (1):
+mrbuds (19):
 
-- fix #4575
-
-Stanzilla (2):
-
-- Bump TOC for Retail
-- Bump TOC for Era
-
-mrbuds (11):
-
-- Fix spell fields focus for non-aura triggers and load options
-- Fix anchor to screen for auras in a group
-- Bossmod Timer fix (#4584)
-- Sub Text Element: Show formatting options for all %-replacements
-- Condition of Text type auras can edit text
-- Combat Log trigger: add extraSpellId for apropriate subEvents
-- Add sound preview on sound selection dropdowns
-- Delay & Duration fields show time converted to [[HH:]MM:]ss format
-- tune "spell" option width & alignment
-- On Aura trigger, show spell name when typing spell id
-- For Combat Log, DBM Timer, BigWigs Timer triggers, spellId field show icon & name of spell
+- Fix remaining time condition with modRate < 1
+- Wotlk: enable boss units
+- Fix error in cast trigger's GetNameAndIcon
+- Move regionPrototype to Private
+- Add tooltip to inRange option and update on ignoreInvisible tooltip
+- UI+++ (#4592)
+- Use MultiLineEditBoxWithEnter for custom trigger's events field
+- Automatic Repair: add strong warning that user should backup their WTF
+- Do not let install auras made with internalVersion higher than installed version of WeakAuras
+- Dynamic Groups: fix "set parent to anchor" applied when it shouldn't, fixes #4600
+- Boss Mod Announce trigger: add Count filter, fixes #4562
+- Fix issue with a trigger with a delay converted to custom trigger #4596
+- Dynamic Groups: proper fix for anchorByFrame handling
+- Support multiple entries for various triggers & load condition
+- fix spell's get on focus
+- Disable Evoker Essence trigger on classic
+- Classic Era: enable zone id option
+- Classic Era: enable soft targetting options
+- Classic Era: show TTS voice list in actions
 
