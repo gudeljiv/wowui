@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10730,
 	["lastSanitation"] = 3,
-	["session"] = 10727,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -173,14 +173,14 @@ BugGrabberDB = {
 		}, -- [22]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [23]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [24]
 		{
@@ -297,14 +297,14 @@ BugGrabberDB = {
 		}, -- [38]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [39]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [40]
 		{
@@ -509,14 +509,14 @@ BugGrabberDB = {
 		}, -- [65]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [66]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [67]
 		{
@@ -561,14 +561,14 @@ BugGrabberDB = {
 		}, -- [72]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [73]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [74]
 		{
@@ -709,14 +709,14 @@ BugGrabberDB = {
 		}, -- [91]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [92]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [93]
 		{
@@ -801,14 +801,14 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [104]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [105]
 		{
@@ -821,14 +821,14 @@ BugGrabberDB = {
 		}, -- [106]
 		{
 			["message"] = "Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [107]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [108]
 		{
@@ -919,5 +919,29 @@ BugGrabberDB = {
 			["session"] = 10727,
 			["counter"] = 1,
 		}, -- [119]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'TradeSkillMaster' tried to call the protected function 'RunBinding()'.",
+			["time"] = "2023/10/08 18:42:27",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `RunBinding'\n[string \"@Interface/FrameXML/StackSplitFrame.lua\"]:182: in function <Interface/FrameXML/StackSplitFrame.lua:179>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface/FrameXML/StackSplitFrame.lua\"]:168: in function `StackSplitFrameOkay_Click'\n[string \"@Interface/FrameXML/StackSplitFrame.lua\"]:113: in function <Interface/FrameXML/StackSplitFrame.lua:91>",
+			["session"] = 10728,
+			["counter"] = 1,
+		}, -- [120]
+		{
+			["message"] = "...ns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:160: attempt to index field 'pendingFuture' (a nil value)",
+			["time"] = "2023/10/08 18:56:27",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'pendingFuture' (a nil value)\"\nprivate = <table> {\n pendingDB = <table> {\n }\n expectedCounts = <table> {\n }\n dbHashFields = <table> {\n }\n UIErrorMessageEventHandler = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:148\n pendingHashes = <table> {\n }\n ChatMsgSystemEventHandler = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:140\n auctionInfo = <table> {\n }\n PendingFutureOnDone = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:159\n GetNumRowsByHash = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:176\n AuctionHouseClosed = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:133\n OnAuctionsUpdated = <function> defined @Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua:182\n}\nLog = <table> {\n PrintUser = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:174\n PrintfUser = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:180\n PrintUserRaw = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:162\n Warn = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:150\n SetCurrentThreadNameFunction = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:87\n Length = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:93\n ColorUserAccentText = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:187\n LowerStackLevel = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:115\n PrintfUserRaw = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:168\n RaiseStackLevel = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:110\n StackTrace = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:121\n Info = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:144\n SetLoggingToChatEnabled = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:63\n Trace = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:138\n Err = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:156\n SetChatFrame = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:57\n Get = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Util/Log.lua:103\n}\nAuctionTracking = <table> {\n CreateQueryUnsoldItem = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:282\n GetSaleHintItemString = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:294\n CreateQueryUnsold = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:277\n RegisterQuantityCallback = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:255\n RegisterCallback = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:251\n QuantityIterator = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:267\n QueryOwnedAuctions = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:317\n DatabaseFieldIterator = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:263\n RegisterExpiresCallback = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:259\n GetQuantity = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:306\n CreateQuery = <function> defined @Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:273\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/TradeSkillMaster/Core/Service/MyAuctions/Core.lua\"]:160: in function `_onDone'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/Future.lua\"]:84: in function <...rface/AddOns/TradeSkillMaster/LibTSM/Util/Future.lua:79>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `Done'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:604: in function <...deSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua:591>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_Done'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:534: in function <...deSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua:525>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_HandleEvent'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:760: in function `EventHandlerHelper'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:740: in function `callback'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/Event.lua\"]:132: in function `ProcessEvent'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/Event.lua\"]:150: in function <...erface/AddOns/TradeSkillMaster/LibTSM/Util/Event.lua:141>",
+			["session"] = 10728,
+			["counter"] = 1,
+		}, -- [121]
+		{
+			["message"] = "...deSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua:510: Unexpected state: DONE",
+			["time"] = "2023/10/08 18:56:36",
+			["locals"] = "(*temporary) = \"Unexpected state: DONE\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:510: in function <...deSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua:501>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_HandleAPICall'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua\"]:456: in function <...deSkillMaster/LibTSM/Service/AuctionHouseWrapper.lua:450>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `CancelAuction'\n[string \"@Interface/AddOns/Auctionator/Source_Classic/AH/Wrappers.lua\"]:73: in function `CancelAuction'\n[string \"@Interface/AddOns/Auctionator/Source_Classic/Tabs/Cancelling/Mixins/Main.lua\"]:64: in function `ReceiveEvent'\n[string \"@Interface/AddOns/Auctionator/Source/Utilities/EventBusMixin.lua\"]:77: in function `Fire'\n[string \"@Interface/AddOns/Auctionator/Source_Classic/Tabs/ResultsListing/Mixins/CancellingListResultsRow.lua\"]:18: in function `OnClick'\n[string \"@Interface/AddOns/Auctionator/Source/Components/ResultsListing/Mixins/AuctionatorCell.lua\"]:22: in function <...Components/ResultsListing/Mixins/AuctionatorCell.lua:20>",
+			["session"] = 10728,
+			["counter"] = 1,
+		}, -- [122]
 	},
 }

@@ -37,6 +37,7 @@ local HandleItem = function()
 end
 
 local f = CreateFrame('frame')
+f:RegisterEvent('TRADE_SKILL_SHOW')
 f:RegisterEvent('TRADE_SKILL_UPDATE')
 f:RegisterEvent('TRADE_SKILL_FILTER_UPDATE')
 f:RegisterEvent('UNIT_PORTRAIT_UPDATE')

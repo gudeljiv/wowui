@@ -56,22 +56,22 @@ Bagnon_Sets = {
 			["reverseBags"] = false,
 			["options"] = true,
 			["money"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7400000095367432, -- [4]
-			},
 			["itemScale"] = 1,
-			["bagBreak"] = false,
+			["hiddenRules"] = {
+			},
+			["spacing"] = 3,
 			["y"] = 277.3416748046875,
 			["x"] = -805.0643310546875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
 			["alpha"] = 1,
-			["spacing"] = 3,
-			["hiddenRules"] = {
+			["bagBreak"] = false,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7400000095367432, -- [4]
 			},
 		},
 		["vault"] = {
@@ -147,8 +147,8 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["columns"] = 10,
 			["spacing"] = 3,
+			["columns"] = 10,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -191,21 +191,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 809.6493530273438,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 277.4383850097656,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 809.6493530273438,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 277.4383850097656,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -216,17 +216,17 @@ Bagnon_Sets = {
 	["displayTrade"] = false,
 	["version"] = "10.1.13",
 	["display"] = {
-		["merchant"] = true,
-		["tradePartner"] = true,
-		["mailInfo"] = true,
+		["merchant"] = false,
+		["tradePartner"] = false,
+		["mailInfo"] = false,
 		["socketing"] = false,
 		["playerFrame"] = false,
 		["scrappingMachine"] = false,
-		["crafting"] = true,
-		["voidStorageBanker"] = true,
-		["auctioneer"] = true,
-		["guildBanker"] = true,
-		["banker"] = true,
+		["crafting"] = false,
+		["banker"] = false,
+		["auctioneer"] = false,
+		["guildBanker"] = false,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -239,7 +239,7 @@ Bagnon_Sets = {
 	["quiverColor"] = {
 	},
 	["locked"] = true,
-	["tipCount"] = true,
+	["slotBackground"] = 1,
 	["gemColor"] = {
 	},
 	["enchantColor"] = {
@@ -250,15 +250,15 @@ Bagnon_Sets = {
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
-	["soulColor"] = {
-	},
-	["glowQuality"] = true,
-	["normalColor"] = {
-	},
-	["glowPoor"] = true,
 	["keyColor"] = {
 	},
+	["glowPoor"] = true,
+	["normalColor"] = {
+	},
+	["glowQuality"] = true,
+	["soulColor"] = {
+	},
 	["colorSlots"] = false,
-	["slotBackground"] = 1,
+	["tipCount"] = true,
 	["displayScrapping"] = false,
 }

@@ -80,3 +80,7 @@ VER 3 000000000100001E " " "134400"
 /cast Sunder Armor
 /cast Bloodrage
 END
+VER 3 000000000100001F " " "134400"
+#showtooltip
+/cast [@player] Target Dummy
+END
