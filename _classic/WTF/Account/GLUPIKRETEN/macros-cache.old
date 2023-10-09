@@ -1,15 +1,15 @@
+VER 3 0000000000000024 " " "134400"
+#showtooltip Coarse Sharpening Stone
+/use Coarse Sharpening Stone
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
 VER 3 0000000000000012 " " "136173"
 /click BehindTarget
 END
 VER 3 0000000000000011 " " "136106"
 /inspect
 /run SortBags()
-END
-VER 3 0000000000000024 " " "134400"
-#showtooltip Coarse Sharpening Stone
-/use Coarse Sharpening Stone
-/use [button:2] 17; 16
-/click StaticPopup1Button1
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -20,9 +20,9 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /use item:422
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12037
+#showtooltip item:6362
 /cast feed pet
-/use item:12037
+/use item:6362
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip

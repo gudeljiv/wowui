@@ -1,15 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Dopede - Stitches"] = "Dopede - Stitches",
-		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Dopeah - Stitches"] = "Dopeah - Stitches",
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
-		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopecure - Stitches"] = "Dopecure - Stitches",
-		["Lonac - Stitches"] = "Lonac - Stitches",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -18,11 +8,21 @@ Postal3DB = {
 				"Dopecure|Stitches|Horde|11|PRIEST", -- [3]
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
 				"Dopesick|Stitches|Horde|24|WARRIOR", -- [5]
-				"Dopesnare|Stitches|Horde|33|HUNTER", -- [6]
+				"Dopesnare|Stitches|Horde|34|HUNTER", -- [6]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [7]
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [8]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Dopede - Stitches"] = "Dopede - Stitches",
+		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Lonac - Stitches"] = "Lonac - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
 	["profiles"] = {
 		["Dopede - Stitches"] = {
@@ -40,14 +40,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Mxzq - Golemagg"] = {
-		},
-		["Dopeah - Stitches"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Dopesick|Stitches|Horde", -- [1]
-				},
-			},
+		["Lonac - Stitches"] = {
 		},
 		["Dopesick - Stitches"] = {
 			["BlackBook"] = {
@@ -57,6 +50,8 @@ Postal3DB = {
 				},
 			},
 		},
+		["Dopecure - Stitches"] = {
+		},
 		["Dopeclaw - Stitches"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -64,9 +59,14 @@ Postal3DB = {
 				},
 			},
 		},
-		["Dopecure - Stitches"] = {
+		["Dopeah - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
+				},
+			},
 		},
-		["Lonac - Stitches"] = {
+		["Mxzq - Golemagg"] = {
 		},
 	},
 }
