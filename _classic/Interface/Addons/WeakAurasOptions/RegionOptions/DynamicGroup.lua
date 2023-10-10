@@ -609,7 +609,7 @@ local function modifyThumbnail(parent, frame, data)
       icon:SetAllPoints(frame)
       frame.icon = icon
     end
-    local success = WeakAuras.SetTextureOrAtlas(frame.icon, path or data.groupIcon) and (path or data.groupIcon)
+    local success = OptionsPrivate.Private.SetTextureOrAtlas(frame.icon, path or data.groupIcon) and (path or data.groupIcon)
     if success then
       if frame.defaultIcon then
         frame.defaultIcon:Hide()
@@ -634,4 +634,7 @@ local function createIcon()
   return thumbnail
 end
 
-WeakAuras.RegisterRegionOptions("dynamicgroup", createOptions, createIcon, L["Dynamic Group"], createThumbnail, modifyThumbnail, L["A group that dynamically controls the positioning of its children"]);
+OptionsPrivate.registerRegions = OptionsPrivate.registerRegions or {}
+table.insert(OptionsPrivate.registerRegions, function()
+  OptionsPrivate.Private.RegisterRegionOptions("dynamicgroup", createOptions, createIcon, L["Dynamic Group"], createThumbnail, modifyThumbnail, L["A group that dynamically controls the positioning of its children"]);
+end)

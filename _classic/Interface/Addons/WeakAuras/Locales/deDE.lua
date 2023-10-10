@@ -78,8 +78,7 @@ L["20 Man Raid"] = "20-Mann-Schlachtzug"
 --[[Translation missing --]]
 L["20 Player Raid"] = "20 Player Raid"
 L["25 Man Raid"] = "25-Mann-Schlachtzug"
---[[Translation missing --]]
-L["25 Player Raid"] = "25 Player Raid"
+L["25 Player Raid"] = "25 Spieler Schlachtzug"
 L["25 Player Raid (Heroic)"] = "25 Spieler Schlachtzug (Heroisch)"
 L["25 Player Raid (Normal)"] = "25 Spieler Schlachtzug (Normal)"
 L["40 Man Raid"] = "40-Mann-Schlachtzug"
@@ -122,7 +121,6 @@ L["Additional Trigger Replacements"] = "Zusätzlicher Auslöser Ersatz"
 L["Advanced Caster's Target Check"] = "Advanced Caster's Target Check"
 L["Affected"] = "Betroffen"
 L["Affected Unit Count"] = "Anzahl betroffener Einheiten"
---[[Translation missing --]]
 L["Afk"] = "Afk"
 L["Aggro"] = "Aggro (Bedrohung)"
 L["Agility"] = "Beweglichkeit"
@@ -315,7 +313,6 @@ L["Broodlord Lashlayer"] = "Broodlord Lashlayer"
 L["Buff"] = "Buff"
 L["Buff/Debuff"] = "Stärkungs-/Schwächungszauber"
 L["Buffed/Debuffed"] = "Buffed/Debuffed"
---[[Translation missing --]]
 L["Burning Crusade"] = "Burning Crusade"
 --[[Translation missing --]]
 L["Buru the Gorger"] = "Buru the Gorger"
@@ -551,8 +548,7 @@ L["Destination Unit"] = "Zieleinheit"
 L["Destination unit's raid mark index"] = "Destination unit's raid mark index"
 --[[Translation missing --]]
 L["Destination unit's raid mark texture"] = "Destination unit's raid mark texture"
---[[Translation missing --]]
-L["Difficulty"] = "Difficulty"
+L["Difficulty"] = "Schwierigkeit"
 --[[Translation missing --]]
 L["Disable Spell Known Check"] = "Disable Spell Known Check"
 --[[Translation missing --]]
@@ -562,8 +558,7 @@ L["Dispel"] = "Bannen (DISPEL)"
 L["Dispel Failed"] = "Bannen fehlgeschlagen (DISPEL_FAILED)"
 L["Display"] = "Anzeige"
 L["Distance"] = "Distanz"
---[[Translation missing --]]
-L["Do Not Disturb"] = "Do Not Disturb"
+L["Do Not Disturb"] = "Bitte nicht stören"
 L["Dodge"] = "Ausweichen (DODGE)"
 L["Dodge (%)"] = "Ausweichen (%)"
 --[[Translation missing --]]
@@ -573,24 +568,19 @@ L["Down"] = "Runter"
 L["Down, then Centered Horizontal"] = "Down, then Centered Horizontal"
 L["Down, then Left"] = "Runter, dann links"
 L["Down, then Right"] = "Runter, dann rechts"
---[[Translation missing --]]
 L["Dragonflight"] = "Dragonflight"
---[[Translation missing --]]
-L["Dragonriding"] = "Dragonriding"
+L["Dragonriding"] = "Drachenreiten"
 L["Drain"] = "Saugen (DRAIN)"
 L["Dropdown Menu"] = "Auswahlmenü"
 --[[Translation missing --]]
 L["Dumping table"] = "Dumping table"
---[[Translation missing --]]
-L["Dungeon (Heroic)"] = "Dungeon (Heroic)"
+L["Dungeon (Heroic)"] = "Dungeon (Heroisch)"
 --[[Translation missing --]]
 L["Dungeon (Mythic)"] = "Dungeon (Mythic)"
 --[[Translation missing --]]
 L["Dungeon (Mythic+)"] = "Dungeon (Mythic+)"
---[[Translation missing --]]
 L["Dungeon (Normal)"] = "Dungeon (Normal)"
---[[Translation missing --]]
-L["Dungeon (Timewalking)"] = "Dungeon (Timewalking)"
+L["Dungeon (Timewalking)"] = "Dungeon (Zeitwanderung)"
 L["Dungeons"] = "Instanzen"
 L["Durability Damage"] = "Haltbarkeitsschaden (DURABILITY_DAMAGE)"
 L["Durability Damage All"] = "Haltbarkeitsschaden, Alle (DURABILITY_DAMAGE_ALL)"

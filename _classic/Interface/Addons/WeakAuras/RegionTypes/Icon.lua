@@ -480,7 +480,7 @@ local function modify(parent, region, data)
     end
 
     iconPath = iconPath or self.displayIcon or "Interface\\Icons\\INV_Misc_QuestionMark"
-    WeakAuras.SetTextureOrAtlas(self.icon, iconPath)
+    Private.SetTextureOrAtlas(self.icon, iconPath)
   end
 
   function region:Scale(scalex, scaley)
@@ -663,4 +663,4 @@ local function validate(data)
   Private.EnforceSubregionExists(data, "subbackground")
 end
 
-WeakAuras.RegisterRegionType("icon", create, modify, default, GetProperties, validate)
+Private.RegisterRegionType("icon", create, modify, default, GetProperties, validate)

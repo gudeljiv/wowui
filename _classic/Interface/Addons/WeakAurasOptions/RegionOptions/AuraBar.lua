@@ -634,9 +634,9 @@ local function modifyThumbnail(parent, borderframe, data, fullModify, width, hei
       end
 
       if iconPath and iconPath ~= "" then
-        WeakAuras.SetTextureOrAtlas(self.icon, iconPath)
+        OptionsPrivate.Private.SetTextureOrAtlas(self.icon, iconPath)
       else
-        WeakAuras.SetTextureOrAtlas(self.icon, "Interface\\Icons\\INV_Misc_QuestionMark")
+        OptionsPrivate.Private.SetTextureOrAtlas(self.icon, "Interface\\Icons\\INV_Misc_QuestionMark")
       end
     end
 
@@ -825,4 +825,7 @@ local function GetAnchors(data)
 end
 
 -- Register new region type options with WeakAuras
-WeakAuras.RegisterRegionOptions("aurabar", createOptions, createIcon, L["Progress Bar"], createThumbnail, modifyThumbnail, L["Shows a progress bar with name, timer, and icon"], templates, GetAnchors);
+OptionsPrivate.registerRegions = OptionsPrivate.registerRegions or {}
+table.insert(OptionsPrivate.registerRegions, function()
+  OptionsPrivate.Private.RegisterRegionOptions("aurabar", createOptions, createIcon, L["Progress Bar"], createThumbnail, modifyThumbnail, L["Shows a progress bar with name, timer, and icon"], templates, GetAnchors);
+end)

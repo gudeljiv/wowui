@@ -359,8 +359,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.8.0"
-local buildTime = "20231008151253"
+local versionString = "5.8.1"
+local buildTime = "20231009225328"
 
 local flavorFromToc = GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -372,7 +372,7 @@ local flavorFromTocToNumber = {
 local flavor = flavorFromTocToNumber[flavorFromToc]
 
 --[==[@debug@
-if versionStringFromToc == "5.8.0" then
+if versionStringFromToc == "5.8.1" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
 end
@@ -505,11 +505,11 @@ end
 
 -- These function stubs are defined here to reduce the number of errors that occur if WeakAuras.lua fails to compile
 --- @type fun(regionType: string, createFunction: function, modifyFunction: function, defaults: table, properties: table|function|nil, validate: function?))
-function WeakAuras.RegisterRegionType(_, _, _ ,_)
+function Private.RegisterRegionType(_, _, _ ,_)
 end
 
 --- @type fun(regionType: string, createOptions: function, icon: string|function, displayName: string, createThumbnail: function?, modifyThumbnail: function?, description: string?, templates: table?, getAnchors: function?)
-function WeakAuras.RegisterRegionOptions(_, _ , _ ,_ )
+function Private.RegisterRegionOptions(_, _ , _ ,_ )
 end
 
 function Private.StartProfileSystem(_)

@@ -507,10 +507,8 @@ L["Down"] = "Bas"
 L["Down, then Centered Horizontal"] = "Down, then Centered Horizontal"
 L["Down, then Left"] = "Bas puis Gauche"
 L["Down, then Right"] = "Bas puis Droite"
---[[Translation missing --]]
 L["Dragonflight"] = "Dragonflight"
---[[Translation missing --]]
-L["Dragonriding"] = "Dragonriding"
+L["Dragonriding"] = "En vol à dos de dragon"
 L["Drain"] = "Drain"
 L["Dropdown Menu"] = "Menu Déroulant"
 --[[Translation missing --]]
@@ -592,10 +590,9 @@ L["Entering/Leaving Encounter"] = "Entering/Leaving Encounter"
 L["Entry Order"] = "Entry Order"
 L["Environment Type"] = "Type d'environnement"
 L["Environmental"] = "Environnement"
---[[Translation missing --]]
-L["Equipment"] = "Equipment"
-L["Equipment Set"] = "Ensemble d'Equipement"
-L["Equipment Set Equipped"] = "Ensemble d'Equipement Équipé"
+L["Equipment"] = "Équipement"
+L["Equipment Set"] = "Ensemble d'équipement"
+L["Equipment Set Equipped"] = "Ensemble d'équipement équipé"
 L["Equipment Slot"] = "Emplacement d'équipement"
 L["Equipped"] = "Équipé "
 L["Error"] = "Erreur"
@@ -807,7 +804,7 @@ L["Hakkar"] = "Hakkar"
 --[[Translation missing --]]
 L["Halion"] = "Halion"
 L["Has Target"] = "A une Cible"
-L["Has Vehicle UI"] = "A l'UI véhicule"
+L["Has Vehicle UI"] = "Dans un véhicule"
 L["HasPet"] = "Avoir un familier (vivant)"
 L["Haste (%)"] = "Hâte (%)"
 L["Haste Rating"] = "Score de hâte"
@@ -887,8 +884,7 @@ L["In Raid"] = "En raid"
 --[[Translation missing --]]
 L["In Range"] = "In Range"
 L["In Vehicle"] = "Dans un véhicule"
---[[Translation missing --]]
-L["In War Mode"] = "In War Mode"
+L["In War Mode"] = "En mode guerre"
 L["Include Bank"] = "Inclure Banque"
 L["Include Charges"] = "Inclure charges"
 --[[Translation missing --]]
@@ -1445,8 +1441,7 @@ L["Rotface"] = "Rotface"
 L["Round"] = "Ronde"
 --[[Translation missing --]]
 L["Round Mode"] = "Round Mode"
---[[Translation missing --]]
-L["Ruins of Ahn'Qiraj"] = "Ruins of Ahn'Qiraj"
+L["Ruins of Ahn'Qiraj"] = "Ruines d'Ahn'Qiraj"
 L["Run Custom Code"] = "Exécuter le code personnalisé"
 --[[Translation missing --]]
 L["Run Speed (%)"] = "Run Speed (%)"
