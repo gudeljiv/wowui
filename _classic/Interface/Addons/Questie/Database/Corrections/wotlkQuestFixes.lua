@@ -1615,12 +1615,21 @@ function QuestieWotlkQuestFixes:Load()
         [12500] = {
             [questKeys.preQuestSingle] = {12498},
         },
+        [12501] = {
+            [questKeys.childQuests] = {12502,12509,12519,12541},
+        },
+        [12502] = {
+            [questKeys.parentQuest] = 12501,
+        },
         [12503] = {
             [questKeys.preQuestSingle] = {12795},
             [questKeys.objectives] = {nil,nil,nil,nil,{{{28023,28026,28246,28669,28022},28022,"Scourge at The Argent Stand destroyed"}}},
         },
         [12506] = {
             [questKeys.triggerEnd] = {"Main building at the Altar of Sseratus investigated.",{[zoneIDs.ZUL_DRAK]={{40.32,39.46,},},},},
+        },
+        [12509] = {
+            [questKeys.parentQuest] = 12501,
         },
         [12512] = {
             [questKeys.objectives] = {nil,nil,nil,nil,{{{28133,28136},28133},{{28141,28142},28141},{{28143,28148},28143}}},
@@ -1630,6 +1639,9 @@ function QuestieWotlkQuestFixes:Load()
         [12516] = {
             [questKeys.objectives] = {{{28068}}},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Muddled Mojo on Prophet of Sseratus before killing it"), 0, {{"monster", 28068}}}},
+        },
+        [12519] = {
+            [questKeys.parentQuest] = 12501,
         },
         [12520] = {
             [questKeys.preQuestSingle] = {},
@@ -1683,6 +1695,15 @@ function QuestieWotlkQuestFixes:Load()
         [12561] = {
             [questKeys.requiredSpell] = 54197,
         },
+        [12563] = {
+            [questKeys.childQuests] = {12541,12564,12568,12585},
+        },
+        [12564] = {
+            [questKeys.parentQuest] = 12563,
+        },
+        [12568] = {
+            [questKeys.parentQuest] = 12563,
+        },
         [12569] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Sandfern Disguise near the fallen log"), 0, {{"object", 190545}}}},
         },
@@ -1704,6 +1725,12 @@ function QuestieWotlkQuestFixes:Load()
         },
         [12584] = {
             [questKeys.preQuestGroup] = {12552},
+        },
+        [12585] = {
+            [questKeys.parentQuest] = 12563,
+        },
+        [12587] = {
+            [questKeys.childQuests] = {12541,12588,12591,12594},
         },
         [12589] = {
             [questKeys.preQuestSingle] = {},
@@ -4755,6 +4782,42 @@ function QuestieWotlkQuestFixes:Load()
         [24541] = {
             [questKeys.sourceItemId] = 49867,
         },
+        [24579] = {
+            [questKeys.exclusiveTo] = {24580,24581,24582,24583,24584,24585,24586,24587,24588,24589,24590},
+        },
+        [24580] = {
+            [questKeys.exclusiveTo] = {24579,24581,24582,24583,24584,24585,24586,24587,24588,24589,24590},
+        },
+        [24581] = {
+            [questKeys.exclusiveTo] = {24579,24580,24582,24583,24584,24585,24586,24587,24588,24589,24590},
+        },
+        [24582] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24583,24584,24585,24586,24587,24588,24589,24590},
+        },
+        [24583] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24584,24585,24586,24587,24588,24589,24590},
+        },
+        [24584] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24585,24586,24587,24588,24589,24590},
+        },
+        [24585] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24586,24587,24588,24589,24590},
+        },
+        [24586] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24585,24587,24588,24589,24590},
+        },
+        [24587] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24585,24586,24588,24589,24590},
+        },
+        [24588] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24585,24586,24587,24589,24590},
+        },
+        [24589] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24585,24586,24587,24588,24590},
+        },
+        [24590] = {
+            [questKeys.exclusiveTo] = {24579,24580,24581,24582,24583,24584,24585,24586,24587,24588,24589},
+        },
         [24597] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
         },
@@ -5110,6 +5173,32 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.objectives] = {nil,{{400012, "Spend 5 Talent Points"}},nil,nil,nil},
             [questKeys.zoneOrSort] = 1519,
         },
+        [78752] = {
+            [questKeys.name] = "Proof of Demise: Titan Rune Protocol Gamma",
+            [questKeys.startedBy] = {{20735},nil,nil},
+            [questKeys.finishedBy] = {{20735},nil,nil},
+            [questKeys.requiredLevel] = 80,
+            [questKeys.questLevel] = 80,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.objectivesText] = {"The Lich King's presence mustn't extend any further!","","The Council of Six has decreed that any strong enough fighter should take up arms and aid in keeping Azeroth safe!"},
+            [questKeys.objectives] = {nil,nil,{{211206}}},
+            [questKeys.zoneOrSort] = 4395,
+            [questKeys.questFlags] = 4232,
+            [questKeys.specialFlags] = 1,
+        },
+        [78753] = {
+            [questKeys.name] = "Proof of Demise: Threats to Azeroth",
+            [questKeys.startedBy] = {{20735},nil,nil},
+            [questKeys.finishedBy] = {{20735},nil,nil},
+            [questKeys.requiredLevel] = 80,
+            [questKeys.questLevel] = 80,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.objectivesText] = {"We must continue putting pressure on all fronts!","","The Council of Six has decreed that any willing fighter should take up arms and aid in keeping Azeroth safe!"},
+            [questKeys.objectives] = {nil,nil,{{211207}}},
+            [questKeys.zoneOrSort] = 4395,
+            [questKeys.questFlags] = 4232,
+            [questKeys.specialFlags] = 1,
+        },
     }
 end
 
@@ -5137,4 +5226,8 @@ function _QuestieWotlkQuestFixes:InsertMissingQuestIds()
 
     -- Neutral boosted quests
     QuestieDB.questData[70865] = {} -- To Shattrath City
+    
+    -- P4 quests
+    QuestieDB.questData[78752] = {} -- Proof of Demise: Titan Rune Protocol Gamma
+    QuestieDB.questData[78753] = {} -- Proof of Demise: Threats to Azeroth
 end

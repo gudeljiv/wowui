@@ -1,0 +1,9 @@
+
+SigmaHelmAndCloak = {
+	["|cffffffff|Hitem:4368::::::::26:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:15508::::::1182:1869613184:26:::::::::|h[]|h|r"] = "Off",
+	["|cff1eff00|Hitem:15508::::::1182:1869613184:26:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
+	["|cff1eff00|Hitem:15508::::::1182:1869613184:25:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
+	["|cff1eff00|Hitem:4368::::::::25:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
+	["|cff1eff00|Hitem:4368::::::::26:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
+}
