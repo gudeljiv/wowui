@@ -1,21 +1,20 @@
-# [5.8.1](https://github.com/WeakAuras/WeakAuras2/tree/5.8.1) (2023-10-09)
+# [5.8.2](https://github.com/WeakAuras/WeakAuras2/tree/5.8.2) (2023-10-11)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.0...5.8.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.1...5.8.2)
 
 ## Highlights
 
- - Bug Fixes 
+ - Bug fixes
+- TOC Update for Wrath 
 
 ## Commits
 
-mrbuds (8):
+Stanzilla (2):
 
-- Classic Era: fix some load conditions
-- move WeakAuras.RegisterRegionType to Private
-- move WeakAuras.SetTextureOrAtlas to Private
-- move WeakAuras.RegisterRegionOptions to Private
-- Revert "Also use %q for IsSpellKnownForLoad" fixes #4638
-- Dynamic group options: some options were incorrectly shown with Group by Frame enable
-- ClassicEra combat log: fix spell checks
-- dynamicgroup: fix set anchor to parent with anchor per unit
+- Update TOC for Wrath
+- Hide addon compartment tooltip onLeave
+
+mrbuds (1):
+
+- Fix error when a dynamic group grower try to SetParent with a string
 

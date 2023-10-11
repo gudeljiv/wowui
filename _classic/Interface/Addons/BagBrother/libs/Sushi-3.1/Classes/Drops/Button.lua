@@ -17,7 +17,8 @@ You should have received a copy of the GNU General Public License
 along with Sushi. If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local Button = LibStub('Sushi-3.1').Clickable:NewSushi('DropButton', 2, 'CheckButton', 'UIDropDownMenuButtonTemplate', true)
+local Sushi = LibStub('Sushi-3.1')
+local Button = Sushi.Clickable:NewSushi('DropButton', 3, 'CheckButton', 'UIDropDownMenuButtonTemplate', true)
 if not Button then return end
 
 
@@ -27,11 +28,16 @@ function Button:Construct()
 	local b = self:Super(Button):Construct()
 	local name = b:GetName()
 
-	--b.Arrow = _G[name .. 'ExpandArrow']
 	--b.Color = _G[name .. 'ColorSwatch']
 	--b.Color.Bg = _G[name .. 'ColorSwatchSwatchBG']
+
+	b.Arrow = _G[name .. 'ExpandArrow']
+	b.Arrow:SetScript('OnEnter', nil)
+	b.Arrow:SetScript('OnMouseDown', nil)
 	b.Highlight:SetPoint('BOTTOMRIGHT', 2, 0)
-	b.Highlight:SetPoint('TOPLEFT')
+
+	b.Sublevel = Sushi.Dropdown:New(b)
+	b.Sublevel:SetPoint('TOPLEFT', b, 'RIGHT')
 
 	b:SetScript('OnEnable', nil)
 	b:SetScript('OnDisable', nil)
@@ -42,20 +48,20 @@ function Button:Construct()
 end
 
 function Button:New(parent, info)
-	local b = self:Super(Button):New(parent)
 	local info = info or {}
+	local sublevel = info.menuTable or info.sublevel or info.children
+	local b = self:Super(Button):New(parent)
 
 	--b.Color:SetShown(info.hasColorSwatch)
-	--b.Arrow:SetEnabled(not info.disabled)
-	--b.Arrow:SetShown(info.menuTable or info.hasArrow)
 
 	MergeTable(b, info)
 	b.info = info
 	b:SetText(info.text)
+	b:SetSublevel(sublevel)
 	b:SetChecked(info.checked)
-	b:SetTip(info.tooltipTitle, info.tooltipText)
+	b:SetFletched(info.hasArrow or sublevel)
 	b:SetEnabled(not info.disabled and not info.isTitle)
-	b:SetCall('OnClick', info.func and function() info:func() end)
+	b:SetCall('OnClick', info.func and function() info.func(b) end)
 	b:SetCheckable(not info.isTitle and not info.notCheckable, not info.isNotRadio)
 	b:SetNormalFontObject(info.fontObject or info.isTitle and GameFontNormalSmallLeft or GameFontHighlightSmallLeft)
 	b:SetDisabledFontObject(info.fontObject or info.isTitle and GameFontNormalSmallLeft or GameFontDisableSmallLeft)
@@ -67,9 +73,22 @@ function Button:New(parent, info)
 	return b
 end
 
+function Button:Reset()
+	wipe(self.Sublevel:GetCalls('OnChildren'))
+	self:Super(Button):Reset()
+end
+
+
+--[[ Events ]]--
+
 function Button:OnClick()
-	self.info.checked = self:GetChecked()
+	self.checked = self:GetChecked()
 	self:Super(Button):OnClick()
+end
+
+function Button:OnUpdate()
+	self.Sublevel:SetShown(self.Sublevel:IsMouseInteracting())
+	self:SetHighlightLocked(self.Sublevel:IsVisible())
 end
 
 
@@ -78,6 +97,16 @@ end
 function Button:SetText(text)
 	self:Super(Button):SetText(text)
 	self:UpdateSize()
+end
+
+function Button:SetEnabled(enabled)
+	self:Super(Button):SetEnabled(enabled)
+	self.Arrow:SetEnabled(enabled)
+end
+
+function Button:SetSublevel(children)
+	self:SetScript('OnUpdate', children and self.OnUpdate)
+	self.Sublevel:SetChildren(children)
 end
 
 function Button:SetCheckable(checkable, radio)
@@ -97,10 +126,19 @@ function Button:IsCheckable()
 	return normal:GetAlpha() > 0, select(3, normal:GetTexCoord()) > 0
 end
 
+function Button:SetFletched(hasArrow)
+	self.right = hasArrow and 10 or 16
+	self.Arrow:SetShown(hasArrow)
+end
+
+function Button:IsFletched()
+	return self.Arrow:IsShown()
+end
+
 function Button:UpdateSize()
 	self:SetSize(min(max(
 		self:GetParent():GetWidth() - self.left - self.right,
-		self:GetTextWidth() + (self:IsCheckable() and 24 or 4)),
+		self:GetTextWidth() + (self:IsCheckable() and 24 or 4) + (self:IsFletched() and 14 or 0)),
 		self.maxWidth or math.huge
 	), max(self:GetTextHeight(), 16))
 end

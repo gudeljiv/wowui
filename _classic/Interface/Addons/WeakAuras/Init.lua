@@ -359,8 +359,8 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.8.1"
-local buildTime = "20231009225328"
+local versionString = "5.8.2"
+local buildTime = "20231011153744"
 
 local flavorFromToc = GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
@@ -372,7 +372,7 @@ local flavorFromTocToNumber = {
 local flavor = flavorFromTocToNumber[flavorFromToc]
 
 --[==[@debug@
-if versionStringFromToc == "5.8.1" then
+if versionStringFromToc == "5.8.2" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
 end
@@ -472,6 +472,9 @@ do
         GameTooltip:AddLine(WeakAuras.L["|cffeda55fLeft-Click|r to toggle showing the main window."], 1, 1, 1, true)
         GameTooltip:Show()
         WeakAuras.GenerateTooltip(true)
+      end,
+      funcOnLeave = function()
+        GameTooltip:Hide()
       end,
     })
   end

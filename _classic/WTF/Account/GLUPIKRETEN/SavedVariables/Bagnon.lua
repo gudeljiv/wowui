@@ -62,17 +62,17 @@ Bagnon_Sets = {
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["itemScale"] = 1,
-			["bagBreak"] = false,
+			["hiddenRules"] = {
+			},
 			["y"] = 277.3416748046875,
+			["bagBreak"] = false,
 			["x"] = -805.0643310546875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
 			["alpha"] = 1,
 			["spacing"] = 3,
-			["hiddenRules"] = {
-			},
+			["itemScale"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -214,7 +214,7 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "10.1.13",
+	["version"] = "10.1.14",
 	["display"] = {
 		["merchant"] = false,
 		["tradePartner"] = false,

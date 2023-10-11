@@ -2,11 +2,14 @@
 SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:15508::::::1182:1869613184:26:::::::::|h[]|h|r"] = "Off",
 	["|cff1eff00|Hitem:15508::::::1182:1869613184:25:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
+	["|cff1eff00|Hitem:10408::::::1114:1703322368:27:::::::::|h[Banded Helm of the Boar]|h|r"] = "Off",
 	["|cff1eff00|Hitem:4368::::::::25:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
-	["|cffffffff|Hitem:4368::::::::26:::::::::|h[]|h|r"] = "Off",
-	["|cff1eff00|Hitem:16990::::::::27:::::::::|h[Spritekin Cloak]|h|r"] = "Off",
-	["|cff1eff00|Hitem:15508::::::1182:1869613184:27:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
 	["|cff1eff00|Hitem:4368::::::::27:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
-	["|cff1eff00|Hitem:4368::::::::26:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
+	["|cffffffff|Hitem:4368::::::::26:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:4368::::::::27:::::::::|h[]|h|r"] = "Off",
+	["|cff1eff00|Hitem:16990::::::::27:::::::::|h[Spritekin Cloak]|h|r"] = "Off",
 	["|cff1eff00|Hitem:15508::::::1182:1869613184:26:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
+	["|cff1eff00|Hitem:4368::::::::26:::::::::|h[Flying Tiger Goggles]|h|r"] = "Off",
+	["|cffffffff|Hitem:16990::::::::27:::::::::|h[]|h|r"] = "Off",
+	["|cff1eff00|Hitem:15508::::::1182:1869613184:27:::::::::|h[Grunt's Cape of the Bear]|h|r"] = "Off",
 }
