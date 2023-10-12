@@ -34,7 +34,7 @@ end
 function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 	for i, v in ipairs(messages) do
 		if text and text:match(v) then
-			ChatFrame7:AddMessage(_G.RED_FONT_COLOR_CODE .. text)
+			ChatFrame6:AddMessage(_G.RED_FONT_COLOR_CODE .. text)
 			return
 		end
 	end

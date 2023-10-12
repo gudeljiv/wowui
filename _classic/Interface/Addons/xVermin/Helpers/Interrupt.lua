@@ -1,12 +1,26 @@
 local _, xVermin = ...
 
+local interrupt_warning = CreateFrame('Frame', 'InterruptWarningFrame')
+interrupt_warning:SetPoint('TOP', UIParent, 'TOP', 0, -100)
+interrupt_warning.text = interrupt_warning:CreateFontString(nil, 'ARTWORK')
+interrupt_warning.text:SetFont(xVermin.Config.font.arial, 40, 'NONE')
+interrupt_warning.text:SetShadowOffset(1, -1)
+interrupt_warning.text:SetPoint('TOP', interrupt_warning, 'TOP', 0, 0)
+interrupt_warning.text:SetText('INTERRUPT NOW')
+interrupt_warning.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+interrupt_warning:SetWidth(interrupt_warning.text:GetStringWidth())
+interrupt_warning:SetHeight(interrupt_warning.text:GetStringHeight())
+interrupt_warning:Hide()
+
 _G.IfUnitIsCastingInteruptable = false
 
 local HandleRotationFrame = function(on)
 	if on then
 		RotationFrame3:SetBackdropColor(0, 1, 0, 1)
+		interrupt_warning:Show()
 	else
 		RotationFrame3:SetBackdropColor(1, 1, 1, 1)
+		interrupt_warning:Hide()
 	end
 	return
 end

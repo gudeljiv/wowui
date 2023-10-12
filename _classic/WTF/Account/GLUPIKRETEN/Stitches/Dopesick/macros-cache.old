@@ -44,9 +44,8 @@ END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [nostance:2,spec:1]Defensive Stance
-/cast Revenge
-/use 10
+/cast [stance:2]Revenge
+/cast [stance:1/3]Hamstring
 END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
@@ -79,4 +78,8 @@ VER 3 000000000100001E " " "134400"
 /startattack
 /cast Sunder Armor
 /cast Bloodrage
+END
+VER 3 000000000100001F " " "134400"
+#showtooltip
+/cast [@player] Target Dummy
 END

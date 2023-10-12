@@ -44,9 +44,8 @@ END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [nostance:2,spec:1]Defensive Stance
-/cast Revenge
-/use 10
+/cast [stance:2]Revenge
+/cast [stance:1/3]Hamstring
 END
 VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
 #showtooltip [nocombat] Charge; Intercept
@@ -59,7 +58,8 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 000000000100001B " " "134400"
+VER 3 000000000100001B " " "132147"
+#showtooltip ""
 /equipslot [noworn:shield]16 Ridge Cleaver of the Boar
 /equipslot [noworn:shield]17 Cobalt Buckler
 /equipslot [worn:shield]17 Battle Knife of the Bear

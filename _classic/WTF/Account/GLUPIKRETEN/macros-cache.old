@@ -1,7 +1,3 @@
-VER 3 0000000000000011 " " "136106"
-/inspect
-/run SortBags()
-END
 VER 3 0000000000000025 " " "134400"
 #showtooltip
 /cast [@cursor] Iron Grenade
@@ -15,9 +11,13 @@ END
 VER 3 0000000000000012 " " "136173"
 /click BehindTarget
 END
+VER 3 0000000000000011 " " "136106"
+/inspect
+/run SortBags()
+END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1708
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -30,13 +30,13 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:3928
+/use item:1710
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
 VER 3 0000000000000022 "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Silithid Invader
+/targetexact Miner Hackett
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip
