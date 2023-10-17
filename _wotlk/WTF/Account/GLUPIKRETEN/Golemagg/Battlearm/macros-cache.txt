@@ -1,6 +1,7 @@
-VER 3 000000000100000D " " "134400"
+VER 3 000000000100000C " " "134400"
 #showtooltip
-/cast Empower Rune Weapon
+/cast Obliterate
+/cancelaura Blood Tap
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -44,8 +45,7 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@player]Death and Decay
 END
-VER 3 000000000100000C " " "134400"
+VER 3 000000000100000D " " "134400"
 #showtooltip
-/cast Obliterate
-/cancelaura Blood Tap
+/cast Empower Rune Weapon
 END

@@ -63,6 +63,7 @@ DBM_AllSavedOptions = {
 		["SetCurrentMapOnPull"] = true,
 		["SpecialWarningVibrate2"] = false,
 		["SpecialWarningFlashCount2"] = 1,
+		["NPAuraText"] = true,
 		["EventSoundDungeonBGM"] = "None",
 		["AutoAcceptGuildInvite"] = false,
 		["VPReplacesCustom"] = false,
@@ -140,7 +141,7 @@ DBM_AllSavedOptions = {
 		["OverrideBossAnnounce"] = false,
 		["StatusEnabled"] = true,
 		["ShowAdvSWSounds"] = false,
-		["CoreSavedRevision"] = 20230829124247,
+		["CoreSavedRevision"] = 20231014081759,
 		["RangeFrameX"] = -432.3172302246094,
 		["AlwaysShowSpeedKillTimer"] = true,
 		["RangeFrameY"] = -201.4747467041016,
@@ -149,6 +150,7 @@ DBM_AllSavedOptions = {
 		["FilterTInterruptHealer"] = false,
 		["FakeBWVersion"] = false,
 		["CRT_Enabled"] = false,
+		["NPIconXOffset"] = 0,
 		["SpecialWarningFlashCol2"] = {
 			1, -- [1]
 			0.5, -- [2]
@@ -182,6 +184,7 @@ DBM_AllSavedOptions = {
 			0.3, -- [2]
 			0, -- [3]
 		},
+		["AFKHealthWarning2"] = false,
 		["SpecialWarningVibrate1"] = false,
 		["EventSoundEngage2"] = "Interface\\AddOns\\Prat-3.0\\Sounds\\IM.ogg",
 		["InfoFrameY"] = -18.53246879577637,
@@ -203,6 +206,8 @@ DBM_AllSavedOptions = {
 		["ArrowPosY"] = -150,
 		["SpecialWarningFontShadow"] = false,
 		["EventMusicMythicFilter"] = true,
+		["DontShowNameplateIconsCD"] = false,
+		["NPIconYOffset"] = 0,
 		["OverrideBossTimer"] = false,
 		["SpecialWarningFlashCol1"] = {
 			1, -- [1]

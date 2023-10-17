@@ -41,6 +41,13 @@ deathlog_class_tbl = {
 	["Druid"] = 11,
 }
 
+-- values between 0 and 7
+deathlog_pvp_flag = {
+	NONE = 0,
+	REGULAR = 1,
+	DUEL_TO_DEATH = 2,
+}
+
 local environment_damage = {
 	[-2] = "Drowning",
 	[-3] = "Falling",
@@ -96,6 +103,42 @@ function deathlogShallowCopy(t)
 		t2[k] = v
 	end
 	return t2
+end
+
+function deathlogPredictSource(entry_map_pos, entry_map_id)
+	local xx, yy = strsplit(",", entry_map_pos, 2)
+	if xx == nil or tonumber(entry_map_id) == nil then
+		return nil
+	end
+	local pos = { x = xx, y = yy }
+	local cont, cont_pos = C_Map.GetWorldPosFromMapPos(tonumber(entry_map_id), pos)
+	if cont == nil then
+		return nil
+	end
+	for map_id = 1424, 1465 do
+		local m, v = C_Map.GetMapPosFromWorldPos(cont, cont_pos, map_id)
+		if m ~= nil then
+			local x = ceil(v.x * 100)
+			local y = ceil(v.y * 100)
+			if x > 0 and x < 100 and y > 0 and y < 100 then
+				if precomputed_heatmap_intensity[map_id] and precomputed_heatmap_intensity[map_id][x] then
+					if precomputed_heatmap_intensity[map_id][x][y] then
+						for k, v in pairs(precomputed_heatmap_creature_subset[map_id]) do
+							if v[x] and v[x][y] then
+								if id_to_npc[k] then
+									return id_to_npc[k] .. "*"
+								end
+								if environment_damage[k] then
+									return environment_damage[k] .. "*"
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	return nil
 end
 
 -- Tue Apr 18 21:36:54 2023
@@ -590,7 +633,10 @@ function deathlog_setTooltipFromEntry(_entry)
 	local _guild = _entry["guild"]
 	local _race = nil
 	local _class = nil
-	local _source = id_to_npc[_entry["source_id"]] or environment_damage[_entry["source_id"]] or nil
+	local _source = id_to_npc[_entry["source_id"]]
+		or environment_damage[_entry["source_id"]]
+		or deathlog_decode_pvp_source(_entry["source_id"])
+		or ""
 	local _zone = nil
 	local _loc = _entry["map_pos"]
 	local _date = nil
@@ -631,14 +677,41 @@ function deathlog_setTooltip(_name, _lvl, _guild, _race, _class, _source, _zone,
 	if _name == nil or _lvl == nil then
 		return
 	end
+
+	local _deathlog_watchlist_icon = ""
+	if
+		deathlog_watchlist_entries
+		and deathlog_watchlist_entries[_name]
+		and deathlog_watchlist_entries[_name]["Icon"]
+	then
+		_deathlog_watchlist_icon = deathlog_watchlist_entries[_name]["Icon"] .. " "
+	end
 	if string.sub(_name, #_name) == "s" then
-		GameTooltip:AddDoubleLine(_name .. "' " .. Deathlog_L.death_word , "Lvl. " .. _lvl, 1, 1, 1, 0.5, 0.5, 0.5)
+		GameTooltip:AddDoubleLine(
+			_deathlog_watchlist_icon .. _name .. "' " .. Deathlog_L.death_word,
+			"Lvl. " .. _lvl,
+			1,
+			1,
+			1,
+			0.5,
+			0.5,
+			0.5
+		)
 	else
-		GameTooltip:AddDoubleLine(_name .. "'s " .. Deathlog_L.death_word , "Lvl. " .. _lvl, 1, 1, 1, 0.5, 0.5, 0.5)
+		GameTooltip:AddDoubleLine(
+			_deathlog_watchlist_icon .. _name .. "'s " .. Deathlog_L.death_word,
+			"Lvl. " .. _lvl,
+			1,
+			1,
+			1,
+			0.5,
+			0.5,
+			0.5
+		)
 	end
 
 	if deathlog_settings["minilog"]["tooltip_name"] and _name then
-		GameTooltip:AddLine("Name: " .. _name, 1, 1, 1)
+		GameTooltip:AddLine(Deathlog_L.name_word .. ": " .. _name, 1, 1, 1)
 	end
 	if deathlog_settings["minilog"]["tooltip_guild"] and _guild then
 		GameTooltip:AddLine(Deathlog_L.guild_word .. ": " .. _guild, 1, 1, 1)
@@ -676,4 +749,128 @@ function deathlog_setTooltip(_name, _lvl, _guild, _race, _class, _source, _zone,
 			GameTooltip:AddLine(Deathlog_L.last_words_word .. ": " .. _last_words, 1, 1, 0, true)
 		end
 	end
+end
+
+function deathlog_encode_pvp_source(source_str)
+	local function create_source_id(source, race, class, level)
+		local source_id = 0
+
+		local pvp_flag = deathlog_pvp_flag.REGULAR
+		if
+			deathlog_last_duel_to_death_player ~= nil
+			and (deathlog_last_duel_to_death_player == source or deathlog_last_duel_to_death_player == UnitName(source))
+		then
+			pvp_flag = deathlog_pvp_flag.DUEL_TO_DEATH
+		end
+
+		source_id = bit.bor(source_id, bit.lshift(pvp_flag, 21))
+		source_id = bit.bor(source_id, bit.lshift(race, 29))
+		source_id = bit.bor(source_id, bit.lshift(class, 37))
+		source_id = bit.bor(source_id, bit.lshift(level, 45))
+
+		--as in the current setup the source_id needs to be a number, we can't parse the real player's name over with it... :(
+		return tostring(source_id)
+	end
+
+	if source_str == nil then
+		return "-1"
+	end
+
+	if deathlog_last_attack_player ~= nil and deathlog_last_attack_player == source_str then
+		return create_source_id(
+			source_str,
+			deathlog_last_attack_race,
+			deathlog_last_attack_class,
+			deathlog_last_attack_level
+		)
+	end
+
+	local source_str_safe = nil
+	if UnitIsPlayer(source_str) then
+		source_str_safe = source_str
+	elseif UnitIsPlayer("target") and UnitName("target") ~= UnitName("player") then
+		source_str_safe = "target"
+	end
+
+	if source_str_safe == nil then
+		return "-1"
+	end
+
+	source_str = source_str_safe
+
+	if UnitIsPlayer(source_str) then
+		local _, _, enemyRaceId = UnitRace(source_str)
+		local _, _, enemyClassId = UnitClass(source_str)
+		return create_source_id(source_str, tonumber(enemyRaceId), tonumber(enemyClassId), UnitLevel(source_str))
+	end
+
+	return "-1"
+end
+
+function deathlog_decode_pvp_source(source_id)
+	if
+		source_id == nil
+		or source_id == "-1"
+		or source_id == -1
+		or id_to_npc[source_id]
+		or environment_damage[source_id]
+	then
+		return ""
+	end
+
+	local source_id_num = tonumber(source_id)
+
+	local retrievedPvPFlag = bit.band(bit.rshift(source_id_num, 21), 0x7)
+	if retrievedPvPFlag and retrievedPvPFlag ~= deathlog_pvp_flag.NONE then
+		local retrievedEnemyRace = bit.band(bit.rshift(source_id_num, 29), 0xFF)
+		local retrievedEnemyClass = bit.band(bit.rshift(source_id_num, 37), 0xFF)
+		local retrievedEnemyLevel = bit.band(bit.rshift(source_id_num, 45), 0xFF)
+
+		local enemyClass = ""
+		if retrievedEnemyRace and retrievedEnemyRace > 0 then
+			enemyClass = GetClassInfo(retrievedEnemyClass) or ""
+			if deathlog_class_colors[enemyClass] then
+				enemyClass = "|c" .. deathlog_class_colors[enemyClass]:GenerateHexColor() .. enemyClass .. "|r"
+			end
+		end
+
+		local enemyRace = ""
+		if retrievedEnemyRace and retrievedEnemyRace > 0 then
+			enemyRace = C_CreatureInfo.GetRaceInfo(retrievedEnemyRace)
+			if enemyRace then
+				enemyRace = enemyRace.raceName
+			else
+				enemyRace = ""
+			end
+		end
+
+		local enemyLevel = ""
+		if retrievedEnemyLevel and retrievedEnemyLevel > 0 then
+			enemyLevel = retrievedEnemyLevel
+		end
+
+		local source_name = "PvP"
+		if retrievedPvPFlag == deathlog_pvp_flag.DUEL_TO_DEATH then
+			source_name = "Duel to Death"
+		end
+
+		if enemyClass or enemyRace or enemyLevel then
+			local enemyTable = {}
+			if enemyLevel then
+				table.insert(enemyTable, "level " .. enemyLevel)
+			end
+			if enemyRace then
+				table.insert(enemyTable, enemyRace)
+			end
+			if enemyClass then
+				table.insert(enemyTable, enemyClass)
+			end
+
+			source_name = source_name .. " (" .. table.concat(enemyTable, " ") .. ")"
+		end
+
+		return source_name
+	end
+
+	return ""
 end

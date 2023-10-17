@@ -157,6 +157,8 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["and rotated right"] = "Текст повернут вниз;"
 	L["and with width |cFFFF0000%s|r and %s"] = "Ширина поля %s; %s"
 	L["Angle"] = "Угол"
+	--[[Translation missing --]]
+	L["Angle Between Auras"] = "Angle Between Auras"
 	L["Animate"] = "Анимация"
 	L["Animated Expand and Collapse"] = "Анимированное свёртывание и развёртывание"
 	L["Animates progress changes"] = "Изменение прогресса отображается при помощи анимации"

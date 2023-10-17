@@ -150,6 +150,8 @@ L["Anchoring"] = "Anchoring"
 --[[Translation missing --]]
 L["And Talent"] = "And Talent"
 --[[Translation missing --]]
+L["Angle and Radius"] = "Angle and Radius"
+--[[Translation missing --]]
 L["Animations"] = "Animations"
 L["Anticlockwise"] = "Izquierda"
 --[[Translation missing --]]
@@ -927,6 +929,8 @@ L["Group Finder Poke End"] = "Group Finder Poke End"
 L["Group Finder Poke Initial"] = "Group Finder Poke Initial"
 --[[Translation missing --]]
 L["Group Leader/Assist"] = "Group Leader/Assist"
+--[[Translation missing --]]
+L["Group Size"] = "Group Size"
 --[[Translation missing --]]
 L["Group Type"] = "Group Type"
 L["Grow"] = "Crecer"

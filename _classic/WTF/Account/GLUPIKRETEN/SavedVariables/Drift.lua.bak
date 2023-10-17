@@ -1,11 +1,25 @@
 
 DriftPoints = {
-	["TradeSkillFrame"] = {
+	["CharacterFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOP",
 		["relativePoint"] = "TOP",
-		["yOfs"] = -103.4892272949219,
-		["xOfs"] = -257.3910217285156,
+		["yOfs"] = -87.0689468383789,
+		["xOfs"] = -368.8465881347656,
+	},
+	["TradeSkillFrame"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "LEFT",
+		["relativePoint"] = "LEFT",
+		["yOfs"] = 136.616455078125,
+		["xOfs"] = 131.1114349365234,
+	},
+	["SettingsPanel"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "CENTER",
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 33.01574325561523,
+		["xOfs"] = -137.7777252197266,
 	},
 }
 DriftScales = {
@@ -13,18 +27,18 @@ DriftScales = {
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["scaleCtrlKeyEnabled"] = false,
+	["windowsDisabled"] = false,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
+	["bagsDisabled"] = true,
+	["scaleCtrlKeyEnabled"] = false,
 	["scaleShiftKeyEnabled"] = false,
-	["windowsDisabled"] = false,
-	["objectivesDisabled"] = true,
-	["frameScaleIsLocked"] = false,
+	["arenaDisabled"] = true,
 	["miscellaneousDisabled"] = true,
 	["dragCtrlKeyEnabled"] = false,
-	["dragShiftKeyEnabled"] = false,
 	["buttonsDisabled"] = true,
-	["arenaDisabled"] = true,
-	["bagsDisabled"] = true,
+	["dragShiftKeyEnabled"] = false,
+	["frameScaleIsLocked"] = false,
+	["objectivesDisabled"] = true,
 	["minimapDisabled"] = true,
 }

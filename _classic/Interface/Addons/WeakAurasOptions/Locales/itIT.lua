@@ -246,6 +246,8 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	--[[Translation missing --]]
 	L["and with width |cFFFF0000%s|r and %s"] = "and with width |cFFFF0000%s|r and %s"
 	L["Angle"] = "Angolo"
+	--[[Translation missing --]]
+	L["Angle Between Auras"] = "Angle Between Auras"
 	L["Animate"] = "Animato"
 	L["Animated Expand and Collapse"] = "Espansione e Compressione Animata"
 	L["Animates progress changes"] = "Anima i cambi di avanzamento"

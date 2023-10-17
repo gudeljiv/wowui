@@ -152,6 +152,8 @@ Enable this setting if you want this timer to be hidden, or when using a WeakAur
 	L["and rotated right"] = "并且向右旋转"
 	L["and with width |cFFFF0000%s|r and %s"] = "并且宽度|cFFFF0000%s|r 并且%s"
 	L["Angle"] = "角度"
+	--[[Translation missing --]]
+	L["Angle Between Auras"] = "Angle Between Auras"
 	L["Animate"] = "动画"
 	L["Animated Expand and Collapse"] = "展开折叠动画"
 	L["Animates progress changes"] = "进度变化动画"

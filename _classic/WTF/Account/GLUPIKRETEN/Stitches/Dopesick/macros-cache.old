@@ -58,10 +58,11 @@ VER 3 000000000100001A " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 000000000100001B " " "134400"
+VER 3 000000000100001B " " "132147"
+#showtooltip ""
 /equipslot [noworn:shield]16 Ridge Cleaver of the Boar
 /equipslot [noworn:shield]17 Cobalt Buckler
-/equipslot [worn:shield]17 Battle Knife of the Bear
+/equipslot [worn:shield]16 Whirlwind Axe
 END
 VER 3 000000000100001C " " "134400"
 #showtooltip Thunder Clap

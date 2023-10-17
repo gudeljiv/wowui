@@ -1,8 +1,6 @@
 # Auctionator
 
-## [10.1.21](https://github.com/Auctionator/Auctionator/tree/10.1.21) (2023-09-10)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.20...10.1.21) 
+## [10.1.30](https://github.com/Auctionator/Auctionator/tree/10.1.30) (2023-10-15)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.29...10.1.30) 
 
-- Mainline: Shopping Buying: Refresh commodities listing after a purchase  
-- Classic: Remove compatibility code for API calls without C\_Container  
-- Remove auto-opening Basic Options from main options as it doesn't work  
+- [Fix #1443] Bag/Groups: Fix using wrong part of modifiers for bag key  

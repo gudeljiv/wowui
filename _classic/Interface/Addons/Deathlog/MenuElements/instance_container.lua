@@ -46,6 +46,7 @@ local function createInstanceButton(path_postfix, title_text)
 	frame.instance_str:SetTextColor(1, 1, 1, 1)
 	frame.instance_str:SetJustifyH("CENTER")
 	frame.instance_str:SetText(title_text)
+	frame.instance_str:SetWidth(180)
 	frame.instance_str:Hide()
 	return frame
 end
@@ -210,6 +211,13 @@ function instance_container.updateMenuElement(scroll_frame, current_instance_id,
 	instance_container.instance_buttons[19]:SetPoint(
 		"TOPLEFT",
 		instance_container.instance_buttons[15],
+		"TOPLEFT",
+		0,
+		vert_sep
+	)
+	instance_container.instance_buttons[20]:SetPoint(
+		"TOPLEFT",
+		instance_container.instance_buttons[16],
 		"TOPLEFT",
 		0,
 		vert_sep

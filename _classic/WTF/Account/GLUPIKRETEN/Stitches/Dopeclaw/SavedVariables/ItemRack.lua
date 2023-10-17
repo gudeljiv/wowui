@@ -51,10 +51,10 @@ ItemRackUser = {
 				0, -- [8]
 				0, -- [9]
 				0, -- [10]
+				[17] = 0,
+				[16] = 0,
 				[12] = 0,
 				[15] = 0,
-				[16] = 0,
-				[17] = 0,
 			},
 		},
 		["heal"] = {
@@ -93,7 +93,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -103,6 +103,8 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
+	["Alpha"] = 1,
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 		[13] = {
 			"41589::::::::76:::::::::", -- [1]
@@ -116,8 +118,6 @@ ItemRackUser = {
 			0, -- [3]
 		},
 	},
-	["EnableQueues"] = "ON",
-	["Alpha"] = 1,
 	["MenuScale"] = 1.202602624893189,
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 }

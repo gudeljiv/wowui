@@ -207,6 +207,8 @@ Activa esta opción si quieres que el temporizador esté oculto, o cuando utilic
 	--[[Translation missing --]]
 	L["and with width |cFFFF0000%s|r and %s"] = "and with width |cFFFF0000%s|r and %s"
 	L["Angle"] = "Ángulo"
+	--[[Translation missing --]]
+	L["Angle Between Auras"] = "Angle Between Auras"
 	L["Animate"] = "Animar"
 	L["Animated Expand and Collapse"] = "Animar Pliegue y Despliegue"
 	L["Animates progress changes"] = "Anima los cambios de progreso"

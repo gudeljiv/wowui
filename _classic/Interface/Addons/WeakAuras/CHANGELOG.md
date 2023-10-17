@@ -1,20 +1,27 @@
-# [5.8.2](https://github.com/WeakAuras/WeakAuras2/tree/5.8.2) (2023-10-11)
+# [5.8.3](https://github.com/WeakAuras/WeakAuras2/tree/5.8.3) (2023-10-15)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.1...5.8.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.2...5.8.3)
 
 ## Highlights
 
- - Bug fixes
-- TOC Update for Wrath 
+ - Add new angle-based constant factor for circular dynamic group grow styles
+- Add new "Group Size" load option
+- Bug fixes 
 
 ## Commits
 
-Stanzilla (2):
+InfusOnWoW (3):
 
-- Update TOC for Wrath
-- Hide addon compartment tooltip onLeave
+- Add a "Group Size" load option
+- Fix onCooldown condition with "Show GCD" enabled
+- Fix Bonus Id load options to not consier item ids bonus ids
 
-mrbuds (1):
+Weston Odom (1):
 
-- Fix error when a dynamic group grower try to SetParent with a string
+- Add new angle-based constant factor for circular dynamic group grow styles (#4646)
+
+mrbuds (2):
+
+- Dynamic Group: fix group scaling when parent is not group itself
+- Fix error when converting a combat log trigger to a spell cooldown trigger
 

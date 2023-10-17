@@ -120,6 +120,8 @@ L["Amount"] = "Количество"
 --[[Translation missing --]]
 L["Anchoring"] = "Anchoring"
 L["And Talent"] = "И талант"
+--[[Translation missing --]]
+L["Angle and Radius"] = "Angle and Radius"
 L["Animations"] = "Анимация"
 L["Anticlockwise"] = "Против часовой стрелки"
 L["Anub'arak"] = "Ануб'арак"
@@ -624,6 +626,8 @@ L["Group Finder Poke End"] = "Group Finder Poke End"
 --[[Translation missing --]]
 L["Group Finder Poke Initial"] = "Group Finder Poke Initial"
 L["Group Leader/Assist"] = "Лидер/Помощник группы"
+--[[Translation missing --]]
+L["Group Size"] = "Group Size"
 L["Group Type"] = "Тип группы"
 L["Grow"] = "Рост"
 L["GTFO Alert"] = "Предупреждение GTFO"

@@ -2,6 +2,9 @@
 
 Group Bulletin Board 	
 
+3.12
+- Support for new patch by BJ Thompson. Give the man a bj for supporting the add-on
+
 3.11
 - Added realm to character names in request list
 - Removed the display of the additional tabs that aren't supported by Classic Era based on version. Will still display in WotLK+

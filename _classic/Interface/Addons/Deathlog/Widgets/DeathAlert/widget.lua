@@ -17,6 +17,8 @@ sounds["default_hardcore"] = 8959
 sounds["golfclap"] = "Interface\\AddOns\\Deathlog\\Sounds\\golfclap.ogg"
 sounds["hunger_games"] = "Interface\\AddOns\\Deathlog\\Sounds\\hunger_games.ogg"
 sounds["HeroFallen"] = "Interface\\AddOns\\Deathlog\\Sounds\\HeroFallen.ogg"
+sounds["Dread_Hunger"] = "Interface\\AddOns\\Deathlog\\Sounds\\Dread_Hunger.ogg"
+sounds["Arugal"] = "Interface\\AddOns\\Deathlog\\Sounds\\Arugal.ogg"
 sounds["random"] = "random"
 local fonts = LSM30:HashTable("font")
 fonts["blei00d"] = "Fonts\\blei00d.TTF"
@@ -93,6 +95,21 @@ function Deathlog_DeathAlertFakeDeath()
 		["source_id"] = s,
 		["last_words"] = "Sample last words, help!",
 	}
+
+	-- pvp tests
+	local pvp_r = math.random(0, 3)
+	if pvp_r == 1 then
+		fake_entry["source_id"] = deathlog_encode_pvp_source("target")
+	elseif pvp_r == 2 then
+		fake_entry["source_id"] = deathlog_encode_pvp_source(deathlog_last_attack_player)
+	elseif pvp_r == 3 then
+		deathlog_refresh_last_attack_info(UnitName("target"))
+		deathlog_last_duel_to_death_player = deathlog_last_attack_player
+		fake_entry["source_id"] = deathlog_encode_pvp_source(deathlog_last_attack_player)
+		deathlog_last_duel_to_death_player = nil
+		deathlog_clear_last_attack_info()
+	end
+
 	alert_cache[UnitName("player")] = nil
 	Deathlog_DeathAlertPlay(fake_entry)
 end
@@ -193,7 +210,27 @@ function Deathlog_DeathAlertPlay(entry)
 	if entry["source_id"] == -7 then
 		msg = deathlog_settings[widget_name]["slime_message"]
 	end
-	msg = msg:gsub("%<name>", entry["name"])
+
+	local source_name_pvp = deathlog_decode_pvp_source(entry["source_id"])
+	if source_name_pvp ~= "" then
+		source_name = source_name_pvp
+	end
+
+	if source_name == "" and deathlogPredictSource then
+		source_name = deathlogPredictSource(entry["map_pos"], entry["map_id"]) or ""
+	end
+
+	local _deathlog_watchlist_icon = ""
+	if
+		deathlog_watchlist_entries
+		and deathlog_watchlist_entries[entry["name"]]
+		and deathlog_watchlist_entries[entry["name"]]["Icon"]
+	then
+		_deathlog_watchlist_icon = deathlog_watchlist_entries[entry["name"]]["Icon"] .. " "
+	end
+
+	msg = msg:gsub("%<name>", _deathlog_watchlist_icon .. entry["name"])
+
 	msg = msg:gsub("%<class>", class)
 	msg = msg:gsub("%<race>", race)
 	msg = msg:gsub("%<source>", source_name)
@@ -228,7 +265,13 @@ function Deathlog_DeathAlertPlay(entry)
 		deathlog_settings[widget_name]["style"] == "boss_banner_enemy_icon_small"
 		or deathlog_settings[widget_name]["style"] == "boss_banner_enemy_icon_medium"
 	then
-		if entry["source_id"] then
+		if source_name_pvp ~= "" then
+			if string.find(source_name_pvp, "Duel to Death") then
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\inv_jewelry_trinketpvp_02")
+			else
+				death_alert_frame.textures.enemy_portrait:SetTexture("Interface\\ICONS\\Ability_warrior_challange")
+			end
+		elseif entry["source_id"] then
 			if id_to_display_id[entry["source_id"]] then
 				SetPortraitTextureFromCreatureDisplayID(
 					death_alert_frame.textures.enemy_portrait,

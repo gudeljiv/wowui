@@ -31,7 +31,7 @@ AtlasLootClassic_DungeonsAndRaids: enabled
 AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 Auctionator: enabled
-BlizzMove: enabled
+BlizzMove: disabled
 BlizzMove_Debug: enabled
 !BugGrabber: enabled
 BugSack: enabled

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Loatheb", "DBM-Raids-WoTLK", 8)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230829121545")
+mod:SetRevision("20231014024259")
 mod:SetCreatureID(16011)
 mod:SetEncounterID(1115)
 mod:SetModelID(16110)

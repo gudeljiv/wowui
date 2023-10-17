@@ -1,7 +1,9 @@
 local mod	= DBM:NewMod("Sindragosa", "DBM-Raids-WoTLK", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230829121545")
+mod.statTypes = "normal,normal25,heroic,heroic25"
+
+mod:SetRevision("20231014024259")
 mod:SetCreatureID(36853)
 mod:SetEncounterID(mod:IsClassic() and 855 or 1105)
 mod:SetModelID(30362)
@@ -45,7 +47,7 @@ local timerNextAirphase			= mod:NewTimer(110, "TimerNextAirphase", 43810, nil, n
 local timerNextGroundphase		= mod:NewTimer(45, "TimerNextGroundphase", 43810, nil, nil, 6)
 local timerNextFrostBreath		= mod:NewNextTimer(22, 69649, nil, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)
 local timerNextBlisteringCold	= mod:NewCDTimer(67, 70123, nil, nil, nil, 2)
-local timerNextBeacon			= mod:NewNextTimer(16, 70126, nil, nil, nil, 3, nil, DBM_COMMON_L.DEADLY_ICON)
+local timerNextBeacon			= mod:NewCDCountTimer(16, 70126, nil, nil, nil, 3, nil, DBM_COMMON_L.DEADLY_ICON)
 local timerBlisteringCold		= mod:NewCastTimer(6, 70123, nil, nil, nil, 2)
 local timerUnchainedMagic		= mod:NewCDTimer(30, 69762, nil, nil, nil, 3)
 local timerInstability			= mod:NewBuffFadesTimer(5, 69766, nil, nil, nil, 5)
@@ -70,6 +72,7 @@ mod.vb.warnedfailed = false
 mod.vb.unchainedIcons = 2
 local playerUnchained = false
 local playerBeaconed = false
+mod.vb.beaconCount = 0
 
 local beaconDebuffFilter, unchainedDebuffFilter
 do
@@ -150,7 +153,8 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnFrostBeacon:Play("scatter")--"mm"..i
 		end
 		if self.vb.phase == 2 then--Phase 2 there is only one icon/beacon, don't use sorting method if we don't have to.
-			timerNextBeacon:Start()
+			self.vb.beaconCount = self.vb.beaconCount + 1
+			timerNextBeacon:Start(nil, self.vb.beaconCount+1)
 			if self.Options.SetIconOnFrostBeacon then
 				self:SetIcon(args.destName, 1)
 				if self.Options.AnnounceFrostBeaconIcons and IsInGroup() and DBM:GetRaidRank() > 1 then
@@ -205,7 +209,7 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif args.spellId == 70106 and not self:IsTrivial() then	--Chilled to the bone (melee)
 		if args:IsPlayer() then
 			timerChilledtotheBone:Start()
-			if (args.amount or 1) >= 4 then
+			if (args.amount or 1) >= 5 then
 				specWarnChilledtotheBone:Show(args.amount)
 				specWarnChilledtotheBone:Play("stackhigh")
 			else
@@ -215,7 +219,7 @@ function mod:SPELL_AURA_APPLIED(args)
 	elseif args.spellId == 69766 and not self:IsTrivial() then	--Instability (casters)
 		if args:IsPlayer() then
 			timerInstability:Start()
-			if (args.amount or 1) >= 4 then
+			if (args.amount or 1) >= 5 then
 				specWarnInstability:Show(args.amount)
 				specWarnInstability:Play("stackhigh")
 			else
@@ -257,7 +261,9 @@ function mod:SPELL_CAST_SUCCESS(args)
 			specWarnBlisteringCold:Play("runout")
 		end
 		timerBlisteringCold:Start()
-		timerNextBlisteringCold:Start()
+		if self:GetStage(2) then--Should only repeat in stage 2, otherwise timer is started by air phase yell
+			timerNextBlisteringCold:Start()
+		end
 	end
 end
 
@@ -306,9 +312,10 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 		timerNextGroundphase:Start()
 		warnGroundphaseSoon:Schedule(40)
 	elseif (msg == L.YellPhase2 or msg:find(L.YellPhase2)) or (msg == L.YellPhase2Dem or msg:find(L.YellPhase2Dem)) then
+		self.vb.beaconCount = 0
 		self:SetStage(2)
 		warnPhase2:Show()
-		timerNextBeacon:Start(7)
+		timerNextBeacon:Start(7, 1)
 		timerNextAirphase:Cancel()
 		timerNextGroundphase:Cancel()
 		warnGroundphaseSoon:Cancel()

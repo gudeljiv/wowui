@@ -1,8 +1,8 @@
-## Interface: 30402
+## Interface: 30403
 ## X-Min-Interface: 80000
 ## X-Min-Interface-BCC: 20504
 ## X-Min-Interface-Wrath: 30401
-## Version: 8f5c067
+## Version: ea56ade
 ## Title:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10World Bosses (BC)|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10아웃랜드|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cff10ff10Scherbenwelt|r

@@ -198,6 +198,7 @@ function Sort:Move(from, to)
 		return
 	end
 
+	ClearCursor()
 	self.target.PickupItem(from.bag, from.slot)
 	self.target.PickupItem(to.bag, to.slot)
 

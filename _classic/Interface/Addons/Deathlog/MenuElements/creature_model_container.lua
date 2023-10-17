@@ -42,7 +42,7 @@ creature_model_container.modelFrame:Hide()
 
 creature_model_container.quote = creature_model_container:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 creature_model_container.quote:SetText("")
-creature_model_container.quote:SetFont("Fonts\\MORPHEUS.TTF", 14, "THICK")
+creature_model_container.quote:SetFont(Deathlog_L.creature_model_quote_font, 14, "THICK")
 creature_model_container.quote:SetJustifyV("TOP")
 creature_model_container.quote:SetJustifyH("CENTER")
 creature_model_container.quote:SetTextColor(0.7, 0.7, 0.7)
@@ -70,8 +70,8 @@ function creature_model_container.updateMenuElement(scroll_frame, creature_id, s
 	else
 		creature_model_container:Hide()
 	end
-	if id_to_quote[creature_id] then
-		creature_model_container.quote:SetText('"' .. id_to_quote[creature_id] .. '"')
+	if Deathlog_L.id_to_quote[creature_id] then
+		creature_model_container.quote:SetText('"' .. Deathlog_L.id_to_quote[creature_id] .. '"')
 		creature_model_container.quote:SetParent(creature_model_container.modelFrame)
 
 		creature_model_container.quote:SetPoint("BOTTOM", creature_model_container, "BOTTOM", 0, 25)
@@ -85,44 +85,6 @@ function creature_model_container.updateMenuElement(scroll_frame, creature_id, s
 		creature_model_container.textures = {}
 	end
 
-	-- if creature_model_container.textures.top == nil then
-	-- 	creature_model_container.textures.top = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
-	-- end
-	-- creature_model_container.textures.top:SetTexture("Interface\\BlackMarket\\_WoodFrame-TileHorizontal")
-	-- creature_model_container.textures.top:SetTexCoord(0, 1, 0.5, 1)
-	-- creature_model_container.textures.top:SetPoint("TOP", creature_model_container.modelFrame, "TOP", 0, 6)
-	-- creature_model_container.textures.top:SetWidth(creature_model_container.modelFrame:GetWidth())
-	-- creature_model_container.textures.top:SetHeight(creature_model_container.modelFrame:GetWidth() * 0.1)
-
-	-- if creature_model_container.textures.bottom == nil then
-	-- 	creature_model_container.textures.bottom = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
-	-- end
-	-- creature_model_container.textures.bottom:SetTexture("Interface\\BlackMarket\\_WoodFrame-TileHorizontal")
-	-- creature_model_container.textures.bottom:SetTexCoord(0, 1, 0, 0.5)
-	-- creature_model_container.textures.bottom:SetPoint("Bottom", creature_model_container.modelFrame, "Bottom", 0, -6)
-	-- creature_model_container.textures.bottom:SetWidth(creature_model_container.modelFrame:GetWidth())
-	-- creature_model_container.textures.bottom:SetHeight(creature_model_container.modelFrame:GetWidth() * 0.1)
-	-- creature_model_container.textures.bottom:SetDrawLayer("OVERLAY", 7)
-
-	-- if creature_model_container.textures.right == nil then
-	-- 	creature_model_container.textures.right = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
-	-- end
-	-- creature_model_container.textures.right:SetTexture("Interface\\BlackMarket\\!WoodFrame-TileVertical")
-	-- creature_model_container.textures.right:SetTexCoord(0, 0.5, 0, 1)
-	-- creature_model_container.textures.right:SetPoint("RIGHT", creature_model_container.modelFrame, "RIGHT", 6, 0)
-	-- creature_model_container.textures.right:SetWidth(creature_model_container.modelFrame:GetHeight() * 0.1)
-	-- creature_model_container.textures.right:SetHeight(creature_model_container.modelFrame:GetHeight())
-	-- creature_model_container.textures.right:SetDrawLayer("OVERLAY", 7)
-
-	-- if creature_model_container.textures.left == nil then
-	-- 	creature_model_container.textures.left = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
-	-- end
-	-- creature_model_container.textures.left:SetTexture("Interface\\BlackMarket\\!WoodFrame-TileVertical")
-	-- creature_model_container.textures.left:SetTexCoord(0.5, 1, 0, 1)
-	-- creature_model_container.textures.left:SetPoint("LEFT", creature_model_container.modelFrame, "LEFT", -6, 0)
-	-- creature_model_container.textures.left:SetWidth(creature_model_container.modelFrame:GetHeight() * 0.1)
-	-- creature_model_container.textures.left:SetHeight(creature_model_container.modelFrame:GetHeight())
-	-- creature_model_container.textures.left:SetDrawLayer("OVERLAY", 7)
 	if creature_model_container.textures.map == nil then
 		creature_model_container.textures.map = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
 	end
@@ -132,16 +94,6 @@ function creature_model_container.updateMenuElement(scroll_frame, creature_id, s
 	creature_model_container.textures.map:SetWidth(creature_model_container.modelFrame:GetWidth() * 1.065)
 	creature_model_container.textures.map:SetHeight(creature_model_container.modelFrame:GetHeight() * 1.1)
 	creature_model_container.textures.map:SetDrawLayer("OVERLAY", 7)
-
-	-- if creature_model_container.textures.out == nil then
-	-- 	creature_model_container.textures.out = creature_model_container.modelFrame:CreateTexture(nil, "OVERLAY")
-	-- end
-	-- creature_model_container.textures.out:SetTexture("Interface\\AdventureMap\\AdventureMapBorder")
-	-- creature_model_container.textures.out:SetTexCoord(0, 1, 0, 0.65)
-	-- creature_model_container.textures.out:SetPoint("CENTER", creature_model_container.modelFrame, "CENTER", 0, 0)
-	-- creature_model_container.textures.out:SetWidth(creature_model_container.modelFrame:GetWidth())
-	-- creature_model_container.textures.out:SetHeight(creature_model_container.modelFrame:GetHeight())
-	-- creature_model_container.textures.out:SetDrawLayer("OVERLAY", 7)
 end
 
 function Deathlog_CreatureModelContainer()

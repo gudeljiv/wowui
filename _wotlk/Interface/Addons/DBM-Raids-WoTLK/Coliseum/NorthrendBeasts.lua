@@ -3,7 +3,7 @@ local L		= mod:GetLocalizedStrings()
 
 mod.statTypes = "normal,normal25,heroic,heroic25"
 
-mod:SetRevision("20230829121545")
+mod:SetRevision("20231014024259")
 mod:SetCreatureID(34796, 35144, 34799, 34797)
 --mod:SetEncounterID(mod:IsClassic() and 629 or 1088)--Buggy, never enable this
 mod:SetMinSyncRevision(104)
