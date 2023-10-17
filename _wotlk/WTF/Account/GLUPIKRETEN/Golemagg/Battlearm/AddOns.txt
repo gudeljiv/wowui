@@ -17,8 +17,8 @@ RangeDisplay: enabled
 RangeDisplay_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
-AdiBags: enabled
-AdiBags_Config: enabled
+AdiBags: disabled
+AdiBags_Config: disabled
 Align: enabled
 AtlasLootClassic_Options: disabled
 AtlasLootClassic_Collections: disabled
@@ -119,7 +119,7 @@ BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 VuhDo: disabled
-AdiBags-ItemRackSets: enabled
+AdiBags-ItemRackSets: disabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
@@ -224,3 +224,5 @@ GDKPd: enabled
 SavedInstances: disabled
 GlobalIgnoreList: enabled
 ijaht: disabled
+SortBagsButton: enabled
+Myslot: disabled

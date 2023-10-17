@@ -64,13 +64,13 @@ xKillCount = {
 			["name"] = "Scarlet Initiate",
 			["count"] = 3,
 		},
-		["Tirisfal Farmhand"] = {
-			["name"] = "Tirisfal Farmhand",
-			["count"] = 1,
-		},
 		["Meven Korgal"] = {
 			["name"] = "Meven Korgal",
 			["count"] = 3,
+		},
+		["Tirisfal Farmhand"] = {
+			["name"] = "Tirisfal Farmhand",
+			["count"] = 1,
 		},
 	},
 }

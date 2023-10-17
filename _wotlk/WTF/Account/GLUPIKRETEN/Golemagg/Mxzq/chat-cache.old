@@ -1,12 +1,12 @@
-VERSION 7
+VERSION 8
 
 ADDEDVERSION 22
 
 CHANNELS
-General 0 1 0
-Trade 0 2 0
-LocalDefense 0 3 0
-LookingForGroup 0 4 0
+1 0 1 1
+2 0 2 1
+22 0 3 1
+26 0 4 1
 END
 
 ZONECHANNELS 0

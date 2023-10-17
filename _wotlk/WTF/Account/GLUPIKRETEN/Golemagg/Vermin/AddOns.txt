@@ -1,8 +1,8 @@
 nPower: enabled
 nHealth: disabled
 Immersion: disabled
-AdiBags: enabled
-AdiBags_Config: enabled
+AdiBags: disabled
+AdiBags_Config: disabled
 Sorted: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
@@ -131,7 +131,7 @@ PitBull4_DogTagTexts: disabled
 Pawn: enabled
 VuhDo: disabled
 VuhDoOptions: disabled
-AdiBags-ItemRackSets: enabled
+AdiBags-ItemRackSets: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
@@ -206,3 +206,5 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 AddOnSkins: disabled
+SortBagsButton: enabled
+Myslot: disabled

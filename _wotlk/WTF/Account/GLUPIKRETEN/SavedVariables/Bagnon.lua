@@ -57,20 +57,20 @@ Bagnon_Sets = {
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["spacing"] = 3,
-			["y"] = 343.3735656738281,
-			["x"] = -362.52294921875,
+			["y"] = 446.8656616210938,
+			["bagBreak"] = false,
+			["x"] = -363.7939453125,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
-			["alpha"] = 1,
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["bagBreak"] = false,
+			["alpha"] = 1,
+			["spacing"] = 3,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -145,8 +145,8 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["spacing"] = 3,
 			["columns"] = 10,
+			["spacing"] = 3,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -189,30 +189,30 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = 900.4427490234375,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = -534.3070678710938,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = 198.8560333251953,
-			["search"] = true,
-			["broker"] = false,
-			["y"] = -91.4501953125,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
 	["emptySlots"] = false,
-	["glowSets"] = true,
+	["glowSets"] = false,
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
-	["version"] = "10.0.16",
+	["version"] = "10.1.15",
 	["display"] = {
 		["merchant"] = false,
 		["tradePartner"] = false,
@@ -220,10 +220,10 @@ Bagnon_Sets = {
 		["socketing"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -241,20 +241,20 @@ Bagnon_Sets = {
 	["enchantColor"] = {
 	},
 	["glowAlpha"] = 1,
-	["displayCraft"] = false,
+	["tipCount"] = true,
 	["glowNew"] = true,
 	["displayAuction"] = false,
 	["profiles"] = {
 	},
 	["keyColor"] = {
 	},
-	["glowPoor"] = true,
-	["normalColor"] = {
-	},
-	["glowQuality"] = true,
 	["soulColor"] = {
 	},
-	["colorSlots"] = true,
-	["tipCount"] = true,
+	["glowQuality"] = true,
+	["normalColor"] = {
+	},
+	["glowPoor"] = true,
+	["colorSlots"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }

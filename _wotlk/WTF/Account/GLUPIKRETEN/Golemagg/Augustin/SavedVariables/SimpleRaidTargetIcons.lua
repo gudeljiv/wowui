@@ -20,17 +20,11 @@ SRTIExternalUF = {
 		"CompactRaidFrame5", -- [5]
 		"CompactRaidFrame6", -- [6]
 	},
-	["grid2"] = {
-		"Grid2LayoutHeader1UnitButton1", -- [1]
-		"Grid2LayoutHeader1UnitButton2", -- [2]
-		"Grid2LayoutHeader1UnitButton3", -- [3]
-		"Grid2LayoutHeader1UnitButton4", -- [4]
-		"Grid2LayoutHeader1UnitButton5", -- [5]
-		"Grid2LayoutHeader2UnitButton1", -- [6]
-		"Grid2LayoutHeader2UnitButton2", -- [7]
-		"Grid2LayoutHeader2UnitButton3", -- [8]
-		"Grid2LayoutHeader2UnitButton4", -- [9]
-		"Grid2LayoutHeader2UnitButton5", -- [10]
+	["shadowedunitframes"] = {
+		"SUFUnittarget", -- [1]
+		"SUFUnittargettarget", -- [2]
+		"SUFUnitfocus", -- [3]
+		"SUFUnitfocustarget", -- [4]
 	},
 	["aptechka"] = {
 		"NugRaid1UnitButton1", -- [1]
@@ -43,10 +37,16 @@ SRTIExternalUF = {
 		"NugRaid8UnitButton1", -- [8]
 		"NugRaid1UnitButton2", -- [9]
 	},
-	["shadowedunitframes"] = {
-		"SUFUnittarget", -- [1]
-		"SUFUnittargettarget", -- [2]
-		"SUFUnitfocus", -- [3]
-		"SUFUnitfocustarget", -- [4]
+	["grid2"] = {
+		"Grid2LayoutHeader1UnitButton1", -- [1]
+		"Grid2LayoutHeader1UnitButton2", -- [2]
+		"Grid2LayoutHeader1UnitButton3", -- [3]
+		"Grid2LayoutHeader1UnitButton4", -- [4]
+		"Grid2LayoutHeader1UnitButton5", -- [5]
+		"Grid2LayoutHeader2UnitButton1", -- [6]
+		"Grid2LayoutHeader2UnitButton2", -- [7]
+		"Grid2LayoutHeader2UnitButton3", -- [8]
+		"Grid2LayoutHeader2UnitButton4", -- [9]
+		"Grid2LayoutHeader2UnitButton5", -- [10]
 	},
 }

@@ -36,3 +36,9 @@ TacoTip: enabled
 GlobalIgnoreList: enabled
 aTotemBar: disabled
 nMainbar: enabled
+AdiBags: disabled
+AdiBags-ItemRackSets: disabled
+AdiBags_Config: disabled
+Blizzard_CompactRaidFrames: enabled
+SortBagsButton: enabled
+Myslot: disabled

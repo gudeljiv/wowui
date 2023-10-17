@@ -1,0 +1,8 @@
+## Interface: 30400
+## Title: |cff9966ffSortBagsButton
+## Author: JustTrim
+## Version: 1.0
+## Notes: Add button to bag to execute ShowBags addon commands
+## LoadWith: SortBags
+## Dependencies: SortBags
+core.lua

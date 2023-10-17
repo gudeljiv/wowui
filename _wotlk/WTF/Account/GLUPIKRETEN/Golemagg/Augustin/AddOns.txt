@@ -3,8 +3,8 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nHealth: disabled
 Immersion: disabled
-AdiBags: enabled
-AdiBags_Config: enabled
+AdiBags: disabled
+AdiBags_Config: disabled
 Sorted: disabled
 Grid2: disabled
 Grid2Options: disabled
@@ -121,7 +121,7 @@ BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 VuhDo: disabled
-AdiBags-ItemRackSets: enabled
+AdiBags-ItemRackSets: disabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
@@ -191,3 +191,6 @@ WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
+SortBagsButton: enabled
+Myslot: disabled
+Blizzard_CompactRaidFrames: enabled

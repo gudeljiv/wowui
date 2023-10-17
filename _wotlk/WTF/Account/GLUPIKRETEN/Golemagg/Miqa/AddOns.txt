@@ -40,3 +40,9 @@ Bagnon_VoidStorage: enabled
 BagBrother: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
+AdiBags: disabled
+AdiBags_Config: disabled
+AdiBags-ItemRackSets: disabled
+Blizzard_CompactRaidFrames: enabled
+SortBagsButton: enabled
+Myslot: disabled
