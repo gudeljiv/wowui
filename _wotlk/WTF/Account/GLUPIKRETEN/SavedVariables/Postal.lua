@@ -43,15 +43,15 @@ Postal3DB = {
 		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Miqa - Golemagg"] = "Miqa - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Wells - Jin'do"] = "Wells - Jin'do",
 	},
 	["profiles"] = {
@@ -80,9 +80,6 @@ Postal3DB = {
 			},
 		},
 		["Battlearm - Golemagg"] = {
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
-			},
 			["BlackBook"] = {
 				["recent"] = {
 					"Moolatz|Golemagg|Horde", -- [1]
@@ -93,6 +90,9 @@ Postal3DB = {
 					"Miqa|Golemagg|Horde", -- [6]
 					"Obsidian|Golemagg|Horde", -- [7]
 				},
+			},
+			["OpenAll"] = {
+				["KeepFreeSpace"] = 2,
 			},
 		},
 		["Battitude - Golemagg"] = {

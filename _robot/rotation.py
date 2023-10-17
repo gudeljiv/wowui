@@ -331,7 +331,7 @@ with keyboard.Listener(on_press=on_press) as listener:
         while True:
 
             try:
-                time.sleep(random.uniform(0.05, 0.1))
+                time.sleep(random.uniform(0.005, 0.01))
 
                 start_time = time.time()
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())

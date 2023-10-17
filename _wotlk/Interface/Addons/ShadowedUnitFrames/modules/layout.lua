@@ -577,9 +577,9 @@ function Layout:PositionWidgets(frame, config)
 		end
 
 		-- Figure out where the portrait is going to be anchored to
-		if( not portraitAnchor and config[key].order >= config.portrait.fullBefore ) then
-			portraitAnchor = bar
-		end
+		-- if( not portraitAnchor and config[key].order >= config.portrait.fullBefore ) then
+		-- 	portraitAnchor = bar
+		-- end
 
 		xOffset = xOffset - bar:GetHeight() + ShadowUF.db.profile.bars.spacing
 	end

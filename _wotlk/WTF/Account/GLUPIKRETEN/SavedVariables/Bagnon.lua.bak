@@ -173,7 +173,7 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "TOPLEFT",
 			["hiddenBags"] = {
 				[11] = false,
 				[9] = false,
@@ -196,10 +196,10 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 854.728515625,
+			["x"] = 900.4427490234375,
 			["search"] = true,
 			["broker"] = false,
-			["y"] = 300.2958374023438,
+			["y"] = -534.3070678710938,
 			["hiddenRules"] = {
 			},
 			["itemScale"] = 1,
@@ -214,16 +214,17 @@ Bagnon_Sets = {
 	["displayTrade"] = false,
 	["version"] = "10.1.15",
 	["display"] = {
-		["merchant"] = false,
-		["tradePartner"] = false,
-		["mailInfo"] = false,
-		["socketing"] = false,
-		["scrappingMachine"] = false,
-		["crafting"] = false,
-		["banker"] = false,
-		["auctioneer"] = false,
-		["guildBanker"] = false,
-		["voidStorageBanker"] = false,
+		["merchant"] = true,
+		["tradePartner"] = true,
+		["mailInfo"] = true,
+		["socketing"] = true,
+		["playerFrame"] = true,
+		["scrappingMachine"] = true,
+		["crafting"] = true,
+		["banker"] = true,
+		["auctioneer"] = true,
+		["guildBanker"] = true,
+		["voidStorageBanker"] = true,
 	},
 	["fridgeColor"] = {
 	},
@@ -235,7 +236,7 @@ Bagnon_Sets = {
 	["displayBank"] = false,
 	["quiverColor"] = {
 	},
-	["slotBackground"] = 2,
+	["slotBackground"] = 1,
 	["gemColor"] = {
 	},
 	["enchantColor"] = {
