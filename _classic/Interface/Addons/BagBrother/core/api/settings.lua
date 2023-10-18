@@ -98,7 +98,7 @@ function Settings:OnEnable()
 	BrotherBags = BrotherBags or {}
 	_G[VAR] = SetDefaults(_G[VAR] or {}, {
 		global = SetDefaults({}, ProfileDefaults),
-        version = Addon.Version,
+		version = Addon.Version,
 		profiles = {},
 
 		resetPlayer = true, flashFind = true, serverSort = true,
@@ -128,7 +128,7 @@ function Settings:OnEnable()
 	})
 
 	Addon.sets = _G[VAR]
-    Addon.sets.version = Addon.Version
+	Addon.sets.version = Addon.Version
 
 	----- convert old profiles
 	for address, profile in pairs(Addon.sets.profiles) do

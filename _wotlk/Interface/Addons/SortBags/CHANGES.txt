@@ -1,22 +1,10 @@
-lightweight tag 69455d8e56b47eaad8079ecfbbf25d58bffce4da v3.1.6
-Author:	GitHub <noreply@github.com>
-Date:	Sun Sep 24 09:09:02 2023 +0200
+lightweight tag 75bbe76b066c833d603bdd5b2e71df4912ffdbd0 v1.3.0
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Wed Aug 23 22:25:01 2023 +0200
 
-commit 52e89006c53649e39f052bf18d765cd8eb0ce02a
-Author: N. Emre Özbakır <nurettinemreozbakir@gmail.com>
-Date:   Sat Sep 23 20:30:17 2023 +0300
+commit 75bbe76b066c833d603bdd5b2e71df4912ffdbd0
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Wed Aug 23 22:24:12 2023 +0200
 
-     Changes to be committed:
-            modified:   SortBags.lua
-    
-    Added Nerubian Reinforceed Quiver, Dragonscale Ammon Pounch, Saronite Razorheads, Iceblade Arrow, Mammoth Cutters, Shatter Rounds
-
-commit 52e89006c53649e39f052bf18d765cd8eb0ce02a
-Author: N. Emre Özbakır <nurettinemreozbakir@gmail.com>
-Date:   Sat Sep 23 20:30:17 2023 +0300
-
-     Changes to be committed:
-            modified:   SortBags.lua
-    
-    Added Nerubian Reinforceed Quiver, Dragonscale Ammon Pounch, Saronite Razorheads, Iceblade Arrow, Mammoth Cutters, Shatter Rounds
+    improvements from wotlk version
 

@@ -192,5 +192,6 @@ WowSimsExporter: enabled
 GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
-SortBagsButton: enabled
+SortBagsButton: disabled
 Myslot: disabled
+SortBags: enabled

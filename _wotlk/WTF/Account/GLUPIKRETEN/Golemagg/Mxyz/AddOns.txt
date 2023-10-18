@@ -197,5 +197,6 @@ GDKPd: enabled
 TacoTip: enabled
 GlobalIgnoreList: enabled
 GatherMate2_GasClouds: disabled
-SortBagsButton: enabled
+SortBagsButton: disabled
 Myslot: disabled
+SortBags: enabled

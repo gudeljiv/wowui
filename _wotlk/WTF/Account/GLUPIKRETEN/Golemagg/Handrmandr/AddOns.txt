@@ -181,3 +181,4 @@ GlobalIgnoreList: enabled
 SortBagsButton: disabled
 Myslot: disabled
 Blizzard_CompactRaidFrames: enabled
+SortBags: enabled

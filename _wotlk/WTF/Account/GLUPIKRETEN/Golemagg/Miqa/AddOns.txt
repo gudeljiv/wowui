@@ -44,5 +44,8 @@ AdiBags: disabled
 AdiBags_Config: disabled
 AdiBags-ItemRackSets: disabled
 Blizzard_CompactRaidFrames: enabled
-SortBagsButton: enabled
+SortBagsButton: disabled
 Myslot: disabled
+SortBags: enabled
+TradeSkillMaster: enabled
+TradeSkillMaster_AppHelper: enabled

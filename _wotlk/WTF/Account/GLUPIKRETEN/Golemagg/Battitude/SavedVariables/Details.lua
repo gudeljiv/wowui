@@ -37,11 +37,11 @@ _detalhes_database = {
 			["utility"] = false,
 			["defensive-personal"] = false,
 		},
-		["framme_locked"] = false,
 		["height"] = 18,
-		["width"] = 120,
 		["cooldowns"] = {
 		},
+		["width"] = 120,
+		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
@@ -208,7 +208,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1604861214,
 	["active_profile"] = "xVermin",
-	["last_day"] = "17",
+	["last_day"] = "18",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -223,19 +223,6 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["mythic_plus_log"] = {
-	},
-	["data_harvested_for_charts"] = {
-	},
-	["cached_roles"] = {
-	},
-	["cached_talents"] = {
-	},
-	["last_realversion"] = 155,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -271,10 +258,7 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -295,7 +279,7 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -303,13 +287,9 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
+			["y"] = -183.107162475586,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -321,9 +301,16 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["main_frame_strata"] = "LOW",
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -389,8 +376,20 @@ _detalhes_database = {
 			["author"] = "Terciob",
 		},
 	},
+	["mythic_plus_log"] = {
+	},
+	["combat_counter"] = 6977,
+	["cached_roles"] = {
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["data_harvested_for_charts"] = {
+	},
+	["last_realversion"] = 155,
 	["character_data"] = {
-		["logons"] = 1820,
+		["logons"] = 1822,
 	},
 	["force_font_outline"] = "",
 	["combat_id"] = 293,
@@ -877,7 +876,7 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["tempo_start"] = 245599.915,
+		["tempo_start"] = 78354.90000000001,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
@@ -965,14 +964,15 @@ _detalhes_database = {
 		["start_time"] = 0,
 		["TimeData"] = {
 		},
-		["combat_counter"] = 6972,
+		["combat_counter"] = 6976,
 	},
 	["ignore_nicktag"] = true,
-	["combat_counter"] = 6973,
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["reverse"] = false,
 		["channel"] = "SELF",
+	},
+	["cached_talents"] = {
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

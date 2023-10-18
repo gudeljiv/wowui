@@ -224,5 +224,7 @@ GDKPd: enabled
 SavedInstances: disabled
 GlobalIgnoreList: enabled
 ijaht: disabled
-SortBagsButton: enabled
+SortBagsButton: disabled
 Myslot: disabled
+Bagnon_Masque: disabled
+SortBags: enabled
