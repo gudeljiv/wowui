@@ -1,32 +1,36 @@
 
 GMMONEY = {
 	["Stitches"] = {
-		["Dopeah"] = {
-			["GOLD"] = 1380764,
-			["CLASS"] = "SHAMAN",
-		},
-		["Dopede"] = {
-			["GOLD"] = 234035,
-			["CLASS"] = "SHAMAN",
-		},
-		["Dopeclaw"] = {
-			["GOLD"] = 66736,
-			["CLASS"] = "DRUID",
-		},
-		["Dopecure"] = {
-			["GOLD"] = 13617,
-			["CLASS"] = "PRIEST",
-		},
-		["Dopesick"] = {
-			["GOLD"] = 114,
+		["Vermins"] = {
+			["GOLD"] = 0,
 			["CLASS"] = "WARRIOR",
 		},
 		["Lonac"] = {
 			["GOLD"] = 74108,
 			["CLASS"] = "WARRIOR",
 		},
+		["Dopede"] = {
+			["GOLD"] = 234035,
+			["CLASS"] = "SHAMAN",
+		},
+		["Dopeclaw"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "DRUID",
+		},
+		["Dopecure"] = {
+			["GOLD"] = 13617,
+			["CLASS"] = "PRIEST",
+		},
+		["Dopeah"] = {
+			["GOLD"] = 1379720,
+			["CLASS"] = "SHAMAN",
+		},
+		["Dopesick"] = {
+			["GOLD"] = 114,
+			["CLASS"] = "WARRIOR",
+		},
 		["Dopesnare"] = {
-			["GOLD"] = 191219,
+			["GOLD"] = 218950,
 			["CLASS"] = "HUNTER",
 		},
 	},
@@ -67,9 +71,9 @@ GMMONEY = {
 			["GOLD"] = 4,
 			["CLASS"] = "WARRIOR",
 		},
-		["Battitude"] = {
-			["GOLD"] = 998227,
-			["CLASS"] = "ROGUE",
+		["Augustin"] = {
+			["GOLD"] = 96743,
+			["CLASS"] = "MAGE",
 		},
 		["Moolatz"] = {
 			["GOLD"] = 7980232,
@@ -79,17 +83,17 @@ GMMONEY = {
 			["GOLD"] = 763196,
 			["CLASS"] = "SHAMAN",
 		},
-		["Vermina"] = {
-			["GOLD"] = 59137573,
-			["CLASS"] = "PALADIN",
+		["Battitude"] = {
+			["GOLD"] = 998227,
+			["CLASS"] = "ROGUE",
 		},
 		["Miqa"] = {
 			["GOLD"] = 6472995,
 			["CLASS"] = "PRIEST",
 		},
-		["Augustin"] = {
-			["GOLD"] = 96743,
-			["CLASS"] = "MAGE",
+		["Vermina"] = {
+			["GOLD"] = 59137573,
+			["CLASS"] = "PALADIN",
 		},
 		["Vermin"] = {
 			["GOLD"] = 144333979,
@@ -98,6 +102,6 @@ GMMONEY = {
 	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

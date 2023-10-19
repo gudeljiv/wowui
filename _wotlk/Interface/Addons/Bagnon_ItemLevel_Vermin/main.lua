@@ -190,10 +190,15 @@ Module:AddUpdater(function(self)
 	self:SetBeautyBorderColor(1, 1, 1, 1)
 
 	if self.info.hyperlink then 
-		local _, _, _, _, _, itemType = GetItemInfo(self.info.hyperlink)
+		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(self.info.hyperlink)
 		if itemType and itemType == 'Quest' then
 			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
+		end
+
+		if itemQuality and itemQuality > 1 then 
+			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
+			self:SetBeautyBorderColor(colors[itemQuality][1], colors[itemQuality][2], colors[itemQuality][3], 1)
 		end
 	end
 

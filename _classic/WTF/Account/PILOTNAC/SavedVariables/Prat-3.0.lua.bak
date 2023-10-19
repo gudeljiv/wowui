@@ -1,0 +1,183 @@
+
+Prat3DB = {
+	["namespaces"] = {
+		["Prat_ChannelColorMemory"] = {
+			["profiles"] = {
+				["Default"] = {
+					["colors"] = {
+						["worlddefense"] = {
+							["b"] = 0.7529412508010864,
+							["g"] = 0.7529412508010864,
+							["r"] = 1,
+						},
+						["general"] = {
+							["r"] = 1,
+							["g"] = 0.7529412508010864,
+							["b"] = 0.7529412508010864,
+						},
+						["localdefense"] = {
+							["r"] = 1,
+							["g"] = 0.7529412508010864,
+							["b"] = 0.7529412508010864,
+						},
+						["lookingforgroup"] = {
+							["b"] = 0.7529412508010864,
+							["g"] = 0.7529412508010864,
+							["r"] = 1,
+						},
+						["hcdeathalertschannel"] = {
+							["b"] = 0.7529412508010864,
+							["g"] = 0.7529412508010864,
+							["r"] = 1,
+						},
+					},
+				},
+			},
+		},
+		["Prat_Fading"] = {
+		},
+		["Prat_Scroll"] = {
+		},
+		["Prat_Mentions"] = {
+		},
+		["Prat_CopyChat"] = {
+		},
+		["Prat_PopupMessage"] = {
+		},
+		["Prat_ServerNames"] = {
+			["profiles"] = {
+				["Default"] = {
+					["hide"] = true,
+				},
+			},
+		},
+		["Prat_UrlCopy"] = {
+		},
+		["Prat_AltNames"] = {
+		},
+		["Prat_PlayerNames"] = {
+			["profiles"] = {
+				["Default"] = {
+					["levelcolor"] = "PLAYER",
+				},
+			},
+		},
+		["Prat_Memory"] = {
+		},
+		["Prat_Frames"] = {
+			["profiles"] = {
+				["Default"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
+					["maxchatwidthdefault"] = 608.0000610351562,
+				},
+			},
+		},
+		["Prat_Editbox"] = {
+			["profiles"] = {
+				["Default"] = {
+					["attach"] = "TOP",
+					["border"] = "None",
+					["inset"] = 1,
+				},
+			},
+		},
+		["Prat_History"] = {
+			["profiles"] = {
+				["Default"] = {
+					["chatlinesframes"] = {
+						["ChatFrame1"] = false,
+					},
+				},
+			},
+		},
+		["Prat_Font"] = {
+		},
+		["Prat_KeyBindings"] = {
+		},
+		["Prat_Bubbles"] = {
+		},
+		["Prat_Timestamps"] = {
+			["profiles"] = {
+				["Default"] = {
+					["colortimestamp"] = false,
+					["show"] = {
+						["ChatFrame6"] = false,
+						["ChatFrame4"] = false,
+						["ChatFrame3"] = false,
+						["ChatFrame7"] = false,
+						["ChatFrame5"] = false,
+						["ChatFrame1"] = false,
+					},
+					["formatcode"] = "%M:%S",
+					["space"] = false,
+					["localtime"] = false,
+				},
+			},
+		},
+		["Prat_Paragraph"] = {
+		},
+		["Prat_Achievements"] = {
+		},
+		["Prat_DebugModules"] = {
+		},
+		["Prat_Alias"] = {
+		},
+		["Prat_OriginalButtons"] = {
+		},
+		["Prat_Highlight"] = {
+		},
+		["Prat_Sounds"] = {
+		},
+		["Prat_ChannelNames"] = {
+		},
+		["Prat_Invites"] = {
+		},
+		["Prat_LinkInfoIcons"] = {
+		},
+		["Prat_ChannelSticky"] = {
+		},
+		["Prat_ChatLog"] = {
+		},
+		["Prat_Search"] = {
+		},
+		["Prat_Buttons"] = {
+			["profiles"] = {
+				["Default"] = {
+					["showButtons"] = false,
+					["showvoice"] = false,
+					["showchannel"] = false,
+					["showBnet"] = false,
+					["scrollReminder"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+			},
+		},
+		["Prat_TellTarget"] = {
+		},
+		["Prat_HoverTips"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Lonac - Stitches"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["modules"] = {
+				["ChatLog"] = 2,
+				["Mentions"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["KeyBindings"] = 2,
+				["LinkInfoIcons"] = 2,
+				["DebugModules"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+			},
+		},
+	},
+}

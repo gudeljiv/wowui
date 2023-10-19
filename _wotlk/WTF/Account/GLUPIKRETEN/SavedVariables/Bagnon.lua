@@ -38,7 +38,7 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMRIGHT",
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 				[-2] = true,
 				[4] = false,
@@ -58,8 +58,8 @@ Bagnon_Sets = {
 			["hiddenRules"] = {
 			},
 			["spacing"] = 3,
-			["y"] = 403.05615234375,
-			["x"] = -169.50830078125,
+			["bagBreak"] = false,
+			["x"] = -92.049072265625,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -70,7 +70,7 @@ Bagnon_Sets = {
 				0, -- [3]
 				0.7400000095367432, -- [4]
 			},
-			["bagBreak"] = false,
+			["y"] = -415.0391845703125,
 		},
 		["vault"] = {
 			["rules"] = {

@@ -2,28 +2,51 @@
 Details_StreamerDB = {
 	["characters"] = {
 		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
-		["Vermina - Golemagg"] = "Mxyz - Golemagg",
+		["Battledog - Gehennas"] = "Mxyz - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
+		["Dopesick - Stitches"] = "Mxyz - Golemagg",
 		["Greshnik - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battitude - Golemagg"] = "Mxyz - Golemagg",
-		["Wells - Jin'do"] = "Mxyz - Golemagg",
+		["Dopecure - Stitches"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Tudum - Ashbringer"] = "Mxyz - Golemagg",
 		["Augustin - Golemagg"] = "Mxyz - Golemagg",
 		["Moolatz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
+		["Lonac - Stitches"] = "Mxyz - Golemagg",
 		["Provokator - Jin'do"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
+		["Handrmandr - Golemagg"] = "Mxyz - Golemagg",
+		["Vermina - Golemagg"] = "Mxyz - Golemagg",
+		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
+		["Dopede - Stitches"] = "Mxyz - Golemagg",
+		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
+		["Tudum - Jin'do"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
+		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Dopeah - Stitches"] = "Mxyz - Golemagg",
+		["Dopeclaw - Stitches"] = "Mxyz - Golemagg",
+		["Dopesnare - Stitches"] = "Mxyz - Golemagg",
+		["Wells - Jin'do"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
-			["use_square_mode"] = false,
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["is_first_run"] = false,
 			["grow_direction"] = "right",
 			["arrow_color"] = {
@@ -32,6 +55,7 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -41,18 +65,13 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["arrow_anchor_y"] = 0,
-			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
+			["arrow_anchor_x"] = 0,
+			["use_square_mode"] = false,
 			["row_texture"] = "xVerminClean",
-			["use_spark"] = false,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["author"] = "Details! Team",
+			["square_grow_direction"] = "right",
+			["font_size"] = 10,
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -64,9 +83,13 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -78,16 +101,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
+			["author"] = "Details! Team",
 			["point"] = "RIGHT",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["row_height"] = 18,
 			["scale"] = 1,
 		},

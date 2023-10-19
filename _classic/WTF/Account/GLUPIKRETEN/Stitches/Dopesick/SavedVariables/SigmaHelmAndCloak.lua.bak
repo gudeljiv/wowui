@@ -6,7 +6,7 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:16990::::::::30:::::::::|h[]|h|r"] = "Off",
 	["|cff1eff00|Hitem:16990::::::::28:::::::::|h[Spritekin Cloak]|h|r"] = "Off",
 	["|cff1eff00|Hitem:16990::::::::29:::::::::|h[Spritekin Cloak]|h|r"] = "Off",
-	["|cffffffff|Hitem:10408::::::1114:1703322368:27:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:10408::::::1114:1703322368:30:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:16990::::::::27:::::::::|h[]|h|r"] = "Off",
 	["|cff1eff00|Hitem:10408::::::1114:1703322368:29:::::::::|h[Banded Helm of the Boar]|h|r"] = "Off",
 	["|cff1eff00|Hitem:16990::::::::27:::::::::|h[Spritekin Cloak]|h|r"] = "Off",
@@ -24,5 +24,5 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:10408::::::1114:1703322368:29:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:16990::::::::29:::::::::|h[]|h|r"] = "Off",
 	["|cff1eff00|Hitem:10408::::::1114:1703322368:30:::::::::|h[Banded Helm of the Boar]|h|r"] = "Off",
-	["|cffffffff|Hitem:10408::::::1114:1703322368:30:::::::::|h[]|h|r"] = "Off",
+	["|cffffffff|Hitem:10408::::::1114:1703322368:27:::::::::|h[]|h|r"] = "Off",
 }

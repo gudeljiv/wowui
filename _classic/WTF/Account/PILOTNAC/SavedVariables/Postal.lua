@@ -3,55 +3,70 @@ Postal3DB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
-				"Battlearm|Golemagg|Horde|70|DEATHKNIGHT", -- [2]
-				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
-				"Moolatz|Golemagg|Horde|61|DRUID", -- [4]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [5]
-				"Mxzq|Golemagg|Horde|70|HUNTER", -- [6]
-				"Provokator|Jin'do|Horde|2|HUNTER", -- [7]
-				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [8]
-				"Vermina|Golemagg|Horde|29|PALADIN", -- [9]
-				"Vermin|Golemagg|Horde|70|WARRIOR", -- [10]
-				"Wells|Jin'do|Horde|8|DRUID", -- [11]
+				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
+				"Dopeclaw|Stitches|Horde|26|DRUID", -- [2]
+				"Dopecure|Stitches|Horde|11|PRIEST", -- [3]
+				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
+				"Dopesick|Stitches|Horde|1|WARRIOR", -- [5]
+				"Dopesnare|Stitches|Horde|36|HUNTER", -- [6]
+				"Lonac|Stitches|Horde|1|WARRIOR", -- [7]
+				"Mxzq|Golemagg|Horde|35|HUNTER", -- [8]
 			},
 		},
 	},
 	["profileKeys"] = {
+		["Dopede - Stitches"] = "Dopede - Stitches",
+		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Lonac - Stitches"] = "Lonac - Stitches",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermina - Golemagg"] = "Vermina - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Battitude - Golemagg"] = "Battitude - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 	},
 	["profiles"] = {
+		["Dopede - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
+				},
+			},
+		},
+		["Dopesnare - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopeah|Stitches|Horde", -- [1]
+					"Dopesick|Stitches|Horde", -- [2]
+				},
+			},
+		},
+		["Lonac - Stitches"] = {
+		},
+		["Dopesick - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopeah|Stitches|Horde", -- [1]
+					"Dopede|Stitches|Horde", -- [2]
+				},
+			},
+		},
+		["Dopecure - Stitches"] = {
+		},
+		["Dopeclaw - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopede|Stitches|Horde", -- [1]
+				},
+			},
+		},
+		["Dopeah - Stitches"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Dopesick|Stitches|Horde", -- [1]
+				},
+			},
+		},
 		["Mxzq - Golemagg"] = {
-		},
-		["Vermina - Golemagg"] = {
-		},
-		["Mxyz - Golemagg"] = {
-		},
-		["Battlearm - Golemagg"] = {
-		},
-		["Moolatz - Golemagg"] = {
-		},
-		["Battitude - Golemagg"] = {
-		},
-		["Vermin - Golemagg"] = {
-		},
-		["Battlearm - Jin'do"] = {
-		},
-		["Provokator - Jin'do"] = {
-		},
-		["Wells - Jin'do"] = {
-		},
-		["Tandaram - Jin'do"] = {
 		},
 	},
 }
