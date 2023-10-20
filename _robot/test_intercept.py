@@ -50,11 +50,11 @@ X = 0x2D
 ONE = 0x02
 SHIFT = 0x2A
 
+# time.sleep(3)
+# press_interception_key(X)
+# quit()
 time.sleep(3)
-press_interception_key(X)
-quit()
-time.sleep(3)
-for i in range(5):
-    time.sleep(0.5)
+for i in range(500):
+    time.sleep(2)
     press_interception_key(X)
     # cKeyPress("x")

@@ -81,3 +81,9 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 /cast [stance:1/3] Sweeping Strikes
 /cast [stance:2] Disarm
 END
+VER 3 000000000100000F " " "INV_Misc_QuestionMark"
+#showtooltip Overpower
+/startattack
+/cast [nostance:1] Battle Stance;
+/cast Overpower
+END

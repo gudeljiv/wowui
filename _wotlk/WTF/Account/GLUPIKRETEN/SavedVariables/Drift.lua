@@ -1,5 +1,12 @@
 
 DriftPoints = {
+	["CharacterFrame"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -86.53970336914062,
+		["xOfs"] = 1.058223009109497,
+	},
 	["TradeSkillFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOP",

@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 3.0.159 (16th October 2023)
+	-- 	Leatrix Maps 3.0.160 (19th October 2023)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "3.0.159"
+	LeaMapsLC["AddonVer"] = "3.0.160"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -43,6 +43,16 @@
 	-- Main function
 	function LeaMapsLC:MainFunc()
 
+		-- Replace map toggle function
+		WorldMapFrame.HandleUserActionToggleSelf = function()
+			if WorldMapFrame:IsShown() then WorldMapFrame:Hide() else WorldMapFrame:Show() end
+		end
+
+		-- Handle open and close the map for sticky map frame
+		if LeaMapsLC["UseDefaultMap"] == "On" or LeaMapsLC["StickyMapFrame"] == "Off" then
+			table.insert(UISpecialFrames, "WorldMapFrame")
+		end
+
 		-- Hide Track Quest checkbox (it's not needed)
 		WorldMapTrackQuest:ClearAllPoints()
 		WorldMapTrackQuest.SetPoint = function() return end
@@ -71,11 +81,9 @@
 		-- Unlock map frame
 		WorldMapTitleDropDown_ToggleLock()
 
-		-- Remove click from title bar (required for moving map and setting opacity)
-		if LeaMapsLC["UseDefaultMap"] == "Off" then
-			WorldMapTitleButton:EnableMouse(false)
-			MiniWorldMapTitle:Hide()
-		end
+		-- Remove right-click from title bar
+		WorldMapTitleButton:RegisterForClicks("LeftButtonDown")
+		MiniWorldMapTitle:Hide()
 
 		-- Load Battlefield addon
 		if not IsAddOnLoaded("Blizzard_BattlefieldMap") then
@@ -86,11 +94,21 @@
 		local playerFaction = UnitFactionGroup("player")
 
 		-- Hide world map dropdown menus to prevent GuildControlSetRank() taint
-		WorldMapZoneDropDown:Hide()
-		WorldMapContinentDropDown:Hide()
+		local menuTempFrame = CreateFrame("FRAME")
+		menuTempFrame:Hide()
+		WorldMapContinentDropDown:SetParent(menuTempFrame)
+		WorldMapZoneDropDown:SetParent(menuTempFrame)
+		WorldMapZoomOutButton:SetParent(menuTempFrame)
+		WorldMapZoneMinimapDropDown:SetParent(menuTempFrame)
 
-		-- Hide zone map dropdown menu as it's shown in the main panel
-		WorldMapZoneMinimapDropDown:Hide()
+		-- Hide world map title button (used for movement) if default maximised map is showing
+		hooksecurefunc(WorldMapFrame, "SynchronizeDisplayState", function()
+			if LeaMapsLC["UseDefaultMap"] == "On" and GetCVar("miniWorldMap") == "0" then
+				WorldMapTitleButton:Hide()
+			else
+				WorldMapTitleButton:Show()
+			end
+		end)
 
 		-- Hide right-click to zoom out button and message
 		WorldMapZoomOutButton:Hide()
@@ -439,8 +457,6 @@
 
 			-- Move dropdown menus if using default map
 			if LeaMapsLC["UseDefaultMap"] == "On" then
-				WorldMapContinentDropDown:ClearAllPoints()
-				WorldMapContinentDropDown.SetPoint = function() return end
 
 				hooksecurefunc(WorldMapFrame, "Minimize", function()
 					outerFrame:ClearAllPoints()
@@ -448,7 +464,6 @@
 				end)
 
 				hooksecurefunc(WorldMapFrame, "Maximize", function()
-					WorldMapContinentDropDown:Hide()
 					outerFrame:ClearAllPoints()
 					outerFrame:SetPoint("TOP", WorldMapFrame, "TOP", 0, -12)
 				end)
@@ -1816,14 +1831,6 @@
 			WorldMapFrame.ScrollContainer:SetIgnoreParentScale(false)
 			WorldMapFrame.BlackoutFrame:Hide()
 			WorldMapFrame.IsMaximized = function() return false end
-			WorldMapFrame.HandleUserActionToggleSelf = function()
-				if WorldMapFrame:IsShown() then WorldMapFrame:Hide() else WorldMapFrame:Show() end
-			end
-
-			-- Handle open and close the map for sticky map frame
-			if LeaMapsLC["StickyMapFrame"] == "Off" then
-				table.insert(UISpecialFrames, "WorldMapFrame")
-			end
 
 			-- Enable movement
 			WorldMapFrame:SetMovable(true)
@@ -1918,7 +1925,7 @@
 			local function SetMapOpacity()
 				LeaMapsCB["stationaryOpacity"].f:SetFormattedText("%.0f%%", LeaMapsLC["stationaryOpacity"] * 100)
 				LeaMapsCB["movingOpacity"].f:SetFormattedText("%.0f%%", LeaMapsLC["movingOpacity"] * 100)
-				if LeaMapsLC["SetMapOpacity"] == "On" then
+				if LeaMapsLC["SetMapOpacity"] == "On" and GetCVar("miniWorldMap") == "1" then
 					-- Set opacity level as frame fader only takes effect when player moves
 					if IsPlayerMoving() then
 						WorldMapFrame:SetAlpha(LeaMapsLC["movingOpacity"])
@@ -1939,6 +1946,26 @@
 			LeaMapsCB["movingOpacity"]:HookScript("OnValueChanged", SetMapOpacity)
 			LeaMapsCB["SetMapOpacity"]:HookScript("OnClick", SetMapOpacity)
 			SetMapOpacity()
+
+			-- Set map opacity when options are changed and on startup
+			LeaMapsCB["stationaryOpacity"]:HookScript("OnValueChanged", SetMapOpacity)
+			LeaMapsCB["movingOpacity"]:HookScript("OnValueChanged", SetMapOpacity)
+			LeaMapsCB["SetMapOpacity"]:HookScript("OnClick", SetMapOpacity)
+			SetMapOpacity()
+
+			-- Set opacity when map size is switched
+			hooksecurefunc(WorldMapFrame, "SynchronizeDisplayState", function()
+				if LeaMapsLC["SetMapOpacity"] == "On" and GetCVar("miniWorldMap") == "1" then
+					if IsPlayerMoving() then
+						WorldMapFrame:SetAlpha(LeaMapsLC["movingOpacity"])
+					else
+						WorldMapFrame:SetAlpha(LeaMapsLC["stationaryOpacity"])
+					end
+					PlayerMovementFrameFader.AddDeferredFrame(WorldMapFrame, LeaMapsLC["movingOpacity"], LeaMapsLC["stationaryOpacity"], 0.5, function() return not WorldMapFrame:IsMouseOver() or LeaMapsLC["NoFadeCursor"] == "Off" end)
+				else
+					PlayerMovementFrameFader.RemoveFrame(WorldMapFrame)
+				end
+			end)
 
 			-- Back to Main Menu button click
 			alphaFrame.b:HookScript("OnClick", function()

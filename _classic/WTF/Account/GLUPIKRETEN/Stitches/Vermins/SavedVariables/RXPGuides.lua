@@ -1,0 +1,515 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+		{
+		}, -- [1]
+	},
+	["currentStep"] = 1,
+	["questObjectivesCache"] = {
+		[0] = 35,
+		[765] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Fizsprocket's Clipboard: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[771] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 2,
+				["text"] = "Well Stone: 0/2",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 2,
+				["text"] = "Ambercorn: 0/2",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[5441] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Peons Awoken: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[4402] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Cactus Apple: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[848] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Fungal Spores: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[789] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Scorpid Worker Tail: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[3376] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Chief Sharptusk Thornmantle's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[870] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Explore the waters of the Forgotten Pools",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[746] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Broken Tools: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[748] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Prairie Wolf Paw: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Plainstrider Talon: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[750] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Mountain Cougar Pelt: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[754] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Cleanse the Winterhoof Water Well",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[756] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Stalker Claws: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Cougar Claws: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[758] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Cleanse the Thunderhorn Water Well",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[760] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Cleanse the Wildmane Well",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[764] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 14,
+				["text"] = "Venture Co. Worker slain: 0/14",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 6,
+				["text"] = "Venture Co. Supervisor slain: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[766] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Prairie Wolf Heart: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Flatland Cougar Femur: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Plainstrider Scale: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Swoop Gizzard: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
+		[833] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Bristleback Interloper slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[776] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Horn of Arra'chea: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[780] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Battleboar Snout: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Battleboar Flank: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[788] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Mottled Boar slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[790] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Sarkoth's Mangled Claw: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[792] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 12,
+				["text"] = "Vile Familiar slain: 0/12",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[794] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Burning Blade Medallion: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[861] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Flatland Prowler Claw: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[743] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Windfury Talon: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[745] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Palemane Tanner slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Palemane Skinner slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Palemane Poacher slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[747] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 7,
+				["text"] = "Plainstrider Meat: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 7,
+				["text"] = "Plainstrider Feather: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[761] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Trophy Swoop Quill: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[744] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Azure Feather: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Bronze Feather: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[753] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Water Pitcher: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[1498] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Singed Scale: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[757] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 12,
+				["text"] = "Bristleback Belt: 0/12",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[759] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Prairie Alpha Tooth: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6394] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Thazz'ril's Pick: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+	},
+	["currentGuideGroup"] = "RestedXP Horde 1-22",
+	["flightPaths"] = {
+	},
+	["questNameCache"] = {
+		[761] = "Swoop Hunting",
+		[763] = "Rites of the Earthmother",
+		[765] = "Supervisor Fizsprocket",
+		[767] = "Rite of Vision",
+		[771] = "Rite of Vision",
+		[3091] = "Simple Note",
+		[5441] = "Lazy Peons",
+		[4402] = "Galgar's Cactus Apple Surprise",
+		[781] = "Attack on Camp Narache",
+		[848] = "Fungal Spores",
+		[789] = "Sting of the Scorpid",
+		[3376] = "Break Sharptusk!",
+		[4641] = "Your Place In The World",
+		[744] = "Preparation for Ceremony",
+		[746] = "Dwarven Digging",
+		[748] = "Poison Water",
+		[750] = "The Hunt Continues",
+		[752] = "A Humble Task",
+		[754] = "Winterhoof Cleansing",
+		[756] = "Thunderhorn Totem",
+		[758] = "Thunderhorn Cleansing",
+		[760] = "Wildmane Cleansing",
+		[764] = "The Venture Co.",
+		[766] = "Mazzranache",
+		[833] = "A Sacred Burial",
+		[776] = "Rites of the Earthmother",
+		[780] = "The Battleboars",
+		[788] = "Cutting Teeth",
+		[790] = "Sarkoth",
+		[792] = "Vile Familiars",
+		[794] = "Burning Blade Medallion",
+		[861] = "The Hunter's Way",
+		[1656] = "A Task Unfinished",
+		[743] = "Dangers of the Windfury",
+		[745] = "Sharing the Land",
+		[747] = "The Hunt Begins",
+		[870] = "The Forgotten Pools",
+		[1498] = "Path of Defense",
+		[753] = "A Humble Task",
+		[755] = "Rites of the Earthmother",
+		[757] = "Rite of Strength",
+		[759] = "Wildmane Totem",
+		[6394] = "Thazz'ril's Pick",
+	},
+	["currentGuideName"] = "01-06 Durotar",
+	["stepSkip"] = {
+	},
+	["currentStepId"] = 2939554460,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Vermins - Stitches"] = "Vermins - Stitches",
+	},
+	["profiles"] = {
+		["Vermins - Stitches"] = {
+			["levels"] = {
+				[6] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Mulgore"] = {
+							["xp"] = 55,
+							["count"] = 1,
+						},
+					},
+					["timestamp"] = {
+					},
+					["quests"] = {
+						["Mulgore"] = {
+							[767] = 55,
+						},
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Vermins - Stitches"] = "Vermins - Stitches",
+	},
+	["profiles"] = {
+		["Vermins - Stitches"] = {
+			["announcements"] = {
+				["06-13 Mulgore"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+			["players"] = {
+				["Шаравель"] = {
+					["timePlayed"] = 158.1110000000044,
+					["class"] = "WARRIOR",
+					["xp"] = 32,
+				},
+			},
+		},
+	},
+}
+RXPCSettings = nil
