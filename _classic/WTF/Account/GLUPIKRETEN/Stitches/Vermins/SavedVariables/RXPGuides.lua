@@ -1,10 +1,12 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[24] = {
+		[50] = {
+			[2971687299] = true,
+			[2746882435] = true,
 		},
 	},
-	["currentStep"] = 24,
+	["currentStep"] = 50,
 	["questObjectivesCache"] = {
 		[0] = 47,
 		[826] = {
@@ -323,11 +325,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[6394] = {
+		[834] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thazz'ril's Pick: 0/1",
+				["numRequired"] = 5,
+				["text"] = "Sack of Supplies: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -432,11 +434,29 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[757] = {
+		[1498] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 12,
-				["text"] = "Bristleback Belt: 0/12",
+				["numRequired"] = 5,
+				["text"] = "Singed Scale: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[806] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Fizzle's Claw: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[808] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Minshina's Skull: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -473,24 +493,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[806] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Fizzle's Claw: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[808] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Minshina's Skull: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[747] = {
 			{
 				["type"] = "item",
@@ -507,6 +509,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
+		[761] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Trophy Swoop Quill: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[744] = {
 			{
 				["type"] = "item",
@@ -522,15 +533,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[761] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Trophy Swoop Quill: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[753] = {
 			{
@@ -557,11 +559,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[1498] = {
+		[757] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Singed Scale: 0/5",
+				["numRequired"] = 12,
+				["text"] = "Bristleback Belt: 0/12",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -575,11 +577,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[834] = {
+		[6394] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Sack of Supplies: 0/5",
+				["numRequired"] = 1,
+				["text"] = "Thazz'ril's Pick: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -598,21 +600,23 @@ RXPCData = {
 		[5441] = "Lazy Peons",
 		[4402] = "Galgar's Cactus Apple Surprise",
 		[781] = "Attack on Camp Narache",
+		[834] = "Winds in the Desert",
 		[848] = "Fungal Spores",
+		[2383] = "Simple Parchment",
 		[789] = "Sting of the Scorpid",
 		[791] = "Carry Your Weight",
-		[823] = "Report to Orgnil",
-		[2383] = "Simple Parchment",
+		[1498] = "Path of Defense",
+		[818] = "A Solvent Spirit",
 		[3376] = "Break Sharptusk!",
-		[752] = "A Humble Task",
+		[815] = "Break a Few Eggs",
 		[4641] = "Your Place In The World",
-		[757] = "Rite of Strength",
+		[2161] = "A Peon's Burden",
 		[805] = "Report to Sen'jin Village",
 		[744] = "Preparation for Ceremony",
 		[746] = "Dwarven Digging",
 		[748] = "Poison Water",
 		[750] = "The Hunt Continues",
-		[815] = "Break a Few Eggs",
+		[752] = "A Humble Task",
 		[754] = "Winterhoof Cleansing",
 		[756] = "Thunderhorn Totem",
 		[758] = "Thunderhorn Cleansing",
@@ -620,44 +624,49 @@ RXPCData = {
 		[825] = "From The Wreckage....",
 		[764] = "The Venture Co.",
 		[766] = "Mazzranache",
-		[755] = "Rites of the Earthmother",
+		[831] = "The Admiral's Orders",
 		[833] = "A Sacred Burial",
-		[817] = "Practical Prey",
+		[1656] = "A Task Unfinished",
 		[837] = "Encroachment",
 		[776] = "Rites of the Earthmother",
 		[870] = "The Forgotten Pools",
 		[780] = "The Battleboars",
-		[826] = "Zalazane",
+		[808] = "Minshina's Skull",
 		[784] = "Vanquish the Betrayers",
 		[786] = "Thwarting Kolkar Aggression",
 		[788] = "Cutting Teeth",
 		[790] = "Sarkoth",
 		[792] = "Vile Familiars",
 		[794] = "Burning Blade Medallion",
-		[6394] = "Thazz'ril's Pick",
-		[861] = "The Hunter's Way",
-		[745] = "Sharing the Land",
-		[743] = "Dangers of the Windfury",
-		[804] = "Sarkoth",
 		[806] = "Dark Storms",
-		[808] = "Minshina's Skull",
+		[861] = "The Hunter's Way",
+		[826] = "Zalazane",
+		[6394] = "Thazz'ril's Pick",
+		[804] = "Sarkoth",
+		[743] = "Dangers of the Windfury",
+		[745] = "Sharing the Land",
 		[747] = "The Hunt Begins",
-		[1656] = "A Task Unfinished",
-		[2161] = "A Peon's Burden",
+		[817] = "Practical Prey",
+		[823] = "Report to Orgnil",
 		[753] = "A Humble Task",
-		[818] = "A Solvent Spirit",
-		[1498] = "Path of Defense",
+		[755] = "Rites of the Earthmother",
+		[757] = "Rite of Strength",
 		[759] = "Wildmane Totem",
-		[834] = "Winds in the Desert",
+		[830] = "The Admiral's Orders",
 	},
 	["currentGuideName"] = "06-10 Durotar",
 	["stepSkip"] = {
+		[46] = true,
+		[25] = true,
 		[7] = true,
-		[10] = true,
 		[14] = true,
 		[18] = true,
+		[10] = true,
+		[40] = true,
+		[42] = true,
+		[44] = true,
 	},
-	["currentStepId"] = 3095399346,
+	["currentStepId"] = 3095399572,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -706,6 +715,11 @@ RXPCComms = {
 					["timePlayed"] = 158.1110000000044,
 					["class"] = "WARRIOR",
 					["xp"] = 32,
+				},
+				["Slipperyhot"] = {
+					["timePlayed"] = 21.25299999999697,
+					["class"] = "ROGUE",
+					["xp"] = 50,
 				},
 			},
 		},

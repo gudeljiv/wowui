@@ -112,3 +112,4 @@ SigmaProfessionFilterCooking: disabled
 SigmaProfessionFilterFirstAid: disabled
 SigmaProfessionFilterMining: disabled
 SigmaProfessionFilterPoisons: disabled
+Immersion: enabled

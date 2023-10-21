@@ -94,3 +94,4 @@ SpeedyAutoLoot: enabled
 WhatsTraining: enabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
+Immersion: enabled

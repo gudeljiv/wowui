@@ -109,3 +109,4 @@ LibUIDropDownMenu: enabled
 SkillInfoPlus: disabled
 AdiBags-BetterCategories: enabled
 ClassicProfessionFilter: enabled
+Immersion: enabled
