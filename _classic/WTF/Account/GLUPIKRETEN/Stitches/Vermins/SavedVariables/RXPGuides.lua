@@ -1,12 +1,35 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		{
-		}, -- [1]
+		[24] = {
+		},
 	},
-	["currentStep"] = 1,
+	["currentStep"] = 24,
 	["questObjectivesCache"] = {
-		[0] = 35,
+		[0] = 47,
+		[826] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Hexed Troll slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Voodoo Troll slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Zalazane's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
 		[765] = {
 			{
 				["type"] = "item",
@@ -68,6 +91,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[791] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Canvas Scraps: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[3376] = {
 			{
 				["type"] = "item",
@@ -120,6 +152,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[815] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 3,
+				["text"] = "Taillasher Egg: 0/3",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[754] = {
 			{
 				["type"] = "event",
@@ -159,6 +200,15 @@ RXPCData = {
 				["type"] = "event",
 				["numRequired"] = 1,
 				["text"] = "Cleanse the Wildmane Well",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[825] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 3,
+				["text"] = "Gnomish Tools: 0/3",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -218,6 +268,36 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[837] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Razormane Quilboar slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Razormane Scout slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Razormane Dustrunner slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Razormane Battleguard slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
+		},
 		[776] = {
 			{
 				["type"] = "item",
@@ -242,6 +322,61 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+		},
+		[6394] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Thazz'ril's Pick: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[784] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Kul Tiras Sailor slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Kul Tiras Marine slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Lieutenant Benedict slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[786] = {
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Valley of Trials destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Sen'jin Village destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "object",
+				["numRequired"] = 1,
+				["text"] = "Attack Plan: Orgrimmar destroyed: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[788] = {
 			{
@@ -279,11 +414,29 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[817] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Durotar Tiger Fur: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[861] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 4,
 				["text"] = "Flatland Prowler Claw: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[757] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 12,
+				["text"] = "Bristleback Belt: 0/12",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -320,6 +473,24 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[806] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Fizzle's Claw: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[808] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Minshina's Skull: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[747] = {
 			{
 				["type"] = "item",
@@ -335,15 +506,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[761] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Trophy Swoop Quill: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[744] = {
 			{
@@ -361,6 +523,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
+		[761] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Trophy Swoop Quill: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[753] = {
 			{
 				["type"] = "item",
@@ -370,20 +541,27 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[818] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Intact Makrura Eye: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Crawler Mucus: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
 		[1498] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 5,
 				["text"] = "Singed Scale: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[757] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 12,
-				["text"] = "Bristleback Belt: 0/12",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -397,11 +575,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6394] = {
+		[834] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thazz'ril's Pick: 0/1",
+				["numRequired"] = 5,
+				["text"] = "Sack of Supplies: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -422,43 +600,64 @@ RXPCData = {
 		[781] = "Attack on Camp Narache",
 		[848] = "Fungal Spores",
 		[789] = "Sting of the Scorpid",
+		[791] = "Carry Your Weight",
+		[823] = "Report to Orgnil",
+		[2383] = "Simple Parchment",
 		[3376] = "Break Sharptusk!",
+		[752] = "A Humble Task",
 		[4641] = "Your Place In The World",
+		[757] = "Rite of Strength",
+		[805] = "Report to Sen'jin Village",
 		[744] = "Preparation for Ceremony",
 		[746] = "Dwarven Digging",
 		[748] = "Poison Water",
 		[750] = "The Hunt Continues",
-		[752] = "A Humble Task",
+		[815] = "Break a Few Eggs",
 		[754] = "Winterhoof Cleansing",
 		[756] = "Thunderhorn Totem",
 		[758] = "Thunderhorn Cleansing",
 		[760] = "Wildmane Cleansing",
+		[825] = "From The Wreckage....",
 		[764] = "The Venture Co.",
 		[766] = "Mazzranache",
+		[755] = "Rites of the Earthmother",
 		[833] = "A Sacred Burial",
+		[817] = "Practical Prey",
+		[837] = "Encroachment",
 		[776] = "Rites of the Earthmother",
+		[870] = "The Forgotten Pools",
 		[780] = "The Battleboars",
+		[826] = "Zalazane",
+		[784] = "Vanquish the Betrayers",
+		[786] = "Thwarting Kolkar Aggression",
 		[788] = "Cutting Teeth",
 		[790] = "Sarkoth",
 		[792] = "Vile Familiars",
 		[794] = "Burning Blade Medallion",
-		[861] = "The Hunter's Way",
-		[1656] = "A Task Unfinished",
-		[743] = "Dangers of the Windfury",
-		[745] = "Sharing the Land",
-		[747] = "The Hunt Begins",
-		[870] = "The Forgotten Pools",
-		[1498] = "Path of Defense",
-		[753] = "A Humble Task",
-		[755] = "Rites of the Earthmother",
-		[757] = "Rite of Strength",
-		[759] = "Wildmane Totem",
 		[6394] = "Thazz'ril's Pick",
+		[861] = "The Hunter's Way",
+		[745] = "Sharing the Land",
+		[743] = "Dangers of the Windfury",
+		[804] = "Sarkoth",
+		[806] = "Dark Storms",
+		[808] = "Minshina's Skull",
+		[747] = "The Hunt Begins",
+		[1656] = "A Task Unfinished",
+		[2161] = "A Peon's Burden",
+		[753] = "A Humble Task",
+		[818] = "A Solvent Spirit",
+		[1498] = "Path of Defense",
+		[759] = "Wildmane Totem",
+		[834] = "Winds in the Desert",
 	},
-	["currentGuideName"] = "01-06 Durotar",
+	["currentGuideName"] = "06-10 Durotar",
 	["stepSkip"] = {
+		[7] = true,
+		[10] = true,
+		[14] = true,
+		[18] = true,
 	},
-	["currentStepId"] = 2939554460,
+	["currentStepId"] = 3095399346,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {

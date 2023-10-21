@@ -46,6 +46,7 @@ Addons/ChocolateBar.lua
 Addons/Deathlog.lua
 Addons/ECS.lua
 Addons/GDKP.lua
+Addons/Immersion.lua
 Addons/ItemRack.lua
 Addons/LFG.lua
 Addons/Minimap.lua

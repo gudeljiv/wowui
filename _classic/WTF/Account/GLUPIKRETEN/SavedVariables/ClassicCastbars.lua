@@ -53,27 +53,27 @@ ClassicCastbarsDB = {
 		},
 		["frameStrata"] = "HIGH",
 		["width"] = 106,
-		["position"] = {
-			"CENTER", -- [1]
-			7.3, -- [2]
-			-23.1, -- [3]
-		},
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["textOutline"] = "",
-		["showBorderShield"] = true,
+		["iconPositionY"] = 0,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showBorderShield"] = true,
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["position"] = {
+			"CENTER", -- [1]
+			7.3, -- [2]
+			-23.1, -- [3]
+		},
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -127,29 +127,29 @@ ClassicCastbarsDB = {
 		["3258Poisoned Shot"] = 2502,
 		["2346Holy Smite"] = 2817,
 		["3902Attack"] = 1498,
-		["699Shoot"] = 486,
+		["2990Lesser Heal"] = 2020,
 		["3944Heal"] = 3583,
 		["3282Shoot"] = 405,
 		["1097Shoot"] = 500,
-		["3991Fireball"] = 3033,
-		["3394Shoot"] = 443,
+		["2554Throw"] = 515,
+		["3265Shoot"] = 465,
 		["4093Shoot"] = 466,
-		["3926Shoot"] = 516,
+		["2346Heal"] = 3001,
 		["2358Fireball"] = 3023,
 		["2345Shoot"] = 495,
 		["2428Shoot"] = 484,
-		["2346Heal"] = 3001,
+		["3926Shoot"] = 516,
 		["688Crystal Gaze"] = 2600,
-		["3989Throw"] = 467,
-		["4094Shoot"] = 500,
-		["10760Fireball"] = 2945,
-		["2587Shoot"] = 507,
 		["5669Shoot"] = 466,
+		["2587Shoot"] = 507,
+		["10760Fireball"] = 2945,
+		["4094Shoot"] = 500,
+		["3989Throw"] = 467,
 		["4641Healing Wave"] = 6152,
-		["3265Shoot"] = 465,
-		["2554Throw"] = 515,
+		["3394Shoot"] = 443,
+		["3991Fireball"] = 3033,
 		["4119Lightning Bolt"] = 3568,
-		["2990Lesser Heal"] = 2020,
+		["699Shoot"] = 486,
 		["12856Shoot"] = 503,
 	},
 	["usePerCharacterSettings"] = false,
@@ -206,26 +206,26 @@ ClassicCastbarsDB = {
 		["frameStrata"] = "HIGH",
 		["width"] = 120,
 		["borderPaddingWidth"] = 1.17,
-		["textOutline"] = "",
+		["position"] = {
+			"CENTER", -- [1]
+			141, -- [2]
+			6, -- [3]
+		},
 		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			141, -- [2]
-			6, -- [3]
-		},
+		["textOutline"] = "",
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -286,26 +286,26 @@ ClassicCastbarsDB = {
 		["frameStrata"] = "HIGH",
 		["width"] = 150,
 		["borderPaddingWidth"] = 1.17,
-		["textOutline"] = "",
+		["position"] = {
+			"TOPLEFT", -- [1]
+			275, -- [2]
+			-260, -- [3]
+		},
 		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"TOPLEFT", -- [1]
-			275, -- [2]
-			-260, -- [3]
-		},
+		["textOutline"] = "",
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -342,84 +342,84 @@ ClassicCastbarsDB = {
 		["11583Shadow Flame"] = true,
 		["12397Void Bolt"] = true,
 		["785Quick Frost Ward"] = true,
-		["10184Wing Buffet"] = true,
+		["11382Threatening Gaze"] = true,
 		["14509Force Punch"] = true,
-		["16165Arcane Explosion"] = true,
-		["15323Burrow"] = true,
+		["15311Silence"] = true,
+		["10184Wing Buffet"] = true,
 		["15517Sweep"] = true,
 		["16021Chain Lightning"] = true,
-		["15114Massive Geyser"] = true,
-		["15246Mind Flay"] = true,
+		["12118Dominate Mind"] = true,
+		["14887Curse of Thorns"] = true,
 		["11372Venom Spit"] = true,
 		["15311Entangling Roots"] = true,
 		["12557Dominate Mind"] = true,
 		["15956Locust Swarm"] = true,
-		["14947Stun Bomb Attack"] = true,
+		["11339Volley"] = true,
 		["15246Mind Blast"] = true,
-		["11881Boulder"] = true,
+		["15369Poison Stinger"] = true,
 		["785Quick Flame Ward"] = true,
-		["11490Intense Pain"] = true,
+		["12259Shadow Bolt"] = true,
 		["10436Banshee Wail"] = true,
-		["15311Dust Cloud"] = true,
-		["16446Stoneskin"] = true,
+		["15335Poison Bolt"] = true,
+		["10438Frostbolt"] = true,
 		["14943Stun Bomb Attack"] = true,
-		["16021Lightning Totem"] = true,
-		["11490Sacrifice"] = true,
+		["11359Soul Tap"] = true,
+		["14020Ignite Flesh"] = true,
 		["12459Demon Portal"] = true,
-		["12265Fireball"] = true,
+		["11492Enervate"] = true,
 		["12264Arcane Explosion"] = true,
 		["12119Dominate Mind"] = true,
-		["10184Fireball"] = true,
+		["15589Eye Beam"] = true,
 		["15114Frost Breath"] = true,
-		["11729Toxic Spit"] = true,
+		["15247Mana Burn"] = true,
 		["12201Boulder"] = true,
 		["14601Wing Buffet"] = true,
-		["11983Shadow Flame"] = true,
+		["8607Black Sludge"] = true,
 		["16215Arcane Explosion"] = true,
 		["15311Fear"] = true,
 		["15246Mana Burn"] = true,
 		["16452Arcane Explosion"] = true,
 		["14945Stun Bomb Attack"] = true,
 		["15247Mind Flay"] = true,
-		["14020Ignite Flesh"] = true,
-		["6109Manastorm"] = true,
-		["11492Wild Regeneration"] = true,
-		["11983Wing Buffet"] = true,
+		["16446Stoneskin"] = true,
+		["11981Wing Buffet"] = true,
+		["8212Black Sludge"] = true,
+		["6109Frost Breath"] = true,
 		["15979Pointy Spike"] = true,
 		["13161Stun Bomb Attack"] = true,
 		["16022Mind Flay"] = true,
-		["15979Spike Volley"] = true,
-		["8607Black Sludge"] = true,
+		["12468Flamestrike"] = true,
+		["11983Shadow Flame"] = true,
 		["14834Blood Siphon"] = true,
-		["8212Black Sludge"] = true,
-		["16021Fear"] = true,
+		["11729Toxic Spit"] = true,
+		["13280Massive Geyser"] = true,
 		["11583Bellowing Roar"] = true,
-		["10184Flame Breath"] = true,
+		["11983Wing Buffet"] = true,
 		["12459Shadow Bolt"] = true,
 		["14601Shadow Flame"] = true,
-		["13280Massive Geyser"] = true,
+		["16021Fear"] = true,
 		["14890Bellowing Roar"] = true,
 		["15956Impale"] = true,
-		["12468Flamestrike"] = true,
-		["6109Frost Breath"] = true,
+		["15979Spike Volley"] = true,
+		["10184Flame Breath"] = true,
 		["12435Fireball Volley"] = true,
-		["11981Wing Buffet"] = true,
+		["10184Fireball"] = true,
 		["16368Shadow Bolt Volley"] = true,
-		["15247Mana Burn"] = true,
-		["15589Eye Beam"] = true,
-		["11492Enervate"] = true,
+		["11492Wild Regeneration"] = true,
+		["6109Manastorm"] = true,
+		["12265Fireball"] = true,
 		["15727Eye Beam"] = true,
-		["11359Soul Tap"] = true,
-		["10438Frostbolt"] = true,
-		["15335Poison Bolt"] = true,
-		["12259Shadow Bolt"] = true,
-		["15369Poison Stinger"] = true,
+		["16021Lightning Totem"] = true,
+		["11490Sacrifice"] = true,
+		["15311Dust Cloud"] = true,
+		["11490Intense Pain"] = true,
+		["11881Boulder"] = true,
 		["14944Stun Bomb Attack"] = true,
-		["11339Volley"] = true,
-		["14887Curse of Thorns"] = true,
-		["12118Dominate Mind"] = true,
-		["15311Silence"] = true,
-		["11382Threatening Gaze"] = true,
+		["14947Stun Bomb Attack"] = true,
+		["15246Mind Flay"] = true,
+		["15114Massive Geyser"] = true,
+		["16165Arcane Explosion"] = true,
+		["15323Burrow"] = true,
 		["13996Bomb"] = true,
 	},
 	["arena"] = {
@@ -474,26 +474,105 @@ ClassicCastbarsDB = {
 		["frameStrata"] = "HIGH",
 		["width"] = 150,
 		["borderPaddingWidth"] = 1.17,
-		["textOutline"] = "",
+		["position"] = {
+			"CENTER", -- [1]
+			-149, -- [2]
+			-5, -- [3]
+		},
 		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
+		["textOutline"] = "",
+		["textColor"] = {
+			1, -- [1]
+			1, -- [2]
+			1, -- [3]
+			1, -- [4]
+		},
+	},
+	["target"] = {
+		["autoPosition"] = false,
+		["textPoint"] = "LEFT",
+		["ignoreParentAlpha"] = false,
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["borderColor"] = {
+			1, -- [1]
+			1, -- [2]
+			1, -- [3]
+			1, -- [4]
+		},
+		["statusColorUninterruptible"] = {
+			0.7, -- [1]
+			0.7, -- [2]
+			0.7, -- [3]
+			1, -- [4]
+		},
+		["enabled"] = true,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\ARIALN.TTF",
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["showBorderShield"] = true,
+		["height"] = 45,
+		["borderPaddingHeight"] = 1.2,
+		["castFontSize"] = 32,
+		["showTimer"] = true,
+		["iconPositionY"] = 0,
+		["textPositionX"] = 5,
+		["showSpark"] = true,
+		["hideIconBorder"] = true,
+		["showIcon"] = true,
+		["iconSize"] = 70,
+		["statusColorSuccess"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["frameLevel"] = 10,
+		["castBorder"] = "",
+		["frameStrata"] = "HIGH",
+		["width"] = 500,
+		["borderPaddingWidth"] = 1.205,
 		["position"] = {
 			"CENTER", -- [1]
-			-149, -- [2]
-			-5, -- [3]
+			-215.4, -- [2]
+			598.1, -- [3]
 		},
+		["iconPositionX"] = -10,
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["statusBackgroundColor"] = {
+			0, -- [1]
+			0, -- [2]
+			0, -- [3]
+			0.535, -- [4]
+		},
+		["textOutline"] = "",
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -554,105 +633,26 @@ ClassicCastbarsDB = {
 		["frameStrata"] = "HIGH",
 		["width"] = 190,
 		["borderPaddingWidth"] = 1.17,
-		["iconPositionY"] = 0,
-		["textOutline"] = "",
-		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
-		["statusColor"] = {
-			1, -- [1]
-			0.7, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["statusBackgroundColor"] = {
-			0, -- [1]
-			0, -- [2]
-			0, -- [3]
-			0.535, -- [4]
-		},
 		["position"] = {
 			"CENTER", -- [1]
 			-18, -- [2]
 			-87, -- [3]
 		},
-		["textColor"] = {
-			1, -- [1]
-			1, -- [2]
-			1, -- [3]
-			1, -- [4]
-		},
-	},
-	["target"] = {
-		["autoPosition"] = false,
-		["textPoint"] = "CENTER",
-		["ignoreParentAlpha"] = false,
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
-		["borderColor"] = {
-			1, -- [1]
-			1, -- [2]
-			1, -- [3]
-			1, -- [4]
-		},
-		["statusColorUninterruptible"] = {
-			0.7, -- [1]
-			0.7, -- [2]
-			0.7, -- [3]
-			1, -- [4]
-		},
-		["enabled"] = true,
-		["textPositionY"] = 0,
-		["castFont"] = "Fonts\\ARIALN.TTF",
-		["statusColorChannel"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["showBorderShield"] = true,
-		["height"] = 35,
-		["borderPaddingHeight"] = 1.3,
-		["castFontSize"] = 14,
-		["showTimer"] = true,
-		["iconPositionY"] = 0,
-		["textPositionX"] = 0,
-		["showSpark"] = true,
-		["hideIconBorder"] = true,
-		["showIcon"] = true,
-		["iconSize"] = 50,
-		["statusColorSuccess"] = {
-			0, -- [1]
-			1, -- [2]
-			0, -- [3]
-			1, -- [4]
-		},
-		["frameLevel"] = 10,
-		["castBorder"] = "",
-		["frameStrata"] = "HIGH",
-		["width"] = 300,
-		["borderPaddingWidth"] = 1.17,
 		["textOutline"] = "",
-		["iconPositionX"] = -10,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
+		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			-213.5, -- [2]
-			605.7, -- [3]
-		},
+		["iconPositionY"] = 0,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
