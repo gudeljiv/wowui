@@ -16,8 +16,8 @@ ThreatClassic2DB = {
 		["Miqa - Golemagg"] = "Default",
 		["Dopeah - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -59,13 +59,13 @@ ThreatClassic2DB = {
 					-340, -- [5]
 				},
 				["height"] = 140,
+				["locked"] = true,
 				["headerColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
 					0, -- [4]
 				},
-				["locked"] = true,
 			},
 			["bar"] = {
 				["count"] = 8,

@@ -1,18 +1,18 @@
 
 DriftPoints = {
-	["TradeSkillFrame"] = {
+	["SideDressUpFrame"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "LEFT",
-		["relativePoint"] = "LEFT",
-		["yOfs"] = 95.87569427490234,
-		["xOfs"] = 85.07968139648438,
+		["point"] = "TOP",
+		["relativePoint"] = "TOP",
+		["yOfs"] = -139.4075622558594,
+		["xOfs"] = -16.33853149414063,
 	},
 	["AuctionFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOPLEFT",
 		["relativePoint"] = "TOPLEFT",
-		["yOfs"] = -124.1060562133789,
-		["xOfs"] = 31.21693229675293,
+		["yOfs"] = -131.5134429931641,
+		["xOfs"] = -0,
 	},
 	["SettingsPanel"] = {
 		["relativeTo"] = "UIParent",
@@ -35,12 +35,12 @@ DriftPoints = {
 		["yOfs"] = -130.4550323486328,
 		["xOfs"] = 254.4337463378906,
 	},
-	["SideDressUpFrame"] = {
+	["TradeSkillFrame"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "TOP",
-		["relativePoint"] = "TOP",
-		["yOfs"] = -139.4075622558594,
-		["xOfs"] = -16.33853149414063,
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -115.6586532592773,
+		["xOfs"] = -0,
 	},
 	["GossipFrame"] = {
 		["relativeTo"] = "UIParent",
@@ -62,18 +62,18 @@ DriftScales = {
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["bagsDisabled"] = true,
+	["windowsDisabled"] = false,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
-	["objectivesDisabled"] = true,
-	["windowsDisabled"] = false,
-	["scaleShiftKeyEnabled"] = false,
-	["frameScaleIsLocked"] = false,
-	["arenaDisabled"] = true,
-	["dragCtrlKeyEnabled"] = false,
-	["dragShiftKeyEnabled"] = false,
-	["buttonsDisabled"] = true,
-	["miscellaneousDisabled"] = true,
+	["bagsDisabled"] = true,
 	["scaleCtrlKeyEnabled"] = false,
+	["scaleShiftKeyEnabled"] = false,
+	["arenaDisabled"] = true,
+	["miscellaneousDisabled"] = true,
+	["dragCtrlKeyEnabled"] = false,
+	["buttonsDisabled"] = true,
+	["dragShiftKeyEnabled"] = false,
+	["frameScaleIsLocked"] = false,
+	["objectivesDisabled"] = true,
 	["minimapDisabled"] = true,
 }
