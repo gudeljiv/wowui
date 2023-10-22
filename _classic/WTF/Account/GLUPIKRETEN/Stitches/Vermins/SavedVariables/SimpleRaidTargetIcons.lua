@@ -15,6 +15,8 @@ SRTIExternalUF = {
 	["shadowedunitframes"] = {
 		"SUFUnittarget", -- [1]
 		"SUFHeaderpartyUnitButton1", -- [2]
+		"SUFHeaderpartyUnitButton2", -- [3]
+		"SUFHeaderpartyUnitButton3", -- [4]
 	},
 	["blizzard_compactraidframes"] = {
 		"CompactRaidFrame1", -- [1]

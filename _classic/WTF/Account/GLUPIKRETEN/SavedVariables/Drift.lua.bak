@@ -1,11 +1,11 @@
 
 DriftPoints = {
-	["SideDressUpFrame"] = {
+	["TradeSkillFrame"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "TOP",
-		["relativePoint"] = "TOP",
-		["yOfs"] = -139.4075622558594,
-		["xOfs"] = -16.33853149414063,
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -115.6586532592773,
+		["xOfs"] = -0,
 	},
 	["AuctionFrame"] = {
 		["relativeTo"] = "UIParent",
@@ -28,6 +28,13 @@ DriftPoints = {
 		["yOfs"] = -102.4128341674805,
 		["xOfs"] = 5.291013717651367,
 	},
+	["SpellBookFrame"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -87.59791564941406,
+		["xOfs"] = 6.349202632904053,
+	},
 	["QuestFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOP",
@@ -35,12 +42,12 @@ DriftPoints = {
 		["yOfs"] = -130.4550323486328,
 		["xOfs"] = 254.4337463378906,
 	},
-	["TradeSkillFrame"] = {
+	["SideDressUpFrame"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "TOPLEFT",
-		["relativePoint"] = "TOPLEFT",
-		["yOfs"] = -115.6586532592773,
-		["xOfs"] = -0,
+		["point"] = "TOP",
+		["relativePoint"] = "TOP",
+		["yOfs"] = -139.4075622558594,
+		["xOfs"] = -16.33853149414063,
 	},
 	["GossipFrame"] = {
 		["relativeTo"] = "UIParent",
@@ -62,18 +69,18 @@ DriftScales = {
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["windowsDisabled"] = false,
+	["scaleCtrlKeyEnabled"] = false,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
-	["bagsDisabled"] = true,
-	["scaleCtrlKeyEnabled"] = false,
 	["scaleShiftKeyEnabled"] = false,
-	["arenaDisabled"] = true,
+	["windowsDisabled"] = false,
+	["objectivesDisabled"] = true,
+	["frameScaleIsLocked"] = false,
 	["miscellaneousDisabled"] = true,
 	["dragCtrlKeyEnabled"] = false,
-	["buttonsDisabled"] = true,
 	["dragShiftKeyEnabled"] = false,
-	["frameScaleIsLocked"] = false,
-	["objectivesDisabled"] = true,
+	["buttonsDisabled"] = true,
+	["arenaDisabled"] = true,
+	["bagsDisabled"] = true,
 	["minimapDisabled"] = true,
 }

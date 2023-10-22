@@ -1,17 +1,48 @@
 
 xKillCount = {
-	["show"] = false,
-	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
+	["show"] = true,
+	["killLog"] = {
+		["Razormane Dustrunner"] = {
+			["name"] = "Razormane Dustrunner",
+			["count"] = 13,
+		},
+		["Dire Mottled Boar"] = {
+			["name"] = "Dire Mottled Boar",
+			["count"] = 4,
+		},
+		["Durotar Tiger"] = {
+			["name"] = "Durotar Tiger",
+			["count"] = 7,
+		},
+		["Razormane Quilboar"] = {
+			["name"] = "Razormane Quilboar",
+			["count"] = 9,
+		},
+		["Razormane Battleguard"] = {
+			["name"] = "Razormane Battleguard",
+			["count"] = 9,
+		},
+		["Clattering Scorpid"] = {
+			["name"] = "Clattering Scorpid",
+			["count"] = 3,
+		},
+		["Razormane Scout"] = {
+			["name"] = "Razormane Scout",
+			["count"] = 5,
+		},
+		["Bloodtalon Taillasher"] = {
+			["name"] = "Bloodtalon Taillasher",
+			["count"] = 6,
+		},
 	},
 	["experience"] = {
-		["pulltotal"] = 47,
-		["totaltotal"] = 35862,
+		["totaltotal"] = 7941,
+		["pulltotal"] = 2188,
 	},
-	["killLog"] = {
+	["position"] = {
+		["y"] = -48.83323287963867,
+		["x"] = 4.99992561340332,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

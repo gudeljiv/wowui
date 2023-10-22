@@ -342,13 +342,6 @@ X: 16
 Y: -116
 W: 338
 H: 424
-Frame: TradeSkillFrame
-FrameLevel: 1
-Anchor: TOP
-X: -257
-Y: -103
-W: 714
-H: 560
 Frame: AuctionFrame
 FrameLevel: 1
 Anchor: TOPLEFT

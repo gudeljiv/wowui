@@ -56,5 +56,6 @@ SHIFT = 0x2A
 time.sleep(3)
 for i in range(500):
     time.sleep(2)
+    print("press X")
     press_interception_key(X)
     # cKeyPress("x")

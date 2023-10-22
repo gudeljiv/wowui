@@ -195,7 +195,7 @@ QuestReward: enabled
 RatingBuster: enabled
 SpellActivationOverlay: enabled
 StatLogic: enabled
-unitscan: enabled
+unitscan: disabled
 WowSimsExporter: enabled
 AddOnSkins: enabled
 DBM-BlackTemple: enabled

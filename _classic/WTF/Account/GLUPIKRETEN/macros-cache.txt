@@ -1,3 +1,6 @@
+VER 3 0000000000000012 " " "136173"
+/click BehindTarget
+END
 VER 3 0000000000000011 " " "136106"
 /inspect
 /run SortBags()
@@ -12,12 +15,9 @@ VER 3 0000000000000024 " " "134400"
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
-VER 3 0000000000000012 " " "136173"
-/click BehindTarget
-END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -35,11 +35,11 @@ END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
-VER 3 0000000000000026 "RXPTargeting" "132150"
-/targetexact Miner Hackett
-END
 VER 3 0000000000000022 "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets
+END
+VER 3 0000000000000026 "RXPTargeting" "132150"
+/targetexact Miner Hackett
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip

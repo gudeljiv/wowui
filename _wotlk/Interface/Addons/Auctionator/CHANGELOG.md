@@ -1,6 +1,7 @@
 # Auctionator
 
-## [10.1.30](https://github.com/Auctionator/Auctionator/tree/10.1.30) (2023-10-15)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.29...10.1.30) 
+## [10.1.32](https://github.com/Auctionator/Auctionator/tree/10.1.32) (2023-10-22)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.30...10.1.32) 
 
-- [Fix #1443] Bag/Groups: Fix using wrong part of modifiers for bag key  
+- [Fixes #1449] Mainline: Selling: Custom durations for a group not working  
+- Mainline: Selling: Bag/Groups: Fix duplication of some items and show df quality  

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9889,
+	["session"] = 9893,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua:124: Frame unitscan_button is not movable or resizable",

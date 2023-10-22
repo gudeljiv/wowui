@@ -1,14 +1,12 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[50] = {
-			[2971687299] = true,
-			[2746882435] = true,
+		[4] = {
 		},
 	},
-	["currentStep"] = 50,
+	["currentStep"] = 4,
 	["questObjectivesCache"] = {
-		[0] = 47,
+		[0] = 53,
 		[826] = {
 			{
 				["type"] = "monster",
@@ -84,6 +82,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[5726] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Lieutenant's Insignia: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[789] = {
 			{
 				["type"] = "item",
@@ -107,6 +114,24 @@ RXPCData = {
 				["type"] = "item",
 				["numRequired"] = 1,
 				["text"] = "Chief Sharptusk Thornmantle's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[827] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 6,
+				["text"] = "Searing Collar: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[816] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Kron's Amulet: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -261,6 +286,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
+		[813] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Venomtail Poison Sac: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[833] = {
 			{
 				["type"] = "monster",
@@ -269,6 +303,22 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+		},
+		[835] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 12,
+				["text"] = "Dustwind Savage slain: 0/12",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Dustwind Storm Witch slain: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[837] = {
 			{
@@ -309,6 +359,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[5761] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Taragaman the Hungerer's Heart: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[780] = {
 			{
 				["type"] = "item",
@@ -325,11 +384,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[834] = {
+		[6394] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Sack of Supplies: 0/5",
+				["numRequired"] = 1,
+				["text"] = "Thazz'ril's Pick: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -434,29 +493,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1498] = {
+		[757] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Singed Scale: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[806] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Fizzle's Claw: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[808] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Minshina's Skull: 0/1",
+				["numRequired"] = 12,
+				["text"] = "Bristleback Belt: 0/12",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -493,6 +534,24 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[806] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Fizzle's Claw: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[808] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Minshina's Skull: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[747] = {
 			{
 				["type"] = "item",
@@ -509,15 +568,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[761] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Trophy Swoop Quill: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[744] = {
 			{
 				["type"] = "item",
@@ -533,6 +583,15 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+		},
+		[761] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Trophy Swoop Quill: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 		[753] = {
 			{
@@ -559,11 +618,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[757] = {
+		[1498] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 12,
-				["text"] = "Bristleback Belt: 0/12",
+				["numRequired"] = 5,
+				["text"] = "Singed Scale: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -577,11 +636,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6394] = {
+		[834] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thazz'ril's Pick: 0/1",
+				["numRequired"] = 5,
+				["text"] = "Sack of Supplies: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -591,82 +650,83 @@ RXPCData = {
 	["flightPaths"] = {
 	},
 	["questNameCache"] = {
-		[761] = "Swoop Hunting",
-		[763] = "Rites of the Earthmother",
-		[765] = "Supervisor Fizsprocket",
+		[837] = "Encroachment",
+		[861] = "The Hunter's Way",
+		[750] = "The Hunt Continues",
+		[758] = "Thunderhorn Cleansing",
+		[766] = "Mazzranache",
+		[790] = "Sarkoth",
+		[806] = "Dark Storms",
+		[830] = "The Admiral's Orders",
+		[4641] = "Your Place In The World",
+		[870] = "The Forgotten Pools",
+		[759] = "Wildmane Totem",
 		[767] = "Rite of Vision",
+		[791] = "Carry Your Weight",
+		[815] = "Break a Few Eggs",
+		[823] = "Report to Orgnil",
+		[831] = "The Admiral's Orders",
+		[744] = "Preparation for Ceremony",
+		[752] = "A Humble Task",
+		[760] = "Wildmane Cleansing",
+		[776] = "Rites of the Earthmother",
+		[784] = "Vanquish the Betrayers",
+		[792] = "Vile Familiars",
+		[808] = "Minshina's Skull",
+		[816] = "Lost But Not Forgotten",
+		[1656] = "A Task Unfinished",
+		[840] = "Conscript of the Horde",
+		[848] = "Fungal Spores",
+		[745] = "Sharing the Land",
+		[1498] = "Path of Defense",
+		[761] = "Swoop Hunting",
+		[817] = "Practical Prey",
+		[825] = "From The Wreckage....",
+		[833] = "A Sacred Burial",
+		[746] = "Dwarven Digging",
+		[754] = "Winterhoof Cleansing",
+		[786] = "Thwarting Kolkar Aggression",
+		[794] = "Burning Blade Medallion",
+		[818] = "A Solvent Spirit",
+		[826] = "Zalazane",
+		[834] = "Winds in the Desert",
+		[842] = "Crossroads Conscription",
+		[747] = "The Hunt Begins",
+		[755] = "Rites of the Earthmother",
+		[763] = "Rites of the Earthmother",
 		[771] = "Rite of Vision",
-		[3091] = "Simple Note",
+		[827] = "Skull Rock",
+		[835] = "Securing the Lines",
+		[6394] = "Thazz'ril's Pick",
+		[748] = "Poison Water",
+		[756] = "Thunderhorn Totem",
+		[764] = "The Venture Co.",
+		[780] = "The Battleboars",
+		[788] = "Cutting Teeth",
+		[804] = "Sarkoth",
+		[812] = "Need for a Cure",
+		[1505] = "Veteran Uzzek",
+		[828] = "Margoz",
+		[753] = "A Humble Task",
+		[3376] = "Break Sharptusk!",
+		[5726] = "Hidden Enemies",
 		[5441] = "Lazy Peons",
+		[3091] = "Simple Note",
+		[757] = "Rite of Strength",
+		[765] = "Supervisor Fizsprocket",
 		[4402] = "Galgar's Cactus Apple Surprise",
 		[781] = "Attack on Camp Narache",
-		[834] = "Winds in the Desert",
-		[848] = "Fungal Spores",
-		[2383] = "Simple Parchment",
 		[789] = "Sting of the Scorpid",
-		[791] = "Carry Your Weight",
-		[1498] = "Path of Defense",
-		[818] = "A Solvent Spirit",
-		[3376] = "Break Sharptusk!",
-		[815] = "Break a Few Eggs",
-		[4641] = "Your Place In The World",
-		[2161] = "A Peon's Burden",
+		[2383] = "Simple Parchment",
 		[805] = "Report to Sen'jin Village",
-		[744] = "Preparation for Ceremony",
-		[746] = "Dwarven Digging",
-		[748] = "Poison Water",
-		[750] = "The Hunt Continues",
-		[752] = "A Humble Task",
-		[754] = "Winterhoof Cleansing",
-		[756] = "Thunderhorn Totem",
-		[758] = "Thunderhorn Cleansing",
-		[760] = "Wildmane Cleansing",
-		[825] = "From The Wreckage....",
-		[764] = "The Venture Co.",
-		[766] = "Mazzranache",
-		[831] = "The Admiral's Orders",
-		[833] = "A Sacred Burial",
-		[1656] = "A Task Unfinished",
-		[837] = "Encroachment",
-		[776] = "Rites of the Earthmother",
-		[870] = "The Forgotten Pools",
-		[780] = "The Battleboars",
-		[808] = "Minshina's Skull",
-		[784] = "Vanquish the Betrayers",
-		[786] = "Thwarting Kolkar Aggression",
-		[788] = "Cutting Teeth",
-		[790] = "Sarkoth",
-		[792] = "Vile Familiars",
-		[794] = "Burning Blade Medallion",
-		[806] = "Dark Storms",
-		[861] = "The Hunter's Way",
-		[826] = "Zalazane",
-		[6394] = "Thazz'ril's Pick",
-		[804] = "Sarkoth",
+		[813] = "Finding the Antidote",
 		[743] = "Dangers of the Windfury",
-		[745] = "Sharing the Land",
-		[747] = "The Hunt Begins",
-		[817] = "Practical Prey",
-		[823] = "Report to Orgnil",
-		[753] = "A Humble Task",
-		[755] = "Rites of the Earthmother",
-		[757] = "Rite of Strength",
-		[759] = "Wildmane Totem",
-		[830] = "The Admiral's Orders",
+		[2161] = "A Peon's Burden",
 	},
-	["currentGuideName"] = "06-10 Durotar",
+	["currentGuideName"] = "10-12 Durotar",
 	["stepSkip"] = {
-		[46] = true,
-		[25] = true,
-		[7] = true,
-		[14] = true,
-		[18] = true,
-		[10] = true,
-		[40] = true,
-		[42] = true,
-		[44] = true,
 	},
-	["currentStepId"] = 3095399572,
+	["currentStepId"] = 3250785043,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -711,15 +771,25 @@ RXPCComms = {
 				},
 			},
 			["players"] = {
+				["Slipperyhot"] = {
+					["timePlayed"] = 21.25299999999697,
+					["class"] = "ROGUE",
+					["xp"] = 50,
+				},
+				["Splifeur"] = {
+					["timePlayed"] = 43.79199999999992,
+					["class"] = "DRUID",
+					["xp"] = 3,
+				},
 				["Шаравель"] = {
 					["timePlayed"] = 158.1110000000044,
 					["class"] = "WARRIOR",
 					["xp"] = 32,
 				},
-				["Slipperyhot"] = {
-					["timePlayed"] = 21.25299999999697,
-					["class"] = "ROGUE",
-					["xp"] = 50,
+				["Betaben"] = {
+					["timePlayed"] = 43.79199999999992,
+					["class"] = "MAGE",
+					["xp"] = 3,
 				},
 			},
 		},
