@@ -22,7 +22,7 @@ cc_combat:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+cc_combat:SetBackdropColor(0, 0, 0, 0.6)
 cc_combat:Show()
 cc_combat:SetFrameStrata('BACKGROUND')
 cc_combat:CreateBeautyBorder(6)
@@ -122,7 +122,7 @@ cc1:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc1:SetBackdropColor(0, 0, 0, 0.4)
+cc1:SetBackdropColor(0, 0, 0, 0.6)
 cc1:Show()
 cc1:SetFrameStrata('BACKGROUND')
 cc1:CreateBeautyBorder(8)
@@ -149,7 +149,7 @@ cc2:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-cc2:SetBackdropColor(0, 0, 0, 0.4)
+cc2:SetBackdropColor(0, 0, 0, 0.6)
 cc2:Show()
 cc2:SetFrameStrata('BACKGROUND')
 cc2:CreateBeautyBorder(8)

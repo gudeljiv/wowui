@@ -29,7 +29,7 @@ xVermin.CheckIfLoadedWithTimer(
 
 		local function Update_Questie_BaseFrame()
 			
-			Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.4)
+			Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.6)
 			
 			if InCombatLockdown() then
 				return
