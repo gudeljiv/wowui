@@ -4,6 +4,8 @@ local AnchorManager = namespace.AnchorManager
 local PoolManager = namespace.PoolManager
 local activeFrames = addon.activeFrames
 
+local GetSchoolString = _G.GetSchoolString
+local strformat = _G.string.format
 local unpack = _G.unpack
 local min = _G.math.min
 local max = _G.math.max
@@ -72,9 +74,9 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
             castbar:SetPoint("CENTER", parentFrame, -18, -75)
         else
             if castbar.BorderShield:IsShown() then
-                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -43 * auraRows), -150))
+                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -45 * auraRows), -150))
             else
-                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -39 * auraRows), -150))
+                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -41 * auraRows), -150))
             end
         end
     end
@@ -111,9 +113,9 @@ function addon:SetBorderShieldStyle(castbar, cast, db, unitID)
         end
 
         -- Update border shield to match current castbar size
-        local width, height = ceil(castbar:GetWidth() * db.borderPaddingWidth + 0.3), ceil(castbar:GetHeight() * db.borderPaddingHeight + 0.3)
+        local width, height = castbar:GetWidth() * db.borderPaddingWidth + 0.3, castbar:GetHeight() * db.borderPaddingHeight + 0.3
         castbar.BorderShield:ClearAllPoints()
-        castbar.BorderShield:SetPoint("TOPLEFT", width-10, height+1)
+        castbar.BorderShield:SetPoint("TOPLEFT", width-5, height+1) -- texture offsets, just doing "1" and "-1" doesnt work here
         castbar.BorderShield:SetPoint("BOTTOMRIGHT", -width+(width*0.15), -height + 4)
 
         if not castbar.IconShield then
@@ -158,7 +160,7 @@ function addon:SetCastbarStyle(castbar, cast, db, unitID)
     castbar:SetFrameStrata(db.frameStrata)
     castbar:SetFrameLevel(db.frameLevel)
     castbar.Text:SetWidth(db.width - 10) -- ensures text gets truncated
-    castbar.currWidth = db.width -- avoids having to use a function call later on
+    castbar.currWidth = db.width -- avoids having to use a function call later on in OnUpdate
     castbar:SetIgnoreParentAlpha(db.ignoreParentAlpha)
 
     castbar.Border:SetDrawLayer("ARTWORK", 1)
@@ -208,7 +210,7 @@ function addon:SetCastbarStyle(castbar, cast, db, unitID)
             castbar.Border:SetPoint("BOTTOMRIGHT", 1, -1)
         else]]
             -- Update border to match castbar size
-            local width, height = ceil(castbar:GetWidth() * db.borderPaddingWidth), ceil(castbar:GetHeight() * db.borderPaddingHeight)
+            local width, height = castbar:GetWidth() * db.borderPaddingWidth, castbar:GetHeight() * db.borderPaddingHeight
             castbar.Border:ClearAllPoints()
             castbar.Border:SetPoint("TOPLEFT", width, height)
             castbar.Border:SetPoint("BOTTOMRIGHT", -width, -height)
@@ -365,7 +367,11 @@ function addon:HideCastbar(castbar, unitID, skipFadeOut)
     local cast = castbar._data
     if cast then
         if cast.isInterrupted or cast.isFailed then
-            castbar.Text:SetText(cast.isInterrupted and _G.INTERRUPTED or _G.FAILED)
+            if cast.isInterrupted and cast.interruptedSchool and self.db[self:GetUnitType(unitID)].showInterruptSchool then
+                castbar.Text:SetText(strformat(_G.LOSS_OF_CONTROL_DISPLAY_INTERRUPT_SCHOOL, GetSchoolString(cast.interruptedSchool) or ""))
+            else
+                castbar.Text:SetText(cast.isInterrupted and _G.INTERRUPTED or _G.FAILED)
+            end
             castbar:SetStatusBarColor(unpack(self.db[self:GetUnitType(unitID)].statusColorFailed))
             castbar:SetMinMaxValues(0, 1)
             castbar:SetValue(1)
@@ -402,7 +408,7 @@ function addon:HideCastbar(castbar, unitID, skipFadeOut)
     end
 
     if castbar.fade then
-        if not castbar.fade:IsPlaying() then
+        if not castbar.animationGroup:IsPlaying() then
             castbar.fade:SetStartDelay(0) -- reset
             if cast then
                 if cast.isInterrupted or cast.isFailed then
@@ -411,7 +417,7 @@ function addon:HideCastbar(castbar, unitID, skipFadeOut)
             end
 
             if isClassicEra then
-                castbar.fade:SetDuration(cast and cast.isInterrupted and 1.2 or 0.3)
+                castbar.fade:SetDuration(cast and cast.isInterrupted and 1 or 0.3)
             else
                 castbar.fade:SetDuration(0.6)
             end

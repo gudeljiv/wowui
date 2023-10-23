@@ -4,7 +4,7 @@ DriftPoints = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOPLEFT",
 		["relativePoint"] = "TOPLEFT",
-		["yOfs"] = -115.6586532592773,
+		["yOfs"] = -105.0766906738281,
 		["xOfs"] = -0,
 	},
 	["AuctionFrame"] = {
@@ -16,10 +16,10 @@ DriftPoints = {
 	},
 	["SettingsPanel"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "CENTER",
-		["relativePoint"] = "CENTER",
-		["yOfs"] = 81.2694091796875,
-		["xOfs"] = -239.3652801513672,
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -102.762451171875,
+		["xOfs"] = 102.2223663330078,
 	},
 	["CharacterFrame"] = {
 		["relativeTo"] = "UIParent",
@@ -42,13 +42,6 @@ DriftPoints = {
 		["yOfs"] = -130.4550323486328,
 		["xOfs"] = 254.4337463378906,
 	},
-	["SideDressUpFrame"] = {
-		["relativeTo"] = "UIParent",
-		["point"] = "TOP",
-		["relativePoint"] = "TOP",
-		["yOfs"] = -139.4075622558594,
-		["xOfs"] = -16.33853149414063,
-	},
 	["GossipFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOP",
@@ -63,24 +56,33 @@ DriftPoints = {
 		["yOfs"] = 99.68265533447266,
 		["xOfs"] = 479.9994812011719,
 	},
+	["SideDressUpFrame"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "TOP",
+		["relativePoint"] = "TOP",
+		["yOfs"] = -139.4075622558594,
+		["xOfs"] = -16.33853149414063,
+	},
 }
 DriftScales = {
+	["GameMenuFrame"] = 1.200000047683716,
+	["CharacterFrame"] = 1.200000047683716,
 }
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["scaleCtrlKeyEnabled"] = false,
+	["bagsDisabled"] = true,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
-	["scaleShiftKeyEnabled"] = false,
-	["windowsDisabled"] = false,
 	["objectivesDisabled"] = true,
+	["windowsDisabled"] = false,
+	["scaleShiftKeyEnabled"] = false,
 	["frameScaleIsLocked"] = false,
-	["miscellaneousDisabled"] = true,
+	["arenaDisabled"] = true,
 	["dragCtrlKeyEnabled"] = false,
 	["dragShiftKeyEnabled"] = false,
 	["buttonsDisabled"] = true,
-	["arenaDisabled"] = true,
-	["bagsDisabled"] = true,
+	["miscellaneousDisabled"] = true,
+	["scaleCtrlKeyEnabled"] = false,
 	["minimapDisabled"] = true,
 }

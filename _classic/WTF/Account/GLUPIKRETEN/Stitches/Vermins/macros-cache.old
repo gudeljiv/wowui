@@ -87,3 +87,9 @@ VER 3 000000000100000F " " "INV_Misc_QuestionMark"
 /cast [nostance:1] Battle Stance;
 /cast Overpower
 END
+VER 3 0000000001000010 " " "134400"
+#showtooltip Revenge
+/startattack
+/cast [nostance:2] Defensive Stance;
+/cast Revenge
+END

@@ -3,7 +3,7 @@ local _, namespace = ...
 local CLIENT_IS_CLASSIC_ERA = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 
 namespace.defaultConfig = {
-    version = "36",
+    version = "37",
     locale = GetLocale(),
     npcCastUninterruptibleCache = {},
     npcCastTimeCache = {},
@@ -11,6 +11,7 @@ namespace.defaultConfig = {
 
     nameplate = {
         enabled = true,
+        showInterruptSchool = true,
         showForFriendly = true,
         showForEnemy = true,
         width = 106,
@@ -53,6 +54,7 @@ namespace.defaultConfig = {
         width = 150,
         height = 15,
         iconSize = 18,
+        showInterruptSchool = true,
         showBorderShield = true,
         showTimer = false,
         showIcon = true,
@@ -90,6 +92,7 @@ namespace.defaultConfig = {
         width = 150,
         height = 15,
         iconSize = 18,
+        showInterruptSchool = true,
         showBorderShield = true,
         showTimer = false,
         showIcon = true,
@@ -127,6 +130,7 @@ namespace.defaultConfig = {
         width = 120,
         height = 12,
         iconSize = 18,
+        showInterruptSchool = true,
         showTimer = false,
         showBorderShield = true,
         showIcon = true,
@@ -164,6 +168,7 @@ namespace.defaultConfig = {
         width = 150,
         height = 15,
         iconSize = 18,
+        showInterruptSchool = true,
         showBorderShield = true,
         showTimer = false,
         showIcon = true,
@@ -201,6 +206,7 @@ namespace.defaultConfig = {
         width = 190,
         height = 20,
         iconSize = 22,
+        showInterruptSchool = false,
         showBorderShield = false,
         showTimer = false,
         showTotalTimer = false,
@@ -340,12 +346,7 @@ if CLIENT_IS_CLASSIC_ERA then
         ["16452" .. GetSpellInfo(11829)] = true, -- Necro Knight Guardian Flamestrike
         ["16165" .. GetSpellInfo(1467)] = true, -- Necro Knight Arcane Explosion
         ["16165" .. GetSpellInfo(11829)] = true, -- Necro Knight Flamestrike
-        ["8607" .. GetSpellInfo(7279)] = true, -- Rotting Sludge Black Sludge
-        ["8212" .. GetSpellInfo(7279)] = true, -- The Reak Black Sludge
-        ["3295" .. GetSpellInfo(7279)] = true, -- Sludge Beast Black Sludge
-        ["6518" .. GetSpellInfo(7279)] = true, -- Tar Lurker Black Sludge
-        ["785" .. GetSpellInfo(4979)] = true, -- Skeletal Warder Quick Flame Ward
-        ["785" .. GetSpellInfo(4980)] = true, -- Skeletal Warder Quick Frost Ward
+        ["11560" .. GetSpellInfo(18159)] = true, -- Magrami Spectre Curse of the Fallen Magic
     }
 
     -- Storage for auto-corrected cast times

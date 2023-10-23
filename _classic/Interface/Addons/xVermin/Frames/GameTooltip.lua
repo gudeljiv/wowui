@@ -170,6 +170,8 @@ end
 local function HandleUnit(self, ...)
 	local _, unit = self:GetUnit()
 
+	-- print(self:GetUnit())
+
 	if UnitExists(unit) and UnitName(unit) ~= UNKNOWN then
 		local specIcon = ''
 

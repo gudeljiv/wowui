@@ -1197,10 +1197,13 @@ if CLIENT_IS_CLASSIC_ERA then
 
     local castSpellIDsLen = #castSpellIDs
     local counter, cursor = 0, 1
-    local castedSpells = {}
-    namespace.castedSpells = castedSpells
+    namespace.castedSpells = {}
 
+    -- Build the spell database in increments. ({[Localized spell name] = spellID})
+    -- SpellID payload is gone from the classic era combat log, so we need to track the spellname instead.
+    -- (The spellID is still needed for GetSpellInfo calls later on)
     local function BuildSpellNameToSpellIDTable()
+        local castedSpells = namespace.castedSpells
         counter = 0
 
         for i = cursor, castSpellIDsLen do
@@ -1322,8 +1325,9 @@ if CLIENT_IS_CLASSIC_ERA then
     -- Store both spellID and spell name in this table since UnitAura returns spellIDs but combat log doesn't.
     C_Timer.After(10, function()
         for spellID, slowPercentage in pairs(namespace.castTimeIncreases) do
-            if GetSpellInfo(spellID) then
-                namespace.castTimeIncreases[GetSpellInfo(spellID)] = slowPercentage
+            local name = GetSpellInfo(spellID)
+            if name then
+                namespace.castTimeIncreases[name] = slowPercentage
             end
         end
     end)
@@ -1442,6 +1446,7 @@ if CLIENT_IS_CLASSIC_ERA then
         21330,      -- Corrupted Fear (Deathmist Raiment set)
 
         -- NPCS
+        16803,      -- Flash Freeze
         3242,       -- Ravage
         3271,       -- Fatigued
         5708,       -- Swoop
@@ -1550,6 +1555,7 @@ if CLIENT_IS_CLASSIC_ERA then
         16838,      -- Banshee Shriek
     }
 
+    -- Wait 10s after login before building CC table
     C_Timer.After(10, function()
         for i = 1, #crowdControls do
             local name = GetSpellInfo(crowdControls[i])
@@ -1575,6 +1581,8 @@ if CLIENT_IS_CLASSIC_ERA then
         [GetSpellInfo(635)] = 1,        -- Holy Light
         -- Druid heals are afaik many times not talented so ignoring them for now
 
+        [GetSpellInfo(10562)] = 1,      -- Hi-Explosive Bomb
+        [GetSpellInfo(4069)] = 1,       -- Big Iron Bomb TODO: guessing every single bomb/dynamite should be added here, but needs double checking
         [GetSpellInfo(4068)] = 1,       -- Iron Grenade
         [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
         [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray
@@ -1612,6 +1620,7 @@ if CLIENT_IS_CLASSIC_ERA then
     }
 
     -- Casts that can't be slowed or speed up
+    -- Key is the spellID from UnitAura()
     namespace.unaffectedCastModsSpells = {
         -- Player Spells
         [11605] = 1, -- Slam
@@ -1864,7 +1873,7 @@ if CLIENT_PRE_WOTLK then
         end
     end
 
-    -- Player spells that can't be interrupted
+    -- Spells that can't be interrupted
     namespace.uninterruptibleList = {
         [GetSpellInfo(4068)] = 1,       -- Iron Grenade
         [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
@@ -1877,6 +1886,13 @@ if CLIENT_PRE_WOTLK then
         [GetSpellInfo(4067)] = 1,       -- Big Bronze Bomb
         [GetSpellInfo(4066)] = 1,       -- Small Bronze Bomb
         [GetSpellInfo(4065)] = 1,       -- Large Copper Bomb
+        [GetSpellInfo(4061)] = 1,       -- Coarse Dynamite
+        [GetSpellInfo(4054)] = 1,       -- Rough Dynamite
+        [GetSpellInfo(8331)] = 1,       -- EZ-Thro Dynamite
+        [GetSpellInfo(23000)] = 1,      -- EZ-Thro Dynamite II
+        [GetSpellInfo(4062)] = 1,       -- Heavy Dynamite
+        [GetSpellInfo(23063)] = 1,      -- Dense Dynamite
+        [GetSpellInfo(12419)] = 1,      -- Solid Dynamite
         [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray TODO: verify
         [GetSpellInfo(23041)] = 1,      -- Call Anathema
         [GetSpellInfo(20589)] = 1,      -- Escape Artist
@@ -1907,16 +1923,27 @@ if CLIENT_PRE_WOTLK then
         [GetSpellInfo(13228)] = 1,      -- Wound Poison II
         [GetSpellInfo(13229)] = 1,      -- Wound Poison III
         [GetSpellInfo(13230)] = 1,      -- Wound Poison IV
+        [GetSpellInfo(10436)] = 1,      -- Attack (Totems)
 
         -- these are technically uninterruptible but breaks on dmg
         [GetSpellInfo(22999)] = 1,      -- Defibrillate
         [GetSpellInfo(746)] = 1,        -- First Aid
         [GetSpellInfo(20577)] = 1,      -- Cannibalize
 
-        -- NPC spells that doesn't need to be tied to npcIDs
+        -- NPC spells that doesn't need to be tied to npcIDs (see npcCastUninterruptibleCache)
         [GetSpellInfo(2764)] = 1, -- Throw
         [GetSpellInfo(8995)] = 1, -- Shoot
         [GetSpellInfo(6925)] = 1, -- Gift of the Xavian
+        [GetSpellInfo(4979)] = 1, -- Quick Flame Ward
+        [GetSpellInfo(4980)] = 1, -- Quick Frost Ward
+        [GetSpellInfo(8800)] = 1, -- Dynamite
+        [GetSpellInfo(8858)] = 1, -- Bomb
+        [GetSpellInfo(9483)] = 1, -- Boulder
+        [GetSpellInfo(5106)] = 1, -- Crystal Flash
+        [GetSpellInfo(7279)] = 1, -- Black Sludge
+        [GetSpellInfo(14146)] = 1, -- Clone
+        [GetSpellInfo(13692)] = 1, -- Dire Growl
+        [GetSpellInfo(9612)] = 1, -- Ink Spray
     }
 
     if CLIENT_IS_TBC then

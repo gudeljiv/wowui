@@ -56,7 +56,7 @@ VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip Thunder Clap
-/cast [nostance:1,nocombat] Battle Stance;
+/cast [nostance:1] Battle Stance;
 /cast Thunder Clap
 END
 VER 3 000000000100000B " " "INV_Misc_QuestionMark"
@@ -86,4 +86,10 @@ VER 3 000000000100000F " " "INV_Misc_QuestionMark"
 /startattack
 /cast [nostance:1] Battle Stance;
 /cast Overpower
+END
+VER 3 0000000001000010 " " "134400"
+#showtooltip Revenge
+/startattack
+/cast [nostance:2] Defensive Stance;
+/cast Revenge
 END

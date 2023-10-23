@@ -4,8 +4,8 @@ local _, namespace = ...
 local PoolManager = namespace.PoolManager
 
 local activeGUIDs = {} -- unitID to unitGUID mappings
-local activeTimers = {} -- active cast data
-local activeFrames = {} -- visible castbar frames
+local activeTimers = {} -- unitGUID to cast data mappings
+local activeFrames = {} -- unitID to cached castbar frame mappings
 local npcCastTimeCacheStart = {}
 
 local addon = CreateFrame("Frame", "ClassicCastbars")
@@ -212,7 +212,16 @@ function addon:StoreCast(unitGUID, spellName, spellID, iconTexturePath, castTime
         end
     end
 
+    -- Quick hack for Darkmist Spider's Deadly Poison
+    if cast.isUninterruptible and spellID == 2835 and not isPlayer then
+        local _, _, _, _, _, npcID = strsplit("-", unitGUID)
+        if npcID == "4376" or npcID == "4378" then
+            cast.isUninterruptible = false
+        end
+    end
+
     -- just nil previous values to avoid overhead of wiping() table
+    cast.interruptedSchool = nil
     cast.origIsUninterruptibleValue = nil
     cast.hasCastSlowModified = nil
     cast.hasPushbackImmuneModifier = nil
@@ -295,7 +304,7 @@ local function GetSpellCastInfo(spellID)
 
     if not unaffectedCastModsSpells[spellID] then
         local _, _, _, hCastTime = GetSpellInfo(8690) -- Hearthstone, normal cast time 10s
-        if hCastTime and hCastTime ~= 10000 and hCastTime ~= 0 then -- If current HS cast time is not 10s it means the player has a casting speed modifier debuff applied on himself.
+        if hCastTime and hCastTime ~= 10000 and hCastTime ~= 0 then -- If current HS cast time is not 10s it means the player has a casting speed modifier aura applied on himself.
             -- Since the return values by GetSpellInfo() are affected by the modifier, we need to remove so it doesn't give modified casttimes for other peoples casts.
             return floor(castTime * 10000 / hCastTime), icon
         end
@@ -379,9 +388,11 @@ function addon:PLAYER_LOGIN()
         self.db = CopyDefaults(namespace.defaultConfig, ClassicCastbarsDB)
     end
 
-    if self.db.version and tonumber(self.db.version) < 35 then
+    if self.db.version and tonumber(self.db.version) < 36 then
         -- Reset npcCastTimeCache when updating from old version as structure changed
         self.db.npcCastTimeCache = CopyTable(namespace.defaultConfig.npcCastTimeCache)
+        --self.db.npcCastUninterruptibleCache = CopyTable(namespace.defaultConfig.npcCastUninterruptibleCache)
+        print("ClassicCastbars: " .. _G.BROWSER_CACHE_CLEARED or "") -- luacheck: ignore
     end
     self.db.version = namespace.defaultConfig.version
 
@@ -463,7 +474,7 @@ function addon:NAME_PLATE_UNIT_ADDED(namePlateUnitToken)
     local unitGUID = UnitGUID(namePlateUnitToken)
     activeGUIDs[namePlateUnitToken] = unitGUID
 
-    self:StopCast(namePlateUnitToken, true) -- sanity check
+    self:StopCast(namePlateUnitToken, true)
     self:StartCast(unitGUID, namePlateUnitToken)
 end
 
@@ -512,7 +523,7 @@ local ARCANE_MISSILES = GetSpellInfo(5143)
 local ARCANE_MISSILE = GetSpellInfo(7268)
 
 function addon:COMBAT_LOG_EVENT_UNFILTERED()
-    local _, eventType, _, srcGUID, _, srcFlags, _, dstGUID, _, dstFlags, _, _, spellName, _, missType = CombatLogGetCurrentEventInfo()
+    local _, eventType, _, srcGUID, _, srcFlags, _, dstGUID, _, dstFlags, _, _, spellName, _, missType, _, extraSchool = CombatLogGetCurrentEventInfo()
 
     if eventType == "SPELL_CAST_START" then
         local spellID = castedSpells[spellName]
@@ -532,15 +543,17 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
                     castTime = reducedTime
                 end
             else
-                local _, _, _, _, _, npcID = strsplit("-", srcGUID)
-                local cachedTime = npcID and self.db.npcCastTimeCache[npcID .. spellName]
-                if cachedTime then
-                    -- Use cached time stored from earlier sightings for NPCs.
-                    -- This is because mobs have various cast times, e.g a lvl 20 mob casting Frostbolt might have
-                    -- 3.5 cast time but another lvl 40 mob might have 2.5 cast time instead for Frostbolt.
-                    castTime = cachedTime
-                else
-                    npcCastTimeCacheStart[srcGUID] = GetTime()
+                local unitType, _, _, _, _, npcID = strsplit("-", srcGUID)
+                if npcID and (unitType == "Creature" or unitType == "Pet") then
+                    local cachedTime = self.db.npcCastTimeCache[npcID .. spellName]
+                    if cachedTime then
+                        -- Use cached time stored from earlier sightings for NPCs.
+                        -- This is because mobs have various cast times, e.g a lvl 20 mob casting Frostbolt might have
+                        -- 3.5 cast time but another lvl 40 mob might have 2.5 cast time instead for Frostbolt.
+                        castTime = cachedTime
+                    else
+                        npcCastTimeCacheStart[srcGUID] = GetTime()
+                    end
                 end
             end
         else -- player/self
@@ -550,6 +563,7 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
             end
         end
 
+        -- Start the non-channeled cast
         return self:StoreCast(srcGUID, spellName, spellID, icon, castTime, isSrcPlayer)
     elseif eventType == "SPELL_CAST_SUCCESS" then
         local channelCast = channeledSpells[spellName]
@@ -561,7 +575,7 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
                 return self:StopAllCasts(srcGUID)
             end
 
-            return -- spell not found in our cast database
+            return -- spell was not a cast nor channel
         end
 
         local isSrcPlayer = bit_band(srcFlags, COMBATLOG_OBJECT_CONTROL_PLAYER) > 0
@@ -569,11 +583,13 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
         -- Auto correct cast times for mobs (only non-channels)
         if not isSrcPlayer and not channelCast then
             local unitType, _, _, _, _, srcNpcID = strsplit("-", srcGUID)
-            if srcNpcID and unitType ~= "Player" then
+            if srcNpcID and (unitType == "Creature" or unitType == "Pet") then
                 local cachedTime = self.db.npcCastTimeCache[srcNpcID .. spellName]
                 if not cachedTime then
                     local cast = activeTimers[srcGUID]
                     if not cast or (cast and not cast.hasCastSlowModified and not next(cast.activeModifiers)) then
+                        -- TODO: if the cast speed is modified we can prob just subtract it instead of skipping cast
+                        -- TODO: since we're no longer using npc names, we should switch to the 'fake' spellID aswell so localization check is not needed
                         local restoredStartTime = npcCastTimeCacheStart[srcGUID]
                         if restoredStartTime then
                             local castTime = (GetTime() - restoredStartTime) * 1000
@@ -591,7 +607,7 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
             end
         end
 
-        -- Channeled spells are started on SPELL_CAST_SUCCESS instead of stopped.
+        -- Channeled spells are started on SPELL_CAST_SUCCESS, and generally stops on SPELL_AURA_REMOVED instead.
         -- Also there's no castTime returned from GetSpellInfo for channeled spells so we need to get it from our own list
         if channelCast then
             if spellName == ARCANE_MISSILES or spellName == ARCANE_MISSILE then
@@ -600,12 +616,13 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
                 if cast and (cast.spellName == ARCANE_MISSILES or cast.spellName == ARCANE_MISSILE) then return end
             end
 
+            -- Channeled spell, add it
             return self:StoreCast(srcGUID, spellName, spellID, GetSpellTexture(spellID), channelCast, isSrcPlayer, true)
-        else
-            -- non-channeled spell, finish it.
-            -- We also check the expiration timer in OnUpdate script just incase this event doesn't trigger when i.e unit is no longer in range.
-            return self:DeleteCast(srcGUID, nil, nil, true)
         end
+
+        -- Non-channeled spell, finish it.
+        -- We also check the expiration timer in OnUpdate script just incase this event doesn't trigger when i.e unit is no longer in range.
+        return self:DeleteCast(srcGUID, nil, nil, true)
     elseif eventType == "SPELL_AURA_APPLIED" then
         local cast = activeTimers[dstGUID]
         if not cast then return end
@@ -615,7 +632,7 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
             cast.isFailed = true
             return self:DeleteCast(dstGUID)
         elseif castTimeIncreases[spellName] then
-            -- cast modifiers doesnt modify already active casts, only the next time the player casts.
+            -- Cast modifiers doesnt modify already active casts, only the next time the player casts.
             -- So we force set this to true here to prevent modifying current cast later on
             cast.hasCastSlowModified = true
         elseif castImmunityBuffs[spellName] and not cast.isUninterruptible then
@@ -650,7 +667,15 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
         -- channels shows finish anim on cast failed
         cast.isFailed = not cast.isChanneled and true or false
         return self:DeleteCast(srcGUID, nil, nil, cast.isChanneled)
-    elseif eventType == "PARTY_KILL" or eventType == "UNIT_DIED" or eventType == "SPELL_INTERRUPT" then
+    elseif eventType == "SPELL_INTERRUPT" or eventType == "UNIT_DIED" or eventType == "UNIT_DESTROYED" or eventType == "UNIT_DISSIPATES" then
+        if eventType == "SPELL_INTERRUPT" then
+            local cast = activeTimers[dstGUID]
+            if cast then
+                --cast.isInterrupted = true
+                cast.interruptedSchool = extraSchool or nil
+            end
+        end
+
         return self:DeleteCast(dstGUID, eventType == "SPELL_INTERRUPT")
     elseif eventType == "SWING_DAMAGE" or eventType == "ENVIRONMENTAL_DAMAGE" or eventType == "RANGE_DAMAGE" or eventType == "SPELL_DAMAGE" then
         if bit_band(dstFlags, COMBATLOG_OBJECT_TYPE_PLAYER) > 0 then -- is player, and not pet
@@ -665,8 +690,8 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
             return self:CastPushback(dstGUID)
         end
     elseif eventType == "SPELL_MISSED" then
-        -- TODO: proper magical vs physical interrupts
         -- Auto learn if a spell is uninterruptible for NPCs by checking if an interrupt was immuned
+        -- FIXME: as of patch 14.4.4 this seems to no longer work, atleast not with basic Counterspell on low lvl mobs
         if missType == "IMMUNE" and playerInterrupts[spellName] then
             local cast = activeTimers[dstGUID]
             if not cast then return end
@@ -704,11 +729,11 @@ addon:SetScript("OnUpdate", function(self, elapsed)
     if not next(activeTimers) then return end
     local currTime = GetTime()
 
-    -- Check if unit is moving to stop castbar, thanks to Cordankos for this idea
+    -- Check if an unit is moving so we can stop the castbar, thanks to Cordankos for this idea.
     refresh = refresh - elapsed
     if refresh < 0 then
         for unitID, castbar in next, activeFrames do
-            if unitID ~= "focus" then
+            if unitID ~= "focus" then -- ignoure our fake custom focus castbar
                 local cast = castbar._data
                 -- Only stop cast for players since some mobs runs while casting, also because
                 -- of lag we have to only stop it if the cast has been active for atleast 0.15 sec
@@ -727,10 +752,10 @@ addon:SetScript("OnUpdate", function(self, elapsed)
                 end
             end
         end
-        refresh = 0.1
+        refresh = 0.1 -- Run every 0.1s instead of every rendered frame
     end
 
-    -- Update all shown castbars in a single OnUpdate call
+    -- Update the display for all active castbars
     for unit, castbar in next, activeFrames do
         local cast = castbar._data
         if cast then
@@ -759,7 +784,7 @@ addon:SetScript("OnUpdate", function(self, elapsed)
                     end
 
                     -- Delete cast incase stop event wasn't detected in CLEU
-                    if castTime < -0.16 then
+                    if castTime <= -0.17 then
                         if not cast.isChanneled then
                             cast.isFailed = not cast.isPlayer -- show failed for npcs only
                             self:DeleteCast(cast.unitGUID, false, true, false, false)

@@ -129,8 +129,10 @@ end
 function TestMode:SetCastbarMovable(unitID, parent)
     local parentFrame = parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
     if not parentFrame then
-        if unitID == "target" or unitID == "nameplate-testmode" or unitID == "focus" then
+        if unitID == "target" or unitID == "focus" then
             print(format("|cFFFF0000[ClassicCastbars] %s|r", _G.ERR_GENERIC_NO_TARGET)) -- luacheck: ignore
+        elseif unitID == "nameplate-testmode" then
+            print(format("|cFFFF0000[ClassicCastbars] %s|r", L.NO_NAMEPLATE_VISIBLE)) -- luacheck: ignore
         end
         return false
     end
@@ -180,8 +182,8 @@ function TestMode:SetCastbarMovable(unitID, parent)
         castbar.Icon:SetTexture(dummySpellData.icon)
         castbar.Flash:SetAlpha(0)
         castbar.casting = nil
-		castbar.channeling = nil
-		castbar.holdTime = 0
+        castbar.channeling = nil
+        castbar.holdTime = 0
         castbar.fadeOut = nil
         castbar.flash = nil
 
@@ -209,7 +211,7 @@ function TestMode:SetCastbarImmovable(unitID)
 
     castbar.unitID = nil
     castbar.parent = nil
-    castbar.isTesting = nil
+    castbar.isTesting = false
     castbar.holdTime = 0
     castbar:EnableMouse(false)
 
