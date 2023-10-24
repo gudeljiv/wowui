@@ -6,33 +6,6 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Vermins - Stitches"] = {
 			{
-				["heal"] = {
-					["Healing Potion"] = {
-						[-2] = {
-							["time"] = "|cffffffff10/24/23 12:41:08|r\n12:41:07> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_HEAL|h|cFFFFFFFF[|r|cffffff00Healing Potion|r|cFFFFFFFF]|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2You|r|cFFFFFFFF]|r|h |cffffff00170|r |cffffff00Physical|r. ",
-							["amount"] = 170,
-						},
-						[2] = {
-						},
-					},
-					["First Aid"] = {
-						[-2] = {
-							["time"] = "|cffffffff10/24/23 11:18:02|r\n11:18:01> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cFFFFFFFF[|r|cffffff00First Aid|r|cFFFFFFFF]|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2You|r|cFFFFFFFF]|r|h |cffffff0043|r |cffffff00Physical|r. ",
-							["amount"] = 43,
-						},
-						[2] = {
-						},
-						["icon"] = 135966,
-					},
-					["Curse of Mending"] = {
-						[-2] = {
-							["time"] = "|cffffffff10/24/23 11:49:58|r\n11:49:58> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_HEAL|h|cFFFFFFFF[|r|cffbfbfffCurse of Mending|r|cFFFFFFFF]|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Creature-0-5210-1-2319-3276-00003788BE:Witchwing Harpy|h|cFFFFFFFF[|r|cffbf0c0cWitchwing Harpy|r|cFFFFFFFF]|r|h |cffbfbfff10|r |cffbfbfffShadow|r. ",
-							["amount"] = 10,
-						},
-						[2] = {
-						},
-					},
-				},
 				["hit"] = {
 					["Hamstring"] = {
 						[-2] = {
@@ -91,16 +64,16 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\INV_SWORD_04",
 					},
-					["Shield Bash"] = {
+					["Revenge"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/24/23 12:46:33|r\n12:46:32> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Shield Bash|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5252-1-2494-3991-000037976D:Venture Co. Deforester|h|cFFFFFFFF[|r|cffbf0c0cVenture Co. Deforester|r|cFFFFFFFF]|r|h |cffffff006|r |cffffff00Physical|r. ",
-							["amount"] = 6,
-						},
-						[2] = {
-							["time"] = "|cffffffff10/24/23 03:33:40|r\n15:33:39> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Shield Bash|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5210-1-2319-3263-000037C7A5:Bristleback Geomancer|h|cFFFFFFFF[|r|cffbf0c0cBristleback Geomancer|r|cFFFFFFFF]|r|h |cffffff0011|r |cffffff00Physical|r. (Critical) ",
+							["time"] = "|cffffffff10/24/23 12:04:41|r\n12:04:40> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Revenge|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5210-1-2319-3268-0001B79395:Razormane Thornweaver|h|cFFFFFFFF[|r|cffbf0c0cRazormane Thornweaver|r|cFFFFFFFF]|r|h |cffffff0011|r |cffffff00Physical|r. ",
 							["amount"] = 11,
 						},
-						["icon"] = 132357,
+						[2] = {
+							["time"] = "|cffffffff10/24/23 12:30:55|r\n12:30:55> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Revenge|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5252-1-2494-11910-0000379C97:Grimtotem Ruffian|h|cFFFFFFFF[|r|cffbf0c0cGrimtotem Ruffian|r|cFFFFFFFF]|r|h |cffffff0020|r |cffffff00Physical|r. (Critical) ",
+							["amount"] = 20,
+						},
+						["icon"] = 132353,
 					},
 					["Overpower"] = {
 						[-2] = {
@@ -113,16 +86,16 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132223,
 					},
-					["Revenge"] = {
+					["Shield Bash"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/24/23 12:04:41|r\n12:04:40> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Revenge|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5210-1-2319-3268-0001B79395:Razormane Thornweaver|h|cFFFFFFFF[|r|cffbf0c0cRazormane Thornweaver|r|cFFFFFFFF]|r|h |cffffff0011|r |cffffff00Physical|r. ",
-							["amount"] = 11,
+							["time"] = "|cffffffff10/24/23 12:46:33|r\n12:46:32> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Shield Bash|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5252-1-2494-3991-000037976D:Venture Co. Deforester|h|cFFFFFFFF[|r|cffbf0c0cVenture Co. Deforester|r|cFFFFFFFF]|r|h |cffffff006|r |cffffff00Physical|r. ",
+							["amount"] = 6,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/24/23 12:30:55|r\n12:30:55> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Revenge|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5252-1-2494-11910-0000379C97:Grimtotem Ruffian|h|cFFFFFFFF[|r|cffbf0c0cGrimtotem Ruffian|r|cFFFFFFFF]|r|h |cffffff0020|r |cffffff00Physical|r. (Critical) ",
-							["amount"] = 20,
+							["time"] = "|cffffffff10/24/23 03:33:40|r\n15:33:39> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_DAMAGE|h|cFFFFFFFF[|r|cffffff00Shield Bash|r|cFFFFFFFF]|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-5210-1-2319-3263-000037C7A5:Bristleback Geomancer|h|cFFFFFFFF[|r|cffbf0c0cBristleback Geomancer|r|cFFFFFFFF]|r|h |cffffff0011|r |cffffff00Physical|r. (Critical) ",
+							["amount"] = 11,
 						},
-						["icon"] = 132353,
+						["icon"] = 132357,
 					},
 					["Heroic Strike"] = {
 						[-2] = {
@@ -134,6 +107,33 @@ EavesDropStatsDB = {
 							["amount"] = 182,
 						},
 						["icon"] = 132282,
+					},
+				},
+				["heal"] = {
+					["Healing Potion"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/24/23 12:41:08|r\n12:41:07> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_HEAL|h|cFFFFFFFF[|r|cffffff00Healing Potion|r|cFFFFFFFF]|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2You|r|cFFFFFFFF]|r|h |cffffff00170|r |cffffff00Physical|r. ",
+							["amount"] = 170,
+						},
+						[2] = {
+						},
+					},
+					["First Aid"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/24/23 11:18:02|r\n11:18:01> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cFFFFFFFF[|r|cffffff00First Aid|r|cFFFFFFFF]|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2You|r|cFFFFFFFF]|r|h |cffffff0043|r |cffffff00Physical|r. ",
+							["amount"] = 43,
+						},
+						[2] = {
+						},
+						["icon"] = 135966,
+					},
+					["Curse of Mending"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/24/23 11:49:58|r\n11:49:58> |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2Your|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_HEAL|h|cFFFFFFFF[|r|cffbfbfffCurse of Mending|r|cFFFFFFFF]|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Creature-0-5210-1-2319-3276-00003788BE:Witchwing Harpy|h|cFFFFFFFF[|r|cffbf0c0cWitchwing Harpy|r|cFFFFFFFF]|r|h |cffbfbfff10|r |cffbfbfffShadow|r. ",
+							["amount"] = 10,
+						},
+						[2] = {
+						},
 					},
 				},
 			}, -- [1]

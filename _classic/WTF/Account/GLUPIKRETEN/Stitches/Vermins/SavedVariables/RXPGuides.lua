@@ -1,10 +1,12 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[44] = {
+		[45] = {
+		},
+		[46] = {
 		},
 	},
-	["currentStep"] = 44,
+	["currentStep"] = 46,
 	["questObjectivesCache"] = {
 		[0] = 20,
 		[880] = {
@@ -98,11 +100,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6641] = {
+		[913] = {
 			{
-				["type"] = "event",
+				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Defeat Vorsha the Lasher",
+				["text"] = "Thunderhawk Wings: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -116,6 +118,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[876] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Serena's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[6523] = {
 			{
 				["type"] = "event",
@@ -124,22 +135,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-		},
-		[6461] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[1068] = {
 			{
@@ -216,14 +211,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[876] = {
+		[6461] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Serena's Head: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[879] = {
 			{
@@ -248,11 +250,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[913] = {
+		[6641] = {
 			{
-				["type"] = "item",
+				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "Thunderhawk Wings: 0/1",
+				["text"] = "Defeat Vorsha the Lasher",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -276,27 +278,27 @@ RXPCData = {
 		[899] = "Consumed by Hatred",
 		[884] = "Owatanka",
 		[1489] = "Hamuul Runetotem",
-		[883] = "Lakota'mani",
-		[876] = "Serena Bloodfeather",
+		[3301] = "Mura Runetotem",
+		[865] = "Raptor Horns",
 		[3261] = "Jorn Skyseer",
-		[6641] = "Vorsha the Lasher",
-		[882] = "Ishamuhale",
+		[1093] = "Super Reaper 6000",
 		[913] = "Cry of the Thunderhawk",
+		[1062] = "Goblin Invaders",
 		[888] = "Stolen Booty",
 		[1094] = "Further Instructions",
 		[1095] = "Further Instructions",
-		[875] = "Harpy Lieutenants",
-		[907] = "Enraged Thunder Lizards",
-		[6461] = "Blood Feeders",
-		[1068] = "Shredding Machines",
-		[1069] = "Deepmoss Spider Eggs",
-		[6442] = "Naga at the Zoram Strand",
 		[6523] = "Protect Kaya",
-		[1062] = "Goblin Invaders",
+		[1069] = "Deepmoss Spider Eggs",
+		[875] = "Harpy Lieutenants",
+		[1068] = "Shredding Machines",
+		[876] = "Serena Bloodfeather",
+		[6442] = "Naga at the Zoram Strand",
+		[6461] = "Blood Feeders",
+		[907] = "Enraged Thunder Lizards",
 		[878] = "Tribes at War",
-		[1093] = "Super Reaper 6000",
-		[865] = "Raptor Horns",
-		[3301] = "Mura Runetotem",
+		[882] = "Ishamuhale",
+		[6641] = "Vorsha the Lasher",
+		[883] = "Lakota'mani",
 	},
 	["currentGuideName"] = "17-22 Stonetalon/Barrens/Ashenvale",
 	["stepSkip"] = {
@@ -305,10 +307,10 @@ RXPCData = {
 		[21] = true,
 		[3] = true,
 		[22] = true,
-		[13] = true,
 		[6] = true,
+		[13] = true,
 	},
-	["currentStepId"] = 4281865242,
+	["currentStepId"] = 4281865265,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -364,12 +366,12 @@ RXPCComms = {
 					["xp"] = 40,
 				},
 				["Betlie"] = {
-					["level"] = 15,
+					["isRxp"] = true,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["class"] = "PRIEST",
+					["level"] = 15,
 					["timePlayed"] = 1738.657000000007,
-					["isRxp"] = true,
+					["class"] = "PRIEST",
 				},
 				["Betaben"] = {
 					["timePlayed"] = 43.79199999999992,
