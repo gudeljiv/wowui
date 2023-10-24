@@ -118,6 +118,13 @@ X: 0
 Y: 0
 W: 682
 H: 447
+Frame: MerchantFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 336
+H: 444
 Frame: LootFrame
 FrameLevel: 10
 Anchor: CENTER
@@ -328,13 +335,6 @@ X: 0
 Y: -104
 W: 832
 H: 447
-Frame: MerchantFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 336
-H: 444
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

@@ -9,21 +9,45 @@ ThreatClassic2DB = {
 		["Battitude - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Miqa - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["backdrop"] = {
-				["edgeColor"] = {
+			["frame"] = {
+				["headerShow"] = false,
+				["headerColor"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					655, -- [4]
+					-340, -- [5]
+				},
+				["color"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
 					0, -- [4]
 				},
+				["height"] = 140,
+				["locked"] = true,
+				["width"] = 210,
+			},
+			["font"] = {
+				["shadow"] = false,
+				["name"] = "Arial Narrow",
+				["size"] = 10,
+			},
+			["backdrop"] = {
 				["color"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					0, -- [4]
+				},
+				["edgeColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
@@ -32,34 +56,10 @@ ThreatClassic2DB = {
 				["edgeTexture"] = "None",
 				["texture"] = "xVerminClean",
 			},
-			["font"] = {
-				["shadow"] = false,
-				["name"] = "Arial Narrow",
-				["size"] = 10,
-			},
-			["frame"] = {
-				["color"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					0, -- [4]
-				},
-				["width"] = 210,
-				["headerColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					655, -- [4]
-					-340, -- [5]
-				},
-				["locked"] = true,
-				["headerShow"] = false,
-				["height"] = 140,
-			},
 			["bar"] = {
-				["count"] = 8,
 				["height"] = 15,
 				["padding"] = 2,
+				["count"] = 8,
 				["texture"] = "xVerminClean",
 			},
 		},
