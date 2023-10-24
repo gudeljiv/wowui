@@ -2,9 +2,10 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
 /startattack
 /cast Bloodrage
-/cast [@focus,exists][][stance:1/2]Shield Bash
-/cast [@focus,exists][][stance:3]Pummel
-/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
+/cast [stance:1/2]Shield Bash
+/cast [stance:3]Pummel
+/equipslot [noworn:shield]16 Elegant Shortsword
+/equipslot [noworn:shield][stance:1/2]17 Welding Shield
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -48,22 +49,16 @@ VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
 /cast [stance:1] Retaliation
 /cast [stance:2] Shield Wall
 END
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+VER 3 0000000001000009 " " "132147"
 #showtooltip ""
-/equipslot [noworn:shield]16 Ridge Cleaver of the Boar
-/equipslot [noworn:shield]17 Cobalt Buckler
-/equipslot [worn:shield]16 Whirlwind Axe
+/equipslot [noworn:shield]16 Elegant Shortsword
+/equipslot [noworn:shield]17 Welding Shield
+/equipslot [worn:shield]16 Axe of Orgrimmar
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip Thunder Clap
 /cast [nostance:1] Battle Stance;
 /cast Thunder Clap
-END
-VER 3 000000000100000B " " "INV_Misc_QuestionMark"
-#showtooltip Revenge
-/startattack
-/cast [nostance:1] Battle Stance;
-/cast Revenge
 END
 VER 3 000000000100000C " " "INV_Misc_QuestionMark"
 #showtooltip 

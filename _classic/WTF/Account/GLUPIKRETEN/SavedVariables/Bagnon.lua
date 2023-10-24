@@ -249,6 +249,8 @@ Bagnon_Sets = {
 	["glowNew"] = false,
 	["displayAuction"] = false,
 	["profiles"] = {
+		["Stitches"] = {
+		},
 	},
 	["keyColor"] = {
 	},

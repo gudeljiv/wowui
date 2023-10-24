@@ -1,0 +1,220 @@
+
+EavesDropDB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Blooq - Genesis"] = "Default",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Konza - Genesis"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Mulatz - Genesis"] = "Default",
+		["Handrmandr - Genesis"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Verminz - Genesis"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Koloman - Golemagg"] = "Default",
+		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
+		["Antun - Golemagg"] = "Default",
+		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
+		["Whatevs - Stonespine"] = "Default",
+		["Tukac - Genesis"] = "Default",
+		["Pitchwise - Golemagg"] = "Default",
+		["Elohssa - Stonespine"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Pepecocorita - Genesis"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Vermins - Stitches"] = "Default",
+		["Spija - Genesis"] = "Spija - Genesis",
+		["Vermins - Stonespine"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Korupcija - Genesis"] = "Default",
+		["Korupcija - Stonespine"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Paydo - Dreadmist"] = "Default",
+		["Judawise - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
+	},
+	["profiles"] = {
+		["Mxzq - Golemagg"] = {
+			["LINEWIDTH"] = 130,
+			["BORDER"] = {
+				["a"] = 0,
+				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
+			},
+			["y"] = 236.195578993564,
+			["x"] = 551.714104134467,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["NUMLINES"] = 16,
+		},
+		["Mxyz - Golemagg"] = {
+			["LINEWIDTH"] = 130,
+			["BORDER"] = {
+				["a"] = 0,
+				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
+			},
+			["y"] = 236.195578993564,
+			["x"] = 551.714104134467,
+			["NUMLINES"] = 16,
+			["TEXTSIZE"] = 13,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
+		},
+		["Verminz - Golemagg"] = {
+			["LINEWIDTH"] = 100,
+			["LOCKED"] = true,
+			["TOOLTIPSANCHOR"] = "Left",
+			["y"] = -3.73324210405553,
+			["x"] = 536.000144269463,
+			["TEXTSIZE"] = 12,
+			["FONT"] = "Arial Narrow",
+			["NUMLINES"] = 14,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
+		},
+		["Battitude - Golemagg"] = {
+		},
+		["Kosturko - Golemagg"] = {
+		},
+		["DRUID"] = {
+		},
+		["Mxym - Golemagg"] = {
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
+		["Koloman - Golemagg"] = {
+		},
+		["Pitchwise - Genesis"] = {
+		},
+		["Antun - Golemagg"] = {
+		},
+		["Golemagg"] = {
+		},
+		["Ozrencic - Golemagg"] = {
+		},
+		["Whatevs - Stonespine"] = {
+		},
+		["Pitchwise - Golemagg"] = {
+		},
+		["Elohssa - Stonespine"] = {
+		},
+		["Battlearm - Golemagg"] = {
+		},
+		["Paydo - Dreadmist"] = {
+			["LINEWIDTH"] = 130,
+			["BORDER"] = {
+				["a"] = 0,
+				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
+			},
+			["y"] = 236.195578993564,
+			["x"] = 551.714104134467,
+			["HIDETAB"] = true,
+			["TEXTSIZE"] = 13,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
+		},
+		["Mxys - Golemagg"] = {
+		},
+		["Vermins - Stitches"] = {
+			["y"] = 101.5998051200586,
+			["x"] = -680.0004749257243,
+			["LINEWIDTH"] = 140,
+			["TEXTSIZE"] = 10,
+			["NUMLINES"] = 14,
+			["BLACKLIST"] = {
+				["version"] = "v2",
+				["spells"] = {
+				},
+			},
+			["LINEHEIGHT"] = 16,
+		},
+		["Spija - Genesis"] = {
+		},
+		["Vermins - Stonespine"] = {
+		},
+		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Dotwise - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
+		},
+		["Dmitar - Golemagg"] = {
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
+		["Default"] = {
+			["BORDER"] = {
+				["a"] = 0,
+			},
+			["LINEWIDTH"] = 180,
+			["x"] = -680.711692675487,
+			["BLACKLIST"] = {
+				["version"] = "v2",
+				["spells"] = {
+				},
+			},
+			["LABELC"] = {
+				["a"] = 0,
+			},
+			["TEXTSIZE"] = 12,
+			["LOCKED"] = true,
+			["REP"] = false,
+			["NUMLINES"] = 20,
+			["FADETIME"] = 5,
+			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 14,
+			["HIDETAB"] = true,
+			["FADEFRAME"] = true,
+			["FONTOUTLINE"] = "None",
+			["FRAME"] = {
+				["a"] = 0,
+			},
+			["y"] = 115.4667094759716,
+			["HONOR"] = false,
+		},
+		["Judawise - Golemagg"] = {
+		},
+		["Vermin - Golemagg"] = {
+		},
+		["Korupcija - Stonespine"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
+		},
+		["Nitwit - Dreadnaught"] = {
+		},
+	},
+}

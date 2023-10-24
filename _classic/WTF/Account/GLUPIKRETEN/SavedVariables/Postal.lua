@@ -22,7 +22,7 @@ Postal3DB = {
 				"Dopesnare|Stitches|Horde|37|HUNTER", -- [6]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [7]
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [8]
-				"Vermins|Stitches|Horde|15|WARRIOR", -- [9]
+				"Vermins|Stitches|Horde|21|WARRIOR", -- [9]
 			},
 		},
 	},

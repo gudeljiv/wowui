@@ -34,8 +34,8 @@ local HandleUnit = function(unit)
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-			if defensive and IsEquippedItemType('Shields') then
-			-- if defensive then
+			-- if defensive and IsEquippedItemType('Shields') then
+			if defensive then
 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
 					HandleRotationFrame(true)
 				end
@@ -45,8 +45,8 @@ local HandleUnit = function(unit)
 					HandleRotationFrame(true)
 				end
 			end
-			if battle and IsEquippedItemType('Shields') then
-			-- if battle then
+			-- if battle and IsEquippedItemType('Shields') then
+			if battle then
 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
 					HandleRotationFrame(true)
 				end

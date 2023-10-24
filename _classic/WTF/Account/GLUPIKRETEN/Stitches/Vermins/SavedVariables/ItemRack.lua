@@ -2,6 +2,7 @@
 ItemRackUser = {
 	["ButtonSpacing"] = 4,
 	["QueuesEnabled"] = {
+		[13] = false,
 	},
 	["Locked"] = "OFF",
 	["MainScale"] = 1,
@@ -35,6 +36,12 @@ ItemRackUser = {
 				0, -- [19]
 				[0] = 0,
 			},
+			["Queues"] = {
+				[13] = {
+				},
+				[14] = {
+				},
+			},
 			["icon"] = 132147,
 			["old"] = {
 			},
@@ -45,9 +52,16 @@ ItemRackUser = {
 		},
 	},
 	["EnableQueues"] = "ON",
-	["Queues"] = {
-	},
+	["EnablePerSetQueues"] = "OFF",
 	["Buttons"] = {
+		[13] = {
+			["Top"] = 614.1901245117188,
+			["Left"] = 815.6511840820312,
+		},
+		[14] = {
+			["DockTo"] = 13,
+			["Side"] = "LEFT",
+		},
 	},
 	["ItemsUsed"] = {
 	},
@@ -57,10 +71,15 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["EnableEvents"] = "ON",
+	["Alpha"] = 1,
 	["Hidden"] = {
 	},
-	["Alpha"] = 1,
+	["EnableEvents"] = "ON",
 	["MenuScale"] = 1.200000047683716,
-	["EnablePerSetQueues"] = "OFF",
+	["Queues"] = {
+		[13] = {
+		},
+		[14] = {
+		},
+	},
 }
