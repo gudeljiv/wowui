@@ -29,8 +29,8 @@ EavesDropDB = {
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Vermins - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
@@ -54,14 +54,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["NUMLINES"] = 16,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Mxyz - Golemagg"] = {
 			["LINEWIDTH"] = 130,
@@ -73,14 +73,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -136,12 +136,12 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Mxys - Golemagg"] = {
 		},
@@ -162,9 +162,9 @@ EavesDropDB = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Dotwise - Golemagg"] = {
 		},

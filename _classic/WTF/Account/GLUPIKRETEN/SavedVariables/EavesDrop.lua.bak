@@ -30,7 +30,7 @@ EavesDropDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
 		["Vermin - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Korupcija - Stonespine"] = "Default",
@@ -40,7 +40,7 @@ EavesDropDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -54,14 +54,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Mxyz - Golemagg"] = {
 			["LINEWIDTH"] = 130,
@@ -73,14 +73,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["NUMLINES"] = 16,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -134,11 +134,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
@@ -164,7 +164,7 @@ EavesDropDB = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
-		["Testxv - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
@@ -214,7 +214,7 @@ EavesDropDB = {
 		},
 		["Dotwise - Golemagg"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Testxv - Golemagg"] = {
 		},
 	},
 }

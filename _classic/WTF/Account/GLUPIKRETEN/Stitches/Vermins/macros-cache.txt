@@ -53,7 +53,7 @@ VER 3 0000000001000009 " " "132147"
 #showtooltip ""
 /equipslot [noworn:shield]16 Elegant Shortsword
 /equipslot [noworn:shield]17 Welding Shield
-/equipslot [worn:shield]16 Axe of Orgrimmar
+/equipslot [worn:shield]17 War Knife of Stamina
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip Thunder Clap

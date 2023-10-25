@@ -138,6 +138,16 @@ EavesDropStatsDB = {
 				},
 			}, -- [1]
 			[-1] = {
+				["heal"] = {
+					["Renew"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/25/23 03:37:47|r\n15:37:46> |Hunit:Player-5220-01D6A57D:Kryptor|h|cFFFFFFFF[|r|cff56a3ffKryptor|r|cFFFFFFFF]|r|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cFFFFFFFF[|r|cffffffbfRenew|r|cFFFFFFFF]|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:Player-5220-01E4D39D:Vermins|h|cFFFFFFFF[|r|cffb2b2b2You|r|cFFFFFFFF]|r|h |cffffffbf35|r |cffffffbfHoly|r. ",
+							["amount"] = 35,
+						},
+						[2] = {
+						},
+					},
+				},
 				["hit"] = {
 					["Shadow"] = {
 						[-2] = {

@@ -5,6 +5,7 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:14724::::::::12:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:5343::::::::20:::::::::|h[]|h|r"] = "Off",
 	["|cff1eff00|Hitem:14724::::::::18:::::::::|h[War Paint Cloak]|h|r"] = "Off",
+	["|cff1eff00|Hitem:5343::::::::22:::::::::|h[Barkeeper's Cloak]|h|r"] = "Off",
 	["|cffffffff|Hitem:5343::::::::21:::::::::|h[]|h|r"] = "Off",
 	["|cff9d9d9d|Hitem:1376::::::::7:::::::::|h[Frayed Cloak]|h|r"] = "Off",
 	["|cff1eff00|Hitem:14724::::::::16:::::::::|h[War Paint Cloak]|h|r"] = "Off",

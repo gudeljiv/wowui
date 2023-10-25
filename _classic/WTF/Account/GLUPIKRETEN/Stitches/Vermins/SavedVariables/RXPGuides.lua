@@ -1,12 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[45] = {
-		},
-		[46] = {
+		[47] = {
 		},
 	},
-	["currentStep"] = 46,
+	["currentStep"] = 47,
 	["questObjectivesCache"] = {
 		[0] = 20,
 		[880] = {
@@ -118,23 +116,30 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[876] = {
+		[1069] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Serena's Head: 0/1",
+				["numRequired"] = 15,
+				["text"] = "Deepmoss Egg: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6523] = {
+		[6461] = {
 			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Kaya Escorted to Camp Aparaje",
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[1068] = {
 			{
@@ -152,11 +157,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[1069] = {
+		[876] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 15,
-				["text"] = "Deepmoss Egg: 0/15",
+				["numRequired"] = 1,
+				["text"] = "Serena's Head: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -211,21 +216,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[6461] = {
+		[6523] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Kaya Escorted to Camp Aparaje",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[879] = {
 			{
@@ -281,20 +279,20 @@ RXPCData = {
 		[3301] = "Mura Runetotem",
 		[865] = "Raptor Horns",
 		[3261] = "Jorn Skyseer",
-		[1093] = "Super Reaper 6000",
 		[913] = "Cry of the Thunderhawk",
-		[1062] = "Goblin Invaders",
+		[1093] = "Super Reaper 6000",
 		[888] = "Stolen Booty",
+		[1062] = "Goblin Invaders",
 		[1094] = "Further Instructions",
 		[1095] = "Further Instructions",
-		[6523] = "Protect Kaya",
-		[1069] = "Deepmoss Spider Eggs",
 		[875] = "Harpy Lieutenants",
-		[1068] = "Shredding Machines",
-		[876] = "Serena Bloodfeather",
-		[6442] = "Naga at the Zoram Strand",
+		[1069] = "Deepmoss Spider Eggs",
 		[6461] = "Blood Feeders",
+		[1068] = "Shredding Machines",
 		[907] = "Enraged Thunder Lizards",
+		[6442] = "Naga at the Zoram Strand",
+		[6523] = "Protect Kaya",
+		[876] = "Serena Bloodfeather",
 		[878] = "Tribes at War",
 		[882] = "Ishamuhale",
 		[6641] = "Vorsha the Lasher",
@@ -302,15 +300,16 @@ RXPCData = {
 	},
 	["currentGuideName"] = "17-22 Stonetalon/Barrens/Ashenvale",
 	["stepSkip"] = {
-		[11] = true,
-		[17] = true,
-		[21] = true,
-		[3] = true,
-		[22] = true,
-		[6] = true,
 		[13] = true,
+		[45] = true,
+		[17] = true,
+		[6] = true,
+		[11] = true,
+		[22] = true,
+		[3] = true,
+		[21] = true,
 	},
-	["currentStepId"] = 4281865265,
+	["currentStepId"] = 4281865273,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -366,12 +365,12 @@ RXPCComms = {
 					["xp"] = 40,
 				},
 				["Betlie"] = {
-					["isRxp"] = true,
+					["level"] = 15,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["level"] = 15,
-					["timePlayed"] = 1738.657000000007,
 					["class"] = "PRIEST",
+					["timePlayed"] = 1738.657000000007,
+					["isRxp"] = true,
 				},
 				["Betaben"] = {
 					["timePlayed"] = 43.79199999999992,
@@ -388,15 +387,34 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 105,
 				},
+				["Duggy"] = {
+					["timePlayed"] = 4598.483000000007,
+					["class"] = "MAGE",
+					["xp"] = 123,
+				},
 				["Splifeur"] = {
 					["timePlayed"] = 43.79199999999992,
 					["class"] = "DRUID",
 					["xp"] = 3,
 				},
-				["Шаравель"] = {
-					["timePlayed"] = 158.1110000000044,
-					["class"] = "WARRIOR",
-					["xp"] = 32,
+				["Myrmidonn"] = {
+					["timePlayed"] = 4626,
+					["class"] = "DRUID",
+					["xp"] = 109,
+				},
+				["Вукир"] = {
+					["timePlayed"] = 4626,
+					["class"] = "SHAMAN",
+					["xp"] = 109,
+				},
+				["Kryptor"] = {
+					["class"] = "PRIEST",
+					["level"] = 22,
+					["lastSeen"] = 260591.059,
+					["xpPercentage"] = 37,
+					["isRxp"] = true,
+					["xp"] = 109,
+					["timePlayed"] = 4626,
 				},
 				["Slipperyhot"] = {
 					["timePlayed"] = 21.25299999999697,
@@ -412,6 +430,11 @@ RXPCComms = {
 					["timePlayed"] = 130.5069999999978,
 					["class"] = "PRIEST",
 					["xp"] = 54,
+				},
+				["Шаравель"] = {
+					["timePlayed"] = 158.1110000000044,
+					["class"] = "WARRIOR",
+					["xp"] = 32,
 				},
 			},
 		},

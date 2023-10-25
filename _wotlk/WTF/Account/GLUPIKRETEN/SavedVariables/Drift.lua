@@ -14,24 +14,31 @@ DriftPoints = {
 		["yOfs"] = -103.4892272949219,
 		["xOfs"] = -257.3910217285156,
 	},
+	["SettingsPanel"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "CENTER",
+		["relativePoint"] = "CENTER",
+		["yOfs"] = 62.85715103149414,
+		["xOfs"] = -184.1270446777344,
+	},
 }
 DriftScales = {
 }
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["windowsDisabled"] = false,
+	["scaleCtrlKeyEnabled"] = false,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
-	["bagsDisabled"] = true,
-	["scaleCtrlKeyEnabled"] = false,
 	["scaleShiftKeyEnabled"] = false,
-	["arenaDisabled"] = true,
+	["windowsDisabled"] = false,
+	["objectivesDisabled"] = true,
+	["frameScaleIsLocked"] = false,
 	["miscellaneousDisabled"] = true,
 	["dragCtrlKeyEnabled"] = false,
-	["buttonsDisabled"] = true,
 	["dragShiftKeyEnabled"] = false,
-	["frameScaleIsLocked"] = false,
-	["objectivesDisabled"] = true,
+	["buttonsDisabled"] = true,
+	["arenaDisabled"] = true,
+	["bagsDisabled"] = true,
 	["minimapDisabled"] = true,
 }
