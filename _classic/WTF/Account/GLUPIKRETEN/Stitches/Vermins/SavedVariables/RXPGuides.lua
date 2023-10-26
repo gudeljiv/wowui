@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[2] = {
+		[39] = {
 		},
 	},
-	["currentStep"] = 3,
+	["currentStep"] = 39,
 	["questObjectivesCache"] = {
 		[0] = 31,
 		[880] = {
@@ -32,45 +32,38 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[1066] = {
+		[6382] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[899] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Vial of Innocent Blood: 0/5",
+				["numRequired"] = 60,
+				["text"] = "Bristleback Quilboar Tusk: 0/60",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[528] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Hillsbrad Peasant slain: 0/15",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6548] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "  slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 6,
-				["text"] = "  slain: 0/6",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[907] = {
+		[913] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Thunder Lizard Blood: 0/3",
+				["numRequired"] = 1,
+				["text"] = "Thunderhawk Wings: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[882] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Ishamuhale's Fang: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -97,40 +90,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [3]
-		},
-		[899] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 60,
-				["text"] = "Bristleback Quilboar Tusk: 0/60",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6461] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[6382] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["generated"] = true,
-				["text"] = "Objective Complete",
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[527] = {
 			{
@@ -161,6 +120,33 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [4]
+		},
+		[6562] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["generated"] = true,
+				["text"] = "Objective Complete",
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[528] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 15,
+				["text"] = "Hillsbrad Peasant slain: 0/15",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6641] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Defeat Vorsha the Lasher",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 		[529] = {
 			{
@@ -194,11 +180,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[882] = {
+		[1062] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Ishamuhale's Fang: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 15,
+				["text"] = "Venture Co. Logger slain: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -219,45 +205,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[496] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Gray Bear Tongue: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
+		[876] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Creeper Ichor: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[1062] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Venture Co. Logger slain: 0/15",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6562] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["generated"] = true,
-				["text"] = "Objective Complete",
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6641] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Defeat Vorsha the Lasher",
+				["text"] = "Serena's Head: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -270,6 +222,40 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+		},
+		[907] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 3,
+				["text"] = "Thunder Lizard Blood: 0/3",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[1066] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Vial of Innocent Blood: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6461] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[549] = {
 			{
@@ -312,11 +298,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[876] = {
+		[1069] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Serena's Head: 0/1",
+				["numRequired"] = 15,
+				["text"] = "Deepmoss Egg: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -392,14 +378,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[1069] = {
+		[496] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 15,
-				["text"] = "Deepmoss Egg: 0/15",
+				["numRequired"] = 10,
+				["text"] = "Gray Bear Tongue: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Creeper Ichor: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[879] = {
 			{
@@ -424,24 +417,33 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[913] = {
+		[6548] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thunderhawk Wings: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "  slain: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 6,
+				["text"] = "  slain: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 	},
 	["currentGuideGroup"] = "RestedXP Horde 22-30",
 	["flightPaths"] = {
 		[61] = "Splintertree Post, Ashenvale",
-		[80] = "Ratchet, The Barrens",
-		[58] = "Zoram'gar Outpost, Ashenvale",
 		[25] = "Crossroads, The Barrens",
-		[22] = "Thunder Bluff, Mulgore",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
+		[58] = "Zoram'gar Outpost, Ashenvale",
+		[10] = "The Sepulcher, Silverpine Forest",
+		[80] = "Ratchet, The Barrens",
+		[11] = "Undercity, Tirisfal",
+		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
 	},
@@ -472,40 +474,50 @@ RXPCData = {
 		[884] = "Owatanka",
 		[1063] = "The Elder Crone",
 		[888] = "Stolen Booty",
+		[529] = "Battle of Hillsbrad",
 		[6629] = "Kill Grundig Darkcloud",
 		[6393] = "Elemental War",
-		[264] = "Until Death Do Us Part",
-		[529] = "Battle of Hillsbrad",
-		[1095] = "Further Instructions",
 		[567] = "Dangerous!",
+		[264] = "Until Death Do Us Part",
+		[3261] = "Jorn Skyseer",
+		[1095] = "Further Instructions",
+		[498] = "The Rescue",
 		[528] = "Battle of Hillsbrad",
 		[6442] = "Naga at the Zoram Strand",
-		[3261] = "Jorn Skyseer",
-		[501] = "Elixir of Pain",
-		[498] = "The Rescue",
-		[1060] = "Letter to Jin'Zil",
-		[1064] = "Forsaken Aid",
-		[3301] = "Mura Runetotem",
+		[1489] = "Hamuul Runetotem",
 		[1490] = "Nara Wildmane",
 		[1195] = "The Sacred Flame",
+		[1060] = "Letter to Jin'Zil",
+		[1064] = "Forsaken Aid",
+		[1068] = "Shredding Machines",
+		[821] = "Chen's Empty Keg",
+		[1823] = "Speak with Ruga",
 		[6523] = "Protect Kaya",
 		[865] = "Raptor Horns",
 		[6548] = "Avenge My Village",
-		[1823] = "Speak with Ruga",
-		[6461] = "Blood Feeders",
 		[5052] = "Blood Shards of Agamaggan",
-		[875] = "Harpy Lieutenants",
+		[6461] = "Blood Feeders",
 		[1483] = "Ziz Fizziks",
+		[875] = "Harpy Lieutenants",
+		[3301] = "Mura Runetotem",
 		[6462] = "Troll Charm",
-		[821] = "Chen's Empty Keg",
+		[501] = "Elixir of Pain",
 		[883] = "Lakota'mani",
-		[1489] = "Hamuul Runetotem",
-		[1068] = "Shredding Machines",
+		[493] = "Journey to Hillsbrad Foothills",
+		[494] = "Time To Strike",
 	},
 	["currentGuideName"] = "22-24 Hillsbrad",
 	["stepSkip"] = {
+		[25] = true,
+		[26] = true,
+		[27] = true,
+		[28] = true,
+		[30] = true,
+		[32] = true,
+		[23] = true,
+		[2] = true,
 	},
-	["currentStepId"] = 3794472047,
+	["currentStepId"] = 3794472288,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -561,12 +573,12 @@ RXPCComms = {
 					["xp"] = 40,
 				},
 				["Betlie"] = {
-					["level"] = 15,
+					["class"] = "PRIEST",
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["class"] = "PRIEST",
-					["timePlayed"] = 1738.657000000007,
 					["isRxp"] = true,
+					["timePlayed"] = 1738.657000000007,
+					["level"] = 15,
 				},
 				["Betaben"] = {
 					["timePlayed"] = 43.79199999999992,
@@ -593,24 +605,24 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 3,
 				},
-				["Вукир"] = {
-					["timePlayed"] = 4626,
-					["class"] = "SHAMAN",
-					["xp"] = 109,
-				},
 				["Шаравель"] = {
 					["timePlayed"] = 158.1110000000044,
 					["class"] = "WARRIOR",
 					["xp"] = 32,
 				},
+				["Вукир"] = {
+					["timePlayed"] = 4626,
+					["class"] = "SHAMAN",
+					["xp"] = 109,
+				},
 				["Kryptor"] = {
-					["xpPercentage"] = 37,
+					["timePlayed"] = 4626,
 					["isRxp"] = true,
 					["lastSeen"] = 260591.059,
-					["timePlayed"] = 4626,
-					["level"] = 22,
-					["xp"] = 109,
+					["xpPercentage"] = 37,
 					["class"] = "PRIEST",
+					["xp"] = 109,
+					["level"] = 22,
 				},
 				["Slipperyhot"] = {
 					["timePlayed"] = 21.25299999999697,

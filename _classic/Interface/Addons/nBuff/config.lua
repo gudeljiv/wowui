@@ -14,7 +14,7 @@ nBuff.Config = {
 	debuffCountSize = 16,
 	paddingX = 7,
 	paddingY = 7,
-	buffPerRow = 8,
+	buffPerRow = 14,
 	durationFont = "Fonts\\ARIALN.ttf",
 	countFont = "Fonts\\ARIALN.ttf"
 }

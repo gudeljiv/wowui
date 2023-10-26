@@ -52,7 +52,7 @@ VER 3 0000000001000009 " " "132147"
 #showtooltip ""
 /equipslot [noworn:shield]16 Wingblade
 /equipslot [noworn:shield]17 Cobalt Buckler
-/equipslot [worn:shield]17 Battle Knife of the Tiger
+/equipslot [worn:shield]17 Cross Dagger of the Monkey
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip Thunder Clap

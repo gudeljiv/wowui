@@ -29,8 +29,7 @@ END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
 #showtooltip
 /startattack
-/cast [@mouseover,exists][stance:2]Taunt
-/cast [@mouseover,exists][stance:1]Mocking Blow
+/cast [@mouseover,exists][] Taunt
 END
 VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
 #showtooltip

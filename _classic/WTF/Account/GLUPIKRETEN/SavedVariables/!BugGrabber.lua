@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 10866,
 	["lastSanitation"] = 3,
-	["session"] = 10863,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -173,14 +173,14 @@ BugGrabberDB = {
 		}, -- [22]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [23]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [24]
 		{
@@ -297,14 +297,14 @@ BugGrabberDB = {
 		}, -- [38]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [39]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [40]
 		{
@@ -509,14 +509,14 @@ BugGrabberDB = {
 		}, -- [65]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [66]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [67]
 		{
@@ -561,14 +561,14 @@ BugGrabberDB = {
 		}, -- [72]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [73]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [74]
 		{
@@ -709,14 +709,14 @@ BugGrabberDB = {
 		}, -- [91]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [92]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [93]
 		{
@@ -793,14 +793,14 @@ BugGrabberDB = {
 		}, -- [102]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [103]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [104]
 		{
@@ -813,14 +813,14 @@ BugGrabberDB = {
 		}, -- [105]
 		{
 			["message"] = "Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [106]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [107]
 		{
@@ -1009,38 +1009,38 @@ BugGrabberDB = {
 		}, -- [130]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [131]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [132]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [133]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [134]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [135]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [136]
 		{
@@ -1053,14 +1053,14 @@ BugGrabberDB = {
 		}, -- [137]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-			["session"] = 10768,
 			["time"] = "2023/10/12 13:05:29",
+			["session"] = 10768,
 			["counter"] = 1,
 		}, -- [138]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-			["session"] = 10768,
 			["time"] = "2023/10/12 13:05:29",
+			["session"] = 10768,
 			["counter"] = 1,
 		}, -- [139]
 		{
@@ -1217,14 +1217,14 @@ BugGrabberDB = {
 		}, -- [158]
 		{
 			["message"] = "Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-			["session"] = 10843,
 			["time"] = "2023/10/24 10:11:42",
+			["session"] = 10843,
 			["counter"] = 2,
 		}, -- [159]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-			["session"] = 10843,
 			["time"] = "2023/10/24 10:11:42",
+			["session"] = 10843,
 			["counter"] = 2,
 		}, -- [160]
 		{
@@ -1296,8 +1296,8 @@ BugGrabberDB = {
 			["time"] = "2023/10/13 10:25:54",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
-			["session"] = 10863,
-			["counter"] = 12,
+			["session"] = 10866,
+			["counter"] = 14,
 		}, -- [169]
 	},
 }
