@@ -4,8 +4,8 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 /cast Bloodrage
 /cast [stance:1/2]Shield Bash
 /cast [stance:3]Pummel
-/equipslot [noworn:shield]16 Elegant Shortsword
-/equipslot [noworn:shield][stance:1/2]17 Welding Shield
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -29,8 +29,7 @@ END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
 #showtooltip
 /startattack
-/cast [@mouseover,exists][stance:2]Taunt
-/cast [@mouseover,exists][stance:1]Mocking Blow
+/cast [@mouseover,exists][] Taunt
 END
 VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -51,9 +50,9 @@ VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000009 " " "132147"
 #showtooltip ""
-/equipslot [noworn:shield]16 Elegant Shortsword
-/equipslot [noworn:shield]17 Welding Shield
-/equipslot [worn:shield]17 War Knife of Stamina
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield]17 Cobalt Buckler
+/equipslot [worn:shield]17 Battle Knife of the Tiger
 END
 VER 3 000000000100000A " " "INV_Misc_QuestionMark"
 #showtooltip Thunder Clap
@@ -87,4 +86,11 @@ VER 3 0000000001000010 " " "134400"
 /startattack
 /cast [nostance:2] Defensive Stance;
 /cast Revenge
+END
+VER 3 0000000001000011 " " "134400"
+#showtooltip Shield Wall
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield]17 Cobalt Buckler
+/cast [nostance:2] Defensive Stance;
+/cast Shield Wall
 END

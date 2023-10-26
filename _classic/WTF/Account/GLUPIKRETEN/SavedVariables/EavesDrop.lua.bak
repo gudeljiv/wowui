@@ -28,29 +28,29 @@ EavesDropDB = {
 		["Vermins - Stitches"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Vermins - Stonespine"] = "Default",
-		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
-		["Vermin - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Paydo - Dreadmist"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Korupcija - Genesis"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
@@ -67,9 +67,9 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
@@ -90,9 +90,9 @@ EavesDropDB = {
 			["x"] = 536.000144269463,
 			["TEXTSIZE"] = 12,
 			["FONT"] = "Arial Narrow",
-			["HIDETAB"] = true,
-			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 14,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 		},
 		["Battitude - Golemagg"] = {
 		},
@@ -128,20 +128,20 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 		},
 		["Mxys - Golemagg"] = {
 		},
@@ -162,15 +162,15 @@ EavesDropDB = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Nitwit - Dreadnaught"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Testxv - Golemagg"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Dotwise - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
+		},
+		["Dmitar - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
@@ -208,13 +208,13 @@ EavesDropDB = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Vermin - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 		},
-		["Dotwise - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
-		["Testxv - Golemagg"] = {
+		["Nitwit - Dreadnaught"] = {
 		},
 	},
 }

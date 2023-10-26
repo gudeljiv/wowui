@@ -56,23 +56,23 @@ Bagnon_Sets = {
 			["reverseBags"] = false,
 			["options"] = true,
 			["money"] = true,
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.7400000095367432, -- [4]
-			},
 			["hiddenRules"] = {
 			},
-			["y"] = 277.3416748046875,
+			["itemScale"] = 1,
+			["spacing"] = 3,
 			["bagBreak"] = false,
 			["x"] = -805.0643310546875,
 			["search"] = true,
 			["broker"] = false,
 			["reverseSlots"] = false,
 			["alpha"] = 1,
-			["spacing"] = 3,
-			["itemScale"] = 1,
+			["y"] = 277.3416748046875,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.7400000095367432, -- [4]
+			},
 		},
 		["vault"] = {
 			["rules"] = {
@@ -147,8 +147,8 @@ Bagnon_Sets = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["columns"] = 10,
 			["spacing"] = 3,
+			["columns"] = 10,
 		},
 		["bank"] = {
 			["rules"] = {
@@ -191,21 +191,21 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 10,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 809.6493530273438,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = 277.4383850097656,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 809.6493530273438,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = 277.4383850097656,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
 	["countGuild"] = false,
@@ -223,10 +223,10 @@ Bagnon_Sets = {
 		["playerFrame"] = false,
 		["scrappingMachine"] = false,
 		["crafting"] = false,
-		["voidStorageBanker"] = false,
+		["banker"] = false,
 		["auctioneer"] = false,
 		["guildBanker"] = false,
-		["banker"] = false,
+		["voidStorageBanker"] = false,
 	},
 	["fridgeColor"] = {
 	},
@@ -239,7 +239,7 @@ Bagnon_Sets = {
 	["quiverColor"] = {
 	},
 	["locked"] = true,
-	["tipCount"] = true,
+	["slotBackground"] = 1,
 	["gemColor"] = {
 	},
 	["enchantColor"] = {
@@ -252,15 +252,15 @@ Bagnon_Sets = {
 		["Stitches"] = {
 		},
 	},
-	["soulColor"] = {
-	},
-	["glowQuality"] = false,
-	["normalColor"] = {
-	},
-	["glowPoor"] = false,
 	["keyColor"] = {
 	},
+	["glowPoor"] = false,
+	["normalColor"] = {
+	},
+	["glowQuality"] = false,
+	["soulColor"] = {
+	},
 	["colorSlots"] = false,
-	["slotBackground"] = 1,
+	["tipCount"] = true,
 	["displayScrapping"] = false,
 }

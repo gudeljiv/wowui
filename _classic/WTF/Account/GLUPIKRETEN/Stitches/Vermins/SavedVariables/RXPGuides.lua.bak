@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[47] = {
+		[52] = {
 		},
 	},
-	["currentStep"] = 47,
+	["currentStep"] = 52,
 	["questObjectivesCache"] = {
 		[0] = 20,
 		[880] = {
@@ -98,11 +98,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6641] = {
+		[913] = {
 			{
-				["type"] = "event",
+				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Defeat Vorsha the Lasher",
+				["text"] = "Thunderhawk Wings: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -116,21 +116,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6461] = {
+		[876] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Serena's Head: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[6523] = {
 			{
@@ -157,11 +150,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[876] = {
+		[1069] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Serena's Head: 0/1",
+				["numRequired"] = 15,
+				["text"] = "Deepmoss Egg: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -216,14 +209,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[1069] = {
+		[6461] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 15,
-				["text"] = "Deepmoss Egg: 0/15",
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[879] = {
 			{
@@ -248,11 +248,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[913] = {
+		[6641] = {
 			{
-				["type"] = "item",
+				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "Thunderhawk Wings: 0/1",
+				["text"] = "Defeat Vorsha the Lasher",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -272,44 +272,45 @@ RXPCData = {
 		[5052] = "Blood Shards of Agamaggan",
 		[1483] = "Ziz Fizziks",
 		[6548] = "Avenge My Village",
+		[6461] = "Blood Feeders",
 		[821] = "Chen's Empty Keg",
 		[899] = "Consumed by Hatred",
 		[884] = "Owatanka",
 		[1489] = "Hamuul Runetotem",
-		[883] = "Lakota'mani",
-		[6641] = "Vorsha the Lasher",
+		[3301] = "Mura Runetotem",
+		[865] = "Raptor Horns",
 		[3261] = "Jorn Skyseer",
-		[882] = "Ishamuhale",
-		[1062] = "Goblin Invaders",
-		[907] = "Enraged Thunder Lizards",
+		[913] = "Cry of the Thunderhawk",
 		[1093] = "Super Reaper 6000",
+		[1062] = "Goblin Invaders",
+		[888] = "Stolen Booty",
 		[1094] = "Further Instructions",
 		[1095] = "Further Instructions",
-		[6461] = "Blood Feeders",
-		[876] = "Serena Bloodfeather",
+		[874] = "Mahren Skyseer",
+		[1069] = "Deepmoss Spider Eggs",
 		[6523] = "Protect Kaya",
 		[1068] = "Shredding Machines",
-		[1069] = "Deepmoss Spider Eggs",
+		[876] = "Serena Bloodfeather",
 		[6442] = "Naga at the Zoram Strand",
 		[875] = "Harpy Lieutenants",
-		[888] = "Stolen Booty",
+		[907] = "Enraged Thunder Lizards",
 		[878] = "Tribes at War",
-		[913] = "Cry of the Thunderhawk",
-		[865] = "Raptor Horns",
-		[3301] = "Mura Runetotem",
+		[882] = "Ishamuhale",
+		[6641] = "Vorsha the Lasher",
+		[883] = "Lakota'mani",
 	},
 	["currentGuideName"] = "17-22 Stonetalon/Barrens/Ashenvale",
 	["stepSkip"] = {
 		[13] = true,
+		[6] = true,
 		[45] = true,
 		[17] = true,
-		[6] = true,
 		[11] = true,
 		[22] = true,
-		[21] = true,
 		[3] = true,
+		[21] = true,
 	},
-	["currentStepId"] = 4281865273,
+	["currentStepId"] = 4281865311,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -388,7 +389,7 @@ RXPCComms = {
 					["xp"] = 105,
 				},
 				["Duggy"] = {
-					["timePlayed"] = 130.1720000000205,
+					["timePlayed"] = 4598.483000000007,
 					["class"] = "MAGE",
 					["xp"] = 123,
 				},
@@ -397,9 +398,9 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 3,
 				},
-				["Вукир"] = {
-					["timePlayed"] = 157.689000000013,
-					["class"] = "SHAMAN",
+				["Myrmidonn"] = {
+					["timePlayed"] = 4626,
+					["class"] = "DRUID",
 					["xp"] = 109,
 				},
 				["Шаравель"] = {
@@ -408,13 +409,13 @@ RXPCComms = {
 					["xp"] = 32,
 				},
 				["Kryptor"] = {
-					["xpPercentage"] = 36,
-					["isRxp"] = true,
-					["lastSeen"] = 260293.476,
-					["timePlayed"] = 157.689000000013,
 					["level"] = 22,
-					["xp"] = 109,
 					["class"] = "PRIEST",
+					["lastSeen"] = 260591.059,
+					["timePlayed"] = 4626,
+					["isRxp"] = true,
+					["xp"] = 109,
+					["xpPercentage"] = 37,
 				},
 				["Slipperyhot"] = {
 					["timePlayed"] = 21.25299999999697,
@@ -431,9 +432,9 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 54,
 				},
-				["Myrmidonn"] = {
-					["timePlayed"] = 157.689000000013,
-					["class"] = "DRUID",
+				["Вукир"] = {
+					["timePlayed"] = 4626,
+					["class"] = "SHAMAN",
 					["xp"] = 109,
 				},
 			},
