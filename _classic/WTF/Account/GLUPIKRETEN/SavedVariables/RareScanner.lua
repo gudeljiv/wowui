@@ -1,343 +1,29 @@
 
 RareScannerDB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Dopesnare - Stitches"] = "Default",
+		["Dopesick - Stitches"] = "Default",
+		["Dopede - Stitches"] = "Default",
+		["Lonac - Stitches"] = "Default",
+		["Vermins - Stitches"] = "Default",
+		["Dopecure - Stitches"] = "Default",
+		["Dopeclaw - Stitches"] = "Default",
+		["Dopeah - Stitches"] = "Default",
+	},
 	["global"] = {
 		["object_names"] = {
 			["enUS"] = {
 			},
 		},
-		["rares_found"] = {
-			[5849] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "8520",
-				["coordX"] = "4740",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1695122693,
-			},
-			[5865] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1698329915,
-				["coordX"] = "5040",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "2060",
-			},
-			[3398] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "3940",
-				["coordX"] = "4640",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1698136706,
-			},
-			[7016] = {
-				["mapID"] = 1439,
-				["artID"] = {
-					1247, -- [1]
-				},
-				["foundTime"] = 1694010820,
-				["coordX"] = "5820",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "2380",
-			},
-			[3068] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["foundTime"] = 1698068549,
-				["coordX"] = "4120",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "4680",
-			},
-			[5836] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1694066069,
-				["coordX"] = "5620",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "0860",
-			},
-			[1936] = {
-				["mapID"] = 1420,
-				["artID"] = {
-					1210, -- [1]
-				},
-				["coordY"] = "5220",
-				["coordX"] = "3440",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1698342870,
-			},
-			[2447] = {
-				["mapID"] = 1416,
-				["artID"] = {
-					1205, -- [1]
-				},
-				["foundTime"] = 1695401399,
-				["coordX"] = "7920",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "5740",
-			},
-			[5807] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["coordY"] = "2000",
-				["coordX"] = "5420",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1693981171,
-			},
-			[5934] = {
-				["mapID"] = 1441,
-				["artID"] = {
-					1249, -- [1]
-				},
-				["foundTime"] = 1696583709,
-				["coordX"] = "1740",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "4020",
-			},
-			[4015] = {
-				["mapID"] = 1442,
-				["artID"] = {
-					1250, -- [1]
-				},
-				["foundTime"] = 1696848941,
-				["coordX"] = "4620",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "4380",
-			},
-			[5826] = {
-				["mapID"] = 1411,
-				["artID"] = {
-					1194, -- [1]
-				},
-				["foundTime"] = 1693832145,
-				["coordX"] = "4620",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "4880",
-			},
-			[5842] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "0940",
-				["coordX"] = "6040",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1698148702,
-			},
-			[1910] = {
-				["mapID"] = 1420,
-				["artID"] = {
-					1210, -- [1]
-				},
-				["coordY"] = "4160",
-				["coordX"] = "3420",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1698342862,
-			},
-			[3056] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["foundTime"] = 1698059559,
-				["coordX"] = "2440",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "5440",
-			},
-			[3253] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "6940",
-				["coordX"] = "4720",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1698346053,
-			},
-			[5797] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1698346061,
-				["coordX"] = "4720",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "7340",
-			},
-			[5829] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1695584273,
-				["coordX"] = "4120",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "2040",
-			},
-			[5798] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1698346318,
-				["coordX"] = "4540",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "6640",
-			},
-			[5787] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["foundTime"] = 1693979175,
-				["coordX"] = "4040",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "1700",
-			},
-			[5830] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1694065269,
-				["coordX"] = "3960",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "1360",
-			},
-			[3270] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "2440",
-				["coordX"] = "5900",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1695626510,
-			},
-			[5799] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1698346061,
-				["coordX"] = "4620",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "7200",
-			},
-			[5859] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "8140",
-				["coordX"] = "4140",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1697451041,
-			},
-			[5831] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["coordY"] = "3480",
-				["coordX"] = "6200",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1695645590,
-			},
-			[5786] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["coordY"] = "7220",
-				["coordX"] = "5320",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1697819315,
-			},
-			[5800] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1698346063,
-				["coordX"] = "4720",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "7320",
-			},
-			[5824] = {
-				["mapID"] = 1411,
-				["artID"] = {
-					1194, -- [1]
-				},
-				["coordY"] = "4280",
-				["coordX"] = "4300",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1697879073,
-			},
-			[5832] = {
-				["mapID"] = 1413,
-				["artID"] = {
-					1202, -- [1]
-				},
-				["foundTime"] = 1695923025,
-				["coordX"] = "4820",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "8020",
-			},
-			[5785] = {
-				["mapID"] = 1412,
-				["artID"] = {
-					1200, -- [1]
-				},
-				["coordY"] = "1280",
-				["coordX"] = "5580",
-				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1693810989,
-			},
-			[5808] = {
-				["mapID"] = 1411,
-				["artID"] = {
-					1194, -- [1]
-				},
-				["foundTime"] = 1697880373,
-				["coordX"] = "4740",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "7800",
-			},
-			[14278] = {
-				["mapID"] = 1424,
-				["artID"] = {
-					1214, -- [1]
-				},
-				["foundTime"] = 1697107307,
-				["coordX"] = "6480",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "5920",
-			},
-			[2931] = {
-				["mapID"] = 1418,
-				["artID"] = {
-					1207, -- [1]
-				},
-				["foundTime"] = 1697011362,
-				["coordX"] = "3780",
-				["atlasName"] = "VignetteKill",
-				["coordY"] = "5380",
-			},
+		["recentlySeen"] = {
 		},
-		["lootdbversion"] = 2,
+		["dbversion"] = {
+			{
+				["locale"] = "enUS",
+				["version"] = 2,
+			}, -- [1]
+		},
 		["loot_info"] = {
 			[5071] = {
 				"|cff1eff00|Hitem:5071::::::::13:::::::::|h[Shadow Wand]|h|r", -- [1]
@@ -2291,13 +1977,21 @@ RareScannerDB = {
 				2, -- [5]
 				15, -- [6]
 			},
-			[9849] = {
-				"|cff1eff00|Hitem:9849::::::::37:::::::::|h[Conjurer's Hood]|h|r", -- [1]
+			[1478] = {
+				"|cffffffff|Hitem:1478::::::::25:::::::::|h[Scroll of Protection II]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134943, -- [4]
+				0, -- [5]
+				0, -- [6]
+			},
+			[9807] = {
+				"|cff1eff00|Hitem:9807::::::::10:::::::::|h[Superior Shoulders]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				133134, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135039, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
 			[3827] = {
 				"|cffffffff|Hitem:3827::::::::37:::::::::|h[Mana Potion]|h|r", -- [1]
@@ -2307,13 +2001,13 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[1430] = {
-				"|cff9d9d9d|Hitem:1430::::::::30:::::::::|h[Patchwork Gloves]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132952, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[4604] = {
+				"|cffffffff|Hitem:4604::::::::30:::::::::|h[Forest Mushroom Cap]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134534, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
 			[5784] = {
 				"|cffffffff|Hitem:5784::::::::28:::::::::|h[Slimy Murloc Scale]|h|r", -- [1]
@@ -2347,13 +2041,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[7445] = {
-				"|cff1eff00|Hitem:7445::::::::33:::::::::|h[Sentinel Shoulders]|h|r", -- [1]
+			[5112] = {
+				"|cff1eff00|Hitem:5112::::::::14:::::::::|h[Ritual Blade]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135039, -- [4]
-				4, -- [5]
-				2, -- [6]
+				"INVTYPE_WEAPON", -- [3]
+				135638, -- [4]
+				2, -- [5]
+				15, -- [6]
 			},
 			[727] = {
 				"|cff1eff00|Hitem:727::::::::30:::::::::|h[Notched Shortsword]|h|r", -- [1]
@@ -2371,13 +2065,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[7481] = {
-				"|cff1eff00|Hitem:7481::::::::36:::::::::|h[Ranger Boots]|h|r", -- [1]
+			[7438] = {
+				"|cff1eff00|Hitem:7438::::::::33:::::::::|h[Twilight Belt]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132542, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132499, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
 			[15521] = {
 				"|cff1eff00|Hitem:15521::::::::25:::::::::|h[Spiked Chain Leggings]|h|r", -- [1]
@@ -2387,21 +2081,21 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[7474] = {
-				"|cff1eff00|Hitem:7474::::::::36:::::::::|h[Regal Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133754, -- [4]
+			[1433] = {
+				"|cff9d9d9d|Hitem:1433::::::::30:::::::::|h[Patchwork Armor]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				135010, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[5636] = {
-				"|cff9d9d9d|Hitem:5636::::::::36:::::::::|h[Delicate Feather]|h|r", -- [1]
+			[1425] = {
+				"|cff9d9d9d|Hitem:1425::::::::30:::::::::|h[Worn Leather Vest]|h|r", -- [1]
 				0, -- [2]
-				"", -- [3]
-				132923, -- [4]
-				5, -- [5]
-				0, -- [6]
+				"INVTYPE_CHEST", -- [3]
+				135009, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[730] = {
 				"|cffffffff|Hitem:730::::::::28:::::::::|h[Murloc Eye]|h|r", -- [1]
@@ -2411,13 +2105,13 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[5447] = {
-				"|cff9d9d9d|Hitem:5447::::::::27:::::::::|h[Damaged Elemental Bracer]|h|r", -- [1]
+			[1418] = {
+				"|cff9d9d9d|Hitem:1418::::::::30:::::::::|h[Worn Leather Belt]|h|r", -- [1]
 				0, -- [2]
-				"", -- [3]
-				132606, -- [4]
-				15, -- [5]
-				0, -- [6]
+				"INVTYPE_WAIST", -- [3]
+				132513, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[4813] = {
 				"|cff9d9d9d|Hitem:4813::::::::5:::::::::|h[Small Leather Collar]|h|r", -- [1]
@@ -2427,13 +2121,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[6211] = {
-				"|cffffffff|Hitem:6211::::::::28:::::::::|h[Recipe: Elixir of Ogre's Strength]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134939, -- [4]
-				9, -- [5]
-				6, -- [6]
+			[1417] = {
+				"|cff9d9d9d|Hitem:1417::::::::30:::::::::|h[Beaten Battle Axe]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135424, -- [4]
+				2, -- [5]
+				1, -- [6]
 			},
 			[7454] = {
 				"|cff1eff00|Hitem:7454::::::::33:::::::::|h[Knight's Breastplate]|h|r", -- [1]
@@ -2451,13 +2145,13 @@ RareScannerDB = {
 				2, -- [5]
 				3, -- [6]
 			},
-			[4565] = {
-				"|cffffffff|Hitem:4565::::::::30:::::::::|h[Simple Dagger]|h|r", -- [1]
+			[4560] = {
+				"|cffffffff|Hitem:4560::::::::30:::::::::|h[Fine Scimitar]|h|r", -- [1]
 				1, -- [2]
 				"INVTYPE_WEAPON", -- [3]
-				135637, -- [4]
+				135325, -- [4]
 				2, -- [5]
-				15, -- [6]
+				7, -- [6]
 			},
 			[3373] = {
 				"|cff9d9d9d|Hitem:3373::::::::30:::::::::|h[Patchwork Bracers]|h|r", -- [1]
@@ -2467,13 +2161,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[2212] = {
-				"|cff9d9d9d|Hitem:2212::::::::30:::::::::|h[Cracked Buckler]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134955, -- [4]
+			[7441] = {
+				"|cff1eff00|Hitem:7441::::::::34:::::::::|h[Sentinel Cap]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				133117, -- [4]
 				4, -- [5]
-				6, -- [6]
+				2, -- [6]
 			},
 			[2934] = {
 				"|cffffffff|Hitem:2934::::::::3:::::::::|h[Ruined Leather Scraps]|h|r", -- [1]
@@ -2491,13 +2185,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[2138] = {
-				"|cff9d9d9d|Hitem:2138::::::::30:::::::::|h[Sharpened Letter Opener]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				135641, -- [4]
-				2, -- [5]
-				15, -- [6]
+			[3685] = {
+				"|cffffffff|Hitem:3685::::::::36:::::::::|h[Raptor Egg]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132834, -- [4]
+				7, -- [5]
+				0, -- [6]
 			},
 			[2940] = {
 				"|cff9d9d9d|Hitem:2940::::::::27:::::::::|h[Bloody Bear Paw]|h|r", -- [1]
@@ -2507,13 +2201,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[4461] = {
-				"|cffffffff|Hitem:4461::::::::36:::::::::|h[Raptor Hide]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134303, -- [4]
-				7, -- [5]
-				0, -- [6]
+			[3199] = {
+				"|cff1eff00|Hitem:3199::::::::26:::::::::|h[Battle Slayer]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135424, -- [4]
+				2, -- [5]
+				1, -- [6]
 			},
 			[4861] = {
 				"|cff1eff00|Hitem:4861::::::::5:::::::::|h[Sleek Feathered Tunic]|h|r", -- [1]
@@ -2523,29 +2217,29 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[5571] = {
-				"|cffffffff|Hitem:5571::::::::30:::::::::|h[Small Black Pouch]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_BAG", -- [3]
-				133635, -- [4]
-				1, -- [5]
-				0, -- [6]
-			},
-			[1431] = {
-				"|cff9d9d9d|Hitem:1431::::::::30:::::::::|h[Patchwork Pants]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134591, -- [4]
+			[7437] = {
+				"|cff1eff00|Hitem:7437::::::::36:::::::::|h[Twilight Cuffs]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132608, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[9889] = {
-				"|cff1eff00|Hitem:9889::::::::35:::::::::|h[Huntsman's Cap]|h|r", -- [1]
+			[1416] = {
+				"|cff9d9d9d|Hitem:1416::::::::30:::::::::|h[Rusty Hatchet]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				135421, -- [4]
+				2, -- [5]
+				0, -- [6]
+			},
+			[9850] = {
+				"|cff1eff00|Hitem:9850::::::::36:::::::::|h[Conjurer's Mantle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				132514, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135036, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
 			[9746] = {
 				"|cffffffff|Hitem:9746::::::::13:::::::::|h[Simple Gloves]|h|r", -- [1]
@@ -2651,21 +2345,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9850] = {
-				"|cff1eff00|Hitem:9850::::::::36:::::::::|h[Conjurer's Mantle]|h|r", -- [1]
+			[2978] = {
+				"|cff1eff00|Hitem:2978::::::::18:::::::::|h[Veteran Leggings]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135036, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134589, -- [4]
 				4, -- [5]
-				1, -- [6]
-			},
-			[2450] = {
-				"|cffffffff|Hitem:2450::::::::27:::::::::|h[Briarthorn]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134412, -- [4]
-				7, -- [5]
-				0, -- [6]
+				3, -- [6]
 			},
 			[16647] = {
 				"|cffffffff|Hitem:16647::::::::24:::::::::|h[Shredder Operating Manual - Page 3]|h|r", -- [1]
@@ -2675,21 +2361,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[1495] = {
-				"|cff9d9d9d|Hitem:1495::::::::14:::::::::|h[Calico Shoes]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[9898] = {
-				"|cff1eff00|Hitem:9898::::::::34:::::::::|h[Jazeraint Cloak]|h|r", -- [1]
+			[9866] = {
+				"|cff1eff00|Hitem:9866::::::::33:::::::::|h[Renegade Chestguard]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133759, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				132634, -- [4]
 				4, -- [5]
-				1, -- [6]
+				3, -- [6]
 			},
 			[9890] = {
 				"|cff1eff00|Hitem:9890::::::::34:::::::::|h[Huntsman's Cape]|h|r", -- [1]
@@ -2706,6 +2384,22 @@ RareScannerDB = {
 				132604, -- [4]
 				4, -- [5]
 				2, -- [6]
+			},
+			[1495] = {
+				"|cff9d9d9d|Hitem:1495::::::::14:::::::::|h[Calico Shoes]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[9898] = {
+				"|cff1eff00|Hitem:9898::::::::34:::::::::|h[Jazeraint Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133759, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[9906] = {
 				"|cff1eff00|Hitem:9906::::::::34:::::::::|h[Royal Sash]|h|r", -- [1]
@@ -2731,13 +2425,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[7458] = {
-				"|cff1eff00|Hitem:7458::::::::33:::::::::|h[Knight's Boots]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132535, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[4421] = {
+				"|cffffffff|Hitem:4421::::::::32:::::::::|h[Scroll of Protection III]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134943, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
 			[1501] = {
 				"|cff9d9d9d|Hitem:1501::::::::14:::::::::|h[Calico Tunic]|h|r", -- [1]
@@ -2747,21 +2441,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[14126] = {
-				"|cffffffff|Hitem:14126::::::::23:::::::::|h[Ritual Amice]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135040, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[1513] = {
+				"|cff9d9d9d|Hitem:1513::::::::14:::::::::|h[Old Greatsword]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135276, -- [4]
+				2, -- [5]
+				8, -- [6]
 			},
-			[9902] = {
-				"|cff1eff00|Hitem:9902::::::::36:::::::::|h[Jazeraint Helm]|h|r", -- [1]
+			[15017] = {
+				"|cff1eff00|Hitem:15017::::::::16:::::::::|h[Lupine Leggings]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				133139, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134586, -- [4]
 				4, -- [5]
-				3, -- [6]
+				2, -- [6]
 			},
 			[1504] = {
 				"|cff9d9d9d|Hitem:1504::::::::14:::::::::|h[Warped Leather Bracers]|h|r", -- [1]
@@ -2835,13 +2529,13 @@ RareScannerDB = {
 				2, -- [5]
 				1, -- [6]
 			},
-			[1513] = {
-				"|cff9d9d9d|Hitem:1513::::::::14:::::::::|h[Old Greatsword]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135276, -- [4]
-				2, -- [5]
-				8, -- [6]
+			[14126] = {
+				"|cffffffff|Hitem:14126::::::::23:::::::::|h[Ritual Amice]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135040, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[1514] = {
 				"|cff9d9d9d|Hitem:1514::::::::14:::::::::|h[Rusty Warhammer]|h|r", -- [1]
@@ -2867,11 +2561,11 @@ RareScannerDB = {
 				9, -- [5]
 				8, -- [6]
 			},
-			[9894] = {
-				"|cff1eff00|Hitem:9894::::::::36:::::::::|h[Huntsman's Shoulders]|h|r", -- [1]
+			[15009] = {
+				"|cff1eff00|Hitem:15009::::::::13:::::::::|h[Primal Leggings]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135039, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134585, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
@@ -2891,11 +2585,11 @@ RareScannerDB = {
 				2, -- [5]
 				2, -- [6]
 			},
-			[10138] = {
-				"|cff1eff00|Hitem:10138::::::::12:::::::::|h[High Councillor's Cloak]|h|r", -- [1]
+			[2622] = {
+				"|cff1eff00|Hitem:2622::::::::32:::::::::|h[Nimar's Tribal Headdress]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133768, -- [4]
+				"INVTYPE_HEAD", -- [3]
+				133072, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -2963,13 +2657,13 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[8178] = {
-				"|cff1eff00|Hitem:8178::::::::5:::::::::|h[Training Sword]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135355, -- [4]
+			[768] = {
+				"|cffffffff|Hitem:768::::::::5:::::::::|h[Lumberjack Axe]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				132392, -- [4]
 				2, -- [5]
-				8, -- [6]
+				0, -- [6]
 			},
 			[10170] = {
 				"|cff1eff00|Hitem:10170::::::::17:::::::::|h[Templar Pauldrons]|h|r", -- [1]
@@ -2987,13 +2681,13 @@ RareScannerDB = {
 				2, -- [5]
 				4, -- [6]
 			},
-			[2979] = {
-				"|cffffffff|Hitem:2979::::::::18:::::::::|h[Veteran Boots]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132543, -- [4]
+			[9854] = {
+				"|cff1eff00|Hitem:9854::::::::32:::::::::|h[Archer's Jerkin]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132723, -- [4]
 				4, -- [5]
-				3, -- [6]
+				2, -- [6]
 			},
 			[15309] = {
 				"|cff1eff00|Hitem:15309::::::::14:::::::::|h[Feral Cloak]|h|r", -- [1]
@@ -3011,13 +2705,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[768] = {
-				"|cffffffff|Hitem:768::::::::5:::::::::|h[Lumberjack Axe]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				132392, -- [4]
+			[8178] = {
+				"|cff1eff00|Hitem:8178::::::::5:::::::::|h[Training Sword]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135355, -- [4]
 				2, -- [5]
-				0, -- [6]
+				8, -- [6]
 			},
 			[4093] = {
 				"|cff9d9d9d|Hitem:4093::::::::29:::::::::|h[Large Basilisk Tail]|h|r", -- [1]
@@ -3075,13 +2769,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[4552] = {
-				"|cff9d9d9d|Hitem:4552::::::::36:::::::::|h[Smooth Stone Chip]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				135236, -- [4]
-				15, -- [5]
-				0, -- [6]
+			[15132] = {
+				"|cff1eff00|Hitem:15132::::::::26:::::::::|h[Cutthroat's Armguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132609, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[8747] = {
 				"|cff9d9d9d|Hitem:8747::::::::32:::::::::|h[Hardened Leather Helm]|h|r", -- [1]
@@ -3099,13 +2793,13 @@ RareScannerDB = {
 				2, -- [5]
 				2, -- [6]
 			},
-			[9806] = {
-				"|cff1eff00|Hitem:9806::::::::10:::::::::|h[Superior Gloves]|h|r", -- [1]
+			[15944] = {
+				"|cff1eff00|Hitem:15944::::::::13:::::::::|h[Ancestral Orb]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
+				"INVTYPE_HOLDABLE", -- [3]
+				134335, -- [4]
 				4, -- [5]
-				2, -- [6]
+				0, -- [6]
 			},
 			[774] = {
 				"|cff1eff00|Hitem:774::::::::5:::::::::|h[Malachite]|h|r", -- [1]
@@ -3147,21 +2841,21 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[7091] = {
-				"|cff1eff00|Hitem:7091::::::::27:::::::::|h[Pattern: Truefaith Gloves]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134942, -- [4]
-				9, -- [5]
-				2, -- [6]
-			},
-			[4895] = {
-				"|cffffffff|Hitem:4895::::::::25:::::::::|h[Thunder Lizard Horn]|h|r", -- [1]
+			[2734] = {
+				"|cffffffff|Hitem:2734::::::::34:::::::::|h[Green Hills of Stranglethorn - Page 10]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133723, -- [4]
-				12, -- [5]
+				134332, -- [4]
+				15, -- [5]
 				0, -- [6]
+			},
+			[9782] = {
+				"|cff1eff00|Hitem:9782::::::::15:::::::::|h[Bandit Jerkin]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				135015, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[15477] = {
 				"|cff1eff00|Hitem:15477::::::::5:::::::::|h[Charger's Pants]|h|r", -- [1]
@@ -3171,13 +2865,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[12843] = {
-				"|cff1eff00|Hitem:12843::::::::12:::::::::|h[Corruptor's Scourgestone]|h|r", -- [1]
+			[9774] = {
+				"|cff1eff00|Hitem:9774::::::::10:::::::::|h[Greenweave Vest]|h|r", -- [1]
 				2, -- [2]
-				"", -- [3]
-				133445, -- [4]
-				12, -- [5]
-				0, -- [6]
+				"INVTYPE_CHEST", -- [3]
+				132656, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[15493] = {
 				"|cff1eff00|Hitem:15493::::::::14:::::::::|h[Bloodspattered Loincloth]|h|r", -- [1]
@@ -3227,53 +2921,53 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[15249] = {
-				"|cff1eff00|Hitem:15249::::::::25:::::::::|h[Polished Zweihander]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135324, -- [4]
-				2, -- [5]
-				8, -- [6]
-			},
-			[14372] = {
-				"|cff1eff00|Hitem:14372::::::::26:::::::::|h[Sanguine Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135013, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[6198] = {
-				"|cff1eff00|Hitem:6198::::::::36:::::::::|h[Jurassic Wristguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132600, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[7433] = {
-				"|cff1eff00|Hitem:7433::::::::33:::::::::|h[Twilight Gloves]|h|r", -- [1]
+			[6615] = {
+				"|cff1eff00|Hitem:6615::::::::27:::::::::|h[Sage's Gloves]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_HAND", -- [3]
-				132955, -- [4]
+				132950, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[6610] = {
-				"|cff1eff00|Hitem:6610::::::::29:::::::::|h[Sage's Robe]|h|r", -- [1]
+			[7493] = {
+				"|cff1eff00|Hitem:7493::::::::33:::::::::|h[Captain's Bracers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132660, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132611, -- [4]
 				4, -- [5]
-				1, -- [6]
+				3, -- [6]
 			},
-			[3307] = {
-				"|cff1eff00|Hitem:3307::::::::14:::::::::|h[Barbaric Cloth Boots]|h|r", -- [1]
+			[11151] = {
+				"|cff1eff00|Hitem:11151::::::::25:::::::::|h[Formula: Enchant Gloves - Herbalism]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
+				"", -- [3]
+				134327, -- [4]
+				9, -- [5]
+				8, -- [6]
+			},
+			[3771] = {
+				"|cffffffff|Hitem:3771::::::::24:::::::::|h[Wild Hog Shank]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133969, -- [4]
+				0, -- [5]
+				0, -- [6]
+			},
+			[5664] = {
+				"|cffffffff|Hitem:5664::::::::25:::::::::|h[Corroded Shrapnel]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134070, -- [4]
+				12, -- [5]
+				0, -- [6]
+			},
+			[9865] = {
+				"|cff1eff00|Hitem:9865::::::::29:::::::::|h[Renegade Bracers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132606, -- [4]
 				4, -- [5]
-				1, -- [6]
+				3, -- [6]
 			},
 			[9451] = {
 				"|cffffffff|Hitem:9451::::::::27:::::::::|h[Bubbling Water]|h|r", -- [1]
@@ -3299,11 +2993,11 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9832] = {
-				"|cff1eff00|Hitem:9832::::::::29:::::::::|h[Scaled Leather Gloves]|h|r", -- [1]
+			[9863] = {
+				"|cff1eff00|Hitem:9863::::::::33:::::::::|h[Archer's Shoulderpads]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132958, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135039, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
@@ -3323,12 +3017,12 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[5572] = {
-				"|cffffffff|Hitem:5572::::::::5:::::::::|h[Small Green Pouch]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_BAG", -- [3]
-				133637, -- [4]
-				1, -- [5]
+			[1516] = {
+				"|cff9d9d9d|Hitem:1516::::::::14:::::::::|h[Worn Hatchet]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				135419, -- [4]
+				2, -- [5]
 				0, -- [6]
 			},
 			[5269] = {
@@ -3339,28 +3033,28 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[7434] = {
-				"|cff1eff00|Hitem:7434::::::::32:::::::::|h[Twilight Boots]|h|r", -- [1]
+			[9871] = {
+				"|cff1eff00|Hitem:9871::::::::32:::::::::|h[Renegade Leggings]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[6574] = {
-				"|cff1eff00|Hitem:6574::::::::10:::::::::|h[Defender Bracers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132613, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134583, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[790] = {
-				"|cff1eff00|Hitem:790::::::::36:::::::::|h[Forester's Axe]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				132405, -- [4]
-				2, -- [5]
+			[4689] = {
+				"|cffffffff|Hitem:4689::::::::18:::::::::|h[Hunting Cloak]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133764, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[5808] = {
+				"|cffffffff|Hitem:5808::::::::25:::::::::|h[Pridewing Venom Sac]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134339, -- [4]
+				12, -- [5]
 				0, -- [6]
 			},
 			[6308] = {
@@ -3371,27 +3065,27 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[2213] = {
-				"|cff9d9d9d|Hitem:2213::::::::30:::::::::|h[Worn Large Shield]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134955, -- [4]
-				4, -- [5]
-				6, -- [6]
-			},
-			[4338] = {
-				"|cffffffff|Hitem:4338::::::::32:::::::::|h[Mageweave Cloth]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132892, -- [4]
-				7, -- [5]
-				0, -- [6]
-			},
-			[7411] = {
-				"|cff1eff00|Hitem:7411::::::::27:::::::::|h[Infiltrator Cloak]|h|r", -- [1]
+			[2598] = {
+				"|cff1eff00|Hitem:2598::::::::5:::::::::|h[Pattern: Red Linen Robe]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133754, -- [4]
+				"", -- [3]
+				134942, -- [4]
+				9, -- [5]
+				2, -- [6]
+			},
+			[7407] = {
+				"|cff1eff00|Hitem:7407::::::::29:::::::::|h[Infiltrator Armor]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132718, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[9747] = {
+				"|cff1eff00|Hitem:9747::::::::13:::::::::|h[Simple Britches]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134586, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -3427,11 +3121,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[7439] = {
-				"|cff1eff00|Hitem:7439::::::::36:::::::::|h[Sentinel Breastplate]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132719, -- [4]
+			[9755] = {
+				"|cffffffff|Hitem:9755::::::::13:::::::::|h[Gypsy Gloves]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
@@ -3475,29 +3169,29 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[9779] = {
-				"|cff1eff00|Hitem:9779::::::::14:::::::::|h[Bandit Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133771, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[7475] = {
-				"|cff1eff00|Hitem:7475::::::::36:::::::::|h[Regal Cuffs]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132608, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[5445] = {
-				"|cffffffff|Hitem:5445::::::::22:::::::::|h[Ring of Zoram]|h|r", -- [1]
+			[805] = {
+				"|cffffffff|Hitem:805::::::::30:::::::::|h[Small Red Pouch]|h|r", -- [1]
 				1, -- [2]
-				"", -- [3]
-				133352, -- [4]
-				12, -- [5]
+				"INVTYPE_BAG", -- [3]
+				133638, -- [4]
+				1, -- [5]
 				0, -- [6]
+			},
+			[9795] = {
+				"|cff1eff00|Hitem:9795::::::::22:::::::::|h[Ivycloth Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132961, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[4566] = {
+				"|cff1eff00|Hitem:4566::::::::13:::::::::|h[Sturdy Quarterstaff]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135145, -- [4]
+				2, -- [5]
+				10, -- [6]
 			},
 			[3190] = {
 				"|cffffffff|Hitem:3190::::::::5:::::::::|h[Beatstick]|h|r", -- [1]
@@ -3515,13 +3209,13 @@ RareScannerDB = {
 				2, -- [5]
 				8, -- [6]
 			},
-			[7407] = {
-				"|cff1eff00|Hitem:7407::::::::29:::::::::|h[Infiltrator Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132718, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[4338] = {
+				"|cffffffff|Hitem:4338::::::::32:::::::::|h[Mageweave Cloth]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132892, -- [4]
+				7, -- [5]
+				0, -- [6]
 			},
 			[3196] = {
 				"|cff1eff00|Hitem:3196::::::::16:::::::::|h[Edged Bastard Sword]|h|r", -- [1]
@@ -3555,13 +3249,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[3254] = {
-				"|cffffffff|Hitem:3254::::::::18:::::::::|h[Skittering Blood]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134437, -- [4]
-				12, -- [5]
-				0, -- [6]
+			[14119] = {
+				"|cff1eff00|Hitem:14119::::::::14:::::::::|h[Aboriginal Loincloth]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134706, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[3206] = {
 				"|cff1eff00|Hitem:3206::::::::31:::::::::|h[Cavalier Two-hander]|h|r", -- [1]
@@ -3571,19 +3265,19 @@ RareScannerDB = {
 				2, -- [5]
 				8, -- [6]
 			},
-			[9747] = {
-				"|cff1eff00|Hitem:9747::::::::13:::::::::|h[Simple Britches]|h|r", -- [1]
+			[7435] = {
+				"|cff1eff00|Hitem:7435::::::::34:::::::::|h[Twilight Mantle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134586, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135033, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[9755] = {
-				"|cffffffff|Hitem:9755::::::::13:::::::::|h[Gypsy Gloves]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
+			[7439] = {
+				"|cff1eff00|Hitem:7439::::::::36:::::::::|h[Sentinel Breastplate]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132719, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
@@ -3603,13 +3297,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[805] = {
-				"|cffffffff|Hitem:805::::::::30:::::::::|h[Small Red Pouch]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_BAG", -- [3]
-				133638, -- [4]
-				1, -- [5]
-				0, -- [6]
+			[9779] = {
+				"|cff1eff00|Hitem:9779::::::::14:::::::::|h[Bandit Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133771, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[9787] = {
 				"|cff1eff00|Hitem:9787::::::::10:::::::::|h[Raider's Gauntlets]|h|r", -- [1]
@@ -3619,13 +3313,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9795] = {
-				"|cff1eff00|Hitem:9795::::::::22:::::::::|h[Ivycloth Gloves]|h|r", -- [1]
+			[7459] = {
+				"|cff1eff00|Hitem:7459::::::::34:::::::::|h[Knight's Pauldrons]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132961, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135058, -- [4]
 				4, -- [5]
-				1, -- [6]
+				3, -- [6]
 			},
 			[9803] = {
 				"|cff1eff00|Hitem:9803::::::::10:::::::::|h[Superior Bracers]|h|r", -- [1]
@@ -3683,13 +3377,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9859] = {
-				"|cff1eff00|Hitem:9859::::::::32:::::::::|h[Archer's Cap]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				133117, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[5445] = {
+				"|cffffffff|Hitem:5445::::::::22:::::::::|h[Ring of Zoram]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133352, -- [4]
+				12, -- [5]
+				0, -- [6]
 			},
 			[16649] = {
 				"|cffffffff|Hitem:16649::::::::22:::::::::|h[Shredder Operating Manual - Page 5]|h|r", -- [1]
@@ -3707,13 +3401,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[3280] = {
-				"|cffffffff|Hitem:3280::::::::5:::::::::|h[Battle Chain Bracers]|h|r", -- [1]
-				1, -- [2]
+			[6556] = {
+				"|cff1eff00|Hitem:6556::::::::14:::::::::|h[Bard's Bracers]|h|r", -- [1]
+				2, -- [2]
 				"INVTYPE_WRIST", -- [3]
-				132606, -- [4]
+				132604, -- [4]
 				4, -- [5]
-				3, -- [6]
+				2, -- [6]
 			},
 			[9891] = {
 				"|cff1eff00|Hitem:9891::::::::33:::::::::|h[Huntsman's Belt]|h|r", -- [1]
@@ -3739,21 +3433,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[6580] = {
-				"|cff1eff00|Hitem:6580::::::::10:::::::::|h[Defender Tunic]|h|r", -- [1]
+			[3292] = {
+				"|cff1eff00|Hitem:3292::::::::13:::::::::|h[Ancestral Tunic]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_CHEST", -- [3]
-				132626, -- [4]
+				135011, -- [4]
 				4, -- [5]
-				3, -- [6]
+				1, -- [6]
 			},
-			[6596] = {
-				"|cff1eff00|Hitem:6596::::::::22:::::::::|h[Battleforge Legguards]|h|r", -- [1]
+			[10091] = {
+				"|cff1eff00|Hitem:10091::::::::17:::::::::|h[Gothic Plate Leggings]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_LEGS", -- [3]
-				134586, -- [4]
+				134589, -- [4]
 				4, -- [5]
-				3, -- [6]
+				4, -- [6]
 			},
 			[9931] = {
 				"|cff1eff00|Hitem:9931::::::::24:::::::::|h[Brigade Girdle]|h|r", -- [1]
@@ -3795,21 +3489,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[5798] = {
-				"|cffffffff|Hitem:5798::::::::29:::::::::|h[Rocket Car Parts]|h|r", -- [1]
-				1, -- [2]
+			[4775] = {
+				"|cff9d9d9d|Hitem:4775::::::::12:::::::::|h[Cracked Bill]|h|r", -- [1]
+				0, -- [2]
 				"", -- [3]
-				132997, -- [4]
-				12, -- [5]
+				133707, -- [4]
+				15, -- [5]
 				0, -- [6]
 			},
-			[6600] = {
-				"|cff1eff00|Hitem:6600::::::::10:::::::::|h[Dervish Belt]|h|r", -- [1]
+			[10123] = {
+				"|cff1eff00|Hitem:10123::::::::12:::::::::|h[Ornate Circlet]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132514, -- [4]
+				"INVTYPE_HEAD", -- [3]
+				132768, -- [4]
 				4, -- [5]
-				2, -- [6]
+				3, -- [6]
 			},
 			[818] = {
 				"|cff1eff00|Hitem:818::::::::14:::::::::|h[Tigerseye]|h|r", -- [1]
@@ -3835,13 +3529,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[4570] = {
-				"|cff1eff00|Hitem:4570::::::::14:::::::::|h[Birchwood Maul]|h|r", -- [1]
+			[3308] = {
+				"|cff1eff00|Hitem:3308::::::::14:::::::::|h[Barbaric Cloth Gloves]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				133052, -- [4]
-				2, -- [5]
-				5, -- [6]
+				"INVTYPE_HAND", -- [3]
+				132952, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[6548] = {
 				"|cff1eff00|Hitem:6548::::::::14:::::::::|h[Soldier's Girdle]|h|r", -- [1]
@@ -3851,21 +3545,21 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[14119] = {
-				"|cff1eff00|Hitem:14119::::::::14:::::::::|h[Aboriginal Loincloth]|h|r", -- [1]
+			[15142] = {
+				"|cff1eff00|Hitem:15142::::::::29:::::::::|h[Ghostwalker Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134706, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[6556] = {
-				"|cff1eff00|Hitem:6556::::::::14:::::::::|h[Bard's Bracers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132604, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132592, -- [4]
 				4, -- [5]
 				2, -- [6]
+			},
+			[3280] = {
+				"|cffffffff|Hitem:3280::::::::5:::::::::|h[Battle Chain Bracers]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132606, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[3282] = {
 				"|cff1eff00|Hitem:3282::::::::13:::::::::|h[Battle Chain Pants]|h|r", -- [1]
@@ -3907,21 +3601,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[3292] = {
-				"|cff1eff00|Hitem:3292::::::::13:::::::::|h[Ancestral Tunic]|h|r", -- [1]
+			[6580] = {
+				"|cff1eff00|Hitem:6580::::::::10:::::::::|h[Defender Tunic]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_CHEST", -- [3]
-				135011, -- [4]
+				132626, -- [4]
 				4, -- [5]
-				1, -- [6]
+				3, -- [6]
 			},
-			[10091] = {
-				"|cff1eff00|Hitem:10091::::::::17:::::::::|h[Gothic Plate Leggings]|h|r", -- [1]
+			[6584] = {
+				"|cff1eff00|Hitem:6584::::::::28:::::::::|h[Scouting Tunic]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134589, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				132725, -- [4]
 				4, -- [5]
-				4, -- [6]
+				2, -- [6]
 			},
 			[10099] = {
 				"|cff1eff00|Hitem:10099::::::::17:::::::::|h[Councillor's Gloves]|h|r", -- [1]
@@ -3947,13 +3641,13 @@ RareScannerDB = {
 				1, -- [5]
 				0, -- [6]
 			},
-			[10123] = {
-				"|cff1eff00|Hitem:10123::::::::12:::::::::|h[Ornate Circlet]|h|r", -- [1]
+			[6600] = {
+				"|cff1eff00|Hitem:6600::::::::10:::::::::|h[Dervish Belt]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				132768, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132514, -- [4]
 				4, -- [5]
-				3, -- [6]
+				2, -- [6]
 			},
 			[6604] = {
 				"|cff1eff00|Hitem:6604::::::::10:::::::::|h[Dervish Cape]|h|r", -- [1]
@@ -3971,11 +3665,11 @@ RareScannerDB = {
 				2, -- [5]
 				1, -- [6]
 			},
-			[3308] = {
-				"|cff1eff00|Hitem:3308::::::::14:::::::::|h[Barbaric Cloth Gloves]|h|r", -- [1]
+			[6612] = {
+				"|cff1eff00|Hitem:6612::::::::24:::::::::|h[Sage's Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132952, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -4035,13 +3729,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[11166] = {
-				"|cff1eff00|Hitem:11166::::::::32:::::::::|h[Formula: Enchant Gloves - Skinning]|h|r", -- [1]
-				2, -- [2]
+			[4536] = {
+				"|cffffffff|Hitem:4536::::::::5:::::::::|h[Shiny Red Apple]|h|r", -- [1]
+				1, -- [2]
 				"", -- [3]
-				134327, -- [4]
-				9, -- [5]
-				8, -- [6]
+				133975, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
 			[10219] = {
 				"|cff1eff00|Hitem:10219::::::::12:::::::::|h[Elegant Circlet]|h|r", -- [1]
@@ -4059,14 +3753,6 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[4614] = {
-				"|cff1eff00|Hitem:4614::::::::37:::::::::|h[Pendant of Myzrael]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_NECK", -- [3]
-				133294, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
 			[5637] = {
 				"|cffffffff|Hitem:5637::::::::29:::::::::|h[Large Fang]|h|r", -- [1]
 				1, -- [2]
@@ -4075,29 +3761,37 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[6607] = {
-				"|cff1eff00|Hitem:6607::::::::31:::::::::|h[Dervish Leggings]|h|r", -- [1]
+			[4614] = {
+				"|cff1eff00|Hitem:4614::::::::37:::::::::|h[Pendant of Myzrael]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134587, -- [4]
+				"INVTYPE_NECK", -- [3]
+				133294, -- [4]
 				4, -- [5]
-				2, -- [6]
+				0, -- [6]
 			},
-			[9851] = {
-				"|cff1eff00|Hitem:9851::::::::33:::::::::|h[Conjurer's Breeches]|h|r", -- [1]
+			[15298] = {
+				"|cff1eff00|Hitem:15298::::::::14:::::::::|h[Grizzly Buckler]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134587, -- [4]
+				"INVTYPE_SHIELD", -- [3]
+				134956, -- [4]
+				4, -- [5]
+				6, -- [6]
+			},
+			[4577] = {
+				"|cff1eff00|Hitem:4577::::::::5:::::::::|h[Compact Shotgun]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				135612, -- [4]
+				2, -- [5]
+				3, -- [6]
+			},
+			[3289] = {
+				"|cffffffff|Hitem:3289::::::::11:::::::::|h[Ancestral Boots]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
 				4, -- [5]
 				1, -- [6]
-			},
-			[7455] = {
-				"|cff1eff00|Hitem:7455::::::::33:::::::::|h[Knight's Legguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134584, -- [4]
-				4, -- [5]
-				3, -- [6]
 			},
 			[14367] = {
 				"|cff1eff00|Hitem:14367::::::::16:::::::::|h[Mystic's Gloves]|h|r", -- [1]
@@ -4115,61 +3809,61 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[7443] = {
-				"|cff1eff00|Hitem:7443::::::::33:::::::::|h[Sentinel Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[767] = {
-				"|cffffffff|Hitem:767::::::::18:::::::::|h[Long Bo Staff]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135145, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[15969] = {
-				"|cff1eff00|Hitem:15969::::::::13:::::::::|h[Beaded Orb]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HOLDABLE", -- [3]
-				134337, -- [4]
-				4, -- [5]
-				0, -- [6]
-			},
-			[7457] = {
-				"|cff1eff00|Hitem:7457::::::::33:::::::::|h[Knight's Gauntlets]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132962, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[5750] = {
-				"|cff1eff00|Hitem:5750::::::::36:::::::::|h[Warchief's Girdle]|h|r", -- [1]
+			[6594] = {
+				"|cff1eff00|Hitem:6594::::::::22:::::::::|h[Battleforge Girdle]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_WAIST", -- [3]
-				132492, -- [4]
+				132500, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[5481] = {
-				"|cffffffff|Hitem:5481::::::::27:::::::::|h[Satyr Horns]|h|r", -- [1]
+			[4681] = {
+				"|cffffffff|Hitem:4681::::::::14:::::::::|h[Brackwater Girdle]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132514, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[7367] = {
+				"|cff1eff00|Hitem:7367::::::::29:::::::::|h[Elder's Mantle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135057, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[2091] = {
+				"|cffffffff|Hitem:2091::::::::6:::::::::|h[Magic Dust]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133721, -- [4]
-				12, -- [5]
+				133849, -- [4]
+				0, -- [5]
 				0, -- [6]
 			},
-			[6583] = {
-				"|cff1eff00|Hitem:6583::::::::10:::::::::|h[Scouting Bracers]|h|r", -- [1]
+			[14561] = {
+				"|cff1eff00|Hitem:14561::::::::14:::::::::|h[Prospector's Cuffs]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_WRIST", -- [3]
 				132606, -- [4]
 				4, -- [5]
 				2, -- [6]
+			},
+			[3314] = {
+				"|cff1eff00|Hitem:3314::::::::13:::::::::|h[Ceremonial Leather Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132952, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[15893] = {
+				"|cff1eff00|Hitem:15893::::::::16:::::::::|h[Prospector's Buckler]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				134955, -- [4]
+				4, -- [5]
+				6, -- [6]
 			},
 			[1680] = {
 				"|cff1eff00|Hitem:1680::::::::34:::::::::|h[Headchopper]|h|r", -- [1]
@@ -4243,19 +3937,19 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[1288] = {
-				"|cffffffff|Hitem:1288::::::::25:::::::::|h[Large Venom Sac]|h|r", -- [1]
+			[5524] = {
+				"|cffffffff|Hitem:5524::::::::28:::::::::|h[Thick-shelled Clam]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				134338, -- [4]
-				7, -- [5]
+				134432, -- [4]
+				15, -- [5]
 				0, -- [6]
 			},
-			[6542] = {
-				"|cff1eff00|Hitem:6542::::::::14:::::::::|h[Willow Cape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133769, -- [4]
+			[4684] = {
+				"|cffffffff|Hitem:4684::::::::18:::::::::|h[Spellbinder Belt]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132493, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -4267,11 +3961,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[14365] = {
-				"|cff1eff00|Hitem:14365::::::::14:::::::::|h[Mystic's Cape]|h|r", -- [1]
+			[7366] = {
+				"|cff1eff00|Hitem:7366::::::::27:::::::::|h[Elder's Gloves]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133768, -- [4]
+				"INVTYPE_HAND", -- [3]
+				132951, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -4323,20 +4017,20 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[10381] = {
-				"|cff1eff00|Hitem:10381::::::::12:::::::::|h[Commander's Girdle]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132502, -- [4]
+			[4683] = {
+				"|cffffffff|Hitem:4683::::::::18:::::::::|h[Spellbinder Cloak]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133767, -- [4]
 				4, -- [5]
-				4, -- [6]
+				1, -- [6]
 			},
-			[3402] = {
-				"|cff9d9d9d|Hitem:3402::::::::24:::::::::|h[Soft Patch of Fur]|h|r", -- [1]
-				0, -- [2]
+			[1468] = {
+				"|cffffffff|Hitem:1468::::::::28:::::::::|h[Murloc Fin]|h|r", -- [1]
+				1, -- [2]
 				"", -- [3]
-				134360, -- [4]
-				15, -- [5]
+				134304, -- [4]
+				7, -- [5]
 				0, -- [6]
 			},
 			[1701] = {
@@ -4387,27 +4081,19 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[6552] = {
-				"|cff1eff00|Hitem:6552::::::::10:::::::::|h[Bard's Tunic]|h|r", -- [1]
+			[6576] = {
+				"|cff1eff00|Hitem:6576::::::::10:::::::::|h[Defender Girdle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135015, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132511, -- [4]
 				4, -- [5]
-				2, -- [6]
+				3, -- [6]
 			},
 			[1708] = {
 				"|cffffffff|Hitem:1708::::::::32:::::::::|h[Sweet Nectar]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
 				132799, -- [4]
-				0, -- [5]
-				0, -- [6]
-			},
-			[1710] = {
-				"|cffffffff|Hitem:1710::::::::32:::::::::|h[Greater Healing Potion]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134832, -- [4]
 				0, -- [5]
 				0, -- [6]
 			},
@@ -4419,6 +4105,14 @@ RareScannerDB = {
 				12, -- [5]
 				0, -- [6]
 			},
+			[1710] = {
+				"|cffffffff|Hitem:1710::::::::32:::::::::|h[Greater Healing Potion]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134832, -- [4]
+				0, -- [5]
+				0, -- [6]
+			},
 			[856] = {
 				"|cffffffff|Hitem:856::::::::14:::::::::|h[Blue Leather Bag]|h|r", -- [1]
 				1, -- [2]
@@ -4427,27 +4121,27 @@ RareScannerDB = {
 				1, -- [5]
 				0, -- [6]
 			},
-			[6551] = {
-				"|cff1eff00|Hitem:6551::::::::14:::::::::|h[Soldier's Boots]|h|r", -- [1]
+			[6568] = {
+				"|cff1eff00|Hitem:6568::::::::20:::::::::|h[Shimmering Trousers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132535, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134581, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[6550] = {
+				"|cff1eff00|Hitem:6550::::::::14:::::::::|h[Soldier's Wristguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132611, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[15222] = {
-				"|cff1eff00|Hitem:15222::::::::16:::::::::|h[Barbed Club]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				133045, -- [4]
-				2, -- [5]
-				4, -- [6]
-			},
-			[858] = {
-				"|cffffffff|Hitem:858::::::::13:::::::::|h[Lesser Healing Potion]|h|r", -- [1]
+			[4538] = {
+				"|cffffffff|Hitem:4538::::::::10:::::::::|h[Snapvine Watermelon]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				134830, -- [4]
+				133978, -- [4]
 				0, -- [5]
 				0, -- [6]
 			},
@@ -4475,11 +4169,11 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[14370] = {
-				"|cff1eff00|Hitem:14370::::::::16:::::::::|h[Mystic's Woolies]|h|r", -- [1]
+			[6614] = {
+				"|cff1eff00|Hitem:6614::::::::27:::::::::|h[Sage's Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134582, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133768, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -4491,21 +4185,21 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[6575] = {
-				"|cff1eff00|Hitem:6575::::::::10:::::::::|h[Defender Cloak]|h|r", -- [1]
+			[7533] = {
+				"|cff1eff00|Hitem:7533::::::::23:::::::::|h[Cabalist Cloak]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_CLOAK", -- [3]
-				133757, -- [4]
+				133770, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[3301] = {
-				"|cff9d9d9d|Hitem:3301::::::::14:::::::::|h[Sharp Canine]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133725, -- [4]
-				15, -- [5]
-				0, -- [6]
+			[3279] = {
+				"|cffffffff|Hitem:3279::::::::5:::::::::|h[Battle Chain Boots]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[1511] = {
 				"|cff9d9d9d|Hitem:1511::::::::10:::::::::|h[Commoner's Sword]|h|r", -- [1]
@@ -4515,29 +4209,29 @@ RareScannerDB = {
 				2, -- [5]
 				7, -- [6]
 			},
-			[4460] = {
-				"|cff9d9d9d|Hitem:4460::::::::23:::::::::|h[Ripped Wing Webbing]|h|r", -- [1]
-				0, -- [2]
+			[414] = {
+				"|cffffffff|Hitem:414::::::::18:::::::::|h[Dalaran Sharp]|h|r", -- [1]
+				1, -- [2]
 				"", -- [3]
-				134305, -- [4]
-				15, -- [5]
+				133995, -- [4]
+				0, -- [5]
 				0, -- [6]
 			},
-			[8180] = {
-				"|cff1eff00|Hitem:8180::::::::5:::::::::|h[Hunting Bow]|h|r", -- [1]
+			[10113] = {
+				"|cff1eff00|Hitem:10113::::::::12:::::::::|h[Wanderer's Shoulders]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_RANGED", -- [3]
-				135491, -- [4]
-				2, -- [5]
+				"INVTYPE_SHOULDER", -- [3]
+				135039, -- [4]
+				4, -- [5]
 				2, -- [6]
 			},
-			[6592] = {
-				"|cff1eff00|Hitem:6592::::::::22:::::::::|h[Battleforge Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132629, -- [4]
+			[14102] = {
+				"|cffffffff|Hitem:14102::::::::13:::::::::|h[Native Handwraps]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
 				4, -- [5]
-				3, -- [6]
+				1, -- [6]
 			},
 			[3731] = {
 				"|cffffffff|Hitem:3731::::::::15:::::::::|h[Lion Meat]|h|r", -- [1]
@@ -4555,30 +4249,6 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9786] = {
-				"|cff1eff00|Hitem:9786::::::::14:::::::::|h[Raider's Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133770, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[4874] = {
-				"|cff9d9d9d|Hitem:4874::::::::14:::::::::|h[Clean Fishbones]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133719, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[1730] = {
-				"|cff9d9d9d|Hitem:1730::::::::14:::::::::|h[Worn Mail Belt]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132495, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
 			[4870] = {
 				"|cffffffff|Hitem:4870::::::::6:::::::::|h[Canvas Scraps]|h|r", -- [1]
 				1, -- [2]
@@ -4594,6 +4264,30 @@ RareScannerDB = {
 				132602, -- [4]
 				4, -- [5]
 				3, -- [6]
+			},
+			[1730] = {
+				"|cff9d9d9d|Hitem:1730::::::::14:::::::::|h[Worn Mail Belt]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132495, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[1731] = {
+				"|cff9d9d9d|Hitem:1731::::::::14:::::::::|h[Worn Mail Boots]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132535, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[4874] = {
+				"|cff9d9d9d|Hitem:4874::::::::14:::::::::|h[Clean Fishbones]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133719, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[9748] = {
 				"|cff1eff00|Hitem:9748::::::::14:::::::::|h[Simple Robe]|h|r", -- [1]
@@ -4683,13 +4377,13 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[9852] = {
-				"|cff1eff00|Hitem:9852::::::::36:::::::::|h[Conjurer's Robe]|h|r", -- [1]
+			[4569] = {
+				"|cff1eff00|Hitem:4569::::::::13:::::::::|h[Staunch Hammer]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132663, -- [4]
-				4, -- [5]
-				1, -- [6]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				133045, -- [4]
+				2, -- [5]
+				4, -- [6]
 			},
 			[9844] = {
 				"|cff1eff00|Hitem:9844::::::::33:::::::::|h[Conjurer's Vest]|h|r", -- [1]
@@ -4707,13 +4401,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9876] = {
-				"|cff1eff00|Hitem:9876::::::::33:::::::::|h[Sorcerer Slippers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[6444] = {
+				"|cff9d9d9d|Hitem:6444::::::::23:::::::::|h[Forked Tongue]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				136040, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[9868] = {
 				"|cff1eff00|Hitem:9868::::::::29:::::::::|h[Renegade Gauntlets]|h|r", -- [1]
@@ -4731,13 +4425,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[5111] = {
-				"|cff1eff00|Hitem:5111::::::::14:::::::::|h[Rathorian's Cape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133150, -- [4]
+			[3284] = {
+				"|cffffffff|Hitem:3284::::::::13:::::::::|h[Tribal Boots]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132542, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
 			[15007] = {
 				"|cffffffff|Hitem:15007::::::::3:::::::::|h[Primal Cape]|h|r", -- [1]
@@ -4771,13 +4465,13 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[3299] = {
-				"|cff9d9d9d|Hitem:3299::::::::13:::::::::|h[Fractured Canine]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				133725, -- [4]
-				15, -- [5]
-				0, -- [6]
+			[15005] = {
+				"|cffffffff|Hitem:15005::::::::5:::::::::|h[Primal Bands]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132611, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[9932] = {
 				"|cff1eff00|Hitem:9932::::::::24:::::::::|h[Brigade Circlet]|h|r", -- [1]
@@ -4787,11 +4481,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9770] = {
-				"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r", -- [1]
+			[6536] = {
+				"|cff1eff00|Hitem:6536::::::::10:::::::::|h[Willow Vest]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133769, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				135024, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -4803,45 +4497,45 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[6617] = {
-				"|cff1eff00|Hitem:6617::::::::27:::::::::|h[Sage's Mantle]|h|r", -- [1]
+			[4571] = {
+				"|cff1eff00|Hitem:4571::::::::14:::::::::|h[War Knife]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135033, -- [4]
-				4, -- [5]
-				1, -- [6]
+				"INVTYPE_WEAPON", -- [3]
+				135651, -- [4]
+				2, -- [5]
+				15, -- [6]
 			},
-			[6613] = {
-				"|cff1eff00|Hitem:6613::::::::27:::::::::|h[Sage's Bracers]|h|r", -- [1]
+			[4567] = {
+				"|cff1eff00|Hitem:4567::::::::14:::::::::|h[Merc Sword]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132610, -- [4]
-				4, -- [5]
-				1, -- [6]
+				"INVTYPE_2HWEAPON", -- [3]
+				135274, -- [4]
+				2, -- [5]
+				8, -- [6]
 			},
-			[3818] = {
-				"|cffffffff|Hitem:3818::::::::17:::::::::|h[Fadeleaf]|h|r", -- [1]
+			[4563] = {
+				"|cffffffff|Hitem:4563::::::::3:::::::::|h[Billy Club]|h|r", -- [1]
 				1, -- [2]
-				"", -- [3]
-				134193, -- [4]
-				7, -- [5]
-				0, -- [6]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				133476, -- [4]
+				2, -- [5]
+				4, -- [6]
 			},
-			[6605] = {
-				"|cff1eff00|Hitem:6605::::::::22:::::::::|h[Dervish Gloves]|h|r", -- [1]
+			[3816] = {
+				"|cff9d9d9d|Hitem:3816::::::::32:::::::::|h[Reflective Heater]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				134950, -- [4]
+				4, -- [5]
+				6, -- [6]
+			},
+			[6601] = {
+				"|cff1eff00|Hitem:6601::::::::22:::::::::|h[Dervish Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132958, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132537, -- [4]
 				4, -- [5]
 				2, -- [6]
-			},
-			[5578] = {
-				"|cff1eff00|Hitem:5578::::::::26:::::::::|h[Plans: Silvered Bronze Breastplate]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134942, -- [4]
-				9, -- [5]
-				4, -- [6]
 			},
 			[14088] = {
 				"|cffffffff|Hitem:14088::::::::5:::::::::|h[Beaded Cloak]|h|r", -- [1]
@@ -4851,29 +4545,29 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[6597] = {
-				"|cff1eff00|Hitem:6597::::::::22:::::::::|h[Battleforge Shoulderguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135038, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[954] = {
+				"|cffffffff|Hitem:954::::::::17:::::::::|h[Scroll of Strength]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134938, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
-			[10109] = {
-				"|cff1eff00|Hitem:10109::::::::17:::::::::|h[Wanderer's Belt]|h|r", -- [1]
+			[6593] = {
+				"|cff1eff00|Hitem:6593::::::::10:::::::::|h[Battleforge Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132500, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133770, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
-			[3302] = {
-				"|cff1eff00|Hitem:3302::::::::14:::::::::|h[Brackwater Boots]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132537, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[16654] = {
+				"|cffffffff|Hitem:16654::::::::22:::::::::|h[Shredder Operating Manual - Page 10]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134332, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[15224] = {
 				"|cff1eff00|Hitem:15224::::::::25:::::::::|h[Battlesmasher]|h|r", -- [1]
@@ -4883,13 +4577,13 @@ RareScannerDB = {
 				2, -- [5]
 				4, -- [6]
 			},
-			[6581] = {
-				"|cff1eff00|Hitem:6581::::::::10:::::::::|h[Scouting Belt]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132505, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[2781] = {
+				"|cff9d9d9d|Hitem:2781::::::::17:::::::::|h[Dirty Blunderbuss]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_RANGEDRIGHT", -- [3]
+				135610, -- [4]
+				2, -- [5]
+				3, -- [6]
 			},
 			[7072] = {
 				"|cffffffff|Hitem:7072::::::::33:::::::::|h[Naga Scale]|h|r", -- [1]
@@ -4939,13 +4633,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[14161] = {
-				"|cff1eff00|Hitem:14161::::::::19:::::::::|h[Pagan Cape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133762, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[2777] = {
+				"|cff9d9d9d|Hitem:2777::::::::5:::::::::|h[Feeble Shortbow]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_RANGED", -- [3]
+				135493, -- [4]
+				2, -- [5]
+				2, -- [6]
 			},
 			[1777] = {
 				"|cff9d9d9d|Hitem:1777::::::::17:::::::::|h[Brocade Shoulderpads]|h|r", -- [1]
@@ -4979,13 +4673,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[6565] = {
-				"|cff1eff00|Hitem:6565::::::::10:::::::::|h[Shimmering Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132950, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[2773] = {
+				"|cff9d9d9d|Hitem:2773::::::::30:::::::::|h[Cracked Shortbow]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_RANGED", -- [3]
+				135493, -- [4]
+				2, -- [5]
+				2, -- [6]
 			},
 			[6573] = {
 				"|cff1eff00|Hitem:6573::::::::10:::::::::|h[Defender Boots]|h|r", -- [1]
@@ -5043,21 +4737,21 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[2765] = {
-				"|cff9d9d9d|Hitem:2765::::::::36:::::::::|h[Hunting Knife]|h|r", -- [1]
+			[14113] = {
+				"|cff1eff00|Hitem:14113::::::::14:::::::::|h[Aboriginal Sash]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132494, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[2763] = {
+				"|cff9d9d9d|Hitem:2763::::::::14:::::::::|h[Fisherman Knife]|h|r", -- [1]
 				0, -- [2]
 				"INVTYPE_WEAPON", -- [3]
-				135651, -- [4]
+				135637, -- [4]
 				2, -- [5]
 				15, -- [6]
-			},
-			[6545] = {
-				"|cff1eff00|Hitem:6545::::::::14:::::::::|h[Soldier's Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132638, -- [4]
-				4, -- [5]
-				3, -- [6]
 			},
 			[8179] = {
 				"|cffffffff|Hitem:8179::::::::30:::::::::|h[Cadet's Bow]|h|r", -- [1]
@@ -5067,13 +4761,13 @@ RareScannerDB = {
 				2, -- [5]
 				2, -- [6]
 			},
-			[14097] = {
-				"|cff1eff00|Hitem:14097::::::::13:::::::::|h[Native Pants]|h|r", -- [1]
+			[15120] = {
+				"|cff1eff00|Hitem:15120::::::::22:::::::::|h[Robust Girdle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134582, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132495, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
 			[4542] = {
 				"|cffffffff|Hitem:4542::::::::10:::::::::|h[Moist Cornbread]|h|r", -- [1]
@@ -5091,13 +4785,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[6588] = {
-				"|cffffffff|Hitem:6588::::::::18:::::::::|h[Scouting Spaulders]|h|r", -- [1]
+			[14093] = {
+				"|cffffffff|Hitem:14093::::::::3:::::::::|h[Beaded Cord]|h|r", -- [1]
 				1, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135058, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132491, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
 			[1796] = {
 				"|cff9d9d9d|Hitem:1796::::::::36:::::::::|h[Rawhide Boots]|h|r", -- [1]
@@ -5131,29 +4825,29 @@ RareScannerDB = {
 				4, -- [5]
 				4, -- [6]
 			},
-			[14368] = {
-				"|cffffffff|Hitem:14368::::::::26:::::::::|h[Mystic's Shoulder Pads]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135040, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[18512] = {
-				"|cffffffff|Hitem:18512::::::::3:::::::::|h[Larval Acid]|h|r", -- [1]
+			[8952] = {
+				"|cffffffff|Hitem:8952::::::::12:::::::::|h[Roasted Quail]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				134802, -- [4]
-				5, -- [5]
+				133971, -- [4]
+				0, -- [5]
 				0, -- [6]
 			},
-			[6521] = {
-				"|cffffffff|Hitem:6521::::::::3:::::::::|h[Pioneer Gloves]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
+			[4408] = {
+				"|cff1eff00|Hitem:4408::::::::13:::::::::|h[Schematic: Mechanical Squirrel]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				134942, -- [4]
+				9, -- [5]
+				3, -- [6]
+			},
+			[7544] = {
+				"|cff1eff00|Hitem:7544::::::::23:::::::::|h[Champion's Cape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133763, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
 			[5086] = {
 				"|cffffffff|Hitem:5086::::::::14:::::::::|h[Zhevra Hooves]|h|r", -- [1]
@@ -5163,21 +4857,21 @@ RareScannerDB = {
 				12, -- [5]
 				0, -- [6]
 			},
-			[6513] = {
-				"|cffffffff|Hitem:6513::::::::3:::::::::|h[Disciple's Sash]|h|r", -- [1]
+			[3770] = {
+				"|cffffffff|Hitem:3770::::::::21:::::::::|h[Mutton Chop]|h|r", -- [1]
 				1, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132491, -- [4]
-				4, -- [5]
-				1, -- [6]
+				"", -- [3]
+				133970, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
-			[4463] = {
-				"|cff1eff00|Hitem:4463::::::::36:::::::::|h[Beaded Raptor Collar]|h|r", -- [1]
+			[7532] = {
+				"|cff1eff00|Hitem:7532::::::::23:::::::::|h[Cabalist Spaulders]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132500, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135032, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
 			[3610] = {
 				"|cff1eff00|Hitem:3610::::::::10:::::::::|h[Plans: Gemmed Copper Gauntlets]|h|r", -- [1]
@@ -5195,13 +4889,13 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[1812] = {
-				"|cff9d9d9d|Hitem:1812::::::::16:::::::::|h[Short-handled Battle Axe]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135423, -- [4]
-				2, -- [5]
-				1, -- [6]
+			[15495] = {
+				"|cff1eff00|Hitem:15495::::::::14:::::::::|h[Bloodspattered Wristbands]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132609, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[5182] = {
 				"|cff1eff00|Hitem:5182::::::::14:::::::::|h[Shiver Blade]|h|r", -- [1]
@@ -5219,29 +4913,29 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[11971] = {
-				"|cff1eff00|Hitem:11971::::::::32:::::::::|h[Amethyst Band]|h|r", -- [1]
+			[7524] = {
+				"|cff1eff00|Hitem:7524::::::::23:::::::::|h[Gossamer Cape]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FINGER", -- [3]
-				133357, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133766, -- [4]
 				4, -- [5]
+				1, -- [6]
+			},
+			[1812] = {
+				"|cff9d9d9d|Hitem:1812::::::::16:::::::::|h[Short-handled Battle Axe]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135423, -- [4]
+				2, -- [5]
+				1, -- [6]
+			},
+			[15420] = {
+				"|cffffffff|Hitem:15420::::::::17:::::::::|h[Ironfeather]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				132918, -- [4]
+				5, -- [5]
 				0, -- [6]
-			},
-			[15495] = {
-				"|cff1eff00|Hitem:15495::::::::14:::::::::|h[Bloodspattered Wristbands]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132609, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[15511] = {
-				"|cff1eff00|Hitem:15511::::::::26:::::::::|h[Grunt's Legguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134583, -- [4]
-				4, -- [5]
-				3, -- [6]
 			},
 			[1814] = {
 				"|cff9d9d9d|Hitem:1814::::::::22:::::::::|h[Battered Mallet]|h|r", -- [1]
@@ -5267,13 +4961,13 @@ RareScannerDB = {
 				2, -- [5]
 				0, -- [6]
 			},
-			[9909] = {
-				"|cff1eff00|Hitem:9909::::::::36:::::::::|h[Royal Bands]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132608, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[5470] = {
+				"|cffffffff|Hitem:5470::::::::24:::::::::|h[Thunder Lizard Tail]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133721, -- [4]
+				7, -- [5]
+				0, -- [6]
 			},
 			[5058] = {
 				"|cffffffff|Hitem:5058::::::::30:::::::::|h[Silithid Egg]|h|r", -- [1]
@@ -5291,19 +4985,11 @@ RareScannerDB = {
 				2, -- [5]
 				0, -- [6]
 			},
-			[11419] = {
-				"|cff9d9d9d|Hitem:11419::::::::17:::::::::|h[Mysterious Unhatched Egg]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				132833, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[6549] = {
-				"|cffffffff|Hitem:6549::::::::13:::::::::|h[Soldier's Cloak]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133769, -- [4]
+			[6538] = {
+				"|cff1eff00|Hitem:6538::::::::10:::::::::|h[Willow Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132656, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -5314,6 +5000,14 @@ RareScannerDB = {
 				135145, -- [4]
 				2, -- [5]
 				10, -- [6]
+			},
+			[3642] = {
+				"|cffffffff|Hitem:3642::::::::3:::::::::|h[Ancestral Bracers]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132607, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[3644] = {
 				"|cffffffff|Hitem:3644::::::::13:::::::::|h[Barbaric Cloth Bracers]|h|r", -- [1]
@@ -5355,21 +5049,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9869] = {
-				"|cff1eff00|Hitem:9869::::::::36:::::::::|h[Renegade Belt]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132515, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[16653] = {
+				"|cffffffff|Hitem:16653::::::::22:::::::::|h[Shredder Operating Manual - Page 9]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134332, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
-			[9861] = {
-				"|cff1eff00|Hitem:9861::::::::29:::::::::|h[Archer's Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132956, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[5446] = {
+				"|cff9d9d9d|Hitem:5446::::::::27:::::::::|h[Broken Elemental Bracer]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132606, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[2635] = {
 				"|cff9d9d9d|Hitem:2635::::::::30:::::::::|h[Loose Chain Belt]|h|r", -- [1]
@@ -5379,21 +5073,21 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[3784] = {
-				"|cff9d9d9d|Hitem:3784::::::::32:::::::::|h[Metal Stave]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135147, -- [4]
-				2, -- [5]
-				10, -- [6]
-			},
-			[7484] = {
-				"|cff1eff00|Hitem:7484::::::::36:::::::::|h[Ranger Wristguards]|h|r", -- [1]
+			[6567] = {
+				"|cff1eff00|Hitem:6567::::::::20:::::::::|h[Shimmering Armor]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132608, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				135012, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
+			},
+			[9845] = {
+				"|cff1eff00|Hitem:9845::::::::33:::::::::|h[Conjurer's Shoes]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[3287] = {
 				"|cff1eff00|Hitem:3287::::::::5:::::::::|h[Tribal Pants]|h|r", -- [1]
@@ -5435,11 +5129,11 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[7472] = {
-				"|cff1eff00|Hitem:7472::::::::36:::::::::|h[Regal Boots]|h|r", -- [1]
+			[9821] = {
+				"|cff1eff00|Hitem:9821::::::::22:::::::::|h[Durable Bracers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132610, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -5451,13 +5145,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9805] = {
-				"|cff1eff00|Hitem:9805::::::::20:::::::::|h[Superior Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133762, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[117] = {
+				"|cffffffff|Hitem:117::::::::3:::::::::|h[Tough Jerky]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133972, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
 			[7356] = {
 				"|cff1eff00|Hitem:7356::::::::31:::::::::|h[Elder's Cloak]|h|r", -- [1]
@@ -5475,11 +5169,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[7460] = {
-				"|cff1eff00|Hitem:7460::::::::29:::::::::|h[Knight's Cloak]|h|r", -- [1]
+			[9797] = {
+				"|cff1eff00|Hitem:9797::::::::22:::::::::|h[Ivycloth Pants]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133768, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134594, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -5491,13 +5185,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[8766] = {
-				"|cffffffff|Hitem:8766::::::::12:::::::::|h[Morning Glory Dew]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134712, -- [4]
-				0, -- [5]
-				0, -- [6]
+			[7456] = {
+				"|cff1eff00|Hitem:7456::::::::34:::::::::|h[Knight's Headguard]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				132767, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[9756] = {
 				"|cff1eff00|Hitem:9756::::::::13:::::::::|h[Gypsy Trousers]|h|r", -- [1]
@@ -5507,35 +5201,35 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[9773] = {
-				"|cff1eff00|Hitem:9773::::::::10:::::::::|h[Greenweave Robe]|h|r", -- [1]
+			[7448] = {
+				"|cff1eff00|Hitem:7448::::::::33:::::::::|h[Sentinel Girdle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132656, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[7444] = {
-				"|cff1eff00|Hitem:7444::::::::33:::::::::|h[Sentinel Boots]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132592, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132493, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
-			[7440] = {
-				"|cff1eff00|Hitem:7440::::::::34:::::::::|h[Sentinel Trousers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134706, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[9749] = {
-				"|cff1eff00|Hitem:9749::::::::14:::::::::|h[Simple Blouse]|h|r", -- [1]
+			[9765] = {
+				"|cff1eff00|Hitem:9765::::::::14:::::::::|h[Cadet Vest]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_CHEST", -- [3]
-				135009, -- [4]
+				132627, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[9757] = {
+				"|cff1eff00|Hitem:9757::::::::14:::::::::|h[Gypsy Tunic]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				135010, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[7436] = {
+				"|cff1eff00|Hitem:7436::::::::36:::::::::|h[Twilight Cape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133765, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -5555,13 +5249,13 @@ RareScannerDB = {
 				15, -- [5]
 				0, -- [6]
 			},
-			[3730] = {
-				"|cffffffff|Hitem:3730::::::::27:::::::::|h[Big Bear Meat]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133970, -- [4]
-				7, -- [5]
-				0, -- [6]
+			[10193] = {
+				"|cff1eff00|Hitem:10193::::::::17:::::::::|h[Crusader's Armor]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132628, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[6509] = {
 				"|cffffffff|Hitem:6509::::::::3:::::::::|h[Infantry Belt]|h|r", -- [1]
@@ -5603,13 +5297,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[10193] = {
-				"|cff1eff00|Hitem:10193::::::::17:::::::::|h[Crusader's Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132628, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[3730] = {
+				"|cffffffff|Hitem:3730::::::::27:::::::::|h[Big Bear Meat]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				133970, -- [4]
+				7, -- [5]
+				0, -- [6]
 			},
 			[7432] = {
 				"|cff1eff00|Hitem:7432::::::::33:::::::::|h[Twilight Cowl]|h|r", -- [1]
@@ -5619,37 +5313,37 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[7436] = {
-				"|cff1eff00|Hitem:7436::::::::36:::::::::|h[Twilight Cape]|h|r", -- [1]
+			[9749] = {
+				"|cff1eff00|Hitem:9749::::::::14:::::::::|h[Simple Blouse]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133765, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				135009, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[9757] = {
-				"|cff1eff00|Hitem:9757::::::::14:::::::::|h[Gypsy Tunic]|h|r", -- [1]
+			[7440] = {
+				"|cff1eff00|Hitem:7440::::::::34:::::::::|h[Sentinel Trousers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135010, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134706, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
-			[9765] = {
-				"|cff1eff00|Hitem:9765::::::::14:::::::::|h[Cadet Vest]|h|r", -- [1]
+			[7444] = {
+				"|cff1eff00|Hitem:7444::::::::33:::::::::|h[Sentinel Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132627, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[7448] = {
-				"|cff1eff00|Hitem:7448::::::::33:::::::::|h[Sentinel Girdle]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132493, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132592, -- [4]
 				4, -- [5]
 				2, -- [6]
+			},
+			[9773] = {
+				"|cff1eff00|Hitem:9773::::::::10:::::::::|h[Greenweave Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132656, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[9781] = {
 				"|cff1eff00|Hitem:9781::::::::10:::::::::|h[Bandit Pants]|h|r", -- [1]
@@ -5659,29 +5353,29 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[7456] = {
-				"|cff1eff00|Hitem:7456::::::::34:::::::::|h[Knight's Headguard]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				132767, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[8766] = {
+				"|cffffffff|Hitem:8766::::::::12:::::::::|h[Morning Glory Dew]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134712, -- [4]
+				0, -- [5]
+				0, -- [6]
 			},
-			[9797] = {
-				"|cff1eff00|Hitem:9797::::::::22:::::::::|h[Ivycloth Pants]|h|r", -- [1]
+			[7460] = {
+				"|cff1eff00|Hitem:7460::::::::29:::::::::|h[Knight's Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134594, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133768, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[117] = {
-				"|cffffffff|Hitem:117::::::::3:::::::::|h[Tough Jerky]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133972, -- [4]
-				0, -- [5]
-				0, -- [6]
+			[9805] = {
+				"|cff1eff00|Hitem:9805::::::::20:::::::::|h[Superior Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133762, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[9813] = {
 				"|cff1eff00|Hitem:9813::::::::20:::::::::|h[Fortified Gauntlets]|h|r", -- [1]
@@ -5691,11 +5385,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9821] = {
-				"|cff1eff00|Hitem:9821::::::::22:::::::::|h[Durable Bracers]|h|r", -- [1]
+			[7472] = {
+				"|cff1eff00|Hitem:7472::::::::36:::::::::|h[Regal Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132610, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -5715,37 +5409,37 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9845] = {
-				"|cff1eff00|Hitem:9845::::::::33:::::::::|h[Conjurer's Shoes]|h|r", -- [1]
+			[7484] = {
+				"|cff1eff00|Hitem:7484::::::::36:::::::::|h[Ranger Wristguards]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132608, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
-			[6567] = {
-				"|cff1eff00|Hitem:6567::::::::20:::::::::|h[Shimmering Armor]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135012, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[5446] = {
-				"|cff9d9d9d|Hitem:5446::::::::27:::::::::|h[Broken Elemental Bracer]|h|r", -- [1]
+			[3784] = {
+				"|cff9d9d9d|Hitem:3784::::::::32:::::::::|h[Metal Stave]|h|r", -- [1]
 				0, -- [2]
-				"", -- [3]
-				132606, -- [4]
-				15, -- [5]
-				0, -- [6]
+				"INVTYPE_2HWEAPON", -- [3]
+				135147, -- [4]
+				2, -- [5]
+				10, -- [6]
 			},
-			[16653] = {
-				"|cffffffff|Hitem:16653::::::::22:::::::::|h[Shredder Operating Manual - Page 9]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134332, -- [4]
-				15, -- [5]
-				0, -- [6]
+			[9861] = {
+				"|cff1eff00|Hitem:9861::::::::29:::::::::|h[Archer's Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132956, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[9869] = {
+				"|cff1eff00|Hitem:9869::::::::36:::::::::|h[Renegade Belt]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132515, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[9877] = {
 				"|cff1eff00|Hitem:9877::::::::33:::::::::|h[Sorcerer Cloak]|h|r", -- [1]
@@ -5755,21 +5449,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[3642] = {
-				"|cffffffff|Hitem:3642::::::::3:::::::::|h[Ancestral Bracers]|h|r", -- [1]
+			[6549] = {
+				"|cffffffff|Hitem:6549::::::::13:::::::::|h[Soldier's Cloak]|h|r", -- [1]
 				1, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132607, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133769, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[6538] = {
-				"|cff1eff00|Hitem:6538::::::::10:::::::::|h[Willow Robe]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_ROBE", -- [3]
-				132656, -- [4]
-				4, -- [5]
-				1, -- [6]
+			[11419] = {
+				"|cff9d9d9d|Hitem:11419::::::::17:::::::::|h[Mysterious Unhatched Egg]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				132833, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[9901] = {
 				"|cff1eff00|Hitem:9901::::::::33:::::::::|h[Jazeraint Belt]|h|r", -- [1]
@@ -5779,29 +5473,29 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[5470] = {
-				"|cffffffff|Hitem:5470::::::::24:::::::::|h[Thunder Lizard Tail]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133721, -- [4]
-				7, -- [5]
-				0, -- [6]
-			},
-			[15420] = {
-				"|cffffffff|Hitem:15420::::::::17:::::::::|h[Ironfeather]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				132918, -- [4]
-				5, -- [5]
-				0, -- [6]
-			},
-			[7524] = {
-				"|cff1eff00|Hitem:7524::::::::23:::::::::|h[Gossamer Cape]|h|r", -- [1]
+			[9909] = {
+				"|cff1eff00|Hitem:9909::::::::36:::::::::|h[Royal Bands]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133766, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132608, -- [4]
 				4, -- [5]
 				1, -- [6]
+			},
+			[15511] = {
+				"|cff1eff00|Hitem:15511::::::::26:::::::::|h[Grunt's Legguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134583, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[11971] = {
+				"|cff1eff00|Hitem:11971::::::::32:::::::::|h[Amethyst Band]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FINGER", -- [3]
+				133357, -- [4]
+				4, -- [5]
+				0, -- [6]
 			},
 			[118] = {
 				"|cffffffff|Hitem:118::::::::3:::::::::|h[Minor Healing Potion]|h|r", -- [1]
@@ -5811,21 +5505,21 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[7532] = {
-				"|cff1eff00|Hitem:7532::::::::23:::::::::|h[Cabalist Spaulders]|h|r", -- [1]
+			[4463] = {
+				"|cff1eff00|Hitem:4463::::::::36:::::::::|h[Beaded Raptor Collar]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135032, -- [4]
+				"INVTYPE_WAIST", -- [3]
+				132500, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
-			[3770] = {
-				"|cffffffff|Hitem:3770::::::::21:::::::::|h[Mutton Chop]|h|r", -- [1]
+			[6513] = {
+				"|cffffffff|Hitem:6513::::::::3:::::::::|h[Disciple's Sash]|h|r", -- [1]
 				1, -- [2]
-				"", -- [3]
-				133970, -- [4]
-				0, -- [5]
-				0, -- [6]
+				"INVTYPE_WAIST", -- [3]
+				132491, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[6517] = {
 				"|cffffffff|Hitem:6517::::::::3:::::::::|h[Pioneer Belt]|h|r", -- [1]
@@ -5835,37 +5529,37 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[7544] = {
-				"|cff1eff00|Hitem:7544::::::::23:::::::::|h[Champion's Cape]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133763, -- [4]
+			[6521] = {
+				"|cffffffff|Hitem:6521::::::::3:::::::::|h[Pioneer Gloves]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
-			[4408] = {
-				"|cff1eff00|Hitem:4408::::::::13:::::::::|h[Schematic: Mechanical Squirrel]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134942, -- [4]
-				9, -- [5]
-				3, -- [6]
-			},
-			[8952] = {
-				"|cffffffff|Hitem:8952::::::::12:::::::::|h[Roasted Quail]|h|r", -- [1]
+			[18512] = {
+				"|cffffffff|Hitem:18512::::::::3:::::::::|h[Larval Acid]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133971, -- [4]
-				0, -- [5]
+				134802, -- [4]
+				5, -- [5]
 				0, -- [6]
 			},
-			[14093] = {
-				"|cffffffff|Hitem:14093::::::::3:::::::::|h[Beaded Cord]|h|r", -- [1]
+			[14368] = {
+				"|cffffffff|Hitem:14368::::::::26:::::::::|h[Mystic's Shoulder Pads]|h|r", -- [1]
 				1, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132491, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135040, -- [4]
 				4, -- [5]
 				1, -- [6]
+			},
+			[6588] = {
+				"|cffffffff|Hitem:6588::::::::18:::::::::|h[Scouting Spaulders]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135058, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[6537] = {
 				"|cff1eff00|Hitem:6537::::::::14:::::::::|h[Willow Boots]|h|r", -- [1]
@@ -5875,29 +5569,29 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[15120] = {
-				"|cff1eff00|Hitem:15120::::::::22:::::::::|h[Robust Girdle]|h|r", -- [1]
+			[14097] = {
+				"|cff1eff00|Hitem:14097::::::::13:::::::::|h[Native Pants]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132495, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[2763] = {
-				"|cff9d9d9d|Hitem:2763::::::::14:::::::::|h[Fisherman Knife]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				135637, -- [4]
-				2, -- [5]
-				15, -- [6]
-			},
-			[14113] = {
-				"|cff1eff00|Hitem:14113::::::::14:::::::::|h[Aboriginal Sash]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132494, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134582, -- [4]
 				4, -- [5]
 				1, -- [6]
+			},
+			[6545] = {
+				"|cff1eff00|Hitem:6545::::::::14:::::::::|h[Soldier's Armor]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132638, -- [4]
+				4, -- [5]
+				3, -- [6]
+			},
+			[2765] = {
+				"|cff9d9d9d|Hitem:2765::::::::36:::::::::|h[Hunting Knife]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				135651, -- [4]
+				2, -- [5]
+				15, -- [6]
 			},
 			[6553] = {
 				"|cff1eff00|Hitem:6553::::::::14:::::::::|h[Bard's Trousers]|h|r", -- [1]
@@ -5923,13 +5617,13 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[2773] = {
-				"|cff9d9d9d|Hitem:2773::::::::30:::::::::|h[Cracked Shortbow]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_RANGED", -- [3]
-				135493, -- [4]
-				2, -- [5]
-				2, -- [6]
+			[6565] = {
+				"|cff1eff00|Hitem:6565::::::::10:::::::::|h[Shimmering Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132950, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[6569] = {
 				"|cff1eff00|Hitem:6569::::::::15:::::::::|h[Shimmering Robe]|h|r", -- [1]
@@ -5939,13 +5633,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[2777] = {
-				"|cff9d9d9d|Hitem:2777::::::::5:::::::::|h[Feeble Shortbow]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_RANGED", -- [3]
-				135493, -- [4]
-				2, -- [5]
-				2, -- [6]
+			[14161] = {
+				"|cff1eff00|Hitem:14161::::::::19:::::::::|h[Pagan Cape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133762, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[6577] = {
 				"|cff1eff00|Hitem:6577::::::::14:::::::::|h[Defender Gauntlets]|h|r", -- [1]
@@ -5955,13 +5649,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[2781] = {
-				"|cff9d9d9d|Hitem:2781::::::::17:::::::::|h[Dirty Blunderbuss]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				135610, -- [4]
-				2, -- [5]
-				3, -- [6]
+			[6581] = {
+				"|cff1eff00|Hitem:6581::::::::10:::::::::|h[Scouting Belt]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132505, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[6585] = {
 				"|cff1eff00|Hitem:6585::::::::10:::::::::|h[Scouting Cloak]|h|r", -- [1]
@@ -5971,69 +5665,69 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[16654] = {
-				"|cffffffff|Hitem:16654::::::::22:::::::::|h[Shredder Operating Manual - Page 10]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134332, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[6593] = {
-				"|cff1eff00|Hitem:6593::::::::10:::::::::|h[Battleforge Cloak]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133770, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[954] = {
-				"|cffffffff|Hitem:954::::::::17:::::::::|h[Scroll of Strength]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134938, -- [4]
-				0, -- [5]
-				0, -- [6]
-			},
-			[6601] = {
-				"|cff1eff00|Hitem:6601::::::::22:::::::::|h[Dervish Boots]|h|r", -- [1]
+			[3302] = {
+				"|cff1eff00|Hitem:3302::::::::14:::::::::|h[Brackwater Boots]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_FEET", -- [3]
 				132537, -- [4]
 				4, -- [5]
+				3, -- [6]
+			},
+			[10109] = {
+				"|cff1eff00|Hitem:10109::::::::17:::::::::|h[Wanderer's Belt]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132500, -- [4]
+				4, -- [5]
 				2, -- [6]
 			},
-			[3816] = {
-				"|cff9d9d9d|Hitem:3816::::::::32:::::::::|h[Reflective Heater]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134950, -- [4]
+			[6597] = {
+				"|cff1eff00|Hitem:6597::::::::22:::::::::|h[Battleforge Shoulderguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135038, -- [4]
 				4, -- [5]
-				6, -- [6]
+				3, -- [6]
 			},
-			[4563] = {
-				"|cffffffff|Hitem:4563::::::::3:::::::::|h[Billy Club]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				133476, -- [4]
-				2, -- [5]
+			[5578] = {
+				"|cff1eff00|Hitem:5578::::::::26:::::::::|h[Plans: Silvered Bronze Breastplate]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				134942, -- [4]
+				9, -- [5]
 				4, -- [6]
 			},
-			[4567] = {
-				"|cff1eff00|Hitem:4567::::::::14:::::::::|h[Merc Sword]|h|r", -- [1]
+			[6605] = {
+				"|cff1eff00|Hitem:6605::::::::22:::::::::|h[Dervish Gloves]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135274, -- [4]
-				2, -- [5]
-				8, -- [6]
+				"INVTYPE_HAND", -- [3]
+				132958, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
-			[4571] = {
-				"|cff1eff00|Hitem:4571::::::::14:::::::::|h[War Knife]|h|r", -- [1]
+			[3818] = {
+				"|cffffffff|Hitem:3818::::::::17:::::::::|h[Fadeleaf]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134193, -- [4]
+				7, -- [5]
+				0, -- [6]
+			},
+			[6613] = {
+				"|cff1eff00|Hitem:6613::::::::27:::::::::|h[Sage's Bracers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				135651, -- [4]
-				2, -- [5]
-				15, -- [6]
+				"INVTYPE_WRIST", -- [3]
+				132610, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[6617] = {
+				"|cff1eff00|Hitem:6617::::::::27:::::::::|h[Sage's Mantle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_SHOULDER", -- [3]
+				135033, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[4575] = {
 				"|cff1eff00|Hitem:4575::::::::16:::::::::|h[Medicine Staff]|h|r", -- [1]
@@ -6043,21 +5737,21 @@ RareScannerDB = {
 				2, -- [5]
 				10, -- [6]
 			},
-			[6536] = {
-				"|cff1eff00|Hitem:6536::::::::10:::::::::|h[Willow Vest]|h|r", -- [1]
+			[9770] = {
+				"|cff1eff00|Hitem:9770::::::::10:::::::::|h[Greenweave Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135024, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133769, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[15005] = {
-				"|cffffffff|Hitem:15005::::::::5:::::::::|h[Primal Bands]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132611, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[3299] = {
+				"|cff9d9d9d|Hitem:3299::::::::13:::::::::|h[Fractured Canine]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133725, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[10189] = {
 				"|cff1eff00|Hitem:10189::::::::17:::::::::|h[Swashbuckler's Shoulderpads]|h|r", -- [1]
@@ -6067,29 +5761,29 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[3284] = {
-				"|cffffffff|Hitem:3284::::::::13:::::::::|h[Tribal Boots]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132542, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[6444] = {
-				"|cff9d9d9d|Hitem:6444::::::::23:::::::::|h[Forked Tongue]|h|r", -- [1]
-				0, -- [2]
-				"", -- [3]
-				136040, -- [4]
-				15, -- [5]
-				0, -- [6]
-			},
-			[4569] = {
-				"|cff1eff00|Hitem:4569::::::::13:::::::::|h[Staunch Hammer]|h|r", -- [1]
+			[5111] = {
+				"|cff1eff00|Hitem:5111::::::::14:::::::::|h[Rathorian's Cape]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				133045, -- [4]
-				2, -- [5]
-				4, -- [6]
+				"INVTYPE_CLOAK", -- [3]
+				133150, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[9876] = {
+				"|cff1eff00|Hitem:9876::::::::33:::::::::|h[Sorcerer Slippers]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[9852] = {
+				"|cff1eff00|Hitem:9852::::::::36:::::::::|h[Conjurer's Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132663, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[10221] = {
 				"|cff1eff00|Hitem:10221::::::::12:::::::::|h[Nightshade Girdle]|h|r", -- [1]
@@ -6107,13 +5801,13 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[1731] = {
-				"|cff9d9d9d|Hitem:1731::::::::14:::::::::|h[Worn Mail Boots]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132535, -- [4]
+			[9786] = {
+				"|cff1eff00|Hitem:9786::::::::14:::::::::|h[Raider's Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133770, -- [4]
 				4, -- [5]
-				3, -- [6]
+				1, -- [6]
 			},
 			[6661] = {
 				"|cff1eff00|Hitem:6661::::::::10:::::::::|h[Recipe: Savory Deviate Delight]|h|r", -- [1]
@@ -6123,28 +5817,28 @@ RareScannerDB = {
 				9, -- [5]
 				5, -- [6]
 			},
-			[14102] = {
-				"|cffffffff|Hitem:14102::::::::13:::::::::|h[Native Handwraps]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[10113] = {
-				"|cff1eff00|Hitem:10113::::::::12:::::::::|h[Wanderer's Shoulders]|h|r", -- [1]
+			[6592] = {
+				"|cff1eff00|Hitem:6592::::::::22:::::::::|h[Battleforge Armor]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135039, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				132629, -- [4]
 				4, -- [5]
+				3, -- [6]
+			},
+			[8180] = {
+				"|cff1eff00|Hitem:8180::::::::5:::::::::|h[Hunting Bow]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_RANGED", -- [3]
+				135491, -- [4]
+				2, -- [5]
 				2, -- [6]
 			},
-			[414] = {
-				"|cffffffff|Hitem:414::::::::18:::::::::|h[Dalaran Sharp]|h|r", -- [1]
-				1, -- [2]
+			[4460] = {
+				"|cff9d9d9d|Hitem:4460::::::::23:::::::::|h[Ripped Wing Webbing]|h|r", -- [1]
+				0, -- [2]
 				"", -- [3]
-				133995, -- [4]
-				0, -- [5]
+				134305, -- [4]
+				15, -- [5]
 				0, -- [6]
 			},
 			[10277] = {
@@ -6155,19 +5849,19 @@ RareScannerDB = {
 				4, -- [5]
 				4, -- [6]
 			},
-			[3279] = {
-				"|cffffffff|Hitem:3279::::::::5:::::::::|h[Battle Chain Boots]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
-				4, -- [5]
-				3, -- [6]
+			[3301] = {
+				"|cff9d9d9d|Hitem:3301::::::::14:::::::::|h[Sharp Canine]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				133725, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
-			[7533] = {
-				"|cff1eff00|Hitem:7533::::::::23:::::::::|h[Cabalist Cloak]|h|r", -- [1]
+			[6575] = {
+				"|cff1eff00|Hitem:6575::::::::10:::::::::|h[Defender Cloak]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_CLOAK", -- [3]
-				133770, -- [4]
+				133757, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -6179,37 +5873,37 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[6614] = {
-				"|cff1eff00|Hitem:6614::::::::27:::::::::|h[Sage's Cloak]|h|r", -- [1]
+			[14370] = {
+				"|cff1eff00|Hitem:14370::::::::16:::::::::|h[Mystic's Woolies]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133768, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134582, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[4538] = {
-				"|cffffffff|Hitem:4538::::::::10:::::::::|h[Snapvine Watermelon]|h|r", -- [1]
+			[858] = {
+				"|cffffffff|Hitem:858::::::::13:::::::::|h[Lesser Healing Potion]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133978, -- [4]
+				134830, -- [4]
 				0, -- [5]
 				0, -- [6]
 			},
-			[6550] = {
-				"|cff1eff00|Hitem:6550::::::::14:::::::::|h[Soldier's Wristguards]|h|r", -- [1]
+			[15222] = {
+				"|cff1eff00|Hitem:15222::::::::16:::::::::|h[Barbed Club]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132611, -- [4]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				133045, -- [4]
+				2, -- [5]
+				4, -- [6]
+			},
+			[6551] = {
+				"|cff1eff00|Hitem:6551::::::::14:::::::::|h[Soldier's Boots]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132535, -- [4]
 				4, -- [5]
 				3, -- [6]
-			},
-			[6568] = {
-				"|cff1eff00|Hitem:6568::::::::20:::::::::|h[Shimmering Trousers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134581, -- [4]
-				4, -- [5]
-				1, -- [6]
 			},
 			[4663] = {
 				"|cffffffff|Hitem:4663::::::::18:::::::::|h[Journeyman's Belt]|h|r", -- [1]
@@ -6219,13 +5913,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[6576] = {
-				"|cff1eff00|Hitem:6576::::::::10:::::::::|h[Defender Girdle]|h|r", -- [1]
+			[6552] = {
+				"|cff1eff00|Hitem:6552::::::::10:::::::::|h[Bard's Tunic]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132511, -- [4]
+				"INVTYPE_CHEST", -- [3]
+				135015, -- [4]
 				4, -- [5]
-				3, -- [6]
+				2, -- [6]
 			},
 			[4671] = {
 				"|cffffffff|Hitem:4671::::::::5:::::::::|h[Ancestral Cloak]|h|r", -- [1]
@@ -6243,21 +5937,21 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[1468] = {
-				"|cffffffff|Hitem:1468::::::::28:::::::::|h[Murloc Fin]|h|r", -- [1]
-				1, -- [2]
+			[3402] = {
+				"|cff9d9d9d|Hitem:3402::::::::24:::::::::|h[Soft Patch of Fur]|h|r", -- [1]
+				0, -- [2]
 				"", -- [3]
-				134304, -- [4]
-				7, -- [5]
+				134360, -- [4]
+				15, -- [5]
 				0, -- [6]
 			},
-			[4683] = {
-				"|cffffffff|Hitem:4683::::::::18:::::::::|h[Spellbinder Cloak]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133767, -- [4]
+			[10381] = {
+				"|cff1eff00|Hitem:10381::::::::12:::::::::|h[Commander's Girdle]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WAIST", -- [3]
+				132502, -- [4]
 				4, -- [5]
-				1, -- [6]
+				4, -- [6]
 			},
 			[4687] = {
 				"|cffffffff|Hitem:4687::::::::14:::::::::|h[Barbaric Cloth Belt]|h|r", -- [1]
@@ -6283,28 +5977,28 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[7366] = {
-				"|cff1eff00|Hitem:7366::::::::27:::::::::|h[Elder's Gloves]|h|r", -- [1]
+			[14365] = {
+				"|cff1eff00|Hitem:14365::::::::14:::::::::|h[Mystic's Cape]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132951, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133768, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[4684] = {
-				"|cffffffff|Hitem:4684::::::::18:::::::::|h[Spellbinder Belt]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132493, -- [4]
+			[6542] = {
+				"|cff1eff00|Hitem:6542::::::::14:::::::::|h[Willow Cape]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133769, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
-			[5524] = {
-				"|cffffffff|Hitem:5524::::::::28:::::::::|h[Thick-shelled Clam]|h|r", -- [1]
+			[1288] = {
+				"|cffffffff|Hitem:1288::::::::25:::::::::|h[Large Venom Sac]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				134432, -- [4]
-				15, -- [5]
+				134338, -- [4]
+				7, -- [5]
 				0, -- [6]
 			},
 			[422] = {
@@ -6323,85 +6017,85 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[15893] = {
-				"|cff1eff00|Hitem:15893::::::::16:::::::::|h[Prospector's Buckler]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134955, -- [4]
-				4, -- [5]
-				6, -- [6]
-			},
-			[3314] = {
-				"|cff1eff00|Hitem:3314::::::::13:::::::::|h[Ceremonial Leather Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132952, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[14561] = {
-				"|cff1eff00|Hitem:14561::::::::14:::::::::|h[Prospector's Cuffs]|h|r", -- [1]
+			[6583] = {
+				"|cff1eff00|Hitem:6583::::::::10:::::::::|h[Scouting Bracers]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_WRIST", -- [3]
 				132606, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
-			[2091] = {
-				"|cffffffff|Hitem:2091::::::::6:::::::::|h[Magic Dust]|h|r", -- [1]
+			[5481] = {
+				"|cffffffff|Hitem:5481::::::::27:::::::::|h[Satyr Horns]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				133849, -- [4]
-				0, -- [5]
+				133721, -- [4]
+				12, -- [5]
 				0, -- [6]
 			},
-			[7367] = {
-				"|cff1eff00|Hitem:7367::::::::29:::::::::|h[Elder's Mantle]|h|r", -- [1]
+			[5750] = {
+				"|cff1eff00|Hitem:5750::::::::36:::::::::|h[Warchief's Girdle]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135057, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[4681] = {
-				"|cffffffff|Hitem:4681::::::::14:::::::::|h[Brackwater Girdle]|h|r", -- [1]
-				1, -- [2]
 				"INVTYPE_WAIST", -- [3]
-				132514, -- [4]
+				132492, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[6594] = {
-				"|cff1eff00|Hitem:6594::::::::22:::::::::|h[Battleforge Girdle]|h|r", -- [1]
+			[7457] = {
+				"|cff1eff00|Hitem:7457::::::::33:::::::::|h[Knight's Gauntlets]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132500, -- [4]
+				"INVTYPE_HAND", -- [3]
+				132962, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[3289] = {
-				"|cffffffff|Hitem:3289::::::::11:::::::::|h[Ancestral Boots]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[4577] = {
-				"|cff1eff00|Hitem:4577::::::::5:::::::::|h[Compact Shotgun]|h|r", -- [1]
+			[15969] = {
+				"|cff1eff00|Hitem:15969::::::::13:::::::::|h[Beaded Orb]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_RANGEDRIGHT", -- [3]
-				135612, -- [4]
+				"INVTYPE_HOLDABLE", -- [3]
+				134337, -- [4]
+				4, -- [5]
+				0, -- [6]
+			},
+			[767] = {
+				"|cffffffff|Hitem:767::::::::18:::::::::|h[Long Bo Staff]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135145, -- [4]
 				2, -- [5]
+				10, -- [6]
+			},
+			[7443] = {
+				"|cff1eff00|Hitem:7443::::::::33:::::::::|h[Sentinel Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[7455] = {
+				"|cff1eff00|Hitem:7455::::::::33:::::::::|h[Knight's Legguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134584, -- [4]
+				4, -- [5]
 				3, -- [6]
 			},
-			[15298] = {
-				"|cff1eff00|Hitem:15298::::::::14:::::::::|h[Grizzly Buckler]|h|r", -- [1]
+			[9851] = {
+				"|cff1eff00|Hitem:9851::::::::33:::::::::|h[Conjurer's Breeches]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134956, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134587, -- [4]
 				4, -- [5]
-				6, -- [6]
+				1, -- [6]
+			},
+			[6607] = {
+				"|cff1eff00|Hitem:6607::::::::31:::::::::|h[Dervish Leggings]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134587, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[4759] = {
 				"|cffffffff|Hitem:4759::::::::3:::::::::|h[Plainstrider Talon]|h|r", -- [1]
@@ -6411,21 +6105,21 @@ RareScannerDB = {
 				12, -- [5]
 				0, -- [6]
 			},
-			[4536] = {
-				"|cffffffff|Hitem:4536::::::::5:::::::::|h[Shiny Red Apple]|h|r", -- [1]
-				1, -- [2]
+			[11166] = {
+				"|cff1eff00|Hitem:11166::::::::32:::::::::|h[Formula: Enchant Gloves - Skinning]|h|r", -- [1]
+				2, -- [2]
 				"", -- [3]
-				133975, -- [4]
-				0, -- [5]
-				0, -- [6]
+				134327, -- [4]
+				9, -- [5]
+				8, -- [6]
 			},
-			[4566] = {
-				"|cff1eff00|Hitem:4566::::::::13:::::::::|h[Sturdy Quarterstaff]|h|r", -- [1]
+			[4570] = {
+				"|cff1eff00|Hitem:4570::::::::14:::::::::|h[Birchwood Maul]|h|r", -- [1]
 				2, -- [2]
 				"INVTYPE_2HWEAPON", -- [3]
-				135145, -- [4]
+				133052, -- [4]
 				2, -- [5]
-				10, -- [6]
+				5, -- [6]
 			},
 			[4771] = {
 				"|cff1eff00|Hitem:4771::::::::14:::::::::|h[Harvest Cloak]|h|r", -- [1]
@@ -6435,21 +6129,21 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[4775] = {
-				"|cff9d9d9d|Hitem:4775::::::::12:::::::::|h[Cracked Bill]|h|r", -- [1]
-				0, -- [2]
+			[5798] = {
+				"|cffffffff|Hitem:5798::::::::29:::::::::|h[Rocket Car Parts]|h|r", -- [1]
+				1, -- [2]
 				"", -- [3]
-				133707, -- [4]
-				15, -- [5]
+				132997, -- [4]
+				12, -- [5]
 				0, -- [6]
 			},
-			[6584] = {
-				"|cff1eff00|Hitem:6584::::::::28:::::::::|h[Scouting Tunic]|h|r", -- [1]
+			[6596] = {
+				"|cff1eff00|Hitem:6596::::::::22:::::::::|h[Battleforge Legguards]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132725, -- [4]
+				"INVTYPE_LEGS", -- [3]
+				134586, -- [4]
 				4, -- [5]
-				2, -- [6]
+				3, -- [6]
 			},
 			[3928] = {
 				"|cffffffff|Hitem:3928::::::::23:::::::::|h[Superior Healing Potion]|h|r", -- [1]
@@ -6467,29 +6161,29 @@ RareScannerDB = {
 				13, -- [5]
 				0, -- [6]
 			},
-			[15142] = {
-				"|cff1eff00|Hitem:15142::::::::29:::::::::|h[Ghostwalker Boots]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132592, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[3254] = {
+				"|cffffffff|Hitem:3254::::::::18:::::::::|h[Skittering Blood]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134437, -- [4]
+				12, -- [5]
+				0, -- [6]
 			},
-			[6612] = {
-				"|cff1eff00|Hitem:6612::::::::24:::::::::|h[Sage's Boots]|h|r", -- [1]
+			[2213] = {
+				"|cff9d9d9d|Hitem:2213::::::::30:::::::::|h[Worn Large Shield]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				134955, -- [4]
+				4, -- [5]
+				6, -- [6]
+			},
+			[7475] = {
+				"|cff1eff00|Hitem:7475::::::::36:::::::::|h[Regal Cuffs]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_FEET", -- [3]
-				132539, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132608, -- [4]
 				4, -- [5]
 				1, -- [6]
-			},
-			[7459] = {
-				"|cff1eff00|Hitem:7459::::::::34:::::::::|h[Knight's Pauldrons]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135058, -- [4]
-				4, -- [5]
-				3, -- [6]
 			},
 			[10621] = {
 				"|cffffffff|Hitem:10621::::::::10:::::::::|h[Runed Scroll]|h|r", -- [1]
@@ -6515,11 +6209,11 @@ RareScannerDB = {
 				4, -- [5]
 				6, -- [6]
 			},
-			[7435] = {
-				"|cff1eff00|Hitem:7435::::::::34:::::::::|h[Twilight Mantle]|h|r", -- [1]
+			[7411] = {
+				"|cff1eff00|Hitem:7411::::::::27:::::::::|h[Infiltrator Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135033, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133754, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -6531,44 +6225,44 @@ RareScannerDB = {
 				12, -- [5]
 				0, -- [6]
 			},
-			[2598] = {
-				"|cff1eff00|Hitem:2598::::::::5:::::::::|h[Pattern: Red Linen Robe]|h|r", -- [1]
+			[9859] = {
+				"|cff1eff00|Hitem:9859::::::::32:::::::::|h[Archer's Cap]|h|r", -- [1]
 				2, -- [2]
-				"", -- [3]
-				134942, -- [4]
-				9, -- [5]
+				"INVTYPE_HEAD", -- [3]
+				133117, -- [4]
+				4, -- [5]
 				2, -- [6]
 			},
-			[5808] = {
-				"|cffffffff|Hitem:5808::::::::25:::::::::|h[Pridewing Venom Sac]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134339, -- [4]
-				12, -- [5]
+			[790] = {
+				"|cff1eff00|Hitem:790::::::::36:::::::::|h[Forester's Axe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WEAPONMAINHAND", -- [3]
+				132405, -- [4]
+				2, -- [5]
 				0, -- [6]
 			},
-			[4689] = {
-				"|cffffffff|Hitem:4689::::::::18:::::::::|h[Hunting Cloak]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_CLOAK", -- [3]
-				133764, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[9871] = {
-				"|cff1eff00|Hitem:9871::::::::32:::::::::|h[Renegade Leggings]|h|r", -- [1]
+			[6574] = {
+				"|cff1eff00|Hitem:6574::::::::10:::::::::|h[Defender Bracers]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134583, -- [4]
+				"INVTYPE_WRIST", -- [3]
+				132613, -- [4]
 				4, -- [5]
 				3, -- [6]
 			},
-			[1516] = {
-				"|cff9d9d9d|Hitem:1516::::::::14:::::::::|h[Worn Hatchet]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				135419, -- [4]
-				2, -- [5]
+			[7434] = {
+				"|cff1eff00|Hitem:7434::::::::32:::::::::|h[Twilight Boots]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[5572] = {
+				"|cffffffff|Hitem:5572::::::::5:::::::::|h[Small Green Pouch]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_BAG", -- [3]
+				133637, -- [4]
+				1, -- [5]
 				0, -- [6]
 			},
 			[7912] = {
@@ -6579,61 +6273,61 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[9863] = {
-				"|cff1eff00|Hitem:9863::::::::33:::::::::|h[Archer's Shoulderpads]|h|r", -- [1]
+			[9832] = {
+				"|cff1eff00|Hitem:9832::::::::29:::::::::|h[Scaled Leather Gloves]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135039, -- [4]
+				"INVTYPE_HAND", -- [3]
+				132958, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
-			[9865] = {
-				"|cff1eff00|Hitem:9865::::::::29:::::::::|h[Renegade Bracers]|h|r", -- [1]
+			[3307] = {
+				"|cff1eff00|Hitem:3307::::::::14:::::::::|h[Barbaric Cloth Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132606, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[5664] = {
-				"|cffffffff|Hitem:5664::::::::25:::::::::|h[Corroded Shrapnel]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134070, -- [4]
-				12, -- [5]
-				0, -- [6]
-			},
-			[3771] = {
-				"|cffffffff|Hitem:3771::::::::24:::::::::|h[Wild Hog Shank]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				133969, -- [4]
-				0, -- [5]
-				0, -- [6]
-			},
-			[11151] = {
-				"|cff1eff00|Hitem:11151::::::::25:::::::::|h[Formula: Enchant Gloves - Herbalism]|h|r", -- [1]
-				2, -- [2]
-				"", -- [3]
-				134327, -- [4]
-				9, -- [5]
-				8, -- [6]
-			},
-			[7493] = {
-				"|cff1eff00|Hitem:7493::::::::33:::::::::|h[Captain's Bracers]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132611, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[6615] = {
-				"|cff1eff00|Hitem:6615::::::::27:::::::::|h[Sage's Gloves]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132950, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132539, -- [4]
 				4, -- [5]
 				1, -- [6]
+			},
+			[6610] = {
+				"|cff1eff00|Hitem:6610::::::::29:::::::::|h[Sage's Robe]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_ROBE", -- [3]
+				132660, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[7433] = {
+				"|cff1eff00|Hitem:7433::::::::33:::::::::|h[Twilight Gloves]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132955, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[6198] = {
+				"|cff1eff00|Hitem:6198::::::::36:::::::::|h[Jurassic Wristguards]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_WRIST", -- [3]
+				132600, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[14372] = {
+				"|cff1eff00|Hitem:14372::::::::26:::::::::|h[Sanguine Armor]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				135013, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[15249] = {
+				"|cff1eff00|Hitem:15249::::::::25:::::::::|h[Polished Zweihander]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_2HWEAPON", -- [3]
+				135324, -- [4]
+				2, -- [5]
+				8, -- [6]
 			},
 			[9742] = {
 				"|cffffffff|Hitem:9742::::::::5:::::::::|h[Simple Cord]|h|r", -- [1]
@@ -6667,29 +6361,29 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9774] = {
-				"|cff1eff00|Hitem:9774::::::::10:::::::::|h[Greenweave Vest]|h|r", -- [1]
+			[12843] = {
+				"|cff1eff00|Hitem:12843::::::::12:::::::::|h[Corruptor's Scourgestone]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132656, -- [4]
-				4, -- [5]
-				1, -- [6]
+				"", -- [3]
+				133445, -- [4]
+				12, -- [5]
+				0, -- [6]
 			},
-			[9782] = {
-				"|cff1eff00|Hitem:9782::::::::15:::::::::|h[Bandit Jerkin]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135015, -- [4]
-				4, -- [5]
-				2, -- [6]
-			},
-			[2734] = {
-				"|cffffffff|Hitem:2734::::::::34:::::::::|h[Green Hills of Stranglethorn - Page 10]|h|r", -- [1]
+			[4895] = {
+				"|cffffffff|Hitem:4895::::::::25:::::::::|h[Thunder Lizard Horn]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				134332, -- [4]
-				15, -- [5]
+				133723, -- [4]
+				12, -- [5]
 				0, -- [6]
+			},
+			[7091] = {
+				"|cff1eff00|Hitem:7091::::::::27:::::::::|h[Pattern: Truefaith Gloves]|h|r", -- [1]
+				2, -- [2]
+				"", -- [3]
+				134942, -- [4]
+				9, -- [5]
+				2, -- [6]
 			},
 			[9798] = {
 				"|cff1eff00|Hitem:9798::::::::10:::::::::|h[Ivycloth Robe]|h|r", -- [1]
@@ -6699,13 +6393,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[15944] = {
-				"|cff1eff00|Hitem:15944::::::::13:::::::::|h[Ancestral Orb]|h|r", -- [1]
+			[9806] = {
+				"|cff1eff00|Hitem:9806::::::::10:::::::::|h[Superior Gloves]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HOLDABLE", -- [3]
-				134335, -- [4]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
 				4, -- [5]
-				0, -- [6]
+				2, -- [6]
 			},
 			[9814] = {
 				"|cff1eff00|Hitem:9814::::::::14:::::::::|h[Fortified Belt]|h|r", -- [1]
@@ -6723,13 +6417,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[15132] = {
-				"|cff1eff00|Hitem:15132::::::::26:::::::::|h[Cutthroat's Armguards]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132609, -- [4]
-				4, -- [5]
-				2, -- [6]
+			[4552] = {
+				"|cff9d9d9d|Hitem:4552::::::::36:::::::::|h[Smooth Stone Chip]|h|r", -- [1]
+				0, -- [2]
+				"", -- [3]
+				135236, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
 			[9838] = {
 				"|cff1eff00|Hitem:9838::::::::22:::::::::|h[Banded Cloak]|h|r", -- [1]
@@ -6747,13 +6441,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[9854] = {
-				"|cff1eff00|Hitem:9854::::::::32:::::::::|h[Archer's Jerkin]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132723, -- [4]
+			[2979] = {
+				"|cffffffff|Hitem:2979::::::::18:::::::::|h[Veteran Boots]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132543, -- [4]
 				4, -- [5]
-				2, -- [6]
+				3, -- [6]
 			},
 			[9862] = {
 				"|cff1eff00|Hitem:9862::::::::33:::::::::|h[Archer's Trousers]|h|r", -- [1]
@@ -6771,11 +6465,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[2622] = {
-				"|cff1eff00|Hitem:2622::::::::32:::::::::|h[Nimar's Tribal Headdress]|h|r", -- [1]
+			[10138] = {
+				"|cff1eff00|Hitem:10138::::::::12:::::::::|h[High Councillor's Cloak]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				133072, -- [4]
+				"INVTYPE_CLOAK", -- [3]
+				133768, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -6787,21 +6481,21 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[15009] = {
-				"|cff1eff00|Hitem:15009::::::::13:::::::::|h[Primal Leggings]|h|r", -- [1]
+			[9894] = {
+				"|cff1eff00|Hitem:9894::::::::36:::::::::|h[Huntsman's Shoulders]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134585, -- [4]
+				"INVTYPE_SHOULDER", -- [3]
+				135039, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
-			[15017] = {
-				"|cff1eff00|Hitem:15017::::::::16:::::::::|h[Lupine Leggings]|h|r", -- [1]
+			[9902] = {
+				"|cff1eff00|Hitem:9902::::::::36:::::::::|h[Jazeraint Helm]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134586, -- [4]
+				"INVTYPE_HEAD", -- [3]
+				133139, -- [4]
 				4, -- [5]
-				2, -- [6]
+				3, -- [6]
 			},
 			[9910] = {
 				"|cff1eff00|Hitem:9910::::::::24:::::::::|h[Royal Gloves]|h|r", -- [1]
@@ -6811,13 +6505,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[4421] = {
-				"|cffffffff|Hitem:4421::::::::32:::::::::|h[Scroll of Protection III]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134943, -- [4]
-				0, -- [5]
-				0, -- [6]
+			[7458] = {
+				"|cff1eff00|Hitem:7458::::::::33:::::::::|h[Knight's Boots]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_FEET", -- [3]
+				132535, -- [4]
+				4, -- [5]
+				3, -- [6]
 			},
 			[9926] = {
 				"|cff1eff00|Hitem:9926::::::::24:::::::::|h[Brigade Boots]|h|r", -- [1]
@@ -6835,53 +6529,53 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9866] = {
-				"|cff1eff00|Hitem:9866::::::::33:::::::::|h[Renegade Chestguard]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132634, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[2978] = {
-				"|cff1eff00|Hitem:2978::::::::18:::::::::|h[Veteran Leggings]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_LEGS", -- [3]
-				134589, -- [4]
-				4, -- [5]
-				3, -- [6]
-			},
-			[1416] = {
-				"|cff9d9d9d|Hitem:1416::::::::30:::::::::|h[Rusty Hatchet]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_WEAPONMAINHAND", -- [3]
-				135421, -- [4]
-				2, -- [5]
-				0, -- [6]
-			},
-			[7437] = {
-				"|cff1eff00|Hitem:7437::::::::36:::::::::|h[Twilight Cuffs]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_WRIST", -- [3]
-				132608, -- [4]
-				4, -- [5]
-				1, -- [6]
-			},
-			[3199] = {
-				"|cff1eff00|Hitem:3199::::::::26:::::::::|h[Battle Slayer]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135424, -- [4]
-				2, -- [5]
-				1, -- [6]
-			},
-			[3685] = {
-				"|cffffffff|Hitem:3685::::::::36:::::::::|h[Raptor Egg]|h|r", -- [1]
+			[2450] = {
+				"|cffffffff|Hitem:2450::::::::27:::::::::|h[Briarthorn]|h|r", -- [1]
 				1, -- [2]
 				"", -- [3]
-				132834, -- [4]
+				134412, -- [4]
 				7, -- [5]
 				0, -- [6]
+			},
+			[9889] = {
+				"|cff1eff00|Hitem:9889::::::::35:::::::::|h[Huntsman's Cap]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_HEAD", -- [3]
+				132514, -- [4]
+				4, -- [5]
+				2, -- [6]
+			},
+			[1431] = {
+				"|cff9d9d9d|Hitem:1431::::::::30:::::::::|h[Patchwork Pants]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_LEGS", -- [3]
+				134591, -- [4]
+				4, -- [5]
+				1, -- [6]
+			},
+			[5571] = {
+				"|cffffffff|Hitem:5571::::::::30:::::::::|h[Small Black Pouch]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_BAG", -- [3]
+				133635, -- [4]
+				1, -- [5]
+				0, -- [6]
+			},
+			[4461] = {
+				"|cffffffff|Hitem:4461::::::::36:::::::::|h[Raptor Hide]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134303, -- [4]
+				7, -- [5]
+				0, -- [6]
+			},
+			[2138] = {
+				"|cff9d9d9d|Hitem:2138::::::::30:::::::::|h[Sharpened Letter Opener]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_WEAPON", -- [3]
+				135641, -- [4]
+				2, -- [5]
+				15, -- [6]
 			},
 			[3013] = {
 				"|cffffffff|Hitem:3013::::::::5:::::::::|h[Scroll of Protection]|h|r", -- [1]
@@ -6891,13 +6585,13 @@ RareScannerDB = {
 				0, -- [5]
 				0, -- [6]
 			},
-			[7441] = {
-				"|cff1eff00|Hitem:7441::::::::34:::::::::|h[Sentinel Cap]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_HEAD", -- [3]
-				133117, -- [4]
+			[2212] = {
+				"|cff9d9d9d|Hitem:2212::::::::30:::::::::|h[Cracked Buckler]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_SHIELD", -- [3]
+				134955, -- [4]
 				4, -- [5]
-				2, -- [6]
+				6, -- [6]
 			},
 			[14098] = {
 				"|cffffffff|Hitem:14098::::::::5:::::::::|h[Native Cloak]|h|r", -- [1]
@@ -6907,13 +6601,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[4560] = {
-				"|cffffffff|Hitem:4560::::::::30:::::::::|h[Fine Scimitar]|h|r", -- [1]
+			[4565] = {
+				"|cffffffff|Hitem:4565::::::::30:::::::::|h[Simple Dagger]|h|r", -- [1]
 				1, -- [2]
 				"INVTYPE_WEAPON", -- [3]
-				135325, -- [4]
+				135637, -- [4]
 				2, -- [5]
-				7, -- [6]
+				15, -- [6]
 			},
 			[14114] = {
 				"|cff1eff00|Hitem:14114::::::::14:::::::::|h[Aboriginal Footwraps]|h|r", -- [1]
@@ -6931,35 +6625,35 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[1417] = {
-				"|cff9d9d9d|Hitem:1417::::::::30:::::::::|h[Beaten Battle Axe]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				135424, -- [4]
-				2, -- [5]
-				1, -- [6]
+			[6211] = {
+				"|cffffffff|Hitem:6211::::::::28:::::::::|h[Recipe: Elixir of Ogre's Strength]|h|r", -- [1]
+				1, -- [2]
+				"", -- [3]
+				134939, -- [4]
+				9, -- [5]
+				6, -- [6]
 			},
-			[1418] = {
-				"|cff9d9d9d|Hitem:1418::::::::30:::::::::|h[Worn Leather Belt]|h|r", -- [1]
+			[5447] = {
+				"|cff9d9d9d|Hitem:5447::::::::27:::::::::|h[Damaged Elemental Bracer]|h|r", -- [1]
 				0, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132513, -- [4]
-				4, -- [5]
-				2, -- [6]
+				"", -- [3]
+				132606, -- [4]
+				15, -- [5]
+				0, -- [6]
 			},
-			[1425] = {
-				"|cff9d9d9d|Hitem:1425::::::::30:::::::::|h[Worn Leather Vest]|h|r", -- [1]
+			[5636] = {
+				"|cff9d9d9d|Hitem:5636::::::::36:::::::::|h[Delicate Feather]|h|r", -- [1]
 				0, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135009, -- [4]
-				4, -- [5]
-				2, -- [6]
+				"", -- [3]
+				132923, -- [4]
+				5, -- [5]
+				0, -- [6]
 			},
-			[1433] = {
-				"|cff9d9d9d|Hitem:1433::::::::30:::::::::|h[Patchwork Armor]|h|r", -- [1]
-				0, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				135010, -- [4]
+			[7474] = {
+				"|cff1eff00|Hitem:7474::::::::36:::::::::|h[Regal Cloak]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CLOAK", -- [3]
+				133754, -- [4]
 				4, -- [5]
 				1, -- [6]
 			},
@@ -6971,21 +6665,21 @@ RareScannerDB = {
 				7, -- [5]
 				0, -- [6]
 			},
-			[7438] = {
-				"|cff1eff00|Hitem:7438::::::::33:::::::::|h[Twilight Belt]|h|r", -- [1]
+			[7481] = {
+				"|cff1eff00|Hitem:7481::::::::36:::::::::|h[Ranger Boots]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WAIST", -- [3]
-				132499, -- [4]
+				"INVTYPE_FEET", -- [3]
+				132542, -- [4]
 				4, -- [5]
-				1, -- [6]
+				2, -- [6]
 			},
-			[5112] = {
-				"|cff1eff00|Hitem:5112::::::::14:::::::::|h[Ritual Blade]|h|r", -- [1]
+			[7445] = {
+				"|cff1eff00|Hitem:7445::::::::33:::::::::|h[Sentinel Shoulders]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_WEAPON", -- [3]
-				135638, -- [4]
-				2, -- [5]
-				15, -- [6]
+				"INVTYPE_SHOULDER", -- [3]
+				135039, -- [4]
+				4, -- [5]
+				2, -- [6]
 			},
 			[7097] = {
 				"|cffffffff|Hitem:7097::::::::3:::::::::|h[Leg Meat]|h|r", -- [1]
@@ -7011,13 +6705,13 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[4604] = {
-				"|cffffffff|Hitem:4604::::::::30:::::::::|h[Forest Mushroom Cap]|h|r", -- [1]
-				1, -- [2]
-				"", -- [3]
-				134534, -- [4]
-				0, -- [5]
-				0, -- [6]
+			[1430] = {
+				"|cff9d9d9d|Hitem:1430::::::::30:::::::::|h[Patchwork Gloves]|h|r", -- [1]
+				0, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132952, -- [4]
+				4, -- [5]
+				1, -- [6]
 			},
 			[10126] = {
 				"|cff1eff00|Hitem:10126::::::::17:::::::::|h[Ornate Bracers]|h|r", -- [1]
@@ -7027,23 +6721,24 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[9807] = {
-				"|cff1eff00|Hitem:9807::::::::10:::::::::|h[Superior Shoulders]|h|r", -- [1]
+			[9849] = {
+				"|cff1eff00|Hitem:9849::::::::37:::::::::|h[Conjurer's Hood]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHOULDER", -- [3]
-				135039, -- [4]
+				"INVTYPE_HEAD", -- [3]
+				133134, -- [4]
 				4, -- [5]
-				2, -- [6]
+				1, -- [6]
 			},
 		},
-		["containers_loot"] = {
+		["rares_loot"] = {
+			[5785] = {
+				9751, -- [1]
+			},
+			[3068] = {
+				15006, -- [1]
+			},
 		},
-		["dbversion"] = {
-			{
-				["locale"] = "enUS",
-				["version"] = 2,
-			}, -- [1]
-		},
+		["lootdbversion"] = 2,
 		["rare_names"] = {
 			["enUS"] = {
 				[507] = "Fenros",
@@ -7207,14 +6902,14 @@ RareScannerDB = {
 				[10078] = "Terrorspark",
 				[6582] = "Clutchmother Zavas",
 				[6584] = "King Mosh",
-				[5859] = "Hagg Taurenbane",
+				[3253] = "Silithid Harvester",
 				[1140] = "Razormaw Matriarch",
 				[14697] = "Lumbering Horror",
-				[14221] = "Gravis Slipknot",
-				[1910] = "Muad",
+				[6581] = "Ravasaur Matriarch",
+				[1843] = "Foreman Jerris",
 				[572] = "Leprithus",
 				[1398] = "Boss Galgosh",
-				[8978] = "Thauris Balgarr",
+				[79] = "Narg the Taskmaster",
 				[2283] = "Ravenclaw Regent",
 				[573] = "Foe Reaper 4000",
 				[1911] = "Deeb",
@@ -7222,18 +6917,18 @@ RareScannerDB = {
 				[14226] = "Kaskk",
 				[574] = "Naraxis",
 				[14234] = "Hayoc",
-				[1837] = "Scarlet Judge",
-				[1839] = "Scarlet High Clerist",
-				[10376] = "Crystal Fang",
-				[1844] = "Foreman Marcrid",
+				[8213] = "Ironback",
+				[8201] = "Omgorn the Lost",
+				[10082] = "Zerillis",
+				[10081] = "Dustwraith",
 				[10196] = "General Colbatann",
 				[7137] = "Immolatus",
-				[1850] = "Putridius",
+				[10509] = "Jed Runewatcher",
 				[14266] = "Shanda the Spinner",
 				[14270] = "Squiddic",
-				[1885] = "Scarlet Smith",
+				[10647] = "Prince Raze",
 				[14278] = "Ro'Bark",
-				[1920] = "Dalaran Spellscribe",
+				[10201] = "Lady Hederine",
 				[10198] = "Kashoch the Reaver",
 				[10202] = "Azurous",
 				[7895] = "Ambassador Bloodrage",
@@ -7241,30 +6936,30 @@ RareScannerDB = {
 				[6648] = "Antilos",
 				[6650] = "General Fangferror",
 				[6652] = "Master Feardred",
-				[9602] = "Hahk'Zor",
+				[4438] = "Razorfen Spearhide",
 				[14488] = "Roloch",
-				[100] = "Gruff Swiftbite",
+				[14477] = "Grubthor",
 				[10238] = "Staggon",
-				[472] = "Fedfennel",
+				[14476] = "Krellack",
 				[8202] = "Cyclok the Mad",
 				[8206] = "Soul of Tanaris",
 				[14342] = "Ragepaw",
 				[8214] = "Jalinde Summerdrake",
 				[8218] = "Witherheart the Stalker",
-				[1838] = "Scarlet Interrogator",
-				[1399] = "Magosh",
-				[521] = "Lupos",
-				[14344] = "Mongress",
-				[9417] = "Sleeping Dragon",
-				[8210] = "Razortalon",
-				[8208] = "Murderous Blisterpaw",
-				[1936] = "Farmer Solliden",
+				[8300] = "Ravage",
+				[3295] = "Sludge Beast",
+				[3735] = "Apothecary Falthis",
+				[7016] = "Lady Vespira",
+				[14016] = "Ushalac the Gloomdweller",
+				[8660] = "The Evalcharr",
+				[14472] = "Gretheer",
+				[14281] = "Jimmy the Bleeder",
 				[10809] = "Stonespine",
 				[584] = "Kazon",
 				[10817] = "Duggan Wildhammer",
 				[10821] = "Hed'mush the Rotting",
 				[10825] = "Gish the Unmoving",
-				[8298] = "Akubar the Seer",
+				[2172] = "Strider Clutchmother",
 				[8278] = "Smoldar",
 				[8282] = "Highlord Mastrogonde",
 				[1425] = "Grizlak",
@@ -7272,10 +6967,10 @@ RareScannerDB = {
 				[14426] = "Harb Foulmountain",
 				[17075] = "Sandworm",
 				[3872] = "Deathsworn Captain",
-				[8204] = "Soriid the Devourer",
-				[14492] = "Verifonix",
+				[2184] = "Lady Moongazer",
 				[14446] = "Fingat",
-				[4015] = "Pridewing Patriarch",
+				[10358] = "Fellicent's Shade",
+				[6489] = "Ironspine",
 				[1552] = "Scale Belly",
 				[14445] = "Lord Captain Wyrmak",
 				[5937] = "Vile Sting",
@@ -7284,75 +6979,75 @@ RareScannerDB = {
 				[14474] = "Zora",
 				[14478] = "Huricanian",
 				[1944] = "Rot Hide Bruiser",
-				[12431] = "Gorefang",
+				[14475] = "Rex Ashil",
 				[14490] = "Rippa",
-				[2476] = "Large Loch Crocolisk",
-				[14448] = "Molt Thorn",
-				[1424] = "Master Digger",
-				[5352] = "Old Grizzlegut",
+				[14471] = "Setis",
+				[14237] = "Oozeworm",
+				[14236] = "Lord Angler",
+				[14233] = "Ripscale",
 				[4132] = "Silithid Ravager",
 				[1948] = "Snarlmane",
-				[12432] = "Old Vicejaw",
-				[14447] = "Gilmorian",
-				[14433] = "Sludginn",
+				[5356] = "Snarler",
+				[10359] = "Sri'skulk",
+				[5354] = "Gnarl Leafbrother",
 				[14019] = "Tatterhide",
-				[14225] = "Prince Kellen",
+				[14428] = "Uruson",
 				[14429] = "Grimmaw",
-				[8299] = "Spiteflayer",
+				[14431] = "Fury Shelda",
 				[5933] = "Achellios the Banished",
-				[14430] = "Duskstalker",
-				[462] = "Vultros",
+				[14269] = "Seeker Aqualon",
+				[4066] = "Nal'taszar",
 				[5931] = "Foreman Rigger",
-				[596] = "Brainwashed Noble",
-				[5934] = "Heartrazor",
-				[723] = "Mosh'Ogg Butcher",
-				[10826] = "Lord Darkscythe",
-				[10822] = "Warlord Thresh'jin",
 				[3398] = "Gesharahan",
-				[10818] = "Death Knight Soulbearer",
+				[13896] = "Scalebeard",
+				[723] = "Mosh'Ogg Butcher",
+				[5932] = "Taskmaster Whipfang",
+				[5930] = "Sister Riven",
+				[596] = "Brainwashed Noble",
+				[5928] = "Sorrow Wing",
 				[2090] = "Ma'ruk Wyrmscale",
-				[1849] = "Dreadwhisper",
-				[7015] = "Flagglemurk the Cruel",
+				[5935] = "Ironeye the Invincible",
+				[3773] = "Akkrilus",
 				[8981] = "Malfunctioning Reaver",
 				[5798] = "Thora Feathermoon",
-				[5790] = "Lizzle Sprysprocket",
-				[10558] = "Hearthsinger Forresten",
-				[9041] = "Warder Stilgiss",
-				[5786] = "Snagglespear",
-				[9604] = "Gorgon'och",
 				[599] = "Marisa du'Paige",
-				[3470] = "Rathorian",
+				[10558] = "Hearthsinger Forresten",
+				[5828] = "Humar the Pridelord",
+				[5786] = "Snagglespear",
+				[5832] = "Thunderstomp",
+				[5790] = "Lizzle Sprysprocket",
+				[5399] = "Veyzhak the Cannibal",
 				[5794] = "Thurmonde the Devout",
 				[5796] = "Ben",
 				[11580] = "Kelemis the Lifeless",
 				[5800] = "Marcus Bel",
-				[5834] = "Azzere the Skyblade",
-				[8219] = "Zul'arek Hatefowler",
+				[10119] = "Volchan",
+				[10263] = "Burning Felguard",
 				[601] = "Capo the Mean",
 				[5808] = "Warlord Kolkanis",
-				[14223] = "Cranky Benj",
-				[8211] = "Old Cliff Jumper",
-				[8207] = "Greater Firebird",
-				[16379] = "Spirit of the Damned",
-				[5848] = "Malgin Barleybrew",
-				[10239] = "Tepolar",
+				[5842] = "Takk the Leaper",
+				[14343] = "Olm the Wise",
+				[14339] = "Death Howl",
+				[8203] = "Kregg Keelhaul",
+				[14235] = "The Rot",
+				[9217] = "Spirestone Lord Magus",
 				[5822] = "Felweaver Scornn",
 				[5824] = "Captain Flat Tusk",
 				[5826] = "Geolord Mottle",
-				[5828] = "Humar the Pridelord",
+				[9596] = "Bannok Grimaxe",
 				[5830] = "Sister Rathtalon",
-				[5832] = "Thunderstomp",
-				[10119] = "Volchan",
+				[9604] = "Gorgon'och",
+				[5834] = "Azzere the Skyblade",
 				[5836] = "Engineer Whirleygig",
 				[5838] = "Brokespear",
 				[10642] = "Eck'alom",
-				[5842] = "Takk the Leaper",
+				[14223] = "Cranky Benj",
 				[14227] = "Hissperak",
 				[14231] = "Drogoth the Roamer",
-				[14235] = "The Rot",
-				[471] = "Mother Fang",
-				[11688] = "Cursed Centaur",
+				[5848] = "Malgin Barleybrew",
 				[2931] = "Zaricotl",
+				[11688] = "Cursed Centaur",
+				[5343] = "Lady Szallah",
 				[5345] = "Diamond Head",
 				[5347] = "Antilus the Soarer",
 				[5349] = "Arash-ethis",
@@ -7365,110 +7060,423 @@ RareScannerDB = {
 				[10199] = "Grizzle Snowpaw",
 				[10203] = "Berylgos",
 				[5367] = "Scillia Daggerquil",
-				[7017] = "Lord Sinslayer",
-				[10640] = "Oakpaw",
-				[10641] = "Branch Snapper",
-				[10643] = "Mugglefin",
 				[10644] = "Mist Howler",
+				[10643] = "Mugglefin",
+				[10641] = "Branch Snapper",
+				[10640] = "Oakpaw",
+				[7017] = "Lord Sinslayer",
 				[14267] = "Emogg the Crusher",
-				[5343] = "Lady Szallah",
-				[9217] = "Spirestone Lord Magus",
+				[471] = "Mother Fang",
+				[10239] = "Tepolar",
 				[8199] = "Warleader Krazzilak",
-				[8203] = "Kregg Keelhaul",
-				[14339] = "Death Howl",
-				[14343] = "Olm the Wise",
+				[16379] = "Spirit of the Damned",
+				[8207] = "Greater Firebird",
+				[8211] = "Old Cliff Jumper",
 				[8215] = "Grimungous",
-				[10263] = "Burning Felguard",
+				[8219] = "Zul'arek Hatefowler",
 				[2447] = "Narillasanz",
-				[5399] = "Veyzhak the Cannibal",
+				[3470] = "Rathorian",
 				[5912] = "Deviate Faerie Dragon",
-				[9596] = "Bannok Grimaxe",
+				[9041] = "Warder Stilgiss",
 				[5916] = "Sentinel Amarassan",
 				[2452] = "Skhowl",
 				[2453] = "Lo'Grosh",
-				[3773] = "Akkrilus",
-				[5935] = "Ironeye the Invincible",
+				[7015] = "Flagglemurk the Cruel",
+				[1849] = "Dreadwhisper",
 				[616] = "Chatter",
-				[5928] = "Sorrow Wing",
-				[5930] = "Sister Riven",
-				[5932] = "Taskmaster Whipfang",
-				[13896] = "Scalebeard",
+				[10818] = "Death Knight Soulbearer",
+				[10822] = "Warlord Thresh'jin",
+				[10826] = "Lord Darkscythe",
+				[5934] = "Heartrazor",
 				[8279] = "Faulty War Golem",
 				[8283] = "Slave Master Blackheart",
-				[4066] = "Nal'taszar",
-				[14269] = "Seeker Aqualon",
+				[462] = "Vultros",
+				[14430] = "Duskstalker",
 				[14427] = "Gibblesnik",
-				[14431] = "Fury Shelda",
+				[8299] = "Spiteflayer",
 				[8303] = "Grunter",
-				[14428] = "Uruson",
-				[5354] = "Gnarl Leafbrother",
-				[10359] = "Sri'skulk",
-				[5356] = "Snarler",
+				[14225] = "Prince Kellen",
+				[14433] = "Sludginn",
+				[14447] = "Gilmorian",
+				[12432] = "Old Vicejaw",
 				[4425] = "Blind Hunter",
-				[14233] = "Ripscale",
-				[14236] = "Lord Angler",
-				[14237] = "Oozeworm",
-				[14471] = "Setis",
-				[14475] = "Rex Ashil",
+				[5352] = "Old Grizzlegut",
+				[1424] = "Master Digger",
+				[14448] = "Molt Thorn",
+				[2476] = "Large Loch Crocolisk",
+				[12431] = "Gorefang",
 				[14479] = "Twilight Lord Everun",
 				[503] = "Lord Malathrom",
 				[14487] = "Gluggle",
 				[14491] = "Kurmokk",
-				[6489] = "Ironspine",
-				[10358] = "Fellicent's Shade",
-				[2184] = "Lady Moongazer",
+				[4015] = "Pridewing Patriarch",
+				[14492] = "Verifonix",
+				[8204] = "Soriid the Devourer",
 				[8302] = "Deatheye",
-				[2172] = "Strider Clutchmother",
-				[14281] = "Jimmy the Bleeder",
-				[14472] = "Gretheer",
-				[8660] = "The Evalcharr",
-				[7016] = "Lady Vespira",
-				[14016] = "Ushalac the Gloomdweller",
-				[3735] = "Apothecary Falthis",
-				[3295] = "Sludge Beast",
-				[8300] = "Ravage",
-				[14476] = "Krellack",
-				[14477] = "Grubthor",
+				[8298] = "Akubar the Seer",
+				[1936] = "Farmer Solliden",
+				[8208] = "Murderous Blisterpaw",
+				[8210] = "Razortalon",
+				[9417] = "Sleeping Dragon",
+				[14344] = "Mongress",
+				[521] = "Lupos",
+				[1399] = "Magosh",
+				[1838] = "Scarlet Interrogator",
+				[472] = "Fedfennel",
+				[100] = "Gruff Swiftbite",
 				[4030] = "Vengeful Ancient",
-				[4438] = "Razorfen Spearhide",
+				[9602] = "Hahk'Zor",
 				[11497] = "The Razza",
-				[10201] = "Lady Hederine",
-				[10647] = "Prince Raze",
-				[10509] = "Jed Runewatcher",
+				[1920] = "Dalaran Spellscribe",
+				[1885] = "Scarlet Smith",
+				[1850] = "Putridius",
 				[506] = "Sergeant Brashclaw",
-				[10081] = "Dustwraith",
-				[10082] = "Zerillis",
-				[8201] = "Omgorn the Lost",
-				[8213] = "Ironback",
-				[79] = "Narg the Taskmaster",
-				[1843] = "Foreman Jerris",
-				[6581] = "Ravasaur Matriarch",
-				[3253] = "Silithid Harvester",
+				[1844] = "Foreman Marcrid",
+				[10376] = "Crystal Fang",
+				[1839] = "Scarlet High Clerist",
+				[1837] = "Scarlet Judge",
+				[8978] = "Thauris Balgarr",
+				[1910] = "Muad",
+				[14221] = "Gravis Slipknot",
+				[5859] = "Hagg Taurenbane",
 			},
 		},
-		["recentlySeen"] = {
+		["containers_loot"] = {
 		},
 		["custom_npcs"] = {
 		},
-		["rares_loot"] = {
-			[5785] = {
-				9751, -- [1]
+		["rares_found"] = {
+			[5849] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1695122693,
+				["coordX"] = "4740",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "8520",
+			},
+			[5865] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "2060",
+				["coordX"] = "5040",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698329915,
+			},
+			[3398] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1698136706,
+				["coordX"] = "4640",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "3940",
+			},
+			[7016] = {
+				["mapID"] = 1439,
+				["artID"] = {
+					1247, -- [1]
+				},
+				["coordY"] = "2380",
+				["coordX"] = "5820",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1694010820,
 			},
 			[3068] = {
-				15006, -- [1]
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["coordY"] = "4680",
+				["coordX"] = "4120",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698068549,
+			},
+			[5836] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "0860",
+				["coordX"] = "5620",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1694066069,
+			},
+			[1936] = {
+				["mapID"] = 1420,
+				["artID"] = {
+					1210, -- [1]
+				},
+				["foundTime"] = 1698342870,
+				["coordX"] = "3440",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "5220",
+			},
+			[2447] = {
+				["mapID"] = 1416,
+				["artID"] = {
+					1205, -- [1]
+				},
+				["coordY"] = "5740",
+				["coordX"] = "7920",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1695401399,
+			},
+			[5807] = {
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["foundTime"] = 1693981171,
+				["coordX"] = "5420",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "2000",
+			},
+			[5934] = {
+				["mapID"] = 1441,
+				["artID"] = {
+					1249, -- [1]
+				},
+				["coordY"] = "4020",
+				["coordX"] = "1740",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1696583709,
+			},
+			[4015] = {
+				["mapID"] = 1442,
+				["artID"] = {
+					1250, -- [1]
+				},
+				["coordY"] = "4380",
+				["coordX"] = "4620",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1696848941,
+			},
+			[5826] = {
+				["mapID"] = 1411,
+				["artID"] = {
+					1194, -- [1]
+				},
+				["coordY"] = "4880",
+				["coordX"] = "4620",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1693832145,
+			},
+			[5842] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1698148702,
+				["coordX"] = "6040",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "0940",
+			},
+			[1910] = {
+				["mapID"] = 1420,
+				["artID"] = {
+					1210, -- [1]
+				},
+				["foundTime"] = 1698342862,
+				["coordX"] = "3420",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "4160",
+			},
+			[3056] = {
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["coordY"] = "5440",
+				["coordX"] = "2440",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698059559,
+			},
+			[3253] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1698346053,
+				["coordX"] = "4720",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "6940",
+			},
+			[5797] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "7340",
+				["coordX"] = "4720",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698346061,
+			},
+			[5829] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "2040",
+				["coordX"] = "4120",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1695584273,
+			},
+			[5798] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "6640",
+				["coordX"] = "4540",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698346318,
+			},
+			[2931] = {
+				["mapID"] = 1418,
+				["artID"] = {
+					1207, -- [1]
+				},
+				["coordY"] = "5380",
+				["coordX"] = "3780",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1697011362,
+			},
+			[5830] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "1360",
+				["coordX"] = "3960",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1694065269,
+			},
+			[3270] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1695626510,
+				["coordX"] = "5900",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "2440",
+			},
+			[5799] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "7200",
+				["coordX"] = "4620",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698346061,
+			},
+			[5859] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1697451041,
+				["coordX"] = "4140",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "8140",
+			},
+			[5831] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1695645590,
+				["coordX"] = "6200",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "3480",
+			},
+			[5808] = {
+				["mapID"] = 1411,
+				["artID"] = {
+					1194, -- [1]
+				},
+				["coordY"] = "7800",
+				["coordX"] = "4740",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1697880373,
+			},
+			[5800] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "7320",
+				["coordX"] = "4720",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698346063,
+			},
+			[5824] = {
+				["mapID"] = 1411,
+				["artID"] = {
+					1194, -- [1]
+				},
+				["foundTime"] = 1697879073,
+				["coordX"] = "4300",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "4280",
+			},
+			[5832] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["coordY"] = "8040",
+				["coordX"] = "4640",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1698406295,
+			},
+			[5785] = {
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["foundTime"] = 1693810989,
+				["coordX"] = "5580",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "1280",
+			},
+			[5786] = {
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["foundTime"] = 1697819315,
+				["coordX"] = "5320",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "7220",
+			},
+			[14278] = {
+				["mapID"] = 1424,
+				["artID"] = {
+					1214, -- [1]
+				},
+				["coordY"] = "5920",
+				["coordX"] = "6480",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1697107307,
+			},
+			[5787] = {
+				["mapID"] = 1412,
+				["artID"] = {
+					1200, -- [1]
+				},
+				["coordY"] = "1700",
+				["coordX"] = "4040",
+				["atlasName"] = "VignetteKill",
+				["foundTime"] = 1693979175,
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Dopesnare - Stitches"] = "Default",
-		["Dopesick - Stitches"] = "Default",
-		["Dopede - Stitches"] = "Default",
-		["Lonac - Stitches"] = "Default",
-		["Vermins - Stitches"] = "Default",
-		["Dopecure - Stitches"] = "Default",
-		["Dopeclaw - Stitches"] = "Default",
-		["Dopeah - Stitches"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
