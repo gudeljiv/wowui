@@ -41,6 +41,9 @@ local LSM = LibStub('LibSharedMedia-3.0')
 
 local options
 
+local experiments = addon:GetModule("Experiments")
+---@cast experiments +Experiments
+
 --------------------------------------------------------------------------------
 -- Option handler prototype
 --------------------------------------------------------------------------------
@@ -300,6 +303,19 @@ end
 
 local function GetOptions()
 	if options then return options end
+	
+	local lockOption = {
+		name = function()
+			return addon.anchor:IsShown() and L["Lock anchor"] or L["Unlock anchor"]
+		end,
+		desc = L["Click to toggle the bag anchor."],
+		type = 'execute',
+		order = 110,
+		func = function()
+			addon:ToggleAnchor()
+		end,
+		disabled = function(info) return (info.handler and info.handler:IsDisabled(info)) or addon.db.profile.positionMode ~= 'anchored' end,
+	}
 
 	filterOptions._desc = {
 		name = L['Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins.'],
@@ -320,7 +336,7 @@ local function GetOptions()
 		name = addonName..' DEV',
 		--@end-debug@]===]
 		--@non-debug@
-		name = addonName..' v1.10.6',
+		name = addonName..' v1.10.21',
 		--@end-non-debug@
 		type = 'group',
 		handler = addon:GetOptionHandler(addon),
@@ -374,6 +390,30 @@ local function GetOptions()
 						order = 100,
 						inline = true,
 						args = {
+							positionMode = {
+								name = L['Position mode'],
+								desc = L['Select how the bags are positionned.'],
+								type = 'select',
+								order = 100,
+								values = {
+									anchored = L['Anchored'],
+									manual = L['Manual'],
+								}
+							},
+							toggleAnchor = lockOption,
+							reset = {
+								name = L['Reset position'],
+								desc = L['Click there to reset the bag positions and sizes.'],
+								type = 'execute',
+								order = 120,
+								func = function() addon:ResetBagPositions() end,
+							},
+							hideAnchor = {
+								name = L['Do not show anchor point'],
+								desc = L['Hide the colored corner shown when you move the bag.'],
+								type = 'toggle',
+								order = 125,
+							},
 							scale = {
 								name = L['Scale'],
 								desc = L['Use this to adjust the bag scale.'],
@@ -679,6 +719,13 @@ local function GetOptions()
 				args = moduleOptions,
 			},
 			profiles = profiles,
+			experiments = {
+				name = L['Experiments'],
+				desc = L['View your experiment groups and toggle participation.'],
+				type = 'group',
+				order = 9999,
+				args = experiments:GetOptions(),
+			}
 		},
 		plugins = {}
 	}

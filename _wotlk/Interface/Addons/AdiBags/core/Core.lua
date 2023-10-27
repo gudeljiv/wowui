@@ -19,7 +19,10 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: ABEvent-1.0
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+---@cast addon +ABEvent-1.0|ABBucket-1.0|AceHook-3.0|AceConsole-3.0
 local L = addon.L
 
 --<GLOBALS
@@ -42,30 +45,13 @@ local print = _G.print
 local strmatch = _G.strmatch
 local strsplit = _G.strsplit
 local type = _G.type
+---@diagnostic disable-next-line: deprecated
 local unpack = _G.unpack
 --GLOBALS>
 
-LibStub('AceAddon-3.0'):NewAddon(addon, addonName, 'ABEvent-1.0', 'ABBucket-1.0', 'AceHook-3.0', 'AceConsole-3.0')
---[===[@debug@
-_G[addonName] = addon
---@end-debug@]===]
-
 --------------------------------------------------------------------------------
--- Debug stuff
+-- Addon initialization and enabling
 --------------------------------------------------------------------------------
-
---[===[@alpha@
----@type AdiDebug
-AdiDebug = AdiDebug
-
-if AdiDebug then
-	AdiDebug:Embed(addon, addonName)
-else
---@end-alpha@]===]
-	function addon.Debug() end
---[===[@alpha@
-end
---@end-alpha@]===]
 
 --[===[@debug@
 local function DebugTable(t, prevKey)
@@ -75,12 +61,6 @@ local function DebugTable(t, prevKey)
 	end
 end
 --@end-debug@]===]
-
---------------------------------------------------------------------------------
--- Addon initialization and enabling
---------------------------------------------------------------------------------
-
-addon:SetDefaultModuleState(false)
 
 local bagKeys = {"backpack", "bank", "reagentBank"}
 function addon:OnInitialize()
@@ -93,13 +73,14 @@ function addon:OnInitialize()
 	end
 
 	self.db = LibStub('AceDB-3.0'):New(addonName.."DB", self.DEFAULT_SETTINGS, true)
-	self.db.RegisterCallback(self, "OnProfileChanged")
+	self.db.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileReset", "Reconfigure")
 
 	self:UpgradeProfile()
 
 	-- Create the bag font objects.
+	---@type table<string, table<string, AdiFont|Font>>
 	self.fonts = {}
 	for _, name in ipairs(bagKeys) do
 		self.fonts[name] = {
@@ -122,13 +103,6 @@ function addon:OnInitialize()
 	self:RegisterChatCommand("adibags", function(cmd)
 		addon:OpenOptions(strsplit(' ', cmd or ""))
 	end, true)
-
-	-- Just a warning
-	--[===[@alpha@
-	if geterrorhandler() == _G._ERRORMESSAGE and not GetCVarBool("scriptErrors") then
-		print('|cffffee00', L["Warning: You are using an alpha or beta version of AdiBags without displaying Lua errors. If anything goes wrong, AdiBags (or any other addon causing some error) will simply stop working for apparently no reason. Please either enable the display of Lua errors or install an error handler addon like BugSack or Swatter."], '|r')
-	end
-	--@end-alpha@]===]
 
 	if addon.isRetail then
 		-- Disable the reagent bag tutorial
@@ -157,24 +131,36 @@ function addon:OnEnable()
 	self:RegisterMessage('AdiBags_BagClosed', 'LayoutBags')
 	
 	-- Track most windows involving items
-	self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
-	self:RegisterEvent('BANKFRAME_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('MAIL_SHOW', 'UpdateInteractingWindow')
-	self:RegisterEvent('MAIL_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('MERCHANT_SHOW', 'UpdateInteractingWindow')
-	self:RegisterEvent('MERCHANT_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('AUCTION_HOUSE_SHOW', 'UpdateInteractingWindow')
-	self:RegisterEvent('AUCTION_HOUSE_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('TRADE_SHOW', 'UpdateInteractingWindow')
-	self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('GUILDBANKFRAME_OPENED', 'UpdateInteractingWindow')
-	self:RegisterEvent('GUILDBANKFRAME_CLOSED', 'UpdateInteractingWindow')
-	self:RegisterEvent('SOCKET_INFO_UPDATE', 'UpdateInteractingWindow')
-	self:RegisterEvent('SOCKET_INFO_CLOSE', 'UpdateInteractingWindow')
-
+	if addon.isRetail or addon.isWrath then
+		self:RegisterEvent('PLAYER_INTERACTION_MANAGER_FRAME_SHOW', 'UpdateInteractingFrame')
+		self:RegisterEvent('PLAYER_INTERACTION_MANAGER_FRAME_HIDE', 'UpdateInteractingFrame')
+		-- TODO(lobato): This is a hack to fix a change in the timing of the interaction manager
+		-- event. The interaction manager frame event is fired later than the bankframe opened
+		-- event is, which causes a race somewhere else in our code. Without this, GetInteractingWindow
+		-- will return a nil value when it shouldn't. We need to figure out where this race is
+		-- happening and fix it properly.
+		-- Note, this seems to only happen with the bankframe event, and no others.
+		self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
+	else
+		self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
+		self:RegisterEvent('BANKFRAME_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('MAIL_SHOW', 'UpdateInteractingWindow')
+		self:RegisterEvent('MAIL_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('MERCHANT_SHOW', 'UpdateInteractingWindow')
+		self:RegisterEvent('MERCHANT_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('AUCTION_HOUSE_SHOW', 'UpdateInteractingWindow')
+		self:RegisterEvent('AUCTION_HOUSE_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('TRADE_SHOW', 'UpdateInteractingWindow')
+		self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('GUILDBANKFRAME_OPENED', 'UpdateInteractingWindow')
+		self:RegisterEvent('GUILDBANKFRAME_CLOSED', 'UpdateInteractingWindow')
+		self:RegisterEvent('SOCKET_INFO_UPDATE', 'UpdateInteractingWindow')
+		self:RegisterEvent('SOCKET_INFO_CLOSE', 'UpdateInteractingWindow')
+	end
 	self:SetSortingOrder(self.db.profile.sortingOrder)
 
 	for name, module in self:IterateModules() do
+		---@cast module +AceModule|FilterModule
 		if module.isFilter then
 			module:SetEnabledState(self.db.profile.filters[module.moduleName])
 		elseif module.isBag then
@@ -296,8 +282,6 @@ function addon:UpgradeProfile()
 		addon.db.profile.theme.currentTheme = "legacy theme"
 		addon:SaveTheme()
 	end
-	addon.db.profile.hideAnchor = nil
-	addon.db.profile.positionMode = nil
 end
 
 --------------------------------------------------------------------------------
@@ -345,19 +329,6 @@ do
 end
 
 --------------------------------------------------------------------------------
--- Module prototype
---------------------------------------------------------------------------------
-
-local moduleProto = {
-	Debug = addon.Debug,
-	OpenOptions = function(self)
-		return addon:OpenOptions("modules", self.moduleName)
-	end,
-}
-addon.moduleProto = moduleProto
-addon:SetDefaultModulePrototype(moduleProto)
-
---------------------------------------------------------------------------------
 -- Event handlers
 --------------------------------------------------------------------------------
 
@@ -370,7 +341,7 @@ end
 
 function addon:BAG_UPDATE(event, bag)
 	updatedBags[bag] = true
-	if addon.isWrath then
+	if addon.isWrath or addon.isRetail then
 		self:SendMessage('AdiBags_BagUpdated', updatedBags)
 		wipe(updatedBags)
 	end
@@ -429,8 +400,6 @@ function addon:ConfigChanged(vars)
 				end
 			elseif strmatch(name, 'columnWidth') then
 				return self:SendMessage('AdiBags_LayoutChanged')
-			elseif strmatch(name, '^theme%.font') then
-				return self:UpdateFonts()
 			end
 		end
 	end
@@ -468,6 +437,31 @@ do
 	function addon:UpdateInteractingWindow(event, ...)
 		local new = strmatch(event, '^([_%w]+)_OPEN') or strmatch(event, '^([_%w]+)_SHOW$') or strmatch(event, '^([_%w]+)_UPDATE$')
 		self:Debug('UpdateInteractingWindow', event, current, '=>', new, '|', ...)
+		if new ~= current then
+			local old = current
+			current = new
+			self.atBank = (current == "BANKFRAME")
+			if self.db.profile.virtualStacks.notWhenTrading ~= 0 then
+				self:SendMessage('AdiBags_FiltersChanged', true)
+			end
+			self:SendMessage('AdiBags_InteractingWindowChanged', new, old)
+		end
+	end
+
+	function addon:UpdateInteractingFrame(event, kind)
+		local new
+		if event == "PLAYER_INTERACTION_MANAGER_FRAME_SHOW" then
+			if kind == Enum.PlayerInteractionType.Banker then
+				new = "BANKFRAME"
+			elseif kind == Enum.PlayerInteractionType.Merchant or
+			kind == Enum.PlayerInteractionType.Auctioneer or
+			kind == Enum.PlayerInteractionType.BlackMarketAuctioneer or
+			kind == Enum.PlayerInteractionType.TradePartner or
+			kind == Enum.PlayerInteractionType.MailInfo then
+				new = "MERCHANT"
+			end
+		end
+		self:Debug('UpdateInteractingFrame', event, current, '=>', new, '|', kind)
 		if new ~= current then
 			local old = current
 			current = new

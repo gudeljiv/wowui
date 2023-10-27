@@ -125,7 +125,7 @@ aoe_casting:SetPoint('RIGHT', aoe_wrap, 'RIGHT', -5, -5)
 -- aoe_casting:CreateBeautyBorder(6)
 aoe_casting:SetFrameStrata("LOW")
 aoe_casting.text = aoe_casting:CreateFontString(aoe_casting:GetName() .. 'Title', 'BACKGROUND')
-aoe_casting.text:SetFont(xVermin.Config.font.arial, 14, 'NONE')
+aoe_casting.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
 aoe_casting.text:SetPoint('RIGHT', aoe_casting, 'RIGHT', 0, 0)
 aoe_casting.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
@@ -197,7 +197,14 @@ UIParent:HookScript(
 		end
 
 		if ttd > 0 then 
-			aoe_casting.text:SetText(xVermin.Round(ttd, 1))
+			if (ttd <= 60) then
+				_ttd = format("%0.2d", ttd)
+			elseif (ttd > 60) then
+				_ttd = format("%d:%0.2d", ttd / 60, ttd % 60)
+			end
+
+			-- aoe_casting.text:SetText(xVermin.Round(_ttd, 1))
+			aoe_casting.text:SetText(_ttd)
 			aoe_casting:SetWidth(aoe_casting.text:GetStringWidth())
 			aoe_casting:SetHeight(aoe_casting.text:GetStringHeight())
 			aoe_casting:Show()

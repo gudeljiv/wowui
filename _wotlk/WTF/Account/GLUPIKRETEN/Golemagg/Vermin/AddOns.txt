@@ -1,8 +1,8 @@
 nPower: enabled
 nHealth: disabled
 Immersion: disabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 Sorted: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
@@ -13,9 +13,9 @@ Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
-Bagnon: enabled
-Bagnon_Config: enabled
-Bagnon_GuildBank: enabled
+Bagnon: disabled
+Bagnon_Config: disabled
+Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
 RXPGuides: enabled
@@ -131,7 +131,7 @@ PitBull4_DogTagTexts: disabled
 Pawn: enabled
 VuhDo: disabled
 VuhDoOptions: disabled
-AdiBags-ItemRackSets: disabled
+AdiBags-ItemRackSets: enabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
@@ -209,3 +209,13 @@ AddOnSkins: disabled
 SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
+LibStub: enabled
+CallbackHandler-1.0: enabled
+Ace3: enabled
+LibSharedMedia-3.0: enabled
+Scrap: enabled
+BrainDead: enabled
+SyLevel: enabled
+AceGUI-3.0-SharedMediaWidgets: enabled
+Bagnon_Garbage: disabled
+Bagnon_ItemLevel_Vermin: disabled

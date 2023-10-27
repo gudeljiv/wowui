@@ -65,5 +65,7 @@ xVermin.CheckIfLoadedWithTimer(
 		f:RegisterEvent('PLAYER_REGEN_ENABLED')
 		f:SetScript('OnEvent', Update_Questie_BaseFrame)
 		Questie_BaseFrame:HookScript('OnUpdate', Update_Questie_BaseFrame)
-	end
+	end,
+	1,
+	120
 )

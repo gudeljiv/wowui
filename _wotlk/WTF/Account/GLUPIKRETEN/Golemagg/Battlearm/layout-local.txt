@@ -321,13 +321,6 @@ X: 33
 Y: 155
 W: 325
 H: 375
-Frame: AuctionFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 0
-Y: -104
-W: 832
-H: 447
 Frame: MailFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -335,6 +328,13 @@ X: 16
 Y: -116
 W: 338
 H: 424
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 0
+Y: -104
+W: 832
+H: 447
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

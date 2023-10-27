@@ -61,6 +61,57 @@ local function stopAllTracking()
 	end
 end
 
+-- local function fTTD()
+-- 	local health = UnitHealth("target")
+-- 	local time_to_die = GetTime()
+-- 	local text = "00:00"
+-- 	local oldhealth
+-- 	local health0, time0, mhealth, mtime
+
+-- 	if oldhealth ~= health then
+-- 		oldhealth = health
+-- 		if health == UnitHealthMax("target") then
+-- 			health0, time0, mhealth, mtime = nil
+-- 			text = "00:00"
+-- 			return text, -1
+-- 		end
+		
+-- 		if not health0 then
+-- 			health0, time0 = health, time
+-- 			mhealth, mtime = health, time
+-- 			return "00:00", -1
+-- 		end
+		
+-- 		mhealth = (mhealth + health) * .5
+-- 		mtime = (mtime + time) * .5
+		
+-- 		if mhealth >= health0 then
+-- 			text = "00:00"
+-- 			health0, time0, mhealth, mtime = nil
+-- 		else
+-- 			time_to_die = health * (time0 - mtime) / (mhealth - health0)
+-- 			if (time_to_die <= 60) then
+-- 				text = format("00:%0.2d", time_to_die)
+-- 			elseif (time_to_die > 60) then
+-- 				text = format("%d:%0.2d", time_to_die / 60, time_to_die % 60)
+-- 			end
+-- 			return text, time_to_die
+-- 		end
+-- 	end
+-- 	return text, -1
+-- end
+
+-- UIParent:HookScript(
+-- 	'OnUpdate',
+-- 	function()
+-- 		if UnitExists("target") and not UnitIsDeadOrGhost("target") then 
+-- 			local f_out, t_out = fTTD()
+-- 			print(f_out, t_out)
+-- 		end
+-- 	end
+-- )
+
+
 local frame = CreateFrame("Frame")
 frame:RegisterUnitEvent("UNIT_TARGET", "player")
 frame:RegisterUnitEvent("UNIT_HEALTH", "target")
