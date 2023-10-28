@@ -1,0 +1,8 @@
+------------------------------------------------------------------------
+r598 | Zimzarina | 2023-10-27 16:08:55 +0000 (Fri, 27 Oct 2023) | 1 line
+Changed paths:
+   M /trunk/Postal.lua
+
+There was an occasional error when initializing the default profile.  This change should address that issue.  Fix by MrFIXIT.
+------------------------------------------------------------------------
+

@@ -1,7 +1,7 @@
 # Auctionator
 
-## [10.1.32](https://github.com/Auctionator/Auctionator/tree/10.1.32) (2023-10-22)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.30...10.1.32) 
+## [10.1.33](https://github.com/Auctionator/Auctionator/tree/10.1.33) (2023-10-22)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.32...10.1.33) 
 
-- [Fixes #1449] Mainline: Selling: Custom durations for a group not working  
-- Mainline: Selling: Bag/Groups: Fix duplication of some items and show df quality  
+- Selling: Bag/Groups: Cleanup calculations for row width and icon size  
+- [Fixes #1448] Selling: Favourites shown when not in bag even when option off  

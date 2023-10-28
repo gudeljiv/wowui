@@ -21,7 +21,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4538
+/use item:3770
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:12037
@@ -46,8 +46,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(xTTD)
-/run print(_G.xTTD)
+/run AdiBagsItemButton14Count:ClearAllPoints()
+/run AdiBagsItemButton14Count:SetPoint("BOTTOMRIGHT", AdiBagsItemButton14, "BOTTOMRIGHT", -1, 2)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

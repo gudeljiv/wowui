@@ -3883,6 +3883,7 @@ TellMeWhenDB = {
 		},
 		["PALADIN"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -5570,7 +5571,6 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["Version"] = 100900,
-			["NumGroups"] = 5,
 		},
 		["Dopesick - Stitches"] = {
 			["Version"] = 101600,
@@ -5586,6 +5586,7 @@ TellMeWhenDB = {
 		},
 		["DRUID"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 101600,
 			["Groups"] = {
 				{
@@ -7691,9 +7692,9 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
-			["NumGroups"] = 5,
 		},
 		["DEATHKNIGHT"] = {
+			["Version"] = 101600,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -11114,7 +11115,6 @@ TellMeWhenDB = {
 				}, -- [15]
 			},
 			["NumGroups"] = 5,
-			["Version"] = 101600,
 		},
 		["Dopesnare - Stitches"] = {
 			["Version"] = 101600,
@@ -12471,6 +12471,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -12480,7 +12481,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -12567,6 +12567,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -12576,7 +12577,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -12684,6 +12684,7 @@ TellMeWhenDB = {
 		},
 		["SHAMAN"] = {
 			["Locked"] = true,
+			["Version"] = 101600,
 			["NumGroups"] = 5,
 			["Groups"] = {
 				{
@@ -14051,13 +14052,13 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
-			["Version"] = 101600,
 		},
 		["Lonac - Stitches"] = {
 			["Version"] = 101600,
 		},
 		["WARLOCK"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 100900,
 			["Groups"] = {
 				{
@@ -14792,7 +14793,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
 		},
 		["MAGE"] = {
 			["Groups"] = {
@@ -15475,6 +15475,7 @@ TellMeWhenDB = {
 		},
 		["ROGUE"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 100800,
 			["Groups"] = {
 				{
@@ -16425,12 +16426,9 @@ TellMeWhenDB = {
 					},
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
 		},
 		["SHAMAN test"] = {
 			["Locked"] = true,
-			["Version"] = 101600,
-			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -17781,6 +17779,8 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
+			["Version"] = 101600,
+			["NumGroups"] = 5,
 		},
 	},
 }

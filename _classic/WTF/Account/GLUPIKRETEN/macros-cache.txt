@@ -17,11 +17,11 @@ VER 3 0000000000000024 " " "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1205
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3770
+/use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:12037
@@ -30,7 +30,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:0
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
@@ -46,8 +46,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(xTTD)
-/run print(_G.xTTD)
+/run AdiBagsItemButton14Count:ClearAllPoints()
+/run AdiBagsItemButton14Count:SetPoint("BOTTOMRIGHT", AdiBagsItemButton14, "BOTTOMRIGHT", -1, 2)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

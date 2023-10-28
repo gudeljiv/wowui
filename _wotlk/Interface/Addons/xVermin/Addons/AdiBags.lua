@@ -45,7 +45,13 @@ f:SetScript(
 		for i = 1, 1000 do
 			if _G['AdiBagsItemButton' .. i .. 'Count'] then
 				_G['AdiBagsItemButton' .. i .. 'Count']:SetScale(0.8)
+				_G['AdiBagsItemButton' .. i .. 'Count']:ClearAllPoints()
+				_G['AdiBagsItemButton' .. i .. 'Count']:SetPoint("BOTTOMRIGHT", _G['AdiBagsItemButton' .. i], "BOTTOMRIGHT", -1, 2)
 			end
 		end
 	end
 )
+
+
+
+

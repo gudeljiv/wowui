@@ -69,21 +69,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[794] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Burning Blade Medallion: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[0] = 9,
 		[790] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
 				["text"] = "Sarkoth's Mangled Claw: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[0] = 9,
+		[794] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Burning Blade Medallion: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -101,8 +101,8 @@ RXPCData = {
 		[4402] = "Galgar's Cactus Apple Surprise",
 		[789] = "Sting of the Scorpid",
 		[5441] = "Lazy Peons",
-		[794] = "Burning Blade Medallion",
 		[1516] = "Call of Earth",
+		[794] = "Burning Blade Medallion",
 	},
 	["currentGuideName"] = "01-06 Orc/Troll",
 	["stepSkip"] = {
@@ -126,10 +126,10 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 7,
+							["minute"] = 49,
 							["year"] = 2023,
 							["hour"] = 8,
-							["minute"] = 49,
+							["weekday"] = 7,
 						},
 						["started"] = 0,
 					},

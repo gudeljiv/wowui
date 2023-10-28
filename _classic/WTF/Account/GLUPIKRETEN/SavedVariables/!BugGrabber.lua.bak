@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10887,
+	["session"] = 10891,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1276,21 +1276,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [166]
 		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RareScanner' tried to call the protected function 'TargetUnit()'.",
-			["time"] = "2023/10/13 10:25:54",
-			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
-			["session"] = 10866,
-			["counter"] = 14,
-		}, -- [167]
-		{
 			["message"] = "Lua error in aura 'Time to Die': Custom Text Function\nWeakAuras Version: 5.8.3\nAura Version: 1.0.0\n[string \"return ------------------------------------...\"]:13: bad argument #2 to 'strsplit' (string expected, got nil)",
 			["time"] = "2023/10/27 09:28:53",
 			["locals"] = "(*temporary) = \"-\"\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `strsplit'\n[string \"return -----------------------------------------------------------------------\"]:13: in function <[string \"return ------------------------------------...\"]:5>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4620: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/Text.lua\"]:239: in function `Update'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4352: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4349>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4445: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4407>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4555: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4283: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4256: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3066: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2921>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3089: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1945: in function `ImportPhase1'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1559: in function `ImportImpl'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1528: in function <...ace/AddOns/WeakAurasOptions/OptionsFrames/Update.lua:1527>",
 			["session"] = 10867,
 			["counter"] = 2,
-		}, -- [168]
+		}, -- [167]
 		{
 			["message"] = "UIParent:HookScript(): Usage: (\"frameScriptTypeName\", function[, bindingType])",
 			["time"] = "2023/10/27 10:26:49",
@@ -1298,19 +1290,19 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `HookScript'\n[string \"@Interface/AddOns/xVermin/Helpers/TimeToDie.lua\"]:107: in main chunk",
 			["session"] = 10877,
 			["counter"] = 2,
-		}, -- [169]
+		}, -- [168]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
 			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
 			["counter"] = 2,
-		}, -- [170]
+		}, -- [169]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
 			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
 			["counter"] = 2,
-		}, -- [171]
+		}, -- [170]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RareScanner' tried to call the protected function 'scanner_button:SetPoint()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1318,7 +1310,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface/AddOns/xVermin/Addons/RareScanner.lua\"]:7: in function <Interface/AddOns/xVermin/Addons/RareScanner.lua:5>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10878,
 			["counter"] = 3,
-		}, -- [172]
+		}, -- [171]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1326,7 +1318,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Addons/nMainBar.lua\"]:80: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:79>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10878,
 			["counter"] = 3,
-		}, -- [173]
+		}, -- [172]
 		{
 			["message"] = "Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:130: attempt to call global 'GetContainerNumSlots' (a nil value)",
 			["time"] = "2023/10/27 11:15:46",
@@ -1334,6 +1326,38 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:130: in function `CogsFreeBagSpace'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:199: in function `MerchantItemButton_OnModifiedClick'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:48: in function `MerchantItemButton_OnModifiedClick'\n[string \"*MerchantFrame.xml:34_OnClick\"]:2: in function <[string \"*MerchantFrame.xml:34_OnClick\"]:1>",
 			["session"] = 10884,
 			["counter"] = 1,
+		}, -- [173]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RareScanner' tried to call the protected function 'TargetUnit()'.",
+			["time"] = "2023/10/13 10:25:54",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
+			["session"] = 10888,
+			["counter"] = 15,
 		}, -- [174]
+		{
+			["message"] = "Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:137: attempt to perform arithmetic on local 'itemCount' (a nil value)",
+			["time"] = "2023/10/28 16:36:06",
+			["locals"] = "self = <table> {\n OnLeave = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:702\n typing = false\n UpdateDisplay = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:435\n MerchantFrame_OnHide = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:99\n MerchantItemButton_OnModifiedClick = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:148\n OnKeyDown = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:587\n itemIndex = 5\n OnChar = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:554\n OrigMerchantFrame_OnHide = <function> defined @Interface_Vanilla/FrameXML/MerchantFrame.lua:96\n OrigMerchantItemButton_OnModifiedClick = <function> defined @Interface_Vanilla/FrameXML/MerchantFrame.lua:578\n VerifyPurchase = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:330\n preset = 1\n DoConfirmation = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:494\n Show = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:310\n fit = 50\n Right_Click = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:629\n stack = 10\n lines = <table> {\n }\n split = 20\n OnEnter = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:667\n defaultStack = 1\n max = 50\n itemLink = \"|cffffffff|Hitem:2880::::::::26:::::::::|h[Weak Flux]|h|r\"\n partialFit = 0\n SetStackClick = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:502\n NPCName = \"Sovik\"\n Left_Click = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:616\n afford = 1350\n CogsFreeBagSpace = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:104\n onUpdate = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:357\n CreateTooltip = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:681\n available = -1\n price = 90\n itemName = \"Weak Flux\"\n OnLoad = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:14\n OnHide = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:711\n AltCurrencyMode = false\n SlashHandler = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:63\n AtVendor = true\n stackClick = 30\n DeStackClick = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:507\n itemID = 2880\n AltCurrencyHandling = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:254\n DoPurchase = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:378\n OnClick = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:521\n ConfirmNoItemLink = 0\n AltCurrRounding = <function> defined @Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:412\n}\nitemID = 2880\nfreeSpace = 0\nitemSubType = 0\nstackSize = 10\n(for index) = 0\n(for limit) = 4\n(for step) = 1\ntheBag = 0\ndoBag = true\nnumSlot = 20\n(for index) = 2\n(for limit) = 20\n(for step) = 1\ntheSlot = 2\nitemLink = \"|cffffffff|Hitem:2880::::::::26:::::::::|h[Weak Flux]|h|r\"\n_ = <table> {\n itemName = \"Weak Flux\"\n hasLoot = false\n hyperlink = \"|cffffffff|Hitem:2880::::::::26:::::::::|h[Weak Flux]|h|r\"\n iconFileID = 133588\n hasNoValue = false\n isLocked = false\n itemID = 2880\n isBound = false\n stackCount = 3\n isFiltered = false\n isReadable = false\n quality = 1\n}\nitemCount = nil\n(*temporary) = 10\n(*temporary) = 2\n(*temporary) = <table> {\n itemName = \"Weak Flux\"\n hasLoot = false\n hyperlink = \"|cffffffff|Hitem:2880::::::::26:::::::::|h[Weak Flux]|h|r\"\n iconFileID = 133588\n hasNoValue = false\n isLocked = false\n itemID = 2880\n isBound = false\n stackCount = 3\n isFiltered = false\n isReadable = false\n quality = 1\n}\n(*temporary) = \"attempt to perform arithmetic on local 'itemCount' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:137: in function `CogsFreeBagSpace'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:199: in function `MerchantItemButton_OnModifiedClick'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:48: in function `MerchantItemButton_OnModifiedClick'\n[string \"*MerchantFrame.xml:34_OnClick\"]:2: in function <[string \"*MerchantFrame.xml:34_OnClick\"]:1>",
+			["session"] = 10889,
+			["counter"] = 7,
+		}, -- [175]
+		{
+			["message"] = "AdiBagsItemButton105Count:SetPoint(): Invalid region point ROGHTBOTTOM",
+			["time"] = "2023/10/28 17:09:01",
+			["locals"] = "(*temporary) = AdiBagsItemButton105Count {\n 0 = <userdata>\n}\n(*temporary) = \"ROGHTBOTTOM\"\n(*temporary) = AdiBagsItemButton105 {\n 0 = <userdata>\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton105IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface/FrameXML/ContainerFrame_Shared.lua:1333\n ExtendedOverlay = Texture {\n }\n text = FontString {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n section = AdiBagsSection16 {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton105Cooldown {\n }\n bagFamily = 0\n texture = 134068\n itemLink = \"|cffffffff|Hitem:4359::::::::26:::::::::|h[Handful of Copper Bolts]|h|r\"\n BagStaticBottom = Texture {\n }\n itemId = 4359\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n IconQuestTexture = AdiBagsItemButton105IconQuestTexture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton105IconTexture {\n }\n JunkIcon = Texture {\n }\n Stock = AdiBagsItemButton105Stock {\n }\n slot = 9\n count = 10\n filterName = \"Better Item Categories\"\n NormalTexture = AdiBagsItemButton105NormalTexture {\n }\n Count = AdiBagsItemButton105Count {\n }\n timeSinceUpgradeCheck = 0\n searchOverlay = AdiBagsItemButton105SearchOverlay {\n }\n ExtendedOverlay2 = Texture {\n }\n flashAnim = AnimationGroup {\n }\n}\n(*temporary) = \"RIGHTBOTTOM\"\n(*temporary) = 0\n(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"AdiBagsItemButton105Count:SetPoint(\"ROGHTBOTTOM\", AdiBagsItemButton105, \"RIGHTBOTTOM\", 0, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10890,
+			["counter"] = 1,
+		}, -- [176]
+		{
+			["message"] = "AdiBagsItemButton105Count:SetPoint(): Invalid region point RIGHTBOTTOM",
+			["time"] = "2023/10/28 17:09:14",
+			["locals"] = "(*temporary) = AdiBagsItemButton105Count {\n 0 = <userdata>\n}\n(*temporary) = \"RIGHTBOTTOM\"\n(*temporary) = AdiBagsItemButton105 {\n 0 = <userdata>\n bag = 0\n BattlepayItemTexture = Texture {\n }\n beautyShadow = <table> {\n }\n IconOverlay = Texture {\n }\n BagStaticTop = Texture {\n }\n IconBorder = Texture {\n }\n newitemglowAnim = AnimationGroup {\n }\n icon = AdiBagsItemButton105IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface/FrameXML/ContainerFrame_Shared.lua:1333\n ExtendedOverlay = Texture {\n }\n text = FontString {\n }\n beautyBorder = <table> {\n }\n dirty = false\n UpgradeIcon = Texture {\n }\n section = AdiBagsSection16 {\n }\n NewItemTexture = Texture {\n }\n Cooldown = AdiBagsItemButton105Cooldown {\n }\n bagFamily = 0\n texture = 134068\n itemLink = \"|cffffffff|Hitem:4359::::::::26:::::::::|h[Handful of Copper Bolts]|h|r\"\n BagStaticBottom = Texture {\n }\n itemId = 4359\n flash = Texture {\n }\n ExtendedSlot = Texture {\n }\n IconQuestTexture = AdiBagsItemButton105IconQuestTexture {\n }\n hasItem = true\n EmptySlotTextureFile = \"Interface\\BUTTONS\\UI-EmptySlot\"\n IconTexture = AdiBagsItemButton105IconTexture {\n }\n JunkIcon = Texture {\n }\n Stock = AdiBagsItemButton105Stock {\n }\n slot = 9\n count = 6\n filterName = \"Better Item Categories\"\n NormalTexture = AdiBagsItemButton105NormalTexture {\n }\n Count = AdiBagsItemButton105Count {\n }\n timeSinceUpgradeCheck = 0\n searchOverlay = AdiBagsItemButton105SearchOverlay {\n }\n ExtendedOverlay2 = Texture {\n }\n flashAnim = AnimationGroup {\n }\n}\n(*temporary) = \"RIGHTBOTTOM\"\n(*temporary) = 0\n(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"AdiBagsItemButton105Count:SetPoint(\"RIGHTBOTTOM\", AdiBagsItemButton105, \"RIGHTBOTTOM\", 0, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 10890,
+			["counter"] = 1,
+		}, -- [177]
 	},
 }
