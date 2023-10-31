@@ -113,3 +113,4 @@ SigmaProfessionFilterFirstAid: disabled
 SigmaProfessionFilterMining: disabled
 SigmaProfessionFilterPoisons: disabled
 Immersion: enabled
+Bagnon_ItemLevel_Vermin: disabled

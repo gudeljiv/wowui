@@ -432,15 +432,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
-		[6503] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 9,
-				["text"] = "Ashenvale Outrunner slain: 0/9",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[6629] = {
 			{
 				["type"] = "monster",
@@ -456,6 +447,15 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+		},
+		[6503] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 9,
+				["text"] = "Ashenvale Outrunner slain: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 		[6393] = {
 			{
@@ -475,28 +475,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1087] = {
+		[898] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Son of Cenarius slain: 0/4",
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Escort Gilthares Firebough back to Ratchet",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Daughter of Cenarius slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Cenarion Botanist slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
 		},
 		[6441] = {
 			{
@@ -525,14 +511,28 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[528] = {
+		[843] = {
 			{
 				["type"] = "monster",
 				["numRequired"] = 15,
-				["text"] = "Hillsbrad Peasant slain: 0/15",
+				["text"] = "Bael'dun Excavator slain: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 5,
+				["text"] = "Bael'dun Foreman slain: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Khazgorm's Journal: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[6442] = {
 			{
@@ -588,21 +588,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1068] = {
+		[1824] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:4 slain: 0/1",
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Twitching Antenna: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:9 slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[6544] = {
 			{
@@ -679,6 +672,24 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
+		[1096] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Gerenzo's Mechanical Arm: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[873] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Heart of Isha Awak: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[6461] = {
 			{
 				["type"] = "monster",
@@ -694,24 +705,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[873] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Heart of Isha Awak: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[1096] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Gerenzo's Mechanical Arm: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[6641] = {
 			{
@@ -745,46 +738,53 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[1824] = {
+		[1068] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Twitching Antenna: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:4 slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:9 slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+		},
+		[528] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 15,
+				["text"] = "Hillsbrad Peasant slain: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[843] = {
+		[1087] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Bael'dun Excavator slain: 0/15",
+				["numRequired"] = 4,
+				["text"] = "Son of Cenarius slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Bael'dun Foreman slain: 0/5",
+				["numRequired"] = 4,
+				["text"] = "Daughter of Cenarius slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Khazgorm's Journal: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Cenarion Botanist slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [3]
-		},
-		[898] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Escort Gilthares Firebough back to Ratchet",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[868] = {
 			{
@@ -805,10 +805,10 @@ RXPCData = {
 		[77] = "Camp Taurajo, The Barrens",
 		[10] = "The Sepulcher, Silverpine Forest",
 		[22] = "Thunder Bluff, Mulgore",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[11] = "Undercity, Tirisfal",
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
-		[11] = "Undercity, Tirisfal",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 	},
 	["questNameCache"] = {
 		[6282] = "Harpies Threaten",
@@ -856,11 +856,11 @@ RXPCData = {
 		[6503] = "Ashenvale Outrunners",
 		[865] = "Raptor Horns",
 		[6641] = "Vorsha the Lasher",
-		[1153] = "A New Ore Sample",
+		[898] = "Free From the Hold",
 		[874] = "Mahren Skyseer",
 		[882] = "Ishamuhale",
 		[1062] = "Goblin Invaders",
-		[898] = "Free From the Hold",
+		[1153] = "A New Ore Sample",
 		[906] = "Betrayal from Within",
 		[1058] = "Jin'Zil's Forest Magic",
 		[3301] = "Mura Runetotem",
@@ -950,21 +950,21 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["class"] = "PRIEST",
+					["isRxp"] = true,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["isRxp"] = true,
-					["timePlayed"] = 1738.657000000007,
 					["level"] = 15,
+					["timePlayed"] = 1738.657000000007,
+					["class"] = "PRIEST",
 				},
 				["Kryptor"] = {
-					["class"] = "PRIEST",
 					["level"] = 22,
+					["class"] = "PRIEST",
 					["lastSeen"] = 260591.059,
-					["xpPercentage"] = 37,
+					["timePlayed"] = 4626,
 					["isRxp"] = true,
 					["xp"] = 109,
-					["timePlayed"] = 4626,
+					["xpPercentage"] = 37,
 				},
 				["Fathersmooth"] = {
 					["timePlayed"] = 143.6410000000033,
@@ -1022,12 +1022,12 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["class"] = "ROGUE",
+					["isRxp"] = true,
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["isRxp"] = true,
-					["timePlayed"] = 67.38799999997718,
 					["level"] = 22,
+					["timePlayed"] = 67.38799999997718,
+					["class"] = "ROGUE",
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,

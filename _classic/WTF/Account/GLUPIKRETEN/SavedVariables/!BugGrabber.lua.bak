@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10903,
+	["session"] = 10905,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1260,21 +1260,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [164]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/29 22:27:18",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10856,
-			["counter"] = 7,
-		}, -- [165]
-		{
 			["message"] = "Usage: self:SetDisabledTexture(asset)",
 			["time"] = "2023/09/26 17:47:59",
 			["locals"] = "(*temporary) = \"Usage: self:SetDisabledTexture(asset)\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `SetDisabledTexture'\n[string \"@Interface/AddOns/Details/gumps/switch.lua\"]:1528: in function `ChangeIcon'\n[string \"@Interface/AddOns/Details/gumps/switch.lua\"]:1261: in function `Update'\n[string \"@Interface/AddOns/Details/gumps/switch.lua\"]:949: in function <Interface/AddOns/Details/gumps/switch.lua:642>\n[string \"=(tail call)\"]: ?",
 			["session"] = 10863,
 			["counter"] = 4,
-		}, -- [166]
+		}, -- [165]
 		{
 			["message"] = "Lua error in aura 'Time to Die': Custom Text Function\nWeakAuras Version: 5.8.3\nAura Version: 1.0.0\n[string \"return ------------------------------------...\"]:13: bad argument #2 to 'strsplit' (string expected, got nil)",
 			["time"] = "2023/10/27 09:28:53",
@@ -1282,7 +1274,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `strsplit'\n[string \"return -----------------------------------------------------------------------\"]:13: in function <[string \"return ------------------------------------...\"]:5>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4620: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/RegionTypes/Text.lua\"]:239: in function `Update'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4352: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4349>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4445: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4407>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4555: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4283: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4256: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3066: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2921>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3089: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1945: in function `ImportPhase1'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1559: in function `ImportImpl'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/Update.lua\"]:1528: in function <...ace/AddOns/WeakAurasOptions/OptionsFrames/Update.lua:1527>",
 			["session"] = 10867,
 			["counter"] = 2,
-		}, -- [167]
+		}, -- [166]
 		{
 			["message"] = "UIParent:HookScript(): Usage: (\"frameScriptTypeName\", function[, bindingType])",
 			["time"] = "2023/10/27 10:26:49",
@@ -1290,19 +1282,19 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `HookScript'\n[string \"@Interface/AddOns/xVermin/Helpers/TimeToDie.lua\"]:107: in main chunk",
 			["session"] = 10877,
 			["counter"] = 2,
-		}, -- [168]
+		}, -- [167]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
 			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
 			["counter"] = 2,
-		}, -- [169]
+		}, -- [168]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
 			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
 			["counter"] = 2,
-		}, -- [170]
+		}, -- [169]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RareScanner' tried to call the protected function 'scanner_button:SetPoint()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1310,7 +1302,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface/AddOns/xVermin/Addons/RareScanner.lua\"]:7: in function <Interface/AddOns/xVermin/Addons/RareScanner.lua:5>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10878,
 			["counter"] = 3,
-		}, -- [171]
+		}, -- [170]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1318,7 +1310,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Addons/nMainBar.lua\"]:80: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:79>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 10878,
 			["counter"] = 3,
-		}, -- [172]
+		}, -- [171]
 		{
 			["message"] = "Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:130: attempt to call global 'GetContainerNumSlots' (a nil value)",
 			["time"] = "2023/10/27 11:15:46",
@@ -1326,7 +1318,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:130: in function `CogsFreeBagSpace'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:199: in function `MerchantItemButton_OnModifiedClick'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:48: in function `MerchantItemButton_OnModifiedClick'\n[string \"*MerchantFrame.xml:34_OnClick\"]:2: in function <[string \"*MerchantFrame.xml:34_OnClick\"]:1>",
 			["session"] = 10884,
 			["counter"] = 1,
-		}, -- [173]
+		}, -- [172]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RareScanner' tried to call the protected function 'TargetUnit()'.",
 			["time"] = "2023/10/13 10:25:54",
@@ -1334,7 +1326,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
 			["session"] = 10888,
 			["counter"] = 15,
-		}, -- [174]
+		}, -- [173]
 		{
 			["message"] = "Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua:137: attempt to perform arithmetic on local 'itemCount' (a nil value)",
 			["time"] = "2023/10/28 16:36:06",
@@ -1342,7 +1334,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:137: in function `CogsFreeBagSpace'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:199: in function `MerchantItemButton_OnModifiedClick'\n[string \"@Interface/AddOns/BuyEmAllClassic/BuyEmAllClassic.lua\"]:48: in function `MerchantItemButton_OnModifiedClick'\n[string \"*MerchantFrame.xml:34_OnClick\"]:2: in function <[string \"*MerchantFrame.xml:34_OnClick\"]:1>",
 			["session"] = 10889,
 			["counter"] = 7,
-		}, -- [175]
+		}, -- [174]
 		{
 			["message"] = "AdiBagsItemButton105Count:SetPoint(): Invalid region point ROGHTBOTTOM",
 			["time"] = "2023/10/28 17:09:01",
@@ -1350,7 +1342,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"AdiBagsItemButton105Count:SetPoint(\"ROGHTBOTTOM\", AdiBagsItemButton105, \"RIGHTBOTTOM\", 0, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
 			["session"] = 10890,
 			["counter"] = 1,
-		}, -- [176]
+		}, -- [175]
 		{
 			["message"] = "AdiBagsItemButton105Count:SetPoint(): Invalid region point RIGHTBOTTOM",
 			["time"] = "2023/10/28 17:09:14",
@@ -1358,7 +1350,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"AdiBagsItemButton105Count:SetPoint(\"RIGHTBOTTOM\", AdiBagsItemButton105, \"RIGHTBOTTOM\", 0, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2235: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3008: in function <Interface/FrameXML/ChatFrame.lua:3001>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
 			["session"] = 10890,
 			["counter"] = 1,
-		}, -- [177]
+		}, -- [176]
 		{
 			["message"] = "Interface/AddOns/ls_Toasts/core/core.lua:215: attempt to call global 'GetContainerNumSlots' (a nil value)",
 			["time"] = "2023/10/30 13:50:42",
@@ -1366,7 +1358,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ls_Toasts/core/core.lua\"]:215: in function `SearchBagsForItemID'\n[string \"@Interface/AddOns/ls_Toasts/systems/loot_items.lua\"]:89: in function <Interface/AddOns/ls_Toasts/systems/loot_items.lua:85>\n[string \"=[C]\"]: ?",
 			["session"] = 10897,
 			["counter"] = 1,
-		}, -- [178]
+		}, -- [177]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:225: invalid order function for sorting",
 			["time"] = "2023/10/30 13:55:58",
@@ -1374,7 +1366,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:225: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:140: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
 			["session"] = 10900,
 			["counter"] = 8,
-		}, -- [179]
+		}, -- [178]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:226: invalid order function for sorting",
 			["time"] = "2023/10/30 14:00:45",
@@ -1382,7 +1374,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:226: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:140: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
 			["session"] = 10901,
 			["counter"] = 2,
-		}, -- [180]
+		}, -- [179]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:227: invalid order function for sorting",
 			["time"] = "2023/10/30 14:01:38",
@@ -1390,7 +1382,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:227: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:141: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
 			["session"] = 10902,
 			["counter"] = 2,
-		}, -- [181]
+		}, -- [180]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:229: invalid order function for sorting",
 			["time"] = "2023/10/30 14:02:35",
@@ -1398,6 +1390,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:229: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:144: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
 			["session"] = 10903,
 			["counter"] = 2,
+		}, -- [181]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/29 22:27:18",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10905,
+			["counter"] = 8,
 		}, -- [182]
 	},
 }

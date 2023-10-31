@@ -418,6 +418,42 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
+		[898] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Escort Gilthares Firebough back to Ratchet",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6503] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 9,
+				["text"] = "Ashenvale Outrunner slain: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6393] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Incendrites: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6283] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Bloodfury Ripper's Remains: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[1087] = {
 			{
 				["type"] = "monster",
@@ -441,49 +477,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[6629] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Grundig Darkcloud slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 6,
-				["text"] = "Grimtotem Brute slain: 0/6",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[6393] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Incendrites: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[6283] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Bloodfury Ripper's Remains: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[898] = {
-			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Escort Gilthares Firebough back to Ratchet",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[6441] = {
 			{
 				["type"] = "item",
@@ -493,21 +486,28 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1068] = {
+		[843] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:4 slain: 0/1",
+				["numRequired"] = 15,
+				["text"] = "Bael'dun Excavator slain: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:9 slain: 0/1",
+				["numRequired"] = 5,
+				["text"] = "Bael'dun Foreman slain: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Khazgorm's Journal: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[6284] = {
 			{
@@ -563,28 +563,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[843] = {
+		[1824] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Bael'dun Excavator slain: 0/15",
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Twitching Antenna: 0/5",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Bael'dun Foreman slain: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Khazgorm's Journal: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
 		},
 		[879] = {
 			{
@@ -609,14 +595,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[1824] = {
+		[1068] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Twitching Antenna: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:4 slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:9 slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[6641] = {
 			{
@@ -645,21 +638,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6461] = {
+		[1096] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Gerenzo's Mechanical Arm: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
 		},
 		[1088] = {
 			{
@@ -679,14 +665,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1096] = {
+		[6461] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Gerenzo's Mechanical Arm: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[873] = {
 			{
@@ -763,14 +756,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6503] = {
+		[6629] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 9,
-				["text"] = "Ashenvale Outrunner slain: 0/9",
+				["numRequired"] = 1,
+				["text"] = "Grundig Darkcloud slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 6,
+				["text"] = "Grimtotem Brute slain: 0/6",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[529] = {
 			{
@@ -802,10 +802,10 @@ RXPCData = {
 		[25] = "Crossroads, The Barrens",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
 		[58] = "Zoram'gar Outpost, Ashenvale",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[11] = "Undercity, Tirisfal",
 		[10] = "The Sepulcher, Silverpine Forest",
 		[80] = "Ratchet, The Barrens",
-		[11] = "Undercity, Tirisfal",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
 		[77] = "Camp Taurajo, The Barrens",
@@ -860,7 +860,7 @@ RXPCData = {
 		[874] = "Mahren Skyseer",
 		[882] = "Ishamuhale",
 		[1824] = "Trial at the Field of Giants",
-		[898] = "Free From the Hold",
+		[1153] = "A New Ore Sample",
 		[906] = "Betrayal from Within",
 		[1058] = "Jin'Zil's Forest Magic",
 		[3301] = "Mura Runetotem",
@@ -895,7 +895,7 @@ RXPCData = {
 		[873] = "Isha Awak",
 		[527] = "Battle of Hillsbrad",
 		[1062] = "Goblin Invaders",
-		[1153] = "A New Ore Sample",
+		[898] = "Free From the Hold",
 		[1094] = "Further Instructions",
 		[6503] = "Ashenvale Outrunners",
 		[821] = "Chen's Empty Keg",
@@ -950,21 +950,21 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["isRxp"] = true,
+					["level"] = 15,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["level"] = 15,
-					["timePlayed"] = 1738.657000000007,
 					["class"] = "PRIEST",
+					["timePlayed"] = 1738.657000000007,
+					["isRxp"] = true,
 				},
 				["Kryptor"] = {
-					["xpPercentage"] = 37,
+					["timePlayed"] = 4626,
 					["isRxp"] = true,
 					["lastSeen"] = 260591.059,
-					["timePlayed"] = 4626,
-					["level"] = 22,
-					["xp"] = 109,
+					["xpPercentage"] = 37,
 					["class"] = "PRIEST",
+					["xp"] = 109,
+					["level"] = 22,
 				},
 				["Fathersmooth"] = {
 					["timePlayed"] = 143.6410000000033,
@@ -1022,12 +1022,12 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["isRxp"] = true,
+					["level"] = 22,
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["level"] = 22,
-					["timePlayed"] = 67.38799999997718,
 					["class"] = "ROGUE",
+					["timePlayed"] = 67.38799999997718,
+					["isRxp"] = true,
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,
