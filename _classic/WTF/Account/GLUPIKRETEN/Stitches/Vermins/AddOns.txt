@@ -3,3 +3,4 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 ItemRackOptions: enabled
 Immersion: enabled
+Bagnon_ItemLevel_Vermin: disabled
