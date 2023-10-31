@@ -983,6 +983,16 @@ function NIT:updateMinimapButton(tooltip, frame)
 									end
 								end
 							end
+							--if (charData.quests) then
+							--	if (charData.quests[L["Wrath Raid Boss Weekly"]] and charData.quests[L["Wrath Raid Boss Weekly"]] > GetServerTime()) then
+							--		text = text .. "\n  |cFFFFFF00-|r|cFFFFAE42" .. L["Wrath Raid Boss Weekly"] .. "|r";
+							--		found = true;
+							--		found2 = true;
+							--		if (char ~= me) then
+							--			altsFound = true;
+							--		end
+							--	end
+							--end
 							if (found2) then
 								if (maxLevel or IsShiftKeyDown()) then
 									tooltip:AddLine(text);
@@ -4846,7 +4856,7 @@ function NIT:getActiveSpec()
 	end
 	if (name) then
 		local _, class = UnitClass("player");
-		if (class == "DEATHKNIGHT" or class == "ROGUE") then
+		if (class == "ROGUE") then
 			--Melee dps only classes.
 			specType = "melee";
 			role = "dps";
@@ -4879,6 +4889,14 @@ function NIT:getActiveSpec()
 					role = "healer";
 				else
 					specType = "ranged"; --Balance.
+					role = "dps";
+				end
+			elseif (class == "DEATHKNIGHT") then
+				if (fileName == "DeathKnightBlood") then
+					specType = "tank";
+					role = "tank";
+				else
+					specType = "melee";
 					role = "dps";
 				end
 			elseif (class == "PALADIN") then

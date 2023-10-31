@@ -1206,9 +1206,12 @@ function NIT:leftInstance()
 	NIT.lastNpcID = 999999999;
 	NIT.lastInstanceName = "(Unknown Instance)";
 	if (NITAUTORESET) then
-		if (NIT.data.instances[1] and NIT.data.instances[1].mobCount and NIT.data.instances[1].mobCount > 50) then
-			C_Timer.After(3, function()
+	print(1)
+		if (NIT.data.instances[1] and NIT.data.instances[1].mobCount and NIT.data.instances[1].mobCount > 10) then
+print(2)
+			C_Timer.After(2, function()
 				if (UnitIsGroupLeader("player") and not IsInInstance() and not UnitIsGhost("player")) then
+print(3)
 					local msg = "Auto resetting dungeons.";
 					if (IsInGroup()) then
 			  			NIT:sendGroup("[NIT] " .. msg);
@@ -2012,12 +2015,43 @@ function NIT:recordQuests()
 	if (not NIT.data.myChars[char].quests) then
 		NIT.data.myChars[char].quests = {};
 	end
+	--All wrath weeklies are flagged as complete when 1 is so just record 1 and not all.
+	local wrathWeeklyComplete;
+	local wrathWeeklies = {
+		[24590] = "Lord Marrowgar Must Die!";
+		[24580] = "Anub'Rekhan Must Die!";
+		[24585] = "Flame Leviathan Must Die!";
+		[24587] = "Ignis the Furnace Master Must Die!";
+		[24582] = "Instructor Razuvious Must Die!";
+		[24589] = "Lord Jaraxxus Must Die!";
+		[24584] = "Malygos Must Die!";
+		[10748] = "Maxnar Must Die!";
+		[24581] = "Noth the Plaguebringer Must Die!";
+		[24583] = "Patchwerk Must Die!";
+		[24586] = "Razorscale Must Die!";
+		[24579] = "Sartharion Must Die!";
+		[24588] = "XT-002 Deconstructor Must Die!";
+	};
 	local resetTime = GetServerTime() + C_DateAndTime.GetSecondsUntilWeeklyReset();
 	for k, v in pairs(recordQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
-			NIT.data.myChars[char].quests[v] = resetTime;
+			--There's bugs with this that need more testing before release.
+			--if (wrathWeeklies[k]) then
+			--	if (not wrathWeeklyComplete) then
+			--		wrathWeeklyComplete = true;
+			--		NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = resetTime;
+					--Wrath raid weekly isn't resetting at normal server time, it's resetting later on in the day so it's still recording as complete until the following week.
+					--Watching this and see if they fix the reset time, maybe they had to manual reset first week due to a bug?
+			--	end
+			--else
+				NIT.data.myChars[char].quests[v] = resetTime;
+			--end
 		end
 	end
+	--Temp fix, this should really run for all chars at logon.
+	--if (not wrathWeeklyComplete) then
+	--	NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = nil;
+	--end
 	if (not NIT.data.myChars[char].questsDaily) then
 		NIT.data.myChars[char].questsDaily = {};
 	end
