@@ -1,7 +1,6 @@
 # Auctionator
 
-## [10.1.33](https://github.com/Auctionator/Auctionator/tree/10.1.33) (2023-10-22)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.32...10.1.33) 
+## [10.1.34](https://github.com/Auctionator/Auctionator/tree/10.1.34) (2023-10-27)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.33...10.1.34) 
 
-- Selling: Bag/Groups: Cleanup calculations for row width and icon size  
-- [Fixes #1448] Selling: Favourites shown when not in bag even when option off  
+- Mainline: Selling: Bag/Groups: Fix tooltips for DF crafted items  

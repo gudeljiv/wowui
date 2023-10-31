@@ -2203,7 +2203,6 @@
 		if (not sourceName) then
 			sourceName = "[*] " .. spellName
 		end
-
 		local npcId = tonumber(select(6, strsplit("-", petSerial)) or 0)
 
 		--differenciate army and apoc pets for DK
@@ -2223,7 +2222,7 @@
 
 		if (isWOTLK) then
 			if (npcId == 15439) then
-				Details.tabela_pets:Adicionar(petSerial:gsub("%-15439%-", "%-15438%-"), "Greater Fire Elemental", petFlags, sourceSerial, sourceName, sourceFlags)
+				Details.tabela_pets:AddPet(petSerial:gsub("%-15439%-", "%-15438%-"), "Greater Fire Elemental", petFlags, sourceSerial, sourceName, sourceFlags)
 
 			elseif (npcId == 15438) then
 				return
@@ -2241,7 +2240,7 @@
 			sourceName, sourceSerial, sourceFlags = petTable[1], petTable[2], petTable[3]
 		end
 
-		Details.tabela_pets:Adicionar(petSerial, petName, petFlags, sourceSerial, sourceName, sourceFlags)
+		Details.tabela_pets:AddPet(petSerial, petName, petFlags, sourceSerial, sourceName, sourceFlags)
 	end
 
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -2812,7 +2811,7 @@
 			end
 
 			if (override_aura_spellid[spellId] and UnitIsUnit(sourceName, "player")) then
-				local auraName, texture, count, auraType, duration, expirationTime, sourceUnit, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossAura, isFromPlayerOrPlayerPet, nameplateShowAll, timeMod, v1, v2, v3, v4, v5 = Details:FindBuffCastedBy(sourceName, spellId, sourceName)
+				local auraName, texture, count, auraType, duration, expirationTime, sourceUnit, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossAura, isFromPlayerOrPlayerPet, nameplateShowAll, timeMod, v1, v2, v3, v4, v5 = Details:FindBuffCastedByUnitName(sourceName, spellId, sourceName)
 				if (auraName) then
 					local overrideTable = override_aura_spellid[spellId]
 					if (overrideTable.CanOverride(auraName, texture, count, auraType, duration, expirationTime, sourceUnit, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossAura, isFromPlayerOrPlayerPet, nameplateShowAll, timeMod, v1, v2, v3, v4, v5)) then
@@ -3673,7 +3672,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 
 	local onUnitPowerUpdate = function(self, event, unitID, powerType)
 		if (powerType == "ALTERNATE") then
-			local actorName = Details:GetCLName(unitID)
+			local actorName = Details:GetFullName(unitID)
 			if (actorName) then
 				local power = _current_combat.alternate_power[actorName]
 				if (not power) then
@@ -3960,7 +3959,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		end
 
 		if (not ownerActor) then
-			petName, ownerName, ownerGUID, ownerFlags = Details.tabela_pets:PegaDono(sourceSerial, sourceName, sourceFlags)
+			petName, ownerName, ownerGUID, ownerFlags = Details.tabela_pets:GetPetOwner(sourceSerial, sourceName, sourceFlags)
 			if (petName) then
 				ownerActor = _current_misc_container:GetOrCreateActor(ownerGUID, ownerName, ownerFlags, true)
 				--print("pet found:", petName, ownerName, ownerGUID, ownerFlags)
@@ -5928,7 +5927,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			if (serial and serial ~= UnitGUID("player") and serial:find("Player")) then
 				Details.duel_candidates[serial] = GetTime()
 
-				local playerName = Details:GetCLName(unit)
+				local playerName = Details:GetFullName(unit)
 
 				--check if the player is inside the current combat and flag the objects
 				if (playerName and _current_combat) then
@@ -6104,7 +6103,13 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		Details.in_combat = false
 		Details.combat_id = 0
 		Details.opened_windows = 0
-		Details.playername = UnitName("player")
+
+		local _, _, _, toc = GetBuildInfo()
+		if (toc >= 100200) then
+			Details.playername = UnitName("player") .. "-" .. GetRealmName()
+		else
+			Details.playername = UnitName("player")
+		end
 
 		--player faction and enemy faction
 		Details.faction = UnitFactionGroup("player")

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10891,
+	["session"] = 10903,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1359,5 +1359,45 @@ BugGrabberDB = {
 			["session"] = 10890,
 			["counter"] = 1,
 		}, -- [177]
+		{
+			["message"] = "Interface/AddOns/ls_Toasts/core/core.lua:215: attempt to call global 'GetContainerNumSlots' (a nil value)",
+			["time"] = "2023/10/30 13:50:42",
+			["locals"] = "self = <table> {\n GetScreenQuadrant = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:135\n RegisterSkin = <function> defined @Interface/AddOns/ls_Toasts/core/skin.lua:18\n VER = 1130202\n RegisterEvent = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:50\n GetToast = <function> defined @Interface/AddOns/ls_Toasts/core/toast.lua:733\n SearchBagsForItemID = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:213\n RegisterCallback = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:80\n RegisterOptions = <function> defined @Interface/AddOns/ls_Toasts/core/system.lua:102\n FindToast = <function> defined @Interface/AddOns/ls_Toasts/core/toast.lua:713\n UnregisterCallback = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n RegisterSystem = <function> defined @Interface/AddOns/ls_Toasts/core/system.lua:20\n GetItemLevel = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:201\n SanitizeLink = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:112\n UnregisterEvent = <function> defined @Interface/AddOns/ls_Toasts/core/core.lua:72\n UnregisterAllCallbacks = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n}\nitemID = 20310\n(for index) = 0\n(for limit) = 4\n(for step) = 1\ni = 0\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetContainerNumSlots' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/ls_Toasts/core/core.lua\"]:215: in function `SearchBagsForItemID'\n[string \"@Interface/AddOns/ls_Toasts/systems/loot_items.lua\"]:89: in function <Interface/AddOns/ls_Toasts/systems/loot_items.lua:85>\n[string \"=[C]\"]: ?",
+			["session"] = 10897,
+			["counter"] = 1,
+		}, -- [178]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:225: invalid order function for sorting",
+			["time"] = "2023/10/30 13:55:58",
+			["locals"] = "(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n}\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/BestFood.lua:396\n(*temporary) = <table> {\n id = 1081\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 12184\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 3404\n type = \"Meat\"\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:225: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:140: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
+			["session"] = 10900,
+			["counter"] = 8,
+		}, -- [179]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:226: invalid order function for sorting",
+			["time"] = "2023/10/30 14:00:45",
+			["locals"] = "(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n}\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/BestFood.lua:397\n(*temporary) = <table> {\n id = 1081\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 12184\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 3404\n type = \"Meat\"\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:226: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:140: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
+			["session"] = 10901,
+			["counter"] = 2,
+		}, -- [180]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:227: invalid order function for sorting",
+			["time"] = "2023/10/30 14:01:38",
+			["locals"] = "(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n}\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/BestFood.lua:398\n(*temporary) = <table> {\n id = 1081\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 12184\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 3404\n type = \"Meat\"\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:227: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:141: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
+			["session"] = 10902,
+			["counter"] = 2,
+		}, -- [181]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/BestFood.lua:229: invalid order function for sorting",
+			["time"] = "2023/10/30 14:02:35",
+			["locals"] = "(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n}\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/BestFood.lua:400\n(*temporary) = <table> {\n id = 1081\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 12184\n type = \"Meat\"\n}\n(*temporary) = <table> {\n id = 3404\n type = \"Meat\"\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:229: in function `Sorted'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:144: in function `UpdateMacros'\n[string \"@Interface/AddOns/xVermin/Helpers/BestFood.lua\"]:71: in function <Interface/AddOns/xVermin/Helpers/BestFood.lua:66>",
+			["session"] = 10903,
+			["counter"] = 2,
+		}, -- [182]
 	},
 }

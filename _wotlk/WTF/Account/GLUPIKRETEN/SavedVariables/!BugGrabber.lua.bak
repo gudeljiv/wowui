@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 9921,
+	["session"] = 9923,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:97: attempt to index global 'Rotation' (a nil value)",

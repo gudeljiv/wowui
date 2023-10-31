@@ -1180,7 +1180,7 @@ NeedsFoodBadly.PetFood = {
 	[2886] = {id = 2886, type = 'Meat'},
 	[2924] = {id = 2924, type = 'Meat'},
 	[3173] = {id = 3173, type = 'Meat'},
-	[3404] = {id = 3404, type = 'Meat'},
+	-- [3404] = {id = 3404, type = 'Meat'},
 	[3667] = {id = 3667, type = 'Meat'},
 	[3712] = {id = 3712, type = 'Meat'},
 	[3730] = {id = 3730, type = 'Meat'},

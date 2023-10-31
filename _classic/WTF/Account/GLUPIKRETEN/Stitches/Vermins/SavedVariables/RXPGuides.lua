@@ -432,6 +432,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
+		[6503] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 9,
+				["text"] = "Ashenvale Outrunner slain: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[6629] = {
 			{
 				["type"] = "monster",
@@ -447,15 +456,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[6503] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 9,
-				["text"] = "Ashenvale Outrunner slain: 0/9",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[6393] = {
 			{
@@ -475,14 +475,28 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[898] = {
+		[1087] = {
 			{
-				["type"] = "event",
-				["numRequired"] = 1,
-				["text"] = "Escort Gilthares Firebough back to Ratchet",
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Son of Cenarius slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Daughter of Cenarius slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Cenarion Botanist slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[6441] = {
 			{
@@ -574,14 +588,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1824] = {
+		[1068] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Twitching Antenna: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:4 slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:9 slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
 		[6544] = {
 			{
@@ -658,24 +679,6 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1096] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Gerenzo's Mechanical Arm: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[873] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Heart of Isha Awak: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
 		[6461] = {
 			{
 				["type"] = "monster",
@@ -691,6 +694,24 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+		},
+		[873] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Heart of Isha Awak: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[1096] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = "Gerenzo's Mechanical Arm: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 		[6641] = {
 			{
@@ -724,6 +745,15 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
+		[1824] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Twitching Antenna: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
 		[843] = {
 			{
 				["type"] = "monster",
@@ -747,44 +777,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [3]
 		},
-		[1068] = {
+		[898] = {
 			{
-				["type"] = "monster",
+				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "XT:4 slain: 0/1",
+				["text"] = "Escort Gilthares Firebough back to Ratchet",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:9 slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[1087] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Son of Cenarius slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Daughter of Cenarius slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Cenarion Botanist slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
 		},
 		[868] = {
 			{
@@ -805,10 +805,10 @@ RXPCData = {
 		[77] = "Camp Taurajo, The Barrens",
 		[10] = "The Sepulcher, Silverpine Forest",
 		[22] = "Thunder Bluff, Mulgore",
-		[11] = "Undercity, Tirisfal",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[11] = "Undercity, Tirisfal",
 	},
 	["questNameCache"] = {
 		[6282] = "Harpies Threaten",
@@ -856,11 +856,11 @@ RXPCData = {
 		[6503] = "Ashenvale Outrunners",
 		[865] = "Raptor Horns",
 		[6641] = "Vorsha the Lasher",
-		[898] = "Free From the Hold",
+		[1153] = "A New Ore Sample",
 		[874] = "Mahren Skyseer",
 		[882] = "Ishamuhale",
 		[1062] = "Goblin Invaders",
-		[1153] = "A New Ore Sample",
+		[898] = "Free From the Hold",
 		[906] = "Betrayal from Within",
 		[1058] = "Jin'Zil's Forest Magic",
 		[3301] = "Mura Runetotem",
@@ -950,21 +950,21 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["level"] = 15,
+					["class"] = "PRIEST",
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["class"] = "PRIEST",
-					["timePlayed"] = 1738.657000000007,
 					["isRxp"] = true,
+					["timePlayed"] = 1738.657000000007,
+					["level"] = 15,
 				},
 				["Kryptor"] = {
-					["level"] = 22,
 					["class"] = "PRIEST",
+					["level"] = 22,
 					["lastSeen"] = 260591.059,
-					["timePlayed"] = 4626,
+					["xpPercentage"] = 37,
 					["isRxp"] = true,
 					["xp"] = 109,
-					["xpPercentage"] = 37,
+					["timePlayed"] = 4626,
 				},
 				["Fathersmooth"] = {
 					["timePlayed"] = 143.6410000000033,
@@ -1022,12 +1022,12 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["level"] = 22,
+					["class"] = "ROGUE",
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["class"] = "ROGUE",
-					["timePlayed"] = 67.38799999997718,
 					["isRxp"] = true,
+					["timePlayed"] = 67.38799999997718,
+					["level"] = 22,
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,

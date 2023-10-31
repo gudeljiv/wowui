@@ -579,7 +579,7 @@ AtlasLootClassicDB = {
 			[33841] = "honor:5130",
 			[35024] = "honor:9500",
 			[28813] = "honor:3800",
-			[35152] = "honor:7600",
+			[40267] = "EmblemOfValor:25",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
 			[34576] = "honor:3990",
@@ -599,14 +599,14 @@ AtlasLootClassicDB = {
 			[44231] = "EmblemOfHeroism:200",
 			[34033] = "honor:4275",
 			[35088] = "honor:9500",
-			[34577] = "honor:3990",
-			[34129] = "honor:16650",
+			[45830] = "EmblemOfConquest:28",
+			[41290] = "EmblemOfHeroism:30",
 			[28861] = "honor:3800",
 			[33722] = "honor:8550",
 			[31962] = "honor:6650",
 			[31978] = "honor:3325",
 			[28925] = "honor:3800",
-			[40715] = "EmblemOfHeroism:15",
+			[18839] = "honor:1",
 			[32026] = "honor:6650",
 			[32042] = "honor:6650",
 			[32058] = "honor:6650",
@@ -614,7 +614,7 @@ AtlasLootClassicDB = {
 			[40779] = "EmblemOfHeroism:45",
 			[32819] = "honor:3990",
 			[40683] = "EmblemOfHeroism:40",
-			[18839] = "honor:1",
+			[40715] = "EmblemOfHeroism:15",
 			[40747] = "EmblemOfValor:40",
 			[18871] = "honor:5000",
 			[45838] = "EmblemOfConquest:28",
@@ -878,13 +878,13 @@ AtlasLootClassicDB = {
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
 			[28909] = "arcanerune:8",
-			[41290] = "EmblemOfHeroism:30",
-			[45830] = "EmblemOfConquest:28",
+			[34129] = "honor:16650",
+			[34577] = "honor:3990",
 			[42066] = "honor:33180",
 			[44902] = "cpvpWintergrasp:40",
 			[33946] = "honor:3990",
 			[35001] = "honor:7600",
-			[40267] = "EmblemOfValor:25",
+			[35152] = "honor:7600",
 			[35065] = "honor:5700",
 			[31375] = "honor:3800",
 			[35129] = "honor:5700",
@@ -1465,6 +1465,10 @@ AtlasLootClassicDB = {
 		["Kaonac - Jin'do"] = {
 		},
 		["Vermins - Stitches"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -1480,10 +1484,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Battlearm - Hydraxian Waterlords"] = {

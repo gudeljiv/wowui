@@ -87,6 +87,7 @@ ClassicCastbarsDB = {
 		["595Throw"] = 516,
 		["3205Healing Wave"] = 1995,
 		["11917Fireball"] = 2961,
+		["4665Fireball"] = 2983,
 		["3386Lesser Heal"] = 2016,
 		["11911Throw"] = 516,
 		["3101Fireball"] = 2986,
