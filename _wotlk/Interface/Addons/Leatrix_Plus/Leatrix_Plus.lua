@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.161 (25th October 2023)
+-- 	Leatrix Plus 3.0.162 (1st November 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.161"
+	LeaPlusLC["AddonVer"] = "3.0.162"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -43,6 +43,9 @@
 	-- Check for addons
 	if IsAddOnLoaded("ElvUI") then LeaPlusLC.ElvUI = unpack(ElvUI) end
 	if IsAddOnLoaded("Glass") then LeaPlusLC.Glass = true end
+	if IsAddOnLoaded("CharacterStatsWRATH") then LeaPlusLC.CharacterStatsWRATH = true end
+	if IsAddOnLoaded("totalRP3") then LeaPlusLC.totalRP3 = true end
+	if IsAddOnLoaded("TitanClassic") then LeaPlusLC.TitanClassic = true end
 
 ----------------------------------------------------------------------
 --	L00: Leatrix Plus
@@ -7208,7 +7211,7 @@
 				if LeaPlusLC["HideDressupStats"] == "On" then
 					CharacterResistanceFrame:Hide()
 					if CSC_HideStatsPanel then
-						-- CharacterStatsTBC is installed
+						-- CharacterStatsWRATH is installed
 						RunScript('CSC_HideStatsPanel()')
 						if startup then
 							C_Timer.After(0.1, function()
@@ -7218,7 +7221,7 @@
 							end)
 						end
 					else
-						-- CharacterStatsTBC is not installed
+						-- CharacterStatsWRATH is not installed
 						CharacterAttributesFrame:Hide()
 					end
 					CharacterModelFrame:ClearAllPoints()
@@ -7233,7 +7236,7 @@
 
 					CharacterResistanceFrame:Show()
 					if CSC_ShowStatsPanel then
-						-- CharacterStatsTBC is installed
+						-- CharacterStatsWRATH is installed
 						RunScript('CSC_ShowStatsPanel()')
 						if startup then
 							C_Timer.After(0.1, function()
@@ -7243,7 +7246,7 @@
 							end)
 						end
 					else
-						-- CharacterStatsTBC is not installed
+						-- CharacterStatsWRATH is not installed
 						CharacterAttributesFrame:Show()
 					end
 					CharacterModelFrame:ClearAllPoints()
@@ -7285,18 +7288,6 @@
 				ToggleStats()
 			end)
 
-			-- Delay setting stats if CharacterStatsTBC is installed but hasn't loaded yet
-			if not CSC_HideStatsPanel and select(2, GetAddOnInfo("CharacterStatsTBC")) then
-				local waitFrame = CreateFrame("FRAME")
-				waitFrame:RegisterEvent("ADDON_LOADED")
-				waitFrame:SetScript("OnEvent", function(self, event, arg1)
-					if arg1 == "CharacterStatsTBC" then
-						ToggleStats(true)
-						waitFrame:UnregisterAllEvents()
-					end
-				end)
-			end
-
 			----------------------------------------------------------------------
 			-- Enable zooming and panning
 			----------------------------------------------------------------------
@@ -7304,13 +7295,6 @@
 			-- Enable zooming for character frame and dressup frame
 			CharacterModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
 			DressUpModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
-
-			-- Slightly shorter character model frame for CharacterStatsTBC
-			if IsAddOnLoaded("CharacterStatsTBC") then
-				CharacterModelFrame:ClearAllPoints()
-				CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-				CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 220)
-			end
 
 			-- Enable panning for character frame
 			CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
@@ -8021,34 +8005,6 @@
 						_G["TradeSkillFrameEditBox"]:SetPoint("TOPRIGHT", TradeSkillFrame, "TOPRIGHT", -392, -60)
 						_G["TradeSkillFrameAvailableFilterCheckButton"]:ClearAllPoints()
 						_G["TradeSkillFrameAvailableFilterCheckButton"]:SetPoint("TOPLEFT", TradeSkillFrame, "TOPLEFT", 20, -58)
-					end
-				end
-
-				-- Classic Profession Filter addon fixes
-				if IsAddOnLoaded("ClassicProfessionFilter") and TradeSkillFrame.SearchBox and TradeSkillFrame.HaveMats and TradeSkillFrame.HaveMats.text and TradeSkillFrame.SearchMats and TradeSkillFrame.SearchMats.text then
-					TradeSkillFrame.SearchBox:ClearAllPoints()
-					TradeSkillFrame.SearchBox:SetPoint("LEFT", TradeSkillRankFrame, "RIGHT", 20, -10)
-
-					TradeSkillFrame.HaveMats:ClearAllPoints()
-					TradeSkillFrame.HaveMats:SetPoint("LEFT", TradeSkillFrame.SearchBox, "RIGHT", 10, 8)
-					TradeSkillFrame.HaveMats.text:SetText(L["Have mats?"])
-					TradeSkillFrame.HaveMats:SetHitRectInsets(0, -TradeSkillFrame.HaveMats.text:GetStringWidth() + 4, 0, 0)
-					TradeSkillFrame.HaveMats.text:SetJustifyH("LEFT")
-					TradeSkillFrame.HaveMats.text:SetWordWrap(false)
-					if TradeSkillFrame.HaveMats.text:GetWidth() > 80 then
-						TradeSkillFrame.HaveMats.text:SetWidth(80)
-						TradeSkillFrame.HaveMats:SetHitRectInsets(0, -80 + 4, 0, 0)
-					end
-
-					TradeSkillFrame.SearchMats:ClearAllPoints()
-					TradeSkillFrame.SearchMats:SetPoint("BOTTOMLEFT", TradeSkillFrame.HaveMats, "BOTTOMLEFT", 0, -16)
-					TradeSkillFrame.SearchMats.text:SetText(L["Search mats?"])
-					TradeSkillFrame.SearchMats:SetHitRectInsets(0, -TradeSkillFrame.SearchMats.text:GetStringWidth() + 2, 0, 0)
-					TradeSkillFrame.SearchMats.text:SetJustifyH("LEFT")
-					TradeSkillFrame.SearchMats.text:SetWordWrap(false)
-					if TradeSkillFrame.SearchMats.text:GetWidth() > 80 then
-						TradeSkillFrame.SearchMats.text:SetWidth(80)
-						TradeSkillFrame.SearchMats:SetHitRectInsets(0, -80 + 4, 0, 0)
 					end
 				end
 
@@ -9739,13 +9695,9 @@
 					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
 				else
 					-- Show Titan Panel screen adjust warning if Titan Panel is installed with screen adjust enabled
-					if select(2, GetAddOnInfo("TitanClassic")) then
-						if IsAddOnLoaded("TitanClassic") then
-							if TitanPanelSetVar and TitanPanelGetVar then
-								if not TitanPanelGetVar("ScreenAdjust") then
-									titanFrame:Show()
-								end
-							end
+					if LeaPlusLC.TitanClassic and TitanPanelSetVar and TitanPanelGetVar then
+						if not TitanPanelGetVar("ScreenAdjust") then
+							titanFrame:Show()
 						end
 					end
 
@@ -10982,6 +10934,18 @@
 				-- Nameplate tooltip
 				if NamePlateTooltip then NamePlateTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
 
+				-- QueueStatusFrame (Dungeon Finder)
+				if QueueStatusFrame then QueueStatusFrame:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
+
+				-- LibDBIcon
+				if LibDBIconTooltip then LibDBIconTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
+
+				-- Total RP 3
+				if LeaPlusLC.totalRP3 and TRP3_MainTooltip and TRP3_CharacterTooltip then
+					TRP3_MainTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+					TRP3_CharacterTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
+				end
+
 				-- Leatrix Plus
 				TipDrag:SetScale(LeaPlusLC["LeaPlusTipSize"])
 
@@ -10996,41 +10960,6 @@
 			-- Set tooltip scale when slider or checkbox changes and on startup
 			LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetTipScale)
 			SetTipScale()
-
-			---------------------------------------------------------------------------------------------------------
-			-- Total RP 3
-			---------------------------------------------------------------------------------------------------------
-
-			-- Total RP 3
-			local function TotalRP3Func()
-				if TRP3_MainTooltip and TRP3_CharacterTooltip then
-
-					-- Function to set tooltip scale
-					local function SetTotalRP3TipScale()
-						TRP3_MainTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
-						TRP3_CharacterTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"])
-					end
-
-					-- Set tooltip scale when slider changes and on startup
-					LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetTotalRP3TipScale)
-					SetTotalRP3TipScale()
-
-				end
-			end
-
-			-- Run function when Total RP 3 addon has loaded
-			if IsAddOnLoaded("totalRP3") then
-				TotalRP3Func()
-			else
-				local waitFrame = CreateFrame("FRAME")
-				waitFrame:RegisterEvent("ADDON_LOADED")
-				waitFrame:SetScript("OnEvent", function(self, event, arg1)
-					if arg1 == "totalRP3" then
-						TotalRP3Func()
-						waitFrame:UnregisterAllEvents()
-					end
-				end)
-			end
 
 			---------------------------------------------------------------------------------------------------------
 			-- Other tooltip code
