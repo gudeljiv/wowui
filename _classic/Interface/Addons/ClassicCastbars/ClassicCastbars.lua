@@ -138,16 +138,10 @@ function addon:StartCast(unitGUID, unitID)
 
     local castbar = self:GetCastbarFrame(unitID)
     if not castbar then return end
-	
+
     castbar._data = cast -- set ref to current cast data
     self:CheckCastModifiers(unitID, cast)
     self:DisplayCastbar(castbar, unitID)
-
-	if cast.isUninterruptible then 
-		_G.IfUnitIsCastingInteruptable = false
-	else
-		_G.IfUnitIsCastingInteruptable = true
-	end
 end
 
 function addon:StopCast(unitID, noFadeOut)
@@ -159,8 +153,6 @@ function addon:StopCast(unitID, noFadeOut)
     end
 
     castbar._data = nil
-
-	_G.IfUnitIsCastingInteruptable = false
 end
 
 function addon:StartAllCasts(unitGUID)
@@ -212,12 +204,9 @@ function addon:StoreCast(unitGUID, spellName, spellID, iconTexturePath, castTime
         end
     end
 
-    -- Quick hack for Darkmist Spider's Deadly Poison
+    -- Quick hack for NPC's Deadly Poison vs Rogue Deadly Poison
     if cast.isUninterruptible and spellID == 2835 and not isPlayer then
-        local _, _, _, _, _, npcID = strsplit("-", unitGUID)
-        if npcID == "4376" or npcID == "4378" then
-            cast.isUninterruptible = false
-        end
+        cast.isUninterruptible = false
     end
 
     -- just nil previous values to avoid overhead of wiping() table

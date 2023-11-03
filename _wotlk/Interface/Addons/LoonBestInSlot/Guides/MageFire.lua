@@ -319,6 +319,7 @@ LBIS:AddItem(spec3, "47995", LBIS.L["Ranged/Relic"], "BIS") --Scepter of Impriso
 LBIS:AddItem(spec3, "47922", LBIS.L["Ranged/Relic"], "BIS") --Rod of Imprisoned Souls
 
 LBIS:AddItem(spec4, "51281", LBIS.L["Head"], "BIS") --Sanctified Bloodmage Hood
+LBIS:AddItem(spec4, "50661", LBIS.L["Head"], "Alt") --Corp'rethar Ceremonial Crown
 LBIS:AddItem(spec4, "51158", LBIS.L["Head"], "Alt") --Sanctified Bloodmage Hood
 LBIS:AddItem(spec4, "50276", LBIS.L["Head"], "Alt") --Bloodmage Hood
 LBIS:AddItem(spec4, "47764", LBIS.L["Head"], "Alt") --Sunstrider's Hood of Triumph
@@ -336,8 +337,8 @@ LBIS:AddItem(spec4, "50628", LBIS.L["Back"], "BIS") --Frostbinder's Shredded Cap
 LBIS:AddItem(spec4, "47551", LBIS.L["Back"], "Alt") --Aethas' Intensity
 LBIS:AddItem(spec4, "47552", LBIS.L["Back"], "Alt") --Jaina's Radiance
 LBIS:AddItem(spec4, "50668", LBIS.L["Back"], "Alt") --Greatcloak of the Turned Champion
-LBIS:AddItem(spec4, "47553", LBIS.L["Back"], "Alt") --Bolvar's Devotion
 LBIS:AddItem(spec4, "47554", LBIS.L["Back"], "Alt") --Lady Liadrin's Conviction
+LBIS:AddItem(spec4, "47553", LBIS.L["Back"], "Alt") --Bolvar's Devotion
 LBIS:AddItem(spec4, "51826", LBIS.L["Back"], "Alt") --Lich Wrappings
 LBIS:AddItem(spec4, "48666", LBIS.L["Back"], "Alt") --Drape of the Sunreavers
 LBIS:AddItem(spec4, "48671", LBIS.L["Back"], "Alt") --Drape of Bitter Incantation
@@ -434,8 +435,8 @@ LBIS:AddItem(spec4, "50345", LBIS.L["Trinket"], "Alt") --Muradin's Spyglass
 LBIS:AddItem(spec4, "47477", LBIS.L["Trinket"], "Alt") --Reign of the Dead
 LBIS:AddItem(spec4, "47188", LBIS.L["Trinket"], "Alt") --Reign of the Unliving
 LBIS:AddItem(spec4, "45518", LBIS.L["Trinket"], "Alt") --Flare of the Heavens
-LBIS:AddItem(spec4, "47182", LBIS.L["Trinket"], "Alt") --Reign of the Unliving
 LBIS:AddItem(spec4, "47316", LBIS.L["Trinket"], "Alt") --Reign of the Dead
+LBIS:AddItem(spec4, "47182", LBIS.L["Trinket"], "Alt") --Reign of the Unliving
 LBIS:AddItem(spec4, "50732", LBIS.L["Main Hand"], "BIS") --Bloodsurge, Kel'Thuzad's Blade of Agony
 LBIS:AddItem(spec4, "50648", LBIS.L["Main Hand"], "Alt") --Nibelung
 LBIS:AddItem(spec4, "50731", LBIS.L["Main Hand"], "Alt") --Archus, Greatstaff of Antonidas
@@ -453,6 +454,8 @@ LBIS:AddItem(spec4, "47422", LBIS.L["Main Hand"], "Alt") --Barb of Tarasque
 LBIS:AddItem(spec4, "46980", LBIS.L["Main Hand"], "Alt") --Blade of Tarasque
 LBIS:AddItem(spec4, "50047", LBIS.L["Main Hand"], "Alt") --Quel'Delar, Lens of the Mind
 LBIS:AddItem(spec4, "45620", LBIS.L["Main Hand"], "Alt") --Starshard Edge
+LBIS:AddItem(spec4, "47261", LBIS.L["Main Hand"], "Alt") --Barb of Tarasque
+LBIS:AddItem(spec4, "46979", LBIS.L["Main Hand"], "Alt") --Blade of Tarasque
 LBIS:AddItem(spec4, "50719", LBIS.L["Off Hand"], "BIS") --Shadow Silk Spindle
 LBIS:AddItem(spec4, "50635", LBIS.L["Off Hand"], "Alt") --Sundial of Eternal Dusk
 LBIS:AddItem(spec4, "51922", LBIS.L["Off Hand"], "Alt") --Scourgelord's Baton

@@ -1,3 +1,10 @@
+VER 3 0000000000000026 " " "134400"
+#showtooltip item:36912
+/2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Headless Horseman's Mount
@@ -5,13 +12,6 @@ VER 3 0000000000000028 " " "134400"
 END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
-END
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
-END
-VER 3 000000000000000E " " "136106"
-/inspect
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -21,7 +21,7 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat item:33448
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -44,7 +44,7 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cast Prowl
 END
 VER 3 0000000000000010 "RAID" "136047"
-/run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
+/run InviteUnit("a");C_Timer.After(0.15,function() ConvertToRaid() end)
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets

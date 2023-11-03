@@ -1,8 +1,8 @@
 ------------------------------------------------------------------------
-r598 | Zimzarina | 2023-10-27 16:08:55 +0000 (Fri, 27 Oct 2023) | 1 line
+r600 | Zimzarina | 2023-10-28 13:41:12 +0000 (Sat, 28 Oct 2023) | 1 line
 Changed paths:
-   M /trunk/Postal.lua
+   D /trunk/Postal_TBC.toc
 
-There was an occasional error when initializing the default profile.  This change should address that issue.  Fix by MrFIXIT.
+Removed Postal_TBC.toc as this is no longer supported by CurseForge and could be the source of a packaging issue causing releases not to show up in CurseForge download client.
 ------------------------------------------------------------------------
 

@@ -74,9 +74,9 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
             castbar:SetPoint("CENTER", parentFrame, -18, -75)
         else
             if castbar.BorderShield:IsShown() then
-                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -45 * auraRows), -150))
+                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -45 * auraRows), -200))
             else
-                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -41 * auraRows), -150))
+                castbar:SetPoint("CENTER", parentFrame, -18, max(min(-75, -41 * auraRows), -200))
             end
         end
     end
@@ -409,10 +409,10 @@ function addon:HideCastbar(castbar, unitID, skipFadeOut)
 
     if castbar.fade then
         if not castbar.animationGroup:IsPlaying() then
-            castbar.fade:SetStartDelay(0) -- reset
+            castbar.fade:SetStartDelay(0.1) -- reset
             if cast then
                 if cast.isInterrupted or cast.isFailed then
-                    castbar.fade:SetStartDelay(0.5)
+                    castbar.fade:SetStartDelay(0.6)
                 end
             end
 
