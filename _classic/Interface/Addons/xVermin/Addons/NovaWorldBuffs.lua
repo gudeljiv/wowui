@@ -1,26 +1,34 @@
 local _, xVermin = ...
 local text = ''
 
--- xVermin.CheckIfLoadedWithTimer(
--- 	'MinimapLayerFrame',
--- 	function()
--- 		MinimapLayerFrame:SetScript(
--- 			'OnUpdate',
--- 			function(self)
--- 				text = MinimapLayerFrameFS:GetText()
+xVermin.CheckIfLoadedWithTimer(
+	'MinimapLayerFrame',
+	function()
+		MinimapLayerFrame:SetScript(
+			'OnUpdate',
+			function(self)
 
--- 				if (text == 'No Layer') then
--- 					MinimapLayerFrameFS:SetText('NL')
--- 				end
+				MinimapLayerFrame:ClearAllPoints()
+				MinimapLayerFrame:SetPoint("TOP", Minimap, "TOP", 0, -5)
+				MinimapLayerFrameFS:Show()
+				MinimapLayerFrameLeft:Hide()
+				MinimapLayerFrameMiddle:Hide()
+				MinimapLayerFrameRight:Hide()
 
--- 				MinimapLayerFrameFS:SetText(text:gsub('Layer ', 'L'))
--- 				-- if (NWB.isLayered) then
--- 				-- 	MinimapLayerFrame.tooltip:Show()
--- 				-- 	if (NWB.db.global.minimapLayerHover) then
--- 				-- 		MinimapLayerFrame:Show()
--- 				-- 	end
--- 				-- end
--- 			end
--- 		)
--- 	end
--- )
+
+				-- text = MinimapLayerFrameFS:GetText()
+				-- if (text == 'No Layer') then
+				-- 	MinimapLayerFrameFS:SetText('NL')
+				-- end
+
+				-- MinimapLayerFrameFS:SetText(text:gsub('Layer ', 'L'))
+				-- if (NWB.isLayered) then
+				-- 	MinimapLayerFrame.tooltip:Show()
+				-- 	if (NWB.db.global.minimapLayerHover) then
+				-- 		MinimapLayerFrame:Show()
+				-- 	end
+				-- end
+			end
+		)
+	end
+)

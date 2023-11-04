@@ -5,6 +5,7 @@ local gsub = string.gsub
 local UpdateHotkeys = function(self, t)
 	local frame = _G[self:GetName()]
 	local hotkey = _G[self:GetName()..'HotKey']
+	local name = _G[frame:GetName() .. 'Name']
 	local text = hotkey:GetText()
 
 	-- print(hotkey:GetName())
@@ -34,8 +35,6 @@ local UpdateHotkeys = function(self, t)
 		text = gsub(text, KEY_HOME, 'HM')
 		text = gsub(text, KEY_DELETE, 'DEL')
 
-		hotkey:SetWidth(40)
-
 		if text == RANGE_INDICATOR then
 			hotkey:SetText("•")
 			hotkey:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 1, 1)
@@ -47,6 +46,11 @@ local UpdateHotkeys = function(self, t)
 			hotkey:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 0, -2)
 		end
 	end
+
+	name:SetScale(0.7)
+	name:SetPoint("BOTTOM", frame, "BOTTOM", 2, 5)
+	hotkey:SetScale(0.9)
+	hotkey:SetWidth(40)
 end
 
 

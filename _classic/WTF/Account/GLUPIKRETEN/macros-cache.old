@@ -1,6 +1,3 @@
-VER 3 0000000000000012 " " "136173"
-/click BehindTarget
-END
 VER 3 0000000000000011 " " "136106"
 /inspect
 /run SortBags()
@@ -15,39 +12,45 @@ VER 3 0000000000000024 " " "134400"
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
+VER 3 0000000000000012 " " "136173"
+/click BehindTarget
+END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3770
+/use item:0
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12184
+#showtooltip item:12037
 /cast feed pet
-/use item:12184
+/use item:12037
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:0
 END
 VER 3 000000000000001A "RAID" "136047"
 /run InviteUnit("a");C_Timer.After(0.25,function() ConvertToRaid() end)
 END
-VER 3 0000000000000022 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
-END
-VER 3 0000000000000026 "RXPTargeting" "132150"
-/targetexact Miner Hackett
+VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
+/targetexact Grull Hawkwind
+/targetlasttarget [dead]
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
+VER 3 0000000000000026 "target" "132150"
+/targetexact Sin'Dall
+END
 VER 3 000000000000000B "TEST" "132089"
-/run AdiBagsItemButton14Count:ClearAllPoints()
-/run AdiBagsItemButton14Count:SetPoint("BOTTOMRIGHT", AdiBagsItemButton14, "BOTTOMRIGHT", -1, 2)
+/run ActionButton3Name:SetPoint("BOTTOM", ActionButton3, "BOTTOM", 2, 5)
+/run ActionButton4Name:SetPoint("BOTTOM", ActionButton4, "BOTTOM", 2, 5)
+/run print(ActionButton3Name:GetWidth())
+/run print(ActionButton4Name:GetWidth())
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
