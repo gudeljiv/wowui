@@ -70,9 +70,10 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000011 " " "132152"
 #showtooltip
+/petfollow
+/petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
-/targetexact Miner Hackett
 END
 VER 3 000000000100000F " " "132328"
 #showtooltip
