@@ -140,6 +140,11 @@ function addon:StartCast(unitGUID, unitID)
     if not castbar then return end
 
     castbar._data = cast -- set ref to current cast data
+
+	if castbar._data.isUninterruptible then
+		_G.IfUnitIsCastingInteruptable = true
+	end
+
     self:CheckCastModifiers(unitID, cast)
     self:DisplayCastbar(castbar, unitID)
 end
@@ -151,6 +156,8 @@ function addon:StopCast(unitID, noFadeOut)
     if not castbar.isTesting then
         self:HideCastbar(castbar, unitID, noFadeOut)
     end
+
+	_G.IfUnitIsCastingInteruptable = false
 
     castbar._data = nil
 end
@@ -349,6 +356,9 @@ end
 
 function addon:ZONE_CHANGED_NEW_AREA()
     wipe(npcCastTimeCacheStart)
+    if self.db.clearCastTimeCachePerZone then
+        self.db.npcCastTimeCache = CopyTable(namespace.defaultConfig.npcCastTimeCache)
+    end
 end
 
 -- Copies table values from src to dst if they don't exist in dst
