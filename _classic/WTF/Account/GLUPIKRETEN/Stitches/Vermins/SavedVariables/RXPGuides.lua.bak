@@ -950,12 +950,12 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["level"] = 15,
+					["isRxp"] = true,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["class"] = "PRIEST",
+					["level"] = 15,
 					["timePlayed"] = 1738.657000000007,
-					["isRxp"] = true,
+					["class"] = "PRIEST",
 				},
 				["Kryptor"] = {
 					["timePlayed"] = 4626,
@@ -1022,12 +1022,12 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["level"] = 22,
+					["isRxp"] = true,
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["class"] = "ROGUE",
+					["level"] = 22,
 					["timePlayed"] = 67.38799999997718,
-					["isRxp"] = true,
+					["class"] = "ROGUE",
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,

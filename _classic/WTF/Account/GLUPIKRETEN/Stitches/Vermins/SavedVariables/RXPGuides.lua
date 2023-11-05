@@ -1,10 +1,13 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[3] = {
+		[9] = {
+			[2144100512] = true,
+		},
+		[10] = {
 		},
 	},
-	["currentStep"] = 3,
+	["currentStep"] = 10,
 	["questObjectivesCache"] = {
 		[0] = 58,
 		[1069] = {
@@ -849,7 +852,9 @@ RXPCData = {
 		[897] = "The Harvester",
 		[264] = "Until Death Do Us Part",
 		[913] = "Cry of the Thunderhawk",
+		[6383] = "The Ashenvale Hunt",
 		[1088] = "Ordanus",
+		[6382] = "The Ashenvale Hunt",
 		[6482] = "Freedom to Ruul",
 		[821] = "Chen's Empty Keg",
 		[5052] = "Blood Shards of Agamaggan",
@@ -904,7 +909,7 @@ RXPCData = {
 	["currentGuideName"] = "26-28 Ashenvale",
 	["stepSkip"] = {
 	},
-	["currentStepId"] = 3799321589,
+	["currentStepId"] = 3799321652,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -950,12 +955,12 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["isRxp"] = true,
+					["class"] = "PRIEST",
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["level"] = 15,
+					["isRxp"] = true,
 					["timePlayed"] = 1738.657000000007,
-					["class"] = "PRIEST",
+					["level"] = 15,
 				},
 				["Kryptor"] = {
 					["level"] = 22,
@@ -1022,12 +1027,12 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["isRxp"] = true,
+					["class"] = "ROGUE",
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["level"] = 22,
+					["isRxp"] = true,
 					["timePlayed"] = 67.38799999997718,
-					["class"] = "ROGUE",
+					["level"] = 22,
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,

@@ -72,6 +72,7 @@ VER 3 0000000001000011 " " "132152"
 #showtooltip
 /petattack [@mouseover,harm][]
 /petdefensive
+/targetexact Miner Hackett
 END
 VER 3 000000000100000F " " "132328"
 #showtooltip

@@ -52,6 +52,7 @@ Addons/LFG.lua
 Addons/Minimap.lua
 Addons/MultiCastActionBarFrame.lua
 Addons/nMainBar.lua
+Addons/NovaWorldBuffs.lua
 Addons/NugKeyFeedback.lua
 Addons/PallyPower.lua
 Addons/RareScanner.lua
