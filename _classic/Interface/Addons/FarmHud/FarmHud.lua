@@ -1,7 +1,7 @@
 
 local addon,ns=...;
 local L=ns.L;
-ns.debugMode = "9.2.5-release"=="@".."project-version".."@";
+ns.debugMode = "9.2.6-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH");
 
 local ACD = LibStub("AceConfigDialog-3.0");
@@ -227,6 +227,7 @@ do
 		GetRight = function() return Dummy :GetRight() end,
 		GetBottom = function() return Dummy :GetBottom() end,
 		GetTop = function() return Dummy :GetTop() end,
+		SetZoom = function(m,z) end, -- prevent zoom
 	}
 	local function objHookStart(self)
 		if lockedBy~=false then return end
@@ -966,7 +967,7 @@ function FarmHudMixin:ToggleOptions()
 		ACD:Close(addon);
 	else
 		ACD:Open(addon);
-		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.5-release");
+		ACD.OpenFrames[addon]:SetStatusText(GAME_VERSION_LABEL..CHAT_HEADER_SUFFIX.."9.2.6-release");
 	end
 end
 

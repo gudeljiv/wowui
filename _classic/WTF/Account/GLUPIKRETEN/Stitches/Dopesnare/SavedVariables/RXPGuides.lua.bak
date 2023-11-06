@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[16] = {
+		[17] = {
 		},
 	},
-	["currentStep"] = 16,
+	["currentStep"] = 17,
 	["questObjectivesCache"] = {
 		[0] = 48,
 		[1136] = {
@@ -630,7 +630,7 @@ RXPCData = {
 		[10] = true,
 		[3] = true,
 	},
-	["currentStepId"] = 3588295624,
+	["currentStepId"] = 3588295628,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -731,10 +731,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Durotar"] = {
-							[817] = 700,
 							[808] = 775,
-							[825] = 700,
 							[826] = 850,
+							[825] = 700,
+							[817] = 700,
 						},
 					},
 				},
@@ -1010,12 +1010,12 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Grumpygoose"] = {
-					["isRxp"] = true,
+					["level"] = 38,
 					["lastSeen"] = 83490.77500000001,
 					["xpPercentage"] = 32,
-					["level"] = 38,
-					["timePlayed"] = 2967.130999999994,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 2967.130999999994,
+					["isRxp"] = true,
 				},
 				["Поминки"] = {
 					["timePlayed"] = 0,
@@ -1023,12 +1023,12 @@ RXPCComms = {
 					["xp"] = 41,
 				},
 				["Putsos"] = {
-					["isRxp"] = true,
+					["level"] = 11,
 					["lastSeen"] = 168779.249,
 					["xpPercentage"] = 21,
-					["level"] = 11,
-					["timePlayed"] = 537.5260000000126,
 					["class"] = "DRUID",
+					["timePlayed"] = 537.5260000000126,
+					["isRxp"] = true,
 				},
 				["Obatzdê"] = {
 					["timePlayed"] = 172.1120000000228,
@@ -1044,6 +1044,15 @@ RXPCComms = {
 					["timePlayed"] = 2967.130999999994,
 					["class"] = "HUNTER",
 					["xp"] = 480,
+				},
+				["Proxyles"] = {
+					["xpPercentage"] = 9,
+					["isRxp"] = true,
+					["lastSeen"] = 1289222.06,
+					["timePlayed"] = 47.45599999977276,
+					["level"] = 35,
+					["xp"] = 140,
+					["class"] = "MAGE",
 				},
 				["Darklinetwo"] = {
 					["timePlayed"] = 111.0260000000126,
@@ -1061,12 +1070,12 @@ RXPCComms = {
 					["xp"] = 123,
 				},
 				["Raec"] = {
-					["isRxp"] = true,
+					["level"] = 9,
 					["lastSeen"] = 170405.206,
 					["xpPercentage"] = 38,
-					["level"] = 9,
-					["timePlayed"] = 111.0260000000126,
 					["class"] = "SHAMAN",
+					["timePlayed"] = 111.0260000000126,
+					["isRxp"] = true,
 				},
 				["Назроут"] = {
 					["timePlayed"] = 41.70399999999791,
@@ -1109,20 +1118,20 @@ RXPCComms = {
 					["xp"] = 41,
 				},
 				["Casualheals"] = {
-					["isRxp"] = true,
+					["level"] = 37,
 					["lastSeen"] = 83490.77500000001,
 					["xpPercentage"] = 46,
-					["level"] = 37,
-					["timePlayed"] = 2967.130999999994,
 					["class"] = "PRIEST",
+					["timePlayed"] = 2967.130999999994,
+					["isRxp"] = true,
 				},
 				["Ecstasia"] = {
-					["level"] = 7,
+					["class"] = "WARLOCK",
 					["lastSeen"] = 163094.381,
 					["xpPercentage"] = 16,
-					["class"] = "WARLOCK",
-					["timePlayed"] = 21.1020000000135,
 					["isRxp"] = true,
+					["timePlayed"] = 21.1020000000135,
+					["level"] = 7,
 				},
 			},
 		},
