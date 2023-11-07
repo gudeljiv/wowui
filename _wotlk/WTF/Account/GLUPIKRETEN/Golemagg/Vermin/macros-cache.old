@@ -79,3 +79,10 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@cursor] Saronite Bomb
 END
+VER 3 000000000100001F " " "134400"
+#showtooltip
+/cast [stance:3] Recklessness
+/cast Death Wish
+/use 10
+/use Blood Fury
+END

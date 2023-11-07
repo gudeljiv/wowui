@@ -1,6 +1,3 @@
-VER 3 000000000000000E " " "136106"
-/inspect
-END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Headless Horseman's Mount
@@ -12,6 +9,9 @@ END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form

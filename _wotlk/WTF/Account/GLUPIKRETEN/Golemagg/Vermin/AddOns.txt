@@ -221,3 +221,9 @@ Bagnon_Garbage: disabled
 Bagnon_ItemLevel_Vermin: disabled
 LibDBIcon-1.0: enabled
 LibDataBroker-1.1: enabled
+ArkInventory: enabled
+Auc-Advanced: enabled
+TheUndermineJournal: enabled
+BootyBayGazette: enabled
+AuctionDB: enabled
+unitscan: disabled

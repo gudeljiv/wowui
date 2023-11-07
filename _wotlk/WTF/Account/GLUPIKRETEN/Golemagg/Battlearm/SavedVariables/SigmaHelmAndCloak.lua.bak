@@ -1,0 +1,5 @@
+
+SigmaHelmAndCloak = {
+	["|cffa335ee|Hitem:40721:3825:::::::80:::::::::|h[Hammerhead Sharkskin Cloak]|h|r"] = "Off",
+	["|cffa335ee|Hitem:40554:3817:41398:40086:::::80:::::::::|h[Valorous Scourgeborne Helmet]|h|r"] = "Off",
+}
