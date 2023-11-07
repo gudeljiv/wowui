@@ -148,7 +148,7 @@ data = {
             {"name": "hunter's mark", "type": "GetSpellTexture", "id": 1130, "key": "3", "modifier": "lalt"},
             {"name": "cower pet", "type": "GetSpellTexture", "id": 1742, "key": "4", "modifier": "lcontrol"},
             {"name": "last stand pet", "type": "GetSpellTexture", "id": 53478, "key": "5", "modifier": "lcontrol"},
-            {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "1"},
+            {"name": "concussive shot", "type": "GetSpellTexture", "id": 5116, "key": "0"},
             {"name": "steady shot", "type": "GetSpellTexture", "id": 34120, "key": "2"},
             {"name": "chimera shot", "type": "GetSpellTexture", "id": 53209, "key": "3"},
             {"name": "aimed shot", "type": "GetSpellTexture", "id": 19434, "key": "6"},

@@ -82,3 +82,7 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 /stopattack
 /stopcasting
 END
+VER 3 0000000001000015 " " "134400"
+#showtooltip
+/cast [@cursor]Trap Launcher: Explosive Trap
+END
