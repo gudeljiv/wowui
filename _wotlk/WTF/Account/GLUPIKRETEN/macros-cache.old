@@ -1,7 +1,3 @@
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
-END
 VER 3 000000000000000E " " "136106"
 /inspect
 END
@@ -12,6 +8,10 @@ VER 3 0000000000000028 " " "134400"
 END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
+END
+VER 3 0000000000000026 " " "134400"
+#showtooltip item:36912
+/2 WTB Saronite Ore 24g 
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -26,7 +26,7 @@ END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:35953
-/castsequence [combat] reset=combat item:33447
+/castsequence [combat] reset=combat item:36892,item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:35953
@@ -51,7 +51,7 @@ VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:36892
 END
 VER 3 0000000000000021 "TEST" "134400"
 /run print(UnitCreatureType("target"))

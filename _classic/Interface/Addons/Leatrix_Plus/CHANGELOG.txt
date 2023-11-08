@@ -1,3 +1,7 @@
+1.14.135 - 8th November 2023
+- For 'Enhance tooltip' ('Interface'), the scale slider now applies to the game settings panel tooltips.
+- Added flight times.
+
 1.14.134 - 1st November 2023
 - For 'Enhance tooltip' ('Interface'), the scale slider now applies to LibDBIcon tooltips.
 - General code updates.

@@ -1,6 +1,7 @@
 # Auctionator
 
-## [10.1.34](https://github.com/Auctionator/Auctionator/tree/10.1.34) (2023-10-27)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.33...10.1.34) 
+## [10.1.35](https://github.com/Auctionator/Auctionator/tree/10.1.35) (2023-11-08)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.1.34...10.1.35) 
 
-- Mainline: Selling: Bag/Groups: Fix tooltips for DF crafted items  
+- Update toc for 10.2  
+- Shopping: Lists: Fix import erroring from taking too long in some cases  

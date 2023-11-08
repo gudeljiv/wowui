@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ICCTrash", "DBM-Raids-WoTLK", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20231014024259")
+mod:SetRevision("20231107113735")
 mod:SetModelID(30459)
 mod:SetUsedIcons(1, 2, 8)
 mod.isTrashMod = true

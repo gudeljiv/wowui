@@ -82,20 +82,31 @@ for _, tooltip in pairs(
 		AtlasLootTooltip
 	}
 ) do
-	xVermin.CheckIfLoadedWithTimer(
-		tooltip:GetName(),
-		function()
-			if not tooltip:HasBeautyBorder() then
-				tooltip:CreateBeautyBorder(12)
+	-- xVermin.CheckIfLoadedWithTimer(
+	-- 	tooltip:GetName(),
+	-- 	function()
+	-- 		if not tooltip:HasBeautyBorder() then
+	-- 			tooltip:CreateBeautyBorder(12)
 
-				local bgOffset, borderSize = 3, 12
-				tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
-				tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
-				tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
-				tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
-			end
-		end
-	)
+	-- 			local bgOffset, borderSize = 3, 12
+	-- 			tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
+	-- 			tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
+	-- 			tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
+	-- 			tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
+	-- 		end
+	-- 	end
+	-- )
+	
+	if not tooltip:HasBeautyBorder() then
+		tooltip:CreateBeautyBorder(12)
+
+		local bgOffset, borderSize = 3, 12
+		tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
+		tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
+		tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
+		tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
+	end
+	
 end
 
 for _, tooltip in pairs(
@@ -111,35 +122,63 @@ for _, tooltip in pairs(
 		AtlasLootTooltip
 	}
 ) do
-	xVermin.CheckIfLoadedWithTimer(
-		tooltip:GetName(),
-		function()
-			if tooltip.beautyBorder or tooltip:GetName() == 'AtlasLootTooltip' then
-				tooltip:HookScript(
-					'OnTooltipSetItem',
-					function(self)
-						local name, item = self:GetItem()
-						if item then
-							local quality = select(3, GetItemInfo(item))
-							if quality then
-								local r, g, b = GetItemQualityColor(quality)
-								self:SetBeautyBorderTexture('white')
-								self:SetBeautyBorderColor(r, g, b)
-							end
-						end
-					end
-				)
+	-- xVermin.CheckIfLoadedWithTimer(
+	-- 	tooltip:GetName(),
+	-- 	function()
+	-- 		print(tooltip:GetName())
+	-- 		if tooltip.beautyBorder or tooltip:GetName() == 'AtlasLootTooltip' then
+	-- 			tooltip:HookScript(
+	-- 				'OnTooltipSetItem',
+	-- 				function(self)
+	-- 					local name, item = self:GetItem()
+	-- 					print(name,item)
+	-- 					if item then
+	-- 						local quality = select(3, GetItemInfo(item))
+	-- 						if quality then
+	-- 							local r, g, b = GetItemQualityColor(quality)
+	-- 							self:SetBeautyBorderTexture('white')
+	-- 							self:SetBeautyBorderColor(r, g, b)
+	-- 						end
+	-- 					end
+	-- 				end
+	-- 			)
 
-				tooltip:HookScript(
-					'OnTooltipCleared',
-					function(self)
-						self:SetBeautyBorderTexture('default')
-						self:SetBeautyBorderColor(1, 1, 1)
+	-- 			tooltip:HookScript(
+	-- 				'OnTooltipCleared',
+	-- 				function(self)
+	-- 					self:SetBeautyBorderTexture('default')
+	-- 					self:SetBeautyBorderColor(1, 1, 1)
+	-- 				end
+	-- 			)
+	-- 		end
+	-- 	end
+	-- )
+	
+	if tooltip.beautyBorder or tooltip:GetName() == 'AtlasLootTooltip' then
+		tooltip:HookScript(
+			'OnTooltipSetItem',
+			function(self)
+				local name, item = self:GetItem()
+				if item then
+					local quality = select(3, GetItemInfo(item))
+					if quality then
+						local r, g, b = GetItemQualityColor(quality)
+						self:SetBeautyBorderTexture('white')
+						self:SetBeautyBorderColor(r, g, b)
 					end
-				)
+				end
 			end
-		end
-	)
+		)
+
+		tooltip:HookScript(
+			'OnTooltipCleared',
+			function(self)
+				self:SetBeautyBorderTexture('default')
+				self:SetBeautyBorderColor(1, 1, 1)
+			end
+		)
+	end
+
 end
 
 local function SetHealthBarColor(unit)
