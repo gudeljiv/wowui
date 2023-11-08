@@ -204,7 +204,10 @@
 			[395152] = true, --ebon might (evoker 10.1.5) 395296 = the evoker buff on it self
 			[410089] = true, --prescience (evoker 10.1.5)
 			[10060] = true, --power infusion
+			[194384] = true, --atonement uptime
 		}
+
+		Details.CreditBuffToTarget = buffs_on_target
 
 		--store all information about augmentation evokers ~roskash
 		local augmentation_cache = {
@@ -2984,6 +2987,7 @@
 		end
 	end
 
+	--~refresh
 	function parser:buff_refresh(token, time, sourceSerial, sourceName, sourceFlags, targetSerial, targetName, targetFlags, targetFlags2, spellId, spellName, spellschool, tipo, amount)
 		if (not sourceName) then
 			sourceName = names_cache[spellName]
@@ -6106,7 +6110,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 
 		local _, _, _, toc = GetBuildInfo()
 		if (toc >= 100200) then
-			Details.playername = UnitName("player") .. "-" .. GetRealmName()
+			Details.playername = UnitName("player") .. "-" .. (GetRealmName():gsub("%s", ''))
 		else
 			Details.playername = UnitName("player")
 		end
