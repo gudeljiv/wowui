@@ -78,6 +78,7 @@ Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
 # Helpers/PlayerTargetSetMark.lua
 Helpers/SkinBuffs.lua
+Helpers/TimeToDie.lua
 Helpers/TooltipItemID.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua
