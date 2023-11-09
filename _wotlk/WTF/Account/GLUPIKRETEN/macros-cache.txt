@@ -1,3 +1,6 @@
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
@@ -9,9 +12,6 @@ VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Headless Horseman's Mount
 /cast Swift Zulian Tiger
-END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -53,8 +53,10 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
-VER 3 0000000000000021 "TEST" "134400"
+VER 3 0000000000000021 "TEST" "132089"
 /run print(xInRange(2, "target", "max"))
+/run print(xGetRange("target"))
+/run print(select(2, xGetRange("target")) <= 2)
 /run print(xGetRange("target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
