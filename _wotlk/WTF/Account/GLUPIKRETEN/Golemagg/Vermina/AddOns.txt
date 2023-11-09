@@ -1,4 +1,4 @@
-nPower: enabled
+nPower: disabled
 nHealth: disabled
 Immersion: disabled
 AdiBags: enabled
@@ -26,7 +26,7 @@ Select: enabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 NeatPlates: disabled
 Plater: enabled
 whoaThickFrames_BCC: disabled
@@ -169,7 +169,7 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster_AppHelper: disabled
 XLoot_Options: disabled
 XLoot_Monitor: disabled
 XLoot_Master: disabled

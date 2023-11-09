@@ -49,12 +49,12 @@ LBISSettings = {
 		["Phase 3"] = true,
 		["Phase 4"] = true,
 	},
-	["PriorityList"] = {
-	},
+	["SelectedSlot"] = "Trinket",
 	["SelectedRank"] = "All",
 	["HideObsolete"] = false,
 	["SelectedSourceType"] = "All",
-	["SelectedSlot"] = "Trinket",
 	["ShowCustom"] = false,
+	["PriorityList"] = {
+	},
 	["SelectedPhase"] = "All",
 }

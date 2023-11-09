@@ -65,7 +65,6 @@ VER 3 0000000001000012 " " "132152"
 #showtooltip
 /dismount
 /petattack [@mouseover,exists,harm][]
-/cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -81,4 +80,8 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 /cast feign death
 /stopattack
 /stopcasting
+END
+VER 3 0000000001000015 " " "134400"
+#showtooltip
+/cast [@cursor]Trap Launcher: Explosive Trap
 END

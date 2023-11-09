@@ -1,4 +1,4 @@
-nPower: enabled
+nPower: disabled
 nHealth: disabled
 Immersion: disabled
 AdiBags: enabled
@@ -113,7 +113,7 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 whoaThickFrames_Classic: disabled
 CharacterStatsClassic: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
@@ -189,7 +189,7 @@ BigWigs_AhnQirajTemple: disabled
 BigWigs_BlackTemple: disabled
 BigWigs_BlackwingLair: disabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster_AppHelper: disabled
 XLoot: disabled
 XLoot_Group: disabled
 XLoot_Options: disabled

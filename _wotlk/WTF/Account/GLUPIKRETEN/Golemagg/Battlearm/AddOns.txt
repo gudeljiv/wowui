@@ -7,9 +7,9 @@ Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: enabled
 BagBrother: enabled
 RXPGuides: enabled
-nPower: enabled
+nPower: disabled
 Leatrix_Plus: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 NeatPlates: disabled
 whoaThickFrames_BCC: disabled
 whoaThickFrames_Classic: disabled
@@ -162,7 +162,7 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster_AppHelper: disabled
 Select: enabled
 XLoot: disabled
 XLoot_Group: disabled

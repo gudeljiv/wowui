@@ -1,0 +1,10 @@
+lightweight tag 2ff991eaafa45863217a57f512884f2cae231006 v5.0.7
+Author:	Péter Radics <mitchnull@gmail.com>
+Date:	Sat Aug 26 12:45:09 2023 +0200
+
+commit 2ff991eaafa45863217a57f512884f2cae231006
+Author: Péter Radics <mitchnull@gmail.com>
+Date:   Sat Aug 26 12:45:09 2023 +0200
+
+    toc bump
+

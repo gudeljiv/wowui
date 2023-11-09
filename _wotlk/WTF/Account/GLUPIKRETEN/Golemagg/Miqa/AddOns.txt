@@ -2,7 +2,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nHealth: disabled
 nTooltip: disabled
-nPower: enabled
+nPower: disabled
 ItemRackOptions: enabled
 Leatrix_Plus: enabled
 AceBIS: disabled
@@ -47,6 +47,6 @@ Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
-TradeSkillMaster: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster: disabled
+TradeSkillMaster_AppHelper: disabled
 unitscan: disabled

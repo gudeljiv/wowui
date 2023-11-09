@@ -64,8 +64,10 @@ END
 VER 3 0000000001000012 " " "132152"
 #showtooltip
 /dismount
+/petfollow
+/petpassive
 /petattack [@mouseover,exists,harm][]
-/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+/petdefensive
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -75,6 +77,7 @@ VER 3 0000000001000013 " " "132328"
 #showtooltip
 /dismount
 /petfollow
+/petpassive
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

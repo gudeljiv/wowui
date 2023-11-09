@@ -1,3 +1,10 @@
+VER 3 0000000000000026 " " "134400"
+#showtooltip item:36912
+/2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
 /cast Headless Horseman's Mount
@@ -6,13 +13,6 @@ END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
-END
-VER 3 000000000000000E " " "136106"
-/inspect
-END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -20,7 +20,7 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33445
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
@@ -54,7 +54,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "134400"
-/run print(UnitCreatureType("target"))
+/run print(xInRange(2, "target", "max"))
+/run print(xGetRange("target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy
