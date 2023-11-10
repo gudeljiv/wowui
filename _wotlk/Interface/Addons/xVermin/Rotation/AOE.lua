@@ -159,7 +159,7 @@ UIParent:HookScript(
 		else
 			if InCombatLockdown() then
 				aoe_number = xVermin.AOE(skills_range[xVermin.Class], false)
-				aoe_casting_number = xVermin.AOE(35, true)
+				-- aoe_casting_number = xVermin.AOE(35, true)
 				if aoe_number > 1 then
 					RotationFrame2:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 				else
