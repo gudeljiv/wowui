@@ -4,7 +4,7 @@ VER 3 0000000001000014 " " "134400"
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@pet,dead] Revive Pet
+/cast [mod][@pet,dead] Revive Pet
 /cast [nopet] Call Pet
 /cast Mend Pet
 END

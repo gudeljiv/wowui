@@ -24,31 +24,34 @@ xVermin.AOE = function(range, casting)
 
 		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) then
 			-- print(unit, UnitExists(unit), UnitCreatureType(unit), not xVermin.HasValue(t, UnitCreatureType(unit)), xVermin.GetRange(unit))
-			unitcasting = xVermin.IfUnitIsCastingInteruptable(unit)
-			targetcasting = xVermin.IfUnitIsCastingInteruptable('target')
 
-			if unitcasting then
-				if not targetcasting then
-					rangecasting = rangecasting + 1
-				else
-					if xVermin.Class == 'WARRIOR' then
-						local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
-						local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
-						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-						if defensive or (battle and IsEquippedItemType('Shields')) then
-							if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
+			if casting then 
+				unitcasting = xVermin.IfUnitIsCastingInteruptable(unit)
+				targetcasting = xVermin.IfUnitIsCastingInteruptable('target')
+
+				if unitcasting then
+					if not targetcasting then
+						rangecasting = rangecasting + 1
+					else
+						if xVermin.Class == 'WARRIOR' then
+							local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
+							local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
+							local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
+							if defensive or (battle and IsEquippedItemType('Shields')) then
+								if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
+									rangecasting = rangecasting + 1
+								end
+							end
+						end
+						if xVermin.Class == 'DEATHKNIGHT' then
+							if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
 								rangecasting = rangecasting + 1
 							end
 						end
-					end
-					if xVermin.Class == 'DEATHKNIGHT' then
-						if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
-							rangecasting = rangecasting + 1
-						end
-					end
-					if xVermin.Class == 'SHAMAN' then
-						if IsSpellInRange('Wind Shear', 'target') == 0 or select(2, GetSpellCooldown('Wind Shear')) > 0 then
-							rangecasting = rangecasting + 1
+						if xVermin.Class == 'SHAMAN' then
+							if IsSpellInRange('Wind Shear', 'target') == 0 or select(2, GetSpellCooldown('Wind Shear')) > 0 then
+								rangecasting = rangecasting + 1
+							end
 						end
 					end
 				end
@@ -142,14 +145,14 @@ UIParent:HookScript(
 
 		haveBuff = false
 
-		for buff in pairs(buffs) do
-			for i = 1, 40 do
-				local B = UnitBuff('player', i)
-				if B and B == buff then
-					haveBuff = true
-				end
-			end
-		end
+		-- for buff in pairs(buffs) do
+		-- 	for i = 1, 40 do
+		-- 		local B = UnitBuff('player', i)
+		-- 		if B and B == buff then
+		-- 			haveBuff = true
+		-- 		end
+		-- 	end
+		-- end
 
 		aoe_number = 0
 		aoe_casting_number = 0

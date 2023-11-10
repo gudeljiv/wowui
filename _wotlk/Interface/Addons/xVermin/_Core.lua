@@ -230,8 +230,14 @@ end
 xUnitCasting = xVermin.IfUnitIsCasting
 
 xVermin.GetRange = function(unit)
+	-- local startTime = GetTime()
 	if UnitExists(unit) then
+		-- local elapsedTime = GetTime() - startTime
+		-- print("elapsedTime GetRange: " .. elapsedTime)
 		minRange, maxRange = RangeCheck:GetRange(unit)
+		-- if elapsedTime > 0.3 then
+		-- 	return 0, 0
+		-- end
 		return minRange, maxRange
 	else
 		return -1, -1
@@ -240,12 +246,15 @@ end
 xGetRange = xVermin.GetRange
 
 xVermin.InRange = function(value, unit, xtype)
+	-- local startTime = GetTime()
 	unit = unit or 'target'
 	xtype = xtype or 'max'
 	if not value then
 		return false
 	end
 	if UnitExists(unit) then
+		-- local elapsedTime = GetTime() - startTime
+		-- print("elapsedTime InRange: " .. elapsedTime)
 		minRange, maxRange = RangeCheck:GetRange(unit)
 		if xtype == 'max' then
 			if maxRange and maxRange <= value then
