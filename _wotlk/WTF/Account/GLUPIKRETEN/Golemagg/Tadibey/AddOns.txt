@@ -43,6 +43,6 @@ Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
-TradeSkillMaster: disabled
-TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster: enabled
+TradeSkillMaster_AppHelper: enabled
 unitscan: disabled

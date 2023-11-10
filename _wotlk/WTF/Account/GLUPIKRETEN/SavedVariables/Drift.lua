@@ -25,8 +25,8 @@ DriftPoints = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOPLEFT",
 		["relativePoint"] = "TOPLEFT",
-		["yOfs"] = -86.93278503417969,
-		["xOfs"] = 141.7985992431641,
+		["yOfs"] = -99.6312255859375,
+		["xOfs"] = 124.3384094238281,
 	},
 	["SettingsPanel"] = {
 		["relativeTo"] = "UIParent",

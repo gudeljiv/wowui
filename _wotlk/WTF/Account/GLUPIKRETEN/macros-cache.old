@@ -12,6 +12,7 @@ VER 3 0000000000000026 " " "134400"
 END
 VER 3 000000000000000E " " "136106"
 /inspect
+/run SortBags()
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
@@ -20,8 +21,8 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:1179
+/castsequence [combat] reset=combat item:2455
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -53,10 +54,10 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
-VER 3 0000000000000021 "TEST" "134400"
-/run print(xInRange(2, "target", "max"))
+VER 3 0000000000000021 "TEST" "132089"
+/run print(xInRange(2))
 /run print(xGetRange("target"))
-/run print(select(2, xGetRange("target")) < 2)
+/run print(select(2, xGetRange("target")) <= 2)
 /run print(xGetRange("target"))
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"

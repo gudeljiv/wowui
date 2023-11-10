@@ -9,7 +9,7 @@ BagBrother: enabled
 RXPGuides: enabled
 nPower: disabled
 Leatrix_Plus: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 whoaThickFrames_BCC: disabled
 whoaThickFrames_Classic: disabled
@@ -162,7 +162,7 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster_AppHelper: enabled
 Select: enabled
 XLoot: disabled
 XLoot_Group: disabled

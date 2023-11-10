@@ -1,4 +1,4 @@
-## Interface: 30403
+## Interface: 100200
 ## Title: ClassicCastbars_Options
 ## Notes: Configuration for ClassicCastbars. Type /castbars for options.
 ## IconTexture: Interface\Icons\spell_holy_heal02

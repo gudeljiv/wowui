@@ -7,6 +7,7 @@ VER 3 0000000000000026 " " "134400"
 END
 VER 3 000000000000000E " " "136106"
 /inspect
+/run SortBags()
 END
 VER 3 0000000000000028 " " "134400"
 #showtooltip
@@ -54,7 +55,7 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run print(xInRange(2, "target", "max"))
+/run print(xInRange(2))
 /run print(xGetRange("target"))
 /run print(select(2, xGetRange("target")) <= 2)
 /run print(xGetRange("target"))

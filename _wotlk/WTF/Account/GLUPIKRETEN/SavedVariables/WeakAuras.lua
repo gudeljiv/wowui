@@ -40,6 +40,17 @@ WeakAurasSaved = {
 	},
 	["editor_font_size"] = 12,
 	["lastArchiveClear"] = 1602609267,
+	["personalRessourceDisplayFrame"] = {
+		["xOffset"] = -422.8046555407566,
+		["yOffset"] = -497.8042091158466,
+	},
+	["lastUpgrade"] = 1699448791,
+	["bgtimetotsave"] = 0,
+	["editor_bracket_matching"] = true,
+	["unitscan GUI"] = {
+	},
+	["registered"] = {
+	},
 	["displays"] = {
 		["Tems Wotlk Dungeon Pack"] = {
 			["controlledChildren"] = {
@@ -146,14 +157,14 @@ WeakAurasSaved = {
 			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Tems Wotlk Dungeon Pack",
-			["borderInset"] = 1,
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["uid"] = "wm7)CxAlTNi",
+			["borderInset"] = 1,
 			["config"] = {
 			},
-			["uid"] = "wm7)CxAlTNi",
-			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -165,12 +176,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -179,12 +185,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -249,7 +250,8 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["parent"] = "Skills",
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -373,11 +375,21 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["auto"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -385,27 +397,26 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["icon_side"] = "RIGHT",
-			["sparkHidden"] = "NEVER",
+			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["useAdjustededMin"] = false,
-			["id"] = "Rune Strike",
 			["xOffset"] = 0,
+			["sparkHidden"] = "NEVER",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["useCooldownModRate"] = true,
 			["width"] = 40,
+			["id"] = "Rune Strike",
 			["uid"] = "cG7Zb0nqhfK",
-			["config"] = {
-			},
 			["inverse"] = false,
 			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = 237518,
 			["cooldown"] = false,
-			["authorOptions"] = {
+			["config"] = {
 			},
 		},
 		["Gamma - Thorns"] = {
@@ -437,9 +448,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -594,25 +605,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = "136104",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Thorns",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "KhFBTF)60wK",
@@ -624,7 +635,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Sweeping Strikes"] = {
 			["sparkWidth"] = 10,
@@ -939,9 +950,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -1140,25 +1151,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135809,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Searing Gaze",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "7Wwx7OXKXPG",
@@ -1170,7 +1181,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Sanity"] = {
 			["sparkWidth"] = 10,
@@ -1439,9 +1450,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -1561,9 +1572,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -1723,25 +1734,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136231,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Vampiric Touch",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "AVGNyWyjLdv",
@@ -1753,7 +1764,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Heroic Strike"] = {
 			["sparkWidth"] = 10,
@@ -2007,7 +2018,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -2016,14 +2027,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -2088,7 +2092,12 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Skills",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -2098,7 +2107,12 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["config"] = {
 			},
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -2202,11 +2216,13 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132223,
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
@@ -2223,12 +2239,7 @@ WeakAurasSaved = {
 			["auto"] = false,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["authorOptions"] = {
@@ -2526,9 +2537,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -2719,25 +2730,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136123,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Consume",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "NWw(LKcCfhh",
@@ -2769,7 +2780,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["MobHPPercentYELLOW"] = {
 			["outline"] = "THICKOUTLINE",
@@ -2960,14 +2971,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3025,7 +3029,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -3187,11 +3196,13 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -3206,11 +3217,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["frameStrata"] = 1,
 			["id"] = "Redoubt",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["useCooldownModRate"] = true,
 			["width"] = 40,
 			["alpha"] = 1,
@@ -3221,7 +3232,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -3260,9 +3271,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -3427,25 +3438,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135731,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Chaotic Rift",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "(4J6b0KqLFV",
@@ -3457,7 +3468,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Heightened Reflexes"] = {
 			["sparkWidth"] = 10,
@@ -3709,8 +3720,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -3719,14 +3729,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3771,7 +3774,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -3785,7 +3788,12 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -3912,16 +3920,19 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -4104,9 +4115,8 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["authorOptions"] = {
-			},
 			["preferToUpdate"] = false,
+			["automaticWidth"] = "Auto",
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
 			["justify"] = "LEFT",
@@ -4138,7 +4148,8 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["automaticWidth"] = "Auto",
+			["authorOptions"] = {
+			},
 		},
 		["Defense Protocol - Glaciate"] = {
 			["iconSource"] = 0,
@@ -4169,9 +4180,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -4335,25 +4346,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135852,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Glaciate",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Db4MLPpWAZf",
@@ -4365,7 +4376,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["DK: Active Presence"] = {
 			["iconSource"] = -1,
@@ -4462,19 +4473,14 @@ WeakAurasSaved = {
 			},
 			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
 			["source"] = "import",
+			["icon"] = true,
+			["mirror"] = false,
 			["authorOptions"] = {
 			},
-			["mirror"] = false,
-			["rotation"] = 0,
 			["regionType"] = "texture",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownEdge"] = false,
 			["blendMode"] = "BLEND",
-			["icon"] = true,
+			["rotation"] = 0,
 			["information"] = {
 				["forceEvents"] = true,
 			},
@@ -4491,7 +4497,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["uid"] = "jOY9D5NrC(y",
 			["inverse"] = false,
-			["cooldownEdge"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -4554,7 +4560,12 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = false,
-			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["Stratholme - Corrupting Blight"] = {
 			["iconSource"] = -1,
@@ -4862,11 +4873,11 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["use_aggro"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
 						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -5178,19 +5189,19 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_text_format_p_time_legacy_floor"] = false,
+					["text_text_format_c_format"] = "none",
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_t_time_format"] = 0,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_t_format"] = "timed",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_text_format_t_time_mod_rate"] = true,
-					["type"] = "subtext",
 					["text_fontType"] = "None",
+					["type"] = "subtext",
+					["text_visible"] = true,
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -5202,10 +5213,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_text_format_p_time_format"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_text_format_p_time_precision"] = 1,
-					["text_text_format_c_format"] = "none",
+					["anchorYOffset"] = 0,
 					["text_fontSize"] = 15,
 					["anchorXOffset"] = 0,
 					["text_text_format_t_time_precision"] = 1,
@@ -5499,7 +5510,6 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Water",
 				},
 			},
-			["parent"] = "GEMS",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -5520,6 +5530,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["icon"] = true,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -5574,7 +5585,7 @@ WeakAurasSaved = {
 			["xOffset"] = 160,
 			["displayIcon"] = 132805,
 			["cooldown"] = false,
-			["icon"] = true,
+			["parent"] = "GEMS",
 		},
 		["Drak'Tharon - Decay/Return Flesh"] = {
 			["iconSource"] = 0,
@@ -5605,9 +5616,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -5797,25 +5808,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135902,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Decay/Return Flesh",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "B60HjozVSbo",
@@ -5855,7 +5866,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["TARGET HP PERCENT"] = {
 			["arcLength"] = 360,
@@ -5931,11 +5942,12 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["desc"] = "Big display of target health percentage with Colors",
 			["stagger"] = 0,
-			["uid"] = "RtwiT9kw4p3",
+			["config"] = {
+			},
 			["version"] = 2,
+			["useLimit"] = true,
 			["fullCircle"] = true,
-			["rotation"] = 0,
-			["selfPoint"] = "TOP",
+			["grow"] = "DOWN",
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -6003,9 +6015,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["groupIcon"] = 136168,
+			["selfPoint"] = "TOP",
 			["animate"] = false,
-			["useLimit"] = true,
+			["rotation"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -6013,9 +6025,8 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["grow"] = "DOWN",
-			["config"] = {
-			},
+			["groupIcon"] = 136168,
+			["borderInset"] = 1,
 			["constantFactor"] = "RADIUS",
 			["frameStrata"] = 1,
 			["borderOffset"] = 4,
@@ -6027,7 +6038,7 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
 			["stepAngle"] = 15,
-			["borderInset"] = 1,
+			["uid"] = "RtwiT9kw4p3",
 			["limit"] = 1,
 			["rowSpace"] = 1,
 			["conditions"] = {
@@ -6250,14 +6261,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -6316,7 +6320,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -6439,11 +6448,13 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["cooldown"] = false,
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -6457,18 +6468,18 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
 			["alpha"] = 1,
 			["id"] = "Blade Barrier",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["useCooldownModRate"] = true,
 			["width"] = 40,
 			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -6565,10 +6576,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["borderOffset"] = 4,
-			["uid"] = "Q6V((Odtb2N",
 			["borderInset"] = 1,
 			["config"] = {
 			},
+			["uid"] = "Q6V((Odtb2N",
 			["conditions"] = {
 			},
 			["load"] = {
@@ -6620,9 +6631,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -6633,10 +6644,10 @@ WeakAurasSaved = {
 						["use_alwaystrue"] = true,
 						["useGroup_count"] = true,
 						["debuffType"] = "HELPFUL",
+						["unit"] = "nameplate",
+						["event"] = "Conditions",
 						["names"] = {
 						},
-						["event"] = "Conditions",
-						["use_unit"] = true,
 						["auranames"] = {
 							"56151", -- [1]
 						},
@@ -6646,7 +6657,7 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["group_count"] = "0",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "nameplate",
+						["use_unit"] = true,
 						["group_countOperator"] = ">",
 					},
 					["untrigger"] = {
@@ -6765,25 +6776,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 134969,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Guardian Aura",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "hXYg7zCcOv4",
@@ -6795,7 +6806,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Reflection - Corrupted Flesh"] = {
 			["iconSource"] = 0,
@@ -6826,9 +6837,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -6984,25 +6995,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237568,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Corrupted Flesh",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "1cNUFFoFrqm",
@@ -7014,7 +7025,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["PRIEST"] = {
 			["iconSource"] = -1,
@@ -7049,10 +7060,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
 						["spellName"] = 34428,
-						["useExactSpellId"] = false,
-						["useName"] = true,
 						["unevent"] = "auto",
+						["useName"] = true,
 						["subeventSuffix"] = "_CAST_START",
+						["useExactSpellId"] = false,
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Action Usable",
@@ -7211,13 +7222,13 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = false,
 			["width"] = 65.000114440918,
-			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["internalVersion"] = 69,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -7246,7 +7257,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["internalVersion"] = 69,
+			["xOffset"] = 0,
 		},
 		["Druid - CP1"] = {
 			["color"] = {
@@ -7483,9 +7494,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -7649,25 +7660,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135851,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Icy Path",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "BC(82EMCcdR",
@@ -7679,7 +7690,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Pit of Saron - Pursuit"] = {
 			["iconSource"] = 0,
@@ -7710,9 +7721,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -7891,25 +7902,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237297,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Pursuit",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "KGZCZ6spB7A",
@@ -7921,7 +7932,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Emerge"] = {
 			["iconSource"] = 0,
@@ -7952,9 +7963,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -8109,25 +8120,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135862,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Emerge",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "uzQxneQhmk9",
@@ -8139,7 +8150,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Bottom Border"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -8379,15 +8390,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 180,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0.58823529411765, -- [1]
 				0, -- [2]
 				0.003921568627451, -- [3]
 				1, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -8457,7 +8468,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 180,
 		},
 		["Ahn'kahet - Embrace of the Vampyr Glow"] = {
 			["iconSource"] = -1,
@@ -8673,14 +8684,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -8738,7 +8742,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -8900,11 +8909,13 @@ WeakAurasSaved = {
 			["parent"] = "Vermin Hunter",
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -8918,11 +8929,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
 			["alpha"] = 1,
 			["sparkHidden"] = "NEVER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
@@ -8933,7 +8944,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -9025,10 +9036,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["borderOffset"] = 4,
-			["borderInset"] = 1,
 			["uid"] = "Pt2lZW6tFcu",
 			["config"] = {
 			},
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["load"] = {
@@ -9383,9 +9394,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -9491,8 +9502,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -9506,7 +9517,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -9678,9 +9689,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -9845,25 +9856,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = "136106",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Stop Time",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "QdqD54gZI2A",
@@ -9875,7 +9886,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Lightning - Stance"] = {
 			["iconSource"] = -1,
@@ -9906,9 +9917,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -10138,25 +10149,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132341,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Stance",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Y3kPv1JV6Cf",
@@ -10210,7 +10221,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Revenge - Defensive stance"] = {
 			["sparkWidth"] = 10,
@@ -10250,8 +10261,8 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["spellName"] = 30357,
 						["type"] = "spell",
+						["unevent"] = "auto",
 						["missType"] = "DODGE",
-						["use_targetRequired"] = false,
 						["use_unit"] = true,
 						["subeventSuffix"] = "_MISSED",
 						["event"] = "Action Usable",
@@ -10261,7 +10272,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_genericShowOn"] = true,
-						["unevent"] = "auto",
+						["use_targetRequired"] = false,
 						["use_destUnit"] = true,
 						["use_track"] = true,
 						["useIgnoreName"] = false,
@@ -10280,15 +10291,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["useTooltip"] = false,
+			["internalVersion"] = 69,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["useTooltip"] = false,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -10369,7 +10375,12 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 36,
-			["iconSource"] = -1,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -10405,16 +10416,16 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["internalVersion"] = 69,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["iconSource"] = -1,
 			["config"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["width"] = 36,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
@@ -10497,9 +10508,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -10665,25 +10676,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135857,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Blizzard",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "5ncvGpFOYmt",
@@ -10695,7 +10706,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Vermin Death Knight"] = {
 			["arcLength"] = 360,
@@ -11133,15 +11144,15 @@ WeakAurasSaved = {
 			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Tems Loss of Control Effects",
-			["borderInset"] = 1,
+			["selfPoint"] = "BOTTOMLEFT",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "BOTTOMLEFT",
-			["uid"] = "TBWPr1GPJhe",
-			["config"] = {
-			},
 			["authorOptions"] = {
 			},
+			["config"] = {
+			},
+			["borderInset"] = 1,
+			["uid"] = "TBWPr1GPJhe",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -11468,9 +11479,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -11866,25 +11877,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135734,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Ethereal Sphere",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "cMbdBUJGqvh",
@@ -11896,7 +11907,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Druid - Mana Bar Cat/Bear"] = {
 			["sparkWidth"] = 10,
@@ -12229,9 +12240,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -12396,25 +12407,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136173,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Time Bomb",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "(8MI49u6Thi",
@@ -12426,7 +12437,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Top Border"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -12666,15 +12677,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 0,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0.58823529411765, -- [1]
 				0, -- [2]
 				0.003921568627451, -- [3]
 				1, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -12745,7 +12756,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 0,
 		},
 		["MEND PET"] = {
 			["sparkWidth"] = 10,
@@ -12969,9 +12980,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -13131,25 +13142,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136183,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Fear",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "e9AjvE8bGqv",
@@ -13161,7 +13172,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Poison Cloud"] = {
 			["iconSource"] = 0,
@@ -13192,9 +13203,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -13346,25 +13357,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136077,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Poison Cloud",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "whp2gLBGu6c",
@@ -13376,7 +13387,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Violet Hold - Protective Bubble"] = {
 			["iconSource"] = 0,
@@ -13407,9 +13418,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -13575,25 +13586,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136017,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Protective Bubble",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "ig(l0OmKo(T",
@@ -13605,7 +13616,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Nexus - Spell Reflection"] = {
 			["iconSource"] = 0,
@@ -13636,9 +13647,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -13840,25 +13851,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136222,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Spell Reflection",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "0jvnqZGLB1k",
@@ -13870,7 +13881,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Drak'Tharon - Blizzard"] = {
 			["iconSource"] = 0,
@@ -13901,9 +13912,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -14056,25 +14067,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135857,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Blizzard",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "6A(E8jgomn6",
@@ -14086,7 +14097,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Sudden Death"] = {
 			["sparkWidth"] = 10,
@@ -14285,9 +14296,13 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
 			["uid"] = "XcYagtDe)yF",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["useAdjustededMin"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
@@ -14320,11 +14335,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["desaturate"] = false,
@@ -14347,11 +14358,21 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -14426,22 +14447,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["useTooltip"] = false,
 			["version"] = 1,
 			["subRegions"] = {
@@ -14550,7 +14556,12 @@ WeakAurasSaved = {
 			},
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
@@ -14636,12 +14647,12 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["customDuration"] = "function()\n  local now = GetTime()\n  local useOffHand = aura_env.UseOffHand()\n  \n  local function CalculateParryHaste(current, total)\n    return math.max(current - total * 0.4, math.min(current, total * 0.2))\n  end\n  \n  local swingSpeed\n  \n  if aura_env.rangedSwing then\n    swingSpeed = UnitRangedDamage(\"player\")\n  else\n    local mainSpeed, offSpeed = UnitAttackSpeed(\"player\")\n    \n    if useOffHand and offSpeed then\n      swingSpeed = offSpeed\n    else\n      swingSpeed = mainSpeed\n    end\n  end\n  \n  if aura_env.parryHaste then\n    local remainingDuration = aura_env.nextSwingTime - now\n    local remainingAfterHaste = CalculateParryHaste(remainingDuration, swingSpeed)\n    local hasteDuration = remainingDuration - remainingAfterHaste\n    \n    aura_env.parryHaste = false\n    return swingSpeed, aura_env.nextSwingTime - hasteDuration\n  elseif aura_env.pauseState == \"PAUSING\" then\n    local remainingDuration = math.max(aura_env.nextSwingTime - now, 0)\n    \n    aura_env.pauseTime = now\n    aura_env.pauseState = \"PAUSED\"\n    return remainingDuration, swingSpeed, true\n  elseif aura_env.pauseState == \"INTERRUPTED\" then\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, aura_env.nextSwingTime\n  elseif aura_env.pauseState == \"RESUMING\" then\n    local pauseDuration = now - aura_env.pauseTime\n    local newSwingTime = aura_env.nextSwingTime + pauseDuration\n    \n    aura_env.nextSwingTime = newSwingTime\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, newSwingTime\n  end\n  \n  local nextSwingTime = now + swingSpeed\n  \n  aura_env.nextSwingTime = nextSwingTime\n  return swingSpeed, nextSwingTime\nend",
 						["customName"] = "function()\n  local function GetSlotItemName(slotId)\n    local slotItemId = GetInventoryItemID(\"player\", slotId)\n    \n    if slotItemId then\n      return GetItemInfo(slotItemId)\n    end\n  end\n  \n  if aura_env.rangedSwing then\n    return GetSlotItemName(18)\n  elseif aura_env.UseOffHand() then\n    return GetSlotItemName(17)\n  else\n    return GetSlotItemName(16) or \"Unarmed\"\n  end\nend",
-						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
-						["subeventSuffix"] = "_CAST_START",
-						["customTexture"] = "",
 						["spellIds"] = {
 						},
+						["subeventSuffix"] = "_CAST_START",
+						["customTexture"] = "",
 						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --    if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n            \n            return spellName == \"Slam\"\n        end\n        \n        if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            local subEvent = select(2, ...)\n            local sourceGUID = select(4, ...)\n            local destGUID = select(8, ...)\n            local playerGUID = UnitGUID(\"player\")\n            local useOffHand = aura_env.UseOffHand()\n            \n            if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n                local missType = select(12, ...)\n                \n                if missType == \"PARRY\" then\n                    aura_env.parryHaste = true\n                    return true\n                else\n                    return false\n                end\n            elseif sourceGUID ~= playerGUID then\n                return false\n            end\n            \n            if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n                local spellName = select(13, ...)\n                \n                if aura_env.MELEE_SWING_SPELLS[spellName] then\n                    aura_env.rangedSwing = false\n                    return true\n                elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                    aura_env.rangedSwing = true\n                    return true\n                else\n                    return false\n                end\n            end\n            \n            local isOffHand = false\n            \n            if subEvent == \"SWING_DAMAGE\" then\n                isOffHand = select(21, ...)\n            elseif subEvent == \"SWING_MISSED\" then\n                isOffHand = select(13, ...)\n            end\n            \n            aura_env.rangedSwing = false\n            return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n        elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"PAUSING\"\n            return true\n        elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"INTERRUPTED\"\n            return true\n        elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n            aura_env.rangedSwing = false\n            aura_env.pauseState = \"RESUMING\"\n            return true\n        end\n    end",
+						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -14783,12 +14794,12 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text"] = "%t",
 					["text_shadowYOffset"] = 0,
-					["text_text_format_t_time_mod_rate"] = true,
+					["text_fontType"] = "None",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_text_format_n_format"] = "none",
-					["text_fontType"] = "None",
+					["text_visible"] = false,
 					["text_fontSize"] = 10,
 					["anchorXOffset"] = 0,
 					["text_text_format_t_time_precision"] = 1,
@@ -15085,7 +15096,7 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -15098,7 +15109,7 @@ WeakAurasSaved = {
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
 			["parent"] = "Vermin Warrior",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["icon_side"] = "RIGHT",
 			["sparkColor"] = {
 				1, -- [1]
@@ -15110,7 +15121,7 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "Sonic Awareness",
@@ -15141,7 +15152,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -15218,13 +15236,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -15372,12 +15388,7 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -15442,9 +15453,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -15610,25 +15621,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135953,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Renew",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "WgpMOxuvVZD",
@@ -15640,7 +15651,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Sacrifice"] = {
 			["iconSource"] = 0,
@@ -15671,9 +15682,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -15859,25 +15870,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136184,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Sacrifice",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Wvwh4e3iE(C",
@@ -15889,7 +15900,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Berserk Weapon Enchant"] = {
 			["sparkWidth"] = 10,
@@ -16378,15 +16389,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 180,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0.58823529411765, -- [1]
 				0, -- [2]
 				0.003921568627451, -- [3]
 				1, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -16445,7 +16456,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 180,
 		},
 		["DK - Runes"] = {
 			["arcLength"] = 360,
@@ -16458,11 +16469,14 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = -96.36363636363636,
 			["anchorPoint"] = "CENTER",
-			["sortHybridTable"] = {
-				["Runes"] = false,
+			["sort"] = "none",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
-			["fullCircle"] = true,
-			["space"] = 0,
+			["rowSpace"] = 1,
 			["url"] = "https://wago.io/0N1K2wIv4/58",
 			["actions"] = {
 				["start"] = {
@@ -16491,19 +16505,8 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["radius"] = 200,
+			["internalVersion"] = 69,
 			["frameStrata"] = 1,
-			["useLimit"] = false,
-			["align"] = "CENTER",
-			["rotation"] = 0,
-			["authorOptions"] = {
-			},
-			["groupIcon"] = 237515,
-			["stagger"] = 0,
-			["ignoreWagoUpdate"] = true,
-			["version"] = 58,
-			["subRegions"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -16524,7 +16527,20 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["rowSpace"] = 1,
+			["align"] = "CENTER",
+			["gridType"] = "RD",
+			["fullCircle"] = true,
+			["sortHybridTable"] = {
+				["Runes"] = false,
+			},
+			["stagger"] = 0,
+			["ignoreWagoUpdate"] = true,
+			["version"] = 58,
+			["subRegions"] = {
+			},
+			["radius"] = 200,
+			["authorOptions"] = {
+			},
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -16543,7 +16559,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["internalVersion"] = 69,
+			["useLimit"] = false,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -16551,53 +16567,43 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["uid"] = "IxDkNVofo)W",
-			["animate"] = true,
+			["source"] = "import",
 			["customGrow"] = "function(newPositions, activeRegions)\n    local limit = 3 -- limit of icons per row\n    local rows = 2 -- total rows\n    local spacing = 1 -- spacing between icons\n    ----------------------\n    local check = true\n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    \n    local xOffset = 0\n    local yOffset = 0\n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        local region = regionData.region\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= limit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows-1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing))\n        yOffset = 0 - (region.height + spacing) * yCount -- change '-' to '+' after 0 to grow up instead of down\n        \n        xCount = xCount + 1\n        \n        if yCount < rows-1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
 			["scale"] = 0.55,
 			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
 			["stepAngle"] = 15,
-			["selfPoint"] = "CENTER",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["animate"] = true,
+			["regionType"] = "dynamicgroup",
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.57",
 			["tocversion"] = 30400,
 			["id"] = "DK - Runes",
-			["limit"] = 5,
+			["rotation"] = 0,
 			["gridWidth"] = 6,
 			["anchorFrameType"] = "SCREEN",
-			["source"] = "import",
+			["grow"] = "HORIZONTAL",
 			["config"] = {
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["gridType"] = "RD",
+			["groupIcon"] = 237515,
+			["space"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["grow"] = "HORIZONTAL",
+			["selfPoint"] = "CENTER",
 		},
 		["Hyperspeed Acceleration"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -16606,12 +16612,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -16656,7 +16657,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -16666,7 +16667,14 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["authorOptions"] = {
 			},
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -16789,18 +16797,21 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
@@ -16863,9 +16874,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -17032,25 +17043,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135728,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Time Stop",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "AGZy8LwMQYA",
@@ -17062,7 +17073,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Loss of Control Background"] = {
 			["wagoID"] = "JiQILDF99",
@@ -17090,13 +17101,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -17248,9 +17259,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -17406,25 +17417,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136175,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Incapacitated",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "wow((P7Eu4H",
@@ -17436,7 +17447,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Savage Roar"] = {
 			["sparkWidth"] = 10,
@@ -17457,14 +17468,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -17537,7 +17541,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -17644,11 +17653,13 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["conditions"] = {
 			},
@@ -17664,17 +17675,17 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["alpha"] = 1,
 			["id"] = "Savage Roar",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
 			["uid"] = "gUzpW8uSnms",
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -17704,7 +17715,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -17759,13 +17777,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
@@ -17889,12 +17905,7 @@ WeakAurasSaved = {
 			["parent"] = "Vermin Druid",
 			["cooldown"] = false,
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
@@ -17907,7 +17918,7 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["alpha"] = 1,
 			["id"] = "Mangle",
@@ -17915,7 +17926,7 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["width"] = 36,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -17931,7 +17942,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 		},
 		["Gundrak - Deafening Roar"] = {
 			["iconSource"] = 0,
@@ -17962,9 +17973,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -18119,25 +18130,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132117,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Deafening Roar",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "8e2u3EMDxC(",
@@ -18149,7 +18160,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Warrior - Defensive Stance"] = {
 			["outline"] = "OUTLINE",
@@ -18234,8 +18245,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["preferToUpdate"] = false,
 			["parent"] = "Vermin Warrior Stance",
+			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18281,7 +18292,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["Tin Ore"] = {
 			["iconSource"] = -1,
@@ -18510,9 +18521,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -18669,25 +18680,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136222,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Spell Reflection",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "ENUX6O)sI9M",
@@ -18699,7 +18710,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Web Wrap"] = {
 			["iconSource"] = 0,
@@ -18730,9 +18741,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -18884,25 +18895,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136022,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Web Wrap",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "4z0y4HQuTkJ",
@@ -18914,7 +18925,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Info - ThreatSituation"] = {
 			["sparkWidth"] = 5,
@@ -18924,48 +18935,6 @@ WeakAurasSaved = {
 			["customText"] = "function(...)\n--print(...)\nend",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["backgroundColor"] = {
-				0.6980392156862745, -- [1]
-				0.6980392156862745, -- [2]
-				0.6980392156862745, -- [3]
-				0.2178025841712952, -- [4]
-			},
-			["sparkOffsetX"] = 0,
-			["sparkRotation"] = 0,
-			["sparkRotationMode"] = "AUTO",
-			["url"] = "https://wago.io/xfKIUqvJH/2",
-			["icon"] = false,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "custom",
-						["custom_type"] = "stateupdate",
-						["event"] = "Health",
-						["unit"] = "player",
-						["debuffType"] = "HELPFUL",
-						["subeventPrefix"] = "SPELL",
-						["events"] = "PLAYER_REGEN_DISABLED, PLAYER_REGEN_ENABLED, UNIT_THREAT_LIST_UPDATE:target, UNIT_THREAT_SITUATION_UPDATE:target, PLAYER_TARGET_CHANGED",
-						["names"] = {
-						},
-						["check"] = "event",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["customVariables"] = "{\n    threat = 'number',\n    status = 'number',\n    player = 'bool'\n}",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["enableGradient"] = false,
-			["parent"] = "Threat List",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -19001,6 +18970,52 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["sparkOffsetX"] = 0,
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
+			["url"] = "https://wago.io/xfKIUqvJH/2",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "-- lint\nlocal _G = _G\nlocal IsInRaid = _G.IsInRaid\nlocal UnitName = _G.UnitName\nlocal GetNumGroupMembers = _G.GetNumGroupMembers\nlocal UnitDetailedThreatSituation = _G.UnitDetailedThreatSituation\n\n-- vars\nlocal aura_env = aura_env -- luacheck: ignore\nlocal WeakAuras = WeakAuras -- luacheck: ignore\nlocal Player = UnitName('player')\n\nlocal Threat = {\n    Insert = function(threat, unit)\n        -- https://wow.gamepedia.com/API_UnitDetailedThreatSituation\n        local _, status, scaled, raw, value = UnitDetailedThreatSituation(unit, 'target')\n        if (status) then\n            scaled = math.floor(scaled * 100 + 0.5) / 100\n            value = math.floor(value / 100 + 0.5)\n            unit = UnitName(unit)\n            if (not threat[unit]) then\n                threat[unit] = { unit = unit, status = status, scaled = scaled, raw = raw, threat = value }\n                threat[#threat+1] = threat[unit]\n            end\n        end\n    end,\n    UpdateRaid = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            for i = 1, GetNumGroupMembers() do self.Insert(threat, 'raid'..i) end\n            self.TSU(threat)\n        end\n    end,\n    UpdateGroup = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            self.Insert(threat, 'player')\n            for i = 1, 5 do self.Insert(threat, 'party'..i) end\n            self.TSU(threat)\n        end\n    end,\n    TSU = function(threat)\n        if (aura_env.config.sort == 1) then table.sort(threat, function(a, b) return a.scaled > b.scaled end)\n        elseif (aura_env.config.sort == 2) then table.sort(threat, function(a, b) return a.raw > b.raw end)\n        else table.sort(threat, function(a, b) return a.threat > b.threat end) end\n        \n        for i = 1, #threat do\n            local o, t = aura_env.dyn[i] or { progressType = 'static', total = 100 }, threat[i]\n            if (t) then\n                o.name, o.value, o.threat, o.status, o.player, o.show = t.unit, t.scaled, t.threat, t.status, (t.unit == Player), true\n                if (t.status == 0) then o.icon = aura_env.config.icon0 or 132320 -- unit has less than 100% threat for mobUnit\n                elseif (t.status == 1) then o.icon = aura_env.config.icon1 or 132347 -- unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)\n                elseif (t.status == 2) then o.icon = aura_env.config.icon2 or 132341 -- unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)\n                else o.icon = aura_env.config.icon3 or 132341 end -- 3 = unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)\n            else\n                o.name, o.value, o.player, o.show = '', 0, false, false\n            end\n            \n            if (i <= aura_env.config.numElements) then\n                o.changed, o.index = true, i\n                aura_env.dyn[i] = o\n            elseif (o.player) then\n                o.changed, o.index = true, #aura_env.dyn\n                aura_env.dyn[#aura_env.dyn] = o\n            end\n        end\n    end,\n    Reset = function()\n        for i = 1, aura_env.config.numElements do\n            local o = aura_env.dyn[i]\n            if (o) then o.name, o.value, o.player, o.show, o.changed = '', 0, false, false, true end\n            aura_env.dyn[i] = o\n        end\n    end\n}\n\n-- event\naura_env.UNIT_THREAT_LIST_UPDATE = function()\n    if (IsInRaid()) then Threat:UpdateRaid()\n    else Threat:UpdateGroup() end\nend\n\naura_env.PLAYER_REGEN_DISABLED = function()\n    Threat:Reset()\n    aura_env.UNIT_THREAT_LIST_UPDATE()\nend\n\naura_env.PLAYER_REGEN_ENABLED = aura_env.PLAYER_REGEN_DISABLED\naura_env.PLAYER_TARGET_CHANGED = aura_env.PLAYER_REGEN_DISABLED\naura_env.UNIT_THREAT_SITUATION_UPDATE = aura_env.PLAYER_REGEN_DISABLED\n\naura_env.OPTIONS = function() -- weakaura options is opend\n    if (WeakAuras.IsOptionsOpen()) then\n        local threat = {}\n        for _,unit in pairs({'Willie', 'Eli', 'Minnie', 'Goofy', 'Mickey', 'Sylvester', 'Pluto', 'Milton', 'Salty', 'Duffy', UnitName('player')}) do\n            local v = math.random(0, 9001)\n            threat[#threat+1] = { unit = unit, status = math.random(0, 3), scaled = math.floor((100 / 9001 * v) * 100 + 0.5) / 100, raw = math.floor((255 / 9001 * v) * 100 + 0.5) / 100, threat = v }\n        end\n        Threat.TSU(threat)\n    end\nend",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["custom_type"] = "stateupdate",
+						["event"] = "Health",
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+						["subeventPrefix"] = "SPELL",
+						["events"] = "PLAYER_REGEN_DISABLED, PLAYER_REGEN_ENABLED, UNIT_THREAT_LIST_UPDATE:target, UNIT_THREAT_SITUATION_UPDATE:target, PLAYER_TARGET_CHANGED",
+						["names"] = {
+						},
+						["check"] = "event",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["customVariables"] = "{\n    threat = 'number',\n    status = 'number',\n    player = 'bool'\n}",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["enableGradient"] = false,
+			["parent"] = "Threat List",
+			["selfPoint"] = "CENTER",
 			["sparkHeight"] = 2,
 			["barColor2"] = {
 				1, -- [1]
@@ -19016,15 +19031,11 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["customTextUpdate"] = "update",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "-- lint\nlocal _G = _G\nlocal IsInRaid = _G.IsInRaid\nlocal UnitName = _G.UnitName\nlocal GetNumGroupMembers = _G.GetNumGroupMembers\nlocal UnitDetailedThreatSituation = _G.UnitDetailedThreatSituation\n\n-- vars\nlocal aura_env = aura_env -- luacheck: ignore\nlocal WeakAuras = WeakAuras -- luacheck: ignore\nlocal Player = UnitName('player')\n\nlocal Threat = {\n    Insert = function(threat, unit)\n        -- https://wow.gamepedia.com/API_UnitDetailedThreatSituation\n        local _, status, scaled, raw, value = UnitDetailedThreatSituation(unit, 'target')\n        if (status) then\n            scaled = math.floor(scaled * 100 + 0.5) / 100\n            value = math.floor(value / 100 + 0.5)\n            unit = UnitName(unit)\n            if (not threat[unit]) then\n                threat[unit] = { unit = unit, status = status, scaled = scaled, raw = raw, threat = value }\n                threat[#threat+1] = threat[unit]\n            end\n        end\n    end,\n    UpdateRaid = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            for i = 1, GetNumGroupMembers() do self.Insert(threat, 'raid'..i) end\n            self.TSU(threat)\n        end\n    end,\n    UpdateGroup = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            self.Insert(threat, 'player')\n            for i = 1, 5 do self.Insert(threat, 'party'..i) end\n            self.TSU(threat)\n        end\n    end,\n    TSU = function(threat)\n        if (aura_env.config.sort == 1) then table.sort(threat, function(a, b) return a.scaled > b.scaled end)\n        elseif (aura_env.config.sort == 2) then table.sort(threat, function(a, b) return a.raw > b.raw end)\n        else table.sort(threat, function(a, b) return a.threat > b.threat end) end\n        \n        for i = 1, #threat do\n            local o, t = aura_env.dyn[i] or { progressType = 'static', total = 100 }, threat[i]\n            if (t) then\n                o.name, o.value, o.threat, o.status, o.player, o.show = t.unit, t.scaled, t.threat, t.status, (t.unit == Player), true\n                if (t.status == 0) then o.icon = aura_env.config.icon0 or 132320 -- unit has less than 100% threat for mobUnit\n                elseif (t.status == 1) then o.icon = aura_env.config.icon1 or 132347 -- unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)\n                elseif (t.status == 2) then o.icon = aura_env.config.icon2 or 132341 -- unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)\n                else o.icon = aura_env.config.icon3 or 132341 end -- 3 = unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)\n            else\n                o.name, o.value, o.player, o.show = '', 0, false, false\n            end\n            \n            if (i <= aura_env.config.numElements) then\n                o.changed, o.index = true, i\n                aura_env.dyn[i] = o\n            elseif (o.player) then\n                o.changed, o.index = true, #aura_env.dyn\n                aura_env.dyn[#aura_env.dyn] = o\n            end\n        end\n    end,\n    Reset = function()\n        for i = 1, aura_env.config.numElements do\n            local o = aura_env.dyn[i]\n            if (o) then o.name, o.value, o.player, o.show, o.changed = '', 0, false, false, true end\n            aura_env.dyn[i] = o\n        end\n    end\n}\n\n-- event\naura_env.UNIT_THREAT_LIST_UPDATE = function()\n    if (IsInRaid()) then Threat:UpdateRaid()\n    else Threat:UpdateGroup() end\nend\n\naura_env.PLAYER_REGEN_DISABLED = function()\n    Threat:Reset()\n    aura_env.UNIT_THREAT_LIST_UPDATE()\nend\n\naura_env.PLAYER_REGEN_ENABLED = aura_env.PLAYER_REGEN_DISABLED\naura_env.PLAYER_TARGET_CHANGED = aura_env.PLAYER_REGEN_DISABLED\naura_env.UNIT_THREAT_SITUATION_UPDATE = aura_env.PLAYER_REGEN_DISABLED\n\naura_env.OPTIONS = function() -- weakaura options is opend\n    if (WeakAuras.IsOptionsOpen()) then\n        local threat = {}\n        for _,unit in pairs({'Willie', 'Eli', 'Minnie', 'Goofy', 'Mickey', 'Sylvester', 'Pluto', 'Milton', 'Salty', 'Duffy', UnitName('player')}) do\n            local v = math.random(0, 9001)\n            threat[#threat+1] = { unit = unit, status = math.random(0, 3), scaled = math.floor((100 / 9001 * v) * 100 + 0.5) / 100, raw = math.floor((255 / 9001 * v) * 100 + 0.5) / 100, threat = v }\n        end\n        Threat.TSU(threat)\n    end\nend",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0.6980392156862745, -- [1]
+				0.6980392156862745, -- [2]
+				0.6980392156862745, -- [3]
+				0.2178025841712952, -- [4]
 			},
 			["version"] = 2,
 			["subRegions"] = {
@@ -19117,8 +19128,8 @@ WeakAurasSaved = {
 					["text_text_format_t_time_precision"] = 1,
 				}, -- [4]
 				{
+					["border_offset"] = 0,
 					["border_size"] = 2,
-					["type"] = "subborder",
 					["border_anchor"] = "bar",
 					["text_color"] = {
 					},
@@ -19130,7 +19141,7 @@ WeakAurasSaved = {
 					},
 					["border_visible"] = false,
 					["border_edge"] = "Blizzard Tooltip",
-					["border_offset"] = 0,
+					["type"] = "subborder",
 				}, -- [5]
 				{
 					["border_offset"] = 0,
@@ -19181,6 +19192,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "PRIEST",
 					["multi"] = {
@@ -19188,127 +19203,21 @@ WeakAurasSaved = {
 					},
 				},
 				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
 			["displayIcon"] = "133473",
 			["source"] = "import",
-			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
-				{
-					["type"] = "number",
-					["useDesc"] = false,
-					["max"] = 40,
-					["step"] = 1,
-					["width"] = 1,
-					["min"] = 0,
-					["name"] = "Number of shown entries",
-					["key"] = "numElements",
-					["default"] = 8,
-				}, -- [1]
-				{
-					["useName"] = true,
-					["type"] = "header",
-					["text"] = "sort order",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [2]
-				{
-					["type"] = "select",
-					["default"] = 2,
-					["name"] = "Sort by",
-					["key"] = "sort",
-					["useDesc"] = false,
-					["values"] = {
-						"threatValue", -- [1]
-						"rawPercentage", -- [2]
-						"scaledPercentage", -- [3]
-					},
-					["width"] = 1,
-				}, -- [3]
-				{
-					["type"] = "description",
-					["text"] = "threatValue: The unit's total threat value on the mobUnit.\n\nrawPercentage: The unit's threat percentage against mobUnit relative to the threat of mobUnit's primary target. Can be greater than 100, up to 255. Stops updating when you become the primary target.\n\nscaledPercentage: The unit's threat percentage against mobUnit. At 100% the unit will become the primary target (tanking). This value is also scaled the closer the unit is to the mobUnit.",
-					["fontSize"] = "medium",
-					["width"] = 2,
-				}, -- [4]
-				{
-					["useName"] = false,
-					["type"] = "header",
-					["text"] = "",
-					["noMerge"] = false,
-					["width"] = 1,
-				}, -- [5]
-				{
-					["type"] = "description",
-					["text"] = "A list of available icons can be found under the following link (click on it and use the icon ID).\nhttps://classic.wowhead.com/icons",
-					["fontSize"] = "medium",
-					["width"] = 2,
-				}, -- [6]
-				{
-					["type"] = "number",
-					["useDesc"] = true,
-					["max"] = 999999,
-					["step"] = 1,
-					["width"] = 2,
-					["min"] = 0,
-					["name"] = "Status 0 icon",
-					["desc"] = "Status 0: unit has less than 100% threat for mobUnit",
-					["key"] = "icon0",
-					["default"] = 132320,
-				}, -- [7]
-				{
-					["type"] = "number",
-					["useDesc"] = true,
-					["max"] = 999999,
-					["step"] = 1,
-					["width"] = 2,
-					["min"] = 0,
-					["name"] = "Status 1 icon",
-					["desc"] = "Status 1: unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)",
-					["key"] = "icon1",
-					["default"] = 132347,
-				}, -- [8]
-				{
-					["type"] = "number",
-					["useDesc"] = true,
-					["max"] = 999999,
-					["step"] = 1,
-					["width"] = 2,
-					["min"] = 0,
-					["name"] = "Status 2 icon",
-					["desc"] = "Status 2: unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)",
-					["key"] = "icon2",
-					["default"] = 132341,
-				}, -- [9]
-				{
-					["type"] = "number",
-					["useDesc"] = true,
-					["max"] = 999999,
-					["step"] = 1,
-					["width"] = 2,
-					["min"] = 0,
-					["name"] = "Status 3 icon",
-					["desc"] = "Status 3: unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)",
-					["key"] = "icon3",
-					["default"] = 132341,
-				}, -- [10]
-				{
-					["type"] = "description",
-					["text"] = "Note: The bar color for the respective status can be adjusted under 'Conditions'..",
-					["fontSize"] = "medium",
-					["width"] = 2,
-				}, -- [11]
-			},
-			["auto"] = true,
+			["spark"] = false,
+			["icon"] = false,
+			["uid"] = "0NBlQkcHV5x",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
+			["sparkOffsetY"] = 0,
+			["height"] = 12,
+			["icon_side"] = "LEFT",
 			["config"] = {
 				["icon0"] = 132320,
 				["sort"] = 1,
@@ -19317,21 +19226,18 @@ WeakAurasSaved = {
 				["icon3"] = 132341,
 				["icon1"] = 132347,
 			},
-			["sparkOffsetY"] = 0,
-			["icon_side"] = "LEFT",
-			["height"] = 12,
-			["uid"] = "0NBlQkcHV5x",
+			["anchorFrameType"] = "SCREEN",
 			["anchorFrameParent"] = false,
 			["texture"] = "xVerminClean",
-			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["zoom"] = 0.3,
-			["semver"] = "1.0.1",
+			["auto"] = true,
 			["tocversion"] = 11305,
 			["id"] = "Info - ThreatSituation",
-			["alpha"] = 1,
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["width"] = 175,
-			["sparkHidden"] = "NEVER",
+			["semver"] = "1.0.1",
 			["sparkColor"] = {
 				0.63921568627451, -- [1]
 				0.65098039215686, -- [2]
@@ -19339,7 +19245,7 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["inverse"] = false,
-			["spark"] = false,
+			["sparkTexture"] = "bonusobjectives-bar-spark",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 				{
@@ -19448,7 +19354,112 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "bonusobjectives-bar-spark",
+			["authorOptions"] = {
+				{
+					["type"] = "number",
+					["useDesc"] = false,
+					["max"] = 40,
+					["step"] = 1,
+					["width"] = 1,
+					["min"] = 0,
+					["name"] = "Number of shown entries",
+					["key"] = "numElements",
+					["default"] = 8,
+				}, -- [1]
+				{
+					["useName"] = true,
+					["type"] = "header",
+					["text"] = "sort order",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [2]
+				{
+					["type"] = "select",
+					["default"] = 2,
+					["name"] = "Sort by",
+					["key"] = "sort",
+					["useDesc"] = false,
+					["values"] = {
+						"threatValue", -- [1]
+						"rawPercentage", -- [2]
+						"scaledPercentage", -- [3]
+					},
+					["width"] = 1,
+				}, -- [3]
+				{
+					["type"] = "description",
+					["text"] = "threatValue: The unit's total threat value on the mobUnit.\n\nrawPercentage: The unit's threat percentage against mobUnit relative to the threat of mobUnit's primary target. Can be greater than 100, up to 255. Stops updating when you become the primary target.\n\nscaledPercentage: The unit's threat percentage against mobUnit. At 100% the unit will become the primary target (tanking). This value is also scaled the closer the unit is to the mobUnit.",
+					["fontSize"] = "medium",
+					["width"] = 2,
+				}, -- [4]
+				{
+					["useName"] = false,
+					["type"] = "header",
+					["text"] = "",
+					["noMerge"] = false,
+					["width"] = 1,
+				}, -- [5]
+				{
+					["type"] = "description",
+					["text"] = "A list of available icons can be found under the following link (click on it and use the icon ID).\nhttps://classic.wowhead.com/icons",
+					["fontSize"] = "medium",
+					["width"] = 2,
+				}, -- [6]
+				{
+					["type"] = "number",
+					["useDesc"] = true,
+					["max"] = 999999,
+					["step"] = 1,
+					["width"] = 2,
+					["min"] = 0,
+					["name"] = "Status 0 icon",
+					["desc"] = "Status 0: unit has less than 100% threat for mobUnit",
+					["key"] = "icon0",
+					["default"] = 132320,
+				}, -- [7]
+				{
+					["type"] = "number",
+					["useDesc"] = true,
+					["max"] = 999999,
+					["step"] = 1,
+					["width"] = 2,
+					["min"] = 0,
+					["name"] = "Status 1 icon",
+					["desc"] = "Status 1: unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)",
+					["key"] = "icon1",
+					["default"] = 132347,
+				}, -- [8]
+				{
+					["type"] = "number",
+					["useDesc"] = true,
+					["max"] = 999999,
+					["step"] = 1,
+					["width"] = 2,
+					["min"] = 0,
+					["name"] = "Status 2 icon",
+					["desc"] = "Status 2: unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)",
+					["key"] = "icon2",
+					["default"] = 132341,
+				}, -- [9]
+				{
+					["type"] = "number",
+					["useDesc"] = true,
+					["max"] = 999999,
+					["step"] = 1,
+					["width"] = 2,
+					["min"] = 0,
+					["name"] = "Status 3 icon",
+					["desc"] = "Status 3: unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)",
+					["key"] = "icon3",
+					["default"] = 132341,
+				}, -- [10]
+				{
+					["type"] = "description",
+					["text"] = "Note: The bar color for the respective status can be adjusted under 'Conditions'..",
+					["fontSize"] = "medium",
+					["width"] = 2,
+				}, -- [11]
+			},
 		},
 		["Mithril Ore"] = {
 			["iconSource"] = -1,
@@ -19677,9 +19688,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -19829,25 +19840,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135824,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Flame Sphere",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "VN3jp7Fv)tH",
@@ -19859,7 +19870,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Oculus - Temporal Rift"] = {
 			["iconSource"] = 0,
@@ -19890,9 +19901,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -20059,25 +20070,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136115,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Temporal Rift",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "riFxPG26UTP",
@@ -20089,7 +20100,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Cobalt Ore"] = {
 			["iconSource"] = -1,
@@ -20326,9 +20337,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -20485,25 +20496,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237510,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Well of Corruption",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Vk1pVOuTb(m",
@@ -20515,7 +20526,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Grip of Slad'ran"] = {
 			["iconSource"] = 0,
@@ -20546,9 +20557,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -20701,25 +20712,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 236278,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Grip of Slad'ran",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "ToNWtoHE5zJ",
@@ -20731,7 +20742,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Violet Hold - Earth Shield"] = {
 			["iconSource"] = 0,
@@ -20762,9 +20773,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -20930,25 +20941,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136089,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Earth Shield",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "njmTzoFZSsV",
@@ -20960,7 +20971,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Runes"] = {
 			["sparkWidth"] = 10,
@@ -21066,15 +21077,15 @@ WeakAurasSaved = {
 						["rune"] = 1,
 						["type"] = "custom",
 						["remaining"] = "6",
-						["custom"] = "function(allstates, event, rune)\n    local _, classId = UnitClassBase(\"player\");\n    if classId == 6 then\n        if event == \"RUNE_POWER_UPDATE\" \n        or event == \"RUNE_TYPE_UPDATE\"\n        then\n            if not rune then \n                for i = 1, 6 do \n                    aura_env.updateRune(allstates, i)\n                end\n            else\n                aura_env.updateRune(allstates, rune)\n            end\n            return true\n        elseif event == \"OPTIONS\" then\n            for i = 1, 6 do \n                aura_env.updateRune(allstates, i)\n            end\n        elseif event == \"PLAYER_REGEN_ENABLED\" then\n            for i = 1, 6 do\n                local state = allstates[i]\n                state.overTimeStart = 0\n                state.overTimeRem = 0\n                state.additionalProgress[1].min = 0\n                state.additionalProgress[1].max = 0\n                state.runeReady = false          \n                state.changed = true\n                state.hasGrace = false\n            end\n            aura_env.spentInCombat = {\n                false, false, false, false, false, false,   \n            }\n            return true\n        elseif event == \"PLAYER_REGEN_DISABLED\" then\n            for i = 1, 6 do \n                local start, duration, runeReady = GetRuneCooldown(i)\n                if runeReady then\n                    aura_env.spentInCombat[i] = \"fresh\"\n                end\n            end\n        elseif InCombatLockdown() then\n            local update = false\n            for key, state in pairs(allstates) do\n                if state.runeReady and state.hasGrace then\n                    local exp = state.overTimeStart\n                    local rem = exp - GetTime()\n                    if rem > 0 then\n                        state.additionalProgress[1].min = rem + 7.529999999988\n                        state.additionalProgress[1].max = 10\n                        state.overTimeRem = 2.471 - rem\n                        state.changed = true\n                        update = true\n                    end\n                elseif state.additionalProgress[1].min ~= 0 or state.additionalProgress[1].max ~= 0 then\n                    state.additionalProgress[1].min = 0\n                    state.additionalProgress[1].max = 0\n                    state.changed = true\n                    update = true\n                end\n            end\n            return update\n        end\n    end\nend",
 						["use_frostRunes"] = false,
+						["events"] = "RUNE_TYPE_UPDATE RUNE_POWER_UPDATE FRAME_UPDATE PLAYER_REGEN_DISABLED PLAYER_REGEN_ENABLED ",
 						["spellIds"] = {
 						},
 						["customDuration"] = "",
 						["use_remaining"] = false,
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
-						["events"] = "RUNE_TYPE_UPDATE RUNE_POWER_UPDATE FRAME_UPDATE PLAYER_REGEN_DISABLED PLAYER_REGEN_ENABLED ",
+						["custom"] = "function(allstates, event, rune)\n    local _, classId = UnitClassBase(\"player\");\n    if classId == 6 then\n        if event == \"RUNE_POWER_UPDATE\" \n        or event == \"RUNE_TYPE_UPDATE\"\n        then\n            if not rune then \n                for i = 1, 6 do \n                    aura_env.updateRune(allstates, i)\n                end\n            else\n                aura_env.updateRune(allstates, rune)\n            end\n            return true\n        elseif event == \"OPTIONS\" then\n            for i = 1, 6 do \n                aura_env.updateRune(allstates, i)\n            end\n        elseif event == \"PLAYER_REGEN_ENABLED\" then\n            for i = 1, 6 do\n                local state = allstates[i]\n                state.overTimeStart = 0\n                state.overTimeRem = 0\n                state.additionalProgress[1].min = 0\n                state.additionalProgress[1].max = 0\n                state.runeReady = false          \n                state.changed = true\n                state.hasGrace = false\n            end\n            aura_env.spentInCombat = {\n                false, false, false, false, false, false,   \n            }\n            return true\n        elseif event == \"PLAYER_REGEN_DISABLED\" then\n            for i = 1, 6 do \n                local start, duration, runeReady = GetRuneCooldown(i)\n                if runeReady then\n                    aura_env.spentInCombat[i] = \"fresh\"\n                end\n            end\n        elseif InCombatLockdown() then\n            local update = false\n            for key, state in pairs(allstates) do\n                if state.runeReady and state.hasGrace then\n                    local exp = state.overTimeStart\n                    local rem = exp - GetTime()\n                    if rem > 0 then\n                        state.additionalProgress[1].min = rem + 7.529999999988\n                        state.additionalProgress[1].max = 10\n                        state.overTimeRem = 2.471 - rem\n                        state.changed = true\n                        update = true\n                    end\n                elseif state.additionalProgress[1].min ~= 0 or state.additionalProgress[1].max ~= 0 then\n                    state.additionalProgress[1].min = 0\n                    state.additionalProgress[1].max = 0\n                    state.changed = true\n                    update = true\n                end\n            end\n            return update\n        end\n    end\nend",
 						["use_includeDeathRunes"] = false,
 						["use_unit"] = true,
 						["remaining_operator"] = "<=",
@@ -21791,21 +21802,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["customVariables"] = "{\n    school = \"number\",\n    priority = \"number\",\n    secondary = \"bool\"\n}",
 						["type"] = "custom",
+						["unevent"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
-						["custom_type"] = "stateupdate",
-						["names"] = {
-						},
+						["use_unit"] = true,
 						["duration"] = "1",
 						["event"] = "Chat Message",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
-						["events"] = "LOSS_OF_CONTROL_UPDATE LOSS_OF_CONTROL_ADDED",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE LOSS_OF_CONTROL_ADDED",
 						["check"] = "event",
-						["use_unit"] = true,
-						["unevent"] = "timed",
+						["unit"] = "player",
+						["custom_type"] = "stateupdate",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -21934,8 +21945,8 @@ WeakAurasSaved = {
 			["alpha"] = 0.85,
 			["source"] = "import",
 			["width"] = 40,
-			["internalVersion"] = 69,
 			["desc"] = "",
+			["url"] = "https://wago.io/JiQILDF99/1",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -22087,7 +22098,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["url"] = "https://wago.io/JiQILDF99/1",
+			["internalVersion"] = 69,
 		},
 		["Threat List"] = {
 			["grow"] = "DOWN",
@@ -22152,23 +22163,22 @@ WeakAurasSaved = {
 				},
 			},
 			["align"] = "CENTER",
-			["borderEdge"] = "Blizzard Tooltip",
+			["stepAngle"] = 15,
+			["stagger"] = 0,
+			["authorOptions"] = {
+			},
+			["rotation"] = 0,
 			["yOffset"] = 250,
+			["version"] = 2,
+			["subRegions"] = {
+			},
 			["borderColor"] = {
 				0.086274509803922, -- [1]
 				0.090196078431373, -- [2]
 				0.10196078431373, -- [3]
 				1, -- [4]
 			},
-			["stagger"] = 0,
-			["sortHybridTable"] = {
-				["Info - ThreatSituation"] = false,
-			},
-			["version"] = 2,
-			["subRegions"] = {
-			},
-			["rowSpace"] = 1,
-			["useLimit"] = false,
+			["selfPoint"] = "TOP",
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -22189,25 +22199,24 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["anchorPoint"] = "CENTER",
+			["useLimit"] = false,
 			["backdropColor"] = {
 				0.086274509803922, -- [1]
 				0.090196078431373, -- [2]
 				0.10196078431373, -- [3]
 				0.65000000596047, -- [4]
 			},
-			["config"] = {
-			},
+			["uid"] = "WiRsd0lRNQ2",
 			["source"] = "import",
-			["selfPoint"] = "TOP",
+			["anchorPoint"] = "CENTER",
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
 			["anchorFrameFrame"] = "PlayerFrame",
-			["stepAngle"] = 15,
+			["regionType"] = "dynamicgroup",
 			["borderSize"] = 5,
 			["limit"] = 5,
-			["animate"] = false,
+			["borderEdge"] = "Blizzard Tooltip",
 			["gridWidth"] = 5,
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
@@ -22215,20 +22224,22 @@ WeakAurasSaved = {
 			["semver"] = "1.0.1",
 			["tocversion"] = 11305,
 			["id"] = "Threat List",
-			["regionType"] = "dynamicgroup",
+			["config"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "WiRsd0lRNQ2",
+			["animate"] = false,
 			["borderInset"] = 1,
-			["rotation"] = 0,
 			["radius"] = 200,
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["sortHybridTable"] = {
+				["Info - ThreatSituation"] = false,
 			},
 		},
 		["Barkskin"] = {
@@ -22250,12 +22261,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -22309,7 +22315,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -22437,13 +22450,11 @@ WeakAurasSaved = {
 			},
 			["cooldown"] = false,
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -22457,11 +22468,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["useCooldownModRate"] = true,
 			["id"] = "Barkskin",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -22476,7 +22487,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Stratholme - Constricting Chains"] = {
 			["iconSource"] = 0,
@@ -22507,9 +22518,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -22669,25 +22680,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132507,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Constricting Chains",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "AtzjFMsLk8F",
@@ -22699,7 +22710,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Citrine"] = {
 			["iconSource"] = -1,
@@ -22858,8 +22869,13 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Citrine",
 				},
 			},
-			["parent"] = "GEMS",
 			["selfPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -22937,12 +22953,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "GEMS",
 		},
 		["Survival Instincts"] = {
 			["sparkWidth"] = 10,
@@ -22958,12 +22969,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -23022,7 +23028,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -23149,13 +23162,11 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["conditions"] = {
 			},
@@ -23175,11 +23186,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["useCooldownModRate"] = true,
 			["id"] = "Survival Instincts",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
@@ -23189,7 +23200,7 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 		},
 		["Rage Bar"] = {
 			["sparkWidth"] = 10,
@@ -23807,15 +23818,15 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert (WOTLK)",
-			["config"] = {
-			},
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
-			["uid"] = "RaWaTrdL9bd",
-			["borderInset"] = 1,
 			["authorOptions"] = {
 			},
+			["borderInset"] = 1,
+			["config"] = {
+			},
+			["uid"] = "RaWaTrdL9bd",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -23917,11 +23928,11 @@ WeakAurasSaved = {
 			["id"] = "DRUID / ROGUE",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderInset"] = 1,
 			["uid"] = "IUvIXiYBA4q",
-			["xOffset"] = 0,
 			["config"] = {
 			},
+			["xOffset"] = 0,
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -23979,9 +23990,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -24135,25 +24146,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136006,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Acid Cloud",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "6ncipFPzHsl",
@@ -24165,7 +24176,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Iron Ore"] = {
 			["iconSource"] = -1,
@@ -24765,9 +24776,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -24920,25 +24931,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237556,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Poison Cloud",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "OEIkPBc5Tgv",
@@ -24950,7 +24961,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["VrIcon"] = {
 			["iconSource"] = 0,
@@ -25237,8 +25248,15 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["url"] = "https://wago.io/v9qxdDgI4/2",
 			["parent"] = "VictoryRush",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["cooldown"] = false,
 			["conditions"] = {
 			},
@@ -25267,14 +25285,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["url"] = "https://wago.io/v9qxdDgI4/2",
 		},
 		["Drak'Tharon - Mangling Slash"] = {
 			["iconSource"] = 0,
@@ -25305,9 +25316,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -25460,25 +25471,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132135,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Mangling Slash",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "HDe3mxPjeHB",
@@ -25490,7 +25501,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Trial of the Champion - Radiance"] = {
 			["iconSource"] = 0,
@@ -25521,9 +25532,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -25735,25 +25746,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237541,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Radiance",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "d)G74c4o0lq",
@@ -25765,7 +25776,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Runic Power Bar"] = {
 			["sparkWidth"] = 10,
@@ -25819,26 +25830,7 @@ WeakAurasSaved = {
 					["type"] = "subbackground",
 				}, -- [1]
 			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "unit",
-						["use_alwaystrue"] = false,
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["unit"] = "player",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
+			["displayText_format_p_format"] = "timed",
 			["load"] = {
 				["use_class"] = true,
 				["talent"] = {
@@ -25860,12 +25852,37 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["displayText"] = "%p",
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "unit",
+						["use_alwaystrue"] = false,
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
 			["fontSize"] = 25,
-			["internalVersion"] = 69,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
 			["shadowXOffset"] = 1,
+			["displayText"] = "%p",
 			["actions"] = {
 				["start"] = {
 				},
@@ -25875,13 +25892,12 @@ WeakAurasSaved = {
 				},
 			},
 			["selfPoint"] = "BOTTOM",
-			["parent"] = "VictoryRush",
 			["regionType"] = "text",
 			["config"] = {
 			},
+			["parent"] = "VictoryRush",
+			["displayText_format_p_time_format"] = 0,
 			["displayText_format_p_time_dynamic_threshold"] = 60,
-			["xOffset"] = 0,
-			["displayText_format_p_format"] = "timed",
 			["displayText_format_p_time_precision"] = 1,
 			["wordWrap"] = "WordWrap",
 			["automaticWidth"] = "Auto",
@@ -25889,13 +25905,13 @@ WeakAurasSaved = {
 			["justify"] = "LEFT",
 			["tocversion"] = 20501,
 			["id"] = "Runic Power Bar",
-			["yOffset"] = 30,
+			["xOffset"] = 0,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_p_time_format"] = 0,
-			["uid"] = "zJElfbtH)WS",
 			["outline"] = "OUTLINE",
+			["uid"] = "zJElfbtH)WS",
 			["displayText_format_p_time_mod_rate"] = true,
+			["internalVersion"] = 69,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -25907,12 +25923,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["yOffset"] = 30,
 		},
 		["Tems Wotlk Dungeon Pack - Text"] = {
 			["grow"] = "DOWN",
@@ -25970,8 +25981,15 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["selfPoint"] = "TOP",
 			["align"] = "CENTER",
-			["regionType"] = "dynamicgroup",
-			["parent"] = "Tems Wotlk Dungeon Pack",
+			["xOffset"] = 0,
+			["sortHybridTable"] = {
+				["Defense Protocol - Rallying Cry Chosen"] = false,
+				["Defense Protocol - Gamma Buffs Missing"] = false,
+				["Defense Protocol - Confessor's Wrath Chosen"] = false,
+				["Defense Protocol - Shield of Thorns Chosen"] = false,
+				["Defense Protocol - Shatter Defenses Chosen"] = false,
+				["Wotlk Dungeons - Helper"] = false,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25993,12 +26011,12 @@ WeakAurasSaved = {
 				},
 			},
 			["stagger"] = 0,
-			["arcLength"] = 360,
+			["radius"] = 200,
 			["version"] = 10,
 			["subRegions"] = {
 			},
-			["gridType"] = "RD",
-			["radius"] = 200,
+			["useLimit"] = false,
+			["yOffset"] = 150,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -26017,16 +26035,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["space"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "ARGhqRRdc1v",
+			["borderInset"] = 1,
 			["animate"] = false,
-			["source"] = "import",
+			["config"] = {
+			},
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -26034,8 +26053,7 @@ WeakAurasSaved = {
 			["stepAngle"] = 15,
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["config"] = {
-			},
+			["regionType"] = "dynamicgroup",
 			["gridWidth"] = 5,
 			["constantFactor"] = "RADIUS",
 			["rotation"] = 0,
@@ -26043,25 +26061,18 @@ WeakAurasSaved = {
 			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Tems Wotlk Dungeon Pack - Text",
-			["sortHybridTable"] = {
-				["Defense Protocol - Rallying Cry Chosen"] = false,
-				["Defense Protocol - Gamma Buffs Missing"] = false,
-				["Defense Protocol - Confessor's Wrath Chosen"] = false,
-				["Defense Protocol - Shield of Thorns Chosen"] = false,
-				["Defense Protocol - Shatter Defenses Chosen"] = false,
-				["Wotlk Dungeons - Helper"] = false,
-			},
+			["source"] = "import",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["yOffset"] = 150,
-			["borderInset"] = 1,
-			["useLimit"] = false,
-			["xOffset"] = 0,
+			["arcLength"] = 360,
+			["uid"] = "ARGhqRRdc1v",
+			["gridType"] = "RD",
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["fullCircle"] = true,
+			["space"] = 0,
 		},
 		["Utgarde Pinnacle - Terrifying Roar"] = {
 			["iconSource"] = 0,
@@ -26092,9 +26103,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -26260,25 +26271,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132111,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Terrifying Roar",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "gQMOuHVkraz",
@@ -26290,7 +26301,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Fade in-out Text Combat Indicator"] = {
 			["controlledChildren"] = {
@@ -26397,10 +26408,10 @@ WeakAurasSaved = {
 			["id"] = "Fade in-out Text Combat Indicator",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderInset"] = 1,
 			["uid"] = "BqsbsH4)Oho",
 			["config"] = {
 			},
+			["borderInset"] = 1,
 			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
@@ -26425,14 +26436,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -26490,7 +26494,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -26618,11 +26627,13 @@ WeakAurasSaved = {
 			},
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -26636,11 +26647,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["frameStrata"] = 1,
 			["sparkHidden"] = "NEVER",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -26655,7 +26666,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Gundrak - Whirling Slash"] = {
 			["iconSource"] = 0,
@@ -26686,9 +26697,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -26844,25 +26855,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 236304,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Whirling Slash",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "yuaJ6YTrss4",
@@ -26874,7 +26885,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Oculus - Leeching Poison"] = {
 			["iconSource"] = 0,
@@ -26905,9 +26916,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -27074,25 +27085,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136016,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Leeching Poison",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Z3Q6r7ILOYN",
@@ -27104,7 +27115,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Sniper Training"] = {
 			["sparkWidth"] = 10,
@@ -27120,7 +27131,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -27198,13 +27216,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -27309,12 +27325,7 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
@@ -27599,9 +27610,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -27753,25 +27764,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132270,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Enrage",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "3UNcg8E6b9H",
@@ -27783,7 +27794,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Merfin: Equipped Items"] = {
 			["grow"] = "LEFT",
@@ -27796,11 +27807,9 @@ WeakAurasSaved = {
 			},
 			["preferToUpdate"] = false,
 			["groupIcon"] = 134148,
-			["sortHybridTable"] = {
-				["Equipped Items - Icon"] = false,
-			},
+			["anchorPoint"] = "CENTER",
 			["fullCircle"] = true,
-			["space"] = 3,
+			["rowSpace"] = 1,
 			["url"] = "https://wago.io/UfCxcQfAm/26",
 			["actions"] = {
 				["start"] = {
@@ -27829,20 +27838,22 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["radius"] = 200,
+			["internalVersion"] = 69,
 			["arcLength"] = 360,
-			["useLimit"] = false,
+			["selfPoint"] = "BOTTOMRIGHT",
 			["align"] = "RIGHT",
 			["xOffset"] = -140,
 			["yOffset"] = -55,
 			["desc"] = "Merfin: Equipped Items\n\nAuthor - Merfin\nDiscord - https://discord.gg/q9z5Az6",
 			["rotation"] = 0,
-			["anchorPoint"] = "CENTER",
+			["gridType"] = "RD",
 			["version"] = 26,
 			["subRegions"] = {
 			},
 			["stagger"] = 0,
-			["gridType"] = "RD",
+			["sortHybridTable"] = {
+				["Equipped Items - Icon"] = false,
+			},
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -27873,17 +27884,21 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rowSpace"] = 1,
-			["source"] = "import",
-			["internalVersion"] = 69,
+			["space"] = 3,
+			["animate"] = true,
+			["radius"] = 200,
 			["scale"] = 0.95,
-			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
+			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["stepAngle"] = 15,
 			["borderSize"] = 2,
-			["limit"] = 5,
-			["regionType"] = "dynamicgroup",
+			["sort"] = "none",
+			["frameStrata"] = 1,
+			["useLimit"] = false,
+			["anchorFrameFrame"] = "ElvUF_Player",
+			["anchorFrameParent"] = false,
+			["constantFactor"] = "RADIUS",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -27904,29 +27919,25 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = true,
-			["anchorFrameParent"] = false,
-			["constantFactor"] = "RADIUS",
-			["gridWidth"] = 5,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.25",
 			["tocversion"] = 30400,
 			["id"] = "Merfin: Equipped Items",
-			["borderInset"] = 1,
-			["frameStrata"] = 1,
+			["uid"] = "5owwB2ABtm2",
+			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
 			["config"] = {
 			},
-			["uid"] = "5owwB2ABtm2",
-			["centerType"] = "LR",
-			["anchorFrameFrame"] = "ElvUF_Player",
-			["sort"] = "none",
+			["borderInset"] = 1,
+			["source"] = "import",
+			["limit"] = 5,
+			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["selfPoint"] = "BOTTOMRIGHT",
+			["regionType"] = "dynamicgroup",
 		},
 		["Judgement of Light"] = {
 			["sparkWidth"] = 10,
@@ -27947,13 +27958,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -28007,12 +28016,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -28178,7 +28182,14 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -28197,18 +28208,18 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["useCooldownModRate"] = true,
 			["id"] = "Judgement of Light",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -28645,13 +28656,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -28710,12 +28719,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -28842,7 +28846,14 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -29147,9 +29158,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -29453,25 +29464,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132351,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Staggering Roar",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "x4wqzb(1otE",
@@ -29507,7 +29518,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Arcane Tempo"] = {
 			["iconSource"] = 0,
@@ -29538,9 +29549,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -29732,25 +29743,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132864,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Arcane Tempo",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Yx8uvwF2yjz",
@@ -29762,7 +29773,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Vermin Priest"] = {
 			["grow"] = "LEFT",
@@ -29815,7 +29826,7 @@ WeakAurasSaved = {
 			["rotation"] = 0,
 			["config"] = {
 			},
-			["space"] = 2,
+			["borderEdge"] = "Square Full White",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -29841,30 +29852,16 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["stagger"] = 0,
+			["xOffset"] = -135,
 			["animate"] = true,
 			["selfPoint"] = "RIGHT",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["borderEdge"] = "Square Full White",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["xOffset"] = -135,
-			["arcLength"] = 360,
-			["constantFactor"] = "RADIUS",
-			["stepAngle"] = 15,
-			["borderOffset"] = 4,
-			["internalVersion"] = 69,
-			["gridWidth"] = 5,
-			["id"] = "Vermin Priest",
-			["borderInset"] = 1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["gridType"] = "RD",
-			["uid"] = "S3ES06vW5Vw",
-			["anchorFrameFrame"] = "PlayerFrame",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -29885,12 +29882,26 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["arcLength"] = 360,
+			["constantFactor"] = "RADIUS",
+			["stepAngle"] = 15,
+			["borderOffset"] = 4,
+			["internalVersion"] = 69,
+			["gridWidth"] = 5,
+			["id"] = "Vermin Priest",
+			["borderInset"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["gridType"] = "RD",
+			["uid"] = "S3ES06vW5Vw",
+			["space"] = 2,
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["fullCircle"] = true,
+			["stagger"] = 0,
 		},
 		["Trial of the Champion - Waking Nightmare"] = {
 			["iconSource"] = 0,
@@ -29921,9 +29932,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -30089,25 +30100,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136183,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Waking Nightmare",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Yy47vsNiE8t",
@@ -30119,7 +30130,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ruby"] = {
 			["iconSource"] = -1,
@@ -30268,8 +30279,8 @@ WeakAurasSaved = {
 			["authorMode"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "UvSV5jPJMlO",
-			["parent"] = "GEMS",
 			["url"] = "https://wago.io/U0WH3IJ3S/1",
+			["xOffset"] = 120,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -30362,7 +30373,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["xOffset"] = 120,
+			["parent"] = "GEMS",
 		},
 		["DEBUFFS - PET"] = {
 			["grow"] = "RIGHT",
@@ -30413,72 +30424,11 @@ WeakAurasSaved = {
 			["radius"] = 200,
 			["useLimit"] = false,
 			["align"] = "CENTER",
-			["anchorFrameFrame"] = "PetFrame",
+			["sort"] = "none",
 			["stagger"] = 0,
-			["gridType"] = "RD",
+			["selfPoint"] = "LEFT",
 			["version"] = 1,
 			["subRegions"] = {
-			},
-			["arcLength"] = 360,
-			["fullCircle"] = true,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["selfPoint"] = "LEFT",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["internalVersion"] = 69,
-			["animate"] = false,
-			["rotation"] = 0,
-			["scale"] = 0.6,
-			["centerType"] = "LR",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["config"] = {
-			},
-			["limit"] = 5,
-			["anchorFrameParent"] = true,
-			["constantFactor"] = "RADIUS",
-			["frameStrata"] = 1,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90001,
-			["id"] = "DEBUFFS - PET",
-			["borderInset"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SELECTFRAME",
-			["stepAngle"] = 15,
-			["uid"] = "e(V6yQRHRNJ",
-			["xOffset"] = 20,
-			["rowSpace"] = 1,
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
 			},
 			["animation"] = {
 				["start"] = {
@@ -30500,6 +30450,67 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["arcLength"] = 360,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fullCircle"] = true,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["internalVersion"] = 69,
+			["animate"] = false,
+			["rotation"] = 0,
+			["scale"] = 0.6,
+			["centerType"] = "LR",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["stepAngle"] = 15,
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["config"] = {
+			},
+			["regionType"] = "dynamicgroup",
+			["anchorFrameParent"] = true,
+			["constantFactor"] = "RADIUS",
+			["frameStrata"] = 1,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90001,
+			["id"] = "DEBUFFS - PET",
+			["borderInset"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SELECTFRAME",
+			["anchorFrameFrame"] = "PetFrame",
+			["uid"] = "e(V6yQRHRNJ",
+			["xOffset"] = 20,
+			["rowSpace"] = 1,
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["gridType"] = "RD",
 		},
 		["Utgarde Pinnacle - Screams of the Dead"] = {
 			["iconSource"] = 0,
@@ -30530,9 +30541,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -30696,25 +30707,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136184,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Screams of the Dead",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "GcuSLF9(lxe",
@@ -30726,7 +30737,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Numbing Shout"] = {
 			["iconSource"] = 0,
@@ -30757,9 +30768,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -30915,25 +30926,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132175,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Numbing Shout",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "Crtwoe6orG8",
@@ -30945,7 +30956,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Loss of Control Bottom"] = {
 			["wagoID"] = "JiQILDF99",
@@ -30973,13 +30984,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -31302,8 +31313,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["displayText_format_c_format"] = "none",
 			["preferToUpdate"] = false,
+			["selfPoint"] = "CENTER",
 			["automaticWidth"] = "Auto",
 			["shadowYOffset"] = -1,
 			["color"] = {
@@ -31334,7 +31345,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["displayText_format_c_format"] = "none",
 		},
 		["Ahn'kahet - Vanish"] = {
 			["iconSource"] = 0,
@@ -31365,9 +31376,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -31517,25 +31528,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132299,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Vanish",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "oFz9LZOl8ua",
@@ -31547,7 +31558,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Druid - CP3"] = {
 			["color"] = {
@@ -31783,9 +31794,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -31952,25 +31963,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 236300,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Mirrored Soul",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "XwfP1lrEH(W",
@@ -31982,7 +31993,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Utgarde Pinnacle - Whirlwind"] = {
 			["iconSource"] = 0,
@@ -32013,9 +32024,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -32179,25 +32190,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132369,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Whirlwind",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "2CJRJYS1Txu",
@@ -32209,7 +32220,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Brood Rage"] = {
 			["iconSource"] = 0,
@@ -32239,9 +32250,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -32381,25 +32392,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136159,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Brood Rage",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "LZKzLoTgskF",
@@ -32411,7 +32422,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Druid - Mana Bar "] = {
 			["sparkWidth"] = 10,
@@ -32827,8 +32838,8 @@ WeakAurasSaved = {
 						["duration"] = "6",
 						["genericShowOn"] = "showOnCooldown",
 						["subeventPrefix"] = "SPELL_BUILDING",
+						["custom_hide"] = "timed",
 						["debuffType"] = "HELPFUL",
-						["spellName"] = 0,
 						["use_unit"] = true,
 						["type"] = "unit",
 						["names"] = {
@@ -32846,7 +32857,7 @@ WeakAurasSaved = {
 						["check"] = "event",
 						["use_genericShowOn"] = true,
 						["use_track"] = true,
-						["custom_hide"] = "timed",
+						["spellName"] = 0,
 					},
 					["untrigger"] = {
 					},
@@ -32859,10 +32870,10 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["custom_hide"] = "timed",
 						["custom_type"] = "event",
-						["subeventPrefix"] = "SPELL_BUILDING",
+						["unit"] = "group",
 						["duration"] = "6",
 						["use_spellNames"] = true,
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL_BUILDING",
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["spellIds"] = {
@@ -32871,7 +32882,7 @@ WeakAurasSaved = {
 						["check"] = "event",
 						["names"] = {
 						},
-						["unit"] = "group",
+						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -32885,10 +32896,10 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["custom_hide"] = "timed",
 						["custom_type"] = "event",
-						["subeventPrefix"] = "SPELL_BUILDING",
+						["unit"] = "group",
 						["duration"] = "6",
 						["use_spellNames"] = true,
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL_BUILDING",
 						["subeventSuffix"] = "_CAST_START",
 						["event"] = "Cast",
 						["spellIds"] = {
@@ -32897,7 +32908,7 @@ WeakAurasSaved = {
 						["check"] = "event",
 						["names"] = {
 						},
-						["unit"] = "group",
+						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -32911,10 +32922,10 @@ WeakAurasSaved = {
 							"67826", -- [1]
 						},
 						["custom_type"] = "event",
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "party",
 						["duration"] = "6",
 						["event"] = "Combat Log",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["use_spellId"] = true,
 						["spellIds"] = {
@@ -32923,7 +32934,7 @@ WeakAurasSaved = {
 						["check"] = "event",
 						["names"] = {
 						},
-						["unit"] = "party",
+						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -32937,10 +32948,10 @@ WeakAurasSaved = {
 							"57426", -- [1]
 						},
 						["custom_type"] = "event",
-						["subeventPrefix"] = "SPELL",
+						["unit"] = "party",
 						["duration"] = "6",
 						["event"] = "Combat Log",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["use_spellId"] = true,
 						["spellIds"] = {
@@ -32949,7 +32960,7 @@ WeakAurasSaved = {
 						["check"] = "event",
 						["names"] = {
 						},
-						["unit"] = "party",
+						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -33337,9 +33348,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -33443,8 +33454,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = false,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -33458,7 +33469,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -33505,8 +33516,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -33520,7 +33531,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -33567,8 +33578,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -33582,7 +33593,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -33629,8 +33640,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -33644,7 +33655,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -33691,8 +33702,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -33706,7 +33717,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -33876,9 +33887,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -34035,25 +34046,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132107,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Ooze",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "xeSknscezRN",
@@ -34065,7 +34076,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Pit of Saron - Deep Freeze"] = {
 			["iconSource"] = 0,
@@ -34096,9 +34107,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -34256,25 +34267,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135855,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Deep Freeze",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "jWFEOACwiFY",
@@ -34286,7 +34297,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Leaving Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -34438,9 +34449,8 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["authorOptions"] = {
-			},
 			["preferToUpdate"] = false,
+			["automaticWidth"] = "Auto",
 			["color"] = {
 				0, -- [1]
 				1, -- [2]
@@ -34472,7 +34482,8 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["automaticWidth"] = "Auto",
+			["authorOptions"] = {
+			},
 		},
 		["Azjol'Nerub - Pound"] = {
 			["iconSource"] = 0,
@@ -34503,9 +34514,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -34708,25 +34719,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136025,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Pound",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "UJdN8mJ8rNv",
@@ -34764,7 +34775,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Av Timers"] = {
 			["sparkWidth"] = 10,
@@ -35000,13 +35011,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
+						["events"] = "AVT_LEAVE CHAT_MSG_SYSTEM CHAT_MSG_MONSTER_YELL CHAT_MSG_BG_SYSTEM_ALLIANCE CHAT_MSG_BG_SYSTEM_HORDE CHAT_MSG_BG_SYSTEM_NEUTRAL CHAT_MSG_ADDON COMBAT_LOG_EVENT_UNFILTERED:UNIT_DIED",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "AVT_LEAVE CHAT_MSG_SYSTEM CHAT_MSG_MONSTER_YELL CHAT_MSG_BG_SYSTEM_ALLIANCE CHAT_MSG_BG_SYSTEM_HORDE CHAT_MSG_BG_SYSTEM_NEUTRAL CHAT_MSG_ADDON COMBAT_LOG_EVENT_UNFILTERED:UNIT_DIED",
 						["spellIds"] = {
 						},
+						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -35227,11 +35238,11 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["use_aggro"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
 						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -35381,9 +35392,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -35549,25 +35560,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135818,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Lava Burn",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "orZmTfXRX0y",
@@ -35579,7 +35590,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Forge of Souls - Corrupted Soul Fragment"] = {
 			["iconSource"] = 0,
@@ -35610,9 +35621,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -35779,25 +35790,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237566,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Corrupted Soul Fragment",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "jHCH4CoUKKI",
@@ -35809,7 +35820,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Healthy Mushroom"] = {
 			["iconSource"] = 0,
@@ -35840,9 +35851,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -36014,25 +36025,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 134528,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Healthy Mushroom",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "gJlRULZ(uN4",
@@ -36044,7 +36055,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["PALADIN"] = {
 			["iconSource"] = -1,
@@ -36207,8 +36218,8 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["width"] = 65.000114440918,
-			["icon"] = true,
 			["xOffset"] = 0,
+			["parent"] = "MISSING BUFFS",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -36256,7 +36267,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["parent"] = "MISSING BUFFS",
+			["icon"] = true,
 		},
 		["Trial of the Champion - Death's Respite Glow"] = {
 			["iconSource"] = -1,
@@ -36492,9 +36503,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -36651,25 +36662,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136050,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Charge Up",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "FBL9E1mqxVm",
@@ -36681,7 +36692,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Second Wind"] = {
 			["sparkWidth"] = 10,
@@ -36692,35 +36703,18 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["desaturate"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -36762,14 +36756,33 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["useTooltip"] = false,
 			["keepAspectRatio"] = true,
-			["selfPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -36847,7 +36860,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 36,
-			["desaturate"] = false,
+			["sparkOffsetX"] = 0,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -36879,17 +36892,15 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["sparkOffsetX"] = 0,
+			["internalVersion"] = 69,
+			["selfPoint"] = "CENTER",
 			["uid"] = "mvVQbk(FsV5",
-			["useTooltip"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["width"] = 36,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
@@ -36954,13 +36965,13 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
+						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --     if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n        \n        return spellName == \"Slam\"\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent = select(2, ...)\n        local sourceGUID = select(4, ...)\n        local destGUID = select(8, ...)\n        local playerGUID = UnitGUID(\"player\")\n        local useOffHand = aura_env.UseOffHand()\n        \n        if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n            local missType = select(12, ...)\n            \n            if missType == \"PARRY\" then\n                aura_env.parryHaste = true\n                return true\n            else\n                return false\n            end\n        elseif sourceGUID ~= playerGUID then\n            return false\n        end\n        \n        if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n            local spellName = select(13, ...)\n            \n            if aura_env.MELEE_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = false\n                return true\n            elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = true\n                return true\n            else\n                return false\n            end\n        end\n        \n        local isOffHand = false\n        \n        if subEvent == \"SWING_DAMAGE\" then\n            isOffHand = select(21, ...)\n        elseif subEvent == \"SWING_MISSED\" then\n            isOffHand = select(13, ...)\n        end\n        \n        aura_env.rangedSwing = false\n        return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n    elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"PAUSING\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"INTERRUPTED\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"RESUMING\"\n        return true\n    end\nend",
+						["event"] = "Health",
 						["spellIds"] = {
 						},
-						["event"] = "Health",
-						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["customDuration"] = "function()\n  local now = GetTime()\n  local useOffHand = aura_env.UseOffHand()\n  \n  local function CalculateParryHaste(current, total)\n    return math.max(current - total * 0.4, math.min(current, total * 0.2))\n  end\n  \n  local swingSpeed\n  \n  if aura_env.rangedSwing then\n    swingSpeed = UnitRangedDamage(\"player\")\n  else\n    local mainSpeed, offSpeed = UnitAttackSpeed(\"player\")\n    \n    if useOffHand and offSpeed then\n      swingSpeed = offSpeed\n    else\n      swingSpeed = mainSpeed\n    end\n  end\n  \n  if aura_env.parryHaste then\n    local remainingDuration = aura_env.nextSwingTime - now\n    local remainingAfterHaste = CalculateParryHaste(remainingDuration, swingSpeed)\n    local hasteDuration = remainingDuration - remainingAfterHaste\n    \n    aura_env.parryHaste = false\n    return swingSpeed, aura_env.nextSwingTime - hasteDuration\n  elseif aura_env.pauseState == \"PAUSING\" then\n    local remainingDuration = math.max(aura_env.nextSwingTime - now, 0)\n    \n    aura_env.pauseTime = now\n    aura_env.pauseState = \"PAUSED\"\n    return remainingDuration, swingSpeed, true\n  elseif aura_env.pauseState == \"INTERRUPTED\" then\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, aura_env.nextSwingTime\n  elseif aura_env.pauseState == \"RESUMING\" then\n    local pauseDuration = now - aura_env.pauseTime\n    local newSwingTime = aura_env.nextSwingTime + pauseDuration\n    \n    aura_env.nextSwingTime = newSwingTime\n    aura_env.pauseState = \"RESUMED\"\n    return swingSpeed, newSwingTime\n  end\n  \n  local nextSwingTime = now + swingSpeed\n  \n  aura_env.nextSwingTime = nextSwingTime\n  return swingSpeed, nextSwingTime\nend",
 						["customName"] = "function()\n  local function GetSlotItemName(slotId)\n    local slotItemId = GetInventoryItemID(\"player\", slotId)\n    \n    if slotItemId then\n      return GetItemInfo(slotItemId)\n    end\n  end\n  \n  if aura_env.rangedSwing then\n    return GetSlotItemName(18)\n  elseif aura_env.UseOffHand() then\n    return GetSlotItemName(17)\n  else\n    return GetSlotItemName(16) or \"Unarmed\"\n  end\nend",
-						["custom"] = "function(event, ...)\n    local function IsSpellCastSlam(...)\n        local spellId = select(3, ...)\n        local spellName = GetSpellInfo(spellId)\n        \n        -- if select(2, UnitClass('player')) == \"WARRIOR\" then\n        --     if GetShapeshiftForm() == 3 then return false end\n        -- end\n        \n        if IsSpellKnown(23881) then return false end\n        \n        return spellName == \"Slam\"\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent = select(2, ...)\n        local sourceGUID = select(4, ...)\n        local destGUID = select(8, ...)\n        local playerGUID = UnitGUID(\"player\")\n        local useOffHand = aura_env.UseOffHand()\n        \n        if subEvent == \"SWING_MISSED\" and destGUID == playerGUID and not useOffHand and not aura_env.rangedSwing then\n            local missType = select(12, ...)\n            \n            if missType == \"PARRY\" then\n                aura_env.parryHaste = true\n                return true\n            else\n                return false\n            end\n        elseif sourceGUID ~= playerGUID then\n            return false\n        end\n        \n        if subEvent == \"SPELL_CAST_SUCCESS\" and not useOffHand then\n            local spellName = select(13, ...)\n            \n            if aura_env.MELEE_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = false\n                return true\n            elseif aura_env.RANGED_SWING_SPELLS[spellName] then\n                aura_env.rangedSwing = true\n                return true\n            else\n                return false\n            end\n        end\n        \n        local isOffHand = false\n        \n        if subEvent == \"SWING_DAMAGE\" then\n            isOffHand = select(21, ...)\n        elseif subEvent == \"SWING_MISSED\" then\n            isOffHand = select(13, ...)\n        end\n        \n        aura_env.rangedSwing = false\n        return (useOffHand and isOffHand) or (not useOffHand and not isOffHand)\n    elseif event == \"UNIT_SPELLCAST_START\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"PAUSING\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_STOP\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"INTERRUPTED\"\n        return true\n    elseif event == \"UNIT_SPELLCAST_SUCCEEDED\" and IsSpellCastSlam(...) then\n        aura_env.rangedSwing = false\n        aura_env.pauseState = \"RESUMING\"\n        return true\n    end\nend",
+						["events"] = "CLEU:SWING_DAMAGE,CLEU:SWING_MISSED,CLEU:SPELL_CAST_SUCCESS,UNIT_SPELLCAST_START:player,UNIT_SPELLCAST_STOP:player,UNIT_SPELLCAST_SUCCEEDED:player",
 						["customTexture"] = "",
 						["custom_type"] = "event",
 						["unit"] = "player",
@@ -37106,12 +37117,12 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text"] = "%t",
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "None",
+					["text_visible"] = false,
 					["text_wordWrap"] = "WordWrap",
-					["text_text_format_t_time_mod_rate"] = true,
+					["text_fontType"] = "None",
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_text_format_n_format"] = "none",
-					["text_visible"] = false,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_fontSize"] = 10,
 					["text_text_format_t_time_dynamic_threshold"] = 60,
 					["text_shadowXOffset"] = 0,
@@ -37594,9 +37605,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -37751,25 +37762,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132095,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Mojo",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "lOPed4pRkob",
@@ -37781,7 +37792,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Clearcasting"] = {
 			["sparkWidth"] = 10,
@@ -37796,7 +37807,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -37860,8 +37878,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -37869,18 +37886,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -37984,13 +37992,11 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
@@ -37998,7 +38004,12 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["uid"] = "8gslC0ziYq6",
 			["icon_side"] = "RIGHT",
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
@@ -38058,9 +38069,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -38273,25 +38284,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 254116,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Titanic Power",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "svuGsGfiGkG",
@@ -38331,7 +38342,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Stone - Lightning Ring"] = {
 			["iconSource"] = 0,
@@ -38362,9 +38373,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -38523,25 +38534,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136075,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Lightning Ring",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "MFGZEegLRfS",
@@ -38553,7 +38564,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Pit of Saron - Icy Blast"] = {
 			["iconSource"] = 0,
@@ -38584,9 +38595,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -38787,25 +38798,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135851,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Icy Blast",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "QKO)dNTBy8S",
@@ -38817,7 +38828,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["GEMS"] = {
 			["controlledChildren"] = {
@@ -38902,8 +38913,7 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "group",
 			["borderSize"] = 2,
-			["config"] = {
-			},
+			["uid"] = "Ow32WYEI1Ji",
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
@@ -38912,8 +38922,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["groupIcon"] = 134105,
+			["config"] = {
+			},
 			["borderInset"] = 1,
-			["uid"] = "Ow32WYEI1Ji",
 			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
 			["conditions"] = {
 			},
@@ -38961,10 +38972,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["event"] = "Health",
 						["unit"] = "player",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED, PLAYER_EQUIPMENT_CHANGED, BAG_UPDATE_COOLDOWN, PLAYER_LOGOUT, OPTIONS_CLOSE",
-						["custom"] = "function(allstates, event, ...)\n    return aura_env.OnTrigger(allstates, event, ...)\nend",
 						["spellIds"] = {
 						},
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED, PLAYER_EQUIPMENT_CHANGED, BAG_UPDATE_COOLDOWN, PLAYER_LOGOUT, OPTIONS_CLOSE",
+						["custom"] = "function(allstates, event, ...)\n    return aura_env.OnTrigger(allstates, event, ...)\nend",
 						["names"] = {
 						},
 						["check"] = "event",
@@ -39431,7 +39442,7 @@ WeakAurasSaved = {
 			["displayIcon"] = 134148,
 			["information"] = {
 				["forceEvents"] = true,
-				["saved"] = "JXYMKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEZG6SGdv3V4yUoi2fycm3I(lFH5KVvuvHQHqWx1OoRHdowZDHQgWClkKetjZKsTsUkkSulk3mZlrUCY3mlmrUkY38ZpNelPk14yEVbQ6NIxzQ2lrODWCtcIUa7WaBZb7W2Q0CFGBNb7WgFPAVeWd",
+				["saved"] = "JXYMKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEZGR)41l1c4yUoi2fycoxN8TIQkun4cg0RAuN1WbhR5UqudeUffsIPKzsPwjxffwQfLBM5Lixo5BMfMixf5B(5NtILuLACmV3av9tXRmv7Li0oyUjbrxGDyqS5wFMq5nd42zWG5ci",
 			},
 			["authorOptions"] = {
 				{
@@ -40012,9 +40023,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -40170,25 +40181,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132369,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Whirlwind",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "lGGg(sJk2tF",
@@ -40200,7 +40211,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Cleave"] = {
 			["sparkWidth"] = 10,
@@ -40216,13 +40227,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -40297,7 +40306,14 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["cooldownTextDisabled"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -40402,12 +40418,7 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132338,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
@@ -40464,7 +40475,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -40522,13 +40540,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -40695,12 +40711,7 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -40719,7 +40730,7 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["frameStrata"] = 1,
 			["sparkHidden"] = "NEVER",
@@ -40727,14 +40738,14 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 40,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["uid"] = "sjBDpdGEOJU",
 			["inverse"] = false,
 			["spark"] = false,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 		},
 		["Judgement of Wisdom"] = {
 			["sparkWidth"] = 10,
@@ -40750,14 +40761,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -40816,7 +40820,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -40978,11 +40987,13 @@ WeakAurasSaved = {
 			["parent"] = "Vermin Hunter",
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -40997,14 +41008,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["frameStrata"] = 1,
 			["id"] = "Judgement of Wisdom",
 			["uid"] = "q6yzOhDKLje",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -41020,7 +41031,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Drak'Tharon - Rain of Fire"] = {
 			["iconSource"] = 0,
@@ -41051,9 +41062,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -41206,25 +41217,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136186,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Rain of Fire",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "P7aUVzgOUMs",
@@ -41236,7 +41247,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Infected!"] = {
 			["iconSource"] = 0,
@@ -41267,9 +41278,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -41424,25 +41435,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136206,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Infected!",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "HVjC)Gl9Tqt",
@@ -41454,7 +41465,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Pit of Saron - Throw Saronite"] = {
 			["iconSource"] = 0,
@@ -41485,9 +41496,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -41644,25 +41655,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237437,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Throw Saronite",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "EdAPk2kF1Pk",
@@ -41674,7 +41685,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Maul"] = {
 			["sparkWidth"] = 10,
@@ -41927,14 +41938,13 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["id"] = "Power Bar Group",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["iconSource"] = -1,
 			["customText"] = "",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
+			["parent"] = "DRUID / ROGUE",
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -41986,7 +41996,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["enableGradient"] = false,
-			["parent"] = "DRUID / ROGUE",
+			["authorOptions"] = {
+			},
 			["selfPoint"] = "CENTER",
 			["information"] = {
 			},
@@ -42317,14 +42328,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -42382,7 +42386,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -42505,11 +42514,13 @@ WeakAurasSaved = {
 			["parent"] = "Vermin Warrior",
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
@@ -42609,35 +42620,6 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["uid"] = "BiUy4gY8pJ(",
-			["authorOptions"] = {
-			},
-			["load"] = {
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["internalVersion"] = 69,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["rotation"] = 0,
-			["animate"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -42658,6 +42640,34 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["load"] = {
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["arcLength"] = 360,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["internalVersion"] = 69,
+			["animate"] = true,
+			["rotation"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -42687,7 +42697,8 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["arcLength"] = 360,
+			["authorOptions"] = {
+			},
 		},
 		["Gundrak - Transformation"] = {
 			["iconSource"] = 0,
@@ -42718,9 +42729,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = " custom",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -42898,25 +42909,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132254,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Transformation",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "tg)2NLheXCU",
@@ -42928,7 +42939,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Power Word: Shield"] = {
 			["iconSource"] = -1,
@@ -43136,9 +43147,8 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0,
-			["authorOptions"] = {
-			},
 			["xOffset"] = 0,
+			["icon"] = true,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -43244,7 +43254,8 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["authorOptions"] = {
+			},
 		},
 		["Halls of Lightning - Lightning Nova"] = {
 			["iconSource"] = 0,
@@ -43275,9 +43286,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -43455,25 +43466,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136050,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Lightning Nova",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "JxJbo1PV5UP",
@@ -43485,18 +43496,17 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Shield of Thorns Chosen"] = {
 			["outline"] = "None",
 			["wagoID"] = "8n36Ga60R",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["shadowYOffset"] = -1,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["automaticWidth"] = "Auto",
 			["displayText_format_p_time_format"] = 0,
 			["displayText_format_1.destName_format"] = "Unit",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
@@ -43562,13 +43572,14 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
+			["displayText_format_p_time_mod_rate"] = true,
 			["displayText_format_p_time_legacy_floor"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["displayText_format_1.raidMark_format"] = "Unit",
-			["displayText_format_1.raidMark_abbreviate_max"] = 8,
+			["displayText_format_p_format"] = "timed",
+			["displayText_format_1.unitName_format"] = "none",
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
 			["fixedWidth"] = 200,
 			["font"] = "Arial Narrow",
 			["version"] = 10,
@@ -43606,24 +43617,38 @@ WeakAurasSaved = {
 				["encounterid"] = "",
 				["zoneIds"] = "132, 157, 158, 159, 160, 161, 153, 154, 138, 139, 185, 140, 184, 130, 131, 183, 129, 142, 143, 144, 145, 146, 168, 171, 133, 134, 135, 136, 137",
 			},
-			["customTextUpdate"] = "event",
+			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["config"] = {
 			},
 			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
-			["displayText_format_p_time_mod_rate"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["shadowXOffset"] = 1,
-			["displayText_format_1.unitName_format"] = "none",
-			["displayText_format_1.raidMark_abbreviate"] = true,
-			["xOffset"] = 0,
-			["regionType"] = "text",
+			["displayText_format_1.raidMark_format"] = "Unit",
+			["frameStrata"] = 1,
+			["color"] = {
+				1, -- [1]
+				0.83529418706894, -- [2]
+				0.47843140363693, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_1.destName_realm_name"] = "never",
 			["id"] = "Defense Protocol - Shield of Thorns Chosen",
-			["displayText"] = "%1.i %1.destName > %1.spellName",
+			["fontSize"] = 18,
 			["semver"] = "3.0.2",
-			["yOffset"] = 0,
+			["customTextUpdate"] = "event",
 			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
 			["displayText_format_p_time_precision"] = 1,
+			["yOffset"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 30403,
+			["displayText_format_1.destName_abbreviate"] = false,
+			["preferToUpdate"] = false,
+			["displayText_format_1.raidMark_abbreviate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOM",
+			["uid"] = "iK8FE7Jkgbr",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -43646,16 +43671,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["justify"] = "LEFT",
-			["tocversion"] = 30403,
-			["displayText_format_1.destName_abbreviate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.destName_realm_name"] = "never",
-			["uid"] = "iK8FE7Jkgbr",
 			["internalVersion"] = 69,
-			["fontSize"] = 18,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -43666,12 +43682,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.83529418706894, -- [2]
-				0.47843140363693, -- [3]
-				1, -- [4]
-			},
+			["displayText"] = "%1.i %1.destName > %1.spellName",
 		},
 		["Skills"] = {
 			["backdropColor"] = {
@@ -43688,7 +43699,7 @@ WeakAurasSaved = {
 				"Raptor Strike", -- [5]
 			},
 			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = 0,
+			["parent"] = "SwingTimer - Queue skills",
 			["border"] = false,
 			["yOffset"] = -70,
 			["anchorPoint"] = "CENTER",
@@ -43699,7 +43710,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "SwingTimer - Queue skills",
+			["scale"] = 0.7,
 			["information"] = {
 				["forceEvents"] = true,
 			},
@@ -43732,6 +43743,16 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["borderOffset"] = 4,
 			["regionType"] = "group",
+			["selfPoint"] = "CENTER",
+			["id"] = "Skills",
+			["authorOptions"] = {
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["internalVersion"] = 69,
+			["borderInset"] = 1,
+			["config"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -43752,15 +43773,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["id"] = "Skills",
-			["authorOptions"] = {
-			},
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 69,
-			["borderInset"] = 1,
-			["scale"] = 0.7,
-			["selfPoint"] = "CENTER",
 			["uid"] = "dBGlw5laZUE",
 			["conditions"] = {
 			},
@@ -43782,8 +43794,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["config"] = {
-			},
+			["xOffset"] = 0,
 		},
 		["Ahn'kahet - Thundershock"] = {
 			["iconSource"] = 0,
@@ -43814,9 +43825,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -43966,25 +43977,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136014,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Thundershock",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "STl)Zpf9AdO",
@@ -43996,7 +44007,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Pit of Saron - Explosive Barrage"] = {
 			["iconSource"] = 0,
@@ -44027,9 +44038,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -44189,25 +44200,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 236205,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Explosive Barrage",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "bUGf2EdDFXM",
@@ -44219,7 +44230,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["VictoryRush"] = {
 			["controlledChildren"] = {
@@ -44327,10 +44338,10 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "CENTER",
-			["borderInset"] = 1,
 			["uid"] = "0EznwWi8AYW",
 			["config"] = {
 			},
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -44870,15 +44881,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["useTooltip"] = true,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
 			["frameStrata"] = 1,
+			["width"] = 40,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 30401,
 			["id"] = "Loss of Control Icon Caster",
 			["url"] = "https://wago.io/NsoiZnZ34/14",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["config"] = {
@@ -44938,9 +44949,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -45095,25 +45106,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237513,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Blood of the Loa",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "eexiI)xvR)I",
@@ -45125,7 +45136,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Top Border Caster"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -45367,15 +45378,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 0,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0.58823529411765, -- [1]
 				0, -- [2]
 				0.003921568627451, -- [3]
 				1, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -45435,7 +45446,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 0,
 		},
 		["Gundrak - Impaling Charge"] = {
 			["iconSource"] = 0,
@@ -45466,9 +45477,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -45661,25 +45672,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 134298,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Impaling Charge",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "(OQrGyvWL3q",
@@ -45691,7 +45702,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Quake"] = {
 			["iconSource"] = 0,
@@ -45722,9 +45733,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -45881,25 +45892,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136025,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Quake",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "OMy5b1QyotI",
@@ -45911,7 +45922,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Divine Protection"] = {
 			["sparkWidth"] = 10,
@@ -46432,15 +46443,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 180,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -46499,7 +46510,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 180,
 		},
 		["Wotlk Dungeons - Spellsteal"] = {
 			["modelIsUnit"] = false,
@@ -46530,9 +46541,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -46550,7 +46561,6 @@ WeakAurasSaved = {
 				},
 				["encounterid"] = "",
 				["use_encounterid"] = false,
-				["use_class"] = true,
 				["use_zone"] = false,
 				["size"] = {
 					["multi"] = {
@@ -46565,6 +46575,7 @@ WeakAurasSaved = {
 				["class"] = {
 					["single"] = "MAGE",
 					["multi"] = {
+						["MAGE"] = true,
 						["PALADIN"] = true,
 						["PRIEST"] = true,
 					},
@@ -46854,11 +46865,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -46913,14 +46926,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -47043,7 +47049,12 @@ WeakAurasSaved = {
 			["uid"] = "3UsWDF4A(1l",
 			["cooldown"] = false,
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
@@ -47061,11 +47072,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["frameStrata"] = 1,
 			["id"] = "Tiger's Fury",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
@@ -47080,7 +47091,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Trial of the Champion - Marked for Death Glow"] = {
 			["iconSource"] = -1,
@@ -47684,15 +47695,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["useTooltip"] = true,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
 			["frameStrata"] = 1,
+			["width"] = 40,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 30401,
 			["id"] = "Loss of Control Icon",
 			["url"] = "https://wago.io/NsoiZnZ34/14",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
 			["config"] = {
@@ -47752,12 +47763,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -47831,13 +47837,11 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["authorOptions"] = {
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -47981,7 +47985,14 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desaturate"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
@@ -48028,7 +48039,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -48037,11 +48048,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -48087,7 +48100,8 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -48096,14 +48110,7 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["zoom"] = 0.3,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -48226,12 +48233,16 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["uid"] = "M0FDBXCgVgs",
 			["icon_side"] = "RIGHT",
 			["anchorFrameParent"] = false,
@@ -48504,9 +48515,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -48705,25 +48716,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136201,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Dark Matter",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "d3e80Hgm5yJ",
@@ -48735,18 +48746,17 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Confessor's Wrath Chosen"] = {
 			["outline"] = "None",
 			["wagoID"] = "8n36Ga60R",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["shadowYOffset"] = -1,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["automaticWidth"] = "Auto",
 			["displayText_format_p_time_format"] = 0,
 			["displayText_format_1.destName_format"] = "Unit",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
@@ -48813,13 +48823,14 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
+			["displayText_format_p_time_mod_rate"] = true,
 			["displayText_format_p_time_legacy_floor"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["displayText_format_1.raidMark_format"] = "Unit",
-			["displayText_format_1.raidMark_abbreviate_max"] = 8,
+			["displayText_format_p_format"] = "timed",
+			["displayText_format_1.unitName_format"] = "none",
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
 			["fixedWidth"] = 200,
 			["font"] = "Arial Narrow",
 			["version"] = 10,
@@ -48861,24 +48872,38 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "132, 157, 158, 159, 160, 161, 153, 154, 138, 139, 185, 140, 184, 130, 131, 183, 129, 142, 143, 144, 145, 146, 168, 171, 133, 134, 135, 136, 137",
 			},
-			["customTextUpdate"] = "event",
+			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["config"] = {
 			},
 			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
-			["displayText_format_p_time_mod_rate"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["shadowXOffset"] = 1,
-			["displayText_format_1.unitName_format"] = "none",
-			["displayText_format_1.raidMark_abbreviate"] = true,
-			["xOffset"] = 0,
-			["regionType"] = "text",
+			["displayText_format_1.raidMark_format"] = "Unit",
+			["frameStrata"] = 1,
+			["color"] = {
+				1, -- [1]
+				0.83529418706894, -- [2]
+				0.47843140363693, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_1.destName_realm_name"] = "never",
 			["id"] = "Defense Protocol - Confessor's Wrath Chosen",
-			["displayText"] = "%1.i %1.destName > %1.spellName",
+			["fontSize"] = 18,
 			["semver"] = "3.0.2",
-			["yOffset"] = 0,
+			["customTextUpdate"] = "event",
 			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
 			["displayText_format_p_time_precision"] = 1,
+			["yOffset"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 30403,
+			["displayText_format_1.destName_abbreviate"] = false,
+			["preferToUpdate"] = false,
+			["displayText_format_1.raidMark_abbreviate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOM",
+			["uid"] = "gv4uEHAlHvb",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -48901,16 +48926,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["justify"] = "LEFT",
-			["tocversion"] = 30403,
-			["displayText_format_1.destName_abbreviate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.destName_realm_name"] = "never",
-			["uid"] = "gv4uEHAlHvb",
 			["internalVersion"] = 69,
-			["fontSize"] = 18,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -48921,12 +48937,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.83529418706894, -- [2]
-				0.47843140363693, -- [3]
-				1, -- [4]
-			},
+			["displayText"] = "%1.i %1.destName > %1.spellName",
 		},
 		["Stratholme - Sleep"] = {
 			["iconSource"] = 0,
@@ -48957,9 +48968,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -49119,25 +49130,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136090,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Sleep",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "qXO14DuX)b3",
@@ -49149,7 +49160,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Nexus - Frightening Shout"] = {
 			["iconSource"] = 0,
@@ -49180,9 +49191,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -49345,25 +49356,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132154,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Frightening Shout",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "EhcGH4Si(Rl",
@@ -49375,7 +49386,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Deep Freeze Glow"] = {
 			["iconSource"] = -1,
@@ -49611,9 +49622,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -49778,25 +49789,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135736,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Planar Shift",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "hZxHmoCOMxG",
@@ -49808,7 +49819,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Whirling Slash Glow"] = {
 			["iconSource"] = -1,
@@ -50612,13 +50623,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "LOSS_OF_CONTROL_UPDATE",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -50842,11 +50853,11 @@ WeakAurasSaved = {
 						["type"] = "aura2",
 						["use_aggro"] = true,
 						["unevent"] = "timed",
-						["use_npcId"] = false,
 						["realSpellName"] = "Impale",
+						["use_threatUnit"] = true,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -50996,9 +51007,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -51018,8 +51029,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "aura2",
 						["useName"] = false,
+						["auraspellids"] = {
+							"424457", -- [1]
+						},
 						["subeventSuffix"] = "_AURA_APPLIED",
-						["useExactSpellId"] = true,
 						["auranames"] = {
 						},
 						["spellId"] = {
@@ -51031,9 +51044,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"424457", -- [1]
-						},
+						["useExactSpellId"] = true,
 						["use_message"] = true,
 						["use_destUnit"] = true,
 						["use_messageType"] = true,
@@ -51194,25 +51205,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = "135922",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Confessor's Wrath",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "jTRflJgaw1U",
@@ -51224,7 +51235,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Tems Wotlk Dungeon Pack - Glow"] = {
 			["controlledChildren"] = {
@@ -51327,6 +51338,16 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["groupIcon"] = "237547",
+			["config"] = {
+			},
+			["xOffset"] = 0,
+			["borderInset"] = 1,
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -51347,16 +51368,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["config"] = {
-			},
-			["groupIcon"] = "237547",
-			["borderInset"] = 1,
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["xOffset"] = 0,
 		},
 		["Misdirection"] = {
 			["iconSource"] = -1,
@@ -51702,9 +51713,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -51724,8 +51735,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
 						["useName"] = false,
+						["auraspellids"] = {
+							"424410", -- [1]
+						},
 						["subeventSuffix"] = "_AURA_APPLIED",
-						["useExactSpellId"] = true,
 						["auranames"] = {
 						},
 						["spellId"] = {
@@ -51737,9 +51750,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"424410", -- [1]
-						},
+						["useExactSpellId"] = true,
 						["use_message"] = true,
 						["use_destUnit"] = true,
 						["use_messageType"] = true,
@@ -51862,25 +51873,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = "132358",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Shattering Defenses",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "2rmsmxh1KWr",
@@ -51892,7 +51903,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Utgarde Pinnacle - Harpoon"] = {
 			["iconSource"] = 0,
@@ -51923,9 +51934,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -52089,25 +52100,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135129,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Harpoon",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "56Wd2hgB3Kh",
@@ -52119,7 +52130,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Violet Hold - Void Shift"] = {
 			["iconSource"] = 0,
@@ -52150,9 +52161,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -52318,25 +52329,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237566,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Void Shift",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "aRRnEUu1STu",
@@ -52348,7 +52359,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Shield Wall"] = {
 			["sparkWidth"] = 10,
@@ -52363,12 +52374,19 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["parent"] = "Vermin Warrior",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -52407,9 +52425,9 @@ WeakAurasSaved = {
 			["internalVersion"] = 69,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -52417,12 +52435,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -52548,35 +52561,34 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["sparkHeight"] = 30,
-			["uid"] = "HmB0mh3vIQc",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["zoom"] = 0.3,
-			["width"] = 36,
+			["uid"] = "HmB0mh3vIQc",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["icon_side"] = "RIGHT",
+			["width"] = 36,
 			["useCooldownModRate"] = true,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
-			["sparkHidden"] = "NEVER",
-			["cooldownTextDisabled"] = false,
+			["config"] = {
+			},
+			["zoom"] = 0.3,
 			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["sparkHidden"] = "NEVER",
 			["id"] = "Shield Wall",
 			["spark"] = false,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -52588,8 +52600,7 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["config"] = {
-			},
+			["xOffset"] = 0,
 		},
 		["Trial of the Champion - Reflective Shield"] = {
 			["iconSource"] = 0,
@@ -52620,9 +52631,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -52788,25 +52799,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135940,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Reflective Shield",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "MRdy6KG)srL",
@@ -52818,7 +52829,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Utgarde Keep - Woe Strike"] = {
 			["iconSource"] = 0,
@@ -52849,9 +52860,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -53017,25 +53028,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136130,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Woe Strike",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "fMl)Woa8MJZ",
@@ -53047,7 +53058,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Violet Hold - Shroud of Darkness"] = {
 			["iconSource"] = 0,
@@ -53078,9 +53089,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -53246,25 +53257,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136160,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Shroud of Darkness",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "gihFiKSQ)Ng",
@@ -53276,7 +53287,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Forge of Souls - Corrupt Soul"] = {
 			["iconSource"] = 0,
@@ -53307,9 +53318,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -53467,25 +53478,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136163,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Corrupt Soul",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "gGkuvvdqTYE",
@@ -53497,7 +53508,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Merge"] = {
 			["iconSource"] = 0,
@@ -53528,9 +53539,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -53685,25 +53696,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136007,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Merge",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "1aVKqje13ET",
@@ -53715,18 +53726,17 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Gamma Buffs Missing"] = {
 			["outline"] = "None",
 			["wagoID"] = "8n36Ga60R",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["shadowYOffset"] = -1,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["automaticWidth"] = "Auto",
 			["displayText_format_p_time_format"] = 0,
 			["displayText_format_1.destName_format"] = "Unit",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
@@ -53831,13 +53841,14 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return trigger[1] and (trigger[2] or trigger[3])\nend",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
+			["displayText_format_p_time_mod_rate"] = true,
 			["displayText_format_p_time_legacy_floor"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["displayText_format_1.raidMark_format"] = "Unit",
-			["displayText_format_1.raidMark_abbreviate_max"] = 8,
+			["displayText_format_p_format"] = "timed",
+			["displayText_format_1.unitName_format"] = "none",
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
 			["fixedWidth"] = 200,
 			["font"] = "Arial Narrow",
 			["version"] = 10,
@@ -53879,24 +53890,38 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "132, 157, 158, 159, 160, 161, 153, 154, 138, 139, 140, 130, 131, 129, 142, 143, 144, 145, 146, 168, 171, 133, 134, 135, 136, 137",
 			},
-			["customTextUpdate"] = "event",
+			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["config"] = {
 			},
 			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
-			["displayText_format_p_time_mod_rate"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["shadowXOffset"] = 1,
-			["displayText_format_1.unitName_format"] = "none",
-			["displayText_format_1.raidMark_abbreviate"] = true,
-			["xOffset"] = 0,
-			["regionType"] = "text",
+			["displayText_format_1.raidMark_format"] = "Unit",
+			["frameStrata"] = 1,
+			["color"] = {
+				1, -- [1]
+				0.83529418706894, -- [2]
+				0.47843140363693, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_1.destName_realm_name"] = "never",
 			["id"] = "Defense Protocol - Gamma Buffs Missing",
-			["displayText"] = "** %2.i Buff missing! **",
+			["fontSize"] = 18,
 			["semver"] = "3.0.2",
-			["yOffset"] = 0,
+			["customTextUpdate"] = "event",
 			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
 			["displayText_format_p_time_precision"] = 1,
+			["yOffset"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 30403,
+			["displayText_format_1.destName_abbreviate"] = false,
+			["preferToUpdate"] = false,
+			["displayText_format_1.raidMark_abbreviate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOM",
+			["uid"] = "gQ0vqNmS4vR",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -53920,16 +53945,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["justify"] = "LEFT",
-			["tocversion"] = 30403,
-			["displayText_format_1.destName_abbreviate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.destName_realm_name"] = "never",
-			["uid"] = "gQ0vqNmS4vR",
 			["internalVersion"] = 69,
-			["fontSize"] = 18,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -53940,12 +53956,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.83529418706894, -- [2]
-				0.47843140363693, -- [3]
-				1, -- [4]
-			},
+			["displayText"] = "** %2.i Buff missing! **",
 		},
 		["Wotlk Dungeons - Purge"] = {
 			["modelIsUnit"] = false,
@@ -53976,9 +53987,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -54084,8 +54095,8 @@ WeakAurasSaved = {
 						},
 						["showClones"] = true,
 						["unit"] = "nameplate",
-						["use_npcId"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["sourceName"] = "Crypt Guard",
 						["use_cloneId"] = false,
@@ -54099,7 +54110,7 @@ WeakAurasSaved = {
 						["use_sourceName"] = false,
 						["threatUnit"] = "target",
 						["namerealm"] = "Crypt Guard",
-						["use_threatUnit"] = true,
+						["use_npcId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -54293,7 +54304,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -54351,11 +54367,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -54484,14 +54502,7 @@ WeakAurasSaved = {
 			},
 			["cooldown"] = false,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["displayIcon"] = "",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
@@ -54504,11 +54515,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["frameStrata"] = 1,
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
@@ -54523,7 +54534,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 		},
 		["Agate"] = {
 			["iconSource"] = -1,
@@ -54671,8 +54682,19 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "(9qU7Rw3V8a",
-			["parent"] = "GEMS",
 			["cooldownEdge"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
@@ -54754,18 +54776,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
-					["do_sound"] = false,
-				},
-			},
+			["parent"] = "GEMS",
 		},
 		["targetdebuffs  2"] = {
 			["iconSource"] = -1,
@@ -55062,9 +55073,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -55230,25 +55241,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135841,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Frost Tomb",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "JR2oAdSfEtz",
@@ -55260,7 +55271,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Prince Taldaram"] = {
 			["iconSource"] = 0,
@@ -55290,9 +55301,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -55438,25 +55449,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132236,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Prince Taldaram",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "UkFrTilIEZ8",
@@ -55468,7 +55479,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Saronite Ore"] = {
 			["iconSource"] = -1,
@@ -55844,79 +55855,7 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["selfPoint"] = "LEFT",
 			["align"] = "CENTER",
-			["regionType"] = "dynamicgroup",
-			["parent"] = "Tems Wotlk Dungeon Pack",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["stagger"] = 0,
-			["arcLength"] = 360,
-			["version"] = 10,
-			["subRegions"] = {
-			},
-			["gridType"] = "RD",
-			["radius"] = 200,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["space"] = 5,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["uid"] = "vlHWJBUremb",
-			["animate"] = true,
-			["source"] = "import",
-			["scale"] = 1.2,
-			["centerType"] = "LR",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["stepAngle"] = 15,
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["config"] = {
-			},
-			["gridWidth"] = 5,
-			["constantFactor"] = "RADIUS",
-			["rotation"] = 0,
-			["borderOffset"] = 4,
-			["semver"] = "3.0.2",
-			["tocversion"] = 30403,
-			["id"] = "Tems Wotlk Dungeon Pack - Dynamic",
+			["xOffset"] = 208.3333333333334,
 			["sortHybridTable"] = {
 				["Ahn'kahet - Thundershock"] = false,
 				["Gundrak - Merge"] = false,
@@ -55956,9 +55895,9 @@ WeakAurasSaved = {
 				["Ahn'kahet - Brood Rage"] = false,
 				["Halls of Reflection - Well of Corruption"] = false,
 				["Halls of Lightning - Static Overload"] = false,
-				["Utgarde Keep - Woe Strike"] = false,
+				["Violet Hold - Earth Shield"] = false,
 				["Gundrak - Grip of Slad'ran"] = false,
-				["Violet Hold - Void Shift"] = false,
+				["Utgarde Keep - Woe Strike"] = false,
 				["Halls of Stone - Ooze"] = false,
 				["Pit of Saron - Deep Freeze"] = false,
 				["Halls of Stone - Lightning Shield"] = false,
@@ -55979,7 +55918,7 @@ WeakAurasSaved = {
 				["Defense Protocol - Icy Path"] = false,
 				["Pit of Saron - Pursuit"] = false,
 				["Gundrak - Emerge"] = false,
-				["Gamma - Rallying Cry"] = false,
+				["Ahn'kahet - Embrace of the Vampyr"] = false,
 				["The Oculus - Leeching Poison"] = false,
 				["Ahn'kahet - Healthy Mushroom"] = false,
 				["Forge of Souls - Soulstorm"] = false,
@@ -55991,7 +55930,7 @@ WeakAurasSaved = {
 				["The Oculus - Enraged Assault"] = false,
 				["Halls of Lightning - Charge Up"] = false,
 				["Drak'Tharon - Grievous Bite"] = false,
-				["Ahn'kahet - Embrace of the Vampyr"] = false,
+				["Defense Protocol - Titanic Power"] = false,
 				["The Oculus - Stop Time"] = false,
 				["Utgarde Pinnacle - Ritual of the Sword"] = false,
 				["The Oculus - Thundering Stomp"] = false,
@@ -56000,7 +55939,7 @@ WeakAurasSaved = {
 				["Gundrak - Mojo"] = false,
 				["Drak'Tharon - Mangling Slash"] = false,
 				["Gamma - Shattering Defenses"] = false,
-				["Defense Protocol - Titanic Power"] = false,
+				["Gamma - Rallying Cry"] = false,
 				["Halls of Stone - Lightning Ring"] = false,
 				["Trial of the Champion - Radiance"] = false,
 				["The Nexus - Whirlwind"] = false,
@@ -56034,7 +55973,7 @@ WeakAurasSaved = {
 				["Gundrak - Mojo Frenzy"] = false,
 				["Pit of Saron - Explosive Barrage"] = false,
 				["The Nexus - Frightening Shout"] = false,
-				["Violet Hold - Earth Shield"] = false,
+				["Violet Hold - Void Shift"] = false,
 				["Gamma - Confessor's Wrath"] = false,
 				["Halls of Lightning - Ball Lightning"] = false,
 				["Gundrak - Transformation"] = false,
@@ -56045,19 +55984,91 @@ WeakAurasSaved = {
 				["Defense Protocol - Blood of the Loa"] = false,
 				["Ahn'kahet - Insanity"] = false,
 			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["stagger"] = 0,
+			["radius"] = 200,
+			["version"] = 10,
+			["subRegions"] = {
+			},
+			["useLimit"] = false,
+			["yOffset"] = 0,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["parent"] = "Tems Wotlk Dungeon Pack",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["borderInset"] = 1,
+			["animate"] = true,
+			["config"] = {
+			},
+			["scale"] = 1.2,
+			["centerType"] = "LR",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["stepAngle"] = 15,
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["regionType"] = "dynamicgroup",
+			["gridWidth"] = 5,
+			["constantFactor"] = "RADIUS",
+			["rotation"] = 0,
+			["borderOffset"] = 4,
+			["semver"] = "3.0.2",
+			["tocversion"] = 30403,
+			["id"] = "Tems Wotlk Dungeon Pack - Dynamic",
+			["source"] = "import",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["yOffset"] = 0,
-			["borderInset"] = 1,
-			["useLimit"] = false,
-			["xOffset"] = 208.3333333333334,
+			["arcLength"] = 360,
+			["uid"] = "vlHWJBUremb",
+			["gridType"] = "RD",
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["fullCircle"] = true,
+			["space"] = 5,
 		},
 		["The Oculus - Frostbomb"] = {
 			["iconSource"] = 0,
@@ -56088,9 +56099,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -56255,25 +56266,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135851,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Frostbomb",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "ZyKOD1KIMDk",
@@ -56285,7 +56296,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Anti-Magic Shell"] = {
 			["sparkWidth"] = 10,
@@ -56294,7 +56305,12 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["parent"] = "Vermin Death Knight",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -56346,13 +56362,8 @@ WeakAurasSaved = {
 			["useTooltip"] = true,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["xOffset"] = 0,
+			["parent"] = "Vermin Death Knight",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -56512,11 +56523,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["alpha"] = 1,
 			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
@@ -56527,7 +56538,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -56566,9 +56577,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -56765,25 +56776,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 236271,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Poison Nova",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "TIehm9vHlQG",
@@ -56795,7 +56806,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Stone - Shock of Sorrow"] = {
 			["iconSource"] = 0,
@@ -56826,9 +56837,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -57021,25 +57032,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135767,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Shock of Sorrow",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "RqQlmt(VuC3",
@@ -57051,7 +57062,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Forge of Souls - Well of Souls"] = {
 			["iconSource"] = 0,
@@ -57082,9 +57093,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -57249,25 +57260,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136214,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Well of Souls",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "8qv)zGSFnME",
@@ -57279,7 +57290,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["AV Timers"] = {
 			["grow"] = "DOWN",
@@ -57345,16 +57356,23 @@ WeakAurasSaved = {
 				},
 			},
 			["align"] = "CENTER",
-			["animate"] = true,
-			["gridType"] = "RD",
+			["regionType"] = "dynamicgroup",
 			["arcLength"] = 360,
+			["useLimit"] = false,
 			["rotation"] = 0,
-			["radius"] = 200,
+			["gridType"] = "RD",
 			["version"] = 14,
 			["subRegions"] = {
 			},
-			["useLimit"] = false,
-			["stagger"] = 0,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["sortHybridTable"] = {
+				["Av Timers"] = false,
+			},
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -57375,26 +57393,24 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "TOP",
+			["stagger"] = 0,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["borderInset"] = 1,
+			["uid"] = "8E8nv4OfjBN",
 			["source"] = "import",
-			["sortHybridTable"] = {
-				["Av Timers"] = false,
-			},
+			["selfPoint"] = "TOP",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
+			["stepAngle"] = 15,
 			["borderSize"] = 2,
-			["limit"] = 5,
 			["sort"] = "ascending",
+			["animate"] = true,
 			["frameStrata"] = 1,
 			["anchorFrameParent"] = true,
 			["constantFactor"] = "RADIUS",
@@ -57403,37 +57419,31 @@ WeakAurasSaved = {
 			["semver"] = "1.0.13",
 			["tocversion"] = 20503,
 			["id"] = "AV Timers",
-			["stepAngle"] = 15,
+			["limit"] = 5,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SELECTFRAME",
-			["uid"] = "8E8nv4OfjBN",
 			["config"] = {
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["borderInset"] = 1,
 			["xOffset"] = -130,
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rowSpace"] = 1,
+			["radius"] = 200,
 		},
 		["Defense Protocol - Rallying Cry Chosen"] = {
 			["outline"] = "None",
 			["wagoID"] = "8n36Ga60R",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["shadowYOffset"] = -1,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["automaticWidth"] = "Auto",
 			["displayText_format_p_time_format"] = 0,
 			["displayText_format_1.destName_format"] = "Unit",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
@@ -57499,13 +57509,14 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
+			["displayText_format_p_time_mod_rate"] = true,
 			["displayText_format_p_time_legacy_floor"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["displayText_format_1.raidMark_format"] = "Unit",
-			["displayText_format_1.raidMark_abbreviate_max"] = 8,
+			["displayText_format_p_format"] = "timed",
+			["displayText_format_1.unitName_format"] = "none",
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
 			["fixedWidth"] = 200,
 			["font"] = "Arial Narrow",
 			["version"] = 10,
@@ -57543,24 +57554,38 @@ WeakAurasSaved = {
 				["encounterid"] = "",
 				["zoneIds"] = "132, 157, 158, 159, 160, 161, 153, 154, 138, 139, 185, 140, 184, 130, 131, 183, 129, 142, 143, 144, 145, 146, 168, 171, 133, 134, 135, 136, 137",
 			},
-			["customTextUpdate"] = "event",
+			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["config"] = {
 			},
 			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
-			["displayText_format_p_time_mod_rate"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["shadowXOffset"] = 1,
-			["displayText_format_1.unitName_format"] = "none",
-			["displayText_format_1.raidMark_abbreviate"] = true,
-			["xOffset"] = 0,
-			["regionType"] = "text",
+			["displayText_format_1.raidMark_format"] = "Unit",
+			["frameStrata"] = 1,
+			["color"] = {
+				1, -- [1]
+				0.83529418706894, -- [2]
+				0.47843140363693, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_1.destName_realm_name"] = "never",
 			["id"] = "Defense Protocol - Rallying Cry Chosen",
-			["displayText"] = "%1.i %1.destName > %1.spellName",
+			["fontSize"] = 18,
 			["semver"] = "3.0.2",
-			["yOffset"] = 0,
+			["customTextUpdate"] = "event",
 			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
 			["displayText_format_p_time_precision"] = 1,
+			["yOffset"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 30403,
+			["displayText_format_1.destName_abbreviate"] = false,
+			["preferToUpdate"] = false,
+			["displayText_format_1.raidMark_abbreviate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOM",
+			["uid"] = "NeFR9Xiob29",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -57583,16 +57608,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["justify"] = "LEFT",
-			["tocversion"] = 30403,
-			["displayText_format_1.destName_abbreviate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.destName_realm_name"] = "never",
-			["uid"] = "NeFR9Xiob29",
 			["internalVersion"] = 69,
-			["fontSize"] = 18,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -57603,12 +57619,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.83529418706894, -- [2]
-				0.47843140363693, -- [3]
-				1, -- [4]
-			},
+			["displayText"] = "%1.i %1.destName > %1.spellName",
 		},
 		["Fel Iron Ore"] = {
 			["iconSource"] = -1,
@@ -57822,7 +57833,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -57959,13 +57977,11 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -58074,12 +58090,7 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["cooldown"] = false,
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -58245,7 +58256,6 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Jade",
 				},
 			},
-			["parent"] = "GEMS",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -58265,6 +58275,12 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -58354,12 +58370,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "GEMS",
 		},
 		["Halls of Lightning - Renew Steel"] = {
 			["iconSource"] = 0,
@@ -58390,9 +58401,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -58587,25 +58598,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132281,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Renew Steel",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "h6kb9gf6uSa",
@@ -58617,7 +58628,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Lightning - Arc Weld"] = {
 			["iconSource"] = 0,
@@ -58648,9 +58659,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -58806,25 +58817,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237587,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Arc Weld",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "zU70ritA0MA",
@@ -58836,7 +58847,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Stratholme - Constricting Chains Glow"] = {
 			["iconSource"] = -1,
@@ -59073,9 +59084,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -59240,25 +59251,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135753,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Energize Cores",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "tyPwS(rOZlr",
@@ -59270,7 +59281,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Warrior - Battle Stance"] = {
 			["outline"] = "OUTLINE",
@@ -59530,11 +59541,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -59608,14 +59621,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -59727,7 +59733,12 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -59747,11 +59758,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["alpha"] = 1,
 			["sparkHidden"] = "NEVER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
@@ -59761,7 +59772,7 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 		},
 		["Drak'Tharon - Army of the Dead"] = {
 			["iconSource"] = 0,
@@ -59792,9 +59803,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -59986,25 +59997,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136130,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Army of the Dead",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "yfqB)343XYa",
@@ -60016,7 +60027,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Threat Differential on Nameplates"] = {
 			["xOffset"] = 30,
@@ -60433,6 +60444,16 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["groupIcon"] = "135885",
+			["config"] = {
+			},
+			["xOffset"] = 0,
+			["borderInset"] = 1,
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -60453,16 +60474,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["config"] = {
-			},
-			["groupIcon"] = "135885",
-			["borderInset"] = 1,
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["xOffset"] = 0,
 		},
 		["Utgarde Pinnacle - Ritual of the Sword"] = {
 			["iconSource"] = 0,
@@ -60493,9 +60504,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -60661,25 +60672,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135285,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Ritual of the Sword",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "kUmgsX(qNnu",
@@ -60691,7 +60702,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Oculus - Thundering Stomp"] = {
 			["iconSource"] = 0,
@@ -60722,9 +60733,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -60889,25 +60900,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132368,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Thundering Stomp",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "6YenPcbChnG",
@@ -60919,7 +60930,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Trial of the Champion - Hammer of Justice"] = {
 			["iconSource"] = 0,
@@ -60950,9 +60961,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -61118,25 +61129,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135963,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Hammer of Justice",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "2fkmRyc0xiH",
@@ -61148,7 +61159,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Background Texture"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -61388,15 +61399,15 @@ WeakAurasSaved = {
 				},
 			},
 			["width"] = 200,
-			["discrete_rotation"] = 180,
-			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
-			["source"] = "import",
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
 			},
+			["textureWrapMode"] = "CLAMPTOBLACKADDITIVE",
+			["source"] = "import",
+			["cooldownEdge"] = false,
 			["cooldown"] = true,
 			["displayIcon"] = 136071,
 			["mirror"] = false,
@@ -61455,7 +61466,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
+			["discrete_rotation"] = 180,
 		},
 		["@ Avoidance / Defense Cap (Wrath of the Lich King)"] = {
 			["iconSource"] = -1,
@@ -61652,9 +61663,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -61674,8 +61685,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "aura2",
 						["useName"] = false,
+						["auraspellids"] = {
+							"424411", -- [1]
+						},
 						["subeventSuffix"] = "_AURA_APPLIED",
-						["useExactSpellId"] = true,
 						["auranames"] = {
 						},
 						["spellId"] = {
@@ -61687,9 +61700,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"424411", -- [1]
-						},
+						["useExactSpellId"] = true,
 						["use_message"] = true,
 						["use_destUnit"] = true,
 						["use_messageType"] = true,
@@ -61812,25 +61823,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = "236689",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Rallying Cry",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "mN(6rOemXKO",
@@ -61842,7 +61853,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Druid - CP4"] = {
 			["color"] = {
@@ -62081,9 +62092,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -62233,25 +62244,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136129,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Embrace of the Vampyr",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "983v5F0rmQR",
@@ -62263,7 +62274,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["SwingTimer - Queue skills"] = {
 			["controlledChildren"] = {
@@ -62389,14 +62400,14 @@ WeakAurasSaved = {
 			["borderOffset"] = 4,
 			["semver"] = "1.0.0",
 			["id"] = "SwingTimer - Queue skills",
-			["borderInset"] = 1,
+			["uid"] = "uuP(LO3pyoN",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "BOTTOMLEFT",
+			["borderInset"] = 1,
+			["xOffset"] = 0,
 			["config"] = {
 			},
-			["xOffset"] = 0,
-			["uid"] = "uuP(LO3pyoN",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -62435,9 +62446,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -62596,25 +62607,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136050,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Static Charge",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = ")E3aW6MWvt1",
@@ -62626,7 +62637,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Nexus - Whirlwind"] = {
 			["iconSource"] = 0,
@@ -62657,9 +62668,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -62822,25 +62833,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132369,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Whirlwind",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "BPi6Njsx(0a",
@@ -62852,7 +62863,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Nexus - Intense Cold"] = {
 			["iconSource"] = 0,
@@ -62883,9 +62894,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -63109,25 +63120,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135856,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Intense Cold",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "O5fU8vFY(0N",
@@ -63157,7 +63168,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["The Oculus - Arcane Explosion"] = {
 			["iconSource"] = 0,
@@ -63188,9 +63199,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -63401,25 +63412,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136116,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Arcane Explosion",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "EYOHQ)GnhHg",
@@ -63431,7 +63442,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Spirit Tap"] = {
 			["iconSource"] = -1,
@@ -63627,7 +63638,6 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = true,
-			["url"] = "https://wago.io/E9AeMcIo0/1",
 			["actions"] = {
 				["start"] = {
 				},
@@ -63636,6 +63646,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["xOffset"] = 0,
 			["cooldown"] = false,
 			["regionType"] = "icon",
 			["conditions"] = {
@@ -63747,7 +63758,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["url"] = "https://wago.io/E9AeMcIo0/1",
 		},
 		["Wotlk Dungeons - Magic"] = {
 			["iconSource"] = -1,
@@ -63854,11 +63865,11 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["unevent"] = "timed",
-						["realSpellName"] = "Impale",
 						["use_threatUnit"] = true,
+						["use_npcId"] = false,
 						["threatUnit"] = "target",
 						["amount_operator"] = ">",
-						["use_npcId"] = false,
+						["realSpellName"] = "Impale",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -64008,9 +64019,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -64224,25 +64235,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132301,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Eck Spring",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "dOM)WWqCm5h",
@@ -64254,7 +64265,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Aspect of the Viper"] = {
 			["sparkWidth"] = 10,
@@ -64270,7 +64281,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -64324,11 +64340,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
@@ -64499,14 +64517,7 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
@@ -64525,7 +64536,7 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["spark"] = false,
 			["frameStrata"] = 1,
 			["id"] = "Aspect of the Viper",
@@ -64533,14 +64544,14 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["uid"] = "JX2NZu1XLej",
 			["inverse"] = false,
 			["auto"] = false,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 		},
 		["Wotlk Dungeons - Whirlwind"] = {
 			["modelIsUnit"] = false,
@@ -64571,9 +64582,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -64678,8 +64689,8 @@ WeakAurasSaved = {
 						["showClones"] = true,
 						["spellName"] = "Summon Corpse Scarabs",
 						["unit"] = "nameplate",
-						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_npcId"] = true,
+						["use_threatUnit"] = true,
 						["use_status"] = false,
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
@@ -64693,7 +64704,7 @@ WeakAurasSaved = {
 						},
 						["threatUnit"] = "target",
 						["use_sourceName"] = false,
-						["use_threatUnit"] = true,
+						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
@@ -64865,9 +64876,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -65030,25 +65041,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136211,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Wailing Souls",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "q5wLkwOEZWs",
@@ -65060,7 +65071,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Victorious' FollowMe"] = {
 			["outline"] = "OUTLINE",
@@ -65088,14 +65099,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
+						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
 						["spellIds"] = {
 						},
-						["events"] = "CHAT_MSG_PARTY, CHAT_MSG_RAID, CHAT_MSG_PARTY_LEADER, CHAT_MSG_RAID_LEADER",
 						["custom_type"] = "event",
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
+						["events"] = "CHAT_MSG_PARTY, CHAT_MSG_RAID, CHAT_MSG_PARTY_LEADER, CHAT_MSG_RAID_LEADER",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -65151,13 +65162,18 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["source"] = "import",
 			["shadowXOffset"] = 1,
-			["selfPoint"] = "BOTTOM",
-			["regionType"] = "text",
 			["displayText_format_p_time_legacy_floor"] = true,
-			["displayText_format_p_time_mod_rate"] = true,
+			["regionType"] = "text",
+			["preferToUpdate"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
-			["preferToUpdate"] = false,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_p_time_precision"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -65231,12 +65247,7 @@ WeakAurasSaved = {
 					["useLength"] = false,
 				}, -- [3]
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["automaticWidth"] = "Auto",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -65248,7 +65259,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["automaticWidth"] = "Auto",
+			["displayText_format_p_time_mod_rate"] = true,
 		},
 		["The Oculus - Enraged Assault"] = {
 			["iconSource"] = 0,
@@ -65279,9 +65290,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -65446,25 +65457,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136146,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Enraged Assault",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "vhm6wn99yX4",
@@ -65476,7 +65487,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Forge of Souls - Soulstorm"] = {
 			["iconSource"] = 0,
@@ -65507,9 +65518,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -65667,25 +65678,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136010,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Soulstorm",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "IFUtIDt4Znw",
@@ -65697,7 +65708,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Drak'Tharon - Grievous Bite"] = {
 			["iconSource"] = 0,
@@ -65728,9 +65739,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -65883,25 +65894,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132090,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Grievous Bite",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "6RkPrfnOWPY",
@@ -65913,7 +65924,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Gundrak - Mojo Frenzy"] = {
 			["iconSource"] = 0,
@@ -65944,9 +65955,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -66239,25 +66250,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132255,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Mojo Frenzy",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "AwOCBnShVee",
@@ -66269,7 +66280,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Vermin Warrior"] = {
 			["grow"] = "LEFT",
@@ -66457,7 +66468,7 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["config"] = {
 			},
-			["radius"] = 200,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -66483,8 +66494,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["authorOptions"] = {
-			},
+			["grow"] = "LEFT",
 			["animate"] = true,
 			["animation"] = {
 				["start"] = {
@@ -66509,11 +66519,11 @@ WeakAurasSaved = {
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["grow"] = "LEFT",
+			["rotation"] = 0,
 			["useLimit"] = false,
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
@@ -66526,18 +66536,19 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["gridType"] = "RD",
 			["uid"] = "uIfZeMoFAaJ",
-			["borderEdge"] = "Square Full White",
-			["rotation"] = 0,
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
+			["radius"] = 200,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["authorOptions"] = {
 			},
 		},
 		["Pit of Saron - Unholy Power"] = {
@@ -66569,9 +66580,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -66731,25 +66742,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136204,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Unholy Power",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "ZxhIZ3X(eos",
@@ -66761,7 +66772,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Lifebloom"] = {
 			["sparkWidth"] = 10,
@@ -66778,14 +66789,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -66843,7 +66847,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["internalVersion"] = 69,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -67013,11 +67022,13 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["conditions"] = {
 			},
@@ -67033,11 +67044,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["alpha"] = 1,
 			["id"] = "Lifebloom",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
@@ -67047,7 +67058,7 @@ WeakAurasSaved = {
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 		},
 		["Pit of Saron - Overlord's Brand"] = {
 			["iconSource"] = 0,
@@ -67078,9 +67089,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -67240,25 +67251,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237567,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Overlord's Brand",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "FVPDBlgw8sX",
@@ -67270,7 +67281,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Flamestrike"] = {
 			["iconSource"] = 0,
@@ -67301,9 +67312,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -67453,25 +67464,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135826,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Flamestrike",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "qBPO3ly1Y6s",
@@ -67483,7 +67494,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Ahn'kahet - Mini"] = {
 			["iconSource"] = 0,
@@ -67514,9 +67525,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -67668,25 +67679,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136121,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Mini",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "1tJbY0ZiN0v",
@@ -67698,7 +67709,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Stone - Shatter"] = {
 			["iconSource"] = 0,
@@ -67729,9 +67740,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -67751,8 +67762,10 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["type"] = "aura2",
 						["useName"] = false,
+						["auraspellids"] = {
+							"50833", -- [1]
+						},
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["useExactSpellId"] = true,
 						["auranames"] = {
 							"50833", -- [1]
 						},
@@ -67765,9 +67778,7 @@ WeakAurasSaved = {
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
-						["auraspellids"] = {
-							"50833", -- [1]
-						},
+						["useExactSpellId"] = true,
 						["use_message"] = true,
 						["use_destUnit"] = false,
 						["use_messageType"] = true,
@@ -67928,25 +67939,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132091,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Shatter",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "S9UV4lPuiii",
@@ -67958,7 +67969,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Silver Ore"] = {
 			["iconSource"] = -1,
@@ -68187,9 +68198,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -68345,25 +68356,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136184,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Defiling Horror",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "L54U(1Ox8Hj",
@@ -68375,7 +68386,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Utgarde Pinnacle - Acid Spit"] = {
 			["iconSource"] = 0,
@@ -68406,9 +68417,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -68620,25 +68631,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136007,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Acid Spit",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "4v(YeGDNiVI",
@@ -68650,7 +68661,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Dark Iron Ore"] = {
 			["iconSource"] = -1,
@@ -68879,9 +68890,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -69037,25 +69048,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136050,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Static Overload",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "IS7NulvSmGa",
@@ -69067,7 +69078,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Stone - Lightning Shield"] = {
 			["iconSource"] = 0,
@@ -69098,9 +69109,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -69259,25 +69270,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136051,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Lightning Shield",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "WjgkZf1kVJx",
@@ -69289,7 +69300,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "RIGHT",
@@ -69511,7 +69522,7 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["config"] = {
 			},
-			["xOffset"] = -135,
+			["anchorFrameFrame"] = "AceGUI30DropDown4Button",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -69537,17 +69548,22 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["selfPoint"] = "RIGHT",
+			["useLimit"] = false,
 			["animate"] = true,
 			["space"] = 2,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "AceGUI30DropDown4Button",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["useLimit"] = false,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["internalVersion"] = 69,
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
@@ -69560,25 +69576,21 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["gridType"] = "RD",
 			["uid"] = "jqdDR4yB1fg",
-			["borderEdge"] = "Square Full White",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = -135,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["rotation"] = 0,
+			["selfPoint"] = "RIGHT",
 		},
 		["Light's Grace"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -69587,7 +69599,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -69649,8 +69666,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -69659,11 +69675,13 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -69811,18 +69829,11 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -70085,9 +70096,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -70282,25 +70293,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135990,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Ball Lightning",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "kfeCWDJKefd",
@@ -70312,7 +70323,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Halls of Lightning - Shattering Stomp"] = {
 			["iconSource"] = 0,
@@ -70343,9 +70354,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -70540,25 +70551,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 132368,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Shattering Stomp",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "9XeMQD4xmU(",
@@ -70570,18 +70581,17 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Defense Protocol - Shatter Defenses Chosen"] = {
 			["outline"] = "None",
 			["wagoID"] = "8n36Ga60R",
-			["authorOptions"] = {
-			},
-			["preferToUpdate"] = false,
+			["xOffset"] = 0,
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["shadowYOffset"] = -1,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["automaticWidth"] = "Auto",
 			["displayText_format_p_time_format"] = 0,
 			["displayText_format_1.destName_format"] = "Unit",
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
@@ -70647,13 +70657,14 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
+			["displayText_format_p_time_mod_rate"] = true,
 			["displayText_format_p_time_legacy_floor"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["displayText_format_1.raidMark_format"] = "Unit",
-			["displayText_format_1.raidMark_abbreviate_max"] = 8,
+			["displayText_format_p_format"] = "timed",
+			["displayText_format_1.unitName_format"] = "none",
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["selfPoint"] = "BOTTOM",
+			["authorOptions"] = {
+			},
 			["fixedWidth"] = 200,
 			["font"] = "Arial Narrow",
 			["version"] = 10,
@@ -70691,24 +70702,38 @@ WeakAurasSaved = {
 				["encounterid"] = "",
 				["zoneIds"] = "132, 157, 158, 159, 160, 161, 153, 154, 138, 139, 185, 140, 184, 130, 131, 183, 129, 142, 143, 144, 145, 146, 168, 171, 133, 134, 135, 136, 137",
 			},
-			["customTextUpdate"] = "event",
+			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["config"] = {
 			},
 			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
-			["displayText_format_p_time_mod_rate"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["shadowXOffset"] = 1,
-			["displayText_format_1.unitName_format"] = "none",
-			["displayText_format_1.raidMark_abbreviate"] = true,
-			["xOffset"] = 0,
-			["regionType"] = "text",
+			["displayText_format_1.raidMark_format"] = "Unit",
+			["frameStrata"] = 1,
+			["color"] = {
+				1, -- [1]
+				0.83529418706894, -- [2]
+				0.47843140363693, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_1.destName_realm_name"] = "never",
 			["id"] = "Defense Protocol - Shatter Defenses Chosen",
-			["displayText"] = "%1.i %1.destName > %1.spellName",
+			["fontSize"] = 18,
 			["semver"] = "3.0.2",
-			["yOffset"] = 0,
+			["customTextUpdate"] = "event",
 			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
+			["regionType"] = "text",
 			["displayText_format_p_time_precision"] = 1,
+			["yOffset"] = 0,
+			["justify"] = "LEFT",
+			["tocversion"] = 30403,
+			["displayText_format_1.destName_abbreviate"] = false,
+			["preferToUpdate"] = false,
+			["displayText_format_1.raidMark_abbreviate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOM",
+			["uid"] = "W(3oMj3vHKU",
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -70731,16 +70756,7 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["justify"] = "LEFT",
-			["tocversion"] = 30403,
-			["displayText_format_1.destName_abbreviate"] = false,
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.destName_realm_name"] = "never",
-			["uid"] = "W(3oMj3vHKU",
 			["internalVersion"] = 69,
-			["fontSize"] = 18,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -70751,12 +70767,7 @@ WeakAurasSaved = {
 			},
 			["information"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				0.83529418706894, -- [2]
-				0.47843140363693, -- [3]
-				1, -- [4]
-			},
+			["displayText"] = "%1.i %1.destName > %1.spellName",
 		},
 		["Thorium Ore"] = {
 			["iconSource"] = -1,
@@ -71190,9 +71201,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -71356,25 +71367,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 135833,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Deep Breath",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "DQzWXXRuCg0",
@@ -71386,7 +71397,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Utgarde Pinnacle - Bane"] = {
 			["iconSource"] = 0,
@@ -71417,9 +71428,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -71583,25 +71594,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 136194,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Bane",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "sg(F5)vxUIM",
@@ -71613,7 +71624,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 		["Warrior - Berserker Stance"] = {
 			["outline"] = "OUTLINE",
@@ -71695,8 +71706,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["preferToUpdate"] = false,
 			["url"] = "https://wago.io/z6xqQay0S/16",
+			["parent"] = "Vermin Warrior Stance",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -71747,7 +71758,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Vermin Warrior Stance",
+			["preferToUpdate"] = false,
 		},
 		["Ahn'kahet - Insanity"] = {
 			["iconSource"] = 0,
@@ -71778,9 +71789,9 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["do_custom"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
+					["do_message"] = false,
 					["do_sound"] = false,
 				},
 			},
@@ -71966,25 +71977,25 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["cooldownTextDisabled"] = false,
-			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["cooldown"] = true,
 			["regionType"] = "icon",
 			["displayIcon"] = 237567,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["anchorFrameParent"] = false,
 			["width"] = 41,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Insanity",
 			["selfPoint"] = "CENTER",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "3.0.2",
 			["uid"] = "uOEGtNEkf51",
@@ -71996,18 +72007,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 		},
 	},
-	["lastUpgrade"] = 1699448791,
-	["personalRessourceDisplayFrame"] = {
-		["xOffset"] = -422.8046555407566,
-		["yOffset"] = -497.8042091158466,
-	},
-	["editor_bracket_matching"] = true,
-	["unitscan GUI"] = {
-	},
-	["registered"] = {
-	},
-	["bgtimetotsave"] = 0,
 }

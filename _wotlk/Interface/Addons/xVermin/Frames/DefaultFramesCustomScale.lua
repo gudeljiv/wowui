@@ -15,7 +15,8 @@ for i, v in pairs(
 		PetStableFrame,
 		GossipFrame,
 		MerchantFrame,
-		PVPParentFrame
+		PVPParentFrame,
+		PVEFrame
 	}
 ) do
 	if v then
@@ -47,7 +48,8 @@ local LoDMap = {
 	Blizzard_InspectUI = {'InspectFrame'},
 	Blizzard_TrainerUI = {'ClassTrainerFrame'},
 	Blizzard_AuctionUI = {'AuctionFrame'},
-	Blizzard_Calendar = {'CalendarFrame'}
+	Blizzard_Calendar = {'CalendarFrame'},
+	Blizzard_ItemSocketingUI = {'ItemSocketingFrame'},
 }
 
 local f = CreateFrame('Frame')

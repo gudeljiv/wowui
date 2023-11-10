@@ -18,7 +18,7 @@ Bagnon_VoidStorage: disabled
 BagBrother: enabled
 RXPGuides: enabled
 Leatrix_Plus: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 whoaThickFrames_BCC: disabled
 whoaThickFrames_Classic: disabled
@@ -173,7 +173,7 @@ Details_Streamer: enabled
 Details_Vanguard: enabled
 FarmHud_TrailPath: disabled
 Pawn: enabled
-TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster_AppHelper: enabled
 NovaWorldBuffs: disabled
 GearScoreLite: disabled
 Select: enabled

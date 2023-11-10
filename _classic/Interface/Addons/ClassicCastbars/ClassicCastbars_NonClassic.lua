@@ -190,6 +190,17 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
     end
 end
 
+function addon:UNIT_TARGET(unitID) -- detect target of target
+    if self.db[unitID] and self.db[unitID].autoPosition then
+        if activeFrames[unitID] then
+            local parentFrame = self.AnchorManager:GetAnchor(unitID)
+            if parentFrame then
+                self:SetTargetCastbarPosition(activeFrames[unitID], parentFrame)
+            end
+        end
+    end
+end
+
 -- Check UNIT_AURA aswell for cast immunites since CLEU range in classic is very short
 function addon:UNIT_AURA(unitID)
     if self.db[unitID] and self.db[unitID].autoPosition then
@@ -454,6 +465,7 @@ function addon:ToggleUnitEvents(shouldReset)
     self:RegisterEvent("PLAYER_TARGET_CHANGED")
     self:RegisterEvent("PLAYER_FOCUS_CHANGED")
     self:RegisterEvent("UNIT_AURA")
+    self:RegisterUnitEvent("UNIT_TARGET", "target", "focus")
 
     if self.db.party.enabled then
         self:RegisterEvent("GROUP_ROSTER_UPDATE")
@@ -516,6 +528,14 @@ function addon:PLAYER_LOGIN()
     else
         self.db = CopyDefaults(namespace.defaultConfig, ClassicCastbarsDB)
     end
+
+    if self.db.version then
+        if tonumber(self.db.version) < 41 then
+            if self.db.player.statusColorSuccess[2] == 0.7 then
+                self.db.player.statusColorSuccess = { 0, 1, 0, 1 }
+            end
+        end
+    end
     self.db.version = namespace.defaultConfig.version
 
     -- Reset certain stuff on game locale switched
@@ -529,11 +549,10 @@ function addon:PLAYER_LOGIN()
     end
 
     if self.db.player.enabled then
-        if WOW_PROJECT_ID ~= 1 then
-            self:SkinPlayerCastbar()
-        else
-            self.db.player.enabled = false
+        if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+            PlayerCastingBarFrame:SetLook("CLASSIC")
         end
+        self:SkinPlayerCastbar()
     end
 
     self.PLAYER_GUID = UnitGUID("player")

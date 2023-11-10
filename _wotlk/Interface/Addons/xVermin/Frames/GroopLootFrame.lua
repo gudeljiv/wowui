@@ -9,9 +9,14 @@ local function RepositionLootFrames()
 	-- frame:CreateBeautyBorder(8)
 	frame:SetScale(0.8)
 
+	local itemName, itemLevel
+
 	for i = 1, NUM_GROUP_LOOT_FRAMES do
 		frame = _G['GroupLootFrame' .. i]
-		-- if frame and frame ~= nil and CanAccessObject(frame) then
+		-- _, itemName = GetLootRollItemInfo(i)
+		-- if itemName then 
+		-- 	_, _, _, itemLevel = GetItemInfo(itemName)
+		-- end
 		if frame and frame ~= nil then
 			if i == 1 then
 				frame:ClearAllPoints()
@@ -24,6 +29,17 @@ local function RepositionLootFrames()
 				-- frame:CreateBeautyBorder(8)
 				frame:SetScale(1)
 			end
+
+			-- if itemLevel then
+			-- 	if not frame.ItemLevelText then
+			-- 		frame.ItemLevelText = frame:CreateFontString(nil, 'ARTWORK')
+			-- 		frame.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+			-- 		frame.ItemLevelText:SetShadowOffset(0, 0)
+			-- 		frame.ItemLevelText:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -2, 2)
+			-- 		frame.ItemLevelText:SetVertexColor(1, 1, 0)
+			-- 	end
+			-- 	frame.ItemLevelText:SetText(itemLevel)
+			-- end
 		end
 	end
 end

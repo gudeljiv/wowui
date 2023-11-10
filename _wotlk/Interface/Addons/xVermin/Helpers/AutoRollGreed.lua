@@ -12,8 +12,11 @@ fr:SetScript(
 			return
 		end
 		local _, name, _, quality, bop, _, _, canDE = GetLootRollItemInfo(id)
+		-- local _, _, _, itemLevel = GetItemInfo(name)
+		-- print(id, name, itemLevel)
 		if quality == 2 and autoroll then
 			ConfirmLootRoll(id, canDE and 3 or 2)
+			ChatFrame1:AddMessage('Autoroll on item: ' .. (name))
 		end
 	end
 )
