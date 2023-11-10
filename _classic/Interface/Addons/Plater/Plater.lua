@@ -69,6 +69,8 @@ local IS_WOW_PROJECT_CLASSIC_WRATH = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpa
 
 local PixelUtil = PixelUtil or DFPixelUtil
 
+local parserFunctions --reference needed
+
 local LibSharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0") -- https://www.curseforge.com/wow/addons/libsharedmedia-3-0
 local LCG = LibStub:GetLibrary("LibCustomGlow-1.0") -- https://github.com/Stanzilla/LibCustomGlow
 local LibRangeCheck = LibStub:GetLibrary ("LibRangeCheck-2.0") -- https://www.curseforge.com/wow/addons/librangecheck-2-0/
@@ -3733,8 +3735,8 @@ Plater.AnchorNamesByPhraseId = {
 		
 		UNIT_INVENTORY_CHANGED = function()
 			UpdatePlayerTankState()
-			Plater.UpdateAllNameplateColors()
-			Plater.UpdateAllPlates()
+			--Plater.UpdateAllNameplateColors()
+			--Plater.UpdateAllPlates()
 		end,
 		
 		UPDATE_SHAPESHIFT_FORM = function()
@@ -4717,12 +4719,13 @@ function Plater.OnInit() --private --~oninit ~init
 						self:OnHideWidget()
 					end
 					
+					local curTime = GetTime()
 					--local name, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible, spellId = UnitCastingInfo (unitCast)
 					self.SpellName = 		self.spellName
 					self.SpellID = 		self.spellID
 					self.SpellTexture = 	self.spellTexture
-					self.SpellStartTime = 	self.spellStartTime or GetTime()
-					self.SpellEndTime = 	self.spellEndTime or GetTime()
+					self.SpellStartTime = 	self.spellStartTime or curTime
+					self.SpellEndTime = 	self.spellEndTime or curTime
 					
 					local notInterruptible = not self.canInterrupt
 					
@@ -4792,6 +4795,15 @@ function Plater.OnInit() --private --~oninit ~init
 								self.castColorTexture:SetHeight(self:GetHeight() + profile.cast_color_settings.height_offset)
 							end
 						end
+					end
+					
+					if (self.channeling and (self.SpellStartTime + 0.25 > curTime)) then
+						platerInternal.Audio.PlaySoundForCastStart(self.spellID) --fallback for edge cases. should not double play
+					end
+					
+					-- in some occasions channeled casts don't have a CLEU entry... check this here
+					if (event == "UNIT_SPELLCAST_CHANNEL_START" and (not DB_CAPTURED_SPELLS[self.spellID] or DB_CAPTURED_SPELLS[self.spellID].isChanneled == nil)) then
+						parserFunctions.SPELL_CAST_SUCCESS (nil, "SPELL_CAST_SUCCESS", nil, unitFrame[MEMBER_GUID], unitFrame.unitNameInternal, 0x00000000, nil, nil, nil, nil, nil, self.spellID, nil, nil, nil, nil, nil, nil, nil, nil, nil)
 					end
 
 				elseif (event == "UNIT_SPELLCAST_INTERRUPTED") then
@@ -5898,9 +5910,7 @@ end
 			--check aggro if is in combat
 			if (PLAYER_IN_COMBAT) then
 				if (unitFrame.CanCheckAggro) then
-					if (not unitFrame.DenyColorChange) then --tagged from a script
-						Plater.UpdateNameplateThread (unitFrame)
-					end
+					Plater.UpdateNameplateThread (unitFrame)
 				end
 			end
 			
@@ -6122,8 +6132,10 @@ end
 	end
 	
 	local set_aggro_color = function (self, r, g, b, a) --self = unitName
-		if (DB_AGGRO_CHANGE_HEALTHBAR_COLOR) then	
-			Plater.ChangeHealthBarColor_Internal (self.healthBar, r, g, b, a)
+		if (DB_AGGRO_CHANGE_HEALTHBAR_COLOR) then
+			if (not self.DenyColorChange) then --tagged from a script
+				Plater.ChangeHealthBarColor_Internal (self.healthBar, r, g, b, a)
+			end
 		end
 		
 		if (DB_AGGRO_CHANGE_BORDER_COLOR) then
@@ -8822,7 +8834,8 @@ end
 
 	local PlaterCLEUParser = CreateFrame ("frame", "PlaterCLEUParserFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 
-	local parserFunctions = {
+	-- defined local above
+	parserFunctions = {
 		SPELL_DAMAGE = function (time, token, hidding, sourceGUID, sourceName, sourceFlag, sourceFlag2, targetGUID, targetName, targetFlag, targetFlag2, spellID, spellName, spellType, amount, overKill, school, resisted, blocked, absorbed, isCritical)
 			if (SPELL_WITH_ANIMATIONS [spellName] and sourceGUID == Plater.PlayerGUID) then
 				for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
@@ -8938,6 +8951,9 @@ end
 					end
 					if (npcId and npcId ~= 0) then
 						DB_CAPTURED_SPELLS[spellID] = {event = token, source = sourceName, npcID = npcId, encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName, isChanneled = isChanneled}
+						if isChanneled and not DB_CAPTURED_CASTS[spellID] then
+							DB_CAPTURED_CASTS[spellID] = {event = token, source = sourceName, npcID = npcId, encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName, isChanneled = isChanneled}
+						end
 					end
 				end
 			end
@@ -12881,6 +12897,13 @@ local cvarDiagList = {
 }
 
 function SlashCmdList.PLATER (msg, editbox)
+
+	local optionsTabNumber = tonumber(msg)
+	if (optionsTabNumber) then
+		Plater.OpenOptionsPanel(optionsTabNumber)
+		return
+	end
+
 	if (msg == "version") then
 		Plater.GetVersionInfo(true)
 		return
