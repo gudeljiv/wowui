@@ -45,8 +45,8 @@ Auctionator: enabled
 AutoOpen: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled
-!BugGrabber: enabled
-BugSack: enabled
+!BugGrabber: disabled
+BugSack: disabled
 ChocolateBar: enabled
 ClassicAutoDismount: enabled
 ClassicCastbars: enabled

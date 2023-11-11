@@ -1,6 +1,6 @@
 
 BugSackDB = {
-	["auto"] = false,
+	["auto"] = true,
 	["altwipe"] = false,
 	["useMaster"] = false,
 	["fontSize"] = "GameFontHighlight",

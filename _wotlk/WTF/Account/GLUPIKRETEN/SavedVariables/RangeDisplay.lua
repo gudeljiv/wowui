@@ -66,8 +66,8 @@ RangeDisplayDB3 = {
 					["frameHeight"] = 60,
 					["checkVisible"] = false,
 					["y"] = -157.9365234375,
-					["relPoint"] = "TOP",
 					["font"] = "Arial Narrow",
+					["relPoint"] = "TOP",
 					["frameWidth"] = 200,
 				},
 				["pet"] = {
