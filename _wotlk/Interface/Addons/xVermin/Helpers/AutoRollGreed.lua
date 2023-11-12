@@ -1,10 +1,8 @@
 local _, xVermin = ...
-
 local autoroll = true
-
 local fr = CreateFrame('Frame', nil, UIParent)
 fr:RegisterEvent('START_LOOT_ROLL')
-fr:RegisterEvent('CONFIRM_LOOT_ROLL')
+-- fr:RegisterEvent('CONFIRM_LOOT_ROLL')
 -- fr:RegisterEvent('CONFIRM_DISENCHANT_ROLL')
 fr:SetScript(
 	'OnEvent',
