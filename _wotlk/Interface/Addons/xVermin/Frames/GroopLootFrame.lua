@@ -9,15 +9,12 @@ local function RepositionLootFrames()
 	-- frame:CreateBeautyBorder(8)
 	frame:SetScale(0.8)
 
-	local itemName, itemLevel
+	local itemName, itemLevel, itemLevel, itemQuality, itemBOP, canDE, r, g, b
 
 	for i = 1, NUM_GROUP_LOOT_FRAMES do
 		frame = _G['GroupLootFrame' .. i]
-		-- _, itemName = GetLootRollItemInfo(i)
-		-- if itemName then 
-		-- 	_, _, _, itemLevel = GetItemInfo(itemName)
-		-- end
-		if frame and frame ~= nil then
+
+		if frame and frame.rollID then
 			if i == 1 then
 				frame:ClearAllPoints()
 				frame:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 380, 250)
@@ -30,16 +27,34 @@ local function RepositionLootFrames()
 				frame:SetScale(1)
 			end
 
-			-- if itemLevel then
-			-- 	if not frame.ItemLevelText then
-			-- 		frame.ItemLevelText = frame:CreateFontString(nil, 'ARTWORK')
-			-- 		frame.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
-			-- 		frame.ItemLevelText:SetShadowOffset(0, 0)
-			-- 		frame.ItemLevelText:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -2, 2)
-			-- 		frame.ItemLevelText:SetVertexColor(1, 1, 0)
-			-- 	end
-			-- 	frame.ItemLevelText:SetText(itemLevel)
-			-- end
+			-- print(frame.rollID)
+			if frame.rollID and frame.rollID ~= nil then 
+				_, itemName, _, itemQuality, itemBOP, _, _, canDE = GetLootRollItemInfo(frame.rollID)
+				itemLink = GetLootRollItemLink(frame.rollID)
+				_, _, _, itemLevel = GetItemInfo(itemLink)
+				r, g, b = GetItemQualityColor(itemQuality)
+			end
+
+			if itemLevel then
+				if not frame.ItemLevelText then 
+					frame.ItemLevelText = frame.IconFrame:CreateFontString(nil, 'ARTWORK')
+					frame.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+					frame.ItemLevelText:SetShadowOffset(0, 0)
+					frame.ItemLevelText:SetPoint('TOP', frame.IconFrame, 'TOP', 0, 0)
+					frame.ItemLevelText:SetVertexColor(r, g, b)
+				end
+				frame.ItemLevelText:SetText(itemLevel)
+			end
+
+			if not frame.BOPText then 
+				frame.BOPText = frame.IconFrame:CreateFontString(nil, 'ARTWORK')
+				frame.BOPText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+				frame.BOPText:SetShadowOffset(0, 0)
+				frame.BOPText:SetPoint('BOTTOM', frame.IconFrame, 'BOTTOM', 2, 0)
+				frame.BOPText:SetVertexColor(1, 1, 1)
+				frame.BOPText:SetText(itemBOP and "BOP" or "BOE")
+			end
+
 		end
 	end
 end

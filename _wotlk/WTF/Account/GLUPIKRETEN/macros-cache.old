@@ -20,12 +20,12 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:1179
+/castsequence [combat] reset=combat item:2455
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:35953
+/use [nocombat]item:4606
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -54,10 +54,8 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000021 "TEST" "132089"
-/run print(xInRange(2))
-/run print(xGetRange("target"))
-/run print(select(2, xGetRange("target")) <= 2)
-/run print(xGetRange("target"))
+/run GroupLootFrame1.ItemLevelText:ClearAllPoints()
+/run GroupLootFrame1.ItemLevelText:SetPoint('TOPLEFT', GroupLootFrame1.IconFrame, 'TOPLEFT', 0, 0)
 END
 VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
 /tsm destroy
