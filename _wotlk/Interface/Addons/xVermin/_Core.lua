@@ -189,6 +189,7 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 		end
 	)
 end
+xCheckIfLoadedWithTimer = xVermin.CheckIfLoadedWithTimer
 
 xVermin.HasValue = function(table, value)
 	for index, v in ipairs(table) do

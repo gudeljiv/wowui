@@ -1,11 +1,9 @@
-VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
-#showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
-/startattack
-/cast Bloodrage
-/cast [stance:1/2]Shield Bash
-/cast [stance:3]Pummel
+VER 3 0000000001000011 " " "134400"
+#showtooltip Shield Wall
 /equipslot [noworn:shield]16 Wingblade
-/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
+/equipslot [noworn:shield]17 Cobalt Buckler
+/cast [nostance:2] Defensive Stance;
+/cast Shield Wall
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -87,10 +85,12 @@ VER 3 0000000001000010 " " "134400"
 /cast [nostance:2] Defensive Stance;
 /cast Revenge
 END
-VER 3 0000000001000011 " " "134400"
-#showtooltip Shield Wall
+VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
+#showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
+/startattack
+/cast Bloodrage
+/cast [stance:1/2]Shield Bash
+/cast [stance:3]Pummel
 /equipslot [noworn:shield]16 Wingblade
-/equipslot [noworn:shield]17 Cobalt Buckler
-/cast [nostance:2] Defensive Stance;
-/cast Shield Wall
+/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
 END

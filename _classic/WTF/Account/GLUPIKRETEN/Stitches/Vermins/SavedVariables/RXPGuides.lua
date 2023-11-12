@@ -277,28 +277,14 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[529] = {
+		[868] = {
 			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Blacksmith Verringtan slain: 0/1",
+				["type"] = "item",
+				["numRequired"] = 12,
+				["text"] = "Silithid Egg: 0/12",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Hillsbrad Apprentice Blacksmith slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Shipment of Iron: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
 		},
 		[6548] = {
 			{
@@ -435,6 +421,29 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [4]
 		},
+		[1087] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Son of Cenarius slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Daughter of Cenarius slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Cenarion Botanist slain: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
 		[6629] = {
 			{
 				["type"] = "monster",
@@ -450,15 +459,6 @@ RXPCData = {
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-		},
-		[6503] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 9,
-				["text"] = "Ashenvale Outrunner slain: 0/9",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 		[6393] = {
 			{
@@ -496,11 +496,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[1195] = {
+		[528] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Filled Etched Phial: 0/1",
+				["type"] = "monster",
+				["numRequired"] = 15,
+				["text"] = "Hillsbrad Peasant slain: 0/15",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -573,23 +573,44 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6482] = {
+		[1068] = {
 			{
-				["type"] = "event",
+				["type"] = "monster",
 				["numRequired"] = 1,
-				["text"] = "Escort Ruul from the Thistlefurs.",
+				["text"] = "XT:4 slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "XT:9 slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
 		},
-		[6462] = {
+		[879] = {
 			{
 				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Troll Charm: 0/8",
+				["numRequired"] = 1,
+				["text"] = "Kuz's Skull: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = " : 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [2]
+			{
+				["type"] = "item",
+				["numRequired"] = 1,
+				["text"] = " : 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
 		},
 		[1824] = {
 			{
@@ -600,11 +621,11 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6544] = {
+		[6641] = {
 			{
 				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "Take Silverwing Outpost.",
+				["text"] = "Defeat Vorsha the Lasher",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -627,35 +648,21 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[567] = {
+		[6461] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Clerk Horrace Whitesteed slain: 0/1",
+				["numRequired"] = 10,
+				["text"] = "Deepmoss Creeper slain: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Citizen Wilkes slain: 0/1",
+				["numRequired"] = 7,
+				["text"] = "Deepmoss Venomspitter slain: 0/7",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Miner Hackett slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Farmer Kalaba slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [4]
 		},
 		[1088] = {
 			{
@@ -693,110 +700,103 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[6461] = {
+		[567] = {
 			{
 				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Deepmoss Creeper slain: 0/10",
+				["numRequired"] = 1,
+				["text"] = "Clerk Horrace Whitesteed slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
 				["type"] = "monster",
-				["numRequired"] = 7,
-				["text"] = "Deepmoss Venomspitter slain: 0/7",
+				["numRequired"] = 1,
+				["text"] = "Citizen Wilkes slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Miner Hackett slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Farmer Kalaba slain: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [4]
 		},
-		[6641] = {
+		[6544] = {
 			{
 				["type"] = "event",
 				["numRequired"] = 1,
-				["text"] = "Defeat Vorsha the Lasher",
+				["text"] = "Take Silverwing Outpost.",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[879] = {
+		[6462] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 8,
+				["text"] = "Troll Charm: 0/8",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6482] = {
+			{
+				["type"] = "event",
+				["numRequired"] = 1,
+				["text"] = "Escort Ruul from the Thistlefurs.",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[1195] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Kuz's Skull: 0/1",
+				["text"] = "Filled Etched Phial: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[6503] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 9,
+				["text"] = "Ashenvale Outrunner slain: 0/9",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[529] = {
+			{
+				["type"] = "monster",
+				["numRequired"] = 1,
+				["text"] = "Blacksmith Verringtan slain: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
 			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = " : 0/1",
+				["type"] = "monster",
+				["numRequired"] = 4,
+				["text"] = "Hillsbrad Apprentice Blacksmith slain: 0/4",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [2]
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = " : 0/1",
+				["text"] = "Shipment of Iron: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [3]
-		},
-		[1068] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:4 slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "XT:9 slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[528] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 15,
-				["text"] = "Hillsbrad Peasant slain: 0/15",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[1087] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Son of Cenarius slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Daughter of Cenarius slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Cenarion Botanist slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[868] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 12,
-				["text"] = "Silithid Egg: 0/12",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
 		},
 	},
 	["currentGuideGroup"] = "RestedXP Horde 22-30",
@@ -805,13 +805,13 @@ RXPCData = {
 		[25] = "Crossroads, The Barrens",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
 		[58] = "Zoram'gar Outpost, Ashenvale",
-		[77] = "Camp Taurajo, The Barrens",
-		[10] = "The Sepulcher, Silverpine Forest",
-		[22] = "Thunder Bluff, Mulgore",
-		[11] = "Undercity, Tirisfal",
-		[80] = "Ratchet, The Barrens",
-		[23] = "Orgrimmar, Durotar",
 		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[10] = "The Sepulcher, Silverpine Forest",
+		[80] = "Ratchet, The Barrens",
+		[11] = "Undercity, Tirisfal",
+		[22] = "Thunder Bluff, Mulgore",
+		[23] = "Orgrimmar, Durotar",
+		[77] = "Camp Taurajo, The Barrens",
 	},
 	["questNameCache"] = {
 		[6282] = "Harpies Threaten",
@@ -854,29 +854,29 @@ RXPCData = {
 		[913] = "Cry of the Thunderhawk",
 		[6383] = "The Ashenvale Hunt",
 		[1088] = "Ordanus",
-		[6382] = "The Ashenvale Hunt",
-		[6482] = "Freedom to Ruul",
-		[821] = "Chen's Empty Keg",
+		[5046] = "Razorhide",
+		[567] = "Dangerous!",
+		[1087] = "Cenarius' Legacy",
 		[5052] = "Blood Shards of Agamaggan",
 		[6503] = "Ashenvale Outrunners",
-		[865] = "Raptor Horns",
+		[6284] = "Arachnophobia",
 		[6641] = "Vorsha the Lasher",
-		[898] = "Free From the Hold",
+		[1824] = "Trial at the Field of Giants",
 		[874] = "Mahren Skyseer",
 		[882] = "Ishamuhale",
-		[1062] = "Goblin Invaders",
 		[1153] = "A New Ore Sample",
+		[898] = "Free From the Hold",
 		[906] = "Betrayal from Within",
 		[1058] = "Jin'Zil's Forest Magic",
-		[3301] = "Mura Runetotem",
+		[1069] = "Deepmoss Spider Eggs",
 		[549] = "WANTED: Syndicate Personnel",
-		[873] = "Isha Awak",
+		[1195] = "The Sacred Flame",
 		[6301] = "Cycle of Rebirth",
 		[6393] = "Elemental War",
-		[849] = "Revenge of Gann",
+		[876] = "Serena Bloodfeather",
 		[843] = "Gann's Reclamation",
-		[1490] = "Nara Wildmane",
-		[868] = "Egg Hunt",
+		[1093] = "Super Reaper 6000",
+		[1067] = "Return to Thunder Bluff",
 		[499] = "Elixir of Suffering",
 		[875] = "Harpy Lieutenants",
 		[883] = "Lakota'mani",
@@ -885,26 +885,26 @@ RXPCData = {
 		[25] = "Stonetalon Standstill",
 		[6462] = "Troll Charm",
 		[493] = "Journey to Hillsbrad Foothills",
-		[899] = "Consumed by Hatred",
-		[1489] = "Hamuul Runetotem",
-		[6523] = "Protect Kaya",
-		[6401] = "Kaya's Alive",
-		[907] = "Enraged Thunder Lizards",
 		[1060] = "Letter to Jin'Zil",
+		[1489] = "Hamuul Runetotem",
+		[907] = "Enraged Thunder Lizards",
+		[6401] = "Kaya's Alive",
+		[6523] = "Protect Kaya",
+		[899] = "Consumed by Hatred",
 		[1823] = "Speak with Ruga",
-		[1067] = "Return to Thunder Bluff",
-		[1093] = "Super Reaper 6000",
-		[876] = "Serena Bloodfeather",
+		[849] = "Revenge of Gann",
+		[868] = "Egg Hunt",
+		[1490] = "Nara Wildmane",
 		[884] = "Owatanka",
-		[1195] = "The Sacred Flame",
-		[1069] = "Deepmoss Spider Eggs",
+		[873] = "Isha Awak",
+		[3301] = "Mura Runetotem",
 		[527] = "Battle of Hillsbrad",
-		[1824] = "Trial at the Field of Giants",
-		[6284] = "Arachnophobia",
+		[1062] = "Goblin Invaders",
+		[865] = "Raptor Horns",
 		[1094] = "Further Instructions",
-		[1087] = "Cenarius' Legacy",
-		[567] = "Dangerous!",
-		[5046] = "Razorhide",
+		[6482] = "Freedom to Ruul",
+		[821] = "Chen's Empty Keg",
+		[6382] = "The Ashenvale Hunt",
 	},
 	["currentGuideName"] = "26-28 Ashenvale",
 	["stepSkip"] = {
@@ -955,21 +955,21 @@ RXPCComms = {
 			},
 			["players"] = {
 				["Betlie"] = {
-					["class"] = "PRIEST",
+					["level"] = 15,
 					["lastSeen"] = 98038.638,
 					["xpPercentage"] = 12,
-					["isRxp"] = true,
+					["class"] = "PRIEST",
 					["timePlayed"] = 1738.657000000007,
-					["level"] = 15,
+					["isRxp"] = true,
 				},
 				["Kryptor"] = {
-					["level"] = 22,
-					["class"] = "PRIEST",
+					["xpPercentage"] = 37,
+					["isRxp"] = true,
 					["lastSeen"] = 260591.059,
 					["timePlayed"] = 4626,
-					["isRxp"] = true,
+					["level"] = 22,
 					["xp"] = 109,
-					["xpPercentage"] = 37,
+					["class"] = "PRIEST",
 				},
 				["Fathersmooth"] = {
 					["timePlayed"] = 143.6410000000033,
@@ -1027,27 +1027,27 @@ RXPCComms = {
 					["xp"] = 3,
 				},
 				["Slowyy"] = {
-					["class"] = "ROGUE",
+					["level"] = 22,
 					["lastSeen"] = 520803.853,
 					["xpPercentage"] = 10,
-					["isRxp"] = true,
+					["class"] = "ROGUE",
 					["timePlayed"] = 67.38799999997718,
-					["level"] = 22,
+					["isRxp"] = true,
 				},
 				["Вукир"] = {
 					["timePlayed"] = 4626,
 					["class"] = "SHAMAN",
 					["xp"] = 109,
 				},
-				["Myrmidonn"] = {
-					["timePlayed"] = 4626,
-					["class"] = "DRUID",
-					["xp"] = 109,
-				},
 				["Шаравель"] = {
 					["timePlayed"] = 158.1110000000044,
 					["class"] = "WARRIOR",
 					["xp"] = 32,
+				},
+				["Myrmidonn"] = {
+					["timePlayed"] = 4626,
+					["class"] = "DRUID",
+					["xp"] = 109,
 				},
 			},
 		},

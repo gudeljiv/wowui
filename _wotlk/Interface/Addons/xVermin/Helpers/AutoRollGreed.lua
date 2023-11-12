@@ -1,10 +1,9 @@
 local _, xVermin = ...
-
 local autoroll = true
-
 local fr = CreateFrame('Frame', nil, UIParent)
 fr:RegisterEvent('START_LOOT_ROLL')
-fr:RegisterEvent('CONFIRM_LOOT_ROLL')
+-- fr:RegisterEvent('CONFIRM_LOOT_ROLL')
+-- fr:RegisterEvent('CONFIRM_DISENCHANT_ROLL')
 fr:SetScript(
 	'OnEvent',
 	function(self, event, id)
@@ -12,11 +11,14 @@ fr:SetScript(
 			return
 		end
 		local _, name, _, quality, bop, _, _, canDE = GetLootRollItemInfo(id)
-		-- local _, _, _, itemLevel = GetItemInfo(name)
-		-- print(id, name, itemLevel)
-		if quality == 2 and autoroll then
-			ConfirmLootRoll(id, canDE and 3 or 2)
-			ChatFrame1:AddMessage('Autoroll on item: ' .. (name))
+		local itemLink = GetLootRollItemLink(name)
+		local _, _, _, itemLevel = GetItemInfo(itemLink)
+		print(id, name, itemLink, itemLevel)
+		if autoroll then
+			if quality == 2 or itemLevel <= 200 then
+				ConfirmLootRoll(id, canDE and 3 or 2)
+				-- ChatFrame1:AddMessage('Autoroll on item: ' .. (name))
+			end
 		end
 	end
 )

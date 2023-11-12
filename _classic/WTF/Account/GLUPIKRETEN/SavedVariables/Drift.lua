@@ -42,12 +42,12 @@ DriftPoints = {
 		["yOfs"] = -64.31731414794922,
 		["xOfs"] = -297.497314453125,
 	},
-	["SpellBookFrame"] = {
+	["SideDressUpFrame"] = {
 		["relativeTo"] = "UIParent",
-		["point"] = "TOPLEFT",
-		["relativePoint"] = "TOPLEFT",
-		["yOfs"] = -87.59791564941406,
-		["xOfs"] = 6.349202632904053,
+		["point"] = "TOP",
+		["relativePoint"] = "TOP",
+		["yOfs"] = -156.3387756347656,
+		["xOfs"] = -94.64599609375,
 	},
 	["QuestFrame"] = {
 		["relativeTo"] = "UIParent",
@@ -56,13 +56,6 @@ DriftPoints = {
 		["yOfs"] = -130.4550323486328,
 		["xOfs"] = 254.4337463378906,
 	},
-	["GossipFrame"] = {
-		["relativeTo"] = "UIParent",
-		["point"] = "TOP",
-		["relativePoint"] = "TOP",
-		["yOfs"] = -147.9153289794922,
-		["xOfs"] = 294.1165466308594,
-	},
 	["ColorPickerFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "CENTER",
@@ -70,12 +63,19 @@ DriftPoints = {
 		["yOfs"] = 99.68265533447266,
 		["xOfs"] = 479.9994812011719,
 	},
-	["SideDressUpFrame"] = {
+	["GossipFrame"] = {
 		["relativeTo"] = "UIParent",
 		["point"] = "TOP",
 		["relativePoint"] = "TOP",
-		["yOfs"] = -156.3387756347656,
-		["xOfs"] = -94.64599609375,
+		["yOfs"] = -147.9153289794922,
+		["xOfs"] = 294.1165466308594,
+	},
+	["SpellBookFrame"] = {
+		["relativeTo"] = "UIParent",
+		["point"] = "TOPLEFT",
+		["relativePoint"] = "TOPLEFT",
+		["yOfs"] = -87.59791564941406,
+		["xOfs"] = 6.349202632904053,
 	},
 }
 DriftScales = {
@@ -86,18 +86,18 @@ DriftScales = {
 DriftOptions = {
 	["dragAltKeyEnabled"] = false,
 	["frameDragIsLocked"] = false,
-	["scaleCtrlKeyEnabled"] = false,
+	["windowsDisabled"] = false,
 	["playerChoiceDisabled"] = true,
 	["scaleAltKeyEnabled"] = false,
+	["bagsDisabled"] = true,
+	["scaleCtrlKeyEnabled"] = false,
 	["scaleShiftKeyEnabled"] = false,
-	["windowsDisabled"] = false,
-	["objectivesDisabled"] = true,
-	["frameScaleIsLocked"] = false,
+	["arenaDisabled"] = true,
 	["miscellaneousDisabled"] = true,
 	["dragCtrlKeyEnabled"] = false,
-	["dragShiftKeyEnabled"] = false,
 	["buttonsDisabled"] = true,
-	["arenaDisabled"] = true,
-	["bagsDisabled"] = true,
+	["dragShiftKeyEnabled"] = false,
+	["frameScaleIsLocked"] = false,
+	["objectivesDisabled"] = true,
 	["minimapDisabled"] = true,
 }

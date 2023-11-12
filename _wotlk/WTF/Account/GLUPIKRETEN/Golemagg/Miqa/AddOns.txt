@@ -50,3 +50,5 @@ SortBags: enabled
 TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: enabled
 unitscan: disabled
+!BugGrabber: enabled
+BugSack: enabled
