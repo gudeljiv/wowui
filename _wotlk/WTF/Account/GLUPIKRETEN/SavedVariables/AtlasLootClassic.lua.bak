@@ -905,8 +905,8 @@ AtlasLootClassicDB = {
 			[42952] = "EmblemOfHeroism:40",
 			[47328] = "DefilersScourgestone:30",
 			[33056] = "honor:3990",
+			[35020] = "honor:5700",
 			[45255] = "EmblemOfConquest:19",
-			[47302] = "DefilersScourgestone:76",
 			[32450] = "honor:7125",
 			[35148] = "honor:7600",
 			[45447] = "SiderealEssence:15",
@@ -1138,7 +1138,7 @@ AtlasLootClassicDB = {
 			[34998] = "honor:7600",
 			[33723] = "honor:6840",
 			[22863] = "honor:1000",
-			[35020] = "honor:5700",
+			[47302] = "DefilersScourgestone:76",
 			[45838] = "EmblemOfConquest:28",
 			[35167] = "honor:5700",
 			[47271] = "DefilersScourgestone:38",
@@ -1293,9 +1293,9 @@ AtlasLootClassicDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -1743,22 +1743,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["classFilter"] = true,
-				["selected"] = {
-					nil, -- [1]
-					"TheNexus", -- [2]
-					3, -- [3]
-					12, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-54.14281463623047, -- [4]
-					-161.7937622070313, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -1774,11 +1761,24 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["classFilter"] = true,
+				["point"] = {
+					"TOP", -- [1]
+					nil, -- [2]
+					"TOP", -- [3]
+					-54.14281463623047, -- [4]
+					-161.7937622070313, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"TheNexus", -- [2]
+					3, -- [3]
+					12, -- [4]
+					0, -- [5]
+				},
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {
@@ -1817,31 +1817,8 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["ContentPhase"] = {
-				["enableOnItems"] = true,
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["classFilter"] = true,
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-187.8571319580078, -- [4]
-					190.5237579345703, -- [5]
-				},
 				["selected"] = {
 					nil, -- [1]
 					"Gundrak", -- [2]
@@ -1849,8 +1826,31 @@ AtlasLootClassicDB = {
 					12, -- [4]
 					0, -- [5]
 				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-187.8571319580078, -- [4]
+					190.5237579345703, -- [5]
+				},
+			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
 			},
 			["showItemLvlInTT"] = false,
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
+			["ContentPhase"] = {
+				["enableOnItems"] = true,
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Miqa - Golemagg"] = {
 			["GUI"] = {

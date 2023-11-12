@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10035,
+	["session"] = 10039,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\_Core.lua:181: attempt to index global 'condition_table' (a nil value)",
