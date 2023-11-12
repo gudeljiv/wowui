@@ -92,6 +92,7 @@ function NIT:OnInitialize()
 	self:ticker();
 	self:tickerCharacterData();
 	self:resetOldLockouts();
+	self:wipeUpgradeData();
 end
 
 NIT.regionFont = "Fonts\\ARIALN.ttf";
@@ -983,16 +984,16 @@ function NIT:updateMinimapButton(tooltip, frame)
 									end
 								end
 							end
-							--if (charData.quests) then
-							--	if (charData.quests[L["Wrath Raid Boss Weekly"]] and charData.quests[L["Wrath Raid Boss Weekly"]] > GetServerTime()) then
-							--		text = text .. "\n  |cFFFFFF00-|r|cFFFFAE42" .. L["Wrath Raid Boss Weekly"] .. "|r";
-							--		found = true;
-							--		found2 = true;
-							--		if (char ~= me) then
-							--			altsFound = true;
-							--		end
-							--	end
-							--end
+							if (charData.quests) then
+								if (charData.quests[L["Wrath Raid Boss Weekly"]] and charData.quests[L["Wrath Raid Boss Weekly"]] > GetServerTime()) then
+									text = text .. "\n  |cFFFFFF00-|r|cFFFFAE42" .. L["Wrath Raid Boss Weekly"] .. "|r";
+									found = true;
+									found2 = true;
+									if (char ~= me) then
+										altsFound = true;
+									end
+								end
+							end
 							if (found2) then
 								if (maxLevel or IsShiftKeyDown()) then
 									tooltip:AddLine(text);
@@ -3958,7 +3959,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 					end
 					if (NIT["trackItems" .. data.classEnglish]) then
 						for k, v in ipairs(_G["NIT"]["trackItems" .. data.classEnglish]) do
-							if (not v.minLvl or v.minLvl < data.level) then
+							if (not v.minLvl or v.minLvl <= data.level) then
 								local texture = "";
 								if (v.texture) then
 									texture = "|T" .. v.texture .. ":12:12:0:0|t ";
@@ -4948,6 +4949,8 @@ end
 function NIT:sendGroup(msg)
 	if (IsInRaid()) then
 		SendChatMessage(msg, "RAID");
+	elseif (IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
+        SendChatMessage(msg, "INSTANCE_CHAT");
 	elseif (IsInGroup()) then
 		SendChatMessage(msg, "PARTY");
 	end
@@ -4956,6 +4959,8 @@ end
 function NIT:sendGroupComm(msg)
 	if (IsInRaid()) then
 		NIT:sendComm("RAID", msg);
+	elseif (IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
+        NIT:sendComm("INSTANCE_CHAT", msg);
 	elseif (IsInGroup()) then
 		NIT:sendComm("PARTY", msg);
 	end
@@ -5071,3 +5076,24 @@ f:SetScript('OnEvent', function(self, event, ...)
 		end
 	end
 end)
+
+--Sometimes we need to reset some stuff once after an upgrade.
+function NIT:wipeUpgradeData()
+	if (NIT.db.global.wipeUpgradeData) then
+		--Wipe weekly quest data to correct an issue for v1.51
+		for realm, realmData in pairs(NIT.db.global) do
+			if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "data") then
+				if (realmData.myChars) then
+					for char, charData in pairs(realmData.myChars) do
+						if (charData.quests) then
+							for k, v in pairs(charData.quests) do
+								NIT.db.global[realm].myChars[char].quests[k] = nil;
+							end
+						end
+					end
+				end
+			end
+		end
+		NIT.db.global.wipeUpgradeData = false;
+	end
+end

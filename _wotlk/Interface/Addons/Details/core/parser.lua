@@ -7125,10 +7125,14 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		Details.pvp_parser_frame.ticker = nil
 	end
 
-	local _player, realmName = UnitFullName('player')
-
 	function Details.pvp_parser_frame:ReadPvPData()
 		local players = GetNumBattlefieldScores()
+
+		local _player, realmName = UnitFullName("player")
+		if (not realmName) then
+			realmName = GetRealmName()
+			realmName = realmName:gsub("%s+", "")
+		end
 
 		for i = 1, players do
 			local name, killingBlows, honorableKills, deaths, honorGained, faction, race, rank, class, classToken, damageDone, healingDone, bgRating, ratingChange, preMatchMMR, mmrChange, talentSpec
@@ -7139,8 +7143,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			end
 
 			if (not isWOTLK and not isERA) then --Must be dragonflight
-				if (not name:match('%-')) then
-					name = name .. '-' .. realmName
+				if (not name:match("%-")) then
+					name = name .. "-" .. realmName
 				end
 			end
 
@@ -7154,7 +7158,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 				actor.classe = classToken or "UNKNOW"
 
 			elseif (name ~= "Unknown" and type(name) == "string" and string.len(name) > 1) then
-				local guid = UnitGUID(name)
+				local guid = UnitGUID(Details:Ambiguate(name))
 				if (guid) then
 					local flag
 					if (Details.faction_id == faction) then --is from the same faction
@@ -7184,7 +7188,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 				actor.classe = classToken or "UNKNOW"
 
 			elseif (name ~= "Unknown" and type(name) == "string" and string.len(name) > 1) then
-				local guid = UnitGUID(name)
+				local guid = UnitGUID(Details:Ambiguate(name))
 				if (guid) then
 					local flag
 					if (Details.faction_id == faction) then --is from the same faction

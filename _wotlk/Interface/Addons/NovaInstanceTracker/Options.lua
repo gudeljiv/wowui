@@ -767,6 +767,7 @@ NIT.optionDefaults = {
 		autoGammaBuffType = 1,
 		dungeonPopTimer = true,
 		autoWrathDailies = true,
+		wipeUpgradeData = true,
 	},
 };
 

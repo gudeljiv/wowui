@@ -93,10 +93,10 @@ lib.RegisterPrint(ns,MAJOR,"HzST");
 --== shared credits page ==--
 do -- 013088, 0070E0
 	local donation_platforms = {PP="|cff375388Pay|cff5a9de0pal|r",PA="Patreon",GH="Github"};
-
 	local myAddOns = {
-		"AFK_fullscreen","AuctionSellers","BestSellButton","Broker_Everything","CommunityInfo","FarmHud","FollowerLocationInfo","GarrisonRandomNPCs",
-		"GatherMate2_ImportExport","GuildApplicantTracker","HizurosToolbox","HzFontPack1","LFR [of the past]","QuickRoutes","StayClassy","TooltipRealmInfo",
+		"AFK_fullscreen","AuctionSellers","BestSellButton","Broker_Everything","CommunityInfo",
+		"FarmHud","FollowerLocationInfo","GarrisonRandomNPCs","GatherMate2_ImportExport","GuildApplicantTracker",
+		"HizurosToolbox","HzFontPack1","LFR [of the past]","QuickRoutes","StayClassy","TooltipRealmInfo",
 		-- don't sort by name. add new at the end
 	};
 
@@ -116,8 +116,12 @@ do -- 013088, 0070E0
 		{"curseforge","pczombie09"},	{"koKR",1},false,false,false,
 		{"curseforge","KARMA_Zz"},		{"ruRU",1},false,false,false,
 		{"curseforge","BNS333"},		{"zhTW",1},false,false,false,
+		{"curseforge","Crisll"},		{"esES",1},false,false,false,
+
 		{"curseforge","ZamestoTV"},		{"ruRU",2,5,9,13,15},false,false,false,
+		{"curseforge","Der_Adrinator"}, {"deDE",4},false,false,false,
 		{"curseforge","Nierhain"},		{"deDE",4},false,false,false,
+		{"curseforge","Araldwenn"},		{"frFR",4},false,false,false,
 		{"curseforge","Braincell1980"},	{"frFR",4,13},false,false,false,
 		{"curseforge","netaras"},		{"koKR",4,6},false,false,false,
 		{"curseforge","적셔줄게"},		{"koKR",4},false,false,false,
@@ -125,24 +129,30 @@ do -- 013088, 0070E0
 		{"curseforge","sanxy00"},		{"zhCN",4},false,false,false,
 		{"curseforge","雪夜霜刀"},		{"zhCN",4},false,false,false,
 		{"curseforge","半熟魷魚"},		{"zhTW",4},false,false,false,
+
 		{"curseforge","Lightuky"},		{"frFR",5},false,false,false,
 		{"curseforge","TomasRipley"},	{"ruRU",5},false,false,false,
+
 		{"curseforge","Dathwada"},		{"deDE",6},false,false,false,
 		{"curseforge","supahmexman"},	{"esES",6},false,false,false,
 		{"curseforge","justregular16"},	{"esMX",6},false,false,false,
 		{"curseforge","Zickwik"},		{"frFR",6},false,false,false,
 		{"curseforge","oxscott"},		{"itIT",6},false,false,false,
 		{"curseforge","g0ldenev1l"},	{"zhCN",6},false,false,false,
+		{"curseforge","gjfleo"},		{"zhCN",6},false,false,false,
+		{"curseforge","kuaishan"},		{"zhCN",6},false,false,false,
 		{"curseforge","mccma"},			{"zhTW",6},false,false,false,
+
 		{"curseforge","Tumbleweed_DSA"},{"deDE",7},false,false,false,
+		{"curseforge","Felli64"},		{"deDE",7},false,false,false,
 		{"curseforge","Dabeuliou"},		{"frFR",7},false,false,false,
 		{"curseforge","unrealcrom96"},	{"koKR",7},false,false,false,
 		{"curseforge","Canettieri"},	{"ptBR",7},false,false,false,
 		{"curseforge","dropdb"},		{"ruRU",7},false,false,false,
 		{"curseforge","Igara86"},		{"ruRU",7},false,false,false,
 		{"curseforge","Ananhaid"},		{"zhCN",7},false,false,false,
-		{"curseforge","Der_Adrinator"}, {"deDE",4},false,false,false,
-		{"curseforge","Araldwenn"},		{"frFR",4},false,false,false,
+
+		{"curseforge","Hollicsh"},		{"ruRU",16},false,false,false,
 	}
 
 	--local foreignAddOns = {}

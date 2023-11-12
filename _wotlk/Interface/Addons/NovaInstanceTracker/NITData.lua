@@ -219,6 +219,7 @@ f:RegisterEvent("CHAT_MSG_SKILL");
 f:RegisterEvent("UNIT_RANGEDDAMAGE");
 f:RegisterEvent("LOCALPLAYER_PET_RENAMED");
 f:RegisterEvent("UNIT_PET");
+f:RegisterEvent("PLAYER_LOGOUT");
 if (NIT.expansionNum < 4) then
 	f:RegisterEvent("UNIT_PET_TRAINING_POINTS");
 	f:RegisterEvent("TRADE_SKILL_UPDATE");
@@ -398,6 +399,12 @@ f:SetScript('OnEvent', function(self, event, ...)
 			NIT.data.instances[1]["leftTime"] = GetServerTime();
 			NIT:showInstanceStats();
 		end
+		NIT:recordLockoutData();
+		NIT:recordQuests();
+	elseif (event == "PLAYER_LOGOUT") then
+		--Print stats if logging out inside an instance for an offline reset.
+		NIT:recordLockoutData();
+		NIT:recordQuests();
 	elseif (event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_CLOSE") then
 		NIT:recordCooldowns();
 	elseif (event == "UPDATE_BATTLEFIELD_SCORE") then
@@ -1989,7 +1996,6 @@ if (NIT.isWrath) then
 	recordQuests[24582] = "Instructor Razuvious Must Die!";
 	recordQuests[24589] = "Lord Jaraxxus Must Die!";
 	recordQuests[24584] = "Malygos Must Die!";
-	recordQuests[10748] = "Maxnar Must Die!";
 	recordQuests[24581] = "Noth the Plaguebringer Must Die!";
 	recordQuests[24583] = "Patchwerk Must Die!";
 	recordQuests[24586] = "Razorscale Must Die!";
@@ -2025,7 +2031,6 @@ function NIT:recordQuests()
 		[24582] = "Instructor Razuvious Must Die!";
 		[24589] = "Lord Jaraxxus Must Die!";
 		[24584] = "Malygos Must Die!";
-		[10748] = "Maxnar Must Die!";
 		[24581] = "Noth the Plaguebringer Must Die!";
 		[24583] = "Patchwerk Must Die!";
 		[24586] = "Razorscale Must Die!";
@@ -2036,22 +2041,18 @@ function NIT:recordQuests()
 	for k, v in pairs(recordQuests) do
 		if (IsQuestFlaggedCompleted(k)) then
 			--There's bugs with this that need more testing before release.
-			--if (wrathWeeklies[k]) then
-			--	if (not wrathWeeklyComplete) then
-			--		wrathWeeklyComplete = true;
-			--		NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = resetTime;
+			if (wrathWeeklies[k]) then
+				if (not wrathWeeklyComplete) then
+					wrathWeeklyComplete = true;
+					NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = resetTime;
 					--Wrath raid weekly isn't resetting at normal server time, it's resetting later on in the day so it's still recording as complete until the following week.
 					--Watching this and see if they fix the reset time, maybe they had to manual reset first week due to a bug?
-			--	end
-			--else
+				end
+			else
 				NIT.data.myChars[char].quests[v] = resetTime;
-			--end
+			end
 		end
 	end
-	--Temp fix, this should really run for all chars at logon.
-	--if (not wrathWeeklyComplete) then
-	--	NIT.data.myChars[char].quests[L["Wrath Raid Boss Weekly"]] = nil;
-	--end
 	if (not NIT.data.myChars[char].questsDaily) then
 		NIT.data.myChars[char].questsDaily = {};
 	end
