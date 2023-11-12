@@ -1,9 +1,6 @@
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
-#showtooltip Wing Clip
-/startattack
-/cast Wing Clip
-/cast Wing Clip(Rank 2)
-/cast Wing Clip(Rank 1)
+VER 3 0000000001000014 " " "134400"
+#showtooltip
+/cast !Auto Shot
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -70,16 +67,20 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 END
 VER 3 0000000001000011 " " "132152"
 #showtooltip
+/petfollow
+/petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
-/targetexact Miner Hackett
 END
 VER 3 000000000100000F " " "132328"
 #showtooltip
 /petfollow
 /petpassive
 END
-VER 3 0000000001000014 " " "134400"
-#showtooltip
-/cast !Auto Shot
+VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+#showtooltip Wing Clip
+/startattack
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
