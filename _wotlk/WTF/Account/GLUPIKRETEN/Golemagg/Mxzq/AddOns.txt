@@ -209,3 +209,4 @@ GlobalIgnoreList: enabled
 SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
+Drift: disabled

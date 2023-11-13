@@ -201,3 +201,4 @@ SortBagsButton: disabled
 Myslot: disabled
 SortBags: enabled
 unitscan: disabled
+Drift: disabled

@@ -52,3 +52,4 @@ TradeSkillMaster_AppHelper: enabled
 unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
+Drift: disabled

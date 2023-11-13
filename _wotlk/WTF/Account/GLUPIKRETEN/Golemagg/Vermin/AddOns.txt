@@ -227,3 +227,4 @@ TheUndermineJournal: enabled
 BootyBayGazette: enabled
 AuctionDB: enabled
 unitscan: disabled
+Drift: disabled

@@ -240,3 +240,4 @@ LibDBIcon-1.0: enabled
 LibDataBroker-1.1: enabled
 Bagnon_Garbage: disabled
 Bagnon_ItemLevel_Vermin: disabled
+Drift: disabled

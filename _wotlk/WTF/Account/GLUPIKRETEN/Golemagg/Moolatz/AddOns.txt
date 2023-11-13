@@ -220,3 +220,4 @@ LibDataBroker-1.1: enabled
 Bagnon_Garbage: disabled
 Bagnon_ItemLevel_Vermin: disabled
 unitscan: disabled
+Drift: disabled

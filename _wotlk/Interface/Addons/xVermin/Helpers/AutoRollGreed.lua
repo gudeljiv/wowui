@@ -19,9 +19,9 @@ fr:SetScript(
 			if itemId == 43102 then 
 				ConfirmLootRoll(id, 1)
 			end
-			if itemLevel <= 200 then 
-				ConfirmLootRoll(id, canDE and 3 or 2)
-			end
+			-- if itemLevel <= 200 then 
+			-- 	ConfirmLootRoll(id, canDE and 3 or 2)
+			-- end
 			if quality == 2 then
 				ConfirmLootRoll(id, canDE and 3 or 2)
 			end

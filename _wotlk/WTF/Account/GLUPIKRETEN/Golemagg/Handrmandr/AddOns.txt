@@ -183,3 +183,4 @@ Myslot: disabled
 Blizzard_CompactRaidFrames: enabled
 SortBags: enabled
 unitscan: disabled
+Drift: disabled
