@@ -103,6 +103,7 @@ PallyPower_AuraAssignments = {
 	["Vourligan"] = 0,
 	["Xporz"] = 0,
 	["Syyllinen"] = 0,
+	["Sealslam"] = 1,
 	["Cloë"] = 0,
 	["Nautsha"] = 1,
 	["Izule"] = 0,

@@ -1,13 +1,16 @@
 local _, xVermin = ...
 
-local function QualityILVL(frame, rollID)
+local function QualityILVL(frame)
 	local itemName, itemLevel, itemLevel, itemQuality, itemBOP, canDE, r, g, b
 
 	_, itemName, _, itemQuality, itemBOP, _, _, canDE = GetLootRollItemInfo(frame.rollID)
 	itemLink = GetLootRollItemLink(frame.rollID)
+	
+	if not itemLink then return end
 	_, _, _, itemLevel = GetItemInfo(itemLink)
+	
+	if not itemQuality then return end
 	r, g, b = GetItemQualityColor(itemQuality)
-	print(frame.rollID, itemName, itemQuality, itemBOP, itemLink, itemQuality, r, g, b)
 
 	if itemLevel then
 		if not frame.ItemLevelText then 
@@ -32,36 +35,7 @@ end
 
 
 
-local function HandleLootFrames()
-	
-	local frame = _G['GroupLootContainer']
-	frame:ClearAllPoints()
-	frame:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 380, 250)
-	-- frame:CreateBeautyBorder(8)
-	frame:SetScale(0.8)
-
-	for i = 1, NUM_GROUP_LOOT_FRAMES do
-		frame = _G['GroupLootFrame' .. i]
-
-		if frame then
-			if i == 1 then
-				frame:ClearAllPoints()
-				frame:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 380, 250)
-				-- frame:CreateBeautyBorder(8)
-				frame:SetScale(1)
-			elseif i > 1 then
-				frame:ClearAllPoints()
-				frame:SetPoint('BOTTOM', 'GroupLootFrame' .. (i - 1), 'TOP', 0, 5)
-				-- frame:CreateBeautyBorder(8)
-				frame:SetScale(1)
-			end
-
-		end
-	end
-	
-end
-
-local function HandleLootFramesOnShow()
+local function HandleLootFrames(self, timer, event)
 
 	local frame = _G['GroupLootContainer']
 	frame:ClearAllPoints()
@@ -85,18 +59,18 @@ local function HandleLootFramesOnShow()
 				frame:SetScale(1)
 			end
 
-			if show_ilvl and frame.rollID then 
-				QualityILVL(frame, rollID)
+			if frame.rollID then 
+				QualityILVL(frame)
 			end
 
 		end
 	end
-
+	
 end
 
 hooksecurefunc('GroupLootContainer_OnLoad', HandleLootFrames)
 hooksecurefunc('GroupLootContainer_RemoveFrame', HandleLootFrames)
-hooksecurefunc('GroupLootFrame_OnShow', HandleLootFramesOnShow)
+hooksecurefunc('GroupLootFrame_OnShow', HandleLootFrames)
 hooksecurefunc('GroupLootFrame_OpenNewFrame', HandleLootFrames)
 hooksecurefunc('GroupLootFrame_OnEvent', HandleLootFrames)
 -- hooksecurefunc('GroupLootContainer_Update', RepositionLootFrames)
