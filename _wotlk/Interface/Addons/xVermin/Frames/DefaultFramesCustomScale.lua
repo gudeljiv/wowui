@@ -26,6 +26,10 @@ for i, v in pairs(
 	end
 end
 
+
+QuestLogFrame:HookScript('OnShow', function()ExpandQuestHeader(0)end)
+QuestLogFrame:HookScript('OnUpdate', function()ExpandQuestHeader(0)end)
+
 xVermin.CheckIfLoadedWithTimer(
 	'LFGParentFrame',
 	function()

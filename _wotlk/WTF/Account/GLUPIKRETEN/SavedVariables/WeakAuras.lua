@@ -9,7 +9,7 @@ WeakAurasSaved = {
 	["minimap"] = {
 		["hide"] = true,
 	},
-	["dbVersion"] = 69,
+	["dbVersion"] = 70,
 	["instanceHistoryDb"] = {
 		["sess"] = {
 			["delayUpdate"] = 1666881109,
@@ -41,7 +41,7 @@ WeakAurasSaved = {
 	["editor_font_size"] = 12,
 	["lastArchiveClear"] = 1602609267,
 	["bgtimetotsave"] = 0,
-	["lastUpgrade"] = 1699448791,
+	["lastUpgrade"] = 1700059662,
 	["displays"] = {
 		["Tems Wotlk Dungeon Pack"] = {
 			["controlledChildren"] = {
@@ -90,7 +90,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -148,42 +148,39 @@ WeakAurasSaved = {
 			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Tems Wotlk Dungeon Pack",
-			["borderInset"] = 1,
+			["uid"] = "wm7)CxAlTNi",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
+			["groupIcon"] = "334365",
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["uid"] = "wm7)CxAlTNi",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["groupIcon"] = "334365",
+			["xOffset"] = 0,
 		},
 		["Rune Strike"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Skills",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -226,7 +223,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -249,11 +246,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -262,12 +255,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["cooldownTextDisabled"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -324,9 +319,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -376,11 +371,16 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["spark"] = false,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Skills",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -388,27 +388,27 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["icon_side"] = "RIGHT",
-			["auto"] = false,
+			["xOffset"] = 0,
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["alpha"] = 1,
 			["zoom"] = 0.3,
-			["spark"] = false,
-			["xOffset"] = 0,
-			["sparkHidden"] = "NEVER",
+			["auto"] = false,
 			["anchorFrameFrame"] = "PlayerFrame",
-			["useCooldownModRate"] = true,
-			["width"] = 40,
 			["id"] = "Rune Strike",
-			["uid"] = "cG7Zb0nqhfK",
-			["inverse"] = false,
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
+			["width"] = 40,
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["uid"] = "cG7Zb0nqhfK",
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = 237518,
 			["cooldown"] = false,
-			["config"] = {
-			},
+			["icon"] = true,
 		},
 		["Gamma - Thorns"] = {
 			["iconSource"] = 0,
@@ -433,8 +433,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -457,8 +457,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "target",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -486,7 +486,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -595,7 +595,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -611,14 +611,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Thorns",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -692,7 +692,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -767,9 +767,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -810,13 +810,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_anchorYOffset"] = 25,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 25,
+					["text_shadowYOffset"] = 0,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_legacy_floor"] = false,
@@ -867,15 +867,15 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
 			["desaturate"] = false,
 			["sparkHidden"] = "NEVER",
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["uid"] = "vSO1BWwktHA",
@@ -883,7 +883,7 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["alpha"] = 1,
 			["width"] = 36,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -935,8 +935,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -1032,7 +1032,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -1089,13 +1089,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -1141,7 +1141,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -1157,14 +1157,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Searing Gaze",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -1277,9 +1277,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["cooldownSwipe"] = true,
-			["cooldownEdge"] = true,
-			["displayText_format_1.percenthealth_decimal_precision"] = 1,
 			["automaticWidth"] = "Auto",
+			["displayText_format_1.percenthealth_decimal_precision"] = 1,
+			["cooldownEdge"] = true,
 			["icon"] = false,
 			["triggers"] = {
 				{
@@ -1314,7 +1314,7 @@ WeakAurasSaved = {
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_genericShowOn"] = true,
-						["useName"] = false,
+						["type"] = "aura2",
 						["auraspellids"] = {
 							"413093", -- [1]
 						},
@@ -1327,13 +1327,13 @@ WeakAurasSaved = {
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["type"] = "aura2",
+						["useName"] = false,
 						["use_unit"] = true,
 						["use_percenthealth"] = true,
+						["useAffected"] = true,
 						["percenthealth_operator"] = {
 							"<", -- [1]
 						},
-						["useAffected"] = true,
 					},
 					["untrigger"] = {
 						["genericShowOn"] = "showOnReady",
@@ -1374,7 +1374,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 5,
 			["cooldownTextDisabled"] = false,
-			["discrete_rotation"] = 0,
+			["displayText_format_1.percenthealth_gcd_channel"] = false,
 			["id"] = "Defense Protocol - Sanity",
 			["version"] = 10,
 			["subRegions"] = {
@@ -1418,7 +1418,7 @@ WeakAurasSaved = {
 			["height"] = 125,
 			["rotate"] = false,
 			["sparkRotationMode"] = "AUTO",
-			["sparkBlendMode"] = "ADD",
+			["displayText_format_s_format"] = "none",
 			["useAdjustededMax"] = false,
 			["fontSize"] = 22,
 			["source"] = "import",
@@ -1448,13 +1448,13 @@ WeakAurasSaved = {
 			["displayText_format_1.percenthealth_format"] = "Number",
 			["customTextUpdate"] = "update",
 			["displayText_format_p_time_precision"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayText_format_1.percenthealth_gcd_cast"] = false,
 			["displayText_format_1.percenthealth_big_number_format"] = "AbbreviateNumbers",
 			["semver"] = "3.0.2",
-			["displayText_format_s_format"] = "none",
+			["sparkBlendMode"] = "ADD",
 			["sparkHidden"] = "NEVER",
-			["displayText_format_1.percenthealth_gcd_channel"] = false,
+			["discrete_rotation"] = 0,
 			["useCooldownModRate"] = true,
 			["width"] = 125,
 			["zoom"] = 0,
@@ -1557,8 +1557,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -1615,7 +1615,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -1672,13 +1672,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -1724,7 +1724,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -1740,14 +1740,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Vampiric Touch",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -1761,11 +1761,16 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Skills",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -1823,8 +1828,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["parent"] = "Skills",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -1832,8 +1836,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["xOffset"] = 0,
-			["icon"] = true,
+			["authorOptions"] = {
+			},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -1889,9 +1899,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -1901,7 +1911,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 40,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["load"] = {
 				["use_level"] = false,
 				["talent"] = {
@@ -1961,60 +1971,45 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["uid"] = "XmKfgNOliNz",
 			["icon_side"] = "RIGHT",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["zoom"] = 0.3,
-			["spark"] = false,
+			["auto"] = false,
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
 			["id"] = "Heroic Strike",
+			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["auto"] = false,
+			["spark"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["icon"] = true,
+			["orientation"] = "HORIZONTAL",
+			["displayIcon"] = 132282,
+			["cooldown"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["inverse"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["orientation"] = "HORIZONTAL",
-			["displayIcon"] = 132282,
-			["cooldown"] = false,
-			["config"] = {
-			},
 		},
 		["Raptor Strike"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -2023,11 +2018,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -2093,7 +2090,12 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -2101,16 +2103,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["config"] = {
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -2168,17 +2167,17 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
 				}, -- [3]
 			},
 			["height"] = 40,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -2214,27 +2213,28 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = 132223,
 			["desaturate"] = false,
-			["icon"] = true,
-			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
-			["regionType"] = "icon",
-			["frameStrata"] = 1,
 			["uid"] = "Up5ylVYe)GK",
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
+			["config"] = {
+			},
+			["alpha"] = 1,
 			["icon_side"] = "RIGHT",
-			["id"] = "Raptor Strike",
 			["width"] = 40,
+			["frameStrata"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["alpha"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
 			["sparkHidden"] = "NEVER",
-			["parent"] = "Skills",
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["spark"] = false,
+			["useAdjustededMin"] = false,
+			["id"] = "Raptor Strike",
 			["authorOptions"] = {
 			},
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2242,7 +2242,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["spark"] = false,
+			["parent"] = "Skills",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -2250,16 +2250,20 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 		},
 		["Food"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -2315,7 +2319,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -2337,8 +2341,8 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "Vermin Warrior",
 			["xOffset"] = 0,
+			["parent"] = "Vermin Warrior",
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -2346,7 +2350,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -2398,9 +2407,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -2453,22 +2462,13 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["zoom"] = 0.3,
 			["icon_side"] = "RIGHT",
@@ -2479,25 +2479,25 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["useAdjustededMin"] = false,
-			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["sparkHidden"] = "NEVER",
+			["id"] = "Food",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["id"] = "Food",
+			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["width"] = 36,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["uid"] = "ktvKzEaRutG",
+			["config"] = {
+			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["config"] = {
-			},
+			["uid"] = "ktvKzEaRutG",
 		},
 		["Drak'Tharon - Consume"] = {
 			["iconSource"] = 0,
@@ -2522,8 +2522,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -2546,8 +2546,8 @@ WeakAurasSaved = {
 						["unit"] = "target",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "15",
@@ -2575,7 +2575,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -2632,13 +2632,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -2681,13 +2681,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [4]
 			},
 			["height"] = 41,
@@ -2720,7 +2720,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -2756,14 +2756,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Consume",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -2858,7 +2858,7 @@ WeakAurasSaved = {
 				}, -- [3]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["wordWrap"] = "WordWrap",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
@@ -2893,39 +2893,9 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 24,
 			["shadowXOffset"] = 1,
-			["displayText_format_c_format"] = "none",
-			["regionType"] = "text",
 			["preferToUpdate"] = false,
-			["parent"] = "TARGET HP PERCENT",
-			["fixedWidth"] = 200,
-			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
-			["justify"] = "LEFT",
-			["tocversion"] = 11306,
-			["id"] = "MobHPPercentYELLOW",
-			["shadowYOffset"] = -1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "skENiiv2ip)",
-			["semver"] = "1.0.1",
-			["selfPoint"] = "BOTTOM",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
+			["regionType"] = "text",
+			["displayText_format_c_format"] = "none",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -2946,6 +2916,36 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["fixedWidth"] = 200,
+			["anchorFrameParent"] = false,
+			["automaticWidth"] = "Auto",
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["semver"] = "1.0.1",
+			["tocversion"] = 11306,
+			["id"] = "MobHPPercentYELLOW",
+			["shadowYOffset"] = -1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "skENiiv2ip)",
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["parent"] = "TARGET HP PERCENT",
 		},
 		["Redoubt"] = {
 			["sparkWidth"] = 10,
@@ -2954,7 +2954,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -3008,7 +3008,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["parent"] = "Vermin Paladin",
@@ -3091,10 +3091,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -3121,13 +3121,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_anchorYOffset"] = 25,
 					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
 					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_visible"] = true,
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
@@ -3204,18 +3204,18 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Redoubt",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["frameStrata"] = 1,
-			["id"] = "Redoubt",
-			["zoom"] = 0.3,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
+			["sparkHidden"] = "NEVER",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["alpha"] = 1,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3223,7 +3223,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -3256,8 +3256,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -3319,7 +3319,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -3376,13 +3376,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -3428,7 +3428,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -3444,14 +3444,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Chaotic Rift",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -3465,12 +3465,7 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -3479,7 +3474,12 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -3520,7 +3520,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -3543,7 +3543,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Warrior",
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -3551,11 +3552,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["actions"] = {
 				["start"] = {
@@ -3620,9 +3617,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -3672,16 +3669,15 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["sparkHeight"] = 30,
 			["icon_side"] = "RIGHT",
@@ -3689,29 +3685,33 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
-			["auto"] = false,
-			["zoom"] = 0.3,
 			["spark"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Heightened Reflexes",
-			["xOffset"] = 0,
-			["useCooldownModRate"] = true,
-			["width"] = 36,
+			["parent"] = "Vermin Warrior",
 			["frameStrata"] = 1,
+			["width"] = 36,
+			["useCooldownModRate"] = true,
 			["uid"] = "b3uEGmEvtG8",
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Spell Reflect"] = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -3720,11 +3720,13 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["triggers"] = {
 				{
@@ -3770,7 +3772,11 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["iconSource"] = -1,
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -3779,19 +3785,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["parent"] = "Vermin Warrior",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -3843,9 +3842,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -3860,7 +3859,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 36,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["load"] = {
 				["use_level"] = false,
 				["talent"] = {
@@ -3919,11 +3918,12 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["sparkHeight"] = 30,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3931,27 +3931,27 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["icon_side"] = "RIGHT",
-			["sparkHeight"] = 30,
+			["spark"] = false,
 			["width"] = 36,
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["frameStrata"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["spark"] = false,
 			["auto"] = false,
-			["id"] = "Spell Reflect",
 			["sparkHidden"] = "NEVER",
-			["alpha"] = 1,
+			["id"] = "Spell Reflect",
+			["config"] = {
+			},
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["alpha"] = 1,
 			["uid"] = "VuqQHTBXbQ)",
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["zoom"] = 0.3,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["config"] = {
-			},
+			["icon"] = true,
 		},
 		["Entering Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -3996,7 +3996,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -4062,8 +4062,8 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 200,
 					["colorB"] = 1,
-					["easeStrength"] = 3,
 					["rotate"] = 0,
+					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["translateType"] = "straightTranslate",
 				},
@@ -4111,8 +4111,8 @@ WeakAurasSaved = {
 			},
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
-			["justify"] = "LEFT",
 			["semver"] = "1.0.0",
+			["justify"] = "LEFT",
 			["tocversion"] = 30400,
 			["id"] = "Entering Combat",
 			["uid"] = "2kfOrK4jgEH",
@@ -4165,8 +4165,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -4226,7 +4226,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -4336,7 +4336,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -4352,14 +4352,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Glaciate",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -4410,7 +4410,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -4708,8 +4708,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -4730,7 +4730,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Stratholme - Corrupting Blight",
 			["color"] = {
 				1, -- [1]
@@ -4739,8 +4739,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -4861,10 +4861,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_genericShowOn"] = true,
-						["useName"] = false,
+						["type"] = "aura2",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["use_threatUnit"] = true,
 						["use_npcId"] = false,
 						["threatUnit"] = "target",
@@ -4874,7 +4874,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_aggro"] = true,
-						["type"] = "aura2",
+						["useName"] = false,
 						["unit"] = "party",
 						["useAffected"] = false,
 						["useExactSpellId"] = false,
@@ -4934,8 +4934,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.53333333333333, -- [1]
 						0.22352941176471, -- [2]
@@ -4956,7 +4956,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Wotlk Dungeons - Curse",
 			["color"] = {
 				1, -- [1]
@@ -4965,8 +4965,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -5046,20 +5046,20 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_class"] = false,
+				["race"] = {
 					["multi"] = {
 					},
 				},
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -5120,9 +5120,9 @@ WeakAurasSaved = {
 						["use_requirePowerType"] = true,
 						["use_percentpower"] = false,
 						["duration"] = "1",
+						["health"] = "0",
 						["spellIds"] = {
 						},
-						["health"] = "0",
 						["event"] = "Power",
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
@@ -5136,7 +5136,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -5169,8 +5169,8 @@ WeakAurasSaved = {
 				}, -- [2]
 				{
 					["text_shadowXOffset"] = 1,
-					["text_text_format_t_time_legacy_floor"] = false,
 					["text_text"] = "%p",
+					["text_text_format_t_time_legacy_floor"] = false,
 					["text_text_format_t_time_dynamic_threshold"] = 60,
 					["text_text_format_p_format"] = "timed",
 					["text_shadowColor"] = {
@@ -5429,7 +5429,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -5494,7 +5494,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["config"] = {
 				["macro"] = {
 					["text"] = "/cast Conjure Water",
@@ -5543,14 +5543,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/U0WH3IJ3S/1",
 			["width"] = 40,
 			["frameStrata"] = 1,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
 			["tocversion"] = 11304,
 			["id"] = "Water",
 			["semver"] = "1.0.0",
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = ")OLyGVxasS6",
 			["inverse"] = false,
 			["xOffset"] = 160,
@@ -5600,8 +5600,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -5622,8 +5622,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -5652,7 +5652,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -5709,13 +5709,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -5758,13 +5758,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [4]
 			},
 			["height"] = 41,
@@ -5797,7 +5797,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -5841,14 +5841,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Decay/Return Flesh",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -5908,7 +5908,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -5934,9 +5934,9 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["borderInset"] = 1,
 			["version"] = 2,
-			["rotation"] = 0,
-			["useLimit"] = true,
-			["groupIcon"] = 136168,
+			["grow"] = "DOWN",
+			["selfPoint"] = "TOP",
+			["fullCircle"] = true,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -5966,12 +5966,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = "false",
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["use_class"] = "false",
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -5979,15 +5979,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -5997,24 +5997,24 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["radius"] = 200,
+			["anchorPoint"] = "CENTER",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["grow"] = "DOWN",
+			["rotation"] = 0,
 			["animate"] = false,
-			["fullCircle"] = true,
+			["groupIcon"] = 136168,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["sort"] = "none",
-			["selfPoint"] = "TOP",
+			["limit"] = 1,
+			["useLimit"] = true,
 			["uid"] = "RtwiT9kw4p3",
 			["constantFactor"] = "RADIUS",
 			["frameStrata"] = 1,
@@ -6026,10 +6026,10 @@ WeakAurasSaved = {
 			},
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["stepAngle"] = 15,
+			["sort"] = "none",
 			["config"] = {
 			},
-			["limit"] = 1,
+			["stepAngle"] = 15,
 			["rowSpace"] = 1,
 			["conditions"] = {
 			},
@@ -6037,7 +6037,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["anchorPoint"] = "CENTER",
+			["radius"] = 200,
 		},
 		["Adamantite Ore"] = {
 			["iconSource"] = -1,
@@ -6072,10 +6072,10 @@ WeakAurasSaved = {
 						},
 						["use_includeBank"] = true,
 						["use_absorbMode"] = true,
-						["count"] = "0",
-						["event"] = "Item Count",
 						["spellIds"] = {
 						},
+						["event"] = "Item Count",
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_unit"] = true,
 						["count_operator"] = ">",
@@ -6085,7 +6085,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -6124,7 +6124,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -6135,7 +6135,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -6202,13 +6202,13 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "ePmimnKBVju",
-			["xOffset"] = 0,
 			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["url"] = "https://wago.io/iST6tz9t8/1",
+			["useTooltip"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -6218,16 +6218,16 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["anchorFrameParent"] = false,
-			["cooldownTextDisabled"] = false,
-			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Adamantite Ore",
 			["frameStrata"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -6235,7 +6235,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["useTooltip"] = true,
+			["url"] = "https://wago.io/iST6tz9t8/1",
 		},
 		["Blade Barrier"] = {
 			["sparkWidth"] = 10,
@@ -6243,7 +6243,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Death Knight",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -6323,7 +6323,7 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -6381,10 +6381,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -6454,22 +6454,22 @@ WeakAurasSaved = {
 			["uid"] = "kNGL7WKGKAu",
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Blade Barrier",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["spark"] = false,
 			["alpha"] = 1,
-			["id"] = "Blade Barrier",
-			["zoom"] = 0.3,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
+			["sparkHidden"] = "NEVER",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["frameStrata"] = 1,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -6539,7 +6539,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["borderEdge"] = "Square Full White",
 			["selfPoint"] = "CENTER",
 			["id"] = "MISSING BUFFS",
@@ -6656,7 +6656,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -6713,13 +6713,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -6765,7 +6765,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -6781,14 +6781,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Guardian Aura",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -6821,8 +6821,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -6845,8 +6845,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -6875,7 +6875,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -6932,13 +6932,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -6984,7 +6984,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -7000,14 +7000,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Corrupted Flesh",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -7049,7 +7049,7 @@ WeakAurasSaved = {
 						["genericShowOn"] = "showOnReady",
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["spellName"] = 34428,
+						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_START",
 						["useName"] = true,
 						["useExactSpellId"] = false,
@@ -7067,7 +7067,7 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["useNamePattern"] = false,
 						["use_track"] = true,
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 34428,
 					},
 					["untrigger"] = {
 						["genericShowOn"] = "showOnReady",
@@ -7189,8 +7189,8 @@ WeakAurasSaved = {
 				["level_operator"] = {
 					">=", -- [1]
 				},
-				["use_combat"] = true,
 				["use_alive"] = true,
+				["use_combat"] = true,
 				["use_class"] = false,
 				["use_spellknown"] = false,
 				["namerealm"] = "xxx",
@@ -7212,7 +7212,7 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = false,
 			["width"] = 65.000114440918,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["xOffset"] = 0,
 			["information"] = {
 				["forceEvents"] = true,
@@ -7226,11 +7226,11 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["alpha"] = 1,
 			["semver"] = "1.0.1",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 20501,
 			["id"] = "PRIEST",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownEdge"] = false,
@@ -7306,7 +7306,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["rotation"] = 0,
@@ -7423,11 +7423,11 @@ WeakAurasSaved = {
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 67,
-			["config"] = {
-			},
+			["uid"] = "1G6vzVZFHu5",
 			["authorOptions"] = {
 			},
-			["uid"] = "1G6vzVZFHu5",
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
@@ -7459,8 +7459,8 @@ WeakAurasSaved = {
 					["do_sound"] = true,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -7520,7 +7520,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -7630,7 +7630,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -7646,14 +7646,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Icy Path",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -7686,8 +7686,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -7742,7 +7742,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -7799,13 +7799,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -7872,7 +7872,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -7888,14 +7888,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Pursuit",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -7928,8 +7928,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -7952,8 +7952,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -7981,7 +7981,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -8038,13 +8038,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -8090,7 +8090,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -8106,14 +8106,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Emerge",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -8319,7 +8319,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -8397,14 +8397,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\Loc-RedLine",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Bottom Border",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "BJmxNW2QqMx",
 			["inverse"] = false,
 			["actions"] = {
@@ -8585,8 +8585,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -8607,7 +8607,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Ahn'kahet - Embrace of the Vampyr Glow",
 			["color"] = {
 				1, -- [1]
@@ -8616,8 +8616,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -8647,7 +8647,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -8701,7 +8701,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
@@ -8784,10 +8784,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -8814,13 +8814,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
 					["text_anchorYOffset"] = 25,
+					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "CENTER",
 					["text_visible"] = true,
+					["text_anchorPoint"] = "CENTER",
+					["text_fontType"] = "OUTLINE",
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
@@ -8896,18 +8896,18 @@ WeakAurasSaved = {
 			["uid"] = "QdrVWzVpDS5",
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Aspect of the Hawk",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["zoom"] = 0.3,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["id"] = "Aspect of the Hawk",
+			["zoom"] = 0.3,
 			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -8915,7 +8915,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -8980,7 +8980,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["borderEdge"] = "Square Full White",
 			["selfPoint"] = "CENTER",
 			["id"] = "Vermin Warrior Stance",
@@ -9066,10 +9066,10 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["event"] = "Health",
-						["events"] = "UPDATE_SHAPESHIFT_FORM",
-						["customDuration"] = "function()\n    -- Set the duration of the timer\n    local duration = aura_env.throttleTime\n    -- Set the progress bar fill time relative to GetTime()\n    -- ex: GetTime() + Spell Duration = Spell Complete Time\n    local expirationTime = aura_env.expirationTime\n    return duration, expirationTime\n    -- %p, %t\nend",
 						["spellIds"] = {
 						},
+						["customDuration"] = "function()\n    -- Set the duration of the timer\n    local duration = aura_env.throttleTime\n    -- Set the progress bar fill time relative to GetTime()\n    -- ex: GetTime() + Spell Duration = Spell Complete Time\n    local expirationTime = aura_env.expirationTime\n    return duration, expirationTime\n    -- %p, %t\nend",
+						["events"] = "UPDATE_SHAPESHIFT_FORM",
 						["custom"] = "function()\n    local nextTrack\n    local herbTracking = GetSpellInfo(\"Find Herbs\")\n    local mineralTracking = GetSpellInfo(\"Find Minerals\")\n    local isNotTracking = GetTrackingTexture() == nil\n    local isInit = (aura_env.lastTrackToggleTime == nil)\n    local theTime = GetTime()\n    local notInCombat = not InCombatLockdown()\n    local notResting = not IsResting()\n    local IsFlying = IsFlying()\n    local notChanneling = not ChannelInfo()\n    local notCasting = not CastingInfo()\n    local haveTarget = UnitExists(\"target\")\n    local unitalive = not UnitIsDead(\"player\")\n    \n    local showProgressBar = true\n    \n    for i=1,80 do \n        local buff = UnitBuff(\"player\", i)\n        if buff and buff == \"Shadowy Disguise\" then \n            showProgressBar = false\n        end\n    end\n    \n    -- Set throttle speed based on mount status\n    if IsMounted() == false and aura_env.config.mvmtstatus == true then\n        aura_env.throttleTime = aura_env.config.wthrottlespeed\n    else\n        aura_env.throttleTime = aura_env.config.mthrottlespeed\n    end\n    \n    -- Check to see that either tracking method is known and the player is not in a resting area\n    if (herbTracking or mineralTracking) and unitalive and notInCombat and notResting and notCasting and notChanneling and not haveTarget and showProgressBar then\n        -- Only toggle if the duration has expired\n        if not aura_env.last or aura_env.last < theTime - aura_env.throttleTime then\n            -- Set the progress bar fill expiration time relative to GetTime()\n            -- ex: GetTime() + Spell Duration = Spell Complete Time\n            aura_env.expirationTime = theTime + aura_env.throttleTime\n            -- Print out the delay time the option is enabled\n            if aura_env.config.verbosetext == true then\n                print(\"Toggled after \" .. aura_env.throttleTime .. \" seconds.\")\n            end\n            aura_env.last = theTime\n            if herbTracking ~= nil and mineralTracking == nil and isNotTracking then\n                -- Turn on herb tracking if that's all that's been learned\n                nextTrack = herbTracking\n            elseif mineralTracking ~= nil and herbTracking == nil and isNotTracking then\n                -- Turn on mineral tracking if that's all that's been learned\n                nextTrack = mineralTracking\n            elseif herbTracking ~= nil and mineralTracking ~= nil then\n                -- If we have both herb and mineral tracking toggle between them\n                if aura_env.lastTrack ~= herbTracking then\n                    nextTrack = herbTracking\n                elseif aura_env.lastTrack ~= mineralTracking then\n                    nextTrack = mineralTracking\n                end\n            end\n            if nextTrack ~= nil  then\n                -- Print out the action if the option is enabled\n                if aura_env.config.verbosetext == true then\n                    if isInit then\n                        print(\"Initializing: \"..nextTrack)\n                    elseif aura_env.lastTrack ~= nil then\n                        print(\"Toggling: \"..aura_env.lastTrack..\" -> \"..nextTrack)\n                    else\n                        print(\"Missing: \"..nextTrack)\n                    end\n                end\n                -- Cast the spell\n                CastSpellByName(nextTrack)\n                aura_env.lastTrackToggleTime = theTime\n                aura_env.lastTrack = nextTrack\n            end\n        end\n        -- Return the bool custom option to show or hide the progress bar\n        return aura_env.config.showprogress\n    end\nend",
 						["custom_hide"] = "timed",
 						["check"] = "update",
@@ -9090,7 +9090,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["zoom"] = 0,
 			["selfPoint"] = "CENTER",
 			["enableGradient"] = false,
@@ -9119,9 +9119,9 @@ WeakAurasSaved = {
 				{
 					["text_text_format_t_time_precision"] = 1,
 					["text_text"] = "%p / %t",
-					["text_text_format_p_format"] = "timed",
-					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_mod_rate"] = true,
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["text_text_format_p_format"] = "timed",
 					["anchorYOffset"] = 0,
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
@@ -9228,10 +9228,10 @@ WeakAurasSaved = {
 			["texture"] = "Melli Dark",
 			["auto"] = true,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.3",
+			["spark"] = false,
 			["tocversion"] = 20502,
 			["id"] = "Herbaning Switch",
-			["spark"] = false,
+			["semver"] = "1.0.3",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["icon"] = false,
@@ -9354,13 +9354,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["do_sound"] = false,
-					["message_custom"] = "function() return UnitName(\"player\") end",
 					["message_format_unitName_format"] = "none",
-					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_format_c_format"] = "none",
 					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
+					["message_type"] = "SAY",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -9418,17 +9418,17 @@ WeakAurasSaved = {
 			["uid"] = "mMeFR64kFTV",
 			["fixedWidth"] = 200,
 			["model_st_tz"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
+			["outline"] = "OUTLINE",
+			["cooldown"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "8n36Ga60R",
 			["color"] = {
 				1, -- [1]
 				0.011764707043767, -- [2]
 				0.047058828175068, -- [3]
 				1, -- [4]
 			},
-			["outline"] = "OUTLINE",
-			["cooldown"] = true,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "8n36Ga60R",
-			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
 			["authorOptions"] = {
 			},
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
@@ -9436,9 +9436,9 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["model_x"] = 0,
 			["cooldownSwipe"] = true,
-			["automaticWidth"] = "Auto",
-			["customTextUpdate"] = "update",
 			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
 			["advance"] = false,
 			["triggers"] = {
 				{
@@ -9466,7 +9466,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = {
 							"~=", -- [1]
@@ -9479,14 +9479,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -9500,7 +9500,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -9536,11 +9536,11 @@ WeakAurasSaved = {
 			},
 			["model_st_ty"] = 0,
 			["alpha"] = 1,
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["width"] = 80,
 			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -9613,7 +9613,7 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "NAMEPLATE",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayIcon"] = 135731,
 			["inverse"] = false,
 			["scale"] = 1,
@@ -9654,8 +9654,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -9717,7 +9717,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -9774,13 +9774,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -9826,7 +9826,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -9842,14 +9842,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Stop Time",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -9882,8 +9882,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -9906,8 +9906,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -9938,7 +9938,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -9995,13 +9995,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -10044,13 +10044,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [4]
 				{
 					["text_shadowXOffset"] = 0,
@@ -10080,13 +10080,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [5]
 			},
 			["height"] = 41,
@@ -10119,7 +10119,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -10177,14 +10177,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Stance",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -10203,12 +10203,7 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["alpha"] = 1,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -10267,10 +10262,15 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -10334,9 +10334,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -10351,7 +10351,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 36,
-			["iconSource"] = -1,
+			["icon"] = true,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -10387,30 +10387,30 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["iconSource"] = -1,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["useTooltip"] = false,
-			["config"] = {
-			},
-			["color"] = {
+			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["useTooltip"] = false,
 			["width"] = 36,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["alpha"] = 1,
 			["frameStrata"] = 1,
+			["config"] = {
+			},
 			["icon_side"] = "RIGHT",
 			["sparkHidden"] = "NEVER",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["spark"] = false,
-			["zoom"] = 0.3,
-			["auto"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = false,
+			["zoom"] = 0.3,
 			["id"] = "Revenge - Defensive stance",
 			["cooldownTextDisabled"] = false,
 			["useCooldownModRate"] = true,
@@ -10473,8 +10473,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -10536,7 +10536,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -10646,7 +10646,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -10662,14 +10662,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Blizzard",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -10728,7 +10728,25 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["uid"] = "NLkveGaWbw7",
-			["authorOptions"] = {
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 			["load"] = {
 				["size"] = {
@@ -10755,28 +10773,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["useLimit"] = false,
 			["animate"] = true,
-			["internalVersion"] = 69,
+			["rotation"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -10784,8 +10783,9 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["useLimit"] = false,
 			["gridType"] = "RD",
+			["authorOptions"] = {
+			},
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
@@ -10798,14 +10798,14 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["config"] = {
 			},
+			["grow"] = "LEFT",
 			["rowSpace"] = 1,
-			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["grow"] = "LEFT",
+			["internalVersion"] = 70,
 		},
 		["Copper Ore"] = {
 			["iconSource"] = -1,
@@ -10839,9 +10839,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -10854,7 +10854,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -10893,7 +10893,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -10904,7 +10904,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -10971,31 +10971,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "hlCr6LtK9Ws",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Copper Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -11003,7 +11003,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Tems Loss of Control Effects"] = {
 			["controlledChildren"] = {
@@ -11055,7 +11055,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -11115,14 +11115,15 @@ WeakAurasSaved = {
 			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Tems Loss of Control Effects",
-			["config"] = {
-			},
+			["uid"] = "TBWPr1GPJhe",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "BOTTOMLEFT",
-			["borderInset"] = 1,
 			["groupIcon"] = 136175,
-			["uid"] = "TBWPr1GPJhe",
+			["config"] = {
+			},
+			["authorOptions"] = {
+			},
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -11130,8 +11131,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["groupOffset"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "BOTTOMLEFT",
 		},
 		["Mana Bar"] = {
 			["overlays"] = {
@@ -11211,7 +11211,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class"] = false,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11219,15 +11219,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -11260,20 +11260,20 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["type"] = "unit",
 						["use_health"] = true,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 						["use_requirePowerType"] = true,
 						["use_percentpower"] = false,
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Power",
-						["health"] = "0",
 						["spellIds"] = {
 						},
+						["health"] = "0",
 						["health_operator"] = ">=",
 						["duration"] = "1",
 						["use_showCost"] = true,
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 					},
 					["untrigger"] = {
 					},
@@ -11282,7 +11282,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -11444,8 +11444,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -11737,7 +11737,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -11847,7 +11847,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -11863,14 +11863,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Ethereal Sphere",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -11938,7 +11938,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class"] = false,
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -11946,15 +11946,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -11997,13 +11997,13 @@ WeakAurasSaved = {
 						["use_health"] = true,
 						["unevent"] = "auto",
 						["health_operator"] = ">=",
-						["event"] = "Power",
 						["use_requirePowerType"] = false,
+						["event"] = "Power",
 						["use_percentpower"] = false,
 						["unit"] = "player",
-						["health"] = "0",
 						["spellIds"] = {
 						},
+						["health"] = "0",
 						["subeventSuffix"] = "_CAST_START",
 						["debuffType"] = "HELPFUL",
 						["subeventPrefix"] = "SPELL",
@@ -12032,7 +12032,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12203,8 +12203,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -12266,7 +12266,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -12323,13 +12323,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -12375,7 +12375,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -12391,14 +12391,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Time Bomb",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -12604,7 +12604,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -12683,14 +12683,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\Loc-RedLine",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Top Border",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "bpmRpgBHHeB",
 			["inverse"] = false,
 			["actions"] = {
@@ -12771,7 +12771,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12895,14 +12895,14 @@ WeakAurasSaved = {
 			["texture"] = "xVerminClean",
 			["config"] = {
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["auto"] = true,
+			["zoom"] = 0,
+			["spark"] = false,
 			["id"] = "MEND PET",
 			["sparkHidden"] = "NEVER",
-			["spark"] = false,
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -12943,8 +12943,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -13001,7 +13001,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -13058,13 +13058,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -13110,7 +13110,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -13126,14 +13126,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Fear",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -13166,8 +13166,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -13216,7 +13216,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -13273,13 +13273,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -13325,7 +13325,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -13341,14 +13341,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Poison Cloud",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -13381,8 +13381,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -13444,7 +13444,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -13554,7 +13554,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -13570,14 +13570,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Protective Bubble",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -13610,8 +13610,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -13673,7 +13673,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -13730,13 +13730,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -13819,7 +13819,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -13835,14 +13835,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Spell Reflection",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -13875,8 +13875,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -13897,8 +13897,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -13926,7 +13926,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -13983,13 +13983,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -14035,7 +14035,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -14051,14 +14051,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Blizzard",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -14129,7 +14129,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -14273,11 +14273,11 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["backgroundColor"] = {
 				0, -- [1]
@@ -14291,9 +14291,9 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["cooldownTextDisabled"] = false,
-			["zoom"] = 0.3,
-			["spark"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = false,
+			["zoom"] = 0.3,
 			["sparkHidden"] = "NEVER",
 			["authorOptions"] = {
 			},
@@ -14319,7 +14319,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -14365,7 +14365,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -14465,10 +14465,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -14544,21 +14544,21 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["id"] = "Recklessness",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Recklessness",
 			["zoom"] = 0.3,
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["width"] = 36,
 			["spark"] = false,
 			["uid"] = "j5VoEwQm2DA",
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -14635,7 +14635,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -14723,13 +14723,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["anchorYOffset"] = 0,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_anchorYOffset"] = 0,
 					["text_visible"] = false,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -14804,11 +14804,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_itemequiped"] = false,
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -14864,14 +14864,9 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -14925,7 +14920,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -14947,9 +14942,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -14957,14 +14952,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -15021,9 +15009,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -15071,13 +15059,25 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldownTextDisabled"] = false,
 			["icon_side"] = "RIGHT",
 			["sparkColor"] = {
@@ -15087,21 +15087,21 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["useAdjustededMin"] = false,
-			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["sparkHidden"] = "NEVER",
+			["id"] = "Sonic Awareness",
 			["zoom"] = 0.3,
 			["spark"] = false,
 			["anchorFrameType"] = "SCREEN",
-			["id"] = "Sonic Awareness",
+			["sparkHidden"] = "NEVER",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["width"] = 36,
 			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -15113,7 +15113,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Hunter",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -15167,7 +15167,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -15255,9 +15255,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -15298,13 +15298,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_anchorYOffset"] = 25,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 25,
+					["text_shadowYOffset"] = 0,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_legacy_floor"] = false,
@@ -15372,22 +15372,22 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Aspect of the Dragonhawk",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Aspect of the Dragonhawk",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["width"] = 40,
 			["spark"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -15416,8 +15416,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -15479,7 +15479,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -15589,7 +15589,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -15605,14 +15605,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Renew",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -15645,8 +15645,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -15729,7 +15729,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -15786,13 +15786,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -15838,7 +15838,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -15854,14 +15854,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Sacrifice",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -15875,9 +15875,14 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -15933,7 +15938,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -15955,9 +15960,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -15965,7 +15970,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["useTooltip"] = false,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -16017,9 +16027,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -16072,23 +16082,13 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["icon"] = true,
 			["conditions"] = {
 			},
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Vermin Warrior",
 			["cooldownTextDisabled"] = false,
 			["icon_side"] = "RIGHT",
 			["sparkColor"] = {
@@ -16098,25 +16098,25 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["useAdjustededMin"] = false,
-			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["sparkHidden"] = "NEVER",
+			["id"] = "Berserk Weapon Enchant",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["width"] = 36,
-			["id"] = "Berserk Weapon Enchant",
+			["sparkHidden"] = "NEVER",
 			["alpha"] = 1,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
-			["config"] = {
-			},
+			["uid"] = "DQO6NNjeupK",
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["uid"] = "DQO6NNjeupK",
+			["config"] = {
+			},
 		},
 		["Bottom Border Caster"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -16314,7 +16314,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -16394,14 +16394,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\Loc-RedLine",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Bottom Border Caster",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "UqlmGPVSH)9",
 			["inverse"] = false,
 			["actions"] = {
@@ -16438,8 +16438,13 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = -96.36363636363636,
 			["anchorPoint"] = "CENTER",
-			["regionType"] = "dynamicgroup",
-			["fullCircle"] = true,
+			["source"] = "import",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["rowSpace"] = 1,
 			["url"] = "https://wago.io/0N1K2wIv4/58",
 			["actions"] = {
@@ -16469,23 +16474,23 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["frameStrata"] = 1,
 			["selfPoint"] = "CENTER",
 			["align"] = "CENTER",
-			["sortHybridTable"] = {
-				["Runes"] = false,
-			},
-			["useLimit"] = false,
-			["authorOptions"] = {
-			},
+			["fullCircle"] = true,
+			["gridType"] = "RD",
+			["space"] = 0,
 			["stagger"] = 0,
 			["ignoreWagoUpdate"] = true,
 			["version"] = 58,
 			["subRegions"] = {
 			},
-			["radius"] = 200,
-			["rotation"] = 0,
+			["sortHybridTable"] = {
+				["Runes"] = false,
+			},
+			["authorOptions"] = {
+			},
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -16504,6 +16509,31 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["useLimit"] = false,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["uid"] = "IxDkNVofo)W",
+			["animate"] = true,
+			["customGrow"] = "function(newPositions, activeRegions)\n    local limit = 3 -- limit of icons per row\n    local rows = 2 -- total rows\n    local spacing = 1 -- spacing between icons\n    ----------------------\n    local check = true\n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    \n    local xOffset = 0\n    local yOffset = 0\n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        local region = regionData.region\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= limit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows-1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing))\n        yOffset = 0 - (region.height + spacing) * yCount -- change '-' to '+' after 0 to grow up instead of down\n        \n        xCount = xCount + 1\n        \n        if yCount < rows-1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
+			["scale"] = 0.55,
+			["centerType"] = "LR",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["stepAngle"] = 15,
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["rotation"] = 0,
+			["sort"] = "none",
+			["constantFactor"] = "RADIUS",
+			["borderInset"] = 1,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.57",
+			["tocversion"] = 30400,
+			["id"] = "DK - Runes",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -16524,39 +16554,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["uid"] = "IxDkNVofo)W",
-			["source"] = "import",
-			["customGrow"] = "function(newPositions, activeRegions)\n    local limit = 3 -- limit of icons per row\n    local rows = 2 -- total rows\n    local spacing = 1 -- spacing between icons\n    ----------------------\n    local check = true\n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    \n    local xOffset = 0\n    local yOffset = 0\n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        local region = regionData.region\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= limit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows-1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing))\n        yOffset = 0 - (region.height + spacing) * yCount -- change '-' to '+' after 0 to grow up instead of down\n        \n        xCount = xCount + 1\n        \n        if yCount < rows-1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
-			["scale"] = 0.55,
-			["centerType"] = "LR",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["stepAngle"] = 15,
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["limit"] = 5,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["constantFactor"] = "RADIUS",
-			["borderInset"] = 1,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.57",
-			["tocversion"] = 30400,
-			["id"] = "DK - Runes",
-			["animate"] = true,
 			["gridWidth"] = 6,
 			["anchorFrameType"] = "SCREEN",
-			["gridType"] = "RD",
+			["regionType"] = "dynamicgroup",
 			["config"] = {
 			},
 			["grow"] = "HORIZONTAL",
@@ -16566,13 +16566,13 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["space"] = 0,
+			["radius"] = 200,
 		},
 		["Hyperspeed Acceleration"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
@@ -16581,13 +16581,11 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -16629,15 +16627,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["barColor"] = {
 				0.2, -- [1]
@@ -16646,13 +16640,14 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["authorOptions"] = {
-			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["parent"] = "Vermin Warrior",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -16711,10 +16706,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -16776,27 +16771,32 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["icon"] = true,
+			["sparkHeight"] = 30,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
-			["sparkHeight"] = 30,
+			["auto"] = false,
 			["width"] = 36,
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["alpha"] = 1,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["auto"] = false,
 			["spark"] = false,
-			["sparkHidden"] = "NEVER",
 			["id"] = "Hyperspeed Acceleration",
-			["useCooldownModRate"] = true,
+			["sparkHidden"] = "NEVER",
+			["uid"] = "IRqbYtxZoYg",
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
+			["useCooldownModRate"] = true,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -16804,7 +16804,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -16812,7 +16812,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["uid"] = "IRqbYtxZoYg",
+			["icon"] = true,
 		},
 		["The Nexus - Time Stop"] = {
 			["iconSource"] = 0,
@@ -16837,8 +16837,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -16902,7 +16902,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -16959,13 +16959,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -17011,7 +17011,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -17027,14 +17027,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Time Stop",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -17085,7 +17085,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -17183,13 +17183,13 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Background",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 200,
-			["uid"] = "54vuWPE(kBZ",
 			["config"] = {
 			},
+			["uid"] = "54vuWPE(kBZ",
 			["parent"] = "Loss of Control Alert (WOTLK)",
 			["conditions"] = {
 			},
@@ -17222,8 +17222,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -17246,8 +17246,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -17276,7 +17276,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -17333,13 +17333,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -17385,7 +17385,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -17401,14 +17401,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Incapacitated",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -17429,7 +17429,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -17523,7 +17523,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -17579,9 +17579,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -17640,21 +17640,21 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Savage Roar",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["alpha"] = 1,
-			["id"] = "Savage Roar",
-			["zoom"] = 0.3,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["sparkHidden"] = "NEVER",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
 			["uid"] = "gUzpW8uSnms",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -17676,7 +17676,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -17745,7 +17745,7 @@ WeakAurasSaved = {
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["icon"] = true,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -17803,10 +17803,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -17879,28 +17879,28 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["uid"] = "aRaqfoW0wDF",
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Mangle",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
-			["alpha"] = 1,
-			["id"] = "Mangle",
-			["config"] = {
-			},
-			["useCooldownModRate"] = true,
-			["width"] = 36,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["frameStrata"] = 1,
+			["sparkHidden"] = "NEVER",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["useCooldownModRate"] = true,
+			["width"] = 36,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["config"] = {
 			},
 			["inverse"] = false,
 			["spark"] = false,
@@ -17936,8 +17936,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -17960,8 +17960,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -17989,7 +17989,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -18046,13 +18046,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -18098,7 +18098,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -18114,14 +18114,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Deafening Roar",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -18178,7 +18178,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "BOTTOM",
 			["font"] = "Arial Narrow",
 			["version"] = 16,
@@ -18237,8 +18237,8 @@ WeakAurasSaved = {
 				},
 			},
 			["wordWrap"] = "WordWrap",
-			["justify"] = "LEFT",
 			["semver"] = "1.0.15",
+			["justify"] = "LEFT",
 			["tocversion"] = 11302,
 			["id"] = "Warrior - Defensive Stance",
 			["uid"] = "QwSE99UBSjg",
@@ -18290,10 +18290,10 @@ WeakAurasSaved = {
 						},
 						["use_includeBank"] = true,
 						["subeventPrefix"] = "SPELL",
-						["count"] = "0",
-						["event"] = "Item Count",
 						["spellIds"] = {
 						},
+						["event"] = "Item Count",
+						["count"] = "0",
 						["subeventSuffix"] = "_CAST_START",
 						["use_absorbMode"] = true,
 						["count_operator"] = ">",
@@ -18334,7 +18334,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -18348,7 +18348,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 				}, -- [2]
 				{
 					["glowFrequency"] = 0,
@@ -18402,44 +18402,15 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["cooldown"] = false,
-			["internalVersion"] = 69,
-			["xOffset"] = 0,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["width"] = 40,
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "Tin Ore",
-			["alpha"] = 1,
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["uid"] = "z6rO(YSvyJb",
-			["inverse"] = false,
-			["parent"] = "Ore Count",
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -18460,6 +18431,35 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["xOffset"] = 0,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["anchorFrameParent"] = false,
+			["cooldownTextDisabled"] = false,
+			["width"] = 40,
+			["zoom"] = 0.3,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "Tin Ore",
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["uid"] = "z6rO(YSvyJb",
+			["inverse"] = false,
+			["parent"] = "Ore Count",
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
+			["internalVersion"] = 70,
 		},
 		["Halls of Lightning - Spell Reflection"] = {
 			["iconSource"] = 0,
@@ -18484,8 +18484,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -18507,9 +18507,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HELPFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "aura2",
 						["subeventPrefix"] = "SPELL",
@@ -18539,7 +18539,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -18596,13 +18596,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -18648,7 +18648,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -18664,14 +18664,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Spell Reflection",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -18704,8 +18704,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -18754,7 +18754,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -18811,13 +18811,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -18863,7 +18863,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -18879,14 +18879,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Web Wrap",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -19014,16 +19014,7 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["url"] = "https://wago.io/xfKIUqvJH/2",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "-- lint\nlocal _G = _G\nlocal IsInRaid = _G.IsInRaid\nlocal UnitName = _G.UnitName\nlocal GetNumGroupMembers = _G.GetNumGroupMembers\nlocal UnitDetailedThreatSituation = _G.UnitDetailedThreatSituation\n\n-- vars\nlocal aura_env = aura_env -- luacheck: ignore\nlocal WeakAuras = WeakAuras -- luacheck: ignore\nlocal Player = UnitName('player')\n\nlocal Threat = {\n    Insert = function(threat, unit)\n        -- https://wow.gamepedia.com/API_UnitDetailedThreatSituation\n        local _, status, scaled, raw, value = UnitDetailedThreatSituation(unit, 'target')\n        if (status) then\n            scaled = math.floor(scaled * 100 + 0.5) / 100\n            value = math.floor(value / 100 + 0.5)\n            unit = UnitName(unit)\n            if (not threat[unit]) then\n                threat[unit] = { unit = unit, status = status, scaled = scaled, raw = raw, threat = value }\n                threat[#threat+1] = threat[unit]\n            end\n        end\n    end,\n    UpdateRaid = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            for i = 1, GetNumGroupMembers() do self.Insert(threat, 'raid'..i) end\n            self.TSU(threat)\n        end\n    end,\n    UpdateGroup = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            self.Insert(threat, 'player')\n            for i = 1, 5 do self.Insert(threat, 'party'..i) end\n            self.TSU(threat)\n        end\n    end,\n    TSU = function(threat)\n        if (aura_env.config.sort == 1) then table.sort(threat, function(a, b) return a.scaled > b.scaled end)\n        elseif (aura_env.config.sort == 2) then table.sort(threat, function(a, b) return a.raw > b.raw end)\n        else table.sort(threat, function(a, b) return a.threat > b.threat end) end\n        \n        for i = 1, #threat do\n            local o, t = aura_env.dyn[i] or { progressType = 'static', total = 100 }, threat[i]\n            if (t) then\n                o.name, o.value, o.threat, o.status, o.player, o.show = t.unit, t.scaled, t.threat, t.status, (t.unit == Player), true\n                if (t.status == 0) then o.icon = aura_env.config.icon0 or 132320 -- unit has less than 100% threat for mobUnit\n                elseif (t.status == 1) then o.icon = aura_env.config.icon1 or 132347 -- unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)\n                elseif (t.status == 2) then o.icon = aura_env.config.icon2 or 132341 -- unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)\n                else o.icon = aura_env.config.icon3 or 132341 end -- 3 = unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)\n            else\n                o.name, o.value, o.player, o.show = '', 0, false, false\n            end\n            \n            if (i <= aura_env.config.numElements) then\n                o.changed, o.index = true, i\n                aura_env.dyn[i] = o\n            elseif (o.player) then\n                o.changed, o.index = true, #aura_env.dyn\n                aura_env.dyn[#aura_env.dyn] = o\n            end\n        end\n    end,\n    Reset = function()\n        for i = 1, aura_env.config.numElements do\n            local o = aura_env.dyn[i]\n            if (o) then o.name, o.value, o.player, o.show, o.changed = '', 0, false, false, true end\n            aura_env.dyn[i] = o\n        end\n    end\n}\n\n-- event\naura_env.UNIT_THREAT_LIST_UPDATE = function()\n    if (IsInRaid()) then Threat:UpdateRaid()\n    else Threat:UpdateGroup() end\nend\n\naura_env.PLAYER_REGEN_DISABLED = function()\n    Threat:Reset()\n    aura_env.UNIT_THREAT_LIST_UPDATE()\nend\n\naura_env.PLAYER_REGEN_ENABLED = aura_env.PLAYER_REGEN_DISABLED\naura_env.PLAYER_TARGET_CHANGED = aura_env.PLAYER_REGEN_DISABLED\naura_env.UNIT_THREAT_SITUATION_UPDATE = aura_env.PLAYER_REGEN_DISABLED\n\naura_env.OPTIONS = function() -- weakaura options is opend\n    if (WeakAuras.IsOptionsOpen()) then\n        local threat = {}\n        for _,unit in pairs({'Willie', 'Eli', 'Minnie', 'Goofy', 'Mickey', 'Sylvester', 'Pluto', 'Milton', 'Salty', 'Duffy', UnitName('player')}) do\n            local v = math.random(0, 9001)\n            threat[#threat+1] = { unit = unit, status = math.random(0, 3), scaled = math.floor((100 / 9001 * v) * 100 + 0.5) / 100, raw = math.floor((255 / 9001 * v) * 100 + 0.5) / 100, threat = v }\n        end\n        Threat.TSU(threat)\n    end\nend",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = false,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -19053,7 +19044,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["parent"] = "Threat List",
 			["animation"] = {
 				["start"] = {
@@ -19105,7 +19096,16 @@ WeakAurasSaved = {
 			},
 			["desaturate"] = false,
 			["customTextUpdate"] = "update",
-			["icon"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "-- lint\nlocal _G = _G\nlocal IsInRaid = _G.IsInRaid\nlocal UnitName = _G.UnitName\nlocal GetNumGroupMembers = _G.GetNumGroupMembers\nlocal UnitDetailedThreatSituation = _G.UnitDetailedThreatSituation\n\n-- vars\nlocal aura_env = aura_env -- luacheck: ignore\nlocal WeakAuras = WeakAuras -- luacheck: ignore\nlocal Player = UnitName('player')\n\nlocal Threat = {\n    Insert = function(threat, unit)\n        -- https://wow.gamepedia.com/API_UnitDetailedThreatSituation\n        local _, status, scaled, raw, value = UnitDetailedThreatSituation(unit, 'target')\n        if (status) then\n            scaled = math.floor(scaled * 100 + 0.5) / 100\n            value = math.floor(value / 100 + 0.5)\n            unit = UnitName(unit)\n            if (not threat[unit]) then\n                threat[unit] = { unit = unit, status = status, scaled = scaled, raw = raw, threat = value }\n                threat[#threat+1] = threat[unit]\n            end\n        end\n    end,\n    UpdateRaid = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            for i = 1, GetNumGroupMembers() do self.Insert(threat, 'raid'..i) end\n            self.TSU(threat)\n        end\n    end,\n    UpdateGroup = function(self)\n        local threat = {}\n        if (UnitName('target')) then\n            self.Insert(threat, 'pet')\n            self.Insert(threat, 'player')\n            for i = 1, 5 do self.Insert(threat, 'party'..i) end\n            self.TSU(threat)\n        end\n    end,\n    TSU = function(threat)\n        if (aura_env.config.sort == 1) then table.sort(threat, function(a, b) return a.scaled > b.scaled end)\n        elseif (aura_env.config.sort == 2) then table.sort(threat, function(a, b) return a.raw > b.raw end)\n        else table.sort(threat, function(a, b) return a.threat > b.threat end) end\n        \n        for i = 1, #threat do\n            local o, t = aura_env.dyn[i] or { progressType = 'static', total = 100 }, threat[i]\n            if (t) then\n                o.name, o.value, o.threat, o.status, o.player, o.show = t.unit, t.scaled, t.threat, t.status, (t.unit == Player), true\n                if (t.status == 0) then o.icon = aura_env.config.icon0 or 132320 -- unit has less than 100% threat for mobUnit\n                elseif (t.status == 1) then o.icon = aura_env.config.icon1 or 132347 -- unit has higher than 100% threat for mobUnit (aggro), but isn't the primary target (tanking)\n                elseif (t.status == 2) then o.icon = aura_env.config.icon2 or 132341 -- unit is the primary target (tanking) for mobUnit, but another unit has higher than 100% threat (aggro)\n                else o.icon = aura_env.config.icon3 or 132341 end -- 3 = unit is the primary target (tanking) for mobUnit and no other unit has higher than 100% threat (aggro)\n            else\n                o.name, o.value, o.player, o.show = '', 0, false, false\n            end\n            \n            if (i <= aura_env.config.numElements) then\n                o.changed, o.index = true, i\n                aura_env.dyn[i] = o\n            elseif (o.player) then\n                o.changed, o.index = true, #aura_env.dyn\n                aura_env.dyn[#aura_env.dyn] = o\n            end\n        end\n    end,\n    Reset = function()\n        for i = 1, aura_env.config.numElements do\n            local o = aura_env.dyn[i]\n            if (o) then o.name, o.value, o.player, o.show, o.changed = '', 0, false, false, true end\n            aura_env.dyn[i] = o\n        end\n    end\n}\n\n-- event\naura_env.UNIT_THREAT_LIST_UPDATE = function()\n    if (IsInRaid()) then Threat:UpdateRaid()\n    else Threat:UpdateGroup() end\nend\n\naura_env.PLAYER_REGEN_DISABLED = function()\n    Threat:Reset()\n    aura_env.UNIT_THREAT_LIST_UPDATE()\nend\n\naura_env.PLAYER_REGEN_ENABLED = aura_env.PLAYER_REGEN_DISABLED\naura_env.PLAYER_TARGET_CHANGED = aura_env.PLAYER_REGEN_DISABLED\naura_env.UNIT_THREAT_SITUATION_UPDATE = aura_env.PLAYER_REGEN_DISABLED\n\naura_env.OPTIONS = function() -- weakaura options is opend\n    if (WeakAuras.IsOptionsOpen()) then\n        local threat = {}\n        for _,unit in pairs({'Willie', 'Eli', 'Minnie', 'Goofy', 'Mickey', 'Sylvester', 'Pluto', 'Milton', 'Salty', 'Duffy', UnitName('player')}) do\n            local v = math.random(0, 9001)\n            threat[#threat+1] = { unit = unit, status = math.random(0, 3), scaled = math.floor((100 / 9001 * v) * 100 + 0.5) / 100, raw = math.floor((255 / 9001 * v) * 100 + 0.5) / 100, threat = v }\n        end\n        Threat.TSU(threat)\n    end\nend",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 			["version"] = 2,
 			["subRegions"] = {
 				{
@@ -19279,14 +19279,7 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["source"] = "import",
 			["xOffset"] = 0,
-			["config"] = {
-				["icon0"] = 132320,
-				["sort"] = 1,
-				["numElements"] = 6,
-				["icon2"] = 132341,
-				["icon3"] = 132341,
-				["icon1"] = 132347,
-			},
+			["uid"] = "0NBlQkcHV5x",
 			["backgroundColor"] = {
 				0.6980392156862745, -- [1]
 				0.6980392156862745, -- [2]
@@ -19296,7 +19289,14 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
-			["uid"] = "0NBlQkcHV5x",
+			["config"] = {
+				["icon0"] = 132320,
+				["sort"] = 1,
+				["numElements"] = 6,
+				["icon2"] = 132341,
+				["icon3"] = 132341,
+				["icon1"] = 132347,
+			},
 			["sparkOffsetY"] = 0,
 			["icon_side"] = "LEFT",
 			["height"] = 12,
@@ -19304,7 +19304,7 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["texture"] = "xVerminClean",
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["sparkTexture"] = "bonusobjectives-bar-spark",
 			["spark"] = false,
 			["tocversion"] = 11305,
 			["sparkHidden"] = "NEVER",
@@ -19428,7 +19428,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "bonusobjectives-bar-spark",
+			["zoom"] = 0.3,
 		},
 		["Mithril Ore"] = {
 			["iconSource"] = -1,
@@ -19462,9 +19462,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -19477,7 +19477,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -19516,7 +19516,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -19527,7 +19527,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -19594,31 +19594,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "53BfeKjl5ft",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Mithril Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -19626,7 +19626,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Ahn'kahet - Flame Sphere"] = {
 			["iconSource"] = 0,
@@ -19651,8 +19651,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -19699,7 +19699,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -19756,13 +19756,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -19808,7 +19808,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -19824,14 +19824,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Flame Sphere",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -19864,8 +19864,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -19928,7 +19928,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -20038,7 +20038,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -20054,14 +20054,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Temporal Rift",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -20103,9 +20103,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -20118,7 +20118,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -20157,7 +20157,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -20168,7 +20168,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -20235,31 +20235,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "MEOaW5KsVz(",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Cobalt Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -20275,7 +20275,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Halls of Reflection - Well of Corruption"] = {
 			["iconSource"] = 0,
@@ -20300,8 +20300,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -20323,9 +20323,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HARMFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "combatlog",
 						["subeventPrefix"] = "SPELL",
@@ -20355,7 +20355,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -20412,13 +20412,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -20464,7 +20464,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -20480,14 +20480,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Well of Corruption",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -20520,8 +20520,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -20542,8 +20542,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -20571,7 +20571,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -20628,13 +20628,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -20680,7 +20680,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -20696,14 +20696,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Grip of Slad'ran",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -20736,8 +20736,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -20800,7 +20800,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -20857,13 +20857,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -20909,7 +20909,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -20925,14 +20925,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Earth Shield",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -21067,7 +21067,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -21131,7 +21131,7 @@ WeakAurasSaved = {
 					["text_text_format_p_format"] = "timed",
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_time_legacy_floor"] = false,
-					["text_text_format_overTimeRem_time_mod_rate"] = true,
+					["text_text_format_overTimeRem_time_precision"] = 1,
 					["type"] = "subtext",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_overtimeDuration_format"] = "none",
@@ -21144,7 +21144,7 @@ WeakAurasSaved = {
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_visible"] = true,
 					["text_fontType"] = "OUTLINE",
-					["text_text_format_overTimeRem_time_precision"] = 1,
+					["text_text_format_overTimeRem_time_mod_rate"] = true,
 					["text_text_format_overTimeRem_time_format"] = 0,
 					["text_text"] = "%p",
 				}, -- [3]
@@ -21226,12 +21226,7 @@ WeakAurasSaved = {
 					0.8500000089407, -- [4]
 				}, -- [1]
 			},
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.40000003576279, -- [4]
-			},
+			["uid"] = "NqoUDs7)efZ",
 			["icon_side"] = "RIGHT",
 			["authorOptions"] = {
 				{
@@ -21398,20 +21393,25 @@ WeakAurasSaved = {
 			},
 			["icon"] = false,
 			["semver"] = "1.0.57",
-			["uid"] = "NqoUDs7)efZ",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.40000003576279, -- [4]
+			},
 			["sparkHidden"] = "NEVER",
-			["width"] = 50,
-			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 50,
 			["id"] = "Runes",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["inverse"] = true,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["inverse"] = true,
+			["anchorFrameParent"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 				{
@@ -21551,7 +21551,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["anchorFrameParent"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 		},
 		["Druid - CP2"] = {
 			["color"] = {
@@ -21607,7 +21607,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
 			["rotation"] = 0,
@@ -21724,11 +21724,11 @@ WeakAurasSaved = {
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 67,
-			["config"] = {
-			},
+			["uid"] = "fm4HOrzkFYa",
 			["authorOptions"] = {
 			},
-			["uid"] = "fm4HOrzkFYa",
+			["config"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
@@ -21808,9 +21808,9 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Naowh",
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "THICKOUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "THICKOUTLINE",
 					["text_anchorPoint"] = "OUTER_RIGHT",
 					["text_anchorYOffset"] = 7,
 					["text_shadowXOffset"] = 0,
@@ -21846,13 +21846,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Naowh",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = -11,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "THICKOUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "OUTER_RIGHT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = -11,
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -21896,7 +21896,7 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["width"] = 40,
 			["url"] = "https://wago.io/JiQILDF99/1",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -21972,11 +21972,11 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["semver"] = "1.0.0",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["color"] = {
@@ -22090,7 +22090,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sort"] = "none",
 			["animation"] = {
 				["start"] = {
@@ -22113,18 +22113,18 @@ WeakAurasSaved = {
 				},
 			},
 			["align"] = "CENTER",
-			["animate"] = false,
+			["borderInset"] = 1,
+			["yOffset"] = 250,
 			["sortHybridTable"] = {
 				["Info - ThreatSituation"] = false,
 			},
-			["yOffset"] = 250,
 			["stagger"] = 0,
-			["authorOptions"] = {
-			},
+			["anchorPoint"] = "CENTER",
 			["version"] = 2,
 			["subRegions"] = {
 			},
-			["radius"] = 200,
+			["authorOptions"] = {
+			},
 			["selfPoint"] = "TOP",
 			["load"] = {
 				["use_class"] = false,
@@ -22154,8 +22154,8 @@ WeakAurasSaved = {
 				0.65000000596047, -- [4]
 			},
 			["uid"] = "WiRsd0lRNQ2",
+			["animate"] = false,
 			["source"] = "import",
-			["anchorPoint"] = "CENTER",
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -22174,23 +22174,23 @@ WeakAurasSaved = {
 			["anchorFrameFrame"] = "PlayerFrame",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderInset"] = 1,
+			["rotation"] = 0,
 			["config"] = {
 			},
-			["rotation"] = 0,
 			["rowSpace"] = 1,
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
 			["borderColor"] = {
 				0.086274509803922, -- [1]
 				0.090196078431373, -- [2]
 				0.10196078431373, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["radius"] = 200,
 		},
 		["Barkskin"] = {
 			["sparkWidth"] = 10,
@@ -22203,7 +22203,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -22278,7 +22278,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -22336,10 +22336,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -22414,22 +22414,22 @@ WeakAurasSaved = {
 			["uid"] = "HdtE8HQQup1",
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Barkskin",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["zoom"] = 0.3,
 			["spark"] = false,
 			["useCooldownModRate"] = true,
-			["id"] = "Barkskin",
+			["sparkHidden"] = "NEVER",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -22462,8 +22462,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -22520,7 +22520,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -22577,13 +22577,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -22629,7 +22629,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -22645,14 +22645,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Constricting Chains",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -22728,7 +22728,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -22813,7 +22813,7 @@ WeakAurasSaved = {
 				},
 			},
 			["authorMode"] = true,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["config"] = {
 				["macro"] = {
 					["text"] = "/cast Conjure Mana Citrine",
@@ -22864,14 +22864,14 @@ WeakAurasSaved = {
 			},
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "Citrine",
 			["auto"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["uid"] = "fPDDaU)G8Wc",
 			["inverse"] = false,
 			["cooldownEdge"] = false,
@@ -22911,7 +22911,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Druid",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -22991,7 +22991,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -23042,9 +23042,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -23132,21 +23132,21 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Survival Instincts",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["zoom"] = 0.3,
 			["auto"] = false,
 			["useCooldownModRate"] = true,
-			["id"] = "Survival Instincts",
+			["sparkHidden"] = "NEVER",
 			["cooldownTextDisabled"] = false,
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["uid"] = "rI)J8bFeXRZ",
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -23271,9 +23271,9 @@ WeakAurasSaved = {
 						["use_requirePowerType"] = true,
 						["use_percentpower"] = false,
 						["subeventSuffix"] = "_CAST_START",
+						["health"] = "0",
 						["spellIds"] = {
 						},
-						["health"] = "0",
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
@@ -23292,7 +23292,7 @@ WeakAurasSaved = {
 				["spellknown"] = 1822,
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23475,9 +23475,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -23490,7 +23490,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -23529,7 +23529,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -23540,7 +23540,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -23630,31 +23630,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "vxG)cuf9NrH",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Truesilver Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -23662,7 +23662,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Loss of Control Alert (WOTLK)"] = {
 			["controlledChildren"] = {
@@ -23710,7 +23710,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23768,21 +23768,21 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert (WOTLK)",
-			["borderInset"] = 1,
+			["uid"] = "RaWaTrdL9bd",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
+			["groupIcon"] = 136071,
+			["borderInset"] = 1,
+			["authorOptions"] = {
+			},
 			["config"] = {
 			},
-			["groupIcon"] = 136071,
-			["uid"] = "RaWaTrdL9bd",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["DRUID / ROGUE"] = {
 			["controlledChildren"] = {
@@ -23835,7 +23835,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "BOTTOMLEFT",
 			["version"] = 14,
 			["subRegions"] = {
@@ -23878,18 +23878,10 @@ WeakAurasSaved = {
 			["id"] = "DRUID / ROGUE",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
 			["config"] = {
 			},
-			["borderInset"] = 1,
-			["xOffset"] = 0,
 			["uid"] = "IUvIXiYBA4q",
-			["conditions"] = {
-			},
-			["information"] = {
-				["groupOffset"] = true,
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23910,6 +23902,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["groupOffset"] = true,
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["borderInset"] = 1,
 		},
 		["Azjol'Nerub - Acid Cloud"] = {
 			["iconSource"] = 0,
@@ -23934,8 +23934,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -23986,7 +23986,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -24043,13 +24043,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -24095,7 +24095,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -24111,14 +24111,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Acid Cloud",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -24158,9 +24158,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["duration"] = "1",
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_itemName"] = true,
 						["use_unit"] = true,
@@ -24172,7 +24172,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -24222,7 +24222,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -24236,7 +24236,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 				}, -- [2]
 				{
 					["glowFrequency"] = 0,
@@ -24290,32 +24290,25 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
-			["parent"] = "Ore Count",
 			["cooldownEdge"] = false,
+			["parent"] = "Ore Count",
 			["regionType"] = "icon",
 			["cooldown"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["useTooltip"] = true,
 			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
 			["anchorFrameParent"] = false,
-			["cooldownTextDisabled"] = false,
-			["width"] = 40,
 			["zoom"] = 0.3,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Iron Ore",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "WbgHXRR3HGd",
 			["inverse"] = false,
 			["selfPoint"] = "CENTER",
@@ -24324,7 +24317,14 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 		},
 		["target cast bar - interruptable"] = {
 			["sparkWidth"] = 20,
@@ -24448,7 +24448,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["endAngle"] = 360,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -24506,7 +24506,7 @@ WeakAurasSaved = {
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_n_format"] = "none",
-					["text_text_format_p_time_legacy_floor"] = false,
+					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["anchorXOffset"] = 0,
@@ -24521,8 +24521,8 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Homespun (xCT+)",
-					["text_anchorYOffset"] = -2,
 					["text_shadowYOffset"] = -1,
+					["text_anchorYOffset"] = -2,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -24531,7 +24531,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_fontSize"] = 30,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 				}, -- [4]
 				{
 					["text_shadowXOffset"] = 1,
@@ -24720,8 +24720,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -24742,8 +24742,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -24771,7 +24771,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -24828,13 +24828,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -24880,7 +24880,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -24896,14 +24896,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Poison Cloud",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -25078,9 +25078,9 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_visible"] = true,
-					["text_shadowYOffset"] = 0,
 					["text_text_format_t_time_mod_rate"] = true,
+					["text_shadowYOffset"] = 0,
+					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
@@ -25112,7 +25112,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = -5,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -25126,7 +25126,7 @@ WeakAurasSaved = {
 					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = -5,
+					["text_shadowYOffset"] = 0,
 				}, -- [6]
 				{
 					["text_text_format_p_time_format"] = 0,
@@ -25157,10 +25157,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_precision"] = 1,
@@ -25212,18 +25212,18 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["config"] = {
 			},
 			["authorOptions"] = {
 			},
 			["useCooldownModRate"] = true,
 			["auto"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["semver"] = "1.0.1",
 			["tocversion"] = 20501,
 			["id"] = "VrIcon",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
 			["width"] = 65.000114440918,
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
@@ -25260,8 +25260,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -25282,8 +25282,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "event",
 						["duration"] = "3",
@@ -25311,7 +25311,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -25368,13 +25368,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -25420,7 +25420,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -25436,14 +25436,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Mangling Slash",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -25476,8 +25476,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -25585,7 +25585,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -25695,7 +25695,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -25711,14 +25711,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Radiance",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -25780,7 +25780,7 @@ WeakAurasSaved = {
 					["type"] = "subbackground",
 				}, -- [1]
 			},
-			["displayText_format_p_format"] = "timed",
+			["selfPoint"] = "BOTTOM",
 			["load"] = {
 				["use_class"] = true,
 				["talent"] = {
@@ -25802,6 +25802,14 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
+			["parent"] = "VictoryRush",
+			["fontSize"] = 25,
+			["displayText_format_p_time_format"] = 0,
+			["conditions"] = {
+			},
+			["shadowXOffset"] = 1,
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["displayText_format_p_format"] = "timed",
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -25822,17 +25830,11 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["fontSize"] = 25,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["regionType"] = "text",
+			["config"] = {
 			},
-			["conditions"] = {
-			},
-			["shadowXOffset"] = 1,
 			["displayText"] = "%p",
+			["internalVersion"] = 70,
 			["actions"] = {
 				["start"] = {
 				},
@@ -25841,13 +25843,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["selfPoint"] = "BOTTOM",
-			["regionType"] = "text",
-			["config"] = {
-			},
-			["parent"] = "VictoryRush",
-			["displayText_format_p_time_format"] = 0,
-			["displayText_format_p_time_dynamic_threshold"] = 60,
 			["displayText_format_p_time_precision"] = 1,
 			["wordWrap"] = "WordWrap",
 			["automaticWidth"] = "Auto",
@@ -25855,13 +25850,18 @@ WeakAurasSaved = {
 			["justify"] = "LEFT",
 			["tocversion"] = 20501,
 			["id"] = "Runic Power Bar",
-			["xOffset"] = 0,
+			["displayText_format_p_time_mod_rate"] = true,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["outline"] = "OUTLINE",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["uid"] = "zJElfbtH)WS",
-			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
+			["yOffset"] = 30,
+			["xOffset"] = 0,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -25873,7 +25873,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["yOffset"] = 30,
+			["outline"] = "OUTLINE",
 		},
 		["Tems Wotlk Dungeon Pack - Text"] = {
 			["grow"] = "DOWN",
@@ -25927,14 +25927,18 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sort"] = "none",
 			["selfPoint"] = "TOP",
 			["align"] = "CENTER",
-			["source"] = "import",
-			["radius"] = 200,
+			["parent"] = "Tems Wotlk Dungeon Pack",
 			["space"] = 10,
+			["radius"] = 200,
 			["stagger"] = 0,
+			["arcLength"] = 360,
+			["version"] = 10,
+			["subRegions"] = {
+			},
 			["sortHybridTable"] = {
 				["Defense Protocol - Rallying Cry Chosen"] = false,
 				["Defense Protocol - Gamma Buffs Missing"] = false,
@@ -25942,29 +25946,6 @@ WeakAurasSaved = {
 				["Defense Protocol - Shield of Thorns Chosen"] = false,
 				["Wotlk Dungeons - Helper"] = false,
 				["Defense Protocol - Shatter Defenses Chosen"] = false,
-			},
-			["version"] = 10,
-			["subRegions"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
 			},
 			["fullCircle"] = true,
 			["load"] = {
@@ -25992,9 +25973,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["borderInset"] = 1,
+			["uid"] = "ARGhqRRdc1v",
 			["animate"] = false,
-			["arcLength"] = 360,
+			["borderInset"] = 1,
 			["scale"] = 1.2,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -26002,7 +25983,7 @@ WeakAurasSaved = {
 			["stepAngle"] = 15,
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["uid"] = "ARGhqRRdc1v",
+			["yOffset"] = 200,
 			["frameStrata"] = 1,
 			["constantFactor"] = "RADIUS",
 			["rotation"] = 0,
@@ -26013,16 +25994,35 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "Tems Wotlk Dungeon Pack",
+			["source"] = "import",
 			["config"] = {
 			},
-			["yOffset"] = 200,
 			["useLimit"] = false,
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 		},
 		["Utgarde Pinnacle - Terrifying Roar"] = {
 			["iconSource"] = 0,
@@ -26047,8 +26047,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -26110,7 +26110,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -26220,7 +26220,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -26236,14 +26236,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Terrifying Roar",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -26297,7 +26297,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -26362,14 +26362,14 @@ WeakAurasSaved = {
 			},
 			["borderInset"] = 1,
 			["uid"] = "BqsbsH4)Oho",
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["selfPoint"] = "CENTER",
 		},
 		["Lifeblood"] = {
 			["sparkWidth"] = 10,
@@ -26378,7 +26378,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -26432,7 +26432,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
@@ -26515,10 +26515,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -26593,22 +26593,22 @@ WeakAurasSaved = {
 			["uid"] = "k49FGcBEIyS",
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Lifeblood",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["zoom"] = 0.3,
 			["spark"] = false,
 			["frameStrata"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Lifeblood",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -26641,8 +26641,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -26665,8 +26665,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "10",
@@ -26695,7 +26695,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -26752,13 +26752,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -26804,7 +26804,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -26820,14 +26820,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Whirling Slash",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -26860,8 +26860,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -26924,7 +26924,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -27034,7 +27034,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -27050,14 +27050,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Leeching Poison",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -27073,7 +27073,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Hunter",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -27127,7 +27127,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -27223,10 +27223,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -27285,16 +27285,16 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Sniper Training",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Sniper Training",
 			["cooldownTextDisabled"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["width"] = 40,
 			["auto"] = false,
 			["sparkColor"] = {
@@ -27304,7 +27304,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -27338,9 +27338,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_absorbMode"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["names"] = {
 						},
@@ -27385,7 +27385,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -27396,7 +27396,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -27463,15 +27463,17 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["anchorFrameType"] = "SCREEN",
+			["internalVersion"] = 70,
 			["authorOptions"] = {
 			},
-			["internalVersion"] = 69,
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["regionType"] = "icon",
 			["animation"] = {
@@ -27500,11 +27502,11 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["alpha"] = 1,
 			["frameStrata"] = 1,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Gold Ore",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["useCooldownModRate"] = true,
 			["width"] = 40,
 			["useTooltip"] = true,
@@ -27522,13 +27524,11 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Azjol'Nerub - Enrage"] = {
@@ -27554,8 +27554,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -27604,7 +27604,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -27661,13 +27661,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -27713,7 +27713,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -27729,14 +27729,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Enrage",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -27747,22 +27747,20 @@ WeakAurasSaved = {
 			},
 		},
 		["Merfin: Equipped Items"] = {
-			["arcLength"] = 360,
+			["grow"] = "LEFT",
 			["controlledChildren"] = {
 				"Equipped Items - Icon", -- [1]
 			},
 			["borderBackdrop"] = "Blizzard Tooltip",
 			["wagoID"] = "UfCxcQfAm",
-			["xOffset"] = -140,
-			["preferToUpdate"] = false,
-			["yOffset"] = -55,
-			["anchorPoint"] = "CENTER",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
+			["preferToUpdate"] = false,
+			["groupIcon"] = 134148,
+			["anchorPoint"] = "CENTER",
+			["borderEdge"] = "Square Full White",
+			["uid"] = "5owwB2ABtm2",
+			["fullCircle"] = true,
 			["space"] = 3,
 			["url"] = "https://wago.io/UfCxcQfAm/26",
 			["actions"] = {
@@ -27792,8 +27790,59 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["radius"] = 200,
-			["grow"] = "LEFT",
+			["internalVersion"] = 70,
+			["arcLength"] = 360,
+			["useLimit"] = false,
+			["align"] = "RIGHT",
+			["xOffset"] = -140,
+			["yOffset"] = -55,
+			["desc"] = "Merfin: Equipped Items\n\nAuthor - Merfin\nDiscord - https://discord.gg/q9z5Az6",
+			["stagger"] = 0,
+			["rotation"] = 0,
+			["version"] = 26,
+			["subRegions"] = {
+			},
+			["gridType"] = "RD",
+			["borderInset"] = 1,
+			["load"] = {
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["rowSpace"] = 1,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
+			["source"] = "import",
+			["frameStrata"] = 1,
+			["scale"] = 0.95,
+			["centerType"] = "LR",
+			["border"] = false,
+			["anchorFrameFrame"] = "ElvUF_Player",
+			["stepAngle"] = 15,
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["selfPoint"] = "BOTTOMRIGHT",
+			["regionType"] = "dynamicgroup",
+			["anchorFrameParent"] = false,
+			["constantFactor"] = "RADIUS",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -27814,80 +27863,31 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["align"] = "RIGHT",
-			["authorOptions"] = {
-			},
-			["groupIcon"] = 134148,
-			["desc"] = "Merfin: Equipped Items\n\nAuthor - Merfin\nDiscord - https://discord.gg/q9z5Az6",
-			["stagger"] = 0,
-			["gridType"] = "RD",
-			["version"] = 26,
-			["subRegions"] = {
-			},
-			["animate"] = true,
-			["rotation"] = 0,
-			["load"] = {
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["fullCircle"] = true,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["rowSpace"] = 1,
-			["source"] = "import",
-			["internalVersion"] = 69,
-			["scale"] = 0.95,
-			["customAnchor"] = "function()\n    if ElvUI then\n        return ElvUF_Player\n    else\n        return UIParent\n    end\nend",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["stepAngle"] = 15,
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["selfPoint"] = "BOTTOMRIGHT",
-			["sortHybridTable"] = {
-				["Equipped Items - Icon"] = false,
-			},
-			["borderInset"] = 1,
-			["anchorFrameParent"] = false,
-			["constantFactor"] = "RADIUS",
-			["anchorFrameFrame"] = "ElvUF_Player",
 			["borderOffset"] = 4,
 			["semver"] = "1.0.25",
 			["tocversion"] = 30400,
 			["id"] = "Merfin: Equipped Items",
+			["sort"] = "none",
 			["gridWidth"] = 5,
-			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["centerType"] = "LR",
+			["radius"] = 200,
 			["config"] = {
 			},
-			["regionType"] = "dynamicgroup",
-			["sort"] = "none",
-			["useLimit"] = false,
+			["animate"] = true,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["uid"] = "5owwB2ABtm2",
+			["sortHybridTable"] = {
+				["Equipped Items - Icon"] = false,
+			},
 		},
 		["Judgement of Light"] = {
 			["sparkWidth"] = 10,
@@ -27900,7 +27900,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -27949,7 +27949,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["xOffset"] = 0,
@@ -28025,9 +28025,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -28063,13 +28063,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 25,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["anchorYOffset"] = 0,
@@ -28154,22 +28154,22 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Judgement of Light",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 40,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["spark"] = false,
 			["useCooldownModRate"] = true,
-			["id"] = "Judgement of Light",
-			["zoom"] = 0.3,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["sparkHidden"] = "NEVER",
+			["cooldownTextDisabled"] = false,
 			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -28198,8 +28198,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -28221,9 +28221,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HARMFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "combatlog",
 						["subeventPrefix"] = "SPELL",
@@ -28259,9 +28259,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HARMFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "combatlog",
 						["subeventPrefix"] = "SPELL",
@@ -28291,7 +28291,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -28348,13 +28348,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -28400,7 +28400,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -28416,14 +28416,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Ball Lightning",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -28518,7 +28518,7 @@ WeakAurasSaved = {
 				}, -- [3]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["wordWrap"] = "WordWrap",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
@@ -28553,39 +28553,9 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 24,
 			["shadowXOffset"] = 1,
-			["displayText_format_c_format"] = "none",
-			["regionType"] = "text",
 			["preferToUpdate"] = false,
-			["parent"] = "TARGET HP PERCENT",
-			["fixedWidth"] = 200,
-			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
-			["justify"] = "LEFT",
-			["tocversion"] = 11306,
-			["id"] = "MobHPPercentGREEN",
-			["shadowYOffset"] = -1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "eckTlXrxzPt",
-			["semver"] = "1.0.1",
-			["selfPoint"] = "BOTTOM",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
+			["regionType"] = "text",
+			["displayText_format_c_format"] = "none",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -28606,6 +28576,36 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["fixedWidth"] = 200,
+			["anchorFrameParent"] = false,
+			["automaticWidth"] = "Auto",
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["semver"] = "1.0.1",
+			["tocversion"] = 11306,
+			["id"] = "MobHPPercentGREEN",
+			["shadowYOffset"] = -1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "eckTlXrxzPt",
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["parent"] = "TARGET HP PERCENT",
 		},
 		["Retaliation"] = {
 			["sparkWidth"] = 10,
@@ -28613,7 +28613,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -28687,7 +28687,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -28738,9 +28738,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -28829,16 +28829,16 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Retaliation",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["cooldownTextDisabled"] = false,
 			["auto"] = false,
 			["frameStrata"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Retaliation",
 			["zoom"] = 0.3,
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["sparkColor"] = {
@@ -28848,7 +28848,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -28909,7 +28909,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["parent"] = "Vermin Druid",
@@ -28977,9 +28977,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -29065,14 +29065,14 @@ WeakAurasSaved = {
 			["sparkHidden"] = "NEVER",
 			["icon_side"] = "RIGHT",
 			["alpha"] = 1,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["cooldownTextDisabled"] = false,
-			["zoom"] = 0.3,
-			["auto"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = false,
+			["zoom"] = 0.3,
 			["id"] = "Dash",
-			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "YJ1QoxqN6FH",
@@ -29117,8 +29117,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -29318,7 +29318,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -29428,7 +29428,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -29468,14 +29468,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Staggering Roar",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -29508,8 +29508,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -29532,8 +29532,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "target",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -29561,7 +29561,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -29668,13 +29668,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOM",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [4]
 			},
 			["height"] = 41,
@@ -29707,7 +29707,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -29723,14 +29723,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Arcane Tempo",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -29791,26 +29791,7 @@ WeakAurasSaved = {
 			["rotation"] = 0,
 			["config"] = {
 			},
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["xOffset"] = -135,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -29836,22 +29817,22 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["xOffset"] = -135,
+			["stagger"] = 0,
 			["animate"] = true,
-			["space"] = 2,
+			["fullCircle"] = true,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["borderEdge"] = "Square Full White",
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["stagger"] = 0,
 			["selfPoint"] = "RIGHT",
+			["borderEdge"] = "Square Full White",
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["gridWidth"] = 5,
 			["id"] = "Vermin Priest",
 			["borderInset"] = 1,
@@ -29859,14 +29840,33 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["gridType"] = "RD",
 			["uid"] = "S3ES06vW5Vw",
-			["fullCircle"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["arcLength"] = 360,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["arcLength"] = 360,
+			["space"] = 2,
 		},
 		["Trial of the Champion - Waking Nightmare"] = {
 			["iconSource"] = 0,
@@ -29891,8 +29891,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -29954,7 +29954,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -30064,7 +30064,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -30080,14 +30080,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Waking Nightmare",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -30157,7 +30157,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -30242,7 +30242,7 @@ WeakAurasSaved = {
 				},
 			},
 			["authorMode"] = true,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["uid"] = "UvSV5jPJMlO",
 			["xOffset"] = 120,
 			["parent"] = "GEMS",
@@ -30284,14 +30284,14 @@ WeakAurasSaved = {
 			["selfPoint"] = "CENTER",
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "Ruby",
 			["auto"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 				["macro"] = {
 					["text"] = "/cast Conjure Mana Ruby",
@@ -30391,31 +30391,6 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["stepAngle"] = 15,
 			["stagger"] = 0,
-			["arcLength"] = 360,
-			["version"] = 1,
-			["subRegions"] = {
-			},
-			["selfPoint"] = "LEFT",
-			["gridType"] = "RD",
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -30436,13 +30411,38 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["version"] = 1,
+			["subRegions"] = {
+			},
+			["fullCircle"] = true,
+			["selfPoint"] = "LEFT",
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["gridType"] = "RD",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animate"] = false,
 			["rotation"] = 0,
 			["scale"] = 0.6,
@@ -30475,7 +30475,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["fullCircle"] = true,
+			["arcLength"] = 360,
 		},
 		["Utgarde Pinnacle - Screams of the Dead"] = {
 			["iconSource"] = 0,
@@ -30500,8 +30500,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -30561,7 +30561,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -30671,7 +30671,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -30687,14 +30687,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Screams of the Dead",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -30727,8 +30727,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -30751,8 +30751,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -30781,7 +30781,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -30838,13 +30838,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -30890,7 +30890,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -30906,14 +30906,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Numbing Shout",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -30964,7 +30964,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -31062,13 +31062,13 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Bottom",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 200,
-			["uid"] = "MZtnL7eKvGn",
 			["config"] = {
 			},
+			["uid"] = "MZtnL7eKvGn",
 			["parent"] = "Loss of Control Alert (WOTLK)",
 			["conditions"] = {
 			},
@@ -31215,7 +31215,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return trigger[1] and (trigger[2] or trigger[3] or trigger[7] or (trigger[4] and (trigger[5] or trigger[6])));\nend",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -31288,7 +31288,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["justify"] = "LEFT",
+			["semver"] = "1.0.4",
 			["tocversion"] = 30400,
 			["id"] = "Melee Range Reminder",
 			["config"] = {
@@ -31297,7 +31297,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
 			["uid"] = "0XxQZlEF0)k",
-			["semver"] = "1.0.4",
+			["justify"] = "LEFT",
 			["wordWrap"] = "WordWrap",
 			["shadowColor"] = {
 				0, -- [1]
@@ -31335,8 +31335,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -31383,7 +31383,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -31440,13 +31440,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -31492,7 +31492,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -31508,14 +31508,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Vanish",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -31579,7 +31579,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -31697,9 +31697,9 @@ WeakAurasSaved = {
 			["parent"] = "DRUID / ROGUE",
 			["frameStrata"] = 2,
 			["width"] = 67,
-			["uid"] = "q5EKjjhf3aN",
 			["config"] = {
 			},
+			["uid"] = "q5EKjjhf3aN",
 			["selfPoint"] = "CENTER",
 			["anchorFrameType"] = "SCREEN",
 			["conditions"] = {
@@ -31734,8 +31734,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -31799,7 +31799,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -31856,13 +31856,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -31908,7 +31908,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -31924,14 +31924,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Mirrored Soul",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -31964,8 +31964,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -32025,7 +32025,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -32135,7 +32135,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -32151,14 +32151,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Whirlwind",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -32228,7 +32228,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -32285,13 +32285,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -32337,7 +32337,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -32353,14 +32353,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Brood Rage",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -32423,20 +32423,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["use_class"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_class"] = false,
+				["race"] = {
 					["multi"] = {
 					},
 				},
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -32484,18 +32484,18 @@ WeakAurasSaved = {
 						["powertype"] = 0,
 						["use_powertype"] = true,
 						["custom_hide"] = "timed",
-						["health_operator"] = ">=",
+						["unevent"] = "auto",
 						["type"] = "unit",
 						["use_health"] = true,
-						["unevent"] = "auto",
+						["health_operator"] = ">=",
 						["genericShowOn"] = "showOnActive",
 						["subeventSuffix"] = "_CAST_START",
 						["use_requirePowerType"] = true,
 						["use_percentpower"] = false,
 						["duration"] = "1",
-						["health"] = "0",
 						["spellIds"] = {
 						},
+						["health"] = "0",
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
@@ -32509,7 +32509,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32791,13 +32791,13 @@ WeakAurasSaved = {
 						["custom_type"] = "event",
 						["unit"] = "group",
 						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Cast",
+						["use_spellNames"] = true,
 						["events"] = "PLAYER_DIFFICULTY_CHANGED,PLAYER_ENTERING_WORLD,WA_DELAYED_PLAYER_ENTERING_WORLD, LOADING_SCREEN_DISABLED",
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["use_spellNames"] = true,
+						["event"] = "Cast",
 						["check"] = "event",
 						["names"] = {
 						},
@@ -32930,7 +32930,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_format"] = "timed",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -32987,10 +32987,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -33024,10 +33024,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -33061,10 +33061,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -33098,10 +33098,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -33135,10 +33135,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 20,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -33168,8 +33168,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				0, -- [4]
 			},
-			["displayText_format_p_time_precision"] = 1,
 			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["width"] = 30,
 			["useCooldownModRate"] = true,
 			["wordWrap"] = "WordWrap",
@@ -33282,13 +33282,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["do_sound"] = false,
-					["message_custom"] = "function() return UnitName(\"player\") end",
 					["message_format_unitName_format"] = "none",
-					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_format_c_format"] = "none",
 					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
+					["message_type"] = "SAY",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -33346,17 +33346,17 @@ WeakAurasSaved = {
 			["uid"] = "GeJH4MmkKtX",
 			["fixedWidth"] = 200,
 			["model_st_tz"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
+			["outline"] = "OUTLINE",
+			["cooldown"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "8n36Ga60R",
 			["color"] = {
 				1, -- [1]
 				0.011764707043767, -- [2]
 				0.047058828175068, -- [3]
 				1, -- [4]
 			},
-			["outline"] = "OUTLINE",
-			["cooldown"] = true,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "8n36Ga60R",
-			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
 			["authorOptions"] = {
 			},
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
@@ -33364,9 +33364,9 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["model_x"] = 0,
 			["cooldownSwipe"] = true,
-			["automaticWidth"] = "Auto",
-			["customTextUpdate"] = "update",
 			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
 			["advance"] = false,
 			["triggers"] = {
 				{
@@ -33392,7 +33392,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = "~=",
 						["subeventPrefix"] = "SPELL",
@@ -33403,14 +33403,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "unit",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -33424,7 +33424,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -33454,7 +33454,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = "~=",
 						["subeventPrefix"] = "SPELL",
@@ -33465,14 +33465,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "unit",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -33486,7 +33486,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -33516,7 +33516,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = "~=",
 						["subeventPrefix"] = "SPELL",
@@ -33527,14 +33527,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "unit",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -33548,7 +33548,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -33578,7 +33578,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = "~=",
 						["subeventPrefix"] = "SPELL",
@@ -33589,14 +33589,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "unit",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -33610,7 +33610,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -33640,7 +33640,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = "~=",
 						["subeventPrefix"] = "SPELL",
@@ -33651,14 +33651,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "unit",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "unit",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -33672,7 +33672,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -33708,11 +33708,11 @@ WeakAurasSaved = {
 			},
 			["model_st_ty"] = 0,
 			["alpha"] = 1,
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["width"] = 80,
 			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -33785,7 +33785,7 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "NAMEPLATE",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayIcon"] = 135731,
 			["inverse"] = false,
 			["scale"] = 1,
@@ -33826,8 +33826,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -33881,7 +33881,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -33938,13 +33938,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -33990,7 +33990,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -34006,14 +34006,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Ooze",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -34046,8 +34046,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -34102,7 +34102,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -34159,13 +34159,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -34211,7 +34211,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -34227,14 +34227,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Deep Freeze",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -34282,7 +34282,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -34453,8 +34453,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -34518,7 +34518,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -34575,13 +34575,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -34624,13 +34624,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [4]
 			},
 			["height"] = 41,
@@ -34663,7 +34663,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -34705,14 +34705,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Azjol'Nerub - Pound",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -34816,7 +34816,7 @@ WeakAurasSaved = {
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
 			["useglowColor"] = false,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["glowXOffset"] = 0,
 			["animation"] = {
 				["start"] = {
@@ -34868,9 +34868,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_format"] = 0,
 					["text_shadowYOffset"] = -1,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "None",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_shadowColor"] = {
 						0, -- [1]
@@ -35180,10 +35180,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_genericShowOn"] = true,
-						["useName"] = false,
+						["type"] = "aura2",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["use_threatUnit"] = true,
 						["use_npcId"] = false,
 						["threatUnit"] = "target",
@@ -35193,7 +35193,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_aggro"] = true,
-						["type"] = "aura2",
+						["useName"] = false,
 						["unit"] = "party",
 						["useAffected"] = false,
 						["useExactSpellId"] = false,
@@ -35253,8 +35253,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0, -- [1]
 						0.54901960784314, -- [2]
@@ -35275,7 +35275,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Wotlk Dungeons - Poison",
 			["color"] = {
 				1, -- [1]
@@ -35284,8 +35284,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -35331,8 +35331,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -35394,7 +35394,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -35504,7 +35504,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -35520,14 +35520,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Lava Burn",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -35560,8 +35560,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -35625,7 +35625,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -35682,13 +35682,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -35734,7 +35734,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -35750,14 +35750,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Corrupted Soul Fragment",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -35790,8 +35790,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -35860,7 +35860,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -35917,13 +35917,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -35969,7 +35969,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -35985,14 +35985,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Healthy Mushroom",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -36143,8 +36143,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
 				["use_alive"] = true,
+				["use_combat"] = true,
 				["level_operator"] = {
 					">=", -- [1]
 				},
@@ -36191,16 +36191,16 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["uid"] = "OjIToprvHv1",
 			["url"] = "https://wago.io/v9qxdDgI4/2",
 			["alpha"] = 1,
 			["semver"] = "1.0.1",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 20501,
 			["id"] = "PALADIN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["authorOptions"] = {
@@ -36364,8 +36364,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -36386,7 +36386,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Trial of the Champion - Death's Respite Glow",
 			["color"] = {
 				1, -- [1]
@@ -36395,8 +36395,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -36442,8 +36442,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -36466,8 +36466,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -36496,7 +36496,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -36553,13 +36553,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -36606,7 +36606,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -36622,14 +36622,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Charge Up",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -36648,7 +36648,7 @@ WeakAurasSaved = {
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["internalVersion"] = 69,
+			["useCooldownModRate"] = true,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -36701,29 +36701,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["useTooltip"] = false,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["sparkOffsetX"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -36790,22 +36771,17 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
 				}, -- [3]
 			},
 			["height"] = 36,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -36837,29 +36813,53 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["uid"] = "mvVQbk(FsV5",
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["desaturate"] = false,
-			["uid"] = "mvVQbk(FsV5",
-			["sparkOffsetX"] = 0,
 			["width"] = 36,
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["useCooldownModRate"] = true,
 			["frameStrata"] = 1,
+			["desaturate"] = false,
 			["icon_side"] = "RIGHT",
 			["sparkHidden"] = "NEVER",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["auto"] = false,
-			["zoom"] = 0.3,
-			["spark"] = false,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = false,
+			["zoom"] = 0.3,
 			["id"] = "Second Wind",
 			["cooldownTextDisabled"] = false,
 			["alpha"] = 1,
@@ -36935,7 +36935,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -36947,9 +36947,9 @@ WeakAurasSaved = {
 					["duration"] = "100",
 					["use_color"] = true,
 					["alpha"] = 0,
-					["colorType"] = "custom",
-					["y"] = 0,
 					["x"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
 					["rotate"] = 0,
 					["colorA"] = 1,
 					["colorFunc"] = "function()\n    local c =  select(2, UnitClass('player'))\n    local cl = RAID_CLASS_COLORS[c]\n    \n    local hs = IsCurrentSpell( select(7,GetSpellInfo('Heroic Strike')) )\n    local cleave = IsCurrentSpell(select(7,GetSpellInfo('Cleave')))\n    local runestrike = IsCurrentSpell(select(7,GetSpellInfo('Rune Strike')))\n    local raptorstrike = IsCurrentSpell(select(7,GetSpellInfo('Raptor Strike')))\n    local maul = IsCurrentSpell(select(7,GetSpellInfo('Maul')))\n    \n    if hs then \n        return 168/255,45/255,20/255,1\n    end\n    \n    if cleave then \n        return 152/255,192/255,42/255,1\n    end\n    \n    if runestrike then \n        return 24/255,105/255,119/255,1\n    end\n    \n    if raptorstrike then \n        return 154/255,194/255,212/255,1\n    end\n    \n    if maul then \n        return 96/255,100/255,126/255,1\n    end\n    \n    return cl.r,cl.g,cl.b,1\nend",
@@ -37025,10 +37025,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "None",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_fontType"] = "None",
+					["text_visible"] = false,
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_precision"] = 1,
@@ -37224,26 +37224,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 121.503601074219,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
+			["fullCircle"] = true,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -37283,9 +37264,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
+			["arcLength"] = 360,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["useLimit"] = false,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -37293,8 +37274,27 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["arcLength"] = 360,
 			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
 			},
 			["constantFactor"] = "RADIUS",
 			["sort"] = "none",
@@ -37308,15 +37308,15 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "N5YikxjcJsU",
-			["internalVersion"] = 69,
-			["useLimit"] = false,
+			["gridType"] = "RD",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 		},
 		["Druid - CP5"] = {
 			["color"] = {
@@ -37372,7 +37372,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -37488,9 +37488,9 @@ WeakAurasSaved = {
 			["parent"] = "DRUID / ROGUE",
 			["frameStrata"] = 2,
 			["width"] = 69,
-			["uid"] = "klWFLF0NXf8",
 			["config"] = {
 			},
+			["uid"] = "klWFLF0NXf8",
 			["selfPoint"] = "CENTER",
 			["anchorFrameType"] = "SCREEN",
 			["conditions"] = {
@@ -37525,8 +37525,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -37549,8 +37549,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -37578,7 +37578,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -37635,13 +37635,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -37687,7 +37687,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -37703,14 +37703,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Mojo",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -37779,7 +37779,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -37881,10 +37881,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -37931,7 +37931,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["uid"] = "8gslC0ziYq6",
 			["icon_side"] = "RIGHT",
 			["authorOptions"] = {
@@ -37939,16 +37939,16 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["spark"] = false,
-			["id"] = "Clearcasting",
+			["alpha"] = 1,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = false,
 			["sparkHidden"] = "NEVER",
+			["id"] = "Clearcasting",
 			["config"] = {
 			},
 			["frameStrata"] = 1,
 			["width"] = 36,
-			["auto"] = false,
+			["spark"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -37964,7 +37964,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Defense Protocol - Titanic Power"] = {
 			["iconSource"] = 0,
@@ -37989,8 +37989,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -38013,8 +38013,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "target",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -38042,7 +38042,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -38170,13 +38170,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOM",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = false,
 				}, -- [5]
 			},
 			["height"] = 41,
@@ -38209,7 +38209,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -38253,14 +38253,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Titanic Power",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -38293,8 +38293,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -38350,7 +38350,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -38407,13 +38407,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -38459,7 +38459,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -38475,14 +38475,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Lightning Ring",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -38515,8 +38515,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -38614,7 +38614,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -38671,13 +38671,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -38723,7 +38723,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -38739,14 +38739,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Icy Blast",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -38803,7 +38803,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "BOTTOMLEFT",
 			["version"] = 1,
 			["subRegions"] = {
@@ -38914,7 +38914,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -38985,10 +38985,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -39015,7 +39015,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "ArchivoNarrow-Bold",
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = -2,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -39029,7 +39029,7 @@ WeakAurasSaved = {
 					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 16,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = -2,
+					["text_shadowYOffset"] = 0,
 				}, -- [5]
 				{
 					["border_size"] = 2,
@@ -39087,14 +39087,14 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
-			["url"] = "https://wago.io/UfCxcQfAm/26",
+			["zoom"] = 0.3,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["url"] = "https://wago.io/UfCxcQfAm/26",
 			["cooldown"] = false,
 			["regionType"] = "icon",
 			["conditions"] = {
@@ -39240,7 +39240,15 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["xOffset"] = 0,
-			["Homerqt"] = {
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+					["custom"] = "-- [itemId] = procId,\n-- [itemId] = { procId1, procId2 },\nlocal ITEM_DATA = {\n    [37111] = {60512, 60513, 60514, 60515}, [23835] = 99999, [23836] = 99999, [32782] = 41301, [24390] = 31794,\n    [28040] = 33662, [28041] = 33667, [28042] = 33668, [25829] = 33828,\n    [24551] = 32140, [27922] = { 33511, 33513 }, [27924] = { 33511, 33513 },\n    [24376] = 31771, [27927] = { 33522, 33523 }, [27926] = { 33522, 33523 },\n    [25787] = 32600, [25786] = 99999, [25619] = 32355, [25620] = 32355,\n    [28108] = 33759, [28109] = 33746, [25937] = 39200, [25936] = 39201,\n    [31856] = { 39439, 39441 }, [31858] = 99999, [31859] = 99999,\n    [31857] = 39443, [26055] = 33012, [27416] = 33014, [31617] = 33667,\n    [25628] = 32362, [25633] = 32362, [31615] = 33662, [32771] = 41263,\n    [29181] = 99999, [25634] = 32367, [32770] = 41261, [29776] = 35733,\n    [32864] = 40815, [30300] = 36372, [29370] = 35163, [29383] = 35166,\n    [29376] = 35165, [38290] = 51953, [38288] = 51954, [38287] = 51955,\n    [29387] = 35169, [38289] = 51952, [30293] = 36347, [28034] = { 33648, 33649 },\n    [27891] = 33479, [27900] = 33486, [30340] = 36432, [32658] = 40729,\n    [27683] = 33370, [27529] = 33089, [28288] = 33807, [34472] = 45053,\n    [28785] = 37658, [32654] = 40724, [28190] = 33370, [28370] = 34210,\n    [28121] = 34106, [28727] = 29601, [29132] = 35337, [28590] = 38332,\n    [24128] = 31047, [30346] = 99999, [28418] = 34321, [30841] = 37877,\n    [28528] = 34519, [32534] = 40538, [28223] = 34000, [30349] = 99999,\n    [29179] = 35337, [24126] = 31040, [27770] = 39228, [30343] = 99999,\n    [28235] = 99999, [30345] = 99999, [24125] = 31039, [30344] = 99999,\n    [34473] = 45058, [34471] = 45064, [28234] = 99999, [30350] = 99999,\n    [28237] = 99999, [24124] = 31038, [28242] = 99999, [30348] = 99999,\n    [28240] = 99999, [28239] = 99999, [30351] = 99999, [24127] = 31045,\n    [27828] = 33400, [28243] = 99999, [28238] = 99999, [28241] = 99999,\n    [28236] = 99999, [28830] = 34775, [28789] = 34747, [28823] = 37706,\n    [35702] = 46784, [35700] = 46783, [35694] = 46782, [35703] = 46785,\n    [35693] = 46780, [30627] = 42084, [30626] = 38348, [30720] = 37445,\n    [30447] = 37198, [30664] = { 37343, 37340, 37341, 37342, 37344 },\n    [30450] = 37174, [30619] = 38324, [37864] = 99999, [30620] = 38325,\n    [37865] = 99999, [30663] = 37243, [30665] = 40402, [30629] = 38351,\n    [30448] = 37508, [37128] = 48042, [37127] = 48041, [34029] = 43995,\n    [33831] = 43716, [33832] = 44055, [34050] = 44055, [34576] = 44055,\n    [34578] = 44055, [33829] = 43712, [34049] = 44055, [34580] = 44055,\n    [34163] = 44055, [34579] = 44055, [35326] = 44055, [35327] = 44055,\n    [34162] = 44055, [34577] = 44055, [33830] = 43713, [33828] = 43710,\n    [32505] = 40477, [32501] = 40464, [32483] = 40396, [32496] = 37656,\n    [34427] = 45040, [34429] = 45044, [34428] = 45049, [34430] = 45052,\n    [10725] = 99999, [41589] = 44055, [35935] = 47215, [38257] = 47816,\n    [36874] = 47816, [38073] = 33662, [38760] = 48875, [44308] = 60318,\n    \n    [21625] = 26467, [29387] = 35169, [38358] = 51353,\n    [40865] = 54808, [40767] = 55018, [43837] = 61617,\n    [38763] = 61426, [38764] = 61427, [38765] = 61428,\n    [43836] = 61620, [44013] = 59657, [44015] = 59657,\n    [44014] = 59658, [36993] = 60214, [36972] = 60471,\n    [38359] = 51348, [37064] = 60307, [37220] = 60218,\n    [37660] = 60479, [45131] = 63250, [45219] = 63250,\n    [37390] = 60302, [37264] = 60483, [37657] = 60520,\n    [40430] = 60525, [37844] = 60521, [37734] = 60517,\n    [37166] = 60305, [37638] = 60180, [37873] = 60480,\n    [37872] = 60215, [37723] = 60299, [42341] = 56121,\n    [44063] = 59757, [42418] = 56188, [42413] = 56186,\n    [42395] = 56184, [41121] = 55039,\n    [42987] = { 60229, 60233, 60234, 60235 },\n    [44253] = { 60229, 60233, 60234, 60235 },   \n    [44255] = { 60229, 60233, 60234, 60235 },\n    [44254] = { 60229, 60233, 60234, 60235 },\n    [42990] = 60203, [19288] = 23684, [42989] = 60196,\n    [42988] = 57350, [44912] = 60064, [40682] = 60064,\n    [49706] = 60064, [44914] = 60065, [40684] = 60065,\n    [49074] = 60065, [39229] = 60492, [43573] = 58904,\n    [37835] = 49623, [40685] = 60062, [49078] = 60062,    \n    [47213] = 67669, [47214] = 67671, [47215] = 67666,    \n    [40683] = 60054, [39388] = 60527, [39292] = 60180,    \n    [39257] = 60439, [49080] = 68443, [49116] = 68271,    \n    [49118] = 68270, [42122] = 42292, [42123] = 42292,    \n    [37254] = 48333, [40382] = 60538, [40256] = 60437,    \n    [40258] = 60530, [40373] = 60488, [40255] = 60494,    \n    [40371] = 60443, [40432] = 60486, [40431] = 60314,    \n    [40372] = 60258, [46088] = 64527, [46087] = 64525,    \n    [46086] = 64524, [40257] = 60286, [42129] = 55915,    \n    [42130] = 55915, [42132] = 55915, [42128] = 55915,    \n    [46083] = 42292, [46085] = 42292, [46081] = 42292,    \n    [46084] = 42292, [46082] = 42292, [45866] = 42292,    \n    [45286] = 65014, [45866] = 65004, [45308] = 65006,    \n    [46021] = 65012, [45313] = 65011, [45292] = 65008,    \n    [45507] = 64765, [45929] = 65003, [45490] = 64741,    \n    [45931] = 65019, [46038] = 65024, [45522] = 64790,    \n    [45263] = 64800, [45466] = 64707, [46051] = 64999,    \n    [40531] = 60319, [45148] = 64712, [45158] = 64763,    \n    [40532] = 60526, [42126] = 42292, [42124] = 42292,    \n    [46312] = 64983, [50198] = 71403, [47881] = 67738,    \n    [47725] = 67738, [47879] = 67736, [47726] = 67736,    \n    [47882] = 67728, [47727] = 67728, [47880] = 67726,    \n    [47728] = 67726, [50259] = 71564, [50235] = 71569,    \n    [50260] = 71568, [45535] = 64739, [45518] = 64713,    \n    [45609] = 64772, [46017] = 64411,    \n    [47303] = { 67703, 67708 }, [47115] = { 67703, 67708 },  \n    [47271] = 67696, [47041] = 67696, [48020] = 67747,    \n    [47948] = 67747, [47316] = 67713, [47182] = 67713,    \n    [48018] = 67744, [47946] = 67744, [48021] = 67742,    \n    [47949] = 67742, [48019] = 67740, [47947] = 67740,    \n    [48724] = 67684, [48722] = 67683, [47290] = 67699,    \n    [47080] = 67699, [48724] = 67684, [48722] = 67683,    \n    [47734] = 67695, [47735] = 67694, [42133] = 67596,    \n    [42134] = 67596, [42136] = 67596, [42137] = 67596,    \n    [42135] = 67596, [50342] = 71401, [50341] = 71575,    \n    [50340] = 71570, [50339] = 71565,    \n    [47464] = { 67772, 67773 }, [47131] = { 67772, 67773 },  \n    [47432] = 67750, [47059] = 67750, [47477] = 67759,    \n    [47188] = 67759, [47451] = 67753, [47088] = 67753,    \n    [50353] = 71601, [50358] = 71584, [50343] = 71541,    \n    [50360] = 71605, [50359] = 71610, [50352] = 71633,    \n    [50362] = { 71485, 71492, 71486, 71484, 71491, 71487 },  \n    [50344] = 71577, [50345] = 71572, [50351] = 71432,    \n    [50355] = 71396, [50361] = 71635, [50357] = 71579,    \n    [50356] = 71586, [51378] = 42292, [51377] = 42292,    \n    [50346] = 71574, [50354] = 71607, [50726] = 71607,\n    [54569] = 75458, [54572] = 75466, [54571] = 75477,    \n    [54573] = 75490, [50366] = 71641, [50349] = 71639,    \n    [50348] = 71644, [50365] = 71636, [50706] = 71432,    \n    [50363] = { 71556, 71560, 71558, 71561, 71559, 71557 }, \n    [50364] = 71638, [50397] = 72416, [50398] = 72416, \n    [50401] = 72412, [50402] = 72412, [52571] = 72412,   \n    [52572] = 72412, [50399] = 72418, [50400] = 72418, \n    [50403] = 72414, [50404] = 72414, [54590] = 75456,    \n    [54588] = 75473, [54591] = 75480, [54589] = 75495,\n    \n    -- Idols\n    [50457] = 71177, [47670] = 67360, [50454] = 71184,\n    [47671] = 67358, [50456] = 71175, [47668] = 67355,\n    [45509] = 64951, [38360] = 57909, [42582] = 60566,\n    [42587] = 60547, [42574] = 60544, [42575] = 60565,\n    [42583] = 60567, [42588] = 60549, [42584] = 60568,\n    [42589] = 60551, [42585] = 60569, [42591] = 60553,\n    [51429] = 60555, [51437] = 60570,\n    \n    -- Totems\n    [50463] = 71216, [47667] = 67391, [50458] = 71199,\n    [50464] = 71220, [47665] = 67388, [40322] = 60766,\n    [47666] = 67385, [40708] = 60771, [42601] = 60566,\n    [42606] = 60547, [42593] = 60544, [42594] = 60565,\n    [42602] = 60567, [42607] = 60549, [42603] = 60568, \n    [42608] = 60551, [42604] = 60569, [42609] = 60553,  \n    [51507] = 60555, [51513] = 60570,\n    \n    -- Sigils\n    [50462] = 71229, [50459] = 71227, [47672] = 67380, \n    [47673] = 67383, [45144] = 64963, [40714] = 62146, \n    [40715] = 60828, [42619] = 60547, [42620] = 60549, \n    [42621] = 60551, [42622] = 60553, [51417] = 60555,\n    \n    -- Librams\n    [40706] = 60819, [40707] = 60795, [42851] = 60547,\n    [42611] = 60544, [42852] = 60549, [45145] = 65182,\n    [42853] = 60551, [47661] = 67371, [47662] = 67364,\n    [47664] = 67378, [42854] = 60553, [50455] = 71187,\n    [50460] = 71192, [50461] = 71197, [51478] = 60555,\n    \n}\n\n-- [enchantId] = procId\nlocal ENCHANT_DATA = {\n    [3859] = 55001,    \n    [3722] = 55637,    \n    [3728] = 55767,    \n    [3730] = 55775,    \n    [3790] = 59626,    \n    [3603] = 54757,    \n    [3604] = 54758,    \n    [3606] = 54861,\n    [3789] = 59620,\n    [3869] = 64440,   \n    [3870] = 64568, \n    [2673] = 28093,\n    [3368] = 53365,\n    [3369] = 53386,\n}\n\n-- [gemId] = procId\nlocal GEMS_DATA = {\n    [41401] = 55382, -- Insightful Earthsiege Diamond\n    [41385] = 55341, -- Invigorating Earthsiege Diamond\n    [41400] = 55379, -- Thundering Skyflare Diamond \n}\n\n-- [procId] = cooldown\nlocal COOLDOWNS_DATA = {\n    [72416] = 60,    \n    [72412] = 60,    \n    [72418] = 60,    \n    [72414] = 60,    \n    [51348] = 10,    \n    [51353] = 10,    \n    [54808] = 60,    \n    [55018] = 60,    \n    [71485] = 105,\n    [71492] = 105,\n    [71486] = 105,\n    [71484] = 105,\n    [71491] = 105,\n    [71487] = 105,\n    [71556] = 105,\n    [71560] = 105,\n    [71558] = 105,\n    [71561] = 105,\n    [71559] = 105,\n    [71557] = 105,\n    [71605] = 90,    \n    [71636] = 90,    \n    [55637] = 60,    \n    [55775] = 60,    \n    [55767] = 60,    \n    [59626] = 35, \n    [64568] = 10,\n    [55382] = 15,  \n    [40373] = 15,\n}\n\n-- [itemId] = extraProcId\nlocal EXTRA_PROCS_DATA = {\n    [50348] = 71643,    \n    [50353] = 71600,    \n    [47879] = 67735,    \n    [47726] = 67735,    \n    [48018] = 67743,    \n    [47946] = 67743,    \n    [47880] = 67723,    \n    [47728] = 67723,    \n    [48019] = 67739,    \n    [47947] = 67739,    \n    [47881] = 67737,    \n    [47725] = 67737,    \n    [48020] = 67746,    \n    [47948] = 67746,  \n    [46051] = 65000,\n}\n\n-- [procId] = true (f.e. Balance Idols)\nlocal NO_COOLDOWN_ITEMS_DATA = {\n    [60486] = true, [60525] = true, [60314] = true,    \n    [60196] = true, [71575] = true, [71577] = true,    \n    [71570] = true, [71572] = true, [71432] = true,    \n    [71396] = true, [65006] = true, [71600] = true,    \n    [71643] = true, [67696] = true, [67750] = true,    \n    [67713] = true, [67759] = true, [71177] = true, \n    [67360] = true, [59620] = true, [64440] = true,\n    [71184] = true, [67358] = true, [71175] = true, \n    [67355] = true, [64951] = true, [57909] = true, \n    [60566] = true, [60547] = true, [60544] = true,\n    [60565] = true, [60567] = true, [60549] = true,\n    [60568] = true, [60551] = true, [60569] = true,\n    [60553] = true, [60555] = true, [60570] = true,\n    [71216] = true, [67391] = true, [71199] = true, \n    [71220] = true, [67388] = true, [60766] = true,\n    [60771] = true, [60566] = true, [60565] = true, \n    [60567] = true, [60568] = true, [60569] = true,\n    [60570] = true, [71229] = true, [71227] = true, \n    [67380] = true, [67383] = true, [64963] = true,\n    [60828] = true, [62146] = true, [67385] = true,  \n    [60819] = true, [60795] = true, [65182] = true,\n    [67371] = true, [67364] = true, [67378] = true,  \n    [71187] = true, [71192] = true, [71197] = true,\n    [28093] = true, [53365] = true, [60512] = true, \n    [60513] = true, [60514] = true, [60515] = true,\n}\n\nlocal INVALID_EVENTS = {\n    SPELL_DISPEL            = true,\n    SPELL_DISPEL_FAILED     = true,\n    SPELL_STOLEN            = true,\n    SPELL_AURA_REMOVED_DOSE = true,\n    SPELL_AURA_BROKEN       = true,\n    SPELL_AURA_BROKEN_SPELL = true,\n    SPELL_CAST_FAILED       = true,\n    SPELL_PERIODIC_HEAL     = true,\n    SPELL_CAST_SUCCESS      = true,\n}\n\nlocal hexNoGUID = \"0x0000000000000000\"\n\nlocal tinsert = table.insert\nlocal stformat = string.format\nlocal substr = string.sub\nlocal myGUID = UnitGUID(\"player\")\n\nlocal ItemWidget = aura_env\nlocal cfg = ItemWidget.config\n\nlocal items = {\n    -- [itemId] = {\n    --     equipmentSlot = number,\n    --     procs = table,\n    --     isProc = boolean,\n    --     itemTexture = string, (constant)\n    --     procTexture = string,\n    --     stacks = number,\n    --     cooldown = number, (constant)\n    --     duration = number, (as cooldown duration)\n    --     expirationTime = number, (as cooldown expTime)\n    --     procDuration = number, (as proc duration)\n    --     procExpirationTime = number, (as proc expTime)\n    -- }\n}\n\nlocal equipmentSlots = {\n    -- [equipmentSlot] = itemId,\n}\n\nlocal procs = {\n    -- [procId] = itemId,\n}\n\nlocal extraProcs = {\n    -- [extraProcId] = itemId,\n}\n\nlocal settings = {\n    equipmentSlots = {},\n    order = {},\n    advanced = {},\n    registerAnyOnUse = cfg.display.registerAnyOnUse,\n    showAlways = cfg.display.showAlways,\n    showProc = cfg.display.showProc,\n    itemTextureAlways = cfg.display.itemTextureAlways,\n}\n\nItemWidget.settings = settings\n\nlocal InitConfig = function()\n    \n    for slot, enable in ipairs(cfg.display.equipmentSlots) do\n        if enable then\n            settings.equipmentSlots[slot] = true\n        end\n    end\n    \n    local validEnchants = {\n        [1] = 3859,\n        [2] = 3722,\n        [3] = 3728,\n        [4] = 3730,\n        [5] = 3603, \n        [6] = 3604,\n        [7] = 3606,\n        [8] = 3790,\n        [9] = 3789,\n        [10] = 3869,\n        [11] = 3870,\n        [12] = 2673,\n        [13] = 3370,\n    }\n    \n    for i, v in ipairs(cfg.display.validEnchants) do\n        if not v then\n            local enchantId = validEnchants[i]\n            ENCHANT_DATA[enchantId] = nil\n        end\n    end\n    \n    local validMetaGems = {\n        [1] = 41385, -- Invigorating Earthsiege Diamond\n        [2] = 41400, -- Thundering Skyflare Diamond\n        [3] = 41401, -- Insightful Earthsiege Diamond\n    }\n    \n    for i, v in ipairs(cfg.display.validMetaGems) do\n        if not v then\n            local metaGemId = validMetaGems[i]\n            GEMS_DATA[metaGemId] = nil\n        end\n    end\n    \n    for equipmentSlot, index in pairs(cfg.display.order) do\n        local equipmentSlot = tonumber(equipmentSlot)\n        settings.order[equipmentSlot] = index\n    end\n    \n    for _, optionsData in ipairs(cfg.advanced) do\n        local itemId = optionsData.itemId\n        \n        if optionsData.disable then\n            ITEM_DATA[itemId] = nil\n        end\n        \n        settings.advanced[itemId] = {\n            disableGlow = optionsData.disableGlow\n        }\n    end\n    \nend \n\n-- return: table - numbers\nlocal GetValuesTable = function(value)\n    local t = {}\n    if type(value) == \"table\" then\n        for _, v in pairs(value) do\n            tinsert(t, v)\n        end\n    elseif type(value) ~= \"table\" then\n        tinsert(t, value)\n    end\n    return t\nend\n\n-- return: number - itemId, number - enchantId\nlocal GetSlotItemInfo = function(equipmentSlot)\n    \n    local itemLink = GetInventoryItemLink(\"player\", equipmentSlot)\n    \n    if itemLink then\n        local itemString = select(3, strfind(itemLink, \"|H(.+)|h\"))\n        local _, itemId, enchantId, metaGem = strsplit(\":\", itemString)\n        return tonumber(itemId), tonumber(enchantId), tonumber(metaGem)\n    end\n    \nend\n\n-- return: string - custom type names (\"NO_CD\", \"ON_USE\", \"INTERNAL\"), number - cooldown time \nlocal GetCooldownInfo = function(equipmentSlot, procId)\n    local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    \n    if enable == 1 then\n        return \"ON_USE\", nil\n    end\n    \n    if enable == 0 then\n        local cooldown = NO_COOLDOWN_ITEMS_DATA[procId]\n        \n        if cooldown then\n            return \"NO_CD\", 0\n        end\n        \n        return \"INTERNAL\", COOLDOWNS_DATA[procId] or 45\n    end\nend\n\nlocal CanRegister = function(equipmentSlot, procId)\n    if procId then\n        return true\n    end\n    \n    if settings.registerAnyOnUse then\n        local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n        return enable == 1\n    end\nend\n\nlocal SetState = {\n    \n    AutoHide = function()\n        return not settings.showAlways\n    end,\n    \n    Show = function(state)\n        return settings.showAlways or GetTime() < state.expirationTime\n    end,\n    \n    Duration = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procDuration or items[itemId].duration or 0\n    end,\n    \n    ExpirationTime = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procExpirationTime or items[itemId].expirationTime or GetTime()\n    end,\n    \n    Index = function(equipmentSlot)\n        return settings.order[equipmentSlot]\n    end,\n    \n    Icon = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc and not settings.itemTextureAlways) and items[itemId].procTexture or items[itemId].itemTexture\n    end,\n    \n    Stacks = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].stacks or 0\n    end,\n    \n    IsProc = function(itemId)\n        local isProc = items[itemId].isProc\n        return isProc and settings.showProc\n    end,\n    \n}\n\nlocal InitAura = function(allstates, equipmentSlot, itemId)\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    \n    allstates[stateName] = allstates[stateName] or {\n        progressType = \"timed\",\n        autoHide = SetState.AutoHide(),\n        index = SetState.Index(equipmentSlot),\n        itemType = items[itemId].type,\n        itemId = itemId,\n        equipmentSlot = equipmentSlot,\n    }\n    \n    allstates[stateName].stacks = SetState.Stacks(itemId)\n    allstates[stateName].isProc = SetState.IsProc(itemId)\n    allstates[stateName].icon = SetState.Icon(itemId)\n    allstates[stateName].duration = SetState.Duration(itemId)\n    allstates[stateName].expirationTime = SetState.ExpirationTime(itemId)\n    allstates[stateName].show = SetState.Show(allstates[stateName])\n    allstates[stateName].changed = true\nend\n\nlocal RemoveAura = function(allstates, equipmentSlot)\n    equipmentSlots[equipmentSlot] = nil\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    if allstates[stateName] then\n        allstates[stateName].show = false\n        allstates[stateName].changed = true\n    end\n    \n    return true\nend\n\nlocal InitItem = function(equipmentSlot, itemId, procId)\n    \n    if items[itemId] then\n        items[itemId].equipmentSlot = equipmentSlot\n        return\n    end\n    \n    items[itemId] = {\n        procs = {},\n        extraProc = EXTRA_PROCS_DATA[itemId],\n        itemTexture = GetItemIcon(itemId),\n        expirationTime = GetTime(),  \n        equipmentSlot = equipmentSlot \n    }\n    \n    if not procId then\n        items[itemId].type = \"ON_USE\"\n        return true\n    end\n    \n    local p = GetValuesTable(procId)\n    \n    for _, procId in pairs(p) do\n        tinsert(items[itemId].procs, procId)\n        procs[procId] = itemId\n        if not items[itemId].type then\n            local type, cooldown = GetCooldownInfo(equipmentSlot, procId)\n            \n            items[itemId].type = type\n            \n            if type == \"INTERNAL\" then\n                items[itemId].cooldown = cooldown\n            end\n        end\n    end\n    \n    local extraProcId = EXTRA_PROCS_DATA[itemId]\n    \n    if extraProcId then\n        extraProcs[extraProcId] = itemId\n    end\n    \nend \n\nlocal InitEquipmentSlot = function(allstates, equipmentSlot)\n    \n    local itemId, enchantId, metaGem = GetSlotItemInfo(equipmentSlot)\n    \n    if itemId then \n        local procId = ITEM_DATA[itemId] or ENCHANT_DATA[enchantId] or GEMS_DATA[metaGem]\n        if CanRegister(equipmentSlot, procId) then\n            equipmentSlots[equipmentSlot] = itemId\n            InitItem(equipmentSlot, itemId, procId)\n            return true\n        end\n    end\n    \n    if equipmentSlots[equipmentSlot] then\n        equipmentSlots[equipmentSlot] = nil\n    end\n    \nend\n\n-- return: number - cooldown\nlocal LoadLastSession = function(allstates, equipmentSlot, itemId)\n    aura_env.saved = aura_env.saved or {}\n    local db = aura_env.saved[WeakAuras.me]\n    if not db then return end\n    \n    if db[itemId] then\n        local expirationTimeOS = db[itemId].expirationTimeOS\n        local cooldown = expirationTimeOS - time()\n        return cooldown\n    end\nend\n\nlocal OnUse = function(allstates, equipmentSlot, itemId)\n    local startTime, duration = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    if duration > 0 then\n        local expirationTime = startTime + duration\n        if expirationTime > items[itemId].expirationTime then\n            items[itemId].duration = duration\n            items[itemId].expirationTime = expirationTime\n            return true\n        end\n    end\nend\n\nlocal BagUpdateCooldown = function(allstates)\n    local update = false\n    \n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        local itemId = GetInventoryItemID(\"player\", equipmentSlot)\n        if itemId and itemId == equipmentSlots[equipmentSlot]\n        and items[itemId].type == \"ON_USE\"\n        and (not settings.showProc or not items[itemId].isProc)\n        and OnUse(allstates, equipmentSlot, itemId) then\n            \n            items[itemId].stacks = 0\n            InitAura(allstates, equipmentSlot, itemId)\n            update = true\n            \n        end\n    end\n    \n    return update\nend\n\nlocal EquipmentSlotChanged = function(allstates, equipmentSlot, isEmpty)\n    \n    if not isEmpty and InitEquipmentSlot(allstates, equipmentSlot) then\n        \n        local timestamp = GetTime()\n        \n        local itemId = equipmentSlots[equipmentSlot]\n        local type = items[itemId].type\n        \n        items[itemId].icon = items[itemId].itemTexture\n        items[itemId].stacks = 0\n        items[itemId].isProc = false\n        \n        if type == \"ON_USE\" then\n            \n            OnUse(allstates, equipmentSlot, itemId)\n            \n        elseif type == \"INTERNAL\" then\n            local currentCooldown = items[itemId].expirationTime - timestamp\n            local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n            \n            if currentCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif not savedCooldown or savedCooldown < items[itemId].cooldown then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif savedCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = savedCooldown + timestamp\n                \n            end\n            \n        elseif type == \"NO_CD\" then\n            \n            if equipmentSlot ~= 18 then\n                items[itemId].duration = 30\n                items[itemId].expirationTime = timestamp + 30\n            end\n            \n        end\n        \n        return InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return RemoveAura(allstates, equipmentSlot)\n    \nend\n\nlocal OnExtraProc = function(itemId, extraProcId)\n    local _,_, stacks = WA_GetUnitBuff(\"player\", extraProcId)\n    items[itemId].stacks = stacks\nend\n\nlocal OnProc = function(allstates, equipmentSlot, itemId, spellId)\n    \n    local _, icon, stacks, _, buffDuration, buffExpirationTime = WA_GetUnitBuff(\"player\", spellId)\n    \n    if items[itemId].type == \"INTERNAL\" then\n        local cooldown = items[itemId].cooldown\n        items[itemId].duration = cooldown\n        items[itemId].expirationTime = buffExpirationTime - buffDuration + cooldown\n    end\n    \n    items[itemId].isProc = true\n    items[itemId].procTexture = icon\n    items[itemId].procDuration = buffDuration\n    items[itemId].procExpirationTime = buffExpirationTime\n    items[itemId].stacks = stacks\n    \nend\n\nlocal OnCLEUF = function(allstates, ...)\n    local _, subEvent, _, sourceGUID, _,_,_, destGUID, _,_,_, spellId = ...\n    \n    if not subEvent then return end\n    if INVALID_EVENTS[subEvent] then return end\n    if substr(subEvent, 0, 6) ~= \"SPELL_\" then return end\n    \n    if ((destGUID == myGUID and ((not sourceGUID or sourceGUID == hexNoGUID) or sourceGUID == destGUID)) or sourceGUID == myGUID) then\n        \n        if procs[spellId] then\n            \n            local itemId = procs[spellId]\n            local equipmentSlot = items[itemId].equipmentSlot\n            local type = items[itemId].type\n            \n            if GetInventoryItemID(\"player\", equipmentSlot) ~= itemId then return end\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" then\n                \n                OnProc(allstates, equipmentSlot, itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                \n            elseif subEvent == \"SPELL_AURA_REMOVED\" then\n                items[itemId].isProc = false\n                items[itemId].stacks = 0\n                \n                if type == \"ON_USE\" then\n                    OnUse(allstates, equipmentSlot, itemId)\n                    \n                elseif type == \"NO_CD\" then\n                    items[itemId].duration = 0\n                    items[itemId].expirationTime = GetTime()\n                end\n                \n            elseif type == \"INTERNAL\" then\n                items[itemId].isProc = false\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = items[itemId].duration + GetTime()\n            end\n            \n            InitAura(allstates, equipmentSlot, itemId)\n            return true\n        end\n        \n        if extraProcs[spellId] then\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" \n            or subEvent == \"SPELL_AURA_REMOVED\" then\n                \n                local itemId = extraProcs[spellId]\n                local equipmentSlot = items[itemId].equipmentSlot\n                \n                OnExtraProc(itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                return true\n                \n            end\n        end\n    end\nend\n\nlocal OnInit = function(allstates)\n    InitConfig()\n    \n    local updated = false\n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        if InitEquipmentSlot(allstates, equipmentSlot) then\n            updated = true\n        end\n    end\n    \n    if not updated then return end\n    \n    -- display active item procs or load last session\n    for equipmentSlot, itemId in pairs(equipmentSlots) do\n        \n        local isBuffed = false\n        for _, procId in ipairs(items[itemId].procs) do\n            if WA_GetUnitBuff(\"player\", procId) then\n                isBuffed = true\n                OnProc(allstates, equipmentSlot, itemId, procId)\n                if items[itemId].extraProc then\n                    OnExtraProc(itemId, items[itemId].extraProc)\n                end\n                break\n            end\n        end\n        \n        if not isBuffed then\n            \n            items[itemId].isProc = false\n            items[itemId].stacks = 0\n            \n            local type = items[itemId].type\n            if type == \"INTERNAL\" or type == \"NO_CD\" then\n                local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n                \n                if savedCooldown and savedCooldown > 0 then\n                    items[itemId].duration = items[itemId].cooldown or type == \"NO_CD\" and 30\n                    items[itemId].expirationTime = savedCooldown + GetTime()\n                end\n            end\n            \n            if type == \"ON_USE\" then\n                OnUse(allstates, equipmentSlot, itemId)  \n            end\n            \n        end\n        \n        InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return true\nend\n\nlocal SaveLastSession = function()\n    aura_env.saved = aura_env.saved or {}\n    aura_env.saved[WeakAuras.me] = {}\n    local db = aura_env.saved[WeakAuras.me]\n    for itemId, itemData in pairs(items) do\n        local expirationTime = itemData.expirationTime\n        db[itemId] = db[itemId] or {}\n        db[itemId].expirationTimeOS = expirationTime - GetTime() + time()\n    end\nend\n\nItemWidget.OnTrigger = function(allstates, event, ...)\n    \n    if event == \"OPTIONS\" then\n        \n        if WeakAuras.IsOptionsOpen() and ItemWidget.initialized then\n            ItemWidget.initialized = false\n            SaveLastSession()\n        end\n        \n        return OnInit(allstates)\n        \n    elseif event == \"OPTIONS_CLOSE\" then\n        \n        ItemWidget.initialized = true\n        return OnInit(allstates)\n        \n    elseif ItemWidget.initialized then\n        \n        if event == \"PLAYER_EQUIPMENT_CHANGED\" then\n            local equipmentSlot, isEmpty = ...\n            if settings.equipmentSlots[equipmentSlot] then\n                EquipmentSlotChanged(allstates, equipmentSlot, isEmpty)\n                return true\n            end\n            \n        elseif event == \"BAG_UPDATE_COOLDOWN\" then\n            return BagUpdateCooldown(allstates)\n            \n        elseif event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            return OnCLEUF(allstates, CombatLogGetCurrentEventInfo())\n            \n        elseif event == \"PLAYER_LOGOUT\" then\n            SaveLastSession()\n        end\n    end\nend",
+					["do_custom"] = true,
+				},
 			},
 			["config"] = {
 				["display"] = {
@@ -39326,50 +39334,13 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "1.0.25",
 			["tocversion"] = 30400,
 			["id"] = "Equipped Items - Icon",
 			["useCooldownModRate"] = true,
 			["frameStrata"] = 1,
 			["width"] = 40,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-					["custom"] = "-- [itemId] = procId,\n-- [itemId] = { procId1, procId2 },\nlocal ITEM_DATA = {\n    [37111] = {60512, 60513, 60514, 60515}, [23835] = 99999, [23836] = 99999, [32782] = 41301, [24390] = 31794,\n    [28040] = 33662, [28041] = 33667, [28042] = 33668, [25829] = 33828,\n    [24551] = 32140, [27922] = { 33511, 33513 }, [27924] = { 33511, 33513 },\n    [24376] = 31771, [27927] = { 33522, 33523 }, [27926] = { 33522, 33523 },\n    [25787] = 32600, [25786] = 99999, [25619] = 32355, [25620] = 32355,\n    [28108] = 33759, [28109] = 33746, [25937] = 39200, [25936] = 39201,\n    [31856] = { 39439, 39441 }, [31858] = 99999, [31859] = 99999,\n    [31857] = 39443, [26055] = 33012, [27416] = 33014, [31617] = 33667,\n    [25628] = 32362, [25633] = 32362, [31615] = 33662, [32771] = 41263,\n    [29181] = 99999, [25634] = 32367, [32770] = 41261, [29776] = 35733,\n    [32864] = 40815, [30300] = 36372, [29370] = 35163, [29383] = 35166,\n    [29376] = 35165, [38290] = 51953, [38288] = 51954, [38287] = 51955,\n    [29387] = 35169, [38289] = 51952, [30293] = 36347, [28034] = { 33648, 33649 },\n    [27891] = 33479, [27900] = 33486, [30340] = 36432, [32658] = 40729,\n    [27683] = 33370, [27529] = 33089, [28288] = 33807, [34472] = 45053,\n    [28785] = 37658, [32654] = 40724, [28190] = 33370, [28370] = 34210,\n    [28121] = 34106, [28727] = 29601, [29132] = 35337, [28590] = 38332,\n    [24128] = 31047, [30346] = 99999, [28418] = 34321, [30841] = 37877,\n    [28528] = 34519, [32534] = 40538, [28223] = 34000, [30349] = 99999,\n    [29179] = 35337, [24126] = 31040, [27770] = 39228, [30343] = 99999,\n    [28235] = 99999, [30345] = 99999, [24125] = 31039, [30344] = 99999,\n    [34473] = 45058, [34471] = 45064, [28234] = 99999, [30350] = 99999,\n    [28237] = 99999, [24124] = 31038, [28242] = 99999, [30348] = 99999,\n    [28240] = 99999, [28239] = 99999, [30351] = 99999, [24127] = 31045,\n    [27828] = 33400, [28243] = 99999, [28238] = 99999, [28241] = 99999,\n    [28236] = 99999, [28830] = 34775, [28789] = 34747, [28823] = 37706,\n    [35702] = 46784, [35700] = 46783, [35694] = 46782, [35703] = 46785,\n    [35693] = 46780, [30627] = 42084, [30626] = 38348, [30720] = 37445,\n    [30447] = 37198, [30664] = { 37343, 37340, 37341, 37342, 37344 },\n    [30450] = 37174, [30619] = 38324, [37864] = 99999, [30620] = 38325,\n    [37865] = 99999, [30663] = 37243, [30665] = 40402, [30629] = 38351,\n    [30448] = 37508, [37128] = 48042, [37127] = 48041, [34029] = 43995,\n    [33831] = 43716, [33832] = 44055, [34050] = 44055, [34576] = 44055,\n    [34578] = 44055, [33829] = 43712, [34049] = 44055, [34580] = 44055,\n    [34163] = 44055, [34579] = 44055, [35326] = 44055, [35327] = 44055,\n    [34162] = 44055, [34577] = 44055, [33830] = 43713, [33828] = 43710,\n    [32505] = 40477, [32501] = 40464, [32483] = 40396, [32496] = 37656,\n    [34427] = 45040, [34429] = 45044, [34428] = 45049, [34430] = 45052,\n    [10725] = 99999, [41589] = 44055, [35935] = 47215, [38257] = 47816,\n    [36874] = 47816, [38073] = 33662, [38760] = 48875, [44308] = 60318,\n    \n    [21625] = 26467, [29387] = 35169, [38358] = 51353,\n    [40865] = 54808, [40767] = 55018, [43837] = 61617,\n    [38763] = 61426, [38764] = 61427, [38765] = 61428,\n    [43836] = 61620, [44013] = 59657, [44015] = 59657,\n    [44014] = 59658, [36993] = 60214, [36972] = 60471,\n    [38359] = 51348, [37064] = 60307, [37220] = 60218,\n    [37660] = 60479, [45131] = 63250, [45219] = 63250,\n    [37390] = 60302, [37264] = 60483, [37657] = 60520,\n    [40430] = 60525, [37844] = 60521, [37734] = 60517,\n    [37166] = 60305, [37638] = 60180, [37873] = 60480,\n    [37872] = 60215, [37723] = 60299, [42341] = 56121,\n    [44063] = 59757, [42418] = 56188, [42413] = 56186,\n    [42395] = 56184, [41121] = 55039,\n    [42987] = { 60229, 60233, 60234, 60235 },\n    [44253] = { 60229, 60233, 60234, 60235 },   \n    [44255] = { 60229, 60233, 60234, 60235 },\n    [44254] = { 60229, 60233, 60234, 60235 },\n    [42990] = 60203, [19288] = 23684, [42989] = 60196,\n    [42988] = 57350, [44912] = 60064, [40682] = 60064,\n    [49706] = 60064, [44914] = 60065, [40684] = 60065,\n    [49074] = 60065, [39229] = 60492, [43573] = 58904,\n    [37835] = 49623, [40685] = 60062, [49078] = 60062,    \n    [47213] = 67669, [47214] = 67671, [47215] = 67666,    \n    [40683] = 60054, [39388] = 60527, [39292] = 60180,    \n    [39257] = 60439, [49080] = 68443, [49116] = 68271,    \n    [49118] = 68270, [42122] = 42292, [42123] = 42292,    \n    [37254] = 48333, [40382] = 60538, [40256] = 60437,    \n    [40258] = 60530, [40373] = 60488, [40255] = 60494,    \n    [40371] = 60443, [40432] = 60486, [40431] = 60314,    \n    [40372] = 60258, [46088] = 64527, [46087] = 64525,    \n    [46086] = 64524, [40257] = 60286, [42129] = 55915,    \n    [42130] = 55915, [42132] = 55915, [42128] = 55915,    \n    [46083] = 42292, [46085] = 42292, [46081] = 42292,    \n    [46084] = 42292, [46082] = 42292, [45866] = 42292,    \n    [45286] = 65014, [45866] = 65004, [45308] = 65006,    \n    [46021] = 65012, [45313] = 65011, [45292] = 65008,    \n    [45507] = 64765, [45929] = 65003, [45490] = 64741,    \n    [45931] = 65019, [46038] = 65024, [45522] = 64790,    \n    [45263] = 64800, [45466] = 64707, [46051] = 64999,    \n    [40531] = 60319, [45148] = 64712, [45158] = 64763,    \n    [40532] = 60526, [42126] = 42292, [42124] = 42292,    \n    [46312] = 64983, [50198] = 71403, [47881] = 67738,    \n    [47725] = 67738, [47879] = 67736, [47726] = 67736,    \n    [47882] = 67728, [47727] = 67728, [47880] = 67726,    \n    [47728] = 67726, [50259] = 71564, [50235] = 71569,    \n    [50260] = 71568, [45535] = 64739, [45518] = 64713,    \n    [45609] = 64772, [46017] = 64411,    \n    [47303] = { 67703, 67708 }, [47115] = { 67703, 67708 },  \n    [47271] = 67696, [47041] = 67696, [48020] = 67747,    \n    [47948] = 67747, [47316] = 67713, [47182] = 67713,    \n    [48018] = 67744, [47946] = 67744, [48021] = 67742,    \n    [47949] = 67742, [48019] = 67740, [47947] = 67740,    \n    [48724] = 67684, [48722] = 67683, [47290] = 67699,    \n    [47080] = 67699, [48724] = 67684, [48722] = 67683,    \n    [47734] = 67695, [47735] = 67694, [42133] = 67596,    \n    [42134] = 67596, [42136] = 67596, [42137] = 67596,    \n    [42135] = 67596, [50342] = 71401, [50341] = 71575,    \n    [50340] = 71570, [50339] = 71565,    \n    [47464] = { 67772, 67773 }, [47131] = { 67772, 67773 },  \n    [47432] = 67750, [47059] = 67750, [47477] = 67759,    \n    [47188] = 67759, [47451] = 67753, [47088] = 67753,    \n    [50353] = 71601, [50358] = 71584, [50343] = 71541,    \n    [50360] = 71605, [50359] = 71610, [50352] = 71633,    \n    [50362] = { 71485, 71492, 71486, 71484, 71491, 71487 },  \n    [50344] = 71577, [50345] = 71572, [50351] = 71432,    \n    [50355] = 71396, [50361] = 71635, [50357] = 71579,    \n    [50356] = 71586, [51378] = 42292, [51377] = 42292,    \n    [50346] = 71574, [50354] = 71607, [50726] = 71607,\n    [54569] = 75458, [54572] = 75466, [54571] = 75477,    \n    [54573] = 75490, [50366] = 71641, [50349] = 71639,    \n    [50348] = 71644, [50365] = 71636, [50706] = 71432,    \n    [50363] = { 71556, 71560, 71558, 71561, 71559, 71557 }, \n    [50364] = 71638, [50397] = 72416, [50398] = 72416, \n    [50401] = 72412, [50402] = 72412, [52571] = 72412,   \n    [52572] = 72412, [50399] = 72418, [50400] = 72418, \n    [50403] = 72414, [50404] = 72414, [54590] = 75456,    \n    [54588] = 75473, [54591] = 75480, [54589] = 75495,\n    \n    -- Idols\n    [50457] = 71177, [47670] = 67360, [50454] = 71184,\n    [47671] = 67358, [50456] = 71175, [47668] = 67355,\n    [45509] = 64951, [38360] = 57909, [42582] = 60566,\n    [42587] = 60547, [42574] = 60544, [42575] = 60565,\n    [42583] = 60567, [42588] = 60549, [42584] = 60568,\n    [42589] = 60551, [42585] = 60569, [42591] = 60553,\n    [51429] = 60555, [51437] = 60570,\n    \n    -- Totems\n    [50463] = 71216, [47667] = 67391, [50458] = 71199,\n    [50464] = 71220, [47665] = 67388, [40322] = 60766,\n    [47666] = 67385, [40708] = 60771, [42601] = 60566,\n    [42606] = 60547, [42593] = 60544, [42594] = 60565,\n    [42602] = 60567, [42607] = 60549, [42603] = 60568, \n    [42608] = 60551, [42604] = 60569, [42609] = 60553,  \n    [51507] = 60555, [51513] = 60570,\n    \n    -- Sigils\n    [50462] = 71229, [50459] = 71227, [47672] = 67380, \n    [47673] = 67383, [45144] = 64963, [40714] = 62146, \n    [40715] = 60828, [42619] = 60547, [42620] = 60549, \n    [42621] = 60551, [42622] = 60553, [51417] = 60555,\n    \n    -- Librams\n    [40706] = 60819, [40707] = 60795, [42851] = 60547,\n    [42611] = 60544, [42852] = 60549, [45145] = 65182,\n    [42853] = 60551, [47661] = 67371, [47662] = 67364,\n    [47664] = 67378, [42854] = 60553, [50455] = 71187,\n    [50460] = 71192, [50461] = 71197, [51478] = 60555,\n    \n}\n\n-- [enchantId] = procId\nlocal ENCHANT_DATA = {\n    [3859] = 55001,    \n    [3722] = 55637,    \n    [3728] = 55767,    \n    [3730] = 55775,    \n    [3790] = 59626,    \n    [3603] = 54757,    \n    [3604] = 54758,    \n    [3606] = 54861,\n    [3789] = 59620,\n    [3869] = 64440,   \n    [3870] = 64568, \n    [2673] = 28093,\n    [3368] = 53365,\n    [3369] = 53386,\n}\n\n-- [gemId] = procId\nlocal GEMS_DATA = {\n    [41401] = 55382, -- Insightful Earthsiege Diamond\n    [41385] = 55341, -- Invigorating Earthsiege Diamond\n    [41400] = 55379, -- Thundering Skyflare Diamond \n}\n\n-- [procId] = cooldown\nlocal COOLDOWNS_DATA = {\n    [72416] = 60,    \n    [72412] = 60,    \n    [72418] = 60,    \n    [72414] = 60,    \n    [51348] = 10,    \n    [51353] = 10,    \n    [54808] = 60,    \n    [55018] = 60,    \n    [71485] = 105,\n    [71492] = 105,\n    [71486] = 105,\n    [71484] = 105,\n    [71491] = 105,\n    [71487] = 105,\n    [71556] = 105,\n    [71560] = 105,\n    [71558] = 105,\n    [71561] = 105,\n    [71559] = 105,\n    [71557] = 105,\n    [71605] = 90,    \n    [71636] = 90,    \n    [55637] = 60,    \n    [55775] = 60,    \n    [55767] = 60,    \n    [59626] = 35, \n    [64568] = 10,\n    [55382] = 15,  \n    [40373] = 15,\n}\n\n-- [itemId] = extraProcId\nlocal EXTRA_PROCS_DATA = {\n    [50348] = 71643,    \n    [50353] = 71600,    \n    [47879] = 67735,    \n    [47726] = 67735,    \n    [48018] = 67743,    \n    [47946] = 67743,    \n    [47880] = 67723,    \n    [47728] = 67723,    \n    [48019] = 67739,    \n    [47947] = 67739,    \n    [47881] = 67737,    \n    [47725] = 67737,    \n    [48020] = 67746,    \n    [47948] = 67746,  \n    [46051] = 65000,\n}\n\n-- [procId] = true (f.e. Balance Idols)\nlocal NO_COOLDOWN_ITEMS_DATA = {\n    [60486] = true, [60525] = true, [60314] = true,    \n    [60196] = true, [71575] = true, [71577] = true,    \n    [71570] = true, [71572] = true, [71432] = true,    \n    [71396] = true, [65006] = true, [71600] = true,    \n    [71643] = true, [67696] = true, [67750] = true,    \n    [67713] = true, [67759] = true, [71177] = true, \n    [67360] = true, [59620] = true, [64440] = true,\n    [71184] = true, [67358] = true, [71175] = true, \n    [67355] = true, [64951] = true, [57909] = true, \n    [60566] = true, [60547] = true, [60544] = true,\n    [60565] = true, [60567] = true, [60549] = true,\n    [60568] = true, [60551] = true, [60569] = true,\n    [60553] = true, [60555] = true, [60570] = true,\n    [71216] = true, [67391] = true, [71199] = true, \n    [71220] = true, [67388] = true, [60766] = true,\n    [60771] = true, [60566] = true, [60565] = true, \n    [60567] = true, [60568] = true, [60569] = true,\n    [60570] = true, [71229] = true, [71227] = true, \n    [67380] = true, [67383] = true, [64963] = true,\n    [60828] = true, [62146] = true, [67385] = true,  \n    [60819] = true, [60795] = true, [65182] = true,\n    [67371] = true, [67364] = true, [67378] = true,  \n    [71187] = true, [71192] = true, [71197] = true,\n    [28093] = true, [53365] = true, [60512] = true, \n    [60513] = true, [60514] = true, [60515] = true,\n}\n\nlocal INVALID_EVENTS = {\n    SPELL_DISPEL            = true,\n    SPELL_DISPEL_FAILED     = true,\n    SPELL_STOLEN            = true,\n    SPELL_AURA_REMOVED_DOSE = true,\n    SPELL_AURA_BROKEN       = true,\n    SPELL_AURA_BROKEN_SPELL = true,\n    SPELL_CAST_FAILED       = true,\n    SPELL_PERIODIC_HEAL     = true,\n    SPELL_CAST_SUCCESS      = true,\n}\n\nlocal hexNoGUID = \"0x0000000000000000\"\n\nlocal tinsert = table.insert\nlocal stformat = string.format\nlocal substr = string.sub\nlocal myGUID = UnitGUID(\"player\")\n\nlocal ItemWidget = aura_env\nlocal cfg = ItemWidget.config\n\nlocal items = {\n    -- [itemId] = {\n    --     equipmentSlot = number,\n    --     procs = table,\n    --     isProc = boolean,\n    --     itemTexture = string, (constant)\n    --     procTexture = string,\n    --     stacks = number,\n    --     cooldown = number, (constant)\n    --     duration = number, (as cooldown duration)\n    --     expirationTime = number, (as cooldown expTime)\n    --     procDuration = number, (as proc duration)\n    --     procExpirationTime = number, (as proc expTime)\n    -- }\n}\n\nlocal equipmentSlots = {\n    -- [equipmentSlot] = itemId,\n}\n\nlocal procs = {\n    -- [procId] = itemId,\n}\n\nlocal extraProcs = {\n    -- [extraProcId] = itemId,\n}\n\nlocal settings = {\n    equipmentSlots = {},\n    order = {},\n    advanced = {},\n    registerAnyOnUse = cfg.display.registerAnyOnUse,\n    showAlways = cfg.display.showAlways,\n    showProc = cfg.display.showProc,\n    itemTextureAlways = cfg.display.itemTextureAlways,\n}\n\nItemWidget.settings = settings\n\nlocal InitConfig = function()\n    \n    for slot, enable in ipairs(cfg.display.equipmentSlots) do\n        if enable then\n            settings.equipmentSlots[slot] = true\n        end\n    end\n    \n    local validEnchants = {\n        [1] = 3859,\n        [2] = 3722,\n        [3] = 3728,\n        [4] = 3730,\n        [5] = 3603, \n        [6] = 3604,\n        [7] = 3606,\n        [8] = 3790,\n        [9] = 3789,\n        [10] = 3869,\n        [11] = 3870,\n        [12] = 2673,\n        [13] = 3370,\n    }\n    \n    for i, v in ipairs(cfg.display.validEnchants) do\n        if not v then\n            local enchantId = validEnchants[i]\n            ENCHANT_DATA[enchantId] = nil\n        end\n    end\n    \n    local validMetaGems = {\n        [1] = 41385, -- Invigorating Earthsiege Diamond\n        [2] = 41400, -- Thundering Skyflare Diamond\n        [3] = 41401, -- Insightful Earthsiege Diamond\n    }\n    \n    for i, v in ipairs(cfg.display.validMetaGems) do\n        if not v then\n            local metaGemId = validMetaGems[i]\n            GEMS_DATA[metaGemId] = nil\n        end\n    end\n    \n    for equipmentSlot, index in pairs(cfg.display.order) do\n        local equipmentSlot = tonumber(equipmentSlot)\n        settings.order[equipmentSlot] = index\n    end\n    \n    for _, optionsData in ipairs(cfg.advanced) do\n        local itemId = optionsData.itemId\n        \n        if optionsData.disable then\n            ITEM_DATA[itemId] = nil\n        end\n        \n        settings.advanced[itemId] = {\n            disableGlow = optionsData.disableGlow\n        }\n    end\n    \nend \n\n-- return: table - numbers\nlocal GetValuesTable = function(value)\n    local t = {}\n    if type(value) == \"table\" then\n        for _, v in pairs(value) do\n            tinsert(t, v)\n        end\n    elseif type(value) ~= \"table\" then\n        tinsert(t, value)\n    end\n    return t\nend\n\n-- return: number - itemId, number - enchantId\nlocal GetSlotItemInfo = function(equipmentSlot)\n    \n    local itemLink = GetInventoryItemLink(\"player\", equipmentSlot)\n    \n    if itemLink then\n        local itemString = select(3, strfind(itemLink, \"|H(.+)|h\"))\n        local _, itemId, enchantId, metaGem = strsplit(\":\", itemString)\n        return tonumber(itemId), tonumber(enchantId), tonumber(metaGem)\n    end\n    \nend\n\n-- return: string - custom type names (\"NO_CD\", \"ON_USE\", \"INTERNAL\"), number - cooldown time \nlocal GetCooldownInfo = function(equipmentSlot, procId)\n    local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    \n    if enable == 1 then\n        return \"ON_USE\", nil\n    end\n    \n    if enable == 0 then\n        local cooldown = NO_COOLDOWN_ITEMS_DATA[procId]\n        \n        if cooldown then\n            return \"NO_CD\", 0\n        end\n        \n        return \"INTERNAL\", COOLDOWNS_DATA[procId] or 45\n    end\nend\n\nlocal CanRegister = function(equipmentSlot, procId)\n    if procId then\n        return true\n    end\n    \n    if settings.registerAnyOnUse then\n        local _,_, enable = GetInventoryItemCooldown(\"player\", equipmentSlot)\n        return enable == 1\n    end\nend\n\nlocal SetState = {\n    \n    AutoHide = function()\n        return not settings.showAlways\n    end,\n    \n    Show = function(state)\n        return settings.showAlways or GetTime() < state.expirationTime\n    end,\n    \n    Duration = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procDuration or items[itemId].duration or 0\n    end,\n    \n    ExpirationTime = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].procExpirationTime or items[itemId].expirationTime or GetTime()\n    end,\n    \n    Index = function(equipmentSlot)\n        return settings.order[equipmentSlot]\n    end,\n    \n    Icon = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc and not settings.itemTextureAlways) and items[itemId].procTexture or items[itemId].itemTexture\n    end,\n    \n    Stacks = function(itemId)\n        local isProc = items[itemId].isProc\n        return (isProc and settings.showProc) and items[itemId].stacks or 0\n    end,\n    \n    IsProc = function(itemId)\n        local isProc = items[itemId].isProc\n        return isProc and settings.showProc\n    end,\n    \n}\n\nlocal InitAura = function(allstates, equipmentSlot, itemId)\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    \n    allstates[stateName] = allstates[stateName] or {\n        progressType = \"timed\",\n        autoHide = SetState.AutoHide(),\n        index = SetState.Index(equipmentSlot),\n        itemType = items[itemId].type,\n        itemId = itemId,\n        equipmentSlot = equipmentSlot,\n    }\n    \n    allstates[stateName].stacks = SetState.Stacks(itemId)\n    allstates[stateName].isProc = SetState.IsProc(itemId)\n    allstates[stateName].icon = SetState.Icon(itemId)\n    allstates[stateName].duration = SetState.Duration(itemId)\n    allstates[stateName].expirationTime = SetState.ExpirationTime(itemId)\n    allstates[stateName].show = SetState.Show(allstates[stateName])\n    allstates[stateName].changed = true\nend\n\nlocal RemoveAura = function(allstates, equipmentSlot)\n    equipmentSlots[equipmentSlot] = nil\n    local stateName = stformat(\"IW_Slot%d\", equipmentSlot)\n    if allstates[stateName] then\n        allstates[stateName].show = false\n        allstates[stateName].changed = true\n    end\n    \n    return true\nend\n\nlocal InitItem = function(equipmentSlot, itemId, procId)\n    \n    if items[itemId] then\n        items[itemId].equipmentSlot = equipmentSlot\n        return\n    end\n    \n    items[itemId] = {\n        procs = {},\n        extraProc = EXTRA_PROCS_DATA[itemId],\n        itemTexture = GetItemIcon(itemId),\n        expirationTime = GetTime(),  \n        equipmentSlot = equipmentSlot \n    }\n    \n    if not procId then\n        items[itemId].type = \"ON_USE\"\n        return true\n    end\n    \n    local p = GetValuesTable(procId)\n    \n    for _, procId in pairs(p) do\n        tinsert(items[itemId].procs, procId)\n        procs[procId] = itemId\n        if not items[itemId].type then\n            local type, cooldown = GetCooldownInfo(equipmentSlot, procId)\n            \n            items[itemId].type = type\n            \n            if type == \"INTERNAL\" then\n                items[itemId].cooldown = cooldown\n            end\n        end\n    end\n    \n    local extraProcId = EXTRA_PROCS_DATA[itemId]\n    \n    if extraProcId then\n        extraProcs[extraProcId] = itemId\n    end\n    \nend \n\nlocal InitEquipmentSlot = function(allstates, equipmentSlot)\n    \n    local itemId, enchantId, metaGem = GetSlotItemInfo(equipmentSlot)\n    \n    if itemId then \n        local procId = ITEM_DATA[itemId] or ENCHANT_DATA[enchantId] or GEMS_DATA[metaGem]\n        if CanRegister(equipmentSlot, procId) then\n            equipmentSlots[equipmentSlot] = itemId\n            InitItem(equipmentSlot, itemId, procId)\n            return true\n        end\n    end\n    \n    if equipmentSlots[equipmentSlot] then\n        equipmentSlots[equipmentSlot] = nil\n    end\n    \nend\n\n-- return: number - cooldown\nlocal LoadLastSession = function(allstates, equipmentSlot, itemId)\n    aura_env.saved = aura_env.saved or {}\n    local db = aura_env.saved[WeakAuras.me]\n    if not db then return end\n    \n    if db[itemId] then\n        local expirationTimeOS = db[itemId].expirationTimeOS\n        local cooldown = expirationTimeOS - time()\n        return cooldown\n    end\nend\n\nlocal OnUse = function(allstates, equipmentSlot, itemId)\n    local startTime, duration = GetInventoryItemCooldown(\"player\", equipmentSlot)\n    if duration > 0 then\n        local expirationTime = startTime + duration\n        if expirationTime > items[itemId].expirationTime then\n            items[itemId].duration = duration\n            items[itemId].expirationTime = expirationTime\n            return true\n        end\n    end\nend\n\nlocal BagUpdateCooldown = function(allstates)\n    local update = false\n    \n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        local itemId = GetInventoryItemID(\"player\", equipmentSlot)\n        if itemId and itemId == equipmentSlots[equipmentSlot]\n        and items[itemId].type == \"ON_USE\"\n        and (not settings.showProc or not items[itemId].isProc)\n        and OnUse(allstates, equipmentSlot, itemId) then\n            \n            items[itemId].stacks = 0\n            InitAura(allstates, equipmentSlot, itemId)\n            update = true\n            \n        end\n    end\n    \n    return update\nend\n\nlocal EquipmentSlotChanged = function(allstates, equipmentSlot, isEmpty)\n    \n    if not isEmpty and InitEquipmentSlot(allstates, equipmentSlot) then\n        \n        local timestamp = GetTime()\n        \n        local itemId = equipmentSlots[equipmentSlot]\n        local type = items[itemId].type\n        \n        items[itemId].icon = items[itemId].itemTexture\n        items[itemId].stacks = 0\n        items[itemId].isProc = false\n        \n        if type == \"ON_USE\" then\n            \n            OnUse(allstates, equipmentSlot, itemId)\n            \n        elseif type == \"INTERNAL\" then\n            local currentCooldown = items[itemId].expirationTime - timestamp\n            local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n            \n            if currentCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif not savedCooldown or savedCooldown < items[itemId].cooldown then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = timestamp + items[itemId].cooldown\n                \n            elseif savedCooldown > 30 then\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = savedCooldown + timestamp\n                \n            end\n            \n        elseif type == \"NO_CD\" then\n            \n            if equipmentSlot ~= 18 then\n                items[itemId].duration = 30\n                items[itemId].expirationTime = timestamp + 30\n            end\n            \n        end\n        \n        return InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return RemoveAura(allstates, equipmentSlot)\n    \nend\n\nlocal OnExtraProc = function(itemId, extraProcId)\n    local _,_, stacks = WA_GetUnitBuff(\"player\", extraProcId)\n    items[itemId].stacks = stacks\nend\n\nlocal OnProc = function(allstates, equipmentSlot, itemId, spellId)\n    \n    local _, icon, stacks, _, buffDuration, buffExpirationTime = WA_GetUnitBuff(\"player\", spellId)\n    \n    if items[itemId].type == \"INTERNAL\" then\n        local cooldown = items[itemId].cooldown\n        items[itemId].duration = cooldown\n        items[itemId].expirationTime = buffExpirationTime - buffDuration + cooldown\n    end\n    \n    items[itemId].isProc = true\n    items[itemId].procTexture = icon\n    items[itemId].procDuration = buffDuration\n    items[itemId].procExpirationTime = buffExpirationTime\n    items[itemId].stacks = stacks\n    \nend\n\nlocal OnCLEUF = function(allstates, ...)\n    local _, subEvent, _, sourceGUID, _,_,_, destGUID, _,_,_, spellId = ...\n    \n    if not subEvent then return end\n    if INVALID_EVENTS[subEvent] then return end\n    if substr(subEvent, 0, 6) ~= \"SPELL_\" then return end\n    \n    if ((destGUID == myGUID and ((not sourceGUID or sourceGUID == hexNoGUID) or sourceGUID == destGUID)) or sourceGUID == myGUID) then\n        \n        if procs[spellId] then\n            \n            local itemId = procs[spellId]\n            local equipmentSlot = items[itemId].equipmentSlot\n            local type = items[itemId].type\n            \n            if GetInventoryItemID(\"player\", equipmentSlot) ~= itemId then return end\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" then\n                \n                OnProc(allstates, equipmentSlot, itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                \n            elseif subEvent == \"SPELL_AURA_REMOVED\" then\n                items[itemId].isProc = false\n                items[itemId].stacks = 0\n                \n                if type == \"ON_USE\" then\n                    OnUse(allstates, equipmentSlot, itemId)\n                    \n                elseif type == \"NO_CD\" then\n                    items[itemId].duration = 0\n                    items[itemId].expirationTime = GetTime()\n                end\n                \n            elseif type == \"INTERNAL\" then\n                items[itemId].isProc = false\n                items[itemId].duration = items[itemId].cooldown\n                items[itemId].expirationTime = items[itemId].duration + GetTime()\n            end\n            \n            InitAura(allstates, equipmentSlot, itemId)\n            return true\n        end\n        \n        if extraProcs[spellId] then\n            \n            if subEvent == \"SPELL_AURA_APPLIED\" \n            or subEvent == \"SPELL_AURA_REFRESH\" \n            or subEvent == \"SPELL_AURA_APPLIED_DOSE\" \n            or subEvent == \"SPELL_AURA_REMOVED\" then\n                \n                local itemId = extraProcs[spellId]\n                local equipmentSlot = items[itemId].equipmentSlot\n                \n                OnExtraProc(itemId, spellId)\n                InitAura(allstates, equipmentSlot, itemId)\n                return true\n                \n            end\n        end\n    end\nend\n\nlocal OnInit = function(allstates)\n    InitConfig()\n    \n    local updated = false\n    for equipmentSlot in pairs(settings.equipmentSlots) do\n        if InitEquipmentSlot(allstates, equipmentSlot) then\n            updated = true\n        end\n    end\n    \n    if not updated then return end\n    \n    -- display active item procs or load last session\n    for equipmentSlot, itemId in pairs(equipmentSlots) do\n        \n        local isBuffed = false\n        for _, procId in ipairs(items[itemId].procs) do\n            if WA_GetUnitBuff(\"player\", procId) then\n                isBuffed = true\n                OnProc(allstates, equipmentSlot, itemId, procId)\n                if items[itemId].extraProc then\n                    OnExtraProc(itemId, items[itemId].extraProc)\n                end\n                break\n            end\n        end\n        \n        if not isBuffed then\n            \n            items[itemId].isProc = false\n            items[itemId].stacks = 0\n            \n            local type = items[itemId].type\n            if type == \"INTERNAL\" or type == \"NO_CD\" then\n                local savedCooldown = LoadLastSession(allstates, equipmentSlot, itemId)\n                \n                if savedCooldown and savedCooldown > 0 then\n                    items[itemId].duration = items[itemId].cooldown or type == \"NO_CD\" and 30\n                    items[itemId].expirationTime = savedCooldown + GetTime()\n                end\n            end\n            \n            if type == \"ON_USE\" then\n                OnUse(allstates, equipmentSlot, itemId)  \n            end\n            \n        end\n        \n        InitAura(allstates, equipmentSlot, itemId)\n    end\n    \n    return true\nend\n\nlocal SaveLastSession = function()\n    aura_env.saved = aura_env.saved or {}\n    aura_env.saved[WeakAuras.me] = {}\n    local db = aura_env.saved[WeakAuras.me]\n    for itemId, itemData in pairs(items) do\n        local expirationTime = itemData.expirationTime\n        db[itemId] = db[itemId] or {}\n        db[itemId].expirationTimeOS = expirationTime - GetTime() + time()\n    end\nend\n\nItemWidget.OnTrigger = function(allstates, event, ...)\n    \n    if event == \"OPTIONS\" then\n        \n        if WeakAuras.IsOptionsOpen() and ItemWidget.initialized then\n            ItemWidget.initialized = false\n            SaveLastSession()\n        end\n        \n        return OnInit(allstates)\n        \n    elseif event == \"OPTIONS_CLOSE\" then\n        \n        ItemWidget.initialized = true\n        return OnInit(allstates)\n        \n    elseif ItemWidget.initialized then\n        \n        if event == \"PLAYER_EQUIPMENT_CHANGED\" then\n            local equipmentSlot, isEmpty = ...\n            if settings.equipmentSlots[equipmentSlot] then\n                EquipmentSlotChanged(allstates, equipmentSlot, isEmpty)\n                return true\n            end\n            \n        elseif event == \"BAG_UPDATE_COOLDOWN\" then\n            return BagUpdateCooldown(allstates)\n            \n        elseif event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n            return OnCLEUF(allstates, CombatLogGetCurrentEventInfo())\n            \n        elseif event == \"PLAYER_LOGOUT\" then\n            SaveLastSession()\n        end\n    end\nend",
-					["do_custom"] = true,
-				},
-			},
-			["uid"] = "jBOMGyIVp6I",
-			["inverse"] = true,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["displayIcon"] = 134148,
-			["information"] = {
-				["forceEvents"] = true,
-				["saved"] = "JXYMKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEZqUm3PWHHCmxhe7cmbNRt(wrvfQgCbd6vnQZA4GJ1CxiQbc3IcjXuYmPuRKRIcl1IYnZ8sKlN8nZctKRI8n)8ZjXsQYnoMRtqnZ(13gp3fhZ7nW4w6g(6HHBAH0FDkYMQCS63btwTl5mNnjiMjyNne3L6A3tvpeUlkeWCba",
-			},
 			["authorOptions"] = {
 				{
 					["subOptions"] = {
@@ -39919,6 +39890,35 @@ WeakAurasSaved = {
 					["size"] = 10,
 				}, -- [5]
 			},
+			["uid"] = "jBOMGyIVp6I",
+			["inverse"] = true,
+			["Homerqt"] = {
+			},
+			["displayIcon"] = 134148,
+			["information"] = {
+				["forceEvents"] = true,
+				["saved"] = "JXYMKtjwsj5KAIfLRACS8xlwbcKAffKzrjwsM5NxizMBQ(hShoEZqUm3PWHHCmxhe7cmbNRt(wrvfQgCbd6vnQZA4GJ1CxiQbc3IcjXuYmPuRKRIcl1IYnZ8sKlN8nZctKRI8n)8ZjXsQYnoMRtqnZ(13gp3fhZ7nW4w6g(6HHBAH0FDkYMQCS63btwTl5mNnjiMjyNne3L6A3tvpeUlkeWCba",
+			},
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 		},
 		["Halls of Lightning - Whirlwind"] = {
 			["iconSource"] = 0,
@@ -39943,8 +39943,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -39967,8 +39967,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -39997,7 +39997,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -40054,13 +40054,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -40106,7 +40106,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -40122,14 +40122,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Whirlwind",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -40143,12 +40143,16 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["cooldownTextDisabled"] = false,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
@@ -40195,7 +40199,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -40226,7 +40230,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["backgroundColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -40285,10 +40289,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_shadowColor"] = {
@@ -40346,9 +40350,9 @@ WeakAurasSaved = {
 				},
 			},
 			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -40356,23 +40360,23 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["icon_side"] = "RIGHT",
-			["id"] = "Cleave",
+			["sparkHidden"] = "NEVER",
 			["width"] = 40,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["zoom"] = 0.3,
-			["spark"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["uid"] = "HxUbmoeo4w1",
+			["auto"] = false,
+			["useAdjustededMin"] = false,
+			["id"] = "Cleave",
+			["parent"] = "Skills",
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "Skills",
+			["uid"] = "HxUbmoeo4w1",
 			["config"] = {
 			},
 			["inverse"] = false,
-			["auto"] = false,
+			["spark"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -40380,11 +40384,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 		},
 		["Reckoning"] = {
@@ -40393,7 +40393,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -40447,7 +40447,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["parent"] = "Vermin Paladin",
@@ -40521,9 +40521,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -40559,13 +40559,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 25,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["anchorYOffset"] = 0,
@@ -40643,7 +40643,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -40652,20 +40652,20 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Reckoning",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["frameStrata"] = 1,
-			["sparkHidden"] = "NEVER",
-			["config"] = {
-			},
+			["useCooldownModRate"] = true,
+			["id"] = "Reckoning",
+			["uid"] = "sjBDpdGEOJU",
 			["alpha"] = 1,
 			["width"] = 40,
 			["zoom"] = 0.3,
-			["uid"] = "sjBDpdGEOJU",
+			["config"] = {
+			},
 			["inverse"] = false,
 			["spark"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -40679,7 +40679,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -40733,7 +40733,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["color"] = {
@@ -40817,10 +40817,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -40847,13 +40847,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_anchorYOffset"] = 25,
 					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
 					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_visible"] = true,
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
@@ -40925,29 +40925,29 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Judgement of Wisdom",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 40,
 			["zoom"] = 0.3,
 			["spark"] = false,
-			["frameStrata"] = 1,
-			["id"] = "Judgement of Wisdom",
-			["uid"] = "q6yzOhDKLje",
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["useCooldownModRate"] = true,
+			["sparkHidden"] = "NEVER",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["uid"] = "q6yzOhDKLje",
 			["inverse"] = false,
 			["auto"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -40982,8 +40982,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -41004,8 +41004,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -41033,7 +41033,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -41090,13 +41090,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -41142,7 +41142,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -41158,14 +41158,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Rain of Fire",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -41198,8 +41198,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -41222,8 +41222,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "target",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -41251,7 +41251,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -41308,13 +41308,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -41360,7 +41360,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -41376,14 +41376,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Infected!",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -41416,8 +41416,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -41471,7 +41471,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -41528,13 +41528,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -41580,7 +41580,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -41596,14 +41596,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Throw Saronite",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -41703,8 +41703,7 @@ WeakAurasSaved = {
 				},
 			},
 			["iconSource"] = -1,
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -41712,13 +41711,9 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["xOffset"] = 0,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["authorOptions"] = {
 			},
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -41776,17 +41771,17 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
 				}, -- [3]
 			},
 			["height"] = 40,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -41832,24 +41827,30 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["icon_side"] = "RIGHT",
 			["width"] = 40,
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["sparkHeight"] = 30,
 			["texture"] = "Melli",
-			["id"] = "Maul",
-			["zoom"] = 0.3,
-			["spark"] = false,
-			["useAdjustededMin"] = false,
 			["sparkHidden"] = "NEVER",
+			["zoom"] = 0.3,
 			["auto"] = false,
+			["useAdjustededMin"] = false,
+			["id"] = "Maul",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["uid"] = "CYV)viIZ0wT",
+			["spark"] = false,
+			["config"] = {
+			},
 			["inverse"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -41857,8 +41858,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["config"] = {
-			},
+			["uid"] = "CYV)viIZ0wT",
 		},
 		["Power Bar Group"] = {
 			["sparkWidth"] = 10,
@@ -41891,18 +41891,18 @@ WeakAurasSaved = {
 						["powertype"] = 0,
 						["use_powertype"] = true,
 						["custom_hide"] = "timed",
-						["unevent"] = "auto",
+						["health_operator"] = ">=",
 						["type"] = "unit",
 						["use_health"] = true,
-						["health_operator"] = ">=",
+						["unevent"] = "auto",
 						["genericShowOn"] = "showOnActive",
 						["subeventSuffix"] = "_CAST_START",
 						["use_requirePowerType"] = true,
 						["use_percentpower"] = false,
 						["duration"] = "1",
+						["health"] = "0",
 						["spellIds"] = {
 						},
-						["health"] = "0",
 						["event"] = "Power",
 						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
@@ -41935,13 +41935,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -42029,13 +42031,11 @@ WeakAurasSaved = {
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
 			["zoom"] = 0,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["height"] = 15,
 			["scale"] = 1,
@@ -42065,14 +42065,14 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["borderOffset"] = 4,
+			["borderInset"] = 1,
+			["inverse"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["inverse"] = false,
-			["borderInset"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -42149,7 +42149,7 @@ WeakAurasSaved = {
 				}, -- [2]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["wordWrap"] = "WordWrap",
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
@@ -42184,39 +42184,9 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 24,
 			["shadowXOffset"] = 1,
-			["displayText_format_c_format"] = "none",
-			["regionType"] = "text",
 			["preferToUpdate"] = false,
-			["parent"] = "TARGET HP PERCENT",
-			["fixedWidth"] = 200,
-			["anchorFrameParent"] = false,
-			["automaticWidth"] = "Auto",
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
-			["justify"] = "LEFT",
-			["tocversion"] = 11306,
-			["id"] = "MobHPPercentRED",
-			["shadowYOffset"] = -1,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "L9pe9C7xoBj",
-			["semver"] = "1.0.1",
-			["selfPoint"] = "BOTTOM",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
+			["regionType"] = "text",
+			["displayText_format_c_format"] = "none",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -42238,6 +42208,36 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["fixedWidth"] = 200,
+			["anchorFrameParent"] = false,
+			["automaticWidth"] = "Auto",
+			["authorOptions"] = {
+			},
+			["config"] = {
+			},
+			["semver"] = "1.0.1",
+			["tocversion"] = 11306,
+			["id"] = "MobHPPercentRED",
+			["shadowYOffset"] = -1,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "L9pe9C7xoBj",
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["parent"] = "TARGET HP PERCENT",
 		},
 		["Indestructible Potion"] = {
 			["sparkWidth"] = 10,
@@ -42246,7 +42246,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -42300,7 +42300,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["color"] = {
@@ -42383,10 +42383,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -42457,16 +42457,16 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Indestructible Potion",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["alpha"] = 1,
-			["id"] = "Indestructible Potion",
+			["sparkHidden"] = "NEVER",
 			["cooldownTextDisabled"] = false,
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["sparkColor"] = {
@@ -42476,7 +42476,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -42546,7 +42546,7 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["uid"] = "BiUy4gY8pJ(",
-			["internalVersion"] = 69,
+			["arcLength"] = 360,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -42564,6 +42564,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+			},
+			["rotation"] = 0,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
 			},
 			["animation"] = {
 				["start"] = {
@@ -42585,16 +42592,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
+			["animate"] = true,
 			["authorOptions"] = {
 			},
-			["animate"] = true,
-			["arcLength"] = 360,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -42624,7 +42624,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["rotation"] = 0,
+			["internalVersion"] = 70,
 		},
 		["Gundrak - Transformation"] = {
 			["iconSource"] = 0,
@@ -42649,8 +42649,8 @@ WeakAurasSaved = {
 					["do_sound"] = true,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 				},
 				["finish"] = {
 					["sound"] = " custom",
@@ -42704,7 +42704,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -42761,13 +42761,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -42834,7 +42834,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -42850,14 +42850,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Transformation",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -42941,7 +42941,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -43017,13 +43017,13 @@ WeakAurasSaved = {
 					["text_fixedWidth"] = 64,
 					["text_text_format_1.p_time_format"] = 0,
 					["anchorYOffset"] = 0,
-					["text_text_format_1.p_time_mod_rate"] = true,
+					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_precision"] = 1,
 					["text_text_format_1.p_time_precision"] = 1,
 					["type"] = "subtext",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -43035,7 +43035,7 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_1.p_time_dynamic_threshold"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_format"] = 0,
 					["text_shadowColor"] = {
@@ -43046,7 +43046,7 @@ WeakAurasSaved = {
 					},
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_justify"] = "CENTER",
+					["text_text_format_1.p_time_mod_rate"] = true,
 				}, -- [3]
 			},
 			["height"] = 40,
@@ -43072,7 +43072,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = true,
 			["icon"] = true,
 			["authorOptions"] = {
 			},
@@ -43089,14 +43089,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["width"] = 40,
 			["alpha"] = 1,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["zoom"] = 0,
+			["auto"] = true,
 			["tocversion"] = 80300,
 			["id"] = "Power Word: Shield",
 			["useCooldownModRate"] = true,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["auto"] = true,
+			["semver"] = "1.0.0",
 			["uid"] = "q9q)gYG82mF",
 			["inverse"] = true,
 			["url"] = "https://wago.io/E9AeMcIo0/1",
@@ -43206,8 +43206,8 @@ WeakAurasSaved = {
 					["do_sound"] = true,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -43261,7 +43261,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -43318,13 +43318,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -43391,7 +43391,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -43407,14 +43407,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Lightning Nova",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -43437,7 +43437,7 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
@@ -43504,13 +43504,34 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_legacy_floor"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["font"] = "Arial Narrow",
@@ -43554,61 +43575,40 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["displayText_format_1.raidMark_color"] = "class",
-			["uid"] = "iK8FE7Jkgbr",
 			["fontSize"] = 18,
+			["uid"] = "iK8FE7Jkgbr",
+			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
 			["displayText_format_1.destName_format"] = "Unit",
 			["shadowXOffset"] = 1,
-			["shadowYOffset"] = -1,
+			["wagoID"] = "8n36Ga60R",
 			["frameStrata"] = 1,
-			["regionType"] = "text",
 			["displayText_format_1.destName_realm_name"] = "never",
+			["regionType"] = "text",
 			["id"] = "Defense Protocol - Shield of Thorns Chosen",
-			["preferToUpdate"] = false,
+			["displayText_format_1.unitName_format"] = "none",
 			["semver"] = "3.0.2",
 			["displayText_format_p_format"] = "timed",
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["displayText_format_p_time_legacy_floor"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowYOffset"] = -1,
 			["justify"] = "LEFT",
 			["tocversion"] = 30403,
 			["displayText_format_1.destName_abbreviate"] = false,
-			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["displayText_format_1.raidMark_abbreviate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.unitName_format"] = "none",
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["config"] = {
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["wagoID"] = "8n36Ga60R",
+			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_1.destName_color"] = "class",
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["Skills"] = {
 			["backdropColor"] = {
@@ -43625,21 +43625,23 @@ WeakAurasSaved = {
 				"Raptor Strike", -- [5]
 			},
 			["borderBackdrop"] = "Blizzard Tooltip",
-			["parent"] = "SwingTimer - Queue skills",
+			["authorOptions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+			},
 			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "group",
+			["yOffset"] = -70,
+			["anchorPoint"] = "CENTER",
 			["borderSize"] = 2,
+			["scale"] = 0.7,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["xOffset"] = 0,
-			["information"] = {
-				["forceEvents"] = true,
-			},
+			["parent"] = "SwingTimer - Queue skills",
 			["actions"] = {
 				["start"] = {
 				},
@@ -43666,18 +43668,18 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["yOffset"] = -70,
-			["internalVersion"] = 69,
-			["anchorPoint"] = "CENTER",
+			["borderEdge"] = "Square Full White",
+			["borderOffset"] = 4,
+			["xOffset"] = 0,
 			["selfPoint"] = "CENTER",
 			["id"] = "Skills",
-			["scale"] = 0.7,
+			["internalVersion"] = 70,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["authorOptions"] = {
-			},
+			["uid"] = "dBGlw5laZUE",
 			["borderInset"] = 1,
-			["borderOffset"] = 4,
+			["config"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -43697,8 +43699,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["config"] = {
 			},
 			["conditions"] = {
 			},
@@ -43720,7 +43720,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["uid"] = "dBGlw5laZUE",
+			["regionType"] = "group",
 		},
 		["Ahn'kahet - Thundershock"] = {
 			["iconSource"] = 0,
@@ -43745,8 +43745,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -43793,7 +43793,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -43850,13 +43850,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -43902,7 +43902,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -43918,14 +43918,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Thundershock",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -43958,8 +43958,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -44016,7 +44016,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -44073,13 +44073,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -44125,7 +44125,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -44141,14 +44141,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Explosive Barrage",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -44203,7 +44203,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -44263,17 +44263,17 @@ WeakAurasSaved = {
 			["id"] = "VictoryRush",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
+			["uid"] = "0EznwWi8AYW",
 			["config"] = {
 			},
-			["borderInset"] = 1,
-			["uid"] = "0EznwWi8AYW",
+			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["borderInset"] = 1,
 		},
 		["Vermin Hunter"] = {
 			["arcLength"] = 360,
@@ -44325,12 +44325,12 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["useLimit"] = false,
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["uid"] = "H67q1C9K6oT",
-			["rotation"] = 0,
+			["fullCircle"] = true,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -44356,9 +44356,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
+			["xOffset"] = -135,
 			["animate"] = true,
-			["radius"] = 200,
+			["selfPoint"] = "RIGHT",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -44366,8 +44366,8 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["xOffset"] = -135,
 			["gridType"] = "RD",
+			["rotation"] = 0,
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
@@ -44380,6 +44380,7 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["config"] = {
 			},
+			["space"] = 2,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -44400,13 +44401,12 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["selfPoint"] = "RIGHT",
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["space"] = 2,
+			["radius"] = 200,
 		},
 		["Defense Protocol - Blood of the Loa"] = {
 			["iconSource"] = 0,
@@ -44431,8 +44431,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -44455,8 +44455,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "target",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -44484,7 +44484,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -44541,13 +44541,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -44593,7 +44593,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -44609,14 +44609,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Defense Protocol - Blood of the Loa",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -44692,7 +44692,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -44749,13 +44749,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -44801,7 +44801,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -44817,14 +44817,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Prince Taldaram",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -44857,8 +44857,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -44881,8 +44881,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -44918,8 +44918,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -44948,7 +44948,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -45005,13 +45005,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -45057,7 +45057,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -45073,14 +45073,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Impaling Charge",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -45113,8 +45113,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -45137,8 +45137,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "10",
@@ -45168,7 +45168,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -45225,13 +45225,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -45277,7 +45277,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -45293,14 +45293,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Quake",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -45440,10 +45440,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -45475,13 +45475,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_anchorYOffset"] = 25,
 					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
 					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_visible"] = true,
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
@@ -45521,7 +45521,7 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["uid"] = "91mA2IkcG5o",
 			["desaturate"] = false,
 			["anchorFrameType"] = "SCREEN",
@@ -45533,13 +45533,13 @@ WeakAurasSaved = {
 			},
 			["id"] = "Divine Protection",
 			["icon_side"] = "RIGHT",
-			["anchorFrameParent"] = false,
 			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
 			["cooldownTextDisabled"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["spark"] = false,
 			["zoom"] = 0.3,
+			["spark"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHidden"] = "NEVER",
 			["alpha"] = 1,
 			["frameStrata"] = 1,
@@ -45785,7 +45785,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -45866,14 +45866,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\Loc-RedLine",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Top Border Caster",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "spcsHokHsRu",
 			["inverse"] = false,
 			["actions"] = {
@@ -45917,13 +45917,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["do_sound"] = false,
-					["message_custom"] = "function() return UnitName(\"player\") end",
 					["message_format_unitName_format"] = "none",
-					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_format_c_format"] = "none",
 					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
+					["message_type"] = "SAY",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -45982,17 +45982,17 @@ WeakAurasSaved = {
 			["uid"] = "s7ftX2jKpFP",
 			["fixedWidth"] = 200,
 			["model_st_tz"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
+			["outline"] = "OUTLINE",
+			["cooldown"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "8n36Ga60R",
 			["color"] = {
 				0.95294123888016, -- [1]
 				1, -- [2]
 				0.94117653369904, -- [3]
 				1, -- [4]
 			},
-			["outline"] = "OUTLINE",
-			["cooldown"] = true,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "8n36Ga60R",
-			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
 			["authorOptions"] = {
 			},
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
@@ -46000,9 +46000,9 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["model_x"] = 0,
 			["cooldownSwipe"] = true,
-			["automaticWidth"] = "Auto",
-			["customTextUpdate"] = "update",
 			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
 			["advance"] = false,
 			["triggers"] = {
 				{
@@ -46034,11 +46034,10 @@ WeakAurasSaved = {
 						["use_aggro"] = true,
 						["use_hostility"] = false,
 						["useGroup_count"] = false,
-						["names"] = {
-						},
-						["unit"] = "nameplate",
-						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
+						["genericShowOn"] = "showOnCooldown",
+						["unit"] = "nameplate",
 						["duration"] = "1.5",
 						["use_spellId"] = true,
 						["use_npcId"] = true,
@@ -46047,20 +46046,21 @@ WeakAurasSaved = {
 						["namerealm"] = "Crypt Guard",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
+						["useName"] = false,
 						["use_sourceName"] = false,
-						["sourceName"] = "Crypt Guard",
 						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["useName"] = false,
 						["type"] = "aura2",
+						["sourceName"] = "Crypt Guard",
 						["threatUnit"] = "target",
 						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_threatUnit"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
 						},
-						["use_unit"] = true,
+						["names"] = {
+						},
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["percenthealth_operator"] = "~=",
@@ -46100,11 +46100,11 @@ WeakAurasSaved = {
 			},
 			["model_st_ty"] = 0,
 			["alpha"] = 1,
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["width"] = 26,
 			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -46172,10 +46172,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "TOP",
 					["anchorYOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -46215,7 +46215,7 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "NAMEPLATE",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayIcon"] = 135731,
 			["inverse"] = false,
 			["scale"] = 1,
@@ -46244,7 +46244,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -46312,7 +46312,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -46365,10 +46365,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_shadowColor"] = {
@@ -46455,22 +46455,22 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Tiger's Fury",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["zoom"] = 0.3,
 			["spark"] = false,
 			["frameStrata"] = 1,
-			["id"] = "Tiger's Fury",
+			["sparkHidden"] = "NEVER",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -46498,13 +46498,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["do_sound"] = false,
-					["message_custom"] = "function() return UnitName(\"player\") end",
 					["message_format_unitName_format"] = "none",
-					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_format_c_format"] = "none",
 					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
+					["message_type"] = "SAY",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -46561,17 +46561,17 @@ WeakAurasSaved = {
 			["uid"] = "UjT4bFkdtMa",
 			["fixedWidth"] = 200,
 			["model_st_tz"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
+			["outline"] = "OUTLINE",
+			["cooldown"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "8n36Ga60R",
 			["color"] = {
 				1, -- [1]
 				0.011764707043767, -- [2]
 				0.047058828175068, -- [3]
 				1, -- [4]
 			},
-			["outline"] = "OUTLINE",
-			["cooldown"] = true,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "8n36Ga60R",
-			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
 			["authorOptions"] = {
 			},
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
@@ -46579,9 +46579,9 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["model_x"] = 0,
 			["cooldownSwipe"] = true,
-			["automaticWidth"] = "Auto",
-			["customTextUpdate"] = "update",
 			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
 			["advance"] = false,
 			["triggers"] = {
 				{
@@ -46609,7 +46609,7 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["useExactSpellId"] = false,
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["percenthealth_operator"] = {
 							"~=", -- [1]
@@ -46622,14 +46622,14 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["use_threatUnit"] = true,
 						["realSpellName"] = "Summon Corpse Scarabs",
-						["use_sourceName"] = false,
+						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
+						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["useName"] = true,
 						["names"] = {
 						},
@@ -46643,7 +46643,7 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["use_messageType"] = true,
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 					},
 					["untrigger"] = {
 						["threatUnit"] = "target",
@@ -46679,11 +46679,11 @@ WeakAurasSaved = {
 			},
 			["model_st_ty"] = 0,
 			["alpha"] = 1,
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["width"] = 80,
 			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -46756,7 +46756,7 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "NAMEPLATE",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayIcon"] = 135731,
 			["inverse"] = false,
 			["scale"] = 1,
@@ -46924,8 +46924,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -46946,7 +46946,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Trial of the Champion - Marked for Death Glow",
 			["color"] = {
 				1, -- [1]
@@ -46955,8 +46955,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -47195,7 +47195,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -47295,16 +47295,16 @@ WeakAurasSaved = {
 						1, -- [3]
 						1, -- [4]
 					},
-					["text_font"] = "Arial Narrow",
+					["border_color"] = {
+					},
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 22,
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOMRIGHT",
-					["text_shadowYOffset"] = 0,
-					["border_color"] = {
-					},
+					["text_anchorYOffset"] = 22,
+					["text_font"] = "Arial Narrow",
 					["text_fontSize"] = 18,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_shadowColor"] = {
@@ -47359,34 +47359,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["uid"] = "jbxJ5j0N4lg",
+			["xOffset"] = -56,
 			["authorOptions"] = {
 			},
-			["xOffset"] = -56,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 			["useTooltip"] = true,
 			["alpha"] = 1,
 			["width"] = 40,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Loss of Control Icon",
 			["url"] = "https://wago.io/NsoiZnZ34/14",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -47410,42 +47424,32 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Last Stand"] = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -47486,11 +47490,12 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -47498,13 +47503,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["zoom"] = 0.3,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["cooldownTextDisabled"] = false,
+			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -47562,10 +47562,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -47627,6 +47627,47 @@ WeakAurasSaved = {
 			["cooldown"] = false,
 			["displayIcon"] = "",
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["sparkHeight"] = 30,
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["uid"] = "M0FDBXCgVgs",
+			["icon_side"] = "RIGHT",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["width"] = 36,
+			["anchorFrameParent"] = false,
+			["texture"] = "Melli",
+			["frameStrata"] = 1,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = false,
+			["id"] = "Last Stand",
+			["sparkHidden"] = "NEVER",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["useCooldownModRate"] = true,
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -47635,47 +47676,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
-			["parent"] = "Vermin Warrior",
-			["uid"] = "M0FDBXCgVgs",
-			["icon_side"] = "RIGHT",
-			["anchorFrameParent"] = false,
-			["width"] = 36,
-			["sparkHeight"] = 30,
-			["texture"] = "Melli",
-			["frameStrata"] = 1,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["auto"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["sparkHidden"] = "NEVER",
-			["id"] = "Last Stand",
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["spark"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["orientation"] = "HORIZONTAL",
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["alpha"] = 1,
 		},
 		["1. Rangecheck Health Check"] = {
 			["modelIsUnit"] = false,
@@ -47696,13 +47696,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["message_format_c_format"] = "none",
-					["message_custom"] = "function() return UnitName(\"player\") end",
-					["do_sound"] = false,
 					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["message_format_unitName_format"] = "none",
+					["message_format_c_format"] = "none",
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
-					["message_format_unitName_format"] = "none",
+					["do_sound"] = false,
 				},
 				["init"] = {
 				},
@@ -47813,10 +47813,10 @@ WeakAurasSaved = {
 						["use_destUnit"] = false,
 						["use_track"] = true,
 						["showClones"] = true,
+						["events"] = "PLAYER_REGEN_DISABLED,PLAYER_REGEN_ENABLED,PLAYER_STARTED_MOVING,PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_REGEN_DISABLED,PLAYER_REGEN_ENABLED,PLAYER_STARTED_MOVING,PLAYER_ENTERING_WORLD",
-						["use_aggro"] = true,
+						["use_hostility"] = false,
 						["useGroup_count"] = false,
 						["use_threatUnit"] = true,
 						["use_npcId"] = true,
@@ -47828,12 +47828,12 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["unevent"] = "timed",
-						["useName"] = true,
+						["sourceName"] = "Crypt Guard",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["sourceName"] = "Crypt Guard",
-						["use_sourceName"] = false,
+						["useName"] = true,
 						["type"] = "custom",
+						["use_sourceName"] = false,
 						["auraspellids"] = {
 						},
 						["unit"] = "nameplate",
@@ -47843,7 +47843,7 @@ WeakAurasSaved = {
 						["realSpellName"] = "Summon Corpse Scarabs",
 						["use_spellName"] = false,
 						["custom"] = "function(event, name)\n    local min, max = xGetRange(\"player\")\n    local works = min == 0 and max == 2\n    return not works\nend",
-						["use_hostility"] = false,
+						["use_aggro"] = true,
 						["use_message"] = true,
 						["use_percenthealth"] = true,
 						["percenthealth_operator"] = {
@@ -47860,8 +47860,8 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_format"] = "timed",
-			["internalVersion"] = 69,
-			["advance"] = false,
+			["internalVersion"] = 70,
+			["model_fileId"] = "122968",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -47889,7 +47889,7 @@ WeakAurasSaved = {
 			["displayText_format_p_time_legacy_floor"] = false,
 			["discrete_rotation"] = 0,
 			["anchorFrameType"] = "UIPARENT",
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -47994,10 +47994,10 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["frameStrata"] = 1,
 			["width"] = 220,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["preferToUpdate"] = false,
 			["inverse"] = false,
-			["model_fileId"] = "122968",
+			["advance"] = false,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -48032,8 +48032,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -48129,7 +48129,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -48186,13 +48186,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -48238,7 +48238,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -48254,14 +48254,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Dark Matter",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -48284,7 +48284,7 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
@@ -48352,13 +48352,34 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_legacy_floor"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["font"] = "Arial Narrow",
@@ -48406,61 +48427,40 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["displayText_format_1.raidMark_color"] = "class",
-			["uid"] = "gv4uEHAlHvb",
 			["fontSize"] = 18,
+			["uid"] = "gv4uEHAlHvb",
+			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
 			["displayText_format_1.destName_format"] = "Unit",
 			["shadowXOffset"] = 1,
-			["shadowYOffset"] = -1,
+			["wagoID"] = "8n36Ga60R",
 			["frameStrata"] = 1,
-			["regionType"] = "text",
 			["displayText_format_1.destName_realm_name"] = "never",
+			["regionType"] = "text",
 			["id"] = "Defense Protocol - Confessor's Wrath Chosen",
-			["preferToUpdate"] = false,
+			["displayText_format_1.unitName_format"] = "none",
 			["semver"] = "3.0.2",
 			["displayText_format_p_format"] = "timed",
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["displayText_format_p_time_legacy_floor"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowYOffset"] = -1,
 			["justify"] = "LEFT",
 			["tocversion"] = 30403,
 			["displayText_format_1.destName_abbreviate"] = false,
-			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["displayText_format_1.raidMark_abbreviate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.unitName_format"] = "none",
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["config"] = {
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["wagoID"] = "8n36Ga60R",
+			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_1.destName_color"] = "class",
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["Stratholme - Sleep"] = {
 			["iconSource"] = 0,
@@ -48485,8 +48485,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -48543,7 +48543,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -48600,13 +48600,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -48652,7 +48652,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -48668,14 +48668,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Stratholme - Sleep",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -48707,13 +48707,12 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["use_form"] = true,
 						["unevent"] = "auto",
-						["use_inverse"] = false,
 						["form"] = {
 							["single"] = 3,
 						},
+						["use_inverse"] = false,
 						["event"] = "Stance/Form/Aura",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["use_spellName"] = true,
 						["spellIds"] = {
@@ -48721,7 +48720,8 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["duration"] = "1",
 						["use_unit"] = true,
-						["unit"] = "player",
+						["names"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -48729,7 +48729,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["wordWrap"] = "WordWrap",
 			["font"] = "Arial Narrow",
 			["version"] = 16,
@@ -48788,8 +48788,8 @@ WeakAurasSaved = {
 				},
 			},
 			["selfPoint"] = "BOTTOM",
-			["semver"] = "1.0.15",
 			["justify"] = "LEFT",
+			["semver"] = "1.0.15",
 			["tocversion"] = 11302,
 			["id"] = "Warrior - Berserker Stance",
 			["uid"] = "rPVBYBZyMKI",
@@ -48969,8 +48969,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -48991,7 +48991,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Violet Hold - Optic Link",
 			["color"] = {
 				1, -- [1]
@@ -49000,8 +49000,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -49047,8 +49047,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -49110,7 +49110,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -49167,13 +49167,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -49219,7 +49219,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -49235,14 +49235,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Planar Shift",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -49275,8 +49275,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -49336,7 +49336,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -49393,13 +49393,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -49445,7 +49445,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -49461,14 +49461,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Frightening Shout",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -49628,8 +49628,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -49650,7 +49650,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Gundrak - Deep Freeze Glow",
 			["color"] = {
 				1, -- [1]
@@ -49659,8 +49659,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -49833,8 +49833,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -49855,7 +49855,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Gundrak - Whirling Slash Glow",
 			["color"] = {
 				1, -- [1]
@@ -49864,8 +49864,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -50032,8 +50032,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -50054,7 +50054,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Drak'Tharon - Grievous Bite Glow",
 			["color"] = {
 				1, -- [1]
@@ -50063,8 +50063,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -50231,8 +50231,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -50253,7 +50253,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Ahn'kahet - Web Glow",
 			["color"] = {
 				1, -- [1]
@@ -50262,8 +50262,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -50309,8 +50309,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -50365,7 +50365,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -50471,7 +50471,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Arial Narrow",
 					["text_justify"] = "CENTER",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -50480,7 +50480,7 @@ WeakAurasSaved = {
 					["text_fixedWidth"] = 64,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 				}, -- [4]
 			},
 			["height"] = 41,
@@ -50512,7 +50512,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -50528,14 +50528,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Confessor's Wrath",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -50586,7 +50586,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -50684,13 +50684,13 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Top",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 200,
-			["uid"] = "uOWR(23TCVs",
 			["config"] = {
 			},
+			["uid"] = "uOWR(23TCVs",
 			["parent"] = "Loss of Control Alert (WOTLK)",
 			["conditions"] = {
 			},
@@ -50763,7 +50763,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -50833,13 +50833,13 @@ WeakAurasSaved = {
 					["text_text_format_p_time_format"] = 0,
 					["text_text_format_1.p_time_legacy_floor"] = true,
 					["text_text_format_p_format"] = "timed",
-					["text_text_format_1.p_time_mod_rate"] = true,
+					["text_justify"] = "CENTER",
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_1.p_time_format"] = 0,
 					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
+					["text_text_format_1.p_time_mod_rate"] = true,
 					["rotateText"] = "NONE",
 					["anchorXOffset"] = 0,
 					["text_shadowXOffset"] = 0,
@@ -50862,9 +50862,9 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_1.p_time_dynamic_threshold"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_text_format_1.p_format"] = "timed",
 					["text_fontType"] = "OUTLINE",
+					["text_text_format_1.p_format"] = "timed",
+					["text_visible"] = true,
 					["text_text_format_1.p_time_precision"] = 1,
 					["text_fontSize"] = 16,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
@@ -50895,16 +50895,16 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "Ltt41BdE31T",
+			["url"] = "https://wago.io/E9AeMcIo0/1",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["url"] = "https://wago.io/E9AeMcIo0/1",
 			["regionType"] = "icon",
 			["cooldown"] = false,
-			["parent"] = "Vermin Hunter",
+			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 				},
@@ -50915,16 +50915,16 @@ WeakAurasSaved = {
 			},
 			["zoom"] = 0,
 			["anchorFrameParent"] = false,
-			["auto"] = true,
+			["semver"] = "1.0.0",
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.0",
+			["auto"] = true,
 			["tocversion"] = 80300,
 			["id"] = "Misdirection",
 			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["width"] = 40,
 			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["alpha"] = 1,
 			["config"] = {
 			},
 			["inverse"] = true,
@@ -51013,7 +51013,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["parent"] = "Vermin Hunter",
 		},
 		["Wotlk Dungeons - Disease"] = {
 			["iconSource"] = -1,
@@ -51113,10 +51113,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["debuffType"] = "HARMFUL",
 						["use_genericShowOn"] = true,
-						["useName"] = false,
+						["type"] = "aura2",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["use_threatUnit"] = true,
 						["use_npcId"] = false,
 						["threatUnit"] = "target",
@@ -51126,7 +51126,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_aggro"] = true,
-						["type"] = "aura2",
+						["useName"] = false,
 						["unit"] = "party",
 						["useAffected"] = false,
 						["useExactSpellId"] = false,
@@ -51186,8 +51186,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.54509803921569, -- [1]
 						0.54901960784314, -- [2]
@@ -51208,7 +51208,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Wotlk Dungeons - Disease",
 			["color"] = {
 				1, -- [1]
@@ -51217,8 +51217,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -51298,7 +51298,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "CENTER",
 			["version"] = 10,
 			["subRegions"] = {
@@ -51361,9 +51361,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["groupIcon"] = "237547",
-			["uid"] = "jrqAlTitwp)",
 			["config"] = {
 			},
+			["uid"] = "jrqAlTitwp)",
 			["borderInset"] = 1,
 			["conditions"] = {
 			},
@@ -51396,8 +51396,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -51459,7 +51459,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -51569,7 +51569,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -51585,14 +51585,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Void Shift",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -51625,8 +51625,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -51681,7 +51681,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -51790,7 +51790,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -51806,14 +51806,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Shattering Defenses",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -51846,8 +51846,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -51907,7 +51907,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -52017,7 +52017,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -52033,14 +52033,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Harpoon",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -52054,23 +52054,20 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["sparkOffsetX"] = 0,
 			["wagoID"] = "v9qxdDgI4",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["xOffset"] = 0,
+			["uid"] = "HmB0mh3vIQc",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
 			},
 			["triggers"] = {
 				{
@@ -52107,14 +52104,10 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["iconSource"] = -1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["parent"] = "Vermin Warrior",
 			["barColor"] = {
@@ -52124,11 +52117,13 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
 			},
 			["information"] = {
 				["forceEvents"] = true,
@@ -52189,9 +52184,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -52259,7 +52254,7 @@ WeakAurasSaved = {
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
 			["sparkHeight"] = 30,
 			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
 			["config"] = {
 			},
@@ -52269,27 +52264,32 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["anchorFrameParent"] = false,
 			["texture"] = "Melli",
-			["useAdjustededMin"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["auto"] = false,
+			["spark"] = false,
 			["sparkHidden"] = "NEVER",
 			["id"] = "Shield Wall",
-			["spark"] = false,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
-			["uid"] = "HmB0mh3vIQc",
-			["inverse"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
 			["alpha"] = 1,
-			["orientation"] = "HORIZONTAL",
-			["displayIcon"] = "",
-			["cooldown"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["inverse"] = false,
+			["zoom"] = 0.3,
+			["orientation"] = "HORIZONTAL",
+			["displayIcon"] = "",
+			["cooldown"] = false,
+			["frameStrata"] = 1,
 		},
 		["Utgarde Pinnacle - Acid Spit"] = {
 			["iconSource"] = 0,
@@ -52314,8 +52314,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -52423,7 +52423,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -52533,7 +52533,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -52549,14 +52549,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Acid Spit",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -52589,8 +52589,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -52645,7 +52645,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -52702,13 +52702,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -52754,7 +52754,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -52770,14 +52770,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Corrupt Soul",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -52810,8 +52810,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -52834,8 +52834,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -52864,7 +52864,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -52921,13 +52921,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -52973,7 +52973,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -52989,14 +52989,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Reflection - Defiling Horror",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -53019,7 +53019,7 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
@@ -53062,8 +53062,8 @@ WeakAurasSaved = {
 						["use_messageType"] = true,
 						["use_cloneId"] = true,
 						["debuffType"] = "HELPFUL",
-						["useName"] = false,
 						["type"] = "aura2",
+						["useName"] = false,
 						["spellName"] = {
 						},
 						["auraspellids"] = {
@@ -53125,13 +53125,35 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_legacy_floor"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "alphaPulse",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["font"] = "Arial Narrow",
@@ -53179,62 +53201,40 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["displayText_format_1.raidMark_color"] = "class",
-			["uid"] = "gQ0vqNmS4vR",
 			["fontSize"] = 18,
+			["uid"] = "gQ0vqNmS4vR",
+			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
 			["displayText_format_1.destName_format"] = "Unit",
 			["shadowXOffset"] = 1,
-			["shadowYOffset"] = -1,
+			["wagoID"] = "8n36Ga60R",
 			["frameStrata"] = 1,
-			["regionType"] = "text",
 			["displayText_format_1.destName_realm_name"] = "never",
+			["regionType"] = "text",
 			["id"] = "Defense Protocol - Gamma Buffs Missing",
-			["preferToUpdate"] = false,
+			["displayText_format_1.unitName_format"] = "none",
 			["semver"] = "3.0.2",
 			["displayText_format_p_format"] = "timed",
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "alphaPulse",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["displayText_format_p_time_legacy_floor"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowYOffset"] = -1,
 			["justify"] = "LEFT",
 			["tocversion"] = 30403,
 			["displayText_format_1.destName_abbreviate"] = false,
-			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["displayText_format_1.raidMark_abbreviate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.unitName_format"] = "none",
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["config"] = {
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["wagoID"] = "8n36Ga60R",
+			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_1.destName_color"] = "class",
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["Wotlk Dungeons - Purge"] = {
 			["modelIsUnit"] = false,
@@ -53254,13 +53254,13 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message"] = "",
-					["do_sound"] = false,
-					["message_custom"] = "function() return UnitName(\"player\") end",
 					["message_format_unitName_format"] = "none",
-					["message_type"] = "SAY",
+					["message_custom"] = "function() return UnitName(\"player\") end",
+					["do_sound"] = false,
+					["message_format_c_format"] = "none",
 					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["message_format_c_format"] = "none",
+					["message_type"] = "SAY",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -53317,17 +53317,17 @@ WeakAurasSaved = {
 			["uid"] = "zOHRk(anvIi",
 			["fixedWidth"] = 200,
 			["model_st_tz"] = 0,
+			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
+			["outline"] = "OUTLINE",
+			["cooldown"] = true,
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "8n36Ga60R",
 			["color"] = {
 				0.95294123888016, -- [1]
 				1, -- [2]
 				0.94117653369904, -- [3]
 				1, -- [4]
 			},
-			["outline"] = "OUTLINE",
-			["cooldown"] = true,
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "8n36Ga60R",
-			["parent"] = "Tems Wotlk Dungeon Pack - Addon",
 			["authorOptions"] = {
 			},
 			["customText"] = "function()\n    if WeakAuras.IsOptionsOpen() then return end\n    if not aura_env.last or aura_env.last < GetTime() - 1.5 then\n        aura_env.last = GetTime()\n        SendChatMessage(\"{X} RUN AWAY {X}\") -- replace the message as needed\n    end\nend",
@@ -53335,9 +53335,9 @@ WeakAurasSaved = {
 			["borderOffset"] = 5,
 			["model_x"] = 0,
 			["cooldownSwipe"] = true,
-			["automaticWidth"] = "Auto",
-			["customTextUpdate"] = "update",
 			["cooldownEdge"] = true,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
 			["advance"] = false,
 			["triggers"] = {
 				{
@@ -53378,16 +53378,16 @@ WeakAurasSaved = {
 						["use_threatUnit"] = true,
 						["use_npcId"] = true,
 						["namerealm"] = "Crypt Guard",
-						["useName"] = false,
+						["type"] = "aura2",
 						["use_cloneId"] = false,
 						["debuffType"] = "HELPFUL",
-						["use_sourceName"] = false,
 						["sourceName"] = "Crypt Guard",
+						["use_sourceName"] = false,
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["use_aggro"] = true,
-						["type"] = "aura2",
+						["useName"] = false,
 						["threatUnit"] = "target",
 						["use_status"] = false,
 						["realSpellName"] = "Summon Corpse Scarabs",
@@ -53434,11 +53434,11 @@ WeakAurasSaved = {
 			},
 			["model_st_ty"] = 0,
 			["alpha"] = 1,
-			["model_st_tx"] = 0,
+			["version"] = 10,
 			["width"] = 26,
 			["discrete_rotation"] = 0,
 			["frameStrata"] = 1,
-			["version"] = 10,
+			["model_st_tx"] = 0,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -53506,10 +53506,10 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "TOP",
 					["anchorYOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -53549,7 +53549,7 @@ WeakAurasSaved = {
 			["model_y"] = 0,
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "NAMEPLATE",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["displayIcon"] = 135731,
 			["inverse"] = false,
 			["scale"] = 1,
@@ -53590,8 +53590,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -53653,7 +53653,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -53763,7 +53763,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -53779,14 +53779,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Violet Hold - Shroud of Darkness",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -53819,8 +53819,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -53882,7 +53882,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -53992,7 +53992,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -54008,14 +54008,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Woe Strike",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -54032,7 +54032,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["sparkOffsetX"] = 0,
@@ -54088,7 +54088,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["color"] = {
@@ -54164,10 +54164,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -54247,22 +54247,22 @@ WeakAurasSaved = {
 			["uid"] = "GpWxZd496n2",
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Berserk",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["frameStrata"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Berserk",
 			["zoom"] = 0.3,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -54295,8 +54295,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -54358,7 +54358,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -54468,7 +54468,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -54484,14 +54484,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Keep - Frost Tomb",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -54524,8 +54524,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -54548,8 +54548,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "2",
@@ -54577,7 +54577,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -54634,13 +54634,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -54686,7 +54686,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -54702,14 +54702,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Merge",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -54855,10 +54855,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_format"] = "timed",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -54941,12 +54941,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = true,
-			["cooldownEdge"] = false,
+			["zoom"] = 0.3,
 			["xOffset"] = 0,
+			["cooldownEdge"] = false,
 			["cooldown"] = false,
 			["regionType"] = "icon",
-			["selfPoint"] = "CENTER",
+			["internalVersion"] = 70,
 			["parent"] = "DEBUFFS - PET",
 			["actions"] = {
 				["start"] = {
@@ -54960,14 +54960,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["width"] = 36,
 			["frameStrata"] = 1,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["auto"] = true,
 			["tocversion"] = 90001,
 			["id"] = "targetdebuffs  2",
 			["semver"] = "1.0.0",
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -54983,7 +54983,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["internalVersion"] = 69,
+			["selfPoint"] = "CENTER",
 		},
 		["Agate"] = {
 			["iconSource"] = -1,
@@ -55045,7 +55045,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -55129,7 +55129,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["uid"] = "(9qU7Rw3V8a",
 			["actions"] = {
 				["start"] = {
@@ -55182,14 +55182,14 @@ WeakAurasSaved = {
 			["xOffset"] = 0,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 1,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
 			["tocversion"] = 11304,
 			["id"] = "Agate",
 			["semver"] = "1.0.0",
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 				["macro"] = {
 					["text"] = "/cast Conjure Mana Agate",
@@ -55252,9 +55252,9 @@ WeakAurasSaved = {
 						["use_itemName"] = true,
 						["subeventPrefix"] = "SPELL",
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["event"] = "Item Count",
 						["subeventSuffix"] = "_CAST_START",
 						["use_absorbMode"] = true,
@@ -55267,7 +55267,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -55317,7 +55317,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -55331,7 +55331,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 				}, -- [2]
 				{
 					["glowFrequency"] = 0,
@@ -55385,6 +55385,12 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -55393,28 +55399,22 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["regionType"] = "icon",
 			["cooldown"] = false,
-			["xOffset"] = 0,
+			["url"] = "https://wago.io/iST6tz9t8/1",
 			["useTooltip"] = true,
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["cooldownTextDisabled"] = false,
-			["width"] = 40,
 			["zoom"] = 0.3,
+			["width"] = 40,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Saronite Ore",
 			["useCooldownModRate"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "RuUAMb)kWx1",
 			["inverse"] = false,
 			["selfPoint"] = "CENTER",
@@ -55423,7 +55423,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["url"] = "https://wago.io/iST6tz9t8/1",
+			["xOffset"] = 0,
 		},
 		["The Oculus - Frostbomb"] = {
 			["iconSource"] = 0,
@@ -55448,8 +55448,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -55511,7 +55511,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -55568,13 +55568,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -55620,7 +55620,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -55636,14 +55636,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Frostbomb",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -55668,7 +55668,14 @@ WeakAurasSaved = {
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -55726,15 +55733,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["internalVersion"] = 69,
+			["icon"] = true,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -55792,10 +55792,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -55857,7 +55857,7 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["cooldown"] = false,
 			["desaturate"] = false,
 			["backgroundColor"] = {
@@ -55870,27 +55870,23 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["anchorFrameFrame"] = "PlayerFrame",
 			["regionType"] = "icon",
-			["id"] = "Anti-Magic Shell",
+			["sparkHidden"] = "NEVER",
 			["uid"] = "a3a2jKpBkcl",
 			["icon_side"] = "RIGHT",
 			["useAdjustededMin"] = false,
-			["sparkHeight"] = 30,
 			["anchorFrameParent"] = false,
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 40,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
-			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
+			["useCooldownModRate"] = true,
+			["id"] = "Anti-Magic Shell",
 			["zoom"] = 0.3,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["cooldownTextDisabled"] = false,
@@ -55900,7 +55896,11 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Pit of Saron - Poison Nova"] = {
@@ -55926,8 +55926,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -56021,7 +56021,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -56078,13 +56078,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -56130,7 +56130,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -56146,14 +56146,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Poison Nova",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -56186,8 +56186,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -56249,7 +56249,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -56306,13 +56306,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -56358,7 +56358,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -56374,14 +56374,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Well of Souls",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -56414,8 +56414,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -56438,8 +56438,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -56475,8 +56475,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "3",
@@ -56505,7 +56505,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -56562,13 +56562,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -56614,7 +56614,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -56630,14 +56630,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Shock of Sorrow",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -56660,7 +56660,7 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
@@ -56727,13 +56727,34 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_legacy_floor"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["font"] = "Arial Narrow",
@@ -56777,61 +56798,40 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["displayText_format_1.raidMark_color"] = "class",
-			["uid"] = "NeFR9Xiob29",
 			["fontSize"] = 18,
+			["uid"] = "NeFR9Xiob29",
+			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
 			["displayText_format_1.destName_format"] = "Unit",
 			["shadowXOffset"] = 1,
-			["shadowYOffset"] = -1,
+			["wagoID"] = "8n36Ga60R",
 			["frameStrata"] = 1,
-			["regionType"] = "text",
 			["displayText_format_1.destName_realm_name"] = "never",
+			["regionType"] = "text",
 			["id"] = "Defense Protocol - Rallying Cry Chosen",
-			["preferToUpdate"] = false,
+			["displayText_format_1.unitName_format"] = "none",
 			["semver"] = "3.0.2",
 			["displayText_format_p_format"] = "timed",
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["displayText_format_p_time_legacy_floor"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowYOffset"] = -1,
 			["justify"] = "LEFT",
 			["tocversion"] = 30403,
 			["displayText_format_1.destName_abbreviate"] = false,
-			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["displayText_format_1.raidMark_abbreviate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.unitName_format"] = "none",
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["config"] = {
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["wagoID"] = "8n36Ga60R",
+			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_1.destName_color"] = "class",
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["AV Timers"] = {
 			["grow"] = "DOWN",
@@ -56875,7 +56875,7 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -56898,19 +56898,16 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["sort"] = "ascending",
-			["radius"] = 200,
-			["gridType"] = "RD",
+			["selfPoint"] = "TOP",
+			["arcLength"] = 360,
 			["rotation"] = 0,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["sortHybridTable"] = {
+				["Av Timers"] = false,
 			},
 			["version"] = 14,
 			["subRegions"] = {
 			},
-			["arcLength"] = 360,
+			["gridType"] = "RD",
 			["stagger"] = 0,
 			["load"] = {
 				["use_class"] = false,
@@ -56939,9 +56936,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "8E8nv4OfjBN",
+			["config"] = {
+			},
 			["animate"] = true,
-			["source"] = "import",
+			["uid"] = "8E8nv4OfjBN",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -56958,23 +56956,25 @@ WeakAurasSaved = {
 			["semver"] = "1.0.13",
 			["tocversion"] = 20503,
 			["id"] = "AV Timers",
-			["selfPoint"] = "TOP",
+			["source"] = "import",
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SELECTFRAME",
-			["config"] = {
-			},
-			["borderInset"] = 1,
 			["xOffset"] = -130,
+			["borderInset"] = 1,
 			["rowSpace"] = 1,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sortHybridTable"] = {
-				["Av Timers"] = false,
-			},
+			["radius"] = 200,
 		},
 		["Fel Iron Ore"] = {
 			["iconSource"] = -1,
@@ -57002,9 +57002,9 @@ WeakAurasSaved = {
 						["use_itemName"] = true,
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["event"] = "Item Count",
 						["subeventSuffix"] = "_CAST_START",
 						["duration"] = "1",
@@ -57016,7 +57016,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -57047,7 +57047,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -57061,7 +57061,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontSize"] = 16,
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 				}, -- [2]
 				{
 					["glowFrequency"] = 0,
@@ -57115,6 +57115,7 @@ WeakAurasSaved = {
 			["source"] = "import",
 			["config"] = {
 			},
+			["xOffset"] = 0,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -57135,10 +57136,9 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["cooldown"] = false,
-			["url"] = "https://wago.io/iST6tz9t8/1",
+			["useTooltip"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -57154,16 +57154,16 @@ WeakAurasSaved = {
 				},
 			},
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["width"] = 40,
 			["cooldownTextDisabled"] = false,
+			["width"] = 40,
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Fel Iron Ore",
 			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "ax30yT3st6L",
 			["inverse"] = false,
 			["parent"] = "Ore Count",
@@ -57172,7 +57172,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useTooltip"] = true,
+			["url"] = "https://wago.io/iST6tz9t8/1",
 		},
 		["Jade"] = {
 			["iconSource"] = -1,
@@ -57229,7 +57229,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -57295,7 +57295,7 @@ WeakAurasSaved = {
 				},
 			},
 			["authorMode"] = true,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["config"] = {
 				["macro"] = {
 					["text"] = "/cast Conjure Mana Jade",
@@ -57346,14 +57346,14 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["width"] = 40,
 			["alpha"] = 1,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "Jade",
 			["auto"] = true,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["uid"] = "ToLYidE5fIK",
 			["inverse"] = false,
 			["actions"] = {
@@ -57440,8 +57440,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -57533,7 +57533,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -57590,13 +57590,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -57642,7 +57642,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -57658,14 +57658,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Renew Steel",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -57681,7 +57681,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["parent"] = "Vermin Warrior",
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = 0,
@@ -57794,7 +57794,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -57890,10 +57890,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -57957,16 +57957,16 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["id"] = "Revenge - not Defensive stance",
-			["anchorFrameParent"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["anchorFrameType"] = "SCREEN",
 			["zoom"] = 0.3,
 			["spark"] = false,
 			["frameStrata"] = 1,
-			["sparkHidden"] = "NEVER",
+			["id"] = "Revenge - not Defensive stance",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["width"] = 36,
 			["auto"] = false,
 			["sparkColor"] = {
@@ -57976,7 +57976,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = 132353,
 			["information"] = {
@@ -58136,8 +58136,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -58158,7 +58158,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Stratholme - Constricting Chains Glow",
 			["color"] = {
 				1, -- [1]
@@ -58167,8 +58167,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -58214,8 +58214,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -58238,8 +58238,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "2",
@@ -58268,7 +58268,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -58325,13 +58325,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -58377,7 +58377,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -58393,14 +58393,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Arc Weld",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -58409,253 +58409,6 @@ WeakAurasSaved = {
 			["cooldown"] = true,
 			["authorOptions"] = {
 			},
-		},
-		["Predator's Swiftness"] = {
-			["sparkWidth"] = 10,
-			["sparkOffsetX"] = 0,
-			["wagoID"] = "v9qxdDgI4",
-			["parent"] = "Vermin Druid",
-			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["iconSource"] = -1,
-			["cooldownSwipe"] = true,
-			["sparkRotation"] = 0,
-			["sparkRotationMode"] = "AUTO",
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["auranames"] = {
-							"Predator's Swiftness", -- [1]
-						},
-						["duration"] = "1",
-						["genericShowOn"] = "showOnReady",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["useName"] = true,
-						["use_unit"] = true,
-						["unevent"] = "auto",
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
-						["event"] = "Action Usable",
-						["type"] = "aura2",
-						["realSpellName"] = "Victory Rush",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["use_genericShowOn"] = true,
-						["spellName"] = 34428,
-						["names"] = {
-						},
-						["use_track"] = true,
-						["useIgnoreName"] = false,
-					},
-					["untrigger"] = {
-						["genericShowOn"] = "showOnReady",
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useTooltip"] = false,
-			["keepAspectRatio"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["xOffset"] = 0,
-			["authorOptions"] = {
-			},
-			["barColor"] = {
-				0.2, -- [1]
-				1, -- [2]
-				0.0862745098039216, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["internalVersion"] = 69,
-			["sparkOffsetY"] = 0,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["glowFrequency"] = 0.75,
-					["type"] = "subglow",
-					["glowXOffset"] = 0,
-					["text_color"] = {
-					},
-					["glowThickness"] = 2,
-					["glowDuration"] = 1,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						0.85098039215686, -- [2]
-						0.1843137254902, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = true,
-					["glow"] = true,
-					["glowLength"] = 16,
-					["glowType"] = "buttonOverlay",
-					["glowScale"] = 1,
-					["glowLines"] = 6,
-					["glowBorder"] = false,
-				}, -- [2]
-				{
-					["text_text_format_p_time_format"] = 0,
-					["text_text"] = "%p",
-					["text_text_format_p_format"] = "timed",
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["type"] = "subtext",
-					["anchorXOffset"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_text_format_p_time_precision"] = 1,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
-					["text_shadowXOffset"] = 0,
-					["text_text_format_p_time_legacy_floor"] = true,
-					["text_fontSize"] = 12,
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_text_format_p_time_mod_rate"] = true,
-				}, -- [3]
-			},
-			["height"] = 36,
-			["selfPoint"] = "CENTER",
-			["load"] = {
-				["use_level"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["level_operator"] = {
-					">=", -- [1]
-				},
-				["use_class"] = true,
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "DRUID",
-					["multi"] = {
-					},
-				},
-				["use_never"] = false,
-				["level"] = {
-					"60", -- [1]
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["conditions"] = {
-			},
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["config"] = {
-			},
-			["icon_side"] = "RIGHT",
-			["useAdjustededMin"] = false,
-			["id"] = "Predator's Swiftness",
-			["anchorFrameParent"] = false,
-			["texture"] = "Melli",
-			["width"] = 36,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
-			["alpha"] = 1,
-			["sparkHidden"] = "NEVER",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["spark"] = false,
-			["uid"] = "gDrvpV9eGRR",
-			["inverse"] = false,
-			["useCooldownModRate"] = true,
-			["orientation"] = "HORIZONTAL",
-			["displayIcon"] = "",
-			["cooldown"] = false,
-			["zoom"] = 0.3,
 		},
 		["Warrior - Battle Stance"] = {
 			["outline"] = "OUTLINE",
@@ -58730,7 +58483,7 @@ WeakAurasSaved = {
 				}, -- [2]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
@@ -58840,8 +58593,8 @@ WeakAurasSaved = {
 				["level_operator"] = {
 					">=", -- [1]
 				},
-				["use_combat"] = true,
 				["use_alive"] = true,
+				["use_combat"] = true,
 				["use_class"] = false,
 				["use_spellknown"] = false,
 				["spec"] = {
@@ -58864,33 +58617,33 @@ WeakAurasSaved = {
 				},
 			},
 			["anchorFrameType"] = "SCREEN",
-			["cooldownEdge"] = false,
-			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				0.37254901960784, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["icon"] = true,
+			["parent"] = "MISSING BUFFS",
 			["cooldown"] = false,
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["parent"] = "MISSING BUFFS",
 			["authorOptions"] = {
 			},
+			["cooldownEdge"] = false,
 			["config"] = {
 			},
 			["useCooldownModRate"] = false,
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "1.0.1",
 			["tocversion"] = 20501,
 			["id"] = "Warrior - Battle Stance",
-			["semver"] = "1.0.1",
+			["auto"] = false,
 			["alpha"] = 1,
 			["width"] = 65.000114440918,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["uid"] = "BlyRnaMBgv(",
 			["inverse"] = false,
 			["desaturate"] = false,
@@ -58899,7 +58652,254 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
+			["selfPoint"] = "CENTER",
+		},
+		["Predator's Swiftness"] = {
+			["sparkWidth"] = 10,
+			["sparkOffsetX"] = 0,
+			["wagoID"] = "v9qxdDgI4",
+			["parent"] = "Vermin Druid",
+			["preferToUpdate"] = false,
+			["anchorFrameParent"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["iconSource"] = -1,
+			["cooldownSwipe"] = true,
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
+			["cooldownEdge"] = false,
 			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["auranames"] = {
+							"Predator's Swiftness", -- [1]
+						},
+						["duration"] = "1",
+						["genericShowOn"] = "showOnReady",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["useName"] = true,
+						["use_unit"] = true,
+						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "player",
+						["event"] = "Action Usable",
+						["type"] = "aura2",
+						["realSpellName"] = "Victory Rush",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["use_genericShowOn"] = true,
+						["spellName"] = 34428,
+						["names"] = {
+						},
+						["use_track"] = true,
+						["useIgnoreName"] = false,
+					},
+					["untrigger"] = {
+						["genericShowOn"] = "showOnReady",
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["useTooltip"] = false,
+			["keepAspectRatio"] = true,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
+			["barColor"] = {
+				0.2, -- [1]
+				1, -- [2]
+				0.0862745098039216, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["internalVersion"] = 70,
+			["sparkOffsetY"] = 0,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["glowFrequency"] = 0.75,
+					["type"] = "subglow",
+					["glowXOffset"] = 0,
+					["text_color"] = {
+					},
+					["glowThickness"] = 2,
+					["glowDuration"] = 1,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						0.85098039215686, -- [2]
+						0.1843137254902, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = true,
+					["glow"] = true,
+					["glowLength"] = 16,
+					["glowType"] = "buttonOverlay",
+					["glowScale"] = 1,
+					["glowLines"] = 6,
+					["glowBorder"] = false,
+				}, -- [2]
+				{
+					["text_text_format_p_time_format"] = 0,
+					["text_text"] = "%p",
+					["text_text_format_p_format"] = "timed",
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["type"] = "subtext",
+					["anchorXOffset"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_text_format_p_time_precision"] = 1,
+					["text_shadowYOffset"] = 0,
+					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["text_shadowXOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = true,
+					["text_fontSize"] = 12,
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["text_text_format_p_time_mod_rate"] = true,
+				}, -- [3]
+			},
+			["height"] = 36,
+			["selfPoint"] = "CENTER",
+			["load"] = {
+				["use_level"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["level_operator"] = {
+					">=", -- [1]
+				},
+				["use_class"] = true,
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "DRUID",
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["level"] = {
+					"60", -- [1]
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["conditions"] = {
+			},
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["config"] = {
+			},
+			["icon_side"] = "RIGHT",
+			["useAdjustededMin"] = false,
+			["sparkHidden"] = "NEVER",
+			["sparkHeight"] = 30,
+			["texture"] = "Melli",
+			["width"] = 36,
+			["cooldownTextDisabled"] = false,
+			["auto"] = false,
+			["alpha"] = 1,
+			["id"] = "Predator's Swiftness",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["useCooldownModRate"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["spark"] = false,
+			["uid"] = "gDrvpV9eGRR",
+			["inverse"] = false,
+			["frameStrata"] = 1,
+			["orientation"] = "HORIZONTAL",
+			["displayIcon"] = "",
+			["cooldown"] = false,
+			["zoom"] = 0.3,
 		},
 		["Halls of Stone - Static Charge"] = {
 			["iconSource"] = 0,
@@ -58924,8 +58924,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -58981,7 +58981,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -59038,13 +59038,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -59090,7 +59090,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -59106,14 +59106,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Static Charge",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -59121,322 +59121,6 @@ WeakAurasSaved = {
 			["displayIcon"] = 136050,
 			["cooldown"] = true,
 			["authorOptions"] = {
-			},
-		},
-		["Spirit Tap"] = {
-			["iconSource"] = -1,
-			["parent"] = "Vermin Priest",
-			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["cooldownEdge"] = true,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["useMatch_count"] = false,
-						["auraspellids"] = {
-							"80240", -- [1]
-						},
-						["match_countOperator"] = ">",
-						["auranames"] = {
-							"Spirit Tap", -- [1]
-						},
-						["useName"] = true,
-						["event"] = "Health",
-						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["match_count"] = "0",
-						["type"] = "aura2",
-						["useExactSpellId"] = false,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "spell",
-						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
-						["duration"] = "1",
-						["use_genericShowOn"] = true,
-						["event"] = "Cooldown Progress (Spell)",
-						["use_unit"] = true,
-						["realSpellName"] = "Misdirection",
-						["use_spellName"] = true,
-						["unit"] = "player",
-						["genericShowOn"] = "showAlways",
-						["use_absorbMode"] = true,
-						["subeventPrefix"] = "SPELL",
-						["use_track"] = true,
-						["spellName"] = 34477,
-					},
-					["untrigger"] = {
-						["genericShowOn"] = "showAlways",
-					},
-				}, -- [2]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 69,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 1,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 1,
-					["text_text_format_s_format"] = "none",
-					["text_text_format_2.p_time_mod_rate"] = true,
-					["text_text_format_2.p_time_format"] = 0,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_text_format_2.p_time_legacy_floor"] = true,
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_2.p_format"] = "timed",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_text"] = "%2.p",
-					["text_shadowYOffset"] = -1,
-					["text_text_format_2.p_time_dynamic_threshold"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "CENTER",
-					["text_visible"] = false,
-					["text_text_format_2.p_time_precision"] = 1,
-					["text_fontSize"] = 24,
-					["anchorXOffset"] = 0,
-					["text_automaticWidth"] = "Auto",
-				}, -- [2]
-				{
-					["text_text_format_p_time_precision"] = 1,
-					["text_text"] = "%1.p",
-					["text_text_format_p_format"] = "timed",
-					["text_text_format_1.p_time_mod_rate"] = true,
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["text_text_format_1.p_time_format"] = 0,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["anchorXOffset"] = 0,
-					["text_text_format_1.p_time_legacy_floor"] = true,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["type"] = "subtext",
-					["text_text_format_p_time_format"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_anchorPoint"] = "CENTER",
-					["text_shadowYOffset"] = 0,
-					["text_text_format_1.p_time_dynamic_threshold"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_text_format_1.p_format"] = "timed",
-					["text_fontType"] = "OUTLINE",
-					["text_shadowXOffset"] = 0,
-					["text_fontSize"] = 16,
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_text_format_1.p_time_precision"] = 1,
-				}, -- [3]
-			},
-			["height"] = 40,
-			["load"] = {
-				["use_class"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "PRIEST",
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["source"] = "import",
-			["cooldownTextDisabled"] = true,
-			["xOffset"] = 0,
-			["url"] = "https://wago.io/E9AeMcIo0/1",
-			["cooldown"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "AND",
-						["checks"] = {
-							{
-								["trigger"] = 2,
-								["variable"] = "onCooldown",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["variable"] = "show",
-								["value"] = 1,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["property"] = "desaturate",
-						}, -- [1]
-						{
-							["value"] = {
-								["custom"] = "local reg = WeakAuras.GetRegion(aura_env.id)\n\nreg.glowicon = reg.glowicon or CreateFrame(\"Button\", aura_env.id..\"Glower\" )\nreg.glowicon:SetSize( reg.icon:GetWidth() - 2, reg.icon:GetHeight() - 2)\nreg.glowicon:SetPoint( \"CENTER\", reg.icon, \"CENTER\" )\nActionButton_ShowOverlayGlow( reg.glowicon )",
-							},
-							["property"] = "customcode",
-						}, -- [2]
-						{
-							["property"] = "inverse",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "show",
-						["value"] = 0,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.2.text_visible",
-						}, -- [1]
-						{
-							["property"] = "sub.3.text_visible",
-						}, -- [2]
-						{
-							["value"] = {
-								["custom"] = "local reg = WeakAuras.GetRegion(aura_env.id)\n\nreg.glowicon = reg.glowicon or CreateFrame(\"Button\", aura_env.id..\"Glower\" )\nreg.glowicon:SetSize( reg.icon:GetWidth() - 1, reg.icon:GetHeight() - 1)\nreg.glowicon:SetPoint( \"CENTER\", reg.icon, \"CENTER\" )\nActionButton_HideOverlayGlow( reg.glowicon )",
-							},
-							["property"] = "customcode",
-						}, -- [3]
-					},
-				}, -- [2]
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "AND",
-						["checks"] = {
-							{
-								["trigger"] = 2,
-								["variable"] = "onCooldown",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 1,
-								["variable"] = "show",
-								["value"] = 0,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [3]
-			},
-			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
-			["uid"] = "2xTKAqls4vQ",
-			["anchorFrameParent"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0,
-			["semver"] = "1.0.0",
-			["tocversion"] = 80300,
-			["id"] = "Spirit Tap",
-			["frameStrata"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["auto"] = true,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayIcon"] = "",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
 			},
 		},
 		["Background Texture"] = {
@@ -59635,7 +59319,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = true,
@@ -59713,14 +59397,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\LoC-ShadowBG",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
+			["zoom"] = 0,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Background Texture",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["uid"] = "ZIjvgsF6EA8",
 			["inverse"] = false,
 			["actions"] = {
@@ -59746,6 +59430,322 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 		},
+		["Spirit Tap"] = {
+			["iconSource"] = -1,
+			["parent"] = "Vermin Priest",
+			["preferToUpdate"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["cooldownEdge"] = true,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["useMatch_count"] = false,
+						["auraspellids"] = {
+							"80240", -- [1]
+						},
+						["match_countOperator"] = ">",
+						["auranames"] = {
+							"Spirit Tap", -- [1]
+						},
+						["useName"] = true,
+						["event"] = "Health",
+						["unit"] = "player",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
+						["spellIds"] = {
+						},
+						["names"] = {
+						},
+						["match_count"] = "0",
+						["type"] = "aura2",
+						["useExactSpellId"] = false,
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "spell",
+						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
+						["duration"] = "1",
+						["use_genericShowOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["use_unit"] = true,
+						["realSpellName"] = "Misdirection",
+						["use_spellName"] = true,
+						["unit"] = "player",
+						["genericShowOn"] = "showAlways",
+						["use_absorbMode"] = true,
+						["subeventPrefix"] = "SPELL",
+						["use_track"] = true,
+						["spellName"] = 34477,
+					},
+					["untrigger"] = {
+						["genericShowOn"] = "showAlways",
+					},
+				}, -- [2]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 70,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 1,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 1,
+					["text_text_format_s_format"] = "none",
+					["text_text_format_2.p_time_mod_rate"] = true,
+					["text_text_format_2.p_time_format"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_text_format_2.p_time_legacy_floor"] = true,
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_2.p_format"] = "timed",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Arial Narrow",
+					["text_text"] = "%2.p",
+					["text_shadowYOffset"] = -1,
+					["text_text_format_2.p_time_dynamic_threshold"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "CENTER",
+					["text_visible"] = false,
+					["text_text_format_2.p_time_precision"] = 1,
+					["text_fontSize"] = 24,
+					["anchorXOffset"] = 0,
+					["text_automaticWidth"] = "Auto",
+				}, -- [2]
+				{
+					["text_text_format_p_time_precision"] = 1,
+					["text_text"] = "%1.p",
+					["text_text_format_p_format"] = "timed",
+					["text_justify"] = "CENTER",
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["text_text_format_1.p_time_format"] = 0,
+					["anchorYOffset"] = 0,
+					["text_text_format_1.p_time_mod_rate"] = true,
+					["text_text_format_1.p_time_precision"] = 1,
+					["anchorXOffset"] = 0,
+					["text_text_format_1.p_time_legacy_floor"] = true,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["type"] = "subtext",
+					["text_text_format_p_time_format"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Arial Narrow",
+					["text_anchorPoint"] = "CENTER",
+					["text_shadowYOffset"] = 0,
+					["text_text_format_1.p_time_dynamic_threshold"] = 0,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_text_format_1.p_format"] = "timed",
+					["text_visible"] = true,
+					["text_shadowXOffset"] = 0,
+					["text_fontSize"] = 16,
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["rotateText"] = "NONE",
+				}, -- [3]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_class"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "PRIEST",
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+			},
+			["source"] = "import",
+			["zoom"] = 0,
+			["xOffset"] = 0,
+			["url"] = "https://wago.io/E9AeMcIo0/1",
+			["cooldown"] = false,
+			["regionType"] = "icon",
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "AND",
+						["checks"] = {
+							{
+								["trigger"] = 2,
+								["variable"] = "onCooldown",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["variable"] = "show",
+								["value"] = 1,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["property"] = "desaturate",
+						}, -- [1]
+						{
+							["value"] = {
+								["custom"] = "local reg = WeakAuras.GetRegion(aura_env.id)\n\nreg.glowicon = reg.glowicon or CreateFrame(\"Button\", aura_env.id..\"Glower\" )\nreg.glowicon:SetSize( reg.icon:GetWidth() - 2, reg.icon:GetHeight() - 2)\nreg.glowicon:SetPoint( \"CENTER\", reg.icon, \"CENTER\" )\nActionButton_ShowOverlayGlow( reg.glowicon )",
+							},
+							["property"] = "customcode",
+						}, -- [2]
+						{
+							["property"] = "inverse",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "show",
+						["value"] = 0,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.2.text_visible",
+						}, -- [1]
+						{
+							["property"] = "sub.3.text_visible",
+						}, -- [2]
+						{
+							["value"] = {
+								["custom"] = "local reg = WeakAuras.GetRegion(aura_env.id)\n\nreg.glowicon = reg.glowicon or CreateFrame(\"Button\", aura_env.id..\"Glower\" )\nreg.glowicon:SetSize( reg.icon:GetWidth() - 1, reg.icon:GetHeight() - 1)\nreg.glowicon:SetPoint( \"CENTER\", reg.icon, \"CENTER\" )\nActionButton_HideOverlayGlow( reg.glowicon )",
+							},
+							["property"] = "customcode",
+						}, -- [3]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "AND",
+						["checks"] = {
+							{
+								["trigger"] = 2,
+								["variable"] = "onCooldown",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 1,
+								["variable"] = "show",
+								["value"] = 0,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [3]
+			},
+			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
+			["uid"] = "2xTKAqls4vQ",
+			["anchorFrameParent"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
+			["tocversion"] = 80300,
+			["id"] = "Spirit Tap",
+			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["semver"] = "1.0.0",
+			["config"] = {
+			},
+			["inverse"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayIcon"] = "",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+		},
 		["Utgarde Pinnacle - Ritual of the Sword"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "8n36Ga60R",
@@ -59769,8 +59769,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -59832,7 +59832,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -59942,7 +59942,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -59958,14 +59958,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Ritual of the Sword",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -59998,8 +59998,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -60061,7 +60061,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -60118,13 +60118,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -60170,7 +60170,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -60186,14 +60186,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Thundering Stomp",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -60203,7 +60203,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 		},
-		["Trial of the Champion - Hammer of Justice"] = {
+		["Drak'Tharon - Army of the Dead"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "8n36Ga60R",
 			["color"] = {
@@ -60221,13 +60221,13 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["message"] = "{rt7} HOJ on %unitName {rt7}",
+					["message"] = "",
 					["message_custom"] = "function() return UnitName(\"player\") end",
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
+					["do_message"] = false,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_message"] = true,
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -60241,55 +60241,82 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["npcId"] = "26918",
-						["spellId"] = {
-							"66935", -- [1]
+						["spellNames"] = {
+							59004, -- [1]
 						},
-						["auranames"] = {
-							"66940", -- [1]
-						},
-						["duration"] = "3",
-						["message_operator"] = "find('%s')",
-						["destUnit"] = "player",
-						["amount"] = "0",
-						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["subeventSuffix"] = "_CAST_START",
-						["percenthealth"] = "0",
-						["event"] = "Combat Log",
-						["message"] = "begins to cast Wailing Souls",
-						["use_spellId"] = true,
-						["use_destUnit"] = false,
-						["use_amount"] = true,
 						["use_alwaystrue"] = true,
 						["useGroup_count"] = true,
-						["use_exact_spellId"] = true,
+						["duration"] = "3",
+						["message_operator"] = "find('%s')",
 						["names"] = {
 						},
-						["use_destName"] = false,
+						["destUnit"] = "player",
+						["group_count"] = "0",
 						["debuffType"] = "HARMFUL",
-						["type"] = "aura2",
+						["group_countOperator"] = ">",
+						["type"] = "unit",
+						["use_exact_spellId"] = true,
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["useName"] = true,
-						["percenthealth_operator"] = ">",
-						["amount_operator"] = ">",
-						["use_npcId"] = true,
-						["unit"] = "player",
+						["event"] = "Cast",
+						["use_spellNames"] = true,
+						["auranames"] = {
+							"52470", -- [1]
+						},
+						["message"] = "Gul'kafh an'shel. Yoq'al shn ky ywaq nuul",
+						["unit"] = "target",
 						["spellIds"] = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["use_message"] = true,
-						["use_percenthealth"] = true,
+						["use_destUnit"] = true,
 						["use_messageType"] = true,
 						["use_unit"] = true,
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
+				{
+					["trigger"] = {
+						["spellNames"] = {
+							49668, -- [1]
+						},
+						["use_alwaystrue"] = true,
+						["useGroup_count"] = true,
+						["duration"] = "3",
+						["message_operator"] = "find('%s')",
+						["names"] = {
+						},
+						["destUnit"] = "player",
+						["group_count"] = "0",
+						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
+						["type"] = "unit",
+						["use_exact_spellId"] = true,
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["useName"] = true,
+						["event"] = "Cast",
+						["use_spellNames"] = true,
+						["auranames"] = {
+							"52470", -- [1]
+						},
+						["message"] = "Gul'kafh an'shel. Yoq'al shn ky ywaq nuul",
+						["unit"] = "target",
+						["spellIds"] = {
+						},
+						["subeventPrefix"] = "SPELL",
+						["use_message"] = true,
+						["use_destUnit"] = true,
+						["use_messageType"] = true,
+						["use_unit"] = true,
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
 				["disjunctive"] = "any",
-				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -60320,8 +60347,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "STUNNED",
+					["text_text"] = "INTERRUPT",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -60350,10 +60376,10 @@ WeakAurasSaved = {
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
-					["text_visible"] = true,
+					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -60384,7 +60410,7 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = false,
 				["use_zone"] = false,
-				["zoneIds"] = "171",
+				["zoneIds"] = "160, 161",
 				["encounterid"] = "1107",
 				["use_zoneIds"] = true,
 				["zone"] = "",
@@ -60399,7 +60425,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -60411,23 +60437,23 @@ WeakAurasSaved = {
 			},
 			["xOffset"] = 0,
 			["alpha"] = 1,
-			["uid"] = "2fkmRyc0xiH",
+			["uid"] = "yfqB)343XYa",
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
-			["id"] = "Trial of the Champion - Hammer of Justice",
+			["id"] = "Drak'Tharon - Army of the Dead",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["displayIcon"] = 135963,
+			["displayIcon"] = 136130,
 			["cooldown"] = true,
 			["authorOptions"] = {
 			},
@@ -60475,8 +60501,8 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["custom_type"] = "stateupdate",
 						["customVariables"] = "{\n    status = {\n        display = \"Threat Status\",\n        type = \"select\",\n        values = {\n            [1] = \"Untanked\", \n            [2] = \"Insecurely Tanking\", \n            [3] = \"Tanking\",\n            [4] = \"Tanked by Other Tank\",\n            [5] = \"Securely tanking\"\n        }\n    }\n}",
-						["event"] = "Health",
 						["genericShowOn"] = "showOnActive",
+						["event"] = "Health",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
 						["custom"] = "function(allstates, event, unitId)\n    if not unitId then\n        return\n    end\n    \n    if event == \"NAME_PLATE_UNIT_REMOVED\" then\n        local state = allstates[unitId]\n        if state then\n            state.show = false\n            state.changed = true\n            return true\n        end\n        \n    elseif unitId ~= \"target\" then\n        if UnitIsPlayer(unitId) then\n            return\n        end\n        \n        local isTanking, threatStatus, scaledPercentage, _, threatValue = UnitDetailedThreatSituation(\"player\", unitId)\n        \n        if not threatValue then\n            return \n        end\n        \n        local firstUnit, firstThreat, secondUnit, secondThreat = aura_env.ThreatFunc(unitId)\n        local displayValue\n        \n        if isTanking then\n            displayValue = threatValue - secondThreat\n            if Round(math.abs(displayValue) / 100) > aura_env.secureThreatValue then\n                threatStatus = 5\n            end\n        else\n            displayValue = threatValue - firstThreat\n            if firstUnit and not UnitIsUnit(firstUnit, \"player\") and GetPartyAssignment(\"MAINTANK\",firstUnit) then\n                threatStatus = 4\n            end\n        end\n        \n        allstates[unitId] = allstates[unitId] or {unit = unitId}\n        local state = allstates[unitId]\n        state.changed = true\n        state.show = true\n        state.status = threatStatus < 1 and 1 or threatStatus\n        state.value = Round(math.abs(displayValue) / 100)\n        return true\n    end\nend",
@@ -60496,7 +60522,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_format"] = "timed",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -60584,7 +60610,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -60592,15 +60618,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -60628,7 +60654,7 @@ WeakAurasSaved = {
 					["do_custom"] = false,
 				},
 			},
-			["anchorFrameParent"] = true,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_formatDiff_format"] = "none",
 			["displayText_format_c1_format"] = "none",
 			["anchorFrameType"] = "NAMEPLATE",
@@ -60643,7 +60669,7 @@ WeakAurasSaved = {
 					["type"] = "subbackground",
 				}, -- [1]
 			},
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = true,
 			["inverse"] = false,
 			["wordWrap"] = "WordWrap",
 			["shadowColor"] = {
@@ -60842,7 +60868,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_format"] = "timed",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -60889,13 +60915,13 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["wordWrap"] = "WordWrap",
 			["desaturate"] = false,
-			["semver"] = "1.0.16",
+			["justify"] = "LEFT",
 			["anchorFrameType"] = "SELECTFRAME",
 			["id"] = "@ Avoidance / Defense Cap (Wrath of the Lich King)",
 			["useCooldownModRate"] = true,
 			["frameStrata"] = 1,
 			["width"] = 100,
-			["justify"] = "LEFT",
+			["semver"] = "1.0.16",
 			["actions"] = {
 				["start"] = {
 					["custom"] = "aura_env.id = aura_env.getAvoidance()\nprint(aura_env.id)",
@@ -60944,8 +60970,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -61000,7 +61026,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -61109,7 +61135,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -61125,14 +61151,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gamma - Rallying Cry",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -61190,7 +61216,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "CENTER",
 			["version"] = 10,
 			["subRegions"] = {
@@ -61253,9 +61279,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["groupIcon"] = "135885",
-			["uid"] = "pXBrPOB3VkJ",
 			["config"] = {
 			},
+			["uid"] = "pXBrPOB3VkJ",
 			["borderInset"] = 1,
 			["conditions"] = {
 			},
@@ -61288,8 +61314,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -61336,7 +61362,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -61393,13 +61419,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -61445,7 +61471,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -61461,14 +61487,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Embrace of the Vampyr",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -61521,27 +61547,8 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["internalVersion"] = 69,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
+			["internalVersion"] = 70,
+			["selfPoint"] = "BOTTOMLEFT",
 			["version"] = 1,
 			["load"] = {
 				["talent2"] = {
@@ -61606,7 +61613,26 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "BOTTOMLEFT",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
 			["uid"] = "uuP(LO3pyoN",
 			["xOffset"] = 0,
 			["borderInset"] = 1,
@@ -61673,7 +61699,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    local glow = aura_env.region\n    \n    if (trigger[1]) then\n        glow:SetGlow(true)\n    else\n        glow:SetGlow(false)\n    end\n    \n    return trigger[2]\nend\n\n\n\n\n",
 				["activeTriggerMode"] = 1,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -61796,9 +61822,9 @@ WeakAurasSaved = {
 			["parent"] = "DRUID / ROGUE",
 			["frameStrata"] = 2,
 			["width"] = 67,
-			["uid"] = "JmoDu(YlHE3",
 			["config"] = {
 			},
+			["uid"] = "JmoDu(YlHE3",
 			["selfPoint"] = "CENTER",
 			["anchorFrameType"] = "SCREEN",
 			["conditions"] = {
@@ -61833,8 +61859,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -61894,7 +61920,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -61951,13 +61977,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -62003,7 +62029,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -62019,14 +62045,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Whirlwind",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -62059,8 +62085,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -62122,7 +62148,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -62290,7 +62316,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -62324,14 +62350,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Nexus - Intense Cold",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -62364,8 +62390,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -62473,7 +62499,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -62530,13 +62556,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -62582,7 +62608,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -62598,14 +62624,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Arcane Explosion",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -62615,7 +62641,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 		},
-		["Drak'Tharon - Army of the Dead"] = {
+		["Trial of the Champion - Hammer of Justice"] = {
 			["iconSource"] = 0,
 			["wagoID"] = "8n36Ga60R",
 			["color"] = {
@@ -62633,13 +62659,13 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["message"] = "",
+					["message"] = "{rt7} HOJ on %unitName {rt7}",
 					["message_custom"] = "function() return UnitName(\"player\") end",
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
+					["do_message"] = true,
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
-					["do_message"] = false,
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -62653,82 +62679,55 @@ WeakAurasSaved = {
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["spellNames"] = {
-							59004, -- [1]
+						["npcId"] = "26918",
+						["spellId"] = {
+							"66935", -- [1]
 						},
-						["use_alwaystrue"] = true,
-						["useGroup_count"] = true,
+						["auranames"] = {
+							"66940", -- [1]
+						},
 						["duration"] = "3",
 						["message_operator"] = "find('%s')",
+						["destUnit"] = "player",
+						["amount"] = "0",
+						["group_count"] = "0",
+						["group_countOperator"] = ">",
+						["subeventSuffix"] = "_CAST_START",
+						["percenthealth"] = "0",
+						["event"] = "Combat Log",
+						["message"] = "begins to cast Wailing Souls",
+						["use_spellId"] = true,
+						["use_destUnit"] = false,
+						["use_amount"] = true,
+						["use_alwaystrue"] = true,
+						["useGroup_count"] = true,
+						["use_exact_spellId"] = true,
 						["names"] = {
 						},
-						["destUnit"] = "player",
-						["group_count"] = "0",
+						["use_destName"] = false,
 						["debuffType"] = "HARMFUL",
-						["group_countOperator"] = ">",
-						["type"] = "unit",
-						["use_exact_spellId"] = true,
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["type"] = "aura2",
 						["useName"] = true,
-						["event"] = "Cast",
-						["use_spellNames"] = true,
-						["auranames"] = {
-							"52470", -- [1]
-						},
-						["message"] = "Gul'kafh an'shel. Yoq'al shn ky ywaq nuul",
-						["unit"] = "target",
+						["percenthealth_operator"] = ">",
+						["amount_operator"] = ">",
+						["use_npcId"] = true,
+						["unit"] = "player",
 						["spellIds"] = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["use_message"] = true,
-						["use_destUnit"] = true,
+						["use_percenthealth"] = true,
 						["use_messageType"] = true,
 						["use_unit"] = true,
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
-				{
-					["trigger"] = {
-						["spellNames"] = {
-							49668, -- [1]
-						},
-						["use_alwaystrue"] = true,
-						["useGroup_count"] = true,
-						["duration"] = "3",
-						["message_operator"] = "find('%s')",
-						["names"] = {
-						},
-						["destUnit"] = "player",
-						["group_count"] = "0",
-						["debuffType"] = "HARMFUL",
-						["group_countOperator"] = ">",
-						["type"] = "unit",
-						["use_exact_spellId"] = true,
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["useName"] = true,
-						["event"] = "Cast",
-						["use_spellNames"] = true,
-						["auranames"] = {
-							"52470", -- [1]
-						},
-						["message"] = "Gul'kafh an'shel. Yoq'al shn ky ywaq nuul",
-						["unit"] = "target",
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["use_message"] = true,
-						["use_destUnit"] = true,
-						["use_messageType"] = true,
-						["use_unit"] = true,
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
 				["disjunctive"] = "any",
+				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -62759,7 +62758,8 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text"] = "INTERRUPT",
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "STUNNED",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -62785,13 +62785,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
-					["text_text_format_affected_format"] = "none",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_text_format_affected_format"] = "none",
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -62822,7 +62822,7 @@ WeakAurasSaved = {
 				},
 				["use_encounterid"] = false,
 				["use_zone"] = false,
-				["zoneIds"] = "160, 161",
+				["zoneIds"] = "171",
 				["encounterid"] = "1107",
 				["use_zoneIds"] = true,
 				["zone"] = "",
@@ -62837,7 +62837,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -62849,23 +62849,23 @@ WeakAurasSaved = {
 			},
 			["xOffset"] = 0,
 			["alpha"] = 1,
-			["uid"] = "yfqB)343XYa",
+			["uid"] = "2fkmRyc0xiH",
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
-			["id"] = "Drak'Tharon - Army of the Dead",
+			["id"] = "Trial of the Champion - Hammer of Justice",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
 			["url"] = "https://wago.io/TemsWotlkDungeons/10",
-			["displayIcon"] = 136130,
+			["displayIcon"] = 135963,
 			["cooldown"] = true,
 			["authorOptions"] = {
 			},
@@ -62971,10 +62971,10 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["debuffType"] = "HARMFUL",
 						["use_status"] = false,
-						["useName"] = false,
+						["type"] = "aura2",
+						["unevent"] = "timed",
 						["auraspellids"] = {
 						},
-						["unevent"] = "timed",
 						["use_npcId"] = false,
 						["realSpellName"] = "Impale",
 						["threatUnit"] = "target",
@@ -62985,7 +62985,7 @@ WeakAurasSaved = {
 						},
 						["names"] = {
 						},
-						["type"] = "aura2",
+						["useName"] = false,
 						["unit"] = "party",
 						["useAffected"] = false,
 						["useExactSpellId"] = false,
@@ -63045,8 +63045,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.15686274509804, -- [1]
 						0.43921568627451, -- [2]
@@ -63067,7 +63067,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Wotlk Dungeons - Magic",
 			["color"] = {
 				1, -- [1]
@@ -63076,8 +63076,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -63123,8 +63123,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -63186,7 +63186,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -63243,13 +63243,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -63295,7 +63295,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -63311,14 +63311,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Energize Cores",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -63351,8 +63351,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -63375,8 +63375,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "2",
@@ -63412,8 +63412,8 @@ WeakAurasSaved = {
 						["unit"] = "nameplate",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HELPFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "2",
@@ -63442,7 +63442,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -63499,13 +63499,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -63572,7 +63572,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -63588,14 +63588,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Eck Spring",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -63611,7 +63611,7 @@ WeakAurasSaved = {
 			["wagoID"] = "v9qxdDgI4",
 			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -63667,7 +63667,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["parent"] = "Vermin Hunter",
@@ -63732,9 +63732,9 @@ WeakAurasSaved = {
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
@@ -63775,13 +63775,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 25,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_legacy_floor"] = false,
@@ -63861,7 +63861,7 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -63870,20 +63870,20 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Aspect of the Viper",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 40,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
-			["frameStrata"] = 1,
-			["id"] = "Aspect of the Viper",
-			["config"] = {
-			},
+			["alpha"] = 1,
+			["sparkHidden"] = "NEVER",
+			["uid"] = "JX2NZu1XLej",
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
-			["uid"] = "JX2NZu1XLej",
+			["config"] = {
+			},
 			["inverse"] = false,
 			["auto"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -63914,8 +63914,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -63975,7 +63975,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -64032,13 +64032,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -64084,7 +64084,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -64100,14 +64100,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Wailing Souls",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64140,8 +64140,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -64203,7 +64203,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -64260,13 +64260,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -64312,7 +64312,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -64328,14 +64328,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "The Oculus - Enraged Assault",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64368,8 +64368,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -64424,7 +64424,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -64481,13 +64481,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -64533,7 +64533,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -64549,14 +64549,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Forge of Souls - Soulstorm",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64589,8 +64589,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -64611,8 +64611,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -64640,7 +64640,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -64697,13 +64697,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -64749,7 +64749,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -64765,14 +64765,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Drak'Tharon - Grievous Bite",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -64805,8 +64805,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -64829,8 +64829,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "10",
@@ -64859,26 +64859,23 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["npcId"] = "29305",
-						["use_unit"] = true,
+						["unit"] = "nameplate",
 						["spellId"] = "55098",
-						["auranames"] = {
-							"55100", -- [1]
-							"55106", -- [2]
-						},
+						["useGroup_count"] = true,
 						["percenthealth_operator"] = {
 							">", -- [1]
 						},
 						["use_exact_spellId"] = true,
 						["message_operator"] = "find('%s')",
-						["unit"] = "nameplate",
+						["use_unit"] = true,
 						["destUnit"] = "player",
 						["use_percenthealth"] = true,
 						["use_alwaystrue"] = true,
-						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["group_count"] = "0",
 						["type"] = "unit",
 						["subeventSuffix"] = "_INTERRUPT",
-						["group_countOperator"] = ">",
+						["debuffType"] = "HARMFUL",
 						["message"] = "King Dred raises his claws menacingly",
 						["useName"] = true,
 						["use_health"] = false,
@@ -64900,7 +64897,10 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_destUnit"] = false,
 						["use_messageType"] = true,
-						["useGroup_count"] = true,
+						["auranames"] = {
+							"55100", -- [1]
+							"55106", -- [2]
+						},
 					},
 					["untrigger"] = {
 					},
@@ -64916,8 +64916,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "5",
@@ -64946,26 +64946,23 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["npcId"] = "29305",
-						["use_unit"] = true,
+						["unit"] = "nameplate",
 						["spellId"] = "55098",
-						["auranames"] = {
-							"55100", -- [1]
-							"55106", -- [2]
-						},
+						["useGroup_count"] = true,
 						["percenthealth_operator"] = {
 							"<=", -- [1]
 						},
 						["use_exact_spellId"] = true,
 						["message_operator"] = "find('%s')",
-						["unit"] = "nameplate",
+						["use_unit"] = true,
 						["destUnit"] = "player",
 						["use_percenthealth"] = true,
 						["use_alwaystrue"] = true,
-						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["group_count"] = "0",
 						["type"] = "unit",
 						["subeventSuffix"] = "_INTERRUPT",
-						["group_countOperator"] = ">",
+						["debuffType"] = "HARMFUL",
 						["message"] = "King Dred raises his claws menacingly",
 						["useName"] = true,
 						["use_health"] = false,
@@ -64987,7 +64984,10 @@ WeakAurasSaved = {
 						["use_message"] = true,
 						["use_destUnit"] = false,
 						["use_messageType"] = true,
-						["useGroup_count"] = true,
+						["auranames"] = {
+							"55100", -- [1]
+							"55106", -- [2]
+						},
 					},
 					["untrigger"] = {
 					},
@@ -64996,7 +64996,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -65053,13 +65053,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -65105,7 +65105,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -65121,14 +65121,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Gundrak - Mojo Frenzy",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -65161,8 +65161,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -65219,7 +65219,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -65276,13 +65276,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -65328,7 +65328,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -65344,14 +65344,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Unholy Power",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -65421,8 +65421,7 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["uid"] = "D9TtZ3sXWX0",
-			["authorOptions"] = {
-			},
+			["rotation"] = 0,
 			["load"] = {
 				["size"] = {
 					["multi"] = {
@@ -65448,9 +65447,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rotation"] = 0,
+			["rowSpace"] = 1,
 			["animate"] = true,
-			["useLimit"] = false,
+			["fullCircle"] = true,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -65458,8 +65457,9 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["rowSpace"] = 1,
 			["gridType"] = "RD",
+			["authorOptions"] = {
+			},
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
@@ -65472,6 +65472,7 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["config"] = {
 			},
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -65492,13 +65493,12 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 69,
+			["useLimit"] = false,
 		},
 		["Vermin Paladin"] = {
 			["arcLength"] = 360,
@@ -65541,13 +65541,13 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["selfPoint"] = "RIGHT",
 			["align"] = "CENTER",
 			["stagger"] = 0,
 			["config"] = {
 			},
-			["rotation"] = 0,
+			["grow"] = "LEFT",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -65573,18 +65573,22 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["grow"] = "LEFT",
+			["authorOptions"] = {
+			},
 			["animate"] = true,
-			["radius"] = 200,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["authorOptions"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -65605,6 +65609,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["anchorFrameFrame"] = "PlayerFrame",
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
@@ -65616,19 +65621,14 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["gridType"] = "RD",
 			["uid"] = "uIfZeMoFAaJ",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["borderEdge"] = "Square Full White",
+			["useLimit"] = false,
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["useLimit"] = false,
+			["radius"] = 200,
 		},
 		["Pit of Saron - Overlord's Brand"] = {
 			["iconSource"] = 0,
@@ -65653,8 +65653,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -65711,7 +65711,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -65768,13 +65768,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -65820,7 +65820,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -65836,14 +65836,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Pit of Saron - Overlord's Brand",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -65860,7 +65860,7 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["preferToUpdate"] = false,
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["iconSource"] = -1,
@@ -65939,7 +65939,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -65997,10 +65997,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_shadowXOffset"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_legacy_floor"] = true,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_precision"] = 1,
@@ -66032,13 +66032,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_anchorYOffset"] = 30,
 					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 30,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "CENTER",
 					["text_visible"] = true,
+					["text_anchorPoint"] = "CENTER",
+					["text_fontType"] = "OUTLINE",
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
@@ -66119,21 +66119,21 @@ WeakAurasSaved = {
 			},
 			["icon_side"] = "RIGHT",
 			["anchorFrameFrame"] = "PlayerFrame",
-			["sparkHidden"] = "NEVER",
-			["anchorFrameParent"] = false,
+			["id"] = "Lifebloom",
+			["sparkHeight"] = 30,
 			["texture"] = "Melli",
 			["width"] = 36,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = false,
 			["alpha"] = 1,
-			["id"] = "Lifebloom",
+			["sparkHidden"] = "NEVER",
 			["cooldownTextDisabled"] = false,
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["spark"] = false,
 			["uid"] = "XN84YcKI45t",
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
@@ -66162,8 +66162,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -66212,7 +66212,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -66269,13 +66269,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -66321,7 +66321,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -66337,14 +66337,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Mini",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -66377,8 +66377,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -66425,7 +66425,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -66482,13 +66482,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -66534,7 +66534,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -66550,14 +66550,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Flamestrike",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -66590,8 +66590,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -66653,7 +66653,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -66763,7 +66763,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -66779,14 +66779,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Trial of the Champion - Reflective Shield",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -66819,8 +66819,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -66884,8 +66884,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "combatlog",
 						["duration"] = "5",
@@ -66914,7 +66914,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -66971,13 +66971,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -67023,7 +67023,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -67039,14 +67039,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Shatter",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -67082,10 +67082,10 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_includeBank"] = true,
 						["duration"] = "1",
-						["count"] = "0",
-						["event"] = "Item Count",
 						["spellIds"] = {
 						},
+						["event"] = "Item Count",
+						["count"] = "0",
 						["unevent"] = "auto",
 						["subeventPrefix"] = "SPELL",
 						["count_operator"] = ">",
@@ -67095,7 +67095,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -67115,7 +67115,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -67126,7 +67126,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -67193,7 +67193,6 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "SNwIXidkSmY",
-			["xOffset"] = 0,
 			["actions"] = {
 				["start"] = {
 				},
@@ -67202,37 +67201,11 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["xOffset"] = 0,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["cooldownEdge"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useTooltip"] = true,
-			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90002,
-			["id"] = "Silver Ore",
-			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["cooldown"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -67253,6 +67226,33 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["useTooltip"] = true,
+			["anchorFrameParent"] = false,
+			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90002,
+			["id"] = "Silver Ore",
+			["useCooldownModRate"] = true,
+			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["cooldown"] = false,
+			["cooldownEdge"] = false,
 		},
 		["Dark Iron Ore"] = {
 			["iconSource"] = -1,
@@ -67286,9 +67286,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -67301,7 +67301,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -67340,7 +67340,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -67351,7 +67351,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -67418,31 +67418,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "oN2SA6pc0W4",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Dark Iron Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -67450,7 +67450,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Halls of Lightning - Static Overload"] = {
 			["iconSource"] = 0,
@@ -67475,8 +67475,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = true,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -67499,8 +67499,8 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
 						["debuffType"] = "HARMFUL",
+						["group_countOperator"] = ">",
 						["use_unit"] = true,
 						["type"] = "aura2",
 						["duration"] = "3",
@@ -67529,7 +67529,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -67586,13 +67586,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -67638,7 +67638,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -67654,14 +67654,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Static Overload",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -67694,8 +67694,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -67751,7 +67751,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -67808,13 +67808,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -67860,7 +67860,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -67876,14 +67876,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Stone - Lightning Shield",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -67949,7 +67949,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["height"] = 20,
-			["internalVersion"] = 69,
+			["fullCircle"] = true,
 			["load"] = {
 				["zoneIds"] = "",
 				["race"] = {
@@ -67968,11 +67968,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
 				["spec"] = {
 					["multi"] = {
 					},
 				},
+				["use_combat"] = true,
 				["size"] = {
 					["multi"] = {
 					},
@@ -67985,9 +67985,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
+			["arcLength"] = 360,
 			["animate"] = true,
-			["rowSpace"] = 1,
+			["useLimit"] = false,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -67995,9 +67995,9 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["arcLength"] = 360,
 			["authorOptions"] = {
 			},
+			["internalVersion"] = 70,
 			["constantFactor"] = "RADIUS",
 			["sort"] = "none",
 			["borderOffset"] = 16,
@@ -68010,6 +68010,7 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "XLzBWxn1LoM",
+			["gridType"] = "RD",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -68030,14 +68031,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["useLimit"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["rowSpace"] = 1,
 		},
 		["target cast bar - uninterruptable"] = {
 			["sparkWidth"] = 20,
@@ -68105,15 +68105,15 @@ WeakAurasSaved = {
 						["use_cloneId"] = false,
 						["use_interruptible"] = false,
 						["event"] = "Cast",
-						["unit"] = "target",
+						["names"] = {
+						},
 						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = true,
 						["subeventPrefix"] = "SPELL",
-						["names"] = {
-						},
+						["unit"] = "target",
 						["sourceUnit"] = "target",
 						["custom_hide"] = "timed",
 					},
@@ -68125,7 +68125,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = 1,
 			},
 			["endAngle"] = 360,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["animation"] = {
 				["start"] = {
 					["type"] = "preset",
@@ -68183,7 +68183,7 @@ WeakAurasSaved = {
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_n_format"] = "none",
-					["text_text_format_p_time_legacy_floor"] = false,
+					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["anchorXOffset"] = 0,
@@ -68198,8 +68198,8 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Homespun (xCT+)",
-					["text_anchorYOffset"] = -2,
 					["text_shadowYOffset"] = -1,
+					["text_anchorYOffset"] = -2,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
@@ -68208,7 +68208,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_fontSize"] = 30,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 				}, -- [4]
 				{
 					["text_shadowXOffset"] = 1,
@@ -68415,23 +68415,17 @@ WeakAurasSaved = {
 			["sparkWidth"] = 10,
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
-			["cooldownTextDisabled"] = false,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["cooldownSwipe"] = true,
 			["sparkRotation"] = 0,
 			["sparkRotationMode"] = "AUTO",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
@@ -68470,7 +68464,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -68493,7 +68487,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["parent"] = "Vermin Warrior",
+			["xOffset"] = 0,
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -68501,8 +68495,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["icon"] = true,
+			["cooldownTextDisabled"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -68560,10 +68561,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_shadowXOffset"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_legacy_floor"] = true,
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_mod_rate"] = true,
@@ -68596,13 +68597,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Friz Quadrata TT",
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 25,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 25,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["anchorYOffset"] = 0,
@@ -68649,17 +68650,11 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["desaturate"] = false,
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
+			["sparkHeight"] = 30,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
+			["parent"] = "Vermin Warrior",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -68667,32 +68662,37 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["icon_side"] = "RIGHT",
-			["anchorFrameParent"] = false,
-			["width"] = 36,
-			["sparkHeight"] = 30,
-			["texture"] = "Melli",
-			["alpha"] = 1,
-			["zoom"] = 0.3,
-			["auto"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "Light's Grace",
-			["sparkHidden"] = "NEVER",
-			["useCooldownModRate"] = true,
-			["anchorFrameType"] = "SCREEN",
+			["width"] = 36,
+			["anchorFrameParent"] = false,
+			["texture"] = "Melli",
+			["alpha"] = 1,
+			["zoom"] = 0.3,
 			["spark"] = false,
+			["sparkHidden"] = "NEVER",
+			["id"] = "Light's Grace",
+			["uid"] = "ifGAUQYwrDr",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["uid"] = "ifGAUQYwrDr",
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["displayIcon"] = "",
 			["cooldown"] = false,
-			["frameStrata"] = 1,
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
 		},
 		["Vermin Druid"] = {
 			["grow"] = "LEFT",
@@ -68768,12 +68768,7 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["config"] = {
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["useLimit"] = false,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -68799,18 +68794,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["useLimit"] = false,
+			["selfPoint"] = "RIGHT",
 			["animate"] = true,
-			["xOffset"] = -135,
+			["rotation"] = 0,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["anchorFrameFrame"] = "AceGUI30DropDown4Button",
+			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["selfPoint"] = "RIGHT",
 			["space"] = 2,
+			["anchorFrameFrame"] = "AceGUI30DropDown4Button",
 			["constantFactor"] = "RADIUS",
 			["stepAngle"] = 15,
 			["borderOffset"] = 4,
@@ -68822,14 +68817,19 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["gridType"] = "RD",
 			["uid"] = "jqdDR4yB1fg",
-			["rotation"] = 0,
-			["borderEdge"] = "Square Full White",
+			["internalVersion"] = 70,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["internalVersion"] = 69,
+			["xOffset"] = -135,
 		},
 		["Halls of Lightning - Shattering Stomp"] = {
 			["iconSource"] = 0,
@@ -68854,8 +68854,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -68877,9 +68877,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HARMFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "combatlog",
 						["subeventPrefix"] = "SPELL",
@@ -68915,9 +68915,9 @@ WeakAurasSaved = {
 						},
 						["destUnit"] = "player",
 						["group_count"] = "0",
-						["group_countOperator"] = ">",
-						["use_castByPlayer"] = false,
 						["debuffType"] = "HARMFUL",
+						["use_castByPlayer"] = false,
+						["group_countOperator"] = ">",
 						["use_exact_spellId"] = true,
 						["type"] = "combatlog",
 						["subeventPrefix"] = "SPELL",
@@ -68947,7 +68947,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -69004,13 +69004,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -69056,7 +69056,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -69072,14 +69072,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Halls of Lightning - Shattering Stomp",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -69173,7 +69173,8 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkOffsetX"] = 0,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["barColor"] = {
 				0.2, -- [1]
 				1, -- [2]
@@ -69181,8 +69182,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["authorOptions"] = {
-			},
+			["xOffset"] = 0,
 			["icon"] = true,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
@@ -69236,10 +69236,10 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_legacy_floor"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["text_shadowXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_shadowColor"] = {
@@ -69276,13 +69276,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
 					["text_anchorYOffset"] = 25,
+					["text_shadowYOffset"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
-					["text_anchorPoint"] = "CENTER",
 					["text_visible"] = true,
+					["text_anchorPoint"] = "CENTER",
+					["text_fontType"] = "OUTLINE",
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
@@ -69290,7 +69290,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 40,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["load"] = {
 				["use_never"] = false,
 				["talent"] = {
@@ -69335,28 +69335,28 @@ WeakAurasSaved = {
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "icon",
-			["auto"] = false,
+			["spark"] = false,
 			["uid"] = "PTD5D1uPbgk",
 			["icon_side"] = "RIGHT",
+			["config"] = {
+			},
+			["width"] = 40,
+			["sparkHeight"] = 30,
+			["texture"] = "Melli",
+			["alpha"] = 1,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["auto"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["width"] = 40,
-			["anchorFrameParent"] = false,
-			["texture"] = "Melli",
-			["alpha"] = 1,
-			["zoom"] = 0.3,
-			["spark"] = false,
-			["config"] = {
-			},
-			["sparkHidden"] = "NEVER",
 			["id"] = "Holy Shield",
-			["useCooldownModRate"] = true,
+			["sparkHidden"] = "NEVER",
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["sparkHeight"] = 30,
+			["anchorFrameParent"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -69364,7 +69364,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -69372,7 +69372,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0.3,
 		},
 		["Violet Hold - Void Shifted Glow"] = {
 			["iconSource"] = -1,
@@ -69524,8 +69524,8 @@ WeakAurasSaved = {
 					["glow_frame_type"] = "UNITFRAME",
 					["glow_action"] = "show",
 					["glow_lines"] = 10,
-					["glow_type"] = "Pixel",
 					["use_glow_color"] = true,
+					["glow_type"] = "Pixel",
 					["glow_color"] = {
 						0.67843137254902, -- [1]
 						0.16470588235294, -- [2]
@@ -69546,7 +69546,7 @@ WeakAurasSaved = {
 			["displayText_format_1.name_abbreviate"] = false,
 			["justify"] = "LEFT",
 			["semver"] = "3.0.2",
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["id"] = "Violet Hold - Void Shifted Glow",
 			["color"] = {
 				1, -- [1]
@@ -69555,8 +69555,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["frameStrata"] = 1,
-			["width"] = 64,
 			["displayText_format_unitName_color"] = "class",
+			["width"] = 64,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
@@ -69592,7 +69592,7 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["displayText_format_1.spellName_format"] = "none",
-			["anchorFrameParent"] = false,
+			["displayText_format_p_time_precision"] = 1,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
 			["automaticWidth"] = "Auto",
@@ -69659,13 +69659,34 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["displayText_format_p_time_mod_rate"] = true,
-			["internalVersion"] = 69,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_legacy_floor"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+				},
+			},
 			["authorOptions"] = {
 			},
 			["displayText_format_1.raidMark_abbreviate_max"] = 8,
 			["displayText_format_1.destName_abbreviate_max"] = 8,
-			["parent"] = "Tems Wotlk Dungeon Pack - Text",
+			["internalVersion"] = 70,
 			["conditions"] = {
 			},
 			["font"] = "Arial Narrow",
@@ -69709,61 +69730,40 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["displayText_format_1.raidMark_color"] = "class",
-			["uid"] = "W(3oMj3vHKU",
 			["fontSize"] = 18,
+			["uid"] = "W(3oMj3vHKU",
+			["displayText_format_1.raidMark_color"] = "class",
 			["source"] = "import",
 			["displayText_format_1.destName_format"] = "Unit",
 			["shadowXOffset"] = 1,
-			["shadowYOffset"] = -1,
+			["wagoID"] = "8n36Ga60R",
 			["frameStrata"] = 1,
-			["regionType"] = "text",
 			["displayText_format_1.destName_realm_name"] = "never",
+			["regionType"] = "text",
 			["id"] = "Defense Protocol - Shatter Defenses Chosen",
-			["preferToUpdate"] = false,
+			["displayText_format_1.unitName_format"] = "none",
 			["semver"] = "3.0.2",
 			["displayText_format_p_format"] = "timed",
-			["displayText_format_p_time_precision"] = 1,
+			["anchorFrameParent"] = false,
 			["displayText_format_1.raidMark_realm_name"] = "never",
-			["animation"] = {
-				["start"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-				},
-			},
-			["displayText_format_p_time_legacy_floor"] = false,
+			["wordWrap"] = "WordWrap",
+			["shadowYOffset"] = -1,
 			["justify"] = "LEFT",
 			["tocversion"] = 30403,
 			["displayText_format_1.destName_abbreviate"] = false,
-			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 3,
 			["displayText_format_1.raidMark_abbreviate"] = true,
 			["anchorFrameType"] = "SCREEN",
-			["displayText_format_1.unitName_format"] = "none",
+			["parent"] = "Tems Wotlk Dungeon Pack - Text",
 			["config"] = {
 			},
-			["displayText_format_p_time_dynamic_threshold"] = 3,
-			["wagoID"] = "8n36Ga60R",
+			["xOffset"] = 0,
+			["selfPoint"] = "BOTTOM",
 			["displayText_format_1.destName_color"] = "class",
 			["fixedWidth"] = 200,
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["preferToUpdate"] = false,
 		},
 		["Background Texture Caster"] = {
 			["wagoID"] = "NsoiZnZ34",
@@ -69961,7 +69961,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = true,
@@ -70041,14 +70041,14 @@ WeakAurasSaved = {
 			["texture"] = "Interface\\Cooldown\\LoC-ShadowBG",
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
+			["zoom"] = 0,
+			["semver"] = "3.1.2",
 			["tocversion"] = 30401,
 			["id"] = "Background Texture Caster",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["uid"] = "xY2rbJTjPuK",
 			["inverse"] = false,
 			["actions"] = {
@@ -70106,9 +70106,9 @@ WeakAurasSaved = {
 						["event"] = "Item Count",
 						["use_unit"] = true,
 						["use_includeBank"] = true,
-						["count"] = "0",
 						["spellIds"] = {
 						},
+						["count"] = "0",
 						["unevent"] = "auto",
 						["use_absorbMode"] = true,
 						["use_itemName"] = true,
@@ -70121,7 +70121,7 @@ WeakAurasSaved = {
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -70160,7 +70160,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 0,
 					["text_color"] = {
@@ -70171,7 +70171,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "PT Sans Narrow",
 					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 0,
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
@@ -70238,31 +70238,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["uid"] = "J)RSbn6il4O",
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 			["url"] = "https://wago.io/iST6tz9t8/1",
 			["parent"] = "Ore Count",
 			["anchorFrameParent"] = false,
-			["zoom"] = 0.3,
-			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["semver"] = "1.0.0",
 			["tocversion"] = 90002,
 			["id"] = "Thorium Ore",
 			["useCooldownModRate"] = true,
-			["frameStrata"] = 1,
-			["width"] = 40,
 			["alpha"] = 1,
+			["width"] = 40,
+			["frameStrata"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -70270,7 +70270,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["xOffset"] = 0,
 		},
 		["Loss of Control Icon Caster"] = {
 			["iconSource"] = -1,
@@ -70488,7 +70488,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -70588,16 +70588,16 @@ WeakAurasSaved = {
 						1, -- [3]
 						1, -- [4]
 					},
-					["text_font"] = "Arial Narrow",
+					["border_color"] = {
+					},
 					["text_text_format_p_time_format"] = 0,
-					["text_anchorYOffset"] = 22,
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOMRIGHT",
-					["text_shadowYOffset"] = 0,
-					["border_color"] = {
-					},
+					["text_anchorYOffset"] = 22,
+					["text_font"] = "Arial Narrow",
 					["text_fontSize"] = 18,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_shadowColor"] = {
@@ -70654,41 +70654,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.1.2",
+			["auto"] = true,
 			["uid"] = "3m56wKEb9iP",
+			["xOffset"] = -56,
 			["authorOptions"] = {
 			},
-			["xOffset"] = -56,
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["useTooltip"] = true,
-			["alpha"] = 1,
-			["width"] = 40,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 30401,
-			["id"] = "Loss of Control Icon Caster",
-			["url"] = "https://wago.io/NsoiZnZ34/14",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["icon"] = true,
-			["conditions"] = {
-			},
-			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -70708,6 +70683,31 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["useTooltip"] = true,
+			["alpha"] = 1,
+			["width"] = 40,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "3.1.2",
+			["tocversion"] = 30401,
+			["id"] = "Loss of Control Icon Caster",
+			["url"] = "https://wago.io/NsoiZnZ34/14",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["icon"] = true,
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Utgarde Pinnacle - Deep Breath"] = {
@@ -70733,8 +70733,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -70794,7 +70794,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -70904,7 +70904,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -70920,14 +70920,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Deep Breath",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -70960,8 +70960,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -71021,7 +71021,7 @@ WeakAurasSaved = {
 				["customTriggerLogic"] = "function(trigger)\n    return (trigger[1] and trigger[2]) or (trigger[3] and trigger[4])\n    end",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -71131,7 +71131,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -71147,14 +71147,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Utgarde Pinnacle - Bane",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -71336,14 +71336,18 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["columnSpace"] = 25,
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["sort"] = "none",
 			["selfPoint"] = "TOPLEFT",
 			["align"] = "CENTER",
-			["source"] = "import",
-			["radius"] = 200,
+			["parent"] = "Tems Wotlk Dungeon Pack",
 			["space"] = 20,
+			["radius"] = 200,
 			["stagger"] = 0,
+			["arcLength"] = 360,
+			["version"] = 10,
+			["subRegions"] = {
+			},
 			["sortHybridTable"] = {
 				["Ahn'kahet - Thundershock"] = false,
 				["Gundrak - Merge"] = false,
@@ -71354,11 +71358,11 @@ WeakAurasSaved = {
 				["Trial of the Champion - Waking Nightmare"] = false,
 				["Halls of Stone - Searing Gaze"] = false,
 				["Pit of Saron - Unholy Power"] = false,
-				["Defense Protocol - Blood of the Loa"] = false,
-				["Gundrak - Impaling Charge"] = false,
 				["Utgarde Pinnacle - Screams of the Dead"] = false,
+				["Gundrak - Impaling Charge"] = false,
+				["Defense Protocol - Blood of the Loa"] = false,
 				["Gundrak - Numbing Shout"] = false,
-				["Ahn'kahet - Prince Taldaram"] = false,
+				["Halls of Lightning - Shattering Stomp"] = false,
 				["Gundrak - Quake"] = false,
 				["Pit of Saron - Overlord's Brand"] = false,
 				["Gundrak - Deafening Roar"] = false,
@@ -71379,12 +71383,12 @@ WeakAurasSaved = {
 				["Ahn'kahet - Flame Sphere"] = false,
 				["The Oculus - Temporal Rift"] = false,
 				["Utgarde Pinnacle - Whirlwind"] = false,
-				["Gamma - Confessor's Wrath"] = false,
 				["Ahn'kahet - Brood Rage"] = false,
+				["Gamma - Confessor's Wrath"] = false,
 				["Halls of Reflection - Well of Corruption"] = false,
 				["Halls of Lightning - Static Overload"] = false,
 				["Violet Hold - Void Shift"] = false,
-				["Drak'Tharon - Decay/Return Flesh"] = false,
+				["Gundrak - Grip of Slad'ran"] = false,
 				["Violet Hold - Earth Shield"] = false,
 				["Halls of Stone - Ooze"] = false,
 				["Pit of Saron - Deep Freeze"] = false,
@@ -71394,43 +71398,43 @@ WeakAurasSaved = {
 				["The Nexus - Chaotic Rift"] = false,
 				["Violet Hold - Lava Burn"] = false,
 				["Utgarde Keep - Frost Tomb"] = false,
-				["Violet Hold - Shroud of Darkness"] = false,
+				["Pit of Saron - Pursuit"] = false,
 				["Ahn'kahet - Guardian Aura"] = false,
-				["Ahn'kahet - Flamestrike"] = false,
+				["Drak'Tharon - Blizzard"] = false,
 				["Halls of Reflection - Corrupted Flesh"] = false,
 				["Halls of Reflection - Defiling Horror"] = false,
 				["Forge of Souls - Corrupted Soul Fragment"] = false,
 				["Stratholme - Constricting Chains"] = false,
-				["Drak'Tharon - Army of the Dead"] = false,
-				["Halls of Stone - Shock of Sorrow"] = false,
+				["Halls of Lightning - Stance"] = false,
+				["Halls of Lightning - Charge Up"] = false,
 				["Defense Protocol - Icy Path"] = false,
-				["Pit of Saron - Pursuit"] = false,
-				["Forge of Souls - Well of Souls"] = false,
+				["Violet Hold - Shroud of Darkness"] = false,
+				["Gundrak - Emerge"] = false,
 				["Defense Protocol - Titanic Power"] = false,
 				["Pit of Saron - Throw Saronite"] = false,
-				["Halls of Stone - Static Charge"] = false,
+				["Ahn'kahet - Healthy Mushroom"] = false,
 				["Forge of Souls - Soulstorm"] = false,
 				["Halls of Lightning - Arc Weld"] = false,
 				["Halls of Lightning - Renew Steel"] = false,
-				["Drak'Tharon - Blizzard"] = false,
+				["Ahn'kahet - Flamestrike"] = false,
 				["The Oculus - Thundering Stomp"] = false,
-				["Halls of Lightning - Stance"] = false,
-				["Azjol'Nerub - Acid Cloud"] = false,
-				["Halls of Lightning - Charge Up"] = false,
+				["Drak'Tharon - Army of the Dead"] = false,
+				["The Oculus - Enraged Assault"] = false,
+				["Halls of Stone - Shock of Sorrow"] = false,
 				["Drak'Tharon - Grievous Bite"] = false,
 				["Gamma - Rallying Cry"] = false,
 				["The Oculus - Stop Time"] = false,
 				["Utgarde Pinnacle - Ritual of the Sword"] = false,
 				["Drak'Tharon - Poison Cloud"] = false,
-				["Trial of the Champion - Hammer of Justice"] = false,
-				["Pit of Saron - Icy Blast"] = false,
+				["Pit of Saron - Poison Nova"] = false,
+				["The Nexus - Whirlwind"] = false,
 				["Gundrak - Mojo"] = false,
 				["Drak'Tharon - Mangling Slash"] = false,
 				["Gamma - Shattering Defenses"] = false,
 				["Ahn'kahet - Embrace of the Vampyr"] = false,
 				["Halls of Stone - Lightning Ring"] = false,
-				["Violet Hold - Blizzard"] = false,
-				["The Nexus - Whirlwind"] = false,
+				["Trial of the Champion - Radiance"] = false,
+				["Pit of Saron - Icy Blast"] = false,
 				["The Nexus - Intense Cold"] = false,
 				["The Oculus - Arcane Explosion"] = false,
 				["The Nexus - Time Stop"] = false,
@@ -71445,55 +71449,32 @@ WeakAurasSaved = {
 				["Forge of Souls - Fear"] = false,
 				["Ahn'kahet - Poison Cloud"] = false,
 				["Violet Hold - Protective Bubble"] = false,
-				["Trial of the Champion - Radiance"] = false,
+				["Violet Hold - Blizzard"] = false,
 				["The Nexus - Spell Reflection"] = false,
 				["Gundrak - Whirling Slash"] = false,
 				["Drak'Tharon - Rain of Fire"] = false,
 				["Defense Protocol - Infected!"] = false,
 				["The Oculus - Leeching Poison"] = false,
 				["Halls of Stone - Shatter"] = false,
-				["The Oculus - Enraged Assault"] = false,
-				["Pit of Saron - Poison Nova"] = false,
-				["Ahn'kahet - Healthy Mushroom"] = false,
-				["Gundrak - Emerge"] = false,
+				["Azjol'Nerub - Acid Cloud"] = false,
+				["Trial of the Champion - Hammer of Justice"] = false,
+				["Halls of Stone - Static Charge"] = false,
+				["Forge of Souls - Well of Souls"] = false,
 				["Azjol'Nerub - Enrage"] = false,
 				["Trial of the Champion - Reflective Shield"] = false,
 				["Gundrak - Mojo Frenzy"] = false,
 				["Drak'Tharon - Consume"] = false,
 				["Halls of Stone - Lightning Shield"] = false,
 				["Utgarde Keep - Woe Strike"] = false,
-				["Gundrak - Grip of Slad'ran"] = false,
+				["Drak'Tharon - Decay/Return Flesh"] = false,
 				["Utgarde Pinnacle - Harpoon"] = false,
 				["Trial of the Champion - Renew"] = false,
 				["Ahn'kahet - Sacrifice"] = false,
 				["Halls of Lightning - Lightning Nova"] = false,
 				["Utgarde Pinnacle - Deep Breath"] = false,
 				["Utgarde Pinnacle - Bane"] = false,
-				["Halls of Lightning - Shattering Stomp"] = false,
+				["Ahn'kahet - Prince Taldaram"] = false,
 				["Utgarde Keep - Staggering Roar"] = false,
-			},
-			["version"] = 10,
-			["subRegions"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
 			},
 			["fullCircle"] = true,
 			["load"] = {
@@ -71521,9 +71502,9 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["borderInset"] = 1,
+			["uid"] = "vlHWJBUremb",
 			["animate"] = true,
-			["arcLength"] = 360,
+			["borderInset"] = 1,
 			["scale"] = 1.8,
 			["centerType"] = "LR",
 			["border"] = false,
@@ -71531,7 +71512,7 @@ WeakAurasSaved = {
 			["stepAngle"] = 15,
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["uid"] = "vlHWJBUremb",
+			["yOffset"] = 100,
 			["frameStrata"] = 1,
 			["constantFactor"] = "RADIUS",
 			["rotation"] = 0,
@@ -71542,18 +71523,37 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["parent"] = "Tems Wotlk Dungeon Pack",
+			["source"] = "import",
 			["config"] = {
 			},
-			["yOffset"] = 100,
 			["useLimit"] = false,
+			["xOffset"] = 160,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 160,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 		},
 		["Ahn'kahet - Insanity"] = {
 			["iconSource"] = 0,
@@ -71578,8 +71578,8 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 					["message_type"] = "SAY",
 					["message_format_unitName_format"] = "none",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 					["do_message"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
 				},
 				["finish"] = {
 					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Blast.ogg",
@@ -71662,7 +71662,7 @@ WeakAurasSaved = {
 				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 69,
+			["internalVersion"] = 70,
 			["keepAspectRatio"] = true,
 			["animation"] = {
 				["start"] = {
@@ -71719,13 +71719,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_TOP",
 					["text_anchorYOffset"] = 0,
 					["text_text_format_affected_format"] = "none",
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [2]
 				{
 					["border_size"] = 1,
@@ -71771,7 +71771,7 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["semver"] = "3.0.2",
+			["auto"] = false,
 			["icon"] = true,
 			["parent"] = "Tems Wotlk Dungeon Pack - Dynamic",
 			["information"] = {
@@ -71787,14 +71787,14 @@ WeakAurasSaved = {
 			["anchorFrameParent"] = false,
 			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "3.0.2",
 			["tocversion"] = 30403,
 			["id"] = "Ahn'kahet - Insanity",
 			["selfPoint"] = "CENTER",
 			["useCooldownModRate"] = true,
 			["width"] = 41,
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
