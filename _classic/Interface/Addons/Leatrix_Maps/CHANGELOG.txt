@@ -1,3 +1,13 @@
+1.15.01 - 15th November 2023
+- Fixed issue with map scaling.  Note that if you are using Questie and 'Use default map' is disabled, you may need to open Questie options, click the Map tab and set the global scale for map icons to 1 (default is 0.6 but this may be too small).
+- Fixed issue with map position not being saved.
+- If you are not using 'Use default map', the map size has changed with this update.  So you may need to enable 'Unlock map frame' and adjust the map size using the scale handle in the bottom-right corner of the map (or adjust the scale slider in the unlock map frame configuration panel).  If you get stuck, click the 'Reset map layout' button in the main configuration panel.
+
+1.15.00 - 15th November 2023
+- Preliminary update for game version 1.15.0.
+- For 'Use default map', the map title will be shown if you are not using 'Show zone menus'.
+- The 'Remove map border' option has been removed.
+
 1.14.133 - 25th August 2023
 - For 'Set map opacity', toggling the option now requires a UI reload.  The option will be locked out if ElvUI is installed with the maps module enabled.
 - For 'Use default map', the blackout frame is now hidden.  The 'Set map opacity' option will be locked out.
