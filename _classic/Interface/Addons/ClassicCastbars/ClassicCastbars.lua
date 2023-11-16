@@ -1,4 +1,5 @@
 if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then return end
+if select(7, GetBuildInfo()) >= 11500 then return end -- Patch 1.15.0 now has built in castbars
 
 local _, namespace = ...
 local PoolManager = namespace.PoolManager
@@ -140,6 +141,11 @@ function addon:StartCast(unitGUID, unitID)
     if not castbar then return end
 
     castbar._data = cast -- set ref to current cast data
+
+	if not cast.isUninterruptible then 
+		_G.IfUnitIsCastingInteruptable = true
+	end
+
     self:CheckCastModifiers(unitID, cast)
     self:DisplayCastbar(castbar, unitID)
 end
@@ -151,6 +157,8 @@ function addon:StopCast(unitID, noFadeOut)
     if not castbar.isTesting then
         self:HideCastbar(castbar, unitID, noFadeOut)
     end
+
+	_G.IfUnitIsCastingInteruptable = false
 
     castbar._data = nil
 end
