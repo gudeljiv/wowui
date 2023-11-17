@@ -19,7 +19,8 @@ local function QualityILVL(frame)
 			frame.ItemLevelText:SetShadowOffset(0, 0)
 			frame.ItemLevelText:SetPoint('TOP', frame.IconFrame, 'TOP', 0, 0)
 		end
-		frame.ItemLevelText:SetVertexColor(r or 1, g or 1, b or 1)
+		-- frame.ItemLevelText:SetVertexColor(r or 1, g or 1, b or 1)
+		frame.ItemLevelText:SetVertexColor(251/255, 255/255, 224/255)
 		frame.ItemLevelText:SetText(itemLevel)
 	end
 
