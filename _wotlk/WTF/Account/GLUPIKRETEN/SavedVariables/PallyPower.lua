@@ -40,10 +40,10 @@ PallyPowerDB = {
 		},
 		["Other"] = {
 			["enable"] = true,
+			["WrathTransition"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["WrathTransition"] = true,
 		},
 	},
 }
@@ -51,8 +51,8 @@ PallyPower_Assignments = {
 	["Vermina"] = {
 		4, -- [1]
 		4, -- [2]
-		4, -- [3]
-		4, -- [4]
+		1, -- [3]
+		1, -- [4]
 		4, -- [5]
 		4, -- [6]
 		4, -- [7]
@@ -285,12 +285,12 @@ PallyPower_AuraAssignments = {
 	["Zivvy"] = 0,
 	["Mouritius"] = 0,
 	["Berri"] = 0,
-	["Veebz"] = 0,
-	["Attlee"] = 5,
 	["Doctør"] = 0,
+	["Attlee"] = 5,
+	["Hjørdís"] = 0,
 	["Silkespal"] = 0,
-	["Sistermerrin"] = 0,
 	["Selestra"] = 0,
+	["Rvbbitt"] = 0,
 	["Fálcor"] = 3,
 	["Uhndapa"] = 0,
 	["Immórtál"] = 0,
@@ -346,9 +346,9 @@ PallyPower_AuraAssignments = {
 	["Althan"] = 0,
 	["Wscqc"] = 0,
 	["Buttered"] = 0,
-	["Rvbbitt"] = 0,
+	["Sistermerrin"] = 0,
 	["Monikå"] = 0,
-	["Hjørdís"] = 0,
+	["Veebz"] = 0,
 	["Drexal"] = 0,
 	["Doradintwo"] = 0,
 	["Dárcy-Gehennas"] = 6,
