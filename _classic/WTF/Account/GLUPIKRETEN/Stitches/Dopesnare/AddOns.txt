@@ -111,3 +111,4 @@ AdiBags-BetterCategories: enabled
 ClassicProfessionFilter: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
+NovaWorldBuffs: enabled
