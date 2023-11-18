@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local RangeCheck = LibStub('LibRangeCheck-2.0')
+local RangeCheck = LibStub('LibRangeCheck-3.0')
 
 RangeCheck.RegisterCallback(
 	RangeCheck, 

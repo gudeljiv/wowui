@@ -4,8 +4,8 @@
 ## Version: 54000
 ## SavedVariablesPerCharacter: xKillCount
 
-libs\LibStub-1.0\LibStub.lua
-libs\LibRangeCheck-2.0\LibRangeCheck-2.0.lua
+Libs\LibStub-1.0\LibStub.lua
+Libs\LibRangeCheck-3.0\LibRangeCheck-3.0.lua
 
 _Config.lua
 _Core.lua
