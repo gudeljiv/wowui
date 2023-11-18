@@ -12,15 +12,15 @@
 
 
 # Also dont forget to bump both of these - X-Interface is used to get the interface version in-game to check that the user is using a current client.
-## Interface: 30402
+## Interface: 30403
 # DONT FORGET TO TOC BUMP TELLMEWHEN_OPTIONS TOO!!
-## X-Interface: 30402
+## X-Interface: 30403
 ## Title: TellMeWhen
 ## X-Curse-Project-ID: 8025
 ## X-WoWI-ID: 10855
 ## X-Wago-ID: ZQ6aZqKW
 
-## Version: 10.1.6
+## Version: 10.2.0
 ## Author: Cybeloras of Aerie Peak
 ## IconTexture: Interface\Addons\TellMeWhen\Textures\LDB Icon
 ## AddonCompartmentFunc: TellMeWhen_OnAddonCompartmentClick
@@ -35,11 +35,11 @@
 ## Notes-ruRU: Визуальные, звуковые и текстовые оповещения о готовности заклинаний, способностей, наличии баффов\дебаффов и многого другого.
 ## Notes-esES: Proporciona notificaciones visuales, auditivas y textuales sobre tiempos de reutilización, ventajas y básicamente cualquier otra cosa. 
 
-## OptionalDeps: Masque, Ace3, OmniCC, tullaCC, sct, sctd, MikScrollingBattleText, Parrot, DRList-1.0, LibDogTag-3.0, LibDogTag-Unit-3.0, LibDogTag-Stats-3.0, LibSpellRange-1.0, LibOO-1.0, LibRangeCheck-2.0, LibBabble-CreatureType-3.0, LibBabble-Race-3.0, ElvUI, DBM-Core, BigWigs
+## OptionalDeps: Masque, Ace3, OmniCC, tullaCC, sct, sctd, MikScrollingBattleText, Parrot, DRList-1.0, LibDogTag-3.0, LibDogTag-Unit-3.0, LibDogTag-Stats-3.0, LibSpellRange-1.0, LibOO-1.0, LibRangeCheck-3.0, LibBabble-CreatureType-3.0, LibBabble-Race-3.0, ElvUI, DBM-Core, BigWigs
 # The per character settings are the old settings, but we still need them to upgrade to the new ones. If they aren't defined, then they will be deleted immediately
 ## SavedVariablesPerCharacter: TellMeWhen_Settings
 ## SavedVariables: TellMeWhenDB
-## X-Embeds: LibStub, Ace3, LibSharedMedia-3.0, LibDataBroker-1.1, DRList-1.0, LibDogTag-3.0, LibDogTag-Unit-3.0, LibDogTag-Stats-3.0, LibSpellRange-1.0, LibOO-1.0, LibRangeCheck-2.0, LibBabble-CreatureType-3.0, LibBabble-Race-3.0
+## X-Embeds: LibStub, Ace3, LibSharedMedia-3.0, LibDataBroker-1.1, DRList-1.0, LibDogTag-3.0, LibDogTag-Unit-3.0, LibDogTag-Stats-3.0, LibSpellRange-1.0, LibOO-1.0, LibRangeCheck-3.0, LibBabble-CreatureType-3.0, LibBabble-Race-3.0
 ## X-Category: Combat
 
 includes.xml

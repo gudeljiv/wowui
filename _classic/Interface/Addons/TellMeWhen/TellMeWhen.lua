@@ -19,7 +19,7 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.1.6" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.2.0" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -95,7 +95,7 @@ _G.TellMeWhen = _G.TMW
 local TMW = _G.TMW
 
 local tocVersion = select(4, GetBuildInfo());
-TMW.isClassic = tocVersion <= 11499
+TMW.isClassic = tocVersion <= 19999
 TMW.isWrath = tocVersion >= 30400 and tocVersion <= 30499
 TMW.isRetail = tocVersion >= 90000
 
@@ -438,11 +438,18 @@ if GetSpellInfo(336126) then
 end
 local SpellTexturesMetaIndex = TMW.SpellTexturesMetaIndex
 
+local avengingWrathName = GetSpellInfo(31884)
 function TMW.GetSpellTexture(spell)
 	if not spell then return end
 
+	local spellTex = GetSpellTexture(spell)
+	if spellTex and (spellTex ~= 135875 or GetSpellInfo(spell) == avengingWrathName) then
+		-- Workaround https://github.com/ascott18/TellMeWhen/issues/2114 - 
+		-- don't return avenging wrath texture if the input wasn't the avenging wrath spell.
+		return spellTex
+	end
+
 	return
-		GetSpellTexture(spell) or
 		SpellTexturesMetaIndex[spell] or
 		rawget(SpellTexturesMetaIndex, strlowerCache[spell])
 end

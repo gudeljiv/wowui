@@ -1,6 +1,10 @@
 
-## v10.1.6
-* Support for WoW Classic Era 1.14.4. The classic era codebase has been merged into the main codebase, so some features that don't support classic may be present in a non-working state.
+## v10.2.0
+* Version bumps for all WoW versions. 
+* Fixed classic client detection.
+* Fix #2119 - Handle Blizzard's new, poorly-introduced range check restrictions.
+* Fix #2121 - Efflorescence is now just a buff, no longer a totem. If you were using the Efflorescence icon type (which will now just show as "Totem"), switch to using a buff/debuff icon.
+* Workaround #2114 - Most textures become Avenging Wrath when Avenging Wrath is glyphed.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/417ec7a24296326ce5fb3a80b69b261e4f82fe9c/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/86bee2f193db39c4b01fbb29ea9fa246a62a21fe/CHANGELOG.md)

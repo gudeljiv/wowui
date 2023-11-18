@@ -1,20 +1,23 @@
-# [5.8.5](https://github.com/WeakAuras/WeakAuras2/tree/5.8.5) (2023-11-12)
+# [5.8.6](https://github.com/WeakAuras/WeakAuras2/tree/5.8.6) (2023-11-15)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.4...5.8.5)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.5...5.8.6)
 
 ## Highlights
 
- - More template updates and bug fixes 
+ - Update for Range Check hotfix
+- Bugfixes and texture updates for 10.2 
 
 ## Commits
 
-InfusOnWoW (2):
+InfusOnWoW (1):
 
-- More Template Updates
-- Combat Log Trigger: Fix various condition checks for !=
+- Switch to LibRangeCheck-3.0
 
-mrbuds (2):
+mrbuds (5):
 
-- Alternate Power trigger: make power field a multiEntry
-- Dynamic group: flatten background level of all regions
+- Update model list for 10.2
+- Update texture atlas list for 10.2
+- Use LibRangeCheck-3.0
+- Dynamic Group: don't apply level to subgroups, don't do it only for top level groups
+- Dynamic Group: raise level of auras over backdrop
 
