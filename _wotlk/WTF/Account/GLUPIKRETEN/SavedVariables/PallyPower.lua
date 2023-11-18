@@ -19,23 +19,23 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["freeassign"] = true,
 			["buffscale"] = 1,
-			["hideHighGroups"] = true,
 			["seal"] = 3,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["ShowTooltips"] = false,
-			["configscale"] = 0.9967937838582688,
-			["enable"] = true,
-			["WrathTransition"] = true,
 			["display"] = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["SalvInCombat"] = true,
+			["freeassign"] = true,
+			["enable"] = true,
 			["border"] = "None",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["configscale"] = 0.9967937838582688,
+			["WrathTransition"] = true,
+			["hideHighGroups"] = true,
+			["ShowTooltips"] = false,
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -48,6 +48,18 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Vermina"] = {
+		4, -- [1]
+		4, -- [2]
+		4, -- [3]
+		4, -- [4]
+		4, -- [5]
+		4, -- [6]
+		4, -- [7]
+		4, -- [8]
+		4, -- [9]
+		4, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
 }
@@ -99,6 +111,7 @@ PallyPower_AuraAssignments = {
 	["Cainlol-Gehennas"] = 3,
 	["Naydess"] = 0,
 	["Meowwen"] = 0,
+	["Yeeshi-Venoxis"] = 1,
 	["Liâdrin"] = 0,
 	["Vermina"] = 2,
 	["Vourligan"] = 0,
@@ -194,6 +207,7 @@ PallyPower_AuraAssignments = {
 	["Brijacpizde"] = 0,
 	["Rinnerebirt"] = 0,
 	["Ziireaell-Gehennas"] = 3,
+	["Lightlane"] = 3,
 	["Fumika"] = 0,
 	["Darwina"] = 0,
 	["Palidah"] = 0,
@@ -230,6 +244,7 @@ PallyPower_AuraAssignments = {
 	["Dubeldee"] = 1,
 	["Discoduck"] = 0,
 	["Gamzy"] = 0,
+	["Furydin"] = 0,
 	["Iteasy"] = 0,
 	["Slâshans-MirageRaceway"] = 0,
 	["Vyjebanahoe"] = 0,
@@ -252,8 +267,8 @@ PallyPower_AuraAssignments = {
 	["Prosec"] = 0,
 	["Slaskkevin"] = 1,
 	["Ikoras"] = 0,
-	["Holytimes"] = 0,
 	["Teralas-Mograine"] = 1,
+	["Holytimes"] = 0,
 	["Farahpahlavi"] = 2,
 	["Cigarette"] = 0,
 	["Karalab"] = 3,
@@ -270,23 +285,23 @@ PallyPower_AuraAssignments = {
 	["Zivvy"] = 0,
 	["Mouritius"] = 0,
 	["Berri"] = 0,
-	["Doctør"] = 0,
+	["Veebz"] = 0,
 	["Attlee"] = 5,
-	["Hjørdís"] = 0,
+	["Doctør"] = 0,
 	["Silkespal"] = 0,
-	["Rvbbitt"] = 0,
+	["Sistermerrin"] = 0,
 	["Selestra"] = 0,
 	["Fálcor"] = 3,
 	["Uhndapa"] = 0,
-	["Bunnycolby"] = 0,
+	["Immórtál"] = 0,
 	["Turanian"] = 0,
 	["Phonkdrifter"] = 0,
-	["Shiftyzz-Venoxis"] = 6,
-	["Immórtál"] = 0,
-	["Palydina"] = 1,
-	["Kalexa"] = 0,
+	["Bunnycolby"] = 0,
 	["Jejla"] = 0,
+	["Palydina"] = 1,
 	["Tillander"] = 6,
+	["Shiftyzz-Venoxis"] = 6,
+	["Kalexa"] = 0,
 	["Rubyrag"] = 0,
 	["Palabra"] = 0,
 	["Holyjeebus"] = 0,
@@ -331,9 +346,9 @@ PallyPower_AuraAssignments = {
 	["Althan"] = 0,
 	["Wscqc"] = 0,
 	["Buttered"] = 0,
-	["Veebz"] = 0,
+	["Rvbbitt"] = 0,
 	["Monikå"] = 0,
-	["Sistermerrin"] = 0,
+	["Hjørdís"] = 0,
 	["Drexal"] = 0,
 	["Doradintwo"] = 0,
 	["Dárcy-Gehennas"] = 6,

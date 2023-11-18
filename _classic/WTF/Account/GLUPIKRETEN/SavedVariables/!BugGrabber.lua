@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10931,
+	["session"] = 10935,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1384,20 +1384,32 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [180]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/29 22:27:18",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 10905,
-			["counter"] = 8,
-		}, -- [181]
-		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RareScanner' tried to call the protected function 'TargetUnit()'.",
 			["time"] = "2023/10/13 10:25:54",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
 			["session"] = 10921,
 			["counter"] = 18,
+		}, -- [181]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/29 22:27:18",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 10932,
+			["counter"] = 9,
 		}, -- [182]
+		{
+			["message"] = "Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0-3/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
+			["session"] = 10932,
+			["time"] = "2023/11/18 11:01:21",
+			["counter"] = 1,
+		}, -- [183]
+		{
+			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
+			["session"] = 10932,
+			["time"] = "2023/11/18 11:01:21",
+			["counter"] = 1,
+		}, -- [184]
 	},
 }

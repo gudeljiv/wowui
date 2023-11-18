@@ -104,8 +104,9 @@ NWBdatabase = {
 				["onyNpcDied"] = 0,
 				["flower1"] = 0,
 				["flower8"] = 0,
+				["layerMapBackups"] = {
+				},
 				["onyYell2"] = 0,
-				["nefNpcDied"] = 0,
 				["flower4"] = 0,
 				["nefYell2"] = 0,
 				["flower9"] = 0,
@@ -114,8 +115,7 @@ NWBdatabase = {
 				["tuber1"] = 0,
 				["dragon2"] = 0,
 				["dragon3"] = 0,
-				["layerMapBackups"] = {
-				},
+				["nefNpcDied"] = 0,
 				["zanYell"] = 0,
 				["dmfBuffSettings"] = {
 				},
@@ -1051,10 +1051,10 @@ NWBdatabase = {
 						[111] = 1957,
 						[40] = 1450,
 						[80] = 1419,
-						[160] = 1458,
+						[41] = 1411,
 						[112] = 1947,
 						[128] = 1425,
-						[81] = 1421,
+						[160] = 1458,
 						[129] = 1433,
 						[161] = 1434,
 						[57] = 1451,
@@ -1088,7 +1088,7 @@ NWBdatabase = {
 						[73] = 1946,
 						[45] = 1447,
 						[39] = 1456,
-						[41] = 1411,
+						[81] = 1421,
 						[146] = 1431,
 						[90] = 115,
 						[110] = 1949,
@@ -1650,7 +1650,7 @@ NWBdatabase = {
 		["terokkarChat10"] = false,
 		["guildNpcDialogue"] = 0,
 		["guildCommand"] = 0,
-		["lo"] = 1699786063,
+		["lo"] = 1700302070,
 		["Stitches"] = {
 			["Horde"] = {
 				["Shaarm-Stitches"] = {
@@ -2679,6 +2679,20 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 0,
 				},
+				["Chargaren-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Deebsy-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -3063,6 +3077,20 @@ NWBdatabase = {
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
 					["updated"] = 1699132865,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Ehlih-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -3569,8 +3597,8 @@ NWBdatabase = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
-					["updated"] = 1699093145,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -3762,113 +3790,201 @@ NWBdatabase = {
 					["guild1"] = 1,
 				},
 				["layerMapBackups"] = {
-					[374] = {
-						[1821] = 1445,
-						[1825] = 1423,
-						[1577] = 1452,
-						[1581] = 1424,
-						[1290] = 1443,
-						[1294] = 1432,
-						[1424] = 1418,
-						[1822] = 1442,
-						[1826] = 1436,
-						[1578] = 1413,
-						[1582] = 1421,
-						[373] = 1444,
-						[375] = 1411,
-						[376] = 1412,
-						[1417] = 1450,
-						[379] = 1428,
-						[1819] = 1447,
-						[1579] = 1451,
-						[1583] = 1427,
-						[1288] = 1446,
-						[1292] = 1431,
-						[1422] = 1420,
-						[1820] = 1448,
-						[1576] = 1449,
-						[1580] = 1437,
-						[1421] = 1433,
-						[1291] = 1429,
-						[378] = 1435,
-						[1419] = 1456,
-						[1293] = 1417,
-						[346] = 1441,
-						[347] = 1440,
-						[1423] = 1419,
-						[349] = 1425,
-						[350] = 1458,
-						[351] = 1434,
-						[352] = 1422,
-						["created"] = 1699271888,
+					[4045] = {
+						[2917] = 1411,
+						[3248] = 1452,
+						[3075] = 1437,
+						[2918] = 1413,
+						[5678] = 1420,
+						[3257] = 1431,
+						[5679] = 1425,
+						[2919] = 1422,
+						[3250] = 1412,
+						[3258] = 1421,
+						[5681] = 1432,
+						[2920] = 1417,
+						[5682] = 1423,
+						[3259] = 1428,
+						[4047] = 1434,
+						[2921] = 1458,
+						[3071] = 1448,
+						[4048] = 1424,
+						[3072] = 1440,
+						[5671] = 1450,
+						["created"] = 1699785772,
+						[5672] = 1449,
+						[3069] = 1456,
+						[3073] = 1419,
+						[3251] = 1443,
+						[5673] = 1444,
+						[4051] = 1427,
+						[4050] = 1418,
+						[3070] = 1441,
+						[3247] = 1446,
+						[5674] = 1442,
+						[2916] = 1451,
+						[5680] = 1429,
+						[3249] = 1445,
+						[4043] = 1447,
+						[3260] = 1435,
 					},
-					[145] = {
-						[114] = 1434,
+					[110] = {
+						[103] = 1429,
+						[131] = 1439,
+						["created"] = 1699785772,
+						[115] = 1411,
+						[104] = 1458,
+						[108] = 1423,
+						[112] = 1442,
+						[130] = 1456,
+						[120] = 1412,
+						[109] = 1424,
+						[105] = 1443,
+						[106] = 1425,
+						[129] = 1447,
+						[95] = 1448,
+						[99] = 1450,
+						[107] = 1413,
+					},
+					[119] = {
+						[139] = 1420,
+						[143] = 1422,
+						[147] = 1442,
+						[124] = 1444,
+						[126] = 1456,
+						[140] = 1445,
+						[148] = 1413,
+						["created"] = 1699785772,
+						[117] = 1446,
+						[141] = 1425,
+						[145] = 1417,
+						[123] = 1437,
+						[125] = 1447,
+						[138] = 1448,
+						[146] = 1458,
+						[137] = 1449,
+						[122] = 1418,
+						[121] = 1411,
+					},
+					[114] = {
 						[116] = 1413,
-						[143] = 1458,
-						[128] = 1420,
-						[163] = 1425,
-						[144] = 1444,
-						[109] = 1443,
-						[131] = 1441,
-						[129] = 1456,
-						[164] = 1435,
-						[115] = 1423,
-						[119] = 1442,
-						[121] = 1451,
-						[123] = 1431,
-						[125] = 1421,
-						[127] = 1433,
-						[153] = 1427,
-						[169] = 1417,
-						[138] = 1426,
-						[142] = 1440,
-						[120] = 1445,
-						[150] = 1429,
-						[110] = 1411,
-						[132] = 1450,
-						["created"] = 1699267899,
+						[91] = 1420,
+						[93] = 1425,
+						[97] = 1449,
+						[101] = 1451,
+						[144] = 1429,
+						[111] = 1418,
+						[113] = 1456,
+						["created"] = 1699785772,
+						[92] = 1431,
+						[94] = 1422,
+						[96] = 1428,
+						[98] = 1411,
+						[100] = 1412,
+						[102] = 1442,
+						[128] = 1421,
+						[127] = 1435,
 					},
-					[1626] = {
-						[1632] = 1421,
-						[418] = 1436,
-						[1459] = 1428,
-						[1908] = 1450,
-						[1912] = 1423,
-						[362] = 1443,
-						[363] = 1444,
-						[364] = 1445,
-						[365] = 1412,
-						[1369] = 1448,
-						[1625] = 1456,
-						[1377] = 1424,
-						[369] = 1435,
-						[370] = 1419,
-						[371] = 1418,
-						[1456] = 1442,
-						[1460] = 1434,
-						[1909] = 1413,
-						[1913] = 1437,
-						[1370] = 1452,
-						[1378] = 1433,
-						[1634] = 1422,
-						[1914] = 1427,
-						[1371] = 1411,
-						[1627] = 1451,
-						[1631] = 1431,
-						[1454] = 1447,
-						[1458] = 1458,
-						[1907] = 1446,
-						[416] = 1417,
-						[1376] = 1426,
-						[1379] = 1432,
-						[410] = 1441,
-						[411] = 1449,
-						[412] = 1439,
-						[413] = 1440,
-						[368] = 1420,
-						[415] = 1429,
-						["created"] = 1699272306,
+					[953] = {
+						[1015] = 1425,
+						[1017] = 1421,
+						[956] = 1440,
+						[1023] = 1436,
+						[962] = 1420,
+						[964] = 1428,
+						[966] = 1435,
+						[968] = 1433,
+						[970] = 1451,
+						[1117] = 1413,
+						[980] = 1441,
+						[982] = 1456,
+						[984] = 1448,
+						[986] = 1427,
+						[1014] = 1434,
+						[1016] = 1418,
+						[955] = 1452,
+						[1020] = 1423,
+						[1022] = 1411,
+						[1024] = 1445,
+						[963] = 1449,
+						[965] = 1450,
+						[967] = 1444,
+						[969] = 1447,
+						[979] = 1431,
+						[981] = 1424,
+						[985] = 1426,
+						["created"] = 1699785772,
+						[1019] = 1446,
+						[1018] = 1432,
+						[952] = 1417,
+						[951] = 1442,
+						[954] = 1458,
+					},
+					[899] = {
+						[895] = 1449,
+						[942] = 1434,
+						[896] = 1428,
+						[943] = 1421,
+						[897] = 1450,
+						[1006] = 1441,
+						[898] = 1417,
+						[1007] = 1424,
+						[1008] = 1456,
+						[900] = 1436,
+						[947] = 1448,
+						[948] = 1458,
+						[949] = 1411,
+						["created"] = 1699785772,
+						[1012] = 1442,
+						[1013] = 1445,
+						[1009] = 1435,
+						[1011] = 1427,
+						[1005] = 1431,
+						[1010] = 1444,
+						[944] = 1418,
+						[894] = 1420,
+						[950] = 1440,
+						[945] = 1446,
+					},
+					[1868] = {
+						[2539] = 1419,
+						[1888] = 1445,
+						[1892] = 1424,
+						[3083] = 1448,
+						[2532] = 1444,
+						[2540] = 1423,
+						[2619] = 1428,
+						[1869] = 1451,
+						[3084] = 1412,
+						[2533] = 1440,
+						[1885] = 1450,
+						[2620] = 1420,
+						[3085] = 1426,
+						[2613] = 1446,
+						[2621] = 1458,
+						[1866] = 1442,
+						[1874] = 1434,
+						[2535] = 1437,
+						[1886] = 1413,
+						[2614] = 1449,
+						[2622] = 1427,
+						[2536] = 1435,
+						[2615] = 1452,
+						[1871] = 1429,
+						[1875] = 1436,
+						[2537] = 1425,
+						[2616] = 1411,
+						[1895] = 1421,
+						[2530] = 1456,
+						[2538] = 1422,
+						["created"] = 1699785772,
+						[3086] = 1418,
+						[2618] = 1432,
+						[1891] = 1417,
+						[3082] = 1441,
+						[1884] = 1447,
+						[2531] = 1443,
+						[1893] = 1431,
 					},
 				},
 				["Feder-Stitches"] = {
@@ -4466,6 +4582,20 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
+				["Venomtoes-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Tuckehh-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -4933,6 +5063,20 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
+				["Shamanconny-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Bonetobewild-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -4967,6 +5111,20 @@ NWBdatabase = {
 					["guild10"] = 1,
 					["guildNpcWalking"] = 1,
 					["updated"] = 1699786033,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Muranjo-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -5032,78 +5190,161 @@ NWBdatabase = {
 					["guild1"] = 1,
 				},
 				["layers"] = {
-					[4045] = {
+					[106] = {
 						["GUID"] = "other",
-						["flower10"] = 0,
-						["flower4"] = 0,
-						["flower6"] = 1699784449,
-						["flower3"] = 0,
-						["nefTimer"] = 0,
-						["created"] = 1699785772,
-						["rend0"] = true,
-						["flower7"] = 0,
-						["onyYell"] = 0,
-						["rend10"] = true,
-						["layerMap"] = {
-							[2917] = 1411,
-							[3248] = 1452,
-							[3075] = 1437,
-							[2918] = 1413,
-							[5678] = 1420,
-							[3257] = 1431,
-							[5679] = 1425,
-							[2919] = 1422,
-							[3250] = 1412,
-							[3258] = 1421,
-							[5681] = 1432,
-							[2920] = 1417,
-							[5682] = 1423,
-							[3259] = 1428,
-							[4047] = 1434,
-							[2921] = 1458,
-							[3071] = 1448,
-							[4048] = 1424,
-							[3072] = 1440,
-							[5671] = 1450,
-							[5672] = 1449,
-							[3069] = 1456,
-							[3073] = 1419,
-							[3251] = 1443,
-							[5673] = 1444,
-							[4051] = 1427,
-							[4050] = 1418,
-							[3070] = 1441,
-							[3247] = 1446,
-							[5674] = 1442,
-							[2916] = 1451,
-							[5680] = 1429,
-							[3249] = 1445,
-							[4043] = 1447,
-							[3260] = 1435,
-						},
-						["onyTimer"] = 0,
-						["rend5"] = true,
-						["rend1"] = true,
+						["flower2"] = 0,
+						["rendYell"] = 0,
+						["flower5"] = 0,
+						["flower8"] = 0,
 						["nefYell"] = 0,
 						["flower1"] = 0,
-						["rendTimer"] = 1699784644,
+						["flower6"] = 0,
+						["rendTimer"] = 0,
+						["flower3"] = 0,
+						["nefTimer"] = 0,
 						["onyNpcDied"] = 0,
-						["rend30"] = true,
-						["lastSeenNPC"] = 1699785569,
+						["created"] = 1700301686,
+						["lastSeenNPC"] = 1700301715,
 						["nefNpcDied"] = 0,
+						["flower10"] = 0,
 						["nefYell2"] = 0,
-						["rend15"] = true,
-						["flower5"] = 0,
-						["rendYell"] = 0,
-						["flower2"] = 0,
+						["flower4"] = 0,
+						["flower7"] = 0,
 						["flower9"] = 0,
+						["onyYell"] = 0,
 						["rendYell2"] = 0,
-						["flower8"] = 0,
 						["onyYell2"] = 0,
+						["layerMap"] = {
+							[118] = 1418,
+							[107] = 1448,
+							[104] = 1424,
+							[108] = 1452,
+							[101] = 1436,
+							[120] = 1411,
+							[109] = 1413,
+							[117] = 1412,
+							[121] = 1456,
+							[102] = 1435,
+							[105] = 1425,
+							[122] = 1449,
+						},
+						["onyTimer"] = 0,
 					},
-					[110] = {
+					[92] = {
 						["GUID"] = "other",
 						["flower2"] = 0,
+						["rendYell"] = 0,
+						["flower5"] = 0,
+						["flower8"] = 0,
+						["nefYell"] = 0,
+						["flower1"] = 0,
+						["flower6"] = 0,
+						["rendTimer"] = 0,
+						["flower3"] = 0,
+						["nefTimer"] = 0,
+						["onyNpcDied"] = 0,
+						["created"] = 1700301686,
+						["lastSeenNPC"] = 1700301915,
+						["nefNpcDied"] = 0,
+						["flower10"] = 0,
+						["nefYell2"] = 0,
+						["flower4"] = 0,
+						["flower7"] = 0,
+						["flower9"] = 0,
+						["onyYell"] = 0,
+						["rendYell2"] = 0,
+						["onyYell2"] = 0,
+						["layerMap"] = {
+							[85] = 1421,
+							[87] = 1428,
+							[89] = 1427,
+							[91] = 1448,
+							[93] = 1445,
+							[70] = 1417,
+							[72] = 1444,
+							[74] = 1431,
+							[76] = 1425,
+							[78] = 1458,
+							[80] = 1451,
+							[84] = 1434,
+							[86] = 1418,
+							[88] = 1422,
+							[90] = 1446,
+							[71] = 1436,
+							[73] = 1450,
+							[75] = 1420,
+							[77] = 1432,
+							[79] = 1411,
+						},
+						["onyTimer"] = 0,
+					},
+					[1818] = {
+						["GUID"] = "other",
+						["flower2"] = 0,
+						["rendYell"] = 0,
+						["flower5"] = 0,
+						["flower8"] = 0,
+						["nefYell"] = 0,
+						["flower1"] = 0,
+						["flower6"] = 0,
+						["rendTimer"] = 0,
+						["flower3"] = 0,
+						["nefTimer"] = 0,
+						["onyNpcDied"] = 0,
+						["created"] = 1700301686,
+						["lastSeenNPC"] = 1700301961,
+						["nefNpcDied"] = 0,
+						["flower10"] = 0,
+						["nefYell2"] = 0,
+						["flower4"] = 0,
+						["flower7"] = 0,
+						["flower9"] = 0,
+						["onyYell"] = 0,
+						["rendYell2"] = 0,
+						["onyYell2"] = 0,
+						["layerMap"] = {
+							[1632] = 1442,
+							[1321] = 1413,
+							[1325] = 1426,
+							[1369] = 1412,
+							[1373] = 1431,
+							[1377] = 1419,
+							[1822] = 1427,
+							[1322] = 1440,
+							[1326] = 1422,
+							[553] = 1452,
+							[557] = 1432,
+							[1374] = 1435,
+							[1819] = 1425,
+							[1319] = 1443,
+							[2016] = 1420,
+							[1375] = 1436,
+							[1367] = 1449,
+							[1817] = 1456,
+							[1816] = 1446,
+							[1820] = 1437,
+							[1320] = 1444,
+							[1634] = 1447,
+							[1635] = 1445,
+							[1637] = 1458,
+							[1638] = 1423,
+							[552] = 1441,
+							[554] = 1428,
+							[556] = 1421,
+							[1636] = 1417,
+							[2013] = 1411,
+							[2014] = 1451,
+							[2015] = 1424,
+							[1368] = 1448,
+							[1821] = 1418,
+							[1376] = 1434,
+							[2012] = 1450,
+						},
+						["onyTimer"] = 0,
+					},
+					[125] = {
+						["GUID"] = "other",
+						["flower2"] = 1700300669,
 						["rendYell"] = 0,
 						["flower10"] = 0,
 						["nefYell"] = 0,
@@ -5111,313 +5352,36 @@ NWBdatabase = {
 						["flower6"] = 0,
 						["rendTimer"] = 0,
 						["flower3"] = 0,
-						["rendYell2"] = 0,
+						["nefTimer"] = 0,
 						["onyNpcDied"] = 0,
-						["created"] = 1699785772,
-						["flower8"] = 0,
-						["onyYell2"] = 0,
+						["created"] = 1700301686,
+						["lastSeenNPC"] = 1700301769,
+						["nefNpcDied"] = 0,
 						["flower4"] = 0,
 						["nefYell2"] = 0,
-						["nefTimer"] = 0,
-						["flower9"] = 0,
-						["flower7"] = 0,
-						["lastSeenNPC"] = 1699785449,
-						["onyYell"] = 0,
-						["nefNpcDied"] = 0,
-						["flower5"] = 0,
-						["layerMap"] = {
-							[103] = 1429,
-							[131] = 1439,
-							[115] = 1411,
-							[104] = 1458,
-							[108] = 1423,
-							[112] = 1442,
-							[105] = 1443,
-							[120] = 1412,
-							[109] = 1424,
-							[130] = 1456,
-							[106] = 1425,
-							[129] = 1447,
-							[95] = 1448,
-							[99] = 1450,
-							[107] = 1413,
-						},
-						["onyTimer"] = 0,
-					},
-					[119] = {
-						["GUID"] = "other",
-						["flower2"] = 0,
-						["rendYell"] = 0,
-						["flower10"] = 0,
-						["nefYell"] = 0,
-						["flower1"] = 0,
-						["flower6"] = 0,
-						["rendTimer"] = 0,
-						["flower3"] = 0,
 						["rendYell2"] = 0,
-						["onyNpcDied"] = 0,
-						["created"] = 1699785772,
-						["flower8"] = 0,
-						["onyYell2"] = 0,
-						["flower4"] = 0,
-						["nefYell2"] = 0,
-						["nefTimer"] = 0,
 						["flower9"] = 0,
-						["flower7"] = 0,
-						["lastSeenNPC"] = 1699785393,
-						["onyYell"] = 0,
-						["nefNpcDied"] = 0,
 						["flower5"] = 0,
-						["layerMap"] = {
-							[139] = 1420,
-							[143] = 1422,
-							[147] = 1442,
-							[124] = 1444,
-							[126] = 1456,
-							[140] = 1445,
-							[148] = 1413,
-							[117] = 1446,
-							[141] = 1425,
-							[145] = 1417,
-							[123] = 1437,
-							[125] = 1447,
-							[138] = 1448,
-							[146] = 1458,
-							[137] = 1449,
-							[122] = 1418,
-							[121] = 1411,
-						},
-						["onyTimer"] = 0,
-					},
-					[114] = {
-						["GUID"] = "other",
-						["flower2"] = 0,
-						["rendYell"] = 0,
-						["flower6"] = 0,
-						["flower9"] = 0,
-						["nefTimer"] = 0,
-						["created"] = 1699785772,
-						["rend0"] = true,
-						["flower7"] = 0,
+						["flower8"] = 0,
 						["onyYell"] = 0,
-						["rend10"] = true,
+						["onyYell2"] = 0,
+						["flower7"] = 0,
 						["layerMap"] = {
-							[116] = 1413,
-							[91] = 1420,
-							[93] = 1425,
-							[97] = 1449,
-							[101] = 1451,
-							[144] = 1429,
-							[111] = 1418,
-							[113] = 1456,
-							[92] = 1431,
-							[94] = 1422,
-							[96] = 1428,
-							[98] = 1411,
-							[100] = 1412,
-							[102] = 1442,
-							[128] = 1421,
+							[132] = 1451,
+							[126] = 1444,
+							[115] = 1441,
+							[119] = 1434,
+							[123] = 1442,
 							[127] = 1435,
-						},
-						["onyTimer"] = 0,
-						["rend5"] = true,
-						["rend1"] = true,
-						["nefYell"] = 0,
-						["flower1"] = 0,
-						["rendTimer"] = 1699784642,
-						["onyNpcDied"] = 0,
-						["rend30"] = true,
-						["flower8"] = 0,
-						["onyYell2"] = 0,
-						["nefYell2"] = 0,
-						["rend15"] = true,
-						["flower5"] = 0,
-						["flower4"] = 0,
-						["flower10"] = 0,
-						["flower3"] = 0,
-						["rendYell2"] = 0,
-						["lastSeenNPC"] = 1699786029,
-						["nefNpcDied"] = 0,
-					},
-					[953] = {
-						["GUID"] = "other",
-						["flower2"] = 0,
-						["rendYell"] = 1699784637,
-						["flower6"] = 0,
-						["flower9"] = 0,
-						["rendYell2"] = 0,
-						["created"] = 1699785772,
-						["rend30"] = true,
-						["flower7"] = 0,
-						["onyYell"] = 0,
-						["rend10"] = true,
-						["layerMap"] = {
-							[1015] = 1425,
-							[1017] = 1421,
-							[956] = 1440,
-							[1023] = 1436,
-							[962] = 1420,
-							[964] = 1428,
-							[966] = 1435,
-							[968] = 1433,
-							[970] = 1451,
-							[1117] = 1413,
-							[980] = 1441,
-							[982] = 1456,
-							[984] = 1448,
-							[986] = 1427,
-							[1014] = 1434,
-							[1016] = 1418,
-							[955] = 1452,
-							[1020] = 1423,
-							[1022] = 1411,
-							[1024] = 1445,
-							[963] = 1449,
-							[965] = 1450,
-							[967] = 1444,
-							[969] = 1447,
-							[979] = 1431,
-							[981] = 1424,
-							[985] = 1426,
-							[1019] = 1446,
-							[1018] = 1432,
-							[952] = 1417,
-							[951] = 1442,
-							[954] = 1458,
-						},
-						["onyTimer"] = 0,
-						["rend5"] = true,
-						["rend1"] = true,
-						["nefYell"] = 0,
-						["flower1"] = 0,
-						["rendTimer"] = 1699784643,
-						["onyNpcDied"] = 0,
-						["lastSeenNPC"] = 1699785745,
-						["flower8"] = 0,
-						["nefNpcDied"] = 0,
-						["nefYell2"] = 0,
-						["flower10"] = 0,
-						["flower5"] = 0,
-						["flower4"] = 0,
-						["rend15"] = true,
-						["nefTimer"] = 0,
-						["flower3"] = 0,
-						["rend0"] = true,
-						["onyYell2"] = 0,
-					},
-					[899] = {
-						["GUID"] = "other",
-						["flower2"] = 0,
-						["rendYell"] = 0,
-						["flower10"] = 0,
-						["nefYell"] = 0,
-						["flower1"] = 0,
-						["flower6"] = 0,
-						["rendTimer"] = 0,
-						["flower3"] = 0,
-						["rendYell2"] = 0,
-						["onyNpcDied"] = 0,
-						["created"] = 1699785772,
-						["flower8"] = 0,
-						["onyYell2"] = 0,
-						["flower4"] = 0,
-						["nefYell2"] = 0,
-						["nefTimer"] = 0,
-						["flower9"] = 0,
-						["flower7"] = 0,
-						["lastSeenNPC"] = 1699785969,
-						["onyYell"] = 0,
-						["nefNpcDied"] = 0,
-						["flower5"] = 0,
-						["layerMap"] = {
-							[895] = 1449,
-							[942] = 1434,
-							[896] = 1428,
-							[943] = 1421,
-							[897] = 1450,
-							[1006] = 1441,
-							[898] = 1417,
-							[1007] = 1424,
-							[1008] = 1456,
-							[900] = 1436,
-							[947] = 1448,
-							[948] = 1458,
-							[949] = 1411,
-							[1012] = 1442,
-							[1013] = 1445,
-							[1009] = 1435,
-							[1011] = 1427,
-							[1005] = 1431,
-							[1010] = 1444,
-							[944] = 1418,
-							[894] = 1420,
-							[950] = 1440,
-							[945] = 1446,
-						},
-						["onyTimer"] = 0,
-					},
-					[1868] = {
-						["GUID"] = "other",
-						["flower2"] = 0,
-						["rendYell"] = 0,
-						["flower10"] = 0,
-						["nefYell"] = 0,
-						["flower1"] = 0,
-						["flower6"] = 1699784981,
-						["rendTimer"] = 0,
-						["flower3"] = 0,
-						["rendYell2"] = 0,
-						["onyNpcDied"] = 0,
-						["created"] = 1699785772,
-						["flower8"] = 0,
-						["onyYell2"] = 0,
-						["flower4"] = 0,
-						["nefYell2"] = 0,
-						["nefTimer"] = 0,
-						["flower9"] = 0,
-						["flower7"] = 0,
-						["lastSeenNPC"] = 1699785682,
-						["onyYell"] = 0,
-						["nefNpcDied"] = 0,
-						["flower5"] = 0,
-						["layerMap"] = {
-							[2539] = 1419,
-							[1888] = 1445,
-							[1892] = 1424,
-							[3083] = 1448,
-							[2532] = 1444,
-							[2540] = 1423,
-							[2619] = 1428,
-							[1869] = 1451,
-							[3084] = 1412,
-							[2533] = 1440,
-							[1885] = 1450,
-							[2620] = 1420,
-							[3085] = 1426,
-							[2613] = 1446,
-							[2621] = 1458,
-							[1866] = 1442,
-							[1874] = 1434,
-							[2535] = 1437,
-							[1886] = 1413,
-							[2614] = 1449,
-							[2622] = 1427,
-							[2536] = 1435,
-							[2615] = 1452,
-							[1871] = 1429,
-							[1875] = 1436,
-							[2537] = 1425,
-							[2616] = 1411,
-							[1895] = 1421,
-							[2530] = 1456,
-							[2538] = 1422,
-							[3086] = 1418,
-							[2618] = 1432,
-							[1891] = 1417,
-							[3082] = 1441,
-							[1884] = 1447,
-							[2531] = 1443,
-							[1893] = 1431,
+							[116] = 1449,
+							[114] = 1456,
+							[124] = 1443,
+							[128] = 1424,
+							[135] = 1413,
+							[129] = 1458,
+							[110] = 1420,
+							[130] = 1423,
+							[113] = 1448,
 						},
 						["onyTimer"] = 0,
 					},
@@ -5473,6 +5437,20 @@ NWBdatabase = {
 					["guild10"] = 1,
 					["guildNpcWalking"] = 1,
 					["updated"] = 1699093145,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Sgox-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -6214,7 +6192,7 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["lastSyncBy"] = "Prelia-Stitches",
+				["lastSyncBy"] = "Dexxia-Stitches",
 				["Beefychicken-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -6342,11 +6320,67 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
+				["Cnex-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302007,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Longin-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700301968,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Akurei-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
 					["updated"] = 1699124543,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Krypskyttern-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1699127841,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Isein-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -6384,11 +6418,81 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
+				["Hotorc-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Magicaz-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Niekis-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Holylerk-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Skerra-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
 					["updated"] = 1699272471,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Pyttesmall-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -6440,6 +6544,20 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
+				["Drburst-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
 				["Chambless-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -6467,6 +6585,20 @@ NWBdatabase = {
 					["guildZanDialogue"] = 1,
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
+				},
+				["Munkesh-Stitches"] = {
+					["guildCommand"] = 0,
+					["guildBuffDropped"] = 0,
+					["guild10"] = 0,
+					["updated"] = 1700302008,
+					["guildNpcWalking"] = 0,
+					["guildNpcKilled"] = 0,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 0,
+					["guildNpcDialogue"] = 0,
+					["guild1"] = 0,
 				},
 				["Kazooya-Stitches"] = {
 					["guildCommand"] = 1,
@@ -6720,20 +6852,6 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Nosheet-Stitches"] = {
-					["guildCommand"] = 1,
-					["guildBuffDropped"] = 1,
-					["guild10"] = 1,
-					["guildNpcWalking"] = 1,
-					["updated"] = 1699267306,
-					["guildNpcKilled"] = 1,
-					["guildSongflower"] = 1,
-					["guildTerok10"] = 1,
-					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 1,
-					["guildNpcDialogue"] = 1,
-					["guild1"] = 1,
-				},
 				["Popblob-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -6742,6 +6860,20 @@ NWBdatabase = {
 					["updated"] = 1699786033,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Nosheet-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["guildNpcWalking"] = 1,
+					["updated"] = 1699267306,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 1,
 					["guildTerok10"] = 1,
 					["disableAllGuildMsgs"] = 0,
 					["guildZanDialogue"] = 1,
@@ -7198,7 +7330,7 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
-				["Twitched-Stitches"] = {
+				["Workzar-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
@@ -7226,12 +7358,12 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Workzar-Stitches"] = {
+				["Caturix-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1699272471,
 					["guildNpcWalking"] = 1,
+					["updated"] = 1699785807,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -7282,20 +7414,6 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
-				["Caturix-Stitches"] = {
-					["guildCommand"] = 1,
-					["guildBuffDropped"] = 1,
-					["guild10"] = 1,
-					["guildNpcWalking"] = 1,
-					["updated"] = 1699785807,
-					["guildNpcKilled"] = 1,
-					["guildSongflower"] = 0,
-					["guildTerok10"] = 1,
-					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 1,
-					["guildNpcDialogue"] = 1,
-					["guild1"] = 1,
-				},
 				["Khaap-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -7329,6 +7447,20 @@ NWBdatabase = {
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
 					["updated"] = 1698743778,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Twitched-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1699272471,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -7482,7 +7614,7 @@ NWBdatabase = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1699131903,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -7547,7 +7679,7 @@ NWBdatabase = {
 						["g"] = "Player-5220-01B88C4B",
 						["durabilityAverage"] = 100,
 						["race"] = "Troll",
-						["gold"] = 1422760,
+						["gold"] = 1505626,
 						["17058"] = 0,
 						["level"] = 1,
 						["chronoCount"] = 0,
@@ -7601,7 +7733,7 @@ NWBdatabase = {
 								["type"] = "rend",
 								["setTime"] = 1698742832,
 								["playedCacheSetAt"] = 115795,
-								["timeLeft"] = -829,
+								["timeLeft"] = -943,
 							},
 						},
 						["guildRankName"] = "Initiate",
@@ -7740,40 +7872,12 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Dallium-Stitches"] = {
-					["guildCommand"] = 1,
-					["guildBuffDropped"] = 1,
-					["guild10"] = 1,
-					["guildNpcWalking"] = 1,
-					["updated"] = 1699786033,
-					["guildNpcKilled"] = 1,
-					["guildSongflower"] = 0,
-					["guildTerok10"] = 1,
-					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 1,
-					["guildNpcDialogue"] = 1,
-					["guild1"] = 1,
-				},
 				["Cammiport-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
 					["guildNpcWalking"] = 1,
 					["updated"] = 1699267016,
-					["guildNpcKilled"] = 1,
-					["guildSongflower"] = 0,
-					["guildTerok10"] = 1,
-					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 1,
-					["guildNpcDialogue"] = 1,
-					["guild1"] = 1,
-				},
-				["Beefuu-Stitches"] = {
-					["guildCommand"] = 1,
-					["guildBuffDropped"] = 1,
-					["guild10"] = 1,
-					["guildNpcWalking"] = 1,
-					["updated"] = 1699786033,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -7796,12 +7900,12 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Octaman-Stitches"] = {
+				["Beefuu-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1699272471,
 					["guildNpcWalking"] = 1,
+					["updated"] = 1699786033,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -7838,6 +7942,20 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
+				["Jtankpas-Stitches"] = {
+					["guildCommand"] = 0,
+					["guildBuffDropped"] = 0,
+					["guild10"] = 0,
+					["updated"] = 1699127841,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 0,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 0,
+					["guildNpcDialogue"] = 0,
+					["guild1"] = 0,
+				},
 				["Hakori-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -7852,19 +7970,33 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Jtankpas-Stitches"] = {
-					["guildCommand"] = 0,
-					["guildBuffDropped"] = 0,
-					["guild10"] = 0,
-					["updated"] = 1699127841,
+				["Dallium-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
 					["guildNpcWalking"] = 1,
-					["guildNpcKilled"] = 0,
+					["updated"] = 1699786033,
+					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
 					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 0,
-					["guildNpcDialogue"] = 0,
-					["guild1"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Wolfbeast-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1699125321,
+					["guildNpcWalking"] = 1,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
 				},
 				["Domiino-Stitches"] = {
 					["guildCommand"] = 1,
@@ -7894,11 +8026,11 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
-				["Zirline-Stitches"] = {
+				["Broraccoon-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1698743778,
+					["updated"] = 1699127842,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -7922,25 +8054,11 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Illmage-Stitches"] = {
+				["Octaman-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1698743778,
-					["guildNpcWalking"] = 1,
-					["guildNpcKilled"] = 1,
-					["guildSongflower"] = 0,
-					["guildTerok10"] = 1,
-					["disableAllGuildMsgs"] = 0,
-					["guildZanDialogue"] = 1,
-					["guildNpcDialogue"] = 1,
-					["guild1"] = 1,
-				},
-				["Broraccoon-Stitches"] = {
-					["guildCommand"] = 1,
-					["guildBuffDropped"] = 1,
-					["guild10"] = 1,
-					["updated"] = 1699127842,
+					["updated"] = 1699272471,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -7956,6 +8074,20 @@ NWBdatabase = {
 					["guild10"] = 1,
 					["guildNpcWalking"] = 1,
 					["updated"] = 1699174653,
+					["guildNpcKilled"] = 1,
+					["guildSongflower"] = 0,
+					["guildTerok10"] = 1,
+					["disableAllGuildMsgs"] = 0,
+					["guildZanDialogue"] = 1,
+					["guildNpcDialogue"] = 1,
+					["guild1"] = 1,
+				},
+				["Zirline-Stitches"] = {
+					["guildCommand"] = 1,
+					["guildBuffDropped"] = 1,
+					["guild10"] = 1,
+					["updated"] = 1698743778,
+					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
 					["guildTerok10"] = 1,
@@ -8766,11 +8898,11 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Wolfbeast-Stitches"] = {
+				["Illmage-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1699125321,
+					["updated"] = 1698743778,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -9009,1099 +9141,1112 @@ NWBdatabase = {
 				["flower7"] = 0,
 				["timerLog"] = {
 					{
+						["layerNum"] = 1,
+						["type"] = "r",
+						["timestamp"] = 1700246814,
+						["layerID"] = 92,
+					}, -- [1]
+					{
+						["layerNum"] = 2,
+						["type"] = "r",
+						["timestamp"] = 1700246814,
+						["layerID"] = 106,
+					}, -- [2]
+					{
+						["layerNum"] = 4,
+						["type"] = "r",
+						["timestamp"] = 1700246813,
+						["layerID"] = 1818,
+					}, -- [3]
+					{
+						["layerNum"] = 3,
+						["type"] = "r",
+						["timestamp"] = 1700246812,
+						["layerID"] = 125,
+					}, -- [4]
+					{
+						["layerNum"] = 3,
+						["type"] = "q",
+						["who"] = "Tamdamage",
+						["timestamp"] = 1700246808,
+						["layerID"] = 125,
+					}, -- [5]
+					{
+						["layerNum"] = 1,
+						["type"] = "r",
+						["timestamp"] = 1700236112,
+						["layerID"] = 92,
+					}, -- [6]
+					{
+						["layerNum"] = 3,
+						["type"] = "r",
+						["timestamp"] = 1700236112,
+						["layerID"] = 125,
+					}, -- [7]
+					{
+						["layerNum"] = 2,
+						["type"] = "r",
+						["timestamp"] = 1700236110,
+						["layerID"] = 106,
+					}, -- [8]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700267719,
+						["layerID"] = 125,
+					}, -- [9]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700267719,
+						["layerID"] = 92,
+					}, -- [10]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700267719,
+						["layerID"] = 106,
+					}, -- [11]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700267718,
+						["layerID"] = 1818,
+					}, -- [12]
+					{
+						["type"] = "q",
+						["who"] = "Kugsi",
+						["timestamp"] = 1700267712,
+						["layerID"] = 1818,
+					}, -- [13]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700255527,
+						["layerID"] = 106,
+					}, -- [14]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700255527,
+						["layerID"] = 1818,
+					}, -- [15]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700255527,
+						["layerID"] = 92,
+					}, -- [16]
+					{
+						["type"] = "r",
+						["timestamp"] = 1700255526,
+						["layerID"] = 125,
+					}, -- [17]
+					{
 						["type"] = "r",
 						["timestamp"] = 1699735356,
 						["layerID"] = 4045,
-					}, -- [1]
+					}, -- [18]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735356,
 						["layerID"] = 1868,
-					}, -- [2]
+					}, -- [19]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735356,
 						["layerID"] = 119,
-					}, -- [3]
+					}, -- [20]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735355,
 						["layerID"] = 953,
-					}, -- [4]
+					}, -- [21]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735355,
 						["layerID"] = 899,
-					}, -- [5]
+					}, -- [22]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735355,
 						["layerID"] = 110,
-					}, -- [6]
+					}, -- [23]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699735354,
 						["layerID"] = 114,
-					}, -- [7]
+					}, -- [24]
 					{
-						["type"] = "q",
 						["who"] = "Sixshooter",
+						["type"] = "q",
 						["timestamp"] = 1699735348,
 						["layerID"] = 114,
-					}, -- [8]
+					}, -- [25]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699751113,
 						["layerID"] = 114,
-					}, -- [9]
+					}, -- [26]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 953,
-					}, -- [10]
+					}, -- [27]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 1868,
-					}, -- [11]
+					}, -- [28]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 899,
-					}, -- [12]
+					}, -- [29]
 					{
 						["layerNum"] = 3,
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 119,
-					}, -- [13]
+					}, -- [30]
 					{
 						["layerNum"] = 1,
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 110,
-					}, -- [14]
+					}, -- [31]
 					{
 						["layerNum"] = 7,
 						["type"] = "r",
 						["timestamp"] = 1699751112,
 						["layerID"] = 4045,
-					}, -- [15]
+					}, -- [32]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784644,
 						["layerID"] = 119,
-					}, -- [16]
+					}, -- [33]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784643,
 						["layerID"] = 110,
-					}, -- [17]
+					}, -- [34]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784643,
 						["layerID"] = 899,
-					}, -- [18]
+					}, -- [35]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784643,
 						["layerID"] = 1868,
-					}, -- [19]
+					}, -- [36]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784643,
 						["layerID"] = 4045,
-					}, -- [20]
+					}, -- [37]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784642,
 						["layerID"] = 114,
-					}, -- [21]
+					}, -- [38]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699784643,
 						["layerID"] = 953,
-					}, -- [22]
+					}, -- [39]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271823,
 						["layerID"] = 160,
-					}, -- [23]
+					}, -- [40]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271824,
 						["layerID"] = 1683,
-					}, -- [24]
+					}, -- [41]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271822,
 						["layerID"] = 82,
-					}, -- [25]
+					}, -- [42]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271822,
 						["layerID"] = 1626,
-					}, -- [26]
+					}, -- [43]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271823,
 						["layerID"] = 145,
-					}, -- [27]
+					}, -- [44]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271823,
 						["layerID"] = 374,
-					}, -- [28]
+					}, -- [45]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271824,
 						["layerID"] = 3805,
-					}, -- [29]
+					}, -- [46]
 					{
 						["layerID"] = 3805,
 						["type"] = "q",
 						["timestamp"] = 1699271817,
 						["who"] = "Clandestine",
-					}, -- [30]
+					}, -- [47]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699271823,
 						["layerID"] = 10747,
-					}, -- [31]
+					}, -- [48]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197763,
 						["layerID"] = 3805,
-					}, -- [32]
+					}, -- [49]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197763,
 						["layerID"] = 1683,
-					}, -- [33]
+					}, -- [50]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197762,
 						["layerID"] = 374,
-					}, -- [34]
+					}, -- [51]
 					{
 						["who"] = "Thatpope",
 						["type"] = "q",
 						["timestamp"] = 1699197756,
 						["layerID"] = 3805,
-					}, -- [35]
+					}, -- [52]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210787,
 						["layerID"] = 3805,
-					}, -- [36]
+					}, -- [53]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216093,
 						["layerID"] = 3805,
-					}, -- [37]
+					}, -- [54]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216092,
 						["layerID"] = 82,
-					}, -- [38]
+					}, -- [55]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216092,
 						["layerID"] = 145,
-					}, -- [39]
+					}, -- [56]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216092,
 						["layerID"] = 10747,
-					}, -- [40]
+					}, -- [57]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216092,
 						["layerID"] = 1683,
-					}, -- [41]
+					}, -- [58]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216092,
 						["layerID"] = 1626,
-					}, -- [42]
+					}, -- [59]
 					{
 						["layerID"] = 82,
 						["type"] = "q",
 						["timestamp"] = 1699216085,
 						["who"] = "Виндфюрер",
-					}, -- [43]
+					}, -- [60]
 					{
 						["layerNum"] = 4,
 						["type"] = "r",
 						["timestamp"] = 1699216091,
 						["layerID"] = 374,
-					}, -- [44]
+					}, -- [61]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699216091,
 						["layerID"] = 160,
-					}, -- [45]
+					}, -- [62]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197764,
 						["layerID"] = 160,
-					}, -- [46]
+					}, -- [63]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197763,
 						["layerID"] = 82,
-					}, -- [47]
+					}, -- [64]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197763,
 						["layerID"] = 1626,
-					}, -- [48]
+					}, -- [65]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699197763,
 						["layerID"] = 145,
-					}, -- [49]
+					}, -- [66]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193193,
 						["layerID"] = 160,
-					}, -- [50]
+					}, -- [67]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193192,
 						["layerID"] = 145,
-					}, -- [51]
+					}, -- [68]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193191,
 						["layerID"] = 374,
-					}, -- [52]
+					}, -- [69]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193191,
 						["layerID"] = 82,
-					}, -- [53]
+					}, -- [70]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193191,
 						["layerID"] = 1683,
-					}, -- [54]
+					}, -- [71]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193190,
 						["layerID"] = 1626,
-					}, -- [55]
+					}, -- [72]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699193190,
 						["layerID"] = 3805,
-					}, -- [56]
+					}, -- [73]
 					{
 						["layerID"] = 1626,
 						["type"] = "q",
 						["timestamp"] = 1699193185,
 						["who"] = "Undeadlerk",
-					}, -- [57]
+					}, -- [74]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210788,
 						["layerID"] = 1626,
-					}, -- [58]
+					}, -- [75]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210788,
 						["layerID"] = 374,
-					}, -- [59]
+					}, -- [76]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210787,
 						["layerID"] = 10747,
-					}, -- [60]
+					}, -- [77]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210787,
 						["layerID"] = 1683,
-					}, -- [61]
+					}, -- [78]
 					{
 						["layerNum"] = 1,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 82,
-					}, -- [62]
+					}, -- [79]
 					{
 						["layerNum"] = 8,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 10747,
-					}, -- [63]
+					}, -- [80]
 					{
 						["layerNum"] = 7,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 3805,
-					}, -- [64]
+					}, -- [81]
 					{
 						["layerNum"] = 6,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 1683,
-					}, -- [65]
+					}, -- [82]
 					{
 						["layerNum"] = 3,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 160,
-					}, -- [66]
+					}, -- [83]
 					{
 						["layerNum"] = 2,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 145,
-					}, -- [67]
+					}, -- [84]
 					{
 						["layerNum"] = 5,
 						["type"] = "r",
 						["timestamp"] = 1699221178,
 						["layerID"] = 1626,
-					}, -- [68]
+					}, -- [85]
 					{
 						["layerNum"] = 4,
 						["type"] = "r",
 						["timestamp"] = 1699221177,
 						["layerID"] = 374,
-					}, -- [69]
+					}, -- [86]
 					{
 						["layerNum"] = 6,
 						["type"] = "r",
 						["timestamp"] = 1699204978,
 						["layerID"] = 1683,
-					}, -- [70]
+					}, -- [87]
 					{
 						["layerNum"] = 1,
 						["type"] = "r",
 						["timestamp"] = 1699204978,
 						["layerID"] = 82,
-					}, -- [71]
+					}, -- [88]
 					{
 						["layerNum"] = 3,
 						["type"] = "r",
 						["timestamp"] = 1699204977,
 						["layerID"] = 160,
-					}, -- [72]
+					}, -- [89]
 					{
 						["layerNum"] = 7,
 						["type"] = "r",
 						["timestamp"] = 1699204977,
 						["layerID"] = 3805,
-					}, -- [73]
+					}, -- [90]
 					{
 						["layerNum"] = 2,
 						["type"] = "r",
 						["timestamp"] = 1699204977,
 						["layerID"] = 145,
-					}, -- [74]
+					}, -- [91]
 					{
 						["layerNum"] = 5,
 						["type"] = "r",
 						["timestamp"] = 1699204977,
 						["layerID"] = 1626,
-					}, -- [75]
+					}, -- [92]
 					{
 						["layerNum"] = 4,
 						["type"] = "r",
 						["timestamp"] = 1699204976,
 						["layerID"] = 374,
-					}, -- [76]
+					}, -- [93]
 					{
 						["layerNum"] = 8,
 						["type"] = "r",
 						["timestamp"] = 1699225214,
 						["layerID"] = 10747,
-					}, -- [77]
+					}, -- [94]
 					{
 						["layerNum"] = 5,
 						["type"] = "r",
 						["timestamp"] = 1699225214,
 						["layerID"] = 1626,
-					}, -- [78]
+					}, -- [95]
 					{
 						["layerNum"] = 1,
 						["type"] = "r",
 						["timestamp"] = 1699225214,
 						["layerID"] = 82,
-					}, -- [79]
+					}, -- [96]
 					{
 						["layerNum"] = 3,
 						["type"] = "r",
 						["timestamp"] = 1699225214,
 						["layerID"] = 160,
-					}, -- [80]
+					}, -- [97]
 					{
 						["layerNum"] = 6,
 						["type"] = "r",
 						["timestamp"] = 1699225213,
 						["layerID"] = 1683,
-					}, -- [81]
+					}, -- [98]
 					{
 						["layerNum"] = 4,
 						["type"] = "r",
 						["timestamp"] = 1699225213,
 						["layerID"] = 374,
-					}, -- [82]
+					}, -- [99]
 					{
 						["layerNum"] = 2,
 						["type"] = "r",
 						["timestamp"] = 1699225213,
 						["layerID"] = 145,
-					}, -- [83]
+					}, -- [100]
 					{
 						["layerNum"] = 7,
 						["type"] = "r",
 						["timestamp"] = 1699225213,
 						["layerID"] = 3805,
-					}, -- [84]
+					}, -- [101]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210788,
 						["layerID"] = 160,
-					}, -- [85]
+					}, -- [102]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210788,
 						["layerID"] = 82,
-					}, -- [86]
+					}, -- [103]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699210787,
 						["layerID"] = 145,
-					}, -- [87]
+					}, -- [104]
 					{
 						["who"] = "Nhexx",
 						["type"] = "q",
 						["timestamp"] = 1699210781,
 						["layerID"] = 10747,
-					}, -- [88]
+					}, -- [105]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 160,
-					}, -- [89]
+					}, -- [106]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 1626,
-					}, -- [90]
+					}, -- [107]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 82,
-					}, -- [91]
+					}, -- [108]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 374,
-					}, -- [92]
+					}, -- [109]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 3805,
-					}, -- [93]
+					}, -- [110]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209774,
 						["layerID"] = 10747,
-					}, -- [94]
+					}, -- [111]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209773,
 						["layerID"] = 1683,
-					}, -- [95]
+					}, -- [112]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699209772,
 						["layerID"] = 145,
-					}, -- [96]
+					}, -- [113]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699136376,
 						["layerID"] = 374,
-					}, -- [97]
+					}, -- [114]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699136375,
 						["layerID"] = 160,
-					}, -- [98]
+					}, -- [115]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699136375,
 						["layerID"] = 1683,
-					}, -- [99]
+					}, -- [116]
 					{
 						["who"] = "Nullet",
 						["type"] = "q",
 						["timestamp"] = 1699136369,
 						["layerID"] = 160,
-					}, -- [100]
+					}, -- [117]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140681,
 						["layerID"] = 1683,
-					}, -- [101]
+					}, -- [118]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140680,
 						["layerID"] = 1626,
-					}, -- [102]
+					}, -- [119]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140680,
 						["layerID"] = 3805,
-					}, -- [103]
+					}, -- [120]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140680,
 						["layerID"] = 145,
-					}, -- [104]
+					}, -- [121]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140680,
 						["layerID"] = 374,
-					}, -- [105]
+					}, -- [122]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140680,
 						["layerID"] = 82,
-					}, -- [106]
+					}, -- [123]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699140679,
 						["layerID"] = 160,
-					}, -- [107]
+					}, -- [124]
 					{
 						["who"] = "Duat",
 						["type"] = "q",
 						["timestamp"] = 1699140674,
 						["layerID"] = 374,
-					}, -- [108]
+					}, -- [125]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149837,
 						["layerID"] = 145,
-					}, -- [109]
+					}, -- [126]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149837,
 						["layerID"] = 3805,
-					}, -- [110]
+					}, -- [127]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149836,
 						["layerID"] = 82,
-					}, -- [111]
+					}, -- [128]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149838,
 						["layerID"] = 1626,
-					}, -- [112]
+					}, -- [129]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149837,
 						["layerID"] = 160,
-					}, -- [113]
+					}, -- [130]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149837,
 						["layerID"] = 374,
-					}, -- [114]
+					}, -- [131]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699149837,
 						["layerID"] = 1683,
-					}, -- [115]
+					}, -- [132]
 					{
 						["layerID"] = 1683,
 						["type"] = "q",
 						["timestamp"] = 1699149830,
 						["who"] = "Critality",
-					}, -- [116]
+					}, -- [133]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146075,
 						["layerID"] = 1683,
-					}, -- [117]
+					}, -- [134]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146075,
 						["layerID"] = 374,
-					}, -- [118]
+					}, -- [135]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146075,
 						["layerID"] = 3805,
-					}, -- [119]
+					}, -- [136]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146075,
 						["layerID"] = 145,
-					}, -- [120]
+					}, -- [137]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146073,
 						["layerID"] = 1626,
-					}, -- [121]
+					}, -- [138]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146074,
 						["layerID"] = 160,
-					}, -- [122]
+					}, -- [139]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699146074,
 						["layerID"] = 82,
-					}, -- [123]
+					}, -- [140]
 					{
 						["layerID"] = 1626,
 						["type"] = "q",
 						["timestamp"] = 1699146068,
 						["who"] = "Paulikka",
-					}, -- [124]
+					}, -- [141]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135242,
 						["layerID"] = 1626,
-					}, -- [125]
+					}, -- [142]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135242,
 						["layerID"] = 160,
-					}, -- [126]
+					}, -- [143]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135242,
 						["layerID"] = 145,
-					}, -- [127]
+					}, -- [144]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135241,
 						["layerID"] = 374,
-					}, -- [128]
+					}, -- [145]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135241,
 						["layerID"] = 82,
-					}, -- [129]
+					}, -- [146]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135241,
 						["layerID"] = 1683,
-					}, -- [130]
+					}, -- [147]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699135241,
 						["layerID"] = 3805,
-					}, -- [131]
+					}, -- [148]
 					{
 						["layerID"] = 1626,
 						["type"] = "q",
 						["timestamp"] = 1699135235,
 						["who"] = "Skadad",
-					}, -- [132]
+					}, -- [149]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699136376,
 						["layerID"] = 1626,
-					}, -- [133]
+					}, -- [150]
 					{
 						["layerNum"] = 2,
 						["type"] = "r",
 						["timestamp"] = 1699136376,
 						["layerID"] = 145,
-					}, -- [134]
+					}, -- [151]
 					{
 						["layerNum"] = 1,
 						["type"] = "r",
 						["timestamp"] = 1699136376,
 						["layerID"] = 82,
-					}, -- [135]
+					}, -- [152]
 					{
 						["layerNum"] = 7,
 						["type"] = "r",
 						["timestamp"] = 1699136376,
 						["layerID"] = 3805,
-					}, -- [136]
+					}, -- [153]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128817,
 						["layerID"] = 145,
-					}, -- [137]
+					}, -- [154]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128816,
 						["layerID"] = 160,
-					}, -- [138]
+					}, -- [155]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128816,
 						["layerID"] = 3805,
-					}, -- [139]
+					}, -- [156]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128816,
 						["layerID"] = 374,
-					}, -- [140]
+					}, -- [157]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128815,
 						["layerID"] = 1626,
-					}, -- [141]
+					}, -- [158]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128815,
 						["layerID"] = 82,
-					}, -- [142]
+					}, -- [159]
 					{
 						["layerID"] = 1683,
 						["type"] = "q",
 						["timestamp"] = 1699128808,
 						["who"] = "Sömndrucken",
-					}, -- [143]
+					}, -- [160]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699128816,
 						["layerID"] = 1683,
-					}, -- [144]
+					}, -- [161]
 					{
 						["layerID"] = 160,
 						["type"] = "q",
 						["timestamp"] = 1699124426,
 						["who"] = "Franchesca",
-					}, -- [145]
+					}, -- [162]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124433,
 						["layerID"] = 82,
-					}, -- [146]
+					}, -- [163]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124433,
 						["layerID"] = 1626,
-					}, -- [147]
+					}, -- [164]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124433,
 						["layerID"] = 3805,
-					}, -- [148]
+					}, -- [165]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124433,
 						["layerID"] = 374,
-					}, -- [149]
+					}, -- [166]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124432,
 						["layerID"] = 1683,
-					}, -- [150]
+					}, -- [167]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124433,
 						["layerID"] = 160,
-					}, -- [151]
+					}, -- [168]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699124432,
 						["layerID"] = 145,
-					}, -- [152]
+					}, -- [169]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122552,
 						["layerID"] = 82,
-					}, -- [153]
+					}, -- [170]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122551,
 						["layerID"] = 1683,
-					}, -- [154]
+					}, -- [171]
 					{
 						["who"] = "Pjr",
 						["type"] = "q",
 						["timestamp"] = 1699122546,
 						["layerID"] = 145,
-					}, -- [155]
+					}, -- [172]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122552,
 						["layerID"] = 145,
-					}, -- [156]
+					}, -- [173]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122552,
 						["layerID"] = 374,
-					}, -- [157]
+					}, -- [174]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122552,
 						["layerID"] = 3805,
-					}, -- [158]
+					}, -- [175]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122551,
 						["layerID"] = 160,
-					}, -- [159]
+					}, -- [176]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699122551,
 						["layerID"] = 1626,
-					}, -- [160]
+					}, -- [177]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111301,
 						["layerID"] = 160,
-					}, -- [161]
+					}, -- [178]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111300,
 						["layerID"] = 3805,
-					}, -- [162]
+					}, -- [179]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111300,
 						["layerID"] = 82,
-					}, -- [163]
+					}, -- [180]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111299,
 						["layerID"] = 374,
-					}, -- [164]
+					}, -- [181]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111299,
 						["layerID"] = 1626,
-					}, -- [165]
+					}, -- [182]
 					{
 						["who"] = "Havnelone",
 						["type"] = "q",
 						["timestamp"] = 1699111293,
 						["layerID"] = 145,
-					}, -- [166]
+					}, -- [183]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699111299,
 						["layerID"] = 145,
-					}, -- [167]
+					}, -- [184]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107103,
 						["layerID"] = 145,
-					}, -- [168]
+					}, -- [185]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107103,
 						["layerID"] = 82,
-					}, -- [169]
+					}, -- [186]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107103,
 						["layerID"] = 3805,
-					}, -- [170]
+					}, -- [187]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107102,
 						["layerID"] = 1626,
-					}, -- [171]
+					}, -- [188]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107101,
 						["layerID"] = 160,
-					}, -- [172]
+					}, -- [189]
 					{
 						["who"] = "Shewel",
 						["type"] = "q",
 						["timestamp"] = 1699107096,
 						["layerID"] = 3805,
-					}, -- [173]
+					}, -- [190]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699107102,
 						["layerID"] = 374,
-					}, -- [174]
+					}, -- [191]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106681,
 						["layerID"] = 160,
-					}, -- [175]
+					}, -- [192]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106680,
 						["layerID"] = 374,
-					}, -- [176]
+					}, -- [193]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106680,
 						["layerID"] = 1626,
-					}, -- [177]
+					}, -- [194]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106680,
 						["layerID"] = 82,
-					}, -- [178]
+					}, -- [195]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106680,
 						["layerID"] = 3805,
-					}, -- [179]
+					}, -- [196]
 					{
 						["who"] = "Gigakezxd",
 						["type"] = "q",
 						["timestamp"] = 1699106674,
 						["layerID"] = 374,
-					}, -- [180]
+					}, -- [197]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699106680,
 						["layerID"] = 145,
-					}, -- [181]
+					}, -- [198]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699048756,
 						["layerID"] = 145,
-					}, -- [182]
+					}, -- [199]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699039841,
 						["layerID"] = 82,
-					}, -- [183]
+					}, -- [200]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699039840,
 						["layerID"] = 3805,
-					}, -- [184]
+					}, -- [201]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699039840,
 						["layerID"] = 160,
-					}, -- [185]
+					}, -- [202]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699039840,
 						["layerID"] = 145,
-					}, -- [186]
+					}, -- [203]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699039840,
 						["layerID"] = 1626,
-					}, -- [187]
+					}, -- [204]
 					{
 						["type"] = "r",
 						["timestamp"] = 1699024996,
 						["layerID"] = 1626,
-					}, -- [188]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699024995,
-						["layerID"] = 82,
-					}, -- [189]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699024995,
-						["layerID"] = 374,
-					}, -- [190]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699024995,
-						["layerID"] = 3805,
-					}, -- [191]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699024994,
-						["layerID"] = 145,
-					}, -- [192]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094354,
-						["layerID"] = 160,
-					}, -- [193]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094354,
-						["layerID"] = 82,
-					}, -- [194]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094353,
-						["layerID"] = 145,
-					}, -- [195]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094353,
-						["layerID"] = 1626,
-					}, -- [196]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094353,
-						["layerID"] = 374,
-					}, -- [197]
-					{
-						["layerID"] = 3805,
-						["type"] = "q",
-						["timestamp"] = 1699094347,
-						["who"] = "Qoz",
-					}, -- [198]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699094353,
-						["layerID"] = 3805,
-					}, -- [199]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699036901,
-						["layerID"] = 374,
-					}, -- [200]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699048757,
-						["layerID"] = 160,
-					}, -- [201]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699039839,
-						["layerID"] = 374,
-					}, -- [202]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699036902,
-						["layerID"] = 160,
-					}, -- [203]
-					{
-						["type"] = "r",
-						["timestamp"] = 1699036902,
-						["layerID"] = 82,
-					}, -- [204]
-					{
-						["layerID"] = 82,
-						["type"] = "q",
-						["timestamp"] = 1699036895,
-						["who"] = "Maggotlord",
 					}, -- [205]
 					{
 						["type"] = "r",
-						["timestamp"] = 1699023448,
-						["layerID"] = 3805,
+						["timestamp"] = 1699024995,
+						["layerID"] = 82,
 					}, -- [206]
 					{
 						["type"] = "r",
-						["timestamp"] = 1699023448,
-						["layerID"] = 160,
+						["timestamp"] = 1699024995,
+						["layerID"] = 374,
 					}, -- [207]
 					{
 						["type"] = "r",
-						["timestamp"] = 1699054906,
-						["layerID"] = 160,
+						["timestamp"] = 1699024995,
+						["layerID"] = 3805,
 					}, -- [208]
 					{
 						["type"] = "r",
-						["timestamp"] = 1698713419,
-						["layerID"] = 102,
+						["timestamp"] = 1699094353,
+						["layerID"] = 145,
 					}, -- [209]
+					{
+						["type"] = "r",
+						["timestamp"] = 1699094353,
+						["layerID"] = 3805,
+					}, -- [210]
 				},
 				["Dasvidania-Stitches"] = {
 					["guildCommand"] = 1,
@@ -10215,11 +10360,11 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 1,
 					["guild1"] = 1,
 				},
-				["Krypskyttern-Stitches"] = {
+				["Andruiden-Stitches"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
 					["guild10"] = 1,
-					["updated"] = 1699127841,
+					["updated"] = 1700302008,
 					["guildNpcWalking"] = 1,
 					["guildNpcKilled"] = 1,
 					["guildSongflower"] = 0,
@@ -10614,7 +10759,7 @@ NWBdatabase = {
 		["resetLayers4"] = false,
 		["chat1"] = false,
 		["wipeTerokkarData4"] = false,
-		["lt"] = 1699786053,
+		["lt"] = 1700301942,
 		["soundsDisableInBattlegrounds"] = true,
 		["resetSongflowers"] = false,
 		["resetLayers13"] = false,

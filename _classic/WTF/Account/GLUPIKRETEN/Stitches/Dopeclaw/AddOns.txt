@@ -191,7 +191,7 @@ XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 Capping_Options: disabled
 Capping: disabled
 Masque: enabled

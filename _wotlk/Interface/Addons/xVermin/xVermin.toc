@@ -8,7 +8,7 @@ _Config.lua
 _Core.lua
 _Debug.lua
 
-Libs\LibRangeCheck-3.0\LibRangeCheck-3.0\LibRangeCheck-3.0.lua
+# Libs\LibRangeCheck-3.0\LibRangeCheck-3.0\LibRangeCheck-3.0.lua
 
 Frames/_Misc_Frames.lua
 Frames/CharacterFrame.lua
