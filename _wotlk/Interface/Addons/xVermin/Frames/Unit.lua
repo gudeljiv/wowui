@@ -10,7 +10,7 @@ if xVermin.Class == 'HUNTER' then
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil, 'ARTWORK')
 	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, -1)
+	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
 	ac.text:SetText('')
 
 	CharacterAmmoSlotCount:Hide()
@@ -20,6 +20,28 @@ if xVermin.Class == 'HUNTER' then
 		function()
 			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 			ac.text:SetText(ammoCount)
+		end
+	)
+end
+
+-----------------------------------------------------------------------------------------------------------------------------
+-- Unit (Player) reagent count
+-----------------------------------------------------------------------------------------------------------------------------
+if xVermin.Class == 'PALADIN' then
+	local rc = CreateFrame('Frame', 'CustomContainer_ReagentCount', CustomContainer_Combat)
+	rc:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+	rc:SetWidth(1)
+	rc:SetHeight(1)
+	rc.text = rc:CreateFontString(nil, 'ARTWORK')
+	rc.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+	rc.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
+	rc.text:SetText('')
+
+	UIParent:HookScript(
+		'OnUpdate',
+		function()
+			local reagentCount = GetItemCount(21177)
+			rc.text:SetText(reagentCount)
 		end
 	)
 end
@@ -65,7 +87,7 @@ fbs:SetWidth(10)
 fbs:SetHeight(10)
 fbs.text = fbs:CreateFontString(nil, 'ARTWORK')
 fbs.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-fbs.text:SetPoint('LEFT', CustomContainer_Combat, 'LEFT', 5, -1)
+fbs.text:SetPoint('LEFT', CustomContainer_Combat, 'LEFT', 5, 0)
 
 local function CalculateFreeBagSpace()
 	for bag = 0, 4 do

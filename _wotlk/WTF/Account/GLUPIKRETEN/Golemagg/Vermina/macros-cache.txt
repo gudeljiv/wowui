@@ -14,8 +14,8 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][] Flash of Light
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@targettarget,help,nodead][] Righteous Defense
+#showtooltip 
+/cast [@mouseover][] Righteous Defense
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

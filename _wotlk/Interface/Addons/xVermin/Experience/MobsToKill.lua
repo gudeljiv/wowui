@@ -9,7 +9,7 @@ MobsToKill:SetWidth(10)
 MobsToKill:SetHeight(10)
 MobsToKill.text = MobsToKill:CreateFontString(nil, 'ARTWORK')
 MobsToKill.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-MobsToKill.text:SetPoint('RIGHT', CustomContainer_Combat, 'RIGHT', -5, -1)
+MobsToKill.text:SetPoint('RIGHT', CustomContainer_Combat, 'RIGHT', -5, 0)
 MobsToKill:Hide()
 
 local gainedExperience = CreateFrame('Frame', 'CustomContainer_CombatgainedExperience', CustomContainer_Combat)
@@ -18,7 +18,7 @@ gainedExperience:SetWidth(10)
 gainedExperience:SetHeight(10)
 gainedExperience.text = gainedExperience:CreateFontString(nil, 'ARTWORK')
 gainedExperience.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
-gainedExperience.text:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 5, -1)
+gainedExperience.text:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 5, 0)
 gainedExperience:Hide()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

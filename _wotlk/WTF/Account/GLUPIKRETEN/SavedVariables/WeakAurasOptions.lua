@@ -1,20 +1,8 @@
 
 WeakAurasOptionsSaved = {
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
 	["spellCacheAchievements"] = true,
-	["spellCacheAchivements"] = true,
-	["locale"] = "enUS",
-	["needsRebuild"] = false,
-	["version"] = "5.8.6",
-	["lockPositions"] = false,
-	["spellCacheStrings"] = true,
-	["frame"] = {
-		["xOffset"] = 951.21728515625,
-		["width"] = 1032.91845703125,
-		["height"] = 1043.524291992188,
-		["yOffset"] = 1227.03955078125,
+	["savedSnippets"] = {
 	},
 	["spellCache"] = {
 		["Spotted"] = {
@@ -2958,7 +2946,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51058=134760",
 		},
 		["Whip Terrorfiend"] = {
-			["spells"] = "35673=132448",
+			["spells"] = "35673=135353",
 		},
 		["Breastplate of Kings"] = {
 			["spells"] = "34533=136241",
@@ -7086,7 +7074,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "10525=136247",
 		},
 		["Auto Attack"] = {
-			["spells"] = "6603=132448",
+			["spells"] = "6603=135353",
 		},
 		["Increased Rejuvenation"] = {
 			["spells"] = "352508=136030",
@@ -52059,5 +52047,17 @@ WeakAurasOptionsSaved = {
 			["spells"] = "51203=136007",
 		},
 	},
+	["locale"] = "enUS",
+	["needsRebuild"] = false,
+	["version"] = "5.8.6",
+	["lockPositions"] = false,
+	["frame"] = {
+		["xOffset"] = 865.503173828125,
+		["yOffset"] = 1261.960327148438,
+		["height"] = 1043.524291992188,
+		["width"] = 1032.91845703125,
+	},
+	["spellCacheAchivements"] = true,
+	["spellCacheStrings"] = true,
 	["build"] = "51943",
 }
