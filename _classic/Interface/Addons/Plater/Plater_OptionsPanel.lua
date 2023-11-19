@@ -3,7 +3,7 @@ local addonId, platerInternal = ...
 local Plater = Plater
 local DF = DetailsFramework
 local LibSharedMedia = LibStub:GetLibrary ("LibSharedMedia-3.0")
-local LibRangeCheck = LibStub:GetLibrary ("LibRangeCheck-2.0")
+local LibRangeCheck = LibStub:GetLibrary ("LibRangeCheck-3.0")
 local _
 
 local IS_WOW_PROJECT_MAINLINE = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
@@ -7620,7 +7620,7 @@ local relevance_options = {
 							Plater.GetSpellForRangeCheck()
 						end
 						local t = {}
-						local checkers = LibRangeCheck:GetHarmCheckers()
+						local checkers = LibRangeCheck:GetHarmCheckers(true)
 						for range, checker in checkers do
 							tinsert (t, {label = range, onclick = onSelectFunc, value = range})
 						end
@@ -7643,7 +7643,7 @@ local relevance_options = {
 					Plater.GetSpellForRangeCheck()
 				end
 				local t = {}
-				local checkers = LibRangeCheck:GetHarmCheckers()
+				local checkers = LibRangeCheck:GetHarmCheckers(true)
 				for range, checker in checkers do
 					tinsert (t, {label = range, onclick = onSelectFunc, value = range})
 				end
@@ -7681,7 +7681,7 @@ local relevance_options = {
 							Plater.GetSpellForRangeCheck()
 						end
 						local t = {}
-						local checkers = LibRangeCheck:GetFriendCheckers()
+						local checkers = LibRangeCheck:GetFriendCheckers(true)
 						for range, checker in checkers do
 							tinsert (t, {label = range, onclick = onSelectFunc, value = range})
 						end
@@ -7703,7 +7703,7 @@ local relevance_options = {
 					Plater.GetSpellForRangeCheck()
 				end
 				local t = {}
-				local checkers = LibRangeCheck:GetFriendCheckers()
+				local checkers = LibRangeCheck:GetFriendCheckers(true)
 				for range, checker in checkers do
 					tinsert (t, {label = range, onclick = onSelectFunc, value = range})
 				end
