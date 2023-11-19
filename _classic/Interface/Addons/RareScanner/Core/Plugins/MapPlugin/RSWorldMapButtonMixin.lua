@@ -24,14 +24,10 @@ local LibDD = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
 -- Constants
 local SHOW_RARE_NPC_ICONS = "rsHideRareNpcs"
 local SHOW_NOT_DISCOVERED_RARE_NPC_ICONS = "rsHideNotDiscoveredRareNpcs"
-local SHOW_ACHIEVEMENT_NPC_ICONS = "rsHideAchievementRareNpcs"
-local SHOW_OTHER_NPC_ICONS = "rsHideOtherRareNpcs"
 local DISABLE_LAST_SEEN_FILTER = "rsDisableLastSeenFilter"
 
 local SHOW_CONTAINER_ICONS = "rsHideContainers"
 local SHOW_NOT_DISCOVERED_CONTAINER_ICONS = "rsHideNotDiscoveredContainers"
-local SHOW_ACHIEVEMENT_CONTAINER_ICONS = "rsHideAchievementContainers"
-local SHOW_OTHER_CONTAINER_ICONS = "rsHideOtherContainers"
 local DISABLE_LAST_SEEN_CONTAINER_FILTER = "rsDisableLastSeenContainerFilter"
 
 
@@ -50,37 +46,27 @@ local function WorldMapButtonDropDownMenu_Initialize(dropDown)
 			else
 				RSConfigDB.SetShowingNpcs(true)
 			end
-			RSMinimap.RefreshAllData(true)
+			LibDD:UIDropDownMenu_Initialize(dropDown)
 		elseif (value == DISABLE_LAST_SEEN_FILTER) then
 			if (RSConfigDB.IsMaxSeenTimeFilterEnabled()) then
 				RSConfigDB.DisableMaxSeenTimeFilter()
 			else
 				RSConfigDB.EnableMaxSeenTimeFilter()
 			end
-			RSMinimap.RefreshAllData(true)
 		elseif (value == SHOW_NOT_DISCOVERED_RARE_NPC_ICONS) then
 			if (RSConfigDB.IsShowingNotDiscoveredNpcs()) then
 				RSConfigDB.SetShowingNotDiscoveredNpcs(false)
 			else
 				RSConfigDB.SetShowingNotDiscoveredNpcs(true)
 			end
-			RSMinimap.RefreshAllData(true)
 		
 		-- Rare NPCs (types)
-		elseif (value == SHOW_ACHIEVEMENT_NPC_ICONS) then
-			if (RSConfigDB.IsShowingAchievementRareNPCs()) then
-				RSConfigDB.SetShowingAchievementRareNPCs(false)
-			else
-				RSConfigDB.SetShowingAchievementRareNPCs(true)
-			end
-			RSMinimap.RefreshAllData(true)
 		elseif (value == SHOW_OTHER_NPC_ICONS) then
 			if (RSConfigDB.IsShowingOtherRareNPCs()) then
 				RSConfigDB.SetShowingOtherRareNPCs(false)
 			else
 				RSConfigDB.SetShowingOtherRareNPCs(true)
 			end
-			RSMinimap.RefreshAllData(true)
 			
 		-- Containers (general)
 		elseif (value == SHOW_CONTAINER_ICONS) then
@@ -89,39 +75,22 @@ local function WorldMapButtonDropDownMenu_Initialize(dropDown)
 			else
 				RSConfigDB.SetShowingContainers(true)
 			end
-			RSMinimap.RefreshAllData(true)
+			LibDD:UIDropDownMenu_Initialize(dropDown)
 		elseif (value == DISABLE_LAST_SEEN_CONTAINER_FILTER) then
 			if (RSConfigDB.IsMaxSeenTimeContainerFilterEnabled()) then
 				RSConfigDB.DisableMaxSeenContainerTimeFilter()
 			else
 				RSConfigDB.EnableMaxSeenContainerTimeFilter()
 			end
-			RSMinimap.RefreshAllData(true)
 		elseif (value == SHOW_NOT_DISCOVERED_CONTAINER_ICONS) then
 			if (RSConfigDB.IsShowingNotDiscoveredContainers()) then
 				RSConfigDB.SetShowingNotDiscoveredContainers(false)
 			else
 				RSConfigDB.SetShowingNotDiscoveredContainers(true)
 			end
-			RSMinimap.RefreshAllData(true)
-			
-		-- Containers (types)
-		elseif (value == SHOW_ACHIEVEMENT_CONTAINER_ICONS) then
-			if (RSConfigDB.IsShowingAchievementContainers()) then
-				RSConfigDB.SetShowingAchievementContainers(false)
-			else
-				RSConfigDB.SetShowingAchievementContainers(true)
-			end
-			RSMinimap.RefreshAllData(true)
-		elseif (value == SHOW_OTHER_CONTAINER_ICONS) then
-			if (RSConfigDB.IsShowingOtherContainers()) then
-				RSConfigDB.SetShowingOtherContainers(false)
-			else
-				RSConfigDB.SetShowingOtherContainers(true)
-			end
-			RSMinimap.RefreshAllData(true)
 		end
 		
+		RSMinimap.RefreshAllData(true)
 		WorldMapFrame:RefreshAllDataProviders();
 	end
 		
@@ -140,20 +109,10 @@ local function WorldMapButtonDropDownMenu_Initialize(dropDown)
   			info.hasArrow = true
   			info.notCheckable = true
   			LibDD:UIDropDownMenu_AddButton(info)
-			
-			local info = LibDD:UIDropDownMenu_CreateInfo();
-			info.isNotRadio = true;
-			info.keepShownOnClick = false;
-			info.func = OnSelection;
-		
-			info.text = AL["MAP_MENU_SHOW_NOT_DISCOVERED_OLD"];
-			info.arg1 = SHOW_NOT_DISCOVERED_ICONS_OLD;
-			info.checked = RSConfigDB.IsShowingOldNotDiscoveredMapIcons()
-			LibDD:UIDropDownMenu_AddButton(info, level);
 		else
 			local info = LibDD:UIDropDownMenu_CreateInfo();
 			info.isNotRadio = true;
-			info.keepShownOnClick = false;
+			info.keepShownOnClick = true;
 			info.func = OnSelection;
 				
 			if (menuList == rareNPCsID) then
@@ -173,20 +132,6 @@ local function WorldMapButtonDropDownMenu_Initialize(dropDown)
 				info.checked = RSConfigDB.IsShowingNotDiscoveredNpcs()
 				info.disabled = not RSConfigDB.IsShowingNpcs()
 				LibDD:UIDropDownMenu_AddButton(info, level);
-				
-				LibDD:UIDropDownMenu_AddSeparator(level)
-			
-				info.text = "|A:"..RSConstants.ACHIEVEMENT_ICON_ATLAS..":18:18::::|a "..AL["MAP_MENU_SHOW_ACHIEVEMENT_RARE_NPCS"];
-				info.arg1 = SHOW_ACHIEVEMENT_NPC_ICONS;
-				info.checked = RSConfigDB.IsShowingAchievementRareNPCs()
-				info.disabled = not RSConfigDB.IsShowingNpcs()
-				LibDD:UIDropDownMenu_AddButton(info, level);
-			
-				info.text = AL["MAP_MENU_SHOW_OTHER_RARE_NPCS"];
-				info.arg1 = SHOW_OTHER_NPC_ICONS;
-				info.checked = RSConfigDB.IsShowingOtherRareNPCs()
-				info.disabled = not RSConfigDB.IsShowingNpcs()
-				LibDD:UIDropDownMenu_AddButton(info, level);
 			elseif (menuList == containersID) then
 				info.text = AL["MAP_MENU_SHOW_CONTAINERS"];
 				info.arg1 = SHOW_CONTAINER_ICONS;
@@ -202,20 +147,6 @@ local function WorldMapButtonDropDownMenu_Initialize(dropDown)
 				info.text = "|T"..RSConstants.RED_CONTAINER_TEXTURE..":18:18:::::0:32:0:32|t "..AL["MAP_MENU_SHOW_NOT_DISCOVERED_CONTAINERS"];
 				info.arg1 = SHOW_NOT_DISCOVERED_CONTAINER_ICONS;
 				info.checked = RSConfigDB.IsShowingNotDiscoveredContainers()
-				info.disabled = not RSConfigDB.IsShowingContainers()
-				LibDD:UIDropDownMenu_AddButton(info, level);
-				
-				LibDD:UIDropDownMenu_AddSeparator(level)
-			
-				info.text = "|A:"..RSConstants.ACHIEVEMENT_ICON_ATLAS..":18:18::::|a "..AL["MAP_MENU_SHOW_ACHIEVEMENT_CONTAINERS"];
-				info.arg1 = SHOW_ACHIEVEMENT_CONTAINER_ICONS;
-				info.checked = RSConfigDB.IsShowingAchievementContainers()
-				info.disabled = not RSConfigDB.IsShowingNpcs()
-				LibDD:UIDropDownMenu_AddButton(info, level);
-			
-				info.text = AL["MAP_MENU_SHOW_OTHER_CONTAINERS"];
-				info.arg1 = SHOW_OTHER_CONTAINER_ICONS;
-				info.checked = RSConfigDB.IsShowingOtherContainers()
 				info.disabled = not RSConfigDB.IsShowingContainers()
 				LibDD:UIDropDownMenu_AddButton(info, level);
 			end

@@ -1,10 +1,10 @@
-lightweight tag 2ff991eaafa45863217a57f512884f2cae231006 v5.0.7
+lightweight tag 6114ba0b562d79bbc1cc003d82f37f00c6036800 v5.0.8
 Author:	Péter Radics <mitchnull@gmail.com>
-Date:	Sat Aug 26 12:45:09 2023 +0200
+Date:	Sun Nov 19 18:50:05 2023 +0100
 
-commit 2ff991eaafa45863217a57f512884f2cae231006
+commit 6114ba0b562d79bbc1cc003d82f37f00c6036800
 Author: Péter Radics <mitchnull@gmail.com>
-Date:   Sat Aug 26 12:45:09 2023 +0200
+Date:   Sun Nov 19 18:50:05 2023 +0100
 
-    toc bump
+    toc bump, pick up LibRangeCheck fix for issue #23
 
