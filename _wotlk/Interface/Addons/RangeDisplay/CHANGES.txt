@@ -1,10 +1,10 @@
-lightweight tag 6114ba0b562d79bbc1cc003d82f37f00c6036800 v5.0.8
+lightweight tag 09dd477c07fc5e1d9dd3ffb0dea65989730ea32e v5.1.2
 Author:	Péter Radics <mitchnull@gmail.com>
-Date:	Sun Nov 19 18:50:05 2023 +0100
+Date:	Tue Nov 21 08:33:46 2023 +0100
 
-commit 6114ba0b562d79bbc1cc003d82f37f00c6036800
+commit 09dd477c07fc5e1d9dd3ffb0dea65989730ea32e
 Author: Péter Radics <mitchnull@gmail.com>
-Date:   Sun Nov 19 18:50:05 2023 +0100
+Date:   Tue Nov 21 08:33:46 2023 +0100
 
-    toc bump, pick up LibRangeCheck fix for issue #23
+    try to trigger packager
 
