@@ -5,9 +5,9 @@ ACP_Data = {
 	["NoChildren"] = true,
 	["collapsed"] = {
 		["Details"] = true,
-		["GatherMate2"] = true,
-		["Leatrix"] = true,
 		["DBM"] = true,
+		["Leatrix"] = true,
+		["GatherMate2"] = true,
 	},
 	["ProtectedAddons"] = {
 		["ACP"] = true,
