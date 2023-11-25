@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 10140,
+	["session"] = 10144,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -7600,21 +7600,13 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [992]
 		{
-			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)",
-			["time"] = "2023/10/17 12:01:28",
-			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)\"\n",
-			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:285: in function <Interface/FrameXML/SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
-			["session"] = 10137,
-			["counter"] = 19,
-		}, -- [993]
-		{
 			["message"] = "Interface/AddOns/!Colorz/!Colorz.lua:67: script ran too long",
 			["time"] = "2023/10/18 19:32:34",
 			["locals"] = "unit = \"mouseover\"\nr = nil\ng = nil\nb = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"script ran too long\"\n",
 			["stack"] = "[string \"@Interface/AddOns/!Colorz/!Colorz.lua\"]:67: in function `GameTooltip_UnitColor'\n[string \"@Interface/FrameXML/GameTooltip.lua\"]:482: in function <Interface/FrameXML/GameTooltip.lua:480>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 10137,
 			["counter"] = 38,
-		}, -- [994]
+		}, -- [993]
 		{
 			["message"] = "Interface/AddOns/Plater/Plater.lua:9769: script ran too long",
 			["time"] = "2023/10/31 18:38:31",
@@ -7622,7 +7614,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Plater/Plater.lua\"]:9769: in function `func'\n[string \"@Interface/AddOns/Plater/Plater.lua\"]:9804: in function <Interface/AddOns/Plater/Plater.lua:9799>",
 			["session"] = 10137,
 			["counter"] = 20,
-		}, -- [995]
+		}, -- [994]
 		{
 			["message"] = "...ns/Blizzard_AchievementUI/Blizzard_AchievementUI.lua:1846: script ran too long",
 			["time"] = "2023/11/07 12:54:41",
@@ -7630,7 +7622,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Blizzard_AchievementUI/Blizzard_AchievementUI.lua\"]:1846: in function `AchievementFrameSummary_UpdateAchievements'\n[string \"@Interface/AddOns/Blizzard_AchievementUI/Blizzard_AchievementUI.lua\"]:1831: in function <...ns/Blizzard_AchievementUI/Blizzard_AchievementUI.lua:1829>",
 			["session"] = 10137,
 			["counter"] = 5,
-		}, -- [996]
+		}, -- [995]
 		{
 			["message"] = "Interface/AddOns/xVermin/_Core.lua:246: script ran too long",
 			["time"] = "2023/11/14 11:24:25",
@@ -7638,7 +7630,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/_Core.lua\"]:246: in function `GetRange'\n[string \"@Interface/AddOns/xVermin/Rotation/AOE.lua\"]:65: in function `xAOE'\n[string \"return xAOE(5) == 1\"]:1: in function `LF_000001EE714F5800'\n[string \"Condition_LUA_STANCE_SPEC\"]:3: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2633: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2595>",
 			["session"] = 10139,
 			["counter"] = 19,
-		}, -- [997]
+		}, -- [996]
 		{
 			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2680: script ran too long",
 			["time"] = "2023/11/18 22:26:21",
@@ -7646,7 +7638,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
 			["session"] = 10139,
 			["counter"] = 11,
-		}, -- [998]
+		}, -- [997]
 		{
 			["message"] = ".../TradeSkillMaster/LibTSM/Service/TooltipScanning.lua:215: script ran too long",
 			["time"] = "2023/10/17 10:17:08",
@@ -7654,7 +7646,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/TooltipScanning.lua\"]:215: in function `PrepareTooltip'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/TooltipScanning.lua\"]:150: in function `SetContainerItem'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/TooltipScanning.lua\"]:33: in function `IsSoulbound'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/InventoryInfo.lua\"]:79: in function `IsSoulbound'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/BagTracking.lua\"]:646: in function `ScanBagSlot'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/BagTracking.lua\"]:557: in function `ScanBagOrBank'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/BagTracking.lua\"]:450: in function `_callback'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/Delay.lua\"]:100: in function <...erface/AddOns/TradeSkillMaster/LibTSM/Util/Delay.lua:93>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_CheckIfDone'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/Delay.lua\"]:123: in function <...erface/AddOns/TradeSkillMaster/LibTSM/Util/Delay.lua:116>",
 			["session"] = 10140,
 			["counter"] = 2,
-		}, -- [999]
+		}, -- [998]
 		{
 			["message"] = ".../TradeSkillMaster/LibTSM/Service/AuctionTracking.lua:690: script ran too long",
 			["time"] = "2023/10/17 12:14:28",
@@ -7662,6 +7654,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/AuctionTracking.lua\"]:690: in function `ChatFrame_OnEvent'\n[string \"*FloatingChatFrame.xml:769_OnEvent\"]:1: in function <[string \"*FloatingChatFrame.xml:769_OnEvent\"]:1>",
 			["session"] = 10140,
 			["counter"] = 197,
+		}, -- [999]
+		{
+			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)",
+			["time"] = "2023/10/17 12:01:28",
+			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:285: in function <Interface/FrameXML/SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
+			["session"] = 10144,
+			["counter"] = 20,
 		}, -- [1000]
 	},
 }

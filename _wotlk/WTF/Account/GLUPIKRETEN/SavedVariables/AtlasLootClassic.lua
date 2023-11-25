@@ -1333,9 +1333,9 @@ AtlasLootClassicDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -1812,8 +1812,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"AhnKahet", -- [2]
-					5, -- [3]
+					"UtgardePinnacle", -- [2]
+					4, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
