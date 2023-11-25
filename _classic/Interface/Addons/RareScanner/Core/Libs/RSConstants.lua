@@ -24,8 +24,8 @@ RSConstants.LOOT_ITEM_ID = nil
 -- Current versions
 ---============================================================================
 
-RSConstants.CURRENT_DB_VERSION = 2
-RSConstants.CURRENT_LOOT_DB_VERSION = 2
+RSConstants.CURRENT_DB_VERSION = 3
+RSConstants.CURRENT_LOOT_DB_VERSION = 3
 
 ---============================================================================
 -- Current maps (newer)
@@ -132,8 +132,7 @@ RSConstants.PROFILE_DEFAULTS = {
 			defaultContainerFilterType = RSConstants.ENTITY_FILTER_ALL
 		},
 		zoneFilters = {
-			filtersToggled = true,
-			filterOnlyMap = false
+			defaultZoneFilterType = RSConstants.ENTITY_FILTER_ALL
 		},
 		collections = {
 			filteredOnlyOnWorldMap = false,

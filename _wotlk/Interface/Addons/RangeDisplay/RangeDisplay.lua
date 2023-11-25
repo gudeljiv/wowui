@@ -8,7 +8,7 @@ License: Public Domain
 
 local AppName, RangeDisplay = ...
 local OptionsAppName = AppName .. "_Options"
-local VERSION = AppName .. "-v5.1.2"
+local VERSION = AppName .. "-v5.1.3"
 
 local rc = LibStub("LibRangeCheck-2.0")
 local LSM = LibStub:GetLibrary("LibSharedMedia-3.0", true)
