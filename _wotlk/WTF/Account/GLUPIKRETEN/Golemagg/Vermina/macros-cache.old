@@ -1,7 +1,6 @@
-VER 3 0000000001000015 " " "134400"
+VER 3 0000000001000014 " " "134400"
 #showtooltip 
-/startattack
-/cast [@mouseover, harm, nodead][] Avenger's Shield
+/cast [@focus, help, nodead][] Beacon of Light
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
@@ -14,8 +13,8 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 /cast [@mouseover, help, nodead][] Flash of Light
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@targettarget,help,nodead][] Righteous Defense
+#showtooltip 
+/cast [@mouseover][] Righteous Defense
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -65,7 +64,8 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Holy Shock
 /cast [@mouseover, help, nodead][] Holy Shock
 END
-VER 3 0000000001000014 " " "134400"
+VER 3 0000000001000015 " " "134400"
 #showtooltip 
-/cast [@focus, help, nodead][] Beacon of Light
+/startattack
+/cast [@mouseover, harm, nodead][] Avenger's Shield
 END

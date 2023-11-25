@@ -219,20 +219,20 @@ TradeSkillMasterDB = {
 	["g@ @shoppingOptions@minDeSearchLvl"] = 1,
 	["s@Pitchwise - Horde - Dreadnaught@internalData@auctionQuantity"] = {
 		["i:2589"] = 6,
-		["i:4306"] = 3,
 		["i:4575"] = 1,
+		["i:4306"] = 3,
 		["i:16655"] = 1,
 		["i:16645"] = 1,
-		["i:16654"] = 1,
+		["i:2771"] = 3,
 		["i:2775"] = 4,
-		["i:16646"] = 1,
 		["i:15498"] = 1,
+		["i:16646"] = 1,
 		["i:2836"] = 4,
 		["i:11965"] = 1,
 		["i:118"] = 1,
 		["i:16656"] = 1,
 		["i:14129"] = 1,
-		["i:2771"] = 3,
+		["i:16654"] = 1,
 	},
 	["c@Battitude - Golemagg@internalData@craftingCooldowns"] = {
 	},
@@ -295,20 +295,20 @@ TradeSkillMasterDB = {
 			["BOE Items`Armor`White"] = true,
 			["BOE Items"] = true,
 			["BOE Items`Weapons"] = true,
-			["Materials`Enchanting"] = true,
+			["Materials`Ores and Bars"] = true,
 			["Materials`Reagents"] = true,
 			["Materials`Herbs"] = true,
 			["BOE Items`Armor"] = true,
 			["Materials`Engineering"] = true,
-			["Materials`Ores and Bars"] = true,
+			["Materials`Enchanting"] = true,
 			["Materials`Pigments and Ink"] = true,
 			["Materials`Eternals"] = true,
-			["Materials`Food"] = true,
+			["Materials`Glyphs"] = true,
 			["Materials`Motes and Primals"] = true,
 			["Materials`Potions"] = true,
 			["Materials"] = true,
 			["Materials`Jewelcrafting"] = true,
-			["Materials`Glyphs"] = true,
+			["Materials`Food"] = true,
 			["Materials`Cloth"] = true,
 			["BOE Items`Weapons`Purple"] = true,
 			["BOE Items`Weapons`Blue"] = true,
@@ -529,23 +529,23 @@ TradeSkillMasterDB = {
 			["BOE Items`Armor`Purple"] = true,
 			["BOE Items`Armor`Blue"] = true,
 			["BOE Items`Armor`Green"] = true,
-			["Materials`Ores and Bars"] = true,
+			["Materials`Enchanting"] = true,
 			["BOE Items"] = true,
 			["BOE Items`Weapons"] = true,
-			["Materials`Pigments and Ink"] = true,
+			["Materials`Glyphs"] = true,
 			["Materials`Reagents"] = true,
 			["Materials`Herbs"] = true,
-			["BOE Items`Armor"] = true,
+			["BOE Items`Armor`White"] = true,
 			["Materials`Engineering"] = true,
-			["Materials`Enchanting"] = true,
-			["Materials`Food"] = true,
+			["Materials`Ores and Bars"] = true,
+			["Materials`Pigments and Ink"] = true,
 			["Materials`Motes and Primals"] = true,
-			["Materials`Glyphs"] = true,
+			["Materials`Food"] = true,
 			["Materials`Eternals"] = true,
 			["Materials`Potions"] = true,
 			["Materials"] = true,
 			["Materials`Jewelcrafting"] = true,
-			["BOE Items`Armor`White"] = true,
+			["BOE Items`Armor"] = true,
 			["Materials`Cloth"] = true,
 			["BOE Items`Weapons`Purple"] = true,
 			["Materials`Gems"] = true,
@@ -689,8 +689,8 @@ TradeSkillMasterDB = {
 		["g@auctionUIContext@auctioningSelectionDividedContainer"] = 55,
 		["f@internalData@guildGoldLog"] = 25,
 		["g@vendoringUIContext@frame"] = 55,
-		["s@internalData@goldLog"] = 25,
 		["s@internalData@mailQuantity"] = 19,
+		["s@internalData@goldLog"] = 25,
 		["g@auctionUIContext@auctioningBagScrollingTable"] = 55,
 		["g@taskListUIContext@isOpen"] = 55,
 		["c@mainUIContext@groupsManagementGroupTree"] = 71,
@@ -787,7 +787,7 @@ TradeSkillMasterDB = {
 		["i:5012"] = 2,
 		["i:2455"] = 1,
 		["i:858"] = 4,
-		["i:159"] = 10,
+		["i:5062"] = 9,
 		["i:5512"] = 1,
 		["i:6948"] = 1,
 		["i:5134"] = 1,
@@ -795,7 +795,7 @@ TradeSkillMasterDB = {
 		["i:6265"] = 7,
 		["i:117"] = 14,
 		["i:2842"] = 1,
-		["i:5062"] = 9,
+		["i:159"] = 10,
 	},
 	["f@Horde - Mirage Raceway@userData@craftingCooldownIgnore"] = {
 	},
@@ -3823,10 +3823,10 @@ TradeSkillMasterDB = {
 		["i:39003"] = "Materials`Enchanting`Scrolls",
 		["i:15369"] = "BOE Items`Armor`Green",
 		["i:22577"] = "Materials`Motes and Primals",
-		["i:36930"] = "Jewelcrafting`Materials",
+		["i:12982"] = "BOE Items`Armor`Blue",
 		["i:14911"] = "BOE Items`Armor`Green",
 		["i:8253"] = "BOE Items`Armor`Green",
-		["i:12982"] = "BOE Items`Armor`Blue",
+		["i:36930"] = "Jewelcrafting`Materials",
 		["i:9422"] = "BOE Items`Weapons`Blue",
 		["i:7456"] = "BOE Items`Armor`Green",
 		["i:6733"] = "BOE Items`Armor`Green",
@@ -3850,7 +3850,7 @@ TradeSkillMasterDB = {
 		["i:6381"] = "BOE Items`Armor`Green",
 		["i:11982"] = "BOE Items`Armor`Green",
 		["i:37164"] = "Materials`Glyphs",
-		["i:24605"] = "BOE Items`Armor`Green",
+		["i:18676"] = "BOE Items`Armor`Blue",
 		["i:44268"] = "Darkmoon`Nobles",
 		["i:15387"] = "BOE Items`Armor`Green",
 		["i:12800"] = "Materials`Gems",
@@ -3919,7 +3919,7 @@ TradeSkillMasterDB = {
 		["i:15339"] = "BOE Items`Armor`Green",
 		["i:8300"] = "BOE Items`Armor`Green",
 		["i:4729"] = "BOE Items`Armor`Green",
-		["i:14199"] = "BOE Items`Armor`Green",
+		["i:39916"] = "Jewelcrafting`Items",
 		["i:15584"] = "BOE Items`Armor`Green",
 		["i:2911"] = "BOE Items`Armor`Blue",
 		["i:4727"] = "BOE Items`Armor`Green",
@@ -3968,7 +3968,7 @@ TradeSkillMasterDB = {
 		["i:15322"] = "BOE Items`Weapons`Green",
 		["i:14258"] = "BOE Items`Armor`Green",
 		["i:1296"] = "BOE Items`Weapons`Green",
-		["i:10131"] = "BOE Items`Armor`Green",
+		["i:1927"] = "BOE Items`Weapons`Green",
 		["i:1943"] = "BOE Items`Armor`Green",
 		["i:13076"] = "BOE Items`Armor`Blue",
 		["i:6468"] = "BOE Items`Armor`Blue",
@@ -4060,7 +4060,7 @@ TradeSkillMasterDB = {
 		["i:10030"] = "BOE Items`Armor`Green",
 		["i:27681"] = "Materials`Food",
 		["i:20817"] = "Jewelcrafting`Materials",
-		["i:15249"] = "BOE Items`Weapons`Green",
+		["i:31154"] = "Jewelcrafting`Items",
 		["i:15219"] = "BOE Items`Weapons`Green",
 		["i:21304"] = "Misc",
 		["i:2969"] = "BOE Items`Armor`Green",
@@ -4115,8 +4115,8 @@ TradeSkillMasterDB = {
 		["i:15526"] = "BOE Items`Armor`Green",
 		["i:2770"] = "Materials`Ores and Bars",
 		["i:35622"] = "Materials`Eternals",
-		["i:7462:1199"] = "BOE Items`Armor`Green",
 		["i:14942"] = "BOE Items`Armor`Green",
+		["i:7462:1199"] = "BOE Items`Armor`Green",
 		["i:20295"] = "BOE Items`Armor`Blue",
 		["i:15573"] = "BOE Items`Armor`Green",
 		["i:3392"] = "BOE Items`Armor`Green",
@@ -4127,14 +4127,14 @@ TradeSkillMasterDB = {
 		["i:7929"] = "BOE Items`Armor`Green",
 		["i:7482"] = "BOE Items`Armor`Green",
 		["i:13002"] = "BOE Items`Armor`Blue",
-		["i:12531"] = "BOE Items`Weapons`Blue",
-		["i:6571"] = "BOE Items`Armor`Green",
 		["i:15890"] = "BOE Items`Armor`Green",
+		["i:11978"] = "BOE Items`Armor`Green",
+		["i:12531"] = "BOE Items`Weapons`Blue",
 		["i:17029"] = "Materials`Reagents",
 		["i:20671"] = "BOE Items`Armor`Blue",
 		["i:5214"] = "BOE Items`Weapons`Green",
 		["i:15153"] = "BOE Items`Armor`Green",
-		["i:11174"] = "Materials`Enchanting`Essences",
+		["i:6571"] = "BOE Items`Armor`Green",
 		["i:5257"] = "BOE Items`Armor`Blue",
 		["i:5958"] = "BOE Items`Armor`Green",
 		["i:14758"] = "BOE Items`Armor`Green",
@@ -4142,7 +4142,7 @@ TradeSkillMasterDB = {
 		["i:12040"] = "BOE Items`Armor`Green",
 		["i:3667"] = "Materials`Food",
 		["i:10423"] = "BOE Items`Armor`Green",
-		["i:11978"] = "BOE Items`Armor`Green",
+		["i:11174"] = "Materials`Enchanting`Essences",
 		["i:2748"] = "Misc",
 		["i:14260"] = "BOE Items`Armor`Green",
 		["i:12619"] = "BOE Items`Armor`Blue",
@@ -4152,7 +4152,7 @@ TradeSkillMasterDB = {
 		["i:3735"] = "Recipes",
 		["i:14297"] = "BOE Items`Armor`Green",
 		["i:14955"] = "BOE Items`Armor`Green",
-		["i:9920"] = "BOE Items`Armor`Green",
+		["i:9937"] = "BOE Items`Armor`Green",
 		["i:2274"] = "BOE Items`Armor`Green",
 		["i:16819"] = "BOE Items`Armor`Purple",
 		["i:23094"] = "Jewelcrafting`Items",
@@ -4160,22 +4160,22 @@ TradeSkillMasterDB = {
 		["i:7556"] = "BOE Items`Armor`Green",
 		["i:8172"] = "Materials`Leather",
 		["i:14756"] = "BOE Items`Armor`Green",
-		["i:8260"] = "BOE Items`Armor`Green",
 		["i:24833:-40"] = "BOE Items`Armor`Green",
+		["i:8260"] = "BOE Items`Armor`Green",
 		["i:9944"] = "BOE Items`Armor`Green",
 		["i:15250"] = "BOE Items`Weapons`Green",
 		["i:4707"] = "BOE Items`Armor`Green",
 		["i:5425"] = "BOE Items`Armor`Green",
 		["i:15385"] = "BOE Items`Armor`Green",
 		["i:15389"] = "BOE Items`Armor`Green",
-		["i:38997"] = "Materials`Enchanting`Scrolls",
+		["i:15358"] = "BOE Items`Armor`Green",
 		["i:4456"] = "BOE Items`Armor`Green",
 		["i:10232"] = "BOE Items`Armor`Green",
 		["i:11137"] = "Materials`Enchanting`Dust",
-		["i:7433"] = "BOE Items`Armor`Green",
+		["i:21932"] = "Jewelcrafting`Items",
 		["i:15572"] = "BOE Items`Armor`Green",
 		["i:14370"] = "BOE Items`Armor`Green",
-		["i:15358"] = "BOE Items`Armor`Green",
+		["i:38997"] = "Materials`Enchanting`Scrolls",
 		["i:14804"] = "BOE Items`Armor`Green",
 		["i:9939"] = "BOE Items`Armor`Green",
 		["i:12405"] = "BOE Items`Armor`Green",
@@ -4197,13 +4197,13 @@ TradeSkillMasterDB = {
 		["i:6404"] = "BOE Items`Armor`Green",
 		["i:14328"] = "BOE Items`Armor`Green",
 		["i:10253"] = "BOE Items`Armor`Green",
-		["i:13000"] = "BOE Items`Weapons`Blue",
 		["i:13074"] = "BOE Items`Armor`Blue",
-		["i:15429"] = "BOE Items`Armor`Green",
+		["i:13000"] = "BOE Items`Weapons`Blue",
+		["i:43244"] = "Jewelcrafting`Items",
 		["i:14569"] = "BOE Items`Armor`Green",
 		["i:14855"] = "BOE Items`Armor`Green",
 		["i:15967"] = "BOE Items`Armor`Green",
-		["i:43244"] = "Jewelcrafting`Items",
+		["i:8285"] = "BOE Items`Armor`Green",
 		["i:12975"] = "BOE Items`Weapons`Blue",
 		["i:10282"] = "BOE Items`Armor`Green",
 		["i:24102"] = "Misc",
@@ -4215,17 +4215,17 @@ TradeSkillMasterDB = {
 		["i:3066"] = "BOE Items`Armor`Green",
 		["i:1990"] = "BOE Items`Weapons`Green",
 		["i:15887"] = "BOE Items`Armor`Green",
-		["i:15054"] = "BOE Items`Armor`Green",
+		["i:9296"] = "Recipes",
 		["i:10379"] = "BOE Items`Armor`Green",
 		["i:15433"] = "BOE Items`Armor`Green",
-		["i:2838"] = "Materials`Ores and Bars`Solid & Heavy Stone",
+		["i:14431"] = "BOE Items`Armor`Green",
 		["i:20406"] = "BOE Items`Armor`Green",
 		["i:33458"] = "Materials`Scrolls",
 		["i:2868"] = "BOE Items`Armor`Green",
 		["i:15611"] = "BOE Items`Armor`Green",
 		["i:6452"] = "Materials`Reagents",
 		["i:6565"] = "BOE Items`Armor`Green",
-		["i:14431"] = "BOE Items`Armor`Green",
+		["i:13123"] = "BOE Items`Armor`Blue",
 		["i:7535"] = "BOE Items`Armor`Green",
 		["i:14581"] = "BOE Items`Armor`Green",
 		["i:7480"] = "BOE Items`Armor`Green",
@@ -4252,20 +4252,20 @@ TradeSkillMasterDB = {
 		["i:22671"] = "BOE Items`Armor`Purple",
 		["i:3045"] = "BOE Items`Armor`Green",
 		["i:15304"] = "BOE Items`Armor`Green",
-		["i:2246"] = "BOE Items`Armor`Purple",
+		["i:10185"] = "BOE Items`Armor`Green",
 		["i:15582"] = "BOE Items`Armor`Green",
 		["i:43467"] = "Materials`Scrolls",
 		["i:15188"] = "BOE Items`Armor`Green",
 		["i:23446"] = "Materials`Ores and Bars",
-		["i:19057"] = "BOE Items`Armor`Blue",
-		["i:10185"] = "BOE Items`Armor`Green",
-		["i:20909"] = "Jewelcrafting`Items",
+		["i:14445"] = "BOE Items`Armor`Green",
+		["i:2246"] = "BOE Items`Armor`Purple",
+		["i:14243"] = "BOE Items`Armor`Green",
 		["i:15985"] = "BOE Items`Armor`Green",
 		["i:14807"] = "BOE Items`Armor`Green",
-		["i:15495"] = "BOE Items`Armor`Green",
-		["i:9382"] = "BOE Items`Armor`Green",
 		["i:9835"] = "BOE Items`Armor`Green",
-		["i:15076"] = "BOE Items`Armor`Green",
+		["i:9382"] = "BOE Items`Armor`Green",
+		["i:15495"] = "BOE Items`Armor`Green",
+		["i:3174"] = "Misc",
 		["i:15614"] = "BOE Items`Armor`Green",
 		["i:7418"] = "BOE Items`Armor`Green",
 		["i:2973"] = "BOE Items`Armor`Green",
@@ -4282,8 +4282,8 @@ TradeSkillMasterDB = {
 		["i:19166"] = "BOE Items`Weapons`Purple",
 		["i:4711"] = "BOE Items`Armor`Green",
 		["i:11968"] = "BOE Items`Armor`Green",
-		["i:19149"] = "BOE Items`Armor`Purple",
 		["i:3836"] = "BOE Items`Armor`Green",
+		["i:19149"] = "BOE Items`Armor`Purple",
 		["i:39951"] = "Jewelcrafting`Items",
 		["i:10065"] = "BOE Items`Armor`Green",
 		["i:863"] = "BOE Items`Weapons`Green",
@@ -4299,8 +4299,8 @@ TradeSkillMasterDB = {
 		["i:12612"] = "BOE Items`Armor`Green",
 		["i:7914"] = "BOE Items`Armor`Green",
 		["i:4792"] = "BOE Items`Armor`Green",
-		["i:4782"] = "BOE Items`Armor`Green",
 		["i:10041"] = "BOE Items`Armor`Blue",
+		["i:4782"] = "BOE Items`Armor`Green",
 		["i:42780"] = "Misc",
 		["i:1992"] = "BOE Items`Armor`Blue",
 		["i:10267"] = "BOE Items`Armor`Green",
@@ -4311,10 +4311,10 @@ TradeSkillMasterDB = {
 		["i:3192"] = "BOE Items`Weapons`Green",
 		["i:10329"] = "BOE Items`Armor`Green",
 		["i:14242"] = "BOE Items`Armor`Green",
-		["i:7447"] = "BOE Items`Armor`Green",
-		["i:5576"] = "Misc",
-		["i:14771"] = "BOE Items`Armor`Green",
 		["i:15926"] = "BOE Items`Armor`Green",
+		["i:5576"] = "Misc",
+		["i:12424"] = "BOE Items`Armor`Green",
+		["i:7447"] = "BOE Items`Armor`Green",
 		["i:15940"] = "BOE Items`Armor`Green",
 		["i:7496"] = "BOE Items`Armor`Green",
 		["i:12616"] = "BOE Items`Armor`Green",
@@ -4335,7 +4335,7 @@ TradeSkillMasterDB = {
 		["i:3358"] = "Materials`Herbs",
 		["i:20259"] = "BOE Items`Armor`Blue",
 		["i:10011"] = "BOE Items`Armor`Green",
-		["i:10180"] = "BOE Items`Armor`Green",
+		["i:1481"] = "BOE Items`Weapons`Blue",
 		["i:14130"] = "BOE Items`Armor`Green",
 		["i:8134"] = "BOE Items`Armor`Green",
 		["i:754"] = "BOE Items`Weapons`Blue",
@@ -4375,9 +4375,9 @@ TradeSkillMasterDB = {
 		["i:8115"] = "BOE Items`Armor`Green",
 		["i:2772"] = "Materials`Ores and Bars",
 		["i:15127"] = "BOE Items`Armor`Green",
-		["i:23118"] = "Jewelcrafting`Items",
-		["i:8212"] = "BOE Items`Armor`Green",
 		["i:4697"] = "BOE Items`Armor`Green",
+		["i:8212"] = "BOE Items`Armor`Green",
+		["i:23118"] = "Jewelcrafting`Items",
 		["i:14123"] = "BOE Items`Armor`Green",
 		["i:1664"] = "BOE Items`Weapons`Green",
 		["i:7357"] = "BOE Items`Armor`Green",
@@ -4387,24 +4387,24 @@ TradeSkillMasterDB = {
 		["i:7524"] = "BOE Items`Armor`Green",
 		["i:14120"] = "BOE Items`Armor`Green",
 		["i:3021"] = "BOE Items`Weapons`Blue",
-		["i:15393"] = "BOE Items`Armor`Green",
+		["i:1300"] = "BOE Items`Weapons`Green",
 		["i:14766"] = "BOE Items`Armor`Green",
 		["i:2592"] = "Materials`Cloth",
 		["i:4305"] = "Materials`Cloth",
 		["i:3309"] = "BOE Items`Armor`Green",
-		["i:5001"] = "BOE Items`Armor`Green",
 		["i:3210"] = "BOE Items`Weapons`Green",
 		["i:8279"] = "BOE Items`Armor`Green",
+		["i:5001"] = "BOE Items`Armor`Green",
 		["i:15965"] = "BOE Items`Armor`Green",
 		["i:14264"] = "BOE Items`Armor`Green",
 		["i:12253"] = "BOE Items`Armor`Green",
-		["i:39963"] = "Jewelcrafting`Items",
-		["i:10370"] = "BOE Items`Armor`Green",
 		["i:45805"] = "Materials`Glyphs",
+		["i:10370"] = "BOE Items`Armor`Green",
+		["i:39963"] = "Jewelcrafting`Items",
 		["i:14277"] = "BOE Items`Armor`Green",
-		["i:41533"] = "Materials`Glyphs",
-		["i:20659"] = "BOE Items`Armor`Green",
 		["i:1996"] = "BOE Items`Armor`Green",
+		["i:20659"] = "BOE Items`Armor`Green",
+		["i:5637"] = "Jewelcrafting`Materials",
 		["i:5256"] = "BOE Items`Weapons`Green",
 		["i:15154"] = "BOE Items`Armor`Green",
 		["i:15566"] = "BOE Items`Armor`Green",
@@ -4428,7 +4428,7 @@ TradeSkillMasterDB = {
 		["i:5748"] = "BOE Items`Weapons`Green",
 		["i:13058"] = "BOE Items`Weapons`Blue",
 		["i:12775"] = "BOE Items`Weapons`Green",
-		["i:3827"] = "Jewelcrafting`Materials",
+		["i:14448"] = "BOE Items`Armor`Green",
 		["i:4253"] = "BOE Items`Armor`Blue",
 		["i:12012"] = "BOE Items`Armor`Green",
 		["i:14158"] = "BOE Items`Armor`Green",
@@ -4455,7 +4455,7 @@ TradeSkillMasterDB = {
 		["i:16653"] = "Misc",
 		["i:8276"] = "BOE Items`Armor`Green",
 		["i:14312"] = "BOE Items`Armor`Green",
-		["i:13131"] = "BOE Items`Armor`Blue",
+		["i:41367"] = "Jewelcrafting`Items",
 		["i:1215"] = "BOE Items`Armor`Green",
 		["i:10254"] = "BOE Items`Armor`Green",
 		["i:14752"] = "BOE Items`Armor`Green",
@@ -4469,7 +4469,7 @@ TradeSkillMasterDB = {
 		["i:15194"] = "BOE Items`Armor`Green",
 		["i:23782"] = "Materials`Engineering",
 		["i:8270"] = "BOE Items`Armor`Green",
-		["i:10082"] = "BOE Items`Armor`Green",
+		["i:15170"] = "BOE Items`Armor`Green",
 		["i:14443"] = "BOE Items`Armor`Green",
 		["i:8176"] = "BOE Items`Armor`Green",
 		["i:13012"] = "BOE Items`Armor`Blue",
@@ -4480,7 +4480,7 @@ TradeSkillMasterDB = {
 		["i:14133"] = "BOE Items`Armor`Green",
 		["i:7932"] = "BOE Items`Armor`Green",
 		["i:944"] = "BOE Items`Weapons`Purple",
-		["i:8295"] = "BOE Items`Armor`Green",
+		["i:15983"] = "BOE Items`Armor`Green",
 		["i:4793"] = "BOE Items`Armor`Green",
 		["i:9509"] = "BOE Items`Armor`Blue",
 		["i:17682"] = "Misc",
@@ -4514,8 +4514,8 @@ TradeSkillMasterDB = {
 		["i:14096"] = "BOE Items`Armor`Green",
 		["i:41103"] = "Materials`Glyphs",
 		["i:2578"] = "BOE Items`Armor`Green",
-		["i:6264"] = "BOE Items`Armor`Green",
 		["i:8251"] = "BOE Items`Armor`Green",
+		["i:6264"] = "BOE Items`Armor`Green",
 		["i:5010"] = "BOE Items`Armor`Green",
 		["i:19165"] = "BOE Items`Armor`Purple",
 		["i:10121"] = "BOE Items`Armor`Green",
@@ -4556,10 +4556,10 @@ TradeSkillMasterDB = {
 		["i:10179"] = "BOE Items`Armor`Green",
 		["i:6568"] = "BOE Items`Armor`Green",
 		["i:7492"] = "BOE Items`Armor`Green",
-		["i:14160:1012"] = "BOE Items`Armor`Green",
+		["i:44326"] = "Darkmoon`Nobles",
 		["i:4822"] = "BOE Items`Armor`Green",
 		["i:7752"] = "BOE Items`Weapons`Blue",
-		["i:44326"] = "Darkmoon`Nobles",
+		["i:14160:1012"] = "BOE Items`Armor`Green",
 		["i:17054"] = "BOE Items`Weapons`Blue",
 		["i:4050"] = "BOE Items`Armor`Green",
 		["i:3037"] = "BOE Items`Weapons`Green",
@@ -4583,7 +4583,7 @@ TradeSkillMasterDB = {
 		["i:14808"] = "BOE Items`Armor`Green",
 		["i:10631"] = "BOE Items`Armor`Blue",
 		["i:7424"] = "BOE Items`Armor`Green",
-		["i:45809"] = "Jewelcrafting`Items",
+		["i:39937"] = "Jewelcrafting`Items",
 		["i:5819"] = "BOE Items`Armor`Blue",
 		["i:14427"] = "BOE Items`Armor`Green",
 		["i:10094"] = "BOE Items`Armor`Green",
@@ -4606,8 +4606,8 @@ TradeSkillMasterDB = {
 		["i:13856"] = "BOE Items`Armor`Green",
 		["i:6239"] = "BOE Items`Armor`Green",
 		["i:15345"] = "BOE Items`Armor`Green",
-		["i:33460"] = "Misc",
 		["i:5773"] = "Recipes",
+		["i:33460"] = "Misc",
 		["i:43424"] = "Materials`Glyphs",
 		["i:14968"] = "BOE Items`Armor`Green",
 		["i:14456"] = "BOE Items`Armor`Green",
@@ -4622,7 +4622,7 @@ TradeSkillMasterDB = {
 		["i:9435"] = "BOE Items`Armor`Blue",
 		["i:14293"] = "BOE Items`Armor`Green",
 		["i:36908"] = "Materials`Herbs`Northrend",
-		["i:6617"] = "BOE Items`Armor`Green",
+		["i:1394"] = "BOE Items`Weapons`Green",
 		["i:15246"] = "BOE Items`Weapons`Green",
 		["i:756"] = "BOE Items`Weapons`Green",
 		["i:22578"] = "Materials`Motes and Primals",
@@ -4633,14 +4633,14 @@ TradeSkillMasterDB = {
 		["i:10275"] = "BOE Items`Armor`Green",
 		["i:7550"] = "BOE Items`Armor`Green",
 		["i:2738"] = "Misc",
-		["i:2966"] = "BOE Items`Armor`Green",
 		["i:1975"] = "BOE Items`Weapons`Blue",
+		["i:14415"] = "BOE Items`Armor`Green",
 		["i:45768"] = "Materials`Glyphs",
 		["i:18677"] = "BOE Items`Armor`Green",
 		["i:7470"] = "BOE Items`Armor`Green",
 		["i:14266"] = "BOE Items`Armor`Green",
-		["i:41266"] = "Jewelcrafting`Materials",
 		["i:9846"] = "BOE Items`Armor`Green",
+		["i:41266"] = "Jewelcrafting`Materials",
 		["i:15550"] = "BOE Items`Armor`Green",
 		["i:18413"] = "BOE Items`Armor`Blue",
 		["i:7942"] = "BOE Items`Weapons`Green",
@@ -4650,7 +4650,7 @@ TradeSkillMasterDB = {
 		["i:6602"] = "BOE Items`Armor`Green",
 		["i:15286"] = "BOE Items`Weapons`Green",
 		["i:14947"] = "BOE Items`Armor`Green",
-		["i:10104"] = "BOE Items`Armor`Green",
+		["i:11302"] = "BOE Items`Armor`Blue",
 		["i:4039"] = "BOE Items`Armor`Green",
 		["i:2020"] = "BOE Items`Weapons`Green",
 		["i:2276"] = "BOE Items`Armor`Blue",
@@ -4669,10 +4669,10 @@ TradeSkillMasterDB = {
 		["i:32836"] = "Jewelcrafting`Items",
 		["i:15562"] = "BOE Items`Armor`Green",
 		["i:8119"] = "BOE Items`Armor`Green",
-		["i:9260"] = "Misc",
+		["i:23108"] = "Jewelcrafting`Items",
 		["i:7519"] = "BOE Items`Armor`Green",
-		["i:6387"] = "BOE Items`Armor`Green",
 		["i:14941"] = "BOE Items`Armor`Green",
+		["i:6387"] = "BOE Items`Armor`Green",
 		["i:9928"] = "BOE Items`Armor`Green",
 		["i:16736"] = "BOE Items`Armor`Blue",
 		["i:5961"] = "BOE Items`Armor`Green",
@@ -4702,19 +4702,19 @@ TradeSkillMasterDB = {
 		["i:31297"] = "BOE Items`Armor`Blue",
 		["i:3851"] = "BOE Items`Weapons`Green",
 		["i:8206"] = "BOE Items`Armor`Green",
-		["i:9802"] = "BOE Items`Armor`Green",
+		["i:2730"] = "Misc",
 		["i:40901"] = "Materials`Glyphs",
 		["i:44264"] = "Darkmoon`Prisms",
 		["i:8286"] = "BOE Items`Armor`Green",
 		["i:10145"] = "BOE Items`Armor`Green",
-		["i:2730"] = "Misc",
-		["i:14928"] = "BOE Items`Armor`Green",
+		["i:9802"] = "BOE Items`Armor`Green",
+		["i:9870"] = "BOE Items`Armor`Green",
 		["i:14201"] = "BOE Items`Armor`Green",
 		["i:8199"] = "BOE Items`Weapons`Green",
 		["i:41099"] = "Materials`Glyphs",
 		["i:39908"] = "Jewelcrafting`Items",
-		["i:9870"] = "BOE Items`Armor`Green",
-		["i:1482"] = "BOE Items`Weapons`Blue",
+		["i:14928"] = "BOE Items`Armor`Green",
+		["i:5180"] = "BOE Items`Armor`Green",
 		["i:20480"] = "BOE Items`Armor`Blue",
 		["i:14551"] = "BOE Items`Armor`Purple",
 		["i:1728"] = "BOE Items`Weapons`Purple",
@@ -4731,13 +4731,13 @@ TradeSkillMasterDB = {
 		["i:23093"] = "BOE Items`Armor`Blue",
 		["i:20477"] = "BOE Items`Armor`Blue",
 		["i:4777"] = "BOE Items`Weapons`Green",
-		["i:20961"] = "Jewelcrafting`Items",
+		["i:15255"] = "BOE Items`Weapons`Green",
 		["i:16806"] = "BOE Items`Armor`Purple",
 		["i:24101"] = "Misc",
 		["i:10230"] = "BOE Items`Armor`Green",
-		["i:39970"] = "Materials`Herbs`Northrend",
+		["i:20961"] = "Jewelcrafting`Items",
 		["i:4790"] = "BOE Items`Armor`Green",
-		["i:15255"] = "BOE Items`Weapons`Green",
+		["i:39970"] = "Materials`Herbs`Northrend",
 		["i:6661"] = "Recipes",
 		["i:12001"] = "BOE Items`Armor`Green",
 		["i:11304"] = "BOE Items`Weapons`Green",
@@ -4765,7 +4765,7 @@ TradeSkillMasterDB = {
 		["i:10172"] = "BOE Items`Armor`Green",
 		["i:18665"] = "BOE Items`Armor`Purple",
 		["i:10388"] = "BOE Items`Armor`Green",
-		["i:7331"] = "BOE Items`Armor`Green",
+		["i:12797"] = "BOE Items`Weapons`Blue",
 		["i:5964"] = "BOE Items`Armor`Green",
 		["i:14685"] = "BOE Items`Armor`Green",
 		["i:2977"] = "BOE Items`Armor`Green",
@@ -4779,14 +4779,14 @@ TradeSkillMasterDB = {
 		["i:13466"] = "Materials`Herbs",
 		["i:10217"] = "BOE Items`Armor`Green",
 		["i:7485"] = "BOE Items`Armor`Green",
-		["i:9786"] = "BOE Items`Armor`Green",
+		["i:21775"] = "Jewelcrafting`Items",
 		["i:22456"] = "Materials`Motes and Primals",
 		["i:4820"] = "BOE Items`Armor`Green",
 		["i:16664"] = "BOE Items`Armor`Green",
 		["i:3065"] = "BOE Items`Armor`Green",
 		["i:8203"] = "BOE Items`Armor`Green",
-		["i:14218"] = "BOE Items`Armor`Green",
 		["i:6587"] = "BOE Items`Armor`Green",
+		["i:14218"] = "BOE Items`Armor`Green",
 		["i:4364"] = "Materials`Engineering",
 		["i:35624"] = "Materials`Eternals",
 		["i:8249"] = "BOE Items`Armor`Green",
@@ -4808,14 +4808,14 @@ TradeSkillMasterDB = {
 		["i:10371"] = "BOE Items`Armor`Green",
 		["i:4455"] = "BOE Items`Armor`Green",
 		["i:19169"] = "BOE Items`Weapons`Purple",
-		["i:2981"] = "BOE Items`Armor`Green",
-		["i:14246"] = "BOE Items`Armor`Green",
 		["i:14933"] = "BOE Items`Armor`Green",
+		["i:14246"] = "BOE Items`Armor`Green",
+		["i:12017"] = "BOE Items`Armor`Green",
 		["i:7446"] = "BOE Items`Armor`Green",
 		["i:14280"] = "BOE Items`Armor`Green",
 		["i:9777"] = "BOE Items`Armor`Green",
 		["i:44273"] = "Darkmoon`Nobles",
-		["i:39002"] = "Materials`Enchanting`Scrolls",
+		["i:15263"] = "BOE Items`Weapons`Green",
 		["i:13023"] = "BOE Items`Weapons`Blue",
 		["i:2982"] = "BOE Items`Armor`Green",
 		["i:6396"] = "BOE Items`Armor`Green",
@@ -4852,7 +4852,7 @@ TradeSkillMasterDB = {
 		["i:24675"] = "BOE Items`Armor`Green",
 		["i:14464"] = "BOE Items`Armor`Green",
 		["i:15295"] = "BOE Items`Weapons`Green",
-		["i:6580"] = "BOE Items`Armor`Green",
+		["i:5503"] = "Misc",
 		["i:8273"] = "BOE Items`Armor`Green",
 		["i:6417"] = "BOE Items`Armor`Green",
 		["i:10098"] = "BOE Items`Armor`Green",
@@ -4864,7 +4864,7 @@ TradeSkillMasterDB = {
 		["i:15211"] = "BOE Items`Weapons`Green",
 		["i:15195"] = "BOE Items`Armor`Green",
 		["i:15367"] = "BOE Items`Armor`Green",
-		["i:5503"] = "Misc",
+		["i:6580"] = "BOE Items`Armor`Green",
 		["i:15237"] = "BOE Items`Weapons`Green",
 		["i:15351"] = "BOE Items`Armor`Green",
 		["i:14045"] = "BOE Items`Armor`Green",
@@ -4887,9 +4887,9 @@ TradeSkillMasterDB = {
 		["i:14603"] = "BOE Items`Armor`Green",
 		["i:9898"] = "BOE Items`Armor`Green",
 		["i:2098"] = "BOE Items`Weapons`Blue",
+		["i:39002"] = "Materials`Enchanting`Scrolls",
 		["i:39990"] = "Jewelcrafting`Items",
-		["i:15263"] = "BOE Items`Weapons`Green",
-		["i:12017"] = "BOE Items`Armor`Green",
+		["i:2981"] = "BOE Items`Armor`Green",
 		["i:9381"] = "BOE Items`Weapons`Blue",
 		["i:4722"] = "BOE Items`Armor`Green",
 		["i:8120"] = "BOE Items`Armor`Green",
@@ -4910,7 +4910,7 @@ TradeSkillMasterDB = {
 		["i:14412"] = "BOE Items`Armor`Green",
 		["i:11976"] = "BOE Items`Armor`Green",
 		["i:21284"] = "Misc",
-		["i:21775"] = "Jewelcrafting`Items",
+		["i:9786"] = "BOE Items`Armor`Green",
 		["i:13094"] = "BOE Items`Armor`Blue",
 		["i:12007"] = "BOE Items`Armor`Green",
 		["i:14322"] = "BOE Items`Armor`Green",
@@ -4919,7 +4919,7 @@ TradeSkillMasterDB = {
 		["i:17033"] = "Materials`Reagents",
 		["i:15486"] = "BOE Items`Armor`Green",
 		["i:4830"] = "BOE Items`Armor`Green",
-		["i:12797"] = "BOE Items`Weapons`Blue",
+		["i:7331"] = "BOE Items`Armor`Green",
 		["i:15134"] = "BOE Items`Armor`Green",
 		["i:15270"] = "BOE Items`Weapons`Green",
 		["i:14596"] = "BOE Items`Armor`Green",
@@ -4951,7 +4951,7 @@ TradeSkillMasterDB = {
 		["i:10268"] = "BOE Items`Armor`Green",
 		["i:8169"] = "Materials`Leather",
 		["i:7533"] = "BOE Items`Armor`Green",
-		["i:5180"] = "BOE Items`Armor`Green",
+		["i:1482"] = "BOE Items`Weapons`Blue",
 		["i:15063"] = "BOE Items`Armor`Blue",
 		["i:12252"] = "BOE Items`Weapons`Green",
 		["i:15984"] = "BOE Items`Armor`Green",
@@ -4977,7 +4977,7 @@ TradeSkillMasterDB = {
 		["i:15323"] = "BOE Items`Weapons`Green",
 		["i:10092"] = "BOE Items`Armor`Green",
 		["i:21294"] = "Misc",
-		["i:23108"] = "Jewelcrafting`Items",
+		["i:9260"] = "Misc",
 		["i:20537"] = "BOE Items`Armor`Blue",
 		["i:9251"] = "Misc",
 		["i:24822"] = "BOE Items`Armor`Green",
@@ -4988,7 +4988,7 @@ TradeSkillMasterDB = {
 		["i:14565"] = "BOE Items`Armor`Green",
 		["i:16697"] = "BOE Items`Armor`Blue",
 		["i:1460"] = "BOE Items`Weapons`Green",
-		["i:11302"] = "BOE Items`Armor`Blue",
+		["i:10104"] = "BOE Items`Armor`Green",
 		["i:15417"] = "Materials`Leather",
 		["i:10139"] = "BOE Items`Armor`Green",
 		["i:19683"] = "BOE Items`Armor`Blue",
@@ -4997,11 +4997,11 @@ TradeSkillMasterDB = {
 		["i:1288"] = "Materials`Reagents",
 		["i:39334"] = "Materials`Pigments and Ink",
 		["i:14189"] = "BOE Items`Armor`Green",
-		["i:14415"] = "BOE Items`Armor`Green",
+		["i:2966"] = "BOE Items`Armor`Green",
 		["i:15668"] = "BOE Items`Armor`Green",
 		["i:19689"] = "BOE Items`Armor`Blue",
 		["i:11289"] = "BOE Items`Weapons`Green",
-		["i:1394"] = "BOE Items`Weapons`Green",
+		["i:6617"] = "BOE Items`Armor`Green",
 		["i:913"] = "BOE Items`Weapons`Green",
 		["i:17038"] = "Materials`Reagents",
 		["i:9843"] = "BOE Items`Armor`Green",
@@ -5022,7 +5022,7 @@ TradeSkillMasterDB = {
 		["i:5008"] = "BOE Items`Armor`Green",
 		["i:1457"] = "BOE Items`Weapons`Green",
 		["i:8213"] = "BOE Items`Armor`Green",
-		["i:39937"] = "Jewelcrafting`Items",
+		["i:45809"] = "Jewelcrafting`Items",
 		["i:15231"] = "BOE Items`Weapons`Green",
 		["i:14665"] = "BOE Items`Armor`Green",
 		["i:15541"] = "BOE Items`Armor`Green",
@@ -5084,7 +5084,7 @@ TradeSkillMasterDB = {
 		["i:3208"] = "BOE Items`Weapons`Green",
 		["i:5962"] = "BOE Items`Armor`Green",
 		["i:7537"] = "BOE Items`Armor`Green",
-		["i:15983"] = "BOE Items`Armor`Green",
+		["i:8295"] = "BOE Items`Armor`Green",
 		["i:2802"] = "BOE Items`Armor`Blue",
 		["i:15638"] = "BOE Items`Armor`Green",
 		["i:3019"] = "BOE Items`Armor`Green",
@@ -5092,13 +5092,13 @@ TradeSkillMasterDB = {
 		["i:1639"] = "BOE Items`Weapons`Green",
 		["i:9772"] = "BOE Items`Armor`Green",
 		["i:14402"] = "BOE Items`Armor`Green",
-		["i:15170"] = "BOE Items`Armor`Green",
+		["i:10082"] = "BOE Items`Armor`Green",
 		["i:6541"] = "BOE Items`Armor`Green",
 		["i:14957"] = "BOE Items`Armor`Green",
 		["i:3291"] = "BOE Items`Armor`Green",
 		["i:9899"] = "BOE Items`Armor`Green",
 		["i:5565"] = "Materials`Reagents",
-		["i:41367"] = "Jewelcrafting`Items",
+		["i:13131"] = "BOE Items`Armor`Blue",
 		["i:3492"] = "BOE Items`Weapons`Green",
 		["i:14557"] = "BOE Items`Armor`Purple",
 		["i:15247"] = "BOE Items`Weapons`Green",
@@ -5115,7 +5115,7 @@ TradeSkillMasterDB = {
 		["i:17035"] = "Materials`Reagents",
 		["i:3821"] = "Materials`Herbs",
 		["i:2990"] = "BOE Items`Armor`Green",
-		["i:14448"] = "BOE Items`Armor`Green",
+		["i:3827"] = "Jewelcrafting`Materials",
 		["i:15274"] = "BOE Items`Weapons`Green",
 		["i:1218"] = "BOE Items`Weapons`Green",
 		["i:2984"] = "BOE Items`Armor`Green",
@@ -5129,7 +5129,7 @@ TradeSkillMasterDB = {
 		["i:5636"] = "Materials`Reagents",
 		["i:14744"] = "BOE Items`Armor`Green",
 		["i:880"] = "BOE Items`Weapons`Green",
-		["i:5637"] = "Jewelcrafting`Materials",
+		["i:41533"] = "Materials`Glyphs",
 		["i:15621"] = "BOE Items`Armor`Green",
 		["i:15654"] = "BOE Items`Armor`Green",
 		["i:2988"] = "BOE Items`Armor`Green",
@@ -5139,7 +5139,7 @@ TradeSkillMasterDB = {
 		["i:16988"] = "BOE Items`Armor`Purple",
 		["i:8183"] = "BOE Items`Weapons`Green",
 		["i:6204"] = "BOE Items`Armor`Green",
-		["i:1300"] = "BOE Items`Weapons`Green",
+		["i:15393"] = "BOE Items`Armor`Green",
 		["i:776"] = "BOE Items`Weapons`Blue",
 		["i:1933"] = "BOE Items`Weapons`Green",
 		["i:14139"] = "BOE Items`Armor`Blue",
@@ -5165,7 +5165,7 @@ TradeSkillMasterDB = {
 		["i:10168"] = "BOE Items`Armor`Green",
 		["i:1951"] = "BOE Items`Weapons`Green",
 		["i:2292"] = "BOE Items`Armor`Blue",
-		["i:1481"] = "BOE Items`Weapons`Blue",
+		["i:10180"] = "BOE Items`Armor`Green",
 		["i:7474"] = "BOE Items`Armor`Green",
 		["i:15658"] = "BOE Items`Armor`Green",
 		["i:15679"] = "BOE Items`Armor`Green",
@@ -5178,7 +5178,7 @@ TradeSkillMasterDB = {
 		["i:8299"] = "BOE Items`Armor`Green",
 		["i:10278"] = "BOE Items`Armor`Green",
 		["i:14094"] = "BOE Items`Armor`Green",
-		["i:12424"] = "BOE Items`Armor`Green",
+		["i:14771"] = "BOE Items`Armor`Green",
 		["i:14550"] = "BOE Items`Armor`Purple",
 		["i:9767"] = "BOE Items`Armor`Green",
 		["i:4419"] = "Misc",
@@ -5203,10 +5203,10 @@ TradeSkillMasterDB = {
 		["i:18697"] = "BOE Items`Armor`Blue",
 		["i:14249"] = "BOE Items`Armor`Green",
 		["i:7370"] = "BOE Items`Armor`Green",
-		["i:3174"] = "Misc",
+		["i:15076"] = "BOE Items`Armor`Green",
 		["i:6337"] = "BOE Items`Armor`Green",
-		["i:14243"] = "BOE Items`Armor`Green",
-		["i:14445"] = "BOE Items`Armor`Green",
+		["i:20909"] = "Jewelcrafting`Items",
+		["i:19057"] = "BOE Items`Armor`Blue",
 		["i:14800"] = "BOE Items`Armor`Green",
 		["i:9829"] = "BOE Items`Armor`Green",
 		["i:20662"] = "BOE Items`Armor`Green",
@@ -5221,16 +5221,16 @@ TradeSkillMasterDB = {
 		["i:6418"] = "BOE Items`Armor`Green",
 		["i:1493"] = "BOE Items`Weapons`Blue",
 		["i:16716"] = "BOE Items`Armor`Blue",
-		["i:13123"] = "BOE Items`Armor`Blue",
+		["i:2838"] = "Materials`Ores and Bars`Solid & Heavy Stone",
 		["i:1938"] = "BOE Items`Weapons`Green",
 		["i:14173"] = "BOE Items`Armor`Green",
-		["i:9296"] = "Recipes",
+		["i:15054"] = "BOE Items`Armor`Green",
 		["i:13032"] = "BOE Items`Weapons`Blue",
 		["i:14919"] = "BOE Items`Armor`Green",
 		["i:14934"] = "BOE Items`Armor`Green",
 		["i:3197"] = "BOE Items`Weapons`Green",
 		["i:23103"] = "Jewelcrafting`Items",
-		["i:8285"] = "BOE Items`Armor`Green",
+		["i:15429"] = "BOE Items`Armor`Green",
 		["i:820"] = "BOE Items`Weapons`Green",
 		["i:24050"] = "Jewelcrafting`Items",
 		["i:1973"] = "BOE Items`Armor`Blue",
@@ -5243,7 +5243,7 @@ TradeSkillMasterDB = {
 		["i:17026"] = "Materials`Reagents",
 		["i:2291"] = "BOE Items`Weapons`Purple",
 		["i:14203"] = "BOE Items`Armor`Green",
-		["i:21932"] = "Jewelcrafting`Items",
+		["i:7433"] = "BOE Items`Armor`Green",
 		["i:2319"] = "Materials`Leather",
 		["i:2227"] = "BOE Items`Weapons`Green",
 		["i:9490"] = "BOE Items`Weapons`Blue",
@@ -5251,7 +5251,7 @@ TradeSkillMasterDB = {
 		["i:15504"] = "BOE Items`Armor`Green",
 		["i:4069"] = "BOE Items`Armor`Green",
 		["i:10154"] = "BOE Items`Armor`Green",
-		["i:9937"] = "BOE Items`Armor`Green",
+		["i:9920"] = "BOE Items`Armor`Green",
 		["i:1993"] = "BOE Items`Armor`Green",
 		["i:14398"] = "BOE Items`Armor`Green",
 		["i:8160"] = "BOE Items`Armor`Green",
@@ -5295,7 +5295,7 @@ TradeSkillMasterDB = {
 		["i:43552"] = "Materials`Glyphs",
 		["i:39948"] = "Jewelcrafting`Items",
 		["i:14745"] = "BOE Items`Armor`Green",
-		["i:31154"] = "Jewelcrafting`Items",
+		["i:15249"] = "BOE Items`Weapons`Green",
 		["i:21801"] = "BOE Items`Weapons`Blue",
 		["i:6440"] = "BOE Items`Armor`Blue",
 		["i:2073"] = "BOE Items`Weapons`Green",
@@ -5341,7 +5341,7 @@ TradeSkillMasterDB = {
 		["i:15578"] = "BOE Items`Armor`Green",
 		["i:14268"] = "BOE Items`Armor`Green",
 		["i:14107"] = "BOE Items`Armor`Green",
-		["i:1927"] = "BOE Items`Weapons`Green",
+		["i:10131"] = "BOE Items`Armor`Green",
 		["i:14950"] = "BOE Items`Armor`Green",
 		["i:24617:-36"] = "BOE Items`Armor`Green",
 		["i:13010"] = "BOE Items`Armor`Blue",
@@ -5372,7 +5372,7 @@ TradeSkillMasterDB = {
 		["i:3192:1095"] = "BOE Items`Armor`Green",
 		["i:1461"] = "BOE Items`Weapons`Green",
 		["i:13036"] = "BOE Items`Weapons`Blue",
-		["i:39916"] = "Jewelcrafting`Items",
+		["i:14199"] = "BOE Items`Armor`Green",
 		["i:9855"] = "BOE Items`Armor`Green",
 		["i:36181"] = "BOE Items`Armor`Green",
 		["i:22786"] = "Materials`Herbs",
@@ -5416,7 +5416,7 @@ TradeSkillMasterDB = {
 		["i:36932"] = "Materials`Jewelcrafting`Green",
 		["i:14553"] = "BOE Items`Armor`Purple",
 		["i:12364"] = "Jewelcrafting`Materials",
-		["i:18676"] = "BOE Items`Armor`Blue",
+		["i:24605"] = "BOE Items`Armor`Green",
 		["i:36905"] = "Materials`Herbs`Northrend",
 		["i:7944"] = "BOE Items`Weapons`Green",
 		["i:43554"] = "Materials`Glyphs",
@@ -5659,8 +5659,8 @@ TradeSkillMasterDB = {
 			["Materials`Cloth"] = true,
 			["Darkmoon`Undead"] = true,
 			["Materials`Jewelcrafting`Green"] = true,
-			["Materials`Enchanting`Scrolls"] = true,
 			["BOE Items`Armor`Blue"] = true,
+			["Materials`Enchanting`Scrolls"] = true,
 			["BOE Items`Armor`Green"] = true,
 			["Materials`Leather"] = true,
 			["Materials`Enchanting`Dust"] = true,
@@ -5906,9 +5906,9 @@ TradeSkillMasterDB = {
 		["Blue Leather Bagi:85612300"] = 1641420784,
 		["Tigerseyei:8181693"] = 1641630458,
 		["Scroll of Agilityi:301211481"] = 1641679407,
-		["Linen Clothi:25895205"] = 1641585005,
-		["Dwarven Hatchet of Strengthi:2073:614632"] = 1641415536,
 		["Beaded Wraps of Spiriti:14094:16112999"] = 1641712604,
+		["Dwarven Hatchet of Strengthi:2073:614632"] = 1641415536,
+		["Worn Turtle Shell Shieldi:644716600"] = 1641712604,
 		["Formula: Enchant Weapon - Minor Beastslayeri:634811495"] = 1641712604,
 		["Shredder Operating Manual - Page 12i:166561407"] = 1641630458,
 		["Linen Clothi:25897287"] = 1641630458,
@@ -5918,8 +5918,8 @@ TradeSkillMasterDB = {
 		["Rigid Gloves of the Eaglei:15115:848110200"] = 1641630458,
 		["Light Featheri:17056174301"] = 1641415536,
 		["Lesser Healing Potioni:858276"] = 1641630458,
-		["Tin Orei:2771102270"] = 1641630458,
-		["Bruiseweedi:24531218"] = 1641679407,
+		["Silver Bari:284244096"] = 1641630458,
+		["Light Featheri:170564708"] = 1641712604,
 		["Linen Clothi:258916864"] = 1641415536,
 		["Feral Gloves of the Owli:15310:759114000"] = 1641420784,
 		["Bloodspattered Sash of the Tigeri:15492:67012449"] = 1641415536,
@@ -5927,12 +5927,12 @@ TradeSkillMasterDB = {
 		["Feral Gloves of the Owli:15310:75914000"] = 1641712604,
 		["Snakeskin Bagi:6446110000"] = 1641712604,
 		["Light Featheri:170563483"] = 1641630458,
-		["Light Featheri:170564708"] = 1641712604,
-		["Heavy Leatheri:42341373"] = 1641630458,
+		["Shredder Operating Manual - Page 4i:1664811997"] = 1641630458,
+		["Wool Clothi:259242944"] = 1641585005,
 		["Lesser Healing Potioni:8582464"] = 1641712604,
 		["Linen Clothi:2589201080"] = 1641415536,
-		["Prospector's Sashi:1455913199"] = 1641679407,
 		["Wool Clothi:259284904"] = 1641712604,
+		["Prospector's Sashi:1455913199"] = 1641679407,
 		["Grunt's Cape of the Gorillai:15508:92713720"] = 1641712604,
 		["Feral Gloves of the Owli:15310:759123976"] = 1641630458,
 		["Ancestral Tunici:329212947"] = 1641712604,
@@ -5942,24 +5942,24 @@ TradeSkillMasterDB = {
 		["Gleaming Claymore of the Whalei:15248:101812104"] = 1641712604,
 		["Polished Zweihander of the Eaglei:15249:85418798"] = 1641712604,
 		["Tin Bari:3576202580"] = 1641630200,
-		["Light Featheri:170562322"] = 1641630458,
+		["Coarse Stonei:2836109610"] = 1641630458,
 		["Opaque Wandi:520711807"] = 1641679407,
 		["Shredder Operating Manual - Page 1i:1664516998"] = 1641630458,
-		["Coarse Stonei:2836109610"] = 1641630458,
+		["Light Featheri:170562322"] = 1641630458,
 		["Gleaming Claymore of the Monkeyi:15248:59312104"] = 1641712604,
 		["Bandit Buckler of Agilityi:9778:1814400"] = 1641420784,
 		["Pagan Bands of the Whalei:14160:101214100"] = 1641679407,
-		["Wool Clothi:259242944"] = 1641585005,
+		["Heavy Leatheri:42341373"] = 1641630458,
 		["Robust Bracers of Nature's Wrathi:15122:199312799"] = 1641679407,
 		["Linen Clothi:2589202440"] = 1641712604,
-		["Shredder Operating Manual - Page 4i:1664811997"] = 1641630458,
+		["Bruiseweedi:24531218"] = 1641679407,
 		["Scroll of Strengthi:9541896"] = 1641679407,
 		["Bandit Buckler of Agilityi:9778:1815500"] = 1641712604,
 		["Hunting Bowi:818012425"] = 1641420784,
 		["Perfect Deviate Scalei:6471215000"] = 1641712604,
-		["Silver Bari:284244096"] = 1641630458,
+		["Tin Orei:2771102270"] = 1641630458,
 		["Copper Orei:27702590"] = 1641415536,
-		["Worn Turtle Shell Shieldi:644716600"] = 1641712604,
+		["Linen Clothi:25895205"] = 1641585005,
 	},
 	["s@Battlearm - Horde - Hydraxian Waterlords@internalData@auctionQuantity"] = {
 	},
@@ -5993,8 +5993,8 @@ TradeSkillMasterDB = {
 		["i:7100"] = 1,
 		["i:4865"] = 1,
 		["i:159"] = 2,
-		["i:4867"] = 2,
 		["i:6948"] = 1,
+		["i:4867"] = 2,
 		["i:7098"] = 5,
 		["i:1377"] = 2,
 		["i:1368"] = 2,
@@ -6161,11 +6161,11 @@ TradeSkillMasterDB = {
 	["g@ @auctionUIContext@showDefault"] = true,
 	["s@Poklopac - Horde - Mirage Raceway@internalData@bagQuantity"] = {
 		["i:6948"] = 1,
-		["i:117"] = 1,
-		["i:1370"] = 1,
 		["i:2649"] = 1,
-		["i:4865"] = 2,
+		["i:1370"] = 1,
 		["i:2512"] = 195,
+		["i:4865"] = 2,
+		["i:117"] = 1,
 	},
 	["c@Grgur - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
 		["collapsed"] = {
@@ -6382,11 +6382,9 @@ TradeSkillMasterDB = {
 		["i:33444"] = 25,
 		["i:7005"] = 1,
 		["i:42945"] = 1,
-		["i:40097"] = 1,
 		["i:24391"] = 1,
 		["i:43869"] = 1,
-		["i:40070"] = 3,
-		["i:33454"] = 37,
+		["i:40097"] = 1,
 		["i:35604"] = 1,
 		["i:42780"] = 10,
 		["i:24458"] = 1,
@@ -6395,23748 +6393,23749 @@ TradeSkillMasterDB = {
 		["i:40078"] = 9,
 		["i:44328"] = 6,
 		["i:29327"] = 1,
-		["i:44332"] = 1,
 		["i:6948"] = 1,
-		["i:33447"] = 39,
-		["i:27732"] = 1,
-		["i:28065"] = 1,
 		["i:11118"] = 1,
-		["i:40068"] = 6,
-		["i:29330"] = 1,
+		["i:33454"] = 37,
 		["i:42991"] = 2,
+		["i:40070"] = 3,
+		["i:44332"] = 1,
+		["i:33447"] = 39,
 		["i:21177"] = 192,
-		["i:44325"] = 3,
-		["i:44331"] = 5,
+		["i:28065"] = 1,
+		["i:40068"] = 6,
 		["i:35603"] = 1,
 		["i:44329"] = 3,
 		["i:43511"] = 6,
+		["i:44331"] = 5,
+		["i:44325"] = 3,
 		["i:25500"] = 1,
+		["i:29330"] = 1,
+		["i:27732"] = 1,
 		["i:25710"] = 1,
 	},
 	["g@ @internalData@destroyingHistory"] = {
 		[51005] = {
 			{
-				["time"] = 1699795632,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795632,
 			}, -- [1]
 			{
-				["time"] = 1699795634,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795634,
 			}, -- [2]
 			{
-				["time"] = 1699795660,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795660,
 			}, -- [3]
 			{
-				["time"] = 1699795662,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795662,
 			}, -- [4]
 			{
-				["time"] = 1699795663,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795663,
 			}, -- [5]
 			{
-				["time"] = 1699795665,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795665,
 			}, -- [6]
 			{
-				["time"] = 1699795666,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795666,
 			}, -- [7]
 			{
-				["time"] = 1699795669,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795669,
 			}, -- [8]
 			{
-				["time"] = 1699795672,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795672,
 			}, -- [9]
 			{
-				["time"] = 1699795673,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795673,
 			}, -- [10]
 			{
-				["time"] = 1699795675,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795675,
 			}, -- [11]
 			{
-				["time"] = 1699795677,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795677,
 			}, -- [12]
 			{
-				["time"] = 1699795678,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795678,
 			}, -- [13]
 			{
-				["time"] = 1699795684,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795684,
 			}, -- [14]
 			{
-				["time"] = 1699795687,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795687,
 			}, -- [15]
 			{
-				["time"] = 1699795688,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795688,
 			}, -- [16]
 			{
-				["time"] = 1699795690,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795690,
 			}, -- [17]
 			{
-				["time"] = 1699795692,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699795692,
 			}, -- [18]
 			{
-				["time"] = 1699795694,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795694,
 			}, -- [19]
 			{
-				["time"] = 1699795695,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795695,
 			}, -- [20]
 			{
-				["time"] = 1699795697,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795697,
 			}, -- [21]
 			{
-				["time"] = 1699795699,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795699,
 			}, -- [22]
 			{
-				["time"] = 1699795700,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795700,
 			}, -- [23]
 			{
-				["time"] = 1699795702,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795702,
 			}, -- [24]
 			{
-				["time"] = 1699795705,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795705,
 			}, -- [25]
 			{
-				["time"] = 1699795707,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795707,
 			}, -- [26]
 			{
-				["time"] = 1699795709,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795709,
 			}, -- [27]
 			{
-				["time"] = 1699795710,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795710,
 			}, -- [28]
 			{
-				["time"] = 1699795713,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795713,
 			}, -- [29]
 			{
-				["time"] = 1699795714,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795714,
 			}, -- [30]
 			{
-				["time"] = 1699795717,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795717,
 			}, -- [31]
 			{
-				["time"] = 1699795719,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795719,
 			}, -- [32]
 			{
-				["time"] = 1699795721,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795721,
 			}, -- [33]
 			{
-				["time"] = 1699795722,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795722,
 			}, -- [34]
 			{
-				["time"] = 1699795724,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795724,
 			}, -- [35]
 			{
-				["time"] = 1699795725,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795725,
 			}, -- [36]
 			{
-				["time"] = 1699795726,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795726,
 			}, -- [37]
 			{
-				["time"] = 1699795731,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795731,
 			}, -- [38]
 			{
-				["time"] = 1699795733,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795733,
 			}, -- [39]
 			{
-				["time"] = 1699795734,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795734,
 			}, -- [40]
 			{
-				["time"] = 1699795736,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795736,
 			}, -- [41]
 			{
-				["time"] = 1699795737,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795737,
 			}, -- [42]
 			{
-				["time"] = 1699795740,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795740,
 			}, -- [43]
 			{
-				["time"] = 1699795742,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795742,
 			}, -- [44]
 			{
-				["time"] = 1699795743,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795743,
 			}, -- [45]
 			{
-				["time"] = 1699795746,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795746,
 			}, -- [46]
 			{
-				["time"] = 1699795748,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795748,
 			}, -- [47]
 			{
-				["time"] = 1699795749,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795749,
 			}, -- [48]
 			{
-				["time"] = 1699795751,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795751,
 			}, -- [49]
 			{
-				["time"] = 1699795752,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795752,
 			}, -- [50]
 			{
-				["time"] = 1699795755,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795755,
 			}, -- [51]
 			{
-				["time"] = 1699795757,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795757,
 			}, -- [52]
 			{
-				["time"] = 1699795762,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795762,
 			}, -- [53]
 			{
-				["time"] = 1699795764,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795764,
 			}, -- [54]
 			{
-				["time"] = 1699795767,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795767,
 			}, -- [55]
 			{
-				["time"] = 1699795769,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795769,
 			}, -- [56]
 			{
-				["time"] = 1699795772,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795772,
 			}, -- [57]
 			{
-				["time"] = 1699795774,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795774,
 			}, -- [58]
 			{
-				["time"] = 1699795775,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795775,
 			}, -- [59]
 			{
-				["time"] = 1699795777,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795777,
 			}, -- [60]
 			{
-				["time"] = 1699795778,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795778,
 			}, -- [61]
 			{
-				["time"] = 1699795779,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795779,
 			}, -- [62]
 			{
-				["time"] = 1699795781,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795781,
 			}, -- [63]
 			{
-				["time"] = 1699795784,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795784,
 			}, -- [64]
 			{
-				["time"] = 1699795785,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795785,
 			}, -- [65]
 			{
-				["time"] = 1699795788,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795788,
 			}, -- [66]
 			{
-				["time"] = 1699795795,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795795,
 			}, -- [67]
 			{
-				["time"] = 1699795797,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795797,
 			}, -- [68]
 			{
-				["time"] = 1699795799,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795799,
 			}, -- [69]
 			{
-				["time"] = 1699795800,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795800,
 			}, -- [70]
 			{
-				["time"] = 1699795801,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795801,
 			}, -- [71]
 			{
-				["time"] = 1699795803,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795803,
 			}, -- [72]
 			{
-				["time"] = 1699795806,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795806,
 			}, -- [73]
 			{
-				["time"] = 1699795807,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795807,
 			}, -- [74]
 			{
-				["time"] = 1699795811,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795811,
 			}, -- [75]
 			{
-				["time"] = 1699795812,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795812,
 			}, -- [76]
 			{
-				["time"] = 1699795814,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795814,
 			}, -- [77]
 			{
-				["time"] = 1699795817,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795817,
 			}, -- [78]
 			{
-				["time"] = 1699795818,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795818,
 			}, -- [79]
 			{
-				["time"] = 1699795820,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795820,
 			}, -- [80]
 			{
-				["time"] = 1699795821,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795821,
 			}, -- [81]
 			{
-				["time"] = 1699795823,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795823,
 			}, -- [82]
 			{
-				["time"] = 1699795824,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795824,
 			}, -- [83]
 			{
-				["time"] = 1699795826,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795826,
 			}, -- [84]
 			{
-				["time"] = 1699795827,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795827,
 			}, -- [85]
 			{
-				["time"] = 1699795829,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795829,
 			}, -- [86]
 			{
-				["time"] = 1699795831,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795831,
 			}, -- [87]
 			{
-				["time"] = 1699795832,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795832,
 			}, -- [88]
 			{
-				["time"] = 1699795834,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795834,
 			}, -- [89]
 			{
-				["time"] = 1699795835,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795835,
 			}, -- [90]
 			{
-				["time"] = 1699795837,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795837,
 			}, -- [91]
 			{
-				["time"] = 1699795838,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795838,
 			}, -- [92]
 			{
-				["time"] = 1699795841,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795841,
 			}, -- [93]
 			{
-				["time"] = 1699795843,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795843,
 			}, -- [94]
 			{
-				["time"] = 1699795844,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795844,
 			}, -- [95]
 			{
-				["time"] = 1699795846,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795846,
 			}, -- [96]
 			{
-				["time"] = 1699795847,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795847,
 			}, -- [97]
 			{
-				["time"] = 1699795849,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795849,
 			}, -- [98]
 			{
-				["time"] = 1699795850,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795850,
 			}, -- [99]
 			{
-				["time"] = 1699795852,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795852,
 			}, -- [100]
 			{
-				["time"] = 1699795853,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795853,
 			}, -- [101]
 			{
-				["time"] = 1699795855,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795855,
 			}, -- [102]
 			{
-				["time"] = 1699795859,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795859,
 			}, -- [103]
 			{
-				["time"] = 1699795861,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795861,
 			}, -- [104]
 			{
-				["time"] = 1699795862,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795862,
 			}, -- [105]
 			{
-				["time"] = 1699795864,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795864,
 			}, -- [106]
 			{
-				["time"] = 1699795865,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795865,
 			}, -- [107]
 			{
-				["time"] = 1699795867,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795867,
 			}, -- [108]
 			{
-				["time"] = 1699795869,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795869,
 			}, -- [109]
 			{
-				["time"] = 1699795870,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795870,
 			}, -- [110]
 			{
-				["time"] = 1699795871,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795871,
 			}, -- [111]
 			{
-				["time"] = 1699795877,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795877,
 			}, -- [112]
 			{
-				["time"] = 1699795879,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795879,
 			}, -- [113]
 			{
-				["time"] = 1699795880,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795880,
 			}, -- [114]
 			{
-				["time"] = 1699795882,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795882,
 			}, -- [115]
 			{
-				["time"] = 1699795884,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795884,
 			}, -- [116]
 			{
-				["time"] = 1699795885,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795885,
 			}, -- [117]
 			{
-				["time"] = 1699795886,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795886,
 			}, -- [118]
 			{
-				["time"] = 1699795888,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795888,
 			}, -- [119]
 			{
-				["time"] = 1699795889,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795889,
 			}, -- [120]
 			{
-				["time"] = 1699795891,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795891,
 			}, -- [121]
 			{
-				["time"] = 1699795893,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795893,
 			}, -- [122]
 			{
-				["time"] = 1699795894,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795894,
 			}, -- [123]
 			{
-				["time"] = 1699795896,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795896,
 			}, -- [124]
 			{
-				["time"] = 1699795897,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795897,
 			}, -- [125]
 			{
-				["time"] = 1699795900,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795900,
 			}, -- [126]
 			{
-				["time"] = 1699795902,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795902,
 			}, -- [127]
 			{
-				["time"] = 1699795906,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795906,
 			}, -- [128]
 			{
-				["time"] = 1699795907,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795907,
 			}, -- [129]
 			{
-				["time"] = 1699795909,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795909,
 			}, -- [130]
 			{
-				["time"] = 1699795910,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795910,
 			}, -- [131]
 			{
-				["time"] = 1699795912,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795912,
 			}, -- [132]
 			{
-				["time"] = 1699795913,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795913,
 			}, -- [133]
 			{
-				["time"] = 1699795915,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795915,
 			}, -- [134]
 			{
-				["time"] = 1699795916,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795916,
 			}, -- [135]
 			{
-				["time"] = 1699795918,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795918,
 			}, -- [136]
 			{
-				["time"] = 1699795920,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795920,
 			}, -- [137]
 			{
-				["time"] = 1699795921,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795921,
 			}, -- [138]
 			{
-				["time"] = 1699795924,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795924,
 			}, -- [139]
 			{
-				["time"] = 1699795926,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795926,
 			}, -- [140]
 			{
-				["time"] = 1699795928,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795928,
 			}, -- [141]
 			{
-				["time"] = 1699795929,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795929,
 			}, -- [142]
 			{
-				["time"] = 1699795938,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795938,
 			}, -- [143]
 			{
-				["time"] = 1699795941,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795941,
 			}, -- [144]
 			{
-				["time"] = 1699795943,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795943,
 			}, -- [145]
 			{
-				["time"] = 1699795944,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795944,
 			}, -- [146]
 			{
-				["time"] = 1699795946,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795946,
 			}, -- [147]
 			{
-				["time"] = 1699795947,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795947,
 			}, -- [148]
 			{
-				["time"] = 1699795949,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795949,
 			}, -- [149]
 			{
-				["time"] = 1699795950,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795950,
 			}, -- [150]
 			{
-				["time"] = 1699795955,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795955,
 			}, -- [151]
 			{
-				["time"] = 1699795956,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795956,
 			}, -- [152]
 			{
-				["time"] = 1699795958,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795958,
 			}, -- [153]
 			{
-				["time"] = 1699795962,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795962,
 			}, -- [154]
 			{
-				["time"] = 1699795965,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795965,
 			}, -- [155]
 			{
-				["time"] = 1699795967,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795967,
 			}, -- [156]
 			{
-				["time"] = 1699795969,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795969,
 			}, -- [157]
 			{
-				["time"] = 1699795970,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795970,
 			}, -- [158]
 			{
-				["time"] = 1699795973,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795973,
 			}, -- [159]
 			{
-				["time"] = 1699795974,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795974,
 			}, -- [160]
 			{
-				["time"] = 1699795976,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795976,
 			}, -- [161]
 			{
-				["time"] = 1699795980,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795980,
 			}, -- [162]
 			{
-				["time"] = 1699795982,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795982,
 			}, -- [163]
 			{
-				["time"] = 1699795983,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795983,
 			}, -- [164]
 			{
-				["time"] = 1699795986,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795986,
 			}, -- [165]
 			{
-				["time"] = 1699795988,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795988,
 			}, -- [166]
 			{
-				["time"] = 1699795991,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795991,
 			}, -- [167]
 			{
-				["time"] = 1699795992,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795992,
 			}, -- [168]
 			{
-				["time"] = 1699795994,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795994,
 			}, -- [169]
 			{
-				["time"] = 1699795995,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795995,
 			}, -- [170]
 			{
-				["time"] = 1699795997,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795997,
 			}, -- [171]
 			{
-				["time"] = 1699795999,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699795999,
 			}, -- [172]
 			{
-				["time"] = 1699796000,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796000,
 			}, -- [173]
 			{
-				["time"] = 1699796002,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796002,
 			}, -- [174]
 			{
-				["time"] = 1699796003,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796003,
 			}, -- [175]
 			{
-				["time"] = 1699796005,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796005,
 			}, -- [176]
 			{
-				["time"] = 1699796007,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796007,
 			}, -- [177]
 			{
-				["time"] = 1699796009,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796009,
 			}, -- [178]
 			{
-				["time"] = 1699796010,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796010,
 			}, -- [179]
 			{
-				["time"] = 1699796015,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796015,
 			}, -- [180]
 			{
-				["time"] = 1699796016,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796016,
 			}, -- [181]
 			{
-				["time"] = 1699796020,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796020,
 			}, -- [182]
 			{
-				["time"] = 1699796022,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796022,
 			}, -- [183]
 			{
-				["time"] = 1699796023,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796023,
 			}, -- [184]
 			{
-				["time"] = 1699796025,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796025,
 			}, -- [185]
 			{
-				["time"] = 1699796026,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796026,
 			}, -- [186]
 			{
-				["time"] = 1699796028,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796028,
 			}, -- [187]
 			{
-				["time"] = 1699796029,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796029,
 			}, -- [188]
 			{
-				["time"] = 1699796032,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796032,
 			}, -- [189]
 			{
-				["time"] = 1699796034,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796034,
 			}, -- [190]
 			{
-				["time"] = 1699796036,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796036,
 			}, -- [191]
 			{
-				["time"] = 1699796038,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796038,
 			}, -- [192]
 			{
-				["time"] = 1699796040,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796040,
 			}, -- [193]
 			{
-				["time"] = 1699796042,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796042,
 			}, -- [194]
 			{
-				["time"] = 1699796043,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796043,
 			}, -- [195]
 			{
-				["time"] = 1699796045,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796045,
 			}, -- [196]
 			{
-				["time"] = 1699796049,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796049,
 			}, -- [197]
 			{
-				["time"] = 1699796051,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796051,
 			}, -- [198]
 			{
-				["time"] = 1699796052,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796052,
 			}, -- [199]
 			{
-				["time"] = 1699796058,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796058,
 			}, -- [200]
 			{
-				["time"] = 1699796060,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796060,
 			}, -- [201]
 			{
-				["time"] = 1699796061,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796061,
 			}, -- [202]
 			{
-				["time"] = 1699796063,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796063,
 			}, -- [203]
 			{
-				["time"] = 1699796065,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796065,
 			}, -- [204]
 			{
-				["time"] = 1699796069,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796069,
 			}, -- [205]
 			{
-				["time"] = 1699796070,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796070,
 			}, -- [206]
 			{
-				["time"] = 1699796072,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796072,
 			}, -- [207]
 			{
-				["time"] = 1699796073,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796073,
 			}, -- [208]
 			{
-				["time"] = 1699796075,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796075,
 			}, -- [209]
 			{
-				["time"] = 1699796076,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796076,
 			}, -- [210]
 			{
-				["time"] = 1699796078,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796078,
 			}, -- [211]
 			{
-				["time"] = 1699796079,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796079,
 			}, -- [212]
 			{
-				["time"] = 1699796081,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796081,
 			}, -- [213]
 			{
-				["time"] = 1699796083,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796083,
 			}, -- [214]
 			{
-				["time"] = 1699796084,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796084,
 			}, -- [215]
 			{
-				["time"] = 1699796086,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796086,
 			}, -- [216]
 			{
-				["time"] = 1699796088,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796088,
 			}, -- [217]
 			{
-				["time"] = 1699796090,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796090,
 			}, -- [218]
 			{
-				["time"] = 1699796091,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796091,
 			}, -- [219]
 			{
-				["time"] = 1699796093,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796093,
 			}, -- [220]
 			{
-				["time"] = 1699796095,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796095,
 			}, -- [221]
 			{
-				["time"] = 1699796096,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796096,
 			}, -- [222]
 			{
-				["time"] = 1699796099,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796099,
 			}, -- [223]
 			{
-				["time"] = 1699796101,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796101,
 			}, -- [224]
 			{
-				["time"] = 1699796102,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796102,
 			}, -- [225]
 			{
-				["time"] = 1699796107,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796107,
 			}, -- [226]
 			{
-				["time"] = 1699796108,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796108,
 			}, -- [227]
 			{
-				["time"] = 1699796112,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796112,
 			}, -- [228]
 			{
-				["time"] = 1699796117,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796117,
 			}, -- [229]
 			{
-				["time"] = 1699796119,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796119,
 			}, -- [230]
 			{
-				["time"] = 1699796120,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796120,
 			}, -- [231]
 			{
-				["time"] = 1699796149,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796149,
 			}, -- [232]
 			{
-				["time"] = 1699796185,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796185,
 			}, -- [233]
 			{
-				["time"] = 1699796188,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796188,
 			}, -- [234]
 			{
-				["time"] = 1699796190,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796190,
 			}, -- [235]
 			{
-				["time"] = 1699796191,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796191,
 			}, -- [236]
 			{
-				["time"] = 1699796193,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796193,
 			}, -- [237]
 			{
-				["time"] = 1699796195,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796195,
 			}, -- [238]
 			{
-				["time"] = 1699796196,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796196,
 			}, -- [239]
 			{
-				["time"] = 1699796198,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796198,
 			}, -- [240]
 			{
-				["time"] = 1699796199,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796199,
 			}, -- [241]
 			{
-				["time"] = 1699796201,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796201,
 			}, -- [242]
 			{
-				["time"] = 1699796203,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796203,
 			}, -- [243]
 			{
-				["time"] = 1699796204,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796204,
 			}, -- [244]
 			{
-				["time"] = 1699796206,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796206,
 			}, -- [245]
 			{
-				["time"] = 1699796207,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796207,
 			}, -- [246]
 			{
-				["time"] = 1699796209,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796209,
 			}, -- [247]
 			{
-				["time"] = 1699796211,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796211,
 			}, -- [248]
 			{
-				["time"] = 1699796213,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796213,
 			}, -- [249]
 			{
-				["time"] = 1699796214,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796214,
 			}, -- [250]
 			{
-				["time"] = 1699796217,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796217,
 			}, -- [251]
 			{
-				["time"] = 1699796226,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796226,
 			}, -- [252]
 			{
-				["time"] = 1699796229,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796229,
 			}, -- [253]
 			{
-				["time"] = 1699796231,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796231,
 			}, -- [254]
 			{
-				["time"] = 1699796232,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796232,
 			}, -- [255]
 			{
-				["time"] = 1699796234,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796234,
 			}, -- [256]
 			{
-				["time"] = 1699796235,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796235,
 			}, -- [257]
 			{
-				["time"] = 1699796241,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796241,
 			}, -- [258]
 			{
-				["time"] = 1699796243,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796243,
 			}, -- [259]
 			{
-				["time"] = 1699796244,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796244,
 			}, -- [260]
 			{
-				["time"] = 1699796249,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796249,
 			}, -- [261]
 			{
-				["time"] = 1699796253,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796253,
 			}, -- [262]
 			{
-				["time"] = 1699796255,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796255,
 			}, -- [263]
 			{
-				["time"] = 1699796256,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796256,
 			}, -- [264]
 			{
-				["time"] = 1699796258,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796258,
 			}, -- [265]
 			{
-				["time"] = 1699796259,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796259,
 			}, -- [266]
 			{
-				["time"] = 1699796264,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796264,
 			}, -- [267]
 			{
-				["time"] = 1699796265,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796265,
 			}, -- [268]
 			{
-				["time"] = 1699796267,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796267,
 			}, -- [269]
 			{
-				["time"] = 1699796268,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796268,
 			}, -- [270]
 			{
-				["time"] = 1699796270,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796270,
 			}, -- [271]
 			{
-				["time"] = 1699796271,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796271,
 			}, -- [272]
 			{
-				["time"] = 1699796273,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796273,
 			}, -- [273]
 			{
-				["time"] = 1699796274,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796274,
 			}, -- [274]
 			{
-				["time"] = 1699796276,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796276,
 			}, -- [275]
 			{
-				["time"] = 1699796277,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796277,
 			}, -- [276]
 			{
-				["time"] = 1699796282,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796282,
 			}, -- [277]
 			{
-				["time"] = 1699796283,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796283,
 			}, -- [278]
 			{
-				["time"] = 1699796284,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796284,
 			}, -- [279]
 			{
-				["time"] = 1699796286,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796286,
 			}, -- [280]
 			{
-				["time"] = 1699796288,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796288,
 			}, -- [281]
 			{
-				["time"] = 1699796289,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796289,
 			}, -- [282]
 			{
-				["time"] = 1699796290,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796290,
 			}, -- [283]
 			{
-				["time"] = 1699796292,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796292,
 			}, -- [284]
 			{
-				["time"] = 1699796295,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796295,
 			}, -- [285]
 			{
-				["time"] = 1699796296,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796296,
 			}, -- [286]
 			{
-				["time"] = 1699796298,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796298,
 			}, -- [287]
 			{
-				["time"] = 1699796299,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796299,
 			}, -- [288]
 			{
-				["time"] = 1699796301,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796301,
 			}, -- [289]
 			{
-				["time"] = 1699796302,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796302,
 			}, -- [290]
 			{
-				["time"] = 1699796304,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796304,
 			}, -- [291]
 			{
-				["time"] = 1699796308,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796308,
 			}, -- [292]
 			{
-				["time"] = 1699796310,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796310,
 			}, -- [293]
 			{
-				["time"] = 1699796311,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796311,
 			}, -- [294]
 			{
-				["time"] = 1699796313,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796313,
 			}, -- [295]
 			{
-				["time"] = 1699796314,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796314,
 			}, -- [296]
 			{
-				["time"] = 1699796317,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796317,
 			}, -- [297]
 			{
-				["time"] = 1699796318,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796318,
 			}, -- [298]
 			{
-				["time"] = 1699796320,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796320,
 			}, -- [299]
 			{
-				["time"] = 1699796321,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796321,
 			}, -- [300]
 			{
-				["time"] = 1699796323,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796323,
 			}, -- [301]
 			{
-				["time"] = 1699796325,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796325,
 			}, -- [302]
 			{
-				["time"] = 1699796326,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796326,
 			}, -- [303]
 			{
-				["time"] = 1699796328,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796328,
 			}, -- [304]
 			{
-				["time"] = 1699796329,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796329,
 			}, -- [305]
 			{
-				["time"] = 1699796331,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796331,
 			}, -- [306]
 			{
-				["time"] = 1699796332,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796332,
 			}, -- [307]
 			{
-				["time"] = 1699796334,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796334,
 			}, -- [308]
 			{
-				["time"] = 1699796335,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796335,
 			}, -- [309]
 			{
-				["time"] = 1699796337,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796337,
 			}, -- [310]
 			{
-				["time"] = 1699796341,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796341,
 			}, -- [311]
 			{
-				["time"] = 1699796343,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796343,
 			}, -- [312]
 			{
-				["time"] = 1699796344,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796344,
 			}, -- [313]
 			{
-				["time"] = 1699796346,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796346,
 			}, -- [314]
 			{
-				["time"] = 1699796348,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796348,
 			}, -- [315]
 			{
-				["time"] = 1699796350,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796350,
 			}, -- [316]
 			{
-				["time"] = 1699796351,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796351,
 			}, -- [317]
 			{
-				["time"] = 1699796353,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796353,
 			}, -- [318]
 			{
-				["time"] = 1699796355,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796355,
 			}, -- [319]
 			{
-				["time"] = 1699796356,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796356,
 			}, -- [320]
 			{
-				["time"] = 1699796357,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796357,
 			}, -- [321]
 			{
-				["time"] = 1699796359,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796359,
 			}, -- [322]
 			{
-				["time"] = 1699796361,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796361,
 			}, -- [323]
 			{
-				["time"] = 1699796362,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796362,
 			}, -- [324]
 			{
-				["time"] = 1699796363,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796363,
 			}, -- [325]
 			{
-				["time"] = 1699796365,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796365,
 			}, -- [326]
 			{
-				["time"] = 1699796366,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796366,
 			}, -- [327]
 			{
-				["time"] = 1699796368,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796368,
 			}, -- [328]
 			{
-				["time"] = 1699796371,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796371,
 			}, -- [329]
 			{
-				["time"] = 1699796373,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796373,
 			}, -- [330]
 			{
-				["time"] = 1699796374,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796374,
 			}, -- [331]
 			{
-				["time"] = 1699796376,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796376,
 			}, -- [332]
 			{
-				["time"] = 1699796379,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796379,
 			}, -- [333]
 			{
-				["time"] = 1699796381,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796381,
 			}, -- [334]
 			{
-				["time"] = 1699796382,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796382,
 			}, -- [335]
 			{
-				["time"] = 1699796384,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796384,
 			}, -- [336]
 			{
-				["time"] = 1699796385,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796385,
 			}, -- [337]
 			{
-				["time"] = 1699796388,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796388,
 			}, -- [338]
 			{
-				["time"] = 1699796391,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796391,
 			}, -- [339]
 			{
-				["time"] = 1699796394,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796394,
 			}, -- [340]
 			{
-				["time"] = 1699796395,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796395,
 			}, -- [341]
 			{
-				["time"] = 1699796397,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796397,
 			}, -- [342]
 			{
-				["time"] = 1699796401,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796401,
 			}, -- [343]
 			{
-				["time"] = 1699796403,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796403,
 			}, -- [344]
 			{
-				["time"] = 1699796404,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796404,
 			}, -- [345]
 			{
-				["time"] = 1699796406,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796406,
 			}, -- [346]
 			{
-				["time"] = 1699796409,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796409,
 			}, -- [347]
 			{
-				["time"] = 1699796414,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796414,
 			}, -- [348]
 			{
-				["time"] = 1699796415,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796415,
 			}, -- [349]
 			{
-				["time"] = 1699796417,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796417,
 			}, -- [350]
 			{
-				["time"] = 1699796418,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796418,
 			}, -- [351]
 			{
-				["time"] = 1699796420,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796420,
 			}, -- [352]
 			{
-				["time"] = 1699796423,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796423,
 			}, -- [353]
 			{
-				["time"] = 1699796424,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796424,
 			}, -- [354]
 			{
-				["time"] = 1699796426,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796426,
 			}, -- [355]
 			{
-				["time"] = 1699796427,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796427,
 			}, -- [356]
 			{
-				["time"] = 1699796429,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796429,
 			}, -- [357]
 			{
-				["time"] = 1699796431,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796431,
 			}, -- [358]
 			{
-				["time"] = 1699796432,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796432,
 			}, -- [359]
 			{
-				["time"] = 1699796434,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796434,
 			}, -- [360]
 			{
-				["time"] = 1699796436,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796436,
 			}, -- [361]
 			{
-				["time"] = 1699796437,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796437,
 			}, -- [362]
 			{
-				["time"] = 1699796439,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796439,
 			}, -- [363]
 			{
-				["time"] = 1699796440,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796440,
 			}, -- [364]
 			{
-				["time"] = 1699796443,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796443,
 			}, -- [365]
 			{
-				["time"] = 1699796445,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796445,
 			}, -- [366]
 			{
-				["time"] = 1699796446,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796446,
 			}, -- [367]
 			{
-				["time"] = 1699796448,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796448,
 			}, -- [368]
 			{
-				["time"] = 1699796449,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796449,
 			}, -- [369]
 			{
-				["time"] = 1699796451,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796451,
 			}, -- [370]
 			{
-				["time"] = 1699796453,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796453,
 			}, -- [371]
 			{
-				["time"] = 1699796454,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796454,
 			}, -- [372]
 			{
-				["time"] = 1699796456,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796456,
 			}, -- [373]
 			{
-				["time"] = 1699796457,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796457,
 			}, -- [374]
 			{
-				["time"] = 1699796459,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796459,
 			}, -- [375]
 			{
-				["time"] = 1699796463,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796463,
 			}, -- [376]
 			{
-				["time"] = 1699796465,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796465,
 			}, -- [377]
 			{
-				["time"] = 1699796471,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796471,
 			}, -- [378]
 			{
-				["time"] = 1699796472,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796472,
 			}, -- [379]
 			{
-				["time"] = 1699796474,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796474,
 			}, -- [380]
 			{
-				["time"] = 1699796475,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796475,
 			}, -- [381]
 			{
-				["time"] = 1699796477,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796477,
 			}, -- [382]
 			{
-				["time"] = 1699796479,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796479,
 			}, -- [383]
 			{
-				["time"] = 1699796480,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796480,
 			}, -- [384]
 			{
-				["time"] = 1699796485,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796485,
 			}, -- [385]
 			{
-				["time"] = 1699796486,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796486,
 			}, -- [386]
 			{
-				["time"] = 1699796488,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796488,
 			}, -- [387]
 			{
-				["time"] = 1699796489,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796489,
 			}, -- [388]
 			{
-				["time"] = 1699796493,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796493,
 			}, -- [389]
 			{
-				["time"] = 1699796495,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796495,
 			}, -- [390]
 			{
-				["time"] = 1699796496,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796496,
 			}, -- [391]
 			{
-				["time"] = 1699796498,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796498,
 			}, -- [392]
 			{
-				["time"] = 1699796501,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796501,
 			}, -- [393]
 			{
-				["time"] = 1699796503,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796503,
 			}, -- [394]
 			{
-				["time"] = 1699796504,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796504,
 			}, -- [395]
 			{
-				["time"] = 1699796506,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796506,
 			}, -- [396]
 			{
-				["time"] = 1699796508,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796508,
 			}, -- [397]
 			{
-				["time"] = 1699796512,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796512,
 			}, -- [398]
 			{
-				["time"] = 1699796513,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796513,
 			}, -- [399]
 			{
-				["time"] = 1699796518,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796518,
 			}, -- [400]
 			{
-				["time"] = 1699796520,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796520,
 			}, -- [401]
 			{
-				["time"] = 1699796521,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796521,
 			}, -- [402]
 			{
-				["time"] = 1699796523,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796523,
 			}, -- [403]
 			{
-				["time"] = 1699796525,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796525,
 			}, -- [404]
 			{
-				["time"] = 1699796527,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796527,
 			}, -- [405]
 			{
-				["time"] = 1699796528,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796528,
 			}, -- [406]
 			{
-				["time"] = 1699796530,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796530,
 			}, -- [407]
 			{
-				["time"] = 1699796532,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796532,
 			}, -- [408]
 			{
-				["time"] = 1699796534,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796534,
 			}, -- [409]
 			{
-				["time"] = 1699796535,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796535,
 			}, -- [410]
 			{
-				["time"] = 1699796537,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796537,
 			}, -- [411]
 			{
-				["time"] = 1699796538,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796538,
 			}, -- [412]
 			{
-				["time"] = 1699796540,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796540,
 			}, -- [413]
 			{
-				["time"] = 1699796543,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796543,
 			}, -- [414]
 			{
-				["time"] = 1699796544,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796544,
 			}, -- [415]
 			{
-				["time"] = 1699796546,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796546,
 			}, -- [416]
 			{
-				["time"] = 1699796547,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796547,
 			}, -- [417]
 			{
-				["time"] = 1699796549,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796549,
 			}, -- [418]
 			{
-				["time"] = 1699796550,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796550,
 			}, -- [419]
 			{
-				["time"] = 1699796552,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796552,
 			}, -- [420]
 			{
-				["time"] = 1699796554,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796554,
 			}, -- [421]
 			{
-				["time"] = 1699796556,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796556,
 			}, -- [422]
 			{
-				["time"] = 1699796562,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796562,
 			}, -- [423]
 			{
-				["time"] = 1699796564,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796564,
 			}, -- [424]
 			{
-				["time"] = 1699796568,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796568,
 			}, -- [425]
 			{
-				["time"] = 1699796570,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796570,
 			}, -- [426]
 			{
-				["time"] = 1699796571,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796571,
 			}, -- [427]
 			{
-				["time"] = 1699796573,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796573,
 			}, -- [428]
 			{
-				["time"] = 1699796574,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796574,
 			}, -- [429]
 			{
-				["time"] = 1699796576,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796576,
 			}, -- [430]
 			{
-				["time"] = 1699796577,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796577,
 			}, -- [431]
 			{
-				["time"] = 1699796579,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796579,
 			}, -- [432]
 			{
-				["time"] = 1699796580,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796580,
 			}, -- [433]
 			{
-				["time"] = 1699796582,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796582,
 			}, -- [434]
 			{
-				["time"] = 1699796584,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796584,
 			}, -- [435]
 			{
-				["time"] = 1699796585,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796585,
 			}, -- [436]
 			{
-				["time"] = 1699796587,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796587,
 			}, -- [437]
 			{
-				["time"] = 1699796588,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796588,
 			}, -- [438]
 			{
-				["time"] = 1699796592,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796592,
 			}, -- [439]
 			{
-				["time"] = 1699796594,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796594,
 			}, -- [440]
 			{
-				["time"] = 1699796595,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796595,
 			}, -- [441]
 			{
-				["time"] = 1699796597,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796597,
 			}, -- [442]
 			{
-				["time"] = 1699796598,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796598,
 			}, -- [443]
 			{
-				["time"] = 1699796600,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796600,
 			}, -- [444]
 			{
-				["time"] = 1699796601,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796601,
 			}, -- [445]
 			{
-				["time"] = 1699796603,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796603,
 			}, -- [446]
 			{
-				["time"] = 1699796604,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796604,
 			}, -- [447]
 			{
-				["time"] = 1699796606,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796606,
 			}, -- [448]
 			{
-				["time"] = 1699796609,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796609,
 			}, -- [449]
 			{
-				["time"] = 1699796611,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796611,
 			}, -- [450]
 			{
-				["time"] = 1699796612,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796612,
 			}, -- [451]
 			{
-				["time"] = 1699796615,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796615,
 			}, -- [452]
 			{
-				["time"] = 1699796617,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796617,
 			}, -- [453]
 			{
-				["time"] = 1699796618,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796618,
 			}, -- [454]
 			{
-				["time"] = 1699796620,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796620,
 			}, -- [455]
 			{
-				["time"] = 1699796622,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796622,
 			}, -- [456]
 			{
-				["time"] = 1699796623,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796623,
 			}, -- [457]
 			{
-				["time"] = 1699796625,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796625,
 			}, -- [458]
 			{
-				["time"] = 1699796626,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796626,
 			}, -- [459]
 			{
-				["time"] = 1699796629,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796629,
 			}, -- [460]
 			{
-				["time"] = 1699796631,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796631,
 			}, -- [461]
 			{
-				["time"] = 1699796632,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796632,
 			}, -- [462]
 			{
-				["time"] = 1699796633,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796633,
 			}, -- [463]
 			{
-				["time"] = 1699796635,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796635,
 			}, -- [464]
 			{
-				["time"] = 1699796637,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796637,
 			}, -- [465]
 			{
-				["time"] = 1699796638,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796638,
 			}, -- [466]
 			{
-				["time"] = 1699796644,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796644,
 			}, -- [467]
 			{
-				["time"] = 1699796645,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796645,
 			}, -- [468]
 			{
-				["time"] = 1699796647,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699796647,
 			}, -- [469]
 			{
-				["time"] = 1699796648,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796648,
 			}, -- [470]
 			{
-				["time"] = 1699796677,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796677,
 			}, -- [471]
 			{
-				["time"] = 1699796683,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796683,
 			}, -- [472]
 			{
-				["time"] = 1699796694,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796694,
 			}, -- [473]
 			{
-				["time"] = 1699796696,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796696,
 			}, -- [474]
 			{
-				["time"] = 1699796713,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796713,
 			}, -- [475]
 			{
-				["time"] = 1699796715,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796715,
 			}, -- [476]
 			{
-				["time"] = 1699796719,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796719,
 			}, -- [477]
 			{
-				["time"] = 1699796721,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796721,
 			}, -- [478]
 			{
-				["time"] = 1699796722,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796722,
 			}, -- [479]
 			{
-				["time"] = 1699796724,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796724,
 			}, -- [480]
 			{
-				["time"] = 1699796725,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796725,
 			}, -- [481]
 			{
-				["time"] = 1699796728,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796728,
 			}, -- [482]
 			{
-				["time"] = 1699796730,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796730,
 			}, -- [483]
 			{
-				["time"] = 1699796731,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796731,
 			}, -- [484]
 			{
-				["time"] = 1699796733,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796733,
 			}, -- [485]
 			{
-				["time"] = 1699796734,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796734,
 			}, -- [486]
 			{
-				["time"] = 1699796736,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796736,
 			}, -- [487]
 			{
-				["time"] = 1699796737,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796737,
 			}, -- [488]
 			{
-				["time"] = 1699796742,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796742,
 			}, -- [489]
 			{
-				["time"] = 1699796744,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796744,
 			}, -- [490]
 			{
-				["time"] = 1699796748,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796748,
 			}, -- [491]
 			{
-				["time"] = 1699796751,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796751,
 			}, -- [492]
 			{
-				["time"] = 1699796752,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796752,
 			}, -- [493]
 			{
-				["time"] = 1699796754,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796754,
 			}, -- [494]
 			{
-				["time"] = 1699796755,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796755,
 			}, -- [495]
 			{
-				["time"] = 1699796757,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796757,
 			}, -- [496]
 			{
-				["time"] = 1699796758,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796758,
 			}, -- [497]
 			{
-				["time"] = 1699796760,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796760,
 			}, -- [498]
 			{
-				["time"] = 1699796761,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796761,
 			}, -- [499]
 			{
-				["time"] = 1699796762,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796762,
 			}, -- [500]
 			{
-				["time"] = 1699796767,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796767,
 			}, -- [501]
 			{
-				["time"] = 1699796770,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796770,
 			}, -- [502]
 			{
-				["time"] = 1699796774,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796774,
 			}, -- [503]
 			{
-				["time"] = 1699796775,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796775,
 			}, -- [504]
 			{
-				["time"] = 1699796778,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796778,
 			}, -- [505]
 			{
-				["time"] = 1699796780,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796780,
 			}, -- [506]
 			{
-				["time"] = 1699796787,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796787,
 			}, -- [507]
 			{
-				["time"] = 1699796788,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796788,
 			}, -- [508]
 			{
-				["time"] = 1699796790,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796790,
 			}, -- [509]
 			{
-				["time"] = 1699796791,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796791,
 			}, -- [510]
 			{
-				["time"] = 1699796793,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796793,
 			}, -- [511]
 			{
-				["time"] = 1699796795,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796795,
 			}, -- [512]
 			{
-				["time"] = 1699796796,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796796,
 			}, -- [513]
 			{
-				["time"] = 1699796798,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796798,
 			}, -- [514]
 			{
-				["time"] = 1699796799,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796799,
 			}, -- [515]
 			{
-				["time"] = 1699796800,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796800,
 			}, -- [516]
 			{
-				["time"] = 1699796802,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796802,
 			}, -- [517]
 			{
-				["time"] = 1699796804,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796804,
 			}, -- [518]
 			{
-				["time"] = 1699796806,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796806,
 			}, -- [519]
 			{
-				["time"] = 1699796807,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796807,
 			}, -- [520]
 			{
-				["time"] = 1699796809,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796809,
 			}, -- [521]
 			{
-				["time"] = 1699796810,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796810,
 			}, -- [522]
 			{
-				["time"] = 1699796812,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796812,
 			}, -- [523]
 			{
-				["time"] = 1699796813,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796813,
 			}, -- [524]
 			{
-				["time"] = 1699796815,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796815,
 			}, -- [525]
 			{
-				["time"] = 1699796817,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796817,
 			}, -- [526]
 			{
-				["time"] = 1699796818,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796818,
 			}, -- [527]
 			{
-				["time"] = 1699796821,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796821,
 			}, -- [528]
 			{
-				["time"] = 1699796822,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796822,
 			}, -- [529]
 			{
-				["time"] = 1699796824,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796824,
 			}, -- [530]
 			{
-				["time"] = 1699796825,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796825,
 			}, -- [531]
 			{
-				["time"] = 1699796826,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796826,
 			}, -- [532]
 			{
-				["time"] = 1699796828,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796828,
 			}, -- [533]
 			{
-				["time"] = 1699796829,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796829,
 			}, -- [534]
 			{
-				["time"] = 1699796833,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796833,
 			}, -- [535]
 			{
-				["time"] = 1699796834,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796834,
 			}, -- [536]
 			{
-				["time"] = 1699796836,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796836,
 			}, -- [537]
 			{
-				["time"] = 1699796837,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796837,
 			}, -- [538]
 			{
-				["time"] = 1699796839,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796839,
 			}, -- [539]
 			{
-				["time"] = 1699796841,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796841,
 			}, -- [540]
 			{
-				["time"] = 1699796842,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796842,
 			}, -- [541]
 			{
-				["time"] = 1699796843,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796843,
 			}, -- [542]
 			{
-				["time"] = 1699796849,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796849,
 			}, -- [543]
 			{
-				["time"] = 1699796851,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796851,
 			}, -- [544]
 			{
-				["time"] = 1699796853,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796853,
 			}, -- [545]
 			{
-				["time"] = 1699796854,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796854,
 			}, -- [546]
 			{
-				["time"] = 1699796856,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796856,
 			}, -- [547]
 			{
-				["time"] = 1699796857,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796857,
 			}, -- [548]
 			{
-				["time"] = 1699796859,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796859,
 			}, -- [549]
 			{
-				["time"] = 1699796860,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796860,
 			}, -- [550]
 			{
-				["time"] = 1699796862,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796862,
 			}, -- [551]
 			{
-				["time"] = 1699796863,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796863,
 			}, -- [552]
 			{
-				["time"] = 1699796865,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796865,
 			}, -- [553]
 			{
-				["time"] = 1699796866,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796866,
 			}, -- [554]
 			{
-				["time"] = 1699796868,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796868,
 			}, -- [555]
 			{
-				["time"] = 1699796870,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796870,
 			}, -- [556]
 			{
-				["time"] = 1699796872,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796872,
 			}, -- [557]
 			{
-				["time"] = 1699796873,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796873,
 			}, -- [558]
 			{
-				["time"] = 1699796875,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796875,
 			}, -- [559]
 			{
-				["time"] = 1699796877,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796877,
 			}, -- [560]
 			{
-				["time"] = 1699796878,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796878,
 			}, -- [561]
 			{
-				["time"] = 1699796880,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796880,
 			}, -- [562]
 			{
-				["time"] = 1699796883,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796883,
 			}, -- [563]
 			{
-				["time"] = 1699796884,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796884,
 			}, -- [564]
 			{
-				["time"] = 1699796885,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796885,
 			}, -- [565]
 			{
-				["time"] = 1699796887,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796887,
 			}, -- [566]
 			{
-				["time"] = 1699796890,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796890,
 			}, -- [567]
 			{
-				["time"] = 1699796892,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796892,
 			}, -- [568]
 			{
-				["time"] = 1699796893,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796893,
 			}, -- [569]
 			{
-				["time"] = 1699796896,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796896,
 			}, -- [570]
 			{
-				["time"] = 1699796898,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796898,
 			}, -- [571]
 			{
-				["time"] = 1699796901,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796901,
 			}, -- [572]
 			{
-				["time"] = 1699796902,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796902,
 			}, -- [573]
 			{
-				["time"] = 1699796905,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796905,
 			}, -- [574]
 			{
-				["time"] = 1699796908,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796908,
 			}, -- [575]
 			{
-				["time"] = 1699796913,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796913,
 			}, -- [576]
 			{
-				["time"] = 1699796915,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796915,
 			}, -- [577]
 			{
-				["time"] = 1699796918,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796918,
 			}, -- [578]
 			{
-				["time"] = 1699796919,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796919,
 			}, -- [579]
 			{
-				["time"] = 1699796922,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796922,
 			}, -- [580]
 			{
-				["time"] = 1699796925,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796925,
 			}, -- [581]
 			{
-				["time"] = 1699796927,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796927,
 			}, -- [582]
 			{
-				["time"] = 1699796930,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796930,
 			}, -- [583]
 			{
-				["time"] = 1699796931,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796931,
 			}, -- [584]
 			{
-				["time"] = 1699796933,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796933,
 			}, -- [585]
 			{
-				["time"] = 1699796934,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796934,
 			}, -- [586]
 			{
-				["time"] = 1699796936,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796936,
 			}, -- [587]
 			{
-				["time"] = 1699796937,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796937,
 			}, -- [588]
 			{
-				["time"] = 1699796939,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796939,
 			}, -- [589]
 			{
-				["time"] = 1699796940,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796940,
 			}, -- [590]
 			{
-				["time"] = 1699796942,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796942,
 			}, -- [591]
 			{
-				["time"] = 1699796943,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796943,
 			}, -- [592]
 			{
-				["time"] = 1699796946,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796946,
 			}, -- [593]
 			{
-				["time"] = 1699796948,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796948,
 			}, -- [594]
 			{
-				["time"] = 1699796951,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796951,
 			}, -- [595]
 			{
-				["time"] = 1699796953,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796953,
 			}, -- [596]
 			{
-				["time"] = 1699796954,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796954,
 			}, -- [597]
 			{
-				["time"] = 1699796958,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796958,
 			}, -- [598]
 			{
-				["time"] = 1699796960,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796960,
 			}, -- [599]
 			{
-				["time"] = 1699796961,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796961,
 			}, -- [600]
 			{
-				["time"] = 1699796962,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796962,
 			}, -- [601]
 			{
-				["time"] = 1699796964,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796964,
 			}, -- [602]
 			{
-				["time"] = 1699796967,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796967,
 			}, -- [603]
 			{
-				["time"] = 1699796969,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796969,
 			}, -- [604]
 			{
-				["time"] = 1699796971,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796971,
 			}, -- [605]
 			{
-				["time"] = 1699796972,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796972,
 			}, -- [606]
 			{
-				["time"] = 1699796974,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796974,
 			}, -- [607]
 			{
-				["time"] = 1699796975,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796975,
 			}, -- [608]
 			{
-				["time"] = 1699796976,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796976,
 			}, -- [609]
 			{
-				["time"] = 1699796978,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796978,
 			}, -- [610]
 			{
-				["time"] = 1699796982,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796982,
 			}, -- [611]
 			{
-				["time"] = 1699796984,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796984,
 			}, -- [612]
 			{
-				["time"] = 1699796986,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796986,
 			}, -- [613]
 			{
-				["time"] = 1699796987,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796987,
 			}, -- [614]
 			{
-				["time"] = 1699796989,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796989,
 			}, -- [615]
 			{
-				["time"] = 1699796990,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796990,
 			}, -- [616]
 			{
-				["time"] = 1699796992,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796992,
 			}, -- [617]
 			{
-				["time"] = 1699796993,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796993,
 			}, -- [618]
 			{
-				["time"] = 1699796995,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796995,
 			}, -- [619]
 			{
-				["time"] = 1699796997,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699796997,
 			}, -- [620]
 			{
-				["time"] = 1699797000,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797000,
 			}, -- [621]
 			{
-				["time"] = 1699797004,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797004,
 			}, -- [622]
 			{
-				["time"] = 1699797005,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797005,
 			}, -- [623]
 			{
-				["time"] = 1699797008,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797008,
 			}, -- [624]
 			{
-				["time"] = 1699797012,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797012,
 			}, -- [625]
 			{
-				["time"] = 1699797013,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797013,
 			}, -- [626]
 			{
-				["time"] = 1699797019,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797019,
 			}, -- [627]
 			{
-				["time"] = 1699797020,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797020,
 			}, -- [628]
 			{
-				["time"] = 1699797022,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797022,
 			}, -- [629]
 			{
-				["time"] = 1699797023,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797023,
 			}, -- [630]
 			{
-				["time"] = 1699797025,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797025,
 			}, -- [631]
 			{
-				["time"] = 1699797028,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797028,
 			}, -- [632]
 			{
-				["time"] = 1699797029,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797029,
 			}, -- [633]
 			{
-				["time"] = 1699797031,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797031,
 			}, -- [634]
 			{
-				["time"] = 1699797032,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797032,
 			}, -- [635]
 			{
-				["time"] = 1699797035,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797035,
 			}, -- [636]
 			{
-				["time"] = 1699797037,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797037,
 			}, -- [637]
 			{
-				["time"] = 1699797038,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797038,
 			}, -- [638]
 			{
-				["time"] = 1699797040,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797040,
 			}, -- [639]
 			{
-				["time"] = 1699797041,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797041,
 			}, -- [640]
 			{
-				["time"] = 1699797043,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797043,
 			}, -- [641]
 			{
-				["time"] = 1699797044,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797044,
 			}, -- [642]
 			{
-				["time"] = 1699797046,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797046,
 			}, -- [643]
 			{
-				["time"] = 1699797047,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797047,
 			}, -- [644]
 			{
-				["time"] = 1699797049,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797049,
 			}, -- [645]
 			{
-				["time"] = 1699797050,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797050,
 			}, -- [646]
 			{
-				["time"] = 1699797052,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797052,
 			}, -- [647]
 			{
-				["time"] = 1699797056,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797056,
 			}, -- [648]
 			{
-				["time"] = 1699797058,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797058,
 			}, -- [649]
 			{
-				["time"] = 1699797059,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797059,
 			}, -- [650]
 			{
-				["time"] = 1699797061,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797061,
 			}, -- [651]
 			{
-				["time"] = 1699797062,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797062,
 			}, -- [652]
 			{
-				["time"] = 1699797064,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797064,
 			}, -- [653]
 			{
-				["time"] = 1699797066,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797066,
 			}, -- [654]
 			{
-				["time"] = 1699797069,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797069,
 			}, -- [655]
 			{
-				["time"] = 1699797070,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797070,
 			}, -- [656]
 			{
-				["time"] = 1699797075,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797075,
 			}, -- [657]
 			{
-				["time"] = 1699797076,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797076,
 			}, -- [658]
 			{
-				["time"] = 1699797078,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797078,
 			}, -- [659]
 			{
-				["time"] = 1699797081,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797081,
 			}, -- [660]
 			{
-				["time"] = 1699797082,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797082,
 			}, -- [661]
 			{
-				["time"] = 1699797085,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797085,
 			}, -- [662]
 			{
-				["time"] = 1699797087,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797087,
 			}, -- [663]
 			{
-				["time"] = 1699797088,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797088,
 			}, -- [664]
 			{
-				["time"] = 1699797090,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797090,
 			}, -- [665]
 			{
-				["time"] = 1699797091,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797091,
 			}, -- [666]
 			{
-				["time"] = 1699797093,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797093,
 			}, -- [667]
 			{
-				["time"] = 1699797095,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797095,
 			}, -- [668]
 			{
-				["time"] = 1699797096,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797096,
 			}, -- [669]
 			{
-				["time"] = 1699797103,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797103,
 			}, -- [670]
 			{
-				["time"] = 1699797105,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797105,
 			}, -- [671]
 			{
-				["time"] = 1699797106,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797106,
 			}, -- [672]
 			{
-				["time"] = 1699797111,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797111,
 			}, -- [673]
 			{
-				["time"] = 1699797112,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797112,
 			}, -- [674]
 			{
-				["time"] = 1699797114,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797114,
 			}, -- [675]
 			{
-				["time"] = 1699797116,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797116,
 			}, -- [676]
 			{
-				["time"] = 1699797117,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797117,
 			}, -- [677]
 			{
-				["time"] = 1699797120,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797120,
 			}, -- [678]
 			{
-				["time"] = 1699797121,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797121,
 			}, -- [679]
 			{
-				["time"] = 1699797122,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797122,
 			}, -- [680]
 			{
-				["time"] = 1699797125,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797125,
 			}, -- [681]
 			{
-				["time"] = 1699797127,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797127,
 			}, -- [682]
 			{
-				["time"] = 1699797128,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797128,
 			}, -- [683]
 			{
-				["time"] = 1699797130,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797130,
 			}, -- [684]
 			{
-				["time"] = 1699797131,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797131,
 			}, -- [685]
 			{
-				["time"] = 1699797133,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797133,
 			}, -- [686]
 			{
-				["time"] = 1699797134,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797134,
 			}, -- [687]
 			{
-				["time"] = 1699797136,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797136,
 			}, -- [688]
 			{
-				["time"] = 1699797137,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797137,
 			}, -- [689]
 			{
-				["time"] = 1699797139,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797139,
 			}, -- [690]
 			{
-				["time"] = 1699797143,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797143,
 			}, -- [691]
 			{
-				["time"] = 1699797145,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797145,
 			}, -- [692]
 			{
-				["time"] = 1699797147,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797147,
 			}, -- [693]
 			{
-				["time"] = 1699797149,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797149,
 			}, -- [694]
 			{
-				["time"] = 1699797150,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797150,
 			}, -- [695]
 			{
-				["time"] = 1699797152,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797152,
 			}, -- [696]
 			{
-				["time"] = 1699797153,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797153,
 			}, -- [697]
 			{
-				["time"] = 1699797155,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797155,
 			}, -- [698]
 			{
-				["time"] = 1699797157,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797157,
 			}, -- [699]
 			{
-				["time"] = 1699797158,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797158,
 			}, -- [700]
 			{
-				["time"] = 1699797160,
 				["result"] = {
 					["i:43109"] = 2,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797160,
 			}, -- [701]
 			{
-				["time"] = 1699797162,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797162,
 			}, -- [702]
 			{
-				["time"] = 1699797163,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797163,
 			}, -- [703]
 			{
-				["time"] = 1699797168,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797168,
 			}, -- [704]
 			{
-				["time"] = 1699797169,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797169,
 			}, -- [705]
 			{
-				["time"] = 1699797171,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797171,
 			}, -- [706]
 			{
-				["time"] = 1699797172,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797172,
 			}, -- [707]
 			{
-				["time"] = 1699797176,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797176,
 			}, -- [708]
 			{
-				["time"] = 1699797177,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797177,
 			}, -- [709]
 			{
-				["time"] = 1699797251,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797251,
 			}, -- [710]
 			{
-				["time"] = 1699797253,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797253,
 			}, -- [711]
 			{
-				["time"] = 1699797255,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797255,
 			}, -- [712]
 			{
-				["time"] = 1699797257,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797257,
 			}, -- [713]
 			{
-				["time"] = 1699797259,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797259,
 			}, -- [714]
 			{
-				["time"] = 1699797261,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797261,
 			}, -- [715]
 			{
-				["time"] = 1699797262,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797262,
 			}, -- [716]
 			{
-				["time"] = 1699797264,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797264,
 			}, -- [717]
 			{
-				["time"] = 1699797265,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797265,
 			}, -- [718]
 			{
-				["time"] = 1699797268,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797268,
 			}, -- [719]
 			{
-				["time"] = 1699797270,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797270,
 			}, -- [720]
 			{
-				["time"] = 1699797273,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797273,
 			}, -- [721]
 			{
-				["time"] = 1699797275,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797275,
 			}, -- [722]
 			{
-				["time"] = 1699797276,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797276,
 			}, -- [723]
 			{
-				["time"] = 1699797279,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797279,
 			}, -- [724]
 			{
-				["time"] = 1699797281,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797281,
 			}, -- [725]
 			{
-				["time"] = 1699797283,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797283,
 			}, -- [726]
 			{
-				["time"] = 1699797284,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797284,
 			}, -- [727]
 			{
-				["time"] = 1699797285,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797285,
 			}, -- [728]
 			{
-				["time"] = 1699797289,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797289,
 			}, -- [729]
 			{
-				["time"] = 1699797291,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797291,
 			}, -- [730]
 			{
-				["time"] = 1699797292,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797292,
 			}, -- [731]
 			{
-				["time"] = 1699797294,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797294,
 			}, -- [732]
 			{
-				["time"] = 1699797295,
 				["result"] = {
 					["i:43109"] = 3,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797295,
 			}, -- [733]
 			{
-				["time"] = 1699797297,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797297,
 			}, -- [734]
 			{
-				["time"] = 1699797299,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797299,
 			}, -- [735]
 			{
-				["time"] = 1699797300,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797300,
 			}, -- [736]
 			{
-				["time"] = 1699797302,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797302,
 			}, -- [737]
 			{
-				["time"] = 1699797304,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797304,
 			}, -- [738]
 			{
-				["time"] = 1699797306,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797306,
 			}, -- [739]
 			{
-				["time"] = 1699797308,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797308,
 			}, -- [740]
 			{
-				["time"] = 1699797309,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797309,
 			}, -- [741]
 			{
-				["time"] = 1699797311,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797311,
 			}, -- [742]
 			{
-				["time"] = 1699797313,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797313,
 			}, -- [743]
 			{
-				["time"] = 1699797314,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797314,
 			}, -- [744]
 			{
-				["time"] = 1699797315,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797315,
 			}, -- [745]
 			{
-				["time"] = 1699797318,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797318,
 			}, -- [746]
 			{
-				["time"] = 1699797326,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797326,
 			}, -- [747]
 			{
-				["time"] = 1699797327,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797327,
 			}, -- [748]
 			{
-				["time"] = 1699797329,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36901",
+				["time"] = 1699797329,
 			}, -- [749]
 			{
-				["time"] = 1699797333,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797333,
 			}, -- [750]
 			{
-				["time"] = 1699797335,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797335,
 			}, -- [751]
 			{
-				["time"] = 1699797339,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797339,
 			}, -- [752]
 			{
-				["time"] = 1699797340,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797340,
 			}, -- [753]
 			{
-				["time"] = 1699797342,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797342,
 			}, -- [754]
 			{
-				["time"] = 1699797343,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797343,
 			}, -- [755]
 			{
-				["time"] = 1699797345,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797345,
 			}, -- [756]
 			{
-				["time"] = 1699797346,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797346,
 			}, -- [757]
 			{
-				["time"] = 1699797349,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797349,
 			}, -- [758]
 			{
-				["time"] = 1699797351,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797351,
 			}, -- [759]
 			{
-				["time"] = 1699797352,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797352,
 			}, -- [760]
 			{
-				["time"] = 1699797354,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797354,
 			}, -- [761]
 			{
-				["time"] = 1699797355,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797355,
 			}, -- [762]
 			{
-				["time"] = 1699797357,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797357,
 			}, -- [763]
 			{
-				["time"] = 1699797358,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797358,
 			}, -- [764]
 			{
-				["time"] = 1699797360,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797360,
 			}, -- [765]
 			{
-				["time"] = 1699797361,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797361,
 			}, -- [766]
 			{
-				["time"] = 1699797363,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797363,
 			}, -- [767]
 			{
-				["time"] = 1699797367,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797367,
 			}, -- [768]
 			{
-				["time"] = 1699797368,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797368,
 			}, -- [769]
 			{
-				["time"] = 1699797373,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797373,
 			}, -- [770]
 			{
-				["time"] = 1699797374,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797374,
 			}, -- [771]
 			{
-				["time"] = 1699797377,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797377,
 			}, -- [772]
 			{
-				["time"] = 1699797379,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797379,
 			}, -- [773]
 			{
-				["time"] = 1699797381,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797381,
 			}, -- [774]
 			{
-				["time"] = 1699797382,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797382,
 			}, -- [775]
 			{
-				["time"] = 1699797384,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797384,
 			}, -- [776]
 			{
-				["time"] = 1699797385,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797385,
 			}, -- [777]
 			{
-				["time"] = 1699797387,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797387,
 			}, -- [778]
 			{
-				["time"] = 1699797390,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797390,
 			}, -- [779]
 			{
-				["time"] = 1699797391,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797391,
 			}, -- [780]
 			{
-				["time"] = 1699797393,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797393,
 			}, -- [781]
 			{
-				["time"] = 1699797396,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797396,
 			}, -- [782]
 			{
-				["time"] = 1699797397,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797397,
 			}, -- [783]
 			{
-				["time"] = 1699797399,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797399,
 			}, -- [784]
 			{
-				["time"] = 1699797404,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797404,
 			}, -- [785]
 			{
-				["time"] = 1699797405,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797405,
 			}, -- [786]
 			{
-				["time"] = 1699797408,
 				["result"] = {
 					["i:43109"] = 1,
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797408,
 			}, -- [787]
 			{
-				["time"] = 1699797410,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797410,
 			}, -- [788]
 			{
-				["time"] = 1699797411,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797411,
 			}, -- [789]
 			{
-				["time"] = 1699797413,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797413,
 			}, -- [790]
 			{
-				["time"] = 1699797414,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797414,
 			}, -- [791]
 			{
-				["time"] = 1699797416,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797416,
 			}, -- [792]
 			{
-				["time"] = 1699797417,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797417,
 			}, -- [793]
 			{
-				["time"] = 1699797419,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797419,
 			}, -- [794]
 			{
-				["time"] = 1699797420,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797420,
 			}, -- [795]
 			{
-				["time"] = 1699797422,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797422,
 			}, -- [796]
 			{
-				["time"] = 1699797424,
 				["result"] = {
 					["i:39343"] = 2,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797424,
 			}, -- [797]
 			{
-				["time"] = 1699797426,
 				["result"] = {
 					["i:39343"] = 3,
 				},
 				["item"] = "i:36904",
+				["time"] = 1699797426,
 			}, -- [798]
 		},
 		[13262] = {
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618597,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [1]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618601,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [2]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618604,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [3]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618609,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [4]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618613,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [5]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618617,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [6]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618621,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [7]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618625,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [8]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618628,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [9]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618632,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [10]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618660,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [11]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618672,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [12]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618678,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [13]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618683,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [14]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618688,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:4314",
 			}, -- [15]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618692,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:4314",
 			}, -- [16]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618697,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:4314",
 			}, -- [17]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618701,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [18]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618706,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:4314",
 			}, -- [19]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618710,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [20]
 			{
-				["item"] = "i:20907",
 				["time"] = 1697618713,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:20907",
 			}, -- [21]
 			{
-				["item"] = "i:20907",
 				["time"] = 1697618717,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:20907",
 			}, -- [22]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618721,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [23]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618725,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [24]
 			{
-				["item"] = "i:3184:18",
 				["time"] = 1697618752,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3184:18",
 			}, -- [25]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618756,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [26]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618775,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [27]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618779,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [28]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618783,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [29]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618787,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [30]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618791,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [31]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618794,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [32]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618798,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [33]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618802,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [34]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618805,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [35]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697618809,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [36]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618813,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [37]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618816,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [38]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618820,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [39]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618823,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [40]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618827,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [41]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618831,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [42]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618835,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [43]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618839,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [44]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618843,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [45]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618847,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [46]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618850,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:4314",
 			}, -- [47]
 			{
-				["item"] = "i:4259",
 				["time"] = 1697618854,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:4259",
 			}, -- [48]
 			{
-				["item"] = "i:4259",
 				["time"] = 1697618862,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:4259",
 			}, -- [49]
 			{
-				["item"] = "i:15156:1621",
 				["time"] = 1697618868,
 				["result"] = {
 					["i:11137"] = 5,
 				},
+				["item"] = "i:15156:1621",
 			}, -- [50]
 			{
-				["item"] = "i:15969:754",
 				["time"] = 1697618873,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:15969:754",
 			}, -- [51]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697618884,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [52]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697618888,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:25439",
 			}, -- [53]
 			{
-				["item"] = "i:4259",
 				["time"] = 1697618891,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:4259",
 			}, -- [54]
 			{
-				["item"] = "i:4259",
 				["time"] = 1697618895,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:4259",
 			}, -- [55]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618899,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:4314",
 			}, -- [56]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618902,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:4314",
 			}, -- [57]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618906,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:4314",
 			}, -- [58]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618909,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [59]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618913,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:4314",
 			}, -- [60]
 			{
-				["item"] = "i:4314",
 				["time"] = 1697618917,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:4314",
 			}, -- [61]
 			{
-				["item"] = "i:2316",
 				["time"] = 1697618920,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2316",
 			}, -- [62]
 			{
-				["item"] = "i:6564:1953",
 				["time"] = 1697618924,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:6564:1953",
 			}, -- [63]
 			{
-				["item"] = "i:3040",
 				["time"] = 1697618928,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3040",
 			}, -- [64]
 			{
-				["item"] = "i:9805:1992",
 				["time"] = 1697618931,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:9805:1992",
 			}, -- [65]
 			{
-				["item"] = "i:3196:1100",
 				["time"] = 1697618935,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3196:1100",
 			}, -- [66]
 			{
-				["item"] = "i:15503:1021",
 				["time"] = 1697618938,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:15503:1021",
 			}, -- [67]
 			{
-				["item"] = "i:9792:153",
 				["time"] = 1697618942,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:9792:153",
 			}, -- [68]
 			{
-				["item"] = "i:15329:1187",
 				["time"] = 1697618946,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:15329:1187",
 			}, -- [69]
 			{
-				["item"] = "i:15222:1549",
 				["time"] = 1697618950,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:15222:1549",
 			}, -- [70]
 			{
-				["item"] = "i:3195:673",
 				["time"] = 1697618953,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3195:673",
 			}, -- [71]
 			{
-				["item"] = "i:4259",
 				["time"] = 1697618957,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:4259",
 			}, -- [72]
 			{
-				["item"] = "i:3196:1100",
 				["time"] = 1697618960,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3196:1100",
 			}, -- [73]
 			{
-				["item"] = "i:14251:1959",
 				["time"] = 1697618964,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:14251:1959",
 			}, -- [74]
 			{
-				["item"] = "i:15976:247",
 				["time"] = 1697618968,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:15976:247",
 			}, -- [75]
 			{
-				["item"] = "i:4038",
 				["time"] = 1697618971,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:4038",
 			}, -- [76]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697618975,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [77]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697618979,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [78]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697618982,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [79]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697618986,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [80]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697618990,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [81]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697618993,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:20818",
 			}, -- [82]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697618997,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [83]
 			{
-				["item"] = "i:15248:1018",
 				["time"] = 1697619001,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:15248:1018",
 			}, -- [84]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619032,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [85]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619035,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [86]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619039,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [87]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619042,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [88]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619046,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [89]
 			{
-				["item"] = "i:4074",
 				["time"] = 1697619071,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:4074",
 			}, -- [90]
 			{
-				["item"] = "i:4074",
 				["time"] = 1697619074,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:4074",
 			}, -- [91]
 			{
-				["item"] = "i:4074",
 				["time"] = 1697619078,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:4074",
 			}, -- [92]
 			{
-				["item"] = "i:6419",
 				["time"] = 1697619081,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:6419",
 			}, -- [93]
 			{
-				["item"] = "i:6419",
 				["time"] = 1697619085,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:6419",
 			}, -- [94]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619089,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [95]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619093,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [96]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619096,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [97]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619100,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [98]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619103,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [99]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619107,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [100]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619111,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [101]
 			{
-				["item"] = "i:5966",
 				["time"] = 1697619115,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [102]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619118,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [103]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619122,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [104]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619126,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [105]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619130,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [106]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619133,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [107]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619137,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [108]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619141,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [109]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619145,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [110]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619148,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [111]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619152,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2315",
 			}, -- [112]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619156,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [113]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619160,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [114]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619197,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [115]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619228,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2315",
 			}, -- [116]
 			{
-				["item"] = "i:2315",
 				["time"] = 1697619240,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:2315",
 			}, -- [117]
 			{
-				["item"] = "i:14439",
 				["time"] = 1697619245,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:14439",
 			}, -- [118]
 			{
-				["item"] = "i:14370",
 				["time"] = 1697619249,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:14370",
 			}, -- [119]
 			{
-				["item"] = "i:14370",
 				["time"] = 1697619259,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:14370",
 			}, -- [120]
 			{
-				["item"] = "i:7524:1846",
 				["time"] = 1697619263,
 				["result"] = {
 					["i:11174"] = 2,
 				},
+				["item"] = "i:7524:1846",
 			}, -- [121]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619268,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [122]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619276,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [123]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619280,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [124]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619289,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [125]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619299,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [126]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619305,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [127]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619312,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [128]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619317,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [129]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619324,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [130]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619330,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [131]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619343,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:20818",
 			}, -- [132]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619361,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [133]
 			{
-				["item"] = "i:20818",
 				["time"] = 1697619385,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [134]
 			{
-				["item"] = "i:5069",
 				["time"] = 1697619395,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:5069",
 			}, -- [135]
 			{
-				["item"] = "i:5069",
 				["time"] = 1697619399,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:5069",
 			}, -- [136]
 			{
-				["item"] = "i:2078:1548",
 				["time"] = 1697619408,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2078:1548",
 			}, -- [137]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619412,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [138]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619416,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [139]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619419,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [140]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697619424,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [141]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697619428,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [142]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697619431,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [143]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697619446,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [144]
 			{
-				["item"] = "i:3040",
 				["time"] = 1697619460,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3040",
 			}, -- [145]
 			{
-				["item"] = "i:3036",
 				["time"] = 1697619464,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:3036",
 			}, -- [146]
 			{
-				["item"] = "i:3036",
 				["time"] = 1697619468,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:3036",
 			}, -- [147]
 			{
-				["item"] = "i:3195:1015",
 				["time"] = 1697619471,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:3195:1015",
 			}, -- [148]
 			{
-				["item"] = "i:25439",
 				["time"] = 1697619475,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [149]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619479,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [150]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619483,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4362",
 			}, -- [151]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619505,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4362",
 			}, -- [152]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619516,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4362",
 			}, -- [153]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619529,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [154]
 			{
-				["item"] = "i:4362",
 				["time"] = 1697619541,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4362",
 			}, -- [155]
 			{
-				["item"] = "i:24794:-40",
 				["time"] = 1697631377,
 				["result"] = {
 					["i:22445"] = 4,
 				},
+				["item"] = "i:24794:-40",
 			}, -- [156]
 			{
-				["item"] = "i:24781:-40",
 				["time"] = 1697631381,
 				["result"] = {
 					["i:22445"] = 2,
 				},
+				["item"] = "i:24781:-40",
 			}, -- [157]
 			{
-				["item"] = "i:25012:-26",
 				["time"] = 1697631385,
 				["result"] = {
 					["i:22446"] = 2,
 				},
+				["item"] = "i:25012:-26",
 			}, -- [158]
 			{
-				["item"] = "i:24684:-38",
 				["time"] = 1697631388,
 				["result"] = {
 					["i:22445"] = 5,
 				},
+				["item"] = "i:24684:-38",
 			}, -- [159]
 			{
-				["item"] = "i:24786:-18",
 				["time"] = 1697631392,
 				["result"] = {
 					["i:22445"] = 5,
 				},
+				["item"] = "i:24786:-18",
 			}, -- [160]
 			{
-				["item"] = "i:25083:-9",
 				["time"] = 1697631396,
 				["result"] = {
 					["i:22445"] = 2,
 				},
+				["item"] = "i:25083:-9",
 			}, -- [161]
 			{
-				["item"] = "i:25055:-32",
 				["time"] = 1697631399,
 				["result"] = {
 					["i:22445"] = 2,
 				},
+				["item"] = "i:25055:-32",
 			}, -- [162]
 			{
-				["item"] = "i:25293:-19",
 				["time"] = 1697631403,
 				["result"] = {
 					["i:22446"] = 1,
 				},
+				["item"] = "i:25293:-19",
 			}, -- [163]
 			{
-				["item"] = "i:25307:-15",
 				["time"] = 1697631407,
 				["result"] = {
 					["i:22446"] = 1,
 				},
+				["item"] = "i:25307:-15",
 			}, -- [164]
 			{
-				["item"] = "i:28318",
 				["time"] = 1697631411,
 				["result"] = {
 					["i:22449"] = 1,
 				},
+				["item"] = "i:28318",
 			}, -- [165]
 			{
-				["item"] = "i:25008:-41",
 				["time"] = 1697631414,
 				["result"] = {
 					["i:22445"] = 4,
 				},
+				["item"] = "i:25008:-41",
 			}, -- [166]
 			{
-				["item"] = "i:24779:-5",
 				["time"] = 1697631418,
 				["result"] = {
 					["i:22445"] = 3,
 				},
+				["item"] = "i:24779:-5",
 			}, -- [167]
 			{
+				["item"] = "i:35961:-16",
+				["time"] = 1697640869,
 				["result"] = {
 					["i:34054"] = 3,
 				},
-				["item"] = "i:35961:-16",
-				["time"] = 1697640869,
 			}, -- [168]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697640873,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697640873,
 			}, -- [169]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697640879,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697640879,
 			}, -- [170]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:10003",
 				["time"] = 1697640883,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [171]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:10003",
 				["time"] = 1697640890,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [172]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:10003",
 				["time"] = 1697640903,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [173]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:10003",
 				["time"] = 1697640906,
-			}, -- [174]
-			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640910,
-			}, -- [175]
-			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640915,
-			}, -- [176]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640919,
-			}, -- [177]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640924,
-			}, -- [178]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640928,
-			}, -- [179]
-			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640935,
-			}, -- [180]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640938,
-			}, -- [181]
-			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640942,
-			}, -- [182]
-			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640950,
-			}, -- [183]
-			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640954,
-			}, -- [184]
-			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
-				["item"] = "i:10003",
-				["time"] = 1697640958,
-			}, -- [185]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [174]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640910,
+				["result"] = {
+					["i:11137"] = 3,
+				},
+			}, -- [175]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640915,
+				["result"] = {
+					["i:11137"] = 5,
+				},
+			}, -- [176]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640919,
+				["result"] = {
+					["i:11137"] = 4,
+				},
+			}, -- [177]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640924,
+				["result"] = {
+					["i:11137"] = 4,
+				},
+			}, -- [178]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640928,
+				["result"] = {
+					["i:11137"] = 4,
+				},
+			}, -- [179]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640935,
+				["result"] = {
+					["i:11137"] = 5,
+				},
+			}, -- [180]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640938,
+				["result"] = {
+					["i:11137"] = 4,
+				},
+			}, -- [181]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640942,
+				["result"] = {
+					["i:11137"] = 3,
+				},
+			}, -- [182]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640950,
+				["result"] = {
+					["i:11137"] = 5,
+				},
+			}, -- [183]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640954,
+				["result"] = {
+					["i:11137"] = 3,
+				},
+			}, -- [184]
+			{
+				["item"] = "i:10003",
+				["time"] = 1697640958,
+				["result"] = {
+					["i:11137"] = 5,
+				},
+			}, -- [185]
+			{
 				["item"] = "i:10003",
 				["time"] = 1697640961,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [186]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697640965,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697640965,
 			}, -- [187]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697640969,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697640969,
 			}, -- [188]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697640974,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697640974,
 			}, -- [189]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697640978,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697640978,
 			}, -- [190]
 			{
+				["item"] = "i:14165:251",
+				["time"] = 1697640986,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:14165:251",
-				["time"] = 1697640986,
 			}, -- [191]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697640990,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697640990,
 			}, -- [192]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697640994,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697640994,
 			}, -- [193]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697640997,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697640997,
 			}, -- [194]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697641001,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697641001,
 			}, -- [195]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697641005,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697641005,
 			}, -- [196]
 			{
+				["item"] = "i:10003",
+				["time"] = 1697641008,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:10003",
-				["time"] = 1697641008,
 			}, -- [197]
 			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
 				["item"] = "i:10003",
 				["time"] = 1697641012,
-			}, -- [198]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641016,
-			}, -- [199]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641019,
-			}, -- [200]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641026,
-			}, -- [201]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641030,
-			}, -- [202]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641034,
-			}, -- [203]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641037,
-			}, -- [204]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641041,
-			}, -- [205]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641045,
-			}, -- [206]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641050,
-			}, -- [207]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641054,
-			}, -- [208]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641058,
-			}, -- [209]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641062,
-			}, -- [210]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641065,
-			}, -- [211]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641071,
-			}, -- [212]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641075,
-			}, -- [213]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641082,
-			}, -- [214]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641090,
-			}, -- [215]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641094,
-			}, -- [216]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641097,
-			}, -- [217]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641102,
-			}, -- [218]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641106,
-			}, -- [219]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641109,
-			}, -- [220]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641115,
-			}, -- [221]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:4368",
-				["time"] = 1697641119,
-			}, -- [222]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:4368",
-				["time"] = 1697641126,
-			}, -- [223]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:4368",
-				["time"] = 1697641129,
-			}, -- [224]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:4368",
-				["time"] = 1697641135,
-			}, -- [225]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:4368",
-				["time"] = 1697641139,
-			}, -- [226]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641143,
-			}, -- [227]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641147,
-			}, -- [228]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:3195:1183",
-				["time"] = 1697641152,
-			}, -- [229]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1697641160,
-			}, -- [230]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:10088:1118",
-				["time"] = 1697641164,
-			}, -- [231]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:10088:1033",
-				["time"] = 1697641172,
-			}, -- [232]
-			{
 				["result"] = {
 					["i:11174"] = 1,
 				},
+			}, -- [198]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641016,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [199]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641019,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [200]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641026,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [201]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641030,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [202]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641034,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [203]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641037,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [204]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641041,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [205]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641045,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [206]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641050,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [207]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641054,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [208]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641058,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [209]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641062,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [210]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641065,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [211]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641071,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [212]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641075,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [213]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641082,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [214]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641090,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [215]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641094,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [216]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641097,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [217]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641102,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [218]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641106,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [219]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641109,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [220]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641115,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [221]
+			{
+				["item"] = "i:4368",
+				["time"] = 1697641119,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [222]
+			{
+				["item"] = "i:4368",
+				["time"] = 1697641126,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [223]
+			{
+				["item"] = "i:4368",
+				["time"] = 1697641129,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [224]
+			{
+				["item"] = "i:4368",
+				["time"] = 1697641135,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [225]
+			{
+				["item"] = "i:4368",
+				["time"] = 1697641139,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [226]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641143,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [227]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641147,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [228]
+			{
+				["item"] = "i:3195:1183",
+				["time"] = 1697641152,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [229]
+			{
+				["item"] = "i:2315",
+				["time"] = 1697641160,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [230]
+			{
+				["item"] = "i:10088:1118",
+				["time"] = 1697641164,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [231]
+			{
+				["item"] = "i:10088:1033",
+				["time"] = 1697641172,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [232]
+			{
 				["item"] = "i:15169:212",
 				["time"] = 1697641176,
+				["result"] = {
+					["i:11174"] = 1,
+				},
 			}, -- [233]
 			{
+				["item"] = "i:3480",
+				["time"] = 1697641182,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:3480",
-				["time"] = 1697641182,
 			}, -- [234]
 			{
+				["item"] = "i:3480",
+				["time"] = 1697641186,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:3480",
-				["time"] = 1697641186,
 			}, -- [235]
 			{
+				["item"] = "i:3480",
+				["time"] = 1697641192,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:3480",
-				["time"] = 1697641192,
 			}, -- [236]
 			{
+				["item"] = "i:3480",
+				["time"] = 1697641196,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:3480",
-				["time"] = 1697641196,
 			}, -- [237]
 			{
+				["item"] = "i:5966",
+				["time"] = 1697641201,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:5966",
-				["time"] = 1697641201,
 			}, -- [238]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:7482:1117",
 				["time"] = 1697641205,
-			}, -- [239]
-			{
 				["result"] = {
 					["i:11137"] = 5,
 				},
+			}, -- [239]
+			{
 				["item"] = "i:9966:872",
 				["time"] = 1697641209,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [240]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:6350",
 				["time"] = 1697641212,
-			}, -- [241]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:6350",
-				["time"] = 1697641220,
-			}, -- [242]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [241]
+			{
+				["item"] = "i:6350",
+				["time"] = 1697641220,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [242]
+			{
 				["item"] = "i:6350",
 				["time"] = 1697641224,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [243]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:6350",
 				["time"] = 1697641227,
-			}, -- [244]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [244]
+			{
 				["item"] = "i:6350",
 				["time"] = 1697641231,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [245]
 			{
+				["item"] = "i:15210:19",
+				["time"] = 1697641235,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:15210:19",
-				["time"] = 1697641235,
 			}, -- [246]
 			{
+				["item"] = "i:2315",
+				["time"] = 1697641239,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:2315",
-				["time"] = 1697641239,
 			}, -- [247]
 			{
+				["item"] = "i:2315",
+				["time"] = 1697641245,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2315",
-				["time"] = 1697641245,
 			}, -- [248]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1697641249,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [249]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1697641257,
-			}, -- [250]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1697641260,
-			}, -- [251]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641266,
-			}, -- [252]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641275,
-			}, -- [253]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:25439",
-				["time"] = 1697641376,
-			}, -- [254]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [250]
+			{
+				["item"] = "i:2315",
+				["time"] = 1697641260,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [251]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641266,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [252]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641275,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [253]
+			{
+				["item"] = "i:25439",
+				["time"] = 1697641376,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [254]
+			{
 				["item"] = "i:4567:503",
 				["time"] = 1697641380,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [255]
 			{
+				["item"] = "i:1625:1123",
+				["time"] = 1697641384,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:1625:1123",
-				["time"] = 1697641384,
 			}, -- [256]
 			{
+				["item"] = "i:14370",
+				["time"] = 1697641388,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14370",
-				["time"] = 1697641388,
 			}, -- [257]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:15498:108",
 				["time"] = 1697641392,
-			}, -- [258]
-			{
 				["result"] = {
 					["i:10978"] = 1,
 				},
+			}, -- [258]
+			{
 				["item"] = "i:21934",
 				["time"] = 1697641396,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [259]
 			{
+				["item"] = "i:2315",
+				["time"] = 1697641400,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:2315",
-				["time"] = 1697641400,
 			}, -- [260]
 			{
+				["item"] = "i:2315",
+				["time"] = 1697641403,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2315",
-				["time"] = 1697641403,
 			}, -- [261]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4368",
 				["time"] = 1697641407,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [262]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4368",
 				["time"] = 1697641410,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [263]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4368",
 				["time"] = 1697641416,
-			}, -- [264]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [264]
+			{
 				["item"] = "i:4368",
 				["time"] = 1697641420,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [265]
 			{
-				["time"] = 1697651614,
 				["result"] = {
 					["i:22446"] = 2,
 				},
 				["item"] = "i:24880:-40",
+				["time"] = 1697651614,
 			}, -- [266]
 			{
-				["time"] = 1697651618,
 				["result"] = {
 					["i:22446"] = 1,
 				},
 				["item"] = "i:25069:-28",
+				["time"] = 1697651618,
 			}, -- [267]
 			{
-				["time"] = 1697651623,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24662:-9",
+				["time"] = 1697651623,
 			}, -- [268]
 			{
-				["time"] = 1697651627,
 				["result"] = {
 					["i:22445"] = 5,
 				},
 				["item"] = "i:25009:-44",
+				["time"] = 1697651627,
 			}, -- [269]
 			{
-				["time"] = 1697651631,
 				["result"] = {
 					["i:22446"] = 2,
 				},
 				["item"] = "i:24672:-34",
+				["time"] = 1697651631,
 			}, -- [270]
 			{
-				["time"] = 1697651635,
 				["result"] = {
 					["i:22446"] = 2,
 				},
 				["item"] = "i:24785:-5",
+				["time"] = 1697651635,
 			}, -- [271]
 			{
-				["time"] = 1697651639,
 				["result"] = {
 					["i:22446"] = 1,
 				},
 				["item"] = "i:25307:-44",
+				["time"] = 1697651639,
 			}, -- [272]
 			{
+				["item"] = "i:9811:588",
+				["time"] = 1697699923,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:9811:588",
-				["time"] = 1697699923,
 			}, -- [273]
 			{
+				["item"] = "i:9811:1185",
+				["time"] = 1697699926,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:9811:1185",
-				["time"] = 1697699926,
 			}, -- [274]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699930,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [275]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699933,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [276]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699937,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [277]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699941,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [278]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699944,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [279]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699948,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [280]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699952,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [281]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699955,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [282]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699959,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [283]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699963,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [284]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699967,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [285]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699971,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [286]
 			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699974,
+				["result"] = {
+					["i:10938"] = 1,
+				},
 			}, -- [287]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699978,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [288]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699982,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [289]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699986,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [290]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699989,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [291]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697699993,
-			}, -- [292]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:12054",
-				["time"] = 1697700003,
-			}, -- [293]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:15494:23",
-				["time"] = 1697700007,
-			}, -- [294]
-			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
-				["item"] = "i:2310",
-				["time"] = 1697700011,
-			}, -- [295]
-			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
-				["item"] = "i:2310",
-				["time"] = 1697700015,
-			}, -- [296]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
-				["item"] = "i:2310",
-				["time"] = 1697700018,
-			}, -- [297]
+			}, -- [292]
 			{
+				["item"] = "i:12054",
+				["time"] = 1697700003,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+			}, -- [293]
+			{
+				["item"] = "i:15494:23",
+				["time"] = 1697700007,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [294]
+			{
+				["item"] = "i:2310",
+				["time"] = 1697700011,
+				["result"] = {
+					["i:10938"] = 1,
+				},
+			}, -- [295]
+			{
+				["item"] = "i:2310",
+				["time"] = 1697700015,
+				["result"] = {
+					["i:10940"] = 1,
+				},
+			}, -- [296]
+			{
+				["item"] = "i:2310",
+				["time"] = 1697700018,
+				["result"] = {
+					["i:10938"] = 2,
+				},
+			}, -- [297]
+			{
 				["item"] = "i:6578:1554",
 				["time"] = 1697700022,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [298]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700027,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [299]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700031,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [300]
 			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700034,
+				["result"] = {
+					["i:10938"] = 1,
+				},
 			}, -- [301]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700038,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [302]
 			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700041,
-			}, -- [303]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:4239",
-				["time"] = 1697700045,
-			}, -- [304]
-			{
 				["result"] = {
 					["i:10938"] = 1,
 				},
+			}, -- [303]
+			{
+				["item"] = "i:4239",
+				["time"] = 1697700045,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [304]
+			{
 				["item"] = "i:4239",
 				["time"] = 1697700049,
+				["result"] = {
+					["i:10938"] = 1,
+				},
 			}, -- [305]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700052,
-			}, -- [306]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:4239",
-				["time"] = 1697700056,
-			}, -- [307]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:4239",
-				["time"] = 1697700060,
-			}, -- [308]
-			{
 				["result"] = {
 					["i:10940"] = 1,
 				},
+			}, -- [306]
+			{
+				["item"] = "i:4239",
+				["time"] = 1697700056,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [307]
+			{
+				["item"] = "i:4239",
+				["time"] = 1697700060,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [308]
+			{
 				["item"] = "i:4239",
 				["time"] = 1697700063,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [309]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700067,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [310]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4239",
 				["time"] = 1697700071,
-			}, -- [311]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [311]
+			{
 				["item"] = "i:4239",
 				["time"] = 1697700074,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [312]
 			{
+				["item"] = "i:7529:1616",
+				["time"] = 1697700078,
 				["result"] = {
 					["i:11176"] = 2,
 				},
-				["item"] = "i:7529:1616",
-				["time"] = 1697700078,
 			}, -- [313]
 			{
+				["item"] = "i:24717:-31",
+				["time"] = 1697700082,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:24717:-31",
-				["time"] = 1697700082,
 			}, -- [314]
 			{
+				["item"] = "i:14165:180",
+				["time"] = 1697700086,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:14165:180",
-				["time"] = 1697700086,
 			}, -- [315]
 			{
+				["item"] = "i:14179:1802",
+				["time"] = 1697700089,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:14179:1802",
-				["time"] = 1697700089,
 			}, -- [316]
 			{
+				["item"] = "i:3018",
+				["time"] = 1697700093,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:3018",
-				["time"] = 1697700093,
 			}, -- [317]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:6580:1021",
 				["time"] = 1697700097,
-			}, -- [318]
-			{
 				["result"] = {
 					["i:10940"] = 5,
 				},
+			}, -- [318]
+			{
 				["item"] = "i:9818:1555",
 				["time"] = 1697700100,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [319]
 			{
+				["item"] = "i:6575:89",
+				["time"] = 1697700104,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:6575:89",
-				["time"] = 1697700104,
 			}, -- [320]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700116,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [321]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700120,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [322]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700123,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [323]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700127,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [324]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700132,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [325]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700136,
-			}, -- [326]
-			{
-				["result"] = {
-					["i:11139"] = 1,
-				},
-				["item"] = "i:6040",
-				["time"] = 1697700140,
-			}, -- [327]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:6040",
-				["time"] = 1697700143,
-			}, -- [328]
-			{
-				["result"] = {
-					["i:11139"] = 1,
-				},
-				["item"] = "i:6040",
-				["time"] = 1697700147,
-			}, -- [329]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [326]
+			{
+				["item"] = "i:6040",
+				["time"] = 1697700140,
+				["result"] = {
+					["i:11139"] = 1,
+				},
+			}, -- [327]
+			{
+				["item"] = "i:6040",
+				["time"] = 1697700143,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [328]
+			{
+				["item"] = "i:6040",
+				["time"] = 1697700147,
+				["result"] = {
+					["i:11139"] = 1,
+				},
+			}, -- [329]
+			{
 				["item"] = "i:6040",
 				["time"] = 1697700151,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [330]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697700155,
-			}, -- [331]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [331]
+			{
 				["item"] = "i:6040",
 				["time"] = 1697700161,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [332]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697700165,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697700165,
 			}, -- [333]
 			{
+				["item"] = "i:4567:1099",
+				["time"] = 1697700168,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4567:1099",
-				["time"] = 1697700168,
 			}, -- [334]
 			{
+				["item"] = "i:14165:1024",
+				["time"] = 1697700172,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:14165:1024",
-				["time"] = 1697700172,
 			}, -- [335]
 			{
+				["item"] = "i:15252:1218",
+				["time"] = 1697700176,
 				["result"] = {
 					["i:11176"] = 2,
 				},
-				["item"] = "i:15252:1218",
-				["time"] = 1697700176,
 			}, -- [336]
 			{
+				["item"] = "i:3195:843",
+				["time"] = 1697700181,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3195:843",
-				["time"] = 1697700181,
 			}, -- [337]
 			{
+				["item"] = "i:15222:1549",
+				["time"] = 1697700185,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:15222:1549",
-				["time"] = 1697700185,
 			}, -- [338]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697700189,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697700189,
 			}, -- [339]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697700193,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697700193,
 			}, -- [340]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697700197,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697700197,
 			}, -- [341]
 			{
+				["item"] = "i:25046:-30",
+				["time"] = 1697700202,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:25046:-30",
-				["time"] = 1697700202,
 			}, -- [342]
 			{
+				["item"] = "i:36005:-39",
+				["time"] = 1697700205,
 				["result"] = {
 					["i:34054"] = 4,
 				},
-				["item"] = "i:36005:-39",
-				["time"] = 1697700205,
 			}, -- [343]
 			{
+				["item"] = "i:17922",
+				["time"] = 1697700209,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:17922",
-				["time"] = 1697700209,
 			}, -- [344]
 			{
+				["item"] = "i:15268:673",
+				["time"] = 1697700213,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:15268:673",
-				["time"] = 1697700213,
 			}, -- [345]
 			{
+				["item"] = "i:2078:1548",
+				["time"] = 1697700216,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:2078:1548",
-				["time"] = 1697700216,
 			}, -- [346]
 			{
-				["result"] = {
-					["i:22446"] = 1,
-				},
 				["item"] = "i:25071:-13",
 				["time"] = 1697703909,
-			}, -- [347]
-			{
-				["result"] = {
-					["i:22446"] = 2,
-				},
-				["item"] = "i:24682:-38",
-				["time"] = 1697703912,
-			}, -- [348]
-			{
-				["result"] = {
-					["i:22445"] = 2,
-				},
-				["item"] = "i:25000:-31",
-				["time"] = 1697703916,
-			}, -- [349]
-			{
-				["result"] = {
-					["i:22445"] = 2,
-				},
-				["item"] = "i:24676:-36",
-				["time"] = 1697703920,
-			}, -- [350]
-			{
 				["result"] = {
 					["i:22446"] = 1,
 				},
-				["item"] = "i:25125:-8",
-				["time"] = 1697703923,
-			}, -- [351]
+			}, -- [347]
 			{
+				["item"] = "i:24682:-38",
+				["time"] = 1697703912,
 				["result"] = {
 					["i:22446"] = 2,
 				},
+			}, -- [348]
+			{
+				["item"] = "i:25000:-31",
+				["time"] = 1697703916,
+				["result"] = {
+					["i:22445"] = 2,
+				},
+			}, -- [349]
+			{
+				["item"] = "i:24676:-36",
+				["time"] = 1697703920,
+				["result"] = {
+					["i:22445"] = 2,
+				},
+			}, -- [350]
+			{
+				["item"] = "i:25125:-8",
+				["time"] = 1697703923,
+				["result"] = {
+					["i:22446"] = 1,
+				},
+			}, -- [351]
+			{
 				["item"] = "i:25003:-15",
 				["time"] = 1697703927,
+				["result"] = {
+					["i:22446"] = 2,
+				},
 			}, -- [352]
 			{
-				["result"] = {
-					["i:22445"] = 4,
-				},
 				["item"] = "i:25095:-16",
 				["time"] = 1697703931,
-			}, -- [353]
-			{
 				["result"] = {
 					["i:22445"] = 4,
 				},
+			}, -- [353]
+			{
 				["item"] = "i:25055:-12",
 				["time"] = 1697723350,
+				["result"] = {
+					["i:22445"] = 4,
+				},
 			}, -- [354]
 			{
+				["item"] = "i:24903:-40",
+				["time"] = 1697723353,
 				["result"] = {
 					["i:22445"] = 3,
 				},
-				["item"] = "i:24903:-40",
-				["time"] = 1697723353,
 			}, -- [355]
 			{
+				["item"] = "i:25056:-36",
+				["time"] = 1697723357,
 				["result"] = {
 					["i:22446"] = 2,
 				},
-				["item"] = "i:25056:-36",
-				["time"] = 1697723357,
 			}, -- [356]
 			{
+				["item"] = "i:25054:-15",
+				["time"] = 1697723361,
 				["result"] = {
 					["i:22445"] = 4,
 				},
-				["item"] = "i:25054:-15",
-				["time"] = 1697723361,
 			}, -- [357]
 			{
-				["time"] = 1697723950,
 				["result"] = {
 					["i:10938"] = 2,
 				},
 				["item"] = "i:4564:22",
+				["time"] = 1697723950,
 			}, -- [358]
 			{
-				["time"] = 1697723954,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24717:-39",
+				["time"] = 1697723954,
 			}, -- [359]
 			{
-				["time"] = 1697723957,
 				["result"] = {
 					["i:22447"] = 2,
 				},
 				["item"] = "i:24934:-33",
+				["time"] = 1697723957,
 			}, -- [360]
 			{
-				["time"] = 1697723961,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723961,
 			}, -- [361]
 			{
-				["time"] = 1697723965,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723965,
 			}, -- [362]
 			{
-				["time"] = 1697723969,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723969,
 			}, -- [363]
 			{
-				["time"] = 1697723973,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723973,
 			}, -- [364]
 			{
-				["time"] = 1697723977,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723977,
 			}, -- [365]
 			{
-				["time"] = 1697723980,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723980,
 			}, -- [366]
 			{
-				["time"] = 1697723984,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723984,
 			}, -- [367]
 			{
-				["time"] = 1697723988,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723988,
 			}, -- [368]
 			{
-				["time"] = 1697723992,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723992,
 			}, -- [369]
 			{
-				["time"] = 1697723996,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697723996,
 			}, -- [370]
 			{
-				["time"] = 1697724000,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724000,
 			}, -- [371]
 			{
-				["time"] = 1697724004,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724004,
 			}, -- [372]
 			{
-				["time"] = 1697724008,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724008,
 			}, -- [373]
 			{
-				["time"] = 1697724011,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724011,
 			}, -- [374]
 			{
-				["time"] = 1697724019,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724019,
 			}, -- [375]
 			{
-				["time"] = 1697724023,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724023,
 			}, -- [376]
 			{
-				["time"] = 1697724028,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724028,
 			}, -- [377]
 			{
-				["time"] = 1697724032,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724032,
 			}, -- [378]
 			{
-				["time"] = 1697724036,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724036,
 			}, -- [379]
 			{
-				["time"] = 1697724040,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724040,
 			}, -- [380]
 			{
-				["time"] = 1697724044,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724044,
 			}, -- [381]
 			{
-				["time"] = 1697724048,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724048,
 			}, -- [382]
 			{
-				["time"] = 1697724051,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724051,
 			}, -- [383]
 			{
-				["time"] = 1697724055,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724055,
 			}, -- [384]
 			{
-				["time"] = 1697724059,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724059,
 			}, -- [385]
 			{
-				["time"] = 1697724063,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724063,
 			}, -- [386]
 			{
-				["time"] = 1697724067,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724067,
 			}, -- [387]
 			{
-				["time"] = 1697724070,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724070,
 			}, -- [388]
 			{
-				["time"] = 1697724075,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724075,
 			}, -- [389]
 			{
-				["time"] = 1697724078,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724078,
 			}, -- [390]
 			{
-				["time"] = 1697724082,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724082,
 			}, -- [391]
 			{
-				["time"] = 1697724086,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724086,
 			}, -- [392]
 			{
-				["time"] = 1697724090,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724090,
 			}, -- [393]
 			{
-				["time"] = 1697724094,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724094,
 			}, -- [394]
 			{
-				["time"] = 1697724097,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724097,
 			}, -- [395]
 			{
-				["time"] = 1697724101,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724101,
 			}, -- [396]
 			{
-				["time"] = 1697724105,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724105,
 			}, -- [397]
 			{
-				["time"] = 1697724108,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724108,
 			}, -- [398]
 			{
-				["time"] = 1697724112,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724112,
 			}, -- [399]
 			{
-				["time"] = 1697724116,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20907",
+				["time"] = 1697724116,
 			}, -- [400]
 			{
-				["time"] = 1697724120,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20818",
+				["time"] = 1697724120,
 			}, -- [401]
 			{
-				["time"] = 1697724124,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20818",
+				["time"] = 1697724124,
 			}, -- [402]
 			{
-				["time"] = 1697724128,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1697724128,
 			}, -- [403]
 			{
-				["time"] = 1697724131,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:6587:849",
+				["time"] = 1697724131,
 			}, -- [404]
 			{
-				["time"] = 1697724136,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:9781:764",
+				["time"] = 1697724136,
 			}, -- [405]
 			{
-				["time"] = 1697724139,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:9794:1016",
+				["time"] = 1697724139,
 			}, -- [406]
 			{
-				["time"] = 1697724143,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:3196:1015",
+				["time"] = 1697724143,
 			}, -- [407]
 			{
-				["time"] = 1697724147,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:15649:1029",
+				["time"] = 1697724147,
 			}, -- [408]
 			{
-				["time"] = 1697724152,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:1936",
+				["time"] = 1697724152,
 			}, -- [409]
 			{
-				["time"] = 1697724156,
 				["result"] = {
 					["i:11175"] = 1,
 				},
 				["item"] = "i:4088:1844",
+				["time"] = 1697724156,
 			}, -- [410]
 			{
-				["time"] = 1697724159,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:15175:793",
+				["time"] = 1697724159,
 			}, -- [411]
 			{
-				["time"] = 1697724163,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1697724163,
 			}, -- [412]
 			{
-				["time"] = 1697724167,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:7919",
+				["time"] = 1697724167,
 			}, -- [413]
 			{
-				["time"] = 1697724171,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7919",
+				["time"] = 1697724171,
 			}, -- [414]
 			{
-				["time"] = 1697724175,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7919",
+				["time"] = 1697724175,
 			}, -- [415]
 			{
-				["time"] = 1697724179,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:7919",
+				["time"] = 1697724179,
 			}, -- [416]
 			{
-				["time"] = 1697724183,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:7919",
+				["time"] = 1697724183,
 			}, -- [417]
 			{
-				["time"] = 1697724186,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:2969",
+				["time"] = 1697724186,
 			}, -- [418]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804480,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [419]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804483,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [420]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804487,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [421]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804491,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [422]
 			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804495,
+				["result"] = {
+					["i:11174"] = 1,
+				},
 			}, -- [423]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804499,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [424]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804502,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [425]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804506,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [426]
 			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804510,
+				["result"] = {
+					["i:11137"] = 3,
+				},
 			}, -- [427]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804513,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [428]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804517,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [429]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804522,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [430]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804526,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [431]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804530,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [432]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804533,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [433]
 			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804537,
+				["result"] = {
+					["i:11137"] = 3,
+				},
 			}, -- [434]
 			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804541,
+				["result"] = {
+					["i:11174"] = 1,
+				},
 			}, -- [435]
 			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804545,
+				["result"] = {
+					["i:11174"] = 2,
+				},
 			}, -- [436]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804549,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [437]
 			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804553,
+				["result"] = {
+					["i:11174"] = 2,
+				},
 			}, -- [438]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804556,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [439]
 			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804560,
+				["result"] = {
+					["i:11137"] = 3,
+				},
 			}, -- [440]
 			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804564,
+				["result"] = {
+					["i:11174"] = 2,
+				},
 			}, -- [441]
 			{
-				["result"] = {
-					["i:11137"] = 3,
-				},
 				["item"] = "i:7919",
 				["time"] = 1697804567,
-			}, -- [442]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:7919",
-				["time"] = 1697804571,
-			}, -- [443]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:7919",
-				["time"] = 1697804575,
-			}, -- [444]
-			{
 				["result"] = {
 					["i:11137"] = 3,
 				},
+			}, -- [442]
+			{
+				["item"] = "i:7919",
+				["time"] = 1697804571,
+				["result"] = {
+					["i:11137"] = 4,
+				},
+			}, -- [443]
+			{
+				["item"] = "i:7919",
+				["time"] = 1697804575,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [444]
+			{
 				["item"] = "i:7919",
 				["time"] = 1697804579,
+				["result"] = {
+					["i:11137"] = 3,
+				},
 			}, -- [445]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:8176",
 				["time"] = 1697804583,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [446]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:8176",
 				["time"] = 1697804587,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [447]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:8176",
 				["time"] = 1697804590,
-			}, -- [448]
-			{
 				["result"] = {
 					["i:11177"] = 1,
 				},
+			}, -- [448]
+			{
 				["item"] = "i:8176",
 				["time"] = 1697804594,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [449]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:8176",
 				["time"] = 1697804598,
+				["result"] = {
+					["i:11137"] = 5,
+				},
 			}, -- [450]
 			{
-				["result"] = {
-					["i:11137"] = 5,
-				},
 				["item"] = "i:8176",
 				["time"] = 1697804602,
-			}, -- [451]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804609,
-			}, -- [452]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804613,
-			}, -- [453]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804617,
-			}, -- [454]
-			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804621,
-			}, -- [455]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804625,
-			}, -- [456]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804629,
-			}, -- [457]
-			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
-				["item"] = "i:8176",
-				["time"] = 1697804633,
-			}, -- [458]
-			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
-				["item"] = "i:14270:1808",
-				["time"] = 1697804637,
-			}, -- [459]
-			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
-				["item"] = "i:7919",
-				["time"] = 1697804641,
-			}, -- [460]
-			{
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:7919",
-				["time"] = 1697804645,
-			}, -- [461]
+			}, -- [451]
 			{
+				["item"] = "i:8176",
+				["time"] = 1697804609,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:7919",
-				["time"] = 1697804649,
-			}, -- [462]
+			}, -- [452]
 			{
+				["item"] = "i:8176",
+				["time"] = 1697804613,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [453]
+			{
+				["item"] = "i:8176",
+				["time"] = 1697804617,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [454]
+			{
+				["item"] = "i:8176",
+				["time"] = 1697804621,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:7919",
-				["time"] = 1697804652,
-			}, -- [463]
+			}, -- [455]
 			{
+				["item"] = "i:8176",
+				["time"] = 1697804625,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:15156:787",
-				["time"] = 1697804656,
-			}, -- [464]
+			}, -- [456]
 			{
+				["item"] = "i:8176",
+				["time"] = 1697804629,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [457]
+			{
+				["item"] = "i:8176",
+				["time"] = 1697804633,
+				["result"] = {
+					["i:11174"] = 1,
+				},
+			}, -- [458]
+			{
+				["item"] = "i:14270:1808",
+				["time"] = 1697804637,
+				["result"] = {
+					["i:11174"] = 1,
+				},
+			}, -- [459]
+			{
+				["item"] = "i:7919",
+				["time"] = 1697804641,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:15363:784",
-				["time"] = 1697804660,
-			}, -- [465]
+			}, -- [460]
 			{
+				["item"] = "i:7919",
+				["time"] = 1697804645,
 				["result"] = {
-					["i:11137"] = 4,
+					["i:11137"] = 5,
 				},
-				["item"] = "i:15375:217",
-				["time"] = 1697804664,
-			}, -- [466]
+			}, -- [461]
 			{
+				["item"] = "i:7919",
+				["time"] = 1697804649,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [462]
+			{
+				["item"] = "i:7919",
+				["time"] = 1697804652,
+				["result"] = {
+					["i:11174"] = 1,
+				},
+			}, -- [463]
+			{
+				["item"] = "i:15156:787",
+				["time"] = 1697804656,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:8176",
-				["time"] = 1697804668,
-			}, -- [467]
+			}, -- [464]
 			{
+				["item"] = "i:15363:784",
+				["time"] = 1697804660,
+				["result"] = {
+					["i:11174"] = 2,
+				},
+			}, -- [465]
+			{
+				["item"] = "i:15375:217",
+				["time"] = 1697804664,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+			}, -- [466]
+			{
+				["item"] = "i:8176",
+				["time"] = 1697804668,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [467]
+			{
 				["item"] = "i:8176",
 				["time"] = 1697804671,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [468]
 			{
+				["item"] = "i:2078:23",
+				["time"] = 1697804677,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2078:23",
-				["time"] = 1697804677,
 			}, -- [469]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:2078:23",
 				["time"] = 1697804681,
-			}, -- [470]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [470]
+			{
 				["item"] = "i:2078:23",
 				["time"] = 1697804685,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [471]
 			{
+				["item"] = "i:8194:1843",
+				["time"] = 1697804689,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:8194:1843",
-				["time"] = 1697804689,
 			}, -- [472]
 			{
+				["item"] = "i:8194:679",
+				["time"] = 1697804692,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:8194:679",
-				["time"] = 1697804692,
 			}, -- [473]
 			{
+				["item"] = "i:2868",
+				["time"] = 1697804696,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:2868",
-				["time"] = 1697804696,
 			}, -- [474]
 			{
+				["item"] = "i:2868",
+				["time"] = 1697804700,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:2868",
-				["time"] = 1697804700,
 			}, -- [475]
 			{
+				["item"] = "i:2868",
+				["time"] = 1697804704,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2868",
-				["time"] = 1697804704,
 			}, -- [476]
 			{
+				["item"] = "i:4570:927",
+				["time"] = 1697804708,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4570:927",
-				["time"] = 1697804708,
 			}, -- [477]
 			{
+				["item"] = "i:4577",
+				["time"] = 1697804712,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:4577",
-				["time"] = 1697804712,
 			}, -- [478]
 			{
+				["item"] = "i:3184:1548",
+				["time"] = 1697804715,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3184:1548",
-				["time"] = 1697804715,
 			}, -- [479]
 			{
+				["item"] = "i:2078:23",
+				["time"] = 1697804719,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2078:23",
-				["time"] = 1697804719,
 			}, -- [480]
 			{
+				["item"] = "i:14762",
+				["time"] = 1697804723,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:14762",
-				["time"] = 1697804723,
 			}, -- [481]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804726,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [482]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804730,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [483]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804734,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [484]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804738,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [485]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804741,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [486]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804745,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [487]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697804749,
-			}, -- [488]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697804753,
-			}, -- [489]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697804756,
-			}, -- [490]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697804761,
-			}, -- [491]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697804764,
-			}, -- [492]
+			}, -- [488]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:4249",
-				["time"] = 1697804768,
-			}, -- [493]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697804772,
-			}, -- [494]
-			{
+				["time"] = 1697804753,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:2316",
-				["time"] = 1697804802,
-			}, -- [495]
+			}, -- [489]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:2316",
-				["time"] = 1697804809,
-			}, -- [496]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:2316",
-				["time"] = 1697804813,
-			}, -- [497]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:2316",
-				["time"] = 1697804817,
-			}, -- [498]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:2316",
-				["time"] = 1697804821,
-			}, -- [499]
-			{
+				["item"] = "i:4249",
+				["time"] = 1697804756,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+			}, -- [490]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697804761,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [491]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697804764,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [492]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697804768,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [493]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697804772,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [494]
+			{
+				["item"] = "i:2316",
+				["time"] = 1697804802,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [495]
+			{
+				["item"] = "i:2316",
+				["time"] = 1697804809,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [496]
+			{
+				["item"] = "i:2316",
+				["time"] = 1697804813,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [497]
+			{
+				["item"] = "i:2316",
+				["time"] = 1697804817,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [498]
+			{
+				["item"] = "i:2316",
+				["time"] = 1697804821,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [499]
+			{
 				["item"] = "i:2316",
 				["time"] = 1697804825,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [500]
 			{
+				["item"] = "i:5207",
+				["time"] = 1697804828,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:5207",
-				["time"] = 1697804828,
 			}, -- [501]
 			{
+				["item"] = "i:4239",
+				["time"] = 1697804832,
 				["result"] = {
 					["i:10940"] = 1,
 				},
-				["item"] = "i:4239",
-				["time"] = 1697804832,
 			}, -- [502]
 			{
+				["item"] = "i:4239",
+				["time"] = 1697804836,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4239",
-				["time"] = 1697804836,
 			}, -- [503]
 			{
+				["item"] = "i:4239",
+				["time"] = 1697804840,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:4239",
-				["time"] = 1697804840,
 			}, -- [504]
 			{
+				["item"] = "i:4239",
+				["time"] = 1697804844,
 				["result"] = {
 					["i:10938"] = 2,
 				},
-				["item"] = "i:4239",
-				["time"] = 1697804844,
 			}, -- [505]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2316",
 				["time"] = 1697804848,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [506]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2865",
 				["time"] = 1697804851,
-			}, -- [507]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [507]
+			{
 				["item"] = "i:2865",
 				["time"] = 1697804855,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [508]
 			{
+				["item"] = "i:2865",
+				["time"] = 1697804859,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:2865",
-				["time"] = 1697804859,
 			}, -- [509]
 			{
+				["item"] = "i:2865",
+				["time"] = 1697804862,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2865",
-				["time"] = 1697804862,
 			}, -- [510]
 			{
+				["item"] = "i:2865",
+				["time"] = 1697804867,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2865",
-				["time"] = 1697804867,
 			}, -- [511]
 			{
+				["item"] = "i:2865",
+				["time"] = 1697804870,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:2865",
-				["time"] = 1697804870,
 			}, -- [512]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2865",
 				["time"] = 1697804875,
-			}, -- [513]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [513]
+			{
 				["item"] = "i:15124:114",
 				["time"] = 1697804879,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [514]
 			{
+				["item"] = "i:2078:1548",
+				["time"] = 1697804883,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2078:1548",
-				["time"] = 1697804883,
 			}, -- [515]
 			{
+				["item"] = "i:4057",
+				["time"] = 1697804886,
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:4057",
-				["time"] = 1697804886,
 			}, -- [516]
 			{
+				["item"] = "i:4057",
+				["time"] = 1697804890,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:4057",
-				["time"] = 1697804890,
 			}, -- [517]
 			{
+				["item"] = "i:4057",
+				["time"] = 1697804894,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:4057",
-				["time"] = 1697804894,
 			}, -- [518]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20820",
 				["time"] = 1697804898,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [519]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804901,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [520]
 			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804905,
-			}, -- [521]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804908,
-			}, -- [522]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804912,
-			}, -- [523]
-			{
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:20823",
-				["time"] = 1697804916,
-			}, -- [524]
+			}, -- [521]
 			{
+				["item"] = "i:20823",
+				["time"] = 1697804908,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:20823",
-				["time"] = 1697804919,
-			}, -- [525]
+			}, -- [522]
 			{
+				["item"] = "i:20823",
+				["time"] = 1697804912,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [523]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804916,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [524]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804919,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [525]
+			{
 				["item"] = "i:20823",
 				["time"] = 1697804923,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [526]
 			{
+				["item"] = "i:20823",
+				["time"] = 1697804927,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:20823",
-				["time"] = 1697804927,
 			}, -- [527]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804931,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [528]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804934,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [529]
 			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804939,
+				["result"] = {
+					["i:10998"] = 2,
+				},
 			}, -- [530]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804943,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [531]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804946,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [532]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20823",
 				["time"] = 1697804950,
-			}, -- [533]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804954,
-			}, -- [534]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804958,
-			}, -- [535]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804962,
-			}, -- [536]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804966,
-			}, -- [537]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20823",
-				["time"] = 1697804969,
-			}, -- [538]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:15329:108",
-				["time"] = 1697804973,
-			}, -- [539]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:6561",
-				["time"] = 1697804977,
-			}, -- [540]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [533]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804954,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [534]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804958,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [535]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804962,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [536]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804966,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [537]
+			{
+				["item"] = "i:20823",
+				["time"] = 1697804969,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [538]
+			{
+				["item"] = "i:15329:108",
+				["time"] = 1697804973,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [539]
+			{
+				["item"] = "i:6561",
+				["time"] = 1697804977,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [540]
+			{
 				["item"] = "i:6567:768",
 				["time"] = 1697804980,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [541]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:6567:854",
 				["time"] = 1697804984,
-			}, -- [542]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [542]
+			{
 				["item"] = "i:6578:155",
 				["time"] = 1697804988,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [543]
 			{
+				["item"] = "i:4575:506",
+				["time"] = 1697804992,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4575:506",
-				["time"] = 1697804992,
 			}, -- [544]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697804995,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [545]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697804999,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [546]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805003,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [547]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805006,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [548]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805010,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [549]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805014,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [550]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805022,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [551]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805030,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [552]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805033,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [553]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805037,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [554]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805041,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [555]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805045,
-			}, -- [556]
-			{
 				["result"] = {
 					["i:11177"] = 1,
 				},
+			}, -- [556]
+			{
 				["item"] = "i:7922",
 				["time"] = 1697805048,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [557]
 			{
+				["item"] = "i:7919",
+				["time"] = 1697805056,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:7919",
-				["time"] = 1697805056,
 			}, -- [558]
 			{
+				["item"] = "i:7919",
+				["time"] = 1697805060,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:7919",
-				["time"] = 1697805060,
 			}, -- [559]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697805063,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [560]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697805067,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [561]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697805071,
-			}, -- [562]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697805075,
-			}, -- [563]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:4249",
-				["time"] = 1697805079,
-			}, -- [564]
-			{
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697805083,
-			}, -- [565]
+			}, -- [562]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
-				["time"] = 1697805087,
-			}, -- [566]
-			{
+				["time"] = 1697805075,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+			}, -- [563]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697805079,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [564]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697805083,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [565]
+			{
+				["item"] = "i:4249",
+				["time"] = 1697805087,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [566]
+			{
 				["item"] = "i:4249",
 				["time"] = 1697805090,
+				["result"] = {
+					["i:10998"] = 2,
+				},
 			}, -- [567]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697805094,
-			}, -- [568]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [568]
+			{
 				["item"] = "i:4249",
 				["time"] = 1697805098,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [569]
 			{
+				["item"] = "i:4249",
+				["time"] = 1697805102,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697805102,
 			}, -- [570]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4249",
 				["time"] = 1697805105,
-			}, -- [571]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [571]
+			{
 				["item"] = "i:4249",
 				["time"] = 1697805109,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [572]
 			{
+				["item"] = "i:4249",
+				["time"] = 1697805113,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697805113,
 			}, -- [573]
 			{
+				["item"] = "i:4249",
+				["time"] = 1697805118,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697805118,
 			}, -- [574]
 			{
+				["item"] = "i:4249",
+				["time"] = 1697805122,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:4249",
-				["time"] = 1697805122,
 			}, -- [575]
 			{
+				["item"] = "i:5212",
+				["time"] = 1697805126,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:5212",
-				["time"] = 1697805126,
 			}, -- [576]
 			{
+				["item"] = "i:4575:1804",
+				["time"] = 1697805129,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4575:1804",
-				["time"] = 1697805129,
 			}, -- [577]
 			{
+				["item"] = "i:1625:527",
+				["time"] = 1697805133,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:1625:527",
-				["time"] = 1697805133,
 			}, -- [578]
 			{
+				["item"] = "i:24810:-32",
+				["time"] = 1697805137,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:24810:-32",
-				["time"] = 1697805137,
 			}, -- [579]
 			{
+				["item"] = "i:24812:-12",
+				["time"] = 1697805140,
 				["result"] = {
 					["i:22445"] = 3,
 				},
-				["item"] = "i:24812:-12",
-				["time"] = 1697805140,
 			}, -- [580]
 			{
+				["item"] = "i:24962:-36",
+				["time"] = 1697805144,
 				["result"] = {
 					["i:22447"] = 2,
 				},
-				["item"] = "i:24962:-36",
-				["time"] = 1697805144,
 			}, -- [581]
 			{
+				["item"] = "i:28496:-49",
+				["time"] = 1697805148,
 				["result"] = {
 					["i:22445"] = 3,
 				},
-				["item"] = "i:28496:-49",
-				["time"] = 1697805148,
 			}, -- [582]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805152,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [583]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805155,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [584]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805159,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [585]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805163,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [586]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805167,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [587]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805170,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [588]
 			{
-				["result"] = {
-					["i:11177"] = 1,
-				},
 				["item"] = "i:7922",
 				["time"] = 1697805174,
-			}, -- [589]
-			{
 				["result"] = {
 					["i:11177"] = 1,
 				},
+			}, -- [589]
+			{
 				["item"] = "i:7922",
 				["time"] = 1697805178,
+				["result"] = {
+					["i:11177"] = 1,
+				},
 			}, -- [590]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:15964",
 				["time"] = 1697839092,
-			}, -- [591]
-			{
 				["result"] = {
 					["i:11137"] = 4,
 				},
+			}, -- [591]
+			{
 				["item"] = "i:7485:775",
 				["time"] = 1697839097,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [592]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:14429",
 				["time"] = 1697839100,
-			}, -- [593]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [593]
+			{
 				["item"] = "i:15597:211",
 				["time"] = 1697839105,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [594]
 			{
+				["item"] = "i:14258:1887",
+				["time"] = 1697839108,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:14258:1887",
-				["time"] = 1697839108,
 			}, -- [595]
 			{
+				["item"] = "i:4571:1548",
+				["time"] = 1697839113,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:4571:1548",
-				["time"] = 1697839113,
 			}, -- [596]
 			{
+				["item"] = "i:24868:-26",
+				["time"] = 1697839116,
 				["result"] = {
 					["i:22446"] = 2,
 				},
-				["item"] = "i:24868:-26",
-				["time"] = 1697839116,
 			}, -- [597]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2868",
 				["time"] = 1697839120,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [598]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2868",
 				["time"] = 1697839124,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [599]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:2868",
 				["time"] = 1697839129,
-			}, -- [600]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:14175:849",
-				["time"] = 1697839133,
-			}, -- [601]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:6568:179",
-				["time"] = 1697839136,
-			}, -- [602]
+			}, -- [600]
 			{
+				["item"] = "i:14175:849",
+				["time"] = 1697839133,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [601]
+			{
+				["item"] = "i:6568:179",
+				["time"] = 1697839136,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [602]
+			{
 				["item"] = "i:6561",
 				["time"] = 1697839141,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [603]
 			{
+				["item"] = "i:9848:1027",
+				["time"] = 1697839145,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:9848:1027",
-				["time"] = 1697839145,
 			}, -- [604]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:6381",
 				["time"] = 1697839149,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [605]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839153,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [606]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839157,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [607]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839160,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [608]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839165,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [609]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839169,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [610]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839173,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [611]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839176,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [612]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839181,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [613]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839185,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [614]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839189,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [615]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839193,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [616]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839197,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [617]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839201,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [618]
 			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839205,
+				["result"] = {
+					["i:10998"] = 2,
+				},
 			}, -- [619]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839209,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [620]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839213,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [621]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839217,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [622]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839221,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [623]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839225,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [624]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839229,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [625]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839233,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [626]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839237,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [627]
 			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839241,
+				["result"] = {
+					["i:10998"] = 2,
+				},
 			}, -- [628]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839245,
-			}, -- [629]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839249,
-			}, -- [630]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839253,
-			}, -- [631]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839257,
-			}, -- [632]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839261,
-			}, -- [633]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839265,
-			}, -- [634]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839269,
-			}, -- [635]
-			{
-				["result"] = {
-					["i:10998"] = 2,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839273,
-			}, -- [636]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839278,
-			}, -- [637]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839283,
-			}, -- [638]
-			{
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:20818",
-				["time"] = 1697839287,
-			}, -- [639]
+			}, -- [629]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
-				["time"] = 1697839291,
-			}, -- [640]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20818",
-				["time"] = 1697839295,
-			}, -- [641]
-			{
+				["time"] = 1697839249,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [630]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839253,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [631]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839257,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [632]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839261,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [633]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839265,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [634]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839269,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [635]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839273,
+				["result"] = {
+					["i:10998"] = 2,
+				},
+			}, -- [636]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839278,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [637]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839283,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [638]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839287,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [639]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839291,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [640]
+			{
+				["item"] = "i:20818",
+				["time"] = 1697839295,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [641]
+			{
 				["item"] = "i:20818",
 				["time"] = 1697839301,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [642]
 			{
+				["item"] = "i:15608:218",
+				["time"] = 1697839394,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:15608:218",
-				["time"] = 1697839394,
 			}, -- [643]
 			{
+				["item"] = "i:3184:19",
+				["time"] = 1697839398,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:3184:19",
-				["time"] = 1697839398,
 			}, -- [644]
 			{
+				["item"] = "i:3184:19",
+				["time"] = 1697839401,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3184:19",
-				["time"] = 1697839401,
 			}, -- [645]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839405,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839405,
 			}, -- [646]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:25439",
 				["time"] = 1697839409,
-			}, -- [647]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [647]
+			{
 				["item"] = "i:25439",
 				["time"] = 1697839412,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [648]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697839427,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697839427,
 			}, -- [649]
 			{
+				["item"] = "i:9851:781",
+				["time"] = 1697839432,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:9851:781",
-				["time"] = 1697839432,
 			}, -- [650]
 			{
+				["item"] = "i:3065",
+				["time"] = 1697839436,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:3065",
-				["time"] = 1697839436,
 			}, -- [651]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839439,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839439,
 			}, -- [652]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839443,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839443,
 			}, -- [653]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839447,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839447,
 			}, -- [654]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839452,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839452,
 			}, -- [655]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839455,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839455,
 			}, -- [656]
 			{
+				["item"] = "i:25439",
+				["time"] = 1697839460,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:25439",
-				["time"] = 1697839460,
 			}, -- [657]
 			{
+				["item"] = "i:6580:1021",
+				["time"] = 1697839464,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:6580:1021",
-				["time"] = 1697839464,
 			}, -- [658]
 			{
+				["item"] = "i:14235:1029",
+				["time"] = 1697839468,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:14235:1029",
-				["time"] = 1697839468,
 			}, -- [659]
 			{
+				["item"] = "i:15248:1016",
+				["time"] = 1697839472,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:15248:1016",
-				["time"] = 1697839472,
 			}, -- [660]
 			{
+				["item"] = "i:14605",
+				["time"] = 1697839476,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:14605",
-				["time"] = 1697839476,
 			}, -- [661]
 			{
+				["item"] = "i:14605",
+				["time"] = 1697839480,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:14605",
-				["time"] = 1697839480,
 			}, -- [662]
 			{
+				["item"] = "i:14605",
+				["time"] = 1697839483,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:14605",
-				["time"] = 1697839483,
 			}, -- [663]
 			{
+				["item"] = "i:14605",
+				["time"] = 1697839488,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:14605",
-				["time"] = 1697839488,
 			}, -- [664]
 			{
+				["item"] = "i:14841",
+				["time"] = 1697839492,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:14841",
-				["time"] = 1697839492,
 			}, -- [665]
 			{
+				["item"] = "i:14242:448",
+				["time"] = 1697839496,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:14242:448",
-				["time"] = 1697839496,
 			}, -- [666]
 			{
+				["item"] = "i:7489:437",
+				["time"] = 1697839500,
 				["result"] = {
 					["i:11177"] = 1,
 				},
-				["item"] = "i:7489:437",
-				["time"] = 1697839500,
 			}, -- [667]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:14173:1014",
 				["time"] = 1697839504,
-			}, -- [668]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [668]
+			{
 				["item"] = "i:3040",
 				["time"] = 1697839508,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [669]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697839512,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697839512,
 			}, -- [670]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697839516,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697839516,
 			}, -- [671]
 			{
+				["item"] = "i:5212",
+				["time"] = 1697839520,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:5212",
-				["time"] = 1697839520,
 			}, -- [672]
 			{
+				["item"] = "i:5212",
+				["time"] = 1697839524,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:5212",
-				["time"] = 1697839524,
 			}, -- [673]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697839528,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [674]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697839532,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [675]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697839536,
-			}, -- [676]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:6040",
-				["time"] = 1697839540,
-			}, -- [677]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:6040",
-				["time"] = 1697839544,
-			}, -- [678]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [676]
+			{
+				["item"] = "i:6040",
+				["time"] = 1697839540,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [677]
+			{
+				["item"] = "i:6040",
+				["time"] = 1697839544,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [678]
+			{
 				["item"] = "i:6040",
 				["time"] = 1697839548,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [679]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697839552,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697839552,
 			}, -- [680]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:6040",
 				["time"] = 1697839556,
-			}, -- [681]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [681]
+			{
 				["item"] = "i:6040",
 				["time"] = 1697839560,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [682]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839564,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [683]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20818",
 				["time"] = 1697839568,
-			}, -- [684]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [684]
+			{
 				["item"] = "i:20818",
 				["time"] = 1697839572,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [685]
 			{
+				["item"] = "i:20818",
+				["time"] = 1697839576,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:20818",
-				["time"] = 1697839576,
 			}, -- [686]
 			{
+				["item"] = "i:20818",
+				["time"] = 1697839582,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:20818",
-				["time"] = 1697839582,
 			}, -- [687]
 			{
+				["item"] = "i:3195:1015",
+				["time"] = 1697839586,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3195:1015",
-				["time"] = 1697839586,
 			}, -- [688]
 			{
+				["item"] = "i:3195:1015",
+				["time"] = 1697839590,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3195:1015",
-				["time"] = 1697839590,
 			}, -- [689]
 			{
+				["item"] = "i:3430:135",
+				["time"] = 1697839594,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:3430:135",
-				["time"] = 1697839594,
 			}, -- [690]
 			{
+				["item"] = "i:3430:236",
+				["time"] = 1697839598,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:3430:236",
-				["time"] = 1697839598,
 			}, -- [691]
 			{
+				["item"] = "i:3430:135",
+				["time"] = 1697839602,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:3430:135",
-				["time"] = 1697839602,
 			}, -- [692]
 			{
+				["item"] = "i:3057",
+				["time"] = 1697839607,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:3057",
-				["time"] = 1697839607,
 			}, -- [693]
 			{
+				["item"] = "i:9850:1846",
+				["time"] = 1697839610,
 				["result"] = {
 					["i:11139"] = 1,
 				},
-				["item"] = "i:9850:1846",
-				["time"] = 1697839610,
 			}, -- [694]
 			{
+				["item"] = "i:4575:1804",
+				["time"] = 1697839614,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:4575:1804",
-				["time"] = 1697839614,
 			}, -- [695]
 			{
-				["result"] = {
-					["i:11174"] = 2,
-				},
 				["item"] = "i:7488:529",
 				["time"] = 1697839618,
-			}, -- [696]
-			{
 				["result"] = {
 					["i:11174"] = 2,
 				},
+			}, -- [696]
+			{
 				["item"] = "i:15964",
 				["time"] = 1697839622,
+				["result"] = {
+					["i:11174"] = 2,
+				},
 			}, -- [697]
 			{
+				["item"] = "i:20818",
+				["time"] = 1697839625,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:20818",
-				["time"] = 1697839625,
 			}, -- [698]
 			{
+				["item"] = "i:20818",
+				["time"] = 1697839629,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:20818",
-				["time"] = 1697839629,
 			}, -- [699]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:14566",
 				["time"] = 1697839633,
-			}, -- [700]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [700]
+			{
 				["item"] = "i:20818",
 				["time"] = 1697839637,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [701]
 			{
+				["item"] = "i:9801:1804",
+				["time"] = 1697839641,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:9801:1804",
-				["time"] = 1697839641,
 			}, -- [702]
 			{
+				["item"] = "i:9811:1098",
+				["time"] = 1697839645,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:9811:1098",
-				["time"] = 1697839645,
 			}, -- [703]
 			{
+				["item"] = "i:16717",
+				["time"] = 1697839649,
 				["result"] = {
 					["i:14344"] = 1,
 				},
-				["item"] = "i:16717",
-				["time"] = 1697839649,
 			}, -- [704]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697839652,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697839652,
 			}, -- [705]
 			{
+				["item"] = "i:3040",
+				["time"] = 1697839656,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:3040",
-				["time"] = 1697839656,
 			}, -- [706]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697839660,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697839660,
 			}, -- [707]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697839663,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697839663,
 			}, -- [708]
 			{
+				["item"] = "i:6040",
+				["time"] = 1697839667,
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:6040",
-				["time"] = 1697839667,
 			}, -- [709]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698045989,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [710]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698045993,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:2868",
 			}, -- [711]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698045996,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2868",
 			}, -- [712]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046000,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2868",
 			}, -- [713]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046004,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2868",
 			}, -- [714]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046008,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2868",
 			}, -- [715]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046012,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2868",
 			}, -- [716]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046015,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [717]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046019,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2868",
 			}, -- [718]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046023,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [719]
 			{
-				["item"] = "i:7413:2000",
 				["time"] = 1698046030,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:7413:2000",
 			}, -- [720]
 			{
-				["item"] = "i:21854",
 				["time"] = 1698046033,
 				["result"] = {
 					["i:22445"] = 5,
 				},
+				["item"] = "i:21854",
 			}, -- [721]
 			{
-				["item"] = "i:21854",
 				["time"] = 1698046037,
 				["result"] = {
 					["i:22445"] = 4,
 				},
+				["item"] = "i:21854",
 			}, -- [722]
 			{
-				["item"] = "i:21854",
 				["time"] = 1698046041,
 				["result"] = {
 					["i:22445"] = 3,
 				},
+				["item"] = "i:21854",
 			}, -- [723]
 			{
-				["item"] = "i:21854",
 				["time"] = 1698046044,
 				["result"] = {
 					["i:22445"] = 2,
 				},
+				["item"] = "i:21854",
 			}, -- [724]
 			{
-				["item"] = "i:21854",
 				["time"] = 1698046048,
 				["result"] = {
 					["i:22445"] = 3,
 				},
+				["item"] = "i:21854",
 			}, -- [725]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046052,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [726]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046056,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [727]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046059,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [728]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046063,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [729]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046069,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [730]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046073,
 				["result"] = {
 					["i:11139"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [731]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046077,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [732]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046081,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [733]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046084,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [734]
 			{
-				["item"] = "i:5966",
 				["time"] = 1698046088,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [735]
 			{
-				["item"] = "i:4571:17",
 				["time"] = 1698046092,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4571:17",
 			}, -- [736]
 			{
-				["item"] = "i:14180:187",
 				["time"] = 1698046096,
 				["result"] = {
 					["i:11082"] = 2,
 				},
+				["item"] = "i:14180:187",
 			}, -- [737]
 			{
-				["item"] = "i:15222:1548",
 				["time"] = 1698046100,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:15222:1548",
 			}, -- [738]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046104,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:3835",
 			}, -- [739]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046107,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:3835",
 			}, -- [740]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046111,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:3835",
 			}, -- [741]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046114,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [742]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046118,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:3835",
 			}, -- [743]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046122,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [744]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046125,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [745]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046129,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [746]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046133,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [747]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046136,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:3835",
 			}, -- [748]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046140,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:3835",
 			}, -- [749]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046144,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:3835",
 			}, -- [750]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046147,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:3835",
 			}, -- [751]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046151,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [752]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046155,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [753]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046159,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [754]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046162,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:3835",
 			}, -- [755]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046166,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [756]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046170,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [757]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046173,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:3835",
 			}, -- [758]
 			{
-				["item"] = "i:3835",
 				["time"] = 1698046177,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:3835",
 			}, -- [759]
 			{
-				["item"] = "i:1625:1124",
 				["time"] = 1698046181,
 				["result"] = {
 					["i:11174"] = 1,
 				},
+				["item"] = "i:1625:1124",
 			}, -- [760]
 			{
-				["item"] = "i:866:614",
 				["time"] = 1698046184,
 				["result"] = {
 					["i:11174"] = 1,
 				},
+				["item"] = "i:866:614",
 			}, -- [761]
 			{
-				["item"] = "i:14743",
 				["time"] = 1698046191,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:14743",
 			}, -- [762]
 			{
-				["item"] = "i:15127:1021",
 				["time"] = 1698046195,
 				["result"] = {
 					["i:11083"] = 1,
 				},
+				["item"] = "i:15127:1021",
 			}, -- [763]
 			{
-				["item"] = "i:20909",
 				["time"] = 1698046199,
 				["result"] = {
 					["i:11084"] = 1,
 				},
+				["item"] = "i:20909",
 			}, -- [764]
 			{
-				["item"] = "i:9814:1017",
 				["time"] = 1698046203,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:9814:1017",
 			}, -- [765]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046207,
 				["result"] = {
 					["i:11176"] = 1,
 				},
+				["item"] = "i:21764",
 			}, -- [766]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046211,
 				["result"] = {
 					["i:11175"] = 2,
 				},
+				["item"] = "i:21764",
 			}, -- [767]
 			{
-				["item"] = "i:3195:96",
 				["time"] = 1698046227,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:3195:96",
 			}, -- [768]
 			{
-				["item"] = "i:3196:1100",
 				["time"] = 1698046242,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3196:1100",
 			}, -- [769]
 			{
-				["item"] = "i:2079:19",
 				["time"] = 1698046245,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2079:19",
 			}, -- [770]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046250,
 				["result"] = {
 					["i:11176"] = 3,
 				},
+				["item"] = "i:13856",
 			}, -- [771]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046253,
 				["result"] = {
 					["i:11176"] = 4,
 				},
+				["item"] = "i:13856",
 			}, -- [772]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046257,
 				["result"] = {
 					["i:16202"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [773]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046261,
 				["result"] = {
 					["i:11176"] = 5,
 				},
+				["item"] = "i:13856",
 			}, -- [774]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046264,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [775]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046268,
 				["result"] = {
 					["i:11176"] = 5,
 				},
+				["item"] = "i:13856",
 			}, -- [776]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046272,
 				["result"] = {
 					["i:11176"] = 3,
 				},
+				["item"] = "i:13856",
 			}, -- [777]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046276,
 				["result"] = {
 					["i:11176"] = 4,
 				},
+				["item"] = "i:13856",
 			}, -- [778]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046280,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [779]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046283,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [780]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046291,
 				["result"] = {
 					["i:16202"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [781]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046295,
 				["result"] = {
 					["i:11176"] = 4,
 				},
+				["item"] = "i:13856",
 			}, -- [782]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046298,
 				["result"] = {
 					["i:16202"] = 1,
 				},
+				["item"] = "i:13856",
 			}, -- [783]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046302,
 				["result"] = {
 					["i:16202"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [784]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046306,
 				["result"] = {
 					["i:16202"] = 1,
 				},
+				["item"] = "i:13856",
 			}, -- [785]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046310,
 				["result"] = {
 					["i:11176"] = 4,
 				},
+				["item"] = "i:13856",
 			}, -- [786]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046313,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [787]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046317,
 				["result"] = {
 					["i:16202"] = 1,
 				},
+				["item"] = "i:13856",
 			}, -- [788]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046321,
 				["result"] = {
 					["i:16202"] = 1,
 				},
+				["item"] = "i:13856",
 			}, -- [789]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046324,
 				["result"] = {
 					["i:11176"] = 4,
 				},
+				["item"] = "i:13856",
 			}, -- [790]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046328,
 				["result"] = {
 					["i:11176"] = 3,
 				},
+				["item"] = "i:13856",
 			}, -- [791]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046332,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [792]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046336,
 				["result"] = {
 					["i:11176"] = 5,
 				},
+				["item"] = "i:13856",
 			}, -- [793]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046343,
 				["result"] = {
 					["i:14343"] = 1,
 				},
+				["item"] = "i:13856",
 			}, -- [794]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046349,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [795]
 			{
-				["item"] = "i:13856",
 				["time"] = 1698046353,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:13856",
 			}, -- [796]
 			{
-				["item"] = "i:4571:1548",
 				["time"] = 1698046356,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:4571:1548",
 			}, -- [797]
 			{
-				["item"] = "i:11996:935",
 				["time"] = 1698046360,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:11996:935",
 			}, -- [798]
 			{
-				["item"] = "i:6406",
 				["time"] = 1698046364,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:6406",
 			}, -- [799]
 			{
-				["item"] = "i:15235:184",
 				["time"] = 1698046368,
 				["result"] = {
 					["i:11175"] = 2,
 				},
+				["item"] = "i:15235:184",
 			}, -- [800]
 			{
-				["item"] = "i:9768:1877",
 				["time"] = 1698046371,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:9768:1877",
 			}, -- [801]
 			{
-				["item"] = "i:15519:588",
 				["time"] = 1698046375,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:15519:588",
 			}, -- [802]
 			{
-				["item"] = "i:14571",
 				["time"] = 1698046378,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:14571",
 			}, -- [803]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046382,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2316",
 			}, -- [804]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046386,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2316",
 			}, -- [805]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046389,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2316",
 			}, -- [806]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046393,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:2316",
 			}, -- [807]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046397,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2316",
 			}, -- [808]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046401,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2316",
 			}, -- [809]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046404,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:2316",
 			}, -- [810]
 			{
-				["item"] = "i:2316",
 				["time"] = 1698046408,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2316",
 			}, -- [811]
 			{
-				["item"] = "i:2865",
 				["time"] = 1698046412,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:2865",
 			}, -- [812]
 			{
-				["item"] = "i:2865",
 				["time"] = 1698046420,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2865",
 			}, -- [813]
 			{
-				["item"] = "i:2865",
 				["time"] = 1698046425,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2865",
 			}, -- [814]
 			{
-				["item"] = "i:14164:112",
 				["time"] = 1698046429,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:14164:112",
 			}, -- [815]
 			{
-				["item"] = "i:39507:-86",
 				["time"] = 1698046434,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:39507:-86",
 			}, -- [816]
 			{
-				["item"] = "i:6568:766",
 				["time"] = 1698046437,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:6568:766",
 			}, -- [817]
 			{
-				["item"] = "i:4062",
 				["time"] = 1698046441,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+				["item"] = "i:4062",
 			}, -- [818]
 			{
-				["item"] = "i:2310",
 				["time"] = 1698046444,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:2310",
 			}, -- [819]
 			{
-				["item"] = "i:2310",
 				["time"] = 1698046449,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2310",
 			}, -- [820]
 			{
-				["item"] = "i:2310",
 				["time"] = 1698046453,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:2310",
 			}, -- [821]
 			{
-				["item"] = "i:2310",
 				["time"] = 1698046456,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2310",
 			}, -- [822]
 			{
-				["item"] = "i:2310",
 				["time"] = 1698046460,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2310",
 			}, -- [823]
 			{
-				["item"] = "i:7435:187",
 				["time"] = 1698046464,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:7435:187",
 			}, -- [824]
 			{
-				["item"] = "i:15372:692",
 				["time"] = 1698046467,
 				["result"] = {
 					["i:11174"] = 2,
 				},
+				["item"] = "i:15372:692",
 			}, -- [825]
 			{
-				["item"] = "i:14162:1016",
 				["time"] = 1698046471,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:14162:1016",
 			}, -- [826]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046475,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [827]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046478,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [828]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046482,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [829]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046486,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [830]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046490,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [831]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046494,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [832]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046497,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [833]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046501,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [834]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046505,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [835]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046509,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [836]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046512,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [837]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046516,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [838]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046520,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [839]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046523,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [840]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046527,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [841]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046531,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [842]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046534,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:20818",
 			}, -- [843]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046538,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20818",
 			}, -- [844]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046542,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [845]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046545,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [846]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046549,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:20818",
 			}, -- [847]
 			{
-				["item"] = "i:20818",
 				["time"] = 1698046552,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20818",
 			}, -- [848]
 			{
-				["item"] = "i:4800",
 				["time"] = 1698046557,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:4800",
 			}, -- [849]
 			{
-				["item"] = "i:7406:1022",
 				["time"] = 1698046560,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:7406:1022",
 			}, -- [850]
 			{
-				["item"] = "i:14159:762",
 				["time"] = 1698046564,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:14159:762",
 			}, -- [851]
 			{
-				["item"] = "i:7492:1608",
 				["time"] = 1698046568,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:7492:1608",
 			}, -- [852]
 			{
-				["item"] = "i:6568:766",
 				["time"] = 1698046572,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:6568:766",
 			}, -- [853]
 			{
-				["item"] = "i:5212",
 				["time"] = 1698046576,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:5212",
 			}, -- [854]
 			{
-				["item"] = "i:5212",
 				["time"] = 1698046580,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:5212",
 			}, -- [855]
 			{
-				["item"] = "i:2865",
 				["time"] = 1698046584,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2865",
 			}, -- [856]
 			{
-				["item"] = "i:2865",
 				["time"] = 1698046604,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2865",
 			}, -- [857]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046609,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [858]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046612,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [859]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046616,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:2868",
 			}, -- [860]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046619,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:2868",
 			}, -- [861]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046623,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2868",
 			}, -- [862]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046627,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2868",
 			}, -- [863]
 			{
-				["item"] = "i:2868",
 				["time"] = 1698046633,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2868",
 			}, -- [864]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046637,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:21764",
 			}, -- [865]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046641,
 				["result"] = {
 					["i:11175"] = 1,
 				},
+				["item"] = "i:21764",
 			}, -- [866]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046649,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:21764",
 			}, -- [867]
 			{
-				["item"] = "i:5212",
 				["time"] = 1698046653,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:5212",
 			}, -- [868]
 			{
-				["item"] = "i:3184:1801",
 				["time"] = 1698046656,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:3184:1801",
 			}, -- [869]
 			{
-				["item"] = "i:3184:22",
 				["time"] = 1698046660,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:3184:22",
 			}, -- [870]
 			{
-				["item"] = "i:3184:1548",
 				["time"] = 1698046664,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:3184:1548",
 			}, -- [871]
 			{
-				["item"] = "i:3195:1183",
 				["time"] = 1698046679,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3195:1183",
 			}, -- [872]
 			{
-				["item"] = "i:21764",
 				["time"] = 1698046728,
 				["result"] = {
 					["i:11176"] = 2,
 				},
+				["item"] = "i:21764",
 			}, -- [873]
 			{
-				["time"] = 1698046786,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046786,
 			}, -- [874]
 			{
-				["time"] = 1698046790,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046790,
 			}, -- [875]
 			{
-				["time"] = 1698046796,
 				["result"] = {
 					["i:11175"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046796,
 			}, -- [876]
 			{
-				["time"] = 1698046799,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046799,
 			}, -- [877]
 			{
-				["time"] = 1698046804,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046804,
 			}, -- [878]
 			{
-				["time"] = 1698046807,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046807,
 			}, -- [879]
 			{
-				["time"] = 1698046811,
 				["result"] = {
 					["i:11178"] = 1,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046811,
 			}, -- [880]
 			{
-				["time"] = 1698046815,
 				["result"] = {
 					["i:11176"] = 1,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046815,
 			}, -- [881]
 			{
-				["time"] = 1698046819,
 				["result"] = {
 					["i:11176"] = 1,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046819,
 			}, -- [882]
 			{
-				["time"] = 1698046823,
 				["result"] = {
 					["i:11175"] = 1,
 				},
 				["item"] = "i:21764",
+				["time"] = 1698046823,
 			}, -- [883]
 			{
-				["time"] = 1698046827,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046827,
 			}, -- [884]
 			{
-				["time"] = 1698046830,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046830,
 			}, -- [885]
 			{
-				["time"] = 1698046834,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046834,
 			}, -- [886]
 			{
-				["time"] = 1698046838,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046838,
 			}, -- [887]
 			{
-				["time"] = 1698046841,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046841,
 			}, -- [888]
 			{
-				["time"] = 1698046845,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046845,
 			}, -- [889]
 			{
-				["time"] = 1698046849,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046849,
 			}, -- [890]
 			{
-				["time"] = 1698046852,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046852,
 			}, -- [891]
 			{
-				["time"] = 1698046856,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046856,
 			}, -- [892]
 			{
-				["time"] = 1698046859,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046859,
 			}, -- [893]
 			{
-				["time"] = 1698046864,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046864,
 			}, -- [894]
 			{
-				["time"] = 1698046868,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046868,
 			}, -- [895]
 			{
-				["time"] = 1698046871,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046871,
 			}, -- [896]
 			{
-				["time"] = 1698046875,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046875,
 			}, -- [897]
 			{
-				["time"] = 1698046879,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046879,
 			}, -- [898]
 			{
-				["time"] = 1698046882,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046882,
 			}, -- [899]
 			{
-				["time"] = 1698046886,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046886,
 			}, -- [900]
 			{
-				["time"] = 1698046890,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046890,
 			}, -- [901]
 			{
-				["time"] = 1698046893,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046893,
 			}, -- [902]
 			{
-				["time"] = 1698046897,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046897,
 			}, -- [903]
 			{
-				["time"] = 1698046901,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046901,
 			}, -- [904]
 			{
-				["time"] = 1698046905,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046905,
 			}, -- [905]
 			{
-				["time"] = 1698046908,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046908,
 			}, -- [906]
 			{
-				["time"] = 1698046912,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698046912,
 			}, -- [907]
 			{
-				["time"] = 1698075973,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698075973,
 			}, -- [908]
 			{
-				["time"] = 1698075978,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698075978,
 			}, -- [909]
 			{
-				["time"] = 1698075982,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698075982,
 			}, -- [910]
 			{
-				["time"] = 1698075986,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698075986,
 			}, -- [911]
 			{
-				["time"] = 1698075991,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698075991,
 			}, -- [912]
 			{
-				["time"] = 1698075996,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698075996,
 			}, -- [913]
 			{
-				["time"] = 1698076000,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:15287:1017",
+				["time"] = 1698076000,
 			}, -- [914]
 			{
-				["time"] = 1698076003,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:3041",
+				["time"] = 1698076003,
 			}, -- [915]
 			{
-				["time"] = 1698076008,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:7480:437",
+				["time"] = 1698076008,
 			}, -- [916]
 			{
-				["time"] = 1698076012,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076012,
 			}, -- [917]
 			{
-				["time"] = 1698076016,
 				["result"] = {
 					["i:16203"] = 2,
 				},
 				["item"] = "i:15239:1198",
+				["time"] = 1698076016,
 			}, -- [918]
 			{
-				["time"] = 1698076020,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:9854:526",
+				["time"] = 1698076020,
 			}, -- [919]
 			{
-				["time"] = 1698076024,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:10068:1562",
+				["time"] = 1698076024,
 			}, -- [920]
 			{
-				["time"] = 1698076028,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:9944:861",
+				["time"] = 1698076028,
 			}, -- [921]
 			{
-				["time"] = 1698076031,
 				["result"] = {
 					["i:22447"] = 2,
 				},
 				["item"] = "i:25297:-6",
+				["time"] = 1698076031,
 			}, -- [922]
 			{
-				["time"] = 1698076035,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3196:673",
+				["time"] = 1698076035,
 			}, -- [923]
 			{
-				["time"] = 1698076039,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1698076039,
 			}, -- [924]
 			{
-				["time"] = 1698076044,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076044,
 			}, -- [925]
 			{
-				["time"] = 1698076047,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076047,
 			}, -- [926]
 			{
-				["time"] = 1698076051,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076051,
 			}, -- [927]
 			{
-				["time"] = 1698076055,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076055,
 			}, -- [928]
 			{
-				["time"] = 1698076059,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076059,
 			}, -- [929]
 			{
-				["time"] = 1698076063,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076063,
 			}, -- [930]
 			{
-				["time"] = 1698076067,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076067,
 			}, -- [931]
 			{
-				["time"] = 1698076071,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076071,
 			}, -- [932]
 			{
-				["time"] = 1698076075,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076075,
 			}, -- [933]
 			{
-				["time"] = 1698076079,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076079,
 			}, -- [934]
 			{
-				["time"] = 1698076083,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076083,
 			}, -- [935]
 			{
-				["time"] = 1698076087,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076087,
 			}, -- [936]
 			{
-				["time"] = 1698076091,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076091,
 			}, -- [937]
 			{
-				["time"] = 1698076095,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076095,
 			}, -- [938]
 			{
-				["time"] = 1698076099,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076099,
 			}, -- [939]
 			{
-				["time"] = 1698076102,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:4368",
+				["time"] = 1698076102,
 			}, -- [940]
 			{
-				["time"] = 1698076107,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:21855",
+				["time"] = 1698076107,
 			}, -- [941]
 			{
-				["time"] = 1698076111,
 				["result"] = {
 					["i:22446"] = 1,
 				},
 				["item"] = "i:21855",
+				["time"] = 1698076111,
 			}, -- [942]
 			{
-				["time"] = 1698076114,
 				["result"] = {
 					["i:22446"] = 1,
 				},
 				["item"] = "i:21855",
+				["time"] = 1698076114,
 			}, -- [943]
 			{
-				["time"] = 1698076118,
 				["result"] = {
 					["i:22445"] = 5,
 				},
 				["item"] = "i:21855",
+				["time"] = 1698076118,
 			}, -- [944]
 			{
-				["time"] = 1698076122,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076122,
 			}, -- [945]
 			{
-				["time"] = 1698076127,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076127,
 			}, -- [946]
 			{
-				["time"] = 1698076130,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076130,
 			}, -- [947]
 			{
-				["time"] = 1698076135,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076135,
 			}, -- [948]
 			{
-				["time"] = 1698076139,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076139,
 			}, -- [949]
 			{
-				["time"] = 1698076142,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076142,
 			}, -- [950]
 			{
-				["time"] = 1698076146,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076146,
 			}, -- [951]
 			{
-				["time"] = 1698076150,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076150,
 			}, -- [952]
 			{
-				["time"] = 1698076154,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076154,
 			}, -- [953]
 			{
-				["time"] = 1698076158,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076158,
 			}, -- [954]
 			{
-				["time"] = 1698076162,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076162,
 			}, -- [955]
 			{
-				["time"] = 1698076166,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076166,
 			}, -- [956]
 			{
-				["time"] = 1698076170,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076170,
 			}, -- [957]
 			{
-				["time"] = 1698076174,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076174,
 			}, -- [958]
 			{
-				["time"] = 1698076177,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076177,
 			}, -- [959]
 			{
-				["time"] = 1698076181,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076181,
 			}, -- [960]
 			{
-				["time"] = 1698076185,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076185,
 			}, -- [961]
 			{
-				["time"] = 1698076189,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076189,
 			}, -- [962]
 			{
-				["time"] = 1698076197,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076197,
 			}, -- [963]
 			{
-				["time"] = 1698076200,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076200,
 			}, -- [964]
 			{
-				["time"] = 1698076204,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076204,
 			}, -- [965]
 			{
-				["time"] = 1698076208,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076208,
 			}, -- [966]
 			{
-				["time"] = 1698076212,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076212,
 			}, -- [967]
 			{
-				["time"] = 1698076216,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076216,
 			}, -- [968]
 			{
-				["time"] = 1698076220,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076220,
 			}, -- [969]
 			{
-				["time"] = 1698076224,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076224,
 			}, -- [970]
 			{
-				["time"] = 1698076228,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076228,
 			}, -- [971]
 			{
-				["time"] = 1698076232,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076232,
 			}, -- [972]
 			{
-				["time"] = 1698076236,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076236,
 			}, -- [973]
 			{
-				["time"] = 1698076240,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076240,
 			}, -- [974]
 			{
-				["time"] = 1698076245,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076245,
 			}, -- [975]
 			{
-				["time"] = 1698076249,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076249,
 			}, -- [976]
 			{
-				["time"] = 1698076252,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076252,
 			}, -- [977]
 			{
-				["time"] = 1698076256,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076256,
 			}, -- [978]
 			{
-				["time"] = 1698076268,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076268,
 			}, -- [979]
 			{
-				["time"] = 1698076276,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076276,
 			}, -- [980]
 			{
-				["time"] = 1698076281,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076281,
 			}, -- [981]
 			{
-				["time"] = 1698076285,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076285,
 			}, -- [982]
 			{
-				["time"] = 1698076289,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076289,
 			}, -- [983]
 			{
-				["time"] = 1698076294,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076294,
 			}, -- [984]
 			{
-				["time"] = 1698076299,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076299,
 			}, -- [985]
 			{
-				["time"] = 1698076302,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076302,
 			}, -- [986]
 			{
-				["time"] = 1698076306,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076306,
 			}, -- [987]
 			{
-				["time"] = 1698076310,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076310,
 			}, -- [988]
 			{
-				["time"] = 1698076314,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2868",
+				["time"] = 1698076314,
 			}, -- [989]
 			{
-				["time"] = 1698076318,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2868",
+				["time"] = 1698076318,
 			}, -- [990]
 			{
-				["time"] = 1698076322,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2868",
+				["time"] = 1698076322,
 			}, -- [991]
 			{
-				["time"] = 1698076326,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2868",
+				["time"] = 1698076326,
 			}, -- [992]
 			{
-				["time"] = 1698076330,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2868",
+				["time"] = 1698076330,
 			}, -- [993]
 			{
-				["time"] = 1698076334,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:6587:247",
+				["time"] = 1698076334,
 			}, -- [994]
 			{
-				["time"] = 1698076339,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076339,
 			}, -- [995]
 			{
-				["time"] = 1698076342,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076342,
 			}, -- [996]
 			{
-				["time"] = 1698076346,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076346,
 			}, -- [997]
 			{
-				["time"] = 1698076351,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076351,
 			}, -- [998]
 			{
-				["time"] = 1698076354,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076354,
 			}, -- [999]
 			{
-				["time"] = 1698076358,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076358,
 			}, -- [1000]
 			{
-				["time"] = 1698076363,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076363,
 			}, -- [1001]
 			{
-				["time"] = 1698076367,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076367,
 			}, -- [1002]
 			{
-				["time"] = 1698076370,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076370,
 			}, -- [1003]
 			{
-				["time"] = 1698076375,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076375,
 			}, -- [1004]
 			{
-				["time"] = 1698076379,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076379,
 			}, -- [1005]
 			{
-				["time"] = 1698076383,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076383,
 			}, -- [1006]
 			{
-				["time"] = 1698076387,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076387,
 			}, -- [1007]
 			{
-				["time"] = 1698076391,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076391,
 			}, -- [1008]
 			{
-				["time"] = 1698076399,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076399,
 			}, -- [1009]
 			{
-				["time"] = 1698076403,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076403,
 			}, -- [1010]
 			{
-				["time"] = 1698076407,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076407,
 			}, -- [1011]
 			{
-				["time"] = 1698076411,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076411,
 			}, -- [1012]
 			{
-				["time"] = 1698076415,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076415,
 			}, -- [1013]
 			{
-				["time"] = 1698076419,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076419,
 			}, -- [1014]
 			{
-				["time"] = 1698076423,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076423,
 			}, -- [1015]
 			{
-				["time"] = 1698076427,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076427,
 			}, -- [1016]
 			{
-				["time"] = 1698076431,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076431,
 			}, -- [1017]
 			{
-				["time"] = 1698076435,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076435,
 			}, -- [1018]
 			{
-				["time"] = 1698076439,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076439,
 			}, -- [1019]
 			{
-				["time"] = 1698076443,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076443,
 			}, -- [1020]
 			{
-				["time"] = 1698076447,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076447,
 			}, -- [1021]
 			{
-				["time"] = 1698076450,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076450,
 			}, -- [1022]
 			{
-				["time"] = 1698076454,
 				["result"] = {
 					["i:14343"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076454,
 			}, -- [1023]
 			{
-				["time"] = 1698076458,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076458,
 			}, -- [1024]
 			{
-				["time"] = 1698076462,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076462,
 			}, -- [1025]
 			{
-				["time"] = 1698076466,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076466,
 			}, -- [1026]
 			{
-				["time"] = 1698076470,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076470,
 			}, -- [1027]
 			{
-				["time"] = 1698076474,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076474,
 			}, -- [1028]
 			{
-				["time"] = 1698076478,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076478,
 			}, -- [1029]
 			{
-				["time"] = 1698076482,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076482,
 			}, -- [1030]
 			{
-				["time"] = 1698076485,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076485,
 			}, -- [1031]
 			{
-				["time"] = 1698076489,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076489,
 			}, -- [1032]
 			{
-				["time"] = 1698076493,
 				["result"] = {
 					["i:14343"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076493,
 			}, -- [1033]
 			{
-				["time"] = 1698076497,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076497,
 			}, -- [1034]
 			{
-				["time"] = 1698076501,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076501,
 			}, -- [1035]
 			{
-				["time"] = 1698076505,
 				["result"] = {
 					["i:14343"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076505,
 			}, -- [1036]
 			{
-				["time"] = 1698076509,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076509,
 			}, -- [1037]
 			{
-				["time"] = 1698076513,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076513,
 			}, -- [1038]
 			{
-				["time"] = 1698076516,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076516,
 			}, -- [1039]
 			{
-				["time"] = 1698076520,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076520,
 			}, -- [1040]
 			{
-				["time"] = 1698076524,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076524,
 			}, -- [1041]
 			{
-				["time"] = 1698076528,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076528,
 			}, -- [1042]
 			{
-				["time"] = 1698076532,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076532,
 			}, -- [1043]
 			{
-				["time"] = 1698076536,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076536,
 			}, -- [1044]
 			{
-				["time"] = 1698076540,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076540,
 			}, -- [1045]
 			{
-				["time"] = 1698076546,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076546,
 			}, -- [1046]
 			{
-				["time"] = 1698076560,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076560,
 			}, -- [1047]
 			{
-				["time"] = 1698076564,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076564,
 			}, -- [1048]
 			{
-				["time"] = 1698076569,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076569,
 			}, -- [1049]
 			{
-				["time"] = 1698076572,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076572,
 			}, -- [1050]
 			{
-				["time"] = 1698076576,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076576,
 			}, -- [1051]
 			{
-				["time"] = 1698076580,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076580,
 			}, -- [1052]
 			{
-				["time"] = 1698076584,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698076584,
 			}, -- [1053]
 			{
-				["time"] = 1698076589,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:14421",
+				["time"] = 1698076589,
 			}, -- [1054]
 			{
-				["time"] = 1698076592,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3040",
+				["time"] = 1698076592,
 			}, -- [1055]
 			{
-				["time"] = 1698076596,
 				["result"] = {
 					["i:11176"] = 1,
 				},
 				["item"] = "i:7523:1034",
+				["time"] = 1698076596,
 			}, -- [1056]
 			{
-				["time"] = 1698076600,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3040",
+				["time"] = 1698076600,
 			}, -- [1057]
 			{
-				["time"] = 1698076604,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3040",
+				["time"] = 1698076604,
 			}, -- [1058]
 			{
-				["time"] = 1698076608,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:3040",
+				["time"] = 1698076608,
 			}, -- [1059]
 			{
-				["time"] = 1698076613,
 				["result"] = {
 					["i:11135"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076613,
 			}, -- [1060]
 			{
-				["time"] = 1698076617,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076617,
 			}, -- [1061]
 			{
-				["time"] = 1698076621,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076621,
 			}, -- [1062]
 			{
-				["time"] = 1698076625,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076625,
 			}, -- [1063]
 			{
-				["time"] = 1698076629,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076629,
 			}, -- [1064]
 			{
-				["time"] = 1698076633,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076633,
 			}, -- [1065]
 			{
-				["time"] = 1698076637,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076637,
 			}, -- [1066]
 			{
-				["time"] = 1698076646,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076646,
 			}, -- [1067]
 			{
-				["time"] = 1698076650,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076650,
 			}, -- [1068]
 			{
-				["time"] = 1698076654,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076654,
 			}, -- [1069]
 			{
-				["time"] = 1698076658,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076658,
 			}, -- [1070]
 			{
-				["time"] = 1698076662,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076662,
 			}, -- [1071]
 			{
-				["time"] = 1698076666,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076666,
 			}, -- [1072]
 			{
-				["time"] = 1698076670,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076670,
 			}, -- [1073]
 			{
-				["time"] = 1698076673,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076673,
 			}, -- [1074]
 			{
-				["time"] = 1698076678,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076678,
 			}, -- [1075]
 			{
-				["time"] = 1698076683,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076683,
 			}, -- [1076]
 			{
-				["time"] = 1698076687,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076687,
 			}, -- [1077]
 			{
-				["time"] = 1698076692,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076692,
 			}, -- [1078]
 			{
-				["time"] = 1698076699,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076699,
 			}, -- [1079]
 			{
-				["time"] = 1698076703,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076703,
 			}, -- [1080]
 			{
-				["time"] = 1698076707,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076707,
 			}, -- [1081]
 			{
-				["time"] = 1698076711,
 				["result"] = {
 					["i:11135"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076711,
 			}, -- [1082]
 			{
-				["time"] = 1698076715,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076715,
 			}, -- [1083]
 			{
-				["time"] = 1698076721,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076721,
 			}, -- [1084]
 			{
-				["time"] = 1698076725,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076725,
 			}, -- [1085]
 			{
-				["time"] = 1698076729,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076729,
 			}, -- [1086]
 			{
-				["time"] = 1698076733,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076733,
 			}, -- [1087]
 			{
-				["time"] = 1698076737,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076737,
 			}, -- [1088]
 			{
-				["time"] = 1698076741,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698076741,
 			}, -- [1089]
 			{
-				["time"] = 1698076749,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:7472:1031",
+				["time"] = 1698076749,
 			}, -- [1090]
 			{
-				["time"] = 1698076752,
 				["result"] = {
 					["i:16203"] = 2,
 				},
 				["item"] = "i:15651:1054",
+				["time"] = 1698076752,
 			}, -- [1091]
 			{
-				["time"] = 1698076756,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:15248:1016",
+				["time"] = 1698076756,
 			}, -- [1092]
 			{
-				["time"] = 1698076763,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:9860:596",
+				["time"] = 1698076763,
 			}, -- [1093]
 			{
-				["time"] = 1698076767,
 				["result"] = {
 					["i:11175"] = 2,
 				},
 				["item"] = "i:4088:1191",
+				["time"] = 1698076767,
 			}, -- [1094]
 			{
-				["time"] = 1698076771,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076771,
 			}, -- [1095]
 			{
-				["time"] = 1698076776,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698076776,
 			}, -- [1096]
 			{
-				["time"] = 1698076780,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076780,
 			}, -- [1097]
 			{
-				["time"] = 1698076795,
 				["result"] = {
 					["i:11176"] = 4,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076795,
 			}, -- [1098]
 			{
-				["time"] = 1698076799,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076799,
 			}, -- [1099]
 			{
-				["time"] = 1698076805,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076805,
 			}, -- [1100]
 			{
-				["time"] = 1698076809,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076809,
 			}, -- [1101]
 			{
-				["time"] = 1698076821,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076821,
 			}, -- [1102]
 			{
-				["time"] = 1698076825,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076825,
 			}, -- [1103]
 			{
-				["time"] = 1698076829,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076829,
 			}, -- [1104]
 			{
-				["time"] = 1698076833,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076833,
 			}, -- [1105]
 			{
-				["time"] = 1698076837,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076837,
 			}, -- [1106]
 			{
-				["time"] = 1698076842,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076842,
 			}, -- [1107]
 			{
-				["time"] = 1698076846,
 				["result"] = {
 					["i:16202"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076846,
 			}, -- [1108]
 			{
-				["time"] = 1698076851,
 				["result"] = {
 					["i:16202"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076851,
 			}, -- [1109]
 			{
-				["time"] = 1698076856,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076856,
 			}, -- [1110]
 			{
-				["time"] = 1698076860,
 				["result"] = {
 					["i:11176"] = 5,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076860,
 			}, -- [1111]
 			{
-				["time"] = 1698076864,
 				["result"] = {
 					["i:14343"] = 1,
 				},
 				["item"] = "i:13856",
+				["time"] = 1698076864,
 			}, -- [1112]
 			{
-				["time"] = 1698076868,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:14179:759",
+				["time"] = 1698076868,
 			}, -- [1113]
 			{
-				["time"] = 1698076872,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:14568",
+				["time"] = 1698076872,
 			}, -- [1114]
 			{
-				["time"] = 1698076877,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:3480",
+				["time"] = 1698076877,
 			}, -- [1115]
 			{
-				["time"] = 1698076881,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076881,
 			}, -- [1116]
 			{
-				["time"] = 1698076889,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076889,
 			}, -- [1117]
 			{
-				["time"] = 1698076893,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076893,
 			}, -- [1118]
 			{
-				["time"] = 1698076897,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076897,
 			}, -- [1119]
 			{
-				["time"] = 1698076901,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698076901,
 			}, -- [1120]
 			{
-				["time"] = 1698076904,
 				["result"] = {
 					["i:11176"] = 2,
 				},
 				["item"] = "i:15184:784",
+				["time"] = 1698076904,
 			}, -- [1121]
 			{
-				["time"] = 1698076909,
 				["result"] = {
 					["i:11138"] = 1,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076909,
 			}, -- [1122]
 			{
-				["time"] = 1698076913,
 				["result"] = {
 					["i:11134"] = 1,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076913,
 			}, -- [1123]
 			{
-				["time"] = 1698076917,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076917,
 			}, -- [1124]
 			{
-				["time"] = 1698076921,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076921,
 			}, -- [1125]
 			{
-				["time"] = 1698076926,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076926,
 			}, -- [1126]
 			{
-				["time"] = 1698076930,
 				["result"] = {
 					["i:11138"] = 1,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076930,
 			}, -- [1127]
 			{
-				["time"] = 1698076933,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076933,
 			}, -- [1128]
 			{
-				["time"] = 1698076937,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076937,
 			}, -- [1129]
 			{
-				["time"] = 1698076943,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076943,
 			}, -- [1130]
 			{
-				["time"] = 1698076948,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076948,
 			}, -- [1131]
 			{
-				["time"] = 1698076952,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:3835",
+				["time"] = 1698076952,
 			}, -- [1132]
 			{
+				["item"] = "i:6569:1023",
+				["time"] = 1698237110,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:6569:1023",
-				["time"] = 1698237110,
 			}, -- [1133]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698237123,
-			}, -- [1134]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1134]
+			{
 				["item"] = "i:2857",
 				["time"] = 1698237127,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1135]
 			{
+				["item"] = "i:6040",
+				["time"] = 1698237131,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1698237131,
 			}, -- [1136]
 			{
+				["item"] = "i:4362",
+				["time"] = 1698237135,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:4362",
-				["time"] = 1698237135,
 			}, -- [1137]
 			{
+				["item"] = "i:4362",
+				["time"] = 1698237139,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4362",
-				["time"] = 1698237139,
 			}, -- [1138]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698237152,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698237152,
 			}, -- [1139]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698237156,
-			}, -- [1140]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [1140]
+			{
 				["item"] = "i:14742",
 				["time"] = 1698237161,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1141]
 			{
+				["item"] = "i:14270:186",
+				["time"] = 1698237165,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:14270:186",
-				["time"] = 1698237165,
 			}, -- [1142]
 			{
+				["item"] = "i:15324:851",
+				["time"] = 1698237169,
 				["result"] = {
 					["i:16203"] = 1,
 				},
-				["item"] = "i:15324:851",
-				["time"] = 1698237169,
 			}, -- [1143]
 			{
+				["item"] = "i:9846:1806",
+				["time"] = 1698237172,
 				["result"] = {
 					["i:11083"] = 5,
 				},
-				["item"] = "i:9846:1806",
-				["time"] = 1698237172,
 			}, -- [1144]
 			{
+				["item"] = "i:12007:590",
+				["time"] = 1698237177,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:12007:590",
-				["time"] = 1698237177,
 			}, -- [1145]
 			{
+				["item"] = "i:7357:522",
+				["time"] = 1698237181,
 				["result"] = {
 					["i:11083"] = 4,
 				},
-				["item"] = "i:7357:522",
-				["time"] = 1698237181,
 			}, -- [1146]
 			{
+				["item"] = "i:10287:1804",
+				["time"] = 1698237185,
 				["result"] = {
 					["i:11083"] = 2,
 				},
-				["item"] = "i:10287:1804",
-				["time"] = 1698237185,
 			}, -- [1147]
 			{
+				["item"] = "i:14177:1015",
+				["time"] = 1698237189,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:14177:1015",
-				["time"] = 1698237189,
 			}, -- [1148]
 			{
+				["item"] = "i:4037",
+				["time"] = 1698237193,
 				["result"] = {
 					["i:11083"] = 2,
 				},
-				["item"] = "i:4037",
-				["time"] = 1698237193,
 			}, -- [1149]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698237197,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1150]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698237201,
-			}, -- [1151]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698237205,
-			}, -- [1152]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698237209,
-			}, -- [1153]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698237213,
-			}, -- [1154]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:2315",
-				["time"] = 1698237217,
-			}, -- [1155]
+			}, -- [1151]
 			{
+				["item"] = "i:2315",
+				["time"] = 1698237205,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2315",
-				["time"] = 1698237221,
-			}, -- [1156]
+			}, -- [1152]
 			{
+				["item"] = "i:2315",
+				["time"] = 1698237209,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1153]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698237213,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1154]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698237217,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1155]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698237221,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1156]
+			{
 				["item"] = "i:2315",
 				["time"] = 1698237225,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1157]
 			{
+				["item"] = "i:2857",
+				["time"] = 1698237229,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:2857",
-				["time"] = 1698237229,
 			}, -- [1158]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237233,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1159]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237237,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1160]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237242,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1161]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237249,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1162]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237254,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1163]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237258,
-			}, -- [1164]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2857",
-				["time"] = 1698237262,
-			}, -- [1165]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2857",
-				["time"] = 1698237266,
-			}, -- [1166]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1164]
+			{
+				["item"] = "i:2857",
+				["time"] = 1698237262,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1165]
+			{
+				["item"] = "i:2857",
+				["time"] = 1698237266,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1166]
+			{
 				["item"] = "i:2857",
 				["time"] = 1698237271,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1167]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2857",
 				["time"] = 1698237275,
-			}, -- [1168]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [1168]
+			{
 				["item"] = "i:2857",
 				["time"] = 1698238410,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1169]
 			{
-				["result"] = {
-					["i:11083"] = 3,
-				},
 				["item"] = "i:6404",
 				["time"] = 1698238433,
-			}, -- [1170]
-			{
 				["result"] = {
 					["i:11083"] = 3,
 				},
+			}, -- [1170]
+			{
 				["item"] = "i:6404",
 				["time"] = 1698238454,
+				["result"] = {
+					["i:11083"] = 3,
+				},
 			}, -- [1171]
 			{
+				["item"] = "i:6040",
+				["time"] = 1698238468,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1698238468,
 			}, -- [1172]
 			{
+				["item"] = "i:15263:708",
+				["time"] = 1698238497,
 				["result"] = {
 					["i:11175"] = 2,
 				},
-				["item"] = "i:15263:708",
-				["time"] = 1698238497,
 			}, -- [1173]
 			{
+				["item"] = "i:5212",
+				["time"] = 1698238501,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:5212",
-				["time"] = 1698238501,
 			}, -- [1174]
 			{
+				["item"] = "i:5212",
+				["time"] = 1698238506,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:5212",
-				["time"] = 1698238506,
 			}, -- [1175]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4362",
 				["time"] = 1698238510,
-			}, -- [1176]
-			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
-				["item"] = "i:4362",
-				["time"] = 1698238514,
-			}, -- [1177]
-			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
-				["item"] = "i:4362",
-				["time"] = 1698238546,
-			}, -- [1178]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
-				["item"] = "i:4362",
-				["time"] = 1698238566,
-			}, -- [1179]
+			}, -- [1176]
 			{
+				["item"] = "i:4362",
+				["time"] = 1698238514,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+			}, -- [1177]
+			{
+				["item"] = "i:4362",
+				["time"] = 1698238546,
+				["result"] = {
+					["i:10940"] = 1,
+				},
+			}, -- [1178]
+			{
+				["item"] = "i:4362",
+				["time"] = 1698238566,
+				["result"] = {
+					["i:10938"] = 2,
+				},
+			}, -- [1179]
+			{
 				["item"] = "i:4362",
 				["time"] = 1698238581,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [1180]
 			{
+				["item"] = "i:4362",
+				["time"] = 1698238595,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4362",
-				["time"] = 1698238595,
 			}, -- [1181]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4362",
 				["time"] = 1698238600,
-			}, -- [1182]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
+			}, -- [1182]
+			{
 				["item"] = "i:4362",
 				["time"] = 1698238607,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [1183]
 			{
+				["item"] = "i:2079:23",
+				["time"] = 1698238621,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:2079:23",
-				["time"] = 1698238621,
 			}, -- [1184]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238625,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238625,
 			}, -- [1185]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:2316",
 				["time"] = 1698238632,
-			}, -- [1186]
-			{
 				["result"] = {
 					["i:10940"] = 5,
 				},
+			}, -- [1186]
+			{
 				["item"] = "i:2316",
 				["time"] = 1698238649,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [1187]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238655,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238655,
 			}, -- [1188]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238741,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238741,
 			}, -- [1189]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238784,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238784,
 			}, -- [1190]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238808,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238808,
 			}, -- [1191]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238814,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238814,
 			}, -- [1192]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238828,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238828,
 			}, -- [1193]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238858,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238858,
 			}, -- [1194]
 			{
+				["item"] = "i:2316",
+				["time"] = 1698238863,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2316",
-				["time"] = 1698238863,
 			}, -- [1195]
 			{
+				["item"] = "i:15241:1802",
+				["time"] = 1698238874,
 				["result"] = {
 					["i:11082"] = 2,
 				},
-				["item"] = "i:15241:1802",
-				["time"] = 1698238874,
 			}, -- [1196]
 			{
+				["item"] = "i:6561",
+				["time"] = 1698238887,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:6561",
-				["time"] = 1698238887,
 			}, -- [1197]
 			{
+				["item"] = "i:3184:1549",
+				["time"] = 1698238893,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:3184:1549",
-				["time"] = 1698238893,
 			}, -- [1198]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3184:1990",
 				["time"] = 1698238897,
-			}, -- [1199]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [1199]
+			{
 				["item"] = "i:3184:1801",
 				["time"] = 1698238901,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1200]
 			{
+				["item"] = "i:3184:1549",
+				["time"] = 1698238906,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3184:1549",
-				["time"] = 1698238906,
 			}, -- [1201]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238911,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1202]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238917,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [1203]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238927,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1204]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238931,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1205]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238935,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1206]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238940,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1207]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698238944,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1208]
 			{
-				["time"] = 1698388610,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388610,
 			}, -- [1209]
 			{
-				["time"] = 1698388614,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388614,
 			}, -- [1210]
 			{
-				["time"] = 1698388618,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388618,
 			}, -- [1211]
 			{
-				["time"] = 1698388621,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388621,
 			}, -- [1212]
 			{
-				["time"] = 1698388627,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388627,
 			}, -- [1213]
 			{
-				["time"] = 1698388631,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388631,
 			}, -- [1214]
 			{
-				["time"] = 1698388634,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388634,
 			}, -- [1215]
 			{
-				["time"] = 1698388638,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388638,
 			}, -- [1216]
 			{
-				["time"] = 1698388657,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388657,
 			}, -- [1217]
 			{
-				["time"] = 1698388661,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388661,
 			}, -- [1218]
 			{
-				["time"] = 1698388665,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388665,
 			}, -- [1219]
 			{
-				["time"] = 1698388669,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388669,
 			}, -- [1220]
 			{
-				["time"] = 1698388673,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388673,
 			}, -- [1221]
 			{
-				["time"] = 1698388677,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388677,
 			}, -- [1222]
 			{
-				["time"] = 1698388681,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388681,
 			}, -- [1223]
 			{
-				["time"] = 1698388685,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388685,
 			}, -- [1224]
 			{
-				["time"] = 1698388689,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388689,
 			}, -- [1225]
 			{
-				["time"] = 1698388693,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388693,
 			}, -- [1226]
 			{
-				["time"] = 1698388697,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388697,
 			}, -- [1227]
 			{
-				["time"] = 1698388701,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388701,
 			}, -- [1228]
 			{
-				["time"] = 1698388705,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388705,
 			}, -- [1229]
 			{
-				["time"] = 1698388709,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388709,
 			}, -- [1230]
 			{
-				["time"] = 1698388713,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388713,
 			}, -- [1231]
 			{
-				["time"] = 1698388717,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388717,
 			}, -- [1232]
 			{
-				["time"] = 1698388721,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388721,
 			}, -- [1233]
 			{
-				["time"] = 1698388725,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388725,
 			}, -- [1234]
 			{
-				["time"] = 1698388729,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388729,
 			}, -- [1235]
 			{
-				["time"] = 1698388733,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388733,
 			}, -- [1236]
 			{
-				["time"] = 1698388737,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388737,
 			}, -- [1237]
 			{
-				["time"] = 1698388741,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388741,
 			}, -- [1238]
 			{
-				["time"] = 1698388745,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388745,
 			}, -- [1239]
 			{
-				["time"] = 1698388749,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388749,
 			}, -- [1240]
 			{
-				["time"] = 1698388753,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388753,
 			}, -- [1241]
 			{
-				["time"] = 1698388757,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698388757,
 			}, -- [1242]
 			{
-				["time"] = 1698388761,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698388761,
 			}, -- [1243]
 			{
-				["time"] = 1698388765,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698388765,
 			}, -- [1244]
 			{
-				["time"] = 1698388770,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698388770,
 			}, -- [1245]
 			{
-				["time"] = 1698388774,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698388774,
 			}, -- [1246]
 			{
-				["time"] = 1698388778,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698388778,
 			}, -- [1247]
 			{
-				["time"] = 1698389600,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698389600,
 			}, -- [1248]
 			{
-				["time"] = 1698389611,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698389611,
 			}, -- [1249]
 			{
-				["time"] = 1698389619,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698389619,
 			}, -- [1250]
 			{
-				["time"] = 1698389622,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698389622,
 			}, -- [1251]
 			{
-				["time"] = 1698389626,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:14768",
+				["time"] = 1698389626,
 			}, -- [1252]
 			{
-				["time"] = 1698389632,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10001",
+				["time"] = 1698389632,
 			}, -- [1253]
 			{
-				["time"] = 1698389636,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24822:-43",
+				["time"] = 1698389636,
 			}, -- [1254]
 			{
-				["time"] = 1698389640,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:10166:1210",
+				["time"] = 1698389640,
 			}, -- [1255]
 			{
-				["time"] = 1698389644,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9848:856",
+				["time"] = 1698389644,
 			}, -- [1256]
 			{
-				["time"] = 1698389647,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9848:856",
+				["time"] = 1698389647,
 			}, -- [1257]
 			{
-				["time"] = 1698389651,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:1314",
+				["time"] = 1698389651,
 			}, -- [1258]
 			{
-				["time"] = 1698389655,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:4571:1548",
+				["time"] = 1698389655,
 			}, -- [1259]
 			{
-				["time"] = 1698389658,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:9902:529",
+				["time"] = 1698389658,
 			}, -- [1260]
 			{
-				["time"] = 1698389662,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:15608:861",
+				["time"] = 1698389662,
 			}, -- [1261]
 			{
-				["time"] = 1698389666,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:24712:-39",
+				["time"] = 1698389666,
 			}, -- [1262]
 			{
-				["time"] = 1698389669,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:1640:309",
+				["time"] = 1698389669,
 			}, -- [1263]
 			{
-				["time"] = 1698389673,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:14261:856",
+				["time"] = 1698389673,
 			}, -- [1264]
 			{
-				["time"] = 1698389677,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:15372:215",
+				["time"] = 1698389677,
 			}, -- [1265]
 			{
-				["time"] = 1698389680,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:14261:176",
+				["time"] = 1698389680,
 			}, -- [1266]
 			{
-				["time"] = 1698389684,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:9285:1194",
+				["time"] = 1698389684,
 			}, -- [1267]
 			{
-				["time"] = 1698389688,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:3057",
+				["time"] = 1698389688,
 			}, -- [1268]
 			{
-				["time"] = 1698389691,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:15974:1879",
+				["time"] = 1698389691,
 			}, -- [1269]
 			{
-				["time"] = 1698389695,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:7406:1022",
+				["time"] = 1698389695,
 			}, -- [1270]
 			{
-				["time"] = 1698389698,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:1945",
+				["time"] = 1698389698,
 			}, -- [1271]
 			{
-				["time"] = 1698389703,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:14831",
+				["time"] = 1698389703,
 			}, -- [1272]
 			{
-				["time"] = 1698389707,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:14562",
+				["time"] = 1698389707,
 			}, -- [1273]
 			{
-				["time"] = 1698389711,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:24715:-13",
+				["time"] = 1698389711,
 			}, -- [1274]
 			{
-				["time"] = 1698389715,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:24719:-6",
+				["time"] = 1698389715,
 			}, -- [1275]
 			{
-				["time"] = 1698389719,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:25060:-41",
+				["time"] = 1698389719,
 			}, -- [1276]
 			{
-				["time"] = 1698389722,
 				["result"] = {
 					["i:11082"] = 2,
 				},
 				["item"] = "i:15212:1182",
+				["time"] = 1698389722,
 			}, -- [1277]
 			{
-				["time"] = 1698389726,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25439",
+				["time"] = 1698389726,
 			}, -- [1278]
 			{
-				["time"] = 1698389730,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1698389730,
 			}, -- [1279]
 			{
-				["time"] = 1698389733,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:4326",
+				["time"] = 1698389733,
 			}, -- [1280]
 			{
-				["time"] = 1698389737,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:4326",
+				["time"] = 1698389737,
 			}, -- [1281]
 			{
-				["time"] = 1698389741,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7057",
+				["time"] = 1698389741,
 			}, -- [1282]
 			{
-				["time"] = 1698389744,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:15249:168",
+				["time"] = 1698389744,
 			}, -- [1283]
 			{
-				["time"] = 1698389748,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:10282:1201",
+				["time"] = 1698389748,
 			}, -- [1284]
 			{
-				["time"] = 1698389752,
 				["result"] = {
 					["i:16203"] = 2,
 				},
 				["item"] = "i:8265",
+				["time"] = 1698389752,
 			}, -- [1285]
 			{
-				["time"] = 1698389756,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389756,
 			}, -- [1286]
 			{
-				["time"] = 1698389759,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389759,
 			}, -- [1287]
 			{
-				["time"] = 1698389763,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389763,
 			}, -- [1288]
 			{
-				["time"] = 1698389767,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389767,
 			}, -- [1289]
 			{
-				["time"] = 1698389771,
 				["result"] = {
 					["i:11084"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389771,
 			}, -- [1290]
 			{
-				["time"] = 1698389774,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389774,
 			}, -- [1291]
 			{
-				["time"] = 1698389805,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:11970:1501",
+				["time"] = 1698389805,
 			}, -- [1292]
 			{
-				["time"] = 1698389808,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698389808,
 			}, -- [1293]
 			{
-				["time"] = 1698389812,
 				["result"] = {
 					["i:11135"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389812,
 			}, -- [1294]
 			{
-				["time"] = 1698389816,
 				["result"] = {
 					["i:11135"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389816,
 			}, -- [1295]
 			{
-				["time"] = 1698389820,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389820,
 			}, -- [1296]
 			{
-				["time"] = 1698389823,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389823,
 			}, -- [1297]
 			{
-				["time"] = 1698389827,
 				["result"] = {
 					["i:11139"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389827,
 			}, -- [1298]
 			{
-				["time"] = 1698389831,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389831,
 			}, -- [1299]
 			{
-				["time"] = 1698389835,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389835,
 			}, -- [1300]
 			{
-				["time"] = 1698389838,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389838,
 			}, -- [1301]
 			{
-				["time"] = 1698389842,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389842,
 			}, -- [1302]
 			{
-				["time"] = 1698389846,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389846,
 			}, -- [1303]
 			{
-				["time"] = 1698389854,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389854,
 			}, -- [1304]
 			{
-				["time"] = 1698389858,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389858,
 			}, -- [1305]
 			{
-				["time"] = 1698389862,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389862,
 			}, -- [1306]
 			{
-				["time"] = 1698389866,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389866,
 			}, -- [1307]
 			{
-				["time"] = 1698389914,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389914,
 			}, -- [1308]
 			{
-				["time"] = 1698389918,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389918,
 			}, -- [1309]
 			{
-				["time"] = 1698389922,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389922,
 			}, -- [1310]
 			{
-				["time"] = 1698389926,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389926,
 			}, -- [1311]
 			{
-				["time"] = 1698389929,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7431:1034",
+				["time"] = 1698389929,
 			}, -- [1312]
 			{
-				["time"] = 1698389933,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:7062",
+				["time"] = 1698389933,
 			}, -- [1313]
 			{
-				["time"] = 1698389938,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:10329",
+				["time"] = 1698389938,
 			}, -- [1314]
 			{
-				["time"] = 1698389942,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:15364:147",
+				["time"] = 1698389942,
 			}, -- [1315]
 			{
-				["time"] = 1698389945,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:4731",
+				["time"] = 1698389945,
 			}, -- [1316]
 			{
-				["time"] = 1698389949,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9852:384",
+				["time"] = 1698389949,
 			}, -- [1317]
 			{
-				["time"] = 1698389953,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9890:511",
+				["time"] = 1698389953,
 			}, -- [1318]
 			{
-				["time"] = 1698389956,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:9898:1192",
+				["time"] = 1698389956,
 			}, -- [1319]
 			{
-				["time"] = 1698389960,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3184:1801",
+				["time"] = 1698389960,
 			}, -- [1320]
 			{
-				["time"] = 1698389964,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:3184:2028",
+				["time"] = 1698389964,
 			}, -- [1321]
 			{
-				["time"] = 1698389967,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:3184:1991",
+				["time"] = 1698389967,
 			}, -- [1322]
 			{
-				["time"] = 1698389971,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389971,
 			}, -- [1323]
 			{
-				["time"] = 1698389975,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389975,
 			}, -- [1324]
 			{
-				["time"] = 1698389979,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389979,
 			}, -- [1325]
 			{
-				["time"] = 1698389984,
 				["result"] = {
 					["i:11084"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389984,
 			}, -- [1326]
 			{
-				["time"] = 1698389988,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389988,
 			}, -- [1327]
 			{
-				["time"] = 1698389992,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389992,
 			}, -- [1328]
 			{
-				["time"] = 1698389995,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389995,
 			}, -- [1329]
 			{
-				["time"] = 1698389999,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698389999,
 			}, -- [1330]
 			{
-				["time"] = 1698390003,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390003,
 			}, -- [1331]
 			{
-				["time"] = 1698390007,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390007,
 			}, -- [1332]
 			{
-				["time"] = 1698390011,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390011,
 			}, -- [1333]
 			{
-				["time"] = 1698390014,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390014,
 			}, -- [1334]
 			{
-				["time"] = 1698390019,
 				["result"] = {
 					["i:11082"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390019,
 			}, -- [1335]
 			{
-				["time"] = 1698390022,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390022,
 			}, -- [1336]
 			{
-				["time"] = 1698390036,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390036,
 			}, -- [1337]
 			{
-				["time"] = 1698390040,
 				["result"] = {
 					["i:10938"] = 1,
 				},
 				["item"] = "i:4564:585",
+				["time"] = 1698390040,
 			}, -- [1338]
 			{
-				["time"] = 1698390044,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:789:1549",
+				["time"] = 1698390044,
 			}, -- [1339]
 			{
-				["time"] = 1698390047,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:14834",
+				["time"] = 1698390047,
 			}, -- [1340]
 			{
-				["time"] = 1698390051,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:9904:522",
+				["time"] = 1698390051,
 			}, -- [1341]
 			{
-				["time"] = 1698390055,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:15363:783",
+				["time"] = 1698390055,
 			}, -- [1342]
 			{
-				["time"] = 1698390059,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:9811:96",
+				["time"] = 1698390059,
 			}, -- [1343]
 			{
-				["time"] = 1698390062,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:14314:789",
+				["time"] = 1698390062,
 			}, -- [1344]
 			{
-				["time"] = 1698390066,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:4087:1708",
+				["time"] = 1698390066,
 			}, -- [1345]
 			{
-				["time"] = 1698390070,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:15242:2030",
+				["time"] = 1698390070,
 			}, -- [1346]
 			{
-				["time"] = 1698390074,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:4567:114",
+				["time"] = 1698390074,
 			}, -- [1347]
 			{
-				["time"] = 1698390078,
 				["result"] = {
 					["i:11175"] = 1,
 				},
 				["item"] = "i:4089:132",
+				["time"] = 1698390078,
 			}, -- [1348]
 			{
-				["time"] = 1698390081,
 				["result"] = {
 					["i:11176"] = 3,
 				},
 				["item"] = "i:12055",
+				["time"] = 1698390081,
 			}, -- [1349]
 			{
-				["time"] = 1698390085,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:14435",
+				["time"] = 1698390085,
 			}, -- [1350]
 			{
-				["time"] = 1698390089,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:14435",
+				["time"] = 1698390089,
 			}, -- [1351]
 			{
-				["time"] = 1698390092,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:14435",
+				["time"] = 1698390092,
 			}, -- [1352]
 			{
-				["time"] = 1698390096,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:14428",
+				["time"] = 1698390096,
 			}, -- [1353]
 			{
-				["time"] = 1698390100,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:14428",
+				["time"] = 1698390100,
 			}, -- [1354]
 			{
-				["time"] = 1698390104,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:14906:1033",
+				["time"] = 1698390104,
 			}, -- [1355]
 			{
-				["time"] = 1698390107,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:6415",
+				["time"] = 1698390107,
 			}, -- [1356]
 			{
-				["time"] = 1698390111,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:15605:777",
+				["time"] = 1698390111,
 			}, -- [1357]
 			{
-				["time"] = 1698390115,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:15617:439",
+				["time"] = 1698390115,
 			}, -- [1358]
 			{
-				["time"] = 1698390118,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:4058",
+				["time"] = 1698390118,
 			}, -- [1359]
 			{
-				["time"] = 1698390122,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7533:600",
+				["time"] = 1698390122,
 			}, -- [1360]
 			{
-				["time"] = 1698390126,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9969:1127",
+				["time"] = 1698390126,
 			}, -- [1361]
 			{
-				["time"] = 1698390130,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390130,
 			}, -- [1362]
 			{
-				["time"] = 1698390133,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390133,
 			}, -- [1363]
 			{
-				["time"] = 1698390137,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390137,
 			}, -- [1364]
 			{
-				["time"] = 1698390141,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390141,
 			}, -- [1365]
 			{
-				["time"] = 1698390145,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390145,
 			}, -- [1366]
 			{
-				["time"] = 1698390148,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390148,
 			}, -- [1367]
 			{
-				["time"] = 1698390152,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390152,
 			}, -- [1368]
 			{
-				["time"] = 1698390156,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390156,
 			}, -- [1369]
 			{
-				["time"] = 1698390159,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390159,
 			}, -- [1370]
 			{
-				["time"] = 1698390163,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390163,
 			}, -- [1371]
 			{
-				["time"] = 1698390167,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390167,
 			}, -- [1372]
 			{
-				["time"] = 1698390171,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390171,
 			}, -- [1373]
 			{
-				["time"] = 1698390175,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390175,
 			}, -- [1374]
 			{
-				["time"] = 1698390179,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390179,
 			}, -- [1375]
 			{
-				["time"] = 1698390182,
 				["result"] = {
 					["i:11083"] = 1,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390182,
 			}, -- [1376]
 			{
-				["time"] = 1698390186,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:4251",
+				["time"] = 1698390186,
 			}, -- [1377]
 			{
-				["time"] = 1698390190,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:9866:1121",
+				["time"] = 1698390190,
 			}, -- [1378]
 			{
-				["time"] = 1698390194,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:7416:1552",
+				["time"] = 1698390194,
 			}, -- [1379]
 			{
-				["time"] = 1698390199,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:9841:1558",
+				["time"] = 1698390199,
 			}, -- [1380]
 			{
-				["time"] = 1698390203,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698390203,
 			}, -- [1381]
 			{
-				["time"] = 1698390207,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698390207,
 			}, -- [1382]
 			{
-				["time"] = 1698390211,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2865",
+				["time"] = 1698390211,
 			}, -- [1383]
 			{
-				["time"] = 1698390214,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390214,
 			}, -- [1384]
 			{
-				["time"] = 1698390218,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390218,
 			}, -- [1385]
 			{
-				["time"] = 1698390222,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390222,
 			}, -- [1386]
 			{
-				["time"] = 1698390225,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390225,
 			}, -- [1387]
 			{
-				["time"] = 1698390229,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390229,
 			}, -- [1388]
 			{
-				["time"] = 1698390233,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390233,
 			}, -- [1389]
 			{
-				["time"] = 1698390236,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390236,
 			}, -- [1390]
 			{
-				["time"] = 1698390245,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390245,
 			}, -- [1391]
 			{
-				["time"] = 1698390249,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4314",
+				["time"] = 1698390249,
 			}, -- [1392]
 			{
-				["time"] = 1698390252,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:10259:1047",
+				["time"] = 1698390252,
 			}, -- [1393]
 			{
-				["time"] = 1698390256,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10094:1196",
+				["time"] = 1698390256,
 			}, -- [1394]
 			{
-				["time"] = 1698390260,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:5215:505",
+				["time"] = 1698390260,
 			}, -- [1395]
 			{
-				["time"] = 1698390264,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:9810:934",
+				["time"] = 1698390264,
 			}, -- [1396]
 			{
-				["time"] = 1698390268,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:3291",
+				["time"] = 1698390268,
 			}, -- [1397]
 			{
-				["time"] = 1698390272,
 				["result"] = {
 					["i:10940"] = 1,
 				},
 				["item"] = "i:3291",
+				["time"] = 1698390272,
 			}, -- [1398]
 			{
-				["time"] = 1698390276,
 				["result"] = {
 					["i:10940"] = 1,
 				},
 				["item"] = "i:3291",
+				["time"] = 1698390276,
 			}, -- [1399]
 			{
-				["time"] = 1698390280,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:15244:679",
+				["time"] = 1698390280,
 			}, -- [1400]
 			{
-				["time"] = 1698390283,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:9813:1188",
+				["time"] = 1698390283,
 			}, -- [1401]
 			{
-				["time"] = 1698390287,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:15333:96",
+				["time"] = 1698390287,
 			}, -- [1402]
 			{
-				["time"] = 1698390291,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390291,
 			}, -- [1403]
 			{
-				["time"] = 1698390295,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390295,
 			}, -- [1404]
 			{
-				["time"] = 1698390299,
 				["result"] = {
 					["i:11138"] = 1,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390299,
 			}, -- [1405]
 			{
-				["time"] = 1698390303,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:24695:-39",
+				["time"] = 1698390303,
 			}, -- [1406]
 			{
-				["time"] = 1698390306,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24849:-12",
+				["time"] = 1698390306,
 			}, -- [1407]
 			{
-				["time"] = 1698390310,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390310,
 			}, -- [1408]
 			{
-				["time"] = 1698390314,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:15212:1183",
+				["time"] = 1698390314,
 			}, -- [1409]
 			{
-				["time"] = 1698390317,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390317,
 			}, -- [1410]
 			{
-				["time"] = 1698390321,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390321,
 			}, -- [1411]
 			{
-				["time"] = 1698390325,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390325,
 			}, -- [1412]
 			{
-				["time"] = 1698390328,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390328,
 			}, -- [1413]
 			{
-				["time"] = 1698390332,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390332,
 			}, -- [1414]
 			{
-				["time"] = 1698390335,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390335,
 			}, -- [1415]
 			{
-				["time"] = 1698390339,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390339,
 			}, -- [1416]
 			{
-				["time"] = 1698390343,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390343,
 			}, -- [1417]
 			{
-				["time"] = 1698390347,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390347,
 			}, -- [1418]
 			{
-				["time"] = 1698390350,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390350,
 			}, -- [1419]
 			{
-				["time"] = 1698390354,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390354,
 			}, -- [1420]
 			{
-				["time"] = 1698390357,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390357,
 			}, -- [1421]
 			{
-				["time"] = 1698390361,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390361,
 			}, -- [1422]
 			{
-				["time"] = 1698390365,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390365,
 			}, -- [1423]
 			{
-				["time"] = 1698390368,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390368,
 			}, -- [1424]
 			{
-				["time"] = 1698390372,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390372,
 			}, -- [1425]
 			{
-				["time"] = 1698390376,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25438",
+				["time"] = 1698390376,
 			}, -- [1426]
 			{
-				["time"] = 1698390379,
 				["result"] = {
 					["i:11175"] = 2,
 				},
 				["item"] = "i:15323:678",
+				["time"] = 1698390379,
 			}, -- [1427]
 			{
-				["time"] = 1698390383,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390383,
 			}, -- [1428]
 			{
-				["time"] = 1698390386,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390386,
 			}, -- [1429]
 			{
-				["time"] = 1698390391,
 				["result"] = {
 					["i:11134"] = 1,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390391,
 			}, -- [1430]
 			{
-				["time"] = 1698390394,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390394,
 			}, -- [1431]
 			{
-				["time"] = 1698390398,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390398,
 			}, -- [1432]
 			{
-				["time"] = 1698390402,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390402,
 			}, -- [1433]
 			{
-				["time"] = 1698390406,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390406,
 			}, -- [1434]
 			{
-				["time"] = 1698390409,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390409,
 			}, -- [1435]
 			{
-				["time"] = 1698390413,
 				["result"] = {
 					["i:11138"] = 1,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390413,
 			}, -- [1436]
 			{
-				["time"] = 1698390417,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390417,
 			}, -- [1437]
 			{
-				["time"] = 1698390421,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390421,
 			}, -- [1438]
 			{
-				["time"] = 1698390424,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:20955",
+				["time"] = 1698390424,
 			}, -- [1439]
 			{
-				["result"] = {
-					["i:11083"] = 2,
-				},
 				["item"] = "i:7046",
 				["time"] = 1698426227,
-			}, -- [1440]
-			{
 				["result"] = {
 					["i:11083"] = 2,
 				},
+			}, -- [1440]
+			{
 				["item"] = "i:7046",
 				["time"] = 1698426230,
+				["result"] = {
+					["i:11083"] = 2,
+				},
 			}, -- [1441]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698426234,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698426234,
 			}, -- [1442]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698426237,
 				["result"] = {
 					["i:11082"] = 2,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698426237,
 			}, -- [1443]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698426241,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698426241,
 			}, -- [1444]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698426244,
 				["result"] = {
 					["i:11082"] = 1,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698426244,
 			}, -- [1445]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698426248,
 				["result"] = {
 					["i:11083"] = 2,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698426248,
 			}, -- [1446]
 			{
+				["item"] = "i:11976:1369",
+				["time"] = 1698426252,
 				["result"] = {
 					["i:11176"] = 4,
 				},
-				["item"] = "i:11976:1369",
-				["time"] = 1698426252,
 			}, -- [1447]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426256,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1448]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426260,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1449]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426263,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1450]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426267,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1451]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426271,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1452]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426275,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1453]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426278,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1454]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426282,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1455]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426286,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1456]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426290,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1457]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426293,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1458]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426297,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1459]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426301,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1460]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426305,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1461]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426308,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1462]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426312,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1463]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426316,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1464]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426319,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1465]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426323,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1466]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426327,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1467]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426330,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1468]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426334,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1469]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426338,
-			}, -- [1470]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426349,
-			}, -- [1471]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426353,
-			}, -- [1472]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426356,
-			}, -- [1473]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426360,
-			}, -- [1474]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426367,
-			}, -- [1475]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426370,
-			}, -- [1476]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426374,
-			}, -- [1477]
-			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426378,
-			}, -- [1478]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [1470]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426349,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1471]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426353,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1472]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426356,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1473]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426360,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [1474]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426367,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1475]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426370,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1476]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426374,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1477]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426378,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [1478]
+			{
 				["item"] = "i:2315",
 				["time"] = 1698426381,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1479]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426385,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1480]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:2315",
 				["time"] = 1698426389,
-			}, -- [1481]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426393,
-			}, -- [1482]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426397,
-			}, -- [1483]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426400,
-			}, -- [1484]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2315",
-				["time"] = 1698426404,
-			}, -- [1485]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:2315",
-				["time"] = 1698426408,
-			}, -- [1486]
+			}, -- [1481]
 			{
+				["item"] = "i:2315",
+				["time"] = 1698426393,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2315",
-				["time"] = 1698426429,
-			}, -- [1487]
+			}, -- [1482]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2315",
-				["time"] = 1698426433,
-			}, -- [1488]
-			{
+				["time"] = 1698426397,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2315",
-				["time"] = 1698426436,
-			}, -- [1489]
+			}, -- [1483]
 			{
+				["item"] = "i:2315",
+				["time"] = 1698426400,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [1484]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426404,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1485]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426408,
+				["result"] = {
+					["i:10940"] = 3,
+				},
+			}, -- [1486]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426429,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1487]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426433,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [1488]
+			{
+				["item"] = "i:2315",
+				["time"] = 1698426436,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1489]
+			{
 				["item"] = "i:2315",
 				["time"] = 1698426440,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1490]
 			{
+				["item"] = "i:3231",
+				["time"] = 1698426444,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:3231",
-				["time"] = 1698426444,
 			}, -- [1491]
 			{
+				["item"] = "i:14366",
+				["time"] = 1698426448,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14366",
-				["time"] = 1698426448,
 			}, -- [1492]
 			{
+				["item"] = "i:14604",
+				["time"] = 1698426451,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:14604",
-				["time"] = 1698426451,
 			}, -- [1493]
 			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
 				["item"] = "i:14428",
 				["time"] = 1698426484,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [1494]
 			{
-				["result"] = {
-					["i:11174"] = 1,
-				},
 				["item"] = "i:14428",
 				["time"] = 1698426489,
-			}, -- [1495]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:14776",
-				["time"] = 1698426493,
-			}, -- [1496]
-			{
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:15162:1559",
-				["time"] = 1698426496,
-			}, -- [1497]
+			}, -- [1495]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:9287:862",
-				["time"] = 1698426505,
-			}, -- [1498]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:4058",
-				["time"] = 1698426509,
-			}, -- [1499]
-			{
+				["item"] = "i:14776",
+				["time"] = 1698426493,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+			}, -- [1496]
+			{
+				["item"] = "i:15162:1559",
+				["time"] = 1698426496,
+				["result"] = {
+					["i:11174"] = 1,
+				},
+			}, -- [1497]
+			{
+				["item"] = "i:9287:862",
+				["time"] = 1698426505,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1498]
+			{
+				["item"] = "i:4058",
+				["time"] = 1698426509,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1499]
+			{
 				["item"] = "i:9929:1610",
 				["time"] = 1698426512,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [1500]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426525,
-			}, -- [1501]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1501]
+			{
 				["item"] = "i:4246",
 				["time"] = 1698426529,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1502]
 			{
+				["item"] = "i:4246",
+				["time"] = 1698426533,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:4246",
-				["time"] = 1698426533,
 			}, -- [1503]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426546,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1504]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426550,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1505]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426553,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1506]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426557,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1507]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426561,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1508]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426564,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1509]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426568,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1510]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426572,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1511]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426575,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1512]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426579,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1513]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426583,
-			}, -- [1514]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1514]
+			{
 				["item"] = "i:4246",
 				["time"] = 1698426586,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1515]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698426590,
-			}, -- [1516]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:4246",
-				["time"] = 1698426594,
-			}, -- [1517]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:4246",
-				["time"] = 1698426597,
-			}, -- [1518]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:4246",
-				["time"] = 1698426601,
-			}, -- [1519]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:4246",
-				["time"] = 1698426604,
-			}, -- [1520]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [1516]
+			{
+				["item"] = "i:4246",
+				["time"] = 1698426594,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1517]
+			{
+				["item"] = "i:4246",
+				["time"] = 1698426597,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1518]
+			{
+				["item"] = "i:4246",
+				["time"] = 1698426601,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1519]
+			{
+				["item"] = "i:4246",
+				["time"] = 1698426604,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1520]
+			{
 				["item"] = "i:4246",
 				["time"] = 1698426617,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1521]
 			{
+				["item"] = "i:20961",
+				["time"] = 1698426621,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1698426621,
 			}, -- [1522]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426628,
-			}, -- [1523]
-			{
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1523]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426632,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1524]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426635,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426635,
 			}, -- [1525]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426639,
-			}, -- [1526]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [1526]
+			{
 				["item"] = "i:20961",
 				["time"] = 1698426642,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [1527]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426646,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [1528]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426649,
-			}, -- [1529]
-			{
 				["result"] = {
 					["i:11135"] = 2,
 				},
+			}, -- [1529]
+			{
 				["item"] = "i:20961",
 				["time"] = 1698426653,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [1530]
 			{
+				["item"] = "i:20961",
+				["time"] = 1698426656,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1698426656,
 			}, -- [1531]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426660,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [1532]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426664,
-			}, -- [1533]
-			{
 				["result"] = {
 					["i:11135"] = 2,
 				},
+			}, -- [1533]
+			{
 				["item"] = "i:20961",
 				["time"] = 1698426668,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [1534]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426672,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [1535]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698426675,
-			}, -- [1536]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [1536]
+			{
 				["item"] = "i:20961",
 				["time"] = 1698426679,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [1537]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:15222:19",
 				["time"] = 1698426683,
-			}, -- [1538]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [1538]
+			{
 				["item"] = "i:15222:1990",
 				["time"] = 1698426686,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1539]
 			{
+				["item"] = "i:8184",
+				["time"] = 1698426690,
 				["result"] = {
 					["i:11082"] = 1,
 				},
-				["item"] = "i:8184",
-				["time"] = 1698426690,
 			}, -- [1540]
 			{
+				["item"] = "i:3196:1185",
+				["time"] = 1698426694,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3196:1185",
-				["time"] = 1698426694,
 			}, -- [1541]
 			{
+				["item"] = "i:14366",
+				["time"] = 1698426697,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14366",
-				["time"] = 1698426697,
 			}, -- [1542]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:5212",
 				["time"] = 1698426701,
-			}, -- [1543]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:1951",
-				["time"] = 1698426705,
-			}, -- [1544]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:5212",
-				["time"] = 1698426709,
-			}, -- [1545]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [1543]
+			{
+				["item"] = "i:1951",
+				["time"] = 1698426705,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [1544]
+			{
+				["item"] = "i:5212",
+				["time"] = 1698426709,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [1545]
+			{
 				["item"] = "i:1951",
 				["time"] = 1698426712,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1546]
 			{
+				["item"] = "i:6040",
+				["time"] = 1698426716,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:6040",
-				["time"] = 1698426716,
 			}, -- [1547]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426720,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426720,
 			}, -- [1548]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426724,
-			}, -- [1549]
-			{
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1549]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426727,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1550]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426731,
 				["result"] = {
 					["i:16203"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426731,
 			}, -- [1551]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426735,
-			}, -- [1552]
-			{
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1552]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426739,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1553]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426743,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426743,
 			}, -- [1554]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426746,
 				["result"] = {
 					["i:16203"] = 2,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426746,
 			}, -- [1555]
 			{
-				["result"] = {
-					["i:16203"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426750,
-			}, -- [1556]
-			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426753,
-			}, -- [1557]
-			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426757,
-			}, -- [1558]
-			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426760,
-			}, -- [1559]
-			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426764,
-			}, -- [1560]
-			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426768,
-			}, -- [1561]
-			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426772,
-			}, -- [1562]
-			{
 				["result"] = {
 					["i:16203"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426776,
-			}, -- [1563]
+			}, -- [1556]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
-				["time"] = 1698426779,
-			}, -- [1564]
-			{
+				["time"] = 1698426753,
 				["result"] = {
 					["i:16204"] = 1,
 				},
+			}, -- [1557]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426757,
+				["result"] = {
+					["i:16204"] = 1,
+				},
+			}, -- [1558]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426760,
+				["result"] = {
+					["i:16204"] = 2,
+				},
+			}, -- [1559]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426764,
+				["result"] = {
+					["i:16204"] = 2,
+				},
+			}, -- [1560]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426768,
+				["result"] = {
+					["i:16204"] = 2,
+				},
+			}, -- [1561]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426772,
+				["result"] = {
+					["i:16204"] = 1,
+				},
+			}, -- [1562]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426776,
+				["result"] = {
+					["i:16203"] = 1,
+				},
+			}, -- [1563]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426779,
+				["result"] = {
+					["i:16204"] = 2,
+				},
+			}, -- [1564]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426783,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1565]
 			{
+				["item"] = "i:3040",
+				["time"] = 1698426791,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3040",
-				["time"] = 1698426791,
 			}, -- [1566]
 			{
+				["item"] = "i:14091:1837",
+				["time"] = 1698426795,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:14091:1837",
-				["time"] = 1698426795,
 			}, -- [1567]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:15009:228",
 				["time"] = 1698426798,
-			}, -- [1568]
-			{
 				["result"] = {
 					["i:10940"] = 1,
 				},
+			}, -- [1568]
+			{
 				["item"] = "i:15479:1179",
 				["time"] = 1698426802,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [1569]
 			{
+				["item"] = "i:4035",
+				["time"] = 1698426806,
 				["result"] = {
 					["i:11083"] = 3,
 				},
-				["item"] = "i:4035",
-				["time"] = 1698426806,
 			}, -- [1570]
 			{
+				["item"] = "i:6380",
+				["time"] = 1698426809,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:6380",
-				["time"] = 1698426809,
 			}, -- [1571]
 			{
+				["item"] = "i:9823:854",
+				["time"] = 1698426813,
 				["result"] = {
 					["i:11083"] = 3,
 				},
-				["item"] = "i:9823:854",
-				["time"] = 1698426813,
 			}, -- [1572]
 			{
+				["item"] = "i:15485:1181",
+				["time"] = 1698426817,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:15485:1181",
-				["time"] = 1698426817,
 			}, -- [1573]
 			{
+				["item"] = "i:7446:1805",
+				["time"] = 1698426820,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:7446:1805",
-				["time"] = 1698426820,
 			}, -- [1574]
 			{
+				["item"] = "i:7448:1026",
+				["time"] = 1698426824,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:7448:1026",
-				["time"] = 1698426824,
 			}, -- [1575]
 			{
+				["item"] = "i:6584:1555",
+				["time"] = 1698426828,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:6584:1555",
-				["time"] = 1698426828,
 			}, -- [1576]
 			{
+				["item"] = "i:3202",
+				["time"] = 1698426832,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:3202",
-				["time"] = 1698426832,
 			}, -- [1577]
 			{
+				["item"] = "i:3018",
+				["time"] = 1698426835,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:3018",
-				["time"] = 1698426835,
 			}, -- [1578]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:15506:845",
 				["time"] = 1698426839,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1579]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:15477:1179",
 				["time"] = 1698426843,
-			}, -- [1580]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426847,
-			}, -- [1581]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426850,
-			}, -- [1582]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426854,
-			}, -- [1583]
-			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426857,
-			}, -- [1584]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426861,
-			}, -- [1585]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426865,
-			}, -- [1586]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426868,
-			}, -- [1587]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426872,
-			}, -- [1588]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426876,
-			}, -- [1589]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:20907",
-				["time"] = 1698426879,
-			}, -- [1590]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [1580]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426847,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [1581]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426850,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [1582]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426854,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1583]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426857,
+				["result"] = {
+					["i:10978"] = 1,
+				},
+			}, -- [1584]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426861,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [1585]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426865,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [1586]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426868,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [1587]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426872,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [1588]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426876,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [1589]
+			{
+				["item"] = "i:20907",
+				["time"] = 1698426879,
+				["result"] = {
+					["i:10940"] = 4,
+				},
+			}, -- [1590]
+			{
 				["item"] = "i:15012:757",
 				["time"] = 1698426883,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1591]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:3040",
 				["time"] = 1698426887,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1592]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3040",
 				["time"] = 1698426890,
-			}, -- [1593]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:3040",
-				["time"] = 1698426894,
-			}, -- [1594]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [1593]
+			{
+				["item"] = "i:3040",
+				["time"] = 1698426894,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [1594]
+			{
 				["item"] = "i:3040",
 				["time"] = 1698426898,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1595]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:3040",
 				["time"] = 1698426901,
-			}, -- [1596]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [1596]
+			{
 				["item"] = "i:3040",
 				["time"] = 1698426905,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1597]
 			{
+				["item"] = "i:6539:1012",
+				["time"] = 1698426909,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:6539:1012",
-				["time"] = 1698426909,
 			}, -- [1598]
 			{
+				["item"] = "i:9768:1012",
+				["time"] = 1698426912,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:9768:1012",
-				["time"] = 1698426912,
 			}, -- [1599]
 			{
+				["item"] = "i:7461:155",
+				["time"] = 1698426916,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:7461:155",
-				["time"] = 1698426916,
 			}, -- [1600]
 			{
+				["item"] = "i:9771:248",
+				["time"] = 1698426919,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:9771:248",
-				["time"] = 1698426919,
 			}, -- [1601]
 			{
+				["item"] = "i:14165:2036",
+				["time"] = 1698426923,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:14165:2036",
-				["time"] = 1698426923,
 			}, -- [1602]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426927,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1603]
 			{
-				["result"] = {
-					["i:16203"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426930,
-			}, -- [1604]
-			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426934,
-			}, -- [1605]
-			{
-				["result"] = {
-					["i:16203"] = 1,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426938,
-			}, -- [1606]
-			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698426941,
-			}, -- [1607]
-			{
 				["result"] = {
 					["i:16203"] = 2,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426945,
-			}, -- [1608]
+			}, -- [1604]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426934,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426949,
-			}, -- [1609]
+			}, -- [1605]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426938,
 				["result"] = {
 					["i:16203"] = 1,
 				},
+			}, -- [1606]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426941,
+				["result"] = {
+					["i:16204"] = 2,
+				},
+			}, -- [1607]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426945,
+				["result"] = {
+					["i:16203"] = 2,
+				},
+			}, -- [1608]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698426949,
+				["result"] = {
+					["i:16204"] = 1,
+				},
+			}, -- [1609]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426953,
+				["result"] = {
+					["i:16203"] = 1,
+				},
 			}, -- [1610]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426956,
-			}, -- [1611]
-			{
 				["result"] = {
 					["i:16204"] = 1,
 				},
+			}, -- [1611]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426960,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1612]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426964,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1613]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426967,
-			}, -- [1614]
-			{
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1614]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426971,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1615]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426974,
 				["result"] = {
 					["i:14344"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426974,
 			}, -- [1616]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426979,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1617]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426982,
-			}, -- [1618]
-			{
 				["result"] = {
 					["i:16204"] = 1,
 				},
+			}, -- [1618]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698426986,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1619]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698426990,
 				["result"] = {
 					["i:16203"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698426990,
 			}, -- [1620]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426993,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1621]
 			{
-				["result"] = {
-					["i:16203"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698426997,
-			}, -- [1622]
-			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
-				["item"] = "i:21790",
-				["time"] = 1698427000,
-			}, -- [1623]
-			{
 				["result"] = {
 					["i:16203"] = 2,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698427004,
-			}, -- [1624]
+			}, -- [1622]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698427000,
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1623]
+			{
+				["item"] = "i:21790",
+				["time"] = 1698427004,
+				["result"] = {
+					["i:16203"] = 2,
+				},
+			}, -- [1624]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698427012,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1625]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698427016,
-			}, -- [1626]
-			{
 				["result"] = {
 					["i:16204"] = 1,
 				},
+			}, -- [1626]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698427019,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1627]
 			{
+				["item"] = "i:4246",
+				["time"] = 1698427023,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4246",
-				["time"] = 1698427023,
 			}, -- [1628]
 			{
+				["item"] = "i:4246",
+				["time"] = 1698427027,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4246",
-				["time"] = 1698427027,
 			}, -- [1629]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698427030,
 				["result"] = {
 					["i:16204"] = 2,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698427030,
 			}, -- [1630]
 			{
+				["item"] = "i:4087:111",
+				["time"] = 1698427041,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:4087:111",
-				["time"] = 1698427041,
 			}, -- [1631]
 			{
+				["item"] = "i:10121:1042",
+				["time"] = 1698427044,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:10121:1042",
-				["time"] = 1698427044,
 			}, -- [1632]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:14165:854",
 				["time"] = 1698427048,
-			}, -- [1633]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [1633]
+			{
 				["item"] = "i:14165:1024",
 				["time"] = 1698427052,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1634]
 			{
+				["item"] = "i:9793:845",
+				["time"] = 1698427055,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:9793:845",
-				["time"] = 1698427055,
 			}, -- [1635]
 			{
+				["item"] = "i:15608:440",
+				["time"] = 1698427059,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:15608:440",
-				["time"] = 1698427059,
 			}, -- [1636]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:20960",
 				["time"] = 1698427063,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [1637]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20960",
 				["time"] = 1698427066,
-			}, -- [1638]
-			{
-				["result"] = {
-					["i:11139"] = 1,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427070,
-			}, -- [1639]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:20960",
-				["time"] = 1698427073,
-			}, -- [1640]
+			}, -- [1638]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:20960",
-				["time"] = 1698427077,
-			}, -- [1641]
-			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427081,
-			}, -- [1642]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427085,
-			}, -- [1643]
-			{
+				["time"] = 1698427070,
 				["result"] = {
 					["i:11139"] = 1,
 				},
-				["item"] = "i:20960",
-				["time"] = 1698427088,
-			}, -- [1644]
+			}, -- [1639]
 			{
+				["item"] = "i:20960",
+				["time"] = 1698427073,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1640]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427077,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [1641]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427081,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+			}, -- [1642]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427085,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [1643]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427088,
+				["result"] = {
+					["i:11139"] = 1,
+				},
+			}, -- [1644]
+			{
 				["item"] = "i:20960",
 				["time"] = 1698427092,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [1645]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427095,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427095,
 			}, -- [1646]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427099,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427099,
 			}, -- [1647]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427103,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427103,
 			}, -- [1648]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427107,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427107,
 			}, -- [1649]
 			{
-				["result"] = {
-					["i:11135"] = 1,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698427110,
+				["result"] = {
+					["i:11135"] = 1,
+				},
 			}, -- [1650]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1698427114,
-			}, -- [1651]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1698427118,
-			}, -- [1652]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1698427122,
-			}, -- [1653]
-			{
-				["result"] = {
-					["i:11135"] = 1,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427125,
-			}, -- [1654]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427129,
-			}, -- [1655]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427133,
-			}, -- [1656]
-			{
-				["result"] = {
-					["i:11135"] = 1,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427136,
-			}, -- [1657]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427140,
-			}, -- [1658]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427144,
-			}, -- [1659]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20960",
-				["time"] = 1698427147,
-			}, -- [1660]
-			{
 				["result"] = {
 					["i:11135"] = 2,
 				},
+			}, -- [1651]
+			{
+				["item"] = "i:20961",
+				["time"] = 1698427118,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1652]
+			{
+				["item"] = "i:20961",
+				["time"] = 1698427122,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [1653]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427125,
+				["result"] = {
+					["i:11135"] = 1,
+				},
+			}, -- [1654]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427129,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1655]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427133,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1656]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427136,
+				["result"] = {
+					["i:11135"] = 1,
+				},
+			}, -- [1657]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427140,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1658]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427144,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [1659]
+			{
+				["item"] = "i:20960",
+				["time"] = 1698427147,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [1660]
+			{
 				["item"] = "i:20960",
 				["time"] = 1698427151,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [1661]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:20960",
 				["time"] = 1698427155,
-			}, -- [1662]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [1662]
+			{
 				["item"] = "i:20960",
 				["time"] = 1698427158,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [1663]
 			{
+				["item"] = "i:9840:1555",
+				["time"] = 1698427162,
 				["result"] = {
 					["i:11083"] = 3,
 				},
-				["item"] = "i:9840:1555",
-				["time"] = 1698427162,
 			}, -- [1664]
 			{
+				["item"] = "i:9869:1196",
+				["time"] = 1698427166,
 				["result"] = {
 					["i:11083"] = 5,
 				},
-				["item"] = "i:9869:1196",
-				["time"] = 1698427166,
 			}, -- [1665]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4314",
 				["time"] = 1698427169,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1666]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4314",
 				["time"] = 1698427173,
-			}, -- [1667]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [1667]
+			{
 				["item"] = "i:4314",
 				["time"] = 1698427176,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1668]
 			{
+				["item"] = "i:4314",
+				["time"] = 1698427180,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4314",
-				["time"] = 1698427180,
 			}, -- [1669]
 			{
+				["item"] = "i:4314",
+				["time"] = 1698427184,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4314",
-				["time"] = 1698427184,
 			}, -- [1670]
 			{
+				["item"] = "i:15323:248",
+				["time"] = 1698427188,
 				["result"] = {
 					["i:11176"] = 2,
 				},
-				["item"] = "i:15323:248",
-				["time"] = 1698427188,
 			}, -- [1671]
 			{
+				["item"] = "i:20961",
+				["time"] = 1698427191,
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1698427191,
 			}, -- [1672]
 			{
-				["result"] = {
-					["i:16204"] = 2,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698427195,
-			}, -- [1673]
-			{
 				["result"] = {
 					["i:16204"] = 2,
 				},
+			}, -- [1673]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698427199,
+				["result"] = {
+					["i:16204"] = 2,
+				},
 			}, -- [1674]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698427202,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1675]
 			{
-				["result"] = {
-					["i:16204"] = 1,
-				},
 				["item"] = "i:21790",
 				["time"] = 1698427206,
-			}, -- [1676]
-			{
 				["result"] = {
 					["i:16204"] = 1,
 				},
+			}, -- [1676]
+			{
 				["item"] = "i:21790",
 				["time"] = 1698427210,
+				["result"] = {
+					["i:16204"] = 1,
+				},
 			}, -- [1677]
 			{
+				["item"] = "i:21790",
+				["time"] = 1698427213,
 				["result"] = {
 					["i:16203"] = 1,
 				},
-				["item"] = "i:21790",
-				["time"] = 1698427213,
 			}, -- [1678]
 			{
+				["item"] = "i:10170:1210",
+				["time"] = 1698427217,
 				["result"] = {
 					["i:16204"] = 2,
 				},
-				["item"] = "i:10170:1210",
-				["time"] = 1698427217,
 			}, -- [1679]
 			{
+				["item"] = "i:14242:1042",
+				["time"] = 1698427220,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:14242:1042",
-				["time"] = 1698427220,
 			}, -- [1680]
 			{
+				["item"] = "i:14096:113",
+				["time"] = 1698427224,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14096:113",
-				["time"] = 1698427224,
 			}, -- [1681]
 			{
+				["item"] = "i:6568:765",
+				["time"] = 1698427228,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:6568:765",
-				["time"] = 1698427228,
 			}, -- [1682]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698427231,
 				["result"] = {
 					["i:11082"] = 1,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698427231,
 			}, -- [1683]
 			{
+				["item"] = "i:7046",
+				["time"] = 1698427235,
 				["result"] = {
 					["i:11083"] = 1,
 				},
-				["item"] = "i:7046",
-				["time"] = 1698427235,
 			}, -- [1684]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698427239,
-			}, -- [1685]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [1685]
+			{
 				["item"] = "i:4246",
 				["time"] = 1698427242,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [1686]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4246",
 				["time"] = 1698427246,
-			}, -- [1687]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [1687]
+			{
 				["item"] = "i:15310:238",
 				["time"] = 1698427250,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [1688]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427254,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427254,
 			}, -- [1689]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427257,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427257,
 			}, -- [1690]
 			{
+				["item"] = "i:4368",
+				["time"] = 1698427261,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4368",
-				["time"] = 1698427261,
 			}, -- [1691]
 			{
-				["time"] = 1698593570,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593570,
 			}, -- [1692]
 			{
-				["time"] = 1698593582,
 				["result"] = {
 					["i:11083"] = 3,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593582,
 			}, -- [1693]
 			{
-				["time"] = 1698593585,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:20960",
+				["time"] = 1698593585,
 			}, -- [1694]
 			{
-				["time"] = 1698593589,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593589,
 			}, -- [1695]
 			{
-				["time"] = 1698593593,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593593,
 			}, -- [1696]
 			{
-				["time"] = 1698593597,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593597,
 			}, -- [1697]
 			{
-				["time"] = 1698593601,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593601,
 			}, -- [1698]
 			{
-				["time"] = 1698593605,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593605,
 			}, -- [1699]
 			{
-				["time"] = 1698593608,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593608,
 			}, -- [1700]
 			{
-				["time"] = 1698593612,
 				["result"] = {
 					["i:11083"] = 2,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593612,
 			}, -- [1701]
 			{
-				["time"] = 1698593638,
 				["result"] = {
 					["i:11134"] = 1,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593638,
 			}, -- [1702]
 			{
-				["time"] = 1698593642,
 				["result"] = {
 					["i:11083"] = 4,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593642,
 			}, -- [1703]
 			{
-				["time"] = 1698593646,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593646,
 			}, -- [1704]
 			{
-				["time"] = 1698593650,
 				["result"] = {
 					["i:11134"] = 2,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593650,
 			}, -- [1705]
 			{
-				["time"] = 1698593654,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593654,
 			}, -- [1706]
 			{
-				["time"] = 1698593658,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593658,
 			}, -- [1707]
 			{
-				["time"] = 1698593662,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593662,
 			}, -- [1708]
 			{
-				["time"] = 1698593666,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593666,
 			}, -- [1709]
 			{
-				["time"] = 1698593670,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593670,
 			}, -- [1710]
 			{
-				["time"] = 1698593674,
 				["result"] = {
 					["i:11138"] = 1,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593674,
 			}, -- [1711]
 			{
-				["time"] = 1698593678,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593678,
 			}, -- [1712]
 			{
-				["time"] = 1698593682,
 				["result"] = {
 					["i:11083"] = 5,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593682,
 			}, -- [1713]
 			{
-				["time"] = 1698593686,
 				["result"] = {
 					["i:11134"] = 1,
 				},
 				["item"] = "i:7050",
+				["time"] = 1698593686,
 			}, -- [1714]
 			{
-				["time"] = 1698593690,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593690,
 			}, -- [1715]
 			{
-				["time"] = 1698593694,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593694,
 			}, -- [1716]
 			{
-				["time"] = 1698593698,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593698,
 			}, -- [1717]
 			{
-				["time"] = 1698593702,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593702,
 			}, -- [1718]
 			{
-				["time"] = 1698593706,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593706,
 			}, -- [1719]
 			{
-				["time"] = 1698593710,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593710,
 			}, -- [1720]
 			{
-				["time"] = 1698593714,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:21755",
+				["time"] = 1698593714,
 			}, -- [1721]
 			{
-				["time"] = 1698593718,
 				["result"] = {
 					["i:22447"] = 2,
 				},
 				["item"] = "i:24623:-22",
+				["time"] = 1698593718,
 			}, -- [1722]
 			{
-				["time"] = 1698593722,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:6040",
+				["time"] = 1698593722,
 			}, -- [1723]
 			{
-				["time"] = 1698593726,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:6040",
+				["time"] = 1698593726,
 			}, -- [1724]
 			{
-				["time"] = 1698593731,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:789:585",
+				["time"] = 1698593731,
 			}, -- [1725]
 			{
-				["time"] = 1698593738,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:6561",
+				["time"] = 1698593738,
 			}, -- [1726]
 			{
+				["item"] = "i:6573:1016",
+				["time"] = 1698667326,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:6573:1016",
-				["time"] = 1698667326,
 			}, -- [1727]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667330,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667330,
 			}, -- [1728]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667334,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667334,
 			}, -- [1729]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:20907",
 				["time"] = 1698667385,
-			}, -- [1730]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [1730]
+			{
 				["item"] = "i:20907",
 				["time"] = 1698667389,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [1731]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667396,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667396,
 			}, -- [1732]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667405,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667405,
 			}, -- [1733]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667415,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667415,
 			}, -- [1734]
 			{
+				["item"] = "i:20907",
+				["time"] = 1698667419,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:20907",
-				["time"] = 1698667419,
 			}, -- [1735]
 			{
+				["item"] = "i:24875:-5",
+				["time"] = 1698667436,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:24875:-5",
-				["time"] = 1698667436,
 			}, -- [1736]
 			{
+				["item"] = "i:14167:842",
+				["time"] = 1698667440,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14167:842",
-				["time"] = 1698667440,
 			}, -- [1737]
 			{
+				["item"] = "i:15508:97",
+				["time"] = 1698667444,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:15508:97",
-				["time"] = 1698667444,
 			}, -- [1738]
 			{
+				["item"] = "i:7558:2031",
+				["time"] = 1698667447,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:7558:2031",
-				["time"] = 1698667447,
 			}, -- [1739]
 			{
-				["result"] = {
-					["i:11176"] = 2,
-				},
 				["item"] = "i:8193",
 				["time"] = 1698667451,
-			}, -- [1740]
-			{
 				["result"] = {
 					["i:11176"] = 2,
 				},
+			}, -- [1740]
+			{
 				["item"] = "i:8193",
 				["time"] = 1698667455,
+				["result"] = {
+					["i:11176"] = 2,
+				},
 			}, -- [1741]
 			{
+				["item"] = "i:15236:854",
+				["time"] = 1698772992,
 				["result"] = {
 					["i:16202"] = 2,
 				},
-				["item"] = "i:15236:854",
-				["time"] = 1698772992,
 			}, -- [1742]
 			{
+				["item"] = "i:24715:-8",
+				["time"] = 1698772996,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:24715:-8",
-				["time"] = 1698772996,
 			}, -- [1743]
 			{
+				["item"] = "i:25045:-8",
+				["time"] = 1698773000,
 				["result"] = {
 					["i:22445"] = 3,
 				},
-				["item"] = "i:25045:-8",
-				["time"] = 1698773000,
 			}, -- [1744]
 			{
+				["item"] = "i:3195:675",
+				["time"] = 1698773004,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:3195:675",
-				["time"] = 1698773004,
 			}, -- [1745]
 			{
+				["item"] = "i:3195:590",
+				["time"] = 1698773008,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3195:590",
-				["time"] = 1698773008,
 			}, -- [1746]
 			{
+				["item"] = "i:25288:-8",
+				["time"] = 1698773012,
 				["result"] = {
 					["i:22445"] = 2,
 				},
-				["item"] = "i:25288:-8",
-				["time"] = 1698773012,
 			}, -- [1747]
 			{
+				["item"] = "i:15311:151",
+				["time"] = 1698773016,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:15311:151",
-				["time"] = 1698773016,
 			}, -- [1748]
 			{
+				["item"] = "i:7433:773",
+				["time"] = 1698773021,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:7433:773",
-				["time"] = 1698773021,
 			}, -- [1749]
 			{
+				["item"] = "i:25288:-36",
+				["time"] = 1698773025,
 				["result"] = {
 					["i:22447"] = 3,
 				},
-				["item"] = "i:25288:-36",
-				["time"] = 1698773025,
 			}, -- [1750]
 			{
+				["item"] = "i:3195:1550",
+				["time"] = 1698773029,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3195:1550",
-				["time"] = 1698773029,
 			}, -- [1751]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:4571:1548",
 				["time"] = 1698773033,
-			}, -- [1752]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [1752]
+			{
 				["item"] = "i:2079:19",
 				["time"] = 1698773036,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1753]
 			{
+				["item"] = "i:6585:587",
+				["time"] = 1698773040,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:6585:587",
-				["time"] = 1698773040,
 			}, -- [1754]
 			{
-				["item"] = "i:3196:845",
 				["time"] = 1699262132,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3196:845",
 			}, -- [1755]
 			{
-				["item"] = "i:3196:845",
 				["time"] = 1699262139,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:3196:845",
 			}, -- [1756]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262149,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1757]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262156,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1758]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262161,
 				["result"] = {
 					["i:11139"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1759]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262182,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1760]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262186,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1761]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262190,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1762]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262194,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1763]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262198,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1764]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262202,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1765]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262206,
 				["result"] = {
 					["i:11139"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1766]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262211,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1767]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262215,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1768]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262220,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1769]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262224,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1770]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262229,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1771]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262233,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1772]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262237,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1773]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262241,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1774]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262246,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1775]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262250,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1776]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262255,
 				["result"] = {
 					["i:11135"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1777]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262259,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1778]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262263,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1779]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262267,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1780]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262272,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1781]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262276,
 				["result"] = {
 					["i:11139"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1782]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262280,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1783]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262284,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1784]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262288,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1785]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262292,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1786]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262297,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1787]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262301,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:5966",
 			}, -- [1788]
 			{
-				["item"] = "i:5966",
 				["time"] = 1699262306,
 				["result"] = {
 					["i:11139"] = 1,
 				},
+				["item"] = "i:5966",
 			}, -- [1789]
 			{
-				["item"] = "i:15287:762",
 				["time"] = 1699262310,
 				["result"] = {
 					["i:11174"] = 2,
 				},
+				["item"] = "i:15287:762",
 			}, -- [1790]
 			{
-				["item"] = "i:15248:678",
 				["time"] = 1699262316,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:15248:678",
 			}, -- [1791]
 			{
-				["item"] = "i:3184:1953",
 				["time"] = 1699262320,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:3184:1953",
 			}, -- [1792]
 			{
-				["item"] = "i:3195:1100",
 				["time"] = 1699262324,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:3195:1100",
 			}, -- [1793]
 			{
-				["time"] = 1699350850,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:8178:1096",
+				["time"] = 1699350850,
 			}, -- [1794]
 			{
-				["time"] = 1699350854,
 				["result"] = {
 					["i:10938"] = 2,
 				},
 				["item"] = "i:8178:1549",
+				["time"] = 1699350854,
 			}, -- [1795]
 			{
-				["time"] = 1699350859,
 				["result"] = {
 					["i:10938"] = 1,
 				},
 				["item"] = "i:8178:672",
+				["time"] = 1699350859,
 			}, -- [1796]
 			{
-				["time"] = 1699350863,
 				["result"] = {
 					["i:10938"] = 1,
 				},
 				["item"] = "i:8178:502",
+				["time"] = 1699350863,
 			}, -- [1797]
 			{
-				["time"] = 1699350867,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350867,
 			}, -- [1798]
 			{
-				["time"] = 1699350873,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350873,
 			}, -- [1799]
 			{
-				["time"] = 1699350877,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350877,
 			}, -- [1800]
 			{
-				["time"] = 1699350881,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350881,
 			}, -- [1801]
 			{
-				["time"] = 1699350885,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350885,
 			}, -- [1802]
 			{
-				["time"] = 1699350889,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350889,
 			}, -- [1803]
 			{
-				["time"] = 1699350893,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350893,
 			}, -- [1804]
 			{
-				["time"] = 1699350897,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350897,
 			}, -- [1805]
 			{
-				["time"] = 1699350901,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350901,
 			}, -- [1806]
 			{
-				["time"] = 1699350906,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350906,
 			}, -- [1807]
 			{
-				["time"] = 1699350909,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350909,
 			}, -- [1808]
 			{
-				["time"] = 1699350914,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350914,
 			}, -- [1809]
 			{
-				["time"] = 1699350918,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350918,
 			}, -- [1810]
 			{
-				["time"] = 1699350921,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699350921,
 			}, -- [1811]
 			{
-				["time"] = 1699350926,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:3195:115",
+				["time"] = 1699350926,
 			}, -- [1812]
 			{
-				["time"] = 1699350930,
 				["result"] = {
 					["i:34052"] = 1,
 				},
 				["item"] = "i:37760",
+				["time"] = 1699350930,
 			}, -- [1813]
 			{
-				["time"] = 1699350934,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350934,
 			}, -- [1814]
 			{
-				["time"] = 1699350938,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350938,
 			}, -- [1815]
 			{
-				["time"] = 1699350942,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350942,
 			}, -- [1816]
 			{
-				["time"] = 1699350946,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350946,
 			}, -- [1817]
 			{
-				["time"] = 1699350950,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350950,
 			}, -- [1818]
 			{
-				["time"] = 1699350954,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350954,
 			}, -- [1819]
 			{
-				["time"] = 1699350958,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350958,
 			}, -- [1820]
 			{
-				["time"] = 1699350962,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350962,
 			}, -- [1821]
 			{
-				["time"] = 1699350966,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350966,
 			}, -- [1822]
 			{
-				["time"] = 1699350970,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350970,
 			}, -- [1823]
 			{
-				["time"] = 1699350974,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350974,
 			}, -- [1824]
 			{
-				["time"] = 1699350978,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350978,
 			}, -- [1825]
 			{
-				["time"] = 1699350981,
 				["result"] = {
 					["i:11177"] = 1,
 				},
 				["item"] = "i:7922",
+				["time"] = 1699350981,
 			}, -- [1826]
 			{
-				["time"] = 1699350986,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:15610:255",
+				["time"] = 1699350986,
 			}, -- [1827]
 			{
-				["time"] = 1699350990,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:6382",
+				["time"] = 1699350990,
 			}, -- [1828]
 			{
-				["time"] = 1699350994,
 				["result"] = {
 					["i:22445"] = 5,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699350994,
 			}, -- [1829]
 			{
-				["time"] = 1699350998,
 				["result"] = {
 					["i:22446"] = 2,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699350998,
 			}, -- [1830]
 			{
-				["time"] = 1699351001,
 				["result"] = {
 					["i:22445"] = 2,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699351001,
 			}, -- [1831]
 			{
-				["time"] = 1699351005,
 				["result"] = {
 					["i:22445"] = 5,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699351005,
 			}, -- [1832]
 			{
-				["time"] = 1699351014,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699351014,
 			}, -- [1833]
 			{
-				["time"] = 1699351018,
 				["result"] = {
 					["i:22445"] = 4,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699351018,
 			}, -- [1834]
 			{
-				["time"] = 1699351022,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:21852",
+				["time"] = 1699351022,
 			}, -- [1835]
 			{
-				["time"] = 1699351027,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351027,
 			}, -- [1836]
 			{
-				["time"] = 1699351030,
 				["result"] = {
 					["i:16204"] = 1,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351030,
 			}, -- [1837]
 			{
-				["time"] = 1699351034,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351034,
 			}, -- [1838]
 			{
-				["time"] = 1699351049,
 				["result"] = {
 					["i:16204"] = 1,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351049,
 			}, -- [1839]
 			{
-				["time"] = 1699351055,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351055,
 			}, -- [1840]
 			{
-				["time"] = 1699351059,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351059,
 			}, -- [1841]
 			{
-				["time"] = 1699351063,
 				["result"] = {
 					["i:16204"] = 1,
 				},
 				["item"] = "i:14111",
+				["time"] = 1699351063,
 			}, -- [1842]
 			{
+				["item"] = "i:14111",
+				["time"] = 1699351107,
 				["result"] = {
 					["i:16204"] = 1,
 				},
-				["item"] = "i:14111",
-				["time"] = 1699351107,
 			}, -- [1843]
 			{
+				["item"] = "i:6586:1016",
+				["time"] = 1699351111,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:6586:1016",
-				["time"] = 1699351111,
 			}, -- [1844]
 			{
+				["item"] = "i:4571:19",
+				["time"] = 1699351117,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:4571:19",
-				["time"] = 1699351117,
 			}, -- [1845]
 			{
+				["item"] = "i:15619:779",
+				["time"] = 1699351121,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:15619:779",
-				["time"] = 1699351121,
 			}, -- [1846]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3040",
 				["time"] = 1699351125,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1847]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3040",
 				["time"] = 1699351129,
-			}, -- [1848]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
+			}, -- [1848]
+			{
 				["item"] = "i:3040",
 				["time"] = 1699351133,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [1849]
 			{
+				["item"] = "i:15976:851",
+				["time"] = 1699351140,
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:15976:851",
-				["time"] = 1699351140,
 			}, -- [1850]
 			{
+				["item"] = "i:2868",
+				["time"] = 1699351144,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:2868",
-				["time"] = 1699351144,
 			}, -- [1851]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:2868",
 				["time"] = 1699351147,
-			}, -- [1852]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [1852]
+			{
 				["item"] = "i:2868",
 				["time"] = 1699351151,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1853]
 			{
+				["item"] = "i:15124:590",
+				["time"] = 1699351166,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:15124:590",
-				["time"] = 1699351166,
 			}, -- [1854]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:14179:759",
 				["time"] = 1699351177,
-			}, -- [1855]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:9768:1012",
-				["time"] = 1699351190,
-			}, -- [1856]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:6565:761",
-				["time"] = 1699351194,
-			}, -- [1857]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
+			}, -- [1855]
+			{
+				["item"] = "i:9768:1012",
+				["time"] = 1699351190,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [1856]
+			{
+				["item"] = "i:6565:761",
+				["time"] = 1699351194,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [1857]
+			{
 				["item"] = "i:15515:1190",
 				["time"] = 1699351198,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [1858]
 			{
+				["item"] = "i:14743",
+				["time"] = 1699351203,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:14743",
-				["time"] = 1699351203,
 			}, -- [1859]
 			{
+				["item"] = "i:14133:1806",
+				["time"] = 1699351208,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:14133:1806",
-				["time"] = 1699351208,
 			}, -- [1860]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2079:23",
 				["time"] = 1699351212,
-			}, -- [1861]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:4575:848",
-				["time"] = 1699351216,
-			}, -- [1862]
-			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
-				["item"] = "i:2078:1548",
-				["time"] = 1699351221,
-			}, -- [1863]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [1861]
+			{
+				["item"] = "i:4575:848",
+				["time"] = 1699351216,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [1862]
+			{
+				["item"] = "i:2078:1548",
+				["time"] = 1699351221,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [1863]
+			{
 				["item"] = "i:2078:23",
 				["time"] = 1699351225,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [1864]
 			{
+				["item"] = "i:3196:675",
+				["time"] = 1699351229,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:3196:675",
-				["time"] = 1699351229,
 			}, -- [1865]
 			{
+				["item"] = "i:6583:587",
+				["time"] = 1699351234,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:6583:587",
-				["time"] = 1699351234,
 			}, -- [1866]
 			{
+				["item"] = "i:6583:842",
+				["time"] = 1699351238,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:6583:842",
-				["time"] = 1699351238,
 			}, -- [1867]
 			{
+				["item"] = "i:6581:504",
+				["time"] = 1699351242,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:6581:504",
-				["time"] = 1699351242,
 			}, -- [1868]
 			{
+				["item"] = "i:10066:783",
+				["time"] = 1699351248,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:10066:783",
-				["time"] = 1699351248,
 			}, -- [1869]
 			{
+				["item"] = "i:7062",
+				["time"] = 1699351252,
 				["result"] = {
 					["i:11139"] = 1,
 				},
-				["item"] = "i:7062",
-				["time"] = 1699351252,
 			}, -- [1870]
 			{
+				["item"] = "i:7062",
+				["time"] = 1699351256,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:7062",
-				["time"] = 1699351256,
 			}, -- [1871]
 			{
+				["item"] = "i:40767",
+				["time"] = 1699351260,
 				["result"] = {
 					["i:34052"] = 1,
 				},
-				["item"] = "i:40767",
-				["time"] = 1699351260,
 			}, -- [1872]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:7062",
 				["time"] = 1699351265,
-			}, -- [1873]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [1873]
+			{
 				["item"] = "i:7062",
 				["time"] = 1699351270,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [1874]
 			{
+				["item"] = "i:7062",
+				["time"] = 1699351274,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:7062",
-				["time"] = 1699351274,
 			}, -- [1875]
 			{
+				["item"] = "i:13856",
+				["time"] = 1699351288,
 				["result"] = {
 					["i:11176"] = 3,
 				},
-				["item"] = "i:13856",
-				["time"] = 1699351288,
 			}, -- [1876]
 			{
+				["item"] = "i:13856",
+				["time"] = 1699351295,
 				["result"] = {
 					["i:11176"] = 5,
 				},
-				["item"] = "i:13856",
-				["time"] = 1699351295,
 			}, -- [1877]
 			{
+				["item"] = "i:13856",
+				["time"] = 1699351317,
 				["result"] = {
 					["i:11176"] = 4,
 				},
-				["item"] = "i:13856",
-				["time"] = 1699351317,
 			}, -- [1878]
 			{
+				["item"] = "i:13856",
+				["time"] = 1699351343,
 				["result"] = {
 					["i:16202"] = 2,
 				},
-				["item"] = "i:13856",
-				["time"] = 1699351343,
 			}, -- [1879]
 			{
+				["item"] = "i:13856",
+				["time"] = 1699351348,
 				["result"] = {
 					["i:11176"] = 3,
 				},
-				["item"] = "i:13856",
-				["time"] = 1699351348,
 			}, -- [1880]
 			{
+				["item"] = "i:20818",
+				["time"] = 1699351353,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:20818",
-				["time"] = 1699351353,
 			}, -- [1881]
 			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
 				["item"] = "i:20818",
 				["time"] = 1699351357,
-			}, -- [1882]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1699351361,
-			}, -- [1883]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1699351382,
-			}, -- [1884]
-			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
-				["item"] = "i:20818",
-				["time"] = 1699351392,
-			}, -- [1885]
-			{
 				["result"] = {
 					["i:10940"] = 5,
 				},
+			}, -- [1882]
+			{
+				["item"] = "i:20818",
+				["time"] = 1699351361,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [1883]
+			{
+				["item"] = "i:20818",
+				["time"] = 1699351382,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [1884]
+			{
+				["item"] = "i:20818",
+				["time"] = 1699351392,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [1885]
+			{
 				["item"] = "i:20818",
 				["time"] = 1699351400,
+				["result"] = {
+					["i:10940"] = 5,
+				},
 			}, -- [1886]
 			{
+				["item"] = "i:20818",
+				["time"] = 1699351410,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:20818",
-				["time"] = 1699351410,
 			}, -- [1887]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:20818",
 				["time"] = 1699351424,
-			}, -- [1888]
-			{
 				["result"] = {
 					["i:10978"] = 1,
 				},
+			}, -- [1888]
+			{
 				["item"] = "i:20818",
 				["time"] = 1699351428,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [1889]
 			{
+				["item"] = "i:15113:96",
+				["time"] = 1699351431,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:15113:96",
-				["time"] = 1699351431,
 			}, -- [1890]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371359,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [1891]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371363,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [1892]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371367,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [1893]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371371,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [1894]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371375,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [1895]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371379,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [1896]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371382,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [1897]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371386,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [1898]
 			{
-				["item"] = "i:25438",
 				["time"] = 1699371391,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25438",
 			}, -- [1899]
 			{
-				["item"] = "i:25438",
 				["time"] = 1699371395,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:25438",
 			}, -- [1900]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371403,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:20955",
 			}, -- [1901]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371406,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1902]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371410,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1903]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371414,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1904]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371418,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1905]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371421,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1906]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371425,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:20955",
 			}, -- [1907]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371430,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1908]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371434,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1909]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371438,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1910]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371442,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1911]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371445,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1912]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371449,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1913]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371453,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1914]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371457,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1915]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371461,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1916]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371467,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1917]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371471,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1918]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371474,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1919]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371479,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1920]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371483,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1921]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371487,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:20955",
 			}, -- [1922]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371491,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1923]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371495,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1924]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371499,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1925]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371503,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1926]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371508,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1927]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371512,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1928]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371516,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:20955",
 			}, -- [1929]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371521,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1930]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371529,
 				["result"] = {
 					["i:11134"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1931]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371533,
 				["result"] = {
 					["i:11138"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1932]
 			{
-				["item"] = "i:14174:113",
 				["time"] = 1699371537,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:14174:113",
 			}, -- [1933]
 			{
-				["item"] = "i:4561:15",
 				["time"] = 1699371541,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4561:15",
 			}, -- [1934]
 			{
-				["item"] = "i:15517:1017",
 				["time"] = 1699371545,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:15517:1017",
 			}, -- [1935]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371548,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1936]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371552,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1937]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371556,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1938]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371559,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1939]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371570,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1940]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371574,
 				["result"] = {
 					["i:11083"] = 4,
 				},
+				["item"] = "i:20955",
 			}, -- [1941]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371579,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1942]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371583,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1943]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371588,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1944]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371592,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1945]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371596,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1946]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371602,
 				["result"] = {
 					["i:11083"] = 3,
 				},
+				["item"] = "i:20955",
 			}, -- [1947]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371606,
 				["result"] = {
 					["i:11134"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [1948]
 			{
-				["item"] = "i:15602:1042",
 				["time"] = 1699371615,
 				["result"] = {
 					["i:11137"] = 5,
 				},
+				["item"] = "i:15602:1042",
 			}, -- [1949]
 			{
-				["item"] = "i:2857",
 				["time"] = 1699371632,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:2857",
 			}, -- [1950]
 			{
-				["item"] = "i:9931:523",
 				["time"] = 1699371636,
 				["result"] = {
 					["i:11137"] = 5,
 				},
+				["item"] = "i:9931:523",
 			}, -- [1951]
 			{
-				["item"] = "i:29160",
 				["time"] = 1699371640,
 				["result"] = {
 					["i:16204"] = 2,
 				},
+				["item"] = "i:29160",
 			}, -- [1952]
 			{
-				["item"] = "i:29160",
 				["time"] = 1699371644,
 				["result"] = {
 					["i:16203"] = 1,
 				},
+				["item"] = "i:29160",
 			}, -- [1953]
 			{
-				["item"] = "i:29160",
 				["time"] = 1699371649,
 				["result"] = {
 					["i:16203"] = 1,
 				},
+				["item"] = "i:29160",
 			}, -- [1954]
 			{
-				["item"] = "i:29160",
 				["time"] = 1699371654,
 				["result"] = {
 					["i:16204"] = 1,
 				},
+				["item"] = "i:29160",
 			}, -- [1955]
 			{
-				["item"] = "i:8194:1189",
 				["time"] = 1699371657,
 				["result"] = {
 					["i:11177"] = 1,
 				},
+				["item"] = "i:8194:1189",
 			}, -- [1956]
 			{
-				["item"] = "i:7922",
 				["time"] = 1699371661,
 				["result"] = {
 					["i:11177"] = 1,
 				},
+				["item"] = "i:7922",
 			}, -- [1957]
 			{
-				["item"] = "i:7922",
 				["time"] = 1699371665,
 				["result"] = {
 					["i:11177"] = 1,
 				},
+				["item"] = "i:7922",
 			}, -- [1958]
 			{
-				["item"] = "i:7922",
 				["time"] = 1699371669,
 				["result"] = {
 					["i:11177"] = 1,
 				},
+				["item"] = "i:7922",
 			}, -- [1959]
 			{
-				["item"] = "i:24757:-13",
 				["time"] = 1699371674,
 				["result"] = {
 					["i:22446"] = 1,
 				},
+				["item"] = "i:24757:-13",
 			}, -- [1960]
 			{
-				["item"] = "i:3208:620",
 				["time"] = 1699371681,
 				["result"] = {
 					["i:11175"] = 2,
 				},
+				["item"] = "i:3208:620",
 			}, -- [1961]
 			{
-				["item"] = "i:25316:-9",
 				["time"] = 1699371719,
 				["result"] = {
 					["i:22447"] = 2,
 				},
+				["item"] = "i:25316:-9",
 			}, -- [1962]
 			{
-				["item"] = "i:12031:941",
 				["time"] = 1699371723,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:12031:941",
 			}, -- [1963]
 			{
-				["item"] = "i:11973:1412",
 				["time"] = 1699371727,
 				["result"] = {
 					["i:11177"] = 1,
 				},
+				["item"] = "i:11973:1412",
 			}, -- [1964]
 			{
-				["item"] = "i:2961",
 				["time"] = 1699371732,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:2961",
 			}, -- [1965]
 			{
-				["item"] = "i:2958",
 				["time"] = 1699371735,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:2958",
 			}, -- [1966]
 			{
-				["item"] = "i:2958",
 				["time"] = 1699371739,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:2958",
 			}, -- [1967]
 			{
-				["item"] = "i:3645",
 				["time"] = 1699371743,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:3645",
 			}, -- [1968]
 			{
-				["item"] = "i:2140:1989",
 				["time"] = 1699371747,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:2140:1989",
 			}, -- [1969]
 			{
-				["item"] = "i:14572",
 				["time"] = 1699371751,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:14572",
 			}, -- [1970]
 			{
-				["item"] = "i:14572",
 				["time"] = 1699371755,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:14572",
 			}, -- [1971]
 			{
-				["item"] = "i:14572",
 				["time"] = 1699371759,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:14572",
 			}, -- [1972]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371764,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1973]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371768,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1974]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371772,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1975]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371776,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1976]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371779,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1977]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371783,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1978]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371787,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1979]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371791,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1980]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371795,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1981]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371799,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1982]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371804,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1983]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371807,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:25439",
 			}, -- [1984]
 			{
-				["item"] = "i:25439",
 				["time"] = 1699371813,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:25439",
 			}, -- [1985]
 			{
-				["item"] = "i:2857",
 				["time"] = 1699371817,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2857",
 			}, -- [1986]
 			{
-				["item"] = "i:2857",
 				["time"] = 1699371821,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:2857",
 			}, -- [1987]
 			{
-				["item"] = "i:2857",
 				["time"] = 1699371825,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:2857",
 			}, -- [1988]
 			{
-				["item"] = "i:20823",
 				["time"] = 1699371829,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:20823",
 			}, -- [1989]
 			{
-				["item"] = "i:20823",
 				["time"] = 1699371833,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:20823",
 			}, -- [1990]
 			{
-				["item"] = "i:20823",
 				["time"] = 1699371837,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:20823",
 			}, -- [1991]
 			{
-				["item"] = "i:15946",
 				["time"] = 1699371841,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:15946",
 			}, -- [1992]
 			{
-				["item"] = "i:6405",
 				["time"] = 1699371845,
 				["result"] = {
 					["i:11137"] = 2,
 				},
+				["item"] = "i:6405",
 			}, -- [1993]
 			{
-				["item"] = "i:12010:250",
 				["time"] = 1699371850,
 				["result"] = {
 					["i:11135"] = 2,
 				},
+				["item"] = "i:12010:250",
 			}, -- [1994]
 			{
-				["item"] = "i:12023:770",
 				["time"] = 1699371854,
 				["result"] = {
 					["i:11137"] = 5,
 				},
+				["item"] = "i:12023:770",
 			}, -- [1995]
 			{
-				["item"] = "i:14428",
 				["time"] = 1699371858,
 				["result"] = {
 					["i:11137"] = 3,
 				},
+				["item"] = "i:14428",
 			}, -- [1996]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371863,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [1997]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371866,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1998]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371871,
 				["result"] = {
 					["i:11083"] = 2,
 				},
+				["item"] = "i:20955",
 			}, -- [1999]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371875,
 				["result"] = {
 					["i:11138"] = 1,
 				},
+				["item"] = "i:20955",
 			}, -- [2000]
 			{
-				["item"] = "i:20955",
 				["time"] = 1699371879,
 				["result"] = {
 					["i:11083"] = 5,
 				},
+				["item"] = "i:20955",
 			}, -- [2001]
 			{
-				["item"] = "i:2073:6",
 				["time"] = 1699371895,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:2073:6",
 			}, -- [2002]
 			{
-				["item"] = "i:36442:-6",
 				["time"] = 1699371901,
 				["result"] = {
 					["i:34054"] = 7,
 				},
+				["item"] = "i:36442:-6",
 			}, -- [2003]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699371905,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2316",
 			}, -- [2004]
 			{
-				["item"] = "i:36443:-39",
 				["time"] = 1699371909,
 				["result"] = {
 					["i:34054"] = 4,
 				},
+				["item"] = "i:36443:-39",
 			}, -- [2005]
 			{
-				["item"] = "i:15612:778",
 				["time"] = 1699371913,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+				["item"] = "i:15612:778",
 			}, -- [2006]
 			{
-				["item"] = "i:4734",
 				["time"] = 1699371917,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+				["item"] = "i:4734",
 			}, -- [2007]
 			{
-				["item"] = "i:4561:15",
 				["time"] = 1699371921,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4561:15",
 			}, -- [2008]
 			{
-				["item"] = "i:6564:842",
 				["time"] = 1699371925,
 				["result"] = {
 					["i:10998"] = 1,
 				},
+				["item"] = "i:6564:842",
 			}, -- [2009]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371929,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2010]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371932,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2011]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371937,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2012]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371944,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2013]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699371959,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2014]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699371968,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2015]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699371972,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2016]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372002,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2017]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372008,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2018]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372013,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2019]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372021,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2020]
 			{
-				["item"] = "i:3040",
 				["time"] = 1699372028,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+				["item"] = "i:3040",
 			}, -- [2021]
 			{
-				["item"] = "i:3040",
 				["time"] = 1699372043,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:3040",
 			}, -- [2022]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372048,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2023]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372052,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2024]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372056,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2025]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372060,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2026]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372064,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:4239",
 			}, -- [2027]
 			{
-				["item"] = "i:4239",
 				["time"] = 1699372068,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:4239",
 			}, -- [2028]
 			{
-				["item"] = "i:9792:764",
 				["time"] = 1699372072,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:9792:764",
 			}, -- [2029]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372076,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2030]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372081,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2031]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372085,
 				["result"] = {
 					["i:10938"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2032]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372091,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2033]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372095,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2034]
 			{
-				["item"] = "i:15222:1549",
 				["time"] = 1699372099,
 				["result"] = {
 					["i:10939"] = 1,
 				},
+				["item"] = "i:15222:1549",
 			}, -- [2035]
 			{
-				["item"] = "i:15222:1549",
 				["time"] = 1699372103,
 				["result"] = {
 					["i:10940"] = 3,
 				},
+				["item"] = "i:15222:1549",
 			}, -- [2036]
 			{
-				["item"] = "i:3040",
 				["time"] = 1699372108,
 				["result"] = {
 					["i:10978"] = 1,
 				},
+				["item"] = "i:3040",
 			}, -- [2037]
 			{
-				["item"] = "i:14567",
 				["time"] = 1699372111,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:14567",
 			}, -- [2038]
 			{
-				["item"] = "i:15330:593",
 				["time"] = 1699372115,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:15330:593",
 			}, -- [2039]
 			{
-				["item"] = "i:15331:1013",
 				["time"] = 1699372119,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:15331:1013",
 			}, -- [2040]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372123,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:2316",
 			}, -- [2041]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372127,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2316",
 			}, -- [2042]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372131,
 				["result"] = {
 					["i:10940"] = 5,
 				},
+				["item"] = "i:2316",
 			}, -- [2043]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372136,
 				["result"] = {
 					["i:10998"] = 2,
 				},
+				["item"] = "i:2316",
 			}, -- [2044]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372142,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2316",
 			}, -- [2045]
 			{
-				["item"] = "i:2316",
 				["time"] = 1699372149,
 				["result"] = {
 					["i:10940"] = 6,
 				},
+				["item"] = "i:2316",
 			}, -- [2046]
 			{
-				["item"] = "i:4314",
 				["time"] = 1699372153,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+				["item"] = "i:4314",
 			}, -- [2047]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372161,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2048]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372181,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2049]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372185,
 				["result"] = {
 					["i:10940"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2050]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372191,
 				["result"] = {
 					["i:10938"] = 2,
 				},
+				["item"] = "i:20906",
 			}, -- [2051]
 			{
-				["item"] = "i:20906",
 				["time"] = 1699372195,
 				["result"] = {
 					["i:10940"] = 1,
 				},
+				["item"] = "i:20906",
 			}, -- [2052]
 			{
-				["time"] = 1699448870,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448870,
 			}, -- [2053]
 			{
-				["time"] = 1699448874,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699448874,
 			}, -- [2054]
 			{
-				["time"] = 1699448878,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448878,
 			}, -- [2055]
 			{
-				["time"] = 1699448882,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448882,
 			}, -- [2056]
 			{
-				["time"] = 1699448886,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448886,
 			}, -- [2057]
 			{
-				["time"] = 1699448890,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448890,
 			}, -- [2058]
 			{
-				["time"] = 1699448894,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448894,
 			}, -- [2059]
 			{
-				["time"] = 1699448898,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448898,
 			}, -- [2060]
 			{
-				["time"] = 1699448902,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448902,
 			}, -- [2061]
 			{
-				["time"] = 1699448906,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448906,
 			}, -- [2062]
 			{
-				["time"] = 1699448910,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448910,
 			}, -- [2063]
 			{
-				["time"] = 1699448914,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448914,
 			}, -- [2064]
 			{
-				["time"] = 1699448917,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448917,
 			}, -- [2065]
 			{
-				["time"] = 1699448921,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448921,
 			}, -- [2066]
 			{
-				["time"] = 1699448926,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20820",
+				["time"] = 1699448926,
 			}, -- [2067]
 			{
-				["time"] = 1699448929,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2985",
+				["time"] = 1699448929,
 			}, -- [2068]
 			{
-				["time"] = 1699448933,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:2985",
+				["time"] = 1699448933,
 			}, -- [2069]
 			{
-				["time"] = 1699448937,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:2985",
+				["time"] = 1699448937,
 			}, -- [2070]
 			{
-				["time"] = 1699448943,
 				["result"] = {
 					["i:10940"] = 1,
 				},
 				["item"] = "i:727:6",
+				["time"] = 1699448943,
 			}, -- [2071]
 			{
-				["time"] = 1699448981,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:4057",
+				["time"] = 1699448981,
 			}, -- [2072]
 			{
-				["time"] = 1699448992,
 				["result"] = {
 					["i:11139"] = 1,
 				},
 				["item"] = "i:14419",
+				["time"] = 1699448992,
 			}, -- [2073]
 			{
-				["time"] = 1699448995,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:15210:23",
+				["time"] = 1699448995,
 			}, -- [2074]
 			{
-				["time"] = 1699449000,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:15222:24",
+				["time"] = 1699449000,
 			}, -- [2075]
 			{
-				["time"] = 1699449006,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:4567:111",
+				["time"] = 1699449006,
 			}, -- [2076]
 			{
-				["time"] = 1699449011,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:15222:24",
+				["time"] = 1699449011,
 			}, -- [2077]
 			{
-				["time"] = 1699449015,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449015,
 			}, -- [2078]
 			{
-				["time"] = 1699449019,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449019,
 			}, -- [2079]
 			{
-				["time"] = 1699449024,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449024,
 			}, -- [2080]
 			{
-				["time"] = 1699449029,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449029,
 			}, -- [2081]
 			{
-				["time"] = 1699449034,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449034,
 			}, -- [2082]
 			{
-				["time"] = 1699449038,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449038,
 			}, -- [2083]
 			{
-				["time"] = 1699449045,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449045,
 			}, -- [2084]
 			{
-				["time"] = 1699449050,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449050,
 			}, -- [2085]
 			{
-				["time"] = 1699449055,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449055,
 			}, -- [2086]
 			{
-				["time"] = 1699449059,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449059,
 			}, -- [2087]
 			{
-				["time"] = 1699449066,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449066,
 			}, -- [2088]
 			{
-				["time"] = 1699449072,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449072,
 			}, -- [2089]
 			{
-				["time"] = 1699449079,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449079,
 			}, -- [2090]
 			{
-				["time"] = 1699449084,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449084,
 			}, -- [2091]
 			{
-				["time"] = 1699449088,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449088,
 			}, -- [2092]
 			{
-				["time"] = 1699449092,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:20818",
+				["time"] = 1699449092,
 			}, -- [2093]
 			{
-				["time"] = 1699449096,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:4057",
+				["time"] = 1699449096,
 			}, -- [2094]
 			{
-				["time"] = 1699449100,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:4057",
+				["time"] = 1699449100,
 			}, -- [2095]
 			{
-				["time"] = 1699449105,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:14419",
+				["time"] = 1699449105,
 			}, -- [2096]
 			{
-				["time"] = 1699449110,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449110,
 			}, -- [2097]
 			{
-				["time"] = 1699449113,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449113,
 			}, -- [2098]
 			{
-				["time"] = 1699449121,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449121,
 			}, -- [2099]
 			{
-				["time"] = 1699449125,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449125,
 			}, -- [2100]
 			{
-				["time"] = 1699449130,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449130,
 			}, -- [2101]
 			{
-				["time"] = 1699449135,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:20823",
+				["time"] = 1699449135,
 			}, -- [2102]
 			{
-				["time"] = 1699449139,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:2079:23",
+				["time"] = 1699449139,
 			}, -- [2103]
 			{
-				["time"] = 1699449143,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449143,
 			}, -- [2104]
 			{
-				["time"] = 1699449147,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449147,
 			}, -- [2105]
 			{
-				["time"] = 1699449151,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449151,
 			}, -- [2106]
 			{
-				["time"] = 1699449155,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449155,
 			}, -- [2107]
 			{
-				["time"] = 1699449160,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449160,
 			}, -- [2108]
 			{
-				["time"] = 1699449164,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449164,
 			}, -- [2109]
 			{
-				["time"] = 1699449168,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449168,
 			}, -- [2110]
 			{
-				["time"] = 1699449173,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449173,
 			}, -- [2111]
 			{
-				["time"] = 1699449177,
 				["result"] = {
 					["i:10939"] = 2,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449177,
 			}, -- [2112]
 			{
-				["time"] = 1699449181,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449181,
 			}, -- [2113]
 			{
-				["time"] = 1699449184,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449184,
 			}, -- [2114]
 			{
-				["time"] = 1699449189,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449189,
 			}, -- [2115]
 			{
-				["time"] = 1699449193,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449193,
 			}, -- [2116]
 			{
-				["time"] = 1699449198,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:25439",
+				["time"] = 1699449198,
 			}, -- [2117]
 			{
-				["time"] = 1699449202,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449202,
 			}, -- [2118]
 			{
-				["time"] = 1699449211,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449211,
 			}, -- [2119]
 			{
-				["time"] = 1699449215,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:14164:1015",
+				["time"] = 1699449215,
 			}, -- [2120]
 			{
-				["time"] = 1699449224,
 				["result"] = {
 					["i:10938"] = 2,
 				},
 				["item"] = "i:4569:15",
+				["time"] = 1699449224,
 			}, -- [2121]
 			{
-				["time"] = 1699449228,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449228,
 			}, -- [2122]
 			{
-				["time"] = 1699449232,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449232,
 			}, -- [2123]
 			{
-				["time"] = 1699449236,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449236,
 			}, -- [2124]
 			{
-				["time"] = 1699449242,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449242,
 			}, -- [2125]
 			{
-				["time"] = 1699449247,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449247,
 			}, -- [2126]
 			{
-				["time"] = 1699449251,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449251,
 			}, -- [2127]
 			{
-				["time"] = 1699449255,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449255,
 			}, -- [2128]
 			{
-				["time"] = 1699449259,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449259,
 			}, -- [2129]
 			{
-				["time"] = 1699449265,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449265,
 			}, -- [2130]
 			{
-				["time"] = 1699449269,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449269,
 			}, -- [2131]
 			{
-				["time"] = 1699449274,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449274,
 			}, -- [2132]
 			{
-				["time"] = 1699449280,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449280,
 			}, -- [2133]
 			{
-				["time"] = 1699449285,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449285,
 			}, -- [2134]
 			{
-				["time"] = 1699449290,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449290,
 			}, -- [2135]
 			{
-				["time"] = 1699449294,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449294,
 			}, -- [2136]
 			{
-				["time"] = 1699449298,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449298,
 			}, -- [2137]
 			{
-				["time"] = 1699449302,
 				["result"] = {
 					["i:11174"] = 1,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449302,
 			}, -- [2138]
 			{
-				["time"] = 1699449306,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449306,
 			}, -- [2139]
 			{
-				["time"] = 1699449310,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449310,
 			}, -- [2140]
 			{
-				["time"] = 1699449314,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449314,
 			}, -- [2141]
 			{
-				["time"] = 1699449319,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449319,
 			}, -- [2142]
 			{
-				["time"] = 1699449322,
 				["result"] = {
 					["i:11137"] = 3,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449322,
 			}, -- [2143]
 			{
-				["time"] = 1699449327,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449327,
 			}, -- [2144]
 			{
-				["time"] = 1699449331,
 				["result"] = {
 					["i:11137"] = 4,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449331,
 			}, -- [2145]
 			{
-				["time"] = 1699449335,
 				["result"] = {
 					["i:11137"] = 5,
 				},
 				["item"] = "i:10003",
+				["time"] = 1699449335,
 			}, -- [2146]
 			{
-				["time"] = 1699449340,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:25045:-42",
+				["time"] = 1699449340,
 			}, -- [2147]
 			{
-				["time"] = 1699449344,
 				["result"] = {
 					["i:10939"] = 1,
 				},
 				["item"] = "i:2315",
+				["time"] = 1699449344,
 			}, -- [2148]
 			{
-				["time"] = 1699449348,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:2315",
+				["time"] = 1699449348,
 			}, -- [2149]
 			{
-				["time"] = 1699449357,
 				["result"] = {
 					["i:10940"] = 3,
 				},
 				["item"] = "i:2315",
+				["time"] = 1699449357,
 			}, -- [2150]
 			{
-				["time"] = 1699449361,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:2315",
+				["time"] = 1699449361,
 			}, -- [2151]
 			{
-				["time"] = 1699449365,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449365,
 			}, -- [2152]
 			{
-				["time"] = 1699449370,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449370,
 			}, -- [2153]
 			{
-				["time"] = 1699449374,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449374,
 			}, -- [2154]
 			{
-				["time"] = 1699449377,
 				["result"] = {
 					["i:10978"] = 1,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449377,
 			}, -- [2155]
 			{
-				["time"] = 1699449382,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449382,
 			}, -- [2156]
 			{
-				["time"] = 1699449386,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449386,
 			}, -- [2157]
 			{
-				["time"] = 1699449457,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699449457,
 			}, -- [2158]
 			{
-				["result"] = {
-					["i:10978"] = 1,
-				},
 				["item"] = "i:4249",
 				["time"] = 1699449710,
-			}, -- [2159]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:4249",
-				["time"] = 1699449716,
-			}, -- [2160]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:4249",
-				["time"] = 1699449720,
-			}, -- [2161]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:4249",
-				["time"] = 1699449725,
-			}, -- [2162]
-			{
 				["result"] = {
 					["i:10978"] = 1,
 				},
+			}, -- [2159]
+			{
+				["item"] = "i:4249",
+				["time"] = 1699449716,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [2160]
+			{
+				["item"] = "i:4249",
+				["time"] = 1699449720,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [2161]
+			{
+				["item"] = "i:4249",
+				["time"] = 1699449725,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [2162]
+			{
 				["item"] = "i:4708",
 				["time"] = 1699449729,
+				["result"] = {
+					["i:10978"] = 1,
+				},
 			}, -- [2163]
 			{
+				["item"] = "i:14722",
+				["time"] = 1699449733,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:14722",
-				["time"] = 1699449733,
 			}, -- [2164]
 			{
+				["item"] = "i:9766:1017",
+				["time"] = 1699449742,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:9766:1017",
-				["time"] = 1699449742,
 			}, -- [2165]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449747,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449747,
 			}, -- [2166]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449753,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449753,
 			}, -- [2167]
 			{
+				["item"] = "i:9812:1184",
+				["time"] = 1699449761,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:9812:1184",
-				["time"] = 1699449761,
 			}, -- [2168]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:7445:772",
 				["time"] = 1699449765,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2169]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:9863:604",
 				["time"] = 1699449769,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2170]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449773,
+				["result"] = {
+					["i:11135"] = 2,
+				},
 			}, -- [2171]
 			{
-				["result"] = {
-					["i:11135"] = 1,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449777,
+				["result"] = {
+					["i:11135"] = 1,
+				},
 			}, -- [2172]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449781,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2173]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449785,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2174]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449789,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2175]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449793,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2176]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449797,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2177]
 			{
-				["result"] = {
-					["i:11135"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449801,
-			}, -- [2178]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449806,
-			}, -- [2179]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449810,
-			}, -- [2180]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449815,
-			}, -- [2181]
-			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449818,
-			}, -- [2182]
-			{
-				["result"] = {
-					["i:11135"] = 1,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449822,
-			}, -- [2183]
-			{
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449826,
-			}, -- [2184]
+			}, -- [2178]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449806,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449830,
-			}, -- [2185]
+			}, -- [2179]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449810,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449834,
-			}, -- [2186]
+			}, -- [2180]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
-				["time"] = 1699449838,
-			}, -- [2187]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449842,
-			}, -- [2188]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449847,
-			}, -- [2189]
-			{
+				["time"] = 1699449815,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449852,
-			}, -- [2190]
+			}, -- [2181]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449818,
 				["result"] = {
-					["i:11139"] = 1,
+					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449855,
-			}, -- [2191]
+			}, -- [2182]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
-				["time"] = 1699449859,
-			}, -- [2192]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449863,
-			}, -- [2193]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449867,
-			}, -- [2194]
-			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
-				["item"] = "i:20961",
-				["time"] = 1699449871,
-			}, -- [2195]
-			{
+				["time"] = 1699449822,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449875,
-			}, -- [2196]
+			}, -- [2183]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449826,
 				["result"] = {
-					["i:11139"] = 1,
+					["i:11135"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449879,
-			}, -- [2197]
+			}, -- [2184]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449830,
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [2185]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449834,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [2186]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449838,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2187]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449842,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2188]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449847,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2189]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449852,
+				["result"] = {
+					["i:11137"] = 1,
+				},
+			}, -- [2190]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449855,
+				["result"] = {
+					["i:11139"] = 1,
+				},
+			}, -- [2191]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449859,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2192]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449863,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2193]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449867,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2194]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449871,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2195]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449875,
+				["result"] = {
+					["i:11135"] = 1,
+				},
+			}, -- [2196]
+			{
+				["item"] = "i:20961",
+				["time"] = 1699449879,
+				["result"] = {
+					["i:11139"] = 1,
+				},
+			}, -- [2197]
+			{
 				["item"] = "i:20961",
 				["time"] = 1699449883,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2198]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449886,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2199]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699449890,
-			}, -- [2200]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [2200]
+			{
 				["item"] = "i:20961",
 				["time"] = 1699449894,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2201]
 			{
+				["item"] = "i:2079:23",
+				["time"] = 1699449898,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:2079:23",
-				["time"] = 1699449898,
 			}, -- [2202]
 			{
+				["item"] = "i:15479:1009",
+				["time"] = 1699449902,
 				["result"] = {
 					["i:10940"] = 1,
 				},
-				["item"] = "i:15479:1009",
-				["time"] = 1699449902,
 			}, -- [2203]
 			{
+				["item"] = "i:3184:1952",
+				["time"] = 1699449906,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3184:1952",
-				["time"] = 1699449906,
 			}, -- [2204]
 			{
+				["item"] = "i:25439",
+				["time"] = 1699449910,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1699449910,
 			}, -- [2205]
 			{
+				["item"] = "i:14122:1010",
+				["time"] = 1699449913,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14122:1010",
-				["time"] = 1699449913,
 			}, -- [2206]
 			{
+				["item"] = "i:14726",
+				["time"] = 1699449917,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:14726",
-				["time"] = 1699449917,
 			}, -- [2207]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4564:670",
 				["time"] = 1699449921,
-			}, -- [2208]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
+			}, -- [2208]
+			{
 				["item"] = "i:4569:15",
 				["time"] = 1699449924,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [2209]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699449948,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699449948,
 			}, -- [2210]
 			{
-				["result"] = {
-					["i:22445"] = 2,
-				},
 				["item"] = "i:24846:-11",
 				["time"] = 1699449952,
-			}, -- [2211]
-			{
 				["result"] = {
 					["i:22445"] = 2,
 				},
+			}, -- [2211]
+			{
 				["item"] = "i:24844:-33",
 				["time"] = 1699449956,
+				["result"] = {
+					["i:22445"] = 2,
+				},
 			}, -- [2212]
 			{
+				["item"] = "i:9999",
+				["time"] = 1699449960,
 				["result"] = {
 					["i:11177"] = 1,
 				},
-				["item"] = "i:9999",
-				["time"] = 1699449960,
 			}, -- [2213]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:9999",
 				["time"] = 1699449966,
-			}, -- [2214]
-			{
-				["result"] = {
-					["i:11137"] = 4,
-				},
-				["item"] = "i:9999",
-				["time"] = 1699449969,
-			}, -- [2215]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:9999",
-				["time"] = 1699449973,
-			}, -- [2216]
+			}, -- [2214]
 			{
+				["item"] = "i:9999",
+				["time"] = 1699449969,
 				["result"] = {
 					["i:11137"] = 4,
 				},
+			}, -- [2215]
+			{
+				["item"] = "i:9999",
+				["time"] = 1699449973,
+				["result"] = {
+					["i:11137"] = 2,
+				},
+			}, -- [2216]
+			{
 				["item"] = "i:9999",
 				["time"] = 1699449977,
+				["result"] = {
+					["i:11137"] = 4,
+				},
 			}, -- [2217]
 			{
+				["item"] = "i:9999",
+				["time"] = 1699449981,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:9999",
-				["time"] = 1699449981,
 			}, -- [2218]
 			{
+				["item"] = "i:9999",
+				["time"] = 1699449986,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:9999",
-				["time"] = 1699449986,
 			}, -- [2219]
 			{
+				["item"] = "i:15268:1100",
+				["time"] = 1699449991,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:15268:1100",
-				["time"] = 1699449991,
 			}, -- [2220]
 			{
+				["item"] = "i:4571:1990",
+				["time"] = 1699449997,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:4571:1990",
-				["time"] = 1699449997,
 			}, -- [2221]
 			{
+				["item"] = "i:14567",
+				["time"] = 1699450007,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:14567",
-				["time"] = 1699450007,
 			}, -- [2222]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450011,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2223]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450015,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2224]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450020,
-			}, -- [2225]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [2225]
+			{
 				["item"] = "i:20961",
 				["time"] = 1699450024,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2226]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699450029,
 				["result"] = {
 					["i:11135"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699450029,
 			}, -- [2227]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450033,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2228]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450037,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2229]
 			{
-				["result"] = {
-					["i:11137"] = 2,
-				},
 				["item"] = "i:20961",
 				["time"] = 1699450042,
-			}, -- [2230]
-			{
 				["result"] = {
 					["i:11137"] = 2,
 				},
+			}, -- [2230]
+			{
 				["item"] = "i:20961",
 				["time"] = 1699450045,
+				["result"] = {
+					["i:11137"] = 2,
+				},
 			}, -- [2231]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699450049,
 				["result"] = {
 					["i:11137"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699450049,
 			}, -- [2232]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699450054,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699450054,
 			}, -- [2233]
 			{
+				["item"] = "i:20961",
+				["time"] = 1699450058,
 				["result"] = {
 					["i:11139"] = 1,
 				},
-				["item"] = "i:20961",
-				["time"] = 1699450058,
 			}, -- [2234]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:20960",
 				["time"] = 1699450062,
-			}, -- [2235]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [2235]
+			{
 				["item"] = "i:20960",
 				["time"] = 1699450065,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2236]
 			{
+				["item"] = "i:8194:680",
+				["time"] = 1699450069,
 				["result"] = {
 					["i:11174"] = 2,
 				},
-				["item"] = "i:8194:680",
-				["time"] = 1699450069,
 			}, -- [2237]
 			{
+				["item"] = "i:24812:-40",
+				["time"] = 1699450073,
 				["result"] = {
 					["i:22445"] = 3,
 				},
-				["item"] = "i:24812:-40",
-				["time"] = 1699450073,
 			}, -- [2238]
 			{
-				["result"] = {
-					["i:22446"] = 2,
-				},
 				["item"] = "i:24643:-6",
 				["time"] = 1699450077,
-			}, -- [2239]
-			{
 				["result"] = {
 					["i:22446"] = 2,
 				},
+			}, -- [2239]
+			{
 				["item"] = "i:24656:-36",
 				["time"] = 1699450082,
+				["result"] = {
+					["i:22446"] = 2,
+				},
 			}, -- [2240]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:4569:1989",
 				["time"] = 1699450086,
-			}, -- [2241]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [2241]
+			{
 				["item"] = "i:4570:1012",
 				["time"] = 1699450090,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2242]
 			{
+				["item"] = "i:15018:763",
+				["time"] = 1699450095,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:15018:763",
-				["time"] = 1699450095,
 			}, -- [2243]
 			{
+				["item"] = "i:3195:845",
+				["time"] = 1699450099,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:3195:845",
-				["time"] = 1699450099,
 			}, -- [2244]
 			{
+				["item"] = "i:15248:1187",
+				["time"] = 1699450103,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:15248:1187",
-				["time"] = 1699450103,
 			}, -- [2245]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:15248:154",
 				["time"] = 1699450107,
-			}, -- [2246]
-			{
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [2246]
+			{
 				["item"] = "i:14167:1012",
 				["time"] = 1699450110,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [2247]
 			{
+				["item"] = "i:6570:506",
+				["time"] = 1699450119,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:6570:506",
-				["time"] = 1699450119,
 			}, -- [2248]
 			{
+				["item"] = "i:2580",
+				["time"] = 1699450124,
 				["result"] = {
 					["i:10940"] = 1,
 				},
-				["item"] = "i:2580",
-				["time"] = 1699450124,
 			}, -- [2249]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450129,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2250]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:17922",
 				["time"] = 1699450133,
-			}, -- [2251]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [2251]
+			{
 				["item"] = "i:14726",
 				["time"] = 1699450137,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2252]
 			{
+				["item"] = "i:6585:842",
+				["time"] = 1699450141,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:6585:842",
-				["time"] = 1699450141,
 			}, -- [2253]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450146,
-			}, -- [2254]
-			{
 				["result"] = {
 					["i:10940"] = 1,
 				},
+			}, -- [2254]
+			{
 				["item"] = "i:2580",
 				["time"] = 1699450150,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [2255]
 			{
+				["item"] = "i:4719",
+				["time"] = 1699450154,
 				["result"] = {
 					["i:11134"] = 2,
 				},
-				["item"] = "i:4719",
-				["time"] = 1699450154,
 			}, -- [2256]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:4577",
 				["time"] = 1699450158,
-			}, -- [2257]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
+			}, -- [2257]
+			{
 				["item"] = "i:4577",
 				["time"] = 1699450162,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [2258]
 			{
+				["item"] = "i:4719",
+				["time"] = 1699450165,
 				["result"] = {
 					["i:11083"] = 2,
 				},
-				["item"] = "i:4719",
-				["time"] = 1699450165,
 			}, -- [2259]
 			{
+				["item"] = "i:14161:1010",
+				["time"] = 1699450170,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:14161:1010",
-				["time"] = 1699450170,
 			}, -- [2260]
 			{
+				["item"] = "i:25439",
+				["time"] = 1699450174,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:25439",
-				["time"] = 1699450174,
 			}, -- [2261]
 			{
+				["item"] = "i:25439",
+				["time"] = 1699450179,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:25439",
-				["time"] = 1699450179,
 			}, -- [2262]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:25439",
 				["time"] = 1699450183,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [2263]
 			{
-				["result"] = {
-					["i:10940"] = 3,
-				},
 				["item"] = "i:25439",
 				["time"] = 1699450188,
-			}, -- [2264]
-			{
 				["result"] = {
 					["i:10940"] = 3,
 				},
+			}, -- [2264]
+			{
 				["item"] = "i:25439",
 				["time"] = 1699450193,
+				["result"] = {
+					["i:10940"] = 3,
+				},
 			}, -- [2265]
 			{
+				["item"] = "i:25439",
+				["time"] = 1699450200,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:25439",
-				["time"] = 1699450200,
 			}, -- [2266]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:25439",
 				["time"] = 1699450204,
-			}, -- [2267]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [2267]
+			{
 				["item"] = "i:25439",
 				["time"] = 1699450208,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2268]
 			{
+				["item"] = "i:25439",
+				["time"] = 1699450212,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:25439",
-				["time"] = 1699450212,
 			}, -- [2269]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:25439",
 				["time"] = 1699450216,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2270]
 			{
-				["result"] = {
-					["i:10940"] = 1,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450220,
-			}, -- [2271]
-			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
-				["item"] = "i:2580",
-				["time"] = 1699450224,
-			}, -- [2272]
-			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
-				["item"] = "i:2580",
-				["time"] = 1699450229,
-			}, -- [2273]
-			{
 				["result"] = {
 					["i:10940"] = 1,
 				},
+			}, -- [2271]
+			{
+				["item"] = "i:2580",
+				["time"] = 1699450224,
+				["result"] = {
+					["i:10940"] = 2,
+				},
+			}, -- [2272]
+			{
+				["item"] = "i:2580",
+				["time"] = 1699450229,
+				["result"] = {
+					["i:10938"] = 1,
+				},
+			}, -- [2273]
+			{
 				["item"] = "i:2580",
 				["time"] = 1699450232,
+				["result"] = {
+					["i:10940"] = 1,
+				},
 			}, -- [2274]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450236,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2275]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450240,
-			}, -- [2276]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [2276]
+			{
 				["item"] = "i:2580",
 				["time"] = 1699450252,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2277]
 			{
-				["result"] = {
-					["i:10938"] = 2,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450260,
-			}, -- [2278]
-			{
 				["result"] = {
 					["i:10938"] = 2,
 				},
+			}, -- [2278]
+			{
 				["item"] = "i:2580",
 				["time"] = 1699450267,
+				["result"] = {
+					["i:10938"] = 2,
+				},
 			}, -- [2279]
 			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
 				["item"] = "i:2580",
 				["time"] = 1699450272,
-			}, -- [2280]
-			{
 				["result"] = {
 					["i:10938"] = 1,
 				},
+			}, -- [2280]
+			{
 				["item"] = "i:2580",
 				["time"] = 1699450276,
+				["result"] = {
+					["i:10938"] = 1,
+				},
 			}, -- [2281]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608238,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608238,
 			}, -- [2282]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608242,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608242,
 			}, -- [2283]
 			{
+				["item"] = "i:20827",
+				["time"] = 1699608247,
 				["result"] = {
 					["i:11082"] = 1,
 				},
-				["item"] = "i:20827",
-				["time"] = 1699608247,
 			}, -- [2284]
 			{
+				["item"] = "i:2140:1547",
+				["time"] = 1699608251,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:2140:1547",
-				["time"] = 1699608251,
 			}, -- [2285]
 			{
+				["item"] = "i:4571:1990",
+				["time"] = 1699608255,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:4571:1990",
-				["time"] = 1699608255,
 			}, -- [2286]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608259,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2287]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608263,
-			}, -- [2288]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [2288]
+			{
 				["item"] = "i:4314",
 				["time"] = 1699608267,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2289]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608272,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608272,
 			}, -- [2290]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608276,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608276,
 			}, -- [2291]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608280,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608280,
 			}, -- [2292]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608284,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608284,
 			}, -- [2293]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608290,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608290,
 			}, -- [2294]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608294,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608294,
 			}, -- [2295]
 			{
+				["item"] = "i:15179:342",
+				["time"] = 1699608297,
 				["result"] = {
 					["i:16204"] = 2,
 				},
-				["item"] = "i:15179:342",
-				["time"] = 1699608297,
 			}, -- [2296]
 			{
+				["item"] = "i:15498:928",
+				["time"] = 1699608302,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:15498:928",
-				["time"] = 1699608302,
 			}, -- [2297]
 			{
+				["item"] = "i:6554:74",
+				["time"] = 1699608305,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:6554:74",
-				["time"] = 1699608305,
 			}, -- [2298]
 			{
+				["item"] = "i:15511:1021",
+				["time"] = 1699608309,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:15511:1021",
-				["time"] = 1699608309,
 			}, -- [2299]
 			{
+				["item"] = "i:2632:2027",
+				["time"] = 1699608313,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:2632:2027",
-				["time"] = 1699608313,
 			}, -- [2300]
 			{
+				["item"] = "i:14371",
+				["time"] = 1699608318,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:14371",
-				["time"] = 1699608318,
 			}, -- [2301]
 			{
+				["item"] = "i:2073:15",
+				["time"] = 1699608322,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:2073:15",
-				["time"] = 1699608322,
 			}, -- [2302]
 			{
+				["item"] = "i:3184:22",
+				["time"] = 1699608326,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3184:22",
-				["time"] = 1699608326,
 			}, -- [2303]
 			{
+				["item"] = "i:11973:1411",
+				["time"] = 1699608330,
 				["result"] = {
 					["i:11137"] = 5,
 				},
-				["item"] = "i:11973:1411",
-				["time"] = 1699608330,
 			}, -- [2304]
 			{
+				["item"] = "i:15607:1565",
+				["time"] = 1699608335,
 				["result"] = {
 					["i:11174"] = 1,
 				},
-				["item"] = "i:15607:1565",
-				["time"] = 1699608335,
 			}, -- [2305]
 			{
+				["item"] = "i:15163:176",
+				["time"] = 1699608339,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:15163:176",
-				["time"] = 1699608339,
 			}, -- [2306]
 			{
+				["item"] = "i:5069",
+				["time"] = 1699608343,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:5069",
-				["time"] = 1699608343,
 			}, -- [2307]
 			{
-				["result"] = {
-					["i:10938"] = 1,
-				},
 				["item"] = "i:5069",
 				["time"] = 1699608347,
-			}, -- [2308]
-			{
 				["result"] = {
 					["i:10938"] = 1,
 				},
+			}, -- [2308]
+			{
 				["item"] = "i:5069",
 				["time"] = 1699608351,
+				["result"] = {
+					["i:10938"] = 1,
+				},
 			}, -- [2309]
 			{
-				["result"] = {
-					["i:11083"] = 5,
-				},
 				["item"] = "i:5964",
 				["time"] = 1699608355,
-			}, -- [2310]
-			{
 				["result"] = {
 					["i:11083"] = 5,
 				},
+			}, -- [2310]
+			{
 				["item"] = "i:5964",
 				["time"] = 1699608359,
+				["result"] = {
+					["i:11083"] = 5,
+				},
 			}, -- [2311]
 			{
+				["item"] = "i:5964",
+				["time"] = 1699608368,
 				["result"] = {
 					["i:11134"] = 2,
 				},
-				["item"] = "i:5964",
-				["time"] = 1699608368,
 			}, -- [2312]
 			{
+				["item"] = "i:5964",
+				["time"] = 1699608371,
 				["result"] = {
 					["i:11083"] = 3,
 				},
-				["item"] = "i:5964",
-				["time"] = 1699608371,
 			}, -- [2313]
 			{
+				["item"] = "i:7050",
+				["time"] = 1699608376,
 				["result"] = {
 					["i:11083"] = 5,
 				},
-				["item"] = "i:7050",
-				["time"] = 1699608376,
 			}, -- [2314]
 			{
+				["item"] = "i:7050",
+				["time"] = 1699608381,
 				["result"] = {
 					["i:11083"] = 4,
 				},
-				["item"] = "i:7050",
-				["time"] = 1699608381,
 			}, -- [2315]
 			{
+				["item"] = "i:7050",
+				["time"] = 1699608385,
 				["result"] = {
 					["i:11134"] = 1,
 				},
-				["item"] = "i:7050",
-				["time"] = 1699608385,
 			}, -- [2316]
 			{
-				["result"] = {
-					["i:11134"] = 2,
-				},
 				["item"] = "i:7050",
 				["time"] = 1699608389,
-			}, -- [2317]
-			{
-				["result"] = {
-					["i:11083"] = 4,
-				},
-				["item"] = "i:7050",
-				["time"] = 1699608394,
-			}, -- [2318]
-			{
-				["result"] = {
-					["i:11083"] = 4,
-				},
-				["item"] = "i:7050",
-				["time"] = 1699608398,
-			}, -- [2319]
-			{
 				["result"] = {
 					["i:11134"] = 2,
 				},
+			}, -- [2317]
+			{
+				["item"] = "i:7050",
+				["time"] = 1699608394,
+				["result"] = {
+					["i:11083"] = 4,
+				},
+			}, -- [2318]
+			{
+				["item"] = "i:7050",
+				["time"] = 1699608398,
+				["result"] = {
+					["i:11083"] = 4,
+				},
+			}, -- [2319]
+			{
 				["item"] = "i:7050",
 				["time"] = 1699608402,
+				["result"] = {
+					["i:11134"] = 2,
+				},
 			}, -- [2320]
 			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
 				["item"] = "i:20827",
 				["time"] = 1699608406,
+				["result"] = {
+					["i:11083"] = 1,
+				},
 			}, -- [2321]
 			{
-				["result"] = {
-					["i:11083"] = 2,
-				},
 				["item"] = "i:20827",
 				["time"] = 1699608409,
+				["result"] = {
+					["i:11083"] = 2,
+				},
 			}, -- [2322]
 			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
 				["item"] = "i:20827",
 				["time"] = 1699608413,
+				["result"] = {
+					["i:11083"] = 1,
+				},
 			}, -- [2323]
 			{
-				["result"] = {
-					["i:11083"] = 2,
-				},
 				["item"] = "i:20827",
 				["time"] = 1699608417,
-			}, -- [2324]
-			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
-				["item"] = "i:20827",
-				["time"] = 1699608422,
-			}, -- [2325]
-			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
-				["item"] = "i:20827",
-				["time"] = 1699608426,
-			}, -- [2326]
-			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
-				["item"] = "i:20827",
-				["time"] = 1699608430,
-			}, -- [2327]
-			{
-				["result"] = {
-					["i:11083"] = 1,
-				},
-				["item"] = "i:20827",
-				["time"] = 1699608434,
-			}, -- [2328]
-			{
 				["result"] = {
 					["i:11083"] = 2,
 				},
+			}, -- [2324]
+			{
+				["item"] = "i:20827",
+				["time"] = 1699608422,
+				["result"] = {
+					["i:11083"] = 1,
+				},
+			}, -- [2325]
+			{
+				["item"] = "i:20827",
+				["time"] = 1699608426,
+				["result"] = {
+					["i:11083"] = 1,
+				},
+			}, -- [2326]
+			{
+				["item"] = "i:20827",
+				["time"] = 1699608430,
+				["result"] = {
+					["i:11083"] = 1,
+				},
+			}, -- [2327]
+			{
+				["item"] = "i:20827",
+				["time"] = 1699608434,
+				["result"] = {
+					["i:11083"] = 1,
+				},
+			}, -- [2328]
+			{
 				["item"] = "i:20827",
 				["time"] = 1699608438,
+				["result"] = {
+					["i:11083"] = 2,
+				},
 			}, -- [2329]
 			{
+				["item"] = "i:3195:1014",
+				["time"] = 1699608442,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3195:1014",
-				["time"] = 1699608442,
 			}, -- [2330]
 			{
+				["item"] = "i:3195:844",
+				["time"] = 1699608446,
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3195:844",
-				["time"] = 1699608446,
 			}, -- [2331]
 			{
+				["item"] = "i:14257:870",
+				["time"] = 1699608450,
 				["result"] = {
 					["i:11137"] = 3,
 				},
-				["item"] = "i:14257:870",
-				["time"] = 1699608450,
 			}, -- [2332]
 			{
+				["item"] = "i:2140:1547",
+				["time"] = 1699608454,
 				["result"] = {
 					["i:10940"] = 1,
 				},
-				["item"] = "i:2140:1547",
-				["time"] = 1699608454,
 			}, -- [2333]
 			{
+				["item"] = "i:2140:1547",
+				["time"] = 1699608459,
 				["result"] = {
 					["i:10938"] = 2,
 				},
-				["item"] = "i:2140:1547",
-				["time"] = 1699608459,
 			}, -- [2334]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2079:1548",
 				["time"] = 1699608499,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [2335]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:2079:1548",
 				["time"] = 1699608503,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [2336]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:15222:1549",
 				["time"] = 1699608511,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2337]
 			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
 				["item"] = "i:15222:1991",
 				["time"] = 1699608515,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [2338]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:15222:1990",
 				["time"] = 1699608519,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [2339]
 			{
-				["result"] = {
-					["i:10940"] = 2,
-				},
 				["item"] = "i:14109:1015",
 				["time"] = 1699608523,
-			}, -- [2340]
-			{
 				["result"] = {
 					["i:10940"] = 2,
 				},
+			}, -- [2340]
+			{
 				["item"] = "i:3040",
 				["time"] = 1699608527,
+				["result"] = {
+					["i:10940"] = 2,
+				},
 			}, -- [2341]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3040",
 				["time"] = 1699608532,
+				["result"] = {
+					["i:10939"] = 1,
+				},
 			}, -- [2342]
 			{
-				["result"] = {
-					["i:10939"] = 1,
-				},
 				["item"] = "i:3040",
 				["time"] = 1699608536,
-			}, -- [2343]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:3040",
-				["time"] = 1699608552,
-			}, -- [2344]
-			{
-				["result"] = {
-					["i:10939"] = 2,
-				},
-				["item"] = "i:3196:1185",
-				["time"] = 1699608556,
-			}, -- [2345]
-			{
 				["result"] = {
 					["i:10939"] = 1,
 				},
-				["item"] = "i:3196:1185",
-				["time"] = 1699608560,
-			}, -- [2346]
+			}, -- [2343]
 			{
+				["item"] = "i:3040",
+				["time"] = 1699608552,
 				["result"] = {
 					["i:10939"] = 2,
 				},
+			}, -- [2344]
+			{
+				["item"] = "i:3196:1185",
+				["time"] = 1699608556,
+				["result"] = {
+					["i:10939"] = 2,
+				},
+			}, -- [2345]
+			{
+				["item"] = "i:3196:1185",
+				["time"] = 1699608560,
+				["result"] = {
+					["i:10939"] = 1,
+				},
+			}, -- [2346]
+			{
 				["item"] = "i:4567:114",
 				["time"] = 1699608564,
+				["result"] = {
+					["i:10939"] = 2,
+				},
 			}, -- [2347]
 			{
+				["item"] = "i:11974:1321",
+				["time"] = 1699608568,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:11974:1321",
-				["time"] = 1699608568,
 			}, -- [2348]
 			{
+				["item"] = "i:2632:1951",
+				["time"] = 1699608572,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:2632:1951",
-				["time"] = 1699608572,
 			}, -- [2349]
 			{
+				["item"] = "i:4436",
+				["time"] = 1699608591,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4436",
-				["time"] = 1699608591,
 			}, -- [2350]
 			{
+				["item"] = "i:9787:588",
+				["time"] = 1699608595,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:9787:588",
-				["time"] = 1699608595,
 			}, -- [2351]
 			{
+				["item"] = "i:9747:587",
+				["time"] = 1699608599,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:9747:587",
-				["time"] = 1699608599,
 			}, -- [2352]
 			{
+				["item"] = "i:6543:1876",
+				["time"] = 1699608603,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:6543:1876",
-				["time"] = 1699608603,
 			}, -- [2353]
 			{
+				["item"] = "i:3195:675",
+				["time"] = 1699608607,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3195:675",
-				["time"] = 1699608607,
 			}, -- [2354]
 			{
+				["item"] = "i:4710",
+				["time"] = 1699608610,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4710",
-				["time"] = 1699608610,
 			}, -- [2355]
 			{
+				["item"] = "i:4710",
+				["time"] = 1699608614,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:4710",
-				["time"] = 1699608614,
 			}, -- [2356]
 			{
+				["item"] = "i:6576:846",
+				["time"] = 1699608618,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:6576:846",
-				["time"] = 1699608618,
 			}, -- [2357]
 			{
+				["item"] = "i:4709",
+				["time"] = 1699608621,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4709",
-				["time"] = 1699608621,
 			}, -- [2358]
 			{
+				["item"] = "i:7545:856",
+				["time"] = 1699608625,
 				["result"] = {
 					["i:11137"] = 4,
 				},
-				["item"] = "i:7545:856",
-				["time"] = 1699608625,
 			}, -- [2359]
 			{
+				["item"] = "i:15945",
+				["time"] = 1699608629,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:15945",
-				["time"] = 1699608629,
 			}, -- [2360]
 			{
+				["item"] = "i:8193",
+				["time"] = 1699608633,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:8193",
-				["time"] = 1699608633,
 			}, -- [2361]
 			{
+				["item"] = "i:8193",
+				["time"] = 1699608639,
 				["result"] = {
 					["i:11176"] = 1,
 				},
-				["item"] = "i:8193",
-				["time"] = 1699608639,
 			}, -- [2362]
 			{
+				["item"] = "i:8193",
+				["time"] = 1699608643,
 				["result"] = {
 					["i:11176"] = 2,
 				},
-				["item"] = "i:8193",
-				["time"] = 1699608643,
 			}, -- [2363]
 			{
+				["item"] = "i:8193",
+				["time"] = 1699608647,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:8193",
-				["time"] = 1699608647,
 			}, -- [2364]
 			{
+				["item"] = "i:9788:1182",
+				["time"] = 1699608651,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:9788:1182",
-				["time"] = 1699608651,
 			}, -- [2365]
 			{
+				["item"] = "i:9788:1182",
+				["time"] = 1699608655,
 				["result"] = {
 					["i:10940"] = 3,
 				},
-				["item"] = "i:9788:1182",
-				["time"] = 1699608655,
 			}, -- [2366]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608659,
+				["result"] = {
+					["i:10940"] = 6,
+				},
 			}, -- [2367]
 			{
-				["result"] = {
-					["i:10940"] = 6,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608663,
-			}, -- [2368]
-			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
-				["item"] = "i:4314",
-				["time"] = 1699608667,
-			}, -- [2369]
-			{
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608673,
-			}, -- [2370]
+			}, -- [2368]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608667,
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [2369]
+			{
+				["item"] = "i:4314",
+				["time"] = 1699608673,
+				["result"] = {
+					["i:10940"] = 6,
+				},
+			}, -- [2370]
+			{
 				["item"] = "i:4314",
 				["time"] = 1699608677,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2371]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608681,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608681,
 			}, -- [2372]
 			{
-				["result"] = {
-					["i:10998"] = 1,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608684,
-			}, -- [2373]
-			{
 				["result"] = {
 					["i:10998"] = 1,
 				},
+			}, -- [2373]
+			{
 				["item"] = "i:2865",
 				["time"] = 1699608693,
+				["result"] = {
+					["i:10998"] = 1,
+				},
 			}, -- [2374]
 			{
+				["item"] = "i:2865",
+				["time"] = 1699608697,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:2865",
-				["time"] = 1699608697,
 			}, -- [2375]
 			{
+				["item"] = "i:2865",
+				["time"] = 1699608701,
 				["result"] = {
 					["i:10978"] = 1,
 				},
-				["item"] = "i:2865",
-				["time"] = 1699608701,
 			}, -- [2376]
 			{
+				["item"] = "i:6587:1021",
+				["time"] = 1699608705,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:6587:1021",
-				["time"] = 1699608705,
 			}, -- [2377]
 			{
+				["item"] = "i:15635:443",
+				["time"] = 1699608709,
 				["result"] = {
 					["i:11175"] = 1,
 				},
-				["item"] = "i:15635:443",
-				["time"] = 1699608709,
 			}, -- [2378]
 			{
+				["item"] = "i:10333",
+				["time"] = 1699608712,
 				["result"] = {
 					["i:11137"] = 2,
 				},
-				["item"] = "i:10333",
-				["time"] = 1699608712,
 			}, -- [2379]
 			{
+				["item"] = "i:2073:1547",
+				["time"] = 1699608716,
 				["result"] = {
 					["i:10938"] = 1,
 				},
-				["item"] = "i:2073:1547",
-				["time"] = 1699608716,
 			}, -- [2380]
 			{
+				["item"] = "i:2073:15",
+				["time"] = 1699608720,
 				["result"] = {
 					["i:10938"] = 2,
 				},
-				["item"] = "i:2073:15",
-				["time"] = 1699608720,
 			}, -- [2381]
 			{
+				["item"] = "i:14725",
+				["time"] = 1699608724,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:14725",
-				["time"] = 1699608724,
 			}, -- [2382]
 			{
+				["item"] = "i:14725",
+				["time"] = 1699608728,
 				["result"] = {
 					["i:10940"] = 2,
 				},
-				["item"] = "i:14725",
-				["time"] = 1699608728,
 			}, -- [2383]
 			{
+				["item"] = "i:10331",
+				["time"] = 1699608732,
 				["result"] = {
 					["i:11135"] = 1,
 				},
-				["item"] = "i:10331",
-				["time"] = 1699608732,
 			}, -- [2384]
 			{
-				["result"] = {
-					["i:11137"] = 1,
-				},
 				["item"] = "i:10331",
 				["time"] = 1699608735,
-			}, -- [2385]
-			{
 				["result"] = {
 					["i:11137"] = 1,
 				},
+			}, -- [2385]
+			{
 				["item"] = "i:7461:184",
 				["time"] = 1699608740,
+				["result"] = {
+					["i:11137"] = 1,
+				},
 			}, -- [2386]
 			{
+				["item"] = "i:15266:1574",
+				["time"] = 1699608743,
 				["result"] = {
 					["i:16203"] = 3,
 				},
-				["item"] = "i:15266:1574",
-				["time"] = 1699608743,
 			}, -- [2387]
 			{
-				["result"] = {
-					["i:11082"] = 1,
-				},
 				["item"] = "i:15212:587",
 				["time"] = 1699608747,
-			}, -- [2388]
-			{
 				["result"] = {
 					["i:11082"] = 1,
 				},
+			}, -- [2388]
+			{
 				["item"] = "i:15212:587",
 				["time"] = 1699608751,
+				["result"] = {
+					["i:11082"] = 1,
+				},
 			}, -- [2389]
 			{
+				["item"] = "i:6604:505",
+				["time"] = 1699608754,
 				["result"] = {
 					["i:11084"] = 1,
 				},
-				["item"] = "i:6604:505",
-				["time"] = 1699608754,
 			}, -- [2390]
 			{
+				["item"] = "i:3184:17",
+				["time"] = 1699608759,
 				["result"] = {
 					["i:10939"] = 2,
 				},
-				["item"] = "i:3184:17",
-				["time"] = 1699608759,
 			}, -- [2391]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608763,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608763,
 			}, -- [2392]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:4314",
 				["time"] = 1699608767,
-			}, -- [2393]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [2393]
+			{
 				["item"] = "i:4314",
 				["time"] = 1699608771,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2394]
 			{
+				["item"] = "i:4314",
+				["time"] = 1699608774,
 				["result"] = {
 					["i:10940"] = 5,
 				},
-				["item"] = "i:4314",
-				["time"] = 1699608774,
 			}, -- [2395]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:14371",
 				["time"] = 1699608778,
-			}, -- [2396]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [2396]
+			{
 				["item"] = "i:14371",
 				["time"] = 1699608782,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2397]
 			{
+				["item"] = "i:14571",
+				["time"] = 1699608795,
 				["result"] = {
 					["i:10998"] = 2,
 				},
-				["item"] = "i:14571",
-				["time"] = 1699608795,
 			}, -- [2398]
 			{
+				["item"] = "i:6584:181",
+				["time"] = 1699608799,
 				["result"] = {
 					["i:10940"] = 4,
 				},
-				["item"] = "i:6584:181",
-				["time"] = 1699608799,
 			}, -- [2399]
 			{
+				["item"] = "i:14127:1021",
+				["time"] = 1699608802,
 				["result"] = {
 					["i:10998"] = 1,
 				},
-				["item"] = "i:14127:1021",
-				["time"] = 1699608802,
 			}, -- [2400]
 			{
+				["item"] = "i:2865",
+				["time"] = 1699608806,
 				["result"] = {
 					["i:10940"] = 6,
 				},
-				["item"] = "i:2865",
-				["time"] = 1699608806,
 			}, -- [2401]
 			{
-				["result"] = {
-					["i:10940"] = 4,
-				},
 				["item"] = "i:2865",
 				["time"] = 1699608810,
-			}, -- [2402]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:2865",
-				["time"] = 1699608814,
-			}, -- [2403]
-			{
-				["result"] = {
-					["i:10940"] = 5,
-				},
-				["item"] = "i:2865",
-				["time"] = 1699608817,
-			}, -- [2404]
-			{
 				["result"] = {
 					["i:10940"] = 4,
 				},
+			}, -- [2402]
+			{
+				["item"] = "i:2865",
+				["time"] = 1699608814,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [2403]
+			{
+				["item"] = "i:2865",
+				["time"] = 1699608817,
+				["result"] = {
+					["i:10940"] = 5,
+				},
+			}, -- [2404]
+			{
 				["item"] = "i:2865",
 				["time"] = 1699608821,
+				["result"] = {
+					["i:10940"] = 4,
+				},
 			}, -- [2405]
 			{
-				["time"] = 1699651950,
 				["result"] = {
 					["i:10938"] = 1,
 				},
 				["item"] = "i:8178:1550",
+				["time"] = 1699651950,
 			}, -- [2406]
 			{
-				["time"] = 1699651954,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699651954,
 			}, -- [2407]
 			{
-				["time"] = 1699651958,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24669:-36",
+				["time"] = 1699651958,
 			}, -- [2408]
 			{
-				["time"] = 1699651962,
 				["result"] = {
 					["i:10938"] = 2,
 				},
 				["item"] = "i:8178:1012",
+				["time"] = 1699651962,
 			}, -- [2409]
 			{
-				["time"] = 1699651966,
 				["result"] = {
 					["i:11082"] = 2,
 				},
 				["item"] = "i:3186:1184",
+				["time"] = 1699651966,
 			}, -- [2410]
 			{
-				["time"] = 1699651970,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:14171:179",
+				["time"] = 1699651970,
 			}, -- [2411]
 			{
-				["time"] = 1699651974,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:14094:839",
+				["time"] = 1699651974,
 			}, -- [2412]
 			{
-				["time"] = 1699651978,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:3039",
+				["time"] = 1699651978,
 			}, -- [2413]
 			{
-				["time"] = 1699651981,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:3039",
+				["time"] = 1699651981,
 			}, -- [2414]
 			{
-				["time"] = 1699651985,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24911:-44",
+				["time"] = 1699651985,
 			}, -- [2415]
 			{
-				["time"] = 1699651989,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699651989,
 			}, -- [2416]
 			{
-				["time"] = 1699651993,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699651993,
 			}, -- [2417]
 			{
-				["time"] = 1699651997,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699651997,
 			}, -- [2418]
 			{
-				["time"] = 1699652000,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652000,
 			}, -- [2419]
 			{
-				["time"] = 1699652004,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652004,
 			}, -- [2420]
 			{
-				["time"] = 1699652008,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652008,
 			}, -- [2421]
 			{
-				["time"] = 1699652012,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652012,
 			}, -- [2422]
 			{
-				["time"] = 1699652016,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652016,
 			}, -- [2423]
 			{
-				["time"] = 1699652020,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652020,
 			}, -- [2424]
 			{
-				["time"] = 1699652024,
 				["result"] = {
 					["i:11135"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652024,
 			}, -- [2425]
 			{
-				["time"] = 1699652028,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652028,
 			}, -- [2426]
 			{
-				["time"] = 1699652032,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652032,
 			}, -- [2427]
 			{
-				["time"] = 1699652036,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652036,
 			}, -- [2428]
 			{
-				["time"] = 1699652040,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652040,
 			}, -- [2429]
 			{
-				["time"] = 1699652045,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652045,
 			}, -- [2430]
 			{
-				["time"] = 1699652048,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652048,
 			}, -- [2431]
 			{
-				["time"] = 1699652052,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652052,
 			}, -- [2432]
 			{
-				["time"] = 1699652060,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652060,
 			}, -- [2433]
 			{
-				["time"] = 1699652064,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652064,
 			}, -- [2434]
 			{
-				["time"] = 1699652068,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652068,
 			}, -- [2435]
 			{
-				["time"] = 1699652072,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652072,
 			}, -- [2436]
 			{
-				["time"] = 1699652077,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652077,
 			}, -- [2437]
 			{
-				["time"] = 1699652081,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652081,
 			}, -- [2438]
 			{
-				["time"] = 1699652085,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652085,
 			}, -- [2439]
 			{
-				["time"] = 1699652089,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652089,
 			}, -- [2440]
 			{
-				["time"] = 1699652094,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652094,
 			}, -- [2441]
 			{
-				["time"] = 1699652104,
 				["result"] = {
 					["i:11174"] = 2,
 				},
 				["item"] = "i:15592:176",
+				["time"] = 1699652104,
 			}, -- [2442]
 			{
-				["time"] = 1699652108,
 				["result"] = {
 					["i:10940"] = 6,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652108,
 			}, -- [2443]
 			{
-				["time"] = 1699652112,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:15511:851",
+				["time"] = 1699652112,
 			}, -- [2444]
 			{
-				["time"] = 1699652116,
 				["result"] = {
 					["i:22445"] = 3,
 				},
 				["item"] = "i:24597:-15",
+				["time"] = 1699652116,
 			}, -- [2445]
 			{
-				["time"] = 1699652120,
 				["result"] = {
 					["i:16204"] = 2,
 				},
 				["item"] = "i:12409",
+				["time"] = 1699652120,
 			}, -- [2446]
 			{
-				["time"] = 1699652125,
 				["result"] = {
 					["i:16204"] = 1,
 				},
 				["item"] = "i:12409",
+				["time"] = 1699652125,
 			}, -- [2447]
 			{
-				["time"] = 1699652130,
 				["result"] = {
 					["i:16204"] = 1,
 				},
 				["item"] = "i:12409",
+				["time"] = 1699652130,
 			}, -- [2448]
 			{
-				["time"] = 1699652134,
 				["result"] = {
 					["i:14344"] = 1,
 				},
 				["item"] = "i:12409",
+				["time"] = 1699652134,
 			}, -- [2449]
 			{
-				["time"] = 1699652138,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652138,
 			}, -- [2450]
 			{
-				["time"] = 1699652143,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652143,
 			}, -- [2451]
 			{
-				["time"] = 1699652147,
 				["result"] = {
 					["i:10940"] = 4,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652147,
 			}, -- [2452]
 			{
-				["time"] = 1699652151,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652151,
 			}, -- [2453]
 			{
-				["time"] = 1699652155,
 				["result"] = {
 					["i:10940"] = 5,
 				},
 				["item"] = "i:4249",
+				["time"] = 1699652155,
 			}, -- [2454]
 			{
-				["time"] = 1699652160,
 				["result"] = {
 					["i:10998"] = 1,
 				},
 				["item"] = "i:6583:28",
+				["time"] = 1699652160,
 			}, -- [2455]
 			{
-				["time"] = 1699652164,
 				["result"] = {
 					["i:11082"] = 2,
 				},
 				["item"] = "i:15249:682",
+				["time"] = 1699652164,
 			}, -- [2456]
 			{
-				["time"] = 1699652168,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:15223:587",
+				["time"] = 1699652168,
 			}, -- [2457]
 			{
-				["time"] = 1699652172,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:15223:1801",
+				["time"] = 1699652172,
 			}, -- [2458]
 			{
-				["time"] = 1699652176,
 				["result"] = {
 					["i:10998"] = 2,
 				},
 				["item"] = "i:14375",
+				["time"] = 1699652176,
 			}, -- [2459]
 			{
-				["time"] = 1699652180,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:3310",
+				["time"] = 1699652180,
 			}, -- [2460]
 			{
-				["time"] = 1699652184,
 				["result"] = {
 					["i:10940"] = 2,
 				},
 				["item"] = "i:3310",
+				["time"] = 1699652184,
 			}, -- [2461]
 			{
-				["time"] = 1699652188,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:14420",
+				["time"] = 1699652188,
 			}, -- [2462]
 			{
-				["time"] = 1699652224,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:14420",
+				["time"] = 1699652224,
 			}, -- [2463]
 			{
-				["time"] = 1699652229,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:7439:333",
+				["time"] = 1699652229,
 			}, -- [2464]
 			{
-				["time"] = 1699652234,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:9863:774",
+				["time"] = 1699652234,
 			}, -- [2465]
 			{
-				["time"] = 1699652238,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:9886:1023",
+				["time"] = 1699652238,
 			}, -- [2466]
 			{
-				["time"] = 1699652242,
 				["result"] = {
 					["i:11084"] = 1,
 				},
 				["item"] = "i:8186",
+				["time"] = 1699652242,
 			}, -- [2467]
 			{
-				["time"] = 1699652248,
 				["result"] = {
 					["i:22449"] = 1,
 				},
 				["item"] = "i:31195:-33",
+				["time"] = 1699652248,
 			}, -- [2468]
 			{
-				["time"] = 1699652252,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652252,
 			}, -- [2469]
 			{
-				["time"] = 1699652256,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652256,
 			}, -- [2470]
 			{
-				["time"] = 1699652260,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652260,
 			}, -- [2471]
 			{
-				["time"] = 1699652264,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652264,
 			}, -- [2472]
 			{
-				["time"] = 1699652269,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652269,
 			}, -- [2473]
 			{
-				["time"] = 1699652273,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652273,
 			}, -- [2474]
 			{
-				["time"] = 1699652278,
 				["result"] = {
 					["i:11137"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652278,
 			}, -- [2475]
 			{
-				["time"] = 1699652283,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652283,
 			}, -- [2476]
 			{
-				["time"] = 1699652290,
 				["result"] = {
 					["i:11137"] = 2,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652290,
 			}, -- [2477]
 			{
-				["time"] = 1699652295,
 				["result"] = {
 					["i:11135"] = 1,
 				},
 				["item"] = "i:5966",
+				["time"] = 1699652295,
 			}, -- [2478]
 			{
-				["time"] = 1699652300,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:3206:857",
+				["time"] = 1699652300,
 			}, -- [2479]
 			{
-				["time"] = 1699652304,
 				["result"] = {
 					["i:11082"] = 1,
 				},
 				["item"] = "i:3206:855",
+				["time"] = 1699652304,
 			}, -- [2480]
 		},
 		[31252] = {
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700555,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [1]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700559,
 				["result"] = {
 					["i:36933"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [2]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700563,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [3]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700566,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [4]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700569,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [5]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700572,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [6]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700574,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [7]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700577,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [8]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700580,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [9]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700582,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [10]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700587,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36933"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [11]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700590,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36927"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [12]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700593,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [13]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700595,
 				["result"] = {
+					["i:36927"] = 1,
 					["i:36923"] = 1,
 					["i:36926"] = 1,
-					["i:36927"] = 1,
 					["i:36928"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [14]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700598,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [15]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700601,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [16]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700603,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36923"] = 1,
 					["i:36918"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [17]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697700606,
 				["result"] = {
 					["i:36923"] = 2,
 					["i:36930"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [18]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704567,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36929"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [19]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704569,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:36926"] = 1,
 					["i:36918"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [20]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704578,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [21]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704582,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36922"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [22]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704584,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [23]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704587,
 				["result"] = {
 					["i:36928"] = 1,
 					["i:36926"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [24]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704590,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36929"] = 1,
 					["i:36933"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [25]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704593,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [26]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704595,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [27]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704598,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36919"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [28]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704606,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [29]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704608,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36926"] = 1,
 					["i:36919"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [30]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704611,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [31]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704614,
 				["result"] = {
 					["i:36922"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [32]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704617,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [33]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704620,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [34]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704623,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36923"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [35]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704625,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [36]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704628,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36921"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [37]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704635,
 				["result"] = {
 					["i:36934"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [38]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704638,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [39]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704640,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [40]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704643,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [41]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704646,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [42]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704649,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [43]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704651,
 				["result"] = {
 					["i:36926"] = 2,
 					["i:36930"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [44]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704654,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [45]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704657,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [46]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704660,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36927"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [47]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704662,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [48]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704665,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [49]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704668,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [50]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704670,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36923"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [51]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704673,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [52]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704676,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [53]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704678,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [54]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704680,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36930"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [55]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704683,
 				["result"] = {
 					["i:36918"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [56]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704686,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [57]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704689,
 				["result"] = {
 					["i:36919"] = 1,
 					["i:36926"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [58]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704691,
 				["result"] = {
 					["i:36934"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [59]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704694,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 					["i:36933"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [60]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704696,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:36919"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [61]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704699,
 				["result"] = {
 					["i:36929"] = 2,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [62]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704706,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [63]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704709,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [64]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704712,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [65]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704714,
 				["result"] = {
 					["i:36930"] = 1,
@@ -30144,230 +30143,230 @@ TradeSkillMasterDB = {
 					["i:36929"] = 2,
 					["i:36924"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [66]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704717,
 				["result"] = {
 					["i:36923"] = 2,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [67]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704720,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [68]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704725,
 				["result"] = {
 					["i:36925"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [69]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704727,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [70]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704730,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [71]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704733,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [72]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704736,
 				["result"] = {
-					["i:36929"] = 1,
 					["i:36923"] = 1,
 					["i:36925"] = 1,
+					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [73]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704738,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36925"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [74]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704741,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [75]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704744,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36927"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [76]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704746,
 				["result"] = {
 					["i:36918"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [77]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704749,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [78]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704752,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [79]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704764,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [80]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704767,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [81]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704771,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36927"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [82]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704773,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [83]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704776,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [84]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704778,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [85]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704781,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [86]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704786,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [87]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704789,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36917"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [88]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704792,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [89]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704795,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [90]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704798,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36930"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [91]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704800,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [92]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704808,
 				["result"] = {
 					["i:36934"] = 1,
@@ -30375,52 +30374,52 @@ TradeSkillMasterDB = {
 					["i:36929"] = 1,
 					["i:36924"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [93]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704813,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [94]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704817,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [95]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704820,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 2,
 					["i:36918"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [96]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704822,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [97]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704825,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36923"] = 1,
 					["i:36925"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [98]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704828,
 				["result"] = {
 					["i:46849"] = 1,
@@ -30428,582 +30427,582 @@ TradeSkillMasterDB = {
 					["i:36929"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [99]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704830,
 				["result"] = {
 					["i:36927"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [100]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704832,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36920"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [101]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704835,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [102]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704841,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [103]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704843,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [104]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704846,
 				["result"] = {
 					["i:36931"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [105]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704849,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [106]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704852,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [107]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704854,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36927"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [108]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704858,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [109]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704860,
 				["result"] = {
 					["i:36929"] = 2,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [110]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704865,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [111]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704871,
 				["result"] = {
 					["i:36934"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [112]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704876,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [113]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704878,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [114]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704881,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [115]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704884,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [116]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704894,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [117]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704896,
 				["result"] = {
-					["i:36926"] = 1,
 					["i:36923"] = 1,
 					["i:36919"] = 1,
+					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [118]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704899,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36923"] = 1,
 					["i:36927"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [119]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704902,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [120]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704905,
 				["result"] = {
 					["i:36922"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [121]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704907,
 				["result"] = {
 					["i:36924"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [122]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704910,
 				["result"] = {
-					["i:36923"] = 1,
 					["i:36926"] = 1,
 					["i:36927"] = 1,
+					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [123]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704913,
 				["result"] = {
 					["i:36934"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [124]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704915,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [125]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704918,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [126]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704921,
 				["result"] = {
 					["i:36924"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [127]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704924,
 				["result"] = {
 					["i:36924"] = 2,
 					["i:36920"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [128]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704927,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [129]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704930,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [130]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704932,
 				["result"] = {
 					["i:36924"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [131]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704935,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [132]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704938,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36927"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [133]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704941,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [134]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704943,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 					["i:36933"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [135]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704946,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 					["i:36931"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [136]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704949,
 				["result"] = {
-					["i:36923"] = 1,
 					["i:36929"] = 1,
 					["i:36927"] = 1,
+					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [137]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704952,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [138]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704957,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [139]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704960,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [140]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704962,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:36929"] = 1,
 					["i:36928"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [141]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704970,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36929"] = 1,
 					["i:36922"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [142]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704973,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36925"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [143]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704975,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [144]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704978,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [145]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704981,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 					["i:36922"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [146]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704986,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [147]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704988,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [148]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704994,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [149]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697704996,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [150]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705002,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [151]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705004,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [152]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705007,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36926"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [153]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705009,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36925"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [154]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705012,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [155]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705015,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [156]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705017,
 				["result"] = {
 					["i:36918"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [157]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705021,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36923"] = 1,
 					["i:36921"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [158]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705027,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [159]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705029,
 				["result"] = {
 					["i:36931"] = 1,
 					["i:36923"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [160]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705032,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36923"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [161]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705034,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [162]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705040,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [163]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705043,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36926"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [164]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705045,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36926"] = 1,
 					["i:36924"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [165]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705048,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [166]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705056,
 				["result"] = {
 					["i:36927"] = 1,
@@ -31011,86 +31010,86 @@ TradeSkillMasterDB = {
 					["i:36929"] = 1,
 					["i:36918"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [167]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705058,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [168]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705061,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36929"] = 1,
 					["i:36928"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [169]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705066,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36930"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [170]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705069,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [171]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705071,
 				["result"] = {
 					["i:36926"] = 2,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [172]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705074,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36923"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [173]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705077,
 				["result"] = {
 					["i:36927"] = 1,
 					["i:36926"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [174]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705079,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36924"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [175]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705084,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36920"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [176]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705090,
 				["result"] = {
 					["i:46849"] = 1,
@@ -31098,256 +31097,257 @@ TradeSkillMasterDB = {
 					["i:36927"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [177]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705095,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [178]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705098,
 				["result"] = {
 					["i:36925"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [179]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705100,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [180]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705103,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [181]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705113,
 				["result"] = {
-					["i:36929"] = 1,
 					["i:36923"] = 1,
 					["i:36919"] = 1,
+					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [182]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705116,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 1,
 					["i:36929"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [183]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705121,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36923"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [184]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705124,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36919"] = 1,
 					["i:36931"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [185]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705126,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:36928"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [186]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705129,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [187]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705131,
 				["result"] = {
 					["i:36917"] = 1,
 					["i:36931"] = 1,
 					["i:36920"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [188]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705134,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:36929"] = 1,
 					["i:36918"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [189]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705136,
 				["result"] = {
 					["i:36933"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [190]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705142,
 				["result"] = {
 					["i:36920"] = 1,
 					["i:36926"] = 1,
 					["i:36927"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [191]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705144,
 				["result"] = {
 					["i:36922"] = 1,
 					["i:36927"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [192]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705147,
 				["result"] = {
 					["i:36931"] = 1,
 					["i:36926"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [193]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705150,
 				["result"] = {
 					["i:36925"] = 1,
 					["i:36929"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [194]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705155,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36920"] = 1,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [195]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705158,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36925"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [196]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705160,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36920"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [197]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705163,
 				["result"] = {
 					["i:36926"] = 1,
 					["i:46849"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [198]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705165,
 				["result"] = {
 					["i:36923"] = 1,
 					["i:36922"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [199]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705170,
 				["result"] = {
 					["i:46849"] = 2,
 					["i:36917"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [200]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705173,
 				["result"] = {
 					["i:36929"] = 1,
 					["i:36919"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [201]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705175,
 				["result"] = {
 					["i:36919"] = 1,
 					["i:36923"] = 1,
 					["i:36932"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [202]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705178,
 				["result"] = {
 					["i:46849"] = 1,
 					["i:36917"] = 1,
 					["i:36934"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [203]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705181,
 				["result"] = {
 					["i:36921"] = 1,
 					["i:36917"] = 2,
 				},
+				["item"] = "i:36910",
 			}, -- [204]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705183,
 				["result"] = {
-					["i:36926"] = 1,
 					["i:36923"] = 1,
 					["i:36927"] = 1,
+					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [205]
 			{
-				["item"] = "i:36910",
 				["time"] = 1697705186,
 				["result"] = {
-					["i:36926"] = 1,
 					["i:36923"] = 1,
 					["i:36927"] = 1,
+					["i:36926"] = 1,
 				},
+				["item"] = "i:36910",
 			}, -- [206]
 		},
 	},
@@ -31506,36 +31506,36 @@ TradeSkillMasterDB = {
 		["Quartz Ring of Fire Resistancei:11965:140318421"] = 1641933912,
 		["Medicine Staff of the Wolfi:4575:50818168"] = 1641933912,
 		["Copper Orei:277061332"] = 1640776132,
-		["Ritual Sandals of Frozen Wrathi:14129:195513499"] = 1641933912,
+		["Tin Orei:27716618"] = 1640776132,
 		["Linen Clothi:258915690"] = 1640776132,
 		["Grunt's Cape of the Gorillai:15508:92711991"] = 1641576724,
 		["Rough Stonei:28359207"] = 1641500030,
-		["Barbaric Cloth Robei:653114995"] = 1641500030,
 		["Copper Orei:2770102220"] = 1640776132,
+		["Barbaric Cloth Robei:653114995"] = 1641500030,
 		["Native Branch of Healingi:15970:202712998"] = 1641144605,
 		["Wool Clothi:259243444"] = 1641492984,
 		["Shredder Operating Manual - Page 2i:166461378"] = 1641933912,
 		["Bronze Bari:284152340"] = 1641380706,
-		["Bronze Bari:2841209360"] = 1641380080,
 		["Shredder Operating Manual - Page 1i:1664512442"] = 1641933912,
+		["Light Featheri:1705662664"] = 1640776132,
 		["Rough Stonei:283519437"] = 1640205277,
 		["Barbed Club of Staminai:15222:2214500"] = 1641631063,
 		["Light Featheri:1705681440"] = 1641144605,
 		["Coarse Stonei:283641992"] = 1641933912,
-		["Rigid Cape of the Monkeyi:15114:58712105"] = 1641492984,
 		["Coarse Stonei:28361424"] = 1640776132,
+		["Rigid Cape of the Monkeyi:15114:58712105"] = 1641492984,
 		["Barbaric Cloth Bootsi:330713499"] = 1640776132,
 		["Opaque Wandi:520714630"] = 1641576724,
 		["Tigerseyei:8182768"] = 1640776132,
 		["Bloodspattered Loincloth of Strengthi:15493:11511499"] = 1641500030,
 		["Wise Man's Belti:478616999"] = 1640776132,
 		["Silver Orei:277548396"] = 1641933912,
-		["Light Featheri:1705662664"] = 1640776132,
+		["Bronze Bari:2841209360"] = 1641380080,
 		["Tin Orei:27713369"] = 1641933912,
 		["Compact Shotguni:457711431"] = 1641144605,
 		["Sturdy Quarterstaff of Healingi:4566:202913999"] = 1641144605,
 		["Copper Bari:2840102220"] = 1640205277,
-		["Tin Orei:27716618"] = 1640776132,
+		["Ritual Sandals of Frozen Wrathi:14129:195513499"] = 1641933912,
 		["Shredder Operating Manual - Page 12i:1665611984"] = 1641933912,
 		["Coarse Stonei:2836128028"] = 1641492984,
 		["Silk Clothi:43063900"] = 1641933912,
@@ -31615,10 +31615,10 @@ TradeSkillMasterDB = {
 				["ignoreFactionrealm"] = {
 				},
 				["restock"] = false,
-				["maxQtyEnabled"] = true,
+				["keepQty"] = 0,
 				["relationships"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = true,
 				["target"] = "Battlearm",
 				["restockSources"] = {
 					["guild"] = false,
@@ -31635,7 +31635,7 @@ TradeSkillMasterDB = {
 				["maxQty"] = 10,
 				["relationships"] = {
 				},
-				["maxQtyEnabled"] = false,
+				["keepQty"] = 0,
 				["target"] = "",
 				["restockSources"] = {
 					["guild"] = false,
@@ -31643,7 +31643,7 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = false,
 			},
 			["Vermin"] = {
 				["ignoreFactionrealm"] = {
@@ -31652,7 +31652,7 @@ TradeSkillMasterDB = {
 				["maxQty"] = 5000,
 				["relationships"] = {
 				},
-				["maxQtyEnabled"] = false,
+				["keepQty"] = 0,
 				["target"] = "Vermin",
 				["restockSources"] = {
 					["guild"] = false,
@@ -31660,7 +31660,7 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = false,
 			},
 		},
 		["Auctioning"] = {
@@ -31718,60 +31718,6 @@ TradeSkillMasterDB = {
 				},
 				["stackSizeIsCap"] = false,
 			},
-			["100x2 (48h)"] = {
-				["cancelRepost"] = true,
-				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
-				["cancelUndercut"] = true,
-				["matchStackSize"] = false,
-				["keepQuantity"] = "0",
-				["postCap"] = "100",
-				["bidPercent"] = 1,
-				["relationships"] = {
-				},
-				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
-				["ignoreLowDuration"] = 0,
-				["stackSize"] = "2",
-				["ignoreFactionrealm"] = {
-				},
-				["undercut"] = "1c",
-				["maxExpires"] = "0",
-				["blacklist"] = "",
-				["priceReset"] = "minPrice",
-				["duration"] = 3,
-				["cancelRepostThreshold"] = "1g",
-				["aboveMax"] = "maxPrice",
-				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
-				["ignorePlayer"] = {
-				},
-				["stackSizeIsCap"] = false,
-			},
-			["200x5 (48h)"] = {
-				["cancelRepost"] = true,
-				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
-				["cancelUndercut"] = true,
-				["matchStackSize"] = false,
-				["keepQuantity"] = "0",
-				["postCap"] = "200",
-				["bidPercent"] = 1,
-				["relationships"] = {
-				},
-				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
-				["ignoreLowDuration"] = 0,
-				["stackSize"] = "5",
-				["ignoreFactionrealm"] = {
-				},
-				["undercut"] = "1c",
-				["maxExpires"] = "0",
-				["stackSizeIsCap"] = false,
-				["priceReset"] = "minPrice",
-				["ignorePlayer"] = {
-				},
-				["cancelRepostThreshold"] = "1g",
-				["aboveMax"] = "maxPrice",
-				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
-				["duration"] = 3,
-				["blacklist"] = "",
-			},
 			["#Default"] = {
 				["aboveMax"] = "normalPrice",
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
@@ -31799,19 +31745,19 @@ TradeSkillMasterDB = {
 				["undercut"] = "1c",
 				["duration"] = 2,
 			},
-			["50x10 (48h)"] = {
+			["200x5 (48h)"] = {
 				["cancelRepost"] = true,
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
 				["cancelUndercut"] = true,
 				["matchStackSize"] = false,
 				["keepQuantity"] = "0",
-				["postCap"] = "50",
+				["postCap"] = "200",
 				["bidPercent"] = 1,
 				["relationships"] = {
 				},
 				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
 				["ignoreLowDuration"] = 0,
-				["stackSize"] = "10",
+				["stackSize"] = "5",
 				["ignoreFactionrealm"] = {
 				},
 				["undercut"] = "1c",
@@ -31853,6 +31799,60 @@ TradeSkillMasterDB = {
 				["keepQuantity"] = "0",
 				["stackSizeIsCap"] = false,
 			},
+			["50x10 (48h)"] = {
+				["cancelRepost"] = true,
+				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
+				["cancelUndercut"] = true,
+				["matchStackSize"] = false,
+				["keepQuantity"] = "0",
+				["postCap"] = "50",
+				["bidPercent"] = 1,
+				["relationships"] = {
+				},
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
+				["ignoreLowDuration"] = 0,
+				["stackSize"] = "10",
+				["ignoreFactionrealm"] = {
+				},
+				["undercut"] = "1c",
+				["maxExpires"] = "0",
+				["stackSizeIsCap"] = false,
+				["priceReset"] = "minPrice",
+				["ignorePlayer"] = {
+				},
+				["cancelRepostThreshold"] = "1g",
+				["aboveMax"] = "maxPrice",
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["duration"] = 3,
+				["blacklist"] = "",
+			},
+			["100x2 (48h)"] = {
+				["cancelRepost"] = true,
+				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
+				["cancelUndercut"] = true,
+				["matchStackSize"] = false,
+				["keepQuantity"] = "0",
+				["postCap"] = "100",
+				["bidPercent"] = 1,
+				["relationships"] = {
+				},
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(3.5*avg(crafting,dbmarket,dbregionmarketavg),24*vendorsell))",
+				["ignoreLowDuration"] = 0,
+				["stackSize"] = "2",
+				["ignoreFactionrealm"] = {
+				},
+				["undercut"] = "1c",
+				["maxExpires"] = "0",
+				["blacklist"] = "",
+				["priceReset"] = "minPrice",
+				["duration"] = 3,
+				["cancelRepostThreshold"] = "1g",
+				["aboveMax"] = "maxPrice",
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["ignorePlayer"] = {
+				},
+				["stackSizeIsCap"] = false,
+			},
 			["100x20 (48h)"] = {
 				["aboveMax"] = "maxPrice",
 				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
@@ -31888,11 +31888,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "1",
-				["minProfit"] = "100g",
 				["craftPriceMethod"] = "",
-				["maxRestock"] = "3",
 				["ignorePlayer"] = {
 				},
+				["maxRestock"] = "3",
+				["minProfit"] = "100g",
 			},
 			["Potions and elixirs"] = {
 				["ignoreFactionrealm"] = {
@@ -31900,11 +31900,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "5",
-				["minProfit"] = "1s",
 				["craftPriceMethod"] = "",
-				["maxRestock"] = "70",
 				["ignorePlayer"] = {
 				},
+				["maxRestock"] = "70",
+				["minProfit"] = "1s",
 			},
 			["Low demand potions"] = {
 				["ignoreFactionrealm"] = {
@@ -31912,11 +31912,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = "5",
-				["minProfit"] = "1s",
 				["craftPriceMethod"] = "",
-				["maxRestock"] = "30",
 				["ignorePlayer"] = {
 				},
+				["maxRestock"] = "30",
+				["minProfit"] = "1s",
 			},
 		},
 		["Warehousing"] = {
@@ -31928,12 +31928,12 @@ TradeSkillMasterDB = {
 				["keepBankQuantity"] = 0,
 				["relationships"] = {
 				},
-				["restockKeepBankQuantity"] = 0,
-				["restockQuantity"] = 0,
 				["restockStackSize"] = 0,
-				["keepBagQuantity"] = 0,
+				["restockQuantity"] = 0,
 				["ignorePlayer"] = {
 				},
+				["keepBagQuantity"] = 0,
+				["restockKeepBankQuantity"] = 0,
 			},
 		},
 		["Vendoring"] = {
@@ -31962,35 +31962,6 @@ TradeSkillMasterDB = {
 				},
 				["sellSoulbound"] = false,
 				["enableSell"] = true,
-			},
-		},
-		["Sniper"] = {
-			["#Default"] = {
-				["belowPrice"] = "vendorsell-1c",
-				["ignorePlayer"] = {
-				},
-				["relationships"] = {
-				},
-				["ignoreFactionrealm"] = {
-				},
-			},
-			["New Operation 1"] = {
-				["ignoreFactionrealm"] = {
-				},
-				["belowPrice"] = "max(ifgte(ItemQuality, 1, minprice * ifgte(minprice, 250g, 80, ifgte(minprice, 100g, (minprice - 100g) * (80 - 70) / (250g - 100g) + 70, ifgte(minprice, 50g, (minprice - 50g) * (70 - 60) / (100g - 50g) + 60, ifgte(minprice, 10g, (minprice - 10g) * (60 - 40) / (50g - 10g) + 50, ifgte(minprice, 5g, (minprice - 5g) * (40 - 30) / (10g - 5g) + 30, ifgte(minprice, 1g, (minprice - 1g) * (30 - 10) / (5g - 1g) + 10, 0)))))) / 100), VendorSell - 1c)",
-				["relationships"] = {
-				},
-				["ignorePlayer"] = {
-				},
-			},
-			["default"] = {
-				["belowPrice"] = "max(vendorsell - 50c, destroy - 1s)",
-				["ignorePlayer"] = {
-				},
-				["relationships"] = {
-				},
-				["ignoreFactionrealm"] = {
-				},
 			},
 		},
 		["Shopping"] = {
@@ -32027,6 +31998,35 @@ TradeSkillMasterDB = {
 				["ignorePlayer"] = {
 				},
 				["showAboveMaxPrice"] = true,
+			},
+		},
+		["Sniper"] = {
+			["#Default"] = {
+				["ignorePlayer"] = {
+				},
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
+				["belowPrice"] = "vendorsell-1c",
+			},
+			["New Operation 1"] = {
+				["belowPrice"] = "max(ifgte(ItemQuality, 1, minprice * ifgte(minprice, 250g, 80, ifgte(minprice, 100g, (minprice - 100g) * (80 - 70) / (250g - 100g) + 70, ifgte(minprice, 50g, (minprice - 50g) * (70 - 60) / (100g - 50g) + 60, ifgte(minprice, 10g, (minprice - 10g) * (60 - 40) / (50g - 10g) + 50, ifgte(minprice, 5g, (minprice - 5g) * (40 - 30) / (10g - 5g) + 30, ifgte(minprice, 1g, (minprice - 1g) * (30 - 10) / (5g - 1g) + 10, 0)))))) / 100), VendorSell - 1c)",
+				["ignorePlayer"] = {
+				},
+				["relationships"] = {
+				},
+				["ignoreFactionrealm"] = {
+				},
+			},
+			["default"] = {
+				["ignorePlayer"] = {
+				},
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
+				["belowPrice"] = "max(vendorsell - 50c, destroy - 1s)",
 			},
 		},
 	},
@@ -32189,9 +32189,9 @@ TradeSkillMasterDB = {
 		},
 		["Koloman"] = {
 		},
-		["Battitude"] = {
-		},
 		["Dmitar"] = {
+		},
+		["Battitude"] = {
 		},
 		["Miqa"] = {
 		},
@@ -32407,8 +32407,8 @@ TradeSkillMasterDB = {
 		["Robust Bracers of Nature's Wrathi:15122:1993112100"] = 1641139196,
 		["Wool Clothi:25922011460"] = 1641290800,
 		["Shredder Operating Manual - Page 3i:166471658"] = 1641473949,
-		["Shredder Operating Manual - Page 10i:166541841"] = 1641076400,
 		["Priest's Mace of Staminai:2075:1511448"] = 1640690763,
+		["Shredder Operating Manual - Page 10i:166541841"] = 1641076400,
 		["Tangy Clam Meati:55041398"] = 1641051774,
 		["Aboriginal Sash of the Whalei:14113:101011684"] = 1640634658,
 		["Grave Mossi:3369713993"] = 1641123340,
@@ -32420,7 +32420,7 @@ TradeSkillMasterDB = {
 		["Native Branch of Healingi:15970:20271798"] = 1641290800,
 		["Briarthorni:245041808"] = 1640949089,
 		["Silk Clothi:430662472"] = 1641473949,
-		["Robust Bracers of Nature's Wrathi:15122:1993119846"] = 1641473949,
+		["Light Leatheri:231818990"] = 1640715143,
 		["Hulking Gauntletsi:1474711889"] = 1641591874,
 		["Light Hidei:7831167"] = 1640863260,
 		["Clam Meati:55031989"] = 1641076400,
@@ -32440,8 +32440,8 @@ TradeSkillMasterDB = {
 		["Wild Steelbloomi:335526198"] = 1640715143,
 		["Linen Clothi:258920340"] = 1640556829,
 		["Medium Leatheri:23194468"] = 1640886933,
-		["Priest's Mace of Staminai:2075:151151490"] = 1640556829,
 		["Robust Girdle of the Wolfi:15120:509117684"] = 1641473949,
+		["Priest's Mace of Staminai:2075:151151490"] = 1640556829,
 		["Mageroyali:7853108"] = 1640715143,
 		["Beaded Orb of Healingi:15969:202711199"] = 1640870835,
 		["Coarse Blasting Powderi:43641480"] = 1640715143,
@@ -32471,7 +32471,7 @@ TradeSkillMasterDB = {
 		["Light Featheri:170563312"] = 1640634658,
 		["Scroll of Agilityi:301213357"] = 1641473949,
 		["Heavy Hidei:423511528"] = 1641591874,
-		["Light Leatheri:231818990"] = 1640715143,
+		["Robust Bracers of Nature's Wrathi:15122:1993119846"] = 1641473949,
 		["Perfect Deviate Scalei:6471524025"] = 1641076400,
 		["Outrunner's Cord of Strengthi:15497:9711684"] = 1640899770,
 		["Bruiseweedi:245355995"] = 1641076400,
@@ -33191,10 +33191,10 @@ TradeSkillMasterDB = {
 			["Materials`Reagents"] = true,
 			["Materials`Herbs"] = true,
 			["Materials`Vellums"] = true,
-			["Materials`Eternals"] = true,
+			["Materials`Engineering"] = true,
 			["Materials`Enchanting"] = true,
 			["Materials`Glyphs"] = true,
-			["Materials`Engineering"] = true,
+			["Materials`Motes and Primals"] = true,
 			["Materials`Pigments and Ink"] = true,
 			["Materials`Ores and Bars"] = true,
 			["Materials`Potions"] = true,
@@ -33202,7 +33202,7 @@ TradeSkillMasterDB = {
 			["Materials`Jewelcrafting"] = true,
 			["Materials`Food"] = true,
 			["Materials`Cloth"] = true,
-			["Materials`Motes and Primals"] = true,
+			["Materials`Eternals"] = true,
 			["Materials`Gems"] = true,
 		},
 		["collapsed"] = {
@@ -33295,10 +33295,10 @@ TradeSkillMasterDB = {
 		["i:12846"] = 1,
 		["i:27684"] = 1,
 		["i:30721"] = 1,
-		["i:40266"] = 1,
+		["i:23609"] = 1,
 		["i:40525"] = 1,
 		["i:40343"] = 1,
-		["i:23609"] = 1,
+		["i:40266"] = 1,
 		["i:31675"] = 1,
 	},
 	["s@Poklopac - Horde - Dreadnaught@internalData@auctionQuantity"] = {
@@ -33431,14 +33431,14 @@ TradeSkillMasterDB = {
 	["s@Nitwit - Horde - Dreadnaught@internalData@goldLogLastUpdate"] = 1640108360,
 	["c@Augustin - Golemagg@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
-			["Class Books"] = true,
 			["BOE Items`Armor`Blue"] = true,
-			["BOE Items`Armor"] = true,
+			["Class Books"] = true,
+			["BOE Items`Weapons`Blue"] = true,
 			["BOE Items`Armor`Green"] = true,
 			["BOE Items`Weapons`Green"] = true,
 			["BOE Items"] = true,
 			["BOE Items`Weapons"] = true,
-			["BOE Items`Weapons`Blue"] = true,
+			["BOE Items`Armor"] = true,
 		},
 		["unselected"] = {
 			[""] = true,
@@ -33458,8 +33458,8 @@ TradeSkillMasterDB = {
 			["Materials"] = true,
 			["Materials`Ores and Bars"] = true,
 			["Class Books`Rogue"] = true,
-			["Class Books`Paladin"] = true,
 			["Alchemy`Potions"] = true,
+			["Class Books`Paladin"] = true,
 			["Class Books`Mage"] = true,
 		},
 	},
@@ -33472,15 +33472,15 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 88,
-			["buyout"] = 115,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
 			["item"] = 226,
-			["stack"] = 40,
-			["bid"] = 115,
+			["bidPct"] = 40,
 			["posts"] = 40,
-			["timeLeft"] = 26,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
 			["itemBid"] = 115,
+			["timeLeft"] = 26,
+			["stack"] = 40,
 		},
 		["colHidden"] = {
 			["bid"] = true,
@@ -33492,7 +33492,7 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 		},
 	},
-	["s@Vermina - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1700924267,
+	["s@Vermina - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1700939201,
 	["c@Pitchwise - Ashbringer@bankingUIContext@mailingGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -34115,11 +34115,11 @@ TradeSkillMasterDB = {
 		},
 		["i:35622"] = {
 		},
-		["i:12803"] = {
-		},
 		["i:4368"] = {
 		},
-		["i:36924"] = {
+		["i:12803"] = {
+		},
+		["i:39502"] = {
 		},
 		["i:44958"] = {
 		},
@@ -34151,13 +34151,13 @@ TradeSkillMasterDB = {
 		},
 		["i:11138"] = {
 		},
-		["i:3575"] = {
+		["i:13926"] = {
 		},
-		["i:4400"] = {
+		["i:3575"] = {
 		},
 		["i:10940"] = {
 		},
-		["i:13926"] = {
+		["i:4400"] = {
 		},
 		["i:7078"] = {
 		},
@@ -34169,7 +34169,7 @@ TradeSkillMasterDB = {
 		},
 		["i:2772"] = {
 		},
-		["i:39502"] = {
+		["i:36924"] = {
 		},
 		["i:12810"] = {
 		},
@@ -34316,17 +34316,17 @@ TradeSkillMasterDB = {
 			[13] = true,
 			[96] = true,
 			[70] = true,
-			[98] = true,
+			[51] = true,
 			[82] = true,
 			[45] = true,
 			[84] = true,
-			[106] = true,
-			[51] = true,
-			[53] = true,
 			[91] = true,
-			[11] = true,
-			[114] = true,
 			[10] = true,
+			[53] = true,
+			[11] = true,
+			[106] = true,
+			[114] = true,
+			[98] = true,
 		},
 	},
 	["s@Tandaram - Horde - Jin'do@internalData@playerProfessions"] = {
@@ -36159,9 +36159,9 @@ TradeSkillMasterDB = {
 		["Bold Scarlet Rubyi:399961628785"] = 1698077097,
 		["Snowfall Inki:43127202189620"] = 1699877137,
 		["Pattern: Unyielding Bracersi:242961359998"] = 1698239262,
-		["Icy Pigmenti:43109154996"] = 1698239262,
-		["Snowfall Inki:43127201711940"] = 1700063346,
 		["Delicate Scarlet Rubyi:399971869300"] = 1698077097,
+		["Snowfall Inki:43127201711940"] = 1700063346,
+		["Icy Pigmenti:43109154996"] = 1698239262,
 		["Glyph of Levitatei:43370169367"] = 1698312055,
 		["Cloak of Bloodied Watersi:376471289994"] = 1699615578,
 		["Precise Scarlet Rubyi:400031513759"] = 1698152356,
@@ -36521,6 +36521,12 @@ TradeSkillMasterDB = {
 		},
 	},
 	["s@Poklopac - Horde - Dreadnaught@internalData@goldLog"] = "minute,copper\n27328081,0\n27341879,30000\n27341963,20000\n27342539,30000\n27342594,40000\n27343780,50000\n27343782,40000\n27343852,50000\n27343909,60000\n27343910,50000\n27344583,100000\n27344770,110000\n27344853,90000\n27345047,100000\n27345157,120000\n27345162,110000\n27345163,30000\n27345236,70000\n27346182,150000\n27347684,240000\n27347695,250000\n27347722,200000\n27347723,190000\n27347726,180000\n27347844,190000\n27347848,200000\n27347909,190000\n27347960,200000\n27348113,210000\n27348114,200000\n27348120,210000\n27348327,270000\n27348328,260000\n27348340,270000\n27348350,250000\n27348351,230000\n27348861,290000\n27348862,280000\n27348898,290000\n27348920,300000\n27350747,420000\n27350849,430000\n27350859,440000\n27350860,470000\n27350981,480000\n27351099,490000\n27351237,480000\n27351270,490000\n27351272,480000\n27351273,490000\n27351682,550000\n27351694,560000\n27351988,570000\n27352054,580000\n27352055,570000\n27352318,620000\n27353707,610000\n27353708,510000\n27356351,530000\n27357743,550000\n27357845,560000\n27357887,570000\n27357896,560000\n27357897,580000\n27357899,560000\n27359752,640000\n27359753,630000\n27359793,640000\n27359863,650000\n27362055,730000\n27362275,670000\n27362276,570000",
+	["c@Konac - Dreadnaught@mainUIContext@importGroupTree"] = {
+		["collapsed"] = {
+		},
+		["selected"] = {
+		},
+	},
 	["s@Tadibey - Horde - Golemagg@internalData@bagQuantity"] = {
 		["i:48716"] = 1,
 		["i:5176"] = 1,
@@ -36534,12 +36540,6 @@ TradeSkillMasterDB = {
 		["i:929"] = 3,
 		["i:1205"] = 35,
 	},
-	["c@Konac - Dreadnaught@mainUIContext@importGroupTree"] = {
-		["collapsed"] = {
-		},
-		["selected"] = {
-		},
-	},
 	["s@Handrmandr - Horde - Golemagg@internalData@auctionQuantity"] = {
 	},
 	["r@Golemagg@internalData@csvExpired"] = "itemString,stackSize,quantity,player,time\ni:31299,1,1,Vermin,1697737935\ni:43370,1,1,Battlearm,1697744992\ni:43109,1,1,Battlearm,1697745014\ni:38558,20,280,Battlearm,1697745022\ni:24212,1,1,Battlearm,1697745048\ni:31902,1,1,Battlearm,1697745098\ni:31887,1,1,Battlearm,1697745103\ni:30810,53,53,Battlearm,1697745109\ni:36933,1,2,Battlearm,1697787464\ni:36927,1,2,Battlearm,1697787485\ni:39997,1,3,Battlearm,1697787705\ni:40003,1,3,Battlearm,1697787712\ni:36933,1,6,Battlearm,1697791826\ni:36924,1,12,Battlearm,1697791839\ni:36927,1,17,Battlearm,1697791851\ni:39997,1,9,Battlearm,1697791878\ni:40112,1,6,Battlearm,1697791891\ni:36934,1,14,Battlearm,1697791911\ni:11176,2,2,Battlearm,1697792555\ni:10938,1,1,Battlearm,1697792664\ni:10939,5,5,Battlearm,1697792679\ni:10939,1,1,Battlearm,1697792690\ni:29739,2,2,Battlearm,1697813302\ni:24296,1,1,Battlearm,1697813308\ni:22445,10,30,Battlearm,1697813348\ni:35953,20,20,Battlearm,1697814373\ni:22445,10,10,Vermin,1697824536\ni:31901,1,1,Vermin,1697824567\ni:29739,5,5,Vermin,1697824572\ni:30810,29,29,Vermin,1697824577\ni:11135,2,2,Vermin,1697978036\ni:43370,1,1,Battlearm,1697978250\ni:43109,1,1,Battlearm,1697978260\ni:24212,1,1,Battlearm,1697978281\ni:24206,1,1,Battlearm,1698087892\ni:40112,1,4,Battlearm,1698087896\ni:39997,1,11,Battlearm,1698087902\ni:40003,1,1,Battlearm,1698087910\ni:31887,1,1,Battlearm,1698087915\ni:31902,1,1,Battlearm,1698087915\ni:31898,1,1,Battlearm,1698087920\ni:39996,1,8,Battlearm,1698129566\ni:39997,1,14,Battlearm,1698129573\ni:10939,2,2,Vermin,1698151585\ni:11175,3,3,Vermin,1698151596\ni:31901,1,1,Vermin,1698151621\ni:43370,1,1,Battlearm,1698152201\ni:24212,1,1,Battlearm,1698152216\ni:43109,1,1,Battlearm,1698152216\ni:24296,1,1,Battlearm,1698167742\ni:29739,2,2,Battlearm,1698167748\ni:24212,1,1,Battlearm,1698325119\ni:43370,1,1,Battlearm,1698325119\ni:39996,1,5,Battlearm,1698325123\ni:24206,1,1,Battlearm,1698325130\ni:11135,4,4,Vermin,1698338808\ni:10998,1,1,Vermin,1698338865\ni:24206,1,1,Battlearm,1698750833\ni:24212,1,1,Battlearm,1698750833\ni:43370,1,1,Battlearm,1698750837\ni:11135,10,10,Vermin,1698914349\ni:10939,7,7,Vermin,1698946265\ni:16203,1,4,Vermin,1699023462\ni:11135,2,2,Vermin,1699023468\ni:10938,2,2,Vermin,1699023474\ni:10978,3,3,Vermin,1699384502\ni:11174,2,2,Vermin,1699435185\ni:10938,2,2,Vermin,1699545059\ni:11138,2,2,Vermin,1699545065\ni:10978,1,1,Vermin,1699545075\ni:11135,1,1,Vermin,1699781679\ni:10939,9,9,Vermin,1699781680\ni:11135,2,2,Vermin,1699781706\ni:10939,5,5,Vermin,1699781706\ni:10978,4,4,Vermin,1699781721\ni:11134,1,1,Vermin,1699781721\ni:39690,5,40,Vermin,1699782288\ni:39682,1,14,Vermin,1699811855\ni:38873,1,4,Vermin,1699824538\ni:10939,1,1,Vermin,1699825158\ni:11135,8,8,Vermin,1699825162\ni:43127,20,140,Battlearm,1699887203\ni:10978,4,4,Vermin,1699954827\ni:39690,20,40,Vermin,1699963492\ni:38873,1,4,Vermin,1699963504\ni:43127,20,140,Battlearm,1700062793\ni:10939,7,7,Vermin,1700129986\ni:10940,5,5,Vermin,1700130007\ni:10940,20,20,Vermin,1700130007\ni:38873,1,3,Vermin,1700147339\ni:43127,20,140,Battlearm,1700236130\ni:10938,2,2,Vermin,1700298138\ni:11082,1,3,Vermin,1700298153\ni:10998,1,1,Vermin,1700298154\ni:10939,7,7,Vermin,1700379096\ni:10998,1,1,Vermin,1700379326\ni:11175,2,2,Vermin,1700379326\ni:35639,1,1,Vermina,1700401826\ni:33448,5,30,Vermina,1700428125\ni:33448,3,3,Vermina,1700428126\ni:38557,7,7,Vermina,1700428167\ni:38557,10,10,Vermina,1700478633\ni:44331,2,2,Vermina,1700478643\ni:40068,4,4,Vermina,1700497717\ni:40072,8,8,Vermina,1700497723\ni:40078,4,4,Vermina,1700497734\ni:44325,3,3,Vermina,1700497749\ni:44327,11,11,Vermina,1700497754\ni:44328,4,4,Vermina,1700497764\ni:44329,3,3,Vermina,1700497769\ni:44331,1,1,Vermina,1700497774\ni:22445,4,4,Vermin,1700504824\ni:43127,10,140,Vermin,1700504850\ni:10998,1,1,Vermin,1700560775\ni:43127,20,20,Vermin,1700646356\ni:44329,3,3,Vermina,1700767289\ni:44331,3,3,Vermina,1700767290\ni:10998,1,1,Vermin,1700813375\ni:34055,1,2,Vermin,1700826405",
@@ -36547,10 +36547,10 @@ TradeSkillMasterDB = {
 		["i:7099"] = 1,
 		["i:7098"] = 9,
 		["i:6948"] = 1,
-		["i:117"] = 7,
-		["i:1370"] = 1,
 		["i:4865"] = 5,
+		["i:1370"] = 1,
 		["i:1368"] = 1,
+		["i:117"] = 7,
 		["i:2652"] = 1,
 	},
 	["_currentProfile"] = {
@@ -36577,8 +36577,8 @@ TradeSkillMasterDB = {
 		["Tudum - Jin'do"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Grgur - Golemagg"] = "Default",
@@ -36587,20 +36587,20 @@ TradeSkillMasterDB = {
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 	},
 	["c@Augustin - Golemagg@mailingUIContext@groupTree"] = {
 		["collapsed"] = {
 			["Cards"] = true,
-			["Class Books"] = true,
 			["BOE Items`Armor"] = true,
+			["BOE Items`Armor`Blue"] = true,
 			["BOE Items`Armor`Green"] = true,
 			["BOE Items`Weapons`Blue"] = true,
 			["BOE Items`Weapons`Green"] = true,
 			["BOE Items`Weapons"] = true,
-			["BOE Items`Armor`Blue"] = true,
+			["Class Books"] = true,
 		},
 		["unselected"] = {
 			["Alchemy"] = true,
@@ -36666,15 +36666,15 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 88,
-			["buyout"] = 115,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
 			["item"] = 407,
-			["stack"] = 40,
-			["bid"] = 115,
+			["bidPct"] = 40,
 			["posts"] = 40,
-			["timeLeft"] = 26,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
 			["itemBid"] = 115,
+			["timeLeft"] = 26,
+			["stack"] = 40,
 		},
 		["colHidden"] = {
 			["bid"] = true,
@@ -36753,7 +36753,7 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 		},
 	},
-	["c@Poklopac - Dreadnaught@bankingUIContext@mailingGroupTree"] = {
+	["c@Antun - Golemagg@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -36811,7 +36811,8 @@ TradeSkillMasterDB = {
 		},
 	},
 	["s@Moolatz - Horde - Golemagg@internalData@goldLogLastUpdate"] = 1699888156,
-	["s@Battlearm - Horde - Gehennas@internalData@money"] = 0,
+	["s@Mxyzptlk - Horde - Golemagg@internalData@mailQuantity"] = {
+	},
 	["c@Augustin - Golemagg@internalData@auctionPrices"] = {
 	},
 	["s@Koloman - Horde - Golemagg@internalData@mailQuantity"] = {
@@ -36830,11 +36831,7 @@ TradeSkillMasterDB = {
 	},
 	["s@Konac - Horde - Dreadnaught@internalData@auctionQuantity"] = {
 	},
-	["c@Vermin - Golemagg@bankingUIContext@mailingGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["c@Moolatz - Dreadnaught@internalData@auctionPrices"] = {
 	},
 	["s@Konac - Horde - Dreadnaught@internalData@goldLogLastUpdate"] = 1641934159,
 	["s@Battledog - Horde - Gehennas@internalData@reagentBankQuantity"] = {
@@ -36865,14 +36862,6 @@ TradeSkillMasterDB = {
 	["r@Jin'do@internalData@csvExpense"] = "type,amount,otherPlayer,player,time",
 	["c@Wells - Jin'do@internalData@auctionSaleHints"] = {
 	},
-	["r@Golemagg@internalData@saveTimeBuys"] = "1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698077257,1698077257,1698077257,1698077257,1698077257,1698077257,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698047181,1698047181,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1697979409,1697979409,1697979409,1697979409,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697700699,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697699786,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697615587,1697531356,1697531356,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698667491,1698667491,1698667491,1698667491,1698667491,1698667491,1698667491,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699393569,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699453204,1699453204,1699453204,1699517980,1699517980,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699616642,1699616642,1699616642,1699616642,1699616642,1699639312,1699639312,1699639312,1699639312,1699639312,1699639312,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699889841,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700681187",
-	["s@Augustin - Horde - Golemagg@internalData@mailQuantity"] = {
-	},
-	["c@Battitude - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
-		["collapsed"] = {
-		},
-	},
-	["s@Antun - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n26698474,0",
 	["c@Poklopac - Dreadnaught@auctionUIContext@auctioningGroupTree"] = {
 		["collapsed"] = {
 			["Class Books"] = true,
@@ -36880,6 +36869,14 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
+	["s@Augustin - Horde - Golemagg@internalData@mailQuantity"] = {
+	},
+	["c@Battitude - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
+		["collapsed"] = {
+		},
+	},
+	["s@Antun - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n26698474,0",
+	["r@Golemagg@internalData@saveTimeBuys"] = "1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698427815,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698391028,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698239084,1698077257,1698077257,1698077257,1698077257,1698077257,1698077257,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698077076,1698047181,1698047181,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1698046733,1697979409,1697979409,1697979409,1697979409,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697840140,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697839812,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697805364,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697724279,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697705553,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697701927,1697700699,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697700502,1697699786,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697640793,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697618031,1697615587,1697531356,1697531356,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698593742,1698667491,1698667491,1698667491,1698667491,1698667491,1698667491,1698667491,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1698776556,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699262791,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351065,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699351893,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699372323,1699393569,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699449464,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699450834,1699453204,1699453204,1699453204,1699517980,1699517980,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699610382,1699616642,1699616642,1699616642,1699616642,1699616642,1699639312,1699639312,1699639312,1699639312,1699639312,1699639312,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699651521,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699652447,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699800975,1699889841,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700126606,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700208021,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700343532,1700681187",
 	["c@Provokator - Jin'do@internalData@auctionPrices"] = {
 	},
 	["c@Tudum - Ashbringer@mailingUIContext@groupTree"] = {
@@ -36932,8 +36929,8 @@ TradeSkillMasterDB = {
 		["|cffffffff|Hitem:118::::::::26:::::::::|h[Minor Healing Potion]|h|r"] = {
 			15, -- [1]
 		},
-		["|cffffffff|Hitem:16656::::::::26:::::::::|h[Shredder Operating Manual - Page 12]|h|r"] = {
-			1984, -- [1]
+		["|cffffffff|Hitem:16654::::::::26:::::::::|h[Shredder Operating Manual - Page 10]|h|r"] = {
+			1933, -- [1]
 		},
 		["|cff1eff00|Hitem:15498::::::96:1982766848:26:::::::::|h[Outrunner's Slippers of Stamina]|h|r"] = {
 			3459, -- [1]
@@ -36947,14 +36944,14 @@ TradeSkillMasterDB = {
 		["|cff1eff00|Hitem:11965::::::1403:1779946624:26:::::::::|h[Quartz Ring of Fire Resistance]|h|r"] = {
 			8421, -- [1]
 		},
-		["|cffffffff|Hitem:16645::::::::26:::::::::|h[Shredder Operating Manual - Page 1]|h|r"] = {
-			2442, -- [1]
+		["|cffffffff|Hitem:16646::::::::26:::::::::|h[Shredder Operating Manual - Page 2]|h|r"] = {
+			378, -- [1]
 		},
 		["|cff1eff00|Hitem:4575::::::508:1179617408:26:::::::::|h[Medicine Staff of the Wolf]|h|r"] = {
 			8168, -- [1]
 		},
-		["|cffffffff|Hitem:16654::::::::26:::::::::|h[Shredder Operating Manual - Page 10]|h|r"] = {
-			1933, -- [1]
+		["|cffffffff|Hitem:16656::::::::26:::::::::|h[Shredder Operating Manual - Page 12]|h|r"] = {
+			1984, -- [1]
 		},
 		["|cffffffff|Hitem:4306::::::::26:::::::::|h[Silk Cloth]|h|r"] = {
 			900, -- [1]
@@ -36962,8 +36959,8 @@ TradeSkillMasterDB = {
 		["|cffffffff|Hitem:16655::::::::26:::::::::|h[Shredder Operating Manual - Page 11]|h|r"] = {
 			1494, -- [1]
 		},
-		["|cffffffff|Hitem:16646::::::::26:::::::::|h[Shredder Operating Manual - Page 2]|h|r"] = {
-			378, -- [1]
+		["|cffffffff|Hitem:16645::::::::26:::::::::|h[Shredder Operating Manual - Page 1]|h|r"] = {
+			2442, -- [1]
 		},
 	},
 	["r@Gehennas@internalData@saveTimeExpires"] = "",
@@ -37330,20 +37327,20 @@ TradeSkillMasterDB = {
 		["Greater Magic Essencei:10939459908"] = 1698239099,
 		["Greater Mystic Essencei:11135410472"] = 1699264894,
 		["Large Glowing Shardi:111391598"] = 1698165912,
-		["Small Glimmering Shardi:109781213956"] = 1698593019,
+		["Small Radiant Shardi:11177165089"] = 1698667487,
 		["Small Glimmering Shardi:1097856425"] = 1698077065,
 		["Small Radiant Shardi:11177162030"] = 1698499120,
 		["Greater Astral Essencei:11082686982"] = 1698593019,
-		["Small Radiant Shardi:11177165089"] = 1698667487,
 		["Illusion Dusti:162045266470"] = 1698667487,
 		["Dream Dusti:1117613110474"] = 1698166190,
 		["Strange Dusti:1094020119860"] = 1698667487,
 		["Arcane Dusti:224457209944"] = 1698773467,
-		["Snowfall Inki:4312710824210"] = 1700389198,
+		["Lesser Nether Essencei:11174120645"] = 1699607939,
+		["Abyss Crystali:340571329999"] = 1700207477,
 		["Greater Mystic Essencei:11135819152"] = 1698507408,
 		["Vision Dusti:1113720223840"] = 1699652398,
 		["Dream Dusti:1117620362720"] = 1699609492,
-		["Lesser Nether Essencei:11174120645"] = 1699607939,
+		["Small Glimmering Shardi:109781213956"] = 1698593019,
 		["Greater Magic Essencei:109395300250"] = 1699652398,
 		["Lesser Magic Essencei:1093827992"] = 1698166190,
 		["Lesser Astral Essencei:1099817730"] = 1700332025,
@@ -37368,24 +37365,24 @@ TradeSkillMasterDB = {
 		["Strange Dusti:1094020105960"] = 1698166190,
 		["Greater Astral Essencei:11082124998"] = 1700212988,
 		["Strange Dusti:109402074960"] = 1699652398,
-		["Soul Dusti:11083422216"] = 1698077065,
 		["Lesser Astral Essencei:1099819994"] = 1698311836,
-		["Strange Dusti:109401695936"] = 1698388312,
 		["Vision Dusti:1113711228239"] = 1698077065,
+		["Strange Dusti:109401695936"] = 1698388312,
+		["Soul Dusti:11083422216"] = 1698077065,
 		["Small Glimmering Shardi:109782318"] = 1699517643,
 		["Greater Mystic Essencei:1113525536"] = 1699394117,
 		["Greater Nether Essencei:11175169985"] = 1698667487,
 		["Vision Dusti:11137124921"] = 1698165917,
 		["Small Glowing Shardi:11138220"] = 1699609492,
-		["Small Glowing Shardi:111382196"] = 1698507408,
 		["Greater Astral Essencei:1108210134960"] = 1698667487,
+		["Lesser Mystic Essencei:1113412237"] = 1699372308,
 		["Greater Astral Essencei:110829179082"] = 1698427398,
 		["Autumn's Glowi:36921150795"] = 1700126593,
 		["Greater Mystic Essencei:1113546768"] = 1698667487,
 		["Lesser Mystic Essencei:111341788"] = 1698667487,
 		["Runic Mana Potioni:3344819990"] = 1699639046,
 		["Soul Dusti:110832079920"] = 1698427398,
-		["Lesser Mystic Essencei:1113412237"] = 1699372308,
+		["Small Glowing Shardi:111382196"] = 1698507408,
 		["Greater Nether Essencei:111752140754"] = 1698427398,
 		["Lesser Astral Essencei:1099814490"] = 1700559946,
 		["Large Glimmering Shardi:11084211066"] = 1698507408,
@@ -37418,11 +37415,11 @@ TradeSkillMasterDB = {
 		["Small Radiant Shardi:11177137193"] = 1699453161,
 		["Greater Astral Essencei:11082112999"] = 1700207477,
 		["Greater Mystic Essencei:11135240434"] = 1699652398,
-		["Abyss Crystali:340571329999"] = 1700207477,
+		["Arcane Dusti:22445457988"] = 1700640580,
 		["Lesser Nether Essencei:11174115998"] = 1699652398,
 		["Soul Dusti:1108324398"] = 1699652398,
+		["Snowfall Inki:4312710824210"] = 1700389198,
 		["Dream Dusti:1117620233440"] = 1698165902,
-		["Arcane Dusti:22445457988"] = 1700640580,
 		["Greater Mystic Essencei:1113516662"] = 1698165914,
 		["Greater Planar Essencei:224461125787"] = 1698773467,
 		["Greater Eternal Essencei:162031169883"] = 1698593019,
@@ -38768,13 +38765,13 @@ TradeSkillMasterDB = {
 			},
 		},
 	},
+	["f@Horde - Gehennas@internalData@mailExcessGoldChar"] = "",
 	["c@Provokator - Jin'do@auctionUIContext@auctioningGroupTree"] = {
 		["unselected"] = {
 		},
 		["collapsed"] = {
 		},
 	},
-	["f@Horde - Gehennas@internalData@mailExcessGoldChar"] = "",
 	["c@Moolatz - Golemagg@internalData@auctionSaleHints"] = {
 		["Face Smasheri:14831925532"] = 1699888156,
 	},
@@ -39033,17 +39030,17 @@ TradeSkillMasterDB = {
 		["i:46378"] = 1,
 		["i:40717"] = 1,
 		["i:38365"] = 1,
-		["i:40300"] = 1,
+		["i:40566"] = 1,
 		["i:40258"] = 1,
+		["i:40249"] = 1,
 		["i:37218"] = 1,
 		["i:43157"] = 1,
-		["i:40249"] = 1,
 		["i:33447"] = 50,
 		["i:44605"] = 27,
 		["i:37230"] = 1,
 		["i:40304"] = 1,
 		["i:34722"] = 20,
-		["i:40566"] = 1,
+		["i:40300"] = 1,
 		["i:35953"] = 38,
 		["i:44283"] = 1,
 		["i:40711"] = 1,
@@ -39052,10 +39049,10 @@ TradeSkillMasterDB = {
 	},
 	["g@ @craftingUIContext@gatheringScrollingTable"] = {
 		["colWidth"] = {
-			["need"] = 50,
-			["sources"] = 160,
 			["name"] = 210,
+			["sources"] = 160,
 			["have"] = 50,
+			["need"] = 50,
 		},
 		["colHidden"] = {
 		},
@@ -39134,13 +39131,13 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
+	["c@Jaroslav - Golemagg@internalData@auctionSaleHints"] = {
+	},
 	["c@Tudum - Jin'do@auctionUIContext@shoppingGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
 		},
-	},
-	["c@Jaroslav - Golemagg@internalData@auctionSaleHints"] = {
 	},
 	["c@Testxv - Golemagg@mainUIContext@exportGroupTree"] = {
 		["collapsed"] = {
@@ -39196,7 +39193,11 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 		},
 	},
-	["s@Vermin - Horde - Golemagg@internalData@mailQuantity"] = {
+	["c@Mxyz - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["c@Pitchwise - Dreadnaught@auctionUIContext@shoppingGroupTree"] = {
 		["collapsed"] = {
@@ -39253,11 +39254,11 @@ TradeSkillMasterDB = {
 		["selected"] = {
 		},
 	},
-	["c@Battlearm - Hydraxian Waterlords@mainUIContext@importGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["s@Nitwit - Horde - Dreadnaught@internalData@bagQuantity"] = {
+		["i:2901"] = 1,
+		["i:4604"] = 8,
+		["i:6948"] = 1,
+		["i:2589"] = 6,
 	},
 	["c@Pitchwise - Dreadnaught@internalData@auctionMessages"] = {
 		["Your auction of Quartz Ring of Fire Resistance sold."] = "|cff1eff00|Hitem:11965::::::1403:1779946624:26:::::::::|h[Quartz Ring of Fire Resistance]|h|r",
@@ -39276,11 +39277,11 @@ TradeSkillMasterDB = {
 		["Your auction of Coarse Stone sold."] = "|cffffffff|Hitem:2836::::::::26:::::::::|h[Coarse Stone]|h|r",
 		["Your auction of Shredder Operating Manual - Page 11 sold."] = "|cffffffff|Hitem:16655::::::::26:::::::::|h[Shredder Operating Manual - Page 11]|h|r",
 	},
-	["s@Nitwit - Horde - Dreadnaught@internalData@bagQuantity"] = {
-		["i:2901"] = 1,
-		["i:4604"] = 8,
-		["i:6948"] = 1,
-		["i:2589"] = 6,
+	["c@Battlearm - Hydraxian Waterlords@mainUIContext@exportGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["r@Dreadnaught@internalData@csvBuys"] = "itemString,stackSize,quantity,price,otherPlayer,player,time,source\ni:2512,33,33,0,Merchant,Poklopac,1639685941,Vendor\ni:2512,200,1000,0,Merchant,Poklopac,1639685941,Vendor\ni:2512,146,146,0,Merchant,Poklopac,1640025770,Vendor\ni:2287,5,5,25,Merchant,Poklopac,1640026469,Vendor\ni:2901,1,1,81,Merchant,Nitwit,1640108321,Vendor\ni:2512,35,35,0,Merchant,Poklopac,1640189424,Vendor\ni:2512,200,200,0,Merchant,Poklopac,1640189424,Vendor\ni:2901,1,1,81,Merchant,Pitchwise,1640199980,Vendor\ni:2770,3,3,121,Magerias,Pitchwise,1640204895,Auction\ni:2770,2,2,122,Wzl,Pitchwise,1640204898,Auction\ni:2770,1,4,123,Cska,Pitchwise,1640204899,Auction\ni:2770,2,2,191,Cracked,Pitchwise,1640204907,Auction\ni:4238,1,1,400,Rostobuno,Pitchwise,1640285379,Auction\ni:4238,1,1,999,Mabaa,Pitchwise,1640285380,Auction\ni:4238,1,1,1000,Selly,Pitchwise,1640285382,Auction\ni:3371,5,65,4,Merchant,Poklopac,1640448758,Vendor\ni:2512,94,94,0,Merchant,Poklopac,1640449259,Vendor\ni:2512,200,400,0,Merchant,Poklopac,1640449259,Vendor\ni:4238,1,2,500,Bern,Poklopac,1640449339,Auction\ni:2515,186,186,0,Merchant,Poklopac,1640512430,Vendor\ni:2515,200,1000,0,Merchant,Poklopac,1640512430,Vendor\ni:2515,14,14,0,Merchant,Poklopac,1640512689,Vendor\ni:2515,149,149,0,Merchant,Poklopac,1640516500,Vendor\ni:2515,200,400,0,Merchant,Poklopac,1640516500,Vendor\ni:2515,91,91,0,Merchant,Poklopac,1640517258,Vendor\ni:118,5,10,5,Merchant,Poklopac,1640517704,Vendor\ni:3371,5,10,4,Merchant,Poklopac,1640517717,Vendor\ni:2515,101,101,0,Merchant,Poklopac,1640534257,Vendor\ni:11362,1,1,1000,Merchant,Poklopac,1640534280,Vendor\ni:2515,200,800,0,Merchant,Poklopac,1640534298,Vendor\ni:2515,71,71,0,Merchant,Poklopac,1640538698,Vendor\ni:2515,200,1000,0,Merchant,Poklopac,1640538698,Vendor\ni:2515,110,110,0,Merchant,Poklopac,1640552433,Vendor\ni:2515,200,200,0,Merchant,Poklopac,1640552433,Vendor\ni:2515,28,28,0,Merchant,Poklopac,1640554351,Vendor\ni:2515,200,400,0,Merchant,Poklopac,1640554351,Vendor\ni:2515,175,175,0,Merchant,Poklopac,1640618445,Vendor\ni:2515,153,153,0,Merchant,Poklopac,1640624613,Vendor\ni:2515,200,400,0,Merchant,Poklopac,1640624613,Vendor\ni:3770,5,5,90,Merchant,Poklopac,1640624675,Vendor\ni:2515,125,125,0,Merchant,Poklopac,1640627043,Vendor\ni:2515,200,200,0,Merchant,Poklopac,1640627043,Vendor\ni:7005,1,1,82,Merchant,Poklopac,1640677006,Vendor\ni:2515,5,5,0,Merchant,Poklopac,1640677241,Vendor\ni:2515,200,1800,0,Merchant,Poklopac,1640677241,Vendor\ni:2515,200,2000,0,Merchant,Poklopac,1640702792,Vendor\ni:14046,1,3,29198,Amirblc,Poklopac,1640709797,Auction\ni:2515,40,40,0,Merchant,Poklopac,1640714971,Vendor\ni:2515,200,800,0,Merchant,Poklopac,1640714971,Vendor\ni:4786,1,1,1393,Merchant,Pitchwise,1640776011,Vendor\ni:2515,56,56,0,Merchant,Poklopac,1640871250,Vendor\ni:2515,200,400,0,Merchant,Poklopac,1640871250,Vendor\ni:2515,1,1,0,Merchant,Poklopac,1640877648,Vendor\ni:2515,200,200,0,Merchant,Poklopac,1640877648,Vendor\ni:2515,7,7,0,Merchant,Poklopac,1640886371,Vendor\ni:2515,200,1600,0,Merchant,Poklopac,1640886371,Vendor\ni:2515,93,93,0,Merchant,Poklopac,1640899595,Vendor\ni:2515,200,1800,0,Merchant,Poklopac,1640899595,Vendor\ni:3030,200,2000,1,Merchant,Poklopac,1640935225,Vendor\ni:3030,152,152,1,Merchant,Poklopac,1640949133,Vendor\ni:3030,200,600,1,Merchant,Poklopac,1640949133,Vendor\ni:3030,1,1,1,Merchant,Poklopac,1641053077,Vendor\ni:3030,200,1400,1,Merchant,Poklopac,1641053077,Vendor\ni:7005,1,1,74,Merchant,Poklopac,1641053109,Vendor\ni:3030,73,73,2,Merchant,Poklopac,1641074235,Vendor\ni:3030,200,200,2,Merchant,Poklopac,1641074235,Vendor\ni:3771,5,20,200,Merchant,Poklopac,1641074259,Vendor\ni:1205,5,10,100,Merchant,Poklopac,1641074284,Vendor\ni:3030,114,114,1,Merchant,Poklopac,1641076197,Vendor\ni:3030,200,200,1,Merchant,Poklopac,1641076197,Vendor\ni:3030,157,157,1,Merchant,Poklopac,1641123198,Vendor\ni:3030,200,1600,1,Merchant,Poklopac,1641123198,Vendor\ni:4538,5,20,100,Merchant,Pitchwise,1641130003,Vendor\ni:11287,1,1,1899,Dictactor,Poklopac,1641222406,Auction\ni:4240,1,2,2500,Bankarota,Poklopac,1641222448,Auction\ni:4240,1,2,2699,Dalar,Poklopac,1641222451,Auction\ni:2771,10,10,124,Coffbank,Pitchwise,1641377073,Auction\ni:2771,1,6,125,Shocked,Pitchwise,1641377075,Auction\ni:2771,1,54,126,Feedbank,Pitchwise,1641377080,Auction\ni:2771,1,10,127,Feedbank,Pitchwise,1641377135,Auction\ni:2770,2,2,301,Välsignelsen,Pitchwise,1641377204,Auction\ni:2770,1,13,322,Wildshot,Pitchwise,1641377209,Auction\ni:2770,1,1,324,Xtybo,Pitchwise,1641377220,Auction\ni:2770,5,10,326,Cheapest,Pitchwise,1641377221,Auction\ni:2589,20,20,26,Bumsfink,Pitchwise,1641380089,Auction\ni:2589,5,5,27,Goldbanker,Pitchwise,1641380090,Auction\ni:2589,20,160,28,Ríko,Pitchwise,1641380092,Auction\ni:1205,5,20,100,Merchant,Konac,1641398999,Vendor\ni:16655,1,1,785,Amon,Poklopac,1641473796,Auction\ni:16652,1,1,6800,Demios,Poklopac,1641473813,Auction\ni:3030,18,18,1,Merchant,Poklopac,1641473981,Vendor\ni:3030,200,1600,1,Merchant,Poklopac,1641473981,Vendor\ni:10050,1,1,18918,Olympique,Pitchwise,1641576799,Auction\ni:10050,1,1,18919,Abortionist,Pitchwise,1641576801,Auction\ni:10050,1,2,18920,Critneyfears,Pitchwise,1641576802,Auction\ni:1205,5,40,100,Merchant,Konac,1641665157,Vendor\ni:6657,20,20,2575,Suspiria,Konac,1641674380,Auction\ni:1205,5,20,100,Merchant,Konac,1641712888,Vendor\ni:10050,1,1,14397,Olympique,Poklopac,1641736531,Auction\ni:10050,1,3,14398,Azad,Poklopac,1641736533,Auction\ni:6570:1880,1,1,363,Merchant,Konac,1641763062,Vendor",
 	["s@Battledog - Horde - Gehennas@internalData@bagQuantity"] = {
@@ -39414,8 +39415,7 @@ TradeSkillMasterDB = {
 		["i:6948"] = 1,
 	},
 	["g@ @internalData@whatsNewVersion"] = 4,
-	["s@Battitude - Horde - Golemagg@internalData@auctionQuantity"] = {
-	},
+	["f@Horde - Ashbringer@gatheringContext@crafter"] = "",
 	["g@ @destroyingOptions@autoStack"] = false,
 	["f@Horde - Dreadnaught@internalData@mailDisenchantablesChar"] = "",
 	["r@Stonespine@internalData@saveTimeExpires"] = "",
@@ -39528,11 +39528,7 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["c@Nitwit - Dreadnaught@mainUIContext@groupsManagementGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["f@Horde - Jin'do@internalData@craftingQueue"] = {
 	},
 	["f@Horde - Gehennas@gatheringContext@professions"] = {
 	},
@@ -39555,7 +39551,7 @@ TradeSkillMasterDB = {
 		["i:40076"] = 3,
 		["i:33448"] = 16,
 	},
-	["s@Moolatz - Horde - Dreadnaught@internalData@playerProfessions"] = {
+	["f@Horde - Jin'do@internalData@expiringAuction"] = {
 	},
 	["s@Provokator - Horde - Jin'do@internalData@reagentBankQuantity"] = {
 	},
@@ -39570,14 +39566,14 @@ TradeSkillMasterDB = {
 	},
 	["g@ @mainUIContext@ledgerTransactionsScrollingTable"] = {
 		["colWidth"] = {
-			["time"] = 110,
-			["player"] = 95,
 			["item"] = 156,
+			["type"] = 50,
+			["time"] = 110,
 			["total"] = 120,
 			["perItem"] = 120,
-			["auctions"] = 60,
 			["stack"] = 55,
-			["type"] = 50,
+			["auctions"] = 60,
+			["player"] = 95,
 		},
 		["colHidden"] = {
 			["total"] = true,
@@ -39695,13 +39691,9 @@ TradeSkillMasterDB = {
 	},
 	["s@Nitwit - Horde - Dreadnaught@internalData@auctionQuantity"] = {
 	},
-	["c@Testxv - Golemagg@bankingUIContext@warehousingGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["s@Dmitar - Horde - Golemagg@internalData@reagentBankQuantity"] = {
 	},
-	["c@Tudum - Ashbringer@craftingUIContext@groupTree"] = {
+	["c@Testxv - Golemagg@bankingUIContext@warehousingGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -39724,7 +39716,8 @@ TradeSkillMasterDB = {
 	},
 	["f@Horde - Hydraxian Waterlords@internalData@guildGoldLogLastUpdate"] = {
 	},
-	["f@Horde - Jin'do@gatheringContext@crafter"] = "",
+	["f@Horde - Gehennas@auctioningOptions@whitelist"] = {
+	},
 	["s@Pitchwise - Horde - Dreadnaught@internalData@bagQuantity"] = {
 		["i:2901"] = 1,
 		["i:3531"] = 19,
@@ -39786,8 +39779,8 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 			["Cards"] = true,
 			["Alchemy"] = true,
-			["Materials"] = true,
 			["Class Books"] = true,
+			["Materials"] = true,
 		},
 		["unselected"] = {
 			["Cards"] = true,
@@ -39806,7 +39799,7 @@ TradeSkillMasterDB = {
 			["Materials`Herbs"] = true,
 			["Class Books`Druid"] = true,
 			["Cards`Beasts"] = true,
-			["Materials`Enchanting"] = true,
+			["Materials`Ores and Bars"] = true,
 			["BOE Items`Weapons"] = true,
 			["Materials`Cloth"] = true,
 			["Class Books`Paladin"] = true,
@@ -39817,7 +39810,7 @@ TradeSkillMasterDB = {
 			["Class Books`Rogue"] = true,
 			["Alchemy`Potions"] = true,
 			[""] = true,
-			["Materials`Ores and Bars"] = true,
+			["Materials`Enchanting"] = true,
 		},
 	},
 	["s@Jaroslav - Horde - Golemagg@internalData@classKey"] = "DRUID",
@@ -39834,14 +39827,24 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 		},
 	},
-	["s@Tudum - Horde - Ashbringer@internalData@goldLog"] = "minute,copper\n27757072,0",
+	["c@Vermina - Golemagg@internalData@auctionPrices"] = {
+		["|cffffffff|Hitem:33448::::::::79:::::::::|h[Runic Mana Potion]|h|r"] = {
+			223840, -- [1]
+		},
+		["|cff0070dd|Hitem:36977::::::::79:::::::::|h[Bindings of the Construct]|h|r"] = {
+			499999, -- [1]
+		},
+		["|cffffffff|Hitem:40076::::::::79:::::::::|h[Guru's Elixir]|h|r"] = {
+			150240, -- [1]
+		},
+	},
 	["s@Tudum - Horde - Ashbringer@internalData@bagQuantity"] = {
 		["i:7099"] = 3,
 		["i:1366"] = 3,
 		["i:4862"] = 8,
 		["i:7100"] = 5,
-		["i:4915"] = 1,
 		["i:4865"] = 2,
+		["i:4915"] = 1,
 		["i:2653"] = 2,
 		["i:2656"] = 1,
 		["i:4867"] = 3,
@@ -39853,17 +39856,7 @@ TradeSkillMasterDB = {
 		["i:2211"] = 2,
 		["i:2650"] = 1,
 	},
-	["c@Vermina - Golemagg@internalData@auctionPrices"] = {
-		["|cffffffff|Hitem:40076::::::::79:::::::::|h[Guru's Elixir]|h|r"] = {
-			150240, -- [1]
-		},
-		["|cffffffff|Hitem:33448::::::::79:::::::::|h[Runic Mana Potion]|h|r"] = {
-			223840, -- [1]
-		},
-		["|cff0070dd|Hitem:36977::::::::79:::::::::|h[Bindings of the Construct]|h|r"] = {
-			499999, -- [1]
-		},
-	},
+	["s@Tudum - Horde - Ashbringer@internalData@goldLog"] = "minute,copper\n27757072,0",
 	["c@Mxzq - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -39878,7 +39871,11 @@ TradeSkillMasterDB = {
 	},
 	["s@Grgur - Horde - Golemagg@internalData@auctionQuantity"] = {
 	},
-	["s@Grgur - Horde - Golemagg@internalData@playerProfessions"] = {
+	["c@Grgur - Golemagg@bankingUIContext@mailingGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["g@ @mainUIContext@frame"] = {
 		["centerX"] = 165.2000007033348,
@@ -39893,15 +39890,15 @@ TradeSkillMasterDB = {
 			["ilvl"] = 32,
 			["pct"] = 40,
 			["seller"] = 86,
-			["buyout"] = 115,
-			["bidPct"] = 40,
-			["itemBuyout"] = 115,
 			["item"] = 273,
-			["stack"] = 40,
-			["bid"] = 115,
+			["bidPct"] = 40,
 			["posts"] = 40,
-			["icon"] = 24,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
 			["itemBid"] = 115,
+			["icon"] = 24,
+			["stack"] = 40,
 		},
 		["colHidden"] = {
 			["bid"] = true,
@@ -39951,11 +39948,7 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["c@Grgur - Golemagg@bankingUIContext@mailingGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["s@Grgur - Horde - Golemagg@internalData@playerProfessions"] = {
 	},
 	["c@Mxyzptlk - Golemagg@vendoringUIContext@groupTree"] = {
 		["collapsed"] = {
@@ -39981,8 +39974,8 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 			["Cards"] = true,
 			["Alchemy"] = true,
-			["Class Books"] = true,
 			["Materials"] = true,
+			["Class Books"] = true,
 		},
 		["unselected"] = {
 			["Cards"] = true,
@@ -40001,7 +39994,7 @@ TradeSkillMasterDB = {
 			["Materials`Herbs"] = true,
 			["Class Books`Druid"] = true,
 			["Cards`Beasts"] = true,
-			["Materials`Ores and Bars"] = true,
+			["Materials`Enchanting"] = true,
 			["BOE Items`Weapons"] = true,
 			["Materials`Cloth"] = true,
 			["Class Books`Paladin"] = true,
@@ -40012,7 +40005,7 @@ TradeSkillMasterDB = {
 			["Class Books`Rogue"] = true,
 			["Alchemy`Potions"] = true,
 			[""] = true,
-			["Materials`Enchanting"] = true,
+			["Materials`Ores and Bars"] = true,
 		},
 	},
 	["s@Poklopac - Horde - Dreadnaught@internalData@mailQuantity"] = {
@@ -40030,8 +40023,7 @@ TradeSkillMasterDB = {
 	["s@Mxzq - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n26623948,1490000\n26623949,1660000\n26623950,1650000\n26624665,1620000\n26624666,1600000\n26624672,1590000\n26624686,1570000\n26625033,1490000\n26625035,1390000\n26625037,1380000\n26626073,1620000\n26626076,1280000\n26626077,1080000\n26626531,1270000\n26626534,1250000\n26626625,1220000\n26626629,1250000\n26626664,1350000\n26627669,1310000\n26628113,1490000\n26628114,1450000\n26628963,1560000\n26630494,1900000\n26630496,1720000\n26630503,1700000\n26630802,2270000\n26631008,2200000\n26631014,2190000\n26631121,2200000\n26632101,2220000\n26632103,2210000\n26633318,2020000\n26633330,1980000\n26633689,2130000\n26633690,2010000\n26633691,1970000\n26633692,2160000\n26633714,2110000\n26633715,2100000\n26635198,2600000\n26636501,2490000\n26636506,2470000\n26636838,2560000\n26636844,2530000\n26636875,2500000\n26636876,2250000\n26636879,2160000\n26636888,1990000\n26636890,1980000\n26636891,1960000\n26636899,1950000\n26637596,1970000\n26637950,2130000\n26637951,2110000\n26637954,2100000\n26637955,2090000\n26637956,2070000\n26638061,2080000\n26638991,2050000\n26639462,2210000\n26639463,2200000\n26640557,2160000\n26640558,1770000\n26640559,1890000\n26640560,1840000\n26641007,1970000\n26641008,1990000\n26641009,1970000\n26641010,1960000\n26642047,2200000\n26642048,2190000\n26642050,2180000\n26642654,2230000\n26642655,2430000\n26654955,1830000\n26656410,1790000\n26656411,1780000\n26659455,1670000\n26659458,1650000\n26659746,1910000\n26659747,1640000\n26659748,1620000\n26659758,1580000\n26659766,1570000\n26659768,1370000\n26661278,1450000\n26661288,1440000\n26661316,1450000\n26662060,1480000\n26662328,1510000\n26662655,1420000\n26662657,1390000\n26664159,1430000\n26665049,1500000\n26665605,1560000\n26666338,1900000\n26666870,1910000\n26667033,1900000\n26667065,1910000\n26667105,1920000\n26669720,1930000\n26671367,1940000\n26672589,1950000\n26672719,1880000\n26676663,1860000\n26676664,1830000\n26676665,1820000\n26676667,1830000\n26676669,1780000\n26676671,220000\n26676672,70000\n26686780,80000\n27326567,100000\n27395751,110000\n27395769,90000\n27396876,60000\n27396877,30000\n27397267,40000\n27397280,50000\n27397308,80000\n27397989,90000\n27397995,100000\n27401328,110000\n27401349,120000\n27401367,130000\n27401373,160000\n27401436,170000\n27401443,180000\n27401456,200000\n27401457,210000\n27401462,180000\n27401464,160000\n27401465,150000\n27402306,180000\n27402307,260000\n27402326,270000\n27402331,280000\n27402696,330000\n27402779,360000\n27402787,350000\n27402788,330000\n27403024,350000\n27403062,360000\n27403088,420000\n27403092,410000\n27403093,330000\n27403094,270000\n27403096,280000\n27403097,270000\n27403100,280000\n27409497,560000\n27411036,570000\n27411251,580000\n27411272,590000\n27411273,660000\n27411274,670000\n27411275,680000\n27411276,660000\n27412670,670000\n27418661,680000\n27418669,710000\n27418674,720000\n27418675,430000\n27418676,290000\n27418702,300000\n27418869,310000\n27418888,320000\n27418893,330000\n27418894,350000\n27418898,380000\n27418899,400000\n27419904,410000\n27419906,420000\n27421506,250000\n27421510,260000\n27421555,270000\n27421603,280000\n27421629,310000\n27422476,300000\n27422492,310000\n27422597,320000\n27422709,330000\n27422764,410000\n27422765,570000\n27422766,510000\n27422767,520000\n27422802,530000\n27422833,540000\n27428779,660000\n27428787,550000\n27428807,560000\n27428845,570000\n27428875,580000\n27428912,590000\n27428947,630000\n27428948,640000\n27431534,870000\n27431560,920000\n27431561,940000\n27431563,950000\n27431576,970000\n27432466,980000\n27432469,880000\n27432472,690000\n27432574,700000\n27432588,900000\n27432603,910000\n27433063,970000\n27433066,1000000\n27433112,1010000\n27433115,1000000\n27433117,990000\n27434468,1000000\n27434486,1010000\n27440279,1020000\n27440282,1030000\n27440286,1040000\n27440319,1050000\n27440336,1060000\n27440337,1080000\n27442654,1560000\n27442656,370000\n27442662,360000\n27442667,330000\n27442775,340000\n27442782,350000\n27442791,360000\n27442803,370000\n27442821,380000\n27442838,390000\n27442955,410000\n27442990,430000\n27442991,1780000\n27442992,150000\n27443002,110000\n27443003,100000\n27443004,80000\n27443005,90000\n27443014,80000\n27443116,190000\n27443124,210000\n27443137,220000\n27444089,420000\n27444090,940000\n27444174,3080000\n27444180,3090000\n27444268,1680000\n27444269,510000\n27444285,390000\n27444379,890000\n27444380,870000\n27444384,860000\n27444404,760000\n27444406,660000\n27444422,670000\n27444443,680000\n27444456,690000\n27445467,810000\n27445470,740000\n27445471,730000\n27445472,740000\n27447005,1190000\n27447206,1180000\n27447350,1290000\n27447419,1300000\n27447433,1320000\n27447449,1330000\n27447460,1370000\n27447462,1380000\n27447467,1350000\n27447508,1370000\n27448822,1380000\n27448823,1720000\n27448864,1730000\n27448876,1740000\n27448883,1780000\n27448884,1750000\n27450550,1760000\n27450567,1770000\n27450580,1780000\n27450591,1790000\n27450607,1800000\n27450621,1810000\n27450638,1820000\n27450639,1830000\n27451857,2150000\n27451864,2100000\n27451871,2120000\n27451873,2140000\n27451874,2160000\n27451891,2190000\n27451903,2180000\n27451904,2160000\n27451905,2150000\n27451907,2110000\n27451913,2090000\n27451914,1650000\n27451915,1560000\n27451916,1550000\n27451934,1560000\n27451945,1570000\n27451955,1580000\n27451963,1590000\n27451969,1620000\n27451970,1630000\n27451971,1660000\n27451975,1780000\n27452723,2120000\n27452729,2130000\n27452737,2140000\n27452747,2190000\n27452947,2180000\n27452950,2210000\n27452961,2280000\n27452967,2290000\n27452978,2300000\n27452990,2310000\n27453003,2370000\n27453006,2380000\n27453007,2520000\n27497633,2630000\n27497636,2640000\n27497643,2650000\n27497665,2660000\n27497710,2680000\n27499247,2720000\n27499251,2770000\n27499260,2780000\n27499271,2850000\n27499274,2860000\n27499297,2870000\n27499317,2950000\n27500219,2970000\n27500227,2980000\n27500239,3020000\n27500240,3070000\n27500483,3060000\n27500487,3070000\n27500600,3080000\n27500610,3090000\n27500626,3130000\n27501615,3270000\n27501669,3280000\n27501927,3850000\n27501941,3860000\n27501960,3940000\n27501968,4000000\n27501970,4020000\n27501971,4120000\n27501972,4140000\n27501974,4290000\n27501975,4350000\n27501976,4260000\n27501978,4280000\n27501981,4300000\n27502065,4310000\n27502072,4320000\n27502081,4330000\n27502087,4340000\n27502091,4420000\n27502092,4560000\n27502093,4500000\n27502105,4510000\n27502110,4520000\n27502115,4530000\n27502123,4540000\n27502128,4550000\n27502135,4570000\n27502139,4680000\n27502140,4800000\n27504705,4810000\n27518037,5170000\n27518045,5180000\n27518052,5190000\n27518064,5220000\n27518065,5250000\n27518067,5280000\n27518068,5370000\n27518069,5400000\n27518072,5420000\n27518074,5400000\n27518075,5500000\n27518076,5600000\n27518085,5610000\n27518094,5660000\n27518095,5730000\n27518098,5760000\n27518099,5750000\n27518101,5840000\n27520391,5990000\n27520398,5980000\n27520408,5990000\n27520427,6020000\n27520885,6030000\n27520897,6040000\n27520912,6050000\n27520920,6060000\n27520927,6070000\n27520935,6080000\n27520947,6090000\n27522247,6780000\n27522266,6840000\n27523619,6910000\n27523629,6970000\n27523630,7040000\n27523632,7070000\n27523633,7040000\n27525077,7110000\n27525146,7230000\n27525147,7280000\n27525154,7310000\n27525155,7290000\n27525157,7300000\n27525164,7310000\n27525166,7330000\n27525171,7340000\n27525181,7360000\n27525188,7370000\n27525204,7480000\n27525205,7590000\n27525210,7550000\n27525211,7510000\n27525213,7330000\n27525214,6890000\n27525215,6640000\n27525319,6630000\n27525320,6610000\n27525322,6500000\n27525323,6490000\n27525333,6500000\n27525341,6510000\n27525349,6520000\n27525357,6530000\n27525363,6540000\n27525369,6560000\n27529024,6550000\n27531068,6560000\n27531075,6570000\n27531080,6580000\n27531087,6590000\n27531096,6600000\n27531106,6610000\n27531110,6620000\n27531118,6630000\n27531124,6830000\n27531125,6730000\n27531964,6760000\n27531965,6800000\n27531968,6810000\n27531977,6820000\n27531983,6830000\n27531986,6840000\n27531992,6850000\n27532005,6860000\n27536326,7180000\n27536474,7210000\n27536481,7300000\n27536499,7310000\n27536503,7320000\n27536506,7340000\n27536507,7330000\n27536527,7340000\n27536533,7350000\n27536540,7360000\n27536547,7370000\n27536556,7380000\n27536579,7440000\n27536580,7430000\n27536603,7440000\n27536617,7450000\n27537969,7480000\n27537975,7490000\n27537983,7500000\n27538003,7570000\n27538004,7720000\n27538005,7770000\n27548052,7810000\n27548096,7820000\n27548107,7830000\n27548113,7840000\n27548121,7850000\n27548127,7860000\n27548129,7870000\n27549151,7940000\n27549372,7950000\n27549381,7960000\n27549396,7970000\n27549402,7980000\n27549410,7990000\n27549416,8020000\n27549448,8030000\n27549454,8040000\n27549463,8050000\n27549470,8060000\n27552139,8070000\n27552143,8080000\n27552144,8090000\n27552159,8260000\n27552161,8240000\n27553437,7640000\n27553439,7650000\n27553444,7660000\n27553448,7680000\n27553452,7690000\n27553459,7710000\n27553463,7720000\n27553470,7730000\n27553474,7890000\n27553476,8050000\n27553480,8070000\n27553511,8080000\n27553516,8090000\n27553532,8100000\n27553538,8140000\n27553539,8160000\n27561359,8170000\n27561364,8180000\n27561366,8190000\n27561368,8200000\n27561373,8210000\n27561378,8220000\n27561380,8300000\n27561381,8320000\n27561383,8290000\n27564129,5790000\n27566609,5760000\n27569610,5770000\n27569612,5780000\n27569614,5790000\n27569621,5800000\n27569624,5810000\n27569626,5820000\n27569640,5830000\n27569646,5840000\n27569653,5860000\n27569662,5870000\n27569666,5880000\n27569676,5890000\n27569681,5900000\n27569686,5910000\n27569691,5930000\n27569698,5920000\n27569699,5900000\n27569700,6200000\n27569916,6210000\n27569930,6220000\n27569936,6230000\n27569944,6240000\n27569969,6260000\n27569970,6200000\n27569971,6190000\n27572279,6200000\n27572283,6210000\n27572284,6230000\n27572287,5690000\n27618492,5660000\n27618508,5670000\n27618513,5680000\n27618517,5690000\n27618518,5700000\n27618523,5720000\n27618528,5730000\n27736785,2190000\n27740809,2200000\n27740818,2210000\n27740823,2220000\n27740839,2140000\n27740846,2120000\n27740847,2090000\n27740848,2050000\n27740981,2000000\n27740988,1990000\n27741020,1960000\n27741026,1380000\n27741047,1390000\n27741054,1400000\n27741059,1410000\n27741118,1420000\n27741123,1430000\n27741127,1440000\n27741133,1450000\n27741135,1460000\n27741143,1690000\n27741150,1700000\n27741154,1710000\n27741156,1720000\n27741159,1730000\n27742203,1740000\n27742206,1750000\n27742211,1760000\n27742212,1790000\n27742213,1470000\n27742214,1440000\n27742296,1450000\n27742305,1590000\n27742313,1600000\n27742316,1610000\n27742321,1620000\n27742329,1630000\n27742332,1640000\n27742348,2020000\n27742349,2030000\n27743673,2040000\n27743693,2140000\n27743694,2290000\n27743695,2470000\n27743698,2380000\n27744961,2390000\n27744971,2400000\n27749676,2410000\n27749696,2310000\n27749712,1810000\n27749713,1870000\n27749714,1980000\n27749716,1970000\n27749734,1830000\n27749735,1750000\n27749736,1690000\n27751174,1700000\n27751193,1960000\n27756548,2010000\n27756549,1900000\n27756550,1840000\n27758051,1490000\n27758061,1500000\n27758066,1510000\n27758069,1610000\n27758076,1630000\n27758077,1640000\n27758078,1650000\n27758080,1700000\n27758084,1710000\n27758087,1720000\n27758089,1810000\n27758093,1860000\n27758099,1320000\n27758104,1400000\n27758105,1790000\n27761010,1860000\n27761251,1850000\n27772729,1860000\n27781341,1870000\n27785757,1920000\n27785759,1930000\n27785787,1940000\n27785807,1950000\n27785817,1970000\n27785856,2000000\n27787169,2010000\n27787177,2020000\n27791253,2030000\n27791259,2050000\n27795859,2100000\n27795867,2130000\n27796966,2140000\n27796985,2150000\n27796994,2160000\n27797008,2170000\n27797017,2180000\n27805554,2220000\n27805555,2200000\n27805556,1910000\n27821423,1920000\n27821424,1930000\n27821429,1980000\n27821432,1990000\n27821439,2000000\n27821443,2010000\n27821457,2020000\n27821466,2030000\n27821472,2040000\n27821474,2050000\n27821479,2060000\n27821497,2250000\n27821498,2300000\n27821515,2490000\n27821527,3300000\n27821528,3310000\n27821538,3360000\n27821539,3650000\n27821549,3660000\n27821551,3710000\n27821553,3760000\n27821555,3770000\n27821556,3780000\n27821558,3790000\n27821561,3890000\n27821562,4040000\n27821565,4180000\n27821570,4230000\n27821572,4240000\n27821574,4250000\n27821577,4260000\n27821578,4300000\n27821579,4310000\n27821584,5120000\n27821585,5200000\n27821588,5210000\n27821592,5220000\n27821598,5230000\n27821601,5240000\n27821606,5260000\n27821793,5270000\n27821798,5410000\n27822815,5420000\n27822817,5430000\n27822818,5530000\n27822829,5570000\n27822835,5580000\n27822838,5590000\n27822841,5600000\n27822846,5650000\n27822852,5660000\n27822858,5710000\n27822860,5720000\n27822864,5730000\n27822867,5740000\n27822868,5840000\n27822869,5850000\n27822872,5860000\n27822875,5960000\n27822877,6070000\n27822879,6170000\n27822880,6190000\n27822881,6200000\n27822883,6290000\n27822885,6320000\n27822886,6390000\n27822887,6940000\n27822888,6970000\n27822913,6980000\n27822914,7030000\n27822941,7150000\n27822942,7180000\n27822943,7210000\n27822944,7220000\n27822952,7230000\n27822957,7440000\n27822966,7630000\n27822967,7640000\n27822969,7680000\n27822971,7730000\n27822972,7770000\n27822973,7830000\n27823239,7880000\n27823240,8060000\n27823244,8070000\n27823249,8170000\n27823340,8160000\n27823345,8210000\n27824499,8260000\n27824500,8270000\n27824502,8320000\n27824510,8360000\n27824515,8500000\n27824520,8600000\n27824529,8740000\n27824530,8770000\n27824531,9080000\n27824712,9130000\n27824716,9140000\n27824722,9190000\n27824723,9200000\n27824724,9390000\n27824725,9550000\n27824727,9560000\n27824730,9570000\n27824731,9670000\n27824733,9680000\n27824734,9690000\n27824736,9790000\n27824738,9880000\n27824746,9860000\n27824751,10130000\n27824754,10120000\n27824764,10130000\n27824768,10140000\n27824769,10150000\n27824771,10160000\n27824774,10170000\n27824779,10180000\n27824785,10430000\n27824793,10580000\n27824794,10560000\n27824796,10510000\n27824799,10500000\n27824800,10440000\n27824804,10450000\n27824807,10460000\n27824812,10470000\n27824817,10480000\n27824820,10490000\n27824824,10500000\n27824828,10510000\n27824833,10520000\n27824835,10530000\n27824843,10540000\n27825960,11020000\n27825963,10990000\n27825971,11230000\n27825972,11780000\n27825973,11770000\n27827244,11760000\n27827248,11920000\n27827264,11930000\n27827266,11980000\n27827267,11990000\n27827274,12000000\n27827276,12100000\n27827277,12150000\n27827278,12320000\n27827279,12650000\n27827280,12660000\n27827653,12670000\n27827655,12680000\n27827658,12690000\n27827663,12700000\n27827667,12710000\n27827674,12810000\n27827675,12970000\n27827677,13080000\n27827678,13300000\n27829089,13350000\n27829093,13400000\n27829099,13410000\n27829106,13420000\n27830066,13430000\n27830069,13440000\n27830075,13540000\n27830077,13550000\n27830080,13560000\n27830081,13570000\n27830084,13670000\n27830085,13830000\n27830087,13880000\n27830088,14370000\n27830089,14380000\n27830090,14490000\n27830091,14470000\n27830099,14480000\n27830102,14490000\n27830105,14500000\n27830110,14510000\n27830112,14520000\n27830115,14530000\n27830122,14540000\n27830126,14550000\n27830132,14560000\n27830136,14570000\n27830141,14660000\n27847185,14670000\n27847186,14660000\n27847198,14710000\n27847207,14720000\n27847209,14730000\n27847212,14740000\n27847223,14750000\n27847224,14760000\n27847230,14770000\n27847233,14940000\n27853531,11950000\n27853534,11800000\n27853538,11670000\n27853563,11560000\n27853588,11570000\n27853594,11580000\n27853599,11590000\n27853605,11600000\n27853609,11670000\n27872178,11680000\n27872183,11690000\n27872187,11700000\n27872188,11710000\n27872190,11720000\n27872197,12000000\n27872202,12010000\n27872205,12020000\n27872210,12030000\n27872216,12040000\n27887908,12030000\n27887910,10810000\n27887911,9300000\n27887912,6670000\n27887913,5430000\n27887914,5630000\n27887939,5310000\n27887940,5260000\n27888104,10890000\n27888105,10470000\n27888106,3050000\n27888107,2010000\n27888144,1990000\n27888147,1310000\n27889023,2890000\n27889075,22890000\n27889076,12890000\n27889086,12660000\n27889096,12670000\n27889098,12720000\n27889099,12770000\n27889103,12920000\n27889113,12960000\n27889118,12970000\n27889121,12980000\n27889124,13290000\n27889125,13340000\n27889126,13350000\n27889128,13470000\n27889140,13600000\n27889160,13840000\n27889161,13910000\n27889163,14020000\n27889165,14080000\n27889166,14500000\n27889255,14690000\n27889265,14760000\n27889268,14880000\n27889269,15070000\n27889281,15200000\n27889282,15260000\n27889283,15310000\n27889293,15570000\n27889295,15580000\n27889297,15590000\n27889299,15600000\n27889301,15610000\n27889316,15740000\n27889321,15800000\n27889377,15810000\n27889378,15940000\n27889380,15950000\n27889382,16080000\n27889384,16090000\n27889385,16140000\n27889392,16190000\n27889393,16410000\n27889394,16310000\n27889396,16340000\n27889398,17310000\n27889402,17320000\n27889404,17330000\n27889405,17340000\n27889406,17540000\n27889409,17680000\n27889415,17690000\n27889416,17700000\n27889418,17710000\n27889420,17720000\n27889426,17730000\n27889427,17740000\n27889429,17750000\n27889430,17760000\n27889433,17770000\n27889437,17780000\n27889438,17840000\n27889439,17920000\n27889451,17930000\n27889461,18000000\n27889462,18540000\n27889471,18560000\n27889477,18640000\n27889478,18650000\n27889480,18660000\n27889482,18670000\n27889483,18680000\n27889484,18690000\n27889485,18760000\n27889486,18770000\n27889489,18920000\n27889492,18940000\n27889503,19020000\n27889510,19030000\n27889512,19040000\n27889514,19050000\n27889516,19060000\n27889518,19220000\n27889520,19370000\n27889522,19440000\n27889525,19450000\n27889527,19520000\n27889529,19580000\n27889530,19660000\n27889531,19650000\n27890594,21700000\n27890598,21770000\n27890600,22210000\n27890601,22220000\n27890602,22300000\n27890606,22310000\n27890609,22390000\n27890610,22460000\n27890611,22470000\n27890613,22550000\n27890614,22640000\n27890616,22720000\n27890618,22730000\n27890620,22740000\n27890622,22750000\n27890625,22760000\n27890628,22770000\n27890631,22780000\n27890645,22790000\n27890647,22800000\n27890652,22810000\n27890656,22960000\n27890657,22970000\n27890658,23190000\n27890662,23270000\n27890739,23340000\n27890740,23560000\n27890763,23570000\n27890764,23580000\n27890765,23590000\n27890767,23600000\n27890769,23610000\n27890770,23620000\n27890771,23630000\n27890781,23640000\n27890783,23650000\n27890785,23660000\n27890789,23670000\n27890790,23680000\n27890794,23980000\n27890797,23990000\n27890798,24000000\n27890800,24070000\n27890801,24150000\n27890803,24160000\n27890804,24170000\n27890806,24190000\n27890810,24200000\n27890812,25190000\n27890813,25250000\n27890815,25240000\n27890818,25250000\n27890819,25310000\n27890821,25320000\n27890826,25330000\n27890831,25540000\n27890836,25550000\n27890837,25560000\n27890844,25630000\n27890848,25770000\n27890850,25970000\n27890851,26040000\n27890852,26050000\n27890856,26060000\n27890857,26200000\n27890860,26210000\n27890862,26220000\n27890865,26230000\n27890867,26370000\n27890870,26360000\n27890876,26310000\n27890878,22710000\n27890882,22510000\n27890887,23180000\n27890905,103070000\n27890907,103050000\n27890980,103100000\n27890982,101880000\n27891860,107810000\n27891916,7810000\n27892497,111150000\n27893726,11150000\n27893780,10040000\n27893781,6410000\n27893782,5510000\n27893786,5500000\n27893787,5310000\n27894913,10060000\n27897997,9030000\n27898000,8660000\n27898212,10600000\n27909250,5600000\n27909251,4900000\n27909252,2900000\n27909277,2990000\n27909290,3070000\n27909307,2870000\n27909315,3300000\n27911078,3000000\n27911080,83000000\n27911083,82000000\n27916859,79000000\n27916869,80000000\n27916881,60000000\n27916890,57000000\n27916900,78000000\n27922202,58000000\n27925373,50000000\n27925382,48000000\n27929497,46000000\n27929598,55000000\n27930895,45000000\n27930911,40000000\n27930915,41000000\n27930921,36000000\n27930962,26000000\n27930975,27000000\n27931003,24000000\n27931012,21000000\n27931015,16000000\n27931018,35000000\n27931460,47000000\n27938215,46000000\n27938220,45000000\n27938223,44000000\n27942329,78000000\n27942666,79000000\n27942714,80000000\n27942807,81000000\n27942810,80000000\n27942811,81000000\n27958356,96000000\n27959905,97000000\n27963164,104000000\n27975706,105000000\n27975810,130000000\n27978518,129000000\n27981452,128000000\n27981455,127000000\n27984422,128000000\n28004361,127000000\n28256207,27000000\n28292529,0\n28322914,1000000\n28322921,2000000\n28324278,3000000\n28324325,4000000\n28324326,6000000\n28325382,7000000\n28325388,9000000\n28331492,8000000\n28331494,9000000\n28334409,10000000\n28334413,11000000",
 	["r@Ashbringer@internalData@accountingTrimmed"] = {
 	},
-	["f@Horde - Gehennas@auctioningOptions@whitelist"] = {
-	},
+	["f@Horde - Jin'do@gatheringContext@crafter"] = "",
 	["c@Moolatz - Dreadnaught@bankingUIContext@mailingGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -40044,7 +40036,11 @@ TradeSkillMasterDB = {
 		["unselected"] = {
 		},
 	},
-	["s@Dmitar - Horde - Golemagg@internalData@reagentBankQuantity"] = {
+	["c@Tudum - Ashbringer@craftingUIContext@groupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["s@Moolatz - Horde - Golemagg@internalData@bankQuantity"] = {
 		["i:35022"] = 1,
@@ -40054,10 +40050,10 @@ TradeSkillMasterDB = {
 		["i:11122"] = 1,
 		["i:35137"] = 1,
 		["i:40321"] = 1,
-		["i:41592"] = 1,
-		["i:34989"] = 1,
-		["i:35001"] = 1,
 		["i:41589"] = 1,
+		["i:34989"] = 1,
+		["i:41592"] = 1,
+		["i:35001"] = 1,
 		["i:35135"] = 1,
 		["i:34999"] = 1,
 		["i:35000"] = 1,
@@ -40106,11 +40102,15 @@ TradeSkillMasterDB = {
 	["r@Stonespine@internalData@saveTimeBuys"] = "",
 	["c@Tudum - Jin'do@internalData@auctionMessages"] = {
 	},
-	["f@Horde - Jin'do@internalData@expiringAuction"] = {
+	["s@Moolatz - Horde - Dreadnaught@internalData@playerProfessions"] = {
 	},
 	["c@Jaroslav - Golemagg@internalData@auctionMessages"] = {
 	},
-	["f@Horde - Jin'do@internalData@craftingQueue"] = {
+	["c@Nitwit - Dreadnaught@mainUIContext@groupsManagementGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["c@Mxzq - Golemagg@internalData@auctionPrices"] = {
 	},
@@ -40155,12 +40155,13 @@ TradeSkillMasterDB = {
 		["i:6948"] = 1,
 		["i:2589"] = 61,
 		["i:1179"] = 3,
-		["i:2287"] = 1,
+		["i:118"] = 4,
 		["i:6462"] = 1,
 		["i:16283"] = 1,
-		["i:118"] = 4,
+		["i:2287"] = 1,
 	},
-	["f@Horde - Ashbringer@gatheringContext@crafter"] = "",
+	["s@Battitude - Horde - Golemagg@internalData@auctionQuantity"] = {
+	},
 	["c@Konac - Dreadnaught@mainUIContext@exportGroupTree"] = {
 		["collapsed"] = {
 		},
@@ -40180,7 +40181,7 @@ TradeSkillMasterDB = {
 	},
 	["f@Horde - Stonespine@internalData@crafts"] = {
 	},
-	["c@Battlearm - Hydraxian Waterlords@mainUIContext@exportGroupTree"] = {
+	["c@Battlearm - Hydraxian Waterlords@mainUIContext@importGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -40208,28 +40209,28 @@ TradeSkillMasterDB = {
 		["Elixir of Expertisei:44329316314"] = 1700411383,
 		["Borean Leatheri:3356820121960"] = 1700343457,
 		["Jormungar Scalei:385615156230"] = 1700585929,
-		["Guru's Elixiri:400763150240"] = 1700924214,
+		["Elixir of Mighty Fortitudei:40078429100"] = 1700411383,
 		["Elixir of Lightning Speedi:44331125436"] = 1700411383,
 		["Frostweave Clothi:33470521785"] = 1700341767,
 		["Elixir of Mighty Thoughtsi:44332253956"] = 1700411383,
-		["Elixir of Mighty Fortitudei:40078429100"] = 1700411383,
+		["Guru's Elixiri:400763150240"] = 1700924214,
 		["Borean Leatheri:33568630390"] = 1700392263,
 		["Nerubian Chitini:38558121726"] = 1700585929,
 		["Runic Mana Potioni:3344819680"] = 1700585929,
 		["Elixir of Expertisei:44329389697"] = 1700731863,
 		["Guru's Elixiri:40076199985"] = 1700680907,
 		["Runic Mana Potioni:33448772751"] = 1700392263,
-		["Elixir of Accuracyi:44325321201"] = 1700411383,
-		["Elixir of Spiriti:40072847240"] = 1700411383,
+		["Borean Leatheri:3356820102840"] = 1700585929,
+		["Runic Mana Potioni:33448559970"] = 1700411383,
 		["Icy Dragonscalei:38557272810"] = 1700680907,
 		["Runic Mana Potioni:33448335982"] = 1700411383,
 		["Frostweave Clothi:33470837560"] = 1700392263,
 		["Runic Mana Potioni:33448544990"] = 1700561379,
+		["Elixir of Accuracyi:44325321201"] = 1700411383,
 		["Guru's Elixiri:40076164998"] = 1700315445,
-		["Borean Leatheri:3356820102840"] = 1700585929,
 		["Elixir of Mighty Agilityi:39666213082"] = 1700411383,
 		["Wrath Elixiri:40068425412"] = 1700411383,
-		["Runic Mana Potioni:33448559970"] = 1700411383,
+		["Elixir of Spiriti:40072847240"] = 1700411383,
 		["Elixir of Lightning Speedi:44331252366"] = 1700411383,
 		["Elixir of Lightning Speedi:443313103605"] = 1700731863,
 		["Borean Leatheri:3356829160"] = 1700680907,
@@ -40270,11 +40271,7 @@ TradeSkillMasterDB = {
 		},
 	},
 	["g@ @auctioningOptions@disableInvalidMsg"] = false,
-	["c@Mxyz - Golemagg@mainUIContext@groupsManagementGroupTree"] = {
-		["collapsed"] = {
-		},
-		["unselected"] = {
-		},
+	["s@Vermin - Horde - Golemagg@internalData@mailQuantity"] = {
 	},
 	["s@Tadibey - Horde - Golemagg@internalData@money"] = 3166,
 	["s@Vermina - Horde - Golemagg@internalData@goldLog"] = "minute,copper\n27396497,0\n27494388,280000\n27740705,180000\n27740966,190000\n27756698,200000\n27756700,230000\n27756780,250000\n27756789,260000\n27855061,280000\n27872171,310000\n27873560,200000\n27873593,190000\n27873597,180000\n27873598,40000\n27873600,20000\n27873619,30000\n27874720,40000\n27874734,50000\n27874750,60000\n27874767,70000\n27874783,10000\n27874856,1010000\n27874857,980000\n27874858,990000\n27874859,1050000\n27874864,1040000\n27877798,1050000\n27877869,1060000\n27877973,1110000\n27879317,1120000\n27885026,1130000\n27885055,1160000\n27885091,1140000\n27885121,1150000\n27885144,1160000\n27885153,1140000\n27885154,1020000\n27886725,10990000\n27886729,990000\n27886736,900000\n27886737,850000\n27886738,870000\n27886739,820000\n27886768,370000\n27886778,350000\n27887774,620000\n27891888,630000\n27891903,640000\n27891929,650000\n27891945,660000\n27891956,670000\n27891968,680000\n27891977,690000\n27891985,750000\n27891987,760000\n27891999,770000\n27892003,780000\n27892017,790000\n27892029,810000\n27892030,920000\n27892034,930000\n27893396,940000\n27893415,950000\n27893432,960000\n27893542,760000\n27893601,790000\n27893617,810000\n27893619,840000\n27893620,860000\n27893624,870000\n27893637,880000\n27893642,890000\n27893647,900000\n27893648,930000\n27893649,960000\n27893651,970000\n27893663,980000\n27893675,990000\n27893689,1000000\n27893705,1010000\n27893724,1020000\n27894922,1040000\n27894932,1050000\n27894939,1060000\n27894947,1070000\n27894954,1080000\n27894961,1090000\n27894968,1100000\n27894976,1110000\n27894982,1120000\n27895085,1130000\n27895087,1170000\n27895088,1210000\n27895101,1040000\n27895119,1030000\n27895120,980000\n27895144,930000\n27895168,940000\n27895178,950000\n27895201,980000\n27896690,2580000\n27896693,2590000\n27896703,2600000\n27896710,2610000\n27896715,2620000\n27896722,2630000\n27896748,2640000\n27896884,2650000\n27896889,2660000\n27896904,2730000\n27896905,2760000\n27896906,2770000\n27896909,2600000\n27896913,2590000\n27896914,2560000\n27896915,2520000\n27896916,2500000\n27896917,60000\n27896918,30000\n27897713,4170000\n27897732,4180000\n27897772,4210000\n27897774,4220000\n27897775,4230000\n27897823,4440000\n27897826,4290000\n27897961,4300000\n27897964,4310000\n27897967,4380000\n27898007,4390000\n27898011,4400000\n27898014,4410000\n27898022,4420000\n27898027,4430000\n27898031,4460000\n27898036,4470000\n27898044,4630000\n27898045,4650000\n27898053,4840000\n27898054,4790000\n27898055,4780000\n27898062,4790000\n27898070,4800000\n27898217,4810000\n27898220,4820000\n27898227,4830000\n27898238,4840000\n27898253,4880000\n27898254,4900000\n27898271,4910000\n27898292,4920000\n27898294,4930000\n27898297,4950000\n27898300,6280000\n27898301,6290000\n27899174,7520000\n27899178,7540000\n27899188,7550000\n27899194,7560000\n27899197,7570000\n27899203,7580000\n27899207,7590000\n27899212,7620000\n27899222,7500000\n27899227,7400000\n27899231,7410000\n27899239,7420000\n27899243,7430000\n27899247,7440000\n27899253,7460000\n27899254,7470000\n27899257,7480000\n27899259,7490000\n27899261,7520000\n27899427,7630000\n27899428,7620000\n27899429,7750000\n27899439,7760000\n27899443,7770000\n27899449,8280000\n27899460,8290000\n27899462,8300000\n27899465,8340000\n27899469,8350000\n27899471,8370000\n27899475,8380000\n27899486,8400000\n27899487,8430000\n27899491,8440000\n27899495,8450000\n27899505,8470000\n27899517,8630000\n27899518,8690000\n27899519,5960000\n27899521,5970000\n27899523,6420000\n27899524,6080000\n27899525,5910000\n27899530,5830000\n27899531,5900000\n27900942,8160000\n27900943,8150000\n27901051,8250000\n27902097,8180000\n27902148,8190000\n27902149,8250000\n27902152,8260000\n27902154,8300000\n27902155,8310000\n27902158,8320000\n27902159,8340000\n27902169,8350000\n27902170,8380000\n27902171,8400000\n27902174,8410000\n27902175,8430000\n27902177,8450000\n27902181,8600000\n27905189,8620000\n27905191,8640000\n27905194,8660000\n27905197,8680000\n27905198,8720000\n27905199,8740000\n27906460,8750000\n27908253,8770000\n27908254,8750000\n27908255,8770000\n27908256,8810000\n27908261,8820000\n27908265,8830000\n27908271,8950000\n27912278,9000000\n27918270,10000000\n27925297,11000000\n27935371,12000000\n27943029,59000000\n27948133,58000000\n27948151,56000000\n27948152,55000000\n27954249,56000000\n27958392,57000000\n27965650,56000000\n27974481,57000000\n27974499,58000000\n27975450,59000000\n28292530,0\n28338410,10000000\n28338545,9000000\n28338563,10000000\n28338626,11000000\n28338873,12000000\n28338963,13000000\n28339022,8000000\n28339023,6000000\n28339024,5000000\n28339025,4000000\n28339871,5000000\n28340131,6000000\n28340163,7000000\n28340180,6000000\n28343061,7000000\n28344052,8000000\n28344053,7000000\n28344054,8000000\n28344615,9000000\n28344619,8000000\n28344624,9000000\n28344652,8000000\n28345545,9000000\n28348700,10000000\n28348703,9000000\n28348735,10000000",
@@ -40430,8 +40427,8 @@ TradeSkillMasterDB = {
 		["Crafting"] = false,
 		["Warehousing"] = false,
 		["Vendoring"] = false,
-		["Shopping"] = false,
 		["Sniper"] = false,
+		["Shopping"] = false,
 	},
 	["s@Battledog - Horde - Gehennas@internalData@classKey"] = "WARRIOR",
 	["s@Augustin - Horde - Golemagg@internalData@playerProfessions"] = {
@@ -40892,9 +40889,9 @@ TradeSkillMasterDB = {
 		},
 		["c:11585758"] = {
 			["mats"] = {
-				["i:33568"] = 2,
 				["i:35627"] = 1,
 				["i:36913"] = 8,
+				["i:33568"] = 2,
 			},
 			["itemString"] = "i:44742",
 			["profession"] = "Engineering",
@@ -41092,9 +41089,9 @@ TradeSkillMasterDB = {
 		},
 		["c:5685455"] = {
 			["mats"] = {
-				["i:43120"] = 2,
 				["i:43121"] = 5,
 				["i:39501"] = 10,
+				["i:43120"] = 2,
 			},
 			["itemString"] = "i:43660",
 			["profession"] = "Inscription",
@@ -41471,8 +41468,8 @@ TradeSkillMasterDB = {
 		["c:14099249"] = {
 			["mats"] = {
 				["i:10507"] = 6,
-				["i:9061"] = 1,
 				["i:10560"] = 1,
+				["i:9061"] = 1,
 				["i:10561"] = 1,
 			},
 			["itemString"] = "i:10586",
@@ -42662,10 +42659,10 @@ TradeSkillMasterDB = {
 		},
 		["c:12561518"] = {
 			["mats"] = {
-				["i:4387"] = 2,
 				["i:4382"] = 1,
-				["i:4234"] = 4,
 				["i:4389"] = 2,
+				["i:4234"] = 4,
+				["i:4387"] = 2,
 			},
 			["itemString"] = "i:4391",
 			["profession"] = "Engineering",
@@ -43146,8 +43143,8 @@ TradeSkillMasterDB = {
 		["c:3524839"] = {
 			["mats"] = {
 				["i:12810"] = 4,
-				["i:7910"] = 2,
 				["i:12804"] = 6,
+				["i:7910"] = 2,
 				["i:19726"] = 4,
 			},
 			["itemString"] = "i:19999",
@@ -43174,9 +43171,9 @@ TradeSkillMasterDB = {
 		},
 		["c:5993753"] = {
 			["mats"] = {
-				["i:39774"] = 1,
 				["i:43115"] = 1,
 				["i:39354"] = 1,
+				["i:39774"] = 1,
 			},
 			["itemString"] = "i:37168",
 			["profession"] = "Inscription",
@@ -43572,10 +43569,10 @@ TradeSkillMasterDB = {
 		},
 		["c:11301362"] = {
 			["mats"] = {
-				["i:4389"] = 1,
 				["i:4387"] = 1,
-				["i:4234"] = 4,
 				["i:4382"] = 1,
+				["i:4234"] = 4,
+				["i:4389"] = 1,
 			},
 			["itemString"] = "i:4392",
 			["profession"] = "Engineering",
@@ -44704,19 +44701,6 @@ TradeSkillMasterDB = {
 			["name"] = "Eternal Earthsiege Diamond",
 			["numResult"] = 1,
 		},
-		["c:4149987"] = {
-			["mats"] = {
-				["i:39683"] = 1,
-				["i:39681"] = 2,
-			},
-			["itemString"] = "i:44739",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Diamond-cut Refractor Scope",
-			["players"] = {
-				["Vermin"] = true,
-			},
-		},
 		["c:2993683"] = {
 			["mats"] = {
 				["i:22445"] = 8,
@@ -44731,6 +44715,19 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Scroll of Enchant Chest - Exceptional Health",
 			["numResult"] = 1,
+		},
+		["c:4149987"] = {
+			["mats"] = {
+				["i:39683"] = 1,
+				["i:39681"] = 2,
+			},
+			["itemString"] = "i:44739",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Diamond-cut Refractor Scope",
+			["players"] = {
+				["Vermin"] = true,
+			},
 		},
 		["c:1657492"] = {
 			["mats"] = {
@@ -44973,10 +44970,10 @@ TradeSkillMasterDB = {
 		},
 		["c:8919274"] = {
 			["mats"] = {
-				["i:34052"] = 1,
-				["i:34054"] = 20,
 				["i:34055"] = 4,
 				["i:43145"] = 1,
+				["i:34052"] = 1,
+				["i:34054"] = 20,
 			},
 			["itemString"] = "i:44458",
 			["profession"] = "Enchanting",
@@ -45342,9 +45339,9 @@ TradeSkillMasterDB = {
 		},
 		["c:7372128"] = {
 			["mats"] = {
-				["i:2320"] = 4,
 				["i:4231"] = 3,
 				["i:2318"] = 6,
+				["i:2320"] = 4,
 			},
 			["itemString"] = "i:4243",
 			["profession"] = "Leatherworking",
@@ -46395,6 +46392,20 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
+		["c:2415219"] = {
+			["mats"] = {
+				["i:39681"] = 2,
+				["i:39682"] = 4,
+				["i:39683"] = 2,
+			},
+			["itemString"] = "i:40767",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Sonic Booster",
+			["players"] = {
+				["Vermin"] = true,
+			},
+		},
 		["c:11331441"] = {
 			["mats"] = {
 				["i:34055"] = 6,
@@ -46409,20 +46420,6 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Scroll of Enchant 2H Weapon - Massacre",
 			["numResult"] = 1,
-		},
-		["c:2415219"] = {
-			["mats"] = {
-				["i:39681"] = 2,
-				["i:39682"] = 4,
-				["i:39683"] = 2,
-			},
-			["itemString"] = "i:40767",
-			["profession"] = "Engineering",
-			["numResult"] = 1,
-			["name"] = "Sonic Booster",
-			["players"] = {
-				["Vermin"] = true,
-			},
 		},
 		["c:14693360"] = {
 			["mats"] = {
@@ -46568,9 +46565,9 @@ TradeSkillMasterDB = {
 		},
 		["c:13102168"] = {
 			["mats"] = {
-				["i:43120"] = 1,
 				["i:39501"] = 1,
 				["i:43121"] = 2,
+				["i:43120"] = 1,
 			},
 			["itemString"] = "i:44163",
 			["profession"] = "Inscription",
@@ -47347,18 +47344,18 @@ TradeSkillMasterDB = {
 			["name"] = "Scroll of Enchant Bracer - Minor Health",
 			["numResult"] = 1,
 		},
-		["c:1458757"] = {
+		["c:5220438"] = {
 			["mats"] = {
-				["i:39349"] = 1,
-				["i:11083"] = 3,
-				["i:11084"] = 1,
+				["i:38682"] = 1,
+				["i:11176"] = 2,
+				["i:11175"] = 1,
 			},
-			["itemString"] = "i:38796",
+			["itemString"] = "i:38839",
 			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant 2H Weapon - Lesser Impact",
+			["name"] = "Scroll of Enchant Shield - Greater Spirit",
 			["numResult"] = 1,
 		},
 		["c:12810706"] = {
@@ -47373,18 +47370,18 @@ TradeSkillMasterDB = {
 			["name"] = "Iron Bar",
 			["numResult"] = 1,
 		},
-		["c:5220438"] = {
+		["c:1458757"] = {
 			["mats"] = {
-				["i:38682"] = 1,
-				["i:11176"] = 2,
-				["i:11175"] = 1,
+				["i:39349"] = 1,
+				["i:11083"] = 3,
+				["i:11084"] = 1,
 			},
-			["itemString"] = "i:38839",
+			["itemString"] = "i:38796",
 			["profession"] = "Enchanting",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Scroll of Enchant Shield - Greater Spirit",
+			["name"] = "Scroll of Enchant 2H Weapon - Lesser Impact",
 			["numResult"] = 1,
 		},
 		["c:10924478"] = {
@@ -47685,18 +47682,6 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:2891952"] = {
-			["mats"] = {
-				["i:3860"] = 3,
-			},
-			["itemString"] = "i:10561",
-			["profession"] = "Engineering",
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Mithril Casing",
-			["numResult"] = 1,
-		},
 		["c:4893560"] = {
 			["mats"] = {
 				["i:2673"] = 1,
@@ -47710,18 +47695,29 @@ TradeSkillMasterDB = {
 			["name"] = "Coyote Steak",
 			["numResult"] = 1,
 		},
-		["c:3471222"] = {
+		["c:2891952"] = {
 			["mats"] = {
-				["i:43122"] = 1,
-				["i:39501"] = 1,
+				["i:3860"] = 3,
 			},
-			["itemString"] = "i:45805",
-			["profession"] = "Inscription",
-			["numResult"] = 1,
-			["name"] = "Glyph of Disease",
+			["itemString"] = "i:10561",
+			["profession"] = "Engineering",
 			["players"] = {
-				["Battlearm"] = true,
+				["Vermin"] = true,
 			},
+			["name"] = "Mithril Casing",
+			["numResult"] = 1,
+		},
+		["c:6887971"] = {
+			["mats"] = {
+				["i:2672"] = 1,
+			},
+			["itemString"] = "i:2680",
+			["profession"] = "Cooking",
+			["players"] = {
+				["Vermin"] = true,
+			},
+			["name"] = "Spiced Wolf Meat",
+			["numResult"] = 1,
 		},
 		["c:3228304"] = {
 			["mats"] = {
@@ -47789,16 +47785,17 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:6985596"] = {
+		["c:3471222"] = {
 			["mats"] = {
-				["i:36916"] = 5,
+				["i:43122"] = 1,
+				["i:39501"] = 1,
 			},
-			["itemString"] = "i:40893",
-			["profession"] = "Engineering",
+			["itemString"] = "i:45805",
+			["profession"] = "Inscription",
 			["numResult"] = 1,
-			["name"] = "Bladed Pickaxe",
+			["name"] = "Glyph of Disease",
 			["players"] = {
-				["Vermin"] = true,
+				["Battlearm"] = true,
 			},
 		},
 		["c:6559911"] = {
@@ -47886,6 +47883,19 @@ TradeSkillMasterDB = {
 			["name"] = "Sapphire Signet",
 			["numResult"] = 1,
 		},
+		["c:11712548"] = {
+			["mats"] = {
+				["i:43124"] = 1,
+				["i:39502"] = 1,
+			},
+			["itemString"] = "i:42406",
+			["profession"] = "Inscription",
+			["numResult"] = 1,
+			["name"] = "Glyph of Shadow Word: Pain",
+			["players"] = {
+				["Battlearm"] = true,
+			},
+		},
 		["c:13898746"] = {
 			["mats"] = {
 				["i:7068"] = 2,
@@ -47900,19 +47910,6 @@ TradeSkillMasterDB = {
 			},
 			["name"] = "Fire Goggles",
 			["numResult"] = 1,
-		},
-		["c:11712548"] = {
-			["mats"] = {
-				["i:43124"] = 1,
-				["i:39502"] = 1,
-			},
-			["itemString"] = "i:42406",
-			["profession"] = "Inscription",
-			["numResult"] = 1,
-			["name"] = "Glyph of Shadow Word: Pain",
-			["players"] = {
-				["Battlearm"] = true,
-			},
 		},
 		["c:1627319"] = {
 			["mats"] = {
@@ -47970,10 +47967,10 @@ TradeSkillMasterDB = {
 		},
 		["c:10573867"] = {
 			["mats"] = {
-				["i:35624"] = 1,
-				["i:36920"] = 2,
 				["i:36923"] = 1,
 				["i:36917"] = 1,
+				["i:35624"] = 1,
+				["i:36920"] = 2,
 			},
 			["itemString"] = "i:42339",
 			["profession"] = "Jewelcrafting",
@@ -47983,17 +47980,17 @@ TradeSkillMasterDB = {
 				["Battlearm"] = true,
 			},
 		},
-		["c:6887971"] = {
+		["c:6985596"] = {
 			["mats"] = {
-				["i:2672"] = 1,
+				["i:36916"] = 5,
 			},
-			["itemString"] = "i:2680",
-			["profession"] = "Cooking",
+			["itemString"] = "i:40893",
+			["profession"] = "Engineering",
+			["numResult"] = 1,
+			["name"] = "Bladed Pickaxe",
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Spiced Wolf Meat",
-			["numResult"] = 1,
 		},
 		["c:2371420"] = {
 			["mats"] = {
@@ -48132,8 +48129,8 @@ TradeSkillMasterDB = {
 				["i:23786"] = 1,
 				["i:23785"] = 2,
 				["i:22452"] = 6,
-				["i:16006"] = 2,
 				["i:21884"] = 6,
+				["i:16006"] = 2,
 			},
 			["itemString"] = "i:23836",
 			["profession"] = "Engineering",
@@ -48353,8 +48350,8 @@ TradeSkillMasterDB = {
 				["i:1705"] = 3,
 				["i:5498"] = 3,
 				["i:11083"] = 4,
-				["i:3827"] = 2,
 				["i:2842"] = 4,
+				["i:3827"] = 2,
 			},
 			["itemString"] = "i:20832",
 			["profession"] = "Jewelcrafting",
@@ -48601,9 +48598,9 @@ TradeSkillMasterDB = {
 		},
 		["c:2133432"] = {
 			["mats"] = {
-				["i:39501"] = 10,
 				["i:43120"] = 2,
 				["i:43121"] = 5,
+				["i:39501"] = 10,
 			},
 			["itemString"] = "i:43661",
 			["profession"] = "Inscription",
@@ -49350,9 +49347,9 @@ TradeSkillMasterDB = {
 		},
 		["c:6542612"] = {
 			["mats"] = {
-				["i:12804"] = 4,
 				["i:12364"] = 2,
 				["i:12803"] = 4,
+				["i:12804"] = 4,
 			},
 			["itemString"] = "i:21791",
 			["profession"] = "Jewelcrafting",
@@ -49559,9 +49556,9 @@ TradeSkillMasterDB = {
 		},
 		["c:3718736"] = {
 			["mats"] = {
-				["i:39501"] = 2,
 				["i:43121"] = 1,
 				["i:43120"] = 1,
+				["i:39501"] = 2,
 			},
 			["itemString"] = "i:39350",
 			["profession"] = "Inscription",
@@ -49755,9 +49752,9 @@ TradeSkillMasterDB = {
 		},
 		["c:5017596"] = {
 			["mats"] = {
-				["i:39774"] = 2,
 				["i:43115"] = 5,
 				["i:39354"] = 10,
+				["i:39774"] = 2,
 			},
 			["itemString"] = "i:43515",
 			["profession"] = "Inscription",
@@ -50057,12 +50054,15 @@ TradeSkillMasterDB = {
 	},
 	["f@Horde - Stonespine@internalData@mats"] = {
 	},
-	["c@Moolatz - Dreadnaught@internalData@auctionPrices"] = {
+	["c@Vermin - Golemagg@bankingUIContext@mailingGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
 	},
 	["f@Horde - Stonespine@internalData@guildVaults"] = {
 	},
-	["s@Mxyzptlk - Horde - Golemagg@internalData@mailQuantity"] = {
-	},
+	["s@Battlearm - Horde - Gehennas@internalData@money"] = 0,
 	["g@ @coreOptions@globalOperations"] = false,
 	["c@Miqa - Golemagg@vendoringUIContext@groupTree"] = {
 		["collapsed"] = {
@@ -50074,7 +50074,7 @@ TradeSkillMasterDB = {
 	},
 	["c@Grgur - Golemagg@internalData@auctionMessages"] = {
 	},
-	["c@Antun - Golemagg@auctionUIContext@auctioningGroupTree"] = {
+	["c@Poklopac - Dreadnaught@bankingUIContext@mailingGroupTree"] = {
 		["collapsed"] = {
 		},
 		["unselected"] = {
@@ -50136,9 +50136,9 @@ TradeSkillMasterDB = {
 		["Horde - Golemagg"] = "Horde - Golemagg - 776829417",
 		["Horde - Ashbringer"] = "Horde - Ashbringer - 567058295",
 		["Horde - Stonespine"] = "Horde - Stonespine - 73130477",
-		["Horde - Hydraxian Waterlords"] = "Horde - Hydraxian Waterlords - 805199231",
 		["Horde - Dreadnaught"] = "Horde - Dreadnaught - 1627963267",
 		["Horde - Mirage Raceway"] = "Horde - Mirage Raceway - 272468645",
+		["Horde - Hydraxian Waterlords"] = "Horde - Hydraxian Waterlords - 805199231",
 		["Horde - Jin'do"] = "Horde - Jin'do - 455415397",
 		["Horde - Gehennas"] = "Horde - Gehennas - 946996591",
 	},
