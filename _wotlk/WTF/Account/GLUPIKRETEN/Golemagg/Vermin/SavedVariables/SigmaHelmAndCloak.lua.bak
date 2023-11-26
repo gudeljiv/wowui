@@ -9,7 +9,7 @@ SigmaHelmAndCloak = {
 	["|cffffffff|Hitem:40722:1951:::::::80:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:40250:3605:::::::80:::::::::|h[]|h|r"] = "Off",
 	["|cffffffff|Hitem:45973::::::::80:::::::::|h[]|h|r"] = "Off",
-	["|cffffffff|Hitem:46151:3817:41398:39996:::::80:::::::::|h[]|h|r"] = "Off",
-	["|cffa335ee|Hitem:40250:3605:::::::80:::::::::|h[Aged Winter Cloak]|h|r"] = "Off",
 	["|cffa335ee|Hitem:40722:1951:::::::80:::::::::|h[Platinum Mesh Cloak]|h|r"] = "Off",
+	["|cffa335ee|Hitem:40250:3605:::::::80:::::::::|h[Aged Winter Cloak]|h|r"] = "Off",
+	["|cffffffff|Hitem:46151:3817:41398:39996:::::80:::::::::|h[]|h|r"] = "Off",
 }
