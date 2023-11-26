@@ -7,6 +7,14 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {
+		[13] = {
+			["Left"] = 816.2860717773438,
+			["Top"] = 614.1904907226562,
+		},
+		[14] = {
+			["DockTo"] = 13,
+			["Side"] = "LEFT",
+		},
 	},
 	["Sets"] = {
 		["~CombatQueue"] = {

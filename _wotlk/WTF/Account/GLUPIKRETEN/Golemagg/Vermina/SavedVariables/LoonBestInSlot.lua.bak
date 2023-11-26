@@ -49,12 +49,12 @@ LBISSettings = {
 		["Phase 3"] = true,
 		["Phase 4"] = true,
 	},
-	["SelectedSlot"] = "All",
+	["ShowCustom"] = false,
 	["SelectedRank"] = "All",
 	["HideObsolete"] = false,
 	["SelectedSourceType"] = "All",
-	["ShowCustom"] = false,
 	["PriorityList"] = {
 	},
+	["SelectedSlot"] = "All",
 	["SelectedPhase"] = "BIS",
 }

@@ -199,7 +199,7 @@ data = {
             {"name": "holy light", "type": "GetSpellTexture", "id": 27136, "key": "e"},
             {"name": "seal of command", "type": "GetSpellTexture", "id": 20375, "key": "f6"},
             {"name": "seal of wisdom", "type": "GetSpellTexture", "id": 20166, "key": "f1"},
-            {"name": "seal of corruption", "type": "GetSpellTexture", "id": 348704, "key": "f2"},
+            {"name": "seal of corruption", "type": "GetSpellTexture", "id": 348704, "key": "f3"},
         ],
         "secondary": [
             {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "lalt"},
