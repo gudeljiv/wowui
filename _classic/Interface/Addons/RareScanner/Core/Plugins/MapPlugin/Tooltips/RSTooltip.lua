@@ -124,7 +124,7 @@ local function showHideItemComparationTooltip(cell, _, event, key, down)
 	end
 	
 	if (down == 1) then
-		if (IsShiftKeyDown() and ItemToolTip:IsShown()) then
+		if (IsShiftKeyDown() and not IsAltKeyDown() and not IsControlKeyDown() and ItemToolTip:IsShown()) then
 			ItemToolTipComp1:SetScale(RSConfigDB.GetWorldMapLootAchievTooltipsScale())
 			ItemToolTipComp2:SetScale(RSConfigDB.GetWorldMapLootAchievTooltipsScale())
 			ItemToolTipComp1:SetFrameLevel(2100)
@@ -140,36 +140,9 @@ local function hideItemToolTip(cell)
 	ItemToolTip:Hide()
 end
 
-local function filterItem(cell, args)
+local function filterItem(cell, args, button)
 	local itemID, itemClassID, itemSubClassID, itemLink = unpack(args)
-
-	if (IsControlKeyDown()) then
-		DressUpItemLink(itemLink)
-		DressUpBattlePetLink(itemLink)
-		DressUpMountLink(itemLink)
-	elseif (IsAltKeyDown()) then
-		if (IsShiftKeyDown()) then
-			if (not RSConfigDB.GetItemFiltered(itemID)) then
-				RSConfigDB.SetItemFiltered(itemID, true)
-				RSLogger:PrintMessage(string.format(AL["LOOT_INDIVIDUAL_FILTERED"], itemLink))
-			else
-				RSConfigDB.SetItemFiltered(itemID, false)
-				RSLogger:PrintMessage(string.format(AL["LOOT_INDIVIDUAL_NOT_FILTERED"], itemLink))
-			end
-			-- Refresh options panel (if its being initialized)
-			if (private.loadFilteredItems) then
-				private.loadFilteredItems()
-			end
-		else
-			if (RSConfigDB.GetLootFilterByCategory(itemClassID, itemSubClassID)) then
-				RSConfigDB.SetLootFilterByCategory(itemClassID, itemSubClassID, false)
-				RSLogger:PrintMessage(string.format(AL["LOOT_CATEGORY_FILTERED"], GetItemClassInfo(itemClassID), GetItemSubClassInfo(itemClassID, itemSubClassID)))
-			else
-				RSConfigDB.SetLootFilterByCategory(itemClassID, itemSubClassID, true)
-				RSLogger:PrintMessage(string.format(AL["LOOT_CATEGORY_NOT_FILTERED"], GetItemClassInfo(itemClassID), GetItemSubClassInfo(itemClassID, itemSubClassID)))
-			end
-		end
-	end
+	RSLootTooltip.HandleInputEvents(button, itemLink, itemClassID, itemSubClassID, itemID)
 end
 
 local function hideInfoTooltip()
@@ -351,7 +324,7 @@ local function AddGuideTooltip(tooltip, pin, addSeparator)
 		end
 		
 		local line = tooltip:AddLine()	
-		tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::128:128:0:96:64:96|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_SHOW_GUIDE"], "05DFDC"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
+		tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:64:96|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_SHOW_GUIDE"], "05DFDC"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
 		return true
 	end
 	
@@ -376,7 +349,7 @@ local function AddOverlayTooltip(tooltip, pin, addSeparator)
 		end
 		
 		local line = tooltip:AddLine()	
-		tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::128:128:0:96:96:128|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_SHOW_OVERLAY"], "FFF5EE"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
+		tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:96:128|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_SHOW_OVERLAY"], "FFF5EE"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
 		return true
 	end
 	
@@ -398,7 +371,7 @@ local function AddFilterTooltip(tooltip, pin, addSeparator)
 	end
 	
 	local line = tooltip:AddLine()
-	tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::128:128:0:96:0:32|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_FILTER_ENTITY"], "00FF00"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
+	tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:0:32|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_FILTER_ENTITY"], "00FF00"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
 	return true
 end
 
@@ -416,7 +389,7 @@ local function AddWaypointsTooltip(tooltip, pin, addSeparator)
 	end
 	
 	local line = tooltip:AddLine()
-	tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::128:128:0:96:32:64|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_ADD_WAYPOINT"], "FFFF00"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
+	tooltip:SetCell(line, 1, "|TInterface\\AddOns\\RareScanner\\Media\\Textures\\tooltip_shortcuts:18:60:::256:256:0:96:32:64|t "..RSUtils.TextColor(AL["MAP_TOOLTIP_ADD_WAYPOINT"], "FFFF00"), nil, "LEFT", 10, nil, nil, nil, RSConstants.TOOLTIP_MAX_WIDTH, RSConstants.TOOLTIP_MAX_WIDTH)
 	return true
 end
 

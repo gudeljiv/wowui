@@ -19,6 +19,14 @@ ItemRackUser = {
 	},
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {
+		[13] = {
+			["Top"] = 613.5557861328125,
+			["Left"] = 815.651123046875,
+		},
+		[14] = {
+			["DockTo"] = 13,
+			["Side"] = "LEFT",
+		},
 	},
 	["EnableQueues"] = "ON",
 	["Sets"] = {
@@ -45,7 +53,7 @@ ItemRackUser = {
 		},
 	},
 	["ButtonSpacing"] = 4,
-	["Locked"] = "ON",
+	["Locked"] = "OFF",
 	["MainScale"] = 1,
 	["MenuScale"] = 1.200000047683716,
 	["Hidden"] = {

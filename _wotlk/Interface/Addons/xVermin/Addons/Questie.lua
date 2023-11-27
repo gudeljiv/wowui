@@ -1,7 +1,7 @@
 local _, xVermin = ...
 local ib, numQuests, showQuestieFrame
 
-local width = 235
+local width = 250
 
 xVermin.CheckIfLoadedWithTimer(
 	'Questie_BaseFrame',
