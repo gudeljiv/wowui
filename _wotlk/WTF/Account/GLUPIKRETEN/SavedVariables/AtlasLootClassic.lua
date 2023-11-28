@@ -1078,8 +1078,8 @@ AtlasLootClassicDB = {
 			[35167] = "honor:5700",
 			[42057] = "honor:8295",
 			[45254] = "EmblemOfConquest:19",
-			[28297] = "honor:7125",
 			[30344] = "honor:2280",
+			[48390] = "EmblemOfTriumph:30",
 			[28308] = "honor:4750",
 			[32455] = "honor:1",
 			[47735] = "EmblemOfTriumph:50",
@@ -1198,7 +1198,7 @@ AtlasLootClassicDB = {
 			[41140] = "EmblemOfHeroism:30",
 			[32041] = "honor:6650",
 			[28925] = "honor:3800",
-			[48390] = "EmblemOfTriumph:30",
+			[28297] = "honor:7125",
 			[45835] = "EmblemOfConquest:28",
 			[28834] = "honor:3800",
 			[33681] = "honor:4275",
@@ -1449,9 +1449,9 @@ AtlasLootClassicDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -1928,7 +1928,7 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"HallsofStone", -- [2]
+					"DrakTharonKeep", -- [2]
 					4, -- [3]
 					12, -- [4]
 					0, -- [5]

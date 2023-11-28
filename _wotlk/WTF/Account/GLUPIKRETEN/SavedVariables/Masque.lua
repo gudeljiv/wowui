@@ -3346,6 +3346,11 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
+				["WeakAuras_MAhQeVyyRXP"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Brownstone",
+				},
 				["WeakAuras_e)vIMq)f)ld"] = {
 					["Upgraded"] = true,
 					["Inherit"] = false,

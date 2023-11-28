@@ -39,9 +39,9 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Gehennas"] = "Battlearm - Gehennas",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Battlearm - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -1131,8 +1131,8 @@ AtlasLootClassicDB = {
 			[28834] = "honor:3800",
 			[42057] = "honor:8295",
 			[45254] = "EmblemOfConquest:19",
-			[30344] = "honor:2280",
 			[48390] = "EmblemOfTriumph:30",
+			[28297] = "honor:7125",
 			[28925] = "honor:3800",
 			[32455] = "honor:1",
 			[47735] = "EmblemOfTriumph:50",
@@ -1251,7 +1251,7 @@ AtlasLootClassicDB = {
 			[47298] = "DefilersScourgestone:30",
 			[32041] = "honor:6650",
 			[28308] = "honor:4750",
-			[28297] = "honor:7125",
+			[30344] = "honor:2280",
 			[45835] = "EmblemOfConquest:28",
 			[35167] = "honor:5700",
 			[33681] = "honor:4275",
@@ -1642,31 +1642,8 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["showCompanionLearnedInfo"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["showListInTT"] = false,
-				},
-			},
-			["ContentPhase"] = {
-				["enableOnItems"] = true,
-			},
-			["Tooltip"] = {
-				["useGameTooltip"] = false,
-			},
 			["GUI"] = {
 				["classFilter"] = true,
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-188.4920501708984, -- [4]
-					190.5237579345703, -- [5]
-				},
 				["selected"] = {
 					nil, -- [1]
 					"VaultofArchavon", -- [2]
@@ -1674,8 +1651,31 @@ AtlasLootClassicDB = {
 					9, -- [4]
 					0, -- [5]
 				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-188.4920501708984, -- [4]
+					190.5237579345703, -- [5]
+				},
+			},
+			["showCompanionLearnedInfo"] = false,
+			["Addons"] = {
+				["Favourites"] = {
+					["showListInTT"] = false,
+				},
 			},
 			["showItemLvlInTT"] = false,
+			["Tooltip"] = {
+				["useGameTooltip"] = false,
+			},
+			["ContentPhase"] = {
+				["enableOnItems"] = true,
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Ozrencic - Golemagg"] = {
 		},
@@ -1802,22 +1802,9 @@ AtlasLootClassicDB = {
 		["Kaonac - Jin'do"] = {
 		},
 		["Default"] = {
-			["GUI"] = {
-				["classFilter"] = true,
-				["selected"] = {
-					nil, -- [1]
-					"HallsofStone", -- [2]
-					4, -- [3]
-					12, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-42.63478851318359, -- [4]
-					82.1428451538086, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -1833,11 +1820,24 @@ AtlasLootClassicDB = {
 			["Tooltip"] = {
 				["useGameTooltip"] = false,
 			},
-			["showItemLvlInTT"] = false,
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["classFilter"] = true,
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-42.63478851318359, -- [4]
+					82.1428451538086, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"VioletHold", -- [2]
+					7, -- [3]
+					12, -- [4]
+					0, -- [5]
+				},
 			},
+			["showItemLvlInTT"] = false,
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {
