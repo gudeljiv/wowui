@@ -1,6 +1,6 @@
 # Auctionator
 
-## [10.2.1](https://github.com/Auctionator/Auctionator/tree/10.2.1) (2023-11-19)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.0...10.2.1) 
+## [10.2.2](https://github.com/Auctionator/Auctionator/tree/10.2.2) (2023-11-26)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.1...10.2.2) 
 
-- Allow posting when user has 0g and is posting an item with a 0g deposit  
+- Cancelling: Wrapping search term in " makes it an exact search  
