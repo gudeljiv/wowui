@@ -22,6 +22,8 @@ local QuestieTooltips = QuestieLoader:ImportModule("QuestieTooltips");
 local QuestieMenu = QuestieLoader:ImportModule("QuestieMenu");
 ---@type QuestieProfessions
 local QuestieProfessions = QuestieLoader:ImportModule("QuestieProfessions")
+---@type SeasonOfDiscovery
+local SeasonOfDiscovery = QuestieLoader:ImportModule("SeasonOfDiscovery")
 
 QuestieOptions.tabs.icons = {...}
 local optionsDefaults = QuestieOptionsDefaults:Load()
@@ -272,6 +274,23 @@ function QuestieOptions.tabs.icons:Initialize()
                             QuestieQuest:SmoothReset()
                         end,
                     },
+                    showSoDRunes = {
+                        type = "toggle",
+                        order = 2.091,
+                        hidden = (not Questie.IsSoD),
+                        name = function() return l10n('Season of Discovery Runes'); end,
+                        desc = function() return l10n('When this is enabled, the locations of Season of Discovery Runes and Rune quests will be shown on the map/minimap.'); end,
+                        width = 1.595,
+                        disabled = function()
+                            if SeasonOfDiscovery.currentPhase == 1 then return true end;
+                            return (not Questie.db.profile.enabled);
+                            end,
+                        get = function(info) return Questie.db.profile.showSoDRunes end,
+                        set = function(info, value)
+                            Questie.db.profile.showSoDRunes = value
+                            QuestieQuest:ToggleNotes(value)
+                        end,
+                    },
                     townsfolk_options = {
                         type = "header",
                         order = 2.10,
@@ -292,7 +311,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         type = "execute",
                         order = 2.12,
                         name = function() return l10n('Townsfolk'); end,
-                        desc = function() return l10n('Allows to select which the tracking icons (like Mailbox, Repair-NPCs) to show on the map and minimap.'); end,
+                        desc = function() return l10n('Allows to select which tracking icons (like Mailbox, Repair-NPCs) to show on the map and minimap.'); end,
                         width = 0.8,
                         disabled = false,
                         func = function(info, value)
@@ -303,7 +322,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         type = "execute",
                         order = 2.13,
                         name = function() return l10n('Profession Trainers'); end,
-                        desc = function() return l10n('Allows to select which the tracking icons (like Mailbox, Repair-NPCs) to show on the map and minimap.'); end,
+                        desc = function() return l10n('Allows to select which profession trainers to show on the map and minimap.'); end,
                         width = 0.95,
                         disabled = false,
                         func = function(info, value)
@@ -314,7 +333,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         type = "execute",
                         order = 2.14,
                         name = function() return l10n('Vendors'); end,
-                        desc = function() return l10n('Allows to select which the tracking icons (like Mailbox, Repair-NPCs) to show on the map and minimap.'); end,
+                        desc = function() return l10n('Allows to select which vendors to show on the map and minimap.'); end,
                         width = 0.8,
                         disabled = false,
                         func = function(info, value)
@@ -567,7 +586,7 @@ function QuestieOptions.tabs.icons:Initialize()
                     lootScale = {
                         type = "range",
                         order = 5.5,
-                        name = function() return l10n('Loot Objectives'); end,
+                        name = function() return l10n('Loot objectives'); end,
                         desc = function() return l10n('How large the loot icons are.\n(Default: %s)', optionsDefaults.profile.lootScale); end,
                         width = 1.55,
                         min = 0.01,
@@ -582,7 +601,7 @@ function QuestieOptions.tabs.icons:Initialize()
                     monsterScale = {
                         type = "range",
                         order = 5.6,
-                        name = function() return l10n('Slay Objectives'); end,
+                        name = function() return l10n('Slay objectives'); end,
                         desc = function() return l10n('How large the slay icons are.\n(Default: %s)', optionsDefaults.profile.monsterScale); end,
                         width = 1.55,
                         min = 0.01,
@@ -597,7 +616,7 @@ function QuestieOptions.tabs.icons:Initialize()
                     eventScale = {
                         type = "range",
                         order = 5.7,
-                        name = function() return l10n('Event Objectives'); end,
+                        name = function() return l10n('Event objectives'); end,
                         desc = function() return l10n('How large the event icons are.\n(Default: %s)', optionsDefaults.profile.eventScale); end,
                         width = 1.55,
                         min = 0.01,
@@ -612,7 +631,7 @@ function QuestieOptions.tabs.icons:Initialize()
                     objectScale = {
                         type = "range",
                         order = 5.8,
-                        name = function() return l10n('Object Objectives'); end,
+                        name = function() return l10n('Object objectives'); end,
                         desc = function() return l10n('How large the object icons are.\n(Default: %s)', optionsDefaults.profile.objectScale); end,
                         width = 1.55,
                         min = 0.01,
@@ -927,7 +946,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         width = 1.295,
                         name = function() return l10n('Complete repeatable quests') end,
                         desc = function() return l10n('The icon that is displayed for repeatable quests that can be handed in'); end,
-                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_REPEATABLE_COMPLETE) or "repeatable_complete"; end,
+                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_REPEATABLE_COMPLETE) or "complete"; end,
                         disabled = function() return (not Questie.db.profile.enabled); end,
                         set = function(input, key)
                             Questie.db.profile.ICON_REPEATABLE_COMPLETE = Questie.icons[key]
@@ -982,7 +1001,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         width = 1.295,
                         name = function() return l10n('Complete event quests') end,
                         desc = function() return l10n('The icon that is displayed for event quests that can be handed in'); end,
-                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_EVENTQUEST_COMPLETE) or "eventquest_complete"; end,
+                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_EVENTQUEST_COMPLETE) or "complete"; end,
                         disabled = function() return (not Questie.db.profile.enabled); end,
                         set = function(input, key)
                             Questie.db.profile.ICON_EVENTQUEST_COMPLETE = Questie.icons[key]
@@ -1037,7 +1056,7 @@ function QuestieOptions.tabs.icons:Initialize()
                         width = 1.295,
                         name = function() return l10n('Complete PvP quests') end,
                         desc = function() return l10n('The icon that is displayed for PvP quests that can be handed in'); end,
-                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_PVPQUEST_COMPLETE) or "pvpquest_complete"; end,
+                        get = function() return Questie:GetIconNameFromPath(Questie.db.profile.ICON_PVPQUEST_COMPLETE) or "complete"; end,
                         disabled = function() return (not Questie.db.profile.enabled); end,
                         set = function(input, key)
                             Questie.db.profile.ICON_PVPQUEST_COMPLETE = Questie.icons[key]

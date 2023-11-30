@@ -102,13 +102,13 @@ function QuestieOptions.tabs.advanced:Initialize()
                     QuestieOptionsUtils.DetermineTheme()
                 end,
             },
-            quelDanasSpacer1 = QuestieOptionsUtils:Spacer(1.45),
-            --Spacer_A = QuestieOptionsUtils:Spacer(1.45, (not Questie.IsTBC)),
+            quelDanasSpacer1 = QuestieOptionsUtils:Spacer(1.45, (not Questie.IsTBC)),
             npcrules_group = {
                 type = "group",
                 order = 1.5,
                 inline = true,
                 width = 0.5,
+                hidden = (not Questie.IsTBC),
                 name = function() return l10n("Quel'Danas Settings"); end,
                 disabled = function() return not Questie.db.profile.autoaccept end,
                 args = {
@@ -116,7 +116,6 @@ function QuestieOptions.tabs.advanced:Initialize()
                         type = "select",
                         order = 1.3,
                         width = 1.5,
-                        --hidden = (not Questie.IsTBC),
                         values = IsleOfQuelDanas.localizedPhaseNames,
                         style = 'dropdown',
                         name = function() return l10n("Isle of Quel'Danas Phase") end,
@@ -141,7 +140,6 @@ function QuestieOptions.tabs.advanced:Initialize()
                     isleOfQuelDanasPhaseReminder = {
                         type = "toggle",
                         order = 1.5,
-                        --hidden = (not Questie.IsTBC),
                         name = function() return l10n('Disable Phase reminder'); end,
                         desc = function() return l10n("Enable or disable the reminder on login to set the Isle of Quel'Danas phase"); end,
                         disabled = function() return (not Questie.IsWotlk) end,
@@ -292,13 +290,50 @@ function QuestieOptions.tabs.advanced:Initialize()
                     Questie.db.profile.bugWorkarounds = value
                 end
             },
-            showQuestIDs = {
+            showItemIDs = {
                 type = "toggle",
                 order = 5.02,
-                name = function() return l10n('Show Quest IDs'); end,
-                desc = function() return l10n('When this is checked, the ID of quests will show in the tooltips and the tracker.'); end,
+                name = function() return l10n('Show Item IDs'); end,
+                desc = function() return l10n('When this is checked, the ID of items will shown in tooltips.'); end,
+                disabled = function() return (not Questie.db.profile.enableTooltips); end,
                 width = "full",
-                get = function() return Questie.db.profile.enableTooltipsQuestID; end,
+                get = function() return Questie.db.profile.enableTooltipsItemID; end,
+                set = function (_, value)
+                    Questie.db.profile.enableTooltipsItemID = value
+                end
+            },
+            showNPCIDs = {
+                type = "toggle",
+                order = 5.03,
+                name = function() return l10n('Show NPC IDs'); end,
+                desc = function() return l10n('When this is checked, the ID of NPCs will be shown in tooltips.'); end,
+                disabled = function() return (not Questie.db.profile.enableTooltips); end,
+                width = "full",
+                get = function() return Questie.db.profile.enableTooltipsNPCID; end,
+                set = function (_, value)
+                    Questie.db.profile.enableTooltipsNPCID = value
+                end
+            },
+            showObjectIDs = {
+                type = "toggle",
+                order = 5.04,
+                name = function() return l10n('Show Object IDs'); end,
+                desc = function() return l10n('When this is checked, the ID of objects will be shown in tooltips. These are guesses and only show the first matching ID in the QuestieDB.'); end,
+                disabled = function() return (not Questie.db.profile.enableTooltips); end,
+                width = "full",
+                get = function() return Questie.db.profile.enableTooltipsObjectID; end,
+                set = function (_, value)
+                    Questie.db.profile.enableTooltipsObjectID = value
+                end
+            },
+            showQuestIDs = {
+                type = "toggle",
+                order = 5.05,
+                name = function() return l10n('Show Quest IDs'); end,
+                desc = function() return l10n('When this is checked, the ID of quests will show in tooltips and the tracker.'); end,
+                disabled = function() return (not Questie.db.profile.enableTooltips) or Questie.IsSoD; end,
+                width = "full",
+                get = function() return Questie.IsSoD or Questie.db.profile.enableTooltipsQuestID; end,
                 set = function (_, value)
                     Questie.db.profile.enableTooltipsQuestID = value
                     QuestieTracker:Update()
@@ -306,7 +341,7 @@ function QuestieOptions.tabs.advanced:Initialize()
             },
             debugEnabled = {
                 type = "toggle",
-                order = 5.03,
+                order = 5.06,
                 name = function() return l10n('Enable Debug'); end,
                 desc = function() return l10n('Enable or disable debug functionality.'); end,
                 width = "full",
@@ -320,7 +355,7 @@ function QuestieOptions.tabs.advanced:Initialize()
             },
             skipValidation = {
                 type = "toggle",
-                order = 5.04,
+                order = 5.07,
                 name = function() return l10n('Skip Validation'); end,
                 desc = function() return l10n('Skip database validation upon recompile. Validation is only present with debug enabled in the first place.'); end,
                 width = "full",
@@ -332,7 +367,7 @@ function QuestieOptions.tabs.advanced:Initialize()
             },
             debugEnabledPrint = {
                 type = "toggle",
-                order = 5.06,
+                order = 5.08,
                 disabled = function() return not Questie.db.profile.debugEnabled; end,
                 name = function() return l10n('Enable Debug').."-PRINT" end,
                 desc = function() return l10n('Enable or disable debug functionality.').."-PRINT" end,
@@ -351,7 +386,7 @@ function QuestieOptions.tabs.advanced:Initialize()
                     [3] = "DEBUG_DEVELOP",
                     [4] = "DEBUG_SPAM",
                 },
-                order = 5.07,
+                order = 5.09,
                 name = function() return l10n('Debug level to print'); end,
                 width = "normal",
                 disabled = function() return not (Questie.db.profile.debugEnabledPrint and Questie.db.profile.debugEnabled); end,

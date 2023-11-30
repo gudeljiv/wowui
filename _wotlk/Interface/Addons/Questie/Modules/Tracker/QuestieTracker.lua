@@ -39,6 +39,8 @@ local _QuestEventHandler = QuestEventHandler.private
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+---@type QuestieDebugOffer
+local QuestieDebugOffer = QuestieLoader:ImportModule("QuestieDebugOffer")
 
 local LSM30 = LibStub("LibSharedMedia-3.0")
 
@@ -73,9 +75,12 @@ local trackerBaseFrame, trackerHeaderFrame, trackerQuestFrame
 local QuestLogFrame = QuestLogExFrame or ClassicQuestLog or QuestLogFrame
 
 function QuestieTracker.Initialize()
-    if QuestieTracker.started or (not Questie.db.profile.trackerEnabled) then
+    if QuestieTracker.started then
+        -- The Tracker was already initialized, so we don't need to do it again.
         return
     end
+
+    -- These values might also be accessed by other modules, so we need to make sure they exist. Even when the Tracker is disabled
     if (not Questie.db.char.TrackerHiddenQuests) then
         Questie.db.char.TrackerHiddenQuests = {}
     end
@@ -108,6 +113,11 @@ function QuestieTracker.Initialize()
     end
     if (not Questie.db.profile.trackerSetpoint) then
         Questie.db.profile.trackerSetpoint = "TOPLEFT"
+    end
+
+    if (not Questie.db.profile.trackerEnabled) then
+        -- The Tracker is disabled, no need to continue
+        return
     end
 
     -- Initialize tracker frames
@@ -161,24 +171,6 @@ function QuestieTracker.Initialize()
             -- Hides tracker during a login or reloadUI
             if Questie.db.profile.hideTrackerInDungeons and IsInInstance() then
                 QuestieTracker:Collapse()
-            end
-
-            -- Syncs "Always Show Tracker" upon login
-            if Questie.db.profile.alwaysShowTracker == true then
-                if Questie.db.char.isTrackerExpanded == false then
-                    Questie.db.char.isTrackerExpanded = true
-                end
-
-                if (not QuestieTracker:HasQuest()) then
-                    Questie.db.profile.trackerHeaderEnabled = true
-                    trackerBaseFrame:SetWidth(trackerHeaderFrame:GetWidth())
-                else
-                    if Questie.db.profile.currentHeaderEnabledSetting == false then
-                        Questie.db.profile.trackerHeaderEnabled = false
-                    end
-                end
-            else
-                Questie.db.profile.currentHeaderEnabledSetting = Questie.db.profile.trackerHeaderEnabled
             end
 
             -- Sync and populate the QuestieTracker - this should only run when a player has loaded
@@ -1381,7 +1373,7 @@ function QuestieTracker:Update()
                         line.label:SetPoint("TOPLEFT", line, "TOPLEFT", questMarginLeft, 0)
 
                         -- Set Achievement Title
-                        if Questie.db.profile.enableTooltipsQuestID then
+                        if Questie.db.profile.enableTooltipsQuestID or Questie.IsSoD then
                             line.label:SetText("|cFFFFFF00" .. achieve.Name .. " (" .. achieve.Id .. ")|r")
                         else
                             line.label:SetText("|cFFFFFF00" .. achieve.Name .. "|r")
@@ -1722,14 +1714,11 @@ function QuestieTracker:UpdateFormatting()
     -- when nothing is tracked or when alwaysShowTracker is being used.
     if (not QuestieTracker:HasQuest()) then
         if Questie.db.profile.alwaysShowTracker then
-            Questie.db.profile.trackerHeaderEnabled = true
             trackerBaseFrame:Show()
         else
-            Questie.db.profile.trackerHeaderEnabled = Questie.db.profile.currentHeaderEnabledSetting
             trackerBaseFrame:Hide()
         end
     else
-        Questie.db.profile.trackerHeaderEnabled = Questie.db.profile.currentHeaderEnabledSetting
         trackerBaseFrame:Show()
     end
 
@@ -1745,7 +1734,7 @@ function QuestieTracker:UpdateFormatting()
 
     TrackerBaseFrame:Update()
 
-    if Questie.db.profile.trackerHeaderEnabled then
+    if Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest()) then
         QuestieCompat.SetResizeBounds(trackerBaseFrame, trackerHeaderFrame:GetWidth() + Questie.db.profile.trackerFontSizeHeader + 10, trackerHeaderFrame:GetHeight() + Questie.db.profile.trackerFontSizeZone + 23)
     else
         QuestieCompat.SetResizeBounds(trackerBaseFrame, (TrackerLinePool.GetFirstLine().label:GetUnboundedStringWidth() + 40), Questie.db.profile.trackerFontSizeZone + 22)
@@ -1765,7 +1754,7 @@ function QuestieTracker:UpdateWidth(trackerVarsCombined)
             -- Tracker Sizer is in Manual Mode
             if (not TrackerBaseFrame.isSizing) then
                 -- Tracker is not being Sized | Manual width based on the width set by the Tracker Sizer
-                if trackerWidthByManual < trackerHeaderFrameWidth and Questie.db.profile.trackerHeaderEnabled then
+                if trackerWidthByManual < trackerHeaderFrameWidth and (Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest())) then
                     trackerBaseFrame:SetWidth(trackerHeaderFrameWidth)
                 elseif trackerWidthByManual < trackerHeaderlessWidth then
                     trackerBaseFrame:SetWidth(trackerHeaderlessWidth)
@@ -1778,7 +1767,7 @@ function QuestieTracker:UpdateWidth(trackerVarsCombined)
             end
         else
             -- Tracker Sizer is in Auto Mode
-            if (trackerVarsCombined < trackerHeaderFrameWidth and Questie.db.profile.trackerHeaderEnabled) then
+            if (trackerVarsCombined < trackerHeaderFrameWidth and (Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest()))) then
                 -- Apply headerFrameWidth
                 trackerBaseFrame:SetWidth(trackerHeaderFrameWidth)
             else
@@ -1790,7 +1779,7 @@ function QuestieTracker:UpdateWidth(trackerVarsCombined)
         trackerQuestFrame:SetWidth(trackerBaseFrame:GetWidth())
         trackerQuestFrame.ScrollChildFrame:SetWidth(trackerBaseFrame:GetWidth())
     else
-        if Questie.db.profile.trackerHeaderEnabled then
+        if Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest()) then
             trackerBaseFrame:SetWidth(trackerHeaderFrameWidth)
             trackerQuestFrame:SetWidth(trackerHeaderFrameWidth)
             trackerQuestFrame.ScrollChildFrame:SetWidth(trackerHeaderFrameWidth)
@@ -1820,7 +1809,7 @@ function QuestieTracker:UpdateHeight()
         -- Set the baseFrame to full height so we can measure it
         trackerQuestFrame:SetHeight(trackerQuestFrame.ScrollChildFrame:GetHeight())
 
-        if Questie.db.profile.trackerHeaderEnabled then
+        if Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest()) then
             trackerBaseFrame:SetHeight(trackerQuestFrame:GetHeight() + trackerHeaderFrame:GetHeight() + 20)
         else
             trackerBaseFrame:SetHeight(trackerQuestFrame:GetHeight() + 20)
@@ -1830,7 +1819,7 @@ function QuestieTracker:UpdateHeight()
         if (not TrackerBaseFrame.isSizing) then
             -- Tracker is not being re-sized
             if trackerBaseFrame:GetHeight() > trackerHeightCheck then
-                if trackerHeightCheck < trackerHeaderFrameHeight + 10 and Questie.db.profile.trackerHeaderEnabled then
+                if trackerHeightCheck < trackerHeaderFrameHeight + 10 and (Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest())) then
                     trackerBaseFrame:SetHeight(trackerHeaderFrameHeight)
                 elseif trackerHeightCheck < trackerHeaderlessHeight then
                     trackerBaseFrame:SetHeight(trackerHeaderlessHeight)
@@ -1843,7 +1832,7 @@ function QuestieTracker:UpdateHeight()
         end
 
         -- Resize the questFrame to match the baseFrame after the trackerHeightCheck is applied
-        if Questie.db.profile.trackerHeaderEnabled then
+        if Questie.db.profile.trackerHeaderEnabled or (Questie.db.profile.alwaysShowTracker and not QuestieTracker:HasQuest()) then
             -- With Header Frame
             trackerQuestFrame:SetHeight(trackerBaseFrame:GetHeight() - trackerHeaderFrame:GetHeight() - 20)
         else
@@ -2136,7 +2125,11 @@ function QuestieTracker:AQW_Insert(index, expire)
                 QuestieQuest:PopulateObjectiveNotes(quest)
             end
         else
-            Questie:Error("Missing quest " .. tostring(questId) .. "," .. tostring(expire) .. " during tracker update")
+            if Questie.IsSoD then
+                QuestieDebugOffer.QuestTracking(questId)
+            else
+                Questie:Error("Missing quest " .. tostring(questId) .. "," .. tostring(expire) .. " during tracker update")
+            end
         end
     end
     QuestieCombatQueue:Queue(function()
