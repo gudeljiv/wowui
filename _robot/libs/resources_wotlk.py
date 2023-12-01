@@ -10,11 +10,11 @@ data = {
         "rogue": {"#ffff8b"},
         "paladin": {"#ffacd4"},
         "warlock": {"#a8a6fd"},
-        "priest": {"#ffffff"}
+        "priest": {"#ffffff"},
     },
     "globals": [],
     "healing": [
-        {"name": "healthstone", "type": "GetSpellTexture", "id": 5720,  "key": "4", "modifier": "lalt"},
+        {"name": "healthstone", "type": "GetSpellTexture", "id": 5720, "key": "4", "modifier": "lalt"},
         {"name": "healing potion", "type": "GetSpellTexture", "id": 28491, "key": "5", "modifier": "lalt"},
         {"name": "fel blossom", "type": "GetSpellTexture", "id": 28527, "key": "6", "modifier": "lalt"},
         {"name": "lifeblood", "type": "GetSpellTexture", "id": 55428, "key": "7", "modifier": "lalt"},
@@ -35,7 +35,7 @@ data = {
         "secondary": [
             {"name": "totem searing", "type": "GetSpellTexture", "id": 6363, "key": "1", "modifier": "lalt"},
             {"name": "totem strength", "type": "GetSpellTexture", "id": 8075, "key": "2", "modifier": "lalt"},
-        ]
+        ],
     },
     "warrior": {
         "main": [
@@ -76,7 +76,7 @@ data = {
             {"name": "spell reflection", "type": "GetSpellTexture", "id": 23920, "key": "v"},
             {"name": "blood fury", "type": "GetSpellTexture", "id": 20572, "key": "8"},
             {"name": "gloves_trinket", "type": "GetSpellTexture", "id": 52766, "key": "t"},
-        ]
+        ],
     },
     "druid": {
         "main": [
@@ -103,7 +103,7 @@ data = {
         "secondary": [
             {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},
-        ]
+        ],
     },
     "death knight": {
         "main": [
@@ -133,7 +133,7 @@ data = {
             {"name": "vampiric blood", "type": "GetSpellTexture", "id": 55233, "key": "6"},
             {"name": "icebound fortitude", "type": "GetSpellTexture", "id": 48792, "key": "t"},
             {"name": "unbreakable armor", "type": "GetSpellTexture", "id": 51271, "key": "h"},
-        ]
+        ],
     },
     "hunter": {
         "main": [
@@ -164,7 +164,7 @@ data = {
             {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
             {"name": "aspect of the dragonhawk", "type": "GetSpellTexture", "id": 61846, "key": "f1"},
             {"name": "aspect of the viper", "type": "GetSpellTexture", "id": 34074, "key": "f2"},
-        ]
+        ],
     },
     "rogue": {
         "main": [
@@ -173,7 +173,7 @@ data = {
         ],
         "secondary": [
             {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
-        ]
+        ],
     },
     "paladin": {
         "main": [
@@ -204,16 +204,16 @@ data = {
         ],
         "secondary": [
             {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "lalt"},
-        ]
+        ],
     },
     "warlock": {
         "main": [
             {"name": "immolate", "type": "GetSpellTexture", "id": 348, "key": "h"},
             {"name": "corruption", "type": "GetSpellTexture", "id": 172, "key": "v"},
             {"name": "curse of agony", "type": "GetSpellTexture", "id": 980, "key": "g"},
-            {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "f11"}
+            {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "f11"},
         ],
-        "secondary": []
+        "secondary": [],
     },
     "priest": {
         "main": [
@@ -233,8 +233,8 @@ data = {
             {"name": "mind flay", "type": "GetSpellTexture", "id": 15407, "key": "2"},
             {"name": "holy nova", "type": "GetSpellTexture", "id": 15237, "key": "8"},
         ],
-        "secondary": []
-    }
+        "secondary": [],
+    },
 }
 
 monitor_settings = dict()
@@ -247,7 +247,7 @@ monitor_settings["3840"] = {
     "p_combat_left": 39,
     "p_interrupt_left": 57,
     "p_behind_left": 74,
-    "p_clss_left": 88
+    "p_clss_left": 88,
 }
 monitor_settings["2560"] = {
     "x": 8,
@@ -258,7 +258,7 @@ monitor_settings["2560"] = {
     "p_combat_left": 26,
     "p_interrupt_left": 37,
     "p_behind_left": 47,
-    "p_clss_left": 60
+    "p_clss_left": 60,
 }
 monitor_settings["3072"] = {
     "x": 12,
@@ -269,7 +269,7 @@ monitor_settings["3072"] = {
     "p_combat_left": 40,
     "p_interrupt_left": 54,
     "p_behind_left": 64,
-    "p_clss_left": 77
+    "p_clss_left": 77,
 }
 monitor_settings["2048.0"] = {
     "x": 8,
@@ -280,7 +280,7 @@ monitor_settings["2048.0"] = {
     "p_combat_left": 24,
     "p_interrupt_left": 33,
     "p_behind_left": 43,
-    "p_clss_left": 52
+    "p_clss_left": 52,
 }
 monitor_settings["1440.0"] = {
     "x": 5,
@@ -291,7 +291,7 @@ monitor_settings["1440.0"] = {
     "p_combat_left": 17,
     "p_interrupt_left": 24,
     "p_behind_left": 31,
-    "p_clss_left": 37
+    "p_clss_left": 37,
 }
 
 
@@ -418,11 +418,7 @@ keyCodeMap = {
     "RWIN": "0xDC",
     "APPS": "0xDD",
     "POWER": "0xDE",
-    "SLEEP": "0xDF"
+    "SLEEP": "0xDF",
 }
 
-keyCodeMap_OSX = {
-    "LCONTROL": "ctrl",
-    "LALT": "alt",
-    "LSHIFT": "shift"
-}
+keyCodeMap_OSX = {"LCONTROL": "ctrl", "LALT": "alt", "LSHIFT": "shift"}
