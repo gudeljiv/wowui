@@ -71,7 +71,7 @@ if os.name == "posix":
     abilities_folder = dir_path + "/images/" + mode + "/" + monitor
     slash = "/"
 else:
-    abilities_folder = dir_path + "\images\\" + mode + "\\" + monitor
+    abilities_folder = dir_path + r"\images\\" + mode + r"\\" + monitor
     slash = "\\"
 
 if not os.path.exists(abilities_folder):

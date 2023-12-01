@@ -46,19 +46,19 @@ ThreatClassic2DB = {
 					0, -- [4]
 				},
 				["width"] = 210,
-				["position"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					500, -- [4]
-				},
-				["locked"] = true,
 				["headerColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
 					655, -- [4]
 					-340, -- [5]
+				},
+				["locked"] = true,
+				["position"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					500, -- [4]
 				},
 				["height"] = 140,
 			},

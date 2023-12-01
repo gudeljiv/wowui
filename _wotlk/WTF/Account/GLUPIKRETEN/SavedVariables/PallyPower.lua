@@ -34,8 +34,8 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
-			["border"] = "None",
 			["SalvInCombat"] = true,
+			["border"] = "None",
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -48,18 +48,6 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Vermina"] = {
-		4, -- [1]
-		3, -- [2]
-		3, -- [3]
-		3, -- [4]
-		4, -- [5]
-		3, -- [6]
-		3, -- [7]
-		3, -- [8]
-		3, -- [9]
-		4, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
 }
@@ -291,17 +279,17 @@ PallyPower_AuraAssignments = {
 	["Denelope-Venoxis"] = 1,
 	["Palladen"] = 0,
 	["Kiniaa"] = 1,
-	["Biself-Gehennas"] = 3,
-	["Bloedoffer"] = 0,
 	["Badpaladinn"] = 0,
+	["Bloedoffer"] = 0,
 	["Tankwtf"] = 3,
+	["Biself-Gehennas"] = 3,
 	["Maxthepala"] = 0,
 	["Kounine-Sulfuron"] = 3,
 	["Prosec"] = 0,
 	["Slaskkevin"] = 1,
 	["Ikoras"] = 0,
-	["Holytimes"] = 0,
 	["Teralas-Mograine"] = 1,
+	["Holytimes"] = 0,
 	["Fálcor"] = 3,
 	["Tankerinó"] = 2,
 	["Etaya-Gehennas"] = 3,
@@ -311,18 +299,18 @@ PallyPower_AuraAssignments = {
 	["Veebz"] = 0,
 	["Kalexa"] = 0,
 	["Holyjeebus"] = 0,
-	["Festia"] = 2,
-	["Xoptimalz"] = 0,
-	["Veribig"] = 0,
-	["Kalypsõ"] = 0,
 	["Zivvy"] = 0,
+	["Xoptimalz"] = 0,
+	["Elskpala-Gehennas"] = 5,
+	["Kalypsõ"] = 0,
+	["Festia"] = 2,
 	["Mouritius"] = 0,
 	["Supachad"] = 0,
-	["Sistermerrin"] = 0,
-	["Attlee"] = 5,
-	["Doctør"] = 0,
-	["Silkespal"] = 0,
 	["Rvbbitt"] = 0,
+	["Attlee"] = 5,
+	["Hjørdís"] = 0,
+	["Silkespal"] = 0,
+	["Sistermerrin"] = 0,
 	["Selestra"] = 0,
 	["Thelichlight"] = 0,
 	["Uhndapa"] = 0,
@@ -357,11 +345,11 @@ PallyPower_AuraAssignments = {
 	["Amorin"] = 1,
 	["Nálkás"] = 3,
 	["Dathreemar"] = 5,
-	["Hjørdís"] = 0,
+	["Doctør"] = 0,
 	["Twitterstorm"] = 0,
 	["Yesnix"] = 0,
 	["Calystia"] = 2,
-	["Elskpala-Gehennas"] = 5,
+	["Veribig"] = 0,
 	["Pensacola"] = 6,
 	["Palabra"] = 0,
 	["Rubyrag"] = 0,

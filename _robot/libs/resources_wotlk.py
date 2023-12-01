@@ -33,8 +33,8 @@ data = {
             {"name": "fire nova", "type": "GetSpellTexture", "id": 1535, "key": "k"},
         ],
         "secondary": [
-            {"name": "totem strength", "type": "GetSpellTexture", "id": 8075, "key": "numpad1"},
-            {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "key": "numpad2"},
+            {"name": "totem searing", "type": "GetSpellTexture", "id": 6363, "key": "1", "modifier": "lalt"},
+            {"name": "totem strength", "type": "GetSpellTexture", "id": 8075, "key": "2", "modifier": "lalt"},
         ]
     },
     "warrior": {
