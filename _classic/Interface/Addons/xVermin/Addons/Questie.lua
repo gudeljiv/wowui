@@ -1,7 +1,7 @@
 local _, xVermin = ...
 local ib, numQuests, showQuestieFrame
 
-local width = 235
+local width = 300
 
 xVermin.CheckIfLoadedWithTimer(
 	'Questie_BaseFrame',
@@ -23,7 +23,8 @@ xVermin.CheckIfLoadedWithTimer(
 		-- Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.4)
 		Questie_BaseFrame:ClearAllPoints()
 		Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 1, -10)
-		-- if (Questie_BaseFrame:GetWidth() < width) then
+		
+		-- if (Questie_BaseFrame:GetWidth() ~= width) then
 		-- 	Questie_BaseFrame:SetWidth(width)
 		-- end
 

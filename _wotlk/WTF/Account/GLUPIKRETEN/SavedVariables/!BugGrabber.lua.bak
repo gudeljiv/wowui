@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10181,
+	["session"] = 10189,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:217: Frame UIWidgetBelowMinimapContainerFrame is not movable or resizable",

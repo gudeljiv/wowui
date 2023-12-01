@@ -192,6 +192,18 @@ function QuestieWotlkNpcFixes:Load()
             },
             [npcKeys.zoneID] = zoneIDs.HOWLING_FJORD,
         },
+        [23921] = {
+            [npcKeys.name] = "Northeast Plague Tank",
+        },
+        [23922] = {
+            [npcKeys.name] = "Northwest Plague Tank",
+        },
+        [23923] = {
+            [npcKeys.name] = "Southwest Plague Tank",
+        },
+        [23924] = {
+            [npcKeys.name] = "Southeast Plague Tank",
+        },
         [23931] = {
             [npcKeys.spawns] = {[zoneIDs.HOWLING_FJORD]={{54.93,57.47}}},
             [npcKeys.zoneID] = zoneIDs.HOWLING_FJORD,
@@ -317,6 +329,9 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.friendlyToFaction] = "H",
             [npcKeys.factionID] = 1064,
         },
+        [24290] = {
+            [npcKeys.name] = "New Agamand Plague Tank",
+        },
         [24329] = {
             [npcKeys.spawns] = {
                 [zoneIDs.HOWLING_FJORD] = {{72,26.4},{70.3,27.3},{68.7,28.1},{66.5,24.9},{69.7,21.5},{72.6,19.9},{73.6,23.1}},
@@ -380,6 +395,10 @@ function QuestieWotlkNpcFixes:Load()
         [24733] = { --"Snow Tracker Junek"
             [npcKeys.friendlyToFaction] = "H",
             [npcKeys.factionID] = 1064,
+        },
+        [24847] = {
+            [npcKeys.spawns] = {[zoneIDs.HOWLING_FJORD] = {{71.54,69.51}}},
+            [npcKeys.zoneID] = zoneIDs.HOWLING_FJORD,
         },
         [24910] = {
             [npcKeys.spawns] = {
@@ -1602,6 +1621,9 @@ function QuestieWotlkNpcFixes:Load()
         [35451] = {
             [npcKeys.spawns] = {[zoneIDs.TRIAL_OF_THE_CHAMPION]={{51,52.4},{-1,-1}}},
         },
+        [36494] = {
+            [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{67.67,54.94},{-1,-1}}},
+        },
         [36626] = {
             [npcKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{19.8,65.4}}},
         },
@@ -1623,12 +1645,32 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{40.5,77.8}}},
             [npcKeys.zoneID] = zoneIDs.PIT_OF_SARON,
         },
+        [37094] = {
+            [npcKeys.spawns] = {[zoneIDs.FORGE_OF_SOULS]={{42.5,11},{-1,-1}}},
+            [npcKeys.zoneID] = zoneIDs.FORGE_OF_SOULS,
+        },
+        [37158] = {
+            [npcKeys.spawns] = {[zoneIDs.HALLS_OF_REFLECTION]={{40.4,70.9},{-1,-1}}},
+            [npcKeys.zoneID] = zoneIDs.HALLS_OF_REFLECTION,
+        },
         [37172] = {
             [npcKeys.spawns] = {[zoneIDs.ORGRIMMAR]={{50.7,65.8}}},
             [npcKeys.zoneID] = zoneIDs.ORGRIMMAR,
         },
+        [37205] = {
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{52.93,80.24}}},
+            [npcKeys.zoneID] = zoneIDs.ISLE_OF_QUEL_DANAS,
+        },
         [37214] = {
             [npcKeys.spawns] = {[zoneIDs.ELWYNN_FOREST]={{29.1,66.5},{28.8,66.2},{29.5,65.7},{28.8,65.7},{29.2,65.2}},[zoneIDs.DUROTAR]={{40.3,15.8},{40.1,15.5},{40.5,15.5},{40.5,15.2},{40.3,15.0}}}
+        },
+        [37527] = {
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{44.52,45.5}}},
+            [npcKeys.zoneID] = zoneIDs.ISLE_OF_QUEL_DANAS,
+        },
+        [37552] = {
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{53,80}}},
+            [npcKeys.zoneID] = zoneIDs.ISLE_OF_QUEL_DANAS,
         },
         [37592] = {
             [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{66,54.8}}},

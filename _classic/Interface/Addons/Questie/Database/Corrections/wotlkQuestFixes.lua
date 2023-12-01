@@ -450,8 +450,20 @@ function QuestieWotlkQuestFixes:Load()
         [10776] = {
             [questKeys.objectives] = {{{19823}},nil,{{31310}}},
         },
+        [10888] = {
+            [questKeys.exclusiveTo] = {13430},
+        },
         [10900] = {
             [questKeys.requiredMaxLevel] = 70,
+        },
+        [10901] = {
+            [questKeys.exclusiveTo] = {13431},
+        },
+        [10958] = {
+            [questKeys.preQuestSingle] = {10949},
+        },
+        [10985] = {
+            [questKeys.exclusiveTo] = {13429},
         },
         [11010] = {
             [questKeys.requiredClasses] = classIDs.WARLOCK + classIDs.ROGUE + classIDs.MAGE + classIDs.PRIEST + classIDs.WARRIOR + classIDs.PALADIN + classIDs.HUNTER + classIDs.SHAMAN + classIDs.DEATH_KNIGHT,
@@ -579,6 +591,7 @@ function QuestieWotlkQuestFixes:Load()
         [11332] = {
             [questKeys.sourceItemId] = 33634,
             [questKeys.preQuestSingle] = {11331},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Get a gryphon to ride and some bombs"), 0, {{"monster", 23859}}}},
         },
         [11335] = {
             [questKeys.triggerEnd] = {"Victory in Arathi Basin", {
@@ -785,6 +798,9 @@ function QuestieWotlkQuestFixes:Load()
         [11466] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Talk to Olga"), 0, {{"monster", 24639}}}},
         },
+        [11467] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_LOOT, l10n("Search for treasure"), 0, {{"object", 186944}}}},
+        },
         [11468] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_LOOT, l10n("Send your Trained Rock Falcon after it"), 0, {{"monster", 24747}}}},
         },
@@ -795,8 +811,8 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_SLAY, l10n("Fight Jonah"), 0, {{"monster", 24742}}}},
         },
         [11472] = {
-            [questKeys.triggerEnd] = {"Reef Bull led to a Reef Cow",{[zoneIDs.HOWLING_FJORD]={{31.16,71.63,},},},},
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Lure Reef Bull with Tasty Reef Fish"), 0, {{"monster", 24786}}}},
+            [questKeys.objectives] = {{{24797,"Reef Bull led to a Reef Cow"}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Lure Reef Bull with Tasty Reef Fish"), 0, {{"monster", 24786},{"monster", 24804}}}},
             [questKeys.reputationReward] = {{1073,500}},
         },
         [11475] = {
@@ -816,8 +832,12 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.objectives] = {{{24718,"Lebronski Bluffed"}}},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Work Bench then cast Bluff on Lebronski after you've walked on his rug"),0,{{"object", 186958}}}},
         },
+        [11494] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Put on the Golem suit"),0,{{"object", 186958}}}},
+        },
         [11495] = {
-            [questKeys.triggerEnd] = {"Thundering Cave investigated",{[zoneIDs.HOWLING_FJORD]={{71.5,69.75,},},},},
+            [questKeys.objectives] = {{{24847,"Thundering Cave investigated"}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Put on the Golem suit"),0,{{"object", 186958}}}},
         },
         [11529] = {
             [questKeys.extraObjectives] = {{{[zoneIDs.HOWLING_FJORD]={{37.2,74.8}}}, Questie.ICON_TYPE_OBJECT, l10n("Use The Big Gun at the front of the ship to slay Sorlof"),0,{{"monster", 24992}}}},
@@ -826,7 +846,10 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.specialFlags] = 1,
         },
         [11567] = {
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Ask Alanya for transportation"),0,{{"monster", 27933}}}},
+            [questKeys.extraObjectives] = {
+                {nil, Questie.ICON_TYPE_TALK, l10n("Ask Alanya for transportation"),0,{{"monster", 27933}}},
+                {nil, Questie.ICON_TYPE_TALK, l10n("After acquiring the Armor, get a ride back"),0,{{"monster", 28277}}},
+            },
         },
         [11569] = {
             [questKeys.preQuestSingle] = {11571},
@@ -3464,7 +3487,12 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.exclusiveTo] = {14181,14182,14183},
         },
         [13429] = {
-            [questKeys.triggerEnd] = {"Help Akama and Maiev enter the Black Temple.",{[zoneIDs.SHADOWMOON_VALLEY]={{71.02,46.12,},},},},
+            [questKeys.triggerEnd] = {"Help Akama and Maiev enter the Black Temple.", {[zoneIDs.SHADOWMOON_VALLEY]={{71.05,46.11},{66.29,44.06}}}},
+            [questKeys.exclusiveTo] = {10985},
+            [questKeys.startedBy] = {{18528}},
+            [questKeys.finishedBy] = {{18528}},
+            [questKeys.preQuestSingle] = {10949},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Let Xi'ri know you're ready to battle"), 1, {{"monster", 18528}}}},
         },
         [13430] = {
             [questKeys.exclusiveTo] = {10888},
@@ -5156,6 +5184,13 @@ function QuestieWotlkQuestFixes:Load()
         [24431] = {
             [questKeys.specialFlags] = 1,
         },
+        [24461] = {
+            [questKeys.sourceItemId] = 49723,
+        },
+        [24535] = {
+            [questKeys.objectives] = {{{37205,"Thalorien's Blessing obtained"}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Examine the remains"), 0, {{"monster", 37552}}}},
+        },
         [24536] = {
             [questKeys.objectives] = {{{3296}}},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use Snagglebolt's Air Analyzer on perfumed guards"), 0, {{"monster", 3296}}}},
@@ -5171,6 +5206,13 @@ function QuestieWotlkQuestFixes:Load()
         },
         [24556] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Ask Shandy Glossgleam to lend you a tabard"), 0, {{"monster", 36856}}}},
+        },
+        [24559] = {
+            [questKeys.sourceItemId] = 49723,
+        },
+        [24563] = {
+            [questKeys.objectives] = {{{37205,"Thalorien's Blessing obtained"}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Examine the remains"), 0, {{"monster", 37552}}}},
         },
         [24579] = {
             [questKeys.exclusiveTo] = {24580,24581,24582,24583,24584,24585,24586,24587,24588,24589,24590},

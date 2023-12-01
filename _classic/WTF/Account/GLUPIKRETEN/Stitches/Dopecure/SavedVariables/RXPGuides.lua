@@ -394,29 +394,43 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [1]
 		},
-		[369] = {
+		[826] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 4,
-				["text"] = "Vicious Night Web Spider Venom: 0/4",
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Hexed Troll slain: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
-		},
-		[368] = {
 			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Vile Fin Scale: 0/5",
+				["type"] = "monster",
+				["numRequired"] = 8,
+				["text"] = "Voodoo Troll slain: 0/8",
 				["finished"] = false,
 				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[398] = {
+			}, -- [2]
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Maggot Eye's Paw: 0/1",
+				["text"] = "Zalazane's Head: 0/1",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [3]
+		},
+		[4402] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Cactus Apple: 0/10",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[789] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 10,
+				["text"] = "Scorpid Worker Tail: 0/10",
 				["finished"] = false,
 				["numFulfilled"] = 0,
 			}, -- [1]
@@ -446,46 +460,32 @@ RXPCData = {
 				["numFulfilled"] = 0,
 			}, -- [2]
 		},
-		[789] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Scorpid Worker Tail: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[4402] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Cactus Apple: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[826] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Hexed Troll slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Voodoo Troll slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
+		[398] = {
 			{
 				["type"] = "item",
 				["numRequired"] = 1,
-				["text"] = "Zalazane's Head: 0/1",
+				["text"] = "Maggot Eye's Paw: 0/1",
 				["finished"] = false,
 				["numFulfilled"] = 0,
-			}, -- [3]
+			}, -- [1]
+		},
+		[368] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 5,
+				["text"] = "Vile Fin Scale: 0/5",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
+		},
+		[369] = {
+			{
+				["type"] = "item",
+				["numRequired"] = 4,
+				["text"] = "Vicious Night Web Spider Venom: 0/4",
+				["finished"] = false,
+				["numFulfilled"] = 0,
+			}, -- [1]
 		},
 	},
 	["currentGuideGroup"] = "RestedXP Survival Guide (H)",
@@ -522,29 +522,29 @@ RXPCData = {
 		[792] = "Vile Familiars",
 		[794] = "Burning Blade Medallion",
 		[404] = "A Putrid Task",
-		[369] = "A New Plague",
-		[368] = "A New Plague",
-		[808] = "Minshina's Skull",
-		[356] = "Rear Guard Patrol",
-		[398] = "Wanted: Maggot Eye",
-		[789] = "Sting of the Scorpid",
-		[834] = "Winds in the Desert",
-		[818] = "A Solvent Spirit",
-		[805] = "Report to Sen'jin Village",
-		[4402] = "Galgar's Cactus Apple Surprise",
 		[826] = "Zalazane",
+		[4402] = "Galgar's Cactus Apple Surprise",
+		[808] = "Minshina's Skull",
+		[805] = "Report to Sen'jin Village",
+		[398] = "Wanted: Maggot Eye",
+		[834] = "Winds in the Desert",
+		[789] = "Sting of the Scorpid",
+		[818] = "A Solvent Spirit",
+		[356] = "Rear Guard Patrol",
+		[368] = "A New Plague",
+		[369] = "A New Plague",
 	},
 	["currentGuideName"] = "06-13 Orc/Troll",
 	["stepSkip"] = {
 		[7] = true,
 		[15] = true,
-		[22] = true,
-		[10] = true,
-		[21] = true,
-		[3] = true,
-		[6] = true,
-		[23] = true,
 		[11] = true,
+		[10] = true,
+		[6] = true,
+		[21] = true,
+		[22] = true,
+		[23] = true,
+		[3] = true,
 	},
 	["currentStepId"] = 4201453450,
 }

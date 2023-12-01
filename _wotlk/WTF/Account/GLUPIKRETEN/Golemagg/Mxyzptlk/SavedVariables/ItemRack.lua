@@ -7,6 +7,14 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["Buttons"] = {
+		[13] = {
+			["Top"] = 614.1904296875,
+			["Left"] = 817.555908203125,
+		},
+		[14] = {
+			["DockTo"] = 13,
+			["Side"] = "LEFT",
+		},
 	},
 	["Sets"] = {
 		["~CombatQueue"] = {
@@ -20,7 +28,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["CurrentSet"] = "DPS",
+	["EnableEvents"] = "ON",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -30,10 +38,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
+	["Alpha"] = 1,
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
-	["EnableQueues"] = "ON",
-	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "DPS",
 }

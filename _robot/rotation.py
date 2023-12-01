@@ -14,6 +14,8 @@ else:
     from libs.resources_classic import monitor_settings
     from libs.resources_classic import keyCodeMap
 
+
+
 from libs.interception import *
 from libs.ctypes_custom import KeyPress as cKeyPress
 from win32api import GetSystemMetrics
@@ -31,7 +33,7 @@ import cv2
 import _thread
 import time
 from datetime import datetime as dt
-from skimage.metrics import structural_similarity
+from skimage import metrics
 from os.path import exists
 from os import listdir
 from os.path import isfile, join
@@ -65,9 +67,11 @@ p_clss_left = monitor_settings[monitor]["p_clss_left"]
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "\images\\" + mode + "\\" + monitor
-debug_folder = dir_path + "\images\\_\\"
+abilities_folder = dir_path + r"\images\\" + mode + r"\\" + monitor
+debug_folder = dir_path + r"\images\\_\\"
 
+print(abilities_folder)
+print(debug_folder)
 
 # default class
 wow_class_loaded = wow_class
@@ -279,7 +283,7 @@ def main_rotation(main_skill, main_abilities):
     try:
         for key, ability in main_abilities.items():
             try:
-                score = structural_similarity(ability["image"], main_skill, channel_axis=2)
+                score = metrics.structural_similarity(ability["image"], main_skill, channel_axis=2)
                 if score*100 > 90:
                     if dprint:
                         print_debug(ability, score)
@@ -298,7 +302,7 @@ def secondary_rotation(secondary_skill, secondary_abilities):
         if data[wow_class]["secondary"]:
             for key, ability in secondary_abilities.items():
                 try:
-                    score = structural_similarity(ability["image"], secondary_skill, channel_axis=2)
+                    score = metrics.structural_similarity(ability["image"], secondary_skill, channel_axis=2)
                     if score*100 > 90:
                         if dprint:
                             print_debug(ability, score)

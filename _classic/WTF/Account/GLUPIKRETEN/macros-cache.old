@@ -1,3 +1,11 @@
+VER 3 0000000000000011 " " "136106"
+/inspect
+/run SortBags()
+END
+VER 3 0000000000000025 " " "134400"
+#showtooltip
+/cast [@cursor] Rough Copper Bomb
+END
 VER 3 0000000000000024 " " "134400"
 #showtooltip
 /use Solid Sharpening Stone
@@ -6,14 +14,6 @@ VER 3 0000000000000024 " " "134400"
 END
 VER 3 0000000000000012 " " "136173"
 /click BehindTarget
-END
-VER 3 0000000000000011 " " "136106"
-/inspect
-/run SortBags()
-END
-VER 3 0000000000000025 " " "134400"
-#showtooltip
-/cast [@cursor] Rough Copper Bomb
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip

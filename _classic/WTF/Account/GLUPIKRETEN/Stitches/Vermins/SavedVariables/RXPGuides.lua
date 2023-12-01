@@ -2,7 +2,6 @@
 RXPCData = {
 	["completedWaypoints"] = {
 		[9] = {
-			[2144100512] = true,
 		},
 		[10] = {
 		},

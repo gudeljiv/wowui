@@ -5,3 +5,8 @@ ItemRackOptions: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
+Leatrix_Maps: enabled
+Leatrix_enUS: enabled
+ElvUI: enabled
+Demodal: enabled
+Carbonite: enabled

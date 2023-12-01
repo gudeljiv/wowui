@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10935,
+	["session"] = 10949,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1411,5 +1411,13 @@ BugGrabberDB = {
 			["time"] = "2023/11/18 11:01:21",
 			["counter"] = 1,
 		}, -- [184]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'TrackedQuestsScrollFrame:SetVerticalScroll()'.",
+			["time"] = "2023/12/01 12:58:56",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetVerticalScroll'\n[string \"@Interface/SharedXML/SecureScrollTemplates.lua\"]:49: in function <Interface/SharedXML/SecureScrollTemplates.lua:48>\n[string \"=[C]\"]: in function `SetValue'\n[string \"@Interface/SharedXML/SecureScrollTemplates.lua\"]:85: in function <Interface/SharedXML/SecureScrollTemplates.lua:79>",
+			["session"] = 10943,
+			["counter"] = 1,
+		}, -- [185]
 	},
 }
