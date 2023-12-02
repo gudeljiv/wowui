@@ -1,5 +1,0 @@
-## Interface: 60000
-## Title: Confirm Loot Roll
-## Notes: Automatically Confirm Loot Rolls.
-ConfirmLootRoll.lua
-ConfirmLootRoll.xml

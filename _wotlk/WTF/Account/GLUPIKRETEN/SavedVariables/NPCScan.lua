@@ -1,2 +1,0 @@
-
-NPCScanDB = nil

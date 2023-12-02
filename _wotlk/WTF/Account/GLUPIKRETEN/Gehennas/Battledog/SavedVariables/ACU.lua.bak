@@ -1,2 +1,0 @@
-
-AddonCpuUsageDBLocal = nil

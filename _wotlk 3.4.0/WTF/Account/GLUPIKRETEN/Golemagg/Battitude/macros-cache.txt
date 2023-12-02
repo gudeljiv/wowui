@@ -1,7 +1,0 @@
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [stealth] Backstab; Sinister Strike
-/use 13
-/use 14
-END

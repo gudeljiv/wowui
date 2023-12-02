@@ -1,2 +1,0 @@
-
-globalSettings = nil
