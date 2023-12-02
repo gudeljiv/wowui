@@ -227,7 +227,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " M.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print_debug(number, wow_class, skill["name"], skill["id"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png")
+                    print_debug(
+                        number, wow_class, skill["name"], skill["id"], abilities_folder + slash + wow_class + slash + skill["name"] + " M.png"
+                    )
                     time.sleep(time2)
 
                 for skill in data[wow_class]["secondary"]:
@@ -275,7 +277,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + "healing" + slash + str(skill["name"]) + " H.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print_debug(number, wow_class, skill["name"], skill["id"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png")
+                    print_debug(
+                        number, wow_class, skill["name"], skill["id"], abilities_folder + slash + "healing" + slash + skill["name"] + " H.png"
+                    )
                     time.sleep(time2)
 
                 for skill in data["globals"]:
@@ -299,7 +303,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                     m_image = abilities_folder + slash + "globals" + slash + str(skill["name"]) + " G.png".format(**p_main)
                     main_image = sct.grab(p_main)
                     mss.tools.to_png(main_image.rgb, main_image.size, output=m_image)
-                    print_debug(number, wow_class, skill["name"], skill["id"], abilities_folder + slash + "globals" + slash + skill["name"] + " G.png")
+                    print_debug(
+                        number, wow_class, skill["name"], skill["id"], abilities_folder + slash + "globals" + slash + skill["name"] + " G.png"
+                    )
                     time.sleep(time2)
 
                 pyautogui.hotkey("enter")
