@@ -350,6 +350,10 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.friendlyToFaction] = "H",
             [npcKeys.factionID] = 1064,
         },
+        [24418] = {
+            [npcKeys.waypoints] = {},
+            [npcKeys.spawns] = {[zoneIDs.HOWLING_FJORD] = {{30.89,28.42},{30.88,28.18}}},
+        },
         [24440] = {
             [npcKeys.spawns] = {
                 [zoneIDs.HOWLING_FJORD] = {{30.2,26.4},{30.4,27},{30.6,24},{30.8,23.4},{30.8,26.6},{30.8,28.2},{30.8,28.6},{31,24.6},{31,26.4},{31.2,31},{31.6,27.2},{31.6,27.6},{31.8,26},},
@@ -1624,6 +1628,9 @@ function QuestieWotlkNpcFixes:Load()
         [36494] = {
             [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{67.67,54.94},{-1,-1}}},
         },
+        [36502] = {
+            [npcKeys.spawns] = {[zoneIDs.FORGE_OF_SOULS]={{43.3,12.2},{-1,-1}}},
+        },
         [36626] = {
             [npcKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{19.8,65.4}}},
         },
@@ -1631,7 +1638,7 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{19.8,41.8}}},
         },
         [36658] = {
-            [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{44.2,26}}},
+            [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{44.2,26},{-1,-1}}},
             [npcKeys.zoneID] = zoneIDs.PIT_OF_SARON,
         },
         [36770] = {
@@ -1640,6 +1647,14 @@ function QuestieWotlkNpcFixes:Load()
         },
         [36678] = {
             [npcKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{13.4,53.4}}},
+        },
+        [36774] = {
+            [npcKeys.spawns] = {[zoneIDs.THE_UNDERBELLY]={{35.68,57.2}}},
+            [npcKeys.zoneID] = zoneIDs.THE_UNDERBELLY,
+        },
+        [36776] = {
+            [npcKeys.spawns] = {[zoneIDs.THE_UNDERBELLY]={{64.18,15.6}}},
+            [npcKeys.zoneID] = zoneIDs.THE_UNDERBELLY,
         },
         [36990] = {
             [npcKeys.spawns] = {[zoneIDs.PIT_OF_SARON]={{40.5,77.8}}},
@@ -1663,6 +1678,10 @@ function QuestieWotlkNpcFixes:Load()
         },
         [37214] = {
             [npcKeys.spawns] = {[zoneIDs.ELWYNN_FOREST]={{29.1,66.5},{28.8,66.2},{29.5,65.7},{28.8,65.7},{29.2,65.2}},[zoneIDs.DUROTAR]={{40.3,15.8},{40.1,15.5},{40.5,15.5},{40.5,15.2},{40.3,15.0}}}
+        },
+        [37523] = {
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{44.4,45.62},{44.11,45.6},{44.14,45.14},{44.4,45.15},{44.4,44.66},{44.15,44.64},{44.49,44.04},{44.77,44.07},{44.76,44.94},{43.78,44.9},{43.81,44.05},{44.05,44.03}}},
+            [npcKeys.zoneID] = zoneIDs.ISLE_OF_QUEL_DANAS,
         },
         [37527] = {
             [npcKeys.spawns] = {[zoneIDs.ISLE_OF_QUEL_DANAS]={{44.52,45.5}}},

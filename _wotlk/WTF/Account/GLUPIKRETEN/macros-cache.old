@@ -1,11 +1,3 @@
-VER 3 0000000000000029 " " "132152"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-/petattack [@mouseover,exists,harm][]
-/petdefensive
-END
 VER 3 000000000000002A " " "132328"
 #showtooltip
 /dismount
@@ -27,6 +19,14 @@ END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
+VER 3 0000000000000029 " " "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -34,8 +34,8 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:33445
+/castsequence [combat] reset=combat item:33448
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
