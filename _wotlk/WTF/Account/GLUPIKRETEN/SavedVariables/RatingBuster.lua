@@ -93,20 +93,28 @@ RatingBusterWOTLK_DB = {
 			["sumExpertise"] = true,
 			["showAPFromStr"] = true,
 			["showMP5OCFromSpi"] = true,
+<<<<<<< HEAD
 			["showHealthFromSta"] = true,
 			["showArmorFromAgi"] = true,
 			["showAPFromArmor"] = true,
 			["profileVersion"] = 1,
 			["showManaFromInt"] = true,
+=======
+			["sumIgnorePlate"] = false,
+			["sumAP"] = true,
+			["showCritFromAgi"] = true,
+			["showAPFromArmor"] = true,
+			["sumParry"] = true,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["ratingPhysical"] = true,
+			["showDodgeFromAgi"] = true,
 			["minimap"] = {
 				["hide"] = true,
 			},
-			["showDodgeFromAgi"] = true,
-			["sumParry"] = true,
-			["showCritFromAgi"] = true,
-			["sumAP"] = true,
-			["sumIgnorePlate"] = false,
+			["showManaFromInt"] = true,
+			["profileVersion"] = 1,
+			["showArmorFromAgi"] = true,
+			["showHealthFromSta"] = true,
 		},
 		["Moolatz - Golemagg"] = {
 			["sumHit"] = true,

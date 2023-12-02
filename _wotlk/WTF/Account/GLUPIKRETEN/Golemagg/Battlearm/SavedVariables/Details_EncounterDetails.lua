@@ -1,6 +1,7 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
+<<<<<<< HEAD
 		[9615] = {
 			["Raid Damage Done"] = {
 				2323, -- [1]
@@ -437,6 +438,11 @@ EncounterDetailsDB = {
 				["max_value"] = 30712,
 				["__time"] = 1701512041,
 			},
+=======
+		[9606] = {
+		},
+		[9610] = {
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		},
 	},
 	["encounter_spells"] = {

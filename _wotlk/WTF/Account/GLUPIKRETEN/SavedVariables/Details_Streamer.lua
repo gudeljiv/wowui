@@ -49,10 +49,14 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
+<<<<<<< HEAD
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
+=======
+			["arrow_anchor_y"] = 0,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -63,17 +67,38 @@ Details_StreamerDB = {
 			["point"] = "RIGHT",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
+<<<<<<< HEAD
+=======
+			["author"] = "Details! Team",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+<<<<<<< HEAD
 			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
 			["use_spark"] = false,
+=======
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -83,6 +108,7 @@ Details_StreamerDB = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+<<<<<<< HEAD
 			["y"] = -183.107162475586,
 			["per_second"] = {
 				["enabled"] = false,
@@ -102,6 +128,20 @@ Details_StreamerDB = {
 			["use_square_mode"] = false,
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
+=======
+			["use_spark"] = false,
+			["font_size"] = 10,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["y"] = -183.107162475586,
+			["use_square_mode"] = false,
+			["main_frame_locked"] = true,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		},
 	},
 }

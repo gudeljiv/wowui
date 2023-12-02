@@ -28,20 +28,35 @@ RangeDisplayDB3 = {
 		["Kaonac - Jin'do"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+<<<<<<< HEAD
 		["Miqa - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
+=======
+		["Tudum - Jin'do"] = "Default",
+		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		["Pitchwise - Ashbringer"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
+<<<<<<< HEAD
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
+=======
+		["Moolatz - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	},
 	["profiles"] = {
 		["Default"] = {

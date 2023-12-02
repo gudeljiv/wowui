@@ -18,7 +18,11 @@ GMMONEY = {
 	},
 	["Golemagg"] = {
 		["Battlearm"] = {
+<<<<<<< HEAD
 			["GOLD"] = 207780236,
+=======
+			["GOLD"] = 204626831,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
@@ -30,7 +34,11 @@ GMMONEY = {
 			["CLASS"] = "PRIEST",
 		},
 		["Mxyzptlk"] = {
+<<<<<<< HEAD
 			["GOLD"] = 93122,
+=======
+			["GOLD"] = 96216,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["CLASS"] = "WARLOCK",
 		},
 		["Handrmandr"] = {
@@ -42,7 +50,11 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Moolatz"] = {
+<<<<<<< HEAD
 			["GOLD"] = 3135030,
+=======
+			["GOLD"] = 4194359,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["CLASS"] = "DRUID",
 		},
 		["Augustin"] = {
@@ -62,7 +74,11 @@ GMMONEY = {
 			["CLASS"] = "SHAMAN",
 		},
 		["Vermin"] = {
+<<<<<<< HEAD
 			["GOLD"] = 45015133,
+=======
+			["GOLD"] = 36873550,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["CLASS"] = "WARRIOR",
 		},
 	},

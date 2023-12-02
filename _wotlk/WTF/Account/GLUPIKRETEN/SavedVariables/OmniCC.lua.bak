@@ -8,12 +8,20 @@ OmniCCDB = {
 		["Battitude - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
+<<<<<<< HEAD
 		["Battledog - Gehennas"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
+=======
+		["Handrmandr - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		["Battlearm - Gehennas"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Tudum - Ashbringer"] = "Default",
 		["Augustin - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Tudum - Jin'do"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Vermin - Golemagg"] = "Default",
@@ -28,6 +36,18 @@ OmniCCDB = {
 	["global"] = {
 		["dbVersion"] = 6,
 		["addonVersion"] = "10.2.1",
+=======
+		["Moolatz - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
+		["Poklopac - Mirage Raceway"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+		["Battledog - Gehennas"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -157,8 +177,23 @@ OmniCC4Config = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
+<<<<<<< HEAD
 			["fontFace"] = "Fonts\\ARIALN.TTF",
 			["effect"] = "pulse",
+=======
+			["yOff"] = 0,
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -258,14 +293,21 @@ OmniCC4Config = {
 			["minEffectDuration"] = 30,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1,
-			["minDuration"] = 3,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
+<<<<<<< HEAD
 			["minSize"] = 0.5,
 			["mmSSDuration"] = 0,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["fontSize"] = 18,
+=======
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["minDuration"] = 3,
+			["scaleText"] = true,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		},
 	},
 }

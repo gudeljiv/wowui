@@ -1,7 +1,11 @@
 SET nameplateShowDebuffsOnFriendly "0"
 SET autoQuestPopUps "v"
 SET showArenaEnemyFrames "0"
+<<<<<<< HEAD
 SET cameraSavedPitch "43.224854"
+=======
+SET cameraSavedPitch "42.324997"
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 SET useCompactPartyFrames "1"
 SET nameplateSelfScale "1"
 SET nameplateShowFriendlyTotems "1"
@@ -32,7 +36,11 @@ SET nameplateSelectedAlpha "1"
 SET showArenaEnemyCastbar "0"
 SET cameraSavedVehicleDistance "43.548069"
 SET nameplateSelfBottomInset "0.32596862792969"
+<<<<<<< HEAD
 SET lfgSelectedRoles "2"
+=======
+SET lfgSelectedRoles "10"
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 SET cameraSavedDistance "45.797050"
 SET autoLootDefault "1"
 SET minimapZoom "1"

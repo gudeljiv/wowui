@@ -34,6 +34,10 @@ PallyPowerDB = {
 				["buffDuration"] = false,
 				["frameLocked"] = true,
 			},
+<<<<<<< HEAD
+=======
+			["border"] = "None",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["SalvInCombat"] = true,
 			["border"] = "None",
 			["rf"] = false,
@@ -48,6 +52,7 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+<<<<<<< HEAD
 	["Vermina"] = {
 		4, -- [1]
 		4, -- [2]
@@ -60,6 +65,8 @@ PallyPower_Assignments = {
 		3, -- [9]
 		4, -- [10]
 	},
+=======
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 }
 PallyPower_NormalAssignments = {
 }
@@ -231,7 +238,9 @@ PallyPower_AuraAssignments = {
 	["Fetingtank"] = 1,
 	["Derindarbe"] = 0,
 	["Krigeroca"] = 0,
+	["Æssia-Auberdine"] = 1,
 	["Madros"] = 5,
+	["Deathtoll-Razorfen"] = 3,
 	["Celerity"] = 0,
 	["Pusinka"] = 1,
 	["Miauwmiauw"] = 1,
@@ -249,12 +258,20 @@ PallyPower_AuraAssignments = {
 	["Cruzerzz"] = 0,
 	["Vlouvloukena"] = 0,
 	["Tîdus-Gehennas"] = 0,
+	["Darthknives-Mandokir"] = 0,
 	["Furydin"] = 0,
+<<<<<<< HEAD
 	["Selîn"] = 3,
 	["Holychoke"] = 0,
 	["Unwaver-Gehennas"] = 1,
 	["Getfe"] = 6,
 	["Cementaq"] = 2,
+=======
+	["Holychoke"] = 0,
+	["Unwaver-Gehennas"] = 1,
+	["Getfe"] = 6,
+	["Lèqt-Mograine"] = 2,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Nerdina"] = 0,
 	["Chillié-Razorfen"] = 1,
 	["Salad"] = 1,
@@ -263,8 +280,13 @@ PallyPower_AuraAssignments = {
 	["Laydee"] = 1,
 	["Foxholy"] = 0,
 	["Pêgasus-Gehennas"] = 4,
+<<<<<<< HEAD
 	["Onÿxien"] = 1,
 	["Farahpahlavi"] = 2,
+=======
+	["Fatesabèr-Razorfen"] = 3,
+	["Aranu"] = 0,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Jorsi"] = 3,
 	["Shinesen-Gehennas"] = 5,
 	["Zwiecho"] = 0,
@@ -273,11 +295,19 @@ PallyPower_AuraAssignments = {
 	["Zaeon-NethergardeKeep"] = 1,
 	["Karalab"] = 3,
 	["Discoduck"] = 0,
+<<<<<<< HEAD
 	["Palasios"] = 5,
 	["Bubblegiirl-Mograine"] = 1,
 	["Gamzy"] = 0,
 	["Wscqc"] = 0,
 	["Naryen"] = 0,
+=======
+	["Immórtál"] = 0,
+	["Sickickpala-Gehennas"] = 1,
+	["Gamzy"] = 0,
+	["Jejla"] = 0,
+	["Tillander"] = 6,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Iteasy"] = 0,
 	["Slâshans-MirageRaceway"] = 0,
 	["Vyjebanahoe"] = 0,
@@ -288,18 +318,31 @@ PallyPower_AuraAssignments = {
 	["Kaalivan"] = 0,
 	["Colosrxz"] = 2,
 	["Siepie"] = 0,
+<<<<<<< HEAD
 	["Denelope-Venoxis"] = 1,
 	["Palladen"] = 0,
 	["Kiniaa"] = 1,
 	["Badpaladinn"] = 0,
 	["Bloedoffer"] = 0,
 	["Tankwtf"] = 3,
+=======
+	["Bubblegiirl-Mograine"] = 1,
+	["Naryen"] = 0,
+	["Skodicek"] = 0,
+	["Fálcor"] = 3,
+	["Bloedoffer"] = 0,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Biself-Gehennas"] = 3,
+	["Tankwtf"] = 3,
 	["Maxthepala"] = 0,
 	["Kounine-Sulfuron"] = 3,
 	["Prosec"] = 0,
 	["Slaskkevin"] = 1,
 	["Ikoras"] = 0,
+<<<<<<< HEAD
+=======
+	["Teralas-Mograine"] = 1,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Holytimes"] = 0,
 	["Teralas-Mograine"] = 1,
 	["Fálcor"] = 3,
@@ -308,15 +351,24 @@ PallyPower_AuraAssignments = {
 	["Bunnycolby"] = 0,
 	["Shiftyzz-Venoxis"] = 6,
 	["Oldirtypalad"] = 2,
+<<<<<<< HEAD
 	["Veebz"] = 0,
 	["Kalexa"] = 0,
 	["Holyjeebus"] = 0,
 	["Festia"] = 2,
 	["Xoptimalz"] = 0,
+=======
+	["Rubyrag"] = 0,
+	["Palabra"] = 0,
+	["Calystia"] = 2,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Veribig"] = 0,
+	["Zivvy"] = 0,
+	["Elskpala-Gehennas"] = 5,
 	["Kalypsõ"] = 0,
 	["Zivvy"] = 0,
 	["Mouritius"] = 0,
+<<<<<<< HEAD
 	["Supachad"] = 0,
 	["Sistermerrin"] = 0,
 	["Attlee"] = 5,
@@ -324,6 +376,15 @@ PallyPower_AuraAssignments = {
 	["Silkespal"] = 0,
 	["Rvbbitt"] = 0,
 	["Selestra"] = 0,
+=======
+	["Doctør"] = 0,
+	["Selestra"] = 0,
+	["Attlee"] = 5,
+	["Hjørdís"] = 0,
+	["Silkespal"] = 0,
+	["Sistermerrin"] = 0,
+	["Rvbbitt"] = 0,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Thelichlight"] = 0,
 	["Uhndapa"] = 0,
 	["Selfita"] = 0,
@@ -357,6 +418,7 @@ PallyPower_AuraAssignments = {
 	["Amorin"] = 1,
 	["Nálkás"] = 3,
 	["Dathreemar"] = 5,
+<<<<<<< HEAD
 	["Hjørdís"] = 0,
 	["Twitterstorm"] = 0,
 	["Yesnix"] = 0,
@@ -376,6 +438,27 @@ PallyPower_AuraAssignments = {
 	["Skodicek"] = 0,
 	["Tillander"] = 6,
 	["Jejla"] = 0,
+=======
+	["Supachad"] = 0,
+	["Twitterstorm"] = 0,
+	["Yesnix"] = 0,
+	["Xoptimalz"] = 0,
+	["Pensacola"] = 6,
+	["Holyjeebus"] = 0,
+	["Kalexa"] = 0,
+	["Veebz"] = 0,
+	["Shiftyzz-Venoxis"] = 6,
+	["Ðîvâ"] = 0,
+	["Wowax"] = 0,
+	["Eváilina-Mograine"] = 1,
+	["Badpaladinn"] = 0,
+	["Tkprod-Auberdine"] = 2,
+	["Uwunor"] = 0,
+	["Ironmane"] = 0,
+	["Kiniaa"] = 1,
+	["Palladen"] = 0,
+	["Denelope-Venoxis"] = 1,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	["Althan"] = 0,
 	["Immórtál"] = 0,
 	["Ibe-Gehennas"] = 1,

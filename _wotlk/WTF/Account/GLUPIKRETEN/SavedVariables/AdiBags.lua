@@ -129,17 +129,27 @@ AdiBagsDB = {
 						[8846] = "Trade Goods#Herbs",
 						[41457] = "Gem#Gem",
 						[39940] = "Gem#Gem",
+<<<<<<< HEAD
 						[25708] = "Trade Goods#Leather",
 						[22573] = "Trade Goods#Motes & Primals",
 						[8544] = "Trade Goods#Bandages",
 						[46376] = "Consumable#Potions",
 						[36924] = "Gem#Gem",
 						[2459] = "Consumable#Potions",
+=======
+						[36907] = "Trade Goods#Herbs",
+						[36906] = "Trade Goods#Herbs",
+						[17056] = "Reagent#Reagent",
+						[10648] = "Trade Goods#Inscription",
+						[4384] = "Ammunition#Bombs",
+						[11175] = "Trade Goods#Enchanting",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[43118] = "Trade Goods#Inscription",
 						[40068] = "Consumable#Potions",
 						[17008] = "Quest#Quest",
 						[33457] = "Consumable#Scrolls",
 						[11083] = "Trade Goods#Enchanting",
+<<<<<<< HEAD
 						[38561] = "Trade Goods#Leather",
 						[40078] = "Consumable#Potions",
 						[9179] = "Consumable#Potions",
@@ -151,6 +161,19 @@ AdiBagsDB = {
 						[37705] = "Trade Goods#Eternals",
 						[43543] = "Glyph#Glyph",
 						[13443] = "Consumable#Potions",
+=======
+						[33458] = "Consumable#Scrolls",
+						[2457] = "Consumable#Potions",
+						[4338] = "Trade Goods#Cloth",
+						[8544] = "Trade Goods#Bandages",
+						[5411] = "Quest#Quest",
+						[40772] = "Miscellaneous#Miscellaneous",
+						[36932] = "Gem#Gem",
+						[46376] = "Consumable#Potions",
+						[37705] = "Trade Goods#Eternals",
+						[39966] = "Gem#Gem",
+						[48933] = "Miscellaneous#Miscellaneous",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[10620] = "Trade Goods#Ores",
 						[11135] = "Trade Goods#Enchanting",
 						[11139] = "Trade Goods#Enchanting",
@@ -160,8 +183,13 @@ AdiBagsDB = {
 						[22789] = "Trade Goods#Herbs",
 						[24330] = "Quest#Quest",
 						[41458] = "Gem#Gem",
+<<<<<<< HEAD
 						[22574] = "Trade Goods#Motes & Primals",
 						[4384] = "Ammunition#Bombs",
+=======
+						[36908] = "Trade Goods#Herbs",
+						[29736] = "Quest#Quest",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[22829] = "Consumable#Potions",
 						[36923] = "Gem#Gem",
 						[45731] = "Glyph#Glyph",
@@ -171,6 +199,7 @@ AdiBagsDB = {
 						[43135] = "Quest#Quest",
 						[40085] = "Gem#Gem",
 						[7911] = "Trade Goods#Ores",
+<<<<<<< HEAD
 						[2457] = "Consumable#Potions",
 						[21887] = "Trade Goods#Leather",
 						[40038] = "Gem#Gem",
@@ -178,6 +207,15 @@ AdiBagsDB = {
 						[40070] = "Consumable#Potions",
 						[5411] = "Quest#Quest",
 						[42641] = "Ammunition#Bombs",
+=======
+						[7972] = "Junk#Junk",
+						[21887] = "Trade Goods#Leather",
+						[43104] = "Trade Goods#Inscription",
+						[9179] = "Consumable#Potions",
+						[4394] = "Ammunition#Bombs",
+						[20558] = "Trade Goods#PVP Tokens",
+						[40086] = "Gem#Gem",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[22446] = "Trade Goods#Enchanting",
 						[46377] = "Consumable#Potions",
 						[22462] = "Miscellaneous#Miscellaneous",
@@ -186,8 +224,13 @@ AdiBagsDB = {
 						[4360] = "Ammunition#Bombs",
 						[45603] = "Glyph#Glyph",
 						[21991] = "Trade Goods#Bandages",
+<<<<<<< HEAD
 						[34225] = "Quest#Quest",
 						[39966] = "Gem#Gem",
+=======
+						[42912] = "Glyph#Glyph",
+						[2450] = "Trade Goods#Herbs",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[22526] = "Junk#Junk",
 						[2449] = "Trade Goods#Herbs",
 						[22710] = "Trade Goods#Herbs",
@@ -214,8 +257,13 @@ AdiBagsDB = {
 						[46378] = "Consumable#Potions",
 						[33619] = "Quest#Quest",
 						[6464] = "Quest#Quest",
+<<<<<<< HEAD
 						[43351] = "Glyph#Glyph",
 						[28132] = "Quest#Quest",
+=======
+						[39774] = "Trade Goods#Inscription",
+						[41285] = "Gem#Gem",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[8836] = "Trade Goods#Herbs",
 						[34721] = "Trade Goods#Bandages",
 						[8007] = "Consumable#Gems",
@@ -227,6 +275,37 @@ AdiBagsDB = {
 						[13467] = "Trade Goods#Herbs",
 						[24355] = "Quest#Quest",
 						[36909] = "Trade Goods#Ores",
+<<<<<<< HEAD
+=======
+						[6037] = "Trade Goods#Bars",
+						[7005] = "Miscellaneous#Miscellaneous",
+						[40023] = "Gem#Gem",
+						[43105] = "Trade Goods#Inscription",
+						[43121] = "Trade Goods#Inscription",
+						[36910] = "Trade Goods#Ores",
+						[25649] = "Trade Goods#Leather",
+						[14529] = "Trade Goods#Bandages",
+						[5997] = "Consumable#Potions",
+						[2772] = "Trade Goods#Ores",
+						[37602] = "Trade Goods#Inscription",
+						[37101] = "Trade Goods#Inscription",
+						[45804] = "Glyph#Glyph",
+						[41163] = "Trade Goods#Bars",
+						[43106] = "Trade Goods#Inscription",
+						[22447] = "Trade Goods#Enchanting",
+						[46379] = "Consumable#Potions",
+						[30639] = "Quest#Quest",
+						[29625] = "Quest#Quest",
+						[28100] = "Consumable#Potions",
+						[40109] = "Consumable#Potions",
+						[32902] = "Consumable#Potions",
+						[34722] = "Trade Goods#Bandages",
+						[28132] = "Quest#Quest",
+						[29162] = "Quest#Quest",
+						[34053] = "Trade Goods#Enchanting",
+						[34052] = "Trade Goods#Enchanting",
+						[39912] = "Gem#Gem",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[41461] = "Gem#Gem",
 						[7005] = "Miscellaneous#Miscellaneous",
 						[9399] = "Ammunition#Ammo",
@@ -300,10 +379,17 @@ AdiBagsDB = {
 						[40089] = "Gem#Gem",
 						[33462] = "Consumable#Scrolls",
 						[27502] = "Consumable#Scrolls",
+<<<<<<< HEAD
 						[2841] = "Trade Goods#Bars",
 						[39946] = "Gem#Gem",
 						[36912] = "Trade Goods#Ores",
 						[35586] = "Quest#Quest",
+=======
+						[39914] = "Gem#Gem",
+						[41479] = "Gem#Gem",
+						[6219] = "Miscellaneous#Miscellaneous",
+						[23446] = "Trade Goods#Bars",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[28053] = "Ammunition#Ammo",
 						[2835] = "Trade Goods#Ores",
 						[22448] = "Trade Goods#Enchanting",
@@ -319,6 +405,7 @@ AdiBagsDB = {
 						[38557] = "Trade Goods#Leather",
 						[2318] = "Trade Goods#Leather",
 						[2319] = "Trade Goods#Leather",
+<<<<<<< HEAD
 						[3358] = "Trade Goods#Herbs",
 						[41479] = "Gem#Gem",
 						[39340] = "Trade Goods#Inscription",
@@ -327,14 +414,25 @@ AdiBagsDB = {
 						[3858] = "Trade Goods#Ores",
 						[40026] = "Gem#Gem",
 						[3860] = "Trade Goods#Bars",
+=======
+						[34054] = "Trade Goods#Enchanting",
+						[39946] = "Gem#Gem",
+						[13444] = "Consumable#Potions",
+						[36912] = "Trade Goods#Ores",
+						[2835] = "Trade Goods#Ores",
+						[2836] = "Trade Goods#Ores",
+						[3859] = "Trade Goods#Bars",
+						[43108] = "Trade Goods#Inscription",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[43124] = "Trade Goods#Inscription",
 						[41096] = "Glyph#Glyph",
-						[33447] = "Consumable#Potions",
+						[2841] = "Trade Goods#Bars",
 						[2842] = "Trade Goods#Bars",
 						[37663] = "Trade Goods#Bars",
 						[3355] = "Trade Goods#Herbs",
 						[3356] = "Trade Goods#Herbs",
 						[3357] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[34054] = "Trade Goods#Enchanting",
 						[3369] = "Trade Goods#Herbs",
 						[34597] = "Quest#Quest",
@@ -345,11 +443,27 @@ AdiBagsDB = {
 						[3928] = "Consumable#Potions",
 						[1710] = "Consumable#Potions",
 						[40076] = "Consumable#Potions",
+=======
+						[3358] = "Trade Goods#Herbs",
+						[8845] = "Trade Goods#Herbs",
+						[37663] = "Trade Goods#Bars",
+						[34024] = "Quest#Quest",
+						[13452] = "Consumable#Potions",
+						[43332] = "Glyph#Glyph",
+						[41432] = "Gem#Gem",
+						[25707] = "Trade Goods#Leather",
+						[25699] = "Trade Goods#Leather",
+						[10562] = "Ammunition#Bombs",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[43412] = "Glyph#Glyph",
 						[8845] = "Trade Goods#Herbs",
 						[43125] = "Trade Goods#Inscription",
 						[12430] = "Quest#E'ko",
+<<<<<<< HEAD
 						[22792] = "Trade Goods#Herbs",
+=======
+						[13456] = "Consumable#Potions",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[39915] = "Gem#Gem",
 						[13464] = "Trade Goods#Herbs",
 						[13468] = "Trade Goods#Herbs",
@@ -392,26 +506,46 @@ AdiBagsDB = {
 						[3382] = "Consumable#Potions",
 						[40044] = "Gem#Gem",
 						[43126] = "Trade Goods#Inscription",
+<<<<<<< HEAD
 						[10562] = "Ammunition#Bombs",
 						[25699] = "Trade Goods#Leather",
 						[25707] = "Trade Goods#Leather",
 						[41432] = "Gem#Gem",
 						[13452] = "Consumable#Potions",
 						[34024] = "Quest#Quest",
+=======
+						[40076] = "Consumable#Potions",
+						[1710] = "Consumable#Potions",
+						[3928] = "Consumable#Potions",
+						[40012] = "Gem#Gem",
+						[22792] = "Trade Goods#Herbs",
+						[16203] = "Trade Goods#Enchanting",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[16207] = "Miscellaneous#Miscellaneous",
 						[34056] = "Trade Goods#Enchanting",
 						[13444] = "Consumable#Potions",
 						[858] = "Consumable#Potions",
+<<<<<<< HEAD
 						[2840] = "Trade Goods#Bars",
 						[40058] = "Gem#Gem",
+=======
+						[33447] = "Consumable#Potions",
+						[3860] = "Trade Goods#Bars",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[52021] = "Ammunition#Ammo",
 						[43350] = "Glyph#Glyph",
 						[6339] = "Miscellaneous#Miscellaneous",
 						[6219] = "Miscellaneous#Miscellaneous",
 						[11137] = "Trade Goods#Enchanting",
+<<<<<<< HEAD
 						[39914] = "Gem#Gem",
 						[20725] = "Trade Goods#Enchanting",
 						[3857] = "Trade Goods#Ores",
+=======
+						[38557] = "Trade Goods#Leather",
+						[44452] = "Miscellaneous#Miscellaneous",
+						[2838] = "Trade Goods#Ores",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[22785] = "Trade Goods#Herbs",
 						[22793] = "Trade Goods#Herbs",
 						[41450] = "Gem#Gem",
@@ -434,6 +568,7 @@ AdiBagsDB = {
 						[34057] = "Trade Goods#Enchanting",
 						[22434] = "Quest#Quest",
 						[35622] = "Trade Goods#Eternals",
+<<<<<<< HEAD
 						[44325] = "Consumable#Potions",
 						[43122] = "Trade Goods#Inscription",
 						[41285] = "Gem#Gem",
@@ -441,6 +576,15 @@ AdiBagsDB = {
 						[23445] = "Trade Goods#Bars",
 						[2771] = "Trade Goods#Ores",
 						[2770] = "Trade Goods#Ores",
+=======
+						[22450] = "Trade Goods#Enchanting",
+						[8545] = "Trade Goods#Bandages",
+						[42914] = "Glyph#Glyph",
+						[43351] = "Glyph#Glyph",
+						[5514] = "Consumable#Gems",
+						[6530] = "Junk#Junk",
+						[22463] = "Miscellaneous#Miscellaneous",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[4365] = "Ammunition#Bombs",
 						[24558] = "Quest#Quest",
 						[14343] = "Trade Goods#Enchanting",
@@ -448,6 +592,7 @@ AdiBagsDB = {
 						[11285] = "Ammunition#Ammo",
 						[2447] = "Trade Goods#Herbs",
 						[3470] = "Trade Goods#Ores",
+<<<<<<< HEAD
 						[20007] = "Consumable#Potions",
 						[2450] = "Trade Goods#Herbs",
 						[22578] = "Trade Goods#Motes & Primals",
@@ -460,6 +605,20 @@ AdiBagsDB = {
 						[40094] = "Gem#Gem",
 						[12359] = "Trade Goods#Bars",
 						[29736] = "Quest#Quest",
+=======
+						[2449] = "Trade Goods#Herbs",
+						[43543] = "Glyph#Glyph",
+						[36916] = "Trade Goods#Bars",
+						[2452] = "Trade Goods#Herbs",
+						[2453] = "Trade Goods#Herbs",
+						[7966] = "Trade Goods#Bars",
+						[2455] = "Consumable#Potions",
+						[2456] = "Consumable#Potions",
+						[40078] = "Consumable#Potions",
+						[38561] = "Trade Goods#Leather",
+						[25708] = "Trade Goods#Leather",
+						[10285] = "Junk#Junk",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[41164] = "Ammunition#Ammo",
 						[48933] = "Miscellaneous#Miscellaneous",
 						[6451] = "Trade Goods#Bandages",
@@ -468,13 +627,23 @@ AdiBagsDB = {
 						[35623] = "Trade Goods#Eternals",
 						[4338] = "Trade Goods#Cloth",
 						[23736] = "Ammunition#Bombs",
+<<<<<<< HEAD
 						[33458] = "Consumable#Scrolls",
 						[11175] = "Trade Goods#Enchanting",
+=======
+						[2458] = "Consumable#Potions",
+						[45731] = "Glyph#Glyph",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[5956] = "Miscellaneous#Miscellaneous",
 						[10648] = "Trade Goods#Inscription",
 						[8838] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[36907] = "Trade Goods#Herbs",
 						[43432] = "Glyph#Glyph",
+=======
+						[2459] = "Consumable#Potions",
+						[8846] = "Trade Goods#Herbs",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 						[35783] = "Quest#Quest",
 						[22786] = "Trade Goods#Herbs",
 						[13457] = "Consumable#Potions",
@@ -644,20 +813,34 @@ AdiBagsDB = {
 		["Miqa - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+<<<<<<< HEAD
 		["Battlearm - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
+=======
+		["Tudum - Jin'do"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
+<<<<<<< HEAD
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
+=======
+		["Battlearm - Gehennas"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -671,6 +854,14 @@ AdiBagsDB = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
+<<<<<<< HEAD
+=======
+				["Bank"] = {
+					["xOffset"] = -875.587646484375,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -134.4300537109375,
+				},
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 				["Backpack"] = {
 					["xOffset"] = -335.498779296875,
 					["yOffset"] = 493.357177734375,
@@ -697,9 +888,15 @@ AdiBagsDB = {
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
+<<<<<<< HEAD
 					["Name"] = "Bag Lag Fix",
 					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
 					["Percent"] = 1,
+=======
+					["Percent"] = 1,
+					["Name"] = "Bag Lag Fix",
+					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 				},
 			},
 			["theme"] = {

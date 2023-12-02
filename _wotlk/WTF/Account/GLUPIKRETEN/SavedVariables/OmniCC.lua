@@ -12,6 +12,7 @@ OmniCCDB = {
 		["Battitude - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
+<<<<<<< HEAD
 		["Handrmandr - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
@@ -28,6 +29,28 @@ OmniCCDB = {
 		["Tudum - Ashbringer"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Battledog - Gehennas"] = "Default",
+=======
+		["Battledog - Gehennas"] = "Default",
+		["Tadibey - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
+		["Poklopac - Mirage Raceway"] = "Default",
+		["Miqa - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Handrmandr - Golemagg"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "10.2.1",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -197,7 +220,21 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
+<<<<<<< HEAD
 			["fontFace"] = "Fonts\\ARIALN.TTF",
+=======
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["minDuration"] = 2,
+			["scaleText"] = true,
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -240,11 +277,19 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
+<<<<<<< HEAD
 			["fontSize"] = 18,
 			["effect"] = "pulse",
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
+=======
+			["scaleText"] = true,
+			["effect"] = "pulse",
+			["minDuration"] = 3,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 			["spiralOpacity"] = 1,
 			["yOff"] = 0,
 			["xOff"] = 0,

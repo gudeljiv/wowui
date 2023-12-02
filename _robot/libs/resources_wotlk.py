@@ -95,7 +95,6 @@ data = {
             {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
             {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
-            {"name": "swiftmend", "type": "GetSpellTexture", "id": 18562, "key": "2"},
         ],
         "secondary": [
             {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
@@ -208,7 +207,7 @@ data = {
             {"name": "immolate", "type": "GetSpellTexture", "id": 348, "key": "h"},
             {"name": "corruption", "type": "GetSpellTexture", "id": 172, "key": "v"},
             {"name": "curse of agony", "type": "GetSpellTexture", "id": 980, "key": "g"},
-            {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "f11"},
+            {"name": "shadow bolt", "type": "GetSpellTexture", "id": 705, "key": "2"},
         ],
         "secondary": [],
     },

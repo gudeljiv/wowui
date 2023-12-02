@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+VER 3 000000000000000E " " "136106"
+/inspect
+END
+VER 3 0000000000000028 " " "134400"
+=======
+VER 3 0000000000000029 " " "132152"
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
+VER 3 0000000000000026 " " "134400"
+#showtooltip item:36912
+/2 WTB Saronite Ore 24g 
+END
+<<<<<<< HEAD
+=======
 VER 3 000000000000000E " " "136106"
 /inspect
 END
@@ -9,10 +36,7 @@ END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
-VER 3 0000000000000026 " " "134400"
-#showtooltip item:36912
-/2 WTB Saronite Ore 24g 
-END
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -20,6 +44,7 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
+<<<<<<< HEAD
 /use [nocombat]item:1205
 /castsequence [combat] reset=combat item:2455
 END
@@ -27,6 +52,15 @@ VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3770
 /castsequence [combat] reset=combat item:5512,item:858
+=======
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
+END
+VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
+#showtooltip
+/use [nocombat]item:35953
+/castsequence [combat] reset=combat item:33447
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:35953

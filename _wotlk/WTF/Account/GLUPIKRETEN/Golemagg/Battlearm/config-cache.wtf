@@ -1,7 +1,11 @@
 SET nameplateShowDebuffsOnFriendly "0"
 SET autoQuestPopUps "v"
 SET showArenaEnemyFrames "0"
+<<<<<<< HEAD
 SET cameraSavedPitch "32.424938"
+=======
+SET cameraSavedPitch "52.449944"
+>>>>>>> 6adf1830635e57a150a5d638bfe9c5a2183b4e9d
 SET useCompactPartyFrames "1"
 SET nameplateSelfScale "1"
 SET nameplateShowFriendlyTotems "1"
