@@ -1,6 +1,98 @@
 
 EncounterDetailsDB = {
 	["chartData"] = {
+		[13877] = {
+			["Raid Damage Done"] = {
+				2945, -- [1]
+				2090, -- [2]
+				755, -- [3]
+				4529, -- [4]
+				8160, -- [5]
+				6156, -- [6]
+				12369, -- [7]
+				9924, -- [8]
+				20185, -- [9]
+				17175, -- [10]
+				22754, -- [11]
+				11132, -- [12]
+				39166, -- [13]
+				40752, -- [14]
+				17057, -- [15]
+				22218, -- [16]
+				43865, -- [17]
+				24305, -- [18]
+				40943, -- [19]
+				31860, -- [20]
+				38337, -- [21]
+				28874, -- [22]
+				28297, -- [23]
+				36947, -- [24]
+				18325, -- [25]
+				32181, -- [26]
+				13579, -- [27]
+				42992, -- [28]
+				16487, -- [29]
+				37710, -- [30]
+				15878, -- [31]
+				19570, -- [32]
+				30081, -- [33]
+				24762, -- [34]
+				30564, -- [35]
+				18031, -- [36]
+				["max_value"] = 43865,
+				["__time"] = 1701512532,
+			},
+		},
+		[13879] = {
+			["Raid Damage Done"] = {
+				3391, -- [1]
+				2054, -- [2]
+				3683, -- [3]
+				3285, -- [4]
+				12312, -- [5]
+				19842, -- [6]
+				9644, -- [7]
+				20063, -- [8]
+				4414, -- [9]
+				24115, -- [10]
+				7973, -- [11]
+				14705, -- [12]
+				14821, -- [13]
+				13322, -- [14]
+				25467, -- [15]
+				15213, -- [16]
+				15182, -- [17]
+				24850, -- [18]
+				17378, -- [19]
+				29861, -- [20]
+				3965, -- [21]
+				31215, -- [22]
+				19925, -- [23]
+				38440, -- [24]
+				16633, -- [25]
+				26196, -- [26]
+				31915, -- [27]
+				34224, -- [28]
+				28730, -- [29]
+				25690, -- [30]
+				7273, -- [31]
+				19856, -- [32]
+				19282, -- [33]
+				26945, -- [34]
+				16822, -- [35]
+				36828, -- [36]
+				8168, -- [37]
+				27538, -- [38]
+				33158, -- [39]
+				5826, -- [40]
+				41609, -- [41]
+				32913, -- [42]
+				13518, -- [43]
+				15562, -- [44]
+				["max_value"] = 41609,
+				["__time"] = 1701512664,
+			},
+		},
 	},
 	["encounter_spells"] = {
 		[40504] = {
@@ -2513,6 +2605,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Ymiron",
 		},
+		[59018] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Wretched Belcher",
+		},
 		[53468] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -2529,21 +2628,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mirror Image",
 		},
-		[59305] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "King Ymiron",
-		},
-		[50495] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Mage-Lord Urom",
-		},
 		[57799] = {
 			["school"] = 2,
 			["type"] = "DEBUFF",
@@ -2555,25 +2639,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[48276] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[50495] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Svala Sorrowgrave",
+			["source"] = "Mage-Lord Urom",
 		},
-		[30938] = {
+		[59305] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Keli'dan the Breaker",
+			["source"] = "King Ymiron",
 		},
 		[59304] = {
 			["school"] = 1,
@@ -2585,6 +2664,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Ymiron",
 		},
+		[30938] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[55927] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Flame Sphere",
+		},
 		[414702] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -2593,12 +2689,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mirror Image",
 		},
-		[55927] = {
-			["school"] = 4,
+		[58694] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Flame Sphere",
+			["source"] = "Cyanigosa",
 		},
 		[49696] = {
 			["school"] = 32,
@@ -2609,12 +2705,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Risen Drakkari Soulmage",
 		},
-		[58694] = {
-			["school"] = 64,
+		[50810] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Cyanigosa",
+			["source"] = "Krystallus",
 		},
 		[59015] = {
 			["school"] = 32,
@@ -2659,14 +2756,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Slad'ran Constrictor",
 		},
-		[38619] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Commander Stoutbeard",
-		},
 		[52723] = {
 			["school"] = 32,
 			["type"] = "BUFF",
@@ -2675,6 +2764,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Mal'Ganis",
+		},
+		[48277] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Svala Sorrowgrave",
 		},
 		[51007] = {
 			["school"] = 1,
@@ -2711,22 +2810,20 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mage-Lord Urom",
 		},
-		[48277] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[59148] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Svala Sorrowgrave",
+			["source"] = "Hardened Steel Skycaller",
 		},
-		[59408] = {
+		[59407] = {
 			["school"] = 32,
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Ritual Channeler",
 		},
@@ -2741,15 +2838,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ferocious Rhino",
 		},
-		[59407] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ritual Channeler",
-		},
 		[56939] = {
 			["school"] = 4,
 			["token"] = {
@@ -2758,13 +2846,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Magus Telestra",
 		},
-		[56936] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[413091] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Mirror Image",
+		},
+		[56938] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Grand Magus Telestra",
 		},
@@ -2776,14 +2873,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Svala Sorrowgrave",
 		},
-		[56938] = {
-			["school"] = 4,
+		[68895] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Grand Magus Telestra",
+			["source"] = "Spiteful Apparition",
 		},
 		[32361] = {
 			["school"] = 8,
@@ -2902,11 +2998,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Maiden of Grief",
 		},
-		[51021] = {
-			["school"] = 64,
+		[32176] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Twisted Visage",
 		},
 		[55931] = {
 			["school"] = 4,
@@ -2925,12 +3022,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Steward",
 		},
-		[32176] = {
-			["school"] = 1,
+		[51021] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
 		},
 		[69024] = {
 			["school"] = 8,
@@ -3101,15 +3197,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Lich King",
 		},
-		[16005] = {
-			["school"] = 4,
+		[59864] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Coilfang Technician",
+			["source"] = "Dark Rune Stormcaller",
 		},
 		[31946] = {
 			["school"] = 1,
@@ -3118,13 +3214,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Swamplord Musel'ek",
 		},
-		[59800] = {
-			["school"] = 8,
+		[69409] = {
+			["school"] = 33,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Ionar",
+			["source"] = "The Lich King",
 		},
 		[52671] = {
 			["school"] = 8,
@@ -3136,15 +3235,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spark of Ionar",
 		},
-		[59864] = {
-			["school"] = 32,
+		[16005] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Dark Rune Stormcaller",
+			["source"] = "Coilfang Technician",
 		},
 		[57798] = {
 			["school"] = 2,
@@ -3356,15 +3455,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mage-Lord Urom",
 		},
-		[55613] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[31403] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Drakkari Fire Weaver",
+			["source"] = "Commander Stoutbeard",
 		},
 		[52480] = {
 			["school"] = 4,
@@ -3382,14 +3480,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scourgelord Tyrannus",
 		},
-		[31403] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[55613] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Commander Stoutbeard",
+			["source"] = "Drakkari Fire Weaver",
 		},
 		[53418] = {
 			["school"] = 1,
@@ -3493,14 +3592,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Skarvald the Constructor",
 		},
-		[52960] = {
-			["school"] = 8,
+		[42730] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Loken",
+			["source"] = "Ingvar the Plunderer",
 		},
 		[69021] = {
 			["school"] = 1,
@@ -3510,14 +3610,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ick",
 		},
-		[49092] = {
+		[34980] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ymirjar Harpooner",
+			["source"] = "Mennu the Betrayer",
 		},
 		[55102] = {
 			["school"] = 1,
@@ -3530,12 +3628,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Moorabi",
 		},
-		[34980] = {
+		[49092] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mennu the Betrayer",
+			["source"] = "Ymirjar Harpooner",
 		},
 		[52097] = {
 			["school"] = 8,
@@ -3587,13 +3687,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gal'darah",
 		},
-		[69029] = {
+		[53472] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ick",
+			["source"] = "Anub'arak",
 		},
 		[42772] = {
 			["school"] = 1,
@@ -3623,6 +3725,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anomalus",
 		},
+		[69029] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Ick",
+		},
 		[8269] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -3631,16 +3741,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Coilfang Collaborator",
-		},
-		[53472] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Anub'arak",
 		},
 		[38151] = {
 			["school"] = 64,
@@ -3687,6 +3787,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "General Bjarngrim",
 		},
+		[54719] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Drakkari Colossus",
+		},
 		[59834] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -3696,14 +3804,6 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Spark of Ionar",
-		},
-		[54719] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Drakkari Colossus",
 		},
 		[59866] = {
 			["school"] = 4,
@@ -3738,15 +3838,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Drakkari Elemental",
 		},
-		[68774] = {
-			["school"] = 16,
-			["type"] = "BUFF",
+		[59994] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Forgemaster Garfrost",
+			["source"] = "Twisted Visage",
 		},
 		[55815] = {
 			["school"] = 1,
@@ -3923,14 +4022,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Talon King Ikiss",
 		},
-		[49701] = {
-			["school"] = 32,
+		[59750] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Risen Drakkari Soulmage",
+			["source"] = "Krystallus",
 		},
 		[57629] = {
 			["school"] = 16,
@@ -3942,25 +4040,25 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[59750] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Krystallus",
-		},
-		[59727] = {
-			["school"] = 32,
+		[57789] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Maiden of Grief",
+			["source"] = "Twisted Visage",
+		},
+		[50997] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Keristrasza",
 		},
 		[57725] = {
 			["school"] = 32,
@@ -3979,15 +4077,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Trollgore",
 		},
-		[57789] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[59835] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Loken",
 		},
 		[49637] = {
 			["school"] = 8,
@@ -3998,16 +4095,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Trollgore",
 		},
-		[50997] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Keristrasza",
-		},
 		[52770] = {
 			["school"] = 8,
 			["token"] = {
@@ -4015,6 +4102,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_START"] = true,
 			},
 			["source"] = "Ionar",
+		},
+		[49701] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Risen Drakkari Soulmage",
 		},
 		[59963] = {
 			["school"] = 8,
@@ -4025,25 +4121,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Prophet Tharon'ja",
 		},
-		[56926] = {
-			["school"] = 8,
+		[59995] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Jedoga Shadowseeker",
+			["source"] = "Twisted Visage",
 		},
-		[59004] = {
-			["school"] = 32,
+		[47751] = {
+			["school"] = 64,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Crystal Handler",
+			["source"] = "Anomalus",
 		},
 		[57644] = {
 			["school"] = 32,
@@ -4063,13 +4157,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anomalus",
 		},
-		[55104] = {
-			["school"] = 1,
+		[51012] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Moorabi",
+			["source"] = "Dark Matter",
 		},
 		[57086] = {
 			["school"] = 1,
@@ -4080,13 +4174,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ormorok the Tree-Shaper",
 		},
-		[51012] = {
-			["school"] = 32,
+		[55104] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dark Matter",
+			["source"] = "Moorabi",
 		},
 		[30637] = {
 			["school"] = 32,
@@ -4134,16 +4228,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Gortok Palehoof",
 		},
-		[59772] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[47780] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Maiden of Grief",
+			["source"] = "Steward",
 		},
 		[69238] = {
 			["school"] = 16,
@@ -4155,13 +4246,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Icy Blast",
 		},
-		[47780] = {
-			["school"] = 1,
+		[57959] = {
+			["school"] = 64,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Steward",
+			["source"] = "Ley-Guardian Eregos",
 		},
 		[59452] = {
 			["school"] = 8,
@@ -4170,20 +4260,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Drakkari Elemental",
 		},
-		[57959] = {
-			["school"] = 64,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ley-Guardian Eregos",
-		},
-		[31932] = {
-			["school"] = 16,
+		[72422] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Swamplord Musel'ek",
+			["source"] = "Falric",
+		},
+		[57949] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Herald Volazj",
 		},
 		[48295] = {
 			["school"] = 32,
@@ -4192,15 +4286,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Ymiron",
 		},
-		[31948] = {
-			["school"] = 1,
+		[31932] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Rokmar the Crackler",
+			["source"] = "Swamplord Musel'ek",
 		},
 		[52451] = {
 			["school"] = 32,
@@ -4227,13 +4319,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Ymiron",
 		},
-		[48583] = {
+		[57790] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Skarvald the Constructor",
+			["source"] = "Twisted Visage",
 		},
 		[53602] = {
 			["school"] = 1,
@@ -4245,39 +4337,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anub'ar Darter",
 		},
-		[72422] = {
+		[31948] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Falric",
-		},
-		[51876] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
-		[57790] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Twisted Visage",
-		},
-		[59868] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Dark Matter",
+			["source"] = "Rokmar the Crackler",
 		},
 		[47727] = {
 			["school"] = 16,
@@ -4288,6 +4356,30 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Grand Magus Telestra",
+		},
+		[48583] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Skarvald the Constructor",
+		},
+		[59868] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Dark Matter",
+		},
+		[42669] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ingvar the Plunderer",
 		},
 		[52771] = {
 			["school"] = 1,
@@ -4322,14 +4414,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hadronox",
 		},
-		[42669] = {
+		[51876] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ingvar the Plunderer",
+			["source"] = "Twisted Visage",
 		},
 		[47944] = {
 			["school"] = 1,
@@ -4337,11 +4429,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 		},
-		[69034] = {
-			["school"] = 32,
+		[57055] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
+			["source"] = "Amanitar",
 		},
 		[14032] = {
 			["school"] = 32,
@@ -4467,15 +4563,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Azure Magus",
 		},
-		[59965] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[10156] = {
+			["school"] = 64,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "The Prophet Tharon'ja",
+			["source"] = "Trollgang-Mograine",
 		},
 		[32364] = {
 			["school"] = 16,
@@ -4495,14 +4589,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Alliance Ranger",
 		},
-		[59997] = {
-			["school"] = 2,
+		[54850] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Drakkari Colossus",
 		},
 		[38194] = {
 			["school"] = 8,
@@ -4529,13 +4622,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Marwyn",
 		},
-		[10156] = {
-			["school"] = 64,
-			["type"] = "BUFF",
+		[59997] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Trollgang-Mograine",
+			["source"] = "Twisted Visage",
 		},
 		[68789] = {
 			["school"] = 1,
@@ -4561,14 +4655,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Salramm the Fleshcrafter",
 		},
-		[30686] = {
+		[43649] = {
 			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Omor the Unscarred",
+			["source"] = "Dalronn the Controller",
 		},
 		[52772] = {
 			["school"] = 1,
@@ -4579,13 +4673,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Chrono-Lord Epoch",
 		},
-		[54850] = {
+		[59965] = {
 			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Drakkari Colossus",
+			["source"] = "The Prophet Tharon'ja",
 		},
 		[47721] = {
 			["school"] = 4,
@@ -4622,16 +4718,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vrykul Skeleton",
 		},
-		[33527] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[57056] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
-			["source"] = "Syth Arcane Elemental",
+			["source"] = "Crystalline Frayer",
 		},
 		[57088] = {
 			["school"] = 8,
@@ -4642,14 +4737,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Amanitar",
 		},
-		[43649] = {
-			["school"] = 32,
+		[50255] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dalronn the Controller",
+			["source"] = "Skadi the Ruthless",
 		},
 		[55106] = {
 			["school"] = 1,
@@ -4660,14 +4755,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Moorabi",
 		},
-		[72362] = {
-			["school"] = 32,
+		[30917] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Marwyn",
+			["source"] = "Broggok",
 		},
 		[33787] = {
 			["school"] = 32,
@@ -4706,16 +4803,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ferocious Rhino",
 		},
-		[59007] = {
-			["school"] = 1,
+		[72362] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Ghoul Tormentor",
+			["source"] = "Marwyn",
 		},
 		[59422] = {
 			["school"] = 1,
@@ -4726,15 +4821,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "King Dred",
 		},
-		[54819] = {
+		[49703] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Drakkari Elemental",
+			["source"] = "Wretched Belcher",
 		},
 		[57792] = {
 			["school"] = 1,
@@ -4760,13 +4856,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ormorok the Tree-Shaper",
 		},
-		[55970] = {
+		[51750] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Prince Taldaram",
+			["source"] = "King Ymiron",
 		},
 		[55078] = {
 			["school"] = 32,
@@ -4791,16 +4888,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Omor the Unscarred",
 		},
-		[30917] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[8374] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Broggok",
+			["source"] = "Tavarok",
 		},
 		[59742] = {
 			["school"] = 1,
@@ -4811,27 +4905,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Krystallus",
 		},
-		[49544] = {
-			["school"] = 8,
+		[72426] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "The Prophet Tharon'ja",
+			["source"] = "Falric",
 		},
-		[49703] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[55970] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Wretched Belcher",
+			["source"] = "Prince Taldaram",
 		},
 		[31981] = {
 			["school"] = 1,
@@ -4853,14 +4942,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spirit Wolf",
 		},
-		[51750] = {
-			["school"] = 1,
+		[54819] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "King Ymiron",
+			["source"] = "Drakkari Elemental",
 		},
 		[50759] = {
 			["school"] = 64,
@@ -4869,23 +4959,26 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unstable Sphere",
 		},
-		[59998] = {
-			["school"] = 2,
+		[58975] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Drakkari Golem",
 		},
-		[8374] = {
+		[60030] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Tavarok",
+			["source"] = "Jedoga Shadowseeker",
 		},
 		[69933] = {
 			["school"] = 32,
@@ -4903,8 +4996,8 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Trollgore",
 		},
-		[33528] = {
-			["school"] = 16,
+		[48873] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
@@ -4912,17 +5005,17 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Syth Frost Elemental",
+			["source"] = "King Dred",
 		},
-		[70381] = {
-			["school"] = 16,
+		[59263] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Forgemaster Garfrost",
+			["source"] = "Ferocious Rhino",
 		},
 		[5234] = {
 			["school"] = 8,
@@ -4951,15 +5044,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Marwyn",
 		},
-		[59263] = {
-			["school"] = 1,
+		[70381] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ferocious Rhino",
+			["source"] = "Forgemaster Garfrost",
 		},
 		[31567] = {
 			["school"] = 1,
@@ -4970,14 +5063,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Swamplord Musel'ek",
 		},
-		[59455] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Drakkari Colossus",
-		},
 		[36383] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -4987,6 +5072,14 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Shirrak the Dead Watcher",
+		},
+		[59455] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Drakkari Colossus",
 		},
 		[58688] = {
 			["school"] = 64,
@@ -5056,14 +5149,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nexus-Prince Shaffar",
 		},
-		[47723] = {
-			["school"] = 4,
+		[17228] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Grand Magus Telestra",
+			["source"] = "Keli'dan the Breaker",
 		},
 		[53509] = {
 			["school"] = 1,
@@ -5114,29 +5205,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "High Elf Mage-Priest",
 		},
-		[20217] = {
-			["school"] = 2,
-			["type"] = "BUFF",
+		[59839] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Ishvari-Gehennas",
-		},
-		[50728] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Phantasmal Wolf",
-		},
-		[17228] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Keli'dan the Breaker",
+			["source"] = "Slad'ran",
 		},
 		[52774] = {
 			["school"] = 2,
@@ -5148,6 +5224,24 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Stormforged Lieutenant",
+		},
+		[47723] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Grand Magus Telestra",
+		},
+		[50728] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Phantasmal Wolf",
 		},
 		[50760] = {
 			["school"] = 32,
@@ -5235,17 +5329,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phantasmal Naga",
 		},
-		[49034] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Novos the Summoner",
-		},
 		[59264] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -5257,8 +5340,8 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ferocious Rhino",
 		},
-		[50089] = {
-			["school"] = 32,
+		[49034] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
@@ -5267,6 +5350,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Novos the Summoner",
+		},
+		[51112] = {
+			["school"] = 64,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Mage-Lord Urom",
 		},
 		[49037] = {
 			["school"] = 16,
@@ -5322,13 +5413,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Forgemaster Garfrost",
 		},
-		[51336] = {
-			["school"] = 1,
+		[48267] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Drakos the Interrogator",
+			["source"] = "Svala Sorrowgrave",
 		},
 		[21049] = {
 			["school"] = 8,
@@ -5425,14 +5516,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Salramm the Fleshcrafter",
 		},
-		[68786] = {
-			["school"] = 16,
+		[58977] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Forgemaster Garfrost",
+			["source"] = "Drakkari Golem",
 		},
 		[50729] = {
 			["school"] = 1,
@@ -5457,15 +5549,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Maiden of Grief",
 		},
-		[58977] = {
-			["school"] = 1,
+		[68786] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Drakkari Golem",
+			["source"] = "Forgemaster Garfrost",
 		},
 		[60032] = {
 			["school"] = 8,
@@ -5598,13 +5689,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Focus Fire",
 		},
-		[48267] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[51336] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Svala Sorrowgrave",
+			["source"] = "Drakos the Interrogator",
 		},
 		[41107] = {
 			["school"] = 1,
@@ -5634,13 +5725,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scourge Reanimator",
 		},
-		[51112] = {
-			["school"] = 64,
+		[50089] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Mage-Lord Urom",
+			["source"] = "Novos the Summoner",
 		},
 		[55249] = {
 			["school"] = 1,
@@ -5695,14 +5789,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twisted Visage",
 		},
-		[59839] = {
-			["school"] = 8,
+		[20217] = {
+			["school"] = 2,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Slad'ran",
+			["source"] = "Ishvari-Gehennas",
 		},
 		[34298] = {
 			["school"] = 1,
@@ -5764,8 +5857,8 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Vazruden the Herald",
 		},
-		[48873] = {
-			["school"] = 1,
+		[33528] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
@@ -5773,7 +5866,7 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "King Dred",
+			["source"] = "Syth Frost Elemental",
 		},
 		[31615] = {
 			["school"] = 64,
@@ -5784,16 +5877,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Swamplord Musel'ek",
 		},
-		[60030] = {
+		[59007] = {
 			["school"] = 1,
-			["type"] = "BUFF",
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Jedoga Shadowseeker",
+			["source"] = "Ghoul Tormentor",
 		},
 		[69172] = {
 			["school"] = 1,
@@ -5805,15 +5898,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Scourgelord Tyrannus",
 		},
-		[58975] = {
-			["school"] = 8,
+		[59998] = {
+			["school"] = 2,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Drakkari Golem",
+			["source"] = "Twisted Visage",
 		},
 		[55142] = {
 			["school"] = 1,
@@ -5834,14 +5927,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phantasmal Water",
 		},
-		[72426] = {
-			["school"] = 32,
+		[49544] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Falric",
+			["source"] = "The Prophet Tharon'ja",
 		},
 		[59330] = {
 			["school"] = 1,
@@ -5861,14 +5956,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Keristrasza",
 		},
-		[50255] = {
-			["school"] = 1,
+		[30686] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Skadi the Ruthless",
+			["source"] = "Omor the Unscarred",
 		},
 		[34874] = {
 			["school"] = 1,
@@ -5877,15 +5972,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hungarfen",
 		},
-		[57056] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[33527] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Crystalline Frayer",
+			["source"] = "Syth Arcane Elemental",
 		},
 		[53352] = {
 			["school"] = 4,
@@ -5986,14 +6082,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "The Maker",
 		},
-		[34267] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Ghaz'an",
-		},
 		[31983] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -6002,6 +6090,14 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
 			["source"] = "Tainted Earthgrab Totem",
+		},
+		[34267] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Ghaz'an",
 		},
 		[55814] = {
 			["school"] = 8,
@@ -6023,15 +6119,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phantasmal Ogre",
 		},
-		[57055] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[69034] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Amanitar",
 		},
 		[17741] = {
 			["school"] = 64,
@@ -6042,14 +6134,16 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Azure Warder",
 		},
-		[57949] = {
+		[59772] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Herald Volazj",
+			["source"] = "Maiden of Grief",
 		},
 		[413265] = {
 			["school"] = 8,
@@ -6170,23 +6264,25 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Greater Ley-Whelp",
 		},
-		[47751] = {
-			["school"] = 64,
+		[59004] = {
+			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Anomalus",
+			["source"] = "Crystal Handler",
 		},
-		[59995] = {
-			["school"] = 16,
+		[56926] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Jedoga Shadowseeker",
 		},
 		[34971] = {
 			["school"] = 1,
@@ -6197,14 +6293,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Claw",
 		},
-		[59835] = {
-			["school"] = 8,
+		[59727] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Loken",
+			["source"] = "Maiden of Grief",
 		},
 		[59513] = {
 			["school"] = 32,
@@ -6318,14 +6417,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Stormforged Tactician",
 		},
-		[59994] = {
-			["school"] = 4,
+		[68774] = {
+			["school"] = 16,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Twisted Visage",
+			["source"] = "Forgemaster Garfrost",
 		},
 		[60003] = {
 			["school"] = 2,
@@ -6439,15 +6539,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Quagmirran",
 		},
-		[42730] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[52960] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ingvar the Plunderer",
+			["source"] = "Loken",
 		},
 		[48191] = {
 			["school"] = 1,
@@ -6576,16 +6675,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sjonnir The Ironshaper",
 		},
-		[69409] = {
-			["school"] = 33,
-			["type"] = "DEBUFF",
+		[59800] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "The Lich King",
+			["source"] = "Ionar",
 		},
 		[49678] = {
 			["school"] = 1,
@@ -6726,14 +6822,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sjonnir The Ironshaper",
 		},
-		[59848] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[56936] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Sjonnir The Ironshaper",
+			["source"] = "Grand Magus Telestra",
 		},
 		[48144] = {
 			["school"] = 1,
@@ -6744,22 +6841,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Ravenous Furbolg",
 		},
-		[413091] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Mirror Image",
-		},
 		[51006] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Varos Cloudstrider",
+		},
+		[59408] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Ritual Channeler",
 		},
 		[23113] = {
 			["school"] = 4,
@@ -6771,14 +6867,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Molten Golem",
 		},
-		[59148] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Hardened Steel Skycaller",
-		},
 		[58025] = {
 			["school"] = 16,
 			["type"] = "DEBUFF",
@@ -6786,6 +6874,14 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Mage-Lord Urom",
+		},
+		[38619] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Commander Stoutbeard",
 		},
 		[68987] = {
 			["school"] = 1,
@@ -6833,14 +6929,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Healthy Mushroom",
 		},
-		[50810] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Krystallus",
-		},
 		[59014] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -6850,6 +6938,16 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Risen Drakkari Soulmage",
+		},
+		[48276] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Svala Sorrowgrave",
 		},
 		[57767] = {
 			["school"] = 2,
@@ -6877,14 +6975,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bleeding Hollow Darkcaster",
 		},
-		[59018] = {
-			["school"] = 8,
+		[59848] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Wretched Belcher",
+			["source"] = "Sjonnir The Ironshaper",
 		},
 	},
 	["emotes"] = {
+		{
+			["boss"] = "Devourer of Souls",
+		}, -- [1]
+		{
+			["boss"] = "Bronjahm",
+		}, -- [2]
 	},
 }

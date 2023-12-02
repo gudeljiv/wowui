@@ -96,9 +96,6 @@ data = {
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
             {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
             {"name": "swiftmend", "type": "GetSpellTexture", "id": 18562, "key": "2"},
-            {"name": "thorns", "type": "GetSpellTexture", "id": 53307, "key": "6"},
-            {"name": "lifebloom", "type": "GetSpellTexture", "id": 48451, "key": "7"},
-            {"name": "rejuvenation", "type": "GetSpellTexture", "id": 48441, "key": "8"},
         ],
         "secondary": [
             {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},
