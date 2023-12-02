@@ -68,6 +68,7 @@ VER 3 0000000001000012 " " "132152"
 /petpassive
 /petattack [@mouseover,exists,harm][]
 /petdefensive
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 

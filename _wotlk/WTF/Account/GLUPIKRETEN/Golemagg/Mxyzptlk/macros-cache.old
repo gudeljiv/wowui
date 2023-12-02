@@ -1,12 +1,10 @@
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast Corruption
+/cast [@mouseover,exists,harm][]Corruption
 END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast Curse of Agony
+/cast [@mouseover,exists,harm][]Curse of Agony
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -15,6 +13,5 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast Immolate
+/cast [@mouseover,exists,harm][]Immolate
 END

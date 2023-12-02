@@ -1,10 +1,16 @@
-VER 3 0000000000000028 " " "134400"
+VER 3 0000000000000029 " " "132152"
 #showtooltip
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
 END
-VER 3 0000000000000013 " " "132130"
-/click BehindTarget
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
 END
 VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
@@ -13,6 +19,14 @@ END
 VER 3 000000000000000E " " "136106"
 /inspect
 END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
 /cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
@@ -20,12 +34,12 @@ VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33454
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -42,9 +56,6 @@ VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
 /cancelform [noform:3] 
 /cast [noform:3] Cat Form 
 /cast Prowl
-END
-VER 3 0000000000000010 "RAID" "136047"
-/run InviteUnit("a");C_Timer.After(0.15,function() ConvertToRaid() end)
 END
 VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
 //RestedXP Guides - current step has no configured targets

@@ -1185,13 +1185,13 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
+				[4860588000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
 				[2960385000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
-				},
-				[3990393000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
 				},
 				[7550410001] = {
 					["touched"] = false,
@@ -3121,7 +3121,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4860588000] = {
+				[3990393000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3217,55 +3217,6 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5860635300] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5860635300, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17770.302,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
 				[5030556000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
@@ -3306,53 +3257,8 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5680631000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5680631000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17755.968,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[4890467000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[5560624000] = {
@@ -3399,106 +3305,8 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5860635001] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5860635001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17770.352,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
 				[5180573000] = {
 					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5820631000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5820631000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17770.536,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
 					["wasCircle"] = false,
 				},
 				[4880467000] = {
@@ -3513,219 +3321,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6020616000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						6020616000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17850.622,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5790643600] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5790643600, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17755.335,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5560625000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5790645000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5790645000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17754.768,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5790644001] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5790644001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17755.168,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5250567000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4000824000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
 				[5550645000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[4320768000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3741,64 +3337,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4570685000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
 				[4080787000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5800645000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5800645000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17754.652,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5730652000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3806,158 +3345,11 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5860635000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
-				},
-				[5870636000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5870636000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17770.102,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[5560625000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6010615000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						6010615000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17864.223,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[5680632000] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5680632000, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17755.835,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
-				},
-				[4160786000] = {
+				[5250567000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -3965,60 +3357,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5680632001] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						5680632001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17755.835,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
+				[4250785000] = {
+					["touched"] = false,
 					["wasCircle"] = false,
 				},
 				[5540669000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4310767001] = {
+				[4160786000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4026,15 +3373,15 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[6290627000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[4320768000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5520631000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5050555000] = {
+				[4010824000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4046,7 +3393,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4070787001] = {
+				[4310767001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4054,7 +3401,7 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5550644001] = {
+				[5050555000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4062,7 +3409,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5310529000] = {
+				[5540602000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4078,7 +3425,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5260588000] = {
+				[4070787001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4086,7 +3433,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4150792000] = {
+				[5310529000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4098,7 +3445,7 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4250785000] = {
+				[5730652000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
@@ -4106,78 +3453,33 @@ GatherMate2MarkerDB = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5540602000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5210552000] = {
-					["touched"] = false,
-					["wasCircle"] = false,
-				},
-				[5712620800] = {
+				[5860635000] = {
 					["touched"] = true,
-					["activeTimer"] = {
-						5712620800, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17757.819,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
+					["wasCircle"] = true,
 				},
-				[4260785000] = {
+				[5550644001] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[4010824000] = {
+				[5260588000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
+				},
+				[4150792000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
+				[6290627000] = {
+					["touched"] = true,
+					["wasCircle"] = true,
 				},
 				[5861635200] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[5710644000] = {
-					["touched"] = true,
-					["wasCircle"] = true,
+				[5210552000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
 				},
 				[5710621001] = {
 					["touched"] = true,
@@ -4191,168 +3493,33 @@ GatherMate2MarkerDB = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
-				[4890467000] = {
+				[4260785000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5820631001] = {
+				[4570685000] = {
 					["touched"] = true,
-					["activeTimer"] = {
-						5820631001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17770.536,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
+					["wasCircle"] = true,
 				},
 				[5350559000] = {
 					["touched"] = false,
 					["wasCircle"] = false,
 				},
-				[5712620300] = {
+				[5710644000] = {
 					["touched"] = true,
-					["activeTimer"] = {
-						5712620300, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17757.785,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
+					["wasCircle"] = true,
 				},
 				[5940621000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
 				},
+				[4000824000] = {
+					["touched"] = false,
+					["wasCircle"] = false,
+				},
 				[5710621000] = {
 					["touched"] = true,
 					["wasCircle"] = true,
-				},
-				[6010615001] = {
-					["touched"] = true,
-					["activeTimer"] = {
-						6010615001, -- [1]
-						["argsCount"] = 2,
-						["object"] = {
-							["modules"] = {
-							},
-							["baseName"] = "GatherMate2Marker",
-							["name"] = "GatherMate2Marker",
-							["orderedModules"] = {
-							},
-							["db"] = {
-								["callbacks"] = {
-									["events"] = {
-										["OnProfileCopied"] = {
-										},
-										["OnProfileChanged"] = {
-										},
-										["OnProfileReset"] = {
-										},
-									},
-									["recurse"] = 0,
-								},
-								["keys"] = {
-									["global"] = true,
-									["class"] = "DRUID",
-									["profiles"] = true,
-									["char"] = "Moolatz - Golemagg",
-									["race"] = "Tauren",
-									["locale"] = "enus",
-									["faction"] = "Horde",
-									["profile"] = "Moolatz - Golemagg",
-									["factionrealm"] = "Horde - Golemagg",
-									["factionrealmregion"] = "Horde - Golemagg - EU",
-									["realm"] = "Golemagg",
-								},
-							},
-							["defaultModuleLibraries"] = {
-							},
-							["enabledState"] = true,
-							["defaultModuleState"] = true,
-						},
-						["ends"] = 17864.223,
-						["delay"] = 300,
-						["func"] = "ResetNodeToDefault",
-					},
-					["wasCircle"] = false,
 				},
 				[3990823000] = {
 					["touched"] = false,

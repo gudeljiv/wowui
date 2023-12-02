@@ -61,24 +61,9 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip Steady Shot
 /cast Steady Shot
 END
-VER 3 0000000001000012 " " "132152"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
-/petattack [@mouseover,exists,harm][]
-/petdefensive
-/cast [@focus,exists,noharm][@pet,exists][]Misdirection
-END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
-END
-VER 3 0000000001000013 " " "132328"
-#showtooltip
-/dismount
-/petfollow
-/petpassive
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
