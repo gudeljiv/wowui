@@ -1,0 +1,10 @@
+lightweight tag 75bbe76b066c833d603bdd5b2e71df4912ffdbd0 v1.3.0
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Wed Aug 23 22:25:01 2023 +0200
+
+commit 75bbe76b066c833d603bdd5b2e71df4912ffdbd0
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Wed Aug 23 22:24:12 2023 +0200
+
+    improvements from wotlk version
+

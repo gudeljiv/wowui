@@ -1,0 +1,97 @@
+VER 3 0100000000000013 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][] Swiftmend
+END
+VER 3 0100000000000014 " " "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence [@mouseover,exists][] reset=combat/10 Nature's Swiftness, Healing Touch
+END
+VER 3 010000000000001A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wild Growth
+/cast [@player] Wild Growth
+END
+VER 3 010000000000001B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][] Nature's Cure
+END
+VER 3 0100000000000003 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [mod, @mouseover, exists][mod, @target, exists][mod, @player] Lifebloom
+/cast [@mouseover, exists][@target, exists][@player] Rejuvenation
+/use Lifeblood
+END
+VER 3 010000000000001D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:0/2/4/5/6] Cat Form
+/cast [stealth] Ravage
+/castsequence [nostealth,stance:3] reset=combat/target/6 Rake, Mangle, Mangle, Mangle
+/cast [nostealth,stance:1] Mangle
+/cast [nostealth,stance:1] Maul
+END
+VER 3 0100000000000005 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [mod:alt, @mouseover, exists][mod:alt, @target, exists][mod:alt, @player] Healing Touch
+/cast [@mouseover, exists][@target, exists][@player] Regrowth
+/use Lifeblood
+END
+VER 3 010000000000001E " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence reset=6 Thrash, Swipe, Swipe
+/cast Lifeblood
+END
+VER 3 010000000000001F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Might of Ursoc
+/cast Renewal
+/cast Frenzied Regeneration
+/use Healthstone
+/use Life Spirit
+/use Lifeblood
+END
+VER 3 0100000000000020 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, exists][@target, exists][@player] Regrowth
+/use Lifeblood
+END
+VER 3 0100000000000021 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover, exists][@target, exists][@player] Nourish
+/use Lifeblood
+END
+VER 3 0100000000000023 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover, exists][@target, exists][@player] Healing Touch
+/use Lifeblood
+END
+VER 3 0100000000000024 " " "INV_Misc_QuestionMark"
+/cast [@target,help] irobark
+/castsequence [@player,exists] barkskin,ironbark
+END
+VER 3 0100000000000025 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Incarnation: Chosen of Elune(Talent, Shapeshift)
+/cast Nature's Vigil
+END
+VER 3 0100000000000026 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover, exists][@target, exists][@player] Ironbark
+END
+VER 3 0100000000000027 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Moonfire
+/focus
+END
+VER 3 0100000000000028 " " "INV_Misc_QuestionMark"
+#showtooltip 
+/cast [stance:0/2/4/5/6] Cat Form
+/cast [stance:3] Tiger's Fury
+/cast [stance:1] Lacerate
+/cast Lifeblood
+END
+VER 3 0100000000000029 " " "INV_Misc_QuestionMark"
+#showtooltip 
+/cast [stance:0/2/4/5/6] Cat Form
+/cast [stance:3] Savage Roar
+/cast [stance:1] Frenzied Regeneration
+/cast Lifeblood
+END

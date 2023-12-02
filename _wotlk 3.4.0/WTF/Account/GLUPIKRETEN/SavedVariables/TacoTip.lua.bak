@@ -1,0 +1,23 @@
+
+TacoTipConfig = {
+	["show_gs_character"] = true,
+	["show_guild_name"] = true,
+	["show_guild_rank"] = false,
+	["show_avg_ilvl"] = true,
+	["show_team"] = false,
+	["show_target"] = false,
+	["show_talents"] = true,
+	["show_titles"] = true,
+	["instant_fade"] = false,
+	["tip_style"] = 2,
+	["hide_in_combat"] = false,
+	["show_gs_player"] = true,
+	["show_power_bar"] = false,
+	["show_gs_items"] = false,
+	["guild_rank_alt_style"] = false,
+	["show_pvp_icon"] = false,
+	["color_class"] = true,
+	["show_pawn_player"] = false,
+	["show_item_level"] = true,
+	["show_hp_bar"] = true,
+}

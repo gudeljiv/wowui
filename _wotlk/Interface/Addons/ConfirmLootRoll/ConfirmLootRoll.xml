@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\WoW\Interface\FrameXML\UI.xsd">
+	<Script file="ConfirmLootRoll.lua"/>
+	<Frame name="ConfirmLootRollFrame">
+		<Scripts>
+			<OnLoad>
+				ConfirmLootRoll_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				ConfirmLootRoll_OnEvent(Event, ...);
+			</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

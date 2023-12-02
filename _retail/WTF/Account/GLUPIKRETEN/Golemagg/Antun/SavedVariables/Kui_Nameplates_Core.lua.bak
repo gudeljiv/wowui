@@ -1,0 +1,2 @@
+
+KuiNameplatesCoreCharacterSaved = nil

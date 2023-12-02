@@ -1,0 +1,96 @@
+VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
+#showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel
+/startattack
+/cast Bloodrage
+/cast [stance:1/2]Shield Bash
+/cast [stance:3]Pummel
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield][stance:1/2]17 Cobalt Buckler
+END
+VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
+#showtooltip
+/use Blood Fury
+/use 10
+/use 13
+/use 14
+END
+VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast Shield Slam
+/cast Shield Block
+END
+VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast [nostance:3]Berserker Stance
+/cast Mortal Strike
+END
+VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast [@mouseover,exists][] Taunt
+END
+VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast [stance:2]Revenge
+/cast [stance:1/3]Hamstring
+END
+VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
+#showtooltip [nocombat] Charge; Intercept
+/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
+/cast [nocombat] Charge; [combat] Intercept
+END
+VER 3 0000000001000008 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [stance:3] Recklessness
+/cast [stance:1] Retaliation
+/cast [stance:2] Shield Wall
+END
+VER 3 0000000001000009 " " "132147"
+#showtooltip ""
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield]17 Cobalt Buckler
+/equipslot [worn:shield]17 Cross Dagger of the Monkey
+END
+VER 3 000000000100000A " " "INV_Misc_QuestionMark"
+#showtooltip Thunder Clap
+/cast [nostance:1] Battle Stance;
+/cast Thunder Clap
+END
+VER 3 000000000100000C " " "INV_Misc_QuestionMark"
+#showtooltip 
+/startattack
+/cast Sunder Armor
+/cast Bloodrage
+END
+VER 3 000000000100000D " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@player] Target Dummy
+END
+VER 3 000000000100000E " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast [stance:1/3] Sweeping Strikes
+/cast [stance:2] Disarm
+END
+VER 3 000000000100000F " " "INV_Misc_QuestionMark"
+#showtooltip Overpower
+/startattack
+/cast [nostance:1] Battle Stance;
+/cast Overpower
+END
+VER 3 0000000001000010 " " "134400"
+#showtooltip Revenge
+/startattack
+/cast [nostance:2] Defensive Stance;
+/cast Revenge
+END
+VER 3 0000000001000011 " " "134400"
+#showtooltip Shield Wall
+/equipslot [noworn:shield]16 Wingblade
+/equipslot [noworn:shield]17 Cobalt Buckler
+/cast [nostance:2] Defensive Stance;
+/cast Shield Wall
+END

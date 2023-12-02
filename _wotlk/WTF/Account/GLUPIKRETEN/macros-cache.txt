@@ -1,0 +1,78 @@
+VER 3 000000000000002A " " "132328"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+END
+VER 3 0000000000000026 " " "134400"
+#showtooltip item:36912
+/2 WTB Saronite Ore 24g 
+END
+VER 3 000000000000000E " " "136106"
+/inspect
+END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
+VER 3 0000000000000013 " " "132130"
+/click BehindTarget
+END
+VER 3 0000000000000029 " " "132152"
+#showtooltip
+/dismount
+/petfollow
+/petpassive
+/petattack [@mouseover,exists,harm][]
+/petdefensive
+END
+VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
+#showtooltip Cat Form
+/cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
+/cast Cat Form
+END
+VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
+#showtooltip
+/use [nocombat]item:33445
+/castsequence [combat] reset=combat item:33448
+END
+VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
+#showtooltip
+/use [nocombat]item:35953
+/castsequence [combat] reset=combat item:36892,item:33447
+END
+VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
+#showtooltip item:35953
+/cast feed pet
+/use item:35953
+END
+VER 3 0000000000000025 "Potion" "Inv_misc_questionmark"
+#showtooltip
+/use item:33447
+END
+VER 3 000000000000001D "prowl" "INV_MISC_QUESTIONMARK"
+#showtooltip Prowl
+/cancelform [noform:3] 
+/cast [noform:3] Cat Form 
+/cast Prowl
+END
+VER 3 0000000000000027 "RXPTargeting" "Ability_eyeoftheowl"
+//RestedXP Guides - current step has no configured targets
+END
+VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
+#showtooltip
+/use item:36892
+END
+VER 3 0000000000000021 "TEST" "132089"
+/run GroupLootFrame1.ItemLevelText:ClearAllPoints()
+/run GroupLootFrame1.ItemLevelText:SetPoint('TOPLEFT', GroupLootFrame1.IconFrame, 'TOPLEFT', 0, 0)
+END
+VER 3 0000000000000020 "TSMDestroy" "INV_Misc_Flower_01"
+/tsm destroy
+END
+VER 3 000000000000001B "TSMMacro" "INV_Misc_Flower_01"
+/click TSMShoppingBuyoutBtn
+/click TSMAuctioningBtn
+/click TSMDestroyBtn
+END

@@ -1,0 +1,3 @@
+
+AuctioneerLocal = {
+}

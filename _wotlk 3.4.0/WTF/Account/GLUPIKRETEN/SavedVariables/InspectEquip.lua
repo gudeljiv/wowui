@@ -1,0 +1,5 @@
+
+InspectEquipConfig = {
+}
+InspectEquipLocalDB = {
+}

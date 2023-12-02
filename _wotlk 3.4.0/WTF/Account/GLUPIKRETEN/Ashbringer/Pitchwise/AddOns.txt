@@ -1,0 +1,7 @@
+nPower: disabled
+nHealth: disabled
+Lorti UI Classic: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+KDO_UI: disabled
+QuickQuest: disabled

@@ -1,0 +1,122 @@
+
+Postal3DB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Tudum - Ashbringer"] = "Tudum - Ashbringer",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
+		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Miqa - Golemagg"] = "Miqa - Golemagg",
+		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
+	},
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Augustin|Golemagg|Horde|54|MAGE", -- [1]
+				"Battitude|Golemagg|Horde|7|ROGUE", -- [2]
+				"Battlearm|Golemagg|Horde|80|DEATHKNIGHT", -- [3]
+				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [4]
+				"Handrmandr|Golemagg|Horde|1|WARRIOR", -- [5]
+				"Kaonac|Jin'do|Horde|1|PRIEST", -- [6]
+				"Miqa|Golemagg|Horde|7|PRIEST", -- [7]
+				"Moolatz|Golemagg|Horde|80|DRUID", -- [8]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [9]
+				"Mxzq|Golemagg|Horde|80|HUNTER", -- [10]
+				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [11]
+				"Poklopac|Mirage Raceway|Horde|1|HUNTER", -- [12]
+				"Provokator|Jin'do|Horde|11|HUNTER", -- [13]
+				"Tadibey|Golemagg|Horde|10|SHAMAN", -- [14]
+				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [15]
+				"Tudum|Ashbringer|Horde|4|WARRIOR", -- [16]
+				"Tudum|Jin'do|Horde|1|WARRIOR", -- [17]
+				"Vermina|Golemagg|Horde|58|PALADIN", -- [18]
+				"Vermin|Golemagg|Horde|80|WARRIOR", -- [19]
+				"Wells|Jin'do|Horde|8|DRUID", -- [20]
+			},
+		},
+	},
+	["profiles"] = {
+		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Battlearm|Golemagg|Horde", -- [2]
+					"Vermin|Golemagg|Horde", -- [3]
+				},
+			},
+		},
+		["Vermina - Golemagg"] = {
+		},
+		["Mxyz - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Miqa|Golemagg|Horde", -- [1]
+					"Battlearm|Golemagg|Horde", -- [2]
+				},
+			},
+		},
+		["Battlearm - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Vermin|Golemagg|Horde", -- [1]
+				},
+			},
+		},
+		["Battitude - Golemagg"] = {
+		},
+		["Kaonac - Jin'do"] = {
+		},
+		["Tandaram - Jin'do"] = {
+		},
+		["Moolatz - Golemagg"] = {
+		},
+		["Tudum - Ashbringer"] = {
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Pitchwise - Ashbringer"] = {
+		},
+		["Wells - Jin'do"] = {
+		},
+		["Vermin - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Miqa|Golemagg|Horde", -- [1]
+					"Mxyz|Golemagg|Horde", -- [2]
+				},
+			},
+		},
+		["Battlearm - Jin'do"] = {
+		},
+		["Poklopac - Mirage Raceway"] = {
+		},
+		["Provokator - Jin'do"] = {
+		},
+		["Tudum - Jin'do"] = {
+		},
+		["Miqa - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Battlearm|Golemagg|Horde", -- [1]
+				},
+			},
+		},
+		["Handrmandr - Golemagg"] = {
+		},
+		["Tadibey - Golemagg"] = {
+		},
+	},
+}

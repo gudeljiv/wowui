@@ -1,0 +1,15 @@
+
+KdoUiData = {
+	["showRightBarsOnHover"] = false,
+	["showHotkeysOnHover"] = false,
+	["showButtonsNameOnHover"] = false,
+	["hidePageNb"] = false,
+	["darkMode"] = true,
+	["showBagsOnHover"] = false,
+	["showChatButtonsOnHover"] = false,
+	["stackThreeActionBars"] = false,
+	["hideStanceBar"] = false,
+	["addClassColorOnTarget"] = false,
+	["showRangeWithIconColor"] = false,
+	["hideStatusBar"] = false,
+}
