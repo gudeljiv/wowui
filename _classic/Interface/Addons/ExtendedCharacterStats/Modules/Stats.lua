@@ -99,6 +99,15 @@ function Stats.CreateWindow()
         if ExtendedCharacterStats.general.statsWindowClosedOnOpen then
             Stats:HideWindow()
         end
+
+        if ECS.IsSoD then
+            C_Timer.After(0.3, function ()
+                if EngravingFrame then
+                    mainFrame:ClearAllPoints()
+                    mainFrame:SetPoint("LEFT", EngravingFrame, "RIGHT", 10, 19)
+                end
+            end)
+        end
     end)
 
     _CreateStatInfos()
