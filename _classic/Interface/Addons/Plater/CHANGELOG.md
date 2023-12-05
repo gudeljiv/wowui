@@ -1,8 +1,8 @@
 @Terciob:
-- Fixes for broken range check API, which was prohibited in combat by Blizzard.
+- Adding cast animations for 10.2.
 
 @cont1nuity:
-- Resetting range check ranges where they are no longer set properly due to backend changes.
-- Switch to LibRangeCheck-3.0 with combat range detection.
-- Cleaning up hotfix.
+- Adding more 10.2 units to 'forced in combat'.
+- Fixes for broken cast bars in classic.
+- Fixes for broken range checks.
 
