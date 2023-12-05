@@ -305,17 +305,21 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashCount3"] = 3,
 		["WarningIconRight"] = false,
 		["WhisperStats"] = true,
-		["VoiceOverSpecW2"] = "DefaultOnly",
+		["SilentMode"] = false,
 		["LogOnlyNonTrivial"] = true,
 		["DontShowPTNoID"] = false,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 275,
-		["WarningFontSize"] = 20,
-		["ShowEngageMessage"] = true,
-		["RangeFrameSound1"] = "none",
-		["HPFrameY"] = 9.28495722690528,
 		["FilterTTargetFocus"] = true,
+		["ShowEngageMessage"] = true,
+		["SpecialWarningFontColor"] = {
+			0, -- [1]
+			0, -- [2]
+			1, -- [3]
+		},
+		["HPFrameY"] = 9.28495722690528,
+		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
 		["AutoExpandSpellGroups"] = true,
 		["LastRevision"] = 8086,
@@ -330,8 +334,8 @@ DBM_AllSavedOptions = {
 		["DontShowSpecialWarningText"] = false,
 		["CountdownVoice"] = "Corsica",
 		["SpecialWarningFlash4"] = true,
-		["SpecialWarningFlashRepeat2"] = false,
 		["CountdownVoice3"] = "Smooth",
+		["SpecialWarningFlashRepeat2"] = false,
 		["DisableStatusWhisper"] = false,
 		["HealthFrameGrowUp"] = false,
 		["AutoRespond"] = true,
@@ -345,13 +349,9 @@ DBM_AllSavedOptions = {
 		["DontSendBossAnnounces"] = false,
 		["DontShowHealthFrame"] = false,
 		["FilterTankSpec"] = true,
-		["SpecialWarningFontColor"] = {
-			0, -- [1]
-			0, -- [2]
-			1, -- [3]
-		},
+		["RangeFrameSound1"] = "none",
 		["HideBossEmoteFrame2"] = true,
-		["SilentMode"] = false,
+		["VoiceOverSpecW2"] = "DefaultOnly",
 		["WarningFontShadow"] = true,
 		["FilterDispel"] = true,
 		["DontShowBossAnnounces"] = false,

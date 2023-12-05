@@ -1816,7 +1816,6 @@ function NWB:buildRealmFactionData()
 		self.db.global[NWB.realm][NWB.faction].timerLog = {};
 	end
 	if (not self.db.global[NWB.realm][NWB.faction].dmfBuffSettings) then
-		--Enable after testing at the next DMF.
 		self.db.global[NWB.realm][NWB.faction].dmfBuffSettings = {};
 	end
 	local localizedClass, englishClass = UnitClass("player");

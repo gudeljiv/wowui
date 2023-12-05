@@ -1,3 +1,11 @@
+VER 3 000000000000000E " " "136106"
+/inspect
+END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/cast Headless Horseman's Mount
+/cast Swift Zulian Tiger
+END
 VER 3 0000000000000013 " " "132130"
 /click BehindTarget
 END
@@ -19,27 +27,24 @@ VER 3 0000000000000026 " " "134400"
 #showtooltip item:36912
 /2 WTB Saronite Ore 24g 
 END
-VER 3 000000000000000E " " "136106"
-/inspect
-END
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/cast Headless Horseman's Mount
-/cast Swift Zulian Tiger
+VER 3 000000000000002B "bear" "132276"
+#showtooltip Dire Bear Form
+/cancelaura [form:5] Flight Form;[form:1] Dire Bear Form
+/cast [noform:1]Dire Bear Form
 END
 VER 3 000000000000001E "cat" "INV_MISC_QUESTIONMARK"
 #showtooltip Cat Form
-/cancelaura [form:5] Flight Form;[form:3,combat] Cat Form
-/cast Cat Form
+/cancelaura [form:5] Flight Form;[form:3] Cat Form
+/cast [noform:3]Cat Form
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33444
-/castsequence [combat] reset=combat item:33448
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000022 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33454
+/use [nocombat]item:35953
 /castsequence [combat] reset=combat item:33447
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"

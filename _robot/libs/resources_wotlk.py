@@ -95,6 +95,7 @@ data = {
             {"name": "barkskin", "type": "GetSpellTexture", "id": 22812, "key": "g"},
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
             {"name": "lacerate", "type": "GetSpellTexture", "id": 33745, "key": "3"},
+            {"name": "frenzied regeneration", "type": "GetSpellTexture", "id": 22842, "key": "6"},
         ],
         "secondary": [
             {"name": "nature's grasp", "type": "GetSpellTexture", "id": 16689, "key": "f", "modifier": "lalt"},

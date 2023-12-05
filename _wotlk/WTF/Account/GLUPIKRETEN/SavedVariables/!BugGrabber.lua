@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 10211,
+	["session"] = 10225,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\QuickQuest\\Addon.lua:318: attempt to call global 'GetNumAutoQuestPopUps' (a nil value)",
@@ -7662,8 +7662,8 @@ BugGrabberDB = {
 			["time"] = "2023/10/17 12:01:28",
 			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)\"\n",
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:285: in function <Interface/FrameXML/SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
-			["session"] = 10206,
-			["counter"] = 33,
+			["session"] = 10221,
+			["counter"] = 35,
 		}, -- [1000]
 	},
 }

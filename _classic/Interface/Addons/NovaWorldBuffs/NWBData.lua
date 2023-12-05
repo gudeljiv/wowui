@@ -258,6 +258,10 @@ function NWB:sendComm(distribution, string, target, prio, useOldSerializer)
 	if ((UnitInBattleground("player") or NWB:isInArena()) and distribution ~= "GUILD") then
 		return;
 	end
+	if (LE_PARTY_CATEGORY_INSTANCE and IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
+		--Just don't send any data in LFD.
+		return;
+	end
 	if (distribution == "CHANNEL") then
 		--Get channel ID number.
 		local addonChannelId = GetChannelName(target);
@@ -3867,6 +3871,7 @@ end
 --Adapted from the org/stormwind markers so things might look a bit strange here.
 --Also reused some terokkar assets from TBC for new intergrasp timers, so naming schemes may look strange too.
 
+NWB.extraMapMarkers = {};
 local terokkarMapMarkerTypes;
 if (NWB.isTBC) then
 	terokkarMapMarkerTypes = {
@@ -4071,7 +4076,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.texture = bg;
 			obj:SetSize(20, 20);
 			--Timer frame that sits above the icon when an active timer is found.
-			obj.timerFrame = CreateFrame("Frame", type .. layer .. "TerokkarMapTimerFrame", WorldMapFrame, "TooltipBorderedFrameTemplate");
+			obj.timerFrame = CreateFrame("Frame", type .. layer .. "TerokkarMapTimerFrame", obj, "TooltipBorderedFrameTemplate");
 			obj.timerFrame:SetPoint("CENTER", obj, "CENTER",  0, 22);
 			obj.timerFrame:SetFrameStrata("FULLSCREEN");
 			obj.timerFrame:SetFrameLevel(9);
@@ -4153,7 +4158,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 					end
 				end
 			end)
-			obj.tooltip = CreateFrame("Frame", type .. layer .. "NWBTerokkarDailyMapTextTooltip", WorldMapFrame, "TooltipBorderedFrameTemplate");
+			obj.tooltip = CreateFrame("Frame", type .. layer .. "NWBTerokkarDailyMapTextTooltip", obj, "TooltipBorderedFrameTemplate");
 			obj.tooltip:SetPoint("BOTTOM", obj, "TOP", 0, 35);
 			--obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, -26);
 			obj.tooltip:SetFrameStrata("TOOLTIP");
@@ -4182,6 +4187,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetScript("OnLeave", function(self)
 				obj.tooltip:Hide();
 			end)
+			NWB.extraMapMarkers[obj:GetName()] = true;
 		end
 	else
 		if (not _G[type .. "NWBTerokkarMap"]) then
@@ -4199,7 +4205,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.fsTitle:SetFont(NWB.regionFont, 14, "OUTLINE");
 			--obj.fsTitle:SetFontObject(NumberFont_Outline_Med);
 			--Timer frame that sits above the icon when an active timer is found.
-			obj.timerFrame = CreateFrame("Frame", type .. "TerokkarMapTimerFrame", WorldMapFrame, "TooltipBorderedFrameTemplate");
+			obj.timerFrame = CreateFrame("Frame", type .. "TerokkarMapTimerFrame", obj, "TooltipBorderedFrameTemplate");
 			obj.timerFrame:SetPoint("CENTER", obj, "CENTER",  0, 22);
 			obj.timerFrame:SetFrameStrata("FULLSCREEN");
 			obj.timerFrame:SetFrameLevel(9);
@@ -4272,7 +4278,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 					end
 				end
 			end)
-			obj.tooltip = CreateFrame("Frame", type .. "NWBTerokkarDailyMapTextTooltip", WorldMapFrame, "TooltipBorderedFrameTemplate");
+			obj.tooltip = CreateFrame("Frame", type .. "NWBTerokkarDailyMapTextTooltip", obj, "TooltipBorderedFrameTemplate");
 			obj.tooltip:SetPoint("BOTTOM", obj, "TOP", 0, 35);
 			--obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, -26);
 			obj.tooltip:SetFrameStrata("TOOLTIP");
@@ -4301,6 +4307,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetScript("OnLeave", function(self)
 				obj.tooltip:Hide();
 			end)
+			NWB.extraMapMarkers[obj:GetName()] = true;
 		end
 	end
 end
@@ -4401,6 +4408,7 @@ function NWB:refreshTerokkarMarkers()
 			end
 		end
 	end
+	NWB:updateWorldbuffMarkersScale();
 end
 
 ---=======---
@@ -5085,8 +5093,7 @@ end)
 --Update timers for worldmap when the map is open.
 function NWB:updateDailyMarkers()
 	if (NWB.db.global.showShatWorldmapMarkers) then
-		_G["NWBDailyMap"]:Show();
-		_G["NWBHeroicMap"]:Show();
+		local hide;
 		if (_G["NWBDailyMap"] and NWB.data.tbcDD and NWB.data.tbcDDT and GetServerTime() - NWB.data.tbcDDT < 86400) then
 			local questData = NWB:getDungeonDailyData(NWB.data.tbcDD);
 			if (questData) then
@@ -5115,6 +5122,7 @@ function NWB:updateDailyMarkers()
 			_G["NWBDailyMap"].tooltip:SetWidth(1);
 			_G["NWBDailyMap"].tooltip:SetHeight(1);
 			_G["NWBDailyMap"].tooltip.enable = false;
+			hide = true;
 		end
 		if (_G["NWBHeroicMap"] and NWB.data.tbcHD and NWB.data.tbcHDT and GetServerTime() - NWB.data.tbcHDT < 86400) then
 			local questData = NWB:getHeroicDailyData(NWB.data.tbcHD);
@@ -5144,6 +5152,15 @@ function NWB:updateDailyMarkers()
 			_G["NWBHeroicMap"].tooltip:SetWidth(1);
 			_G["NWBHeroicMap"].tooltip:SetHeight(1);
 			_G["NWBHeroicMap"].tooltip.enable = false;
+			hide = true;
+		end
+		--These are hidden when no data is found for a while (like phase 4-5 of wrath when dailies are removed).
+		if (hide) then
+			_G["NWBDailyMap"]:Hide();
+			_G["NWBHeroicMap"]:Hide();
+		else
+			_G["NWBDailyMap"]:Show();
+			_G["NWBHeroicMap"]:Show();
 		end
 	else
 		_G["NWBDailyMap"]:Hide();
@@ -5160,7 +5177,7 @@ function NWB:createShatDailyMarkers()
 		obj.texture = bg;
 		obj:SetSize(18, 18);
 		--Timer frame that sits above the icon when an active timer is found.
-		obj.textFrame = CreateFrame("Frame", "NWBDailyMapText", WorldMapFrame, "TooltipBorderedFrameTemplate");
+		obj.textFrame = CreateFrame("Frame", "NWBDailyMapText", obj, "TooltipBorderedFrameTemplate");
 		obj.textFrame:SetPoint("LEFT", obj, "RIGHT",  0, 0);
 		obj.textFrame:SetFrameStrata("FULLSCREEN");
 		obj.textFrame:SetFrameLevel(9);
@@ -5170,7 +5187,7 @@ function NWB:createShatDailyMarkers()
 		obj.textFrame:SetWidth(54);
 		obj.textFrame:SetHeight(24);
 		--Worldmap tooltip.
-		obj.tooltip = CreateFrame("Frame", "NWBDailyMapTextTooltip", WorldMapFrame, "TooltipBorderedFrameTemplate");
+		obj.tooltip = CreateFrame("Frame", "NWBDailyMapTextTooltip", obj, "TooltipBorderedFrameTemplate");
 		obj.tooltip:SetPoint("BOTTOM", obj, "TOP", 0, 5);
 		--obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, -26);
 		obj.tooltip:SetFrameStrata("TOOLTIP");
@@ -5218,6 +5235,7 @@ function NWB:createShatDailyMarkers()
 		obj:SetScript("OnShow", function(self)
 			obj.textFrame:Show();
 		end)
+		NWB.extraMapMarkers[obj:GetName()] = true;
 	end
 	if (not _G["NWBHeroicMap"]) then
 		local obj = CreateFrame("Frame", "NWBHeroicMap", WorldMapFrame);
@@ -5227,7 +5245,7 @@ function NWB:createShatDailyMarkers()
 		obj.texture = bg;
 		obj:SetSize(18, 18);
 		--Timer frame that sits above the icon when an active timer is found.
-		obj.textFrame = CreateFrame("Frame", "NWBHeroicMapText", WorldMapFrame, "TooltipBorderedFrameTemplate");
+		obj.textFrame = CreateFrame("Frame", "NWBHeroicMapText", obj, "TooltipBorderedFrameTemplate");
 		obj.textFrame:SetPoint("LEFT", obj, "RIGHT",  0, 0);
 		obj.textFrame:SetFrameStrata("FULLSCREEN");
 		obj.textFrame:SetFrameLevel(9);
@@ -5237,7 +5255,7 @@ function NWB:createShatDailyMarkers()
 		obj.textFrame:SetWidth(54);
 		obj.textFrame:SetHeight(24);
 		--Worldmap tooltip.
-		obj.tooltip = CreateFrame("Frame", "NWBDailyMapTextTooltip", WorldMapFrame, "TooltipBorderedFrameTemplate");
+		obj.tooltip = CreateFrame("Frame", "NWBDailyMapTextTooltip", obj, "TooltipBorderedFrameTemplate");
 		obj.tooltip:SetPoint("BOTTOM", obj, "TOP", 0, 5);
 		--obj.tooltip:SetPoint("CENTER", obj, "CENTER", 0, -26);
 		obj.tooltip:SetFrameStrata("TOOLTIP");
@@ -5286,6 +5304,7 @@ function NWB:createShatDailyMarkers()
 		obj:SetScript("OnShow", function(self)
 			obj.textFrame:Show();
 		end)
+		NWB.extraMapMarkers[obj:GetName()] = true;
 	end
 	if (NWB.isTBC or NWB.isWrathPrepatch) then
 		NWB.dragonLibPins:AddWorldMapIconMap("NWBDailyMap", _G["NWBDailyMap"], 
@@ -5294,9 +5313,9 @@ function NWB:createShatDailyMarkers()
 				1955, 65 / 100, 95 / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
 	elseif (NWB.isWrath) then
 		NWB.dragonLibPins:AddWorldMapIconMap("NWBDailyMap", _G["NWBDailyMap"], 
-				125, 65 / 100, 94 / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
+				125, 65 / 100, 92 / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
 		NWB.dragonLibPins:AddWorldMapIconMap("NWBHeroicMap", _G["NWBHeroicMap"], 
-				125, 65 / 100, 97 / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
+				125, 65 / 100, 95 / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
 	end
 end
 
