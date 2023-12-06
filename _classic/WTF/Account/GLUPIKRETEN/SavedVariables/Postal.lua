@@ -1,5 +1,21 @@
 
 Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
+				"Dopeclaw|Lone Wolf|Horde|5|DRUID", -- [2]
+				"Dopeclaw|Stitches|Horde|1|DRUID", -- [3]
+				"Dopecure|Stitches|Horde|11|PRIEST", -- [4]
+				"Dopede|Stitches|Horde|5|SHAMAN", -- [5]
+				"Dopesick|Stitches|Horde|3|WARRIOR", -- [6]
+				"Dopesnare|Stitches|Horde|40|HUNTER", -- [7]
+				"Lonac|Stitches|Horde|1|WARRIOR", -- [8]
+				"Mxzq|Golemagg|Horde|35|HUNTER", -- [9]
+				"Vermins|Stitches|Horde|26|WARRIOR", -- [10]
+			},
+		},
+	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
@@ -9,22 +25,8 @@ Postal3DB = {
 		["Vermins - Stitches"] = "Vermins - Stitches",
 		["Dopeah - Stitches"] = "Dopeah - Stitches",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Dopecure - Stitches"] = "Dopecure - Stitches",
-	},
-	["global"] = {
-		["BlackBook"] = {
-			["alts"] = {
-				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
-				"Dopeclaw|Stitches|Horde|1|DRUID", -- [2]
-				"Dopecure|Stitches|Horde|11|PRIEST", -- [3]
-				"Dopede|Stitches|Horde|5|SHAMAN", -- [4]
-				"Dopesick|Stitches|Horde|3|WARRIOR", -- [5]
-				"Dopesnare|Stitches|Horde|40|HUNTER", -- [6]
-				"Lonac|Stitches|Horde|1|WARRIOR", -- [7]
-				"Mxzq|Golemagg|Horde|35|HUNTER", -- [8]
-				"Vermins|Stitches|Horde|26|WARRIOR", -- [9]
-			},
-		},
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -69,6 +71,8 @@ Postal3DB = {
 					"Dopede|Stitches|Horde", -- [1]
 				},
 			},
+		},
+		["Dopeclaw - Lone Wolf"] = {
 		},
 		["Dopecure - Stitches"] = {
 		},
