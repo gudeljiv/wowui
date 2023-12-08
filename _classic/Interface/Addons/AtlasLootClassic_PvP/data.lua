@@ -951,3 +951,24 @@ data["Insignia"] = {
 		PVP_RANKS,
 	},
 }
+data["SoD Exclusives"] = {
+	name = AL["SoD Exclusives"],
+	ContentType = GENERAL_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 1,
+	items = {
+		{
+			name = AL["SoD Phase 1 Items"],
+			[NORMAL_DIFF] = {
+				{ 1,  211500 }, --Resilient Cloth Headband
+				{ 2,  211857 }, --Resilient Leather Mask
+				{ 3,  211856 }, --Resilient Mail Coif
+				{ 5,  211498 }, --Trainee's Sentinel Nightsaber
+				{ 6,  211499 }, --Trainee's Outrider Wolf
+				{ 16,  213088 }, --Sergeant's Cloak
+				{ 17,  213087 }, --Sergeant's Cloak
+			},
+		},
+		PVP_RANKS,
+	},
+}

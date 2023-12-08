@@ -1,4 +1,4 @@
-﻿----------------------------------------------------------------------
+----------------------------------------------------------------------
 -- 	Leatrix Maps Locale
 ----------------------------------------------------------------------
 
@@ -1244,7 +1244,7 @@ end
 
 -- deDE: German
 if GameLocale == "deDE" then
-	L["/ltm help - Show this information."] = "/ltm help - Informationen anzeigen."
+L["/ltm help - Show this information."] = "/ltm help - Informationen anzeigen."
 L["/ltm reset - Reset the panel position."] = "/ltm reset - Panelposition Zurücksetzen."
 L["/ltm wipe - Wipe all settings and reload."] = "/ltm wipe - ALLE Einstellungen zurücksetzen und Interface neu laden."
 L["A stop error has occurred but no need to worry.  It can happen from time to time.  Click the reload button to resolve it."] = "Ein Stopp-Fehler ist aufgetreten aber keine Sorge.  Das kann von Zeit zu Zeit passieren.  Klicke auf den Reload Button und das Problem sollte behoben sein."

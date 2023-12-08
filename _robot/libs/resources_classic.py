@@ -79,9 +79,10 @@ data = {
     "druid": {
         "main": [
             {"name": "wrath", "type": "GetSpellTexture", "id": 5176, "key": "1"},
-            {"name": "healing touch", "type": "GetSpellTexture", "id": 5185, "key": "6"},
-            {"name": "mark of the wild", "type": "GetSpellTexture", "id": 1126, "key": "7"},
-            {"name": "thorns", "type": "GetSpellTexture", "id": 467, "key": "8"},
+            {"name": "healing touch", "type": "GetSpellTexture", "id": 5185, "key": "e"},
+            {"name": "lifebloom", "type": "GetSpellTexture", "id": 408124, "key": "x"},
+            {"name": "mark of the wild", "type": "GetSpellTexture", "id": 1126, "key": "f10"},
+            {"name": "thorns", "type": "GetSpellTexture", "id": 467, "key": "5", "modifier": "lshift"},
             {"name": "sunfire", "type": "GetSpellTexture", "id": 414684, "key": "3"},
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
             {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
@@ -94,6 +95,7 @@ data = {
             {"name": "mangle", "type": "GetSpellTexture", "id": 33917, "key": "9"},
             {"name": "swipe", "type": "GetSpellTexture", "id": 779, "key": "2"},
             {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
+            {"name": "mangle", "type": "GetSpellTexture", "id": 407995, "key": "9"},
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "1"},

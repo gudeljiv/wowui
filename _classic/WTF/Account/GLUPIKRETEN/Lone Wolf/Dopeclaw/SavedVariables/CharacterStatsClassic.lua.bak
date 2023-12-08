@@ -1,6 +1,6 @@
 
 CharacterStatsClassicCharacterDB = {
 	["showStatsFromArgentDawnItems"] = true,
-	["selectedRightStatsCategory"] = 1,
+	["selectedRightStatsCategory"] = 4,
 	["selectedLeftStatsCategory"] = 2,
 }

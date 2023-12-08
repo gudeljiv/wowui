@@ -87,3 +87,8 @@ VER 3 0000000001000018 " " "134400"
 /startattack
 /cast Wrath
 END
+VER 3 0000000001000019 " " "134400"
+#showtooltip
+/cast [form:3] Mangle(Cat)
+/cast Mangle(Bear)
+END
