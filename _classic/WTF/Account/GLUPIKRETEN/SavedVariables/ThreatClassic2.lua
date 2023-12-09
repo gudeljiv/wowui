@@ -13,12 +13,12 @@ ThreatClassic2DB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Lonac - Stitches"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Dopeclaw - Lone Wolf"] = "Default",
 		["Miqa - Golemagg"] = "Default",
 		["Dopeah - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
-		["Dopeclaw - Lone Wolf"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -52,14 +52,6 @@ ThreatClassic2DB = {
 					0, -- [4]
 				},
 				["width"] = 210,
-				["headerColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					0, -- [4]
-				},
-				["height"] = 140,
-				["locked"] = true,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -67,6 +59,14 @@ ThreatClassic2DB = {
 					650, -- [4]
 					-340, -- [5]
 				},
+				["height"] = 140,
+				["headerColor"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					0, -- [4]
+				},
+				["locked"] = true,
 			},
 			["bar"] = {
 				["count"] = 8,

@@ -48,9 +48,8 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 /cast [@mouseover,exists,nodead][] Faerie Fire (Feral)
 END
 VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
-#showtooltip
-/startattack [form:1][form:3]
-/cast [stealth] Shred;[@mouseover,help,nodead][]Rejuvenation
+function containerProto:OnCreate(name, isBank, bagObject)
+    self:CreateBeautyBorder(8)
 END
 VER 3 0000000001000013 " " "134400"
 #showtooltip Prowl
@@ -86,4 +85,9 @@ VER 3 0000000001000018 " " "134400"
 #showtooltip
 /startattack
 /cast Wrath
+END
+VER 3 0000000001000019 " " "134400"
+#showtooltip
+/cast [form:3] Mangle(Cat)
+/cast Mangle(Bear)
 END
