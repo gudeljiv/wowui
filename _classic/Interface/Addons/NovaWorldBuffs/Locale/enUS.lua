@@ -849,3 +849,11 @@ L["wintergraspChat10Desc"] = "Print a msg in chat when 10 minutes left on Winter
 
 L["wintergraspMiddle10Title"] = "Wintergrasp 10 Minutes";
 L["wintergraspMiddle10Desc"] = "Show a raid warning style msg in the middle of the screen when 10 minutes left on Wintergrasp spirit towers.";
+
+L["ashenvaleHordeVictoryMsg"] = "The Alliance Priestess of the Moon has been slain";
+L["ashenvaleAllianceVictoryMsg"] = "The Horde Far Seer has been slain";
+
+L["ashenvaleWarning"] = "Ashenvale PvP event starting soon (Alliance %s%%) (Horde %s%%)."; --Any localization of this string must match the same format with brackets etc.
+
+L["Boon of Blackfathom"] = "Boon of Blackfathom";
+L["Ashenvale Rallying Cry"] = "Ashenvale Rallying Cry";

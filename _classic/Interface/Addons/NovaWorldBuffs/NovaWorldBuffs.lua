@@ -23,6 +23,9 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NWB.isRetail = true;
 end
+if (C_Engraving and C_Engraving.IsEngravingEnabled()) then
+	NWB.isSOD = true;
+end
 --Temporary until actual launch.
 --if (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	--This basically meant prepatch, some things were still enabled.
@@ -97,6 +100,7 @@ function NWB:OnInitialize()
 	self:createShatDailyMarkers();
 	self:getDmfData();
 	self:createDmfMarkers();
+	self:createAshenvaleMarkers();
 	self:doResetTimerData();
 	self:resetSongFlowers();
 	self:resetLayerData();
@@ -1066,6 +1070,20 @@ function NWB:sendGuildMsg(msg, type, zoneName, prefix, minVersion)
 	end
 end
 
+function NWB:inMyGuild(who)
+	if (who) then
+		for i = 1, GetNumGuildMembers() do
+			local name = GetGuildRosterInfo(i);
+			if (name) then
+				local nameOnly, realm = strsplit("-", who, 2);
+				if (who == name or who == nameOnly) then
+					return true;
+				end
+			end
+		end
+	end
+end
+
 function NWB:logonCheckGuildMasterSetting()
 	C_Timer.After(10, function()
 		NWB.checkedGuildNote = true;
@@ -1321,6 +1339,10 @@ function NWB:monsterYell(...)
 		else
 			NWB.data.hellfireRep = GetServerTime();
 		end
+	--elseif ((name == L["Dawnwatcher Selgorm"] or name == L["Horde Placeholder"]) and string.match(msg, L["the dread beast Aku'mai has been slain"])) then
+		--SoD Darnassus npc.
+		--print("darn yell", GetServerTime())
+		--This turned out to be only 6 seconds warning, probably not worth adding the yell to guild chat?
 	end
 end
 
@@ -2027,6 +2049,17 @@ function NWB:combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199) then
 				NWB:trackNewBuff(spellName, "swiftZanza");
+			end
+		--New SoD buffs, now that they allow spellIDs in classic this needs to all be changed to a hash table instead of this mess of elseif's in the future.
+		elseif (destName == UnitName("player") and spellName == L["Boon of Blackfathom"]) then
+			local expirationTime = NWB:getBuffDuration(spellName, 0);
+			if (expirationTime >= 7199) then
+				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
+			end
+		elseif (destName == UnitName("player") and spellName == L["Ashenvale Rallying Cry"]) then
+			local expirationTime = NWB:getBuffDuration(spellName, 0);
+			if (expirationTime >= 7199) then
+				NWB:trackNewBuff(spellName, "ashenvaleRallyingCry");
 			end
 		elseif (destName == UnitName("player") and spellName == L["Stealth"]) then
 			--Vanish is hidden from combat log even to ourself, use stealth instead as it fires when we vanish.
@@ -2807,7 +2840,7 @@ function NWB:trackNewBuff(spellName, type, npcID)
 		NWB:print(string.format(L["dmfBuffDropped"], spellName));
 		NWB:addDmfCooldown();
 	end
-	NWB:debug("Tracking new buff", type, spellName);
+	NWB:debug(GetServerTime(), "Tracking new buff", type, spellName);
 	NWB:recalcBuffListFrame();
 end
 
@@ -2890,6 +2923,9 @@ local spellTypes = {
 	[40586] = "unstableFlaskPhysician",
 	[40575] = "unstableFlaskSoldier",
 	[40587] = "unstableFlaskSoldier",
+	--SoD.
+	[430947] = "boonOfBlackfathom",
+	[430352] = "ashenvaleRallyingCry",
 }; 
 		
 local buffTable = {
@@ -3099,6 +3135,17 @@ local buffTable = {
 		icon = "|TInterface\\Icons\\inv_potion_84:12:12:0:0|t",
 		--icon = "|TInterface\\Icons\\inv_potion_91:12:12:0:0|t",
 		fullName = "Unstable Flask of the Soldier",
+		maxDuration = 7200,
+	},
+	--SoD.
+	["boonOfBlackfathom"] = {
+		icon = "|TInterface\\Icons\\achievement_boss_bazil_akumai:12:12:0:0|t",
+		fullName = "Boon of Blackfathom",
+		maxDuration = 7200,
+	},
+	["ashenvaleRallyingCry"] = {
+		icon = "|TInterface\\Icons\\spell_misc_warsongfocus:12:12:0:0|t",
+		fullName = "Ashenvale Rallying Cry",
 		maxDuration = 7200,
 	},
 };
@@ -3920,6 +3967,10 @@ f:SetScript("OnEvent", function(self, event, ...)
 		if (who == UnitName("player")) then
 			--Register ourself to other addon users when joining a guild.
 			NWB:requestData("GUILD", nil, "ALERT");
+		end
+		--Request roster update when guild member goes online or offline, this seems to be delayed, see if this helps?
+		if (string.match(text, string.gsub(ERR_FRIEND_ONLINE_SS, "|H.+|h", "(.+)")) or string.match(text, string.gsub(ERR_FRIEND_OFFLINE_S, "%%s", "(.+)"))) then
+			GuildRoster();
 		end
 	elseif (event == "CHAT_MSG_ADDON") then
 		local commPrefix, string, distribution, sender = ...;
@@ -5770,6 +5821,9 @@ function NWB:updateMinimapButton(tooltip, frame)
 			tooltip.NWBSeparator3:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
 			tooltip.NWBSeparator3:Show();
 		end
+	end
+	if (NWB.isSOD) then
+		NWB:addAshenvaleMinimapString(tooltip);
 	end
 	tooltip:AddLine("|cFF9CD6DELeft-Click|r Timers");
 	tooltip:AddLine("|cFF9CD6DERight-Click|r Buffs");
@@ -7652,9 +7706,9 @@ function NWB:refreshWorldbuffMarkers()
 					NWB.worldBuffMapMarkerTypes.ony = {x = 68, y = 85.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_01", name = L["onyxia"]};
 					NWB.worldBuffMapMarkerTypes.nef = {x = 76.0, y = 85.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_black", name = L["nefarian"]};
 				else
-					NWB.worldBuffMapMarkerTypes.rend = {x = 77.0, y = 87.0, mapID = 1454, icon = "Interface\\Icons\\spell_arcane_teleportorgrimmar", name = L["rend"]};
-					NWB.worldBuffMapMarkerTypes.ony = {x = 82.0, y = 87.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_01", name = L["onyxia"]};
-					NWB.worldBuffMapMarkerTypes.nef = {x = 87.0, y = 87.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_black", name = L["nefarian"]};
+					NWB.worldBuffMapMarkerTypes.rend = {x = 77.0, y = 80.0, mapID = 1454, icon = "Interface\\Icons\\spell_arcane_teleportorgrimmar", name = L["rend"]};
+					NWB.worldBuffMapMarkerTypes.ony = {x = 82.0, y = 80.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_01", name = L["onyxia"]};
+					NWB.worldBuffMapMarkerTypes.nef = {x = 87.0, y = 80.0, mapID = 1454, icon = "Interface\\Icons\\inv_misc_head_dragon_black", name = L["nefarian"]};
 				end
 				hideFS = true;
 			else

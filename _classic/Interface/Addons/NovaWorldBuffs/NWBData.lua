@@ -214,7 +214,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 		if (not NWB:getGuildDataStatus()) then
 			NWB:sendSettings("GUILD");
 		else
-			NWB:sendData("GUILD");
+			NWB:sendData("GUILD", nil, nil, nil, nil, nil, nil, true);
 		end
 	elseif (cmd == "requestSettings" and distribution == "GUILD") then
 		--Only used once per logon.
@@ -297,7 +297,7 @@ local enableLogging = true;
 local includeTimerLog = true;
 local logRendOnly = true;
 local logLayeredServersOnly = true;
-function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type, forceLayerMap)
+function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type, forceLayerMap, isRequestData)
 	--if (NWB.isDebug) then
 	--	return;
 	--end
@@ -310,9 +310,9 @@ function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type, forc
 	end
 	local data;
 	if (NWB.isLayered) then
-		data = NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap);
+		data = NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap, isRequestData);
 	else
-		data = NWB:createData(distribution, noLogs);
+		data = NWB:createData(distribution, noLogs, type, isRequestData);
 	end
 	--NWB:debug(data)
 	if (next(data) ~= nil and NWB:isClassicCheck()) then
@@ -685,103 +685,121 @@ function NWB:requestSettings(distribution, target, prio)
 end
 
 --Create data table for sending.
-function NWB:createData(distribution, noLogs)
+function NWB:createData(distribution, noLogs, type, isRequestData)
 	local data = {};
 	if ((UnitInBattleground("player") or NWB:isInArena()) and distribution ~= "GUILD") then
 		return data;
 	end
-	if (NWB.data.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
-		data['rendTimer'] = NWB.data.rendTimer;
-		--data['rendTimerWho'] = NWB.data.rendTimerWho;
-		data['rendYell'] = NWB.data.rendYell or 0;
-		--data['rendYell2'] = NWB.data.rendYell2 or 0;
-		--data['rendSource'] = NWB.data.rendSource;
-	end
-	if (NWB.data.onyTimer > (GetServerTime() - NWB.db.global.onyRespawnTime)) then
-		data['onyTimer'] = NWB.data.onyTimer;
-		--data['onyTimerWho'] = NWB.data.onyTimerWho;
-		data['onyYell'] = NWB.data.onyYell or 0;
-		--data['onyYell2'] = NWB.data.onyYell2 or 0;
-		--data['onySource'] = NWB.data.onySource;
-	end
-	if (NWB.data.nefTimer > (GetServerTime() - NWB.db.global.nefRespawnTime)) then
-		data['nefTimer'] = NWB.data.nefTimer;
-		--data['nefTimerWho'] = NWB.data.nefTimerWho;
-		data['nefYell'] = NWB.data.nefYell or 0;
-		--data['nefYell2'] = NWB.data.nefYell2 or 0;
-		--data['nefSource'] = NWB.data.nefSource;
-	end
-	if ((NWB.data.onyNpcDied > NWB.data.onyTimer) and
-			(NWB.data.onyNpcDied > (GetServerTime() - NWB.db.global.onyRespawnTime))) then
-		data['onyNpcDied'] = NWB.data.onyNpcDied;
-	end
-	if ((NWB.data.nefNpcDied > NWB.data.nefTimer) and
-			(NWB.data.nefNpcDied > (GetServerTime() - NWB.db.global.nefRespawnTime))) then
-		if (NWB.faction == "Alliance") then
-			data['nefNpcDied'] = NWB.data.nefNpcDied;
+	if (type == "ashenvale") then
+		if (NWB:isAshenvaleTimerValid()) then
+			data.ashenvale = NWB.data.ashenvale;
+			data.ashenvaleTime = NWB.data.ashenvaleTime;
 		end
-	end
-	for k, v in pairs(NWB.songFlowers) do
-		--Add currently active songflower timers.
-		if (NWB.data[k] > GetServerTime() - 1500) then
-			data[k] = NWB.data[k];
+	else
+		if (NWB.data.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
+			data['rendTimer'] = NWB.data.rendTimer;
+			--data['rendTimerWho'] = NWB.data.rendTimerWho;
+			data['rendYell'] = NWB.data.rendYell or 0;
+			--data['rendYell2'] = NWB.data.rendYell2 or 0;
+			--data['rendSource'] = NWB.data.rendSource;
 		end
-	end
-	for k, v in pairs(NWB.tubers) do
-		--Add currently active tuber timers.
-		if (NWB.data[k] > GetServerTime() - 1500) then
-			data[k] = NWB.data[k];
+		if (NWB.data.onyTimer > (GetServerTime() - NWB.db.global.onyRespawnTime)) then
+			data['onyTimer'] = NWB.data.onyTimer;
+			--data['onyTimerWho'] = NWB.data.onyTimerWho;
+			data['onyYell'] = NWB.data.onyYell or 0;
+			--data['onyYell2'] = NWB.data.onyYell2 or 0;
+			--data['onySource'] = NWB.data.onySource;
 		end
-	end
-	for k, v in pairs(NWB.dragons) do
-		--Add currently active dragon timers.
-		if (NWB.data[k] > GetServerTime() - 1500) then
-			data[k] = NWB.data[k];
+		if (NWB.data.nefTimer > (GetServerTime() - NWB.db.global.nefRespawnTime)) then
+			data['nefTimer'] = NWB.data.nefTimer;
+			--data['nefTimerWho'] = NWB.data.nefTimerWho;
+			data['nefYell'] = NWB.data.nefYell or 0;
+			--data['nefYell2'] = NWB.data.nefYell2 or 0;
+			--data['nefSource'] = NWB.data.nefSource;
 		end
-	end
-	if ((NWB.isTBC or NWB.isWrathPrepatch) and NWB.data.terokFaction and NWB.data.terokTowers and tonumber(NWB.data.terokTowers)
-			and NWB.data.terokTowers > GetServerTime() and NWB.data.terokTowers < GetServerTime() + 20700) then
-		data.terokTowers = NWB.data.terokTowers;
-		data.terokTowersTime = NWB.data.terokTowersTime;
-		data.terokFaction = NWB.data.terokFaction;
-	end
-	if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
-			and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
-		data.wintergrasp = NWB.data.wintergrasp;
-		data.wintergraspTime = NWB.data.wintergraspTime;
-		--data.wintergraspFaction = NWB.data.wintergraspFaction;
-	end
-	--if (NWB.isTBC and NWB.data.hellfireRep and tonumber(NWB.data.hellfireRep) and NWB.data.hellfireRep > GetServerTime()
-	--		and NWB.data.hellfireRep < GetServerTime() + 23400) then
-	--	data.hellfireRep = NWB.data.hellfireRep;
-	--end
-	if (NWB.isTBC or NWB.isWrath) then
-		if (NWB.data.tbcHD and tonumber(NWB.data.tbcHD) and NWB.data.tbcHD > 0 and NWB.data.tbcHDT
-				and GetServerTime() - NWB.data.tbcHDT < 86400) then
-			data.tbcHD = NWB.data.tbcHD;
-			data.tbcHDT = NWB.data.tbcHDT;
+		if ((NWB.data.onyNpcDied > NWB.data.onyTimer) and
+				(NWB.data.onyNpcDied > (GetServerTime() - NWB.db.global.onyRespawnTime))) then
+			data['onyNpcDied'] = NWB.data.onyNpcDied;
 		end
-		if (NWB.data.tbcDD and tonumber(NWB.data.tbcDD) and NWB.data.tbcDD > 0 and NWB.data.tbcDDT
-				and GetServerTime() - NWB.data.tbcDDT < 86400) then
-			data.tbcDD = NWB.data.tbcDD;
-			data.tbcDDT = NWB.data.tbcDDT;
+		if ((NWB.data.nefNpcDied > NWB.data.nefTimer) and
+				(NWB.data.nefNpcDied > (GetServerTime() - NWB.db.global.nefRespawnTime))) then
+			if (NWB.faction == "Alliance") then
+				data['nefNpcDied'] = NWB.data.nefNpcDied;
+			end
 		end
-		if (NWB.data.tbcPD and tonumber(NWB.data.tbcPD) and NWB.data.tbcPD > 0 and NWB.data.tbcPDT
-				and GetServerTime() - NWB.data.tbcPDT < 86400) then
-			data.tbcPD = NWB.data.tbcPD;
-			data.tbcPDT = NWB.data.tbcPDT;
+		for k, v in pairs(NWB.songFlowers) do
+			--Add currently active songflower timers.
+			if (NWB.data[k] > GetServerTime() - 1500) then
+				data[k] = NWB.data[k];
+			end
 		end
-	end
-	if (distribution == "GUILD") then
-		--Include settings with timer data for guild.
-		local settings = NWB:createSettings(distribution);
-		local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
-		data[me] = settings[me];
-	end
-	if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
-		local timerLog = NWB:createTimerLogData(distribution);
-		if (next(timerLog)) then
-			data.timerLog = timerLog;
+		for k, v in pairs(NWB.tubers) do
+			--Add currently active tuber timers.
+			if (NWB.data[k] > GetServerTime() - 1500) then
+				data[k] = NWB.data[k];
+			end
+		end
+		for k, v in pairs(NWB.dragons) do
+			--Add currently active dragon timers.
+			if (NWB.data[k] > GetServerTime() - 1500) then
+				data[k] = NWB.data[k];
+			end
+		end
+		if ((NWB.isTBC or NWB.isWrathPrepatch) and NWB.data.terokFaction and NWB.data.terokTowers and tonumber(NWB.data.terokTowers)
+				and NWB.data.terokTowers > GetServerTime() and NWB.data.terokTowers < GetServerTime() + 20700) then
+			data.terokTowers = NWB.data.terokTowers;
+			data.terokTowersTime = NWB.data.terokTowersTime;
+			data.terokFaction = NWB.data.terokFaction;
+		end
+		if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
+				and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
+			data.wintergrasp = NWB.data.wintergrasp;
+			data.wintergraspTime = NWB.data.wintergraspTime;
+			--data.wintergraspFaction = NWB.data.wintergraspFaction;
+		end
+		--if (NWB.isTBC and NWB.data.hellfireRep and tonumber(NWB.data.hellfireRep) and NWB.data.hellfireRep > GetServerTime()
+		--		and NWB.data.hellfireRep < GetServerTime() + 23400) then
+		--	data.hellfireRep = NWB.data.hellfireRep;
+		--end
+		if (NWB.isTBC or NWB.isWrath) then
+			if (NWB.data.tbcHD and tonumber(NWB.data.tbcHD) and NWB.data.tbcHD > 0 and NWB.data.tbcHDT
+					and GetServerTime() - NWB.data.tbcHDT < 86400) then
+				data.tbcHD = NWB.data.tbcHD;
+				data.tbcHDT = NWB.data.tbcHDT;
+			end
+			if (NWB.data.tbcDD and tonumber(NWB.data.tbcDD) and NWB.data.tbcDD > 0 and NWB.data.tbcDDT
+					and GetServerTime() - NWB.data.tbcDDT < 86400) then
+				data.tbcDD = NWB.data.tbcDD;
+				data.tbcDDT = NWB.data.tbcDDT;
+			end
+			if (NWB.data.tbcPD and tonumber(NWB.data.tbcPD) and NWB.data.tbcPD > 0 and NWB.data.tbcPDT
+					and GetServerTime() - NWB.data.tbcPDT < 86400) then
+				data.tbcPD = NWB.data.tbcPD;
+				data.tbcPDT = NWB.data.tbcPDT;
+			end
+		end
+		if (NWB.isSOD) then
+			if (NWB:isAshenvaleTimerValid()) then
+				data.ashenvale = NWB.data.ashenvale;
+				data.ashenvaleTime = NWB.data.ashenvaleTime;
+			end
+			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
+				--These variable names are shortened before sendin.
+				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			end
+		end
+		if (distribution == "GUILD") then
+			--Include settings with timer data for guild.
+			local settings = NWB:createSettings(distribution);
+			local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
+			data[me] = settings[me];
+		end
+		if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
+			local timerLog = NWB:createTimerLogData(distribution);
+			if (next(timerLog)) then
+				data.timerLog = timerLog;
+			end
 		end
 	end
 	--data['faction'] = NWB.faction;
@@ -797,7 +815,7 @@ end
 local lastSendLayerMap = {};
 local lastSendLayerMapID = {};
 --local firstLayeredYell = true;
-function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap)
+function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap, isRequestData)
 	local data = {};
 	if ((UnitInBattleground("player") or NWB:isInArena()) and distribution ~= "GUILD") then
 		return data;
@@ -819,270 +837,289 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	if (NWB.cnRealms[NWB.realm] or NWB.twRealms[NWB.realm] or NWB.krRealms[NWB.realm]) then
 		sendLayerMapDelay = 1260;
 	end]]
-	local sendLayerMapDelay = 1840;
-	local sendLayerMap, foundTimer;
-	if (not noLayerMap and (GetServerTime() - lastSendLayerMap[distribution]) > sendLayerMapDelay
-			and distribution ~= "PARTY" and distribution ~= "RAID") then
-		--Layermap data data won't change much except right after a server restart.
-		--So there's no need to use the addon bandwidth every time we send.
-		--Also don't send layermap data with group joins.
-		sendLayerMap = true;
-	end
-	for layer, v in NWB:pairsByKeys(NWB.data.layers) do
-		--Reset foundTimer with each loop so we don't send layermap data for layers with no timers later in the loop.
-		foundTimer = nil;
-		if (not type or type == "timers") then
-			if (NWB.data.layers[layer].rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
-				--Only create layers table if we have valid timers so we don't waste addon bandwidth with useless data.
-				--This was always done on non-layered realms but wasn't working right on layered realms, now it is.
-				--The data table is checked for empty when sending comms.
-				if (not data.layers) then
-					data.layers = {};
-				end
-				if (not data.layers[layer]) then
-					data.layers[layer] = {};
-				end
-				data.layers[layer]['rendTimer'] = NWB.data.layers[layer].rendTimer;
-				--data.layers[layer]['rendTimerWho'] = NWB.data.layers[layer].rendTimerWho;
-				data.layers[layer]['rendYell'] = NWB.data.layers[layer].rendYell;
-				--data.layers[layer]['rendYell2'] = NWB.data.layers[layer].rendYell2;
-				--data.layers[layer]['rendSource'] = NWB.data.layers[layer].rendSource;
-				--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-				--		and not NWB.krRealms[NWB.realm]) then
-				--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-				--end
-				foundTimer = true;
-			end
-			if (NWB.data.layers[layer].onyTimer > (GetServerTime() - NWB.db.global.onyRespawnTime)) then
-				if (not data.layers) then
-					data.layers = {};
-				end
-				if (not data.layers[layer]) then
-					data.layers[layer] = {};
-				end
-				--NWB:validateCloseTimestamps(layer, "onyTimer");
-				--NWB:validateCloseTimestamps(layer, "onyYell");
-				data.layers[layer]['onyTimer'] = NWB.data.layers[layer].onyTimer;
-				--data.layers[layer]['onyTimerWho'] = NWB.data.layers[layer].onyTimerWho;
-				data.layers[layer]['onyYell'] = NWB.data.layers[layer].onyYell;
-				--data.layers[layer]['onyYell2'] = NWB.data.layers[layer].onyYell2;
-				--data.layers[layer]['onySource'] = NWB.data.layers[layer].onySource;
-				--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-				--		and not NWB.krRealms[NWB.realm]) then
-				--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-				--end
-				foundTimer = true;
-			end
-			if (NWB.data.layers[layer].nefTimer > (GetServerTime() - NWB.db.global.nefRespawnTime)) then
-				if (not data.layers) then
-					data.layers = {};
-				end
-				if (not data.layers[layer]) then
-					data.layers[layer] = {};
-				end
-				data.layers[layer]['nefTimer'] = NWB.data.layers[layer].nefTimer;
-				--data.layers[layer]['nefTimerWho'] = NWB.data.layers[layer].nefTimerWho;
-				data.layers[layer]['nefYell'] = NWB.data.layers[layer].nefYell;
-				--data.layers[layer]['nefYell2'] = NWB.data.layers[layer].nefYell2;
-				--data.layers[layer]['nefSource'] = NWB.data.layers[layer].nefSource;
-				--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-				--		and not NWB.krRealms[NWB.realm]) then
-				--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-				--end
-				foundTimer = true;
-			end
-			if ((NWB.data.layers[layer].onyNpcDied > NWB.data.layers[layer].onyTimer) and
-					(NWB.data.layers[layer].onyNpcDied > (GetServerTime() - NWB.db.global.onyRespawnTime))) then
-				if (not data.layers) then
-					data.layers = {};
-				end
-				if (not data.layers[layer]) then
-					data.layers[layer] = {};
-				end
-				data.layers[layer]['onyNpcDied'] = NWB.data.layers[layer].onyNpcDied;
-				--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-				--		and not NWB.krRealms[NWB.realm]) then
-				--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-				--end
-				foundTimer = true;
-			end
-			if ((NWB.data.layers[layer].nefNpcDied > NWB.data.layers[layer].nefTimer) and
-					(NWB.data.layers[layer].nefNpcDied > (GetServerTime() - NWB.db.global.nefRespawnTime))) then
-				if (not data.layers) then
-					data.layers = {};
-				end
-				if (not data.layers[layer]) then
-					data.layers[layer] = {};
-				end
-				if (NWB.faction == "Alliance") then
-					data.layers[layer]['nefNpcDied'] = NWB.data.layers[layer].nefNpcDied;
-				end
-				--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-				--		and not NWB.krRealms[NWB.realm]) then
-				--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-				--end
-				--foundTimer = true;
-			end
+	if (type == "ashenvale") then
+		--Only send ashenvale data.
+		if (NWB:isAshenvaleTimerValid()) then
+			data.ashenvale = NWB.data.ashenvale;
+			data.ashenvaleTime = NWB.data.ashenvaleTime;
 		end
-		if (NWB.layeredSongflowers and (not type or type == "songflowers")) then
-			for k, v in pairs(NWB.songFlowers) do
-				--Add currently active songflower timers.
-				if (NWB.data.layers[layer][k] and (NWB.data.layers[layer][k] > GetServerTime() - 1500)) then
+	else
+		local sendLayerMapDelay = 1840;
+		local sendLayerMap, foundTimer;
+		if (not noLayerMap and (GetServerTime() - lastSendLayerMap[distribution]) > sendLayerMapDelay
+				and distribution ~= "PARTY" and distribution ~= "RAID") then
+			--Layermap data data won't change much except right after a server restart.
+			--So there's no need to use the addon bandwidth every time we send.
+			--Also don't send layermap data with group joins.
+			sendLayerMap = true;
+		end
+		for layer, v in NWB:pairsByKeys(NWB.data.layers) do
+			--Reset foundTimer with each loop so we don't send layermap data for layers with no timers later in the loop.
+			foundTimer = nil;
+			if (not type or type == "timers") then
+				if (NWB.data.layers[layer].rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
+					--Only create layers table if we have valid timers so we don't waste addon bandwidth with useless data.
+					--This was always done on non-layered realms but wasn't working right on layered realms, now it is.
+					--The data table is checked for empty when sending comms.
 					if (not data.layers) then
 						data.layers = {};
 					end
 					if (not data.layers[layer]) then
 						data.layers[layer] = {};
 					end
-					data.layers[layer][k] = NWB.data.layers[layer][k];
+					data.layers[layer]['rendTimer'] = NWB.data.layers[layer].rendTimer;
+					--data.layers[layer]['rendTimerWho'] = NWB.data.layers[layer].rendTimerWho;
+					data.layers[layer]['rendYell'] = NWB.data.layers[layer].rendYell;
+					--data.layers[layer]['rendYell2'] = NWB.data.layers[layer].rendYell2;
+					--data.layers[layer]['rendSource'] = NWB.data.layers[layer].rendSource;
+					--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+					--		and not NWB.krRealms[NWB.realm]) then
+					--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+					--end
 					foundTimer = true;
 				end
-			end
-		end
-		if ((NWB.isTBC or NWB.isWrathPrepatch) and v.terokFaction and v.terokTowers and tonumber(v.terokTowers) and v.terokTowers > GetServerTime()
-				and v.terokTowers < GetServerTime() + 21500 and (not type or type == "terokkar")) then
-			if (not data.layers) then
-				data.layers = {};
-			end
-			if (not data.layers[layer]) then
-				data.layers[layer] = {};
-			end
-			data.layers[layer].terokTowers = v.terokTowers;
-			data.layers[layer].terokTowersTime = v.terokTowersTime;
-			data.layers[layer].terokFaction = v.terokFaction;
-			foundTimer = true;
-		end
-		--[[if (NWB.isTBC and v.hellfireRep and tonumber(v.hellfireRep) and v.hellfireRep < GetServerTime()
-				and v.hellfireRep > GetServerTime() - 23400 and (not type or type == "hellfire")) then
-			if (not data.layers) then
-				data.layers = {};
-			end
-			if (not data.layers[layer]) then
-				data.layers[layer] = {};
-			end
-			data.layers[layer].hellfireRep = v.hellfireRep;
-			foundTimer = true;
-		end]]
-		if (type ~= "wintergrasp") then
-			if (forceLayerMap or ((sendLayerMap and foundTimer) or not lastSendLayerMapID[layer]
-					or (lastSendLayerMapID[layer] and GetServerTime() - lastSendLayerMapID[layer] > 3600))) then
-				if (NWB.data.layers[layer].layerMap and next(NWB.data.layers[layer].layerMap)) then
-					--NWB:debug("sending layermap", layer);
-					lastSendLayerMap[distribution] = GetServerTime();
-					lastSendLayerMapID[layer] = GetServerTime();
+				if (NWB.data.layers[layer].onyTimer > (GetServerTime() - NWB.db.global.onyRespawnTime)) then
 					if (not data.layers) then
 						data.layers = {};
 					end
 					if (not data.layers[layer]) then
 						data.layers[layer] = {};
 					end
-					local count = 0;
-					for k, v in pairs(NWB.data.layers[layer].layerMap) do
-						count = count + 1;
+					--NWB:validateCloseTimestamps(layer, "onyTimer");
+					--NWB:validateCloseTimestamps(layer, "onyYell");
+					data.layers[layer]['onyTimer'] = NWB.data.layers[layer].onyTimer;
+					--data.layers[layer]['onyTimerWho'] = NWB.data.layers[layer].onyTimerWho;
+					data.layers[layer]['onyYell'] = NWB.data.layers[layer].onyYell;
+					--data.layers[layer]['onyYell2'] = NWB.data.layers[layer].onyYell2;
+					--data.layers[layer]['onySource'] = NWB.data.layers[layer].onySource;
+					--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+					--		and not NWB.krRealms[NWB.realm]) then
+					--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+					--end
+					foundTimer = true;
+				end
+				if (NWB.data.layers[layer].nefTimer > (GetServerTime() - NWB.db.global.nefRespawnTime)) then
+					if (not data.layers) then
+						data.layers = {};
 					end
-					--Incase anything goes wrong with arenas or other new zones etc in TBC, don't send large number of layer id's.
-					if (count < 70) then
-						--NWB:debug("sending layer map data", distribution);
-						data.layers[layer].layerMap = NWB.data.layers[layer].layerMap;
+					if (not data.layers[layer]) then
+						data.layers[layer] = {};
 					end
-					--Don't share created time for now.
-					data.layers[layer].layerMap.created = nil;
+					data.layers[layer]['nefTimer'] = NWB.data.layers[layer].nefTimer;
+					--data.layers[layer]['nefTimerWho'] = NWB.data.layers[layer].nefTimerWho;
+					data.layers[layer]['nefYell'] = NWB.data.layers[layer].nefYell;
+					--data.layers[layer]['nefYell2'] = NWB.data.layers[layer].nefYell2;
+					--data.layers[layer]['nefSource'] = NWB.data.layers[layer].nefSource;
+					--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+					--		and not NWB.krRealms[NWB.realm]) then
+					--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+					--end
+					foundTimer = true;
+				end
+				if ((NWB.data.layers[layer].onyNpcDied > NWB.data.layers[layer].onyTimer) and
+						(NWB.data.layers[layer].onyNpcDied > (GetServerTime() - NWB.db.global.onyRespawnTime))) then
+					if (not data.layers) then
+						data.layers = {};
+					end
+					if (not data.layers[layer]) then
+						data.layers[layer] = {};
+					end
+					data.layers[layer]['onyNpcDied'] = NWB.data.layers[layer].onyNpcDied;
+					--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+					--		and not NWB.krRealms[NWB.realm]) then
+					--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+					--end
+					foundTimer = true;
+				end
+				if ((NWB.data.layers[layer].nefNpcDied > NWB.data.layers[layer].nefTimer) and
+						(NWB.data.layers[layer].nefNpcDied > (GetServerTime() - NWB.db.global.nefRespawnTime))) then
+					if (not data.layers) then
+						data.layers = {};
+					end
+					if (not data.layers[layer]) then
+						data.layers[layer] = {};
+					end
+					if (NWB.faction == "Alliance") then
+						data.layers[layer]['nefNpcDied'] = NWB.data.layers[layer].nefNpcDied;
+					end
+					--if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+					--		and not NWB.krRealms[NWB.realm]) then
+					--	data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+					--end
+					--foundTimer = true;
 				end
 			end
-		end
-		if (not foundTimer and NWB.data.layers[layer].lastSeenNPC
-				and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 7200) then
-			--If no timer data to share then check when we last saw a valid NPC in city for this layer.
-			--Trying to keep layers valid after long periods overnight when no timers drop, but not persist too long after server restarts.
-			if (not data.layers) then
-				data.layers = {};
+			if (NWB.layeredSongflowers and (not type or type == "songflowers")) then
+				for k, v in pairs(NWB.songFlowers) do
+					--Add currently active songflower timers.
+					if (NWB.data.layers[layer][k] and (NWB.data.layers[layer][k] > GetServerTime() - 1500)) then
+						if (not data.layers) then
+							data.layers = {};
+						end
+						if (not data.layers[layer]) then
+							data.layers[layer] = {};
+						end
+						data.layers[layer][k] = NWB.data.layers[layer][k];
+						foundTimer = true;
+					end
+				end
 			end
-			if (not data.layers[layer]) then
-				data.layers[layer] = {};
+			if ((NWB.isTBC or NWB.isWrathPrepatch) and v.terokFaction and v.terokTowers and tonumber(v.terokTowers) and v.terokTowers > GetServerTime()
+					and v.terokTowers < GetServerTime() + 21500 and (not type or type == "terokkar")) then
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer].terokTowers = v.terokTowers;
+				data.layers[layer].terokTowersTime = v.terokTowersTime;
+				data.layers[layer].terokFaction = v.terokFaction;
+				foundTimer = true;
 			end
-			data.layers[layer]['lastSeenNPC'] = NWB.data.layers[layer].lastSeenNPC;
-			--[[if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-					and not NWB.krRealms[NWB.realm]) then
-				data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+			--[[if (NWB.isTBC and v.hellfireRep and tonumber(v.hellfireRep) and v.hellfireRep < GetServerTime()
+					and v.hellfireRep > GetServerTime() - 23400 and (not type or type == "hellfire")) then
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer].hellfireRep = v.hellfireRep;
+				foundTimer = true;
 			end]]
-		end
-		if (foundTimer and NWB.data.layers[layer].lastSeenNPC and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 86400) then
-			--=Attemtping to fix a bug that sometimes makes last weeks layer stick around if a zone in layermaps have the same zoneid.
-			if (not data.layers) then
-				data.layers = {};
+			if (type ~= "wintergrasp") then
+				if (forceLayerMap or ((sendLayerMap and foundTimer) or not lastSendLayerMapID[layer]
+						or (lastSendLayerMapID[layer] and GetServerTime() - lastSendLayerMapID[layer] > 3600))) then
+					if (NWB.data.layers[layer].layerMap and next(NWB.data.layers[layer].layerMap)) then
+						--NWB:debug("sending layermap", layer);
+						lastSendLayerMap[distribution] = GetServerTime();
+						lastSendLayerMapID[layer] = GetServerTime();
+						if (not data.layers) then
+							data.layers = {};
+						end
+						if (not data.layers[layer]) then
+							data.layers[layer] = {};
+						end
+						local count = 0;
+						for k, v in pairs(NWB.data.layers[layer].layerMap) do
+							count = count + 1;
+						end
+						--Incase anything goes wrong with arenas or other new zones etc in TBC, don't send large number of layer id's.
+						if (count < 70) then
+							--NWB:debug("sending layer map data", distribution);
+							data.layers[layer].layerMap = NWB.data.layers[layer].layerMap;
+						end
+						--Don't share created time for now.
+						data.layers[layer].layerMap.created = nil;
+					end
+				end
 			end
-			if (not data.layers[layer]) then
-				data.layers[layer] = {};
+			if (not foundTimer and NWB.data.layers[layer].lastSeenNPC
+					and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 7200) then
+				--If no timer data to share then check when we last saw a valid NPC in city for this layer.
+				--Trying to keep layers valid after long periods overnight when no timers drop, but not persist too long after server restarts.
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer]['lastSeenNPC'] = NWB.data.layers[layer].lastSeenNPC;
+				--[[if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+						and not NWB.krRealms[NWB.realm]) then
+					data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+				end]]
 			end
-			data.layers[layer]['lastSeenNPC'] = NWB.data.layers[layer].lastSeenNPC;
-			--[[if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
-					and not NWB.krRealms[NWB.realm]) then
-				data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
-			end]]
+			if (foundTimer and NWB.data.layers[layer].lastSeenNPC and NWB.data.layers[layer].lastSeenNPC > GetServerTime() - 86400) then
+				--=Attemtping to fix a bug that sometimes makes last weeks layer stick around if a zone in layermaps have the same zoneid.
+				if (not data.layers) then
+					data.layers = {};
+				end
+				if (not data.layers[layer]) then
+					data.layers[layer] = {};
+				end
+				data.layers[layer]['lastSeenNPC'] = NWB.data.layers[layer].lastSeenNPC;
+				--[[if (NWB.data.layers[layer].GUID and not NWB.cnRealms[NWB.realm] and not NWB.twRealms[NWB.realm]
+						and not NWB.krRealms[NWB.realm]) then
+					data.layers[layer]['GUID'] = NWB.data.layers[layer].GUID;
+				end]]
+			end
 		end
-	end
-	if (type ~= "wintergrasp") then
-		if (not NWB.layeredSongflowers) then
-			for k, v in pairs(NWB.songFlowers) do
-				--Add currently active songflower timers.
+		if (type ~= "wintergrasp") then
+			if (not NWB.layeredSongflowers) then
+				for k, v in pairs(NWB.songFlowers) do
+					--Add currently active songflower timers.
+					if (NWB.data[k] > GetServerTime() - 1500) then
+						data[k] = NWB.data[k];
+					end
+				end
+			end
+			--Tubers and dragons aren't shared in layered realms anymore, trying to cut down on data.
+			--They still work as personal timers for farming, which is really all they are good for anyway.
+			--[[for k, v in pairs(NWB.tubers) do
+				--Add currently active tuber timers.
 				if (NWB.data[k] > GetServerTime() - 1500) then
 					data[k] = NWB.data[k];
 				end
 			end
-		end
-		--Tubers and dragons aren't shared in layered realms anymore, trying to cut down on data.
-		--They still work as personal timers for farming, which is really all they are good for anyway.
-		--[[for k, v in pairs(NWB.tubers) do
-			--Add currently active tuber timers.
-			if (NWB.data[k] > GetServerTime() - 1500) then
-				data[k] = NWB.data[k];
+			for k, v in pairs(NWB.dragons) do
+				--Add currently active dragon timers.
+				if (NWB.data[k] > GetServerTime() - 1500) then
+					data[k] = NWB.data[k];
+				end
+			end]]
+			if (NWB.isTBC or NWB.isWrath) then
+				if (NWB.data.tbcDD and tonumber(NWB.data.tbcDD) and NWB.data.tbcDD > 0 and NWB.data.tbcDDT
+						and GetServerTime() - NWB.data.tbcDDT < 86400
+					and (not type or type == "heroicDailies")) then
+					data.tbcDD = NWB.data.tbcDD;
+					data.tbcDDT = NWB.data.tbcDDT;
+				end
+				if (NWB.data.tbcHD and tonumber(NWB.data.tbcHD) and NWB.data.tbcHD > 0 and NWB.data.tbcHDT
+						and GetServerTime() - NWB.data.tbcHDT < 86400
+					and (not type or type == "heroicDailies")) then
+					data.tbcHD = NWB.data.tbcHD;
+					data.tbcHDT = NWB.data.tbcHDT;
+				end
+				if (NWB.data.tbcPD and tonumber(NWB.data.tbcPD) and NWB.data.tbcPD > 0 and NWB.data.tbcPDT
+						and GetServerTime() - NWB.data.tbcPDT < 86400
+					and (not type or type == "pvpDailies")) then
+					data.tbcPD = NWB.data.tbcPD;
+					data.tbcPDT = NWB.data.tbcPDT;
+				end
 			end
 		end
-		for k, v in pairs(NWB.dragons) do
-			--Add currently active dragon timers.
-			if (NWB.data[k] > GetServerTime() - 1500) then
-				data[k] = NWB.data[k];
-			end
-		end]]
-		if (NWB.isTBC or NWB.isWrath) then
-			if (NWB.data.tbcDD and tonumber(NWB.data.tbcDD) and NWB.data.tbcDD > 0 and NWB.data.tbcDDT
-					and GetServerTime() - NWB.data.tbcDDT < 86400
-				and (not type or type == "heroicDailies")) then
-				data.tbcDD = NWB.data.tbcDD;
-				data.tbcDDT = NWB.data.tbcDDT;
-			end
-			if (NWB.data.tbcHD and tonumber(NWB.data.tbcHD) and NWB.data.tbcHD > 0 and NWB.data.tbcHDT
-					and GetServerTime() - NWB.data.tbcHDT < 86400
-				and (not type or type == "heroicDailies")) then
-				data.tbcHD = NWB.data.tbcHD;
-				data.tbcHDT = NWB.data.tbcHDT;
-			end
-			if (NWB.data.tbcPD and tonumber(NWB.data.tbcPD) and NWB.data.tbcPD > 0 and NWB.data.tbcPDT
-					and GetServerTime() - NWB.data.tbcPDT < 86400
-				and (not type or type == "pvpDailies")) then
-				data.tbcPD = NWB.data.tbcPD;
-				data.tbcPDT = NWB.data.tbcPDT;
+		if (not type or type == "wintergrasp") then
+			if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
+					and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
+				data.wintergrasp = NWB.data.wintergrasp;
+				data.wintergraspTime = NWB.data.wintergraspTime;
+				data.wintergraspFaction = NWB.data.wintergraspFaction;
 			end
 		end
-	end
-	if (not type or type == "wintergrasp") then
-		if (NWB.isWrath and NWB.data.wintergrasp and tonumber(NWB.data.wintergrasp)
-				and NWB.data.wintergrasp > GetServerTime() and NWB.data.wintergrasp < GetServerTime() + 86400) then
-			data.wintergrasp = NWB.data.wintergrasp;
-			data.wintergraspTime = NWB.data.wintergraspTime;
-			data.wintergraspFaction = NWB.data.wintergraspFaction;
+		if (NWB.isSOD) then
+			if (NWB:isAshenvaleTimerValid()) then
+				data.ashenvale = NWB.data.ashenvale;
+				data.ashenvaleTime = NWB.data.ashenvaleTime;
+			end
+			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
+				--These variable names are shortened before sendin.
+				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			end
 		end
-	end
-	if (distribution == "GUILD" and not forceLayerMap) then
-		--Include settings with timer data for guild.
-		local settings = NWB:createSettings(distribution);
-		local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
-		data[me] = settings[me];
-	end
-	if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
-		local timerLog = NWB:createTimerLogData(distribution);
-		if (next(timerLog)) then
-			data.timerLog = timerLog;
+		if (distribution == "GUILD" and not forceLayerMap) then
+			--Include settings with timer data for guild.
+			local settings = NWB:createSettings(distribution);
+			local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
+			data[me] = settings[me];
+		end
+		if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
+			local timerLog = NWB:createTimerLogData(distribution);
+			if (next(timerLog)) then
+				data.timerLog = timerLog;
+			end
 		end
 	end
 	--NWB:debug(data);
@@ -1229,8 +1266,10 @@ function NWB:createSettings(distribution)
 			["guild10"] = NWB.db.global.guild10,
 			["guild1"] = NWB.db.global.guild1,
 			["guildNpcWalking"] = NWB.db.global.guildNpcWalking,
-			["guildTerok10"] = NWB.db.global.guildTerok10, --Shared setting with wrath for wintergrasp.
 		};
+		if (not NWB.isClassic) then
+			data["guildTerok10"] = NWB.db.global.guildTerok10; --Shared setting with wrath for wintergrasp.
+		end
 	end
 	--data['faction'] = NWB.faction;
 	data = NWB:convertKeys(data, true, distribution);
@@ -1297,6 +1336,9 @@ NWB.validKeys = {
 	["GUID"] = true,
 	["lastSeenNPC"] = true,
 	["timerLog"] = true,
+	["ashenvale"] = true,
+	["ashenvaleTime"] = true,
+	["lastAshenvaleGuildMsg"] = true,
 };
 
 local validSettings = {
@@ -1651,7 +1693,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 		if (self.j(elapsed) and (type(k) == "string" and (string.match(k, "flower") and NWB.db.global.syncFlowersAll)
 				or (not NWB.db.global.receiveGuildDataOnly)
 				or (NWB.db.global.receiveGuildDataOnly and distribution == "GUILD")) and (NWB.isClassic or time > 5)) then
-			if (NWB.validKeys[k] and tonumber(v)) then
+			if (NWB.validKeys[k] and (tonumber(v) or k == "ashenvale")) then
 				--If data is numeric (a timestamp) then check it's newer than our current timer.
 				if (v ~= nil) then
 					if (not NWB.data[k] or not tonumber(NWB.data[k])) then
@@ -1660,7 +1702,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						--Like if onyTimeWho is a number, not sure how this is possible but it happens on rare occasion.
 						--This will correct it by resetting thier timestamp to 0.
 						--NWB:debug("Local data error:", k, v, NWB.data[k])
-						if (k ~= "tbcDD" and k ~= "tbcHD" and k ~= "tbcPD") then
+						if (k ~= "tbcDD" and k ~= "tbcHD" and k ~= "tbcPD" and k ~= "ashenvale") then
 							--If it's not a daily type, we never want to set those to 0 they should be nil if not valid.
 							NWB.data[k] = 0;
 						end
@@ -1718,6 +1760,19 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 										lastHasNewData = GetServerTime();
 									end
 									hasNewTerok = true;
+								end
+							end
+						end
+					elseif (k == "ashenvale" or k == "ashenvaleTime") then
+						if (k ~= "ashenvaleTime") then
+							if (not NWB.data.ashenvaleTime) then
+								NWB.data.ashenvaleTime = 0;
+							end
+							if (NWB.data[k] and v ~= 0 and data.ashenvaleTime and data.ashenvaleTime ~= 0
+									and data.ashenvaleTime > NWB.data.ashenvaleTime) then
+								if (data.ashenvaleTime > GetServerTime() - 21700
+										and data.ashenvaleTime < GetServerTime() + 21700) then
+									NWB:receivedAshenvaleUpdate(v, data.ashenvaleTime, distribution, sender);
 								end
 							end
 						end
@@ -2038,6 +2093,9 @@ local shortKeys = {
 	["W"] = "wintergrasp",
 	["X"] = "wintergraspFaction",
 	["Y"] = "wintergraspTime",
+	["aa"] = "ashenvale",
+	["ab"] = "ashenvaleTime",
+	["ac"] = "lastAshenvaleGuildMsg",
 	["f1"] = "flower1",
 	["f2"] = "flower2",
 	["f3"] = "flower3",
@@ -3502,7 +3560,6 @@ local lastZoneSend = 0;
 local f = CreateFrame("Frame");
 f:RegisterEvent("PLAYER_ENTERING_WORLD");
 f:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-f:RegisterEvent("UPDATE_UI_WIDGET");
 f:RegisterEvent("UPDATE_UI_WIDGET");
 f:RegisterEvent("AREA_POIS_UPDATED");
 f:SetScript('OnEvent', function(self, event, ...)
