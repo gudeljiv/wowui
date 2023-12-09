@@ -22,6 +22,7 @@ local SOURCE_DATA = {
 "TheDeadmines",
 "ShadowfangKeep",
 "BlackfathomDeeps",
+"BlackfathomDeeps2",
 "TheStockade",
 "Gnomeregan",
 "RazorfenKraul",

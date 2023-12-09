@@ -796,8 +796,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 202699,
 			Level = GetForVersion(28,24),
 			DisplayIDs = {{110}},
-			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
 				{ 1,  211454 }, -- Strange Water Globe
 				{ 2,  211852 }, -- Handwraps of Befouled Water
@@ -818,7 +816,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 201722,
 			Level = GetForVersion(25,23),
 			DisplayIDs = {{5027}},
-			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
 				{ 1,  209436 }, -- Chipped Bite of Serra'kis
 				{ 2,  209830 }, -- Ironhide Arbalest
@@ -837,7 +834,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 204068,
 			Level = GetForVersion(25,23),
 			DisplayIDs = {{4979}},
-			AtlasMapBossID = 3,
 			[NORMAL_DIFF] = {
 				{ 1,  209566 }, -- Leggings of the Faithful
 				{ 2,  211789 }, -- Artemis Cowl
@@ -859,7 +855,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 204921,
 			Level = GetForVersion(26,24),
 			DisplayIDs = {{1773}},
-			AtlasMapBossID = 5,
 			[NORMAL_DIFF] = {
 				{ 1,  209569 }, -- Murloc Hide Kneeboots
 				{ 2,  209559 }, -- Twilight Sage's Walking Stick
@@ -893,8 +888,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 207356,
 			Level = GetForVersion(26,24),
 			DisplayIDs = {{1816}},
-			AtlasMapFile = {"CL_BlackfathomDeepsC", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 9,
 			[NORMAL_DIFF] = {
 				{ 1,  209560 }, -- Hammer of Righteous Judgement
 				{ 2,  209576 }, -- Mind-Expanding Mushroom
@@ -927,7 +920,6 @@ data["BlackfathomDeeps"] = {
 			Level = GetForVersion(27,24),
 			DisplayIDs = {{4939}},
 			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
-			AtlasMapBossID = 8,
 			[NORMAL_DIFF] = {
 				{ 1,  209694 }, -- Blackfathom Ritual Dagger
 				{ 2,  209672 }, -- Black Fingerless Gloves
@@ -958,7 +950,6 @@ data["BlackfathomDeeps"] = {
 			npcID = 213334,
 			Level = GetForVersion(28,24),
 			DisplayIDs = {{2837}},
-			AtlasMapBossID = 10,
 			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
 			[NORMAL_DIFF] = {
 				{ 1,  209693 }, -- Perfect Blackfathom Pearl
@@ -1004,7 +995,7 @@ data["BlackfathomDeeps"] = {
 
 data["BlackfathomDeeps2"] = {
 	MapID = 719,
-	InstanceID = 48,
+	InstanceID = 198,
 	AtlasModule = ATLAS_MODULE_NAME,
 	AtlasMapID = "BlackfathomDeeps",
 	AtlasMapFile = {"CL_BlackfathomDeepsA", "CL_BlackfathomDeepsEnt"},

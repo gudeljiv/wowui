@@ -28,7 +28,7 @@ local genericsLocales = {
     },
     ["Objectives"] = {
         ["ptBR"] = "Objetivos",
-        ["ruRU"] = "Цели задания",
+        ["ruRU"] = "Цели заданий",
         ["deDE"] = "Questziele",
         ["koKR"] = "목표",
         ["esMX"] = "Objetivos",
@@ -448,14 +448,14 @@ local genericsLocales = {
     },
     ["Dismiss"] = {
         ["ptBR"] = false,
-        ["ruRU"] = false,
+        ["ruRU"] = "Закрыть",
         ["deDE"] = "Schließen",
         ["koKR"] = false,
-        ["esMX"] = "Despedir",
+        ["esMX"] = "Cerrar",
         ["enUS"] = true,
         ["zhCN"] = false,
         ["zhTW"] = false,
-        ["esES"] = "Despedir",
+        ["esES"] = "Cerrar",
         ["frFR"] = false,
     },
 }
