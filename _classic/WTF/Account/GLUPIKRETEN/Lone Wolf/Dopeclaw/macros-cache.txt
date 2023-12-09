@@ -92,6 +92,5 @@ VER 3 000000000100001A " " "134400"
 END
 VER 3 000000000100001B " " "134400"
 #showtooltip
-/cancelaura Savage Roar
 /cast Savage Roar
 END
