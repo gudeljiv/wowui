@@ -4995,6 +4995,11 @@ function SlashCmdList.NWBCMD(msg, editBox)
 		end
 		return;
 	end
+	if (msg == "ashenvale") then
+		WorldMapFrame:Show();
+		WorldMapFrame:SetMapID(1440);
+		return;
+	end
 	if (msg == "options" or msg == "option" or msg == "config" or msg == "menu") then
 		NWB:openConfig();
 	elseif (msg ~= nil and msg ~= "") then

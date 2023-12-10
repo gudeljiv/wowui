@@ -7,25 +7,31 @@ local NWB = addon.a;
 local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 
 local lastAshenUpdate, lastSendGuild, lastSendGroup = 0, 0, 0;
-local lastAlliancePercent, lastHordePercent = 0, 0;
+local lastAlliancePercent, lastHordePercent, lastWinner = 0, 0, 0;
 local lastStartSoon, lastStarted = 0;
-local logonStartDelay, lastStartSoonDelay = 0, 600;
-local isRunning;
+local logonStartDelay, lastStartSoonDelay = 0, 900;
+local lastIsRunning, isRunning = 0;
 local startup = true;
 local lastWidget = 0;
+
+SLASH_NWBASHVCMD1 = '/ashenvale';
+function SlashCmdList.NWBASHVCMD(msg, editBox)
+	WorldMapFrame:Show();
+	WorldMapFrame:SetMapID(1440);
+end
 
 local f = CreateFrame("Frame");
 f:RegisterEvent("UPDATE_UI_WIDGET");
 f:RegisterEvent("CHAT_MSG_BG_SYSTEM_NEUTRAL");
-f:RegisterEvent("CHAT_MSG_GUILD");
+--f:RegisterEvent("CHAT_MSG_GUILD");
 f:RegisterEvent("PLAYER_ENTERING_WORLD");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "UPDATE_UI_WIDGET") then
 		local data = ...;
 		if (data.widgetID == 5360 or data.widgetID == 5361) then -- Alliance and Horde percentage stage.
 			--One widget is sent at a time when percent changes.
-			isRunning = nil;
 			NWB:getAshenvaleResourceData();
+			isRunning = nil;
 			lastWidget = data.widgetID;
 		elseif (data.widgetID == 5366 or data.widgetID == 5367 or data.widgetID == 5368) then --Event is running.
 			--5367 Alliance.
@@ -41,6 +47,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 				end
 			end
 			isRunning = true;
+			lastIsRunning = GetServerTime();
 			lastWidget = data.widgetID;
 		end
 	elseif (event == "CHAT_MSG_BG_SYSTEM_NEUTRAL") then
@@ -53,7 +60,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 				NWB:ashenvaleWinner("alliance");
 			end
 		end
-	elseif (event == "CHAT_MSG_GUILD") then
+	--[[elseif (event == "CHAT_MSG_GUILD") then
 		local msg = ...;
 		local match = string.gsub("[NWB] " .. L["ashenvaleWarning"], "%[NWB%] ", ""); --Prefix.
 		match = string.gsub(match, "%(", "%%("); --Brackets.
@@ -62,7 +69,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		match = string.gsub(match, "%.$", "%%."); --Last full stop.
 		if (strmatch(msg, match)) then
 			NWB.data.lastAshenvaleGuildMsg = GetServerTime();
-		end
+		end]]
 	elseif (event == "PLAYER_ENTERING_WORLD") then
 		local isLogon, isReload = ...;
 		if (isLogon or isReload) then
@@ -79,8 +86,13 @@ function NWB:getAshenvaleResourceData()
 	if (not NWB.isClassic) then
 		return;
 	end
-	if (isRunning) then
-		--This doesn't really need to be here, when event is running the percent widgets aren't being updated anyway.
+	if (NWB:isAshenvaleRunning()) then
+		--Sometimes the resource wdigets update while the game is running, not sure why, probably layer related.
+		NWB:debug("Widget update while game is running.")
+		return;
+	end
+	if (GetTime() - lastWinner < 2) then
+		--We get weird widget updates right after the battle ends of resource scores like 100-100 and 100-0.
 		return;
 	end
 	--Percentage widgets stop updating when the event is running.
@@ -110,6 +122,21 @@ function NWB:getAshenvaleResourceData()
 	local hordePercent = string.match(horde.text, "(%d+)");
 	if (alliancePercent and hordePercent and tonumber(alliancePercent) and tonumber(hordePercent)) then
 		NWB:receivedAshenvaleUpdate(alliancePercent .. "_" .. hordePercent, GetServerTime(), "zone");
+	end
+end
+
+function NWB:isAshenvaleRunning()
+	if (isRunning) then
+		return true;
+	end
+	local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
+	if (zone == 1440) then
+		local children = {UIWidgetTopCenterContainerFrame:GetChildren()};
+		for k, v in pairs(children) do
+			if (v:IsShown() and (v.widgetID == 5367 or v.widgetID == 5368)) then
+				return true;
+			end
+		end
 	end
 end
 
@@ -147,9 +174,9 @@ function NWB:getAshenvaleScoreData()
 end
 
 function NWB:receivedAshenvaleUpdate(data, timestamp, distribution, sender)
-	--if (distribution ~= "zone") then
-	--	NWB:debug("Received ashenvale data:", data, timestamp, distribution, sender);
-	--end
+	if (distribution == "zone") then
+		NWB:debug("Received ashenvale data:", data, timestamp, distribution, sender);
+	end
 	if (data and timestamp and distribution) then
 		if ((not NWB.data.ashenvaleTime or timestamp > NWB.data.ashenvaleTime)
 				and (timestamp < GetServerTime() + 60)) then
@@ -179,13 +206,14 @@ function NWB:receivedAshenvaleUpdate(data, timestamp, distribution, sender)
 					end)
 				end
 			end
-			if (not startup and not (oldAlliance == 0 and oldHorde == 0)) then
+			if (not startup and not isRunning and not (oldAlliance == 0 and oldHorde == 0)
+					and GetServerTime() - lastIsRunning > lastStartSoonDelay + 300) then
 				--Not first run and old data isn't too far expired.
 				local newTotal = newAlliance + newHorde;
 				local oldTotal = oldAlliance + oldHorde;
 				--Don't need to check previous total now we're sharing when last guild msg was sent.
 				--if (newTotal >= 180 and newTotal < 200 and oldTotal < 180) then
-				if (newTotal >= 180 and newTotal < 200) then
+				if (newTotal >= 180 and newTotal < 200 and newTotal > oldTotal) then
 					NWB:ashenvaleEventStartsSoon(newAlliance, newHorde, timestamp);
 				end
 			end
@@ -203,6 +231,7 @@ function NWB:receivedAshenvaleUpdate(data, timestamp, distribution, sender)
 					--NWB:debug("Guild relay sent.");
 				end
 			end
+			isRunning = nil;
 		end
 	end
 end
@@ -245,6 +274,7 @@ function NWB:ashenvaleEventStarted()
 end
 
 function NWB:ashenvaleWinner(winner)
+	local lastWinner = GetTime();
 	--NWB:debug("Ashenvale PvP event ended - Winner:", winner .. ".");
 	isRunning = nil;
 end
