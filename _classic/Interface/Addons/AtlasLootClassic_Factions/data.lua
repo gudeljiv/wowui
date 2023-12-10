@@ -478,21 +478,21 @@ data["AzerothCommerceAuthority"] = {
 	items = {
 		{ -- Exalted
 			name = ALIL["Exalted"],
-			[NORMAL_DIFF] = {
+			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep8" },
 
 			},
 		},
 		{ -- Revered
 			name = ALIL["Revered"],
-			[NORMAL_DIFF] = {
+			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep7" },
 
 			},
 		},
 		{ -- Honored
 			name = ALIL["Honored"],
-			[NORMAL_DIFF] = {
+			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep6" },
 				{ 2, 211384 }, -- Sturdy Courier Bag
 				{ 3, 211386 }, -- Spell Notes: Arcane Surge
@@ -510,7 +510,7 @@ data["AzerothCommerceAuthority"] = {
 		},
 		{ -- Friendly
 			name = ALIL["Friendly"],
-			[NORMAL_DIFF] = {
+			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep5" },
 				{ 2, 211382 }, -- Small Courier Satchel
 				{ 3, 212588 }, -- Provisioner's Gloves

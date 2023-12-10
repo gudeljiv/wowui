@@ -958,15 +958,32 @@ data["SoD Exclusives"] = {
 	ContentPhase = 1,
 	items = {
 		{
-			name = AL["SoD Phase 1 Items"],
-			[NORMAL_DIFF] = {
-				{ 1,  211500 }, --Resilient Cloth Headband
-				{ 2,  211857 }, --Resilient Leather Mask
-				{ 3,  211856 }, --Resilient Mail Coif
-				{ 5,  211498 }, --Trainee's Sentinel Nightsaber
-				{ 6,  211499 }, --Trainee's Outrider Wolf
+			name = AL["SoD Exclusive: Phase 1"],
+			[HORDE_DIFF] = {
+				{ 1, "f889rep5" },
+				{ 2,  211500 }, --Resilient Cloth Headband
+				{ 3,  211857 }, --Resilient Leather Mask
+				{ 4,  211856 }, --Resilient Mail Coif
+				{ 5,  211499 }, --Trainee's Outrider Wolf
+				{ 7, "f889rep7" },
+				{ 8,  212584 }, --Advisor's Gnarled Staff
+				{ 9,  212585 }, --Outrider's Bow
+				{ 10,  212586 }, --Legionnaire's Sword
+				{ 11,  212587 }, --Scout's Blade
 				{ 16,  213088 }, --Sergeant's Cloak
-				{ 17,  213087 }, --Sergeant's Cloak
+			},
+			[ALLIANCE_DIFF] = {
+				{ 1, "f890rep5" },
+				{ 2,  211500 }, --Resilient Cloth Headband
+				{ 3,  211857 }, --Resilient Leather Mask
+				{ 4,  211856 }, --Resilient Mail Coif
+				{ 5,  211498 }, --Trainee's Sentinel Nightsaber
+				{ 7, "f890rep7" },
+				{ 8,  212580 }, --Lorekeeper's Staff
+				{ 9,  212581 }, --Outrunner's Bow
+				{ 10,  212582 }, --Protector's Sword
+				{ 11,  212583 }, --Sentinel's Blade
+				{ 16,  213087 }, --Sergeant's Cloak
 			},
 		},
 		PVP_RANKS,

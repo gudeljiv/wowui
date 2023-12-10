@@ -867,8 +867,8 @@ data["BlackfathomDeeps"] = {
 				{ 9,  209570 }, -- Tome of Cavern Lore
 				{ 10,  209821 }, -- Ring of Shadowsight
 				{ 11,  209572 }, -- Black Boiled Leathers
-				{ 12,  211491 }, -- Bottomless Murloc Skin Bag
 				{ 13,  209681 }, -- Black Murloc Egg
+				{ 14,  211491 }, -- Bottomless Murloc Skin Bag
 				{ 16,  211505 }, -- Twilight Avenger's Helm
 				{ 17,  211504 }, -- Twilight Avenger's Chain
 				{ 18,  211506 }, -- Twilight Avenger's Boots
@@ -932,8 +932,8 @@ data["BlackfathomDeeps"] = {
 				{ 9,  211458 }, -- Tome of Shadow Warding
 				{ 10,  211457 }, -- Twilight Defender's Girdle
 				{ 11,  209673 }, -- Glowing Fetish Amulet
-				{ 12,  211492 }, -- Kelris's Satchel
-				{ 13,  209561 }, -- Rod of the Ancient Sleepwalker
+				{ 12,  209561 }, -- Rod of the Ancient Sleepwalker
+				{ 13,  211492 }, -- Kelris's Satchel
 				{ 16,  211510 }, -- Twilight Slayer's Cowl
 				{ 17,  211512 }, -- Twilight Slayer's Tunic
 				{ 18,  211511 }, -- Twilight Slayer's Footpads
@@ -952,25 +952,25 @@ data["BlackfathomDeeps"] = {
 			DisplayIDs = {{2837}},
 			AtlasMapFile = {"CL_BlackfathomDeepsB", "CL_BlackfathomDeepsEnt"},
 			[NORMAL_DIFF] = {
-				{ 1,  209693 }, -- Perfect Blackfathom Pearl
-				{ 2,  211452 }, -- Perfect Blackfathom Pearl
-				{ 3,  209692 }, -- Sentinel Pauldrons
-				{ 4,  211456 }, -- Dagger of Willing Sacrifice
-				{ 5,  209685 }, -- Ancient Moss Cinch
-				{ 6,  209688 }, -- Bael Modan Blunderbuss
-				{ 7,  209687 }, -- Hydra Hide Cuirass
-				{ 8,  209690 }, -- Shadowscale Coif
-				{ 9,  209691 }, -- Vampiric Boot Knife
-				{ 10,  209580 }, -- Gusting Wind
-				{ 11,  209684 }, -- Soul Leech Pants
-				{ 12,  209689 }, -- Crabshell Waders
-				{ 13,  209534 }, -- Azshari Arbalest
-				{ 14,  209562 }, -- Deadly Strike of the Hydra
-				{ 16,  211508 }, -- Twilight Elementalist's Footpads
-				{ 17,  211510 }, -- Twilight Slayer's Cowl
-				{ 18,  211511 }, -- Twilight Slayer's Footpads
-				{ 19,  211505 }, -- Twilight Avenger's Helm
-				{ 20,  209669 }, -- Twilight Invoker's Shoes
+				{ 1,  209692 }, -- Sentinel Pauldrons
+				{ 2,  211456 }, -- Dagger of Willing Sacrifice
+				{ 3,  209685 }, -- Ancient Moss Cinch
+				{ 4,  209688 }, -- Bael Modan Blunderbuss
+				{ 5,  209687 }, -- Hydra Hide Cuirass
+				{ 6,  209690 }, -- Shadowscale Coif
+				{ 7,  209691 }, -- Vampiric Boot Knife
+				{ 8,  209580 }, -- Gusting Wind
+				{ 9,  209684 }, -- Soul Leech Pants
+				{ 10,  209689 }, -- Crabshell Waders
+				{ 11,  209534 }, -- Azshari Arbalest
+				{ 12,  209562 }, -- Deadly Strike of the Hydra
+				{ 16,  209693 }, -- Perfect Blackfathom Pearl
+				{ 17,  211452 }, -- Perfect Blackfathom Pearl
+				{ 19,  211508 }, -- Twilight Elementalist's Footpads
+				{ 20,  211510 }, -- Twilight Slayer's Cowl
+				{ 21,  211511 }, -- Twilight Slayer's Footpads
+				{ 22,  211505 }, -- Twilight Avenger's Helm
+				{ 23,  209669 }, -- Twilight Invoker's Shoes
 			},
 		},
 		{ -- BFDTrash
