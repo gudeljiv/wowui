@@ -1,3 +1,7 @@
+3.0.168 - 11th December 2023
+- For 'Enhance minimap' ('Interface'), fixed an issue which caused some minimap addon buttons to not be placed correctly.
+- Added flight times.
+
 3.0.167 - 6th December 2023
 - For 'Enhance minimap' ('Interface'), fixed an issue with 'Combine addon buttons' and the BtWQuests minimap button (if installed).
 - Added flight times.

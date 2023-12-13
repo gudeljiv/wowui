@@ -1,7 +1,12 @@
 # Auctionator
 
-## [10.2.3](https://github.com/Auctionator/Auctionator/tree/10.2.3) (2023-12-01)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.2...10.2.3) 
+## [10.2.4](https://github.com/Auctionator/Auctionator/tree/10.2.4) (2023-12-12)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.3...10.2.4) 
 
-- [Fixes #1459] Retail: Crafting Info: Error when search enchant dreaming devotion  
-- Crafting Info: Add new enchants for 10.2 for AH search  
+- Classic Era only: Add quest category for Selling tab  
+- Fix build action  
+- Trigger build  
+- Fix pkgmeta parameter for build action  
+- Fix Github build action  
+- Use matrix for build action to reduce duplication  
+- Retail: Tooltips: Fix auction age always showing on pet tooltips  

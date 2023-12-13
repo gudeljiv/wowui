@@ -135,6 +135,7 @@
 				["0.61:0.75:0.55:0.57:0.44:0.19"] = 782, -- Stonard, Kargath, Undercity
 				["0.61:0.75:0.55:0.57:0.62:0.31:0.49:0.27:0.38:0.24"] = 761, -- Stonard, Kargath, Hammerfall, Tarren Mill, The Sepulcher
 				["0.61:0.75:0.55:0.57:0.51:0.57"] = 341, -- Stonard, Kargath, Thoriumspitze
+				["0.61:0.75:0.55:0.57:0.44:0.19:0.38:0.24"] = 817, -- Stonard, Kargath, Undercity, The Sepulcher
 
 				-- Horde: Tarren Mill (Hillsbrad Foothills)
 				["0.49:0.27:0.62:0.31:0.55:0.57:0.45:0.84:0.43:0.93"] = 768, -- Tarren Mill, Hammerfall, Kargath, Grom'gol, Booty Bay
@@ -444,6 +445,7 @@
 				["0.54:0.21:0.46:0.30:0.63:0.36"] = 346, -- Moonglade, Bloodvenom Post, Valormok
 				["0.54:0.21:0.46:0.30:0.56:0.53:0.45:0.56"] = 535, -- Moonglade, Bloodvenom Post, Crossroads, Thunder Bluff
 				["0.54:0.21:0.46:0.30:0.63:0.44:0.55:0.42"] = 460, -- Moonglade, Bloodvenom Post, Orgrimmar, Splintertree Post
+				["0.54:0.21:0.46:0.30:0.56:0.53:0.41:0.37"] = 583, -- Moonglade, Bloodvenom Post, Crossroads, Zoram'gar Outpost
 
 				-- Horde: Orgrimmar (Durotar)
 				["0.63:0.44:0.61:0.80"] = 417, -- Orgrimmar, Gadgetzan (Pavel Pavlov reported 436)
@@ -584,6 +586,7 @@
 				["0.45:0.56:0.56:0.53:0.46:0.30:0.54:0.21"] = 534, -- Thunder Bluff, Crossroads, Bloodvenom Post, Moonglade
 				["0.45:0.56:0.63:0.44:0.64:0.23"] = 527, -- Thunder Bluff, Orgrimmar, Everlook
 				["0.45:0.56:0.61:0.80:0.50:0.76:0.42:0.79"] = 498, -- Thunder Bluff, Gadgetzan, Marshal's Refuge, Cenarion Hold
+				["0.45:0.56:0.56:0.53:0.55:0.42"] = 321, -- Thunder Bluff, Crossroads, Splintertree Post
 
 				-- Horde: Valormok (Azshara)
 				["0.63:0.36:0.56:0.53:0.55:0.73:0.61:0.80"] = 449, -- Valormok, Crossroads, Freewind Post, Gadgetzan

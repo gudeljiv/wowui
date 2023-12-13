@@ -22,8 +22,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [nostance:3]Berserker Stance
-/cast Mortal Strike
+/cast Heroic Strike
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -80,4 +79,10 @@ VER 3 0000000001000020 " " "134400"
 /startattack
 /cast [stance:1/3] Sweeping Strikes
 /cast [stance:2] Disarm
+END
+VER 3 0000000001000021 " " "134400"
+#showtooltip
+/startattack
+/cast Rend
+/cast Bloodrage
 END

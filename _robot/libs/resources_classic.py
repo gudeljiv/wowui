@@ -56,6 +56,7 @@ data = {
             # {"name": "slam", "type": "GetSpellTexture", "id": 47475, "key": "2", "modifier": "lshift"},
             # {"name": "enraged regeneration", "type": "GetSpellTexture", "id": 55694, "key": "5", "modifier": "lshift"},
             {"name": "victory rush", "type": "GetSpellTexture", "id": 402927, "key": "e", "modifier": "lshift"},
+            {"name": "quick strike", "type": "GetSpellTexture", "id": 429765, "key": "e", "modifier": "lshift"},
             # {"name": "disarm", "type": "GetSpellTexture", "id": 676, "key": "e", "modifier": "lshift"},
             # {"name": "vigilance", "type": "GetSpellTexture", "id": 50720, "key": "r", "modifier": "lshift"},
             # {"name": "death wish", "type": "GetSpellTexture", "id": 12292, "key": "r", "modifier": "lalt"},

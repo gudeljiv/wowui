@@ -2755,6 +2755,7 @@
 				["0.42:0.53:0.49:0.58:0.52:0.38:0.62:0.36"] = 236, -- Stars' Rest, Moa'ki, Dalaran, K3
 				["0.42:0.53:0.54:0.52:0.64:0.42:0.72:0.40:0.83:0.46:0.88:0.60:0.76:0.67"] = 493, -- Sternenruh, Wyrmruhtempel, Schwarze Wacht, Argentumwache, Westfallbrigade, Fort Wildervar, Westwacht
 				["0.42:0.53:0.60:0.52:0.73:0.54:0.83:0.46:0.78:0.38:0.82:0.31"] = 401, -- Stars' Rest, Wintergarde Keep, Amberpine Lodge, Westfall Brigade, Zim'Torga, Gundrak
+				["0.42:0.53:0.54:0.52:0.64:0.42"] = 195, -- Stars' Rest, Wyrmrest Temple, Ebon Watch
 
 				-- Alliance: Dragonblight: Wintergarde Keep
 				["0.60:0.52:0.54:0.52"] = 55, -- Wintergarde Keep, Wyrmrest Temple
@@ -3063,6 +3064,7 @@
 				["0.83:0.46:0.73:0.54:0.60:0.52:0.59:0.43:0.62:0.36:0.57:0.33"] = 312, -- Westfall Brigade, Amberpine Lodge, Wintergarde Keep, Windrunner's Overlook, K3, Frosthold
 				["0.83:0.46:0.73:0.54:0.60:0.52:0.64:0.42:0.62:0.36:0.57:0.33:0.57:0.21"] = 364, -- Westfall Brigade, Amberpine Lodge, Wintergarde Keep, Ebon Watch, K3, Frosthold, Bouldercrag's Refuge
 				["0.83:0.46:0.78:0.38:0.64:0.19:0.57:0.21:0.38:0.21"] = 388, -- Westfall Brigade, Zim'Torga, Ulduar, Bouldercrag's Refuge, The Shadow Vault
+				["0.83:0.46:0.73:0.54:0.69:0.42:0.64:0.42:0.54:0.52:0.42:0.53:0.21:0.49"] = 464, -- Westfall Brigade, Amberpine Lodge, Light's Breach, Ebon Watch, Wyrmrest Temple, Stars' Rest, Fizzcrank Airstrip
 
 				----------------------------------------------------------------------
 				-- Alliance: Howling Fjord
@@ -3215,6 +3217,7 @@
 				["0.74:0.71:0.76:0.67:0.60:0.52:0.42:0.53:0.29:0.57"] = 392, -- Kamagua, Westguard Keep, Wintergarde Keep, Stars' Rest, Unu'pe
 				["0.74:0.71:0.49:0.58:0.42:0.53:0.41:0.43:0.38:0.21"] = 472, -- Kamagua, Moa'ki, Sternenruh, Valianzlager, Das Schattengewölbe
 				["0.74:0.71:0.49:0.58:0.29:0.57:0.21:0.49:0.24:040"] = 467, -- Kanagua, Moa’ki, Unu’pe, Fizzcrank Airstrip, River’s Heart
+				["0.74:0.71:0.49:0.58:0.29:0.57:0.22:0.61:0.17:0.53:0.12:0.53"] = 483, -- Kamagua, Moa'ki, Unu'pe, Valiance Keep, Amber Ledge, Transitus Shield
 
 				-- Alliance: Howling Fjord: Valgarde Port, Howling Fjord
 				["0.88:0.72:0.88:0.60"] = 71, -- Valgarde Port, Fort Wildervar

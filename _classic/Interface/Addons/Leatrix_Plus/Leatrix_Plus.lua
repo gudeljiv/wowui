@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.06 (29th November 2023)
+-- 	Leatrix Plus 1.15.07 (11th December 2023)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.06"
+	LeaPlusLC["AddonVer"] = "1.15.07"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -5210,6 +5210,16 @@
 					icon:Register("LeaPlusCustomIcon_" .. name, zeroButton, LeaPlusDB["CustomAddonButtons"][name])
 				end
 
+				-- Create LibDBIcon buttons for these addons that have LibDBIcon prefixes
+				local customButtonTable = {
+					"LibDBIcon10_MethodRaidTools", -- Method Raid Tools
+				}
+
+				-- Do not create LibDBIcon buttons for these special case buttons
+				local BypassButtonTable = {
+					"SexyMapZoneTextButton", -- SexyMap
+				}
+
 				-- Function to loop through minimap children to find non-standard addon buttons
 				local function MakeButtons()
 					local temp = {Minimap:GetChildren()}
@@ -5220,7 +5230,7 @@
 							local btype = btn:GetObjectType()
 							if name and btype == "Button" and not CustomAddonTable[name] and btn:GetNumRegions() >= 3 and not issecurevariable(name) and btn:IsShown() then
 								if not strfind(strlower(LeaPlusDB["MiniExcludeList"]), strlower("##" .. name)) then
-									if not string.find(name, "LibDBIcon") and not name == "SexyMapZoneTextButton" or name == "LibDBIcon10_MethodRaidTools" then
+									if not string.find(name, "LibDBIcon") and not tContains(BypassButtonTable, name) or tContains(customButtonTable, name) then
 										CreateBadButton(name)
 										btn:Hide()
 										btn:SetScript("OnShow", function() btn:Hide() end)

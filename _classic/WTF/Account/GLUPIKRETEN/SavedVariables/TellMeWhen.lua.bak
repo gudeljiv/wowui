@@ -1678,8 +1678,8 @@ TellMeWhenDB = {
 						{
 							["Type"] = "cooldown",
 							["Name"] = "Battle Shout",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
+							["ManaCheck"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon1",
@@ -1707,7 +1707,6 @@ TellMeWhenDB = {
 									["Operator"] = "<=",
 									["AndOr"] = "OR",
 									["Name"] = "Battle Shout",
-									["Level"] = 8,
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -2256,7 +2255,11 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 									["Level"] = 64,
 								}, -- [4]
-								["n"] = 4,
+								{
+									["Type"] = "INSTANCE2",
+									["BitFlags"] = 7,
+								}, -- [5]
+								["n"] = 5,
 							},
 							["Enabled"] = true,
 						}, -- [20]
@@ -2695,9 +2698,16 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 									["Level"] = 63,
 								}, -- [4]
-								["n"] = 4,
+								{
+									["Type"] = "CREATURETYPE",
+									["Unit"] = "target",
+									["Name"] = "Elemental",
+									["Level"] = 1,
+								}, -- [5]
+								["n"] = 5,
 							},
 							["GUID"] = "TMW:icon:1TQv_LtTwAae",
+							["Enabled"] = true,
 							["States"] = {
 								{
 								}, -- [1]
@@ -2710,7 +2720,6 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [41]
 						{
 							["Type"] = "cooldown",
@@ -3599,12 +3608,12 @@ TellMeWhenDB = {
 								"TMW:icon:1X=ERE5iZ8VU", -- [1]
 								"TMW:icon:1ZmKyPVeTnOI", -- [2]
 								"TMW:icon:1Z7R_6NwuWuK", -- [3]
-								"TMW:icon:1TU=hLnlwyeY", -- [4]
-								"TMW:icon:1TWYMfcUzmi6", -- [5]
-								"TMW:icon:1TQv_Ltf40Wl", -- [6]
-								"TMW:icon:1TWZdpV26rm5", -- [7]
-								"TMW:icon:1YWHZ7T27TKe", -- [8]
-								"TMW:icon:1bT8WARkiJ4z", -- [9]
+								"TMW:icon:1bT8WARkiJ4z", -- [4]
+								"TMW:icon:1TU=hLnlwyeY", -- [5]
+								"TMW:icon:1TWYMfcUzmi6", -- [6]
+								"TMW:icon:1TQv_Ltf40Wl", -- [7]
+								"TMW:icon:1TWZdpV26rm5", -- [8]
+								"TMW:icon:1YWHZ7T27TKe", -- [9]
 								"TMW:icon:1TQv_LtTwAae", -- [10]
 								"TMW:icon:1YO55KEUKaW4", -- [11]
 								"TMW:icon:1TYYu4EDbfSz", -- [12]
@@ -3711,12 +3720,12 @@ TellMeWhenDB = {
 								"TMW:icon:1X=ERE5iZ8VU", -- [1]
 								"TMW:icon:1ZmKyPVeTnOI", -- [2]
 								"TMW:icon:1Z7R_6NwuWuK", -- [3]
-								"TMW:icon:1TU=hLnlwyeY", -- [4]
-								"TMW:icon:1TWYMfcUzmi6", -- [5]
-								"TMW:icon:1TQv_Ltf40Wl", -- [6]
-								"TMW:icon:1TWZdpV26rm5", -- [7]
-								"TMW:icon:1YWHZ7T27TKe", -- [8]
-								"TMW:icon:1bT8WARkiJ4z", -- [9]
+								"TMW:icon:1bT8WARkiJ4z", -- [4]
+								"TMW:icon:1TU=hLnlwyeY", -- [5]
+								"TMW:icon:1TWYMfcUzmi6", -- [6]
+								"TMW:icon:1TQv_Ltf40Wl", -- [7]
+								"TMW:icon:1TWZdpV26rm5", -- [8]
+								"TMW:icon:1YWHZ7T27TKe", -- [9]
 								"TMW:icon:1TQv_LtTwAae", -- [10]
 								"TMW:icon:1YO55KEUKaW4", -- [11]
 								"TMW:icon:1TYYu4EDbfSz", -- [12]
@@ -5675,7 +5684,7 @@ TellMeWhenDB = {
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
-					["Locked"] = true,
+					["Scale"] = 0.4,
 					["Name"] = "ROTATION QUEUE",
 					["Icons"] = {
 						{
@@ -5734,7 +5743,7 @@ TellMeWhenDB = {
 							},
 						}, -- [4]
 					},
-					["Scale"] = 0.4,
+					["Locked"] = true,
 				}, -- [5]
 				{
 					["Icons"] = {
@@ -6320,10 +6329,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [2]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "LUA",
 									["Name"] = "xTTD <= 7",
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Type"] = "LUA",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -8304,8 +8313,8 @@ TellMeWhenDB = {
 									["Checked"] = true,
 									["Name"] = "Frost Fever",
 									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
 									["Level"] = 7.5,
+									["AndOr"] = "OR",
 									["Operator"] = ">",
 								}, -- [6]
 								{
@@ -12751,14 +12760,10 @@ TellMeWhenDB = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Alpha"] = 0,
 					["Scale"] = 1,
+					["Name"] = "Spells",
+					["Alpha"] = 0,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -13052,7 +13057,11 @@ TellMeWhenDB = {
 							},
 						}, -- [20]
 					},
-					["Name"] = "Spells",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -14945,7 +14954,7 @@ TellMeWhenDB = {
 						["point"] = "LEFT",
 						["relativePoint"] = "LEFT",
 					},
-					["Scale"] = 0.4,
+					["Locked"] = true,
 					["Name"] = "DEBUG",
 					["Icons"] = {
 						{
@@ -14960,7 +14969,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Locked"] = true,
+					["Scale"] = 0.4,
 				}, -- [6]
 				{
 					["Icons"] = {
@@ -16697,14 +16706,14 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
+					["Name"] = "Warlock Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Name"] = "Warlock Spells",
 					["Alpha"] = 0,
-					["Scale"] = 1,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -17009,7 +17018,7 @@ TellMeWhenDB = {
 							},
 						}, -- [20]
 					},
-					["Locked"] = true,
+					["Scale"] = 1,
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1YWt9BdVNgGm",
@@ -18003,8 +18012,8 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1ZThAKUg1Y0w",
 					["Columns"] = 1,
-					["Locked"] = true,
 					["Scale"] = 0.4,
+					["Locked"] = true,
 					["Name"] = "Rotation OFFGCD",
 					["Icons"] = {
 						{
