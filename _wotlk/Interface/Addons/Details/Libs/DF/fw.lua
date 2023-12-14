@@ -1,6 +1,6 @@
 
 
-local dversion = 482
+local dversion = 491
 local major, minor = "DetailsFramework-1.0", dversion
 local DF, oldminor = LibStub:NewLibrary(major, minor)
 
@@ -48,6 +48,8 @@ end
 function DF:MsgWarning(msg, ...)
 	print("|cFFFFFFAA" .. (self.__name or "Details!Framework") .. "|r |cFFFFAA00[Warning]|r", msg, ...)
 end
+
+DF.internalFunctions = DF.internalFunctions or {}
 
 local PixelUtil = PixelUtil or DFPixelUtil
 if (not PixelUtil) then
@@ -311,23 +313,51 @@ function DF.GetSpecializationRole(...)
 	return nil
 end
 
+--[=[ dump of C_EncounterJournal
+	["GetEncountersOnMap"] = function,
+	["SetPreviewMythicPlusLevel"] = function,
+	["GetLootInfoByIndex"] = function,
+	["GetSlotFilter"] = function,
+	["IsEncounterComplete"] = function,
+	["SetTab"] = function,
+	["ResetSlotFilter"] = function,
+	["OnOpen"] = function,
+	["InstanceHasLoot"] = function,
+	["GetSectionIconFlags"] = function,
+	["SetPreviewPvpTier"] = function,
+	["GetEncounterJournalLink"] = function,
+	["GetInstanceForGameMap"] = function,
+	["GetSectionInfo"] = function,
+	["GetLootInfo"] = function,
+	["GetDungeonEntrancesForMap"] = function,
+	["OnClose"] = function,
+	["SetSlotFilter"] = function,
+--]=]
+
 --build dummy encounter journal functions if they doesn't exists
 --this is done for compatibility with classic and if in the future EJ_ functions are moved to C_
+---@class EncounterJournal : table
+---@field EJ_GetInstanceForMap fun(mapId: number)
+---@field EJ_GetInstanceInfo fun(journalInstanceID: number)
+---@field EJ_SelectInstance fun(journalInstanceID: number)
+---@field EJ_GetEncounterInfoByIndex fun(index: number, journalInstanceID: number?)
+---@field EJ_GetEncounterInfo fun(journalEncounterID: number)
+---@field EJ_SelectEncounter fun(journalEncounterID: number)
+---@field EJ_GetSectionInfo fun(sectionID: number)
+---@field EJ_GetCreatureInfo fun(index: number, journalEncounterID: number?)
+---@field EJ_SetDifficulty fun(difficultyID: number)
+---@field EJ_GetNumLoot fun(): number
 DF.EncounterJournal = {
-	EJ_GetCurrentInstance = EJ_GetCurrentInstance or function() return nil end,
 	EJ_GetInstanceForMap = EJ_GetInstanceForMap or function() return nil end,
 	EJ_GetInstanceInfo = EJ_GetInstanceInfo or function() return nil end,
 	EJ_SelectInstance = EJ_SelectInstance or function() return nil end,
-
 	EJ_GetEncounterInfoByIndex = EJ_GetEncounterInfoByIndex or function() return nil end,
 	EJ_GetEncounterInfo = EJ_GetEncounterInfo or function() return nil end,
 	EJ_SelectEncounter = EJ_SelectEncounter or function() return nil end,
-
 	EJ_GetSectionInfo = EJ_GetSectionInfo or function() return nil end,
 	EJ_GetCreatureInfo = EJ_GetCreatureInfo or function() return nil end,
 	EJ_SetDifficulty = EJ_SetDifficulty or function() return nil end,
 	EJ_GetNumLoot = EJ_GetNumLoot or function() return 0 end,
-	EJ_GetLootInfoByIndex = EJ_GetLootInfoByIndex or function() return nil end,
 }
 
 --will always give a very random name for our widgets
@@ -514,6 +544,8 @@ function DF.table.getfrompath(t, path)
 		end
 
 		return value
+	else
+		return t[path] or t[tonumber(path)]
 	end
 end
 
@@ -539,7 +571,12 @@ function DF.table.setfrompath(t, path, value)
 			lastTable[lastKey] = value
 			return true
 		end
+	else
+		t[path] = value
+		return true
 	end
+
+	return false
 end
 
 ---find the value inside the table, and it it's not found, add it
@@ -1320,7 +1357,7 @@ function DF:SetFontOutline(fontString, outline)
 			outline = "OUTLINE"
 
 		elseif (type(outline) == "boolean" and not outline) then
-			outline = "NONE"
+			outline = "" --"NONE"
 
 		elseif (outline == 1) then
 			outline = "OUTLINE"
@@ -1329,6 +1366,7 @@ function DF:SetFontOutline(fontString, outline)
 			outline = "THICKOUTLINE"
 		end
 	end
+	outline = (not outline or outline == "NONE") and "" or outline
 
 	fontString:SetFont(font, fontSize, outline)
 end
@@ -1888,7 +1926,7 @@ local anchoringFunctions = {
 ---set the anchor point using a df_anchor table
 ---@param widget uiobject
 ---@param anchorTable df_anchor
----@param anchorTo uiobject
+---@param anchorTo uiobject?
 function DF:SetAnchor(widget, anchorTable, anchorTo)
 	anchorTo = anchorTo or widget:GetParent()
 	anchoringFunctions[anchorTable.side](widget, anchorTo, anchorTable.x, anchorTable.y)
@@ -2093,67 +2131,6 @@ end
 		TutorialAlertFrame:Show()
 	end
 
-	local refresh_options = function(self)
-		for _, widget in ipairs(self.widget_list) do
-			if (widget._get) then
-				if (widget.widget_type == "label") then
-					if (widget._get() and not widget.languageAddonId) then
-						widget:SetText(widget._get())
-					end
-
-				elseif (widget.widget_type == "select") then
-					widget:Select(widget._get())
-
-				elseif (widget.widget_type == "toggle" or widget.widget_type == "range") then
-					widget:SetValue(widget._get())
-
-				elseif (widget.widget_type == "textentry") then
-					widget:SetText(widget._get())
-
-				elseif (widget.widget_type == "color") then
-					local default_value, g, b, a = widget._get()
-					if (type(default_value) == "table") then
-						widget:SetColor (unpack(default_value))
-
-					else
-						widget:SetColor (default_value, g, b, a)
-					end
-				end
-			end
-		end
-	end
-
-	local get_frame_by_id = function(self, id)
-		return self.widgetids [id]
-	end
-
-	function DF:ClearOptionsPanel(frame)
-		for i = 1, #frame.widget_list do
-			frame.widget_list[i]:Hide()
-			if (frame.widget_list[i].hasLabel) then
-				frame.widget_list[i].hasLabel:SetText("")
-			end
-		end
-
-		table.wipe(frame.widgetids)
-	end
-
-	function DF:SetAsOptionsPanel(frame)
-		frame.RefreshOptions = refresh_options
-		frame.widget_list = {}
-		frame.widget_list_by_type = {
-			["dropdown"] = {}, -- "select"
-			["switch"] = {}, -- "toggle"
-			["slider"] = {}, -- "range"
-			["color"] = {}, --
-			["button"] = {}, -- "execute"
-			["textentry"] = {}, --
-			["label"] = {}, --"text"
-		}
-		frame.widgetids = {}
-		frame.GetWidgetById = get_frame_by_id
-	end
-
 	function DF:CreateOptionsFrame(name, title, template)
 		template = template or 1
 
@@ -2162,7 +2139,7 @@ end
 			tinsert(UISpecialFrames, name)
 
 			newOptionsFrame:SetSize(500, 200)
-			newOptionsFrame.RefreshOptions = refresh_options
+			newOptionsFrame.RefreshOptions = DF.internalFunctions.RefreshOptionsPanel
 			newOptionsFrame.widget_list = {}
 
 			newOptionsFrame:SetScript("OnMouseDown", function(self, button)
@@ -2200,7 +2177,7 @@ end
 			tinsert(UISpecialFrames, name)
 
 			newOptionsFrame:SetSize(500, 200)
-			newOptionsFrame.RefreshOptions = refresh_options
+			newOptionsFrame.RefreshOptions = DF.internalFunctions.RefreshOptionsPanel
 			newOptionsFrame.widget_list = {}
 
 			newOptionsFrame:SetScript("OnMouseDown", function(self, button)
@@ -2703,6 +2680,7 @@ function DF:CreateAnimation(animation, animationType, order, duration, arg1, arg
 
 	elseif (animationType == "ROTATION") then
 		anim:SetDegrees(arg1) --degree
+		--print("SetOrigin", arg2, arg3, arg4)
 		anim:SetOrigin(arg2 or "center", arg3 or 0, arg4 or 0) --point, x, y
 
 	elseif (animationType == "TRANSLATION") then

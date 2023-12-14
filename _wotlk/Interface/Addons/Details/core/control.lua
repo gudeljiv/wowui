@@ -24,20 +24,19 @@
 	local IsShiftKeyDown = IsShiftKeyDown
 	local IsControlKeyDown = IsControlKeyDown
 
-	local atributo_damage = Details.atributo_damage --details local
-	local atributo_heal = Details.atributo_heal --details local
-	local atributo_energy = Details.atributo_energy --details local
-	local atributo_misc = Details.atributo_misc --details local
-	local atributo_custom = Details.atributo_custom --details local
-	local breakdownWindowFrame = Details.BreakdownWindowFrame --details local
+	local atributo_damage = Details.atributo_damage
+	local atributo_heal = Details.atributo_heal
+	local atributo_energy = Details.atributo_energy
+	local atributo_misc = Details.atributo_misc
+	local atributo_custom = Details.atributo_custom
 
 	local UnitGroupRolesAssigned = DetailsFramework.UnitGroupRolesAssigned
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --constants
-	local modo_GROUP = Details.modos.group
-	local modo_ALL = Details.modos.all
-	local class_type_dano = Details.atributos.dano
+	local groupMode = Details.modos.group
+	local everythingMode = Details.modos.all
+	local attributeDamage = Details.atributos.dano
 	local OBJECT_TYPE_PETS = 0x00003000
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,12 +50,11 @@
 
 	--try to find the opponent of last fight, can be called during a fight as well
 	function Details:FindEnemy()
-		local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = GetInstanceInfo()
-		local in_instance = IsInInstance() --garrison returns party as instance type.
-
-		if ((InstanceType == "party" or InstanceType == "raid") and in_instance) then
-			if (InstanceType == "party") then
-				if (Details:GetBossNames (Details.zone_id)) then
+		local zoneName, instanceType = GetInstanceInfo()
+		local bIsInInstance = IsInInstance() --garrison returns party as instance type
+		if ((instanceType == "party" or instanceType == "raid") and bIsInInstance) then
+			if (instanceType == "party") then
+				if (Details:GetBossNames(Details.zone_id)) then
 					return Loc ["STRING_SEGMENT_TRASH"]
 				end
 			else
@@ -64,45 +62,43 @@
 			end
 		end
 
-		for _, actor in ipairs(Details.tabela_vigente[class_type_dano]._ActorTable) do
+		local currentCombat = Details:GetCurrentCombat()
 
+		for _, actor in ipairs(currentCombat[attributeDamage]._ActorTable) do
 			if (not actor.grupo and not actor.owner and not actor.nome:find("[*]") and bitBand(actor.flag_original, 0x00000060) ~= 0) then --0x20+0x40 neutral + enemy reaction
 				for name, _ in pairs(actor.targets) do
 					if (name == Details.playername) then
 						return actor.nome
 					else
-						local _target_actor = Details.tabela_vigente (class_type_dano, name)
-						if (_target_actor and _target_actor.grupo) then
+						local targetActor = currentCombat(attributeDamage, name)
+						if (targetActor and targetActor.grupo) then
 							return actor.nome
 						end
 					end
 				end
 			end
-
 		end
 
-		for _, actor in ipairs(Details.tabela_vigente[class_type_dano]._ActorTable) do
-
+		for _, actor in ipairs(currentCombat[attributeDamage]._ActorTable) do
 			if (actor.grupo and not actor.owner) then
-				for target_name, _ in pairs(actor.targets) do
-					return target_name
+				for targetName, _ in pairs(actor.targets) do
+					return targetName
 				end
 			end
-
 		end
 
 		return Loc ["STRING_UNKNOW"]
 	end
 
-	-- try get the current encounter name during the encounter
-	local boss_found_not_registered = function(t, ZoneName, ZoneMapID, DifficultyID)
-		local boss_table = {
+	--try get the current encounter name during the encounter
+	local createBossTable = function(t, zoneName, zoneMapID, difficultyID)
+		local bossTable = {
 			index = 0,
 			name = t[1],
 			encounter = t[1],
-			zone = ZoneName,
-			mapid = ZoneMapID,
-			diff = DifficultyID,
+			zone = zoneName,
+			mapid = zoneMapID,
+			diff = difficultyID,
 			diff_string = select(4, GetInstanceInfo()),
 			ej_instance_id = t[5],
 			id = t[2],
@@ -110,18 +106,22 @@
 			unixtime = time(),
 		}
 
-		Details.tabela_vigente.is_boss = boss_table
+		local currentCombat = Details:GetCurrentCombat()
+		currentCombat.is_boss = bossTable
 	end
 
-	local boss_found = function(index, name, zone, mapid, diff, encounterid)
-		local mapID = C_Map.GetBestMapForUnit ("player")
+	local foundEncounterInfo = function(index, name, zone, mapId, diff, encounterid)
+		local mapID = C_Map.GetBestMapForUnit("player")
 		local ejid
+
+		if true then return end --@@@disabled for science
+
 		if (mapID) then
-			ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap (mapID)
+			ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap(mapID) --using the framework to prevent errors on classic versions of the game
 		end
 
+
 		if (not mapID) then
-			--print("Details! exeption handled: zone has no map")
 			return
 		end
 
@@ -129,12 +129,12 @@
 			ejid = Details:GetInstanceEJID()
 		end
 
-		local boss_table = {
+		local bossTable = {
 			index = index,
 			name = name,
 			encounter = name,
 			zone = zone,
-			mapid = mapid,
+			mapid = mapId,
 			diff = diff,
 			diff_string = select(4, GetInstanceInfo()),
 			ej_instance_id = ejid,
@@ -142,107 +142,66 @@
 			unixtime = time(),
 		}
 
-		if (not Details:IsRaidRegistered(mapid) and Details.zone_type == "raid") then
-			local boss_list = Details:GetCurrentDungeonBossListFromEJ()
-			if (boss_list) then
-				local ActorsContainer = Details.tabela_vigente[class_type_dano]._ActorTable
-				if (ActorsContainer) then
-					for index, Actor in ipairs(ActorsContainer) do
-						if (not Actor.grupo) then
-							if (boss_list[Actor.nome]) then
-								Actor.boss = true
-								boss_table.bossimage = boss_list[Actor.nome][4]
+		local currentCombat = Details:GetCurrentCombat()
+
+		if (not Details:IsRaidRegistered(mapId) and Details.zone_type == "raid") then
+			--[=[
+			local bossList = Details:GetCurrentDungeonBossListFromEJ() --function name miss match, filtering raid only, calling dungeon only function
+			if (bossList) then
+				local actorContainer = currentCombat[attributeDamage]._ActorTable
+				if (actorContainer) then
+					for index, actorObject in ipairs(actorContainer) do
+						if (not actorObject.grupo) then
+							if (bossList[actorObject.nome]) then
+								actorObject.boss = true
+								bossTable.bossimage = bossList[actorObject.nome][4]
 								break
 							end
 						end
 					end
 				end
 			end
+			--]=]
 		end
 
-		Details.tabela_vigente.is_boss = boss_table
-
-		if (Details.in_combat and not Details.leaving_combat) then
-
-			--catch boss function if any
-			local bossFunction, bossFunctionType = Details:GetBossFunction (ZoneMapID, BossIndex)
-			if (bossFunction) then
-				if (bitBand(bossFunctionType, 0x1) ~= 0) then --realtime
-					Details.bossFunction = bossFunction
-					Details.tabela_vigente.bossFunction = Details:ScheduleTimer("bossFunction", 1)
-				end
-			end
-
-			if (Details.zone_type ~= "raid") then
-				local endType, endData = Details:GetEncounterEnd (ZoneMapID, BossIndex)
-				if (endType and endData) then
-
-					if (Details.debug) then
-						Details:Msg("(debug) setting boss end type to:", endType)
-					end
-
-					Details.encounter_end_table.type = endType
-					Details.encounter_end_table.killed = {}
-					Details.encounter_end_table.data = {}
-
-					if (type(endData) == "table") then
-						if (Details.debug) then
-							Details:Msg("(debug) boss type is table:", endType)
-						end
-						if (endType == 1 or endType == 2) then
-							for _, npcID in ipairs(endData) do
-								Details.encounter_end_table.data [npcID] = false
-							end
-						end
-					else
-						if (endType == 1 or endType == 2) then
-							Details.encounter_end_table.data [endData] = false
-						end
-					end
-				end
-			end
-		end
+		currentCombat.is_boss = bossTable
 
 		--we the boss was found during the combat table creation, we must postpone the event trigger
-		if (not Details.tabela_vigente.IsBeingCreated) then
+		if (not currentCombat.IsBeingCreated) then
 			Details:SendEvent("COMBAT_BOSS_FOUND", nil, index, name)
 			Details:CheckFor_SuppressedWindowsOnEncounterFound()
 		end
 
-		return boss_table
+		return bossTable
 	end
 
 	function Details:ReadBossFrames()
+		local currentCombat = Details:GetCurrentCombat()
 
-		if (Details.tabela_vigente.is_boss) then
+		if (currentCombat.is_boss) then
 			return --no need to check
 		end
 
 		if (Details.encounter_table.name) then
 			local encounter_table = Details.encounter_table
-			return boss_found (encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
+			return foundEncounterInfo(encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
 		end
 
-		for index = 1, 5, 1 do
-			if (UnitExists("boss"..index)) then
-				local guid = UnitGUID("boss"..index)
-				if (guid) then
-					local serial = Details:GetNpcIdFromGuid (guid)
-
+		for index = 1, 5 do
+			if (UnitExists("boss" .. index)) then
+				local bossGuid = UnitGUID("boss" .. index)
+				if (bossGuid) then
+					local serial = Details:GetNpcIdFromGuid(bossGuid)
 					if (serial) then
-
-						local ZoneName, _, DifficultyID, _, _, _, _, ZoneMapID = GetInstanceInfo()
-
-						local BossIds = Details:GetBossIds (ZoneMapID)
-						if (BossIds) then
-							local BossIndex = BossIds [serial]
-
-							if (BossIndex) then
+						local zoneName, _, difficultyID, _, _, _, _, zoneMapID = GetInstanceInfo()
+						local bossIds = Details:GetBossIds(zoneMapID)
+						if (bossIds) then
+							local bossIndex = bossIds[serial]
+							if (bossIndex) then
 								if (Details.debug) then
-									Details:Msg("(debug) boss found:",Details:GetBossName (ZoneMapID, BossIndex))
+									Details:Msg("(debug) boss found:", Details:GetBossName(zoneMapID, bossIndex))
 								end
-
-								return boss_found (BossIndex, Details:GetBossName (ZoneMapID, BossIndex), ZoneName, ZoneMapID, DifficultyID)
+								return foundEncounterInfo(bossIndex, Details:GetBossName(zoneMapID, bossIndex), zoneName, zoneMapID, difficultyID)
 							end
 						end
 					end
@@ -252,29 +211,27 @@
 	end
 
 	--try to get the encounter name after the encounter (can be called during the combat as well)
-	function Details:FindBoss (noJournalSearch)
-
+	function Details:FindBoss(noJournalSearch)
 		if (Details.encounter_table.name) then
 			local encounter_table = Details.encounter_table
-			return boss_found (encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
+			return foundEncounterInfo(encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
 		end
 
-		local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = GetInstanceInfo()
-		local BossIds = Details:GetBossIds (ZoneMapID)
+		local currentCombat = Details:GetCurrentCombat()
+		local zoneName, instanceType, difficultyID, _, _, _, _, zoneMapID = GetInstanceInfo()
+		local bossIds = Details:GetBossIds(zoneMapID)
 
-		if (BossIds) then
-			local BossIndex = nil
-			local ActorsContainer = Details.tabela_vigente [class_type_dano]._ActorTable
-
-			if (ActorsContainer) then
-				for index, Actor in ipairs(ActorsContainer) do
-					if (not Actor.grupo) then
-						local serial = Details:GetNpcIdFromGuid (Actor.serial)
+		if (bossIds) then
+			local actorContainer = currentCombat[attributeDamage]._ActorTable
+			if (actorContainer) then
+				for index, actorObject in ipairs(actorContainer) do
+					if (not actorObject.grupo) then
+						local serial = Details:GetNpcIdFromGuid(actorObject.serial)
 						if (serial) then
-							BossIndex = BossIds [serial]
-							if (BossIndex) then
-								Actor.boss = true
-								return boss_found (BossIndex, Details:GetBossName (ZoneMapID, BossIndex), ZoneName, ZoneMapID, DifficultyID)
+							local bossIndex = bossIds[serial]
+							if (bossIndex) then
+								actorObject.boss = true
+								return foundEncounterInfo(bossIndex, Details:GetBossName(zoneMapID, bossIndex), zoneName, zoneMapID, difficultyID)
 							end
 						end
 					end
@@ -286,16 +243,16 @@
 
 		if (not noJournalSearch) then
 			local in_instance = IsInInstance() --garrison returns party as instance type.
-			if ((InstanceType == "party" or InstanceType == "raid") and in_instance) then
+			if ((instanceType == "party" or instanceType == "raid") and in_instance) then
 				local boss_list = Details:GetCurrentDungeonBossListFromEJ()
 				if (boss_list) then
-					local ActorsContainer = Details.tabela_vigente [class_type_dano]._ActorTable
+					local ActorsContainer = currentCombat[attributeDamage]._ActorTable
 					if (ActorsContainer) then
 						for index, Actor in ipairs(ActorsContainer) do
 							if (not Actor.grupo) then
 								if (boss_list [Actor.nome]) then
 									Actor.boss = true
-									return boss_found_not_registered (boss_list [Actor.nome], ZoneName, ZoneMapID, DifficultyID)
+									return createBossTable (boss_list [Actor.nome], zoneName, zoneMapID, difficultyID)
 								end
 							end
 						end
@@ -377,7 +334,8 @@
 
 		--create a new combat object and preplace the current one
 		local newCombatObject = Details.combate:NovaTabela(true, Details.tabela_overall, combatCounter, ...)
-		Details.tabela_vigente = newCombatObject
+		Details:SetCurrentCombat(newCombatObject)
+
 		--flag this combat as being created
 		newCombatObject.IsBeingCreated = true
 
@@ -412,7 +370,10 @@
 		Details:UpdateParserGears(bFromCombatStart)
 
 		--get all buff already applied before the combat start
-		Details:CatchRaidBuffUptime("BUFF_UPTIME_IN")
+		C_Timer.After(0.05, function()
+			--wait the initial aura wipe done by the client on certain situations
+			Details:CatchRaidBuffUptime("BUFF_UPTIME_IN")
+		end)
 		Details:CatchRaidDebuffUptime("DEBUFF_UPTIME_IN")
 		Details:UptadeRaidMembersCache()
 
@@ -422,7 +383,7 @@
 		if (Details.encounter_table.id and Details.encounter_table ["start"] >= GetTime() - 3 and not Details.encounter_table ["end"]) then
 			local encounter_table = Details.encounter_table
 			--boss_found will trigger "COMBAT_BOSS_FOUND" event, but at this point of the combat creation is safe to send it
-			boss_found (encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
+			foundEncounterInfo (encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
 		else
 			--if we don't have this infor right now, lets check in few seconds dop
 			if (Details.EncounterInformation [Details.zone_id]) then
@@ -461,7 +422,7 @@
 		--hide / alpha / switch in combat
 		for index, instancia in ipairs(Details.tabela_instancias) do
 			if (instancia.ativa) then
-				instancia:CheckSwitchOnCombatStart (true)
+				instancia:CheckSwitchOnCombatStart(true)
 			end
 		end
 
@@ -478,7 +439,7 @@
 		end
 
 		Details:CheckSwitchToCurrent()
-		Details:CheckForTextTimeCounter (true)
+		Details:CheckForTextTimeCounter(true)
 
 		--stop bar testing if any
 		Details:StopTestBarUpdate()
@@ -514,14 +475,17 @@
 			Details:Msg("(debug) |cFFFFFF00ended a combat|r|cFFFF7700", Details.encounter_table and Details.encounter_table.name or "")
 		end
 
-		if (Details.tabela_vigente.bIsClosed) then
+		---@type combat
+		local currentCombat = Details:GetCurrentCombat()
+
+		if (currentCombat.bIsClosed) then
 			return
 		end
-		Details.tabela_vigente.bIsClosed = true
+		currentCombat.bIsClosed = true
 
-		if (Details.tabela_vigente.__destroyed) then
+		if (currentCombat.__destroyed) then
 			Details:Msg("a deleted combat was found during combat end, please report this bug on discord:")
-			Details:Msg("combat destroyed by:", Details.tabela_vigente.__destroyedBy)
+			Details:Msg("combat destroyed by:", currentCombat.__destroyedBy)
 		end
 
 		--flag the addon as 'leaving combat'
@@ -538,19 +502,18 @@
 		--Details222.TimeCapture.StopCombat() --it did not start
 
 		--check if this isn't a boss and try to find a boss in the segment
-		if (not Details.tabela_vigente.is_boss) then
-
+		if (not currentCombat.is_boss) then
 			--if this is a mythic+ dungeon, do not scan for encounter journal boss names in the actor list
 			Details:FindBoss()
 
 			--still didn't find the boss
-			if (not Details.tabela_vigente.is_boss) then
+			if (not currentCombat.is_boss) then
 				local ZoneName, _, DifficultyID, _, _, _, _, ZoneMapID = GetInstanceInfo()
-				local findboss = Details:GetRaidBossFindFunction (ZoneMapID)
+				local findboss = Details:GetRaidBossFindFunction(ZoneMapID)
 				if (findboss) then
 					local BossIndex = findboss()
 					if (BossIndex) then
-						boss_found (BossIndex, Details:GetBossName (ZoneMapID, BossIndex), ZoneName, ZoneMapID, DifficultyID)
+						foundEncounterInfo(BossIndex, Details:GetBossName(ZoneMapID, BossIndex), ZoneName, ZoneMapID, DifficultyID)
 					end
 				end
 			end
@@ -558,52 +521,52 @@
 
 		Details:OnCombatPhaseChanged() --.PhaseData is nil here on alpha-32
 
-		if (Details.tabela_vigente.bossFunction) then
-			Details:CancelTimer(Details.tabela_vigente.bossFunction)
-			Details.tabela_vigente.bossFunction = nil
+		if (currentCombat.bossFunction) then
+			Details:CancelTimer(currentCombat.bossFunction)
+			currentCombat.bossFunction = nil
 		end
 
 		--stop combat ticker
 		Details:StopCombatTicker()
 
 		--lock timers
-		Details.tabela_vigente:LockActivityTime()
+		currentCombat:LockActivityTime()
 
 		--get waste shields
 		if (Details.close_shields) then
-			Details:CloseShields (Details.tabela_vigente)
+			Details:CloseShields(currentCombat)
 		end
 
 		--salva hora, minuto, segundo do fim da luta
-		Details.tabela_vigente:seta_data (Details._detalhes_props.DATA_TYPE_END)
-		Details.tabela_vigente:seta_tempo_decorrido()
+		currentCombat:seta_data(Details._detalhes_props.DATA_TYPE_END)
+		currentCombat:seta_tempo_decorrido()
 
 		--drop last events table to garbage collector
-		Details.tabela_vigente.player_last_events = {}
+		currentCombat.player_last_events = {}
 
 		--flag instance type
 		local _, InstanceType = GetInstanceInfo()
-		Details.tabela_vigente.instance_type = InstanceType
+		currentCombat.instance_type = InstanceType
 
-		if (not Details.tabela_vigente.is_boss and bIsFromEncounterEnd and type(bIsFromEncounterEnd) == "table") then
+		if (not currentCombat.is_boss and bIsFromEncounterEnd and type(bIsFromEncounterEnd) == "table") then
 			local encounterID, encounterName, difficultyID, raidSize, endStatus = unpack(bIsFromEncounterEnd)
 			if (encounterID) then
 				local ZoneName, InstanceType, DifficultyID, DifficultyName, _, _, _, ZoneMapID = GetInstanceInfo()
 
-				local mapID = C_Map.GetBestMapForUnit ("player")
+				local mapID = C_Map.GetBestMapForUnit("player")
 
 				if (not mapID) then
 					mapID = 0
 				end
 
-				local ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap (mapID)
+				--local ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap(mapID) --@@@disabled for science
+				--if (ejid == 0) then
+				--	ejid = Details:GetInstanceEJID()
+				--end
 
-				if (ejid == 0) then
-					ejid = Details:GetInstanceEJID()
-				end
-				local _, boss_index = Details:GetBossEncounterDetailsFromEncounterId (ZoneMapID, encounterID)
+				local _, boss_index = Details:GetBossEncounterDetailsFromEncounterId(ZoneMapID, encounterID)
 
-				Details.tabela_vigente.is_boss = {
+				currentCombat.is_boss = {
 					index = boss_index or 0,
 					name = encounterName,
 					encounter = encounterName,
@@ -621,83 +584,70 @@
 		--tag as a mythic dungeon segment, can be any type of segment, this tag also avoid the segment to be tagged as trash
 		local mythicLevel = C_ChallengeMode and C_ChallengeMode.GetActiveKeystoneInfo()
 		if (mythicLevel and mythicLevel >= 2) then
-			Details.tabela_vigente.is_mythic_dungeon_segment = true
-			Details.tabela_vigente.is_mythic_dungeon_run_id = Details.mythic_dungeon_id
+			currentCombat.is_mythic_dungeon_segment = true
+			currentCombat.is_mythic_dungeon_run_id = Details.mythic_dungeon_id
 		end
 
 		--send item level after a combat if is in raid or party group
 		C_Timer.After(1, Details.ScheduleSyncPlayerActorData)
 
 		--if this segment isn't a boss fight
-		if (not Details.tabela_vigente.is_boss) then
-
-			if (Details.tabela_vigente.is_pvp or Details.tabela_vigente.is_arena) then
+		if (not currentCombat.is_boss) then
+			if (currentCombat.is_pvp or currentCombat.is_arena) then
 				Details:FlagActorsOnPvPCombat()
 			end
 
-			if (Details.tabela_vigente.is_arena) then
-				Details.tabela_vigente.enemy = "[" .. ARENA .. "] " ..  Details.tabela_vigente.is_arena.name
+			if (currentCombat.is_arena) then
+				currentCombat.enemy = "[" .. ARENA .. "] " ..  currentCombat.is_arena.name
 			end
 
 			local in_instance = IsInInstance() --garrison returns party as instance type.
 			if ((InstanceType == "party" or InstanceType == "raid") and in_instance) then
 				if (InstanceType == "party") then
-					if (Details.tabela_vigente.is_mythic_dungeon_segment) then --setted just above
+					if (currentCombat.is_mythic_dungeon_segment) then --setted just above
 						--is inside a mythic+ dungeon and this is not a boss segment, so tag it as a dungeon mythic+ trash segment
 						local zoneName, instanceType, difficultyID, difficultyName, maxPlayers, dynamicDifficulty, isDynamic, instanceMapID, instanceGroupSize = GetInstanceInfo()
-						Details.tabela_vigente.is_mythic_dungeon_trash = {
+						currentCombat.is_mythic_dungeon_trash = {
 							ZoneName = zoneName,
 							MapID = instanceMapID,
 							Level = Details.MythicPlus.Level,
 							EJID = Details.MythicPlus.ejID,
 						}
+						if (Details.debug) then
+							Details:Msg("segment tagged as mythic+ trash.")
+						end
 					else
 						--tag the combat as trash clean up
-						Details.tabela_vigente.is_trash = true
+						currentCombat.is_trash = true
 					end
 				else
-					Details.tabela_vigente.is_trash = true
+					currentCombat.is_trash = true
 				end
 			else
 				if (not in_instance) then
 					if (Details.world_combat_is_trash) then
-						Details.tabela_vigente.is_world_trash_combat = true
+						currentCombat.is_world_trash_combat = true
 					end
 				end
 			end
 
-			if (not Details.tabela_vigente.enemy) then
+			if (not currentCombat.enemy) then
 				local enemy = Details:FindEnemy()
 
 				if (enemy and Details.debug) then
 					Details:Msg("(debug) enemy found", enemy)
 				end
 
-				Details.tabela_vigente.enemy = enemy
-			end
-
-			if (Details.debug) then
-			--	Details:Msg("(debug) forcing equalize actors behavior.")
-			--	Details:EqualizeActorsSchedule (Details.host_of)
+				currentCombat.enemy = enemy
 			end
 
 			Details:FlagActorsOnCommonFight() --fight_component
 		else
-
-			--this segment is a boss fight
-			if (not InCombatLockdown() and not UnitAffectingCombat("player")) then
-
-			else
-				--Details.schedule_flag_boss_components = true
-			end
-
 			--calling here without checking for combat since the does not ran too long for scripts
 			Details:FlagActorsOnBossFight()
 
-			local boss_id = Details.encounter_table.id
-
 			if (bossKilled) then
-				Details.tabela_vigente.is_boss.killed = true
+				currentCombat.is_boss.killed = true
 
 				--add to storage
 				if (not InCombatLockdown() and not UnitAffectingCombat("player") and not Details.logoff_saving_data) then
@@ -709,12 +659,10 @@
 					Details.schedule_store_boss_encounter = true
 				end
 
-				Details:SendEvent("COMBAT_BOSS_DEFEATED", nil, Details.tabela_vigente)
-
+				Details:SendEvent("COMBAT_BOSS_DEFEATED", nil, currentCombat)
 				Details:CheckFor_TrashSuppressionOnEncounterEnd()
 			else
-				Details:SendEvent("COMBAT_BOSS_WIPE", nil, Details.tabela_vigente)
-
+				Details:SendEvent("COMBAT_BOSS_WIPE", nil, currentCombat)
 				--add to storage
 				if (not InCombatLockdown() and not UnitAffectingCombat("player") and not Details.logoff_saving_data) then
 					local successful, errortext = pcall(Details.Database.StoreWipe)
@@ -724,17 +672,14 @@
 				else
 					Details.schedule_store_boss_encounter_wipe = true
 				end
-
 			end
 
-			Details.tabela_vigente.is_boss.index = Details.tabela_vigente.is_boss.index or 1
+			currentCombat.is_boss.index = currentCombat.is_boss.index or 1
+			currentCombat.enemy = currentCombat.is_boss.encounter
 
-			Details.tabela_vigente.enemy = Details.tabela_vigente.is_boss.encounter
-
-			if (Details.tabela_vigente.instance_type == "raid") then
-
+			if (currentCombat.instance_type == "raid") then
 				Details.last_encounter2 = Details.last_encounter
-				Details.last_encounter = Details.tabela_vigente.is_boss.name
+				Details.last_encounter = currentCombat.is_boss.name
 
 				if (Details.pre_pot_used) then
 					Details.last_combat_pre_pot_used = Details.CopyTable(Details.pre_pot_used)
@@ -748,32 +693,17 @@
 
 			if (bIsFromEncounterEnd) then
 				if (Details.encounter_table.start) then
-					Details.tabela_vigente:SetStartTime (Details.encounter_table.start)
+					currentCombat:SetStartTime(Details.encounter_table.start)
 				end
-				Details.tabela_vigente:SetEndTime (Details.encounter_table ["end"] or GetTime())
+				currentCombat:SetEndTime(Details.encounter_table["end"] or GetTime())
 			end
 
-			--encounter boss function
-			local bossFunction, bossFunctionType = Details:GetBossFunction (Details.tabela_vigente.is_boss.mapid or 0, Details.tabela_vigente.is_boss.index or 0)
-			if (bossFunction) then
-				if (bitBand(bossFunctionType, 0x2) ~= 0) then --end of combat
-					if (not Details.logoff_saving_data) then
-						local successful, errortext = pcall(bossFunction, Details.tabela_vigente)
-						if (not successful) then
-							Details:Msg("error occurred on Encounter Boss Function:", errortext)
-						end
-					end
-				end
-			end
-
-			if (Details.tabela_vigente.instance_type == "raid") then
-				--schedule captures off
-
-				Details:CaptureSet (false, "damage", false, 15)
-				Details:CaptureSet (false, "energy", false, 15)
-				Details:CaptureSet (false, "aura", false, 15)
-				Details:CaptureSet (false, "energy", false, 15)
-				Details:CaptureSet (false, "spellcast", false, 15)
+			if (currentCombat.instance_type == "raid") then
+				Details:CaptureSet(false, "damage", false, 15)
+				Details:CaptureSet(false, "energy", false, 15)
+				Details:CaptureSet(false, "aura", false, 15)
+				Details:CaptureSet(false, "energy", false, 15)
+				Details:CaptureSet(false, "spellcast", false, 15)
 
 				if (Details.debug) then
 					Details:Msg("(debug) freezing parser for 15 seconds.")
@@ -781,8 +711,8 @@
 			end
 
 			--schedule sync
-			Details:EqualizeActorsSchedule (Details.host_of)
-			if (Details:GetEncounterEqualize (Details.tabela_vigente.is_boss.mapid, Details.tabela_vigente.is_boss.index)) then
+			Details:EqualizeActorsSchedule(Details.host_of)
+			if (Details:GetEncounterEqualize(currentCombat.is_boss.mapid, currentCombat.is_boss.index)) then
 				Details:ScheduleTimer("DelayedSyncAlert", 3)
 			end
 		end
@@ -792,7 +722,7 @@
 			Details.CloseSoloDebuffs()
 		end
 
-		local tempo_do_combate = Details.tabela_vigente:GetCombatTime()
+		local tempo_do_combate = currentCombat:GetCombatTime()
 
 		---@type combat
 		local invalidCombat
@@ -805,11 +735,11 @@
 		local zoneName, zoneType = GetInstanceInfo()
 		if (not bShouldForceDiscard and (zoneType == "none" or tempo_do_combate >= Details.minimum_combat_time or not segmentsTable[1])) then
 			--combat accepted
-			Details.tabela_historico:AddCombat(Details.tabela_vigente) --move a tabela atual para dentro do hist�rico
-			if (Details.tabela_vigente.is_boss) then
+			Details.tabela_historico:AddCombat(currentCombat) --move a tabela atual para dentro do hist�rico
+			if (currentCombat.is_boss) then
 				if (IsInRaid()) then
-					local cleuID = Details.tabela_vigente.is_boss.id
-					local diff = Details.tabela_vigente.is_boss.diff
+					local cleuID = currentCombat.is_boss.id
+					local diff = currentCombat.is_boss.diff
 					if (cleuID and diff == 16) then -- 16 mythic
 						local raidData = Details.raid_data
 
@@ -821,60 +751,60 @@
 						end
 
 						--get or build a table for this cleuID
-						mythicRaidData [cleuID] = mythicRaidData [cleuID] or {wipes = 0, kills = 0, best_try = 1, longest = 0, try_history = {}}
-						local cleuIDData = mythicRaidData [cleuID]
+						mythicRaidData[cleuID] = mythicRaidData[cleuID] or {wipes = 0, kills = 0, best_try = 1, longest = 0, try_history = {}}
+						local cleuIDData = mythicRaidData[cleuID]
 
 						--store encounter data for plugins and weakauras
-						if (Details.tabela_vigente:GetCombatTime() > cleuIDData.longest) then
-							cleuIDData.longest = Details.tabela_vigente:GetCombatTime()
+						if (currentCombat:GetCombatTime() > cleuIDData.longest) then
+							cleuIDData.longest = currentCombat:GetCombatTime()
 						end
 
-						if (Details.tabela_vigente.is_boss.killed) then
+						if (currentCombat.is_boss.killed) then
 							cleuIDData.kills = cleuIDData.kills + 1
 							cleuIDData.best_try = 0
-							table.insert(cleuIDData.try_history, {0, Details.tabela_vigente:GetCombatTime()})
+							table.insert(cleuIDData.try_history, {0, currentCombat:GetCombatTime()})
 							--print("KILL", "best try", cleuIDData.best_try, "amt kills", cleuIDData.kills, "wipes", cleuIDData.wipes, "longest", cleuIDData.longest)
 						else
 							cleuIDData.wipes = cleuIDData.wipes + 1
 							if (Details.boss1_health_percent and Details.boss1_health_percent < cleuIDData.best_try) then
 								cleuIDData.best_try = Details.boss1_health_percent
-								table.insert(cleuIDData.try_history, {Details.boss1_health_percent, Details.tabela_vigente:GetCombatTime()})
+								table.insert(cleuIDData.try_history, {Details.boss1_health_percent, currentCombat:GetCombatTime()})
 							end
 							--print("WIPE", "best try", cleuIDData.best_try, "amt kills", cleuIDData.kills, "wipes", cleuIDData.wipes, "longest", cleuIDData.longest)
 						end
 					end
 				end
-				--
 			end
 
 			--the combat is valid, see if the user is sharing data with somebody
 			if (Details.shareData) then
-				local zipData = Details:CompressData (Details.tabela_vigente, "comm")
+				local zipData = Details:CompressData(currentCombat, "comm")
 				if (zipData) then
 					print("has zip data")
 				end
 			end
-
 		else
 			--combat denied: combat did not pass the filter and cannot be added into the segment history
 			--rewind the data set to the first slot in the segments table
 			showTutorialForDiscardedSegment()
 
 			--change the current combat to the latest combat available in the segment table
-			invalidCombat = Details.tabela_vigente
-			Details.tabela_vigente = segmentsTable[1]
+			invalidCombat = currentCombat
+			Details:SetCurrentCombat(segmentsTable[1])
+			currentCombat = Details:GetCurrentCombat()
 
 			--if it rewinds to an already erased combat, then create a new combat
-			if (Details.tabela_vigente.__destroyed) then
-				Details.tabela_vigente = Details.combate:NovaTabela(nil, Details.tabela_overall)
+			if (currentCombat.__destroyed) then
+				Details:SetCurrentCombat(Details.combate:NovaTabela(nil, Details.tabela_overall))
+				currentCombat = Details:GetCurrentCombat()
 			end
 
-			if (Details.tabela_vigente:GetStartTime() == 0) then
-				Details.tabela_vigente:SetStartTime(GetTime())
-				Details.tabela_vigente:SetEndTime(GetTime())
+			if (currentCombat:GetStartTime() == 0) then
+				currentCombat:SetStartTime(GetTime())
+				currentCombat:SetEndTime(GetTime())
 			end
 
-			Details.tabela_vigente.resincked = true
+			currentCombat.resincked = true
 			Details:InstanceCallDetailsFunc(Details.AtualizarJanela)
 
 			if (Details.solo) then --code to update "solo" plugins, there's no solo plugins for details! at the moment
@@ -905,8 +835,8 @@
 		Details.in_combat = false
 		Details.leaving_combat = false
 
-		Details:Destroy(Details.tabela_vigente.PhaseData.damage_section)
-		Details:Destroy(Details.tabela_vigente.PhaseData.heal_section)
+		Details:Destroy(currentCombat.PhaseData.damage_section)
+		Details:Destroy(currentCombat.PhaseData.heal_section)
 		Details:Destroy(Details.cache_damage_group)
 		Details:Destroy(Details.cache_healing_group)
 
@@ -938,7 +868,7 @@
 			Details:SendEvent("COMBAT_INVALID")
 			Details:SendEvent("COMBAT_PLAYER_LEAVE", nil, invalidCombat)
 		else
-			Details:SendEvent("COMBAT_PLAYER_LEAVE", nil, Details.tabela_vigente)
+			Details:SendEvent("COMBAT_PLAYER_LEAVE", nil, currentCombat)
 		end
 
 		Details:CheckForTextTimeCounter()
@@ -948,7 +878,7 @@
 		--issue: invalidCombat will be just floating around in memory if not destroyed
 	end --end of leaving combat function
 
-	function Details:GetPlayersInArena()
+	function Details:GetPlayersInArena() --ARENA_OPPONENT_UPDATE
 		local aliados = GetNumGroupMembers() -- LE_PARTY_CATEGORY_HOME
 		for i = 1, aliados-1 do
 			local role = UnitGroupRolesAssigned and UnitGroupRolesAssigned("party" .. i) or "DAMAGER"
@@ -1421,7 +1351,7 @@
 				instancia:TrocaTabela(instancia, instancia.segmento, instancia.atributo, instancia.sub_atributo, true)
 			end
 		else
-			if (instancia.modo == modo_GROUP or instancia.modo == modo_ALL) then
+			if (instancia.modo == groupMode or instancia.modo == everythingMode) then
 				instancia:TrocaTabela(instancia, instancia.segmento, instancia.atributo, instancia.sub_atributo, true)
 			end
 		end
@@ -1632,10 +1562,10 @@
 		GameCooltip:SetBackdrop(1, Details.cooltip_preset2_backdrop, bgColor, borderColor)
 	end
 
-	function Details:BuildInstanceBarTooltip (frame)
+	function Details:BuildInstanceBarTooltip(frame)
 		local GameCooltip = GameCooltip
 		Details:FormatCooltipForSpells()
-		GameCooltip:SetOption("MinWidth", _math_max (230, self.baseframe:GetWidth()*0.98))
+		GameCooltip:SetOption("MinWidth", _math_max(230, self.baseframe:GetWidth()*0.98))
 
 		local myPoint = Details.tooltip.anchor_point
 		local anchorPoint = Details.tooltip.anchor_relative
@@ -1644,9 +1574,9 @@
 
 		if (Details.tooltip.anchored_to == 1) then
 
-			GameCooltip:SetHost (frame, myPoint, anchorPoint, x_Offset, y_Offset)
+			GameCooltip:SetHost(frame, myPoint, anchorPoint, x_Offset, y_Offset)
 		else
-			GameCooltip:SetHost (DetailsTooltipAnchor, myPoint, anchorPoint, x_Offset, y_Offset)
+			GameCooltip:SetHost(DetailsTooltipAnchor, myPoint, anchorPoint, x_Offset, y_Offset)
 		end
 	end
 
@@ -1694,7 +1624,7 @@
 
 		if (bTooltipBuilt) then
 			if (object.serial and object.serial ~= "") then
-				local avatar = NickTag:GetNicknameTable(object.serial, true)
+				local avatar = NickTag:GetNicknameTable(object:Name(), true)
 				if (avatar and not Details.ignore_nicktag) then
 					if (avatar[2] and avatar[4] and avatar[1]) then
 						GameCooltip:SetBannerImage(1, 1, avatar [2], 80, 40, avatarPoint, avatarTexCoord, nil) --overlay [2] avatar path
@@ -1708,7 +1638,7 @@
 		end
 	end
 
-	function Details.gump:UpdateTooltip (whichRowLine, esta_barra, instancia)
+	function Details.gump:UpdateTooltip(whichRowLine, esta_barra, instancia)
 		if (IsShiftKeyDown()) then
 			return instancia:MontaTooltip(esta_barra, whichRowLine, "shift")
 		elseif (IsControlKeyDown()) then
@@ -1720,34 +1650,32 @@
 		end
 	end
 
-	function Details:EndRefresh (instancia, total, combatTable, showing)
+	function Details:EndRefresh(instancia, total, combatTable, showing)
 		Details:HideBarsNotInUse(instancia, showing)
 	end
 
-	function Details:HideBarsNotInUse(instancia, showing)
-		--primeira atualiza��o ap�s uma mudan�a de segmento -- verifica se h� mais barras sendo mostradas do que o necess�rio
-		--------------------
-			if (instancia.v_barras) then
-				--print("mostrando", instancia.rows_showing, instancia.rows_created)
-				for barra_numero = instancia.rows_showing+1, instancia.rows_created do
-					Details.FadeHandler.Fader(instancia.barras[barra_numero], "in")
-				end
-				instancia.v_barras = false
+	function Details:HideBarsNotInUse(instance, showing)
+		if (instance.v_barras) then
+			--print("mostrando", instancia.rows_showing, instancia.rows_created)
+			for barra_numero = instance.rows_showing+1, instance.rows_created do
+				Details.FadeHandler.Fader(instance.barras[barra_numero], "in")
+			end
+			instance.v_barras = false
 
-				if (instancia.rows_showing == 0 and instancia:GetSegment() == -1) then -- -1 overall data
-					if (not instancia:IsShowingOverallDataWarning()) then
-						local tutorial = Details:GetTutorialCVar("OVERALLDATA_WARNING1") or 0
-						if ((type(tutorial) == "number") and (tutorial < 60)) then
-							Details:SetTutorialCVar ("OVERALLDATA_WARNING1", tutorial + 1)
-							instancia:ShowOverallDataWarning (true)
-						end
+			if (instance.rows_showing == 0 and instance:GetSegment() == -1) then -- -1 overall data
+				if (not instance:IsShowingOverallDataWarning()) then
+					local tutorial = Details:GetTutorialCVar("OVERALLDATA_WARNING1") or 0
+					if ((type(tutorial) == "number") and (tutorial < 60)) then
+						Details:SetTutorialCVar ("OVERALLDATA_WARNING1", tutorial + 1)
+						instance:ShowOverallDataWarning (true)
 					end
-				else
-					if (instancia:IsShowingOverallDataWarning()) then
-						instancia:ShowOverallDataWarning (false)
-					end
+				end
+			else
+				if (instance:IsShowingOverallDataWarning()) then
+					instance:ShowOverallDataWarning (false)
 				end
 			end
+		end
 
 		return showing
 	end
@@ -1895,8 +1823,7 @@
 				- overall data only
 				- current data only
 				- both
-
-			--=]=]
+			--]=]
 
 			local text = Details.gump:CreateLabel(panel, Loc ["STRING_OPTIONS_CONFIRM_ERASE"], nil, nil, "GameFontNormal")
 			text:SetPoint("center", panel, "center")
@@ -1904,18 +1831,18 @@
 
 			local no = Details.gump:CreateButton(panel, function() panel:Hide() end, 90, 20, Loc ["STRING_NO"])
 			no:SetPoint("bottomleft", panel, "bottomleft", 30, 10)
-			no:InstallCustomTexture (nil, nil, nil, nil, true)
+			no:InstallCustomTexture(nil, nil, nil, nil, true)
 
 			local yes = Details.gump:CreateButton(panel, function() panel:Hide(); Details.tabela_historico:ResetAllCombatData() end, 90, 20, Loc ["STRING_YES"])
 			yes:SetPoint("bottomright", panel, "bottomright", -30, 10)
-			yes:InstallCustomTexture (nil, nil, nil, nil, true)
+			yes:InstallCustomTexture(nil, nil, nil, nil, true)
 		end
 
 		panel:Show()
 	end
 
-	function Details:CheckForAutoErase (mapid)
-		if (Details.last_instance_id ~= mapid) then
+	function Details:CheckForAutoErase(mapId)
+		if (Details.last_instance_id ~= mapId) then
 			Details.tabela_historico:ResetOverallData()
 
 			if (Details.segments_auto_erase == 2) then --ask to erase
@@ -1937,9 +1864,8 @@
 			end
 		end
 
-		Details.last_instance_id = mapid
+		Details.last_instance_id = mapId
 		Details.last_instance_time = _tempo
-		--Details.last_instance_time = 0 --debug
 	end
 
 	function Details:UpdateControl()

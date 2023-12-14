@@ -7,6 +7,8 @@
 # Libs\LibStub-1.0\LibStub.lua
 # Libs\LibRangeCheck-3.0\LibRangeCheck-3.0.lua
 
+Helpers/ShamanBlueColor.lua
+
 _Config.lua
 _Core.lua
 _Debug.lua
@@ -86,7 +88,6 @@ Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
 Helpers/QuestRewardMostValueItem.lua
-Helpers/ShamanBlueColor.lua
 # Helpers/SkinBuffs.lua
 Helpers/Threat.lua
 Helpers/TimeToDie.lua

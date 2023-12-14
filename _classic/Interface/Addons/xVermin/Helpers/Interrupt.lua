@@ -85,7 +85,7 @@ local HandleUnit = function(unit)
 
 		-- SHAMAN INTERRUPT
 		if xVermin.Class == 'SHAMAN' then
-			if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
+			if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
@@ -171,7 +171,7 @@ xVermin.Interrupt = function(input)
 
 	-- SHAMAN INTERRUPT
 	if xVermin.Class == 'SHAMAN' then
-		if select(2, GetSpellCooldown('Wind Shear')) == 0 and IsSpellInRange('Wind Shear', unit) == 1 then
+		if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 			HRF = true
 		end
 	end

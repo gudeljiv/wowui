@@ -15,7 +15,6 @@ else:
     from libs.resources_classic import keyCodeMap
 
 
-
 from libs.interception import *
 from libs.ctypes_custom import KeyPress as cKeyPress
 from win32api import GetSystemMetrics
@@ -69,9 +68,6 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 abilities_folder = dir_path + r"\images\\" + mode + r"\\" + monitor
 debug_folder = dir_path + r"\images\\_\\"
-
-print(abilities_folder)
-print(debug_folder)
 
 # default class
 wow_class_loaded = wow_class
@@ -152,7 +148,7 @@ def parse_hex_color(string):
 
 
 def color_similarity(base_col_val, oth_col_val):
-    return math.sqrt(sum((base_col_val[i]-oth_col_val[i])**2 for i in range(3)))
+    return math.sqrt(sum((base_col_val[i] - oth_col_val[i]) ** 2 for i in range(3)))
 
 
 def get_class(clss, color_distance):
@@ -177,7 +173,7 @@ def load_skills_healing(wow_class):
                 healing[skill["name"]] = {}
 
             image = abilities_folder + "/" + "healing" + "/" + skill["name"] + " H.png"
-            if (not os.path.isfile(image)):
+            if not os.path.isfile(image):
                 print(skill["name"], "MISSING")
                 continue
             else:
@@ -202,7 +198,7 @@ def load_skills_globals(wow_class):
                 global_skills[skill["name"]] = {}
 
             image = abilities_folder + "/" + "globals" + "/" + skill["name"] + " G.png"
-            if (not os.path.isfile(image)):
+            if not os.path.isfile(image):
                 print(skill["name"], "MISSING")
                 continue
             else:
@@ -227,7 +223,7 @@ def load_skills_main(wow_class):
                 main_abilities[skill["name"]] = {}
 
             image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " M.png"
-            if (not os.path.isfile(image)):
+            if not os.path.isfile(image):
                 print(skill["name"], "MISSING")
                 continue
             else:
@@ -252,7 +248,7 @@ def load_skills_secondary(wow_class):
                 secondary_abilities[skill["name"]] = {}
 
             image = abilities_folder + "/" + wow_class + "/" + skill["name"] + " O.png"
-            if (not os.path.isfile(image)):
+            if not os.path.isfile(image):
                 print(skill["name"], "MISSING")
                 continue
             else:
@@ -269,12 +265,12 @@ def load_skills_secondary(wow_class):
 
 
 def print_debug(ability, score=False):
-    skill = '{0: <25}'.format(ability["name"])
-    modifier = "modifier" in ability.keys() and '{0: <8}'.format(ability["modifier"]) or '{0: <8}'.format("none")
-    key = '{0: <5}'.format(ability["key"])
-    score = '{0: <8}'.format('{:.2f}'.format(score*100))
-    ms = '{0: <8}'.format(f"{round(1000 * (time.time() - start_time))} ms")
-    dtime = '{0: <20}'.format(dt.now().strftime("%H:%M:%S"))
+    skill = "{0: <25}".format(ability["name"])
+    modifier = "modifier" in ability.keys() and "{0: <8}".format(ability["modifier"]) or "{0: <8}".format("none")
+    key = "{0: <5}".format(ability["key"])
+    score = "{0: <8}".format("{:.2f}".format(score * 100))
+    ms = "{0: <8}".format(f"{round(1000 * (time.time() - start_time))} ms")
+    dtime = "{0: <20}".format(dt.now().strftime("%H:%M:%S"))
     print(skill, modifier, key, score, ms, dtime)
 
 
@@ -284,7 +280,7 @@ def main_rotation(main_skill, main_abilities):
         for key, ability in main_abilities.items():
             try:
                 score = metrics.structural_similarity(ability["image"], main_skill, channel_axis=2)
-                if score*100 > 90:
+                if score * 100 > 90:
                     if dprint:
                         print_debug(ability, score)
                     press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
@@ -303,7 +299,7 @@ def secondary_rotation(secondary_skill, secondary_abilities):
             for key, ability in secondary_abilities.items():
                 try:
                     score = metrics.structural_similarity(ability["image"], secondary_skill, channel_axis=2)
-                    if score*100 > 90:
+                    if score * 100 > 90:
                         if dprint:
                             print_debug(ability, score)
                         press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
@@ -329,11 +325,8 @@ def whole_rotation(main_skill, secondary_skill, main_abilities, secondary_abilit
 
 
 with keyboard.Listener(on_press=on_press) as listener:
-
     with mss.mss() as sct:
-
         while True:
-
             try:
                 time.sleep(random.uniform(0.005, 0.01))
 
@@ -343,32 +336,32 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(2)
                     continue
 
-# defining regions
+                # defining regions
                 p_main = {"top": 2, "left": 2, "width": x, "height": y}
-                p_offgcd = {"top": 2, "left":  p_offgcd_left, "width": x, "height": y}
+                p_offgcd = {"top": 2, "left": p_offgcd_left, "width": x, "height": y}
                 p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
                 p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
                 p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
                 p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
 
-# grabbing images from regions
+                # grabbing images from regions
                 main_image = sct.grab(p_main)
                 offgcd_image = sct.grab(p_offgcd)
-                combat = sct.grab(p_combat).pixel(math.floor(c_width/2), math.floor(c_height/2))
-                interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width/2), math.floor(c_height/2))
-                behind = sct.grab(p_behind).pixel(math.floor(c_width/2), math.floor(c_height/2))
-                clss = sct.grab(p_clss).pixel(math.floor(c_width/2), math.floor(c_height/2))
+                combat = sct.grab(p_combat).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
+                interrupt = sct.grab(p_interrupt).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
+                behind = sct.grab(p_behind).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
+                clss = sct.grab(p_clss).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
 
                 if debug:
                     mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
 
-# matching closest class color to define in colors
+                # matching closest class color to define in colors
                 found_class, wow_class = get_class(clss, color_distance)
                 if not found_class:
                     continue
 
-# loading skills for a class if changed
+                # loading skills for a class if changed
                 if wow_class_loaded != wow_class:
                     # print("class changed: ", wow_class_loaded, "->", wow_class, "..", hex, clss, color_distance, color[hex], dt.now().strftime("%H:%M:%S"))
                     print("CLASS:", wow_class_loaded.upper(), "->", wow_class.upper())
@@ -378,7 +371,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                     wow_class_loaded = wow_class
                     pyautogui.hotkey(pause and "end" or "home")
 
-# actual rotation
+                # actual rotation
                 if not pause:
                     if active_window != "World of Warcraft":
                         continue
@@ -389,13 +382,13 @@ with keyboard.Listener(on_press=on_press) as listener:
                     if combat == (255, 255, 255):
                         continue
 
-# interrupt indicator
+                    # interrupt indicator
                     # white --> green
                     if interrupt == (0, 255, 0):
                         press_interception_key("F9")
                         continue
 
-# rotation
+                    # rotation
                     main_skill = numpy.array(main_image)[:, :, :3]
                     secondary_skill = numpy.array(offgcd_image)[:, :, :3]
                     _thread.start_new_thread(whole_rotation, (main_skill, secondary_skill, main_abilities, secondary_abilities))

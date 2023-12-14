@@ -495,17 +495,8 @@ data["AzerothCommerceAuthority"] = {
 			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep6" },
 				{ 2, 211384 }, -- Sturdy Courier Bag
-				{ 3, 211386 }, -- Spell Notes: Arcane Surge
-				{ 4, 211387 }, -- Rune of Beckoning Light
-				{ 5, 211392 }, -- Rune of Everlasting Affliction
-				{ 6, 211391 }, -- Rune of Healing Rain
-				{ 7, 211385 }, -- Rune of Serpent Spread
-				{ 8, 211393 }, -- Rune of Single-Minded Fury
-				{ 9, 206992 }, -- Rune of Skull Bash
-				{ 10, 211390 }, -- Rune of Teasing
-				{ 11, 205950 }, -- Tenebrous Epiphany
-				{ 13, 210779 }, -- Plans: Mantle of the Second War
-				{ 14, 211247 }, -- Pattern: Phoenix Bindings
+				{ 4, 210779 }, -- Plans: Mantle of the Second War
+				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 			},
 		},
 		{ -- Friendly
@@ -516,6 +507,15 @@ data["AzerothCommerceAuthority"] = {
 				{ 3, 212588 }, -- Provisioner's Gloves
 				{ 4, 212589 }, -- Courier Treads
 				{ 5, 212590 }, -- Hoist Strap
+				{ 7, 211386 }, -- Spell Notes: Arcane Surge
+				{ 8, 211387 }, -- Rune of Beckoning Light
+				{ 9, 211392 }, -- Rune of Everlasting Affliction
+				{ 10, 211391 }, -- Rune of Healing Rain
+				{ 11, 211385 }, -- Rune of Serpent Spread
+				{ 12, 211393 }, -- Rune of Single-Minded Fury
+				{ 13, 206992 }, -- Rune of Skull Bash
+				{ 14, 211390 }, -- Rune of Teasing
+				{ 15, 205950 }, -- Tenebrous Epiphany
 
 			},
 		},
@@ -546,17 +546,8 @@ data["DurotarSupplyAndLogistics"] = {
 			[HORDE_DIFF] = {
 				{ 1, "f2587rep6" },
 				{ 2, 211384 }, -- Sturdy Courier Bag
-				{ 3, 211386 }, -- Spell Notes: Arcane Surge
-				{ 4, 211387 }, -- Rune of Beckoning Light
-				{ 5, 211392 }, -- Rune of Everlasting Affliction
-				{ 6, 211391 }, -- Rune of Healing Rain
-				{ 7, 211385 }, -- Rune of Serpent Spread
-				{ 8, 211393 }, -- Rune of Single-Minded Fury
-				{ 9, 206992 }, -- Rune of Skull Bash
-				{ 10, 211390 }, -- Rune of Teasing
-				{ 11, 205950 }, -- Tenebrous Epiphany
-				{ 13, 210779 }, -- Plans: Mantle of the Second War
-				{ 14, 211247 }, -- Pattern: Phoenix Bindings
+				{ 4, 210779 }, -- Plans: Mantle of the Second War
+				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 			},
 		},
 		{ -- Friendly
@@ -567,6 +558,15 @@ data["DurotarSupplyAndLogistics"] = {
 				{ 3, 212588 }, -- Provisioner's Gloves
 				{ 4, 212589 }, -- Courier Treads
 				{ 5, 212590 }, -- Hoist Strap
+				{ 7, 211386 }, -- Spell Notes: Arcane Surge
+				{ 8, 211387 }, -- Rune of Beckoning Light
+				{ 9, 211392 }, -- Rune of Everlasting Affliction
+				{ 10, 211391 }, -- Rune of Healing Rain
+				{ 11, 211385 }, -- Rune of Serpent Spread
+				{ 12, 211393 }, -- Rune of Single-Minded Fury
+				{ 13, 206992 }, -- Rune of Skull Bash
+				{ 14, 211390 }, -- Rune of Teasing
+				{ 15, 205950 }, -- Tenebrous Epiphany
 			},
 		},
 	},
