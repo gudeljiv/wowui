@@ -1,7 +1,8 @@
 # Auctionator
 
-## [10.2.5](https://github.com/Auctionator/Auctionator/tree/10.2.5) (2023-12-13)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.4...10.2.5) 
+## [10.2.6](https://github.com/Auctionator/Auctionator/tree/10.2.6) (2023-12-14)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.5...10.2.6) 
 
-- Added API to create Shopping Lists (#1464)  
-    Co-authored-by: plusmouse <plusmouse@protonmail.com>  
+- Classic: Cancelling: Compare for undercuts against items with similar stats  
+- Fix nil reference error when Auctionator tabs not yet initialised due to TSM  
+- [Fixes #1465] Classic: Selling: Compared gear to items with similar stats  
