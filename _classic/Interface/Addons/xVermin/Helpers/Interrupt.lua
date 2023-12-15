@@ -12,7 +12,7 @@ interrupt_warning:SetWidth(interrupt_warning.text:GetStringWidth())
 interrupt_warning:SetHeight(interrupt_warning.text:GetStringHeight())
 interrupt_warning:Hide()
 
-_G.IfUnitIsCastingInteruptable = false
+_G.IfUnitIsCastingInteruptible = false
 
 local HandleRotationFrame = function(on)
 	if on then
@@ -27,8 +27,9 @@ end
 
 local HandleUnit = function(unit)
 
-	-- if xVermin.IfUnitIsCastingInteruptable(unit) then
-	if _G.IfUnitIsCastingInteruptable then
+	-- if xVermin.IfUnitIsCastingInteruptible(unit) then
+	-- print(_G.IfUnitIsCastingInteruptible)
+	if _G.IfUnitIsCastingInteruptible then
 		-- WARRIOR INTERRUPT
 		if (xVermin.Class == 'WARRIOR') then
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
@@ -121,7 +122,6 @@ xVermin.Interrupt = function(input)
 		local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 		local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 		local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-		print(battle,defensive,unit,IsSpellInRange('Shield Bash', unit),select(2, GetSpellCooldown('Shield Bash')) == 0)
 		if defensive then
 			if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
 				HRF = true

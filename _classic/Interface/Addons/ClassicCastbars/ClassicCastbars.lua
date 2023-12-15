@@ -143,7 +143,7 @@ function addon:StartCast(unitGUID, unitID)
     castbar._data = cast -- set ref to current cast data
 
 	if not cast.isUninterruptible then 
-		_G.IfUnitIsCastingInteruptable = true
+		_G.IfUnitIsCastingInteruptible = true
 	end
 
     self:CheckCastModifiers(unitID, cast)
@@ -158,7 +158,7 @@ function addon:StopCast(unitID, noFadeOut)
         self:HideCastbar(castbar, unitID, noFadeOut)
     end
 
-	_G.IfUnitIsCastingInteruptable = false
+	_G.IfUnitIsCastingInteruptible = false
 
     castbar._data = nil
 end

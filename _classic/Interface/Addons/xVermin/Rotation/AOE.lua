@@ -24,8 +24,8 @@ xVermin.AOE = function(range, casting)
 
 		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) then
 			-- print(unit, UnitExists(unit), UnitCreatureType(unit), not xVermin.HasValue(t, UnitCreatureType(unit)), xVermin.GetRange(unit))
-			unitcasting = xVermin.IfUnitIsCastingInteruptable(unit)
-			targetcasting = xVermin.IfUnitIsCastingInteruptable('target')
+			unitcasting = xVermin.IfUnitIsCastingInteruptible(unit)
+			targetcasting = xVermin.IfUnitIsCastingInteruptible('target')
 
 			if unitcasting then
 				if not targetcasting then

@@ -211,7 +211,7 @@ end
 local CastingInfo = _G.CastingInfo
 local ChannelInfo = _G.ChannelInfo
 
-xVermin.IfUnitIsCastingInteruptable = function(unit)
+xVermin.IfUnitIsCastingInteruptible = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
 	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 
@@ -223,7 +223,7 @@ xVermin.IfUnitIsCastingInteruptable = function(unit)
 	end
 	return false
 end
-xUnitCastingInteruptable = xVermin.IfUnitIsCastingInteruptable
+xUnitCastingInteruptable = xVermin.IfUnitIsCastingInteruptible
 
 xVermin.IfUnitIsCastingNonInteruptable = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)

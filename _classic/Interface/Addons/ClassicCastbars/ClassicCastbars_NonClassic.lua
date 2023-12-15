@@ -435,7 +435,6 @@ end
 function addon:UNIT_SPELLCAST_INTERRUPTIBLE(unitID)
     local castbar = self:GetCastbarFrameIfEnabled(unitID)
     if not castbar then return end
-
     castbar._data.isUninterruptible = true
     if castbar._data.isChanneled then
         self:UNIT_SPELLCAST_CHANNEL_START(unitID) -- Hack: Restart cast to update border shield
@@ -447,7 +446,6 @@ end
 function addon:UNIT_SPELLCAST_NOT_INTERRUPTIBLE(unitID)
     local castbar = self:GetCastbarFrameIfEnabled(unitID)
     if not castbar then return end
-
     castbar._data.isUninterruptible = false
     if castbar._data.isChanneled then
         self:UNIT_SPELLCAST_CHANNEL_START(unitID) -- Hack: Restart cast to update border shield
@@ -653,11 +651,14 @@ addon:SetScript("OnUpdate", function(self)
 
     -- Update all shown castbars in a single OnUpdate call
     for unit, castbar in next, activeFrames do
-        local cast = castbar._data
+		local cast = castbar._data
+		
         if cast and cast.endTime ~= nil then
             local castTime = cast.endTime - currTime
 
             if (castTime > 0) then
+				_G.IfUnitIsCastingInteruptible = true
+
                 local maxValue = cast.endTime - cast.timeStart
                 local value = currTime - cast.timeStart
                 if cast.isChanneled then -- inverse
@@ -670,6 +671,7 @@ addon:SetScript("OnUpdate", function(self)
                 local sparkPosition = (value / maxValue) * (castbar.currWidth or castbar:GetWidth())
                 castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, 0)
             else
+				_G.IfUnitIsCastingInteruptible = false
                 if castbar.fade and not castbar.fade:IsPlaying() and not castbar.isTesting then
                     if castbar:GetAlpha() == 1 then -- sanity check
                         castbar._data.isCastComplete = true
@@ -678,6 +680,8 @@ addon:SetScript("OnUpdate", function(self)
                     end
                 end
             end
-        end
+        else 
+			_G.IfUnitIsCastingInteruptible = false
+		end
     end
 end)
