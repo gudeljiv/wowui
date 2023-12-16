@@ -1,6 +1,14 @@
 
 GMMONEY = {
 	["Lone Wolf"] = {
+		["Dopemend"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Dopetrap"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
 		["Dopecoil"] = {
 			["GOLD"] = 403,
 			["CLASS"] = "SHAMAN",

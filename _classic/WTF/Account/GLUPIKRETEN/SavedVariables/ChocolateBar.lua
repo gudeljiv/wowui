@@ -39,6 +39,7 @@ ChocolateBarDB = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Dopecure - Stitches"] = "Default",
+		["Dopemend - Lone Wolf"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Verminz - Genesis"] = "Default",
@@ -50,31 +51,32 @@ ChocolateBarDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
+		["Dopecoil - Lone Wolf"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
-		["Dopecoil - Lone Wolf"] = "Default",
-		["Vermins - Stitches"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
+		["Vermins - Stitches"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Tadibey - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Provokator - Jin'do"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Dopesnare - Stitches"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Battlearm - Gehennas"] = "Default",
-		["Tudum - Jin'do"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Dopesnare - Stitches"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
 		["Dopesick - Stitches"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Blooq - Genesis"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -774,8 +776,10 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
+	["Battlearm-Golemagg"] = {
+		["total"] = 1022825,
+		["timeAtThisLevel"] = 693150,
+		["timeStamp"] = 435868.025,
 	},
 	["Mxzq-Golemagg"] = {
 		["total"] = 1182045,
@@ -797,10 +801,8 @@ CB_PlayedTime = {
 		["timeStamp"] = 59401.909,
 		["timeAtThisLevel"] = 97,
 	},
-	["Wells-Jin'do"] = {
-		["total"] = 11721,
-		["timeStamp"] = 774953.806,
-		["timeAtThisLevel"] = 4960,
+	["Dotwise-"] = {
+		["total"] = 3924,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -813,8 +815,10 @@ CB_PlayedTime = {
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeStamp"] = 60887.198,
+		["timeAtThisLevel"] = 316,
 	},
 	["Vermin-Golemagg"] = {
 		["total"] = 1990361,
@@ -924,10 +928,10 @@ CB_PlayedTime = {
 	["Battlearm-"] = {
 		["total"] = 1786,
 	},
-	["Tudum-Jin'do"] = {
-		["total"] = 316,
-		["timeStamp"] = 60887.198,
-		["timeAtThisLevel"] = 316,
+	["Wells-Jin'do"] = {
+		["total"] = 11721,
+		["timeStamp"] = 774953.806,
+		["timeAtThisLevel"] = 4960,
 	},
 	["Grgur-"] = {
 		["total"] = 1248,
@@ -935,12 +939,10 @@ CB_PlayedTime = {
 	["Mxzq-"] = {
 		["total"] = 356150,
 	},
+	["Vermins-"] = {
+		["total"] = 3014,
+	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
-	},
-	["Battlearm-Golemagg"] = {
-		["total"] = 1022825,
-		["timeAtThisLevel"] = 693150,
-		["timeStamp"] = 435868.025,
 	},
 }
