@@ -82,5 +82,6 @@ VER 3 000000000100000F " " "132328"
 END
 VER 3 0000000001000014 " " "134400"
 #showtooltip
+/startattack
 /cast !Auto Shot
 END

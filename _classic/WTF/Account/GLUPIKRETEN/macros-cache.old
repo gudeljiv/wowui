@@ -2,10 +2,6 @@ VER 3 0000000000000025 " " "134400"
 #showtooltip
 /cast [@cursor] Rough Copper Bomb
 END
-VER 3 0000000000000028 " " "134400"
-/tar grundig
-/cast moonfire
-END
 VER 3 0000000000000024 " " "134400"
 #showtooltip
 /use Solid Sharpening Stone
@@ -35,9 +31,6 @@ END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
-END
-VER 3 0000000000000029 "RXPTargeting" "Ability_eyeoftheowl"
-//RestedXP Guides - current step has no configured targets
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip

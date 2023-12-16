@@ -2,7 +2,7 @@
 GMMONEY = {
 	["Lone Wolf"] = {
 		["Dopesnare"] = {
-			["GOLD"] = 252,
+			["GOLD"] = 11142,
 			["CLASS"] = "HUNTER",
 		},
 		["Dopeclaw"] = {
@@ -14,7 +14,7 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 		["Dopecoil"] = {
-			["GOLD"] = 244,
+			["GOLD"] = 403,
 			["CLASS"] = "SHAMAN",
 		},
 	},

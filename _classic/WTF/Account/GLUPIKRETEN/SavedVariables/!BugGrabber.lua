@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11026,
+	["session"] = 11034,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1468,33 +1468,25 @@ BugGrabberDB = {
 			["counter"] = 27,
 		}, -- [191]
 		{
-			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
-			["time"] = "2023/09/29 22:27:18",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
-			["session"] = 11000,
-			["counter"] = 17,
-		}, -- [192]
-		{
 			["message"] = "Interface/AddOns/xVermin/Rotation/AOE.lua:50: attempt to compare number with nil",
 			["time"] = "2023/12/14 21:02:34",
 			["locals"] = "range = 10\ncasting = false\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"Wind Shear\"\n(*temporary) = 136048\n(*temporary) = 127990190\n(*temporary) = 127991690\n(*temporary) = false\n(*temporary) = \"Cast-3-5210-1-5372-403-0005FB5F5B\"\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\ninRange = 0\nrangecasting = 0\nunit = \"nameplate1\"\nxVermin = <table> {\n QuestRewardGoldIconFrame = xVermin_QuestRewardGoldIconFrame {\n }\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:76\n Threat = <function> defined @Interface/AddOns/xVermin/Helpers/Threat.lua:3\n AOE = <function> defined @Interface/AddOns/xVermin/Rotation/AOE.lua:16\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:104\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:56\n CheckBuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:38\n CheckDebuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:24\n BehindTarget = <function> defined @Interface/AddOns/xVermin/Rotation/BehindTarget.lua:53\n Interrupt = <function> defined @Interface/AddOns/xVermin/Helpers/Interrupt.lua:108\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:259\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:93\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:139\n IfUnitIsCastingInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:214\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:148\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:248\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:286\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:119\n Config = <table> {\n }\n ClassColor = <table> {\n }\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:131\n WaitTimeUntillAddonLoaded = 30\n R6_Occupied = false\n Class = \"SHAMAN\"\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:202\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:238\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:228\n}\nt = <table> {\n 1 = \"Critter\"\n 2 = \"Totem\"\n 3 = \"Non-combat Pet\"\n 4 = \"Gas Cloud\"\n}\nunitcasting = true\ntargetcasting = true\nminRange = nil\nmaxRange = nil\n",
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Rotation/AOE.lua\"]:50: in function `AOE'\n[string \"@Interface/AddOns/xVermin/Rotation/AOE.lua\"]:161: in function <Interface/AddOns/xVermin/Rotation/AOE.lua:139>\n[string \"=[C]\"]: ?",
 			["session"] = 11001,
 			["counter"] = 73,
-		}, -- [193]
+		}, -- [192]
 		{
 			["message"] = "Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
 			["time"] = "2023/12/15 11:10:59",
 			["session"] = 11014,
 			["counter"] = 1,
-		}, -- [194]
+		}, -- [193]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
 			["time"] = "2023/12/15 11:10:59",
 			["session"] = 11014,
 			["counter"] = 1,
-		}, -- [195]
+		}, -- [194]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:14: attempt to call field '?' (a nil value)",
 			["time"] = "2023/12/15 11:14:36",
@@ -1502,7 +1494,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:14: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:13>",
 			["session"] = 11017,
 			["counter"] = 1,
-		}, -- [196]
+		}, -- [195]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1510,7 +1502,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Addons/nMainBar.lua\"]:80: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:79>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 11017,
 			["counter"] = 4,
-		}, -- [197]
+		}, -- [196]
 		{
 			["message"] = "Interface/AddOns/ClassicCastbars/Core/Frames.lua:5: attempt to index local 'addon' (a nil value)",
 			["time"] = "2023/12/15 11:15:08",
@@ -1518,7 +1510,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:5: in main chunk",
 			["session"] = 11018,
 			["counter"] = 1,
-		}, -- [198]
+		}, -- [197]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:664: attempt to index local 'cast' (a nil value)",
 			["time"] = "2023/12/15 11:21:49",
@@ -1526,7 +1518,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:664: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:657>",
 			["session"] = 11022,
 			["counter"] = 1054,
-		}, -- [199]
+		}, -- [198]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:662: attempt to index field '_data' (a nil value)",
 			["time"] = "2023/12/15 11:24:24",
@@ -1534,6 +1526,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:662: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:657>",
 			["session"] = 11023,
 			["counter"] = 598,
+		}, -- [199]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
+			["time"] = "2023/09/29 22:27:18",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
+			["session"] = 11030,
+			["counter"] = 19,
 		}, -- [200]
 	},
 }

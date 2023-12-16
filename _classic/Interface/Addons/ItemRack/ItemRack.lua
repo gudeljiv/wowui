@@ -2043,7 +2043,7 @@ function ItemRack.SetSetBindings()
 				SetBindingClick(ItemRackUser.Sets[i].key,buttonName)
 			end
 		end
-		SaveBindings(GetCurrentBindingSet())
+		SaveBindings(GetCurrentBindingSet() or 1)
 	else
 		ItemRack.Print("Cannot save hotkeys in combat, please try again out of combat!")
 	end
