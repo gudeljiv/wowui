@@ -25,6 +25,7 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 end
 if (C_Engraving and C_Engraving.IsEngravingEnabled()) then
 	NWB.isSOD = true;
+	NWB_isSOD = true; --External use.
 end
 --Temporary until actual launch.
 --if (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
@@ -56,6 +57,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local LDB = LibStub:GetLibrary("LibDataBroker-1.1");
 NWB.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaWorldBuffs", "Version") or 9999;
+NWB.version = tonumber(version);
 NWB.latestRemoteVersion = version;
 NWB.prefixColor = "|cFFFF6900";
 local terokOffset = 2.7507;
@@ -100,7 +102,7 @@ function NWB:OnInitialize()
 	self:createShatDailyMarkers();
 	self:getDmfData();
 	self:createDmfMarkers();
-	self:createAshenvaleMarkers();
+	self:loadAshenvale();
 	self:doResetTimerData();
 	self:resetSongFlowers();
 	self:resetLayerData();
@@ -123,6 +125,7 @@ function NWB:OnInitialize()
 		self:createTerokkarMarkers();
 		self:populateDailyData();
 	end
+	self:checkNewVersion();
 end
 
 --Set font used in fontstrings on frames.
@@ -2055,6 +2058,8 @@ function NWB:combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199) then
 				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
+				NWB:playSound("soundsBlackfathomBoon", "bob");
+				NWB:print(L["blackfathomBoomBuffDropped"]);
 			end
 		elseif (destName == UnitName("player") and spellName == L["Ashenvale Rallying Cry"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
@@ -2840,7 +2845,7 @@ function NWB:trackNewBuff(spellName, type, npcID)
 		NWB:print(string.format(L["dmfBuffDropped"], spellName));
 		NWB:addDmfCooldown();
 	end
-	NWB:debug(GetServerTime(), "Tracking new buff", type, spellName);
+	--NWB:debug(GetServerTime(), "Tracking new buff", type, spellName);
 	NWB:recalcBuffListFrame();
 end
 
@@ -5187,8 +5192,9 @@ function NWB:updateMinimapButton(tooltip, frame)
 				end
 			end]]
 			tooltip:AddLine("|cff00ff00[Layer " .. count .. "]|r  |cFF989898(zone " .. k .. ") " .. wintergraspTexture .. buffTextures .. "|r");
-			if (NWB.isClassic or (not NWB.db.global.hideMinimapBuffTimers
-					and not (NWB.db.global.disableBuffTimersMaxBuffLevel and UnitLevel("player") > 64))) then
+			if ((NWB.isClassic or (not NWB.db.global.hideMinimapBuffTimers
+					and not (NWB.db.global.disableBuffTimersMaxBuffLevel and UnitLevel("player") > 64)))
+					and not (NWB.isSOD and UnitLevel("player") < NWB.db.global.disableOnlyNefRendBelowMaxLevelNum)) then
 				if (NWB.faction == "Horde" or NWB.db.global.allianceEnableRend) then
 					if (v.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
 						msg = msg .. L["rend"] .. ": " .. NWB:getTimeString(NWB.db.global.rendRespawnTime - (GetServerTime() - v.rendTimer), true) .. ".";
@@ -7771,7 +7777,8 @@ function NWB:refreshWorldbuffMarkers()
 			for k, v in pairs(NWB.worldBuffMapMarkerTypes) do
 				--Change position to bottom corner of map so they can be stacked on top of each other for layered realms.
 				NWB.dragonLibPins:RemoveWorldMapIcon(k .. layer .. "NWBWorldMap", _G[k .. "NWBWorldMap"]);
-				if (NWB.db.global.showWorldMapMarkers and _G[k .. layer .. "NWBWorldMap"]) then
+				if (NWB.db.global.showWorldMapMarkers and _G[k .. layer .. "NWBWorldMap"]
+					and not (NWB.isSOD and UnitLevel("player") < NWB.db.global.disableOnlyNefRendBelowMaxLevelNum)) then
 					if (NWB.faction == "Horde") then
 						if (mapID == 1413) then
 							--If barrens the org coord offset is too far right so only rend shows.
@@ -7823,7 +7830,8 @@ function NWB:refreshWorldbuffMarkers()
 		if (not foundLayers) then
 			for k, v in pairs(NWB.worldBuffMapMarkerTypes) do
 				NWB.dragonLibPins:RemoveWorldMapIcon(k .. "NWBWorldMap", _G[k .. "NWBWorldMap"]);
-				if (NWB.db.global.showWorldMapMarkers and _G[k .. "NWBWorldMap"]) then
+				if (NWB.db.global.showWorldMapMarkers and _G[k .. "NWBWorldMap"]
+						and not (NWB.isSOD and UnitLevel("player") < NWB.db.global.disableOnlyNefRendBelowMaxLevelNum)) then
 					if (NWB.faction == "Horde") then
 						if (mapID == 1413) then
 							NWB.dragonLibPins:AddWorldMapIconMap(k .. "NWBWorldMap", _G[k .. "NWBWorldMap"], v.mapID,
@@ -7861,7 +7869,8 @@ function NWB:refreshWorldbuffMarkers()
 	else
 		for k, v in pairs(NWB.worldBuffMapMarkerTypes) do
 			NWB.dragonLibPins:RemoveWorldMapIcon(k .. "NWBWorldMap", _G[k .. "NWBWorldMap"]);
-			if (NWB.db.global.showWorldMapMarkers and _G[k .. "NWBWorldMap"]) then
+			if (NWB.db.global.showWorldMapMarkers and _G[k .. "NWBWorldMap"]
+					and not (NWB.isSOD and UnitLevel("player") < NWB.db.global.disableOnlyNefRendBelowMaxLevelNum)) then
 				if (NWB.faction == "Horde") then
 					NWB.dragonLibPins:AddWorldMapIconMap(k .. "NWBWorldMap", _G[k .. "NWBWorldMap"], v.mapID,
 							(v.x  + 22) / 100, (v.y + 9) / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
@@ -8977,7 +8986,7 @@ function NWB:recalcBuffListFrame()
 	local maxWidth = 0;
 	local printRealm;
 	for k, v in NWB:pairsByKeys(NWB.db.global) do --Iterate realms.
-		if (type(v) == "table" and k ~= "minimapIcon") then --The only tables in db.global are realm names.
+		if (type(v) == "table" and k ~= "minimapIcon" and k ~= "versions") then --The only tables in db.global are realm names.
 			local realm = k;
 			for k, v in NWB:pairsByKeys(v) do --Iterate factions.
 				local faction = k;
@@ -9578,7 +9587,7 @@ end
 function NWB:resetBuffData()
 	for k, v in NWB:pairsByKeys(NWB.db.global) do --Iterate realms.
 		local msg = "";
-		if (type(v) == "table" and k ~= "minimapIcon") then --The only tables in db.global are realm names.
+		if (type(v) == "table" and k ~= "minimapIcon" and k ~= "versions") then --The only tables in db.global are realm names.
 			local realm = k;
 			for k, v in NWB:pairsByKeys(v) do --Iterate factions.
 				local f = k;
@@ -9607,7 +9616,7 @@ function NWB:removeCharsBelowLevel()
 	local count = 0;
 	for realm, v in NWB:pairsByKeys(NWB.db.global) do --Iterate realms.
 		local msg = "";
-		if (type(v) == "table" and realm ~= "minimapIcon") then --The only tables in db.global are realm names.
+		if (type(v) == "table" and realm ~= "minimapIcon" and realm ~= "versions") then --The only tables in db.global are realm names.
 			for k, v in NWB:pairsByKeys(v) do --Iterate factions.
 				local f = k;
 				if (v.myChars) then
@@ -9648,7 +9657,7 @@ function NWB:removeSingleChar(name)
 	local found;
 	for realm, v in NWB:pairsByKeys(NWB.db.global) do --Iterate realms.
 		local msg = "";
-		if (type(v) == "table" and realm ~= "minimapIcon") then --The only tables in db.global are realm names.
+		if (type(v) == "table" and realm ~= "minimapIcon" and realm ~= "versions") then --The only tables in db.global are realm names.
 			for k, v in NWB:pairsByKeys(v) do --Iterate factions.
 				local f = k;
 				if (v.myChars) then

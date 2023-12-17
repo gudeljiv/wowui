@@ -486,6 +486,13 @@ tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8799}) -- The Hero of the Day
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 6964}) -- The Reason for the Season
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8762}) -- Metzen the Reindeer
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8746}) -- Metzen the Reindeer
+-- New SoD quests
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79482}) -- Stolen Winter Veil Treats
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79483}) -- Stolen Winter Veil Treats
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79484}) -- You're a Mean One...
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79485}) -- You're a Mean One...
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79492}) -- Metzen the Reindeer
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 79495}) -- Metzen the Reindeer
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8744, "25/12", "2/1"}) -- A Carefully Wrapped Present
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8767, "25/12", "2/1"}) -- A Gently Shaken Gift
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 8768, "25/12", "2/1"}) -- A Gaily Wrapped Present
@@ -883,6 +890,8 @@ tinsert(QuestieEvent.eventQuests, {"Midsummer", 11971}) -- The Spinner of Summer
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 12012}) -- Inform the Elder
 
 tinsert(QuestieEvent.eventQuests, {"Winter Veil", 11528, "25/12", "2/1"}) -- A Winter Veil Gift
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 13203, "25/12", "2/1"}) -- A Winter Veil Gift
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 13966, "25/12", "2/1"}) -- A Winter Veil Gift
 
 --- Wotlk event quests
 

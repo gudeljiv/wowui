@@ -3050,7 +3050,7 @@ end
 
 function NWB:resetOldLockouts()
 	for realm, realmData in pairs(NWB.db.global) do
-		if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "data") then
+		if (type(realmData) == "table" and realmData ~= "minimapIcon" and realmData ~= "versions" and realmData ~= "data") then
 			for faction, factionData in pairs(realmData) do
 				if (type(factionData) == "table") then
 					if (factionData.myChars) then

@@ -88,7 +88,7 @@ function NWB:getAshenvaleResourceData()
 	end
 	if (NWB:isAshenvaleRunning()) then
 		--Sometimes the resource wdigets update while the game is running, not sure why, probably layer related.
-		NWB:debug("Widget update while game is running.")
+		--NWB:debug("Widget update while game is running.")
 		return;
 	end
 	if (GetTime() - lastWinner < 2) then
@@ -99,11 +99,11 @@ function NWB:getAshenvaleResourceData()
 	local alliance = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5360);
 	local horde = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5361);
 	if (not alliance or not horde) then
-		NWB:debug("missing widget");
+		--NWB:debug("missing widget");
 		return;
 	end
 	if (not UIWidgetTopCenterContainerFrame:IsShown()) then
-		NWB:debug("missing widget2");
+		--NWB:debug("missing widget2");
 		return;
 	end
 	--Make sure the child being shown is a matching widget, incase the state is ever set wrong.
@@ -115,11 +115,15 @@ function NWB:getAshenvaleResourceData()
 		end
 	end
 	if (not child) then
-		NWB:debug("missing child frame");
+		--NWB:debug("missing child frame");
 		return;
 	end
 	local alliancePercent = string.match(alliance.text, "(%d+)");
 	local hordePercent = string.match(horde.text, "(%d+)");
+	if (alliancePercent == "0" or hordePercent == "0") then
+		--Just ignore 0 updates, it seems to be messing things up with some players, probably something to do with match ending.
+		return;
+	end
 	if (alliancePercent and hordePercent and tonumber(alliancePercent) and tonumber(hordePercent)) then
 		NWB:receivedAshenvaleUpdate(alliancePercent .. "_" .. hordePercent, GetServerTime(), "zone");
 	end
@@ -145,11 +149,11 @@ function NWB:getAshenvaleScoreData()
 	local alliance = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5367);
 	local horde = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(5368);
 	if (not alliance or not horde) then
-		NWB:debug("missing widget");
+		--NWB:debug("missing widget");
 		return;
 	end
 	if (not UIWidgetTopCenterContainerFrame:IsShown()) then
-		NWB:debug("missing widget2");
+		--NWB:debug("missing widget2");
 		return;
 	end
 	--Make sure the child being shown is a matching widget, incase the state is ever set wrong.
@@ -161,7 +165,7 @@ function NWB:getAshenvaleScoreData()
 		end
 	end
 	if (not child) then
-		NWB:debug("missing child frame");
+		--NWB:debug("missing child frame");
 		return;
 	end
 	local allianceScore = string.match(alliance.text, "(%d+)");
@@ -174,13 +178,17 @@ function NWB:getAshenvaleScoreData()
 end
 
 function NWB:receivedAshenvaleUpdate(data, timestamp, distribution, sender)
-	if (distribution == "zone") then
-		NWB:debug("Received ashenvale data:", data, timestamp, distribution, sender);
-	end
+	--if (distribution == "zone") then
+		--NWB:debug("Received ashenvale data:", data, timestamp, distribution, sender);
+	--end
 	if (data and timestamp and distribution) then
 		if ((not NWB.data.ashenvaleTime or timestamp > NWB.data.ashenvaleTime)
 				and (timestamp < GetServerTime() + 60)) then
 			local newAlliance, newHorde = strsplit("_", data, 2);
+			if (newAlliance == "0" or newHorde == "0") then
+				--Just ignore 0 updates, it seems to be messing things up with some players, probably something to do with match ending.
+				return;
+			end
 			local oldAlliance, oldHorde = NWB:getAshenvalePercent();
 			if (not NWB.data.ashenvaleTime or GetServerTime() - NWB.data.ashenvaleTime > 1200) then
 				oldAlliance, oldHorde = 0, 0;
@@ -236,9 +244,33 @@ function NWB:receivedAshenvaleUpdate(data, timestamp, distribution, sender)
 	end
 end
 
+--Data is within the last 5 mins.
 function NWB:isAshenvaleTimerValid()
 	if (NWB.data.ashenvale and NWB.data.ashenvaleTime and NWB.data.ashenvaleTime > GetServerTime() - 300) then
 		return true;
+	end
+end
+
+--Data is not within the last 5 mins but still could be shown with a warning.
+function NWB:isAshenvaleTimerExpired()
+	if (NWB:isAshenvaleTimerValid()) then
+		return;
+	end
+	if (NWB.data.ashenvale and NWB.data.ashenvaleTime and NWB.data.ashenvaleTime > GetServerTime() - 1800) then
+		--Within 30mins.
+		return true;
+	end
+end
+
+--Get data expired warning string.
+function NWB:getAshenvaleTimerExpiredString(short)
+	if (not NWB.data.ashenvale or not NWB.data.ashenvaleTime) then
+		return "";
+	end
+	if (short) then
+		return "|cFFFF6900Old Data (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago)|r";
+	else
+		return "|cFFFF6900Ashenvale data is old (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago).|r";
 	end
 end
 
@@ -251,6 +283,7 @@ function NWB:ashenvaleEventStartsSoon(alliancePercent, hordePercent, timestamp)
 			if (NWB.db.global.chat10) then
 				NWB:print(msg, nil, "[NWB]");
 			end
+			NWB:playSound("soundsAshenvaleStartsSoon", "ashenvale");
 			--if (NWB.db.global.middle10) then
 			--	NWB:middleScreenMsg("middle30", msg, nil, 5);
 			--end
@@ -295,6 +328,9 @@ function NWB:addAshenvaleMinimapString(tooltip)
 	if (NWB:isAshenvaleTimerValid()) then
 		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t " .. alliance .. "%  Alliance";
 		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t " .. horde .. "%  Horde";
+	elseif (NWB:isAshenvaleTimerExpired()) then
+		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t |cFFFF6900" .. alliance .. "%|r  Alliance";
+		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t |cFFFF6900" .. horde .. "%|r  Horde";
 	else
 		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t No data yet.";
 		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t No data yet.";
@@ -316,6 +352,9 @@ function NWB:addAshenvaleMinimapString(tooltip)
 	end
 	tooltip:AddLine(allianceString);
 	tooltip:AddLine(hordeString);
+	if (NWB:isAshenvaleTimerExpired()) then
+		tooltip:AddLine("|cFFFF6900Warning:|r " .. NWB:getAshenvaleTimerExpiredString());
+	end
 	tooltip:AddLine(" ");
 	if (not tooltip.NWBSeparator3) then
 	    tooltip.NWBSeparator3 = tooltip:CreateTexture(nil, "BORDER");
@@ -343,13 +382,20 @@ function NWB:updateAshenvaleMarkers(type)
 		local alliance, horde = NWB:getAshenvalePercent();
 		 _G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. alliance .. "%");
 		 _G["HordeNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. horde .. "%");
+		 _G["AllianceNWBAshenvaleMap"].fsBottom:SetText("");
+	elseif (NWB:isAshenvaleTimerExpired()) then
+		local alliance, horde = NWB:getAshenvalePercent();
+		 _G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFF6900" .. alliance .. "%");
+		 _G["HordeNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFF6900" .. horde .. "%");
+		 _G["AllianceNWBAshenvaleMap"].fsBottom:SetText(NWB:getAshenvaleTimerExpiredString());
 	else
 		 _G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("---");
 		 _G["HordeNWBAshenvaleMap"].timerFrame.fs:SetText("---");
+		 _G["AllianceNWBAshenvaleMap"].fsBottom:SetText("");
 	end
 end
 
-function NWB:createAshenvaleMarkers()
+local function createAshenvaleMarkers()
 	if (not ashenvaleMapMarkerTypes) then
 		return;
 	end
@@ -377,6 +423,9 @@ function NWB:createAshenvaleMarker(type, data)
 		obj.fsTitle:SetPoint("TOP", 28, 22);
 		obj.fsTitle:SetFont("Fonts\\FRIZQT__.ttf", 14, "OUTLINE");
 		--obj.fsTitle:SetFontObject(NumberFont_Outline_Med);
+		obj.fsBottom = obj:CreateFontString(type .. "NWBAshenvaleBuffCmdFSBottom", "ARTWORK");
+		obj.fsBottom:SetPoint("BOTTOM", 28, -45);
+		obj.fsBottom:SetFont("Fonts\\FRIZQT__.ttf", 14, "OUTLINE");
 		--Timer frame that sits above the icon when an active timer is found.
 		obj.timerFrame = CreateFrame("Frame", type .. "AshenvaleTimerFrame", obj, "TooltipBorderedFrameTemplate");
 		obj.timerFrame:SetPoint("CENTER", obj, "CENTER",  0, -22);
@@ -446,16 +495,22 @@ function NWB:refreshAshenvaleMarkers(updateOnly)
 			["Alliance"] = {x = 15, y = 87, mapID = 1454, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 20, y = 87, mapID = 1454, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
+		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("BOTTOM", 28, -45);
 	elseif (NWB.faction == "Alliance" and WorldMapFrame and WorldMapFrame:GetMapID() == 1453) then
 		ashenvaleMapMarkerTypes = {
 			["Alliance"] = {x = 12, y = 87, mapID = 1453, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 17, y = 87, mapID = 1453, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
+		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("BOTTOM", 28, -45);
 	else
 		ashenvaleMapMarkerTypes = {
 			["Alliance"] = {x = 90, y = 90, mapID = 1440, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 95, y = 90, mapID = 1440, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
+		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("TOPRIGHT", _G["AllianceNWBAshenvaleMap"], "TOPRIGHT", 70, -50);
 	end
 	if (WorldMapFrame and hookWorldMap) then
 		hooksecurefunc(WorldMapFrame, "OnMapChanged", function()
@@ -479,4 +534,128 @@ function NWB:refreshAshenvaleMarkers(updateOnly)
 	if (not updateOnly) then
 		NWB:updateWorldbuffMarkersScale();
 	end
+end
+
+local ashnevaleOverlay;
+local function updateAshnevaleOverlay()
+	if (NWB:isAshenvaleTimerValid()) then
+		local alliance, horde = NWB:getAshenvalePercent();
+		 ashnevaleOverlay.fsBottomLeft:SetText("|cFFFFFF00" .. alliance .. "%");
+		 ashnevaleOverlay.fsBottomRight:SetText("|cFFFFFF00" .. horde .. "%");
+		 ashnevaleOverlay.fsBottom:SetText("");
+	elseif (NWB:isAshenvaleTimerExpired()) then
+		local alliance, horde = NWB:getAshenvalePercent();
+		 ashnevaleOverlay.fsBottomLeft:SetText("|cFFFF6900" .. alliance .. "%");
+		 ashnevaleOverlay.fsBottomRight:SetText("|cFFFF6900" .. horde .. "%");
+		 ashnevaleOverlay.fsBottom:SetText(NWB:getAshenvaleTimerExpiredString(true));
+	else
+		ashnevaleOverlay.fsBottomLeft:SetText("--");
+		 ashnevaleOverlay.fsBottomRight:SetText("--");
+		 ashnevaleOverlay.fsBottom:SetText("");
+	end
+end
+
+local function loadAshenvaleOverlay()
+	if (not ashnevaleOverlay) then
+		local frame = CreateFrame("Frame", "NWB_AshenvaleOverlay", UIParent);
+		frame:SetFrameLevel(8);
+		frame.background = CreateFrame("Frame", "NWB_AshenvaleOverlayBackground", frame, "BackdropTemplate");	
+		frame.background:SetBackdrop({
+			bgFile = "Interface\\Buttons\\WHITE8x8",
+		});
+		frame.background:SetBackdropColor(0, 0, 0);
+		frame.background:SetAlpha(0);
+		frame.background:SetAllPoints();
+		frame.background:SetFrameLevel(7);
+		frame:SetMovable(true);
+		frame:EnableMouse(true);
+		frame:SetPoint("CENTER", UIParent, 0, 100);
+		frame:SetSize(80, 75);
+		frame:SetScript("OnMouseDown", function(self, button)
+			if (button == "LeftButton" and not self.isMoving) then
+				self:StartMoving();
+				self.isMoving = true;
+				if (notSpecialFrames) then
+					self:SetUserPlaced(false);
+				end
+			end
+		end)
+		frame:SetScript("OnMouseUp", function(self, button)
+			if (button == "LeftButton" and self.isMoving) then
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+			end
+		end)
+		frame:SetScript("OnHide", function(self)
+			if (self.isMoving) then
+				self:StopMovingOrSizing();
+				self.isMoving = false;
+			end
+		end)
+		frame.lastUpdate = 0;
+		frame:SetScript("OnUpdate", function(self)
+			--Update throddle.
+			if (GetTime() - frame.lastUpdate > 1) then
+				frame.lastUpdate = GetTime();
+				updateAshnevaleOverlay();
+			end
+		end)
+		frame:SetScript("OnEnter", function(self)
+			frame.background:SetAlpha(0.5);
+		end);
+		frame:SetScript("OnLeave", function(self)
+			frame.background:SetAlpha(0);
+		end);
+		frame:SetFrameStrata("HIGH");
+		frame:SetClampedToScreen(true);
+		frame.fsTitle = frame:CreateFontString("NWB_AshenvaleOverlayFSTitle", "ARTWORK");
+		frame.fsTitle:SetPoint("CENTER", 0, 23);
+		frame.fsTitle:SetFont("Fonts\\FRIZQT__.ttf", 13, "OUTLINE");
+		frame.fsTitle:SetText("|cFFFFFF00Ashenvale");
+		frame.fsBottom = frame:CreateFontString("NWB_AshenvaleOverlayFSBottom", "ARTWORK");
+		frame.fsBottom:SetPoint("CENTER", 0, -32);
+		frame.fsBottom:SetFont("Fonts\\FRIZQT__.ttf", 8, "OUTLINE");
+		frame.fsBottomLeft = frame:CreateFontString("NWB_AshenvaleOverlayFSBottomLeft", "ARTWORK");
+		frame.fsBottomLeft:SetPoint("CENTER", -18, -18);
+		frame.fsBottomLeft:SetFont("Fonts\\FRIZQT__.ttf", 13, "OUTLINE");
+		frame.fsBottomRight = frame:CreateFontString("NWB_AshenvaleOverlayFSBottomRight", "ARTWORK");
+		frame.fsBottomRight:SetPoint("CENTER", 23, -18);
+		frame.fsBottomRight:SetFont("Fonts\\FRIZQT__.ttf", 13, "OUTLINE");
+		frame.textureLeft = frame:CreateTexture(nil, "ARTWORK");
+		frame.textureLeft:SetTexture("Interface\\worldstateframe\\alliancetower.blp");
+		frame.textureLeft:SetPoint("CENTER", -14, -6);
+		frame.textureLeft:SetSize(42, 42);
+		frame.textureRight = frame:CreateTexture(nil, "ARTWORK");
+		frame.textureRight:SetTexture("Interface\\worldstateframe\\hordetower.blp");
+		frame.textureRight:SetPoint("CENTER", 26, -6);
+		frame.textureRight:SetSize(42, 42);
+		frame:Hide();
+		ashnevaleOverlay = frame;
+	end
+	NWB:setAshenvaleOverlayState();
+end
+
+function NWB:setAshenvaleOverlayState()
+	if (not ashnevaleOverlay) then
+		return;
+	end
+	if (NWB.db.global.showAshenvaleOverlay) then
+		ashnevaleOverlay:Show();
+	else
+		ashnevaleOverlay:Hide();
+	end
+	if (NWB.db.global.lockAshenvaleOverlay) then
+		ashnevaleOverlay:EnableMouse(false);
+	else
+		ashnevaleOverlay:EnableMouse(true);
+	end
+	ashnevaleOverlay:SetScale(NWB.db.global.ashenvaleOverlayScale);
+end
+
+function NWB:loadAshenvale()
+	if (not NWB.isSOD) then
+		return;
+	end
+	createAshenvaleMarkers();
+	loadAshenvaleOverlay();
 end

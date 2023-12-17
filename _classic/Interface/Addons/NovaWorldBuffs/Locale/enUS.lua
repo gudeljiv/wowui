@@ -857,3 +857,31 @@ L["ashenvaleWarning"] = "Ashenvale PvP event starting soon (Alliance %s%%) (Hord
 
 L["Boon of Blackfathom"] = "Boon of Blackfathom";
 L["Ashenvale Rallying Cry"] = "Ashenvale Rallying Cry";
+
+L["sodHeaderText"] = "Season of Discovery Options";
+
+L["disableOnlyNefRendBelowMaxLevelTitle"] = "Disable Ony/Nef/Rend Showing";
+L["disableOnlyNefRendBelowMaxLevelDesc"] = "Disable Ony/Nef/Rend Showing below a certain level?";
+
+L["disableOnlyNefRendBelowMaxLevelNumTitle"] = "Ony/Nef/Rend Min Level";
+L["disableOnlyNefRendBelowMaxLevelNumDesc"] = "Below which level should we hide Ony/Nef/Rend icons from the city map and minimap button tooltip?";
+
+L["soundsBlackfathomBoonTitle"] = "Blackfathom Boom Sound";
+L["soundsBlackfathomBoonDesc"] = "Play a sound when Blackfathom Boon buff is gained?";
+
+L["soundsAshenvaleStartsSoonTitle"] = "Ashenvale Soon Sound";
+L["soundsAshenvaleStartsSoonDesc"] = "Play a sound when Ashenvale is about to start?";
+
+L["blackfathomBoomBuffDropped"] = "Blackfathom Boon buff has dropped.";
+
+L["showAshenvaleOverlayTitle"] = "Ashenvale Overlay";
+L["showAshenvaleOverlayDesc"] = "Show a movable Ashenvale resource overlay on your UI permanently?";
+
+L["lockAshenvaleOverlayTitle"] = "Lock Overlay";
+L["lockAshenvaleOverlayDesc"] = "Lock the Ashenvale overlay so it ignores your mouseover.";
+
+L["ashenvaleOverlayScaleTitle"] = "Ashenvale Overlay Scale";
+L["ashenvaleOverlayScaleDesc"] = "Set the size of the Ashenvale Overlay.";
+
+L["ashenvaleOverlayText"] = "|cFFFFFF00-Overlay to show Ashenvale Resources on your UI always-";
+L["layersNoteText"] = "|cFFFF6900Note about Layers on SoD:|r |cFF9CD6DENWB is capped at tracking 10 layers max, this is so it's data size doesn't get too big to share amongst players easily. On most SoD realms with huge population right now there's more than 10 layers so if it is not showing what layer you're on then the reason is because you're not on one of the 10 recorded layers. It will likely go back down below 10 once launch hype fades a bit but until then it may be unreliable, sorry about that.|r";
