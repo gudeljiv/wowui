@@ -691,7 +691,7 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 		return data;
 	end
 	if (type == "ashenvale") then
-		if (NWB:isAshenvaleTimerValid()) then
+		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
 			data.ashenvale = NWB.data.ashenvale;
 			data.ashenvaleTime = NWB.data.ashenvaleTime;
 		end
@@ -779,7 +779,7 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 			end
 		end
 		if (NWB.isSOD) then
-			if (NWB:isAshenvaleTimerValid()) then
+			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
 				data.ashenvale = NWB.data.ashenvale;
 				data.ashenvaleTime = NWB.data.ashenvaleTime;
 			end
@@ -839,7 +839,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	end]]
 	if (type == "ashenvale") then
 		--Only send ashenvale data.
-		if (NWB:isAshenvaleTimerValid()) then
+		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
 			data.ashenvale = NWB.data.ashenvale;
 			data.ashenvaleTime = NWB.data.ashenvaleTime;
 		end
@@ -1099,7 +1099,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 			end
 		end
 		if (NWB.isSOD) then
-			if (NWB:isAshenvaleTimerValid()) then
+			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
 				data.ashenvale = NWB.data.ashenvale;
 				data.ashenvaleTime = NWB.data.ashenvaleTime;
 			end
@@ -1855,7 +1855,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 				end
 			elseif (v ~= nil and k ~= "layers") then
 				if (not NWB.validKeys[k] and type(v) ~= "table") then
-					NWB:debug("Invalid key received:", k, v);
+					NWB:debug("Invalid key received3:", k, v);
 				else
 					NWB.data[k] = v;
 					if (type(v) == "table" and k == sender and string.match(k, "%-") and next(v)) then

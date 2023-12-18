@@ -27,10 +27,20 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
         },
+        [77571] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410061, nil, 208414}}},
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+            [questKeys.requiredSpell] = -410061,
+        },
         [77617] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410002, nil, 205420}}},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
             [questKeys.requiredSpell] = -410002,
+        },
+        [77648] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410061, nil, 208414}}},
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+            [questKeys.requiredSpell] = -410061,
         },
         [77649] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
@@ -285,44 +295,44 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [79482] = {
-            [questKeys.startedBy] = {{13433}},
-            [questKeys.startedBy] = {{13636}},
+            [questKeys.startedBy] = {{216902}},
+            [questKeys.startedBy] = {{216915}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79483] = {
-            [questKeys.startedBy] = {{13418}},
-            [questKeys.startedBy] = {{13636}},
+            [questKeys.startedBy] = {{216924}},
+            [questKeys.startedBy] = {{216915}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79484] = {
-            [questKeys.startedBy] = {{13636}},
-            [questKeys.startedBy] = {{13433}},
+            [questKeys.startedBy] = {{216915}},
+            [questKeys.startedBy] = {{216902}},
             [questKeys.objectives] = {nil,nil,{{17662}}},
             [questKeys.preQuestSingle] = {79482},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79485] = {
-            [questKeys.startedBy] = {{13636}},
-            [questKeys.startedBy] = {{13418}},
+            [questKeys.startedBy] = {{216915}},
+            [questKeys.startedBy] = {{216924}},
             [questKeys.objectives] = {nil,nil,{{17662}}},
             [questKeys.preQuestSingle] = {79483},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79492] = {
-            [questKeys.startedBy] = {{13433}},
-            [questKeys.finishedBy] = {{13433}},
+            [questKeys.startedBy] = {{216902}},
+            [questKeys.finishedBy] = {{216902}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectives] = {{{15664,"Find Metzen the Reindeer and rescue him"}},nil,{{21211}}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79495] = {
-            [questKeys.startedBy] = {{13418}},
-            [questKeys.finishedBy] = {{13418}},
+            [questKeys.startedBy] = {{216924}},
+            [questKeys.finishedBy] = {{216924}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectives] = {{{15664,"Find Metzen the Reindeer and rescue him"}},nil,{{21211}}},
             [questKeys.questFlags] = questFlags.RAID,
@@ -976,6 +986,78 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -415996,
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
         },
+        [90054] = {
+            [questKeys.name] = "Living Seed",
+            [questKeys.startedBy] = {{206248}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 7,
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Loot 3 Glade Flower spread across the zone. Combine them to the Glade Crown, use it on the Wooden Effigy and defeat the Unleashed Nature Spirit Elite mob."},
+            [questKeys.requiredSpell] = -416050,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90055] = {
+            [questKeys.name] = "Living Seed",
+            [questKeys.startedBy] = {{206248}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 7,
+            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Loot 3 Prairie Flower spread across the zone. Combine them to the Prairie Crown, use it on the Wooden Effigy and defeat the Unleashed Nature Spirit Elite mob."},
+            [questKeys.requiredSpell] = -416050,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90056] = {
+            [questKeys.name] = "Starsurge",
+            [questKeys.startedBy] = {{212186}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Accept the offer from Grugimdern to receive a Mushroom. Then eat the Mushroom at the pond and speak with Vodyanoi."},
+            [questKeys.requiredSpell] = -424718,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90057] = {
+            [questKeys.name] = "Sunfire",
+            [questKeys.startedBy] = {nil,{404433}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 4,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Cast Moonfire on all three Lunar Stones to spawn the Lunar Chest."},
+            [questKeys.requiredSpell] = -416044,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90058] = {
+            [questKeys.name] = "Lifebloom",
+            [questKeys.startedBy] = {{204827}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 4,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Summon the Adventurer's Spirit with the help of a friend and defeat it."},
+            [questKeys.requiredSpell] = -410033,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90059] = {
+            [questKeys.name] = "Prayer of Mending",
+            [questKeys.startedBy] = {{204827}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 4,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Summon the Adventurer's Spirit with the help of a friend and defeat it."},
+            [questKeys.requiredSpell] = -402848,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
     }
 end
 
@@ -983,7 +1065,7 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
     local questKeys = QuestieDB.questKeys
     local raceIDs = QuestieDB.raceKeys
 
-    local objectFixesHorde = {
+    local questFixesHorde = {
         [78124] = {
             [questKeys.startedBy] = {{211022},{409496}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -1029,14 +1111,42 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Fury of the Land' and bring it to Owen Thadd in Undercity. After ten books you will receive the Icy Veins rune."},
         },
+        [78611] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [78612] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [78872] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
         [79097] = {
             [questKeys.startedBy] = {{211022},{407566}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Baxtan: On Destructive Magics' and bring it to Owen Thadd in Undercity. After ten books you will receive the Icy Veins rune."},
         },
+        [79100] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [79101] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [79102] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [79103] = {
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
     }
 
-    local objectFixesAlliance = {
+    local questFixesAlliance = {
         [78124] = {
             [questKeys.startedBy] = {{211033},{409496}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -1082,16 +1192,44 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Fury of the Land' and bring it to Garion Wendell in Stormwind. After ten books you will receive the Icy Veins rune."},
         },
+        [78611] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [78612] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [78872] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
         [79097] = {
             [questKeys.startedBy] = {{211033},{407566}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Baxtan: On Destructive Magics' and bring it to Garion Wendell in Stormwind. After ten books you will receive the Icy Veins rune."},
         },
+        [79100] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [79101] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [79102] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [79103] = {
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
     }
 
     if UnitFactionGroup("Player") == "Horde" then
-        return objectFixesHorde
+        return questFixesHorde
     else
-        return objectFixesAlliance
+        return questFixesAlliance
     end
 end

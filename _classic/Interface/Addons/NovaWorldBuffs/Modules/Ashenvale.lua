@@ -246,7 +246,7 @@ end
 
 --Data is within the last 5 mins.
 function NWB:isAshenvaleTimerValid()
-	if (NWB.data.ashenvale and NWB.data.ashenvaleTime and NWB.data.ashenvaleTime > GetServerTime() - 300) then
+	if (NWB.data.ashenvale and NWB.data.ashenvaleTime and NWB.data.ashenvaleTime > GetServerTime() - 600) then
 		return true;
 	end
 end

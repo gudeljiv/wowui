@@ -1,6 +1,9 @@
-VER 3 0000000001000014 " " "134400"
-#showtooltip
-/cast !Auto Shot
+VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
+#showtooltip Wing Clip
+/startattack
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
 VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -77,10 +80,8 @@ VER 3 000000000100000F " " "132328"
 /petfollow
 /petpassive
 END
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
-#showtooltip Wing Clip
+VER 3 0000000001000014 " " "134400"
+#showtooltip
 /startattack
-/cast Wing Clip
-/cast Wing Clip(Rank 2)
-/cast Wing Clip(Rank 1)
+/cast !Auto Shot
 END

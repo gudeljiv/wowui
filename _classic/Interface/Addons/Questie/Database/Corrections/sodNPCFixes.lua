@@ -21,6 +21,12 @@ function SeasonOfDiscovery:LoadNPCs()
         [202699] = { -- Baron Aquanis
             [npcKeys.spawns] = {[zoneIDs.BLACKFATHOM_DEEPS]={{-1,-1}}}
         },
+        [206248] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.TELDRASSIL] = {{66.8, 58}},
+                [zoneIDs.MULGORE] = {{37.4, 49.6}},
+            },
+        },
         [208275] = {
             [npcKeys.spawns] = {
                 [zoneIDs.DUROTAR] = {{58.6, 45.6}},
@@ -144,6 +150,27 @@ function SeasonOfDiscovery:LoadNPCs()
         [214101] = {
             [npcKeys.spawns] = {[zoneIDs.DARNASSUS] = {{59.8,56.4}}},
             [npcKeys.friendlyToFaction] = "A",
+        },
+        [216902] = {
+            [npcKeys.minLevel] = 30,
+            [npcKeys.maxLevel] = 30,
+            [npcKeys.spawns] = {[zoneIDs.IRONFORGE]={{33.7,67.23}}},
+            [npcKeys.zoneID] = zoneIDs.IRONFORGE,
+            [npcKeys.friendlyToFaction] = "AH",
+        },
+        [216915] = {
+            [npcKeys.minLevel] = 35,
+            [npcKeys.maxLevel] = 35,
+            [npcKeys.spawns] = {[zoneIDs.ALTERAC_MOUNTAINS]={{35.43,72.45}}},
+            [npcKeys.zoneID] = zoneIDs.ALTERAC_MOUNTAINS,
+            [npcKeys.friendlyToFaction] = "AH",
+        },
+        [216924] = {
+            [npcKeys.minLevel] = 30,
+            [npcKeys.maxLevel] = 30,
+            [npcKeys.spawns] = {[zoneIDs.ORGRIMMAR]={{53.3,66.47}}},
+            [npcKeys.zoneID] = zoneIDs.ORGRIMMAR,
+            [npcKeys.friendlyToFaction] = "AH",
         },
         [217707] = {
             [npcKeys.name] = "Felore Moonray",

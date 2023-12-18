@@ -13,17 +13,17 @@ GMMONEY = {
 			["GOLD"] = 403,
 			["CLASS"] = "SHAMAN",
 		},
-		["Dopesnare"] = {
-			["GOLD"] = 12586,
-			["CLASS"] = "HUNTER",
+		["Doperage"] = {
+			["GOLD"] = 92965,
+			["CLASS"] = "WARRIOR",
 		},
 		["Dopeclaw"] = {
 			["GOLD"] = 25922,
 			["CLASS"] = "DRUID",
 		},
-		["Doperage"] = {
-			["GOLD"] = 92965,
-			["CLASS"] = "WARRIOR",
+		["Dopesnare"] = {
+			["GOLD"] = 21868,
+			["CLASS"] = "HUNTER",
 		},
 	},
 	["Golemagg"] = {
@@ -47,9 +47,9 @@ GMMONEY = {
 			["GOLD"] = 4,
 			["CLASS"] = "WARRIOR",
 		},
-		["Vermina"] = {
-			["GOLD"] = 59137573,
-			["CLASS"] = "PALADIN",
+		["Tadibey"] = {
+			["GOLD"] = 763196,
+			["CLASS"] = "SHAMAN",
 		},
 		["Moolatz"] = {
 			["GOLD"] = 7980232,
@@ -59,17 +59,17 @@ GMMONEY = {
 			["GOLD"] = 96743,
 			["CLASS"] = "MAGE",
 		},
-		["Battitude"] = {
-			["GOLD"] = 998227,
-			["CLASS"] = "ROGUE",
+		["Vermina"] = {
+			["GOLD"] = 59137573,
+			["CLASS"] = "PALADIN",
 		},
 		["Miqa"] = {
 			["GOLD"] = 6472995,
 			["CLASS"] = "PRIEST",
 		},
-		["Tadibey"] = {
-			["GOLD"] = 763196,
-			["CLASS"] = "SHAMAN",
+		["Battitude"] = {
+			["GOLD"] = 998227,
+			["CLASS"] = "ROGUE",
 		},
 		["Vermin"] = {
 			["GOLD"] = 144333979,
@@ -77,12 +77,12 @@ GMMONEY = {
 		},
 	},
 	["Stitches"] = {
-		["Dopesnare"] = {
-			["GOLD"] = 104705,
-			["CLASS"] = "HUNTER",
+		["Vermins"] = {
+			["GOLD"] = 107135,
+			["CLASS"] = "WARRIOR",
 		},
-		["Dopesick"] = {
-			["GOLD"] = 114,
+		["Lonac"] = {
+			["GOLD"] = 74108,
 			["CLASS"] = "WARRIOR",
 		},
 		["Dopede"] = {
@@ -101,13 +101,13 @@ GMMONEY = {
 			["GOLD"] = 1678796,
 			["CLASS"] = "SHAMAN",
 		},
-		["Lonac"] = {
-			["GOLD"] = 74108,
+		["Dopesick"] = {
+			["GOLD"] = 114,
 			["CLASS"] = "WARRIOR",
 		},
-		["Vermins"] = {
-			["GOLD"] = 107135,
-			["CLASS"] = "WARRIOR",
+		["Dopesnare"] = {
+			["GOLD"] = 104705,
+			["CLASS"] = "HUNTER",
 		},
 	},
 	["Ashbringer"] = {
@@ -128,6 +128,6 @@ GMMONEY = {
 	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

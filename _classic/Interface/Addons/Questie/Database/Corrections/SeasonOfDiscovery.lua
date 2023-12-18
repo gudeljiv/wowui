@@ -10,19 +10,14 @@ local QuestieQuestBlacklist = QuestieLoader:ImportModule("QuestieQuestBlacklist"
 
 SeasonOfDiscovery.currentPhase = 1 -- TODO: Use API function which hopefully will come in the future
 
-local maxLevel = GetMaxPlayerLevel()
-if maxLevel == 25 then
-    SeasonOfDiscovery.currentPhase = 1
-elseif maxLevel == 40 then
-    SeasonOfDiscovery.currentPhase = 2
-elseif maxLevel == 50 then
-    SeasonOfDiscovery.currentPhase = 3
-elseif maxLevel == 60 and SeasonOfDiscovery.currentPhase == 1 then
-    SeasonOfDiscovery.currentPhase = 4
-end
+
 
 local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests in Season of Discovery
+    [77568] = true,
+    [77571] = true,
     [77617] = true,
+    [77648] = true,
+    [77649] = true,
     [77666] = true,
     [78089] = true,
     [78090] = true,
@@ -41,6 +36,7 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [78265] = true,
     [78266] = true,
     [78267] = true,
+    [78277] = true,
     [79091] = true,
     [79092] = true,
     [79093] = true,
@@ -107,6 +103,12 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [90051] = true, -- Just a Flesh Wound Horde
     [90052] = true, -- Mind Sear Alliance
     [90053] = true, -- Mind Sear Horde
+    [90054] = true, -- Living Seed Alliance
+    [90055] = true, -- Living Seed Horde
+    [90056] = true, -- Starsurge
+    [90057] = true, -- Sunfire
+    [90058] = true, -- Lifebloom
+    [90059] = true, -- Prayer of Mending
 }
 
 ---@param questId number
@@ -730,6 +732,24 @@ local questsToBlacklistBySoDPhase = {
 
 ---@return table<number, table<number, boolean>> @All quests that should be blacklisted separated by phase
 function QuestieQuestBlacklist:GetSoDQuestsToBlacklist()
+    -- "automatic" phase detection for the first few phases;
+    -- gets called slightly later into init because if GetMaxPlayerLevel() is called too
+    -- early after initial login (not reloads), the game returns 60 even in early phases
+    local maxLevel = GetMaxPlayerLevel()
+    local phaseChanged = true
+    if maxLevel == 25 then
+        SeasonOfDiscovery.currentPhase = 1
+    elseif maxLevel == 40 then
+        SeasonOfDiscovery.currentPhase = 2
+    elseif maxLevel == 50 then
+        SeasonOfDiscovery.currentPhase = 3
+    elseif maxLevel == 60 and SeasonOfDiscovery.currentPhase < 4 then
+        SeasonOfDiscovery.currentPhase = 4
+    else
+        phaseChanged = false
+        Questie:Debug(Questie.DEBUG_INFO, "[SeasonOfDiscovery] Automatic phase detection failed, phase remains as " .. tostring(SeasonOfDiscovery.currentPhase))
+    end
+    if phaseChanged == true then Questie:Debug(Questie.DEBUG_INFO, "[SeasonOfDiscovery] Phase automatically detected as " .. tostring(SeasonOfDiscovery.currentPhase)) end
     -- Even if the first phase technically has no quests to blacklist, we use this be able to temporarily blacklist quests in P1
     if SeasonOfDiscovery.currentPhase > 1 then
         for phase = 1, SeasonOfDiscovery.currentPhase do
