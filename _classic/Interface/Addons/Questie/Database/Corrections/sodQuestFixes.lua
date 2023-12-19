@@ -32,6 +32,18 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.DRUID,
             [questKeys.requiredSpell] = -410061,
         },
+        [77585] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
+            [questKeys.requiredRaces] = raceIDs.ORC,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+            [questKeys.requiredSpell] = -410094,
+        },
+        [77587] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
+            [questKeys.requiredRaces] = raceIDs.TROLL,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+            [questKeys.requiredSpell] = -410094,
+        },
         [77617] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410002, nil, 205420}}},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
@@ -46,6 +58,12 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
+        },
+        [77652] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
+            [questKeys.requiredRaces] = raceIDs.TAUREN,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+            [questKeys.requiredSpell] = -410094,
         },
         [77666] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403919, nil, 205230}}},
@@ -1057,6 +1075,18 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.objectivesText] = {"Summon the Adventurer's Spirit with the help of a friend and defeat it."},
             [questKeys.requiredSpell] = -402848,
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90060] = {
+            [questKeys.name] = "Ancestral Guidance",
+            [questKeys.startedBy] = {{204827}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 4,
+            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Summon the Adventurer's Spirit with the help of a friend and defeat it."},
+            [questKeys.requiredSpell] = -410099,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
     }
 end

@@ -15,11 +15,6 @@ VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast Hunter's Mark
 END
-VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
-#showtooltip Serpent Sting
-/cast !Auto Shot
-/cast Serpent Sting
-END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
 #showtooltip
 /cast Rapid Fire
@@ -35,10 +30,9 @@ VER 3 0000000001000006 " " "INV_Misc_QuestionMark"
 /cast Multi-Shot
 END
 VER 3 0000000001000007 " " "INV_Misc_QuestionMark"
-#showtooltip Arcane Shot
-/cast !Auto Shot
+#showtooltip 
 /startattack
-/cast Arcane Shot
+/use Hands Rune Ability
 END
 VER 3 0000000001000013 " " "134400"
 #showtooltip 

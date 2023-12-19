@@ -24,9 +24,9 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /use item:2287
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:5503
 /cast feed pet
-/use item:2287
+/use item:5503
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
@@ -37,8 +37,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run ECS_StatsFrame:ClearAllPoints()
-/run ECS_StatsFrame:SetPoint("TOPLEFT", PaperDollFrame, "TOPRIGHT", -25, -14)
+/run TomTomCrazyArrow:ClearAllPoints()
+/run TomTomCrazyArrow:SetPoint('BOTTOM', CustomContainer_Combat, 'TOP', 0, 40)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

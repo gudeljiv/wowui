@@ -63,7 +63,7 @@ ThreatClassic2DB = {
 					nil, -- [3]
 					0, -- [4]
 				},
-				["height"] = 140,
+				["height"] = 100,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -74,8 +74,8 @@ ThreatClassic2DB = {
 				["locked"] = true,
 			},
 			["bar"] = {
-				["count"] = 8,
-				["height"] = 15,
+				["count"] = 5,
+				["height"] = 16,
 				["padding"] = 2,
 				["texture"] = "xVerminClean",
 			},
