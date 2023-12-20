@@ -986,6 +986,7 @@ TellMeWhenDB = {
 							["ManaCheck"] = true,
 							["States"] = {
 								{
+									["Alpha"] = 0,
 								}, -- [1]
 								nil, -- [2]
 								{
@@ -1082,10 +1083,26 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["BarDisplay_BarGCD"] = true,
 							["Name"] = "Disengage",
+							["ManaCheck"] = true,
+							["ClockGCD"] = true,
+							["GUID"] = "TMW:icon:1b7_I0LR89Wq",
+							["States"] = {
+								{
+								}, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "LUA",
-									["Name"] = "xThreat() > 60 and xInRange(5,\"target\",\"max\")",
+									["Name"] = "xThreat() > 90 and xInRange(5,\"target\",\"max\")",
 								}, -- [1]
 								{
 									["Type"] = "GROUP2",
@@ -1106,18 +1123,6 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["ClockGCD"] = true,
-							["Enabled"] = true,
-							["States"] = {
-								{
-								}, -- [1]
-								nil, -- [2]
-								{
-								}, -- [3]
-								{
-								}, -- [4]
-							},
-							["GUID"] = "TMW:icon:1b7_I0LR89Wq",
 						}, -- [42]
 						{
 							["States"] = {

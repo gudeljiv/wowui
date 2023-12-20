@@ -91,10 +91,10 @@ RareScannerDB = {
 				["artID"] = {
 					1202, -- [1]
 				},
-				["foundTime"] = 1702916187,
-				["coordX"] = "4220",
+				["foundTime"] = 1703000353,
+				["coordX"] = "4200",
 				["atlasName"] = "VignetteKill",
-				["coordY"] = "2720",
+				["coordY"] = "2460",
 			},
 			[2754] = {
 				["mapID"] = 1418,
@@ -155,6 +155,16 @@ RareScannerDB = {
 				["coordX"] = "4620",
 				["atlasName"] = "VignetteKill",
 				["coordY"] = "4380",
+			},
+			[5841] = {
+				["mapID"] = 1413,
+				["artID"] = {
+					1202, -- [1]
+				},
+				["foundTime"] = 1703093533,
+				["coordX"] = "5520",
+				["atlasName"] = "VignetteKill",
+				["coordY"] = "3600",
 			},
 			[5826] = {
 				["mapID"] = 1411,
@@ -3937,13 +3947,13 @@ RareScannerDB = {
 				4, -- [5]
 				1, -- [6]
 			},
-			[3210] = {
-				"|cff1eff00|Hitem:3210::::::::26:::::::::|h[Brutal War Axe]|h|r", -- [1]
+			[15893] = {
+				"|cff1eff00|Hitem:15893::::::::16:::::::::|h[Prospector's Buckler]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_2HWEAPON", -- [3]
-				132408, -- [4]
-				2, -- [5]
-				1, -- [6]
+				"INVTYPE_SHIELD", -- [3]
+				134955, -- [4]
+				4, -- [5]
+				6, -- [6]
 			},
 			[7443] = {
 				"|cff1eff00|Hitem:7443::::::::33:::::::::|h[Sentinel Gloves]|h|r", -- [1]
@@ -6665,11 +6675,11 @@ RareScannerDB = {
 				4, -- [5]
 				3, -- [6]
 			},
-			[7439] = {
-				"|cff1eff00|Hitem:7439::::::::36:::::::::|h[Sentinel Breastplate]|h|r", -- [1]
-				2, -- [2]
-				"INVTYPE_CHEST", -- [3]
-				132719, -- [4]
+			[9755] = {
+				"|cffffffff|Hitem:9755::::::::13:::::::::|h[Gypsy Gloves]|h|r", -- [1]
+				1, -- [2]
+				"INVTYPE_HAND", -- [3]
+				132939, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},
@@ -6689,13 +6699,13 @@ RareScannerDB = {
 				2, -- [5]
 				0, -- [6]
 			},
-			[15893] = {
-				"|cff1eff00|Hitem:15893::::::::16:::::::::|h[Prospector's Buckler]|h|r", -- [1]
+			[3210] = {
+				"|cff1eff00|Hitem:3210::::::::26:::::::::|h[Brutal War Axe]|h|r", -- [1]
 				2, -- [2]
-				"INVTYPE_SHIELD", -- [3]
-				134955, -- [4]
-				4, -- [5]
-				6, -- [6]
+				"INVTYPE_2HWEAPON", -- [3]
+				132408, -- [4]
+				2, -- [5]
+				1, -- [6]
 			},
 			[14561] = {
 				"|cff1eff00|Hitem:14561::::::::14:::::::::|h[Prospector's Cuffs]|h|r", -- [1]
@@ -6705,11 +6715,11 @@ RareScannerDB = {
 				4, -- [5]
 				2, -- [6]
 			},
-			[9755] = {
-				"|cffffffff|Hitem:9755::::::::13:::::::::|h[Gypsy Gloves]|h|r", -- [1]
-				1, -- [2]
-				"INVTYPE_HAND", -- [3]
-				132939, -- [4]
+			[7439] = {
+				"|cff1eff00|Hitem:7439::::::::36:::::::::|h[Sentinel Breastplate]|h|r", -- [1]
+				2, -- [2]
+				"INVTYPE_CHEST", -- [3]
+				132719, -- [4]
 				4, -- [5]
 				2, -- [6]
 			},

@@ -585,7 +585,7 @@ AtlasLootClassicDB = {
 			[33841] = "honor:5130",
 			[44231] = "EmblemOfHeroism:200",
 			[35088] = "honor:9500",
-			[41290] = "EmblemOfHeroism:30",
+			[34129] = "honor:16650",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
 			[40714] = "EmblemOfHeroism:15",
@@ -605,14 +605,14 @@ AtlasLootClassicDB = {
 			[35024] = "honor:9500",
 			[34033] = "honor:4275",
 			[28813] = "honor:3800",
-			[40715] = "EmblemOfHeroism:15",
-			[35152] = "honor:7600",
+			[18839] = "honor:1",
+			[40267] = "EmblemOfValor:25",
 			[28861] = "honor:3800",
 			[33722] = "honor:8550",
 			[31962] = "honor:6650",
 			[28909] = "arcanerune:8",
 			[28925] = "honor:3800",
-			[45830] = "EmblemOfConquest:28",
+			[34577] = "honor:3990",
 			[32026] = "honor:6650",
 			[32042] = "honor:6650",
 			[32058] = "honor:6650",
@@ -620,7 +620,7 @@ AtlasLootClassicDB = {
 			[18871] = "honor:5000",
 			[42026] = "honor:16590",
 			[40683] = "EmblemOfHeroism:40",
-			[34577] = "honor:3990",
+			[45830] = "EmblemOfConquest:28",
 			[40747] = "EmblemOfValor:40",
 			[40779] = "EmblemOfHeroism:45",
 			[45838] = "EmblemOfConquest:28",
@@ -884,13 +884,13 @@ AtlasLootClassicDB = {
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
 			[31978] = "honor:3325",
-			[40267] = "EmblemOfValor:25",
-			[18839] = "honor:1",
+			[35152] = "honor:7600",
+			[40715] = "EmblemOfHeroism:15",
 			[42066] = "honor:33180",
 			[28605] = "honor:4750",
 			[33946] = "honor:3990",
 			[35001] = "honor:7600",
-			[34129] = "honor:16650",
+			[41290] = "EmblemOfHeroism:30",
 			[35065] = "honor:5700",
 			[31375] = "honor:3800",
 			[35129] = "honor:5700",
@@ -1258,8 +1258,8 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"WailingCaverns", -- [2]
-					nil, -- [3]
+					"ShadowfangKeep", -- [2]
+					10, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11058,
+	["session"] = 11070,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1436,33 +1436,25 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [187]
 		{
-			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)",
-			["time"] = "2023/12/14 19:31:26",
-			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)\"\n",
-			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:285: in function <Interface/FrameXML/SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
-			["session"] = 10997,
-			["counter"] = 1,
-		}, -- [188]
-		{
 			["message"] = "Interface/AddOns/xVermin/Rotation/AOE.lua:50: attempt to compare number with nil",
 			["time"] = "2023/12/14 21:02:34",
 			["locals"] = "range = 10\ncasting = false\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"Wind Shear\"\n(*temporary) = 136048\n(*temporary) = 127990190\n(*temporary) = 127991690\n(*temporary) = false\n(*temporary) = \"Cast-3-5210-1-5372-403-0005FB5F5B\"\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\ninRange = 0\nrangecasting = 0\nunit = \"nameplate1\"\nxVermin = <table> {\n QuestRewardGoldIconFrame = xVermin_QuestRewardGoldIconFrame {\n }\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:76\n Threat = <function> defined @Interface/AddOns/xVermin/Helpers/Threat.lua:3\n AOE = <function> defined @Interface/AddOns/xVermin/Rotation/AOE.lua:16\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:104\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:56\n CheckBuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:38\n CheckDebuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:24\n BehindTarget = <function> defined @Interface/AddOns/xVermin/Rotation/BehindTarget.lua:53\n Interrupt = <function> defined @Interface/AddOns/xVermin/Helpers/Interrupt.lua:108\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:259\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:93\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:139\n IfUnitIsCastingInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:214\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:148\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:248\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:286\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:119\n Config = <table> {\n }\n ClassColor = <table> {\n }\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:131\n WaitTimeUntillAddonLoaded = 30\n R6_Occupied = false\n Class = \"SHAMAN\"\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:202\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:238\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:228\n}\nt = <table> {\n 1 = \"Critter\"\n 2 = \"Totem\"\n 3 = \"Non-combat Pet\"\n 4 = \"Gas Cloud\"\n}\nunitcasting = true\ntargetcasting = true\nminRange = nil\nmaxRange = nil\n",
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Rotation/AOE.lua\"]:50: in function `AOE'\n[string \"@Interface/AddOns/xVermin/Rotation/AOE.lua\"]:161: in function <Interface/AddOns/xVermin/Rotation/AOE.lua:139>\n[string \"=[C]\"]: ?",
 			["session"] = 11001,
 			["counter"] = 73,
-		}, -- [189]
+		}, -- [188]
 		{
 			["message"] = "Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
 			["time"] = "2023/12/15 11:10:59",
 			["session"] = 11014,
 			["counter"] = 1,
-		}, -- [190]
+		}, -- [189]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
 			["time"] = "2023/12/15 11:10:59",
 			["session"] = 11014,
 			["counter"] = 1,
-		}, -- [191]
+		}, -- [190]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:14: attempt to call field '?' (a nil value)",
 			["time"] = "2023/12/15 11:14:36",
@@ -1470,7 +1462,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:14: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:13>",
 			["session"] = 11017,
 			["counter"] = 1,
-		}, -- [192]
+		}, -- [191]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2023/09/08 10:08:37",
@@ -1478,7 +1470,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Addons/nMainBar.lua\"]:80: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:79>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:187: in function <Interface/AddOns/xVermin/_Core.lua:145>",
 			["session"] = 11017,
 			["counter"] = 4,
-		}, -- [193]
+		}, -- [192]
 		{
 			["message"] = "Interface/AddOns/ClassicCastbars/Core/Frames.lua:5: attempt to index local 'addon' (a nil value)",
 			["time"] = "2023/12/15 11:15:08",
@@ -1486,7 +1478,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/Core/Frames.lua\"]:5: in main chunk",
 			["session"] = 11018,
 			["counter"] = 1,
-		}, -- [194]
+		}, -- [193]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:664: attempt to index local 'cast' (a nil value)",
 			["time"] = "2023/12/15 11:21:49",
@@ -1494,7 +1486,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:664: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:657>",
 			["session"] = 11022,
 			["counter"] = 1054,
-		}, -- [195]
+		}, -- [194]
 		{
 			["message"] = "...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:662: attempt to index field '_data' (a nil value)",
 			["time"] = "2023/12/15 11:24:24",
@@ -1502,7 +1494,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua\"]:662: in function <...ddOns/ClassicCastbars/ClassicCastbars_NonClassic.lua:657>",
 			["session"] = 11023,
 			["counter"] = 598,
-		}, -- [196]
+		}, -- [195]
 		{
 			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:2046: Usage: SaveBindings(1||2)",
 			["time"] = "2023/09/29 22:27:18",
@@ -1510,7 +1502,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:2046: in function `SetSetBindings'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:265: in function `?'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:230: in function `OnEvent'\n[string \"*ItemRack.xml:4_OnEvent\"]:1: in function <[string \"*ItemRack.xml:4_OnEvent\"]:1>",
 			["session"] = 11035,
 			["counter"] = 20,
-		}, -- [197]
+		}, -- [196]
 		{
 			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
 			["time"] = "2023/09/09 16:52:16",
@@ -1518,7 +1510,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11040,
 			["counter"] = 48,
-		}, -- [198]
+		}, -- [197]
 		{
 			["message"] = "...terface/AddOns/Questie/Modules/QuestieDebugOffer.lua:133: attempt to compare nil with number",
 			["time"] = "2023/12/10 19:29:54",
@@ -1526,15 +1518,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Questie/Modules/QuestieDebugOffer.lua\"]:133: in function <...terface/AddOns/Questie/Modules/QuestieDebugOffer.lua:131>\n[string \"@Interface/AddOns/Questie/Modules/QuestieDebugOffer.lua\"]:280: in function <...terface/AddOns/Questie/Modules/QuestieDebugOffer.lua:263>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[string \"@Interface/AddOns/AdiBags/libs/CallbackHandler-1.0-8/CallbackHandler-1.0.lua\"]:54: in function `Fire'\n[string \"@Interface/AddOns/ChocolateBar/libs/AceEvent-3.0-4/AceEvent-3.0.lua\"]:120: in function <...dOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua:119>",
 			["session"] = 11044,
 			["counter"] = 3,
-		}, -- [199]
-		{
-			["message"] = "...ace/AddOns/Details/classes/container_habilidades.lua:73: table index is nil",
-			["time"] = "2023/12/17 17:05:50",
-			["locals"] = "self = <table> {\n tipo = 9\n _ActorTable = <table> {\n }\n funcao_de_criacao = <function> defined @Interface/AddOns/Details/classes/classe_others_habilidade.lua:24\n}\nid = nil\ncriar = true\ntoken = \"SPELL_AURA_BROKEN\"\ncria_shadow = nil\nesta_habilidade = nil\nnovo_objeto = <table> {\n cc_break_oque = <table> {\n }\n targets = <table> {\n }\n counter = 0\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"SPELL_AURA_BROKEN\"\n(*temporary) = \"table index is nil\"\n",
-			["stack"] = "[string \"@Interface/AddOns/Details/classes/container_habilidades.lua\"]:73: in function `PegaHabilidade'\n[string \"@Interface/AddOns/Details/core/parser.lua\"]:3442: in function <Interface/AddOns/Details/core/parser.lua:3362>\n[string \"=(tail call)\"]: ?",
-			["session"] = 11045,
-			["counter"] = 1,
-		}, -- [200]
+		}, -- [198]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/ECS.lua:8: attempt to index global 'EngravingFrame' (a nil value)",
 			["time"] = "2023/12/18 20:36:18",
@@ -1542,15 +1526,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ECS.lua\"]:8: in function <Interface/AddOns/xVermin/Addons/ECS.lua:5>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:195: in function <Interface/AddOns/xVermin/_Core.lua:153>",
 			["session"] = 11048,
 			["counter"] = 7,
-		}, -- [201]
-		{
-			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button)...\"]:7: attempt to index local 'rf' (a nil value)",
-			["time"] = "2023/12/16 18:20:24",
-			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button)...\"]:7: attempt to index local 'rf' (a nil value)\"\n",
-			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:99: in function `SecureHandler_OnMouseUpDown'\n[string \"*SecureHandlerTemplates.xml:89_OnMouseDown\"]:1: in function <[string \"*SecureHandlerTemplates.xml:89_OnMouseDown\"]:1>",
-			["session"] = 11056,
-			["counter"] = 3,
-		}, -- [202]
+		}, -- [199]
 		{
 			["message"] = "[string \"TomTomCrazyArrow:SetPoint('TOPRIGHT', Custo...\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: TomTomCrazyArrow:SetPoint.",
 			["time"] = "2023/12/19 10:21:45",
@@ -1558,7 +1534,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TomTomCrazyArrow:SetPoint('TOPRIGHT', CustomContainer_2, 'TOPLEFT', -20, -10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11056,
 			["counter"] = 2,
-		}, -- [203]
+		}, -- [200]
 		{
 			["message"] = "Interface/AddOns/ThreatClassic2/core/core.lua:332: attempt to index local 'bar' (a nil value)",
 			["time"] = "2023/12/19 10:26:19",
@@ -1566,14 +1542,102 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:332: in function `UpdateThreatBars'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:795: in function `UpdateBars'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:695: in function `UpdateFrame'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:1269: in function <Interface/AddOns/ThreatClassic2/core/core.lua:1266>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:888: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:876>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-Slider.lua\"]:65: in function <...sque/Libs/AceGUI-3.0/widgets/AceGUIWidget-Slider.lua:56>",
 			["session"] = 11057,
 			["counter"] = 3,
+		}, -- [201]
+		{
+			["message"] = "[string \"print(UnitAttack(\"pet\"))\"]:1: attempt to call global 'UnitAttack' (a nil value)",
+			["time"] = "2023/12/20 12:50:14",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"pet\"\n(*temporary) = \"attempt to call global 'UnitAttack' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitAttack(\"pet\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11060,
+			["counter"] = 1,
+		}, -- [202]
+		{
+			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button)...\"]:7: attempt to index local 'rf' (a nil value)",
+			["time"] = "2023/12/16 18:20:24",
+			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button)...\"]:7: attempt to index local 'rf' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:99: in function `SecureHandler_OnMouseUpDown'\n[string \"*SecureHandlerTemplates.xml:89_OnMouseDown\"]:1: in function <[string \"*SecureHandlerTemplates.xml:89_OnMouseDown\"]:1>",
+			["session"] = 11060,
+			["counter"] = 4,
+		}, -- [203]
+		{
+			["message"] = "...ace/AddOns/Details/classes/container_habilidades.lua:73: table index is nil",
+			["time"] = "2023/12/17 17:05:50",
+			["locals"] = "self = <table> {\n tipo = 9\n _ActorTable = <table> {\n }\n funcao_de_criacao = <function> defined @Interface/AddOns/Details/classes/classe_others_habilidade.lua:24\n}\nid = nil\ncriar = true\ntoken = \"SPELL_AURA_BROKEN\"\ncria_shadow = nil\nesta_habilidade = nil\nnovo_objeto = <table> {\n cc_break_oque = <table> {\n }\n targets = <table> {\n }\n counter = 0\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"SPELL_AURA_BROKEN\"\n(*temporary) = \"table index is nil\"\n",
+			["stack"] = "[string \"@Interface/AddOns/Details/classes/container_habilidades.lua\"]:73: in function `PegaHabilidade'\n[string \"@Interface/AddOns/Details/core/parser.lua\"]:3442: in function <Interface/AddOns/Details/core/parser.lua:3362>\n[string \"=(tail call)\"]: ?",
+			["session"] = 11060,
+			["counter"] = 3,
 		}, -- [204]
+		{
+			["message"] = "Interface/FrameXML/RestrictedExecution.lua:431: Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)",
+			["time"] = "2023/12/14 19:31:26",
+			["locals"] = "(*temporary) = \"Call failed: [string \" -- (self, button, down)...\"]:3: attempt to index local 'rf' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/FrameXML/RestrictedExecution.lua\"]:431: in function <Interface/FrameXML/RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/FrameXML/SecureHandlers.lua\"]:285: in function <Interface/FrameXML/SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
+			["session"] = 11060,
+			["counter"] = 2,
+		}, -- [205]
+		{
+			["message"] = "Interface/AddOns/ACP/ACP.lua:274: attempt to concatenate a nil value",
+			["time"] = "2023/12/20 21:57:37",
+			["locals"] = "self = <table> {\n GetSetName = <function> defined @Interface/AddOns/ACP/ACP.lua:1283\n UpdateLocale = <function> defined @Interface/AddOns/ACP/ACP.lua:1435\n FindAddonKey = <function> defined @Interface/AddOns/ACP/ACP.lua:1220\n addonListBuilders = <table> {\n }\n RenameSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1386\n SpecialCaseName = <function> defined @Interface/AddOns/ACP/ACP.lua:33\n ShowHintTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:2059\n GetAddonCategoryTable = <function> defined @Interface/AddOns/ACP/ACP.lua:1525\n SaveSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1251\n UnloadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1295\n GetAddonCategory = <function> defined @Interface/AddOns/ACP/ACP.lua:1511\n ACP_BLIZZARD_ADDONS = <table> {\n }\n SortDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1454\n masterAddonList = <table> {\n }\n ToggleUI = <function> defined @Interface/AddOns/ACP/ACP.lua:1111\n ResolveLibraryName = <function> defined @Interface/AddOns/ACP/ACP.lua:727\n RebuildSortedAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1400\n DisableAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1481\n ShowTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1943\n LocateEmbeds = <function> defined @Interface/AddOns/ACP/ACP.lua:1931\n ADDON_LOADED = <function> defined @Interface/AddOns/ACP/ACP.lua:1914\n embedded_libs_owners = <table> {\n }\n GetAddonStatus = <function> defined @Interface/AddOns/ACP/ACP.lua:313\n sortedAddonList = <table> {\n }\n DisableAllAddons = <function> defined @Interface/AddOns/ACP/ACP.lua:1468\n SetDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1796\n SetButton_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1786\n AddonList_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1781\n AddonList_OnShow_Fast = <function> defined @Interface/AddOns/ACP/ACP.lua:1571\n AddonList_LoadNow = <function> defined @Interface/AddOns/ACP/ACP.lua:1566\n AddonList_Enable = <function> defined @Interface/AddOns/ACP/ACP.lua:1540\n CollapseAll = <function> defined @Interface/AddOns/ACP/ACP.lua:1234\n ReadDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1185\n CollapseAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1498\n Collapse_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1486\n Print = <function> defined @Interface/AddOns/ACP/ACP.lua:1230\n ToggleRecursion = <function> defined @Interface/AddOns/ACP/ACP.lua:483\n IsAddonCompatibleWithCurrentIntefaceVersion = <function> defined @Interface/AddOns/ACP/ACP.lua:265\n MakeFrameScalable = <function> defined @Interface/AddOns/ACP/ACP.lua:2204\n embedded_libs = <table> {\n }\n SortDropDown_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1464\n TAGS = <table> {\n }\n L = <table> {\n }\n CheckEvents = 0\n ReloadAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1127\n ShowSlashCommands = <function> defined @Interface/AddOns/ACP/ACP.lua:803\n SortDropDown_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1447\n Security_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1358\n OnLoad = <function> defined @Interface/AddOns/ACP/ACP.lua:498\n EnableAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1170\n ShowSecurityTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1376\n SlashHandler = <function> defined @Interface/AddOns/ACP/ACP.lua:752\n OnEvent = <function> defined @Interface/AddOns/ACP/ACP.lua:632\n IsAddOnProtected = <function> defined @Interface/AddOns/ACP/ACP.lua:1351\n ClearSelectionAndLoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1318\n EnableDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1198\n LoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1324\n FindAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1211\n frame = ACP_AddonList {\n }\n GetAddonCompatibilitySummary = <function> defined @Interface/AddOns/ACP/ACP.lua:299\n SetMasterAddonBuilder = <function> defined @Interface/AddOns/ACP/ACP.lua:1426\n}\naddon = 7\nbuild = 11500\naddonnum = 7\n(*temporary) = ",
+			["stack"] = "[string \"@Interface/AddOns/ACP/ACP.lua\"]:274: in function `IsAddonCompatibleWithCurrentIntefaceVersion'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:320: in function `GetAddonStatus'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1765: in function <Interface/AddOns/ACP/ACP.lua:1571>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1142: in function `ReloadAddonList'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:650: in function `OnEvent'\n[string \"*ACP.xml:725_OnEvent\"]:1: in function <[string \"*ACP.xml:725_OnEvent\"]:1>",
+			["session"] = 11062,
+			["counter"] = 1,
+		}, -- [206]
+		{
+			["message"] = "Interface/AddOns/ACP/ACP.lua:273: attempt to concatenate a nil value",
+			["time"] = "2023/12/20 21:58:43",
+			["locals"] = "self = <table> {\n GetSetName = <function> defined @Interface/AddOns/ACP/ACP.lua:1282\n UpdateLocale = <function> defined @Interface/AddOns/ACP/ACP.lua:1434\n FindAddonKey = <function> defined @Interface/AddOns/ACP/ACP.lua:1219\n addonListBuilders = <table> {\n }\n RenameSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1385\n SpecialCaseName = <function> defined @Interface/AddOns/ACP/ACP.lua:33\n ShowHintTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:2058\n GetAddonCategoryTable = <function> defined @Interface/AddOns/ACP/ACP.lua:1524\n SaveSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1250\n UnloadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1294\n GetAddonCategory = <function> defined @Interface/AddOns/ACP/ACP.lua:1510\n ACP_BLIZZARD_ADDONS = <table> {\n }\n SortDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1453\n masterAddonList = <table> {\n }\n ToggleUI = <function> defined @Interface/AddOns/ACP/ACP.lua:1110\n ResolveLibraryName = <function> defined @Interface/AddOns/ACP/ACP.lua:726\n RebuildSortedAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1399\n DisableAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1480\n ShowTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1942\n LocateEmbeds = <function> defined @Interface/AddOns/ACP/ACP.lua:1930\n ADDON_LOADED = <function> defined @Interface/AddOns/ACP/ACP.lua:1913\n embedded_libs_owners = <table> {\n }\n GetAddonStatus = <function> defined @Interface/AddOns/ACP/ACP.lua:312\n sortedAddonList = <table> {\n }\n DisableAllAddons = <function> defined @Interface/AddOns/ACP/ACP.lua:1467\n SetDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1795\n SetButton_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1785\n AddonList_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1780\n AddonList_OnShow_Fast = <function> defined @Interface/AddOns/ACP/ACP.lua:1570\n AddonList_LoadNow = <function> defined @Interface/AddOns/ACP/ACP.lua:1565\n AddonList_Enable = <function> defined @Interface/AddOns/ACP/ACP.lua:1539\n CollapseAll = <function> defined @Interface/AddOns/ACP/ACP.lua:1233\n ReadDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1184\n CollapseAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1497\n Collapse_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1485\n Print = <function> defined @Interface/AddOns/ACP/ACP.lua:1229\n ToggleRecursion = <function> defined @Interface/AddOns/ACP/ACP.lua:482\n IsAddonCompatibleWithCurrentIntefaceVersion = <function> defined @Interface/AddOns/ACP/ACP.lua:265\n MakeFrameScalable = <function> defined @Interface/AddOns/ACP/ACP.lua:2203\n embedded_libs = <table> {\n }\n SortDropDown_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1463\n TAGS = <table> {\n }\n L = <table> {\n }\n CheckEvents = 0\n ReloadAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1126\n ShowSlashCommands = <function> defined @Interface/AddOns/ACP/ACP.lua:802\n SortDropDown_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1446\n Security_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1357\n OnLoad = <function> defined @Interface/AddOns/ACP/ACP.lua:497\n EnableAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1169\n ShowSecurityTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1375\n SlashHandler = <function> defined @Interface/AddOns/ACP/ACP.lua:751\n OnEvent = <function> defined @Interface/AddOns/ACP/ACP.lua:631\n IsAddOnProtected = <function> defined @Interface/AddOns/ACP/ACP.lua:1350\n ClearSelectionAndLoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1317\n EnableDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1197\n LoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1323\n FindAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1210\n frame = ACP_AddonList {\n }\n GetAddonCompatibilitySummary = <function> defined @Interface/AddOns/ACP/ACP.lua:298\n SetMasterAddonBuilder = <function> defined @Interface/AddOns/ACP/ACP.lua:1425\n}\naddon = 7\nbuild = 11500\naddonnum = 7\n(*temporary) = ",
+			["stack"] = "[string \"@Interface/AddOns/ACP/ACP.lua\"]:273: in function `IsAddonCompatibleWithCurrentIntefaceVersion'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:319: in function `GetAddonStatus'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1764: in function <Interface/AddOns/ACP/ACP.lua:1570>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1141: in function `ReloadAddonList'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:649: in function `OnEvent'\n[string \"*ACP.xml:725_OnEvent\"]:1: in function <[string \"*ACP.xml:725_OnEvent\"]:1>",
+			["session"] = 11063,
+			["counter"] = 1,
+		}, -- [207]
+		{
+			["message"] = "Interface/AddOns/ACP/ACP.lua:279: attempt to concatenate a nil value",
+			["time"] = "2023/12/20 21:59:35",
+			["locals"] = "self = <table> {\n GetSetName = <function> defined @Interface/AddOns/ACP/ACP.lua:1288\n UpdateLocale = <function> defined @Interface/AddOns/ACP/ACP.lua:1440\n FindAddonKey = <function> defined @Interface/AddOns/ACP/ACP.lua:1225\n addonListBuilders = <table> {\n }\n RenameSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1391\n SpecialCaseName = <function> defined @Interface/AddOns/ACP/ACP.lua:33\n ShowHintTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:2064\n GetAddonCategoryTable = <function> defined @Interface/AddOns/ACP/ACP.lua:1530\n SaveSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1256\n UnloadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1300\n GetAddonCategory = <function> defined @Interface/AddOns/ACP/ACP.lua:1516\n ACP_BLIZZARD_ADDONS = <table> {\n }\n SortDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1459\n masterAddonList = <table> {\n }\n ToggleUI = <function> defined @Interface/AddOns/ACP/ACP.lua:1116\n ResolveLibraryName = <function> defined @Interface/AddOns/ACP/ACP.lua:732\n RebuildSortedAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1405\n DisableAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1486\n ShowTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1948\n LocateEmbeds = <function> defined @Interface/AddOns/ACP/ACP.lua:1936\n ADDON_LOADED = <function> defined @Interface/AddOns/ACP/ACP.lua:1919\n embedded_libs_owners = <table> {\n }\n GetAddonStatus = <function> defined @Interface/AddOns/ACP/ACP.lua:318\n sortedAddonList = <table> {\n }\n DisableAllAddons = <function> defined @Interface/AddOns/ACP/ACP.lua:1473\n SetDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1801\n SetButton_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1791\n AddonList_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1786\n AddonList_OnShow_Fast = <function> defined @Interface/AddOns/ACP/ACP.lua:1576\n AddonList_LoadNow = <function> defined @Interface/AddOns/ACP/ACP.lua:1571\n AddonList_Enable = <function> defined @Interface/AddOns/ACP/ACP.lua:1545\n CollapseAll = <function> defined @Interface/AddOns/ACP/ACP.lua:1239\n ReadDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1190\n CollapseAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1503\n Collapse_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1491\n Print = <function> defined @Interface/AddOns/ACP/ACP.lua:1235\n ToggleRecursion = <function> defined @Interface/AddOns/ACP/ACP.lua:488\n IsAddonCompatibleWithCurrentIntefaceVersion = <function> defined @Interface/AddOns/ACP/ACP.lua:265\n MakeFrameScalable = <function> defined @Interface/AddOns/ACP/ACP.lua:2209\n embedded_libs = <table> {\n }\n SortDropDown_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1469\n TAGS = <table> {\n }\n L = <table> {\n }\n CheckEvents = 0\n ReloadAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1132\n ShowSlashCommands = <function> defined @Interface/AddOns/ACP/ACP.lua:808\n SortDropDown_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1452\n Security_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1363\n OnLoad = <function> defined @Interface/AddOns/ACP/ACP.lua:503\n EnableAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1175\n ShowSecurityTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1381\n SlashHandler = <function> defined @Interface/AddOns/ACP/ACP.lua:757\n OnEvent = <function> defined @Interface/AddOns/ACP/ACP.lua:637\n IsAddOnProtected = <function> defined @Interface/AddOns/ACP/ACP.lua:1356\n ClearSelectionAndLoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1323\n EnableDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1203\n LoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1329\n FindAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1216\n frame = ACP_AddonList {\n }\n GetAddonCompatibilitySummary = <function> defined @Interface/AddOns/ACP/ACP.lua:304\n SetMasterAddonBuilder = <function> defined @Interface/AddOns/ACP/ACP.lua:1431\n}\naddon = 7\nbuild = 11500\naddonnum = 7\n(*temporary) = ",
+			["stack"] = "[string \"@Interface/AddOns/ACP/ACP.lua\"]:279: in function `IsAddonCompatibleWithCurrentIntefaceVersion'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:325: in function `GetAddonStatus'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1770: in function <Interface/AddOns/ACP/ACP.lua:1576>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1147: in function `ReloadAddonList'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:655: in function `OnEvent'\n[string \"*ACP.xml:725_OnEvent\"]:1: in function <[string \"*ACP.xml:725_OnEvent\"]:1>",
+			["session"] = 11064,
+			["counter"] = 1,
+		}, -- [208]
+		{
+			["message"] = "Interface/AddOns/ACP/ACP.lua:280: attempt to concatenate a nil value",
+			["time"] = "2023/12/20 22:00:18",
+			["locals"] = "self = <table> {\n GetSetName = <function> defined @Interface/AddOns/ACP/ACP.lua:1290\n UpdateLocale = <function> defined @Interface/AddOns/ACP/ACP.lua:1442\n FindAddonKey = <function> defined @Interface/AddOns/ACP/ACP.lua:1227\n addonListBuilders = <table> {\n }\n RenameSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1393\n SpecialCaseName = <function> defined @Interface/AddOns/ACP/ACP.lua:33\n ShowHintTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:2066\n GetAddonCategoryTable = <function> defined @Interface/AddOns/ACP/ACP.lua:1532\n SaveSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1258\n UnloadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1302\n GetAddonCategory = <function> defined @Interface/AddOns/ACP/ACP.lua:1518\n ACP_BLIZZARD_ADDONS = <table> {\n }\n SortDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1461\n masterAddonList = <table> {\n }\n ToggleUI = <function> defined @Interface/AddOns/ACP/ACP.lua:1118\n ResolveLibraryName = <function> defined @Interface/AddOns/ACP/ACP.lua:734\n RebuildSortedAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1407\n DisableAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1488\n ShowTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1950\n LocateEmbeds = <function> defined @Interface/AddOns/ACP/ACP.lua:1938\n ADDON_LOADED = <function> defined @Interface/AddOns/ACP/ACP.lua:1921\n embedded_libs_owners = <table> {\n }\n GetAddonStatus = <function> defined @Interface/AddOns/ACP/ACP.lua:320\n sortedAddonList = <table> {\n }\n DisableAllAddons = <function> defined @Interface/AddOns/ACP/ACP.lua:1475\n SetDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1803\n SetButton_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1793\n AddonList_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1788\n AddonList_OnShow_Fast = <function> defined @Interface/AddOns/ACP/ACP.lua:1578\n AddonList_LoadNow = <function> defined @Interface/AddOns/ACP/ACP.lua:1573\n AddonList_Enable = <function> defined @Interface/AddOns/ACP/ACP.lua:1547\n CollapseAll = <function> defined @Interface/AddOns/ACP/ACP.lua:1241\n ReadDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1192\n CollapseAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1505\n Collapse_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1493\n Print = <function> defined @Interface/AddOns/ACP/ACP.lua:1237\n ToggleRecursion = <function> defined @Interface/AddOns/ACP/ACP.lua:490\n IsAddonCompatibleWithCurrentIntefaceVersion = <function> defined @Interface/AddOns/ACP/ACP.lua:265\n MakeFrameScalable = <function> defined @Interface/AddOns/ACP/ACP.lua:2211\n embedded_libs = <table> {\n }\n SortDropDown_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1471\n TAGS = <table> {\n }\n L = <table> {\n }\n CheckEvents = 0\n ReloadAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1134\n ShowSlashCommands = <function> defined @Interface/AddOns/ACP/ACP.lua:810\n SortDropDown_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1454\n Security_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1365\n OnLoad = <function> defined @Interface/AddOns/ACP/ACP.lua:505\n EnableAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1177\n ShowSecurityTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1383\n SlashHandler = <function> defined @Interface/AddOns/ACP/ACP.lua:759\n OnEvent = <function> defined @Interface/AddOns/ACP/ACP.lua:639\n IsAddOnProtected = <function> defined @Interface/AddOns/ACP/ACP.lua:1358\n ClearSelectionAndLoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1325\n EnableDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1205\n LoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1331\n FindAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1218\n frame = ACP_AddonList {\n }\n GetAddonCompatibilitySummary = <function> defined @Interface/AddOns/ACP/ACP.lua:306\n SetMasterAddonBuilder = <function> defined @Interface/AddOns/ACP/ACP.lua:1433\n}\naddon = 7\nbuild = 11500\naddonnum = 7\n(*temporary) = ",
+			["stack"] = "[string \"@Interface/AddOns/ACP/ACP.lua\"]:280: in function `IsAddonCompatibleWithCurrentIntefaceVersion'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:327: in function `GetAddonStatus'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1772: in function <Interface/AddOns/ACP/ACP.lua:1578>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1149: in function `ReloadAddonList'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:657: in function `OnEvent'\n[string \"*ACP.xml:725_OnEvent\"]:1: in function <[string \"*ACP.xml:725_OnEvent\"]:1>",
+			["session"] = 11067,
+			["counter"] = 3,
+		}, -- [209]
+		{
+			["message"] = "Interface/AddOns/ACP/ACP.lua:281: attempt to concatenate a nil value",
+			["time"] = "2023/12/20 22:02:56",
+			["locals"] = "self = <table> {\n GetSetName = <function> defined @Interface/AddOns/ACP/ACP.lua:1291\n UpdateLocale = <function> defined @Interface/AddOns/ACP/ACP.lua:1443\n FindAddonKey = <function> defined @Interface/AddOns/ACP/ACP.lua:1228\n addonListBuilders = <table> {\n }\n RenameSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1394\n SpecialCaseName = <function> defined @Interface/AddOns/ACP/ACP.lua:33\n ShowHintTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:2067\n GetAddonCategoryTable = <function> defined @Interface/AddOns/ACP/ACP.lua:1533\n SaveSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1259\n UnloadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1303\n GetAddonCategory = <function> defined @Interface/AddOns/ACP/ACP.lua:1519\n ACP_BLIZZARD_ADDONS = <table> {\n }\n SortDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1462\n masterAddonList = <table> {\n }\n ToggleUI = <function> defined @Interface/AddOns/ACP/ACP.lua:1119\n ResolveLibraryName = <function> defined @Interface/AddOns/ACP/ACP.lua:735\n RebuildSortedAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1408\n DisableAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1489\n ShowTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1951\n LocateEmbeds = <function> defined @Interface/AddOns/ACP/ACP.lua:1939\n ADDON_LOADED = <function> defined @Interface/AddOns/ACP/ACP.lua:1922\n embedded_libs_owners = <table> {\n }\n GetAddonStatus = <function> defined @Interface/AddOns/ACP/ACP.lua:321\n sortedAddonList = <table> {\n }\n DisableAllAddons = <function> defined @Interface/AddOns/ACP/ACP.lua:1476\n SetDropDown_Populate = <function> defined @Interface/AddOns/ACP/ACP.lua:1804\n SetButton_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1794\n AddonList_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1789\n AddonList_OnShow_Fast = <function> defined @Interface/AddOns/ACP/ACP.lua:1579\n AddonList_LoadNow = <function> defined @Interface/AddOns/ACP/ACP.lua:1574\n AddonList_Enable = <function> defined @Interface/AddOns/ACP/ACP.lua:1548\n CollapseAll = <function> defined @Interface/AddOns/ACP/ACP.lua:1242\n ReadDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1193\n CollapseAll_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1506\n Collapse_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1494\n Print = <function> defined @Interface/AddOns/ACP/ACP.lua:1238\n ToggleRecursion = <function> defined @Interface/AddOns/ACP/ACP.lua:491\n IsAddonCompatibleWithCurrentIntefaceVersion = <function> defined @Interface/AddOns/ACP/ACP.lua:265\n MakeFrameScalable = <function> defined @Interface/AddOns/ACP/ACP.lua:2212\n embedded_libs = <table> {\n }\n SortDropDown_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1472\n TAGS = <table> {\n }\n L = <table> {\n }\n CheckEvents = 0\n ReloadAddonList = <function> defined @Interface/AddOns/ACP/ACP.lua:1135\n ShowSlashCommands = <function> defined @Interface/AddOns/ACP/ACP.lua:811\n SortDropDown_OnShow = <function> defined @Interface/AddOns/ACP/ACP.lua:1455\n Security_OnClick = <function> defined @Interface/AddOns/ACP/ACP.lua:1366\n OnLoad = <function> defined @Interface/AddOns/ACP/ACP.lua:506\n EnableAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1178\n ShowSecurityTooltip = <function> defined @Interface/AddOns/ACP/ACP.lua:1384\n SlashHandler = <function> defined @Interface/AddOns/ACP/ACP.lua:760\n OnEvent = <function> defined @Interface/AddOns/ACP/ACP.lua:640\n IsAddOnProtected = <function> defined @Interface/AddOns/ACP/ACP.lua:1359\n ClearSelectionAndLoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1326\n EnableDependencies = <function> defined @Interface/AddOns/ACP/ACP.lua:1206\n LoadSet = <function> defined @Interface/AddOns/ACP/ACP.lua:1332\n FindAddon = <function> defined @Interface/AddOns/ACP/ACP.lua:1219\n frame = ACP_AddonList {\n }\n GetAddonCompatibilitySummary = <function> defined @Interface/AddOns/ACP/ACP.lua:307\n SetMasterAddonBuilder = <function> defined @Interface/AddOns/ACP/ACP.lua:1434\n}\naddon = 7\nbuild = 11500\naddonnum = 7\n(*temporary) = ",
+			["stack"] = "[string \"@Interface/AddOns/ACP/ACP.lua\"]:281: in function `IsAddonCompatibleWithCurrentIntefaceVersion'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:328: in function `GetAddonStatus'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1773: in function <Interface/AddOns/ACP/ACP.lua:1579>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:1150: in function `ReloadAddonList'\n[string \"@Interface/AddOns/ACP/ACP.lua\"]:658: in function `OnEvent'\n[string \"*ACP.xml:725_OnEvent\"]:1: in function <[string \"*ACP.xml:725_OnEvent\"]:1>",
+			["session"] = 11068,
+			["counter"] = 1,
+		}, -- [210]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RareScanner' tried to call the protected function 'TargetUnit()'.",
 			["time"] = "2023/10/13 10:25:54",
 			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:119: in function `callback'\n[string \"@Interface/AddOns/RareScanner/Core/Libs/RSRoutines.lua\"]:93: in function `Run'\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:103: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:102>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:147: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:134>\n[string \"@Interface/AddOns/RareScanner/Core/Service/RSTargetUnitTracker.lua\"]:176: in function <...Ons/RareScanner/Core/Service/RSTargetUnitTracker.lua:175>",
-			["session"] = 11058,
-			["counter"] = 30,
-		}, -- [205]
+			["session"] = 11070,
+			["counter"] = 32,
+		}, -- [211]
+		{
+			["message"] = "Interface/AddOns/TomTom/TomTom_Waypoints.lua:186: HereBeDragons-Pins-2.0: AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers",
+			["time"] = "2023/12/20 23:26:31",
+			["locals"] = "(*temporary) = \"HereBeDragons-Pins-2.0: AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/FarmHud/libs/HereBeDragons/HereBeDragons-Pins-2.0.lua\"]:580: in function `AddMinimapIconMap'\n[string \"@Interface/AddOns/TomTom/TomTom_Waypoints.lua\"]:186: in function `SetWaypoint'\n[string \"@Interface/AddOns/TomTom/TomTom.lua\"]:1000: in function `AddWaypoint'\n[string \"@Interface/AddOns/TomPoints/TomPoints.lua\"]:21: in function <Interface/AddOns/TomPoints/TomPoints.lua:19>\n[string \"@Interface/AddOns/TomPoints/TomPoints.lua\"]:45: in function <Interface/AddOns/TomPoints/TomPoints.lua:34>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Blizzard_CombatLog/Blizzard_CombatLog.lua\"]:3535: in function `SetItemRef'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3800: in function <Interface/FrameXML/ChatFrame.lua:3799>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `ChatFrame_OnHyperlinkShow'\n[string \"*ChatFrame.xml:15_OnHyperlinkClick\"]:1: in function <[string \"*ChatFrame.xml:15_OnHyperlinkClick\"]:1>",
+			["session"] = 11070,
+			["counter"] = 1,
+		}, -- [212]
+		{
+			["message"] = "Interface/AddOns/TomTom/TomTom_Waypoints.lua:442: HereBeDragons-Pins-2.0: AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers",
+			["time"] = "2023/12/20 23:34:08",
+			["locals"] = "(*temporary) = \"HereBeDragons-Pins-2.0: AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface/AddOns/FarmHud/libs/HereBeDragons/HereBeDragons-Pins-2.0.lua\"]:580: in function `AddMinimapIconMap'\n[string \"@Interface/AddOns/TomTom/TomTom_Waypoints.lua\"]:442: in function <Interface/AddOns/TomTom/TomTom_Waypoints.lua:436>",
+			["session"] = 11070,
+			["counter"] = 2,
+		}, -- [213]
 	},
 }

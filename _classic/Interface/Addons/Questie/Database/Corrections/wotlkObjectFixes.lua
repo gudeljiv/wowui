@@ -333,17 +333,32 @@ function QuestieWotlkObjectFixes:Load()
         [201592] = {
             [objectKeys.spawns] = {[4813]={{45.76,43.09},{49.18,40.72},{63.89,51.99},{47.4,36.08},{48.26,38.37},{43.1,67.65},{45.82,76.61},{45.12,49.64},{45.51,40.91},{48.7,40.28},{62.34,57.16},{46.55,52.52},{37.62,79.09},{63.72,58.71},{62.55,48.93},{42.18,67.15},{56.28,39.67},{45.72,38.59},{43.46,77.04},{46.95,35.44},{41.91,65.83},{-1,-1}}},
         },
+        [201742] = {
+            [objectKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL]={{43,21.9},{-1,-1}}},
+            [objectKeys.zoneID] = zoneIDs.ICECROWN_CITADEL,
+        },
         [201794] = {
             [objectKeys.spawns] = {[zoneIDs.SUNWELL_PLATEAU]={{-1,-1}}},
             [objectKeys.zoneID] = zoneIDs.SUNWELL_PLATEAU,
+        },
+        [201873] = {
+            [objectKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL]={{-1,-1}}}, -- map id for gunships?
+            [objectKeys.zoneID] = zoneIDs.ICECROWN_CITADEL,
         },
         [201937] = {
             [objectKeys.spawns] = {[zoneIDs.DRAGONBLIGHT]={{75.1,20.5}}},
             [objectKeys.zoneID] = zoneIDs.DRAGONBLIGHT,
         },
         [201959] = {
-            [objectKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{76.9,73.7}}},
+            [objectKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE]={{76.7,73.7}},[zoneIDs.ICECROWN_CITADEL]={{-1,-1}}},
             [objectKeys.zoneID] = zoneIDs.ICECROWN_CITADEL_UPPER_SPIRE,
+        },
+        [202239] = {
+            [objectKeys.spawns] = {[zoneIDs.ICECROWN_CITADEL_DEATHBRINGERS_RISE]={{71.3,30.7}},[zoneIDs.ICECROWN_CITADEL]={{-1,-1}}},
+            [objectKeys.zoneID] = zoneIDs.ICECROWN_CITADEL_DEATHBRINGERS_RISE,
+        },
+        [202240] = {
+            [objectKeys.spawns] = {},
         },
         [202336] = {
             [objectKeys.spawns] = {[zoneIDs.HALLS_OF_REFLECTION]={{84,88.1},{-1,-1}}},

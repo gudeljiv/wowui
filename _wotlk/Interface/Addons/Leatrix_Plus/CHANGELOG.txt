@@ -1,3 +1,6 @@
+3.0.169 - 20th December 2023
+- Added flight times.
+
 3.0.168 - 11th December 2023
 - For 'Enhance minimap' ('Interface'), fixed an issue which caused some minimap addon buttons to not be placed correctly.
 - Added flight times.

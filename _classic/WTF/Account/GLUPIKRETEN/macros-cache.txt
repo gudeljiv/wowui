@@ -24,13 +24,13 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /use item:2287
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:5503
 /cast feed pet
-/use item:2287
+/use item:5503
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:0
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip

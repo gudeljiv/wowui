@@ -1042,7 +1042,9 @@ data["Tailoring"] = {
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
 			{ 1, 429351 }, --Extraplanar Spidersilk Boots
-			{ 2, 428425 }, --Phoenix Bindings
+			{ 2, 428424 }, --Phoenix Bindings
+			{ 3, 435841 }, --Invoker's Cord
+			{ 4, 435848 }, --Invoker's Mantle
 
 			}
 		},

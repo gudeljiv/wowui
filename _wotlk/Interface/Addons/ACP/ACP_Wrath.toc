@@ -1,4 +1,4 @@
-## Interface: 30401
+## Interface: 30402
 
 ## Title: Addon Control Panel
 ## Author: Sylvanaar (Sylvaan - Zul'Jin/US-Horde)

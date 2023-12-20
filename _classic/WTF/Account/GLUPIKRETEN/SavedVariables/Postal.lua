@@ -12,7 +12,7 @@ Postal3DB = {
 				"Dopemend|Lone Wolf|Horde|1|PRIEST", -- [7]
 				"Doperage|Lone Wolf|Horde|20|WARRIOR", -- [8]
 				"Dopesick|Stitches|Horde|3|WARRIOR", -- [9]
-				"Dopesnare|Lone Wolf|Horde|18|HUNTER", -- [10]
+				"Dopesnare|Lone Wolf|Horde|21|HUNTER", -- [10]
 				"Dopesnare|Stitches|Horde|40|HUNTER", -- [11]
 				"Dopetrap|Lone Wolf|Horde|1|HUNTER", -- [12]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [13]

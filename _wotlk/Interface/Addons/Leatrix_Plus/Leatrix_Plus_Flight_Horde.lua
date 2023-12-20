@@ -3349,6 +3349,8 @@
 				["0.95:0.63:0.85:0.73:0.74:0.71:0.49:0.58:0.45:0.51:0.48:0.44"] = 482, -- Vengeance Landing, New Agamand, Kamagua, Moa'ki, Agmar's Hammer, Kor'koron Vanguard
 				["0.95:0.63:0.84:0.59:0.74:0.62:0.74:0.71:0.49:0.58:0.29:0.57:0.29:0.54:0.18:0.47"] = 603, -- Vengeance Landing, Camp Winterhoof, Apothecary Camp, Kamagua, Moa'ki, Unu'pe, Taunka'le Village, Bor'gorok Outpost
 				["0.95:0.63:0.85:0.73:0.59:0.55:0.54:0.52:0.45:0.51:0.29:0.54:0.15:0.57"] = 595, -- Vengeance Landing, New Agamand, Venomspite, Wyrmrest Temple, Agmar's Hammer, Taunka'le Village, Warsong Hold
+				["0.95:0.63:0.85:0.73:0.59:0.55:0.64:0.42:0.52:0.38"] = 430, -- Vengeance Landing, New Agamand, Venomspite, Ebon Watch, Dalaran
+				["0.95:0.63:0.84:0.59:0.74:0.62:0.59:0.55:0.64:0.42:0.52:0.38"] = 397, -- Vengeance Landing, Camp Winterhoof, Apothecary Camp, Venomspite, Ebon Watch, Dalaran
 
 				----------------------------------------------------------------------
 				-- Horde: Icecrown
@@ -3460,7 +3462,7 @@
 				["0.49:0.21:0.52:0.38:0.31:0.43:0.29:0.54:0.17:0.53:0.12:0.53"] = 479, -- Argent Tournament Grounds, Dalaran, Warsong Camp, Taunka'le Village, Amber Ledge, Transitus Shield
 
 				-- Horde: Icecrown: Crusaders' Pinnacle
-				["0.52:0.34:0.56:0.36:0.52:0.38:0.54:0.52"] = 175, -- Crusaders' Pinnacle, The Argent Vanguard, Dalaran, Wyrmrest Temple
+				["0.52:0.34:0.56:0.36:0.52:0.38:0.54:0.52"] = 175, -- Crusaders' Pinnacle, The Argent Vanguard, Dalaran, Wyrmrest Temple (Gary Stepp reported 89)
 				["0.52:0.34:0.52:0.38"] = 72, -- Crusaders' Pinnacle, Dalaran
 				["0.52:0.34:0.31:0.43"] = 159, -- Crusaders' Pinnacle, Warsong Camp
 				["0.52:0.34:0.38:0.21"] = 124, -- Crusaders' Pinnacle, The Shadow Vault

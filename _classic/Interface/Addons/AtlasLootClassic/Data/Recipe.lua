@@ -957,7 +957,9 @@ RECIPE_DATA.CLASSIC = {
 	[210779] = {2,150,427063}, -- Plans: Mantle of the Second War
 	[211849] = {10,100,430409}, -- Formula: Blackfathom Mana Oil
 	[210178] = {9,135,424641}, -- Schematic: Shredder Autosalvage Unit
-	[211247] = {8,125,428425}, -- Pattern: Phoenix Bindings
+	[211247] = {8,125,428424}, -- Pattern: Phoenix Bindings
+	[215369] = {8,125,435841}, -- Pattern: Invoker's Cord
+	[215370] = {8,125,435848}, -- Pattern: Invoker's Mantle
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

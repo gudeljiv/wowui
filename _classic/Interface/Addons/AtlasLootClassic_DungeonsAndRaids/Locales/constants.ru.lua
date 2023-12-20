@@ -343,6 +343,7 @@ AL["Wushoolay"] = "Вушулай"
 AL["Ysondre"] = "Исондра"
 AL["Zerillis"] = "Зериллис"
 AL["Zevrim Thornhoof"] = "Зеврим Терновое Копыто"
+AL["Lorgus Jett"] = "Лоргус Джетт"
 
 if AtlasLoot:GameVersion_LT(AtlasLoot.BC_VERSION_NUM) then return end
 -- DungeonsAndRaidsTBC
