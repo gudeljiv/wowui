@@ -83,13 +83,16 @@ end
 
 function RSUtils.GetSortedKeysByValue(tbl, sortFunction)
 	local keys = {}
-	for key in pairs(tbl) do
-    	table.insert(keys, key)
- 	end
-
-  	table.sort(keys, function(a, b)
-    	return sortFunction(tbl[a], tbl[b])
-  	end)
+	
+	if (tbl) then
+		for key in pairs(tbl) do
+	    	table.insert(keys, key)
+	 	end
+	
+	  	table.sort(keys, function(a, b)
+	    	return sortFunction(tbl[a], tbl[b])
+	  	end)
+	end
 
   	return keys
 end
@@ -145,6 +148,19 @@ function RSUtils.Lpad(s, l, c)
 	return res, res ~= s
 end
 
+function RSUtils.Rpad(s, l, c)
+	if (type(s) ~= "string") then
+		s = tostring(s)
+	end
+	
+	if (l - #s > 0) then
+		local res = s.. string.rep(c or ' ', l - #s)
+		return res, res ~= s
+	end
+
+	return s
+end
+
 function RSUtils.tostring(s)
 	if (s) then
 		return tostring(s)
@@ -194,9 +210,13 @@ end
 ---============================================================================
 
 function RSUtils.FixCoord(coord)
-	if (tonumber(coord) <= 1) then
-		return tonumber(coord)
+	if (RSUtils.Contains(tostring(coord), "0.")) then
+		coord = RSUtils.Rpad(tostring(coord):gsub('(0%.)',''), 4, '0')
+	end
+	
+	if (tonumber(strsub(coord, 1, 2)) == 0) then
+		return tonumber(string.format("0.%s00", strsub(coord, 3)));
 	else
-		return tonumber("0."..coord);
+		return tonumber(string.format("0.%s", coord));
 	end
 end

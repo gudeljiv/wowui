@@ -569,7 +569,16 @@ local function loadAshenvaleOverlay()
 		frame.background:SetFrameLevel(7);
 		frame:SetMovable(true);
 		frame:EnableMouse(true);
-		frame:SetPoint("CENTER", UIParent, 0, 100);
+		frame:SetUserPlaced(false);
+		if (NWB.db.global[frame:GetName() .. "_point"]) then
+			frame.ignoreFramePositionManager = true;
+			frame:ClearAllPoints();
+			frame:SetPoint(NWB.db.global[frame:GetName() .. "_point"], nil, NWB.db.global[frame:GetName() .. "_relativePoint"],
+					NWB.db.global[frame:GetName() .. "_x"], NWB.db.global[frame:GetName() .. "_y"]);
+			frame:SetUserPlaced(false);
+		else
+			frame:SetPoint("CENTER", UIParent, 0, 100);
+		end
 		frame:SetSize(80, 75);
 		frame:SetScript("OnMouseDown", function(self, button)
 			if (button == "LeftButton" and not self.isMoving) then
@@ -584,6 +593,9 @@ local function loadAshenvaleOverlay()
 			if (button == "LeftButton" and self.isMoving) then
 				self:StopMovingOrSizing();
 				self.isMoving = false;
+				frame:SetUserPlaced(false);
+				NWB.db.global[frame:GetName() .. "_point"], _, NWB.db.global[frame:GetName() .. "_relativePoint"], 
+						NWB.db.global[frame:GetName() .. "_x"], NWB.db.global[frame:GetName() .. "_y"] = frame:GetPoint();
 			end
 		end)
 		frame:SetScript("OnHide", function(self)

@@ -69,7 +69,7 @@ end
 
 local npcFound = false
 local function OnAddonActionForbidden(addonName, functionName)
-	if (addonName == 'RareScanner' and functionName == 'TargetUnit()') then
+	if (addonName == 'RareScanner') then
 		npcFound = true
 	end
 end
@@ -154,7 +154,7 @@ local function CheckUnits(rareScannerButton)
 		if (not checkUnitsRoutine) then
 			checkUnitsRoutine = RSRoutines.LoopIndexRoutineNew()
 		end
-		checkUnitsRoutine:Init(function() return npcIDs end, 10)
+		checkUnitsRoutine:Init(function() return npcIDs end, 30)
 	end
 	
 	checkUnitsRoutine:Reset()

@@ -24,8 +24,8 @@ RSConstants.LOOT_ITEM_ID = nil
 -- Current versions
 ---============================================================================
 
-RSConstants.CURRENT_DB_VERSION = 3
-RSConstants.CURRENT_LOOT_DB_VERSION = 3
+RSConstants.CURRENT_DB_VERSION = 4
+RSConstants.CURRENT_LOOT_DB_VERSION = 4
 
 ---============================================================================
 -- Current maps (newer)
@@ -85,41 +85,41 @@ RSConstants.MAP_ANIMATIONS_ON_BOTH = 3
 RSConstants.PROFILE_DEFAULTS = {
 	profile = {
 		general = {
+			rescanTimer = 5,
 			scanRares = true,
 			scanContainers = true,
 			scanInstances = false,
 			scanOnTaxi = true,
 			scanTargetUnit = false,
-			filteredRares = {},
-			filteredContainers = {},
-			filteredZones = {},
-			enableTomtomSupport = false,
-			autoTomtomWaypoints = false,
 			showMaker = true,
 			marker = 8,
-			rescanTimer = 5
+			enableTomtomSupport = false,
+			autoTomtomWaypoints = false,
+			filteredRares = {},
+			filteredContainers = {},
+			filteredZones = {}
 		},
 		sound = {
 			soundDisabled = false,
-			soundPlayed = "Horn",
 			soundObjectDisabled = false,
-			soundObjectPlayed = "PVP Horde",
-			soundVolume = 4,
 			soundChannel = "Master",
+			soundVolume = 4,
+			soundPlayed = "Horn",
+			soundObjectPlayed = "PVP Horde",
 			soundCustomFolder = "RareScannerSounds"
 		},
 		display = {
 			displayButton = true,
 			displayMiniature = true,
 			displayButtonContainers = true,
-			scale = 0.8,
 			autoHideButton = 0,
+			scale = 0.8,
+			lockPosition = false,
 			displayRaidWarning = true,
 			displayChatMessage = true,
 			displayTimestampChatMessage = true,
 			enableNavigation = true,
 			navigationLockEntity = false,
-			lockPosition = false,
 			minimapButton = {
 				hide = false
 			},
@@ -149,6 +149,7 @@ RSConstants.PROFILE_DEFAULTS = {
 		map = {
 			displayNpcIcons = true,
 			displayNotDiscoveredNpcIcons = true,
+			displayCustomGroupNpcIcons = {},
 			displayOtherRaresNpcIcons = true,
 			displayContainerIcons = true,
 			displayNotDiscoveredContainerIcons = true,
@@ -191,8 +192,8 @@ RSConstants.PROFILE_DEFAULTS = {
 			displayLootOnMap = true,
 			lootTooltipPosition = "ANCHOR_LEFT",
 			lootMinQuality = 0,
-			filterNotEquipableItems = false,
 			filterItemsCompletedQuest = true,
+			filterNotEquipableItems = false,
 			filterNotMatchingClass = false,
 			filterNotMatchingFaction = true,
 			numItems = 10,
@@ -251,6 +252,12 @@ RSConstants.ALL_ZONES = "all"
 RSConstants.UNKNOWN_ZONE_ID = 0
 
 ---============================================================================
+-- Custom NPCs
+---============================================================================
+
+RSConstants.DEFAULT_GROUP = 0
+
+---============================================================================
 -- Textures
 ---============================================================================
 
@@ -261,6 +268,7 @@ RSConstants.GROUP_LEFT_TEXTURE_FILE = "GroupL"
 RSConstants.NORMAL_NPC_TEXTURE_FILE = "OriginalSkull"
 RSConstants.RED_NPC_TEXTURE_FILE = "RedSkullDark"
 RSConstants.PINK_NPC_TEXTURE_FILE = "PinkSkullDark"
+RSConstants.PURPLE_NPC_TEXTURE_FILE = "CustomSkull"
 RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE = "BlueSkullLight"
 RSConstants.NORMAL_CONTAINER_TEXTURE_FILE = "OriginalChest"
 RSConstants.RED_CONTAINER_TEXTURE_FILE = "RedChest"
@@ -293,6 +301,13 @@ RSConstants.GROUP_PINK_NPC_T_TEXTURE = string.format(RSConstants.TEXTURE_PATH, s
 RSConstants.GROUP_PINK_NPC_L_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.PINK_NPC_TEXTURE_FILE, RSConstants.GROUP_LEFT_TEXTURE_FILE));
 RSConstants.GROUP_PINK_NPC_R_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.PINK_NPC_TEXTURE_FILE, RSConstants.GROUP_RIGHT_TEXTURE_FILE));
 RSConstants.LIGHT_BLUE_NPC_TEXTURE = string.format(RSConstants.TEXTURE_PATH, RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE);
+RSConstants.GROUP_LIGHT_BLUE_NPC_T_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE, RSConstants.GROUP_TOP_TEXTURE_FILE));
+RSConstants.GROUP_LIGHT_BLUE_NPC_L_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE, RSConstants.GROUP_LEFT_TEXTURE_FILE));
+RSConstants.GROUP_LIGHT_BLUE_NPC_R_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE, RSConstants.GROUP_RIGHT_TEXTURE_FILE));
+RSConstants.PURPLE_NPC_TEXTURE = string.format(RSConstants.TEXTURE_PATH, RSConstants.PURPLE_NPC_TEXTURE_FILE);
+RSConstants.GROUP_PURPLE_NPC_T_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.PURPLE_NPC_TEXTURE_FILE, RSConstants.GROUP_TOP_TEXTURE_FILE));
+RSConstants.GROUP_PURPLE_NPC_L_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.PURPLE_NPC_TEXTURE_FILE, RSConstants.GROUP_LEFT_TEXTURE_FILE));
+RSConstants.GROUP_PURPLE_NPC_R_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.PURPLE_NPC_TEXTURE_FILE, RSConstants.GROUP_RIGHT_TEXTURE_FILE));
 RSConstants.NORMAL_CONTAINER_TEXTURE = string.format(RSConstants.TEXTURE_PATH, RSConstants.NORMAL_CONTAINER_TEXTURE_FILE);
 RSConstants.GROUP_NORMAL_CONTAINER_T_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.NORMAL_CONTAINER_TEXTURE_FILE, RSConstants.GROUP_TOP_TEXTURE_FILE));
 RSConstants.GROUP_NORMAL_CONTAINER_L_TEXTURE = string.format(RSConstants.TEXTURE_PATH, string.format("%s%s", RSConstants.NORMAL_CONTAINER_TEXTURE_FILE, RSConstants.GROUP_LEFT_TEXTURE_FILE));

@@ -487,23 +487,3 @@ end
 function RSGeneralDB.SetLastCleanDb()
 	private.dbchar.lastClean = time()
 end
-
----============================================================================
--- Search plugin integration
----============================================================================
-
-function RSGeneralDB.ClearWorldMapTextFilter()
-	private.dbchar.worldMapTextFilter = nil
-end
-
-function RSGeneralDB.GetWorldMapTextFilter()
-	return private.dbchar.worldMapTextFilter
-end
-
-function RSGeneralDB.SetWorldMapTextFilter(text)
-	if (text == '') then
-		RSGeneralDB.ClearWorldMapTextFilter()
-	else
-		private.dbchar.worldMapTextFilter = text
-	end
-end

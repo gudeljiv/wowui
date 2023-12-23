@@ -244,7 +244,7 @@ function NWB:printBuffTimers(isLogon)
 			NWB:print("|HNWBCustomLink:timers|h" .. msg .. "|h", nil, "[DMF]");
 		end
 	end
-	if (NWB.isDmfUp and NWB.data.myChars[UnitName("player")].buffs) then
+	if ((NWB.isDmfUp or NWB.isSOD) and NWB.data.myChars[UnitName("player")].buffs) then
 		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
 		if (dmfCooldown > 0 and not noMsgs) then
 			if ((not isLogon and NWB.db.global.showDmfBuffWb) or NWB.db.global.logonDmfBuffCooldown) then
@@ -767,7 +767,7 @@ function NWB:ticker()
 	if (NWB.data.myChars[UnitName("player")].dmfCooldown) then
 		NWB.data.myChars[UnitName("player")].dmfCooldown = NWB.data.myChars[UnitName("player")].dmfCooldown - 1;
 		if (lastDmfTick >= 1 and NWB.data.myChars[UnitName("player")].dmfCooldown <= 0) then
-			if (NWB.isDmfUp) then
+			if (NWB.isDmfUp or NWB.isSOD) then
 				NWB:print(L["dmfBuffReset"]);
 			end
 			lastDmfTick = -99999;
@@ -1342,7 +1342,7 @@ function NWB:monsterYell(...)
 		else
 			NWB.data.hellfireRep = GetServerTime();
 		end
-	--elseif ((name == L["Dawnwatcher Selgorm"] or name == L["Horde Placeholder"]) and string.match(msg, L["the dread beast Aku'mai has been slain"])) then
+	--elseif ((name == L["Dawnwatcher Selgorm"] or name == L["Bashana Runetotem"]) and string.match(msg, L["the dread beast Aku'mai has been slain"])) then
 		--SoD Darnassus npc.
 		--print("darn yell", GetServerTime())
 		--This turned out to be only 6 seconds warning, probably not worth adding the yell to guild chat?
@@ -3247,7 +3247,7 @@ function NWB:dmfChronoCheck()
 		for k, v in pairs(NWB.data.myChars[UnitName("player")].storedBuffs) do
 			if (v.type == "dmf") then
 				NWB:addDmfCooldown();
-				if (NWB.isDmfUp) then
+				if (NWB.isDmfUp or NWB.isSOD) then
 					NWB:print("You have chronoboon released a Darkmoon Faire buff, a new 4 hour cooldown has started.");
 				end
 				return;
@@ -3380,14 +3380,15 @@ function NWB:storeBuffs()
 						or k == L["Sayge's Dark Fortune of Intelligence"] or k == L["Sayge's Dark Fortune of Spirit"]
 						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
 						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
-						or k == L["Sayge's Dark Fortune of Damage"]) then
+						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
 					end
 				elseif (v.npcID and (v.npcID == 14392 or v.npcID == 14394
 						or v.npcID == 14720 or v.npcID == 14721 or v.npcID == 4949 or v.npcID == 10719 or v.npcID == 14875
-						or v.npcID == 15076 or v.npcID == 14326 or v.npcID == 14321 or v.npcID == 14323)) then
+						or v.npcID == 15076 or v.npcID == 14326 or v.npcID == 14321 or v.npcID == 14323
+						or v.npcID == 9087 or v.npcID == 4783)) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
@@ -8422,7 +8423,7 @@ function NWB:updateDmfMarkers(type)
     	tooltipText = tooltipText .. NWB:getTimeFormat(timestamp, true);
     	local dmfFound;
     	local buffText = "";
-    	if (NWB.isDmfUp) then
+    	if (NWB.isDmfUp or NWB.isSOD) then
     		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
 			if (dmfCooldown > 0 and not noMsgs) then
 				buffText = "\n" .. string.format(L["dmfBuffCooldownMsg"],  NWB:getTimeString(dmfCooldown, true));
@@ -8551,6 +8552,10 @@ end
 local d = NWB.realm;
 function NWB:refreshDmfMarkers()
 	if (not NWB.dmfZone) then
+		return;
+	end
+	if (NWB.isSOD) then
+		--Hide dmf markers in sod until we work out the new rotation, is it just every 2nd week?
 		return;
 	end
 	local x, y, mapID, worldX, worldY, worldMapID;
@@ -8972,12 +8977,12 @@ function NWB:recalcBuffListFrame()
 	framesUsed = {};
 	usedLineFrameCount = 0;
 	offset = 40; --Start offset, per line offset.
-	if (NWB.isDmfUp) then
+	if (NWB.isDmfUp or NWB.isSOD) then
 		offset = 57;
 		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
 		if (dmfCooldown > 0 and not noMsgs) then
 			NWBbuffListFrame.fs3:SetText(string.format(L["dmfBuffCooldownMsg2"],  NWB:getTimeString(dmfCooldown, true)));
-	    else
+	    elseif (NWB.isDmfUp) then
 	    	NWBbuffListFrame.fs3:SetText(L["dmfBuffReady"]);
 	    end
 	end

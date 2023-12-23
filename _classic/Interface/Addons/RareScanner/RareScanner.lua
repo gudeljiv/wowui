@@ -742,6 +742,46 @@ local function RefreshDatabaseData(previousDbVersion)
 		table.insert(routines, fixZoneFilters)
 	end
 
+	-- Update older custom NPCs to newer (10.2.0)
+	if (RSUtils.GetTableLength(private.dbglobal.custom_npcs) > 0) then
+		local needFix = false
+		for customNpcID, customNpcInfo in pairs (private.dbglobal.custom_npcs) do
+			if (not private.dbglobal.custom_npcs.custom or not private.dbglobal.custom_npcs.noVignette) then
+				needFix = true
+				break;
+			end
+		end
+
+		local fixCustomNpcs = RSRoutines.LoopRoutineNew()
+		fixCustomNpcs:Init(function() return private.dbglobal.custom_npcs end, 100,
+			function(context, customNpcID, customNpcInfo)
+				customNpcInfo.custom = true
+				customNpcInfo.noVignette = true
+				customNpcInfo.nameplate = nil
+				-- If decimal values (older custom NPCs), transform to newer coord system
+				if (type(customNpcInfo.zoneID) == "table") then
+					for zoneID, zoneInfo in pairs (customNpcInfo.zoneID) do
+						if (zoneID ~= RSConstants.ALL_ZONES_CUSTOM_NPC and zoneInfo.x and zoneInfo.y) then
+							customNpcInfo.zoneID[zoneID].x = RSUtils.Rpad(tostring(zoneInfo.x):gsub('(0%.)',''), 4, '0')
+							customNpcInfo.zoneID[zoneID].y = RSUtils.Rpad(tostring(zoneInfo.y):gsub('(0%.)',''), 4, '0')
+						end
+					end
+				else
+					if (customNpcInfo.zoneID ~= RSConstants.ALL_ZONES_CUSTOM_NPC and customNpcInfo.x and customNpcInfo.y) then
+						customNpcInfo.x = RSUtils.Rpad(tostring(customNpcInfo.x):gsub('(0%.)',''), 4, '0')
+						customNpcInfo.y = RSUtils.Rpad(tostring(customNpcInfo.y):gsub('(0%.)',''), 4, '0')
+					end
+				end
+
+				private.dbglobal.custom_npcs[customNpcID] = customNpcInfo
+			end, 
+			function(context)			
+				RSLogger:PrintDebugMessage("Migrados NPCs personalizados")
+			end
+		)
+		table.insert(routines, fixCustomNpcs)
+	end
+	
 	-- Launch all the routines in order
 	local chainRoutines = RSRoutines.ChainLoopRoutineNew()
 	chainRoutines:Init(routines)

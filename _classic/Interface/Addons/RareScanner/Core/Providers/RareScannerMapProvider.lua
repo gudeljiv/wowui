@@ -185,11 +185,6 @@ function RareScannerDataProviderMixin:RefreshAllData(fromOnShow)
 			if (POI.isGroup) then
 				pin = self:GetMap():AcquirePin("RSGroupPinTemplate", POI, self);
 
-				-- Animates the ping in case the filter is on
-				if (RSGeneralDB.GetWorldMapTextFilter()) then
-					pin.ShowSearchAnim:Play();
-				end
-
 				-- Adds children overlay/guide
 				for _, childPOI in ipairs (POI.POIs) do
 					-- Adds overlay if active
@@ -202,11 +197,6 @@ function RareScannerDataProviderMixin:RefreshAllData(fromOnShow)
 			else
 				RSLogger:PrintDebugMessageEntityID(POI.entityID, string.format("Mostrando Entidad [%s].", POI.entityID))
 				pin = self:GetMap():AcquirePin("RSEntityPinTemplate", POI, self);
-
-				-- Animates the ping in case the filter is on
-				if (RSGeneralDB.GetWorldMapTextFilter()) then
-					pin.ShowSearchAnim:Play();
-				end
 
 				-- Adds overlay if active
 				-- Avoids adding multiple spots if the entity spawns in multiple places at the same time

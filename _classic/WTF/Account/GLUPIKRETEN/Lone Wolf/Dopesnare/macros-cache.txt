@@ -84,3 +84,9 @@ VER 3 0000000001000015 " " "134400"
 /startattack
 /use Legs Rune Ability
 END
+VER 3 0000000001000016 " " "134400"
+#showtooltip
+/assist pet
+/startattack
+/cast !Auto Shot
+END

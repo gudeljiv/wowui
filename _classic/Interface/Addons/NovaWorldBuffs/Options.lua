@@ -2098,15 +2098,20 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.63;
+	linesVersion = 2.64;
 	local lines = {
-		"-Adjusted Ashenvale \"data is old\" settings and tweaked how data is shared a little.",
+		"|cFFFF6900Version 2.64|r",
+		"-Disabled DMF map markers in SoD until we know for sure what the new rotation is, better to have no markers than have wrong markers (if you hve solid info on what time/day it starts/ends in your region please let me know).",
+		"-Enabled tracking of DMF buff cooldown in SoD even if the fair isn't up you will see it in buffs window if it's on cooldown, and get a msg in chat when the cooldown is reset.",
+		"-Fixed an issue with the new Ashenvale overlay not saving position for some people (you may need to set it's position again).",
+		"Fixed Boon of Blackfathom not showing up when chronobooned in the /buffs window (won't show until you boon it again after this update).",
+		"",
+		"|cFFFF6900Version 2.63 (Last Version)|r",
 		"-Added overlay you can enable in /nrc config (or shift right-click minimap button) to always show Ashenvale resources on your UI, dragable anywhere you want like a widget.",
 		"-Added sound when you get Blackfathom Boon buff so you can be tabbed out waiting for drop with background sounds on.",
 		"-Added sound when Ashenvale is close to starting (can be disabled in options).",
 		"-Added SoD option to hide Ony/nef/Rend timers below a certain level (default 60), hides them from city map and minimap button tooltip.",
 		"-Ashenvale perentages will now display even if data is older than 5 mins (up to 30mins), but will be displayed in orange with a warning msg that the data is old.",
-		"\n|cFFFF6900Note about Layers on SoD:|r |cFF9CD6DENWB is capped at tracking 10 layers max, this is so it's data size doesn't get too big to share amongst players easily. On most SoD realms with huge population right now there's more than 10 layers so if it is not showing what layer you're on then the reason is because you're not on one of the 10 recorded layers (or it's soon after restart and layers for the week haven't been fully recorded yet). It will likely go back down below 10 once launch hype fades a bit but until then it may be unreliable, sorry about that.|r",
 	};
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.

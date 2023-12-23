@@ -99,6 +99,10 @@ local function GetNpcLeftTexture(POI)
 		return RSConstants.GROUP_RED_NPC_L_TEXTURE
 	elseif (RSUtils.Contains(POI.Texture, RSConstants.NORMAL_NPC_TEXTURE_FILE)) then
 		return RSConstants.GROUP_NORMAL_NPC_L_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_LIGHT_BLUE_NPC_L_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.PURPLE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_PURPLE_NPC_L_TEXTURE
 	end
 end
 
@@ -109,6 +113,10 @@ local function GetNpcRightTexture(POI)
 		return RSConstants.GROUP_RED_NPC_R_TEXTURE
 	elseif (RSUtils.Contains(POI.Texture, RSConstants.NORMAL_NPC_TEXTURE_FILE)) then
 		return RSConstants.GROUP_NORMAL_NPC_R_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_LIGHT_BLUE_NPC_R_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.PURPLE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_PURPLE_NPC_R_TEXTURE
 	end
 end
 
@@ -119,6 +127,10 @@ local function GetNpcTopTexture(POI)
 		return RSConstants.GROUP_RED_NPC_T_TEXTURE
 	elseif (RSUtils.Contains(POI.Texture, RSConstants.NORMAL_NPC_TEXTURE_FILE)) then
 		return RSConstants.GROUP_NORMAL_NPC_T_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.LIGHT_BLUE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_LIGHT_BLUE_NPC_T_TEXTURE
+	elseif (RSUtils.Contains(POI.Texture, RSConstants.PURPLE_NPC_TEXTURE_FILE)) then
+		return RSConstants.GROUP_PURPLE_NPC_T_TEXTURE
 	end
 end
 

@@ -43,6 +43,7 @@
 	<Include file="Service\RSEventHandler.lua"/>
 	<Include file="Service\RSButtonHandler.lua"/>
 	<Include file="Service\RSTargetUnitTracker.lua"/>
+	<Include file="Service\RSCustomNpcs.lua"/>
 	
 	<!-- Tooltips -->
 	<Include file="Plugins\MapPlugin\Tooltips\RSNotes.lua"/>

@@ -73,11 +73,14 @@ function RSNpcPOI.GetNpcPOI(npcID, mapID, npcInfo, alreadyFoundInfo)
 	
 	if (npcInfo) then
 		POI.worldmap = npcInfo.worldmap
+		POI.custom = npcInfo.custom
 	end
 	
 	-- Textures
 	if (RSRecentlySeenTracker.IsRecentlySeen(npcID, POI.x, POI.y)) then
 		POI.Texture = RSConstants.PINK_NPC_TEXTURE
+	elseif (POI.custom) then
+		POI.Texture = RSConstants.PURPLE_NPC_TEXTURE
 	elseif (not POI.isDiscovered) then
 		POI.Texture = RSConstants.RED_NPC_TEXTURE
 	else
@@ -87,7 +90,7 @@ function RSNpcPOI.GetNpcPOI(npcID, mapID, npcInfo, alreadyFoundInfo)
 	return POI
 end
 
-local function IsNpcPOIFiltered(npcID, mapID, artID, zoneQuestID, onWorldMap, onMinimap)
+local function IsNpcPOIFiltered(npcID, mapID, artID, zoneQuestID, group, onWorldMap, onMinimap)
 	local name = RSNpcDB.GetNpcName(npcID)
 	
 	-- Skip if part of a disabled event
@@ -96,9 +99,9 @@ local function IsNpcPOIFiltered(npcID, mapID, artID, zoneQuestID, onWorldMap, on
 		return true
 	end
 	
-	-- Skip if filtering by name in the world map search box
-	if (name and RSGeneralDB.GetWorldMapTextFilter() and not RSUtils.Contains(name, RSGeneralDB.GetWorldMapTextFilter())) then
-		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Filtrado por nombre [%s][%s].", npcID, name, RSGeneralDB.GetWorldMapTextFilter()))
+	-- Skip if npc is part of a season and it is enabled
+	if (RSNpcDB.IsSeasonDisabled(npcID)) then
+		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Parte de una temporada desactivada.", npcID))
 		return true
 	end
 
@@ -107,13 +110,13 @@ local function IsNpcPOIFiltered(npcID, mapID, artID, zoneQuestID, onWorldMap, on
 		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Filtrado en opciones (filtro completo o mapa del mundo).", npcID))
 		return true
 	end
-	
-	-- Skip if other filtered
-	if (not RSConfigDB.IsShowingOtherRareNPCs()) then
-		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Filtrado otro NPC.", npcID))
+
+	-- Skip if custom NPC group filtered
+	if (group and RSConfigDB.IsCustomNpcGroupFiltered(group)) then
+		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Filtrado grupo.", npcID))
 		return true
 	end
-
+	
 	-- Skip if not showing friendly NPCs and this one is friendly
 	if (not RSConfigDB.IsShowingFriendlyNpcs() and RSNpcDB.IsInternalNpcFriendly(npcID)) then
 		RSLogger:PrintDebugMessageEntityID(npcID, string.format("Saltado NPC [%s]: Es amistoso.", npcID))
@@ -197,7 +200,7 @@ function RSNpcPOI.GetMapNotDiscoveredNpcPOIs(mapID, onWorldMap, onMinimap)
 		end
 
 		-- Skip if common filters
-		if (not filtered and not IsNpcPOIFiltered(npcID, mapID, RSNpcDB.GetInternalNpcArtID(npcID, mapID), npcInfo.zoneQuestId, onWorldMap, onMinimap)) then
+		if (not filtered and not IsNpcPOIFiltered(npcID, mapID, RSNpcDB.GetInternalNpcArtID(npcID, mapID), npcInfo.zoneQuestId, npcInfo.group, onWorldMap, onMinimap)) then
 			tinsert(POIs, RSNpcPOI.GetNpcPOI(npcID, mapID, npcInfo))
 		end
 	end
@@ -240,11 +243,13 @@ function RSNpcPOI.GetMapAlreadyFoundNpcPOI(npcID, alreadyFoundInfo, mapID, onWor
 
 	-- Skip if common filters
 	local zoneQuestID
+	local group
 	if (npcInfo) then
 		zoneQuestID = npcInfo.zoneQuestId
+		group = npcInfo.group
 	end
 
-	if (not IsNpcPOIFiltered(npcID, mapID, alreadyFoundInfo.artID, zoneQuestID, onWorldMap, onMinimap)) then
+	if (not IsNpcPOIFiltered(npcID, mapID, alreadyFoundInfo.artID, zoneQuestID, group, onWorldMap, onMinimap)) then
 		return RSNpcPOI.GetNpcPOI(npcID, mapID, npcInfo, alreadyFoundInfo)
 	end
 end
