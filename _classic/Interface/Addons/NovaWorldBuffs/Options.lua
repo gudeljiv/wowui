@@ -2107,7 +2107,7 @@ local function loadNewVersionFrame()
 		"Fixed Boon of Blackfathom not showing up when chronobooned in the /buffs window (won't show until you boon it again after this update).",
 		"",
 		"|cFFFF6900Version 2.63 (Last Version)|r",
-		"-Added overlay you can enable in /nrc config (or shift right-click minimap button) to always show Ashenvale resources on your UI, dragable anywhere you want like a widget.",
+		"-Added overlay you can enable in /nwb config (or shift right-click minimap button) to always show Ashenvale resources on your UI, dragable anywhere you want like a widget.",
 		"-Added sound when you get Blackfathom Boon buff so you can be tabbed out waiting for drop with background sounds on.",
 		"-Added sound when Ashenvale is close to starting (can be disabled in options).",
 		"-Added SoD option to hide Ony/nef/Rend timers below a certain level (default 60), hides them from city map and minimap button tooltip.",

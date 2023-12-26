@@ -861,7 +861,7 @@ L["Ashenvale Rallying Cry"] = "Ashenvale Rallying Cry";
 L["sodHeaderText"] = "Season of Discovery Options";
 
 L["disableOnlyNefRendBelowMaxLevelTitle"] = "Disable Ony/Nef/Rend Showing";
-L["disableOnlyNefRendBelowMaxLevelDesc"] = "Disable Ony/Nef/Rend Showing below a certain level?";
+L["disableOnlyNefRendBelowMaxLevelDesc"] = "Disable Ony/Nef/Rend Showing on the capital city map and minimap icon tooltip below a certain level? (Makes the minimap icon just show layers and not the buff timers)";
 
 L["disableOnlyNefRendBelowMaxLevelNumTitle"] = "Ony/Nef/Rend Min Level";
 L["disableOnlyNefRendBelowMaxLevelNumDesc"] = "Below which level should we hide Ony/Nef/Rend icons from the city map and minimap button tooltip?";

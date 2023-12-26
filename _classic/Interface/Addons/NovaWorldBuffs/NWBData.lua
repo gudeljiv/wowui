@@ -1268,7 +1268,7 @@ function NWB:createSettings(distribution)
 			["guildNpcWalking"] = NWB.db.global.guildNpcWalking,
 		};
 		if (not NWB.isClassic) then
-			data["guildTerok10"] = NWB.db.global.guildTerok10; --Shared setting with wrath for wintergrasp.
+			data[me]["guildTerok10"] = NWB.db.global.guildTerok10; --Shared setting with wrath for wintergrasp.
 		end
 	end
 	--data['faction'] = NWB.faction;
@@ -1671,10 +1671,12 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 										if (not NWB.validKeys[k]) then
 											--NWB:debug(data)
 											NWB:debug("Invalid key received:", k, v);
+											--NWB:debug(data);
 										end
 										--if (not NWB.validKeys[k] and not next(v)) then
 										if (not NWB.validKeys[k] and type(v) ~= "table") then
 											NWB:debug("Invalid key received2:", k, v);
+											--NWB:debug(data);
 										else
 											NWB.data.layers[layer][k] = v;
 										end
@@ -1856,6 +1858,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 			elseif (v ~= nil and k ~= "layers") then
 				if (not NWB.validKeys[k] and type(v) ~= "table") then
 					NWB:debug("Invalid key received3:", k, v);
+					--NWB:debug(data);
 				else
 					NWB.data[k] = v;
 					if (type(v) == "table" and k == sender and string.match(k, "%-") and next(v)) then

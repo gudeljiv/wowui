@@ -43,7 +43,6 @@ function Stats.CreateWindow()
     local mainFrame = CreateFrame("Frame", "ECS_StatsFrame", PaperDollItemsFrame, "BasicFrameTemplateWithInset")
     mainFrame:SetSize(ecs.general.window.width, ecs.general.window.height) -- Width, Height
     mainFrame:SetPoint("LEFT", PaperDollItemsFrame, "RIGHT", ecs.general.window.xOffset,  ecs.general.window.yOffset)
-
     mainFrame.title = mainFrame:CreateFontString(nil, "OVERLAY")
     mainFrame.title:SetFontObject("GameFontHighlight")
     mainFrame.title:SetPoint("CENTER", mainFrame.TitleBg, "CENTER", 11,  0)
@@ -106,7 +105,7 @@ function Stats.CreateWindow()
                 if EngravingFrame then
                     mainFrame:ClearAllPoints()
                     -- mainFrame:SetPoint("LEFT", EngravingFrame, "RIGHT", 10, 19)
-                    mainFrame:SetPoint("TOPLEFT", EngravingFrameSearchBox, "TOPRIGHT", 18, 5)
+					mainFrame:SetPoint("TOPLEFT", EngravingFrameSearchBox, "TOPRIGHT", 18, 5)
                 end
             end)
         end

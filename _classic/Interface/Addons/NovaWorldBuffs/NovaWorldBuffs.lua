@@ -23,9 +23,10 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NWB.isRetail = true;
 end
-if (C_Engraving and C_Engraving.IsEngravingEnabled()) then
+if (NWB.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
 	NWB.isSOD = true;
-	NWB_isSOD = true; --External use.
+	--local sodPhases = {[25]=1,[40]=2,[50]=3,[60]=4};
+	--NWB.sodPhase = sodPhases[(GetEffectivePlayerMaxLevel())];
 end
 --Temporary until actual launch.
 --if (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
@@ -1613,6 +1614,7 @@ local lastHeraldAlert = 0;
 --local speedtest = 0;
 local waitingCombatEnd, hideSummonPopup;
 local lastRendHandIn, lastOnyHandIn, lastNefHandIn, lastZanHandIn = 0, 0, 0, 0;
+NWB.lastBlackfathomBoon = 0;
 local unitDamageFrame = CreateFrame("Frame");
 function NWB:combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
@@ -2058,8 +2060,11 @@ function NWB:combatLogEventUnfiltered(...)
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199) then
 				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
-				NWB:playSound("soundsBlackfathomBoon", "bob");
-				NWB:print(L["blackfathomBoomBuffDropped"]);
+				if (GetServerTime() - NWB.lastBlackfathomBoon > 120) then
+					NWB.lastBlackfathomBoon = GetServerTime();
+					NWB:playSound("soundsBlackfathomBoon", "bob");
+					NWB:print(L["blackfathomBoomBuffDropped"]);
+				end
 			end
 		elseif (destName == UnitName("player") and spellName == L["Ashenvale Rallying Cry"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
@@ -12368,7 +12373,7 @@ MinimapLayerFrame.tooltip:SetFrameLevel(9);
 MinimapLayerFrame.tooltip.fs = MinimapLayerFrame.tooltip:CreateFontString("NWBVersionDragTooltipFS", "ARTWORK");
 MinimapLayerFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 MinimapLayerFrame.tooltip.fs:SetFont(NWB.regionFont, 10);
-MinimapLayerFrame.tooltip.fs:SetText("Target a NPC to\nupdate your layer");
+MinimapLayerFrame.tooltip.fs:SetText("Hold Shift to drag");
 MinimapLayerFrame.tooltip:SetWidth(MinimapLayerFrame.tooltip.fs:GetStringWidth() + 10);
 MinimapLayerFrame.tooltip:SetHeight(MinimapLayerFrame.tooltip.fs:GetStringHeight() + 10);
 MinimapLayerFrame:SetScript("OnEnter", function(self)
