@@ -1,3 +1,7 @@
+1.15.09 - 27th December 2023
+- For 'Automate quests' ('Automation'), you are now able to accept quests with soft targeting even if you are hard targeting another unit.  Fixed an issue which caused automatic turn-in to fail for certain quests with no objectives.
+- Added flight times.
+
 1.15.08 - 20th December 2023
 - Added flight times.
 

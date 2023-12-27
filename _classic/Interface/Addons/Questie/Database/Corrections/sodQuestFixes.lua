@@ -15,6 +15,7 @@ function SeasonOfDiscovery:LoadQuests()
     local sortKeys = QuestieDB.sortKeys
     local questFlags = QuestieDB.questFlags
     local specialFlags = QuestieDB.specialFlags
+    local factionIDs = QuestieDB.factionIDs
     local profKeys = QuestieProfessions.professionKeys
     local specKeys = QuestieProfessions.specializationKeys
 
@@ -22,6 +23,21 @@ function SeasonOfDiscovery:LoadQuests()
     -- TODO: ZoneIDs, sort keys
 
     return {
+        [76156] = {
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [76160] = {
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectives] = {nil,nil,{{206175}}},
+            [questKeys.preQuestSingle] = {76156},
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [76240] = {
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectives] = {nil,nil,{{206345}}},
+            [questKeys.preQuestSingle] = {76160},
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
         [77568] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
@@ -100,6 +116,12 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.requiredSpell] = -403919,
         },
+        [77669] = {
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410002, nil, 205420}}},
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
         [77670] = {
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
@@ -128,6 +150,15 @@ function SeasonOfDiscovery:LoadQuests()
         [78093] = {
             [questKeys.preQuestSingle] = {78092},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
+        },
+        [78114] = {
+            [questKeys.questLevel] = 22,
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
+        },
+        [78121] = {
+            [questKeys.questLevel] = 22,
+            [questKeys.preQuestSingle] = {78114},
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
         },
         [78124] = {
             [questKeys.questLevel] = -1,
@@ -175,19 +206,88 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
+        [78192] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.objectives] = {{{3733},{3732}}},
+            [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
+        },
+        [78193] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.preQuestSingle] = {78192},
+            [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
+        },
+        [78194] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.requiredRaces] = raceIDs.DWARF + raceIDs.HUMAN,
+        },
+        [78195] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.preQuestSingle] = {78194},
+            [questKeys.requiredRaces] = raceIDs.DWARF + raceIDs.HUMAN,
+        },
+        [78196] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.requiredRaces] = raceIDs.TROLL,
+        },
+        [78197] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.preQuestSingle] = {78196},
+            [questKeys.startedBy] = {{211229}},
+            [questKeys.requiredRaces] = raceIDs.TROLL,
+        },
+        [78198] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [78199] = {
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+            [questKeys.preQuestSingle] = {78198},
+            [questKeys.finishedBy] = {nil,{410168}},
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
         [78265] = {
             [questKeys.objectivesText] = {"Bring 24 Fish Oil to Grizzby."},
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
         [78266] = {
             [questKeys.objectivesText] = {"Bring 20 Dark Iron Ordinance to Grizzby."},
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
         [78267] = {
             [questKeys.objectivesText] = {"Bring 16 Shredder Turbocharger to Grizzby."},
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
         [78277] = {
             [questKeys.objectivesText] = {"Complete the quest chain starting with Resting in Pieces to receive the Living Bomb rune."},
             [questKeys.requiredSpell] = -415936,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
+        },
+        [78287] = {
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
+        },
+        [78288] = {
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
+        },
+        [78297] = {
+            [questKeys.preQuestSingle] = {78287},
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
+        },
+        [78304] = {
+            [questKeys.preQuestSingle] = {78288},
+            [questKeys.zoneOrSort] = zoneIDs.RATCHET,
+        },
+        [78506] = {
+            [questKeys.preQuestSingle] = {78920},
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [78537] = {
+            [questKeys.preQuestSingle] = {78506},
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [78575] = {
+            [questKeys.objectives] = {{{212694}}},
+            [questKeys.preQuestSingle] = {78537},
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
         [78611] = {
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
@@ -446,30 +546,47 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [79588] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
         [79589] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
         [79590] = {
             [questKeys.startedBy] = {{14832}},
             [questKeys.finishedBy] = {{14832}},
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 250}},
         },
         [79591] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
         [79592] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 250}},
         },
         [79593] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
         [79594] = {
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
         [79595] = {
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
+            [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
 
         --- Fake rune quests

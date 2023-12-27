@@ -2606,9 +2606,7 @@ L["If checked, you will be able to enlarge the player arrow."] = "Se marcado, vo
 L["If checked, you will be able to scale and move the map.|n|nScale the map by dragging the scale handle in the bottom-right corner.|n|nMove the map by dragging the border and frame edges."] = "Se marcado, você poderá dimensionar e mover o mapa.|n|nDimensione o mapa arrastando a alça da escala no canto inferior direito.|n|nMova o mapa arrastando as bordas da borda e do quadro."
 L["If checked, you will be able to set the opacity of the map."] = "Se marcado, você poderá definir a opacidade do mapa."
 L["If checked, you will be able to zoom further into the world map."] = "Se marcado, você poderá ampliar ainda mais o mapa-múndi."
-L["If checked, zone and continent dropdown menus will be shown in the map frame."] = [=[If checked, zone and continent dropdown menus will be shown in the map frame.
-
-Se marcado, os menus suspensos de zona e continente serão exibidos no quadro do mapa.]=]
+L["If checked, zone and continent dropdown menus will be shown in the map frame."] = "Se marcado, os menus suspensos de zona e continente serão exibidos no quadro do mapa."
 L["If checked, zone crossings will be shown.|n|nThese are clickable arrows that indicate the zone exit pathways."] = "Se marcada, as passagens de zona serão mostradas.|n|nEstas são setas clicáveis que indicam os caminhos de saída da zona."
 L["If checked, zone, dungeon and fishing skill levels will be shown."] = "Se marcado, os níveis de zona, masmorra e habilidade de pesca serão mostrados."
 L["Increase zoom level"] = "Aumentar o nível de zoom"

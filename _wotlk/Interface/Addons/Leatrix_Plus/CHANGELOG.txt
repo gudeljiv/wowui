@@ -1,3 +1,7 @@
+3.0.170 - 27th December 2023
+- Updated 'Automate quests' ('Automation') for soft targeting.
+- Added flight times.
+
 3.0.169 - 20th December 2023
 - Added flight times.
 
