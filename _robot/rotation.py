@@ -38,6 +38,7 @@ from os import listdir
 from os.path import isfile, join
 from pyautogui import *
 from pynput import keyboard
+from PIL import ImageGrab
 
 driver = interception()
 
@@ -46,7 +47,7 @@ dprint = False
 debug = False
 pause = True
 wow_class = "warrior"
-color_distance = 10
+color_distance = 1000
 
 screen_width = GetSystemMetrics(0)
 screen_height = GetSystemMetrics(1)
@@ -151,6 +152,19 @@ def color_similarity(base_col_val, oth_col_val):
     return math.sqrt(sum((base_col_val[i] - oth_col_val[i]) ** 2 for i in range(3)))
 
 
+# def get_class(clss, color_distance):
+#     found_class = False
+#     global wow_class
+#     for item in data["colors"]:
+#         for c in data["colors"][item]:
+#             rgb = parse_hex_color(c)
+#             if color_similarity(rgb, clss) <= color_distance:
+#                 found_class = True
+#                 wow_class = item
+
+#     return found_class, wow_class
+
+
 def get_class(clss, color_distance):
     found_class = False
     global wow_class
@@ -158,9 +172,10 @@ def get_class(clss, color_distance):
         for c in data["colors"][item]:
             rgb = parse_hex_color(c)
             if color_similarity(rgb, clss) <= color_distance:
-                found_class = True
+                color_distance = color_similarity(rgb, clss)
                 wow_class = item
 
+    found_class = True
     return found_class, wow_class
 
 
@@ -353,8 +368,20 @@ with keyboard.Listener(on_press=on_press) as listener:
                 clss = sct.grab(p_clss).pixel(math.floor(c_width / 2), math.floor(c_height / 2))
 
                 if debug:
+                    # screenshot = ImageGrab.grab()
+                    # screenshot.save(debug_folder + "_screenshot.png")
+
                     mss.tools.to_png(main_image.rgb, main_image.size, output=debug_folder + "1. main.png".format(**p_main))
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=debug_folder + "6. offgcd.png".format(**p_offgcd))
+
+                    # t_combat = sct.grab(p_combat)
+                    # t_interrupt = sct.grab(p_interrupt)
+                    # t_behind = sct.grab(p_behind)
+                    # t_clss = sct.grab(p_clss)
+                    # mss.tools.to_png(t_combat.rgb, t_combat.size, output=debug_folder + "2. combat.png".format(**p_combat))
+                    # mss.tools.to_png(t_interrupt.rgb, t_interrupt.size, output=debug_folder + "3. interrupt.png".format(**p_interrupt))
+                    # mss.tools.to_png(t_behind.rgb, t_behind.size, output=debug_folder + "4. behind.png".format(**p_behind))
+                    # mss.tools.to_png(t_clss.rgb, t_clss.size, output=debug_folder + "5. clss.png".format(**p_clss))
 
                 # matching closest class color to define in colors
                 found_class, wow_class = get_class(clss, color_distance)
