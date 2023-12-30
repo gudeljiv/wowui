@@ -37,8 +37,8 @@ TomTomDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -123,8 +123,8 @@ TomTomWaypointsM = {
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
@@ -209,9 +209,9 @@ TomTomWaypointsM = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
-		["Testxv - Golemagg"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Pitchwise - Ashbringer"] = {
 		},

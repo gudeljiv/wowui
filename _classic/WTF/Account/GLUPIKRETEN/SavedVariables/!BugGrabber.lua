@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11082,
+	["session"] = 11084,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1639,5 +1639,13 @@ BugGrabberDB = {
 			["session"] = 11079,
 			["counter"] = 34,
 		}, -- [213]
+		{
+			["message"] = "[string \"print(IsSpellKnown(\"Flanking Strike\"))\"]:1: Usage: IsSpellKnown(spellID[, isPet])",
+			["time"] = "2023/12/28 13:20:15",
+			["locals"] = "(*temporary) = \"Flanking Strike\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `IsSpellKnown'\n[string \"print(IsSpellKnown(\"Flanking Strike\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11084,
+			["counter"] = 1,
+		}, -- [214]
 	},
 }
