@@ -17,16 +17,16 @@ VER 3 0000000000000025 " " "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:1205
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
 /use item:3770
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:5469
 /cast feed pet
-/use item:3770
+/use item:5469
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
