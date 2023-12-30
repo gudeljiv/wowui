@@ -1,0 +1,6 @@
+
+SpeedyAutoLootDB = {
+	["global"] = {
+		["alwaysEnableAutoLoot"] = true,
+	},
+}

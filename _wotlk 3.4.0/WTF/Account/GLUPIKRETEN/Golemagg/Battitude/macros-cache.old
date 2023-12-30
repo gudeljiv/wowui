@@ -1,0 +1,7 @@
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast sinister strike
+/use 13
+/use 14
+END

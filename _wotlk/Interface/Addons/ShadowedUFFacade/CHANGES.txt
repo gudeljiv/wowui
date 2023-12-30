@@ -1,0 +1,130 @@
+commit 5d84b8c0ca60b5adfa3ed8ca4cd763b76a0ff023
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Sun Jul 22 13:21:23 2018 -0700
+
+    Version bump, added readme
+
+commit 3672409c3dd2ee133f40ad5812d1d8b4838c5e2d
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Tue Oct 14 04:36:51 2014 +0000
+
+    Version bumps for Warlords of Draenor
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@24 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 3127b12d4885d4f75280f37446e96ffcb93d52cf
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Thu Aug 30 05:32:45 2012 +0000
+
+    Version bump
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@22 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 844df9fb5df1b683b4352dcddabad3ffa2153c06
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Wed Nov 30 02:04:42 2011 +0000
+
+    Renamed to "Masque Skinner: ShadowedUF"
+    TOC bump
+    Removed legacy ButtonFacade support
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@20 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 9f4e76dc6c2f1de3b1584340aa6f59819a1045aa
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Thu Sep 1 04:23:02 2011 +0000
+
+    I knew there was a reason for the raw hook...
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@18 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit a030a17c45d40edb8a5eeb953458ff081b8f0f85
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Wed Aug 31 10:42:17 2011 +0000
+
+    Actually version bump the correct file this time
+    
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@16 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 52e7a17c0f37ba6068b87462e4cb5a5be18aa48e
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Wed Aug 31 10:41:33 2011 +0000
+
+    Version bump
+    
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@15 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit f00f2de59ba994d23154d5196b1e930abff8e308
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Wed Aug 31 08:29:11 2011 +0000
+
+    remove pkgmeta
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@14 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit a6b4ba3d11d54436103f82c51b6fe99facfb61d5
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Wed Aug 31 08:28:55 2011 +0000
+
+    Update hooking method
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@13 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit b4593888b3df75592c7cd72b0668a9f963ef492a
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Mon Aug 15 21:49:25 2011 +0000
+
+    Fixed the fix
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@11 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit be0850c3cd912e948241239c8e89295d4a357453
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Mon Aug 15 21:39:11 2011 +0000
+
+    Fix for Masque r366
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@9 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 6ee96ba9f43d66f4db414ebd0c4693d276065ebf
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Sat Jul 2 20:15:24 2011 +0000
+
+    Fix version number
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@7 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit c839ca89b3b0894ef7c7e8318fabccbfd2933d04
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Sat Jul 2 19:43:18 2011 +0000
+
+    Settings should now properly be restored on login when using ButtonFacade.
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@6 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 7f714847335d518adcadf84e3f3b7b3ce774cb12
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Sun May 29 04:40:23 2011 +0000
+
+    Fixed the borders.
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@4 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit 108bdfba7199e3fe1bf1cdc25cd879be04abe876
+Author: Andrew Scott <ascott18@gmail.com>
+Date:   Sun May 29 03:30:22 2011 +0000
+
+    Initial Import
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@2 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+
+commit a802e2b41c075f59ed2351cacbf2a278ad846459
+Author: root <root@fb7ea159-58ae-4998-b22d-a93ffbc84a7d>
+Date:   Sun May 29 03:23:59 2011 +0000
+
+    "shadoweduf-facade/mainline: Initial Import"
+    
+    git-svn-id: https://repos.curseforge.com/wow/shadoweduf-facade/trunk@1 fb7ea159-58ae-4998-b22d-a93ffbc84a7d
+

@@ -1,0 +1,20 @@
+
+JoanasGuides_Character = {
+	["lastGuide"] = "H29HF",
+	["custom"] = {
+	},
+	["bookmarks"] = {
+		["H29HF"] = {
+			["exited"] = {
+			},
+			["checkpoint"] = 0,
+			["stepID"] = "31-01",
+			["visited"] = {
+				true, -- [1]
+			},
+		},
+	},
+	["knownTaxis"] = {
+	},
+	["playerGUID"] = "Player-5220-01B468FB",
+}

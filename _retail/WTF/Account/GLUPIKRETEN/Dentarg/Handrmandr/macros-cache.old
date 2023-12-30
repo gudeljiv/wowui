@@ -1,0 +1,44 @@
+VER 3 0100000000000025 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast Jab
+END
+VER 3 0100000000000023 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Enveloping Mist
+END
+VER 3 0100000000000020 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Soothing Mist
+END
+VER 3 0100000000000021 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Chi Wave
+/use 13
+/use 14
+END
+VER 3 0100000000000024 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Renewing Mist
+/use 13
+/use 14
+END
+VER 3 0100000000000026 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cancelaura Spinning Crane Kick
+/cast Roll
+END
+VER 3 0100000000000022 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,help][] Detox
+END
+VER 3 010000000000001F " " "INV_Misc_QuestionMark"
+#showtooltip Surging Mist
+/cast Thunder Focus Tea
+/cast [@mouseover,exists,help][] Surging Mist
+END
+VER 3 0100000000000027 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Uplift
+/cast Thunder Focus Tea
+/cast Uplift
+END

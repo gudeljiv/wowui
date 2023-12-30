@@ -1,0 +1,3 @@
+
+NugComboBarDB_Character = {
+}

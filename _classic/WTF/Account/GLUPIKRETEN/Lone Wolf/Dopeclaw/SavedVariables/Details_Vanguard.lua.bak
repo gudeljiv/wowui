@@ -1,0 +1,3 @@
+
+_detalhes_databaseVanguard = {
+}

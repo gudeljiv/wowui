@@ -1,0 +1,2 @@
+
+SmallBlizRaidFramesDB = nil

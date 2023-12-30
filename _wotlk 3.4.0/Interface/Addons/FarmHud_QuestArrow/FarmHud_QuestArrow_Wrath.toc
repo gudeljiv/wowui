@@ -1,0 +1,13 @@
+## Interface: 30400
+## Title: FarmHud [QuestArrow]
+## Version: 9.1.1-release
+## Notes: Experimental way to suppress the quest arrow while FarmHud is active.
+## Author: Hizuro
+## Dependencies: FarmHud
+## DefaultState: enabled
+
+..\FarmHud\libs\LibStub\LibStub.lua
+..\FarmHud\libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+..\FarmHud\libs\HizurosSharedTools\HizurosSharedTools.lua
+
+FarmHud_QuestArrow.lua

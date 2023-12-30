@@ -1,0 +1,2 @@
+
+globalSettings = nil

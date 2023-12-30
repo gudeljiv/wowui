@@ -1,0 +1,48 @@
+VER 3 000000000100000B " " "134400"
+#showtooltip Mind Flay
+/use [nochanneling:Mind Flay] Mind Flay
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Power Word: Shield
+END
+VER 3 0000000001000003 " " "134400"
+#showtooltip Shoot
+/cast !Shoot
+END
+VER 3 0000000001000004 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Heal
+END
+VER 3 0000000001000005 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Renew
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Smite
+/cast Berserking
+END
+VER 3 0000000001000006 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,harm][] Shadow Word: Pain
+END
+VER 3 0000000001000008 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Dispel Magic
+END
+VER 3 0000000001000009 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Cure Disease
+END
+VER 3 000000000100000A " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][@target,exists,help][] Flash Heal
+END
+VER 3 0000000001000007 " " "134400"
+#showtooltip
+/startattack
+/cast Mind Blast
+/cast Berserking
+END

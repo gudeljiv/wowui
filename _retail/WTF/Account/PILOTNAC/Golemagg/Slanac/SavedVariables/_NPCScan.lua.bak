@@ -1,0 +1,24 @@
+
+_NPCScanOptionsCharacter = {
+	["NPCWorldIDs"] = {
+	},
+	["AchievementsAddFound"] = true,
+	["TrackMouseover"] = true,
+	["Modules"] = {
+	},
+	["AlertScreenEdgeFlash"] = true,
+	["FlightSupress"] = true,
+	["TargetIcon"] = 8,
+	["TrackBeasts"] = true,
+	["ModulesSaved"] = {
+	},
+	["TrackRares"] = true,
+	["Version"] = 5.1,
+	["ShowAll"] = false,
+	["ModulesExtra"] = {
+	},
+	["Achievements"] = {
+	},
+	["ModulesAlpha"] = {
+	},
+}

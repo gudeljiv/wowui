@@ -1,0 +1,19 @@
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Charge
+/startattack
+/cast Sunder Armor
+/cast Charge
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast heroic strike
+/cast overpower
+/cast bloodrage
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast cleave
+/cast overpower
+END
