@@ -1,9 +1,3 @@
-VER 3 0000000000000024 " " "134400"
-#showtooltip
-/use Solid Sharpening Stone
-/use [button:2] 17; 16
-/click StaticPopup1Button1
-END
 VER 3 0000000000000012 " " "136173"
 /click BehindTarget
 END
@@ -15,6 +9,12 @@ VER 3 0000000000000025 " " "134400"
 #showtooltip
 /cast [@cursor] Rough Copper Bomb
 END
+VER 3 0000000000000024 " " "134400"
+#showtooltip
+/use Solid Sharpening Stone
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use item:1205
@@ -24,9 +24,9 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /use item:3770
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:5469
+#showtooltip item:3770
 /cast feed pet
-/use item:5469
+/use item:3770
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip

@@ -41,24 +41,7 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Screech"] = {
-		["Rank 1"] = true,
-		["Rank 2"] = true,
-	},
-	["Nature Resistance"] = {
-		["Rank 3"] = true,
-		["Rank 1"] = true,
-		["Rank 2"] = true,
-	},
-	["Dive"] = {
-		["Rank 1"] = true,
-	},
-	["Arcane Resistance"] = {
-		["Rank 3"] = true,
-		["Rank 1"] = true,
-		["Rank 2"] = true,
-	},
-	["Claw"] = {
+	["Growl"] = {
 		["Rank 3"] = true,
 		["Rank 4"] = true,
 		["Rank 5"] = true,
@@ -73,10 +56,27 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Growl"] = {
+	["Arcane Resistance"] = {
+		["Rank 3"] = true,
+		["Rank 1"] = true,
+		["Rank 2"] = true,
+	},
+	["Dive"] = {
+		["Rank 1"] = true,
+	},
+	["Claw"] = {
 		["Rank 3"] = true,
 		["Rank 4"] = true,
 		["Rank 5"] = true,
+		["Rank 1"] = true,
+		["Rank 2"] = true,
+	},
+	["Nature Resistance"] = {
+		["Rank 3"] = true,
+		["Rank 1"] = true,
+		["Rank 2"] = true,
+	},
+	["Screech"] = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
