@@ -125,7 +125,7 @@ count = 0
 number = 0
 
 s, t = "", ""
-color_distance = 10
+color_distance = 1000
 
 
 def get_class(clss, color_distance):
@@ -135,15 +135,20 @@ def get_class(clss, color_distance):
         for c in data["colors"][item]:
             rgb = parse_hex_color(c)
             if color_similarity(rgb, clss) <= color_distance:
-                found_class = True
+                color_distance = color_similarity(rgb, clss)
                 wow_class = item
 
+    found_class = True
     return found_class, wow_class
 
 
 with keyboard.Listener(on_press=on_press) as listener:
     with mss.mss() as sct:
         while True:
+            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if active_window != "World of Warcraft":
+                continue
+
             start_time = time.time()
             # time.sleep(1)
 
