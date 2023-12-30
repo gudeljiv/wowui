@@ -1,6 +1,0 @@
-WeakAurasCompanion: enabled
-WeakAurasArchive: enabled
-nMainbar: enabled
-nHealth: disabled
-nPower: disabled
-WeaponSwingTimer: disabled

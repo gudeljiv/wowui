@@ -1,3 +1,0 @@
-
-EXTVENDOR_DATA = {
-}

@@ -1,6 +1,0 @@
-## Interface: 90005
-## Title: Click Links
-## Author: tannerng
-## Notes: Makes URLs clickable
-## Version: 1.0.9
-ClickLinks.lua
