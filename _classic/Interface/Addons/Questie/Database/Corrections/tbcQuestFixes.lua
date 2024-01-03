@@ -24,8 +24,10 @@ function QuestieTBCQuestFixes:Load()
     local questKeys = QuestieDB.questKeys
     local raceIDs = QuestieDB.raceKeys
     local classIDs = QuestieDB.classKeys
+    local factionIDs = QuestieDB.factionIDs
     local zoneIDs = ZoneDB.zoneIDs
     local sortKeys = QuestieDB.sortKeys
+    local questFlags = QuestieDB.questFlags
     local profKeys = QuestieProfessions.professionKeys
     local specKeys = QuestieProfessions.specializationKeys
 
@@ -472,15 +474,44 @@ function QuestieTBCQuestFixes:Load()
         [7792] = {
             [questKeys.startedBy] = {{20604},nil,nil},
             [questKeys.finishedBy] = {{20604},nil},
-            [questKeys.reputationReward] = {{930,350}},
+            [questKeys.reputationReward] = {{factionIDs.EXODAR,350}},
+        },
+        [7795] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7791,7793,7794},
         },
         [7798] = {
             [questKeys.startedBy] = {{20604},nil,nil},
             [questKeys.finishedBy] = {{20604},nil},
-            [questKeys.reputationReward] = {{930,350}},
+            [questKeys.reputationReward] = {{factionIDs.EXODAR,350}},
         },
         [7800] = {
+            [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {7799,10352,10354},
+        },
+        [7805] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7802,7803,7804},
+        },
+        [7811] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7807,7808,7809},
+        },
+        [7818] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7813,7814,7817},
+        },
+        [7823] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7820,7821,7822},
+        },
+        [7824] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7826,7827,7831},
+        },
+        [7836] = {
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {7833,7834,7835},
         },
         [7863] = {
             [questKeys.requiredMinRep] = {890,3000},
@@ -1012,7 +1043,7 @@ function QuestieTBCQuestFixes:Load()
         [9491] = {
             [questKeys.preQuestSingle] = {},
         },
-        [9494] = { 
+        [9494] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Gather a Fel Ember using Grand Warlock's Amulet"), 0, {{"object", 181679}}}},
         },
         [9498] = {
@@ -1768,12 +1799,12 @@ function QuestieTBCQuestFixes:Load()
         [10352] = {
             [questKeys.startedBy] = {{14725},nil,nil},
             [questKeys.finishedBy] = {{14725},nil},
-            [questKeys.reputationReward] = {{69,350}},
+            [questKeys.reputationReward] = {{factionIDs.DARNASSUS,350}},
         },
         [10354] = {
             [questKeys.startedBy] = {{14725},nil,nil},
             [questKeys.finishedBy] = {{14725},nil},
-            [questKeys.reputationReward] = {{69,350}},
+            [questKeys.reputationReward] = {{factionIDs.DARNASSUS,350}},
         },
         [10357] = {
             [questKeys.preQuestGroup] = {7792,7798,10356},
@@ -4809,7 +4840,7 @@ function QuestieTBCQuestFixes:Load()
                 [zoneIDs.ASHENVALE] = {{61.8,83.8}},
             }},
             [questKeys.zoneOrSort] = sortKeys.BATTLEGROUND,
-            [questKeys.questFlags] = 64,
+            [questKeys.questFlags] = questFlags.RAID,
             [questKeys.specialFlags] = 1,
         },
         -- Blood Elf Paladin Epic Mount quest
@@ -5278,4 +5309,27 @@ function _QuestieTBCQuestFixes:InsertMissingQuestIds()
     QuestieDB.questData[12407] = {} -- Candy Bucket
     QuestieDB.questData[12408] = {} -- Candy Bucket
     QuestieDB.questData[12409] = {} -- Candy Bucket
+end
+
+function QuestieTBCQuestFixes:LoadFactionFixes()
+    local questKeys = QuestieDB.questKeys
+    local raceIDs = QuestieDB.raceKeys
+
+    local questFixesHorde = {
+        [2861] = {
+            [questKeys.startedBy] = {{4568,5885,16651}}
+        },
+    }
+
+    local questFixesAlliance = {
+        [2861] = {
+            [questKeys.startedBy] = {{5144,5497,17514}}
+        },
+    }
+
+    if UnitFactionGroup("Player") == "Horde" then
+        return questFixesHorde
+    else
+        return questFixesAlliance
+    end
 end

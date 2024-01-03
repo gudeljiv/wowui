@@ -2,7 +2,7 @@
 ## Notes: GatherMate2 data fetched from Wowhead
 ## Title: GatherMate2Data
 ## Author: kagaro, Xinhuan, Spinx, Marrtin
-## Version: v2023-11-29
+## Version: v2024-01-02
 ## LoadOnDemand: 1
 ## Dependencies: GatherMate2
 

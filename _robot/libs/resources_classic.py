@@ -117,7 +117,7 @@ data = {
             {"name": "tranquilizing shot", "type": "GetSpellTexture", "id": 19801, "key": "k"},
             {"name": "wing clip", "type": "GetSpellTexture", "id": 2974, "key": "1", "modifier": "lalt"},
             {"name": "raptor strike", "type": "GetSpellTexture", "id": 2973, "key": "2", "modifier": "lalt"},
-            {"name": "mongoose bite", "type": "GetSpellTexture", "id": 2973, "key": "5", "modifier": "lalt"},
+            {"name": "mongoose bite", "type": "GetSpellTexture", "id": 1495, "key": "5", "modifier": "lalt"},
             {"name": "explosive shot", "type": "GetSpellTexture", "id": 409552, "key": "4", "modifier": "lshift"},
             {"name": "chimera shot", "type": "GetSpellTexture", "id": 409433, "key": "4", "modifier": "lshift"},
             {"name": "flanking strike", "type": "GetSpellTexture", "id": 415320, "key": "5", "modifier": "lshift"},

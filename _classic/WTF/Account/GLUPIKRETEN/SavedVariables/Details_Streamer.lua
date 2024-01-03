@@ -26,25 +26,25 @@ Details_StreamerDB = {
 		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
 		["Dopede - Stitches"] = "Mxyz - Golemagg",
 		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
-		["Dopetrap - Lone Wolf"] = "Mxyz - Golemagg",
-		["Dopesnare - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopeclaw - Lone Wolf"] = "Mxyz - Golemagg",
+		["Vermins - Stitches"] = "Mxyz - Golemagg",
 		["Wells - Jin'do"] = "Mxyz - Golemagg",
 		["Dopesnare - Stitches"] = "Mxyz - Golemagg",
-		["Tudum - Jin'do"] = "Mxyz - Golemagg",
+		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
 		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
 		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
-		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
+		["Tudum - Jin'do"] = "Mxyz - Golemagg",
 		["Dopeah - Stitches"] = "Mxyz - Golemagg",
 		["Dopeclaw - Stitches"] = "Mxyz - Golemagg",
-		["Vermins - Stitches"] = "Mxyz - Golemagg",
-		["Dopeclaw - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopesnare - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopetrap - Lone Wolf"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
@@ -74,15 +74,15 @@ Details_StreamerDB = {
 			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["author"] = "Details! Team",
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -90,14 +90,9 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -112,10 +107,15 @@ Details_StreamerDB = {
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["scale"] = 1,
-			["row_height"] = 18,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["use_square_mode"] = false,
 		},
 	},
 }

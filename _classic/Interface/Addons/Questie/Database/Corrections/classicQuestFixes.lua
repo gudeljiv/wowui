@@ -262,6 +262,7 @@ function QuestieQuestFixes:Load()
         },
         [518] = {
             [questKeys.preQuestSingle] = {},
+            [questKeys.reputationReward] = {{factionIDs.UNDERCITY,100}}
         },
         [522] = {
             [questKeys.startedBy] = {{2434},nil,{3668}},
@@ -775,6 +776,7 @@ function QuestieQuestFixes:Load()
         },
         [1361] = {
             [questKeys.exclusiveTo] = {1362},
+            [questKeys.startedBy] = {{2229,4485}},
         },
         [1364] = {
             [questKeys.preQuestSingle] = {1363}, -- #1674
@@ -829,6 +831,7 @@ function QuestieQuestFixes:Load()
             [questKeys.triggerEnd] = {"Rescue Dalinda Malem", {[zoneIDs.DESOLACE]={{58.27,30.91}}}},
         },
         [1442] = {
+            [questKeys.specialFlags] = 1,
             [questKeys.parentQuest] = 1654,
         },
         [1447] = {
@@ -956,6 +959,7 @@ function QuestieQuestFixes:Load()
             [questKeys.childQuests] = {1442,1655},
         },
         [1655] = {
+            [questKeys.specialFlags] = 1,
             [questKeys.parentQuest] = 1654,
         },
         [1661] = {
@@ -975,7 +979,7 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {1681}, -- #1724
         },
         [1681] = {
-            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestSingle] = {1678},
         },
         [1684] = {
             [questKeys.startedBy] = {{2151,3598,3657},nil,nil},
@@ -2557,6 +2561,9 @@ function QuestieQuestFixes:Load()
         [7622] = {
             [questKeys.triggerEnd] = {"The Balance of Light and Shadow", {[zoneIDs.EASTERN_PLAGUELANDS]={{21.19,17.79}}}}, -- #2332
         },
+        [7631] = {
+            [questKeys.requiredSourceItems] = {18663,18629,18670,18818},
+        },
         [7632] = {
             [questKeys.startedBy] = {{12018},{179703},{18703}},
         },
@@ -2629,9 +2636,6 @@ function QuestieQuestFixes:Load()
         },
         [7787] = {
             [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.PALADIN + classIDs.HUNTER + classIDs.ROGUE,
-        },
-        [7795] = {
-            [questKeys.preQuestSingle] = {7794},
         },
         [7816] = {
             [questKeys.preQuestSingle] = {}, -- #2247
@@ -3320,12 +3324,12 @@ function QuestieQuestFixes:Load()
         },
         [8767] = {
             [questKeys.requiredRaces] = raceIDs.NONE,
-            [questKeys.requiredClasses] = classIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE + classIDs.WARRIOR + classIDs.HUNTER + classIDs.PALADIN,
             [questKeys.exclusiveTo] = {8788},
         },
         [8788] = {
             [questKeys.requiredRaces] = raceIDs.NONE,
-            [questKeys.requiredClasses] = classIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST + classIDs.WARLOCK + classIDs.MAGE + classIDs.SHAMAN + classIDs.DRUID,
             [questKeys.exclusiveTo] = {8767},
         },
         [8791] = {

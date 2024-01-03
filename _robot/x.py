@@ -1,6 +1,7 @@
 from libs.ctypes_custom import KeyPress as cKeyPress
 import time
 from libs.interception import *
+
 driver = interception()
 
 
@@ -35,7 +36,6 @@ def ReleaseKey(interception_press):
 
 
 def press_interception_key(key, modifier=False):
-
     m = modifier
 
     if m:
@@ -53,9 +53,9 @@ SHIFT = 0x2A
 # time.sleep(3)
 # press_interception_key(X)
 # quit()
-time.sleep(3)
+time.sleep(1)
 for i in range(500):
     time.sleep(2)
     print("press X")
     press_interception_key(X)
-    # cKeyPress("x")
+    cKeyPress("x")
