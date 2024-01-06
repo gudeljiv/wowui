@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.09 (27th December 2023)
+-- 	Leatrix Plus 1.15.10 (3rd January 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.09"
+	LeaPlusLC["AddonVer"] = "1.15.10"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -344,15 +344,15 @@
 					return
 				else
 					EnableAddOn("ZygorGuidesViewerClassic")
-					ReloadUI();
+					ReloadUI()
 				end
 			else
 				DisableAddOn("ZygorGuidesViewerClassic")
-				ReloadUI();
+				ReloadUI()
 			end
 		else
 			-- Zygor cannot be found
-			LeaPlusLC:Print("Zygor addon not found.");
+			LeaPlusLC:Print("Zygor addon not found.")
 		end
 		return
 	end
@@ -1273,7 +1273,7 @@
 			-- Event handler
 			gossipFrame:SetScript("OnEvent", function()
 				-- Special treatment for specific NPCs
-				local npcGuid = UnitGUID("target") or nil
+				local npcGuid = UnitGUID("npc") or nil
 				if npcGuid and not IsShiftKeyDown() then
 					local void, void, void, void, void, npcID = strsplit("-", npcGuid)
 					if npcID then
@@ -7779,11 +7779,11 @@
 						local title, level, suggestedGroup = GetQuestLogTitle(quest)
 						if title and level then
 							if suggestedGroup then
-								if suggestedGroup == LFG_TYPE_DUNGEON then level = level .. "D"
-								elseif suggestedGroup == RAID then level = level ..  "R"
-								elseif suggestedGroup == ELITE then level = level ..  "+"
-								elseif suggestedGroup == GROUP then level = level ..  "+"
-								elseif suggestedGroup == PVP then level = level ..  "P"
+								if suggestedGroup == LFG_TYPE_DUNGEON then level = level .. L["D"]
+								elseif suggestedGroup == RAID then level = level .. L["R"]
+								elseif suggestedGroup == ELITE then level = level .. L["+"]
+								elseif suggestedGroup == GROUP then level = level .. L["+"]
+								elseif suggestedGroup == PVP then level = level .. L["P"]
 								end
 							end
 							QuestLogQuestTitle:SetText("[" .. level .. "] " .. title)
@@ -8148,7 +8148,7 @@
 
 					-- Shift key toggles music
 					if IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown() then
-						Sound_ToggleMusic();
+						Sound_ToggleMusic()
 						return
 					end
 
@@ -8162,10 +8162,10 @@
 						if LeaPlusDB["HideErrorMessages"] == "On" then -- Checks global
 							if LeaPlusLC["ShowErrorsFlag"] == 1 then
 								LeaPlusLC["ShowErrorsFlag"] = 0
-								ActionStatus_DisplayMessage(L["Error messages will be shown"], true);
+								ActionStatus_DisplayMessage(L["Error messages will be shown"], true)
 							else
 								LeaPlusLC["ShowErrorsFlag"] = 1
-								ActionStatus_DisplayMessage(L["Error messages will be hidden"], true);
+								ActionStatus_DisplayMessage(L["Error messages will be hidden"], true)
 							end
 							return
 						end
@@ -8177,18 +8177,18 @@
 						return
 					end
 
-					-- Control key and shift key toggles Zygor addon
-					if IsControlKeyDown() and IsShiftKeyDown() and not IsAltKeyDown() then
+					-- Control key and alt key toggles Zygor addon
+					if IsControlKeyDown() and IsAltKeyDown() and not IsShiftKeyDown() then
 						LeaPlusLC:ZygorToggle()
 						return
 					end
 
-					-- Control key and alt key toggles maximised window mode
-					if IsControlKeyDown() and IsAltKeyDown() and not IsShiftKeyDown() then
+					-- Control key and shift key toggles maximised window mode
+					if IsControlKeyDown() and IsShiftKeyDown() and not IsAltKeyDown() then
 						if LeaPlusLC:PlayerInCombat() then
 							return
 						else
-							SetCVar("gxMaximize", tostring(1 - GetCVar("gxMaximize")));
+							SetCVar("gxMaximize", tostring(1 - GetCVar("gxMaximize")))
 							UpdateWindow()
 						end
 						return
@@ -14580,22 +14580,22 @@
 			elseif str == "gossinfo" then
 				-- Print gossip frame information
 				if GossipFrame:IsShown() then
-					local npcName = UnitName("target")
-					local npcGuid = UnitGUID("target") or nil
+					local npcName = UnitName("npc")
+					local npcGuid = UnitGUID("npc") or nil
 					if npcName and npcGuid then
 						local void, void, void, void, void, npcID = strsplit("-", npcGuid)
 						if npcID then
 							LeaPlusLC:Print(npcName .. ": |cffffffff" .. npcID)
 						end
 					end
-					LeaPlusLC:Print("Available quests: |cffffffff" .. GetNumGossipAvailableQuests())
-					LeaPlusLC:Print("Active quests: |cffffffff" .. GetNumGossipActiveQuests())
-					LeaPlusLC:Print("Gossip count: |cffffffff" .. GetNumGossipOptions())
-					if GetGossipOptions() then
-						local void, gossipType = GetGossipOptions()
-						LeaPlusLC:Print("Gossip type: |cffffffff" .. gossipType)
+					LeaPlusLC:Print("Available quests: |cffffffff" .. C_GossipInfo.GetNumAvailableQuests())
+					LeaPlusLC:Print("Active quests: |cffffffff" .. C_GossipInfo.GetNumActiveQuests())
+					local gossipInfoTable = C_GossipInfo.GetOptions()
+					if gossipInfoTable and gossipInfoTable[1] and gossipInfoTable[1].name then
+						LeaPlusLC:Print("Gossip count: |cffffffff" .. #gossipInfoTable)
+						LeaPlusLC:Print("Gossip name: |cffffffff" .. gossipInfoTable[1].name)
 					else
-						LeaPlusLC:Print("Gossip type: |cffffffff" .. "Nil")
+						LeaPlusLC:Print("Gossip info: |cffffffff" .. "Nil")
 					end
 					if GossipTitleButton1 and GossipTitleButton1:GetText() then
 						LeaPlusLC:Print("First option: |cffffffff" .. GossipTitleButton1:GetText())
@@ -15192,7 +15192,7 @@
 	pg = "Page8";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Addon"						, 146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		false,	"If checked, a minimap button will be available.|n|nClick - Toggle options panel.|n|nSHIFT-click - Toggle music.|n|nALT-click - Toggle errors (if enabled).|n|nCTRL/SHIFT-click - Toggle Zygor (if installed).|n|nCTRL/ALT-click - Toggle windowed mode.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		false,	"If checked, a minimap button will be available.|n|nClick - Toggle options panel.|n|nSHIFT-click - Toggle music.|n|nALT-click - Toggle errors (if enabled).|n|nCTRL/SHIFT-click - Toggle windowed mode.|n|nCTRL/ALT-click - Toggle Zygor (if installed).")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72);
 	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelScale", "Drag to set the scale of the Leatrix Plus panel.", 1, 2, 0.1, 340, -92, "%.1f")

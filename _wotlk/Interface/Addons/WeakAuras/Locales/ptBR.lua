@@ -122,8 +122,6 @@ L["Afk"] = "Afk"
 L["Aggro"] = "Aggro"
 L["Agility"] = "Agilidade"
 L["Ahn'Qiraj"] = "Ahn'Qiraj"
---[[Translation missing --]]
-L["Alchemy Cast Bar"] = "Alchemy Cast Bar"
 L["Alert Type"] = "Tipo de alerta"
 --[[Translation missing --]]
 L["Algalon the Observer"] = "Algalon the Observer"
@@ -248,10 +246,6 @@ L["BigWigs Message"] = "Mensagem do BigWigs"
 L["BigWigs Stage"] = "BigWigs Stage"
 L["BigWigs Timer"] = "Cronômetro do BigWigs"
 L["Black Wing Lair"] = "Covil Asa Negra"
---[[Translation missing --]]
-L["Blacksmithing Cast Bar"] = "Blacksmithing Cast Bar"
---[[Translation missing --]]
-L["Blizzard (2h | 3m | 10s | 2.4)"] = "Blizzard (2h | 3m | 10s | 2.4)"
 L["Blizzard Combat Text"] = "Texto de Combate da Blizzard"
 --[[Translation missing --]]
 L["Blizzard Cooldown Reduction"] = "Blizzard Cooldown Reduction"
@@ -307,6 +301,12 @@ L[ [=[Cannot change secure frame in combat lockdown. Find more information:
 https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=] ] = [=[Cannot change secure frame in combat lockdown. Find more information:
 https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=]
 L["Can't schedule timer with %i, due to a World of Warcraft bug with high computer uptime. (Uptime: %i). Please restart your computer."] = "Não é possível agendar o cronômetro com %i, devido a um bug do World of Warcraft com alto tempo de atividade do computador. (Tempo de atividade: %i). Por favor, reinicie o seu computador."
+--[[Translation missing --]]
+L["Capped"] = "Capped"
+--[[Translation missing --]]
+L["Capped at Season Max"] = "Capped at Season Max"
+--[[Translation missing --]]
+L["Capped at Weekly Max"] = "Capped at Weekly Max"
 L["Cast"] = "Lançar"
 L["Cast Bar"] = "Barra de Lançamento"
 L["Cast Failed"] = "Lançamento falho"
@@ -317,6 +317,8 @@ L["Caster"] = "Lançador"
 L["Caster Name"] = "Nome do Lançador"
 L["Caster Realm"] = "Reino do Lançador"
 L["Caster Unit"] = "Unidade de Lançador"
+--[[Translation missing --]]
+L["Casters Name/Realm"] = "Casters Name/Realm"
 L["Caster's Target"] = "Alvo do Lançador"
 --[[Translation missing --]]
 L["Cataclysm"] = "Cataclysm"
@@ -440,6 +442,8 @@ L["Crushing"] = "Esmagador"
 --[[Translation missing --]]
 L["C'thun"] = "C'thun"
 --[[Translation missing --]]
+L["Currency"] = "Currency"
+--[[Translation missing --]]
 L["Current Combo Point charged"] = "Current Combo Point charged"
 --[[Translation missing --]]
 L["Current Essence"] = "Current Essence"
@@ -552,6 +556,8 @@ L["Difficulty"] = "Difficulty"
 L["Disable Spell Known Check"] = "Disable Spell Known Check"
 --[[Translation missing --]]
 L["Disabled Spell Known Check"] = "Disabled Spell Known Check"
+--[[Translation missing --]]
+L["Discovered"] = "Discovered"
 --[[Translation missing --]]
 L["Disease"] = "Disease"
 --[[Translation missing --]]
@@ -669,8 +675,6 @@ L["Enchant Name or ID"] = "Enchant Name or ID"
 L["Enchant Removed"] = "Enchant Removed"
 --[[Translation missing --]]
 L["Enchanted"] = "Enchanted"
---[[Translation missing --]]
-L["Enchanting Cast Bar"] = "Enchanting Cast Bar"
 --[[Translation missing --]]
 L["Encounter ID(s)"] = "Encounter ID(s)"
 --[[Translation missing --]]
@@ -923,22 +927,6 @@ L["Group"] = "Grupo"
 --[[Translation missing --]]
 L["Group Arrangement"] = "Group Arrangement"
 --[[Translation missing --]]
-L["Group Finder Eye"] = "Group Finder Eye"
---[[Translation missing --]]
-L["Group Finder Eye Initial"] = "Group Finder Eye Initial"
---[[Translation missing --]]
-L["Group Finder Found"] = "Group Finder Found"
---[[Translation missing --]]
-L["Group Finder Found Initial"] = "Group Finder Found Initial"
---[[Translation missing --]]
-L["Group Finder Mouse Over"] = "Group Finder Mouse Over"
---[[Translation missing --]]
-L["Group Finder Poke"] = "Group Finder Poke"
---[[Translation missing --]]
-L["Group Finder Poke End"] = "Group Finder Poke End"
---[[Translation missing --]]
-L["Group Finder Poke Initial"] = "Group Finder Poke Initial"
---[[Translation missing --]]
 L["Group Leader/Assist"] = "Group Leader/Assist"
 --[[Translation missing --]]
 L["Group Size"] = "Group Size"
@@ -1030,6 +1018,8 @@ L["Icon"] = "Ícone"
 L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
+--[[Translation missing --]]
+L["ID"] = "ID"
 --[[Translation missing --]]
 L["Id"] = "Id"
 --[[Translation missing --]]
@@ -1157,8 +1147,6 @@ L["Item Slot String"] = "Item Slot String"
 L["Item Type"] = "Item Type"
 L["Item Type Equipped"] = "Tipo de Item Equipado"
 --[[Translation missing --]]
-L["Jewelcrafting Cast Bar"] = "Jewelcrafting Cast Bar"
---[[Translation missing --]]
 L["Jin'do the Hexxer"] = "Jin'do the Hexxer"
 --[[Translation missing --]]
 L["Journal Stage"] = "Journal Stage"
@@ -1166,8 +1154,6 @@ L["Journal Stage"] = "Journal Stage"
 L["Keep Inside"] = "Keep Inside"
 --[[Translation missing --]]
 L["Kel'Thuzad"] = "Kel'Thuzad"
---[[Translation missing --]]
-L["Key"] = "Key"
 --[[Translation missing --]]
 L["Kologarn"] = "Kologarn"
 --[[Translation missing --]]
@@ -1184,8 +1170,6 @@ L["Latency"] = "Latency"
 L["Leader"] = "Leader"
 --[[Translation missing --]]
 L["Least remaining time"] = "Least remaining time"
---[[Translation missing --]]
-L["Leatherworking Cast Bar"] = "Leatherworking Cast Bar"
 --[[Translation missing --]]
 L["Leaving"] = "Leaving"
 L["Leech"] = "Sugar"
@@ -1288,6 +1272,8 @@ L["Max Charges"] = "Max Charges"
 L["Max Health"] = "Max Health"
 --[[Translation missing --]]
 L["Max Power"] = "Max Power"
+--[[Translation missing --]]
+L["Max Quantity"] = "Max Quantity"
 --[[Translation missing --]]
 L["Maximum"] = "Maximum"
 --[[Translation missing --]]
@@ -1620,8 +1606,6 @@ L["Player Level"] = "Nível do Jogador"
 L["Player Name/Realm"] = "Nome do Jogador/Reino"
 --[[Translation missing --]]
 L["Player Race"] = "Player Race"
---[[Translation missing --]]
-L["Player Rest"] = "Player Rest"
 L["Player(s) Affected"] = "Jogado(res) afetados"
 L["Player(s) Not Affected"] = "Jogado(res) não afetados"
 --[[Translation missing --]]
@@ -1670,9 +1654,15 @@ L["PvP Flagged"] = "Marcado para JxJ"
 --[[Translation missing --]]
 L["PvP Talent %i"] = "PvP Talent %i"
 --[[Translation missing --]]
+L["PvP Talent Selected"] = "PvP Talent Selected"
+--[[Translation missing --]]
 L["PvP Talent selected"] = "PvP Talent selected"
 --[[Translation missing --]]
-L["PvP Talent Selected"] = "PvP Talent Selected"
+L["Quality Id"] = "Quality Id"
+--[[Translation missing --]]
+L["Quantity"] = "Quantity"
+--[[Translation missing --]]
+L["Quantity earned this week"] = "Quantity earned this week"
 --[[Translation missing --]]
 L["Queued Action"] = "Queued Action"
 L["Radius"] = "Raio"
@@ -1973,6 +1963,8 @@ L["Spec Role"] = "Spec Role"
 --[[Translation missing --]]
 L["Specialization"] = "Specialization"
 --[[Translation missing --]]
+L["Specific Currency"] = "Specific Currency"
+--[[Translation missing --]]
 L["Specific Type"] = "Specific Type"
 L["Specific Unit"] = "Unidade específica"
 L["Spell"] = "Feitiço"
@@ -2078,8 +2070,6 @@ L["Swipe"] = "Swipe"
 L["System"] = "System"
 --[[Translation missing --]]
 L["Tab "] = "Tab "
---[[Translation missing --]]
-L["Tailoring Cast Bar"] = "Tailoring Cast Bar"
 L["Talent"] = "Talento"
 --[[Translation missing --]]
 L["Talent |cFFFF0000Not|r Known"] = "Talent |cFFFF0000Not|r Known"
@@ -2088,9 +2078,9 @@ L["Talent |cFFFF0000Not|r Selected"] = "Talent |cFFFF0000Not|r Selected"
 --[[Translation missing --]]
 L["Talent Known"] = "Talent Known"
 --[[Translation missing --]]
-L["Talent Selected"] = "Talent Selected"
---[[Translation missing --]]
 L["Talent selected"] = "Talent selected"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
 L["Talent Specialization"] = "Especialização de talentos"
 --[[Translation missing --]]
 L["Tanking And Highest"] = "Tanking And Highest"
@@ -2121,7 +2111,7 @@ L["The Eye of Eternity"] = "The Eye of Eternity"
 --[[Translation missing --]]
 L["The Four Horsemen"] = "The Four Horsemen"
 --[[Translation missing --]]
-L["The 'Key' value can be found in the BigWigs options of a specific spell"] = "The 'Key' value can be found in the BigWigs options of a specific spell"
+L["The 'ID' value can be found in the BigWigs options of a specific spell"] = "The 'ID' value can be found in the BigWigs options of a specific spell"
 --[[Translation missing --]]
 L["The Lich King"] = "The Lich King"
 --[[Translation missing --]]
@@ -2198,6 +2188,8 @@ L["Torghast"] = "Torghast"
 L["Total"] = "Total"
 --[[Translation missing --]]
 L["Total Duration"] = "Total Duration"
+--[[Translation missing --]]
+L["Total Earned in this Season"] = "Total Earned in this Season"
 --[[Translation missing --]]
 L["Total Essence"] = "Total Essence"
 --[[Translation missing --]]

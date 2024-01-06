@@ -18,37 +18,39 @@ TomTomDB = {
 		["Vermin - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
+		["Dopebolt - Lone Wolf"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
+		["Dopeclaw - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Mxys - Golemagg"] = "Default",
-		["Dopesick - Stitches"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Battlearm - Jin'do"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Poklopac - Mirage Raceway"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Dopesick - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
-		["Dopeclaw - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
+		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -104,37 +106,39 @@ TomTomWaypointsM = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Poklopac - Mirage Raceway"] = "Poklopac - Mirage Raceway",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -171,23 +175,50 @@ TomTomWaypointsM = {
 		},
 		["Provokator - Jin'do"] = {
 		},
+		["Dopebolt - Lone Wolf"] = {
+		},
 		["Moolatz - Dreadnaught"] = {
 		},
 		["Handrmandr - Golemagg"] = {
 		},
 		["Vermina - Golemagg"] = {
 		},
+		["Dopeclaw - Lone Wolf"] = {
+		},
 		["Dopesnare - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 		["Dopecoil - Lone Wolf"] = {
+			[1412] = {
+				["1412:604000000:336000000:TomTom waypoint"] = {
+					1412, -- [1]
+					0.604, -- [2]
+					0.336, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["minimap"] = true,
+					["cleardistance"] = 10,
+					["title"] = "TomTom waypoint",
+					["from"] = "TomTom/way",
+					["callbacks"] = {
+						["distance"] = {
+						},
+						["world"] = {
+						},
+						["minimap"] = {
+						},
+					},
+					["world"] = true,
+				},
+			},
 		},
 		["Mxys - Golemagg"] = {
 		},
-		["Dopesick - Stitches"] = {
+		["Tudum - Jin'do"] = {
 		},
 		["Kaonac - Jin'do"] = {
 		},
@@ -195,17 +226,15 @@ TomTomWaypointsM = {
 		},
 		["Grgur - Golemagg"] = {
 		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
 		["Mxym - Golemagg"] = {
 		},
-		["Battlearm - Jin'do"] = {
-		},
-		["Pitchwise - Dreadnaught"] = {
+		["Tandaram - Jin'do"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
-		},
-		["Dotwise - Golemagg"] = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
@@ -213,25 +242,27 @@ TomTomWaypointsM = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
+		["Dotwise - Golemagg"] = {
+		},
 		["Pitchwise - Ashbringer"] = {
 		},
-		["Tandaram - Jin'do"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Battlearm - Jin'do"] = {
 		},
 		["Poklopac - Mirage Raceway"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Tudum - Jin'do"] = {
+		["Dopesick - Stitches"] = {
 		},
 		["Dopeclaw - Stitches"] = {
 		},
-		["Doperage - Lone Wolf"] = {
+		["Dopetrap - Lone Wolf"] = {
 		},
-		["Dopeclaw - Lone Wolf"] = {
+		["Dopedot - Lone Wolf"] = {
 		},
 	},
 }

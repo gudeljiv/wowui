@@ -7,14 +7,14 @@ WeakAurasOptionsSaved = {
 	["spellCacheAchivements"] = true,
 	["locale"] = "enUS",
 	["needsRebuild"] = false,
-	["version"] = "5.8.7",
+	["version"] = "5.9.0",
 	["lockPositions"] = false,
 	["spellCacheStrings"] = true,
 	["frame"] = {
-		["xOffset"] = 697.094970703125,
+		["xOffset"] = 594.872802734375,
 		["width"] = 1147.839599609375,
 		["height"] = 1025.111694335938,
-		["yOffset"] = 1324.79443359375,
+		["yOffset"] = 1364.15966796875,
 	},
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
@@ -7866,7 +7866,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "13605=136235",
 		},
 		["Hands Rune Ability"] = {
-			["spells"] = "399967=132342",
+			["spells"] = "399967=132394",
 		},
 		["Envenom"] = {
 			["spells"] = "399963=132287,399968=132287",

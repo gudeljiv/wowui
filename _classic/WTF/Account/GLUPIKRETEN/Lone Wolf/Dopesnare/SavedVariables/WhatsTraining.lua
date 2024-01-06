@@ -1,5 +1,9 @@
 
 WT_LearnedPetAbilities = {
+	["Lightning Breath"] = {
+		["Rank 3"] = true,
+		["Rank 2"] = true,
+	},
 	["Charge"] = {
 		["Rank 1"] = true,
 	},
@@ -41,10 +45,6 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Screech"] = {
-		["Rank 1"] = true,
-		["Rank 2"] = true,
-	},
 	["Nature Resistance"] = {
 		["Rank 3"] = true,
 		["Rank 1"] = true,
@@ -61,6 +61,11 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
+	["Arcane Resistance"] = {
+		["Rank 3"] = true,
+		["Rank 1"] = true,
+		["Rank 2"] = true,
+	},
 	["Claw"] = {
 		["Rank 3"] = true,
 		["Rank 4"] = true,
@@ -68,8 +73,7 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Arcane Resistance"] = {
-		["Rank 3"] = true,
+	["Screech"] = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},

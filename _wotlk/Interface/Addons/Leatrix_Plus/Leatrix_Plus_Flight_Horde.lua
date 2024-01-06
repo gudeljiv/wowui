@@ -712,6 +712,8 @@
 				["0.42:0.79:0.50:0.76:0.61:0.80:0.45:0.56:0.32:0.58"] = 668, -- Cenarion Hold, Marshal's Refuge, Gadgetzan, Thunder Bluff, Shadowprey Village
 				["0.42:0.79:0.50:0.76:0.61:0.80:0.61:0.55"] = 447, -- Cenarion Hold, Marshal's Refuge, Gadgetzan, Ratchet
 				["0.42:0.79:0.50:0.76:0.61:0.80:0.45:0.56"] = 509, -- Cenarion Hold, Marshal's Refuge, Gadgetzan, Thunder Bluff
+				["0.42:0.79:0.50:0.76:0.61:0.80:0.55:0.73:0.56:0.53:0.46:0.30:0.54:0.21"] = 857, -- Cenarion Hold, Marshal's Refuge, Gadgetzan, Freewind Post, Crossroads, Bloodvenom Post, Moonglade
+				["0.42:0.79:0.61:0.80:0.55:0.73:0.56:0.53:0.46:0.30:0.54:0.21"] = 892, -- Cenarion Hold, Gadgetzan, Freewind Post, Crossroads, Bloodvenom Post, Moonglade
 
 				-- Horde: Crossroads (The Barrens)
 				["0.56:0.53:0.44:0.69:0.42:0.79"] = 382, -- Crossroads, Camp Mojache, Cenarion Hold
@@ -4245,6 +4247,7 @@
 				["0.64:0.19:0.60:0.25:0.62:0.36:0.64:0.42:0.69:0.42:0.70:0.55:0.84:0.59:0.95:0.63"] = 450, -- Ulduar, Grom'arsh Crash-Site, K3, Ebon Watch, Light's Breach, Conquest Hold, Camp Winterhoof, Vengeance Landing
 				["0.64:0.19:0.57:0.21:0.38:0.21:0.31:0.43:0.29:0.54:0.17:0.53"] = 452, -- Ulduar, Bouldercrag's Refuge, The Shadow Vault, Warsong Camp, Taunka'le Village, Amber Ledge
 				["0.64:0.19:0.60:0.25:0.62:0.36:0.52:0.38:0.49:0.58"] = 351, -- Ulduar, Grom'arsh Crash-Site, K3, Dalaran, Moa'ki
+				["0.64:0.19:0.60:0.25:0.56:0.36:0.52:0.34:0.31:0.43:0.29:0.54:0.17:0.53:0.12:0.53"] = 497, -- Ulduar, Grom'arsh Crash-Site, The Argent Vanguard, Crusaders' Pinnacle, Warsong Camp, Taunka'le Village, Amber Ledge, Transitus Shield
 
 				----------------------------------------------------------------------
 				-- Horde: Wintergrasp

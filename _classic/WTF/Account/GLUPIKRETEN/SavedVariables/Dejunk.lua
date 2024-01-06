@@ -1,12 +1,10 @@
 
 __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
-	["minimapIcon"] = {
-		["hide"] = true,
-	},
+	["autoSell"] = true,
 	["exclusions"] = {
-		["19705"] = true,
-		["19702"] = true,
 		["19699"] = true,
+		["19702"] = true,
+		["19705"] = true,
 		["19706"] = true,
 		["19700"] = true,
 	},
@@ -18,5 +16,10 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 		["19703"] = true,
 		["19720"] = true,
 	},
-	["autoSell"] = true,
+	["minimapIcon"] = {
+		["hide"] = true,
+	},
+	["includeBelowItemLevel"] = {
+		["value"] = 10,
+	},
 }

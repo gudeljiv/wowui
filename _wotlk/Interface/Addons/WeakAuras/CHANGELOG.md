@@ -1,33 +1,80 @@
-# [5.8.7](https://github.com/WeakAuras/WeakAuras2/tree/5.8.7) (2023-12-03)
+# [5.9.0](https://github.com/WeakAuras/WeakAuras2/tree/5.9.0) (2024-01-03)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.6...5.8.7)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.7...5.9.0)
 
 ## Highlights
 
- - Updates for Season of Discovery
-- New option to treat charged combo point as 7 combo points (thanks to @weswigham for initial idea+PR)
-- Bug fixes 
+ - Add Currency Trigger
+- Enable receiving WA links in whispers from guild mates
+- Added Classic SoD Rune templates
+- Bug Fixes 
 
 ## Commits
 
-InfusOnWoW (9):
+Boneshock (2):
 
-- Show an warning on trying to update an aura that can't be updated
-- Add an option to treat a charged combo point as 7 combo points
-- Add CHAT_MSG_LOOT type
-- Tweak frame levels again a bit
-- Improve error message for auras without a region type
-- AuraBar: Fix property names for gradient colors
-- Author Options: Also sort Sound list for the user
-- Drangonflying Load Option
-- Templates: Fix talent load option for Holy Word: Sanctify
+- fix %powertype show selected first then primary power type
+- Currency trigger: don't specify test on value block
 
-Stanzilla (2):
+InfusOnWoW (19):
 
-- Bump minor
-- Bump Classic TOC for SoD
+- Classic Templates: Add missing race specific Priest spells
+- Fix KR/TW/CN large number formatting for >= 100.000.000
+- Classic: Remove LibClassicCasterino
+- Classic: Remove LibClassicDurations
+- Classic: Replace LibClassicSpellActionCount with GetSpellCount
+- Classic: Show warning that SAY/YELL are restricted too
+- Classic: Less special code in Combat Log Event trigger
+- Enable Modern Blizzard Time Formatting on Classic
+- BT2: Add a condition checking for caster's name/realm
+- Item Type trigger: Add Equipment Slot option
+- Remove unused table
+- Max Quantity: Fix enable check
+- BT2: Rename condition to less confussing name
+- BT: Remove left over code from old buff trigger
+- ApplyFrameLevel: Correctly handle auras without a subbackground
+- Make FixGroupChildrenOrderForGroup not recurse into subgroups
+- Options: Ignore newFeatureString for sorting
+- Reputation: Handle collapsed headers, and use DropDown with Headers
+- Currency Trigger: Fix collapsed currency headers
 
-mrbuds (1):
+Jordi (2):
 
-- Classis SoD: include new spell ids in spell cache
+- Currency Trigger: support classic wrath, disable on classic era (#4755)
+- Add Currency Trigger (#4672)
+
+Nightwarden24 (5):
+
+- Fix texture search in texture picker Since texture names may contain characters that have special meaning when used in patterns, it's better to use the find function with plain text search enabled rather than the match function
+- Fix StopMotion thumbnail
+- Set region size to flipbook tile size
+- Make flipbook display proportional in texture picker
+- Add new flipbooks and correct some others
+
+RealityWinner (1):
+
+- Use spellIds in classic
+
+emptyrivers (1):
+
+- batch BAG_UPDATE_COOLDOWN events (#4756)
+
+mrbuds (16):
+
+- BossMod triggers: following a change in bigwigs, rename Key into ID BigWigs change: https://github.com/BigWigsMods/BigWigs/commit/9c65fd38132f38eacc341c0be4e430abacb1d19c
+- BossMod trigger: fix %message with bigwigs %text %name or %n worked, but tooltip advertise %message fixes #4785
+- Classic SoD priest runes template
+- Classic SoD rogue runes template
+- Classic SoD paladin runes template
+- add C_Seasons to luacheckrc
+- Classic SoD warrior runes template
+- Classic SoD shaman runes template
+- Classic SoD druid runes template
+- Classic SoD hunter runes template
+- Classic Sod warlock runes template
+- Classic SoD mage runes template
+- Cast trigger: drop leftoverinternal events for unused LibClassicCasterino
+- Classic Era CLEU extraSpellId is still stuck at 0
+- Classic: Fix softtarget units with aura trigger
+- Enable weakauras link received in whisper from guild mates
 

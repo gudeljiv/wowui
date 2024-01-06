@@ -11,11 +11,13 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 		["2319"] = true,
 		["2589"] = true,
 		["5467"] = true,
-		["2592"] = true,
-		["4232"] = true,
-		["5075"] = true,
 		["2934"] = true,
+		["5075"] = true,
+		["4232"] = true,
 		["2318"] = true,
 		["3356"] = true,
+	},
+	["exclusions"] = {
+		["2592"] = true,
 	},
 }

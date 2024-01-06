@@ -120,7 +120,7 @@ PetXP:SetScript(
 		C_Timer.After(
 			0.5,
 			function()
-				if UnitLevel('player') == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+				if UnitLevel('player') == xVermin.MaxPlayerLevel then
 					PetXP:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
 				else
 					PetXP:SetPoint('BOTTOM', PlayerXPFrame, 'TOP', 0, 0)

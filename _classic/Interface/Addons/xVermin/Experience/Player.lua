@@ -113,7 +113,7 @@ PlayerXP:RegisterEvent('PLAYER_LEVEL_CHANGED')
 PlayerXP:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if UnitLevel('player') == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+		if UnitLevel('player') == xVermin.MaxPlayerLevel then
 			PlayerXP.XPbar:SetAlpha(0)
 			self:UnregisterAllEvents()
 		else
