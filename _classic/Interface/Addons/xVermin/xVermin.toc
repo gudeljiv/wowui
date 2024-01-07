@@ -78,6 +78,7 @@ Helpers/Bags.lua
 Helpers/BestFood.lua
 Helpers/BetterLootMessage.lua
 Helpers/Bindings.lua
+Helpers/Buffs.lua
 Helpers/BuffSource.lua
 Helpers/Chat.lua
 Helpers/DalaranAuctionHouse.lua

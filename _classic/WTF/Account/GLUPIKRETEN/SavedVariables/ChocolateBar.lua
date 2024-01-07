@@ -66,8 +66,8 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Dopesnare - Stitches"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Battlearm - Gehennas"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Battlearm - Gehennas"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
@@ -781,18 +781,18 @@ CB_PlayedTime = {
 	["Vermins-"] = {
 		["total"] = 3014,
 	},
+	["Mxzq-"] = {
+		["total"] = 356150,
+	},
 	["Vermina-Golemagg"] = {
 		["total"] = 375771,
 		["timeAtThisLevel"] = 2048,
 		["timeStamp"] = 479279.819,
 	},
-	["Mxzq-"] = {
-		["total"] = 356150,
-	},
-	["Mxyzptlk-Golemagg"] = {
-		["total"] = 53083,
-		["timeAtThisLevel"] = 2821,
-		["timeStamp"] = 777447.689,
+	["Mxzq-Golemagg"] = {
+		["total"] = 1182045,
+		["timeAtThisLevel"] = 151025,
+		["timeStamp"] = 435953.614,
 	},
 	["Pitchwise-Ashbringer"] = {
 		["total"] = 2973,
@@ -934,10 +934,10 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Mxzq-Golemagg"] = {
-		["total"] = 1182045,
-		["timeAtThisLevel"] = 151025,
-		["timeStamp"] = 435953.614,
+	["Mxyzptlk-Golemagg"] = {
+		["total"] = 53083,
+		["timeAtThisLevel"] = 2821,
+		["timeStamp"] = 777447.689,
 	},
 	["Provokator-Jin'do"] = {
 		["total"] = 22720,
