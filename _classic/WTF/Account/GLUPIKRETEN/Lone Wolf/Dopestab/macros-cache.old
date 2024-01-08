@@ -1,6 +1,6 @@
-VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
+VER 3 000000000100001B " " "134400"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Healing Touch
+/cast Savage Roar
 END
 VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
 #showtooltip [stealth]Pounce;[form:0][form:4]Wrath;[form:1]Maul;[form:2]Claw
@@ -90,8 +90,7 @@ VER 3 000000000100001A " " "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Lifebloom
 END
-VER 3 000000000100001B " " "134400"
+VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
 #showtooltip
-/cancelaura Savage Roar
-/cast Savage Roar
+/cast [@mouseover,exists,nodead][help][] Healing Touch
 END

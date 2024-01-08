@@ -1,17 +1,21 @@
 
 GMMONEY = {
 	["Lone Wolf"] = {
-		["Dopemend"] = {
-			["GOLD"] = 89856,
-			["CLASS"] = "PRIEST",
-		},
 		["Dopetrap"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "HUNTER",
 		},
+		["Dopeclaw"] = {
+			["GOLD"] = 127809,
+			["CLASS"] = "DRUID",
+		},
 		["Dopesnare"] = {
 			["GOLD"] = 37721,
 			["CLASS"] = "HUNTER",
+		},
+		["Dopedot"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARLOCK",
 		},
 		["Dopecoil"] = {
 			["GOLD"] = 10530,
@@ -21,13 +25,13 @@ GMMONEY = {
 			["GOLD"] = 0,
 			["CLASS"] = "MAGE",
 		},
-		["Dopedot"] = {
+		["Dopestab"] = {
 			["GOLD"] = 0,
-			["CLASS"] = "WARLOCK",
+			["CLASS"] = "ROGUE",
 		},
-		["Dopeclaw"] = {
-			["GOLD"] = 127809,
-			["CLASS"] = "DRUID",
+		["Dopemend"] = {
+			["GOLD"] = 75070,
+			["CLASS"] = "PRIEST",
 		},
 		["Doperage"] = {
 			["GOLD"] = 96097,
