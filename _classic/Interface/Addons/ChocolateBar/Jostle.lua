@@ -9,6 +9,10 @@ local _G, pairs = _G, pairs
 local UnitInVehicle = UnitInVehicle and UnitInVehicle or function() end
 local UnitHasVehicleUI = UnitHasVehicleUI and UnitHasVehicleUI or function() end
 
+function ChocolateBar:IsRetail()
+ return WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+end
+
 local blizzardFrames = {
 	'PlayerFrame',
 	'TargetFrame',
@@ -34,50 +38,65 @@ local blizzardFrames = {
 	'OrderHallCommandBar',
 	'MicroButtonAndBagsBar',
 	'OverrideActionBar',
+	'StatusTrackingBarManager',
 }
 
+if ChocolateBar:IsRetail() then
+	blizzardFrames = {
+		'MicroButtonAndBagsBar',
+		'TutorialFrameParent',
+		'FramerateLabel',
+		'DurabilityFrame',
+		
+	}
+end
+
+
+local JostleFrame = CreateFrame("Frame")
 local blizzardFramesData = {}
 
 local start = GetTime()
 local nextTime = 0
 local fullyInitted = false
 
-local JostleFrame = CreateFrame("Frame")
-Jostle.Frame  = JostleFrame
-JostleFrame:SetScript("OnUpdate", function(this, elapsed)
-	local now = GetTime()
-	if now - start >= 3 then
-		fullyInitted = true
-		for k,v in pairs(blizzardFramesData) do
-			blizzardFramesData[k] = nil
-		end
-		this:SetScript("OnUpdate", function(this, elapsed)
-			if GetTime() >= nextTime then
-				Jostle:Refresh()
-				--this:Hide()
+if not ChocolateBar:IsRetail() then
+	
+	Jostle.Frame  = JostleFrame
+	JostleFrame:SetScript("OnUpdate", function(this, elapsed)
+		local now = GetTime()
+		if now - start >= 3 then
+			fullyInitted = true
+			for k,v in pairs(blizzardFramesData) do
+				blizzardFramesData[k] = nil
 			end
-		end)
+			this:SetScript("OnUpdate", function(this, elapsed)
+				if GetTime() >= nextTime then
+					Jostle:Refresh()
+					--this:Hide()
+				end
+			end)
+		end
+	end)
+
+	function JostleFrame:Schedule(time)
+		time = time or 0
+		nextTime = GetTime() + time
+		self:Show()
 	end
-end)
 
-function JostleFrame:Schedule(time)
-	time = time or 0
-	nextTime = GetTime() + time
-	self:Show()
-end
+	JostleFrame:UnregisterAllEvents()
+	JostleFrame:SetScript("OnEvent", function(this, event, ...)
+		return Jostle[event](Jostle, ...)
+	end)
+	JostleFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
+	JostleFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
+	JostleFrame:RegisterEvent("PLAYER_CONTROL_GAINED")
+	JostleFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 
-JostleFrame:UnregisterAllEvents()
-JostleFrame:SetScript("OnEvent", function(this, event, ...)
-	return Jostle[event](Jostle, ...)
-end)
-JostleFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
-JostleFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
-JostleFrame:RegisterEvent("PLAYER_CONTROL_GAINED")
-JostleFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
-
-if ChocolateBar:IsRetail() then
-	JostleFrame:RegisterEvent("UNIT_EXITING_VEHICLE")
-	JostleFrame:RegisterEvent("UNIT_EXITED_VEHICLE")
+	if ChocolateBar:IsRetail() then
+		JostleFrame:RegisterEvent("UNIT_EXITING_VEHICLE")
+		JostleFrame:RegisterEvent("UNIT_EXITED_VEHICLE")
+	end
 end
 
 if not Jostle.hooks.WorldMapFrame_Hide then
@@ -107,7 +126,7 @@ if not Jostle.hooks.UIParent_ManageFramePositions then
 	end)
 end
 
-if not Jostle.hooks.PlayerFrame_SequenceFinished then
+if not Jostle.hooks.PlayerFrame_SequenceFinished and PlayerFrame_SequenceFinished then
 	Jostle.hooks.PlayerFrame_SequenceFinished = true
 	hooksecurefunc("PlayerFrame_SequenceFinished", function()
 		if Jostle.PlayerFrame_SequenceFinished then
@@ -125,7 +144,7 @@ function Jostle:TicketStatusFrame_OnEvent()
 end
 
 function Jostle:UIParent_ManageFramePositions()
-	self:Refresh(MainMenuBar, GroupLootFrame1, TutorialFrameParent, FramerateLabel, DurabilityFrame)
+	self:Refresh(MainMenuBar, GroupLootFrame1, TutorialFrameParent, FramerateLabel, DurabilityFrame, BuffFrame)
 end
 
 function Jostle:PlayerFrame_SequenceFinished()
@@ -133,7 +152,7 @@ function Jostle:PlayerFrame_SequenceFinished()
 end
 
 local function LockMainMenuBar()
-	if not InCombatLockdown() and not UnitInVehicle("Player") then
+	if not InCombatLockdown() and (not ChocolateBar.isClassicWoW and not UnitInVehicle("Player")) then
 		MainMenuBar:SetMovable(true)
 		MainMenuBar:SetUserPlaced(true)
 		ChocolateBar:Debug("LockMainMenuBar")
@@ -249,9 +268,11 @@ local function isClose(alpha, bravo)
 end
 
 function Jostle:Refresh(...)
+	
 	if not fullyInitted then
 		return
 	end
+	ChocolateBar:Debug("Refresh Jostle")
 
 	local screenHeight = GetScreenHeight()
 	local topOffset = GetScreenTop() or screenHeight
@@ -361,49 +382,51 @@ function Jostle:Refresh(...)
 						anchor = "BOTTOM" .. anchor
 						offset = bottomOffset / framescale
 					end
-					if frame == MinimapCluster and not MinimapBorderTop:IsShown() then
-						offset = offset + MinimapBorderTop:GetHeight() * 3/5
-					elseif frame == ConsolidatedBuffs and TicketStatusFrame:IsShown() then
-						offset = offset - TicketStatusFrame:GetHeight() * TicketStatusFrame:GetScale()
-					elseif frame == DEFAULT_CHAT_FRAME then
-						y = MainMenuBar:GetHeight() * MainMenuBar:GetScale() + 32
-						if StanceBarFrame and (PetActionBarFrame:IsShown() or StanceBarFrame:IsShown()) then
-							offset = offset + StanceBarFrame:GetHeight() * StanceBarFrame:GetScale()
-						end
-						if MultiBarBottomLeft:IsShown() then
-							offset = offset + MultiBarBottomLeft:GetHeight() * MultiBarBottomLeft:GetScale() - 21
-						end
-					elseif frame == ChatFrame2 then
-						y = MainMenuBar:GetHeight() * MainMenuBar:GetScale() + 32
-						if MultiBarBottomRight:IsShown() then
-							offset = offset + MultiBarBottomRight:GetHeight() * MultiBarBottomRight:GetScale() - 21
-						end
-					elseif frame == GroupLootFrame1 or frame == TutorialFrameParent or frame == FramerateLabel then
-						if MultiBarBottomLeft:IsShown() or MultiBarBottomRight:IsShown() then
-							offset = offset + MultiBarBottomLeft:GetHeight() * MultiBarBottomLeft:GetScale()
-						end
-					elseif frame == DurabilityFrame or frame == WatchFrame then
-						anchorFrame = MinimapCluster
-						x = 0
-						y = 0
-						offset = 0
-						if frame == WatchFrame and DurabilityFrame:IsShown() then
-							y = y - DurabilityFrame:GetHeight() * DurabilityFrame:GetScale()
-						end
-						if frame == DurabilityFrame then
-							x = -20
-						end
-						anchor = "TOPRIGHT"
-						anchorAlt = "BOTTOMRIGHT"
-						if MultiBarRight:IsShown() then
-							x = x - MultiBarRight:GetWidth() * MultiBarRight:GetScale()
-							if MultiBarLeft:IsShown() then
-								x = x - MultiBarLeft:GetWidth() * MultiBarLeft:GetScale()
+					if MinimapBorderTop ~= nil then
+						if frame == MinimapCluster and not MinimapBorderTop:IsShown() then
+							offset = offset + MinimapBorderTop:GetHeight() * 3/5
+						elseif frame == ConsolidatedBuffs and TicketStatusFrame:IsShown() then
+							offset = offset - TicketStatusFrame:GetHeight() * TicketStatusFrame:GetScale()
+						elseif frame == DEFAULT_CHAT_FRAME then
+							y = MainMenuBar:GetHeight() * MainMenuBar:GetScale() + 32
+							if StanceBarFrame and (PetActionBarFrame:IsShown() or StanceBarFrame:IsShown()) then
+								offset = offset + StanceBarFrame:GetHeight() * StanceBarFrame:GetScale()
 							end
+							if MultiBarBottomLeft:IsShown() then
+								offset = offset + MultiBarBottomLeft:GetHeight() * MultiBarBottomLeft:GetScale() - 21
+							end
+						elseif frame == ChatFrame2 then
+							y = MainMenuBar:GetHeight() * MainMenuBar:GetScale() + 32
+							if MultiBarBottomRight:IsShown() then
+								offset = offset + MultiBarBottomRight:GetHeight() * MultiBarBottomRight:GetScale() - 21
+							end
+						elseif frame == GroupLootFrame1 or frame == TutorialFrameParent or frame == FramerateLabel then
+							if MultiBarBottomLeft:IsShown() or MultiBarBottomRight:IsShown() then
+								offset = offset + MultiBarBottomLeft:GetHeight() * MultiBarBottomLeft:GetScale()
+							end
+						elseif frame == DurabilityFrame or frame == WatchFrame then
+							anchorFrame = MinimapCluster
+							x = 0
+							y = 0
+							offset = 0
+							if frame == WatchFrame and DurabilityFrame:IsShown() then
+								y = y - DurabilityFrame:GetHeight() * DurabilityFrame:GetScale()
+							end
+							if frame == DurabilityFrame then
+								x = -20
+							end
+							anchor = "TOPRIGHT"
+							anchorAlt = "BOTTOMRIGHT"
+							if MultiBarRight:IsShown() then
+								x = x - MultiBarRight:GetWidth() * MultiBarRight:GetScale()
+								if MultiBarLeft:IsShown() then
+									x = x - MultiBarLeft:GetWidth() * MultiBarLeft:GetScale()
+								end
+							end
+						elseif frame == OrderHallCommandBar and OrderHallCommandBar:IsShown() then
+								anchorAlt = "TOPLEFT"
+								anchor = "TOPLEFT"
 						end
-					elseif frame == OrderHallCommandBar and OrderHallCommandBar:IsShown() then
-							anchorAlt = "TOPLEFT"
-							anchor = "TOPLEFT"
 					end
 					if frame == FramerateLabel then
 						anchorFrame = WorldFrame

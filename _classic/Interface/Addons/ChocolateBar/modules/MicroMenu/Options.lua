@@ -1,11 +1,10 @@
 local LibStub = LibStub
-local addonName = "Broker_MicroMenu"
 local addonName = Broker_MicroMenuEmbeddedName or "Broker_MicroMenu"
 local L = LibStub("AceLocale-3.0"):GetLocale("Broker_MicroMenu")
 local Broker_MicroMenu = LibStub:GetLibrary("LibDataBroker-1.1",true):GetDataObjectByName(addonName)
 local version = GetAddOnMetadata("Broker_MicroMenu","X-Curse-Packaged-Version") or ""
 local db
-
+local _G = _G
 
 
 local aceoptions = { 
@@ -17,7 +16,7 @@ local aceoptions = {
     args = {
 		general = {
 			inline = true,
-			name = L["General"],
+			name = _G.GENERAL,
 			type="group",
 			order = 1,
 			args={
@@ -102,14 +101,14 @@ local aceoptions = {
 		},
 		advanced = {
 			inline = true,
-			name = L["Advanced"],
+			name = _G.ADVANCED_LABEL,
 			type="group",
 			order = 2,
 			args={
 				customTextSetting = {
 					type = 'toggle',
 					order = 1,
-					name = L["Enable"],
+					name = _G.ENABLE,
 					desc = L["Enable this if you want to fine tune the displayed text."],
 					get = function(info, value)
 						return db.customTextSetting

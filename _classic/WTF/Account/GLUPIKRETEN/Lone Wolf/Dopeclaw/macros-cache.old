@@ -33,10 +33,10 @@ VER 3 0000000001000009 " " "134400"
 /cast [form:1] Enrage
 /cast [form:3] Shred
 END
-VER 3 000000000100000B " " "134400"
+VER 3 0000000001000018 " " "134400"
 #showtooltip
-/startattack [form:1][form:2]
-/cast [stealth] Pounce; [form:1] Maul; [form:2]Claw; [@mouseover,help,nodead][]Regrowth
+/startattack
+/cast Wrath
 END
 VER 3 000000000100000C " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -47,9 +47,9 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 /startattack
 /cast [@mouseover,exists,nodead][] Faerie Fire (Feral)
 END
-VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
+VER 3 000000000100001B " " "134400"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Rejuvenation
+/cast Savage Roar
 END
 VER 3 0000000001000013 " " "134400"
 #showtooltip Prowl
@@ -77,20 +77,20 @@ VER 3 0000000001000016 " " "134400"
 /cast [form:2] Cat Form
 /cast [noform:2] !Cat Form
 END
-VER 3 0000000001000017 " " "134400"
+VER 3 000000000100000B "AA" "134400"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Regrowth
+/startattack [form:1][form:3]
+/cast [stealth] Pounce; [form:1] Maul; [form:3]Claw; [@mouseover,help,nodead][]Regrowth
 END
-VER 3 0000000001000018 " " "134400"
-#showtooltip
-/startattack
-/cast Wrath
-END
-VER 3 000000000100001A " " "134400"
+VER 3 000000000100001A "LB" "134400"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Lifebloom
 END
-VER 3 000000000100001B " " "134400"
+VER 3 0000000001000017 "RG" "136085"
 #showtooltip
-/cast Savage Roar
+/cast [@mouseover,exists,nodead][help][] Regrowth
+END
+VER 3 0000000001000012 "RJ" "136081"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Rejuvenation
 END

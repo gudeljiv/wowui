@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11226,
+	["session"] = 11230,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1880,29 +1880,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [243]
 		{
-			["message"] = "bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))",
-			["time"] = "2024/01/07 17:34:25",
-			["locals"] = "(*temporary) = \"bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))\"\n",
-			["stack"] = "[string \"=[C]\"]: in function `CreateTexture'\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:586: in function <Interface/AddOns/ChocolateBar/Core.lua:580>\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:593: in function `GetPointer'\n[string \"@Interface/AddOns/ChocolateBar/Bar.lua\"]:390: in function `Drag'\n[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:74: in function `Start'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:334: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:307>",
-			["session"] = 11188,
-			["counter"] = 4,
-		}, -- [244]
-		{
-			["message"] = "Interface/AddOns/ChocolateBar/DragAndDrop.lua:86: attempt to index upvalue 'focus' (a nil value)",
-			["time"] = "2024/01/07 17:34:27",
-			["locals"] = "self = <table> {\n Start = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:67\n UnregisterFrame = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:63\n Stop = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:79\n RegisterFrame = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:54\n}\nframe = ChocolateBugSack {\n BottomLeftCorner = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n icon = Texture {\n }\n obj = <table> {\n }\n text = FontString {\n }\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n bar = ChocolateBar2 {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n highlight = <function> defined @Interface/AddOns/ChocolateBar/Chocolate.lua:355\n Update = <function> defined @Interface/AddOns/ChocolateBar/Chocolate.lua:300\n isMoving = false\n settings = <table> {\n }\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n Center = Texture {\n }\n RightEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n labelText = \"\"\n 0 = <userdata>\n TopEdge = Texture {\n }\n BottomEdge = Texture {\n }\n name = \"BugSack\"\n BottomRightCorner = Texture {\n }\n TopRightCorner = Texture {\n }\n TopLeftCorner = Texture {\n }\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n backdropInfo = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"OnUpdate\"\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = ChocolateBar2 {\n 0 = <userdata>\n UpdateBar = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:428\n GetFocus = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:421\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n dummy = Chocolatedummy {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n autohide = false\n Drop = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:394\n UpdateColors = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:121\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n UpdateStrata = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:76\n New = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:28\n EatChocolatePiece = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:184\n BottomEdge = Texture {\n }\n tempHide = false\n chocoMostRight = ChocolatepicoFPS {\n }\n chocolist = <table> {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n LoseFocus = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:417\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n listCenter = <table> {\n }\n chocoMostLeft = ChocolateBugSack {\n }\n UpdateDragChocolate = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:346\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n Center = Texture {\n }\n RightEdge = Texture {\n }\n UpdateScale = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:105\n LeftEdge = Texture {\n }\n Drag =",
-			["stack"] = "[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:86: in function `Stop'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:347: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:341>",
-			["session"] = 11188,
-			["counter"] = 4,
-		}, -- [245]
-		{
 			["message"] = "[string \"print(UnitBuff(\"player\", \"Omen of Clarity\")...\"]:1: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2024/01/07 17:34:15",
 			["locals"] = "(*temporary) = \"player\"\n(*temporary) = \"Omen of Clarity\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `UnitBuff'\n[string \"print(UnitBuff(\"player\", \"Omen of Clarity\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11189,
 			["counter"] = 2,
-		}, -- [246]
+		}, -- [244]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:52: attempt to index local 'buff' (a number value)",
 			["time"] = "2024/01/07 17:54:22",
@@ -1910,7 +1894,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:52: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:8>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:201: in function <Interface/AddOns/xVermin/_Core.lua:159>",
 			["session"] = 11198,
 			["counter"] = 32,
-		}, -- [247]
+		}, -- [245]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:51: attempt to call a table value",
 			["time"] = "2024/01/07 17:55:58",
@@ -1918,7 +1902,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:51: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:8>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:201: in function <Interface/AddOns/xVermin/_Core.lua:159>",
 			["session"] = 11200,
 			["counter"] = 30,
-		}, -- [248]
+		}, -- [246]
 		{
 			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2680: [string \"Condition_STANCE_DEBUFFDUR_LUA\"]:5: [string \"xTTD > 5 or xTTD = -1\"]:1: '=' expected near '>'",
 			["time"] = "2024/01/07 18:26:32",
@@ -1926,7 +1910,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
 			["session"] = 11218,
 			["counter"] = 1,
-		}, -- [249]
+		}, -- [247]
 		{
 			["message"] = "[string \"Condition_STANCE_DEBUFFDUR_LUA\"]:5: [string \"xTTD > 5 or xTTD = -1\"]:1: '=' expected near '>'",
 			["time"] = "2024/01/07 18:26:31",
@@ -1934,7 +1918,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"Condition_STANCE_DEBUFFDUR_LUA\"]:5: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function <...eWhen/Components/Core/Conditions/ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface/AddOns/TellMeWhen/Options/IconConfig.lua\"]:71: in function <Interface/AddOns/TellMeWhen/Options/IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:974: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:962>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1034: in function `CScriptBubble'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1463: in function `OnSettingSaved'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2051: in function `SaveSetting'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2023: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:2020>\n[string \"=[C]\"]: in function `Hide'\n[string \"*TellMeWhen_Options.xml:1903_OnClick\"]:3: in function <[string \"*TellMeWhen_Options.xml:1903_OnClick\"]:1>",
 			["session"] = 11218,
 			["counter"] = 87,
-		}, -- [250]
+		}, -- [248]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'buffbutton_motw:Hide()'.",
 			["time"] = "2024/01/07 18:22:43",
@@ -1942,7 +1926,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:85: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:59>\n[string \"=[C]\"]: ?",
 			["session"] = 11219,
 			["counter"] = 2,
-		}, -- [251]
+		}, -- [249]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'buffbutton_thorns:Show()'.",
 			["time"] = "2024/01/07 18:31:49",
@@ -1950,7 +1934,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:90: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:59>\n[string \"=[C]\"]: ?",
 			["session"] = 11220,
 			["counter"] = 1,
-		}, -- [252]
+		}, -- [250]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'buffbutton_motw:SetFrameStrata()'.",
 			["time"] = "2024/01/07 18:36:17",
@@ -1958,6 +1942,30 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SetFrameStrata'\n[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:107: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:59>\n[string \"=[C]\"]: ?",
 			["session"] = 11226,
 			["counter"] = 1,
+		}, -- [251]
+		{
+			["message"] = "NamePlate1PlaterUnitFrame:GetPoint(): Action[FrameMeasurement] failed because[Can't measure restricted regions]: attempted from: NamePlate1PlaterUnitFrame:GetPoint().\nLua Taint: ChocolateBar",
+			["time"] = "2024/01/08 11:55:53",
+			["locals"] = "(*temporary) = NamePlate1PlaterUnitFrame {\n 0 = <userdata>\n OnTick = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2129\n isNamePlate = true\n HasHideHookRegistered = true\n class = \"WARRIOR\"\n ExtraAuraCache = <table> {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n IsTarget = false\n IsUIParent = true\n TargetNeonDown = Texture {\n }\n powerBar = NamePlate1PlaterUnitFramePowerBar {\n }\n CanCheckAggro = true\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n ScriptRunInitialization = <function> defined @Interface/AddOns/Plater/Plater.lua:10737\n namePlateUnitToken = \"nameplate1\"\n aggroGlowUpper = Texture {\n }\n GhostAuraCache = <table> {\n }\n ScriptRunOnShow = <function> defined @Interface/AddOns/Plater/Plater.lua:10696\n namePlateNpcId = 3376\n HookGetInfo = <function> defined @Interface/AddOns/Plater/Plater.lua:10576\n UnregisterEvents = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2117\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n RegisterEvents = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2091\n IsUnitNameplate = true\n ExtraIconFrame = NamePlate1PlaterUnitFrameExtraIconRow {\n }\n RefreshID = 6\n namePlateUnitName = \"Bael'dun Soldier\"\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n HasHooksRegistered = true\n IsUnitEvent = <table> {\n }\n namePlateThreatPercent = 16.923077\n UNIT_ENTERED_VEHICLE = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2413\n CheckVehiclePossession = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2209\n HighlightFrame = NamePlate1PlaterUnitFrameHealthBarHighlightOverlay {\n }\n ScriptRunOnHide = <function> defined @Interface/AddOns/Plater/Plater.lua:10720\n blizzardPlateFrameID = \"table: 000002A01FBF62D0\"\n ScriptHotReload = <function> defined @Interface/AddOns/Plater/Plater.lua:10652\n ScriptRunOnUpdate = <function> defined @Interface/AddOns/Plater/Plater.lua:10675\n castBar2 = NamePlate1PlaterUnitFrameCastBar2 {\n }\n nameplateScaleAdjust = 1\n healthBar = NamePlate1PlaterUnitFrameHealthBar {\n }\n UNIT_NAME_UPDATE = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2401\n BossModIconFrame = NamePlate1PlaterUnitFrameHealthBarBossModIconRow {\n }\n BodyFlashFrame = Frame {\n }\n IsNeutralOrHostile = true\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n ActorTitleSpecial = FontString {\n }\n actorType = \"enemynpc\"\n namePlateClassification = \"normal\"\n ScriptRunCommMessageHook = <function> defined @Interface/AddOns/Plater/Plater.lua:10749\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n PLAYER_TARGET_CHANGED = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2396\n aggroGlowLower = Texture {\n }\n BuffFrame = NamePlate1PlaterUnitFrameBuffFrame1 {\n }\n isBattlePet = false\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n unitNameInternal = \"Bael'dun Soldier\"\n UnitFrameEvents = <table> {\n }\n guid = \"Creature-0-5208-1-5739-3376-00001BCDF8\"\n InExecuteRange = false\n namePlateThreatOffTankIsTanking = false\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n namePlateUnitReaction = 3\n castBar = NamePlate1PlaterUnitFrameCastBar {\n }\n IsProtected = <function> defined @Interface/AddOns/Plater/Plater.lua:10863\n SetUnit = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2156\n unitName = FontString {\n }\n Top3DFrame = NamePlate13DFrame {\n }\n CustomIndicators = <table> {\n }\n namePlateUnitNameLower = \"bael'dun soldier\"\n TargetTextures4Sides = <table> {\n }\n targetOverlay = Texture {\n }\n namePlateThreatIsTanking = false\n PlaterRaidTargetFrame = Frame {\n }\n ScriptGetContainer = <function> defined @Interface/AddOns/Plater/Plater.lua:10564\n PlayerCannotAttack = false\n softInteractIconFrame = NamePlate1PlaterUnitFramesoftInteractIconFrame {\n }\n ActorNameSpecial = FontString {\n }\n UNIT_EXITED_VEHICLE = <function> defined @Interface/AddOns/Plater/libs/DF/unitframe.lua:2416\n UNIT",
+			["stack"] = "[string \"=[C]\"]: in function `GetPoint'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:325: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:307>",
+			["session"] = 11228,
+			["counter"] = 1,
+		}, -- [252]
+		{
+			["message"] = "bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))",
+			["time"] = "2024/01/07 17:34:25",
+			["locals"] = "(*temporary) = \"bad argument #3 to '?' (Usage: local texture = self:CreateTexture([name, drawLayer, templateName, subLevel]))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `CreateTexture'\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:586: in function <Interface/AddOns/ChocolateBar/Core.lua:580>\n[string \"@Interface/AddOns/ChocolateBar/Core.lua\"]:593: in function `GetPointer'\n[string \"@Interface/AddOns/ChocolateBar/Bar.lua\"]:390: in function `Drag'\n[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:74: in function `Start'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:334: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:307>",
+			["session"] = 11229,
+			["counter"] = 5,
 		}, -- [253]
+		{
+			["message"] = "Interface/AddOns/ChocolateBar/DragAndDrop.lua:86: attempt to index upvalue 'focus' (a nil value)",
+			["time"] = "2024/01/07 17:34:27",
+			["locals"] = "self = <table> {\n Start = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:67\n UnregisterFrame = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:63\n Stop = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:79\n RegisterFrame = <function> defined @Interface/AddOns/ChocolateBar/DragAndDrop.lua:54\n}\nframe = ChocolateBugSack {\n BottomLeftCorner = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n icon = Texture {\n }\n obj = <table> {\n }\n text = FontString {\n }\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n bar = ChocolateBar2 {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n highlight = <function> defined @Interface/AddOns/ChocolateBar/Chocolate.lua:355\n Update = <function> defined @Interface/AddOns/ChocolateBar/Chocolate.lua:300\n isMoving = false\n settings = <table> {\n }\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n Center = Texture {\n }\n RightEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n labelText = \"\"\n 0 = <userdata>\n TopEdge = Texture {\n }\n BottomEdge = Texture {\n }\n name = \"BugSack\"\n BottomRightCorner = Texture {\n }\n TopRightCorner = Texture {\n }\n TopLeftCorner = Texture {\n }\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n backdropInfo = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"OnUpdate\"\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = ChocolateBar2 {\n 0 = <userdata>\n UpdateBar = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:428\n GetFocus = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:421\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n dummy = Chocolatedummy {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n autohide = false\n Drop = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:394\n UpdateColors = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:121\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n UpdateStrata = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:76\n New = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:28\n EatChocolatePiece = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:184\n BottomEdge = Texture {\n }\n tempHide = false\n chocoMostRight = ChocolatepicoFPS {\n }\n chocolist = <table> {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n LoseFocus = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:417\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n listCenter = <table> {\n }\n chocoMostLeft = ChocolateBugSack {\n }\n UpdateDragChocolate = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:346\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n Center = Texture {\n }\n RightEdge = Texture {\n }\n UpdateScale = <function> defined @Interface/AddOns/ChocolateBar/Bar.lua:105\n LeftEdge = Texture {\n }\n Drag =",
+			["stack"] = "[string \"@Interface/AddOns/ChocolateBar/DragAndDrop.lua\"]:86: in function `Stop'\n[string \"@Interface/AddOns/ChocolateBar/Chocolate.lua\"]:347: in function <Interface/AddOns/ChocolateBar/Chocolate.lua:341>",
+			["session"] = 11229,
+			["counter"] = 7,
+		}, -- [254]
 	},
 }

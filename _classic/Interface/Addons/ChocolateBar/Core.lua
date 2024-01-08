@@ -9,6 +9,7 @@ local _, _, _, tocversion = GetBuildInfo()
 local addonVersion = GetAddOnMetadata("ChocolateBar", "Version")
 
 ChocolateBar.Jostle = {}
+ChocolateBar.Jostle2 = {}
 ChocolateBar.Bar = {}
 ChocolateBar.ChocolatePiece = {}
 ChocolateBar.Drag = {}
@@ -27,7 +28,7 @@ local db --reference to ChocolateBar.db.profile
 --------
 local function debug(...)
 	if ChocolateBar.db and ChocolateBar.db.char.debug then
-	 	local s = "ChocolateBar debug:"
+	 	local s = "CB:"
 		for i=1,select("#", ...) do
 			local x = select(i, ...)
 			s = strjoin(" ",s,tostring(x))
@@ -230,7 +231,8 @@ function ChocolateBar:UpdateJostle()
 end
 
 function ChocolateBar:isNewInstall()
-	return ChocolateBarDB.addonVersion < GetAddOnMetadata("ChocolateBar", "Version") and true or false
+	local lastversion = ChocolateBarDB.addonVersion or ""
+	return lastversion < GetAddOnMetadata("ChocolateBar", "Version") and true or false
 end
 
 function ChocolateBar:ToggleOrderHallCommandBar()
@@ -583,7 +585,7 @@ local function createPointer()
 	pointer:SetFrameLevel(20)
 	pointer:SetWidth(15)
 
-	local arrow = pointer:CreateTexture(nil, "DIALOG")
+	local arrow = pointer:CreateTexture(nil, "BACKGROUND")
 	arrow:SetPoint("CENTER",pointer,"LEFT", 0, 0)
 	arrow:SetTexture("Interface\\AddOns\\ChocolateBar\\pics\\pointer")
 	return pointer

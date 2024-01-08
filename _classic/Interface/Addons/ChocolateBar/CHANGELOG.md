@@ -1,7 +1,6 @@
 # ChocolateBar
 
-## [v3.7.7](https://github.com/Kiatra/ChocolateBar/tree/v3.7.7) (2021-10-01)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/commits/v3.7.7) [Previous Releases](https://github.com/Kiatra/ChocolateBar/releases)
+## [v3.11](https://github.com/Kiatra/ChocolateBar/tree/v3.11) (2023-05-06)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v3.10...v3.11) 
 
-- add CF id  
-    add default toc version  
+- fix error on login  

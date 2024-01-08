@@ -1,3 +1,17 @@
+VER 3 0000000000000026 " " "134400"
+#showtooltip
+/use Legs Rune Ability
+END
+VER 3 0000000000000028 " " "134400"
+#showtooltip
+/use Chest Rune Ability
+END
+VER 3 0000000000000024 " " "134400"
+#showtooltip
+/use Solid Sharpening Stone
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
 VER 3 0000000000000012 " " "136173"
 /click BehindTarget
 END
@@ -13,27 +27,13 @@ VER 3 0000000000000027 " " "134400"
 #showtooltip
 /use Hands Rune Ability
 END
-VER 3 0000000000000026 " " "134400"
-#showtooltip
-/use Legs Rune Ability
-END
-VER 3 0000000000000028 " " "134400"
-#showtooltip
-/use Chest Rune Ability
-END
-VER 3 0000000000000024 " " "134400"
-#showtooltip
-/use Solid Sharpening Stone
-/use [button:2] 17; 16
-/click StaticPopup1Button1
-END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use item:1205
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:422
+/use item:4542
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:1707
@@ -49,8 +49,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run buffbutton_motw:ClearAllPoints()
-/run buffbutton_motw:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", 0, 180)
+/target Khazgorm
+/cast moonfire
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
