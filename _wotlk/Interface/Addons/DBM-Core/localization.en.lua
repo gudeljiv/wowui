@@ -33,7 +33,8 @@ L.COPY_URL_DIALOG						= "Copy URL"
 L.COPY_WA_DIALOG						= "Copy WA Key"
 
 --Post Patch 7.1
-L.NO_RANGE								= "Range Radar can not be used in instances. Legacy text range frame used instead"
+L.TEXT_ONLY_RANGE						= "Range frame is limited to text only due to API restrictions in this area."
+L.NO_RANGE								= "Range frame can not be used due to API restrictions in this area."
 L.NO_ARROW								= "Arrow can not be used in instances"
 L.NO_HUD								= "HUDMap can not be used in instances"
 
@@ -45,7 +46,7 @@ L.LOOT_SPEC_REMINDER					= "Your current spec is %s. Your current loot choice is
 
 L.BIGWIGS_ICON_CONFLICT					= L.DBM .. " has detected that you have raid icons turned on in both BigWigs and " .. L.DBM .. ". Please disable icons in one of them to avoid conflicts"
 
-L.MOD_AVAILABLE							= "%s is available for this zone. You can find download on Curse, Wago, WoWI, or from the GitHub Releases page"
+L.MOD_AVAILABLE							= "%s is available for this zone. You can download it on Curse, Wago, WoWI, or from the GitHub Releases page."
 
 L.COMBAT_STARTED						= "%s engaged. Good luck and have fun! :)"
 L.COMBAT_STARTED_IN_PROGRESS			= "Engaged an in progress fight against %s. Good luck and have fun! :)"
@@ -138,8 +139,6 @@ L.GENERIC_WARNING_OTHERS2				= "and %d others"
 L.GENERIC_WARNING_BERSERK				= "Berserk in %s %s"
 L.GENERIC_TIMER_BERSERK					= "Berserk"
 L.OPTION_TIMER_BERSERK					= "Show timer for $spell:26662"
-L.GENERIC_TIMER_COMBAT					= "Combat starts"
-L.OPTION_TIMER_COMBAT					= "Show timer for combat start"
 L.BAD									= "Bad"
 
 L.OPTION_CATEGORY_TIMERS				= "Bars"
@@ -416,7 +415,7 @@ L.AUTO_SPEC_WARN_OPTIONS = {
 	sooncount							= "Show pre-special announce (with count) for $spell:%s",
 	bait								= "Show pre-special announce (to bait) for $spell:%s",
 	prewarn 							= "Show pre-special announce %s seconds before $spell:%s",
-	dispel 								= "Show special announce to dispel/spellsteal $spell:%s",
+	dispel 								= "Show special announce to dispel $spell:%s",
 	interrupt							= "Show special announce to interrupt $spell:%s",
 	interruptcount						= "Show special announce (with count) to interrupt $spell:%s",
 	you 								= "Show special announce when you are affected by $spell:%s",
@@ -488,7 +487,8 @@ L.AUTO_TIMER_TEXTS = {
 	Intermissioncount					= "Intermission %%s",
 	adds								= "Adds",
 	addscustom							= "Adds (%%s)",
-	roleplay							= GUILD_INTEREST_RP or "Roleplay"
+	roleplay							= GUILD_INTEREST_RP or "Roleplay",--Used mid fight, pre fight, or even post fight. Boss does NOT auto engage upon completion
+	combat								= "Combat starts"--Only used if the boss auto engages upon completion (ie ragnaros type situation)
 }
 --This basically clones np only bar option and display text from regular counterparts
 L.AUTO_TIMER_TEXTS.cdnp = L.AUTO_TIMER_TEXTS.cd
@@ -528,7 +528,8 @@ L.AUTO_TIMER_OPTIONS = {
 	intermissioncount					= "Show timer (with count) for next intermission",
 	adds								= "Show timer for incoming adds",
 	addscustom							= "Show timer for incoming adds",
-	roleplay							= "Show timer for roleplay duration"--This does need localizing though.
+	roleplay							= "Show timer for roleplay duration",--This does need localizing though.
+	combat								= "Show timer for combat start"
 }
 
 L.AUTO_ICONS_OPTION_TARGETS				= "Set icons on $spell:%s targets"--Usually used for player targets with no specific sorting
@@ -653,5 +654,6 @@ L.WORLD_BUFFS = {
 	zgHeart								= "Now, only one step remains to rid us of the Soulflayer's threat",
 	zgHeartBooty						= "The Blood God, the Soulflayer, has been defeated!  We are imperiled no longer!",
 	zgHeartYojamba						= "Begin the ritual, my servants.  We must banish the heart of Hakkar back into the void!",
-	rendHead							= "The false Warchief, Rend Blackhand, has fallen!"
+	rendHead							= "The false Warchief, Rend Blackhand, has fallen!",
+	blackfathomBoon						= "boon of Blackfathom"
 }

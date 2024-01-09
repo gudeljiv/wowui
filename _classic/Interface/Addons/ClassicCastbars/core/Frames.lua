@@ -1,4 +1,5 @@
 local _, namespace = ...
+
 local addon = ClassicCastbars
 local AnchorManager = namespace.AnchorManager
 local PoolManager = namespace.PoolManager
@@ -11,7 +12,6 @@ local unpack = _G.unpack
 local min = _G.math.min
 local max = _G.math.max
 local ceil = _G.math.ceil
-local InCombatLockdown = _G.InCombatLockdown
 
 local CastingBarFrame = isRetail and _G.PlayerCastingBarFrame or _G.CastingBarFrame
 
@@ -68,7 +68,7 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
 
         castbar:SetPoint("TOPLEFT", relativeKey, "BOTTOMLEFT", pointX, pointY - 4);
     else
-        if not isClassicEra and (parentFrame == _G.TargetFrame or parentFrame == _G.FocusFrame) then
+        if (parentFrame == _G.TargetFrame or parentFrame == _G.FocusFrame) then
             -- copy paste from wotlk wow ui source
             if ( parentFrame.haveToT ) then
                 if ( parentFrame.buffsOnTop or parentFrame.auraRows <= 1 ) then
@@ -89,7 +89,7 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
                     castbar:SetPoint("TOPLEFT", parentFrame, "BOTTOMLEFT", 25, 7 )
                 end
             end
-        else -- for classic era or unknown parent frame
+        else -- unknown parent frame
             local auraRows = parentFrame.auraRows or 0
 
             if parentFrame.buffsOnTop or auraRows <= 1 then
@@ -334,8 +334,16 @@ end
 
 function addon:DisplayCastbar(castbar, unitID)
     local cast = castbar._data
+
+	if not cast.isUninterruptible then 
+		_G.IfUnitIsCastingInteruptible = true
+	end
+
     if not cast then return end
     if cast.endTime == nil then return end
+    if not castbar.isTesting then
+        if cast.endTime - GetTime() <= 0 then return end -- expired
+    end
 
     local parentFrame = AnchorManager:GetAnchor(unitID)
     if not parentFrame then return end
@@ -357,7 +365,7 @@ function addon:DisplayCastbar(castbar, unitID)
 
     if unitID == "target" and self.db.target.autoPosition then
         self:SetTargetCastbarPosition(castbar, parentFrame)
-    elseif not isClassicEra and unitID == "focus" and self.db.focus.autoPosition then
+    elseif unitID == "focus" and self.db.focus.autoPosition then
         self:SetTargetCastbarPosition(castbar, parentFrame)
     else
         castbar:SetPoint(db.position[1], parentFrame, db.position[2], db.position[3])
@@ -376,6 +384,9 @@ function addon:DisplayCastbar(castbar, unitID)
 end
 
 function addon:HideCastbar(castbar, unitID, skipFadeOut)
+
+	_G.IfUnitIsCastingInteruptible = false
+
     if skipFadeOut then
         if castbar.animationGroup then
             castbar.animationGroup:Stop()
@@ -731,113 +742,4 @@ if isRetail then
             addon:SkinPlayerCastbar()
         end
     end)
-end
-
-if isClassicEra then
-    function addon:CreateOrUpdateSecureFocusButton(text)
-        if not self.FocusButton then
-            -- Create an invisible secure click trigger above the nonsecure castbar frame
-            self.FocusButton = CreateFrame("Button", "FocusCastbar", UIParent, "SecureActionButtonTemplate")
-            self.FocusButton:SetAttribute("type", "macro")
-        end
-
-        local db = ClassicCastbars.db.focus
-        self.FocusButton:SetPoint(db.position[1], UIParent, db.position[2], db.position[3] + 30)
-        self.FocusButton:SetSize(db.width + 5, db.height + 35)
-
-        self.FocusButton:SetAttribute("macrotext", "/targetexact " .. text)
-        self.FocusFrame.Text:SetText(text)
-        self.FocusFrame:EnableMouse(true)
-        self.FocusButton:EnableMouse(true)
-    end
-
-    local NewTimer = _G.C_Timer.NewTimer
-    local focusTargetTimer -- time for changing focus
-    local focusTargetResetTimer -- timer for clearing focus
-
-    local function ClearFocusTarget()
-        if not InCombatLockdown() then
-            addon.FocusButton:SetAttribute("macrotext", "")
-            addon.FocusFrame:EnableMouse(false)
-            addon.FocusButton:EnableMouse(false)
-        else
-            focusTargetResetTimer = NewTimer(4, ClearFocusTarget)
-        end
-    end
-
-    function addon:ClearFocus()
-        if self.FocusFrame then
-            self.FocusFrame.Text:SetText("")
-        end
-
-        if self.FocusButton then
-            if not InCombatLockdown() then
-                self.FocusButton:SetAttribute("macrotext", "")
-                self.FocusFrame:EnableMouse(false)
-                self.FocusButton:EnableMouse(false)
-            else
-                -- If we're in combat try to check every 4s if we left combat and can update secure frame
-                focusTargetResetTimer = NewTimer(4, ClearFocusTarget)
-            end
-        end
-    end
-
-    function addon:SetFocusDisplay(text, unitID)
-        if focusTargetTimer and not focusTargetTimer:IsCancelled() then
-            focusTargetTimer:Cancel()
-            focusTargetTimer = nil
-        end
-        if focusTargetResetTimer and not focusTargetResetTimer:IsCancelled() then
-            focusTargetResetTimer:Cancel()
-            focusTargetResetTimer = nil
-        end
-
-        if not text then
-            return self:ClearFocus()
-        end
-
-        if not self.FocusFrame then
-            -- Create a new unsecure frame to display focus text. We dont reuse the castbar frame as we want to
-            -- display this text even when the castbar is hidden
-            self.FocusFrame = CreateFrame("Frame", nil, UIParent)
-            self.FocusFrame:SetSize(ClassicCastbars.db.focus.width + 5, ClassicCastbars.db.focus.height + 35)
-            self.FocusFrame.Text = self.FocusFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalLargeOutline")
-            self.FocusFrame.Text:SetPoint("CENTER", self.FocusFrame, 0, 20)
-        end
-
-        if UnitIsPlayer(unitID) then
-            self.FocusFrame.Text:SetTextColor(RAID_CLASS_COLORS[select(2, UnitClass(unitID))]:GetRGBA())
-        else
-            self.FocusFrame.Text:SetTextColor(1, 0.819, 0, 1)
-        end
-
-        local isInCombat = InCombatLockdown()
-        if not isInCombat then
-            self:CreateOrUpdateSecureFocusButton(text)
-        else
-            -- If we're in combat try to check every 4s if we left combat and can update secure frame
-            local function UpdateFocusTarget()
-                if not InCombatLockdown() then
-                    addon:CreateOrUpdateSecureFocusButton(text)
-                else
-                    focusTargetTimer = NewTimer(4, UpdateFocusTarget)
-                end
-            end
-
-            focusTargetTimer = NewTimer(4, UpdateFocusTarget)
-        end
-
-        -- HACK: quickly create the focus castbar if it doesnt exist and hide it.
-        -- This is just to make anchoring easier for self.FocusFrame on first usage
-        if not activeFrames.focus then
-            local pos = ClassicCastbars.db.focus.position
-            local castbar = self:GetCastbarFrame("focus")
-            castbar:ClearAllPoints()
-            castbar:SetParent(UIParent)
-            castbar:SetPoint(pos[1], UIParent, pos[2], pos[3])
-        end
-
-        self.FocusFrame.Text:SetText(isInCombat and text .. " (|cffff0000P|r)" or text)
-        self.FocusFrame:SetAllPoints(activeFrames.focus)
-    end
 end

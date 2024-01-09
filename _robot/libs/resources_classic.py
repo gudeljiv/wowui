@@ -131,8 +131,13 @@ data = {
     },
     "rogue": {
         "main": [
-            {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1", "modifier": "lshift"},
-            {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "4"},
+            {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1"},
+            {"name": "saber slash", "type": "GetSpellTexture", "id": 424785, "key": "2"},
+            {"name": "mutilate", "type": "GetSpellTexture", "id": 399956, "key": "2"},
+            {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "5"},
+            {"name": "slice and dice", "type": "GetSpellTexture", "id": 5171, "key": "6"},
+            {"name": "gouge", "type": "GetSpellTexture", "id": 1776, "key": "f"},
+            # {"name": "kick", "type": "GetSpellTexture", "id": 1775, "key": "f"},
         ],
         "secondary": [
             {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},

@@ -11,7 +11,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:4604
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -49,8 +49,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/target Khazgorm
-/cast moonfire
+/run local y=0;for i=1,40 do local n,_,_,_,_,_,_,_,isStealable=UnitAura("target",i,"HARMFUL");if n then  print(n) end end
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

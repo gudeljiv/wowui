@@ -47,9 +47,33 @@ function SeasonOfDiscovery:LoadNPCs()
             [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
 
         },
+        [204827] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.DUN_MOROGH] = {{43, 49.4}},
+                [zoneIDs.ELWYNN_FOREST] = {{52.2, 84.4}},
+                [zoneIDs.DUROTAR] = {{48, 79.4}},
+                [zoneIDs.TELDRASSIL] = {{33.6, 35.4}},
+                [zoneIDs.MULGORE] = {{60.4, 33.4}},
+            },
+        },
+        [204989] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.ELWYNN_FOREST] = {{61.8, 47.6}},
+            },
+        },
         [202699] = { -- Baron Aquanis
             [npcKeys.spawns] = {[zoneIDs.BLACKFATHOM_DEEPS]={{-1,-1}}},
             [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
+        },
+        [205153] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.DUSKWOOD] = {{4.4, 28.2}},
+            },
+        },
+        [205278] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.STORMWIND_CITY] = {{38.4, 27.4}},
+            },
         },
         [206248] = {
             [npcKeys.spawns] = {
@@ -107,6 +131,11 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.DUN_MOROGH] = {{69.2, 58.2}},
             },
         },
+        [208802] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.ELWYNN_FOREST] = {{25.4, 43.6}},
+            },
+        },
         [208919] = {
             [npcKeys.spawns] = {
                 [zoneIDs.TIRISFAL_GLADES] = {{61.6, 51.4}},
@@ -115,6 +144,11 @@ function SeasonOfDiscovery:LoadNPCs()
         [209004] = {
             [npcKeys.spawns] = {
                 [zoneIDs.IRONFORGE] = {{71.2, 73.2}},
+            },
+        },
+        [209607] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.THE_BARRENS] = {},
             },
         },
         [209608] = {
@@ -129,6 +163,16 @@ function SeasonOfDiscovery:LoadNPCs()
         [209872] = {
             [npcKeys.spawns] = {
                 [zoneIDs.TELDRASSIL] = {{56.6, 57.8}},
+            },
+        },
+        [210451] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.DARKSHORE] = {{55.4, 36.6}},
+            },
+        },
+        [210537] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.WESTFALL] = {{44.9,24},{31.5,45}},
             },
         },
         [210995] = {
@@ -147,6 +191,11 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.STORMWIND_CITY] = {{37.8,80.2}},
             },
             [npcKeys.friendlyToFaction] = "A",
+        },
+        [211146] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.SILVERPINE_FOREST] = {},
+            },
         },
         [211965] = {
             [npcKeys.spawns] = {
@@ -259,6 +308,11 @@ function SeasonOfDiscovery:LoadNPCs()
         [214101] = {
             [npcKeys.spawns] = {[zoneIDs.DARNASSUS] = {{59.8,56.4}}},
             [npcKeys.friendlyToFaction] = "A",
+        },
+        [214456] = {
+            [npcKeys.spawns] = {
+                [zoneIDs.REDRIDGE_MOUNTAINS] = {{35.4,8.6},{64.2,45.8},{77.4,69.4}},
+            },
         },
         [216902] = {
             [npcKeys.spawns] = {[zoneIDs.IRONFORGE]={{33.7,67.23}}},

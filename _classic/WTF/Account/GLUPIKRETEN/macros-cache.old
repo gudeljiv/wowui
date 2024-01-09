@@ -11,7 +11,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4604
+/use item:0
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -49,8 +49,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/target Khazgorm
-/cast moonfire
+/run xRTF(1,"GetSpellTexture","407993")
+/run xRTF(2,"GetSpellTexture","407988")
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
