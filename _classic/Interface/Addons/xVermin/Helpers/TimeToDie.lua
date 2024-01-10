@@ -44,10 +44,16 @@ local function startTracking(unit)
 		healthRecord[unit] = {}
 	end
 	healthRecord[unit][1] = UnitHealth(unit)/UnitHealthMax(unit)
-	tickers[unit] = tickers[unit] or C_Timer.NewTicker(1, function() updateEstimate(unit) end)
+
+	C_Timer.After(2,
+		function()
+			tickers[unit] = tickers[unit] or C_Timer.NewTicker(1, function() updateEstimate(unit) end)
+		end
+	)
 end
 
 local function stopTracking(unit)
+	-- print("stop")
 	if tickers[unit] then
 		tickers[unit]:Cancel()
 		tickers[unit] = nil
@@ -55,6 +61,7 @@ local function stopTracking(unit)
 end
 
 local function stopAllTracking()
+	-- print("stopall")
 	for unit, ticker in pairs(tickers) do
 		ticker:Cancel()
 		tickers[unit] = nil

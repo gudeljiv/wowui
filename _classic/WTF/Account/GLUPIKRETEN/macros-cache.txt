@@ -7,11 +7,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:159
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4604
+/use item:117
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -24,7 +24,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:118
 END
 VER 3 0000000000000028 "rune c" "134400"
 #showtooltip
@@ -49,7 +49,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run local y=0;for i=1,40 do local n,_,_,_,_,_,_,_,isStealable=UnitAura("target",i,"HARMFUL");if n then  print(n) end end
+/run EngravingFrameScrollFrameButton2Icon:CreateBeautyBorder(8)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
