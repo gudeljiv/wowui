@@ -134,7 +134,7 @@
 				["0.56:0.70:0.51:0.75:0.61:0.78"] = 148, -- Lakeshire, Darkshire, Nethergarde Keep
 				["0.56:0.70:0.51:0.75"] = 60, -- Lakeshire, Darkshire
 				["0.56:0.70:0.41:0.75"] = 133, -- Lakeshire, Sentinel Hill (Flexin reported 159)
-				["0.56:0.70:0.43:0.67"] = 113, -- Lakeshire, Stormwind (Laurent Girardot reported 131, CoiK _ reported 133, Manuel Frank Griesel reported 139, Darren Long reported 147)
+				["0.56:0.70:0.43:0.67"] = 113, -- Lakeshire, Stormwind (Laurent Girardot reported 131, CoiK _ reported 133, Manuel Frank Griesel reported 139, Darren Long reported 147, Andrew Scheldt reported 227)
 				["0.56:0.70:0.58:0.65"] = 61, -- Lakeshire, Morgan's Vigil
 				["0.56:0.70:0.58:0.65:0.51:0.57"] = 153, -- Lakeshire, Morgan's Vigil, Thorium Point
 				["0.56:0.70:0.58:0.65:0.51:0.57:0.51:0.49:0.59:0.52"] = 295, -- Lakeshire, Morgan's Vigil, Thorium Point, Ironforge, Thelsamar (was 415, changed to 295 by Landoro, Sebastian Sagrelius and Triston Harvey)
@@ -444,6 +444,7 @@
 				["0.43:0.25:0.64:0.67:0.48:0.70"] = 834, -- Auberdine, Theramore, Thalanaar
 				["0.43:0.25:0.40:0.51:0.64:0.67:0.48:0.70"] = 761, -- Auberdine, Nijel's Point, Theramore, Thalanaar
 				["0.43:0.25:0.40:0.51:0.64:0.67:0.61:0.55"] = 713, -- Auberdine, Nijel's Point, Theramore, Ratchet
+				["0.43:0.25:0.64:0.67:0.60:0.81"] = 828, -- Auberdine, Theramore, Gadgetzan
 
 				-- Alliance: Cenarion Hold (Silithus)
 				["0.42:0.79:0.60:0.81"] = 189, -- Cenarion Hold, Gadgetzan
@@ -465,6 +466,7 @@
 				["0.42:0.79:0.60:0.81:0.48:0.70"] = 366, -- Cenarion Hold, Gadgetzan, Thalanaar
 				["0.42:0.79:0.60:0.81:0.64:0.67:0.40:0.51:0.43:0.25:0.53:0.26:0.65:0.23"] = 1242, -- Cenarion Hold, Gadgetzan, Theramore, Nijel's Point, Auberdine, Talonbranch Glade, Everlook
 				["0.42:0.79:0.31:0.69:0.43:0.25:0.53:0.26:0.65:0.23"] = 934, -- Cenarion Hold, Feathermoon, Auberdine, Talonbranch Glade, Everlook
+				["0.42:0.79:0.60:0.81:0.64:0.67:0.61:0.40:0.46:0.40:0.39:0.40"] = 881, -- Cenarion Hold, Gadgetzan, Theramore, Talrendis Point, Astranaar, Stonetalon Peak
 
 				-- Alliance: Everlook (Winterspring)
 				["0.65:0.23:0.55:0.21"] = 122, -- Everlook, Moonglade
@@ -783,6 +785,7 @@
 				["0.61:0.40:0.64:0.67:0.60:0.81"] = 398, -- Talrendis Point, Theramore, Gadgetzan
 				["0.61:0.40:0.46:0.40:0.43:0.25:0.55:0.21"] = 451, -- Talrendis Point, Astranaar, Auberdine, Moonglade
 				["0.61:0.40:0.43:0.25:0.42:0.16"] = 386, -- Talrendis Point, Auberdine, Rut'theran Village
+				["0.61:0.40:0.46:0.40:0.39:0.40:0.40:0.51:0.31:0.69"] = 663, -- Talrendis Point, Astranaar, Stonetalon Peak, Nijel's Point, Feathermoon
 
 				-- Alliance: Thalanaar (Feralas)
 				["0.48:0.70:0.60:0.81"] = 171, -- Thalanaar, Gadgetzan

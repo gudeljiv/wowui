@@ -1931,6 +1931,7 @@
 				["0.29:0.54:0.31:0.43:0.38:0.21:0.49:0.21"] = 311, -- Taunka'le Village, Warsong Camp, The Shadow Vault, Argent Tournament Grounds
 				["0.29:0.54:0.45:0.51:0.48:0.44:0.52:0.38:0.62:0.36:0.73:0.25"] = 344, -- Taunka'le Village, Agmar's Hammer, Kor'koron Vanguard, Dalaran, K3, Camp Tunka'lo
 				["0.29:0.54:0.31:0.43:0.38:0.21:0.57:0.21"] = 355, -- Taunka'le Village, Warsong Camp, The Shadow Vault, Bouldercrag's Refuge
+				["0.29:0.54:0.29:0.57:0.49:0.58:0.59:0.55:0.70:0.55:0.84:0.59"] = 351, -- Taunka'le Village, Unu'pe, Moa'ki, Venomspite, Conquest Hold, Camp Winterhoof
 
 				-- Horde: Borean Tundra: Transitus Shield (Coldarra)
 				["0.12:0.53:0.17:0.53:0.15:0.57"] = 58, -- Transitus Shield, Amber Ledge, Warsong Hold
@@ -3758,6 +3759,7 @@
 				["0.18:0.40:0.28:0.28:0.38:0.21:0.57:0.21:0.60:0.25"] = 519, -- Nesingwary Base Camp, Death's Rise, The Shadow Vault, Bouldercrag's Refuge, Grom'arsh Crash-Site, Grom'arsh Crash-Site
 				["0.18:0.40:0.28:0.28:0.38:0.21:0.57:0.21"] = 458, -- Nesingwary Base Camp, Death's Rise, The Shadow Vault, Bouldercrag's Refuge
 				["0.18:0.40:0.24:0.40:0.52:0.38:0.52:0.34:0.38:0.21"] = 590, -- Nesingwarys Basislager, Flussnabel, Dalaran, Kreuzfahrerturm, Das Schattengewölbe
+				["0.18:0.40:0.24:0.40:0.52:0.38:0.54:0.52:0.59:0.55:0.70:0.55"] = 690, -- Nesingwary Base Camp, River's Heart, Dalaran, Wyrmrest Temple, Venomspite, Conquest Hold
 
 				-- Horde: Sholazar Basin: River's Heart
 				["0.24:0.40:0.31:0.43"] = 129, -- River's Heart, Warsong Camp

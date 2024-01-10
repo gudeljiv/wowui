@@ -30,6 +30,7 @@
 				["0.43:0.93:0.55:0.57:0.62:0.31:0.49:0.27"] = 783, -- Booty Bay, Kargath, Hammerfall, Tarren Mill
 				["0.43:0.93:0.55:0.57:0.44:0.19"] = 903, -- Booty Bay, Kargath, Undercity
 				["0.43:0.93:0.55:0.57:0.62:0.31:0.49:0.27:0.38:0.24"] = 882, -- Booty Bay, Kargath, Hammerfall, Tarren Mill, The Sepulcher
+				["0.43:0.93:0.55:0.57:0.44:0.19:0.49:0.27"] = 970, -- Booty Bay, Kargath, Undercity, Tarren Mill
 
 				-- Horde: Flame Crest (Burning Steppes)
 				["0.56:0.61:0.61:0.75:0.43:0.93"] = 472, -- Flame Crest, Stonard, Booty Bay
@@ -268,6 +269,7 @@
 				["0.44:0.69:0.56:0.53:0.41:0.47"] = 414, -- Camp Mojache, Crossroads, Sun Rock Retreat
 				["0.44:0.69:0.55:0.73:0.61:0.80:0.50:0.76"] = 307, -- Camp Mojache, Freewind Post, Gadgetzan, Marshal's Refuge
 				["0.44:0.69:0.56:0.53:0.46:0.30:0.64:0.23"] = 661, -- Camp Mojache, Crossroads, Bloodvenom Post, Everlook
+				["0.44:0.69:0.45:0.56:0.53:0.61"] = 346, -- Camp Mojache, Thunder Bluff, Camp Taurajo
 
 				-- Horde: Camp Taurajo (The Barrens)
 				["0.53:0.61:0.55:0.73:0.61:0.80"] = 218, -- Camp Taurajo, Freewind Post, Gadgetzan
