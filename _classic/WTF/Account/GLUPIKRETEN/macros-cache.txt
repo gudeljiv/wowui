@@ -7,11 +7,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:117
+/use item:2287
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -24,7 +24,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:858
 END
 VER 3 0000000000000028 "rune c" "134400"
 #showtooltip
@@ -40,7 +40,7 @@ VER 3 0000000000000026 "rune l" "134400"
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip
-/use Solid Sharpening Stone
+/use Rough Sharpening Stone
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
@@ -49,7 +49,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run EngravingFrameScrollFrameButton2Icon:CreateBeautyBorder(8)
+/run local numIcons = GetNumMacroIcons(); for i=1,numIcons do  DEFAULT_CHAT_FRAME:AddMessage(string.format("Icon %d: %s",i,GetMacroIconInfo(i))); end
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

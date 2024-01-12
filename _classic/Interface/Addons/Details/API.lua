@@ -49,7 +49,7 @@ local currentCombat = Details:GetCurrentCombat()
 
 @TITLE- Getting a specific combat:@
 
-@CODElocal combat = Details:GetCombat (segmentID = DETAILS_SEGMENTID_CURRENT)@
+@CODElocal combat = Details:GetCombat(segmentID = DETAILS_SEGMENTID_CURRENT)@
 
 @DESCFor overall use DETAILS_SEGMENTID_OVERALL, for older segments use the combat index (1 ... 25), when the current combat ends, it is added to index 1 on the old segments table.@
 
@@ -58,10 +58,10 @@ local currentCombat = Details:GetCurrentCombat()
 
 @DESCThere's several ways to get a player object, the quick way is:@
 
-@CODElocal player = Details:GetActor (segmentID = DETAILS_SEGMENTID_CURRENT, attributeID = DETAILS_ATTRIBUTE_DAMAGE, "PlayerName")@
+@CODElocal player = Details:GetActor(segmentID = DETAILS_SEGMENTID_CURRENT, attributeID = DETAILS_ATTRIBUTE_DAMAGE, "PlayerName")@
 
 @DESCThe segmentID is the same as described on GetCombat(), attributeID is the ID for the attribute type.
-there is an alias which receives the player name as the first parameter: Details:GetPlayer (playerName, segmentID, attributeID), combat also accept GetActor(): combat:GetActor (attributeID, playerName).
+there is an alias which receives the player name as the first parameter: Details:GetPlayer(playerName, segmentID, attributeID), combat also accept GetActor(): combat:GetActor(attributeID, playerName).
 Retriving actors is expensive, try to cache the object once you have it.
 @
 
@@ -71,7 +71,7 @@ Retriving actors is expensive, try to cache the object once you have it.
 @CODElocal combat = Details:GetCurrentCombat()
 
 @COMMENT--if the player is from a different realm, use 'playername-realmname'@
-local player = combat:GetActor (DETAILS_ATTRIBUTE_DAMAGE, "PlayerName")
+local player = combat:GetActor(DETAILS_ATTRIBUTE_DAMAGE, "PlayerName")
 
 local damageDone = player.total
 local combatTime = combat:GetCombatTime()
@@ -174,13 +174,13 @@ DETAILS_REJU_POTION_ID = 188018
 [[
 @TITLECombat Object:@
 
-actor = combat:GetActor ( attribute, character_name ) or actor = combat ( attribute, character_name )
+actor = combat:GetActor( attribute, character_name ) or actor = combat ( attribute, character_name )
 @COMMENTreturns an actor object@
 
 characterList = combat:GetActorList ( attribute )
 @COMMENTreturns a numeric table with all actors of the specific attribute, contains players, npcs, pets, etc.@
 
-combatName = combat:GetCombatName ( try_to_find )
+combatName = combat:GetCombatName( try_to_find )
 @COMMENTreturns the segment name, e.g. "Trainning Dummy", if try_to_find is true, it searches the combat for a enemy name.@
 
 bossInfo = combat:GetBossInfo()
@@ -266,7 +266,7 @@ returns a iterated table of actors inside the container.
 Usage: 'for index, actor in container:ListActors() do'
 Note: if the container is a spell container, returns pairs() instead: 'for spellid, spelltable in container:ListActors() do'
 
-actor = container:GetActor (character_name)
+actor = container:GetActor(character_name)
 returns the actor, for spell container use the spellid instead.
 
 container:GetSpell (spellid)
@@ -376,20 +376,15 @@ spell.counter = how many hits this spell made.
 spell.id = spellid
 
 spell.successful_casted = how many times this spell has been casted successfully (only for enemies).
-- players has its own spell cast counter inside Misc Container with the member "spell_cast".
-- the reason os this is spell_cast holds all spells regardless of its attribute (can hold healing/damage/energy/misc).
 
-spell.m_amt = multistrike hits.
-spell.m_dmg = multistrike damage.
-spell.m_crit = multistrike critical hits.
 spell.n_min = minimal damage made on a normal hit.
 spell.n_max = max damage made on a normal hit.
 spell.n_amt = amount of normal hits.
-spell.n_dmg = total amount made doing only normal hits.
+spell.n_total = total amount made doing only normal hits.
 spell.c_min = minimal damage made on a critical hit.
 spell.c_max = max damage made on a critical hit.
-spell.c_amt = how many times this spell got a critical hit (doesn't count critical by multistrike).
-spell.c_dmg = total amount made doing only normal hits.
+spell.c_amt = how many times this spell got a critical hit.
+spell.c_total = total amount made doing only normal hits.
 spell.g_amt = how many glancing blows this spell has.
 spell.g_dmg = total damage made by glancing blows.
 spell.r_amt = total of times this spell got resisted by the target.
@@ -438,17 +433,14 @@ spell.id = spellid.
 spell.totalabsorb = only for shields, tells how much damage this spell prevented.
 spell.absorbed = is how many healing has been absorbed by some external mechanic like Befouled on Fel Lord Zakuun encounter.
 spell.overheal = amount of overheal made by this spell.
-spell.m_amt = multistrike hits.
-spell.m_healed = multistrike healed.
-spell.m_crit = multistrike critical hits.
 spell.n_min = minimal heal made on a normal hit.
 spell.n_max = max heal made on a normal hit.
 spell.n_amt = amount of normal hits.
-spell.n_curado = total amount made doing only normal hits (weird name I know).
+spell.n_total = total amount made doing only normal hits (weird name I know).
 spell.c_min = minimal heal made on a critical hit.
 spell.c_max = max heal made on a critical hit.
-spell.c_amt = how many times this spell got a critical hit (doesn't count critical by multistrike).
-spell.c_curado = total amount made doing only normal hits.
+spell.c_amt = how many times this spell got a critical hit.
+spell.c_total = total amount made doing only normal hits.
 
 spell.targets = hash table containing {["targetname"] = total healing done by this spell on this target}
 spell.targets_overheal = hash table containing {["targetname"] = total overhealing by this spell on this target}
@@ -593,7 +585,7 @@ talentsTable = Details:GetTalents (guid)
 if available, returns a table with 7 indexes with the talentId selected for each tree {talentId, talentId, talentId, talentId, talentId, talentId, talentId}.
 use with GetTalentInfoByID()
 
-spec = Details:GetSpec (guid)
+spec = Details:GetSpec(guid)
 if available, return the spec id of the actor, use with GetSpecializationInfoByID()
 
 Details:SetDeathLogLimit (limit)
@@ -739,7 +731,7 @@ Total Code and Percent Code:
 *Total - the total made by all actors.
 
 local value, top, total, combat, instance = ...
-local result = floor (value)
+local result = floor(value)
 return total
 ]], 
 	
@@ -762,7 +754,7 @@ checkTop is for some special cases when the top value needs to be calculated imm
 nameComplement is a string to add on the end of the actor's name, for instance, in cases where the actor is a spell and its name is generated by the container.
 returns the current value for the actor.
 
-container:SetValue (actor, amount, nameComplement)
+container:SetValue(actor, amount, nameComplement)
 actor is any actor object or any other table containing a member "name" or "id", e.g. {name = "Jeff"} {id = 186451}
 amount is the amount to set to this actor on the container.
 nameComplement is a string to add on the end of the actor's name, for instance, in cases where the actor is a spell and its name is generated by the container.
@@ -788,13 +780,13 @@ for i = 1, #Details.APIText do
 	local text = Details.APIText [i]
 	
 	--add the color to the text
-	text = text:gsub ([[@TITLE]], "|c" .. titleColor)
-	text = text:gsub ([[@CODE]], "|c" .. codeColor)
-	text = text:gsub ([[@DESC]], "|c" .. descColor)
-	text = text:gsub ([[@COMMENT]], "|c" .. luacomentColor)
+	text = text:gsub([[@TITLE]], "|c" .. titleColor)
+	text = text:gsub([[@CODE]], "|c" .. codeColor)
+	text = text:gsub([[@DESC]], "|c" .. descColor)
+	text = text:gsub([[@COMMENT]], "|c" .. luacomentColor)
 	
 	--add the end color
-	text = text:gsub ([[@]], "|r")
+	text = text:gsub([[@]], "|r")
 	
 	Details.APIText [i] = text
 end

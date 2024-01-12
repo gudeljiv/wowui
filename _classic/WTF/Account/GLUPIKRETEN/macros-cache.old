@@ -7,11 +7,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1708
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:1707
+/use item:0
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -40,7 +40,7 @@ VER 3 0000000000000026 "rune l" "134400"
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip
-/use Solid Sharpening Stone
+/use Rough Sharpening Stone
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
@@ -49,7 +49,7 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run local y=0;for i=1,40 do local n,_,_,_,_,_,_,_,isStealable=UnitAura("target",i,"HARMFUL");if n then  print(n) end end
+/run local numIcons = GetNumMacroIcons(); for i=1,numIcons do  DEFAULT_CHAT_FRAME:AddMessage(string.format("Icon %d: %s",i,GetMacroIconInfo(i))); end
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

@@ -83,6 +83,7 @@ Helpers/BuffSource.lua
 Helpers/Chat.lua
 Helpers/DalaranAuctionHouse.lua
 Helpers/DamageFont.lua
+Helpers/Engravings.lua
 Helpers/ErrorsFilter.lua
 # Helpers/FastLoot.lua
 Helpers/Interrupt.lua

@@ -3,7 +3,7 @@ local _, xVermin = ...
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
-if xVermin.Class == 'HUNTER' then
+if xVermin.Class == 'HUNTER' or xVermin.Class == 'ROGUE' or xVermin.Class == 'WARRIOR' then
 	local ac = CreateFrame('Frame', 'CustomContainer_AmmoCount', CustomContainer_Combat)
 	ac:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
 	ac:SetWidth(1)
@@ -15,11 +15,26 @@ if xVermin.Class == 'HUNTER' then
 
 	CharacterAmmoSlotCount:Hide()
 
-	UIParent:HookScript(
-		'OnUpdate',
-		function()
-			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
-			ac.text:SetText(ammoCount)
+	local f = CreateFrame('Frame')
+	f:RegisterEvent('PLAYER_ENTERING_WORLD')
+	f:RegisterEvent('PLAYER_REGEN_DISABLED')
+	f:RegisterEvent('PLAYER_REGEN_ENABLED')
+	f:RegisterEvent('UNIT_INVENTORY_CHANGED')
+	f:RegisterEvent('PLAYER_EQUIPMENT_CHANGED')
+	f:RegisterEvent('BAG_UPDATE')
+	f:RegisterEvent('BAG_UPDATE_DELAYED')
+	f:SetScript(
+		'OnEvent',
+		function(self, event, isInitialLogin, isReloadingUi)
+			local slot = GetInventorySlotInfo("AmmoSlot");
+			local texture = GetInventoryItemTexture("player", slot);
+			local count = GetInventoryItemCount('player', slot)
+
+			if ((count == 1) and not texture) then
+				count = 0;
+			end
+
+			ac.text:SetText(count > 0 and count or "")
 		end
 	)
 end

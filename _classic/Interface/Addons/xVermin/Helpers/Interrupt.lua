@@ -1,7 +1,7 @@
 local _, xVermin = ...
 
 local interrupt_warning = CreateFrame('Frame', 'InterruptWarningFrame')
-interrupt_warning:SetPoint('TOP', UIParent, 'TOP', 0, -100)
+interrupt_warning:SetPoint('TOP', UIParent, 'TOP', 0, -130)
 interrupt_warning.text = interrupt_warning:CreateFontString(nil, 'ARTWORK')
 interrupt_warning.text:SetFont(xVermin.Config.font.arial, 40, 'NONE')
 interrupt_warning.text:SetShadowOffset(1, -1)
@@ -91,6 +91,13 @@ local HandleUnit = function(unit)
 			end
 		end
 
+		-- ROGUE INTERRUPT
+		if xVermin.Class == 'ROGUE' then
+			if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
+				HandleRotationFrame(true)
+			end
+		end
+
 		-- HUNTER INTERRUPT
 		if xVermin.Class == 'HUNTER' then
 			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
@@ -173,6 +180,13 @@ xVermin.Interrupt = function(input)
 	if xVermin.Class == 'SHAMAN' then
 		if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 			HRF = true
+		end
+	end
+
+	-- ROGUE INTERRUPT
+	if xVermin.Class == 'ROGUE' then
+		if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
+			HandleRotationFrame(true)
 		end
 	end
 

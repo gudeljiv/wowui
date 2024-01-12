@@ -1,18 +1,35 @@
 
-local _detalhes = _G._detalhes
-local Loc = LibStub ("AceLocale-3.0"):GetLocale ( "Details" )
+local _detalhes = _G.Details
+local Loc = LibStub("AceLocale-3.0"):GetLocale ( "Details" )
 local _
+local addonName, Details222 = ...
 
-	--> install skin function:
+	--install skin function:
 	function _detalhes:InstallSkin (skin_name, skin_table)
 		if (not skin_name) then
-			return false -- sem nome
-		elseif (_detalhes.skins [skin_name]) then
-			return false -- ja existe
+			return false
+
+		--already installed?
+		elseif (_detalhes.skins[skin_name]) then
+			if (skin_table.is_cached_skin) then
+				return false
+			end
 		end
-		
+
 		if (not skin_table.file) then
-			return false -- sem arquivo
+			return false
+		end
+
+		if (not skin_table.no_cache) then
+			--Detatils! can cache the skin installed by other addons or scripts
+			--This way the skin original table is saved within the addon and can work even if the other addon is outdated or disabled
+			if (Details.IsLoaded()) then
+				Details.installed_skins_cache[skin_name] = skin_table
+				skin_table.is_cached_skin = true
+				skin_table.no_cache = true
+			else
+				Details:Msg("cannot install a skin without 'skin.no_cache' before 'Details.IsLoaded()' is true.")
+			end
 		end
 		
 		skin_table.author = skin_table.author or ""
@@ -21,6 +38,20 @@ local _
 		skin_table.desc = skin_table.desc or ""
 		
 		_detalhes.skins [skin_name] = skin_table
+
+		--check instances waiting for a skin
+		local waitingForSkins = Details.waitingForSkins
+		if (waitingForSkins) then
+			for instanceId, skinName in pairs(waitingForSkins) do
+				if (skinName == skin_name) then
+					local instance = Details:GetInstance(instanceId)
+					if (instance) then
+						instance:ChangeSkin(skin_name)
+					end
+				end
+			end
+		end
+
 		return true
 	end
 	
@@ -29,25 +60,26 @@ local _
 	end
 	
 	local reset_tooltip = function()
-		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {1, 1, 1, 1})
+		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {1, 1, 1, 1})
 		_detalhes:DelayOptionsRefresh()
 	end
 	local set_tooltip_elvui1 = function()
-		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {0, 0, 0, 1})
+		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {0, 0, 0, 1})
 		_detalhes:DelayOptionsRefresh()
 	end
 	local set_tooltip_elvui2 = function()
-		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {1, 1, 1, 0})
+		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {1, 1, 1, 0})
 		_detalhes:DelayOptionsRefresh()
 	end
 	
-	--> install wow interface skin:
+	--install wow interface skin:
 	_detalhes:InstallSkin ("WoW Interface", {
 		file = [[Interface\AddOns\Details\images\skins\default_skin.blp]], 
 		author = "Details!", 
 		version = "1.0", 
 		site = "unknown", 
 		desc = "This was the first skin made for Details!, inspired in the standard wow interface", 
+		no_cache = true,
 		
 		can_change_alpha_head = false, 
 		icon_anchor_main = {-1, 1}, 
@@ -69,6 +101,7 @@ local _
 		micro_frames = {left = "DETAILS_STATUSBAR_PLUGIN_THREAT"},
 		
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["menu_icons_size"] = 0.85,
 			["color"] = {
 				1, -- [1]
@@ -262,7 +295,7 @@ local _
 			instance:AttributeMenu (nil, nil, 4)
 			
 			if (_detalhes.options_group_edit) then
-				for _, this_instance in ipairs (instance:GetInstanceGroup()) do
+				for _, this_instance in ipairs(instance:GetInstanceGroup()) do
 					if (this_instance ~= instance) then
 						this_instance:ToolbarMenuSetButtonsOptions (nil, true)
 						this_instance:AttributeMenu (nil, nil, nil, nil, nil, nil, nil, true)
@@ -282,6 +315,7 @@ local _
 		version = "1.0", 
 		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
+		no_cache = true,
 		
 		--micro frames
 		micro_frames = {
@@ -304,26 +338,29 @@ local _
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-		
+
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {3, 3},
-		
 		--overwrites
 		instance_cprops = {
-			["menu_icons_size"] = 0.850000023841858,
+			menu_icons_alpha = 0.92,
+			["menu_icons_size"] = 0.82,
 			["color"] = {
-				0.0705882352941177, -- [1]
-				0.0705882352941177, -- [2]
-				0.0705882352941177, -- [3]
-				0.639196664094925, -- [4]
+				0.1215,
+				0.1176,
+				0.1294,
+				0.91,
 			},
 			["menu_anchor"] = {
-				16, -- [1]
-				0, -- [2]
+				20,
+				0,
 				["side"] = 2,
 			},
-			["bg_r"] = 0.0941176470588235,
+			["bg_r"] = 0.243,
+			["bg_g"] = 0.2352,
+			["bg_b"] = 0.2588,
+			["bg_alpha"] = 0.6,
 			["color_buttons"] = {
 				1, -- [1]
 				1, -- [2]
@@ -334,6 +371,9 @@ local _
 				16, -- [1]
 				-3, -- [2]
 			},
+
+			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons_2_shadow",
+
 			["attribute_text"] = {
 				["enabled"] = true,
 				["shadow"] = false,
@@ -342,8 +382,8 @@ local _
 				["custom_text"] = "{name}",
 				["text_face"] = "Accidental Presidency",
 				["anchor"] = {
-					-18, -- [1]
-					3, -- [2]
+					1.4, -- [1]
+					2, -- [2]
 				},
 				["text_color"] = {
 					1, -- [1]
@@ -352,8 +392,8 @@ local _
 					1, -- [4]
 				},
 				["enable_custom_text"] = false,
+				["show_timer_always"] = true,
 			},
-			["bg_alpha"] = 0.183960914611816,
 			["plugins_grow_direction"] = 1,
 			["menu_icons"] = {
 				true, -- [1]
@@ -373,16 +413,15 @@ local _
 				0.333333333333333, -- [1]
 				0.333333333333333, -- [2]
 				0.333333333333333, -- [3]
-				
 				},
 			},
-			["hide_icon"] = true,
+			["hide_icon"] = false,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
 			},
 			["toolbar_side"] = 1,
-			["bg_g"] = 0.0941176470588235,
+			
 			["backdrop_texture"] = "Details Ground",
 			["show_statusbar"] = false,
 			["show_sidebars"] = false,
@@ -435,7 +474,7 @@ local _
 				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["font_size"] = 16,
 				["height"] = 21,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\bar_hyanda",
 				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small",
 				["textR_bracket"] = "(",
 				["textR_enable_custom_text"] = false,
@@ -446,7 +485,7 @@ local _
 				},
 				["textL_show_number"] = true,
 				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "BantoBar",
+				["texture"] = "Details Hyanda",
 				["use_spec_icons"] = true,
 				["textR_class_colors"] = false,
 				["textL_class_colors"] = false,
@@ -485,10 +524,9 @@ local _
 					["texture"] = "Details BarBorder 2",
 				},
 			},
-			["bg_b"] = 0.0941176470588235,
 		},
 		
-		callback = function (skin, instance, just_updating)
+		callback = function(skin, instance, just_updating)
 			--none
 		end,
 		
@@ -505,7 +543,8 @@ local _
 		author = "Details!", 
 		version = "1.0", 
 		site = "unknown", 
-		desc = "Same as the first Minimalistic, but this one is more darker and less transparent.", 
+		desc = "Same as the first Minimalistic, but this one is more darker and less transparent.",
+		no_cache = true,
 		
 		--micro frames
 		micro_frames = {
@@ -535,6 +574,7 @@ local _
 		
 		--overwrites
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["color"] = {
 				0.3058, -- [1]
 				0.3058, -- [2]
@@ -709,7 +749,7 @@ local _
 			["bg_b"] = 0.0941,
 		},
 		
-		callback = function (skin, instance, just_updating)
+		callback = function(skin, instance, just_updating)
 			--none
 		end,
 		
@@ -726,7 +766,8 @@ local _
 		version = "1.0", 
 		site = "unknown", 
 		desc = "Light blue, this skin fits on almost all interfaces.\n\nFor ElvUI interfaces, change the window color to black to get an compatible visual.", 
-		
+		no_cache = true,
+
 		--micro frames
 		micro_frames = {
 			left = "DETAILS_STATUSBAR_PLUGIN_PATTRIBUTE",
@@ -756,6 +797,7 @@ local _
 		icon_titletext_position = {1, 2},
 		
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
 			["menu_icons_size"] = 0.80,
 			["color"] = {
@@ -795,11 +837,7 @@ local _
 					1, -- [4]
 				},
 				["enable_custom_text"] = false,
-				["show_timer"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
+				["show_timer"] = true,
 			},
 			["micro_displays_side"] = 2,
 			["auto_hide_menu"] = {
@@ -967,7 +1005,7 @@ local _
 	local align_right_chat = function()
 	
 		if (not RightChatPanel or not RightChatPanel:IsShown()) then
-			_detalhes:Msg ("Right Chat Panel isn't shown.")
+			_detalhes:Msg("Right Chat Panel isn't shown.")
 			return
 		end
 		
@@ -1001,29 +1039,30 @@ local _
 		local ElvUIRightChatDataPanel = RightChatDataPanel and RightChatDataPanel:IsShown()
 		
 		if (instance1.skin == "Forced Square") then
-			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize (wight/2 - 4 + 2, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize(wight/2 - 4 + 2, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
 			
 		elseif (instance1.skin == "ElvUI Frame Style") then
-			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
 			
 		elseif (instance1.skin == "ElvUI Style II") then
-			instance1.baseframe:SetSize (wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize (wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			instance1.baseframe:SetSize(wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize(wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
 			
 		else
-			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
 			
 		end
 
-		table.wipe (instance1.snap); table.wipe (instance2.snap)
+		Details:Destroy(instance1.snap)
+		Details:Destroy(instance2.snap)
 		instance1.snap [3] = 2; instance2.snap [1] = 1;
 		instance1.horizontalSnap = true; instance2.horizontalSnap = true
 		
-		instance1.baseframe:SetPoint ("bottomleft", RightChatDataPanel, "topleft", 1 - (instance1.skin == "Forced Square" and 1 or 0), 1 + (statusbar_enabled1 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
-		instance2.baseframe:SetPoint ("bottomright", RightChatToggleButton, "topright", -1, 1 + (statusbar_enabled2 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
+		instance1.baseframe:SetPoint("bottomleft", RightChatDataPanel, "topleft", 1 - (instance1.skin == "Forced Square" and 1 or 0), 1 + (statusbar_enabled1 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
+		instance2.baseframe:SetPoint("bottomright", RightChatToggleButton, "topright", -1, 1 + (statusbar_enabled2 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
 	
 		instance1:LockInstance (true)
 		instance2:LockInstance (true)
@@ -1031,10 +1070,10 @@ local _
 		instance1:SaveMainWindowPosition()
 		instance2:SaveMainWindowPosition()
 
-		_detalhes.move_janela_func (instance1.baseframe, true, instance1)
-		_detalhes.move_janela_func (instance1.baseframe, false, instance1)
-		_detalhes.move_janela_func (instance2.baseframe, true, instance2)
-		_detalhes.move_janela_func (instance2.baseframe, false, instance2)
+		_detalhes.move_janela_func(instance1.baseframe, true, instance1)
+		_detalhes.move_janela_func(instance1.baseframe, false, instance1)
+		_detalhes.move_janela_func(instance2.baseframe, true, instance2)
+		_detalhes.move_janela_func(instance2.baseframe, false, instance2)
 		
 	end
 	
@@ -1044,7 +1083,8 @@ local _
 		version = "1.0", 
 		site = "unknown", 
 		desc = "Very clean skin without textures and only with a black contour.", 
-		
+		no_cache = true,
+
 		--general
 		can_change_alpha_head = true, 
 
@@ -1072,7 +1112,7 @@ local _
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function (self, instance) end,
+		callback = function(self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
@@ -1085,6 +1125,7 @@ local _
 		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
 		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["hide_in_combat_type"] = 1,
 			["color"] = {
 				0,
@@ -1297,389 +1338,15 @@ local _
 		}
 		
 	})
-	
-	--[[
-	
-	--> install imperial skin:
-	_detalhes:InstallSkin ("Imperial Skin", {
-		file = "Interface\\AddOns\\Details\\images\\skins\\imperial_skin.blp", 
-		author = "Details!", 
-		version = "1.1", 
-		site = "unknown", 
-		desc = "imperial skin for Details!", 
 		
-		can_change_alpha_head = true, 
-		icon_anchor_main = {-1, -5}, 
-		icon_anchor_plugins = {-7, -13}, 
-		icon_plugins_size = {19, 18},
-		
-		-- the four anchors:
-		icon_point_anchor = {-37, 0},
-		left_corner_anchor = {-107, 0},
-		close_button_anchor = {5, -7},
-		right_corner_anchor = {96, 0},
-
-		icon_point_anchor_bottom = {-37, 0},
-		left_corner_anchor_bottom = {-107, 0},
-		close_button_anchor_bottom = {5, 6},
-		right_corner_anchor_bottom = {96, 0},
-		
-		instance_cprops = {
-			["show_statusbar"] = false,
-			["menu_icons_size"] = 1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["menu_anchor"] = {
-				-18, -- [1]
-				1, -- [2]
-				["side"] = 1,
-			},
-			["bg_r"] = 0.0941176470588235,
-			["bars_inverted"] = false,
-			["following"] = {
-				["enabled"] = false,
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["bars_sort_direction"] = 1,
-			["hide_in_combat_type"] = 1,
-			["stretch_button_side"] = 1,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["bars_grow_direction"] = 1,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["bg_alpha"] = 0.424401819705963,
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["attribute_text"] = {
-				["show_timer"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					0.798004299402237, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					74, -- [1]
-					2, -- [2]
-				},
-				["text_size"] = 14,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onenter"] = 1,
-				["iconstoo"] = true,
-				["ignorebars"] = false,
-				["onleave"] = 1,
-			},
-			["menu_anchor_down"] = {
-				5, -- [1]
-				1, -- [2]
-			},
-			["strata"] = "LOW",
-			["statusbar_info"] = {
-				["alpha"] = 1,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["menu_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-				true, -- [5]
-				false, -- [6]
-				["space"] = 1,
-				["shadow"] = false,
-			},
-			["micro_displays_side"] = 2,
-			["micro_displays_locked"] = true,
-			["window_scale"] = 1,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
-			["desaturated_menu"] = false,
-			["plugins_grow_direction"] = 2,
-			["hide_icon"] = true,
-			["auto_current"] = true,
-			["toolbar_side"] = 1,
-			["bg_g"] = 0.0941176470588235,
-			["backdrop_texture"] = "Details Ground",
-			["show_sidebars"] = true,
-			["wallpaper"] = {
-				["enabled"] = true,
-				["texture"] = "Interface\\ACHIEVEMENTFRAME\\UI-Achievement-Stat-Buttons",
-				["texcoord"] = {
-					0.00100000001490116, -- [1]
-					1, -- [2]
-					0.758000030517578, -- [3]
-					1, -- [4]
-				},
-				["overlay"] = {
-					0.999997794628143, -- [1]
-					0.999997794628143, -- [2]
-					0.999997794628143, -- [3]
-					0.498038113117218, -- [4]
-				},
-				["anchor"] = "all",
-				["height"] = 225.999969482422,
-				["alpha"] = 0.498039245605469,
-				["width"] = 265.999969482422,
-			},
-			["total_bar"] = {
-				["enabled"] = false,
-				["only_in_group"] = true,
-				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["row_info"] = {
-				["textR_outline"] = false,
-				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal_alpha",
-				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
-				["textL_enable_custom_text"] = false,
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["space"] = {
-					["right"] = -3,
-					["left"] = 1,
-					["between"] = 1,
-				},
-				["texture_background_class_color"] = false,
-				["start_after_icon"] = false,
-				["font_face_file"] = "Interface\\Addons\\Details\\fonts\\Accidental Presidency.ttf",
-				["backdrop"] = {
-					["enabled"] = false,
-					["size"] = 11,
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["texture"] = "Details BarBorder 2",
-				},
-				["models"] = {
-					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
-					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
-					["upper_alpha"] = 0.5,
-					["lower_enabled"] = false,
-					["lower_alpha"] = 0.1,
-					["upper_enabled"] = false,
-				},
-				["texture_custom_file"] = "Interface\\AddOns\\Details\\images\\bar_skyline_2",
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\bar_skyline",
-				["use_spec_icons"] = true,
-				["textR_bracket"] = "(",
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small",
-				["icon_grayscale"] = false,
-				["font_size"] = 17,
-				["texture_background_file"] = "Interface\\AddOns\\Details\\images\\bar_background",
-				["textR_enable_custom_text"] = false,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
-				["textL_show_number"] = true,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textL_outline_small"] = true,
-				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "Skyline",
-				["texture_custom"] = "AddOns\\Details\\images\\bar_skyline_2",
-				["percent_type"] = 1,
-				["texture_background"] = "DGround",
-				["textR_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textL_class_colors"] = false,
-				["textR_class_colors"] = false,
-				["alpha"] = 1,
-				["no_icon"] = false,
-				["icon_offset"] = {
-					-2, -- [1]
-					0, -- [2]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["font_face"] = "Accidental Presidency",
-				["texture_class_colors"] = true,
-				["fixed_texture_background_color"] = {
-					0.113725490196078, -- [1]
-					0.113725490196078, -- [2]
-					0.113725490196078, -- [3]
-					0.42424601316452, -- [4]
-				},
-				["fast_ps_update"] = false,
-				["textR_separator"] = ",",
-				["height"] = 22.4808311462402,
-			},
-			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons2",
-			["grab_on_top"] = false,
-			["bg_b"] = 0.0941176470588235,
-		},
-		
-		--> control scripts for aninations
-		--> on skin change we need create the widgets
-		control_script_on_start = function (skin, instance)
-			
-			if (not instance.baseframe.imperial_skin_texture1) then
-				local texture1 = instance.baseframe:CreateTexture (nil, "artwork")
-				texture1:SetTexture ("Interface\\AddOns\\Details\\images\\skins\\imperial_skin")
-				texture1:SetTexCoord (0, 0.99951171875, 0.61474609375, 0.63623046875)
-				texture1:SetHeight (17)
-				instance.baseframe.imperial_skin_texture1 = texture1
-				texture1:SetPoint ("bottomleft", instance.baseframe.cabecalho.ball, "bottomleft", 108, 1)
-				texture1:SetPoint ("bottomright", instance.baseframe.cabecalho.ball_r, "bottomright", -98, 1)
-			end
-			
-			--> custom parameters for animations
-			instance.imperial_skin_tick_time = 2
-			instance.imperial_skin_tick_elapsed = 0
-			instance.imperial_skin_texture_step = 0
-			
-			if (instance.hide_icon) then
-				instance.baseframe.cabecalho.ball:SetDrawLayer ("background")
-			else
-				instance.baseframe.cabecalho.ball:SetDrawLayer ("overlay")
-			end
-			
-		end,
-		
-		--> do the animation
-		control_script = function (frame, elapsed) 
-		
-			--frame.instance = instance where this skin is applied.
-			--frame.skin = this skin table.
-		
-			frame.instance.imperial_skin_tick_elapsed = frame.instance.imperial_skin_tick_elapsed + elapsed
-
-			if (frame.instance.imperial_skin_tick_elapsed > frame.instance.imperial_skin_tick_time) then
-				
-				frame.instance.imperial_skin_tick_elapsed = 0
-				local step = frame.instance.imperial_skin_texture_step
-				step = step + 1
-
-				local firstpoint = step * 0.00048828125
-				local secondpoint = (firstpoint + 0.99951171875) - 1
-				
-				--print (math.floor (step/2))
-				
-				frame.instance.baseframe.imperial_skin_texture1:SetTexCoord (firstpoint, secondpoint, 0.61474609375, 0.63623046875)
-				
-				if (step == 2047) then
-					step = 0
-				end
-				
-				frame.instance.imperial_skin_texture_step = step
-				
-				--> this is bad, we need a event handler on options panel for sending appearance changes events
-				if (frame.instance.hide_icon) then
-					frame.instance.baseframe.cabecalho.ball:SetDrawLayer ("background")
-				else
-					frame.instance.baseframe.cabecalho.ball:SetDrawLayer ("overlay")
-				end
-				if (frame.instance.toolbar_side == 1) then
-					frame.instance.baseframe.imperial_skin_texture1:SetPoint ("bottomleft", frame.instance.baseframe.cabecalho.ball, "bottomleft", 108, 1)
-					frame.instance.baseframe.imperial_skin_texture1:SetPoint ("bottomright", frame.instance.baseframe.cabecalho.ball_r, "bottomright", -98, 1)
-				else
-					frame.instance.baseframe.imperial_skin_texture1:SetPoint ("bottomleft", frame.instance.baseframe.cabecalho.ball, "bottomleft", 108, 106)
-					frame.instance.baseframe.imperial_skin_texture1:SetPoint ("bottomright", frame.instance.baseframe.cabecalho.ball_r, "bottomright", -98, 106)
-				end
-
-			end
-		
-		end,
-		
-	})
-	--]]
-	
-	--[[
-	local f = CreateFrame ("frame",nil, UIParent)
-	f:SetPoint ("center", UIParent, "center")
-	f:SetSize (200, 200)
-	local t = f:CreateTexture (nil, "overlay")
-	t:SetPoint ("center", f, "center")
-	t:SetSize (200, 200)
-	t:SetTexture ("Interface\ARCHEOLOGY\ARCH-RACE-ORC")
-	
-	local t2 = f:CreateTexture (nil, "overlay")
-	t2:SetPoint ("center", f, "center")
-	t2:SetSize (200, 200)
-	t2:SetTexture ("Interface\ARCHEOLOGY\ARCH-RACE-ORC")
-	
-	t:SetTexCoord (.4, 1, 0, 1)
-	t2:SetTexCoord (0, .4, 0, 1)
-	--]]
-
-	
 	_detalhes:InstallSkin ("ElvUI Frame Style", {
 		file = [[Interface\AddOns\Details\images\skins\elvui.blp]],
 		author = "Details!", 
 		version = "1.0", 
 		site = "unknown", 
 		desc = "This skin is based on ElvUI's addons, relying with black and transparent frames.", 
-		
+		no_cache = true,
+
 		--general
 		can_change_alpha_head = true, 
 
@@ -1707,7 +1374,7 @@ local _
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function (self, instance) end,
+		callback = function(self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
@@ -1722,6 +1389,7 @@ local _
 		icon_titletext_position = {2, 5},
 		
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["menu_icons_size"] = 0.899999976158142,
 			["color"] = {
 				1, -- [1]
@@ -1928,7 +1596,8 @@ local _
 		version = "1.0", 
 		site = "unknown", 
 		desc = "based on AddonSkins for ElvUI, this skin has opaque title bar and background.", 
-		
+		no_cache = true,
+
 		--general
 		can_change_alpha_head = true, 
 
@@ -1956,7 +1625,7 @@ local _
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function (self, instance) end,
+		callback = function(self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
@@ -1971,6 +1640,7 @@ local _
 		icon_titletext_position = {2, 5},
 		
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
 			["color"] = {1,1,1,1},
 			["menu_anchor"] = {17, 2, ["side"] = 2},
@@ -2102,16 +1772,505 @@ local _
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2"], func = set_tooltip_elvui1, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-	})	
+	})
 	
-	
+	_detalhes:InstallSkin ("Dark Theme", {
+		file = [[Interface\AddOns\Details\images\skins\darktheme.blp]],
+		author = "Details!",
+		version = "1.0",
+		site = "unknown",
+		desc = "Regular Details! skin but with a dark theme.",
+		no_cache = true,
+
+		--general
+		can_change_alpha_head = true,
+
+		--icon anchors
+		icon_anchor_main = {-4, -5},
+		icon_anchor_plugins = {-7, -13},
+		icon_plugins_size = {19, 18},
+
+		--micro frames
+		micro_frames = {
+			color = {1, 1, 1, 0.7},
+			font = "Oswald",
+			size = 9,
+			textymod = 0,
+			["left"] = "DETAILS_STATUSBAR_PLUGIN_PSEGMENT",
+			["center"] = "DETAILS_STATUSBAR_PLUGIN_CLOCK",
+			["right"] = "DETAILS_STATUSBAR_PLUGIN_PDURABILITY",
+		},
+
+		
+		-- the four anchors (for when the toolbar is on the top side)
+		icon_point_anchor = {-35, -0.5},
+		left_corner_anchor = {-106, 0},
+		right_corner_anchor = {95, 0},
+		
+		-- the four anchors (for when the toolbar is on the bottom side)
+		icon_point_anchor_bottom = {-37, 12},
+		left_corner_anchor_bottom = {-106, 0},
+		right_corner_anchor_bottom = {95, 0},
+
+		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
+		callback = function(self, instance) end,
+		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
+		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
+		control_script_on_start = nil,
+		control_script = nil,
+		
+		--instance overwrites
+		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
+		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
+		
+		icon_on_top = true,
+		icon_ignore_alpha = true,
+		icon_titletext_position = {1, 2},
+		
+		instance_cprops = {
+			menu_icons_alpha = 0.92,
+			["hide_in_combat_type"] = 1,
+			["fontstrings_text3_anchor"] = 37,
+			["menu_anchor"] = {
+				19, -- [1]
+				1, -- [2]
+				["side"] = 2,
+			},
+			["bg_r"] = 0.32941176470588,
+			["hide_out_of_combat"] = false,
+			["color_buttons"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons_2",
+			["bars_sort_direction"] = 1,
+			["fontstrings_width"] = 35,
+			["tooltip"] = {
+				["n_abilities"] = 3,
+				["n_enemies"] = 3,
+			},
+			["switch_all_roles_in_combat"] = false,
+			["clickthrough_toolbaricons"] = false,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+				["textL_outline"] = false,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 1,
+				},
+				["texture_background_class_color"] = false,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["font_face_file"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
+				["backdrop"] = {
+					["enabled"] = false,
+					["texture"] = "Details BarBorder 2",
+					["color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["size"] = 4,
+				},
+				["font_size"] = 12,
+				["textL_translit_text"] = false,
+				["height"] = 21,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\bar_textures\\texture2020.blp",
+				["use_spec_icons"] = true,
+				["models"] = {
+					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
+					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+					["upper_alpha"] = 0.5,
+					["lower_enabled"] = false,
+					["lower_alpha"] = 0.1,
+					["upper_enabled"] = false,
+				},
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small",
+				["icon_grayscale"] = false,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["textR_bracket"] = "[",
+				["textR_enable_custom_text"] = false,
+				["percent_type"] = 1,
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+				["textL_show_number"] = true,
+				["texture_custom"] = "",
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
+				["texture"] = "Details2020",
+				["start_after_icon"] = true,
+				["texture_background_file"] = "Interface\\AddOns\\Details\\images\\bar_background",
+				["textR_class_colors"] = false,
+				["alpha"] = 0.8,
+				["textL_class_colors"] = false,
+				["texture_background"] = "Details Flat",
+				["textR_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["no_icon"] = false,
+				["icon_offset"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["fixed_texture_background_color"] = {
+					0.1843137254902, -- [1]
+					0.1921568627451, -- [2]
+					0.18823529411765, -- [3]
+					0.41242814064026, -- [4]
+				},
+				["font_face"] = "Oswald",
+				["texture_class_colors"] = true,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["fast_ps_update"] = false,
+				["textR_separator"] = ",",
+				["texture_custom_file"] = "Interface\\AddOns\\Details\\images\\bar_textures\\texture2020.blp",
+			},
+			["switch_tank"] = false,
+			["plugins_grow_direction"] = 1,
+			["menu_icons"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+				true, -- [5]
+				false, -- [6]
+				["space"] = -2,
+				["shadow"] = false,
+			},
+			["desaturated_menu"] = false,
+			["micro_displays_side"] = 2,
+			["window_scale"] = 1,
+			["hide_icon"] = false,
+			["toolbar_side"] = 1,
+			["bg_g"] = 0.32941176470588,
+			["bg_b"] = 0.32941176470588,
+			["switch_healer_in_combat"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["hide_on_context"] = {
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [1]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [2]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [3]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [4]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [5]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [6]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [7]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [8]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [9]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [10]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [11]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [12]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [13]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [14]
+				{
+					["enabled"] = false,
+					["inverse"] = false,
+					["value"] = 100,
+				}, -- [15]
+			},
+			["following"] = {
+				["enabled"] = false,
+				["bar_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["switch_healer"] = false,
+			["fontstrings_text2_anchor"] = 74,
+			["StatusBarSaved"] = {
+				["center"] = "DETAILS_STATUSBAR_PLUGIN_CLOCK",
+				["right"] = "DETAILS_STATUSBAR_PLUGIN_PDURABILITY",
+				["options"] = {
+					["DETAILS_STATUSBAR_PLUGIN_CLOCK"] = {
+						["textColor"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.7, -- [4]
+						},
+						["textFace"] = "Oswald",
+						["textXMod"] = 0,
+						["timeType"] = 1,
+						["textStyle"] = 2,
+						["textSize"] = 9,
+						["textYMod"] = 0.5605735778808594,
+					},
+					["DETAILS_STATUSBAR_PLUGIN_PSEGMENT"] = {
+						["isHidden"] = false,
+						["textStyle"] = 2,
+						["textYMod"] = 0.5605735778808594,
+						["segmentType"] = 2,
+						["textFace"] = "Oswald",
+						["textXMod"] = -4,
+						["textSize"] = 9,
+						["textColor"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.7, -- [4]
+						},
+					},
+					["DETAILS_STATUSBAR_PLUGIN_PDURABILITY"] = {
+						["isHidden"] = false,
+						["textColor"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.7, -- [4]
+						},
+						["textXMod"] = 5,
+						["textFace"] = "Oswald",
+						["textStyle"] = 2,
+						["textSize"] = 9,
+						["textYMod"] = -1,
+					},
+				},
+				["left"] = "DETAILS_STATUSBAR_PLUGIN_PSEGMENT",
+			},
+			["grab_on_top"] = false,
+			["__was_opened"] = true,
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["version"] = 3,
+			["fontstrings_text4_anchor"] = 0,
+			["__locked"] = false,
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onenter"] = 1,
+				["iconstoo"] = true,
+				["ignorebars"] = false,
+				["onleave"] = 1,
+			},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
+			},
+			["stretch_button_side"] = 1,
+			["show_sidebars"] = false,
+			["strata"] = "LOW",
+			["clickthrough_incombatonly"] = true,
+			["__snap"] = {
+			},
+			["backdrop_texture"] = "Details Ground",
+			["hide_in_combat_alpha"] = 0,
+			["menu_icons_size"] = 0.8999999761581421,
+			["show_statusbar"] = true,
+			["libwindow"] = {
+				["y"] = -155.9998626708984,
+				["x"] = -372.999755859375,
+				["point"] = "RIGHT",
+				["scale"] = 1,
+			},
+			["statusbar_info"] = {
+				["alpha"] = 1,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["clickthrough_window"] = false,
+			["bars_grow_direction"] = 1,
+			["bg_alpha"] = 0.51000002026558,
+			["switch_tank_in_combat"] = false,
+			["bars_inverted"] = false,
+			["switch_damager_in_combat"] = false,
+			["micro_displays_locked"] = true,
+			["icon_desaturated"] = false,
+			["auto_current"] = true,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-2, -- [2]
+			},
+			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 12,
+				["custom_text"] = "{name}",
+				["text_face"] = "Oswald",
+				["anchor"] = {
+					1, -- [1]
+					2, -- [2]
+				},
+				["show_timer"] = true,
+				["enable_custom_text"] = false,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					0.69272297620773, -- [4]
+				},
+			},
+			["hide_in_combat"] = false,
+			["posicao"] = {
+				["normal"] = {
+					["y"] = -155.9998779296875,
+					["x"] = 431.5001220703125,
+					["w"] = 311.000244140625,
+					["h"] = 154.0000610351563,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+			["skin_custom"] = "",
+			["switch_damager"] = false,
+			["wallpaper"] = {
+				["enabled"] = true,
+				["width"] = 266,
+				["texcoord"] = {
+					0.048000001907349, -- [1]
+					0.29800001144409, -- [2]
+					0.63099998474121, -- [3]
+					0.75599998474121, -- [4]
+				},
+				["overlay"] = {
+					0.99999779462814, -- [1]
+					0.99999779462814, -- [2]
+					0.99999779462814, -- [3]
+					0.79999822378159, -- [4]
+				},
+				["anchor"] = "all",
+				["height"] = 226.00001525879,
+				["alpha"] = 0.80000007152557,
+				["texture"] = "Interface\\AddOns\\Details\\images\\skins\\darktheme",
+			},
+			["total_bar"] = {
+				["enabled"] = false,
+				["only_in_group"] = true,
+				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["switch_all_roles_after_wipe"] = false,
+			["ignore_mass_showhide"] = false,
+			["use_multi_fontstrings"] = true,
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["skin"] = "Dark Theme",
+		},
+		
+		skin_options = {
+			{spacement = true, type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1"], func = align_right_chat, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1_DESC"]},
+			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2"], func = set_tooltip_elvui1, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2_DESC"]},
+			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
+		}
+	})
+
 	_detalhes:InstallSkin ("New Gray", {
 		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1.blp]],
 		author = "Details!", 
 		version = "1.0", 
 		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
-		
+		no_cache = true,
+
 		--micro frames
 		micro_frames = {
 			color = {1, 1, 1, 1}, 
@@ -2140,6 +2299,7 @@ local _
 		
 		--overwrites
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
 			["menu_icons_size"] = 0.850000023841858,
 			["color"] = {
@@ -2192,11 +2352,7 @@ local _
 					-18, -- [1]
 					3, -- [2]
 				},
-				["show_timer"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
+				["show_timer"] = true,
 				["enable_custom_text"] = false,
 				["text_size"] = 12,
 			},
@@ -2355,7 +2511,7 @@ local _
 			["bars_inverted"] = false,
 		},
 		
-		callback = function (skin, instance, just_updating)
+		callback = function(skin, instance, just_updating)
 			--none
 		end,
 		
@@ -2367,13 +2523,15 @@ local _
 		
 	})	
 
+
 		_detalhes:InstallSkin ("Safe Skin Legion Beta", {
 		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1.blp]],
 		author = "Details!", 
 		version = "1.0", 
 		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
-		
+		no_cache = true,
+
 		--micro frames
 		micro_frames = {
 			color = {1, 1, 1, 1}, 
@@ -2402,6 +2560,7 @@ local _
 		
 		--overwrites
 		instance_cprops = {
+			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
 			["menu_icons_size"] = 0.850000023841858,
 			["color"] = {
@@ -2632,16 +2791,12 @@ local _
 					1, -- [4]
 				},
 				["enable_custom_text"] = false,
-				["show_timer"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
+				["show_timer"] = true,
 			},
 			["bars_sort_direction"] = 1,
 		},
 		
-		callback = function (skin, instance, just_updating)
+		callback = function(skin, instance, just_updating)
 			--none
 		end,
 		
@@ -2652,3 +2807,5 @@ local _
 		}
 		
 	})
+
+

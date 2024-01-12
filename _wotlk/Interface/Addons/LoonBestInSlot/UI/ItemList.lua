@@ -142,8 +142,6 @@ local function IsInPhase(specItem, specItemSource)
         return true;
     elseif LBISSettings.SelectedPhase == LBIS.L["Phase 4"] and LBIS:FindInPhase(specItem.Phase, "4") then
         return true;
-    elseif LBISSettings.SelectedPhase == LBIS.L["Phase 5"] and LBIS:FindInPhase(specItem.Phase, "5") then
-        return true;
     elseif LBISSettings.SelectedPhase == LBIS.L["BIS"] and strfind(specItem.Bis, "BIS") ~= nil then
         return true;
     end
@@ -160,9 +158,12 @@ local function IsInSource(specItem)
 end
 
 local function IsInZone(specItem)
+
+    local zone, _ = gsub(gsub(specItem.SourceLocation, "%(25H%)", "(25)"), "%(10H%)", "(10)")
+
     if LBISSettings.SelectedZone == LBIS.L["All"] then
         return true;
-    elseif strfind(specItem.SourceLocation, gsub(gsub(LBISSettings.SelectedZone, "%(", "%%%("), "%)", "%%%)")) ~= nil then
+    elseif strfind(zone, gsub(gsub(LBISSettings.SelectedZone, "%(", "%%%("), "%)", "%%%)")) ~= nil then
         return true;
     end
     return false;

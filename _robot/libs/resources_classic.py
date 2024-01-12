@@ -134,9 +134,10 @@ data = {
             {"name": "sinister strike", "type": "GetSpellTexture", "id": 1752, "key": "1"},
             {"name": "saber slash", "type": "GetSpellTexture", "id": 424785, "key": "2"},
             {"name": "mutilate", "type": "GetSpellTexture", "id": 399956, "key": "2"},
+            {"name": "gouge", "type": "GetSpellTexture", "id": 1776, "key": "f"},
             {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "5"},
             {"name": "slice and dice", "type": "GetSpellTexture", "id": 5171, "key": "6"},
-            {"name": "gouge", "type": "GetSpellTexture", "id": 1776, "key": "f"},
+            {"name": "between the eyes", "type": "GetSpellTexture", "id": 400009, "key": "7"},
             # {"name": "kick", "type": "GetSpellTexture", "id": 1775, "key": "f"},
         ],
         "secondary": [

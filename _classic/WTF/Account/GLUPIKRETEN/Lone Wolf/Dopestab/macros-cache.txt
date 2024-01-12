@@ -1,91 +1,24 @@
-VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Healing Touch
+VER 3 000000000100001D " " "134400"
+#showtooltip Garrote
+/cast [nostealth] Stealth
+/cast Garrote
 END
-VER 3 0000000001000004 " " "INV_Misc_QuestionMark"
-#showtooltip
-/startattack
-/cast Sinister Strike
+VER 3 000000000100001E " " "132222"
+#showtooltip Sharp Arrow
+/cast Shoot Bow
 END
-VER 3 0000000001000005 " " "134400"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Cure Poison
-END
-VER 3 0000000001000006 " " "134400"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Remove Curse
+VER 3 000000000100001C " " "134400"
+#shwtooltip
+/cast [equipped: Daggers, stealth] Ambush
+/cast [equipped: One-Handed Swords, stealth] Garrote
 END
 VER 3 0000000001000007 " " "134400"
 #showtooltip Shadowstrike
 /cast [nostealth] Stealth
 /cast Shadowstrike
 END
-VER 3 0000000001000009 " " "134400"
-#showtooltip [stealth]Ravage;[form:1]Swipe;[form:3]Shred;[form:0][form:4]Moonfire
-/cast [stealth] Ravage
-/cast [form:0][form:4] Moonfire
-/cast [form:1] Swipe
-/cast [form:1] Enrage
-/cast [form:3] Shred
-END
-VER 3 000000000100000B " " "134400"
-#showtooltip
-/startattack [form:1][form:2]
-/cast [stealth] Pounce; [form:1] Maul; [form:2]Claw; [@mouseover,help,nodead][]Regrowth
-END
-VER 3 000000000100000C " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,nodead][] Growl
-END
-VER 3 000000000100000E " " "INV_Misc_QuestionMark"
+VER 3 000000000100001B "attack" "Inv_misc_questionmark"
 #showtooltip
 /startattack
-/cast [@mouseover,exists,nodead][] Faerie Fire (Feral)
-END
-VER 3 0000000001000012 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Rejuvenation
-END
-VER 3 0000000001000013 " " "134400"
-#showtooltip Prowl
-/cancelform [noform:2] 
-/cast [noform:2] Cat Form 
-/cast Prowl
-END
-VER 3 0000000001000014 " " "134400"
-#showtooltip Bash
-/startattack
-/cancelform [noform:1] 
-/cast [noform:1] Bear Form 
-/cast [form:1] Bash
-/cast [form:1] Enrage
-END
-VER 3 0000000001000015 " " "134400"
-#showtooltip Bear Form
-/cancelform [noform:1]
-/cast [form:1] Bear Form
-/cast [noform:1] !Bear Form
-END
-VER 3 0000000001000016 " " "134400"
-#showtooltip Cat Form
-/cancelform [noform:2]
-/cast [form:2] Cat Form
-/cast [noform:2] !Cat Form
-END
-VER 3 0000000001000017 " " "134400"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Regrowth
-END
-VER 3 0000000001000018 " " "134400"
-#showtooltip
-/startattack
-/cast Wrath
-END
-VER 3 000000000100001A " " "134400"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Lifebloom
-END
-VER 3 000000000100001B " " "134400"
-#showtooltip
-/cast Savage Roar
+/use Saber Slash
 END
