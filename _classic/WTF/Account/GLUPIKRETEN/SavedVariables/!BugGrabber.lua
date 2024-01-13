@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 11323,
+	["session"] = 11325,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -1984,21 +1984,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [256]
 		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RingMenu' tried to call the protected function 'SpellStopCasting()'.",
-			["time"] = "2023/09/09 12:26:26",
-			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
-			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SpellStopCasting'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3497: in function `ToggleGameMenu'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:347: in function `TransitionBackOpeningPanel'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:336: in function `ExitWithCommit'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:305: in function `Close'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:71: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:70>",
-			["session"] = 11275,
-			["counter"] = 7,
-		}, -- [257]
-		{
 			["message"] = "Usage: local categories = C_Engraving.GetRuneCategories(shouldFilter, ownedOnly)",
 			["time"] = "2024/01/10 19:06:41",
 			["locals"] = "(*temporary) = \"Usage: local categories = C_Engraving.GetRuneCategories(shouldFilter, ownedOnly)\"\n",
 			["stack"] = "[string \"=[C]\"]: in function `GetRuneCategories'\n[string \"print(C_Engraving.GetRuneCategories())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11278,
 			["counter"] = 1,
-		}, -- [258]
+		}, -- [257]
 		{
 			["message"] = "[string \"print(GetRunesForCategory(1))\"]:1: attempt to call global 'GetRunesForCategory' (a nil value)",
 			["time"] = "2024/01/10 19:07:35",
@@ -2006,7 +1998,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(GetRunesForCategory(1))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11278,
 			["counter"] = 1,
-		}, -- [259]
+		}, -- [258]
 		{
 			["message"] = "Interface/AddOns/xVermin/xVermin.lua:418: attempt to get length of global 'runes' (a nil value)",
 			["time"] = "2024/01/10 19:10:44",
@@ -2014,7 +2006,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:418: in main chunk",
 			["session"] = 11279,
 			["counter"] = 1,
-		}, -- [260]
+		}, -- [259]
 		{
 			["message"] = "Interface/AddOns/xVermin/xVermin.lua:421: attempt to get length of global 'runes' (a nil value)",
 			["time"] = "2024/01/10 19:12:28",
@@ -2022,7 +2014,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:421: in function <Interface/AddOns/xVermin/xVermin.lua:417>",
 			["session"] = 11280,
 			["counter"] = 1,
-		}, -- [261]
+		}, -- [260]
 		{
 			["message"] = "[string \"local numIcons = GetNumMacroIcons()\"]:1: attempt to call global 'GetNumMacroIcons' (a nil value)",
 			["time"] = "2024/01/10 19:26:52",
@@ -2030,7 +2022,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"local numIcons = GetNumMacroIcons()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3015: in function <Interface/FrameXML/ChatFrame.lua:3009>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
 			["session"] = 11286,
 			["counter"] = 1,
-		}, -- [262]
+		}, -- [261]
 		{
 			["message"] = "[string \"CreateMacro(\"to home\", \"INV_Misc_QuestionMa...\"]:1: CreateMacro() failed, already have 120 macros",
 			["time"] = "2024/01/10 19:32:57",
@@ -2038,7 +2030,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `CreateMacro'\n[string \"CreateMacro(\"to home\", \"INV_Misc_QuestionMark\", \"/cast Hearthstone\", true)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11286,
 			["counter"] = 1,
-		}, -- [263]
+		}, -- [262]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Engravings.lua:59: attempt to index global 'rune' (a nil value)",
 			["time"] = "2024/01/10 19:37:56",
@@ -2046,7 +2038,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Engravings.lua\"]:59: in function <Interface/AddOns/xVermin/Helpers/Engravings.lua:23>",
 			["session"] = 11288,
 			["counter"] = 1,
-		}, -- [264]
+		}, -- [263]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'EditMacro()'.",
 			["time"] = "2024/01/10 19:43:13",
@@ -2054,7 +2046,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `EditMacro'\n[string \"@Interface/AddOns/xVermin/Helpers/Engravings.lua\"]:13: in function <Interface/AddOns/xVermin/Helpers/Engravings.lua:8>\n[string \"@Interface/AddOns/xVermin/Helpers/Engravings.lua\"]:52: in function <Interface/AddOns/xVermin/Helpers/Engravings.lua:23>",
 			["session"] = 11293,
 			["counter"] = 1,
-		}, -- [265]
+		}, -- [264]
 		{
 			["message"] = "[string \"local numIcons = GetNumMacroIcons(); for i=...\"]:1: attempt to call global 'GetNumMacroIcons' (a nil value)",
 			["time"] = "2024/01/10 19:27:06",
@@ -2062,7 +2054,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"local numIcons = GetNumMacroIcons(); for i=1,numIcons do  DEFAULT_CHAT_FRAME:AddMessage(string.format(\"Icon %d: %s\",i,GetMacroIconInfo(i))); end\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3015: in function <Interface/FrameXML/ChatFrame.lua:3009>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
 			["session"] = 11303,
 			["counter"] = 2,
-		}, -- [266]
+		}, -- [265]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:2: attempt to perform arithmetic on global '_' (a nil value)",
 			["time"] = "2024/01/12 11:57:31",
@@ -2070,7 +2062,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:2: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 1,
-		}, -- [267]
+		}, -- [266]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:3: attempt to perform arithmetic on global '_' (a nil value)",
 			["time"] = "2024/01/12 11:58:12",
@@ -2078,7 +2070,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:3: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 1,
-		}, -- [268]
+		}, -- [267]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:3: attempt to call field '_clickableFrame_' (a nil value)",
 			["time"] = "2024/01/12 11:58:44",
@@ -2086,7 +2078,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:3: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 1,
-		}, -- [269]
+		}, -- [268]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:2: attempt to perform arithmetic on field '_clickableFrame_' (a nil value)",
 			["time"] = "2024/01/12 11:59:10",
@@ -2094,7 +2086,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:2: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 1,
-		}, -- [270]
+		}, -- [269]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:2: attempt to call field '_clickableFrame_' (a nil value)",
 			["time"] = "2024/01/12 11:59:00",
@@ -2102,7 +2094,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:2: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 2,
-		}, -- [271]
+		}, -- [270]
 		{
 			["message"] = "Lua error in aura 'SABRE': init\nWeakAuras Version: 5.9.0\nAura Version: 1.0.1\n[string \"return function() local set = aura_env.conf...\"]:2: attempt to concatenate field '_clickableFrame' (a nil value)",
 			["time"] = "2024/01/12 12:02:11",
@@ -2110,7 +2102,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"return function() local set = aura_env.config[\"set\"]\"]:2: in function <[string \"return function() local set = aura_env.conf...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/AuraEnvironment.lua\"]:359: in function `ActivateAuraEnvironment'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:977: in function `CreateFakeStates'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4266: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3036: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2891>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3059: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
 			["session"] = 11308,
 			["counter"] = 1,
-		}, -- [272]
+		}, -- [271]
 		{
 			["message"] = "[string \"_G[\"aura_env.region._clickableFrame_\" .. se...\"]:1: attempt to concatenate global 'set' (a nil value)",
 			["time"] = "2024/01/12 12:04:03",
@@ -2118,6 +2110,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"_G[\"aura_env.region._clickableFrame_\" .. set].Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
 			["session"] = 11308,
 			["counter"] = 1,
+		}, -- [272]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'RingMenu' tried to call the protected function 'SpellStopCasting()'.",
+			["time"] = "2023/09/09 12:26:26",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:487\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:553\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:547\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:562\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:507\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `SpellStopCasting'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3497: in function `ToggleGameMenu'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:347: in function `TransitionBackOpeningPanel'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:336: in function `ExitWithCommit'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:305: in function `Close'\n[string \"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\"]:71: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:70>",
+			["session"] = 11325,
+			["counter"] = 8,
 		}, -- [273]
 	},
 }

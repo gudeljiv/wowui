@@ -11,7 +11,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:2287
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -24,7 +24,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:858
 END
 VER 3 0000000000000028 "rune c" "134400"
 #showtooltip

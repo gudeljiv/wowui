@@ -3,7 +3,7 @@ VER 3 0000000000000012 "BH" "136173"
 END
 VER 3 0000000000000025 "bomb" "134400"
 #showtooltip
-/cast [@cursor] Rough Copper Bomb
+/cast [@cursor] Rough Dynamite
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -49,7 +49,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run local numIcons = GetNumMacroIcons(); for i=1,numIcons do  DEFAULT_CHAT_FRAME:AddMessage(string.format("Icon %d: %s",i,GetMacroIconInfo(i))); end
+/run print(xGetRange("target"))
+/run print(xGetRange("target") > 10)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
