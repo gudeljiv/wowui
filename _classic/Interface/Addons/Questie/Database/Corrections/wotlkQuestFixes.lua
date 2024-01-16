@@ -171,6 +171,9 @@ function QuestieWotlkQuestFixes:Load()
         [2279] = {
             [questKeys.preQuestSingle] = {2278},
         },
+        [2358] = {
+            [questKeys.startedBy] = {{7009}},
+        },
         [2701] = {
             [questKeys.finishedBy] = {nil,{141980}},
         },
@@ -1751,6 +1754,9 @@ function QuestieWotlkQuestFixes:Load()
                 {nil, Questie.ICON_TYPE_SLAY, l10n("Destroy Icestorm"),0,{{"monster", 26287}}},
             },
         },
+        [12468] = {
+            [questKeys.preQuestSingle] = {},
+        },
         [12470] = {
             [questKeys.triggerEnd] = {"Hourglass of Eternity protected",{[zoneIDs.DRAGONBLIGHT]={{71.57,38.91,},},},},
         },
@@ -2347,6 +2353,7 @@ function QuestieWotlkQuestFixes:Load()
             [questKeys.requiredMinRep] = {1104,9000},
         },
         [12761] = {
+            [questKeys.sourceItemId] = 39693,
             [questKeys.requiredMinRep] = {1105,9000},
         },
         [12762] = {
@@ -3823,6 +3830,9 @@ function QuestieWotlkQuestFixes:Load()
         },
         [13418] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Take a ride to the ship"), 1, {{"monster", 31081}}}},
+        },
+        [13419] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Take a ride to the ship"), 1, {{"monster", 31085}}}},
         },
         [13420] = {
             [questKeys.startedBy] = {nil,{193997},{44725}},
@@ -6228,6 +6238,9 @@ function QuestieWotlkQuestFixes:Load()
         [25249] = { -- A Change of Heart - might revered - aronen
             [questKeys.preQuestGroup] = {25240,25238},
             [questKeys.exclusiveTo] = {24823,24830,24832,24834,25240},
+        },
+        [26034] = {
+            [questKeys.preQuestSingle] = {26013},
         },
 
         ----- Boosted character quests -----

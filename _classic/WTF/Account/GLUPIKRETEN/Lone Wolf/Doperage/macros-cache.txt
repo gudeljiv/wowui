@@ -86,3 +86,8 @@ VER 3 0000000001000021 " " "134400"
 /cast Rend
 /cast Bloodrage
 END
+VER 3 0000000001000022 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
+END

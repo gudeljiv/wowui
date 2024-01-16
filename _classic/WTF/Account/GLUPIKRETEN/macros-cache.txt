@@ -3,7 +3,7 @@ VER 3 0000000000000012 "BH" "136173"
 END
 VER 3 0000000000000025 "bomb" "134400"
 #showtooltip
-/cast [@cursor] Rough Dynamite
+/cast [@cursor] Big Bronze Bomb
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -11,7 +11,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:2287
+/use item:3770
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect

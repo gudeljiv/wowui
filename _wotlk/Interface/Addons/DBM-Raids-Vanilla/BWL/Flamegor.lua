@@ -12,7 +12,7 @@ end
 local mod	= DBM:NewMod("Flamegor", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240108061725")
+mod:SetRevision("20240116073345")
 mod:SetCreatureID(11981)
 mod:SetEncounterID(615)
 if not mod:IsClassic() then

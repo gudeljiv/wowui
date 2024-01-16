@@ -4,34 +4,30 @@ ItemRackSettings = {
 	["Cooldown90"] = "OFF",
 	["ShowMinimap"] = "ON",
 	["Notify"] = "ON",
-	["ShowSetInTooltip"] = "OFF",
 	["HideTradables"] = "OFF",
 	["AllowHidden"] = "ON",
 	["minimap"] = {
 		["hide"] = false,
 	},
-	["AllowEmpty"] = "ON",
-	["MinimapTooltip"] = "OFF",
 	["NotifyChatAlso"] = "OFF",
-	["CharacterSheetMenus"] = "ON",
 	["MenuOnShift"] = "OFF",
-	["TrinketMenuMode"] = "ON",
+	["TrinketMenuMode"] = "OFF",
 	["EventsVersion"] = 18,
 	["HidePetBattle"] = "ON",
-	["AnchorOther"] = "ON",
+	["AllowEmpty"] = "ON",
 	["DisableAltClick"] = "OFF",
-	["IconPos"] = 170.481767190417,
+	["MinimapTooltip"] = "ON",
 	["MenuOnRight"] = "OFF",
-	["TooltipFollow"] = "ON",
+	["CharacterSheetMenus"] = "ON",
 	["NotifyThirty"] = "OFF",
-	["ShowHotKeys"] = "OFF",
+	["TooltipFollow"] = "OFF",
 	["ShowTooltips"] = "ON",
+	["ShowHotKeys"] = "OFF",
 	["EquipToggle"] = "OFF",
 	["AnotherOther"] = "OFF",
-	["CooldownCount"] = "OFF",
 	["EquipOnSetPick"] = "OFF",
 	["LargeNumbers"] = "OFF",
-	["SquareMinimap"] = "OFF",
+	["CooldownCount"] = "OFF",
 	["TinyTooltips"] = "OFF",
 }
 ItemRackItems = {
@@ -52,15 +48,25 @@ ItemRackItems = {
 	},
 }
 ItemRackEvents = {
-	["Drinking"] = {
-		["Unequip"] = 1,
-		["Type"] = "Buff",
-		["Buff"] = "Drink",
+	["Druid Tree of Life"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = "Tree of Life",
 	},
-	["Buffs Gained"] = {
-		["Trigger"] = "UNIT_AURA",
-		["Type"] = "Script",
-		["Script"] = "if arg1==\"player\" then\n  IRScriptBuffs = IRScriptBuffs or {}\n  local buffs = IRScriptBuffs\n  for i in pairs(buffs) do\n    if not AuraUtil.FindAuraByName(i,\"player\") then\n      buffs[i] = nil\n    end\n  end\n  local i,b = 1,1\n  while b do\n    b = AuraUtil.FindAuraByName(i,\"player\")\n    if b and not buffs[b] then\n      ItemRack.Print(\"Gained buff: \"..b)\n      buffs[b] = 1\n    end\n    i = i+1\n  end\nend\n--[[For script demonstration purposes. Doesn't equip anything just informs when a buff is gained.]]",
+	["Druid Cat"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = 3,
+	},
+	["Druid Humanoid"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = 0,
+	},
+	["Druid Aquatic"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = 2,
 	},
 	["PVP"] = {
 		["Unequip"] = 1,
@@ -75,10 +81,22 @@ ItemRackEvents = {
 			["Nagrand Arena"] = 1,
 		},
 	},
-	["Swimming"] = {
-		["Trigger"] = "MIRROR_TIMER_START",
-		["Type"] = "Script",
-		["Script"] = "local set = \"Name of set\"\nif IsSwimming() and not IsSetEquipped(set) then\n  EquipSet(set)\n  if not SwimmingEvent then\n    function SwimmingEvent()\n      if not IsSwimming() then\n        ItemRack.StopTimer(\"SwimmingEvent\")\n        UnequipSet(set)\n      end\n    end\n    ItemRack.CreateTimer(\"SwimmingEvent\",SwimmingEvent,.5,1)\n  end\n  ItemRack.StartTimer(\"SwimmingEvent\")\nend\n--[[Equips a set when swimming and breath gauge appears and unequips soon after you stop swimming.]]",
+	["Drinking"] = {
+		["Unequip"] = 1,
+		["Type"] = "Buff",
+		["Buff"] = "Drink",
+	},
+	["Nefarian's Lair"] = {
+		["Unequip"] = 1,
+		["Type"] = "Zone",
+		["Zones"] = {
+			["Nefarian's Lair"] = 1,
+		},
+	},
+	["Druid Travel"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = 4,
 	},
 	["After Cast"] = {
 		["Trigger"] = "UNIT_SPELLCAST_SUCCEEDED",
@@ -92,27 +110,34 @@ ItemRackEvents = {
 			["Undercity"] = 1,
 			["The Exodar"] = 1,
 			["Stormwind City"] = 1,
-			["Orgrimmar"] = 1,
-			["Ironforge"] = 1,
-			["Shattrath City"] = 1,
-			["Thunder Bluff"] = 1,
-			["Dalaran"] = 1,
-			["Silvermoon City"] = 1,
 			["Darnassus"] = 1,
+			["Thunder Bluff"] = 1,
+			["Shattrath City"] = 1,
+			["Silvermoon City"] = 1,
+			["Dalaran"] = 1,
+			["Ironforge"] = 1,
+			["Orgrimmar"] = 1,
 		},
 	},
-	["Rogue Stealth"] = {
-		["Unequip"] = 1,
-		["Class"] = "ROGUE",
+	["Buffs Gained"] = {
+		["Trigger"] = "UNIT_AURA",
+		["Type"] = "Script",
+		["Script"] = "if arg1==\"player\" then\n  IRScriptBuffs = IRScriptBuffs or {}\n  local buffs = IRScriptBuffs\n  for i in pairs(buffs) do\n    if not AuraUtil.FindAuraByName(i,\"player\") then\n      buffs[i] = nil\n    end\n  end\n  local i,b = 1,1\n  while b do\n    b = AuraUtil.FindAuraByName(i,\"player\")\n    if b and not buffs[b] then\n      ItemRack.Print(\"Gained buff: \"..b)\n      buffs[b] = 1\n    end\n    i = i+1\n  end\nend\n--[[For script demonstration purposes. Doesn't equip anything just informs when a buff is gained.]]",
+	},
+	["Swimming"] = {
+		["Trigger"] = "MIRROR_TIMER_START",
+		["Type"] = "Script",
+		["Script"] = "local set = \"Name of set\"\nif IsSwimming() and not IsSetEquipped(set) then\n  EquipSet(set)\n  if not SwimmingEvent then\n    function SwimmingEvent()\n      if not IsSwimming() then\n        ItemRack.StopTimer(\"SwimmingEvent\")\n        UnequipSet(set)\n      end\n    end\n    ItemRack.CreateTimer(\"SwimmingEvent\",SwimmingEvent,.5,1)\n  end\n  ItemRack.StartTimer(\"SwimmingEvent\")\nend\n--[[Equips a set when swimming and breath gauge appears and unequips soon after you stop swimming.]]",
+	},
+	["Druid Moonkin"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = "Moonkin Form",
+	},
+	["Druid Bear"] = {
+		["Class"] = "DRUID",
 		["Type"] = "Stance",
 		["Stance"] = 1,
-	},
-	["Nefarian's Lair"] = {
-		["Unequip"] = 1,
-		["Type"] = "Zone",
-		["Zones"] = {
-			["Nefarian's Lair"] = 1,
-		},
 	},
 	["Mounted"] = {
 		["Unequip"] = 1,

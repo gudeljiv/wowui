@@ -90,3 +90,8 @@ VER 3 0000000001000016 " " "134400"
 /startattack
 /cast !Auto Shot
 END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
+END

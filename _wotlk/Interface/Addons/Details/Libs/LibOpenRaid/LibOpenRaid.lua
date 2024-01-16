@@ -43,7 +43,7 @@ if (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and not isExpansion_Dragonflight()) t
 end
 
 local major = "LibOpenRaid-1.0"
-local CONST_LIB_VERSION = 116
+local CONST_LIB_VERSION = 120
 
 if (LIB_OPEN_RAID_MAX_VERSION) then
     if (CONST_LIB_VERSION <= LIB_OPEN_RAID_MAX_VERSION) then
@@ -508,7 +508,7 @@ end
         LIB_OPEN_RAID_COMM_SCHEDULER = newTickerHandle
     end
 
-    function openRaidLib.commHandler.SendCommData(data, flags)
+    function openRaidLib.commHandler.SendCommData(data, flags, bIgnoreQueue)
         local LibDeflate = LibStub:GetLibrary("LibDeflate")
         local dataCompressed = LibDeflate:CompressDeflate(data, {level = 9})
         local dataEncoded = LibDeflate:EncodeForWoWAddonChannel(dataCompressed)
@@ -563,8 +563,8 @@ end
         ["sendPvPTalent_Schedule"] = 14,
         ["leaveCombat_Schedule"] = 18,
         ["encounterEndCooldownsCheck_Schedule"] = 24,
-        ["sendKeystoneInfoToParty_Schedule"] = 7,
-        ["sendKeystoneInfoToGuild_Schedule"] = 7,
+        --["sendKeystoneInfoToParty_Schedule"] = 2,
+        --["sendKeystoneInfoToGuild_Schedule"] = 2,
     }
 
     openRaidLib.Schedules = {
@@ -613,7 +613,7 @@ end
             if (openRaidLib.Schedules.IsUniqueTimerOnCooldown(namespace, scheduleName)) then
                 return
             end
-            time = defaultScheduleCooldownTimeByScheduleName[scheduleName]
+            time = defaultScheduleCooldownTimeByScheduleName[scheduleName] or time
         else
             openRaidLib.Schedules.CancelUniqueTimer(namespace, scheduleName)
         end
@@ -2665,7 +2665,8 @@ openRaidLib.commHandler.RegisterComm(CONST_COMM_COOLDOWNREQUEST_PREFIX, openRaid
 
     function openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToParty()
         local dataToSend = getKeystoneInfoToComm()
-        openRaidLib.commHandler.SendCommData(dataToSend, CONST_COMM_SENDTO_PARTY)
+        local bIgnoreQueue = true
+        openRaidLib.commHandler.SendCommData(dataToSend, CONST_COMM_SENDTO_PARTY, bIgnoreQueue)
         diagnosticComm("SendPlayerKeystoneInfoToParty| " .. dataToSend) --debug
     end
 
@@ -2686,12 +2687,19 @@ openRaidLib.commHandler.RegisterComm(CONST_COMM_COOLDOWNREQUEST_PREFIX, openRaid
         local keystoneInfo = openRaidLib.KeystoneInfoManager.GetKeystoneInfo(UnitName("player"), true)
         openRaidLib.KeystoneInfoManager.UpdatePlayerKeystoneInfo(keystoneInfo)
 
-        if (IsInGroup() and not IsInRaid()) then
-            openRaidLib.Schedules.NewUniqueTimer(0.1, openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToParty, "KeystoneInfoManager", "sendKeystoneInfoToParty_Schedule")
+        local _, instanceType = GetInstanceInfo()
+        if (instanceType == "party") then
+            openRaidLib.Schedules.NewUniqueTimer(math.random(1), openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToParty, "KeystoneInfoManager", "sendKeystoneInfoToParty_Schedule")
+
+        elseif (instanceType == "raid" or instanceType == "pvp") then
+            openRaidLib.Schedules.NewUniqueTimer(math.random(0, 30) + math.random(1), openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToParty, "KeystoneInfoManager", "sendKeystoneInfoToParty_Schedule")
+
+        else
+            openRaidLib.Schedules.NewUniqueTimer(math.random(4), openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToParty, "KeystoneInfoManager", "sendKeystoneInfoToParty_Schedule")
         end
 
         if (IsInGuild()) then
-            openRaidLib.Schedules.NewUniqueTimer(math.random(0, 3) + math.random(), openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToGuild, "KeystoneInfoManager", "sendKeystoneInfoToGuild_Schedule")
+            openRaidLib.Schedules.NewUniqueTimer(math.random(0, 10) + math.random(), openRaidLib.KeystoneInfoManager.SendPlayerKeystoneInfoToGuild, "KeystoneInfoManager", "sendKeystoneInfoToGuild_Schedule")
         end
     end
     openRaidLib.commHandler.RegisterComm(CONST_COMM_KEYSTONE_DATAREQUEST_PREFIX, openRaidLib.KeystoneInfoManager.OnReceiveRequestData)

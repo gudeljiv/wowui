@@ -138,7 +138,9 @@ data = {
             {"name": "eviscerate", "type": "GetSpellTexture", "id": 2098, "key": "5"},
             {"name": "slice and dice", "type": "GetSpellTexture", "id": 5171, "key": "6"},
             {"name": "between the eyes", "type": "GetSpellTexture", "id": 400009, "key": "7"},
-            # {"name": "kick", "type": "GetSpellTexture", "id": 1775, "key": "f"},
+            {"name": "blade dance", "type": "GetSpellTexture", "id": 400012, "key": "7"},
+            {"name": "envenom", "type": "GetSpellTexture", "id": 399963, "key": "7"},
+            {"name": "riposte", "type": "GetSpellTexture", "id": 14251, "key": "f10"},
         ],
         "secondary": [
             {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},

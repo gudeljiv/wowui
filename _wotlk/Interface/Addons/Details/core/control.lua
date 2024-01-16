@@ -112,22 +112,11 @@
 
 	local foundEncounterInfo = function(index, name, zone, mapId, diff, encounterid)
 		local mapID = C_Map.GetBestMapForUnit("player")
-		local ejid
-
-		if true then return end --@@@disabled for science
-
-		if (mapID) then
-			ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap(mapID) --using the framework to prevent errors on classic versions of the game
-		end
-
-
 		if (not mapID) then
 			return
 		end
 
-		if (ejid == 0) then
-			ejid = Details:GetInstanceEJID()
-		end
+		local encounterJournalId = Details:GetInstanceEJID(mapID, name, encounterid)
 
 		local bossTable = {
 			index = index,
@@ -137,36 +126,21 @@
 			mapid = mapId,
 			diff = diff,
 			diff_string = select(4, GetInstanceInfo()),
-			ej_instance_id = ejid,
+			ej_instance_id = encounterJournalId,
 			id = encounterid,
 			unixtime = time(),
 		}
 
-		local currentCombat = Details:GetCurrentCombat()
-
-		if (not Details:IsRaidRegistered(mapId) and Details.zone_type == "raid") then
-			--[=[
-			local bossList = Details:GetCurrentDungeonBossListFromEJ() --function name miss match, filtering raid only, calling dungeon only function
-			if (bossList) then
-				local actorContainer = currentCombat[attributeDamage]._ActorTable
-				if (actorContainer) then
-					for index, actorObject in ipairs(actorContainer) do
-						if (not actorObject.grupo) then
-							if (bossList[actorObject.nome]) then
-								actorObject.boss = true
-								bossTable.bossimage = bossList[actorObject.nome][4]
-								break
-							end
-						end
-					end
-				end
-			end
-			--]=]
+		---@type details_encounterinfo
+		local encounterInfo = Details:GetEncounterInfo(name)
+		if (encounterInfo) then
+			bossTable.bossimage = encounterInfo.creatureIcon
 		end
 
+		local currentCombat = Details:GetCurrentCombat()
 		currentCombat.is_boss = bossTable
 
-		--we the boss was found during the combat table creation, we must postpone the event trigger
+		--if the boss wasn't found during the combat creation, send the event
 		if (not currentCombat.IsBeingCreated) then
 			Details:SendEvent("COMBAT_BOSS_FOUND", nil, index, name)
 			Details:CheckFor_SuppressedWindowsOnEncounterFound()
@@ -183,8 +157,20 @@
 		end
 
 		if (Details.encounter_table.name) then
-			local encounter_table = Details.encounter_table
-			return foundEncounterInfo(encounter_table.index, encounter_table.name, encounter_table.zone, encounter_table.mapid, encounter_table.diff, encounter_table.id)
+
+		--store the encounter time inside the encounter table for the encounter plugin
+		Details.encounter_table.start = GetTime()
+		Details.encounter_table ["end"] = nil
+--		local encounterID = Details.encounter_table.id
+		Details.encounter_table.id = encounterID
+		Details.encounter_table.name = encounterName
+		Details.encounter_table.diff = difficultyID
+		Details.encounter_table.size = raidSize
+		Details.encounter_table.zone = zoneName
+		Details.encounter_table.mapid = zoneMapID
+
+			local encounterTable = Details.encounter_table
+			return foundEncounterInfo(encounterTable.index, encounterTable.name, encounterTable.zone, encounterTable.mapid, encounterTable.diff, encounterTable.id)
 		end
 
 		for index = 1, 5 do
@@ -309,8 +295,8 @@
 	function Details:EntrarEmCombate (...)
 		if (Details.debug) then
 			Details:Msg("(debug) |cFFFFFF00started a new combat|r|cFFFF7700", Details.encounter_table and Details.encounter_table.name or "")
-			local from = debugstack(2, 1, 0)
-			print("from:", from)
+			--local from = debugstack(2, 1, 0)
+			--print("from:", from)
 		end
 
 		local segmentsTable = Details:GetCombatSegments()
@@ -369,13 +355,28 @@
 		local bFromCombatStart = true
 		Details:UpdateParserGears(bFromCombatStart)
 
-		--get all buff already applied before the combat start
+		--retrieve all buffs applied before the combat starts
 		C_Timer.After(0.05, function()
-			--wait the initial aura wipe done by the client on certain situations
+			--wait for the initial aura wipe performed by the client in certain situations
 			Details:CatchRaidBuffUptime("BUFF_UPTIME_IN")
 		end)
 		Details:CatchRaidDebuffUptime("DEBUFF_UPTIME_IN")
 		Details:UptadeRaidMembersCache()
+
+		--is inside a mythic dungeon and running a mythic+?
+
+		if (newCombatObject.is_challenge or Details.debug) then
+			--local bRegisterAuraScanTimeLine = true
+			--Details222.AuraScan.AddAura(395152) --ebon might
+			--Details222.AuraScan.AddAura(395296) --the evoker buff on it self
+			--Details222.AuraScan.AddAura(410089--[[, bRegisterAuraScanTimeLine--]]) --prescience
+			--Details222.AuraScan.AddAura(413984) --Shifting Sands
+			--Details222.AuraScan.AddAura(409560) --Temporal Wound
+			--Details222.AuraScan.AddAura(360827) --Blistering Scales
+			--Details222.AuraScan.AddAura(410263) --Inferno's Blessing
+			--Details222.AuraScan.RegisterCallback(Details222.SpecHelpers[1473].OnAugmentationBuffUpdate)
+			--Details222.AuraScan.Start() --combat started (m+ active)
+		end
 
 		--Details222.TimeCapture.StartCombatTimer(Details.tabela_vigente)
 
@@ -478,6 +479,8 @@
 		---@type combat
 		local currentCombat = Details:GetCurrentCombat()
 
+		Details:SendEvent("COMBAT_PLAYER_LEAVING", nil, currentCombat)
+
 		if (currentCombat.bIsClosed) then
 			return
 		end
@@ -519,11 +522,15 @@
 			end
 		end
 
-		Details:OnCombatPhaseChanged() --.PhaseData is nil here on alpha-32
+		Details:OnCombatPhaseChanged()
 
 		if (currentCombat.bossFunction) then
 			Details:CancelTimer(currentCombat.bossFunction)
 			currentCombat.bossFunction = nil
+		end
+
+		if (currentCombat.is_challenge or Details.debug) then
+			--Details222.AuraScan.Stop() --combat ended (m+ active)
 		end
 
 		--stop combat ticker
@@ -559,10 +566,10 @@
 					mapID = 0
 				end
 
-				--local ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap(mapID) --@@@disabled for science
-				--if (ejid == 0) then
-				--	ejid = Details:GetInstanceEJID()
-				--end
+				local ejid = DetailsFramework.EncounterJournal.EJ_GetInstanceForMap(mapID)
+				if (ejid == 0) then
+					ejid = Details:GetInstanceEJID()
+				end
 
 				local _, boss_index = Details:GetBossEncounterDetailsFromEncounterId(ZoneMapID, encounterID)
 
@@ -635,7 +642,7 @@
 				local enemy = Details:FindEnemy()
 
 				if (enemy and Details.debug) then
-					Details:Msg("(debug) enemy found", enemy)
+					--Details:Msg("(debug) enemy found", enemy)
 				end
 
 				currentCombat.enemy = enemy
@@ -706,7 +713,7 @@
 				Details:CaptureSet(false, "spellcast", false, 15)
 
 				if (Details.debug) then
-					Details:Msg("(debug) freezing parser for 15 seconds.")
+					--Details:Msg("(debug) freezing parser for 15 seconds.")
 				end
 			end
 
@@ -853,12 +860,12 @@
 
 		Details.pre_pot_used = nil
 
-		--do not wipe the encounter table if is in the argus encounter ~REMOVE on 8.0
+		--do not wipe the encounter table if is in the argus encounter
 		if (Details.encounter_table and Details.encounter_table.id ~= 2092) then
 			Details:Destroy(Details.encounter_table)
 		else
 			if (Details.debug) then
-				Details:Msg("(debug) in argus encounter, cannot wipe the encounter table.")
+				--Details:Msg("(debug) in argus encounter, cannot wipe the encounter table.")
 			end
 		end
 
@@ -1774,12 +1781,14 @@
 				if (Details.BreakdownWindowFrame:IsShown()) then
 					---@type actor
 					local actorObject = Details:GetActorObjectFromBreakdownWindow()
-					if (actorObject and not actorObject.__destroyed) then
-						return actorObject:MontaInfo() --MontaInfo a nil value
-					else
-						Details:Msg("Invalid actor object on breakdown window.")
-						if (actorObject.__destroyed) then
-							Details:Msg("Invalidation Reason:", actorObject.__destroyedBy)
+					if (actorObject) then
+						if (actorObject and not actorObject.__destroyed) then
+							return actorObject:MontaInfo() --MontaInfo a nil value
+						else
+							Details:Msg("Invalid actor object on breakdown window.")
+							if (actorObject.__destroyed) then
+								Details:Msg("Invalidation Reason:", actorObject.__destroyedBy)
+							end
 						end
 					end
 				end

@@ -1,12 +1,3 @@
-VER 3 000000000100001E " " "132222"
-#showtooltip Sharp Arrow
-/cast Shoot Bow
-END
-VER 3 000000000100001C " " "134400"
-#shwtooltip
-/cast [equipped: Daggers, stealth] Ambush
-/cast [equipped: One-Handed Swords, stealth] Garrote
-END
 VER 3 0000000001000007 " " "134400"
 #showtooltip Shadowstrike
 /cast [nostealth] Stealth
@@ -16,6 +7,14 @@ VER 3 000000000100001D " " "134400"
 #showtooltip Garrote
 /cast [nostealth] Stealth
 /cast Garrote
+END
+VER 3 000000000100001F " " "134400"
+#showtooltip
+/cast [stealth] Garrote; Backstab
+END
+VER 3 000000000100001E " " "132222"
+#showtooltip Sharp Arrow
+/cast Shoot Bow
 END
 VER 3 000000000100001B "attack" "Inv_misc_questionmark"
 #showtooltip

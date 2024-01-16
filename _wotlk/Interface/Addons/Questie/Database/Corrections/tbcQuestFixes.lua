@@ -966,6 +966,9 @@ function QuestieTBCQuestFixes:Load()
         [9360] = {
             [questKeys.startedBy] = {{15407},nil,{23249}},
         },
+        [9370] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Place the Signaling Gem"), 0, {{"object", 181449}}}},
+        },
         [9375] = {
             [questKeys.triggerEnd] = {"Escort Wounded Blood Elf Pilgrim to Falcon Watch", {[zoneIDs.HELLFIRE_PENINSULA]={{27.09,61.92}}}},
         },
@@ -975,12 +978,16 @@ function QuestieTBCQuestFixes:Load()
         [9392] = {
             [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
+        [9397] = {
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Disturb the nest"), 0, {{"object", 181582}}}},
+        },
         [9400] = {
             [questKeys.preQuestSingle] = {10124},
-            [questKeys.triggerEnd] = {"Find Krun Spinebreaker", {[zoneIDs.HELLFIRE_PENINSULA]={{33.59,43.62}}}},
+            [questKeys.triggerEnd] = nil,
+            [questKeys.objectives] = {{{17062,"Find Krun Spinebreaker"}}},
         },
         [9410] = {
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Wolf Totem at the location where you found Krun Spinebreaker's body and follow the Ancestral Spirit Wolf."), 0, {{"object", 181630}}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Wolf Totem at the location where you found Krun Spinebreaker's body and follow the Ancestral Spirit Wolf."), 0, {{"monster", 17062}}}},
         },
         [9417] = {
             [questKeys.preQuestSingle] = {},
@@ -1235,6 +1242,10 @@ function QuestieTBCQuestFixes:Load()
         },
         [9731] = {
             [questKeys.triggerEnd] = {"Drain Located", {[zoneIDs.ZANGARMARSH]={{50.44,40.91}}}},
+        },
+        [9737] = {
+            [questKeys.objectives] = {nil,nil,nil,nil,{{{17910,17911,17912,17913,17914},17910,"Remove Alonsus Chapel Protection"}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the Extinguishing Mixture near the eternal flame"), 0, {{"object", 182068}}}},
         },
         [9738] = {
             [questKeys.preQuestSingle] = {},
@@ -1694,7 +1705,7 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Take control of the Scrap Reaver X6000."), 0, {{"monster", 19849}}}},
         },
         [10250] = {
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Blow the Unyielding Battle Horn near the Alliance Banner"), 0, {{"object", 184002 }}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Blow the Unyielding Battle Horn near the Alliance Banner"), 0, {{"object", 184005}}}},
         },
         [10255] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Cenarion Antidote on a Hulking Helboar"), 0, {{"monster", 16880}}}},
@@ -1853,11 +1864,17 @@ function QuestieTBCQuestFixes:Load()
         [10389] = {
             [questKeys.preQuestSingle] = {10392},
         },
+        [10392] = {
+            [questKeys.requiredSourceItems] = {29795},
+        },
         [10393] = {
             [questKeys.startedBy] = {{20798},nil,nil},
         },
         [10395] = {
             [questKeys.startedBy] = {{19298},nil,nil},
+        },
+        [10397] = {
+            [questKeys.requiredSourceItems] = {29795},
         },
         [10403] = {
             [questKeys.startedBy] = {{20677,20678,20679},nil,nil},
@@ -2265,6 +2282,11 @@ function QuestieTBCQuestFixes:Load()
         },
         [10788] = {
             [questKeys.startedBy] = {{5675,5875},nil,nil},
+        },
+        [10792] = {
+            [questKeys.sourceItemId] = 31347,
+            [questKeys.requiredSourceItems] = {31347,31346},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Light the torches"), 0, {{"object", 185144}}}},
         },
         [10793] = {
             [questKeys.startedBy] = {{21979},nil,{31345}},
@@ -4950,7 +4972,7 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.requiredClasses] = classIDs.PALADIN,
             [questKeys.objectivesText] = {"Use the Extinguishing Mixture near the eternal flame in the Alonsus Chapel to remove the Light's protection. Be prepared to fight anyone who may attempt to defend the chapel."},
             [questKeys.objectives] = {nil,nil,nil,nil,{{{17910,17911,17912,17913,17914},17910,"Remove Alonsus Chapel Protection"}}},
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the Extinguishing Mixture near the eternal flame in the Alonsus Chapel to remove the Light's protection."), 0, {{"object", 182068}}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the Extinguishing Mixture near the eternal flame"), 0, {{"object", 182068}}}},
             [questKeys.sourceItemId] = 24287,
             [questKeys.preQuestSingle] = {64144},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,

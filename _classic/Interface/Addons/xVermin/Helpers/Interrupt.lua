@@ -12,7 +12,8 @@ interrupt_warning:SetWidth(interrupt_warning.text:GetStringWidth())
 interrupt_warning:SetHeight(interrupt_warning.text:GetStringHeight())
 interrupt_warning:Hide()
 
-_G.IfUnitIsCastingInteruptible = false
+_G.UnitCastingInteruptible = false
+_G.UnitCastingNonInteruptible = false
 
 local HandleRotationFrame = function(on)
 	if on then
@@ -27,9 +28,7 @@ end
 
 local HandleUnit = function(unit)
 
-	-- if xVermin.IfUnitIsCastingInteruptible(unit) then
-	-- print(_G.IfUnitIsCastingInteruptible)
-	if _G.IfUnitIsCastingInteruptible then
+	if _G.UnitCastingInteruptible then
 		-- WARRIOR INTERRUPT
 		if (xVermin.Class == 'WARRIOR') then
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
