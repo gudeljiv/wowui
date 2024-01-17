@@ -8,7 +8,7 @@
 ## Notes-zhCN: 哆啦A梦的百宝袋
 ## Notes-zhTW: 哆啦A夢的百寶袋
 
-## Version: 1.15.11
+## Version: 1.15.12
 ## Author: Leatrix
 ## SavedVariables: LeaPlusDB
 
@@ -20,4 +20,5 @@ Leatrix_Plus_Library.lua
 Leatrix_Plus_Locale.lua
 Leatrix_Plus_Flight_Alliance.lua
 Leatrix_Plus_Flight_Horde.lua
+Leatrix_Plus.xml
 Leatrix_Plus.lua

@@ -363,14 +363,14 @@ L["Current Combo Point charged"] = "Current Combo Point charged"
 --[[Translation missing --]]
 L["Current Essence"] = "Current Essence"
 L["Current Experience"] = "Experiencia actual"
+--[[Translation missing --]]
+L["Current Instance"] = "Current Instance"
 L["Current Movement Speed (%)"] = "Velocidad de movimiento actual (%)"
 L["Current Stage"] = "Fase actual"
 --[[Translation missing --]]
-L[ [=[Current Zone Group
-]=] ] = [=[Current Zone Group
-]=]
-L[ [=[Current Zone
-]=] ] = "Zona actual"
+L["Current Zone"] = "Current Zone"
+--[[Translation missing --]]
+L["Current Zone Group"] = "Current Zone Group"
 L["Curse"] = "Maldición"
 L["Custom"] = "Personalizado"
 L["Custom Action"] = "Acción personalizada"
@@ -765,9 +765,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["ID"] = "ID"
---[[Translation missing --]]
 L["Id"] = "Id"
+--[[Translation missing --]]
+L["ID"] = "ID"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "Si necesitas más ayuda, abre un ticket en GitHub o visita nuestro Discord en https://discord.gg/weakauras."
 L["Ignis the Furnace Master"] = "Ignis, el Maestro de la Caldera"
 L["Ignore Dead"] = "Ignorar muertos"
@@ -800,10 +800,14 @@ L["Increase Precision Below"] = "Aumentar la precisión por debajo de"
 L["Increases by one per stage or intermission."] = "Aumenta en uno por fase o intervalo."
 L["Information"] = "Información"
 L["Inherited"] = "Heredado"
+--[[Translation missing --]]
+L["Instace Id"] = "Instace Id"
 L["Instakill"] = "Muerte Instantanea"
 L["Install the addons BugSack and BugGrabber for detailed error logs."] = "Instala los addons BugSack y BugGrabber para obtener registros de errores detallados."
 L["Instance"] = "Instancia"
 L["Instance Difficulty"] = "Dificultad de la instancia"
+--[[Translation missing --]]
+L["Instance Id"] = "Instance Id"
 L["Instance Size Type"] = "Tipo de tamaño de instancia"
 L["Instance Type"] = "Tipo de Instancia"
 L["Instructor Razuvious"] = "Instructor Razuvious"
@@ -1200,6 +1204,8 @@ L["Player Effective Level"] = "Nivel efectivo del jugador"
 L["Player Experience"] = "Experiencia del jugador"
 L["Player Faction"] = "Facción del jugador"
 L["Player Level"] = "Nivel del Personaje"
+--[[Translation missing --]]
+L["Player Location ID(s)"] = "Player Location ID(s)"
 L["Player Name/Realm"] = "Nombre/Reino del jugador"
 L["Player Race"] = "Raza del Jugador"
 L["Player(s) Affected"] = "Jugador(es) Afectados"
@@ -1629,7 +1635,7 @@ L[ [=[Supports multiple entries, separated by commas
 --[[Translation missing --]]
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "Supports multiple entries, separated by commas. Escape ',' with \\"
 --[[Translation missing --]]
-L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."
+L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."
 L["Swing"] = "Golpe"
 L["Swing Timer"] = "Temporizador de Golpes"
 --[[Translation missing --]]
@@ -1646,9 +1652,9 @@ L["Talent |cFFFF0000Not|r Known"] = "Talent |cFFFF0000Not|r Known"
 L["Talent |cFFFF0000Not|r Selected"] = "Talent |cFFFF0000Not|r Selected"
 --[[Translation missing --]]
 L["Talent Known"] = "Talent Known"
-L["Talent selected"] = "Talento seleccionado"
 --[[Translation missing --]]
 L["Talent Selected"] = "Talent Selected"
+L["Talent selected"] = "Talento seleccionado"
 L["Talent Specialization"] = "Especialización de Talentos"
 L["Tanking And Highest"] = "Tanqueando y el más alto"
 L["Tanking But Not Highest"] = "Tanqueando pero no el mas alto"
@@ -1978,8 +1984,6 @@ L["Your threat as a percentage of the tank's current threat."] = "Your threat as
 L["Your threat on the mob as a percentage of the amount required to pull aggro. Will pull aggro at 100."] = "Your threat on the mob as a percentage of the amount required to pull aggro. Will pull aggro at 100."
 --[[Translation missing --]]
 L["Your total threat on the mob."] = "Your total threat on the mob."
---[[Translation missing --]]
-L["Zone ID(s)"] = "Zone ID(s)"
 --[[Translation missing --]]
 L["Zone Name"] = "Zone Name"
 --[[Translation missing --]]

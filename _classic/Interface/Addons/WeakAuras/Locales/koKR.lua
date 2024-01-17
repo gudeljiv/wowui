@@ -391,12 +391,14 @@ L["Current Combo Point charged"] = "Current Combo Point charged"
 --[[Translation missing --]]
 L["Current Essence"] = "Current Essence"
 L["Current Experience"] = "현재 경험치"
+--[[Translation missing --]]
+L["Current Instance"] = "Current Instance"
 L["Current Movement Speed (%)"] = "현재 이동 속도 (%)"
 L["Current Stage"] = "현재 단계"
-L[ [=[Current Zone Group
-]=] ] = "현재 지역 그룹"
-L[ [=[Current Zone
-]=] ] = "현재 지역"
+--[[Translation missing --]]
+L["Current Zone"] = "Current Zone"
+--[[Translation missing --]]
+L["Current Zone Group"] = "Current Zone Group"
 L["Curse"] = "저주"
 L["Custom"] = "사용자 정의"
 L["Custom Action"] = "사용자 정의 동작"
@@ -798,11 +800,15 @@ L["Increase Precision Below"] = "Increase Precision Below"
 L["Increases by one per stage or intermission."] = "단계 또는 사잇단계당 1씩 증가합니다."
 L["Information"] = "정보"
 L["Inherited"] = "상속"
+--[[Translation missing --]]
+L["Instace Id"] = "Instace Id"
 L["Instakill"] = "죽임"
 --[[Translation missing --]]
 L["Install the addons BugSack and BugGrabber for detailed error logs."] = "Install the addons BugSack and BugGrabber for detailed error logs."
 L["Instance"] = "인스턴스"
 L["Instance Difficulty"] = "인스턴스 난이도"
+--[[Translation missing --]]
+L["Instance Id"] = "Instance Id"
 L["Instance Size Type"] = "인스턴스 크기 유형"
 L["Instance Type"] = "인스턴스 유형"
 L["Instructor Razuvious"] = "훈련교관 라주비어스"
@@ -1161,6 +1167,8 @@ L["Player Effective Level"] = "플레이어 실제 레벨"
 L["Player Experience"] = "플레이어 경험치"
 L["Player Faction"] = "플레이어 진영"
 L["Player Level"] = "플레이어 레벨"
+--[[Translation missing --]]
+L["Player Location ID(s)"] = "Player Location ID(s)"
 L["Player Name/Realm"] = "플레이어 이름/서버"
 L["Player Race"] = "플레이어 종족"
 L["Player(s) Affected"] = "영향 받은 플레이어"
@@ -1483,7 +1491,8 @@ L["Supports multiple entries, separated by commas"] = "쉼표로 구분된 여�
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "쉼표로 구분된 여러 항목을 지원합니다"
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "쉼표로 구분된 여러 항목을 지원합니다. \\로 ',' 이스케이프"
-L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."] = "쉼표로 구분된 여러 항목을 지원합니다. 그룹 지역 ID(s)에는 'g' 접두사(예 g277)가 있어야 합니다."
+--[[Translation missing --]]
+L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."
 L["Swing"] = "자동 공격"
 L["Swing Timer"] = "자동 공격 타이머"
 --[[Translation missing --]]
@@ -1495,8 +1504,8 @@ L["Talent"] = "특성"
 L["Talent |cFFFF0000Not|r Known"] = "|cFFFF0000배우지 않은|r 특성"
 L["Talent |cFFFF0000Not|r Selected"] = "|cFFFF0000선택하지 않은|r 특성"
 L["Talent Known"] = "배운 특성"
-L["Talent selected"] = "선택된 특성"
 L["Talent Selected"] = "선택된 특성"
+L["Talent selected"] = "선택된 특성"
 L["Talent Specialization"] = "특성 전문화"
 L["Tanking And Highest"] = "탱커이면서 제일 높을 때"
 L["Tanking But Not Highest"] = "탱커지만 제일 높지 않을 때"
@@ -1715,7 +1724,6 @@ L["Your scheduled automatic profile has been cancelled."] = "예약된 자동 �
 L["Your threat as a percentage of the tank's current threat."] = "방어 전담의 현재 위협 수준에 대한 당신의 위협 수준의 백분율입니다."
 L["Your threat on the mob as a percentage of the amount required to pull aggro. Will pull aggro at 100."] = "몹의 어그로를 획득하는 데 필요한 위협 수준에 대한 당신의 위협 수준입니다. 100일 때 어그로를 획득합니다."
 L["Your total threat on the mob."] = "몬스터가 가진 당신의 총 위협 수준입니다."
-L["Zone ID(s)"] = "지역 ID(s)"
 L["Zone Name"] = "지역 이름"
 L["Zoom"] = "확대"
 L["Zoom Animation"] = "확대 애니메이션"

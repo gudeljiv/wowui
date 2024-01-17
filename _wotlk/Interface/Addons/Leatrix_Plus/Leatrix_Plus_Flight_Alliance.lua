@@ -1,4 +1,4 @@
-
+﻿
 	----------------------------------------------------------------------
 	-- Leatrix Plus Flight Alliance
 	----------------------------------------------------------------------
@@ -2759,6 +2759,7 @@
 				["0.42:0.53:0.60:0.52:0.73:0.54:0.83:0.46:0.78:0.38:0.82:0.31"] = 401, -- Stars' Rest, Wintergarde Keep, Amberpine Lodge, Westfall Brigade, Zim'Torga, Gundrak
 				["0.42:0.53:0.54:0.52:0.64:0.42"] = 195, -- Stars' Rest, Wyrmrest Temple, Ebon Watch
 				["0.42:0.53:0.41:0.43:0.52:0.38:0.62:0.36:0.72:0.29"] = 303, -- Stars' Rest, Valiance Landing Camp, Dalaran, K3, Dun Nifflelem
+				["0.42:0.53:0.41:0.43:0.52:0.38:0.56:0.36:0.57:0.33"] = 218, -- Stars' Rest, Valiance Landing Camp, Dalaran, The Argent Vanguard, Frosthold
 
 				-- Alliance: Dragonblight: Wintergarde Keep
 				["0.60:0.52:0.54:0.52"] = 55, -- Wintergarde Keep, Wyrmrest Temple
@@ -4190,6 +4191,7 @@
 				["0.57:0.33:0.62:0.36:0.52:0.38:0.24:0.40:0.21:0.49:0.17:0.53:0.12:0.53"] = 462, -- Frosthold, K3, Dalaran, River's Heart, Fizzcrank Airstrip, Amber Ledge, Transitus Shield
 				["0.57:0.33:0.62:0.36:0.52:0.38:0.46:0.46:0.42:0.53:0.29:0.57"] = 378, -- Frosthold, K3, Dalaran, Fordragon Hold, Stars' Rest, Unu'pe
 				["0.57:0.33:0.62:0.36:0.64:0.42:0.60:0.52:0.73:0.54"] = 224, -- Frosthold, K3, Ebon Watch, Wintergarde Keep, Amberpine Lodge
+				["0.57:0.33:0.62:0.36:0.52:0.38:0.46:0.46:0.42:0.53:0.22:0.61"] = 410, -- Frosthold, K3, Dalaran, Fordragon Hold, Stars' Rest, Valiance Keep
 
 				-- Alliance: The Storm Peaks: K3
 				["0.62:0.36:0.57:0.33"] = 43, -- K3, Frosthold

@@ -1,3 +1,6 @@
+1.15.12 - 17th November 2023
+- Added additional zone crossings between Darkshore and Ashenvale.
+
 1.15.02 - 16th November 2023
 - Fixed map border frame for ElvUI.
 

@@ -3033,6 +3033,15 @@ function Details:ShowExtraStatusbar(thisLine, amount, extraAmount, totalAmount, 
 			extraStatusbar:SetPoint("topleft", thisLine, "topleft", (statusBarWidth * percent) - fillTheGapWidth, 0)
 		end
 
+		--check if the extra bar will be bigger than the window
+		local windowWidth = instanceObject:GetSize()
+		local lineWidth = thisLine:GetWidth() * (amount/topAmount)
+		local maxExtraBarWidth = windowWidth - lineWidth - initialOffset
+
+		if (extraStatusbarWidth > maxExtraBarWidth) then
+			extraStatusbarWidth = maxExtraBarWidth
+		end
+
 		extraStatusbar:SetWidth(extraStatusbarWidth)
 		extraStatusbar:SetFrameLevel(thisLine:GetFrameLevel() + 1)
 
@@ -3447,6 +3456,9 @@ function damageClass.PredictedAugSpellsOnEnter(self)
 						end
 					end
 				end
+
+				GameCooltip:AddLine(" ")
+				GameCooltip:AddIcon("", 1, 1, 5, 5)
 			end
 		end
 	else

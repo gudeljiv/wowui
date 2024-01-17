@@ -345,14 +345,14 @@ L["Currency"] = "Валюта"
 L["Current Combo Point charged"] = "Текущий прием заряжен анимой"
 L["Current Essence"] = "Текущее количество сущностей"
 L["Current Experience"] = "Текущее количество опыта"
+--[[Translation missing --]]
+L["Current Instance"] = "Current Instance"
 L["Current Movement Speed (%)"] = "Текущая скорость движения"
 L["Current Stage"] = "Текущий уровень усиления"
-L[ [=[Current Zone Group
-]=] ] = [=[Текущая группа игровых зон
-]=]
-L[ [=[Current Zone
-]=] ] = [=[Текущая игровая зона
-]=]
+--[[Translation missing --]]
+L["Current Zone"] = "Current Zone"
+--[[Translation missing --]]
+L["Current Zone Group"] = "Current Zone Group"
 L["Curse"] = "Проклятие"
 L["Custom"] = "Самостоятельно"
 L["Custom Action"] = "Свое действие"
@@ -644,8 +644,8 @@ L["Icecrown Citadel"] = "Цитадель Ледяной Короны"
 L["Icon"] = "Иконка"
 L["Icon Function"] = "Функция иконки"
 L["Icon Function (fallback state)"] = "Функция иконки (резервное состояние)"
-L["ID"] = "ID"
 L["Id"] = "ID"
+L["ID"] = "ID"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "Если вам необходима дополнительная помощь, пожалуйста, откройте запрос на GitHub или посетите наш сервер в Discord по адресу https://discord.gg/weakauras."
 L["Ignis the Furnace Master"] = "Повелитель горнов Игнис"
 L["Ignore Dead"] = "Не учитывать мёртвые цели"
@@ -674,10 +674,14 @@ L["Increase Precision Below"] = "Увеличить точность, если �
 L["Increases by one per stage or intermission."] = "Увеличивается на единицу за каждую фазу или смену фаз"
 L["Information"] = "Сообщение"
 L["Inherited"] = "Наследуемый атрибут"
+--[[Translation missing --]]
+L["Instace Id"] = "Instace Id"
 L["Instakill"] = "Моментальное убийство"
 L["Install the addons BugSack and BugGrabber for detailed error logs."] = "Установите аддоны BugSack и BugGrabber для получения подробных записей об ошибках."
 L["Instance"] = "Подземелье"
 L["Instance Difficulty"] = "Сложность подземелья"
+--[[Translation missing --]]
+L["Instance Id"] = "Instance Id"
 L["Instance Size Type"] = "Тип размера подземелья"
 L["Instance Type"] = "Тип подземелья"
 L["Instructor Razuvious"] = "Инструктор Разувий"
@@ -1000,6 +1004,8 @@ L["Player Effective Level"] = "Эффективный уровень игрок�
 L["Player Experience"] = "Опыт персонажа"
 L["Player Faction"] = "Фракция игрока"
 L["Player Level"] = "Уровень игрока"
+--[[Translation missing --]]
+L["Player Location ID(s)"] = "Player Location ID(s)"
 L["Player Name/Realm"] = "Имя / Игровой мир игрока"
 L["Player Race"] = "Раса игрока"
 L["Player(s) Affected"] = "Задействованные игроки"
@@ -1030,8 +1036,8 @@ L["Progress Value"] = "Текущее значение"
 L["Pulse"] = "Пульсация"
 L["PvP Flagged"] = "В режиме PvP"
 L["PvP Talent %i"] = "PvP талант %i"
-L["PvP Talent Selected"] = "PvP талант выбран"
 L["PvP Talent selected"] = "PvP талант выбран"
+L["PvP Talent Selected"] = "PvP талант выбран"
 L["Quality Id"] = "ID качества"
 L["Quantity"] = "Количество"
 L["Quantity earned this week"] = "Заработано на этой неделе"
@@ -1264,9 +1270,8 @@ L[ [=[Supports multiple entries, separated by commas
 ]=] ] = [=[Можно указать несколько значений, разделенных запятыми.
 ]=]
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "Можно указать несколько значений, разделенных запятыми. Если название уже содержит запятую, экранируйте ее при помощи символа \\"
-L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."] = [=[ID группы игровых зон должен иметь префикс g. Например: g227
-
-Можно указать несколько значений, разделенных запятыми.]=]
+--[[Translation missing --]]
+L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."
 L["Swing"] = "Ближний бой"
 L["Swing Timer"] = "Таймер Swing (время между атаками)"
 L["Swipe"] = "Эффект Swipe (затемнение)"
@@ -1468,7 +1473,6 @@ L["Your scheduled automatic profile has been cancelled."] = "Запланиро�
 L["Your threat as a percentage of the tank's current threat."] = "Процент вашей угрозы для единицы относительно угрозы ее основной цели (танка). Максимальное значение 255. Прекращает обновляться, когда вы становитесь основной целью."
 L["Your threat on the mob as a percentage of the amount required to pull aggro. Will pull aggro at 100."] = "Процент вашей угрозы для единицы относительно угрозы, при которой вы становитесь ее основной целью (танком). Максимальное значение 100. Масштабируется по мере вашего приближения к единице."
 L["Your total threat on the mob."] = "Количество вашей угрозы по отношению к единице"
-L["Zone ID(s)"] = "ID игровой зоны"
 L["Zone Name"] = "Название игровой зоны"
 L["Zoom"] = "Масштаб"
 L["Zoom Animation"] = "Анимация масштаба"
