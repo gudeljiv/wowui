@@ -1,3 +1,9 @@
+VER 3 0000000000000029 " " "134400"
+#showtooltip
+/use Instant Poison
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
 END
@@ -11,7 +17,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:2287
+/use item:422
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
