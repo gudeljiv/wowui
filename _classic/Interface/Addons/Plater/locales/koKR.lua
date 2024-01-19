@@ -4,15 +4,15 @@ do
     local L = languageTable
 
 ------------------------------------------------------------
-L["EXPORT"] = "Export"
-L["EXPORT_CAST_COLORS"] = "색상 공유"
-L["EXPORT_CAST_SOUNDS"] = "사운드 공유"
+L["EXPORT"] = "내보내기"
+L["EXPORT_CAST_COLORS"] = "시전바 색상 내보내기"
+L["EXPORT_CAST_SOUNDS"] = "시전바 소리 내보내기"
 L["HIGHLIGHT_HOVEROVER"] = "마우스오버 강조"
 L["HIGHLIGHT_HOVEROVER_ALPHA"] = "마우스오버 강조 투명도"
 L["HIGHLIGHT_HOVEROVER_DESC"] = "마우스를 이름표에 올렸을 때 하이라이트 효과를 적용합니다."
-L["IMPORT"] = "Import"
-L["IMPORT_CAST_COLORS"] = "색상 불러오기"
-L["IMPORT_CAST_SOUNDS"] = "사운드 불러오기"
+L["IMPORT"] = "가져오기"
+L["IMPORT_CAST_COLORS"] = "시전바 색상 가져오기"
+L["IMPORT_CAST_SOUNDS"] = "시전바 소리 가져오기"
 L["OPTIONS_ALPHA"] = "투명도"
 L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "투명도 중복"
 L["OPTIONS_ALPHABYFRAME_DEFAULT"] = "투명도 기본값"
@@ -67,12 +67,9 @@ L["OPTIONS_CAST_SHOW_TARGETNAME"] = "대상 이름 보기"
 L["OPTIONS_CAST_SHOW_TARGETNAME_DESC"] = "대상이 존재한다면, 현재 시전의 대상 이름을 표시합니다."
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[탱커] 내 이름을 표시하지 않음"
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "만일 당신이 탱커라면, 시전 대상이 자신일 때 이름을 표시하지 않습니다."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_APPEARANCE"] = "Cast Bar Appearance"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_BLIZZCASTBAR"] = "Blizzard Cast Bar"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_COLORS"] = "Cast Bar Colors"
+L["OPTIONS_CASTBAR_APPEARANCE"] = "시전바 외형"
+L["OPTIONS_CASTBAR_BLIZZCASTBAR"] = "블리자드 시전바"
+L["OPTIONS_CASTBAR_COLORS"] = "시전바 색상"
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "숨김 애니메이션 활성화"
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "시전 시작과 끝에 애니메이션 효과를 적용합니다."
 L["OPTIONS_CASTBAR_FADE_ANIM_TIME_END"] = "시전 끝"
@@ -87,17 +84,13 @@ L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE"] = "커스텀 아이콘 사용"
 L["OPTIONS_CASTBAR_ICON_CUSTOM_ENABLE_DESC"] = "이 옵션이 해제되면, 스크립트에 의한 커스텀이 적용되지 않습니다."
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "주문 이름 축약하지 않기"
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "주문이름을 시전바 너비에 맞춰 줄이지 않습니다."
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_QUICKHIDE"] = "Quick Hide Cast Bar"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_QUICKHIDE_DESC"] = "After the cast finishes, immediately hide the cast bar."
+L["OPTIONS_CASTBAR_QUICKHIDE"] = "시전바 빠른 숨김"
+L["OPTIONS_CASTBAR_QUICKHIDE_DESC"] = "시전이 끝난 후 시전바를 즉시 숨깁니다"
 L["OPTIONS_CASTBAR_SPARK_HALF"] = "섬광 텍스쳐 축소"
 L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "섬광 텍스쳐를 절반만 표시"
 L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "차단 시 섬광 숨김"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_SPARK_SETTINGS"] = "Spark Settings"
---[[Translation missing --]]
-L["OPTIONS_CASTBAR_SPELLICON"] = "Spell Icon"
+L["OPTIONS_CASTBAR_SPARK_SETTINGS"] = "섬광 설정"
+L["OPTIONS_CASTBAR_SPELLICON"] = "주문 아이콘"
 L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "테스트용 시전바 켜기"
 L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "시전바 테스트 시작, 한번 더 누르면 중지됩니다."
 L["OPTIONS_CASTBAR_WIDTH"] = "시전바 너비"
@@ -252,7 +245,7 @@ L["OPTIONS_RESOURCES_TARGET_DESC"] = [=[현재 대상 위에 콤보 포인트같
 자원은 Plater 설정이 아닌 블리자드 기본값을 사용합니다.
 
 Character specific setting!]=]
-L["OPTIONS_SCALE"] = "Scale"
+L["OPTIONS_SCALE"] = "창 크기"
 L["OPTIONS_SCRIPTING_REAPPLY"] = "기본값 다시 적용"
 L["OPTIONS_SETTINGS_COPIED"] = "설정이 복사되었습니다."
 L["OPTIONS_SETTINGS_FAIL_COPIED"] = "현재 선택된 탭의 설정을 가져오지 못했습니다."

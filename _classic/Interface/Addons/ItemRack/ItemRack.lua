@@ -17,10 +17,15 @@ function ItemRack.IsWrath()
 	return WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
 end
 
-local GetContainerNumSlots, GetContainerItemLink, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID
+function ItemRack.IsEngravingActive()
+	return C_Engraving and C_Engraving.IsEngravingEnabled()
+end
+
+local GetContainerNumSlots, GetContainerItemLink, GetContainerItemID, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID
 if C_Container then
 	GetContainerNumSlots = C_Container.GetContainerNumSlots
 	GetContainerItemLink = C_Container.GetContainerItemLink
+	GetContainerItemID = C_Container.GetContainerItemID
 	GetContainerItemCooldown = C_Container.GetContainerItemCooldown
 	GetItemCooldown = C_Container.GetItemCooldown
 	PickupContainerItem = C_Container.PickupContainerItem
@@ -34,8 +39,8 @@ if C_Container then
 		end
 	end
 else
-	GetContainerNumSlots, GetContainerItemLink, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID =
-	_G.GetContainerNumSlots, _G.GetContainerItemLink, _G.GetContainerItemCooldown, _G.GetContainerItemInfo, _G.GetItemCooldown, _G.PickupContainerItem, _G.ContainerIDToInventoryID
+	GetContainerNumSlots, GetContainerItemLink, GetContainerItemID, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID =
+	_G.GetContainerNumSlots, _G.GetContainerItemLink, _G.GetContainerItemID, _G.GetContainerItemCooldown, _G.GetContainerItemInfo, _G.GetItemCooldown, _G.PickupContainerItem, _G.ContainerIDToInventoryID
 end
 
 local LDB = LibStub("LibDataBroker-1.1")
@@ -210,6 +215,7 @@ function ItemRack.InitEventHandlers()
 	handler.CHARACTER_POINTS_CHANGED = ItemRack.UpdateClassSpecificStuff
 	handler.PLAYER_TALENT_UPDATE = ItemRack.UpdateClassSpecificStuff
 	handler.PLAYER_ENTERING_WORLD = ItemRack.OnEnterWorld
+	handler.PLAYER_LOGOUT = ItemRack.OnPlayerLogout
 	handler.ACTIVE_TALENT_GROUP_CHANGED = ItemRack.UpdateClassSpecificStuff
 --	handler.PET_BATTLE_OPENING_START = ItemRack.OnEnteringPetBattle
 --	handler.PET_BATTLE_CLOSE = ItemRack.OnLeavingPetBattle
@@ -261,8 +267,17 @@ function ItemRack.OnPlayerLogin()
 	ItemRack.InitEvents()
 end
 
-function ItemRack.OnEnterWorld()
+function ItemRack.OnPlayerLogout()
 	ItemRack.SetSetBindings()
+end
+
+function ItemRack.OnEnterWorld(self,event,...)
+	local isLogin,isReload = ...
+	if isLogin or isReload then
+		C_Timer.After(15,function()
+			ItemRack.SetSetBindings()
+		end)
+	end
 end
 
 local loader = CreateFrame("Frame",nil, self, BackdropTemplateMixin and "BackdropTemplate") -- need a new temp frame here, ItemRackFrame is not created yet
@@ -612,6 +627,30 @@ function ItemRack.GetIRString(inputString,baseid,regular)
 	return string.match(inputString or "", (baseid and (regular and ItemRack.iSPatternBaseIDFromRegular or ItemRack.iSPatternBaseIDFromIR) or ItemRack.iSPatternRegularToIR)) or 0
 end
 
+-- [[ Season of Discovery Runes ]]
+if ItemRack.IsEngravingActive() then
+	function ItemRack.AppendRuneID(bag, slot)
+		local inv_slot
+		if slot then
+			local item_id = GetContainerItemID(bag, slot)
+			if item_id then
+				inv_slot = C_Item.GetItemInventoryTypeByID(item_id)
+			end
+		else
+			inv_slot = bag
+		end
+		if inv_slot and C_Engraving.IsEquipmentSlotEngravable(inv_slot) then
+			local rune_info = C_Engraving.GetRuneForEquipmentSlot(inv_slot)
+			if rune_info then
+				return ":runeid:"..tostring(rune_info.skillLineAbilityID)
+			else
+				return ":runeid:0"
+			end
+		end
+		return ""
+	end
+end
+
 -- itemrack itemstring updater.
 -- takes a saved ItemRack-style ID and returns an updated version with the latest player level and spec injected, which helps us update outdated IDs saved when the player was lower level or different spec
 function ItemRack.UpdateIRString(itemRackID)
@@ -628,6 +667,7 @@ end
 -- bag,nil = inventory slot; bag,slot = container slot
 function ItemRack.GetID(bag,slot)
 	local _, itemLink
+	local runeSuffix = ""
 	if slot then
 		itemLink = GetContainerItemLink(bag,slot)
 	else
@@ -637,7 +677,10 @@ function ItemRack.GetID(bag,slot)
 			itemLink = GetInventoryItemLink("player",bag)
 		end
 	end
-	return ItemRack.GetIRString(itemLink)
+	if ItemRack.AppendRuneID then
+		runeSuffix = ItemRack.AppendRuneID(bag,slot)
+	end
+	return ItemRack.GetIRString(itemLink)..runeSuffix
 end
 
 -- takes two ItemRack-style IDs (one or both of the parameters can be a baseID instead if needed) and returns true if those items share the same base itemID
@@ -1241,8 +1284,6 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 			if ItemRack.menuOpen==0 then
 				count = ItemRack.GetCountByID(ItemRack.Menu[i])
 				_G["ItemRackMenu"..i.."Count"]:SetText(count>0 and count or "")
-				_G["ItemRackMenu1Count"]:SetScale(0.7)
-				_G["ItemRackMenu1Count"]:SetPoint('TOPRIGHT', _G["ItemRackMenu1"], 'TOPRIGHT', -3, 27)
 			else
 				_G["ItemRackMenu"..i.."Count"]:SetText("")
 			end
@@ -2019,10 +2060,21 @@ function ItemRack.ToggleHidden(id)
 end
 
 --[[ Key bindings ]]
-
+local retryCount = 0
 function ItemRack.SetSetBindings()
-	local inLockdown = InCombatLockdown()
-	if not inLockdown then
+	if InCombatLockdown() then
+		ItemRack.Print("Cannot save hotkeys in combat, please try again out of combat!")
+		return
+	end
+	if retryCount > 3 then return end
+	local bindingSet = GetCurrentBindingSet()
+	if not bindingSet or not (Enum.BindingSet and tContains(Enum.BindingSet, bindingSet)) then
+		retryCount = retryCount + 1
+		C_Timer.After(5, function()
+			ItemRack.SetSetBindings()
+		end)
+		return
+	else
 		local buttonName,button
 		for i in pairs(ItemRackUser.Sets) do
 			if ItemRackUser.Sets[i].key then
@@ -2043,10 +2095,9 @@ function ItemRack.SetSetBindings()
 				SetBindingClick(ItemRackUser.Sets[i].key,buttonName)
 			end
 		end
-		-- print("GetCurrentBindingSet()", GetCurrentBindingSet())
-		SaveBindings(GetCurrentBindingSet() or 1)
-	else
-		ItemRack.Print("Cannot save hotkeys in combat, please try again out of combat!")
+		local bindingSet = GetCurrentBindingSet()
+		SaveBindings(bindingSet)
+		retryCount = 0
 	end
 end
 

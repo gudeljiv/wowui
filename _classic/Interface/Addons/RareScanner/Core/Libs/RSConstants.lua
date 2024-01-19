@@ -134,26 +134,12 @@ RSConstants.PROFILE_DEFAULTS = {
 		zoneFilters = {
 			defaultZoneFilterType = RSConstants.ENTITY_FILTER_ALL
 		},
-		collections = {
-			filteredOnlyOnWorldMap = false,
-			autoFilteringOnCollect = false,
-			createProfileBackup = true,
-			searchingPets = true,
-			searchingMounts = true,
-			searchingToys = true,
-			searchingAppearances = true,
-			showFiltered = true,
-			showDead = true,
-			showWithoutCollectibles = false
-		},
 		map = {
 			displayNpcIcons = true,
 			displayNotDiscoveredNpcIcons = true,
 			displayCustomGroupNpcIcons = {},
-			displayOtherRaresNpcIcons = true,
 			displayContainerIcons = true,
 			displayNotDiscoveredContainerIcons = true,
-			displayOtherContainerIcons = true,
 			disableLastSeenFilter = false,
 			displayOldNotDiscoveredMapIcons = true,
 			maxSeenTime = 0,

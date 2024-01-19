@@ -92,12 +92,6 @@ local function IsContainerPOIFiltered(containerID, mapID, zoneQuestID, onWorldMa
 		RSLogger:PrintDebugMessageEntityID(containerID, string.format("Saltado Contenedor [%s]: Filtrado en opciones (filtro completo o mapa del mundo).", containerID))
 		return true
 	end
-	
-	-- Skip if other (trackeable and not prof) filtered
-	if (not RSConfigDB.IsShowingOtherContainers()) then
-		RSLogger:PrintDebugMessageEntityID(containerID, string.format("Saltado Contenedor [%s]: Filtrado otro contenedor.", containerID))
-		return true
-	end
 
 	-- Skip if the entity appears only while a quest event is going on and it isnt active
 	if (zoneQuestID) then

@@ -10,6 +10,15 @@ function SeasonOfDiscovery:LoadObjects()
     local zoneIDs = ZoneDB.zoneIDs
 
     return {
+        [386675] = {
+            [objectKeys.spawns] = {
+                [1] = {{46.96,43.73}},
+                [12] = {{80.3, 79.1}},
+                [14] = {{62.1, 94.8}},
+                [85] = {{52.9, 54}},
+                [141] = {{55.3, 90.8}},
+            },
+        },
         [386691] = {
             [objectKeys.spawns] = {
                 [zoneIDs.IRONFORGE] = {{76, 10.4}},
@@ -74,6 +83,12 @@ function SeasonOfDiscovery:LoadObjects()
                 [zoneIDs.THE_BARRENS] = {{62.55,56.31}},
             },
         },
+        [407453] = {
+            [objectKeys.zoneID] = zoneIDs.THE_BARRENS,
+            [objectKeys.spawns] = {
+                [zoneIDs.THE_BARRENS] = {{61.81,45.84}},
+            },
+        },
         [407454] = {
             [objectKeys.zoneID] = zoneIDs.THE_BARRENS,
             [objectKeys.spawns] = {
@@ -99,6 +114,11 @@ function SeasonOfDiscovery:LoadObjects()
         [407850] = {
             [objectKeys.spawns] = {
                 [zoneIDs.LOCH_MODAN] = {{36.8, 91.4}},
+            },
+        },
+        [407918] = { -- Empty Trophy Display
+            [objectKeys.spawns] = {
+                [zoneIDs.LOCH_MODAN] = {{83.6, 65.5}},
             },
         },
         [408004] = {
@@ -198,6 +218,13 @@ function SeasonOfDiscovery:LoadObjects()
             [objectKeys.zoneID] = zoneIDs.ASHENVALE,
             [objectKeys.spawns] = {
                 [zoneIDs.ASHENVALE] = {{38,26}},
+            },
+        },
+        [450004] = {
+            [objectKeys.name] = "Wishing Well",
+            [objectKeys.zoneID] = zoneIDs.LOCH_MODAN,
+            [objectKeys.spawns] = {
+                [zoneIDs.ASHENVALE] = {{36.4,19.6}},
             },
         },
     }

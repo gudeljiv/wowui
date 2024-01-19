@@ -1,19 +1,14 @@
-VER 3 0000000001000009 " " "INV_Misc_QuestionMark"
-#showtooltip Wing Clip
+VER 3 0000000001000012 " " "134400"
+#showtooltip Serpent Sting
+/cast [@mouseover,harm,exists][]Serpent Sting
+/petattack [@mouseover,harm][]
+/cast !Auto Shot
+END
+VER 3 0000000001000016 " " "134400"
+#showtooltip
+/assist pet
 /startattack
-/cast Wing Clip
-/cast Wing Clip(Rank 2)
-/cast Wing Clip(Rank 1)
-END
-VER 3 0000000001000002 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast [@pet,dead] Revive Pet
-/cast [nopet] Call Pet
-/cast Mend Pet
-END
-VER 3 0000000001000003 " " "INV_Misc_QuestionMark"
-#showtooltip
-/cast Hunter's Mark
+/cast !Auto Shot
 END
 VER 3 0000000001000005 " " "INV_Misc_QuestionMark"
 #showtooltip
@@ -50,10 +45,9 @@ VER 3 000000000100000E " " "INV_Misc_QuestionMark"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
-VER 3 0000000001000012 " " "134400"
-#showtooltip Serpent Sting
-/cast [@mouseover,harm,exists][]Serpent Sting
-/petattack [@mouseover,harm][]
+VER 3 0000000001000014 " " "134400"
+#showtooltip
+/startattack
 /cast !Auto Shot
 END
 VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
@@ -62,36 +56,38 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 /stopattack
 /stopcasting
 END
-VER 3 0000000001000011 " " "132152"
+VER 3 0000000001000015 " " "134400"
+#showtooltip 
+/startattack
+/use Legs Rune Ability
+END
+VER 3 0000000001000011 "attack" "132152"
 #showtooltip
 /petfollow
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
 END
-VER 3 000000000100000F " " "132328"
-#showtooltip
-/petfollow
-/petpassive
-END
-VER 3 0000000001000014 " " "134400"
-#showtooltip
-/startattack
-/cast !Auto Shot
-END
-VER 3 0000000001000015 " " "134400"
-#showtooltip 
-/startattack
-/use Legs Rune Ability
-END
-VER 3 0000000001000016 " " "134400"
-#showtooltip
-/assist pet
-/startattack
-/cast !Auto Shot
-END
 VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
 #showtooltip
 /startattack
 /use Sinister Strike
+END
+VER 3 0000000001000002 "MP" "134400"
+#showtooltip
+/cast [@pet,dead] Revive Pet
+/cast [nopet] Call Pet
+/cast Mend Pet
+END
+VER 3 000000000100000F "passive" "132328"
+#showtooltip
+/petfollow
+/petpassive
+END
+VER 3 0000000001000009 "WC" "134400"
+#showtooltip Wing Clip
+/startattack
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END

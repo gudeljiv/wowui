@@ -120,7 +120,7 @@ local function KeepRunningRoutine(rareScannerButton, npcIDs, mapID)
 				if (npcFound) then
 					-- Hide error message
 					CloseErrorPopUp()
-	
+
 					local x, y = RSNpcDB.GetBestInternalNpcCoordinates(npcID, mapID)
 					rareScannerButton:SimulateRareFound(npcID, nil, RSNpcDB.GetNpcName(npcID), x, y, RSConstants.NPC_VIGNETTE)
 					recentlySeen[npcID] = time() + RSConstants.RECENTLY_SEEN_RESET_TIMER
@@ -140,21 +140,21 @@ local function CheckUnits(rareScannerButton)
 	-- Gets NPCs in the current map
 	local npcIDs, mapID, newMap = GetMapNpcs()
 	if (not npcIDs) then
+		RSLogger:PrintDebugMessage("Desactivado TargetUnit por no haberse obtenido NPCs para este mapa")
 		return
 	end
 	
-	if (checkUnitsRoutine and checkUnitsRoutine:IsRunning()) then
-		KeepRunningRoutine(rareScannerButton, npcIDs, mapID)
-		return
-	end
-	
-	-- Gets MAPID from players position
-	-- Launches new routine
+	-- Reset routine for new map
 	if (newMap) then
 		if (not checkUnitsRoutine) then
 			checkUnitsRoutine = RSRoutines.LoopIndexRoutineNew()
 		end
 		checkUnitsRoutine:Init(function() return npcIDs end, 30)
+		checkUnitsRoutine:Reset()
+	-- Keep reusing the same routine
+	elseif (checkUnitsRoutine:IsRunning()) then
+		KeepRunningRoutine(rareScannerButton, npcIDs, mapID)
+		return
 	end
 	
 	checkUnitsRoutine:Reset()
@@ -179,7 +179,6 @@ function RSTargetUnitTracker.Init(rareScannerButton)
 	C_Timer.NewTicker(RSConstants.CHECK_RESET_RECENTLY_SEEN_TIMER, function()
 		for npcID, timer in pairs(recentlySeen) do
 			if (time() > timer) then
-				RSLogger:PrintDebugMessage(string.format("Eliminado TargetUnit recentlySeen [%s]", npcID))
 				recentlySeen[npcID] = nil
 			end
 		end

@@ -81,6 +81,11 @@ f:RegisterEvent('UNIT_INVENTORY_CHANGED')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
+
+		if xVermin.Class ~= "ROGUE" then 
+			return
+		end
+		
 		if InCombatLockdown() then
 			return
 		end

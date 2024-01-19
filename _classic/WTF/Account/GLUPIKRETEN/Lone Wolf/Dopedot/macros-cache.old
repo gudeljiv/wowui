@@ -1,16 +1,21 @@
-VER 3 0000000001000002 " " "134400"
+VER 3 0000000001000003 "sb" "134400"
 #showtooltip
-/cast [@mouseover,exists,help][] Power Word: Shield
+/starattack
+/cast Shadow bolt
 END
-VER 3 0000000001000003 " " "134400"
+VER 3 0000000001000011 "attack" "132152"
 #showtooltip
-/cast [@mouseover,exists,help][] Renew
+/petfollow
+/petpassive
+/petattack [@mouseover,harm][]
+/petdefensive
 END
-VER 3 0000000001000004 " " "134400"
+VER 3 0000000001000004 "wand" "134400"
 #showtooltip Shoot
 /cast !Shoot
 END
-VER 3 0000000001000001 " " "134400"
+VER 3 000000000100000F "passive" "132328"
 #showtooltip
-/cast [@mouseover,exists,help][] Lesser Heal
+/petfollow
+/petpassive
 END
