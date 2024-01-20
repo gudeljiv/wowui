@@ -286,9 +286,11 @@ def main_rotation(main_skill, main_abilities):
                     press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
             except Exception as e:
                 print("score, diff not found for main ability", ability["name"], dt.now().strftime("%H:%M:%S"))
+                print(e)
                 pause = True
     except Exception as e:
         print("error skill loop", dt.now().strftime("%H:%M:%S"))
+        print(e)
         pause = True
 
 
@@ -305,9 +307,11 @@ def secondary_rotation(secondary_skill, secondary_abilities):
                         press_interception_key(ability["key"], "modifier" in ability.keys() and ability["modifier"] or False)
                 except Exception as e:
                     print("score, diff not found for offgcd", ability["name"], dt.now().strftime("%H:%M:%S"))
+                    print(Exception)
                     pause = True
     except Exception as e:
         print("offgcd error missing class --> ", wow_class, dt.now().strftime("%H:%M:%S"))
+        print(Exception)
         pause = True
 
 

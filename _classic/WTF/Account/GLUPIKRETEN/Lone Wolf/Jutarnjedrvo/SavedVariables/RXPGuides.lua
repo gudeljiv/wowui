@@ -1,559 +1,28 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[24] = {
-		},
 	},
-	["currentStep"] = 24,
-	["questObjectivesCache"] = {
-		[0] = 37,
-		[354] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Gregor's Remains: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Nissa's Remains: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thurman's Remains: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[356] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Bleeding Horror slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Wandering Spirit slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[358] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Rot Hide Graverobber slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Rot Hide Mongrel slain: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Embalming Ichor: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[5441] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Peons Awoken: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[362] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Devlin's Remains: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[426] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Notched Rib: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Blackened Skull: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[427] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Scarlet Warrior slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[365] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Tirisfal Pumpkin: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[367] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Darkhound Blood: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[791] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Canvas Scraps: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[5648] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Heal and fortify Grunt Kor'ja: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[370] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Captain Perrine slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 3,
-				["text"] = "Scarlet Zealot slain: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 3,
-				["text"] = "Scarlet Missionary slain: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[371] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Captain Vachon slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 5,
-				["text"] = "Scarlet Friar slain: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[374] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Scarlet Insignia Ring: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[375] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Duskbat Pelt: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Coarse Thread: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[815] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Taillasher Egg: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[817] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 4,
-				["text"] = "Durotar Tiger Fur: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[825] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 3,
-				["text"] = "Gnomish Tools: 0/3",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[835] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 12,
-				["text"] = "Dustwind Savage slain: 0/12",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Dustwind Storm Witch slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[837] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Razormane Quilboar slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Razormane Scout slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Razormane Dustrunner slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-			{
-				["type"] = "monster",
-				["numRequired"] = 4,
-				["text"] = "Razormane Battleguard slain: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [4]
-		},
-		[6394] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Thazz'ril's Pick: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[784] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Kul Tiras Sailor slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Kul Tiras Marine slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "monster",
-				["numRequired"] = 1,
-				["text"] = "Lieutenant Benedict slain: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[786] = {
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Valley of Trials destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Sen'jin Village destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "object",
-				["numRequired"] = 1,
-				["text"] = "Attack Plan: Orgrimmar destroyed: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[788] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 10,
-				["text"] = "Mottled Boar slain: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[790] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Sarkoth's Mangled Claw: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[792] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 12,
-				["text"] = "Vile Familiar slain: 0/12",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[794] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Burning Blade Medallion: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[404] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 7,
-				["text"] = "Putrid Claw: 0/7",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[808] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Minshina's Skull: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[826] = {
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Hexed Troll slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "monster",
-				["numRequired"] = 8,
-				["text"] = "Voodoo Troll slain: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Zalazane's Head: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [3]
-		},
-		[4402] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Cactus Apple: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[789] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 10,
-				["text"] = "Scorpid Worker Tail: 0/10",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[834] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Sack of Supplies: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[818] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 4,
-				["text"] = "Intact Makrura Eye: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-			{
-				["type"] = "item",
-				["numRequired"] = 8,
-				["text"] = "Crawler Mucus: 0/8",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [2]
-		},
-		[398] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 1,
-				["text"] = "Maggot Eye's Paw: 0/1",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[368] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 5,
-				["text"] = "Vile Fin Scale: 0/5",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-		[369] = {
-			{
-				["type"] = "item",
-				["numRequired"] = 4,
-				["text"] = "Vicious Night Web Spider Venom: 0/4",
-				["finished"] = false,
-				["numFulfilled"] = 0,
-			}, -- [1]
-		},
-	},
-	["currentGuideGroup"] = "RestedXP Survival Guide (H)",
+	["currentStep"] = 1,
+	["GA"] = true,
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 	},
 	["questNameCache"] = {
-		[2161] = "A Peon's Burden",
-		[354] = "Deaths in the Family",
-		[830] = "The Admiral's Orders",
-		[358] = "Graverobbers",
-		[5441] = "Lazy Peons",
-		[362] = "The Haunted Mills",
-		[426] = "The Mills Overrun",
-		[427] = "At War With The Scarlet Crusade",
-		[365] = "Fields of Grief",
-		[367] = "A New Plague",
-		[791] = "Carry Your Weight",
-		[5648] = "Garments of Spirituality",
-		[370] = "At War With The Scarlet Crusade",
-		[371] = "At War With The Scarlet Crusade",
-		[374] = "Proof of Demise",
-		[375] = "The Chill of Death",
-		[815] = "Break a Few Eggs",
-		[817] = "Practical Prey",
-		[823] = "Report to Orgnil",
-		[825] = "From The Wreckage....",
-		[835] = "Securing the Lines",
-		[837] = "Encroachment",
-		[6394] = "Thazz'ril's Pick",
-		[784] = "Vanquish the Betrayers",
-		[786] = "Thwarting Kolkar Aggression",
-		[788] = "Cutting Teeth",
-		[790] = "Sarkoth",
-		[792] = "Vile Familiars",
-		[794] = "Burning Blade Medallion",
-		[404] = "A Putrid Task",
-		[826] = "Zalazane",
-		[4402] = "Galgar's Cactus Apple Surprise",
-		[808] = "Minshina's Skull",
-		[805] = "Report to Sen'jin Village",
-		[398] = "Wanted: Maggot Eye",
-		[834] = "Winds in the Desert",
-		[789] = "Sting of the Scorpid",
-		[818] = "A Solvent Spirit",
-		[356] = "Rear Guard Patrol",
-		[368] = "A New Plague",
-		[369] = "A New Plague",
 	},
-	["currentGuideName"] = "06-13 Orc/Troll",
+	["currentGuideName"] = "",
 	["stepSkip"] = {
-		[7] = true,
-		[15] = true,
-		[11] = true,
-		[10] = true,
-		[6] = true,
-		[21] = true,
-		[22] = true,
-		[23] = true,
-		[3] = true,
 	},
-	["currentStepId"] = 4201453450,
+	["questObjectivesCache"] = {
+		[0] = 0,
+	},
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
-		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 	},
 	["profiles"] = {
-		["Dopecure - Stitches"] = {
+		["Dopecoil - Lone Wolf"] = {
 			["levels"] = {
 				{
 					["groupExperience"] = 0,
@@ -568,15 +37,151 @@ RXPCTrackingData = {
 				}, -- [1]
 			},
 		},
+		["Tadibey - Golemagg"] = {
+			["levels"] = {
+				{
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 30,
+							["day"] = 0,
+							["month"] = 12,
+							["weekday"] = 6,
+							["year"] = 2022,
+							["hour"] = 13,
+							["minute"] = 30,
+						},
+						["started"] = 0,
+					},
+					["quests"] = {
+					},
+				}, -- [1]
+			},
+		},
 	},
 }
 RXPCComms = {
 	["profileKeys"] = {
-		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
 	},
 	["profiles"] = {
-		["Dopecure - Stitches"] = {
+		["Dopecoil - Lone Wolf"] = {
+		},
+		["Tadibey - Golemagg"] = {
+			["players"] = {
+				["Renoris"] = {
+					["timePlayed"] = 2291.224000000104,
+					["class"] = "ROGUE",
+					["xp"] = 162,
+				},
+				["Duzbig"] = {
+					["timePlayed"] = 167.2999999999884,
+					["class"] = "WARRIOR",
+					["xp"] = 7,
+				},
+				["Shekills"] = {
+					["timePlayed"] = 0,
+					["class"] = "ROGUE",
+					["xp"] = 1260,
+				},
+				["Hänty"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARLOCK",
+					["xp"] = 1260,
+				},
+				["Tömeg"] = {
+					["timePlayed"] = 578.914999999979,
+					["class"] = "DRUID",
+					["xp"] = 58,
+				},
+				["Klegg"] = {
+					["class"] = "ROGUE",
+					["lastSeen"] = 59377.458,
+					["xpPercentage"] = 47,
+					["isRxp"] = true,
+					["timePlayed"] = 3142.248,
+					["level"] = 17,
+				},
+				["Logges"] = {
+					["timePlayed"] = 1704.800000000047,
+					["class"] = "WARLOCK",
+					["xp"] = 97,
+				},
+				["Dámp"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
+					["xp"] = 1260,
+				},
+				["Ayatolla"] = {
+					["timePlayed"] = 3142.248,
+					["class"] = "PALADIN",
+					["xp"] = 277,
+				},
+				["Wlm"] = {
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
+					["xp"] = 1260,
+				},
+				["Palepala"] = {
+					["timePlayed"] = 1227.956000000006,
+					["class"] = "PALADIN",
+					["xp"] = 277,
+				},
+				["Tirbuson"] = {
+					["timePlayed"] = 3142.248,
+					["class"] = "PALADIN",
+					["xp"] = 277,
+				},
+				["Astaltceva"] = {
+					["timePlayed"] = 1918.859000000055,
+					["class"] = "PALADIN",
+					["xp"] = 170,
+				},
+				["Shync"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 178,
+				},
+				["Grotbag"] = {
+					["timePlayed"] = 2291.224000000104,
+					["class"] = "WARLOCK",
+					["xp"] = 162,
+				},
+			},
 		},
 	},
 }
-RXPCSettings = nil
+RXPCSettings = {
+	["profileKeys"] = {
+		["Tadibey - Golemagg"] = "Tadibey - Golemagg",
+	},
+	["profiles"] = {
+		["Tadibey - Golemagg"] = {
+			["notifyOnTargetUpdates"] = false,
+			["migrated"] = true,
+			["checkVersions"] = false,
+			["enableTargetMacro"] = false,
+			["lockFrames"] = false,
+			["enableTracker"] = false,
+			["hideGuideWindow"] = false,
+			["enableFPAutomation"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["hardcore"] = false,
+			["enableTargetAutomation"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableQuestRewardAutomation"] = true,
+			["xprate"] = 1.2,
+			["enableLevelUpAnnounceSolo"] = false,
+			["frameHeight"] = 125.0001068115234,
+			["alwaysSendBranded"] = false,
+			["enableBindAutomation"] = false,
+			["enableMinimapButton"] = false,
+			["hideInRaid"] = false,
+			["activeItemsScale"] = 1.2,
+		},
+	},
+}

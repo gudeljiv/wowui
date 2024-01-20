@@ -35,7 +35,7 @@ xVermin.AOE = function(range, casting)
 						local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 						local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-						if defensive or (battle and IsEquippedItemType('Shields')) then
+						if defensive or (battle and IsEquippedItemType('Shields')) and IsSpellKnownOrOverridesKnown(72) then
 							if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
 								rangecasting = rangecasting + 1
 							end
@@ -46,7 +46,7 @@ xVermin.AOE = function(range, casting)
 							rangecasting = rangecasting + 1
 						end
 					end
-					if xVermin.Class == 'SHAMAN' then
+					if xVermin.Class == 'SHAMAN' and IsSpellKnownOrOverridesKnown(8042) then
 						if IsSpellInRange('Earth Shock', 'target') == 0 or select(2, GetSpellCooldown('Earth Shock')) > 0 then
 							rangecasting = rangecasting + 1
 						end

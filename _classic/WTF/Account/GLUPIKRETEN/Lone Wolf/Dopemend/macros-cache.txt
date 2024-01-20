@@ -1,3 +1,15 @@
+VER 3 0000000001000007 " " "134400"
+#showtooltip
+/castsequence reset=4 Void Plague, Shadow Word: Pain
+END
+VER 3 0000000001000008 "cure" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Cure Disease
+END
+VER 3 0000000001000009 "dispel" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Dispel Magic
+END
 VER 3 0000000001000001 "lesser" "135929"
 #showtooltip
 /cast [@mouseover,exists,help][] Lesser Heal

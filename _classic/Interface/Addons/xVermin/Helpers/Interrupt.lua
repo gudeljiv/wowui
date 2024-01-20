@@ -84,21 +84,21 @@ local HandleUnit = function(unit)
 		end
 
 		-- SHAMAN INTERRUPT
-		if xVermin.Class == 'SHAMAN' then
+		if xVermin.Class == 'SHAMAN' and IsSpellKnownOrOverridesKnown(8042) then
 			if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- ROGUE INTERRUPT
-		if xVermin.Class == 'ROGUE' then
+		if xVermin.Class == 'ROGUE' and IsSpellKnownOrOverridesKnown(1766) then
 			if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- HUNTER INTERRUPT
-		if xVermin.Class == 'HUNTER' then
+		if xVermin.Class == 'HUNTER' and IsSpellKnownOrOverridesKnown(2004) or IsSpellKnown(19577, true) then
 			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
 				HandleRotationFrame(true)
 			end
