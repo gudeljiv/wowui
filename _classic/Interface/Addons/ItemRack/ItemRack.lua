@@ -1232,6 +1232,7 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 				button:SetBeautyBorderColor(1, 1, 1)
 			end
 
+			
 		end
 		if showButtonMenu then
 			table.remove(ItemRack.Menu)

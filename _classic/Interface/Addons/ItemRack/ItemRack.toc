@@ -1,4 +1,4 @@
-## Interface: 30403
+## Interface: 11500
 ## Title: ItemRack - Classic
 ## Version: 3.77
 ## Author: Gello - Updated for Classic by Rottenbeer,Roadblock
