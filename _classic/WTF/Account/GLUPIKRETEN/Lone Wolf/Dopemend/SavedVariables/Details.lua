@@ -7,27 +7,27 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 432,
+					["combatId"] = 508,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001275,
+							["totalabsorbed"] = 0.005491,
 							["pets"] = {
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 169.001275,
+							["total_without_pet"] = 135.005491,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 169.001275,
+							["total"] = 135.005491,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Durotar Tiger"] = true,
+								["Clattering Scorpid"] = true,
 							},
 							["targets"] = {
-								["Durotar Tiger"] = 169,
+								["Clattering Scorpid"] = 135,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -35,24 +35,52 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664682,
+							["end_time"] = 1705755234,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[5019] = {
+									[425204] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 23,
 										["targets"] = {
-											["Durotar Tiger"] = 111,
+											["Clattering Scorpid"] = 45,
 										},
-										["n_total"] = 111,
-										["n_min"] = 14,
+										["n_total"] = 45,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 111,
+										["counter"] = 2,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Clattering Scorpid"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
 										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
@@ -64,27 +92,27 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[425204] = {
+									[402284] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 25,
 										["targets"] = {
-											["Durotar Tiger"] = 58,
+											["Clattering Scorpid"] = 75,
 										},
-										["n_total"] = 58,
-										["n_min"] = 19,
+										["n_total"] = 75,
+										["n_min"] = 25,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 58,
+										["total"] = 75,
 										["c_max"] = 0,
-										["id"] = 425204,
+										["id"] = 402284,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -100,41 +128,41 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 11.30443311031508,
+							["last_dps"] = 22.73585230730607,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 58.001275,
-							["start_time"] = 1705664667,
+							["damage_taken"] = 22.005491,
+							["start_time"] = 1705755228,
 							["delay"] = 0,
-							["last_event"] = 1705664681,
+							["last_event"] = 1705755232,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002927,
+							["totalabsorbed"] = 0.004355,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 58.002927,
+							["total_without_pet"] = 22.004355,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 58.002927,
+							["total"] = 22.004355,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3121-00002A5C54",
-							["aID"] = "3121",
+							["serial"] = "Creature-0-5209-1-4594-3125-00002BB61E",
+							["aID"] = "3125",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopemend"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 58,
+								["Dopemend"] = 22,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664682,
-							["nome"] = "Durotar Tiger",
+							["end_time"] = 1705755234,
+							["nome"] = "Clattering Scorpid",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -142,15 +170,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7,
+										["n_max"] = 8,
 										["targets"] = {
-											["Dopemend"] = 58,
+											["Dopemend"] = 22,
 										},
-										["n_total"] = 58,
-										["n_min"] = 6,
+										["n_total"] = 22,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 58,
+										["counter"] = 3,
+										["total"] = 22,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -162,7 +190,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -173,41 +201,42 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 169.002927,
-							["start_time"] = 1705664671,
+							["damage_taken"] = 135.004355,
+							["start_time"] = 1705755228,
 							["delay"] = 0,
-							["last_event"] = 1705664681,
+							["last_event"] = 1705755232,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 432,
+					["combatId"] = 508,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 432,
+					["combatId"] = 508,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 432,
+					["combatId"] = 508,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[425204] = {
-										["activedamt"] = 0,
+										["activedamt"] = -1,
 										["id"] = 425204,
 										["targets"] = {
 										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["actived_at"] = 1705755232,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -226,12 +255,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 6,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -242,7 +293,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 6,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -251,776 +313,16 @@ _detalhes_database = {
 								},
 							},
 							["buff_uptime"] = 30,
-							["debuff_uptime"] = 11,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664682,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 432,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["tempo_start"] = 1705664667,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					227, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 5,
-						["Void Plague"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:44:43",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Durotar Tiger",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 767134.1950000001,
-				["CombatEndedAt"] = 767134.1950000001,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:44:28",
-				["end_time"] = 767134.1950000001,
-				["combat_id"] = 432,
-				["frags"] = {
-					["Durotar Tiger"] = 1,
-				},
-				["combat_counter"] = 490,
-				["totals_grupo"] = {
-					169, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 169.001275,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 767119.245,
-				["contra"] = "Durotar Tiger",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 431,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006508,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 19.006508,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.006508,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Makrura Clacker"] = 19,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664384,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Makrura Clacker"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 8.32888168271065,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006508,
-							["start_time"] = 1705664382,
-							["delay"] = 0,
-							["last_event"] = 1705664382,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007281,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.007281,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.007281,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3103-00002A5974",
-							["aID"] = "3103",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopemend"] = true,
-								["Cviper"] = true,
-							},
-							["targets"] = {
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664384,
-							["nome"] = "Makrura Clacker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 55.007281,
-							["start_time"] = 1705664384,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 431,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 431,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 431,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 4,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664384,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 431,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 767117.745,
-				["tempo_start"] = 1705664382,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					55, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:39:45",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Makrura Clacker",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766836.166,
-				["CombatEndedAt"] = 766836.166,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:39:43",
-				["end_time"] = 766836.166,
-				["combat_id"] = 431,
-				["frags"] = {
-					["Makrura Clacker"] = 1,
-				},
-				["combat_counter"] = 489,
-				["totals_grupo"] = {
-					19, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 19.006508,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 766833.884,
-				["contra"] = "Makrura Clacker",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 430,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003542,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 192.003542,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 192.003542,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Surf Crawler"] = true,
-							},
-							["targets"] = {
-								["Surf Crawler"] = 192,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664376,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Surf Crawler"] = 115,
-										},
-										["n_total"] = 115,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 115,
-										["c_max"] = 0,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425204] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Surf Crawler"] = 77,
-										},
-										["n_total"] = 77,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 425204,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 19.39429717167156,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 46.003542,
-							["start_time"] = 1705664366,
-							["delay"] = 0,
-							["last_event"] = 1705664375,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 23.007829,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 46.007829,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 46.007829,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3107-00002A596A",
-							["aID"] = "3107",
-							["damage_from"] = {
-								["Dopemend"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 46,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664376,
-							["nome"] = "Surf Crawler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Dopemend"] = 46,
-										},
-										["n_total"] = 46,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 46,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 11,
-										["a_amt"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 192.007829,
-							["start_time"] = 1705664367,
-							["delay"] = 0,
-							["last_event"] = 1705664374,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 430,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006095,
-							["total_without_pet"] = 27.006095,
-							["total"] = 27.006095,
-							["targets_absorbs"] = {
-								["Dopemend"] = 27,
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 27.006095,
-							["last_hps"] = 2.727888383831969,
-							["aID"] = "5826-022A0869",
-							["fight_component"] = true,
-							["targets"] = {
-								["Dopemend"] = 27,
-							},
-							["serial"] = "Player-5826-022A0869",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.006095,
-							["healing_from"] = {
-								["Dopemend"] = true,
-							},
-							["healing_taken"] = 27.006095,
-							["grupo"] = true,
-							["classe"] = "PRIEST",
-							["end_time"] = 1705664376,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1705664367,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[17] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 27,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 12,
-										["targets"] = {
-											["Dopemend"] = 27,
-										},
-										["n_total"] = 27,
-										["n_min"] = 4,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 17,
-										["targets_absorbs"] = {
-											["Dopemend"] = 27,
-										},
-										["spellschool"] = 2,
-										["c_min"] = 0,
-										["n_amt"] = 3,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1705664372,
-							["totaldenied"] = 0.006095,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 430,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 430,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-5826-022A0869",
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[425204] = {
-										["activedamt"] = -1,
-										["id"] = 425204,
-										["targets"] = {
-										},
-										["actived_at"] = 1705664375,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[17] = {
-										["activedamt"] = 1,
-										["id"] = 17,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 26,
 							["debuff_uptime"] = 0,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664376,
+							["last_event"] = 1705755234,
 							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 430,
+					["combatId"] = 508,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1031,8 +333,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766832.883,
-				["tempo_start"] = 1705664366,
+				["tempo_start"] = 1705755228,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -1044,956 +345,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					326, -- [1]
-					27, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 6,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:39:36",
-				["pvp"] = true,
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Surf Crawler",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766827.283,
-				["CombatEndedAt"] = 766827.283,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:39:26",
-				["end_time"] = 766827.283,
-				["combat_id"] = 430,
-				["frags"] = {
-					["Surf Crawler"] = 1,
-				},
-				["totals_grupo"] = {
-					192, -- [1]
-					27, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopemend"] = 27.006095,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 192.003542,
-						}, -- [1]
-					},
-				},
-				["combat_counter"] = 488,
-				["start_time"] = 766817.383,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["combatId"] = 429,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007914,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 146.007914,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 146.007914,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Bloodtalon Taillasher"] = true,
-							},
-							["targets"] = {
-								["Bloodtalon Taillasher"] = 146,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664355,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[402284] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 63,
-										},
-										["n_total"] = 63,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 402284,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[589] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 589,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 14,
-										},
-										["n_total"] = 14,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 14,
-										["c_max"] = 0,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425204] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 58,
-										},
-										["n_total"] = 58,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 425204,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 19.25209836489852,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 57.007914,
-							["start_time"] = 1705664349,
-							["delay"] = 0,
-							["last_event"] = 1705664355,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 17.005221,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 57.005221,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 57.005221,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3122-00002A5BE1",
-							["aID"] = "3122",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopemend"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 57,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664355,
-							["nome"] = "Bloodtalon Taillasher",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Dopemend"] = 57,
-										},
-										["n_total"] = 57,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 146.005221,
-							["start_time"] = 1705664348,
-							["delay"] = 0,
-							["last_event"] = 1705664353,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 429,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.008718,
-							["total_without_pet"] = 17.008718,
-							["total"] = 17.008718,
-							["targets_absorbs"] = {
-								["Dopemend"] = 17,
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 17.008718,
-							["last_hps"] = 2.242710706741691,
-							["aID"] = "5826-022A0869",
-							["fight_component"] = true,
-							["targets"] = {
-								["Dopemend"] = 17,
-							},
-							["serial"] = "Player-5826-022A0869",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.008718,
-							["healing_from"] = {
-								["Dopemend"] = true,
-							},
-							["healing_taken"] = 17.008718,
-							["grupo"] = true,
-							["classe"] = "PRIEST",
-							["end_time"] = 1705664355,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1705664351,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[17] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 17,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 9,
-										["targets"] = {
-											["Dopemend"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 8,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 17,
-										["targets_absorbs"] = {
-											["Dopemend"] = 17,
-										},
-										["spellschool"] = 2,
-										["c_min"] = 0,
-										["n_amt"] = 2,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1705664353,
-							["totaldenied"] = 0.008718,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 429,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 429,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["serial"] = "Player-5826-022A0869",
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[6788] = {
-										["activedamt"] = 1,
-										["id"] = 6788,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[425204] = {
-										["activedamt"] = -1,
-										["id"] = 425204,
-										["targets"] = {
-										},
-										["actived_at"] = 1705664355,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[589] = {
-										["activedamt"] = 0,
-										["id"] = 589,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[17] = {
-										["activedamt"] = 1,
-										["id"] = 17,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 19,
-							["debuff_uptime"] = 12,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664355,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 429,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766814.533,
-				["tempo_start"] = 1705664348,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					203, -- [1]
-					17, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shadow Word: Pain"] = 1,
-						["Shoot"] = 1,
-						["Power Word: Shield"] = 1,
-						["Penance"] = 3,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:39:15",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bloodtalon Taillasher",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766806.599,
-				["CombatEndedAt"] = 766806.599,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:39:08",
-				["end_time"] = 766806.599,
-				["combat_id"] = 429,
-				["frags"] = {
-					["Bloodtalon Taillasher"] = 1,
-				},
-				["combat_counter"] = 487,
-				["totals_grupo"] = {
-					146, -- [1]
-					17, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopemend"] = 17.008718,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 146.007914,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 766799.015,
-				["contra"] = "Bloodtalon Taillasher",
-				["TimeData"] = {
-				},
-			}, -- [4]
-			{
-				{
-					["combatId"] = 428,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004575,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 150.004575,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 150.004575,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Bloodtalon Taillasher"] = true,
-							},
-							["targets"] = {
-								["Bloodtalon Taillasher"] = 150,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664325,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[425204] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 38,
-										},
-										["n_total"] = 38,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 38,
-										["c_max"] = 0,
-										["id"] = 425204,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 47,
-										},
-										["n_total"] = 47,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 47,
-										["c_max"] = 0,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[402284] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Bloodtalon Taillasher"] = 65,
-										},
-										["n_total"] = 65,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 402284,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 25.93440093367677,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 17.004575,
-							["start_time"] = 1705664319,
-							["delay"] = 0,
-							["last_event"] = 1705664324,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003523,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 17.003523,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 17.003523,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3122-00002A5C35",
-							["aID"] = "3122",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopemend"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 17,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664325,
-							["nome"] = "Bloodtalon Taillasher",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Dopemend"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 150.003523,
-							["start_time"] = 1705664322,
-							["delay"] = 0,
-							["last_event"] = 1705664324,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 428,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 428,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 428,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[425204] = {
-										["activedamt"] = -1,
-										["id"] = 425204,
-										["targets"] = {
-										},
-										["actived_at"] = 1705664324,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["debuff_uptime"] = 0,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664325,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 428,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766795.231,
-				["tempo_start"] = 1705664319,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					213, -- [1]
+					265, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2021,30 +373,30 @@ _detalhes_database = {
 				["amountCasts"] = {
 					["Dopemend"] = {
 						["Penance"] = 2,
-						["Shoot"] = 3,
+						["Shoot"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:38:45",
+				["data_fim"] = "13:53:54",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Bloodtalon Taillasher",
+				["enemy"] = "Clattering Scorpid",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766776.181,
-				["CombatEndedAt"] = 766776.181,
+				["TotalElapsedCombatTime"] = 875713.866,
+				["CombatEndedAt"] = 875713.866,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:38:39",
-				["end_time"] = 766776.181,
-				["combat_id"] = 428,
+				["data_inicio"] = "13:53:48",
+				["end_time"] = 875713.866,
+				["combat_id"] = 508,
 				["frags"] = {
-					["Bloodtalon Taillasher"] = 1,
+					["Clattering Scorpid"] = 1,
 				},
-				["combat_counter"] = 486,
+				["combat_counter"] = 566,
 				["totals_grupo"] = {
-					150, -- [1]
+					135, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2079,40 +431,41 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 150.004575,
+							["Dopemend"] = 135.005491,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766770.397,
-				["contra"] = "Bloodtalon Taillasher",
+				["start_time"] = 875707.9280000001,
+				["contra"] = "Clattering Scorpid",
 				["TimeData"] = {
 				},
-			}, -- [5]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 427,
+					["combatId"] = 507,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007076,
+							["totalabsorbed"] = 0.005599,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 176.007076,
+							["total_without_pet"] = 89.005599,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 176.007076,
+							["total"] = 117.005599,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Surf Crawler"] = true,
+								["Clattering Scorpid"] = true,
 							},
 							["targets"] = {
-								["Surf Crawler"] = 176,
+								["Clattering Scorpid"] = 117,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -2120,26 +473,98 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664311,
+							["end_time"] = 1705755156,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[5019] = {
+									[402284] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Clattering Scorpid"] = 89,
+										},
+										["n_total"] = 50,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 89,
+										["c_max"] = 39,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 39,
+										["successful_casted"] = 0,
+										["c_total"] = 39,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 29.22947764242831,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 3.005599,
+							["start_time"] = 1705755152,
+							["delay"] = 0,
+							["last_event"] = 1705755155,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.007195,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 28.007195,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 28.007195,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC1E1",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+								["Clattering Scorpid"] = true,
+							},
+							["targets"] = {
+								["Clattering Scorpid"] = 28,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705755156,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["n_max"] = 6,
 										["targets"] = {
-											["Surf Crawler"] = 122,
+											["Clattering Scorpid"] = 28,
 										},
-										["n_total"] = 122,
-										["n_min"] = 15,
+										["n_total"] = 28,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
 										["counter"] = 6,
-										["total"] = 122,
+										["total"] = 28,
 										["c_max"] = 0,
-										["id"] = 5019,
+										["DODGE"] = 1,
+										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
@@ -2149,76 +574,51 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
-									[425204] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Surf Crawler"] = 54,
-										},
-										["n_total"] = 54,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = 425204,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 15.71491750006534,
+							["last_dps"] = 6.996551336655522,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 33.007076,
-							["start_time"] = 1705664300,
+							["damage_taken"] = 4.007195,
+							["start_time"] = 1705755152,
 							["delay"] = 0,
-							["last_event"] = 1705664310,
-						}, -- [1]
+							["last_event"] = 1705755153,
+						}, -- [2]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.002923,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004227,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 33.002923,
+							["total_without_pet"] = 7.004227,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 33.002923,
+							["total"] = 7.004227,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3107-00002A5E49",
-							["aID"] = "3107",
+							["serial"] = "Creature-0-5209-1-4594-3125-00002BB852",
+							["aID"] = "3125",
+							["fight_component"] = true,
 							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
 								["Dopemend"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 33,
+								["Homunculus <Dopemend>"] = 4,
+								["Dopemend"] = 3,
 							},
-							["fight_component"] = true,
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664311,
-							["nome"] = "Surf Crawler",
+							["end_time"] = 1705755156,
+							["nome"] = "Clattering Scorpid",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -2226,15 +626,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12,
+										["n_max"] = 4,
 										["targets"] = {
-											["Dopemend"] = 33,
+											["Homunculus <Dopemend>"] = 4,
+											["Dopemend"] = 3,
 										},
-										["n_total"] = 33,
-										["n_min"] = 10,
+										["n_total"] = 7,
+										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 33,
+										["counter"] = 2,
+										["total"] = 7,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -2246,7 +647,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -2257,65 +658,69 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 176.002923,
-							["start_time"] = 1705664303,
+							["damage_taken"] = 117.004227,
+							["start_time"] = 1705755152,
 							["delay"] = 0,
-							["last_event"] = 1705664307,
-						}, -- [2]
+							["last_event"] = 1705755154,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 427,
+					["combatId"] = 507,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 427,
+					["combatId"] = 507,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 427,
+					["combatId"] = 507,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["serial"] = "Player-5826-022A0869",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[425204] = {
-										["activedamt"] = 0,
-										["id"] = 425204,
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-								},
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 11,
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2326,7 +731,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 11,
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2334,17 +750,30 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 22,
-							["debuff_uptime"] = 9,
+							["buff_uptime"] = 20,
+							["grupo"] = true,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664311,
+							["last_event"] = 1705755156,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC1E1",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 427,
+					["combatId"] = 507,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2355,8 +784,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766767.88,
-				["tempo_start"] = 1705664300,
+				["CombatStartedAt"] = 875706.01,
+				["tempo_start"] = 1705755152,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -2368,7 +797,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					209, -- [1]
+					124, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2394,32 +823,36 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
 					["Dopemend"] = {
-						["Shoot"] = 5,
-						["Void Plague"] = 1,
+						["Penance"] = 3,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:38:31",
-				["pvp"] = true,
+				["data_fim"] = "13:52:36",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Surf Crawler",
+				["enemy"] = "Clattering Scorpid",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766762.08,
-				["CombatEndedAt"] = 766762.08,
+				["TotalElapsedCombatTime"] = 875635.786,
+				["CombatEndedAt"] = 875635.786,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:38:20",
-				["end_time"] = 766762.08,
-				["combat_id"] = 427,
+				["data_inicio"] = "13:52:32",
+				["end_time"] = 875635.786,
+				["combat_id"] = 507,
 				["frags"] = {
-					["Surf Crawler"] = 1,
+					["Clattering Scorpid"] = 1,
 				},
+				["combat_counter"] = 565,
 				["totals_grupo"] = {
-					176, -- [1]
+					117, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2454,40 +887,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 176.007076,
+							["Dopemend"] = 117.005599,
+							["Homunculus <Dopemend>"] = 28.007195,
 						}, -- [1]
 					},
 				},
-				["combat_counter"] = 485,
-				["start_time"] = 766750.88,
-				["TimeData"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [6]
+				["start_time"] = 875631.783,
+				["contra"] = "Clattering Scorpid",
+				["TimeData"] = {
+				},
+			}, -- [2]
 			{
 				{
-					["combatId"] = 426,
+					["combatId"] = 506,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002765,
+							["totalabsorbed"] = 0.001819,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 148.002765,
+							["total_without_pet"] = 86.001819,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 148.002765,
+							["total"] = 134.001819,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Makrura Clacker"] = true,
+								["Clattering Scorpid"] = true,
 							},
 							["targets"] = {
-								["Makrura Clacker"] = 148,
+								["Clattering Scorpid"] = 134,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -2495,7 +930,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664294,
+							["end_time"] = 1705755112,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
@@ -2504,74 +939,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 23,
 										["targets"] = {
-											["Makrura Clacker"] = 52,
+											["Clattering Scorpid"] = 45,
 										},
-										["n_total"] = 52,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 52,
-										["c_max"] = 0,
-										["id"] = 425204,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Makrura Clacker"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[589] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5,
-										["targets"] = {
-											["Makrura Clacker"] = 10,
-										},
-										["n_total"] = 10,
-										["n_min"] = 5,
+										["n_total"] = 45,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 10,
+										["total"] = 45,
 										["c_max"] = 0,
-										["id"] = 589,
+										["id"] = 425204,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["extra"] = {
@@ -2585,47 +963,19 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[402284] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Makrura Clacker"] = 56,
-										},
-										["n_total"] = 56,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = 402284,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[5019] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 22,
 										["targets"] = {
-											["Makrura Clacker"] = 30,
+											["Clattering Scorpid"] = 41,
 										},
-										["n_total"] = 30,
-										["n_min"] = 14,
+										["n_total"] = 41,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 30,
+										["total"] = 41,
 										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
@@ -2645,41 +995,41 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 17.93538111977511,
+							["last_dps"] = 16.56183648495281,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 8.002765,
-							["start_time"] = 1705664285,
+							["damage_taken"] = 22.001819,
+							["start_time"] = 1705755107,
 							["delay"] = 0,
-							["last_event"] = 1705664294,
+							["last_event"] = 1705755111,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003732,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.006211,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 8.003732,
+							["classe"] = "PET",
+							["total_without_pet"] = 48.006211,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 8.003732,
+							["total"] = 48.006211,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3103-00002A5EB2",
-							["aID"] = "3103",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC1E1",
+							["colocacao"] = 2,
+							["aID"] = "202391",
 							["damage_from"] = {
-								["Dopemend"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 8,
+								["Clattering Scorpid"] = 48,
 							},
-							["monster"] = true,
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664294,
-							["nome"] = "Makrura Clacker",
+							["end_time"] = 1705755112,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -2687,15 +1037,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 7,
 										["targets"] = {
-											["Dopemend"] = 8,
+											["Clattering Scorpid"] = 48,
 										},
-										["n_total"] = 8,
-										["n_min"] = 8,
+										["n_total"] = 48,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
+										["counter"] = 9,
+										["total"] = 48,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -2707,7 +1057,78 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 5.933285255210924,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006211,
+							["start_time"] = 1705755107,
+							["delay"] = 0,
+							["last_event"] = 1705755111,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007984,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 22.007984,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 22.007984,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3125-00002BC110",
+							["aID"] = "3125",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
+								["Dopemend"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 22,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705755112,
+							["nome"] = "Clattering Scorpid",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Dopemend"] = 22,
+										},
+										["n_total"] = 22,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -2718,27 +1139,27 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 148.003732,
-							["start_time"] = 1705664292,
+							["damage_taken"] = 134.007984,
+							["start_time"] = 1705755104,
 							["delay"] = 0,
-							["last_event"] = 1705664292,
-						}, -- [2]
+							["last_event"] = 1705755111,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 426,
+					["combatId"] = 506,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 426,
+					["combatId"] = 506,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 426,
+					["combatId"] = 506,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -2747,25 +1168,12 @@ _detalhes_database = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									[425204] = {
-										["activedamt"] = -1,
+										["activedamt"] = 0,
 										["id"] = 425204,
 										["targets"] = {
 										},
-										["actived_at"] = 1705664294,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[589] = {
-										["activedamt"] = -1,
-										["id"] = 589,
-										["targets"] = {
-										},
-										["actived_at"] = 1705664294,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["uptime"] = 6,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2776,6 +1184,7 @@ _detalhes_database = {
 							["buff_uptime_targets"] = {
 							},
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -2784,12 +1193,34 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2800,7 +1231,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2808,17 +1250,30 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 18,
-							["debuff_uptime"] = 0,
+							["buff_uptime"] = 40,
+							["debuff_uptime"] = 6,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664294,
+							["last_event"] = 1705755112,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC1E1",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 426,
+					["combatId"] = 506,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2829,8 +1284,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766749.63,
-				["tempo_start"] = 1705664285,
+				["CombatStartedAt"] = 875630.966,
+				["tempo_start"] = 1705755104,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -2869,31 +1324,37 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopemend"] = {
-						["Penance"] = 3,
-						["Shoot"] = 3,
+						["Homunculi"] = 1,
+						["Void Plague"] = 1,
+						["Shoot"] = 2,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:38:14",
+				["data_fim"] = "13:51:53",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Makrura Clacker",
+				["enemy"] = "Clattering Scorpid",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766745.497,
-				["CombatEndedAt"] = 766745.497,
+				["TotalElapsedCombatTime"] = 875592.584,
+				["CombatEndedAt"] = 875592.584,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:38:06",
-				["end_time"] = 766745.497,
-				["combat_id"] = 426,
+				["data_inicio"] = "13:51:45",
+				["end_time"] = 875592.584,
+				["combat_id"] = 506,
 				["frags"] = {
-					["Makrura Clacker"] = 1,
+					["Clattering Scorpid"] = 1,
 				},
-				["combat_counter"] = 484,
+				["combat_counter"] = 564,
 				["totals_grupo"] = {
-					148, -- [1]
+					134, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2928,40 +1389,44 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 148.002765,
+							["Dopemend"] = 134.001819,
+							["Homunculus <Dopemend>"] = 48.006211,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766737.245,
-				["contra"] = "Makrura Clacker",
+				["start_time"] = 875584.493,
+				["contra"] = "Clattering Scorpid",
 				["TimeData"] = {
 				},
-			}, -- [7]
+			}, -- [3]
 			{
 				{
-					["combatId"] = 425,
+					["combatId"] = 505,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005107,
+							["totalabsorbed"] = 0.003347,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 168.005107,
+							["total_without_pet"] = 153.003347,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 168.005107,
+							["total"] = 176.003347,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Makrura Clacker"] = true,
+								["Environment (Falling)"] = true,
+								["Razormane Battleguard"] = true,
+								["Environment (Fire)"] = true,
 							},
 							["targets"] = {
-								["Makrura Clacker"] = 168,
+								["Razormane Battleguard"] = 176,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -2969,57 +1434,28 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664261,
+							["end_time"] = 1705754916,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Makrura Clacker"] = 168,
-										},
-										["n_total"] = 149,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 168,
-										["c_max"] = 19,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 19,
-										["successful_casted"] = 0,
-										["c_total"] = 19,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2] = {
+									[589] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 5,
 										["targets"] = {
-											["Makrura Clacker"] = 0,
+											["Razormane Battleguard"] = 10,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
+										["n_total"] = 10,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 2,
+										["total"] = 10,
 										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 2,
+										["id"] = 589,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 32,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -3027,7 +1463,91 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Battleguard"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Razormane Battleguard"] = 38,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 38,
+										["c_max"] = 24,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 24,
+										["successful_casted"] = 0,
+										["c_total"] = 24,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Razormane Battleguard"] = 65,
+										},
+										["n_total"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3035,41 +1555,114 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 10.23360583540464,
+							["last_dps"] = 22.50106711825813,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 52.005107,
-							["start_time"] = 1705664245,
+							["damage_taken"] = 110.003347,
+							["start_time"] = 1705754908,
 							["delay"] = 0,
-							["last_event"] = 1705664261,
+							["last_event"] = 1705754915,
 						}, -- [1]
 						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002801,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 23.002801,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 23.002801,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202390-00002BC0E0",
+							["colocacao"] = 2,
+							["aID"] = "202390",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Battleguard"] = 23,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754916,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Battleguard"] = 23,
+										},
+										["n_total"] = 13,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["BLOCK"] = 1,
+										["total"] = 23,
+										["c_max"] = 10,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 10,
+										["successful_casted"] = 0,
+										["c_total"] = 10,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.940782536419237,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002801,
+							["start_time"] = 1705754913,
+							["delay"] = 0,
+							["last_event"] = 1705754915,
+						}, -- [2]
+						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 31.008278,
+							["totalabsorbed"] = 31.00488,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 52.008278,
+							["total_without_pet"] = 31.00488,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 52.008278,
+							["total"] = 31.00488,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3103-00002A5E00",
-							["aID"] = "3103",
+							["serial"] = "Creature-0-5209-1-4594-3114-00002BC10B",
+							["aID"] = "3114",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 52,
+								["Dopemend"] = 31,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664261,
-							["nome"] = "Makrura Clacker",
+							["end_time"] = 1705754916,
+							["nome"] = "Razormane Battleguard",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -3077,15 +1670,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 11,
+										["n_max"] = 12,
 										["targets"] = {
-											["Dopemend"] = 52,
+											["Dopemend"] = 31,
 										},
-										["n_total"] = 52,
-										["n_min"] = 10,
+										["n_total"] = 31,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 52,
+										["counter"] = 3,
+										["total"] = 31,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3097,7 +1690,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -3108,15 +1701,15 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 168.008278,
-							["start_time"] = 1705664250,
+							["damage_taken"] = 176.00488,
+							["start_time"] = 1705754910,
 							["delay"] = 0,
-							["last_event"] = 1705664258,
-						}, -- [2]
+							["last_event"] = 1705754914,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 425,
+					["combatId"] = 505,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -3125,17 +1718,17 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.0046,
-							["total_without_pet"] = 31.0046,
-							["total"] = 31.0046,
+							["totalover"] = 0.007008,
+							["total_without_pet"] = 31.007008,
+							["total"] = 31.007008,
 							["targets_absorbs"] = {
 								["Dopemend"] = 31,
 							},
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
-							["totalabsorb"] = 31.0046,
-							["last_hps"] = 1.88856672960773,
+							["totalabsorb"] = 31.007008,
+							["last_hps"] = 3.96407670670244,
 							["aID"] = "5826-022A0869",
 							["fight_component"] = true,
 							["targets"] = {
@@ -3143,17 +1736,17 @@ _detalhes_database = {
 							},
 							["serial"] = "Player-5826-022A0869",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.0046,
+							["totalover_without_pet"] = 0.007008,
 							["healing_from"] = {
 								["Dopemend"] = true,
 							},
-							["healing_taken"] = 31.0046,
+							["healing_taken"] = 31.007008,
 							["grupo"] = true,
 							["classe"] = "PRIEST",
-							["end_time"] = 1705664261,
+							["end_time"] = 1705754916,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1705664254,
+							["start_time"] = 1705754910,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 3,
@@ -3163,12 +1756,12 @@ _detalhes_database = {
 										["totalabsorb"] = 31,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 11,
+										["n_max"] = 12,
 										["targets"] = {
 											["Dopemend"] = 31,
 										},
 										["n_total"] = 31,
-										["n_min"] = 10,
+										["n_min"] = 8,
 										["counter"] = 3,
 										["overheal"] = 0,
 										["total"] = 31,
@@ -3188,21 +1781,21 @@ _detalhes_database = {
 								},
 							},
 							["custom"] = 0,
-							["last_event"] = 1705664258,
-							["totaldenied"] = 0.0046,
+							["last_event"] = 1705754914,
+							["totaldenied"] = 0.007008,
 							["delay"] = 0,
 							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 425,
+					["combatId"] = 505,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 425,
+					["combatId"] = 505,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3211,13 +1804,26 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[6788] = {
-										["activedamt"] = 1,
-										["id"] = 6788,
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
 										["targets"] = {
 										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["actived_at"] = 1705754915,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[589] = {
+										["activedamt"] = -1,
+										["id"] = 589,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754915,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -3227,6 +1833,7 @@ _detalhes_database = {
 							["buff_uptime_targets"] = {
 							},
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["fight_component"] = true,
 							["debuff_uptime_targets"] = {
@@ -3236,28 +1843,6 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[17] = {
 										["activedamt"] = 1,
 										["id"] = 17,
@@ -3269,19 +1854,87 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["activedamt"] = 1,
+										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["activedamt"] = 1,
+										["id"] = 1243,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 								},
 							},
-							["buff_uptime"] = 40,
-							["debuff_uptime"] = 8,
+							["buff_uptime"] = 48,
+							["debuff_uptime"] = 0,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664261,
+							["last_event"] = 1705754916,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 425,
+					["combatId"] = 505,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3292,8 +1945,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766734.1460000001,
-				["tempo_start"] = 1705664245,
+				["CombatStartedAt"] = 875582.877,
+				["tempo_start"] = 1705754908,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3305,7 +1958,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					396, -- [1]
+					328, -- [1]
 					31, -- [2]
 					{
 						0, -- [1]
@@ -3328,35 +1981,137 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
+					["Dopemend"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							36, -- [3]
+							1705754986.69, -- [4]
+							217, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							31, -- [3]
+							1705754997.132, -- [4]
+							217, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							6, -- [2]
+							12, -- [3]
+							1705754998.934, -- [4]
+							193, -- [5]
+							"Environment (Fire)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 4,
+					},
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopemend"] = {
-						["Shoot"] = 9,
-						["Power Word: Shield"] = 1,
+						["Penance"] = 2,
+						["Shoot"] = 3,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:37:42",
+				["data_fim"] = "13:48:37",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Makrura Clacker",
+				["enemy"] = "Razormane Battleguard",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766713.4450000001,
-				["CombatEndedAt"] = 766713.4450000001,
+				["TotalElapsedCombatTime"] = 875396.356,
+				["CombatEndedAt"] = 875396.356,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:37:26",
-				["end_time"] = 766713.4450000001,
-				["combat_id"] = 425,
+				["data_inicio"] = "13:48:29",
+				["end_time"] = 875396.356,
+				["combat_id"] = 505,
 				["frags"] = {
-					["Makrura Clacker"] = 1,
+					["Razormane Battleguard"] = 1,
 				},
-				["combat_counter"] = 483,
+				["combat_counter"] = 563,
 				["totals_grupo"] = {
-					168, -- [1]
+					176, -- [1]
 					31, -- [2]
 					{
 						0, -- [1]
@@ -3385,47 +2140,49 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Dopemend"] = 31.0046,
+							["Dopemend"] = 31.007008,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 168.005107,
+							["Dopemend"] = 176.003347,
+							["Homunculus <Dopemend>"] = 23.002801,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766697.028,
-				["contra"] = "Makrura Clacker",
+				["start_time"] = 875388.534,
+				["contra"] = "Razormane Battleguard",
 				["TimeData"] = {
 				},
-			}, -- [8]
+			}, -- [4]
 			{
 				{
-					["combatId"] = 424,
+					["combatId"] = 504,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003216,
+							["totalabsorbed"] = 0.00513,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 133.003216,
+							["total_without_pet"] = 176.00513,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 133.003216,
+							["total"] = 255.00513,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Pygmy Surf Crawler"] = true,
+								["Razormane Battleguard"] = true,
 							},
 							["targets"] = {
-								["Pygmy Surf Crawler"] = 133,
+								["Razormane Battleguard"] = 255,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -3433,24 +2190,52 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664127,
+							["end_time"] = 1705754908,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Battleguard"] = 80,
+										},
+										["n_total"] = 80,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[5019] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["n_max"] = 22,
 										["targets"] = {
-											["Pygmy Surf Crawler"] = 133,
+											["Razormane Battleguard"] = 91,
 										},
-										["n_total"] = 133,
-										["n_min"] = 12,
+										["n_total"] = 91,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 133,
+										["counter"] = 5,
+										["total"] = 91,
 										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
@@ -3462,7 +2247,35 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[589] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Battleguard"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3470,40 +2283,116 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 13.50012342677665,
+							["last_dps"] = 21.05914030876562,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 25.003216,
-							["start_time"] = 1705664117,
+							["damage_taken"] = 35.00513,
+							["start_time"] = 1705754889,
 							["delay"] = 0,
-							["last_event"] = 1705664126,
+							["last_event"] = 1705754908,
 						}, -- [1]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.00759,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.008655,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 25.00759,
+							["classe"] = "PET",
+							["total_without_pet"] = 79.008655,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 25.00759,
+							["total"] = 79.008655,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3106-0000AA59CD",
-							["aID"] = "3106",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["colocacao"] = 2,
+							["aID"] = "202391",
 							["damage_from"] = {
-								["Dopemend"] = true,
+								["Razormane Battleguard"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 25,
+								["Razormane Battleguard"] = 79,
 							},
-							["fight_component"] = true,
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664127,
-							["nome"] = "Pygmy Surf Crawler",
+							["end_time"] = 1705754901,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 5,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Battleguard"] = 79,
+										},
+										["n_total"] = 48,
+										["n_min"] = 4,
+										["g_dmg"] = 21,
+										["counter"] = 18,
+										["MISS"] = 1,
+										["total"] = 79,
+										["c_max"] = 10,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 10,
+										["successful_casted"] = 0,
+										["c_total"] = 10,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 6.524787761139771,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 11.008655,
+							["start_time"] = 1705754889,
+							["delay"] = 0,
+							["last_event"] = 1705754900,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004895,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 46.004895,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 46.004895,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3114-00002BC100",
+							["aID"] = "3114",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
+								["Dopemend"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 35,
+								["Homunculus <Dopemend>"] = 11,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754901,
+							["nome"] = "Razormane Battleguard",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -3511,17 +2400,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 13,
 										["targets"] = {
-											["Dopemend"] = 25,
+											["Dopemend"] = 35,
+											["Homunculus <Dopemend>"] = 11,
 										},
-										["n_total"] = 25,
-										["n_min"] = 7,
+										["n_total"] = 46,
+										["n_min"] = 10,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 25,
+										["total"] = 46,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -3532,10 +2421,36 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[3248] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 3248,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
@@ -3543,46 +2458,89 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 133.00759,
-							["start_time"] = 1705664119,
+							["damage_taken"] = 255.004895,
+							["start_time"] = 1705754889,
 							["delay"] = 0,
-							["last_event"] = 1705664125,
-						}, -- [2]
+							["last_event"] = 1705754897,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 424,
+					["combatId"] = 504,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 424,
+					["combatId"] = 504,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 424,
+					["combatId"] = 504,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754900,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-5826-022A0869",
 							["buff_uptime_targets"] = {
 							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
 							["classe"] = "PRIEST",
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 12,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3593,7 +2551,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 12,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3601,17 +2570,43 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 20,
-							["grupo"] = true,
+							["buff_uptime"] = 60,
+							["debuff_uptime"] = 0,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664127,
+							["last_event"] = 1705754901,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3114-00002BC100",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3114",
+							["nome"] = "Razormane Battleguard",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 424,
+					["combatId"] = 504,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3622,8 +2617,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766695.41,
-				["tempo_start"] = 1705664117,
+				["CombatStartedAt"] = 875381.811,
+				["tempo_start"] = 1705754889,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3635,7 +2630,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					395, -- [1]
+					301, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3664,28 +2659,36 @@ _detalhes_database = {
 					["Dopemend"] = {
 						["Shoot"] = 6,
 					},
+					["Razormane Battleguard"] = {
+						["Improved Blocking"] = 1,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:35:27",
-				["pvp"] = true,
+				["data_fim"] = "13:48:22",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Pygmy Surf Crawler",
+				["enemy"] = "Razormane Battleguard",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766578.157,
-				["CombatEndedAt"] = 766578.157,
+				["TotalElapsedCombatTime"] = 875381.41,
+				["CombatEndedAt"] = 875381.41,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:35:17",
-				["end_time"] = 766578.157,
-				["combat_id"] = 424,
+				["data_inicio"] = "13:48:10",
+				["end_time"] = 875381.41,
+				["combat_id"] = 504,
 				["frags"] = {
-					["Pygmy Surf Crawler"] = 1,
+					["Razormane Battleguard"] = 1,
 				},
+				["combat_counter"] = 562,
 				["totals_grupo"] = {
-					133, -- [1]
+					255, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3720,40 +2723,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 133.003216,
+							["Dopemend"] = 230.00513,
+							["Homunculus <Dopemend>"] = 79.008655,
 						}, -- [1]
 					},
 				},
-				["combat_counter"] = 482,
-				["start_time"] = 766568.305,
-				["TimeData"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [9]
+				["start_time"] = 875369.301,
+				["contra"] = "Razormane Battleguard",
+				["TimeData"] = {
+				},
+			}, -- [5]
 			{
 				{
-					["combatId"] = 423,
+					["combatId"] = 503,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005952,
+							["totalabsorbed"] = 0.004146,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 113.005952,
+							["total_without_pet"] = 158.004146,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 113.005952,
+							["total"] = 184.004146,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Pygmy Surf Crawler"] = true,
+								["Razormane Battleguard"] = true,
 							},
 							["targets"] = {
-								["Pygmy Surf Crawler"] = 113,
+								["Razormane Battleguard"] = 184,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -3761,7 +2766,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664095,
+							["end_time"] = 1705754873,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
@@ -3770,15 +2775,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22,
+										["n_max"] = 21,
 										["targets"] = {
-											["Pygmy Surf Crawler"] = 113,
+											["Razormane Battleguard"] = 118,
 										},
-										["n_total"] = 113,
-										["n_min"] = 14,
+										["n_total"] = 118,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 113,
+										["counter"] = 7,
+										["total"] = 118,
 										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
@@ -3790,26 +2795,96 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 7,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[2] = {
+									[425204] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 20,
 										["targets"] = {
-											["Pygmy Surf Crawler"] = 0,
+											["Razormane Battleguard"] = 40,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
+										["n_total"] = 40,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 2,
+										["total"] = 40,
 										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 2,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 18.95386753196334,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 34.004146,
+							["start_time"] = 1705754863,
+							["delay"] = 0,
+							["last_event"] = 1705754872,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.008367,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 26.008367,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 26.008367,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Battleguard"] = 26,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754873,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["g_amt"] = 3,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Battleguard"] = 26,
+										},
+										["n_total"] = 13,
+										["n_min"] = 1,
+										["g_dmg"] = 13,
+										["counter"] = 9,
+										["total"] = 26,
+										["c_max"] = 0,
+										["BLOCK"] = 1,
+										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
@@ -3819,48 +2894,50 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 2,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 13.95135209880554,
+							["last_dps"] = 2.679065409975527,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 16.005952,
-							["start_time"] = 1705664087,
+							["damage_taken"] = 0.008367,
+							["start_time"] = 1705754866,
 							["delay"] = 0,
-							["last_event"] = 1705664116,
-						}, -- [1]
+							["last_event"] = 1705754870,
+						}, -- [2]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.005717,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005691,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 16.005717,
+							["total_without_pet"] = 34.005691,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 16.005717,
+							["total"] = 34.005691,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3106-00002A5E0B",
-							["aID"] = "3106",
+							["serial"] = "Creature-0-5209-1-4594-3114-00002BBFE6",
+							["aID"] = "3114",
+							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 16,
+								["Dopemend"] = 34,
 							},
-							["fight_component"] = true,
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664095,
-							["nome"] = "Pygmy Surf Crawler",
+							["end_time"] = 1705754873,
+							["nome"] = "Razormane Battleguard",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -3868,15 +2945,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 14,
 										["targets"] = {
-											["Dopemend"] = 16,
+											["Dopemend"] = 34,
 										},
-										["n_total"] = 16,
-										["n_min"] = 5,
+										["n_total"] = 34,
+										["n_min"] = 10,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 16,
+										["total"] = 34,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3892,6 +2969,32 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[3248] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 3248,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
@@ -3899,43 +3002,1346 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 113.005717,
-							["start_time"] = 1705664090,
+							["damage_taken"] = 184.005691,
+							["start_time"] = 1705754865,
 							["delay"] = 0,
-							["last_event"] = 1705664094,
-						}, -- [2]
+							["last_event"] = 1705754870,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 423,
+					["combatId"] = 503,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 423,
+					["combatId"] = 503,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 423,
+					["combatId"] = 503,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754872,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-5826-022A0869",
 							["buff_uptime_targets"] = {
 							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
 							["classe"] = "PRIEST",
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["activedamt"] = 1,
+										["id"] = 1243,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 50,
+							["debuff_uptime"] = 0,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["last_event"] = 1705754873,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3114-00002BBFE6",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3114",
+							["nome"] = "Razormane Battleguard",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 503,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 875368.733,
+				["tempo_start"] = 1705754863,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					218, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Razormane Battleguard"] = {
+						["Improved Blocking"] = 1,
+					},
+					["Dopemend"] = {
+						["Shoot"] = 6,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:47:54",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Battleguard",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 875353.087,
+				["CombatEndedAt"] = 875353.087,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "13:47:44",
+				["end_time"] = 875353.087,
+				["combat_id"] = 503,
+				["frags"] = {
+					["Razormane Battleguard"] = 1,
+				},
+				["combat_counter"] = 561,
+				["totals_grupo"] = {
+					184, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 184.004146,
+							["Homunculus <Dopemend>"] = 26.008367,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 875343.3790000001,
+				["contra"] = "Razormane Battleguard",
+				["TimeData"] = {
+				},
+			}, -- [6]
+			{
+				{
+					["combatId"] = 502,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007711,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 170.007711,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 206.007711,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Razormane Dustrunner"] = true,
+							},
+							["targets"] = {
+								["Razormane Battleguard"] = 20,
+								["Razormane Dustrunner"] = 186,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-022A0869",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754863,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Razormane Dustrunner"] = 90,
+										},
+										["n_total"] = 64,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 90,
+										["c_max"] = 26,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 26,
+										["successful_casted"] = 0,
+										["c_total"] = 26,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Battleguard"] = 20,
+											["Razormane Dustrunner"] = 60,
+										},
+										["n_total"] = 80,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 19.02892184161352,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 26.007711,
+							["start_time"] = 1705754846,
+							["delay"] = 0,
+							["last_event"] = 1705754863,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.007766,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 36.007766,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 36.007766,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Dustrunner"] = 36,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754856,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 6,
+										["targets"] = {
+											["Razormane Dustrunner"] = 36,
+										},
+										["n_total"] = 31,
+										["n_min"] = 4,
+										["g_dmg"] = 5,
+										["counter"] = 9,
+										["DODGE"] = 1,
+										["total"] = 36,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.683658925866299,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007766,
+							["start_time"] = 1705754850,
+							["delay"] = 0,
+							["last_event"] = 1705754854,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 26.006287,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 26.006287,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 26.006287,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBFAD",
+							["aID"] = "3113",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 26,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754856,
+							["nome"] = "Razormane Dustrunner",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopemend"] = 26,
+										},
+										["n_total"] = 26,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[774] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 774,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 186.006287,
+							["start_time"] = 1705754850,
+							["delay"] = 0,
+							["last_event"] = 1705754854,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 502,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.004493,
+							["total_without_pet"] = 26.004493,
+							["total"] = 26.004493,
+							["targets_absorbs"] = {
+								["Dopemend"] = 26,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 26.004493,
+							["last_hps"] = 2.660306189283658,
+							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["targets"] = {
+								["Dopemend"] = 26,
+							},
+							["serial"] = "Player-5826-022A0869",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.004493,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["healing_taken"] = 26.004493,
+							["grupo"] = true,
+							["classe"] = "PRIEST",
+							["end_time"] = 1705754856,
+							["targets_overheal"] = {
+							},
+							["start_time"] = 1705754850,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 26,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopemend"] = 26,
+										},
+										["n_total"] = 26,
+										["n_min"] = 7,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 26,
+										},
+										["spellschool"] = 2,
+										["c_min"] = 0,
+										["n_amt"] = 3,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1705754854,
+							["totaldenied"] = 0.004493,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 502,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 502,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-5826-022A0869",
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754855,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PRIEST",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17] = {
+										["activedamt"] = 1,
+										["id"] = 17,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["activedamt"] = 1,
+										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["activedamt"] = 1,
+										["id"] = 1243,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 68,
+							["debuff_uptime"] = 0,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["last_event"] = 1705754856,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBFAD",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3113",
+							["nome"] = "Razormane Dustrunner",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC0E0",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 502,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 875340.426,
+				["tempo_start"] = 1705754846,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					232, -- [1]
+					26, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopemend"] = {
+						["Shoot"] = 4,
+						["Homunculi"] = 1,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:47:37",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Dustrunner",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 875336.09,
+				["CombatEndedAt"] = 875336.09,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "13:47:27",
+				["end_time"] = 875336.09,
+				["combat_id"] = 502,
+				["frags"] = {
+					["Razormane Dustrunner"] = 1,
+					["Homunculus"] = 3,
+				},
+				["combat_counter"] = 560,
+				["totals_grupo"] = {
+					206, -- [1]
+					26, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Dopemend"] = 26.004493,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 186.007711,
+							["Homunculus <Dopemend>"] = 36.007766,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 875326.3150000001,
+				["contra"] = "Razormane Dustrunner",
+				["TimeData"] = {
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 501,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006796,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 163.006796,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 202.006796,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Razormane Dustrunner"] = true,
+							},
+							["targets"] = {
+								["Razormane Dustrunner"] = 202,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-022A0869",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754846,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Razormane Dustrunner"] = 103,
+										},
+										["n_total"] = 103,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Dustrunner"] = 60,
+										},
+										["n_total"] = 60,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 24.61696271019528,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 19.006796,
+							["start_time"] = 1705754831,
+							["delay"] = 0,
+							["last_event"] = 1705754846,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.00101,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 39.00101,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 39.00101,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Dustrunner"] = 39,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754839,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 3,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Dustrunner"] = 39,
+										},
+										["n_total"] = 23,
+										["n_min"] = 4,
+										["g_dmg"] = 16,
+										["counter"] = 9,
+										["total"] = 39,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 4.752743114790817,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.00101,
+							["start_time"] = 1705754835,
+							["delay"] = 0,
+							["last_event"] = 1705754839,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 19.002715,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 19.002715,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 19.002715,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBB49",
+							["aID"] = "3113",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 19,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754839,
+							["nome"] = "Razormane Dustrunner",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopemend"] = 19,
+										},
+										["n_total"] = 19,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 19,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 202.002715,
+							["start_time"] = 1705754833,
+							["delay"] = 0,
+							["last_event"] = 1705754837,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 501,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.003043,
+							["total_without_pet"] = 19.003043,
+							["total"] = 19.003043,
+							["targets_absorbs"] = {
+								["Dopemend"] = 19,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 19.003043,
+							["last_hps"] = 2.315749817205345,
+							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["targets"] = {
+								["Dopemend"] = 19,
+							},
+							["serial"] = "Player-5826-022A0869",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.003043,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["healing_taken"] = 19.003043,
+							["grupo"] = true,
+							["classe"] = "PRIEST",
+							["end_time"] = 1705754839,
+							["targets_overheal"] = {
+							},
+							["start_time"] = 1705754833,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 19,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopemend"] = 19,
+										},
+										["n_total"] = 19,
+										["n_min"] = 8,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 19,
+										},
+										["spellschool"] = 2,
+										["c_min"] = 0,
+										["n_amt"] = 2,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1705754837,
+							["totaldenied"] = 0.003043,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 501,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 501,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-5826-022A0869",
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754839,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PRIEST",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17] = {
+										["activedamt"] = 1,
+										["id"] = 17,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["activedamt"] = 1,
+										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
 										["targets"] = {
 										},
 										["uptime"] = 8,
@@ -3955,19 +4361,43 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 								},
 							},
-							["buff_uptime"] = 16,
-							["grupo"] = true,
+							["buff_uptime"] = 56,
+							["debuff_uptime"] = 0,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664095,
+							["last_event"] = 1705754839,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 423,
+					["combatId"] = 501,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3978,8 +4408,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766565.839,
-				["tempo_start"] = 1705664087,
+				["CombatStartedAt"] = 875322.745,
+				["tempo_start"] = 1705754831,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3991,8 +4421,8 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					141, -- [1]
-					0, -- [2]
+					221, -- [1]
+					19, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4020,29 +4450,34 @@ _detalhes_database = {
 					["Dopemend"] = {
 						["Shoot"] = 5,
 					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:34:55",
-				["pvp"] = true,
+				["data_fim"] = "13:47:20",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Pygmy Surf Crawler",
+				["enemy"] = "Razormane Dustrunner",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766546.154,
-				["CombatEndedAt"] = 766546.154,
+				["TotalElapsedCombatTime"] = 875319.0920000001,
+				["CombatEndedAt"] = 875319.0920000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:34:47",
-				["end_time"] = 766546.154,
-				["combat_id"] = 423,
+				["data_inicio"] = "13:47:11",
+				["end_time"] = 875319.0920000001,
+				["combat_id"] = 501,
 				["frags"] = {
-					["Pygmy Surf Crawler"] = 1,
+					["Razormane Dustrunner"] = 1,
 				},
+				["combat_counter"] = 559,
 				["totals_grupo"] = {
-					113, -- [1]
-					0, -- [2]
+					202, -- [1]
+					19, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4070,46 +4505,51 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Dopemend"] = 19.003043,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 113.005952,
+							["Dopemend"] = 182.006796,
+							["Homunculus <Dopemend>"] = 39.00101,
 						}, -- [1]
 					},
 				},
-				["combat_counter"] = 481,
-				["start_time"] = 766538.054,
-				["TimeData"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [10]
+				["start_time"] = 875310.886,
+				["contra"] = "Razormane Dustrunner",
+				["TimeData"] = {
+				},
+			}, -- [8]
 			{
 				{
-					["combatId"] = 422,
+					["combatId"] = 500,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003068,
+							["totalabsorbed"] = 0.008733,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 159.003068,
+							["total_without_pet"] = 382.008733,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 159.003068,
+							["total"] = 439.008733,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Makrura Shellhide"] = true,
+								["Razormane Battleguard"] = true,
+								["Razormane Dustrunner"] = true,
 							},
 							["targets"] = {
-								["Makrura Shellhide"] = 159,
+								["Razormane Battleguard"] = 214,
+								["Razormane Dustrunner"] = 225,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -4117,1042 +4557,26 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664082,
+							["end_time"] = 1705754831,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									[5019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Makrura Shellhide"] = 159,
-										},
-										["n_total"] = 133,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 159,
-										["c_max"] = 26,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 26,
-										["successful_casted"] = 0,
-										["c_total"] = 26,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2] = {
 										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Makrura Shellhide"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["RESIST"] = 2,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 9.96821942197923,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 47.003068,
-							["start_time"] = 1705664066,
-							["delay"] = 0,
-							["last_event"] = 1705664081,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007118,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 47.007118,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 47.007118,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3104-00002A5D4F",
-							["aID"] = "3104",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopemend"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 47,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664082,
-							["nome"] = "Makrura Shellhide",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Dopemend"] = 47,
-										},
-										["n_total"] = 47,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 47,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 159.007118,
-							["start_time"] = 1705664070,
-							["delay"] = 0,
-							["last_event"] = 1705664080,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 422,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 422,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 422,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 32,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664082,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 422,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766537.221,
-				["tempo_start"] = 1705664066,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					221, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 10,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:34:43",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Makrura Shellhide",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766534.487,
-				["CombatEndedAt"] = 766534.487,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:34:27",
-				["end_time"] = 766534.487,
-				["combat_id"] = 422,
-				["frags"] = {
-					["Makrura Shellhide"] = 1,
-					["Pygmy Surf Crawler"] = 1,
-				},
-				["combat_counter"] = 480,
-				["totals_grupo"] = {
-					159, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 159.003068,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 766518.536,
-				["contra"] = "Makrura Shellhide",
-				["TimeData"] = {
-				},
-			}, -- [11]
-			{
-				{
-					["combatId"] = 421,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006854,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 122.006854,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 122.006854,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Pygmy Surf Crawler"] = true,
-							},
-							["targets"] = {
-								["Pygmy Surf Crawler"] = 122,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664056,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 21,
 										["targets"] = {
-											["Pygmy Surf Crawler"] = 122,
+											["Razormane Battleguard"] = 57,
+											["Razormane Dustrunner"] = 146,
 										},
-										["n_total"] = 101,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 122,
-										["c_max"] = 21,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 21,
-										["successful_casted"] = 0,
-										["c_total"] = 21,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 12.47131288963777,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 6.006854,
-							["start_time"] = 1705664046,
-							["delay"] = 0,
-							["last_event"] = 1705664054,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004188,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 16.004188,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.004188,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3106-00012A5E00",
-							["aID"] = "3106",
-							["damage_from"] = {
-								["Dopemend"] = true,
-								["Kipas"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 6,
-								["Kipas"] = 10,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664066,
-							["nome"] = "Pygmy Surf Crawler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Dopemend"] = 6,
-											["Kipas"] = 10,
-										},
-										["n_total"] = 16,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 16,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 137.004188,
-							["start_time"] = 1705664052,
-							["delay"] = 0,
-							["last_event"] = 1705664066,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 421,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 421,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 421,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 20,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664056,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 421,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766517.304,
-				["tempo_start"] = 1705664046,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					153, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 6,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:34:17",
-				["pvp"] = true,
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Pygmy Surf Crawler",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766507.685,
-				["CombatEndedAt"] = 766507.685,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:34:07",
-				["end_time"] = 766507.685,
-				["combat_id"] = 421,
-				["frags"] = {
-					["Pygmy Surf Crawler"] = 1,
-				},
-				["totals_grupo"] = {
-					122, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 122.006854,
-						}, -- [1]
-					},
-				},
-				["combat_counter"] = 479,
-				["start_time"] = 766497.902,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [12]
-			{
-				{
-					["combatId"] = 420,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007376,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 147.007376,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 147.007376,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Pygmy Surf Crawler"] = true,
-							},
-							["targets"] = {
-								["Pygmy Surf Crawler"] = 147,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664043,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Pygmy Surf Crawler"] = 147,
-										},
-										["n_total"] = 123,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 147,
-										["c_max"] = 24,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 24,
-										["successful_casted"] = 0,
-										["c_total"] = 24,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 12.91350808156123,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 24.007376,
-							["start_time"] = 1705664031,
-							["delay"] = 0,
-							["last_event"] = 1705664041,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.007638,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 24.007638,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 24.007638,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3106-00002A5DE6",
-							["aID"] = "3106",
-							["damage_from"] = {
-								["Dopemend"] = true,
-							},
-							["targets"] = {
-								["Dopemend"] = 24,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664043,
-							["nome"] = "Pygmy Surf Crawler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Dopemend"] = 24,
-										},
-										["n_total"] = 24,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 147.007638,
-							["start_time"] = 1705664035,
-							["delay"] = 0,
-							["last_event"] = 1705664039,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 420,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 420,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 420,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 24,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705664043,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 420,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766496.502,
-				["tempo_start"] = 1705664031,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					171, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 7,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:34:04",
-				["pvp"] = true,
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Pygmy Surf Crawler",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766494.786,
-				["CombatEndedAt"] = 766494.786,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:33:52",
-				["end_time"] = 766494.786,
-				["combat_id"] = 420,
-				["frags"] = {
-					["Pygmy Surf Crawler"] = 1,
-				},
-				["totals_grupo"] = {
-					147, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 147.007376,
-						}, -- [1]
-					},
-				},
-				["combat_counter"] = 478,
-				["start_time"] = 766483.402,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [13]
-			{
-				{
-					["combatId"] = 419,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003693,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 169.003693,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 169.003693,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Kolkar Drudge"] = true,
-							},
-							["targets"] = {
-								["Kolkar Drudge"] = 169,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705664022,
-							["nome"] = "Dopemend",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Kolkar Drudge"] = 169,
-										},
-										["n_total"] = 147,
+										["n_total"] = 203,
 										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 169,
-										["c_max"] = 22,
+										["counter"] = 12,
+										["total"] = 203,
+										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5160,37 +4584,209 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 22,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 22,
+										["c_total"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Battleguard"] = 100,
+											["Razormane Dustrunner"] = 79,
+										},
+										["n_total"] = 179,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 179,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
 										["n_amt"] = 9,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[2] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 18.45690833412276,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 133.008733,
+							["start_time"] = 1705754803,
+							["delay"] = 0,
+							["last_event"] = 1705754831,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.001443,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 57.001443,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 57.001443,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Battleguard"] = 57,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754824,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
+										["g_amt"] = 5,
+										["n_max"] = 6,
 										["targets"] = {
-											["Kolkar Drudge"] = 0,
+											["Razormane Battleguard"] = 57,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["n_total"] = 40,
+										["MISS"] = 1,
+										["a_amt"] = 0,
+										["n_min"] = 4,
+										["g_dmg"] = 17,
+										["counter"] = 24,
+										["DODGE"] = 2,
+										["total"] = 57,
 										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 2,
+										["BLOCK"] = 5,
+										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 3,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.510855563394005,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001443,
+							["start_time"] = 1705754805,
+							["delay"] = 0,
+							["last_event"] = 1705754819,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.003057,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 100.003057,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 100.003057,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3114-0001ABA78D",
+							["aID"] = "3114",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 100,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754824,
+							["nome"] = "Razormane Battleguard",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Dopemend"] = 100,
+										},
+										["n_total"] = 100,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 100,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 13,
+										["a_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3248] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 3248,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
 										["b_dmg"] = 0,
@@ -5200,41 +4796,41 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 11.26691286666667,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 53.003693,
-							["start_time"] = 1705664007,
+							["damage_taken"] = 214.003057,
+							["start_time"] = 1705754801,
 							["delay"] = 0,
-							["last_event"] = 1705664021,
-						}, -- [1]
+							["last_event"] = 1705754820,
+						}, -- [3]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008779,
+							["totalabsorbed"] = 0.008899,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 53.008779,
+							["total_without_pet"] = 33.008899,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 53.008779,
+							["total"] = 33.008899,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3119-0000AA5DBC",
-							["aID"] = "3119",
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBFC1",
+							["aID"] = "3113",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopemend"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 53,
+								["Dopemend"] = 33,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705664022,
-							["nome"] = "Kolkar Drudge",
+							["end_time"] = 1705754824,
+							["nome"] = "Razormane Dustrunner",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -5242,16 +4838,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 11,
+										["n_max"] = 12,
 										["targets"] = {
-											["Dopemend"] = 53,
+											["Dopemend"] = 33,
 										},
-										["n_total"] = 53,
+										["n_total"] = 33,
 										["n_min"] = 10,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 53,
+										["counter"] = 4,
+										["total"] = 33,
 										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5262,10 +4859,36 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[774] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 774,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
@@ -5273,46 +4896,186 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 169.008779,
-							["start_time"] = 1705664010,
+							["damage_taken"] = 225.008899,
+							["start_time"] = 1705754807,
 							["delay"] = 0,
-							["last_event"] = 1705664018,
-						}, -- [2]
+							["last_event"] = 1705754815,
+						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 419,
+					["combatId"] = 500,
 					["tipo"] = 3,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.007398,
+							["total_without_pet"] = 23.007398,
+							["total"] = 23.007398,
+							["targets_absorbs"] = {
+								["Dopemend"] = 23,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 23.007398,
+							["last_hps"] = 1.013452471150952,
+							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["targets"] = {
+								["Dopemend"] = 23,
+							},
+							["serial"] = "Player-5826-022A0869",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.007398,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["healing_taken"] = 23.007398,
+							["grupo"] = true,
+							["classe"] = "PRIEST",
+							["end_time"] = 1705754824,
+							["targets_overheal"] = {
+							},
+							["start_time"] = 1705754821,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 23,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 15,
+										["targets"] = {
+											["Dopemend"] = 23,
+										},
+										["n_total"] = 23,
+										["n_min"] = 8,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 23,
+										},
+										["spellschool"] = 2,
+										["c_min"] = 0,
+										["n_amt"] = 2,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1705754803,
+							["totaldenied"] = 0.007398,
+							["delay"] = 1705754803,
+							["tipo"] = 2,
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 419,
+					["combatId"] = 500,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 419,
+					["combatId"] = 500,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-							},
 							["serial"] = "Player-5826-022A0869",
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754817,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
 							["buff_uptime_targets"] = {
 							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
 							["classe"] = "PRIEST",
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[17] = {
+										["activedamt"] = 1,
+										["id"] = 17,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 23,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -5323,7 +5086,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 23,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -5331,17 +5105,56 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 30,
-							["grupo"] = true,
+							["buff_uptime"] = 140,
+							["debuff_uptime"] = 8,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705664022,
+							["last_event"] = 1705754824,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3114-0001ABA78D",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3114",
+							["nome"] = "Razormane Battleguard",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBFC1",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3113",
+							["nome"] = "Razormane Dustrunner",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 419,
+					["combatId"] = 500,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -5352,8 +5165,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766482.219,
-				["tempo_start"] = 1705664007,
+				["CombatStartedAt"] = 875307.9500000001,
+				["tempo_start"] = 1705754801,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -5365,8 +5178,8 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					222, -- [1]
-					0, -- [2]
+					572, -- [1]
+					23, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -5391,32 +5204,47 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Razormane Battleguard"] = {
+						["Improved Blocking"] = 1,
+					},
+					["Homunculus"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
 					["Dopemend"] = {
-						["Shoot"] = 10,
+						["Shoot"] = 12,
+						["Void Plague"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:33:43",
+				["data_fim"] = "13:47:04",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Kolkar Drudge",
+				["enemy"] = "Razormane Battleguard",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766473.6680000001,
-				["CombatEndedAt"] = 766473.6680000001,
+				["TotalElapsedCombatTime"] = 875303.73,
+				["CombatEndedAt"] = 875303.73,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:33:28",
-				["end_time"] = 766473.6680000001,
-				["combat_id"] = 419,
+				["data_inicio"] = "13:46:42",
+				["end_time"] = 875303.73,
+				["combat_id"] = 500,
 				["frags"] = {
-					["Kolkar Drudge"] = 1,
+					["Razormane Battleguard"] = 1,
+					["Razormane Dustrunner"] = 1,
 				},
-				["combat_counter"] = 477,
+				["combat_counter"] = 558,
 				["totals_grupo"] = {
-					169, -- [1]
-					0, -- [2]
+					439, -- [1]
+					23, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -5444,46 +5272,50 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Dopemend"] = 23.007398,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 169.003693,
+							["Dopemend"] = 419.008733,
+							["Homunculus <Dopemend>"] = 57.001443,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766458.6680000001,
-				["contra"] = "Kolkar Drudge",
+				["start_time"] = 875281.028,
+				["contra"] = "Razormane Battleguard",
 				["TimeData"] = {
 				},
-			}, -- [14]
+			}, -- [9]
 			{
 				{
-					["combatId"] = 418,
+					["combatId"] = 499,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003827,
+							["totalabsorbed"] = 0.006559,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 167.003827,
+							["total_without_pet"] = 207.006559,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 167.003827,
+							["total"] = 219.006559,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Kolkar Drudge"] = true,
+								["Razormane Dustrunner"] = true,
 							},
 							["targets"] = {
-								["Kolkar Drudge"] = 167,
+								["Razormane Battleguard"] = 20,
+								["Razormane Dustrunner"] = 199,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-022A0869",
@@ -5491,25 +5323,53 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663982,
+							["end_time"] = 1705754801,
 							["nome"] = "Dopemend",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[5019] = {
+									[402284] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 22,
 										["targets"] = {
-											["Kolkar Drudge"] = 167,
+											["Razormane Dustrunner"] = 76,
 										},
-										["n_total"] = 139,
-										["n_min"] = 15,
+										["n_total"] = 44,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 167,
-										["c_max"] = 28,
+										["counter"] = 3,
+										["total"] = 76,
+										["c_max"] = 32,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 32,
+										["successful_casted"] = 0,
+										["c_total"] = 32,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Dustrunner"] = 51,
+										},
+										["n_total"] = 51,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 51,
+										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5517,10 +5377,39 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 28,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 28,
-										["n_amt"] = 8,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Battleguard"] = 20,
+											["Razormane Dustrunner"] = 60,
+										},
+										["n_total"] = 80,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5528,42 +5417,112 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 13.14990763784349,
+							["last_dps"] = 24.96006007776828,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 11.003827,
-							["start_time"] = 1705663969,
+							["damage_taken"] = 22.006559,
+							["start_time"] = 1705754787,
 							["delay"] = 0,
-							["last_event"] = 1705663981,
+							["last_event"] = 1705754801,
 						}, -- [1]
 						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.001489,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 12.001489,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 12.001489,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Dustrunner"] = 12,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754795,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Razormane Dustrunner"] = 12,
+										},
+										["n_total"] = 12,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 1.505266399097304,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001489,
+							["start_time"] = 1705754792,
+							["delay"] = 0,
+							["last_event"] = 1705754792,
+						}, -- [2]
+						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002839,
+							["totalabsorbed"] = 22.006226,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 11.002839,
+							["total_without_pet"] = 22.006226,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 11.002839,
+							["total"] = 22.006226,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3119-0000AA5D5F",
-							["aID"] = "3119",
+							["serial"] = "Creature-0-5209-1-4594-3113-00002BBA34",
+							["aID"] = "3113",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopemend"] = true,
-								["Ravespirit"] = true,
+								["Homunculus <Dopemend>"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 11,
+								["Dopemend"] = 22,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663982,
-							["nome"] = "Kolkar Drudge",
+							["end_time"] = 1705754795,
+							["nome"] = "Razormane Dustrunner",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -5573,16 +5532,625 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 11,
 										["targets"] = {
-											["Dopemend"] = 11,
-											["Ravespirit"] = 0,
+											["Dopemend"] = 22,
 										},
-										["n_total"] = 11,
+										["n_total"] = 22,
 										["n_min"] = 11,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 11,
+										["counter"] = 2,
+										["total"] = 22,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 199.006226,
+							["start_time"] = 1705754789,
+							["delay"] = 0,
+							["last_event"] = 1705754791,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 499,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.001205,
+							["total_without_pet"] = 22.001205,
+							["total"] = 22.001205,
+							["targets_absorbs"] = {
+								["Dopemend"] = 22,
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["totalabsorb"] = 22.001205,
+							["last_hps"] = 2.759463815377542,
+							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["targets"] = {
+								["Dopemend"] = 22,
+							},
+							["serial"] = "Player-5826-022A0869",
+							["colocacao"] = 1,
+							["totalover_without_pet"] = 0.001205,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["healing_taken"] = 22.001205,
+							["grupo"] = true,
+							["classe"] = "PRIEST",
+							["end_time"] = 1705754795,
+							["targets_overheal"] = {
+							},
+							["start_time"] = 1705754789,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 22,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopemend"] = 22,
+										},
+										["n_total"] = 22,
+										["n_min"] = 11,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 22,
+										},
+										["spellschool"] = 2,
+										["c_min"] = 0,
+										["n_amt"] = 2,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["custom"] = 0,
+							["last_event"] = 1705754791,
+							["totaldenied"] = 0.001205,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 499,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 499,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["serial"] = "Player-5826-022A0869",
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[6788] = {
+										["activedamt"] = -1,
+										["id"] = 6788,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754789,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754794,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PRIEST",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17] = {
+										["activedamt"] = 1,
+										["id"] = 17,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["activedamt"] = 1,
+										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["activedamt"] = 1,
+										["id"] = 1243,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 56,
+							["debuff_uptime"] = 0,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["last_event"] = 1705754795,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 499,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 875277.958,
+				["tempo_start"] = 1705754787,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					241, -- [1]
+					22, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Dopemend"] = {
+						["Penance"] = 3,
+						["Shoot"] = 3,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:46:36",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Dustrunner",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 875275.023,
+				["CombatEndedAt"] = 875275.023,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "13:46:28",
+				["end_time"] = 875275.023,
+				["combat_id"] = 499,
+				["frags"] = {
+					["Razormane Dustrunner"] = 1,
+				},
+				["combat_counter"] = 557,
+				["totals_grupo"] = {
+					219, -- [1]
+					22, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Dopemend"] = 22.001205,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 199.006559,
+							["Homunculus <Dopemend>"] = 12.001489,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 875267.05,
+				["contra"] = "Razormane Dustrunner",
+				["TimeData"] = {
+				},
+			}, -- [10]
+			{
+				{
+					["combatId"] = 498,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006547,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 98.006547,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 170.006547,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dire Mottled Boar"] = 170,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-022A0869",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754764,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Dire Mottled Boar"] = 81,
+										},
+										["n_total"] = 81,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 81,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[589] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Dire Mottled Boar"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 15.53706333405237,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006547,
+							["start_time"] = 1705754753,
+							["delay"] = 0,
+							["last_event"] = 1705754763,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.008023,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 72.00802300000001,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 72.00802300000001,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202392-00002BC064",
+							["colocacao"] = 2,
+							["aID"] = "202392",
+							["damage_from"] = {
+								["Dire Mottled Boar"] = true,
+							},
+							["targets"] = {
+								["Dire Mottled Boar"] = 72,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754764,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Dire Mottled Boar"] = 72,
+										},
+										["n_total"] = 62,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 72,
+										["c_max"] = 10,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 10,
+										["successful_casted"] = 0,
+										["c_total"] = 10,
+										["n_amt"] = 13,
+										["b_dmg"] = 1,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 6.58088311099513,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 4.008023,
+							["start_time"] = 1705754753,
+							["delay"] = 0,
+							["last_event"] = 1705754761,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006104,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 4.006104,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 4.006104,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3099-00002BC079",
+							["aID"] = "3099",
+							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
+								["Dopemend"] = true,
+							},
+							["targets"] = {
+								["Homunculus <Dopemend>"] = 4,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754764,
+							["nome"] = "Dire Mottled Boar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Homunculus <Dopemend>"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5604,46 +6172,111 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 250.002839,
-							["start_time"] = 1705663973,
-							["delay"] = 0,
-							["last_event"] = 1705663991,
-						}, -- [2]
+							["damage_taken"] = 170.006104,
+							["start_time"] = 1705754763,
+							["delay"] = 1705754753,
+							["last_event"] = 1705754753,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 418,
+					["combatId"] = 498,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 418,
+					["combatId"] = 498,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 418,
+					["combatId"] = 498,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["pets"] = {
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[589] = {
+										["activedamt"] = 0,
+										["id"] = 589,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754763,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-5826-022A0869",
 							["buff_uptime_targets"] = {
 							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
 							["classe"] = "PRIEST",
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[417316] = {
 										["activedamt"] = 1,
 										["id"] = 417316,
 										["targets"] = {
 										},
-										["uptime"] = 13,
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -5654,7 +6287,18 @@ _detalhes_database = {
 										["id"] = 1243,
 										["targets"] = {
 										},
-										["uptime"] = 13,
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -5662,17 +6306,30 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 26,
-							["grupo"] = true,
+							["buff_uptime"] = 66,
+							["debuff_uptime"] = 9,
 							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
-							["last_event"] = 1705663982,
+							["last_event"] = 1705754764,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202392",
+							["serial"] = "Creature-0-5209-1-4594-202392-00002BC064",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 418,
+					["combatId"] = 498,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -5683,8 +6340,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766457.501,
-				["tempo_start"] = 1705663969,
+				["CombatStartedAt"] = 875264.0310000001,
+				["tempo_start"] = 1705754753,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -5696,7 +6353,533 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					261, -- [1]
+					174, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Degrade"] = 1,
+						["Cripple"] = 1,
+					},
+					["Dopemend"] = {
+						["Shadow Word: Pain"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:46:04",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Dire Mottled Boar",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 875243.897,
+				["CombatEndedAt"] = 875243.897,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "13:45:54",
+				["end_time"] = 875243.897,
+				["combat_id"] = 498,
+				["frags"] = {
+					["Dire Mottled Boar"] = 1,
+				},
+				["totals_grupo"] = {
+					170, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 170.006547,
+							["Homunculus <Dopemend>"] = 72.00802300000001,
+						}, -- [1]
+					},
+				},
+				["combat_counter"] = 556,
+				["start_time"] = 875232.9550000001,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["combatId"] = 497,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002225,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 135.002225,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 167.002225,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Razormane Scout"] = true,
+							},
+							["targets"] = {
+								["Razormane Scout"] = 167,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-022A0869",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754731,
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Razormane Scout"] = 58,
+										},
+										["n_total"] = 58,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 58,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Razormane Scout"] = 77,
+										},
+										["n_total"] = 77,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 16.44046318182968,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 22.002225,
+							["start_time"] = 1705754723,
+							["delay"] = 0,
+							["last_event"] = 1705754730,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.006109,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 32.006109,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 32.006109,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["colocacao"] = 2,
+							["aID"] = "202391",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Scout"] = 32,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754731,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Dire Mottled Boar"] = 0,
+											["Razormane Scout"] = 32,
+										},
+										["n_total"] = 25,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 32,
+										["c_max"] = 7,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 7,
+										["successful_casted"] = 0,
+										["c_total"] = 7,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.150827820456449,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006109,
+							["start_time"] = 1705754726,
+							["delay"] = 0,
+							["last_event"] = 1705754753,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005529,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 22.005529,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 22.005529,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BC00B",
+							["aID"] = "3112",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 22,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705754731,
+							["nome"] = "Razormane Scout",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Dopemend"] = 22,
+										},
+										["n_total"] = 22,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 22,
+										["c_max"] = 0,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 167.005529,
+							["start_time"] = 1705754721,
+							["delay"] = 0,
+							["last_event"] = 1705754728,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 497,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 497,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 497,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705754730,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-022A0869",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "PRIEST",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[410935] = {
+										["activedamt"] = 1,
+										["id"] = 410935,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["activedamt"] = 1,
+										["id"] = 8091,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["activedamt"] = 1,
+										["id"] = 417316,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["activedamt"] = 1,
+										["id"] = 418459,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["activedamt"] = 1,
+										["id"] = 1243,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["activedamt"] = 1,
+										["id"] = 419307,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 60,
+							["debuff_uptime"] = 0,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["last_event"] = 1705754731,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BC00B",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3112",
+							["nome"] = "Razormane Scout",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "202391",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BC064",
+							["grupo"] = true,
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 497,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 875231.27,
+				["tempo_start"] = 1705754721,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					189, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -5723,28 +6906,37 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopemend"] = {
-						["Shoot"] = 8,
+						["Shoot"] = 4,
+						["Homunculi"] = 1,
+					},
+					["Razormane Scout"] = {
+						["Shoot"] = 2,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:33:03",
+				["data_fim"] = "13:45:32",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Kolkar Drudge",
+				["enemy"] = "Razormane Scout",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766433.899,
-				["CombatEndedAt"] = 766433.899,
+				["TotalElapsedCombatTime"] = 875211.12,
+				["CombatEndedAt"] = 875211.12,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:32:50",
-				["end_time"] = 766433.899,
-				["combat_id"] = 418,
+				["data_inicio"] = "13:45:22",
+				["end_time"] = 875211.12,
+				["combat_id"] = 497,
 				["frags"] = {
-					["Kolkar Drudge"] = 1,
+					["Razormane Scout"] = 1,
 				},
-				["combat_counter"] = 476,
+				["combat_counter"] = 555,
 				["totals_grupo"] = {
 					167, -- [1]
 					0, -- [2]
@@ -5781,65 +6973,98 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 167.003827,
+							["Dopemend"] = 167.002225,
+							["Homunculus <Dopemend>"] = 32.006109,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766421.199,
-				["contra"] = "Kolkar Drudge",
+				["start_time"] = 875200.962,
+				["contra"] = "Razormane Scout",
 				["TimeData"] = {
 				},
-			}, -- [15]
+			}, -- [12]
 			{
 				{
-					["combatId"] = 417,
 					["tipo"] = 2,
+					["combatId"] = 496,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003322,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 114.003322,
+							["total_without_pet"] = 295.008993,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 114.003322,
-							["on_hold"] = false,
+							["total"] = 339.008993,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Kolkar Drudge"] = true,
+								["Razormane Quilboar"] = true,
+								["Razormane Scout"] = true,
 							},
 							["targets"] = {
-								["Kolkar Drudge"] = 114,
+								["Razormane Scout"] = 177,
+								["Razormane Quilboar"] = 162,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663903,
+							["end_time"] = 1705753760,
+							["totalabsorbed"] = 0.008993,
+							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 40,
+											["Razormane Quilboar"] = 40,
+										},
+										["n_total"] = 80,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
 									[5019] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 21,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Kolkar Drudge"] = 114,
+											["Razormane Scout"] = 71,
+											["Razormane Quilboar"] = 78,
 										},
-										["n_total"] = 114,
-										["n_min"] = 14,
+										["n_total"] = 149,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 114,
+										["counter"] = 9,
+										["total"] = 149,
 										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
@@ -5851,69 +7076,94 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 9,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 66,
+										},
+										["n_total"] = 66,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 22,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 13.79183668046913,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 15.003322,
-							["start_time"] = 1705663895,
+							["custom"] = 0,
+							["last_event"] = 1705753759,
+							["damage_taken"] = 54.008993,
+							["start_time"] = 1705753742,
 							["delay"] = 0,
-							["last_event"] = 1705663901,
+							["last_dps"] = 17.22431627890925,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008865,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.006596,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 30.008865,
+							["classe"] = "PET",
+							["total_without_pet"] = 44.006596,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 30.008865,
-							["on_hold"] = false,
+							["total"] = 44.006596,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3119-00012A5B09",
-							["aID"] = "3119",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
 							["damage_from"] = {
-								["Ravespirit"] = true,
-								["Macroseism"] = true,
-								["Dopemend"] = true,
+								["Razormane Quilboar"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 15,
-								["Ravespirit"] = 15,
+								["Razormane Quilboar"] = 44,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663969,
-							["nome"] = "Kolkar Drudge",
+							["end_time"] = 1705753760,
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Dopemend"] = 15,
-											["Ravespirit"] = 15,
+											["Razormane Quilboar"] = 44,
 										},
-										["n_total"] = 30,
-										["n_min"] = 7,
+										["n_total"] = 44,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 30,
+										["counter"] = 9,
+										["total"] = 44,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -5925,434 +7175,459 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["n_max"] = 5,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 555.008865,
-							["start_time"] = 1705663914,
-							["delay"] = 1705663953,
-							["last_event"] = 1705663953,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 417,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 417,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 417,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 16,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
-							["nome"] = "Dopemend",
-							["last_event"] = 1705663903,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 417,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopemend"] = "Player-5826-022A0869",
-				},
-				["raid_roster_indexed"] = {
-					"Dopemend", -- [1]
-				},
-				["CombatStartedAt"] = 766419.866,
-				["tempo_start"] = 1705663895,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					720, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopemend"] = {
-						["Shoot"] = 5,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:31:43",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Drudge",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766354.613,
-				["CombatEndedAt"] = 766354.613,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:31:35",
-				["end_time"] = 766354.613,
-				["combat_id"] = 417,
-				["frags"] = {
-					["Kolkar Outrunner"] = 1,
-					["Kolkar Drudge"] = 1,
-				},
-				["combat_counter"] = 475,
-				["totals_grupo"] = {
-					114, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopemend"] = 114.003322,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 766346.3470000001,
-				["contra"] = "Kolkar Drudge",
-				["TimeData"] = {
-				},
-			}, -- [16]
-			{
-				{
-					["combatId"] = 416,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001967,
-							["pets"] = {
-							},
-							["classe"] = "PRIEST",
-							["total_without_pet"] = 123.001967,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 123.001967,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-022A0869",
-							["damage_from"] = {
-								["Kolkar Outrunner"] = true,
-							},
-							["targets"] = {
-								["Kolkar Outrunner"] = 123,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705663855,
-							["nome"] = "Dopemend",
-							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Kolkar Outrunner"] = 123,
-										},
-										["n_total"] = 123,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 123,
-										["c_max"] = 0,
-										["id"] = 5019,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 12.3620067337262,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 26.001967,
-							["start_time"] = 1705663845,
-							["delay"] = 0,
-							["last_event"] = 1705663854,
-						}, -- [1]
+							["custom"] = 0,
+							["last_event"] = 1705753747,
+							["damage_taken"] = 17.006596,
+							["start_time"] = 1705753755,
+							["delay"] = 1705753747,
+							["last_dps"] = 2.235880296727653,
+						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001939,
+							["flag_original"] = 2632,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 41.001939,
+							["total_without_pet"] = 39.006108,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 41.001939,
-							["on_hold"] = false,
+							["monster"] = true,
+							["total"] = 39.006108,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3120-00002A5D5F",
-							["aID"] = "3120",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5209-1-4594-3112-0000ABBBE6",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopemend"] = true,
-								["Macroseism"] = true,
-								["Ravespirit"] = true,
 							},
 							["targets"] = {
-								["Ravespirit"] = 8,
-								["Macroseism"] = 7,
-								["Dopemend"] = 26,
+								["Dopemend"] = 39,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663895,
-							["nome"] = "Kolkar Outrunner",
+							["totalabsorbed"] = 19.006108,
+							["fight_component"] = true,
+							["end_time"] = 1705753760,
+							["aID"] = "3112",
+							["nome"] = "Razormane Scout",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Ravespirit"] = 8,
-											["Macroseism"] = 7,
-											["Dopemend"] = 26,
+											["Dopemend"] = 39,
 										},
-										["n_total"] = 41,
-										["n_min"] = 7,
+										["n_total"] = 39,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 41,
+										["total"] = 39,
 										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 6660,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 10,
+										["a_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 4,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 10,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753757,
+							["damage_taken"] = 177.006108,
+							["start_time"] = 1705753741,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 32.003305,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 32.003305,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BB786",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 15,
+								["Homunculus <Dopemend>"] = 17,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 15.003305,
+							["fight_component"] = true,
+							["end_time"] = 1705753760,
+							["aID"] = "3111",
+							["nome"] = "Razormane Quilboar",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 9,
+										["r_amt"] = 0,
+									}, -- [1]
+									[5280] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Homunculus <Dopemend>"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 5280,
 										["r_dmg"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 3,
+										["successful_casted"] = 1,
 										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["n_max"] = 3,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 227.001939,
-							["start_time"] = 1705663846,
-							["delay"] = 0,
-							["last_event"] = 1705663893,
-						}, -- [2]
+							["custom"] = 0,
+							["last_event"] = 1705753747,
+							["damage_taken"] = 162.003305,
+							["start_time"] = 1705753754,
+							["delay"] = 1705753747,
+							["last_dps"] = 0,
+						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 416,
 					["tipo"] = 3,
+					["combatId"] = 496,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.005215,
+							["total_without_pet"] = 35.005215,
+							["total"] = 35.005215,
+							["targets_absorbs"] = {
+								["Dopemend"] = 35,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-022A0869",
+							["totalabsorb"] = 35.005215,
+							["last_hps"] = 1.778539528511028,
+							["targets"] = {
+								["Dopemend"] = 35,
+							},
+							["totalover_without_pet"] = 0.005215,
+							["last_event"] = 1705753753,
+							["healing_taken"] = 35.005215,
+							["fight_component"] = true,
+							["end_time"] = 1705753760,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 35,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopemend"] = 35,
+										},
+										["n_total"] = 35,
+										["n_min"] = 1,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 35,
+										["spellschool"] = 2,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 35,
+										},
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 5,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["start_time"] = 1705753742,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.005215,
+							["delay"] = 0,
+							["classe"] = "PRIEST",
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 416,
 					["tipo"] = 7,
+					["combatId"] = 496,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 416,
 					["tipo"] = 9,
+					["combatId"] = 496,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
+									[425204] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["activedamt"] = -1,
+										["uptime"] = 12,
+										["id"] = 425204,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6788] = {
+										["activedamt"] = -1,
+										["id"] = 6788,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753752,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 126,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[17] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = 17,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 418459,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = 410935,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 20,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["debuff_uptime"] = 12,
 							["nome"] = "Dopemend",
-							["last_event"] = 1705663855,
+							["aID"] = "5826-022A0869",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["serial"] = "Player-5826-022A0869",
+							["last_event"] = 1705753760,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Razormane Scout",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5209-1-4594-3112-0000ABBBE6",
+							["aID"] = "3112",
+						}, -- [3]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5208-1-23254-3120-00002A5D5F",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "3120",
-							["nome"] = "Kolkar Outrunner",
+							["nome"] = "Razormane Quilboar",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
-						}, -- [2]
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BB786",
+							["aID"] = "3111",
+						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 416,
 					["tipo"] = 2,
+					["combatId"] = 496,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6362,21 +7637,19 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766345.03,
-				["tempo_start"] = 1705663845,
+				["CombatStartedAt"] = 875199.944,
+				["tempo_start"] = 1705753741,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 554,
 				["playing_solo"] = true,
 				["totals"] = {
-					402, -- [1]
-					0, -- [2]
+					410, -- [1]
+					35, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -6387,49 +7660,19 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Kolkar Outrunner"] = {
-						["Shoot"] = 3,
-					},
-					["Dopemend"] = {
-						["Shoot"] = 6,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "12:30:55",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Outrunner",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 766305.995,
-				["CombatEndedAt"] = 766305.995,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "12:30:45",
-				["end_time"] = 766305.995,
-				["combat_id"] = 416,
-				["frags"] = {
-					["Kolkar Outrunner"] = 1,
-				},
-				["combat_counter"] = 474,
 				["totals_grupo"] = {
-					123, -- [1]
-					0, -- [2]
+					339, -- [1]
+					35, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -6440,89 +7683,166 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Razormane Scout"] = {
+						["Shoot"] = 4,
+					},
+					["Dopemend"] = {
+						["Shoot"] = 9,
+						["Void Plague"] = 1,
+						["Penance"] = 3,
+					},
+					["Razormane Quilboar"] = {
+						["Razor Mane"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:29:21",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Scout",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 874240.725,
+				["CombatEndedAt"] = 874240.725,
+				["aura_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Dopemend"] = 35.005215,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopemend"] = 123.001967,
+							["Dopemend"] = 339.008993,
+							["Homunculus <Dopemend>"] = 44.006596,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 874240.725,
+				["combat_id"] = 496,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766296.045,
-				["contra"] = "Kolkar Outrunner",
+				["contra"] = "Razormane Scout",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "13:29:02",
+				["start_time"] = 874221.0430000001,
 				["TimeData"] = {
 				},
-			}, -- [17]
+				["frags"] = {
+					["Razormane Scout"] = 1,
+					["Razormane Quilboar"] = 1,
+				},
+			}, -- [13]
 			{
 				{
-					["combatId"] = 415,
 					["tipo"] = 2,
+					["combatId"] = 495,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003779,
 							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
 							},
 							["classe"] = "PRIEST",
-							["total_without_pet"] = 144.003779,
+							["total_without_pet"] = 352.003692,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 144.003779,
-							["on_hold"] = false,
+							["total"] = 473.003692,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022A0869",
 							["damage_from"] = {
-								["Kolkar Drudge"] = true,
+								["Razormane Scout"] = true,
+								["Razormane Quilboar"] = true,
 							},
 							["targets"] = {
-								["Kolkar Drudge"] = 144,
+								["Razormane Scout"] = 329,
+								["Razormane Quilboar"] = 144,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022A0869",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663793,
+							["end_time"] = 1705753736,
+							["totalabsorbed"] = 0.003692,
+							["aID"] = "5826-022A0869",
 							["nome"] = "Dopemend",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[5019] = {
-										["c_amt"] = 1,
+									[425204] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 21,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Kolkar Drudge"] = 144,
+											["Razormane Scout"] = 120,
+											["Razormane Quilboar"] = 60,
 										},
-										["n_total"] = 122,
-										["n_min"] = 12,
+										["n_total"] = 180,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
 										["counter"] = 9,
-										["total"] = 144,
-										["c_max"] = 22,
+										["total"] = 180,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 9,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 92,
+											["Razormane Quilboar"] = 36,
+										},
+										["n_total"] = 128,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 128,
+										["c_max"] = 0,
 										["id"] = 5019,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -6530,62 +7850,167 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 22,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 22,
+										["c_total"] = 0,
 										["n_amt"] = 8,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 44,
+										},
+										["n_total"] = 44,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 22,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 11.25029523433407,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 15.003779,
-							["start_time"] = 1705663779,
+							["custom"] = 0,
+							["last_event"] = 1705753735,
+							["damage_taken"] = 77.003692,
+							["start_time"] = 1705753714,
 							["delay"] = 0,
-							["last_event"] = 1705663791,
+							["last_dps"] = 20.82065727606796,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00253,
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002767,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 15.00253,
+							["classe"] = "PET",
+							["total_without_pet"] = 121.002767,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 15.00253,
-							["on_hold"] = false,
+							["total"] = 121.002767,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-1-23254-3119-00002A5C98",
-							["aID"] = "3119",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
 							["damage_from"] = {
-								["Dopemend"] = true,
+								["Razormane Scout"] = true,
 							},
 							["targets"] = {
-								["Dopemend"] = 15,
+								["Razormane Scout"] = 73,
+								["Razormane Quilboar"] = 48,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705663793,
-							["nome"] = "Kolkar Drudge",
+							["end_time"] = 1705753736,
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
 							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["b_dmg"] = 2,
+										["targets"] = {
+											["Razormane Scout"] = 73,
+											["Razormane Quilboar"] = 48,
+										},
+										["n_total"] = 112,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 26,
+										["total"] = 121,
+										["c_max"] = 9,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 9,
+										["successful_casted"] = 0,
+										["c_total"] = 9,
+										["n_amt"] = 24,
+										["n_max"] = 6,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
 								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753731,
+							["damage_taken"] = 22.002767,
+							["start_time"] = 1705753714,
+							["delay"] = 0,
+							["last_dps"] = 5.326294876283769,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 84.00798900000001,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 84.00798900000001,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BBC15",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
+								["Dopemend"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 62,
+								["Homunculus <Dopemend>"] = 22,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 38.007989,
+							["fight_component"] = true,
+							["end_time"] = 1705753736,
+							["aID"] = "3112",
+							["nome"] = "Razormane Scout",
+							["spells"] = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Dopemend"] = 15,
+											["Homunculus <Dopemend>"] = 15,
 										},
 										["n_total"] = 15,
 										["n_min"] = 7,
@@ -6604,86 +8029,375 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 8,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 62,
+											["Homunculus <Dopemend>"] = 7,
+										},
+										["n_total"] = 69,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 69,
+										["c_max"] = 0,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 8,
+										["a_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 10,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["n_max"] = 10,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753741,
+							["damage_taken"] = 329.007989,
+							["start_time"] = 1705753715,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 15.003922,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 15.003922,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BBC4E",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Homunculus <Dopemend>"] = true,
+								["Dopemend"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 15,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 9.003922,
+							["fight_component"] = true,
+							["end_time"] = 1705753736,
+							["aID"] = "3111",
+							["nome"] = "Razormane Quilboar",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 6,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 144.00253,
-							["start_time"] = 1705663784,
-							["delay"] = 0,
-							["last_event"] = 1705663786,
-						}, -- [2]
+							["custom"] = 0,
+							["last_event"] = 1705753718,
+							["damage_taken"] = 144.003922,
+							["start_time"] = 1705753731,
+							["delay"] = 1705753718,
+							["last_dps"] = 0,
+						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 415,
 					["tipo"] = 3,
+					["combatId"] = 495,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.005054,
+							["total_without_pet"] = 45.005054,
+							["total"] = 45.005054,
+							["targets_absorbs"] = {
+								["Dopemend"] = 45,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-022A0869",
+							["totalabsorb"] = 45.005054,
+							["last_hps"] = 1.981030636490109,
+							["targets"] = {
+								["Dopemend"] = 45,
+							},
+							["totalover_without_pet"] = 0.005054,
+							["last_event"] = 1705753723,
+							["healing_taken"] = 45.005054,
+							["fight_component"] = true,
+							["end_time"] = 1705753736,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 45,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopemend"] = 45,
+										},
+										["n_total"] = 45,
+										["n_min"] = 2,
+										["counter"] = 7,
+										["overheal"] = 0,
+										["total"] = 45,
+										["spellschool"] = 2,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 45,
+										},
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 7,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["start_time"] = 1705753726,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.005054,
+							["delay"] = 1705753723,
+							["classe"] = "PRIEST",
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 415,
 					["tipo"] = 7,
+					["combatId"] = 495,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 415,
 					["tipo"] = 9,
+					["combatId"] = 495,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-022A0869",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[417316] = {
-										["activedamt"] = 1,
-										["id"] = 417316,
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
 										["targets"] = {
 										},
-										["uptime"] = 14,
+										["actived_at"] = 1705753735,
+										["uptime"] = 6,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6788] = {
+										["activedamt"] = -1,
+										["id"] = 6788,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753726,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 141,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[17] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 17,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 418459,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[1243] = {
-										["activedamt"] = 1,
-										["id"] = 1243,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 14,
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = 410935,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 28,
-							["grupo"] = true,
-							["aID"] = "5826-022A0869",
+							["fight_component"] = true,
+							["debuff_uptime"] = 6,
 							["nome"] = "Dopemend",
-							["last_event"] = 1705663793,
+							["aID"] = "5826-022A0869",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["serial"] = "Player-5826-022A0869",
+							["last_event"] = 1705753736,
 						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Razormane Scout",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BBC15",
+							["aID"] = "3112",
+						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 415,
 					["tipo"] = 2,
+					["combatId"] = 495,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6693,8 +8407,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopemend", -- [1]
 				},
-				["CombatStartedAt"] = 766294.843,
-				["tempo_start"] = 1705663779,
+				["CombatStartedAt"] = 874219.708,
+				["tempo_start"] = 1705753714,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -6706,8 +8420,8 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					273, -- [1]
-					0, -- [2]
+					572, -- [1]
+					45, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -6718,45 +8432,1946 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
+				["totals_grupo"] = {
+					473, -- [1]
+					45, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Razormane Scout"] = {
+						["Shoot"] = 10,
+					},
+					["Dopemend"] = {
+						["Shoot"] = 8,
+						["Void Plague"] = 2,
+						["Penance"] = 2,
+					},
+					["Homunculus"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:28:57",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Quilboar",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 874216.4550000001,
+				["CombatEndedAt"] = 874216.4550000001,
+				["aura_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Dopemend"] = 45.005054,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 473.003692,
+							["Homunculus <Dopemend>"] = 121.002767,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 874216.4550000001,
+				["combat_id"] = 495,
+				["frags"] = {
+					["Razormane Scout"] = 2,
+					["Razormane Quilboar"] = 1,
+				},
+				["combat_counter"] = 553,
+				["contra"] = "Razormane Quilboar",
 				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 874193.737,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "13:28:34",
+			}, -- [14]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 494,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 112.007374,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 139.007374,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Razormane Quilboar"] = true,
+							},
+							["targets"] = {
+								["Razormane Quilboar"] = 139,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753710,
+							["totalabsorbed"] = 0.007374,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Quilboar"] = 72,
+										},
+										["n_total"] = 54,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 72,
+										["c_max"] = 18,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 18,
+										["successful_casted"] = 0,
+										["c_total"] = 18,
+										["n_amt"] = 3,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Quilboar"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753709,
+							["damage_taken"] = 16.007374,
+							["start_time"] = 1705753704,
+							["delay"] = 0,
+							["last_dps"] = 21.36602735918931,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002618,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 27.002618,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 27.002618,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Quilboar"] = 27,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753710,
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Quilboar"] = 27,
+										},
+										["n_total"] = 18,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 27,
+										["c_max"] = 9,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 9,
+										["successful_casted"] = 0,
+										["c_total"] = 9,
+										["n_amt"] = 4,
+										["n_max"] = 5,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753708,
+							["damage_taken"] = 0.002618,
+							["start_time"] = 1705753706,
+							["delay"] = 0,
+							["last_dps"] = 4.150417768180685,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 16.004751,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 16.004751,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BBAB8",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 16,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 15.004751,
+							["fight_component"] = true,
+							["end_time"] = 1705753710,
+							["aID"] = "3111",
+							["nome"] = "Razormane Quilboar",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 7,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753714,
+							["damage_taken"] = 139.004751,
+							["start_time"] = 1705753703,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 494,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.001298,
+							["total_without_pet"] = 16.001298,
+							["total"] = 16.001298,
+							["targets_absorbs"] = {
+								["Dopemend"] = 16,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-022A0869",
+							["totalabsorb"] = 16.001298,
+							["last_hps"] = 2.459467875787231,
+							["targets"] = {
+								["Dopemend"] = 16,
+							},
+							["totalover_without_pet"] = 0.001298,
+							["last_event"] = 1705753708,
+							["healing_taken"] = 16.001298,
+							["fight_component"] = true,
+							["end_time"] = 1705753710,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 16,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 7,
+										["targets"] = {
+											["Dopemend"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 3,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 16,
+										["spellschool"] = 2,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 16,
+										},
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 3,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["start_time"] = 1705753703,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.001298,
+							["delay"] = 0,
+							["classe"] = "PRIEST",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 494,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 494,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[6788] = {
+										["activedamt"] = -1,
+										["id"] = 6788,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753705,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753709,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 42,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 17,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 410935,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 0,
+							["nome"] = "Dopemend",
+							["aID"] = "5826-022A0869",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["serial"] = "Player-5826-022A0869",
+							["last_event"] = 1705753710,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 494,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 874192.186,
+				["tempo_start"] = 1705753703,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					155, -- [1]
+					16, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					139, -- [1]
+					16, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopemend"] = {
-						["Shoot"] = 8,
+						["Shoot"] = 4,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "12:29:53",
+				["data_fim"] = "13:28:31",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Kolkar Drudge",
+				["enemy"] = "Razormane Quilboar",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 766244.1410000001,
-				["CombatEndedAt"] = 766244.1410000001,
+				["TotalElapsedCombatTime"] = 874190.1680000001,
+				["CombatEndedAt"] = 874190.1680000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "12:29:40",
-				["end_time"] = 766244.1410000001,
-				["combat_id"] = 415,
-				["frags"] = {
-					["Kolkar Drudge"] = 1,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Dopemend"] = 16.001298,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 139.007374,
+							["Homunculus <Dopemend>"] = 27.002618,
+						}, -- [1]
+					},
 				},
-				["combat_counter"] = 473,
+				["end_time"] = 874190.1680000001,
+				["combat_id"] = 494,
+				["frags"] = {
+					["Razormane Quilboar"] = 1,
+				},
+				["combat_counter"] = 552,
+				["contra"] = "Razormane Quilboar",
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 874183.662,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "13:28:24",
+			}, -- [15]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 493,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 511.006519,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 620.006519,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Razormane Quilboar"] = true,
+								["Razormane Scout"] = true,
+							},
+							["targets"] = {
+								["Razormane Quilboar"] = 135,
+								["Razormane Scout"] = 485,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753700,
+							["totalabsorbed"] = 0.006519,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 7,
+										},
+										["n_total"] = 7,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 7,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 7,
+										["r_amt"] = 0,
+									}, -- [1]
+									[782] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Quilboar"] = 18,
+											["Razormane Scout"] = 12,
+										},
+										["n_total"] = 30,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 782,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["n_max"] = 6,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 279,
+										},
+										["n_total"] = 279,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 279,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 14,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 29,
+											["Razormane Quilboar"] = 101,
+										},
+										["n_total"] = 101,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 130,
+										["c_max"] = 29,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 29,
+										["successful_casted"] = 0,
+										["c_total"] = 29,
+										["n_amt"] = 6,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+									[402284] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Scout"] = 65,
+										},
+										["n_total"] = 65,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 402284,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 22,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753699,
+							["damage_taken"] = 133.006519,
+							["start_time"] = 1705753671,
+							["delay"] = 0,
+							["last_dps"] = 19.63537240309038,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.002863,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 109.002863,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 109.002863,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["damage_from"] = {
+								["Razormane Quilboar"] = true,
+							},
+							["targets"] = {
+								["Razormane Quilboar"] = 16,
+								["Razormane Scout"] = 93,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753700,
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["g_amt"] = 2,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Razormane Quilboar"] = 16,
+											["Razormane Scout"] = 93,
+										},
+										["n_total"] = 77,
+										["g_dmg"] = 10,
+										["n_min"] = 4,
+										["a_amt"] = 0,
+										["counter"] = 27,
+										["DODGE"] = 3,
+										["total"] = 109,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["BLOCK"] = 1,
+										["PARRY"] = 3,
+										["c_min"] = 11,
+										["successful_casted"] = 0,
+										["c_total"] = 22,
+										["n_amt"] = 16,
+										["c_max"] = 11,
+										["n_max"] = 6,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753694,
+							["damage_taken"] = 5.002863,
+							["start_time"] = 1705753672,
+							["delay"] = 0,
+							["last_dps"] = 3.452079522421991,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 106.00591,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 106.00591,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BBB39",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 106,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 57.00591,
+							["fight_component"] = true,
+							["end_time"] = 1705753700,
+							["aID"] = "3112",
+							["nome"] = "Razormane Scout",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 49,
+										},
+										["n_total"] = 49,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 7,
+										["a_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["n_max"] = 11,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 57,
+										},
+										["n_total"] = 57,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 57,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 9,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["n_max"] = 10,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753698,
+							["damage_taken"] = 485.00591,
+							["start_time"] = 1705753669,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 32.001533,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 32.001533,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BBB78",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 27,
+								["Homunculus <Dopemend>"] = 5,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 14.001533,
+							["fight_component"] = true,
+							["end_time"] = 1705753700,
+							["aID"] = "3111",
+							["nome"] = "Razormane Quilboar",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 27,
+										},
+										["n_total"] = 27,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 7,
+										["r_amt"] = 0,
+									}, -- [1]
+									[5280] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Homunculus <Dopemend>"] = 5,
+										},
+										["n_total"] = 5,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 5,
+										["c_max"] = 0,
+										["id"] = 5280,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 3,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753703,
+							["damage_taken"] = 135.001533,
+							["start_time"] = 1705753691,
+							["delay"] = 1705753686,
+							["last_dps"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 493,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.006978,
+							["total_without_pet"] = 68.006978,
+							["total"] = 68.006978,
+							["targets_absorbs"] = {
+								["Dopemend"] = 68,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-022A0869",
+							["totalabsorb"] = 68.006978,
+							["last_hps"] = 2.153755320496516,
+							["targets"] = {
+								["Dopemend"] = 68,
+							},
+							["totalover_without_pet"] = 0.006978,
+							["last_event"] = 1705753698,
+							["healing_taken"] = 68.006978,
+							["fight_component"] = true,
+							["end_time"] = 1705753700,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 68,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopemend"] = 68,
+										},
+										["n_total"] = 68,
+										["n_min"] = 4,
+										["counter"] = 9,
+										["overheal"] = 0,
+										["total"] = 68,
+										["spellschool"] = 2,
+										["id"] = 17,
+										["targets_absorbs"] = {
+											["Dopemend"] = 68,
+										},
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 9,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Dopemend"] = true,
+							},
+							["start_time"] = 1705753685,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["totaldenied"] = 0.006978,
+							["delay"] = 1705753678,
+							["classe"] = "PRIEST",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 493,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 493,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[6788] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 25,
+										["id"] = 6788,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753699,
+										["uptime"] = 13,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 204,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[17] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 18,
+										["id"] = 17,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = 410935,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 38,
+							["nome"] = "Dopemend",
+							["aID"] = "5826-022A0869",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["serial"] = "Player-5826-022A0869",
+							["last_event"] = 1705753700,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Razormane Scout",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5209-1-4594-3112-00002BBAF0",
+							["aID"] = "3112",
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Razormane Quilboar",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5209-1-4594-3111-00002BBB78",
+							["aID"] = "3111",
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 493,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 874182.061,
+				["tempo_start"] = 1705753669,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					758, -- [1]
+					68, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
 				["totals_grupo"] = {
-					144, -- [1]
+					620, -- [1]
+					68, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+					["Razormane Scout"] = {
+						["Shoot"] = 9,
+					},
+					["Razormane Quilboar"] = {
+						["Razor Mane"] = 1,
+					},
+					["Dopemend"] = {
+						["Shoot"] = 8,
+						["Void Plague"] = 2,
+						["Power Word: Shield"] = 2,
+						["Penance"] = 3,
+					},
+					["Homunculus"] = {
+						["Cripple"] = 2,
+						["Degrade"] = 2,
+						["Demoralize"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:28:21",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Scout",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 874180.46,
+				["CombatEndedAt"] = 874180.46,
+				["aura_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Dopemend"] = 68.006978,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 620.006519,
+							["Homunculus <Dopemend>"] = 109.002863,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 874180.46,
+				["combat_id"] = 493,
+				["frags"] = {
+					["Razormane Quilboar"] = 1,
+					["Razormane Scout"] = 3,
+				},
+				["combat_counter"] = 551,
+				["contra"] = "Razormane Scout",
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 874148.884,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "13:27:49",
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 492,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 84.00684100000001,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 148.006841,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Clattering Scorpid"] = 148,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753666,
+							["totalabsorbed"] = 0.006841,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Clattering Scorpid"] = 84,
+										},
+										["n_total"] = 84,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 21,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753665,
+							["damage_taken"] = 0.006841,
+							["start_time"] = 1705753656,
+							["delay"] = 0,
+							["last_dps"] = 15.48674699168551,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.005263,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 64.005263,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 64.005263,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202390-00002BBC37",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Clattering Scorpid"] = 64,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753666,
+							["aID"] = "202390",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Clattering Scorpid"] = 64,
+										},
+										["n_total"] = 53,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 64,
+										["c_max"] = 11,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 11,
+										["successful_casted"] = 0,
+										["c_total"] = 11,
+										["n_amt"] = 11,
+										["n_max"] = 6,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753665,
+							["damage_taken"] = 0.005263,
+							["start_time"] = 1705753657,
+							["delay"] = 0,
+							["last_dps"] = 6.697212828272513,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.006898,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 0.006898,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3125-00002BBADB",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006898,
+							["fight_component"] = true,
+							["end_time"] = 1705753666,
+							["aID"] = "3125",
+							["nome"] = "Clattering Scorpid",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 148.006898,
+							["start_time"] = 1705753666,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 492,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 492,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 492,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[425204] = {
+										["activedamt"] = -1,
+										["id"] = 425204,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753665,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["buff_uptime"] = 60,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 410935,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Dopemend",
+							["last_event"] = 1705753666,
+							["aID"] = "5826-022A0869",
+							["serial"] = "Player-5826-022A0869",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202390",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202390-00002BBC37",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 492,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 874147.849,
+				["tempo_start"] = 1705753656,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					148, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6768,48 +10383,699 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					148, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopemend"] = {
+						["Homunculi"] = 1,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:27:47",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Clattering Scorpid",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 874146.081,
+				["CombatEndedAt"] = 874146.081,
+				["aura_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Dopemend"] = 144.003779,
+							["Dopemend"] = 148.006841,
+							["Homunculus <Dopemend>"] = 64.005263,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 874146.081,
+				["combat_id"] = 492,
+				["frags"] = {
+					["Clattering Scorpid"] = 1,
+				},
+				["combat_counter"] = 550,
+				["contra"] = "Clattering Scorpid",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 766231.341,
-				["contra"] = "Kolkar Drudge",
+				["start_time"] = 874136.524,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "13:27:37",
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 491,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["classe"] = "PRIEST",
+							["total_without_pet"] = 73.005232,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 132.005232,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-022A0869",
+							["damage_from"] = {
+								["Kul Tiras Sailor"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 132,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753628,
+							["totalabsorbed"] = 0.005232,
+							["aID"] = "5826-022A0869",
+							["nome"] = "Dopemend",
+							["spells"] = {
+								["_ActorTable"] = {
+									[782] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 18,
+										},
+										["n_total"] = 18,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 782,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 6,
+										["r_amt"] = 0,
+									},
+									[589] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 589,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 5,
+										["r_amt"] = 0,
+									},
+									[425204] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Clattering Scorpid"] = 0,
+											["Kul Tiras Sailor"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 40,
+										["c_max"] = 0,
+										["spellschool"] = 32,
+										["id"] = 425204,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 20,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753645,
+							["damage_taken"] = 29.005232,
+							["start_time"] = 1705753614,
+							["delay"] = 0,
+							["last_dps"] = 9.466812392414838,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.008635,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 59.008635,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 59.008635,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBBBC",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 59,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705753628,
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 59,
+										},
+										["n_total"] = 59,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 12,
+										["n_max"] = 6,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753628,
+							["damage_taken"] = 0.008635,
+							["start_time"] = 1705753622,
+							["delay"] = 0,
+							["last_dps"] = 4.231829819271738,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 29.00231,
+							["last_dps_realtime"] = 0,
+							["monster"] = true,
+							["total"] = 29.00231,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5209-1-4594-3128-0000ABBBDC",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Dopemend"] = true,
+								["Homunculus <Dopemend>"] = true,
+							},
+							["targets"] = {
+								["Dopemend"] = 29,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.00231,
+							["fight_component"] = true,
+							["end_time"] = 1705753628,
+							["aID"] = "3128",
+							["nome"] = "Kul Tiras Sailor",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Dopemend"] = 29,
+										},
+										["n_total"] = 29,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 22,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6268] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6268,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["n_max"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705753626,
+							["damage_taken"] = 132.00231,
+							["start_time"] = 1705753622,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 491,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 491,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 491,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[425204] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 8,
+										["id"] = 425204,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[589] = {
+										["activedamt"] = -1,
+										["id"] = 589,
+										["targets"] = {
+										},
+										["actived_at"] = 1705753621,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Homunculus <Dopemend>", -- [1]
+							},
+							["buff_uptime"] = 84,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[419307] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 419307,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8091] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 8091,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[417316] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 417316,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[418459] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 418459,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1243] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 1243,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[410935] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 14,
+										["id"] = 410935,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Dopemend",
+							["last_event"] = 1705753628,
+							["aID"] = "5826-022A0869",
+							["serial"] = "Player-5826-022A0869",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["nome"] = "Kul Tiras Sailor",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5209-1-4594-3128-00002BBAFF",
+							["aID"] = "3128",
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["pets"] = {
+							},
+							["aID"] = "202391",
+							["ownerName"] = "Dopemend",
+							["nome"] = "Homunculus <Dopemend>",
+							["grupo"] = true,
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-5209-1-4594-202391-00002BBBBC",
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 491,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopemend"] = "Player-5826-022A0869",
+				},
+				["raid_roster_indexed"] = {
+					"Dopemend", -- [1]
+				},
+				["CombatStartedAt"] = 874125.047,
+				["tempo_start"] = 1705753614,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					161, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					132, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopemend"] = {
+						["Void Plague"] = 1,
+					},
+					["Kul Tiras Sailor"] = {
+						["Rushing Charge"] = 1,
+					},
+					["Homunculus <Dopemend>"] = {
+						["Cripple"] = 1,
+						["Degrade"] = 1,
+						["Demoralize"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "13:27:09",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Sailor",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 874108.05,
+				["CombatEndedAt"] = 874108.05,
+				["aura_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopemend"] = 132.005232,
+							["Homunculus <Dopemend>"] = 59.008635,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 874108.05,
+				["combat_id"] = 491,
+				["frags"] = {
+					["Kul Tiras Sailor"] = 1,
+				},
+				["combat_counter"] = 549,
+				["contra"] = "Kul Tiras Sailor",
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 874094.106,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "13:26:55",
 			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
-		["show_title"] = true,
+		["enabled"] = false,
 		["current_cooldowns"] = {
 		},
-		["lines_per_column"] = 12,
 		["group_frames"] = true,
+		["lines_per_column"] = 12,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -6841,7 +11107,7 @@ _detalhes_database = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["enabled"] = false,
+		["show_title"] = true,
 		["filters"] = {
 			["itemutil"] = false,
 			["itempower"] = false,
@@ -6877,10 +11143,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["playerKey"] = "total",
-				["combatObjectContainer"] = 1,
 				["name"] = "Damage of Each Individual Player",
 				["playerOnly"] = true,
+				["playerKey"] = "total",
+				["combatObjectContainer"] = 1,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -6904,13 +11170,24 @@ _detalhes_database = {
 	["ignore_nicktag"] = false,
 	["combat_log"] = {
 		["inverse_deathlog_overalldata"] = false,
-		["evoker_calc_damage"] = false,
 		["track_hunter_frenzy"] = false,
-		["merge_critical_heals"] = false,
+		["evoker_calc_damage"] = false,
 		["inverse_deathlog_raid"] = false,
+		["merge_critical_heals"] = false,
 		["merge_gemstones_1007"] = false,
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
+	},
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -6925,13 +11202,13 @@ _detalhes_database = {
 			},
 			["usefocus"] = false,
 			["updatespeed"] = 1,
-			["useclasscolors"] = false,
+			["disable_gouge"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["absolute_mode"] = false,
 			["playSound"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["disable_gouge"] = false,
+			["useclasscolors"] = false,
 		},
 		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 			["enabled"] = true,
@@ -6952,7 +11229,7 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["arrow_anchor_y"] = 0,
+			["use_square_mode"] = false,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -6962,17 +11239,22 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["arrow_anchor_x"] = 0,
-			["scale"] = 1,
+			["point"] = "RIGHT",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["font_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["use_spark"] = false,
+			["font_size"] = 10,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -6980,12 +11262,7 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
@@ -6994,113 +11271,41 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["author"] = "Details! Team",
-			["point"] = "RIGHT",
-			["row_height"] = 18,
-			["use_square_mode"] = false,
+			["y"] = -183.107162475586,
+			["scale"] = 1,
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
-	},
-	["mythic_plus_log"] = {
-	},
-	["character_data"] = {
-		["logons"] = 66,
-	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_day"] = "19",
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
 	},
 	["data_harvested_for_charts"] = {
 	},
-	["force_font_outline"] = "",
+	["cached_roles"] = {
+	},
+	["cached_talents"] = {
+	},
+	["mythic_plus_log"] = {
+	},
+	["last_day"] = "20",
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_id"] = 432,
+	["combat_id"] = 508,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -7130,31 +11335,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "xVerminClean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -7241,12 +11458,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -7285,7 +11502,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
@@ -7303,26 +11520,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -7360,17 +11558,16 @@ _detalhes_database = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -7379,20 +11576,17 @@ _detalhes_database = {
 			},
 			["auto_current"] = true,
 			["micro_displays_locked"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["name"] = "vermin",
-			["hide_in_combat"] = false,
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -7404,7 +11598,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -7418,8 +11617,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -7428,16 +11625,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -7445,18 +11639,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -7490,23 +11680,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -7518,7 +11718,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -7538,7 +11743,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 490,
+	["combat_counter"] = 566,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -7566,13 +11771,61 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[589] = {
+								["id"] = 589,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[6788] = {
+								["id"] = 6788,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[425204] = {
+								["id"] = 425204,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
+					},
 					["buff_uptime"] = 0,
-					["nome"] = "Dopemend",
 					["classe"] = "PRIEST",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
+							[17] = {
+								["id"] = 17,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[419307] = {
+								["id"] = 419307,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[410935] = {
+								["id"] = 410935,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[417316] = {
 								["id"] = 417316,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[418459] = {
+								["id"] = 418459,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7583,8 +11836,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[17] = {
-								["id"] = 17,
+							[8091] = {
+								["id"] = 8091,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -7592,29 +11845,196 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime_targets"] = {
+					["debuff_uptime"] = 0,
+					["nome"] = "Dopemend",
+					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["pets"] = {
 					},
 					["last_event"] = 0,
-					["aID"] = "5826-022A0869",
-					["serial"] = "Player-5826-022A0869",
 					["tipo"] = 4,
+					["serial"] = "Player-5826-022A0869",
+					["aID"] = "5826-022A0869",
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
+					["monster"] = true,
 					["nome"] = "Vile Familiar",
+					["fight_component"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-1-3762-3101-00002A47EC",
+					["aID"] = "3101",
+				}, -- [2]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["nome"] = "Kolkar Outrunner",
 					["monster"] = true,
 					["last_event"] = 0,
-					["aID"] = "3101",
-					["serial"] = "Creature-0-5252-1-3762-3101-00002A47EC",
+					["aID"] = "3120",
+					["serial"] = "Creature-0-5208-1-23254-3120-00002A5D5F",
 					["tipo"] = 4,
-				}, -- [2]
+				}, -- [3]
+				{
+					["flag_original"] = 8465,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["classe"] = "PET",
+					["serial"] = "Creature-0-5209-1-4594-202391-00002BBC37",
+					["grupo"] = true,
+					["aID"] = "202391",
+					["nome"] = "Homunculus <Dopemend>",
+					["last_event"] = 0,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["serial"] = "Creature-0-5209-1-4594-3112-0000ABBBE6",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3112",
+					["nome"] = "Razormane Scout",
+					["last_event"] = 0,
+				}, -- [5]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5209-1-4594-3111-00002BB786",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3111",
+					["nome"] = "Razormane Quilboar",
+					["last_event"] = 0,
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5209-1-4594-3128-00002BBAFF",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3128",
+					["nome"] = "Kul Tiras Sailor",
+					["last_event"] = 0,
+				}, -- [7]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5209-1-4594-3129-00002BBBDC",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3129",
+					["nome"] = "Kul Tiras Marine",
+					["last_event"] = 0,
+				}, -- [8]
+				{
+					["flag_original"] = 68136,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5209-1-4594-3099-000D2BA78F",
+					["aID"] = "3099",
+					["nome"] = "Dire Mottled Boar",
+					["last_event"] = 0,
+				}, -- [9]
+				{
+					["flag_original"] = 1047,
+					["pets"] = {
+					},
+					["aID"] = "5826-024586D2",
+					["grupo"] = true,
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[1075] = {
+								["id"] = 1075,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[6756] = {
+								["id"] = 6756,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["tipo"] = 4,
+					["buff_uptime_targets"] = {
+					},
+					["buff_uptime"] = 0,
+					["classe"] = "DRUID",
+					["nome"] = "Mazn",
+					["serial"] = "Player-5826-024586D2",
+					["last_event"] = 0,
+				}, -- [10]
+				{
+					["flag_original"] = 1047,
+					["pets"] = {
+					},
+					["aID"] = "5826-0249AAC9",
+					["grupo"] = true,
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[417316] = {
+								["id"] = 417316,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[418459] = {
+								["id"] = 418459,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[419307] = {
+								["id"] = 419307,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[410935] = {
+								["id"] = 410935,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["tipo"] = 4,
+					["buff_uptime_targets"] = {
+					},
+					["buff_uptime"] = 0,
+					["classe"] = "PRIEST",
+					["nome"] = "Buguyaga",
+					["serial"] = "Player-5826-0249AAC9",
+					["last_event"] = 0,
+				}, -- [11]
 			},
 		}, -- [4]
 		{
@@ -7719,27 +12139,86 @@ _detalhes_database = {
 		["trinketProcs"] = {
 		},
 	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
+	["force_font_outline"] = "",
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4415893554688,
+					["x"] = -979.6941070556641,
+					["w"] = 234.8974304199219,
+					["h"] = 138.5455932617188,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4415893554688,
+					["x"] = -747.7581481933594,
+					["w"] = 228.9744110107422,
+					["h"] = 138.5455932617188,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
 	},
-	["cached_talents"] = {
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["character_data"] = {
+		["logons"] = 69,
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -7747,7 +12226,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
 	},
