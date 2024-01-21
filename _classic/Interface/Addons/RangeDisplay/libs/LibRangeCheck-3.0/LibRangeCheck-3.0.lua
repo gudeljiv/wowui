@@ -276,6 +276,7 @@ if not isRetail then
   tinsert(HarmSpells.SHAMAN, 403) -- Lightning Bolt (30 yards, level 1, rank 1)
   tinsert(HarmSpells.SHAMAN, 8042) -- Earth Shock (20 yards, level 4, rank 1)
 end
+tinsert(HarmSpells.SHAMAN, 6603) -- Earth Shock (20 yards, level 4, rank 1)
 
 tinsert(ResSpells.SHAMAN, 2008) -- Ancestral Spirit (40 yards, level 13)
 

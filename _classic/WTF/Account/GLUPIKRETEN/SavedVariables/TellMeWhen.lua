@@ -17606,7 +17606,11 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 									["Name"] = "Flame Shock",
 								}, -- [1]
-								["n"] = 1,
+								{
+									["Type"] = "LUA",
+									["Name"] = "xTTD > 6",
+								}, -- [2]
+								["n"] = 2,
 							},
 						}, -- [2]
 						{
@@ -17642,20 +17646,10 @@ TellMeWhenDB = {
 						}, -- [3]
 						{
 							["Type"] = "cooldown",
-							["GUID"] = "TMW:icon:1bhCUZbAne4p",
 							["Name"] = "Molten Blast",
+							["GUID"] = "TMW:icon:1bhCUZbAne4p",
+							["Enabled"] = true,
 							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "LUA",
-									["Checked"] = true,
-									["Unit"] = "target",
-									["Operator"] = ">",
-									["Level"] = 4,
-									["Name"] = "xInRange(5) and IsSpellKnownOrOverridesKnown(425339)",
-								}, -- [1]
-								["n"] = 1,
-							},
 							["States"] = {
 								{
 								}, -- [1]
@@ -17668,7 +17662,29 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 							["RangeCheck"] = true,
-							["Enabled"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "LUA",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Operator"] = ">",
+									["Name"] = "xInRange(5) and IsSpellKnownOrOverridesKnown(425339)",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "MANA",
+									["Operator"] = ">=",
+									["PrtsBefore"] = 1,
+									["Level"] = 60,
+								}, -- [2]
+								{
+									["Type"] = "LUA",
+									["PrtsAfter"] = 1,
+									["Name"] = "xAOE(5,false) > 1",
+									["AndOr"] = "OR",
+								}, -- [3]
+								["n"] = 3,
+							},
 						}, -- [4]
 						{
 							["States"] = {

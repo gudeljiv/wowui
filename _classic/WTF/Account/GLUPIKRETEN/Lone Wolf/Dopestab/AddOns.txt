@@ -237,4 +237,12 @@ Bagnon_Masque: enabled
 ClassicBestiary: enabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
-Bagnon_ItemLevel_Vermin: disabled
+Bagnon_ItemLevel_Vermin: enabled
+AdiBags-BetterCategories: enabled
+ClickLinks: enabled
+Details_Compare2: enabled
+LibDeflate: enabled
+Masque_Newsom: enabled
+SigmaHelmAndCloak: enabled
+TomPoints: enabled
+TotemCaddy: enabled

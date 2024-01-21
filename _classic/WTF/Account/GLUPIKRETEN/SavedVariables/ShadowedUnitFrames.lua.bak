@@ -41516,7 +41516,7 @@ ShadowedUFDB = {
 					},
 					["frameSplit"] = true,
 					["groupSpacing"] = 0,
-					["columnSpacing"] = 0,
+					["unitsPerColumn"] = 8,
 					["auraIndicators"] = {
 						["Paladin"] = true,
 						["Shaman"] = true,
@@ -41535,7 +41535,7 @@ ShadowedUFDB = {
 						["height"] = 0.5,
 						["background"] = true,
 					},
-					["unitsPerColumn"] = 8,
+					["columnSpacing"] = 0,
 					["groupsPerRow"] = 8,
 					["text"] = {
 						{
@@ -43603,8 +43603,6 @@ ShadowedUFDB = {
 						["height"] = 0.5,
 						["background"] = true,
 					},
-					["columnSpacing"] = 0,
-					["groupsPerRow"] = 8,
 					["highlight"] = {
 						["debuff"] = false,
 						["height"] = 0.5,
@@ -43612,6 +43610,8 @@ ShadowedUFDB = {
 						["mouseover"] = false,
 						["size"] = 10,
 					},
+					["groupsPerRow"] = 8,
+					["columnSpacing"] = 0,
 					["healthBar"] = {
 						["colorType"] = "class",
 						["order"] = 10,

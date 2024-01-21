@@ -14,6 +14,7 @@ _Core.lua
 _Debug.lua
 
 Frames/_Misc_Frames.lua
+Frames/_Moveable_Frames.lua
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua

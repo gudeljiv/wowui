@@ -1,27 +1,27 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 "bolt" "136048"
 #showtooltip
 /startattack
 /cast Lightning Bolt
 END
-VER 3 0000000001000004 " " "134400"
+VER 3 0000000001000004 "cure" "134400"
 #showtooltip
 /cast [@mouseover,help,exists][]Cure Toxins
 END
-VER 3 0000000001000005 " " "134400"
-#showtooltip
-/startattack
-/cast Flame Shock
-END
-VER 3 0000000001000006 " " "134400"
-#showtooltip
-/cast [@mouseover,help,exists][]Lesser Healing Wave
-END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000003 "earth" "136026"
 #showtooltip
 /stopcasting
 /cast [@focus,exists,harm][] Earth Shock
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000007 "flame" "134400"
+#showtooltip
+/startattack
+/cast Flame Shock
+END
+VER 3 0000000001000002 "heal" "136052"
 #showtooltip
 /cast [@mouseover,help,exists][]Healing Wave
+END
+VER 3 0000000001000006 "lesser" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Lesser Healing Wave
 END

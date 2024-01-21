@@ -110,5 +110,16 @@ SkillInfoPlus: disabled
 AdiBags-BetterCategories: enabled
 ClassicProfessionFilter: enabled
 Immersion: enabled
-Bagnon_ItemLevel_Vermin: disabled
+Bagnon_ItemLevel_Vermin: enabled
 NovaWorldBuffs: enabled
+ClickLinks: enabled
+Details_Compare2: enabled
+Details_EncounterDetails: enabled
+Details_RaidCheck: enabled
+Details_Vanguard: enabled
+LibDeflate: enabled
+Masque_Newsom: enabled
+SigmaHelmAndCloak: enabled
+TomPoints: enabled
+TomTom: enabled
+TotemCaddy: enabled

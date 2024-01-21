@@ -913,9 +913,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 332,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 8040,
-		["timeAtThisLevel"] = 2027,
-		["timeStamp"] = 924536.935,
+		["total"] = 23976,
+		["timeAtThisLevel"] = 1115,
+		["timeStamp"] = 959633.269,
 	},
 	["Greenwise-"] = {
 		["total"] = 79871,

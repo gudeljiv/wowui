@@ -7613,10 +7613,10 @@ RareScannerDB = {
 				["artID"] = {
 					1200, -- [1]
 				},
-				["coordY"] = "7220",
-				["coordX"] = "5320",
+				["coordY"] = "7040",
+				["coordX"] = "4740",
 				["atlasName"] = "VignetteKill",
-				["foundTime"] = 1697819315,
+				["foundTime"] = 1705822949,
 			},
 		},
 		["containers_loot"] = {

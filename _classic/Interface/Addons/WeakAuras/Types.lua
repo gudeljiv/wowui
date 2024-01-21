@@ -14,7 +14,8 @@ local WrapTextInColorCode = WrapTextInColorCode
 local MAX_NUM_TALENTS = MAX_NUM_TALENTS or 20
 
 local function WA_GetClassColor(classFilename)
-  local color = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[classFilename]
+
+  local color = RAID_CLASS_COLORS[classFilename]
   if color then
     return color.colorStr
   end

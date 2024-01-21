@@ -7,53 +7,55 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 610,
 					["tipo"] = 2,
+					["combatId"] = 676,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008548,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 154.008548,
+							["total_without_pet"] = 422.00107,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 154.008548,
+							["total"] = 422.00107,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Environment (Falling)"] = true,
+								["Burning Blade Neophyte"] = true,
+								["Environment (Fire)"] = true,
+								["Burning Blade Thug"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 154,
+								["Burning Blade Thug"] = 422,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830658,
+							["end_time"] = 1705856070,
+							["totalabsorbed"] = 0.00107,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 37,
+										["n_max"] = 33,
 										["targets"] = {
-											["Flatland Cougar"] = 37,
+											["Burning Blade Thug"] = 199,
 										},
-										["n_total"] = 37,
-										["n_min"] = 37,
+										["n_total"] = 130,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 37,
-										["c_max"] = 0,
+										["counter"] = 6,
+										["total"] = 199,
+										["c_max"] = 69,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -61,10 +63,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 69,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
+										["c_total"] = 69,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -72,15 +74,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 34,
 										["targets"] = {
-											["Flatland Cougar"] = 29,
+											["Burning Blade Thug"] = 157,
 										},
-										["n_total"] = 29,
+										["n_total"] = 157,
 										["n_min"] = 29,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
+										["counter"] = 5,
+										["total"] = 157,
 										["c_max"] = 0,
 										["id"] = 425339,
 										["r_dmg"] = 0,
@@ -92,91 +94,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 3,
-										},
-										["n_total"] = 3,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[529] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 36,
-										["targets"] = {
-											["Flatland Cougar"] = 36,
-										},
-										["n_total"] = 36,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 529,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Flatland Cougar"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -186,13 +104,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Flatland Cougar"] = 17,
+											["Burning Blade Thug"] = 66,
 										},
-										["n_total"] = 17,
-										["n_min"] = 17,
+										["n_total"] = 66,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 17,
+										["counter"] = 4,
+										["total"] = 66,
 										["c_max"] = 0,
 										["id"] = 26364,
 										["r_dmg"] = 0,
@@ -204,378 +122,68 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 23.51275542009807,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 1.008548,
-							["start_time"] = 1705830652,
+							["custom"] = 0,
+							["last_event"] = 1705856070,
+							["damage_taken"] = 433.00107,
+							["start_time"] = 1705856055,
 							["delay"] = 0,
-							["last_event"] = 1705830658,
+							["last_dps"] = 27.14007781851086,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00688,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 1.00688,
+							["total_without_pet"] = 96.005784,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 1.00688,
-							["on_hold"] = false,
+							["total"] = 96.005784,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CD914",
-							["aID"] = "3035",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3195-00002D4A9D",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 1,
+								["Jutarnjedrvo"] = 96,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830658,
-							["nome"] = "Flatland Cougar",
+							["totalabsorbed"] = 0.005784,
+							["fight_component"] = true,
+							["end_time"] = 1705856070,
+							["aID"] = "3195",
+							["nome"] = "Burning Blade Thug",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 1,
+										["n_max"] = 16,
 										["targets"] = {
-											["Jutarnjedrvo"] = 1,
+											["Jutarnjedrvo"] = 96,
 										},
-										["n_total"] = 1,
-										["n_min"] = 1,
+										["n_total"] = 96,
+										["n_min"] = 11,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 1,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 154.00688,
-							["start_time"] = 1705830656,
-							["delay"] = 0,
-							["last_event"] = 1705830656,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 610,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 610,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 22.00173,
-							["resource"] = 0.00173,
-							["targets"] = {
-								["Jutarnjedrvo"] = 22,
-							},
-							["total"] = 22.00173,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.00173,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.00173,
-							["passiveover"] = 0.00173,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 22,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 22,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830656,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 610,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 8,
-							["debuff_uptime"] = 3,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830658,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 610,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["tempo_start"] = 1705830652,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					155, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 22,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:50:59",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 933108.568,
-				["CombatEndedAt"] = 933108.568,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:50:53",
-				["end_time"] = 933108.568,
-				["combat_id"] = 610,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 1700,
-				["totals_grupo"] = {
-					154, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 22,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 154.008548,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 933102.018,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 609,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002196,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 190.002196,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 190.002196,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 190,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830615,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Flatland Cougar"] = 84,
-										},
-										["n_total"] = 84,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 84,
+										["counter"] = 9,
+										["MISS"] = 1,
+										["total"] = 96,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -588,17 +196,58 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 25,
+										["n_amt"] = 7,
+										["b_dmg"] = 11,
 										["r_amt"] = 0,
 									}, -- [1]
-									[467] = {
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856069,
+							["damage_taken"] = 422.005784,
+							["start_time"] = 1705856056,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 9.002181,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 9.002181,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
+							["on_hold"] = false,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 9,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002181,
+							["fight_component"] = true,
+							["end_time"] = 1705856070,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
+							["spells"] = {
+								["_ActorTable"] = {
+									[348] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Flatland Cougar"] = 9,
+											["Jutarnjedrvo"] = 9,
 										},
 										["n_total"] = 9,
 										["n_min"] = 3,
@@ -606,9 +255,9 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 9,
 										["c_max"] = 0,
-										["id"] = 467,
+										["id"] = 348,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
+										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -620,19 +269,521 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856062,
+							["damage_taken"] = 0.002181,
+							["start_time"] = 1705856056,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 676,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.00797,
+							["total_without_pet"] = 78.00797,
+							["total"] = 78.00797,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
+							["totalabsorb"] = 0.00797,
+							["last_hps"] = 5.016912341629987,
+							["targets"] = {
+								["Jutarnjedrvo"] = 78,
+							},
+							["totalover_without_pet"] = 0.00797,
+							["tipo"] = 2,
+							["healing_taken"] = 78.00797,
+							["fight_component"] = true,
+							["end_time"] = 1705856070,
+							["targets_overheal"] = {
+							},
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[332] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 78,
+										["targets"] = {
+											["Jutarnjedrvo"] = 78,
+										},
+										["n_total"] = 78,
+										["n_min"] = 78,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 78,
+										["c_max"] = 0,
+										["id"] = 332,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 8,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["start_time"] = 1705856067,
+							["classe"] = "SHAMAN",
+							["custom"] = 0,
+							["last_event"] = 1705856067,
+							["totaldenied"] = 0.00797,
+							["delay"] = 0,
+							["aID"] = "5826-0235A66A",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 676,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["resource"] = 0.006191,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["passiveover"] = 0.006191,
+							["total"] = 21.006191,
+							["serial"] = "Player-5826-0235A66A",
+							["received"] = 21.006191,
+							["targets"] = {
+								["Jutarnjedrvo"] = 21,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.006191,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["total"] = 21,
+										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 21,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.006191,
+							["last_event"] = 1705856059,
+							["tipo"] = 3,
+							["fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 676,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 408525,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 15,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["last_event"] = 1705856070,
+							["buff_uptime"] = 30,
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 676,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["tempo_start"] = 1705856055,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					15776, -- [1]
+					148, -- [2]
+					{
+						49, -- [1]
+						[0] = 75,
+						["alternatepower"] = 0,
+						[3] = 160,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Jutarnjedrvo"] = {
+						{
+							true, -- [1]
+							3, -- [2]
+							111, -- [3]
+							1705856083.503, -- [4]
+							288, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							6, -- [2]
+							13, -- [3]
+							1705856546.822, -- [4]
+							340, -- [5]
+							"Environment (Fire)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							3, -- [2]
+							27, -- [3]
+							1705856582.991, -- [4]
+							340, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							3, -- [2]
+							177, -- [3]
+							1705857514.381, -- [4]
+							340, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 5,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Lightning Shield"] = 1,
+						["Molten Blast"] = 3,
+						["Healing Wave"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:54:31",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Thug",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958520.402,
+				["CombatEndedAt"] = 958520.402,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:54:16",
+				["end_time"] = 958520.402,
+				["combat_id"] = 676,
+				["frags"] = {
+					["Burning Blade Thug"] = 2,
+				},
+				["contra"] = "Burning Blade Thug",
+				["combat_counter"] = 1766,
+				["totals_grupo"] = {
+					422, -- [1]
+					78, -- [2]
+					{
+						0, -- [1]
+						[0] = 21,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Jutarnjedrvo"] = 78.00797,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 422.00107,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 958504.853,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 675,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 210.007484,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 210.007484,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Neophyte"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Neophyte"] = 210,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705856050,
+							["totalabsorbed"] = 0.007484,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 136,
+										},
+										["n_total"] = 136,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 136,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 41,
+										},
+										["n_total"] = 41,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[26364] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Flatland Cougar"] = 34,
+											["Burning Blade Neophyte"] = 33,
 										},
-										["n_total"] = 34,
-										["n_min"] = 17,
+										["n_total"] = 33,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 34,
+										["total"] = 33,
 										["c_max"] = 0,
 										["id"] = 26364,
 										["r_dmg"] = 0,
@@ -648,13 +799,953 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856049,
+							["damage_taken"] = 26.007484,
+							["start_time"] = 1705856042,
+							["delay"] = 0,
+							["last_dps"] = 26.9793787256426,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 26.002762,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 26.002762,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 26,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.002762,
+							["fight_component"] = true,
+							["end_time"] = 1705856055,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Jutarnjedrvo"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 3,
+										["r_amt"] = 0,
+									}, -- [1]
+									[348] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Jutarnjedrvo"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 348,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856053,
+							["damage_taken"] = 210.002762,
+							["start_time"] = 1705856044,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 675,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 675,
+					["_ActorTable"] = {
+						{
+							["received"] = 21.00825,
+							["resource"] = 0.00825,
+							["targets"] = {
+								["Jutarnjedrvo"] = 21,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.00825,
+							["total"] = 21.00825,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["total"] = 21,
+										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 21,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
+							["tipo"] = 3,
+							["passiveover"] = 0.00825,
+							["alternatepower"] = 0.00825,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705856044,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 675,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Burning Blade Neophyte"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 8,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 408525,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["last_event"] = 1705856050,
+							["buff_uptime"] = 16,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 1.005934,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["aID"] = "3196",
+							["fight_component"] = true,
+							["nome"] = "Burning Blade Neophyte",
+							["monster"] = true,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 675,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958504.236,
+				["tempo_start"] = 1705856042,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					236, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 21,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Jutarnjedrvo"] = {
+						{
+							true, -- [1]
+							348, -- [2]
+							3, -- [3]
+							1705856050.502, -- [4]
+							217, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							348, -- [2]
+							4, -- [3]
+							1705856053.502, -- [4]
+							221, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Burning Blade Neophyte"] = {
+						["Immolate"] = 1,
+					},
+					["Jutarnjedrvo"] = {
+						["Lightning Shield"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:54:11",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Neophyte",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958499.785,
+				["CombatEndedAt"] = 958499.785,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:54:03",
+				["end_time"] = 958499.785,
+				["combat_id"] = 675,
+				["frags"] = {
+					["Burning Blade Neophyte"] = 1,
+				},
+				["combat_counter"] = 1765,
+				["contra"] = "Burning Blade Neophyte",
+				["totals_grupo"] = {
+					210, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 21,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958492.001,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 210.007484,
+						}, -- [1]
+					},
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 674,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 202.004054,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 202.004054,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Thug"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Thug"] = 202,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705856040,
+							["totalabsorbed"] = 0.004054,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Burning Blade Thug"] = 124,
+										},
+										["n_total"] = 67,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 124,
+										["c_max"] = 57,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 57,
+										["successful_casted"] = 0,
+										["c_total"] = 57,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Burning Blade Thug"] = 62,
+										},
+										["n_total"] = 62,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 62,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Burning Blade Thug"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856038,
+							["damage_taken"] = 31.004054,
+							["start_time"] = 1705856032,
+							["delay"] = 0,
+							["last_dps"] = 26.819444237895,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 31.00733,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 31.00733,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3195-00002D4AFB",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 31,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.00733,
+							["fight_component"] = true,
+							["end_time"] = 1705856040,
+							["aID"] = "3195",
+							["nome"] = "Burning Blade Thug",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Jutarnjedrvo"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 13,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705856036,
+							["damage_taken"] = 202.00733,
+							["start_time"] = 1705856033,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 674,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 674,
+					["_ActorTable"] = {
+						{
+							["received"] = 21.005962,
+							["resource"] = 0.005962,
+							["targets"] = {
+								["Jutarnjedrvo"] = 21,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.005962,
+							["total"] = 21.005962,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["total"] = 21,
+										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 21,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
+							["tipo"] = 3,
+							["passiveover"] = 0.005962,
+							["alternatepower"] = 0.005962,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705856033,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 674,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["buff_uptime"] = 16,
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 408525,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705856040,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 674,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958491.719,
+				["tempo_start"] = 1705856032,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					233, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 21,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Molten Blast"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:54:00",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Thug",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958489.684,
+				["CombatEndedAt"] = 958489.684,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:53:53",
+				["end_time"] = 958489.684,
+				["combat_id"] = 674,
+				["frags"] = {
+					["Burning Blade Thug"] = 1,
+				},
+				["combat_counter"] = 1764,
+				["contra"] = "Burning Blade Thug",
+				["totals_grupo"] = {
+					202, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 21,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958482.152,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 202.004054,
+						}, -- [1]
+					},
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 673,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 180.004067,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 180.004067,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Thug"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Thug"] = 180,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705856028,
+							["totalabsorbed"] = 0.004067,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Burning Blade Thug"] = 133,
+										},
+										["n_total"] = 133,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 133,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
 									[425339] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 30,
 										["targets"] = {
-											["Flatland Cougar"] = 30,
+											["Burning Blade Thug"] = 30,
 										},
 										["n_total"] = 30,
 										["n_min"] = 30,
@@ -676,953 +1767,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Flatland Cougar"] = 33,
-										},
-										["n_total"] = 33,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 25.67597243235165,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 19.002196,
-							["start_time"] = 1705830607,
-							["delay"] = 0,
-							["last_event"] = 1705830614,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003008,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 19.003008,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.003008,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE52C",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 19,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830615,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Jutarnjedrvo"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 190.003008,
-							["start_time"] = 1705830608,
-							["delay"] = 0,
-							["last_event"] = 1705830612,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 609,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 609,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 609,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["debuff_uptime"] = 6,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830614,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 609,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 933100.634,
-				["tempo_start"] = 1705830607,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					209, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:50:15",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 933064.5160000001,
-				["CombatEndedAt"] = 933064.5160000001,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:50:08",
-				["end_time"] = 933064.5160000001,
-				["combat_id"] = 609,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 1699,
-				["totals_grupo"] = {
-					190, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 190.002196,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 933057.116,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 608,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007951,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 180.007951,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 180.007951,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 180,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830602,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Flatland Cougar"] = 62,
-										},
-										["n_total"] = 62,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 62,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Flatland Cougar"] = 6,
-										},
-										["n_total"] = 6,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 6,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Flatland Cougar"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Flatland Cougar"] = 63,
-										},
-										["n_total"] = 63,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Flatland Cougar"] = 33,
-										},
-										["n_total"] = 33,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 29.03822406829342,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 3.007951,
-							["start_time"] = 1705830596,
-							["delay"] = 0,
-							["last_event"] = 1705830601,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006655,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 3.006655,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 3.006655,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE680",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 3,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830602,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Jutarnjedrvo"] = 3,
-										},
-										["n_total"] = 3,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 3,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 3,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 180.006655,
-							["start_time"] = 1705830597,
-							["delay"] = 0,
-							["last_event"] = 1705830599,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 608,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 608,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 42.006165,
-							["resource"] = 0.006165,
-							["targets"] = {
-								["Jutarnjedrvo"] = 42,
-							},
-							["total"] = 42.006165,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.006165,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.006165,
-							["passiveover"] = 0.006165,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 42,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 42,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830599,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 608,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 2,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["debuff_uptime"] = 4,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830602,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 608,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 933056.481,
-				["tempo_start"] = 1705830596,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					183, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 42,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Lightning Shield"] = 1,
-						["Molten Blast"] = 2,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:50:02",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 933051.598,
-				["CombatEndedAt"] = 933051.598,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:49:56",
-				["end_time"] = 933051.598,
-				["combat_id"] = 608,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 1698,
-				["totals_grupo"] = {
-					180, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 42,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 180.007951,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 933045.399,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["combatId"] = 607,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008375,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 190.008375,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 190.008375,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 190,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830586,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Flatland Cougar"] = 90,
-										},
-										["n_total"] = 90,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 90,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Flatland Cougar"] = 40,
-										},
-										["n_total"] = 40,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[26364] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Flatland Cougar"] = 33,
+											["Burning Blade Thug"] = 17,
 										},
-										["n_total"] = 33,
-										["n_min"] = 16,
+										["n_total"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 33,
+										["counter"] = 1,
+										["total"] = 17,
 										["c_max"] = 0,
 										["id"] = 26364,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Flatland Cougar"] = 27,
-										},
-										["n_total"] = 27,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1635,62 +1796,64 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 23.84942575640621,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 27.008375,
-							["start_time"] = 1705830578,
+							["custom"] = 0,
+							["last_event"] = 1705856027,
+							["damage_taken"] = 24.004067,
+							["start_time"] = 1705856020,
 							["delay"] = 0,
-							["last_event"] = 1705830584,
+							["last_dps"] = 23.74097428102607,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001882,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 27.001882,
+							["total_without_pet"] = 24.002543,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 27.001882,
-							["on_hold"] = false,
+							["total"] = 24.002543,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE790",
-							["aID"] = "3035",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3195-00002D4B4F",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 27,
+								["Jutarnjedrvo"] = 24,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830596,
-							["nome"] = "Flatland Cougar",
+							["totalabsorbed"] = 0.002543,
+							["fight_component"] = true,
+							["end_time"] = 1705856028,
+							["aID"] = "3195",
+							["nome"] = "Burning Blade Thug",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 10,
+										["n_max"] = 16,
 										["targets"] = {
-											["Jutarnjedrvo"] = 27,
+											["Jutarnjedrvo"] = 24,
 										},
-										["n_total"] = 27,
-										["n_min"] = 3,
+										["n_total"] = 24,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 27,
+										["counter"] = 3,
+										["total"] = 24,
 										["c_max"] = 0,
-										["DODGE"] = 1,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1701,54 +1864,48 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 3,
+										["n_amt"] = 2,
+										["b_dmg"] = 8,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 190.001882,
-							["start_time"] = 1705830578,
+							["custom"] = 0,
+							["last_event"] = 1705856026,
+							["damage_taken"] = 180.002543,
+							["start_time"] = 1705856023,
 							["delay"] = 0,
-							["last_event"] = 1705830595,
+							["last_dps"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 607,
 					["tipo"] = 3,
+					["combatId"] = 673,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 607,
 					["tipo"] = 7,
+					["combatId"] = 673,
 					["_ActorTable"] = {
 						{
-							["received"] = 21.006477,
-							["resource"] = 0.006477,
+							["received"] = 21.006188,
+							["resource"] = 0.006188,
 							["targets"] = {
 								["Jutarnjedrvo"] = 21,
 							},
-							["total"] = 21.006477,
 							["pets"] = {
 							},
 							["powertype"] = 0,
-							["flag_original"] = 1297,
 							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.006477,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.006477,
-							["passiveover"] = 0.006477,
+							["totalover"] = 0.006188,
+							["total"] = 21.006188,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[408525] = {
 										["total"] = 21,
@@ -1760,72 +1917,70 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
-							["serial"] = "Player-5826-0235A66A",
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
 							["tipo"] = 3,
-							["last_event"] = 1705830595,
+							["passiveover"] = 0.006188,
+							["alternatepower"] = 0.006188,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705856023,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 607,
 					["tipo"] = 9,
+					["combatId"] = 673,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime"] = 13,
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 6,
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[408525] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 5,
+										["id"] = 408525,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 6,
-							["debuff_uptime"] = 6,
-							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830584,
+							["grupo"] = true,
+							["pets"] = {
+							},
 							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705856028,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 607,
 					["tipo"] = 2,
+					["combatId"] = 673,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1835,8 +1990,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 933045.148,
-				["tempo_start"] = 1705830578,
+				["CombatStartedAt"] = 958481.534,
+				["tempo_start"] = 1705856020,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -1848,7 +2003,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					217, -- [1]
+					204, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1860,10 +2015,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -1871,114 +2026,35 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Jutarnjedrvo"] = {
-						{
-							true, -- [1]
-							1, -- [2]
-							3, -- [3]
-							1705830596.041, -- [4]
-							252, -- [5]
-							"Flatland Cougar", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Jutarnjedrvo"] = {
 						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:49:46",
+				["data_fim"] = "17:53:49",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Cougar",
+				["enemy"] = "Burning Blade Thug",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 933035.431,
-				["CombatEndedAt"] = 933035.431,
+				["TotalElapsedCombatTime"] = 958477.917,
+				["CombatEndedAt"] = 958477.917,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:49:38",
-				["end_time"] = 933035.431,
-				["combat_id"] = 607,
+				["data_inicio"] = "17:53:41",
+				["end_time"] = 958477.917,
+				["combat_id"] = 673,
 				["frags"] = {
-					["Flatland Cougar"] = 1,
+					["Burning Blade Thug"] = 1,
 				},
-				["combat_counter"] = 1697,
+				["combat_counter"] = 1763,
+				["contra"] = "Burning Blade Thug",
 				["totals_grupo"] = {
-					190, -- [1]
+					180, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1990,1453 +2066,87 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958470.335,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 190.008375,
+							["Jutarnjedrvo"] = 180.004067,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 933027.464,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
 				},
 			}, -- [4]
 			{
 				{
-					["combatId"] = 606,
 					["tipo"] = 2,
+					["combatId"] = 672,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00267,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 169.00267,
+							["total_without_pet"] = 344.004583,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 169.00267,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 169,
-							},
+							["total"] = 344.004583,
 							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830551,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Prairie Stalker"] = 93,
-										},
-										["n_total"] = 93,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 93,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Prairie Stalker"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Prairie Stalker"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Prairie Stalker"] = 27,
-										},
-										["n_total"] = 27,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 35.46006504360478,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 9.00267,
-							["start_time"] = 1705830547,
-							["delay"] = 0,
-							["last_event"] = 1705830551,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007048,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 9.007048000000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 9.007048000000001,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-0000ACE7FE",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 9,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830551,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5,
-										["targets"] = {
-											["Jutarnjedrvo"] = 9,
-										},
-										["n_total"] = 9,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 9,
-										["c_max"] = 0,
-										["BLOCK"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 169.007048,
-							["start_time"] = 1705830547,
-							["delay"] = 0,
-							["last_event"] = 1705830550,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 606,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 606,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 19.008282,
-							["resource"] = 0.008282,
-							["targets"] = {
-								["Jutarnjedrvo"] = 19,
-							},
-							["total"] = 19.008282,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.008282,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.008282,
-							["passiveover"] = 0.008282,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 19,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 19,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830549,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 606,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 6,
-							["debuff_uptime"] = 4,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830551,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 606,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 933027.331,
-				["tempo_start"] = 1705830547,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					178, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 19,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:49:12",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Stalker",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 933001.079,
-				["CombatEndedAt"] = 933001.079,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:49:07",
-				["end_time"] = 933001.079,
-				["combat_id"] = 606,
-				["frags"] = {
-					["Prairie Stalker"] = 1,
-				},
-				["combat_counter"] = 1696,
-				["totals_grupo"] = {
-					169, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 19,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 169.00267,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932996.313,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
-				},
-			}, -- [5]
-			{
-				{
-					["combatId"] = 605,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002881,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 175.002881,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 175.002881,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Burning Blade Cultist"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 175,
+								["Burning Blade Cultist"] = 235,
+								["Imp Minion"] = 109,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830538,
+							["end_time"] = 1705855965,
+							["totalabsorbed"] = 0.004583,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 37,
+										["n_max"] = 38,
 										["targets"] = {
-											["Flatland Cougar"] = 98,
+											["Burning Blade Cultist"] = 171,
+											["Imp Minion"] = 38,
 										},
-										["n_total"] = 98,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 98,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Flatland Cougar"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Flatland Cougar"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Flatland Cougar"] = 28,
-										},
-										["n_total"] = 28,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 28,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 29.41224890779321,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 15.002881,
-							["start_time"] = 1705830532,
-							["delay"] = 0,
-							["last_event"] = 1705830536,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005262,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 15.005262,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 15.005262,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE7DE",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 15,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830538,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Jutarnjedrvo"] = 15,
-										},
-										["n_total"] = 15,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 175.005262,
-							["start_time"] = 1705830533,
-							["delay"] = 0,
-							["last_event"] = 1705830535,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 605,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 605,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 605,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 6,
-							["debuff_uptime"] = 3,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830538,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 605,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 932996.212,
-				["tempo_start"] = 1705830532,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					190, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:48:58",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 932987.713,
-				["CombatEndedAt"] = 932987.713,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:48:53",
-				["end_time"] = 932987.713,
-				["combat_id"] = 605,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 1695,
-				["totals_grupo"] = {
-					175, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 175.002881,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932981.763,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
-				},
-			}, -- [6]
-			{
-				{
-					["combatId"] = 604,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00394,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 193.00394,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 193.00394,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 193,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830507,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Prairie Stalker"] = 120,
-										},
-										["n_total"] = 120,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 120,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Prairie Stalker"] = 42,
-										},
-										["n_total"] = 42,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Prairie Stalker"] = 31,
-										},
-										["n_total"] = 31,
+										["n_total"] = 209,
 										["n_min"] = 31,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 20.63992514189959,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 25.00394,
-							["start_time"] = 1705830497,
-							["delay"] = 0,
-							["last_event"] = 1705830506,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005304,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 25.005304,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 25.005304,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CE7D4",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 25,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830507,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Jutarnjedrvo"] = 25,
-										},
-										["n_total"] = 25,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
 										["counter"] = 6,
-										["DODGE"] = 1,
-										["total"] = 25,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 193.005304,
-							["start_time"] = 1705830497,
-							["delay"] = 0,
-							["last_event"] = 1705830505,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 604,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 604,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 604,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["classe"] = "SHAMAN",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 9,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830506,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 604,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 932981.213,
-				["tempo_start"] = 1705830497,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					218, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:48:27",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Stalker",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 932956.144,
-				["CombatEndedAt"] = 932956.144,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:48:18",
-				["end_time"] = 932956.144,
-				["combat_id"] = 604,
-				["frags"] = {
-					["Prairie Stalker"] = 1,
-				},
-				["combat_counter"] = 1694,
-				["totals_grupo"] = {
-					193, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 193.00394,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932946.7930000001,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
-				},
-			}, -- [7]
-			{
-				{
-					["combatId"] = 603,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005842,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 197.005842,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 197.005842,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Prairie Stalker"] = true,
-							},
-							["targets"] = {
-								["Prairie Stalker"] = 197,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830491,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Prairie Stalker"] = 165,
-										},
-										["n_total"] = 97,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 165,
-										["c_max"] = 68,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 68,
-										["successful_casted"] = 0,
-										["c_total"] = 68,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Prairie Stalker"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 20.95583895314506,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 36.005842,
-							["start_time"] = 1705830481,
-							["delay"] = 0,
-							["last_event"] = 1705830490,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007397,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 36.007397,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 36.007397,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CE795",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 36,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830491,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Jutarnjedrvo"] = 36,
-										},
-										["n_total"] = 36,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 36,
+										["total"] = 209,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3452,72 +2162,324 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Imp Minion"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Burning Blade Cultist"] = 30,
+											["Imp Minion"] = 31,
+										},
+										["n_total"] = 61,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 61,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8050] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Burning Blade Cultist"] = 34,
+										},
+										["n_total"] = 34,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 8050,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855964,
+							["damage_taken"] = 53.004583,
+							["start_time"] = 1705855951,
+							["delay"] = 0,
+							["last_dps"] = 24.2821051033822,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 53.006417,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 53.006417,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D1A40",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 53,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006417,
+							["fight_component"] = true,
+							["end_time"] = 1705855965,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Jutarnjedrvo"] = 53,
+										},
+										["n_total"] = 53,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 3,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855963,
+							["damage_taken"] = 235.006417,
+							["start_time"] = 1705855951,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 70216,
+							["pets"] = {
+							},
+							["aID"] = "12922",
+							["total_without_pet"] = 0.003287,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.003287,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D1A50",
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855965,
+							["totalabsorbed"] = 0.003287,
+							["nome"] = "Imp Minion",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 197.007397,
-							["start_time"] = 1705830482,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 109.003287,
+							["start_time"] = 1705855965,
 							["delay"] = 0,
-							["last_event"] = 1705830489,
-						}, -- [2]
+							["last_dps"] = 0,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 603,
 					["tipo"] = 3,
+					["combatId"] = 672,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 603,
 					["tipo"] = 7,
+					["combatId"] = 672,
 					["_ActorTable"] = {
+						{
+							["received"] = 22.005548,
+							["resource"] = 0.005548,
+							["targets"] = {
+								["Jutarnjedrvo"] = 22,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.005548,
+							["total"] = 22.005548,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["total"] = 22,
+										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 22,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
+							["tipo"] = 3,
+							["passiveover"] = 0.005548,
+							["alternatepower"] = 0.005548,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855959,
+						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 603,
 					["tipo"] = 9,
+					["combatId"] = 672,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
+									[8050] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 4,
+										["id"] = 8050,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 5,
-							["grupo"] = true,
-							["aID"] = "5826-0235A66A",
+							["buff_uptime"] = 6,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = 408525,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 4,
+							["buff_uptime_targets"] = {
+							},
 							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830487,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["last_event"] = 1705855965,
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-5826-0235A66A",
+							["aID"] = "5826-0235A66A",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 603,
 					["tipo"] = 2,
+					["combatId"] = 672,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3527,8 +2489,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932946.46,
-				["tempo_start"] = 1705830481,
+				["CombatStartedAt"] = 958469.834,
+				["tempo_start"] = 1705855951,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3540,11 +2502,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					233, -- [1]
+					717, -- [1]
 					0, -- [2]
 					{
-						0, -- [1]
-						[0] = 0,
+						9, -- [1]
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3552,10 +2514,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3567,34 +2529,38 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Jutarnjedrvo"] = {
+						["Flame Shock"] = 1,
 						["Molten Blast"] = 1,
+						["Earth Shock"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:48:11",
+				["data_fim"] = "17:52:46",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Burning Blade Cultist",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932940.361,
-				["CombatEndedAt"] = 932940.361,
+				["TotalElapsedCombatTime"] = 958415.115,
+				["CombatEndedAt"] = 958415.115,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:48:02",
-				["end_time"] = 932940.361,
-				["combat_id"] = 603,
+				["data_inicio"] = "17:52:32",
+				["end_time"] = 958415.115,
+				["combat_id"] = 672,
 				["frags"] = {
-					["Prairie Stalker"] = 1,
+					["Burning Blade Cultist"] = 1,
+					["Imp Minion"] = 1,
 				},
-				["combat_counter"] = 1693,
+				["combat_counter"] = 1762,
+				["contra"] = "Imp Minion",
 				["totals_grupo"] = {
-					197, -- [1]
+					344, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3602,88 +2568,314 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958400.948,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 197.005842,
+							["Jutarnjedrvo"] = 344.004583,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932930.96,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
-				},
-			}, -- [8]
+			}, -- [5]
 			{
 				{
-					["combatId"] = 602,
 					["tipo"] = 2,
+					["combatId"] = 671,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001944,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 198.001944,
+							["total_without_pet"] = 336.008985,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 198.001944,
+							["total"] = 336.008985,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Prairie Stalker"] = true,
+								["Imp Minion"] = true,
+								["Burning Blade Cultist"] = true,
 							},
 							["targets"] = {
-								["Prairie Stalker"] = 198,
+								["Imp Minion"] = 90,
+								["Burning Blade Cultist"] = 246,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830473,
+							["end_time"] = 1705855947,
+							["totalabsorbed"] = 0.008985,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 33,
+										["n_max"] = 37,
 										["targets"] = {
-											["Prairie Stalker"] = 94,
+											["Imp Minion"] = 33,
+											["Burning Blade Cultist"] = 142,
 										},
-										["n_total"] = 94,
+										["n_total"] = 175,
+										["n_min"] = 33,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 175,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Imp Minion"] = 41,
+											["Burning Blade Cultist"] = 41,
+										},
+										["n_total"] = 82,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 82,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Burning Blade Cultist"] = 30,
+										},
+										["n_total"] = 30,
 										["n_min"] = 30,
 										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Imp Minion"] = 16,
+											["Burning Blade Cultist"] = 33,
+										},
+										["n_total"] = 49,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 94,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855946,
+							["damage_taken"] = 66.008985,
+							["start_time"] = 1705855931,
+							["delay"] = 0,
+							["last_dps"] = 20.59130929024492,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["aID"] = "12922",
+							["total_without_pet"] = 37.003561,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 37.003561,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D27DA",
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 37,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855947,
+							["totalabsorbed"] = 0.003561,
+							["nome"] = "Imp Minion",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Jutarnjedrvo"] = 37,
+										},
+										["n_total"] = 37,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 20801,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855940,
+							["damage_taken"] = 90.003561,
+							["start_time"] = 1705855933,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 29.004929,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 29.004929,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D27D8",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 29,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.004929,
+							["fight_component"] = true,
+							["end_time"] = 1705855947,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Jutarnjedrvo"] = 29,
+										},
+										["n_total"] = 29,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 29,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -3699,23 +2891,285 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Prairie Stalker"] = 42,
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855935,
+							["damage_taken"] = 246.004929,
+							["start_time"] = 1705855942,
+							["delay"] = 1705855935,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 671,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 671,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 671,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 2,
 										},
-										["n_total"] = 42,
-										["n_min"] = 9,
+										["targets"] = {
+											["Imp Minion"] = 1,
+											["Burning Blade Cultist"] = 1,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 2,
+							},
+							["last_event"] = 1705855944,
+							["buff_uptime"] = 9,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Imp Minion"] = 1,
+								["Burning Blade Cultist"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 2.006763,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D27DA",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 671,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958400.5970000001,
+				["tempo_start"] = 1705855931,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					402, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Imp Minion"] = {
+						["Firebolt"] = 3,
+					},
+					["Jutarnjedrvo"] = {
+						["Molten Blast"] = 1,
+						["Earth Shock"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:52:27",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Cultist",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958396.5480000001,
+				["CombatEndedAt"] = 958396.5480000001,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:52:11",
+				["end_time"] = 958396.5480000001,
+				["combat_id"] = 671,
+				["frags"] = {
+					["Imp Minion"] = 1,
+					["Burning Blade Cultist"] = 1,
+				},
+				["combat_counter"] = 1761,
+				["contra"] = "Burning Blade Cultist",
+				["totals_grupo"] = {
+					336, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958380.23,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 336.008985,
+						}, -- [1]
+					},
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 670,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 351.002612,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 351.002612,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Imp Minion"] = true,
+								["Burning Blade Cultist"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Cultist"] = 248,
+								["Imp Minion"] = 103,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855895,
+							["totalabsorbed"] = 0.002612,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Imp Minion"] = 56,
+											["Burning Blade Cultist"] = 158,
+										},
+										["n_total"] = 214,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 42,
+										["counter"] = 8,
+										["total"] = 214,
 										["c_max"] = 0,
-										["id"] = 8050,
+										["MISS"] = 1,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -3723,7 +3177,35 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 7,
+										["b_dmg"] = 22,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Burning Blade Cultist"] = 39,
+										},
+										["n_total"] = 39,
+										["n_min"] = 39,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 39,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3733,7 +3215,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Prairie Stalker"] = 34,
+											["Imp Minion"] = 17,
+											["Burning Blade Cultist"] = 17,
 										},
 										["n_total"] = 34,
 										["n_min"] = 17,
@@ -3759,557 +3242,20 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 28,
+										["n_max"] = 34,
 										["targets"] = {
-											["Prairie Stalker"] = 28,
+											["Burning Blade Cultist"] = 34,
+											["Imp Minion"] = 30,
 										},
-										["n_total"] = 28,
-										["n_min"] = 28,
+										["n_total"] = 64,
+										["n_min"] = 30,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 28,
+										["counter"] = 2,
+										["total"] = 64,
 										["c_max"] = 0,
 										["id"] = 425339,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 32.46465715666806,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 18.001944,
-							["start_time"] = 1705830467,
-							["delay"] = 0,
-							["last_event"] = 1705830473,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001777,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 18.001777,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 18.001777,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CE66B",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 18,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830473,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Jutarnjedrvo"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 18,
-										["c_max"] = 0,
-										["BLOCK"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 198.001777,
-							["start_time"] = 1705830468,
-							["delay"] = 0,
-							["last_event"] = 1705830472,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 602,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 602,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 20.003894,
-							["resource"] = 0.003894,
-							["targets"] = {
-								["Jutarnjedrvo"] = 20,
-							},
-							["total"] = 20.003894,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.003894,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.003894,
-							["passiveover"] = 0.003894,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 20,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 20,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830472,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 602,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime"] = 9,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 2,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 6,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830473,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 602,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 932930.711,
-				["tempo_start"] = 1705830467,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					216, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 20,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:47:53",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Stalker",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 932922.0920000001,
-				["CombatEndedAt"] = 932922.0920000001,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:47:47",
-				["end_time"] = 932922.0920000001,
-				["combat_id"] = 602,
-				["frags"] = {
-					["Prairie Stalker"] = 1,
-				},
-				["combat_counter"] = 1692,
-				["totals_grupo"] = {
-					198, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 20,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 198.001944,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932915.993,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
-				},
-			}, -- [9]
-			{
-				{
-					["combatId"] = 601,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008013,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 174.008013,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 174.008013,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Flatland Cougar"] = true,
-							},
-							["targets"] = {
-								["Flatland Cougar"] = 174,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830457,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Flatland Cougar"] = 102,
-										},
-										["n_total"] = 32,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 102,
-										["c_max"] = 70,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 70,
-										["successful_casted"] = 0,
-										["c_total"] = 70,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Flatland Cougar"] = 25,
-										},
-										["n_total"] = 25,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 25,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Flatland Cougar"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Flatland Cougar"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 49.9735821372778,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 9.008013,
-							["start_time"] = 1705830454,
-							["delay"] = 0,
-							["last_event"] = 1705830457,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007616,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 9.007615999999999,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 9.007615999999999,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE828",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 9,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830457,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Jutarnjedrvo"] = 9,
-										},
-										["n_total"] = 9,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 9,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -4318,312 +3264,134 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 174.007616,
-							["start_time"] = 1705830454,
+							["custom"] = 0,
+							["last_event"] = 1705855895,
+							["damage_taken"] = 112.002612,
+							["start_time"] = 1705855878,
 							["delay"] = 0,
-							["last_event"] = 1705830455,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 601,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 601,
-					["tipo"] = 7,
-					["_ActorTable"] = {
+							["last_dps"] = 20.66788035093011,
+						}, -- [1]
 						{
-							["received"] = 19.004265,
-							["resource"] = 0.004265,
-							["targets"] = {
-								["Jutarnjedrvo"] = 19,
-							},
-							["total"] = 19.004265,
+							["flag_original"] = 4680,
 							["pets"] = {
 							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.004265,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.004265,
-							["passiveover"] = 0.004265,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 19,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 19,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830455,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 601,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 5,
-							["debuff_uptime"] = 2,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830457,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 601,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["CombatStartedAt"] = 932915.66,
-				["tempo_start"] = 1705830454,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					183, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 19,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Lightning Shield"] = 1,
-						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:47:37",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Flatland Cougar",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 3.481999999959953,
-				["CombatEndedAt"] = 932906.358,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:47:34",
-				["end_time"] = 932906.358,
-				["combat_id"] = 601,
-				["frags"] = {
-					["Flatland Cougar"] = 1,
-				},
-				["combat_counter"] = 1691,
-				["totals_grupo"] = {
-					174, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 19,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 174.008013,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932902.876,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
-				},
-			}, -- [10]
-			{
-				{
-					["combatId"] = 600,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002059,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 340.002059,
+							["aID"] = "12922",
+							["total_without_pet"] = 64.005639,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 340.002059,
+							["total"] = 64.005639,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D451A",
 							["damage_from"] = {
-								["Venture Co. Taskmaster"] = true,
-								["Venture Co. Laborer"] = true,
+								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Venture Co. Taskmaster"] = 185,
-								["Venture Co. Laborer"] = 155,
+								["Jutarnjedrvo"] = 64,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830435,
-							["nome"] = "Jutarnjedrvo",
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855895,
+							["totalabsorbed"] = 0.005639,
+							["nome"] = "Imp Minion",
 							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Jutarnjedrvo"] = 64,
+										},
+										["n_total"] = 64,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 20801,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
 								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855892,
+							["damage_taken"] = 103.005639,
+							["start_time"] = 1705855880,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 48.006948,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 48.006948,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D4516",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 48,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006948,
+							["fight_component"] = true,
+							["end_time"] = 1705855895,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 38,
+										["n_max"] = 11,
 										["targets"] = {
-											["Venture Co. Taskmaster"] = 94,
-											["Venture Co. Laborer"] = 68,
+											["Jutarnjedrvo"] = 48,
 										},
-										["n_total"] = 162,
-										["n_min"] = 29,
+										["n_total"] = 48,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 162,
+										["total"] = 48,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -4639,17 +3407,435 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855890,
+							["damage_taken"] = 248.006948,
+							["start_time"] = 1705855879,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 670,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.004688,
+							["total_without_pet"] = 89.004688,
+							["total"] = 89.004688,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
+							["totalabsorb"] = 0.004688,
+							["last_hps"] = 5.240810693043688,
+							["targets"] = {
+								["Jutarnjedrvo"] = 89,
+							},
+							["totalover_without_pet"] = 0.004688,
+							["tipo"] = 2,
+							["healing_taken"] = 89.004688,
+							["fight_component"] = true,
+							["end_time"] = 1705855895,
+							["targets_overheal"] = {
+							},
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[439] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 89,
+										["targets"] = {
+											["Jutarnjedrvo"] = 89,
+										},
+										["n_total"] = 89,
+										["n_min"] = 89,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 89,
+										["c_max"] = 0,
+										["id"] = 439,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 1,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["start_time"] = 1705855892,
+							["classe"] = "SHAMAN",
+							["custom"] = 0,
+							["last_event"] = 1705855892,
+							["totaldenied"] = 0.004688,
+							["delay"] = 0,
+							["aID"] = "5826-0235A66A",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 670,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 670,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime"] = 4,
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Burning Blade Cultist"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Cultist"] = 1,
+							},
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 4,
+							["interrupt"] = 1.005916,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855884,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D451A",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 670,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958378.713,
+				["tempo_start"] = 1705855878,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					463, -- [1]
+					89, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Healing Potion"] = 1,
+						["Rockbiter Weapon"] = 1,
+						["Earth Shock"] = 1,
+					},
+					["Imp Minion"] = {
+						["Firebolt"] = 5,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:51:35",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Imp Minion",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958344.211,
+				["CombatEndedAt"] = 958344.211,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:51:18",
+				["end_time"] = 958344.211,
+				["combat_id"] = 670,
+				["frags"] = {
+					["Imp Minion"] = 1,
+					["Burning Blade Cultist"] = 1,
+				},
+				["combat_counter"] = 1760,
+				["contra"] = "Imp Minion",
+				["totals_grupo"] = {
+					351, -- [1]
+					89, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958327.228,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Jutarnjedrvo"] = 89.004688,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 351.002612,
+						}, -- [1]
+					},
+				},
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 669,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 345.006358,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 345.006358,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Cultist"] = true,
+								["Burning Blade Neophyte"] = true,
+								["Imp Minion"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Cultist"] = 231,
+								["Imp Minion"] = 114,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855868,
+							["totalabsorbed"] = 0.006358,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Burning Blade Cultist"] = 136,
+										},
+										["n_total"] = 136,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 136,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Imp Minion"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Imp Minion"] = 17,
+											["Burning Blade Cultist"] = 34,
+										},
+										["n_total"] = 51,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 51,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[425339] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["n_max"] = 33,
 										["targets"] = {
-											["Venture Co. Taskmaster"] = 91,
-											["Venture Co. Laborer"] = 27,
+											["Burning Blade Cultist"] = 61,
+											["Imp Minion"] = 57,
 										},
 										["n_total"] = 118,
-										["n_min"] = 27,
+										["n_min"] = 28,
 										["g_dmg"] = 0,
 										["counter"] = 4,
 										["total"] = 118,
@@ -4668,23 +3854,67 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[8050] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855866,
+							["damage_taken"] = 86.006358,
+							["start_time"] = 1705855857,
+							["delay"] = 0,
+							["last_dps"] = 31.60267088023263,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 45.008358,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 45.008358,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D43EE",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 45,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.008358,
+							["fight_component"] = true,
+							["end_time"] = 1705855868,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 24,
+										["n_max"] = 11,
 										["targets"] = {
-											["Venture Co. Laborer"] = 60,
+											["Jutarnjedrvo"] = 45,
 										},
-										["n_total"] = 60,
-										["n_min"] = 9,
+										["n_total"] = 45,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 60,
+										["total"] = 45,
 										["c_max"] = 0,
-										["id"] = 8050,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -4695,62 +3925,403 @@ _detalhes_database = {
 										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 19.31720123866719,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 79.002059,
-							["start_time"] = 1705830416,
+							["custom"] = 0,
+							["last_event"] = 1705855866,
+							["damage_taken"] = 231.008358,
+							["start_time"] = 1705855858,
 							["delay"] = 0,
-							["last_event"] = 1705830435,
-						}, -- [1]
+							["last_dps"] = 0,
+						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007182,
+							["flag_original"] = 4680,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 62.007182,
+							["aID"] = "12922",
+							["total_without_pet"] = 38.002961,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 62.007182,
+							["total"] = 38.002961,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2977-00002CE1FD",
-							["aID"] = "2977",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D43F1",
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 62,
+								["Jutarnjedrvo"] = 38,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830435,
-							["nome"] = "Venture Co. Taskmaster",
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855868,
+							["totalabsorbed"] = 0.002961,
+							["nome"] = "Imp Minion",
 							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Jutarnjedrvo"] = 38,
+										},
+										["n_total"] = 38,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 38,
+										["c_max"] = 0,
+										["id"] = 20801,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
 								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855865,
+							["damage_taken"] = 114.002961,
+							["start_time"] = 1705855859,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 3.006142,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 3.006142,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D450B",
+							["on_hold"] = false,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 3,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006142,
+							["fight_component"] = true,
+							["end_time"] = 1705855868,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
+							["spells"] = {
+								["_ActorTable"] = {
+									[348] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Jutarnjedrvo"] = 3,
+										},
+										["n_total"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = 348,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855860,
+							["damage_taken"] = 0.006142,
+							["start_time"] = 1705855860,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 669,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 669,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 669,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime"] = 18,
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 408525,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 11,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855868,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D43F1",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 669,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958326.411,
+				["tempo_start"] = 1705855857,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					431, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Lightning Shield"] = 1,
+						["Molten Blast"] = 1,
+						["Earth Shock"] = 1,
+					},
+					["Imp Minion"] = {
+						["Firebolt"] = 3,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:51:08",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Imp Minion",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958317.128,
+				["CombatEndedAt"] = 958317.128,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:50:57",
+				["end_time"] = 958317.128,
+				["combat_id"] = 669,
+				["frags"] = {
+					["Imp Minion"] = 1,
+					["Burning Blade Cultist"] = 1,
+				},
+				["combat_counter"] = 1759,
+				["contra"] = "Imp Minion",
+				["totals_grupo"] = {
+					345, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958306.211,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 345.006358,
+						}, -- [1]
+					},
+				},
+			}, -- [8]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 668,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 226.004703,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 226.004703,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Neophyte"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Neophyte"] = 226,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855851,
+							["totalabsorbed"] = 0.004703,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 33,
 										["targets"] = {
-											["Jutarnjedrvo"] = 45,
+											["Burning Blade Neophyte"] = 88,
 										},
-										["n_total"] = 45,
-										["n_min"] = 2,
+										["n_total"] = 88,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 45,
+										["counter"] = 4,
+										["total"] = 88,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -4763,25 +4334,53 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 2,
+										["n_amt"] = 3,
+										["b_dmg"] = 27,
 										["r_amt"] = 0,
 									}, -- [1]
-									[5679] = {
+									[8044] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 41,
 										["targets"] = {
-											["Jutarnjedrvo"] = 17,
+											["Burning Blade Neophyte"] = 41,
 										},
-										["n_total"] = 17,
-										["n_min"] = 8,
+										["n_total"] = 41,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 64,
+										},
+										["n_total"] = 64,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 17,
+										["total"] = 64,
 										["c_max"] = 0,
-										["id"] = 5679,
+										["id"] = 425339,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -4795,61 +4394,1429 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 33,
+										},
+										["n_total"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 185.007182,
-							["start_time"] = 1705830418,
+							["custom"] = 0,
+							["last_event"] = 1705855850,
+							["damage_taken"] = 32.004703,
+							["start_time"] = 1705855840,
 							["delay"] = 0,
-							["last_event"] = 1705830433,
-						}, -- [2]
+							["last_dps"] = 20.42149661169048,
+						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006603,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 17.006603,
+							["total_without_pet"] = 32.004278,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 17.006603,
-							["on_hold"] = false,
+							["total"] = 32.004278,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2976-00002CE40D",
-							["aID"] = "2976",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D450B",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 17,
+								["Jutarnjedrvo"] = 32,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830435,
-							["nome"] = "Venture Co. Laborer",
+							["totalabsorbed"] = 0.004278,
+							["fight_component"] = true,
+							["end_time"] = 1705855857,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
 							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Jutarnjedrvo"] = 8,
+										},
+										["n_total"] = 8,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 8,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 8,
+										["r_amt"] = 0,
+									}, -- [1]
+									[348] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Jutarnjedrvo"] = 24,
+										},
+										["n_total"] = 24,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 348,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
 								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855857,
+							["damage_taken"] = 226.004278,
+							["start_time"] = 1705855843,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 668,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 668,
+					["_ActorTable"] = {
+						{
+							["received"] = 42.002197,
+							["resource"] = 0.002197,
+							["targets"] = {
+								["Jutarnjedrvo"] = 42,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.002197,
+							["total"] = 42.002197,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["total"] = 42,
+										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 42,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
+							["tipo"] = 3,
+							["passiveover"] = 0.002197,
+							["alternatepower"] = 0.002197,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855849,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 668,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Burning Blade Neophyte"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 11,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 408525,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["last_event"] = 1705855851,
+							["buff_uptime"] = 19,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 1.005711,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["aID"] = "3196",
+							["fight_component"] = true,
+							["nome"] = "Burning Blade Neophyte",
+							["monster"] = true,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D450B",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 668,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958305.827,
+				["tempo_start"] = 1705855840,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					258, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Jutarnjedrvo"] = {
+						{
+							true, -- [1]
+							348, -- [2]
+							4, -- [3]
+							1705855853.661, -- [4]
+							260, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+							true, -- [1]
+							348, -- [2]
+							4, -- [3]
+							1705855856.577, -- [4]
+							263, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Burning Blade Neophyte"] = {
+						["Immolate"] = 1,
+					},
+					["Jutarnjedrvo"] = {
+						["Molten Blast"] = 2,
+						["Lightning Shield"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:50:51",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Neophyte",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958300.144,
+				["CombatEndedAt"] = 958300.144,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:50:40",
+				["end_time"] = 958300.144,
+				["combat_id"] = 668,
+				["frags"] = {
+					["Burning Blade Neophyte"] = 1,
+				},
+				["combat_counter"] = 1758,
+				["contra"] = "Burning Blade Neophyte",
+				["totals_grupo"] = {
+					226, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958289.077,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 226.004703,
+						}, -- [1]
+					},
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 667,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 377.006138,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 377.006138,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Imp Minion"] = true,
+								["Burning Blade Cultist"] = true,
+							},
+							["targets"] = {
+								["Imp Minion"] = 116,
+								["Burning Blade Cultist"] = 261,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855801,
+							["totalabsorbed"] = 0.006138,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 39,
+										["targets"] = {
+											["Imp Minion"] = 39,
+											["Burning Blade Cultist"] = 122,
+										},
+										["n_total"] = 70,
+										["n_min"] = 31,
+										["g_dmg"] = 28,
+										["counter"] = 5,
+										["total"] = 161,
+										["c_max"] = 63,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 63,
+										["successful_casted"] = 0,
+										["c_total"] = 63,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Burning Blade Cultist"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Imp Minion"] = 16,
+											["Burning Blade Cultist"] = 33,
+										},
+										["n_total"] = 49,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Burning Blade Cultist"] = 66,
+											["Imp Minion"] = 61,
+										},
+										["n_total"] = 127,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 127,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855800,
+							["damage_taken"] = 68.00613799999999,
+							["start_time"] = 1705855790,
+							["delay"] = 0,
+							["last_dps"] = 33.66126232121864,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["aID"] = "12922",
+							["total_without_pet"] = 39.008918,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 39.008918,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D44E1",
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 39,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855801,
+							["totalabsorbed"] = 0.008918,
+							["nome"] = "Imp Minion",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Jutarnjedrvo"] = 39,
+										},
+										["n_total"] = 39,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 39,
+										["c_max"] = 0,
+										["id"] = 20801,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855800,
+							["damage_taken"] = 116.008918,
+							["start_time"] = 1705855794,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 29.006639,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 29.006639,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D44DC",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 29,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006639,
+							["fight_component"] = true,
+							["end_time"] = 1705855801,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Jutarnjedrvo"] = 29,
+										},
+										["n_total"] = 29,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855796,
+							["damage_taken"] = 261.006639,
+							["start_time"] = 1705855792,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 667,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 667,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 667,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime"] = 11,
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 11,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855801,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D44E1",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 667,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958288.809,
+				["tempo_start"] = 1705855790,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					445, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Imp Minion"] = {
+						["Firebolt"] = 3,
+					},
+					["Jutarnjedrvo"] = {
+						["Lightning Shield"] = 1,
+						["Molten Blast"] = 2,
+						["Earth Shock"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:50:02",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Cultist",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958251.241,
+				["CombatEndedAt"] = 958251.241,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:49:51",
+				["end_time"] = 958251.241,
+				["combat_id"] = 667,
+				["frags"] = {
+					["Imp Minion"] = 1,
+					["Burning Blade Cultist"] = 1,
+				},
+				["combat_counter"] = 1757,
+				["contra"] = "Burning Blade Cultist",
+				["totals_grupo"] = {
+					377, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958240.041,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 377.006138,
+						}, -- [1]
+					},
+				},
+			}, -- [10]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 666,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 238.008416,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 238.008416,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Neophyte"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Neophyte"] = 238,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855761,
+							["totalabsorbed"] = 0.008416,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 11,
+										["n_max"] = 33,
 										["targets"] = {
-											["Jutarnjedrvo"] = 17,
+											["Burning Blade Neophyte"] = 118,
+										},
+										["n_total"] = 118,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 26,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8044] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 103,
+										},
+										["n_total"] = 41,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 103,
+										["c_max"] = 62,
+										["id"] = 8044,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 62,
+										["successful_casted"] = 0,
+										["c_total"] = 62,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 17,
 										},
 										["n_total"] = 17,
-										["n_min"] = 6,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 1,
 										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855760,
+							["damage_taken"] = 21.008416,
+							["start_time"] = 1705855753,
+							["delay"] = 0,
+							["last_dps"] = 30.57269312768188,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 21.004005,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 21.004005,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D44DC",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 21,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.004005,
+							["fight_component"] = true,
+							["end_time"] = 1705855761,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Jutarnjedrvo"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855757,
+							["damage_taken"] = 238.004005,
+							["start_time"] = 1705855755,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 666,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 666,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 666,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 2,
+										},
+										["targets"] = {
+											["Burning Blade Neophyte"] = 2,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 2,
+							},
+							["last_event"] = 1705855761,
+							["buff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 2,
+							},
+							["grupo"] = true,
+							["interrupt"] = 2.002162,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 666,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Jutarnjedrvo"] = "Player-5826-0235A66A",
+				},
+				["raid_roster_indexed"] = {
+					"Jutarnjedrvo", -- [1]
+				},
+				["CombatStartedAt"] = 958239.8910000001,
+				["tempo_start"] = 1705855753,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					259, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Earth Shock"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:49:22",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Burning Blade Neophyte",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 958210.773,
+				["CombatEndedAt"] = 958210.773,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "17:49:14",
+				["end_time"] = 958210.773,
+				["combat_id"] = 666,
+				["frags"] = {
+					["Burning Blade Neophyte"] = 1,
+				},
+				["combat_counter"] = 1756,
+				["contra"] = "Burning Blade Neophyte",
+				["totals_grupo"] = {
+					238, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958202.988,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Jutarnjedrvo"] = 238.008416,
+						}, -- [1]
+					},
+				},
+			}, -- [11]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 665,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["total_without_pet"] = 228.00693,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 228.00693,
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-0235A66A",
+							["damage_from"] = {
+								["Burning Blade Neophyte"] = true,
+							},
+							["targets"] = {
+								["Burning Blade Neophyte"] = 228,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705855738,
+							["totalabsorbed"] = 0.00693,
+							["aID"] = "5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 34,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 125,
+										},
+										["n_total"] = 93,
+										["n_min"] = 29,
+										["g_dmg"] = 32,
+										["counter"] = 5,
+										["total"] = 125,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
@@ -4862,364 +5829,148 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 6,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 155.006603,
-							["start_time"] = 1705830420,
-							["delay"] = 0,
-							["last_event"] = 1705830427,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 600,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 600,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 39.008011,
-							["resource"] = 0.008011,
-							["targets"] = {
-								["Jutarnjedrvo"] = 39,
-							},
-							["total"] = 39.008011,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.008011,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.008011,
-							["passiveover"] = 0.008011,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 39,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 39,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830420,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 600,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime"] = 17,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 13,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830435,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 600,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Jutarnjedrvo"] = "Player-5826-0235A66A",
-				},
-				["raid_roster_indexed"] = {
-					"Jutarnjedrvo", -- [1]
-				},
-				["tempo_start"] = 1705830416,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					419, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 39,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 3,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:47:15",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Laborer",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 932884.208,
-				["CombatEndedAt"] = 932884.208,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:46:57",
-				["end_time"] = 932884.208,
-				["combat_id"] = 600,
-				["frags"] = {
-					["Venture Co. Taskmaster"] = 1,
-					["Venture Co. Laborer"] = 1,
-				},
-				["combat_counter"] = 1690,
-				["totals_grupo"] = {
-					340, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 39,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Jutarnjedrvo"] = 340.002059,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932866.6070000001,
-				["contra"] = "Venture Co. Laborer",
-				["TimeData"] = {
-				},
-			}, -- [11]
-			{
-				{
-					["combatId"] = 599,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001686,
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["total_without_pet"] = 139.001686,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 139.001686,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-0235A66A",
-							["damage_from"] = {
-								["Venture Co. Laborer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Laborer"] = 139,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830412,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
+									[8044] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 36,
+										["n_max"] = 39,
 										["targets"] = {
-											["Venture Co. Laborer"] = 139,
+											["Burning Blade Neophyte"] = 39,
 										},
-										["n_total"] = 70,
-										["n_min"] = 34,
+										["n_total"] = 39,
+										["n_min"] = 39,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 139,
-										["c_max"] = 69,
-										["id"] = 1,
+										["counter"] = 1,
+										["total"] = 39,
+										["c_max"] = 0,
+										["id"] = 8044,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 69,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 69,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Burning Blade Neophyte"] = 33,
+										},
+										["n_total"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
 										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 23.15922792410798,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 22.001686,
-							["start_time"] = 1705830406,
+							["custom"] = 0,
+							["last_event"] = 1705855738,
+							["damage_taken"] = 48.00693,
+							["start_time"] = 1705855729,
 							["delay"] = 0,
-							["last_event"] = 1705830410,
+							["last_dps"] = 24.17120004220625,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006272,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 22.006272,
+							["total_without_pet"] = 48.006959,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 22.006272,
-							["on_hold"] = false,
+							["total"] = 48.006959,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2976-00002CE312",
-							["aID"] = "2976",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D44A8",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 22,
+								["Jutarnjedrvo"] = 48,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830416,
-							["nome"] = "Venture Co. Laborer",
+							["totalabsorbed"] = 0.006959,
+							["fight_component"] = true,
+							["end_time"] = 1705855753,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 13,
+										["n_max"] = 12,
 										["targets"] = {
 											["Jutarnjedrvo"] = 22,
 										},
 										["n_total"] = 22,
-										["n_min"] = 9,
+										["n_min"] = 10,
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["total"] = 22,
@@ -5238,41 +5989,134 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[348] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Jutarnjedrvo"] = 26,
+										},
+										["n_total"] = 26,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = 348,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 139.006272,
-							["start_time"] = 1705830409,
+							["custom"] = 0,
+							["last_event"] = 1705855749,
+							["damage_taken"] = 228.006959,
+							["start_time"] = 1705855731,
 							["delay"] = 0,
-							["last_event"] = 1705830416,
+							["last_dps"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 599,
 					["tipo"] = 3,
+					["combatId"] = 665,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 599,
 					["tipo"] = 7,
+					["combatId"] = 665,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 599,
 					["tipo"] = 9,
+					["combatId"] = 665,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["pets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
+								["_ActorTable"] = {
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Burning Blade Neophyte"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 4,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["last_event"] = 1705855738,
+							["buff_uptime"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 1.003817,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["aID"] = "3196",
+							["fight_component"] = true,
+							["nome"] = "Burning Blade Neophyte",
+							["monster"] = true,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D44A8",
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 599,
 					["tipo"] = 2,
+					["combatId"] = 665,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5282,8 +6126,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932866.3910000001,
-				["tempo_start"] = 1705830406,
+				["CombatStartedAt"] = 958202.672,
+				["tempo_start"] = 1705855729,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -5295,7 +6139,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					161, -- [1]
+					276, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -5307,10 +6151,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -5321,23 +6165,59 @@ _detalhes_database = {
 					["Jutarnjedrvo"] = {
 						{
 							true, -- [1]
-							1, -- [2]
-							13, -- [3]
-							1705830417.384, -- [4]
-							251, -- [5]
-							"Venture Co. Laborer", -- [6]
+							348, -- [2]
+							4, -- [3]
+							1705855740.272, -- [4]
+							214, -- [5]
+							"Burning Blade Neophyte", -- [6]
 							nil, -- [7]
-							1, -- [8]
+							4, -- [8]
 							false, -- [9]
 							-1, -- [10]
 							false, -- [11]
 							false, -- [12]
 						}, -- [1]
 						{
+							true, -- [1]
+							348, -- [2]
+							4, -- [3]
+							1705855743.271, -- [4]
+							217, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
 						}, -- [2]
 						{
+							true, -- [1]
+							348, -- [2]
+							3, -- [3]
+							1705855746.272, -- [4]
+							227, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
 						}, -- [3]
 						{
+							true, -- [1]
+							348, -- [2]
+							3, -- [3]
+							1705855749.238, -- [4]
+							231, -- [5]
+							"Burning Blade Neophyte", -- [6]
+							nil, -- [7]
+							4, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
 						}, -- [4]
 						{
 						}, -- [5]
@@ -5395,33 +6275,41 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 2,
+						["n"] = 5,
 					},
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Burning Blade Neophyte"] = {
+						["Immolate"] = 1,
+					},
+					["Jutarnjedrvo"] = {
+						["Molten Blast"] = 1,
+						["Lightning Shield"] = 1,
+					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:46:53",
+				["data_fim"] = "17:48:59",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Venture Co. Laborer",
+				["enemy"] = "Burning Blade Neophyte",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932861.958,
-				["CombatEndedAt"] = 932861.958,
+				["TotalElapsedCombatTime"] = 958188.121,
+				["CombatEndedAt"] = 958188.121,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:46:47",
-				["end_time"] = 932861.958,
-				["combat_id"] = 599,
+				["data_inicio"] = "17:48:49",
+				["end_time"] = 958188.121,
+				["combat_id"] = 665,
 				["frags"] = {
-					["Venture Co. Laborer"] = 1,
+					["Burning Blade Neophyte"] = 1,
 				},
-				["combat_counter"] = 1689,
+				["combat_counter"] = 1755,
+				["contra"] = "Burning Blade Neophyte",
 				["totals_grupo"] = {
-					139, -- [1]
+					228, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -5433,88 +6321,87 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958178.688,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 139.001686,
+							["Jutarnjedrvo"] = 228.00693,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932855.956,
-				["contra"] = "Venture Co. Laborer",
-				["TimeData"] = {
 				},
 			}, -- [12]
 			{
 				{
-					["combatId"] = 598,
 					["tipo"] = 2,
+					["combatId"] = 664,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008518,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 98.00851800000001,
+							["total_without_pet"] = 365.004826,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 98.00851800000001,
+							["total"] = 365.004826,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Venture Co. Taskmaster"] = true,
+								["Imp Minion"] = true,
+								["Burning Blade Cultist"] = true,
 							},
 							["targets"] = {
-								["Venture Co. Taskmaster"] = 98,
+								["Imp Minion"] = 122,
+								["Burning Blade Cultist"] = 243,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830404,
+							["end_time"] = 1705855712,
+							["totalabsorbed"] = 0.004826,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
+										["g_amt"] = 1,
+										["n_max"] = 38,
 										["targets"] = {
-											["Venture Co. Taskmaster"] = 62,
+											["Burning Blade Cultist"] = 161,
 										},
-										["n_total"] = 62,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 62,
+										["n_total"] = 133,
+										["n_min"] = 30,
+										["g_dmg"] = 28,
+										["counter"] = 5,
+										["total"] = 161,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -5526,98 +6413,27 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[8050] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Taskmaster"] = 36,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 36,
-										["c_max"] = 36,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 36,
-										["successful_casted"] = 0,
-										["c_total"] = 36,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 33.58756614180364,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 8.008518,
-							["start_time"] = 1705830401,
-							["delay"] = 0,
-							["last_event"] = 1705830403,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004265,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 8.004265,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 8.004265,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2977-00002CE385",
-							["aID"] = "2977",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Fene"] = true,
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 8,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830404,
-							["nome"] = "Venture Co. Taskmaster",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
+									[8044] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 40,
 										["targets"] = {
-											["Jutarnjedrvo"] = 8,
+											["Imp Minion"] = 40,
 										},
-										["n_total"] = 8,
-										["n_min"] = 8,
+										["n_total"] = 40,
+										["n_min"] = 40,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 8,
+										["total"] = 40,
 										["c_max"] = 0,
-										["id"] = 1,
+										["id"] = 8044,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5628,92 +6444,330 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Imp Minion"] = 17,
+											["Burning Blade Cultist"] = 17,
+										},
+										["n_total"] = 34,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Burning Blade Cultist"] = 65,
+											["Imp Minion"] = 65,
+										},
+										["n_total"] = 130,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 130,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855710,
+							["damage_taken"] = 74.00482600000001,
+							["start_time"] = 1705855700,
+							["delay"] = 0,
+							["last_dps"] = 31.28255279379661,
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["aID"] = "12922",
+							["total_without_pet"] = 38.002296,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 38.002296,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D4881",
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 38,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855712,
+							["totalabsorbed"] = 0.002296,
+							["nome"] = "Imp Minion",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Jutarnjedrvo"] = 38,
+										},
+										["n_total"] = 38,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 38,
+										["c_max"] = 0,
+										["id"] = 20801,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 188.004265,
-							["start_time"] = 1705830402,
+							["custom"] = 0,
+							["last_event"] = 1705855709,
+							["damage_taken"] = 122.002296,
+							["start_time"] = 1705855702,
 							["delay"] = 0,
-							["last_event"] = 1705830402,
+							["last_dps"] = 0,
 						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 36.007,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 36.007,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D487E",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 36,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.007,
+							["fight_component"] = true,
+							["end_time"] = 1705855712,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 2,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Jutarnjedrvo"] = 36,
+										},
+										["n_total"] = 36,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 6,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855708,
+							["damage_taken"] = 243.007,
+							["start_time"] = 1705855700,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 598,
 					["tipo"] = 3,
+					["combatId"] = 664,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 598,
 					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 598,
-					["tipo"] = 9,
+					["combatId"] = 664,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["debuff_uptime_targets"] = {
+							["received"] = 43.008631,
+							["resource"] = 0.008631,
+							["targets"] = {
+								["Jutarnjedrvo"] = 43,
 							},
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime"] = 1,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["powertype"] = 0,
+							["aID"] = "5826-0235A66A",
+							["totalover"] = 0.008631,
+							["total"] = 43.008631,
+							["nome"] = "Jutarnjedrvo",
+							["spells"] = {
 								["_ActorTable"] = {
 									[408525] = {
-										["activedamt"] = 1,
+										["total"] = 43,
 										["id"] = 408525,
+										["totalover"] = 0,
+										["targets"] = {
+											["Jutarnjedrvo"] = 43,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["classe"] = "SHAMAN",
+							["tipo"] = 3,
+							["passiveover"] = 0.008631,
+							["alternatepower"] = 0.008631,
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855708,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 664,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["buff_uptime"] = 24,
+							["buff_uptime_targets"] = {
+							},
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[408525] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 12,
+										["id"] = 408525,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = 324,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["grupo"] = true,
-							["debuff_uptime"] = 2,
-							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830403,
+							["grupo"] = true,
+							["pets"] = {
+							},
 							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705855712,
 						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D4881",
+							["tipo"] = 4,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 598,
 					["tipo"] = 2,
+					["combatId"] = 664,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5723,8 +6777,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932855.456,
-				["tempo_start"] = 1705830401,
+				["CombatStartedAt"] = 958178.422,
+				["tempo_start"] = 1705855700,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -5736,11 +6790,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					196, -- [1]
+					439, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 43,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -5748,10 +6802,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -5762,35 +6816,42 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Imp Minion"] = {
+						["Firebolt"] = 3,
+					},
 					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 1,
+						["Lightning Shield"] = 1,
+						["Molten Blast"] = 2,
+						["Earth Shock"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:46:45",
+				["data_fim"] = "17:48:32",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Venture Co. Taskmaster",
+				["enemy"] = "Burning Blade Cultist",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932853.824,
-				["CombatEndedAt"] = 932853.824,
+				["TotalElapsedCombatTime"] = 11.66800000006333,
+				["CombatEndedAt"] = 958161.388,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:46:42",
-				["end_time"] = 932853.824,
-				["combat_id"] = 598,
+				["data_inicio"] = "17:48:21",
+				["end_time"] = 958161.388,
+				["combat_id"] = 664,
 				["frags"] = {
-					["Venture Co. Taskmaster"] = 1,
+					["Imp Minion"] = 1,
+					["Burning Blade Cultist"] = 1,
 				},
-				["combat_counter"] = 1688,
+				["combat_counter"] = 1754,
+				["contra"] = "Burning Blade Cultist",
 				["totals_grupo"] = {
-					98, -- [1]
+					365, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 43,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -5798,91 +6859,350 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958149.72,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 98.00851800000001,
+							["Jutarnjedrvo"] = 365.004826,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932850.9060000001,
-				["contra"] = "Venture Co. Taskmaster",
-				["TimeData"] = {
 				},
 			}, -- [13]
 			{
 				{
-					["combatId"] = 597,
 					["tipo"] = 2,
+					["combatId"] = 663,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007341,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 343.007341,
+							["total_without_pet"] = 557.003596,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 343.007341,
+							["total"] = 557.003596,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
-								["Prairie Stalker"] = true,
+								["Burning Blade Cultist"] = true,
+								["Imp Minion"] = true,
+								["Burning Blade Thug"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 122,
-								["Prairie Stalker"] = 221,
+								["Burning Blade Cultist"] = 247,
+								["Imp Minion"] = 91,
+								["Burning Blade Thug"] = 219,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830390,
+							["end_time"] = 1705855681,
+							["totalabsorbed"] = 0.003596,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34,
+										["g_amt"] = 1,
+										["n_max"] = 38,
 										["targets"] = {
-											["Flatland Cougar"] = 65,
-											["Prairie Stalker"] = 134,
+											["Burning Blade Cultist"] = 167,
+											["Burning Blade Thug"] = 136,
+											["Imp Minion"] = 75,
 										},
-										["n_total"] = 199,
-										["n_min"] = 32,
+										["n_total"] = 351,
+										["n_min"] = 33,
+										["g_dmg"] = 27,
+										["counter"] = 11,
+										["total"] = 378,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8050] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Imp Minion"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 199,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 4,
+										["id"] = 8050,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[26364] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Burning Blade Cultist"] = 16,
+											["Imp Minion"] = 16,
+											["Burning Blade Thug"] = 17,
+										},
+										["n_total"] = 49,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 26364,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[425339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Burning Blade Thug"] = 66,
+											["Burning Blade Cultist"] = 64,
+										},
+										["n_total"] = 130,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 130,
+										["c_max"] = 0,
+										["id"] = 425339,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855680,
+							["damage_taken"] = 287.003596,
+							["start_time"] = 1705855649,
+							["delay"] = 0,
+							["last_dps"] = 17.1994317122075,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 174.004392,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 174.004392,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 174,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.004392,
+							["fight_component"] = true,
+							["end_time"] = 1705855681,
+							["aID"] = "3199",
+							["nome"] = "Burning Blade Cultist",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Jutarnjedrvo"] = 104,
+										},
+										["n_total"] = 74,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["MISS"] = 1,
+										["total"] = 104,
+										["c_max"] = 15,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 15,
+										["successful_casted"] = 0,
+										["c_total"] = 30,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11962] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 23,
+										["targets"] = {
+											["Jutarnjedrvo"] = 70,
+										},
+										["n_total"] = 70,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 70,
+										["c_max"] = 0,
+										["id"] = 11962,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855679,
+							["damage_taken"] = 247.004392,
+							["start_time"] = 1705855649,
+							["delay"] = 0,
+							["last_dps"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 88.008207,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 88.008207,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3195-00002D483A",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 88,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.008207,
+							["fight_component"] = true,
+							["end_time"] = 1705855681,
+							["aID"] = "3195",
+							["nome"] = "Burning Blade Thug",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Jutarnjedrvo"] = 88,
+										},
+										["n_total"] = 88,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 88,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
@@ -5895,254 +7215,169 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 13,
 										["r_amt"] = 0,
 									}, -- [1]
-									[425339] = {
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855666,
+							["damage_taken"] = 219.008207,
+							["start_time"] = 1705855663,
+							["delay"] = 1705855666,
+							["last_dps"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["aID"] = "12922",
+							["total_without_pet"] = 25.008986,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 25.008986,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D4417",
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 25,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["end_time"] = 1705855681,
+							["totalabsorbed"] = 0.008986,
+							["nome"] = "Imp Minion",
+							["spells"] = {
+								["_ActorTable"] = {
+									[20801] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 13,
 										["targets"] = {
-											["Flatland Cougar"] = 57,
-											["Prairie Stalker"] = 87,
+											["Jutarnjedrvo"] = 25,
 										},
-										["n_total"] = 144,
-										["n_min"] = 28,
+										["n_total"] = 25,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 144,
+										["counter"] = 2,
+										["total"] = 25,
 										["c_max"] = 0,
-										["id"] = 425339,
+										["id"] = 20801,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
+										["successful_casted"] = 2,
 										["c_total"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 14.33078508464038,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 175.007341,
-							["start_time"] = 1705830371,
-							["delay"] = 0,
-							["last_event"] = 1705830388,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008454,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 93.008454,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 93.008454,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CD354",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Fene"] = true,
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 93,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830390,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Jutarnjedrvo"] = 93,
-										},
-										["n_total"] = 93,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["MISS"] = 2,
-										["total"] = 93,
-										["c_max"] = 0,
-										["DODGE"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 17,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 353.008454,
-							["start_time"] = 1705830367,
-							["delay"] = 0,
-							["last_event"] = 1705830383,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008387,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 82.008387,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 82.008387,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CE785",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Fene"] = true,
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 82,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830390,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Jutarnjedrvo"] = 82,
-										},
-										["n_total"] = 82,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 82,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 11,
-										["b_dmg"] = 4,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 190.008387,
-							["start_time"] = 1705830369,
-							["delay"] = 0,
-							["last_event"] = 1705830389,
-						}, -- [3]
+							["last_event"] = 1705855652,
+							["damage_taken"] = 91.008986,
+							["start_time"] = 1705855678,
+							["delay"] = 1705855652,
+							["last_dps"] = 0,
+						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 597,
 					["tipo"] = 3,
+					["combatId"] = 663,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.001841,
-							["total_without_pet"] = 81.001841,
-							["total"] = 81.001841,
+							["totalover"] = 0.003745,
+							["total_without_pet"] = 202.003745,
+							["total"] = 202.003745,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
 							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.001841,
-							["last_hps"] = 3.384242364746391,
-							["aID"] = "5826-0235A66A",
-							["fight_component"] = true,
-							["targets"] = {
-								["Jutarnjedrvo"] = 81,
-							},
-							["serial"] = "Player-5826-0235A66A",
 							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.001841,
-							["healing_from"] = {
-								["Fene"] = true,
-								["Jutarnjedrvo"] = true,
+							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
+							["totalabsorb"] = 0.003745,
+							["last_hps"] = 6.237571252121102,
+							["targets"] = {
+								["Jutarnjedrvo"] = 202,
 							},
-							["healing_taken"] = 137.001841,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["end_time"] = 1705830390,
+							["totalover_without_pet"] = 0.003745,
+							["tipo"] = 2,
+							["healing_taken"] = 202.003745,
+							["fight_component"] = true,
+							["end_time"] = 1705855681,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1705830381,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
+									[409333] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 10,
+										["targets"] = {
+											["Jutarnjedrvo"] = 37,
+										},
+										["n_total"] = 37,
+										["n_min"] = 3,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 409333,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 8,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
 									[439] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 81,
+										["n_max"] = 87,
 										["targets"] = {
-											["Jutarnjedrvo"] = 81,
+											["Jutarnjedrvo"] = 87,
 										},
-										["n_total"] = 81,
-										["n_min"] = 81,
+										["n_total"] = 87,
+										["n_min"] = 87,
 										["counter"] = 1,
 										["overheal"] = 0,
-										["total"] = 81,
+										["total"] = 87,
 										["c_max"] = 0,
 										["id"] = 439,
 										["targets_absorbs"] = {
@@ -6154,180 +7389,195 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1705830381,
-							["totaldenied"] = 0.001841,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 1304,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006936,
-							["total_without_pet"] = 56.006936,
-							["total"] = 56.006936,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.006936,
-							["last_hps"] = 0,
-							["aID"] = "5826-024B2B09",
-							["targets"] = {
-								["Jutarnjedrvo"] = 56,
-							},
-							["healing_from"] = {
-							},
-							["totalover_without_pet"] = 0.006936,
-							["fight_component"] = true,
-							["healing_taken"] = 0.006936,
-							["serial"] = "Player-5826-024B2B09",
-							["classe"] = "UNGROUPPLAYER",
-							["end_time"] = 1705830401,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1705830384,
-							["nome"] = "Fene",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[1058] = {
+									[332] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 14,
+										["n_max"] = 78,
 										["targets"] = {
-											["Jutarnjedrvo"] = 56,
+											["Jutarnjedrvo"] = 78,
 										},
-										["n_total"] = 56,
-										["n_min"] = 14,
-										["counter"] = 4,
+										["n_total"] = 78,
+										["n_min"] = 78,
+										["counter"] = 1,
 										["overheal"] = 0,
-										["total"] = 56,
+										["total"] = 78,
 										["c_max"] = 0,
-										["id"] = 1058,
+										["id"] = 332,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["spellschool"] = 8,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1705855660,
+							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1705830393,
-							["totaldenied"] = 0.006936,
+							["last_event"] = 1705855679,
+							["totaldenied"] = 0.003745,
 							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [2]
+							["aID"] = "5826-0235A66A",
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 597,
 					["tipo"] = 7,
+					["combatId"] = 663,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["resource"] = 0.005884,
-							["targets"] = {
-								["Jutarnjedrvo"] = 20,
-							},
+							["resource"] = 0.005444,
 							["pets"] = {
 							},
-							["powertype"] = 0,
 							["classe"] = "SHAMAN",
-							["passiveover"] = 0.005884,
-							["fight_component"] = true,
-							["alternatepower"] = 0.005884,
+							["passiveover"] = 0.005444,
+							["total"] = 22.005444,
+							["serial"] = "Player-5826-0235A66A",
+							["received"] = 22.005444,
+							["targets"] = {
+								["Jutarnjedrvo"] = 22,
+							},
+							["powertype"] = 0,
+							["alternatepower"] = 0.005444,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[408525] = {
-										["total"] = 20,
+										["total"] = 22,
 										["id"] = 408525,
 										["totalover"] = 0,
 										["targets"] = {
-											["Jutarnjedrvo"] = 20,
+											["Jutarnjedrvo"] = 22,
 										},
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 20.005884,
 							["aID"] = "5826-0235A66A",
-							["last_event"] = 1705830387,
-							["total"] = 20.005884,
-							["totalover"] = 0.005884,
-							["serial"] = "Player-5826-0235A66A",
+							["totalover"] = 0.005444,
+							["last_event"] = 1705855654,
 							["tipo"] = 3,
+							["fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 597,
 					["tipo"] = 9,
+					["combatId"] = 663,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["serial"] = "Player-5826-0235A66A",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["fight_component"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
+									[20549] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = 20549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 3,
-							["grupo"] = true,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830390,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 1304,
 							["pets"] = {
 							},
-							["classe"] = "UNGROUPPLAYER",
-							["serial"] = "Player-5826-024B2B09",
+							["aID"] = "5826-0235A66A",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[409324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = 409324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = 324,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[408525] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 408525,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
 							["fight_component"] = true,
-							["aID"] = "5826-024B2B09",
-							["nome"] = "Fene",
+							["debuff_uptime"] = 2,
+							["buff_uptime"] = 34,
+							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1705855676,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4680,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["fight_component"] = true,
+							["nome"] = "Imp Minion",
+							["aID"] = "12922",
 							["last_event"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-12922-00002D4417",
 							["tipo"] = 4,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["aID"] = "3199",
+							["fight_component"] = true,
+							["nome"] = "Burning Blade Cultist",
+							["monster"] = true,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
+							["tipo"] = 4,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 597,
 					["tipo"] = 2,
+					["combatId"] = 663,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6337,8 +7587,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932850.591,
-				["tempo_start"] = 1705830367,
+				["tempo_start"] = 1705855649,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -6350,11 +7599,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					893, -- [1]
-					137, -- [2]
+					844, -- [1]
+					202, -- [2]
 					{
 						0, -- [1]
-						[0] = 20,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -6362,10 +7611,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6373,115 +7622,52 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Jutarnjedrvo"] = {
-						{
-							false, -- [1]
-							1058, -- [2]
-							14, -- [3]
-							1705830394.132, -- [4]
-							214, -- [5]
-							"Fene", -- [6]
-							nil, -- [7]
-							0, -- [8]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Burning Blade Cultist"] = {
+						["Immolate"] = 1,
+					},
 					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 3,
+						["Molten Blast"] = 4,
+						["Healing Wave"] = 1,
 						["Healing Potion"] = 1,
+						["Ancestral Guidance"] = 1,
+						["War Stomp"] = 1,
+						["Flame Shock"] = 1,
+					},
+					["Imp Minion"] = {
+						["Firebolt"] = 2,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:46:31",
+				["data_fim"] = "17:48:01",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Burning Blade Thug",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932840.49,
-				["CombatEndedAt"] = 932840.49,
+				["TotalElapsedCombatTime"] = 958130.703,
+				["CombatEndedAt"] = 958130.703,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:46:07",
-				["end_time"] = 932840.49,
-				["combat_id"] = 597,
+				["data_inicio"] = "17:47:29",
+				["end_time"] = 958130.703,
+				["combat_id"] = 663,
 				["frags"] = {
-					["Flatland Cougar"] = 1,
-					["Prairie Stalker"] = 2,
+					["Burning Blade Cultist"] = 1,
+					["Burning Blade Thug"] = 1,
+					["Imp Minion"] = 1,
 				},
-				["combat_counter"] = 1687,
+				["contra"] = "Burning Blade Thug",
+				["combat_counter"] = 1753,
 				["totals_grupo"] = {
-					343, -- [1]
-					81, -- [2]
+					557, -- [1]
+					202, -- [2]
 					{
 						0, -- [1]
-						[0] = 20,
+						[0] = 22,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -6489,10 +7675,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6502,84 +7688,82 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Jutarnjedrvo"] = 81.001841,
+							["Jutarnjedrvo"] = 202.003745,
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 343.007341,
+							["Jutarnjedrvo"] = 557.003596,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932816.555,
-				["contra"] = "Prairie Stalker",
+				["start_time"] = 958098.318,
 				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
 				},
 			}, -- [14]
 			{
 				{
-					["combatId"] = 596,
 					["tipo"] = 2,
+					["combatId"] = 662,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007539,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 159.007539,
+							["total_without_pet"] = 219.002561,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 159.007539,
+							["total"] = 219.002561,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
+								["Burning Blade Neophyte"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 159,
+								["Burning Blade Neophyte"] = 219,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830356,
+							["end_time"] = 1705855639,
+							["totalabsorbed"] = 0.002561,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
+										["g_amt"] = 1,
+										["n_max"] = 32,
 										["targets"] = {
-											["Flatland Cougar"] = 102,
+											["Burning Blade Neophyte"] = 122,
 										},
-										["n_total"] = 102,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 102,
+										["n_total"] = 92,
+										["n_min"] = 29,
+										["g_dmg"] = 30,
+										["counter"] = 5,
+										["total"] = 122,
 										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
@@ -6587,23 +7771,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[425339] = {
+									[8044] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 40,
 										["targets"] = {
-											["Flatland Cougar"] = 57,
+											["Burning Blade Neophyte"] = 80,
 										},
-										["n_total"] = 57,
-										["n_min"] = 27,
+										["n_total"] = 80,
+										["n_min"] = 40,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 57,
+										["total"] = 80,
 										["c_max"] = 0,
-										["id"] = 425339,
+										["id"] = 8044,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6615,66 +7799,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 20.29710735278532,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 21.007539,
-							["start_time"] = 1705830348,
-							["delay"] = 0,
-							["last_event"] = 1705830355,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004662,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 21.004662,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 21.004662,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CCCD4",
-							["aID"] = "3035",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 21,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830356,
-							["nome"] = "Flatland Cougar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
+									[26364] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 17,
 										["targets"] = {
-											["Jutarnjedrvo"] = 21,
+											["Burning Blade Neophyte"] = 17,
 										},
-										["n_total"] = 21,
-										["n_min"] = 6,
+										["n_total"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 21,
+										["counter"] = 1,
+										["total"] = 17,
 										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
+										["id"] = 26364,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6682,76 +7823,170 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1705855638,
+							["damage_taken"] = 36.002561,
+							["start_time"] = 1705855628,
+							["delay"] = 0,
+							["last_dps"] = 19.72818313661132,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 36.006826,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 36.006826,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D47E6",
+							["on_hold"] = false,
+							["damage_from"] = {
+								["Jutarnjedrvo"] = true,
+							},
+							["targets"] = {
+								["Jutarnjedrvo"] = 36,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["totalabsorbed"] = 0.006826,
+							["fight_component"] = true,
+							["end_time"] = 1705855639,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Jutarnjedrvo"] = 36,
+										},
+										["n_total"] = 20,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 36,
+										["c_max"] = 16,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 16,
+										["successful_casted"] = 0,
+										["c_total"] = 16,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 159.004662,
-							["start_time"] = 1705830349,
+							["custom"] = 0,
+							["last_event"] = 1705855637,
+							["damage_taken"] = 219.006826,
+							["start_time"] = 1705855630,
 							["delay"] = 0,
-							["last_event"] = 1705830354,
+							["last_dps"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 596,
 					["tipo"] = 3,
+					["combatId"] = 662,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 596,
 					["tipo"] = 7,
+					["combatId"] = 662,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 596,
 					["tipo"] = 9,
+					["combatId"] = 662,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["pets"] = {
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["aID"] = "5826-0235A66A",
+							["interrupt_spells"] = {
 								["_ActorTable"] = {
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 2,
+										},
+										["targets"] = {
+											["Burning Blade Neophyte"] = 2,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[324] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 324,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 3,
+							["interrompeu_oque"] = {
+								[0] = 2,
+							},
+							["last_event"] = 1705855635,
+							["buff_uptime"] = 2,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 2,
+							},
 							["grupo"] = true,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830351,
+							["interrupt"] = 2.008597,
 							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 596,
 					["tipo"] = 2,
+					["combatId"] = 662,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6761,8 +7996,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932814.539,
-				["tempo_start"] = 1705830348,
+				["CombatStartedAt"] = 958091.835,
+				["tempo_start"] = 1705855628,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -6774,7 +8009,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					214, -- [1]
+					255, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6786,10 +8021,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6801,30 +8036,31 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Jutarnjedrvo"] = {
-						["Molten Blast"] = 2,
+						["Earth Shock"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:45:57",
+				["data_fim"] = "17:47:20",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Cougar",
+				["enemy"] = "Burning Blade Neophyte",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932806.039,
-				["CombatEndedAt"] = 932806.039,
+				["TotalElapsedCombatTime"] = 958089.001,
+				["CombatEndedAt"] = 958089.001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:45:49",
-				["end_time"] = 932806.039,
-				["combat_id"] = 596,
+				["data_inicio"] = "17:47:09",
+				["end_time"] = 958089.001,
+				["combat_id"] = 662,
 				["frags"] = {
-					["Flatland Cougar"] = 1,
+					["Burning Blade Neophyte"] = 1,
 				},
-				["combat_counter"] = 1686,
+				["combat_counter"] = 1752,
+				["contra"] = "Burning Blade Neophyte",
 				["totals_grupo"] = {
-					159, -- [1]
+					219, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6836,146 +8072,116 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 2,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958077.9,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 159.007539,
+							["Jutarnjedrvo"] = 219.002561,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932798.2050000001,
-				["contra"] = "Flatland Cougar",
-				["TimeData"] = {
 				},
 			}, -- [15]
 			{
 				{
-					["combatId"] = 595,
 					["tipo"] = 2,
+					["combatId"] = 661,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005061,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 343.005061,
+							["total_without_pet"] = 206.006821,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 343.005061,
+							["total"] = 206.006821,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Prairie Stalker"] = true,
+								["Burning Blade Neophyte"] = true,
 							},
 							["targets"] = {
-								["Prairie Stalker"] = 343,
+								["Burning Blade Neophyte"] = 206,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830342,
+							["end_time"] = 1705855622,
+							["totalabsorbed"] = 0.006821,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 37,
+										["n_max"] = 36,
 										["targets"] = {
-											["Prairie Stalker"] = 192,
+											["Burning Blade Neophyte"] = 100,
 										},
-										["n_total"] = 132,
+										["n_total"] = 100,
 										["n_min"] = 29,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 192,
-										["c_max"] = 60,
+										["counter"] = 4,
+										["total"] = 100,
+										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 60,
-										["successful_casted"] = 0,
-										["c_total"] = 60,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Prairie Stalker"] = 50,
-										},
-										["n_total"] = 50,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 50,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
-									[529] = {
+									}, -- [1]
+									[8044] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 35,
+										["n_max"] = 40,
 										["targets"] = {
-											["Prairie Stalker"] = 35,
+											["Burning Blade Neophyte"] = 40,
 										},
-										["n_total"] = 35,
-										["n_min"] = 35,
+										["n_total"] = 40,
+										["n_min"] = 40,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 35,
+										["total"] = 40,
 										["c_max"] = 0,
-										["id"] = 529,
+										["id"] = 8044,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
 										["extra"] = {
@@ -6995,7 +8201,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 32,
 										["targets"] = {
-											["Prairie Stalker"] = 32,
+											["Burning Blade Neophyte"] = 32,
 										},
 										["n_total"] = 32,
 										["n_min"] = 32,
@@ -7023,7 +8229,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Prairie Stalker"] = 34,
+											["Burning Blade Neophyte"] = 34,
 										},
 										["n_total"] = 34,
 										["n_min"] = 17,
@@ -7046,64 +8252,63 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 28.50536532855151,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 21.005061,
-							["start_time"] = 1705830330,
+							["custom"] = 0,
+							["last_event"] = 1705855621,
+							["damage_taken"] = 19.006821,
+							["start_time"] = 1705855615,
 							["delay"] = 0,
-							["last_event"] = 1705830341,
+							["last_dps"] = 26.41451737402547,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004845,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 21.004845,
+							["total_without_pet"] = 19.003385,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 21.004845,
-							["on_hold"] = false,
+							["total"] = 19.003385,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CDAF4",
-							["aID"] = "2959",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3196-00002D4835",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 21,
+								["Jutarnjedrvo"] = 19,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830342,
-							["nome"] = "Prairie Stalker",
+							["totalabsorbed"] = 0.003385,
+							["fight_component"] = true,
+							["end_time"] = 1705855622,
+							["aID"] = "3196",
+							["nome"] = "Burning Blade Neophyte",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 11,
 										["targets"] = {
-											["Jutarnjedrvo"] = 21,
+											["Jutarnjedrvo"] = 19,
 										},
-										["n_total"] = 21,
-										["BLOCK"] = 1,
-										["n_min"] = 5,
+										["n_total"] = 19,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["MISS"] = 3,
-										["total"] = 21,
+										["counter"] = 2,
+										["total"] = 19,
 										["c_max"] = 0,
-										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -7114,142 +8319,98 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 343.004845,
-							["start_time"] = 1705830332,
+							["custom"] = 0,
+							["last_event"] = 1705855620,
+							["damage_taken"] = 206.003385,
+							["start_time"] = 1705855615,
 							["delay"] = 0,
-							["last_event"] = 1705830339,
+							["last_dps"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 595,
 					["tipo"] = 3,
+					["combatId"] = 661,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 595,
 					["tipo"] = 7,
+					["combatId"] = 661,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 661,
 					["_ActorTable"] = {
 						{
-							["received"] = 19.003692,
-							["resource"] = 0.003692,
-							["targets"] = {
-								["Jutarnjedrvo"] = 19,
-							},
-							["total"] = 19.003692,
+							["flag_original"] = 1047,
 							["pets"] = {
 							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
 							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.003692,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.003692,
-							["passiveover"] = 0.003692,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
+							["interrupt_spells"] = {
 								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 19,
-										["id"] = 408525,
-										["totalover"] = 0,
+									[8044] = {
+										["id"] = 8044,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
 										["targets"] = {
-											["Jutarnjedrvo"] = 19,
+											["Burning Blade Neophyte"] = 1,
 										},
 										["counter"] = 1,
 									},
 								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830336,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 595,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[324] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
+										["uptime"] = 7,
 										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 12,
-							["debuff_uptime"] = 11,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830342,
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["last_event"] = 1705855622,
+							["buff_uptime"] = 7,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Burning Blade Neophyte"] = 1,
+							},
+							["grupo"] = true,
+							["interrupt"] = 1.008558,
 							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 595,
 					["tipo"] = 2,
+					["combatId"] = 661,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7259,8 +8420,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932797.937,
-				["tempo_start"] = 1705830330,
+				["CombatStartedAt"] = 958077.6510000001,
+				["tempo_start"] = 1705855615,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -7272,11 +8433,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					364, -- [1]
+					225, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 19,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -7284,10 +8445,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -7300,34 +8461,35 @@ _detalhes_database = {
 				["amountCasts"] = {
 					["Jutarnjedrvo"] = {
 						["Molten Blast"] = 1,
-						["Flame Shock"] = 1,
+						["Earth Shock"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:45:42",
+				["data_fim"] = "17:47:03",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Burning Blade Neophyte",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932791.454,
-				["CombatEndedAt"] = 932791.454,
+				["TotalElapsedCombatTime"] = 958071.983,
+				["CombatEndedAt"] = 958071.983,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:45:30",
-				["end_time"] = 932791.454,
-				["combat_id"] = 595,
+				["data_inicio"] = "17:46:55",
+				["end_time"] = 958071.983,
+				["combat_id"] = 661,
 				["frags"] = {
-					["Prairie Stalker"] = 2,
+					["Burning Blade Neophyte"] = 1,
 				},
-				["combat_counter"] = 1685,
+				["combat_counter"] = 1751,
+				["contra"] = "Burning Blade Neophyte",
 				["totals_grupo"] = {
-					343, -- [1]
+					206, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 19,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -7335,321 +8497,127 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 958064.184,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 343.005061,
+							["Jutarnjedrvo"] = 206.006821,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932779.421,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
 				},
 			}, -- [16]
 			{
 				{
-					["combatId"] = 594,
 					["tipo"] = 2,
+					["combatId"] = 660,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005803,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 289.005803,
+							["total_without_pet"] = 0.008673,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 289.005803,
+							["total"] = 0.008673,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Flatland Cougar"] = true,
-								["Prairie Stalker"] = true,
+								["Environment (Falling)"] = true,
+								["Venomtail Scorpid"] = true,
 							},
 							["targets"] = {
-								["Flatland Cougar"] = 128,
-								["Prairie Stalker"] = 161,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830316,
+							["end_time"] = 1705855285,
+							["totalabsorbed"] = 0.008673,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Flatland Cougar"] = 60,
-											["Prairie Stalker"] = 56,
-										},
-										["n_total"] = 116,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 116,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8050] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Flatland Cougar"] = 24,
-											["Prairie Stalker"] = 41,
-										},
-										["n_total"] = 65,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 8050,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26364] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Flatland Cougar"] = 16,
-											["Prairie Stalker"] = 34,
-										},
-										["n_total"] = 50,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 50,
-										["c_max"] = 0,
-										["id"] = 26364,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[425339] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Flatland Cougar"] = 28,
-											["Prairie Stalker"] = 30,
-										},
-										["n_total"] = 58,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 425339,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 28.85441323864082,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 28.005803,
-							["start_time"] = 1705830306,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 182.008673,
+							["start_time"] = 1705855285,
 							["delay"] = 0,
-							["last_event"] = 1705830315,
+							["last_dps"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002033,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 14.002033,
+							["total_without_pet"] = 21.006585,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 14.002033,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2959-00002CDB0F",
-							["aID"] = "2959",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Jutarnjedrvo"] = true,
-							},
-							["targets"] = {
-								["Jutarnjedrvo"] = 14,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1705830316,
-							["nome"] = "Prairie Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Jutarnjedrvo"] = 14,
-										},
-										["n_total"] = 14,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["BLOCK"] = 1,
-										["total"] = 14,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
+							["total"] = 21.006585,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 161.002033,
-							["start_time"] = 1705830306,
-							["delay"] = 0,
-							["last_event"] = 1705830312,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001838,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 14.001838,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 14.001838,
-							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-3035-00002CCD94",
-							["aID"] = "3035",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5211-1-1256-3127-00002D14EC",
+							["on_hold"] = false,
 							["damage_from"] = {
-								["Nektah"] = true,
-								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 14,
+								["Jutarnjedrvo"] = 21,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830316,
-							["nome"] = "Flatland Cougar",
+							["totalabsorbed"] = 0.006585,
+							["fight_component"] = true,
+							["end_time"] = 1705855285,
+							["aID"] = "3127",
+							["nome"] = "Venomtail Scorpid",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7,
+										["n_max"] = 11,
 										["targets"] = {
-											["Jutarnjedrvo"] = 14,
+											["Jutarnjedrvo"] = 21,
 										},
-										["n_total"] = 14,
-										["n_min"] = 7,
+										["n_total"] = 21,
+										["n_min"] = 10,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 14,
+										["total"] = 21,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
@@ -7667,137 +8635,40 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 232.001838,
-							["start_time"] = 1705830311,
+							["custom"] = 0,
+							["last_event"] = 1705855279,
+							["damage_taken"] = 0.006585,
+							["start_time"] = 1705855275,
 							["delay"] = 0,
-							["last_event"] = 1705830315,
-						}, -- [3]
+							["last_dps"] = 0,
+						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 594,
 					["tipo"] = 3,
+					["combatId"] = 660,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 594,
 					["tipo"] = 7,
+					["combatId"] = 660,
 					["_ActorTable"] = {
-						{
-							["received"] = 19.003341,
-							["resource"] = 0.003341,
-							["targets"] = {
-								["Jutarnjedrvo"] = 19,
-							},
-							["total"] = 19.003341,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 0.003341,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.003341,
-							["passiveover"] = 0.003341,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 19,
-										["id"] = 408525,
-										["totalover"] = 0,
-										["targets"] = {
-											["Jutarnjedrvo"] = 19,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830309,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 594,
 					["tipo"] = 9,
+					["combatId"] = 660,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8050] = {
-										["activedamt"] = 0,
-										["id"] = 8050,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[324] = {
-										["activedamt"] = 2,
-										["id"] = 324,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 17,
-							["debuff_uptime"] = 7,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830316,
-							["tipo"] = 4,
-						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 594,
 					["tipo"] = 2,
+					["combatId"] = 660,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7807,8 +8678,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932778.221,
-				["tempo_start"] = 1705830306,
+				["CombatStartedAt"] = 958063.883,
+				["tempo_start"] = 1705855275,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -7820,11 +8691,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					421, -- [1]
+					182, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 19,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -7832,10 +8703,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -7843,42 +8714,152 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
 					["Jutarnjedrvo"] = {
-						["Lightning Shield"] = 1,
-						["Rockbiter Weapon"] = 1,
-						["Molten Blast"] = 2,
-						["Flame Shock"] = 2,
+						{
+							true, -- [1]
+							3, -- [2]
+							31, -- [3]
+							1705855380.341, -- [4]
+							270, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							3, -- [2]
+							3, -- [3]
+							1705855381.956, -- [4]
+							246, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							3, -- [2]
+							99, -- [3]
+							1705855386.29, -- [4]
+							256, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							3, -- [2]
+							9, -- [3]
+							1705855388.841, -- [4]
+							164, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [4]
+						{
+							true, -- [1]
+							3, -- [2]
+							19, -- [3]
+							1705855391.492, -- [4]
+							162, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 6,
 					},
 				},
+				["frags_need_refresh"] = false,
+				["amountCasts"] = {
+				},
 				["instance_type"] = "none",
-				["data_fim"] = "10:45:16",
+				["data_fim"] = "17:41:25",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Prairie Stalker",
+				["enemy"] = "Venomtail Scorpid",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 932765.5700000001,
-				["CombatEndedAt"] = 932765.5700000001,
+				["TotalElapsedCombatTime"] = 11.33400000003167,
+				["CombatEndedAt"] = 957895.243,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "10:45:06",
-				["end_time"] = 932765.5700000001,
-				["combat_id"] = 594,
+				["data_inicio"] = "17:41:16",
+				["end_time"] = 957734.636,
+				["combat_id"] = 660,
 				["frags"] = {
-					["Flatland Cougar"] = 1,
-					["Prairie Stalker"] = 1,
 				},
-				["combat_counter"] = 1684,
+				["combat_counter"] = 1750,
+				["contra"] = "Venomtail Scorpid",
 				["totals_grupo"] = {
-					289, -- [1]
+					0, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 19,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -7886,188 +8867,204 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 957724.92,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 289.005803,
+							["Jutarnjedrvo"] = 0.008673,
 						}, -- [1]
 					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 932755.554,
-				["contra"] = "Prairie Stalker",
-				["TimeData"] = {
 				},
 			}, -- [17]
 			{
 				{
-					["combatId"] = 593,
 					["tipo"] = 2,
+					["combatId"] = 659,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00786,
 							["pets"] = {
+								"Stoneclaw Totem <Jutarnjedrvo>", -- [1]
 							},
 							["classe"] = "SHAMAN",
-							["total_without_pet"] = 124.00786,
+							["total_without_pet"] = 17.005381,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 124.00786,
-							["on_hold"] = false,
+							["total"] = 17.005381,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
 							["damage_from"] = {
-								["Prairie Wolf"] = true,
+								["Hecklefang Hyena"] = true,
 							},
 							["targets"] = {
-								["Prairie Wolf"] = 124,
+								["Hecklefang Hyena"] = 17,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830161,
+							["end_time"] = 1705854341,
+							["totalabsorbed"] = 0.005381,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Prairie Wolf"] = 108,
-										},
-										["n_total"] = 108,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 108,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
 									[26364] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Prairie Wolf"] = 16,
+											["Hecklefang Hyena"] = 17,
 										},
-										["n_total"] = 16,
-										["n_min"] = 16,
+										["n_total"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
+										["counter"] = 2,
+										["total"] = 17,
 										["c_max"] = 0,
+										["spellschool"] = 8,
 										["id"] = 26364,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 17,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 21.56283428994715,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 3.00786,
-							["start_time"] = 1705830156,
-							["delay"] = 0,
-							["last_event"] = 1705830160,
+							["custom"] = 0,
+							["last_event"] = 1705854324,
+							["damage_taken"] = 75.005381,
+							["start_time"] = 1705854336,
+							["delay"] = 1705854324,
+							["last_dps"] = 0.8267480674794774,
 						}, -- [1]
 						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.00735,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 0.00735,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.00735,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-20414-3579-00002D4574",
+							["damage_from"] = {
+								["Hecklefang Hyena"] = true,
+							},
+							["targets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1705854341,
+							["aID"] = "3579",
+							["ownerName"] = "Jutarnjedrvo",
+							["nome"] = "Stoneclaw Totem <Jutarnjedrvo>",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 48.00735,
+							["start_time"] = 1705854341,
+							["delay"] = 0,
+							["last_dps"] = 0.001172435795166272,
+						}, -- [2]
+						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007596,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 3.007596,
+							["total_without_pet"] = 123.003132,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 3.007596,
-							["on_hold"] = false,
+							["monster"] = true,
+							["total"] = 123.003132,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5211-1-23162-2958-0000ACE447",
-							["aID"] = "2958",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5250-1-20414-4127-00002D3CE2",
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Jutarnjedrvo"] = true,
 							},
 							["targets"] = {
-								["Jutarnjedrvo"] = 3,
+								["Stoneclaw Totem <Jutarnjedrvo>"] = 48,
+								["Jutarnjedrvo"] = 75,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1705830161,
-							["nome"] = "Prairie Wolf",
+							["totalabsorbed"] = 0.003132,
+							["fight_component"] = true,
+							["end_time"] = 1705854341,
+							["aID"] = "4127",
+							["nome"] = "Hecklefang Hyena",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["b_dmg"] = 0,
 										["targets"] = {
-											["Jutarnjedrvo"] = 3,
+											["Stoneclaw Totem <Jutarnjedrvo>"] = 48,
+											["Jutarnjedrvo"] = 75,
 										},
-										["n_total"] = 3,
-										["n_min"] = 3,
+										["n_total"] = 75,
+										["n_min"] = 22,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 3,
-										["c_max"] = 0,
-										["BLOCK"] = 2,
+										["counter"] = 4,
+										["total"] = 123,
+										["c_max"] = 48,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -8075,126 +9072,79 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 48,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["c_total"] = 48,
+										["n_amt"] = 3,
+										["n_max"] = 29,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
-							["damage_taken"] = 124.007596,
-							["start_time"] = 1705830156,
-							["delay"] = 0,
-							["last_event"] = 1705830159,
-						}, -- [2]
+							["custom"] = 0,
+							["last_event"] = 1705854326,
+							["damage_taken"] = 17.003132,
+							["start_time"] = 1705854334,
+							["delay"] = 1705854326,
+							["last_dps"] = 0,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 593,
 					["tipo"] = 3,
+					["combatId"] = 659,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 593,
 					["tipo"] = 7,
+					["combatId"] = 659,
 					["_ActorTable"] = {
-						{
-							["received"] = 31.004849,
-							["resource"] = 0.004849,
-							["targets"] = {
-								["Jutarnjedrvo"] = 31,
-							},
-							["total"] = 31.004849,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-0235A66A",
-							["totalover"] = 8.004849,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
-							["alternatepower"] = 0.004849,
-							["passiveover"] = 0.004849,
-							["nome"] = "Jutarnjedrvo",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[408525] = {
-										["total"] = 31,
-										["id"] = 408525,
-										["totalover"] = 8,
-										["targets"] = {
-											["Jutarnjedrvo"] = 31,
-										},
-										["counter"] = 2,
-									},
-								},
-							},
-							["serial"] = "Player-5826-0235A66A",
-							["tipo"] = 3,
-							["last_event"] = 1705830159,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 593,
 					["tipo"] = 9,
+					["combatId"] = 659,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["pets"] = {
 							},
-							["serial"] = "Player-5826-0235A66A",
 							["buff_uptime_targets"] = {
 							},
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[324] = {
-										["activedamt"] = 1,
-										["id"] = 324,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 324,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[408525] = {
-										["activedamt"] = 1,
-										["id"] = 408525,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 8,
-							["grupo"] = true,
-							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1705830161,
+							["grupo"] = true,
+							["buff_uptime"] = 4,
 							["tipo"] = 4,
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1705854324,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 593,
 					["tipo"] = 2,
+					["combatId"] = 659,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8204,24 +9154,22 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Jutarnjedrvo", -- [1]
 				},
-				["CombatStartedAt"] = 932755.453,
-				["tempo_start"] = 1705830156,
+				["CombatStartedAt"] = 957723.336,
+				["tempo_start"] = 1705854320,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1749,
 				["playing_solo"] = true,
 				["totals"] = {
-					127, -- [1]
+					755, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 31,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8229,46 +9177,22 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 1,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "10:42:42",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 932611.397,
-				["CombatEndedAt"] = 932611.397,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "10:42:36",
-				["end_time"] = 932611.397,
-				["combat_id"] = 593,
-				["frags"] = {
-					["Prairie Wolf"] = 1,
-				},
-				["combat_counter"] = 1683,
 				["totals_grupo"] = {
-					124, -- [1]
+					17, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 31,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -8276,38 +9200,67 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["amountCasts"] = {
+					["Jutarnjedrvo"] = {
+						["Stoneclaw Totem"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "17:25:41",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hecklefang Hyena",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 11.33799999998882,
+				["CombatEndedAt"] = 956973.68,
+				["aura_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Jutarnjedrvo"] = 124.00786,
+							["Stoneclaw Totem <Jutarnjedrvo>"] = 0.00735,
+							["Jutarnjedrvo"] = 17.005381,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 956790.282,
+				["combat_id"] = 659,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 932605.6460000001,
-				["contra"] = "Prairie Wolf",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["contra"] = "Hecklefang Hyena",
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "17:25:20",
+				["start_time"] = 956769.713,
 				["TimeData"] = {
+				},
+				["frags"] = {
 				},
 			}, -- [18]
 		},
@@ -8537,9 +9490,7 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_overalldata"] = false,
 	},
-	["last_instance_time"] = 1678889909,
-	["mythic_plus_log"] = {
-	},
+	["combat_counter"] = 1766,
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -8650,6 +9601,7 @@ _detalhes_database = {
 			["arrow_anchor_y"] = 0,
 		},
 	},
+	["last_realversion"] = 155,
 	["cached_roles"] = {
 		["Player-4465-04243C1F"] = "DAMAGER",
 		["Player-4465-030F80BE"] = "DAMAGER",
@@ -8661,15 +9613,15 @@ _detalhes_database = {
 		["Player-4465-042617A5"] = "TANK",
 		["Player-4465-045F44E8"] = "HEALER",
 	},
-	["force_font_outline"] = "",
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["nick_tag_cache"] = {
+		["nextreset"] = 1707069526,
+		["last_version"] = 16,
 	},
-	["last_realversion"] = 155,
+	["last_instance_time"] = 1678889909,
+	["force_font_outline"] = "",
 	["last_day"] = "21",
 	["on_death_menu"] = false,
-	["combat_id"] = 610,
+	["combat_id"] = 676,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -9128,6 +10080,42 @@ _detalhes_database = {
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["resource"] = 1.131114,
+					["pets"] = {
+					},
+					["classe"] = "SHAMAN",
+					["passiveover"] = 0.004815,
+					["total"] = 0.004815,
+					["serial"] = "Player-5826-0235A66A",
+					["received"] = 0.004815,
+					["targets"] = {
+						["Jutarnjedrvo"] = 0,
+					},
+					["powertype"] = 0,
+					["alternatepower"] = 0.004815,
+					["nome"] = "Jutarnjedrvo",
+					["spells"] = {
+						["_ActorTable"] = {
+							[408525] = {
+								["total"] = 0,
+								["totalover"] = 0,
+								["id"] = 408525,
+								["targets"] = {
+									["Jutarnjedrvo"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["aID"] = "5826-0235A66A",
+					["tipo"] = 3,
+					["totalover"] = 0.004815,
+					["last_event"] = 0,
+					["grupo"] = true,
+				}, -- [1]
 			},
 		}, -- [3]
 		{
@@ -9135,7 +10123,25 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["buff_uptime"] = 0,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[8050] = {
+								["id"] = 8050,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[20549] = {
+								["id"] = 20549,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
 					["classe"] = "SHAMAN",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
@@ -9148,19 +10154,26 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[8044] = {
+								["id"] = 8044,
+								["interrompeu_oque"] = {
+								},
+								["targets"] = {
+									["Burning Blade Cultist"] = 0,
+									["Windfury Sorceress"] = 0,
+									["Burning Blade Neophyte"] = 0,
+									["Windfury Matriarch"] = 0,
+									["Imp Minion"] = 0,
+								},
+								["counter"] = 0,
+							},
 						},
 						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[8202] = {
-								["id"] = 8202,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[408953] = {
-								["id"] = 408953,
+							[408525] = {
+								["id"] = 408525,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -9171,25 +10184,56 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[408953] = {
+								["id"] = 408953,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[409324] = {
+								["id"] = 409324,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[8202] = {
+								["id"] = 8202,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[324] = {
+								["id"] = 324,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 						},
 						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
 					},
-					["tipo"] = 4,
-					["pets"] = {
-					},
+					["debuff_uptime"] = 0,
 					["buff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
+						["Burning Blade Cultist"] = 0,
+						["Burning Blade Neophyte"] = 0,
+						["Windfury Sorceress"] = 0,
+						["Windfury Matriarch"] = 0,
 						["Bristleback Shaman"] = 0,
+						["Imp Minion"] = 0,
 					},
-					["grupo"] = true,
-					["nome"] = "Jutarnjedrvo",
-					["last_event"] = 0,
-					["interrupt"] = 0,
 					["serial"] = "Player-5826-0235A66A",
+					["buff_uptime"] = 0,
+					["nome"] = "Jutarnjedrvo",
+					["grupo"] = true,
+					["interrupt"] = 0,
 					["aID"] = "5826-0235A66A",
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
@@ -9217,6 +10261,132 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5210-1-17491-2958-00002C052B",
 					["tipo"] = 4,
 				}, -- [3]
+				{
+					["flag_original"] = 1304,
+					["pets"] = {
+					},
+					["classe"] = "UNGROUPPLAYER",
+					["fight_component"] = true,
+					["nome"] = "Fene",
+					["aID"] = "5826-024B2B09",
+					["tipo"] = 4,
+					["serial"] = "Player-5826-024B2B09",
+					["last_event"] = 0,
+				}, -- [4]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["nome"] = "Bristleback Interloper",
+					["fight_component"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-1-31179-3232-0000AD1728",
+					["aID"] = "3232",
+				}, -- [5]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["aID"] = "2965",
+					["fight_component"] = true,
+					["nome"] = "Windfury Matriarch",
+					["monster"] = true,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-31179-2965-0005AD0AF5",
+					["last_event"] = 0,
+				}, -- [6]
+				{
+					["flag_original"] = 1304,
+					["pets"] = {
+					},
+					["classe"] = "UNGROUPPLAYER",
+					["fight_component"] = true,
+					["nome"] = "Tangus",
+					["aID"] = "5826-0248A846",
+					["tipo"] = 4,
+					["serial"] = "Player-5826-0248A846",
+					["last_event"] = 0,
+				}, -- [7]
+				{
+					["flag_original"] = 2632,
+					["pets"] = {
+					},
+					["aID"] = "2960",
+					["monster"] = true,
+					["nome"] = "Prairie Wolf Alpha",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5252-1-31179-2960-00002D1823",
+					["classe"] = "UNKNOW",
+				}, -- [8]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["aID"] = "2964",
+					["monster"] = true,
+					["nome"] = "Windfury Sorceress",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5252-1-31179-2964-00002D11C4",
+					["classe"] = "UNKNOW",
+				}, -- [9]
+				{
+					["flag_original"] = 8465,
+					["pets"] = {
+					},
+					["aID"] = "2630",
+					["nome"] = "Earthbind Totem <Jutarnjedrvo>",
+					["grupo"] = true,
+					["classe"] = "PET",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5250-1-20414-2630-00002D3F32",
+					["last_event"] = 0,
+				}, -- [10]
+				{
+					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["aID"] = "3196",
+					["monster"] = true,
+					["nome"] = "Burning Blade Neophyte",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
+					["classe"] = "UNKNOW",
+				}, -- [11]
+				{
+					["flag_original"] = 4680,
+					["pets"] = {
+					},
+					["classe"] = "PET",
+					["fight_component"] = true,
+					["nome"] = "Imp Minion",
+					["aID"] = "12922",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-1-1256-12922-00002D27DA",
+					["last_event"] = 0,
+				}, -- [12]
+				{
+					["flag_original"] = 2632,
+					["pets"] = {
+					},
+					["aID"] = "3199",
+					["monster"] = true,
+					["nome"] = "Burning Blade Cultist",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
+					["classe"] = "UNKNOW",
+				}, -- [13]
 			},
 		}, -- [4]
 		{
@@ -9322,13 +10492,14 @@ _detalhes_database = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 123,
+		["logons"] = 147,
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1707069526,
-		["last_version"] = 16,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["combat_counter"] = 1700,
+	["mythic_plus_log"] = {
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

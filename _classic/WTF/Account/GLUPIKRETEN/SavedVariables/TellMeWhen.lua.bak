@@ -6258,16 +6258,22 @@ TellMeWhenDB = {
 								{
 									["Type"] = "MANA",
 									["Operator"] = ">=",
-									["Level"] = 50,
+									["Level"] = 70,
 								}, -- [2]
 								{
 									["Type"] = "LUA",
 									["Name"] = "xInRange(30)",
 								}, -- [3]
-								["n"] = 3,
+								{
+									["Type"] = "CURRENTSPELL",
+									["Name"] = "Lightning Bolt",
+									["Level"] = 1,
+								}, -- [4]
+								["n"] = 4,
 							},
 							["States"] = {
 								{
+									["Alpha"] = 0,
 								}, -- [1]
 								nil, -- [2]
 								{
@@ -6305,7 +6311,11 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 									["Name"] = "Flame Shock",
 								}, -- [1]
-								["n"] = 1,
+								{
+									["Type"] = "LUA",
+									["Name"] = "xTTD > 6",
+								}, -- [2]
+								["n"] = 2,
 							},
 						}, -- [2]
 						{
@@ -6340,14 +6350,45 @@ TellMeWhenDB = {
 							},
 						}, -- [3]
 						{
+							["Type"] = "cooldown",
+							["Name"] = "Molten Blast",
+							["GUID"] = "TMW:icon:1bhCUZbAne4p",
+							["Enabled"] = true,
+							["ManaCheck"] = true,
 							["States"] = {
 								{
 								}, -- [1]
 								nil, -- [2]
 								{
+									["Alpha"] = 0,
 								}, -- [3]
 								{
+									["Alpha"] = 0,
 								}, -- [4]
+							},
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "LUA",
+									["Checked"] = true,
+									["Unit"] = "target",
+									["Operator"] = ">",
+									["Name"] = "xInRange(5) and IsSpellKnownOrOverridesKnown(425339)",
+									["Level"] = 4,
+								}, -- [1]
+								{
+									["Type"] = "MANA",
+									["Operator"] = ">=",
+									["PrtsBefore"] = 1,
+									["Level"] = 60,
+								}, -- [2]
+								{
+									["Type"] = "LUA",
+									["PrtsAfter"] = 1,
+									["Name"] = "xAOE(5,false) > 1",
+									["AndOr"] = "OR",
+								}, -- [3]
+								["n"] = 3,
 							},
 						}, -- [4]
 						{
@@ -7362,7 +7403,8 @@ TellMeWhenDB = {
 								"TMW:icon:1az3vfr0teCJ", -- [6]
 								"TMW:icon:1a3BehKNMJeZ", -- [7]
 								"TMW:icon:1Zi_P9LYFYqt", -- [8]
-								"TMW:icon:1TeVAjjXQ0WB", -- [9]
+								"TMW:icon:1bhCUZbAne4p", -- [9]
+								"TMW:icon:1TeVAjjXQ0WB", -- [10]
 							},
 							["Conditions"] = {
 								{
@@ -7442,7 +7484,8 @@ TellMeWhenDB = {
 								"TMW:icon:1az3vfr0teCJ", -- [6]
 								"TMW:icon:1a3BehKNMJeZ", -- [7]
 								"TMW:icon:1Zi_P9LYFYqt", -- [8]
-								"TMW:icon:1TeVAjjXQ0WB", -- [9]
+								"TMW:icon:1bhCUZbAne4p", -- [9]
+								"TMW:icon:1TeVAjjXQ0WB", -- [10]
 							},
 							["Conditions"] = {
 								{
