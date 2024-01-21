@@ -1,0 +1,20 @@
+
+TOCADB = {
+	["Jutarnjedrvo-Lone Wolf"] = {
+		["PROFILES"] = {
+			["Default"] = {
+				["TOCA_AIR"] = "Grace of Air Totem",
+				["TOCA_WATER"] = "Disease Cleansing Totem",
+				["TOCA_EARTH"] = "Earthbind Totem",
+				["TOCA_FIRE"] = "Fire Nova Totem",
+			},
+		},
+		["LASTSAVED"] = "Default",
+		["CONFIG"] = {
+		},
+		["DISABLED"] = "NO",
+		["RAID"] = {
+		},
+		["HELP"] = 3.07,
+	},
+}

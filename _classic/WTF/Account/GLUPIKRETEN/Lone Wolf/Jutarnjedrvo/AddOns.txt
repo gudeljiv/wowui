@@ -49,3 +49,5 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
+TotemCaddy: disabled
+TotemPlates: disabled
