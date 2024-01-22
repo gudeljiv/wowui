@@ -135,7 +135,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1705856070,
-							["damage_taken"] = 256.00107,
+							["damage_taken"] = 433.00107,
 							["start_time"] = 1705856055,
 							["delay"] = 0,
 							["last_dps"] = 27.14007781851086,
@@ -353,10 +353,10 @@ _detalhes_database = {
 							["start_time"] = 1705856067,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1705856067,
 							["totaldenied"] = 0.00797,
 							["delay"] = 0,
-							["last_event"] = 1705856067,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -413,7 +413,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["aID"] = "5826-0235A66A",
+							["classe"] = "SHAMAN",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[408525] = {
@@ -445,10 +445,10 @@ _detalhes_database = {
 							["buff_uptime"] = 30,
 							["nome"] = "Jutarnjedrvo",
 							["grupo"] = true,
-							["last_event"] = 1705856070,
 							["tipo"] = 4,
+							["last_event"] = 1705856070,
 							["serial"] = "Player-5826-0235A66A",
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -474,13 +474,13 @@ _detalhes_database = {
 				["combat_counter"] = 1766,
 				["playing_solo"] = true,
 				["totals"] = {
-					8809, -- [1]
-					120, -- [2]
+					15885, -- [1]
+					148, -- [2]
 					{
 						49, -- [1]
-						[0] = 56,
+						[0] = 75,
 						["alternatepower"] = 0,
-						[3] = 120,
+						[3] = 160,
 						[6] = 0,
 					}, -- [3]
 					{
@@ -604,6 +604,16 @@ _detalhes_database = {
 							-1, -- [10]
 						}, -- [3]
 						{
+							true, -- [1]
+							3, -- [2]
+							177, -- [3]
+							1705857514.381, -- [4]
+							340, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [4]
 						{
 						}, -- [5]
@@ -661,7 +671,7 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 4,
+						["n"] = 5,
 					},
 				},
 				["data_inicio"] = "17:54:16",
@@ -1003,10 +1013,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 1,
 							},
-							["interrupt"] = 1.005934,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 1.005934,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 1,
 							},
@@ -1022,14 +1032,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3196",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Burning Blade Neophyte",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
-							["classe"] = "UNKNOW",
+							["aID"] = "3196",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -2460,8 +2470,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1705855965,
 							["tipo"] = 4,
+							["last_event"] = 1705855965,
 							["serial"] = "Player-5826-0235A66A",
 							["aID"] = "5826-0235A66A",
 						}, -- [1]
@@ -2950,10 +2960,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 2,
 							},
-							["interrupt"] = 2.006763,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 2.006763,
 							["interrupt_targets"] = {
 								["Imp Minion"] = 1,
 								["Burning Blade Cultist"] = 1,
@@ -3481,10 +3491,10 @@ _detalhes_database = {
 							["start_time"] = 1705855892,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1705855892,
 							["totaldenied"] = 0.004688,
 							["delay"] = 0,
-							["last_event"] = 1705855892,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -4627,10 +4637,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 1,
 							},
-							["interrupt"] = 1.005711,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 1.005711,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 1,
 							},
@@ -4646,14 +4656,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3196",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Burning Blade Neophyte",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5211-1-1256-3196-00002D450B",
-							["classe"] = "UNKNOW",
+							["aID"] = "3196",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -5623,10 +5633,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 2,
 							},
-							["interrupt"] = 2.002162,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 2.002162,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 2,
 							},
@@ -6074,10 +6084,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 1,
 							},
-							["interrupt"] = 1.003817,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 1.003817,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 1,
 							},
@@ -6093,14 +6103,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3196",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Burning Blade Neophyte",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5211-1-1256-3196-00002D44A8",
-							["classe"] = "UNKNOW",
+							["aID"] = "3196",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -7411,10 +7421,10 @@ _detalhes_database = {
 							["start_time"] = 1705855660,
 							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1705855679,
 							["totaldenied"] = 0.003745,
 							["delay"] = 0,
-							["last_event"] = 1705855679,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -7528,15 +7538,15 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_event"] = 1705855676,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["nome"] = "Jutarnjedrvo",
 							["tipo"] = 4,
 							["aID"] = "5826-0235A66A",
 							["serial"] = "Player-5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 4680,
@@ -7554,14 +7564,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3199",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Burning Blade Cultist",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
-							["classe"] = "UNKNOW",
+							["aID"] = "3199",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -7957,10 +7967,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 2,
 							},
-							["interrupt"] = 2.008597,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 2.008597,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 2,
 							},
@@ -8381,10 +8391,10 @@ _detalhes_database = {
 							["interrompeu_oque"] = {
 								[0] = 1,
 							},
-							["interrupt"] = 1.008558,
-							["tipo"] = 4,
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["interrupt"] = 1.008558,
 							["interrupt_targets"] = {
 								["Burning Blade Neophyte"] = 1,
 							},
@@ -9284,10 +9294,10 @@ _detalhes_database = {
 			["utility"] = false,
 		},
 		["show_title"] = true,
-		["framme_locked"] = false,
 		["cooldowns"] = {
 		},
 		["height"] = 18,
+		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
@@ -9338,10 +9348,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415893554688,
+					["x"] = -979.6941070556641,
+					["w"] = 234.8974304199219,
+					["h"] = 138.5455932617188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -9373,10 +9383,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415893554688,
+					["x"] = -747.7581481933594,
+					["w"] = 228.9744110107422,
+					["h"] = 138.5455932617188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -9480,7 +9490,10 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_overalldata"] = false,
 	},
-	["last_realversion"] = 155,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -9530,11 +9543,11 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
 			},
-			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -9542,20 +9555,20 @@ _detalhes_database = {
 			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["author"] = "Details! Team",
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["font_size"] = 10,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["use_spark"] = false,
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["use_spark"] = false,
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -9565,6 +9578,7 @@ _detalhes_database = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -9576,7 +9590,6 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -9591,23 +9604,20 @@ _detalhes_database = {
 			["scale"] = 1,
 		},
 	},
-	["nick_tag_cache"] = {
-		["nextreset"] = 1707069526,
-		["last_version"] = 16,
-	},
+	["combat_counter"] = 1766,
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_instance_time"] = 1678889909,
+	["last_realversion"] = 155,
+	["nick_tag_cache"] = {
+		["nextreset"] = 1707069526,
+		["last_version"] = 16,
+	},
 	["mythic_plus_log"] = {
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["character_data"] = {
-		["logons"] = 146,
+		["logons"] = 148,
 	},
 	["on_death_menu"] = false,
 	["combat_id"] = 676,
@@ -9631,7 +9641,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -9799,13 +9809,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -9847,7 +9857,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -9863,12 +9873,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -9886,18 +9895,19 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
 			},
 			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -10071,7 +10081,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["resource"] = 1.082703,
+					["resource"] = 1.179525,
 					["pets"] = {
 					},
 					["aID"] = "5826-0235A66A",
@@ -10228,27 +10238,27 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2953",
 					["fight_component"] = true,
 					["nome"] = "Bristleback Shaman",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "2953",
-					["serial"] = "Creature-0-5210-1-17491-2953-00002C173D",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5210-1-17491-2953-00002C173D",
+					["last_event"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2958",
 					["monster"] = true,
 					["nome"] = "Prairie Wolf",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5210-1-17491-2958-00002C052B",
-					["aID"] = "2958",
+					["classe"] = "UNKNOW",
 				}, -- [3]
 				{
 					["flag_original"] = 1304,
@@ -10266,27 +10276,27 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3232",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Bristleback Interloper",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5252-1-31179-3232-0000AD1728",
 					["last_event"] = 0,
+					["aID"] = "3232",
+					["serial"] = "Creature-0-5252-1-31179-3232-0000AD1728",
+					["tipo"] = 4,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "2965",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Windfury Matriarch",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5252-1-31179-2965-0005AD0AF5",
-					["classe"] = "UNKNOW",
+					["aID"] = "2965",
 				}, -- [6]
 				{
 					["flag_original"] = 1304,
@@ -10304,27 +10314,27 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2960",
 					["fight_component"] = true,
 					["nome"] = "Prairie Wolf Alpha",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "2960",
-					["serial"] = "Creature-0-5252-1-31179-2960-00002D1823",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-31179-2960-00002D1823",
+					["last_event"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "2964",
 					["fight_component"] = true,
 					["nome"] = "Windfury Sorceress",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "2964",
-					["serial"] = "Creature-0-5252-1-31179-2964-00002D11C4",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-1-31179-2964-00002D11C4",
+					["last_event"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 8465,
@@ -10342,14 +10352,14 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3196",
 					["fight_component"] = true,
 					["nome"] = "Burning Blade Neophyte",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "3196",
-					["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5211-1-1256-3196-00002D4ABD",
+					["last_event"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 4680,
@@ -10367,14 +10377,14 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3199",
 					["fight_component"] = true,
 					["nome"] = "Burning Blade Cultist",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "3199",
-					["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5211-1-1256-3199-00002D4416",
+					["last_event"] = 0,
 				}, -- [13]
 			},
 		}, -- [4]
@@ -10480,9 +10490,9 @@ _detalhes_database = {
 		["trinketProcs"] = {
 		},
 	},
-	["last_day"] = "21",
-	["combat_counter"] = 1766,
+	["last_day"] = "22",
 	["force_font_outline"] = "",
+	["last_instance_time"] = 1678889909,
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
