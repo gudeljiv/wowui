@@ -18,5 +18,8 @@ SRTIExternalUF = {
 		"SUFUnitfocus", -- [3]
 		"SUFUnitfocustarget", -- [4]
 		"SUFHeaderpartyUnitButton1", -- [5]
+		"SUFHeaderpartyUnitButton2", -- [6]
+		"SUFHeaderpartyUnitButton3", -- [7]
+		"SUFHeaderpartyUnitButton4", -- [8]
 	},
 }
