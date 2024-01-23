@@ -13,7 +13,7 @@ do
 			"MultiBarLeft",
 			"MultiBarRight",
 			"MultiBarBottomRight",
-			--'StanceBarFrame',
+			-- 'StanceBarFrame',
 			"PossessBarFrame",
 			"MULTICASTACTIONBAR_YPOS",
 			"MultiCastActionBarFrame",

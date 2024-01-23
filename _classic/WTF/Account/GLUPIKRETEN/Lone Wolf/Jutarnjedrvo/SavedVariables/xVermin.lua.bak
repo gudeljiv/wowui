@@ -2,16 +2,19 @@
 xKillCount = {
 	["show"] = false,
 	["killLog"] = {
+		["Devouring Ectoplasm"] = {
+			["name"] = "Devouring Ectoplasm",
+			["count"] = 1,
+		},
 	},
 	["experience"] = {
-		["totaltotal"] = 348180,
-		["pulltotal"] = 628,
+		["totaltotal"] = 27248,
+		["pulltotal"] = 3320,
 	},
 	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
+		["y"] = 71.92864990234375,
+		["x"] = -0,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

@@ -24,8 +24,8 @@ TomTomDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Tudum - Jin'do"] = "Default",
@@ -51,7 +51,7 @@ TomTomDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Dopesick - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -114,8 +114,8 @@ TomTomWaypointsM = {
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
@@ -141,7 +141,7 @@ TomTomWaypointsM = {
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 	},
 	["profiles"] = {
@@ -190,43 +190,10 @@ TomTomWaypointsM = {
 		["Vermina - Golemagg"] = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
-			[1413] = {
-				["1413:590000000:370000000:Way of Earth"] = {
-					1413, -- [1]
-					0.59, -- [2]
-					0.37, -- [3]
-					["arrivaldistance"] = 15,
-					["crazy"] = true,
-					["persistent"] = true,
-					["desc"] = "Way of Earth",
-					["silent"] = true,
-					["cleardistance"] = 10,
-					["title"] = "Way of Earth",
-					["from"] = "TomTom/way",
-					["callbacks"] = {
-						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-					},
-					["minimap"] = true,
-					["world"] = true,
-				},
-			},
-		},
-		["Dopesnare - Lone Wolf"] = {
 		},
 		["Doperage - Lone Wolf"] = {
+		},
+		["Dopetrap - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
@@ -303,7 +270,7 @@ TomTomWaypointsM = {
 		},
 		["Dopeclaw - Stitches"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Dopedot - Lone Wolf"] = {
 		},

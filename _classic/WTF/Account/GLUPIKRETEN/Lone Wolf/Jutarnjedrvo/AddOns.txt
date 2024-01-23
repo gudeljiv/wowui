@@ -125,3 +125,4 @@ Auc-Advanced: enabled
 TheUndermineJournal: enabled
 BootyBayGazette: enabled
 AuctionDB: enabled
+FloTotemBar: disabled

@@ -1,0 +1,5 @@
+## Interface: 11500
+## Title: Better Runes Frame
+## Notes: Improvements to the Season of Discovery runes frame
+
+BetterRunesFrame.lua

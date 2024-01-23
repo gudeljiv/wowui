@@ -1,0 +1,11 @@
+## Interface: 11500
+## Version: 1.27
+## Author: Taraezor
+## IconTexture: Interface\Icons\INV_Misc_Rune_06
+## Title: Runes
+## Notes: |cFFFF007FAll the Season of Discovery Runes!
+## RequiredDeps: HandyNotes
+## SavedVariablesPerCharacter: HandyNotes_RunesDB
+
+Core.lua
+Data.lua

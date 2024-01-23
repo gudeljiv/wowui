@@ -1,0 +1,12 @@
+tag 8ae4721d7f41569f67e5885372b090e9e4425019 1.15.45-classic
+Author:	Floraline <floraline@ophiuchus.org>
+Date:	Wed Dec 6 21:23:04 2023 +0100
+
+Tagging for release
+
+commit 5b87b350afd8b4ba8c8e0fb2b5a36a543c7f3a75
+Author: Floraline <floraline@ophiuchus.org>
+Date:   Wed Dec 6 20:50:38 2023 +0100
+
+    update toc
+

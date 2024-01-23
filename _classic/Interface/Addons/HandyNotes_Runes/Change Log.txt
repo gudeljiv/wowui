@@ -1,0 +1,191 @@
+== v1.27 - 23rd January 2024
+* Ayanna Everstride (Hunters) in Aldrassil is now more precise
+* The location and description of the Rogue's Owl/Idol on the roof of the Inn at Aldrassil was improved
+* Githyiss the Vile location tweaked a bit alough it does move around a bit
+* Moonwell location (Priests /kneel) more exact in Shadowglen
+* Shanda (Priest) location clarified to at the back of the Inn in Shadowglenn
+* Alyissia (Warrior) and Frahun (Rogue) likewise updated/improved
+* Colours for Phase Two slots added, in anticipation. Slight formatting change too
+
+== v1.26 - 13th January 2024
+* Druids in Westfall have vastly reduced pin clutter
+* Druids for Loch Modan also cleaned up a bit. Less is more!
+* Darkshore a small cleanup for Druids
+
+== v1.25 - 11th January 2024
+* Slot information now included in the Quick Start / Summary popup!
+
+== v1.24 - 9th January 2024
+* Starsurge / Rune of Stars (Druid): Added that can obtain earlier than 20 - help or spirit runs
+* Azeroth Commerce\nAuthority (A) or Durotar Supply and Logistics (H): added note that quests require level 8/9
+* Savage Roar / Ferocious Idol (Druid) now marked as level 20
+
+== v1.23 - 7th January 2024
+* Mage books as collected now use the options flag for suppressing finished runes
+* Zixil explosives cost for Warlocks now noted as 1g from 5g as per player reports.
+  Guess Blizzard nerfed the cost.
+* Hide if the rune spell was learnt" Tooltip now also mentions Mage Icy Veins books
+
+== v1.22 - 5th January 2024
+* Void Touched gear guide
+* NPCs in Ratchet location tweaked
+* N'ora Anyheart added
+* Shadowy Figure / Shard of Pure Light added
+* Dead Twilight Cultist added
+
+== v1.21 - 2nd January 2024
+* Dokimi location more exact and added to the Mulgore map too
+* Mooart location tweaked in Thunder Bluff
+* Natali likewise and also added to Mulgore
+* Shaman's Boarton Shadetotem added to Mulgore and TB coordinates tweaked
+* Mazzranache / Ghost Howl pins for Hunter's consolidated - less is more!
+* Deep consolidation of other Mulgore Hunter pins occurred in v1.20 (I think or was it this version)
+* Deep consolidation of other Mulgore Druid pins occurred in v1.20 (I think) as well as this version
+* Hunter's Takoda Sunmane for Carve in Bloodhoof Village tweaked
+
+== v1.20 - 1st January 2024
+* The location of the Horde Warbanner in The Crossroads was made more precise
+* Lanka Farshot more exact
+* Mulgore Bristleback Loot Cache now has a slightly more accurate location and an
+	extra pin to indicate where the path begins
+* Mulgore Warrior and Druid pins vastly reduced. Less is more!	
+* Fish Oil. Swamp of Sorrows, Feralas, Desolace, Stranglethorn Vale - Less Is More!
+* Wetlands Dark Iron Ordinance... Less is more
+* Added the third Lunar Stone and updated the other two in Mulgore
+
+== v1.19 - 31st December 2023
+* Tauren Mill now has less Taurens and is now known as Tarren Mill
+* Skull Rock Cave, various Horde classes, vastly overhauled
+  - all classes, all NPCs
+* Warrior pins in Durotar trimmed - less is more!
+* Dietrich Praice, Jornah, Gru'ark, Zamja, Mural of Ta'zo, Dusty Chest
+  in Orgrimmar have all been location tweaked.
+* Gru'arl/Zamja pins/instructions improved
+
+== v1.18 - 30th December 2023
+* Fix for not able to get data from the server
+
+== v1.17 - 29th December 2023
+* Warlock Makrura leg pins in Durotar. Deleted a lot - less is more!
+* Valley of Trials. Reveiewed every NPC involved in Runes. Tweaked all
+  coordinates
+* The help/directions for the Rogue/Warrior Hidden Cache rune revamped
+* The Cove to the north of the Valley of Trails. All rune locations tweaked
+* Loa Altar just outside of Sen'jin - location tweaked
+* Warlock Soboz Summoning Circle location and tooltip improved
+* Frozen Makrura for Mage, Shaman, Warlock in Durotar location tweaked
+* Vahi Bonesplitter for Warriors was spelt Vhi. Also improved her location a tad
+* Darmack Bloodhowl coords adjusted too and Tooltip directs you BEHIND the Barracks at Razor Hill
+* Razzil likewise improved
+
+== v1.16 - 28th December 2023
+* Saved progress / settings are now saved per character and not per account
+
+== v1.15 - 27th December 2023
+* Defias Stashbox in Northshire now accurate to 100ths
+* Cutty, Rogues now accurate to 100ths and location tip improved
+* Garrick Proudfoot, Rogues, now extra accurate and Tooltip warns of extremely fast respawn. Ouch!
+  and Battered Chest nearby too!
+* Jorik Kerridan similarly polished
+* Drusilla La Salle extra accurate
+* Removed excessive Defias Thug pins. Less is more!
+* Location of Brother Sammuel in Northshire corrected. Paladins. It was soooo wrong
+* Priestess Anetta improved directions. Priests
+* Khelden Bremmen, Mages, improved directions. Location also now to 100ths
+* Kobold Stashbox for Warriors at the back of Echo Ridge Mine slightly tweaked
+  but Tooltip also suggests to loos for an extra Battered Chest nearby!
+* Excessive Warrior pins removed from Elynn. Less is more!
+* Rogues Rusty Lockbox in Goldshire all round polished
+* Maximillian Crowe in Goldshire polished
+
+== v1.14 - 26th December 2023
+* Ursula Deline (Paladins) in Stormwind location accuracy now to 100th
+  and with Tooltip now telling you to go to the Warlock coven at the
+  basement of The Slaughtered Lamb. She's also on the Elwynn map now
+* Ditto Gakin the Darkbinder for Warlocks
+* Zamja (Horde Warriors) fixed - was using an Alliance guide
+* Liv Bradford and Stuart improved for Paladins Rebuke / Warrior Frenzied Assault.
+* Liv Bradford now appears on the Storwind overlay of Elwynn Forest
+* Brother Romulus location now to 100th and also on Elwynn. Paladin Martyrdom
+* Ditto High Priestess Laurena, Priest level 17 quest
+* Ditto Viktoria Woods, Warrior Devastate
+* Ketherine spelling fixed to Katherine. She's also accurate to 100th and
+  in the Stormwind overlay of Elwynn too for Paladin Divine Storm
+* Garion Wendell polished
+
+== v1.13 - 26th December 2023
+* Bruuk, Buruart in IF tooltip is now more helpful for Warriors
+* All Ironforge pins will now appear on the Dun Morogh map too
+  (I'll eventually do this for all capitals - it's a WoW map quirk to work around.
+   I know it exists but it's a low priority. I wait for my toon to be in the city)
+* Fixed a Hunter/Mage error on one pin in Dun Morogh
+* Removed excessive Fingers of Frost Mage pins in Dun Morogh - Less is More (TM)!
+* Coords of Gaklik, Junni and others made more precise in Dun Morogh
+* Hunter Rustling Bush coordinates accurate to 100th in Dun Morogh
+  
+== v1.12 - 25th December 2023
+* Added four more number colours. Total of five choices now
+* Added a number, 1 to 12, preceding each spell in the Quick Start popup
+* The Lessons of Ta'zo Orgrimmar typo
+* Quick Start icon menu typo. Missing "1 ="
+
+== v1.11 - 25th December 2023
+* Added Priest
+* Leprithus added for Paladin Hand of Reckoning
+* Added Felreaver Scornn for Warrior Furious Thunder
+* Added Warlord Kolkanis for Mage Fingers of Frost
+* Improved Rogue Shiv
+* Paladin Exorcist simplified
+
+== v1.10 - 22nd December 2023
+* Rogue added
+* Spelling: Forrest to Forest
+* Probably fixed some typoes here and there too
+
+== v1.09 - 21st December 2023
+* Hunter added
+* Bug Fixes: where multiple runes for the same mob can occur
+* Fixed a Warlock quest name missing - introduced error sadly
+
+== v1.08 - 19th December 2023
+* Pins by defualt disappear when the rune is collected
+  (eventually - I wait for the player to toggle options, or open a World Map, change zones, etc)
+* Pins are now numbered 1 to 12 but can still choose the summary pin
+
+== v1.07 - 18th December 2023
+* Priest, Hunter, Rogue have all commenced and the first three runes for each are complete
+
+== v1.06 - 17th December 2023
+* Redesigned the Quick Start menu so that it's more useful
+* Revamped the Quick Start text so that it's more useful / complete
+* Suggested level numbers and Quick Starts are now live for ALL classes
+* Note that complete zone map pins are still required for : Priest, Hunter, Rogue
+
+== v1.05 - 16th December 2023
+* Warriors added
+* Levels added to the Quick Start popup
+* Quick Start now also appears on the Kalimdor and Eastern Kingdoms maps
+* Some of the excessive pins removed
+
+== v1.04 - 15th December 2023
+* Mages added
+
+== v1.03 - 14th December 2023
+* Warlock added
+* Numerous formatting fixes
+* Couple of coding errors in the engine fixed - had to redesign the Quick Start data
+* Class colours added to Tooltips
+
+== v1.02 - 13th December 2023
+* Shaman added
+* Various formatting errors fixed, as you'd expect with an AddOn like this
+
+== v1.01 - 12th December 2023
+* Paladin added
+* Summary on the Azeroth map added - shows you where to start
+* Removed excessive Druid pins, especially Swamp of Sorrows, Westfall
+* A lot of typos fixed
+
+== v1.0 - 12th December 2023
+* Initial release - Druid only
+

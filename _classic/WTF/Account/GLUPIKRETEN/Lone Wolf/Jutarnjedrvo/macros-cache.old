@@ -17,6 +17,12 @@ VER 3 0000000001000007 "flame" "134400"
 /startattack
 /cast Flame Shock
 END
+VER 3 000000000100000A "flame" "134400"
+#showtooltip
+/cast [@none, mod:shift] Flametongue Weapon; [@none] Flametongue Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
 VER 3 0000000001000002 "heal" "136052"
 #showtooltip
 /cast [@mouseover,help,exists][]Healing Wave
@@ -28,4 +34,10 @@ END
 VER 3 0000000001000004 "poison" "134400"
 #showtooltip
 /cast [@mouseover,help,exists][]Cure Poison
+END
+VER 3 0000000001000009 "rock" "134400"
+#showtooltip
+/cast [@none, mod:shift] Rockbiter Weapon; [@none] Rockbiter Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
 END

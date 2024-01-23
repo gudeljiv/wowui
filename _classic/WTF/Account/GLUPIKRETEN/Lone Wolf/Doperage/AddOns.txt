@@ -113,7 +113,7 @@ SigmaProfessionFilterFirstAid: disabled
 SigmaProfessionFilterMining: disabled
 SigmaProfessionFilterPoisons: disabled
 Immersion: enabled
-Bagnon_ItemLevel_Vermin: enabled
+Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
 AdiBags-BetterCategories: enabled
 ClickLinks: enabled
@@ -126,4 +126,4 @@ Masque_Newsom: enabled
 SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TomTom: enabled
-TotemCaddy: enabled
+TotemCaddy: disabled

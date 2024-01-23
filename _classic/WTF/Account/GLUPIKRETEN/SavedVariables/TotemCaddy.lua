@@ -1,12 +1,29 @@
 
 TOCADB = {
+	["Doperage-Lone Wolf"] = {
+		["PROFILES"] = {
+			["Default"] = {
+				["TOCA_AIR"] = "Grace of Air Totem",
+				["TOCA_WATER"] = "Disease Cleansing Totem",
+				["TOCA_EARTH"] = "Earthbind Totem",
+				["TOCA_FIRE"] = "Fire Nova Totem",
+			},
+		},
+		["LASTSAVED"] = "Default",
+		["CONFIG"] = {
+		},
+		["DISABLED"] = "NO",
+		["RAID"] = {
+		},
+		["HELP"] = "YES",
+	},
 	["Jutarnjedrvo-Lone Wolf"] = {
 		["PROFILES"] = {
 			["Default"] = {
 				["TOCA_AIR"] = "Grace of Air Totem",
+				["TOCA_WATER"] = "Disease Cleansing Totem",
 				["TOCA_EARTH"] = "Earthbind Totem",
 				["TOCA_FIRE"] = "Fire Nova Totem",
-				["TOCA_WATER"] = "Disease Cleansing Totem",
 			},
 		},
 		["LASTSAVED"] = "Default",
@@ -22,27 +39,27 @@ TOCADB = {
 			["ESASSIGNMENTS"] = "OFF",
 			["TOOLON"] = "OFF",
 			["MINIMAP_ICON"] = "OFF",
-			["SCALE"] = 1,
+			["COMBATLOCK"] = "OFF",
 			["SCALEPERS"] = 1,
 			["FRAMESTYLE"] = "Classic",
 			["EXPIRESHIELD"] = "OFF",
 			["EXPIREMESSAGESHIELD"] = "OFF",
 			["ESPOS"] = "CENTER,-355.55514526367,173.01579284668",
 			["MAINMENUOPT"] = "ON",
-			["MAINMENU"] = "ON",
+			["EXPIRESOUND"] = "OFF",
 			["TOTEMORDER"] = {
 				"AIR,EARTH,FIRE,WATER", -- [1]
 			},
 			["TIMERS"] = "ON",
-			["EXPIRESOUND"] = "OFF",
+			["MAINMENU"] = "ON",
 			["ANKH"] = "OFF",
 			["EXPIREMESSAGE"] = "OFF",
-			["COMBATLOCK"] = "OFF",
+			["SCALE"] = 1,
 			["TOTEMRADIUSVISUAL"] = "ON",
 		},
 		["DISABLED"] = "NO",
-		["HELP"] = 3.07,
 		["RAID"] = {
 		},
+		["HELP"] = 3.07,
 	},
 }
