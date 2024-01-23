@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11456,
+	["session"] = 11472,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2555,5 +2555,53 @@ BugGrabberDB = {
 			["session"] = 11454,
 			["counter"] = 1,
 		}, -- [330]
+		{
+			["message"] = "[string \"EngravingScrollFrameScrollButton2:Hide()\"]:1: attempt to index global 'EngravingScrollFrameScrollButton2' (a nil value)",
+			["time"] = "2024/01/23 22:18:29",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'EngravingScrollFrameScrollButton2' (a nil value)\"\n",
+			["stack"] = "[string \"EngravingScrollFrameScrollButton2:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3015: in function <Interface/FrameXML/ChatFrame.lua:3009>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 11458,
+			["counter"] = 1,
+		}, -- [331]
+		{
+			["message"] = "Texture:SetDrawLayer(): Texture:CSimpleRegion::SetDrawLayerScript(): SetDrawLayer: sublevel must be between -8 and 7!",
+			["time"] = "2024/01/23 22:21:37",
+			["locals"] = "(*temporary) = Texture {\n 0 = <userdata>\n}\n(*temporary) = \"HIGHLIGHT\"\n(*temporary) = 10\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetDrawLayer'\n[string \"EngravingFrameScrollFrameButton2.texture:SetDrawLayer(\"HIGHLIGHT\", 10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3015: in function <Interface/FrameXML/ChatFrame.lua:3009>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 11458,
+			["counter"] = 1,
+		}, -- [332]
+		{
+			["message"] = "Interface/SharedXML/SharedUIPanelTemplates.lua:1878: attempt to index field 'target' (a nil value)",
+			["time"] = "2024/01/23 22:23:07",
+			["locals"] = "self = Button {\n 0 = <userdata>\n Highlight = Frame {\n }\n Init = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1873\n OnDragStop = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1881\n Text = FontString {\n }\n OnLoad = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1869\n OnDragStart = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1877\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'target' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:1878: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:1877>",
+			["session"] = 11458,
+			["counter"] = 1,
+		}, -- [333]
+		{
+			["message"] = "Interface/SharedXML/SharedUIPanelTemplates.lua:1882: attempt to index field 'target' (a nil value)",
+			["time"] = "2024/01/23 22:23:08",
+			["locals"] = "self = Button {\n 0 = <userdata>\n Highlight = Frame {\n }\n Init = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1873\n OnDragStop = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1881\n Text = FontString {\n }\n OnLoad = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1869\n OnDragStart = <function> defined @Interface/SharedXML/SharedUIPanelTemplates.lua:1877\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'target' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/SharedXML/SharedUIPanelTemplates.lua\"]:1882: in function <Interface/SharedXML/SharedUIPanelTemplates.lua:1881>",
+			["session"] = 11458,
+			["counter"] = 1,
+		}, -- [334]
+		{
+			["message"] = "[string \"buffButton_thorns:CreateBautyBorder(8)\"]:1: attempt to index global 'buffButton_thorns' (a nil value)",
+			["time"] = "2024/01/23 22:33:49",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'buffButton_thorns' (a nil value)\"\n",
+			["stack"] = "[string \"buffButton_thorns:CreateBautyBorder(8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11462,
+			["counter"] = 1,
+		}, -- [335]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:13: attempt to get length of global 'tbl' (a nil value)",
+			["time"] = "2024/01/23 22:37:21",
+			["locals"] = "buffs = <table> {\n}\n(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to get length of global 'tbl' (a nil value)\"\nxVermin = <table> {\n WaitTimeUntillAddonLoaded = 30\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:220\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:62\n IsClassic = true\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n R6_Occupied = false\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:254\n Interrupt = <function> defined @Interface/AddOns/xVermin/Helpers/Interrupt.lua:115\n ClassColor = <table> {\n }\n Config = <table> {\n }\n QuestRewardGoldIconFrame = xVermin_QuestRewardGoldIconFrame {\n }\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:110\n BehindTarget = <function> defined @Interface/AddOns/xVermin/Rotation/BehindTarget.lua:53\n AOE = <function> defined @Interface/AddOns/xVermin/Rotation/AOE.lua:16\n IsWotlk = false\n CheckBuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:38\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:99\n CheckDebuff = <function> defined @Interface/AddOns/xVermin/Rotation/_Core.lua:24\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:82\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:145\n Threat = <function> defined @Interface/AddOns/xVermin/Helpers/Threat.lua:3\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:154\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:292\n Class = \"DRUID\"\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:125\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:208\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:265\n IsTBC = false\n IsSoD = true\n MaxPlayerLevel = 25\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:137\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:244\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:234\n}\nshift = -38\n_ = \"xVermin\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/Buffs.lua\"]:13: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:9>\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:201: in function <Interface/AddOns/xVermin/_Core.lua:159>",
+			["session"] = 11467,
+			["counter"] = 13,
+		}, -- [336]
 	},
 }

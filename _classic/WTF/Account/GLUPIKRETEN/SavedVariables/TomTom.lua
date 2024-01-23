@@ -24,8 +24,8 @@ TomTomDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Tudum - Jin'do"] = "Default",
@@ -51,7 +51,7 @@ TomTomDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Dopesick - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -114,8 +114,8 @@ TomTomWaypointsM = {
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
@@ -141,7 +141,7 @@ TomTomWaypointsM = {
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 	},
 	["profiles"] = {
@@ -191,9 +191,9 @@ TomTomWaypointsM = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
-		["Doperage - Lone Wolf"] = {
+		["Dopesnare - Lone Wolf"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
@@ -270,7 +270,7 @@ TomTomWaypointsM = {
 		},
 		["Dopeclaw - Stitches"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
+		["Dopetrap - Lone Wolf"] = {
 		},
 		["Dopedot - Lone Wolf"] = {
 		},

@@ -106,11 +106,11 @@ LibDBIcon-1.0: enabled
 LibSharedMedia-3.0: enabled
 LibStub: enabled
 LibUIDropDownMenu: enabled
-SkillInfoPlus: disabled
+SkillInfoPlus: enabled
 AdiBags-BetterCategories: enabled
 ClassicProfessionFilter: enabled
 Immersion: enabled
-Bagnon_ItemLevel_Vermin: enabled
+Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
 ClickLinks: enabled
 Details_Compare2: enabled

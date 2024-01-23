@@ -56,22 +56,17 @@ VER 3 0000000001000001 " " "INV_Misc_QuestionMark"
 /stopattack
 /stopcasting
 END
-VER 3 0000000001000011 " " "132152"
+VER 3 0000000001000015 " " "134400"
+#showtooltip 
+/startattack
+/use Legs Rune Ability
+END
+VER 3 0000000001000011 "attack" "132152"
 #showtooltip
 /petfollow
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
-END
-VER 3 000000000100000F " " "132328"
-#showtooltip
-/petfollow
-/petpassive
-END
-VER 3 0000000001000015 " " "134400"
-#showtooltip 
-/startattack
-/use Legs Rune Ability
 END
 VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
 #showtooltip
@@ -83,6 +78,11 @@ VER 3 0000000001000002 "MP" "134400"
 /cast [@pet,dead] Revive Pet
 /cast [nopet] Call Pet
 /cast Mend Pet
+END
+VER 3 000000000100000F "passive" "132328"
+#showtooltip
+/petfollow
+/petpassive
 END
 VER 3 0000000001000009 "WC" "134400"
 #showtooltip Wing Clip

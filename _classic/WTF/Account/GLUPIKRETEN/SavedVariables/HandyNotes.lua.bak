@@ -1,21 +1,33 @@
 
 HandyNotesDB = {
 	["profileKeys"] = {
+		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 	},
 	["profiles"] = {
+		["Dopeclaw - Lone Wolf"] = {
+		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
 		["Default"] = {
+		},
+		["Dopestab - Lone Wolf"] = {
 		},
 	},
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
+		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 	},
 	["profiles"] = {
+		["Dopeclaw - Lone Wolf"] = {
+		},
 		["Jutarnjedrvo - Lone Wolf"] = {
+		},
+		["Dopestab - Lone Wolf"] = {
 		},
 	},
 }

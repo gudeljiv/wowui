@@ -126,3 +126,4 @@ TheUndermineJournal: enabled
 BootyBayGazette: enabled
 AuctionDB: enabled
 FloTotemBar: disabled
+SkillInfoPlus: enabled

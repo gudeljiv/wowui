@@ -49,7 +49,7 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
-Bagnon_ItemLevel_Vermin: enabled
+Bagnon_ItemLevel_Vermin: disabled
 nBuff: enabled
 nMinimap: enabled
 !Beautycase: enabled
@@ -119,3 +119,4 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 WhatsTraining: enabled
 xVermin: enabled
+SkillInfoPlus: enabled

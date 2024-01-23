@@ -114,11 +114,13 @@ local function UpdateButtons()
 					if equippedRunes[rune.skillLineAbilityID] then
 						button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
 						button:SetBeautyBorderColor(0, 1, 0)
+						button.texture:SetDrawLayer("ARTWORK", 7)
 						-- button.checkedTexture:Show();
 						-- EngravingFrameScrollFrameButton3Icon:Hide()
 					else
 						button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureNormal')
 						button:SetBeautyBorderColor(1, 1, 1)
+						button.texture:SetDrawLayer("ARTWORK", -8)
 						-- button.checkedTexture:Hide();
 					end
 					button:ClearAllPoints();

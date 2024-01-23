@@ -1,0 +1,7 @@
+## Interface: 11401
+## Title: |cffeeca00Skill Info+|r
+## Author: Rifl (Firemaw)
+## Version: 1.1
+## Notes: Shows skill color indicator on minimap nodes and prints max rank when skilling up
+
+SkillInfoPlus.lua

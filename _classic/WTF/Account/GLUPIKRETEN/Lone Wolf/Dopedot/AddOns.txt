@@ -95,7 +95,7 @@ WhatsTraining: enabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
 Immersion: enabled
-Bagnon_ItemLevel_Vermin: enabled
+Bagnon_ItemLevel_Vermin: disabled
 NovaWorldBuffs: enabled
 AdiBags-BetterCategories: enabled
 ClickLinks: enabled
@@ -109,3 +109,4 @@ SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TomTom: enabled
 TotemCaddy: enabled
+SkillInfoPlus: enabled

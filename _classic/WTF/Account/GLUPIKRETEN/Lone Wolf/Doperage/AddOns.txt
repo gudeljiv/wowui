@@ -127,3 +127,4 @@ SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TomTom: enabled
 TotemCaddy: disabled
+SkillInfoPlus: enabled
