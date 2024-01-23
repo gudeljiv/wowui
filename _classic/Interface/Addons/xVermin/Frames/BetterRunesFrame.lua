@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 RUNE_BUTTON_HEIGHT = 40;
 RUNE_HEADER_BUTTON_HEIGHT = 23;
 
