@@ -10,7 +10,7 @@ END
 VER 3 0000000001000003 "earth" "136026"
 #showtooltip
 /stopcasting
-/cast [@focus,exists,harm][] Earth Shock
+/cast [@focus,exists,harm][] Earth Shock(Rank 1)
 END
 VER 3 0000000001000007 "flame" "134400"
 #showtooltip
@@ -20,6 +20,12 @@ END
 VER 3 000000000100000A "flame" "134400"
 #showtooltip
 /cast [@none, mod:shift] Flametongue Weapon; [@none] Flametongue Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 000000000100000B "frost" "134400"
+#showtooltip
+/cast [@none, mod:shift] Frostbrand Weapon; [@none] Frostbrand Weapon
 /use [mod:shift] 17; 16
 /click StaticPopup1Button1
 END

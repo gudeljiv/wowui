@@ -3,13 +3,13 @@ xKillCount = {
 	["show"] = false,
 	["position"] = {
 		["y"] = 71.92864990234375,
-		["x"] = -0,
+		["x"] = 0,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 0,
-		["totaltotal"] = 39220,
+		["pulltotal"] = 2069,
+		["totaltotal"] = 110620,
 	},
 	["killLog"] = {
 		["Devouring Ectoplasm"] = {

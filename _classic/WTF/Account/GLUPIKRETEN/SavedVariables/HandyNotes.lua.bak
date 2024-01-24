@@ -4,15 +4,21 @@ HandyNotesDB = {
 		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 	},
 	["profiles"] = {
 		["Dopeclaw - Lone Wolf"] = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
+		["Dopestab - Lone Wolf"] = {
+		},
+		["Dopesnare - Lone Wolf"] = {
+		},
 		["Default"] = {
 		},
-		["Dopestab - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 	},
 }
@@ -21,6 +27,8 @@ HandyNotes_HandyNotesDB = {
 		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 	},
 	["profiles"] = {
 		["Dopeclaw - Lone Wolf"] = {
@@ -28,6 +36,10 @@ HandyNotes_HandyNotesDB = {
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
 		["Dopestab - Lone Wolf"] = {
+		},
+		["Dopesnare - Lone Wolf"] = {
+		},
+		["Doperage - Lone Wolf"] = {
 		},
 	},
 }

@@ -5,6 +5,7 @@ HandyNotes_RunesDB = {
 			["spells"] = {
 				["Way of Earth"] = true,
 				["Molten Blast"] = true,
+				["Water Shield"] = true,
 				["Overload"] = true,
 				["Lava Lash"] = true,
 				["Ancestral Guidance"] = true,

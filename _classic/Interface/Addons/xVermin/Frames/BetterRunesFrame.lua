@@ -108,8 +108,8 @@ local function UpdateButtons()
 						button.texture = button:CreateTexture(nil, 'BACKGROUND')
 						button.texture:SetSize(button:GetSize())
 						button.texture:SetPoint('CENTER')
-						button.texture:SetTexture(rune.iconTexture)
 					end
+					button.texture:SetTexture(rune.iconTexture)
 
 					if equippedRunes[rune.skillLineAbilityID] then
 						button:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\media\\textureWhite')
