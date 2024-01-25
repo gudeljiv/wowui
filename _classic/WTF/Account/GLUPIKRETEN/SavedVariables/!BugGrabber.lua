@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 11487,
+	["session"] = 11489,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -2635,5 +2635,21 @@ BugGrabberDB = {
 			["session"] = 11482,
 			["counter"] = 65,
 		}, -- [340]
+		{
+			["message"] = "[string \"print(OffhandHasWeapon())\"]:1: attempt to call global 'OffhandHasWeapon' (a nil value)",
+			["time"] = "2024/01/25 10:13:21",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'OffhandHasWeapon' (a nil value)\"\n",
+			["stack"] = "[string \"print(OffhandHasWeapon())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11488,
+			["counter"] = 1,
+		}, -- [341]
+		{
+			["message"] = "[string \"print(GetInventoryItemLink(\"player\",GetInventorySlotInfo(\"Secon...\"]:1: ')' expected near '<eof>'",
+			["time"] = "2024/01/25 10:14:07",
+			["locals"] = "(*temporary) = \"print(GetInventoryItemLink(\"player\",GetInventorySlotInfo(\"SecondaryHandSlot\"))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11488,
+			["counter"] = 1,
+		}, -- [342]
 	},
 }

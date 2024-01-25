@@ -1,22 +1,23 @@
 
 HandyNotes_RunesDB = {
-	["runesKnown"] = {
-		["WARRIOR"] = {
-			["spells"] = {
-				["Blood Frenzy"] = true,
-				["Quick Strike"] = true,
-				["Frenzied Assault"] = true,
-				["Victory Rush"] = true,
-				["Devastate"] = true,
-				["Furious Thunder"] = true,
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Doperage - Lone Wolf"] = "Default",
 	},
-	["profiles"] = {
-		["Default"] = {
+	["runesKnown"] = {
+		["WARRIOR"] = {
+			["spells"] = {
+				["Blood Frenzy"] = true,
+				["Endless Rage"] = true,
+				["Frenzied Assault"] = true,
+				["Quick Strike"] = true,
+				["Victory Rush"] = true,
+				["Devastate"] = true,
+				["Furious Thunder"] = true,
+			},
 		},
 	},
 }
