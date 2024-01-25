@@ -627,13 +627,13 @@ L["timerWindowWidthTitle"] = "计时器窗口宽度";
 L["timerWindowWidthDesc"] = "设置计时器窗口的宽度.";
 
 L["timerWindowHeightTitle"] = "计时器窗口高度";
-L["timerWindowHeghtDesc"] = "设置计时器窗口的高度.";
+L["timerWindowHeightDesc"] = "设置计时器窗口的高度.";
 
 L["buffWindowWidthTitle"] = "Buff窗口宽度";
 L["buffWindowWidthDesc"] = "设置Buff窗口的宽度.";
 
 L["buffWindowHeightTitle"] = "Buff窗口高度";
-L["buffWindowHeghtDesc"] = "设置Buff窗口的都高度.";
+L["buffWindowHeightDesc"] = "设置Buff窗口的都高度.";
 
 L["dmfSettingsListTitle"] = "暗夜马戏团Buff列表";
 L["dmfSettingsListDesc"] = "点击显示你的小号所设置的暗夜马戏团Buff类型列表.";

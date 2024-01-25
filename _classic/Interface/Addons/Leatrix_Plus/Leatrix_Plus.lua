@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.12 (17th January 2024)
+-- 	Leatrix Plus 1.15.13 (24th January 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.12"
+	LeaPlusLC["AddonVer"] = "1.15.13"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -1966,7 +1966,7 @@
 			eb.Text = eb.scroll.EditBox
 			eb.Text:SetWidth(150)
 			eb.Text:SetPoint("TOPLEFT", eb.scroll)
-			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll)
+			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll, -12, 0)
 			eb.Text:SetMaxLetters(2000)
 			eb.Text:SetFontObject(GameFontNormalLarge)
 			eb.Text:SetAutoFocus(false)
@@ -3053,7 +3053,7 @@
 			eb.Text:SetWidth(494)
 			eb.Text:SetHeight(230)
 			eb.Text:SetPoint("TOPLEFT", eb.scroll)
-			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll)
+			eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll, -12, 0)
 			eb.Text:SetMaxLetters(2000)
 			eb.Text:SetFontObject(GameFontNormalLarge)
 			eb.Text:SetAutoFocus(false)
@@ -4619,7 +4619,7 @@
 				eb.Text:SetWidth(494)
 				eb.Text:SetHeight(230)
 				eb.Text:SetPoint("TOPLEFT", eb.scroll)
-				eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll)
+				eb.Text:SetPoint("BOTTOMRIGHT", eb.scroll, -12, 0)
 				eb.Text:SetMaxLetters(1200)
 				eb.Text:SetFontObject(GameFontNormalLarge)
 				eb.Text:SetAutoFocus(false)
@@ -7933,12 +7933,19 @@
 				-- Get item
 				local itemName, itemlink = tooltipObject:GetItem()
 				if not itemlink then return end
-				local void, void, void, void, void, void, void, void, void, void, sellPrice, classID = GetItemInfo(itemlink)
+				local void, ilink, void, void, void, void, void, void, void, void, sellPrice, classID = GetItemInfo(itemlink)
 				if sellPrice and sellPrice > 0 then
 					local count = container and type(container.count) == "number" and container.count or 1
 					if sellPrice and count > 0 then
 						if classID and classID == 11 then count = 1 end -- Fix for quiver/ammo pouch so ammo is not included
-						SetTooltipMoney(tooltip, sellPrice * count, "STATIC", SELL_PRICE .. ":")
+						if sellPrice == 4000 and ilink and string.find(ilink, "item:210781:") then
+							-- LeaPlusLC.NewPatch: Bug with Phoenix Bindings (real price is 24 silver 81 copper, but game returns 40 silver)
+							-- GameTooltip:SetHyperlink("item:210781")
+							SetTooltipMoney(tooltip, 2481 * count, "STATIC", SELL_PRICE .. ":")
+						else
+							-- Everything else get game price
+							SetTooltipMoney(tooltip, sellPrice * count, "STATIC", SELL_PRICE .. ":")
+						end
 					end
 				end
 				-- Refresh chat tooltips

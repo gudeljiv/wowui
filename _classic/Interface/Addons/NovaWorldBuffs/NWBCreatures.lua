@@ -4,6 +4,7 @@
 
 local addonName, addon = ...;
 local NWB = addon.a;
+local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 --A list of Orgrimmar NPC's from wowhead.
 --Commented out NPC's that may appear in other zones also (usually pulled to org).
 NWB.orgrimmarCreatures = {
@@ -768,20 +769,20 @@ NWB.companionCreatures = {
 
 if (NWB.isWrath) then
 	NWB.map = 125;
-	NWB.mapName = "Dalaran";
+	NWB.mapName = L["Dalaran"];
 	for k, v in pairs(NWB.dalaranCreatures) do
 		NWB.npcs[k] = v;
 	end
 else
 	if (NWB.faction == "Horde") then
 		NWB.map = 1454;
-		NWB.mapName = "Orgrimmar";
+		NWB.mapName = L["Orgrimmar"];
 		for k, v in pairs(NWB.orgrimmarCreatures) do
 			NWB.npcs[k] = v;
 		end
 	else
 		NWB.map = 1453;
-		NWB.mapName = "Stormwind";
+		NWB.mapName = L["Stormwind"];
 		for k, v in pairs(NWB.stormwindCreatures) do
 			NWB.npcs[k] = v;
 		end

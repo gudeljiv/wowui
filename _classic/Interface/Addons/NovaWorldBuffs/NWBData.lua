@@ -1956,7 +1956,7 @@ function NWB:receivedNpcDied(type, timestamp, distribution, layer, sender)
 					local layerMsg = "";
 					if (layer) then
 						local layerNum = NWB:GetLayerNum(layer);
-						layerMsg = " (Layer " .. layerNum .. ")";
+						layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
 					end
 					local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
 					if (NWB.db.global.middleNpcKilled) then
@@ -1969,7 +1969,7 @@ function NWB:receivedNpcDied(type, timestamp, distribution, layer, sender)
 				local layerMsg = "";
 				if (layer) then
 					local layerNum = NWB:GetLayerNum(layer);
-					layerMsg = " (Layer " .. layerNum .. ")";
+					layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
 				end
 				local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
 				if (NWB.db.global.middleNpcKilled) then
@@ -2446,7 +2446,7 @@ NWBTimerLogDragFrame.tooltip:SetAlpha(.8);
 NWBTimerLogDragFrame.tooltip.fs = NWBTimerLogDragFrame.tooltip:CreateFontString("NWBTimerLogDragTooltipFS", "ARTWORK");
 NWBTimerLogDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBTimerLogDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
-NWBTimerLogDragFrame.tooltip.fs:SetText("Hold to drag");
+NWBTimerLogDragFrame.tooltip.fs:SetText(L["Hold to drag"]);
 NWBTimerLogDragFrame.tooltip:SetWidth(NWBTimerLogDragFrame.tooltip.fs:GetStringWidth() + 16);
 NWBTimerLogDragFrame.tooltip:SetHeight(NWBTimerLogDragFrame.tooltip.fs:GetStringHeight() + 10);
 NWBTimerLogDragFrame:SetScript("OnEnter", function(self)
@@ -2536,7 +2536,7 @@ function NWB:openTimerLogFrame()
 		if (not logRendOnly or not NWB.isLayered) then
 			NWB:createTimerLogCheckboxes();
 		else
-			NWBTimerLogFrame.fs:SetText("|cFFFFFF00NovaWorldBuffs Rend Log|r");
+			NWBTimerLogFrame.fs:SetText("|cFFFFFF00NovaWorldBuffs " .. L["Rend Log"] .. "|r");
 		end
 		NWB:createTimerLogMergeLayersCheckbox();
 		NWBTimerLogFrame:SetHeight(300);
@@ -2568,9 +2568,9 @@ function NWB:setLayerFrameTimerLogButtonText()
 		return;
 	end
 	if (not logRendOnly or not NWB.isLayered) then
-		NWBlayerFrameTimerLogButton:SetText("Timer Log");
+		NWBlayerFrameTimerLogButton:SetText(L["Timer Log"]);
 	else
-		NWBlayerFrameTimerLogButton:SetText("Rend Log");
+		NWBlayerFrameTimerLogButton:SetText(L["Rend Log"]);
 	end
 end
 
@@ -2581,7 +2581,7 @@ end
 function NWB:recalcTimerLogFrame()
 	NWBTimerLogFrame.EditBox:SetText("\n\n\n");
 	if (type(NWB.data.timerLog) ~= "table" or not next(NWB.data.timerLog)) then
-		NWBTimerLogFrame.EditBox:Insert("|cffFFFF00No timer logs found.\n");
+		NWBTimerLogFrame.EditBox:Insert("|cffFFFF00" .. L["No timer logs found."] .. "\n");
 	else
 		local sorted = {}
 		for k, v in ipairs(NWB.data.timerLog) do
@@ -2658,7 +2658,7 @@ function NWB:recalcTimerLogFrame()
 						layerText = "|cff00ff00[Unknown Layer]|r ";
 						layers = {};
 					elseif (NWB.isLayered) then
-						layerText = "|cff00ff00[Layer " .. layerNum .. "]|r ";
+						layerText = "|cff00ff00[" .. L["Layer"] .. " " .. layerNum .. "]|r ";
 					end
 					local timeLeftString = "";
 					if (v.type == "r") then
@@ -2780,8 +2780,8 @@ function NWB:createTimerLogMergeLayersCheckbox()
 		NWB.timerLogMergeLayersButton = CreateFrame("CheckButton", "NWBtimerLogMergeLayersButton", NWBTimerLogFrame.EditBox, "ChatConfigCheckButtonTemplate");
 		NWB.timerLogMergeLayersButton:SetPoint("TOPLEFT", 5, 0);
 		--So strange the way to set text is to append Text to the global frame name.
-		NWBtimerLogMergeLayersButtonText:SetText("Merge Layers");
-		NWB.timerLogMergeLayersButton.tooltip = "If multiple layers have the same timer this will merge them into [All Layers] instead of showing them separately.";
+		NWBtimerLogMergeLayersButtonText:SetText(L["Merge Layers"]);
+		NWB.timerLogMergeLayersButton.tooltip = L["mergeLayersTooltip"];
 		NWB.timerLogMergeLayersButton:SetFrameStrata("HIGH");
 		NWB.timerLogMergeLayersButton:SetFrameLevel(3);
 		NWB.timerLogMergeLayersButton:SetWidth(24);
@@ -2865,6 +2865,7 @@ f:RegisterEvent("PLAYER_DEAD");
 f:RegisterEvent("BAG_UPDATE");
 f:RegisterEvent("PLAYER_MONEY");
 f:RegisterEvent("QUEST_TURNED_IN");
+f:RegisterEvent("UPDATE_INSTANCE_INFO");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_ENTERING_WORLD" ) then
 		local isLogon, isReload = ...;
@@ -2891,6 +2892,8 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NWB:throddleEventByFunc(event, 2, "recordInventoryData", ...);
 	elseif (event == "QUEST_TURNED_IN") then
 		NWB:throddleEventByFunc(event, 2, "recordPlayerLevelData", ...);
+	elseif (event == "UPDATE_INSTANCE_INFO") then
+		NWB:recordLockoutData();
 	end
 end)
 
@@ -3344,7 +3347,7 @@ end)
 NWBLFrame.fs = NWBLFrame:CreateFontString("NWBLFrameFS", "ARTWORK");
 NWBLFrame.fs:SetPoint("TOP", 0, -0);
 NWBLFrame.fs:SetFont(NWB.regionFont, 14);
-NWBLFrame.fs:SetText("|cFFFFFF00Guild Layers|r");
+NWBLFrame.fs:SetText("|cFFFFFF00" .. L["Guild Layers"] .. "|r");
 
 local NWBLDragFrame = CreateFrame("Frame", "NWBLDragFrame", NWBLFrame);
 NWBLDragFrame:SetToplevel(true);
@@ -3361,7 +3364,7 @@ NWBLDragFrame.tooltip:SetAlpha(.8);
 NWBLDragFrame.tooltip.fs = NWBLDragFrame.tooltip:CreateFontString("NWBLDragTooltipFS", "ARTWORK");
 NWBLDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBLDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
-NWBLDragFrame.tooltip.fs:SetText("Hold to drag");
+NWBLDragFrame.tooltip.fs:SetText(L["Hold to drag"]);
 NWBLDragFrame.tooltip:SetWidth(NWBLDragFrame.tooltip.fs:GetStringWidth() + 16);
 NWBLDragFrame.tooltip:SetHeight(NWBLDragFrame.tooltip.fs:GetStringHeight() + 10);
 NWBLDragFrame:SetScript("OnEnter", function(self)
@@ -3411,7 +3414,7 @@ NWBLFrameClose:GetHighlightTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125)
 NWBLFrameClose:GetPushedTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
 NWBLFrameClose:GetDisabledTexture():SetTexCoord(0.1875, 0.8125, 0.1875, 0.8125);
 
---Config button.
+--Refresh button.
 local NWBLFrameRefreshButton = CreateFrame("Button", "NWBLFrameRefreshButton", NWBLFrame.EditBox, "UIPanelButtonTemplate");
 NWBLFrameRefreshButton:SetPoint("TOPRIGHT", -8, 3);
 NWBLFrameRefreshButton:SetWidth(90);
@@ -3539,7 +3542,7 @@ function NWB:recalcLFrame()
 					end
 				end
 			end
-			text = text .. "|cff00ff00[Layer " .. layer .. "]|r " .. zoneText .. " " .. wintergraspTexture .. buffTextures .. "\n";
+			text = text .. "|cff00ff00[" .. L["Layer"] .. " " .. layer .. "]|r " .. zoneText .. " " .. wintergraspTexture .. buffTextures .. "\n";
 			for k, v in NWB:pairsByKeys(data) do
 				found = true;
 				local _, _, _, classColor = GetClassColor(v.class);
@@ -3550,7 +3553,7 @@ function NWB:recalcLFrame()
 		if (found) then
 			NWBLFrame.EditBox:Insert(text);
 		else
-			NWBLFrame.EditBox:Insert("|cffFFFF00No guild members online sharing layer data found.");
+			NWBLFrame.EditBox:Insert("|cffFFFF00" .. L["No guild members online sharing layer data found."]);
 		end
 	end
 end
@@ -3957,7 +3960,7 @@ function NWB:updateTerokkarMarkers(type, layer)
 				break;
 			end
 		end
-		_G[type .. layer .. "NWBTerokkarMap"].fsLayer:SetText("|cff00ff00[Layer " .. count.. "] |cFFB5E0E6(" .. layerZoneID .. ")");
+		_G[type .. layer .. "NWBTerokkarMap"].fsLayer:SetText("|cff00ff00[" .. L["Layer"] .. " " .. count.. "] |cFFB5E0E6(" .. layerZoneID .. ")");
 		if (NWB.data.layers[layer] and NWB.data.layers[layer]["terokTowers"]) then
 			time = NWB:getTerokEndTime(NWB.data.layers[layer].terokTowers, NWB.data.layers[layer].terokTowersTime) - GetServerTime() or 0;
 		else
@@ -3996,7 +3999,7 @@ function NWB:updateTerokkarMarkers(type, layer)
 	    if (timeString == L["noTimer"]) then
 	    	_G[type .. layer .. "NWBTerokkarMap"].timerMsg = nil;
 	    else
-	    	local msg = NWB:getTimeString(time, true) .. " (Layer " .. count .. ")";
+	    	local msg = NWB:getTimeString(time, true) .. " (" .. L["Layer"] .. " " .. count .. ")";
 	    	_G[type .. layer .. "NWBTerokkarMap"].timerMsg = msg;
 	    end
 		return timeString;

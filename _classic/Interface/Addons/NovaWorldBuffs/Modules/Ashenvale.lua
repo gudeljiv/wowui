@@ -9,7 +9,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale("NovaWorldBuffs");
 local lastAshenUpdate, lastSendGuild, lastSendGroup = 0, 0, 0;
 local lastAlliancePercent, lastHordePercent, lastWinner = 0, 0, 0;
 local lastStartSoon, lastStarted = 0;
-local logonStartDelay, lastStartSoonDelay = 0, 900;
+local logonStartDelay, lastStartSoonDelay = 0, 1200;
 local lastIsRunning, isRunning = 0;
 local startup = true;
 local lastWidget = 0;
@@ -268,9 +268,9 @@ function NWB:getAshenvaleTimerExpiredString(short)
 		return "";
 	end
 	if (short) then
-		return "|cFFFF6900Old Data (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago)|r";
+		return "|cFFFF6900" .. L["Old Data"] .. " (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago)|r";
 	else
-		return "|cFFFF6900Ashenvale data is old (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago).|r";
+		return "|cFFFF6900" .. L["Ashenvale data is old"] .. " (" .. NWB:getTimeString(GetServerTime() - NWB.data.ashenvaleTime, true, "short") .. " ago).|r";
 	end
 end
 
@@ -326,14 +326,14 @@ function NWB:addAshenvaleMinimapString(tooltip)
 	local alliance, horde = NWB:getAshenvalePercent();
 	local allianceString, hordeString;
 	if (NWB:isAshenvaleTimerValid()) then
-		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t " .. alliance .. "%  Alliance";
-		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t " .. horde .. "%  Horde";
+		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t " .. alliance .. "%  " .. L["Alliance"];
+		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t " .. horde .. "%  " .. L["Horde"];
 	elseif (NWB:isAshenvaleTimerExpired()) then
-		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t |cFFFF6900" .. alliance .. "%|r  Alliance";
-		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t |cFFFF6900" .. horde .. "%|r  Horde";
+		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t |cFFFF6900" .. alliance .. "%|r  " .. L["Alliance"];
+		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t |cFFFF6900" .. horde .. "%|r  " .. L["Horde"];
 	else
-		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t No data yet.";
-		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t No data yet.";
+		allianceString = "|TInterface\\worldstateframe\\alliancetower.blp:12:12:-2:1:32:32:1:18:1:18|t " .. L["No data yet."];
+		hordeString = "|TInterface\\worldstateframe\\hordetower.blp:12:12:-2:0:32:32:1:18:1:18|t " .. L["No data yet."];
 	end
 	tooltip:AddLine(" ");
 	if (not tooltip.NWBSeparator2) then
@@ -346,14 +346,14 @@ function NWB:addAshenvaleMinimapString(tooltip)
 	tooltip.NWBSeparator2:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
 	tooltip.NWBSeparator2:Show();
 	if (isRunning) then
-		tooltip:AddLine(NWB.chatColor .. "Ashenvale (Event Running)");
+		tooltip:AddLine(NWB.chatColor .. L["Ashenvale"] .. " (" .. L["Event Running"] .. ")");
 	else
-		tooltip:AddLine(NWB.chatColor .. "Ashenvale Resources");
+		tooltip:AddLine(NWB.chatColor .. L["Ashenvale Resources"]);
 	end
 	tooltip:AddLine(allianceString);
 	tooltip:AddLine(hordeString);
 	if (NWB:isAshenvaleTimerExpired()) then
-		tooltip:AddLine("|cFFFF6900Warning:|r " .. NWB:getAshenvaleTimerExpiredString());
+		tooltip:AddLine("|cFFFF6900" .. L["Warning"] .. ":|r " .. NWB:getAshenvaleTimerExpiredString());
 	end
 	tooltip:AddLine(" ");
 	if (not tooltip.NWBSeparator3) then
@@ -377,7 +377,7 @@ end
 
 --Update timers for worldmap when the map is open.
 function NWB:updateAshenvaleMarkers(type)
-	_G["AllianceNWBAshenvaleMap"].fsTitle:SetText("|cFFFFFF00Ashenvale");
+	_G["AllianceNWBAshenvaleMap"].fsTitle:SetText("|cFFFFFF00" .. L["Ashenvale"]);
 	if (NWB:isAshenvaleTimerValid()) then
 		local alliance, horde = NWB:getAshenvalePercent();
 		 _G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. alliance .. "%");
@@ -464,7 +464,7 @@ function NWB:createAshenvaleMarker(type, data)
 		obj.tooltip.fs:SetPoint("CENTER", 0, 0);
 		obj.tooltip.fs:SetFont(NWB.regionFont, 14);
 		obj.tooltip.fs:SetJustifyH("LEFT")
-		obj.tooltip.fs:SetText("Ashenvale PvP Event Resources");
+		obj.tooltip.fs:SetText(L["Ashenvale PvP Event Resources"]);
 		obj.tooltip:SetWidth(obj.tooltip.fs:GetStringWidth() + 18);
 		obj.tooltip:SetHeight(obj.tooltip.fs:GetStringHeight() + 12);
 		obj.tooltip:Hide();
@@ -623,7 +623,7 @@ local function loadAshenvaleOverlay()
 		frame.fsTitle = frame:CreateFontString("NWB_AshenvaleOverlayFSTitle", "ARTWORK");
 		frame.fsTitle:SetPoint("CENTER", 0, 23);
 		frame.fsTitle:SetFont("Fonts\\FRIZQT__.ttf", 13, "OUTLINE");
-		frame.fsTitle:SetText("|cFFFFFF00Ashenvale");
+		frame.fsTitle:SetText("|cFFFFFF00" .. L["Ashenvale"]);
 		frame.fsBottom = frame:CreateFontString("NWB_AshenvaleOverlayFSBottom", "ARTWORK");
 		frame.fsBottom:SetPoint("CENTER", 0, -32);
 		frame.fsBottom:SetFont("Fonts\\FRIZQT__.ttf", 8, "OUTLINE");
@@ -661,7 +661,18 @@ function NWB:setAshenvaleOverlayState()
 	else
 		ashnevaleOverlay:EnableMouse(true);
 	end
+	NWB:refreshAshenvaleOverlay();
+end
+
+function NWB:refreshAshenvaleOverlay()
+	if (not ashnevaleOverlay) then
+		return;
+	end
 	ashnevaleOverlay:SetScale(NWB.db.global.ashenvaleOverlayScale);
+	ashnevaleOverlay.fsTitle:SetFont(NWB.LSM:Fetch("font", NWB.db.global.ashenvaleOverlayFont), 13, "OUTLINE");
+	ashnevaleOverlay.fsBottom:SetFont(NWB.LSM:Fetch("font", NWB.db.global.ashenvaleOverlayFont), 8, "OUTLINE");
+	ashnevaleOverlay.fsBottomLeft:SetFont(NWB.LSM:Fetch("font", NWB.db.global.ashenvaleOverlayFont), 13, "OUTLINE");
+	ashnevaleOverlay.fsBottomRight:SetFont(NWB.LSM:Fetch("font", NWB.db.global.ashenvaleOverlayFont), 13, "OUTLINE");
 end
 
 function NWB:loadAshenvale()
