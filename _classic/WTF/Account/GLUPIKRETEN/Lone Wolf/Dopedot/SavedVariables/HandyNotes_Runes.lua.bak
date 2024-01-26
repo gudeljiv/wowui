@@ -1,0 +1,16 @@
+
+HandyNotes_RunesDB = {
+	["runesKnown"] = {
+		["WARLOCK"] = {
+			["spells"] = {
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Dopedot - Lone Wolf"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
