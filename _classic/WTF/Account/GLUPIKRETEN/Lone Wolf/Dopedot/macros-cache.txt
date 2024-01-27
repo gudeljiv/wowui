@@ -5,6 +5,9 @@ VER 3 0000000001000011 "attack" "132152"
 /petattack [@mouseover,harm][]
 /petdefensive
 END
+VER 3 0000000001000012 "BUY" "134400"
+/4 WTB REDRIGE MOUNTAINS INCINERATE RUNE SUMMON AND HELP
+END
 VER 3 000000000100000F "passive" "132328"
 #showtooltip
 /petfollow
@@ -12,7 +15,7 @@ VER 3 000000000100000F "passive" "132328"
 END
 VER 3 0000000001000003 "sb" "134400"
 #showtooltip
-/starattack
+/startattack
 /cast Shadow bolt
 END
 VER 3 0000000001000004 "wand" "134400"

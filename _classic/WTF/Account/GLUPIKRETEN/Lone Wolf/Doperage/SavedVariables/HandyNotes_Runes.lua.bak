@@ -4,6 +4,7 @@ HandyNotes_RunesDB = {
 		["WARRIOR"] = {
 			["spells"] = {
 				["Blood Frenzy"] = true,
+				["Endless Rage"] = true,
 				["Quick Strike"] = true,
 				["Frenzied Assault"] = true,
 				["Victory Rush"] = true,
