@@ -47,6 +47,7 @@ Reputation/Reputation.lua
 Addons/AdiBags.lua
 Addons/BISTooltip.lua
 Addons/ChocolateBar.lua
+Addons/ClassicCastbars.lua
 Addons/Deathlog.lua
 Addons/ECS.lua
 Addons/GDKP.lua

@@ -29,6 +29,7 @@ end
 local HandleUnit = function(unit)
 
 	if _G.UnitCastingInteruptible then
+
 		-- WARRIOR INTERRUPT
 		if (xVermin.Class == 'WARRIOR') then
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance

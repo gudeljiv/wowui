@@ -51,9 +51,9 @@ ChocolateBarDB = {
 		["Moolatz - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
-		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Tukac - Genesis"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -78,8 +78,8 @@ ChocolateBarDB = {
 		["Tadibey - Golemagg"] = "Default",
 		["Dopestab - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
-		["Tukac - Genesis"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
+		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -862,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 21313,
-		["timeAtThisLevel"] = 334,
-		["timeStamp"] = 1473502.299,
+		["total"] = 24901,
+		["timeAtThisLevel"] = 3922,
+		["timeStamp"] = 5100.151,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -937,9 +937,9 @@ CB_PlayedTime = {
 		["total"] = 129,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 145649,
-		["timeAtThisLevel"] = 12113,
-		["timeStamp"] = 1147536.363,
+		["total"] = 146916,
+		["timeAtThisLevel"] = 13380,
+		["timeStamp"] = 5149.263,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -980,9 +980,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 72850,
-		["timeAtThisLevel"] = 3604,
-		["timeStamp"] = 1480660.364,
+		["total"] = 72866,
+		["timeAtThisLevel"] = 3620,
+		["timeStamp"] = 1480675.83,
 	},
 	["Augustin-"] = {
 		["total"] = 425995,
@@ -991,8 +991,8 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 68700,
-		["timeStamp"] = 1274758.244,
-		["timeAtThisLevel"] = 4114,
+		["total"] = 71982,
+		["timeStamp"] = 321.75,
+		["timeAtThisLevel"] = 990,
 	},
 }

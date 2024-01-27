@@ -1,5 +1,5 @@
 ## Interface: 11500
-## Version: 1.27
+## Version: 1.29
 ## Author: Taraezor
 ## IconTexture: Interface\Icons\INV_Misc_Rune_06
 ## Title: Runes
@@ -7,5 +7,6 @@
 ## RequiredDeps: HandyNotes
 ## SavedVariablesPerCharacter: HandyNotes_RunesDB
 
+Localisations.lua
 Core.lua
 Data.lua

@@ -1,3 +1,10 @@
+== v1.29 - 27th January 2024
+* Fix for:
+* Support for non-English Druids, Hunters, Mages. More to come
+
+== v1.28 - 26th January 2024
+* Support for non-English Druids, Hunters, Mages. More to come
+
 == v1.27 - 23rd January 2024
 * Ayanna Everstride (Hunters) in Aldrassil is now more precise
 * The location and description of the Rogue's Owl/Idol on the roof of the Inn at Aldrassil was improved

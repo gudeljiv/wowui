@@ -162,6 +162,7 @@ namespace.uninterruptibleList = {
     [GetSpellInfo(404373)] = true,  -- Bubble Beam
     [GetSpellInfo(404316)] = true,  -- Greater Frostbolt
     [GetSpellInfo(414370)] = true, -- Aqua Shell
+    [GetSpellInfo(407819)] = true, -- Frost Arrow
 }
 
 if CLIENT_IS_CLASSIC_ERA then
@@ -174,8 +175,8 @@ elseif CLIENT_IS_TBC then
 end
 
 if CLIENT_IS_CLASSIC_ERA then
-    -- UnitChannelInfo() currently doesn't work in Classic Era 1.15.0 due to a Blizzard bug(?)
-    -- We use this data to retrieve spell cast time
+    -- UnitChannelInfo() currently doesn't work in Classic Era 1.15.0 due to a Blizzard bug,
+    -- but the channel events still work. We use this data to retrieve spell cast time.
     namespace.channeledSpells = {
         -- MISC
         [GetSpellInfo(746)] = 8000,      -- First Aid
@@ -191,6 +192,7 @@ if CLIENT_IS_CLASSIC_ERA then
         [GetSpellInfo(27286)] = 1000,    -- Shadow Wrath (see issue #59)
         [GetSpellInfo(433797)] = 7000,   -- Bladestorm
         [GetSpellInfo(404373)] = 10000,  -- Bubble Beam
+        [GetSpellInfo(407077)] = 3500,   -- Triple Chomp
 
         -- DRUID
         [GetSpellInfo(17401)] = 10000,   -- Hurricane

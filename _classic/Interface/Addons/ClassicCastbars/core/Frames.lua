@@ -334,13 +334,6 @@ end
 
 function addon:DisplayCastbar(castbar, unitID)
     local cast = castbar._data
-
-	if not cast.isUninterruptible then 
-		_G.UnitCastingInteruptible = true
-	else
-		_G.UnitCastingNonInteruptible = true
-	end
-
     if not cast then return end
     if cast.endTime == nil then return end
     if not castbar.isTesting then
@@ -386,10 +379,6 @@ function addon:DisplayCastbar(castbar, unitID)
 end
 
 function addon:HideCastbar(castbar, unitID, skipFadeOut)
-
-	_G.UnitCastingInteruptible = false
-	_G.UnitCastingNonInteruptible = false
-
     if skipFadeOut then
         if castbar.animationGroup then
             castbar.animationGroup:Stop()

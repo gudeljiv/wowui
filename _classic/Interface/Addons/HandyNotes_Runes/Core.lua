@@ -3,7 +3,7 @@
 
                                                 Runes
 
-                                      v1.27 - 23rd January 2024
+                                      v1.29 - 27th January 2024
                                 Copyright (C) Taraezor / Chris Birch
                                          All Rights Reserved
 
@@ -46,6 +46,7 @@ local HandyNotes = _G.HandyNotes
 
 ns.name = UnitName( "player" ) or "Character"
 ns.faction = UnitFactionGroup( "player" )
+
 ns.classLocal, ns.class = UnitClass( "player" )
 ns.raceList = { "Human", "Orc", "Dwarf", "Night Elf", "Undead", "Tauren", "Gnome", "Troll" }
 ns.slotList = { "Head", "Neck", "Shoulders", "Shirt", "Chest", "Waist", "Legs", "Feet",
@@ -105,7 +106,7 @@ local function ShowPinForThisClassQuest( quests, level, forceCheck )
 	end
 end
 
-local function ShowPinForThisClassSpell( spell, forceCheck )
+local function ShowPinForThisClassSpell( spell, forceCheck ) -- English language spell from the Data file
 
 	if forceCheck == false and ns.db.hideIfRuneLearnt == false then return true end
 
@@ -114,7 +115,7 @@ local function ShowPinForThisClassSpell( spell, forceCheck )
 	if HandyNotes_RunesDB.runesKnown[ ns.class ] == nil then HandyNotes_RunesDB.runesKnown[ ns.class ] = {} end
 	if HandyNotes_RunesDB.runesKnown[ ns.class ].spells == nil then HandyNotes_RunesDB.runesKnown[ ns.class ].spells = {} end
 
-	if HandyNotes_RunesDB.runesKnown[ ns.class ].spells[ spell ] then
+	if HandyNotes_RunesDB.runesKnown[ ns.class ].spells[ ns.L[ spell ] ] then
 		return false
 	end
 	if not ns.runeCategories then
@@ -126,8 +127,8 @@ local function ShowPinForThisClassSpell( spell, forceCheck )
 	for _,cat in ipairs( ns.runeCategories ) do
 		local engravingData = GetRunesForCategory( cat, true )
 		for _,ed in ipairs( engravingData ) do
-			if ed.name == spell then
-				HandyNotes_RunesDB.runesKnown[ ns.class ].spells[ spell ] = true
+			if ed.name == ns.L[ spell ] then -- It appears that ed.name is localised
+				HandyNotes_RunesDB.runesKnown[ ns.class ].spells[ ns.L[ spell ] ] = true
 				return false
 			end
 		end
@@ -153,8 +154,9 @@ function pluginHandler:OnEnter(mapFile, coord)
 				GameTooltip:SetText( ns.colour.class ..ns.classLocal .." QUICK START for " ..ns.name )
 				for r,s in ipairs( v.spells ) do	
 					completed = not ShowPinForThisClassSpell( s, true )
-					GameTooltip:AddDoubleLine( ns.colour.prefix ..r .. ".  " ..s .."   (" ..v[s].level .."+)",
-							(( completed == true ) and "\124cFF00FF00Completed" or "\124cFFFF0000Not Completed")
+					GameTooltip:AddDoubleLine( ns.colour.prefix ..r .. ".  " ..ns.L[ s ] .."   (" ..v[s].level .."+)",
+							( ( completed == true ) and ( "\124cFF00FF00" ..ns.L["Completed"] ) 
+													or ( "\124cFFFF0000" ..ns.L["Not Completed"] ) )
 							.."     " ..ns.slotColour[ v[s].slot ] ..ns.slotList[ v[s].slot ] )
 					GameTooltip:AddLine( ns.colour.highlight ..v[s].rune )
 					GameTooltip:AddLine( ns.colour.plaintext ..v[s].start )
@@ -173,7 +175,7 @@ function pluginHandler:OnEnter(mapFile, coord)
 				if not pin.level then			
 					if previousEntry == true then GameTooltip:AddLine( "\n" ) end
 					previousEntry = true
-					GameTooltip:AddDoubleLine( ns.colour.prefix ..pin.spell[ i ] ..ns.colour.highlight .."\n(" 
+					GameTooltip:AddDoubleLine( ns.colour.prefix ..ns.L[ pin.spell[ i ] ] ..ns.colour.highlight .."\n(" 
 												..ns.runes[ v ][ pin.spell[ i ] ].rune ..")",
 												ns.colour.class ..ns.classLocal )
 					GameTooltip:AddLine( ns.colour.highlight ..pin.name .."\n" )
@@ -203,8 +205,8 @@ function pluginHandler:OnEnter(mapFile, coord)
 							spaceBeforeQuests = true
 							completed = IsQuestFlaggedCompleted( w )
 							GameTooltip:AddDoubleLine( ns.colour.highlight ..questsNames[ j ],
-									( completed == true ) and ( "\124cFF00FF00" .."Completed" .." (" ..ns.name ..")" ) 
-									or ( "\124cFFFF0000" .."Not Completed" .." (" ..ns.name ..")" ) )
+									( completed == true ) and ( "\124cFF00FF00" ..ns.L["Completed"] .." (" ..ns.name ..")" )
+									or ( "\124cFFFF0000" ..ns.L["Not Completed"] .." (" ..ns.name ..")" ) )
 						end
 					else
 						if pin.level then
@@ -217,8 +219,8 @@ function pluginHandler:OnEnter(mapFile, coord)
 						GameTooltip:AddLine( "\n" )
 						completed = IsQuestFlaggedCompleted( quests )
 						GameTooltip:AddDoubleLine( ns.colour.highlight ..questsNames,
-								( completed == true ) and ( "\124cFF00FF00" .."Completed" .." (" ..ns.name ..")" ) 
-									or ( "\124cFFFF0000" .."Not Completed" .." (" ..ns.name ..")" ) )
+								( completed == true ) and ( "\124cFF00FF00" ..ns.L["Completed"] .." (" ..ns.name ..")" ) 
+									or ( "\124cFFFF0000" ..ns.L["Not Completed"] .." (" ..ns.name ..")" ) )
 					end
 				end
 				
@@ -284,6 +286,7 @@ do
 							if pin.spell then
 								-- Note that if here then by design I don't check for player level
 								-- This so that players can see all "upcoming" spells/runes
+								-- pin.spell is English language
 								if ShowPinForThisClassSpell( pin.spell[ i ], false ) then
 									if pin.alsoTestQuest then
 										-- Added to support Mage book partial completion. Maybe other stuff in the future
@@ -328,7 +331,7 @@ end
 ns.options = {
 	type = "group",
 	name = "Runes",
-	desc = "All the Season of Discovery Runes",
+	desc = ns.L["AddOn Description"],
 	get = function(info) return ns.db[info[#info]] end,
 	set = function(info, v)
 		ns.db[info[#info]] = v
@@ -337,29 +340,29 @@ ns.options = {
 	args = {
 		options = {
 			type = "group",
-			name = " Options",
+			name = " " ..ns.L["Options"],
 			inline = true,
 			args = {
 				iconScale = {
 					type = "range",
-					name = "Map Pin Size",
-					desc = "The Map Pin Size",
+					name = ns.L["Map Pin Size"],
+					desc = ns.L["The Map Pin Size"],
 					min = 1, max = 4, step = 0.1,
 					arg = "iconScale",
 					order = 1,
 				},
 				iconAlpha = {
 					type = "range",
-					name = "Map Pin Alpha",
-					desc = "The alpha transparency of the map pins",
+					name = ns.L["Map Pin Alpha"],
+					desc = ns.L["The alpha transparency of the map pins"],
 					min = 0, max = 1, step = 0.01,
 					arg = "iconAlpha",
 					order = 2,
 				},
 				showCoords = {
 					type = "toggle",
-					name = "Show Coordinates",
-					desc = "Show Coordinates Description\n"
+					name = ns.L["Show Coordinates"],
+					desc = ns.L["Show Coordinates Description"] 
 							..ns.colour.highlight .."(xx.xx,yy.yy)",
 					width = "full",
 					arg = "showCoords",
@@ -377,7 +380,7 @@ ns.options = {
 		},
 		icon = {
 			type = "group",
-			name = "Map Pin Selections",
+			name = ns.L["Map Pin Selections"],
 			inline = true,
 			args = {
 				icon1 = {
@@ -490,11 +493,13 @@ ns.options = {
 				},
 				iconChoice = {
 					type = "range",
-					name = "Quick Start / Summary",
-					desc = "1 = White\n2 = Purple\n3 = Red\n4 = Yellow\n5 = Green\n6 = Grey"
-							.."\n7 = Mana Orb\n8 = Phasing\n9 = Raptor egg\n10 = Stars"
-							.."\n11 = Cogwheel\n12 = Frost\n13 = Diamond\n14 = Screw"
-							.."\n15 = Adrenaline\n16 = Arcane\n17 = Demonic\n18 = Duty",
+					name = "Quick Start / Summary",					
+					desc = "1 = " ..ns.L["White"] .."\n2 = " ..ns.L["Purple"] .."\n3 = " ..ns.L["Red"] .."\n4 = " 
+							..ns.L["Yellow"] .."\n5 = " ..ns.L["Green"] .."\n6 = " ..ns.L["Grey"] .."\n7 = " ..ns.L["Mana Orb"]
+							.."\n8 = " ..ns.L["Phasing"] .."\n9 = " ..ns.L["Raptor egg"] .."\n10 = " ..ns.L["Stars"]
+							.."\n11 = " ..ns.L["Cogwheel"] .."\n12 = " ..ns.L["Frost"] .."\n13 = " ..ns.L["Diamond"]
+							.."\n14 = " ..ns.L["Screw"] .."\n15 = " ..ns.L["Mjolnir"] .."\n16 = " ..ns.L["Arcane"] 
+							.."\n17= " ..ns.L["Demonic"] .."\n18 = " ..ns.L["Duty"],
 					min = 1, max = 18, step = 1,
 					arg = "iconChoice",
 					order = 17,

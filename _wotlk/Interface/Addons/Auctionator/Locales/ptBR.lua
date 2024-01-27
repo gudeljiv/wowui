@@ -4,23 +4,19 @@ AUCTIONATOR_LOCALES.ptBR = function()
   L["ADD_FAVOURITE"] = "Adicionar Favorito"
 L["ADD_ITEM"] = "Adicionar Item"
 L["ADD_TERM_TO_LIST_DIALOG"] = "Escreva o termo de busca a ser adicionado:"
---[[Translation missing --]]
-L["ADD_TO_LIST"] = "Add To List"
---[[Translation missing --]]
-L["ADD_TO_X"] = "Add to %s"
+L["ADD_TO_LIST"] = "Adicionar à lista"
+L["ADD_TO_X"] = "Adicionar à %s"
 L["ALREADY_PURCHASED_X"] = "Já comprou %s"
 L["ALT_LEFT_CLICK"] = "ALT + Clique Esquerdo"
 L["ALT_RIGHT_CLICK"] = "ALT + Clique Direito"
 L["ANY_LOWER"] = "qualquer"
 L["ANY_UPPER"] = "Qualquer"
 L["AUCTION"] = "Leilão"
---[[Translation missing --]]
-L["AUCTION_AGE"] = "Auction Age"
+L["AUCTION_AGE"] = "Idade de leilão."
 L["AUCTION_DURATION_12"] = "12 Horas"
 L["AUCTION_DURATION_24"] = "24 Horas"
 L["AUCTION_DURATION_48"] = "48 Horas"
---[[Translation missing --]]
-L["AUCTION_MEAN"] = "Auction Mean"
+L["AUCTION_MEAN"] = "Média de leilão"
 L["AUCTIONATOR"] = "Auctionator"
 L["AUTHOR_HEADER"] = "Autor"
 L["BID_EXISTING_ON_OWNED_AUCTION"] = "Alguém deu um lance neste leilão, portanto, cancelar custará seu depósito e:"
@@ -33,8 +29,7 @@ L["BUG_REPORT"] = "Reportar um Erro"
 L["BUG_TOOLTIP_HEADER"] = "Reportar um Erro no Github"
 L["BUG_TOOLTIP_TEXT"] = "Se você encontrar um erro ao usar o Auctionator, reporte no Github. Forneça detalhes suficientes para que possamos reproduzí-lo. Usar os AddOns !BugGrabber e BugSack também nos ajudará."
 L["BUY"] = "Comprar"
---[[Translation missing --]]
-L["BUY_NOW"] = "Buy Now"
+L["BUY_NOW"] = "Comprar agora"
 L["BUY_STACK"] = "Comprar pilha"
 L["BUYING"] = "Comprando"
 L["BUYING_X_FOR_X"] = [=[Comprando %s por %s
@@ -48,15 +43,13 @@ L["CANCEL_UNDERCUT"] = "Cancelar"
 L["CANCELLING_TAB"] = "Cancelar"
 L["CANCELLING_TAB_HEADER"] = "Auctionator - Cancelar"
 L["CANNOT_AUCTION"] = "Não é possível leiloar"
---[[Translation missing --]]
-L["CAREFUL_CAPS"] = "CAREFUL"
+L["CAREFUL_CAPS"] = "CUIDADOSO"
 L["CHAIN_BUY"] = [=[Compra em cadeia
 ]=]
 L["CHAIN_BUY_TOOLTIP_HEADER"] = [=[Múltiplas compras em cadeia
 ]=]
 L["CHAIN_BUY_TOOLTIP_TEXT"] = "Ao finalizar a compra pelo preço atual e tamanho da pilha, selecione o próximo preço e tamanho da pilha."
---[[Translation missing --]]
-L["CHEAPEST_QUALITY_COST_COLON"] = "Cheapest Quality Cost:"
+L["CHEAPEST_QUALITY_COST_COLON"] = "Custo de qualidade mais barato:"
 L["CLASSIC_SUPPORT_ERROR"] = "Esta versão do Auctionator NÃO POSSUI suporte para o WoW Classic. Pode ocorrer erros e não funcionar corretamente."
 L["CLOSE"] = "Fechar"
 L["CONFIG_ADVANCED_CATEGORY"] = "Avançado"
@@ -64,10 +57,8 @@ L["CONFIG_ADVANCED_TEXT"] = "Vasculhe aqui apenas se souber o que está fazendo.
 L["CONFIG_ALTERNATE_SCAN"] = "Use o modo de verificação mais lento alternativo por padrão"
 L["CONFIG_ALTERNATE_SCAN_HEADER"] = "Modo de Verificação Alternativo"
 L["CONFIG_ALTERNATE_SCAN_TEXT"] = "O modo de verificação rápida pode causar desconexões em servidores lotados. Essa opção usa um método de verificação mais lento e com menor probabilidade de desconexão."
---[[Translation missing --]]
-L["CONFIG_AUCTION_AGE_TOOLTIP"] = "Show the number of days since a price was seen on the AH (up to 21 days)"
---[[Translation missing --]]
-L["CONFIG_AUCTION_TOOLTIP"] = "Show auction house value of items in tooltips"
+L["CONFIG_AUCTION_AGE_TOOLTIP"] = "Mostrar o número de dias desde que um preço foi visto na casa de leilão (até 21 dias)"
+L["CONFIG_AUCTION_TOOLTIP"] = "Mostrar o valor dos itens na casa de leilões nas dicas de ferramentas"
 L["CONFIG_AUTO_LIST_SEARCH"] = "Verificar automaticamente itens da lista de compras."
 L["CONFIG_AUTO_LIST_SEARCH_TOOLTIP_HEADER"] = "Pesquisa de lista automática"
 L["CONFIG_AUTO_LIST_SEARCH_TOOLTIP_TEXT"] = "Quando uma lista é selecionada, verifica automaticamente a casa de leilões em busca dos itens da lista. Quando esta opção está desativada, você pode verificar a lista inteira ao selecionar o botão 'Pesquisar' na barra lateral da Lista de Compras."
@@ -122,16 +113,13 @@ L["CONFIG_DEBUG"] = "Ativar/desativar mostrar mensagens de debug."
 L["CONFIG_DEBUG_TOOLTIP_HEADER"] = "Debug do Auctionator"
 L["CONFIG_DEBUG_TOOLTIP_TEXT"] = "Isto é utilizado pelos mantenedores para mostrar mensagens de debug no chat."
 L["CONFIG_DEVELOPER"] = "Configurações de Desenvolvedor (a)"
---[[Translation missing --]]
-L["CONFIG_ENCHANT_GENERIC_TOOLTIP"] = "Show estimated disenchant value of items in tooltips"
---[[Translation missing --]]
-L["CONFIG_ENCHANT_TOOLTIP"] = "Show estimated disenchant item value in tooltips (WoD, Legion, BfA & Shadowlands only.)"
+L["CONFIG_ENCHANT_GENERIC_TOOLTIP"] = "Mostrar valor estimado de desencantamento de itens nas dicas de ferramentas"
+L["CONFIG_ENCHANT_TOOLTIP"] = "Mostrar o valor estimado do item de desencantamento nas dicas de ferramentas (somente WoD, Legion, BfA e Shadowlands)."
 L["CONFIG_FULL_SCAN_STEP_SIZE"] = "Tamanho do \"passo\" da varredura total"
 L["CONFIG_LIFO_CATEGORY"] = "Vendendo"
 --[[Translation missing --]]
 L["CONFIG_MAIL_TOOLTIP"] = "Show auction house value of mail in tooltips"
---[[Translation missing --]]
-L["CONFIG_MATCHING"] = "Choose how the item price is automatically selected"
+L["CONFIG_MATCHING"] = "Escolha como o preço do item é selecionado automaticamente"
 --[[Translation missing --]]
 L["CONFIG_MATCHING_ITEM_ID"] = "Same item/pet id"
 --[[Translation missing --]]
@@ -154,7 +142,7 @@ L["CONFIG_QUANTITIES_CATEGORY"] = [=[Vendendo: Quantidades
 ]=]
 L["CONFIG_QUANTITIES_TEXT"] = [=[Escolha a quantidade padrão usada para as diferentes categorias de itens.
 ]=]
-L["CONFIG_RESET_STACK_SIZE_MEMORY"] = [=[Redefinir a memória do tamanho da pilha
+L["CONFIG_RESET_STACK_SIZE_MEMORY"] = [=[Resetar a memória do tamanho da pilha
 ]=]
 L["CONFIG_SAVE_LAST_DURATION_AS_DEFAULT"] = [=[Salve a última duração do leilão usada como padrão
 ]=]
@@ -200,13 +188,12 @@ L["CONFIG_SELLING_GREY_POST_BUTTON_TOOLTIP_TEXT"] = "Quando uma postagem pode fa
 L["CONFIG_SELLING_ICON_SIZE"] = "Tamanho do ícone da bolsa (necessário recarregar)"
 L["CONFIG_SELLING_ICON_SIZE_TOOLTIP_HEADER"] = "Tamanho dos ícones"
 L["CONFIG_SELLING_ICON_SIZE_TOOLTIP_TEXT"] = "Isso permite aumentar os ícones dos itens da bolsa na aba de vendas (até 50) ou menores (até 10). O tamanho padrão é 42."
---[[Translation missing --]]
-L["CONFIG_SELLING_IGNORE_ITEM_LEVEL"] = "Ignore item level when searching for matching auctions"
+L["CONFIG_SELLING_IGNORE_ITEM_LEVEL"] = "Ignore o nível do item ao pesquisar leilões correspondentes"
 L["CONFIG_SELLING_LIFO_HEADER"] = "Vendendo"
 L["CONFIG_SELLING_LIFO_TEXT"] = "Opções para definir porcentagem ou valor de subcotação e duração da maioria dos itens. Sem subcotação, essas categorias são agrupadas com o último item adicionado sendo o primeiro a vender. Subcotação pode não ser necessária."
-L["CONFIG_SELLING_MISSING_FAVOURITES"] = "Sempre mostrar os itens favoritos, mesmo se não houver nenhum na sua bolsa."
-L["CONFIG_SELLING_MISSING_FAVOURITES_TOOLTIP_HEADER"] = "Favoritos não disponíveis ainda visíveis"
-L["CONFIG_SELLING_MISSING_FAVOURITES_TOOLTIP_TEXT"] = "Mostrar os itens favoritos na amostra da bolsa mesmo quando eles não estão na sua bolsa."
+L["CONFIG_SELLING_MISSING_FAVOURITES"] = "Sempre mostrar os itens favoritos/grupo personalizado, mesmo se não houver nenhum na sua bolsa."
+L["CONFIG_SELLING_MISSING_FAVOURITES_TOOLTIP_HEADER"] = "Favoritos/grupo personalizado não disponíveis ainda visíveis"
+L["CONFIG_SELLING_MISSING_FAVOURITES_TOOLTIP_TEXT"] = "Mostrar os itens favoritos/grupo personalizado na amostra da bolsa mesmo quando eles não estão na sua bolsa."
 L["CONFIG_SELLING_NOT_LIFO_HEADER"] = "Vendendo Equipamento/Bichos de estimação"
 L["CONFIG_SELLING_NOT_LIFO_TEXT"] = "Opções para definir porcentagem ou valor de subcotação e duração para equipamento e bichos de estimação em gaiolas. Essas categorias de itens são postadas individualmente e um comprador pode escolher qual ele(a) quer. Subcotação pode ser útil."
 --[[Translation missing --]]
@@ -217,12 +204,9 @@ L["CONFIG_SELLING_POSSESSED_FAVOURITES_FIRST_TOOLTIP_HEADER"] = "Show possessed 
 L["CONFIG_SELLING_POSSESSED_FAVOURITES_FIRST_TOOLTIP_TEXT"] = "Set the favourite/custom group ordering to force any items in your bag to be at the start of the list."
 L["CONFIG_SELLING_POST_SHORTCUT"] = "O atalho de teclado/mouse para postar o item selecionado é"
 L["CONFIG_SELLING_POST_SHORTCUT_TOOLTIP_TEXT"] = "Clique e depois pressione o botão (ou tecla) que você gostaria de usar para o atalho. Esse atalho vai apenas funcionar na aba de vendas e não vai afetar outros atalhos para a mesma tecla."
---[[Translation missing --]]
-L["CONFIG_SELLING_PREV_SHORTCUT"] = "A shortcut to go back to the previously selected item"
---[[Translation missing --]]
-L["CONFIG_SELLING_RESELECT_ITEM"] = "Select the last item selected for posting when opening the Selling tab"
---[[Translation missing --]]
-L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_HEADER"] = "Reselect previous item"
+L["CONFIG_SELLING_PREV_SHORTCUT"] = "Um atalho para voltar ao item selecionado anteriormente"
+L["CONFIG_SELLING_RESELECT_ITEM"] = "Selecione o último item selecionado para postagem ao abrir a aba Vendas"
+L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_HEADER"] = "Selecionar novamente o item anterior"
 --[[Translation missing --]]
 L["CONFIG_SELLING_RESELECT_ITEM_TOOLTIP_TEXT"] = "After closing the Selling tab and reopening it either during the current session or a later one (including logging out and back in) restore the item selected for posting."
 L["CONFIG_SELLING_SHORTCUTS_CATEGORY"] = "Vendas: Atalhos"
@@ -237,12 +221,9 @@ L["CONFIG_SELLING_SPLIT_PANELS_TOOLTIP_TEXT"] = "Normalmente, os preços histór
 L["CONFIG_SELLING_TBC_ALL_ITEMS"] = [=[Opções para definir as configurações de lançamento padrão para todos os itens.
 ]=]
 L["CONFIG_SELLING_TEXT"] = "Opções para alterar o comportamento da guia Venda"
---[[Translation missing --]]
-L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY"] = "Always type quantity twice when purchasing commodities from the shopping tab"
---[[Translation missing --]]
-L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_HEADER"] = "Confirm quantity every time"
---[[Translation missing --]]
-L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_TEXT"] = "By default the quantity is confirmed just once, this makes it so you have to type it a second time to confirm the purchase."
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY"] = "Sempre digite a quantidade duas vezes ao comprar mercadorias na guia de compras"
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_HEADER"] = "Confirme a quantidade sempre"
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_TEXT"] = "Por padrão a quantidade é confirmada apenas uma vez, por isso é necessário digitá-la uma segunda vez para confirmar a compra."
 L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE"] = [=[Sempre carregue todos os resultados disponíveis.
 ]=]
 L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE_TOOLTIP_HEADER"] = [=[Sempre carregue mais
@@ -264,23 +245,16 @@ L["CONFIG_SMALL_TABS_TOOLTIP_TEXT"] = "Quando há muitos addons adicionando abas
 --[[Translation missing --]]
 L["CONFIG_STACK_TOOLTIP"] = "Only show stack value when holding shift."
 L["CONFIG_TOOLTIPS_CATEGORY"] = "Caixas de Texto"
---[[Translation missing --]]
-L["CONFIG_TOOLTIPS_TEXT"] = "Options to display different auction related information of items in tooltips, in your inventory and elsewhere."
---[[Translation missing --]]
-L["CONFIG_UNDERCUT_ITEMS_AHEAD"] = "How many items can be ahead of your listings before they count as undercut"
---[[Translation missing --]]
-L["CONFIG_UNDERCUT_ITEMS_AHEAD_CLASSIC"] = "How many items can be ahead of your listings before they count as undercut (max 50)"
---[[Translation missing --]]
-L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS"] = "For gear use item level and title when doing undercut checks"
---[[Translation missing --]]
-L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS_TOOLTIP_HEADER"] = "Gear Use Item Level and Title"
---[[Translation missing --]]
-L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS_TOOLTIP_TEXT"] = "Leave this on to match potential gear undercuts by item level and title, rather than by only item base type."
+L["CONFIG_TOOLTIPS_TEXT"] = "Opções para exibir informações relacionadas a leilões de itens em dicas, em seu inventário e em outros lugares."
+L["CONFIG_UNDERCUT_ITEMS_AHEAD"] = "Quantos itens podem estar à frente de suas listagens antes de serem considerados um subcotização"
+L["CONFIG_UNDERCUT_ITEMS_AHEAD_CLASSIC"] = "Quantos itens podem estar à frente de suas listagens antes de serem considerados subcotizações (máximo de 50)"
+L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS"] = "Usar o nível do item e o título ao verificar subcotações para equipamentos."
+L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS_TOOLTIP_HEADER"] = "Nível de item e título do equipamento"
+L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS_TOOLTIP_TEXT"] = "Deixe isso ligado para corresponder a possíveis subcotações de equipamentos pelo nível do item e título, em vez de apenas pelo tipo básico do item."
 L["CONFIG_UNDERCUT_SCAN_NOT_LIFO"] = "Incluir equipamento e bichos de estimação nas varreduras de subcotação"
 L["CONFIG_UNDERCUT_SCAN_NOT_LIFO_TOOLTIP_HEADER"] = "Varreduras de Subcotação para Equipamento/Bichos de Estimação"
 L["CONFIG_UNDERCUT_SCAN_NOT_LIFO_TOOLTIP_TEXT"] = "Deixe isso ativado para incluir leilões de bichos de estimação e equipamentos quando utilizar a varredura de subcotação. Desative para excluir os mesmos."
---[[Translation missing --]]
-L["CONFIG_VENDOR_TOOLTIP"] = "Show vendor sell prices in item tooltips"
+L["CONFIG_VENDOR_TOOLTIP"] = "Mostrar preços de venda do comerciante nas dicas de itens"
 L["CONFIRM"] = "confirmar"
 L["CONFIRM_POST_BELOW_VENDOR"] = [=[Você pode ganhar mais ouro vendendo isso para um fornecedor. Tem certeza de que deseja postar a esse preço?
 ]=]
@@ -289,12 +263,9 @@ L["CONFIRM_POST_LOW_PRICE"] = [=[O preço de %s parece um pouco baixo. Tem certe
 L["CONFIRM_POST_PRICE_DROP"] = "O preço unitário de %s é uma grande queda de preço. Tem certeza de que deseja postar a esse preço?"
 --[[Translation missing --]]
 L["CONFIRM_PURCHASE_OF_X_FOR_X"] = "Confirm purchase of %s for %s?"
---[[Translation missing --]]
-L["CONFIRM_UNHIDE_ALL"] = "Are you sure you want to unhide all hidden items?"
---[[Translation missing --]]
-L["CONFIRM_X_TOTAL_PRICE_X"] = "Confirm %s, total price %s"
---[[Translation missing --]]
-L["CONTINUE"] = "Continue"
+L["CONFIRM_UNHIDE_ALL"] = "Tem certeza de que deseja desocultar todos os itens ocultos?"
+L["CONFIRM_X_TOTAL_PRICE_X"] = "Confirmar %s, preço total %s."
+L["CONTINUE"] = "Continuar"
 L["CONTRIBUTORS_HEADER"] = "Contribuidores"
 L["COPY_ITEM_ADDED"] = [=[Copiou %s para %s
 ]=]
@@ -312,10 +283,8 @@ L["CURRENT"] = "Atual"
 L["CURRENT_PRICES"] = [=[Preços atuais
 ]=]
 L["CUSTOM_KEYBOARD_SHORTCUTS"] = "Atalhos de teclado"
---[[Translation missing --]]
-L["CUSTOMISE"] = "Customise"
---[[Translation missing --]]
-L["CUSTOMISE_BAG_GROUPS"] = "Customise Bag Groups"
+L["CUSTOMISE"] = "Customizar"
+L["CUSTOMISE_BAG_GROUPS"] = "Customizar grupos de bolsas"
 L["DATE"] = "Data"
 L["DAY_1"] = "Domingo"
 L["DAY_2"] = "Segunda-feira"
@@ -324,8 +293,7 @@ L["DAY_4"] = "Quarta-feira"
 L["DAY_5"] = "Quinta-feira"
 L["DAY_6"] = "Sexta-feira"
 L["DAY_7"] = "Sábado"
---[[Translation missing --]]
-L["DEFAULT"] = "default"
+L["DEFAULT"] = "padrão"
 L["DEFAULT_AUCTION_DURATION"] = "Duração Padrão de Leilão"
 L["DEFAULT_LIST_HEADER"] = "Lista de Compras Padrão"
 L["DEFAULT_QUANTITY"] = "Quantidade Padrão"
@@ -334,8 +302,7 @@ L["DEFAULT_STACK_SIZES"] = [=[Tamanhos de pilha padrão
 L["DEFAULT_TAB"] = "Aba Padrão"
 L["DEFAULT_TAB_TEXT"] = "mosta a aba padrão"
 L["DELETE"] = "Deletar"
---[[Translation missing --]]
-L["DELETE_GROUP_DIALOG"] = "Are you sure you want to delete group \"%s\"?"
+L["DELETE_GROUP_DIALOG"] = "Tem certeza de que deseja excluir o grupo \"%s\"?"
 L["DELETE_LIST_CONFIRM"] = "Você tem certeza de que quer deletar '%s'?"
 L["DELETE_LIST_NONE_SELECTED"] = "Você precisa selecionar uma lista para deletar."
 L["DEPOSIT"] = "Depósito:"
@@ -347,13 +314,11 @@ L["DISENCHANT"] = "Desencantar"
 L["DURATION"] = "Duração"
 L["EDIT_ITEM"] = "Editar Item"
 L["ENGAGE_HEADER"] = "Engajar Com o Auctionator"
---[[Translation missing --]]
-L["ENTER_QUANTITY_TO_CONFIRM_PURCHASE"] = "Enter the quantity of %s to confirm purchase:"
+L["ENTER_QUANTITY_TO_CONFIRM_PURCHASE"] = "Digite a quantidade de %s para confirmar a compra:"
 L["ERROR_REOPEN_AUCTION_HOUSE"] = [=[Não foi possível concluir a ação, feche e reabra a casa de leilões.
 ]=]
 L["EXACT_SEARCH"] = "Procura Exata"
---[[Translation missing --]]
-L["EXPANSION"] = "Expansion"
+L["EXPANSION"] = "Expansão"
 L["EXPORT"] = "Exportar"
 L["EXPORT_AS"] = "Exportar como"
 L["EXPORT_RESULTS"] = "Exportar os Resultados"
@@ -362,12 +327,10 @@ L["EXPORT_WHISPER"] = "Sussurrar para"
 --[[Translation missing --]]
 L["EXTENDED_SEARCH_ACTIVE_TEXT"] = "%extended search active%"
 L["FAVOURITES"] = "Favoritos"
---[[Translation missing --]]
-L["FAVOURITES_GROUP"] = "Favourites Group"
+L["FAVOURITES_GROUP"] = "Grupo de favoritos"
 L["FETCHING_ITEM_INFO"] = "Obtendo informações sobre o item..."
 L["FINISHED_PROCESSING"] = "Terminado de processar %s itens."
---[[Translation missing --]]
-L["FOCUS"] = "Focus"
+L["FOCUS"] = "Foco"
 L["FULL_SCAN_ALTERNATE_FAILED"] = "Varredura completa (mode alternativo) não foi completada com sucesso."
 L["FULL_SCAN_BUTTON"] = "Varredura Completa"
 L["FULL_SCAN_FAILED"] = "Não foi possível completar a varredura completa."
@@ -376,20 +339,17 @@ L["FULL_SCAN_FAILED_REPLICATE"] = [=[Falha na verificação completa (modo de re
 L["FULL_SCAN_FAILED_SUMMARY"] = "A verificação completa (modo de resumo) não foi concluída."
 L["FULL_SCAN_IN_PROGRESS"] = "Varredura completa em progresso."
 L["GEAR_VENDOR_PRICE_MULTIPLIER"] = "Multiplicador de preço de venda de equipamentos"
---[[Translation missing --]]
-L["GROUP_EXISTS_ALREADY"] = "That group name is already in use"
+L["GROUP_EXISTS_ALREADY"] = "Esse nome de grupo já está em uso"
 L["HIDE"] = "Esconder"
 L["HISTORY"] = "História"
 L["IMPORT"] = "Importar"
---[[Translation missing --]]
-L["IMPORTED"] = "Imported"
+L["IMPORTED"] = "Importado"
 L["INFO_TAB_HEADER"] = "Auctionator - Informações"
 L["IS_TOP_COLUMN"] = "Topo?"
 L["IS_UNDERCUT"] = "Subcotado?"
 L["ITEM_CLASS"] = "Classe de Item"
 L["ITEM_LEVEL"] = "Nível do Item"
 L["ITEM_LEVEL_COLUMN"] = "Nível do Item"
---[[Translation missing --]]
 L["ITEM_NAME_X_ITEM_LEVEL_X"] = "%s (%s)"
 L["ITEM_PRICE_HISTORY"] = "Histórico de Preços do Item"
 --[[Translation missing --]]
@@ -411,10 +371,8 @@ L["LOAD_HIGHER_PRICES"] = [=[Carregar preços mais altos
 ]=]
 L["LOAD_MORE_RESULTS"] = [=[Carregar mais resultados
 ]=]
---[[Translation missing --]]
-L["MAKE_PERMANENT"] = "Make Permanent"
---[[Translation missing --]]
-L["MAKE_PERMANENT_CONFIRM"] = "To make '%s' permanent choose a new name for it:"
+L["MAKE_PERMANENT"] = "Tornar permanente"
+L["MAKE_PERMANENT_CONFIRM"] = "Para tornar '%s' permanente, escolha um novo nome para ele:"
 L["MAX"] = "Máximo"
 L["MAX_COLON_X"] = [=[Máx.: %s
 ]=]
@@ -433,17 +391,13 @@ L["MONTH_6"] = "Junho"
 L["MONTH_7"] = "Julho"
 L["MONTH_8"] = "Agosto"
 L["MONTH_9"] = "Setembro"
---[[Translation missing --]]
-L["MORE"] = "More"
+L["MORE"] = "Mais"
 L["MULTIPLE_STACKS_AUCTION_INFO"] = [=[%s %s, totalizando %s
 ]=]
 L["NAME"] = "Nome"
---[[Translation missing --]]
-L["NEW_GROUP"] = "New Group"
---[[Translation missing --]]
-L["NEW_GROUP_DIALOG"] = "Enter the name to be used for the new group"
---[[Translation missing --]]
-L["NEW_LIST"] = "New List"
+L["NEW_GROUP"] = "Novo grupo"
+L["NEW_GROUP_DIALOG"] = "Digite o nome a ser usado para o novo grupo"
+L["NEW_LIST"] = "Nova lista"
 L["NEW_SHOPPING_LIST"] = [=[+ Nova lista de compras
 ]=]
 L["NEXT_SCAN_MESSAGE"] = "Próxima varredura completa pode ser começada em %s minutos e %s segundos."
@@ -461,39 +415,30 @@ L["OPEN_ADDON_OPTIONS"] = "Abrir Opções do Addon"
 L["OPEN_IN_SHOPPING_TAB"] = [=[Abrir na guia Compras
 ]=]
 L["OWNED_COLUMN"] = "Próprio?"
---[[Translation missing --]]
-L["PAYING_X"] = "Paying %s for one item"
+L["PAYING_X"] = "Pagando %s por um item"
 L["PERCENTAGE"] = "Porcentagem"
 L["PERCENTAGE_SUFFIX"] = "% Desconto"
 L["PERCENTAGE_TOOLTIP_HEADER"] = "Porcentagem de subcotação"
 L["PERCENTAGE_TOOLTIP_TEXT"] = "A porcentagem de subcotação que será usada para calcular o preço. Por exemplo, um valor de 5 significa que seu item será postado com um desconto de 5% comparado ao menor preço atual."
 L["POST"] = "Postar"
 L["POST_ATTEMPT_FAILED"] = "Sua última tentativa de postagem não funcionou. Tente novamente."
---[[Translation missing --]]
-L["POSTING_SETTINGS_COLON"] = "Posting Settings:"
---[[Translation missing --]]
-L["PREVIOUS"] = "Previous"
+L["POSTING_SETTINGS_COLON"] = "Configurações de publicação:"
+L["PREVIOUS"] = "Anterior"
 L["PRICE"] = "Preço"
 L["PRICE_HISTORY"] = "Histórico de Preços"
 L["PRICE_INCREASE_WARNING"] = [=[Preço aumentado em %s, aguardando %ss
 ]=]
 L["PRICE_INCREASE_WARNING_2"] = "Preço aumentado em %s. Deseja continuar?"
---[[Translation missing --]]
-L["PRICE_INCREASED"] = "The price has increased!"
---[[Translation missing --]]
-L["PRICE_INCREASED_X_X"] = "The price has increased: %s (%s each)"
---[[Translation missing --]]
-L["PRICE_VARIES_WARNING"] = "The prices varies a lot between items."
+L["PRICE_INCREASED"] = "O preço aumentou!"
+L["PRICE_INCREASED_X_X"] = "O preço aumentou: %s (%s cada)"
+L["PRICE_VARIES_WARNING"] = "Os preços variam muito entre os itens."
 L["PROFILE_TOGGLE_TOOLTIP_HEADER"] = "Ativar definições específicas para cada personagem"
 L["PROFILE_TOGGLE_TOOLTIP_TEXT"] = "Faz mudanças para as configurações do Auctionator afetar apenas este personagem."
 L["PROFIT_COLON"] = [=[Lucro:
 ]=]
---[[Translation missing --]]
-L["PROFIT_WARNING_AGE"] = "(price data at least 10 days old)"
---[[Translation missing --]]
-L["PROFIT_WARNING_MISSING"] = "(no price data)"
---[[Translation missing --]]
-L["PROFIT_WARNING_NOT_EXACT_ITEM"] = "(price data not exact match for item)"
+L["PROFIT_WARNING_AGE"] = "(dados de preços com pelo menos 10 dias)"
+L["PROFIT_WARNING_MISSING"] = "(sem dados de preço)"
+L["PROFIT_WARNING_NOT_EXACT_ITEM"] = "(dados de preço não correspondem exatamente ao item)"
 L["PROSPECT"] = "Perspectiva"
 L["PURCHASED_X_XX"] = [=[Comprado %s x%s
 ]=]
@@ -504,8 +449,7 @@ L["REALM_HISTORY"] = "Histórico do Servidor"
 L["RECENT_SEARCHES"] = "Pesquisas Recentes"
 L["REFRESH"] = "Atualizar"
 L["REMOVE_FAVOURITE"] = "Remover Favorito"
---[[Translation missing --]]
-L["REMOVE_FROM_X"] = "Remove from %s"
+L["REMOVE_FROM_X"] = "Remover de %s"
 L["RENAME"] = "Renomear"
 --[[Translation missing --]]
 L["RENAME_GROUP_DIALOG"] = "Choose a new name for \"%s\""
@@ -513,8 +457,7 @@ L["RENAME_LIST_CONFIRM"] = [=[Digite o novo nome para '%s':
 ]=]
 L["RENAME_LIST_DIALOG"] = "Escreve o novo nome para a lista de compras:"
 L["RESET_ALL"] = "Resetar Tudo"
---[[Translation missing --]]
-L["RESET_COLOR"] = "Reset color"
+L["RESET_COLOR"] = "Resetar cor"
 L["RESTORE_ALL"] = "Restaurar Tudo"
 L["RESULTS_AVAILABLE_COLUMN"] = "Disponível"
 L["RESULTS_NAME_COLUMN"] = "Nome"
@@ -535,8 +478,7 @@ L["SCANNING_PAGE_X"] = [=[Digitalizando página %s...
 L["SEARCH"] = "Procurar"
 L["SEARCH_ALL"] = [=[Pesquisar tudo
 ]=]
---[[Translation missing --]]
-L["SEARCH_FOR_QUANTITY"] = "Search For Quantity"
+L["SEARCH_FOR_QUANTITY"] = "Procurar por quantidade"
 --[[Translation missing --]]
 L["SEARCH_OPTIONS"] = "Search Options"
 L["SEARCH_TERM"] = "Procurar Termo"
@@ -564,8 +506,7 @@ L["SHIFT_RIGHT_CLICK"] = "Shift Clique Direito"
 L["SHIFT_UP"] = "Shift Up"
 L["SHOPPING_LIST"] = [=[Lista de compras
 ]=]
---[[Translation missing --]]
-L["SHOPPING_LISTS"] = "Shopping Lists"
+L["SHOPPING_LISTS"] = "Listas de compras"
 L["SHOPPING_TAB"] = "Comprar"
 L["SHOPPING_TAB_HEADER_2"] = "Auctionator - Compras"
 L["SKIP"] = "Pular"
@@ -592,24 +533,20 @@ L["SPLASH_100015_CLASSIC_2"] = "New optional \"Top?\" column in the Shopping tab
 L["SPLASH_100015_CLASSIC_3"] = "Prospecting ore estimated values as an optional tooltip."
 --[[Translation missing --]]
 L["SPLASH_100015_CLASSIC_4"] = "Milling herb estimated values as an optional tooltip."
---[[Translation missing --]]
-L["SPLASH_100015_CLASSIC_5"] = "Shows posting history as an extra option in an item's price history view."
+L["SPLASH_100015_CLASSIC_5"] = "Mostra o histórico de postagem como uma opção extra na visualização do histórico de preços de um item."
 --[[Translation missing --]]
 L["SPLASH_100015_CLASSIC_6"] = "In the Selling tab removed extra scan after posting an item."
 --[[Translation missing --]]
 L["SPLASH_100015_CLASSIC_7"] = "Option to prevent the post button going grey/disabled and to allow attempts to post immediately, with no-cost retries on failure."
---[[Translation missing --]]
-L["SPLASH_100015_CLASSIC_HEADER"] = "Recent features for Classic"
---[[Translation missing --]]
-L["SPLASH_100015_DESCRIPTION"] = "Lots of improvements, including compatibility with Dragonflight"
+L["SPLASH_100015_CLASSIC_HEADER"] = "Recursos recentes para o modo Clássico"
+L["SPLASH_100015_DESCRIPTION"] = "Muitas melhorias, incluindo compatibilidade com Dragonflight"
 --[[Translation missing --]]
 L["SPLASH_100015_RETAIL_1"] = "Crafting cost and profit updates based on the reagents and quality selected."
 --[[Translation missing --]]
 L["SPLASH_100015_RETAIL_2"] = "Selling tab has an expanded prices view with historical prices available in a separate tab. Reverting to the split screen view is available as an option."
 --[[Translation missing --]]
 L["SPLASH_100015_RETAIL_3"] = "Reagents value on the auction house is shown when listing a crafting order."
---[[Translation missing --]]
-L["SPLASH_100015_RETAIL_HEADER"] = "Recent features for Retail"
+L["SPLASH_100015_RETAIL_HEADER"] = "Recursos recentes para Retail"
 --[[Translation missing --]]
 L["SPLASH_100106_CRAFTING_INFO_1"] = "Craft profits in crafting windows now warn if the price data is out of date."
 --[[Translation missing --]]
@@ -628,18 +565,14 @@ L["SPLASH_100106_OTHER_2"] = "Optional \"Auction Age\" tooltip entry to show how
 L["SPLASH_100106_OTHER_HEADER"] = "Other features"
 --[[Translation missing --]]
 L["SPLASH_100106_SELLING_TAB_CLASSIC_1"] = "Option to post partial stacks after posting your full stacks"
---[[Translation missing --]]
-L["SPLASH_100106_SELLING_TAB_CLASSIC_2"] = "Warning about the price being abnormally low due to post bait auctions"
---[[Translation missing --]]
-L["SPLASH_100106_SELLING_TAB_CLASSIC_HEADER"] = "Selling tab (for classic)"
---[[Translation missing --]]
-L["SPLASH_100106_SELLING_TAB_RETAIL_1"] = "More options, level/id/name/name-and-level, when deciding what prices your item should be compared against when posting."
+L["SPLASH_100106_SELLING_TAB_CLASSIC_2"] = "Aviso sobre o preço anormalmente baixo devido a leilões com postagens provocativas."
+L["SPLASH_100106_SELLING_TAB_CLASSIC_HEADER"] = "Aba de venda (para a versão clássica)."
+L["SPLASH_100106_SELLING_TAB_RETAIL_1"] = "Mais opções, nível/id/nome/nome e nível, ao decidir com quais preços seu item deve ser comparado ao postar."
 --[[Translation missing --]]
 L["SPLASH_100106_SELLING_TAB_RETAIL_2"] = "Shows grey gear in the item list"
 --[[Translation missing --]]
 L["SPLASH_100106_SELLING_TAB_RETAIL_3"] = "Clicking on an auction with a bid listed will populate the bid price field if enabled"
---[[Translation missing --]]
-L["SPLASH_100106_SELLING_TAB_RETAIL_HEADER"] = "Selling tab (for retail)"
+L["SPLASH_100106_SELLING_TAB_RETAIL_HEADER"] = "Aba Venda (para retail)"
 --[[Translation missing --]]
 L["SPLASH_100106_SHOPPING_TAB_BOTH_1"] = "All lists now show on the left of the tab without a dropdown."
 --[[Translation missing --]]
@@ -841,10 +774,8 @@ L["STARTING_PRICE_PERCENTAGE_TOOLTIP_HEADER"] = [=[Preço inicial do lance
 ]=]
 L["STARTING_PRICE_PERCENTAGE_TOOLTIP_TEXT"] = [=[A porcentagem do preço inicial será usada para definir o valor do lance padrão usado para quaisquer leilões publicados. Por exemplo, definir isso para 95, para um preço de pilha de 10 segundos, definirá o preço de oferta para 9s50c.
 ]=]
---[[Translation missing --]]
-L["STOP"] = "Stop"
---[[Translation missing --]]
-L["STOP_LOADING_NOW"] = "Stop loading now"
+L["STOP"] = "Parar"
+L["STOP_LOADING_NOW"] = "Pare de carregar agora"
 L["TEMPORARY_LOWER_CASE"] = "temporário"
 L["TIER"] = "Qualidade"
 L["TIME_LEFT"] = "Tempo Restante"
@@ -861,8 +792,7 @@ L["TOTAL_ON_SALE"] = "Total vendendo: %s"
 L["TOTAL_PENDING"] = [=[(%s pendente)
 ]=]
 L["TOTAL_PRICE"] = "Preço total:"
---[[Translation missing --]]
-L["TOTAL_PRICE_PLAIN"] = "Total Price"
+L["TOTAL_PRICE_PLAIN"] = "Preço total"
 L["TRANSLATORS_BRAZIL_PORTUGUEUSE"] = "Português Brasileiro"
 L["TRANSLATORS_FRENCH"] = "Francês"
 L["TRANSLATORS_GERMAN"] = "Alemão"
@@ -881,8 +811,7 @@ L["UNDERCUT_BID"] = "Oferta"
 L["UNDERCUT_NO"] = "Não"
 L["UNDERCUT_PREFERENCE"] = [=[Preferência de sub-corte
 ]=]
---[[Translation missing --]]
-L["UNDERCUT_PRICE"] = "Undercut Price"
+L["UNDERCUT_PRICE"] = "Preço de subcotização"
 L["UNDERCUT_SCAN"] = "Varredura de Subcotação"
 L["UNDERCUT_TOOLTIP_HEADER"] = "Valor de Subcotação"
 L["UNDERCUT_TOOLTIP_TEXT"] = "O valor do desconto será utilizado para calcular o preço de venda."
@@ -902,8 +831,7 @@ L["VERSION_HEADER"] = "Versão"
 L["VERSION_MESSAGE"] = "Versão %s"
 L["WAITING_AT_MOST_X_LONGER"] = [=[Aguardando no máximo %ss mais...
 ]=]
---[[Translation missing --]]
-L["X_DAYS"] = "%s days"
+L["X_DAYS"] = "%s dias"
 L["X_PRICE_HISTORY"] = [=[%s Histórico de preços
 ]=]
 L["X_STACK_OF_X"] = [=[%s pilha de %s
