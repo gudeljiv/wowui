@@ -1,5 +1,5 @@
 
-if not LibStub.libs["HizurosSharedTools"] or GetAddOnMetadata("FarmHud","Version")~="9.2.7-release" then
+if not LibStub.libs["HizurosSharedTools"] or C_AddOns.GetAddOnMetadata("FarmHud","Version")~="9.2.8-release" then
 	local FarmHudInvalidInstallation = "Your current installation of FarmHud is invalid. Please uninstall all other addons with 'FarmHud' in its name and reinstall FarmHud."
 	StaticPopupDialogs["FARMHUD_INVALID_INSTALLATION"] = {
 		text = FarmHudInvalidInstallation,
@@ -12,7 +12,7 @@ if not LibStub.libs["HizurosSharedTools"] or GetAddOnMetadata("FarmHud","Version
 end
 
 local addon, ns = ...;
-ns.debugMode = "9.2.7-release"=="@".."project-version".."@";
+ns.debugMode = "9.2.8-release"=="@".."project-version".."@";
 LibStub("HizurosSharedTools").RegisterPrint(ns,addon,"FH/QA");
 
 local GetSuperTrackedQuestID,SetSuperTrackedQuestID_Orig,TrackedQuestID = GetSuperTrackedQuestID,SetSuperTrackedQuestID;
