@@ -6,25 +6,25 @@ HandyNotes_RunesDB = {
 			},
 		},
 	},
-	["runesKnown"] = {
-		["HUNTER"] = {
-			["spells"] = {
-				["Explosive Shot"] = true,
-				["Beast Mastery"] = true,
-				["Master Marksman"] = true,
-				["Flanking Strike"] = true,
-				["Sniper Training"] = true,
-				["Kill Command"] = true,
-				["Chimera Shot"] = true,
-				["Carve"] = true,
-			},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Dopesnare - Lone Wolf"] = "Default",
 	},
-	["profiles"] = {
-		["Default"] = {
+	["runesKnown"] = {
+		["HUNTER"] = {
+			["spells"] = {
+				["Explosive Shot"] = true,
+				["Beast Mastery"] = true,
+				["Carve"] = true,
+				["Chimera Shot"] = true,
+				["Kill Command"] = true,
+				["Sniper Training"] = true,
+				["Flanking Strike"] = true,
+				["Master Marksman"] = true,
+			},
 		},
 	},
 }

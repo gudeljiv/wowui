@@ -12,19 +12,19 @@ HandyNotesDB = {
 	["profiles"] = {
 		["Dopeclaw - Lone Wolf"] = {
 		},
-		["Dopedot - Lone Wolf"] = {
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
 		["Dopestab - Lone Wolf"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 		["Dopemend - Lone Wolf"] = {
 		},
 		["Default"] = {
 		},
-		["Doperage - Lone Wolf"] = {
+		["Dopedot - Lone Wolf"] = {
 		},
 	},
 }

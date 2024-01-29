@@ -14,6 +14,10 @@ VER 3 0000000001000001 "lesser" "135929"
 #showtooltip
 /cast [@mouseover,exists,help][] Lesser Heal
 END
+VER 3 000000000100000A "mending" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Prayer of Mending
+END
 VER 3 0000000001000003 "renew" "134400"
 #showtooltip
 /cast [@mouseover,exists,help][] Renew
