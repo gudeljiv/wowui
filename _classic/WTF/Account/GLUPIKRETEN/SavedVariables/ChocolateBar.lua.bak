@@ -48,11 +48,11 @@ ChocolateBarDB = {
 		["Dopedot - Lone Wolf"] = "Default",
 		["Dopebolt - Lone Wolf"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
-		["Tukac - Genesis"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
-		["Pitchwise - Golemagg"] = "Default",
 		["Dopetrap - Lone Wolf"] = "Default",
+		["Tukac - Genesis"] = "Default",
+		["Pitchwise - Golemagg"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -787,9 +787,9 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Dopedot-LoneWolf"] = {
-		["total"] = 1541,
-		["timeAtThisLevel"] = 133,
-		["timeStamp"] = 1473391.554,
+		["total"] = 5653,
+		["timeAtThisLevel"] = 460,
+		["timeStamp"] = 254139.769,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 3794,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 126483,
-		["timeAtThisLevel"] = 38581,
-		["timeStamp"] = 1149088.116,
+		["total"] = 126642,
+		["timeAtThisLevel"] = 38740,
+		["timeStamp"] = 160426.106,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -840,9 +840,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 126068,
-		["timeStamp"] = 1148475.271,
-		["timeAtThisLevel"] = 18250,
+		["total"] = 126674,
+		["timeStamp"] = 249590.126,
+		["timeAtThisLevel"] = 18856,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -862,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 24938,
-		["timeStamp"] = 158974.219,
-		["timeAtThisLevel"] = 3959,
+		["total"] = 26380,
+		["timeStamp"] = 247498.943,
+		["timeAtThisLevel"] = 584,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -924,9 +924,9 @@ CB_PlayedTime = {
 		["total"] = 425995,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 76684,
-		["timeStamp"] = 93802.214,
-		["timeAtThisLevel"] = 2925,
+		["total"] = 80189,
+		["timeStamp"] = 267587.2,
+		["timeAtThisLevel"] = 2137,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
@@ -937,9 +937,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 146916,
-		["timeStamp"] = 5149.263,
-		["timeAtThisLevel"] = 13380,
+		["total"] = 146977,
+		["timeStamp"] = 254920.635,
+		["timeAtThisLevel"] = 13441,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,

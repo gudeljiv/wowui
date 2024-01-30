@@ -6,13 +6,6 @@ HandyNotes_RunesDB = {
 			},
 		},
 	},
-	["profiles"] = {
-		["Default"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Dopestab - Lone Wolf"] = "Default",
-	},
 	["runesKnown"] = {
 		["ROGUE"] = {
 			["spells"] = {
@@ -23,6 +16,13 @@ HandyNotes_RunesDB = {
 				["Saber Slash"] = true,
 				["Slaughter from the Shadows"] = true,
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Dopestab - Lone Wolf"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }

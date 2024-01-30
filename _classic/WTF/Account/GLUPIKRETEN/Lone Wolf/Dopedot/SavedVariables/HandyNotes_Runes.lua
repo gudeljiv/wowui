@@ -10,6 +10,8 @@ HandyNotes_RunesDB = {
 	["runesKnown"] = {
 		["WARLOCK"] = {
 			["spells"] = {
+				["Incinerate"] = true,
+				["Haunt"] = true,
 			},
 		},
 	},

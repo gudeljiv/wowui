@@ -1,5 +1,6 @@
 
 SigmaHelmAndCloak = {
-	["|cffffffff|Hitem:4920::::::::11:::::::::|h[Battleworn Cape]|h|r"] = "Off",
 	["|cffffffff|Hitem:4920::::::::11:::::::::|h[]|h|r"] = "Off",
+	["|cff9d9d9d|Hitem:1376::::::::6:::::::::|h[Frayed Cloak]|h|r"] = "Off",
+	["|cffffffff|Hitem:4920::::::::11:::::::::|h[Battleworn Cape]|h|r"] = "Off",
 }

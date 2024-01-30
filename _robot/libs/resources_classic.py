@@ -157,6 +157,7 @@ data = {
             {"name": "corruption", "type": "GetSpellTexture", "id": 172, "key": "v"},
             {"name": "curse of agony", "type": "GetSpellTexture", "id": 980, "key": "g"},
             {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "f11"},
+            {"name": "incinerate", "type": "GetSpellTexture", "id": 412758, "key": "3", "modifier": "lshift"},
         ],
         "secondary": [],
     },

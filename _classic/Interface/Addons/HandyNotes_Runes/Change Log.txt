@@ -1,3 +1,6 @@
+== v1.30 - 29th January 2024
+* Paladins and Priests for non-English clients. More to come
+
 == v1.29 - 27th January 2024
 * Fix for:
 * Support for non-English Druids, Hunters, Mages. More to come

@@ -1,12 +1,5 @@
 
 HandyNotes_RunesDB = {
-	["profiles"] = {
-		["Default"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Dopemend - Lone Wolf"] = "Default",
-	},
 	["runesKnown"] = {
 		["PRIEST"] = {
 			["spells"] = {
@@ -16,6 +9,13 @@ HandyNotes_RunesDB = {
 				["Shared Pain"] = true,
 				["Prayer of Mending"] = true,
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Dopemend - Lone Wolf"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }
