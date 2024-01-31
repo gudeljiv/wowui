@@ -2,13 +2,13 @@
 ## Notes: GatherMate2 data fetched from Wowhead
 ## Title: GatherMate2Data
 ## Author: kagaro, Xinhuan, Spinx, Marrtin
-## Version: v2024-01-03
+## Version: v2024-01-30
 ## LoadOnDemand: 1
 ## Dependencies: GatherMate2
 
-MiningData.lua
-HerbalismData.lua
-FishData.lua
-TreasureData.lua
-GasData.lua
-GatherMateData.lua
+Classic\MiningData.lua
+Classic\HerbalismData.lua
+Classic\FishData.lua
+Classic\TreasureData.lua
+Classic\GasData.lua
+Classic\GatherMateData.lua

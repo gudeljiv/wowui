@@ -7,29 +7,28 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 413,
+					["combatId"] = 502,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008712,
+							["totalabsorbed"] = 0.007753,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 97.008712,
+							["total_without_pet"] = 139.007753,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 124.008712,
+							["total"] = 164.007753,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Decrepit Darkhound"] = true,
+								["Kul Tiras Marine"] = true,
 							},
 							["targets"] = {
-								["Decrepit Darkhound"] = 124,
+								["Kul Tiras Marine"] = 164,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -37,26 +36,26 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706634173,
+							["end_time"] = 1706722196,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[403501] = {
+									[686] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["n_max"] = 17,
 										["targets"] = {
-											["Decrepit Darkhound"] = 32,
+											["Kul Tiras Marine"] = 17,
 										},
-										["n_total"] = 32,
-										["n_min"] = 32,
+										["n_total"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 32,
+										["total"] = 17,
 										["c_max"] = 0,
-										["id"] = 403501,
+										["id"] = 686,
 										["r_dmg"] = 0,
 										["spellschool"] = 32,
 										["extra"] = {
@@ -74,15 +73,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 35,
+										["n_max"] = 32,
 										["targets"] = {
-											["Decrepit Darkhound"] = 65,
+											["Kul Tiras Marine"] = 32,
 										},
-										["n_total"] = 65,
-										["n_min"] = 30,
+										["n_total"] = 32,
+										["n_min"] = 32,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 65,
+										["counter"] = 1,
+										["total"] = 32,
 										["c_max"] = 0,
 										["id"] = 412758,
 										["r_dmg"] = 0,
@@ -94,7 +93,63 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 76,
+										["targets"] = {
+											["Kul Tiras Marine"] = 76,
+										},
+										["n_total"] = 76,
+										["n_min"] = 76,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 76,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Kul Tiras Marine"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -102,39 +157,39 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 12.98656529479653,
+							["last_dps"] = 20.24537131212317,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 154.008712,
-							["start_time"] = 1706634164,
+							["damage_taken"] = 9.007753,
+							["start_time"] = 1706722188,
 							["delay"] = 0,
-							["last_event"] = 1706634173,
+							["last_event"] = 1706722196,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001688,
+							["totalabsorbed"] = 0.001856,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 27.001688,
+							["total_without_pet"] = 25.001856,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 27.001688,
+							["total"] = 25.001856,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5208-0-18205-416-01009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "Pet-0-5208-0-18205-416-01009FD407",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Decrepit Darkhound"] = 27,
+								["Kul Tiras Marine"] = 25,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706634173,
+							["end_time"] = 1706722196,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -146,13 +201,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 9,
 										["targets"] = {
-											["Decrepit Darkhound"] = 27,
+											["Kul Tiras Marine"] = 25,
 										},
-										["n_total"] = 27,
-										["n_min"] = 9,
+										["n_total"] = 25,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 27,
+										["total"] = 25,
 										["c_max"] = 0,
 										["id"] = 3110,
 										["r_dmg"] = 0,
@@ -172,42 +227,44 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 2.827697978846228,
+							["last_dps"] = 3.086267868155199,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.001688,
-							["start_time"] = 1706634166,
+							["damage_taken"] = 0.001856,
+							["start_time"] = 1706722191,
 							["delay"] = 0,
-							["last_event"] = 1706634171,
+							["last_event"] = 1706722194,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008041,
+							["totalabsorbed"] = 0.002069,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 21.008041,
+							["total_without_pet"] = 21.002069,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 21.008041,
-							["on_hold"] = false,
+							["dps_started"] = true,
+							["total"] = 21.002069,
+							["on_hold"] = true,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5208-0-18205-1547-0001B921F1",
-							["aID"] = "1547",
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA8383",
+							["aID"] = "3129",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
+								["Tartog"] = true,
+								["Hornywarlock"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 21,
+								["Dopedot"] = 9,
+								["Tartog"] = 12,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706634173,
-							["nome"] = "Decrepit Darkhound",
+							["nome"] = "Kul Tiras Marine",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -215,14 +272,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 9,
 										["targets"] = {
-											["Dopedot"] = 21,
+											["Dopedot"] = 9,
+											["Tartog"] = 12,
 										},
 										["n_total"] = 21,
-										["n_min"] = 5,
+										["n_min"] = 6,
 										["g_dmg"] = 0,
-										["counter"] = 4,
+										["counter"] = 3,
 										["total"] = 21,
 										["c_max"] = 0,
 										["id"] = 1,
@@ -235,7 +293,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -246,168 +304,38 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 124.008041,
-							["start_time"] = 1706634165,
-							["delay"] = 0,
-							["last_event"] = 1706634171,
+							["damage_taken"] = 298.002069,
+							["start_time"] = 1706722193,
+							["delay"] = 1706722347,
+							["last_event"] = 1706722347,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 413,
+					["combatId"] = 502,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 14.008858,
-							["total_without_pet"] = 18.008858,
-							["total"] = 18.008858,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["totalabsorb"] = 0.008858,
-							["last_hps"] = 1.885941774007933,
-							["aID"] = "5826-024A22B1",
-							["fight_component"] = true,
-							["targets"] = {
-								["Dopedot"] = 18,
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["colocacao"] = 1,
-							["totalover_without_pet"] = 0.008858,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["healing_taken"] = 18.008858,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["end_time"] = 1706634173,
-							["targets_overheal"] = {
-								["Dopedot"] = 14,
-							},
-							["start_time"] = 1706634173,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 14,
-										},
-										["n_max"] = 18,
-										["targets"] = {
-											["Dopedot"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["counter"] = 1,
-										["overheal"] = 14,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["spellschool"] = 32,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["custom"] = 0,
-							["last_event"] = 1706634173,
-							["totaldenied"] = 0.008858,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 413,
+					["combatId"] = 502,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["received"] = 0.002518,
-							["resource"] = 0.002518,
-							["targets"] = {
-								["Dopedot"] = 0,
-							},
-							["total"] = 0.002518,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 20.002518,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.002518,
-							["passiveover"] = 0.002518,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 0,
-										["id"] = 31818,
-										["totalover"] = 20,
-										["targets"] = {
-											["Dopedot"] = 0,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706634198,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 413,
+					["combatId"] = 502,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-024A22B1",
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706634173,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
 							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -416,7 +344,7 @@ _detalhes_database = {
 										["id"] = 687,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -427,19 +355,19 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 4,
+										["uptime"] = 1,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime"] = 13,
-							["debuff_uptime"] = 0,
+							["buff_uptime"] = 9,
+							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706634173,
+							["last_event"] = 1706722196,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -447,8 +375,8 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5208-0-18205-416-01009FD407",
-							["serial"] = "Pet-0-5208-0-18205-416-01009FD407",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
@@ -458,7 +386,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 413,
+					["combatId"] = 502,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -469,7 +397,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["tempo_start"] = 1706634164,
+				["tempo_start"] = 1706722188,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -481,11 +409,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					2588, -- [1]
-					18, -- [2]
+					921, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 14,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -504,42 +432,5593 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+						["Chaos Bolt"] = 1,
+						["Shadow Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 2,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:29:57",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 342302.357,
+				["CombatEndedAt"] = 342302.357,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:29:49",
+				["end_time"] = 342302.357,
+				["combat_id"] = 502,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 546,
+				["totals_grupo"] = {
+					164, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 164.007753,
+							["Rupqua <Dopedot>"] = 25.001856,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 342294.256,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 501,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007874,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 107.007874,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 156.007874,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 156,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722159,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kul Tiras Marine"] = 1,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 1,
+										["counter"] = 1,
+										["total"] = 1,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 89,
+										["targets"] = {
+											["Kul Tiras Marine"] = 89,
+										},
+										["n_total"] = 89,
+										["n_min"] = 89,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 89,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kul Tiras Marine"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 12.43090629483225,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 2.007874,
+							["start_time"] = 1706722146,
+							["delay"] = 0,
+							["last_event"] = 1706722158,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004514,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 49.004514,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 49.004514,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 49,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722159,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kul Tiras Marine"] = 49,
+										},
+										["n_total"] = 36,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 49,
+										["c_max"] = 13,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 13,
+										["successful_casted"] = 0,
+										["c_total"] = 13,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.904742151398045,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004514,
+							["start_time"] = 1706722148,
+							["delay"] = 0,
+							["last_event"] = 1706722158,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00352,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 2.00352,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 2.00352,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA82B0",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 2,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722159,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dopedot"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Dopedot"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 156.00352,
+							["start_time"] = 1706722151,
+							["delay"] = 0,
+							["last_event"] = 1706722151,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 501,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 501,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 501,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 13,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706722159,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.004799,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA82B0",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Dopedot"] = 1,
+							},
+							["last_event"] = 1706722151,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 501,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 342292.889,
+				["tempo_start"] = 1706722146,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					334, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 4,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:29:19",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 342264.787,
+				["CombatEndedAt"] = 342264.787,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:29:07",
+				["end_time"] = 342264.787,
+				["combat_id"] = 501,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 545,
+				["totals_grupo"] = {
+					156, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 156.007874,
+							["Rupqua <Dopedot>"] = 49.004514,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 342252.237,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 500,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008619,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 105.008619,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 124.008619,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Sailor"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 124,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722116,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 20,
+										},
+										["n_total"] = 20,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 20,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 85,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 85,
+										},
+										["n_total"] = 85,
+										["n_min"] = 85,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 85,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 24.23937040638672,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 26.008619,
+							["start_time"] = 1706722111,
+							["delay"] = 0,
+							["last_event"] = 1706722115,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00431,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 19.00431,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 19.00431,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 19,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722116,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 19,
+										},
+										["n_total"] = 19,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.71468139168455,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.00431,
+							["start_time"] = 1706722114,
+							["delay"] = 0,
+							["last_event"] = 1706722115,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006206,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 26.006206,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 26.006206,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3128-00003A827F",
+							["aID"] = "3128",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 26,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722116,
+							["nome"] = "Kul Tiras Sailor",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Dopedot"] = 26,
+										},
+										["n_total"] = 26,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 26,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 124.006206,
+							["start_time"] = 1706722114,
+							["delay"] = 0,
+							["last_event"] = 1706722114,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 500,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 500,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 500,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 5,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706722116,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 500,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 342250.737,
+				["tempo_start"] = 1706722111,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					150, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:28:37",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Sailor",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 342223.069,
+				["CombatEndedAt"] = 342223.069,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:28:32",
+				["end_time"] = 342223.069,
+				["combat_id"] = 500,
+				["frags"] = {
+					["Kul Tiras Sailor"] = 1,
+				},
+				["combat_counter"] = 544,
+				["totals_grupo"] = {
+					124, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 124.008619,
+							["Rupqua <Dopedot>"] = 19.00431,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 342217.953,
+				["contra"] = "Kul Tiras Sailor",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 499,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006828,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 135.006828,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 155.006828,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 155,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722081,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 103,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 103,
+										},
+										["n_total"] = 103,
+										["n_min"] = 103,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 45.57683857672065,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006828,
+							["start_time"] = 1706722077,
+							["delay"] = 0,
+							["last_event"] = 1706722079,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004082,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 20.004082,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 20.004082,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Sailor"] = 20,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722081,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 20,
+										},
+										["n_total"] = 9,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 20,
+										["c_max"] = 11,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 11,
+										["successful_casted"] = 0,
+										["c_total"] = 11,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 5.881823581277874,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004082,
+							["start_time"] = 1706722077,
+							["delay"] = 0,
+							["last_event"] = 1706722079,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008337,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.008337,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.008337,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3128-0000BA8220",
+							["aID"] = "3128",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706722081,
+							["nome"] = "Kul Tiras Sailor",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 155.008337,
+							["start_time"] = 1706722081,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 499,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 499,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 499,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 8,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706722081,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 499,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 342216.736,
+				["tempo_start"] = 1706722077,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					155, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:28:01",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Sailor",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 342187.119,
+				["CombatEndedAt"] = 342187.119,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:27:58",
+				["end_time"] = 342187.119,
+				["combat_id"] = 499,
+				["frags"] = {
+					["Kul Tiras Sailor"] = 1,
+				},
+				["combat_counter"] = 543,
+				["totals_grupo"] = {
+					155, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 155.006828,
+							["Rupqua <Dopedot>"] = 20.004082,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 342183.718,
+				["contra"] = "Kul Tiras Sailor",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 498,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003651,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 149.003651,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 166.003651,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 166,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721912,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 76,
+										["targets"] = {
+											["Kul Tiras Marine"] = 76,
+										},
+										["n_total"] = 76,
+										["n_min"] = 76,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 76,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Kul Tiras Marine"] = 73,
+										},
+										["n_total"] = 73,
+										["n_min"] = 33,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 34.83812193064288,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003651,
+							["start_time"] = 1706721907,
+							["delay"] = 0,
+							["last_event"] = 1706721911,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007251,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 17.007251,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 17.007251,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 17,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721912,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kul Tiras Marine"] = 17,
+										},
+										["n_total"] = 17,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.569202728216188,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007251,
+							["start_time"] = 1706721909,
+							["delay"] = 0,
+							["last_event"] = 1706721911,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002906,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002906,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002906,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A8245",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721912,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 166.002906,
+							["start_time"] = 1706721912,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 498,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 498,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 498,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 9,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721912,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 498,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 342182.451,
+				["tempo_start"] = 1706721907,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					166, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 2,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:25:12",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 342017.96,
+				["CombatEndedAt"] = 342017.96,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:25:08",
+				["end_time"] = 342017.96,
+				["combat_id"] = 498,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 542,
+				["totals_grupo"] = {
+					166, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 166.003651,
+							["Rupqua <Dopedot>"] = 17.007251,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 342013.195,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [5]
+			{
+				{
+					["combatId"] = 497,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002889,
+							["pets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 0.002889,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002889,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+							},
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721887,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 49.002889,
+							["start_time"] = 1706721887,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.004801,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 49.004801,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 49.004801,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Dopedot"] = 49,
+							},
+							["aID"] = "",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721887,
+							["nome"] = "Environment (Falling)",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 49,
+										["targets"] = {
+											["Dopedot"] = 49,
+										},
+										["n_total"] = 49,
+										["n_min"] = 49,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 3,
+										["r_dmg"] = 0,
+										["spellschool"] = 3,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004801,
+							["start_time"] = 1706721886,
+							["delay"] = 1706721873,
+							["last_event"] = 1706721873,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 497,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 497,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 497,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[6307] = {
+										["activedamt"] = 1,
+										["id"] = 6307,
+										["targets"] = {
+										},
+										["actived_at"] = 1706721899,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 14,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721899,
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 497,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 342011.628,
+				["tempo_start"] = 1706721873,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					49, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["amountCasts"] = {
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:24:48",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Unknown",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341993.21,
+				["CombatEndedAt"] = 341993.21,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:24:33",
+				["end_time"] = 341993.21,
+				["combat_id"] = 497,
+				["frags"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 0.002889,
+						}, -- [1]
+					},
+				},
+				["combat_counter"] = 541,
+				["start_time"] = 341978.809,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [6]
+			{
+				{
+					["combatId"] = 496,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008711,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 79.008711,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 138.008711,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 138,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721845,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kul Tiras Marine"] = 1,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 1,
+										["counter"] = 2,
+										["total"] = 1,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[686] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Kul Tiras Marine"] = 37,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 37,
+										["c_max"] = 23,
+										["id"] = 686,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 23,
+										["successful_casted"] = 0,
+										["c_total"] = 23,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Kul Tiras Marine"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 7.885761442208129,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 16.008711,
+							["start_time"] = 1706721828,
+							["delay"] = 0,
+							["last_event"] = 1706721845,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003787,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 59.003787,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 59.003787,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 59,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721845,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 59,
+										},
+										["n_total"] = 59,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.37145231701252,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 34.003787,
+							["start_time"] = 1706721831,
+							["delay"] = 0,
+							["last_event"] = 1706721845,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003777,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 50.003777,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 50.003777,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81AC",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 16,
+								["Rupqua <Dopedot>"] = 34,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721845,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Dopedot"] = 15,
+											["Rupqua <Dopedot>"] = 34,
+										},
+										["n_total"] = 49,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["n_total"] = 1,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 138.003777,
+							["start_time"] = 1706721828,
+							["delay"] = 0,
+							["last_event"] = 1706721841,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 496,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 496,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 496,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[172] = {
+										["activedamt"] = 0,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 21,
+							["debuff_uptime"] = 5,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721845,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.003249,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81AC",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Dopedot"] = 1,
+							},
+							["last_event"] = 1706721831,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 496,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341977.06,
+				["tempo_start"] = 1706721828,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					188, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 6,
+					},
+					["Dopedot"] = {
+						["Corruption"] = 1,
+						["Incinerate"] = 1,
+						["Shadow Bolt"] = 2,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:24:06",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 17.50099999998929,
+				["CombatEndedAt"] = 341951.941,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:23:49",
+				["end_time"] = 341951.941,
+				["combat_id"] = 496,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 540,
+				["totals_grupo"] = {
+					138, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 138.008711,
+							["Rupqua <Dopedot>"] = 59.003787,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341934.44,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 495,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004913,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 272.004913,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 340.004913,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Lieutenant Benedict"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 153,
+								["Lieutenant Benedict"] = 187,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721815,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 86,
+										["targets"] = {
+											["Kul Tiras Marine"] = 86,
+										},
+										["n_total"] = 86,
+										["n_min"] = 86,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 86,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Kul Tiras Marine"] = 32,
+											["Lieutenant Benedict"] = 154,
+										},
+										["n_total"] = 186,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 186,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 14.13741841996526,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 50.004913,
+							["start_time"] = 1706721792,
+							["delay"] = 0,
+							["last_event"] = 1706721814,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004906,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 68.004906,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 68.004906,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Lieutenant Benedict"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 35,
+								["Lieutenant Benedict"] = 33,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721815,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kul Tiras Marine"] = 35,
+											["Lieutenant Benedict"] = 33,
+										},
+										["n_total"] = 47,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 68,
+										["c_max"] = 11,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 10,
+										["successful_casted"] = 0,
+										["c_total"] = 21,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.827646819128188,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 34.004906,
+							["start_time"] = 1706721792,
+							["delay"] = 0,
+							["last_event"] = 1706721813,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005493,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 84.005493,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 84.005493,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3192-00003A81C3",
+							["aID"] = "3192",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 50,
+								["Rupqua <Dopedot>"] = 34,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721815,
+							["nome"] = "Lieutenant Benedict",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopedot"] = 50,
+											["Rupqua <Dopedot>"] = 30,
+										},
+										["n_total"] = 80,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 80,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 9,
+										["r_amt"] = 0,
+									}, -- [1]
+									[72] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Rupqua <Dopedot>"] = 4,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 72,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3248] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 3248,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[7164] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 7164,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 187.005493,
+							["start_time"] = 1706721797,
+							["delay"] = 0,
+							["last_event"] = 1706721813,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002277,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002277,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002277,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00013A81EF",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721815,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 153.002277,
+							["start_time"] = 1706721815,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 495,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 495,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 44.008784,
+							["resource"] = 0.008784,
+							["targets"] = {
+								["Dopedot"] = 44,
+							},
+							["total"] = 44.008784,
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["flag_original"] = 1297,
+							["aID"] = "5826-024A22B1",
+							["totalover"] = 0.008784,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["alternatepower"] = 0.008784,
+							["passiveover"] = 0.008784,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31818] = {
+										["total"] = 44,
+										["id"] = 31818,
+										["totalover"] = 0,
+										["targets"] = {
+											["Dopedot"] = 44,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["tipo"] = 3,
+							["last_event"] = 1706721825,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 495,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 19,
+										["appliedamt"] = 1,
+										["refreshamt"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 42,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721815,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["interrupt"] = 1.005319,
+							["serial"] = "Creature-0-5250-1-3000-3192-00003A81C3",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[72] = {
+										["id"] = 72,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Rupqua"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3192",
+							["nome"] = "Lieutenant Benedict",
+							["interrupt_targets"] = {
+								["Rupqua"] = 1,
+							},
+							["last_event"] = 1706721803,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 495,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341897.89,
+				["tempo_start"] = 1706721792,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					424, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 44,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 6,
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 6,
+					},
+					["Lieutenant Benedict"] = {
+						["Shield Bash"] = 1,
+						["Improved Blocking"] = 1,
+						["Defensive Stance"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:23:36",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Lieutenant Benedict",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 24.04999999998836,
+				["CombatEndedAt"] = 341921.94,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:23:12",
+				["end_time"] = 341921.94,
+				["combat_id"] = 495,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+					["Lieutenant Benedict"] = 1,
+				},
+				["combat_counter"] = 539,
+				["totals_grupo"] = {
+					340, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 44,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 340.004913,
+							["Rupqua <Dopedot>"] = 68.004906,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341897.89,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [8]
+			{
+				{
+					["combatId"] = 494,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007877,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 156.007877,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 171.007877,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 171,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721773,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Kul Tiras Marine"] = 156,
+										},
+										["n_total"] = 156,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 156,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 17.47831939904543,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 28.007877,
+							["start_time"] = 1706721763,
+							["delay"] = 0,
+							["last_event"] = 1706721772,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001824,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 15.001824,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 15.001824,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 15,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721773,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kul Tiras Marine"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 1.53330171709146,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 2.001824,
+							["start_time"] = 1706721764,
+							["delay"] = 0,
+							["last_event"] = 1706721766,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001241,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 30.001241,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 30.001241,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81D2",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 28,
+								["Rupqua <Dopedot>"] = 2,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721773,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopedot"] = 28,
+										},
+										["n_total"] = 28,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Rupqua <Dopedot>"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 171.001241,
+							["start_time"] = 1706721766,
+							["delay"] = 0,
+							["last_event"] = 1706721771,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 494,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 494,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 494,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 20,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721773,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.004116,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81D2",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Rupqua"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Rupqua"] = 1,
+							},
+							["last_event"] = 1706721766,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 494,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["tempo_start"] = 1706721763,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					201, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 3,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:22:53",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341879.056,
+				["CombatEndedAt"] = 341879.056,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:22:44",
+				["end_time"] = 341879.056,
+				["combat_id"] = 494,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 538,
+				["totals_grupo"] = {
+					171, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 171.007877,
+							["Rupqua <Dopedot>"] = 15.001824,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341869.272,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [9]
+			{
+				{
+					["combatId"] = 493,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001208,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 117.001208,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 168.001208,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 168,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721754,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 4,
+										["targets"] = {
+											["Kul Tiras Marine"] = 6,
+										},
+										["n_total"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 2,
+										["counter"] = 2,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[686] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Kul Tiras Marine"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 686,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 86,
+										["targets"] = {
+											["Kul Tiras Marine"] = 86,
+										},
+										["n_total"] = 86,
+										["n_min"] = 86,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 86,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 10.48827618926083,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 10.001208,
+							["start_time"] = 1706721738,
+							["delay"] = 0,
+							["last_event"] = 1706721753,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005568,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 51.005568,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 51.005568,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 51,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721754,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 51,
+										},
+										["n_total"] = 51,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 51,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.184265701078317,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 48.005568,
+							["start_time"] = 1706721740,
+							["delay"] = 0,
+							["last_event"] = 1706721752,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00561,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 58.00561,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 58.00561,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81B8",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 10,
+								["Rupqua <Dopedot>"] = 48,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721754,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Dopedot"] = 8,
+											["Rupqua <Dopedot>"] = 48,
+										},
+										["n_total"] = 56,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 56,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Dopedot"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 168.00561,
+							["start_time"] = 1706721738,
+							["delay"] = 0,
+							["last_event"] = 1706721752,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 493,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 493,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 493,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[172] = {
+										["activedamt"] = 0,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 25,
+							["debuff_uptime"] = 5,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721754,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.001409,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A81B8",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Dopedot"] = 1,
+							},
+							["last_event"] = 1706721740,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 493,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341868.055,
+				["tempo_start"] = 1706721738,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					261, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Corruption"] = 1,
+						["Chaos Bolt"] = 1,
+						["Shadow Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 5,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:22:35",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 16.01800000004005,
+				["CombatEndedAt"] = 341860.405,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:22:19",
+				["end_time"] = 341860.405,
+				["combat_id"] = 493,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 537,
+				["totals_grupo"] = {
+					168, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 168.001208,
+							["Rupqua <Dopedot>"] = 51.005568,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341844.387,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [10]
+			{
+				{
+					["combatId"] = 492,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006114,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 94.006114,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 156.006114,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 156,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721735,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kul Tiras Marine"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[686] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Kul Tiras Marine"] = 28,
+										},
+										["n_total"] = 28,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = 686,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Kul Tiras Marine"] = 36,
+										},
+										["n_total"] = 36,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 9.873179798724511,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 41.006114,
+							["start_time"] = 1706721720,
+							["delay"] = 0,
+							["last_event"] = 1706721734,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00285,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 62.00285,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 62.00285,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 62,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721735,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kul Tiras Marine"] = 62,
+										},
+										["n_total"] = 50,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 62,
+										["c_max"] = 12,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 12,
+										["successful_casted"] = 0,
+										["c_total"] = 12,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.923982659316455,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 38.00285,
+							["start_time"] = 1706721720,
+							["delay"] = 0,
+							["last_event"] = 1706721734,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00105,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 86.00104999999999,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 86.00104999999999,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA81AC",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 41,
+								["Jiroshi"] = 7,
+								["Rupqua <Dopedot>"] = 38,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721738,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Dopedot"] = 39,
+											["Jiroshi"] = 7,
+											["Rupqua <Dopedot>"] = 38,
+										},
+										["n_total"] = 84,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 8,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Dopedot"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 156.00105,
+							["start_time"] = 1706721719,
+							["delay"] = 0,
+							["last_event"] = 1706721735,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 492,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 492,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 492,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[172] = {
+										["activedamt"] = 0,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 23,
+							["debuff_uptime"] = 10,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721735,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.001522,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA81AC",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Dopedot"] = 1,
+							},
+							["last_event"] = 1706721720,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 492,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["tempo_start"] = 1706721719,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					242, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Corruption"] = 1,
+						["Incinerate"] = 1,
+						["Shadow Bolt"] = 2,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 6,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:22:15",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341840.987,
+				["CombatEndedAt"] = 341840.987,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:21:59",
+				["end_time"] = 341840.987,
+				["combat_id"] = 492,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 536,
+				["totals_grupo"] = {
+					156, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 156.006114,
+							["Rupqua <Dopedot>"] = 62.00285,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341825.186,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["combatId"] = 491,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001621,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 165.001621,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 191.001621,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 191,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721703,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Kul Tiras Marine"] = 165,
+										},
+										["n_total"] = 165,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 165,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 20.24823714614793,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 38.001621,
+							["start_time"] = 1706721693,
+							["delay"] = 0,
+							["last_event"] = 1706721702,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00541,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 26.00541,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 26.00541,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 26,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721703,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kul Tiras Marine"] = 26,
+										},
+										["n_total"] = 15,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 26,
+										["c_max"] = 11,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 11,
+										["successful_casted"] = 0,
+										["c_total"] = 11,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.756854659169656,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 2.00541,
+							["start_time"] = 1706721693,
+							["delay"] = 0,
+							["last_event"] = 1706721698,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007311,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 40.007311,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 40.007311,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA810E",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 38,
+								["Rupqua <Dopedot>"] = 2,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721719,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopedot"] = 38,
+										},
+										["n_total"] = 38,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 38,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Rupqua <Dopedot>"] = 2,
+										},
+										["n_total"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 191.007311,
+							["start_time"] = 1706721696,
+							["delay"] = 0,
+							["last_event"] = 1706721717,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 491,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 491,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 132.005514,
+							["resource"] = 0.005514,
+							["targets"] = {
+								["Dopedot"] = 132,
+							},
+							["total"] = 132.005514,
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["flag_original"] = 1297,
+							["aID"] = "5826-024A22B1",
+							["totalover"] = 0.005514,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["alternatepower"] = 0.005514,
+							["passiveover"] = 0.005514,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31818] = {
+										["total"] = 132,
+										["id"] = 31818,
+										["totalover"] = 0,
+										["targets"] = {
+											["Dopedot"] = 132,
+										},
+										["counter"] = 6,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["tipo"] = 3,
+							["last_event"] = 1706721716,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 491,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 30,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721703,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.002589,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA810E",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Rupqua"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Rupqua"] = 1,
+							},
+							["last_event"] = 1706721699,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 491,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341823.102,
+				["tempo_start"] = 1706721693,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					490, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 132,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
 					["Dopedot"] = {
 						{
 							true, -- [1]
-							3, -- [2]
-							64, -- [3]
-							1706634476.979, -- [4]
-							168, -- [5]
-							"Environment (Falling)", -- [6]
+							1, -- [2]
+							9, -- [3]
+							1706721716.96, -- [4]
+							85, -- [5]
+							"Kul Tiras Marine", -- [6]
 							nil, -- [7]
-							3, -- [8]
+							1, -- [8]
 							false, -- [9]
 							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
 						}, -- [1]
 						{
-							true, -- [1]
-							3, -- [2]
-							68, -- [3]
-							1706634781.292, -- [4]
-							168, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [2]
 						{
-							true, -- [1]
-							3, -- [2]
-							1, -- [3]
-							1706634790.775, -- [4]
-							133, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
 						}, -- [3]
 						{
 						}, -- [4]
@@ -599,2322 +6078,8 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 4,
+						["n"] = 2,
 					},
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 3,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "18:02:54",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Decrepit Darkhound",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 254281.292,
-				["CombatEndedAt"] = 254281.292,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "18:02:45",
-				["end_time"] = 254281.292,
-				["combat_id"] = 413,
-				["frags"] = {
-					["Decrepit Darkhound"] = 1,
-				},
-				["combat_counter"] = 457,
-				["totals_grupo"] = {
-					124, -- [1]
-					18, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 18.008858,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 124.008712,
-							["Rupqua <Dopedot>"] = 27.001688,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 254271.743,
-				["contra"] = "Decrepit Darkhound",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 412,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 124.004937,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 147.004937,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Rotting Dead"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 147,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632341,
-							["totalabsorbed"] = 0.004937,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 34,
-										},
-										["n_total"] = 34,
-										["n_min"] = 34,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 34,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 90,
-										},
-										["n_total"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 90,
-										["c_max"] = 55,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 55,
-										["successful_casted"] = 0,
-										["c_total"] = 55,
-										["n_amt"] = 1,
-										["n_max"] = 35,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632340,
-							["damage_taken"] = 7.004937,
-							["start_time"] = 1706632333,
-							["delay"] = 0,
-							["last_dps"] = 18.41013613020932,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001001,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 23.001001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 23.001001,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Rotting Dead"] = 23,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632341,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 23,
-										},
-										["n_total"] = 23,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 23,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 8,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632339,
-							["damage_taken"] = 0.001001,
-							["start_time"] = 1706632335,
-							["delay"] = 0,
-							["last_dps"] = 2.880526111453526,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 7.008786,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 7.008786,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1525-0000391F07",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 7,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.008786,
-							["fight_component"] = true,
-							["end_time"] = 1706632341,
-							["aID"] = "1525",
-							["nome"] = "Rotting Dead",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 7,
-										},
-										["n_total"] = 7,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 7,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632338,
-							["damage_taken"] = 147.008786,
-							["start_time"] = 1706632338,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 412,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.003972,
-							["total_without_pet"] = 34.003972,
-							["total"] = 34.003972,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.003972,
-							["last_hps"] = 4.258481152152229,
-							["targets"] = {
-								["Dopedot"] = 34,
-							},
-							["totalover_without_pet"] = 0.003972,
-							["last_event"] = 1706632340,
-							["healing_taken"] = 34.003972,
-							["fight_component"] = true,
-							["end_time"] = 1706632341,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 34,
-										["targets"] = {
-											["Dopedot"] = 34,
-										},
-										["n_total"] = 34,
-										["n_min"] = 34,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 34,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632340,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003972,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 412,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 412,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632340,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 16,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 412758,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632341,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 412,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 254270.592,
-				["tempo_start"] = 1706632333,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["combat_counter"] = 456,
-				["playing_solo"] = true,
-				["totals"] = {
-					154, -- [1]
-					34, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					147, -- [1]
-					34, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:32:21",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Rotting Dead",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252448.252,
-				["CombatEndedAt"] = 252448.252,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 34.003972,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 147.004937,
-							["Rupqua <Dopedot>"] = 23.001001,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252448.252,
-				["combat_id"] = 412,
-				["spells_cast_timeline"] = {
-				},
-				["contra"] = "Rotting Dead",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "17:32:13",
-				["start_time"] = 252440.267,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Rotting Dead"] = 1,
-				},
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 122.007571,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 159.007571,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Ravaged Corpse"] = true,
-							},
-							["targets"] = {
-								["Ravaged Corpse"] = 159,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632322,
-							["totalabsorbed"] = 0.007571,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Ravaged Corpse"] = 51,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 51,
-										["c_max"] = 51,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 51,
-										["successful_casted"] = 0,
-										["c_total"] = 51,
-										["n_amt"] = 0,
-										["n_max"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Ravaged Corpse"] = 71,
-										},
-										["n_total"] = 71,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 71,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 36,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632322,
-							["damage_taken"] = 32.007571,
-							["start_time"] = 1706632313,
-							["delay"] = 0,
-							["last_dps"] = 16.50654738918022,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008438,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 37.008438,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 37.008438,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Ravaged Corpse"] = 37,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632322,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Ravaged Corpse"] = 37,
-										},
-										["n_total"] = 37,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 37,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632321,
-							["damage_taken"] = 0.008438,
-							["start_time"] = 1706632313,
-							["delay"] = 0,
-							["last_dps"] = 3.841839302397357,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 32.005378,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 32.005378,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 32,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.005378,
-							["fight_component"] = true,
-							["end_time"] = 1706632322,
-							["aID"] = "1526",
-							["nome"] = "Ravaged Corpse",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 24,
-										},
-										["n_total"] = 24,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3234] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 3234,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 8,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632321,
-							["damage_taken"] = 159.005378,
-							["start_time"] = 1706632316,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 2,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 2.006709,
-							["total_without_pet"] = 49.006709,
-							["total"] = 49.006709,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.006709,
-							["last_hps"] = 5.087377660125787,
-							["targets"] = {
-								["Dopedot"] = 49,
-							},
-							["totalover_without_pet"] = 0.006709,
-							["last_event"] = 1706632322,
-							["healing_taken"] = 49.006709,
-							["fight_component"] = true,
-							["end_time"] = 1706632322,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 2,
-										},
-										["n_max"] = 49,
-										["targets"] = {
-											["Dopedot"] = 49,
-										},
-										["n_total"] = 49,
-										["n_min"] = 49,
-										["counter"] = 1,
-										["overheal"] = 2,
-										["total"] = 49,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632322,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006709,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.007227,
-							["pets"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.007227,
-							["total"] = 100.007227,
-							["serial"] = "Player-5826-024A22B1",
-							["received"] = 100.007227,
-							["targets"] = {
-								["Dopedot"] = 100,
-							},
-							["powertype"] = 0,
-							["alternatepower"] = 0.007227,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 100,
-										["totalover"] = 0,
-										["id"] = 31818,
-										["targets"] = {
-											["Dopedot"] = 100,
-										},
-										["counter"] = 5,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["passiveover"] = 0.007227,
-							["tipo"] = 3,
-							["last_event"] = 1706632330,
-							["fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632322,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 18,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 412758,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632322,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Ravaged Corpse",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
-							["aID"] = "1526",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252438.934,
-				["tempo_start"] = 1706632313,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					191, -- [1]
-					49, -- [2]
-					{
-						0, -- [1]
-						[0] = 100,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					159, -- [1]
-					49, -- [2]
-					{
-						0, -- [1]
-						[0] = 100,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-						["Life Tap"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 3,
-					},
-					["Ravaged Corpse"] = {
-						["Disease Touch"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:32:03",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ravaged Corpse",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252430.35,
-				["CombatEndedAt"] = 252430.35,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 49.006709,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 159.007571,
-							["Rupqua <Dopedot>"] = 37.008438,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252430.35,
-				["combat_id"] = 411,
-				["frags"] = {
-					["Ravaged Corpse"] = 1,
-				},
-				["combat_counter"] = 455,
-				["contra"] = "Ravaged Corpse",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252420.717,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:31:54",
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 106.00344,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 123.00344,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Rotting Dead"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 123,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632307,
-							["totalabsorbed"] = 0.00344,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 35,
-										},
-										["n_total"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 35,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 71,
-										},
-										["n_total"] = 71,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 71,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 36,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632306,
-							["damage_taken"] = 11.00344,
-							["start_time"] = 1706632300,
-							["delay"] = 0,
-							["last_dps"] = 17.91486163702845,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002708,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 17.002708,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 17.002708,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Rotting Dead"] = 17,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632307,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632304,
-							["damage_taken"] = 0.002708,
-							["start_time"] = 1706632302,
-							["delay"] = 0,
-							["last_dps"] = 2.47636294785574,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 11.007469,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 11.007469,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1525-0000391F2C",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 11,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.007469,
-							["fight_component"] = true,
-							["end_time"] = 1706632307,
-							["aID"] = "1525",
-							["nome"] = "Rotting Dead",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 6,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632306,
-							["damage_taken"] = 123.007469,
-							["start_time"] = 1706632304,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 26,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 26.008471,
-							["total_without_pet"] = 9.008471,
-							["total"] = 9.008471,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.008471,
-							["last_hps"] = 1.312040635011373,
-							["targets"] = {
-								["Dopedot"] = 9,
-							},
-							["totalover_without_pet"] = 0.008471,
-							["last_event"] = 1706632306,
-							["healing_taken"] = 9.008471,
-							["fight_component"] = true,
-							["end_time"] = 1706632307,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 26,
-										},
-										["n_max"] = 9,
-										["targets"] = {
-											["Dopedot"] = 9,
-										},
-										["n_total"] = 9,
-										["n_min"] = 9,
-										["counter"] = 1,
-										["overheal"] = 26,
-										["total"] = 9,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632306,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.008471,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632306,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 14,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = 412758,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632307,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252419.384,
-				["tempo_start"] = 1706632300,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					134, -- [1]
-					9, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					123, -- [1]
-					9, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:31:48",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Rotting Dead",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252414.616,
-				["CombatEndedAt"] = 252414.616,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 9.008471,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 123.00344,
-							["Rupqua <Dopedot>"] = 17.002708,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252414.616,
-				["combat_id"] = 410,
-				["frags"] = {
-					["Rotting Dead"] = 1,
-				},
-				["combat_counter"] = 454,
-				["contra"] = "Rotting Dead",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252407.75,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:31:41",
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 134.005275,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 166.005275,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Rotting Dead"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 166,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632297,
-							["totalabsorbed"] = 0.005275,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 33,
-										},
-										["n_total"] = 33,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 33,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 101,
-										},
-										["n_total"] = 101,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 101,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 36,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632296,
-							["damage_taken"] = 26.005275,
-							["start_time"] = 1706632286,
-							["delay"] = 0,
-							["last_dps"] = 14.90976064308742,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001441,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 32.001441,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 32.001441,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Rotting Dead"] = 32,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632297,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632294,
-							["damage_taken"] = 0.001441,
-							["start_time"] = 1706632288,
-							["delay"] = 0,
-							["last_dps"] = 2.874208819833492,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 26.004166,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 26.004166,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 26,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.004166,
-							["fight_component"] = true,
-							["end_time"] = 1706632297,
-							["aID"] = "1525",
-							["nome"] = "Rotting Dead",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 22,
-										},
-										["n_total"] = 22,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 8,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3234] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 4,
-										},
-										["n_total"] = 4,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = 3234,
-										["r_dmg"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 4,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632294,
-							["damage_taken"] = 166.004166,
-							["start_time"] = 1706632290,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 10,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 10.002363,
-							["total_without_pet"] = 23.002363,
-							["total"] = 23.002363,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.002363,
-							["last_hps"] = 2.065956798995757,
-							["targets"] = {
-								["Dopedot"] = 23,
-							},
-							["totalover_without_pet"] = 0.002363,
-							["last_event"] = 1706632296,
-							["healing_taken"] = 23.002363,
-							["fight_component"] = true,
-							["end_time"] = 1706632297,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 10,
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Dopedot"] = 23,
-										},
-										["n_total"] = 23,
-										["n_min"] = 23,
-										["counter"] = 1,
-										["overheal"] = 10,
-										["total"] = 23,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632296,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002363,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632296,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 22,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 11,
-										["id"] = 412758,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632297,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Rotting Dead",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
-							["aID"] = "1525",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252406.415,
-				["tempo_start"] = 1706632286,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					192, -- [1]
-					23, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					166, -- [1]
-					23, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -2922,532 +6087,40 @@ _detalhes_database = {
 						["Incinerate"] = 3,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Rotting Dead"] = {
-						["Disease Touch"] = 1,
+						["Firebolt"] = 1,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "17:31:37",
+				["data_fim"] = "18:21:43",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Rotting Dead",
+				["enemy"] = "Kul Tiras Marine",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 252404.5,
-				["CombatEndedAt"] = 252404.5,
+				["TotalElapsedCombatTime"] = 341808.619,
+				["CombatEndedAt"] = 341808.619,
 				["aura_timeline"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 23.002363,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 166.005275,
-							["Rupqua <Dopedot>"] = 32.001441,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252404.5,
-				["combat_id"] = 409,
+				["data_inicio"] = "18:21:33",
+				["end_time"] = 341808.619,
+				["combat_id"] = 491,
 				["frags"] = {
-					["Rotting Dead"] = 1,
+					["Kul Tiras Marine"] = 1,
 				},
-				["combat_counter"] = 453,
-				["contra"] = "Rotting Dead",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252393.366,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:31:26",
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 95.00411299999999,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 113.004113,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Rotting Dead"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 113,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632280,
-							["totalabsorbed"] = 0.004113,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 32,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 63,
-										},
-										["n_total"] = 63,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 36,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632279,
-							["damage_taken"] = 6.004113,
-							["start_time"] = 1706632272,
-							["delay"] = 0,
-							["last_dps"] = 14.4248293337226,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004911,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 18.004911,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 18.004911,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Rotting Dead"] = 18,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632280,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632276,
-							["damage_taken"] = 0.004911,
-							["start_time"] = 1706632274,
-							["delay"] = 0,
-							["last_dps"] = 2.298303676290657,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 6.008484,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 6.008484,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1525-00003922F1",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 6,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.008484,
-							["fight_component"] = true,
-							["end_time"] = 1706632280,
-							["aID"] = "1525",
-							["nome"] = "Rotting Dead",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 6,
-										},
-										["n_total"] = 6,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 6,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 6,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632277,
-							["damage_taken"] = 113.008484,
-							["start_time"] = 1706632277,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 27,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 27.006298,
-							["total_without_pet"] = 5.006298,
-							["total"] = 5.006298,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.006298,
-							["last_hps"] = 0.6390474853225635,
-							["targets"] = {
-								["Dopedot"] = 5,
-							},
-							["totalover_without_pet"] = 0.006298,
-							["last_event"] = 1706632279,
-							["healing_taken"] = 5.006298,
-							["fight_component"] = true,
-							["end_time"] = 1706632280,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 27,
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Dopedot"] = 5,
-										},
-										["n_total"] = 5,
-										["n_min"] = 5,
-										["counter"] = 1,
-										["overheal"] = 27,
-										["total"] = 5,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632279,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006298,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632279,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 13,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632280,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252391.782,
-				["tempo_start"] = 1706632272,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					119, -- [1]
-					5, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
+				["combat_counter"] = 535,
 				["totals_grupo"] = {
-					113, -- [1]
-					5, -- [2]
+					191, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 0,
+						[0] = 132,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3455,951 +6128,91 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:31:21",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Rotting Dead",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252387.949,
-				["CombatEndedAt"] = 252387.949,
-				["aura_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Dopedot"] = 5.006298,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Dopedot"] = 113.004113,
-							["Rupqua <Dopedot>"] = 18.004911,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252387.949,
-				["combat_id"] = 408,
-				["frags"] = {
-					["Rotting Dead"] = 1,
-				},
-				["combat_counter"] = 452,
-				["contra"] = "Rotting Dead",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252380.115,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:31:13",
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 235.005368,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 300.005368,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Rotting Dead"] = true,
-								["Ravaged Corpse"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 135,
-								["Ravaged Corpse"] = 165,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632255,
-							["totalabsorbed"] = 0.005368,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 32,
-											["Ravaged Corpse"] = 35,
-										},
-										["n_total"] = 67,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 67,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 35,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 96,
-											["Ravaged Corpse"] = 72,
-										},
-										["n_total"] = 168,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 168,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["n_max"] = 36,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632254,
-							["damage_taken"] = 118.005368,
-							["start_time"] = 1706632229,
-							["delay"] = 0,
-							["last_dps"] = 11.5760676030263,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005817,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 65.00581700000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 65.00581700000001,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-								["Ravaged Corpse"] = true,
-							},
-							["targets"] = {
-								["Rotting Dead"] = 7,
-								["Ravaged Corpse"] = 58,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632255,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rotting Dead"] = 7,
-											["Ravaged Corpse"] = 58,
-										},
-										["n_total"] = 65,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 65,
-										["c_max"] = 0,
-										["spellschool"] = 4,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 8,
-										["n_max"] = 10,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632252,
-							["damage_taken"] = 24.005817,
-							["start_time"] = 1706632231,
-							["delay"] = 0,
-							["last_dps"] = 2.508327558265413,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 99.00435,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 99.00435,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1526-0000391DB9",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 75,
-								["Rupqua <Dopedot>"] = 24,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.00435,
-							["fight_component"] = true,
-							["end_time"] = 1706632255,
-							["aID"] = "1526",
-							["nome"] = "Ravaged Corpse",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 66,
-											["Rupqua <Dopedot>"] = 15,
-										},
-										["n_total"] = 81,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 81,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 11,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3234] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 9,
-											["Rupqua <Dopedot>"] = 9,
-										},
-										["n_total"] = 18,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 3234,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632253,
-							["damage_taken"] = 165.00435,
-							["start_time"] = 1706632231,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 43.001592,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 43.001592,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1525-0000391E02",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 43,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.001592,
-							["fight_component"] = true,
-							["end_time"] = 1706632255,
-							["aID"] = "1525",
-							["nome"] = "Rotting Dead",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 36,
-										},
-										["n_total"] = 36,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["n_max"] = 8,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3234] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 7,
-										},
-										["n_total"] = 7,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 7,
-										["c_max"] = 0,
-										["id"] = 3234,
-										["r_dmg"] = 7,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 7,
-										["r_amt"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632249,
-							["damage_taken"] = 135.001592,
-							["start_time"] = 1706632240,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002816,
-							["total_without_pet"] = 65.002816,
-							["total"] = 65.002816,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.002816,
-							["last_hps"] = 2.508211761074488,
-							["targets"] = {
-								["Dopedot"] = 65,
-							},
-							["totalover_without_pet"] = 0.002816,
-							["last_event"] = 1706632250,
-							["healing_taken"] = 119.002816,
-							["fight_component"] = true,
-							["end_time"] = 1706632255,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 34,
-										["targets"] = {
-											["Dopedot"] = 65,
-										},
-										["n_total"] = 65,
-										["n_min"] = 31,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 65,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-								["Hollyorsh"] = true,
-							},
-							["start_time"] = 1706632241,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002816,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-						{
-							["flag_original"] = 1304,
-							["targets_overheal"] = {
-								["Dopedot"] = 43,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "UNGROUPPLAYER",
-							["totalover"] = 43.003431,
-							["total_without_pet"] = 54.003431,
-							["total"] = 54.003431,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-5826-02503328",
-							["totalabsorb"] = 0.003431,
-							["last_hps"] = 0,
-							["targets"] = {
-								["Dopedot"] = 54,
-							},
-							["totalover_without_pet"] = 0.003431,
-							["healing_taken"] = 0.003431,
-							["start_time"] = 1706632251,
-							["healing_from"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1706632255,
-							["nome"] = "Hollyorsh",
-							["spells"] = {
-								["_ActorTable"] = {
-									[2050] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 43,
-										},
-										["n_max"] = 48,
-										["targets"] = {
-											["Dopedot"] = 54,
-										},
-										["n_total"] = 54,
-										["n_min"] = 6,
-										["counter"] = 2,
-										["overheal"] = 43,
-										["total"] = 54,
-										["spellschool"] = 2,
-										["id"] = 2050,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["aID"] = "5826-02503328",
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003431,
-							["delay"] = 1706632241,
-							["last_event"] = 1706632251,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = -1,
-										["uptime"] = 14,
-										["id"] = 403501,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 47,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 26,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 21,
-										["id"] = 412758,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 14,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632255,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Ravaged Corpse",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5253-0-5359-1526-0000391DB9",
-							["aID"] = "1526",
-						}, -- [3]
-						{
-							["flag_original"] = 1304,
-							["pets"] = {
-							},
-							["aID"] = "5826-02503328",
-							["fight_component"] = true,
-							["nome"] = "Hollyorsh",
-							["classe"] = "UNGROUPPLAYER",
-							["tipo"] = 4,
-							["serial"] = "Player-5826-02503328",
-							["last_event"] = 0,
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Rotting Dead",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5253-0-5359-1525-0000391E02",
-							["aID"] = "1525",
-						}, -- [5]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252378.998,
-				["tempo_start"] = 1706632229,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					442, -- [1]
-					119, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					300, -- [1]
-					65, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 5,
-						["Haunt"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 8,
-					},
-					["Hollyorsh"] = {
-						["Power Word: Fortitude"] = 1,
-						["Lesser Heal"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-					["Rotting Dead"] = {
-						["Disease Touch"] = 1,
-					},
-					["Ravaged Corpse"] = {
-						["Disease Touch"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:30:55",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ravaged Corpse",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252362.447,
-				["CombatEndedAt"] = 252362.447,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
 					["damage_section"] = {
 					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 65.002816,
-						}, -- [1]
-					},
 					["damage"] = {
 						{
-							["Dopedot"] = 300.005368,
-							["Rupqua <Dopedot>"] = 65.00581700000001,
+							["Dopedot"] = 191.001621,
+							["Rupqua <Dopedot>"] = 26.00541,
 						}, -- [1]
 					},
-				},
-				["end_time"] = 252362.447,
-				["combat_id"] = 407,
-				["frags"] = {
-					["Rotting Dead"] = 1,
-					["Ravaged Corpse"] = 1,
-				},
-				["combat_counter"] = 451,
-				["contra"] = "Ravaged Corpse",
-				["player_last_events"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 252336.531,
+				["start_time"] = 341799.186,
+				["contra"] = "Kul Tiras Marine",
 				["TimeData"] = {
 				},
-				["data_inicio"] = "17:30:30",
-			}, -- [7]
+			}, -- [12]
 			{
 				{
+					["combatId"] = 490,
 					["tipo"] = 2,
-					["combatId"] = 406,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007667,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 98.001064,
+							["total_without_pet"] = 160.007667,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 122.001064,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["total"] = 169.007667,
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Decrepit Darkhound"] = true,
 							},
 							["targets"] = {
-								["Decrepit Darkhound"] = 122,
+								["Kul Tiras Marine"] = 169,
 							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706632181,
-							["totalabsorbed"] = 0.001064,
-							["aID"] = "5826-024A22B1",
+							["end_time"] = 1706721688,
 							["nome"] = "Dopedot",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									[403501] = {
+									[403629] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 96,
 										["targets"] = {
-											["Decrepit Darkhound"] = 34,
+											["Kul Tiras Marine"] = 96,
 										},
-										["n_total"] = 34,
-										["n_min"] = 34,
+										["n_total"] = 96,
+										["n_min"] = 96,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 34,
+										["total"] = 96,
 										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 34,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Decrepit Darkhound"] = 64,
-										},
-										["n_total"] = 64,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 412758,
+										["id"] = 403629,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -4409,2224 +6222,24 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 35,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632179,
-							["damage_taken"] = 12.001064,
-							["start_time"] = 1706632173,
-							["delay"] = 0,
-							["last_dps"] = 15.06371947156308,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008135,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 24.008135,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 24.008135,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Decrepit Darkhound"] = 24,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706632181,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Decrepit Darkhound"] = 24,
-										},
-										["n_total"] = 24,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632179,
-							["damage_taken"] = 0.008135,
-							["start_time"] = 1706632175,
-							["delay"] = 0,
-							["last_dps"] = 2.964333251023246,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 12.001211,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 12.001211,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1547-0000392388",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 12,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.001211,
-							["fight_component"] = true,
-							["end_time"] = 1706632181,
-							["aID"] = "1547",
-							["nome"] = "Decrepit Darkhound",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 12,
-										},
-										["n_total"] = 12,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 6,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706632178,
-							["damage_taken"] = 122.001211,
-							["start_time"] = 1706632176,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 406,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 23,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 23.00531,
-							["total_without_pet"] = 11.00531,
-							["total"] = 11.00531,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.00531,
-							["last_hps"] = 1.358848005928767,
-							["targets"] = {
-								["Dopedot"] = 11,
-							},
-							["totalover_without_pet"] = 0.00531,
-							["last_event"] = 1706632179,
-							["healing_taken"] = 11.00531,
-							["fight_component"] = true,
-							["end_time"] = 1706632181,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 23,
-										},
-										["n_max"] = 11,
-										["targets"] = {
-											["Dopedot"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 11,
-										["counter"] = 1,
-										["overheal"] = 23,
-										["total"] = 11,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
 										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706632179,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00531,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 406,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 406,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706632179,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 14,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706632181,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 406,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252335.73,
-				["tempo_start"] = 1706632173,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					134, -- [1]
-					11, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					122, -- [1]
-					11, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:29:41",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Decrepit Darkhound",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252287.927,
-				["CombatEndedAt"] = 252287.927,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 11.00531,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 122.001064,
-							["Rupqua <Dopedot>"] = 24.008135,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252287.927,
-				["combat_id"] = 406,
-				["frags"] = {
-					["Decrepit Darkhound"] = 1,
-				},
-				["combat_counter"] = 450,
-				["contra"] = "Decrepit Darkhound",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252279.828,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:29:33",
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 405,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 88.002028,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 117.002028,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Meven Korgal"] = true,
-							},
-							["targets"] = {
-								["Meven Korgal"] = 117,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631964,
-							["totalabsorbed"] = 0.002028,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
 										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 29,
-										},
-										["n_total"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 29,
 										["r_amt"] = 0,
 									},
 									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 59,
-										},
-										["n_total"] = 59,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 59,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 32,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631963,
-							["damage_taken"] = 5.002028,
-							["start_time"] = 1706631956,
-							["delay"] = 0,
-							["last_dps"] = 14.77671482696695,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004129,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 29.004129,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 29.004129,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Meven Korgal"] = 29,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631964,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 29,
-										},
-										["n_total"] = 18,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 29,
-										["c_max"] = 11,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 11,
-										["successful_casted"] = 0,
-										["c_total"] = 11,
-										["n_amt"] = 2,
-										["n_max"] = 10,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631963,
-							["damage_taken"] = 0.004129,
-							["start_time"] = 1706631959,
-							["delay"] = 0,
-							["last_dps"] = 3.663062515784445,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 5.001724,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 5.001724,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1667-00003922BD",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 5,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.001724,
-							["fight_component"] = true,
-							["end_time"] = 1706631964,
-							["aID"] = "1667",
-							["nome"] = "Meven Korgal",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 5,
-										},
-										["n_total"] = 5,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 5,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631961,
-							["damage_taken"] = 117.001724,
-							["start_time"] = 1706631961,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 405,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 24,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 24.00452,
-							["total_without_pet"] = 5.00452,
-							["total"] = 5.00452,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.00452,
-							["last_hps"] = 0.6320434453140645,
-							["targets"] = {
-								["Dopedot"] = 5,
-							},
-							["totalover_without_pet"] = 0.00452,
-							["last_event"] = 1706631963,
-							["healing_taken"] = 5.00452,
-							["fight_component"] = true,
-							["end_time"] = 1706631964,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 24,
-										},
-										["n_max"] = 5,
-										["targets"] = {
-											["Dopedot"] = 5,
-										},
-										["n_total"] = 5,
-										["n_min"] = 5,
-										["counter"] = 1,
-										["overheal"] = 24,
-										["total"] = 5,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706631963,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00452,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 405,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["resource"] = 0.008949,
-							["targets"] = {
-								["Dopedot"] = 0,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["aID"] = "5826-024A22B1",
-							["passiveover"] = 0.008949,
-							["total"] = 0.008949,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 0,
-										["totalover"] = 20,
-										["id"] = 31818,
-										["targets"] = {
-											["Dopedot"] = 0,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["received"] = 0.008949,
-							["classe"] = "WARLOCK",
-							["last_event"] = 1706632021,
-							["totalover"] = 20.008949,
-							["alternatepower"] = 0.008949,
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 405,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631963,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 13,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631964,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 405,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252278.546,
-				["tempo_start"] = 1706631956,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					314, -- [1]
-					5, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					117, -- [1]
-					5, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:26:04",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Meven Korgal",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252071.353,
-				["CombatEndedAt"] = 252071.353,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 5.00452,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 117.002028,
-							["Rupqua <Dopedot>"] = 29.004129,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252071.353,
-				["combat_id"] = 405,
-				["frags"] = {
-					["Meven Korgal"] = 1,
-				},
-				["combat_counter"] = 449,
-				["contra"] = "Meven Korgal",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 252063.435,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:25:56",
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 404,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 29.004005,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 45.004005,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Wretched Zombie"] = true,
-							},
-							["targets"] = {
-								["Wretched Zombie"] = 45,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631946,
-							["totalabsorbed"] = 0.004005,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Wretched Zombie"] = 29,
-										},
-										["n_total"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 29,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631934,
-							["damage_taken"] = 6.004004999999999,
-							["start_time"] = 1706631939,
-							["delay"] = 1706631934,
-							["last_dps"] = 2.470439973650417,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005379,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 16.005379,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.005379,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Wretched Zombie"] = 16,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631946,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Wretched Zombie"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631934,
-							["damage_taken"] = 0.005379,
-							["start_time"] = 1706631942,
-							["delay"] = 1706631934,
-							["last_dps"] = 0.8785957621999405,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 6.008019,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 6.008019,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1502-00003922E1",
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 6,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["aID"] = "1502",
-							["fight_component"] = true,
-							["end_time"] = 1706631946,
-							["totalabsorbed"] = 0.008019,
-							["nome"] = "Wretched Zombie",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 6,
-										},
-										["n_total"] = 6,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 6,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 2,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631934,
-							["damage_taken"] = 45.008019,
-							["start_time"] = 1706631941,
-							["delay"] = 1706631934,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 404,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 30,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 30.002931,
-							["total_without_pet"] = 0.002931,
-							["total"] = 0.002931,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.002931,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002931,
-							["healing_taken"] = 0.002931,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1706631946,
-							["last_event"] = 1706631940,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 30,
-										},
 										["n_max"] = 0,
 										["targets"] = {
-											["Dopedot"] = 0,
+											["Kul Tiras Marine"] = 64,
 										},
 										["n_total"] = 0,
 										["n_min"] = 0,
+										["g_dmg"] = 0,
 										["counter"] = 1,
-										["overheal"] = 30,
-										["total"] = 0,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002931,
-							["delay"] = 0,
-							["start_time"] = 1706631940,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 404,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 404,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631940,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["buff_uptime"] = 18,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 18,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Dopedot",
-							["last_event"] = 1706631946,
-							["aID"] = "5826-024A22B1",
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 404,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252061.969,
-				["tempo_start"] = 1706631928,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["combat_counter"] = 448,
-				["playing_solo"] = true,
-				["totals"] = {
-					130, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["amountCasts"] = {
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:25:47",
-				["pvp"] = true,
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Wretched Zombie",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 252053.519,
-				["CombatEndedAt"] = 252053.519,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 0.002931,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 45.004005,
-							["Rupqua <Dopedot>"] = 16.005379,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 252053.519,
-				["combat_id"] = 404,
-				["frags"] = {
-				},
-				["totals_grupo"] = {
-					45, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["data_inicio"] = "17:25:28",
-				["start_time"] = 252035.302,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 403,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 112.003718,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 176.003718,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Scarlet Initiate"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 71,
-								["Scarlet Initiate"] = 105,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631878,
-							["totalabsorbed"] = 0.003718,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 27,
-											["Scarlet Initiate"] = 28,
-										},
-										["n_total"] = 55,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 55,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 28,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 30,
-											["Scarlet Initiate"] = 27,
-										},
-										["n_total"] = 57,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 30,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631878,
-							["damage_taken"] = 19.003718,
-							["start_time"] = 1706631858,
-							["delay"] = 0,
-							["last_dps"] = 8.447908130938771,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004801,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 64.004801,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 64.004801,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-								["Scarlet Convert"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 14,
-								["Scarlet Initiate"] = 50,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631878,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 14,
-											["Scarlet Initiate"] = 50,
-										},
-										["n_total"] = 64,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 8,
 										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 8,
-										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631878,
-							["damage_taken"] = 8.004801,
-							["start_time"] = 1706631860,
-							["delay"] = 0,
-							["last_dps"] = 3.07213213977115,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 19.008986,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 19.008986,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1507-000039228C",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 19,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.008986,
-							["fight_component"] = true,
-							["end_time"] = 1706631878,
-							["aID"] = "1507",
-							["nome"] = "Scarlet Initiate",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20793] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 20793,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 7,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631869,
-							["damage_taken"] = 105.008986,
-							["start_time"] = 1706631861,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 8.005026,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 8.005026,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-00003922B8",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Rupqua <Dopedot>"] = 8,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.005026,
-							["fight_component"] = true,
-							["end_time"] = 1706631878,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 8,
-										},
-										["n_total"] = 8,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 3,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631874,
-							["damage_taken"] = 71.005026,
-							["start_time"] = 1706631870,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 403,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 42,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 42.007546,
-							["total_without_pet"] = 13.007546,
-							["total"] = 13.007546,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.007546,
-							["last_hps"] = 0.6243422290485937,
-							["targets"] = {
-								["Dopedot"] = 13,
-							},
-							["totalover_without_pet"] = 0.007546,
-							["last_event"] = 1706631878,
-							["healing_taken"] = 13.007546,
-							["fight_component"] = true,
-							["end_time"] = 1706631878,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 42,
-										},
-										["n_max"] = 13,
-										["targets"] = {
-											["Dopedot"] = 13,
-										},
-										["n_total"] = 13,
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 42,
-										["total"] = 13,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706631870,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.007546,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 403,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 403,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = -1,
-										["uptime"] = 8,
-										["id"] = 403501,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 35,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 20,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 15,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 8,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631878,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["nome"] = "Scarlet Initiate",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5253-0-5359-1507-000039228C",
-							["aID"] = "1507",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 403,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 252034.585,
-				["tempo_start"] = 1706631858,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					794, -- [1]
-					13, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					176, -- [1]
-					13, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-						["Haunt"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 7,
-					},
-					["Scarlet Initiate"] = {
-						["Fireball"] = 3,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:24:39",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Initiate",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251986.332,
-				["CombatEndedAt"] = 251986.332,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 13.007546,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 176.003718,
-							["Rupqua <Dopedot>"] = 64.004801,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 251986.332,
-				["combat_id"] = 403,
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-					["Scarlet Initiate"] = 1,
-				},
-				["combat_counter"] = 447,
-				["contra"] = "Scarlet Initiate",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 251965.498,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:24:18",
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 402,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 100.004642,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 119.004642,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Meven Korgal"] = true,
-							},
-							["targets"] = {
-								["Meven Korgal"] = 119,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631853,
-							["totalabsorbed"] = 0.004642,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 100,
-										},
-										["n_total"] = 100,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 100,
-										["c_max"] = 0,
+										["c_max"] = 64,
 										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -6634,69 +6247,69 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 64,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 34,
+										["c_total"] = 64,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 53.38208054380617,
 							["custom"] = 0,
-							["last_event"] = 1706631852,
-							["damage_taken"] = 17.004642,
-							["start_time"] = 1706631839,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007667,
+							["start_time"] = 1706721685,
 							["delay"] = 0,
-							["last_dps"] = 9.072550278265973,
+							["last_event"] = 1706721687,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006846,
+							["totalabsorbed"] = 0.001888,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 19.006846,
+							["total_without_pet"] = 9.001888,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 19.006846,
+							["total"] = 9.001888,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Meven Korgal"] = 19,
+								["Kul Tiras Marine"] = 9,
 							},
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706631853,
-							["aID"] = "416",
+							["end_time"] = 1706721688,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									[3110] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 9,
 										["targets"] = {
-											["Meven Korgal"] = 19,
+											["Kul Tiras Marine"] = 9,
 										},
-										["n_total"] = 8,
-										["n_min"] = 8,
+										["n_total"] = 9,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 11,
+										["counter"] = 1,
+										["total"] = 9,
+										["c_max"] = 0,
 										["id"] = 3110,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -6704,70 +6317,69 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 11,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 11,
+										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 8,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.843300063199631,
 							["custom"] = 0,
-							["last_event"] = 1706631850,
-							["damage_taken"] = 0.006846,
-							["start_time"] = 1706631847,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001888,
+							["start_time"] = 1706721686,
 							["delay"] = 0,
-							["last_dps"] = 1.449023862163785,
+							["last_event"] = 1706721686,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001207,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 17.00186,
+							["total_without_pet"] = 0.001207,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 17.00186,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1667-0000392283",
+							["dps_started"] = false,
+							["total"] = 0.001207,
 							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A814C",
+							["aID"] = "3129",
+							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
+								["Jiroshi"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 17,
 							},
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["totalabsorbed"] = 0.00186,
-							["fight_component"] = true,
-							["end_time"] = 1706631853,
-							["aID"] = "1667",
-							["nome"] = "Meven Korgal",
+							["end_time"] = 1706721688,
+							["nome"] = "Kul Tiras Marine",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
-											["Dopedot"] = 17,
+											["Jiroshi"] = 0,
 										},
-										["n_total"] = 17,
-										["n_min"] = 5,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 17,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -6780,101 +6392,98 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 6,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
-								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631850,
-							["damage_taken"] = 119.00186,
-							["start_time"] = 1706631845,
-							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 224.001207,
+							["start_time"] = 1706721688,
+							["delay"] = 0,
+							["last_event"] = 1706721686,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 490,
 					["tipo"] = 3,
-					["combatId"] = 402,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 490,
 					["tipo"] = 7,
-					["combatId"] = 402,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 490,
 					["tipo"] = 9,
-					["combatId"] = 402,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
 							},
+							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
-							["aID"] = "5826-024A22B1",
+							["classe"] = "WARLOCK",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
 										["targets"] = {
 										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
 										["activedamt"] = 1,
-										["uptime"] = 13,
 										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[412758] = {
-										["appliedamt"] = 1,
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 13,
-										["id"] = 412758,
-										["refreshamt"] = 2,
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
+							["buff_uptime"] = 9,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["grupo"] = true,
-							["buff_uptime"] = 26,
+							["last_event"] = 1706721688,
 							["tipo"] = 4,
-							["classe"] = "WARLOCK",
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631853,
 						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 490,
 					["tipo"] = 2,
-					["combatId"] = 402,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6884,8 +6493,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 251964.581,
-				["tempo_start"] = 1706631839,
+				["CombatStartedAt"] = 341798.185,
+				["tempo_start"] = 1706721685,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -6897,7 +6506,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					136, -- [1]
+					224, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6909,18 +6518,45 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:21:28",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341794.034,
+				["CombatEndedAt"] = 341794.034,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:21:25",
+				["end_time"] = 341794.034,
+				["combat_id"] = 490,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 534,
 				["totals_grupo"] = {
-					119, -- [1]
+					169, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6932,13 +6568,1461 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 169.007667,
+							["Rupqua <Dopedot>"] = 9.001888,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341790.868,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [13]
+			{
+				{
+					["combatId"] = 489,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006013,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 121.006013,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 164.006013,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 164,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721678,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kul Tiras Marine"] = 2,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 2,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[686] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Kul Tiras Marine"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 686,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Kul Tiras Marine"] = 75,
+										},
+										["n_total"] = 75,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 10.15517108361329,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 31.006013,
+							["start_time"] = 1706721664,
+							["delay"] = 0,
+							["last_event"] = 1706721677,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001018,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 43.001018,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 43.001018,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+								["Kul Tiras Marine"] = true,
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 43,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721678,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 43,
+										},
+										["n_total"] = 32,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 43,
+										["c_max"] = 11,
+										["RESIST"] = 1,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 11,
+										["successful_casted"] = 0,
+										["c_total"] = 11,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.662601733751888,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 29.001018,
+							["start_time"] = 1706721666,
+							["delay"] = 0,
+							["last_event"] = 1706721675,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003524,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 142.003524,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 142.003524,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA80C6",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Jiroshi"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 31,
+								["Rupqua <Dopedot>"] = 29,
+								["Jiroshi"] = 82,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721685,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Dopedot"] = 30,
+											["Rupqua <Dopedot>"] = 29,
+											["Jiroshi"] = 82,
+										},
+										["n_total"] = 141,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["DODGE"] = 1,
+										["total"] = 141,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 17,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[11972] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["n_total"] = 1,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 1,
+										["c_max"] = 0,
+										["id"] = 11972,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 268.003524,
+							["start_time"] = 1706721662,
+							["delay"] = 0,
+							["last_event"] = 1706721684,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 489,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 489,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 489,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["interrupt"] = 1.00478,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA80C6",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[11972] = {
+										["id"] = 11972,
+										["interrompeu_oque"] = {
+											[0] = 1,
+										},
+										["targets"] = {
+											["Dopedot"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[0] = 1,
+							},
+							["aID"] = "3129",
+							["nome"] = "Kul Tiras Marine",
+							["interrupt_targets"] = {
+								["Dopedot"] = 1,
+							},
+							["last_event"] = 1706721662,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[172] = {
+										["activedamt"] = 0,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 2,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 47,
+							["debuff_uptime"] = 10,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721678,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 489,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341789.817,
+				["tempo_start"] = 1706721662,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					554, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Corruption"] = 1,
+						["Incinerate"] = 2,
+						["Shadow Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 5,
+					},
+					["Kul Tiras Marine"] = {
+						["Shield Bash"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:21:19",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341784.251,
+				["CombatEndedAt"] = 341784.251,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:21:02",
+				["end_time"] = 341784.251,
+				["combat_id"] = 489,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+					["Lieutenant Benedict"] = 1,
+				},
+				["combat_counter"] = 533,
+				["totals_grupo"] = {
+					164, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 164.006013,
+							["Rupqua <Dopedot>"] = 43.001018,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341768.101,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [14]
+			{
+				{
+					["combatId"] = 488,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004213,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 152.004213,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 160.004213,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 160,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721658,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 111,
+										["targets"] = {
+											["Kul Tiras Marine"] = 111,
+										},
+										["n_total"] = 111,
+										["n_min"] = 111,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 111,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Kul Tiras Marine"] = 41,
+										},
+										["n_total"] = 41,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 52.7544388395058,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004213,
+							["start_time"] = 1706721655,
+							["delay"] = 0,
+							["last_event"] = 1706721657,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004634,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 8.004634,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 8.004634,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 8,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721658,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kul Tiras Marine"] = 8,
+										},
+										["n_total"] = 8,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.639180349492602,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004634,
+							["start_time"] = 1706721655,
+							["delay"] = 0,
+							["last_event"] = 1706721655,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002028,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 27.002028,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 27.002028,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA809D",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Jiroshi"] = 27,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721662,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Jiroshi"] = 27,
+										},
+										["n_total"] = 27,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 160.002028,
+							["start_time"] = 1706721656,
+							["delay"] = 0,
+							["last_event"] = 1706721660,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 488,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 488,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 488,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 9,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721658,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 488,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341766.434,
+				["tempo_start"] = 1706721655,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					262, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:20:58",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Marine",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 341764.05,
+				["CombatEndedAt"] = 341764.05,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:20:55",
+				["end_time"] = 341764.05,
+				["combat_id"] = 488,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 532,
+				["totals_grupo"] = {
+					160, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 160.004213,
+							["Rupqua <Dopedot>"] = 8.004634,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 341761.017,
+				["contra"] = "Kul Tiras Marine",
+				["TimeData"] = {
+				},
+			}, -- [15]
+			{
+				{
+					["combatId"] = 487,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005741,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 146.005741,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 173.005741,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 173,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721645,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 42,
+										["targets"] = {
+											["Kul Tiras Marine"] = 146,
+										},
+										["n_total"] = 84,
+										["n_min"] = 42,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 146,
+										["c_max"] = 62,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 62,
+										["successful_casted"] = 0,
+										["c_total"] = 62,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 36.16340739933819,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005741,
+							["start_time"] = 1706721640,
+							["delay"] = 0,
+							["last_event"] = 1706721644,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006726,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 27.006726,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 27.006726,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kul Tiras Marine"] = 27,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721645,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Marine"] = 27,
+										},
+										["n_total"] = 27,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 5.645218645433848,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006726,
+							["start_time"] = 1706721640,
+							["delay"] = 0,
+							["last_event"] = 1706721644,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007905,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 9.007905,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 9.007905,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-00003A80F7",
+							["aID"] = "3129",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Jiroshi"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Jiroshi"] = 9,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721655,
+							["nome"] = "Kul Tiras Marine",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Jiroshi"] = 9,
+										},
+										["n_total"] = 9,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 209.007905,
+							["start_time"] = 1706721645,
+							["delay"] = 0,
+							["last_event"] = 1706721654,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 487,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 487,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 487,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 15,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721645,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 487,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 341760.117,
+				["tempo_start"] = 1706721640,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					267, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -6953,172 +8037,150 @@ _detalhes_database = {
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "17:24:13",
+				["data_fim"] = "18:20:45",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Meven Korgal",
+				["enemy"] = "Kul Tiras Marine",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 251960.447,
-				["CombatEndedAt"] = 251960.447,
+				["TotalElapsedCombatTime"] = 341750.334,
+				["CombatEndedAt"] = 341750.334,
 				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:20:40",
+				["end_time"] = 341750.334,
+				["combat_id"] = 487,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 531,
+				["totals_grupo"] = {
+					173, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
+					["damage_section"] = {
+					},
 					["damage"] = {
 						{
-							["Dopedot"] = 119.004642,
-							["Rupqua <Dopedot>"] = 19.006846,
+							["Dopedot"] = 173.005741,
+							["Rupqua <Dopedot>"] = 27.006726,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 251960.447,
-				["combat_id"] = 402,
-				["frags"] = {
-					["Meven Korgal"] = 1,
-				},
-				["combat_counter"] = 446,
-				["contra"] = "Meven Korgal",
-				["player_last_events"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 251947.33,
+				["start_time"] = 341745.55,
+				["contra"] = "Kul Tiras Marine",
 				["TimeData"] = {
 				},
-				["data_inicio"] = "17:24:00",
-			}, -- [12]
+			}, -- [16]
 			{
 				{
+					["combatId"] = 486,
 					["tipo"] = 2,
-					["combatId"] = 401,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007878,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 82.002222,
+							["total_without_pet"] = 151.007878,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 99.002222,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["total"] = 175.007878,
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Scarlet Convert"] = 99,
+								["Kul Tiras Marine"] = 175,
 							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706631837,
-							["totalabsorbed"] = 0.002222,
-							["aID"] = "5826-024A22B1",
+							["end_time"] = 1706721631,
 							["nome"] = "Dopedot",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									[412758] = {
-										["c_amt"] = 1,
+									[403629] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 73,
 										["targets"] = {
-											["Scarlet Convert"] = 82,
+											["Kul Tiras Marine"] = 73,
 										},
-										["n_total"] = 34,
-										["n_min"] = 34,
+										["n_total"] = 73,
+										["n_min"] = 73,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 82,
-										["c_max"] = 48,
-										["id"] = 412758,
+										["counter"] = 1,
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 403629,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 48,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 48,
+										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 34,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631836,
-							["damage_taken"] = 0.002222,
-							["start_time"] = 1706631834,
-							["delay"] = 0,
-							["last_dps"] = 34.72543739044889,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006291,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 17.006291,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 17.006291,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 17,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631837,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
+									[412758] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 43,
 										["targets"] = {
-											["Scarlet Convert"] = 17,
+											["Kul Tiras Marine"] = 78,
 										},
-										["n_total"] = 17,
-										["n_min"] = 7,
+										["n_total"] = 78,
+										["n_min"] = 35,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 17,
+										["total"] = 78,
 										["c_max"] = 0,
-										["id"] = 3110,
+										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -7129,1495 +8191,58 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 10,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631836,
-							["damage_taken"] = 0.006291,
-							["start_time"] = 1706631834,
-							["delay"] = 0,
-							["last_dps"] = 5.965026657323453,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.005255,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 0.005255,
 							["friendlyfire"] = {
 							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0001B9228C",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.005255,
-							["fight_component"] = true,
-							["end_time"] = 1706631837,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
+							["last_dps"] = 33.97551504553928,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 99.005255,
-							["start_time"] = 1706631837,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007878,
+							["start_time"] = 1706721625,
 							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 401,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 401,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 401,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["buff_uptime_targets"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["nome"] = "Dopedot",
-							["grupo"] = true,
-							["buff_uptime"] = 6,
-							["tipo"] = 4,
-							["classe"] = "WARLOCK",
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631837,
+							["last_event"] = 1706721631,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003611,
 							["pets"] = {
 							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 401,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 251945.898,
-				["tempo_start"] = 1706631834,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					99, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					99, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:23:58",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251944.631,
-				["CombatEndedAt"] = 251944.631,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 99.002222,
-							["Rupqua <Dopedot>"] = 17.006291,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 251944.631,
-				["combat_id"] = 401,
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["combat_counter"] = 445,
-				["contra"] = "Scarlet Convert",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 251941.78,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:23:55",
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 400,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 60.002192,
+							["total_without_pet"] = 24.003611,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 79.00219200000001,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Scarlet Convert"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 79,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631829,
-							["totalabsorbed"] = 0.002192,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 29,
-										},
-										["n_total"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 29,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 31,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
+							["total"] = 24.003611,
 							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631828,
-							["damage_taken"] = 3.002192,
-							["start_time"] = 1706631825,
-							["delay"] = 0,
-							["last_dps"] = 16.92783201194172,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001001,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 19.001001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.001001,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Scarlet Convert"] = 19,
+								["Kul Tiras Marine"] = 24,
 							},
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706631829,
-							["aID"] = "416",
+							["end_time"] = 1706721631,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									[3110] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 10,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631828,
-							["damage_taken"] = 0.001001,
-							["start_time"] = 1706631827,
-							["delay"] = 0,
-							["last_dps"] = 4.071352260539007,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 3.008649,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 3.008649,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0002B9228C",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 3,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.008649,
-							["fight_component"] = true,
-							["end_time"] = 1706631829,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Dopedot"] = 3,
-										},
-										["n_total"] = 3,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 3,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631828,
-							["damage_taken"] = 79.00864899999999,
-							["start_time"] = 1706631828,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 400,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 26,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 26.003292,
-							["total_without_pet"] = 3.003292,
-							["total"] = 3.003292,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.003292,
-							["last_hps"] = 0.6435166059545343,
-							["targets"] = {
-								["Dopedot"] = 3,
-							},
-							["totalover_without_pet"] = 0.003292,
-							["last_event"] = 1706631828,
-							["healing_taken"] = 3.003292,
-							["fight_component"] = true,
-							["end_time"] = 1706631829,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 26,
-										},
-										["n_max"] = 3,
-										["targets"] = {
-											["Dopedot"] = 3,
-										},
-										["n_total"] = 3,
-										["n_min"] = 3,
-										["counter"] = 1,
-										["overheal"] = 26,
-										["total"] = 3,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706631828,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003292,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 400,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 400,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631828,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 8,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 412758,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631829,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 400,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 251940.764,
-				["tempo_start"] = 1706631825,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					82, -- [1]
-					3, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					79, -- [1]
-					3, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:23:50",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251936.964,
-				["CombatEndedAt"] = 251936.964,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 3.003292,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 79.00219200000001,
-							["Rupqua <Dopedot>"] = 19.001001,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 251936.964,
-				["combat_id"] = 400,
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["combat_counter"] = 444,
-				["contra"] = "Scarlet Convert",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 251932.297,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:23:45",
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 399,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 127.008804,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 170.008804,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Scarlet Convert"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 170,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631819,
-							["totalabsorbed"] = 0.008804,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 29,
-										},
-										["n_total"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 29,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 98,
-										},
-										["n_total"] = 98,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 98,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 34,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631819,
-							["damage_taken"] = 17.008804,
-							["start_time"] = 1706631807,
-							["delay"] = 0,
-							["last_dps"] = 13.95230233894399,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001911,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 43.001911,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 43.001911,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 43,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631819,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 43,
-										},
-										["n_total"] = 43,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 43,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
 										["n_max"] = 9,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631818,
-							["damage_taken"] = 0.001911,
-							["start_time"] = 1706631809,
-							["delay"] = 0,
-							["last_dps"] = 3.529085843250572,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 17.008708,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 17.008708,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0002392246",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 17,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.008708,
-							["fight_component"] = true,
-							["end_time"] = 1706631819,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
 										["targets"] = {
-											["Dopedot"] = 17,
-										},
-										["n_total"] = 17,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 6,
-										["n_max"] = 3,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631818,
-							["damage_taken"] = 170.008708,
-							["start_time"] = 1706631811,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 399,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 16,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 16.005289,
-							["total_without_pet"] = 14.005289,
-							["total"] = 14.005289,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.005289,
-							["last_hps"] = 1.149387689782739,
-							["targets"] = {
-								["Dopedot"] = 14,
-							},
-							["totalover_without_pet"] = 0.005289,
-							["last_event"] = 1706631818,
-							["healing_taken"] = 14.005289,
-							["fight_component"] = true,
-							["end_time"] = 1706631819,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 16,
-										},
-										["n_max"] = 14,
-										["targets"] = {
-											["Dopedot"] = 14,
-										},
-										["n_total"] = 14,
-										["n_min"] = 14,
-										["counter"] = 1,
-										["overheal"] = 16,
-										["total"] = 14,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopedot"] = true,
-							},
-							["start_time"] = 1706631818,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.005289,
-							["delay"] = 0,
-							["classe"] = "WARLOCK",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 399,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 399,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631818,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 24,
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = 412758,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["nome"] = "Dopedot",
-							["aID"] = "5826-024A22B1",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631819,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 399,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 251931.03,
-				["tempo_start"] = 1706631807,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					187, -- [1]
-					14, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					170, -- [1]
-					14, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 3,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:23:40",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251926.831,
-				["CombatEndedAt"] = 251926.831,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Dopedot"] = 14.005289,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 170.008804,
-							["Rupqua <Dopedot>"] = 43.001911,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 251926.831,
-				["combat_id"] = 399,
-				["frags"] = {
-					["Scarlet Convert"] = 2,
-				},
-				["combat_counter"] = 443,
-				["contra"] = "Scarlet Convert",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 251914.646,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:23:28",
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 398,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 84.00581700000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 108.005817,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Meven Korgal"] = 37,
-								["Scarlet Convert"] = 71,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631803,
-							["totalabsorbed"] = 0.005817,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 28,
-										},
-										["n_total"] = 28,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 28,
-										["c_max"] = 0,
-										["id"] = 403501,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 28,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 56,
-										},
-										["n_total"] = 56,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 30,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631802,
-							["damage_taken"] = 0.005817,
-							["start_time"] = 1706631792,
-							["delay"] = 0,
-							["last_dps"] = 9.939795416915059,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004181,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 24.004181,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 24.004181,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Meven Korgal"] = 9,
-								["Scarlet Convert"] = 15,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631803,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Meven Korgal"] = 9,
-											["Scarlet Convert"] = 15,
+											["Kul Tiras Marine"] = 24,
 										},
 										["n_total"] = 24,
 										["n_min"] = 7,
@@ -8636,304 +8261,153 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 9,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 4.659990487272648,
 							["custom"] = 0,
-							["last_event"] = 1706631802,
-							["damage_taken"] = 0.004181,
-							["start_time"] = 1706631795,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003611,
+							["start_time"] = 1706721625,
 							["delay"] = 0,
-							["last_dps"] = 2.209109239834735,
+							["last_event"] = 1706721630,
 						}, -- [2]
 						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 4.00882,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 4.00882,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1667-00003921FC",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Xotromtoxoqt"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Xotromtoxoqt"] = 4,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.00882,
-							["fight_component"] = true,
-							["end_time"] = 1706631803,
-							["aID"] = "1667",
-							["nome"] = "Meven Korgal",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Xotromtoxoqt"] = 4,
-										},
-										["n_total"] = 4,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 4,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631793,
-							["damage_taken"] = 71.00882,
-							["start_time"] = 1706631802,
-							["delay"] = 1706631793,
-							["last_dps"] = 0,
-						}, -- [3]
-						{
 							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005257,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.008913,
+							["total_without_pet"] = 0.005257,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 0.008913,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0000392130",
+							["dps_started"] = false,
+							["total"] = 0.005257,
 							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3129-0000BA814C",
+							["aID"] = "3129",
+							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
 							},
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["totalabsorbed"] = 0.008913,
-							["fight_component"] = true,
-							["end_time"] = 1706631803,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
+							["end_time"] = 1706721631,
+							["nome"] = "Kul Tiras Marine",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
-								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 71.008913,
-							["start_time"] = 1706631803,
-							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
-						}, -- [4]
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 175.005257,
+							["start_time"] = 1706721631,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 486,
 					["tipo"] = 3,
-					["combatId"] = 398,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 28,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 28.00243,
-							["total_without_pet"] = 0.00243,
-							["total"] = 0.00243,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.00243,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.00243,
-							["healing_taken"] = 0.00243,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1706631803,
-							["last_event"] = 1706631795,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 28,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Dopedot"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 28,
-										["total"] = 0,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00243,
-							["delay"] = 0,
-							["start_time"] = 1706631795,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 486,
 					["tipo"] = 7,
-					["combatId"] = 398,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 486,
 					["tipo"] = 9,
-					["combatId"] = 398,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631795,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
-							["buff_uptime"] = 16,
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
 							["classe"] = "WARLOCK",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[412758] = {
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["id"] = 412758,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = 412758,
+										["uptime"] = 4,
+										["appliedamt"] = 1,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[687] = {
+										["activedamt"] = 1,
+										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 16,
 							["grupo"] = true,
-							["nome"] = "Dopedot",
-							["last_event"] = 1706631803,
 							["aID"] = "5826-024A22B1",
-							["serial"] = "Player-5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721631,
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "416",
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
 							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 486,
 					["tipo"] = 2,
-					["combatId"] = 398,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8943,8 +8417,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 251913.23,
-				["tempo_start"] = 1706631792,
+				["CombatStartedAt"] = 341744.167,
+				["tempo_start"] = 1706721625,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -8956,7 +8430,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					146, -- [1]
+					175, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -8968,36 +8442,17 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					108, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -9005,108 +8460,156 @@ _detalhes_database = {
 						["Incinerate"] = 2,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 2,
+						["Firebolt"] = 1,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "17:23:24",
+				["data_fim"] = "18:20:31",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Meven Korgal",
+				["enemy"] = "Kul Tiras Marine",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 251910.979,
-				["CombatEndedAt"] = 251910.979,
+				["TotalElapsedCombatTime"] = 341736.983,
+				["CombatEndedAt"] = 341736.983,
 				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:20:26",
+				["end_time"] = 341736.983,
+				["combat_id"] = 486,
+				["frags"] = {
+					["Kul Tiras Marine"] = 1,
+				},
+				["combat_counter"] = 530,
+				["totals_grupo"] = {
+					175, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Dopedot"] = 0.00243,
 						}, -- [1]
+					},
+					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 108.005817,
-							["Rupqua <Dopedot>"] = 24.004181,
+							["Dopedot"] = 175.007878,
+							["Rupqua <Dopedot>"] = 24.003611,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 251910.979,
-				["combat_id"] = 398,
-				["frags"] = {
-					["Meven Korgal"] = 1,
-					["Scarlet Convert"] = 1,
-				},
-				["combat_counter"] = 442,
-				["contra"] = "Meven Korgal",
-				["player_last_events"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 251900.113,
+				["start_time"] = 341731.832,
+				["contra"] = "Kul Tiras Marine",
 				["TimeData"] = {
 				},
-				["data_inicio"] = "17:23:13",
-			}, -- [16]
+			}, -- [17]
 			{
 				{
+					["combatId"] = 485,
 					["tipo"] = 2,
-					["combatId"] = 397,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006856,
 							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 103.002466,
+							["total_without_pet"] = 202.006856,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 103.002466,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["total"] = 267.006856,
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
+								["Kul Tiras Sailor"] = true,
 							},
 							["targets"] = {
-								["Scarlet Convert"] = 103,
+								["Kul Tiras Sailor"] = 267,
 							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706631771,
-							["totalabsorbed"] = 0.002466,
-							["aID"] = "5826-024A22B1",
+							["end_time"] = 1706721608,
 							["nome"] = "Dopedot",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 91,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 91,
+										},
+										["n_total"] = 91,
+										["n_min"] = 91,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 91,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[412758] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 40,
 										["targets"] = {
-											["Scarlet Convert"] = 103,
+											["Kul Tiras Sailor"] = 111,
 										},
-										["n_total"] = 103,
-										["n_min"] = 34,
+										["n_total"] = 111,
+										["n_min"] = 32,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 103,
+										["total"] = 111,
 										["c_max"] = 0,
 										["id"] = 412758,
 										["r_dmg"] = 0,
@@ -9119,71 +8622,143 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 35,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631771,
-							["damage_taken"] = 0.002466,
-							["start_time"] = 1706631767,
-							["delay"] = 0,
-							["last_dps"] = 23.31955309040287,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 11.005928,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 11.005928,
 							["friendlyfire"] = {
 							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0003392246",
+							["last_dps"] = 13.57569941020594,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 15.006856,
+							["start_time"] = 1706721588,
+							["delay"] = 0,
+							["last_event"] = 1706721606,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008709,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 65.008709,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 65.008709,
 							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
 							["damage_from"] = {
-								["Dopedot"] = true,
-								["Xotromtoxoqt"] = true,
-								["Volpit"] = true,
-								["Wrend"] = true,
+								["Kul Tiras Sailor"] = true,
 							},
 							["targets"] = {
-								["Wrend"] = 5,
-								["Xotromtoxoqt"] = 6,
+								["Kul Tiras Sailor"] = 65,
 							},
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["totalabsorbed"] = 0.005928,
-							["fight_component"] = true,
-							["end_time"] = 1706631792,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
+							["end_time"] = 1706721608,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[3110] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Kul Tiras Sailor"] = 65,
+										},
+										["n_total"] = 52,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 65,
+										["c_max"] = 13,
+										["id"] = 3110,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 13,
+										["successful_casted"] = 0,
+										["c_total"] = 13,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.305303487898264,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 32.008709,
+							["start_time"] = 1706721588,
+							["delay"] = 0,
+							["last_event"] = 1706721605,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002554,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 47.002554,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 47.002554,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-3000-3128-00003A8132",
+							["aID"] = "3128",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Onionad"] = true,
+								["Dopedot"] = true,
+								["Troncho"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 15,
+								["Rupqua <Dopedot>"] = 32,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706721608,
+							["nome"] = "Kul Tiras Sailor",
+							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 8,
 										["targets"] = {
-											["Wrend"] = 5,
-											["Xotromtoxoqt"] = 6,
+											["Dopedot"] = 15,
+											["Rupqua"] = 0,
+											["Rupqua <Dopedot>"] = 32,
 										},
-										["n_total"] = 11,
-										["n_min"] = 2,
+										["n_total"] = 47,
+										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 11,
+										["counter"] = 8,
+										["total"] = 47,
 										["c_max"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -9194,588 +8769,151 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
-										["n_max"] = 3,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631789,
-							["damage_taken"] = 252.005928,
-							["start_time"] = 1706631771,
-							["delay"] = 0,
-							["last_dps"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 397,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 397,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 397,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 687,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 412758,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["nome"] = "Dopedot",
-							["grupo"] = true,
-							["buff_uptime"] = 8,
-							["tipo"] = 4,
-							["classe"] = "WARLOCK",
-							["serial"] = "Player-5826-024A22B1",
-							["last_event"] = 1706631771,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 397,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 251898.728,
-				["tempo_start"] = 1706631767,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					325, -- [1]
-					0, -- [2]
-					{
-						9, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					103, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:22:52",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251879.062,
-				["CombatEndedAt"] = 251879.062,
-				["aura_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 103.002466,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 251879.062,
-				["combat_id"] = 397,
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["combat_counter"] = 441,
-				["contra"] = "Scarlet Convert",
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 251874.645,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:22:48",
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 396,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 79.003886,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 95.003886,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 95,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631765,
-							["totalabsorbed"] = 0.003886,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["c_amt"] = 1,
+									[6268] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
-											["Scarlet Convert"] = 48,
 										},
 										["n_total"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 48,
-										["c_max"] = 48,
-										["id"] = 403501,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6268,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 48,
-										["successful_casted"] = 0,
-										["c_total"] = 48,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
 										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 31,
 										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631764,
-							["damage_taken"] = 0.003886,
-							["start_time"] = 1706631761,
-							["delay"] = 0,
-							["last_dps"] = 21.02786321376049,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008293,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 16.008293,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.008293,
-							["colocacao"] = 2,
 							["friendlyfire"] = {
 							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 16,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706631765,
-							["aID"] = "416",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3110] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 3110,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 8,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1706631763,
-							["damage_taken"] = 0.008293,
-							["start_time"] = 1706631761,
-							["delay"] = 0,
-							["last_dps"] = 3.543225542266761,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.005344,
-							["last_dps_realtime"] = 0,
-							["monster"] = true,
-							["total"] = 0.005344,
-							["friendlyfire"] = {
-							},
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5253-0-5359-1506-0003B92246",
-							["on_hold"] = false,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["totalabsorbed"] = 0.005344,
-							["fight_component"] = true,
-							["end_time"] = 1706631765,
-							["aID"] = "1506",
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["dps_started"] = false,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 95.00534400000001,
-							["start_time"] = 1706631765,
-							["delay"] = 0,
 							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 417.002554,
+							["start_time"] = 1706721590,
+							["delay"] = 0,
+							["last_event"] = 1706721605,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 485,
 					["tipo"] = 3,
-					["combatId"] = 396,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Dopedot"] = 47,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 47.00412,
-							["total_without_pet"] = 0.00412,
-							["total"] = 0.00412,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-5826-024A22B1",
-							["totalabsorb"] = 0.00412,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.00412,
-							["healing_taken"] = 0.00412,
-							["heal_enemy_amt"] = 0,
-							["end_time"] = 1706631765,
-							["last_event"] = 1706631764,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["_ActorTable"] = {
-									[403506] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Dopedot"] = 47,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Dopedot"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 47,
-										["total"] = 0,
-										["spellschool"] = 32,
-										["id"] = 403506,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_max"] = 0,
-										["c_total"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-							},
-							["aID"] = "5826-024A22B1",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00412,
-							["delay"] = 0,
-							["start_time"] = 1706631764,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 485,
 					["tipo"] = 7,
-					["combatId"] = 396,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 485,
 					["tipo"] = 9,
-					["combatId"] = 396,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[403501] = {
-										["activedamt"] = -1,
-										["id"] = 403501,
-										["targets"] = {
-										},
-										["actived_at"] = 1706631764,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
-							["buff_uptime"] = 8,
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
 							["classe"] = "WARLOCK",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[687] = {
-										["appliedamt"] = 1,
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
 										["targets"] = {
 										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[687] = {
 										["activedamt"] = 1,
-										["uptime"] = 4,
 										["id"] = 687,
+										["targets"] = {
+										},
+										["uptime"] = 20,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[412758] = {
-										["appliedamt"] = 1,
+									[8112] = {
+										["activedamt"] = 1,
+										["id"] = 8112,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 4,
-										["id"] = 412758,
-										["refreshamt"] = 1,
+										["uptime"] = 20,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 56,
 							["grupo"] = true,
-							["nome"] = "Dopedot",
-							["last_event"] = 1706631765,
 							["aID"] = "5826-024A22B1",
-							["serial"] = "Player-5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706721608,
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "416",
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["serial"] = "Pet-0-5250-1-3000-416-02009FD407",
+							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
-							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
 							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5250-1-3000-3128-00003A80F9",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3128",
+							["nome"] = "Kul Tiras Sailor",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 485,
 					["tipo"] = 2,
-					["combatId"] = 396,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9785,8 +8923,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 251873.261,
-				["tempo_start"] = 1706631761,
+				["CombatStartedAt"] = 341730.866,
+				["tempo_start"] = 1706721588,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -9798,7 +8936,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					95, -- [1]
+					464, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -9810,18 +8948,55 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Rupqua"] = {
+						["Firebolt"] = 6,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+					["Kul Tiras Sailor"] = {
+						["Rushing Charge"] = 2,
+					},
+					["Dopedot"] = {
+						["Incinerate"] = 3,
+						["Chaos Bolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "18:20:09",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kul Tiras Sailor",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 19.66800000000512,
+				["CombatEndedAt"] = 341714.299,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "18:19:49",
+				["end_time"] = 341714.299,
+				["combat_id"] = 485,
+				["frags"] = {
+					["Kul Tiras Sailor"] = 3,
+				},
+				["combat_counter"] = 529,
 				["totals_grupo"] = {
-					95, -- [1]
+					267, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -9833,80 +9008,49 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "17:22:46",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 251872.678,
-				["CombatEndedAt"] = 251872.678,
-				["aura_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Dopedot"] = 0.00412,
 						}, -- [1]
+					},
+					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 95.003886,
-							["Rupqua <Dopedot>"] = 16.008293,
+							["Dopedot"] = 267.006856,
+							["Rupqua <Dopedot>"] = 65.008709,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 251872.678,
-				["combat_id"] = 396,
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["combat_counter"] = 440,
-				["contra"] = "Scarlet Convert",
-				["player_last_events"] = {
-				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 251868.16,
+				["start_time"] = 341694.631,
+				["contra"] = "Kul Tiras Sailor",
 				["TimeData"] = {
 				},
-				["data_inicio"] = "17:22:41",
 			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
-		["enabled"] = false,
+		["show_title"] = true,
 		["current_cooldowns"] = {
 		},
-		["group_frames"] = true,
 		["lines_per_column"] = 12,
+		["group_frames"] = true,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -9938,7 +9082,7 @@ _detalhes_database = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["show_title"] = true,
+		["enabled"] = false,
 		["filters"] = {
 			["itemutil"] = false,
 			["itempower"] = false,
@@ -9974,10 +9118,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["name"] = "Damage of Each Individual Player",
-				["playerOnly"] = true,
 				["playerKey"] = "total",
 				["combatObjectContainer"] = 1,
+				["name"] = "Damage of Each Individual Player",
+				["playerOnly"] = true,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -10001,21 +9145,122 @@ _detalhes_database = {
 	["ignore_nicktag"] = false,
 	["combat_log"] = {
 		["inverse_deathlog_overalldata"] = false,
-		["track_hunter_frenzy"] = false,
 		["evoker_calc_damage"] = false,
-		["inverse_deathlog_raid"] = false,
+		["track_hunter_frenzy"] = false,
 		["merge_critical_heals"] = false,
+		["inverse_deathlog_raid"] = false,
 		["merge_gemstones_1007"] = false,
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["character_data"] = {
-		["logons"] = 39,
+	["data_harvested_for_charts"] = {
+	},
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Terciob",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["usefocus"] = false,
+			["updatespeed"] = 1,
+			["useclasscolors"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["absolute_mode"] = false,
+			["playSound"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["disable_gouge"] = false,
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_x"] = 0,
+			["scale"] = 1,
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["font_size"] = 10,
+			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["author"] = "Details! Team",
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["use_square_mode"] = false,
+		},
+	},
+	["cached_talents"] = {
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["mythic_plus_log"] = {
 	},
-	["last_day"] = "30",
-	["cached_roles"] = {
+	["character_data"] = {
+		["logons"] = 42,
 	},
 	["local_instances_config"] = {
 		{
@@ -10089,31 +9334,15 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["cached_talents"] = {
-	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_id"] = 413,
+	["combat_id"] = 502,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -10131,7 +9360,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "vermin",
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -10143,31 +9372,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "xVerminClean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -10254,12 +9495,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -10298,14 +9539,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
-			["version"] = 3,
+			["micro_displays_side"] = 2,
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -10316,26 +9557,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -10347,7 +9569,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["bars_sort_direction"] = 1,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -10363,49 +9585,45 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
 			["bars_grow_direction"] = 1,
-			["grab_on_top"] = false,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = true,
-			},
-			["show_statusbar"] = false,
-			["switch_damager_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
-			["auto_current"] = true,
-			["micro_displays_locked"] = false,
-			["switch_damager"] = {
+			["grab_on_top"] = false,
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = true,
+			},
+			["hide_in_combat_type"] = 1,
+			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
-			["hide_in_combat"] = false,
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
+			["auto_current"] = true,
+			["bars_sort_direction"] = 1,
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -10417,7 +9635,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -10431,8 +9654,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -10441,16 +9662,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -10458,18 +9676,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -10503,23 +9717,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["version"] = 3,
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -10531,7 +9755,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -10551,7 +9780,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 457,
+	["combat_counter"] = 546,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -10573,7 +9802,7 @@ _detalhes_database = {
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["received"] = 0.001788,
+					["flag_original"] = 1298,
 					["resource"] = 0.009374000000000002,
 					["targets"] = {
 						["Tooblock"] = 0,
@@ -10582,15 +9811,15 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["aID"] = "5826-02488EA3",
-					["passiveover"] = 0.001788,
+					["totalover"] = 0.001788,
 					["total"] = 0.001788,
 					["nome"] = "Tooblock",
 					["spells"] = {
 						["_ActorTable"] = {
 							[31818] = {
 								["total"] = 0,
-								["id"] = 31818,
 								["totalover"] = 0,
+								["id"] = 31818,
 								["targets"] = {
 									["Tooblock"] = 0,
 								},
@@ -10600,50 +9829,50 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
+					["received"] = 0.001788,
 					["classe"] = "WARLOCK",
-					["last_event"] = 0,
-					["totalover"] = 0.001788,
+					["tipo"] = 3,
+					["passiveover"] = 0.001788,
 					["alternatepower"] = 0.001788,
 					["serial"] = "Player-5826-02488EA3",
-					["tipo"] = 3,
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.018147,
+					["resource"] = 0.05553499999999999,
 					["pets"] = {
 					},
-					["classe"] = "WARLOCK",
-					["totalover"] = 0.001971,
+					["aID"] = "5826-024A22B1",
+					["passiveover"] = 0.001971,
 					["total"] = 0.001971,
+					["serial"] = "Player-5826-024A22B1",
 					["received"] = 0.001971,
 					["targets"] = {
 						["Dopedot"] = 0,
 					},
 					["powertype"] = 0,
 					["alternatepower"] = 0.001971,
-					["fight_component"] = true,
 					["nome"] = "Dopedot",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[31818] = {
 								["total"] = 0,
-								["id"] = 31818,
 								["totalover"] = 0,
+								["id"] = 31818,
 								["targets"] = {
 									["Dopedot"] = 0,
 								},
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["passiveover"] = 0.001971,
-					["aID"] = "5826-024A22B1",
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-5826-024A22B1",
+					["classe"] = "WARLOCK",
+					["totalover"] = 0.001971,
+					["last_event"] = 0,
 					["tipo"] = 3,
+					["fight_component"] = true,
 				}, -- [2]
 			},
 		}, -- [3]
@@ -10676,14 +9905,20 @@ _detalhes_database = {
 					["aID"] = "5826-023EC2B3",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[412758] = {
-								["id"] = 412758,
+							[8112] = {
+								["id"] = 8112,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 							[687] = {
 								["id"] = 687,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[412758] = {
+								["id"] = 412758,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -10696,9 +9931,9 @@ _detalhes_database = {
 					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
-					["buff_uptime"] = 0,
 					["tipo"] = 4,
 					["last_event"] = 0,
+					["buff_uptime"] = 0,
 					["serial"] = "Player-5826-023EC2B3",
 					["classe"] = "WARLOCK",
 				}, -- [1]
@@ -10739,9 +9974,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
-					["classe"] = "WARLOCK",
+					["buff_uptime"] = 0,
+					["aID"] = "5826-02488EA3",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[17941] = {
@@ -10773,159 +10007,282 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["buff_uptime"] = 0,
-					["last_event"] = 0,
+					["pets"] = {
+					},
+					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["nome"] = "Tooblock",
-					["tipo"] = 4,
+					["last_event"] = 0,
+					["classe"] = "WARLOCK",
+					["serial"] = "Player-5826-02488EA3",
 					["buff_uptime_targets"] = {
 					},
-					["serial"] = "Player-5826-02488EA3",
-					["aID"] = "5826-02488EA3",
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Blackrock Outrunner",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "485",
-					["serial"] = "Creature-0-5211-0-9873-485-0000B917A6",
+					["nome"] = "Blackrock Outrunner",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-9873-485-0000B917A6",
+					["aID"] = "485",
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Blackrock Grunt",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "440",
-					["serial"] = "Creature-0-5211-0-9873-440-0000B91673",
+					["nome"] = "Blackrock Grunt",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-9873-440-0000B91673",
+					["aID"] = "440",
 				}, -- [4]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Black Dragon Whelp",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "441",
-					["serial"] = "Creature-0-5211-0-9873-441-0000391686",
+					["nome"] = "Black Dragon Whelp",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-9873-441-0000391686",
+					["aID"] = "441",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Dire Condor",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "428",
-					["serial"] = "Creature-0-5211-0-9873-428-0000391696",
+					["nome"] = "Dire Condor",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-9873-428-0000391696",
+					["aID"] = "428",
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Redridge Poacher",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "424",
-					["serial"] = "Creature-0-5211-0-9873-424-00003913B1",
+					["nome"] = "Redridge Poacher",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-9873-424-00003913B1",
+					["aID"] = "424",
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Pygmy Venom Web Spider",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "539",
-					["serial"] = "Creature-0-5208-0-6773-539-0000B8FFA0",
+					["nome"] = "Pygmy Venom Web Spider",
+					["fight_component"] = true,
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-5208-0-6773-539-0000B8FFA0",
+					["aID"] = "539",
 				}, -- [8]
 				{
 					["flag_original"] = 4369,
-					["tipo"] = 4,
 					["pets"] = {
 					},
-					["classe"] = "PET",
-					["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
-					["grupo"] = true,
 					["aID"] = "416",
 					["nome"] = "Rupqua <Dopedot>",
+					["grupo"] = true,
+					["classe"] = "PET",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5253-0-5359-416-0000391E09",
 					["last_event"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
-					["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["tipo"] = 4,
-					["monster"] = true,
 					["aID"] = "1526",
+					["monster"] = true,
 					["nome"] = "Ravaged Corpse",
+					["fight_component"] = true,
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
+					["classe"] = "UNKNOW",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
-					["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["tipo"] = 4,
-					["monster"] = true,
 					["aID"] = "1525",
+					["monster"] = true,
 					["nome"] = "Rotting Dead",
+					["fight_component"] = true,
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 1304,
-					["tipo"] = 4,
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNGROUPPLAYER",
-					["serial"] = "Player-5826-02503328",
-					["aID"] = "5826-02503328",
+					["fight_component"] = true,
 					["nome"] = "Hollyorsh",
+					["aID"] = "5826-02503328",
+					["tipo"] = 4,
+					["serial"] = "Player-5826-02503328",
 					["last_event"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
+					["pets"] = {
+					},
+					["aID"] = "1507",
+					["monster"] = true,
+					["nome"] = "Scarlet Initiate",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5253-0-5359-1507-000039228C",
+					["classe"] = "UNKNOW",
+				}, -- [13]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5253-1-130-3122-00003A2CF5",
 					["fight_component"] = true,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["tipo"] = 4,
 					["monster"] = true,
-					["aID"] = "1507",
-					["nome"] = "Scarlet Initiate",
+					["aID"] = "3122",
+					["nome"] = "Bloodtalon Taillasher",
 					["last_event"] = 0,
-				}, -- [13]
+				}, -- [14]
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[5116] = {
+								["id"] = 5116,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[1978] = {
+								["id"] = 1978,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[1130] = {
+								["id"] = 1130,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["aID"] = "5826-02503362",
+					["serial"] = "Player-5826-02503362",
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[415320] = {
+								["id"] = 415320,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[13163] = {
+								["id"] = 13163,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[19705] = {
+								["id"] = 19705,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[5004] = {
+								["id"] = 5004,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["buff_uptime_targets"] = {
+					},
+					["debuff_uptime"] = 0,
+					["buff_uptime"] = 0,
+					["classe"] = "HUNTER",
+					["nome"] = "Onedeag",
+					["grupo"] = true,
+					["last_event"] = 0,
+				}, -- [15]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5253-1-130-3207-00003A3148",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3207",
+					["nome"] = "Hexed Troll",
+					["last_event"] = 0,
+				}, -- [16]
+				{
+					["flag_original"] = 2632,
+					["serial"] = "Creature-0-5253-1-130-3206-00003A30DF",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3206",
+					["nome"] = "Voodoo Troll",
+					["last_event"] = 0,
+				}, -- [17]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5253-1-130-3205-00003A3023",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3205",
+					["nome"] = "Zalazane",
+					["last_event"] = 0,
+				}, -- [18]
 			},
 		}, -- [4]
 		{
@@ -11030,109 +10387,26 @@ _detalhes_database = {
 		["trinketProcs"] = {
 		},
 	},
-	["force_font_outline"] = "",
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["enabled"] = true,
-			["animate"] = false,
-			["hide_pull_bar"] = false,
-			["author"] = "Terciob",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["usefocus"] = false,
-			["updatespeed"] = 1,
-			["disable_gouge"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["absolute_mode"] = false,
-			["playSound"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["useclasscolors"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["use_square_mode"] = false,
-			["arrow_anchor_y"] = 0,
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["row_height"] = 18,
-			["arrow_anchor_x"] = 0,
-			["point"] = "RIGHT",
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["author"] = "Details! Team",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["use_spark"] = false,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
-				["attribute_type"] = 1,
-			},
-			["scale"] = 1,
-			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+	["benchmark_db"] = {
+		["frame"] = {
 		},
 	},
-	["data_harvested_for_charts"] = {
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
 	},
+	["last_day"] = "31",
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -11140,9 +10414,7 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
 	},

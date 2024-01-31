@@ -787,9 +787,9 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Dopedot-LoneWolf"] = {
-		["total"] = 5653,
-		["timeAtThisLevel"] = 460,
-		["timeStamp"] = 254139.769,
+		["total"] = 6711,
+		["timeAtThisLevel"] = 1518,
+		["timeStamp"] = 319027.996,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -924,9 +924,9 @@ CB_PlayedTime = {
 		["total"] = 425995,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 80189,
-		["timeStamp"] = 267587.2,
-		["timeAtThisLevel"] = 2137,
+		["total"] = 83460,
+		["timeStamp"] = 318582.912,
+		["timeAtThisLevel"] = 5408,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,

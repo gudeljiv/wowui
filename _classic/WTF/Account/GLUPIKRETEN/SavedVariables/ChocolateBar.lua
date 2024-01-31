@@ -787,9 +787,9 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Dopedot-LoneWolf"] = {
-		["total"] = 5653,
-		["timeStamp"] = 254139.769,
-		["timeAtThisLevel"] = 460,
+		["total"] = 9339,
+		["timeStamp"] = 340447.366,
+		["timeAtThisLevel"] = 995,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -980,9 +980,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 80403,
-		["timeAtThisLevel"] = 2351,
-		["timeStamp"] = 267990.283,
+		["total"] = 83460,
+		["timeAtThisLevel"] = 5408,
+		["timeStamp"] = 318582.912,
 	},
 	["Augustin-"] = {
 		["total"] = 425995,
