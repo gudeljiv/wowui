@@ -159,6 +159,8 @@ data = {
             {"name": "shadow bolt", "type": "GetSpellTexture", "id": 686, "key": "2"},
             {"name": "incinerate", "type": "GetSpellTexture", "id": 412758, "key": "3", "modifier": "lshift"},
             {"name": "chaos bolt", "type": "GetSpellTexture", "id": 403629, "key": "2", "modifier": "lshift"},
+            {"name": "drain soul", "type": "GetSpellTexture", "id": 1120, "key": "e"},
+            {"name": "drain life", "type": "GetSpellTexture", "id": 689, "key": "5"},
         ],
         "secondary": [],
     },

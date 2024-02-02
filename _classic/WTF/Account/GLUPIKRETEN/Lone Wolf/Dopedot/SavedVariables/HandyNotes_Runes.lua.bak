@@ -1,19 +1,20 @@
 
 HandyNotes_RunesDB = {
-	["profiles"] = {
-		["Default"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Dopedot - Lone Wolf"] = "Default",
-	},
 	["runesKnown"] = {
 		["WARLOCK"] = {
 			["spells"] = {
 				["Haunt"] = true,
 				["Chaos Bolt"] = true,
 				["Incinerate"] = true,
+				["Demonic Grace"] = true,
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Dopedot - Lone Wolf"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }
