@@ -1,3 +1,6 @@
+== v1.32 - 3rd February 2024
+* Warlocks and Warriors for non-English clients
+
 == v1.31 - 1st February 2024
 * Rogues and Shaman for non-English clients. More to come
 

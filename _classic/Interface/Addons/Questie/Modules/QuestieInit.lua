@@ -75,6 +75,8 @@ local QuestXP = QuestieLoader:ImportModule("QuestXP")
 local Tutorial = QuestieLoader:ImportModule("Tutorial")
 ---@type WorldMapButton
 local WorldMapButton = QuestieLoader:ImportModule("WorldMapButton")
+---@type AvailableQuests
+local AvailableQuests = QuestieLoader:ImportModule("AvailableQuests")
 
 local coYield = coroutine.yield
 
@@ -200,10 +202,8 @@ QuestieInit.Stages[1] = function() -- run as a coroutine
         QuestieCorrections:MinimalInit()
     end
 
-    if Questie.IsWotlk then
-        Tutorial.Initialize()
-        coYield()
-    end
+    Tutorial.Initialize()
+    coYield()
 
     local dbCompiledCount = Questie.IsSoD and Questie.db.global.sod.dbCompiledCount or Questie.db.global.dbCompiledCount
 
@@ -304,11 +304,6 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
         end)
     end
 
-    if Questie.IsSoD then
-        print("|cffffde7f" .. l10n("Welcome to Season of Discovery! Questie is being continuously updated with the new quests from this season, but it will take time. Be sure to update frequently to minimize errors.") .. "|r")
-        print("|cffffde7f" .. l10n("While playing Season of Discovery, Questie will notify you if it encounters a quest it doesn't yet know about. Please share this info with us on Discord or GitHub!") .. "|r")
-    end
-
     coYield()
     QuestieMenu:OnLogin()
 
@@ -331,7 +326,7 @@ QuestieInit.Stages[3] = function() -- run as a coroutine
 
     -- We do this last because it will run for a while and we don't want to block the rest of the init
     coYield()
-    QuestieQuest.CalculateAndDrawAvailableQuestsIterative()
+    AvailableQuests.CalculateAndDrawAll()
 
     Questie:Debug(Questie.DEBUG_INFO, "[QuestieInit:Stage3] Questie init done.")
 end

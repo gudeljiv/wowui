@@ -107,8 +107,9 @@ local itemBlacklist = {
 }
 
 local itemWhitelist = {
-    208609, -- glade flower for druid living seed
-    206469, -- prairie flower for druid living seed
+    -- TODO: Add distance check for these
+    --208609, -- glade flower for druid living seed
+    --206469, -- prairie flower for druid living seed
 }
 
 local itemTripCodes = {
@@ -210,10 +211,10 @@ local function filterItem(itemID, itemInfo, containerGUID)
                     Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieDebugOffer] - ItemFilter - Object drop data for item " .. itemID .. " OK, ignoring")
                 end
             end
-        elseif containerType == "Item" then -- if container is an item
+        elseif containerType == "Item" and containerID > 0 then -- if container is an item and there is an containerID for it
+            -- TODO: I am quite sure this case can never happen, because the containerID is always 0 for items. Is there a different way?
             -- first check if container item is even in our DB.
-            -- There were many reports for a containerID == 0, which does not help us as ContainerMissingFromItemDB report.
-            if containerID > 0 and (not QuestieDB.QueryItemSingle(containerID, "name")) then
+            if (not QuestieDB.QueryItemSingle(containerID, "name")) then
                 return itemTripCodes.ContainerMissingFromItemDB
             end
 

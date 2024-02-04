@@ -3,7 +3,7 @@
 
                                                 Runes
 
-                                      v1.31 - 1st February 2024
+                                      v1.32 - 3rd February 2024
                                 Copyright (C) Taraezor / Chris Birch
                                          All Rights Reserved
 

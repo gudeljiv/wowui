@@ -23,485 +23,503 @@ function SeasonOfDiscovery:LoadQuests()
     -- TODO: ZoneIDs, sort keys
 
     return {
-        [76156] = {
+        [76156] = { -- Stalk With The Earthmother
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [76160] = {
-            [questKeys.requiredClasses] = classIDs.SHAMAN,
+        [76160] = { -- Stalk With The Earthmother
             [questKeys.objectives] = {nil,nil,{{206175}}},
             [questKeys.preQuestSingle] = {76156},
             [questKeys.requiredSourceItems] = {206170},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [76240] = {
-            [questKeys.requiredClasses] = classIDs.SHAMAN,
+        [76240] = { -- Stalk With The Earthmother
             [questKeys.objectives] = {nil,nil,{{206345}}},
             [questKeys.preQuestSingle] = {76160},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [77568] = {
+        [77568] = { -- A Hunter's Strength
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
         },
-        [77571] = {
+        [77571] = { -- Relics of the Kaldorei
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410061, nil, 208414}}},
             [questKeys.zoneOrSort] = sortKeys.DRUID,
             [questKeys.requiredSpell] = -410061,
         },
-        [77573] = {
+        [77573] = { -- Second-Story Work
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
             [questKeys.zoneOrSort] = sortKeys.ROGUE,
             [questKeys.requiredSpell] = -400105,
         },
-        [77574] = {
+        [77574] = { -- Meditation on Elune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredSpell] = -402862,
         },
-        [77575] = {
+        [77575] = { -- Amidst the Shadowed Webs
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77582] = {
+        [77582] = { -- A Trial of Fitness
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.ORC,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77584] = {
+        [77583] = { -- Atop the Cliffs
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.ORC,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
+        [77584] = { -- Hunt for the Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.requiredRaces] = raceIDs.ORC,
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
         },
-        [77585] = {
+        [77585] = { -- Icons of Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
             [questKeys.requiredRaces] = raceIDs.ORC,
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
             [questKeys.requiredSpell] = -410094,
         },
-        [77586] = {
+        [77586] = { -- Stolen Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403919, nil, 205230}}},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.requiredSpell] = -403919,
         },
-        [77587] = {
+        [77587] = { -- Icons of Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
             [questKeys.requiredRaces] = raceIDs.TROLL,
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
             [questKeys.requiredSpell] = -410094,
         },
-        [77588] = {
+        [77588] = { -- A Trial of Fitness
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.TROLL,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77616] = {
+        [77592] = { -- Atop the Cliffs
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.TROLL,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
+        [77616] = { -- The Lost Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.HUMAN,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77617] = {
+        [77617] = { -- Relics of the Light
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410002, nil, 205420}}},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
             [questKeys.requiredSpell] = -410002,
         },
-        [77619] = {
+        [77618] = { -- Thrice Stolen
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.HUMAN,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
+        [77619] = { -- Meditation on the Light
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredSpell] = -402862,
         },
-        [77620] = {
+        [77620] = { -- Spell Research
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{401760, nil, 203751}}},
             [questKeys.zoneOrSort] = sortKeys.MAGE,
             [questKeys.requiredSpell] = -401760,
         },
-        [77621] = {
+        [77621] = { -- Stolen Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403919, nil, 205230}}},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.requiredSpell] = -403919,
         },
-        [77642] = {
+        [77642] = { -- Wisdom of the Loa
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredSpell] = -402862,
         },
-        [77643] = {
+        [77643] = { -- Spell Research
             [questKeys.objectives] = {nil, {{404695}}, nil, nil, nil, {{401760, nil, 203751}}},
             [questKeys.zoneOrSort] = sortKeys.MAGE,
             [questKeys.requiredSpell] = -401760,
         },
-        [77648] = {
+        [77648] = { -- Relics of the Tauren
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410061, nil, 208414}}},
             [questKeys.zoneOrSort] = sortKeys.DRUID,
             [questKeys.requiredSpell] = -410061,
         },
-        [77649] = {
+        [77649] = { -- A Hunter's Strength
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
         },
-        [77651] = {
+        [77651] = { -- Into the Brambles
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.TAUREN,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77652] = {
+        [77652] = { -- Icons of Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410094, nil, 206381}}},
             [questKeys.requiredRaces] = raceIDs.TAUREN,
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
             [questKeys.requiredSpell] = -410094,
         },
-        [77655] = {
+        [77655] = { -- The Lost Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.DWARF,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77656] = {
+        [77656] = { -- The Lost Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.GNOME,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77657] = {
+        [77657] = { -- Relics of the Light
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410002, nil, 205420}}},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
             [questKeys.requiredSpell] = -410002,
         },
-        [77660] = {
+        [77658] = { -- Thrice Stolen
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.DWARF,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
+        [77659] = { -- Thrice Stolen
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
+            [questKeys.requiredRaces] = raceIDs.GNOME,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+            [questKeys.requiredSpell] = -400105,
+        },
+        [77660] = { -- Trek Through the Caves
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{410121, nil, 206168}}},
             [questKeys.requiredRaces] = raceIDs.DWARF,
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
             [questKeys.requiredSpell] = -410121,
         },
-        [77661] = {
+        [77661] = { -- Meditation on the Light
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredSpell] = -402862,
         },
-        [77666] = {
+        [77666] = { -- Stolen Power
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403919, nil, 205230}}},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.requiredSpell] = -403919,
         },
-        [77667] = {
+        [77667] = { -- Spell Research
             [questKeys.objectives] = {nil, {{405633}}, nil, nil, nil, {{401760, nil, 203751}}},
             [questKeys.zoneOrSort] = sortKeys.MAGE,
             [questKeys.requiredSpell] = -401760,
         },
-        [77668] = {
+        [77668] = { -- The Lost Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403470, nil, 204806}}},
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.requiredSpell] = -403470,
         },
-        [77669] = {
-            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 205420}}},
+        [77669] = { -- The Scarlet Rune
+            [questKeys.objectives] = {nil, nil, nil, nil, nil, {{400105, nil, 204795}}},
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
             [questKeys.zoneOrSort] = sortKeys.ROGUE,
             [questKeys.requiredSpell] = -400105,
         },
-        [77670] = {
+        [77670] = { -- Meditation on Undeath
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{402862, nil, 205951}}},
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredSpell] = -402862,
         },
-        [77671] = {
+        [77671] = { -- Spell Research
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{401760, nil, 203751}}},
             [questKeys.zoneOrSort] = sortKeys.MAGE,
             [questKeys.requiredSpell] = -401760,
         },
-        [77672] = {
+        [77672] = { -- The Lost Rune
             [questKeys.objectives] = {nil, nil, nil, nil, nil, {{403919, nil, 205230}}},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.requiredSpell] = -403919,
         },
-        [78088] = {
+        [78088] = { -- A Strange Artifact
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78089] = {
+        [78089] = { -- Advice From Stormwind
             [questKeys.preQuestSingle] = {78088},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78090] = {
+        [78090] = { -- A Second Opinion
             [questKeys.preQuestSingle] = {78089},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78091] = {
+        [78091] = { -- Earning Your Salt
             [questKeys.preQuestSingle] = {78090},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78092] = {
+        [78092] = { -- It Must Be Destroyed
             [questKeys.preQuestSingle] = {78091},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78093] = {
+        [78093] = { -- Return to Delgren
             [questKeys.preQuestSingle] = {78092},
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [78114] = {
+        [78114] = { -- Wild Wyvern Wrangling
             [questKeys.questLevel] = 22,
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
         },
-        [78121] = {
+        [78121] = { -- Wrangling a Wild Wyvern
             [questKeys.questLevel] = 22,
             [questKeys.preQuestSingle] = {78114},
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
         },
-        [78124] = {
+        [78124] = { -- Nar'thalas Almanac
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78127] = {
+        [78127] = { -- The Dalaran Digest
             [questKeys.questLevel] = 20,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78132] = {
-            [questKeys.objectives] = {nil,nil,{{209872}}},
-            [questKeys.objectivesText] = {"Retrieve the Dragonslayer's Helm and bring it to Alonso in Ashenvale."},
-            [questKeys.requiredSpell] = -425444,
+        [78132] = { -- Dragonslayer's Helm
+            [questKeys.requiredClasses] = classIDs.WARRIOR,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
         },
-        [78133] = {
-            [questKeys.objectives] = {nil,nil,{{209873}}},
-            [questKeys.objectivesText] = {"Retrieve the Dragonslayer's Shield and bring it to Alonso in Ashenvale."},
-            [questKeys.requiredSpell] = -425444,
+        [78133] = { -- Dragonslayer's Shield
+            [questKeys.requiredClasses] = classIDs.WARRIOR,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
         },
-        [78134] = {
-            [questKeys.objectives] = {nil,nil,{{209874}}},
-            [questKeys.objectivesText] = {"Retrieve the Dragonslayer's Lance and bring it to Alonso in Ashenvale."},
-            [questKeys.requiredSpell] = -425444,
+        [78134] = { -- Dragonslayer's Lance
+            [questKeys.requiredClasses] = classIDs.WARRIOR,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
         },
-        [78142] = {
+        [78142] = { -- Bewitchments and Glamours
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78143] = {
+        [78143] = { -- Secrets of the Dreamers
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78144] = {
+        [78144] = { -- Alonso the Dragonslayer
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425444,
             [questKeys.zoneOrSort] = sortKeys.WARRIOR,
             [questKeys.preQuestGroup] = {78132,78133,78134},
         },
-        [78145] = {
+        [78145] = { -- Arcanic Systems Manual
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78146] = {
+        [78146] = { -- Goaz Scrolls
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78147] = {
+        [78147] = { -- Crimes Against Anatomy
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78148] = {
+        [78148] = { -- Runes of the Sorceror-Kings
             [questKeys.name] = "Runes of the Sorcerer-Kings",
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78149] = {
+        [78149] = { -- Fury of the Land
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78150] = {
-            [questKeys.questLevel] = -1,
-            [questKeys.requiredSpell] = -425170,
+        [78150] = { -- Friend of the Library
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78192] = {
+        [78192] = { -- Secrets of the Light
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.objectives] = {{{3733},{3732}}},
             [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
         },
-        [78193] = {
+        [78193] = { -- Secrets of the Light
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.preQuestSingle] = {78192},
             [questKeys.requiredRaces] = raceIDs.NIGHT_ELF,
         },
-        [78194] = {
+        [78194] = { -- Secrets of Elune
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredRaces] = raceIDs.DWARF + raceIDs.HUMAN,
         },
-        [78195] = {
+        [78195] = { -- Secrets of Elune
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.preQuestSingle] = {78194},
             [questKeys.requiredRaces] = raceIDs.DWARF + raceIDs.HUMAN,
         },
-        [78196] = {
+        [78196] = { -- Secrets of Undeath
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredRaces] = raceIDs.TROLL,
         },
-        [78197] = {
+        [78197] = { -- Secrets of Undeath
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.preQuestSingle] = {78196},
             [questKeys.startedBy] = {{211229}},
             [questKeys.requiredRaces] = raceIDs.TROLL,
         },
-        [78198] = {
+        [78198] = { -- Secrets of the Loa
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
-        [78199] = {
+        [78199] = { -- Secrets of the Loa
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
             [questKeys.preQuestSingle] = {78198},
             [questKeys.finishedBy] = {nil,{410168}},
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
-        [78229] = {
+        [78229] = { -- Trial of The Owls
             [questKeys.preQuestGroup] = {90088,90089,90090},
             [questKeys.zoneOrSort] = sortKeys.DRUID,
             [questKeys.objectivesText] = {"Bring symbols of the three owls to Loganaar in Moonglade. NOTE: To accept this quest, you need to bring at least one symbol, but you can also bring all three at once."},
         },
-        [78261] = {
+        [78261] = { -- The Horn of Xelthos
             [questKeys.startedBy] = {nil,{410369}},
             [questKeys.finishedBy] = {nil,{410369}},
             [questKeys.requiredLevel] = 20,
             [questKeys.childQuests] = {78270},
             [questKeys.zoneOrSort] = sortKeys.ROGUE,
         },
-        [78265] = {
-            [questKeys.objectivesText] = {"Bring 24 Fish Oil to Grizzby."},
+        [78265] = { -- Fish Oil
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78266] = {
-            [questKeys.objectivesText] = {"Bring 20 Dark Iron Ordinance to Grizzby."},
+        [78266] = { -- Dark Iron Ordinance
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78267] = {
-            [questKeys.objectivesText] = {"Bring 16 Shredder Turbocharger to Grizzby."},
+        [78267] = { -- Shredder Turbochargers
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78270] = {
-            [questKeys.startedBy] = {{4086}},
+        [78270] = { -- Goblin Lockpicks
             [questKeys.objectivesText] = {"Pickpocket the work order from Venture Co. Operators in Windshear Crag"},
             [questKeys.zoneOrSort] = sortKeys.ROGUE,
             [questKeys.parentQuest] = 78261,
         },
-        [78277] = {
+        [78277] = { -- A Token of Gratitude
             [questKeys.objectivesText] = {"Complete the quest chain starting with Resting in Pieces to receive the Living Bomb rune."},
             [questKeys.requiredSpell] = -415936,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [78287] = {
+        [78287] = { -- Let Me Make You An Offer
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78288] = {
+        [78288] = { -- Let Me Make You An Offer
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78297] = {
+        [78297] = { -- You've Got Yourself A Deal
             [questKeys.preQuestSingle] = {78287},
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78304] = {
+        [78304] = { -- You've Got Yourself A Deal
             [questKeys.preQuestSingle] = {78288},
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
         },
-        [78307] = {
+        [78307] = { -- The Horn of Xelthos
+            [questKeys.finishedBy] = {{410369,}},
+            [questKeys.objectives] = {nil,nil,{{203994}}},
             [questKeys.preQuestSingle] = {78261},
             [questKeys.zoneOrSort] = sortKeys.ROGUE,
-            [questKeys.requiredSpell] = -400080,
         },
-        [78506] = {
+        [78506] = { -- Elemental Distress
             [questKeys.preQuestSingle] = {78920},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [78537] = {
+        [78537] = { -- Elixir of Insight
             [questKeys.preQuestSingle] = {78506},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [78561] = {
+        [78561] = { -- Elixir of Insight
             [questKeys.objectives] = {},
             [questKeys.preQuestSingle] = {78537},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [78575] = {
+        [78575] = { -- Hirzek
             [questKeys.objectives] = {{{212694}}},
             [questKeys.preQuestSingle] = {78561},
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
-        [78611] = {
+        [78611] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [78612] = {
+        [78612] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [78680] = {
+        [78680] = { -- Rumors Abound
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.preQuestSingle] = {1740},
         },
-        [78681] = {
+        [78681] = { -- The Conjuring
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.preQuestSingle] = {78680},
         },
-        [78684] = {
+        [78684] = { -- Mysterious Traveler
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.preQuestSingle] = {78681},
         },
-        [78702] = {
+        [78702] = { -- Raszel Ander
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.preQuestSingle] = {78684},
         },
-        [78872] = {
+        [78872] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [78909] = {
+        [78909] = { -- Shifting Scale Talisman
             [questKeys.objectivesText] = {"Tip: You need to loot Handful of Shifting Scales from Old Serra'kis in Blackfathom Deeps before you can start this quest.","","Bring N'ora Anyheart the following materials alongside the Handful of Shifting Scales to complete the talisman: A satchel of Strange Dust, five Greater Magic Essence, 2 Small Glimmering Shards and five gold pieces."},
             [questKeys.zoneOrSort] = zoneIDs.RATCHET,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78916] = { -- The Heart of the Void
+        [78916] = { -- The Heart of the Void (Alliance)
             [questKeys.startedBy] = {nil, nil, {209693}},
             [questKeys.finishedBy] = {{4783}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.sourceItemId] = 209693,
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
         },
-        [78917] = { -- The Heart of the Void
+        [78917] = { -- The Heart of the Void (Horde)
             [questKeys.startedBy] = {nil, nil, {211452}},
             [questKeys.finishedBy] = {{9087}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.sourceItemId] = 211452,
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
         },
-        [78920] = { -- Baron Aquanis
+        [78920] = { -- Baron Aquanis (Horde)
             [questKeys.startedBy] = {nil, nil, {211454}},
             [questKeys.finishedBy] = {{12736}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.zoneOrSort] = zoneIDs.ASHENVALE,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78921] = { -- Blackfathom Villainy
+        [78921] = { -- Blackfathom Villainy (Alliance)
             [questKeys.startedBy] = {{4787}},
             [questKeys.finishedBy] = {{4783}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -509,7 +527,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78922] = { -- Blackfathom Villainy
+        [78922] = { -- Blackfathom Villainy (Horde)
             [questKeys.startedBy] = {{4787}},
             [questKeys.finishedBy] = {{9087}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -517,7 +535,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78923] = { -- Knowledge in the Deeps
+        [78923] = { -- Knowledge in the Deeps (Alliance)
             [questKeys.startedBy] = {{2786}},
             [questKeys.finishedBy] = {{2786}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -525,7 +543,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78925] = { -- Twilight Falls
+        [78925] = { -- Twilight Falls (Alliance)
             [questKeys.startedBy] = {{4784}},
             [questKeys.finishedBy] = {{4784}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -533,7 +551,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78926] = { -- Researching the Corruption
+        [78926] = { -- Researching the Corruption (Alliance)
             [questKeys.startedBy] = {{8997}},
             [questKeys.finishedBy] = {{8997}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -541,7 +559,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [78927] = { -- Allegiance to the Old Gods
+        [78927] = { -- Allegiance to the Old Gods (Horde)
             [questKeys.startedBy] = {{12736}},
             [questKeys.finishedBy] = {{12736}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -569,14 +587,14 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
         },
-        [79090] = {
+        [79090] = { -- Repelling Invaders
             [questKeys.startedBy] = {{212727,212728,212729,212730,212801,212802}},
             [questKeys.finishedBy] = {{212970,217707}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
             [questKeys.questFlags] = questFlags.WEEKLY,
             [questKeys.zoneOrSort] = zoneIDs.ASHENVALE,
         },
-        [79091] = {
+        [79091] = { -- Archmage Antonidas: The Unabridged Autobiography
             [questKeys.startedBy] = {{211033},{386691}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -584,7 +602,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79092] = {
+        [79092] = { -- Archmage Theocritus's Research Journal
             [questKeys.startedBy] = {{211033},{386759}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -592,7 +610,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79093] = {
+        [79093] = { -- Rumi of Gnomeregan: The Collected Works
             [questKeys.startedBy] = {{211033},{408014}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -600,7 +618,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79094] = {
+        [79094] = { -- The Lessons of Ta'zo
             [questKeys.startedBy] = {{211022},{450001}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -608,7 +626,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79095] = {
+        [79095] = { -- The Apothecary's Metaphysical Primer
             [questKeys.startedBy] = {{211022},{405879}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -616,7 +634,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79096] = {
+        [79096] = { -- Ataeric: On Arcane Curiosities
             [questKeys.startedBy] = {{211022},{409700}},
             [questKeys.questLevel] = -1,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -624,18 +642,18 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79097] = {
+        [79097] = { -- Baxtan: On Destructive Magics
             [questKeys.questLevel] = -1,
             [questKeys.requiredSpell] = -425170,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
-        [79098] = {
+        [79098] = { -- Clear the Forest!
             [questKeys.startedBy] = {{212699,212703,212706,212707,212803,212804}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
             [questKeys.questFlags] = questFlags.WEEKLY,
             [questKeys.zoneOrSort] = zoneIDs.ASHENVALE,
         },
-        [79099] = { -- Baron Aquanis
+        [79099] = { -- Baron Aquanis (Alliance)
             [questKeys.startedBy] = {{214876}},
             [questKeys.finishedBy] = {{214876}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -643,112 +661,97 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.AUBERDINE,
             [questKeys.questFlags] = questFlags.RAID,
         },
-        [79100] = {
+        [79100] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [79101] = {
+        [79101] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [79102] = {
+        [79102] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [79103] = {
+        [79103] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
-        [79482] = {
+        [79482] = { -- Stolen Winter Veil Treats (Alliance)
             [questKeys.startedBy] = {{216902}},
             [questKeys.finishedBy] = {{216915}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79483] = {
-            [questKeys.startedBy] = {{216924}},
-            [questKeys.finishedBy] = {{216915}},
+        [79483] = { -- Stolen Winter Veil Treats (Horde)
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79484] = {
-            [questKeys.startedBy] = {{216915}},
-            [questKeys.finishedBy] = {{216902}},
-            [questKeys.objectives] = {nil,nil,{{17662}}},
+        [79484] = { -- You're a Mean One... (Alliance)
             [questKeys.preQuestSingle] = {79482},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79485] = {
-            [questKeys.startedBy] = {{216915}},
-            [questKeys.finishedBy] = {{216924}},
-            [questKeys.objectives] = {nil,nil,{{17662}}},
+        [79485] = { -- You're a Mean One... (Horde)
             [questKeys.preQuestSingle] = {79483},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79486] = {
+        [79486] = { -- A Smokywood Pastures' Thank You! (Alliance)
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79487] = {
+        [79487] = { -- A Smokywood Pastures' Thank You! (Horde)
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79492] = {
-            [questKeys.startedBy] = {{216902}},
-            [questKeys.finishedBy] = {{216902}},
-            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+        [79492] = { -- Metzen the Reindeer (Alliance)
             [questKeys.objectives] = {{{15664,"Find Metzen the Reindeer and rescue him"}},nil,{{21211}}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79495] = {
-            [questKeys.startedBy] = {{216924}},
-            [questKeys.finishedBy] = {{216924}},
-            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+        [79495] = { -- Metzen the Reindeer (Horde)
             [questKeys.objectives] = {{{15664,"Find Metzen the Reindeer and rescue him"}},nil,{{21211}}},
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
-        [79588] = {
+        [79588] = { -- Small Furry Paws
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
-        [79589] = {
+        [79589] = { -- Torn Bear Pelts
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
-        [79590] = {
-            [questKeys.startedBy] = {{14832}},
-            [questKeys.finishedBy] = {{14832}},
+        [79590] = { -- Heavy Grinding Stone
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 250}},
         },
-        [79591] = {
+        [79591] = { -- Whirring Bronze Gizmo
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
-        [79592] = {
+        [79592] = { -- Carnival Jerkins
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 1100},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 250}},
         },
-        [79593] = {
+        [79593] = { -- Coarse Weightstone
+            [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
-        [79594] = {
+        [79594] = { -- Copper Modulator
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
         },
-        [79595] = {
+        [79595] = { -- Carnival Boots
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
@@ -760,7 +763,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Arcane Blast",
             [questKeys.startedBy] = {nil,{450000}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 14,
             [questKeys.questLevel] = 20,
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredClasses] = classIDs.MAGE,
@@ -842,7 +845,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90007] = {
             [questKeys.name] = "Regeneration",
-            [questKeys.startedBy] = {nil,{152608,3642}},
+            [questKeys.startedBy] = {nil,{152608,152618,3642}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 14,
@@ -880,11 +883,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Enlightenment",
             [questKeys.startedBy] = {{202093}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
-            [questKeys.questLevel] = 5,
+            [questKeys.requiredLevel] = 8,
+            [questKeys.questLevel] = 8,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.MAGE,
-            [questKeys.objectivesText] = {"Polymorph 6 irregular critters like Gazelle, Maggot and Larva to loot Azora Apprentice Notes."},
+            [questKeys.objectivesText] = {"Polymorph 6 irregular critters like Gazelle, Maggot and Larva to loot Azora Apprentice Notes. You find them all over Elwynn Forest."},
             [questKeys.requiredSpell] = -415942,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
@@ -892,11 +895,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Enlightenment",
             [questKeys.startedBy] = {{208712}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
-            [questKeys.questLevel] = 5,
+            [questKeys.requiredLevel] = 8,
+            [questKeys.questLevel] = 8,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.MAGE,
-            [questKeys.objectivesText] = {"Polymorph 6 Odd Melon to loot Apothecary Notes."},
+            [questKeys.objectivesText] = {"Polymorph 6 Odd Melon to loot Apothecary Notes. You find them all over Tirisfal Glades."},
             [questKeys.requiredSpell] = -415942,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
         },
@@ -1200,7 +1203,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90036] = {
             [questKeys.name] = "Master Channeler",
-            [questKeys.startedBy] = {{114,480,832}},
+            [questKeys.startedBy] = {{114,480,832,210501}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 10,
@@ -1440,7 +1443,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90056] = {
             [questKeys.name] = "Starsurge",
-            [questKeys.startedBy] = {{212186}},
+            [questKeys.startedBy] = {{212186,212209}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 25,
@@ -1550,7 +1553,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Shadow Bolt Volley",
             [questKeys.startedBy] = {{391}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 18,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1562,7 +1565,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Shadow Bolt Volley",
             [questKeys.startedBy] = {nil,{450002}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 18,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1574,7 +1577,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Shadow Bolt Volley",
             [questKeys.startedBy] = {{3445}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 18,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1586,7 +1589,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Shadow Bolt Volley",
             [questKeys.startedBy] = {nil,{407312}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 18,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1646,7 +1649,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Soul Siphon",
             [questKeys.startedBy] = {{6124,209002}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 10,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1658,7 +1661,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Soul Siphon",
             [questKeys.startedBy] = {{448,204256}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 10,
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1670,7 +1673,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Soul Siphon",
             [questKeys.startedBy] = {{3204,208226}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 10,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1682,7 +1685,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Soul Siphon",
             [questKeys.startedBy] = {{1753,208682}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 10,
             [questKeys.questLevel] = 10,
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
@@ -1696,7 +1699,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 8,
-            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.objectivesText] = {"Obtain an Ominous Tome from Frostmane Shadowcaster in Troll cave west of Brewnall Village Loot Wendigo Blood from Wendigo mobs Loot Wolf Jawbone from Wolf mobs. Use the reagents on Shimmer Ridge and kill Soboz."},
             [questKeys.requiredSpell] = -425477,
@@ -1739,7 +1742,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
         },
         [90081] = {
-            [questKeys.name] = "Aspect of the Lion",
+            [questKeys.name] = "Heart of the Lion",
             [questKeys.startedBy] = {{211965}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
@@ -1754,7 +1757,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.name] = "Master Marksman",
             [questKeys.startedBy] = {{205692,208179,208975,209811}},
             [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
+            [questKeys.requiredLevel] = 6,
             [questKeys.questLevel] = 7,
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredClasses] = classIDs.HUNTER,
@@ -1764,19 +1767,19 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90083] = {
             [questKeys.name] = "Cobra Strikes",
-            [questKeys.startedBy] = {{205692,208179,208975,209811}},
+            [questKeys.startedBy] = {{3537,211951}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 25,
             [questKeys.requiredRaces] = raceIDs.NONE,
             [questKeys.requiredClasses] = classIDs.HUNTER,
-            [questKeys.objectivesText] = {"Use Hunter's Mark on the Bush and defeat the Poacher."},
+            [questKeys.objectivesText] = {"Buy Freshwater Snapper Bait from Zixil and use them on the boat in the lake to spawn Koartul."},
             [questKeys.requiredSpell] = -425759,
             [questKeys.zoneOrSort] = sortKeys.HUNTER,
         },
         [90084] = {
             [questKeys.name] = "Blade Dance",
-            [questKeys.startedBy] = {nil,{408718}},
+            [questKeys.startedBy] = {nil,{414532}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 16,
@@ -1800,7 +1803,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90086] = {
             [questKeys.name] = "Blade Dance",
-            [questKeys.startedBy] = {nil,{414532}},
+            [questKeys.startedBy] = {nil,{408718}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 14,
@@ -2328,7 +2331,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90134] = {
             [questKeys.name] = "Quick Draw",
-            [questKeys.startedBy] = {nil,{386675}},
+            [questKeys.startedBy] = {nil,{450005}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 5,
@@ -2340,7 +2343,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90135] = {
             [questKeys.name] = "Quick Draw",
-            [questKeys.startedBy] = {nil,{386675}},
+            [questKeys.startedBy] = {nil,{450008}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 5,
@@ -2352,7 +2355,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90136] = {
             [questKeys.name] = "Quick Draw",
-            [questKeys.startedBy] = {nil,{386675}},
+            [questKeys.startedBy] = {nil,{450006}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 5,
@@ -2364,7 +2367,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90137] = {
             [questKeys.name] = "Quick Draw",
-            [questKeys.startedBy] = {nil,{386675}},
+            [questKeys.startedBy] = {nil,{450007}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 5,
@@ -2505,18 +2508,6 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -416037,
             [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
-        [90149] = {
-            [questKeys.name] = "Heart of the Lion",
-            [questKeys.startedBy] = {{211965}},
-            [questKeys.finishedBy] = nil,
-            [questKeys.requiredLevel] = 1,
-            [questKeys.questLevel] = 25,
-            [questKeys.requiredRaces] = raceIDs.NONE,
-            [questKeys.requiredClasses] = classIDs.HUNTER,
-            [questKeys.objectivesText] = {"Kill Carrodin in the cave, and loot the rune."},
-            [questKeys.requiredSpell] = -410115,
-            [questKeys.zoneOrSort] = sortKeys.HUNTER,
-        },
         [90150] = {
             [questKeys.name] = "Sniper Training",
             [questKeys.startedBy] = {{210482},{408802}},
@@ -2639,7 +2630,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90161] = {
             [questKeys.name] = "Strength of Soul",
-            [questKeys.startedBy] = {{450003}},
+            [questKeys.startedBy] = {nil,{450003}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 23,
@@ -2853,6 +2844,510 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredSpell] = -402854,
             [questKeys.zoneOrSort] = sortKeys.PRIEST,
         },
+        [90179] = {
+            [questKeys.name] = "Shared Pain",
+            [questKeys.startedBy] = {{2038}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Lord Melenas to receive the rune."},
+            [questKeys.requiredSpell] = -402854,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90180] = {
+            [questKeys.name] = "Shared Pain",
+            [questKeys.startedBy] = {{13157,3204}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 13,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Makasgar or Gazzuz to receive the rune."},
+            [questKeys.requiredSpell] = -402854,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90181] = {
+            [questKeys.name] = "Shared Pain",
+            [questKeys.startedBy] = {{1934}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 6,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Tirisfal Farmers to receive the rune."},
+            [questKeys.requiredSpell] = -402854,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90182] = {
+            [questKeys.name] = "Homunculi",
+            [questKeys.startedBy] = {{1124,1397}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Frostmane Seers and Shadowcasters to receive the rune."},
+            [questKeys.requiredSpell] = -402852,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90183] = {
+            [questKeys.name] = "Homunculi",
+            [questKeys.startedBy] = {{474}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Defias Rogue Wizards to receive the rune."},
+            [questKeys.requiredSpell] = -402852,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90184] = {
+            [questKeys.name] = "Homunculi",
+            [questKeys.startedBy] = {{2002,2003,2004,2005}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 6,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Grells to receive the rune."},
+            [questKeys.requiredSpell] = -402852,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90185] = {
+            [questKeys.name] = "Homunculi",
+            [questKeys.startedBy] = {{3206}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Voodoo Trolls to receive the rune."},
+            [questKeys.requiredSpell] = -402852,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90186] = {
+            [questKeys.name] = "Homunculi",
+            [questKeys.startedBy] = {{1535,1536}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 6,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Scarlet Warriors and Missionaries to receive the rune."},
+            [questKeys.requiredSpell] = -402852,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90187] = {
+            [questKeys.name] = "Shadow Word: Death",
+            [questKeys.startedBy] = {{572}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 19,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kill Leprithus to receive the rune."},
+            [questKeys.requiredSpell] = -402849,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90188] = {
+            [questKeys.name] = "Shadow Word: Death",
+            [questKeys.startedBy] = {{209742}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 18,
+            [questKeys.questLevel] = 15,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Cast Dispel on Desert Mirage to receive the rune."},
+            [questKeys.requiredSpell] = -402849,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90189] = {
+            [questKeys.name] = "Shadow Word: Death",
+            [questKeys.startedBy] = {{209908}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 20,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Kneel at the Heretic Idol and receive the rune."},
+            [questKeys.requiredSpell] = -402849,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90190] = {
+            [questKeys.name] = "Shadow Word: Death",
+            [questKeys.startedBy] = {nil,{411674}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Loot the Prophecy of a King's Demise on the table next to Thule Ravenclaw and receive the rune."},
+            [questKeys.requiredSpell] = -402849,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90191] = {
+            [questKeys.name] = "Shadow Word: Death",
+            [questKeys.startedBy] = {nil,{414646}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 12,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Loot the Remnant on the island and receive the rune."},
+            [questKeys.requiredSpell] = -402849,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90192] = {
+            [questKeys.name] = "Circle of Healing",
+            [questKeys.startedBy] = {{215,909,910},{450009}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 24,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PRIEST,
+            [questKeys.objectivesText] = {"Loot Dark Insight from Defias, then use it on the Secluded Grave north east of Darkshire and receive the rune."},
+            [questKeys.requiredSpell] = -402859,
+            [questKeys.zoneOrSort] = sortKeys.PRIEST,
+        },
+        [90193] = {
+            [questKeys.name] = "Between the Eyes",
+            [questKeys.startedBy] = {nil,{405946}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Loot the Dusty Chest, two level 10 mobs will spawn, kill them and receive the rune."},
+            [questKeys.requiredSpell] = -400081,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90194] = {
+            [questKeys.name] = "Between the Eyes",
+            [questKeys.startedBy] = {nil,{386777}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Loot the Dusty Chest, two level 10 mobs will spawn, kill them and receive the rune."},
+            [questKeys.requiredSpell] = -400081,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90195] = {
+            [questKeys.name] = "Between the Eyes",
+            [questKeys.startedBy] = {nil,{404830}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Loot the Dusty Chest and receive the rune."},
+            [questKeys.requiredSpell] = -400081,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90196] = {
+            [questKeys.name] = "Between the Eyes",
+            [questKeys.startedBy] = {nil,{405201}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 7,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Pickpocket the Shipwreck Cache Key from nearby Vile Fin Murlocs, and use it on the Shipwreck Cache next to the ship and receive the rune."},
+            [questKeys.requiredSpell] = -400081,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90197] = {
+            [questKeys.name] = "Between the Eyes",
+            [questKeys.startedBy] = {nil,{407352}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Pickpocket the Gnarlpine Stash Key from nearby Gnarlpine Furbolgs, and use it on the Gnarlpine stash out on the tree branch and receive the rune."},
+            [questKeys.requiredSpell] = -400081,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90198] = {
+            [questKeys.name] = "Envenom",
+            [questKeys.startedBy] = {{3536},{410847}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Buy a Hot Tip from Kris Legace, and use it on the Rusty Safe under the waterfall in Western Plaguelands to receive the rune."},
+            [questKeys.requiredSpell] = -400102,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90199] = {
+            [questKeys.name] = "Mutilate",
+            [questKeys.startedBy] = {{2038}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Kill Lord Melanas and loot the rune."},
+            [questKeys.requiredSpell] = -400094,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90200] = {
+            [questKeys.name] = "Mutilate",
+            [questKeys.startedBy] = {{6123,208886}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Kill Dark Iron Spies until Blackrats Note drops, then hand it in to Blackrat at Misty Pine Refuge to receive the rune."},
+            [questKeys.requiredSpell] = -400094,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90201] = {
+            [questKeys.name] = "Shiv",
+            [questKeys.startedBy] = {{215,909,910},{450010}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Kill Defias until Engraved Gold Ring drops, then go to the statue in the middle of Raven Hill and /kneel in front of it to receive the rune."},
+            [questKeys.requiredSpell] = -424988,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90202] = {
+            [questKeys.name] = "Shamanistic Rage",
+            [questKeys.startedBy] = {{212837}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill the Primordial Anomaly which can spawn around The Charred Vale. It shifts forms so you must use different schools of magic to kill it. Loot it to receive the rune."},
+            [questKeys.requiredSpell] = -425343,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90203] = {
+            [questKeys.name] = "Way of Earth",
+            [questKeys.startedBy] = {{209742}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 12,
+            [questKeys.questLevel] = 15,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Cast Purge on Desert Mirage to receive the rune."},
+            [questKeys.requiredSpell] = -410107,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90204] = {
+            [questKeys.name] = "Way of Earth",
+            [questKeys.startedBy] = {{1773}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 15,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill Rot Hide Mystics until a Rot Totem drops, use it to spawn a level 15 elite. Kill it to receive the rune."},
+            [questKeys.requiredSpell] = -410107,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90205] = {
+            [questKeys.name] = "Lava Burst",
+            [questKeys.startedBy] = {{2373}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 25,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill Mudsnout Shamans until Kajaric Icon drops, equip it and follow its instructions to receieve the rune."},
+            [questKeys.requiredSpell] = -410095,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90206] = {
+            [questKeys.name] = "Carve",
+            [questKeys.startedBy] = {{1115,1116,1117,1118,208711}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.HUNTER,
+            [questKeys.objectivesText] = {"Kill Rockjaw Troggs until Rabbit Musk drops, consume it and use Tame Beast on a Rabbit critter, then speak to Toby at Amberstill Ranch to receive the rune."},
+            [questKeys.requiredSpell] = -425758,
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
+        },
+        [90207] = {
+            [questKeys.name] = "Carve",
+            [questKeys.startedBy] = {{2009,2010,2011,2012,2013,2014,2152,209948}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.HUNTER,
+            [questKeys.objectivesText] = {"Kill Gnarlpine Furbolgs until Deer Musk drops, consume it and use Tame Beast on a Deer critter, then speak to Raelaeron next to the hunter trainer in Darnassus to receive the rune."},
+            [questKeys.requiredSpell] = -425758,
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
+        },
+        [90208] = {
+            [questKeys.name] = "Carve",
+            [questKeys.startedBy] = {{3111,3114,3113,3112,5824,5826,208184}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 8,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.HUNTER,
+            [questKeys.objectivesText] = {"Kill Razermane Quillboars until Adder Pheromone drops, consume it and use Tame Beast on an Adder critter, then speak to Razzil in Razor Hill to receive the rune."},
+            [questKeys.requiredSpell] = -425758,
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
+        },
+        [90209] = {
+            [questKeys.name] = "Carve",
+            [questKeys.startedBy] = {{2949,2950,2951,205635}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 7,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.HUNTER,
+            [questKeys.objectivesText] = {"Kill Palemane Gnolls until Prairie Dog Musk drops, consume it and use Tame Beast on a Prairie Dog critter, then speak to Takoda Sunmane in Bloodhoof Village to receive the rune."},
+            [questKeys.requiredSpell] = -425758,
+            [questKeys.zoneOrSort] = sortKeys.HUNTER,
+        },
+        [90210] = {
+            [questKeys.name] = "Saber Slash",
+            [questKeys.startedBy] = {nil,{407731}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Loot the Stonemason's Toolbox on the platform behind the quest givers at Stonewrough Dam to receive the rune."},
+            [questKeys.requiredSpell] = -424984,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90211] = {
+            [questKeys.name] = "Saber Slash",
+            [questKeys.startedBy] = {{210549}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 4,
+            [questKeys.questLevel] = 15,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Approach the Defias Scout in Stealth and Pickpocket them to receive the rune."},
+            [questKeys.requiredSpell] = -424984,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90212] = {
+            [questKeys.name] = "Saber Slash",
+            [questKeys.startedBy] = {nil,{407457}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Take a left from the main gate, go up and around to the right and jump down onto the wall behind the stable and drop on to the roof and open the Stable Hand's Trunk to receive the rune. NOTE: You need 80 Lockpicking to open the trunk."},
+            [questKeys.requiredSpell] = -424984,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90213] = {
+            [questKeys.name] = "Saber Slash",
+            [questKeys.startedBy] = {nil,{409131}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Use Sprint and jump to the Rusty Chest on the platform and open it to receive the rune. NOTE: You need to have learnt Sprint to make the jump, alternatively you can bring a Swiftness Potion."},
+            [questKeys.requiredSpell] = -424984,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90214] = {
+            [questKeys.name] = "Saber Slash",
+            [questKeys.startedBy] = {nil,{414624}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 10,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.ROGUE,
+            [questKeys.objectivesText] = {"Loot the Lighthouse Stash between the roots of the tree to receive the rune."},
+            [questKeys.requiredSpell] = -424984,
+            [questKeys.zoneOrSort] = sortKeys.ROGUE,
+        },
+        [90215] = {
+            [questKeys.name] = "Water Shield",
+            [questKeys.startedBy] = {{1972}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 15,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill Grimson the Pale and equip the Icon, follow its instructions to receive the rune."},
+            [questKeys.requiredSpell] = -410097,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90216] = {
+            [questKeys.name] = "Water Shield",
+            [questKeys.startedBy] = {nil,{152608,152618,3642}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 14,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill Kolkar Centaurs until Kolkar Booty Key drops, then use it on Kolkars' Booty and equip the Icon, follow its instructions to receive the rune."},
+            [questKeys.requiredSpell] = -410097,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90217] = {
+            [questKeys.name] = "Shield Mastery",
+            [questKeys.startedBy] = {nil,{450011}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 5,
+            [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Find a Galvanic Icon, loot it and equip the Icon, follow its instructions to kill 10 enemies with Lightning Bolt Rank 1 to receive the rune."},
+            [questKeys.requiredSpell] = -410098,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90218] = {
+            [questKeys.name] = "Shield Mastery",
+            [questKeys.startedBy] = {nil,{450012}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 5,
+            [questKeys.requiredRaces] = raceIDs.TAUREN,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Find a Galvanic Icon, loot it and equip the Icon, follow its instructions to kill 10 enemies with Lightning Bolt Rank 1 to receive the rune."},
+            [questKeys.requiredSpell] = -410098,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90219] = {
+            [questKeys.name] = "Molten Blast",
+            [questKeys.startedBy] = {{208275}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Gather some Mage and Warlock friends and attack the Frozen Makrura with fire spells."},
+            [questKeys.requiredSpell] = -425344,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90220] = {
+            [questKeys.name] = "Molten Blast",
+            [questKeys.startedBy] = {nil,{404352}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 9,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.objectivesText] = {"Kill Bael'dun Dwarves until Artifact Storage Key drops, use it on the Artifact Storage. Equip the Icon and follow its instructions to receive the rune."},
+            [questKeys.requiredSpell] = -425344,
+            [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
     }
 end
 
@@ -2861,172 +3356,172 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
     local raceIDs = QuestieDB.raceKeys
 
     local questFixesHorde = {
-        [78124] = {
+        [78124] = { -- Nar'thalas Almanac
             [questKeys.startedBy] = {nil,{409496}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Nar'thalas Almanac, Vol. 74' and bring it to Owen Thadd in Undercity."},
         },
-        [78127] = {
+        [78127] = { -- The Dalaran Digest
             [questKeys.startedBy] = {nil,{409501}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'The Dalaran Digest, Vol. 23' and bring it to Owen Thadd in Undercity."},
         },
-        [78142] = {
+        [78142] = { -- Bewitchments and Glamours
             [questKeys.startedBy] = {nil,{409562}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Bewitchments and Glamours' and bring it to Owen Thadd in Undercity."},
         },
-        [78143] = {
+        [78143] = { -- Secrets of the Dreamers
             [questKeys.startedBy] = {nil,{409692}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Secrets of the Dreamers' located just outside the Wailing Cavern dungeon and bring it to Owen Thadd in Undercity."},
         },
-        [78145] = {
+        [78145] = { -- Arcanic Systems Manual
             [questKeys.startedBy] = {nil,{409700}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Arcanic Systems Manual' and bring it to Owen Thadd in Undercity."},
         },
-        [78146] = {
+        [78146] = { -- Goaz Scrolls
             [questKeys.startedBy] = {nil,{409717}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Goaz Scrolls' and bring it to Owen Thadd in Undercity."},
         },
-        [78147] = {
+        [78147] = { -- Crimes Against Anatomy
             [questKeys.startedBy] = {nil,{409735}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Crimes Against Anatomy' and bring it to Owen Thadd in Undercity."},
         },
-        [78148] = {
+        [78148] = { -- Runes of the Sorceror-Kings
             [questKeys.startedBy] = {nil,{409731}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Runes of the Sorcerer-Kings' and bring it to Owen Thadd in Undercity."},
         },
-        [78149] = {
+        [78149] = { -- Fury of the Land
             [questKeys.startedBy] = {nil,{409711}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Fury of the Land' and bring it to Owen Thadd in Undercity."},
         },
-        [78150] = {
+        [78150] = { -- Friend of the Library
             [questKeys.startedBy] = {{211022}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"You will need to hand in 10 books to receive the rune, however you can hand 1 in at any time."},
         },
-        [78611] = {
+        [78611] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [78612] = {
+        [78612] = { -- A Full Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [78872] = {
+        [78872] = { -- A Full Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [79097] = {
+        [79097] = { -- Baxtan: On Destructive Magics
             [questKeys.startedBy] = {nil,{407566}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectivesText] = {"Collect 'Baxtan: On Destructive Magics' and bring it to Owen Thadd in Undercity."},
         },
-        [79100] = {
+        [79100] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [79101] = {
+        [79101] = { -- A Full Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [79102] = {
+        [79102] = { -- A Full Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
-        [79103] = {
+        [79103] = { -- A Full Shipment
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
     }
 
     local questFixesAlliance = {
-        [78124] = {
+        [78124] = { -- Nar'thalas Almanac
             [questKeys.startedBy] = {nil,{409496}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Nar'thalas Almanac, Vol. 74' and bring it to Garion Wendell in Stormwind."},
         },
-        [78127] = {
+        [78127] = { -- The Dalaran Digest
             [questKeys.startedBy] = {nil,{409501}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'The Dalaran Digest, Vol. 23' and bring it to Garion Wendell in Stormwind."},
         },
-        [78142] = {
+        [78142] = { -- Bewitchments and Glamours
             [questKeys.startedBy] = {nil,{409562}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Bewitchments and Glamours' and bring it to Garion Wendell in Stormwind."},
         },
-        [78143] = {
+        [78143] = { -- Secrets of the Dreamers
             [questKeys.startedBy] = {nil,{409692}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Secrets of the Dreamers' located just outside the Wailing Cavern dungeon and bring it to Garion Wendell in Stormwind."},
         },
-        [78145] = {
+        [78145] = { -- Arcanic Systems Manual
             [questKeys.startedBy] = {nil,{409700}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Arcanic Systems Manual' and bring it to Garion Wendell in Stormwind."},
         },
-        [78146] = {
+        [78146] = { -- Goaz Scrolls
             [questKeys.startedBy] = {nil,{409717}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Goaz Scrolls' and bring it to Garion Wendell in Stormwind."},
         },
-        [78147] = {
+        [78147] = { -- Crimes Against Anatomy
             [questKeys.startedBy] = {nil,{409735}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Crimes Against Anatomy' and bring it to Garion Wendell in Stormwind."},
         },
-        [78148] = {
+        [78148] = { -- Runes of the Sorceror-Kings
             [questKeys.startedBy] = {nil,{409731}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Runes of the Sorcerer-Kings' and bring it to Garion Wendell in Stormwind."},
         },
-        [78149] = {
+        [78149] = { -- Fury of the Land
             [questKeys.startedBy] = {nil,{409711}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Fury of the Land' and bring it to Garion Wendell in Stormwind."},
         },
-        [78150] = {
+        [78150] = { -- Friend of the Library
             [questKeys.startedBy] = {{211033}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"You will need to hand in 10 books to receive the rune, however you can hand 1 in at any time."},
         },
-        [78611] = {
+        [78611] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [78612] = {
+        [78612] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [78872] = {
+        [78872] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [79097] = {
+        [79097] = { -- Baxtan: On Destructive Magics
             [questKeys.startedBy] = {nil,{407566}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectivesText] = {"Collect 'Baxtan: On Destructive Magics' and bring it to Garion Wendell in Stormwind."},
         },
-        [79100] = {
+        [79100] = { -- A Waylaid Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [79101] = {
+        [79101] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [79102] = {
+        [79102] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
-        [79103] = {
+        [79103] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },

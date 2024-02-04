@@ -18,6 +18,10 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.TIRISFAL_GLADES] = {{66.4, 40.2}},
             },
         },
+        [202699] = { -- Baron Aquanis
+            [npcKeys.spawns] = { [zoneIDs.BLACKFATHOM_DEEPS] = { { -1, -1 } } },
+            [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
+        },
         [203079] = { -- Wandering Swordsman
             [npcKeys.spawns] = {
                 [1] = {{53.5, 47.5}},
@@ -45,7 +49,6 @@ function SeasonOfDiscovery:LoadNPCs()
         [204068] = { -- Lady Sarevess
             [npcKeys.spawns] = {[zoneIDs.BLACKFATHOM_DEEPS]={{-1,-1}}},
             [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
-
         },
         [204070] = { -- Soboz
             [npcKeys.spawns] = {
@@ -69,9 +72,10 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.ELWYNN_FOREST] = {{61.8, 47.6}},
             },
         },
-        [202699] = { -- Baron Aquanis
-            [npcKeys.spawns] = {[zoneIDs.BLACKFATHOM_DEEPS]={{-1,-1}}},
-            [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
+        [204503] = { -- Dead Acolyte
+            [npcKeys.spawns] = {
+                [zoneIDs.ELWYNN_FOREST] = {{56.4, 57.8}},
+            },
         },
         [205153] = { -- Ada Gelhardt
             [npcKeys.spawns] = {
@@ -155,6 +159,11 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.DUN_MOROGH] = {{46.4, 53.2}},
             },
         },
+        [208711] = { -- Toby
+            [npcKeys.spawns] = {
+                [zoneIDs.DUN_MOROGH] = {{63.6, 50.2}},
+            },
+        },
         [208752] = { -- Frozen Trogg
             [npcKeys.spawns] = {
                 [zoneIDs.DUN_MOROGH] = {{69.2, 58.2}},
@@ -173,6 +182,11 @@ function SeasonOfDiscovery:LoadNPCs()
         [208919] = { -- Blueheart
             [npcKeys.spawns] = {
                 [zoneIDs.TIRISFAL_GLADES] = {{61.6, 51.4}},
+            },
+        },
+        [208927] = { -- Dead Acolyte
+            [npcKeys.spawns] = {
+                [zoneIDs.TIRISFAL_GLADES] = {{76.4, 44.8}},
             },
         },
         [209004] = { -- Bruart
@@ -201,6 +215,11 @@ function SeasonOfDiscovery:LoadNPCs()
             },
             [npcKeys.zoneID] = zoneIDs.BLACKFATHOM_DEEPS,
         },
+        [209742] = { -- Desert Mirage
+            [npcKeys.spawns] = {
+                [zoneIDs.THE_BARRENS] = {{57.6, 35.8}},
+            },
+        },
         [209797] = { -- Bruuz
             [npcKeys.spawns] = {
                 [zoneIDs.THE_BARRENS] = {{64.8, 39.8}},
@@ -211,9 +230,29 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.TELDRASSIL] = {{56.6, 57.8}},
             },
         },
+        [209908] = { -- Heretic Idol
+            [npcKeys.spawns] = {
+                [zoneIDs.LOCH_MODAN] = {{71.8, 27.0}},
+            },
+        },
         [209928] = { -- Mowgh
             [npcKeys.spawns] = {
                 [zoneIDs.TELDRASSIL] = {{48.0, 31.6}},
+            },
+        },
+        [209948] = { -- Relaeron
+            [npcKeys.spawns] = {
+                [zoneIDs.DARNASSUS] = {{39.2, 9.0}},
+            },
+        },
+        [209954] = { -- Demonic Remains
+            [npcKeys.spawns] = {
+                [zoneIDs.LOCH_MODAN] = {{72.6, 68.8}},
+            },
+        },
+        [209958] = { -- Graix
+            [npcKeys.spawns] = {
+                [zoneIDs.LOCH_MODAN] = {{72.6, 68.8}},
             },
         },
         [210107] = { -- Kackle
@@ -236,8 +275,8 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.WESTFALL] = {{51.2,22.3},{54,31.8},{44.6,35.2},{38.4,52.5},{62.5,61.1}}
             },
         },
-        [210533] = {
-            [npcKeys.spawns] = { -- Silverspur
+        [210533] = { -- Silverspur
+            [npcKeys.spawns] = {
                 [zoneIDs.WESTFALL] = {{35.6, 38.4}},
             },
         },
@@ -249,6 +288,11 @@ function SeasonOfDiscovery:LoadNPCs()
         [210549] = { -- Defias Scout
             [npcKeys.spawns] = {
                 [zoneIDs.WESTFALL] = {{51.2, 46.8},{51.6, 55.6}},
+            },
+        },
+        [210845] = { -- Jixo Madrocket
+            [npcKeys.spawns] = {
+                [zoneIDs.STONETALON_MOUNTAINS] = {{59.2, 62.4}},
             },
         },
         [210995] = { -- Alonso
@@ -276,6 +320,11 @@ function SeasonOfDiscovery:LoadNPCs()
         [211736] = { -- Grizzled Protector
             [npcKeys.spawns] = {
                 [zoneIDs.SILVERPINE_FOREST] = {},
+            },
+        },
+        [211951] = { -- Koartul
+            [npcKeys.spawns] = {
+                [zoneIDs.HILLSBRAD_FOOTHILLS] = {{60.8,31.8}},
             },
         },
         [211965] = { -- Carrodin
@@ -361,9 +410,14 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.SILVERPINE_FOREST] = {{59.6,71.4}},
             },
         },
+        [212837] = { -- Primordial Anomaly
+            [npcKeys.spawns] = {
+                [zoneIDs.STONETALON_MOUNTAINS] = {{32.6, 67.6}},
+            },
+        },
         [212969] = { -- Kazragore
             [npcKeys.spawns] = {
-                [zoneIDs.ASHENVALE] = {{39.4, 67.2},{73.8,61.9}},
+                [zoneIDs.ASHENVALE] = {{39.4, 67.2}},
             },
         },
         [212970] = { -- Felore Moonray
@@ -412,6 +466,11 @@ function SeasonOfDiscovery:LoadNPCs()
                 [zoneIDs.REDRIDGE_MOUNTAINS] = {{35.4,8.6},{64.2,45.8},{77.4,69.4}},
             },
         },
+        [214519] = { -- Incinerator Gar'im
+            [npcKeys.spawns] = {
+                [zoneIDs.REDRIDGE_MOUNTAINS] = {{77.6, 85.8}},
+            },
+        },
         [216902] = { -- Wulmort Jinglepocket
             [npcKeys.spawns] = {
                 [zoneIDs.IRONFORGE] = {{33.7,67.23}},
@@ -431,6 +490,9 @@ function SeasonOfDiscovery:LoadNPCs()
         },
         [217706] = { -- Kazragore
             [npcKeys.friendlyToFaction] = "H",
+            [npcKeys.spawns] = {
+                [zoneIDs.ASHENVALE] = {{74.0, 60.6}},
+            },
         },
         [217707] = { -- Felore Moonray
             [npcKeys.friendlyToFaction] = "A",

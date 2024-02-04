@@ -77,6 +77,9 @@ function QuestieQuestFixes:Load()
         [29] = {
             [questKeys.triggerEnd] = {"Complete the Trial of the Lake.", {[zoneIDs.MOONGLADE]={{36.17,41.67}}}},
         },
+        [30] = {
+            [questKeys.extraObjectives] = {{{[zoneIDs.MOONGLADE]={{36.5,41.7}}}, Questie.ICON_TYPE_EVENT, l10n("Combine the Pendant halves at the Shrine of Remulos.")}},
+        },
         [33] = {
             [questKeys.preQuestSingle] = {},
         },
@@ -95,6 +98,9 @@ function QuestieQuestFixes:Load()
         [117] = {
             [questKeys.name] = "Thunderbrew",
         },
+        [136] = {
+            [questKeys.startedBy] = {{513,515,126,171,456,127,517,458,391},nil,{1357}},
+        },
         [148] = {
             [questKeys.preQuestSingle] = {}, -- #1173
         },
@@ -109,6 +115,10 @@ function QuestieQuestFixes:Load()
         },
         [165] = {
             [questKeys.exclusiveTo] = {148}, --#1173
+        },
+        [178] = {
+            [questKeys.startedBy] = {{429,431,432,433,434,568,579,703,947},nil,{1962}},
+            [questKeys.objectivesText] = {"Bring the Faded Shadowhide Pendant to Theocritus the Mage. NOTE: This is a very rare drop!"},
         },
         [201] = {
             [questKeys.triggerEnd] = {"Locate the hunters' camp", {[zoneIDs.STRANGLETHORN_VALE]={{35.65,10.59}}}},
@@ -130,6 +140,9 @@ function QuestieQuestFixes:Load()
             [questKeys.specialFlags] = 1,
             [questKeys.exclusiveTo] = {253}, --#2173
             [questKeys.preQuestSingle] = {252},
+        },
+        [272] = {
+            [questKeys.extraObjectives] = {{{[zoneIDs.MOONGLADE]={{36.5,41.7}}}, Questie.ICON_TYPE_EVENT, l10n("Combine the Pendant halves at the Shrine of Remulos.")}},
         },
         [273] = {
             [questKeys.triggerEnd] = {"Find Huldar, Miran, and Saean",{[zoneIDs.LOCH_MODAN]={{51.16, 68.96}}}},
@@ -566,7 +579,7 @@ function QuestieQuestFixes:Load()
             [questKeys.parentQuest] = 950, -- workaround, can't mimic ingame 100%
         },
         [968] = {
-            [questKeys.startedBy] = {{2338,2339},nil,{5352}}, -- temp correction for item start
+            [questKeys.startedBy] = {{2338,2339},nil,{5352}},
         },
         [976] = {
             [questKeys.triggerEnd] = {"Protect Feero Ironhand", {[zoneIDs.DARKSHORE]={{43.54,94.39}}}},
@@ -865,6 +878,9 @@ function QuestieQuestFixes:Load()
         [1479] = {
             [questKeys.triggerEnd] = {"Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.", {[zoneIDs.DARNASSUS]={{41.31,43.54}}}},
         },
+        [1480] = {
+            [questKeys.startedBy] = {{4663,4664,4665,4666,4667,4668,4705,13019},nil,{20310}},
+        },
         [1483] = {
             [questKeys.exclusiveTo] = {1093},
         },
@@ -1130,6 +1146,9 @@ function QuestieQuestFixes:Load()
         [2300] = {
             [questKeys.preQuestSingle] = {}, -- #1825
             [questKeys.exclusiveTo] = {2281}, -- #1817
+        },
+        [2318] = {
+            [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
         },
         [2358] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
@@ -1569,6 +1588,9 @@ function QuestieQuestFixes:Load()
         },
         [4361] = {
             [questKeys.preQuestSingle] = {4342},
+        },
+        [4451] = {
+            [questKeys.startedBy] = {{8566,5840,5844,5846,15692,8504},nil,{11818}},
         },
         [4485] = {
             [questKeys.startedBy] = {{6179},nil,nil},
@@ -3400,6 +3422,7 @@ function QuestieQuestFixes:Load()
         },
         [8867] = {
             [questKeys.requiredSourceItems] = {21557,21558,21559,21571,21574,21576},
+            [questKeys.objectives] = {nil,{{180771,"Lunar Fireworks Fired"},{180772,"Lunar Fireworks Cluster Fired"}}},
         },
         [8868] = {
             [questKeys.triggerEnd] = {"Receive Elune's Blessing.", {[zoneIDs.MOONGLADE]={{63.89,62.5}}}},
@@ -3709,6 +3732,9 @@ function QuestieQuestFixes:Load()
         },
         [9120] = {
             [questKeys.startedBy] = {{15990},nil,{22520}},
+        },
+        [9121] = {
+            [questKeys.requiredMinRep] = {529,0},
         },
         [9124] = {
             [questKeys.requiredMinRep] = {529,3000},
