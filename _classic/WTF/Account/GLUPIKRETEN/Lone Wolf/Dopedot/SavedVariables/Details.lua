@@ -7,320 +7,26 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 665,
+					["combatId"] = 703,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005716,
+							["totalabsorbed"] = 0.005205,
 							["pets"] = {
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 11.005716,
+							["total_without_pet"] = 31.005205,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 11.005716,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["colocacao"] = 1,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Adder"] = 11,
-							},
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886253,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[1120] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Adder"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 1120,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 60.14052458388957,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.005716,
-							["start_time"] = 1706886253,
-							["delay"] = 0,
-							["last_event"] = 1706886253,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006936,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.006936,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.006936,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3300-00003CF655",
-							["aID"] = "3300",
-							["damage_from"] = {
-								["Dopedot"] = true,
-							},
-							["targets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886253,
-							["nome"] = "Adder",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 11.006936,
-							["start_time"] = 1706886253,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 665,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 665,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 665,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 0,
-							["grupo"] = true,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706886253,
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 665,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["tempo_start"] = 1706886253,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					11, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "16:04:14",
-				["pvp"] = true,
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Adder",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 506356.779,
-				["CombatEndedAt"] = 506356.779,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "16:04:13",
-				["end_time"] = 506356.779,
-				["combat_id"] = 665,
-				["frags"] = {
-					["Adder"] = 1,
-				},
-				["totals_grupo"] = {
-					11, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 11.005716,
-						}, -- [1]
-					},
-				},
-				["combat_counter"] = 709,
-				["start_time"] = 506356.596,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 664,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007694,
-							["pets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 16.007694,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.007694,
+							["total"] = 31.005205,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Burning Blade Fanatic"] = 7,
-								["Burning Blade Apprentice"] = 9,
+								["Razormane Thornweaver"] = 31,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -328,513 +34,28 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886217,
+							["end_time"] = 1706959559,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[980] = {
+									[5019] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4,
+										["n_max"] = 19,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 7,
-											["Burning Blade Apprentice"] = 9,
+											["Razormane Thornweaver"] = 31,
 										},
-										["n_total"] = 16,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 980,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 1.285758554215665,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.007694,
-							["start_time"] = 1706886205,
-							["delay"] = 0,
-							["last_event"] = 1706886214,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003922,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 49.003922,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 49.003922,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00023D037E",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Ridor"] = true,
-							},
-							["targets"] = {
-								["Ridor"] = 49,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886217,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Ridor"] = 49,
-										},
-										["n_total"] = 49,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 49,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 49,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 2,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 233.003922,
-							["start_time"] = 1706886206,
-							["delay"] = 0,
-							["last_event"] = 1706886216,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007689,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 12.007689,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 12.007689,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-0001BD03BB",
-							["aID"] = "3197",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Muffles"] = true,
-							},
-							["targets"] = {
-								["Muffles"] = 12,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886217,
-							["nome"] = "Burning Blade Fanatic",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Muffles"] = 12,
-										},
-										["n_total"] = 12,
+										["n_total"] = 31,
 										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 12,
+										["counter"] = 2,
+										["total"] = 31,
 										["c_max"] = 0,
-										["id"] = 1,
+										["id"] = 5019,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 157.007689,
-							["start_time"] = 1706886216,
-							["delay"] = 1706886206,
-							["last_event"] = 1706886206,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 664,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 664,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 664,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[980] = {
-										["activedamt"] = -1,
-										["id"] = 980,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["debuff_uptime"] = 10,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706886217,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00023D037E",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 664,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Dopedot", -- [1]
-				},
-				["CombatStartedAt"] = 506353.645,
-				["tempo_start"] = 1706886205,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					451, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Curse of Agony"] = 1,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 3,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "16:03:38",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Fanatic",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 506320.744,
-				["CombatEndedAt"] = 506320.744,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "16:03:25",
-				["end_time"] = 506320.744,
-				["combat_id"] = 664,
-				["frags"] = {
-					["Burning Blade Fanatic"] = 1,
-				},
-				["combat_counter"] = 708,
-				["totals_grupo"] = {
-					16, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 16.007694,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 506308.294,
-				["contra"] = "Burning Blade Fanatic",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 663,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001187,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 393.001187,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 533.0011870000001,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-								["Voidwalker Minion"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 327,
-								["Voidwalker Minion"] = 206,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886184,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 2,
-										["n_max"] = 0,
-										["targets"] = {
-											["Voidwalker Minion"] = 2,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 2,
-										["counter"] = 2,
-										["total"] = 2,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[403629] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 105,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 179,
-											["Voidwalker Minion"] = 105,
-										},
-										["n_total"] = 105,
-										["n_min"] = 105,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 284,
-										["c_max"] = 179,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 179,
-										["successful_casted"] = 0,
-										["c_total"] = 179,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 54,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 107,
-										},
-										["n_total"] = 107,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 107,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -850,250 +71,44 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 15.75341925283497,
+							["last_dps"] = 12.56288695300379,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 102.001187,
-							["start_time"] = 1706886151,
+							["damage_taken"] = 0.005205,
+							["start_time"] = 1706959556,
 							["delay"] = 0,
-							["last_event"] = 1706886184,
+							["last_event"] = 1706959558,
 						}, -- [1]
 						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002952,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 140.002952,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 140.002952,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-								["Voidwalker Minion"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 41,
-								["Voidwalker Minion"] = 99,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886184,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 41,
-											["Voidwalker Minion"] = 99,
-										},
-										["n_total"] = 140,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 4.137936750018024,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 75.002952,
-							["start_time"] = 1706886164,
-							["delay"] = 1706886165,
-							["last_event"] = 1706886184,
-						}, -- [2]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.005583,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 167.005583,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 167.005583,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D03BC",
-							["aID"] = "8996",
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Ridor"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 59,
-								["Ridor"] = 33,
-								["Rupqua <Dopedot>"] = 75,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886205,
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Dopedot"] = 59,
-											["Ridor"] = 33,
-											["Rupqua <Dopedot>"] = 75,
-										},
-										["n_total"] = 133,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 167,
-										["c_max"] = 34,
-										["MISS"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 34,
-										["successful_casted"] = 0,
-										["c_total"] = 34,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 313.005583,
-							["start_time"] = 1706886170,
-							["delay"] = 1706886165,
-							["last_event"] = 1706886204,
-						}, -- [3]
-						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004908,
+							["totalabsorbed"] = 0.005295,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 68.004908,
+							["total_without_pet"] = 0.005295,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 68.004908,
+							["total"] = 0.005295,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D03BB",
-							["aID"] = "3198",
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE2277",
+							["aID"] = "3268",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
+								["Benedictiion"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 43,
-								["Ridor"] = 25,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886205,
-							["nome"] = "Burning Blade Apprentice",
+							["end_time"] = 1706959559,
+							["nome"] = "Razormane Thornweaver",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Dopedot"] = 43,
-											["Ridor"] = 25,
-										},
-										["n_total"] = 68,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 68,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[12746] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 12746,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
 							["friendlyfire"] = {
@@ -1101,135 +116,82 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 327.004908,
-							["start_time"] = 1706886183,
-							["delay"] = 1706886155,
-							["last_event"] = 1706886203,
-						}, -- [4]
+							["damage_taken"] = 105.005295,
+							["start_time"] = 1706959559,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 663,
+					["combatId"] = 703,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 663,
+					["combatId"] = 703,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 50.00354400000001,
-							["resource"] = 0.003544,
+							["received"] = 26.002263,
+							["resource"] = 0.002263,
 							["targets"] = {
-								["Dopedot"] = 50,
+								["Dopedot"] = 26,
 							},
-							["total"] = 50.00354400000001,
+							["total"] = 26.002263,
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["flag_original"] = 1297,
 							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.003544,
+							["totalover"] = 0.002263,
 							["grupo"] = true,
 							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.003544,
-							["passiveover"] = 0.003544,
+							["alternatepower"] = 0.002263,
+							["passiveover"] = 0.002263,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31818] = {
-										["total"] = 50,
+										["total"] = 26,
 										["id"] = 31818,
 										["totalover"] = 0,
 										["targets"] = {
-											["Dopedot"] = 50,
+											["Dopedot"] = 26,
 										},
-										["counter"] = 2,
+										["counter"] = 1,
 									},
 								},
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["tipo"] = 3,
-							["last_event"] = 1706886189,
+							["last_event"] = 1706959758,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 663,
+					["combatId"] = 703,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["pets"] = {
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[696] = {
 										["activedamt"] = 1,
 										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 33,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1237,43 +199,17 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 50,
-							["debuff_uptime"] = 12,
+							["buff_uptime"] = 3,
+							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886184,
+							["last_event"] = 1706959559,
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["grupo"] = true,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D03BB",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 663,
+					["combatId"] = 703,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1284,8 +220,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506306.377,
-				["tempo_start"] = 1706886151,
+				["tempo_start"] = 1706959556,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -1297,11 +232,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1437, -- [1]
-					58, -- [2]
+					105, -- [1]
+					0, -- [2]
 					{
-						9, -- [1]
-						[0] = 50,
+						0, -- [1]
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -1323,50 +258,32 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
-					["Dopedot"] = {
-						["Chaos Bolt"] = 2,
-						["Life Tap"] = 1,
-						["Drain Soul"] = 1,
-						["Incinerate"] = 1,
-						["Fear"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 8,
-					},
-					["Burning Blade Apprentice"] = {
-						["Summon Voidwalker"] = 2,
-						["Shadow Bolt"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:03:05",
+				["data_fim"] = "12:25:59",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
+				["enemy"] = "Razormane Thornweaver",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 506287.958,
-				["CombatEndedAt"] = 506287.958,
+				["TotalElapsedCombatTime"] = 11139.518,
+				["CombatEndedAt"] = 11139.518,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:02:31",
-				["end_time"] = 506287.958,
-				["combat_id"] = 663,
+				["data_inicio"] = "12:25:57",
+				["end_time"] = 11139.518,
+				["combat_id"] = 703,
 				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Razormane Thornweaver"] = 1,
 				},
-				["combat_counter"] = 707,
+				["combat_counter"] = 747,
 				["totals_grupo"] = {
-					533, -- [1]
+					31, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 50,
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -1397,43 +314,41 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 533.0011870000001,
-							["Rupqua <Dopedot>"] = 140.002952,
+							["Dopedot"] = 31.005205,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 506254.124,
-				["contra"] = "Burning Blade Apprentice",
+				["start_time"] = 11137.05,
+				["contra"] = "Razormane Thornweaver",
 				["TimeData"] = {
 				},
-			}, -- [3]
+			}, -- [1]
 			{
 				{
-					["combatId"] = 662,
+					["combatId"] = 702,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003139,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007276,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 392.003139,
+							["total_without_pet"] = 190.007276,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 476.003139,
+							["total"] = 236.007276,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
+								["Razormane Water Seeker"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 213,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 263,
+								["Razormane Water Seeker"] = 236,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -1441,190 +356,26 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886144,
+							["end_time"] = 1706959550,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
+									[707] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 21,
 										["targets"] = {
-											["Voidwalker Minion"] = 0,
+											["Razormane Water Seeker"] = 61,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5782] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Voidwalker Minion"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 5782,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 52,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 102,
-											["Burning Blade Apprentice"] = 50,
-											["Voidwalker Minion"] = 0,
-										},
-										["n_total"] = 152,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 152,
-										["c_max"] = 0,
-										["EVADE"] = 1,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[403629] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 121,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 121,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 119,
-										},
-										["n_total"] = 240,
-										["n_min"] = 119,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 240,
-										["c_max"] = 0,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 19.5878004609044,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 16.003139,
-							["start_time"] = 1706886120,
-							["delay"] = 0,
-							["last_event"] = 1706886143,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005335,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 84.005335,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 84.005335,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 42,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 42,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886144,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 42,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 42,
-										},
-										["n_total"] = 84,
-										["n_min"] = 13,
+										["n_total"] = 61,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
 										["counter"] = 6,
-										["total"] = 84,
+										["total"] = 61,
 										["c_max"] = 0,
-										["id"] = 7799,
+										["id"] = 707,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -1638,75 +389,116 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 3.456867412866848,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 54.005335,
-							["start_time"] = 1706886134,
-							["delay"] = 1706886127,
-							["last_event"] = 1706886143,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003012,
-							["pets"] = {
-								"Voidwalker Minion <Burning Blade Apprentice>", -- [1]
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 37.003012,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 70.003012,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-0000BD03BB",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 16,
-								["Rupqua <Dopedot>"] = 54,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886144,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
+									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 37,
+										["n_max"] = 0,
 										["targets"] = {
-											["Rupqua <Dopedot>"] = 37,
+											["Razormane Water Seeker"] = 0,
 										},
-										["n_total"] = 37,
-										["n_min"] = 37,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 37,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 20791,
+										["RESIST"] = 1,
+										["id"] = 2,
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 1,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[980] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Razormane Water Seeker"] = 74,
+										},
+										["n_total"] = 74,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 980,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Razormane Water Seeker"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Razormane Water Seeker"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -1714,43 +506,112 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["last_dps"] = 9.845943929911911,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 213.003012,
-							["start_time"] = 1706886140,
-							["delay"] = 1706886127,
-							["last_event"] = 1706886127,
-						}, -- [3]
+							["damage_taken"] = 13.007276,
+							["start_time"] = 1706959526,
+							["delay"] = 0,
+							["last_event"] = 1706959550,
+						}, -- [1]
 						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.003352,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005188,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 33.003352,
+							["total_without_pet"] = 46.005188,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 33.003352,
+							["total"] = 46.005188,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D03D6",
-							["aID"] = "8996",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Water Seeker"] = 46,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959550,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Razormane Water Seeker"] = 46,
+										},
+										["n_total"] = 46,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 1.919281935752932,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005188,
+							["start_time"] = 1706959548,
+							["delay"] = 1706959531,
+							["last_event"] = 1706959549,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003108,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 13.003108,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 13.003108,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3267-0000BE21B7",
+							["aID"] = "3267",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 16,
-								["Rupqua <Dopedot>"] = 17,
+								["Dopedot"] = 13,
 							},
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886144,
-							["ownerName"] = "Burning Blade Apprentice",
-							["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
+							["end_time"] = 1706959550,
+							["nome"] = "Razormane Water Seeker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -1758,16 +619,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 17,
+										["n_max"] = 13,
 										["targets"] = {
-											["Dopedot"] = 16,
-											["Rupqua <Dopedot>"] = 17,
+											["Dopedot"] = 13,
 										},
-										["n_total"] = 33,
-										["n_min"] = 16,
+										["n_total"] = 13,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 33,
+										["counter"] = 1,
+										["total"] = 13,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1779,7 +639,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -1790,50 +650,50 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 263.003352,
-							["start_time"] = 1706886140,
-							["delay"] = 1706886127,
-							["last_event"] = 1706886127,
-						}, -- [4]
+							["damage_taken"] = 236.003108,
+							["start_time"] = 1706959549,
+							["delay"] = 1706959529,
+							["last_event"] = 1706959529,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 662,
+					["combatId"] = 702,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 662,
+					["combatId"] = 702,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 25.00317,
-							["resource"] = 0.00317,
+							["received"] = 26.00627,
+							["resource"] = 0.00627,
 							["targets"] = {
-								["Dopedot"] = 25,
+								["Dopedot"] = 26,
 							},
-							["total"] = 25.00317,
+							["total"] = 26.00627,
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["flag_original"] = 1297,
 							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.00317,
+							["totalover"] = 0.00627,
 							["grupo"] = true,
 							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.00317,
-							["passiveover"] = 0.00317,
+							["alternatepower"] = 0.00627,
+							["passiveover"] = 0.00627,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31818] = {
-										["total"] = 25,
+										["total"] = 26,
 										["id"] = 31818,
 										["totalover"] = 0,
 										["targets"] = {
-											["Dopedot"] = 25,
+											["Dopedot"] = 26,
 										},
 										["counter"] = 1,
 									},
@@ -1841,12 +701,12 @@ _detalhes_database = {
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["tipo"] = 3,
-							["last_event"] = 1706886144,
+							["last_event"] = 1706959538,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 662,
+					["combatId"] = 702,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1854,6 +714,40 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[980] = {
+										["activedamt"] = 0,
+										["id"] = 980,
+										["targets"] = {
+										},
+										["uptime"] = 22,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[707] = {
+										["activedamt"] = -1,
+										["id"] = 707,
+										["targets"] = {
+										},
+										["actived_at"] = 1706959541,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[172] = {
+										["activedamt"] = 0,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[5782] = {
 										["activedamt"] = 0,
 										["id"] = 5782,
@@ -1891,24 +785,13 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
 							},
-							["buff_uptime"] = 48,
-							["debuff_uptime"] = 10,
+							["buff_uptime"] = 24,
+							["debuff_uptime"] = 44,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886144,
+							["last_event"] = 1706959550,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -1916,31 +799,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
 						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-0000BD03BB",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 662,
+					["combatId"] = 702,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1951,8 +821,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506252.575,
-				["tempo_start"] = 1706886120,
+				["CombatStartedAt"] = 11135.516,
+				["tempo_start"] = 1706959526,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -1964,11 +834,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					546, -- [1]
+					403, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -1991,46 +861,44 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 4,
-						["Chaos Bolt"] = 2,
-						["Fear"] = 2,
+						["Shoot"] = 2,
+						["Life Tap"] = 1,
+						["Corruption"] = 1,
+						["Fear"] = 1,
+						["Curse of Agony"] = 1,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
+						["Firebolt"] = 2,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:02:24",
+				["data_fim"] = "12:25:51",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
+				["enemy"] = "Razormane Water Seeker",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 24.30099999997765,
-				["CombatEndedAt"] = 506247.108,
+				["TotalElapsedCombatTime"] = 23.97000000000116,
+				["CombatEndedAt"] = 11130.995,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:02:00",
-				["end_time"] = 506247.108,
-				["combat_id"] = 662,
+				["data_inicio"] = "12:25:27",
+				["end_time"] = 11130.995,
+				["combat_id"] = 702,
 				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Razormane Water Seeker"] = 1,
 				},
-				["combat_counter"] = 706,
+				["combat_counter"] = 746,
 				["totals_grupo"] = {
-					476, -- [1]
+					236, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2061,43 +929,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 476.003139,
-							["Rupqua <Dopedot>"] = 84.005335,
+							["Dopedot"] = 236.007276,
+							["Rupqua <Dopedot>"] = 46.005188,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 506222.807,
-				["contra"] = "Burning Blade Apprentice",
+				["start_time"] = 11107.025,
+				["contra"] = "Razormane Water Seeker",
 				["TimeData"] = {
 				},
-			}, -- [4]
+			}, -- [2]
 			{
 				{
-					["combatId"] = 661,
+					["combatId"] = 701,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001811,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001946,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 352.001811,
+							["total_without_pet"] = 210.001946,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 410.001811,
+							["total"] = 267.001946,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
+								["Sunscale Lashtail"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 205,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 205,
+								["Sunscale Lashtail"] = 267,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -2105,37 +972,65 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886112,
+							["end_time"] = 1706959491,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[412758] = {
-										["c_amt"] = 1,
+									[5019] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 57,
+										["n_max"] = 12,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 57,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 176,
+											["Sunscale Lashtail"] = 12,
 										},
-										["n_total"] = 158,
-										["n_min"] = 50,
+										["n_total"] = 12,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 233,
-										["c_max"] = 75,
-										["id"] = 412758,
+										["counter"] = 1,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = 5019,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 75,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 75,
-										["n_amt"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[2] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sunscale Lashtail"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = 2,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -2143,17 +1038,45 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 119,
+										["n_max"] = 151,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 119,
+											["Sunscale Lashtail"] = 151,
 										},
-										["n_total"] = 119,
-										["n_min"] = 119,
+										["n_total"] = 151,
+										["n_min"] = 151,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 119,
+										["total"] = 151,
 										["c_max"] = 0,
 										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Sunscale Lashtail"] = 47,
+										},
+										["n_total"] = 47,
+										["n_min"] = 47,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 47,
+										["c_max"] = 0,
+										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -2171,40 +1094,39 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 31.62130271475619,
+							["last_dps"] = 31.8238314660263,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 31.001811,
-							["start_time"] = 1706886098,
+							["damage_taken"] = 41.001946,
+							["start_time"] = 1706959482,
 							["delay"] = 0,
-							["last_event"] = 1706886111,
+							["last_event"] = 1706959489,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00721,
+							["totalabsorbed"] = 0.008437,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 58.00721,
+							["total_without_pet"] = 57.008437,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 58.00721,
+							["total"] = 57.008437,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 29,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 29,
+								["Sunscale Lashtail"] = 57,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886112,
+							["end_time"] = 1706959491,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -2214,16 +1136,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 15,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 29,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 29,
+											["Sunscale Lashtail"] = 57,
 										},
-										["n_total"] = 58,
+										["n_total"] = 57,
 										["n_min"] = 13,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 58,
+										["total"] = 57,
 										["c_max"] = 0,
 										["id"] = 7799,
 										["r_dmg"] = 0,
@@ -2243,99 +1164,73 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 4.473793768311996,
+							["last_dps"] = 6.794807747317234,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00721,
-							["start_time"] = 1706886100,
+							["damage_taken"] = 0.008437,
+							["start_time"] = 1706959482,
 							["delay"] = 0,
-							["last_event"] = 1706886109,
+							["last_event"] = 1706959489,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007159,
+							["totalabsorbed"] = 0.001946,
 							["pets"] = {
-								"Voidwalker Minion <Burning Blade Apprentice>", -- [1]
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 31.007159,
+							["total_without_pet"] = 41.001946,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 31.007159,
+							["total"] = 41.001946,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00013D03BB",
-							["aID"] = "3198",
+							["serial"] = "Creature-0-5250-1-8029-3254-00003E2163",
+							["aID"] = "3254",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 31,
+								["Dopedot"] = 41,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886112,
-							["nome"] = "Burning Blade Apprentice",
+							["end_time"] = 1706959491,
+							["nome"] = "Sunscale Lashtail",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[12746] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 22,
 										["targets"] = {
+											["Dopedot"] = 41,
 										},
-										["n_total"] = 0,
-										["n_min"] = 0,
+										["n_total"] = 41,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 2,
+										["total"] = 41,
 										["c_max"] = 0,
-										["id"] = 12746,
+										["id"] = 1,
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 1,
+										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Dopedot"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -2343,167 +1238,70 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 205.007159,
-							["start_time"] = 1706886103,
+							["damage_taken"] = 267.001946,
+							["start_time"] = 1706959486,
 							["delay"] = 0,
-							["last_event"] = 1706886103,
+							["last_event"] = 1706959488,
 						}, -- [3]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.006871,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 0.006871,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.006871,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D03CC",
-							["aID"] = "8996",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886112,
-							["ownerName"] = "Burning Blade Apprentice",
-							["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 205.006871,
-							["start_time"] = 1706886112,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 661,
+					["combatId"] = 701,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 661,
+					["combatId"] = 701,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["received"] = 25.0085,
-							["resource"] = 0.0085,
-							["targets"] = {
-								["Dopedot"] = 25,
-							},
-							["total"] = 25.0085,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.0085,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.0085,
-							["passiveover"] = 0.0085,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 25,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 25,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706886113,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 661,
+					["combatId"] = 701,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["flag_original"] = 1297,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 									[696] = {
 										["activedamt"] = 1,
 										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 14,
+										["uptime"] = 9,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 3,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
 							},
-							["buff_uptime"] = 28,
-							["debuff_uptime"] = 5,
+							["buff_uptime"] = 18,
+							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886112,
+							["last_event"] = 1706959491,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -2511,31 +1309,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
 						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-0000BD03BB",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 661,
+					["combatId"] = 701,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2546,7 +1331,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["tempo_start"] = 1706886098,
+				["CombatStartedAt"] = 11063.006,
+				["tempo_start"] = 1706959482,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -2558,11 +1344,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					441, -- [1]
+					308, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2585,47 +1371,42 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 3,
+						["Incinerate"] = 1,
 						["Chaos Bolt"] = 1,
-						["Fear"] = 1,
+						["Shoot"] = 2,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 3,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
-						["Summon Voidwalker"] = 1,
+						["Firebolt"] = 2,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:01:52",
+				["data_fim"] = "12:24:51",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
+				["enemy"] = "Sunscale Lashtail",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 506215.472,
-				["CombatEndedAt"] = 506215.472,
+				["TotalElapsedCombatTime"] = 8.390000000001237,
+				["CombatEndedAt"] = 11071.396,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:01:39",
-				["end_time"] = 506215.472,
-				["combat_id"] = 661,
+				["data_inicio"] = "12:24:43",
+				["end_time"] = 11071.396,
+				["combat_id"] = 701,
 				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Sunscale Lashtail"] = 1,
 				},
-				["combat_counter"] = 705,
+				["combat_counter"] = 745,
 				["totals_grupo"] = {
-					410, -- [1]
+					267, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2656,43 +1437,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 410.001811,
-							["Rupqua <Dopedot>"] = 58.00721,
+							["Dopedot"] = 267.001946,
+							["Rupqua <Dopedot>"] = 57.008437,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 506202.506,
-				["contra"] = "Burning Blade Apprentice",
+				["start_time"] = 11063.006,
+				["contra"] = "Sunscale Lashtail",
 				["TimeData"] = {
 				},
-			}, -- [5]
+			}, -- [3]
 			{
 				{
-					["combatId"] = 660,
+					["combatId"] = 700,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008534,
+							["totalabsorbed"] = 0.005077,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 348.008534,
+							["total_without_pet"] = 256.005077,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 431.008534,
+							["total"] = 360.005077,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Voidwalker Minion"] = true,
+								["Sunscale Screecher"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 217,
-								["Voidwalker Minion"] = 214,
+								["Sunscale Screecher"] = 360,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -2700,7 +1480,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886090,
+							["end_time"] = 1706959447,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
@@ -2709,17 +1489,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["n_max"] = 61,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 55,
-											["Voidwalker Minion"] = 157,
+											["Sunscale Screecher"] = 120,
 										},
-										["n_total"] = 212,
-										["n_min"] = 50,
+										["n_total"] = 120,
+										["n_min"] = 59,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 212,
+										["counter"] = 3,
+										["total"] = 120,
 										["c_max"] = 0,
+										["RESIST"] = 1,
 										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -2730,7 +1510,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -2740,7 +1520,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 136,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 136,
+											["Sunscale Screecher"] = 136,
 										},
 										["n_total"] = 136,
 										["n_min"] = 136,
@@ -2766,42 +1546,40 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 32.77631437256554,
+							["last_dps"] = 24.74942094046427,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 64.008534,
-							["start_time"] = 1706886077,
+							["damage_taken"] = 22.005077,
+							["start_time"] = 1706959433,
 							["delay"] = 0,
-							["last_event"] = 1706886089,
+							["last_event"] = 1706959446,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003853,
+							["totalabsorbed"] = 0.005351,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 83.00385299999999,
+							["total_without_pet"] = 104.005351,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 83.00385299999999,
+							["total"] = 104.005351,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-								["Voidwalker Minion"] = true,
+								["Sunscale Screecher"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 26,
-								["Voidwalker Minion"] = 57,
+								["Sunscale Screecher"] = 104,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886090,
+							["end_time"] = 1706959447,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -2811,16 +1589,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 15,
+										["n_max"] = 16,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 26,
-											["Voidwalker Minion"] = 57,
+											["Sunscale Screecher"] = 104,
 										},
-										["n_total"] = 83,
-										["n_min"] = 13,
+										["n_total"] = 104,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 83,
+										["counter"] = 7,
+										["total"] = 104,
 										["c_max"] = 0,
 										["id"] = 7799,
 										["r_dmg"] = 0,
@@ -2832,7 +1609,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 7,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -2840,60 +1617,61 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 6.312080076034451,
+							["last_dps"] = 7.150099752509146,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 35.003853,
-							["start_time"] = 1706886077,
+							["damage_taken"] = 66.005351,
+							["start_time"] = 1706959433,
 							["delay"] = 0,
-							["last_event"] = 1706886089,
+							["last_event"] = 1706959446,
 						}, -- [2]
 						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.005928,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008745,
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["total_without_pet"] = 80.005928,
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 88.008745,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 80.005928,
+							["total"] = 88.008745,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D037F",
-							["aID"] = "8996",
+							["serial"] = "Creature-0-5250-1-8029-3255-00003E21E5",
+							["aID"] = "3255",
+							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 64,
-								["Rupqua <Dopedot>"] = 16,
+								["Dopedot"] = 22,
+								["Rupqua <Dopedot>"] = 66,
 							},
-							["fight_component"] = true,
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886090,
-							["nome"] = "Voidwalker Minion",
+							["end_time"] = 1706959447,
+							["nome"] = "Sunscale Screecher",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 24,
 										["targets"] = {
-											["Dopedot"] = 64,
-											["Rupqua <Dopedot>"] = 16,
+											["Dopedot"] = 22,
+											["Rupqua <Dopedot>"] = 66,
 										},
-										["n_total"] = 51,
-										["n_min"] = 16,
+										["n_total"] = 88,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 80,
-										["c_max"] = 29,
+										["total"] = 88,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2901,10 +1679,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 29,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 29,
-										["n_amt"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -2915,133 +1693,63 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 214.005928,
-							["start_time"] = 1706886080,
+							["damage_taken"] = 360.008745,
+							["start_time"] = 1706959436,
 							["delay"] = 0,
-							["last_event"] = 1706886088,
+							["last_event"] = 1706959446,
 						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005241,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 19.005241,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.005241,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D037E",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Rupqua <Dopedot>"] = 19,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886090,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 19,
-										},
-										["n_total"] = 19,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 19,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 217.005241,
-							["start_time"] = 1706886089,
-							["delay"] = 1706886080,
-							["last_event"] = 1706886080,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 660,
+					["combatId"] = 700,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 660,
+					["combatId"] = 700,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 25.008739,
-							["resource"] = 0.008739,
+							["received"] = 52.006677,
+							["resource"] = 0.006677,
 							["targets"] = {
-								["Dopedot"] = 25,
+								["Dopedot"] = 52,
 							},
-							["total"] = 25.008739,
+							["total"] = 52.006677,
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["flag_original"] = 1297,
 							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.008739,
+							["totalover"] = 0.006677,
 							["grupo"] = true,
 							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.008739,
-							["passiveover"] = 0.008739,
+							["alternatepower"] = 0.006677,
+							["passiveover"] = 0.006677,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31818] = {
-										["total"] = 25,
+										["total"] = 52,
 										["id"] = 31818,
 										["totalover"] = 0,
 										["targets"] = {
-											["Dopedot"] = 25,
+											["Dopedot"] = 52,
 										},
-										["counter"] = 1,
+										["counter"] = 2,
 									},
 								},
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["tipo"] = 3,
-							["last_event"] = 1706886091,
+							["last_event"] = 1706959451,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 660,
+					["combatId"] = 700,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3056,12 +1764,24 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
+									[6307] = {
+										["activedamt"] = 1,
+										["id"] = 6307,
+										["targets"] = {
+										},
+										["actived_at"] = 1706959436,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
 									[696] = {
 										["activedamt"] = 1,
 										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 13,
+										["uptime"] = 14,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -3072,19 +1792,19 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 13,
+										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 4,
+										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime"] = 26,
+							["buff_uptime"] = 23,
 							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886090,
+							["last_event"] = 1706959447,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -3092,31 +1812,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
 						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D037E",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 660,
+					["combatId"] = 700,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3127,8 +1834,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506201.238,
-				["tempo_start"] = 1706886077,
+				["CombatStartedAt"] = 11013.465,
+				["tempo_start"] = 1706959433,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3140,11 +1847,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					530, -- [1]
+					448, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 52,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3167,45 +1874,41 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 4,
+						["Incinerate"] = 3,
 						["Chaos Bolt"] = 1,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
+						["Firebolt"] = 5,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:01:31",
+				["data_fim"] = "12:24:08",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
+				["enemy"] = "Sunscale Screecher",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 13.15000000002328,
-				["CombatEndedAt"] = 506193.655,
+				["TotalElapsedCombatTime"] = 14.54600000000028,
+				["CombatEndedAt"] = 11028.011,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:01:17",
-				["end_time"] = 506193.655,
-				["combat_id"] = 660,
+				["data_inicio"] = "12:23:53",
+				["end_time"] = 11028.011,
+				["combat_id"] = 700,
 				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Sunscale Screecher"] = 1,
 				},
-				["combat_counter"] = 704,
+				["combat_counter"] = 744,
 				["totals_grupo"] = {
-					431, -- [1]
+					360, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 25,
+						[0] = 52,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -3236,41 +1939,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 431.008534,
-							["Rupqua <Dopedot>"] = 83.00385299999999,
+							["Dopedot"] = 360.005077,
+							["Rupqua <Dopedot>"] = 104.005351,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 506180.505,
-				["contra"] = "Burning Blade Apprentice",
+				["start_time"] = 11013.465,
+				["contra"] = "Sunscale Screecher",
 				["TimeData"] = {
 				},
-			}, -- [6]
+			}, -- [4]
 			{
 				{
-					["combatId"] = 659,
+					["combatId"] = 699,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00844,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005438,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 202.00844,
+							["total_without_pet"] = 249.005438,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 241.00844,
+							["total"] = 333.005438,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
+								["Fleeting Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Fanatic"] = 241,
+								["Fleeting Plainstrider"] = 333,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -3278,24 +1982,52 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886067,
+							["end_time"] = 1706959404,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 21,
+										},
+										["n_total"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[403629] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 147,
+										["n_max"] = 128,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 147,
+											["Fleeting Plainstrider"] = 128,
 										},
-										["n_total"] = 147,
-										["n_min"] = 147,
+										["n_total"] = 128,
+										["n_min"] = 128,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 147,
+										["total"] = 128,
 										["c_max"] = 0,
 										["id"] = 403629,
 										["r_dmg"] = 0,
@@ -3315,15 +2047,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["n_max"] = 56,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 55,
+											["Fleeting Plainstrider"] = 100,
 										},
-										["n_total"] = 55,
-										["n_min"] = 55,
+										["n_total"] = 100,
+										["n_min"] = 44,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 55,
+										["counter"] = 2,
+										["total"] = 100,
 										["c_max"] = 0,
 										["id"] = 412758,
 										["r_dmg"] = 0,
@@ -3335,7 +2067,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3343,58 +2075,58 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 99.71387670600798,
+							["last_dps"] = 29.75122290717115,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00844,
-							["start_time"] = 1706886065,
+							["damage_taken"] = 44.005438,
+							["start_time"] = 1706959392,
 							["delay"] = 0,
-							["last_event"] = 1706886067,
+							["last_event"] = 1706959403,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007838,
+							["totalabsorbed"] = 0.004342,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 39.007838,
+							["total_without_pet"] = 84.00434200000001,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 39.007838,
+							["total"] = 84.00434200000001,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Burning Blade Fanatic"] = 39,
+								["Fleeting Plainstrider"] = 84,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886067,
+							["end_time"] = 1706959404,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									[7799] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 15,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 39,
+											["Fleeting Plainstrider"] = 84,
 										},
-										["n_total"] = 16,
-										["n_min"] = 16,
+										["n_total"] = 84,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 39,
-										["c_max"] = 23,
+										["counter"] = 6,
+										["total"] = 84,
+										["c_max"] = 0,
 										["id"] = 7799,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -3402,10 +2134,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 23,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 23,
-										["n_amt"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3413,44 +2145,72 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 16.13894828288973,
+							["last_dps"] = 7.505078352541017,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.007838,
-							["start_time"] = 1706886065,
+							["damage_taken"] = 0.004342,
+							["start_time"] = 1706959392,
 							["delay"] = 0,
-							["last_event"] = 1706886066,
+							["last_event"] = 1706959403,
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001406,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005414,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 0.001406,
+							["total_without_pet"] = 44.005414,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 0.001406,
+							["total"] = 44.005414,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-0000BD037E",
-							["aID"] = "3197",
-							["fight_component"] = true,
+							["serial"] = "Creature-0-5250-1-8029-3246-00003E2177",
+							["aID"] = "3246",
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
+								["Dopedot"] = 44,
 							},
-							["monster"] = true,
+							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886067,
-							["nome"] = "Burning Blade Fanatic",
+							["end_time"] = 1706959404,
+							["nome"] = "Fleeting Plainstrider",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Dopedot"] = 44,
+										},
+										["n_total"] = 44,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
@@ -3458,27 +2218,27 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 241.001406,
-							["start_time"] = 1706886067,
+							["damage_taken"] = 333.005414,
+							["start_time"] = 1706959395,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_event"] = 1706959396,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 659,
+					["combatId"] = 699,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 659,
+					["combatId"] = 699,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 659,
+					["combatId"] = 699,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -3493,13 +2253,13 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
+									[6307] = {
+										["activedamt"] = 0,
+										["id"] = 6307,
 										["targets"] = {
 										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -3509,19 +2269,30 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 2,
+										["uptime"] = 12,
 										["appliedamt"] = 1,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 								},
 							},
-							["buff_uptime"] = 4,
+							["buff_uptime"] = 24,
 							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886067,
+							["last_event"] = 1706959430,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -3529,8 +2300,8 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
@@ -3540,7 +2311,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 659,
+					["combatId"] = 699,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3551,7 +2322,7 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["tempo_start"] = 1706886065,
+				["tempo_start"] = 1706959392,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -3563,7 +2334,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					241, -- [1]
+					377, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3591,32 +2362,37 @@ _detalhes_database = {
 				["amountCasts"] = {
 					["Dopedot"] = {
 						["Incinerate"] = 1,
+						["Chaos Bolt"] = 1,
+						["Shoot"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 4,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:01:08",
+				["data_fim"] = "12:23:24",
+				["pvp"] = true,
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Fanatic",
+				["enemy"] = "Fleeting Plainstrider",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 506170.971,
-				["CombatEndedAt"] = 506170.971,
+				["TotalElapsedCombatTime"] = 10984.326,
+				["CombatEndedAt"] = 10984.326,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:01:05",
-				["end_time"] = 506170.971,
-				["combat_id"] = 659,
+				["data_inicio"] = "12:23:13",
+				["end_time"] = 10984.326,
+				["combat_id"] = 699,
 				["frags"] = {
-					["Burning Blade Fanatic"] = 1,
+					["Fleeting Plainstrider"] = 1,
 				},
-				["combat_counter"] = 703,
 				["totals_grupo"] = {
-					241, -- [1]
+					333, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3651,43 +2427,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 241.00844,
-							["Rupqua <Dopedot>"] = 39.007838,
+							["Dopedot"] = 333.005438,
+							["Rupqua <Dopedot>"] = 84.00434200000001,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 506168.554,
-				["contra"] = "Burning Blade Fanatic",
+				["combat_counter"] = 743,
+				["start_time"] = 10973.133,
 				["TimeData"] = {
 				},
-			}, -- [7]
+				["spells_cast_timeline"] = {
+				},
+			}, -- [5]
 			{
 				{
-					["combatId"] = 658,
+					["combatId"] = 698,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004735,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007393,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 298.004735,
+							["total_without_pet"] = 370.007393,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 402.004735,
+							["total"] = 431.007393,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Voidwalker Minion"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 220,
-								["Voidwalker Minion"] = 182,
+								["Fleeting Plainstrider"] = 354,
+								["Sunscale Screecher"] = 77,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -3695,18 +2470,1166 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886057,
+							["end_time"] = 1706959371,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									[980] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Sunscale Screecher"] = 47,
+										},
+										["n_total"] = 47,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 47,
+										["c_max"] = 0,
+										["id"] = 980,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 133,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 133,
+										},
+										["n_total"] = 133,
+										["n_min"] = 133,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 133,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Sunscale Screecher"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 62,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 160,
+										},
+										["n_total"] = 160,
+										["n_min"] = 44,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 160,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 24.53925034160741,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.007393,
+							["start_time"] = 1706959354,
+							["delay"] = 0,
+							["last_event"] = 1706959371,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002615,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 61.002615,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 61.002615,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Fleeting Plainstrider"] = 61,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959371,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 61,
+										},
+										["n_total"] = 61,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 61,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 3.473161865178714,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002615,
+							["start_time"] = 1706959365,
+							["delay"] = 0,
+							["last_event"] = 1706959371,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003702,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 49.003702,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 49.003702,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3255-00003E20BB",
+							["aID"] = "3255",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+							},
+							["targets"] = {
+								["Poppzie"] = 49,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959371,
+							["nome"] = "Sunscale Screecher",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Poppzie"] = 49,
+										},
+										["n_total"] = 49,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 77.003702,
+							["start_time"] = 1706959367,
+							["delay"] = 1706959357,
+							["last_event"] = 1706959357,
+						}, -- [3]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007566,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.007566,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.007566,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3246-00003E2172",
+							["aID"] = "3246",
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959371,
+							["nome"] = "Fleeting Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 354.007566,
+							["start_time"] = 1706959371,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 698,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 698,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 78.00779,
+							["resource"] = 0.00779,
+							["targets"] = {
+								["Dopedot"] = 78,
+							},
+							["total"] = 78.00779,
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["flag_original"] = 1297,
+							["aID"] = "5826-024A22B1",
+							["totalover"] = 0.00779,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["alternatepower"] = 0.00779,
+							["passiveover"] = 0.00779,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31818] = {
+										["total"] = 78,
+										["id"] = 31818,
+										["totalover"] = 0,
+										["targets"] = {
+											["Dopedot"] = 78,
+										},
+										["counter"] = 3,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["tipo"] = 3,
+							["last_event"] = 1706959378,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 698,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[172] = {
+										["activedamt"] = -1,
+										["id"] = 172,
+										["targets"] = {
+										},
+										["actived_at"] = 1706959360,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[980] = {
+										["activedamt"] = -1,
+										["id"] = 980,
+										["targets"] = {
+										},
+										["actived_at"] = 1706959368,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["grupo"] = true,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 2,
+										["refreshamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 27,
+							["debuff_uptime"] = 0,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706959371,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 698,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10971.648,
+				["tempo_start"] = 1706959354,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					480, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 78,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 3,
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 3,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:22:52",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Fleeting Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10952.75,
+				["CombatEndedAt"] = 10952.75,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:22:35",
+				["end_time"] = 10952.75,
+				["combat_id"] = 698,
+				["frags"] = {
+					["Fleeting Plainstrider"] = 1,
+				},
+				["combat_counter"] = 742,
+				["totals_grupo"] = {
+					431, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 78,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 431.007393,
+							["Rupqua <Dopedot>"] = 61.002615,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10935.186,
+				["contra"] = "Sunscale Screecher",
+				["TimeData"] = {
+				},
+			}, -- [6]
+			{
+				{
+					["combatId"] = 697,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004292,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 249.004292,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 308.004292,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Fleeting Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Fleeting Plainstrider"] = 291,
+								["Sunscale Screecher"] = 17,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959354,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[980] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Sunscale Screecher"] = 7,
+										},
+										["n_total"] = 7,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 7,
+										["c_max"] = 0,
+										["id"] = 980,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[172] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Sunscale Screecher"] = 10,
+										},
+										["n_total"] = 10,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 172,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 126,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 126,
+										},
+										["n_total"] = 126,
+										["n_min"] = 126,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 126,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 106,
+										},
+										["n_total"] = 106,
+										["n_min"] = 48,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 106,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 38.87961272405722,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 37.004292,
+							["start_time"] = 1706959335,
+							["delay"] = 0,
+							["last_event"] = 1706959353,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006241,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 59.006241,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 59.006241,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Fleeting Plainstrider"] = 59,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959343,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 59,
+										},
+										["n_total"] = 59,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 7.448402044937696,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006241,
+							["start_time"] = 1706959335,
+							["delay"] = 0,
+							["last_event"] = 1706959340,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003168,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 37.003168,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 37.003168,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3246-00003E207C",
+							["aID"] = "3246",
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 37,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959343,
+							["nome"] = "Fleeting Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Dopedot"] = 37,
+										},
+										["n_total"] = 37,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 291.003168,
+							["start_time"] = 1706959338,
+							["delay"] = 0,
+							["last_event"] = 1706959340,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 697,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 697,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 697,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 16,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706959343,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 697,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10929.196,
+				["tempo_start"] = 1706959335,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					628, -- [1]
+					0, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 2,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:22:24",
+				["pvp"] = true,
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Fleeting Plainstrider",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10924.442,
+				["CombatEndedAt"] = 10924.442,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:22:16",
+				["end_time"] = 10924.442,
+				["combat_id"] = 697,
+				["frags"] = {
+					["Fleeting Plainstrider"] = 1,
+				},
+				["totals_grupo"] = {
+					308, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 291.004292,
+							["Rupqua <Dopedot>"] = 59.006241,
+						}, -- [1]
+					},
+				},
+				["combat_counter"] = 741,
+				["start_time"] = 10916.52,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 696,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005638,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 210.005638,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 290.005638,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Fleeting Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Fleeting Plainstrider"] = 290,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959209,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[1120] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Fleeting Plainstrider"] = 23,
+										},
+										["n_total"] = 23,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = 1120,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[403629] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 142,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 142,
+											["Fleeting Plainstrider"] = 142,
 										},
 										["n_total"] = 142,
 										["n_min"] = 142,
@@ -3732,18 +3655,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["n_max"] = 45,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 52,
-											["Voidwalker Minion"] = 104,
+											["Fleeting Plainstrider"] = 45,
 										},
-										["n_total"] = 156,
-										["n_min"] = 51,
+										["n_total"] = 45,
+										["n_min"] = 45,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 156,
+										["counter"] = 1,
+										["total"] = 45,
 										["c_max"] = 0,
-										["RESIST"] = 1,
 										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -3754,7 +3675,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3762,42 +3683,39 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 25.55006578111626,
+							["last_dps"] = 22.96892428322472,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 74.004735,
-							["start_time"] = 1706886042,
+							["damage_taken"] = 21.005638,
+							["start_time"] = 1706959197,
 							["delay"] = 0,
-							["last_event"] = 1706886056,
+							["last_event"] = 1706959209,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002536,
+							["totalabsorbed"] = 0.008806,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 104.002536,
+							["total_without_pet"] = 80.00880599999999,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 104.002536,
+							["total"] = 80.00880599999999,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-								["Voidwalker Minion"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 26,
-								["Voidwalker Minion"] = 78,
+								["Fleeting Plainstrider"] = 80,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886057,
+							["end_time"] = 1706959209,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -3807,17 +3725,16 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 15,
+										["n_max"] = 16,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 26,
-											["Voidwalker Minion"] = 78,
+											["Fleeting Plainstrider"] = 80,
 										},
-										["n_total"] = 83,
+										["n_total"] = 58,
 										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 104,
-										["c_max"] = 21,
+										["counter"] = 5,
+										["total"] = 80,
+										["c_max"] = 22,
 										["id"] = 7799,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -3825,10 +3742,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 21,
+										["c_min"] = 22,
 										["successful_casted"] = 0,
-										["c_total"] = 21,
-										["n_amt"] = 6,
+										["c_total"] = 22,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3836,60 +3753,59 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 6.610050591078018,
+							["last_dps"] = 6.336829241248116,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 78.00253599999999,
-							["start_time"] = 1706886042,
+							["damage_taken"] = 0.008806,
+							["start_time"] = 1706959197,
 							["delay"] = 0,
-							["last_event"] = 1706886056,
+							["last_event"] = 1706959206,
 						}, -- [2]
 						{
-							["flag_original"] = 4680,
-							["totalabsorbed"] = 0.005285,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002868,
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["total_without_pet"] = 122.005285,
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 21.002868,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 122.005285,
+							["total"] = 21.002868,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D0383",
-							["aID"] = "8996",
+							["serial"] = "Creature-0-5250-1-8029-3246-0000BE2091",
+							["aID"] = "3246",
 							["damage_from"] = {
 								["Dopedot"] = true,
+								["Poppzie"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 74,
-								["Rupqua <Dopedot>"] = 48,
+								["Dopedot"] = 21,
 							},
 							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886057,
-							["nome"] = "Voidwalker Minion",
+							["end_time"] = 1706959209,
+							["nome"] = "Fleeting Plainstrider",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 21,
 										["targets"] = {
-											["Dopedot"] = 74,
-											["Rupqua <Dopedot>"] = 48,
+											["Dopedot"] = 21,
 										},
-										["n_total"] = 98,
-										["n_min"] = 15,
+										["n_total"] = 21,
+										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 122,
-										["c_max"] = 24,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -3897,10 +3813,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 24,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 24,
-										["n_amt"] = 6,
+										["c_total"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -3911,153 +3827,113 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 182.005285,
-							["start_time"] = 1706886043,
+							["damage_taken"] = 332.002868,
+							["start_time"] = 1706959201,
 							["delay"] = 0,
-							["last_event"] = 1706886055,
+							["last_event"] = 1706959201,
 						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002756,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 30.002756,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 30.002756,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00013D037E",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Rupqua <Dopedot>"] = 30,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886057,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 30,
-										},
-										["n_total"] = 30,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 30,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 220.002756,
-							["start_time"] = 1706886056,
-							["delay"] = 1706886045,
-							["last_event"] = 1706886045,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 658,
+					["combatId"] = 696,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 658,
+					["combatId"] = 696,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 						{
-							["received"] = 50.003806,
-							["resource"] = 0.003806,
+							["received"] = 26.002913,
+							["resource"] = 0.002913,
 							["targets"] = {
-								["Dopedot"] = 50,
+								["Dopedot"] = 26,
 							},
-							["total"] = 50.003806,
+							["total"] = 26.002913,
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["flag_original"] = 1297,
 							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.003806,
+							["totalover"] = 0.002913,
 							["grupo"] = true,
 							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.003806,
-							["passiveover"] = 0.003806,
+							["alternatepower"] = 0.002913,
+							["passiveover"] = 0.002913,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31818] = {
-										["total"] = 50,
+										["total"] = 26,
 										["id"] = 31818,
 										["totalover"] = 0,
 										["targets"] = {
-											["Dopedot"] = 50,
+											["Dopedot"] = 26,
 										},
-										["counter"] = 2,
+										["counter"] = 1,
 									},
 								},
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["tipo"] = 3,
-							["last_event"] = 1706886060,
+							["last_event"] = 1706959221,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 658,
+					["combatId"] = 696,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5782] = {
+										["activedamt"] = 0,
+										["id"] = 5782,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1120] = {
+										["activedamt"] = 1,
+										["id"] = 1120,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["debuff_uptime_targets"] = {
+							},
 							["classe"] = "WARLOCK",
+							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[696] = {
+									[1120] = {
 										["activedamt"] = 1,
-										["id"] = 696,
+										["id"] = 1120,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 6,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4068,19 +3944,30 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 15,
+										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 4,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
 							["buff_uptime"] = 30,
-							["grupo"] = true,
+							["debuff_uptime"] = 12,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886057,
+							["last_event"] = 1706959209,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -4088,31 +3975,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
 						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00013D037E",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 658,
+					["combatId"] = 696,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4123,8 +3997,8 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506167.72,
-				["tempo_start"] = 1706886042,
+				["CombatStartedAt"] = 10915.119,
+				["tempo_start"] = 1706959197,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -4136,11 +4010,11 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					554, -- [1]
+					353, -- [1]
 					0, -- [2]
 					{
 						9, -- [1]
-						[0] = 50,
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -4163,45 +4037,42 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 4,
 						["Chaos Bolt"] = 1,
+						["Drain Soul"] = 1,
+						["Fear"] = 1,
 					},
 					["Rupqua"] = {
-						["Firebolt"] = 5,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
+						["Firebolt"] = 4,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:00:58",
+				["data_fim"] = "12:20:10",
+				["pvp"] = true,
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
+				["enemy"] = "Fleeting Plainstrider",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 506161.221,
-				["CombatEndedAt"] = 506161.221,
+				["TotalElapsedCombatTime"] = 10790.366,
+				["CombatEndedAt"] = 10790.366,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:00:42",
-				["end_time"] = 506161.221,
-				["combat_id"] = 658,
+				["data_inicio"] = "12:19:57",
+				["end_time"] = 10790.366,
+				["combat_id"] = 696,
 				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Fleeting Plainstrider"] = 1,
 				},
-				["combat_counter"] = 702,
 				["totals_grupo"] = {
-					402, -- [1]
+					290, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 50,
+						[0] = 26,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -4232,42 +4103,41 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 402.004735,
-							["Rupqua <Dopedot>"] = 104.002536,
+							["Dopedot"] = 290.005638,
+							["Rupqua <Dopedot>"] = 80.00880599999999,
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 506145.487,
-				["contra"] = "Burning Blade Apprentice",
+				["combat_counter"] = 740,
+				["start_time"] = 10777.74,
 				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
 				},
 			}, -- [8]
 			{
 				{
-					["combatId"] = 657,
+					["combatId"] = 695,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00348,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001036,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 200.00348,
+							["total_without_pet"] = 213.001036,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 231.00348,
+							["total"] = 241.001036,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Gazz'uz"] = 175,
-								["Voidwalker Minion"] = 56,
+								["Razormane Thornweaver"] = 241,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -4275,24 +4145,52 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886035,
+							["end_time"] = 1706959093,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									[5019] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Razormane Thornweaver"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 5019,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[403629] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 104,
+										["n_max"] = 155,
 										["targets"] = {
-											["Gazz'uz"] = 104,
+											["Razormane Thornweaver"] = 155,
 										},
-										["n_total"] = 104,
-										["n_min"] = 104,
+										["n_total"] = 155,
+										["n_min"] = 155,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 104,
+										["total"] = 155,
 										["c_max"] = 0,
 										["id"] = 403629,
 										["r_dmg"] = 0,
@@ -4312,19 +4210,88 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 56,
+										["n_max"] = 44,
 										["targets"] = {
-											["Gazz'uz"] = 40,
-											["Voidwalker Minion"] = 56,
+											["Razormane Thornweaver"] = 44,
 										},
-										["n_total"] = 96,
-										["n_min"] = 40,
+										["n_total"] = 44,
+										["n_min"] = 44,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 53.71095074658945,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001036,
+							["start_time"] = 1706959089,
+							["delay"] = 0,
+							["last_event"] = 1706959093,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008283,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 28.008283,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 28.008283,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 28,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959093,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Razormane Thornweaver"] = 28,
+										},
+										["n_total"] = 28,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 96,
+										["total"] = 28,
 										["c_max"] = 0,
 										["RESIST"] = 1,
-										["id"] = 412758,
+										["id"] = 7799,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -4342,133 +4309,61 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 25.24628196730948,
+							["last_dps"] = 6.242095609537291,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00348,
-							["start_time"] = 1706886026,
+							["damage_taken"] = 0.008283,
+							["start_time"] = 1706959089,
 							["delay"] = 0,
-							["last_event"] = 1706886034,
-						}, -- [1]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.004063,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 73.004063,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 73.004063,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D031D",
-							["aID"] = "8996",
-							["damage_from"] = {
-								["Muffles"] = true,
-								["Dopedot"] = true,
-							},
-							["targets"] = {
-								["Muffles"] = 73,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886035,
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Muffles"] = 73,
-										},
-										["n_total"] = 73,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 73,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 284.004063,
-							["start_time"] = 1706886028,
-							["delay"] = 0,
-							["last_event"] = 1706886034,
+							["last_event"] = 1706959094,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008942,
+							["totalabsorbed"] = 0.007419,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 62.008942,
+							["total_without_pet"] = 0.007419,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 62.008942,
+							["total"] = 0.007419,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3204-00003D0318",
-							["aID"] = "3204",
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE20CE",
+							["aID"] = "3268",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
-								["Muffles"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Muffles"] = 62,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706886035,
-							["nome"] = "Gazz'uz",
+							["end_time"] = 1706959093,
+							["nome"] = "Razormane Thornweaver",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[20791] = {
+									[6950] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 62,
+										["n_max"] = 0,
 										["targets"] = {
-											["Muffles"] = 62,
+											["Dopedot"] = 0,
 										},
-										["n_total"] = 62,
-										["n_min"] = 62,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 62,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 20791,
+										["id"] = 6950,
 										["r_dmg"] = 0,
+										["RESIST"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -4476,7 +4371,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -4487,102 +4382,33 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 118.008942,
-							["start_time"] = 1706886027,
+							["damage_taken"] = 241.007419,
+							["start_time"] = 1706959093,
 							["delay"] = 0,
-							["last_event"] = 1706886027,
+							["last_event"] = 1706959091,
 						}, -- [3]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008456,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 31.008456,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 31.008456,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Gazz'uz"] = 31,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886035,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Gazz'uz"] = 31,
-											["Voidwalker Minion"] = 0,
-										},
-										["n_total"] = 31,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 31,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008456,
-							["start_time"] = 1706886026,
-							["delay"] = 0,
-							["last_event"] = 1706886033,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 657,
+					["combatId"] = 695,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 657,
+					["combatId"] = 695,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 657,
+					["combatId"] = 695,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
@@ -4596,7 +4422,7 @@ _detalhes_database = {
 										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4607,52 +4433,63 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["uptime"] = 4,
 										["appliedamt"] = 1,
-										["refreshamt"] = 3,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime"] = 17,
+							["buff_uptime"] = 8,
 							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706886035,
+							["last_event"] = 1706959093,
 							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5210-1-6742-3204-00003D0318",
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE20CE",
 							["classe"] = "UNKNOW",
 							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "3204",
-							["nome"] = "Gazz'uz",
+							["aID"] = "3268",
+							["nome"] = "Razormane Thornweaver",
 							["last_event"] = 0,
 							["tipo"] = 4,
-						}, -- [2]
+						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 657,
+					["combatId"] = 695,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
 					["Dopedot"] = "Player-5826-024A22B1",
 				},
 				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
+					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506145.137,
-				["tempo_start"] = 1706886026,
+				["CombatStartedAt"] = 10776.873,
+				["tempo_start"] = 1706959089,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -4664,7 +4501,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					657, -- [1]
+					241, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -4691,34 +4528,40 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 4,
+						["Shoot"] = 1,
+						["Chaos Bolt"] = 1,
 					},
-					["Gazz'uz"] = {
-						["Shadow Bolt"] = 1,
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Razormane Thornweaver"] = {
+						["Faerie Fire"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "16:00:36",
+				["data_fim"] = "12:18:14",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Gazz'uz",
+				["enemy"] = "Razormane Thornweaver",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 506138.62,
-				["CombatEndedAt"] = 506138.62,
+				["TotalElapsedCombatTime"] = 10674.189,
+				["CombatEndedAt"] = 10674.189,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "16:00:26",
-				["end_time"] = 506138.62,
-				["combat_id"] = 657,
+				["data_inicio"] = "12:18:09",
+				["end_time"] = 10674.189,
+				["combat_id"] = 695,
 				["frags"] = {
-					["Gazz'uz"] = 1,
-					["Voidwalker Minion"] = 1,
+					["Razormane Thornweaver"] = 1,
 				},
-				["combat_counter"] = 701,
+				["combat_counter"] = 739,
 				["totals_grupo"] = {
-					200, -- [1]
+					241, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -4753,41 +4596,42 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 231.00348,
+							["Dopedot"] = 241.001036,
+							["Rupqua <Dopedot>"] = 28.008283,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 506129.47,
-				["contra"] = "Gazz'uz",
+				["start_time"] = 10669.702,
+				["contra"] = "Razormane Thornweaver",
 				["TimeData"] = {
 				},
 			}, -- [9]
 			{
 				{
-					["combatId"] = 656,
+					["combatId"] = 694,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005531,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006453,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 202.005531,
+							["total_without_pet"] = 222.006453,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 250.005531,
+							["total"] = 267.006453,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
+								["Razormane Water Seeker"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Fanatic"] = 250,
+								["Razormane Water Seeker"] = 267,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -4795,649 +4639,24 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885979,
+							["end_time"] = 1706959076,
 							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[403629] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 107,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 107,
-										},
-										["n_total"] = 107,
-										["n_min"] = 107,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 107,
-										["c_max"] = 0,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 55,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 95,
-										},
-										["n_total"] = 95,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 95,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 35.7099744322786,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 14.005531,
-							["start_time"] = 1706885972,
-							["delay"] = 0,
-							["last_event"] = 1706885977,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001044,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 77.00104400000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 77.00104400000001,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-0001BD034E",
-							["aID"] = "3197",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Muffles"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 14,
-								["Muffles"] = 63,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706886026,
-							["nome"] = "Burning Blade Fanatic",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Dopedot"] = 14,
-											["Muffles"] = 63,
-										},
-										["n_total"] = 59,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 77,
-										["c_max"] = 18,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 18,
-										["successful_casted"] = 0,
-										["c_total"] = 18,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 587.001044,
-							["start_time"] = 1706885993,
-							["delay"] = 1706886008,
-							["last_event"] = 1706886008,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002577,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 48.002577,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 48.002577,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 48,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885979,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 48,
-										},
-										["n_total"] = 28,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 48,
-										["c_max"] = 20,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 20,
-										["successful_casted"] = 0,
-										["c_total"] = 20,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.002577,
-							["start_time"] = 1706885972,
-							["delay"] = 0,
-							["last_event"] = 1706885976,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 656,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 656,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 25.002558,
-							["resource"] = 0.002558,
-							["targets"] = {
-								["Dopedot"] = 25,
-							},
-							["total"] = 25.002558,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.002558,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.002558,
-							["passiveover"] = 0.002558,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 25,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 25,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706885989,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 656,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 13,
-							["grupo"] = true,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885979,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 656,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 506127.952,
-				["tempo_start"] = 1706885972,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					879, -- [1]
-					93, -- [2]
-					{
-						18, -- [1]
-						[0] = 25,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:59:39",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Fanatic",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 506081.568,
-				["CombatEndedAt"] = 506081.568,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:59:32",
-				["end_time"] = 506082.401,
-				["combat_id"] = 656,
-				["frags"] = {
-					["Burning Blade Fanatic"] = 1,
-				},
-				["combat_counter"] = 700,
-				["totals_grupo"] = {
-					202, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 25,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 250.005531,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 506075.4,
-				["contra"] = "Burning Blade Fanatic",
-				["TimeData"] = {
-				},
-			}, -- [10]
-			{
-				{
-					["combatId"] = 655,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00567,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 95.00567000000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 114.00567,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Voidwalker Minion"] = 114,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885950,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[412758] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 50,
-										["targets"] = {
-											["Voidwalker Minion"] = 95,
-										},
-										["n_total"] = 95,
-										["n_min"] = 45,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 95,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 37.80028846149761,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00567,
-							["start_time"] = 1706885947,
-							["delay"] = 0,
-							["last_event"] = 1706885949,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003697,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 19.003697,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 19.003697,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Voidwalker Minion"] = 19,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885950,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
+										["g_amt"] = 1,
 										["n_max"] = 0,
 										["targets"] = {
-											["Voidwalker Minion"] = 19,
+											["Razormane Water Seeker"] = 2,
 										},
 										["n_total"] = 0,
 										["n_min"] = 0,
-										["g_dmg"] = 0,
+										["g_dmg"] = 2,
 										["counter"] = 1,
-										["total"] = 19,
-										["c_max"] = 19,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 19,
-										["successful_casted"] = 0,
-										["c_total"] = 19,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.003697,
-							["start_time"] = 1706885947,
-							["delay"] = 0,
-							["last_event"] = 1706885947,
-						}, -- [2]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.002881,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 16.002881,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 16.002881,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D027E",
-							["aID"] = "8996",
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-								["Muffles"] = true,
-								["Sanglier"] = true,
-								["Dzardas"] = true,
-							},
-							["targets"] = {
-								["Dzardas"] = 16,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885950,
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Dzardas"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
+										["total"] = 2,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -5449,318 +4668,27 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 330.002881,
-							["start_time"] = 1706885948,
-							["delay"] = 0,
-							["last_event"] = 1706885948,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 655,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 655,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 175.006692,
-							["resource"] = 0.006692,
-							["targets"] = {
-								["Dopedot"] = 175,
-							},
-							["total"] = 175.006692,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.006692,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.006692,
-							["passiveover"] = 0.006692,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 175,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 175,
-										},
-										["counter"] = 7,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706885960,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 655,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 6,
-							["grupo"] = true,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885950,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 655,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 506074.117,
-				["tempo_start"] = 1706885947,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					456, -- [1]
-					11, -- [2]
-					{
-						0, -- [1]
-						[0] = 175,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:59:10",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Voidwalker Minion",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 506052.849,
-				["CombatEndedAt"] = 506052.849,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:59:07",
-				["end_time"] = 506053.366,
-				["combat_id"] = 655,
-				["frags"] = {
-					["Voidwalker Minion"] = 1,
-				},
-				["combat_counter"] = 699,
-				["totals_grupo"] = {
-					95, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 175,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 114.00567,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 506050.35,
-				["contra"] = "Voidwalker Minion",
-				["TimeData"] = {
-				},
-			}, -- [11]
-			{
-				{
-					["combatId"] = 654,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00803,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 535.00803,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 678.00803,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
-							},
-							["targets"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 226,
-								["Burning Blade Apprentice"] = 214,
-								["Gazz'uz"] = 64,
-								["Voidwalker Minion"] = 174,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 64,
-							},
-							["end_time"] = 1706885942,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[412758] = {
+									[5019] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["n_max"] = 21,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 55,
-											["Gazz'uz"] = 0,
-											["Voidwalker Minion"] = 43,
+											["Razormane Water Seeker"] = 40,
 										},
-										["n_total"] = 98,
-										["n_min"] = 43,
+										["n_total"] = 40,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 98,
+										["counter"] = 2,
+										["total"] = 40,
 										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = 412758,
+										["id"] = 5019,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5772,21 +4700,21 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[707] = {
+									[412758] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["n_max"] = 46,
 										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 55,
+											["Razormane Water Seeker"] = 46,
 										},
-										["n_total"] = 55,
-										["n_min"] = 10,
+										["n_total"] = 46,
+										["n_min"] = 46,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 55,
+										["counter"] = 1,
+										["total"] = 46,
 										["c_max"] = 0,
-										["id"] = 707,
+										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["extra"] = {
@@ -5796,7 +4724,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5804,17 +4732,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 116,
+										["n_max"] = 134,
 										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 109,
-											["Burning Blade Apprentice"] = 116,
-											["Voidwalker Minion"] = 93,
+											["Razormane Water Seeker"] = 134,
 										},
-										["n_total"] = 318,
-										["n_min"] = 93,
+										["n_total"] = 134,
+										["n_min"] = 134,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 318,
+										["counter"] = 1,
+										["total"] = 134,
 										["c_max"] = 0,
 										["id"] = 403629,
 										["r_dmg"] = 0,
@@ -5826,92 +4752,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1120] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Gazz'uz"] = 22,
-											["Voidwalker Minion"] = 11,
-										},
-										["n_total"] = 33,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = 1120,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[172] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = 172,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[980] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 980,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5919,684 +4760,39 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 12.05990803983698,
+							["last_dps"] = 41.90308427495693,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 17.00803,
-							["start_time"] = 1706885890,
+							["damage_taken"] = 17.006453,
+							["start_time"] = 1706959069,
 							["delay"] = 0,
-							["last_event"] = 1706885940,
+							["last_event"] = 1706959075,
 						}, -- [1]
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004334,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005235,
 							["pets"] = {
-								"Scorpid <Mcsheep>", -- [1]
 							},
-							["classe"] = "HUNTER",
-							["total_without_pet"] = 325.004334,
+							["classe"] = "PET",
+							["total_without_pet"] = 45.005235,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 470.004334,
+							["total"] = 45.005235,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Player-5826-025147AC",
-							["damage_from"] = {
-								["Gazz'uz"] = true,
-								["Burning Blade Apprentice"] = true,
-							},
-							["targets"] = {
-								["Gazz'uz"] = 348,
-								["Voidwalker Minion"] = 122,
-							},
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "5826-025147AC",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Water Seeker"] = 45,
+							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 348,
 							},
-							["end_time"] = 1706885942,
-							["nome"] = "Mcsheep",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[409433] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Gazz'uz"] = 57,
-										},
-										["n_total"] = 57,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = 409433,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3044] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Gazz'uz"] = 39,
-											["Voidwalker Minion"] = 13,
-										},
-										["n_total"] = 52,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 52,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 3044,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Gazz'uz"] = 89,
-											["Voidwalker Minion"] = 50,
-										},
-										["n_total"] = 139,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 139,
-										["c_max"] = 0,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 7,
-										["r_amt"] = 0,
-									},
-									[13549] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Gazz'uz"] = 27,
-											["Voidwalker Minion"] = 16,
-										},
-										["n_total"] = 43,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 43,
-										["c_max"] = 0,
-										["id"] = 13549,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[409493] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Gazz'uz"] = 34,
-										},
-										["n_total"] = 34,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 409493,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Gazz'uz"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 8.360091319810511,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 206.004334,
-							["start_time"] = 1706885915,
-							["delay"] = 1706885911,
-							["last_event"] = 1706885911,
-						}, -- [2]
-						{
-							["flag_original"] = 4680,
-							["totalabsorbed"] = 0.005588,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 488.005588,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 488.005588,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D0193",
-							["aID"] = "8996",
-							["damage_from"] = {
-								["Dzardas"] = true,
-								["Mcsheep"] = true,
-								["Rupqua <Dopedot>"] = true,
-								["Dopedot"] = true,
-								["Scorpid <Mcsheep>"] = true,
-								["Sanglier"] = true,
-							},
-							["targets"] = {
-								["Dzardas"] = 168,
-								["Muffles"] = 15,
-								["Scorpid <Mcsheep>"] = 267,
-								["Sanglier"] = 38,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885947,
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Dzardas"] = 168,
-											["Muffles"] = 15,
-											["Scorpid <Mcsheep>"] = 267,
-											["Sanglier"] = 38,
-										},
-										["n_total"] = 363,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 22,
-										["total"] = 488,
-										["c_max"] = 40,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 23,
-										["successful_casted"] = 0,
-										["c_total"] = 125,
-										["n_amt"] = 17,
-										["b_dmg"] = 19,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 531.005588,
-							["start_time"] = 1706885920,
-							["delay"] = 1706885906,
-							["last_event"] = 1706885947,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005054,
-							["pets"] = {
-								"Voidwalker Minion <Burning Blade Apprentice>", -- [1]
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 174.005054,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 191.005054,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D02FB",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Sanglier"] = true,
-								["Dzardas"] = true,
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Sanglier"] = 65,
-								["Dopedot"] = 17,
-								["Mcsheep"] = 67,
-								["Rupqua <Dopedot>"] = 42,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885942,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Sanglier"] = 24,
-											["Rupqua <Dopedot>"] = 9,
-										},
-										["n_total"] = 33,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["a_amt"] = 0,
-										["total"] = 33,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 41,
-										["targets"] = {
-											["Sanglier"] = 41,
-											["Mcsheep"] = 67,
-											["Rupqua <Dopedot>"] = 33,
-										},
-										["n_total"] = 141,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 141,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 744.005054,
-							["start_time"] = 1706885915,
-							["delay"] = 0,
-							["last_event"] = 1706885938,
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008975,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 154.008975,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 154.008975,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3204-00003D00F9",
-							["aID"] = "3204",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Scorpid <Mcsheep>"] = true,
-								["Mcsheep"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Scorpid <Mcsheep>"] = 15,
-								["Mcsheep"] = 139,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885942,
-							["nome"] = "Gazz'uz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Scorpid <Mcsheep>"] = 15,
-										},
-										["n_total"] = 15,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Mcsheep"] = 139,
-										},
-										["n_total"] = 139,
-										["n_min"] = 64,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 139,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 412.008975,
-							["start_time"] = 1706885931,
-							["delay"] = 1706885895,
-							["last_event"] = 1706885895,
-						}, -- [5]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.00849,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 145.00849,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 145.00849,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["aID"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["damage_from"] = {
-								["Gazz'uz"] = true,
-								["Voidwalker Minion"] = true,
-							},
-							["targets"] = {
-								["Gazz'uz"] = 102,
-								["Voidwalker Minion"] = 43,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 102,
-							},
-							["end_time"] = 1706885942,
-							["ownerName"] = "Mcsheep",
-							["nome"] = "Scorpid <Mcsheep>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 5,
-										["n_max"] = 12,
-										["targets"] = {
-											["Gazz'uz"] = 41,
-											["Voidwalker Minion"] = 19,
-										},
-										["n_total"] = 24,
-										["n_min"] = 12,
-										["g_dmg"] = 36,
-										["counter"] = 9,
-										["DODGE"] = 1,
-										["total"] = 60,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[16828] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Gazz'uz"] = 50,
-											["Voidwalker Minion"] = 24,
-										},
-										["n_total"] = 74,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = 16828,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[24640] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Gazz'uz"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 24640,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 282.00849,
-							["start_time"] = 1706885923,
-							["delay"] = 1706885903,
-							["last_event"] = 1706885903,
-						}, -- [6]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00762,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 143.00762,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 143.00762,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-							},
-							["targets"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 31,
-								["Burning Blade Apprentice"] = 43,
-								["Gazz'uz"] = 42,
-								["Voidwalker Minion"] = 27,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 42,
-							},
-							["end_time"] = 1706885942,
+							["end_time"] = 1706959076,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -6606,20 +4802,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 15,
 										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 31,
-											["Burning Blade Apprentice"] = 43,
-											["Gazz'uz"] = 42,
-											["Voidwalker Minion"] = 27,
+											["Razormane Water Seeker"] = 45,
 										},
-										["n_total"] = 143,
-										["n_min"] = 13,
+										["n_total"] = 45,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 143,
+										["counter"] = 3,
+										["total"] = 45,
 										["c_max"] = 0,
-										["RESIST"] = 1,
 										["id"] = 7799,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -6630,7 +4822,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 10,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -6638,42 +4830,43 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["last_dps"] = 7.062968455744557,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 42.00762,
-							["start_time"] = 1706885902,
-							["delay"] = 1706885897,
-							["last_event"] = 1706885939,
-						}, -- [7]
+							["damage_taken"] = 0.005235,
+							["start_time"] = 1706959069,
+							["delay"] = 0,
+							["last_event"] = 1706959073,
+						}, -- [2]
 						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.003805,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007609,
 							["pets"] = {
 							},
-							["classe"] = "PET",
-							["total_without_pet"] = 17.003805,
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 17.007609,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 17.003805,
+							["total"] = 17.007609,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D02FC",
-							["aID"] = "8996",
+							["serial"] = "Creature-0-5250-1-8029-3267-00003E20B9",
+							["aID"] = "3267",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
+								["Tristanos"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
 								["Dopedot"] = 17,
 							},
+							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885942,
-							["ownerName"] = "Burning Blade Apprentice",
-							["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
+							["end_time"] = 1706959076,
+							["nome"] = "Razormane Water Seeker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -6712,132 +4905,58 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 226.003805,
-							["start_time"] = 1706885941,
-							["delay"] = 1706885930,
-							["last_event"] = 1706885930,
-						}, -- [8]
+							["damage_taken"] = 368.007609,
+							["start_time"] = 1706959072,
+							["delay"] = 0,
+							["last_event"] = 1706959072,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 654,
+					["combatId"] = 694,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 654,
+					["combatId"] = 694,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 654,
+					["combatId"] = 694,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[707] = {
-										["activedamt"] = 0,
-										["id"] = 707,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[980] = {
-										["activedamt"] = 0,
-										["id"] = 980,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 0,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 18,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[172] = {
-										["activedamt"] = 0,
-										["id"] = 172,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[1120] = {
-										["activedamt"] = 2,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 2,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 42,
-										["appliedamt"] = 2,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[696] = {
 										["activedamt"] = 1,
 										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 57,
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 7,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -6845,212 +4964,43 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 113,
-							["debuff_uptime"] = 54,
+							["buff_uptime"] = 14,
+							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706885942,
+							["last_event"] = 1706959076,
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[13549] = {
-										["activedamt"] = 0,
-										["id"] = 13549,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1130] = {
-										["activedamt"] = -1,
-										["id"] = 1130,
-										["targets"] = {
-										},
-										["actived_at"] = 1706885898,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["pets"] = {
-								"Scorpid <Mcsheep>", -- [1]
-							},
-							["serial"] = "Player-5826-025147AC",
-							["classe"] = "HUNTER",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["debuff_uptime"] = 28,
-							["aID"] = "5826-025147AC",
-							["nome"] = "Mcsheep",
-							["last_event"] = 1706885912,
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 4370,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["serial"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["ownerName"] = "Mcsheep",
-							["nome"] = "Scorpid <Mcsheep>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3204-00003D00F9",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3204",
-							["nome"] = "Gazz'uz",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D02FB",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [6]
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 654,
+					["combatId"] = 694,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
 					["Dopedot"] = "Player-5826-024A22B1",
 				},
 				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
+					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 506049.483,
-				["tempo_start"] = 1706885885,
+				["CombatStartedAt"] = 10668.335,
+				["tempo_start"] = 1706959069,
 				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								20791, -- [2]
-								64, -- [3]
-								1706885891.798, -- [4]
-								175, -- [5]
-								"Gazz'uz", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [1]
-							{
-								true, -- [1]
-								20791, -- [2]
-								75, -- [3]
-								1706885895.613, -- [4]
-								111, -- [5]
-								"Gazz'uz", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [2]
-							{
-								true, -- [1]
-								20791, -- [2]
-								31, -- [3]
-								1706885914.931, -- [4]
-								36, -- [5]
-								"Burning Blade Apprentice", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [3]
-							{
-								true, -- [1]
-								20791, -- [2]
-								36, -- [3]
-								1706885918.865, -- [4]
-								5, -- [5]
-								"Burning Blade Apprentice", -- [6]
-								nil, -- [7]
-								32, -- [8]
-								false, -- [9]
-								31, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [4]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Mcsheep", -- [6]
-							}, -- [5]
-						}, -- [1]
-						1706885918.865, -- [2]
-						"Mcsheep", -- [3]
-						"HUNTER", -- [4]
-						246, -- [5]
-						"0m 33s", -- [6]
-						["dead_at"] = 33.20299999997951,
-						["dead"] = true,
-					}, -- [1]
 				},
 				["alternate_power"] = {
 				},
@@ -7059,93 +5009,9 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["playing_solo"] = true,
 				["totals"] = {
-					3498, -- [1]
-					267, -- [2]
-					{
-						6, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 1,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Gazz'uz"] = {
-						["Shadow Bolt"] = 2,
-					},
-					["Scorpid <Mcsheep>"] = {
-						["Scorpid Poison"] = 1,
-					},
-					["Dopedot"] = {
-						["Corruption"] = 1,
-						["Chaos Bolt"] = 3,
-						["Curse of Agony"] = 1,
-						["Incinerate"] = 3,
-						["Drain Soul"] = 2,
-						["Immolate"] = 1,
-						["Fear"] = 2,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 11,
-					},
-					["Mcsheep"] = {
-						["Chimera Shot"] = 2,
-						["Auto Shot"] = 11,
-						["Concussive Shot"] = 2,
-						["Serpent Sting"] = 2,
-						["Arcane Shot"] = 5,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 4,
-					},
-					["Scorpid"] = {
-						["Claw"] = 5,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:59:02",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Gazz'uz",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 25.36800000001676,
-				["CombatEndedAt"] = 506044.766,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:58:06",
-				["end_time"] = 506045.116,
-				["combat_id"] = 654,
-				["frags"] = {
-					["Gazz'uz"] = 1,
-					["Voidwalker Minion"] = 3,
-					["Burning Blade Apprentice"] = 3,
-					["Scorpid"] = 1,
-					["Burning Blade Fanatic"] = 1,
-				},
-				["combat_counter"] = 698,
-				["totals_grupo"] = {
-					860, -- [1]
+					385, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -7162,7 +5028,64 @@ _detalhes_database = {
 						["interrupt"] = 0,
 						["dispell"] = 0,
 						["cc_break"] = 0,
-						["dead"] = 1,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Shoot"] = 2,
+						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:17:56",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Water Seeker",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10656.775,
+				["CombatEndedAt"] = 10656.775,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:17:50",
+				["end_time"] = 10656.775,
+				["combat_id"] = 694,
+				["frags"] = {
+					["Razormane Water Seeker"] = 1,
+				},
+				["combat_counter"] = 738,
+				["totals_grupo"] = {
+					267, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["PhaseData"] = {
@@ -7180,42 +5103,41 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 678.00803,
-							["Mcsheep"] = 470.004334,
+							["Dopedot"] = 267.006453,
+							["Rupqua <Dopedot>"] = 45.005235,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 505988.896,
-				["contra"] = "Gazz'uz",
+				["start_time"] = 10650.403,
+				["contra"] = "Razormane Water Seeker",
 				["TimeData"] = {
 				},
-			}, -- [12]
+			}, -- [10]
 			{
 				{
-					["combatId"] = 653,
+					["combatId"] = 693,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008772,
+							["totalabsorbed"] = 0.001076,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 363.008772,
+							["total_without_pet"] = 61.001076,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 419.008772,
+							["total"] = 75.001076,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Fanatic"] = 419,
+								["Razormane Thornweaver"] = 75,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -7223,52 +5145,24 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885881,
+							["end_time"] = 1706959056,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[403629] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 116,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 223,
-										},
-										["n_total"] = 223,
-										["n_min"] = 107,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 223,
-										["c_max"] = 0,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[412758] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["n_max"] = 61,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 140,
+											["Razormane Thornweaver"] = 61,
 										},
-										["n_total"] = 140,
-										["n_min"] = 42,
+										["n_total"] = 61,
+										["n_min"] = 61,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 140,
+										["counter"] = 1,
+										["total"] = 61,
 										["c_max"] = 0,
 										["id"] = 412758,
 										["r_dmg"] = 0,
@@ -7280,7 +5174,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -7288,221 +5182,39 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 14.39793732388858,
+							["last_dps"] = 24.17050467290377,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 10.008772,
-							["start_time"] = 1706885869,
-							["delay"] = 1706885856,
-							["last_event"] = 1706885881,
+							["damage_taken"] = 0.001076,
+							["start_time"] = 1706959053,
+							["delay"] = 0,
+							["last_event"] = 1706959053,
 						}, -- [1]
 						{
-							["flag_original"] = 66834,
-							["totalabsorbed"] = 0.003302,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001232,
 							["pets"] = {
-								"Scorpid <Mcsheep>", -- [1]
 							},
-							["classe"] = "HUNTER",
-							["total_without_pet"] = 47.003302,
+							["classe"] = "PET",
+							["total_without_pet"] = 14.001232,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 53.003302,
+							["total"] = 14.001232,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Player-5826-025147AC",
-							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 47,
-								["Gazz'uz"] = 6,
-							},
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["colocacao"] = 2,
-							["aID"] = "5826-025147AC",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 14,
+							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 6,
 							},
-							["end_time"] = 1706885885,
-							["nome"] = "Mcsheep",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 25,
-										},
-										["n_total"] = 25,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 25,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[14260] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 22,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 22,
-										},
-										["n_total"] = 22,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = 14260,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 1.615122740704357,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 22.003302,
-							["start_time"] = 1706885871,
-							["delay"] = 0,
-							["last_event"] = 1706885885,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006602,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 73.006602,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 73.006602,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-00003D02BA",
-							["aID"] = "3197",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dzardas"] = true,
-								["Mcsheep"] = true,
-								["Rupqua <Dopedot>"] = true,
-								["Dopedot"] = true,
-								["Sanglier"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 10,
-								["Sanglier"] = 8,
-								["Mcsheep"] = 22,
-								["Rupqua <Dopedot>"] = 33,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885885,
-							["nome"] = "Burning Blade Fanatic",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Dopedot"] = 10,
-											["Sanglier"] = 8,
-											["Mcsheep"] = 22,
-											["Rupqua <Dopedot>"] = 33,
-										},
-										["n_total"] = 73,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["DODGE"] = 1,
-										["total"] = 73,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 8,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 590.0066019999999,
-							["start_time"] = 1706885869,
-							["delay"] = 0,
-							["last_event"] = 1706885884,
-						}, -- [3]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006869,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 56.006869,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 56.006869,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 56,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885881,
+							["end_time"] = 1706959056,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
@@ -7512,15 +5224,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 15,
+										["n_max"] = 14,
 										["targets"] = {
-											["Burning Blade Fanatic"] = 56,
+											["Razormane Thornweaver"] = 14,
 										},
-										["n_total"] = 56,
-										["n_min"] = 13,
+										["n_total"] = 14,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 56,
+										["counter"] = 1,
+										["total"] = 14,
 										["c_max"] = 0,
 										["id"] = 7799,
 										["r_dmg"] = 0,
@@ -7532,430 +5244,6 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 33.006869,
-							["start_time"] = 1706885873,
-							["delay"] = 1706885853,
-							["last_event"] = 1706885878,
-						}, -- [4]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.001685,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 6.001685,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 6.001685,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["aID"] = "Pet-0-5210-1-6742-3127-0400A0173C",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Gazz'uz"] = 6,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 6,
-							},
-							["end_time"] = 1706885885,
-							["ownerName"] = "Mcsheep",
-							["nome"] = "Scorpid <Mcsheep>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Gazz'uz"] = 6,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 6,
-										["counter"] = 1,
-										["total"] = 6,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001685,
-							["start_time"] = 1706885885,
-							["delay"] = 0,
-							["last_event"] = 1706885885,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 653,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 653,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 653,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 29,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 2,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 49,
-							["grupo"] = true,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885881,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 1298,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-5826-025147AC",
-							["grupo"] = true,
-							["aID"] = "5826-025147AC",
-							["nome"] = "Mcsheep",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 653,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 505975.13,
-				["tempo_start"] = 1706885852,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					991, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 3,
-						["Chaos Bolt"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Mcsheep"] = {
-						["Raptor Strike"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:58:02",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Fanatic",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 9.73300000000745,
-				["CombatEndedAt"] = 505984.863,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:57:33",
-				["end_time"] = 505985.047,
-				["combat_id"] = 653,
-				["frags"] = {
-					["Burning Blade Fanatic"] = 3,
-				},
-				["combat_counter"] = 697,
-				["totals_grupo"] = {
-					410, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 419.008772,
-							["Mcsheep"] = 47.003302,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 505955.945,
-				["contra"] = "Burning Blade Fanatic",
-				["TimeData"] = {
-				},
-			}, -- [13]
-			{
-				{
-					["combatId"] = 652,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007416,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 447.007416,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 515.007416,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 238,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 277,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885837,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 1,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 1,
-										["counter"] = 1,
-										["total"] = 1,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 52,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 42,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 103,
-										},
-										["n_total"] = 145,
-										["n_min"] = 42,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 145,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[403629] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 146,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 155,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 146,
-										},
-										["n_total"] = 146,
-										["n_min"] = 146,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 301,
-										["c_max"] = 155,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 155,
-										["successful_casted"] = 0,
-										["c_total"] = 155,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
@@ -7964,644 +5252,44 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 28.50541960474263,
+							["last_dps"] = 4.512159845312216,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 18.007416,
-							["start_time"] = 1706885819,
+							["damage_taken"] = 0.001232,
+							["start_time"] = 1706959053,
 							["delay"] = 0,
-							["last_event"] = 1706885836,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001812,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 68.001812,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 68.001812,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 41,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 27,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885837,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 41,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 27,
-										},
-										["n_total"] = 68,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 68,
-										["c_max"] = 0,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 40.001812,
-							["start_time"] = 1706885819,
-							["delay"] = 0,
-							["last_event"] = 1706885835,
+							["last_event"] = 1706959053,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001937,
+							["totalabsorbed"] = 0.007507,
 							["pets"] = {
-								"Voidwalker Minion <Burning Blade Apprentice>", -- [1]
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 40.001937,
+							["total_without_pet"] = 23.007507,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 58.001937,
+							["total"] = 23.007507,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D02B5",
-							["aID"] = "3198",
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE20A9",
+							["aID"] = "3268",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
+								["Ikassis"] = true,
+								["Homunculus"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Dopedot"] = 18,
-								["Rupqua <Dopedot>"] = 40,
+								["Ikassis"] = 23,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885837,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 40,
-										},
-										["n_total"] = 40,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 238.001937,
-							["start_time"] = 1706885835,
-							["delay"] = 1706885824,
-							["last_event"] = 1706885824,
-						}, -- [3]
-						{
-							["flag_original"] = 4680,
-							["totalabsorbed"] = 0.005493,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 18.005493,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 18.005493,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D02B6",
-							["aID"] = "8996",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 18,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885837,
-							["ownerName"] = "Burning Blade Apprentice",
-							["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Dopedot"] = 18,
-											["Rupqua"] = 0,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 18,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 277.005493,
-							["start_time"] = 1706885836,
-							["delay"] = 1706885824,
-							["last_event"] = 1706885824,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 652,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 652,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 25.006484,
-							["resource"] = 0.006484,
-							["targets"] = {
-								["Dopedot"] = 25,
-							},
-							["total"] = 25.006484,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.006484,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.006484,
-							["passiveover"] = 0.006484,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 25,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 25,
-										},
-										["counter"] = 1,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706885843,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 652,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 18,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 34,
-							["debuff_uptime"] = 10,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885837,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D02B5",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 652,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 505954.63,
-				["tempo_start"] = 1706885819,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					727, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 25,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 3,
-						["Chaos Bolt"] = 1,
-						["Fear"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 4,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:57:18",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Apprentice",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 505940.345,
-				["CombatEndedAt"] = 505940.345,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:57:00",
-				["end_time"] = 505940.878,
-				["combat_id"] = 652,
-				["frags"] = {
-					["Burning Blade Fanatic"] = 1,
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
-				},
-				["combat_counter"] = 696,
-				["totals_grupo"] = {
-					447, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 25,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 515.007416,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 505922.811,
-				["contra"] = "Burning Blade Apprentice",
-				["TimeData"] = {
-				},
-			}, -- [14]
-			{
-				{
-					["combatId"] = 651,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004438,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 151.004438,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 198.004438,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 198,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885769,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[403629] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 110,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 110,
-										},
-										["n_total"] = 110,
-										["n_min"] = 110,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 110,
-										["c_max"] = 0,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 41,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 41,
-										},
-										["n_total"] = 41,
-										["n_min"] = 41,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 41,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 24.69807134822831,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 21.004438,
-							["start_time"] = 1706885761,
-							["delay"] = 0,
-							["last_event"] = 1706885765,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007348,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 69.00734800000001,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 69.00734800000001,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-00013D027B",
-							["aID"] = "3197",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Gaûlois"] = true,
-								["Dzardas"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 21,
-								["Gaûlois"] = 22,
-								["Dzardas"] = 26,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885819,
-							["nome"] = "Burning Blade Fanatic",
+							["end_time"] = 1706959069,
+							["nome"] = "Razormane Thornweaver",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -8611,1430 +5299,10 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 14,
 										["targets"] = {
-											["Dopedot"] = 21,
-											["Gaûlois"] = 22,
-											["Dzardas"] = 26,
-										},
-										["n_total"] = 69,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 69,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 537.007348,
-							["start_time"] = 1706885762,
-							["delay"] = 0,
-							["last_event"] = 1706885818,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001015,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 47.001015,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 47.001015,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 47,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885769,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 47,
-										},
-										["n_total"] = 47,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 47,
-										["c_max"] = 0,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001015,
-							["start_time"] = 1706885761,
-							["delay"] = 0,
-							["last_event"] = 1706885765,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 651,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 651,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 651,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 12,
-							["grupo"] = true,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885769,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-06009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 651,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 505918.511,
-				["tempo_start"] = 1706885761,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					606, -- [1]
-					34, -- [2]
-					{
-						12, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Incinerate"] = 1,
-						["Chaos Bolt"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 1,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Firebolt"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:56:09",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Fanatic",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 505871.209,
-				["CombatEndedAt"] = 505871.209,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:56:01",
-				["end_time"] = 505872.192,
-				["combat_id"] = 651,
-				["frags"] = {
-					["Burning Blade Fanatic"] = 2,
-				},
-				["combat_counter"] = 695,
-				["totals_grupo"] = {
-					151, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 198.004438,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 505864.175,
-				["contra"] = "Burning Blade Fanatic",
-				["TimeData"] = {
-				},
-			}, -- [15]
-			{
-				{
-					["combatId"] = 650,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006854,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 378.006854,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 437.006854,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 231,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 206,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885727,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[412758] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 44,
-										},
-										["n_total"] = 44,
-										["n_min"] = 44,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 44,
-										["c_max"] = 0,
-										["id"] = 412758,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[980] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 82,
-										},
-										["n_total"] = 82,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 82,
-										["c_max"] = 0,
-										["id"] = 980,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[403629] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 141,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 141,
-										},
-										["n_total"] = 141,
-										["n_min"] = 141,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 141,
-										["c_max"] = 0,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[172] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 40,
-										},
-										["n_total"] = 40,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 172,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1120] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 11,
-										},
-										["n_total"] = 11,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 1120,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5782] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["IMMUNE"] = 1,
-										["id"] = 5782,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[707] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 60,
-										},
-										["n_total"] = 60,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 60,
-										["c_max"] = 0,
-										["id"] = 707,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 8.890927205413837,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 90.006854,
-							["start_time"] = 1706885690,
-							["delay"] = 1706885685,
-							["last_event"] = 1706885758,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.008202,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["total_without_pet"] = 33.008202,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 33.008202,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-025147AC",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 33,
-							},
-							["colocacao"] = 2,
-							["aID"] = "5826-025147AC",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885727,
-							["nome"] = "Mcsheep",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[3044] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 13,
-										},
-										["n_total"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = 3044,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 20,
-										},
-										["n_total"] = 20,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0.6715535888679572,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008202,
-							["start_time"] = 1706885725,
-							["delay"] = 1706885683,
-							["last_event"] = 1706885683,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003766,
-							["pets"] = {
-								"Voidwalker Minion <Burning Blade Apprentice>", -- [1]
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 69.003766,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 198.003766,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D0223",
-							["aID"] = "3198",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Mcsheep"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 90,
-								["Rupqua <Dopedot>"] = 108,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885727,
-							["nome"] = "Burning Blade Apprentice",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 69,
-										},
-										["n_total"] = 69,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 69,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 31,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 264.003766,
-							["start_time"] = 1706885708,
-							["delay"] = 1706885697,
-							["last_event"] = 1706885719,
-						}, -- [3]
-						{
-							["flag_original"] = 4680,
-							["totalabsorbed"] = 0.00537,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 129.00537,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 129.00537,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D022A",
-							["aID"] = "8996",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Dopedot"] = 90,
-								["Rupqua <Dopedot>"] = 39,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885727,
-							["ownerName"] = "Burning Blade Apprentice",
-							["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Dopedot"] = 90,
-											["Rupqua <Dopedot>"] = 39,
-										},
-										["n_total"] = 129,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 129,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 206.00537,
-							["start_time"] = 1706885711,
-							["delay"] = 1706885697,
-							["last_event"] = 1706885719,
-						}, -- [4]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008861,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 59.008861,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 59.008861,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["damage_from"] = {
-								["Voidwalker Minion <Burning Blade Apprentice>"] = true,
-								["Burning Blade Apprentice"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Apprentice"] = 46,
-								["Voidwalker Minion <Burning Blade Apprentice>"] = 13,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885727,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Burning Blade Apprentice"] = 46,
-											["Voidwalker Minion <Burning Blade Apprentice>"] = 13,
-										},
-										["n_total"] = 39,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 59,
-										["c_max"] = 20,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 20,
-										["successful_casted"] = 0,
-										["c_total"] = 20,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 108.008861,
-							["start_time"] = 1706885716,
-							["delay"] = 1706885683,
-							["last_event"] = 1706885721,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 650,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 650,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 75.005653,
-							["resource"] = 0.005653,
-							["targets"] = {
-								["Dopedot"] = 75,
-							},
-							["total"] = 75.005653,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.005653,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.005653,
-							["passiveover"] = 0.005653,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 75,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 75,
-										},
-										["counter"] = 3,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706885730,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 650,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[172] = {
-										["activedamt"] = 0,
-										["id"] = 172,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[707] = {
-										["activedamt"] = 0,
-										["id"] = 707,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 25,
-										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[980] = {
-										["activedamt"] = 0,
-										["id"] = 980,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[6307] = {
-										["activedamt"] = 1,
-										["id"] = 6307,
-										["targets"] = {
-										},
-										["actived_at"] = 1706885719,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 49,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 67,
-							["debuff_uptime"] = 82,
-							["aID"] = "5826-024A22B1",
-							["nome"] = "Dopedot",
-							["last_event"] = 1706885727,
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-00003D0223",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
-						{
-							["flag_original"] = 1298,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-5826-025147AC",
-							["grupo"] = true,
-							["aID"] = "5826-025147AC",
-							["nome"] = "Mcsheep",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 650,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
-					["Dopedot"] = "Player-5826-024A22B1",
-				},
-				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
-				},
-				["CombatStartedAt"] = 505861.691,
-				["tempo_start"] = 1706885678,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["bossTimers"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					668, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 75,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Dopedot"] = {
-						["Corruption"] = 1,
-						["Summon Imp"] = 1,
-						["Incinerate"] = 1,
-						["Drain Soul"] = 1,
-						["Immolate"] = 1,
-						["Chaos Bolt"] = 1,
-						["Life Tap"] = 1,
-						["Curse of Agony"] = 1,
-						["Fear"] = 3,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 2,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 2,
-					},
-					["Rupqua <Dopedot>"] = {
-						["Blood Pact"] = 1,
-						["Firebolt"] = 1,
-					},
-					["Mcsheep"] = {
-						["Auto Shot"] = 2,
-						["Arcane Shot"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["data_fim"] = "15:55:27",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Burning Blade Apprentice",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 505829.39,
-				["CombatEndedAt"] = 505829.39,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:54:38",
-				["end_time"] = 505830.007,
-				["combat_id"] = 650,
-				["frags"] = {
-					["Rupqua"] = 1,
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
-				},
-				["combat_counter"] = 694,
-				["totals_grupo"] = {
-					411, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 75,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Dopedot"] = 437.006854,
-							["Mcsheep"] = 33.008202,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 505780.855,
-				["contra"] = "Voidwalker Minion",
-				["TimeData"] = {
-				},
-			}, -- [16]
-			{
-				{
-					["combatId"] = 649,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00227,
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 171.00227,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 200.00227,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Player-5826-024A22B1",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 200,
-							},
-							["colocacao"] = 1,
-							["aID"] = "5826-024A22B1",
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885669,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[403629] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 171,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 171,
-										["c_max"] = 171,
-										["id"] = 403629,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 171,
-										["successful_casted"] = 0,
-										["c_total"] = 171,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 49.59143813543463,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00227,
-							["start_time"] = 1706885665,
-							["delay"] = 0,
-							["last_event"] = 1706885668,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006927,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 29.006927,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 29.006927,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["damage_from"] = {
-								["Burning Blade Fanatic"] = true,
-							},
-							["targets"] = {
-								["Burning Blade Fanatic"] = 29,
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885669,
-							["ownerName"] = "Dopedot",
-							["nome"] = "Rupqua <Dopedot>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[7799] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Burning Blade Fanatic"] = 29,
-										},
-										["n_total"] = 29,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 7799,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 23.006927,
-							["start_time"] = 1706885665,
-							["delay"] = 0,
-							["last_event"] = 1706885668,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008668,
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["total_without_pet"] = 23.008668,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 23.008668,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3197-00003D021E",
-							["aID"] = "3197",
-							["fight_component"] = true,
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Rupqua <Dopedot>"] = 23,
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885669,
-							["nome"] = "Burning Blade Fanatic",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 23,
+											["Ikassis"] = 23,
 										},
 										["n_total"] = 23,
-										["n_min"] = 11,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["total"] = 23,
@@ -10060,27 +5328,1040 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 200.008668,
-							["start_time"] = 1706885666,
+							["damage_taken"] = 340.007507,
+							["start_time"] = 1706959055,
 							["delay"] = 0,
-							["last_event"] = 1706885668,
+							["last_event"] = 1706959063,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 649,
+					["combatId"] = 693,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 649,
+					["combatId"] = 693,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 649,
+					["combatId"] = 693,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 6,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706959056,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 693,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10649.302,
+				["tempo_start"] = 1706959053,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					447, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:17:37",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10637.375,
+				["CombatEndedAt"] = 10637.375,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:17:34",
+				["end_time"] = 10637.375,
+				["combat_id"] = 693,
+				["frags"] = {
+					["Razormane Thornweaver"] = 1,
+				},
+				["combat_counter"] = 737,
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 75.001076,
+							["Rupqua <Dopedot>"] = 14.001232,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10634.272,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["combatId"] = 692,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005881,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 373.005881,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 448.005881,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 218,
+								["Razormane Water Seeker"] = 230,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959043,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Razormane Thornweaver"] = 45,
+											["Razormane Water Seeker"] = 47,
+										},
+										["n_total"] = 92,
+										["n_min"] = 45,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 143,
+										["targets"] = {
+											["Razormane Thornweaver"] = 143,
+											["Razormane Water Seeker"] = 138,
+										},
+										["n_total"] = 281,
+										["n_min"] = 138,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 281,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 16.49749156724171,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005881,
+							["start_time"] = 1706959035,
+							["delay"] = 1706959019,
+							["last_event"] = 1706959042,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002438,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 75.002438,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 75.002438,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 30,
+								["Razormane Water Seeker"] = 45,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959043,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Razormane Thornweaver"] = 30,
+											["Razormane Water Seeker"] = 45,
+										},
+										["n_total"] = 75,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 2.761910369715814,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002438,
+							["start_time"] = 1706959036,
+							["delay"] = 1706959018,
+							["last_event"] = 1706959042,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004257,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 62.004257,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 62.004257,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3267-00003E2090",
+							["aID"] = "3267",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Boar"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Boar"] = 45,
+								["Ikassis"] = 17,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959053,
+							["nome"] = "Razormane Water Seeker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Boar"] = 9,
+										},
+										["n_total"] = 9,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6278] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Boar"] = 36,
+											["Ikassis"] = 17,
+										},
+										["n_total"] = 53,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = 6278,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 246.004257,
+							["start_time"] = 1706959042,
+							["delay"] = 1706959029,
+							["last_event"] = 1706959053,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002378,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.002378,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.002378,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3268-00003E2090",
+							["aID"] = "3268",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Ikassis"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706959043,
+							["nome"] = "Razormane Thornweaver",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Ikassis"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6950] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6950,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 301.002378,
+							["start_time"] = 1706959043,
+							["delay"] = 0,
+							["last_event"] = 1706959053,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 692,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 692,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 692,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 27,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 20,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 47,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706959043,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5250-1-8029-3268-00003E2090",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3268",
+							["nome"] = "Razormane Thornweaver",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 692,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10632.872,
+				["tempo_start"] = 1706959016,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1040, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+						["Chaos Bolt"] = 2,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 3,
+					},
+					["Razormane Thornweaver"] = {
+						["Faerie Fire"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:17:24",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10624.365,
+				["CombatEndedAt"] = 10624.365,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:16:57",
+				["end_time"] = 10624.365,
+				["combat_id"] = 692,
+				["frags"] = {
+					["Razormane Thornweaver"] = 1,
+					["Razormane Water Seeker"] = 2,
+				},
+				["combat_counter"] = 736,
+				["totals_grupo"] = {
+					448, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 448.005881,
+							["Rupqua <Dopedot>"] = 75.002438,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10597.209,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [12]
+			{
+				{
+					["combatId"] = 691,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006142,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 192.006142,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 236.006142,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Water Seeker"] = 236,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958998,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 43,
+										["targets"] = {
+											["Razormane Water Seeker"] = 43,
+										},
+										["n_total"] = 43,
+										["n_min"] = 43,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 149,
+										["targets"] = {
+											["Razormane Water Seeker"] = 149,
+										},
+										["n_total"] = 149,
+										["n_min"] = 149,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 149,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 46.85450506255171,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006142,
+							["start_time"] = 1706958993,
+							["delay"] = 0,
+							["last_event"] = 1706958997,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003262,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 44.003262,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 44.003262,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Water Seeker"] = 44,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958998,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Razormane Water Seeker"] = 44,
+										},
+										["n_total"] = 44,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 44,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 8.736005955928848,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003262,
+							["start_time"] = 1706958993,
+							["delay"] = 0,
+							["last_event"] = 1706958997,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00684,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.00684,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.00684,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3267-00013E207F",
+							["aID"] = "3267",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958998,
+							["nome"] = "Razormane Water Seeker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 236.00684,
+							["start_time"] = 1706958998,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 691,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 691,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 691,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -10106,13 +6387,24 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
 								},
 							},
-							["buff_uptime"] = 4,
+							["buff_uptime"] = 8,
 							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706885669,
+							["last_event"] = 1706958998,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -10120,8 +6412,9 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
@@ -10130,21 +6423,19 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 649,
+					["combatId"] = 691,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
 					["Dopedot"] = "Player-5826-024A22B1",
 				},
 				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
+					"Dopedot", -- [1]
 				},
-				["CombatStartedAt"] = 505779.321,
-				["tempo_start"] = 1706885665,
+				["CombatStartedAt"] = 10595.858,
+				["tempo_start"] = 1706958993,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -10154,8 +6445,9 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["playing_solo"] = true,
 				["totals"] = {
-					223, -- [1]
+					401, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -10182,33 +6474,37 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
+						["Shoot"] = 1,
 						["Chaos Bolt"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["data_fim"] = "15:54:29",
+				["data_fim"] = "12:16:39",
 				["bIsClosed"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Burning Blade Fanatic",
+				["enemy"] = "Razormane Water Seeker",
 				["trinketProcs"] = {
 				},
-				["TotalElapsedCombatTime"] = 3.25,
-				["CombatEndedAt"] = 505771.638,
+				["TotalElapsedCombatTime"] = 10579.444,
+				["CombatEndedAt"] = 10579.444,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "15:54:25",
-				["end_time"] = 505772.421,
-				["combat_id"] = 649,
+				["data_inicio"] = "12:16:34",
+				["end_time"] = 10579.444,
+				["combat_id"] = 691,
 				["frags"] = {
-					["Burning Blade Fanatic"] = 1,
+					["Razormane Water Seeker"] = 1,
 				},
-				["combat_counter"] = 693,
+				["combat_counter"] = 735,
 				["totals_grupo"] = {
-					171, -- [1]
+					236, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -10243,41 +6539,41 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 200.00227,
+							["Dopedot"] = 236.006142,
+							["Rupqua <Dopedot>"] = 44.003262,
 						}, -- [1]
 					},
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 505768.388,
-				["contra"] = "Burning Blade Fanatic",
+				["start_time"] = 10574.407,
+				["contra"] = "Razormane Water Seeker",
 				["TimeData"] = {
 				},
-			}, -- [17]
+			}, -- [13]
 			{
 				{
-					["combatId"] = 648,
+					["combatId"] = 690,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004542,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005999,
 							["pets"] = {
 								"Rupqua <Dopedot>", -- [1]
 							},
 							["classe"] = "WARLOCK",
-							["total_without_pet"] = 376.004542,
+							["total_without_pet"] = 223.005999,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 484.004542,
+							["total"] = 255.005999,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-024A22B1",
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 262,
-								["Voidwalker Minion"] = 222,
+								["Razormane Thornweaver"] = 255,
 							},
 							["colocacao"] = 1,
 							["aID"] = "5826-024A22B1",
@@ -10285,26 +6581,25 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885647,
+							["end_time"] = 1706958978,
 							["nome"] = "Dopedot",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									[412758] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["n_max"] = 0,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 100,
-											["Voidwalker Minion"] = 158,
+											["Razormane Thornweaver"] = 91,
 										},
-										["n_total"] = 258,
-										["n_min"] = 45,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 258,
-										["c_max"] = 0,
+										["counter"] = 1,
+										["total"] = 91,
+										["c_max"] = 91,
 										["id"] = 412758,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -10312,10 +6607,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 91,
 										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 5,
+										["c_total"] = 91,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -10323,15 +6618,15 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 118,
+										["n_max"] = 132,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 118,
+											["Razormane Thornweaver"] = 132,
 										},
-										["n_total"] = 118,
-										["n_min"] = 118,
+										["n_total"] = 132,
+										["n_min"] = 132,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 118,
+										["total"] = 132,
 										["c_max"] = 0,
 										["id"] = 403629,
 										["r_dmg"] = 0,
@@ -10351,60 +6646,58 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 26.73910513236335,
+							["last_dps"] = 88.3596670131541,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004542,
-							["start_time"] = 1706885629,
+							["damage_taken"] = 0.005999,
+							["start_time"] = 1706958975,
 							["delay"] = 0,
-							["last_event"] = 1706885646,
+							["last_event"] = 1706958977,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002992,
+							["totalabsorbed"] = 0.006689,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["total_without_pet"] = 108.002992,
+							["total_without_pet"] = 32.006689,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 108.002992,
+							["total"] = 32.006689,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
 							["damage_from"] = {
-								["Burning Blade Apprentice"] = true,
-								["Voidwalker Minion"] = true,
 							},
 							["targets"] = {
-								["Burning Blade Apprentice"] = 44,
-								["Voidwalker Minion"] = 64,
+								["Razormane Thornweaver"] = 32,
 							},
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885647,
+							["end_time"] = 1706958978,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									[7799] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 15,
+										["n_max"] = 16,
 										["targets"] = {
-											["Burning Blade Apprentice"] = 44,
-											["Voidwalker Minion"] = 64,
+											["Razormane Thornweaver"] = 32,
 										},
-										["n_total"] = 88,
-										["n_min"] = 14,
+										["n_total"] = 32,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 108,
-										["c_max"] = 20,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
 										["id"] = 7799,
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
@@ -10412,10 +6705,10 @@ _detalhes_database = {
 										},
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 20,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["c_total"] = 20,
-										["n_amt"] = 6,
+										["c_total"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -10423,72 +6716,44 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["last_dps"] = 11.09032882882721,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 49.002992,
-							["start_time"] = 1706885629,
+							["damage_taken"] = 0.006689,
+							["start_time"] = 1706958975,
 							["delay"] = 0,
-							["last_event"] = 1706885646,
+							["last_event"] = 1706958977,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007301,
+							["totalabsorbed"] = 0.005207,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["total_without_pet"] = 31.007301,
+							["total_without_pet"] = 0.005207,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
-							["total"] = 31.007301,
+							["total"] = 0.005207,
 							["on_hold"] = false,
 							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-3198-0000BD019E",
-							["aID"] = "3198",
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE2071",
+							["aID"] = "3268",
 							["fight_component"] = true,
 							["damage_from"] = {
 								["Dopedot"] = true,
 								["Rupqua <Dopedot>"] = true,
 							},
 							["targets"] = {
-								["Rupqua <Dopedot>"] = 31,
 							},
 							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["end_time"] = 1706885647,
-							["nome"] = "Burning Blade Apprentice",
+							["end_time"] = 1706958978,
+							["nome"] = "Razormane Thornweaver",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[20791] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 20791,
-										["r_dmg"] = 31,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
 								},
 							},
 							["friendlyfire"] = {
@@ -10496,183 +6761,47 @@ _detalhes_database = {
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 262.007301,
-							["start_time"] = 1706885646,
-							["delay"] = 1706885633,
-							["last_event"] = 1706885633,
+							["damage_taken"] = 255.005207,
+							["start_time"] = 1706958978,
+							["delay"] = 0,
+							["last_event"] = 0,
 						}, -- [3]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.001553,
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["total_without_pet"] = 18.001553,
-							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
-							["total"] = 18.001553,
-							["on_hold"] = false,
-							["total_extra"] = 0,
-							["serial"] = "Creature-0-5210-1-6742-8996-00003D01A9",
-							["aID"] = "8996",
-							["damage_from"] = {
-								["Dopedot"] = true,
-								["Rupqua <Dopedot>"] = true,
-							},
-							["targets"] = {
-								["Rupqua <Dopedot>"] = 18,
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["end_time"] = 1706885647,
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Rupqua <Dopedot>"] = 18,
-										},
-										["n_total"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 222.001553,
-							["start_time"] = 1706885646,
-							["delay"] = 1706885634,
-							["last_event"] = 1706885634,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 648,
+					["combatId"] = 690,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 648,
+					["combatId"] = 690,
 					["tipo"] = 7,
 					["_ActorTable"] = {
-						{
-							["received"] = 75.002498,
-							["resource"] = 0.002498,
-							["targets"] = {
-								["Dopedot"] = 75,
-							},
-							["total"] = 75.002498,
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["flag_original"] = 1297,
-							["aID"] = "5826-024A22B1",
-							["totalover"] = 0.002498,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
-							["alternatepower"] = 0.002498,
-							["passiveover"] = 0.002498,
-							["nome"] = "Dopedot",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-									[31818] = {
-										["total"] = 75,
-										["id"] = 31818,
-										["totalover"] = 0,
-										["targets"] = {
-											["Dopedot"] = 75,
-										},
-										["counter"] = 3,
-									},
-								},
-							},
-							["serial"] = "Player-5826-024A22B1",
-							["tipo"] = 3,
-							["last_event"] = 1706885662,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 648,
+					["combatId"] = 690,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5782] = {
-										["activedamt"] = 0,
-										["id"] = 5782,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1120] = {
-										["activedamt"] = 1,
-										["id"] = 1120,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
 							},
 							["serial"] = "Player-5826-024A22B1",
 							["buff_uptime_targets"] = {
 							},
-							["pets"] = {
-								"Rupqua <Dopedot>", -- [1]
-							},
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[1120] = {
+									[696] = {
 										["activedamt"] = 1,
-										["id"] = 1120,
+										["id"] = 696,
 										["targets"] = {
 										},
-										["uptime"] = 1,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -10683,18 +6812,7 @@ _detalhes_database = {
 										["id"] = 412758,
 										["targets"] = {
 										},
-										["uptime"] = 18,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[696] = {
-										["activedamt"] = 1,
-										["id"] = 696,
-										["targets"] = {
-										},
-										["uptime"] = 18,
+										["uptime"] = 3,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -10702,11 +6820,11 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 37,
-							["debuff_uptime"] = 9,
+							["buff_uptime"] = 6,
+							["grupo"] = true,
 							["aID"] = "5826-024A22B1",
 							["nome"] = "Dopedot",
-							["last_event"] = 1706885647,
+							["last_event"] = 1706958978,
 							["tipo"] = 4,
 						}, -- [1]
 						{
@@ -10714,62 +6832,46 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["aID"] = "Pet-0-5210-1-6742-416-05009FD407",
-							["serial"] = "Pet-0-5210-1-6742-416-05009FD407",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
 							["ownerName"] = "Dopedot",
 							["nome"] = "Rupqua <Dopedot>",
 							["last_event"] = 0,
 							["tipo"] = 4,
 						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5210-1-6742-3198-0000BD019E",
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "3198",
-							["nome"] = "Burning Blade Apprentice",
-							["last_event"] = 0,
-							["tipo"] = 4,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 648,
+					["combatId"] = 690,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Mcsheep"] = "Player-5826-025147AC",
 					["Dopedot"] = "Player-5826-024A22B1",
 				},
 				["raid_roster_indexed"] = {
-					"Mcsheep", -- [1]
-					"Dopedot", -- [2]
+					"Dopedot", -- [1]
 				},
-				["combat_counter"] = 692,
-				["tempo_start"] = 1706885629,
+				["CombatStartedAt"] = 10573.489,
+				["tempo_start"] = 1706958975,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["bIsClosed"] = true,
 				["bossTimers"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["cleu_timeline"] = {
-				},
+				["playing_solo"] = true,
 				["totals"] = {
-					533, -- [1]
+					255, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 75,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -10789,36 +6891,40 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["enemy"] = "Burning Blade Apprentice",
-				["CombatEndedAt"] = 505749.771,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "15:53:49",
+				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Dopedot"] = {
-						["Incinerate"] = 4,
 						["Chaos Bolt"] = 1,
-						["Drain Soul"] = 1,
-						["Fear"] = 1,
-					},
-					["Rupqua"] = {
-						["Firebolt"] = 5,
-					},
-					["Burning Blade Apprentice"] = {
-						["Shadow Bolt"] = 1,
 					},
 					["Rupqua <Dopedot>"] = {
 						["Firebolt"] = 1,
 					},
 				},
 				["instance_type"] = "none",
-				["combat_id"] = 648,
+				["data_fim"] = "12:16:18",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10558.761,
+				["CombatEndedAt"] = 10558.761,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:16:15",
+				["end_time"] = 10558.761,
+				["combat_id"] = 690,
+				["frags"] = {
+					["Razormane Thornweaver"] = 1,
+				},
+				["combat_counter"] = 734,
 				["totals_grupo"] = {
-					376, -- [1]
+					255, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 75,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -10834,8 +6940,6 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["end_time"] = 505750.338,
-				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -10851,33 +6955,2046 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Dopedot"] = 484.004542,
+							["Dopedot"] = 255.005999,
+							["Rupqua <Dopedot>"] = 32.006689,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Burning Blade Apprentice"] = 1,
-					["Voidwalker Minion"] = 1,
-				},
-				["data_fim"] = "15:54:07",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 505749.771,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 505732.237,
-				["contra"] = "Burning Blade Apprentice",
+				["start_time"] = 10555.875,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [14]
+			{
+				{
+					["combatId"] = 689,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004352,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 201.004352,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 230.004352,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 230,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958964,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Razormane Thornweaver"] = 58,
+										},
+										["n_total"] = 58,
+										["n_min"] = 58,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 58,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 143,
+										["targets"] = {
+											["Razormane Thornweaver"] = 143,
+										},
+										["n_total"] = 143,
+										["n_min"] = 143,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 72.19220087885186,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.004352,
+							["start_time"] = 1706958961,
+							["delay"] = 0,
+							["last_event"] = 1706958963,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006213,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 29.006213,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 29.006213,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 29,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958964,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Razormane Thornweaver"] = 29,
+										},
+										["n_total"] = 29,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 9.104272755807528,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006213,
+							["start_time"] = 1706958961,
+							["delay"] = 0,
+							["last_event"] = 1706958963,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003514,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 25.003514,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 25.003514,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE205B",
+							["aID"] = "3268",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Ashmane"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Ashmane"] = 25,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958975,
+							["nome"] = "Razormane Thornweaver",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Ashmane"] = 25,
+										},
+										["n_total"] = 25,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 25,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6950] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Dopedot"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6950,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 244.003514,
+							["start_time"] = 1706958964,
+							["delay"] = 0,
+							["last_event"] = 1706958971,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 689,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 689,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 689,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 6,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706958964,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE205B",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3268",
+							["nome"] = "Razormane Thornweaver",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 689,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10554.458,
+				["tempo_start"] = 1706958961,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					579, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Chaos Bolt"] = 1,
+					},
+					["Razormane Thornweaver"] = {
+						["Faerie Fire"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:16:04",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10544.633,
+				["CombatEndedAt"] = 10544.633,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:16:01",
+				["end_time"] = 10544.633,
+				["combat_id"] = 689,
+				["frags"] = {
+					["Razormane Thornweaver"] = 1,
+				},
+				["combat_counter"] = 733,
+				["totals_grupo"] = {
+					230, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 230.004352,
+							["Rupqua <Dopedot>"] = 29.006213,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10541.447,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [15]
+			{
+				{
+					["combatId"] = 688,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001718,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 180.001718,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 220.001718,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 220,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958953,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 133,
+										["targets"] = {
+											["Razormane Thornweaver"] = 133,
+										},
+										["n_total"] = 133,
+										["n_min"] = 133,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 133,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Razormane Thornweaver"] = 47,
+										},
+										["n_total"] = 47,
+										["n_min"] = 47,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 47,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 45.31446302781046,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001718,
+							["start_time"] = 1706958948,
+							["delay"] = 0,
+							["last_event"] = 1706958952,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00606,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 40.00606,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 40.00606,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 40,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958953,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Razormane Thornweaver"] = 40,
+										},
+										["n_total"] = 40,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 40,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 8.240177136972934,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.00606,
+							["start_time"] = 1706958948,
+							["delay"] = 0,
+							["last_event"] = 1706958952,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00634,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.00634,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.00634,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3268-0000BE204B",
+							["aID"] = "3268",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958953,
+							["nome"] = "Razormane Thornweaver",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 220.00634,
+							["start_time"] = 1706958953,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 688,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 688,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 688,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 2,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 10,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706958953,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 688,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10539.946,
+				["tempo_start"] = 1706958948,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					220, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:15:54",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10534.108,
+				["CombatEndedAt"] = 10534.108,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:15:49",
+				["end_time"] = 10534.108,
+				["combat_id"] = 688,
+				["frags"] = {
+					["Razormane Thornweaver"] = 1,
+				},
+				["combat_counter"] = 732,
+				["totals_grupo"] = {
+					220, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 220.001718,
+							["Rupqua <Dopedot>"] = 40.00606,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10529.253,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [16]
+			{
+				{
+					["combatId"] = 687,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003563,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 231.003563,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 274.003563,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 274,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958937,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 126,
+										["targets"] = {
+											["Razormane Thornweaver"] = 126,
+										},
+										["n_total"] = 126,
+										["n_min"] = 126,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 126,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 58,
+										["targets"] = {
+											["Razormane Thornweaver"] = 105,
+										},
+										["n_total"] = 105,
+										["n_min"] = 47,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 105,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 54.94356587125439,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.003563,
+							["start_time"] = 1706958932,
+							["delay"] = 0,
+							["last_event"] = 1706958937,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00117,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 43.00117,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 43.00117,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Razormane Thornweaver"] = 43,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958937,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Razormane Thornweaver"] = 43,
+										},
+										["n_total"] = 43,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 8.622652897531877,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.00117,
+							["start_time"] = 1706958932,
+							["delay"] = 0,
+							["last_event"] = 1706958937,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005293,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 0.005293,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.005293,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3268-00003E2032",
+							["aID"] = "3268",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Ikassis"] = true,
+								["Homunculus <Ikassis>"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958937,
+							["nome"] = "Razormane Thornweaver",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[6950] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6950,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 382.005293,
+							["start_time"] = 1706958937,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 687,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 687,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 687,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 9,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706958937,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5250-1-8029-3268-00003E2032",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3268",
+							["nome"] = "Razormane Thornweaver",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 687,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10527.619,
+				["tempo_start"] = 1706958932,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					399, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 2,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 1,
+					},
+					["Razormane Thornweaver"] = {
+						["Faerie Fire"] = 1,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:15:37",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Thornweaver",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10517.862,
+				["CombatEndedAt"] = 10517.862,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:15:32",
+				["end_time"] = 10517.862,
+				["combat_id"] = 687,
+				["frags"] = {
+					["Razormane Thornweaver"] = 2,
+				},
+				["combat_counter"] = 731,
+				["totals_grupo"] = {
+					274, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 274.003563,
+							["Rupqua <Dopedot>"] = 43.00117,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10512.875,
+				["contra"] = "Razormane Thornweaver",
+				["TimeData"] = {
+				},
+			}, -- [17]
+			{
+				{
+					["combatId"] = 686,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003847,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["classe"] = "WARLOCK",
+							["total_without_pet"] = 416.003847,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 541.003847,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Player-5826-024A22B1",
+							["damage_from"] = {
+								["Razormane Wolf"] = true,
+								["Razormane Hunter"] = true,
+							},
+							["targets"] = {
+								["Razormane Wolf"] = 230,
+								["Razormane Hunter"] = 311,
+							},
+							["colocacao"] = 1,
+							["aID"] = "5826-024A22B1",
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958912,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Razormane Wolf"] = 0,
+										},
+										["n_total"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[403629] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 132,
+										["targets"] = {
+											["Razormane Hunter"] = 132,
+										},
+										["n_total"] = 132,
+										["n_min"] = 132,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 132,
+										["c_max"] = 0,
+										["id"] = 403629,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[412758] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 61,
+										["targets"] = {
+											["Razormane Wolf"] = 172,
+											["Razormane Hunter"] = 112,
+										},
+										["n_total"] = 284,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 284,
+										["c_max"] = 0,
+										["id"] = 412758,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 27.77227140657146,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 111.003847,
+							["start_time"] = 1706958892,
+							["delay"] = 0,
+							["last_event"] = 1706958911,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001636,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 125.001636,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 125.001636,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["colocacao"] = 2,
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["damage_from"] = {
+								["Razormane Wolf"] = true,
+								["Razormane Hunter"] = true,
+							},
+							["targets"] = {
+								["Razormane Wolf"] = 58,
+								["Razormane Hunter"] = 67,
+							},
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958912,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[7799] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Razormane Wolf"] = 58,
+											["Razormane Hunter"] = 67,
+										},
+										["n_total"] = 104,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 125,
+										["c_max"] = 21,
+										["id"] = 7799,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 21,
+										["successful_casted"] = 0,
+										["c_total"] = 21,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 6.416921765913902,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 56.00163600000001,
+							["start_time"] = 1706958892,
+							["delay"] = 0,
+							["last_event"] = 1706958910,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001734,
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["total_without_pet"] = 119.001734,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 119.001734,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3265-00003E1FFB",
+							["aID"] = "3265",
+							["fight_component"] = true,
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Ashmane"] = true,
+								["Rupqua <Dopedot>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 56,
+								["Ashmane"] = 42,
+								["Rupqua <Dopedot>"] = 21,
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958932,
+							["nome"] = "Razormane Hunter",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Ashmane"] = 42,
+										},
+										["n_total"] = 42,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Dopedot"] = 56,
+											["Rupqua <Dopedot>"] = 21,
+										},
+										["n_total"] = 77,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 450.001734,
+							["start_time"] = 1706958916,
+							["delay"] = 1706958919,
+							["last_event"] = 1706958919,
+						}, -- [3]
+						{
+							["flag_original"] = 4680,
+							["totalabsorbed"] = 0.001805,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["total_without_pet"] = 105.001805,
+							["last_dps_realtime"] = 0,
+							["dps_started"] = false,
+							["total"] = 105.001805,
+							["on_hold"] = false,
+							["total_extra"] = 0,
+							["serial"] = "Creature-0-5250-1-8029-3939-00003E200E",
+							["aID"] = "3939",
+							["damage_from"] = {
+								["Dopedot"] = true,
+								["Rupqua <Dopedot>"] = true,
+								["Homunculus <Ikassis>"] = true,
+							},
+							["targets"] = {
+								["Dopedot"] = 55,
+								["Ashmane"] = 15,
+								["Rupqua <Dopedot>"] = 35,
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["end_time"] = 1706958932,
+							["nome"] = "Razormane Wolf",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Dopedot"] = 55,
+											["Rupqua"] = 0,
+											["Ashmane"] = 15,
+											["Rupqua <Dopedot>"] = 35,
+										},
+										["n_total"] = 105,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 105,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 257.001805,
+							["start_time"] = 1706958906,
+							["delay"] = 1706958921,
+							["last_event"] = 1706958921,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 686,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 686,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 78.001414,
+							["resource"] = 0.001414,
+							["targets"] = {
+								["Dopedot"] = 78,
+							},
+							["total"] = 78.001414,
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["flag_original"] = 1297,
+							["aID"] = "5826-024A22B1",
+							["totalover"] = 0.001414,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["alternatepower"] = 0.001414,
+							["passiveover"] = 0.001414,
+							["nome"] = "Dopedot",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[31818] = {
+										["total"] = 78,
+										["id"] = 31818,
+										["totalover"] = 0,
+										["targets"] = {
+											["Dopedot"] = 78,
+										},
+										["counter"] = 3,
+									},
+								},
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["tipo"] = 3,
+							["last_event"] = 1706958915,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 686,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["pets"] = {
+								"Rupqua <Dopedot>", -- [1]
+							},
+							["serial"] = "Player-5826-024A22B1",
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARLOCK",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[696] = {
+										["activedamt"] = 1,
+										["id"] = 696,
+										["targets"] = {
+										},
+										["uptime"] = 20,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[412758] = {
+										["activedamt"] = 1,
+										["id"] = 412758,
+										["targets"] = {
+										},
+										["uptime"] = 20,
+										["appliedamt"] = 1,
+										["refreshamt"] = 4,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 40,
+							["grupo"] = true,
+							["aID"] = "5826-024A22B1",
+							["nome"] = "Dopedot",
+							["last_event"] = 1706958912,
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5250-1-8029-3265-00003E1FFB",
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["monster"] = true,
+							["aID"] = "3265",
+							["nome"] = "Razormane Hunter",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["aID"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["serial"] = "Pet-0-5250-1-8029-416-03009FD407",
+							["grupo"] = true,
+							["ownerName"] = "Dopedot",
+							["nome"] = "Rupqua <Dopedot>",
+							["last_event"] = 0,
+							["tipo"] = 4,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 686,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Dopedot"] = "Player-5826-024A22B1",
+				},
+				["raid_roster_indexed"] = {
+					"Dopedot", -- [1]
+				},
+				["CombatStartedAt"] = 10511.973,
+				["tempo_start"] = 1706958892,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["bossTimers"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1147, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 78,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Dopedot"] = {
+						["Incinerate"] = 4,
+						["Chaos Bolt"] = 1,
+						["Life Tap"] = 1,
+					},
+					["Rupqua"] = {
+						["Firebolt"] = 6,
+					},
+					["Rupqua <Dopedot>"] = {
+						["Firebolt"] = 1,
+					},
+					["Razormane Hunter"] = {
+						["Shoot"] = 3,
+					},
+				},
+				["instance_type"] = "none",
+				["data_fim"] = "12:15:12",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Razormane Hunter",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 10492.723,
+				["CombatEndedAt"] = 10492.723,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "12:14:53",
+				["end_time"] = 10492.723,
+				["combat_id"] = 686,
+				["frags"] = {
+					["Razormane Wolf"] = 1,
+					["Razormane Hunter"] = 1,
+				},
+				["combat_counter"] = 730,
+				["totals_grupo"] = {
+					541, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 78,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Dopedot"] = 541.003847,
+							["Rupqua <Dopedot>"] = 125.001636,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 10473.243,
+				["contra"] = "Razormane Hunter",
 				["TimeData"] = {
 				},
 			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
-		["enabled"] = false,
+		["show_title"] = true,
 		["current_cooldowns"] = {
 		},
-		["group_frames"] = true,
 		["lines_per_column"] = 12,
+		["group_frames"] = true,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -10901,15 +9018,15 @@ _detalhes_database = {
 			["defensive-personal"] = false,
 		},
 		["width"] = 120,
+		["framme_locked"] = false,
 		["cooldowns"] = {
 		},
 		["height"] = 18,
-		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["show_title"] = true,
+		["enabled"] = false,
 		["filters"] = {
 			["itemutil"] = false,
 			["itempower"] = false,
@@ -10938,17 +9055,17 @@ _detalhes_database = {
 	},
 	["on_death_menu"] = false,
 	["nick_tag_cache"] = {
-		["nextreset"] = 1706951285,
+		["nextreset"] = 1708252533,
 		["last_version"] = 16,
 	},
 	["last_instance_id"] = 0,
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["name"] = "Damage of Each Individual Player",
-				["playerOnly"] = true,
 				["playerKey"] = "total",
 				["combatObjectContainer"] = 1,
+				["name"] = "Damage of Each Individual Player",
+				["playerOnly"] = true,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -10972,13 +9089,15 @@ _detalhes_database = {
 	["ignore_nicktag"] = false,
 	["combat_log"] = {
 		["inverse_deathlog_overalldata"] = false,
-		["track_hunter_frenzy"] = false,
 		["evoker_calc_damage"] = false,
-		["inverse_deathlog_raid"] = false,
+		["track_hunter_frenzy"] = false,
 		["merge_critical_heals"] = false,
+		["inverse_deathlog_raid"] = false,
 		["merge_gemstones_1007"] = false,
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
+	},
+	["cached_talents"] = {
 	},
 	["mythic_plus_log"] = {
 	},
@@ -10995,13 +9114,13 @@ _detalhes_database = {
 			},
 			["usefocus"] = false,
 			["updatespeed"] = 1,
-			["disable_gouge"] = false,
+			["useclasscolors"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["absolute_mode"] = false,
 			["playSound"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["useclasscolors"] = false,
+			["disable_gouge"] = false,
 		},
 		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 			["enabled"] = true,
@@ -11022,43 +9141,21 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["use_square_mode"] = false,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["row_height"] = 18,
+			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["point"] = "RIGHT",
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["author"] = "Details! Team",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["use_spark"] = false,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -11066,110 +9163,68 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["scale"] = 1,
-			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
+			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["font_size"] = 10,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
 			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
+			["use_spark"] = false,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["use_square_mode"] = false,
 		},
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["character_data"] = {
-		["logons"] = 47,
+		["logons"] = 48,
 	},
-	["cached_roles"] = {
+	["last_day"] = "03",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
 	},
-	["last_day"] = "02",
-	["local_instances_config"] = {
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				[3] = 2,
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 1,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [1]
-		{
-			["modo"] = 2,
-			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
-			["verticalSnap"] = false,
-			["isLocked"] = true,
-			["is_open"] = true,
-			["sub_atributo_last"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-			},
-			["snap"] = {
-				1, -- [1]
-			},
-			["segment"] = 0,
-			["mode"] = 2,
-			["attribute"] = 2,
-			["pos"] = {
-				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
-				},
-				["solo"] = {
-					["y"] = 2,
-					["x"] = 1,
-					["w"] = 300,
-					["h"] = 200,
-				},
-			},
-		}, -- [2]
-	},
-	["data_harvested_for_charts"] = {
-	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_id"] = 665,
+	["combat_id"] = 703,
 	["savedStyles"] = {
 		{
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -11187,7 +9242,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -11199,31 +9254,43 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["enabled"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["show_timer"] = false,
+			},
 			["titlebar_texture"] = "xVerminClean",
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["switch_healer_in_combat"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -11310,12 +9377,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -11354,14 +9421,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = false,
-			["bg_alpha"] = 0,
+			["micro_displays_side"] = 2,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -11372,26 +9439,7 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["attribute_text"] = {
-				["show_timer"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
-			},
+			["clickthrough_rows"] = false,
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -11403,7 +9451,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -11419,49 +9467,45 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
-			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
-			["switch_damager"] = {
+			["switch_healer_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
-			["hide_in_combat"] = false,
+			["bars_grow_direction"] = 1,
+			["auto_current"] = true,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["textR_outline_small"] = true,
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -11473,7 +9517,12 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -11487,8 +9536,6 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
-				["font_size"] = 11,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -11497,16 +9544,13 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -11514,18 +9558,14 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["icon_file"] = "",
+				["textL_outline_small"] = true,
+				["textR_outline_small"] = true,
+				["arena_role_icon_size_offset"] = -10,
 				["icon_grayscale"] = false,
-				["use_spec_icons"] = false,
 				["textR_bracket"] = "(",
+				["use_spec_icons"] = false,
 				["texture_custom"] = "",
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -11559,23 +9599,33 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["arena_role_icon_size_offset"] = -10,
+				["icon_file"] = "",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["percent_type"] = 1,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 			},
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["bg_alpha"] = 0,
+			["hide_in_combat"] = false,
+			["switch_damager"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -11587,7 +9637,12 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -11607,7 +9662,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 709,
+	["combat_counter"] = 747,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -11629,7 +9684,7 @@ _detalhes_database = {
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["received"] = 0.001788,
+					["flag_original"] = 1298,
 					["resource"] = 0.009374000000000002,
 					["targets"] = {
 						["Tooblock"] = 0,
@@ -11638,15 +9693,15 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["aID"] = "5826-02488EA3",
-					["passiveover"] = 0.001788,
+					["totalover"] = 0.001788,
 					["total"] = 0.001788,
 					["nome"] = "Tooblock",
 					["spells"] = {
 						["_ActorTable"] = {
 							[31818] = {
 								["total"] = 0,
-								["id"] = 31818,
 								["totalover"] = 0,
+								["id"] = 31818,
 								["targets"] = {
 									["Tooblock"] = 0,
 								},
@@ -11656,21 +9711,21 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
+					["received"] = 0.001788,
 					["classe"] = "WARLOCK",
-					["last_event"] = 0,
-					["totalover"] = 0.001788,
+					["tipo"] = 3,
+					["passiveover"] = 0.001788,
 					["alternatepower"] = 0.001788,
 					["serial"] = "Player-5826-02488EA3",
-					["tipo"] = 3,
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.167479,
+					["resource"] = 0.219123,
 					["pets"] = {
 					},
-					["classe"] = "WARLOCK",
-					["totalover"] = 0.001971,
+					["aID"] = "5826-024A22B1",
+					["passiveover"] = 0.001971,
 					["total"] = 0.001971,
 					["serial"] = "Player-5826-024A22B1",
 					["received"] = 0.001971,
@@ -11684,8 +9739,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[31818] = {
 								["total"] = 0,
-								["id"] = 31818,
 								["totalover"] = 0,
+								["id"] = 31818,
 								["targets"] = {
 									["Dopedot"] = 0,
 								},
@@ -11695,10 +9750,10 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["aID"] = "5826-024A22B1",
-					["passiveover"] = 0.001971,
-					["tipo"] = 3,
+					["classe"] = "WARLOCK",
+					["totalover"] = 0.001971,
 					["last_event"] = 0,
+					["tipo"] = 3,
 					["fight_component"] = true,
 				}, -- [2]
 			},
@@ -11710,14 +9765,14 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[172] = {
-								["id"] = 172,
+							[707] = {
+								["id"] = 707,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[403501] = {
-								["id"] = 403501,
+							[348] = {
+								["id"] = 348,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11728,8 +9783,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[707] = {
-								["id"] = 707,
+							[403501] = {
+								["id"] = 403501,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11746,8 +9801,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[348] = {
-								["id"] = 348,
+							[172] = {
+								["id"] = 172,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11755,10 +9810,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["aID"] = "5826-023EC2B3",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -11774,8 +9828,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[696] = {
-								["id"] = 696,
+							[6307] = {
+								["id"] = 6307,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11786,8 +9840,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[6307] = {
-								["id"] = 6307,
+							[696] = {
+								["id"] = 696,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11802,13 +9856,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
-					},
 					["nome"] = "Dopedot",
+					["buff_uptime_targets"] = {
+					},
 					["grupo"] = true,
-					["buff_uptime"] = 0,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["pets"] = {
+					},
 					["serial"] = "Player-5826-023EC2B3",
 					["classe"] = "WARLOCK",
 				}, -- [1]
@@ -11849,13 +9904,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
-					["classe"] = "WARLOCK",
+					["buff_uptime"] = 0,
+					["aID"] = "5826-02488EA3",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[426606] = {
-								["id"] = 426606,
+							[17941] = {
+								["id"] = 17941,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11866,14 +9920,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[17941] = {
-								["id"] = 17941,
+							[425463] = {
+								["id"] = 425463,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[425463] = {
-								["id"] = 425463,
+							[426606] = {
+								["id"] = 426606,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -11883,95 +9937,96 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["buff_uptime"] = 0,
-					["last_event"] = 0,
-					["nome"] = "Tooblock",
-					["grupo"] = true,
-					["buff_uptime_targets"] = {
+					["pets"] = {
 					},
 					["tipo"] = 4,
-					["aID"] = "5826-02488EA3",
-					["serial"] = "Player-5826-02488EA3",
 					["debuff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["nome"] = "Tooblock",
+					["last_event"] = 0,
+					["classe"] = "WARLOCK",
+					["serial"] = "Player-5826-02488EA3",
+					["buff_uptime_targets"] = {
 					},
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Blackrock Outrunner",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "485",
-					["serial"] = "Creature-0-5211-0-9873-485-0000B917A6",
+					["monster"] = true,
+					["nome"] = "Blackrock Outrunner",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-0-9873-485-0000B917A6",
+					["classe"] = "UNKNOW",
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Blackrock Grunt",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "440",
-					["serial"] = "Creature-0-5211-0-9873-440-0000B91673",
+					["monster"] = true,
+					["nome"] = "Blackrock Grunt",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-0-9873-440-0000B91673",
+					["classe"] = "UNKNOW",
 				}, -- [4]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Black Dragon Whelp",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "441",
-					["serial"] = "Creature-0-5211-0-9873-441-0000391686",
+					["monster"] = true,
+					["nome"] = "Black Dragon Whelp",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-0-9873-441-0000391686",
+					["classe"] = "UNKNOW",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Dire Condor",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "428",
-					["serial"] = "Creature-0-5211-0-9873-428-0000391696",
+					["monster"] = true,
+					["nome"] = "Dire Condor",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-0-9873-428-0000391696",
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Redridge Poacher",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "424",
-					["serial"] = "Creature-0-5211-0-9873-424-00003913B1",
+					["monster"] = true,
+					["nome"] = "Redridge Poacher",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-0-9873-424-00003913B1",
+					["classe"] = "UNKNOW",
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Pygmy Venom Web Spider",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "539",
-					["serial"] = "Creature-0-5208-0-6773-539-0000B8FFA0",
+					["monster"] = true,
+					["nome"] = "Pygmy Venom Web Spider",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5208-0-6773-539-0000B8FFA0",
+					["classe"] = "UNKNOW",
 				}, -- [8]
 				{
 					["flag_original"] = 4369,
@@ -11989,65 +10044,65 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1526",
-					["fight_component"] = true,
-					["nome"] = "Ravaged Corpse",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
+					["monster"] = true,
+					["nome"] = "Ravaged Corpse",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-0-5359-1526-0000392269",
+					["aID"] = "1526",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1525",
-					["fight_component"] = true,
-					["nome"] = "Rotting Dead",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
+					["monster"] = true,
+					["nome"] = "Rotting Dead",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-0-5359-1525-00003922D7",
+					["aID"] = "1525",
 				}, -- [11]
 				{
 					["flag_original"] = 1304,
 					["pets"] = {
 					},
-					["aID"] = "5826-02503328",
+					["classe"] = "UNGROUPPLAYER",
 					["fight_component"] = true,
 					["nome"] = "Hollyorsh",
-					["classe"] = "UNGROUPPLAYER",
-					["last_event"] = 0,
-					["serial"] = "Player-5826-02503328",
+					["aID"] = "5826-02503328",
 					["tipo"] = 4,
+					["serial"] = "Player-5826-02503328",
+					["last_event"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1507",
-					["fight_component"] = true,
-					["nome"] = "Scarlet Initiate",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-0-5359-1507-000039228C",
+					["monster"] = true,
+					["nome"] = "Scarlet Initiate",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-0-5359-1507-000039228C",
+					["aID"] = "1507",
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Bloodtalon Taillasher",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Bloodtalon Taillasher",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5253-1-130-3122-00003A2CF5",
 					["aID"] = "3122",
+					["serial"] = "Creature-0-5253-1-130-3122-00003A2CF5",
+					["tipo"] = 4,
 				}, -- [14]
 				{
 					["flag_original"] = 1047,
@@ -12074,14 +10129,14 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
+					["buff_uptime"] = 0,
 					["pets"] = {
 					},
-					["buff_uptime"] = 0,
 					["aID"] = "5826-02503362",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							[5004] = {
-								["id"] = 5004,
+							[415320] = {
+								["id"] = 415320,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -12092,14 +10147,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[415320] = {
-								["id"] = 415320,
+							[19705] = {
+								["id"] = 19705,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[19705] = {
-								["id"] = 19705,
+							[5004] = {
+								["id"] = 5004,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -12108,14 +10163,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Onedeag",
 					["debuff_uptime_targets"] = {
 					},
+					["nome"] = "Onedeag",
 					["grupo"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Player-5826-02503362",
 					["classe"] = "HUNTER",
 				}, -- [15]
@@ -12124,39 +10179,39 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Hexed Troll",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Hexed Troll",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5253-1-130-3207-00003A3148",
 					["aID"] = "3207",
+					["serial"] = "Creature-0-5253-1-130-3207-00003A3148",
+					["tipo"] = 4,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Voodoo Troll",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Voodoo Troll",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5253-1-130-3206-00003A30DF",
 					["aID"] = "3206",
+					["serial"] = "Creature-0-5253-1-130-3206-00003A30DF",
+					["tipo"] = 4,
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Zalazane",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Zalazane",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5253-1-130-3205-00003A3023",
 					["aID"] = "3205",
+					["serial"] = "Creature-0-5253-1-130-3205-00003A3023",
+					["tipo"] = 4,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -12180,18 +10235,18 @@ _detalhes_database = {
 					},
 					["interrompeu_oque"] = {
 					},
-					["monster"] = true,
-					["interrupt"] = 0,
+					["fight_component"] = true,
+					["nome"] = "Kul Tiras Marine",
 					["interrupt_targets"] = {
 						["Dopedot"] = 0,
 						["Rupqua"] = 0,
 					},
 					["aID"] = "3129",
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["nome"] = "Kul Tiras Marine",
-					["serial"] = "Creature-0-5250-1-3000-3129-0000BA82B0",
+					["monster"] = true,
 					["tipo"] = 4,
+					["interrupt"] = 0,
+					["serial"] = "Creature-0-5250-1-3000-3129-0000BA82B0",
+					["last_event"] = 0,
 				}, -- [19]
 				{
 					["flag_original"] = 2632,
@@ -12214,58 +10269,59 @@ _detalhes_database = {
 					},
 					["interrompeu_oque"] = {
 					},
-					["monster"] = true,
-					["interrupt"] = 0,
+					["fight_component"] = true,
+					["nome"] = "Lieutenant Benedict",
 					["interrupt_targets"] = {
 						["Rupqua"] = 0,
 					},
 					["aID"] = "3192",
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["nome"] = "Lieutenant Benedict",
-					["serial"] = "Creature-0-5250-1-3000-3192-00003A81C3",
+					["monster"] = true,
 					["tipo"] = 4,
+					["interrupt"] = 0,
+					["serial"] = "Creature-0-5250-1-3000-3192-00003A81C3",
+					["last_event"] = 0,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "3128",
-					["fight_component"] = true,
-					["nome"] = "Kul Tiras Sailor",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5250-1-3000-3128-00003A80F9",
+					["monster"] = true,
+					["nome"] = "Kul Tiras Sailor",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5250-1-3000-3128-00003A80F9",
+					["aID"] = "3128",
 				}, -- [21]
 				{
 					["flag_original"] = 68136,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3100",
 					["fight_component"] = true,
 					["nome"] = "Elder Mottled Boar",
-					["aID"] = "3100",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-11365-3100-00003CA8D3",
+					["classe"] = "UNKNOW",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5209-1-11365-3100-00003CA8D3",
+					["tipo"] = 4,
 				}, -- [22]
 				{
 					["flag_original"] = 68136,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3099",
 					["fight_component"] = true,
 					["nome"] = "Dire Mottled Boar",
-					["aID"] = "3099",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-11365-3099-00003CBF76",
+					["classe"] = "UNKNOW",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5209-1-11365-3099-00003CBF76",
+					["tipo"] = 4,
 				}, -- [23]
 				{
 					["flag_original"] = 1047,
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["buff_uptime_targets"] = {
 					},
 					["aID"] = "5826-0200EC55",
@@ -12288,8 +10344,7 @@ _detalhes_database = {
 					},
 					["nome"] = "Pinkscreensh",
 					["grupo"] = true,
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["last_event"] = 0,
 					["classe"] = "SHAMAN",
 					["serial"] = "Player-5826-0200EC55",
@@ -12300,26 +10355,26 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["aID"] = "3114",
-					["monster"] = true,
-					["nome"] = "Razormane Battleguard",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Razormane Battleguard",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-11365-3114-00003CAB99",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5209-1-11365-3114-00003CAB99",
+					["last_event"] = 0,
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["aID"] = "3113",
-					["monster"] = true,
-					["nome"] = "Razormane Dustrunner",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Razormane Dustrunner",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-11365-3113-00003CBC61",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5209-1-11365-3113-00003CBC61",
+					["last_event"] = 0,
 				}, -- [26]
 				{
 					["flag_original"] = 1047,
@@ -12340,9 +10395,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
 					["pets"] = {
 					},
+					["buff_uptime"] = 0,
 					["aID"] = "5826-02503EA3",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -12368,14 +10423,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
+					["nome"] = "Misred",
 					["debuff_uptime_targets"] = {
 					},
-					["nome"] = "Misred",
 					["grupo"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-5826-02503EA3",
 					["classe"] = "HUNTER",
 				}, -- [27]
@@ -12383,15 +10438,79 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Dustwind Storm Witch",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "3118",
-					["serial"] = "Creature-0-5210-1-6742-3118-00003CF656",
+					["monster"] = true,
+					["nome"] = "Dustwind Storm Witch",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5210-1-6742-3118-00003CF656",
+					["classe"] = "UNKNOW",
 				}, -- [28]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5210-1-6742-3198-00023D037E",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3198",
+					["nome"] = "Burning Blade Apprentice",
+					["last_event"] = 0,
+				}, -- [29]
+				{
+					["flag_original"] = 68168,
+					["serial"] = "Creature-0-5210-1-6742-3204-00003D0318",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "3204",
+					["nome"] = "Gazz'uz",
+					["last_event"] = 0,
+				}, -- [30]
+				{
+					["flag_original"] = 1298,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[5116] = {
+								["id"] = 5116,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[13549] = {
+								["id"] = 13549,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[1130] = {
+								["id"] = 1130,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["pets"] = {
+					},
+					["classe"] = "HUNTER",
+					["aID"] = "5826-025147AC",
+					["tipo"] = 4,
+					["debuff_uptime"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["serial"] = "Player-5826-025147AC",
+					["nome"] = "Mcsheep",
+					["grupo"] = true,
+					["last_event"] = 0,
+				}, -- [31]
 			},
 		}, -- [4]
 		{
@@ -12496,24 +10615,88 @@ _detalhes_database = {
 		["trinketProcs"] = {
 		},
 	},
-	["force_font_outline"] = "",
-	["cached_talents"] = {
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["data_harvested_for_charts"] = {
+	},
+	["local_instances_config"] = {
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				[3] = 2,
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 1,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4415893554688,
+					["x"] = -979.6941070556641,
+					["w"] = 234.8974304199219,
+					["h"] = 138.5455932617188,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [1]
+		{
+			["modo"] = 2,
+			["sub_attribute"] = 1,
+			["horizontalSnap"] = true,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
+			["sub_atributo_last"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+			},
+			["snap"] = {
+				1, -- [1]
+			},
+			["segment"] = 0,
+			["mode"] = 2,
+			["attribute"] = 2,
+			["pos"] = {
+				["normal"] = {
+					["y"] = 596.4415893554688,
+					["x"] = -747.7581481933594,
+					["w"] = 228.9744110107422,
+					["h"] = 138.5455932617188,
+				},
+				["solo"] = {
+					["y"] = 2,
+					["x"] = 1,
+					["w"] = 300,
+					["h"] = 200,
+				},
+			},
+		}, -- [2]
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -12521,9 +10704,7 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
 	},
