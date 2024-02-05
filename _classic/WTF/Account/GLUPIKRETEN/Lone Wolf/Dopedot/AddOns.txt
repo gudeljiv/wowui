@@ -110,3 +110,5 @@ TomPoints: enabled
 TomTom: enabled
 TotemCaddy: enabled
 SkillInfoPlus: enabled
+HandyNotes: disabled
+HandyNotes_Runes: disabled

@@ -43,6 +43,22 @@ local function xInstallAddon()
 	ShowHelm(false)
 	ShowCloak(false)
 
+	for _, v in pairs(
+		{
+			"MultiBarBottomRightButton",
+			"MultiBarBottomLeftButton",
+			"MultiBarRightButton",
+			"MultiBarLeftButton"
+		}
+	) do
+		for j = 1, 12 do
+			local button = _G[v..j]
+			if button then
+				button:Show()
+			end
+		end
+	end
+
 	-- SetActionBarToggles(1, 1, 1, 1, 1)
 	-- local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
 	-- for i = 1, #action_bars do

@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11558,
+	["session"] = 11578,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2719,5 +2719,13 @@ BugGrabberDB = {
 			["session"] = 11556,
 			["counter"] = 1,
 		}, -- [351]
+		{
+			["message"] = "[string \"MultiBarBottomRightButton3:show()\"]:1: attempt to call method 'show' (a nil value)",
+			["time"] = "2024/02/05 18:43:44",
+			["locals"] = "(*temporary) = nil\n(*temporary) = MultiBarBottomRightButton3 {\n 0 = <userdata>\n HotKey = MultiBarBottomRightButton3HotKey {\n }\n action = 51\n NewActionTexture = Texture {\n }\n Border = MultiBarBottomRightButton3Border {\n }\n Flash = MultiBarBottomRightButton3Flash {\n }\n UpdateAction = <function> defined @Interface/FrameXML/ActionButton.lua:985\n Background = Texture {\n }\n icon = MultiBarBottomRightButton3Icon {\n }\n feedback_action = 51\n AutoCastable = Texture {\n }\n SpellHighlightAnim = AnimationGroup {\n }\n FlyoutBorder = MultiBarBottomRightButton3FlyoutBorder {\n }\n flashtime = 0\n flashing = 0\n SpellHighlightTexture = Texture {\n }\n buttonType = \"MULTIACTIONBAR2BUTTON\"\n NormalTexture = MultiBarBottomRightButton3NormalTexture {\n }\n FlyoutBorderShadow = MultiBarBottomRightButton3FlyoutBorderShadow {\n }\n Count = MultiBarBottomRightButton3Count {\n }\n Name = MultiBarBottomRightButton3Name {\n }\n AutoCastShine = MultiBarBottomRightButton3Shine {\n }\n FlyoutArrow = MultiBarBottomRightButton3FlyoutArrow {\n }\n cooldown = MultiBarBottomRightButton3Cooldown {\n }\n zoneAbilityDisabled = false\n}\n(*temporary) = \"attempt to call method 'show' (a nil value)\"\n",
+			["stack"] = "[string \"MultiBarBottomRightButton3:show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11562,
+			["counter"] = 1,
+		}, -- [352]
 	},
 }

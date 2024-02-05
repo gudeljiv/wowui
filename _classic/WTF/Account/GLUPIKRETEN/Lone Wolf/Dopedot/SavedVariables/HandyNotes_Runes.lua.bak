@@ -3,10 +3,11 @@ HandyNotes_RunesDB = {
 	["runesKnown"] = {
 		["WARLOCK"] = {
 			["spells"] = {
-				["Haunt"] = true,
-				["Chaos Bolt"] = true,
-				["Incinerate"] = true,
 				["Demonic Grace"] = true,
+				["Incinerate"] = true,
+				["Haunt"] = true,
+				["Soul Siphon"] = true,
+				["Chaos Bolt"] = true,
 			},
 		},
 	},
