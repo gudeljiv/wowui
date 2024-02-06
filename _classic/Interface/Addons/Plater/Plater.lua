@@ -566,13 +566,15 @@ Plater.AnchorNamesByPhraseId = {
 	-- ~execute
 	---update if can use execute indicators - this function needs to be updated when a new execute spell is added, removed, modified
 	---in scripts you can use Plater.SetExecuteRange or override this function completelly
-	function Plater.GetHealthCutoffValue()
+	function Plater.GetHealthCutoffValue(getOnly)
 		Plater.SetExecuteRange (false)
 		
 		local lowerEnabled, upperEnabled = Plater.db.profile.health_cutoff, Plater.db.profile.health_cutoff_upper
 			
 		if (not (lowerEnabled or upperEnabled)) then
-			return
+			if not getOnly then
+				return
+			end
 		end
 		
 		local lowExecute, highExecute = nil, nil
@@ -701,7 +703,10 @@ Plater.AnchorNamesByPhraseId = {
 		
 		end
 		
-		Plater.SetExecuteRange (true, lowerEnabled and lowExecute or nil, upperEnabled and highExecute or nil)
+		if not getOnly then
+			Plater.SetExecuteRange (true, lowerEnabled and lowExecute or nil, upperEnabled and highExecute or nil)
+		end
+		return lowerEnabled and lowExecute or nil, upperEnabled and highExecute or nil
 	end	
 
 	---range check ~range
@@ -2488,6 +2493,28 @@ Plater.AnchorNamesByPhraseId = {
 			end
 		end,
 		
+		PLAYER_SOFT_FRIEND_CHANGED = function(_, arg1, arg2)
+			for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
+				---@cast plateFrame plateframe
+				if plateFrame.unitFrame.PlaterOnScreen then
+					if plateFrame [MEMBER_GUID] == arg1 or plateFrame [MEMBER_GUID] == arg2 then
+						Plater.UpdateSoftInteractTarget(plateFrame, true)
+					end
+				end
+			end
+		end,
+		
+		PLAYER_SOFT_ENEMY_CHANGED = function(_, arg1, arg2)
+			for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
+				---@cast plateFrame plateframe
+				if plateFrame.unitFrame.PlaterOnScreen then
+					if plateFrame [MEMBER_GUID] == arg1 or plateFrame [MEMBER_GUID] == arg2 then
+						Plater.UpdateSoftInteractTarget(plateFrame, true)
+					end
+				end
+			end
+		end,
+		
 		--~created ~events ~oncreated 
 		---@param event string
 		---@param plateFrame plateframe
@@ -4167,6 +4194,8 @@ function Plater.OnInit() --private --~oninit ~init
 		Plater.EventHandlerFrame:RegisterEvent ("PLAYER_FOCUS_CHANGED")
 		if IS_WOW_PROJECT_MAINLINE then
 			Plater.EventHandlerFrame:RegisterEvent ("PLAYER_SOFT_INTERACT_CHANGED")
+			Plater.EventHandlerFrame:RegisterEvent ("PLAYER_SOFT_FRIEND_CHANGED")
+			Plater.EventHandlerFrame:RegisterEvent ("PLAYER_SOFT_ENEMY_CHANGED")
 		end
 		
 		Plater.EventHandlerFrame:RegisterEvent ("PLAYER_REGEN_DISABLED")
@@ -6078,6 +6107,16 @@ end
 			unitFrame.isSoftInteractObject = isSoftInteract and (unitFrame.PlateFrame.isObject or unitFrame.isObject)
 			unitFrame.PlateFrame.isSoftInteractObject = isSoftInteract and (unitFrame.PlateFrame.isObject or unitFrame.isObject)
 			
+			local isLooseTarget = IsTargetLoose()
+			unitFrame.isLooseTarget = isLooseTarget
+			unitFrame.PlateFrame.isLooseTarget = isLooseTarget
+			local isSoftEnemy = UnitIsUnit(tickFrame.unit, "softenemy")
+			unitFrame.isSoftEnemy = isSoftEnemy
+			unitFrame.PlateFrame.isSoftEnemy = isSoftEnemy
+			local isSoftFriend = UnitIsUnit(tickFrame.unit, "softfriend")
+			unitFrame.isSoftFriend = isSoftFriend
+			unitFrame.PlateFrame.isSoftFriend = isSoftFriend
+			
 			local wasCombat = unitFrame.InCombat
 			unitFrame.InCombat = UnitAffectingCombat (tickFrame.unit) or (Plater.ForceInCombatUnits[unitFrame [MEMBER_NPCID]] and PLAYER_IN_COMBAT) or false
 			if wasCombat ~= unitFrame.InCombat then
@@ -6599,10 +6638,11 @@ end
 	
 	function Plater.UpdateSoftInteractTarget(plateFrame, updateText)
 		local unitFrame = plateFrame.unitFrame
+		local unitID = plateFrame [MEMBER_UNITID]
 		
-		local isSoftInteract = UnitIsUnit(plateFrame [MEMBER_UNITID], "softinteract")
-		local reaction = UnitReaction (plateFrame [MEMBER_UNITID], "player")
-		local isObject = (IS_WOW_PROJECT_MAINLINE and UnitIsGameObject(plateFrame [MEMBER_UNITID])) or reaction == nil
+		local isSoftInteract = UnitIsUnit(unitID, "softinteract")
+		local reaction = UnitReaction (unitID, "player")
+		local isObject = (IS_WOW_PROJECT_MAINLINE and UnitIsGameObject(unitID)) or reaction == nil
 		local isSoftInteractObject = isObject and isSoftInteract
 		plateFrame.isSoftInteract = isSoftInteract
 		unitFrame.isSoftInteract = isSoftInteract
@@ -6610,6 +6650,16 @@ end
 		unitFrame.isObject = isObject
 		plateFrame.isSoftInteractObject = isSoftInteractObject
 		unitFrame.isSoftInteractObject = isSoftInteractObject
+		
+		local isLooseTarget = IsTargetLoose()
+		unitFrame.isLooseTarget = isLooseTarget
+		unitFrame.PlateFrame.isLooseTarget = isLooseTarget
+		local isSoftEnemy = UnitIsUnit(unitID, "softenemy")
+		unitFrame.isSoftEnemy = isSoftEnemy
+		unitFrame.PlateFrame.isSoftEnemy = isSoftEnemy
+		local isSoftFriend = UnitIsUnit(unitID, "softfriend")
+		unitFrame.isSoftFriend = isSoftFriend
+		unitFrame.PlateFrame.isSoftFriend = isSoftFriend
 		
 		if plateFrame.IsNpcWithoutHealthBar and updateText then
 			Plater.UpdatePlateText (plateFrame, DB_PLATE_CONFIG [plateFrame.unitFrame.ActorType], false)
