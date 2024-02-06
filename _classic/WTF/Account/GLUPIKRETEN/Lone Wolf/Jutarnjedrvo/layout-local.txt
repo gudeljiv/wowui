@@ -190,8 +190,8 @@ W: 384
 H: 512
 Frame: WorldMapScreenAnchor
 FrameLevel: 0
-Anchor: TOPLEFT
-X: 313
+Anchor: TOP
+X: -301
 Y: -70
 W: 1
 H: 1
@@ -247,7 +247,7 @@ H: 673
 Frame: scanner_button
 FrameLevel: 200
 Anchor: RIGHT
-X: -353
+X: -268
 Y: 155
 W: 200
 H: 50

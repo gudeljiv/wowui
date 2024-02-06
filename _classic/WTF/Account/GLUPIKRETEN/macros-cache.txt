@@ -58,7 +58,7 @@ VER 3 0000000000000024 "sharp" "134400"
 END
 VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 #showtooltip
-/use item:5512
+/use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
 /run print(IsUsableSpell(403629))

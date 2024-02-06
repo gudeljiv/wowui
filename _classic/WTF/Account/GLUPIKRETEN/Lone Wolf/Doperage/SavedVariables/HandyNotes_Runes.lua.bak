@@ -6,13 +6,6 @@ HandyNotes_RunesDB = {
 			},
 		},
 	},
-	["profiles"] = {
-		["Default"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Doperage - Lone Wolf"] = "Default",
-	},
 	["runesKnown"] = {
 		["WARRIOR"] = {
 			["spells"] = {
@@ -20,12 +13,19 @@ HandyNotes_RunesDB = {
 				["Endless Rage"] = true,
 				["Single-Minded Fury"] = true,
 				["Consumed by Rage"] = true,
-				["Victory Rush"] = true,
-				["Quick Strike"] = true,
-				["Devastate"] = true,
 				["Frenzied Assault"] = true,
+				["Quick Strike"] = true,
+				["Victory Rush"] = true,
+				["Devastate"] = true,
 				["Furious Thunder"] = true,
 			},
+		},
+	},
+	["profileKeys"] = {
+		["Doperage - Lone Wolf"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }
