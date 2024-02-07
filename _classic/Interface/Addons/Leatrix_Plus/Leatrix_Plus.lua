@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.16 (3rd February 2024)
+-- 	Leatrix Plus 1.15.17 (7th February 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.16"
+	LeaPlusLC["AddonVer"] = "1.15.17"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -5193,10 +5193,10 @@
 								tip:SetPoint("TOPRIGHT", Minimap, "BOTTOMRIGHT", 0, -6)
 							end
 						else
-							if MinimapCluster and MinimapCluster:GetLeft() < GetScreenWidth() / 2 then
-								tip:SetPoint("TOPLEFT", myButton, "BOTTOMLEFT", 0, -6)
-							else
+							if Minimap:GetCenter() * Minimap:GetEffectiveScale() > (GetScreenWidth() * UIParent:GetEffectiveScale() / 2) then
 								tip:SetPoint("TOPRIGHT", myButton, "BOTTOMRIGHT", 0, -6)
+							else
+								tip:SetPoint("TOPLEFT", myButton, "BOTTOMLEFT", 0, -6)
 							end
 						end
 					end
@@ -5265,9 +5265,10 @@
 							_G[name]:GetScript("OnLeave")()
 							GameTooltip:Hide()
 						end)
-					elseif name == "TomCats-MinimapButton"
-						or name == "LibDBIcon10_MethodRaidTools"
-						or name == "Lib_GPI_Minimap_LFGBulletinBoard"
+					elseif name == "TomCats-MinimapButton"				-- TomCat's Tours
+						or name == "LibDBIcon10_MethodRaidTools"		-- Method Raid Tools
+						or name == "Lib_GPI_Minimap_LFGBulletinBoard"	-- LFG Bulletin Board
+						or name == "wlMinimapButton"					-- Wowhead Looter (part of Wowhead client)
 						then
 						local myButton = LibStub("LibDBIcon-1.0"):GetMinimapButton("LeaPlusCustomIcon_" .. name)
 						myButton:HookScript("OnEnter", function()
@@ -5330,7 +5331,7 @@
 				end
 
 				-- Run the function a few times on startup
-				C_Timer.NewTicker(2, MakeButtons, 3)
+				C_Timer.NewTicker(2, MakeButtons, 8)
 				C_Timer.After(0.1, MakeButtons)
 
 			end
@@ -9730,6 +9731,7 @@
 					_G["ChatFrame" .. i .. "Tab"]:HookScript("OnClick", function()
 						if IsControlKeyDown() then
 							editBox:SetFont(_G["ChatFrame" .. i]:GetFont())
+							editFrame:SetPanExtent(select(2, _G["ChatFrame" .. i]:GetFont()))
 							ShowChatbox(_G["ChatFrame" .. i])
 						end
 					end)
@@ -9743,6 +9745,7 @@
 					_G[cf .. "Tab"]:HookScript("OnClick", function()
 						if IsControlKeyDown() then
 							editBox:SetFont(_G[cf]:GetFont())
+							editFrame:SetPanExtent(select(2, _G[cf]:GetFont()))
 							ShowChatbox(_G[cf])
 						end
 					end)

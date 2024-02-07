@@ -33,24 +33,21 @@ VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 /use item:858
 END
 VER 3 0000000000000028 "rune c" "134400"
-#showtooltip
+#showtooltip Chest Rune Ability
 /startattack
 /petattack
-/cast !Shoot
 /use Chest Rune Ability
 END
 VER 3 0000000000000027 "rune h" "134400"
-#showtooltip
+#showtooltip Hands Rune Ability
 /startattack
 /petattack
-/cast !Shoot
 /use Hands Rune Ability
 END
 VER 3 0000000000000026 "rune l" "134400"
-#showtooltip
+#showtooltip Legs Rune Ability
 /startattack
 /petattack
-/cast !Shoot
 /use Legs Rune Ability
 END
 VER 3 0000000000000024 "sharp" "134400"

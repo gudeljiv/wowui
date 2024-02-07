@@ -400,6 +400,8 @@ do	-- KeyManger
 	local KeyManager = CreateFrame("Frame", nil, UIParent)
 	KeyManager:SetFrameStrata("FULLSCREEN")
 	KeyManager:EnableKeyboard(true)
+	-- Start with propagation enabled in case the user reloads during combat
+	KeyManager:SetPropagateKeyboardInput(true)
 	KeyManager:Show()
 	function KeyManager:HandlePress(key)
 		if key == "UP" then
@@ -600,6 +602,12 @@ local INLINE_MAX_FRAMES = 10
 function SUG:GetNumFramesNeeded()
 	if self.inline then
 		return INLINE_MAX_FRAMES
+	end
+
+	-- ElvUI will indirectly call this codepath during initialization before SuggestionList exists.
+	-- https://github.com/ascott18/TellMeWhen/issues/2132
+	if not TMW.SUG.SuggestionList then
+		return 0
 	end
 
 	return floor((TMW.SUG.SuggestionList:GetHeight() + 5)/TMW.SUG[1]:GetHeight()) - (self.inline and 1 or 2)
