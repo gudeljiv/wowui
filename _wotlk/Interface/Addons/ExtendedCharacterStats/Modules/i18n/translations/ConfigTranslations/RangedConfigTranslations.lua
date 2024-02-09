@@ -8,8 +8,8 @@ local rangedConfigTranslations = {
         ["frFR"] = "À distance Général",
         ["zhCN"] = "显示远程属性",
         ["ruRU"] = "Дальний бой",
-        ["esES"] = "Mostrar estadísticas a distancia",
-        ["esMX"] = "Mostrar estadísticas a distancia"
+        ["esES"] = "Mostrar a distancia",
+        ["esMX"] = "Mostrar a distancia"
     },
     ["Shows/Hides all ranged stats."] = {
         ["enUS"] = true,
@@ -26,8 +26,8 @@ local rangedConfigTranslations = {
         ["frFR"] = "Puissance d'attaque à distance",
         ["zhCN"] = "远程攻击强度",
         ["ruRU"] = "Сила атаки",
-        ["esES"] = "Poder de ataque a distancia",
-        ["esMX"] = "Poder de ataque a distancia"
+        ["esES"] = "Poder de ataque",
+        ["esMX"] = "Poder de ataque"
     },
     ["Shows/Hides the ranged attack power value."] = {
         ["enUS"] = true,
@@ -44,7 +44,7 @@ local rangedConfigTranslations = {
         ["frFR"] = "Critique à distance",
         ["zhCN"] = "远程暴击",
         ["ruRU"] = "Крит",
-        ["esES"] = "Crítico a distancia",
+        ["esES"] = "Probabilidad de golpe crítico",
         ["esMX"] = "Crítico a distancia"
     },
     ["Shows/Hides the ranged crit chance."] = {
@@ -53,8 +53,8 @@ local rangedConfigTranslations = {
         ["frFR"] = "Affiche/cache les chances de coup critique à distance.",
         ["zhCN"] = "显示/隐藏 远程暴击",
         ["ruRU"] = "Показать/скрыть шанс критического урона",
-        ["esES"] = "Muestra/oculta la probabilidad de golpe crítico a distancia",
-        ["esMX"] = "Muestra/oculta la probabilidad de golpe crítico a distancia"
+        ["esES"] = "Muestra/oculta la probabilidad de conseguir un golpe crítico a distancia",
+        ["esMX"] = "Muestra/oculta la probabilidad de conseguir un golpe crítico a distancia"
     },
     ["Shows/Hides the ranged haste rating."] = {
         ["enUS"] = true,

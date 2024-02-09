@@ -9,7 +9,7 @@ end
 local mod	= DBM:NewMod("AQ40Trash", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240116073345")
+mod:SetRevision("20240206211659")
 --mod:SetModelID(47785)
 mod:SetMinSyncRevision(20200710000000)--2020, 7, 10
 
@@ -38,6 +38,7 @@ local eventsRegistered = true
 mod:RegisterShortTermEvents(
 	"SPELL_MISSED",
 	"SWING_DAMAGE",
+	"SWING_MISSED",
 	"SPELL_PERIODIC_DAMAGE",
 	"SPELL_PERIODIC_MISSED"
 )

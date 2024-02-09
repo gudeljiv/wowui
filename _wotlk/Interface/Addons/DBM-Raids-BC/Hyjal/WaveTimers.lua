@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("HyjalWaveTimers", "DBM-Raids-BC", 3)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240116073345")
+mod:SetRevision("20240206211659")
 
 mod:RegisterEvents(
 	"GOSSIP_SHOW",
@@ -65,14 +65,14 @@ function mod:UPDATE_UI_WIDGET(table)
 		return
 	end
 	local widgetInfo = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(id)
-	local text = widgetInfo.text
+	local text = widgetInfo and widgetInfo.text
 	if not text then return end
 	self:WaveFunction(text:match("(%d)") or 0)
 end
 
 function mod:OnSync(msg, arg)
 	if msg == "boss" then
-		boss = tonumber(arg)
+		boss = tonumber(arg) or 0
 	end
 end
 
@@ -98,7 +98,7 @@ end
 
 function mod:WaveFunction(currentWave)
 	local timer = 0
-	currentWave = tonumber(currentWave)
+	currentWave = tonumber(currentWave) or 0
 	if currentWave > lastWave then
 		if boss == 0 then--unconfirmed
 			timer = 125

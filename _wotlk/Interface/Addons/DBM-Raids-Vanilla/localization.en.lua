@@ -1142,6 +1142,14 @@ L:SetGeneralLocalization({
 	name = "Gelihast"
 })
 
+L:SetTimerLocalization{
+	TimerImmune = "Immunity ends"
+}
+
+L:SetOptionLocalization({
+	TimerImmune	= "Show timer for the duration of Gelihast's immunity during phase transitions."
+})
+
 ------------------
 --  Lorgus Jett  --
 ------------------
@@ -1176,3 +1184,62 @@ L = DBM:GetModLocalization("AkumaiSoD")
 L:SetGeneralLocalization({
 	name = "Aku'mai"
 })
+
+------------------
+--  Gnomeregan  --
+------------------
+
+---------------------------
+--  Crowd Pummeler 9-60  --
+---------------------------
+L = DBM:GetModLocalization("CrowdPummellerSoD")
+
+L:SetGeneralLocalization({
+	name = "Crowd Pummeler 9-60"
+})
+
+---------------
+--  Grubbis  --
+---------------
+L = DBM:GetModLocalization("GrubbisSoD")
+
+L:SetGeneralLocalization({
+	name = "Grubbis"
+})
+
+----------------------------
+--  Electrocutioner 6000  --
+----------------------------
+L = DBM:GetModLocalization("ElectrocutionerSoD")
+
+L:SetGeneralLocalization({
+	name = "Electrocutioner 6000"
+})
+
+-----------------------
+--  Viscous Fallout  --
+-----------------------
+L = DBM:GetModLocalization("ViscousFalloutSoD")
+
+L:SetGeneralLocalization({
+	name = "Viscous Fallout"
+})
+
+----------------------------
+--  Mechanical Menagerie  --
+----------------------------
+L = DBM:GetModLocalization("MechanicalMenagerieSoD")
+
+L:SetGeneralLocalization({
+	name = "Mechanical Menagerie"
+})
+
+-----------------------------
+--  Mekgineer Thermaplugg  --
+-----------------------------
+L = DBM:GetModLocalization("ThermapluggSoD")
+
+L:SetGeneralLocalization({
+	name = "Mekgineer Thermaplugg"
+})
+

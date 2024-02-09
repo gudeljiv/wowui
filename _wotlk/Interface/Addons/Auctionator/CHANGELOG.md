@@ -1,6 +1,6 @@
 # Auctionator
 
-## [10.2.22](https://github.com/Auctionator/Auctionator/tree/10.2.22) (2024-02-06)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.21...10.2.22) 
+## [10.2.23](https://github.com/Auctionator/Auctionator/tree/10.2.23) (2024-02-07)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.22...10.2.23) 
 
-- Restore custom groups feature  
+- Update toc for 1.15.1  

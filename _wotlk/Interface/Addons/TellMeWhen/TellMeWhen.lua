@@ -19,7 +19,7 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "10.2.0" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "10.2.3" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -28,7 +28,7 @@ end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
 
-local REVISION = 0
+local REVISION = 1
 if #TELLMEWHEN_VERSION > 6 or REVISION >= 100 then
 	return error("TELLMEWHEN: UNEXPECTEDLY HIGH VERSION/REVISION")
 end

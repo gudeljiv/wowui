@@ -13,7 +13,8 @@ xVermin.IsClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 xVermin.IsTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 xVermin.IsWotlk = WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC
 xVermin.IsSoD = xVermin.IsClassic and C_Seasons.HasActiveSeason() and (C_Seasons.GetActiveSeason() ~= Enum.SeasonID.Hardcore)
-xVermin.MaxPlayerLevel = xVermin.IsSoD and 25 or MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()]
+xVermin.MaxPlayerLevel = xVermin.IsSoD and 40 or MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()]
+
 
 -- RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
 xVermin.Class = select(2, UnitClass('player'))

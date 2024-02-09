@@ -240,6 +240,7 @@ if (NIT.isRetail) then
 	f:RegisterEvent("ITEM_CHANGED");
 	f:RegisterEvent("WEEKLY_REWARDS_UPDATE");
 end
+f:RegisterEvent("UPDATE_INSTANCE_INFO");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_LEAVING_WORLD" ) then
 		doGUID = nil;
@@ -323,6 +324,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 	elseif (event == "ENCOUNTER_END") then
 		local _, _, _, _, success = ...;
 		NIT:throddleEventByFunc(event, 2, "recordGroupInfo", ...);
+		RequestRaidInfo();
 		C_Timer.After(3, function()
 			NIT:recordLockoutData();
 		end)
@@ -447,6 +449,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 				NIT:recordKeystoneData();
 			end)
 		end
+		RequestRaidInfo();
 	elseif (event == "CHAT_MSG_LOOT") then
 		NIT:chatMsgLoot(...)
 	elseif (event == "ITEM_CHANGED") then
@@ -458,13 +461,16 @@ f:SetScript('OnEvent', function(self, event, ...)
 		C_Timer.After(1, function()
 			NIT:challengeModeMapsUpdate();
 		end)
-	elseif (event == "WEEKLY_REWARDS_UPDATE") then
+	elseif (event == "WEEKLY_REWARDS_UPDATE" or event == "UPDATE_INSTANCE_INFO") then
 		--Some issues with speed of update after looting vault.
 		C_Timer.After(1, function()
 			NIT:recordKeystoneData();
 		end)
 		C_Timer.After(5, function()
 			NIT:checkRewards();
+		end)
+		C_Timer.After(1, function()
+			NIT:recordLockoutData();
 		end)
 	end
 end)
@@ -1213,12 +1219,9 @@ function NIT:leftInstance()
 	NIT.lastNpcID = 999999999;
 	NIT.lastInstanceName = "(Unknown Instance)";
 	if (NITAUTORESET) then
-	print(1)
 		if (NIT.data.instances[1] and NIT.data.instances[1].mobCount and NIT.data.instances[1].mobCount > 10) then
-print(2)
 			C_Timer.After(2, function()
 				if (UnitIsGroupLeader("player") and not IsInInstance() and not UnitIsGhost("player")) then
-print(3)
 					local msg = "Auto resetting dungeons.";
 					if (IsInGroup()) then
 			  			NIT:sendGroup("[NIT] " .. msg);
@@ -2237,6 +2240,19 @@ function NIT:recordLockoutData()
 				difficultyName = difficultyName,
 				locked = locked,
 			};
+			if (NIT.isRetail) then
+				if (GetSavedInstanceEncounterInfo and numEncounters and numEncounters > 0) then
+					NIT.data.myChars[char].savedInstances[tonumber(id)].bosses = {};
+					for b = 1, numEncounters do
+						local bossName, texture, isKilled = GetSavedInstanceEncounterInfo(i, b);
+						NIT.data.myChars[char].savedInstances[tonumber(id)].bosses[b] = {
+							bossName = bossName,
+							texture = texture,
+							isKilled = isKilled,
+						};
+					end
+				end
+			end
 		end
 	end
 end
@@ -2333,6 +2349,9 @@ function NIT:challengeModeMapsUpdate()
 end
 
 function NIT:checkRewards()
+	if (not C_WeeklyRewards) then
+		return;
+	end
 	local char = UnitName("player");
 	if (not NIT.data.myChars[char]) then
 		NIT.data.myChars[char] = {};

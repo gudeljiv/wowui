@@ -1136,6 +1136,16 @@ function NIT:recalcLockoutsFrame()
 									name = GetDungeonNameWithDifficulty(instanceData.name, instanceData.difficultyName);
 								end
 								text2 = text2 .. "\n  |cFFFFFF00-|r|cFFFFAE42" .. name .. "|r |cFF9CD6DE" .. timeString .. "|r";
+								--This will be done in it's own modules.
+								--[[if (instanceData.bosses) then
+									for k, v in ipairs(instanceData.bosses) do
+										local bossName = "|cFF00FF00" .. v.bossName .. "|r";
+										if (v.isKilled) then
+											bossName = "|cFFFF2020" .. v.bossName .. "|r";
+										end
+										text2 = text2 .. "\n      " .. bossName;
+									end
+								end]]
 								found = true;
 								found2 = true;
 							end
@@ -4949,7 +4959,7 @@ end
 function NIT:sendGroup(msg)
 	if (IsInRaid()) then
 		SendChatMessage(msg, "RAID");
-	elseif (IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
+	elseif (LE_PARTY_CATEGORY_INSTANCE and IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
         SendChatMessage(msg, "INSTANCE_CHAT");
 	elseif (IsInGroup()) then
 		SendChatMessage(msg, "PARTY");
@@ -4959,7 +4969,7 @@ end
 function NIT:sendGroupComm(msg)
 	if (IsInRaid()) then
 		NIT:sendComm("RAID", msg);
-	elseif (IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
+	elseif (LE_PARTY_CATEGORY_INSTANCE and IsInGroup(LE_PARTY_CATEGORY_INSTANCE)) then
         NIT:sendComm("INSTANCE_CHAT", msg);
 	elseif (IsInGroup()) then
 		NIT:sendComm("PARTY", msg);

@@ -651,7 +651,9 @@ function GBB.ParseMessage(msg,name,guid,channel)
 	local locClass,engClass,locRace,engRace,Gender,gName,gRealm = GetPlayerInfoByGUID(guid)
 
 	-- Add server name to player name by commenting out the split
-	-- name=GBB.Tool.Split(name, "-")[1] -- remove GBB.ServerName
+	if GBB.DB.RemoveRealm then
+		name=GBB.Tool.Split(name, "-")[1] -- remove GBB.ServerName
+	end
 
 	if GBB.DB.RemoveRaidSymbols then
 		msg=string.gsub(msg,"{.-}","*")
@@ -661,7 +663,7 @@ function GBB.ParseMessage(msg,name,guid,channel)
 
 	local updated=false
 	for ir,req in pairs(GBB.RequestList) do
-		if type(req) == "table" and req.name == name and req.last+GBB.COMBINEMSGTIMER>=requestTime then
+		if type(req) == "table" and (req.name == name) and req.last+GBB.COMBINEMSGTIMER>=requestTime then
 			if req.dungeon=="TRADE" then
 				updated=true
 				if msg~=req.message then
@@ -823,6 +825,7 @@ local function createMenu(DungeonID,req)
 	GBB.PopupDynamic:AddItem(GBB.L["CboxDontTrunicate"],false,GBB.DB,"DontTrunicate")
 	GBB.PopupDynamic:AddItem("",true)
 	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifySound"],false,GBB.DB,"NotifySound")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxRemoveRealm"],false,GBB.DB,"RemoveRealm")
 	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")
 	GBB.PopupDynamic:AddItem("",true)
 	GBB.PopupDynamic:AddItem(GBB.L["HeaderSettings"],false, GBB.Options.Open, 1)

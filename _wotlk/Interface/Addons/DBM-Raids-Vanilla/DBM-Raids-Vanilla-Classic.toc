@@ -1,4 +1,4 @@
-## Interface: 11500
+## Interface: 11501
 ## X-Min-Interface: 11403
 ## Title:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cffff6010Raids (Vanilla)|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM Mod|r|cffffe00a>|r |cffff6010공격대 (클래식)|r
@@ -13,15 +13,15 @@
 ## X-DBM-Mod-Type: RAID
 ## X-DBM-Mod-Category: Classic
 ## X-DBM-StatTypes: normal
-## X-DBM-Mod-SubCategoriesID: 533, 531, 509, 309, 469, 409, 249, 48
+## X-DBM-Mod-SubCategoriesID: 533, 531, 509, 309, 469, 409, 249, 90, 48
 ## X-DBM-Mod-Name: Raids (Vanilla)
 ## X-DBM-Mod-Name-koKR: 공격대 (클래식)
 ## X-DBM-Mod-Name-ruRU: Рейды (классический)
 ## X-DBM-Mod-Sort: 1101
-## X-DBM-Mod-MapID: 533, 531, 509, 309, 469, 409, 249, 48
+## X-DBM-Mod-MapID: 533, 531, 509, 309, 469, 409, 249, 90, 48
 ## X-DBM-Mod-MinCoreRevision: 20230521000000
 ## X-DBM-Mod-MinExpansion: 0
-## Version: 1d278dd
+## Version: 5423cd1
 
 localization.en.lua
 localization.tw.lua
@@ -103,6 +103,13 @@ MC\Majordomo.lua
 MC\Ragnaros.lua
 
 VanillaOnyxia\Onyxia.lua
+
+VanillaSoD_Gnomeregan\CrowdPummeler.lua
+VanillaSoD_Gnomeregan\Grubbis.lua
+VanillaSoD_Gnomeregan\Electrocutioner6000.lua
+VanillaSoD_Gnomeregan\ViscousFallout.lua
+VanillaSoD_Gnomeregan\MechanicalMenagerie.lua
+VanillaSoD_Gnomeregan\MekgineerThermaplugg.lua
 
 VanillaSoD_BFD\BaronAuanis.lua
 VanillaSoD_BFD\Ghamoora.lua
