@@ -25,8 +25,27 @@ xVermin.CheckIfLoadedWithTimer(
 )
 
 xVermin.CheckIfLoadedWithTimer(
+	'MultiBarBottomRight',
+	function()
+		for i = 1,12 do
+			local button = _G["MultiBarBottomRight"..i]
+			if button then
+				button:Show()
+			end
+		end
+	end
+)
+
+xVermin.CheckIfLoadedWithTimer(
 	'MultiBarBottomLeft',
 	function()
+		for i = 1,12 do
+			local button = _G["MultiBarBottomLeft"..i]
+			if button then
+				button:Show()
+			end
+		end
+
 		MultiBarBottomLeftButton1:ClearAllPoints()
 		MultiBarBottomLeftButton1:SetPoint('BOTTOMLEFT', MainMenuBar, 'TOPLEFT', 9, -4)
 	end
@@ -35,18 +54,13 @@ xVermin.CheckIfLoadedWithTimer(
 xVermin.CheckIfLoadedWithTimer(
 	'MultiBarRight',
 	function()
-		MultiBarRightButton1:SetScale(0.8)
-		MultiBarRightButton2:SetScale(0.8)
-		MultiBarRightButton3:SetScale(0.8)
-		MultiBarRightButton4:SetScale(0.8)
-		MultiBarRightButton5:SetScale(0.8)
-		MultiBarRightButton6:SetScale(0.8)
-		MultiBarRightButton7:SetScale(0.8)
-		MultiBarRightButton8:SetScale(0.8)
-		MultiBarRightButton9:SetScale(0.8)
-		MultiBarRightButton10:SetScale(0.8)
-		MultiBarRightButton11:SetScale(0.8)
-		MultiBarRightButton12:SetScale(0.8)
+		for i = 1,12 do
+			local button = _G["MultiBarRightButton"..i]
+			if button then
+				button:Show()
+				button:SetScale(0.8)
+			end
+		end
 
 		MultiBarRightButton1:ClearAllPoints()
 		MultiBarRightButton1:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -9, -25)
@@ -56,18 +70,13 @@ xVermin.CheckIfLoadedWithTimer(
 xVermin.CheckIfLoadedWithTimer(
 	'MultiBarLeft',
 	function()
-		MultiBarLeftButton1:SetScale(0.8)
-		MultiBarLeftButton2:SetScale(0.8)
-		MultiBarLeftButton3:SetScale(0.8)
-		MultiBarLeftButton4:SetScale(0.8)
-		MultiBarLeftButton5:SetScale(0.8)
-		MultiBarLeftButton6:SetScale(0.8)
-		MultiBarLeftButton7:SetScale(0.8)
-		MultiBarLeftButton8:SetScale(0.8)
-		MultiBarLeftButton9:SetScale(0.8)
-		MultiBarLeftButton10:SetScale(0.8)
-		MultiBarLeftButton11:SetScale(0.8)
-		MultiBarLeftButton12:SetScale(0.8)
+		for i = 1,12 do
+			local button = _G["MultiBarLeft"..i]
+			if button then
+				button:Show()
+				button:SetScale(0.8)
+			end
+		end
 
 		MultiBarLeftButton1:ClearAllPoints()
 		MultiBarLeftButton1:SetPoint('TOP', MultiBarRightButton12, 'BOTTOM', 0, -20)
