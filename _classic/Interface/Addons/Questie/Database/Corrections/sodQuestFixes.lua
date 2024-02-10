@@ -467,11 +467,9 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
         },
         [78611] = { -- A Waylaid Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [78612] = { -- A Full Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [78680] = { -- Rumors Abound
@@ -497,7 +495,6 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {78684},
         },
         [78872] = { -- A Full Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [78909] = { -- Shifting Scale Talisman
@@ -573,6 +570,16 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.objectives] = {{{207356}},nil,nil},
             [questKeys.zoneOrSort] = zoneIDs.BLACKFATHOM_DEEPS,
             [questKeys.questFlags] = questFlags.RAID,
+        },
+        [79007] = { -- ...and that note you found
+            [questKeys.startedBy] = {nil,{415106}},
+            [questKeys.finishedBy] = {nil,{415107}},
+            [questKeys.zoneOrSort] = zoneIDs.THE_BARRENS,
+        },
+        [79008] = { -- ...and that note you found
+            [questKeys.startedBy] = {nil,{415107}},
+            [questKeys.finishedBy] = {nil,{415106}},
+            [questKeys.zoneOrSort] = zoneIDs.WESTFALL,
         },
         [79077] = { -- Sharing the Faith (Stormwind)
             [questKeys.objectives] = {{{215062}}},
@@ -669,20 +676,23 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [79100] = { -- A Waylaid Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [79101] = { -- A Full Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [79102] = { -- A Full Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [79103] = { -- A Full Shipment
-            [questKeys.startedBy] = {{213077,214070,214096,214098,214099,214101,}},
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
+        },
+        [79192] = { -- Stepping Stones
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.startedBy] = {nil,{415106,415107}},
+            [questKeys.finishedBy] = {nil,{424005}},
+            [questKeys.preQuestSingle] = {79007,79008},
+            [questKeys.zoneOrSort] = zoneIDs.THE_BARRENS,
         },
         [79482] = { -- Stolen Winter Veil Treats (Alliance)
             [questKeys.startedBy] = {{216902}},
@@ -763,6 +773,39 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredMaxRep] = {factionIDs.DARKMOON_FAIRE, 500},
             [questKeys.zoneOrSort] = sortKeys.DARKMOON_FAIRE,
             [questKeys.reputationReward] = {{factionIDs.DARKMOON_FAIRE, 100}},
+        },
+        [79974] = { -- Wet Job
+            [questKeys.startedBy] = {nil,{424012}},
+            [questKeys.finishedBy] = {nil,{424007}},
+            [questKeys.preQuestSingle] = {79980},
+            [questKeys.zoneOrSort] = zoneIDs.STONETALON_MOUNTAINS,
+        },
+        [79975] = { -- Eagle's Fist
+            [questKeys.startedBy] = {nil,{424007}},
+            [questKeys.finishedBy] = {nil,{406918}},
+            [questKeys.preQuestSingle] = {79974},
+            [questKeys.zoneOrSort] = zoneIDs.STONEWROUGHT_DAM,
+        },
+        [79976] = { -- This Must Be The Place
+            [questKeys.startedBy] = {nil,{406918}},
+            [questKeys.finishedBy] = {nil,{424006}},
+            [questKeys.preQuestSingle] = {79975},
+            [questKeys.zoneOrSort] = zoneIDs.ARATHI_HIGHLANDS,
+        },
+        [79980] = { -- Scramble
+            [questKeys.startedBy] = {nil,{424005}},
+            [questKeys.finishedBy] = {nil,{424012}},
+            [questKeys.preQuestSingle] = {79192},
+            [questKeys.zoneOrSort] = zoneIDs.STONETALON_MOUNTAINS,
+        },
+        [80307] = {
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
+        },
+        [80308] = {
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
+        },
+        [80309] = {
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
 
         --- Fake rune quests
@@ -3446,6 +3489,18 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
             [questKeys.startedBy] = {{214070,214096,214098}},
             [questKeys.finishedBy] = {{214070,214096,214098}},
         },
+        [80307] = { -- A Full Shipment
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [80308] = { -- A Full Shipment
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
+        [80309] = { -- A Full Shipment
+            [questKeys.startedBy] = {{214070,214096,214098}},
+            [questKeys.finishedBy] = {{214070,214096,214098}},
+        },
     }
 
     local questFixesAlliance = {
@@ -3529,6 +3584,18 @@ function SeasonOfDiscovery:LoadFactionQuestFixes()
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },
         [79103] = { -- A Full Shipment
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [80307] = { -- A Full Shipment
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [80308] = { -- A Full Shipment
+            [questKeys.startedBy] = {{213077,214099,214101}},
+            [questKeys.finishedBy] = {{213077,214099,214101}},
+        },
+        [80309] = { -- A Full Shipment
             [questKeys.startedBy] = {{213077,214099,214101}},
             [questKeys.finishedBy] = {{213077,214099,214101}},
         },

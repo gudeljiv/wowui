@@ -61,17 +61,17 @@ VER 3 0000000001000015 " " "134400"
 /startattack
 /use Legs Rune Ability
 END
-VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
-#showtooltip
-/startattack
-/use Sinister Strike
-END
 VER 3 0000000001000011 "attack" "132152"
 #showtooltip
 /petfollow
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
+END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
 END
 VER 3 0000000001000002 "MP" "134400"
 #showtooltip

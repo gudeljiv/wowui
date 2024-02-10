@@ -1627,7 +1627,7 @@ function NWB:loadSpecificOptions()
 		};
 		NWB.options.args["showAshenvaleOverlay"] = {
 			type = "toggle",
-			name = L["showAshenvaleOverlayTitle"],
+			name = "|cFF00FF00" .. L["showAshenvaleOverlayTitle"],
 			desc = L["showAshenvaleOverlayDesc"],
 			order = 28,
 			get = "getShowAshenvaleOverlay",
@@ -2149,17 +2149,19 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.66;
+	linesVersion = 2.67;
 	local lines = {
-		"-Added DMF map markers back to SoD with the new 2 week rotation, using original classic spawn times so please tell me if it isn't right for your region.",
-		"-Added tracking of offline time in the /buffs window, if DMF is up and an alt is on buff cooldown there will be text beside the name showing how long it's been offline.",
-		"-If an alt has been offline for 8+ hours in a rested area you will be told at logon that the DMF cooldown has reset.",
-		"-Added font options for the Ashenvale overlay.",
-		"-Added font and text size options for the minimap layer text under General Options (keep in mind some fonts won't fit properly in the small area).",
-		"-Increased the main timers window and buffs window default sizes a bit (reminder both these windows can be resized in options).",
-		"-Increased cooldown between guild msgs for ashenvale starts soon to 20mins (since now it's get stuck at 99% and doesn't actually start soon...)",
-		"-Increased cooldown between blackfathom boon dropped sound msgs to 5mins, it drops so often now and the sound is kinda spammy.",
-		"-Added esES Spanish and esMX Spanish (Latin America) locale translations thanks to Spanish user Cruzluz.",
+		" ",
+		"|cFF3CE13FReminder: There is a new dragable timer overlay you can turn on in /nwb config. And mouseover the minimap button to see some new timers.|r",
+		" ",
+		"-Added timers and map markers for new Stranglethorn Vale event.",
+		"-Updated the Ashenvale overlay to show Stranglethorn event timers also.",
+		"-Added new phase 2 world buff Spark of Inspiration to buffs tracker.",
+		"-Added DMF spawn info and buff cooldown to minimap button mouseover.",
+		"-Added 3 day raid lockout info for classic to minimap button mouseover.",
+		"-Added /stv command to open the Stranglethorn.",
+		"-Fixed DMF continent map marker positions to be more accurate.",
+		"-Disabled dispel msgs/sounds during the Stranglethorn event.",
 	};
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
@@ -4068,7 +4070,7 @@ end
 
 function NWB:setShowAshenvaleOverlay(info, value)
 	self.db.global.showAshenvaleOverlay = value;
-	NWB:setAshenvaleOverlayState();
+	NWB:setOverlayState();
 end
 
 function NWB:getShowAshenvaleOverlay(info)
@@ -4077,7 +4079,7 @@ end
 
 function NWB:setLockAshenvaleOverlay(info, value)
 	self.db.global.lockAshenvaleOverlay = value;
-	NWB:setAshenvaleOverlayState();
+	NWB:setOverlayState();
 end
 
 function NWB:getLockAshenvaleOverlay(info)
@@ -4086,7 +4088,7 @@ end
 
 function NWB:setAshenvaleOverlayScale(info, value)
 	self.db.global.ashenvaleOverlayScale = value;
-	NWB:refreshAshenvaleOverlay();
+	NWB:refreshOverlay();
 end
 
 function NWB:getAshenvaleOverlayScale(info)
@@ -4096,7 +4098,7 @@ end
 --Ashenvale overlay font.
 function NWB:setAshenvaleOverlayFont(info, value)
 	self.db.global.ashenvaleOverlayFont = value;
-	NWB:refreshAshenvaleOverlay();
+	NWB:refreshOverlay();
 end
 
 function NWB:getAshenvaleOverlayFont(info)

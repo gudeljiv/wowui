@@ -7,26 +7,10 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["EnablePerSetQueues"] = "OFF",
+	["CurrentSet"] = "muti",
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
-			},
-		},
-		["~Unequip"] = {
-			["equip"] = {
-			},
-		},
-		["muti"] = {
-			["equip"] = {
-				[16] = "6220::::::::25:::::::::",
-				[17] = "2236::::::::25:::::::::",
-			},
-			["oldset"] = "saber",
-			["icon"] = 135650,
-			["old"] = {
-				[17] = "6220::::::::25:::::::::",
-				[16] = "2236::::::::25:::::::::",
 			},
 		},
 		["saber"] = {
@@ -40,11 +24,28 @@ ItemRackUser = {
 				[16] = "2236::::::::25:::::::::",
 			},
 		},
+		["muti"] = {
+			["equip"] = {
+				[16] = "6220::::::::25:::::::::",
+				[17] = "2236::::::::25:::::::::",
+			},
+			["oldset"] = "saber",
+			["icon"] = 135650,
+			["old"] = {
+				[17] = "6220::::::::25:::::::::",
+				[16] = "6472::::::::25:::::::::",
+			},
+		},
+		["~Unequip"] = {
+			["equip"] = {
+			},
+		},
 	},
-	["EnableQueues"] = "ON",
+	["EnablePerSetQueues"] = "OFF",
 	["Queues"] = {
 	},
-	["Alpha"] = 1,
+	["Buttons"] = {
+	},
 	["ItemsUsed"] = {
 	},
 	["Events"] = {
@@ -53,11 +54,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
+	["EnableEvents"] = "ON",
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
-	["Buttons"] = {
-	},
+	["Alpha"] = 1,
 	["MenuScale"] = 1.200000047683716,
-	["CurrentSet"] = "saber",
+	["EnableQueues"] = "ON",
 }
