@@ -1,9 +1,0 @@
-AppKit
-mss
-numpy
-opencv_python
-PyAutoGUI
-pynput
-pyperclip
-scikit_image
-pywin32

@@ -1,3 +1,0 @@
-
-NugComboBarDB_Character = {
-}
