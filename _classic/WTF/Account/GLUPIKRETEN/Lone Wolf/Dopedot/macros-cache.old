@@ -15,6 +15,11 @@ VER 3 0000000001000013 "incin" "134400"
 /startattack
 /cast Incinerate
 END
+VER 3 0000000001000015 "life" "134400"
+#showtooltip
+/stopcasting
+/cast Drain Life
+END
 VER 3 000000000100000F "passive" "132328"
 #showtooltip
 /petfollow
@@ -24,6 +29,10 @@ VER 3 0000000001000003 "sb" "134400"
 #showtooltip
 /startattack
 /cast Shadow bolt
+END
+VER 3 0000000001000014 "soul" "134400"
+#showtooltip
+/cast Drain Soul
 END
 VER 3 0000000001000004 "wand" "134400"
 #showtooltip Shoot
