@@ -24,8 +24,8 @@ TomTomDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
 		["Dopetrap - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Dopesick - Stitches"] = "Default",
@@ -51,8 +51,8 @@ TomTomDB = {
 		["Dopestab - Lone Wolf"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
-		["Dopeclaw - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
+		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -114,8 +114,8 @@ TomTomWaypointsM = {
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
@@ -141,8 +141,8 @@ TomTomWaypointsM = {
 		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
-		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -191,7 +191,9 @@ TomTomWaypointsM = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
-		["Doperage - Lone Wolf"] = {
+		["Dopetrap - Lone Wolf"] = {
+		},
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Dopetrap - Lone Wolf"] = {
 		},
@@ -270,7 +272,7 @@ TomTomWaypointsM = {
 		},
 		["Dopeclaw - Stitches"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 		["Dopeclaw - Lone Wolf"] = {
 		},

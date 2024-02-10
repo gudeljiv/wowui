@@ -787,9 +787,9 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Dopedot-LoneWolf"] = {
-		["total"] = 37351,
-		["timeStamp"] = 377282.703,
-		["timeAtThisLevel"] = 406,
+		["total"] = 38782,
+		["timeAtThisLevel"] = 1837,
+		["timeStamp"] = 197046.355,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
