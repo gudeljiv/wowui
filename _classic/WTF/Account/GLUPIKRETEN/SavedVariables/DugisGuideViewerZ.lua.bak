@@ -1,0 +1,303 @@
+
+MapOverlays = nil
+DugisFlightmasterLookupTable = nil
+TaxiDataCollection = {
+}
+DugisGuideViewerProfiles = {
+	["profileKeys"] = {
+		["Dopeclaw - Stitches"] = "xVermin",
+	},
+	["global"] = {
+		[303] = {
+			["options"] = {
+			},
+		},
+	},
+	["profiles"] = {
+		["xVermin"] = {
+			["char"] = {
+				["settings"] = {
+					nil, -- [1]
+					nil, -- [2]
+					nil, -- [3]
+					{
+						["checked"] = false,
+					}, -- [4]
+					{
+						["checked"] = false,
+					}, -- [5]
+					nil, -- [6]
+					{
+						["checked"] = false,
+					}, -- [7]
+					{
+						["checked"] = false,
+					}, -- [8]
+					{
+						["checked"] = false,
+					}, -- [9]
+					nil, -- [10]
+					nil, -- [11]
+					{
+						["checked"] = false,
+					}, -- [12]
+					[19] = {
+						["checked"] = false,
+					},
+					[20] = {
+						["checked"] = false,
+					},
+					[21] = {
+						["checked"] = false,
+					},
+					[24] = {
+						["checked"] = false,
+					},
+					[34] = {
+						["checked"] = false,
+					},
+					[35] = {
+						["checked"] = false,
+					},
+					[39] = {
+						["checked"] = false,
+					},
+					[42] = {
+						["checked"] = false,
+					},
+					[43] = {
+						["checked"] = false,
+					},
+					[44] = {
+						["checked"] = false,
+					},
+					[48] = {
+						["checked"] = false,
+					},
+					[49] = {
+						["checked"] = false,
+					},
+					[50] = {
+						["checked"] = false,
+					},
+					[51] = {
+						["checked"] = false,
+					},
+					[56] = {
+						["checked"] = false,
+					},
+					[58] = {
+						["checked"] = false,
+					},
+					[59] = {
+						["checked"] = false,
+					},
+					[65] = {
+						["checked"] = false,
+					},
+					[68] = {
+						["checked"] = false,
+					},
+					[69] = {
+						["checked"] = false,
+					},
+					[71] = {
+						["checked"] = false,
+					},
+					[72] = {
+						["checked"] = false,
+					},
+					[73] = {
+						["checked"] = false,
+					},
+					[74] = {
+						["checked"] = false,
+					},
+					[76] = {
+						["checked"] = false,
+					},
+					[77] = {
+						["checked"] = false,
+					},
+					[79] = {
+						["checked"] = false,
+					},
+					[80] = {
+						["checked"] = true,
+					},
+					[84] = {
+						["checked"] = false,
+					},
+					[85] = {
+						["checked"] = false,
+					},
+					[86] = {
+						["checked"] = false,
+					},
+					[87] = {
+						["checked"] = false,
+					},
+					[109] = {
+						["checked"] = "Never",
+					},
+					[1013] = {
+						["checked"] = false,
+					},
+					["trownsFolkTypeFilters"] = {
+						[14] = true,
+					},
+					["QuestRecordTable"] = {
+						["framePositions"] = {
+							["DugisFlightProgressBar"] = {
+								["relativeTo"] = "DugisOnOffButton",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 30,
+								["xOfs"] = 0,
+							},
+							["ObjectiveTrackerBackground"] = {
+								["relativeTo"] = "MinimapCluster",
+								["point"] = "TOPRIGHT",
+								["relativePoint"] = "BOTTOMRIGHT",
+								["yOfs"] = -10,
+								["xOfs"] = -40.6385612487793,
+							},
+							["DugisMainBorder"] = {
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 165.0790710449219,
+								["xOfs"] = -67.30167388916016,
+							},
+							["DugisArrowFrame"] = {
+							},
+							["DugisGuideViewer_ModelViewer"] = {
+							},
+							["DugisGuideViewer_TargetFrame"] = {
+								["relativeTo"] = "DugisSecureQuestButton",
+								["point"] = "TOPLEFT",
+								["relativePoint"] = "TOPLEFT",
+								["yOfs"] = 0,
+								["xOfs"] = 2,
+							},
+							["DugisMapViewer"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisRecordFrame"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+							["DugisOnOffButton"] = {
+								["relativeTo"] = "Minimap",
+								["point"] = "RIGHT",
+								["relativePoint"] = "LEFT",
+								["yOfs"] = 35.00000381469727,
+								["xOfs"] = 13.00000095367432,
+							},
+							["DugisSmallFrameContainer"] = {
+							},
+							["GPSArrowScroll"] = {
+								["relativeTo"] = "UIParent",
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
+								["yOfs"] = 0,
+								["xOfs"] = 0,
+							},
+						},
+					},
+					[302] = {
+						["options"] = {
+							"Feral Tank", -- [1]
+							"Restoration", -- [2]
+							"Feral", -- [3]
+							"Balance", -- [4]
+							"Highest Vendor Price", -- [5]
+						},
+					},
+					[218] = {
+						["options"] = {
+							{
+								["text"] = "None",
+							}, -- [1]
+							{
+								["text"] = "Feral Leveling 10-40",
+							}, -- [2]
+							{
+								["text"] = "Feral Leveling 40-60",
+							}, -- [3]
+							{
+								["text"] = "Balance Leveling 10-40",
+							}, -- [4]
+							{
+								["text"] = "Balance Leveling 40-60",
+							}, -- [5]
+							{
+								["text"] = "Restoration Leveling 10-40",
+							}, -- [6]
+							{
+								["text"] = "Restoration Leveling 40-60",
+							}, -- [7]
+						},
+					},
+					["showNotCollectedPets"] = true,
+					[1006] = {
+						["checked"] = true,
+					},
+					["showCollectedPets"] = true,
+					[1014] = {
+						["checked"] = false,
+					},
+					["EssentialsMode"] = 1,
+					[1007] = {
+						["checked"] = false,
+					},
+					["shareSystem"] = {
+						["notCompletedPlayers"] = {
+						},
+						["characterName2RealmName"] = {
+							["Dopeclaw"] = "",
+							["Player name"] = "Realm name",
+						},
+						["shareServer"] = {
+							["trackedQuests"] = {
+							},
+						},
+						["shareClients"] = {
+						},
+					},
+					[1005] = {
+						["checked"] = false,
+					},
+					[1003] = {
+						["checked"] = false,
+					},
+					["SettingsRevision"] = 10,
+					[1011] = {
+						["checked"] = false,
+					},
+				},
+			},
+		},
+	},
+}
+CollectedWorldMapTrackingPoints_v2 = {
+	["Horde"] = {
+		[1413] = {
+			"8:1934727182:143985::M", -- [1]
+			"1:1732674909:8674::M", -- [2]
+		},
+	},
+}
+FollowersCache = nil
+TutorialFrameDugisState = {
+	["displayedTutorials"] = {
+		true, -- [1]
+	},
+}
+TutorialFrameDugisHidden = true

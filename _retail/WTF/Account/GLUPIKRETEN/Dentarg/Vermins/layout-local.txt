@@ -1,0 +1,15 @@
+Version: 1
+Frame: RXPFrame
+FrameLevel: 1
+Anchor: BOTTOM
+X: 442
+Y: 0
+W: 235
+H: 28
+Frame: ColorPickerFrame
+FrameLevel: 124
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 200

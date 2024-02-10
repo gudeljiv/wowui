@@ -1,0 +1,14 @@
+## Title: |cff1784d1ElvUI|r |cfd9b9b9bClassic|r
+## Notes: User Interface Replacement
+## Author: Elv, Simpy
+## Version: 13.07
+## SavedVariables: ElvDB, ElvPrivateDB
+## SavedVariablesPerCharacter: ElvCharacterDB
+## OptionalDeps: SharedMedia, Tukui, Masque
+## RequiredDeps: ElvUI_Libraries
+## Interface: 11403
+## X-Interface: 11403
+
+Core\Load.xml
+
+Classic\Load.xml

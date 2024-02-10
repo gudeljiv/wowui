@@ -1,0 +1,11 @@
+## Interface: 11302
+
+## Title: AdiBags - ItemRackSets
+## Notes: Adds ItemRack set filters to AdiBags.
+## Author: apottere
+## Version: v1.7
+## X-Date: 2020-01-07T5:41:37Z
+
+## Dependencies: AdiBags, ItemRack
+
+AdiBags-ItemRackSets.lua

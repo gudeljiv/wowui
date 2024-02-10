@@ -1,0 +1,149 @@
+
+RXPCData = {
+	["hideWindow"] = false,
+	["completedWaypoints"] = {
+		[8] = {
+		},
+	},
+	["currentStep"] = 8,
+	["SoM"] = true,
+	["currentGuideGroup"] = "Horde 30-45",
+	["flightPaths"] = {
+		[25] = "Crossroads, The Barrens",
+		[29] = "Sun Rock Retreat, Stonetalon Mountains",
+		[30] = "Freewind Post, Thousand Needles",
+		[179] = "Mudsprocket, Dustwallow Marsh",
+		[58] = "Zoram'gar Outpost, Ashenvale",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[80] = "Ratchet, The Barrens",
+		[40] = "Gadgetzan, Tanaris",
+		[22] = "Thunder Bluff, Mulgore",
+		[23] = "Orgrimmar, Durotar",
+		[77] = "Camp Taurajo, The Barrens",
+	},
+	["hardcore"] = false,
+	["xprate"] = 1.5,
+	["JoyousJourneys"] = true,
+	["phase"] = 6,
+	["frameHeight"] = 158.2055358886719,
+	["currentGuideName"] = "43-45 Lower Stranglethorn Vale",
+	["stepSkip"] = {
+		true, -- [1]
+		true, -- [2]
+	},
+	["disableArrow"] = false,
+	["disableItemWindow"] = false,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+	},
+	["profiles"] = {
+		["Moolatz - Golemagg"] = {
+			["levels"] = {
+				[40] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Dustwallow Marsh"] = {
+							["xp"] = 43996,
+							["count"] = 40,
+						},
+					},
+					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 30,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 0,
+							["year"] = 2022,
+							["hour"] = 16,
+							["weekday"] = 3,
+						},
+						["finished"] = 210615,
+					},
+					["quests"] = {
+						["Dustwallow Marsh"] = {
+							[11160] = 6225,
+							[11159] = 6900,
+							[11161] = 6225,
+						},
+					},
+				},
+				[41] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Dustwallow Marsh"] = {
+							["xp"] = 18900,
+							["count"] = 2,
+						},
+						["The Barrens"] = {
+							["xp"] = 4012,
+							["count"] = 2,
+						},
+						["Stranglethorn Vale"] = {
+							["xp"] = 27024,
+							["count"] = 135,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 30,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 0,
+							["year"] = 2022,
+							["hour"] = 16,
+							["weekday"] = 3,
+						},
+						["started"] = 210616,
+					},
+					["quests"] = {
+						["Dustwallow Marsh"] = {
+							[1173] = 10350,
+							[11162] = 8550,
+							[1172] = 8550,
+						},
+						["The Barrens"] = {
+							[1178] = 1387,
+							[1111] = 2625,
+						},
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+	},
+	["profiles"] = {
+		["Moolatz - Golemagg"] = {
+			["announcements"] = {
+				["43-45 Lower Stranglethorn Vale"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+				["40-43 Badlands / Lower Dustwallow"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+	},
+	["profiles"] = {
+		["Moolatz - Golemagg"] = {
+		},
+	},
+}

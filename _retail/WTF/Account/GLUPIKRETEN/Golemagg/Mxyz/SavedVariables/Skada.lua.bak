@@ -1,0 +1,2028 @@
+
+SkadaPerCharDB = {
+	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 11,
+			["interrupts"] = 0,
+			["endtime"] = 1567237630,
+			["damagetaken"] = 8,
+			["damage"] = 53,
+			["players"] = {
+				{
+					["last"] = 1567237628,
+					["healingabsorbed"] = 0,
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Mottled Boar"] = 53,
+					},
+					["auras"] = {
+					},
+					["role"] = "NONE",
+					["time"] = 9,
+					["interrupts"] = 0,
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["damage"] = 53,
+					["damagespells"] = {
+						["Heroic Strike"] = {
+							["hitmin"] = 24,
+							["id"] = 0,
+							["min"] = 24,
+							["hitamount"] = 24,
+							["hitmax"] = 24,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 24,
+							["totalhits"] = 1,
+							["damage"] = 24,
+						},
+						["Attack"] = {
+							["hitmin"] = 14,
+							["id"] = 6603,
+							["min"] = 14,
+							["hitamount"] = 29,
+							["hitmax"] = 15,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 15,
+							["totalhits"] = 2,
+							["damage"] = 29,
+						},
+					},
+					["power"] = {
+					},
+					["damagetaken"] = 8,
+					["shielding"] = 0,
+					["id"] = "Player-4755-0179495D",
+					["first"] = 1567237619,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["min"] = 2,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["school"] = 1,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 4,
+							["resisted"] = 0,
+							["max"] = 2,
+							["damage"] = 8,
+						},
+					},
+					["healed"] = {
+					},
+					["ffdamagedonetargets"] = {
+					},
+					["name"] = "Vermins",
+					["ffdamagedonespells"] = {
+					},
+					["ffdamagedone"] = 0,
+					["maxhp"] = 156,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Mottled Boar"] = {
+					["players"] = {
+						["Vermins"] = {
+							["taken"] = 53,
+							["done"] = 8,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 53,
+					["done"] = 8,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 53,
+			["power"] = {
+			},
+			["healing"] = 0,
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["ffdamagedone"] = 0,
+			["starttime"] = 1567237619,
+			["name"] = "Mottled Boar (20)",
+			["mobname"] = "Mottled Boar",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1567237619,
+			["mobdone"] = 8,
+		}, -- [1]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 7,
+			["interrupts"] = 0,
+			["endtime"] = 1567237537,
+			["damagetaken"] = 2,
+			["damage"] = 44,
+			["players"] = {
+				{
+					["last"] = 1567237536,
+					["healingabsorbed"] = 0,
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Mottled Boar"] = 44,
+					},
+					["auras"] = {
+					},
+					["role"] = "NONE",
+					["time"] = 6,
+					["interrupts"] = 0,
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["damage"] = 44,
+					["damagespells"] = {
+						["Heroic Strike"] = {
+							["hitmin"] = 27,
+							["id"] = 0,
+							["min"] = 27,
+							["hitamount"] = 27,
+							["hitmax"] = 27,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 27,
+							["totalhits"] = 1,
+							["damage"] = 27,
+						},
+						["Attack"] = {
+							["hitmin"] = 17,
+							["id"] = 6603,
+							["min"] = 17,
+							["hitamount"] = 17,
+							["hitmax"] = 17,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 17,
+							["totalhits"] = 1,
+							["damage"] = 17,
+						},
+					},
+					["power"] = {
+					},
+					["damagetaken"] = 2,
+					["shielding"] = 0,
+					["id"] = "Player-4755-0179495D",
+					["first"] = 1567237530,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["min"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["school"] = 1,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["max"] = 1,
+							["damage"] = 2,
+						},
+					},
+					["healed"] = {
+					},
+					["ffdamagedonetargets"] = {
+					},
+					["name"] = "Vermins",
+					["ffdamagedonespells"] = {
+					},
+					["ffdamagedone"] = 0,
+					["maxhp"] = 156,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Mottled Boar"] = {
+					["players"] = {
+						["Vermins"] = {
+							["taken"] = 44,
+							["done"] = 2,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 44,
+					["done"] = 2,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 44,
+			["power"] = {
+			},
+			["healing"] = 0,
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["ffdamagedone"] = 0,
+			["starttime"] = 1567237530,
+			["name"] = "Mottled Boar (19)",
+			["mobname"] = "Mottled Boar",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1567237530,
+			["mobdone"] = 2,
+		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 8,
+			["interrupts"] = 0,
+			["endtime"] = 1567202636,
+			["damagetaken"] = 4,
+			["damage"] = 74,
+			["players"] = {
+				{
+					["last"] = 1567202635,
+					["healingabsorbed"] = 0,
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Mottled Boar"] = 74,
+					},
+					["auras"] = {
+						["Charge Stun"] = {
+							["name"] = "Charge Stun",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 0,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 1,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 7,
+					["interrupts"] = 0,
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["damage"] = 74,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 17,
+							["id"] = 6603,
+							["min"] = 17,
+							["hitamount"] = 17,
+							["hitmax"] = 17,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 17,
+							["totalhits"] = 1,
+							["damage"] = 17,
+						},
+						["Heroic Strike"] = {
+							["hitmin"] = 28,
+							["id"] = 0,
+							["min"] = 28,
+							["hitamount"] = 57,
+							["hitmax"] = 29,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 29,
+							["totalhits"] = 2,
+							["damage"] = 57,
+						},
+					},
+					["shielding"] = 0,
+					["damagetaken"] = 4,
+					["power"] = {
+						{
+							["amount"] = 9,
+							["spells"] = {
+								[0] = 9,
+							},
+						}, -- [1]
+					},
+					["id"] = "Player-4755-0179495D",
+					["maxhp"] = 156,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 2,
+							["school"] = 1,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 2,
+							["resisted"] = 0,
+							["max"] = 2,
+							["damage"] = 4,
+						},
+					},
+					["healed"] = {
+					},
+					["ffdamagedonetargets"] = {
+					},
+					["name"] = "Vermins",
+					["ffdamagedonespells"] = {
+					},
+					["ffdamagedone"] = 0,
+					["first"] = 1567202628,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Mottled Boar"] = {
+					["players"] = {
+						["Vermins"] = {
+							["taken"] = 74,
+							["done"] = 4,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["done"] = 4,
+					["taken"] = 74,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 74,
+			["power"] = {
+				9, -- [1]
+			},
+			["healing"] = 0,
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["ffdamagedone"] = 0,
+			["starttime"] = 1567202628,
+			["name"] = "Mottled Boar (18)",
+			["mobname"] = "Mottled Boar",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1567202628,
+			["mobdone"] = 4,
+		}, -- [3]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 9,
+			["interrupts"] = 0,
+			["endtime"] = 1567202622,
+			["damagetaken"] = 5,
+			["damage"] = 56,
+			["players"] = {
+				{
+					["last"] = 1567202619,
+					["healingabsorbed"] = 0,
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Mottled Boar"] = 56,
+					},
+					["auras"] = {
+						["Battle Shout"] = {
+							["name"] = "Battle Shout",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 0,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+						["Charge Stun"] = {
+							["name"] = "Charge Stun",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 0,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 1,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 6,
+					["interrupts"] = 0,
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["damage"] = 56,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 14,
+							["id"] = 6603,
+							["min"] = 14,
+							["hitamount"] = 31,
+							["hitmax"] = 17,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 17,
+							["totalhits"] = 2,
+							["damage"] = 31,
+						},
+						["Heroic Strike"] = {
+							["hitmin"] = 25,
+							["id"] = 0,
+							["min"] = 25,
+							["hitamount"] = 25,
+							["hitmax"] = 25,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 25,
+							["totalhits"] = 1,
+							["damage"] = 25,
+						},
+					},
+					["shielding"] = 0,
+					["damagetaken"] = 5,
+					["power"] = {
+						{
+							["amount"] = 9,
+							["spells"] = {
+								[0] = 9,
+							},
+						}, -- [1]
+					},
+					["id"] = "Player-4755-0179495D",
+					["maxhp"] = 156,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1,
+							["school"] = 1,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["max"] = 2,
+							["damage"] = 5,
+						},
+					},
+					["healed"] = {
+					},
+					["ffdamagedonetargets"] = {
+					},
+					["name"] = "Vermins",
+					["ffdamagedonespells"] = {
+					},
+					["ffdamagedone"] = 0,
+					["first"] = 1567202613,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Mottled Boar"] = {
+					["players"] = {
+						["Vermins"] = {
+							["taken"] = 56,
+							["done"] = 5,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["done"] = 5,
+					["taken"] = 56,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 56,
+			["power"] = {
+				9, -- [1]
+			},
+			["healing"] = 0,
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["ffdamagedone"] = 0,
+			["starttime"] = 1567202613,
+			["name"] = "Mottled Boar (17)",
+			["mobname"] = "Mottled Boar",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1567202613,
+			["mobdone"] = 5,
+		}, -- [4]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 9,
+			["interrupts"] = 0,
+			["endtime"] = 1567202607,
+			["damagetaken"] = 3,
+			["damage"] = 53,
+			["players"] = {
+				{
+					["last"] = 1567202605,
+					["healingabsorbed"] = 0,
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Mottled Boar"] = 53,
+					},
+					["auras"] = {
+						["Charge Stun"] = {
+							["name"] = "Charge Stun",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 0,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 1,
+						},
+					},
+					["role"] = "NONE",
+					["time"] = 7,
+					["interrupts"] = 0,
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["damage"] = 53,
+					["damagespells"] = {
+						["Heroic Strike"] = {
+							["hitmin"] = 24,
+							["id"] = 0,
+							["min"] = 24,
+							["hitamount"] = 24,
+							["hitmax"] = 24,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 24,
+							["totalhits"] = 1,
+							["damage"] = 24,
+						},
+						["Attack"] = {
+							["hitmin"] = 14,
+							["id"] = 6603,
+							["min"] = 14,
+							["hitamount"] = 29,
+							["hitmax"] = 15,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 15,
+							["totalhits"] = 2,
+							["damage"] = 29,
+						},
+					},
+					["shielding"] = 0,
+					["damagetaken"] = 3,
+					["power"] = {
+						{
+							["amount"] = 9,
+							["spells"] = {
+								[0] = 9,
+							},
+						}, -- [1]
+					},
+					["id"] = "Player-4755-0179495D",
+					["maxhp"] = 156,
+					["healing"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
+							["min"] = 1,
+							["school"] = 1,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["max"] = 1,
+							["damage"] = 3,
+						},
+					},
+					["healed"] = {
+					},
+					["ffdamagedonetargets"] = {
+					},
+					["name"] = "Vermins",
+					["ffdamagedonespells"] = {
+					},
+					["ffdamagedone"] = 0,
+					["first"] = 1567202598,
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Mottled Boar"] = {
+					["players"] = {
+						["Vermins"] = {
+							["taken"] = 53,
+							["done"] = 3,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["done"] = 3,
+					["taken"] = 53,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["mobtaken"] = 53,
+			["power"] = {
+				9, -- [1]
+			},
+			["healing"] = 0,
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["ffdamagedone"] = 0,
+			["starttime"] = 1567202598,
+			["name"] = "Mottled Boar (16)",
+			["mobname"] = "Mottled Boar",
+			["auras"] = {
+			},
+			["mobhdone"] = 0,
+			["last_action"] = 1567202598,
+			["mobdone"] = 3,
+		}, -- [5]
+	},
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 2440,
+		["interrupts"] = 0,
+		["multistrikes"] = 0,
+		["damage"] = 384145794,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["time"] = 1964,
+				["interrupts"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["auras"] = {
+					["Sudden Execute"] = {
+						["name"] = "Sudden Execute",
+						["active"] = 0,
+						["id"] = 139958,
+						["uptime"] = 1966,
+						["auratype"] = "BUFF",
+					},
+					["Mocking Banner"] = {
+						["name"] = "Mocking Banner",
+						["active"] = 0,
+						["id"] = 114192,
+						["uptime"] = 30,
+						["auratype"] = "BUFF",
+					},
+					["Visions of Insanity"] = {
+						["name"] = "Visions of Insanity",
+						["active"] = 0,
+						["id"] = 127230,
+						["auratype"] = "BUFF",
+						["uptime"] = 375,
+					},
+					["Outrage"] = {
+						["name"] = "Outrage",
+						["active"] = 0,
+						["id"] = 146245,
+						["uptime"] = 1630,
+						["auratype"] = "BUFF",
+					},
+					["Shout Rage Bonus"] = {
+						["name"] = "Shout Rage Bonus",
+						["active"] = 0,
+						["id"] = 92049,
+						["uptime"] = 449,
+						["auratype"] = "BUFF",
+					},
+					["Battle Shout"] = {
+						["name"] = "Battle Shout",
+						["active"] = 0,
+						["id"] = 6673,
+						["auratype"] = "BUFF",
+						["uptime"] = 1509,
+					},
+					["Bloodbath"] = {
+						["name"] = "Bloodbath",
+						["active"] = 0,
+						["id"] = 12292,
+						["uptime"] = 1638,
+						["auratype"] = "BUFF",
+					},
+					["Sweeping Strikes"] = {
+						["name"] = "Sweeping Strikes",
+						["active"] = 0,
+						["id"] = 12328,
+						["uptime"] = 1581,
+						["auratype"] = "BUFF",
+					},
+					["Berserker Rage"] = {
+						["name"] = "Berserker Rage",
+						["active"] = 0,
+						["id"] = 18499,
+						["uptime"] = 1568,
+						["auratype"] = "BUFF",
+					},
+					["Rupture"] = {
+						["name"] = "Rupture",
+						["active"] = 0,
+						["id"] = 15583,
+						["uptime"] = 36,
+						["auratype"] = "DEBUFF",
+					},
+					["Sudden Death"] = {
+						["name"] = "Sudden Death",
+						["active"] = 0,
+						["id"] = 52437,
+						["uptime"] = 1620,
+						["auratype"] = "BUFF",
+					},
+					["Die by the Sword"] = {
+						["name"] = "Die by the Sword",
+						["active"] = 0,
+						["id"] = 118038,
+						["auratype"] = "BUFF",
+						["uptime"] = 1466,
+					},
+					["Taunt"] = {
+						["name"] = "Taunt",
+						["active"] = 0,
+						["id"] = 355,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
+					},
+					["Surge of Strength"] = {
+						["name"] = "Surge of Strength",
+						["active"] = 0,
+						["id"] = 138702,
+						["uptime"] = 1788,
+						["auratype"] = "BUFF",
+					},
+					["Taste for Blood"] = {
+						["name"] = "Taste for Blood",
+						["active"] = 0,
+						["id"] = 60503,
+						["uptime"] = 2008,
+						["auratype"] = "BUFF",
+					},
+					["Recklessness"] = {
+						["name"] = "Recklessness",
+						["active"] = 0,
+						["id"] = 1719,
+						["auratype"] = "BUFF",
+						["uptime"] = 1548,
+					},
+					["Weakened Blows"] = {
+						["name"] = "Weakened Blows",
+						["active"] = 0,
+						["id"] = 115798,
+						["uptime"] = 45,
+						["auratype"] = "DEBUFF",
+					},
+					["Enrage"] = {
+						["name"] = "Enrage",
+						["active"] = 0,
+						["id"] = 12880,
+						["uptime"] = 2009,
+						["auratype"] = "BUFF",
+					},
+					["Victorious"] = {
+						["name"] = "Victorious",
+						["active"] = 0,
+						["id"] = 32216,
+						["uptime"] = 1963,
+						["auratype"] = "BUFF",
+					},
+					["Mortal Wounds"] = {
+						["name"] = "Mortal Wounds",
+						["active"] = 0,
+						["id"] = 115804,
+						["uptime"] = 1713,
+						["auratype"] = "DEBUFF",
+					},
+					["Rallying Cry"] = {
+						["name"] = "Rallying Cry",
+						["active"] = 0,
+						["id"] = 97463,
+						["auratype"] = "BUFF",
+						["uptime"] = 10,
+					},
+					["Colossus Smash"] = {
+						["name"] = "Colossus Smash",
+						["active"] = 0,
+						["id"] = 86346,
+						["uptime"] = 1073,
+						["auratype"] = "DEBUFF",
+					},
+					["Weakened Armor"] = {
+						["name"] = "Weakened Armor",
+						["active"] = 0,
+						["id"] = 113746,
+						["uptime"] = 1776,
+						["auratype"] = "DEBUFF",
+					},
+					["Shield Wall"] = {
+						["name"] = "Shield Wall",
+						["active"] = 0,
+						["id"] = 871,
+						["auratype"] = "BUFF",
+						["uptime"] = 1861,
+					},
+					["Charge Stun"] = {
+						["name"] = "Charge Stun",
+						["active"] = 0,
+						["id"] = 7922,
+						["uptime"] = 9,
+						["auratype"] = "DEBUFF",
+					},
+					["Blood Fury"] = {
+						["name"] = "Blood Fury",
+						["active"] = 0,
+						["id"] = 20572,
+						["uptime"] = 1774,
+						["auratype"] = "BUFF",
+					},
+					["Deep Wounds"] = {
+						["name"] = "Deep Wounds",
+						["active"] = 0,
+						["id"] = 115767,
+						["uptime"] = 1785,
+						["auratype"] = "DEBUFF",
+					},
+					["Dragon Roar"] = {
+						["name"] = "Dragon Roar",
+						["active"] = 0,
+						["id"] = 118895,
+						["uptime"] = 2,
+						["auratype"] = "DEBUFF",
+					},
+					["Victory Rush"] = {
+						["name"] = "Victory Rush",
+						["active"] = 0,
+						["id"] = 118779,
+						["uptime"] = 1537,
+						["auratype"] = "BUFF",
+					},
+					["Second Wind"] = {
+						["name"] = "Second Wind",
+						["active"] = 0,
+						["id"] = 125667,
+						["auratype"] = "BUFF",
+						["uptime"] = 86,
+					},
+					["Physical Vulnerability"] = {
+						["name"] = "Physical Vulnerability",
+						["active"] = 0,
+						["id"] = 81326,
+						["uptime"] = 1776,
+						["auratype"] = "DEBUFF",
+					},
+				},
+				["damage"] = 384142778,
+				["damagespells"] = {
+					["Cleave"] = {
+						["min"] = 27529,
+						["critical"] = 10,
+						["hit"] = 30,
+						["totalhits"] = 40,
+						["id"] = 845,
+						["max"] = 104062,
+						["damage"] = 2043771,
+					},
+					["Execute"] = {
+						["min"] = 113151,
+						["critical"] = 26,
+						["hit"] = 62,
+						["totalhits"] = 88,
+						["id"] = 5308,
+						["max"] = 667892,
+						["damage"] = 23701417,
+					},
+					["Dragon Roar"] = {
+						["min"] = 97330,
+						["critical"] = 74,
+						["totalhits"] = 121,
+						["id"] = 118895,
+						["IMMUNE"] = 47,
+						["max"] = 443694,
+						["damage"] = 13677672,
+					},
+					["Opportunity Strike"] = {
+						["min"] = 14443,
+						["critical"] = 282,
+						["hit"] = 708,
+						["totalhits"] = 990,
+						["id"] = 76858,
+						["max"] = 85866,
+						["damage"] = 35416439,
+					},
+					["Sweeping Strikes"] = {
+						["min"] = 7221,
+						["hit"] = 431,
+						["totalhits"] = 431,
+						["id"] = 26654,
+						["max"] = 247370,
+						["damage"] = 14458160,
+					},
+					["Thunder Clap"] = {
+						["min"] = 26664,
+						["critical"] = 68,
+						["hit"] = 171,
+						["totalhits"] = 239,
+						["id"] = 6343,
+						["max"] = 110836,
+						["damage"] = 11908557,
+					},
+					["Overpower"] = {
+						["min"] = 39345,
+						["critical"] = 236,
+						["hit"] = 29,
+						["totalhits"] = 265,
+						["id"] = 7384,
+						["max"] = 178466,
+						["damage"] = 25603011,
+					},
+					["Heroic Strike"] = {
+						["min"] = 35576,
+						["critical"] = 39,
+						["hit"] = 63,
+						["totalhits"] = 102,
+						["id"] = 78,
+						["max"] = 198036,
+						["damage"] = 8634842,
+					},
+					["Colossus Smash"] = {
+						["min"] = 55188,
+						["critical"] = 54,
+						["hit"] = 132,
+						["totalhits"] = 186,
+						["id"] = 86346,
+						["max"] = 284457,
+						["damage"] = 22948677,
+					},
+					["Bloodbath"] = {
+						["min"] = 693,
+						["totalhits"] = 1103,
+						["hit"] = 609,
+						["id"] = 147531,
+						["IMMUNE"] = 494,
+						["max"] = 58945,
+						["damage"] = 13864122,
+					},
+					["Mortal Strike"] = {
+						["min"] = 62528,
+						["critical"] = 81,
+						["hit"] = 201,
+						["totalhits"] = 282,
+						["id"] = 12294,
+						["max"] = 408742,
+						["damage"] = 41283106,
+					},
+					["Charge Stun"] = {
+						["id"] = 7922,
+						["totalhits"] = 10,
+						["IMMUNE"] = 10,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["Deep Wounds"] = {
+						["min"] = 36286,
+						["critical"] = 190,
+						["hit"] = 452,
+						["totalhits"] = 642,
+						["id"] = 115767,
+						["max"] = 222124,
+						["damage"] = 42496558,
+					},
+					["Pummel"] = {
+						["totalhits"] = 43,
+						["id"] = 6552,
+						["IMMUNE"] = 43,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["Heroic Leap"] = {
+						["min"] = 17952,
+						["critical"] = 2,
+						["hit"] = 5,
+						["totalhits"] = 7,
+						["id"] = 52174,
+						["max"] = 41723,
+						["damage"] = 183186,
+					},
+					["Victory Rush"] = {
+						["min"] = 21618,
+						["critical"] = 13,
+						["hit"] = 27,
+						["totalhits"] = 40,
+						["id"] = 34428,
+						["max"] = 81833,
+						["damage"] = 1540215,
+					},
+					["Slam"] = {
+						["min"] = 37544,
+						["critical"] = 107,
+						["hit"] = 317,
+						["totalhits"] = 424,
+						["id"] = 1464,
+						["max"] = 566429,
+						["damage"] = 85237387,
+					},
+					["Attack"] = {
+						["min"] = 25038,
+						["glancing"] = 106,
+						["critical"] = 177,
+						["hit"] = 355,
+						["totalhits"] = 638,
+						["max"] = 181158,
+						["id"] = 6603,
+						["damage"] = 41145658,
+					},
+				},
+				["healingspells"] = {
+					["Second Wind"] = {
+						["shielding"] = 0,
+						["id"] = 16491,
+						["healing"] = 1362882,
+						["absorbed"] = 0,
+						["min"] = 15646,
+						["multistrike"] = 0,
+						["name"] = "Second Wind",
+						["critical"] = 0,
+						["max"] = 15856,
+						["overhealing"] = 0,
+						["hits"] = 87,
+						["multistrikes"] = 0,
+					},
+					["Victory Rush"] = {
+						["shielding"] = 0,
+						["id"] = 118779,
+						["healing"] = 2243927,
+						["multistrikes"] = 0,
+						["min"] = 0,
+						["multistrike"] = 0,
+						["name"] = "Victory Rush",
+						["hits"] = 40,
+						["overhealing"] = 1950905,
+						["max"] = 105709,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["damagetaken"] = 6672213,
+				["power"] = {
+					{
+						["spells"] = {
+							[12294] = 2820,
+							[12880] = 1930,
+							[100] = 200,
+							[144438] = 6830,
+							[92049] = 700,
+						},
+						["amount"] = 12480,
+					}, -- [1]
+				},
+				["id"] = "0x000000000040D76A",
+				["maxhp"] = 521561,
+				["overhealing"] = 1950905,
+				["damagetakenspells"] = {
+					["Tornado"] = {
+						["crushing"] = 0,
+						["id"] = 124987,
+						["damage"] = 108191,
+						["max"] = 16122,
+						["name"] = "Tornado",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 7,
+						["resisted"] = 0,
+						["min"] = 14549,
+						["absorbed"] = 0,
+					},
+					["Amber Corrosion"] = {
+						["crushing"] = 0,
+						["id"] = 131085,
+						["damage"] = 42500,
+						["max"] = 8500,
+						["name"] = "Amber Corrosion",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 5,
+						["resisted"] = 0,
+						["min"] = 8500,
+						["absorbed"] = 0,
+					},
+					["Shadowbolt"] = {
+						["crushing"] = 0,
+						["id"] = 125212,
+						["damage"] = 171808,
+						["max"] = 22450,
+						["name"] = "Shadowbolt",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 8,
+						["resisted"] = 0,
+						["min"] = 20626,
+						["absorbed"] = 0,
+					},
+					["Rupture"] = {
+						["crushing"] = 0,
+						["id"] = 15583,
+						["damage"] = 44,
+						["max"] = 4,
+						["name"] = "Rupture",
+						["min"] = 2,
+						["multistrike"] = 0,
+						["critical"] = 4,
+						["blocked"] = 0,
+						["totalhits"] = 18,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Voidcloud"] = {
+						["crushing"] = 0,
+						["id"] = 125241,
+						["damage"] = 208624,
+						["max"] = 52156,
+						["name"] = "Voidcloud",
+						["glancing"] = 0,
+						["multistrike"] = 0,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["totalhits"] = 4,
+						["resisted"] = 0,
+						["min"] = 52156,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 6141046,
+						["max"] = 23070,
+						["name"] = "Attack",
+						["min"] = 1,
+						["multistrike"] = 0,
+						["critical"] = 43,
+						["blocked"] = 10932,
+						["totalhits"] = 690,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["ccbreaks"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["name"] = "Verminz",
+				["healed"] = {
+					["0x000000000040D76A"] = {
+						["amount"] = 3606809,
+						["class"] = "WARRIOR",
+						["name"] = "Verminz",
+						["shielding"] = 0,
+					},
+				},
+				["shielding"] = 0,
+				["healing"] = 3606809,
+				["deathlog"] = {
+					{
+						["ts"] = 1511983997.932,
+						["amount"] = -14036,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 528547,
+					}, -- [1]
+					{
+						["ts"] = 1511984002.008,
+						["amount"] = -6452,
+						["srcname"] = "Zandalari Warscout",
+						["spellid"] = 88163,
+						["hp"] = 514511,
+					}, -- [2]
+					{
+						["ts"] = 1511984015.434,
+						["amount"] = -8795,
+						["hp"] = 508059,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+					}, -- [3]
+					{
+						["ts"] = 1511984017.46,
+						["amount"] = -7988,
+						["hp"] = 499264,
+						["srcname"] = "Zandalari Warscout",
+						["spellid"] = 88163,
+					}, -- [4]
+					{
+						["ts"] = 1511983918.126,
+						["amount"] = -7423,
+						["spellid"] = 88163,
+						["hp"] = 382862,
+						["srcname"] = "Zandalari Warscout",
+					}, -- [5]
+					{
+						["ts"] = 1511983920.12,
+						["amount"] = -7854,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 375439,
+						["spellid"] = 88163,
+					}, -- [6]
+					{
+						["ts"] = 1511983922.174,
+						["amount"] = -8478,
+						["hp"] = 367585,
+						["srcname"] = "Zandalari Warscout",
+						["spellid"] = 88163,
+					}, -- [7]
+					{
+						["ts"] = 1511983937.924,
+						["amount"] = 105709,
+						["absorb"] = 0,
+						["hp"] = 496528,
+						["srcname"] = "Verminz",
+						["spellid"] = 118779,
+					}, -- [8]
+					{
+						["ts"] = 1511983938.001,
+						["amount"] = -7390,
+						["srcname"] = "Zandalari Warscout",
+						["spellid"] = 88163,
+						["hp"] = 496528,
+					}, -- [9]
+					{
+						["ts"] = 1511983940.078,
+						["amount"] = -7783,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 489138,
+					}, -- [10]
+					{
+						["ts"] = 1511983951.373,
+						["amount"] = -7743,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 481355,
+					}, -- [11]
+					{
+						["ts"] = 1511983953.354,
+						["amount"] = -6060,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 473612,
+					}, -- [12]
+					{
+						["ts"] = 1511983955.36,
+						["amount"] = -8362,
+						["spellid"] = 88163,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 467552,
+					}, -- [13]
+					{
+						["ts"] = 1511983959.425,
+						["amount"] = -6096,
+						["srcname"] = "Zandalari Warscout",
+						["hp"] = 459190,
+						["spellid"] = 88163,
+					}, -- [14]
+					{
+						["ts"] = 1511983967.423,
+						["amount"] = -7409,
+						["spellid"] = 88163,
+						["hp"] = 453094,
+						["srcname"] = "Zandalari Warscout",
+					}, -- [15]
+					["pos"] = 5,
+				},
+				["multistrikes"] = 0,
+			}, -- [1]
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["auras"] = {
+					["Battle Shout"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Battle Shout",
+						["auratype"] = "BUFF",
+						["id"] = 0,
+					},
+					["Charge Stun"] = {
+						["uptime"] = 35,
+						["active"] = 0,
+						["id"] = 0,
+						["name"] = "Charge Stun",
+						["school"] = 1,
+						["auratype"] = "DEBUFF",
+					},
+				},
+				["ffdamagedone"] = 0,
+				["time"] = 359,
+				["interrupts"] = 0,
+				["ffdamagedonespells"] = {
+				},
+				["dispells"] = 0,
+				["damage"] = 3016,
+				["damagespells"] = {
+					["Attack"] = {
+						["damage"] = 1431,
+						["criticalamount"] = 121,
+						["hitmin"] = 11,
+						["criticalmin"] = 26,
+						["id"] = 6603,
+						["PARRY"] = 1,
+						["school"] = 1,
+						["critical"] = 4,
+						["glancing"] = 1,
+						["criticalmax"] = 32,
+						["hitmax"] = 20,
+						["hit"] = 85,
+						["totalhits"] = 91,
+						["min"] = 11,
+						["max"] = 32,
+						["hitamount"] = 1298,
+					},
+					["Heroic Strike"] = {
+						["hitmin"] = 22,
+						["criticalamount"] = 202,
+						["id"] = 0,
+						["damage"] = 1585,
+						["max"] = 62,
+						["school"] = 1,
+						["min"] = 22,
+						["criticalmax"] = 62,
+						["hitmax"] = 31,
+						["hit"] = 53,
+						["totalhits"] = 57,
+						["critical"] = 4,
+						["criticalmin"] = 44,
+						["hitamount"] = 1383,
+					},
+				},
+				["healingspells"] = {
+				},
+				["damagetaken"] = 310,
+				["power"] = {
+					{
+						["spells"] = {
+							[0] = 306,
+						},
+						["amount"] = 306,
+					}, -- [1]
+				},
+				["id"] = "Player-4755-0179495D",
+				["maxhp"] = 156,
+				["overhealing"] = 0,
+				["damagetakenspells"] = {
+					["Weak Poison"] = {
+						["crushing"] = 0,
+						["id"] = 0,
+						["damage"] = 9,
+						["max"] = 1,
+						["name"] = "Weak Poison",
+						["min"] = 1,
+						["totalhits"] = 9,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Poison"] = {
+						["crushing"] = 0,
+						["id"] = 0,
+						["absorbed"] = 0,
+						["min"] = 1,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["school"] = 8,
+						["name"] = "Poison",
+						["blocked"] = 0,
+						["totalhits"] = 3,
+						["resisted"] = 0,
+						["max"] = 1,
+						["damage"] = 3,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 298,
+						["max"] = 4,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 155,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1,
+						["absorbed"] = 0,
+					},
+				},
+				["role"] = "NONE",
+				["name"] = "Vermins",
+				["ffdamagedonetargets"] = {
+				},
+				["healed"] = {
+				},
+				["shielding"] = 0,
+				["healing"] = 0,
+				["deathlog"] = {
+					{
+						["ts"] = 1567237625.569,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 133,
+						["srcname"] = "Mottled Boar",
+					}, -- [1]
+					{
+						["ts"] = 1567237627.479,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 131,
+						["srcname"] = "Mottled Boar",
+					}, -- [2]
+					{
+						["ts"] = 1567202563.53,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["hp"] = 133,
+						["srcname"] = "Mottled Boar",
+					}, -- [3]
+					{
+						["ts"] = 1567202598.822,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["hp"] = 137,
+						["srcname"] = "Mottled Boar",
+					}, -- [4]
+					{
+						["ts"] = 1567202600.846,
+						["amount"] = -1,
+						["srcname"] = "Mottled Boar",
+						["hp"] = 136,
+						["spellid"] = 88163,
+					}, -- [5]
+					{
+						["ts"] = 1567202602.864,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "Mottled Boar",
+						["hp"] = 135,
+					}, -- [6]
+					{
+						["ts"] = 1567202615.066,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["srcname"] = "Mottled Boar",
+						["hp"] = 137,
+					}, -- [7]
+					{
+						["ts"] = 1567202617.079,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["srcname"] = "Mottled Boar",
+						["hp"] = 135,
+					}, -- [8]
+					{
+						["ts"] = 1567202619.074,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 134,
+						["srcname"] = "Mottled Boar",
+					}, -- [9]
+					{
+						["ts"] = 1567202632.061,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 137,
+						["srcname"] = "Mottled Boar",
+					}, -- [10]
+					{
+						["ts"] = 1567202634.134,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 135,
+						["srcname"] = "Mottled Boar",
+					}, -- [11]
+					{
+						["ts"] = 1567237530.34,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["hp"] = 137,
+						["srcname"] = "Mottled Boar",
+					}, -- [12]
+					{
+						["ts"] = 1567237532.4,
+						["amount"] = -1,
+						["spellid"] = 88163,
+						["hp"] = 136,
+						["srcname"] = "Mottled Boar",
+					}, -- [13]
+					{
+						["ts"] = 1567237619.499,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 137,
+						["srcname"] = "Mottled Boar",
+					}, -- [14]
+					{
+						["ts"] = 1567237623.489,
+						["amount"] = -2,
+						["spellid"] = 88163,
+						["hp"] = 135,
+						["srcname"] = "Mottled Boar",
+					}, -- [15]
+					["pos"] = 3,
+				},
+				["ccbreaks"] = 0,
+			}, -- [2]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Tornado"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 0,
+						["done"] = 108193,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 108193,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bandicoon Kit"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 703981,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 703981,
+				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Student of Chi-Ji"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 0,
+						["done"] = 6942,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 6942,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Viseclaw Fry"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 245870,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 245870,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Scorpid Worker"] = {
+				["players"] = {
+					["Vermins"] = {
+						["taken"] = 863,
+						["done"] = 139,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 863,
+				["done"] = 139,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Mogu Infiltrator"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 14273768,
+						["done"] = 262087,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 14273768,
+				["done"] = 262087,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bluff Hawk"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 290974,
+						["done"] = 14738,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 290974,
+				["done"] = 14738,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Rapana Whelk"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 742759,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 742759,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Sarkoth"] = {
+				["players"] = {
+					["Vermins"] = {
+						["taken"] = 75,
+						["done"] = 22,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 75,
+				["done"] = 22,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Malayan Quillrat"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 155542,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 155542,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Hexapos"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 0,
+						["done"] = 17717,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 17717,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Northwind Hawk"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 0,
+						["done"] = 3733,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 3733,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Muckscale Ripper"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 2697198,
+						["done"] = 120150,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2697198,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 120150,
+			},
+			["Sulik'shor"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 13062926,
+						["done"] = 423910,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 13062926,
+				["done"] = 423910,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Wasteland Calf"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 239407,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 239407,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Zandalari Warbringer"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 251712295,
+						["done"] = 3621630,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 251712295,
+				["done"] = 3621630,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Scarab"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 19677901,
+						["done"] = 953466,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 19677901,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 953466,
+			},
+			["Zandalari Warscout"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 74450509,
+						["done"] = 932576,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 74450509,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 932576,
+			},
+			["Mottled Boar"] = {
+				["players"] = {
+					["Vermins"] = {
+						["taken"] = 2078,
+						["done"] = 149,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2078,
+				["done"] = 149,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Aetha"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 1676886,
+						["done"] = 37990,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1676886,
+				["done"] = 37990,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bandicoon"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 391047,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 391047,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Quid"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 1754413,
+						["done"] = 70832,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1754413,
+				["done"] = 70832,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Silentstrike Pterrorwing"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 2067302,
+						["done"] = 55705,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 55705,
+				["taken"] = 2067302,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Ik'thik Harvester"] = {
+				["players"] = {
+					["Verminz"] = {
+						["taken"] = 0,
+						["done"] = 42500,
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 42500,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+		},
+		["mobtaken"] = 384145794,
+		["auras"] = {
+		},
+		["healing"] = 3606809,
+		["ffdamagedone"] = 0,
+		["power"] = {
+			12786, -- [1]
+		},
+		["overhealing"] = 1950905,
+		["shielding"] = 0,
+		["name"] = "Total",
+		["starttime"] = 1494680744,
+		["damagetaken"] = 6672523,
+		["mobhdone"] = 0,
+		["last_action"] = 1494680744,
+		["mobdone"] = 6672479,
+	},
+}

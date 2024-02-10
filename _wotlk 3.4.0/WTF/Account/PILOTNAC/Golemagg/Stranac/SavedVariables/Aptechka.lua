@@ -1,0 +1,3 @@
+
+AptechkaDB_Char = {
+}

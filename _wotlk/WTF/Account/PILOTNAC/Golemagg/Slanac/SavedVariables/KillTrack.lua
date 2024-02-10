@@ -1,0 +1,5 @@
+
+KILLTRACK_CHAR = {
+	["MOBS"] = {
+	},
+}

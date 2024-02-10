@@ -1,0 +1,52 @@
+VER 3 010000000000002A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Judgment
+END
+VER 3 010000000000002B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/castsequence reset=6 Judgment, Hammer of the Righteous
+END
+VER 3 0100000000000024 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/castsequence reset=6 Judgment, Crusader Strike, Crusader Strike
+/use Fire of the Deep
+/cast Shield of the Righteous
+END
+VER 3 010000000000001F " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists][] Cleanse
+END
+VER 3 010000000000001D " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/castsequence reset=6 Judgment, Hammer of the Righteous, Hammer of the Righteous
+/use Fire of the Deep
+/cast Shield of the Righteous
+END
+VER 3 0100000000000020 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Divine Shield
+/cancelaura Divine Shield
+END
+VER 3 0100000000000027 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/castsequence reset=6 Judgment, Divine Storm, Sivine Storm
+END
+VER 3 0100000000000028 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists][] Word of Glory
+END
+VER 3 010000000000002C " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Guardian of Ancient Kings
+/cast Avenging Wrath
+END
+VER 3 010000000000002D " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Divine Storm
+/aoe
+END

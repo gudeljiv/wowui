@@ -1,0 +1,10 @@
+## Interface: 80000
+## X-Compatible-With: 50400
+## Title: Masque Skinner: ShadowedUF
+## Version: 1.5.3
+## Author: Cybeloras of Aerie Peak
+## Notes: Skins ShadowedUnitFrames' aura frames with Masque
+## RequiredDeps: ShadowedUnitFrames, Masque
+## X-Child-Of: ShadowedUnitFrames
+
+ShadowedUFFacade.lua

@@ -1,0 +1,12 @@
+tag 0766721d4ec295a64fc3228e5b298b46474fba77 v3.7
+Author:	iceeagle <ciprianmihai.coman@gmail.com>
+Date:	Sun Sep 8 11:01:20 2019 +0300
+
+tag v3.7
+
+commit 29036266d46089ff2bef231e0f3cecd510b61b5e
+Author: iceeagle <ciprianmihai.coman@gmail.com>
+Date:   Sun Sep 8 11:00:56 2019 +0300
+
+    update for patch 8.2
+

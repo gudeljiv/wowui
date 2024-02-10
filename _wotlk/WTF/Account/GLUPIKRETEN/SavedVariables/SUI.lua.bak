@@ -1,0 +1,59 @@
+
+SUIDB = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["misc"] = {
+				["vendorprice"] = false,
+			},
+			["general"] = {
+				["font"] = "Default",
+				["automation"] = {
+					["repair"] = false,
+					["delete"] = false,
+					["sell"] = false,
+				},
+			},
+			["edit"] = {
+				["StatsFrame"] = {
+				},
+				["DebuffDragFrame"] = {
+				},
+				["TooltipFrame"] = {
+				},
+				["BuffDragFrame"] = {
+				},
+				["FocusFrame"] = {
+				},
+				["TargetFrame"] = {
+				},
+				["PlayerFrame"] = {
+				},
+				["CastingBarFrame"] = {
+				},
+			},
+			["tooltip"] = {
+				["style"] = "Default",
+				["mouseanchor"] = true,
+			},
+			["castbars"] = {
+				["style"] = "Default",
+			},
+			["install"] = true,
+			["actionbar"] = {
+				["style"] = "Retail",
+			},
+			["chat"] = {
+				["style"] = "Default",
+			},
+			["maps"] = {
+				["date"] = true,
+			},
+			["unitframes"] = {
+				["portrait"] = "Default",
+			},
+		},
+	},
+}

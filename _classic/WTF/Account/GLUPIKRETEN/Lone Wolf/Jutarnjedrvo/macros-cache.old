@@ -1,0 +1,49 @@
+VER 3 0000000001000001 "bolt" "136048"
+#showtooltip
+/startattack
+/cast Lightning Bolt
+END
+VER 3 0000000001000008 "disease" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Cure Disease
+END
+VER 3 0000000001000003 "earth" "136026"
+#showtooltip
+/stopcasting
+/cast [@focus,exists,harm][] Earth Shock(Rank 1)
+END
+VER 3 0000000001000007 "flame" "134400"
+#showtooltip
+/startattack
+/cast Flame Shock
+END
+VER 3 000000000100000A "flame" "134400"
+#showtooltip
+/cast [@none, mod:shift] Flametongue Weapon; [@none] Flametongue Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 000000000100000B "frost" "134400"
+#showtooltip
+/cast [@none, mod:shift] Frostbrand Weapon; [@none] Frostbrand Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000002 "heal" "136052"
+#showtooltip
+/cast [@mouseover,help,exists][]Healing Wave
+END
+VER 3 0000000001000006 "lesser" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Lesser Healing Wave
+END
+VER 3 0000000001000004 "poison" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Cure Poison
+END
+VER 3 0000000001000009 "rock" "134400"
+#showtooltip
+/cast [@none, mod:shift] Rockbiter Weapon; [@none] Rockbiter Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END

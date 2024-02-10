@@ -1,0 +1,31 @@
+VER 3 0000000001000011 "attack" "132152"
+#showtooltip
+/petfollow
+/petpassive
+/petattack [@mouseover,harm][]
+/petdefensive
+END
+VER 3 0000000001000012 "haunt" "134400"
+#showtooltip
+/petattack [@mouseover,harm][]
+/use [@mouseover,harm][] Haunt
+END
+VER 3 0000000001000013 "incin" "134400"
+#showtooltip
+/startattack
+/cast Incinerate
+END
+VER 3 000000000100000F "passive" "132328"
+#showtooltip
+/petfollow
+/petpassive
+END
+VER 3 0000000001000003 "sb" "134400"
+#showtooltip
+/startattack
+/cast Shadow bolt
+END
+VER 3 0000000001000004 "wand" "134400"
+#showtooltip Shoot
+/cast !Shoot
+END

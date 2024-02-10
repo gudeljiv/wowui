@@ -1,0 +1,23 @@
+VER 3 0000000000000024 " " "INV_MISC_QUESTIONMARK"
+/run ReputationWatchBar:Hide()
+/run MainMenuExpBar:Hide()
+/run MainMenuBarTexture0:Hide()
+/run MainMenuBarTexture1:Hide()
+END
+VER 3 000000000000000C " " "INV_Misc_QuestionMark"
+#showtooltip Headless Horseman's Mount
+/use [@player] Horn of Winter
+/use [@player] Legacy of the White Tiger
+/use [@player] Mark of the Wild
+/use [@player] Battle Shout
+/use [@player] Power Word: Fortitude
+/cast Headless Horseman's Mount
+END
+VER 3 0000000000000025 "RXPTargeting" "Ability_eyeoftheowl"
+//RestedXP Guides - current step has no configured targets
+END
+VER 3 0000000000000023 "TiB" "INV_MISC_QUESTIONMARK"
+/use Singing Crystal
+/use Book of the Ages
+/use Dew of Eternal Morning
+END

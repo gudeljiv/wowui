@@ -1,0 +1,19 @@
+
+JoanasGuides_Account = {
+	["invertedMode"] = true,
+	["autoquests"] = true,
+	["WindowLocation"] = {
+		"BOTTOM", -- [1]
+		nil, -- [2]
+		"BOTTOM", -- [3]
+		510.6668395996094, -- [4]
+		18.57231712341309, -- [5]
+	},
+	["autotaxi"] = true,
+	["scale"] = 1,
+	["JoanasGuides-MinimapButton"] = {
+		["position"] = -2.888,
+	},
+	["objectiveCompletionSound"] = true,
+	["enableStepID"] = true,
+}

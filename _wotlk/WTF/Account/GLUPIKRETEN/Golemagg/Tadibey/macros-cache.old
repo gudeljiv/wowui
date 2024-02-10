@@ -1,0 +1,27 @@
+VER 3 0000000001000004 " " "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Cure Toxins
+END
+VER 3 0000000001000005 " " "134400"
+#showtooltip
+/startattack
+/cast Flame Shock
+END
+VER 3 0000000001000006 " " "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Lesser Healing Wave
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [@focus,exists,harm][] Wind Shear
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,help,exists][]Healing Wave
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Lightning Bolt
+END

@@ -1,0 +1,38 @@
+
+nPlatesDB = {
+	["AbrrevLongNames"] = true,
+	["CombatPlates"] = true,
+	["FelExplosives"] = true,
+	["ShowLevel"] = true,
+	["ShowEnemyClassColors"] = true,
+	["WhiteSelectionColor"] = false,
+	["ExecuteColor"] = {
+		["b"] = 0.494117647058824,
+		["g"] = 0.27843137254902,
+		["r"] = 0,
+	},
+	["RaidMarkerColoring"] = false,
+	["NameSize"] = 10,
+	["ShowPvP"] = false,
+	["TankMode"] = true,
+	["ColorNameByThreat"] = true,
+	["ShowExecuteRange"] = false,
+	["ShowServerName"] = false,
+	["CurrentHealthOption"] = "HealthBoth",
+	["ExecuteValue"] = 35,
+	["SmallStacking"] = false,
+	["HideFriendly"] = false,
+	["DontClamp"] = false,
+	["UseOffTankColor"] = false,
+	["OffTankColor"] = {
+		["b"] = 1,
+		["g"] = 0.2,
+		["r"] = 0.6,
+	},
+	["FelExplosivesColor"] = {
+		["b"] = 0,
+		["g"] = 1,
+		["r"] = 0.772549019607843,
+	},
+	["ShowFriendlyClassColors"] = true,
+}

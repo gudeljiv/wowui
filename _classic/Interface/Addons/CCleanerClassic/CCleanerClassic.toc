@@ -1,0 +1,29 @@
+## Interface: 20501
+## Version: 1.7.0
+## Title: ChatCleanerClassic
+## Notes: Chat filter addon.  curseforge.com/wow/addons/chatcleanerclassic  &  github.com/CBecker2K/ChatCleanerClassic
+## Author: Rytz2k
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_CHANNELS
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_REQUIRED
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_CLEAN
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_FILTER_FRIENDLY
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_FILTER_SAY
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_FILTER_YELL
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_WHOLE_WORDS
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_ENABLED
+## SavedVariables: CCLEANER_CLASSIC_ACCOUNT_HCOLOR
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_CHANNELS
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_REQUIRED
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_CLEAN
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_FILTER_FRIENDLY
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_FILTER_SAY
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_FILTER_YELL
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_WHOLE_WORDS
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_ENABLED
+## SavedVariablesPerCharacter: CCLEANER_CLASSIC_HCOLOR
+## X-Category: Chat/Communication
+## X-License: Public Domain
+## X-Curse-Project-ID: 421262
+
+Events.lua
+GUI.lua

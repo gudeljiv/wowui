@@ -1,0 +1,93 @@
+VER 3 0100000000000034 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Bloodthirst
+/startattack
+/cast Bloodthirst
+END
+VER 3 010000000000003A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mortal Strike
+/startattack
+/cast Mortal Strike
+/use Blood Fury
+/cast Berserker Rage
+END
+VER 3 010000000000003B " " "INV_Misc_QuestionMark"
+#showtooltip Devastate
+/startattack
+/cast Devastate
+/cast Shield Barrier
+/cast Blood Fury
+/cast Berserker Rage
+END
+VER 3 010000000000003C " " "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence reset=25 Spell Reflection, Mass Spell Reflection
+END
+VER 3 010000000000003D " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Victory Rush
+/cast Sweeping Strikes
+END
+VER 3 010000000000003E " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Recklessness
+/cast Avatar
+/cast Skull Banner
+/cast Blood Fury(Racial)
+END
+VER 3 0100000000000040 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast Dragon Roar
+/use Blood Fury
+/cast Berserker Rage
+/cast Bloodbath
+/use Lessons of the Darkmaster
+END
+VER 3 0100000000000041 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wild Strike
+/startattack
+/cast Wild Strike
+END
+VER 3 0100000000000042 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Thunder Clap
+/cast Sweeping Strikes
+END
+VER 3 0100000000000043 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Shockwave
+/use Blood Fury
+/cast Berserker Rage
+/cast Bloodbath
+/use Lessons of the Darkmaster
+END
+VER 3 0100000000000019 "fury aoe" "INV_Misc_QuestionMark"
+#showtooltip Cleave
+/startattack
+/use Blood Fury
+/cast Cleave
+/cast Inner Rage
+END
+VER 3 0100000000000035 "ms aoe" "INV_Misc_QuestionMark"
+#showtooltip Cleave
+/startattack
+/cast [stance:1] Cleave; Battle Stance
+/cast Whirlwind
+/cast Deadly Calm
+/use Blood Fury
+END
+VER 3 0100000000000006 "tank" "INV_Misc_QuestionMark"
+#showtooltip Shield Slam
+/startattack
+/cast Shield Slam
+/cast Blood Fury
+/cast Berserker Rage
+END
+VER 3 010000000000000C "tank" "INV_Misc_QuestionMark"
+#showtooltip Revenge
+/startattack
+/cast Revenge
+/cast Blood Fury
+/cast Berserker Rage
+END
