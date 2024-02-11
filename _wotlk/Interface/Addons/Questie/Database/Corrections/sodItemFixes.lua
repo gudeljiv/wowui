@@ -71,5 +71,17 @@ function SeasonOfDiscovery:LoadItems()
             [itemKeys.relatedQuests] = {79099},
             [itemKeys.startQuest] = nil,
         },
+        [424265] = { -- Swamp Echo
+            [itemKeys.objectDrops] = {423898},
+        },
+        [424266] = { -- Graveyard Echo
+            [itemKeys.objectDrops] = {424266},
+        },
+        [424267] = { -- Arathi Echo
+            [itemKeys.objectDrops] = {424267},
+        },
+        [215817] = { -- Demons and You
+            [itemKeys.objectDrops] = {423898},
+        },
     }
 end
