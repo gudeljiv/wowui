@@ -6889,7 +6889,7 @@ do
     local buildSection = function(sectionFrame)
 
         local sectionOptions = {
-            {type = "label", get = function() return Loc["STRING_OPTIONS_MPLUS_DPS_ANCHOR"] end, text_template = subSectionTitleTextTemplate},
+            {type = "label", get = function() return Loc["STRING_OPTIONS_GENERAL_ANCHOR"] end, text_template = subSectionTitleTextTemplate},
 
             {
                 type = "toggle",
@@ -6898,8 +6898,8 @@ do
                     Details.mythic_plus.mythicrun_time_type = value and 1
                     sectionFrame:GetWidgetById("mythic_time_2"):SetValue(not value)
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_TIME_INCOMBAT"],
-                desc = Loc["STRING_OPTIONS_MPLUS_TIME_INCOMBAT_DESC"],
+                name = "Use Total Combat Time",
+                desc = "The overall segment for the Mythic+ run will use 'totalDamage / totalCombatTime' to calculate DPS.",
                 id = "mythic_time_1",
             },
 
@@ -6910,13 +6910,12 @@ do
                     Details.mythic_plus.mythicrun_time_type = value and 2
                     sectionFrame:GetWidgetById("mythic_time_1"):SetValue(not value)
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_TIME_RUNTIME"],
-                desc = Loc["STRING_OPTIONS_MPLUS_TIME_RUNTIME_DESC"],
+                name = "Use Run Time",
+                desc = "The overall segment for the Mythic+ run will use 'totalDamage / runTime' to calculate DPS.",
                 id = "mythic_time_2",
             },
 
             {type = "blank"},
-            {type = "label", get = function() return Loc["STRING_SEGMENTS"] end, text_template = subSectionTitleTextTemplate},
 
             {--dedicated segment for bosses
                 type = "toggle",
@@ -6924,8 +6923,8 @@ do
                 set = function(self, fixedparam, value)
                     Details.mythic_plus.boss_dedicated_segment = value
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_BOSSNEWCOMBAT"],
-                desc = Loc["STRING_OPTIONS_MPLUS_BOSSNEWCOMBAT_DESC"],
+                name = "New Combat on Boss Pull",
+                desc = "If a boss is pulled while in combat, Details! close the combat and start a new one for the boss.",
             },
 
             {--make overall when done
@@ -6934,8 +6933,8 @@ do
                 set = function(self, fixedparam, value)
                     Details.mythic_plus.make_overall_when_done = value
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_MAKEOVERALL"],
-                desc = Loc["STRING_OPTIONS_MPLUS_MAKEOVERALL_DESC"],
+                name = "Make Overall Segment",
+                desc = "When the run is done, make an overall segment.",
             },
 
             {--merge trash
@@ -6944,12 +6943,11 @@ do
                 set = function(self, fixedparam, value)
                     Details.mythic_plus.merge_boss_trash = value
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_MERGETRASH"],
-                desc = Loc["STRING_OPTIONS_MPLUS_MERGETRASH"],
+                name = "Merge Trash",
+                desc = "Merge Trash",
             },
 
             {type = "blank"},
-            {type = "label", get = function() return Loc["STRING_OPTIONS_MPLUS_PANELS_ANCHOR"] end, text_template = subSectionTitleTextTemplate},
 
             {--show chart popup
                 type = "toggle",
@@ -6957,9 +6955,11 @@ do
                 set = function(self, fixedparam, value)
                     Details.mythic_plus.show_damage_graphic = value
                 end,
-                name = Loc["STRING_OPTIONS_MPLUS_SHOWENDPANEL"],
-                desc = Loc["STRING_OPTIONS_MPLUS_SHOWENDPANEL"],
+                name = "Show Damage Charts",
+                desc = "Show Damage Charts",
             },
+
+
         }
 
         sectionFrame.sectionOptions = sectionOptions

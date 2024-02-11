@@ -2,7 +2,7 @@
 ## Title: ChocolateBar
 ## Notes: A display for LibDataBroker-1.1
 ## Author: Kiatra - github.com/Kiatra/ChocolateBar/
-## Version: v3/13
+## Version: v3.11
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
 ## X-WoWI-ID: 12326
 ## X-Curse-Project-ID: 17424
@@ -33,17 +33,9 @@ Bar.lua
 DropPoints.lua
 modules\Placeholder.lua
 modules\MoreChocolate.lua
-
-
-
-modules\PlayedTime_Loc.lua
-modules\PlayedTime.lua
-modules\PlayedTime_Options.lua
-
-modules\PlayerCoordinates\PlayerCoordinates.lua
-
-modules\MasterVolume\MasterVolume.lua
-modules\MusicVolume\MusicVolume.lua
-modules\SoundVolume\SoundVolume.lua
-
 Options.lua
+
+
+modules\CB_PlayedTime_Loc.lua
+modules\CB_PlayedTime.lua
+modules\CB_PlayedTime_Options.lua

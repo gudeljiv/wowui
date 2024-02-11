@@ -1114,9 +1114,6 @@ do -- Archive stuff
           error(string.format(L["Could not load WeakAuras Archive, the addon is %s"], reason))
         end
       end
-      if type(WeakAurasArchive) ~= "table" then
-        WeakAurasArchive = {}
-      end
       Archivist:Initialize(WeakAurasArchive)
     end
     return Archivist

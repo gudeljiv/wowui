@@ -7,10 +7,7 @@ local L = WeakAuras.L
 --- @field Get fun(systemName: string, id: auraId, cloneId: string?): any
 
 --- @type AuraEnvironmentWrappedSystem
-Private.AuraEnvironmentWrappedSystem = {
-  Get = function(systemName, id, cloneId)
-  end
-}
+Private.AuraEnvironmentWrappedSystem = {}
 
 --- @type table<auraId, table<string, table<string, any>>> Table of id, cloneId, systemName to wrapped system
 local wrappers = {}

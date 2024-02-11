@@ -57,7 +57,7 @@ local options = {
 	 },
 }
 
-module = ChocolateBar:NewModule("Placeholder", nil, options)
+module = ChocolateBar:NewModule("Placeholder", defaults, options)
 
 local function removePlaceholder(info)
 	local cleanName = info[#info-2]

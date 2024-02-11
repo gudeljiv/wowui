@@ -1,8 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 11590,
 	["lastSanitation"] = 3,
-	["session"] = 11591,
+	["session"] = 11607,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -45,7 +44,7 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [5]
 		{
-			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
 			["time"] = "2023/09/07 16:02:44",
 			["locals"] = "",
 			["stack"] = "",
@@ -53,13 +52,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [6]
 		{
-			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
 			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
 		}, -- [7]
 		{
-			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
 			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
 			["counter"] = 1,
@@ -73,7 +72,7 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [9]
 		{
-			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
 			["time"] = "2023/09/07 16:04:15",
 			["locals"] = "",
 			["stack"] = "",
@@ -81,13 +80,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [10]
 		{
-			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
 			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
 		}, -- [11]
 		{
-			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'ï¿½'",
+			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
 			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
 			["counter"] = 1,
@@ -2744,5 +2743,13 @@ BugGrabberDB = {
 			["session"] = 11590,
 			["counter"] = 64,
 		}, -- [354]
+		{
+			["message"] = "[string \"ManaCountFrame;Hide()\"]:1: '=' expected near ';'",
+			["time"] = "2024/02/10 17:04:05",
+			["locals"] = "(*temporary) = \"ManaCountFrame;Hide()\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11598,
+			["counter"] = 2,
+		}, -- [355]
 	},
 }

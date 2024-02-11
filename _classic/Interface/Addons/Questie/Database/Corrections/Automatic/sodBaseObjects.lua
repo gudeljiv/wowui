@@ -334,15 +334,6 @@ function SeasonOfDiscovery:LoadBaseObjects()
             [objectKeys.questStarts] = nil,
             [objectKeys.questEnds] = nil,
         },
-        [406918] = {
-            [objectKeys.name] = "Messenger Bag",
-            [objectKeys.zoneID] = 45,
-            [objectKeys.spawns] = {
-                [45] = {{22.4, 24.2},},
-            },
-            [objectKeys.questStarts] = nil,
-            [objectKeys.questEnds] = nil,
-        },
         [407117] = {
             [objectKeys.name] = "Abandoned Snapjaw Nest",
             [objectKeys.zoneID] = 0,
@@ -952,65 +943,11 @@ function SeasonOfDiscovery:LoadBaseObjects()
             [objectKeys.questStarts] = nil,
             [objectKeys.questEnds] = nil,
         },
-        [415106] = {
-            [objectKeys.name] = "Burned-Out Remains",
-            [objectKeys.zoneID] = 17,
-            [objectKeys.spawns] = {
-                [17] = {{46.4, 73.9},},
-            },
-            [objectKeys.questStarts] = {79192},
-            [objectKeys.questEnds] = {79008},
-        },
-        [415107] = {
-            [objectKeys.name] = "Burned-Out Remains",
-            [objectKeys.zoneID] = 40,
-            [objectKeys.spawns] = {
-                [40] = {{37.4, 50.7},{37.5, 50.7},},
-            },
-            [objectKeys.questStarts] = {79008},
-            [objectKeys.questEnds] = nil,
-        },
         [415614] = {
             [objectKeys.name] = "Mysterious Formulae",
             [objectKeys.zoneID] = 719,
             [objectKeys.spawns] = {
                 [719] = {{-1, -1},},
-            },
-            [objectKeys.questStarts] = nil,
-            [objectKeys.questEnds] = nil,
-        },
-        [424005] = {
-            [objectKeys.name] = "Pocket Litter",
-            [objectKeys.zoneID] = 406,
-            [objectKeys.spawns] = {
-                [406] = {{40.7,52.6},},
-            },
-            [objectKeys.questStarts] = nil,
-            [objectKeys.questEnds] = nil,
-        },
-        [424006] = {
-            [objectKeys.name] = "Hastily Rolled-Up Satchel",
-            [objectKeys.zoneID] = 45,
-            [objectKeys.spawns] = {
-                [45] = {{22.4, 24.2},},
-            },
-            [objectKeys.questStarts] = nil,
-            [objectKeys.questEnds] = nil,
-        },
-        [424007] = {
-            [objectKeys.name] = "Carved Figurine",
-            [objectKeys.zoneID] = 38,
-            [objectKeys.spawns] = {
-                [38] = {{49.3, 12.8},},
-            },
-            [objectKeys.questStarts] = nil,
-            [objectKeys.questEnds] = nil,
-        },
-        [424012] = {
-            [objectKeys.name] = "Mound of Dirt",
-            [objectKeys.zoneID] = 406,
-            [objectKeys.spawns] = {
-                [406] = {{39.6, 49.9},},
             },
             [objectKeys.questStarts] = nil,
             [objectKeys.questEnds] = nil,

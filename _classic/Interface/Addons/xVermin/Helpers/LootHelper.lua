@@ -48,6 +48,14 @@ mcf.text:SetFont(xVermin.Config.font.arial, 12, 'NONE')
 mcf.text:SetShadowOffset(1, -1)
 mcf.text:SetPoint('TOP', mcf, 'TOP', 0, 0)
 mcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+mcf:Hide()
+
+xVermin.CheckIfLoadedWithTimer(
+	'SUFUnitplayer',
+	function()
+		mcf:SetPoint('LEFT', SUFUnitplayer, 'RIGHT', 5, 2)
+	end
+)
 
 local function Set(autointeract)
 	-- SetCVar("AutoInteract", autointeract and "1" or "0")

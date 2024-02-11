@@ -8,31 +8,32 @@ local bar
 local L = LibStub("AceLocale-3.0"):GetLocale("ChocolateBar")
 local wipe, pairs = wipe, pairs
 
-local moreChocolate
+local moreChocolate = LibStub("LibDataBroker-1.1"):NewDataObject("MoreChocolate", {
+	type = "launcher",
+	icon = "Interface\\AddOns\\ChocolateBar\\pics\\ChocolatePiece",
+	label = "MoreChocolate",
+	text  = "MoreChocolate",
 
-local debug = ChocolateBar and ChocolateBar.Debug or function() end
-
-
-local function onEnter()
-	counter = 0
-	debug("onEnter", delay)
-	if delay > 0 then
-		Timer:SetScript("OnUpdate", Timer.OnUpdate)
-	end
-	if bar then
-		bar:Show()
-		--bar:ShowAll()
-	end
-end
-
-local function setBar(self, db)
-	bar = ChocolateBar:GetBar(db.moreBar)
-	if bar and bar:IsShown() then
-		bar:Hide()
-	end
-	delay = db.moreBarDelay
-end
-
+	OnClick = function(self, btn)
+		if btn == "LeftButton" then
+			if bar then
+				if bar:IsShown() then
+					bar:Hide()
+					Timer:SetScript("OnUpdate", nil)
+				else
+					bar:Show()
+					--bar:ShowAll()
+					if delay > 0 then
+						Timer:SetScript("OnUpdate", Timer.OnUpdate)
+					end
+				end
+			end
+		else
+			InterfaceOptionsFrame_OpenToCategory("ChocolateBar");
+		end
+	end,
+})
+moreChocolate.barNames = {none = "none"}
 
 local function GetList()
 	wipe(moreChocolate.barNames)
@@ -52,11 +53,30 @@ function Timer:OnUpdate(elapsed)
 	end
 end
 
-local options = {
+function moreChocolate:OnEnter()
+	counter = 0
+	if delay > 0 then
+		Timer:SetScript("OnUpdate", Timer.OnUpdate)
+	end
+	if bar then
+		bar:Show()
+		--bar:ShowAll()
+	end
+end
+
+function moreChocolate:SetBar(db)
+	bar = ChocolateBar:GetBar(db.moreBar)
+	if bar and bar:IsShown() then
+		bar:Hide()
+	end
+	delay = db.moreBarDelay
+end
+
+local options ={
 		inline = true,
-		name="Module Options",
+		name="MoreChocolate",
 		type="group",
-		order = 1,
+		order = 0,
 		args={
 			label = {
 				order = 2,
@@ -65,7 +85,7 @@ local options = {
 			},
 			selectBar = {
 				type = 'select',
-				values = GetList, 
+				values = GetList,
 				order = 3,
 				name = L["Select Bar"],
 				desc = L["Select Bar"],
@@ -73,7 +93,6 @@ local options = {
 					return ChocolateBar.db.profile.moreBar
 				end,
 				set = function(info, value)
-					debug("selectBar", value)
 					if bar then
 						bar:Show()
 					end
@@ -96,60 +115,12 @@ local options = {
 					delay = value
 					ChocolateBar.db.profile.moreBarDelay = value
 				end,
-			},
+		},
 	},
 }
 
+local module = ChocolateBar:NewModule("MoreChocolate", defaults, options)
 
-local Module = ChocolateBar:NewModule("MoreChocolate", {
-	description = "A broker plugin that can toggle the visibility of a specific chocolate bar.",
-	defaults = {
-		enabled = true,
-	},
-	options = options
-})
-
-function Module:DisableModule()
-	debug("DisableModule")
-	debug("DisableModule")
-	if bar then
-		bar:Show()
-	end
-	ChocolateBar.db.profile.moreBar = "none"
-	setBar(moreChocolate, ChocolateBar.db.profile)
-end
-
-function Module:EnableModule()
-	debug("EnableModule", self.name)
-	if not moreChocolate then 
-		moreChocolate = LibStub("LibDataBroker-1.1"):NewDataObject("MoreChocolate", {
-			type = "launcher",
-			icon = "Interface\\AddOns\\ChocolateBar\\pics\\ChocolatePiece",
-			label = "MoreChocolate",
-			text  = "MoreChocolate",
-		
-			OnClick = function(self, btn)
-				if btn == "LeftButton" then
-					if bar then
-						if bar:IsShown() then
-							bar:Hide()
-							Timer:SetScript("OnUpdate", nil)
-						else
-							bar:Show()
-							--bar:ShowAll()
-							if delay > 0 then
-								Timer:SetScript("OnUpdate", Timer.OnUpdate)
-							end
-						end
-					end
-				else
-					InterfaceOptionsFrame_OpenToCategory("ChocolateBar");
-				end
-			end,
-		})
-
-		moreChocolate.barNames = {none = "none"}
-		moreChocolate.SetBar = setBar
-		moreChocolate.OnEnter = onEnter
-	end
+function moreChocolate:GetOptions()
+	return options
 end

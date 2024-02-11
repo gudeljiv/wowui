@@ -25,13 +25,13 @@ Postal3DB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
-				"Dopebolt|Lone Wolf|Horde|1|MAGE", -- [2]
+				"Dopebolt|Lone Wolf|Horde|2|MAGE", -- [2]
 				"Dopeclaw|Lone Wolf|Horde|25|DRUID", -- [3]
 				"Dopeclaw|Stitches|Horde|1|DRUID", -- [4]
 				"Dopecoil|Lone Wolf|Horde|9|SHAMAN", -- [5]
 				"Dopecure|Stitches|Horde|11|PRIEST", -- [6]
 				"Dopede|Stitches|Horde|5|SHAMAN", -- [7]
-				"Dopedot|Lone Wolf|Horde|17|WARLOCK", -- [8]
+				"Dopedot|Lone Wolf|Horde|19|WARLOCK", -- [8]
 				"Dopemend|Lone Wolf|Horde|12|PRIEST", -- [9]
 				"Doperage|Lone Wolf|Horde|24|WARRIOR", -- [10]
 				"Dopesick|Stitches|Horde|3|WARRIOR", -- [11]

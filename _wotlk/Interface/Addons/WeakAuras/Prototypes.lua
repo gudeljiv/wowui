@@ -10321,13 +10321,13 @@ Private.event_prototypes = {
         name = "currencyId",
         type = "currency",
         itemControl = "Dropdown-Currency",
-        values = Private.GetDiscoveredCurrencies,
-        headers = Private.GetDiscoveredCurrenciesHeaders,
+        values = Private.GetDiscoveredCurencies,
+        headers = Private.GetDiscoveredCurenciesHeaders,
         sorted = true,
         sortOrder = function()
-          local discovered_currencies_sorted = Private.GetDiscoveredCurrenciesSorted()
+          local discovered_currencies_sorted = Private.GetDiscoveredCurenciesSorted()
           local sortOrder = {}
-          for key, value in pairs(Private.GetDiscoveredCurrencies()) do
+          for key, value in pairs(Private.GetDiscoveredCurencies()) do
             tinsert(sortOrder, key)
           end
           table.sort(sortOrder, function(aKey, bKey)

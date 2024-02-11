@@ -691,10 +691,10 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 		return data;
 	end
 	if (type == "ashenvale") then
-		--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-		--	data.ashenvale = NWB.data.ashenvale;
-		--	data.ashenvaleTime = NWB.data.ashenvaleTime;
-		--end
+		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+			data.ashenvale = NWB.data.ashenvale;
+			data.ashenvaleTime = NWB.data.ashenvaleTime;
+		end
 	else
 		if (NWB.data.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
 			data['rendTimer'] = NWB.data.rendTimer;
@@ -779,15 +779,15 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 			end
 		end
 		if (NWB.isSOD) then
-			--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-			--	data.ashenvale = NWB.data.ashenvale;
-			--	data.ashenvaleTime = NWB.data.ashenvaleTime;
-			--end
-			--if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+				data.ashenvale = NWB.data.ashenvale;
+				data.ashenvaleTime = NWB.data.ashenvaleTime;
+			end
+			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
 				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
 				--These variable names are shortened before sendin.
-			--	data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
-			--end
+				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			end
 		end
 		if (distribution == "GUILD") then
 			--Include settings with timer data for guild.
@@ -839,10 +839,10 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	end]]
 	if (type == "ashenvale") then
 		--Only send ashenvale data.
-		--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-		--	data.ashenvale = NWB.data.ashenvale;
-		--	data.ashenvaleTime = NWB.data.ashenvaleTime;
-		--end
+		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+			data.ashenvale = NWB.data.ashenvale;
+			data.ashenvaleTime = NWB.data.ashenvaleTime;
+		end
 	else
 		local sendLayerMapDelay = 1840;
 		local sendLayerMap, foundTimer;
@@ -1099,15 +1099,15 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 			end
 		end
 		if (NWB.isSOD) then
-			--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-			--	data.ashenvale = NWB.data.ashenvale;
-			--	data.ashenvaleTime = NWB.data.ashenvaleTime;
-			--end
-			--if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+				data.ashenvale = NWB.data.ashenvale;
+				data.ashenvaleTime = NWB.data.ashenvaleTime;
+			end
+			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
 				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
 				--These variable names are shortened before sendin.
-			--	data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
-			--end
+				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			end
 		end
 		if (distribution == "GUILD" and not forceLayerMap) then
 			--Include settings with timer data for guild.
@@ -1568,9 +1568,6 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 													if (not NWB.data.layers[layer].terokTowersTime) then
 														NWB.data.layers[layer].terokTowersTime = 0;
 													end
-													if (not NWB.data.layers[layer].terokTowers) then
-														NWB.data.layers[layer].terokTowers = 0;
-													end
 													if (NWB.data.layers[layer][k] and v ~= 0 and vv.terokTowersTime and vv.terokTowersTime ~= 0
 															and vv.terokTowersTime > NWB.data.layers[layer].terokTowersTime
 															and v > GetServerTime() and v < GetServerTime() + 21700
@@ -1749,9 +1746,6 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 							if (not NWB.data.terokTowersTime) then
 								NWB.data.terokTowersTime = 0;
 							end
-							if (not NWB.data.terokTowers) then
-								NWB.data.terokTowers = 0;
-							end
 							if (NWB.data[k] and v ~= 0 and data.terokTowersTime and data.terokTowersTime ~= 0
 									and data.terokTowersTime > NWB.data.terokTowersTime
 									and v > GetServerTime() and v < GetServerTime() + 21700
@@ -1773,9 +1767,6 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						end
 					elseif (k == "ashenvale" or k == "ashenvaleTime") then
 						if (k ~= "ashenvaleTime") then
-							if (not NWB.data.ashenvale) then
-								NWB.data.ashenvale = 0;
-							end
 							if (not NWB.data.ashenvaleTime) then
 								NWB.data.ashenvaleTime = 0;
 							end

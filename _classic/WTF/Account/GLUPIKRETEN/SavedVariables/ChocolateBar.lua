@@ -787,9 +787,9 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Dopedot-LoneWolf"] = {
-		["total"] = 38870,
-		["timeStamp"] = 197134.471,
-		["timeAtThisLevel"] = 1925,
+		["total"] = 43955,
+		["timeAtThisLevel"] = 1501,
+		["timeStamp"] = 228054.014,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 3794,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 128595,
-		["timeAtThisLevel"] = 40693,
-		["timeStamp"] = 396583.971,
+		["total"] = 128567,
+		["timeAtThisLevel"] = 40665,
+		["timeStamp"] = 103806.212,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -840,9 +840,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 128069,
-		["timeStamp"] = 397115.058,
-		["timeAtThisLevel"] = 20251,
+		["total"] = 127690,
+		["timeStamp"] = 103307.284,
+		["timeAtThisLevel"] = 19872,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -862,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 26380,
-		["timeStamp"] = 247498.943,
-		["timeAtThisLevel"] = 584,
+		["total"] = 26576,
+		["timeStamp"] = 228165.731,
+		["timeAtThisLevel"] = 780,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -907,15 +907,20 @@ CB_PlayedTime = {
 		["timeStamp"] = 60973.364,
 		["timeAtThisLevel"] = 1,
 	},
+	["Dopebolt-LoneWolf"] = {
+		["total"] = 1080,
+		["timeAtThisLevel"] = 688,
+		["timeStamp"] = 229021.092,
+	},
 	["Battledog-Gehennas"] = {
 		["total"] = 332,
 		["timeStamp"] = 214163.326,
 		["timeAtThisLevel"] = 332,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 72588,
-		["timeAtThisLevel"] = 1596,
-		["timeStamp"] = 103998.997,
+		["total"] = 72733,
+		["timeAtThisLevel"] = 1741,
+		["timeStamp"] = 228110.651,
 	},
 	["Greenwise-"] = {
 		["total"] = 79871,
@@ -937,23 +942,23 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 148780,
-		["timeStamp"] = 400338.51,
-		["timeAtThisLevel"] = 15244,
+		["total"] = 148587,
+		["timeStamp"] = 103841.479,
+		["timeAtThisLevel"] = 15051,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
+	},
+	["Dmitar-"] = {
+		["total"] = 1872,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 53083,
 		["timeAtThisLevel"] = 2821,
 		["timeStamp"] = 777447.689,
-	},
-	["Dmitar-"] = {
-		["total"] = 1872,
-	},
-	["Paydo-"] = {
-		["total"] = 18945,
 	},
 	["Pitchwise-Ashbringer"] = {
 		["total"] = 2973,

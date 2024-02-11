@@ -167,9 +167,10 @@ end
 
 -- add some chocolate to a bar
 function Bar:AddChocolatePiece(choco, name, noupdate)
+
 	local chocolist = self.chocolist
 	if chocolist[name] then
-		debug("Bar:AddChocolatePiece: ",name," already in list.")
+		debug("AddChocolatePiece: ",name," already in list.")
 		return
 	end
 
@@ -179,7 +180,9 @@ function Bar:AddChocolatePiece(choco, name, noupdate)
 
 	local settings = choco.settings
 	settings.barName = self:GetName()
-	
+	--if not settings.index then
+	--	settings.index = 1
+	--end
 	if not noupdate then
 		self:UpdateBar()
 	end
@@ -190,13 +193,13 @@ function Bar:AddChocolatePiece(choco, name, noupdate)
 			choco.icon:Hide()
 		end
 	end
-	
 end
 
 -- eat some chocolate from a ChocolateBar
 function Bar:EatChocolatePiece(name)
 	self.chocolist = self.chocolist or {}
 	local choco = self.chocolist[name]
+
 	if choco then
 		choco:Hide()
 		self.chocolist[name] = nil

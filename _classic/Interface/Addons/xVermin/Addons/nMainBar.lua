@@ -28,8 +28,9 @@ xVermin.CheckIfLoadedWithTimer(
 	'MultiBarBottomRight',
 	function()
 		for i = 1,12 do
-			local button = _G["MultiBarBottomRight"..i]
+			local button = _G["MultiBarBottomRightButton"..i]
 			if button then
+				print(button:GetName())
 				button:Show()
 			end
 		end
@@ -40,7 +41,7 @@ xVermin.CheckIfLoadedWithTimer(
 	'MultiBarBottomLeft',
 	function()
 		for i = 1,12 do
-			local button = _G["MultiBarBottomLeft"..i]
+			local button = _G["MultiBarBottomLeftButton"..i]
 			if button then
 				button:Show()
 			end
@@ -71,7 +72,7 @@ xVermin.CheckIfLoadedWithTimer(
 	'MultiBarLeft',
 	function()
 		for i = 1,12 do
-			local button = _G["MultiBarLeft"..i]
+			local button = _G["MultiBarLeftButton"..i]
 			if button then
 				button:Show()
 				button:SetScale(0.8)
