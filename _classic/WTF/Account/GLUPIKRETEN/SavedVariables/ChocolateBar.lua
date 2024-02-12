@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 777611.208,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 128567,
-		["timeStamp"] = 103806.212,
-		["timeAtThisLevel"] = 40665,
+		["total"] = 129862,
+		["timeStamp"] = 592208.153,
+		["timeAtThisLevel"] = 41960,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,

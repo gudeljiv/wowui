@@ -13,24 +13,24 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:1708
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4538
+/use item:3771
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
 /run SortBags()
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:1707
+#showtooltip item:3771
 /cast feed pet
-/use item:1707
+/use item:3771
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:0
 END
 VER 3 0000000000000028 "rune c" "134400"
 #showtooltip Chest Rune Ability

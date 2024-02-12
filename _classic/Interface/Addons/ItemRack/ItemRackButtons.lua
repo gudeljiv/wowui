@@ -150,6 +150,7 @@ function ItemRack.AddButton(id)
 				button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
 				button.ItemLevelText:SetVertexColor(1, 1, 0)
 			end
+
 			if itemLevel then
 				button.ItemLevelText:SetText(itemLevel)
 			else

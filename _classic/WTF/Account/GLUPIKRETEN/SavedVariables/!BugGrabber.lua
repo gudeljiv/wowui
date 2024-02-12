@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11610,
+	["session"] = 11614,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2751,5 +2751,13 @@ BugGrabberDB = {
 			["session"] = 11598,
 			["counter"] = 2,
 		}, -- [355]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:1225: attempt to index field 'ItemLevelText' (a nil value)",
+			["time"] = "2024/02/11 20:55:27",
+			["locals"] = "id = 13\nmenuInclude = 1\nmasqueGroup = nil\nshowButtonMenu = nil\nitemLink = nil\nitemID = \"6948::::::::25:::::::::\"\nitemName = \"Hearthstone\"\nequipSlot = \"\"\nitemTexture = 134414\ncol = 0\nrow = 2\nxpos = 88\nypos = -8\nmax_cols = 1\nbutton = ItemRackMenu2 {\n 0 = <userdata>\n HotKey = ItemRackMenu2HotKey {\n }\n NewActionTexture = Texture {\n }\n Border = ItemRackMenu2Border {\n }\n Flash = ItemRackMenu2Flash {\n }\n __MSQ_oType = \"CheckButton\"\n __Regions = <table> {\n }\n icon = ItemRackMenu2Icon {\n }\n AutoCastable = Texture {\n }\n SpellHighlightAnim = AnimationGroup {\n }\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n __MSQ_bType = \"Action\"\n SpellHighlightTexture = Texture {\n }\n __MSQ_Addon = \"ItemRack\"\n NormalTexture = ItemRackMenu2NormalTexture {\n }\n FlyoutBorderShadow = ItemRackMenu2FlyoutBorderShadow {\n }\n FlyoutBorder = ItemRackMenu2FlyoutBorder {\n }\n Count = ItemRackMenu2Count {\n }\n AutoCastShine = ItemRackMenu2Shine {\n }\n FlyoutArrow = ItemRackMenu2FlyoutArrow {\n }\n cooldown = ItemRackMenu2Cooldown {\n }\n Name = ItemRackMenu2Name {\n }\n}\nicon = ItemRackMenu2Icon {\n 0 = <userdata>\n}\n(for index) = 2\n(for limit) = 3\n(for step) = 1\ni = 2\niid = \"0\"\nitemName = nil\nitemLink = nil\nitemQuality = nil\nitemLevel = nil\nitemMinLevel = nil\nitemType = nil\nitemSubType = nil\nitemStackCount = nil\nitemEquipLoc = nil\nitemTexture = nil\nsellPrice = nil\nclassID = nil\nsubclassID = nil\nbindType = nil\nexpacID = nil\nsetID = nil\nisCraftingReagent = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = ItemRackMenu2 {\n 0 = <userdata>\n HotKey = ItemRackMenu2HotKey {\n }\n NewActionTexture = Texture {\n }\n Border = ItemRackMenu2Border {\n }\n Flash = ItemRackMenu2Flash {\n }\n __MSQ_oType = \"CheckButton\"\n __Regions = <table> {\n }\n icon = ItemRackMenu2Icon {\n }\n AutoCastable = Texture {\n }\n SpellHighlightAnim = AnimationGroup {\n }\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n __MSQ_bType = \"Action\"\n SpellHighlightTexture = Texture {\n }\n __MSQ_Addon = \"ItemRack\"\n NormalTexture = ItemRackMenu2NormalTexture {\n }\n FlyoutBorderShadow = ItemRackMenu2FlyoutBorderShadow {\n }\n FlyoutBorder = ItemRackMenu2FlyoutBorder {\n }\n Count = ItemRackMenu2Count {\n }\n AutoCastShine = ItemRackMenu2Shine {\n }\n FlyoutArrow = ItemRackMenu2FlyoutArrow {\n }\n cooldown = ItemRackMenu2Cooldown {\n }\n Name = ItemRackMenu2Name {\n }\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to index field 'ItemLevelText' (a nil value)\"\nGetContainerNumSlots = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:1225: in function `BuildMenu'\n[string \"@Interface/AddOns/ItemRackOptions/ItemRackOptions.lua\"]:50: in function `InvOnEnter'\n[string \"*ItemRackOptions.xml:770_OnEnter\"]:1: in function <[string \"*ItemRackOptions.xml:770_OnEnter\"]:1>",
+			["session"] = 11611,
+			["counter"] = 1,
+		}, -- [356]
 	},
 }

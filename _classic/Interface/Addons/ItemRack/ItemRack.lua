@@ -1212,14 +1212,15 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 					button:SetBeautyBorderColor(1, 1, 1)
 				end
 
+				if not button.ItemLevelText then
+					button.ItemLevelText = button:CreateFontString(nil, 'ARTWORK')
+					button.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
+					button.ItemLevelText:SetShadowOffset(0, 0)
+					button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
+					button.ItemLevelText:SetVertexColor(1, 1, 0)
+				end
+
 				if itemLevel then
-					if not button.ItemLevelText then
-						button.ItemLevelText = button:CreateFontString(nil, 'ARTWORK')
-						button.ItemLevelText:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
-						button.ItemLevelText:SetShadowOffset(0, 0)
-						button.ItemLevelText:SetPoint('BOTTOMRIGHT', button, 'BOTTOMRIGHT', -2, 2)
-						button.ItemLevelText:SetVertexColor(1, 1, 0)
-					end
 					button.ItemLevelText:SetText(itemLevel)
 				else
 					button.ItemLevelText:SetText('')
