@@ -17,16 +17,16 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:1707
+/use item:3771
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
 /run SortBags()
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3771
 /cast feed pet
-/use item:0
+/use item:3771
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
