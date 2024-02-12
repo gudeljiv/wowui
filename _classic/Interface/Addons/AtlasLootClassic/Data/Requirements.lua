@@ -2991,10 +2991,6 @@ ReqData_RAW.CLASSIC = {
 	[23690] = {32767},
 	[24101] = {32256},
 	[24102] = {31240},
-	[209823] = {4},
-	[209816] = {256},
-	[213087] = {[2] = 3},
-	[213088] = {[2] = 3},
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

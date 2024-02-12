@@ -53,11 +53,13 @@ local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
+local SOD_CONTENT = data:AddContentType(AL["SoD Exclusives"], ATLASLOOT_RAID20_COLOR)
 local VENDOR_CONTENT = data:AddContentType(AL["Vendor"], ATLASLOOT_DUNGEON_COLOR)
 local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
 --local WORLD_BOSS_CONTENT = data:AddContentType(AL["World Bosses"], ATLASLOOT_WORLD_BOSS_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
+
 
 -- colors
 local BLUE = "|cff6666ff%s|r"
@@ -499,23 +501,6 @@ data["TierSets"] = {
 	},
 }
 
-data["SeasonOfDiscoverySets"] = {
-	name = AL["Season of Discovery Sets"],
-	ContentType = SET_CONTENT,
-	TableType = SET_ITTYPE,
-	items = {
-		{ -- BFD Tier sets
-			name = format(AL["BFD Sets"]),
-			[NORMAL_DIFF] = {
-				{ 1, 1570 }, -- Twilight Invoker's Vestments
-                { 5, 1578 }, -- Blackfathom Slayer's Leather
-                { 20, 1579 }, -- Blackfathom Elementalist's Hide
-                { 7, 1577 }, -- Blackfathom Avenger's Mail
-			},
-		},
-	}
-}
-
 data["DungeonSets"] = {
 	name = AL["Dungeon Sets"],
 	ContentType = SET_CONTENT,
@@ -930,13 +915,7 @@ data["Mounts"] = {
 		{ -- Reputation
 			name = AL["Reputation"],
 			[ALLIANCE_DIFF] = {
-				{ 1, "f890rep5" },
-				{ 2, 211498 }, --Trainee's Sentinel Nightsaber
-				{ 16, 13086 }, -- Reins of the Winterspring Frostsaber
-			},
-			[HORDE_DIFF] = {
-				{ 1, "f889rep5" },
-				{ 2, 211499 }, --Trainee's Outrider Wolf
+				{ 1, 13086 }, -- Reins of the Winterspring Frostsaber
 			}
 		},
 		{
@@ -1837,5 +1816,106 @@ data["ScourgeInvasion"] = {
 				{ 2, 23177 }, -- Lady Falther'ess' Finger
 			}
 		},
+	},
+}
+data["Sod Exclusives"] = {
+	name = AL["Waylaid Supplies"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	ContentPhase = 5,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Level 25: Phase 1"],
+			[NORMAL_DIFF] = {
+				{ 1, 211322 }, -- Waylaid Supplies: Minor Wizard Oil
+				{ 2, 211321 }, -- Waylaid Supplies: Lesser Magic Wands
+				{ 3, 211318 }, -- Waylaid Supplies: Minor Healing Potions
+				{ 4, 211320 }, -- Waylaid Supplies: Runed Copper Pants
+				{ 5, 211323 }, -- Waylaid Supplies: Rough Copper Bombs
+				{ 6, 211329 }, -- Waylaid Supplies: Herb Baked Eggs
+				{ 7, 211326 }, -- Waylaid Supplies: Embossed Leather Vests
+				{ 8, 211332 }, -- Waylaid Supplies: Heavy Linen Bandages
+				{ 9, 211319 }, -- Waylaid Supplies: Copper Shortswords
+				{ 10, 211330 }, -- Waylaid Supplies: Spiced Wolf Meat
+				{ 11, 211324 }, -- Waylaid Supplies: Rough Boomsticks
+				{ 12, 211327 }, -- Waylaid Supplies: Brown Linen Pants
+				{ 13, 211317 }, -- Waylaid Supplies: Silverleaf
+				{ 14, 211325 }, -- Waylaid Supplies: Handstitched Leather Belts
+				{ 15, 211328 }, -- Waylaid Supplies: Brown Linen Robes
+				{ 16, 211934 }, -- Waylaid Supplies: Healing Potions
+				{ 17, 211315 }, -- Waylaid Supplies: Light Leather
+				{ 18, 211331 }, -- Waylaid Supplies: Brilliant Smallfish
+				{ 19, 210771 }, -- Waylaid Supplies: Copper Bars
+				{ 20, 211933 }, -- Waylaid Supplies: Rough Stone
+				{ 21, 211316 }, -- Waylaid Supplies: Peacebloom
+				{ 22, 211828 }, -- Waylaid Supplies: Minor Mana Oil
+				{ 23, 211824 }, -- Waylaid Supplies: Lesser Mana Potions
+				{ 24, 211835 }, -- Waylaid Supplies: Smoked Sagefish
+				{ 25, 211829 }, -- Waylaid Supplies: Small Bronze Bombs
+				{ 26, 211822 }, -- Waylaid Supplies: Bruiseweed
+				{ 27, 211838 }, -- Waylaid Supplies: Heavy Wool Bandages
+				{ 28, 211825 }, -- Waylaid Supplies: Rough Bronze Boots
+				{ 29, 211836 }, -- Waylaid Supplies: Smoked Bear Meat
+				{ 30, "INV_Box_01", nil, AL["Continued on next page ->"], nil },
+				{ 101, 211831 }, -- Waylaid Supplies: Dark Leather Cloaks
+				{ 102, 211837 }, -- Waylaid Supplies: Goblin Deviled Clams
+				{ 103, 211820 }, -- Waylaid Supplies: Silver Bars
+				{ 104, 211821 }, -- Waylaid Supplies: Medium Leather
+				{ 105, 211833 }, -- Waylaid Supplies: Gray Woolen Shirts
+				{ 106, 211827 }, -- Waylaid Supplies: Runed Silver Rods
+				{ 107, 211819 }, -- Waylaid Supplies: Bronze Bars
+				{ 108, 211830 }, -- Waylaid Supplies: Ornate Spyglasses
+				{ 109, 211826 }, -- Waylaid Supplies: Silver Skeleton Keys
+				{ 110, 211935 }, -- Waylaid Supplies: Elixir of Firepower
+				{ 111, 211834 }, -- Waylaid Supplies: Pearl-clasped Cloaks
+				{ 112, 211823 }, -- Waylaid Supplies: Swiftthistle
+				{ 113, 211832 }, -- Waylaid Supplies: Hillman's Shoulders
+			},
+		},
+		{
+			name = AL["Level 40: Phase 2"],
+			[NORMAL_DIFF] = {
+				{ 1, 215403 }, -- Waylaid Supplies: Deadly Scopes
+				{ 2, 215400 },
+				{ 3, 215402 },
+				{ 4, 215389 },
+				{ 5, 215391 },
+				{ 6, 215411 }, -- Waylaid Supplies: Frost Leather Cloaks
+				{ 7, 215398 },
+				{ 8, 215387 },
+				{ 9, 215420 },
+				{ 10, 215421 },
+				{ 11, 215413 },
+				{ 12, 215408 }, -- Waylaid Supplies: Frost Leather Cloaks
+				{ 13, 215392 },
+				{ 14, 215386 },
+				{ 15, 215390 },
+				{ 16, 215399 },
+				{ 17, 215395 }, -- Waylaid Supplies: Elixirs of Agility
+				{ 18, 215388 },
+				{ 19, 215393 },
+				{ 20, 215401 }, -- Waylaid Supplies: Compact Harvest Reaper Kits
+				{ 21, 215419 },
+				{ 22, 215414 },
+				{ 23, 215385 },
+				{ 24, 215417 },
+				{ 25, 215412 }, -- Waylaid Supplies: Shadowskin Gloves
+				{ 26, 215415 },
+				{ 27, 215410 },
+				{ 28, 215407 },
+				{ 29, 215418 }, -- Waylaid Supplies: Spider Sausages
+				{ 30, "INV_Box_01", nil, AL["Continued on next page ->"], nil },
+				{ 101, 215404 },
+				{ 102, 215406 }, -- Waylaid Supplies: Goblin Mortars
+				{ 103, 215396 },
+				{ 104, 215405 },
+				{ 105, 215397 },
+				{ 106, 215409 },
+				{ 107, 215394 },
+				{ 108, 215416 }, -- Waylaid Supplies: White Bandit Masks
+			},
+		}
 	},
 }

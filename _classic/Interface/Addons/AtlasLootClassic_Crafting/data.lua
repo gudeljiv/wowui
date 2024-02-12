@@ -47,6 +47,14 @@ data["Alchemy"] = {
 	CorrespondingFields = private.ALCHEMY_LINK,
 	items = {
 		{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+				{ 1, 426607 }, --Elixir of Coalesced Regret
+				{ 3, 435969 }, --Insulating Gniodine
+				{ 4, 435971 }, --Mildly Irradiated Rejuvenation Potion
+			},
+		},
+		{
 			name = AL["Flasks"],
 			[NORMAL_DIFF] = {
 				{ 1, 17635 }, --Flask of the Titans
@@ -185,7 +193,6 @@ data["Alchemy"] = {
 				{ 16, 11460 }, --Elixir of Detect Undead
 				{ 17, 3453 }, --Elixir of Detect Lesser Invisibility
 				{ 19, 7179 }, --Elixir of Water Breathing
-				{ 21, 426607}, --Elixir of Coalesced Regret (Season of Discovery)
 			},
 		},
 		{
@@ -215,6 +222,26 @@ data["Blacksmithing"] = {
 	TableType = PROF_ITTYPE,
 	CorrespondingFields = private.BLACKSMITHING_LINK,
 	items = {
+			{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+				{ 1, 429348 }, --Shifting Silver Breastplate
+				{ 2, 430397 }, --Blackfathom Sharpening Stone
+				{ 3, 427063 }, --Mantle of the Second War
+				{ 5, 435910 }, --Low-Background Truesilver Plates
+				{ 6, 435906 }, --Reflective Truesilver Braincage
+				{ 7, 435908 }, --Tempered Interference-Negating Helmet
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 439122 }, --Golden Scale Boots
+				{ 18, 439126 }, --Golden Scale Coif
+				{ 19, 439124 }, --Golden Scale Cuirass
+				{ 20, 439120 }, --Golden Scale Gauntlets
+				{ 21, 439132 }, --Golden Scale Leggings
+				{ 22, 439130 }, --Golden Scale Shoulders
+				{ 23, 439128 }, --Moonsteel Broadsword
+
+			},
+		},
 		{
 			name = AL["Weapons"].." - "..ALIL["Daggers"],
 			[NORMAL_DIFF] = {
@@ -351,7 +378,6 @@ data["Blacksmithing"] = {
 				{ 6, 3504 }, --Green Iron Shoulders / 32
 				{ 7, 3330 }, --Silvered Bronze Shoulders / 25
 				{ 8, 3328 }, --Rough Bronze Shoulders / 22
-				{ 10, 427063}, --Mantle of the Second War / 30
 			},
 			[PLATE_DIFF] = {
 				{ 1, 24141 }, --Darksoul Shoulders / 65
@@ -375,15 +401,14 @@ data["Blacksmithing"] = {
 				{ 7, 3511 }, --Golden Scale Cuirass / 40
 				{ 8, 9916 }, --Steel Breastplate / 40
 				{ 9, 3508 }, --Green Iron Hauberk / 36
-				{ 10, 429348 }, --Shifting Silver Breastplate / 30
-				{ 11, 9813 }, --Barbaric Iron Breastplate / 32
-				{ 12, 2675 }, --Shining Silver Breastplate / 29
-				{ 13, 2673 }, --Silvered Bronze Breastplate / 26
-				{ 14, 2670 }, --Rough Bronze Cuirass / 23
-				{ 15, 8367 }, --Ironforge Breastplate / 20
-				{ 16, 2667 }, --Runed Copper Breastplate / 18
-				{ 17, 3321 }, --Copper Chain Vest / 10
-				{ 18, 12260 }, --Rough Copper Vest / 7
+				{ 10, 9813 }, --Barbaric Iron Breastplate / 32
+				{ 11, 2675 }, --Shining Silver Breastplate / 29
+				{ 12, 2673 }, --Silvered Bronze Breastplate / 26
+				{ 13, 2670 }, --Rough Bronze Cuirass / 23
+				{ 14, 8367 }, --Ironforge Breastplate / 20
+				{ 15, 2667 }, --Runed Copper Breastplate / 18
+				{ 16, 3321 }, --Copper Chain Vest / 10
+				{ 17, 12260 }, --Rough Copper Vest / 7
 			},
 			[PLATE_DIFF] = {
 				{ 1, 28242 }, --Icebane Breastplate / 80
@@ -533,9 +558,8 @@ data["Blacksmithing"] = {
 				{ 9, 16641 }, --Dense Sharpening Stone / 45
 				{ 10, 9918 }, --Solid Sharpening Stone / 35
 				{ 11, 2674 }, --Heavy Sharpening Stone / 25
-				{ 12, 430397}, --Blackfathom Sharpening Stone / 25
-				{ 13, 2665 }, --Coarse Sharpening Stone / 15
-				{ 14, 2660 }, --Rough Sharpening Stone / 5
+				{ 12, 2665 }, --Coarse Sharpening Stone / 15
+				{ 13, 2660 }, --Rough Sharpening Stone / 5
 
 				{ 24, 16640 }, --Dense Weightstone / 45
 				{ 25, 9921 }, --Solid Weightstone / 35
@@ -575,6 +599,16 @@ data["Enchanting"] = {
 	CorrespondingFields = private.ENCHANTING_LINK,
 	items = {
 		{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+				{ 1, 430409 }, --Brilliant Mana Oil / 310
+				{ 3, 435903 }, --Enchant Chest - Retricutioner
+				{ 4, 435481 }, -- Enchant Weapon - Dismantle
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 439134 }, -- Greater Mystic Wand
+			}
+		},
+		{
 			name = AL["Oil"],
 			[NORMAL_DIFF] = {
 				{ 1, 25130 }, --Brilliant Mana Oil / 310
@@ -583,8 +617,7 @@ data["Enchanting"] = {
 				{ 4, 25127 }, --Lesser Mana Oil / 260
 				{ 5, 25126 }, --Lesser Wizard Oil / 210
 				{ 6, 25125 }, --Minor Mana Oil / 160
-				{ 7, 430409 }, --Blackfathom Mana Oil
-				{ 8, 25124 }, --Minor Wizard Oil / 55
+				{ 7, 25124 }, --Minor Wizard Oil / 55
 			}
 		},
 		{
@@ -791,6 +824,18 @@ data["Engineering"] = {
 	TableType = PROF_ITTYPE,
 	CorrespondingFields = private.ENGINEERING_LINK,
 	items = {
+			{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+				{ 1, 424641 }, --Shredder Autosalvage Unit
+				{ 3, 435956 }, --Polished Truesilver Gears
+				{ 4, 431362 }, -- Soul Vessel
+				{ 5, 435966 }, -- Ez-Thro Radiation Bomb 
+				{ 6, 435964 }, -- High-Yield Radiation Bomb
+				{ 7, 435960 }, -- Hyperconductive Goldwrap
+				{ 8, 435958 }, -- Whirling Truesilver Gearwall
+			}
+		},
 		{
 			name = AL["Armor"],
 			[NORMAL_DIFF] = {
@@ -1007,12 +1052,6 @@ data["Engineering"] = {
 				{ 30, 12895 }, --Plans: Inlaid Mithril Cylinder / 40
 			}
 		},
-		{
-			name = AL["Season of Discovery"],
-			[NORMAL_DIFF] = {
-				{1, 424641}, --Shredder Autosalvage Unit / 1
-			}
-		},
 	}
 }
 
@@ -1023,6 +1062,30 @@ data["Tailoring"] = {
 	TableType = PROF_ITTYPE,
 	CorrespondingFields = private.TAILORING_LINK,
 	items = {
+		{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+			{ 1, 429351 }, --Extraplanar Spidersilk Boots
+			{ 2, 428424 }, --Phoenix Bindings
+			{ 3, 435841 }, --Invoker's Cord
+			{ 4, 435848 }, --Invoker's Mantle
+			{ 6, 435827 }, -- Hyperconductive Arcano-Filament
+			{ 7, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
+			{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+			{ 17, 439105 }, -- Big Voodoo Mask
+			{ 18, 439108 }, -- Big Voodoo Robe
+			{ 19, 439088 }, -- Black Mageweave Leggings
+			{ 20, 439086 }, -- Black Mageweave Vest
+			{ 21, 439097 }, -- Boots of the Enchanter
+			{ 22, 439098 }, -- Crimson Silk Belt
+			{ 23, 439085 }, -- Crimson Silk Robe
+			{ 24, 439093 }, -- Crimson Silk Shoulders
+			{ 25, 439091 }, -- Earthen Silk Belt
+			{ 26, 439100 }, -- Earthen Vest
+			{ 27, 439102 }, -- Enchanter's Cowl
+			{ 28, 439094 }, -- Long Silken Cloak
+			}
+		},
 		{
 			name = AL["Armor"].." - "..ALIL["Cloak"],
 			[NORMAL_DIFF] = {
@@ -1154,14 +1217,13 @@ data["Tailoring"] = {
 				{ 8, 12082 }, --Shadoweave Boots / 48
 				{ 9, 12073 }, --Black Mageweave Boots / 46
 				{ 10, 3860 }, --Boots of the Enchanter / 35
-				{ 11, 429351 }, --Extraplanar Spidersilk Boots / 30
-				{ 12, 3856 }, --Spider Silk Slippers / 28
-				{ 13, 3855 }, --Spidersilk Boots / 25
-				{ 14, 3847 }, --Red Woolen Boots / 20
-				{ 15, 2401 }, --Woolen Boots / 19
-				{ 16, 3845 }, --Soft-soled Linen Boots / 16
-				{ 17, 2386 }, --Linen Boots / 13
-				{ 18, 12045 }, --Simple Linen Boots / 9
+				{ 11, 3856 }, --Spider Silk Slippers / 28
+				{ 12, 3855 }, --Spidersilk Boots / 25
+				{ 13, 3847 }, --Red Woolen Boots / 20
+				{ 14, 2401 }, --Woolen Boots / 19
+				{ 15, 3845 }, --Soft-soled Linen Boots / 16
+				{ 16, 2386 }, --Linen Boots / 13
+				{ 17, 12045 }, --Simple Linen Boots / 9
 			}
 		},
 		{
@@ -1261,8 +1323,7 @@ data["Tailoring"] = {
 				{ 8, 3863 }, --Spider Belt / 36 / 200
 				{ 9, 8772 }, --Crimson Silk Belt / 35 / 195
 				{ 10, 8766 }, --Azure Silk Belt / 35 / 195
-				{ 11, 3866 }, --Stylish Red Shirt / 22 / 135
-				{ 12, 8776 }, --Linen Belt / 9 / 50
+				{ 11, 8776 }, --Linen Belt / 9 / 50
 			}
 		},
 		{
@@ -1270,8 +1331,7 @@ data["Tailoring"] = {
 			[NORMAL_DIFF] = {
 				{ 1, 28209 }, --Glacial Wrists / 80 / 315
 				{ 2, 22759 }, --Flarecore Wraps / 64 / 320
-				{ 3, 428425}, --Phoenix Bindings / 30 / 125
-				{ 4, 3841 }, --Green Linen Bracers / 12 / 85
+				{ 3, 3841 }, --Green Linen Bracers / 12 / 85
 			}
 		},
 		{
@@ -1321,6 +1381,24 @@ data["Leatherworking"] = {
 	TableType = PROF_ITTYPE,
 	CorrespondingFields = private.LEATHERWORKING_LINK,
 	items = {
+			{
+			name = AL["SoD Exclusives"],
+			[NORMAL_DIFF] = {
+			{ 1, 429869 }, --Void-Touched Leather Gauntlets
+			{ 2, 429354 }, --Void-Touched Leather Gloves
+			{ 4, 435819 }, -- Faintly Glowing Leather
+			{ 5, 435904 }, -- Glowing Gneuro-Linked Cowl
+			{ 6, 435949 }, -- Glowing Hyperconductive Scale Coif
+			{ 7, 435951 }, -- Gneuro-Conductive Channeler's Hood
+			{ 8, 435953 }, -- Rad-Resistant Scale Hood
+			{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+			{ 17, 439112 }, -- Guardian Belt
+			{ 18, 439110 }, -- Guardian Leather Bracers
+			{ 19, 439114 }, -- Guardian Pants
+			{ 20, 439116 }, -- Turtle Scale Breastplate
+			{ 21, 439118 }, -- Turtle Scale Gloves
+			}
+		},
 		{
 			name = AL["Armor"].." - "..ALIL["Cloak"],
 			[NORMAL_DIFF] = {
@@ -1432,21 +1510,19 @@ data["Leatherworking"] = {
 				{ 11, 22711 }, --Shadowskin Gloves / 40 / 210
 				{ 12, 7156 }, --Guardian Gloves / 38 / 210
 				{ 13, 21943 }, --Gloves of the Greatfather / 38 / 210
-				{ 14, 429869 }, --Void-Touched Leather Gauntlets / 30 / 160
-				{ 15, 429354 }, --Void-Touched Leather Gloves / 30 / 160
-				{ 16, 3771 }, --Barbaric Gloves / 30 / 170
-				{ 17, 9149 }, --Heavy Earthen Gloves / 29 / 170
-				{ 18, 3764 }, --Hillman's Leather Gloves / 29 / 170
-				{ 19, 9148 }, --Pilferer's Gloves / 28 / 165
-				{ 20, 3770 }, --Toughened Leather Gloves / 27 / 160
-				{ 21, 9146 }, --Herbalist's Gloves / 27 / 160
-				{ 22, 3765 }, --Dark Leather Gloves / 26 / 155
-				{ 23, 9145 }, --Fletcher's Gloves / 25 / 150
-				{ 24, 9074 }, --Nimble Leather Gloves / 24 / 145
-				{ 25, 9072 }, --Red Whelp Gloves / 24 / 145
-				{ 26, 7954 }, --Deviate Scale Gloves / 21 / 130
-				{ 27, 2164 }, --Fine Leather Gloves / 15 / 105
-				{ 28, 3756 }, --Embossed Leather Gloves / 13 / 85
+				{ 14, 3771 }, --Barbaric Gloves / 30 / 170
+				{ 15, 9149 }, --Heavy Earthen Gloves / 29 / 170
+				{ 16, 3764 }, --Hillman's Leather Gloves / 29 / 170
+				{ 17, 9148 }, --Pilferer's Gloves / 28 / 165
+				{ 18, 3770 }, --Toughened Leather Gloves / 27 / 160
+				{ 19, 9146 }, --Herbalist's Gloves / 27 / 160
+				{ 20, 3765 }, --Dark Leather Gloves / 26 / 155
+				{ 21, 9145 }, --Fletcher's Gloves / 25 / 150
+				{ 22, 9074 }, --Nimble Leather Gloves / 24 / 145
+				{ 23, 9072 }, --Red Whelp Gloves / 24 / 145
+				{ 24, 7954 }, --Deviate Scale Gloves / 21 / 130
+				{ 25, 2164 }, --Fine Leather Gloves / 15 / 105
+				{ 26, 3756 }, --Embossed Leather Gloves / 13 / 85
 			},
 			[MAIL_DIFF] = {
 				{ 1, 28223 }, --Icy Scale Gauntlets / 80 / 320
@@ -1458,7 +1534,6 @@ data["Leatherworking"] = {
 				{ 7, 10542 }, --Tough Scorpid Gloves / 45 / 245
 				{ 8, 10619 }, --Dragonscale Gauntlets / 45 / 245
 				{ 9, 10509 }, --Turtle Scale Gloves / 41 / 225
-				
 			},
 		},
 		{
