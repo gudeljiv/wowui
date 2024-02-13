@@ -36,8 +36,8 @@ Details_StreamerDB = {
 		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Tudum - Jin'do"] = "Mxyz - Golemagg",
 		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
-		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
+		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
 		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
 		["Miqa - Golemagg"] = "Mxyz - Golemagg",
@@ -66,7 +66,7 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["scale"] = 1,
+			["use_square_mode"] = false,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -112,12 +112,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_spark"] = false,
-			["use_square_mode"] = false,
+			["y"] = -183.107162475586,
+			["scale"] = 1,
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},
