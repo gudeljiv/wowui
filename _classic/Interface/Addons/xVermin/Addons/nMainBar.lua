@@ -30,7 +30,6 @@ xVermin.CheckIfLoadedWithTimer(
 		for i = 1,12 do
 			local button = _G["MultiBarBottomRightButton"..i]
 			if button then
-				print(button:GetName())
 				button:Show()
 			end
 		end
