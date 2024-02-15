@@ -127,3 +127,4 @@ BootyBayGazette: enabled
 AuctionDB: enabled
 FloTotemBar: disabled
 SkillInfoPlus: enabled
+RXPGuides: enabled

@@ -1,0 +1,59 @@
+# RestedXP Guides
+
+## [v4.5.46-54-g26c6646](https://github.com/RestedXP/RXPGuides/tree/26c6646b4a33e46200f3ebe6d8777134b6d05fda) (2024-02-13)
+[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.5.46...26c6646b4a33e46200f3ebe6d8777134b6d05fda) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
+
+- Added missing nil checks  
+- Fix Pain Suppression rune location  
+- SoD Rune bug fixes  
+- Fix warrior guides not loading  
+- Zone name typo fix  
+- Fix Gnome/Dwarf Devastate rune  
+- Fix Nourish rune guide coordinates  
+- Hunter EW rune improvement  
+- Expose Weakness Rune small improvements  
+- Adjust recommended Nourish rune level  
+- Minor questlog space fixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Add the Enlightened Judgements rune  
+- Added Rune of Bloodsurge Warrior  
+- Add the Nourish Druid rune  
+- Added Rune of Shadowflame Warlock  
+- Illari rune updates/fixes  
+- Minor bugfixes  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Added Fire Nova & Maelstrom Weapon Rune  
+- Typo Fix for a Priest Rune  
+- Added a .gossip command  
+- Fixed an issue with .fp steps not completing properly  
+- Minor Darkshore adjustments  
+- Adjusted Darkshore grind to level 18 step  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Small improvements speedrun/survival guide  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Added Dispersion Rune for Priest  
+- Power Surge Rune Fix  
+- Fixed an issue with flight paths not registering properly  
+- Miscellaenous Improvements  
+- Added Hunter Rune of Invigoration / Merged Survival Instincts & Rune of Invigoration  
+- Added Empowered Renew (Alterac Mountains)  
+- Added Placeholder Text for Phase 3 / miscellaneous changes  
+- Removed unnecessary Text #2  
+- Removed unnecessary Text  
+- Minor Improvements to Rallying Cry Rune  
+- Added Dance of the Wicked Rune for Warlock  
+- Added Invocation/Dance of the Wicked Rune for Warlock and Power Surge for Shaman  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- The skill books from Scarlet Monastery have been consolidated into the Neutral Guide, with the addition of the shaman book.  
+- SoD 50% updates  
+- Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
+- Added Intervene and Rallying Cry Rune for Warrior  
+- Barrens SoD route improvements/small fixes  
+- Update the Steady Shot Hunter rune  
+- Add the Dual-Wield Specialization Hunter rune  
+- Add the Shadowstep Rogue rune  
+- Update the Rolling with the Punches Rogue rune  
+- Add the Master of Sublety Rogue rune  
+- Update the Shuriken Toss rune guide  
+- Add the Sacred Shield, Guarded by the Light, and Sheath of Light Paladin runes  

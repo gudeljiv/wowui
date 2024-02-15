@@ -12,7 +12,7 @@ Grid2RaidDebuffsOptions: disabled
 nTooltip: disabled
 WeakAuras: enabled
 xVermin: enabled
-RXPGuides: disabled
+RXPGuides: enabled
 ItemRackOptions: enabled
 AdiBags: enabled
 AdiBags_Config: enabled
@@ -128,3 +128,12 @@ TomPoints: enabled
 TomTom: enabled
 TotemCaddy: disabled
 SkillInfoPlus: enabled
+LibStub: enabled
+CallbackHandler-1.0: enabled
+Ace3: enabled
+LibSharedMedia-3.0: enabled
+Scrap: enabled
+BrainDead: enabled
+SyLevel: enabled
+Baganator: disabled
+RXPGuides_Themes: enabled

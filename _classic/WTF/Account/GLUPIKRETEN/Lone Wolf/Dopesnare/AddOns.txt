@@ -1,5 +1,5 @@
 nPower: disabled
-RXPGuides: disabled
+RXPGuides: enabled
 Blizzard_CompactRaidFrames: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled

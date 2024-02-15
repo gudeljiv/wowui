@@ -120,3 +120,4 @@ WeakAurasTemplates: enabled
 WhatsTraining: enabled
 xVermin: enabled
 SkillInfoPlus: enabled
+RXPGuides: enabled

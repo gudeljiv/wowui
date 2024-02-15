@@ -1,0 +1,1231 @@
+
+BAGANATOR_CONFIG = {
+	["icon_bottom_right_corner_array"] = {
+		"quantity", -- [1]
+	},
+	["empty_slot_background"] = false,
+	["junk_plugin"] = "poor_quality",
+	["reduce_spacing"] = false,
+	["enable_equipment_set_info_3"] = true,
+	["debug_timers"] = false,
+	["hide_special_container"] = {
+	},
+	["enable_equipment_set_info_2"] = true,
+	["sort_method"] = "type",
+	["reverse_groups_sort_order"] = false,
+	["debug"] = false,
+	["icon_corners_auto_insert_applied"] = {
+	},
+	["show_recents_tabs_main_view"] = true,
+	["show_transfer_button"] = true,
+	["show_buttons_on_alt"] = false,
+	["show_guild_banks_in_tooltips"] = true,
+	["bag_icon_size"] = 40,
+	["enable_unified_bags"] = true,
+	["icon_flash_similar_alt"] = false,
+	["sort_ignore_slots_at_end"] = false,
+	["sort_start_at_bottom"] = true,
+	["tooltips_faction_only"] = false,
+	["auto_open"] = {
+		["auction_house"] = false,
+		["void_storage"] = false,
+		["guild_bank"] = false,
+		["merchant"] = true,
+		["scrapping_machine"] = true,
+		["tradeskill"] = false,
+		["mail"] = false,
+		["sockets"] = false,
+		["trade_partner"] = false,
+		["bank"] = true,
+	},
+	["show_inventory_tooltips"] = true,
+	["show_reagents"] = true,
+	["icon_text_font_size"] = 10,
+	["icon_grey_junk"] = true,
+	["bag_empty_space_at_top"] = true,
+	["view_alpha"] = 1,
+	["bag_view_width"] = 8,
+	["tooltips_sort_by_name"] = false,
+	["bank_view_width"] = 18,
+	["sort_ignore_slots_count_2"] = {
+		["Dopestab-LoneWolf"] = 0,
+	},
+	["no_frame_borders"] = false,
+	["icon_equipment_set_border"] = true,
+	["auto_sort_on_open"] = false,
+	["bank_only_view_position"] = {
+		"LEFT", -- [1]
+		20, -- [2]
+		0, -- [3]
+	},
+	["icon_top_left_corner_array"] = {
+		"junk", -- [1]
+		"item_level", -- [2]
+	},
+	["main_view_show_bag_slots"] = false,
+	["icon_bottom_left_corner_array"] = {
+		"equipment_set", -- [1]
+	},
+	["recent_characters_main_view"] = {
+		"Dopestab-LoneWolf", -- [1]
+	},
+	["tooltips_character_limit"] = 4,
+	["show_currency_tooltips"] = true,
+	["icon_text_quality_colors"] = true,
+	["show_sort_button_2"] = true,
+	["inverted_bag_shortcuts"] = false,
+	["hide_boe_on_common"] = false,
+	["show_tooltips_on_shift"] = false,
+	["lock_frames"] = false,
+	["main_view_position"] = {
+		"CENTER", -- [1]
+		444.0000305175781, -- [2]
+		131.4288482666016, -- [3]
+	},
+	["bank_only_view_show_bag_slots"] = true,
+	["tooltips_connected_realms_only"] = true,
+	["icon_top_right_corner_array"] = {
+		"boa", -- [1]
+		"boe", -- [2]
+	},
+}
+BAGANATOR_DATA = {
+	["Characters"] = {
+		["Doperage-LoneWolf"] = {
+			["containerInfo"] = {
+				["bags"] = {
+					{
+						["itemCount"] = 1,
+						["itemID"] = 4496,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:4496::::::::25:::::::::|h[Small Brown Pouch]|h|r",
+						["iconTexture"] = 133634,
+					}, -- [1]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5572,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:5572::::::::25:::::::::|h[Small Green Pouch]|h|r",
+						["iconTexture"] = 133637,
+					}, -- [2]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 805,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:805::::::::25:::::::::|h[Small Red Pouch]|h|r",
+						["iconTexture"] = 133638,
+					}, -- [3]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 918,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:918::::::::25:::::::::|h[Deviate Hide Pack]|h|r",
+						["iconTexture"] = 133629,
+					}, -- [4]
+				},
+			},
+			["details"] = {
+				["character"] = "Doperage",
+				["faction"] = "Horde",
+				["className"] = "WARRIOR",
+				["realm"] = "Lone Wolf",
+				["class"] = 1,
+				["hidden"] = false,
+				["realmNormalized"] = "LoneWolf",
+			},
+			["bags"] = {
+				{
+					{
+						["itemCount"] = 2,
+						["itemID"] = 3530,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:3530::::::::25:::::::::|h[Wool Bandage]|h|r",
+						["iconTexture"] = 133684,
+					}, -- [1]
+					{
+						["itemCount"] = 4,
+						["itemID"] = 2775,
+						["isBound"] = false,
+						["quality"] = 2,
+						["itemLink"] = "|cff1eff00|Hitem:2775::::::::25:::::::::|h[Silver Ore]|h|r",
+						["iconTexture"] = 135242,
+					}, -- [2]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 929,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:929::::::::25:::::::::|h[Healing Potion]|h|r",
+						["iconTexture"] = 134831,
+					}, -- [3]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 2841,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2841::::::::25:::::::::|h[Bronze Bar]|h|r",
+						["iconTexture"] = 133227,
+					}, -- [4]
+					{
+						["itemCount"] = 10,
+						["itemID"] = 2770,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2770::::::::25:::::::::|h[Copper Ore]|h|r",
+						["iconTexture"] = 134566,
+					}, -- [5]
+					{
+						["itemCount"] = 4,
+						["itemID"] = 4306,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:4306::::::::25:::::::::|h[Silk Cloth]|h|r",
+						["iconTexture"] = 132905,
+					}, -- [6]
+					{
+						["itemCount"] = 10,
+						["itemID"] = 2770,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2770::::::::25:::::::::|h[Copper Ore]|h|r",
+						["iconTexture"] = 134566,
+					}, -- [7]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6574,
+						["isBound"] = true,
+						["quality"] = 2,
+						["itemLink"] = "|cff1eff00|Hitem:6574::::::1183:977539840:25:::::::::|h[Defender Bracers of the Bear]|h|r",
+						["iconTexture"] = 132613,
+					}, -- [8]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6576,
+						["isBound"] = true,
+						["quality"] = 2,
+						["itemLink"] = "|cff1eff00|Hitem:6576::::::848:236720512:25:::::::::|h[Defender Girdle of the Eagle]|h|r",
+						["iconTexture"] = 132511,
+					}, -- [9]
+					{
+						["itemCount"] = 19,
+						["itemID"] = 2862,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2862::::::::25:::::::::|h[Rough Sharpening Stone]|h|r",
+						["iconTexture"] = 135248,
+					}, -- [10]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 3385,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:3385::::::::25:::::::::|h[Lesser Mana Potion]|h|r",
+						["iconTexture"] = 134851,
+					}, -- [11]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6481,
+						["isBound"] = true,
+						["quality"] = 2,
+						["itemLink"] = "|cff1eff00|Hitem:6481::::::::25:::::::::|h[Dagmire Gauntlets]|h|r",
+						["iconTexture"] = 132939,
+					}, -- [12]
+					{
+					}, -- [13]
+					{
+					}, -- [14]
+					{
+					}, -- [15]
+					{
+					}, -- [16]
+					{
+					}, -- [17]
+					{
+					}, -- [18]
+					{
+					}, -- [19]
+					{
+					}, -- [20]
+				}, -- [1]
+				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+				}, -- [2]
+				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+						["itemCount"] = 17,
+						["itemID"] = 2592,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2592::::::::25:::::::::|h[Wool Cloth]|h|r",
+						["iconTexture"] = 132911,
+					}, -- [5]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2592,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2592::::::::25:::::::::|h[Wool Cloth]|h|r",
+						["iconTexture"] = 132911,
+					}, -- [6]
+				}, -- [3]
+				{
+					{
+						["itemCount"] = 1,
+						["itemID"] = 4897,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:4897::::::::25:::::::::|h[Thunderhawk Saliva Gland]|h|r",
+						["iconTexture"] = 134343,
+					}, -- [1]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 4898,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:4898::::::::25:::::::::|h[Lightning Gland]|h|r",
+						["iconTexture"] = 134339,
+					}, -- [2]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5594,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:5594::::::::25:::::::::|h[Letter to Jin'Zil]|h|r",
+						["iconTexture"] = 133469,
+					}, -- [3]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 4896,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:4896::::::::25:::::::::|h[Kodo Liver]|h|r",
+						["iconTexture"] = 134341,
+					}, -- [4]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 3530,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:3530::::::::25:::::::::|h[Wool Bandage]|h|r",
+						["iconTexture"] = 133684,
+					}, -- [5]
+					{
+						["itemCount"] = 11,
+						["itemID"] = 3770,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:3770::::::::25:::::::::|h[Mutton Chop]|h|r",
+						["iconTexture"] = 133970,
+					}, -- [6]
+				}, -- [4]
+				{
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::25:::::::::|h[Lesser Healing Potion]|h|r",
+						["iconTexture"] = 134830,
+					}, -- [1]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::25:::::::::|h[Lesser Healing Potion]|h|r",
+						["iconTexture"] = 134830,
+					}, -- [2]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::25:::::::::|h[Lesser Healing Potion]|h|r",
+						["iconTexture"] = 134830,
+					}, -- [3]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::25:::::::::|h[Lesser Healing Potion]|h|r",
+						["iconTexture"] = 134830,
+					}, -- [4]
+					{
+						["itemCount"] = 4,
+						["itemID"] = 212160,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:212160::::::::25:::::::::|h[Chronoboon Displacer]|h|r",
+						["iconTexture"] = 133879,
+					}, -- [5]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 209874,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:209874::::::::25:::::::::|h[Dragonslayer's Lance]|h|r",
+						["iconTexture"] = 135130,
+					}, -- [6]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 10441,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:10441::::::::25:::::::::|h[Glowing Shard]|h|r",
+						["iconTexture"] = 135229,
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 2901,
+						["isBound"] = false,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:2901::::::::25:::::::::|h[Mining Pick]|h|r",
+						["iconTexture"] = 134708,
+					}, -- [9]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6948,
+						["isBound"] = true,
+						["quality"] = 1,
+						["itemLink"] = "|cffffffff|Hitem:6948::::::::25:::::::::|h[Hearthstone]|h|r",
+						["iconTexture"] = 134414,
+					}, -- [10]
+				}, -- [5]
+				{
+					{
+					}, -- [1]
+					{
+					}, -- [2]
+					{
+					}, -- [3]
+					{
+					}, -- [4]
+					{
+					}, -- [5]
+					{
+					}, -- [6]
+					{
+					}, -- [7]
+					{
+					}, -- [8]
+					{
+					}, -- [9]
+					{
+					}, -- [10]
+					{
+					}, -- [11]
+					{
+					}, -- [12]
+					{
+					}, -- [13]
+					{
+					}, -- [14]
+					{
+					}, -- [15]
+					{
+					}, -- [16]
+					{
+					}, -- [17]
+					{
+					}, -- [18]
+					{
+					}, -- [19]
+					{
+					}, -- [20]
+					{
+					}, -- [21]
+					{
+					}, -- [22]
+					{
+					}, -- [23]
+					{
+					}, -- [24]
+					{
+					}, -- [25]
+					{
+					}, -- [26]
+					{
+					}, -- [27]
+					{
+					}, -- [28]
+					{
+					}, -- [29]
+					{
+					}, -- [30]
+					{
+					}, -- [31]
+					{
+					}, -- [32]
+				}, -- [6]
+			},
+			["void"] = {
+			},
+			["currencies"] = {
+			},
+			["mail"] = {
+			},
+			["money"] = 45367,
+			["equipped"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 10407,
+					["isBound"] = false,
+					["quality"] = 1,
+					["itemLink"] = "|cffffffff|Hitem:10407::::::::25:::::::::|h[Raider's Shoulderpads]|h|r",
+					["iconTexture"] = 135054,
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 6627,
+					["isBound"] = true,
+					["quality"] = 3,
+					["itemLink"] = "|cff0070dd|Hitem:6627::::::::25:::::::::|h[Mutant Scale Breastplate]|h|r",
+					["iconTexture"] = 132743,
+				}, -- [6]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 4712,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:4712::::::::25:::::::::|h[Glimmering Mail Girdle]|h|r",
+					["iconTexture"] = 132521,
+				}, -- [7]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 14748,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:14748::::::::25:::::::::|h[Hulking Leggings]|h|r",
+					["iconTexture"] = 134583,
+				}, -- [8]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 12982,
+					["isBound"] = true,
+					["quality"] = 3,
+					["itemLink"] = "|cff0070dd|Hitem:12982::::::::25:::::::::|h[Silver-linked Footguards]|h|r",
+					["iconTexture"] = 132535,
+				}, -- [9]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 9837,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:9837::::::1188:1982207872:25:::::::::|h[Banded Bracers of the Bear]|h|r",
+					["iconTexture"] = 132602,
+				}, -- [10]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 12994,
+					["isBound"] = true,
+					["quality"] = 3,
+					["itemLink"] = "|cff0070dd|Hitem:12994::::::::25:::::::::|h[Thorbia's Gauntlets]|h|r",
+					["iconTexture"] = 132945,
+				}, -- [11]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 5351,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:5351::::::::25:::::::::|h[Bounty Hunter's Ring]|h|r",
+					["iconTexture"] = 133343,
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 9812,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:9812::::::1184:1185317888:25:::::::::|h[Fortified Cloak of the Bear]|h|r",
+					["iconTexture"] = 133766,
+				}, -- [16]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 13016,
+					["isBound"] = true,
+					["quality"] = 3,
+					["itemLink"] = "|cff0070dd|Hitem:13016::::::::25:::::::::|h[Killmaim]|h|r",
+					["iconTexture"] = 132401,
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 5309,
+					["isBound"] = true,
+					["quality"] = 2,
+					["itemLink"] = "|cff1eff00|Hitem:5309::::::::25:::::::::|h[Privateer Musket]|h|r",
+					["iconTexture"] = 135613,
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+			},
+			["bank"] = {
+			},
+		},
+		["Dopestab-LoneWolf"] = {
+			["money"] = 22556,
+			["containerInfo"] = {
+				["bags"] = {
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5573,
+						["isBound"] = false,
+						["iconTexture"] = 133624,
+						["itemLink"] = "|cffffffff|Hitem:5573::::::::17:::::::::|h[Green Leather Bag]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5573,
+						["isBound"] = false,
+						["iconTexture"] = 133624,
+						["itemLink"] = "|cffffffff|Hitem:5573::::::::17:::::::::|h[Green Leather Bag]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5573,
+						["isBound"] = false,
+						["iconTexture"] = 133624,
+						["itemLink"] = "|cffffffff|Hitem:5573::::::::17:::::::::|h[Green Leather Bag]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5573,
+						["isBound"] = false,
+						["iconTexture"] = 133624,
+						["itemLink"] = "|cffffffff|Hitem:5573::::::::17:::::::::|h[Green Leather Bag]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+				},
+			},
+			["mail"] = {
+			},
+			["details"] = {
+				["character"] = "Dopestab",
+				["realmNormalized"] = "LoneWolf",
+				["faction"] = "Horde",
+				["className"] = "ROGUE",
+				["class"] = 4,
+				["hidden"] = false,
+				["realm"] = "Lone Wolf",
+			},
+			["currencies"] = {
+			},
+			["bags"] = {
+				{
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5059,
+						["isBound"] = true,
+						["iconTexture"] = 132938,
+						["itemLink"] = "|cffffffff|Hitem:5059::::::::17:::::::::|h[Digging Claw]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5134,
+						["isBound"] = false,
+						["iconTexture"] = 132179,
+						["itemLink"] = "|cffffffff|Hitem:5134::::::::17:::::::::|h[Small Furry Paw]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 4,
+						["itemID"] = 5056,
+						["isBound"] = true,
+						["iconTexture"] = 134187,
+						["itemLink"] = "|cffffffff|Hitem:5056::::::::17:::::::::|h[Root Sample]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 4,
+						["itemID"] = 17056,
+						["isBound"] = false,
+						["iconTexture"] = 132917,
+						["itemLink"] = "|cffffffff|Hitem:17056::::::::17:::::::::|h[Light Feather]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 5065,
+						["isBound"] = true,
+						["iconTexture"] = 133344,
+						["itemLink"] = "|cffffffff|Hitem:5065::::::::17:::::::::|h[Harpy Lieutenant Ring]|h|r",
+						["quality"] = 1,
+					}, -- [5]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 1745,
+						["isBound"] = false,
+						["iconTexture"] = 132624,
+						["itemLink"] = "|cff9d9d9d|Hitem:1745::::::::17:::::::::|h[Laced Mail Vest]|h|r",
+						["quality"] = 0,
+					}, -- [6]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5114,
+						["isBound"] = false,
+						["iconTexture"] = 134294,
+						["itemLink"] = "|cff9d9d9d|Hitem:5114::::::::17:::::::::|h[Severed Talon]|h|r",
+						["quality"] = 0,
+					}, -- [7]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 1745,
+						["isBound"] = false,
+						["iconTexture"] = 132624,
+						["itemLink"] = "|cff9d9d9d|Hitem:1745::::::::17:::::::::|h[Laced Mail Vest]|h|r",
+						["quality"] = 0,
+					}, -- [8]
+					{
+					}, -- [9]
+					{
+					}, -- [10]
+					{
+					}, -- [11]
+					{
+						["itemCount"] = 186,
+						["itemID"] = 2515,
+						["isBound"] = false,
+						["iconTexture"] = 132382,
+						["itemLink"] = "|cffffffff|Hitem:2515::::::::17:::::::::|h[Sharp Arrow]|h|r",
+						["quality"] = 1,
+					}, -- [12]
+					{
+						["itemCount"] = 200,
+						["itemID"] = 2515,
+						["isBound"] = false,
+						["iconTexture"] = 132382,
+						["itemLink"] = "|cffffffff|Hitem:2515::::::::17:::::::::|h[Sharp Arrow]|h|r",
+						["quality"] = 1,
+					}, -- [13]
+					{
+						["itemCount"] = 200,
+						["itemID"] = 2515,
+						["isBound"] = false,
+						["iconTexture"] = 132382,
+						["itemLink"] = "|cffffffff|Hitem:2515::::::::17:::::::::|h[Sharp Arrow]|h|r",
+						["quality"] = 1,
+					}, -- [14]
+					{
+						["itemCount"] = 9,
+						["itemID"] = 765,
+						["isBound"] = false,
+						["iconTexture"] = 134190,
+						["itemLink"] = "|cffffffff|Hitem:765::::::::17:::::::::|h[Silverleaf]|h|r",
+						["quality"] = 1,
+					}, -- [15]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 765,
+						["isBound"] = false,
+						["iconTexture"] = 134190,
+						["itemLink"] = "|cffffffff|Hitem:765::::::::17:::::::::|h[Silverleaf]|h|r",
+						["quality"] = 1,
+					}, -- [16]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 765,
+						["isBound"] = false,
+						["iconTexture"] = 134190,
+						["itemLink"] = "|cffffffff|Hitem:765::::::::17:::::::::|h[Silverleaf]|h|r",
+						["quality"] = 1,
+					}, -- [17]
+					{
+						["itemCount"] = 19,
+						["itemID"] = 2447,
+						["isBound"] = false,
+						["iconTexture"] = 133939,
+						["itemLink"] = "|cffffffff|Hitem:2447::::::::17:::::::::|h[Peacebloom]|h|r",
+						["quality"] = 1,
+					}, -- [18]
+					{
+						["itemCount"] = 12,
+						["itemID"] = 2589,
+						["isBound"] = false,
+						["iconTexture"] = 132889,
+						["itemLink"] = "|cffffffff|Hitem:2589::::::::17:::::::::|h[Linen Cloth]|h|r",
+						["quality"] = 1,
+					}, -- [19]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2589,
+						["isBound"] = false,
+						["iconTexture"] = 132889,
+						["itemLink"] = "|cffffffff|Hitem:2589::::::::17:::::::::|h[Linen Cloth]|h|r",
+						["quality"] = 1,
+					}, -- [20]
+				}, -- [1]
+				{
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2589,
+						["isBound"] = false,
+						["iconTexture"] = 132889,
+						["itemLink"] = "|cffffffff|Hitem:2589::::::::17:::::::::|h[Linen Cloth]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 2,
+						["itemID"] = 2452,
+						["isBound"] = false,
+						["iconTexture"] = 134184,
+						["itemLink"] = "|cffffffff|Hitem:2452::::::::17:::::::::|h[Swiftthistle]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 15,
+						["itemID"] = 785,
+						["isBound"] = false,
+						["iconTexture"] = 133436,
+						["itemLink"] = "|cffffffff|Hitem:785::::::::17:::::::::|h[Mageroyal]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 13,
+						["itemID"] = 2449,
+						["isBound"] = false,
+						["iconTexture"] = 134187,
+						["itemLink"] = "|cffffffff|Hitem:2449::::::::17:::::::::|h[Earthroot]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2449,
+						["isBound"] = false,
+						["iconTexture"] = 134187,
+						["itemLink"] = "|cffffffff|Hitem:2449::::::::17:::::::::|h[Earthroot]|h|r",
+						["quality"] = 1,
+					}, -- [5]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2449,
+						["isBound"] = false,
+						["iconTexture"] = 134187,
+						["itemLink"] = "|cffffffff|Hitem:2449::::::::17:::::::::|h[Earthroot]|h|r",
+						["quality"] = 1,
+					}, -- [6]
+					{
+						["itemCount"] = 7,
+						["itemID"] = 2592,
+						["isBound"] = false,
+						["iconTexture"] = 132911,
+						["itemLink"] = "|cffffffff|Hitem:2592::::::::17:::::::::|h[Wool Cloth]|h|r",
+						["quality"] = 1,
+					}, -- [7]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5068,
+						["isBound"] = true,
+						["iconTexture"] = 133849,
+						["itemLink"] = "|cffffffff|Hitem:5068::::::::17:::::::::|h[Dried Seeds]|h|r",
+						["quality"] = 1,
+					}, -- [8]
+				}, -- [2]
+				{
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5020,
+						["isBound"] = false,
+						["iconTexture"] = 134237,
+						["itemLink"] = "|cffffffff|Hitem:5020::::::::17:::::::::|h[Kolkar Booty Key]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 10,
+						["itemID"] = 4358,
+						["isBound"] = false,
+						["iconTexture"] = 133714,
+						["itemLink"] = "|cffffffff|Hitem:4358::::::::17:::::::::|h[Rough Dynamite]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 4358,
+						["isBound"] = false,
+						["iconTexture"] = 133714,
+						["itemLink"] = "|cffffffff|Hitem:4358::::::::17:::::::::|h[Rough Dynamite]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 4358,
+						["isBound"] = false,
+						["iconTexture"] = 133714,
+						["itemLink"] = "|cffffffff|Hitem:4358::::::::17:::::::::|h[Rough Dynamite]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 4358,
+						["isBound"] = false,
+						["iconTexture"] = 133714,
+						["itemLink"] = "|cffffffff|Hitem:4358::::::::17:::::::::|h[Rough Dynamite]|h|r",
+						["quality"] = 1,
+					}, -- [5]
+					{
+						["itemCount"] = 11,
+						["itemID"] = 2862,
+						["isBound"] = false,
+						["iconTexture"] = 135248,
+						["itemLink"] = "|cffffffff|Hitem:2862::::::::17:::::::::|h[Rough Sharpening Stone]|h|r",
+						["quality"] = 1,
+					}, -- [6]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2862,
+						["isBound"] = false,
+						["iconTexture"] = 135248,
+						["itemLink"] = "|cffffffff|Hitem:2862::::::::17:::::::::|h[Rough Sharpening Stone]|h|r",
+						["quality"] = 1,
+					}, -- [7]
+					{
+						["itemCount"] = 10,
+						["itemID"] = 7676,
+						["isBound"] = false,
+						["iconTexture"] = 132819,
+						["itemLink"] = "|cffffffff|Hitem:7676::::::::17:::::::::|h[Thistle Tea]|h|r",
+						["quality"] = 1,
+					}, -- [8]
+				}, -- [3]
+				{
+					{
+						["itemCount"] = 1,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [5]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [6]
+					{
+						["itemCount"] = 5,
+						["itemID"] = 858,
+						["isBound"] = false,
+						["iconTexture"] = 134830,
+						["itemLink"] = "|cffffffff|Hitem:858::::::::17:::::::::|h[Lesser Healing Potion]|h|r",
+						["quality"] = 1,
+					}, -- [7]
+					{
+					}, -- [8]
+				}, -- [4]
+				{
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2581,
+						["isBound"] = false,
+						["iconTexture"] = 133688,
+						["itemLink"] = "|cffffffff|Hitem:2581::::::::17:::::::::|h[Heavy Linen Bandage]|h|r",
+						["quality"] = 1,
+					}, -- [1]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2581,
+						["isBound"] = false,
+						["iconTexture"] = 133688,
+						["itemLink"] = "|cffffffff|Hitem:2581::::::::17:::::::::|h[Heavy Linen Bandage]|h|r",
+						["quality"] = 1,
+					}, -- [2]
+					{
+						["itemCount"] = 20,
+						["itemID"] = 2581,
+						["isBound"] = false,
+						["iconTexture"] = 133688,
+						["itemLink"] = "|cffffffff|Hitem:2581::::::::17:::::::::|h[Heavy Linen Bandage]|h|r",
+						["quality"] = 1,
+					}, -- [3]
+					{
+						["itemCount"] = 6,
+						["itemID"] = 2287,
+						["isBound"] = false,
+						["iconTexture"] = 133974,
+						["itemLink"] = "|cffffffff|Hitem:2287::::::::17:::::::::|h[Haunch of Meat]|h|r",
+						["quality"] = 1,
+					}, -- [4]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 2632,
+						["isBound"] = true,
+						["iconTexture"] = 135637,
+						["itemLink"] = "|cff1eff00|Hitem:2632::::::1547:1777345152:17:::::::::|h[Curved Dagger of Power]|h|r",
+						["quality"] = 2,
+					}, -- [5]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 727,
+						["isBound"] = true,
+						["iconTexture"] = 135274,
+						["itemLink"] = "|cff1eff00|Hitem:727::::::6:318147840:17:::::::::|h[Notched Shortsword of Strength]|h|r",
+						["quality"] = 2,
+					}, -- [6]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 5060,
+						["isBound"] = true,
+						["iconTexture"] = 134065,
+						["itemLink"] = "|cffffffff|Hitem:5060::::::::17:::::::::|h[Thieves' Tools]|h|r",
+						["quality"] = 1,
+					}, -- [7]
+					{
+						["itemCount"] = 1,
+						["itemID"] = 6948,
+						["isBound"] = true,
+						["iconTexture"] = 134414,
+						["itemLink"] = "|cffffffff|Hitem:6948::::::::17:::::::::|h[Hearthstone]|h|r",
+						["quality"] = 1,
+					}, -- [8]
+				}, -- [5]
+			},
+			["equipped"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 4243,
+					["isBound"] = true,
+					["iconTexture"] = 132724,
+					["itemLink"] = "|cff1eff00|Hitem:4243::::::::17:::::::::|h[Fine Leather Tunic]|h|r",
+					["quality"] = 2,
+				}, -- [6]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 15308,
+					["isBound"] = true,
+					["iconTexture"] = 132492,
+					["itemLink"] = "|cff1eff00|Hitem:15308::::::89:1524423936:17:::::::::|h[Feral Cord of Defense]|h|r",
+					["quality"] = 2,
+				}, -- [7]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 7282,
+					["isBound"] = true,
+					["iconTexture"] = 134582,
+					["itemLink"] = "|cff1eff00|Hitem:7282::::::::17:::::::::|h[Light Leather Pants]|h|r",
+					["quality"] = 2,
+				}, -- [8]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 2987,
+					["isBound"] = true,
+					["iconTexture"] = 132539,
+					["itemLink"] = "|cff1eff00|Hitem:2987::::::::17:::::::::|h[Inscribed Leather Boots]|h|r",
+					["quality"] = 2,
+				}, -- [9]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 15453,
+					["isBound"] = true,
+					["iconTexture"] = 132606,
+					["itemLink"] = "|cff1eff00|Hitem:15453::::::::17:::::::::|h[Savannah Bracers]|h|r",
+					["quality"] = 2,
+				}, -- [10]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 14564,
+					["isBound"] = true,
+					["iconTexture"] = 132952,
+					["itemLink"] = "|cff1eff00|Hitem:14564::::::::17:::::::::|h[Prospector's Mitts]|h|r",
+					["quality"] = 2,
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 4686,
+					["isBound"] = false,
+					["iconTexture"] = 133754,
+					["itemLink"] = "|cffffffff|Hitem:4686::::::::17:::::::::|h[Barbaric Cloth Cloak]|h|r",
+					["quality"] = 1,
+				}, -- [16]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 727,
+					["isBound"] = true,
+					["iconTexture"] = 135274,
+					["itemLink"] = "|cff1eff00|Hitem:727::::::6:675292032:17:::::::::|h[Notched Shortsword of Strength]|h|r",
+					["quality"] = 2,
+				}, -- [17]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 2632,
+					["isBound"] = true,
+					["iconTexture"] = 135637,
+					["itemLink"] = "|cff1eff00|Hitem:2632::::::1547:1088032000:17:::::::::|h[Curved Dagger of Power]|h|r",
+					["quality"] = 2,
+				}, -- [18]
+				{
+					["itemCount"] = 1,
+					["itemID"] = 5346,
+					["isBound"] = true,
+					["iconTexture"] = 135496,
+					["itemLink"] = "|cff1eff00|Hitem:5346::::::::17:::::::::|h[Orcish Battle Bow]|h|r",
+					["quality"] = 2,
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+			},
+			["bank"] = {
+			},
+		},
+	},
+	["Guilds"] = {
+	},
+	["Version"] = 1,
+}
+BAGANATOR_SUMMARIES = {
+	["Characters"] = {
+		["Pending"] = {
+			["Doperage-LoneWolf"] = true,
+			["Dopestab-LoneWolf"] = true,
+		},
+		["ByRealm"] = {
+		},
+	},
+	["Guilds"] = {
+		["Pending"] = {
+		},
+		["ByRealm"] = {
+		},
+	},
+	["Version"] = 3,
+}
