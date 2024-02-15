@@ -110,12 +110,12 @@ Postal3DB = {
 		},
 		["Dopesnare - Lone Wolf"] = {
 			["BlackBook"] = {
-				["contacts"] = {
-					"Dopemend", -- [1]
-				},
 				["recent"] = {
 					"Dopemend|Lone Wolf|Horde", -- [1]
 					"Dopedot|Lone Wolf|Horde", -- [2]
+				},
+				["contacts"] = {
+					"Dopemend", -- [1]
 				},
 			},
 		},

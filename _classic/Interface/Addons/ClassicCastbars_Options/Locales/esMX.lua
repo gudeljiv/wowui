@@ -59,7 +59,6 @@ L["REQUIRES_RESTART"] = "Deshabilitar este módulo de barra de lanzamiento requi
 L["RESET_ALL"] = "Restablecer"
 L["SHOW_FOR_ENEMY"] = "Mostrar Lanzamientos de Enemigos"
 L["SHOW_FOR_FRIENDLY"] = "Mostrar Lanzamientos de Aliados"
-L["SHOW_INTERRUPT_SCHOOL"] = "Muestra qué tipo de hechizo fue interrumpido"
 L["SHOW_SPARK"] = "Mostrar Efecto de Chispa de la Barra de Lanzamiento"
 L["SHOW_TIMER"] = "Mostrar texto del temporizador"
 L["SHOW_TIMER_TOOLTIP"] = "Muestra una cuenta atrás del temporizador para el lanzamiento actual."
