@@ -229,6 +229,13 @@ TOKEN_DATA.CLASSIC = {
 	[19003] = { 19383, 19384, 19366, type = 3 }, -- Head of Nefarian
 	[18423] = { 18404, 18403, 18406, type = 3 }, -- Head of Onyxia
 	[20644] = { 20600, type = 3 }, -- Shrouded in Nightmare
+	[217350] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
+	[217351] = { 213346, 213345, 213344, 213343, type = 3 }, -- Thermaplugg's Engineering Notes
+
+	--SoD Tokens
+	[217007] = { 213336, 213337, 213341, 213342, 213338, 213339, 213335, 216484, type = 6 },
+	[217008] = { 213310, 213311, 213312, 213313, 213314, 213315, 213316, 216485, type = 6 },
+	[217009] = { 213328, 213329, 213331, 213332, 213333, 213334, 213330, 216486, type = 6 },
 
 	-- Quest objective
 	[18705] = { 18713, type = 4 }, -- Mature Black Dragon Sinew
