@@ -24,8 +24,8 @@ TomTomDB = {
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Dopesick - Stitches"] = "Default",
@@ -51,7 +51,7 @@ TomTomDB = {
 		["Dopestab - Lone Wolf"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Dopeclaw - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -114,8 +114,8 @@ TomTomWaypointsM = {
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
@@ -141,7 +141,7 @@ TomTomWaypointsM = {
 		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 	},
 	["profiles"] = {
@@ -191,9 +191,9 @@ TomTomWaypointsM = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
-		},
 		["Doperage - Lone Wolf"] = {
+		},
+		["Dopetrap - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},
@@ -270,7 +270,7 @@ TomTomWaypointsM = {
 		},
 		["Dopeclaw - Stitches"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Dopeclaw - Lone Wolf"] = {
 		},

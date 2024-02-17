@@ -37,19 +37,6 @@ RXPData = {
 			["name"] = "54-55 Un'Goro Crater",
 			["displayname"] = "54-55 Un'Goro Crater",
 		},
-		["RestedXP Rune & Books Guide|Gloves|Saber Slash - 15 (Silverpine)"] = {
-			["guideId"] = 3571258897,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Saber Slash",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Saber Slash - 15 (Silverpine)",
-			["length"] = 770,
-			["name"] = "Saber Slash - 15 (Silverpine)",
-			["displayname"] = "Saber Slash - 15 (Silverpine)",
-		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|41-42 Badlands"] = {
 			["guideId"] = 234296854,
 			["subgroup"] = "RXP Survival Guide 40-50",
@@ -78,19 +65,19 @@ RXPData = {
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 1-20|1-6 Tauren"] = {
 			["guideId"] = 2799834322,
-			["era/som"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
 			["subgroup"] = "RXP Survival Guide 1-20",
 			["defaultfor"] = "Tauren",
-			["hardcore"] = "",
 			["classic"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
+			["hardcore"] = "",
 			["defaultFor"] = "Tauren",
+			["era/som"] = "",
 			["enabledFor"] = "Horde",
-			["name"] = "01-06 Tauren",
 			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|01-06 Tauren",
+			["name"] = "01-06 Tauren",
 			["version"] = 1,
-			["next"] = "6-13 Tauren",
 			["length"] = 15236,
+			["next"] = "6-13 Tauren",
 			["displayname"] = "1-6 Tauren",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|57-59 Western PL/Eastern PL"] = {
@@ -110,17 +97,17 @@ RXPData = {
 		["RestedXP Horde 1-22||1-6 Mulgore"] = {
 			["guideId"] = 2940013195,
 			["subgroup"] = "RXP Speedrun Guide 1-22",
-			["defaultfor"] = "Tauren",
+			["next"] = "6-12 Mulgore;6-13 Mulgore",
 			["classic"] = "",
-			["group"] = "RestedXP Speedrun Guide (H)",
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|01-06 Mulgore",
+			["defaultfor"] = "Tauren",
 			["defaultFor"] = "Tauren",
+			["group"] = "RestedXP Speedrun Guide (H)",
 			["era/som"] = "",
+			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|01-06 Mulgore",
 			["version"] = 11,
 			["enabledFor"] = "Horde",
-			["name"] = "01-06 Mulgore",
 			["length"] = 22150,
-			["next"] = "6-12 Mulgore;6-13 Mulgore",
+			["name"] = "01-06 Mulgore",
 			["displayname"] = "1-6 Mulgore",
 		},
 		["RestedXP Horde 40-50||48-49 The Hinterlands"] = {
@@ -137,31 +124,16 @@ RXPData = {
 			["classic"] = "",
 			["displayname"] = "48-49 The Hinterlands",
 		},
-		["RestedXP Rune & Books Guide|Chest|Slaughter from the Shadows - 10 (Durotar)"] = {
-			["guideId"] = 4117764648,
-			["subgroup"] = "Chest",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Rune & Books Guide|Boots|King of the Jungle - 40 (Deadwind Pass)"] = {
+			["guideId"] = 2800163000,
+			["subgroup"] = "Boots",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Slaughter from the Shadows",
-			["key"] = "RestedXP Rune & Books Guide|Chest|Slaughter from the Shadows - 10 (Durotar)",
-			["length"] = 857,
-			["name"] = "Slaughter from the Shadows - 10 (Durotar)",
-			["displayname"] = "Slaughter from the Shadows - 10 (Durotar)",
-		},
-		["RestedXP Rune & Books Guide|Gloves|Shadowstrike - 2 (Tirisfal)"] = {
-			["guideId"] = 3077641706,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
+			["key"] = "RestedXP Rune & Books Guide|Boots|King of the Jungle - 40 (Deadwind Pass)",
 			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Shadowstrike",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Shadowstrike - 2 (Tirisfal)",
-			["length"] = 1325,
-			["name"] = "Shadowstrike - 2 (Tirisfal)",
-			["displayname"] = "Shadowstrike - 2 (Tirisfal)",
+			["length"] = 9444,
+			["name"] = "King of the Jungle - 40 (Deadwind Pass)",
+			["displayname"] = "King of the Jungle - 40 (Deadwind Pass)",
 		},
 		["RestedXP Horde 1-22||6-10 Durotar"] = {
 			["guideId"] = 3095399105,
@@ -177,6 +149,19 @@ RXPData = {
 			["length"] = 80103,
 			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-10 Durotar",
 			["displayname"] = "6-10 Durotar",
+		},
+		["RestedXP Rune & Books Guide|Chest|Fury of Stormrage - 4 (Mulgore)"] = {
+			["guideId"] = 4063827591,
+			["subgroup"] = "Chest",
+			["enabledFor"] = "Horde Druid SoD",
+			["classic"] = "",
+			["group"] = "RestedXP Rune & Books Guide",
+			["version"] = 0,
+			["title"] = "Fury of Stormrage",
+			["key"] = "RestedXP Rune & Books Guide|Chest|Fury of Stormrage - 4 (Mulgore)",
+			["length"] = 1567,
+			["name"] = "Fury of Stormrage - 4 (Mulgore)",
+			["displayname"] = "Fury of Stormrage - 4 (Mulgore)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 30-40|31-34 Hillsbrad/Arathi"] = {
 			["guideId"] = 3426031896,
@@ -249,19 +234,30 @@ RXPData = {
 			["name"] = "39-41 Alterac/Arathi",
 			["displayname"] = "39-41 Alterac/Arathi",
 		},
-		["RestedXP Horde 22-30||24-25 Class quests"] = {
-			["guideId"] = 116788483,
-			["subgroup"] = "RXP Speedrun Guide 22-30",
-			["next"] = "24-26 Southern Barrens/Stonetalon",
+		["RestedXP Rune & Books Guide|Spell Books|Enhanced Restoration/Revive/Deeper Wilds - 27-40 (Scarlet Monastery)"] = {
+			["guideId"] = 808003057,
+			["subgroup"] = "Spell Books",
 			["classic"] = "",
-			["som"] = "",
-			["group"] = "RestedXP Speedrun Guide (H)",
-			["version"] = 15,
-			["name"] = "24-25 Class quests",
-			["enabledFor"] = "Horde Shaman/Horde Rogue",
-			["length"] = 22304,
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 22-30|24-25 Class quests",
-			["displayname"] = "24-25 Class quests",
+			["name"] = "Enhanced Restoration/Revive/Deeper Wilds - 27-40 (Scarlet Monastery)",
+			["version"] = 0,
+			["group"] = "RestedXP Rune & Books Guide",
+			["title"] = "Enhanced Restoration/Revive/Deeper Wilds",
+			["length"] = 8513,
+			["key"] = "RestedXP Rune & Books Guide|Spell Books|Enhanced Restoration/Revive/Deeper Wilds - 27-40 (Scarlet Monastery)",
+			["displayname"] = "Enhanced Restoration/Revive/Deeper Wilds - 27-40 (Scarlet Monastery)",
+		},
+		["RestedXP Rune & Books Guide|Chest|Living Seed - 8 (Mulgore)"] = {
+			["guideId"] = 1747391526,
+			["subgroup"] = "Chest",
+			["enabledFor"] = "Horde Druid SoD",
+			["classic"] = "",
+			["group"] = "RestedXP Rune & Books Guide",
+			["version"] = 0,
+			["title"] = "Living Seed",
+			["key"] = "RestedXP Rune & Books Guide|Chest|Living Seed - 8 (Mulgore)",
+			["length"] = 1655,
+			["name"] = "Living Seed - 8 (Mulgore)",
+			["displayname"] = "Living Seed - 8 (Mulgore)",
 		},
 		["RestedXP Horde 50-60||50-51 Stranglethorn/Blasted Lands"] = {
 			["guideId"] = 4215411381,
@@ -330,68 +326,32 @@ RXPData = {
 			["name"] = "28-30 Thousand Needles",
 			["displayname"] = "28-30 Thousand Needles",
 		},
-		["RestedXP Rune & Books Guide|Boots|Waylay - 40 (Deadwind Pass)"] = {
-			["guideId"] = 2396722379,
-			["subgroup"] = "Boots",
+		["RestedXP Rune & Books Guide|Chest|Survival of the Fittest - 25 (Ratchet)"] = {
+			["guideId"] = 2730301680,
+			["subgroup"] = "Chest",
 			["classic"] = "",
-			["version"] = 0,
-			["key"] = "RestedXP Rune & Books Guide|Boots|Waylay - 40 (Deadwind Pass)",
-			["group"] = "RestedXP Rune & Books Guide",
-			["length"] = 9444,
-			["name"] = "Waylay - 40 (Deadwind Pass)",
-			["displayname"] = "Waylay - 40 (Deadwind Pass)",
-		},
-		["RestedXP Rune & Books Guide|Gloves|Shiv - 25 (Duskwood)"] = {
-			["guideId"] = 361894611,
-			["subgroup"] = "Gloves",
-			["classic"] = "",
-			["name"] = "Shiv - 25 (Duskwood)",
+			["name"] = "Survival of the Fittest - 25 (Ratchet)",
 			["version"] = 0,
 			["group"] = "RestedXP Rune & Books Guide",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Shiv - 25 (Duskwood)",
-			["length"] = 1142,
-			["enabledFor"] = "Rogue SoD",
-			["displayname"] = "Shiv - 25 (Duskwood)",
+			["enabledFor"] = "SoD",
+			["length"] = 11936,
+			["key"] = "RestedXP Rune & Books Guide|Chest|Survival of the Fittest - 25 (Ratchet)",
+			["displayname"] = "Survival of the Fittest - 25 (Ratchet)",
 		},
 		["RestedXP Horde 1-22||6-11 Tirisfal Glades"] = {
 			["guideId"] = 438898063,
 			["subgroup"] = "RXP Speedrun Guide 1-22",
 			["defaultfor"] = "Undead",
 			["enabledFor"] = "Horde",
-			["defaultFor"] = "Undead",
 			["classic"] = "",
+			["defaultFor"] = "Undead",
 			["group"] = "RestedXP Speedrun Guide (H)",
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-11 Tirisfal Glades",
 			["version"] = 11,
 			["next"] = "11-14 Silverpine Forest; 12-17 The Barrens",
-			["length"] = 120235,
 			["name"] = "06-11 Tirisfal Glades",
+			["length"] = 120235,
+			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-11 Tirisfal Glades",
 			["displayname"] = "6-11 Tirisfal Glades",
-		},
-		["RestedXP Rune & Books Guide|Legs|Blade Dance - 15 (The Barrens)"] = {
-			["guideId"] = 2923042020,
-			["subgroup"] = "Legs",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Blade Dance",
-			["key"] = "RestedXP Rune & Books Guide|Legs|Blade Dance - 15 (The Barrens)",
-			["length"] = 970,
-			["name"] = "Blade Dance - 15 (The Barrens)",
-			["displayname"] = "Blade Dance - 15 (The Barrens)",
-		},
-		["RestedXP Rune & Books Guide|Spell Books|Redirect - 27-40 (Scarlet Monastery)"] = {
-			["guideId"] = 4038531596,
-			["subgroup"] = "Spell Books",
-			["classic"] = "",
-			["name"] = "Redirect - 27-40 (Scarlet Monastery)",
-			["version"] = 0,
-			["group"] = "RestedXP Rune & Books Guide",
-			["title"] = "Redirect",
-			["length"] = 8513,
-			["key"] = "RestedXP Rune & Books Guide|Spell Books|Redirect - 27-40 (Scarlet Monastery)",
-			["displayname"] = "Redirect - 27-40 (Scarlet Monastery)",
 		},
 		["RestedXP Horde 1-22||1-6 Durotar"] = {
 			["guideId"] = 2939554449,
@@ -435,20 +395,6 @@ RXPData = {
 			["name"] = "53-54 Azshara",
 			["displayname"] = "53-54 Azshara",
 		},
-		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|52-53 Searing Gorge/Burning Steppes"] = {
-			["guideId"] = 822615528,
-			["subgroup"] = "RXP Survival Guide 50-60",
-			["next"] = "53-54 Azshara",
-			["classic"] = "",
-			["hardcore"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|52-53 Searing Gorge/Burning Steppes",
-			["enabledFor"] = "Horde",
-			["version"] = 15,
-			["length"] = 25878,
-			["name"] = "52-53 Searing Gorge/Burning Steppes",
-			["displayname"] = "52-53 Searing Gorge/Burning Steppes",
-		},
 		["RestedXP Horde 50-60||59-59 Winterspring/Silithus I"] = {
 			["guideId"] = 3060928852,
 			["subgroup"] = "RXP Speedrun Guide 50-60",
@@ -476,18 +422,17 @@ RXPData = {
 			["classic"] = "",
 			["displayname"] = "34-35 Desolace",
 		},
-		["RestedXP Rune & Books Guide|Boots|Master of Sublety - 34 (Stranglethorn Vale)"] = {
-			["guideId"] = 548215548,
-			["subgroup"] = "Boots",
-			["enabledFor"] = "Rogue SoD",
+		["RestedXP Rune & Books Guide|Legs|Skull Bash - 25 (Reputation)"] = {
+			["guideId"] = 2356679896,
+			["subgroup"] = "Legs",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
+			["name"] = "Skull Bash - 25 (Reputation)",
 			["version"] = 0,
-			["title"] = "Master of Sublety",
-			["key"] = "RestedXP Rune & Books Guide|Boots|Master of Sublety - 34 (Stranglethorn Vale)",
-			["length"] = 1776,
-			["name"] = "Master of Sublety - 34 (Stranglethorn Vale)",
-			["displayname"] = "Master of Sublety - 34 (Stranglethorn Vale)",
+			["group"] = "RestedXP Rune & Books Guide",
+			["enabledFor"] = "SoD",
+			["length"] = 3521,
+			["key"] = "RestedXP Rune & Books Guide|Legs|Skull Bash - 25 (Reputation)",
+			["displayname"] = "Skull Bash - 25 (Reputation)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 30-40|34-35 Shimmering Flats"] = {
 			["guideId"] = 3447068972,
@@ -506,45 +451,18 @@ RXPData = {
 		["RestedXP Horde 1-22||6-12 Mulgore"] = {
 			["guideId"] = 3097037501,
 			["subgroup"] = "RXP Speedrun Guide 1-22",
-			["defaultfor"] = "Tauren",
+			["next"] = "12-17 The Barrens",
 			["classic"] = "",
-			["group"] = "RestedXP Speedrun Guide (H)",
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-12 Mulgore",
+			["defaultfor"] = "Tauren",
 			["defaultFor"] = "Tauren",
+			["group"] = "RestedXP Speedrun Guide (H)",
 			["era/som"] = "",
+			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-12 Mulgore",
 			["version"] = 11,
 			["enabledFor"] = "Horde",
-			["name"] = "06-12 Mulgore",
 			["length"] = 77860,
-			["next"] = "12-17 The Barrens",
+			["name"] = "06-12 Mulgore",
 			["displayname"] = "6-12 Mulgore",
-		},
-		["RestedXP Survival Guide (H)|RXP Survival Guide 20-30|27-29 Ashenvale"] = {
-			["guideId"] = 626136729,
-			["subgroup"] = "RXP Survival Guide 20-30",
-			["next"] = "29-31 Thousand Needles",
-			["classic"] = "",
-			["hardcore"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 20-30|27-29 Ashenvale",
-			["enabledFor"] = "Horde",
-			["version"] = 15,
-			["length"] = 25719,
-			["name"] = "27-29 Ashenvale",
-			["displayname"] = "27-29 Ashenvale",
-		},
-		["RestedXP Rune & Books Guide|Belt|Shadowstep - 30 (Silverpine Forest)"] = {
-			["guideId"] = 890509266,
-			["subgroup"] = "Belt",
-			["enabledFor"] = "Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["name"] = "Shadowstep - 30 (Silverpine Forest)",
-			["key"] = "RestedXP Rune & Books Guide|Belt|Shadowstep - 30 (Silverpine Forest)",
-			["length"] = 5630,
-			["title"] = "Shadowstep",
-			["displayname"] = "Shadowstep - 30 (Silverpine Forest)",
 		},
 		["RestedXP Horde 50-60||56-58 Western PL/Eastern PL"] = {
 			["guideId"] = 2309230520,
@@ -586,58 +504,30 @@ RXPData = {
 			["name"] = "35-37 Northern Stranglethorn",
 			["displayname"] = "35-37 Northern Stranglethorn",
 		},
-		["RestedXP Survival Guide (H)|RXP Survival Guide 30-40|39-39 Dustwallow Marsh"] = {
-			["guideId"] = 3483441497,
-			["subgroup"] = "RXP Survival Guide 30-40",
-			["next"] = "39-41 Alterac/Arathi",
+		["RestedXP Rune & Books Guide|Belt|Nourish - 35 (Azeroth)"] = {
+			["guideId"] = 374739654,
+			["subgroup"] = "Belt",
 			["classic"] = "",
-			["hardcore"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 30-40|39-39 Dustwallow Marsh",
-			["enabledFor"] = "Horde",
-			["version"] = 15,
-			["length"] = 28019,
-			["name"] = "39-39 Dustwallow Marsh",
-			["displayname"] = "39-39 Dustwallow Marsh",
+			["name"] = "Nourish - 35 (Azeroth)",
+			["version"] = 0,
+			["group"] = "RestedXP Rune & Books Guide",
+			["key"] = "RestedXP Rune & Books Guide|Belt|Nourish - 35 (Azeroth)",
+			["length"] = 7105,
+			["enabledFor"] = "Druid SoD",
+			["displayname"] = "Nourish - 35 (Azeroth)",
 		},
-		["RestedXP Rune & Books Guide|Legs|Between the Eyes - 8 (Orgrimmar)"] = {
-			["guideId"] = 3968996966,
-			["subgroup"] = "Legs",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Rune & Books Guide|Boots|Dreamstate - 33 (Desolace)"] = {
+			["guideId"] = 2179077289,
+			["subgroup"] = "Boots",
+			["enabledFor"] = "Druid SoD",
 			["classic"] = "",
 			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Between the Eyes",
-			["key"] = "RestedXP Rune & Books Guide|Legs|Between the Eyes - 8 (Orgrimmar)",
-			["length"] = 652,
-			["name"] = "Between the Eyes - 8 (Orgrimmar)",
-			["displayname"] = "Between the Eyes - 8 (Orgrimmar)",
-		},
-		["RestedXP Rune & Books Guide|Legs|Between the Eyes - 8 (Tirisfal)"] = {
-			["guideId"] = 3588691444,
-			["subgroup"] = "Legs",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Between the Eyes",
-			["key"] = "RestedXP Rune & Books Guide|Legs|Between the Eyes - 8 (Tirisfal)",
-			["length"] = 1280,
-			["name"] = "Between the Eyes - 8 (Tirisfal)",
-			["displayname"] = "Between the Eyes - 8 (Tirisfal)",
-		},
-		["RestedXP Rune & Books Guide|Gloves|Mutilate - 10 (Durotar)"] = {
-			["guideId"] = 1483215881,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Mutilate",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Mutilate - 10 (Durotar)",
-			["length"] = 1250,
-			["name"] = "Mutilate - 10 (Durotar)",
-			["displayname"] = "Mutilate - 10 (Durotar)",
+			["title"] = "Dreamstate",
+			["key"] = "RestedXP Rune & Books Guide|Boots|Dreamstate - 33 (Desolace)",
+			["length"] = 859,
+			["name"] = "Dreamstate - 33 (Desolace)",
+			["displayname"] = "Dreamstate - 33 (Desolace)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 20-30|29-31 Thousand Needles"] = {
 			["guideId"] = 3436976419,
@@ -667,33 +557,33 @@ RXPData = {
 			["name"] = "22-24 Hillsbrad",
 			["displayname"] = "22-24 Hillsbrad",
 		},
-		["RestedXP Rune & Books Guide|Gloves|Mutilate - 8 (Tirisfal)"] = {
-			["guideId"] = 1519719485,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Rune & Books Guide|Belt|Berserk - 28 (Thousand Needles)"] = {
+			["guideId"] = 3451065847,
+			["subgroup"] = "Belt",
+			["enabledFor"] = "Druid SoD",
 			["classic"] = "",
 			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Mutilate",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Mutilate - 8 (Tirisfal)",
-			["length"] = 1349,
-			["name"] = "Mutilate - 8 (Tirisfal)",
-			["displayname"] = "Mutilate - 8 (Tirisfal)",
+			["title"] = "Berserk",
+			["key"] = "RestedXP Rune & Books Guide|Belt|Berserk - 28 (Thousand Needles)",
+			["length"] = 1489,
+			["name"] = "Berserk - 28 (Thousand Needles)",
+			["displayname"] = "Berserk - 28 (Thousand Needles)",
 		},
 		["RestedXP Horde 1-22||11-14 Silverpine Forest"] = {
 			["guideId"] = 1135873732,
 			["subgroup"] = "RXP Speedrun Guide 1-22",
-			["next"] = "12-17 The Barrens",
-			["enabledFor"] = "Horde",
 			["defaultfor"] = "Undead/Troll Rogue/Orc Rogue/Orc Warlock/Troll Mage/Troll Priest",
-			["defaultFor"] = "Undead/Troll Rogue/Orc Rogue/Orc Warlock/Troll Mage/Troll Priest",
+			["enabledFor"] = "Horde",
 			["group"] = "RestedXP Speedrun Guide (H)",
-			["era/som"] = "",
 			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|11-14 Silverpine Forest",
+			["defaultFor"] = "Undead/Troll Rogue/Orc Rogue/Orc Warlock/Troll Mage/Troll Priest",
+			["era/som"] = "",
 			["classic"] = "",
 			["name"] = "11-14 Silverpine Forest",
-			["length"] = 50388,
 			["version"] = 11,
+			["length"] = 50388,
+			["next"] = "12-17 The Barrens",
 			["displayname"] = "11-14 Silverpine Forest",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 30-40|37-39 Northern Stranglethorn"] = {
@@ -715,15 +605,15 @@ RXPData = {
 			["subgroup"] = "RXP Survival Guide 1-20",
 			["defaultfor"] = "Undead",
 			["classic"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
 			["hardcore"] = "",
 			["defaultFor"] = "Undead",
-			["group"] = "RestedXP Survival Guide (H)",
 			["enabledFor"] = "Horde",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|06-13 Undead",
 			["version"] = 1,
 			["name"] = "06-13 Undead",
-			["length"] = 118669,
 			["next"] = "13-15 Silverpine Forest",
+			["length"] = 118669,
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|06-13 Undead",
 			["displayname"] = "6-13 Undead",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|43-43 Desolace II"] = {
@@ -740,30 +630,32 @@ RXPData = {
 			["name"] = "43-43 Desolace II",
 			["displayname"] = "43-43 Desolace II",
 		},
-		["RestedXP Rune & Books Guide|Belt|Poisoned Knife - 30 (Desolace)"] = {
-			["guideId"] = 3193181546,
-			["subgroup"] = "Belt",
+		["RestedXP Rune & Books Guide|Legs|Savage Roar - 15 (The Barrens)"] = {
+			["guideId"] = 3021739292,
+			["subgroup"] = "Legs",
+			["enabledFor"] = "Horde Druid SoD",
 			["classic"] = "",
-			["version"] = 0,
-			["key"] = "RestedXP Rune & Books Guide|Belt|Poisoned Knife - 30 (Desolace)",
 			["group"] = "RestedXP Rune & Books Guide",
-			["length"] = 7449,
-			["name"] = "Poisoned Knife - 30 (Desolace)",
-			["displayname"] = "Poisoned Knife - 30 (Desolace)",
+			["version"] = 0,
+			["title"] = "Savage Roar",
+			["key"] = "RestedXP Rune & Books Guide|Legs|Savage Roar - 15 (The Barrens)",
+			["length"] = 1959,
+			["name"] = "Savage Roar - 15 (The Barrens)",
+			["displayname"] = "Savage Roar - 15 (The Barrens)",
 		},
 		["RestedXP Horde 1-22||1-6 Tirisfal Glades"] = {
 			["guideId"] = 256773470,
 			["subgroup"] = "RXP Speedrun Guide 1-22",
 			["defaultfor"] = "Undead",
 			["enabledFor"] = "Horde",
-			["defaultFor"] = "Undead",
 			["classic"] = "",
+			["defaultFor"] = "Undead",
 			["group"] = "RestedXP Speedrun Guide (H)",
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|01-06 Tirisfal Glades",
 			["name"] = "01-06 Tirisfal Glades",
 			["next"] = "6-11 Tirisfal Glades",
-			["length"] = 34091,
 			["version"] = 11,
+			["length"] = 34091,
+			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|01-06 Tirisfal Glades",
 			["displayname"] = "1-6 Tirisfal Glades",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|47-49 Tanaris"] = {
@@ -780,18 +672,18 @@ RXPData = {
 			["name"] = "47-49 Tanaris",
 			["displayname"] = "47-49 Tanaris",
 		},
-		["RestedXP Rune & Books Guide|Chest|Slaughter from the Shadows - 10 (Tirisfal)"] = {
-			["guideId"] = 272505477,
-			["subgroup"] = "Chest",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Rune & Books Guide|Gloves|Lacerate - 15 (The Barrens)"] = {
+			["guideId"] = 2783384855,
+			["subgroup"] = "Gloves",
+			["enabledFor"] = "Horde Druid SoD",
 			["classic"] = "",
 			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Slaughter from the Shadows",
-			["key"] = "RestedXP Rune & Books Guide|Chest|Slaughter from the Shadows - 10 (Tirisfal)",
-			["length"] = 1265,
-			["name"] = "Slaughter from the Shadows - 10 (Tirisfal)",
-			["displayname"] = "Slaughter from the Shadows - 10 (Tirisfal)",
+			["title"] = "Lacerate",
+			["key"] = "RestedXP Rune & Books Guide|Gloves|Lacerate - 15 (The Barrens)",
+			["length"] = 1025,
+			["name"] = "Lacerate - 15 (The Barrens)",
+			["displayname"] = "Lacerate - 15 (The Barrens)",
 		},
 		["RestedXP Horde 40-50||44-45 Southern Stranglethorn"] = {
 			["guideId"] = 2713456945,
@@ -807,30 +699,31 @@ RXPData = {
 			["classic"] = "",
 			["displayname"] = "44-45 Southern Stranglethorn",
 		},
-		["RestedXP Rune & Books Guide|Chest|Quick Draw - 10 (Tirisfal)"] = {
-			["guideId"] = 2031162451,
-			["subgroup"] = "Chest",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Quick Draw",
-			["key"] = "RestedXP Rune & Books Guide|Chest|Quick Draw - 10 (Tirisfal)",
-			["length"] = 3630,
-			["name"] = "Quick Draw - 10 (Tirisfal)",
-			["displayname"] = "Quick Draw - 10 (Tirisfal)",
-		},
-		["RestedXP Rune & Books Guide|Legs|Envenom - 25 (Hillsbrad)"] = {
-			["guideId"] = 1008145265,
+		["RestedXP Rune & Books Guide|Legs|Lifebloom - 10 (Mulgore)"] = {
+			["guideId"] = 1048122226,
 			["subgroup"] = "Legs",
+			["enabledFor"] = "Horde Druid SoD",
 			["classic"] = "",
-			["name"] = "Envenom - 25 (Hillsbrad)",
-			["version"] = 0,
 			["group"] = "RestedXP Rune & Books Guide",
-			["key"] = "RestedXP Rune & Books Guide|Legs|Envenom - 25 (Hillsbrad)",
-			["length"] = 1163,
-			["enabledFor"] = "Rogue SoD",
-			["displayname"] = "Envenom - 25 (Hillsbrad)",
+			["version"] = 0,
+			["title"] = "Lifebloom",
+			["key"] = "RestedXP Rune & Books Guide|Legs|Lifebloom - 10 (Mulgore)",
+			["length"] = 821,
+			["name"] = "Lifebloom - 10 (Mulgore)",
+			["displayname"] = "Lifebloom - 10 (Mulgore)",
+		},
+		["RestedXP Rune & Books Guide|Gloves|Sunfire - 5 (Mulgore)"] = {
+			["guideId"] = 811668334,
+			["subgroup"] = "Gloves",
+			["enabledFor"] = "Horde Druid SoD",
+			["classic"] = "",
+			["group"] = "RestedXP Rune & Books Guide",
+			["version"] = 0,
+			["title"] = "Sunfire",
+			["key"] = "RestedXP Rune & Books Guide|Gloves|Sunfire - 5 (Mulgore)",
+			["length"] = 683,
+			["name"] = "Sunfire - 5 (Mulgore)",
+			["displayname"] = "Sunfire - 5 (Mulgore)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|51-52 Stranglethorn/Blasted Lands"] = {
 			["guideId"] = 4280360300,
@@ -846,18 +739,18 @@ RXPData = {
 			["name"] = "51-52 Stranglethorn/Blasted Lands",
 			["displayname"] = "51-52 Stranglethorn/Blasted Lands",
 		},
-		["RestedXP Rune & Books Guide|Chest|Deadly Brew - 25 (Silverpine Forest)"] = {
-			["guideId"] = 1534007335,
-			["subgroup"] = "Chest",
-			["enabledFor"] = "Rogue SoD",
+		["RestedXP Rune & Books Guide|Gloves|Mangle - 10 (Mulgore)"] = {
+			["guideId"] = 710873874,
+			["subgroup"] = "Gloves",
+			["enabledFor"] = "Horde Druid SoD",
 			["classic"] = "",
 			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Deadly Brew",
-			["key"] = "RestedXP Rune & Books Guide|Chest|Deadly Brew - 25 (Silverpine Forest)",
-			["length"] = 4814,
-			["name"] = "Deadly Brew - 25 (Silverpine Forest)",
-			["displayname"] = "Deadly Brew - 25 (Silverpine Forest)",
+			["title"] = "Mangle",
+			["key"] = "RestedXP Rune & Books Guide|Gloves|Mangle - 10 (Mulgore)",
+			["length"] = 1117,
+			["name"] = "Mangle - 10 (Mulgore)",
+			["displayname"] = "Mangle - 10 (Mulgore)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|42-43 Stranglethorn Vale"] = {
 			["guideId"] = 59775506,
@@ -873,18 +766,16 @@ RXPData = {
 			["name"] = "42-43 Stranglethorn Vale",
 			["displayname"] = "42-43 Stranglethorn Vale",
 		},
-		["RestedXP Rune & Books Guide|Gloves|Shadowstrike - 2 (Durotar)"] = {
-			["guideId"] = 2706183565,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Rune & Books Guide|Belt|Eclipse - 30 (Desolace)"] = {
+			["guideId"] = 635704033,
+			["subgroup"] = "Belt",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
 			["version"] = 0,
-			["title"] = "Shadowstrike",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Shadowstrike - 2 (Durotar)",
-			["length"] = 1262,
-			["name"] = "Shadowstrike - 2 (Durotar)",
-			["displayname"] = "Shadowstrike - 2 (Durotar)",
+			["key"] = "RestedXP Rune & Books Guide|Belt|Eclipse - 30 (Desolace)",
+			["group"] = "RestedXP Rune & Books Guide",
+			["length"] = 7449,
+			["name"] = "Eclipse - 30 (Desolace)",
+			["displayname"] = "Eclipse - 30 (Desolace)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|45-46 Feralas"] = {
 			["guideId"] = 4169799107,
@@ -914,6 +805,31 @@ RXPData = {
 			["name"] = "23-25 Hillsbrad",
 			["displayname"] = "23-25 Hillsbrad",
 		},
+		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-60 Winterspring/Silithus II"] = {
+			["guideId"] = 2864913482,
+			["subgroup"] = "RXP Survival Guide 50-60",
+			["classic"] = "",
+			["hardcore"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-60 Winterspring/Silithus II",
+			["enabledFor"] = "Horde",
+			["name"] = "59-60 Winterspring/Silithus II",
+			["length"] = 8797,
+			["version"] = 15,
+			["displayname"] = "59-60 Winterspring/Silithus II",
+		},
+		["RestedXP Rune & Books Guide|Legs|Starsurge - 25 (Wetlands)"] = {
+			["guideId"] = 1449399302,
+			["subgroup"] = "Legs",
+			["classic"] = "",
+			["name"] = "Starsurge - 25 (Wetlands)",
+			["version"] = 0,
+			["group"] = "RestedXP Rune & Books Guide",
+			["key"] = "RestedXP Rune & Books Guide|Legs|Starsurge - 25 (Wetlands)",
+			["length"] = 1203,
+			["enabledFor"] = "Druid SoD",
+			["displayname"] = "Starsurge - 25 (Wetlands)",
+		},
 		["RestedXP Horde 50-60||55-56 Felwood/Winterspring"] = {
 			["guideId"] = 2135953503,
 			["subgroup"] = "RXP Speedrun Guide 50-60",
@@ -926,33 +842,6 @@ RXPData = {
 			["length"] = 48144,
 			["name"] = "55-56 Felwood/Winterspring",
 			["displayname"] = "55-56 Felwood/Winterspring",
-		},
-		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-59 Winterspring/Silithus I"] = {
-			["guideId"] = 2403343369,
-			["subgroup"] = "RXP Survival Guide 50-60",
-			["next"] = "59-60 Winterspring/Silithus II",
-			["classic"] = "",
-			["hardcore"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-59 Winterspring/Silithus I",
-			["enabledFor"] = "Horde",
-			["version"] = 15,
-			["length"] = 34757,
-			["name"] = "59-59 Winterspring/Silithus I",
-			["displayname"] = "59-59 Winterspring/Silithus I",
-		},
-		["RestedXP Rune & Books Guide|Chest|Quick Draw - 10 (Durotar)"] = {
-			["guideId"] = 1686377462,
-			["subgroup"] = "Chest",
-			["enabledFor"] = "Horde Rogue SoD",
-			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Quick Draw",
-			["key"] = "RestedXP Rune & Books Guide|Chest|Quick Draw - 10 (Durotar)",
-			["length"] = 3314,
-			["name"] = "Quick Draw - 10 (Durotar)",
-			["displayname"] = "Quick Draw - 10 (Durotar)",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 20-30|25-27 Southern Barrens/Stonetalon"] = {
 			["guideId"] = 4230749593,
@@ -973,28 +862,28 @@ RXPData = {
 			["subgroup"] = "RXP Survival Guide 1-20",
 			["defaultfor"] = "Undead",
 			["classic"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
 			["hardcore"] = "",
 			["defaultFor"] = "Undead",
-			["group"] = "RestedXP Survival Guide (H)",
 			["enabledFor"] = "Horde",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|01-06 Undead",
 			["version"] = 1,
 			["name"] = "01-06 Undead",
-			["length"] = 24772,
 			["next"] = "6-13 Undead",
+			["length"] = 24772,
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|01-06 Undead",
 			["displayname"] = "1-6 Undead",
 		},
-		["RestedXP Rune & Books Guide|Chest|Just a Flesh Wound - 25 (Reputation)"] = {
-			["guideId"] = 1574836225,
+		["RestedXP Rune & Books Guide|Chest|Wild Strikes - 14 (Stonetalon Mountains)"] = {
+			["guideId"] = 3373668872,
 			["subgroup"] = "Chest",
 			["classic"] = "",
-			["name"] = "Just a Flesh Wound - 25 (Reputation)",
+			["name"] = "Wild Strikes - 14 (Stonetalon Mountains)",
 			["version"] = 0,
 			["group"] = "RestedXP Rune & Books Guide",
-			["enabledFor"] = "SoD",
-			["length"] = 3521,
-			["key"] = "RestedXP Rune & Books Guide|Chest|Just a Flesh Wound - 25 (Reputation)",
-			["displayname"] = "Just a Flesh Wound - 25 (Reputation)",
+			["key"] = "RestedXP Rune & Books Guide|Chest|Wild Strikes - 14 (Stonetalon Mountains)",
+			["length"] = 1382,
+			["enabledFor"] = "Druid SoD",
+			["displayname"] = "Wild Strikes - 14 (Stonetalon Mountains)",
 		},
 		["RestedXP Horde 40-50||43-44 Feralas"] = {
 			["guideId"] = 3404663562,
@@ -1010,18 +899,17 @@ RXPData = {
 			["classic"] = "",
 			["displayname"] = "43-44 Feralas",
 		},
-		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-60 Winterspring/Silithus II"] = {
-			["guideId"] = 2864913482,
-			["subgroup"] = "RXP Survival Guide 50-60",
+		["RestedXP Rune & Books Guide|Gloves|Wild Growth - 25 (Multiple Zones)"] = {
+			["guideId"] = 866391951,
+			["subgroup"] = "Gloves",
 			["classic"] = "",
-			["hardcore"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
-			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-60 Winterspring/Silithus II",
-			["enabledFor"] = "Horde",
-			["name"] = "59-60 Winterspring/Silithus II",
-			["length"] = 8797,
-			["version"] = 15,
-			["displayname"] = "59-60 Winterspring/Silithus II",
+			["name"] = "Wild Growth - 25 (Multiple Zones)",
+			["version"] = 0,
+			["group"] = "RestedXP Rune & Books Guide",
+			["key"] = "RestedXP Rune & Books Guide|Gloves|Wild Growth - 25 (Multiple Zones)",
+			["length"] = 3441,
+			["enabledFor"] = "Druid SoD",
+			["displayname"] = "Wild Growth - 25 (Multiple Zones)",
 		},
 		["RestedXP Horde 30-40||33-34 Shimmering Flats"] = {
 			["guideId"] = 1065291381,
@@ -1037,17 +925,19 @@ RXPData = {
 			["classic"] = "",
 			["displayname"] = "33-34 Shimmering Flats",
 		},
-		["RestedXP Rune & Books Guide|Gloves|Main Gauche - 25 (Ratchet)"] = {
-			["guideId"] = 2426999974,
-			["subgroup"] = "Gloves",
+		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-59 Winterspring/Silithus I"] = {
+			["guideId"] = 2403343369,
+			["subgroup"] = "RXP Survival Guide 50-60",
+			["next"] = "59-60 Winterspring/Silithus II",
 			["classic"] = "",
-			["name"] = "Main Gauche - 25 (Ratchet)",
-			["version"] = 0,
-			["group"] = "RestedXP Rune & Books Guide",
-			["enabledFor"] = "SoD",
-			["length"] = 11936,
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Main Gauche - 25 (Ratchet)",
-			["displayname"] = "Main Gauche - 25 (Ratchet)",
+			["hardcore"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|59-59 Winterspring/Silithus I",
+			["enabledFor"] = "Horde",
+			["version"] = 15,
+			["length"] = 34757,
+			["name"] = "59-59 Winterspring/Silithus I",
+			["displayname"] = "59-59 Winterspring/Silithus I",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 40-50|49-50 The Hinterlands"] = {
 			["guideId"] = 2982090945,
@@ -1065,36 +955,36 @@ RXPData = {
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 1-20|6-13 Tauren"] = {
 			["guideId"] = 3133609221,
-			["era/som"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
 			["subgroup"] = "RXP Survival Guide 1-20",
 			["defaultfor"] = "Tauren",
-			["hardcore"] = "",
 			["classic"] = "",
-			["group"] = "RestedXP Survival Guide (H)",
+			["hardcore"] = "",
 			["defaultFor"] = "Tauren",
+			["era/som"] = "",
 			["enabledFor"] = "Horde",
-			["name"] = "06-13 Tauren",
 			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 1-20|06-13 Tauren",
+			["name"] = "06-13 Tauren",
 			["version"] = 1,
-			["next"] = "13-15 Silverpine Forest",
 			["length"] = 99006,
+			["next"] = "13-15 Silverpine Forest",
 			["displayname"] = "6-13 Tauren",
 		},
 		["RestedXP Horde 1-22||6-13 Mulgore"] = {
 			["guideId"] = 3097627326,
-			["group"] = "RestedXP Speedrun Guide (H)",
+			["phase"] = "3-6",
 			["subgroup"] = "RXP Speedrun Guide 1-22",
 			["defaultfor"] = "Tauren",
 			["classic"] = "",
 			["som"] = "",
-			["phase"] = "3-6",
 			["defaultFor"] = "Tauren",
+			["group"] = "RestedXP Speedrun Guide (H)",
 			["enabledFor"] = "Horde",
+			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-13 Mulgore",
 			["version"] = 1,
 			["name"] = "06-13 Mulgore",
-			["next"] = "12-17 The Barrens",
 			["length"] = 32446,
-			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|06-13 Mulgore",
+			["next"] = "12-17 The Barrens",
 			["displayname"] = "6-13 Mulgore",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 1-20|1-6 Orc/Troll"] = {
@@ -1182,7 +1072,7 @@ RXPData = {
 			["name"] = "47-48 Swamp of Sorrows",
 			["displayname"] = "47-48 Swamp of Sorrows",
 		},
-		["enableGroupQuests"] = {
+		["dungeonGuides"] = {
 			["RestedXP Horde 40-50"] = true,
 			["RestedXP Horde 30-40"] = true,
 			["RestedXP Horde 50-60"] = true,
@@ -1204,18 +1094,19 @@ RXPData = {
 			["name"] = "54-54 Felwood",
 			["displayname"] = "54-54 Felwood",
 		},
-		["RestedXP Rune & Books Guide|Boots|Rolling with the Punches - 27 (Thousand Needles)"] = {
-			["guideId"] = 3043564722,
-			["subgroup"] = "Boots",
-			["enabledFor"] = "Rogue SoD",
+		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|52-53 Searing Gorge/Burning Steppes"] = {
+			["guideId"] = 822615528,
+			["subgroup"] = "RXP Survival Guide 50-60",
+			["next"] = "53-54 Azshara",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["name"] = "Rolling with the Punches - 27 (Thousand Needles)",
-			["key"] = "RestedXP Rune & Books Guide|Boots|Rolling with the Punches - 27 (Thousand Needles)",
-			["length"] = 1366,
-			["title"] = "Rolling with the Punches",
-			["displayname"] = "Rolling with the Punches - 27 (Thousand Needles)",
+			["hardcore"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 50-60|52-53 Searing Gorge/Burning Steppes",
+			["enabledFor"] = "Horde",
+			["version"] = 15,
+			["length"] = 25878,
+			["name"] = "52-53 Searing Gorge/Burning Steppes",
+			["displayname"] = "52-53 Searing Gorge/Burning Steppes",
 		},
 		["RestedXP Horde 1-22||10-12 Durotar"] = {
 			["guideId"] = 3250785006,
@@ -1299,18 +1190,19 @@ RXPData = {
 			["name"] = "35-37 Desolace Horde",
 			["displayname"] = "35-37 Desolace Horde",
 		},
-		["RestedXP Rune & Books Guide|Gloves|Saber Slash - 15 (The Barrens)"] = {
-			["guideId"] = 3875608062,
-			["subgroup"] = "Gloves",
-			["enabledFor"] = "Horde Rogue SoD",
+		["RestedXP Survival Guide (H)|RXP Survival Guide 30-40|39-39 Dustwallow Marsh"] = {
+			["guideId"] = 3483441497,
+			["subgroup"] = "RXP Survival Guide 30-40",
+			["next"] = "39-41 Alterac/Arathi",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Saber Slash",
-			["key"] = "RestedXP Rune & Books Guide|Gloves|Saber Slash - 15 (The Barrens)",
-			["length"] = 881,
-			["name"] = "Saber Slash - 15 (The Barrens)",
-			["displayname"] = "Saber Slash - 15 (The Barrens)",
+			["hardcore"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 30-40|39-39 Dustwallow Marsh",
+			["enabledFor"] = "Horde",
+			["version"] = 15,
+			["length"] = 28019,
+			["name"] = "39-39 Dustwallow Marsh",
+			["displayname"] = "39-39 Dustwallow Marsh",
 		},
 		["RestedXP Survival Guide (H)|RXP Survival Guide 50-60|56-57 Felwood/Winterspring"] = {
 			["guideId"] = 942545686,
@@ -1393,20 +1285,21 @@ RXPData = {
 			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|12-17 The Barrens",
 			["displayname"] = "12-17 The Barrens",
 		},
-		["RestedXP Rune & Books Guide|Belt|Shuriken Toss - 30 (Swamp of Sorrows)"] = {
-			["guideId"] = 1620973610,
-			["subgroup"] = "Belt",
-			["enabledFor"] = "Rogue SoD",
+		["RestedXP Survival Guide (H)|RXP Survival Guide 20-30|27-29 Ashenvale"] = {
+			["guideId"] = 626136729,
+			["subgroup"] = "RXP Survival Guide 20-30",
+			["next"] = "29-31 Thousand Needles",
 			["classic"] = "",
-			["group"] = "RestedXP Rune & Books Guide",
-			["version"] = 0,
-			["title"] = "Shuriken Toss",
-			["key"] = "RestedXP Rune & Books Guide|Belt|Shuriken Toss - 30 (Swamp of Sorrows)",
-			["length"] = 825,
-			["name"] = "Shuriken Toss - 30 (Swamp of Sorrows)",
-			["displayname"] = "Shuriken Toss - 30 (Swamp of Sorrows)",
+			["hardcore"] = "",
+			["group"] = "RestedXP Survival Guide (H)",
+			["key"] = "RestedXP Survival Guide (H)|RXP Survival Guide 20-30|27-29 Ashenvale",
+			["enabledFor"] = "Horde",
+			["version"] = 15,
+			["length"] = 25719,
+			["name"] = "27-29 Ashenvale",
+			["displayname"] = "27-29 Ashenvale",
 		},
-		["dungeonGuides"] = {
+		["enableGroupQuests"] = {
 			["RestedXP Horde 40-50"] = true,
 			["RestedXP Horde 30-40"] = true,
 			["RestedXP Horde 50-60"] = true,
@@ -1452,14 +1345,13 @@ RXPData = {
 			["subgroup"] = "RXP Speedrun Guide 1-22",
 			["defaultfor"] = "Troll Rogue/Orc Rogue/Orc Warlock/Troll Mage/Troll Priest",
 			["enabledFor"] = "Horde",
-			["classic"] = "",
 			["defaultFor"] = "Troll Rogue/Orc Rogue/Orc Warlock/Troll Mage/Troll Priest",
+			["classic"] = "",
 			["group"] = "RestedXP Speedrun Guide (H)",
 			["version"] = 11,
-			["next"] = "11-14 Silverpine Forest",
-			["name"] = "10-12 Tirisfal",
-			["length"] = 67203,
 			["key"] = "RestedXP Speedrun Guide (H)|RXP Speedrun Guide 1-22|10-12 Tirisfal",
+			["length"] = 67203,
+			["name"] = "10-12 Tirisfal",
 			["displayname"] = "10-12 Tirisfal",
 		},
 		["RestedXP Horde 30-40||37-38 Dustwallow Marsh"] = {
@@ -1496,7 +1388,7 @@ RXPDB = {
 		["Dopeclaw - Lone Wolf"] = "global",
 		["Dopesnare - Stitches"] = "global",
 		["Dopesick - Stitches"] = "global",
-		["Doperage - Lone Wolf"] = "global",
+		["Dopecure - Stitches"] = "global",
 		["Dopecoil - Lone Wolf"] = "global",
 		["Dopede - Stitches"] = "global",
 		["Lonac - Stitches"] = "global",
@@ -1505,7 +1397,7 @@ RXPDB = {
 		["Dopeah - Stitches"] = "global",
 		["Dopeclaw - Stitches"] = "global",
 		["Dopesnare - Lone Wolf"] = "global",
-		["Dopecure - Stitches"] = "global",
+		["Doperage - Lone Wolf"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {
@@ -1517,7 +1409,7 @@ RXPSettings = {
 		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
 		["Dopesnare - Stitches"] = "Default",
 		["Dopesick - Stitches"] = "Default",
-		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopeah - Stitches"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
 		["Dopede - Stitches"] = "Default",
 		["Lonac - Stitches"] = "Lonac - Stitches",
@@ -1526,18 +1418,75 @@ RXPSettings = {
 		["Dopecure - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
-		["Dopeah - Stitches"] = "Default",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 	},
 	["profiles"] = {
 		["Dopeclaw - Lone Wolf"] = {
-			["showDangerousUnitscan"] = false,
-			["enableGroupQuests"] = false,
-			["soloSelfFound"] = true,
-			["macroAnnounced"] = true,
 			["hardcore"] = true,
-			["frameHeight"] = 125.0000228881836,
-			["SoM"] = false,
+			["framePositions"] = {
+				["arrowFrame"] = {
+					{
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+				["RXPFrame"] = {
+					{
+						"BOTTOMRIGHT", -- [1]
+						"ChatFrame3", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						-10, -- [5]
+					}, -- [1]
+				},
+				["activeItemFrame"] = {
+					{
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+				["activeTargetFrame"] = {
+					{
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+			},
+			["season"] = 2,
+			["frameSizes"] = {
+				["arrowFrame"] = {
+					32.00003814697266, -- [1]
+					32.00003814697266, -- [2]
+				},
+				["RXPFrame"] = {
+					235.0001068115234, -- [1]
+					27.99999809265137, -- [2]
+				},
+				["activeItemFrame"] = {
+					72.69829559326172, -- [1]
+					40.00000762939453, -- [2]
+				},
+				["activeTargetFrame"] = {
+					85.2649154663086, -- [1]
+					68, -- [2]
+				},
+			},
+			["soloSelfFound"] = true,
 			["showDangerousMobsMap"] = false,
+			["SoM"] = false,
+			["enableGroupQuests"] = false,
+			["frameHeight"] = 125.0000228881836,
+			["macroAnnounced"] = true,
+			["showDangerousUnitscan"] = false,
 		},
 		["Dopesnare - Lone Wolf"] = {
 			["SoM"] = false,
@@ -1556,13 +1505,13 @@ RXPSettings = {
 			["hardcore"] = false,
 			["enableTargetAutomation"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
-			["enableMinimapButton"] = false,
+			["enableQuestRewardAutomation"] = true,
 			["xprate"] = 1.2,
-			["enableBindAutomation"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
 			["frameHeight"] = 125.0001068115234,
 			["alwaysSendBranded"] = false,
-			["enableLevelUpAnnounceSolo"] = false,
-			["enableQuestRewardAutomation"] = true,
+			["enableBindAutomation"] = false,
+			["enableMinimapButton"] = false,
 			["hideInRaid"] = false,
 			["activeItemsScale"] = 1.2,
 		},
@@ -1572,20 +1521,20 @@ RXPSettings = {
 			["northrendLM"] = false,
 			["checkVersions"] = false,
 			["enableTargetAutomation"] = false,
-			["enableFPAutomation"] = false,
+			["disableArrow"] = false,
 			["enableTracker"] = false,
 			["hideGuideWindow"] = false,
-			["disableArrow"] = false,
+			["enableFPAutomation"] = false,
 			["macroAnnounced"] = true,
 			["hardcore"] = false,
 			["frameHeight"] = 125.0001068115234,
 			["enableLevelUpAnnounceGroup"] = false,
 			["disableItemWindow"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableBindAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["alwaysSendBranded"] = false,
-			["enableTargetMacro"] = false,
+			["enableBindAutomation"] = false,
 			["enableMinimapButton"] = false,
 			["hideInRaid"] = false,
 			["activeItemsScale"] = 1.2,
@@ -1598,40 +1547,40 @@ RXPSettings = {
 		["Vermin - Golemagg"] = {
 			["hideCompletedSteps"] = true,
 			["migrated"] = true,
-			["enableTrainerAutomation"] = false,
+			["enableTargetMacro"] = false,
 			["northrendLM"] = true,
 			["checkVersions"] = false,
-			["enableTargetMacro"] = false,
-			["arrowText"] = 10,
 			["enableTargetAutomation"] = false,
-			["enableFlyStepAnnouncements"] = false,
-			["lockFrames"] = false,
 			["enableTracker"] = false,
-			["enableFPAutomation"] = false,
+			["enableTrainerAutomation"] = false,
+			["enableBindAutomation"] = false,
+			["lockFrames"] = false,
+			["arrowText"] = 10,
 			["frameHeight"] = 10,
+			["enableFlyStepAnnouncements"] = false,
 			["macroAnnounced"] = true,
 			["hardcore"] = false,
-			["hideMiniMapPins"] = true,
+			["notifyOnTargetUpdates"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["autoLoadStartingGuides"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
 			["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
-			["notifyOnTargetUpdates"] = false,
+			["hideMiniMapPins"] = true,
 			["alwaysSendBranded"] = false,
-			["enableBindAutomation"] = false,
+			["enableFPAutomation"] = false,
 			["enableMinimapButton"] = false,
 			["hideInRaid"] = true,
 			["activeItemsScale"] = 1.2,
 		},
 		["Lonac - Stitches"] = {
-			["macroAnnounced"] = true,
+			["showDangerousMobsMap"] = false,
 			["enableGroupQuests"] = false,
 			["frameHeight"] = 125.0000228881836,
-			["showDangerousUnitscan"] = false,
+			["macroAnnounced"] = true,
 			["hardcore"] = true,
-			["SoM"] = false,
 			["soloSelfFound"] = true,
-			["showDangerousMobsMap"] = false,
+			["SoM"] = false,
+			["showDangerousUnitscan"] = false,
 		},
 		["Vermins - Stitches"] = {
 			["enableTips"] = false,
@@ -1645,20 +1594,21 @@ RXPSettings = {
 			["showFlightTimers"] = false,
 			["enableLevelUpAnnounceGroup"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
-			["enableItemUpgrades"] = false,
+			["frameHeight"] = 125.0000228881836,
 			["alwaysSendBranded"] = false,
 			["hightlightTalentPlan"] = false,
 			["enableMinimapButton"] = false,
 			["enableWorldMapButton"] = false,
-			["frameHeight"] = 125.0000228881836,
+			["enableItemUpgrades"] = false,
 		},
 		["Dopestab - Lone Wolf"] = {
+			["frameHeight"] = 125.0000152587891,
 			["framePositions"] = {
-				["activeTargetFrame"] = {
+				["arrowFrame"] = {
 					{
-						"CENTER", -- [1]
+						"TOP", -- [1]
 						"UIParent", -- [2]
-						"CENTER", -- [3]
+						"TOP", -- [3]
 						0, -- [4]
 						0, -- [5]
 					}, -- [1]
@@ -1681,11 +1631,11 @@ RXPSettings = {
 						0, -- [5]
 					}, -- [1]
 				},
-				["arrowFrame"] = {
+				["activeTargetFrame"] = {
 					{
-						"TOP", -- [1]
+						"CENTER", -- [1]
 						"UIParent", -- [2]
-						"TOP", -- [3]
+						"CENTER", -- [3]
 						0, -- [4]
 						0, -- [5]
 					}, -- [1]
@@ -1693,9 +1643,9 @@ RXPSettings = {
 			},
 			["season"] = 2,
 			["frameSizes"] = {
-				["activeTargetFrame"] = {
-					85.2649154663086, -- [1]
-					68, -- [2]
+				["arrowFrame"] = {
+					32.00003814697266, -- [1]
+					32.00003814697266, -- [2]
 				},
 				["RXPFrame"] = {
 					235.0001068115234, -- [1]
@@ -1705,77 +1655,11 @@ RXPSettings = {
 					72.69829559326172, -- [1]
 					39.99991989135742, -- [2]
 				},
-				["arrowFrame"] = {
-					32.00003814697266, -- [1]
-					32.00003814697266, -- [2]
-				},
-			},
-			["frameHeight"] = 125.0000152587891,
-		},
-		["Doperage - Lone Wolf"] = {
-			["frameHeight"] = 125.0000152587891,
-			["macroAnnounced"] = true,
-			["framePositions"] = {
-				["arrowFrame"] = {
-					{
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						0, -- [4]
-						0, -- [5]
-					}, -- [1]
-				},
-				["RXPFrame"] = {
-					{
-						"BOTTOMRIGHT", -- [1]
-						"ChatFrame3", -- [2]
-						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						-10, -- [5]
-					}, -- [1]
-				},
-				["activeItemFrame"] = {
-					{
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					}, -- [1]
-				},
-				["activeTargetFrame"] = {
-					{
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					}, -- [1]
-				},
-			},
-			["frameSizes"] = {
-				["arrowFrame"] = {
-					32.00003814697266, -- [1]
-					32.00003814697266, -- [2]
-				},
-				["RXPFrame"] = {
-					235.0001068115234, -- [1]
-					125.0000228881836, -- [2]
-				},
-				["activeItemFrame"] = {
-					72.69829559326172, -- [1]
-					40.00000762939453, -- [2]
-				},
 				["activeTargetFrame"] = {
 					85.2649154663086, -- [1]
 					68, -- [2]
 				},
 			},
-			["enableMinimapButton"] = false,
-		},
-		["Dopede - Stitches"] = {
-			["SoM"] = false,
-			["frameHeight"] = 125.0000152587891,
 		},
 		["Default"] = {
 			["notifyOnTargetUpdates"] = false,
@@ -1792,32 +1676,97 @@ RXPSettings = {
 			["showDangerousMobsMap"] = false,
 			["enableTalentGuides"] = false,
 			["SoM"] = false,
-			["enableFriendlyTargeting"] = false,
+			["numMapPins"] = 1,
 			["enableEnemyTargeting"] = false,
 			["enableVendorTreasure"] = false,
-			["enableGroupQuests"] = false,
+			["enableFriendlyTargeting"] = false,
 			["checkVersions"] = false,
+			["enableWorldMapButton"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
 			["enableTargetAutomation"] = false,
-			["hideMiniMapPins"] = true,
-			["enableTargetMacro"] = false,
-			["enableItemUpgrades"] = false,
+			["enableBindAutomation"] = false,
 			["lockFrames"] = false,
 			["enableTracker"] = false,
 			["mapCircle"] = true,
-			["enableFlyStepAnnouncements"] = false,
+			["hideMiniMapPins"] = true,
 			["macroAnnounced"] = true,
-			["worldMapPinBackgroundOpacity"] = 0.5,
-			["showDangerousUnitscan"] = false,
-			["enableMinimapButton"] = false,
+			["enableItemUpgrades"] = false,
+			["alwaysSendBranded"] = false,
+			["frameHeight"] = 133.2539978027344,
 			["enableTargetMarking"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
 			["showFlightTimers"] = false,
-			["frameHeight"] = 133.2539978027344,
-			["alwaysSendBranded"] = false,
-			["enableBindAutomation"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
-			["enableWorldMapButton"] = false,
-			["numMapPins"] = 1,
+			["enableMinimapButton"] = false,
+			["showDangerousUnitscan"] = false,
+			["worldMapPinBackgroundOpacity"] = 0.5,
+			["enableFlyStepAnnouncements"] = false,
+			["enableTargetMacro"] = false,
+			["enableGroupQuests"] = false,
+		},
+		["Dopede - Stitches"] = {
+			["SoM"] = false,
+			["frameHeight"] = 125.0000152587891,
+		},
+		["Doperage - Lone Wolf"] = {
+			["frameHeight"] = 125.0000152587891,
+			["macroAnnounced"] = true,
+			["framePositions"] = {
+				["activeTargetFrame"] = {
+					{
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+				["RXPFrame"] = {
+					{
+						"BOTTOMRIGHT", -- [1]
+						"ChatFrame3", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						-10, -- [5]
+					}, -- [1]
+				},
+				["activeItemFrame"] = {
+					{
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+				["arrowFrame"] = {
+					{
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						0, -- [4]
+						0, -- [5]
+					}, -- [1]
+				},
+			},
+			["enableMinimapButton"] = false,
+			["frameSizes"] = {
+				["activeTargetFrame"] = {
+					85.2649154663086, -- [1]
+					68, -- [2]
+				},
+				["RXPFrame"] = {
+					235.0001068115234, -- [1]
+					125.0000228881836, -- [2]
+				},
+				["activeItemFrame"] = {
+					72.69829559326172, -- [1]
+					40.00000762939453, -- [2]
+				},
+				["arrowFrame"] = {
+					32.00003814697266, -- [1]
+					32.00003814697266, -- [2]
+				},
+			},
 		},
 	},
 }
