@@ -1823,7 +1823,6 @@ data["Sod Exclusives"] = {
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
-	ContentPhase = 5,
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{
@@ -1901,20 +1900,15 @@ data["Sod Exclusives"] = {
 				{ 22, 215414 },
 				{ 23, 215385 },
 				{ 24, 215417 },
-				{ 25, 215412 }, -- Waylaid Supplies: Shadowskin Gloves
-				{ 26, 215415 },
-				{ 27, 215410 },
-				{ 28, 215407 },
-				{ 29, 215418 }, -- Waylaid Supplies: Spider Sausages
+				{ 25, 215415 },
+				{ 26, 215407 },
+				{ 27, 215418 }, -- Waylaid Supplies: Spider Sausages
+				{ 28, 215404 },
+				{ 29, 215396 },
 				{ 30, "INV_Box_01", nil, AL["Continued on next page ->"], nil },
-				{ 101, 215404 },
-				{ 102, 215406 }, -- Waylaid Supplies: Goblin Mortars
-				{ 103, 215396 },
-				{ 104, 215405 },
-				{ 105, 215397 },
-				{ 106, 215409 },
-				{ 107, 215394 },
-				{ 108, 215416 }, -- Waylaid Supplies: White Bandit Masks
+				{ 101, 215397 },
+				{ 102, 215409 },
+				{ 103, 215416 }, -- Waylaid Supplies: White Bandit Masks
 			},
 		}
 	},

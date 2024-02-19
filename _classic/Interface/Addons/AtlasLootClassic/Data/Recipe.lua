@@ -994,6 +994,7 @@ RECIPE_DATA.CLASSIC = {
 	[217251] = {8,190,439093}, -- Pattern: Crimson Silk Shoulders
 	[217249] = {8,195,439091}, -- Pattern: Earthen Silk Belt
 	[217258] = {8,165,439102}, -- Pattern: Enchanter's Cowl
+	[217399] = {4,190,439960}, -- Recipe: Lesser Arcane Elixir
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

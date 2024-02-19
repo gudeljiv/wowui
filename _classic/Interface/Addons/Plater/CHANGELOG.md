@@ -1,7 +1,6 @@
 @cont1nuity:
-- Fixing SoD nameplate aura bugs.
-- Fixing DK rune visuals not updating properly when on cooldown.
-- Adding 'isLooseTarget', 'isSoftEnemy' and 'isSoftFriend' to 'unitFrame'.
-- Adding more cast animations for 10.2.
-- 'Plater.GetHealthCutoffValue(getOnly)' now returns 'lower' and 'upper' execute range
+- Fixing interrupt animation being enabled to break following cast bars.
+- Fixing consolidated auras sometimes not showing properly when sorting for longest duration.
+- Fixing DK rune visuals not updating properly when on cooldown (for real this time).
+- Fixing backup range check error in SoD.
 

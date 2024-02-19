@@ -1000,7 +1000,18 @@ data["SoD Level 40"] = {
 	ContentPhase = 1,
 	items = {
 		{
-		name = AL["STV Blood Moon: Epics 1"],
+		name = AL["STV Blood Moon"],
+			[NORMAL_DIFF] = {
+				{ 1, 216621 }, -- Blooddrenched Drape
+				{ 2, 216620 }, -- Bloodrot Cloak
+				{ 3, 216623 }, -- Cape of Hemostasis
+				{ 4, 216622 }, -- Coagulated Cloak
+				{ 5, 216570 }, -- Reins of the Golden Sabercat
+				{ 6, 216492 }, -- Whistle of the Mottled Blood Raptor
+			},
+		},
+		{
+		name = AL["STV Blood Moon Epics 1"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
 				{ 2, 216498 }, -- Enchanted Sanguine Grimoire 
@@ -1027,7 +1038,7 @@ data["SoD Level 40"] = {
 			},
 		},
 		{
-		name = AL["STV Blood Moon: Epics 2"],
+		name = AL["STV Blood Moon Epics 2"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_Box_01", nil, AL["Rogue"], nil },
 				{ 2, 216520 }, -- Bloodharvest Blade

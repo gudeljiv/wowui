@@ -4,7 +4,6 @@ local ClassicCastbars = _G.ClassicCastbars
 
 local isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
-local strformat = _G.string.format
 local unpack = _G.unpack
 local min = _G.math.min
 local max = _G.math.max
@@ -16,6 +15,7 @@ local nonLSMBorders = {
     ["Interface\\CastingBar\\UI-CastingBar-Border-Small"] = true,
     ["Interface\\CastingBar\\UI-CastingBar-Border"] = true,
     [130873] = true,
+    [130874] = true,
 }
 
 local function GetStatusBarBackgroundTexture(statusbar)
@@ -88,8 +88,7 @@ function ClassicCastbars:SetTargetCastbarPosition(castbar, parentFrame)
 end
 
 function ClassicCastbars:SetCastbarIconAndText(castbar, db)
-    local spellName = castbar.spellName
-    if not castbar.isTesting and castbar.Text:GetText() == spellName then return end
+    local spellName = castbar.spellName or ""
 
     if castbar.icon == 136235 then -- unknown texture
         castbar.icon = 136243
@@ -148,7 +147,9 @@ function ClassicCastbars:SetBorderShieldStyle(castbar, db, unitID)
         if nonLSMBorders[db.castBorder] then
             castbar.Border:SetAlpha(db.borderColor[4])
         else
-            castbar.BorderFrameLSM:SetAlpha(db.borderColor[4])
+            if castbar.BorderFrameLSM then
+                castbar.BorderFrameLSM:SetAlpha(db.borderColor[4])
+            end
         end
         castbar.BorderShield:Hide()
         if castbar.IconShield then
@@ -256,14 +257,15 @@ function ClassicCastbars:SetLSMBorders(castbar, db)
     end
 
     -- Apply backdrop if it isn't already active
-    if castbar.BorderFrameLSM.currentTexture ~= db.castBorder then
+    if castbar.BorderFrameLSM.currentTexture ~= db.castBorder or castbar.BorderFrameLSM.currentSize ~= db.edgeSizeLSM then
         castbar.BorderFrameLSM:SetBackdrop({
             edgeFile = db.castBorder,
-            tile = true, tileSize = 16,
-            edgeSize = 16,
+            tile = true, tileSize = db.edgeSizeLSM,
+            edgeSize = db.edgeSizeLSM,
             insets = { left = 4, right = 4, top = 4, bottom = 4 }
         })
         castbar.BorderFrameLSM.currentTexture = db.castBorder
+        castbar.BorderFrameLSM.currentSize = db.edgeSizeLSM
     end
 
     castbar.Border:SetAlpha(0) -- hide default border
@@ -328,6 +330,52 @@ function ClassicCastbars:SetCastbarStatusColorsOnDisplay(castbar, db)
     end
 end
 
+function ClassicCastbars:SetFinishCastStyle(castbar, unitID)
+    if not castbar.isActiveCast or castbar.value == nil then return end
+
+    -- Failed cast
+    if castbar.isInterrupted or castbar.isFailed then
+        castbar.Text:SetText(castbar.isInterrupted and _G.INTERRUPTED or _G.FAILED)
+
+        local r, g, b = unpack(self.db[self:GetUnitType(unitID)].statusColorFailed)
+        castbar:SetStatusBarColor(r, g, b) -- Skipping alpha channel as it messes with fade out animations
+        castbar:SetMinMaxValues(0, 1)
+        castbar:SetValue(1)
+        castbar.Spark:SetAlpha(0)
+    end
+
+    -- Successfull cast
+    if castbar.isCastComplete then
+        if castbar.Border:GetAlpha() == 1 or castbar.isUninterruptible then
+            if castbar.BorderShield:IsShown() or nonLSMBorders[castbar.Border:GetTextureFilePath() or ""] or nonLSMBorders[castbar.Border:GetTexture() or ""] then
+                if castbar.isUninterruptible then
+                    castbar.Flash:SetVertexColor(0.7, 0.7, 0.7, 1)
+                elseif castbar.isChanneled then
+                    castbar.Flash:SetVertexColor(0, 1, 0, 1)
+                else
+                    castbar.Flash:SetVertexColor(1, 1, 1, 1)
+                end
+                castbar.Flash:Show()
+            end
+        end
+
+        castbar.Spark:SetAlpha(0)
+        castbar:SetMinMaxValues(0, 1)
+
+        if not castbar.isChanneled then
+            if castbar.isUninterruptible then
+                castbar:SetStatusBarColor(0.7, 0.7, 0.7)
+            else
+                local r, g, b = unpack(self.db[self:GetUnitType(unitID)].statusColorSuccess)
+                castbar:SetStatusBarColor(r, g, b)
+            end
+            castbar:SetValue(1)
+        else
+            castbar:SetValue(0)
+        end
+    end
+end
+
 function ClassicCastbars:DisplayCastbar(castbar, unitID)
     if not castbar.isActiveCast or castbar.value == nil then return end
 
@@ -357,6 +405,7 @@ function ClassicCastbars:DisplayCastbar(castbar, unitID)
     self:SetCastbarFonts(castbar, db)
     self:SetCastbarStatusColorsOnDisplay(castbar, db)
 
+    castbar:ClearAllPoints()
     if unitID == "target" and self.db.target.autoPosition then
         self:SetTargetCastbarPosition(castbar, parentFrame)
     elseif unitID == "focus" and self.db.focus.autoPosition then
@@ -365,12 +414,15 @@ function ClassicCastbars:DisplayCastbar(castbar, unitID)
         castbar:SetPoint(db.position[1], parentFrame, db.position[2], db.position[3])
     end
 
-    if not castbar.isTesting then
-        castbar:SetMinMaxValues(0, castbar.maxValue)
-        castbar:SetValue(0)
-        castbar.Spark:SetPoint("CENTER", castbar, "LEFT", 0, 0)
+    if castbar.isTesting then
+        castbar.maxValue = 10
+        castbar.value = 5
     end
 
+    local sparkPosition = (castbar.value / castbar.maxValue) * (castbar.currWidth or castbar:GetWidth())
+    castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, 0)
+    castbar:SetMinMaxValues(0, castbar.maxValue)
+    castbar:SetValue(castbar.value)
     castbar:SetParent(parentFrame)
     castbar.Flash:Hide()
     castbar:SetAlpha(1)
@@ -378,62 +430,18 @@ function ClassicCastbars:DisplayCastbar(castbar, unitID)
 end
 
 function ClassicCastbars:HideCastbar(castbar, unitID, skipFadeOut)
+    if castbar.isTesting then return end
+
     if skipFadeOut then
         if castbar.animationGroup then
             castbar.animationGroup:Stop()
         end
-        castbar.BorderShield:Hide()
-        castbar:SetAlpha(0)
         castbar:Hide()
         castbar.isActiveCast = false
         return
     end
 
-    if castbar.isActiveCast and castbar.value ~= nil then
-        if castbar.isInterrupted or castbar.isFailed then
-            if castbar.isInterrupted and castbar.interruptedSchool then
-                castbar.Text:SetText(strformat(_G.LOSS_OF_CONTROL_DISPLAY_INTERRUPT_SCHOOL, GetSchoolString(castbar.interruptedSchool) or ""))
-            else
-                castbar.Text:SetText(castbar.isInterrupted and _G.INTERRUPTED or _G.FAILED)
-            end
-
-            local r, g, b = unpack(self.db[self:GetUnitType(unitID)].statusColorFailed)
-            castbar:SetStatusBarColor(r, g, b) -- Skipping alpha channel as it messes with fade out animations
-            castbar:SetMinMaxValues(0, 1)
-            castbar:SetValue(1)
-            castbar.Spark:SetAlpha(0)
-        end
-
-        if castbar.isCastComplete then -- SPELL_CAST_SUCCESS
-            if castbar.Border:GetAlpha() == 1 or castbar.isUninterruptible then
-                if castbar.BorderShield:IsShown() or nonLSMBorders[castbar.Border:GetTextureFilePath() or ""] or nonLSMBorders[castbar.Border:GetTexture() or ""] then
-                    if castbar.isUninterruptible then
-                        castbar.Flash:SetVertexColor(0.7, 0.7, 0.7, 1)
-                    elseif castbar.isChanneled then
-                        castbar.Flash:SetVertexColor(0, 1, 0, 1)
-                    else
-                        castbar.Flash:SetVertexColor(1, 1, 1, 1)
-                    end
-                    castbar.Flash:Show()
-                end
-            end
-
-            castbar.Spark:SetAlpha(0)
-            castbar:SetMinMaxValues(0, 1)
-
-            if not castbar.isChanneled then
-                if castbar.isUninterruptible then
-                    castbar:SetStatusBarColor(0.7, 0.7, 0.7)
-                else
-                    local r, g, b = unpack(self.db[self:GetUnitType(unitID)].statusColorSuccess)
-                    castbar:SetStatusBarColor(r, g, b)  -- Skipping alpha channel as it messes with fade out animations
-                end
-                castbar:SetValue(1)
-            else
-                castbar:SetValue(0)
-            end
-        end
-    end
+    self:SetFinishCastStyle(castbar, unitID)
 
     if castbar.fade then
         if not castbar.animationGroup:IsPlaying() then

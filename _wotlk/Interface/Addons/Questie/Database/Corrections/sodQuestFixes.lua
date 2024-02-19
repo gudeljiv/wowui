@@ -864,8 +864,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.STONETALON_MOUNTAINS,
         },
         [79981] = { -- The Corroded Core
+            [questKeys.startedBy] = {{216666}},
+            [questKeys.finishedBy] = {{218237}},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Talk with Scooty in Booty Bay."), 0, {{"monster", 7853}}}},
         },
         [79984] = { -- Quadrangulation
             [questKeys.objectives] = {nil,{{424074},{424075},{424076},{424077}}},
@@ -912,6 +915,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80134] = { -- Gnomer-gooooone!
+            [questKeys.triggerEnd] = {"Goblin Transponder", {[zoneIDs.STRANGLETHORN_VALE]={{27.56,77.42}}}},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
             [questKeys.preQuestSingle] = {80133},
@@ -925,7 +929,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80137] = { -- Save Techbot's Brain!
-            [questKeys.zoneOrSort] = zoneIDs.IRONFORGE,
+            [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80138] = { -- Tinkmaster Overspark
@@ -999,7 +1003,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [80324] = { -- The Mad King
-            [questKeys.startedBy] = {{7937}},
+            [questKeys.startedBy] = {{218537}},
             [questKeys.finishedBy] = {{7937}},
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.objectives] = {nil,nil,{{217350}}},
@@ -1007,7 +1011,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80325] = { -- The Mad King
-            [questKeys.startedBy] = {{3412}},
+            [questKeys.startedBy] = {{218537}},
             [questKeys.finishedBy] = {{3412}},
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.objectives] = {nil,nil,{{217351}}},
@@ -2168,7 +2172,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [90095] = {
             [questKeys.name] = "Explosive Shot",
-            [questKeys.startedBy] = {{208638,207515,327,448,1271,1388,3204,3281,3205,3058,6113,208196},{407734}},
+            [questKeys.startedBy] = {{208638,327,448,1271,1388,3204,3281,3205,3058,6113,208196},{407734}},
             [questKeys.finishedBy] = nil,
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 8,
@@ -3615,6 +3619,18 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.requiredClasses] = classIDs.DRUID,
             [questKeys.objectivesText] = {"Use Challenging Roar on the Beastly Effigy, then Kill Zai'enki. Equip the Icon and follow its instructions to receive the rune."},
             [questKeys.requiredSpell] = -424760,
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
+        [90222] = {
+            [questKeys.name] = "Dreamstate",
+            [questKeys.startedBy] = {nil,{450014,404401}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 32,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.DRUID,
+            [questKeys.objectivesText] = {"Kill Kol'kar Centaur until Desiccated Seed Pod drops, bring it to the lack in the south east of Desolace, and swim until it becomes a Satyrweed Bulb. Then bring it to Sargeron and plant it in Sandy Loam to receive the rune."},
+            [questKeys.requiredSpell] = -410060,
             [questKeys.zoneOrSort] = sortKeys.DRUID,
         },
         [90223] = {

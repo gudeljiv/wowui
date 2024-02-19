@@ -52,6 +52,7 @@ data["Alchemy"] = {
 				{ 1, 426607 }, --Elixir of Coalesced Regret
 				{ 3, 435969 }, --Insulating Gniodine
 				{ 4, 435971 }, --Mildly Irradiated Rejuvenation Potion
+				{ 5, 439960 }, --Recipe: Lesser Arcane Elixir
 			},
 		},
 		{

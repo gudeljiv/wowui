@@ -1426,6 +1426,7 @@ PROFESSION_DATA.CLASSIC = {
 	[439100] = {217256,8,170,190,220,{4305,7067,2321},{3,1,2}}, -- Earthen Vest
 	[439102] = {217257,8,165,185,215,{4305,2321,4337},{3,2,2}}, -- Enchanter's Cowl
 	[439094] = {217252,8,185,205,235,{4305,3827,4291},{4,1,1}}, -- Long Silken Cloak
+	[439960] = {217398,4,190,210,215,{3356,3821,8925},{1,1,1}}, -- Lesser Arcane Elixir
 }
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
     PROFESSION_DATA.BCC = {

@@ -487,7 +487,7 @@ data["AzerothCommerceAuthority"] = {
 			name = ALIL["Revered"],
 			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep7" },
-
+				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
 			},
 		},
 		{ -- Honored
@@ -497,6 +497,7 @@ data["AzerothCommerceAuthority"] = {
 				{ 2, 211384 }, -- Sturdy Courier Bag
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
+				{ 6, 212230 }, -- Schematic: Soul Vessel
 			},
 		},
 		{ -- Friendly
@@ -538,7 +539,7 @@ data["DurotarSupplyAndLogistics"] = {
 			name = ALIL["Revered"],
 			[HORDE_DIFF] = {
 				{ 1, "f2587rep7" },
-
+				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
 			},
 		},
 		{ -- Honored
@@ -548,6 +549,7 @@ data["DurotarSupplyAndLogistics"] = {
 				{ 2, 211384 }, -- Sturdy Courier Bag
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
+				{ 6, 212230 }, -- Schematic: Soul Vessel
 			},
 		},
 		{ -- Friendly
