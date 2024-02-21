@@ -37,14 +37,16 @@ NWB.LSM = LibStub("LibSharedMedia-3.0");
 NWB.dragonLib = LibStub("HereBeDragons-2.0");
 NWB.dragonLibPins = LibStub("HereBeDragons-Pins-2.0");
 NWB.candyBar = LibStub("LibCandyBar-3.0");
+NWB.LibRealmInfo = LibStub("LibRealmInfo");
 NWB.commPrefix = "NWB";
 NWB.hasAddon = {};
 NWB.hasL = {};
 NWB.realm = GetRealmName();
+NWB.realmNormalized = GetNormalizedRealmName();
 NWB.faction = UnitFactionGroup("player");
 NWB.maxBuffLevel = 63;
 NWB.loadTime = 0;
-NWB.limitLayerCount = 10;
+NWB.limitLayerCount = 10; --Do not change this, it does not work unless all addon users have the same number.
 NWB.sharedLayerBuffs = true;
 NWB.doLayerMsg = false;
 NWB.noGUID = false;
@@ -104,6 +106,8 @@ function NWB:OnInitialize()
 	self:getDmfData();
 	self:createDmfMarkers();
 	self:loadAshenvale();
+	self:loadStranglethorn();
+	self:loadOverlay();
 	self:doResetTimerData();
 	self:resetSongFlowers();
 	self:resetLayerData();
@@ -129,9 +133,9 @@ function NWB:OnInitialize()
 		self:populateDailyData();
 	end
 	self:checkNewVersion();
-	--Rfreshing frames to load fonts need to be done at entering world instead, to make sure all addons and shared fonts are loaded.
-	self:refreshMinimapLayerFrame();
-	self:refreshAshenvaleOverlay();
+	--Rereshing frames to load fonts need to be done at entering world instead, to make sure all addons and shared fonts are loaded.
+	--self:refreshMinimapLayerFrame();
+	--self:refreshOverlay();
 end
 
 --Set font used in fontstrings on frames.
@@ -826,6 +830,10 @@ function NWB:ticker()
 	NWB.db.global[NWB.realm][NWB.faction].myChars[UnitName("player")].lo = GetServerTime();
 	--_G["\78\87\66"] = {};
 	--NWB.db.global.lo = GetServerTime(); --Was this ever used?
+	if (NWB.isSOD) then
+		NWB:checkAshenvaleTimer();
+		NWB:checkStranglethornTimer();
+	end
 	C_Timer.After(1, function()
 		NWB:ticker();
 	end)
@@ -991,8 +999,6 @@ end
 
 --Only one person online at a time sends guild msgs so there's no spam, chosen by alphabetical order.
 --Can also specify zone so only 1 person from that zone will send the msg (like orgrimmar when npc yell goes out).
---BUG: sometimes a user doesn't register as having addon, checked table they don't exist when this happens.
---Must be some reason they don't send a guild addon msg at logon.
 function NWB:sendGuildMsg(msg, type, zoneName, prefix, minVersion)
 	if (not NWB.isClassic and type ~= "guildTerok10" and type ~= "guildWintergrasp10") then
 		return;
@@ -1629,6 +1635,7 @@ local lastHeraldAlert = 0;
 local waitingCombatEnd, hideSummonPopup;
 local lastRendHandIn, lastOnyHandIn, lastNefHandIn, lastZanHandIn = 0, 0, 0, 0;
 NWB.lastBlackfathomBoon = 0;
+NWB.lastSparkOfInspiration = 0;
 local unitDamageFrame = CreateFrame("Frame");
 function NWB:combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
@@ -2072,18 +2079,28 @@ function NWB:combatLogEventUnfiltered(...)
 		--New SoD buffs, now that they allow spellIDs in classic this needs to all be changed to a hash table instead of this mess of elseif's in the future.
 		elseif (destName == UnitName("player") and spellName == L["Boon of Blackfathom"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
+			if (expirationTime >= 7199 and UnitLevel("player") < 40) then
 				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
 				if (GetServerTime() - NWB.lastBlackfathomBoon > 300) then
 					NWB.lastBlackfathomBoon = GetServerTime();
 					NWB:playSound("soundsBlackfathomBoon", "bob");
-					NWB:print(L["blackfathomBoomBuffDropped"]);
+					NWB:print(string.format(L["specificBuffDropped"], L["Boon of Blackfathom"]));
 				end
 			end
 		elseif (destName == UnitName("player") and spellName == L["Ashenvale Rallying Cry"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
 			if (expirationTime >= 7199) then
 				NWB:trackNewBuff(spellName, "ashenvaleRallyingCry");
+			end
+		elseif (destName == UnitName("player") and spellName == L["Spark of Inspiration"]) then
+			local expirationTime = NWB:getBuffDuration(spellName, 0);
+			if (expirationTime >= 7199) then
+				NWB:trackNewBuff(spellName, "sparkOfInspiration");
+				if (GetServerTime() - NWB.lastSparkOfInspiration > 300) then
+					NWB.lastSparkOfInspiration = GetServerTime();
+					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
+					NWB:print(string.format(L["specificBuffDropped"], L["Spark of Inspiration"]));
+				end
 			end
 		elseif (destName == UnitName("player") and spellName == L["Stealth"]) then
 			--Vanish is hidden from combat log even to ourself, use stealth instead as it fires when we vanish.
@@ -2106,6 +2123,17 @@ function NWB:combatLogEventUnfiltered(...)
 		if (not NWB.db.global.dispelsMine and not NWB.db.global.dispelsMineWBOnly
 				and not NWB.db.global.dispelsAll and not NWB.db.global.dispelsAllWBOnly) then
 			return;
+		end
+		for i = 1, 32 do
+			local _, _, _, _, _, _, _, _, _, spellID = UnitBuff("player", i);
+			if (spellID) then
+				if (spellID == 436097) then
+					--Don't spam dispel msgs during blood moon event.
+					return;
+				end
+			else
+				break;
+			end
 		end
 		local _, _, zone = NWB.dragonLib:GetPlayerZonePosition();
 		if (zone == 125 or zone == 126) then
@@ -2950,6 +2978,8 @@ local spellTypes = {
 	--SoD.
 	[430947] = "boonOfBlackfathom",
 	[430352] = "ashenvaleRallyingCry",
+	[438536] = "sparkOfInspiration", --Why is there 2 the same? Horde and Alliance perhaps?
+	[438537] = "sparkOfInspiration",
 }; 
 		
 local buffTable = {
@@ -3172,6 +3202,11 @@ local buffTable = {
 		fullName = "Ashenvale Rallying Cry",
 		maxDuration = 7200,
 	},
+	["sparkOfInspiration"] = {
+		icon = "|TInterface\\Icons\\achievement_boss_mekgineer_thermaplugg-:12:12:0:0|t",
+		fullName = "Spark of Inspiration",
+		maxDuration = 7200,
+	},
 };
 
 local dmfBuffTable = {
@@ -3267,7 +3302,7 @@ function NWB:dmfChronoCheck()
 			if (v.type == "dmf") then
 				NWB:addDmfCooldown();
 				if (NWB.isDmfUp or NWB.isAlwaysDMF) then
-					NWB:print("You have chronoboon released a Darkmoon Faire buff, a new 4 hour cooldown has started.");
+					NWB:print(L["chronoboonReleased"]);
 				end
 				return;
 			end
@@ -3399,7 +3434,8 @@ function NWB:storeBuffs()
 						or k == L["Sayge's Dark Fortune of Intelligence"] or k == L["Sayge's Dark Fortune of Spirit"]
 						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
 						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
-						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]) then
+						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]
+						or k == L["Spark of Inspiration"]) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
@@ -3901,7 +3937,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 		end)
 		if (doLogon) then
 			NWB:refreshMinimapLayerFrame();
-			NWB:refreshAshenvaleOverlay();
+			NWB:refreshOverlay();
 			--Refresh map stuff after login, loading them at initialize creates a bug with them not showing up until you move sometimes.
 			C_Timer.After(5, function()
 				NWB:refreshFelwoodMarkers();
@@ -5184,10 +5220,16 @@ end
 function NWB:updateMinimapButton(tooltip, frame)
 	tooltip = tooltip or GameTooltip;
 	if (not tooltip:IsOwned(frame)) then
+		--This seperator line stuff needs rewriting to use a frame pool instead of a long list for each module.
 		if (tooltip.NWBSeparator) then
 			tooltip.NWBSeparator:Hide();
 		end
-		if (tooltip.NWBSeparator2) then
+		for i = 2, 10 do
+			if (tooltip["NWBSeparator" .. i]) then
+				tooltip["NWBSeparator" .. i]:Hide();
+			end
+		end
+		--[[if (tooltip.NWBSeparator2) then
 			tooltip.NWBSeparator2:Hide();
 		end
 		if (tooltip.NWBSeparator3) then
@@ -5196,6 +5238,24 @@ function NWB:updateMinimapButton(tooltip, frame)
 		if (tooltip.NWBSeparator4) then
 			tooltip.NWBSeparator4:Hide();
 		end
+		if (tooltip.NWBSeparator5) then
+			tooltip.NWBSeparator5:Hide();
+		end
+		if (tooltip.NWBSeparator6) then
+			tooltip.NWBSeparator6:Hide();
+		end
+		if (tooltip.NWBSeparator7) then
+			tooltip.NWBSeparator7:Hide();
+		end
+		if (tooltip.NWBSeparator8) then
+			tooltip.NWBSeparator8:Hide();
+		end
+		if (tooltip.NWBSeparator9) then
+			tooltip.NWBSeparator9:Hide();
+		end
+		if (tooltip.NWBSeparator10) then
+			tooltip.NWBSeparator10:Hide();
+		end]]
 		return;
 	end
 	tooltip:ClearLines();
@@ -5872,7 +5932,13 @@ function NWB:updateMinimapButton(tooltip, frame)
 		end
 	end
 	if (NWB.isSOD) then
-		NWB:addAshenvaleMinimapString(tooltip);
+		--First line adds the top seperator, the rest don't so they're merged in the same section.
+		NWB:addAshenvaleMinimapString(tooltip, nil, true);
+		NWB:addStranglethornMinimapString(tooltip, true);
+	end
+	if (NWB.isClassic) then
+		NWB:addDMFMinimapString(tooltip);
+		--3 day reset is bundled in the above with dmf string.
 	end
 	tooltip:AddLine("|cFF9CD6DE" .. L["Left-Click"] .. "|r " .. L["Timers"]);
 	tooltip:AddLine("|cFF9CD6DE" .. L["Right-Click"] .. "|r " .. L["Buffs"]);
@@ -5881,6 +5947,7 @@ function NWB:updateMinimapButton(tooltip, frame)
 	if (NWB.isLayered) then
 		tooltip:AddLine("|cFF9CD6DE" .. L["Control Left-Click"] .. "|r " .. L["Guild Layers"]);
 	end
+	tooltip:Show();
 	C_Timer.After(0.1, function()
 		NWB:updateMinimapButton(tooltip, frame);
 	end)
@@ -8733,16 +8800,18 @@ function NWB:refreshDmfMarkers()
 	if (not NWB.dmfZone) then
 		return;
 	end
+	--Mulgore and Elwynn are both slightly south (+1 coord) of the actual DMF spot in continent maps to not clash with other addon quest markers.
+	--Players need to be able to hover DMF marker easily to see buff cooldown etc.
 	local x, y, mapID, worldX, worldY, worldMapID;
 	if (NWB.dmfZone == "Outlands") then
 		x, y, mapID = 34.8, 34.6, 1952;
 		worldX, worldY, worldMapID = 44.6, 69.5, 1945;
 	elseif (NWB.dmfZone == "Mulgore") then
 		x, y, mapID = 36.8, 37.6, 1412;
-		worldX, worldY, worldMapID = 46, 63, 1414;
+		worldX, worldY, worldMapID = 45.95, 59.6, 1414;
 	else
 		x, y, mapID = 42, 70, 1429;
-		worldX, worldY, worldMapID = 45.7, 71.4, 1415;
+		worldX, worldY, worldMapID = 45.2, 73.55, 1415;
 	end
 	NWB.dragonLibPins:RemoveWorldMapIcon("NWBDMF", _G["NWBDMF"]);
 	if (NWB.db.global.showDmfMap) then
@@ -8764,6 +8833,89 @@ function NWB:fixMapMarkers()
 	--WorldMapFrame:Hide();
 end
 
+function NWB:addDMFMinimapString(tooltip)
+	if (not NWB.isSOD) then
+		return;
+	end
+	local text;
+	--Check if previous line is a seperator so we don't double up.
+	if (_G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()] and _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()]:GetText() ~= " ") then
+		tooltip:AddLine(" ");
+		if (not tooltip.NWBSeparator5) then
+		    tooltip.NWBSeparator5 = tooltip:CreateTexture(nil, "BORDER");
+		    tooltip.NWBSeparator5:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+		    tooltip.NWBSeparator5:SetHeight(1);
+		    tooltip.NWBSeparator5:SetPoint("LEFT", 10, 0);
+		    tooltip.NWBSeparator5:SetPoint("RIGHT", -10, 0);
+		end
+		tooltip.NWBSeparator5:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+		tooltip.NWBSeparator5:Show();
+	end
+	local timestamp, timeLeft, type = NWB:getDmfData();
+	local zone = NWB.dmfZone;
+	if (zone == "Elwynn Forest") then
+		zone = "Elwynn";
+	end
+	--NWB.isDmfUp = true;
+	local text = "";
+	if (not timestamp or timestamp < 1) then
+		text = text .. L["noTimer"];
+	else
+		if (type == "start") then
+			text = text .. L["dmfAbbreviation"] .. " (" .. zone .. ") " .. string.lower(string.format(L["startsIn"], "|cFF9CD6DE" .. NWB:getTimeString(timeLeft, true, "short") .. "|r"));
+		else
+			text = text .. string.format(L["endsIn"], "|cFF9CD6DE" .. NWB:getTimeString(timeLeft, true, "short") .. "|r") .. " (" .. zone .. ")";
+		end
+	end
+	local dateString = "";
+	if (IsShiftKeyDown()) then
+		if (NWB.db.global.timeStampFormat == 12) then
+			dateString = " (" .. date("%A", timestamp) .. " " .. gsub(date("%I:%M", timestamp), "^0", "")
+					.. string.lower(date("%p", timestamp)) .. ")";
+		else
+			dateString = " (" .. date("%A %H:%M", timestamp) .. ")";
+		end
+	end
+	if (NWB.isDmfUp) then
+		tooltip:AddLine("|cFF00C800" .. L["Darkmoon Faire is up"] .. "|r");
+		tooltip:AddLine(text .. dateString);
+		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
+		if (dmfCooldown > 0) then
+			tooltip:AddLine(string.format(L["dmfBuffCooldownMsg"],  NWB:getTimeString(dmfCooldown, true, "short")));
+		else
+			tooltip:AddLine(L["dmfBuffReady"]);
+		end
+	else
+		tooltip:AddLine(text .. dateString);
+	end
+	if (NWB.isSOD) then
+		--Bundle 3 day reset with dmf minimap tooltip.
+		local threeDayReset = NWB:getThreeDayReset();
+		if (threeDayReset) then
+			local threeDateString = "";
+			if (IsShiftKeyDown()) then
+				if (NWB.db.global.timeStampFormat == 12) then
+					threeDateString = " (" .. date("%A", threeDayReset) .. " " .. gsub(date("%I:%M", threeDayReset), "^0", "")
+							.. string.lower(date("%p", threeDayReset)) .. ")";
+				else
+					threeDateString = " (" .. date("%A %H:%M", threeDayReset) .. ")";
+				end
+			end
+			tooltip:AddLine(L["3 day raid reset"] .. ":|r |cFF9CD6DE" .. NWB:getTimeString(threeDayReset - GetServerTime(), true, "short")
+					.. "|r" .. threeDateString .. "|r");
+		end
+	end
+	tooltip:AddLine(" ");
+	if (not tooltip.NWBSeparator6) then
+	    tooltip.NWBSeparator6 = tooltip:CreateTexture(nil, "BORDER");
+	    tooltip.NWBSeparator6:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+	    tooltip.NWBSeparator6:SetHeight(1);
+	    tooltip.NWBSeparator6:SetPoint("LEFT", 10, 0);
+	    tooltip.NWBSeparator6:SetPoint("RIGHT", -10, 0);
+	end
+	tooltip.NWBSeparator6:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+	tooltip.NWBSeparator6:Show();
+end
 ---===================---
 ---Buff tracking frame---
 ---===================---
@@ -9156,9 +9308,9 @@ function NWB:recalcBuffListFrame()
 		offset = 57;
 		local dmfCooldown, noMsgs = NWB:getDmfCooldown();
 		if (dmfCooldown > 0 and not noMsgs) then
-			NWBbuffListFrame.fs3:SetText(string.format(L["dmfBuffCooldownMsg2"],  NWB:getTimeString(dmfCooldown, true)));
+			NWBbuffListFrame.fs3:SetText(string.format("|cFF69CCF0" .. L["dmfBuffCooldownMsg2"] .. "|r",  NWB:getTimeString(dmfCooldown, true)));
 	    elseif (NWB.isDmfUp) then
-	    	NWBbuffListFrame.fs3:SetText(L["dmfBuffReady"]);
+	    	NWBbuffListFrame.fs3:SetText("|cFF69CCF0" .. L["dmfBuffReady"] .. "|r");
 	    end
 	end
 	local count = 0;
@@ -9415,7 +9567,7 @@ function NWB:recalcBuffListFrame()
 								end
 							end
 							if (next(storedBuffStrings)) then
-								NWB:insertBuffsLineFrameString("        |cffffff00" .. L["Chronoboon Displacer"] .. " Buffs|r");
+								NWB:insertBuffsLineFrameString("        |cffffff00" .. L["Chronoboon Displacer"] .. " " .. L["Buffs"] .. "|r");
 								for k, v in ipairs(storedBuffStrings) do
 									NWBbuffListFrame.fsCalc:SetText(v);
 									local width = NWBbuffListFrame.fsCalc:GetWidth() + 60;
@@ -11586,6 +11738,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		logonEnteringWorld = GetServerTime();
 		if (IsInGroup()) then
 			NWB.lastKnownLayerMapID = 0;
+			NWB.lastKnownLayerMapZoneID = 0;
 			NWB.lastKnownLayerMapID_Mapping = 0;
 			NWB.currentZoneID = 0;
 			--NWB.lastJoinedGroup = GetServerTime();
@@ -11634,6 +11787,7 @@ end)
 
 function NWB:joinedGroupLayer()
 	NWB.lastKnownLayerMapID = 0;
+	NWB.lastKnownLayerMapZoneID = 0;
 	NWB.lastKnownLayerMapID_Mapping = 0;
 	NWB.currentZoneID = 0;
 	NWB.lastCurrentZoneID = 0;
@@ -11684,6 +11838,7 @@ end
 NWB.lastKnownLayer = 0;
 NWB.lastKnownLayerID = 0;
 NWB.lastKnownLayerMapID = 0;
+NWB.lastKnownLayerMapZoneID = 0;
 NWB.lastKnownLayerMapID_Mapping = 0; --More strict layerMapID, can only be set in capitals and zones with timers can only be mapped by this.
 NWB.lastKnownLayerMapIDBackup = 0; --Only used for songflowers if logging on in a group.
 NWB.lastKnownLayerMapIDBackupValidFor = 120; --How long after logon this can be valid for.
@@ -11751,6 +11906,7 @@ function NWB:setCurrentLayerText(unit)
 			NWB.lastKnownLayerID = k;
 			if ((GetServerTime() - NWB.lastJoinedGroup) > NWB.lastJoinedGroupCooldown) then
 				NWB.lastKnownLayerMapID = tonumber(k);
+				NWB.lastKnownLayerMapZoneID = tonumber(zoneID);
 			end
 			NWB.lastKnownLayerTime = GetServerTime();
 			NWB:recalcMinimapLayerFrame();
@@ -11978,6 +12134,7 @@ function NWB:mapCurrentLayer(unit)
 							--Also can start mapping if we pickup our current layer from an already known id.
 							--NWB:debug("found mapped id");
 							NWB.lastKnownLayerMapID = k;
+							NWB.lastKnownLayerMapZoneID = zoneID;
 							foundOldID = true;
 						end
 					end
@@ -12641,6 +12798,10 @@ function NWB:recalcMinimapLayerFrame(zoneID, event, unit)
 				NWB.lastKnownLayerTime = GetServerTime();
 				layerNum = count;
 				foundLayer = true;
+				if (NWB.stvRunning and zone ~= 1434) then
+					--Only from outside STV.
+					NWB:refreshStvBossMarker(NWB.lastKnownLayerMapZoneID, true);
+				end
 			end
 		end
 	end
@@ -14075,7 +14236,7 @@ end)
 
 function NWB:enableScan()
 	if (NWB.isClassic and not doScan and NWB.db.global.earlyRendScan) then
-		NWB:debug("Starting NPC scan.");
+		--NWB:debug("Starting NPC scan.");
 		--Disable swatter from intercepting our error check, it breaks the NPC warning.
 		if (Swatter and Swatter.Frame) then
 			Swatter.Frame:UnregisterEvent("ADDON_ACTION_FORBIDDEN");
@@ -14087,7 +14248,7 @@ end
 
 function NWB:disableScan()
 	if (doScan) then
-		NWB:debug("Stopping NPC scan.");
+		--NWB:debug("Stopping NPC scan.");
 		if (Swatter and Swatter.Frame) then
 			Swatter.Frame:RegisterEvent("ADDON_ACTION_FORBIDDEN");
 		end

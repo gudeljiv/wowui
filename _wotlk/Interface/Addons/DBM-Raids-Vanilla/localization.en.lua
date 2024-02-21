@@ -1234,6 +1234,13 @@ L:SetGeneralLocalization({
 	name = "Mechanical Menagerie"
 })
 
+L:SetMiscLocalization{
+	Sheep		= "Sheep",
+	Whelp		= "Whelp",
+	Squirrel	= "Squirrel",
+	Chicken		= "Chicken"
+}
+
 -----------------------------
 --  Mekgineer Thermaplugg  --
 -----------------------------
@@ -1241,5 +1248,13 @@ L = DBM:GetModLocalization("ThermapluggSoD")
 
 L:SetGeneralLocalization({
 	name = "Mekgineer Thermaplugg"
+})
+
+L:SetTimerLocalization{
+	timerTankCD = "Tank Ability"
+}
+
+L:SetOptionLocalization({
+	timerTankCD	= "Show timer for random tank ability cooldown in stage 4"
 })
 

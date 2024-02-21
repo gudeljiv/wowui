@@ -29,6 +29,7 @@ L["Fengus' Ferocity"] = "芬古斯的狂暴";
 L["Mol'dar's Moxie"] = "摩尔达的勇气";
 L["Boon of Blackfathom"] = "黑暗深渊的祝福";
 L["Ashenvale Rallying Cry"] = "灰谷集结呐喊";
+L["Spark of Inspiration"] = "癫狂灵感火花"; --Phase 2 SoD world buff.
 
 ---=====---
 ---Horde---

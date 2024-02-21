@@ -9,7 +9,7 @@ end
 local mod	= DBM:NewMod("Venoxis", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240206211659")
+mod:SetRevision("20240220023630")
 mod:SetCreatureID(14507)
 mod:SetEncounterID(784)
 mod:SetHotfixNoticeRev(20200724000000)--2020, 7, 24

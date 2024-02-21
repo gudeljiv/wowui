@@ -9,7 +9,7 @@ end
 local mod	= DBM:NewMod("Viscidus", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240206211659")
+mod:SetRevision("20240220023630")
 mod:SetCreatureID(15299)
 mod:SetEncounterID(713)
 mod:SetModelID(15686)

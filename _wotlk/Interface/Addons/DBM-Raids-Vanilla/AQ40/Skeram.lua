@@ -9,7 +9,7 @@ end
 local mod	= DBM:NewMod("Skeram", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240206211659")
+mod:SetRevision("20240220023630")
 mod:SetCreatureID(15263)
 mod:SetEncounterID(709)
 if not mod:IsClassic() then

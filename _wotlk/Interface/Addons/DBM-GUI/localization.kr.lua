@@ -355,10 +355,10 @@ L.CBTRole							= "특정 역할 전용 주문"
 L.CBTPhase							= "페이즈 전환"
 L.CBTImportant						= "사용자 지정 중요 주문"
 --Dropdown Options
---L.SAOne						= "Global Sound 1 (Personal)"
---L.SATwo						= "Global Sound 2 (Everyone)"
---L.SAThree					= "Global Sound 3 (High Priority Action)"
---L.SAFour					= "Global Sound 4 (High Priority Run Away)"
+L.SAOne						= "일반 음성 1 (개인 알림)"
+L.SATwo						= "일반 음성 2 (전체 알림)"
+L.SAThree					= "일반 음성 3 (동작 1순위)"
+L.SAFour					= "일반 음성 4 (도망치기 1순위)"
 L.ColorDropGeneric					= "일반 (기본 설정)"
 L.ColorDrop1						= "색상 1"
 L.ColorDrop2						= "색상 2"
@@ -509,7 +509,7 @@ L.Area_Cinematics					= "게임내 시네마틱 재생 차단"
 L.DuringFight						= "보스 전투중 컷신 재생 차단"--uses explicite IsEncounterInProgress check
 L.InstanceAnywhere					= "던전이나 공격대 인스턴스에서 비전투 컷신 재생 차단"
 L.NonInstanceAnywhere				= "위험: 야외 컷신 재생 차단 (권장하지 않음)"
-L.OnlyAfterSeen						= "한번 봤던 컷신만 재생 차단 (강력 권장, 한번은 스토리를 보는게 좋습니다)"
+L.OnlyAfterSeen						= "한번 봤던 컷신만 재생 차단 (컷신이 한번은 나오기 때문에 스토리를 이해하려면 이 설정을 강력히 추천합니다)"
 --Sound
 L.Area_Sound						= "게임내 소리 차단"
 L.DisableSFX					= "보스 전투중 효과 음량 비활성화"
@@ -525,7 +525,7 @@ L.HideTooltips				= "보스 전투중 툴팁 완전히 숨기기"
 -- Panel: Raid Leader Controls
 L.Tab_RLControls					= "공대장 제어 설정"
 L.Area_FeatureOverrides				= "기능 무시 설정"
-L.OverrideIcons 					= "공격대에서 자신 포함 모든 사용자들의 공격대 징표 설정을 비활성화 (DBM이 원하는 방식대로 징표를 지정하게 만들려면 비활성화 대신 강제 적용 설정을 사용하세요)"
+L.OverrideIcons 					= "공격대에서 자신 포함 모든 사용자들의 공격대 징표 설정을 비활성화"-- (Use override instead of disable if you want DBM to do marking under your terms)
 L.OverrideSay						= "공격대에서 자신 포함 모든 사용자들의 말풍선/일반 대화 메시지 설정 비활성화"
 L.DisableStatusWhisperShort			= "공격대/파티의 현재 상태/답변 귓속말 비활성화"--Duplicated from privacy but makes sense to include option in both panels
 L.DisableGuildStatusShort			= "공격대/파티의 길드와 연동된 공략 진도 메시지 비활성화"--Duplicated from privacy but makes sense to include option in both panels
@@ -580,7 +580,12 @@ L.NPAuraSize				= "아이콘 픽셀 크기 (정사각형): %d"
 L.NPIcon_BarOffSetX 				= "아이콘 위치 조정 X: %d"
 L.NPIcon_BarOffSetY 				= "아이콘 위치 조정 Y: %d"
 L.NPIcon_GrowthDirection 			= "아이콘 생성 방향"
-L.NPDemo							= "테스트 (이름표 근처에서 실행)"
+L.NPIcon_Spacing		 			= "아이콘 간격: %d"
+L.NPIcon_MaxTextLen		 			= "텍스트 최대 길이: %d"
+L.NPIconAnchorPoint		 			= "아이콘 기준점"
+L.NPDemo							= "테스트 (이름표 보이는데서만 작동)"
+L.FontTypeTimer						= "타이머 글꼴 선택"
+L.FontTypeText						= "텍스트 글꼴 선택"
 
 -- Misc
 L.Area_General				= "일반"

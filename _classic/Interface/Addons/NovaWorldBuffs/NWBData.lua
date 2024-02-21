@@ -32,6 +32,9 @@ local GetContainerNumFreeSlots = GetContainerNumFreeSlots or C_Container.GetCont
 local GetContainerNumSlots = GetContainerNumSlots or C_Container.GetContainerNumSlots;
 local GetGossipText = GetGossipText or C_GossipInfo.GetText;
 local IsQuestFlaggedCompleted = IsQuestFlaggedCompleted or C_QuestLog.IsQuestFlaggedCompleted;
+local GetGuildInfo = GetGuildInfo;
+local GetGuildRosterInfo = GetGuildRosterInfo;
+local GetRaidRosterInfo = GetRaidRosterInfo;
 local connectedRealms = {};
 if (GetAutoCompleteRealms and next(GetAutoCompleteRealms())) then
 	NWB.isConnectedRealm = true;
@@ -192,6 +195,10 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			--NWB:debug("npcwalking inc", sender, data);
 			local zoneID, buffs = strsplit(" ", data, 2);
 			NWB:receivedLayerBuffs(zoneID, buffs);
+		elseif (cmd == "stvb") then
+			--NWB:debug("npcwalking inc", sender, data);
+			local zoneID, x, y = strsplit(" ", data, 3);
+			NWB:receivedStvPos(distribution, zoneID, x, y);
 		elseif (cmd == "rlb" and distribution == "GUILD") then
 			NWB:sendLayerBuffs();
 		end
@@ -614,6 +621,13 @@ function NWB:sendHandIn(distribution, type, target, layer)
 end
 
 --Send npc walking msg.
+function NWB:sendStvData(distribution, type, target)
+	if (NWB:isClassicCheck()) then
+		NWB:debug("sending stv data", distribution);
+		NWB:sendComm(distribution, "stvb " .. version .. " " .. self.k() .. " " .. type, target);
+	end
+end
+
 function NWB:sendNpcWalking(distribution, type, target, layer)
 	if (tonumber(layer) and NWB:isClassicCheck()) then
 		NWB:sendComm(distribution, "npcWalking " .. version .. " " .. self.k() .. " " .. type .. " " .. layer, target);
@@ -691,10 +705,10 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 		return data;
 	end
 	if (type == "ashenvale") then
-		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-			data.ashenvale = NWB.data.ashenvale;
-			data.ashenvaleTime = NWB.data.ashenvaleTime;
-		end
+		--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+		--	data.ashenvale = NWB.data.ashenvale;
+		--	data.ashenvaleTime = NWB.data.ashenvaleTime;
+		--end
 	else
 		if (NWB.data.rendTimer > (GetServerTime() - NWB.db.global.rendRespawnTime)) then
 			data['rendTimer'] = NWB.data.rendTimer;
@@ -779,15 +793,15 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 			end
 		end
 		if (NWB.isSOD) then
-			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-				data.ashenvale = NWB.data.ashenvale;
-				data.ashenvaleTime = NWB.data.ashenvaleTime;
-			end
-			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+			--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+			--	data.ashenvale = NWB.data.ashenvale;
+			--	data.ashenvaleTime = NWB.data.ashenvaleTime;
+			--end
+			--if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
 				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
 				--These variable names are shortened before sendin.
-				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
-			end
+			--	data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			--end
 		end
 		if (distribution == "GUILD") then
 			--Include settings with timer data for guild.
@@ -839,10 +853,10 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	end]]
 	if (type == "ashenvale") then
 		--Only send ashenvale data.
-		if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-			data.ashenvale = NWB.data.ashenvale;
-			data.ashenvaleTime = NWB.data.ashenvaleTime;
-		end
+		--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+		--	data.ashenvale = NWB.data.ashenvale;
+		--	data.ashenvaleTime = NWB.data.ashenvaleTime;
+		--end
 	else
 		local sendLayerMapDelay = 1840;
 		local sendLayerMap, foundTimer;
@@ -1099,14 +1113,20 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 			end
 		end
 		if (NWB.isSOD) then
-			if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
-				data.ashenvale = NWB.data.ashenvale;
-				data.ashenvaleTime = NWB.data.ashenvaleTime;
-			end
-			if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
+			--if (NWB:isAshenvaleTimerValid() or (distribution == "GUILD" and NWB:isAshenvaleTimerExpired())) then
+			--	data.ashenvale = NWB.data.ashenvale;
+			--	data.ashenvaleTime = NWB.data.ashenvaleTime;
+			--end
+			--if (distribution == "GUILD" and isRequestData and NWB.data.lastAshenvaleGuildMsg and GetServerTime() - NWB.data.lastAshenvaleGuildMsg < 1800) then
 				--Only gets sent when someone logs on in guild and only if we're one of the 2 people at logon that share data.
 				--These variable names are shortened before sendin.
-				data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			--	data.lastAshenvaleGuildMsg = NWB.data.lastAshenvaleGuildMsg;
+			--end
+			if (NWB.stvRunning) then
+				local stvData = NWB:buildStvData();
+				if (stvData) then
+					data.stvData = stvData;
+				end
 			end
 		end
 		if (distribution == "GUILD" and not forceLayerMap) then
@@ -1326,6 +1346,7 @@ NWB.validKeys = {
 	["wintergraspTime"] = true,
 	["wintergraspFaction"] = true,
 	["hellfireRep"] = true,
+	["stvData"] = true,
 	["tbcHD"] = true,
 	["tbcHDT"] = true,
 	["tbcDD"] = true,
@@ -1568,6 +1589,9 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 													if (not NWB.data.layers[layer].terokTowersTime) then
 														NWB.data.layers[layer].terokTowersTime = 0;
 													end
+													if (not NWB.data.layers[layer].terokTowers) then
+														NWB.data.layers[layer].terokTowers = 0;
+													end
 													if (NWB.data.layers[layer][k] and v ~= 0 and vv.terokTowersTime and vv.terokTowersTime ~= 0
 															and vv.terokTowersTime > NWB.data.layers[layer].terokTowersTime
 															and v > GetServerTime() and v < GetServerTime() + 21700
@@ -1746,6 +1770,9 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 							if (not NWB.data.terokTowersTime) then
 								NWB.data.terokTowersTime = 0;
 							end
+							if (not NWB.data.terokTowers) then
+								NWB.data.terokTowers = 0;
+							end
 							if (NWB.data[k] and v ~= 0 and data.terokTowersTime and data.terokTowersTime ~= 0
 									and data.terokTowersTime > NWB.data.terokTowersTime
 									and v > GetServerTime() and v < GetServerTime() + 21700
@@ -1767,6 +1794,9 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						end
 					elseif (k == "ashenvale" or k == "ashenvaleTime") then
 						if (k ~= "ashenvaleTime") then
+							if (not NWB.data.ashenvale) then
+								NWB.data.ashenvale = 0;
+							end
 							if (not NWB.data.ashenvaleTime) then
 								NWB.data.ashenvaleTime = 0;
 							end
@@ -1855,6 +1885,8 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						end
 					end
 				end
+			elseif (k == "stvData") then
+				NWB:parseStvData(v);
 			elseif (v ~= nil and k ~= "layers") then
 				if (not NWB.validKeys[k] and type(v) ~= "table") then
 					NWB:debug("Invalid key received3:", k, v);
@@ -2099,6 +2131,7 @@ local shortKeys = {
 	["aa"] = "ashenvale",
 	["ab"] = "ashenvaleTime",
 	["ac"] = "lastAshenvaleGuildMsg",
+	["ad"] = "stvData",
 	["f1"] = "flower1",
 	["f2"] = "flower2",
 	["f3"] = "flower3",
@@ -5451,3 +5484,49 @@ f:SetScript('OnEvent', function(self, event, ...)
 		updateAuras(true);
 	end
 end)
+
+function NWB:isFullGuildGroup()
+	C_GuildInfo.GuildRoster();
+	local unitType = "party";
+	if (IsInRaid()) then
+		unitType = "raid";
+	end
+	local myGuild = GetGuildInfo("player");
+	local myRealm = NWB.realmNormalized;
+	local found;
+	--We need to check if same realm because UnitName realm is empty string if same realm.
+	--We need to check if realm shown in roster info is same as our current realm in this case.
+	--And check the normal Name-Realm in case it's a connected realm.
+	for i = 1, GetNumGroupMembers() do
+		local name, realm = UnitName(unitType .. i);
+		if (name ~= UnitName("player")) then
+			local online = UnitIsConnected(unitType .. i);
+			--local realmRelationship = UnitRealmRelationship(unitType .. i);
+			--UnitName shows empty realm string if same realm, wiki says nil but it seems to be wrong?
+			if (online) then
+				local mergedName;
+				if (realm and realm ~= "") then
+					mergedName = name .. "-" .. realm;
+				end
+				local inGuild;
+				if (name) then
+					for ii = 1, GetNumGuildMembers() do
+						local gname = GetGuildRosterInfo(ii); --Normalized realm name.
+						--Check if same Name-Realm, or if realm is missing then it's this realm so check against that too.
+						local splitName, splitRealm = strsplit("-", gname, 2);
+						if (splitName == name and (gname == mergedName or (realm == "" and splitRealm == myRealm))) then
+							inGuild = true;
+							break;
+						end
+					end
+					if (not inGuild) then
+						found = true;
+					end
+				end
+			end
+		end
+	end
+	if (not found) then
+		return true;
+	end
+end

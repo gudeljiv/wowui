@@ -1,8 +1,8 @@
-## Interface: 11500
+## Interface: 11501
 ## Notes: World buff timers and pre warnings.
 ## Title: Nova World Buffs
 ## Author: Novaspark-Arugal OCE
-## Version: 2.66
+## Version: 2.68
 ## SavedVariables: NWBdatabase
 
 embeds.xml
@@ -14,4 +14,7 @@ NWBData.lua
 NWBCreatures.lua
 NWBRealms.lua
 NWBGuildFilter.lua
+Modules\WeeklyReset.lua
 Modules\Ashenvale.lua
+Modules\Stranglethorn.lua
+Modules\Overlay.lua

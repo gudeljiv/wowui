@@ -30,6 +30,7 @@ L["Fengus' Ferocity"] = "Ferocidade de Fengus";
 L["Mol'dar's Moxie"] = "Valentia do Mol'dar";
 L["Boon of Blackfathom"] = "Bênção das Profundezas Negras";
 L["Ashenvale Rallying Cry"] = "Brado de Convocação do Vale Gris";
+L["Spark of Inspiration"] = "Centelha de Inspiração Ensandecida"; --Phase 2 SoD world buff.
 
 ---=====---
 ---Horde---

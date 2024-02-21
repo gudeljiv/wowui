@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Attumen", "DBM-Raids-BC", 8)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240206211659")
+mod:SetRevision("20240220023630")
 mod:SetCreatureID(16151, 16152)--15550
 mod:SetEncounterID(652, 2444)
 mod:SetModelID(16416)

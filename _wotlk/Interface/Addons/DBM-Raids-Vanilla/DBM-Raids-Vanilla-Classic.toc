@@ -21,7 +21,7 @@
 ## X-DBM-Mod-MapID: 533, 531, 509, 309, 469, 409, 249, 90, 48
 ## X-DBM-Mod-MinCoreRevision: 20230521000000
 ## X-DBM-Mod-MinExpansion: 0
-## Version: 5423cd1
+## Version: 07305e1
 
 localization.en.lua
 localization.tw.lua
@@ -104,10 +104,10 @@ MC\Ragnaros.lua
 
 VanillaOnyxia\Onyxia.lua
 
-VanillaSoD_Gnomeregan\CrowdPummeler.lua
 VanillaSoD_Gnomeregan\Grubbis.lua
-VanillaSoD_Gnomeregan\Electrocutioner6000.lua
 VanillaSoD_Gnomeregan\ViscousFallout.lua
+VanillaSoD_Gnomeregan\Electrocutioner6000.lua
+VanillaSoD_Gnomeregan\CrowdPummeler.lua
 VanillaSoD_Gnomeregan\MechanicalMenagerie.lua
 VanillaSoD_Gnomeregan\MekgineerThermaplugg.lua
 

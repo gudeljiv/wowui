@@ -21,9 +21,9 @@ if (type == "classic") then
 	L["Overlord Runthak"] = "Señor Supremo Runthak";
 	L["rend"] = "Desgarro"
 	L["rendFirstYellMsg"] = "Desgarro caerá en 6 segundos.";
-	L["rendBuffDropped"] = "Bendición de Jefe de Guerra (Desgarro) ha caído."
-	L["onyxiaBuffDropped"] = "Recobrar el llanto del cazadragones (Onyxia) ha caído.";
-	L["nefarianBuffDropped"] = "Recobrar el llanto del cazadragones (Nefarian) ha caído.";
+	L["rendBuffDropped"] = "Bendición de Jefe de Guerra (Desgarro) se ha caído."
+	L["onyxiaBuffDropped"] = "Recobrar el llanto del cazadragones (Onyxia) se ha caído.";
+	L["nefarianBuffDropped"] = "Recobrar el llanto del cazadragones (Nefarian) se ha caído.";
 	L["soundsRendDropTitle"] = "Beneficio de Desgarro";
 	L["soundsRendDropDesc"] = "Sonido para reproducir para Desgarro cuando obtienes el beneficio.";
 	L["logonRendTitle"] = "Desgarro";
@@ -47,9 +47,9 @@ else
 	L["Overlord Runthak"] = "Señor supremo Runthak";
 	L["rend"] = "Rend"
 	L["rendFirstYellMsg"] = "Rend caerá en 6 segundos.";
-	L["rendBuffDropped"] = "Bendición del Jefe de Guerra (Rend) ha caído."
-	L["onyxiaBuffDropped"] = "Berrido de convocación del matadragones (Onyxia) ha caído.";
-	L["nefarianBuffDropped"] = "Berrido de convocación del matadragones (Nefarian) ha caído.";
+	L["rendBuffDropped"] = "Bendición del Jefe de Guerra (Rend) se ha caído."
+	L["onyxiaBuffDropped"] = "Berrido de convocación del matadragones (Onyxia) se ha caído.";
+	L["nefarianBuffDropped"] = "Berrido de convocación del matadragones (Nefarian) se ha caído.";
 	L["soundsRendDropTitle"] = "Beneficio de Rend";
 	L["soundsRendDropDesc"] = "Sonido para reproducir para Rend cuando obtienes el beneficio.";
 	L["logonRendTitle"] = "Rend";
@@ -104,7 +104,7 @@ L["Thrall"] = "Thrall";
 --Horde The Barrens Rend buff NPC.
 L["Herald of Thrall"] = "Heraldo de Thrall";
 --Horde rend buff NPC first yell string (part of his first yell msg before before buff).
---L["Rend Blackhand, has fallen"] = "¡El falso Jefe de Guerra Rend Puño Negro ha caído!";
+--L["Rend Blackhand, has fallen"] = "¡El falso Jefe de Guerra Rend Puño Negro se ha caído!";
 --Horde rend buff NPC second yell string (part of his second yell msg before before buff).
 --L["Be bathed in my power"] = "";
 
@@ -197,9 +197,9 @@ L["buffResetsIn"] = "%s reiniciará en %s";
 --L["rendFirstYellMsg"] = "Rend caerá en 6 segundos.";
 L["onyxiaFirstYellMsg"] = "Onyxia caerá en 14 segundos.";
 L["nefarianFirstYellMsg"] = "Nefarian caerá en 15 segundos.";
---L["rendBuffDropped"] = "Bendición del Jefe de Guerra (Rend) ha caído.";
---L["onyxiaBuffDropped"] = "Berrido de convocación del matadragones (Onyxia) ha caído.";
---L["nefarianBuffDropped"] = "Berrido de convocación del matadragones (Nefarian) ha caído.";
+--L["rendBuffDropped"] = "Bendición del Jefe de Guerra (Rend) se ha caído.";
+--L["onyxiaBuffDropped"] = "Berrido de convocación del matadragones (Onyxia) se ha caído.";
+--L["nefarianBuffDropped"] = "Berrido de convocación del matadragones (Nefarian) se ha caído.";
 L["newSongflowerReceived"] = "Se recibió un nuevo temporizador de Cantaflor."; --New songflower timer received
 L["songflowerPicked"] = "Cantaflor se recogió en %s, la próxima aparición será en 25 minutos."; -- Guild msg when songflower picked.
 L["North Felpaw Village"] = "Al norte del Poblado Zarpavil";
@@ -491,7 +491,7 @@ L["filterYellsTitle"] = "Anuncio";
 L["filterYellsDesc"] = "Filtra el mensaje cuando un beneficio esté a punto de caer en unos segundos (Onyxia caerá en 14 segundos).";
 
 L["filterDropsTitle"] = "Beneficio caído";
-L["filterDropsDesc"] = "Filtra el mensaje cuando ha caído un beneficio (Ha caído el Berrido de convocación del matadragones (Onyxia)).";
+L["filterDropsDesc"] = "Filtra el mensaje cuando se ha caído un beneficio (Se ha caído el Berrido de convocación del matadragones (Onyxia)).";
 
 L["filterTimersTitle"] = "Temporizador";
 L["filterTimersDesc"] = "Filtra mensajes del temporizador (Onyxia se reinicia en 1 minuto).";
@@ -627,8 +627,8 @@ L["disableLayerButton"] = "Desactivar capa";
 L["enableLayerButtonTooltip"] = "Haz clic para volver a activar esta capa,\nSe volverá a poner en el temporizador y en los cálculos de capas.";
 L["disableLayerButtonTooltip"] = "Haz clic para desactivar la capa antigua tras reiniciar el servidor.\nEl addon lo ignorará y lo eliminará más tarde.";
 
-L["minimapLayerHoverTitle"] = "Pasar el mouse";
-L["minimapLayerHoverDesc"] = "¿Muestra sólo el marco numérico de la capa del minimapa cuando pasa el mouse sobre el minimapa?";
+L["minimapLayerHoverTitle"] = "Pasar el ratón";
+L["minimapLayerHoverDesc"] = "¿Muestra sólo el marco numérico de la capa del minimapa cuando pasa el ratón sobre el minimapa?";
 
 L["Blackrock Mountain"] = "Montaña Roca Negra";
 
@@ -932,27 +932,27 @@ L["sodHeaderText"] = "Opciones de Temporada de descubrimiento";
 --L["disableOnlyNefRendBelowMaxLevelNumTitle"] = "Ony/Nef/Rend nivel mínimo";
 --L["disableOnlyNefRendBelowMaxLevelNumDesc"] = "¿Debajo de qué nivel deberíamos ocultar los iconos Ony/Nef/Rend del mapa de la ciudad y el tooltip del botón del minimapa?";
 
-L["soundsBlackfathomBoonTitle"] = "Sonido de Brazanegra";
-L["soundsBlackfathomBoonDesc"] = "¿Reproduce un sonido cuando se obtiene el beneficio de Bendición Brazanegra?";
+L["soundsBlackfathomBoonTitle"] = "Sonido de beneficios";
+L["soundsBlackfathomBoonDesc"] = "¿Reproduce un sonido cuando se obtiene un beneficio de temporada de descubrimiento?";
 
-L["soundsAshenvaleStartsSoonTitle"] = "Sonido de Vallefresno";
-L["soundsAshenvaleStartsSoonDesc"] = "¿Reproduce un sonido cuando Vallefresno está a punto de comenzar?";
+L["soundsAshenvaleStartsSoonTitle"] = "Sonido de inicio de evento";
+L["soundsAshenvaleStartsSoonDesc"] = "¿Reproduce un sonido cuando un evento de temporada de descubrimiento está a punto de comenzar?";
 
-L["blackfathomBoomBuffDropped"] = "El beneficio de Bendición Brazanegra ha caído.";
+L["blackfathomBoomBuffDropped"] = "El beneficio de Bendición Brazanegra se ha caído.";
 
-L["showAshenvaleOverlayTitle"] = "Vallefresno";
-L["showAshenvaleOverlayDesc"] = "¿Muestra una superposición de progreso de Vallefresno en tu IU de forma permanente?";
+L["showAshenvaleOverlayTitle"] = "Superposición";
+L["showAshenvaleOverlayDesc"] = "¿Muestra una superposición de temporizadores móvil en tu IU de forma permanente?";
 
 L["lockAshenvaleOverlayTitle"] = "Bloquear";
-L["lockAshenvaleOverlayDesc"] = "Bloquea la superposición de Vallefresno para que ignora el paso del mouse.";
+L["lockAshenvaleOverlayDesc"] = "Bloquea la superposición de temporizadores para que ignore el paso del ratón.";
 
-L["ashenvaleOverlayScaleTitle"] = "Escala de superposición";
-L["ashenvaleOverlayScaleDesc"] = "Establece el tamaño de la superposición de Vallefresno.";
+L["ashenvaleOverlayScaleTitle"] = "Escala de la superposición";
+L["ashenvaleOverlayScaleDesc"] = "Establece el tamaño de la superposición de temporizadores.";
 
-L["ashenvaleOverlayText"] = "|cFFFFFF00-Superposición para mostrar siempre el progreso de Vallefresno en tu IU-";
+L["ashenvaleOverlayText"] = "|cFFFFFF00-Superposición para mostrar siempre los temporizadores en tu interfaz de usuario-";
 L["layersNoteText"] = "|cFFFF6900Nota sobre capas:|r |cFF9CD6DENWB tiene un límite de seguimiento de 10 capas como máximo, esto es para que el tamaño de los datos no sea demasiado grande para compartirlo fácilmente entre los jugadores. En la mayoría de los reinos Temporada con una gran población en este momento hay más de 10 capas, por lo que si no muestra en qué capa estás, entonces la razón es porque no estás en una de las 10 capas registradas. Es probable que vuelva a bajar por debajo de 10 una vez que el entusiasmo por el lanzamiento se desvanezca un poco, pero hasta entonces puede que no sea confiable, lo siento.|r";
 
-L["Mouseover char names for extra info"] = "Pasar el mouse sobre nombres de personajes para más info.";
+L["Mouseover char names for extra info"] = "Pasar el ratón sobre nombres de personajes para más info.";
 L["Show Stats"] = "Estadísticas"; --Can't be any longer than this.
 L["Event Running"] = "En progreso";
 
@@ -994,7 +994,7 @@ L["You have no guild, this command shows guild members only."] = "No tienes herm
 
 --New.
 
-L["ashenvaleOverlayFontTitle"] = "Fuente superpuesta";
+L["ashenvaleOverlayFontTitle"] = "Fuente de la superposición";
 L["ashenvaleOverlayFontDesc"] = "Qué fuente usar para pantallas superpuestas.";
 
 L["minimapLayerFontTitle"] = "Fuente de capa de minimapa";
@@ -1030,6 +1030,7 @@ L["Orgrimmar"] = "Orgrimmar";
 L["Stormwind"] = "Ventormenta";
 L["Dalaran"] = "Dalaran";
 L["left"] = "restante";
+L["remaining"] = "restante";
 
 L["Online"] = "Conectado";
 L["Offline"] = "Desconectado";
@@ -1037,5 +1038,39 @@ L["Rested"] = "Descansado";
 L["Not Rested"] = "No Descansado";
 L["No zones mapped for this layer yet."] = "Aún no hay zonas mapeadas para esta capa.";
 L["Cooldown"] = "Reutilización";
-L["dmfLogonBuffResetMsg"] = "Estos personajes estuvieron desconectados más de 8 horas en un área descansada y el tiempo de reutilización de el beneficio de Feria se reinició";
+L["dmfLogonBuffResetMsg"] = "Estos personajes estuvieron desconectados más de 8 horas en un área descansada y el tiempo de reutilización del beneficio de la Feria de la Luna Negra se reinició";
 L["dmfOfflineStatusTooltip"] = "Reutilización de Feria más de 8 horas sin conexión en estado de área de descanso";
+L["chronoboonReleased"] = "Reubicador cronológico sobrecargado ha restablecido el beneficio de la Feria de la Luna Negra. Ha comenzado un nuevo tiempo de reutilización de 4 horas.";
+
+L["Stranglethorn"] = "Tuercespina"; --One word shorter version of Strangethorn Vale to fit better.
+L["ashenvaleEventRunning"] = "La batalla por Vallefresno está en progreso: %s";
+L["ashenvaleEventStartsIn"] = "La batalla por Vallefresno comenzará en %s";
+L["ashenvaleStartSoon"] = "La batalla por Vallefresno comenzará en %s"; -- Guild chat msg.
+L["stranglethornEventRunning"] = "La Luna Sangrienta está en progreso: %s";
+L["stranglethornEventStartsIn"] = "La Luna Sangrienta comenzará en %s";
+L["stranglethornStartSoon"] = "La Luna Sangrienta comenzará en %s"; -- Guild chat msg.
+L["Spark of Inspiration"] = "Chispa de inspiración"; --Phase 2 SoD world buff.
+L["specificBuffDropped"] = "El beneficio de %s se ha caído.";
+L["3 day raid reset"] = "Reinicio de la banda de 3 días";
+L["Darkmoon Faire is up"] = "La Feria de la Luna Negra está disponible";
+L["dmfAbbreviation"] = "Feria";
+L["Ashenvale PvP Event"] = "La batalla por Vallefresno";
+L["Stranglethorn PvP Event"] = "La Luna Sangrienta";
+
+L["overlayShowArtTitle"] = "Superposición de arte";
+L["overlayShowArtDesc"] = "¿Muestra superposición de arte?";
+
+L["overlayShowAshenvaleTitle"] = "Superposición de Vallefresno";
+L["overlayShowAshenvaleDesc"] = "¿Muestra la superposición del temporizador de Vallefresno?";
+
+L["overlayShowStranglethornTitle"] = "Superposición de Tuercespina";
+L["overlayShowStranglethornDesc"] = "¿Muestra la superposición del temporizador de Tuercespina?";
+
+L["sodMiddleScreenWarningTitle"] = "Anuncios en el medio de pantalla";
+L["sodMiddleScreenWarningDesc"] = "¿Muestra anuncio de 15/30 minutos en el medio de la pantalla para eventos de JcJ?";
+
+L["stvBossMarkerTooltip"] = "Marcador de jefe NWB (experimental)";
+L["Boss"] = "Jefe"; --Abbreviate if too long, this text sits below a map marker.
+L["stvBossSpotted"] = "¡Jefe Loa avistado! Mira el mapa para la ubicación.";
+L["Total coins this event"] = "Moneda total en este evento"; --Keep it short, it prints to chat when you hand in coins.
+L["Last seen"] = "Última vez visto";

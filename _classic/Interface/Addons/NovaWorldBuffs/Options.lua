@@ -1615,9 +1615,18 @@ function NWB:loadSpecificOptions()
 			values = function()
 				return NWB:getSounds("ashenvaleStartSoon");
 			end,
-			order = 26,
+			order = 25,
 			get = "getSoundsAshenvaleStartsSoon",
 			set = "setSoundsAshenvaleStartsSoon",
+		};
+		NWB.options.args["sodMiddleScreenWarning"] = {
+			type = "toggle",
+			name = L["sodMiddleScreenWarningTitle"],
+			desc = L["sodMiddleScreenWarningDesc"],
+			order = 26,
+			get = "getSodMiddleScreenWarning",
+			set = "setSodMiddleScreenWarning",
+			width = 1.2,
 		};
 		NWB.options.args["ashenvaleOverlayText"] = {
 			type = "description",
@@ -1627,7 +1636,7 @@ function NWB:loadSpecificOptions()
 		};
 		NWB.options.args["showAshenvaleOverlay"] = {
 			type = "toggle",
-			name = L["showAshenvaleOverlayTitle"],
+			name = "|cFF00FF00" .. L["showAshenvaleOverlayTitle"],
 			desc = L["showAshenvaleOverlayDesc"],
 			order = 28,
 			get = "getShowAshenvaleOverlay",
@@ -1655,13 +1664,37 @@ function NWB:loadSpecificOptions()
 			step = 0.1,
 			width = 1.2,
 		};
+		NWB.options.args["overlayShowArt"] = {
+			type = "toggle",
+			name = L["overlayShowArtTitle"],
+			desc = L["overlayShowArtDesc"],
+			order = 31,
+			get = "getOverlayShowArt",
+			set = "setOverlayShowArt",
+		};
+		NWB.options.args["overlayShowAshenvale"] = {
+			type = "toggle",
+			name = L["overlayShowAshenvaleTitle"],
+			desc = L["overlayShowAshenvaleDesc"],
+			order = 32,
+			get = "getOverlayShowAshenvale",
+			set = "setOverlayShowAshenvale",
+		};
+		NWB.options.args["overlayShowStranglethorn"] = {
+			type = "toggle",
+			name = L["overlayShowStranglethornTitle"],
+			desc = L["overlayShowStranglethornDesc"],
+			order = 33,
+			get = "getOverlayShowStranglethorn",
+			set = "setOverlayShowStranglethorn",
+		};
 		NWB.options.args["ashenvaleOverlayFont"] = {
 			type = "select",
 			name = L["ashenvaleOverlayFontTitle"],
 			desc = L["ashenvaleOverlayFontDesc"],
 			values = NWB.LSM:HashTable("font"),
 			dialogControl = "LSM30_Font",
-			order = 31,
+			order = 34,
 			get = "getAshenvaleOverlayFont",
 			set = "setAshenvaleOverlayFont",
 		};
@@ -1669,7 +1702,7 @@ function NWB:loadSpecificOptions()
 			type = "description",
 			name = "|cFF9CD6DE" .. L["layersNoteText"],
 			fontSize = "medium",
-			order = 32,
+			order = 35,
 		};
 	end
 end
@@ -1879,6 +1912,11 @@ NWB.optionDefaults = {
 		lockAshenvaleOverlay = false,
 		ashenvaleOverlayScale = 1,
 		ashenvaleOverlayFont = "NWB Default",
+		overlayShowArt = true,
+		overlayShowAshenvale = true,
+		overlayShowStranglethorn = true,
+		showStvBoss = false,
+		sodMiddleScreenWarning = false,
 	},
 };
 
@@ -2149,17 +2187,12 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.66;
+	linesVersion = 2.68;
 	local lines = {
-		"-Added DMF map markers back to SoD with the new 2 week rotation, using original classic spawn times so please tell me if it isn't right for your region.",
-		"-Added tracking of offline time in the /buffs window, if DMF is up and an alt is on buff cooldown there will be text beside the name showing how long it's been offline.",
-		"-If an alt has been offline for 8+ hours in a rested area you will be told at logon that the DMF cooldown has reset.",
-		"-Added font options for the Ashenvale overlay.",
-		"-Added font and text size options for the minimap layer text under General Options (keep in mind some fonts won't fit properly in the small area).",
-		"-Increased the main timers window and buffs window default sizes a bit (reminder both these windows can be resized in options).",
-		"-Increased cooldown between guild msgs for ashenvale starts soon to 20mins (since now it's get stuck at 99% and doesn't actually start soon...)",
-		"-Increased cooldown between blackfathom boon dropped sound msgs to 5mins, it drops so often now and the sound is kinda spammy.",
-		"-Added esES Spanish and esMX Spanish (Latin America) locale translations thanks to Spanish user Cruzluz.",
+		" ",
+		"Aded a total Copper Blood Coin counter for STV event (shows in chat when you hand in).",
+		"Added a 30 min guild chat warning for STV event.",
+		"Added seperate options for what's displayed on the timers overlay (artwork/ashenvale/stv).",
 	};
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
@@ -4066,9 +4099,18 @@ function NWB:getSoundsAshenvaleStartsSoon(info)
 	return self.db.global.soundsAshenvaleStartsSoon;
 end
 
+function NWB:setSodMiddleScreenWarning(info, value)
+	self.db.global.sodMiddleScreenWarning = value;
+	NWB:setOverlayState();
+end
+
+function NWB:getSodMiddleScreenWarning(info)
+	return self.db.global.sodMiddleScreenWarning;
+end
+
 function NWB:setShowAshenvaleOverlay(info, value)
 	self.db.global.showAshenvaleOverlay = value;
-	NWB:setAshenvaleOverlayState();
+	NWB:setOverlayState();
 end
 
 function NWB:getShowAshenvaleOverlay(info)
@@ -4077,7 +4119,7 @@ end
 
 function NWB:setLockAshenvaleOverlay(info, value)
 	self.db.global.lockAshenvaleOverlay = value;
-	NWB:setAshenvaleOverlayState();
+	NWB:setOverlayState();
 end
 
 function NWB:getLockAshenvaleOverlay(info)
@@ -4086,7 +4128,7 @@ end
 
 function NWB:setAshenvaleOverlayScale(info, value)
 	self.db.global.ashenvaleOverlayScale = value;
-	NWB:refreshAshenvaleOverlay();
+	NWB:refreshOverlay();
 end
 
 function NWB:getAshenvaleOverlayScale(info)
@@ -4096,11 +4138,38 @@ end
 --Ashenvale overlay font.
 function NWB:setAshenvaleOverlayFont(info, value)
 	self.db.global.ashenvaleOverlayFont = value;
-	NWB:refreshAshenvaleOverlay();
+	NWB:refreshOverlay();
 end
 
 function NWB:getAshenvaleOverlayFont(info)
 	return self.db.global.ashenvaleOverlayFont;
+end
+
+function NWB:setOverlayShowArt(info, value)
+	self.db.global.overlayShowArt = value;
+	NWB:refreshOverlay();
+end
+
+function NWB:getOverlayShowArt(info)
+	return self.db.global.overlayShowArt;
+end
+
+function NWB:setOverlayShowAshenvale(info, value)
+	self.db.global.overlayShowAshenvale = value;
+	NWB:refreshOverlay();
+end
+
+function NWB:getOverlayShowAshenvale(info)
+	return self.db.global.overlayShowAshenvale;
+end
+
+function NWB:setOverlayShowStranglethorn(info, value)
+	self.db.global.overlayShowStranglethorn = value;
+	NWB:refreshOverlay();
+end
+
+function NWB:getOverlayShowStranglethorn(info)
+	return self.db.global.overlayShowStranglethorn;
 end
 
 --Minimap layer display font.
