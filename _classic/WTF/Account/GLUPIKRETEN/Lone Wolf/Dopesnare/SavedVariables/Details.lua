@@ -7,12 +7,11 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 293,
 					["tipo"] = 2,
+					["combatId"] = 293,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005144,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -21,7 +20,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 799.005144,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -29,50 +30,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Stormer"] = 799,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544777,
+							["totalabsorbed"] = 0.005144,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Stormer"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 107,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 107,
 										},
@@ -93,14 +64,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
+										["n_max"] = 107,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Stormer"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 73,
+										["b_dmg"] = 53,
 										["targets"] = {
 											["Galak Stormer"] = 263,
 										},
@@ -121,14 +120,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 137,
 										["n_amt"] = 2,
-										["b_dmg"] = 53,
+										["n_max"] = 73,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 32,
 										},
@@ -149,20 +148,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 133.5459040613413,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544777,
 							["damage_taken"] = 0.005144,
 							["start_time"] = 1708544771,
 							["delay"] = 0,
-							["last_event"] = 1708544777,
+							["last_dps"] = 133.5459040613413,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -174,32 +174,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 381.005913,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Stormer"] = true,
 							},
 							["targets"] = {
 								["Galak Stormer"] = 381,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544777,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 54,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 257,
 										},
@@ -220,14 +219,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 105,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 54,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 72,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 72,
 										},
@@ -248,14 +247,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 72,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 52,
 										},
@@ -276,36 +275,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 63.68141617909502,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544777,
 							["damage_taken"] = 46.005913,
 							["start_time"] = 1708544771,
 							["delay"] = 0,
-							["last_event"] = 1708544777,
+							["last_dps"] = 63.68141617909502,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00642,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 46.00642,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 46.00642,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4097-000056521B",
-							["aID"] = "4097",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -313,20 +312,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 46,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00642,
+							["fight_component"] = true,
 							["end_time"] = 1708544777,
+							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 23,
+										["b_dmg"] = 23,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 46,
@@ -349,141 +349,141 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 23,
+										["n_max"] = 23,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544775,
 							["damage_taken"] = 799.0064199999999,
 							["start_time"] = 1708544771,
 							["delay"] = 0,
-							["last_event"] = 1708544775,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 293,
 					["tipo"] = 3,
+					["combatId"] = 293,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 293,
 					["tipo"] = 7,
+					["combatId"] = 293,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 293,
 					["tipo"] = 9,
+					["combatId"] = 293,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 18,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[14318] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[6150] = {
-										["activedamt"] = 1,
-										["id"] = 6150,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 6150,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 18,
 							["debuff_uptime"] = 5,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544777,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 293,
 					["tipo"] = 2,
+					["combatId"] = 293,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -500,43 +500,60 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6176,
 				["playing_solo"] = true,
 				["totals"] = {
-					3357, -- [1]
-					331, -- [2]
+					4856, -- [1]
+					957, -- [2]
 					{
 						0, -- [1]
-						[0] = 319,
+						[0] = 722,
 						["alternatepower"] = 0,
-						[3] = 120,
+						[3] = 280,
 						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					799, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
+					["Dopecat <Dopesnare>"] = {
+						["Bite"] = 1,
+					},
 					["Dopecat"] = {
 						["Growl"] = 1,
 						["Claw"] = 1,
-					},
-					["Dopecat <Dopesnare>"] = {
-						["Bite"] = 1,
 					},
 					["Dopesnare"] = {
 						["Auto Shot"] = 3,
@@ -556,46 +573,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634377.041,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:46:12",
-				["end_time"] = 634377.041,
-				["combat_id"] = 293,
-				["frags"] = {
-					["Galak Stormer"] = 1,
-				},
-				["combat_counter"] = 6176,
-				["totals_grupo"] = {
-					799, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -604,21 +593,31 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634377.041,
+				["combat_id"] = 293,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 634370.642,
 				["contra"] = "Galak Stormer",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:46:12",
+				["start_time"] = 634370.642,
 				["TimeData"] = {
+				},
+				["frags"] = {
+					["Galak Stormer"] = 1,
 				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 292,
 					["tipo"] = 2,
+					["combatId"] = 292,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.002226,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -627,7 +626,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 800.0022260000001,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -635,50 +636,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Stormer"] = 800,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544762,
+							["totalabsorbed"] = 0.002226,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Stormer"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 95,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 95,
 										},
@@ -699,14 +670,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
+										["n_max"] = 95,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Stormer"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 71,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 279,
 										},
@@ -727,14 +726,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 71,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 32,
 										},
@@ -755,20 +754,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 87.26027770445832,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544760,
 							["damage_taken"] = 0.002226,
 							["start_time"] = 1708544752,
 							["delay"] = 0,
-							["last_event"] = 1708544760,
+							["last_dps"] = 87.26027770445832,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -780,32 +780,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 362.005582,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Stormer"] = true,
 							},
 							["targets"] = {
 								["Galak Stormer"] = 362,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544762,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 201,
 										},
@@ -827,14 +826,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 100,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 53,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 0,
 										},
@@ -856,14 +855,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 161,
 										},
@@ -884,36 +883,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 55,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 39.48577465068711,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544760,
 							["damage_taken"] = 111.005582,
 							["start_time"] = 1708544752,
 							["delay"] = 0,
-							["last_event"] = 1708544760,
+							["last_dps"] = 39.48577465068711,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005185,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 111.005185,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 111.005185,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4097-0000565230",
-							["aID"] = "4097",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -921,20 +920,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 111,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005185,
+							["fight_component"] = true,
 							["end_time"] = 1708544762,
+							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 27,
 										},
@@ -955,14 +955,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 27,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9532] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 84,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 84,
 										},
@@ -982,143 +982,143 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 84,
 										["r_amt"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544757,
 							["damage_taken"] = 800.005185,
 							["start_time"] = 1708544754,
 							["delay"] = 0,
-							["last_event"] = 1708544757,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 292,
 					["tipo"] = 3,
+					["combatId"] = 292,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 292,
 					["tipo"] = 7,
+					["combatId"] = 292,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 292,
 					["tipo"] = 9,
+					["combatId"] = 292,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 27,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 27,
 							["debuff_uptime"] = 6,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544762,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4097-0000565230",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4097-0000565230",
+							["aID"] = "4097",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 292,
 					["tipo"] = 2,
+					["combatId"] = 292,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1153,17 +1153,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					800, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -1196,46 +1215,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634361.241,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:45:53",
-				["end_time"] = 634361.241,
-				["combat_id"] = 292,
-				["frags"] = {
-					["Galak Stormer"] = 1,
-				},
-				["combat_counter"] = 6175,
-				["totals_grupo"] = {
-					800, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -1244,21 +1235,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634361.241,
+				["combat_id"] = 292,
+				["frags"] = {
+					["Galak Stormer"] = 1,
+				},
+				["combat_counter"] = 6175,
+				["contra"] = "Galak Stormer",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634352.073,
-				["contra"] = "Galak Stormer",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:45:53",
 			}, -- [2]
 			{
 				{
-					["combatId"] = 291,
 					["tipo"] = 2,
+					["combatId"] = 291,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00631,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -1267,7 +1266,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1216.00631,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -1275,22 +1276,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Mauler"] = 1216,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544726,
+							["totalabsorbed"] = 0.00631,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 138,
 										},
@@ -1311,14 +1310,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 70,
 										["r_amt"] = 0,
 									}, -- [1]
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 102,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 102,
 										},
@@ -1339,14 +1338,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 102,
 										["r_amt"] = 0,
 									},
 									[2974] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 4,
 										},
@@ -1367,14 +1366,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 4,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 32,
 										},
@@ -1395,14 +1394,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[14262] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 96,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 96,
 										},
@@ -1424,14 +1423,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 96,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 80,
 										},
@@ -1452,14 +1451,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 185,
 										},
@@ -1480,20 +1479,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 64,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 61.20734433995475,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544725,
 							["damage_taken"] = 0.00631,
 							["start_time"] = 1708544706,
 							["delay"] = 0,
-							["last_event"] = 1708544725,
+							["last_dps"] = 61.20734433995475,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1505,32 +1505,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 579.003631,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Mauler"] = true,
 							},
 							["targets"] = {
 								["Galak Mauler"] = 579,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544726,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 42,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 407,
 										},
@@ -1539,12 +1538,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 10,
 										["DODGE"] = 2,
-										["total"] = 407,
-										["c_max"] = 91,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 91,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1553,14 +1552,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 249,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 42,
+										["total"] = 407,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 41,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 119,
 										},
@@ -1581,14 +1580,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 41,
 										["r_amt"] = 0,
 									},
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 53,
 										},
@@ -1609,36 +1608,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 53,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 29.14398907740956,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544725,
 							["damage_taken"] = 225.003631,
 							["start_time"] = 1708544706,
 							["delay"] = 0,
-							["last_event"] = 1708544725,
+							["last_dps"] = 29.14398907740956,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001248,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 225.001248,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 225.001248,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4095-00005651F6",
-							["aID"] = "4095",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -1646,20 +1645,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 225,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001248,
+							["fight_component"] = true,
 							["end_time"] = 1708544726,
+							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 58,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 225,
@@ -1669,12 +1669,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 6,
 										["a_amt"] = 0,
-										["total"] = 225,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1683,14 +1683,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 58,
+										["total"] = 225,
 									}, -- [1]
 									[13730] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -1709,176 +1709,176 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544720,
 							["damage_taken"] = 1216.001248,
 							["start_time"] = 1708544706,
 							["delay"] = 0,
-							["last_event"] = 1708544720,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 291,
 					["tipo"] = 3,
+					["combatId"] = 291,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 291,
 					["tipo"] = 7,
+					["combatId"] = 291,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 291,
 					["tipo"] = 9,
+					["combatId"] = 291,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2974] = {
-										["activedamt"] = 0,
-										["id"] = 2974,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 2974,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 62,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 20,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[14318] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 20,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[415320] = {
-										["activedamt"] = 1,
-										["id"] = 415320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 415320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 20,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 62,
 							["debuff_uptime"] = 21,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544726,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4095-00005651F6",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4095-00005651F6",
+							["aID"] = "4095",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 291,
 					["tipo"] = 2,
+					["combatId"] = 291,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1913,17 +1913,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1216, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -1940,8 +1959,8 @@ _detalhes_database = {
 					},
 					["Dopesnare"] = {
 						["Disengage"] = 1,
-						["Chimera Shot"] = 1,
 						["Raptor Strike"] = 2,
+						["Chimera Shot"] = 1,
 						["Auto Shot"] = 3,
 						["Concussive Shot"] = 1,
 						["Wing Clip"] = 1,
@@ -1960,46 +1979,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634325.289,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:45:07",
-				["end_time"] = 634325.289,
-				["combat_id"] = 291,
-				["frags"] = {
-					["Galak Mauler"] = 1,
-				},
-				["combat_counter"] = 6174,
-				["totals_grupo"] = {
-					1216, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2008,21 +1999,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634325.289,
+				["combat_id"] = 291,
+				["frags"] = {
+					["Galak Mauler"] = 1,
+				},
+				["combat_counter"] = 6174,
+				["contra"] = "Galak Mauler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634305.422,
-				["contra"] = "Galak Mauler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:45:07",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 290,
 					["tipo"] = 2,
+					["combatId"] = 290,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007159,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -2031,7 +2030,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 2101.007159,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -2041,22 +2042,20 @@ _detalhes_database = {
 								["Galak Stormer"] = 847,
 								["Galak Mauler"] = 1254,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544699,
+							["totalabsorbed"] = 0.007159,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 0,
 										},
@@ -2078,14 +2077,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 102,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 102,
 											["Galak Mauler"] = 100,
@@ -2108,14 +2107,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 102,
 										["r_amt"] = 0,
 									},
 									[2974] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 4,
 										},
@@ -2136,14 +2135,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 4,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 32,
 											["Galak Mauler"] = 32,
@@ -2165,14 +2164,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 64,
 										},
@@ -2193,14 +2192,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 64,
 										["r_amt"] = 0,
 									},
 									[14262] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 86,
 										},
@@ -2221,14 +2220,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 32,
 											["Galak Mauler"] = 64,
@@ -2250,14 +2249,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 68,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 330,
 											["Galak Mauler"] = 369,
@@ -2279,20 +2278,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 68,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 83.58890626613174,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544698,
 							["damage_taken"] = 118.007159,
 							["start_time"] = 1708544674,
 							["delay"] = 0,
-							["last_event"] = 1708544698,
+							["last_dps"] = 83.58890626613174,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -2304,11 +2304,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 886.005206,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Stormer"] = true,
 								["Galak Mauler"] = true,
@@ -2317,21 +2317,20 @@ _detalhes_database = {
 								["Galak Stormer"] = 351,
 								["Galak Mauler"] = 535,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544699,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["n_max"] = 53,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 189,
 											["Galak Mauler"] = 343,
@@ -2341,12 +2340,12 @@ _detalhes_database = {
 										["g_dmg"] = 108,
 										["counter"] = 14,
 										["MISS"] = 2,
-										["total"] = 532,
-										["c_max"] = 82,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 82,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -2355,14 +2354,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 152,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 53,
+										["total"] = 532,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Stormer"] = 162,
 											["Galak Mauler"] = 156,
@@ -2372,12 +2371,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 7,
 										["a_amt"] = 0,
-										["total"] = 318,
-										["c_max"] = 107,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["MISS"] = 1,
 										["id"] = 16830,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 107,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -2386,14 +2385,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 180,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 55,
+										["total"] = 318,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 36,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 36,
 										},
@@ -2414,36 +2413,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 36,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 35.24985900137942,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544706,
 							["damage_taken"] = 280.005206,
 							["start_time"] = 1708544674,
 							["delay"] = 0,
-							["last_event"] = 1708544706,
+							["last_dps"] = 35.24985900137942,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002638,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 288.002638,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 288.002638,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4095-0000D651F6",
-							["aID"] = "4095",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -2452,20 +2451,21 @@ _detalhes_database = {
 								["Dopesnare"] = 118,
 								["Dopecat <Dopesnare>"] = 170,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002638,
+							["fight_component"] = true,
 							["end_time"] = 1708544699,
+							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 118,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 118,
 											["Dopecat"] = 0,
@@ -2476,12 +2476,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 5,
 										["DODGE"] = 1,
-										["total"] = 288,
-										["c_max"] = 113,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 113,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -2490,14 +2490,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 113,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 118,
+										["total"] = 288,
 									}, -- [1]
 									[13730] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -2516,36 +2516,35 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544695,
 							["damage_taken"] = 1254.002638,
 							["start_time"] = 1708544680,
 							["delay"] = 0,
-							["last_event"] = 1708544695,
+							["last_dps"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005945,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 110.005945,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 110.005945,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4097-0000565216",
-							["aID"] = "4097",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -2553,20 +2552,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 110,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005945,
+							["fight_component"] = true,
 							["end_time"] = 1708544699,
+							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[9532] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 76,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 110,
 										},
@@ -2586,200 +2586,200 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 76,
 										["r_amt"] = 2,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544681,
 							["damage_taken"] = 847.005945,
 							["start_time"] = 1708544693,
 							["delay"] = 1708544681,
-							["last_event"] = 1708544681,
+							["last_dps"] = 0,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 290,
 					["tipo"] = 3,
+					["combatId"] = 290,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 290,
 					["tipo"] = 7,
+					["combatId"] = 290,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 290,
 					["tipo"] = 9,
+					["combatId"] = 290,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 2,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2974] = {
-										["activedamt"] = 0,
-										["id"] = 2974,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 2974,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 88,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[6150] = {
-										["activedamt"] = 1,
-										["id"] = 6150,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 6150,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[415320] = {
-										["activedamt"] = 1,
-										["id"] = 415320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 415320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 88,
 							["debuff_uptime"] = 27,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544699,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4097-0000565216",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4097-0000565216",
+							["aID"] = "4097",
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4095-0000D651F6",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4095-0000D651F6",
+							["aID"] = "4095",
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 290,
 					["tipo"] = 2,
+					["combatId"] = 290,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2796,9 +2796,7 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6173,
 				["playing_solo"] = true,
 				["totals"] = {
 					2499, -- [1]
@@ -2813,32 +2811,51 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2101, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
-					["Galak Mauler"] = {
-						["Demoralizing Shout"] = 1,
-					},
 					["Dopecat"] = {
 						["Growl"] = 2,
 						["Claw"] = 6,
 					},
+					["Galak Mauler"] = {
+						["Demoralizing Shout"] = 1,
+					},
 					["Dopesnare"] = {
 						["Disengage"] = 1,
-						["Chimera Shot"] = 3,
 						["Flanking Strike"] = 1,
 						["Raptor Strike"] = 1,
+						["Chimera Shot"] = 3,
 						["Auto Shot"] = 10,
 						["Concussive Shot"] = 1,
 						["Wing Clip"] = 1,
@@ -2863,47 +2880,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634298.139,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:44:34",
-				["end_time"] = 634298.139,
-				["combat_id"] = 290,
-				["frags"] = {
-					["Galak Stormer"] = 1,
-					["Galak Mauler"] = 1,
-				},
-				["combat_counter"] = 6173,
-				["totals_grupo"] = {
-					2101, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2912,21 +2900,32 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634298.139,
+				["combat_id"] = 290,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 634273.004,
 				["contra"] = "Galak Stormer",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:44:34",
+				["start_time"] = 634273.004,
 				["TimeData"] = {
+				},
+				["frags"] = {
+					["Galak Stormer"] = 1,
+					["Galak Mauler"] = 1,
 				},
 			}, -- [4]
 			{
 				{
-					["combatId"] = 289,
 					["tipo"] = 2,
+					["combatId"] = 289,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005557,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -2935,7 +2934,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1024.005557,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -2943,50 +2944,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Marauder"] = 1024,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544660,
+							["totalabsorbed"] = 0.005557,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[409493] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Galak Marauder"] = 64,
-										},
-										["n_total"] = 64,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 409493,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 103,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 196,
 										},
@@ -3007,14 +2978,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 103,
+										["r_amt"] = 0,
+									},
+									[409493] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Marauder"] = 64,
+										},
+										["n_total"] = 64,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 409493,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 69,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 320,
 										},
@@ -3035,14 +3034,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 69,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 48,
 										},
@@ -3063,20 +3062,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 91.69925288784349,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544659,
 							["damage_taken"] = 0.005557,
 							["start_time"] = 1708544649,
 							["delay"] = 0,
-							["last_event"] = 1708544659,
+							["last_dps"] = 91.69925288784349,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -3088,32 +3088,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 396.002752,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Marauder"] = true,
 							},
 							["targets"] = {
 								["Galak Marauder"] = 396,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544660,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 48,
+										["b_dmg"] = 31,
 										["targets"] = {
 											["Galak Marauder"] = 277,
 										},
@@ -3135,14 +3134,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 198,
 										["n_amt"] = 2,
-										["b_dmg"] = 31,
+										["n_max"] = 48,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 52,
 										},
@@ -3164,14 +3163,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["r_amt"] = 0,
 									},
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 67,
 										},
@@ -3192,36 +3191,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 67,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 35.46187445145863,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544657,
 							["damage_taken"] = 106.002752,
 							["start_time"] = 1708544649,
 							["delay"] = 0,
-							["last_event"] = 1708544657,
+							["last_dps"] = 35.46187445145863,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00894,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 106.00894,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 106.00894,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4099-00005651E6",
-							["aID"] = "4099",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopecat <Dopesnare>"] = true,
 								["Dopesnare"] = true,
@@ -3229,20 +3228,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 106,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00894,
+							["fight_component"] = true,
 							["end_time"] = 1708544660,
+							["aID"] = "4099",
 							["nome"] = "Galak Marauder",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 106,
@@ -3265,141 +3265,141 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 29,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544657,
 							["damage_taken"] = 1024.00894,
 							["start_time"] = 1708544649,
 							["delay"] = 0,
-							["last_event"] = 1708544657,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 289,
 					["tipo"] = 3,
+					["combatId"] = 289,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 289,
 					["tipo"] = 7,
+					["combatId"] = 289,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 289,
 					["tipo"] = 9,
+					["combatId"] = 289,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 33,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 33,
 							["debuff_uptime"] = 14,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544660,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 289,
 					["tipo"] = 2,
+					["combatId"] = 289,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3434,17 +3434,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1024, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -3474,46 +3493,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634259.22,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:44:09",
-				["end_time"] = 634259.22,
-				["combat_id"] = 289,
-				["frags"] = {
-					["Galak Marauder"] = 1,
-				},
-				["combat_counter"] = 6172,
-				["totals_grupo"] = {
-					1024, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -3522,21 +3513,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634259.22,
+				["combat_id"] = 289,
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["combat_counter"] = 6172,
+				["contra"] = "Galak Marauder",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634248.053,
-				["contra"] = "Galak Marauder",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:44:09",
 			}, -- [5]
 			{
 				{
-					["combatId"] = 288,
 					["tipo"] = 2,
+					["combatId"] = 288,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007759,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -3545,7 +3544,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1143.007759,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -3553,50 +3554,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Marauder"] = 1143,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544637,
+							["totalabsorbed"] = 0.007759,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Marauder"] = 64,
-										},
-										["n_total"] = 64,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 106,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 204,
 										},
@@ -3617,14 +3588,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 106,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Marauder"] = 64,
+										},
+										["n_total"] = 64,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 60,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 297,
 										},
@@ -3645,14 +3644,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 60,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 64,
 										},
@@ -3673,20 +3672,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 80.21107080701755,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544637,
 							["damage_taken"] = 0.007759,
 							["start_time"] = 1708544623,
 							["delay"] = 0,
-							["last_event"] = 1708544637,
+							["last_dps"] = 80.21107080701755,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -3698,32 +3698,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 514.007338,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Marauder"] = true,
 							},
 							["targets"] = {
 								["Galak Marauder"] = 514,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544637,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 48,
+										["b_dmg"] = 36,
 										["targets"] = {
 											["Galak Marauder"] = 447,
 										},
@@ -3745,14 +3744,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 273,
 										["n_amt"] = 4,
-										["b_dmg"] = 36,
+										["n_max"] = 48,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 67,
 										},
@@ -3773,14 +3772,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 67,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 0,
 										},
@@ -3802,36 +3801,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 36.07069038596492,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544637,
 							["damage_taken"] = 206.007338,
 							["start_time"] = 1708544623,
 							["delay"] = 0,
-							["last_event"] = 1708544637,
+							["last_dps"] = 36.07069038596492,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002403,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 206.002403,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 206.002403,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4099-00005651B7",
-							["aID"] = "4099",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -3839,20 +3838,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 206,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002403,
+							["fight_component"] = true,
 							["end_time"] = 1708544637,
+							["aID"] = "4099",
 							["nome"] = "Galak Marauder",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 206,
@@ -3875,29 +3875,31 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 62,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544634,
 							["damage_taken"] = 1143.002403,
 							["start_time"] = 1708544624,
 							["delay"] = 0,
-							["last_event"] = 1708544634,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 288,
 					["tipo"] = 3,
+					["combatId"] = 288,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -3910,29 +3912,22 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-022772AA",
 							["totalabsorb"] = 0.001175,
 							["last_hps"] = 8.000082456140351,
-							["aID"] = "5826-022772AA",
-							["fight_component"] = true,
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 114,
 							},
-							["serial"] = "Player-5826-022772AA",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.001175,
-							["healing_from"] = {
-							},
+							["last_event"] = 1708544636,
 							["healing_taken"] = 0.001175,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
+							["fight_component"] = true,
 							["end_time"] = 1708544637,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1708544634,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[3111] = {
 										["c_amt"] = 0,
@@ -3948,31 +3943,38 @@ _detalhes_database = {
 										["counter"] = 3,
 										["overheal"] = 0,
 										["total"] = 114,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["id"] = 3111,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 3,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+							},
+							["start_time"] = 1708544634,
 							["custom"] = 0,
-							["last_event"] = 1708544636,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001175,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 0.006385,
 							["total_without_pet"] = 0.006385,
 							["total"] = 0.006385,
@@ -3980,124 +3982,122 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["totalabsorb"] = 0.006385,
 							["last_hps"] = 0.0004649384693840138,
-							["fight_component"] = true,
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
 							["targets"] = {
 							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopesnare"] = true,
-							},
-							["totalover_without_pet"] = 0.006385,
 							["start_time"] = 1708544637,
+							["totalover_without_pet"] = 0.006385,
 							["healing_taken"] = 114.006385,
-							["classe"] = "PET",
+							["fight_component"] = true,
 							["end_time"] = 1708544637,
-							["targets_overheal"] = {
-							},
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["last_event"] = 0,
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006385,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["heal_enemy_amt"] = 0,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 288,
 					["tipo"] = 7,
+					["combatId"] = 288,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 288,
 					["tipo"] = 9,
+					["combatId"] = 288,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["serial"] = "Player-5826-022772AA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 13,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 42,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 42,
+							["fight_component"] = true,
 							["debuff_uptime"] = 13,
-							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
-							["last_event"] = 1708544637,
+							["aID"] = "5826-022772AA",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["serial"] = "Player-5826-022772AA",
+							["last_event"] = 1708544637,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -4105,19 +4105,19 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["fight_component"] = true,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
+							["grupo"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 288,
 					["tipo"] = 2,
+					["combatId"] = 288,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4152,17 +4152,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1143, -- [1]
+					114, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -4193,39 +4212,13 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634236.1190000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:43:43",
-				["end_time"] = 634236.1190000001,
-				["combat_id"] = 288,
-				["frags"] = {
-					["Galak Marauder"] = 1,
-				},
-				["combat_counter"] = 6171,
-				["totals_grupo"] = {
-					1143, -- [1]
-					114, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4234,8 +4227,6 @@ _detalhes_database = {
 							["Dopesnare"] = 114.001175,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Dopecat <Dopesnare>"] = 514.007338,
@@ -4243,21 +4234,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634236.1190000001,
+				["combat_id"] = 288,
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["combat_counter"] = 6171,
+				["contra"] = "Galak Marauder",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634221.8690000001,
-				["contra"] = "Galak Marauder",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:43:43",
 			}, -- [6]
 			{
 				{
-					["combatId"] = 287,
 					["tipo"] = 2,
+					["combatId"] = 287,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.0029,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -4266,7 +4265,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 791.0029,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -4274,50 +4275,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Windchaser"] = 791,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544614,
+							["totalabsorbed"] = 0.0029,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[409493] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Galak Windchaser"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 409493,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 103,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 103,
 										},
@@ -4338,14 +4309,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
+										["n_max"] = 103,
+										["r_amt"] = 0,
+									},
+									[409493] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Windchaser"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 409493,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 271,
 										},
@@ -4366,14 +4365,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 70,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 16,
 										},
@@ -4394,20 +4393,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 123.4977205302966,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544613,
 							["damage_taken"] = 0.0029,
 							["start_time"] = 1708544607,
 							["delay"] = 0,
-							["last_event"] = 1708544613,
+							["last_dps"] = 123.4977205302966,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -4419,32 +4419,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 369.007877,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Windchaser"] = true,
 							},
 							["targets"] = {
 								["Galak Windchaser"] = 369,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544614,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 50,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 257,
 										},
@@ -4465,14 +4464,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 109,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 112,
 										},
@@ -4494,36 +4493,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 112,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 57.61247103800005,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544613,
 							["damage_taken"] = 91.00787700000001,
 							["start_time"] = 1708544607,
 							["delay"] = 0,
-							["last_event"] = 1708544613,
+							["last_dps"] = 57.61247103800005,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006472,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 91.006472,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 91.006472,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4096-0000565254",
-							["aID"] = "4096",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -4531,20 +4530,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 91,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.006472,
+							["fight_component"] = true,
 							["end_time"] = 1708544614,
+							["aID"] = "4096",
 							["nome"] = "Galak Windchaser",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 91,
 										},
@@ -4565,141 +4565,141 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 25,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544613,
 							["damage_taken"] = 791.006472,
 							["start_time"] = 1708544607,
 							["delay"] = 0,
-							["last_event"] = 1708544613,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 287,
 					["tipo"] = 3,
+					["combatId"] = 287,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 287,
 					["tipo"] = 7,
+					["combatId"] = 287,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 287,
 					["tipo"] = 9,
+					["combatId"] = 287,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 21,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 21,
 							["debuff_uptime"] = 9,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544614,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 287,
 					["tipo"] = 2,
+					["combatId"] = 287,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4734,17 +4734,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					791, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -4774,46 +4793,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634212.6730000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:43:27",
-				["end_time"] = 634212.6730000001,
-				["combat_id"] = 287,
-				["frags"] = {
-					["Galak Windchaser"] = 1,
-				},
-				["combat_counter"] = 6170,
-				["totals_grupo"] = {
-					791, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -4822,21 +4813,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634212.6730000001,
+				["combat_id"] = 287,
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["combat_counter"] = 6170,
+				["contra"] = "Galak Windchaser",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634206.268,
-				["contra"] = "Galak Windchaser",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:43:27",
 			}, -- [7]
 			{
 				{
-					["combatId"] = 286,
 					["tipo"] = 2,
+					["combatId"] = 286,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.0062,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -4845,7 +4844,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1018.0062,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -4853,50 +4854,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 1018,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544602,
+							["totalabsorbed"] = 0.0062,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Wrangler"] = 32,
-										},
-										["n_total"] = 32,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 102,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 203,
 										},
@@ -4917,14 +4888,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 102,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Wrangler"] = 32,
+										},
+										["n_total"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 66,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 249,
 										},
@@ -4945,14 +4944,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 66,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 96,
 										},
@@ -4973,20 +4972,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 64,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 92.68082665747423,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544601,
 							["damage_taken"] = 0.0062,
 							["start_time"] = 1708544591,
 							["delay"] = 0,
-							["last_event"] = 1708544601,
+							["last_dps"] = 92.68082665747423,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -4998,32 +4998,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 438.00617,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 438,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544602,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 48,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 331,
 										},
@@ -5044,14 +5043,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 103,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 48,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -5073,14 +5072,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 54,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 107,
 										},
@@ -5102,36 +5101,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 54,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 39.87674526606438,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544601,
 							["damage_taken"] = 146.00617,
 							["start_time"] = 1708544591,
 							["delay"] = 0,
-							["last_event"] = 1708544601,
+							["last_dps"] = 39.87674526606438,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002965,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 146.002965,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 146.002965,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-000056524A",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -5139,20 +5138,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 146,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002965,
+							["fight_component"] = true,
 							["end_time"] = 1708544602,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 146,
@@ -5175,130 +5175,130 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 31,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544601,
 							["damage_taken"] = 1018.002965,
 							["start_time"] = 1708544591,
 							["delay"] = 0,
-							["last_event"] = 1708544601,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 286,
 					["tipo"] = 3,
+					["combatId"] = 286,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 286,
 					["tipo"] = 7,
+					["combatId"] = 286,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 286,
 					["tipo"] = 9,
+					["combatId"] = 286,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 33,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 33,
 							["debuff_uptime"] = 8,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544602,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 286,
 					["tipo"] = 2,
+					["combatId"] = 286,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5333,17 +5333,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1018, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -5373,46 +5392,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634201.318,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:43:11",
-				["end_time"] = 634201.318,
-				["combat_id"] = 286,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6169,
-				["totals_grupo"] = {
-					1018, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -5421,21 +5412,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634201.318,
+				["combat_id"] = 286,
+				["frags"] = {
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6169,
+				["contra"] = "Galak Wrangler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634190.334,
-				["contra"] = "Galak Wrangler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:43:11",
 			}, -- [8]
 			{
 				{
-					["combatId"] = 285,
 					["tipo"] = 2,
+					["combatId"] = 285,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002466,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -5444,7 +5443,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3124.002466,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -5456,22 +5457,20 @@ _detalhes_database = {
 								["Galak Stormer"] = 855,
 								["Galak Mauler"] = 1252,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544557,
+							["totalabsorbed"] = 0.002466,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 130,
 										},
@@ -5492,14 +5491,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 0,
 											["Galak Marauder"] = 0,
@@ -5522,14 +5521,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									}, -- [2]
 									[2974] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 4,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 4,
 										},
@@ -5550,14 +5549,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 4,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 69,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 564,
 											["Galak Marauder"] = 386,
@@ -5579,14 +5578,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 15,
-										["b_dmg"] = 0,
+										["n_max"] = 69,
 										["r_amt"] = 0,
 									},
 									[5116] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 0,
 										},
@@ -5608,14 +5607,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 80,
 											["Galak Marauder"] = 64,
@@ -5637,14 +5636,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 9,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[2643] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 65,
 											["Galak Stormer"] = 70,
@@ -5666,20 +5665,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 70,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 60.46300352241563,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544557,
 							["damage_taken"] = 355.002466,
 							["start_time"] = 1708544506,
 							["delay"] = 0,
-							["last_event"] = 1708544557,
+							["last_dps"] = 60.46300352241563,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -5691,11 +5691,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1761.002309,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Marauder"] = true,
 								["Galak Stormer"] = true,
@@ -5706,21 +5706,20 @@ _detalhes_database = {
 								["Galak Stormer"] = 785,
 								["Galak Mauler"] = 409,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544557,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 8,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["n_max"] = 50,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 437,
 											["Galak Stormer"] = 530,
@@ -5743,14 +5742,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 614,
 										["n_amt"] = 14,
-										["b_dmg"] = 0,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 69,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Mauler"] = 69,
 											["Galak Marauder"] = 46,
@@ -5772,14 +5771,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 69,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Marauder"] = 84,
 											["Galak Stormer"] = 255,
@@ -5802,36 +5801,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 231,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 34.08303609580091,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544555,
 							["damage_taken"] = 939.002309,
 							["start_time"] = 1708544506,
 							["delay"] = 0,
-							["last_event"] = 1708544555,
+							["last_dps"] = 34.08303609580091,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007156,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 517.007156,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 517.007156,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4095-00005651E6",
-							["aID"] = "4095",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopecat <Dopesnare>"] = true,
 								["Dopesnare"] = true,
@@ -5840,20 +5839,21 @@ _detalhes_database = {
 								["Dopesnare"] = 128,
 								["Dopecat <Dopesnare>"] = 389,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007156,
+							["fight_component"] = true,
 							["end_time"] = 1708544557,
+							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 128,
 											["Dopecat <Dopesnare>"] = 389,
@@ -5875,14 +5875,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 222,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 64,
 										["r_amt"] = 0,
 									}, -- [1]
 									[13730] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -5901,36 +5901,35 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544524,
 							["damage_taken"] = 1252.007156,
 							["start_time"] = 1708544538,
 							["delay"] = 1708544524,
-							["last_event"] = 1708544524,
+							["last_dps"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008436,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 419.008436,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 419.008436,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4097-000056519D",
-							["aID"] = "4097",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -5939,20 +5938,21 @@ _detalhes_database = {
 								["Dopecat <Dopesnare>"] = 192,
 								["Dopesnare"] = 227,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008436,
+							["fight_component"] = true,
 							["end_time"] = 1708544557,
+							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 26,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 102,
 										},
@@ -5973,14 +5973,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 26,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9532] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 117,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 78,
 											["Dopesnare"] = 227,
@@ -6001,14 +6001,14 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 117,
 										["r_amt"] = 1,
 									},
 									[6535] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 7,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 12,
 										},
@@ -6028,36 +6028,35 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 7,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544541,
 							["damage_taken"] = 855.0084360000001,
 							["start_time"] = 1708544540,
 							["delay"] = 1708544541,
-							["last_event"] = 1708544541,
+							["last_dps"] = 0,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008866,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 358.008866,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 358.008866,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4099-00005651C2",
-							["aID"] = "4099",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -6065,20 +6064,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 358,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008866,
+							["fight_component"] = true,
 							["end_time"] = 1708544557,
+							["aID"] = "4099",
 							["nome"] = "Galak Marauder",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 87,
+										["b_dmg"] = 27,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 358,
@@ -6101,14 +6101,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 54,
 										["n_amt"] = 7,
-										["b_dmg"] = 27,
+										["n_max"] = 87,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6268] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -6127,29 +6127,31 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544554,
 							["damage_taken"] = 1017.008866,
 							["start_time"] = 1708544534,
 							["delay"] = 0,
-							["last_event"] = 1708544554,
+							["last_dps"] = 0,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 285,
 					["tipo"] = 3,
+					["combatId"] = 285,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -6162,29 +6164,22 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-022772AA",
 							["totalabsorb"] = 0.002364,
 							["last_hps"] = 3.67737020979653,
-							["aID"] = "5826-022772AA",
-							["fight_component"] = true,
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 190,
 							},
-							["serial"] = "Player-5826-022772AA",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.002364,
-							["healing_from"] = {
-							},
+							["last_event"] = 1708544555,
 							["healing_taken"] = 0.002364,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
+							["fight_component"] = true,
 							["end_time"] = 1708544557,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1708544551,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[3111] = {
 										["c_amt"] = 0,
@@ -6200,31 +6195,38 @@ _detalhes_database = {
 										["counter"] = 5,
 										["overheal"] = 0,
 										["total"] = 190,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["id"] = 3111,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+							},
+							["start_time"] = 1708544551,
 							["custom"] = 0,
-							["last_event"] = 1708544555,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002364,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 0.004638,
 							["total_without_pet"] = 0.004638,
 							["total"] = 0.004638,
@@ -6232,146 +6234,144 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["totalabsorb"] = 0.004638,
 							["last_hps"] = 9.257115484420059e-05,
-							["fight_component"] = true,
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
 							["targets"] = {
 							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopesnare"] = true,
-							},
-							["totalover_without_pet"] = 0.004638,
 							["start_time"] = 1708544557,
+							["totalover_without_pet"] = 0.004638,
 							["healing_taken"] = 190.004638,
-							["classe"] = "PET",
+							["fight_component"] = true,
 							["end_time"] = 1708544557,
-							["targets_overheal"] = {
-							},
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["last_event"] = 0,
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004638,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["heal_enemy_amt"] = 0,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 285,
 					["tipo"] = 7,
+					["combatId"] = 285,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 285,
 					["tipo"] = 9,
+					["combatId"] = 285,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-022772AA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 29,
-										["appliedamt"] = 2,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2974] = {
-										["activedamt"] = 0,
-										["id"] = 2974,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 2974,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 165,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 51,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[14318] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 51,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[6150] = {
-										["activedamt"] = 1,
-										["id"] = 6150,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 6150,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 51,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 165,
+							["fight_component"] = true,
 							["debuff_uptime"] = 39,
-							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
-							["last_event"] = 1708544557,
+							["aID"] = "5826-022772AA",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["serial"] = "Player-5826-022772AA",
+							["last_event"] = 1708544557,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -6379,58 +6379,58 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["fight_component"] = true,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
+							["grupo"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4095-00005651E6",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4095",
 							["nome"] = "Galak Mauler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4095-00005651E6",
+							["aID"] = "4095",
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4097-000056519D",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4097",
 							["nome"] = "Galak Stormer",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4097-000056519D",
+							["aID"] = "4097",
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4099-00005651C2",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4099",
 							["nome"] = "Galak Marauder",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4099-00005651C2",
+							["aID"] = "4099",
 						}, -- [5]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 285,
 					["tipo"] = 2,
+					["combatId"] = 285,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6447,9 +6447,7 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6168,
 				["playing_solo"] = true,
 				["totals"] = {
 					4418, -- [1]
@@ -6464,34 +6462,53 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					3124, -- [1]
+					190, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
 					["Galak Marauder"] = {
 						["Rushing Charge"] = 2,
 					},
+					["Dopesnare"] = {
+						["Concussive Shot"] = 1,
+						["Multi-Shot"] = 1,
+						["Auto Shot"] = 17,
+						["Mend Pet"] = 2,
+						["Wing Clip"] = 1,
+						["Serpent Sting"] = 1,
+					},
 					["Galak Stormer"] = {
 						["Lightning Bolt"] = 3,
 						["Lightning Cloud"] = 1,
-					},
-					["Dopesnare"] = {
-						["Multi-Shot"] = 1,
-						["Mend Pet"] = 2,
-						["Auto Shot"] = 17,
-						["Concussive Shot"] = 1,
-						["Wing Clip"] = 1,
-						["Serpent Sting"] = 1,
 					},
 					["Dopecat"] = {
 						["Bite"] = 2,
@@ -6517,41 +6534,13 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634156.7980000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:41:46",
-				["end_time"] = 634156.7980000001,
-				["combat_id"] = 285,
-				["frags"] = {
-					["Galak Marauder"] = 1,
-					["Galak Stormer"] = 1,
-					["Galak Mauler"] = 1,
-				},
-				["combat_counter"] = 6168,
-				["totals_grupo"] = {
-					3124, -- [1]
-					190, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -6560,8 +6549,6 @@ _detalhes_database = {
 							["Dopesnare"] = 190.002364,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Dopecat <Dopesnare>"] = 1761.002309,
@@ -6569,21 +6556,33 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634156.7980000001,
+				["combat_id"] = 285,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 634105.13,
 				["contra"] = "Galak Mauler",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:41:46",
+				["start_time"] = 634105.13,
 				["TimeData"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+					["Galak Stormer"] = 1,
+					["Galak Mauler"] = 1,
 				},
 			}, -- [9]
 			{
 				{
-					["combatId"] = 284,
 					["tipo"] = 2,
+					["combatId"] = 284,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006604,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -6592,7 +6591,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1059.006604,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -6600,22 +6601,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 1059,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544493,
+							["totalabsorbed"] = 0.006604,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -6637,14 +6636,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 64,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 369,
 										},
@@ -6665,14 +6664,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 126,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 64,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 32,
 										},
@@ -6693,20 +6692,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 60.68457990945755,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544491,
 							["damage_taken"] = 0.006604,
 							["start_time"] = 1708544475,
 							["delay"] = 0,
-							["last_event"] = 1708544491,
+							["last_dps"] = 60.68457990945755,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -6718,32 +6718,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 658.004246,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 658,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544493,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 50,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 419,
 										},
@@ -6765,14 +6764,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 86,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 50,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 239,
 										},
@@ -6793,36 +6792,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 37.70581892154976,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544491,
 							["damage_taken"] = 197.004246,
 							["start_time"] = 1708544475,
 							["delay"] = 0,
-							["last_event"] = 1708544491,
+							["last_dps"] = 37.70581892154976,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001695,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 253.001695,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 253.001695,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-00005651C7",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Livshane"] = true,
 								["Dopesnare"] = true,
@@ -6833,20 +6832,21 @@ _detalhes_database = {
 								["Livshane"] = 56,
 								["Dopecat <Dopesnare>"] = 197,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001695,
+							["fight_component"] = true,
 							["end_time"] = 1708544506,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["b_dmg"] = 23,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 163,
@@ -6869,14 +6869,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 53,
 										["n_amt"] = 4,
-										["b_dmg"] = 23,
+										["n_max"] = 30,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 56,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Livshane"] = 56,
 											["Dopecat <Dopesnare>"] = 34,
@@ -6898,29 +6898,31 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 56,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544497,
 							["damage_taken"] = 1727.001695,
 							["start_time"] = 1708544475,
 							["delay"] = 0,
-							["last_event"] = 1708544497,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 284,
 					["tipo"] = 3,
+					["combatId"] = 284,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -6933,29 +6935,22 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-022772AA",
 							["totalabsorb"] = 0.007827,
 							["last_hps"] = 10.88807672912669,
-							["aID"] = "5826-022772AA",
-							["fight_component"] = true,
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 190,
 							},
-							["serial"] = "Player-5826-022772AA",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.007827,
-							["healing_from"] = {
-							},
+							["last_event"] = 1708544480,
 							["healing_taken"] = 0.007827,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
+							["fight_component"] = true,
 							["end_time"] = 1708544493,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1708544488,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[3111] = {
 										["c_amt"] = 0,
@@ -6971,31 +6966,38 @@ _detalhes_database = {
 										["counter"] = 5,
 										["overheal"] = 0,
 										["total"] = 190,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["id"] = 3111,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+							},
+							["start_time"] = 1708544488,
 							["custom"] = 0,
-							["last_event"] = 1708544480,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007827,
 							["delay"] = 1708544480,
-							["tipo"] = 2,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 0.007281,
 							["total_without_pet"] = 0.007281,
 							["total"] = 0.007281,
@@ -7003,124 +7005,122 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["totalabsorb"] = 0.007281,
 							["last_hps"] = 0.001391096675599065,
-							["fight_component"] = true,
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
 							["targets"] = {
 							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopesnare"] = true,
-							},
-							["totalover_without_pet"] = 0.007281,
 							["start_time"] = 1708544493,
+							["totalover_without_pet"] = 0.007281,
 							["healing_taken"] = 190.007281,
-							["classe"] = "PET",
+							["fight_component"] = true,
 							["end_time"] = 1708544493,
-							["targets_overheal"] = {
-							},
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["last_event"] = 0,
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007281,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["heal_enemy_amt"] = 0,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 284,
 					["tipo"] = 7,
+					["combatId"] = 284,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 284,
 					["tipo"] = 9,
+					["combatId"] = 284,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["serial"] = "Player-5826-022772AA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 54,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 54,
+							["fight_component"] = true,
 							["debuff_uptime"] = 7,
-							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
-							["last_event"] = 1708544493,
+							["aID"] = "5826-022772AA",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["serial"] = "Player-5826-022772AA",
+							["last_event"] = 1708544493,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7128,19 +7128,19 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["fight_component"] = true,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
+							["grupo"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 284,
 					["tipo"] = 2,
+					["combatId"] = 284,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7175,17 +7175,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1059, -- [1]
+					190, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -7214,39 +7233,13 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634092.1140000001,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:41:16",
-				["end_time"] = 634092.1140000001,
-				["combat_id"] = 284,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6167,
-				["totals_grupo"] = {
-					1059, -- [1]
-					190, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -7255,8 +7248,6 @@ _detalhes_database = {
 							["Dopesnare"] = 190.007827,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Dopecat <Dopesnare>"] = 658.004246,
@@ -7264,21 +7255,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634092.1140000001,
+				["combat_id"] = 284,
+				["frags"] = {
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6167,
+				["contra"] = "Galak Wrangler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634074.6630000001,
-				["contra"] = "Galak Wrangler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:41:16",
 			}, -- [10]
 			{
 				{
-					["combatId"] = 283,
 					["tipo"] = 2,
+					["combatId"] = 283,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003813,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -7287,7 +7286,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 836.003813,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -7295,22 +7296,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Windchaser"] = 836,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544472,
+							["totalabsorbed"] = 0.003813,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[75] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 365,
 										},
@@ -7331,14 +7330,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 123,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 67,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 32,
 										},
@@ -7359,20 +7358,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 70.74585876256518,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544470,
 							["damage_taken"] = 0.003813,
 							["start_time"] = 1708544460,
 							["delay"] = 0,
-							["last_event"] = 1708544470,
+							["last_dps"] = 70.74585876256518,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7384,32 +7384,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 439.005094,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Windchaser"] = true,
 							},
 							["targets"] = {
 								["Galak Windchaser"] = 439,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544472,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 51,
+										["b_dmg"] = 37,
 										["targets"] = {
 											["Galak Windchaser"] = 390,
 										},
@@ -7430,14 +7429,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 206,
 										["n_amt"] = 4,
-										["b_dmg"] = 37,
+										["n_max"] = 51,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 49,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 49,
 										},
@@ -7458,36 +7457,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 49,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 37.15029990679079,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544470,
 							["damage_taken"] = 135.005094,
 							["start_time"] = 1708544460,
 							["delay"] = 0,
-							["last_event"] = 1708544470,
+							["last_dps"] = 37.15029990679079,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001551,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 135.001551,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 135.001551,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4096-000056510A",
-							["aID"] = "4096",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -7495,20 +7494,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 135,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001551,
+							["fight_component"] = true,
 							["end_time"] = 1708544472,
+							["aID"] = "4096",
 							["nome"] = "Galak Windchaser",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 24,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 135,
 										},
@@ -7529,130 +7529,130 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 24,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544470,
 							["damage_taken"] = 836.0015510000001,
 							["start_time"] = 1708544460,
 							["delay"] = 0,
-							["last_event"] = 1708544470,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 283,
 					["tipo"] = 3,
+					["combatId"] = 283,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 283,
 					["tipo"] = 7,
+					["combatId"] = 283,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 283,
 					["tipo"] = 9,
+					["combatId"] = 283,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 36,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 36,
 							["debuff_uptime"] = 8,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544472,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 283,
 					["tipo"] = 2,
+					["combatId"] = 283,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7687,17 +7687,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					836, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -7724,46 +7743,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634071.113,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:41:00",
-				["end_time"] = 634071.113,
-				["combat_id"] = 283,
-				["frags"] = {
-					["Galak Windchaser"] = 1,
-				},
-				["combat_counter"] = 6166,
-				["totals_grupo"] = {
-					836, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -7772,21 +7763,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634071.113,
+				["combat_id"] = 283,
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["combat_counter"] = 6166,
+				["contra"] = "Galak Windchaser",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634059.296,
-				["contra"] = "Galak Windchaser",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:41:00",
 			}, -- [11]
 			{
 				{
-					["combatId"] = 282,
 					["tipo"] = 2,
+					["combatId"] = 282,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.003172,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -7795,7 +7794,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1050.003172,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -7803,22 +7804,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 1050,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544458,
+							["totalabsorbed"] = 0.003172,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -7840,14 +7839,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 62,
+										["b_dmg"] = 43,
 										["targets"] = {
 											["Galak Wrangler"] = 416,
 										},
@@ -7868,14 +7867,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 128,
 										["n_amt"] = 5,
-										["b_dmg"] = 43,
+										["n_max"] = 62,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 64,
 										},
@@ -7896,20 +7895,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 61.58376375391798,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544458,
 							["damage_taken"] = 0.003172,
 							["start_time"] = 1708544442,
 							["delay"] = 0,
-							["last_event"] = 1708544458,
+							["last_dps"] = 61.58376375391798,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7921,32 +7921,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 570.007219,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 570,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544458,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 50,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 424,
 										},
@@ -7967,14 +7966,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 9,
-										["b_dmg"] = 0,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 51,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 146,
 										},
@@ -7996,36 +7995,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 51,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 33.43150844588476,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544458,
 							["damage_taken"] = 236.007219,
 							["start_time"] = 1708544442,
 							["delay"] = 0,
-							["last_event"] = 1708544458,
+							["last_dps"] = 33.43150844588476,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005485,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 236.005485,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 236.005485,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-0000564A8D",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -8033,20 +8032,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 236,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005485,
+							["fight_component"] = true,
 							["end_time"] = 1708544458,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 195,
@@ -8069,14 +8069,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 59,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 30,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 41,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 41,
 										},
@@ -8097,29 +8097,31 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 41,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544455,
 							["damage_taken"] = 1050.005485,
 							["start_time"] = 1708544441,
 							["delay"] = 0,
-							["last_event"] = 1708544455,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 282,
 					["tipo"] = 3,
+					["combatId"] = 282,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -8132,29 +8134,22 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-022772AA",
 							["totalabsorb"] = 0.004645,
 							["last_hps"] = 4.45775043990096,
-							["aID"] = "5826-022772AA",
-							["fight_component"] = true,
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 76,
 							},
-							["serial"] = "Player-5826-022772AA",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.004645,
-							["healing_from"] = {
-							},
+							["last_event"] = 1708544455,
 							["healing_taken"] = 0.004645,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
+							["fight_component"] = true,
 							["end_time"] = 1708544458,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1708544454,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[3111] = {
 										["c_amt"] = 0,
@@ -8170,31 +8165,38 @@ _detalhes_database = {
 										["counter"] = 2,
 										["overheal"] = 0,
 										["total"] = 76,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["id"] = 3111,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 2,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["healing_from"] = {
+							},
+							["start_time"] = 1708544454,
 							["custom"] = 0,
-							["last_event"] = 1708544455,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004645,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 							["totalover"] = 0.001084,
 							["total_without_pet"] = 0.001084,
 							["total"] = 0.001084,
@@ -8202,124 +8204,122 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["totalabsorb"] = 0.001084,
 							["last_hps"] = 7.642413987587136e-05,
-							["fight_component"] = true,
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
 							["targets"] = {
 							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Dopesnare"] = true,
-							},
-							["totalover_without_pet"] = 0.001084,
 							["start_time"] = 1708544458,
+							["totalover_without_pet"] = 0.001084,
 							["healing_taken"] = 76.00108399999999,
-							["classe"] = "PET",
+							["fight_component"] = true,
 							["end_time"] = 1708544458,
-							["targets_overheal"] = {
-							},
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["last_event"] = 0,
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001084,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["heal_enemy_amt"] = 0,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 282,
 					["tipo"] = 7,
+					["combatId"] = 282,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 282,
 					["tipo"] = 9,
+					["combatId"] = 282,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-022772AA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "HUNTER",
-							["grupo"] = true,
-							["buff_uptime_spells"] = {
 								["tipo"] = 9,
+							},
+							["buff_uptime"] = 51,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 51,
+							["fight_component"] = true,
 							["debuff_uptime"] = 15,
-							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
-							["last_event"] = 1708544458,
+							["aID"] = "5826-022772AA",
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["tipo"] = 4,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["serial"] = "Player-5826-022772AA",
+							["last_event"] = 1708544458,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -8327,19 +8327,19 @@ _detalhes_database = {
 							},
 							["classe"] = "PET",
 							["fight_component"] = true,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
+							["grupo"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 282,
 					["tipo"] = 2,
+					["combatId"] = 282,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8356,9 +8356,7 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6165,
 				["playing_solo"] = true,
 				["totals"] = {
 					1286, -- [1]
@@ -8373,17 +8371,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1050, -- [1]
+					76, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -8411,39 +8428,13 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634057.762,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:40:42",
-				["end_time"] = 634057.762,
-				["combat_id"] = 282,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6165,
-				["totals_grupo"] = {
-					1050, -- [1]
-					76, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -8452,8 +8443,6 @@ _detalhes_database = {
 							["Dopesnare"] = 76.004645,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Dopecat <Dopesnare>"] = 570.007219,
@@ -8461,21 +8450,31 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634057.762,
+				["combat_id"] = 282,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 634040.712,
 				["contra"] = "Galak Wrangler",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:40:42",
+				["start_time"] = 634040.712,
 				["TimeData"] = {
+				},
+				["frags"] = {
+					["Galak Wrangler"] = 1,
 				},
 			}, -- [12]
 			{
 				{
-					["combatId"] = 281,
 					["tipo"] = 2,
+					["combatId"] = 281,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00603,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -8484,7 +8483,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 955.00603,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -8492,22 +8493,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 955,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544436,
+							["totalabsorbed"] = 0.00603,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 79,
+										["b_dmg"] = 79,
 										["targets"] = {
 											["Galak Wrangler"] = 79,
 										},
@@ -8528,14 +8527,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 79,
+										["n_max"] = 79,
 										["r_amt"] = 0,
 									},
 									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -8557,14 +8556,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 64,
+										["b_dmg"] = 45,
 										["targets"] = {
 											["Galak Wrangler"] = 284,
 										},
@@ -8585,14 +8584,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 45,
+										["n_max"] = 64,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 64,
 										},
@@ -8613,14 +8612,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 32,
 										},
@@ -8641,20 +8640,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 75.68600649855216,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544436,
 							["damage_taken"] = 0.00603,
 							["start_time"] = 1708544424,
 							["delay"] = 0,
-							["last_event"] = 1708544436,
+							["last_dps"] = 75.68600649855216,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -8666,32 +8666,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 496.007516,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 496,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544436,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 48,
+										["b_dmg"] = 37,
 										["targets"] = {
 											["Galak Wrangler"] = 359,
 										},
@@ -8712,14 +8711,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 87,
 										["n_amt"] = 6,
-										["b_dmg"] = 37,
+										["n_max"] = 48,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 137,
 										},
@@ -8740,36 +8739,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 137,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 39.30951941665407,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544436,
 							["damage_taken"] = 150.007516,
 							["start_time"] = 1708544424,
 							["delay"] = 0,
-							["last_event"] = 1708544436,
+							["last_dps"] = 39.30951941665407,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002454,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 150.002454,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 150.002454,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-000056504E",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -8777,20 +8776,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 150,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002454,
+							["fight_component"] = true,
 							["end_time"] = 1708544436,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 28,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 150,
 										},
@@ -8811,141 +8811,141 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 28,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544434,
 							["damage_taken"] = 955.002454,
 							["start_time"] = 1708544424,
 							["delay"] = 0,
-							["last_event"] = 1708544434,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 281,
 					["tipo"] = 3,
+					["combatId"] = 281,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 281,
 					["tipo"] = 7,
+					["combatId"] = 281,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 281,
 					["tipo"] = 9,
+					["combatId"] = 281,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 36,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 36,
 							["debuff_uptime"] = 16,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544436,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 281,
 					["tipo"] = 2,
+					["combatId"] = 281,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8980,17 +8980,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					955, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -9019,46 +9038,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634035.512,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:40:24",
-				["end_time"] = 634035.512,
-				["combat_id"] = 281,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6164,
-				["totals_grupo"] = {
-					955, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -9067,21 +9058,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634035.512,
+				["combat_id"] = 281,
+				["frags"] = {
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6164,
+				["contra"] = "Galak Wrangler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634022.894,
-				["contra"] = "Galak Wrangler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:40:24",
 			}, -- [13]
 			{
 				{
-					["combatId"] = 280,
 					["tipo"] = 2,
+					["combatId"] = 280,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007826,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -9090,7 +9089,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 832.007826,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -9098,50 +9099,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Windchaser"] = 832,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544419,
+							["totalabsorbed"] = 0.007826,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Windchaser"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 91,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 91,
 										},
@@ -9162,14 +9133,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
+										["n_max"] = 91,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Windchaser"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 195,
 										},
@@ -9190,14 +9189,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 67,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 32,
 										},
@@ -9218,20 +9217,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 146.7903715579929,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544418,
 							["damage_taken"] = 0.007826,
 							["start_time"] = 1708544413,
 							["delay"] = 0,
-							["last_event"] = 1708544418,
+							["last_dps"] = 146.7903715579929,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -9243,32 +9243,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 498.003361,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Windchaser"] = true,
 							},
 							["targets"] = {
 								["Galak Windchaser"] = 498,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544419,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 208,
 										},
@@ -9289,14 +9288,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 104,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["r_amt"] = 0,
 									}, -- [1]
 									[17256] = {
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 127,
 										["targets"] = {
 											["Galak Windchaser"] = 127,
 										},
@@ -9317,14 +9316,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 127,
 										["n_amt"] = 0,
-										["b_dmg"] = 127,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 55,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 163,
 										},
@@ -9345,36 +9344,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 55,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 87.86227258193996,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544418,
 							["damage_taken"] = 25.003361,
 							["start_time"] = 1708544413,
 							["delay"] = 0,
-							["last_event"] = 1708544418,
+							["last_dps"] = 87.86227258193996,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002639,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 25.002639,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 25.002639,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4096-0000565043",
-							["aID"] = "4096",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -9382,20 +9381,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 25,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002639,
+							["fight_component"] = true,
 							["end_time"] = 1708544419,
+							["aID"] = "4096",
 							["nome"] = "Galak Windchaser",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 25,
 											["Dopecat"] = 0,
@@ -9418,130 +9418,130 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 25,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544416,
 							["damage_taken"] = 832.002639,
 							["start_time"] = 1708544416,
 							["delay"] = 0,
-							["last_event"] = 1708544416,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 280,
 					["tipo"] = 3,
+					["combatId"] = 280,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 280,
 					["tipo"] = 7,
+					["combatId"] = 280,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 280,
 					["tipo"] = 9,
+					["combatId"] = 280,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 18,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 18,
 							["debuff_uptime"] = 4,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544419,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 280,
 					["tipo"] = 2,
+					["combatId"] = 280,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9576,17 +9576,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					832, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -9614,46 +9633,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634018.111,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:40:14",
-				["end_time"] = 634018.111,
-				["combat_id"] = 280,
-				["frags"] = {
-					["Galak Windchaser"] = 1,
-				},
-				["combat_counter"] = 6163,
-				["totals_grupo"] = {
-					832, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -9662,21 +9653,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634018.111,
+				["combat_id"] = 280,
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["combat_counter"] = 6163,
+				["contra"] = "Galak Windchaser",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 634012.443,
-				["contra"] = "Galak Windchaser",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:40:14",
 			}, -- [14]
 			{
 				{
-					["combatId"] = 279,
 					["tipo"] = 2,
+					["combatId"] = 279,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006512,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -9685,7 +9684,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3021.006512,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -9695,22 +9696,20 @@ _detalhes_database = {
 								["Galak Windchaser"] = 1186,
 								["Galak Wrangler"] = 1017,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544408,
+							["totalabsorbed"] = 0.006512,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 99,
+										["b_dmg"] = 85,
 										["targets"] = {
 											["Galak Scout"] = 85,
 											["Galak Windchaser"] = 192,
@@ -9734,104 +9733,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 85,
-										["r_amt"] = 0,
-									},
-									[75] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Galak Scout"] = 174,
-											["Galak Windchaser"] = 445,
-											["Galak Wrangler"] = 435,
-										},
-										["n_total"] = 926,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 1054,
-										["c_max"] = 128,
-										["id"] = 75,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 128,
-										["successful_casted"] = 0,
-										["c_total"] = 128,
-										["n_amt"] = 15,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2643] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Galak Scout"] = 127,
-											["Galak Wrangler"] = 138,
-										},
-										["n_total"] = 265,
-										["n_min"] = 63,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 265,
-										["c_max"] = 0,
-										["id"] = 2643,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Scout"] = 64,
-											["Galak Windchaser"] = 64,
-											["Galak Wrangler"] = 32,
-										},
-										["n_total"] = 160,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 160,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
+										["n_max"] = 99,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 32,
 											["Galak Windchaser"] = 32,
@@ -9855,20 +9764,111 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 32,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Scout"] = 64,
+											["Galak Windchaser"] = 64,
+											["Galak Wrangler"] = 32,
+										},
+										["n_total"] = 160,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 160,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 10,
+										["n_max"] = 16,
+										["r_amt"] = 0,
+									},
+									[2643] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Scout"] = 127,
+											["Galak Wrangler"] = 138,
+										},
+										["n_total"] = 265,
+										["n_min"] = 63,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 265,
+										["c_max"] = 0,
+										["id"] = 2643,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 4,
+										["n_max"] = 70,
+										["r_amt"] = 0,
+									},
+									[75] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Scout"] = 174,
+											["Galak Windchaser"] = 445,
+											["Galak Wrangler"] = 435,
+										},
+										["n_total"] = 926,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 1054,
+										["c_max"] = 128,
+										["id"] = 75,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 128,
+										["successful_casted"] = 0,
+										["c_total"] = 128,
+										["n_amt"] = 15,
+										["n_max"] = 69,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 65.36287050774187,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544408,
 							["damage_taken"] = 0.006512,
 							["start_time"] = 1708544362,
 							["delay"] = 0,
-							["last_event"] = 1708544408,
+							["last_dps"] = 65.36287050774187,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -9880,11 +9880,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1115.008107,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Scout"] = true,
 								["Galak Windchaser"] = true,
@@ -9895,21 +9895,20 @@ _detalhes_database = {
 								["Galak Windchaser"] = 453,
 								["Galak Wrangler"] = 326,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544408,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 231,
 											["Galak Windchaser"] = 249,
@@ -9933,14 +9932,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 186,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 105,
 											["Galak Windchaser"] = 204,
@@ -9963,14 +9962,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 104,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 53,
 										["r_amt"] = 0,
 									},
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Windchaser"] = 0,
 										},
@@ -9992,36 +9991,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 24.12445329840567,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544398,
 							["damage_taken"] = 525.008107,
 							["start_time"] = 1708544371,
 							["delay"] = 1708544398,
-							["last_event"] = 1708544398,
+							["last_dps"] = 24.12445329840567,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00326,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 309.00326,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 309.00326,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-0000565004",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Anistira"] = true,
 								["Dopesnare"] = true,
@@ -10031,20 +10030,21 @@ _detalhes_database = {
 								["Dopecat <Dopesnare>"] = 179,
 								["Anistira"] = 130,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00326,
+							["fight_component"] = true,
 							["end_time"] = 1708544408,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Anistira"] = 89,
 											["Dopecat"] = 0,
@@ -10068,14 +10068,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 31,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 41,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 74,
 											["Anistira"] = 41,
@@ -10096,14 +10096,14 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 41,
 										["r_amt"] = 0,
 									},
 									[6533] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -10122,36 +10122,35 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544404,
 							["damage_taken"] = 1579.00326,
 							["start_time"] = 1708544383,
 							["delay"] = 0,
-							["last_event"] = 1708544404,
+							["last_dps"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005802,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 301.005802,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 301.005802,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4094-000056504E",
-							["aID"] = "4094",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -10159,20 +10158,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 301,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005802,
+							["fight_component"] = true,
 							["end_time"] = 1708544408,
+							["aID"] = "4094",
 							["nome"] = "Galak Scout",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 301,
@@ -10195,36 +10195,35 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
+										["n_max"] = 30,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544405,
 							["damage_taken"] = 818.005802,
 							["start_time"] = 1708544375,
 							["delay"] = 0,
-							["last_event"] = 1708544405,
+							["last_dps"] = 0,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007887,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 45.007887,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 45.007887,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4096-000056504E",
-							["aID"] = "4096",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -10232,20 +10231,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 45,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007887,
+							["fight_component"] = true,
 							["end_time"] = 1708544408,
+							["aID"] = "4096",
 							["nome"] = "Galak Windchaser",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 45,
@@ -10255,12 +10255,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 4,
 										["MISS"] = 1,
-										["total"] = 45,
-										["c_max"] = 0,
+										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -10269,14 +10269,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 25,
+										["total"] = 45,
 									}, -- [1]
 									[939] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -10295,14 +10295,14 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[6728] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -10321,156 +10321,156 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544373,
 							["damage_taken"] = 1186.007887,
 							["start_time"] = 1708544397,
 							["delay"] = 1708544373,
-							["last_event"] = 1708544373,
+							["last_dps"] = 0,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 279,
 					["tipo"] = 3,
+					["combatId"] = 279,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 279,
 					["tipo"] = 7,
+					["combatId"] = 279,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 279,
 					["tipo"] = 9,
+					["combatId"] = 279,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 30,
-										["appliedamt"] = 3,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 138,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+									[409583] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13163] = {
-										["activedamt"] = 1,
-										["id"] = 13163,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 13163,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+									[409580] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 46,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 138,
 							["debuff_uptime"] = 30,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544408,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4096-000056504E",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4096",
 							["nome"] = "Galak Windchaser",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4096-000056504E",
+							["aID"] = "4096",
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4093-0000565004",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4093-0000565004",
+							["aID"] = "4093",
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 279,
 					["tipo"] = 2,
+					["combatId"] = 279,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10505,17 +10505,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					3021, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -10551,48 +10570,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 634007.577,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:39:22",
-				["end_time"] = 634007.577,
-				["combat_id"] = 279,
-				["frags"] = {
-					["Galak Scout"] = 1,
-					["Galak Windchaser"] = 1,
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6162,
-				["totals_grupo"] = {
-					3021, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -10601,21 +10590,31 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 634007.577,
+				["combat_id"] = 279,
+				["frags"] = {
+					["Galak Scout"] = 1,
+					["Galak Windchaser"] = 1,
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6162,
+				["contra"] = "Galak Windchaser",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 633961.358,
-				["contra"] = "Galak Windchaser",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:39:22",
 			}, -- [15]
 			{
 				{
-					["combatId"] = 278,
 					["tipo"] = 2,
+					["combatId"] = 278,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00319,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -10624,7 +10623,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 952.00319,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -10633,22 +10634,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 952,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544346,
+							["totalabsorbed"] = 0.00319,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 101,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 196,
 										},
@@ -10669,14 +10668,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 101,
 										["r_amt"] = 0,
 									},
 									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -10698,14 +10697,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 96,
 										},
@@ -10726,14 +10725,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 64,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 32,
 										},
@@ -10754,14 +10753,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 65,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 181,
 										},
@@ -10782,20 +10781,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 65,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 65.95560412963319,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544345,
 							["damage_taken"] = 49.00319,
 							["start_time"] = 1708544331,
 							["delay"] = 0,
-							["last_event"] = 1708544345,
+							["last_dps"] = 65.95560412963319,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -10807,32 +10807,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 447.004926,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 447,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544346,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 51,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 276,
 										},
@@ -10844,7 +10843,7 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["total"] = 276,
 										["c_max"] = 89,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -10856,14 +10855,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 89,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_max"] = 51,
+										["a_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 101,
 										},
@@ -10884,14 +10883,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["r_amt"] = 0,
 									},
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 70,
 										},
@@ -10912,36 +10911,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 70,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 30.9688877652311,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544345,
 							["damage_taken"] = 159.004926,
 							["start_time"] = 1708544331,
 							["delay"] = 0,
-							["last_event"] = 1708544345,
+							["last_dps"] = 30.9688877652311,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007875,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 208.007875,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 208.007875,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-0000564A63",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -10950,20 +10949,21 @@ _detalhes_database = {
 								["Dopesnare"] = 49,
 								["Dopecat <Dopesnare>"] = 159,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007875,
+							["fight_component"] = true,
 							["end_time"] = 1708544346,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 159,
@@ -10986,14 +10986,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 30,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6533] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -11012,14 +11012,14 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 49,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 49,
 										},
@@ -11039,154 +11039,154 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 49,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544346,
 							["damage_taken"] = 952.007875,
 							["start_time"] = 1708544331,
 							["delay"] = 0,
-							["last_event"] = 1708544346,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 278,
 					["tipo"] = 3,
+					["combatId"] = 278,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 278,
 					["tipo"] = 7,
+					["combatId"] = 278,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 278,
 					["tipo"] = 9,
+					["combatId"] = 278,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[15571] = {
-										["activedamt"] = 1,
-										["id"] = 15571,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 15571,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 45,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 5118,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 45,
 							["debuff_uptime"] = 8,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544346,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4093-0000564A63",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4093-0000564A63",
+							["aID"] = "4093",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 278,
 					["tipo"] = 2,
+					["combatId"] = 278,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11221,17 +11221,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					952, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -11265,46 +11284,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 633944.808,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:38:52",
-				["end_time"] = 633944.808,
-				["combat_id"] = 278,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6161,
-				["totals_grupo"] = {
-					952, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -11313,21 +11304,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 633944.808,
+				["combat_id"] = 278,
+				["frags"] = {
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6161,
+				["contra"] = "Galak Wrangler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 633930.3740000001,
-				["contra"] = "Galak Wrangler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:38:52",
 			}, -- [16]
 			{
 				{
-					["combatId"] = 277,
 					["tipo"] = 2,
+					["combatId"] = 277,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006778,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -11336,7 +11335,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 2813.006778,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -11347,22 +11348,20 @@ _detalhes_database = {
 								["Galak Scout"] = 914,
 								["Galak Wrangler"] = 1899,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544324,
+							["totalabsorbed"] = 0.006778,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409433] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 95,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 192,
 											["Galak Wrangler"] = 369,
@@ -11384,14 +11383,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 192,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 95,
 										["r_amt"] = 0,
 									},
 									[2] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 0,
 										},
@@ -11413,14 +11412,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 32,
 											["Galak Wrangler"] = 160,
@@ -11442,14 +11441,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 64,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 									[13550] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 32,
 											["Galak Wrangler"] = 96,
@@ -11471,14 +11470,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 66,
+										["b_dmg"] = 48,
 										["targets"] = {
 											["Galak Scout"] = 302,
 											["Galak Wrangler"] = 697,
@@ -11500,20 +11499,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 17,
-										["b_dmg"] = 48,
+										["n_max"] = 66,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 76.16306866300323,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544323,
 							["damage_taken"] = 251.006778,
 							["start_time"] = 1708544286,
 							["delay"] = 0,
-							["last_event"] = 1708544323,
+							["last_dps"] = 76.16306866300323,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -11525,11 +11525,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 933.007756,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Scout"] = true,
 								["Galak Wrangler"] = true,
@@ -11538,21 +11538,20 @@ _detalhes_database = {
 								["Galak Scout"] = 356,
 								["Galak Wrangler"] = 577,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544324,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 50,
+										["b_dmg"] = 37,
 										["targets"] = {
 											["Galak Scout"] = 184,
 											["Galak Wrangler"] = 458,
@@ -11575,14 +11574,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 272,
 										["n_amt"] = 8,
-										["b_dmg"] = 37,
+										["n_max"] = 50,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 53,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 104,
 											["Galak Wrangler"] = 53,
@@ -11605,14 +11604,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 104,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 53,
 										["r_amt"] = 0,
 									},
 									[17256] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 68,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Scout"] = 68,
 											["Galak Wrangler"] = 66,
@@ -11634,36 +11633,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 68,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 25.26148686846235,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544323,
 							["damage_taken"] = 240.007756,
 							["start_time"] = 1708544287,
 							["delay"] = 0,
-							["last_event"] = 1708544323,
+							["last_dps"] = 25.26148686846235,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001643,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 398.001643,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 398.001643,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-0000565053",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -11672,20 +11671,21 @@ _detalhes_database = {
 								["Dopesnare"] = 205,
 								["Dopecat <Dopesnare>"] = 193,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001643,
+							["fight_component"] = true,
 							["end_time"] = 1708544324,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 127,
@@ -11708,14 +11708,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 29,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 56,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopesnare"] = 205,
@@ -11738,14 +11738,14 @@ _detalhes_database = {
 										["successful_casted"] = 8,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
+										["n_max"] = 56,
 										["r_amt"] = 0,
 									},
 									[6533] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["targets"] = {
 										},
 										["n_total"] = 0,
@@ -11764,36 +11764,35 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544322,
 							["damage_taken"] = 1899.001643,
 							["start_time"] = 1708544296,
 							["delay"] = 0,
-							["last_event"] = 1708544322,
+							["last_dps"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008355,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 93.008355,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 93.008355,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4094-0000564A0A",
-							["aID"] = "4094",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopecat <Dopesnare>"] = true,
 								["Dopesnare"] = true,
@@ -11802,20 +11801,21 @@ _detalhes_database = {
 								["Dopecat <Dopesnare>"] = 47,
 								["Dopesnare"] = 46,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008355,
+							["fight_component"] = true,
 							["end_time"] = 1708544324,
+							["aID"] = "4094",
 							["nome"] = "Galak Scout",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 24,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 47,
@@ -11838,14 +11838,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 24,
 										["r_amt"] = 0,
 									}, -- [1]
 									[6660] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 46,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 46,
 										},
@@ -11865,178 +11865,178 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 46,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544293,
 							["damage_taken"] = 914.0083549999999,
 							["start_time"] = 1708544317,
 							["delay"] = 1708544293,
-							["last_event"] = 1708544293,
+							["last_dps"] = 0,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 277,
 					["tipo"] = 3,
+					["combatId"] = 277,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 277,
 					["tipo"] = 7,
+					["combatId"] = 277,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 277,
 					["tipo"] = 9,
+					["combatId"] = 277,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5116] = {
-										["activedamt"] = 0,
-										["id"] = 5116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 5116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 32,
-										["appliedamt"] = 3,
+										["id"] = 13550,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[15571] = {
-										["activedamt"] = 1,
-										["id"] = 15571,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 3,
+										["id"] = 15571,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 114,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 5118,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 38,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 114,
 							["debuff_uptime"] = 55,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544324,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4094-0000564A0A",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4094",
 							["nome"] = "Galak Scout",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4094-0000564A0A",
+							["aID"] = "4094",
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5211-1-4320-4093-00005650A7",
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
+							["fight_component"] = true,
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Creature-0-5211-1-4320-4093-00005650A7",
+							["aID"] = "4093",
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 277,
 					["tipo"] = 2,
+					["combatId"] = 277,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12053,9 +12053,7 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6160,
 				["playing_solo"] = true,
 				["totals"] = {
 					3304, -- [1]
@@ -12070,17 +12068,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2813, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -12118,47 +12135,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 633922.956,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:38:07",
-				["end_time"] = 633922.956,
-				["combat_id"] = 277,
-				["frags"] = {
-					["Galak Scout"] = 1,
-					["Galak Wrangler"] = 2,
-				},
-				["combat_counter"] = 6160,
-				["totals_grupo"] = {
-					2813, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -12167,21 +12155,32 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 633922.956,
+				["combat_id"] = 277,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 633886.022,
 				["contra"] = "Galak Scout",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:38:07",
+				["start_time"] = 633886.022,
 				["TimeData"] = {
+				},
+				["frags"] = {
+					["Galak Scout"] = 1,
+					["Galak Wrangler"] = 2,
 				},
 			}, -- [17]
 			{
 				{
-					["combatId"] = 276,
 					["tipo"] = 2,
+					["combatId"] = 276,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006493,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
@@ -12190,7 +12189,9 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1039.006493,
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -12198,50 +12199,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Galak Wrangler"] = 1039,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-022772AA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544281,
+							["totalabsorbed"] = 0.006493,
+							["aID"] = "5826-022772AA",
 							["nome"] = "Dopesnare",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-									[13550] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Galak Wrangler"] = 48,
-										},
-										["n_total"] = 48,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = 13550,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[409433] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 98,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 183,
 										},
@@ -12262,14 +12233,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
+										["n_max"] = 98,
+										["r_amt"] = 0,
+									},
+									[13550] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
 										["b_dmg"] = 0,
+										["targets"] = {
+											["Galak Wrangler"] = 48,
+										},
+										["n_total"] = 48,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = 13550,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["n_max"] = 16,
 										["r_amt"] = 0,
 									},
 									[75] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 63,
+										["b_dmg"] = 47,
 										["targets"] = {
 											["Galak Wrangler"] = 287,
 										},
@@ -12290,14 +12289,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 47,
+										["n_max"] = 63,
 										["r_amt"] = 0,
 									},
 									[409493] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["n_max"] = 32,
+										["b_dmg"] = 19,
 										["targets"] = {
 											["Galak Wrangler"] = 51,
 										},
@@ -12318,20 +12317,21 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 19,
+										["n_max"] = 32,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 91.66356356448298,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544281,
 							["damage_taken"] = 0.006493,
 							["start_time"] = 1708544270,
 							["delay"] = 0,
-							["last_event"] = 1708544281,
+							["last_dps"] = 91.66356356448298,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -12343,32 +12343,31 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 470.001889,
-							["on_hold"] = false,
+							["colocacao"] = 2,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["colocacao"] = 2,
-							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["damage_from"] = {
 								["Galak Wrangler"] = true,
 							},
 							["targets"] = {
 								["Galak Wrangler"] = 470,
 							},
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1708544281,
+							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 47,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 422,
 										},
@@ -12390,14 +12389,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 283,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 47,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16830] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 48,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Galak Wrangler"] = 48,
 										},
@@ -12419,36 +12418,36 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 48,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 41.46465716819979,
-							["custom"] = 0,
+							["grupo"] = true,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544281,
 							["damage_taken"] = 113.001889,
 							["start_time"] = 1708544270,
 							["delay"] = 0,
-							["last_event"] = 1708544281,
+							["last_dps"] = 41.46465716819979,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007834,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 113.007834,
 							["last_dps_realtime"] = 0,
-							["dps_started"] = false,
+							["monster"] = true,
 							["total"] = 113.007834,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5211-1-4320-4093-00005650B6",
-							["aID"] = "4093",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Dopesnare"] = true,
 								["Dopecat <Dopesnare>"] = true,
@@ -12456,20 +12455,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Dopecat <Dopesnare>"] = 113,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.007834,
+							["fight_component"] = true,
 							["end_time"] = 1708544281,
+							["aID"] = "4093",
 							["nome"] = "Galak Wrangler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 31,
+										["b_dmg"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 113,
@@ -12492,130 +12492,130 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 31,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["dps_started"] = false,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1708544278,
 							["damage_taken"] = 1039.007834,
 							["start_time"] = 1708544270,
 							["delay"] = 0,
-							["last_event"] = 1708544278,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 276,
 					["tipo"] = 3,
+					["combatId"] = 276,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 276,
 					["tipo"] = 7,
+					["combatId"] = 276,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 276,
 					["tipo"] = 9,
+					["combatId"] = 276,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[13550] = {
-										["activedamt"] = 0,
-										["id"] = 13550,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 13550,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["serial"] = "Player-5826-022772AA",
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 33,
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409580] = {
-										["activedamt"] = 1,
-										["id"] = 409580,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409580,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 5118,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409583] = {
-										["activedamt"] = 1,
-										["id"] = 409583,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 409583,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 33,
 							["debuff_uptime"] = 10,
-							["aID"] = "5826-022772AA",
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Dopesnare",
 							["last_event"] = 1708544281,
+							["aID"] = "5826-022772AA",
+							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
-							["grupo"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
+							["grupo"] = true,
 							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-5211-1-4320-3475-02009673B7",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 276,
 					["tipo"] = 2,
+					["combatId"] = 276,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12650,17 +12650,36 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1039, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -12689,46 +12708,18 @@ _detalhes_database = {
 				["CombatEndedAt"] = 633881.272,
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "20:37:51",
-				["end_time"] = 633881.272,
-				["combat_id"] = 276,
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 6159,
-				["totals_grupo"] = {
-					1039, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -12737,12 +12728,21 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 633881.272,
+				["combat_id"] = 276,
+				["frags"] = {
+					["Galak Wrangler"] = 1,
+				},
+				["combat_counter"] = 6159,
+				["contra"] = "Galak Wrangler",
+				["player_last_events"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 633869.937,
-				["contra"] = "Galak Wrangler",
 				["TimeData"] = {
 				},
+				["data_inicio"] = "20:37:51",
 			}, -- [18]
 		},
 	},
@@ -12752,7 +12752,7 @@ _detalhes_database = {
 		},
 		["group_frames"] = true,
 		["lines_per_column"] = 12,
-		["show_options"] = false,
+		["width"] = 120,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -12767,8 +12767,13 @@ _detalhes_database = {
 			["defensive-personal"] = {
 			},
 		},
-		["width"] = 120,
-		["ignored_cooldowns"] = {
+		["show_options"] = false,
+		["own_frame"] = {
+			["defensive-raid"] = false,
+			["ofensive"] = false,
+			["defensive-target"] = false,
+			["utility"] = false,
+			["defensive-personal"] = false,
 		},
 		["show_title"] = true,
 		["framme_locked"] = false,
@@ -12779,12 +12784,7 @@ _detalhes_database = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["own_frame"] = {
-			["defensive-raid"] = false,
-			["ofensive"] = false,
-			["defensive-target"] = false,
-			["utility"] = false,
-			["defensive-personal"] = false,
+		["ignored_cooldowns"] = {
 		},
 		["filters"] = {
 			["itemutil"] = false,
@@ -12821,10 +12821,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["name"] = "Damage of Each Individual Player",
-				["playerOnly"] = true,
 				["playerKey"] = "total",
 				["combatObjectContainer"] = 1,
+				["name"] = "Damage of Each Individual Player",
+				["playerOnly"] = true,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -12848,15 +12848,16 @@ _detalhes_database = {
 	["ignore_nicktag"] = false,
 	["combat_log"] = {
 		["inverse_deathlog_overalldata"] = false,
-		["track_hunter_frenzy"] = false,
 		["evoker_calc_damage"] = false,
-		["inverse_deathlog_raid"] = false,
+		["track_hunter_frenzy"] = false,
 		["merge_critical_heals"] = false,
+		["inverse_deathlog_raid"] = false,
 		["merge_gemstones_1007"] = false,
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["cached_talents"] = {
+	["character_data"] = {
+		["logons"] = 334,
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -12871,13 +12872,13 @@ _detalhes_database = {
 			},
 			["usefocus"] = false,
 			["updatespeed"] = 1,
-			["disable_gouge"] = false,
+			["useclasscolors"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["absolute_mode"] = false,
 			["playSound"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["useclasscolors"] = false,
+			["disable_gouge"] = false,
 		},
 		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 			["enabled"] = true,
@@ -12898,7 +12899,7 @@ _detalhes_database = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["use_square_mode"] = false,
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -12908,31 +12909,16 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["row_height"] = 18,
+			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["point"] = "RIGHT",
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["author"] = "Details! Team",
+			["y"] = -183.107162475586,
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -12940,19 +12926,40 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["use_spark"] = false,
+			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["y"] = -183.107162475586,
-			["scale"] = 1,
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["author"] = "Details! Team",
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["use_square_mode"] = false,
 		},
+	},
+	["cached_talents"] = {
+	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["local_instances_config"] = {
 		{
@@ -12977,10 +12984,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -1101.599021911621,
-					["w"] = 234.8974151611328,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415893554688,
+					["x"] = -979.6941070556641,
+					["w"] = 234.8974304199219,
+					["h"] = 138.5455932617188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -13012,10 +13019,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4414672851562,
-					["x"] = -869.6630859375,
-					["w"] = 228.9744262695313,
-					["h"] = 138.5456237792969,
+					["y"] = 596.4415893554688,
+					["x"] = -747.7581481933594,
+					["w"] = 228.9744110107422,
+					["h"] = 138.5455932617188,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -13026,17 +13033,19 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["cached_roles"] = {
+	["last_day"] = "24",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
 	},
-	["last_day"] = "21",
-	["data_harvested_for_charts"] = {
-	},
-	["mythic_plus_log"] = {
-	},
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
+	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -13062,7 +13071,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -13230,13 +13239,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -13278,7 +13287,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -13294,14 +13303,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
@@ -13320,15 +13326,18 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -13508,8 +13517,8 @@ _detalhes_database = {
 					["resource"] = 0.5882839999999999,
 					["pets"] = {
 					},
-					["aID"] = "5826-024D082D",
-					["passiveover"] = 0.001214,
+					["classe"] = "SHAMAN",
+					["totalover"] = 0.001214,
 					["total"] = 0.001214,
 					["serial"] = "Player-5826-024D082D",
 					["received"] = 0.001214,
@@ -13523,8 +13532,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[408510] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 408510,
+								["totalover"] = 0,
 								["targets"] = {
 									["Tøtèm"] = 0,
 								},
@@ -13532,8 +13541,8 @@ _detalhes_database = {
 							},
 							[408511] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 408511,
+								["totalover"] = 0,
 								["targets"] = {
 									["Tøtèm"] = 0,
 								},
@@ -13543,10 +13552,10 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["classe"] = "SHAMAN",
-					["totalover"] = 0.001214,
-					["last_event"] = 0,
+					["aID"] = "5826-024D082D",
+					["passiveover"] = 0.001214,
 					["tipo"] = 3,
+					["last_event"] = 0,
 					["fight_component"] = true,
 				}, -- [1]
 				{
@@ -13554,7 +13563,7 @@ _detalhes_database = {
 					["resource"] = 0.16632,
 					["pets"] = {
 					},
-					["aID"] = "5826-0244D4F2",
+					["classe"] = "UNGROUPPLAYER",
 					["passiveover"] = 0.004986,
 					["total"] = 0.004986,
 					["serial"] = "Player-5826-0244D4F2",
@@ -13570,8 +13579,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[29131] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 29131,
+								["totalover"] = 0,
 								["targets"] = {
 									["Fritzchen"] = 0,
 								},
@@ -13580,14 +13589,14 @@ _detalhes_database = {
 						},
 						["tipo"] = 7,
 					},
-					["classe"] = "UNGROUPPLAYER",
-					["last_event"] = 0,
+					["aID"] = "5826-0244D4F2",
+					["tipo"] = 3,
 					["totalover"] = 0.004986,
 					["fight_component"] = true,
-					["tipo"] = 3,
+					["last_event"] = 0,
 				}, -- [2]
 				{
-					["received"] = 0.005533,
+					["flag_original"] = 1298,
 					["resource"] = 0.04736199999999999,
 					["targets"] = {
 						["Vonderweide"] = 0,
@@ -13596,24 +13605,15 @@ _detalhes_database = {
 					},
 					["powertype"] = 1,
 					["classe"] = "WARRIOR",
-					["passiveover"] = 0.005533,
+					["totalover"] = 0.005533,
 					["total"] = 0.005533,
 					["nome"] = "Vonderweide",
 					["spells"] = {
 						["_ActorTable"] = {
 							[100] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 100,
-								["targets"] = {
-									["Vonderweide"] = 0,
-								},
-								["counter"] = 0,
-							},
-							[29131] = {
-								["total"] = 0,
 								["totalover"] = 0,
-								["id"] = 29131,
 								["targets"] = {
 									["Vonderweide"] = 0,
 								},
@@ -13621,8 +13621,8 @@ _detalhes_database = {
 							},
 							[2687] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 2687,
+								["totalover"] = 0,
 								["targets"] = {
 									["Vonderweide"] = 0,
 								},
@@ -13630,8 +13630,17 @@ _detalhes_database = {
 							},
 							[12964] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 12964,
+								["totalover"] = 0,
+								["targets"] = {
+									["Vonderweide"] = 0,
+								},
+								["counter"] = 0,
+							},
+							[29131] = {
+								["total"] = 0,
+								["id"] = 29131,
+								["totalover"] = 0,
 								["targets"] = {
 									["Vonderweide"] = 0,
 								},
@@ -13641,16 +13650,16 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
+					["received"] = 0.005533,
 					["aID"] = "5826-0225014D",
-					["tipo"] = 3,
-					["totalover"] = 0.005533,
+					["last_event"] = 0,
+					["passiveover"] = 0.005533,
 					["alternatepower"] = 0.005533,
 					["serial"] = "Player-5826-0225014D",
-					["last_event"] = 0,
+					["tipo"] = 3,
 				}, -- [3]
 				{
-					["received"] = 0.005458,
+					["flag_original"] = 1304,
 					["resource"] = 0.020488,
 					["targets"] = {
 						["Moomy"] = 0,
@@ -13659,7 +13668,7 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["aID"] = "5826-0239D867",
-					["passiveover"] = 0.005458,
+					["totalover"] = 0.005458,
 					["fight_component"] = true,
 					["total"] = 0.005458,
 					["nome"] = "Moomy",
@@ -13667,8 +13676,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[408525] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 408525,
+								["totalover"] = 0,
 								["targets"] = {
 									["Moomy"] = 0,
 								},
@@ -13677,16 +13686,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 7,
 					},
-					["flag_original"] = 1304,
+					["received"] = 0.005458,
 					["classe"] = "UNGROUPPLAYER",
-					["tipo"] = 3,
-					["totalover"] = 0.005458,
+					["last_event"] = 0,
+					["passiveover"] = 0.005458,
 					["alternatepower"] = 0.005458,
 					["serial"] = "Player-5826-0239D867",
-					["last_event"] = 0,
+					["tipo"] = 3,
 				}, -- [4]
 				{
-					["flag_original"] = 1298,
+					["received"] = 0.005988,
 					["resource"] = 0.044329,
 					["targets"] = {
 						["Sulfuraddict"] = 0,
@@ -13695,15 +13704,15 @@ _detalhes_database = {
 					},
 					["powertype"] = 1,
 					["classe"] = "WARRIOR",
-					["passiveover"] = 0.005988,
+					["totalover"] = 0.005988,
 					["total"] = 0.005988,
 					["nome"] = "Sulfuraddict",
 					["spells"] = {
 						["_ActorTable"] = {
 							[6178] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 6178,
+								["totalover"] = 0,
 								["targets"] = {
 									["Sulfuraddict"] = 0,
 								},
@@ -13711,8 +13720,8 @@ _detalhes_database = {
 							},
 							[2687] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 2687,
+								["totalover"] = 0,
 								["targets"] = {
 									["Sulfuraddict"] = 0,
 								},
@@ -13720,8 +13729,8 @@ _detalhes_database = {
 							},
 							[29131] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 29131,
+								["totalover"] = 0,
 								["targets"] = {
 									["Sulfuraddict"] = 0,
 								},
@@ -13731,21 +13740,21 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["received"] = 0.005988,
+					["flag_original"] = 1298,
 					["aID"] = "5826-021C5C75",
-					["tipo"] = 3,
-					["totalover"] = 0.005988,
+					["last_event"] = 0,
+					["passiveover"] = 0.005988,
 					["alternatepower"] = 0.005988,
 					["serial"] = "Player-5826-021C5C75",
-					["last_event"] = 0,
+					["tipo"] = 3,
 				}, -- [5]
 				{
 					["flag_original"] = 1298,
 					["resource"] = 0.008074000000000001,
 					["pets"] = {
 					},
-					["aID"] = "5826-01FE657B",
-					["passiveover"] = 0.005969,
+					["classe"] = "DRUID",
+					["totalover"] = 0.005969,
 					["total"] = 0.005969,
 					["serial"] = "Player-5826-01FE657B",
 					["received"] = 0.005969,
@@ -13759,8 +13768,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[17099] = {
 								["total"] = 0,
-								["totalover"] = 0,
 								["id"] = 17099,
+								["totalover"] = 0,
 								["targets"] = {
 									["Groyal"] = 0,
 								},
@@ -13770,11 +13779,11 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["classe"] = "DRUID",
-					["totalover"] = 0.005969,
+					["aID"] = "5826-01FE657B",
+					["passiveover"] = 0.005969,
+					["tipo"] = 3,
 					["last_event"] = 0,
 					["fight_component"] = true,
-					["tipo"] = 3,
 				}, -- [6]
 			},
 		}, -- [3]
@@ -13791,8 +13800,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[15571] = {
-								["id"] = 15571,
+							[5116] = {
+								["id"] = 5116,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -13809,8 +13818,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[5116] = {
-								["id"] = 5116,
+							[15571] = {
+								["id"] = 15571,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -13818,9 +13827,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
 					["pets"] = {
 					},
+					["buff_uptime"] = 0,
 					["aID"] = "5826-022772AA",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -13878,6 +13887,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							[13163] = {
+								["id"] = 13163,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[6150] = {
 								["id"] = 6150,
 								["targets"] = {
@@ -13894,14 +13909,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
+					["nome"] = "Dopesnare",
 					["debuff_uptime_targets"] = {
 					},
-					["nome"] = "Dopesnare",
 					["grupo"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-5826-022772AA",
 					["classe"] = "HUNTER",
 				}, -- [1]
@@ -13938,7 +13953,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "5826-0245975A",
+					["classe"] = "SHAMAN",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							[8045] = {
@@ -13981,10 +13996,10 @@ _detalhes_database = {
 					["serial"] = "Player-5826-0245975A",
 					["buff_uptime"] = 0,
 					["fight_component"] = true,
-					["nome"] = "Sában",
-					["grupo"] = true,
 					["interrupt"] = 0,
-					["classe"] = "SHAMAN",
+					["grupo"] = true,
+					["nome"] = "Sában",
+					["aID"] = "5826-0245975A",
 					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
@@ -14005,7 +14020,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "5826-024D082D",
+					["classe"] = "SHAMAN",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							[8046] = {
@@ -14072,10 +14087,10 @@ _detalhes_database = {
 					["serial"] = "Player-5826-024D082D",
 					["buff_uptime"] = 0,
 					["fight_component"] = true,
-					["nome"] = "Tøtèm",
-					["grupo"] = true,
 					["interrupt"] = 0,
-					["classe"] = "SHAMAN",
+					["grupo"] = true,
+					["nome"] = "Tøtèm",
+					["aID"] = "5826-024D082D",
 					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
@@ -14086,78 +14101,78 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Bloodfury Storm Witch",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Bloodfury Storm Witch",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5211-1-9877-4027-0000B7AA2B",
 					["aID"] = "4027",
+					["serial"] = "Creature-0-5211-1-9877-4027-0000B7AA2B",
+					["tipo"] = 4,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Burning Ravager",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Burning Ravager",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5211-1-9877-4037-000037C1E7",
 					["aID"] = "4037",
+					["serial"] = "Creature-0-5211-1-9877-4037-000037C1E7",
+					["tipo"] = 4,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Primordial Anomaly",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Primordial Anomaly",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5211-1-9877-212837-000037C1A4",
 					["aID"] = "212837",
+					["serial"] = "Creature-0-5211-1-9877-212837-000037C1A4",
+					["tipo"] = 4,
 				}, -- [7]
 				{
 					["flag_original"] = 66888,
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5826-0244D4F2",
 					["fight_component"] = true,
 					["nome"] = "Fritzchen",
-					["last_event"] = 0,
-					["aID"] = "5826-0244D4F2",
-					["serial"] = "Player-5826-0244D4F2",
 					["tipo"] = 4,
+					["classe"] = "UNGROUPPLAYER",
+					["serial"] = "Player-5826-0244D4F2",
+					["last_event"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Furious Stone Spirit",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Furious Stone Spirit",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5211-1-9877-4035-000037BBE2",
 					["aID"] = "4035",
+					["serial"] = "Creature-0-5211-1-9877-4035-000037BBE2",
+					["tipo"] = 4,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Bloodfury Roguefeather",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Bloodfury Roguefeather",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5211-1-9877-4023-000037C05C",
 					["aID"] = "4023",
+					["serial"] = "Creature-0-5211-1-9877-4023-000037C05C",
+					["tipo"] = 4,
 				}, -- [10]
 				{
 					["flag_original"] = 66888,
@@ -14176,7 +14191,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "5826-021A5A98",
+					["classe"] = "UNGROUPPLAYER",
 					["fight_component"] = true,
 					["cc_done"] = 0,
 					["nome"] = "Potasovka",
@@ -14184,7 +14199,7 @@ _detalhes_database = {
 						["Wind Serpent"] = 0,
 					},
 					["last_event"] = 0,
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5826-021A5A98",
 					["serial"] = "Player-5826-021A5A98",
 					["tipo"] = 4,
 				}, -- [11]
@@ -14193,13 +14208,13 @@ _detalhes_database = {
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5826-02242816",
 					["fight_component"] = true,
 					["nome"] = "Rarri",
-					["last_event"] = 0,
-					["aID"] = "5826-02242816",
-					["serial"] = "Player-5826-02242816",
 					["tipo"] = 4,
+					["classe"] = "UNGROUPPLAYER",
+					["serial"] = "Player-5826-02242816",
+					["last_event"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 4369,
@@ -14218,77 +14233,77 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["aID"] = "3456",
-					["monster"] = true,
-					["nome"] = "Razormane Pathfinder",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Razormane Pathfinder",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5250-1-1401-3456-00004BC4B4",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5250-1-1401-3456-00004BC4B4",
+					["last_event"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["aID"] = "212694",
-					["monster"] = true,
-					["nome"] = "Hirzek",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Hirzek",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5250-1-1401-212694-00004BC27C",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5250-1-1401-212694-00004BC27C",
+					["last_event"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["aID"] = "3457",
-					["monster"] = true,
-					["nome"] = "Razormane Stalker",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Razormane Stalker",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5250-1-1401-3457-0000CBC610",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5250-1-1401-3457-0000CBC610",
+					["last_event"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["aID"] = "3458",
-					["monster"] = true,
-					["nome"] = "Razormane Seer",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Razormane Seer",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5250-1-1401-3458-0000CBC630",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5250-1-1401-3458-0000CBC630",
+					["last_event"] = 0,
 				}, -- [17]
 				{
 					["flag_original"] = 8776,
 					["pets"] = {
 					},
-					["classe"] = "PET",
+					["aID"] = "3902",
 					["fight_component"] = true,
 					["nome"] = "Searing Totem II <Razormane Seer>",
-					["aID"] = "3902",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5250-1-1401-3902-00004BC63B",
+					["classe"] = "PET",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5250-1-1401-3902-00004BC63B",
+					["tipo"] = 4,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Stormhide",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "3238",
-					["serial"] = "Creature-0-5209-1-4712-3238-00084CA2C5",
+					["monster"] = true,
+					["nome"] = "Stormhide",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4712-3238-00084CA2C5",
+					["classe"] = "UNKNOW",
 				}, -- [19]
 				{
 					["flag_original"] = 1298,
@@ -14315,9 +14330,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
+					["buff_uptime"] = 0,
 					["pets"] = {
 					},
-					["buff_uptime"] = 0,
 					["aID"] = "5826-0225014D",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -14361,14 +14376,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Vonderweide",
 					["debuff_uptime_targets"] = {
 					},
+					["nome"] = "Vonderweide",
 					["grupo"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Player-5826-0225014D",
 					["classe"] = "WARRIOR",
 				}, -- [20]
@@ -14376,50 +14391,50 @@ _detalhes_database = {
 					["flag_original"] = 1304,
 					["pets"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5826-0239D867",
 					["fight_component"] = true,
 					["nome"] = "Moomy",
-					["aID"] = "5826-0239D867",
-					["tipo"] = 4,
-					["serial"] = "Player-5826-0239D867",
+					["classe"] = "UNGROUPPLAYER",
 					["last_event"] = 0,
+					["serial"] = "Player-5826-0239D867",
+					["tipo"] = 4,
 				}, -- [21]
 				{
 					["flag_original"] = 2600,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3235",
 					["fight_component"] = true,
 					["nome"] = "Greater Barrens Kodo",
-					["aID"] = "3235",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-4712-3235-00004CA78D",
+					["classe"] = "UNKNOW",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5209-1-4712-3235-00004CA78D",
+					["tipo"] = 4,
 				}, -- [22]
 				{
 					["flag_original"] = 2600,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3236",
 					["fight_component"] = true,
 					["nome"] = "Barrens Kodo",
-					["aID"] = "3236",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5209-1-4712-3236-0000CCA78D",
+					["classe"] = "UNKNOW",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5209-1-4712-3236-0000CCA78D",
+					["tipo"] = 4,
 				}, -- [23]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Highperch Consort",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4109",
-					["serial"] = "Creature-0-5209-1-4934-4109-000155DE03",
+					["monster"] = true,
+					["nome"] = "Highperch Consort",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4109-000155DE03",
+					["classe"] = "UNKNOW",
 				}, -- [24]
 				{
 					["flag_original"] = 1047,
@@ -14440,9 +14455,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
 					["pets"] = {
 					},
+					["buff_uptime"] = 0,
 					["aID"] = "5826-0254169B",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -14468,14 +14483,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
+					["nome"] = "Dooba",
 					["debuff_uptime_targets"] = {
 					},
-					["nome"] = "Dooba",
 					["grupo"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
-					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-5826-0254169B",
 					["classe"] = "HUNTER",
 				}, -- [25]
@@ -14483,105 +14498,105 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Stormer",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4097",
-					["serial"] = "Creature-0-5209-1-4934-4097-0004D5DE03",
+					["monster"] = true,
+					["nome"] = "Galak Stormer",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4097-0004D5DE03",
+					["classe"] = "UNKNOW",
 				}, -- [26]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Mauler",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4095",
-					["serial"] = "Creature-0-5209-1-4934-4095-0001D5DE03",
+					["monster"] = true,
+					["nome"] = "Galak Mauler",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4095-0001D5DE03",
+					["classe"] = "UNKNOW",
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Cloud Serpent",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4117",
-					["serial"] = "Creature-0-5209-1-4934-4117-0000D5DE03",
+					["monster"] = true,
+					["nome"] = "Cloud Serpent",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4117-0000D5DE03",
+					["classe"] = "UNKNOW",
 				}, -- [28]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Gravelsnout Vermin",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4112",
-					["serial"] = "Creature-0-5209-1-4934-4112-000055DE03",
+					["monster"] = true,
+					["nome"] = "Gravelsnout Vermin",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4112-000055DE03",
+					["classe"] = "UNKNOW",
 				}, -- [29]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Scout",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4094",
-					["serial"] = "Creature-0-5209-1-4934-4094-0003D5DE04",
+					["monster"] = true,
+					["nome"] = "Galak Scout",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4094-0003D5DE04",
+					["classe"] = "UNKNOW",
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Windchaser",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4096",
-					["serial"] = "Creature-0-5209-1-4934-4096-000155DE04",
+					["monster"] = true,
+					["nome"] = "Galak Windchaser",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5209-1-4934-4096-000155DE04",
+					["classe"] = "UNKNOW",
 				}, -- [31]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Highperch Patriarch",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Highperch Patriarch",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5209-1-4729-4110-000055EECC",
 					["aID"] = "4110",
+					["serial"] = "Creature-0-5209-1-4729-4110-000055EECC",
+					["tipo"] = 4,
 				}, -- [32]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Highperch Wyvern",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Highperch Wyvern",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5209-1-4729-4107-000055EE93",
 					["aID"] = "4107",
+					["serial"] = "Creature-0-5209-1-4729-4107-000055EE93",
+					["tipo"] = 4,
 				}, -- [33]
 				{
 					["flag_original"] = 1047,
@@ -14602,9 +14617,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
+					["buff_uptime"] = 0,
 					["pets"] = {
 					},
-					["buff_uptime"] = 0,
 					["aID"] = "5826-01FE657B",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -14678,16 +14693,16 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Groyal",
 					["debuff_uptime_targets"] = {
 					},
+					["nome"] = "Groyal",
 					["grupo"] = true,
-					["classe"] = "DRUID",
-					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["serial"] = "Player-5826-01FE657B",
 					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Player-5826-01FE657B",
+					["classe"] = "DRUID",
 				}, -- [34]
 				{
 					["flag_original"] = 1298,
@@ -14720,9 +14735,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
 					["pets"] = {
 					},
+					["buff_uptime"] = 0,
 					["aID"] = "5826-021C5C75",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -14742,17 +14757,43 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Sulfuraddict",
+					["buff_uptime_targets"] = {
+					},
 					["debuff_uptime_targets"] = {
 					},
 					["grupo"] = true,
+					["nome"] = "Sulfuraddict",
 					["tipo"] = 4,
 					["last_event"] = 0,
-					["classe"] = "WARRIOR",
 					["serial"] = "Player-5826-021C5C75",
-					["buff_uptime_targets"] = {
-					},
+					["classe"] = "WARRIOR",
 				}, -- [35]
+				{
+					["flag_original"] = 2632,
+					["serial"] = "Creature-0-5211-1-4320-4099-00005651C2",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "4099",
+					["nome"] = "Galak Marauder",
+					["last_event"] = 0,
+				}, -- [36]
+				{
+					["flag_original"] = 2632,
+					["serial"] = "Creature-0-5211-1-4320-4093-0000565004",
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["monster"] = true,
+					["aID"] = "4093",
+					["nome"] = "Galak Wrangler",
+					["last_event"] = 0,
+				}, -- [37]
 			},
 		}, -- [4]
 		{
@@ -14857,25 +14898,18 @@ _detalhes_database = {
 		["trinketProcs"] = {
 		},
 	},
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 333,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["mythic_plus_log"] = {
+	},
+	["data_harvested_for_charts"] = {
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -14883,9 +14917,7 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
 	},
