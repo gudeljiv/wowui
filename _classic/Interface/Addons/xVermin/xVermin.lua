@@ -1,5 +1,19 @@
 local _, xVermin = ...
 
+local al_frame = CreateFrame("Frame");
+al_frame:RegisterEvent("ADDON_LOADED");
+al_frame:SetScript(
+	"OnEvent", 
+	function (event, arg1)
+		if event == "ADDON_LOADED" then
+			if not xVerminSavedData or xVerminSavedData == nil or type(xVerminSavedData) ~= "table" then
+				xVerminSavedData = {}
+			end
+		end
+	end	
+);
+
+
 local function xInstallAddon()
 	C_CVar.SetCVar('autoQuestWatch', 1)
 	C_CVar.SetCVar('autoQuestProgress', 1)
@@ -411,7 +425,6 @@ f:SetScript(
 -- 	GameTooltip_ClearMoney(self);
 -- 	GameTooltip_ClearStatusBars(self);
 -- end
-
 
 
 

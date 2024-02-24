@@ -51,9 +51,9 @@ ChocolateBarDB = {
 		["Moolatz - Dreadnaught"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
-		["Tukac - Genesis"] = "Default",
+		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -78,8 +78,8 @@ ChocolateBarDB = {
 		["Tadibey - Golemagg"] = "Default",
 		["Dopestab - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
-		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
+		["Tukac - Genesis"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 777611.208,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 164272,
-		["timeStamp"] = 847751.436,
-		["timeAtThisLevel"] = 9703,
+		["total"] = 166096,
+		["timeStamp"] = 895818.956,
+		["timeAtThisLevel"] = 11527,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -862,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 26695,
-		["timeAtThisLevel"] = 899,
-		["timeStamp"] = 848276.301,
+		["total"] = 27082,
+		["timeAtThisLevel"] = 1286,
+		["timeStamp"] = 848663.578,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -980,9 +980,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 93111,
-		["timeAtThisLevel"] = 1489,
-		["timeStamp"] = 255067.162,
+		["total"] = 103076,
+		["timeAtThisLevel"] = 90,
+		["timeStamp"] = 895779.304,
 	},
 	["Augustin-"] = {
 		["total"] = 425995,

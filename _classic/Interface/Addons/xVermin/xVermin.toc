@@ -3,6 +3,7 @@
 ## Author: Vermin@Golemagg
 ## Version: 54000
 ## SavedVariablesPerCharacter: xKillCount
+## SavedVariables: xVerminSavedData
 
 # Libs\LibStub-1.0\LibStub.lua
 # Libs\LibRangeCheck-3.0\LibRangeCheck-3.0.lua
@@ -89,6 +90,7 @@ Helpers/DamageFont.lua
 Helpers/Engravings.lua
 Helpers/ErrorsFilter.lua
 # Helpers/FastLoot.lua
+Helpers/ImmuneData.lua
 Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua

@@ -304,3 +304,24 @@ xVermin.Enraged = function(unit)
 	return enraged > 0 and true or false
 end
 xEnraged = xVermin.Enraged
+
+xVermin.Immune = function(name, spellName)
+	if not name or not spellName then
+		return false
+	end
+
+	-- print(name, string.lower(spellName))
+
+	local immuneData = xVerminSavedData.SpellImmuneData[name]
+	if immuneData then
+		for _, savedSpellName in ipairs(immuneData) do
+			if string.lower(savedSpellName) == string.lower(spellName) then
+				print(2,"true", name, spellName, savedSpellName)
+				return true
+			end
+		end
+	end
+
+	return false
+end
+xImmune = xVermin.Immune

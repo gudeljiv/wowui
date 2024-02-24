@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 11653,
+	["session"] = 11739,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -2791,5 +2791,65 @@ BugGrabberDB = {
 			["session"] = 11647,
 			["counter"] = 1,
 		}, -- [360]
+		{
+			["message"] = "Interface/AddOns/xVermin/xVermin.lua:435: attempt to call global 'SendToTable' (a nil value)",
+			["time"] = "2024/02/24 19:15:08",
+			["locals"] = "self = Frame {\n 0 = <userdata>\n}\nevent = \"COMBAT_LOG_EVENT_UNFILTERED\"\n_ = 1708798508.234000\neventType = \"UNIT_DIED\"\n_ = true\nsourceGUID = \"\"\nsourceName = nil\n_ = -2147483648\n_ = -2147483648\ndestGUID = \"Creature-0-5250-1-16906-4036-00005A31B6\"\ndestName = \"Rogue Flame Spirit\"\namount = nil\noverkill = nil\nschool = nil\nresisted = nil\nblocked = nil\nabsorbed = nil\ncritical = nil\nglancing = nil\ncrushing = nil\nisOffHand = nil\nspellId = nil\nspellName = nil\nspellSchool = nil\n(*temporary) = nil\n(*temporary) = \"Rogue Flame Spirit\"\n(*temporary) = \"everybody\"\n(*temporary) = \"attempt to call global 'SendToTable' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:435: in function <Interface/AddOns/xVermin/xVermin.lua:425>",
+			["session"] = 11660,
+			["counter"] = 1,
+		}, -- [361]
+		{
+			["message"] = "Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
+			["time"] = "2024/02/24 19:15:41",
+			["session"] = 11661,
+			["counter"] = 1,
+		}, -- [362]
+		{
+			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
+			["time"] = "2024/02/24 19:15:41",
+			["session"] = 11661,
+			["counter"] = 1,
+		}, -- [363]
+		{
+			["message"] = "Interface/AddOns/xVermin/_Core.lua:315: bad argument #1 to 'ipairs' (table expected, got number)",
+			["time"] = "2024/02/24 20:06:37",
+			["locals"] = "(*temporary) = 6547\n(*temporary) = \"table expected, got number\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `ipairs'\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:315: in function `xImmune'\n[string \"print(xImmune(UnitName(\"target\"), 6547))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3015: in function <Interface/FrameXML/ChatFrame.lua:3009>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/ActionButton.lua\"]:100: in function <Interface/FrameXML/ActionButton.lua:94>\n[string \"@Interface/FrameXML/ActionButton.lua\"]:136: in function <Interface/FrameXML/ActionButton.lua:125>\n[string \"=[C]\"]: in function `ActionButtonDown'\n[string \"ACTIONBUTTON4\"]:2: in function <[string \"ACTIONBUTTON4\"]:1>",
+			["session"] = 11680,
+			["counter"] = 1,
+		}, -- [364]
+		{
+			["message"] = "Interface/AddOns/xVermin/xVermin.lua:425: bad argument #1 to 'insert' (table expected, got nil)",
+			["time"] = "2024/02/24 20:08:10",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 55\n(*temporary) = \"table expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `insert'\n[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:425: in main chunk",
+			["session"] = 11681,
+			["counter"] = 1,
+		}, -- [365]
+		{
+			["message"] = "Interface/AddOns/xVermin/xVermin.lua:426: bad argument #1 to 'insert' (table expected, got nil)",
+			["time"] = "2024/02/24 20:08:39",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 55\n(*temporary) = \"table expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `insert'\n[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:426: in main chunk",
+			["session"] = 11684,
+			["counter"] = 3,
+		}, -- [366]
+		{
+			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2680: Interface/AddOns/xVermin/_Core.lua:314: bad argument #1 to 'lower' (string expected, got nil)",
+			["time"] = "2024/02/24 20:58:50",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Interface/AddOns/xVermin/_Core.lua:314: bad argument #1 to 'lower' (string expected, got nil)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
+			["session"] = 11728,
+			["counter"] = 1,
+		}, -- [367]
+		{
+			["message"] = "Interface/AddOns/xVermin/_Core.lua:314: bad argument #1 to 'lower' (string expected, got nil)",
+			["time"] = "2024/02/24 20:58:50",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `lower'\n[string \"@Interface/AddOns/xVermin/_Core.lua\"]:314: in function `xImmune'\n[string \"return not xImmune(UnitName(\"target\"), \"Sunder Armor\")\"]:1: in function `LF_0000020C18EEA750'\n[string \"Condition_DEBUFFSTACKS_DEBUFFDUR_LUA_DEBUFFSTACKS_RAGE_DEBUFFDUR_LUA\"]:9: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2640: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2602>",
+			["session"] = 11728,
+			["counter"] = 134,
+		}, -- [368]
 	},
 }
