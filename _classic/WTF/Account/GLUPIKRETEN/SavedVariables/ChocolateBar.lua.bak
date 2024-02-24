@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeStamp"] = 777611.208,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 140497,
-		["timeStamp"] = 631971.179,
-		["timeAtThisLevel"] = 2954,
+		["total"] = 164272,
+		["timeStamp"] = 847751.436,
+		["timeAtThisLevel"] = 9703,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -862,9 +862,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 26576,
-		["timeAtThisLevel"] = 780,
-		["timeStamp"] = 228165.731,
+		["total"] = 26695,
+		["timeAtThisLevel"] = 899,
+		["timeStamp"] = 848276.301,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -940,9 +940,9 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 165108,
-		["timeAtThisLevel"] = 1513,
-		["timeStamp"] = 843912.574,
+		["total"] = 166049,
+		["timeAtThisLevel"] = 2454,
+		["timeStamp"] = 848033.432,
 	},
 	["Tudum-Jin'do"] = {
 		["total"] = 316,

@@ -198,7 +198,7 @@ H: 1
 Frame: WorldMapFrame
 FrameLevel: 1
 Anchor: CENTER
-X: -4
+X: 91
 Y: 68
 W: 1024
 H: 740

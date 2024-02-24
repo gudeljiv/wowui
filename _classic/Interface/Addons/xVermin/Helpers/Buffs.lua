@@ -34,7 +34,7 @@ local shift = -38
 					if not frame then 
 						frame = CreateFrame("Button", "buffbutton_" .. buff.short_name, UIParent, "SecureActionButtonTemplate,ActionButtonTemplate");
 						frame:SetAttribute("type1", "macro");
-						frame:SetAttribute("macrotext1", "/cast " .. buff.name);
+						frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name);
 						frame:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", 0, 120)
 						frame:CreateBeautyBorder(4)
 						frame:SetSize(36,36)
