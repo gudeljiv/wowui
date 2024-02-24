@@ -122,7 +122,7 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 							local mapID, coords = strsplit(":", mapIdCoords, 2)
 							if (not mapID or strtrim(mapID) == '') then
 								AddLineError(npcErrorLines, s, AL["CUSTOM_NPC_ERROR1_MAPID"])
-							elseif (tonumber(mapID) == nil) then
+							elseif (tonumber(mapID) == nil or RSUtils.Contains(mapID,"%.")) then
 								AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR2_MAPID"], mapID))
 							else
 								local mapFound = false
@@ -147,14 +147,14 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 									local x, y = strsplit("-", coord, 2)
 									if (not x or strtrim(x) == '') then
 										AddLineError(npcErrorLines, s, AL["CUSTOM_NPC_ERROR1_COORDX"])
-									elseif (tonumber(x) == nil) then
+									elseif (tonumber(x) == nil or RSUtils.Contains(x,"%.")) then
 										AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR2_COORDX"], x))
 									elseif (strlen(x) ~= 4) then
 										AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR3_COORDX"], x))
 									end
 									if (not y or strtrim(y) == '') then
 										AddLineError(npcErrorLines, s, AL["CUSTOM_NPC_ERROR1_COORDY"])
-									elseif (tonumber(y) == nil) then
+									elseif (tonumber(y) == nil or RSUtils.Contains(y,"%.")) then
 										AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR2_COORDY"], y))
 									elseif (strlen(y) ~= 4) then
 										AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR3_COORDY"], y))
@@ -185,7 +185,7 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 						for itemID in string.gmatch(lootString, '([^,]+)') do
 							if (not itemID or strtrim(itemID) == '') then
 								AddLineError(npcErrorLines, s, AL["CUSTOM_NPC_ERROR1_ITEMID"])
-							elseif (tonumber(itemID) == nil) then
+							elseif (tonumber(itemID) == nil or RSUtils.Contains(itemID,"%.")) then
 								AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR2_ITEMID"], itemID))
 							else
 								tinsert(newNpcInfo.items, tonumber(itemID))
@@ -198,7 +198,7 @@ function RSCustomNpcs.ImportNpcs(text, options, callback)
 				if (displayID) then
 					-- Skip if asterisk
 					if (strtrim(displayID) ~= '*') then
-						if (tonumber(displayID) == nil) then
+						if (tonumber(displayID) == nil or RSUtils.Contains(displayID,"%.")) then
 							AddLineError(npcErrorLines, s, string.format(AL["CUSTOM_NPC_ERROR1_DISPLAYID"], displayID))
 						else
 							newNpcInfo.displayID = displayID

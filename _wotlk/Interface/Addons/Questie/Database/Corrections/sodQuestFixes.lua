@@ -713,6 +713,52 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.DESOLACE,
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the Rowboat to reach the eastern shore."), 0, {{"object", 420055}}}},
         },
+        [79358] = { -- Tattered Note
+            [questKeys.startedBy] = {{4421},nil,{212748}},
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.zoneOrSort] = zoneIDs.THOUSAND_NEEDLES,
+        },
+        [79360] = { -- Elemental Aid
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79358},
+            [questKeys.zoneOrSort] = zoneIDs.THOUSAND_NEEDLES,
+        },
+        [79361] = { -- Power of da Wind
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79360},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
+        [79362] = { -- Power of da Earth
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79360},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
+        [79363] = { -- Power of da Water
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79360},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
+        [79364] = { -- A Simple Container
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestGroup] = {79361,79362,79363},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
+        [79365] = { -- With Wind Beneath Your Wings
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79364},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
+        [79366] = { -- Calm Before the Storm
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79365},
+            [questKeys.zoneOrSort] = zoneIDs.THOUSAND_NEEDLES,
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Drink the Squall-breakers Potion and talk to Nyse."), 0, {{"monster", 4317}}}},
+        },
+        [79442] = { -- Catching Up
+            [questKeys.requiredClasses] = classIDs.SHAMAN,
+            [questKeys.preQuestSingle] = {79366},
+            [questKeys.zoneOrSort] = zoneIDs.ALTERAC_MOUNTAINS,
+        },
         [79482] = { -- Stolen Winter Veil Treats (Alliance)
             [questKeys.startedBy] = {{216902}},
             [questKeys.finishedBy] = {{216915}},
@@ -812,6 +858,7 @@ function SeasonOfDiscovery:LoadQuests()
         },
         [79705] = { -- Salvaging the Salvagematic
             [questKeys.finishedBy] = {{217689}},
+            [questKeys.objectives] = {nil,nil,{{3860},{11135},{216634},{213735}}},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
@@ -884,6 +931,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
+        [79985] = { -- A Fine Mess
+            [questKeys.triggerEnd] = {"Kernobee Rescue", {[zoneIDs.GNOMEREGAN]={{-1,-1}}}},
+            [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
+            [questKeys.questFlags] = questFlags.RAID,
+        },
         [79986] = { -- Grime-Encrusted Ring
             [questKeys.startedBy] = {nil,nil,{216661}},
             [questKeys.finishedBy] = {nil,{142487}},
@@ -891,6 +943,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [79987] = { -- Return of the Ring Alliance
+            [questKeys.preQuestSingle] = {79984},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
@@ -987,6 +1040,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80140] = { -- Return of the Ring Horde
+            [questKeys.preQuestSingle] = {79984},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
@@ -1047,6 +1101,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80181] = { -- Gyrodrillmatic Excavationators
+            [questKeys.finishedBy] = {{6579}},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
