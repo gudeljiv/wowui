@@ -316,7 +316,6 @@ xVermin.Immune = function(name, spellName)
 	if immuneData then
 		for _, savedSpellName in ipairs(immuneData) do
 			if string.lower(savedSpellName) == string.lower(spellName) then
-				print(2,"true", name, spellName, savedSpellName)
 				return true
 			end
 		end

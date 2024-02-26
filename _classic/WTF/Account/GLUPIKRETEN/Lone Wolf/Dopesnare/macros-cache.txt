@@ -1,13 +1,14 @@
+VER 3 0000000001000018 " " "134400"
+#showtooltip Flanking Strike
+/startattack
+/cast Raptor Strike
+/cast Flanking Strike
+END
 VER 3 0000000001000016 "a-pet" "134400"
 #showtooltip
 /assist pet
 /startattack
 /cast !Auto Shot
-END
-VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
-#showtooltip
-/startattack
-/use Sinister Strike
 END
 VER 3 0000000001000011 "attack" "132152"
 #showtooltip
@@ -15,6 +16,11 @@ VER 3 0000000001000011 "attack" "132152"
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
+END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
 END
 VER 3 0000000001000014 "auto" "134400"
 #showtooltip
