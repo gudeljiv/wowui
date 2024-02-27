@@ -605,6 +605,7 @@ data["Enchanting"] = {
 				{ 1, 430409 }, --Brilliant Mana Oil / 310
 				{ 3, 435903 }, --Enchant Chest - Retricutioner
 				{ 4, 435481 }, -- Enchant Weapon - Dismantle
+				{ 5, 439156 }, -- Sigil of Innovation
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 439134 }, -- Greater Mystic Wand
 			}

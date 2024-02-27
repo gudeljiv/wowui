@@ -7309,6 +7309,7 @@ data["Gnomeregan2"] = {
 				{ 12,  213326 }, -- Girdle of Reclamation
 				{ 13,  215436 }, -- Totem of Invigorating Flame
 				{ 14,  215437 }, -- Trogg Transfigurator 3000
+				{ 15,  216490 }, -- Idol of Wrath
 			},
 		},
 		{ -- GnViscousFallout

@@ -488,6 +488,10 @@ data["AzerothCommerceAuthority"] = {
 			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep7" },
 				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
+				{ 3, 219021 }, -- Hefty Courier Pack
+				{ 16, 219135 }, -- Curiosity Pendant
+				{ 17, 219136 }, -- Tenacity Pendant
+				{ 18, 219137 }, -- Initiative Pendant
 			},
 		},
 		{ -- Honored
@@ -498,6 +502,9 @@ data["AzerothCommerceAuthority"] = {
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 				{ 6, 212230 }, -- Schematic: Soul Vessel
+				{ 16, 219022 }, -- Hauler's Ring
+				{ 17, 219023 }, -- Clerk's Ring
+				{ 18, 219024 }, -- Messenger's Ring
 			},
 		},
 		{ -- Friendly
@@ -540,6 +547,10 @@ data["DurotarSupplyAndLogistics"] = {
 			[HORDE_DIFF] = {
 				{ 1, "f2587rep7" },
 				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
+				{ 3, 219021 }, -- Hefty Courier Pack
+				{ 16, 219135 }, -- Curiosity Pendant
+				{ 17, 219136 }, -- Tenacity Pendant
+				{ 18, 219137 }, -- Initiative Pendant
 			},
 		},
 		{ -- Honored
@@ -550,6 +561,9 @@ data["DurotarSupplyAndLogistics"] = {
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 				{ 6, 212230 }, -- Schematic: Soul Vessel
+				{ 16, 219022 }, -- Hauler's Ring
+				{ 17, 219023 }, -- Clerk's Ring
+				{ 18, 219024 }, -- Messenger's Ring
 			},
 		},
 		{ -- Friendly

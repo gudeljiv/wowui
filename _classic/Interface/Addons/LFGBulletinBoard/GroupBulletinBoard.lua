@@ -39,6 +39,7 @@ GBB.WOTLKDUNGEONBREAK = 81
 GBB.DUNGEONBREAK = 25
 GBB.COMBINEMSGTIMER=10
 GBB.MAXCOMPACTWIDTH=350
+GBB.ShouldReset = true
 
 -- Tools
 -------------------------------------------------------------------------------------
@@ -577,7 +578,6 @@ function GBB.Init()
 	GBB.Initalized=true
 	
 	GBB.PopupDynamic=GBB.Tool.CreatePopup(GBB.OptionsUpdate)
-	
 	-- Get build version to check against classic
 	local version, build, date, tocversion = GetBuildInfo()
 

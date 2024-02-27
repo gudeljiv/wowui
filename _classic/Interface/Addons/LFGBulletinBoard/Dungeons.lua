@@ -113,6 +113,7 @@ function GBB.GetDungeonNames()
 		["BAD"] =	"DEBUG BAD WORDS - REJECTED",
 		["BREW"] =  "Brewfest - Coren Direbrew",
 		["HOLLOW"] =  "Hallow's End - Headless Horseman",
+    ["TRAVEL"] = "Travel services - Summons/Portals",
 		}
 
 	local dungeonNamesLocales={
@@ -642,7 +643,7 @@ GBB.VanillaDungeonLevels ={
 	["LBRS"] = 	{55,60}, ["DME"] = 	{58,60}, ["DMN"] = 	{58,60}, ["DMW"] = 	{58,60}, ["STR"] = 	{58,60}, ["SCH"] = 	{58,60},
 	["UBRS"] = 	{58,60}, ["MC"] = 	{60,60}, ["ZG"] = 	{60,60}, ["AQ20"]= 	{60,60}, ["BWL"] = {60,60},
 	["AQ40"] = 	{60,60}, ["NAX"] = 	{60,60},
-	["MISC"]= {0,100},
+	["MISC"]=   {0,100}, ["TRAVEL"]={0,100},
 	["DEBUG"] = {0,100}, ["BAD"] =	{0,100}, ["TRADE"]=	{0,100}, ["SM2"] =  {28,42}, ["DM2"] =	{58,60}, ["DEADMINES"]={18,23},
 }
 
@@ -653,7 +654,7 @@ GBB.PostTbcDungeonLevels = {
 	["LBRS"] = 	{54,60}, ["DME"] = 	{54,61}, ["DMN"] = 	{54,61}, ["DMW"] = 	{54,61}, ["STR"] = 	{56,61}, ["SCH"] = 	{56,61},
 	["UBRS"] = 	{53,61}, ["MC"] = 	{60,60}, ["ZG"] = 	{60,60}, ["AQ20"]= 	{60,60}, ["BWL"] = {60,60},
 	["AQ40"] = 	{60,60}, ["NAX"] = 	{60,60},
-	["MISC"]= {0,100},
+	["MISC"] =  {0,100}, ["TRAVEL"]={0,100},
 	["DEBUG"] = {0,100}, ["BAD"] =	{0,100}, ["TRADE"]=	{0,100}, ["SM2"] =  {28,42}, ["DM2"] =	{58,60}, ["DEADMINES"]={16,24},
 }
 
@@ -681,7 +682,7 @@ GBB.WotlkDungeonLevels = {
 GBB.WotlkDungeonNames = {
 	"UK", "NEX", "AZN", "ANK", "DTK", "VH", "GD", "HOS", "HOL", "COS",
 	"OCC", "UP", "FOS", "POS", "HOR", "CHAMP", "OS", "VOA", "EOE", "ULDAR",
-	"TOTC", "RS", "ICC", "NAX"
+	"TOTC", "RS", "ICC", "ONY", "NAXX"
 }
 
 GBB.TbcDungeonNames = {
@@ -695,7 +696,7 @@ GBB.VanillDungeonNames  = {
     "RFK", "SMG", "SML", "SMA", "SMC", "RFD", "ULD",
     "ZF", "MAR", "ST" , "BRD", "LBRS", "DME", "DMN",
     "DMW", "STR", "SCH", "UBRS", "MC", "ZG",
-    "AQ20", "BWL", "AQ40", "NAXX", "ONY"
+    "AQ20", "BWL", "AQ40", "NAX",
 }
 
 
@@ -703,7 +704,7 @@ GBB.PvpNames = {
 	"WSG", "AB", "AV", "EOTS", "WG", "SOTA", "ARENA",
 }
 
-GBB.Misc = {"MISC", "TRADE",}
+GBB.Misc = {"MISC", "TRADE", "TRAVEL"}
 
 GBB.DebugNames = {
 	"DEBUG", "BAD", "NIL",
@@ -750,6 +751,14 @@ local function ConcatenateLists(Names)
 	return result, index
 end
 
+local function GetSize(list)
+	local size = 0
+	for _, _ in pairs(list) do
+		size = size + 1
+	end
+	return size
+end
+
 function GBB.GetDungeonSort()
 	for eventName, eventData in pairs(GBB.Seasonal) do
         if GBB.Tool.InDateRange(eventData.startDate, eventData.endDate) then
@@ -759,42 +768,26 @@ function GBB.GetDungeonSort()
 		end
     end
 
-	local dungeonOrder = { GBB.VanillDungeonNames, GBB.PvpNames, GBB.Misc, GBB.TbcDungeonNames, GBB.WotlkDungeonNames, GBB.DebugNames}
+	local dungeonOrder = { GBB.VanillDungeonNames, GBB.TbcDungeonNames, GBB.WotlkDungeonNames, GBB.PvpNames, GBB.Misc, GBB.DebugNames}
 
 	-- Why does Lua not having a fucking size function
-	 local vanillaDungeonSize = 0
-	 for _, _ in pairs(GBB.VanillDungeonNames) do
-		vanillaDungeonSize = vanillaDungeonSize + 1
-	 end
+	local vanillaDungeonSize = GetSize(GBB.VanillDungeonNames)
 
-	 local tbcDungeonSize = 0
-	 for _, _ in pairs(GBB.TbcDungeonNames) do
-		tbcDungeonSize = tbcDungeonSize + 1
-	 end
+	local tbcDungeonSize = GetSize(GBB.TbcDungeonNames)
 
-	local debugSize = 0
-	for _, _ in pairs(GBB.DebugNames) do
-		debugSize = debugSize+1
-	end
+	local debugSize = GetSize(GBB.DebugNames)
 
-	local pvpSize = 0
-	for _, _ in pairs(GBB.PvpNames) do
-		pvpSize = pvpSize+1
-	end
-
-	local miscSize = 0
-	for _, _ in pairs(GBB.Misc) do
-		miscSize = miscSize+1
-	end
 
 	local tmp_dsort, concatenatedSize = ConcatenateLists(dungeonOrder)
 	local dungeonSort = {}
 
-	GBB.MAXDUNGEON = vanillaDungeonSize + pvpSize + miscSize
-	GBB.TBCDUNGEONSTART = GBB.MAXDUNGEON + 1
-	GBB.TBCMAXDUNGEON = GBB.MAXDUNGEON  + tbcDungeonSize
+	GBB.TBCDUNGEONSTART = vanillaDungeonSize + 1
+	GBB.MAXDUNGEON = vanillaDungeonSize
+	GBB.TBCMAXDUNGEON = vanillaDungeonSize  + tbcDungeonSize
 	GBB.WOTLKDUNGEONSTART = GBB.TBCMAXDUNGEON + 1
-	GBB.WOTLKMAXDUNGEON = concatenatedSize - debugSize - 1
+	GBB.WOTLKMAXDUNGEON = GetSize(GBB.WotlkDungeonNames) + GBB.TBCMAXDUNGEON
+	GBB.ENDINGDUNGEONSTART = GBB.WOTLKMAXDUNGEON + 1
+	GBB.ENDINGDUNGEONEND = concatenatedSize - debugSize - 1
 
 	for dungeon,nb in pairs(tmp_dsort) do
 		dungeonSort[nb]=dungeon
