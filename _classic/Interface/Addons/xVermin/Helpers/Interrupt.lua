@@ -85,26 +85,30 @@ local HandleUnit = function(unit)
 		end
 
 		-- SHAMAN INTERRUPT
-		if xVermin.Class == 'SHAMAN' and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock")) then
+		if xVermin.Class == 'SHAMAN' and xVermin.GetSpellID("Earth Shock") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock")) then
 			if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- ROGUE INTERRUPT
-		if xVermin.Class == 'ROGUE' and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Kick")) then
+		if xVermin.Class == 'ROGUE' and xVermin.GetSpellID("Kick") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Kick")) then
 			if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
 				HandleRotationFrame(true)
 			end
 		end
 
 		-- HUNTER INTERRUPT
-		if xVermin.Class == 'HUNTER' and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Silencing Shot")) or IsSpellKnown(xVermin.GetSpellID("Intimidation"), true) then
-			if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
-				HandleRotationFrame(true)
+		if xVermin.Class == 'HUNTER' then
+			if xVermin.GetSpellID("Silencing Shot") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Silencing Shot")) then 
+				if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
+					HandleRotationFrame(true)
+				end
 			end
-			if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
-				HandleRotationFrame(true)
+			if xVermin.GetSpellID("Intimidation", true) ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Intimidation")) then 
+				if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
+					HandleRotationFrame(true)
+				end
 			end
 		end
 	else
