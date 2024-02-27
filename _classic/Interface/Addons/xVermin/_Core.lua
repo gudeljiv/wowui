@@ -324,3 +324,10 @@ xVermin.Immune = function(name, spellName)
 	return false
 end
 xImmune = xVermin.Immune
+
+xVermin.GetSpellID = function(name)
+	if not name then return end
+	local name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon = GetSpellInfo(name)
+	return spellID
+end
+xSpellID = xVermin.GetSpellID

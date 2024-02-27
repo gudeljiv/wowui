@@ -1,9 +1,3 @@
-VER 3 0000000001000018 " " "134400"
-#showtooltip Flanking Strike
-/startattack
-/cast Raptor Strike
-/cast Flanking Strike
-END
 VER 3 0000000001000016 "a-pet" "134400"
 #showtooltip
 /assist pet
@@ -40,6 +34,12 @@ VER 3 0000000001000001 "fd" "134400"
 /cast Feign Death
 /stopattack
 /stopcasting
+END
+VER 3 0000000001000018 "flank" "134400"
+#showtooltip Flanking Strike
+/startattack
+/cast Raptor Strike
+/cast Flanking Strike
 END
 VER 3 0000000001000013 "freeze" "134400"
 #showtooltip 

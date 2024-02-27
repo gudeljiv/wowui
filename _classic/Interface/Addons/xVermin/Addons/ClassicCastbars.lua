@@ -63,17 +63,23 @@ local _, xVermin = ...
 
 
 local function HandleCast(data, castbar, unitID)
+	-- print("start cast", unitID, castbar, castbar.isUninterruptible)
 	if unitID == "target" then
-		if not castbar.notInteruptible then
+		if not castbar.isUninterruptible then
+			-- print("true")
 			_G.UnitCastingInteruptible = true
-		else 
+		else
+			-- print("false")
 			_G.UnitCastingInteruptible = false
 		end
 	end
 end
 
 hooksecurefunc(ClassicCastbars, "DisplayCastbar", HandleCast)
-hooksecurefunc(ClassicCastbars, "HideCastbar", function() _G.UnitCastingInteruptible = false end)
+hooksecurefunc(ClassicCastbars, "HideCastbar", function() 
+	-- print("stop cast")
+	_G.UnitCastingInteruptible = false 
+end)
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_REGEN_ENABLED')
