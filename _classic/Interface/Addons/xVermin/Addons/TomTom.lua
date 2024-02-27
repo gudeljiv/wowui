@@ -15,3 +15,16 @@ TomTomCrazyArrow:HookScript(
 		TomTomCrazyArrow:SetPoint('BOTTOM', CustomContainer_Combat, 'TOP', 0, 40)
 	end
 )
+
+
+-- xVermin.CheckIfLoadedWithTimer(
+-- 	'TradeSkillFrame.SearchBox',
+-- 	function()
+-- 		print("asd")
+-- 		TradeSkillFrame.SearchBox:ClearAllPoints()
+-- 		TradeSkillFrame.SearchBox:SetWidth(300)
+-- 		TradeSkillFrame.SearchBox:SetPoint("LEFT", TradeSkillRankFrame, "RIGHT", 20, 0)
+-- 		TradeSkillFrame.HaveMats:ClearAllPoints()
+-- 		TradeSkillFrame.HaveMats:SetPoint("TOPLEFT", TradeSkillFrame.SearchBox, "BOTTOMLEFT", 0,2)
+-- 	end
+-- )

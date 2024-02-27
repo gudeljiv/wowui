@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11764,
+	["session"] = 11784,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2891,5 +2891,45 @@ BugGrabberDB = {
 			["session"] = 11764,
 			["counter"] = 1,
 		}, -- [373]
+		{
+			["message"] = "Interface/AddOns/xVermin/Addons/ItemRack.lua:39: attempt to index local 'irm' (a nil value)",
+			["time"] = "2024/02/27 18:06:49",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n Class = \"ROGUE\"\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:328\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:308\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:221\n IsClassic = true\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n IsSoD = true\n IsWotlk = false\n MaxPlayerLevel = 40\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n R6_Occupied = false\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:293\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:209\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IsTBC = false\n WaitTimeUntillAddonLoaded = 30\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:245\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:235\n}\nirbf = nil\ni = \"\"\nirm = nil\n(*temporary) = \"ItemRackMenu1\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to index local 'irm' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ItemRack.lua\"]:39: in main chunk",
+			["session"] = 11770,
+			["counter"] = 1,
+		}, -- [374]
+		{
+			["message"] = "Interface/AddOns/xVermin/Addons/ItemRack.lua:39: attempt to index global 'ItemRackMenu1' (a nil value)",
+			["time"] = "2024/02/27 18:07:08",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n Class = \"ROGUE\"\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:328\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:308\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:221\n IsClassic = true\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n IsSoD = true\n IsWotlk = false\n MaxPlayerLevel = 40\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n R6_Occupied = false\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:293\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:209\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IsTBC = false\n WaitTimeUntillAddonLoaded = 30\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:245\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:235\n}\nirbf = nil\ni = \"\"\nirm = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'ItemRackMenu1' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ItemRack.lua\"]:39: in main chunk",
+			["session"] = 11771,
+			["counter"] = 1,
+		}, -- [375]
+		{
+			["message"] = "Interface/AddOns/xVermin/Addons/ItemRack.lua:39: attempt to call method 'HookScript' (a nil value)",
+			["time"] = "2024/02/27 18:10:31",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n Class = \"ROGUE\"\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:328\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:308\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:221\n IsClassic = true\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n IsSoD = true\n IsWotlk = false\n MaxPlayerLevel = 40\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n R6_Occupied = false\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:293\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:209\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IsTBC = false\n WaitTimeUntillAddonLoaded = 30\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:245\n IfUnitIsCastingNonInteruptable = <function> defined @Interface/AddOns/xVermin/_Core.lua:235\n}\nirbf = nil\ni = \"\"\nirm = nil\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = \"OnUpdate\"\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Addons/ItemRack.lua:41\n(*temporary) = \"attempt to call method 'HookScript' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ItemRack.lua\"]:39: in main chunk",
+			["session"] = 11772,
+			["counter"] = 1,
+		}, -- [376]
+		{
+			["message"] = "Interface/AddOns/xVermin/Addons/ItemRack.lua:42: attempt to index local 'parent' (a nil value)",
+			["time"] = "2024/02/27 18:13:59",
+			["locals"] = "(for index) = 1\n(for limit) = 30\n(for step) = 1\ni = 1\nchild = nil\nparent = nil\n(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:123\n(*temporary) = \"1\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'parent' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Addons/ItemRack.lua\"]:42: in function <Interface/AddOns/xVermin/Addons/ItemRack.lua:38>\n[string \"=[C]\"]: in function `OnUpdate'\n[string \"*ItemRack.xml:7_OnUpdate\"]:1: in function <[string \"*ItemRack.xml:7_OnUpdate\"]:1>",
+			["session"] = 11776,
+			["counter"] = 128,
+		}, -- [377]
+		{
+			["message"] = "[string \"TradeSkillFrame.SearchBox:SetPoint(\"LEFT\", ...\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: EditBox:SetPoint.",
+			["time"] = "2024/02/27 18:53:48",
+			["locals"] = "(*temporary) = EditBox {\n 0 = <userdata>\n OnEscapePressed = <function> defined @Interface/AddOns/ClassicProfessionFilter/ProfessionFilter.lua:22\n Right = Texture {\n }\n Left = Texture {\n }\n clearButton = TradeSkillFrameClearButton {\n }\n searchIcon = TradeSkillFrameSearchIcon {\n }\n OnTextChanged = <function> defined @Interface/AddOns/ClassicProfessionFilter/ProfessionFilter.lua:13\n Instructions = FontString {\n }\n OnChar = <function> defined @Interface/AddOns/ClassicProfessionFilter/ProfessionFilter.lua:17\n Middle = Texture {\n }\n}\n(*temporary) = \"LEFT\"\n(*temporary) = nil\n(*temporary) = \"RIGHT\"\n(*temporary) = 10\n(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TradeSkillFrame.SearchBox:SetPoint(\"LEFT\", TradeSkillrankFrame, \"RIGHT\", 10, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 11781,
+			["counter"] = 1,
+		}, -- [378]
 	},
 }

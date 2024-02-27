@@ -13,7 +13,14 @@ if xVermin.Class == 'HUNTER' or xVermin.Class == 'ROGUE' or xVermin.Class == 'WA
 	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, 0)
 	ac.text:SetText('')
 
-	CharacterAmmoSlotCount:Hide()
+	xVermin.CheckIfLoadedWithTimer(
+	'CharacterAmmoSlotCount',
+	function()
+		-- ako zelim hide mora ici OnShow --> Hide()
+		-- CharacterAmmoSlotCount:Hide()
+		CharacterAmmoSlotCount:SetScale(0.7)
+	end
+)
 
 	local f = CreateFrame('Frame')
 	f:RegisterEvent('PLAYER_ENTERING_WORLD')

@@ -942,9 +942,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 172708,
-		["timeStamp"] = 1115188.672,
-		["timeAtThisLevel"] = 9113,
+		["total"] = 178304,
+		["timeStamp"] = 1146801.849,
+		["timeAtThisLevel"] = 14709,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,

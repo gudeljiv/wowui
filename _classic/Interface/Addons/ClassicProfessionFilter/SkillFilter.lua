@@ -267,16 +267,22 @@ CPF.RegisterCallback(MODULE_NAME, "initialize", function()
     CPF:InitializeOnDemand("Blizzard_TradeSkillUI", function()
         -- Create search bar
         TradeSkillFrame.SearchBox = CreateFrame("EditBox", nil, TradeSkillFrame, "ClassicProfessionFilterSearchBoxTemplate")
-        TradeSkillFrame.SearchBox:SetPoint("BOTTOMRIGHT", TradeSkillListScrollFrame, "TOPRIGHT", 23, 3)
+		TradeSkillFrame.SearchBox:SetWidth(300)
+		TradeSkillFrame.SearchBox:SetPoint("LEFT", TradeSkillRankFrame, "RIGHT", 20, 0)
+        -- TradeSkillFrame.SearchBox:SetPoint("BOTTOMRIGHT", TradeSkillListScrollFrame, "TOPRIGHT", 23, 3)
         TradeSkillFrame.SearchBox:Show()
 
         -- Create have mats checkbox
         TradeSkillFrame.HaveMats = CreateFrame("CheckButton", nil, TradeSkillFrame, "ClassicProfessionFilterCheckButtonTemplate")
-        if (LeaPlusDB and LeaPlusDB["EnhanceProfessions"] == "On") then -- thank you rumchiller
-            TradeSkillFrame.HaveMats:SetPoint("LEFT", TradeSkillFrame.SearchBox, "RIGHT", 8, 0)
-        else
-            TradeSkillFrame.HaveMats:SetPoint("BOTTOMLEFT", TradeSkillFrame.SearchBox, "TOPLEFT", -40, -3)
-        end
+        -- if (LeaPlusDB and LeaPlusDB["EnhanceProfessions"] == "On") then -- thank you rumchiller
+        --     TradeSkillFrame.HaveMats:SetPoint("LEFT", TradeSkillFrame.SearchBox, "RIGHT", 8, 0)
+        -- else
+        --     TradeSkillFrame.HaveMats:SetPoint("BOTTOMLEFT", TradeSkillFrame.SearchBox, "TOPLEFT", -40, -3)
+        -- end
+
+		TradeSkillFrame.HaveMats:SetPoint("TOPLEFT", TradeSkillFrame.SearchBox, "BOTTOMLEFT", 0,2)
+
+
         ---START CHANGES
         TradeSkillFrame.HaveMats.Text:SetText(CRAFT_IS_MAKEABLE)
         ---END CHANGES
