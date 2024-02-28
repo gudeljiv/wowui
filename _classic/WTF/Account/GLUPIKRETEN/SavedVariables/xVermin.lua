@@ -4,8 +4,11 @@ xVerminSavedData = {
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Furious Stone Spirit"] = {
+		["Burning Destroyer"] = {
 			"Serpent Sting", -- [1]
+		},
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
@@ -17,10 +20,10 @@ xVerminSavedData = {
 			"Rend", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
+		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
 		},
 	},
