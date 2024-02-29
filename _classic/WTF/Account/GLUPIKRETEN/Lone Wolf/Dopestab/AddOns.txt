@@ -247,3 +247,7 @@ SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TotemCaddy: enabled
 SkillInfoPlus: enabled
+Scrap: enabled
+BrainDead: enabled
+SyLevel: enabled
+BetterBags: disabled

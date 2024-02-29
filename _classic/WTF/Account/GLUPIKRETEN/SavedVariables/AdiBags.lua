@@ -223,10 +223,10 @@ AdiBagsDB = {
 						[43464] = "Consumable#Scrolls",
 						[22794] = "Trade Goods#Herbs",
 						[22786] = "Trade Goods#Herbs",
-						[6219] = "Miscellaneous#Miscellaneous",
 						[3369] = "Trade Goods#Herbs",
+						[6219] = "Miscellaneous#Miscellaneous",
 						[12430] = "Quest#E'ko",
-						[13444] = "Consumable#Potions",
+						[8845] = "Trade Goods#Herbs",
 						[22792] = "Trade Goods#Herbs",
 						[13452] = "Consumable#Potions",
 						[13456] = "Consumable#Potions",
@@ -353,7 +353,7 @@ AdiBagsDB = {
 						[5956] = "Miscellaneous#Miscellaneous",
 						[13457] = "Consumable#Potions",
 						[8838] = "Trade Goods#Herbs",
-						[8845] = "Trade Goods#Herbs",
+						[13444] = "Consumable#Potions",
 						[8846] = "Trade Goods#Herbs",
 						[35783] = "Quest#Quest",
 						[3499] = "Quest#Quest",
@@ -579,12 +579,14 @@ AdiBagsDB = {
 				["Bank"] = 12,
 				["Backpack"] = 8,
 			},
-			["modules"] = {
-				["MoneyFrame"] = false,
-				["TooltipInfo"] = false,
-				["SectionVisibilityDropdown"] = false,
-				["ItemLevel"] = false,
-				["Masque"] = false,
+			["maxHeight"] = 0.3,
+			["experiments"] = {
+				["Bag Lag Fix"] = {
+					["Enabled"] = false,
+					["Percent"] = 1,
+					["Name"] = "Bag Lag Fix",
+					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
+				},
 			},
 			["dimJunk"] = false,
 			["positions"] = {
@@ -604,16 +606,6 @@ AdiBagsDB = {
 			["filters"] = {
 				["NewItem"] = false,
 			},
-			["experiments"] = {
-				["Bag Lag Fix"] = {
-					["Enabled"] = false,
-					["Percent"] = 1,
-					["Name"] = "Bag Lag Fix",
-					["Description"] = "This experiment will fix the lag when opening bags via per-item change draws instead of full redraws.",
-				},
-			},
-			["rightClickConfig"] = false,
-			["sortingOrder"] = "byQualityAndLevel",
 			["theme"] = {
 				["reagentBank"] = {
 					["sectionFont"] = {
@@ -732,7 +724,16 @@ AdiBagsDB = {
 					["insets"] = 2,
 				},
 			},
-			["maxHeight"] = 0.3,
+			["rightClickConfig"] = false,
+			["sortingOrder"] = "byQualityAndLevel",
+			["deprecationPhase"] = 2,
+			["modules"] = {
+				["MoneyFrame"] = false,
+				["TooltipInfo"] = false,
+				["SectionVisibilityDropdown"] = false,
+				["ItemLevel"] = false,
+				["Masque"] = false,
+			},
 			["qualityOpacity"] = 0.05,
 			["questIndicator"] = false,
 		},

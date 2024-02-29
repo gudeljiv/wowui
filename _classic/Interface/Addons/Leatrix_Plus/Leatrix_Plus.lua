@@ -1,5 +1,5 @@
-----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.18 (14th February 2024)
+﻿----------------------------------------------------------------------
+-- 	Leatrix Plus 1.15.20 (28th February 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.18"
+	LeaPlusLC["AddonVer"] = "1.15.20"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -7893,6 +7893,8 @@
 				-- Traverse quests in log
 				for i = 1, QUESTS_DISPLAYED do
 					local questIndex = i + FauxScrollFrame_GetOffset(QuestLogListScrollFrame)
+					-- Can use below line instead of FauxScrollFrame_GetOffset (Wrath Classic uses QuestLogTitleButton_Resize)
+					-- local questIndex = i + math.floor(QuestLogListScrollFrame:GetVerticalScroll() / QUESTLOG_QUEST_HEIGHT)
 					if questIndex <= numEntries then
 						-- Get quest title and check
 						local questLogTitle = _G["QuestLogTitle" .. i]
@@ -11336,14 +11338,12 @@
 
 			-- Show relevant list items
 			local function UpdateList()
-				FauxScrollFrame_Update(scrollFrame, #ListData, numButtons, 16)
-				for index = 1, numButtons do
-					local offset = index + FauxScrollFrame_GetOffset(scrollFrame)
-					local button = scrollFrame.buttons[index]
-					button.index = offset
-					if offset <= #ListData then
+				local offset = max(0, floor(scrollFrame:GetVerticalScroll() + 0.5))
+				for i, button in ipairs(scrollFrame.buttons) do
+					local index = offset + i
+					if index <= #ListData then
 						-- Show zone listing or track listing
-						button:SetText(ListData[offset].zone or ListData[offset])
+						button:SetText(ListData[index].zone or ListData[index])
 						-- Set width of highlight texture
 						if button:GetTextWidth() > 290 then
 							button.t:SetSize(290, 16)
@@ -11386,6 +11386,7 @@
 						button:Hide()
 					end
 				end
+				scrollFrame.child:SetSize(200, #ListData + (14*19.6) - 1) --++ LeaSoundsLC.NewPatch
 			end
 
 			-- Give function file level scope (it's used in SetPlusScale to set the highlight bar scale)
@@ -11506,13 +11507,15 @@
 			end
 
 			-- Create scroll bar
-			scrollFrame = CreateFrame("ScrollFrame", "LeaPlusScrollFrame", LeaPlusLC["Page9"], "FauxScrollFrameTemplate")
+			scrollFrame = CreateFrame("ScrollFrame", nil, LeaPlusLC["Page9"], "ScrollFrameTemplate")
 			scrollFrame:SetPoint("TOPLEFT", 0, -32)
 			scrollFrame:SetPoint("BOTTOMRIGHT", -30, 50)
-			scrollFrame:SetFrameLevel(10)
-			scrollFrame:SetScript("OnVerticalScroll", function(self, offset)
-				FauxScrollFrame_OnVerticalScroll(self, offset, 16, UpdateList)
-			end)
+			scrollFrame:SetPanExtent(1)
+			scrollFrame:SetScript("OnVerticalScroll", UpdateList)
+
+			-- Create the scroll child
+			scrollFrame.child = CreateFrame("Frame", nil, scrollFrame)
+			scrollFrame:SetScrollChild(scrollFrame.child)
 
 			-- Add stop button
 			local stopBtn = LeaPlusLC:CreateButton("StopMusicBtn", LeaPlusLC["Page9"], "Stop", "TOPLEFT", 146, -292, 0, 25, true, "")
@@ -11632,8 +11635,7 @@
 				-- Traverse music listing and populate ListData
 				if searchText ~= "" then
 					local word1, word2, word3, word4, word5 = strsplit(" ", (strtrim(searchText):gsub("%s+", " ")))
-					RunScript('LeaPlusGlobalHash = {}')
-					local hash = LeaPlusGlobalHash
+					local hash = {}
 					local trackCount = 0
 					for i, e in pairs(LeaPlusLC.ZoneList) do
 						if LeaPlusLC.ZoneList[e] then
@@ -13184,7 +13186,7 @@
 			Side.backFrame:SetBackdropColor(0, 0, 1, 0.5)
 
 			-- Create scroll frame
-			Side.scrollFrame = CreateFrame("ScrollFrame", "LeaPlusGlobal" .. globref .. "ScrollFrame", Side.backFrame, "LeaPlusConfigurationPanelScrollFrameTemplate")
+			Side.scrollFrame = CreateFrame("ScrollFrame", nil, Side.backFrame, "LeaPlusConfigurationPanelScrollFrameTemplate")
 			Side.scrollChild = CreateFrame("Frame", nil, Side.scrollFrame)
 
 			Side.scrollChild:SetSize(1, 1)

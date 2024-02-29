@@ -10,24 +10,24 @@ ThreatClassic2DB = {
 		["Vermins - Stitches"] = "Default",
 		["Dopecure - Stitches"] = "Default",
 		["Dopemend - Lone Wolf"] = "Default",
-		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Dopeclaw - Lone Wolf"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
 		["Dopesnare - Stitches"] = "Default",
 		["Dopetrap - Lone Wolf"] = "Default",
-		["Miqa - Golemagg"] = "Default",
+		["Dopestab - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Dopecoil - Lone Wolf"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Lonac - Stitches"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Dopestab - Lone Wolf"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Miqa - Golemagg"] = "Default",
 		["Dopeah - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
 		["Dopebolt - Lone Wolf"] = "Default",
-		["Dopeclaw - Lone Wolf"] = "Default",
+		["Jutarnjedrvo - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -68,7 +68,6 @@ ThreatClassic2DB = {
 					0, -- [4]
 				},
 				["height"] = 100,
-				["locked"] = true,
 				["position"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -76,6 +75,7 @@ ThreatClassic2DB = {
 					650, -- [4]
 					-340, -- [5]
 				},
+				["locked"] = true,
 			},
 			["bar"] = {
 				["count"] = 5,

@@ -201,6 +201,8 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 			if c then
 				callback()
 				self:Cancel()
+			else 
+				-- print(condition, c)
 			end
 		end
 	)

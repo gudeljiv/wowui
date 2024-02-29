@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.179 (14th February 2024)
+-- 	Leatrix Plus 3.0.182 (28th February 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.179"
+	LeaPlusLC["AddonVer"] = "3.0.182"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -7679,14 +7679,14 @@
 				local regions = {_G["ClassTrainerFrame"]:GetRegions()}
 
 				-- Set top left texture
-				regions[2]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
+				regions[2]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
 				regions[2]:SetTexCoord(0.25, 0.75, 0, 1)
 				regions[2]:SetSize(512, 512)
 
 				-- Set top right texture
 				regions[3]:ClearAllPoints()
 				regions[3]:SetPoint("TOPLEFT", regions[2], "TOPRIGHT", 0, 0)
-				regions[3]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
+				regions[3]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
 				regions[3]:SetTexCoord(0.75, 1, 0, 1)
 				regions[3]:SetSize(256, 512)
 
@@ -8025,14 +8025,14 @@
 				local regions = {_G["TradeSkillFrame"]:GetRegions()}
 
 				-- Set top left texture
-				regions[3]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
+				regions[3]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
 				regions[3]:SetTexCoord(0.25, 0.75, 0, 1)
 				regions[3]:SetSize(512, 512)
 
 				-- Set top right texture
 				regions[4]:ClearAllPoints()
 				regions[4]:SetPoint("TOPLEFT", regions[3], "TOPRIGHT", 0, 0)
-				regions[4]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus")
+				regions[4]:SetTexture("Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.blp")
 				regions[4]:SetTexCoord(0.75, 1, 0, 1)
 				regions[4]:SetSize(256, 512)
 
@@ -8127,10 +8127,11 @@
 		if LeaPlusLC["EnhanceQuestLog"] == "On" then
 
 			-- Button to toggle quest headers
-			LeaPlusLC:CreateButton("ToggleQuestHeaders", QuestLogFrame, "Collapse", "BOTTOMLEFT", 344, 54, 0, 22, true, "", false)
+			LeaPlusLC:CreateButton("ToggleQuestHeaders", QuestLogFrame, "Expand", "BOTTOMLEFT", 344, 54, 0, 22, true, "", false)
 			LeaPlusCB["ToggleQuestHeaders"]:ClearAllPoints()
 			LeaPlusCB["ToggleQuestHeaders"]:SetPoint("TOPRIGHT", QuestLogFrame, "TOPRIGHT", -360, -44)
 			LeaPlusCB["ToggleQuestHeaders"]:GetFontString():SetWordWrap(false)
+			LeaPlusCB["ToggleQuestHeaders"].collapsed = true
 
 			local function SetHeadersButton()
 				if LeaPlusCB["ToggleQuestHeaders"].collapsed then
@@ -11841,14 +11842,12 @@
 
 			-- Show relevant list items
 			local function UpdateList()
-				FauxScrollFrame_Update(scrollFrame, #ListData, numButtons, 16)
-				for index = 1, numButtons do
-					local offset = index + FauxScrollFrame_GetOffset(scrollFrame)
-					local button = scrollFrame.buttons[index]
-					button.index = offset
-					if offset <= #ListData then
+				local offset = max(0, floor(scrollFrame:GetVerticalScroll() + 0.5))
+				for i, button in ipairs(scrollFrame.buttons) do
+					local index = offset + i
+					if index <= #ListData then
 						-- Show zone listing or track listing
-						button:SetText(ListData[offset].zone or ListData[offset])
+						button:SetText(ListData[index].zone or ListData[index])
 						-- Set width of highlight texture
 						if button:GetTextWidth() > 290 then
 							button.t:SetSize(290, 16)
@@ -11891,6 +11890,7 @@
 						button:Hide()
 					end
 				end
+				scrollFrame.child:SetSize(200, #ListData + (14*19.6) - 1) --++ LeaSoundsLC.NewPatch
 			end
 
 			-- Give function file level scope (it's used in SetPlusScale to set the highlight bar scale)
@@ -12011,13 +12011,15 @@
 			end
 
 			-- Create scroll bar
-			scrollFrame = CreateFrame("ScrollFrame", "LeaPlusScrollFrame", LeaPlusLC["Page9"], "FauxScrollFrameTemplate")
+			scrollFrame = CreateFrame("ScrollFrame", nil, LeaPlusLC["Page9"], "ScrollFrameTemplate")
 			scrollFrame:SetPoint("TOPLEFT", 0, -32)
 			scrollFrame:SetPoint("BOTTOMRIGHT", -30, 50)
-			scrollFrame:SetFrameLevel(10)
-			scrollFrame:SetScript("OnVerticalScroll", function(self, offset)
-				FauxScrollFrame_OnVerticalScroll(self, offset, 16, UpdateList)
-			end)
+			scrollFrame:SetPanExtent(1)
+			scrollFrame:SetScript("OnVerticalScroll", UpdateList)
+
+			-- Create the scroll child
+			scrollFrame.child = CreateFrame("Frame", nil, scrollFrame)
+			scrollFrame:SetScrollChild(scrollFrame.child)
 
 			-- Add stop button
 			local stopBtn = LeaPlusLC:CreateButton("StopMusicBtn", LeaPlusLC["Page9"], "Stop", "TOPLEFT", 146, -292, 0, 25, true, "")
@@ -12147,8 +12149,7 @@
 				-- Traverse music listing and populate ListData
 				if searchText ~= "" then
 					local word1, word2, word3, word4, word5 = strsplit(" ", (strtrim(searchText):gsub("%s+", " ")))
-					RunScript('LeaPlusGlobalHash = {}')
-					local hash = LeaPlusGlobalHash
+					local hash = {}
 					local trackCount = 0
 					for i, e in pairs(ZoneList) do
 						if ZoneList[e] then
@@ -13755,7 +13756,7 @@
 			Side.backFrame:SetBackdropColor(0, 0, 1, 0.5)
 
 			-- Create scroll frame
-			Side.scrollFrame = CreateFrame("ScrollFrame", "LeaPlusGlobal" .. globref .. "ScrollFrame", Side.backFrame, "LeaPlusConfigurationPanelScrollFrameTemplate")
+			Side.scrollFrame = CreateFrame("ScrollFrame", nil, Side.backFrame, "LeaPlusConfigurationPanelScrollFrameTemplate")
 			Side.scrollChild = CreateFrame("Frame", nil, Side.scrollFrame)
 
 			Side.scrollChild:SetSize(1, 1)
