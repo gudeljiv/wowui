@@ -44,7 +44,8 @@ WT_LearnedPetAbilities = {
 		["Rank 3"] = true,
 		["Rank 2"] = true,
 	},
-	["Screech"] = {
+	["Nature Resistance"] = {
+		["Rank 3"] = true,
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
@@ -71,8 +72,7 @@ WT_LearnedPetAbilities = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},
-	["Nature Resistance"] = {
-		["Rank 3"] = true,
+	["Screech"] = {
 		["Rank 1"] = true,
 		["Rank 2"] = true,
 	},

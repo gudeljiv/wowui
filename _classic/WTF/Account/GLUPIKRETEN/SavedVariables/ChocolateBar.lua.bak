@@ -813,9 +813,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 3794,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 187352,
-		["timeAtThisLevel"] = 10394,
-		["timeStamp"] = 1300371.342,
+		["total"] = 188424,
+		["timeAtThisLevel"] = 11466,
+		["timeStamp"] = 1374376.455,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -942,9 +942,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 179361,
-		["timeStamp"] = 1285792.303,
-		["timeAtThisLevel"] = 15766,
+		["total"] = 179602,
+		["timeStamp"] = 1373718.004,
+		["timeAtThisLevel"] = 16007,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,
