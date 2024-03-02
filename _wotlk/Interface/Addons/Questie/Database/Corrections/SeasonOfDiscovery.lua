@@ -85,6 +85,10 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [78267] = 1, -- Grizzby prequest for multiple runes
     [78270] = 1, -- Rogue Deadly Brew Part 3
     [78277] = 1, -- Mage Horde Living Bomb
+    [78287] = 1, -- Let Me Make You An Offer Alliance
+    [78288] = 1, -- Let Me Make You An Offer Horde
+    [78297] = 1, -- You've Got Yourself A Deal Alliance
+    [78304] = 1, -- You've Got Yourself A Deal Horde
     [78307] = 1, -- Rogue Deadly Brew Part 3
     [78506] = 1, -- Shaman Earth Shield Part 1
     [78537] = 1, -- Shaman Earth Shield Part 2
@@ -377,6 +381,18 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [90233] = 2, -- Hunter Steady Shot Arathi Highlands
     [90234] = 2, -- Mage Hot Streak Alterac Mountains
     [90235] = 2, -- Priest Renewed Hope Desolace
+    [90236] = 2, -- Mage Chronostatic Preservation
+    [90237] = 2, -- Mage Chronostatic Preservation
+    [90238] = 2, -- Mage Chronostatic Preservation
+    [90239] = 2, -- Shaman Fire Nova Step 1
+    [90240] = 2, -- Shaman Fire Nova Step 2
+    [90241] = 2, -- Shaman Fire Nova Step 3
+    [90242] = 2, -- Shaman Fire Nova Step 4
+    [90243] = 2, -- Shaman Fire Nova Step 5
+    [90244] = 2, -- Shaman Fire Nova Step 6
+    [90245] = 2, -- Shaman Fire Nova Final Step
+    [90246] = 2, -- Shaman Power Surge
+    [90247] = 2, -- Shaman Decoy Totem
 }
 
 --- "automatic" phase detection for the first few phases;
@@ -415,7 +431,22 @@ function QuestieDB.IsRuneAndShouldBeHidden(questId)
         return false
     end
 
-    return (not Questie.db.profile.showSoDRunes) or (runeQuestsInSoD[questId] >= SeasonOfDiscovery.currentPhase)
+    if (not Questie.db.profile.showSoDRunes) then
+        return true
+    end
+
+    local showPhase1Runes = Questie.db.profile.showRunesOfPhase["phase1"]
+    local showPhase2Runes = Questie.db.profile.showRunesOfPhase["phase2"]
+
+    local phaseOfRuneQuest = runeQuestsInSoD[questId]
+
+    if (phaseOfRuneQuest == 1) then
+        return (not showPhase1Runes)
+    elseif (phaseOfRuneQuest == 2) then
+        return (not showPhase2Runes)
+    end
+
+    return false
 end
 
 -- This function blacklists any quests in phases LATER than the currentPhase value
@@ -433,13 +464,32 @@ local questsToBlacklistBySoDPhase = {
         [8168] = true, -- The Battle for Arathi Basin!
     },
     [3] = { -- SoD Phase 3 - level cap 50
+        [2847] = true, -- Wild Leather Armor
+        [2854] = true, -- Wild Leather Armor
+        [3526] = true, -- Goblin Engineering
+        [3629] = true, -- Goblin Engineering
+        [3630] = true, -- Gnome Engineering
+        [3632] = true, -- Gnome Engineering
+        [3633] = true, -- Goblin Engineering
+        [3634] = true, -- Gnome Engineering
+        [3635] = true, -- Gnome Engineering
+        [3637] = true, -- Gnome Engineering
+        [4181] = true, -- Goblin Engineering
+        [5141] = true, -- Dragonscale Leatherworking
+        [5143] = true, -- Tribal Leatherworking
+        [5144] = true, -- Elemental Leatherworking
+        [5145] = true, -- Dragonscale Leatherworking
+        [5146] = true, -- Elemental Leatherworking
+        [5148] = true, -- Tribal Leatherworking
         [6607] = true, -- Nat Pagle, Angler Extreme Fishing 225+ quest
         [6608] = true, -- You Too Good. Fishing 225+ quest
         [6609] = true, -- I Got Nothin' Left! Fishing 225+ pre quest
         [6610] = true, -- Clamlette Surprise Cooking 225+ quest
         [6611] = true, -- To Gadgetzan You Go! Cooking 225+ pre quest
         [6612] = true, -- I Know A Guy... Cooking 225+ pre quest
+        [6622] = true, -- Horde Triage
         [6623] = true, -- Horde Trauma
+        [6624] = true, -- Alliance Triage
         [6625] = true, -- Alliance Trauma
     },
     [4] = { -- SoD Phase 4 - level cap 60

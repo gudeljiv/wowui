@@ -1028,6 +1028,12 @@ function QuestieQuestFixes:Load()
         [1718] = {
             [questKeys.startedBy] = {{3041,3354,4595,5113,5479},nil,nil}, -- #1034
         },
+        [1789] = {
+            [questKeys.exclusiveTo] = {1785},
+        },
+        [1790] = {
+            [questKeys.exclusiveTo] = {1788},
+        },
         [1793] = {
             [questKeys.exclusiveTo] = {1649},
             [questKeys.specialFlags] = 1,
@@ -1083,7 +1089,7 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {1947},
         },
         [1950] = {
-            [questKeys.triggerEnd] = {"Secret phrase found", {[zoneIDs.THOUSAND_NEEDLES]={{79.56,75.65}}}},
+            [questKeys.objectives] = {{{6626,"Secret phrase found"}}},
         },
         [1954] = {
             [questKeys.preQuestSingle] = {},
@@ -1262,12 +1268,13 @@ function QuestieQuestFixes:Load()
             [questKeys.nextQuestInChain] = 2926,
         },
         [2930] = {
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Step 1: obtain the Yellow Punch Card. You need the White Punch Card."), 0, {{"object", 142345}}},
-                                           {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 2: obtain the Blue Punch Card. You need the Yellow Punch Card."), 0, {{"object", 142475}}},
-                                           {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 3: obtain the Red Punch Card. You need the Blue Punch Card."), 0, {{"object", 142476}}},
-                                           {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 4: obtain the Prismatic Punch Card. You need the Red Punch Card."), 0, {{"object", 142696}}},
+            [questKeys.extraObjectives] = {
+                {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 1: obtain the Yellow Punch Card. You need the White Punch Card."), 0, {{"object", 142345}}},
+                {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 2: obtain the Blue Punch Card. You need the Yellow Punch Card."), 0, {{"object", 142475}}},
+                {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 3: obtain the Red Punch Card. You need the Blue Punch Card."), 0, {{"object", 142476}}},
+                {nil, Questie.ICON_TYPE_OBJECT, l10n("Step 4: obtain the Prismatic Punch Card. You need the Red Punch Card."), 0, {{"object", 142696}}},
             },
-            [questKeys.requiredSourceItems] = {9280,9281,9282}, --{9279,9280,9281,9282}, removed white punch card (9279) from this list because then every NPC has a bag icon
+            [questKeys.requiredSourceItems] = {9279,9280,9281,9282},
         },
         [2931] = {
             [questKeys.exclusiveTo] = {2930},

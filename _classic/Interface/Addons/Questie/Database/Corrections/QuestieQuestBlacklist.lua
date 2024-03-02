@@ -1078,6 +1078,24 @@ function QuestieQuestBlacklist:Load()
         [70865] = true, -- Boosted character quest
         [70869] = true, -- Boosted character quest
         [70870] = true, -- Boosted character quest
+        [78136] = true, -- Boosted character quest
+        [78137] = true, -- Boosted character quest
+        [78138] = true, -- Boosted character quest
+        [78140] = true, -- Boosted character quest
+        [78151] = true, -- Boosted character quest
+        [78157] = true, -- Boosted character quest
+        [78158] = true, -- Boosted character quest
+        [78164] = true, -- Boosted character quest
+        [78166] = true, -- Boosted character quest
+        [78167] = true, -- Boosted character quest
+        [78168] = true, -- Boosted character quest
+        [78219] = true, -- Boosted character quest
+        [78220] = true, -- Boosted character quest
+        [78221] = true, -- Boosted character quest
+        [78222] = true, -- Boosted character quest
+        [78223] = true, -- Boosted character quest
+        [78224] = true, -- Boosted character quest
+        [78225] = true, -- Boosted character quest
 
 		-- Paladin class quests with SWP patch
         [64319] = true, -- removed in wotlk
@@ -2228,8 +2246,8 @@ function QuestieQuestBlacklist.LoadAutoBlacklistWotlk()
         [25500] = true, --* Words for Delivery (https://www.wowhead.com/wotlk/quest=25500) (Retail Data)
 
         -- Raids -> Icecrown Citadel (3 -> 4812)
-        [24872] = true, --* Respite for a Tormented Soul (https://www.wowhead.com/wotlk/quest=24872)
-        [24880] = true, --* Respite for a Tormented Soul (https://www.wowhead.com/wotlk/quest=24880)
+        --[24872] = true, --* Respite for a Tormented Soul (https://www.wowhead.com/wotlk/quest=24872)
+        --[24880] = true, --* Respite for a Tormented Soul (https://www.wowhead.com/wotlk/quest=24880)
 
         --  ->  (0 -> 0)
         [25293] = true, --* The Missing (https://www.wowhead.com/wotlk/quest=25293) (Retail Data)
