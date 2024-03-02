@@ -28,27 +28,27 @@ Details_StreamerDB = {
 		["Tadibey - Golemagg"] = "Mxyz - Golemagg",
 		["Dopede - Stitches"] = "Mxyz - Golemagg",
 		["Kaonac - Jin'do"] = "Mxyz - Golemagg",
-		["Dopesnare - Stitches"] = "Mxyz - Golemagg",
-		["Dopeclaw - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopedot - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopetrap - Lone Wolf"] = "Mxyz - Golemagg",
 		["Vermins - Stitches"] = "Mxyz - Golemagg",
 		["Dopesnare - Lone Wolf"] = "Mxyz - Golemagg",
 		["Wells - Jin'do"] = "Mxyz - Golemagg",
 		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Tudum - Jin'do"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
-		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
 		["Battlearm - Gehennas"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
 		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Miqa - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
 		["Poklopac - Mirage Raceway"] = "Mxyz - Golemagg",
 		["Dopestab - Lone Wolf"] = "Mxyz - Golemagg",
 		["Dopeah - Stitches"] = "Mxyz - Golemagg",
 		["Dopeclaw - Stitches"] = "Mxyz - Golemagg",
-		["Dopetrap - Lone Wolf"] = "Mxyz - Golemagg",
-		["Dopedot - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopeclaw - Lone Wolf"] = "Mxyz - Golemagg",
+		["Dopesnare - Stitches"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
@@ -66,7 +66,7 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["font_size"] = 10,
+			["arrow_anchor_y"] = 0,
 			["main_frame_size"] = {
 				249.999740600586, -- [1]
 				89.9999694824219, -- [2]
@@ -78,15 +78,15 @@ Details_StreamerDB = {
 			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_x"] = 0,
-			["use_spark"] = false,
+			["scale"] = 1,
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
 			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["scale"] = 1,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
