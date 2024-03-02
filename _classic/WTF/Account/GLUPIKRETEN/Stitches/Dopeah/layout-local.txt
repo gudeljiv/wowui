@@ -1,11 +1,4 @@
 Version: 1
-Frame: RXPG_ARROW
-FrameLevel: 1
-Anchor: CENTER
-X: -170
-Y: -170
-W: 32
-H: 32
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
