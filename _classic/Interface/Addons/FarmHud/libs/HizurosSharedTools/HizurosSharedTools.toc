@@ -1,11 +1,11 @@
 ## Interface: 100205
 ## Interface-Wrath: 30403
-## Interface-Classic: 11500
+## Interface-Classic: 11501
 ## Title: HizurosSharedTools
 ## Notes: My little shared tools library for my addons
 ## Author: Hizuro
 ## IconTexture: 986485
-## Version: r23
+## Version: r24
 ## SavedVariables:
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibColors-1.0
 

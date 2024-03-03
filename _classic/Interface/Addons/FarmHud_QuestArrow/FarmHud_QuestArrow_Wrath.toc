@@ -1,6 +1,6 @@
 ## Interface: 30403
 ## Title: FarmHud [QuestArrow]
-## Version: 9.2.8-release
+## Version: 9.2.9-release
 ## Notes: Experimental way to suppress the quest arrow while FarmHud is active.
 ## IconTexture: 134215
 ## Author: Hizuro

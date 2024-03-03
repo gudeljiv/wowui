@@ -92,7 +92,7 @@ lib.RegisterPrint(ns,MAJOR,"HzST");
 
 --== shared credits page ==--
 do -- 013088, 0070E0
-	local donation_platforms = {PP="|cff375388Pay|cff5a9de0pal|r",PA="Patreon",GH="Github"};
+	local donation_platforms = {PP="|cff375388Pay|cff5a9de0Pal|r",PA="Patreon",GH="Github"};
 	local myAddOns = {
 		"AFK_fullscreen","AuctionSellers","BestSellButton","Broker_Everything","CommunityInfo",
 		"FarmHud","FollowerLocationInfo","GarrisonRandomNPCs","GatherMate2_ImportExport","GuildApplicantTracker",
