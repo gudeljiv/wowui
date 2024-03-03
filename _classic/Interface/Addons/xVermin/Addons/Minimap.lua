@@ -65,3 +65,10 @@ if GameTimeFrame then
 		end
 	)
 end
+
+MinimapCompassTexture:HookScript(
+	'OnShow',
+	function(self)
+		MinimapCompassTexture:Hide()
+	end
+)
