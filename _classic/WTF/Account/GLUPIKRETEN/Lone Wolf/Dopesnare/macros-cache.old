@@ -38,8 +38,9 @@ END
 VER 3 0000000001000018 "flank" "134400"
 #showtooltip Flanking Strike
 /startattack
-/cast Raptor Strike
+/petattack
 /cast Flanking Strike
+/cast Raptor Strike
 END
 VER 3 0000000001000013 "freeze" "134400"
 #showtooltip 
