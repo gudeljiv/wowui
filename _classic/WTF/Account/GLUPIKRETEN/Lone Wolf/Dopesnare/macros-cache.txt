@@ -4,17 +4,17 @@ VER 3 0000000001000016 "a-pet" "134400"
 /startattack
 /cast !Auto Shot
 END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
+END
 VER 3 0000000001000011 "attack" "132152"
 #showtooltip
 /petfollow
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
-END
-VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
-#showtooltip
-/startattack
-/use Sinister Strike
 END
 VER 3 0000000001000014 "auto" "134400"
 #showtooltip
@@ -38,8 +38,9 @@ END
 VER 3 0000000001000018 "flank" "134400"
 #showtooltip Flanking Strike
 /startattack
-/cast Raptor Strike
+/petattack
 /cast Flanking Strike
+/cast Raptor Strike
 END
 VER 3 0000000001000013 "freeze" "134400"
 #showtooltip 
