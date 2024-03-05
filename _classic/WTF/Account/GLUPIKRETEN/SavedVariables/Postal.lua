@@ -37,7 +37,7 @@ Postal3DB = {
 				"Dopesick|Stitches|Horde|3|WARRIOR", -- [11]
 				"Dopesnare|Lone Wolf|Horde|33|HUNTER", -- [12]
 				"Dopesnare|Stitches|Horde|40|HUNTER", -- [13]
-				"Dopestab|Lone Wolf|Horde|28|ROGUE", -- [14]
+				"Dopestab|Lone Wolf|Horde|29|ROGUE", -- [14]
 				"Dopetrap|Lone Wolf|Horde|1|HUNTER", -- [15]
 				"Jutarnjedrvo|Lone Wolf|Horde|21|SHAMAN", -- [16]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [17]

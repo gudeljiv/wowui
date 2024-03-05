@@ -48,7 +48,7 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 220.002733,
+							["damage_taken"] = 234.002733,
 							["start_time"] = 1706539925,
 							["delay"] = 0,
 							["last_dps"] = 0,
@@ -228,14 +228,17 @@ _detalhes_database = {
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
 								["Meiload"] = 141,
+								["Happyrog"] = 41,
+								["Dopemend"] = 39,
+								["Jensrune"] = 45,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = true,
-							["aID"] = "5826-022A0869",
-							["totalover"] = 141.007623,
-							["total_without_pet"] = 26.007623,
-							["total"] = 26.007623,
+							["classe"] = "PRIEST",
+							["totalover"] = 266.007623,
+							["total_without_pet"] = 44.007623,
+							["total"] = 44.007623,
 							["targets_absorbs"] = {
 								["Dopemend"] = 8,
 							},
@@ -245,13 +248,14 @@ _detalhes_database = {
 							["on_hold"] = true,
 							["serial"] = "Player-5826-022A0869",
 							["totalabsorb"] = 8.007623,
-							["last_hps"] = 1.052897574996924,
+							["last_hps"] = 1.781613011618896,
 							["targets"] = {
-								["Dopemend"] = 26,
+								["Dopemend"] = 40,
+								["Happyrog"] = 4,
 							},
 							["totalover_without_pet"] = 0.007623,
-							["healing_taken"] = 26.007623,
-							["heal_enemy_amt"] = 0,
+							["healing_taken"] = 40.007623,
+							["aID"] = "5826-022A0869",
 							["fight_component"] = true,
 							["healing_from"] = {
 								["Dopemend"] = true,
@@ -276,6 +280,32 @@ _detalhes_database = {
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 2053,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["spellschool"] = 2,
+										["c_total"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+									[401863] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Dopemend"] = 39,
+										},
+										["n_max"] = 14,
+										["targets"] = {
+											["Dopemend"] = 14,
+										},
+										["n_total"] = 14,
+										["n_min"] = 14,
+										["counter"] = 1,
+										["overheal"] = 39,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = 401863,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
@@ -316,16 +346,20 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Jensrune"] = 45,
+											["Happyrog"] = 41,
 										},
 										["n_max"] = 9,
 										["targets"] = {
 											["Dopemend"] = 18,
+											["Happyrog"] = 4,
+											["Jensrune"] = 0,
 										},
-										["n_total"] = 18,
-										["n_min"] = 9,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 18,
+										["n_total"] = 22,
+										["n_min"] = 0,
+										["counter"] = 12,
+										["overheal"] = 86,
+										["total"] = 22,
 										["spellschool"] = 2,
 										["id"] = 139,
 										["targets_absorbs"] = {
@@ -334,7 +368,7 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 12,
 										["absorbed"] = 0,
 									},
 								},
@@ -342,12 +376,12 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1706539919,
-							["classe"] = "PRIEST",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["totaldenied"] = 0.007623,
 							["delay"] = 1706627446,
-							["last_event"] = 1706627446,
+							["last_event"] = 1709365532,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -468,28 +502,28 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["last_event"] = 1706539925,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["nome"] = "Dopemend",
 							["tipo"] = 4,
 							["aID"] = "5826-022A0869",
 							["serial"] = "Player-5826-022A0869",
-							["nome"] = "Dopemend",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3122",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Bloodtalon Taillasher",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3122-000037B531",
-							["classe"] = "UNKNOW",
+							["aID"] = "3122",
 						}, -- [2]
 					},
 				}, -- [4]
@@ -518,8 +552,8 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					2295, -- [1]
-					26, -- [2]
+					2339, -- [1]
+					44, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -542,7 +576,7 @@ _detalhes_database = {
 				},
 				["totals_grupo"] = {
 					0, -- [1]
-					26, -- [2]
+					44, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -648,8 +682,26 @@ _detalhes_database = {
 							-1, -- [10]
 						}, -- [3]
 						{
+							true, -- [1]
+							6, -- [2]
+							14, -- [3]
+							1709365525.357, -- [4]
+							267, -- [5]
+							"Environment (Fire)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [4]
 						{
+							false, -- [1]
+							401863, -- [2]
+							53, -- [3]
+							1709365525.357, -- [4]
+							267, -- [5]
+							"Dopemend", -- [6]
+							nil, -- [7]
+							0, -- [8]
 						}, -- [5]
 						{
 						}, -- [6]
@@ -705,7 +757,7 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 4,
+						["n"] = 6,
 					},
 				},
 				["spells_cast_timeline"] = {
@@ -1165,8 +1217,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539857,
 							["tipo"] = 4,
+							["last_event"] = 1706539857,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -1187,14 +1239,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-000037BA1D",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -1746,8 +1798,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539835,
 							["tipo"] = 4,
+							["last_event"] = 1706539835,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -1755,14 +1807,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-000037BA75",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -2266,8 +2318,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539815,
 							["tipo"] = 4,
+							["last_event"] = 1706539815,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -2833,8 +2885,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539804,
 							["tipo"] = 4,
+							["last_event"] = 1706539804,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -2842,14 +2894,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-000037BAE8",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -3576,8 +3628,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539790,
 							["tipo"] = 4,
+							["last_event"] = 1706539790,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -3598,27 +3650,27 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-000037BADE",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-0000B7B92D",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [4]
 					},
 				}, -- [4]
@@ -4156,8 +4208,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539723,
 							["tipo"] = 4,
+							["last_event"] = 1706539723,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -4777,8 +4829,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539670,
 							["tipo"] = 4,
+							["last_event"] = 1706539670,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -5344,8 +5396,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539656,
 							["tipo"] = 4,
+							["last_event"] = 1706539656,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -5366,14 +5418,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-000037BA75",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -5913,8 +5965,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539644,
 							["tipo"] = 4,
+							["last_event"] = 1706539644,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -5935,14 +5987,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-000037BA66",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -6496,8 +6548,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539486,
 							["tipo"] = 4,
+							["last_event"] = 1706539486,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -6505,14 +6557,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-0001B7B9C4",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -7049,8 +7101,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539474,
 							["tipo"] = 4,
+							["last_event"] = 1706539474,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -7351,14 +7403,14 @@ _detalhes_database = {
 											["Razormane Battleguard"] = 22,
 										},
 										["n_total"] = 22,
-										["MISS"] = 1,
-										["a_amt"] = 0,
-										["n_min"] = 2,
 										["g_dmg"] = 0,
+										["MISS"] = 1,
+										["n_min"] = 2,
+										["a_amt"] = 0,
 										["counter"] = 9,
 										["r_amt"] = 0,
 										["total"] = 22,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["c_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -7371,7 +7423,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["n_max"] = 6,
 									}, -- [1]
 									[402811] = {
@@ -7586,10 +7638,10 @@ _detalhes_database = {
 							["start_time"] = 1706539453,
 							["classe"] = "PRIEST",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1706539456,
 							["totaldenied"] = 0.004029,
 							["delay"] = 0,
-							["last_event"] = 1706539456,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -7701,28 +7753,28 @@ _detalhes_database = {
 								"Homunculus <Dopemend>", -- [1]
 							},
 							["last_event"] = 1706539461,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["nome"] = "Dopemend",
 							["tipo"] = 4,
 							["aID"] = "5826-022A0869",
 							["serial"] = "Player-5826-022A0869",
-							["nome"] = "Dopemend",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-000137B99A",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -8047,7 +8099,7 @@ _detalhes_database = {
 										["counter"] = 13,
 										["DODGE"] = 1,
 										["total"] = 72,
-										["c_max"] = 14,
+										["spellschool"] = 1,
 										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8060,7 +8112,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 36,
 										["n_amt"] = 7,
-										["spellschool"] = 1,
+										["c_max"] = 14,
 										["n_max"] = 6,
 									}, -- [1]
 								},
@@ -8298,8 +8350,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539439,
 							["tipo"] = 4,
+							["last_event"] = 1706539439,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -8307,14 +8359,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-000037B99A",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
@@ -8639,7 +8691,7 @@ _detalhes_database = {
 										["counter"] = 28,
 										["MISS"] = 2,
 										["total"] = 116,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -8652,7 +8704,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 23,
-										["spellschool"] = 1,
+										["c_max"] = 0,
 										["n_max"] = 7,
 									}, -- [1]
 								},
@@ -8886,8 +8938,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539419,
 							["tipo"] = 4,
+							["last_event"] = 1706539419,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -8908,14 +8960,14 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-0001B7B53A",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -9454,8 +9506,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539386,
 							["tipo"] = 4,
+							["last_event"] = 1706539386,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -9980,10 +10032,10 @@ _detalhes_database = {
 							["start_time"] = 1706539351,
 							["classe"] = "PRIEST",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1706539357,
 							["totaldenied"] = 0.008543,
 							["delay"] = 0,
-							["last_event"] = 1706539357,
+							["tipo"] = 2,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -10107,15 +10159,15 @@ _detalhes_database = {
 								"Homunculus <Dopemend>", -- [1]
 							},
 							["last_event"] = 1706539358,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
+							["grupo"] = true,
+							["nome"] = "Dopemend",
 							["tipo"] = 4,
 							["aID"] = "5826-022A0869",
 							["serial"] = "Player-5826-022A0869",
-							["nome"] = "Dopemend",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
@@ -10134,14 +10186,14 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-0001B7B951",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [3]
 					},
 				}, -- [4]
@@ -10489,7 +10541,7 @@ _detalhes_database = {
 										["counter"] = 44,
 										["MISS"] = 3,
 										["total"] = 222,
-										["c_max"] = 13,
+										["spellschool"] = 1,
 										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -10502,7 +10554,7 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 25,
 										["n_amt"] = 36,
-										["spellschool"] = 1,
+										["c_max"] = 13,
 										["n_max"] = 7,
 									}, -- [1]
 								},
@@ -10767,7 +10819,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5826-022A0869",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 4.003879,
 							["total_without_pet"] = 0.003879,
 							["total"] = 0.003879,
@@ -10821,12 +10873,12 @@ _detalhes_database = {
 							["grupo"] = true,
 							["healing_from"] = {
 							},
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PRIEST",
 							["custom"] = 0,
 							["tipo"] = 2,
 							["start_time"] = 1706539343,
 							["delay"] = 1706539295,
-							["classe"] = "PRIEST",
+							["aID"] = "5826-022A0869",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -10941,8 +10993,8 @@ _detalhes_database = {
 							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1706539344,
 							["tipo"] = 4,
+							["last_event"] = 1706539344,
 							["serial"] = "Player-5826-022A0869",
 							["aID"] = "5826-022A0869",
 						}, -- [1]
@@ -10963,27 +11015,27 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["aID"] = "3113",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Dustrunner",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3113-000037B750",
-							["classe"] = "UNKNOW",
+							["aID"] = "3113",
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["aID"] = "3114",
+							["classe"] = "UNKNOW",
 							["monster"] = true,
 							["nome"] = "Razormane Battleguard",
 							["fight_component"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
+							["tipo"] = 4,
 							["serial"] = "Creature-0-5209-1-21286-3114-000037B69F",
-							["classe"] = "UNKNOW",
+							["aID"] = "3114",
 						}, -- [4]
 					},
 				}, -- [4]
@@ -11239,7 +11291,13 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
+	["data_harvested_for_charts"] = {
+	},
 	["mythic_plus_log"] = {
+	},
+	["cached_talents"] = {
+	},
+	["cached_roles"] = {
 	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
@@ -11282,10 +11340,7 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["use_square_mode"] = false,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
+			["arrow_anchor_y"] = 0,
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -11296,17 +11351,17 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 			["row_texture"] = "xVerminClean",
 			["square_grow_direction"] = "right",
+			["author"] = "Details! Team",
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -11316,6 +11371,11 @@ _detalhes_database = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["y"] = -183.107162475586,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -11327,22 +11387,17 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["y"] = -183.107162475586,
 			["scale"] = 1,
 			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 		},
 	},
 	["character_data"] = {
-		["logons"] = 101,
+		["logons"] = 103,
 	},
-	["cached_roles"] = {
-	},
-	["last_day"] = "24",
 	["local_instances_config"] = {
 		{
 			["modo"] = 2,
@@ -11366,10 +11421,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4415893554688,
-					["x"] = -979.6941070556641,
-					["w"] = 234.8974304199219,
-					["h"] = 138.5455932617188,
+					["y"] = 596.4414672851562,
+					["x"] = -1101.599021911621,
+					["w"] = 234.8974151611328,
+					["h"] = 138.5456237792969,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -11401,10 +11456,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 596.4415893554688,
-					["x"] = -747.7581481933594,
-					["w"] = 228.9744110107422,
-					["h"] = 138.5455932617188,
+					["y"] = 596.4414672851562,
+					["x"] = -869.6630859375,
+					["w"] = 228.9744262695313,
+					["h"] = 138.5456237792969,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -11414,8 +11469,6 @@ _detalhes_database = {
 				},
 			},
 		}, -- [2]
-	},
-	["data_harvested_for_charts"] = {
 	},
 	["benchmark_db"] = {
 		["frame"] = {
@@ -11996,9 +12049,9 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["debuff_uptime_targets"] = {
+					["nome"] = "Dopemend",
+					["pets"] = {
 					},
-					["buff_uptime"] = 0,
 					["classe"] = "PRIEST",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -12060,14 +12113,14 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
+					["debuff_uptime_targets"] = {
+					},
 					["buff_uptime_targets"] = {
 					},
-					["nome"] = "Dopemend",
 					["grupo"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
+					["buff_uptime"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Player-5826-022A0869",
 					["aID"] = "5826-022A0869",
 				}, -- [1]
@@ -12075,27 +12128,27 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3101",
 					["monster"] = true,
 					["nome"] = "Vile Familiar",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5252-1-3762-3101-00002A47EC",
-					["aID"] = "3101",
+					["classe"] = "UNKNOW",
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3120",
 					["fight_component"] = true,
 					["nome"] = "Kolkar Outrunner",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "3120",
-					["serial"] = "Creature-0-5208-1-23254-3120-00002A5D5F",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5208-1-23254-3120-00002A5D5F",
+					["last_event"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 8465,
@@ -12113,53 +12166,53 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "3112",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Razormane Scout",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5209-1-4594-3112-0000ABBBE6",
 					["last_event"] = 0,
+					["aID"] = "3112",
+					["serial"] = "Creature-0-5209-1-4594-3112-0000ABBBE6",
+					["tipo"] = 4,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3111",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Razormane Quilboar",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5209-1-4594-3111-00002BB786",
 					["last_event"] = 0,
+					["aID"] = "3111",
+					["serial"] = "Creature-0-5209-1-4594-3111-00002BB786",
+					["tipo"] = 4,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3128",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Kul Tiras Sailor",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5209-1-4594-3128-00002BBAFF",
 					["last_event"] = 0,
+					["aID"] = "3128",
+					["serial"] = "Creature-0-5209-1-4594-3128-00002BBAFF",
+					["tipo"] = 4,
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3129",
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Kul Tiras Marine",
 					["monster"] = true,
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5209-1-4594-3129-00002BBBDC",
 					["last_event"] = 0,
+					["aID"] = "3129",
+					["serial"] = "Creature-0-5209-1-4594-3129-00002BBBDC",
+					["tipo"] = 4,
 				}, -- [8]
 				{
 					["flag_original"] = 68136,
@@ -12253,53 +12306,53 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3114",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Razormane Battleguard",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5209-1-4594-3114-00002BC100",
-					["classe"] = "UNKNOW",
+					["aID"] = "3114",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3113",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["nome"] = "Razormane Dustrunner",
 					["fight_component"] = true,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5209-1-4594-3113-00002BBFAD",
-					["classe"] = "UNKNOW",
+					["aID"] = "3113",
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3116",
 					["fight_component"] = true,
 					["nome"] = "Dustwind Pillager",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "3116",
-					["serial"] = "Creature-0-5251-1-9758-3116-00002BF532",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5251-1-9758-3116-00002BF532",
+					["last_event"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3127",
 					["monster"] = true,
 					["nome"] = "Venomtail Scorpid",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5251-1-9566-3127-00002C056A",
-					["aID"] = "3127",
+					["classe"] = "UNKNOW",
 				}, -- [15]
 				{
 					["flag_original"] = 1298,
@@ -12342,14 +12395,14 @@ _detalhes_database = {
 					["last_event"] = 0,
 					["pets"] = {
 					},
-					["buff_uptime_targets"] = {
-					},
+					["nome"] = "Jerox",
 					["interrupt_targets"] = {
 						["Gazz'uz"] = 0,
 						["Burning Blade Apprentice"] = 0,
 					},
 					["grupo"] = true,
-					["nome"] = "Jerox",
+					["buff_uptime_targets"] = {
+					},
 					["tipo"] = 4,
 					["interrupt"] = 0,
 					["serial"] = "Player-5826-024AEE8C",
@@ -12359,40 +12412,40 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3197",
 					["monster"] = true,
 					["nome"] = "Burning Blade Fanatic",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5251-1-9566-3197-00002C05DD",
-					["aID"] = "3197",
+					["classe"] = "UNKNOW",
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3198",
 					["monster"] = true,
 					["nome"] = "Burning Blade Apprentice",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5251-1-9566-3198-00002C05F2",
-					["aID"] = "3198",
+					["classe"] = "UNKNOW",
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3204",
 					["monster"] = true,
 					["nome"] = "Gazz'uz",
 					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5251-1-9566-3204-00002C043A",
-					["aID"] = "3204",
+					["classe"] = "UNKNOW",
 				}, -- [19]
 				{
 					["flag_original"] = 1047,
@@ -12425,15 +12478,15 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["tipo"] = 4,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
 					["debuff_uptime_targets"] = {
 					},
+					["grupo"] = true,
+					["nome"] = "Cerqzz",
 					["last_event"] = 0,
 					["classe"] = "SHAMAN",
 					["serial"] = "Player-5826-024A0442",
-					["nome"] = "Cerqzz",
+					["buff_uptime_targets"] = {
+					},
 				}, -- [20]
 				{
 					["flag_original"] = 1047,
@@ -12472,15 +12525,15 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["tipo"] = 4,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
 					["debuff_uptime_targets"] = {
 					},
+					["grupo"] = true,
+					["nome"] = "Neverdot",
 					["last_event"] = 0,
 					["classe"] = "WARLOCK",
 					["serial"] = "Player-5826-024D46EC",
-					["nome"] = "Neverdot",
+					["buff_uptime_targets"] = {
+					},
 				}, -- [21]
 				{
 					["flag_original"] = 68136,
@@ -12530,14 +12583,14 @@ _detalhes_database = {
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3122",
 					["fight_component"] = true,
 					["nome"] = "Bloodtalon Taillasher",
 					["monster"] = true,
-					["last_event"] = 0,
-					["aID"] = "3122",
-					["serial"] = "Creature-0-5209-1-21286-3122-000037B531",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5209-1-21286-3122-000037B531",
+					["last_event"] = 0,
 				}, -- [24]
 			},
 		}, -- [4]
@@ -12644,8 +12697,6 @@ _detalhes_database = {
 		},
 	},
 	["force_font_outline"] = "",
-	["cached_talents"] = {
-	},
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -12657,6 +12708,7 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
+	["last_day"] = "02",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

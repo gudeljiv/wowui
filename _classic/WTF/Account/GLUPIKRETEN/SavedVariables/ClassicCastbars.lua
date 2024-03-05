@@ -52,9 +52,9 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["width"] = 106,
-		["frameStrata"] = "HIGH",
 		["showInterruptSchool"] = true,
+		["frameStrata"] = "HIGH",
+		["width"] = 106,
 		["position"] = {
 			"CENTER", -- [1]
 			7.3, -- [2]
