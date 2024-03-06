@@ -426,8 +426,7 @@ Can use \ to escape -.]=] ] = "過濾格式: '名字'、'名字-伺服器'、'-�
 	L["Finish"] = "結束"
 	L["Finishing..."] = "快完成了..."
 	L["Fire Orb"] = "火球"
-	--[[Translation missing --]]
-	L["Flat Framelevels"] = "Flat Framelevels"
+	L["Flat Framelevels"] = "平直框架層級"
 	L["Font"] = "文字"
 	L["Font Size"] = "文字大小"
 	L["Foreground"] = "前景"
@@ -869,8 +868,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[事件發�
 	L["The addon OmniCC is enabled. It might add cooldown numbers to the swipe. You can configure these in the OmniCC settings"] = "冷卻時間插件 OmniCC 已啟用，它可能會在倒數轉圈動畫上面加入冷卻時間數字，這些可以在 OmniCC 的設定中調整。"
 	L["The duration of the animation in seconds."] = "動畫的持續時間(秒)。"
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = "動畫的持續時間 (秒)。直到提醒效果正常隱藏後，才會播放結束時的動畫。"
-	--[[Translation missing --]]
-	L["The group and all direct children will share the same base frame level."] = "The group and all direct children will share the same base frame level."
+	L["The group and all direct children will share the same base frame level."] = "此群組和所有直接子級將共用相同的基礎框架層級。"
 	L["The type of trigger"] = "觸發類型"
 	L["Then "] = "(then) 則 "
 	L["Thickness"] = "粗細"

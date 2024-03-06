@@ -715,6 +715,10 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.DESOLACE,
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the Rowboat to reach the eastern shore."), 0, {{"object", 420055}}}},
         },
+        [79348] = { -- The Lost Ancient
+            [questKeys.startedBy] = {{216310},nil,{212693}},
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+        },
         [79358] = { -- Tattered Note
             [questKeys.startedBy] = {{4421},nil,{212748}},
             [questKeys.requiredClasses] = classIDs.SHAMAN,
@@ -755,6 +759,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {79365},
             [questKeys.zoneOrSort] = zoneIDs.THOUSAND_NEEDLES,
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_TALK, l10n("Drink the Squall-breakers Potion and talk to Nyse."), 0, {{"monster", 4317}}}},
+        },
+        [79377] = { -- The Lost Saplings
+            [questKeys.preQuestSingle] = {79348},
+            [questKeys.zoneOrSort] = sortKeys.DRUID,
+            [questKeys.objectives] = {{{216437,216451,216448,216445}},nil,{{213036}}},
         },
         [79442] = { -- Catching Up
             [questKeys.requiredClasses] = classIDs.SHAMAN,
@@ -872,6 +881,27 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
         },
+        [79939] = { -- The Broken Hammer
+            [questKeys.startedBy] = {nil,{423703}},
+            [questKeys.preQuestSingle] = {78093},
+            [questKeys.requiredClasses] = classIDs.PALADIN,
+            [questKeys.zoneOrSort] = zoneIDs.DESOLACE,
+        },
+        [79940] = { -- A Lost Brother
+            [questKeys.objectives] = {{{5492,"Speak with Katherine and Learn More"}}},
+            [questKeys.preQuestSingle] = {79939},
+            [questKeys.zoneOrSort] = zoneIDs.DESOLACE,
+        },
+        [79945] = { -- Orders from the Grand Crusader
+            [questKeys.startedBy] = {{218908}},
+            [questKeys.preQuestSingle] = {79940},
+            [questKeys.zoneOrSort] = zoneIDs.STORMWIND_CITY,
+        },
+        [79946] = { -- A Brother In Need
+            [questKeys.objectives] = {{{5492,"Learn more about Aeonas from Katherine"},{217996,"Find Aeonas in the Scarlet Monastery"}}},
+            [questKeys.preQuestSingle] = {79945},
+            [questKeys.zoneOrSort] = zoneIDs.SCARLET_MONASTERY,
+        },
         [79947] = { -- Geomancy: The Stone-Cold Truth
             [questKeys.questLevel] = -1,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
@@ -899,6 +929,16 @@ function SeasonOfDiscovery:LoadQuests()
         [79953] = { -- A Ludite's Guide to Caring for Your Demonic Pet
             [questKeys.questLevel] = -1,
             [questKeys.zoneOrSort] = sortKeys.MAGE,
+        },
+        [79963] = { -- By The Light's Grace
+            [questKeys.objectives] = {{{217996,"Heal Aeonas"}}},
+            [questKeys.preQuestSingle] = {79946},
+            [questKeys.zoneOrSort] = zoneIDs.SCARLET_MONASTERY,
+        },
+        [79970] = { -- Aeonas the Vindicated
+            [questKeys.objectives] = {{{218160,"Meet Aeonas at the Cathedral of Light in Stormwind"}}},
+            [questKeys.preQuestSingle] = {79963},
+            [questKeys.zoneOrSort] = zoneIDs.PALADIN,
         },
         [79974] = { -- Wet Job
             [questKeys.startedBy] = {nil,{424012}},
@@ -955,6 +995,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [79987] = { -- Return of the Ring Alliance
+            [questKeys.startedBy] = {nil,{142487}},
             [questKeys.preQuestSingle] = {79984},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
@@ -1054,6 +1095,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.questFlags] = questFlags.RAID,
         },
         [80140] = { -- Return of the Ring Horde
+            [questKeys.startedBy] = {nil,{142487}},
             [questKeys.preQuestSingle] = {79984},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
@@ -1087,6 +1129,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {80157},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [80157] = { -- The Sparklematic 5200!
             [questKeys.startedBy] = {nil,{142487}},
@@ -1094,7 +1137,6 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {80158},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
-            [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [80158] = { -- The Sparklematic 5200!
             [questKeys.startedBy] = {nil,{142487}},
@@ -1108,6 +1150,7 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {80161},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [80161] = { -- The Sparklematic 5200!
             [questKeys.startedBy] = {nil,{175084}},
@@ -1115,7 +1158,6 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.preQuestSingle] = {80153},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
-            [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
         [80180] = { -- The Grand Betrayal
             [questKeys.finishedBy] = {{7937}},
@@ -1159,6 +1201,11 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.objectives] = {nil,nil,{{217351}}},
             [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
             [questKeys.questFlags] = questFlags.RAID,
+        },
+        [81570] = { -- Jarl Needs a Blade
+            [questKeys.finishedBy] = {{4792}},
+            [questKeys.preQuestSingle] = {1206},
+            [questKeys.zoneOrSort] = zoneIDs.GNOMEREGAN,
         },
 
         --- Fake rune quests
@@ -4074,6 +4121,48 @@ function SeasonOfDiscovery:LoadQuests()
             [questKeys.objectivesText] = {"Collect either 3 Cloud Serpent Fangs from any Cloud Serpent or 10 Strong Harpy Feather from any Harpy. Bring these together with a Silken Thread (e.g. bought from Jandia in Freewind Post) to the altar and create the Offering to the Wind Spirit. Then jump off the cliff to receive the rune."},
             [questKeys.requiredSpell] = -425882,
             [questKeys.zoneOrSort] = sortKeys.SHAMAN,
+        },
+        [90248] = {
+            [questKeys.name] = "Enlightened Judgements",
+            [questKeys.startedBy] = {{217387}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 40,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PALADIN,
+            [questKeys.objectivesText] = {
+                "Kill Humanoids in Arathi Highlands and collect Tarnished Prayer Bead I, II and III. Purify all three before combining them to the Rosary of the Light, which you bring to Brother Atticus in Stromgarde Keep.",
+                "Purify Bead I: Cast Blessing of Might while in combat and defeat an enemy.",
+                "Purify Bead II: Cast Divine Shield with less than 10% HP.",
+                "Purify Bead III: Unleash Seal of Justice on a fleeing enemy.",
+            },
+            [questKeys.requiredSpell] = -426175,
+            [questKeys.zoneOrSort] = sortKeys.PALADIN,
+        },
+        [90249] = {
+            [questKeys.name] = "Guarded by the Light",
+            [questKeys.startedBy] = {nil,{423841}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 40,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PALADIN,
+            [questKeys.objectivesText] = {"Loot the Dormant Holy Rune, cast Divine Intervention (anywhere) and be resurrected by another player before releasing your spirit to receive the rune."},
+            [questKeys.requiredSpell] = -416035,
+            [questKeys.zoneOrSort] = sortKeys.PALADIN,
+        },
+        [90250] = {
+            [questKeys.name] = "Aeonas Whereabouts",
+            [questKeys.startedBy] = {{3179}},
+            [questKeys.finishedBy] = nil,
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 40,
+            [questKeys.requiredRaces] = raceIDs.NONE,
+            [questKeys.requiredClasses] = classIDs.PALADIN,
+            [questKeys.objectivesText] = {"Talk to Harold Riggs to find out more about Aeonas whereabouts."},
+            [questKeys.preQuestSingle] = {79940},
+            [questKeys.exclusiveTo] = {79945},
+            [questKeys.zoneOrSort] = sortKeys.PALADIN,
         },
     }
 end

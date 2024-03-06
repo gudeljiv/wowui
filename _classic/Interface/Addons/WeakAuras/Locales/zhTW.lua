@@ -942,8 +942,7 @@ L["Overlay %s"] = "疊加%s"
 L["Overlay Charged Combo Points"] = "疊加已有的連擊點數"
 L["Overlay Cost of Casts"] = "疊加施法消耗量"
 L["Overlay Latency"] = "疊加延遲"
---[[Translation missing --]]
-L["Parent Zone"] = "Parent Zone"
+L["Parent Zone"] = "所屬區域"
 L["Parry"] = "招架"
 L["Parry (%)"] = "招架 (%)"
 L["Parry Rating"] = "招架等級"
@@ -1235,14 +1234,10 @@ L["Supports multiple entries, separated by commas"] = "支援輸入多個項目�
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "支援輸入多個項目，使用逗號分隔。"
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "支援輸入多個項目，使用逗號分隔。要將逗號當成一般文字請使用跳脫符號 \\"
---[[Translation missing --]]
 L[ [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
 Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
 Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
-Supports Instance IDs prefixed with 'i'.]=] ] = [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
-Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
-Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
-Supports Instance IDs prefixed with 'i'.]=]
+Supports Instance IDs prefixed with 'i'.]=] ] = "支援多個條目，以逗號分隔。若要包含子區域 ID，請新增前綴“c”，例如「c2022」。群組區域 ID 必須以「g」為前綴，例如'g277'。支援 https://wago.tools/db2/AreaTable 中以「a」為前綴的區域 ID。支援以“i”為前綴的副本 ID。"
 L["Swing"] = "揮動"
 L["Swing Timer"] = "揮擊計時條"
 L["Swipe"] = "轉圈"

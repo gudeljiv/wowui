@@ -30,7 +30,13 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:858
+END
+VER 3 000000000000002B "rune b" "134400"
+#showtooltip Feet Rune Ability
+/startattack
+/petattack
+/use Feet Rune Ability
 END
 VER 3 0000000000000028 "rune c" "134400"
 #showtooltip Chest Rune Ability
@@ -49,6 +55,12 @@ VER 3 0000000000000026 "rune l" "134400"
 /startattack
 /petattack
 /use Legs Rune Ability
+END
+VER 3 000000000000002A "rune w" "134400"
+#showtooltip Waist Rune Ability
+/startattack
+/petattack
+/use Waist Rune Ability
 END
 VER 3 0000000000000024 "sharp" "134400"
 #showtooltip

@@ -223,8 +223,7 @@ Off Screen]=] ] = "Aura está fuera de la pantalla"
 	L["Can set to 0 if Columns * Width equal File Width"] = "Puede ponerse a 0 si Columnas * Anchura es igual a Anchura de fila"
 	L["Can set to 0 if Rows * Height equal File Height"] = "Puede ponerse a 0 si Filas * Altura es igual a Altura de fila"
 	L["Cancel"] = "Cancelar"
-	--[[Translation missing --]]
-	L["Case Insensitive"] = "Case Insensitive"
+	L["Case Insensitive"] = "Insensible a mayúsculas/minúsculas"
 	L["Cast by a Player Character"] = "Lanzado por un personaje de jugador"
 	L["Categories to Update"] = "Categorías a actualizar"
 	L["Center"] = "Centro"
@@ -412,8 +411,7 @@ Can use \ to escape -.]=] ] = "Formatos de filtro: 'Nombre', 'Nombre-Reino', '-R
 	L["Finish"] = "Finalizar"
 	L["Finishing..."] = "Finalizando..."
 	L["Fire Orb"] = "Orbe de fuego"
-	--[[Translation missing --]]
-	L["Flat Framelevels"] = "Flat Framelevels"
+	L["Flat Framelevels"] = "Niveles de marco plano"
 	L["Font"] = "Fuente"
 	L["Font Size"] = "Tamaño de fuente"
 	L["Foreground"] = "Primer plano"
@@ -847,8 +845,7 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = "Ocurrencia d
 	L["The duration of the animation in seconds."] = "Duración de la animación (en segundos)."
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = [=[La duración de la animación en segundos. La animación de finalización no comienza a reproducirse hasta que la visualización normalmente estaría oculta.
 ]=]
-	--[[Translation missing --]]
-	L["The group and all direct children will share the same base frame level."] = "The group and all direct children will share the same base frame level."
+	L["The group and all direct children will share the same base frame level."] = "El grupo y todos los hijos directos compartirán el mismo nivel de marco base."
 	L["The type of trigger"] = "El tipo de activador"
 	L["Then "] = "Entonces"
 	L["Thickness"] = "Espesor"

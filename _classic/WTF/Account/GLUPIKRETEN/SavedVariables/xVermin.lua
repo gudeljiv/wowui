@@ -4,14 +4,21 @@ xVerminSavedData = {
 		["Enraged Stone Spirit"] = {
 			"Rend", -- [1]
 		},
-		["Swirling Vortex"] = {
-			"Serpent Sting", -- [1]
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
 		},
-		["Furious Stone Spirit"] = {
+		["Burning Destroyer"] = {
 			"Serpent Sting", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
+		},
+		["Swirling Vortex"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]
@@ -21,13 +28,12 @@ xVerminSavedData = {
 			"Frostbite", -- [5]
 			"Intercept Stun", -- [6]
 		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
+		["Thundering Boulderkin"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
 		},
 		["Arcanist Doan"] = {
 			"Charge Stun", -- [1]
@@ -41,25 +47,40 @@ xVerminSavedData = {
 			"Explosive Shot", -- [9]
 			"Multi-Shot", -- [10]
 			"Serpent Sting", -- [11]
+			"Living Flame", -- [12]
+			"Arcane Missiles", -- [13]
 		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
 		},
-		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
+		["Fire Elemental"] = {
+			"Magma Totem", -- [1]
+			"Flametongue Attack", -- [2]
 		},
 		["Bloodmage Thalnos"] = {
 			"Intimidation", -- [1]
 		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
+		["Herod"] = {
+			"Searing Pain", -- [1]
+			"Intimidation", -- [2]
+			"Flametongue Attack", -- [3]
+			"Firebolt", -- [4]
+			"Attack", -- [5]
+			"Flame Shock", -- [6]
+			"Arcane Shot", -- [7]
+			"Drain Life", -- [8]
+			"Molten Blast", -- [9]
+			"Fire Nova", -- [10]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
+		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
 		},
 	},

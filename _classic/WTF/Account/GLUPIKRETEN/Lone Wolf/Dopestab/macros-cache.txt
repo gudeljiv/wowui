@@ -21,3 +21,8 @@ VER 3 000000000100001B "attack" "Inv_misc_questionmark"
 /startattack
 /use Mutilate
 END
+VER 3 0000000001000020 "sap" "134400"
+#showtooltip Sap
+/stopattack
+/cast [@mouseover,exists,harm][] Sap
+END
