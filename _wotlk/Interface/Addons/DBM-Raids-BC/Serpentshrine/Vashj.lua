@@ -3,7 +3,7 @@ local L		= mod:GetLocalizedStrings()
 
 mod.statTypes = "normal25"
 
-mod:SetRevision("20240220023630")
+mod:SetRevision("20240305170219")
 mod:SetCreatureID(21212)
 mod:SetEncounterID(628, 2463)
 mod:SetModelID(20748)
@@ -17,8 +17,8 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 38253",
 	"SPELL_CAST_SUCCESS 38316",--38511
 	"UNIT_DIED",
-	"CHAT_MSG_MONSTER_YELL",
-	"CHAT_MSG_LOOT"
+	"CHAT_MSG_MONSTER_YELL"
+--	"CHAT_MSG_LOOT"
 )
 
 local warnCharge		= mod:NewTargetNoFilterAnnounce(38280, 4)

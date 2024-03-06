@@ -100,6 +100,8 @@ L["Alert Type"] = "警报类型"
 L["Algalon the Observer"] = "观察者奥尔加隆"
 L["Alive"] = "存活"
 L["All"] = "全部"
+--[[Translation missing --]]
+L["All children of this aura will also not be loaded, to minimize the chance of further corruption."] = "All children of this aura will also not be loaded, to minimize the chance of further corruption."
 L["All States table contains a non table at key: '%s'."] = "全部状态表中在键'%s'处包含非table对象。"
 L["All Triggers"] = "全部符合"
 L["Alliance"] = "联盟"
@@ -173,6 +175,8 @@ L["Autocast Shine"] = "自动施法闪烁"
 L["Automatic"] = "自动"
 L["Automatic Length"] = "自动长度"
 L["Automatic Rotation"] = "自动旋转"
+--[[Translation missing --]]
+L["Available features: %s"] = "Available features: %s"
 L["Avoidance (%)"] = "闪避 (%)"
 L["Avoidance Rating"] = "闪避等级"
 L["Ayamiss the Hunter"] = "狩猎者阿亚米斯"
@@ -393,6 +397,8 @@ L["Destination unit's raid mark index"] = "目标单位的团队标记编号"
 L["Destination unit's raid mark texture"] = "目标单位的团队标记材质"
 L["Difficulty"] = "难度"
 L["Disable Spell Known Check"] = "忽略法术已知检查"
+--[[Translation missing --]]
+L["Disabled feature %q"] = "Disabled feature %q"
 L["Disabled Spell Known Check"] = "已忽略法术已知检查"
 L["Discovered"] = "已发现"
 L["Disease"] = "疾病"
@@ -447,6 +453,8 @@ L["Empowered 5"] = "蓄力5"
 L["Empowered Cast Fully Charged"] = "蓄力施法完全充能"
 L["Empowered Fully Charged"] = "蓄力完全充能"
 L["Empty"] = "空"
+--[[Translation missing --]]
+L["Enabled feature %q"] = "Enabled feature %q"
 L["Enables (incorrect) round down of seconds, which was the previous default behavior."] = "启用以前的默认行为，（错误地）向下取整秒数。"
 L["Enchant Applied"] = "附魔添加"
 L["Enchant Found"] = "有附魔"
@@ -514,6 +522,10 @@ L["Fallback"] = "后备"
 L["Fallback Icon"] = "后备图标"
 L["False"] = "假"
 L["Fankriss the Unyielding"] = "顽强的范克瑞斯"
+--[[Translation missing --]]
+L["Feature %q is already disabled"] = "Feature %q is already disabled"
+--[[Translation missing --]]
+L["Feature %q is already enabled"] = "Feature %q is already enabled"
 L["Festergut"] = "烂肠"
 L["Fetch Legendary Power"] = "获取传说之力"
 L["Fetches the name and icon of the Legendary Power that matches this bonus id."] = "获取符合此增益ID的传说之力的名称与图标"
@@ -539,8 +551,10 @@ L["Foreground"] = "前景"
 L["Foreground Color"] = "前景颜色"
 L["Form"] = "形态"
 L["Format"] = "格式"
-L["Formats |cFFFF0000%unit|r"] = "格式化 |cFFFF0000%unit|r"
-L["Formats Player's |cFFFF0000%guid|r"] = "格式化玩家的 |cFFFF0000%guid|r"
+--[[Translation missing --]]
+L["Formats |cFFFFCC00%unit|r"] = "Formats |cFFFFCC00%unit|r"
+--[[Translation missing --]]
+L["Formats Player's |cFFFFCC00%guid|r"] = "Formats Player's |cFFFFCC00%guid|r"
 L["Forward"] = "正向"
 L["Forward, Reverse Loop"] = "正向，反向循环"
 L["Fourth Value of Tooltip Text"] = "鼠标提示文本的第四项值"
@@ -976,6 +990,8 @@ L["Overlay %s"] = "覆盖层 %s"
 L["Overlay Charged Combo Points"] = "充能连击点覆盖层"
 L["Overlay Cost of Casts"] = "覆盖层显示施法消耗"
 L["Overlay Latency"] = "延迟覆盖层"
+--[[Translation missing --]]
+L["Parent Zone"] = "Parent Zone"
 L["Parry"] = "招架"
 L["Parry (%)"] = "招架 (%)"
 L["Parry Rating"] = "招架等级"
@@ -1269,10 +1285,18 @@ L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "支持多个条目，由英文逗号分隔"
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "支持多个条目，由英文逗号分隔。使用反斜杠\"\\\"转义\",\"。"
 --[[Translation missing --]]
-L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."
+L[ [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
+Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
+Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
+Supports Instance IDs prefixed with 'i'.]=] ] = [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
+Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
+Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
+Supports Instance IDs prefixed with 'i'.]=]
 L["Swing"] = "近战攻击"
 L["Swing Timer"] = "近战攻击计时器"
 L["Swipe"] = "旋转动画"
+--[[Translation missing --]]
+L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "系统"
 L["Tab "] = "标签页 "
 L["Talent"] = "天赋"
@@ -1382,6 +1406,8 @@ L["Twilight Lord Kelris"] = "Twilight Lord Kelris"
 L["Twin Emperors"] = "双子皇帝"
 L["Type"] = "类型"
 L["Ulduar"] = "奥杜尔"
+--[[Translation missing --]]
+L["Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."] = "Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."
 L["Unaffected"] = "未受影响"
 L["Undefined"] = "未定义"
 L["Unholy"] = "邪恶"
@@ -1400,6 +1426,10 @@ L["Unit Name/Realm"] = "单位名称/服务器"
 L["Units Affected"] = "受影响的单位"
 L["Units of affected Players in a table format"] = "存放在table里的受影响的单位"
 L["Units of unaffected Players in a table format"] = "存放在table里的未受影响的单位"
+--[[Translation missing --]]
+L["Unknown action %q"] = "Unknown action %q"
+--[[Translation missing --]]
+L["Unknown feature %q"] = "Unknown feature %q"
 L["unknown location"] = "未知位置"
 L["Unlimited"] = "无限制"
 L["Untrigger %s"] = "取消触发器 %s"

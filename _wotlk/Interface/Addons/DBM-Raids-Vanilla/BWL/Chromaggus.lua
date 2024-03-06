@@ -12,7 +12,7 @@ end
 local mod	= DBM:NewMod("Chromaggus", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240220023630")
+mod:SetRevision("20240305170219")
 mod:SetCreatureID(14020)
 mod:SetEncounterID(616)
 mod:SetModelID(14367)
@@ -114,6 +114,7 @@ local function update_vulnerability(self)
 	timerVuln:UpdateIcon(info[3])
 	timerVuln:UpdateName(name)
 	if not lastVulnName or lastVulnName ~= name then
+		---@diagnostic disable-next-line: inject-field
 		warnVuln.icon = info[3]
 		warnVuln:Show(name)
 		lastVulnName = name

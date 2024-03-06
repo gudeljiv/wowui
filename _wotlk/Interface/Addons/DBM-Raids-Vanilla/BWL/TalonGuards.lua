@@ -12,7 +12,7 @@ end
 local mod	= DBM:NewMod("TalonGuards", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240220023630")
+mod:SetRevision("20240305170219")
 mod:SetCreatureID(12460, 12461, 99999)--99999 to prevent mod from ending combat after one of each talon guard type die. Mod will effectively ALWAYS wipe, but it has disabled stats/reporting so irrelevant
 mod:SetModelID(12460)
 mod:RegisterCombat("combat")
@@ -70,6 +70,7 @@ local function update_vulnerability(self)
 	local name = L[info[1]] or info[1]
 
 	if not lastAnnounce[target] or lastAnnounce[target] ~= name then
+		---@diagnostic disable-next-line: inject-field
 		warnVuln.icon = info[3]
 		warnVuln:Show(name)
 		lastAnnounce[target] = name

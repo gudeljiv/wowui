@@ -233,6 +233,8 @@ Off Screen]=] ] = "光环在屏幕外"
 	L["Can set to 0 if Columns * Width equal File Width"] = "如果列x宽度=文件宽度，可以设为0"
 	L["Can set to 0 if Rows * Height equal File Height"] = "如果行x高度=文件高度，可以设为0"
 	L["Cancel"] = "取消"
+	--[[Translation missing --]]
+	L["Case Insensitive"] = "Case Insensitive"
 	L["Cast by a Player Character"] = "玩家角色施放"
 	L["Categories to Update"] = "即将更新的类"
 	L["Center"] = "中间"
@@ -439,6 +441,8 @@ Can use \ to escape -.]=] ] = [=[过滤格式：'名称'，'名称-服务器'，
 	L["Finish"] = "结束"
 	L["Finishing..."] = "即将完成"
 	L["Fire Orb"] = "火焰宝珠"
+	--[[Translation missing --]]
+	L["Flat Framelevels"] = "Flat Framelevels"
 	L["Font"] = "字体"
 	L["Font Size"] = "字体大小"
 	L["Foreground"] = "前景"
@@ -884,6 +888,8 @@ every 3 events starting from 2nd and ending at 11th: 2-11/3]=] ] = [=[事件发�
 	L["The addon OmniCC is enabled. It might add cooldown numbers to the swipe. You can configure these in the OmniCC settings"] = "插件OmniCC已启用。它可能会向冷却刷添加冷却文本。你可以在OmniCC设置中调整。"
 	L["The duration of the animation in seconds."] = "动画持续秒数"
 	L["The duration of the animation in seconds. The finish animation does not start playing until after the display would normally be hidden."] = "动画时长秒时。直到显示内容可以被正常隐藏之后，结束动画才会播放。"
+	--[[Translation missing --]]
+	L["The group and all direct children will share the same base frame level."] = "The group and all direct children will share the same base frame level."
 	L["The type of trigger"] = "触发器类型"
 	L["Then "] = "然后"
 	L["Thickness"] = "粗细"

@@ -1182,6 +1182,10 @@ L:SetGeneralLocalization({
 	name = "Grubbis"
 })
 
+L:SetMiscLocalization({
+	FirstPull = "Aún quedan conductos de ventilación que expulsan material radiactivo por toda Gnomeregan.",
+	Pull = "¡Oh, no! Unos temblores como estos solo pueden significar una cosa..."
+})
 ----------------------------
 --  Electrocutioner 6000  --
 ----------------------------
@@ -1211,7 +1215,7 @@ L:SetGeneralLocalization({
 
 L:SetMiscLocalization{
 	Sheep		= "Oveja",
-	Whelp		= "Dragoncito",
+	Whelp		= "Dragón",
 	Squirrel	= "Ardilla",
 	Chicken		= "Pollo"
 }

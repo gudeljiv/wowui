@@ -106,6 +106,8 @@ L["Alert Type"] = "Тип предупреждения"
 L["Algalon the Observer"] = "Алгалон Наблюдатель"
 L["Alive"] = "Живой"
 L["All"] = "Все"
+--[[Translation missing --]]
+L["All children of this aura will also not be loaded, to minimize the chance of further corruption."] = "All children of this aura will also not be loaded, to minimize the chance of further corruption."
 L["All States table contains a non table at key: '%s'."] = "В таблице всех состояний (allstates) значение с ключом '%s' не является таблицей."
 L["All Triggers"] = "Все триггеры"
 L["Alliance"] = "Альянс"
@@ -183,6 +185,8 @@ L["Autocast Shine"] = "Свечение при автоприменении"
 L["Automatic"] = "Автоматическая"
 L["Automatic Length"] = "Автоматическая длина"
 L["Automatic Rotation"] = "Автоматический поворот"
+--[[Translation missing --]]
+L["Available features: %s"] = "Available features: %s"
 L["Avoidance (%)"] = "Избегание"
 L["Avoidance Rating"] = "Показатель избегания"
 L["Ayamiss the Hunter"] = "Аямисса Охотница"
@@ -407,6 +411,8 @@ L["Destination unit's raid mark index"] = "Метка получателя (ин
 L["Destination unit's raid mark texture"] = "Метка получателя (иконка)"
 L["Difficulty"] = "Сложность"
 L["Disable Spell Known Check"] = "Отключить проверку, известно ли заклинание"
+--[[Translation missing --]]
+L["Disabled feature %q"] = "Disabled feature %q"
 L["Disabled Spell Known Check"] = "Проверка, известно ли заклинание, отключена"
 L["Discovered"] = "Открыта"
 L["Disease"] = "Болезнь"
@@ -461,6 +467,8 @@ L["Empowered 5"] = "Уровень усиления 5"
 L["Empowered Cast Fully Charged"] = "Полностью усиленное заклинание"
 L["Empowered Fully Charged"] = "Полностью усиленное заклинание"
 L["Empty"] = "Пустой"
+--[[Translation missing --]]
+L["Enabled feature %q"] = "Enabled feature %q"
 L["Enables (incorrect) round down of seconds, which was the previous default behavior."] = "Округление секунд происходит к меньшему целому числу. Это соответствует предыдущему поведению по умолчанию."
 L["Enchant Applied"] = "Чары применены"
 L["Enchant Found"] = "Чары найдены"
@@ -529,6 +537,10 @@ L["Fallback"] = "Резерв"
 L["Fallback Icon"] = "Резервная иконка"
 L["False"] = "Ложь"
 L["Fankriss the Unyielding"] = "Фанкрисс Непреклонный"
+--[[Translation missing --]]
+L["Feature %q is already disabled"] = "Feature %q is already disabled"
+--[[Translation missing --]]
+L["Feature %q is already enabled"] = "Feature %q is already enabled"
 L["Festergut"] = "Тухлопуз"
 L["Fetch Legendary Power"] = "Получить информацию о легендарной способности"
 L["Fetches the name and icon of the Legendary Power that matches this bonus id."] = "Извлекает название и иконку легендарной способности, соответствующие этому ID бонуса"
@@ -554,8 +566,10 @@ L["Foreground"] = "Передний план"
 L["Foreground Color"] = "Цвет переднего плана"
 L["Form"] = "Облик"
 L["Format"] = "Формат"
-L["Formats |cFFFF0000%unit|r"] = "Формат |cFFFF0000%unit|r для игрока"
-L["Formats Player's |cFFFF0000%guid|r"] = "Формат |cFFFF0000%GUID|r для игрока"
+--[[Translation missing --]]
+L["Formats |cFFFFCC00%unit|r"] = "Formats |cFFFFCC00%unit|r"
+--[[Translation missing --]]
+L["Formats Player's |cFFFFCC00%guid|r"] = "Formats Player's |cFFFFCC00%guid|r"
 L["Forward"] = "Воспроизвести"
 L["Forward, Reverse Loop"] = "Повторять (в прям. и обр. порядке)"
 L["Fourth Value of Tooltip Text"] = "Четвёртое значение из текста подсказки"
@@ -983,6 +997,8 @@ L["Overlay %s"] = "Наложение %s"
 L["Overlay Charged Combo Points"] = "Показать заряженные анимой приемы серии (наложение)"
 L["Overlay Cost of Casts"] = "Показать стоимость применения заклинаний (наложение)"
 L["Overlay Latency"] = "Показать задержку (наложение)"
+--[[Translation missing --]]
+L["Parent Zone"] = "Parent Zone"
 L["Parry"] = "Парирование"
 L["Parry (%)"] = "Парирование"
 L["Parry Rating"] = "Показатель парирования"
@@ -1279,10 +1295,18 @@ L[ [=[Supports multiple entries, separated by commas
 ]=]
 L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "Можно указать несколько значений, разделенных запятыми. Если название уже содержит запятую, экранируйте ее при помощи символа \\"
 --[[Translation missing --]]
-L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277. Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. Supports Instance IDs prefixed with 'i'."
+L[ [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
+Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
+Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
+Supports Instance IDs prefixed with 'i'.]=] ] = [=[Supports multiple entries, separated by commas. To include child zone ids, prefix with 'c', e.g. 'c2022'.
+Group Zone IDs must be prefixed with 'g', e.g. 'g277'. 
+Supports Area IDs from https://wago.tools/db2/AreaTable prefixed with 'a'. 
+Supports Instance IDs prefixed with 'i'.]=]
 L["Swing"] = "Ближний бой"
 L["Swing Timer"] = "Таймер Swing (время между атаками)"
 L["Swipe"] = "Эффект Swipe (затемнение)"
+--[[Translation missing --]]
+L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "Система"
 L["Tab "] = "Вкладка "
 L["Talent"] = "Талант"
@@ -1298,8 +1322,7 @@ L["Target"] = "Цель"
 L["Targeted"] = "Цель"
 L["Tenebron"] = "Тенеброн"
 L["Text"] = "Текст"
---[[Translation missing --]]
-L["Text To Speech"] = "Text To Speech"
+L["Text To Speech"] = "Текст в речь"
 L["Text-to-speech"] = "Текст в речь"
 L["Texture Function"] = "Функция текстуры"
 L["Texture Function (fallback state)"] = "Функция текстуры (резервное состояние)"
@@ -1325,10 +1348,8 @@ L["This aura has caused a Lua error."] = "Индикация вызвала ош
 L["This aura is saving %s KB of data"] = "Индикация хранит %s КБ данных."
 L["This aura plays a sound via a condition."] = "Индикация воспроизводит звук с помощью условия."
 L["This aura plays a sound via an action."] = "Индикация воспроизводит звук с помощью действия."
---[[Translation missing --]]
-L["This aura plays a Text To Speech via a condition."] = "This aura plays a Text To Speech via a condition."
---[[Translation missing --]]
-L["This aura plays a Text To Speech via an action."] = "This aura plays a Text To Speech via an action."
+L["This aura plays a Text To Speech via a condition."] = "Эта аура воспроизводит преобразование текста в речь посредством условия."
+L["This aura plays a Text To Speech via an action."] = "Эта аура воспроизводит преобразование текста в речь посредством действия."
 L["Thorim"] = "Торим"
 L["Threat Percent"] = "Процент угрозы"
 L["Threat Situation"] = "Положение в списке угроз"
@@ -1390,6 +1411,7 @@ L["Twilight Lord Kelris"] = "Повелитель сумрака Келрис"
 L["Twin Emperors"] = "Императоры-близнецы"
 L["Type"] = "Тип"
 L["Ulduar"] = "Ульдуар"
+L["Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."] = "Невозможно модернизировать ауру '%s'. Вероятно, это связано с повреждением данных или неудачным перемещением. Сообщите об этом команде WeakAuras."
 L["Unaffected"] = "Незадействованные"
 L["Undefined"] = "Не определено"
 L["Unholy"] = "Нечестивость"
@@ -1408,6 +1430,10 @@ L["Unit Name/Realm"] = "Имя / Игровой мир единицы"
 L["Units Affected"] = "Количество задействованных единиц"
 L["Units of affected Players in a table format"] = "Единицы задействованных игроков в формате таблицы"
 L["Units of unaffected Players in a table format"] = "Единицы незадействованных игроков в формате таблицы"
+--[[Translation missing --]]
+L["Unknown action %q"] = "Unknown action %q"
+--[[Translation missing --]]
+L["Unknown feature %q"] = "Unknown feature %q"
 L["unknown location"] = "неизвестное местонахождение"
 L["Unlimited"] = "Неограниченное"
 L["Untrigger %s"] = "Детриггер %s"

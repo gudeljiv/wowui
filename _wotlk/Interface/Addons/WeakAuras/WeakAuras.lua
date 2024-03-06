@@ -173,9 +173,9 @@ function SlashCmdList.WEAKAURAS(input)
 
   for v in string.gmatch(input, "%S+") do
     if not msg then
-      msg = v
+      msg = v:lower()
     else
-      insert(args, v)
+      insert(args, v:lower())
     end
   end
 
@@ -193,6 +193,46 @@ function SlashCmdList.WEAKAURAS(input)
     Private.PrintHelp();
   elseif msg == "repair" then
     StaticPopup_Show("WEAKAURAS_CONFIRM_REPAIR", nil, nil, {reason = "user"})
+  elseif msg == "ff" or msg == "feat" or msg == "feature" then
+    if #args < 2 then
+      local features = Private.Features:ListFeatures()
+      local summary = {}
+      for _, feature in ipairs(features) do
+        table.insert(summary, ("|c%s%s|r"):format(feature.enabled and "ff00ff00" or "ffff0000", feature.id))
+      end
+      prettyPrint(L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"])
+      prettyPrint(L["Available features: %s"]:format(table.concat(summary, ", ")))
+    else
+      local action = ({
+        toggle = "toggle",
+        on = "enable",
+        enable = "enable",
+        disable = "disable",
+        off = "disable"
+      })[args[1]]
+      if not action then
+        prettyPrint(L["Unknown action %q"]:format(args[1]))
+      else
+        local feature = args[2]
+        if not Private.Features:Exists(feature) then
+          prettyPrint(L["Unknown feature %q"]:format(feature))
+        elseif not Private.Features:Enabled(feature) then
+          if action ~= "disable" then
+            Private.Features:Enable(feature)
+            prettyPrint(L["Enabled feature %q"]:format(feature))
+          else
+            prettyPrint(L["Feature %q is already disabled"]:format(feature))
+          end
+        elseif Private.Features:Enabled(feature) then
+          if action ~= "enable" then
+            Private.Features:Disable(feature)
+            prettyPrint(L["Disabled feature %q"]:format(feature))
+          else
+            prettyPrint(L["Feature %q is already enabled"]:format(feature))
+          end
+        end
+      end
+    end
   else
     WeakAuras.OpenOptions(msg);
   end
@@ -597,7 +637,7 @@ local function EvalBooleanArg(arg, trigger, default)
   end
 end
 
-local function singleTest(arg, trigger, use, name, value, operator, use_exact)
+local function singleTest(arg, trigger, use, name, value, operator, use_exact, caseInsensitive)
   local number = value and tonumber(value) or nil
   if(arg.type == "tristate") then
     if(use == false) then
@@ -703,9 +743,18 @@ local function singleTest(arg, trigger, use, name, value, operator, use_exact)
     return "("..arg.test:format(value)..")";
   elseif(arg.type == "longstring" and operator) then
     if(operator == "==") then
-      return "("..name.."==[["..value.."]])";
+      if caseInsensitive then
+        return ("(%s and %s:lower() == [[%s]]:lower())"):format(name, name, value)
+      else
+        return "("..name.."==[["..value.."]])";
+      end
     else
-      return "("..name..":"..operator:format(value)..")";
+      if caseInsensitive then
+        local op = operator:format(value:lower())
+        return ("(%s:lower():%s)"):format(name, op)
+      else
+        return "("..name..":"..operator:format(value)..")";
+      end
     end
   elseif(arg.type == "number") then
     if number then
@@ -759,9 +808,10 @@ local function ConstructFunction(prototype, trigger, skipOptional)
             test = ""
             for i, value in ipairs(trigger[name]) do
               local operator = name and type(trigger[name.."_operator"]) == "table" and trigger[name.."_operator"][i]
+              local caseInsensitive = name and arg.canBeCaseInsensitive and type(trigger[name.."_caseInsensitive"]) == "table" and trigger[name.."_caseInsensitive"][i]
               local use_exact = name and type(trigger["use_exact_" .. name]) == "table" and trigger["use_exact_" .. name][i]
               local use = name and trigger["use_"..name]
-              local single = singleTest(arg, trigger, use, name, value, operator, use_exact)
+              local single = singleTest(arg, trigger, use, name, value, operator, use_exact, caseInsensitive)
               if single then
                 if test ~= "" then
                   test = test .. arg.multiEntry.operator
@@ -778,9 +828,10 @@ local function ConstructFunction(prototype, trigger, skipOptional)
         else
           local value = trigger[name]
           local operator = name and trigger[name.."_operator"]
+          local caseInsensitive = name and trigger[name.."_caseInsensitive"]
           local use_exact = name and trigger["use_exact_" .. name]
           local use = name and trigger["use_"..name]
-          test = singleTest(arg, trigger, use, name, value, operator, use_exact)
+          test = singleTest(arg, trigger, use, name, value, operator, use_exact, caseInsensitive)
         end
 
         if (arg.preamble) then
@@ -1114,6 +1165,9 @@ do -- Archive stuff
           error(string.format(L["Could not load WeakAuras Archive, the addon is %s"], reason))
         end
       end
+      if type(WeakAurasArchive) ~= "table" then
+        WeakAurasArchive = {}
+      end
       Archivist:Initialize(WeakAurasArchive)
     end
     return Archivist
@@ -1156,7 +1210,6 @@ end
 function Private.Login(initialTime, takeNewSnapshots)
   local loginThread = coroutine.create(function()
     Private.Pause();
-
     if db.history then
       local histRepo = WeakAuras.LoadFromArchive("Repository", "history")
       local migrationRepo = WeakAuras.LoadFromArchive("Repository", "migration")
@@ -1169,6 +1222,10 @@ function Private.Login(initialTime, takeNewSnapshots)
       db.history = nil
       coroutine.yield();
     end
+
+
+    Private.Features:Hydrate()
+    coroutine.yield()
 
     local toAdd = {};
     loginFinished = false
@@ -1262,7 +1319,7 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
     if(addon == ADDON_NAME) then
       WeakAurasSaved = WeakAurasSaved or {};
       db = WeakAurasSaved;
-
+      Private.db = db
       -- Defines the action squelch period after login
       -- Stored in SavedVariables so it can be changed by the user if they find it necessary
       db.login_squelch_time = db.login_squelch_time or 10;
@@ -1275,6 +1332,7 @@ loadedFrame:SetScript("OnEvent", function(self, event, addon)
 
       db.displays = db.displays or {};
       db.registered = db.registered or {};
+      db.features = db.features or {}
       db.migrationCutoff = db.migrationCutoff or 730
       db.historyCutoff = db.historyCutoff or 730
 
@@ -2538,34 +2596,57 @@ function Private.AddMany(tbl, takeSnapshots)
 
   local order = loadOrder(tbl, idtable)
   coroutine.yield()
-  local groups = {}
-  for _, data in ipairs(order) do
-    WeakAuras.PreAdd(data)
-    if data.regionType == "dynamicgroup" or data.regionType == "group" then
-      groups[data] = true
+
+  if takeSnapshots then
+    for _, data in ipairs(order) do
+      Private.SetMigrationSnapshot(data.uid, data)
+      coroutine.yield()
     end
-    coroutine.yield()
+  end
+
+  local groups = {}
+  local bads = {}
+  for _, data in ipairs(order) do
+    if data.parent and bads[data.parent] then
+      bads[data.id] = true
+    else
+      local ok = xpcall(WeakAuras.PreAdd, geterrorhandler(), data)
+      if not ok then
+        prettyPrint(L["Unable to modernize aura '%s'. This is probably due to corrupt data or a bad migration, please report this to the WeakAuras team."]:format(data.id))
+        if data.regionType == "dynamicgroup" or data.regionType == "group" then
+          prettyPrint(L["All children of this aura will also not be loaded, to minimize the chance of further corruption."])
+        end
+        bads[data.id] = true
+      elseif data.regionType == "dynamicgroup" or data.regionType == "group" then
+        groups[data] = true
+      end
+      coroutine.yield()
+    end
   end
 
   for _, data in ipairs(order) do
-    WeakAuras.Add(data, takeSnapshots);
-    coroutine.yield()
+    if not bads[data.id] then
+      WeakAuras.Add(data)
+      coroutine.yield()
+    end
   end
 
   for id in pairs(anchorTargets) do
     local data = idtable[id]
-    if data and (data.parent == nil or idtable[data.parent].regionType ~= "dynamicgroup") then
+    if data and not bads[data.id] and (data.parent == nil or idtable[data.parent].regionType ~= "dynamicgroup") then
       Private.EnsureRegion(id)
     end
   end
 
   for data in pairs(groups) do
-    if data.type == "dynamicgroup" then
-      if Private.regions[data.id] and Private.regions[data.id].region then
-        Private.regions[data.id].region:ReloadControlledChildren()
+    if not bads[data.id] then
+      if data.type == "dynamicgroup" then
+        if Private.regions[data.id] and Private.regions[data.id].region then
+          Private.regions[data.id].region:ReloadControlledChildren()
+        end
+      else
+        WeakAuras.Add(data)
       end
-    else
-      WeakAuras.Add(data)
     end
     coroutine.yield();
   end
@@ -3077,13 +3158,9 @@ local function pAdd(data, simpleChange)
   end
 end
 
-function WeakAuras.Add(data, takeSnapshot, simpleChange)
-  local snapshot
-  if takeSnapshot or (data.internalVersion or 0) < internalVersion then
-    snapshot = CopyTable(data)
-  end
-  if takeSnapshot then
-    Private.SetMigrationSnapshot(data.uid, snapshot)
+function WeakAuras.Add(data, simpleChange)
+  if (data.internalVersion or 0) < internalVersion then
+    Private.SetMigrationSnapshot(data.uid, data)
   end
   local ok = xpcall(WeakAuras.PreAdd, Private.GetErrorHandlerUid(data.uid, "PreAdd"), data)
   if ok then
@@ -4051,21 +4128,35 @@ local function SetFrameLevel(id, frameLevel)
   Private.frameLevels[id] = frameLevel;
 end
 
-function Private.FixGroupChildrenOrderForGroup(data)
-  SetFrameLevel(data.id, 0)
-  local frameLevel, offset
-  if data.regionType == "dynamicgroup" then
-    frameLevel, offset = 5, 0
+local function FixGroupChildrenOrderImpl(data, frameLevel)
+  SetFrameLevel(data.id, frameLevel)
+  local offset
+  if data.sharedFrameLevel then
+    offset = 0
   else
-    frameLevel, offset = 2, 4
+    offset = 4
   end
   for _, childId in ipairs(data.controlledChildren) do
-    local data = WeakAuras.GetData(childId)
-    if data.regionType ~= "group" and data.regionType ~= "dynamicgroup" then
-      SetFrameLevel(childId, frameLevel);
-      frameLevel = frameLevel + offset;
+    local childData = WeakAuras.GetData(childId)
+    if childData.regionType ~= "group" and childData.regionType ~= "dynamicgroup" then
+      frameLevel = frameLevel + offset
+      SetFrameLevel(childId, frameLevel)
+    else
+      frameLevel = frameLevel + offset
+      local endFrameLevel = FixGroupChildrenOrderImpl(childData, frameLevel)
+      if not data.sharedFrameLevel then
+        frameLevel = endFrameLevel
+      end
     end
   end
+  return frameLevel
+end
+
+function Private.FixGroupChildrenOrderForGroup(data)
+  if data.parent then
+    return
+  end
+  FixGroupChildrenOrderImpl(data, 0)
 end
 
 local function GetFrameLevelFor(id)
@@ -5887,6 +5978,12 @@ function Private.ExecEnv.ParseZoneCheck(input)
         local prevChar = input:sub(start - 1, start - 1)
         if prevChar == 'g' or prevChar == 'G' then
           self.zoneGroupIds[id] = true
+        elseif prevChar == 'c' or prevChar == 'C' then
+          self.zoneIds[id] = true
+          local info = C_Map.GetMapChildrenInfo(id, nil, true)
+          for _,childInfo in pairs(info) do
+             self.zoneIds[childInfo.mapID] = true
+          end
         elseif prevChar == 'a' or prevChar == 'A' then
           self.areaNames[C_Map.GetAreaInfo(id)] = true
         elseif prevChar == 'i' or prevChar == 'I' then
