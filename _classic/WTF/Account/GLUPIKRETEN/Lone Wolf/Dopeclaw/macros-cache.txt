@@ -3,20 +3,15 @@ VER 3 000000000100000B "AA" "134400"
 /startattack [form:1][form:3]
 /cast [stealth] Pounce; [form:1] Maul; [form:3]Claw; [@mouseover,help,nodead][]Regrowth
 END
-VER 3 000000000100001B "attack" "Inv_misc_questionmark"
+VER 3 0000000001000005 "AP" "136068"
 #showtooltip
-/startattack
-/use Sinister Strike
+/cast [@mouseover,exists,nodead][help][] Abolish Poison
 END
 VER 3 0000000001000016 "cat" "134400"
 #showtooltip Cat Form
 /cancelform [noform:2]
 /cast [form:2] Cat Form
 /cast [noform:2] !Cat Form
-END
-VER 3 0000000001000005 "CP" "134400"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Cure Poison
 END
 VER 3 0000000001000007 "dash" "134400"
 #showtooltip Dash

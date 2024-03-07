@@ -56,7 +56,6 @@ local L = WeakAuras.L
 	L["%s %s, Lines: %d, Frequency: %0.2f, Length: %d, Thickness: %d"] = "%s %s, Lignes : %d, Fréquence : %0.2f, Longueur : %d, Épaisseur : %d"
 	L["%s %s, Particles: %d, Frequency: %0.2f, Scale: %0.2f"] = "%s %s, Particules : %d, Fréquence : %0.2f, Échelle : %0.2f"
 	L["%s %u. Overlay Function"] = "%s %u. Fonction de superposition"
-	--[[Translation missing --]]
 	L["%s (%s)"] = "%s (%s)"
 	L["%s Alpha: %d%%"] = "%s Opacité : %d%%"
 	L["%s Color"] = "%s Couleur"
