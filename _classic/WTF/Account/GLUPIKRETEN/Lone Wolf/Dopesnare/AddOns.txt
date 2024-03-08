@@ -123,3 +123,4 @@ SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TomTom: enabled
 TotemCaddy: enabled
+ConsolePort: enabled

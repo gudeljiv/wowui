@@ -21,7 +21,8 @@ local messages = {
 	'Must have a Shield equipped',
 	'Interrupted',
 	'Unknown unit',
-	"You can't use that item."
+	"You can't use that item.",
+	"That ability requires combo points"
 }
 
 local old_uierrosframe_addmessage

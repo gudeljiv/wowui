@@ -7,7 +7,7 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["EnableQueues"] = "ON",
+	["EnablePerSetQueues"] = "OFF",
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
@@ -41,7 +41,7 @@ ItemRackUser = {
 			},
 		},
 	},
-	["EnablePerSetQueues"] = "OFF",
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
 	["Alpha"] = 1,

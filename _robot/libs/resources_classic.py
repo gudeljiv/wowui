@@ -90,7 +90,6 @@ data = {
             {"name": "mark of the wild", "type": "GetSpellTexture", "id": 1126, "key": "f10"},
             {"name": "thorns", "type": "GetSpellTexture", "id": 467, "key": "5", "modifier": "lshift"},
             {"name": "sunfire", "type": "GetSpellTexture", "id": 414684, "key": "3"},
-            {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
             {"name": "faerie fire", "type": "GetSpellTexture", "id": 770, "key": "e"},
             {"name": "claw", "type": "GetSpellTexture", "id": 1082, "key": "1"},
             {"name": "mangle", "type": "GetSpellTexture", "id": 407995, "key": "1"},
@@ -100,7 +99,7 @@ data = {
             {"name": "savage roar", "type": "GetSpellTexture", "id": 407988, "key": "6"},
             {"name": "ferocious bite", "type": "GetSpellTexture", "id": 22568, "key": "4"},
             {"name": "tiger's fury", "type": "GetSpellTexture", "id": 5217, "key": "7"},
-            {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 99, "key": "8"},
+            {"name": "demoralizing roar", "type": "GetSpellTexture", "id": 1735, "key": "8"},
         ],
         "secondary": [
             {"name": "maul", "type": "GetSpellTexture", "id": 6807, "key": "2"},
