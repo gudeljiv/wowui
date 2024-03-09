@@ -17,6 +17,24 @@ xVerminSavedData = {
 		["Burning Destroyer"] = {
 			"Serpent Sting", -- [1]
 		},
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
+		},
+		["Dark Rider"] = {
+			"Intimidation", -- [1]
+			"Charge Stun", -- [2]
+			"Concussive Shot", -- [3]
+			"Starfire Stun", -- [4]
+			"Frostbite", -- [5]
+			"Intercept Stun", -- [6]
+		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
+		},
+		["Swirling Vortex"] = {
+			"Serpent Sting", -- [1]
+		},
 		["Arcanist Doan"] = {
 			"Charge Stun", -- [1]
 			"Concussive Shot", -- [2]
@@ -35,6 +53,26 @@ xVerminSavedData = {
 			"Wing Clip", -- [15]
 			"Starsurge", -- [16]
 		},
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
+		},
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
+		},
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
+		},
+		["Fire Elemental"] = {
+			"Magma Totem", -- [1]
+			"Flametongue Attack", -- [2]
+			"Serpent Sting", -- [3]
+		},
 		["Evolving Ectoplasm"] = {
 			"Frost Shock", -- [1]
 			"Frostbolt", -- [2]
@@ -44,18 +82,11 @@ xVerminSavedData = {
 			"Incinerate", -- [6]
 			"Firebolt", -- [7]
 		},
-		["Bristleback Geomancer"] = {
-			"Incinerate", -- [1]
-			"Firebolt", -- [2]
+		["Mutanus the Devourer"] = {
+			"Shadow Word: Pain", -- [1]
 		},
-		["Swirling Vortex"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
-		},
-		["Furious Stone Spirit"] = {
-			"Serpent Sting", -- [1]
+		["Bloodmage Thalnos"] = {
+			"Intimidation", -- [1]
 		},
 		["Herod"] = {
 			"Searing Pain", -- [1]
@@ -72,43 +103,12 @@ xVerminSavedData = {
 			"Wrath", -- [12]
 			"Instant Poison", -- [13]
 		},
-		["Fire Elemental"] = {
-			"Magma Totem", -- [1]
-			"Flametongue Attack", -- [2]
-			"Serpent Sting", -- [3]
-		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
-		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
+		["Bristleback Geomancer"] = {
+			"Incinerate", -- [1]
 			"Firebolt", -- [2]
 		},
-		["Mutanus the Devourer"] = {
-			"Shadow Word: Pain", -- [1]
-		},
-		["Bloodmage Thalnos"] = {
-			"Intimidation", -- [1]
-		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
-		},
-		["Dark Rider"] = {
-			"Intimidation", -- [1]
-			"Charge Stun", -- [2]
-			"Concussive Shot", -- [3]
-			"Starfire Stun", -- [4]
-			"Frostbite", -- [5]
-			"Intercept Stun", -- [6]
-		},
-		["Boiling Elemental"] = {
-			"Instant Poison", -- [1]
+		["Furious Stone Spirit"] = {
+			"Serpent Sting", -- [1]
 		},
 	},
 }
