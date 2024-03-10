@@ -69,13 +69,6 @@ X: 0
 Y: -104
 W: 714
 H: 560
-Frame: MerchantFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 336
-H: 444
 Frame: TradeFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -265,3 +258,10 @@ X: -488
 Y: -327
 W: 330
 H: 113
+Frame: MerchantFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 336
+H: 444

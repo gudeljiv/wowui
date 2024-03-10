@@ -279,7 +279,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["showBorderShield"] = false,
+		["showBorderShield"] = true,
 		["height"] = 45,
 		["borderPaddingHeight"] = 1.2,
 		["castFontSize"] = 22,

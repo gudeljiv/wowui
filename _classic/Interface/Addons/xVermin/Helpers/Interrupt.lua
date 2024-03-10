@@ -234,11 +234,20 @@ UIParent:HookScript(
 			HandleUnit('focus')
 		elseif UnitExists('target') then
 			HandleUnit('target')
-		else
-			return
+		else 
+			_G.UnitCastingInteruptible = false
+			HandleRotationFrame(false)
 		end
 	end
 )
+
+-- UIParent:HookScript(
+-- 	'OnUpdate',
+-- 	function(self)
+-- 		print(_G.UnitCastingInteruptible)
+-- 	end
+-- )
+
 
 
 

@@ -62,13 +62,11 @@ local _, xVermin = ...
 
 
 local function HandleCast(data, castbar, unitID)
-	-- print("start cast", unitID, castbar, castbar.isUninterruptible)
+	-- print("start cast", unitID, castbar, not castbar.isUninterruptible)
 	if unitID == "target" then
 		if not castbar.isUninterruptible then
-			-- print("true")
 			_G.UnitCastingInteruptible = true
 		else
-			-- print("false")
 			_G.UnitCastingInteruptible = false
 		end
 	end

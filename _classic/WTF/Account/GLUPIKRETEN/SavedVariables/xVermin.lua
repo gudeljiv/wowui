@@ -4,6 +4,18 @@ xVerminSavedData = {
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
 		},
+		["Whirlwind Ripper"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Splinterbone Centurion"] = {
+			"Intimidating Shout", -- [1]
+		},
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
+		},
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
@@ -11,14 +23,22 @@ xVerminSavedData = {
 			"Earthbind", -- [1]
 			"Earth Shock", -- [2]
 		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
+		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Boiling Elemental"] = {
-			"Instant Poison", -- [1]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Stormstrike", -- [2]
+			"Wing Clip", -- [3]
+			"Sunder Armor", -- [4]
+			"Raptor Strike", -- [5]
+			"Earth Shock", -- [6]
+			"Serpent Sting", -- [7]
+			"Quick Strike", -- [8]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]
@@ -28,12 +48,20 @@ xVerminSavedData = {
 			"Frostbite", -- [5]
 			"Intercept Stun", -- [6]
 		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
+		["Fire Elemental"] = {
+			"Magma Totem", -- [1]
+			"Flametongue Attack", -- [2]
+			"Serpent Sting", -- [3]
+		},
+		["High Inquisitor Whitemane"] = {
+			"Intimidation", -- [1]
+			"Intercept Stun", -- [2]
 		},
 		["Swirling Vortex"] = {
 			"Serpent Sting", -- [1]
+		},
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Arcanist Doan"] = {
 			"Charge Stun", -- [1]
@@ -68,10 +96,8 @@ xVerminSavedData = {
 			"Flanking Strike", -- [5]
 			"Big Bronze Bomb", -- [6]
 		},
-		["Fire Elemental"] = {
-			"Magma Totem", -- [1]
-			"Flametongue Attack", -- [2]
-			"Serpent Sting", -- [3]
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
 		},
 		["Evolving Ectoplasm"] = {
 			"Frost Shock", -- [1]
@@ -102,6 +128,10 @@ xVerminSavedData = {
 			"Serpent Sting", -- [11]
 			"Wrath", -- [12]
 			"Instant Poison", -- [13]
+			"Instant Poison III", -- [14]
+			"Corruption", -- [15]
+			"Chaos Bolt", -- [16]
+			"Shadow Bolt", -- [17]
 		},
 		["Bristleback Geomancer"] = {
 			"Incinerate", -- [1]
