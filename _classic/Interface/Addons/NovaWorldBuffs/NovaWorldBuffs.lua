@@ -12177,7 +12177,7 @@ function NWB:mapCurrentLayer(unit)
 		--If we join a group then we must cross a zone border before we can record layer data.
 		--If we have a zoneID recorded for this zone and it suddenly changes then assume we got pushed off the layer without a group join.
 		--Simulate a group join.
-		NWB:debug("Phase changed detected?");
+		NWB:debug("Phase changed detected?", NWB.phaseCheck, zoneID);
 		NWB:joinedGroupLayer();
 		return;
 	end

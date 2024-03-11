@@ -18,12 +18,14 @@ end
 
 --This may need to adjusted for DST we'll see whe it ticks over.
 local region = GetCurrentRegion();
+local isUS;
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707260400; --Date and time (GMT): Tuesday, February 6, 2024 11:00:00 PM
 elseif (region == 1) then
 	--US.
-	calcStart = 1707260400; --OCE and US are the same? (unlike dmf)
+	isUS = true;
+	calcStart = 1707256800; --OCE and US are the same? (unlike dmf)
 elseif (region == 2) then
 	--Korea.
 	calcStart = 1707256800; --Date and time (GMT): Tuesday, February 6, 2024 10:00:00 PM --KR starts 1h before OCE/US.
@@ -37,6 +39,7 @@ elseif (region == 5) then
 	--China.
 	calcStart = 1707260400; --CN same as OCE/US.
 end
+region = nil;
 calcStart = calcStart - 3600; --Stv runs 1 hour before ashenvale.
 
 local function getTimeLeft()
@@ -55,7 +58,7 @@ local function getTimeLeft()
 			NWB.stvRunning = true;
 		else
 			if (isBossShown) then
-				--NWB:updateStvBoss(nil, nil, nil, true);
+				NWB:updateStvBoss(nil, nil, nil, true);
 				isBossShown = nil;
 			end
 			NWB.stvRunning = false;
@@ -150,9 +153,13 @@ function NWB:checkStranglethornTimer()
 		if (NWB.db.global.guild10) then
 			local msg = string.format(L["stranglethornStartSoon"], "15 " .. L["minutes"]) .. ".";
 			if (IsInGuild()) then
-				NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.67);
+				if (isUS) then
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.69);
+				else
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.67);
+				end
 			else
-				NWB:print(msg);
+				NWB:print(msg, nil, "[NWB]");
 			end
 		end
 	end
@@ -162,9 +169,13 @@ function NWB:checkStranglethornTimer()
 		--Just tie it to guild10 settings.
 		if (NWB.db.global.guild10) then
 			if (IsInGuild()) then
-				NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.68);
+				if (isUS) then
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.69);
+				else
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.68);
+				end
 			else
-				NWB:print(msg);
+				NWB:print(msg, nil, "[NWB]");
 			end
 		end
 		if (NWB.db.global.sodMiddleScreenWarning) then

@@ -14,13 +14,16 @@ function SlashCmdList.NWBASHVCMD(msg, editBox)
 end
 
 --This may need to adjusted for DST we'll see whe it ticks over.
+local isUS;
 local region = GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
 	calcStart = 1707260400; --Date and time (GMT): Tuesday, February 6, 2024 11:00:00 PM
 elseif (region == 1) then
 	--US.
-	calcStart = 1707260400; --OCE and US are the same? (unlike dmf)
+	--Temp hardcoded adjust for dst change, will be fixed properly soon.
+	isUS = true;
+	calcStart = 1707256800; --OCE and US are the same? (unlike dmf)
 elseif (region == 2) then
 	--Korea.
 	calcStart = 1707256800; --Date and time (GMT): Tuesday, February 6, 2024 10:00:00 PM --KR starts 1h before OCE/US.
@@ -123,9 +126,13 @@ function NWB:checkAshenvaleTimer()
 		if (NWB.db.global.guild10) then
 			local msg = string.format(L["ashenvaleStartSoon"], "15 " .. L["minutes"]) .. ".";
 			if (IsInGuild()) then
-				NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.67);
+				if (isUS) then
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.69);
+				else
+					NWB:sendGuildMsg(msg, "guild10", nil, "[NWB]", 2.67);
+				end
 			else
-				NWB:print(msg);
+				NWB:print(msg, nil, "[NWB]");
 			end
 		end
 	end

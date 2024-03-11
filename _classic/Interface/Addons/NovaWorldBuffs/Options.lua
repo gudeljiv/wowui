@@ -2187,12 +2187,12 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.68;
+	linesVersion = 2.69;
 	local lines = {
 		" ",
-		"Aded a total Copper Blood Coin counter for STV event (shows in chat when you hand in).",
-		"Added a 30 min guild chat warning for STV event.",
-		"Added seperate options for what's displayed on the timers overlay (artwork/ashenvale/stv).",
+		"Fix for STV/Ashenvale timers issue with daylight savings time on US realms.",
+		" ",
+		"|cFF00FF00PLEASE NOTE:|r |cFF9CD6DEYour guild members need to update the addon asap or you will see duplicate msgs with the old wrong timer in your guild chat, sorry about that but I wasn't sure if daylight savings time would effect the timers or not when it was written (also waiting to see if the new DMF spawn time rotation is effect by DST changes this week and that will be updated next if needed).|r",
 	};
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
@@ -2226,7 +2226,10 @@ function NWB:checkNewVersion()
 	if (NWB.version and NWB.version ~= 9999) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isSOD) then
-				loadNewVersionFrame();
+				--Only show this update notes on US realms where they need a DST timer fix.
+				if (GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
+					loadNewVersionFrame();
+				end
 			end
 			--Wipe old data.
 			NWB.db.global.versions = {};
