@@ -1,0 +1,29 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="DruidBalanceDps.lua" />
+	<Script file="DruidFeralDps.lua" />
+	<Script file="HunterDps.lua" />
+	<Script file="MageDps.lua" />
+	<Script file="PaladinDps.lua" />
+	<Script file="PriestDps.lua" />
+	<Script file="RogueDps.lua" />
+	<Script file="ShamanElementalDps.lua" />
+	<Script file="ShamanEnhancementDps.lua" />
+	<Script file="WarlockDps.lua" />
+	<Script file="WarriorDps.lua" />
+	
+	<Script file="DruidHealer.lua" />
+	<Script file="MageHealer.lua" />
+	<Script file="PaladinHealer.lua" />
+	<Script file="PriestHealer.lua" />
+	<Script file="ShamanHealer.lua" />
+	
+	<Script file="DruidTank.lua" />
+	<Script file="PaladinTank.lua" />
+	<Script file="RogueTank.lua" />
+	<Script file="ShamanTank.lua" />
+	<Script file="WarlockTank.lua" />
+	<Script file="WarriorTank.lua" />
+
+
+</Ui>

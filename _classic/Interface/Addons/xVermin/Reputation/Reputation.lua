@@ -95,15 +95,19 @@ local function UpdateBarPosition()
 		if not value.hidden then
 			if value.isWatched then
 				anchor = _G[value.frameStatusBar .. '_wrap']
+				_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
 				if _G['PlayerXPFrameStatusBar'] and _G['PlayerXPFrameStatusBar']:GetAlpha() > 0 then
-					_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
 					if pet then
 						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
 					else
 						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30)
 					end
 				else
-					_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+					if pet then
+						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
+					else
+						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+					end
 				end
 			end
 		end
@@ -124,7 +128,11 @@ local function UpdateBarPosition()
 							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						end
 					else
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
+						if pet then
+							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
+						else
+							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
+						end
 					end
 				end
 				counter = counter + 1
