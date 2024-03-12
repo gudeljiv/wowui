@@ -144,7 +144,7 @@ data = {
             {"name": "between the eyes", "type": "GetSpellTexture", "id": 400009, "key": "7"},
             {"name": "blade dance", "type": "GetSpellTexture", "id": 400012, "key": "7"},
             {"name": "envenom", "type": "GetSpellTexture", "id": 399963, "key": "7"},
-            {"name": "riposte", "type": "GetSpellTexture", "id": 14251, "key": "4", "modifier": "lshift"},
+            {"name": "riposte", "type": "GetSpellTexture", "id": 14251, "key": "1", "modifier": "lalt"},
             {"name": "shuriken toss", "type": "GetSpellTexture", "id": 399986, "key": "3", "modifier": "lshift"},
         ],
         "secondary": [

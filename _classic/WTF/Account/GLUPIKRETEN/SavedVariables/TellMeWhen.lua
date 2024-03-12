@@ -3737,7 +3737,6 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["HideIfNoUnits"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "DEBUFFSTACKS",
@@ -3790,6 +3789,7 @@ TellMeWhenDB = {
 								}, -- [7]
 								["n"] = 7,
 							},
+							["HideIfNoUnits"] = true,
 							["Enabled"] = true,
 							["States"] = {
 								{
@@ -3874,10 +3874,10 @@ TellMeWhenDB = {
 									["Name"] = "xAOE(5) == 1",
 								}, -- [1]
 								{
-									["AndOr"] = "OR",
 									["Type"] = "STANCE",
-									["PrtsAfter"] = 1,
+									["AndOr"] = "OR",
 									["Name"] = "Battle Stance; Berserker Stance",
+									["PrtsAfter"] = 1,
 								}, -- [2]
 								{
 									["Level"] = 1,
@@ -4405,10 +4405,10 @@ TellMeWhenDB = {
 									["Name"] = "Spell Reflection",
 								}, -- [11]
 								{
-									["AndOr"] = "OR",
 									["Type"] = "LUA",
-									["PrtsAfter"] = 1,
+									["AndOr"] = "OR",
 									["Name"] = "xUnitCastingNonInteruptable(\"target\")",
+									["PrtsAfter"] = 1,
 								}, -- [12]
 								{
 									["Level"] = 1,
@@ -4643,8 +4643,8 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["Operator"] = "<=",
-									["AndOr"] = "OR",
 									["Level"] = 0.6,
+									["AndOr"] = "OR",
 									["Name"] = "Rend",
 									["Unit"] = "target",
 								}, -- [1]
@@ -7663,8 +7663,8 @@ TellMeWhenDB = {
 				{
 					["GUID"] = "TMW:group:1Zmhq7u_10aD",
 					["Columns"] = 1,
-					["Scale"] = 0.4,
 					["Locked"] = true,
+					["Scale"] = 0.4,
 					["Name"] = "ROTATION QUEUE",
 					["Icons"] = {
 						{
@@ -8322,10 +8322,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [2]
 								{
-									["AndOr"] = "OR",
 									["Type"] = "LUA",
-									["PrtsAfter"] = 1,
+									["AndOr"] = "OR",
 									["Name"] = "xTTD <= 7",
+									["PrtsAfter"] = 1,
 								}, -- [3]
 								{
 									["Name"] = "not xBehindTarget() and not IsSpellKnownOrOverridesKnown(407993)",
@@ -10406,9 +10406,9 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
-									["Level"] = 7.5,
-									["PrtsBefore"] = 1,
 									["AndOr"] = "OR",
+									["PrtsBefore"] = 1,
+									["Level"] = 7.5,
 									["Name"] = "Frost Fever",
 									["Unit"] = "target",
 								}, -- [6]
@@ -14845,12 +14845,12 @@ TellMeWhenDB = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Name"] = "Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Name"] = "Spells",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TQv_LtTwAae",
@@ -15143,10 +15143,10 @@ TellMeWhenDB = {
 							},
 						}, -- [20]
 					},
-					["Locked"] = true,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Scale"] = 1,
+					["Locked"] = true,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -15514,9 +15514,6 @@ TellMeWhenDB = {
 			["NumGroups"] = 3,
 			["TextureName"] = "xVerminClean",
 		},
-		["Dopecoil - Lone Wolf"] = {
-			["Version"] = 102000,
-		},
 		["PRIEST"] = {
 			["Groups"] = {
 				{
@@ -15566,9 +15563,9 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
+									["Unit"] = "mouseover",
 									["Level"] = 75,
 									["Type"] = "HEALTH",
-									["Unit"] = "mouseover",
 									["Operator"] = "<",
 								}, -- [1]
 								{
@@ -15645,9 +15642,9 @@ TellMeWhenDB = {
 									["Unit"] = "mouseover",
 								}, -- [1]
 								{
+									["Operator"] = "<",
 									["Level"] = 90,
 									["Type"] = "HEALTH",
-									["Operator"] = "<",
 									["Unit"] = "mouseover",
 								}, -- [2]
 								{
@@ -17101,7 +17098,7 @@ TellMeWhenDB = {
 						["point"] = "LEFT",
 						["relativePoint"] = "LEFT",
 					},
-					["Scale"] = 0.4,
+					["Locked"] = true,
 					["Name"] = "DEBUG",
 					["Icons"] = {
 						{
@@ -17116,7 +17113,7 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 					},
-					["Locked"] = true,
+					["Scale"] = 0.4,
 				}, -- [6]
 				{
 					["Icons"] = {
@@ -17138,6 +17135,9 @@ TellMeWhenDB = {
 			["Version"] = 102301,
 			["NumGroups"] = 6,
 			["TextureName"] = "xVerminClean",
+		},
+		["Dopecoil - Lone Wolf"] = {
+			["Version"] = 102000,
 		},
 		["ROGUE"] = {
 			["Groups"] = {
@@ -17275,15 +17275,17 @@ TellMeWhenDB = {
 								{
 									["Type"] = "COMBO",
 									["Operator"] = ">=",
-									["Level"] = 4,
+									["Level"] = 2,
 								}, -- [1]
 								{
 									["Type"] = "BUFFDUR",
+									["Operator"] = "<=",
 									["Name"] = "Slice and Dice",
+									["Level"] = 3,
 								}, -- [2]
 								{
 									["Type"] = "LUA",
-									["Name"] = "not _G.UnitCastingInteruptible",
+									["Name"] = "not _G.UnitCastingInteruptible and IsSpellKnownOrOverridesKnown(400014)",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -17653,6 +17655,13 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["Name"] = "Riposte",
 							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "REACTIVE",
+									["Name"] = "Riposte",
+								}, -- [1]
+								["n"] = 1,
+							},
 							["GUID"] = "TMW:icon:1bfjTFwseiek",
 							["States"] = {
 								{
@@ -18189,12 +18198,12 @@ TellMeWhenDB = {
 								"TMW:icon:1ZBi1G1LSN04", -- [1]
 								"TMW:icon:1ZBi1G1Ik=8q", -- [2]
 								"TMW:icon:1bdJCdXvpC0O", -- [3]
-								"TMW:icon:1bdJCdXiCTSJ", -- [4]
-								"TMW:icon:1bfjTFwXdneA", -- [5]
-								"TMW:icon:1bfjTFwcp4mi", -- [6]
-								"TMW:icon:1beLH1g5Npa3", -- [7]
-								"TMW:icon:1TeVAjjavXC6", -- [8]
-								"TMW:icon:1bfjTFwseiek", -- [9]
+								"TMW:icon:1bfjTFwcp4mi", -- [4]
+								"TMW:icon:1bdJCdXiCTSJ", -- [5]
+								"TMW:icon:1bfjTFwseiek", -- [6]
+								"TMW:icon:1bfjTFwXdneA", -- [7]
+								"TMW:icon:1beLH1g5Npa3", -- [8]
+								"TMW:icon:1TeVAjjavXC6", -- [9]
 								"TMW:icon:1bdLUubuioKL", -- [10]
 								"TMW:icon:1bw6ubvO0jqM", -- [11]
 								"TMW:icon:1bdMJVMKE3WE", -- [12]
@@ -18271,12 +18280,12 @@ TellMeWhenDB = {
 								"TMW:icon:1ZBi1G1LSN04", -- [1]
 								"TMW:icon:1ZBi1G1Ik=8q", -- [2]
 								"TMW:icon:1bdJCdXvpC0O", -- [3]
-								"TMW:icon:1bdJCdXiCTSJ", -- [4]
-								"TMW:icon:1bfjTFwXdneA", -- [5]
-								"TMW:icon:1bfjTFwcp4mi", -- [6]
-								"TMW:icon:1beLH1g5Npa3", -- [7]
-								"TMW:icon:1TeVAjjavXC6", -- [8]
-								"TMW:icon:1bfjTFwseiek", -- [9]
+								"TMW:icon:1bfjTFwcp4mi", -- [4]
+								"TMW:icon:1bdJCdXiCTSJ", -- [5]
+								"TMW:icon:1bfjTFwseiek", -- [6]
+								"TMW:icon:1bfjTFwXdneA", -- [7]
+								"TMW:icon:1beLH1g5Npa3", -- [8]
+								"TMW:icon:1TeVAjjavXC6", -- [9]
 								"TMW:icon:1bdLUubuioKL", -- [10]
 								"TMW:icon:1bw6ubvO0jqM", -- [11]
 								"TMW:icon:1bdMJVMKE3WE", -- [12]
@@ -21594,10 +21603,10 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [2]
 								{
-									["Name"] = "xAOE(5,false) > 1",
-									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
 									["Type"] = "LUA",
+									["Name"] = "xAOE(5,false) > 1",
+									["AndOr"] = "OR",
 								}, -- [3]
 								["n"] = 3,
 							},

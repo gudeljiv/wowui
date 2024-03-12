@@ -16,8 +16,15 @@ xVerminSavedData = {
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Stormstrike", -- [2]
+			"Wing Clip", -- [3]
+			"Sunder Armor", -- [4]
+			"Raptor Strike", -- [5]
+			"Earth Shock", -- [6]
+			"Serpent Sting", -- [7]
+			"Quick Strike", -- [8]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
@@ -36,15 +43,8 @@ xVerminSavedData = {
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Stormstrike", -- [2]
-			"Wing Clip", -- [3]
-			"Sunder Armor", -- [4]
-			"Raptor Strike", -- [5]
-			"Earth Shock", -- [6]
-			"Serpent Sting", -- [7]
-			"Quick Strike", -- [8]
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]

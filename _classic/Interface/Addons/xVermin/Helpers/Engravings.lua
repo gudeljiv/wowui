@@ -4,6 +4,13 @@ local default_macro = [[#showtooltip
 /startattack
 /use <rune>
 ]]
+local default_tease_macro = [[#showtooltip
+/stopattack
+/cast [@mouseover,exists,harm][] Tease
+]]
+local default_feint_macro = [[#showtooltip
+/cast Feint
+]]
 
 local function CreateOrUpdateMacro(macroName, text)
 	local macroID = GetMacroIndexByName(macroName)
@@ -22,6 +29,7 @@ local function UpdateEngravingMacro()
 
 	local mutilate = false
 	local saber = false
+	local flesh = false
 
 	C_Engraving.RefreshRunesList();
 	local categories = C_Engraving.GetRuneCategories(false, false);
@@ -36,6 +44,9 @@ local function UpdateEngravingMacro()
 				if rune.name == "Saber Slash" and C_Engraving.IsRuneEquipped(rune.skillLineAbilityID) then
 					saber = true
 				end
+				if rune.name == "Just a Flesh Wound" and C_Engraving.IsRuneEquipped(rune.skillLineAbilityID) then
+					flesh = true
+				end
 			end
 		end
 	end
@@ -47,10 +58,9 @@ local function UpdateEngravingMacro()
 			['<rune>'] = tostring("Sinister Strike")
 		}
 	)
-	CreateOrUpdateMacro('attack', rune_macro)
 
 	if mutilate then 
-		local rune_macro =
+		rune_macro =
 			default_macro:gsub(
 			'<%a+>',
 			{
@@ -59,8 +69,9 @@ local function UpdateEngravingMacro()
 		)
 		CreateOrUpdateMacro('attack', rune_macro)
 	end
+
 	if saber then 
-		local rune_macro =
+		rune_macro =
 			default_macro:gsub(
 			'<%a+>',
 			{
@@ -68,6 +79,12 @@ local function UpdateEngravingMacro()
 			}
 		)
 		CreateOrUpdateMacro('attack', rune_macro)
+	end
+
+	if flesh then 
+		CreateOrUpdateMacro('tease', default_tease_macro)
+	else 
+		CreateOrUpdateMacro('tease', default_feint_macro)
 	end
 end
 
