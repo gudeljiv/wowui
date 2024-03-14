@@ -1,8 +1,8 @@
 VER 3 000000000100001B " " "132147"
 #showtooltip ""
-/equipslot [noworn:shield]16 Thun'grim's Axe
-/equipslot [noworn:shield]17 War Paint Shield
-/equipslot [worn:shield]16 Axe of Orgrimmar
+/equipslot [noworn:shield]16 The Butcher
+/equipslot [noworn:shield]17 Shield of Thorsen
+/equipslot [worn:shield]16 Killmaim
 END
 VER 3 000000000100001C " " "134400"
 #showtooltip Thunder Clap
@@ -64,6 +64,12 @@ VER 3 0000000001000021 "rend" "134400"
 /startattack
 /cast Rend
 /cast Bloodrage
+END
+VER 3 0000000001000023 "rev" "134400"
+#showtooltip Revenge
+/startattack
+/cast [nostance:2] Defensive Stance;
+/cast Revenge
 END
 VER 3 0000000001000008 "silence" "134400"
 #showtooltip [stance:1/2]Shield Bash;[stance:3]Pummel

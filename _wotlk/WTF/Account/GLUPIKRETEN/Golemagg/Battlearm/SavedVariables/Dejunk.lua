@@ -1,8 +1,5 @@
 
 __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
-	["exclusions"] = {
-		["27860"] = true,
-	},
 	["inclusions"] = {
 		["19707"] = true,
 		["40088"] = true,
@@ -16,13 +13,16 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 		["19700"] = true,
 		["40029"] = true,
 		["19699"] = true,
-		["27855"] = true,
+		["19713"] = true,
 		["40012"] = true,
-		["19709"] = true,
+		["40058"] = true,
 		["19703"] = true,
 		["19698"] = true,
 		["19705"] = true,
-		["40058"] = true,
-		["19713"] = true,
+		["19709"] = true,
+		["27855"] = true,
+	},
+	["exclusions"] = {
+		["27860"] = true,
 	},
 }

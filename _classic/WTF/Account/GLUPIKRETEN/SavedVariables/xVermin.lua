@@ -13,12 +13,18 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Furious Stone Spirit"] = {
-			"Serpent Sting", -- [1]
+		["Searing Totem II"] = {
+			"Rend", -- [1]
+			"Sunder Armor", -- [2]
 		},
-		["Bristleback Geomancer"] = {
-			"Incinerate", -- [1]
-			"Firebolt", -- [2]
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
+		},
+		["Bound Elemental"] = {
+			"Rend", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
@@ -30,24 +36,9 @@ xVerminSavedData = {
 			"Earthbind", -- [1]
 			"Earth Shock", -- [2]
 		},
-		["Herod"] = {
-			"Searing Pain", -- [1]
-			"Intimidation", -- [2]
-			"Flametongue Attack", -- [3]
-			"Firebolt", -- [4]
-			"Attack", -- [5]
-			"Flame Shock", -- [6]
-			"Arcane Shot", -- [7]
-			"Drain Life", -- [8]
-			"Molten Blast", -- [9]
-			"Fire Nova", -- [10]
-			"Serpent Sting", -- [11]
-			"Wrath", -- [12]
-			"Instant Poison", -- [13]
-			"Instant Poison III", -- [14]
-			"Corruption", -- [15]
-			"Chaos Bolt", -- [16]
-			"Shadow Bolt", -- [17]
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -75,35 +66,15 @@ xVerminSavedData = {
 			"Flametongue Attack", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Evolving Ectoplasm"] = {
-			"Frost Shock", -- [1]
-			"Frostbolt", -- [2]
-			"Chilled", -- [3]
-			"Living Bomb", -- [4]
-			"Molten Blast", -- [5]
-			"Incinerate", -- [6]
-			"Firebolt", -- [7]
-		},
-		["Amnennar the Coldbringer"] = {
+		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]
+			"Intercept Stun", -- [2]
 		},
 		["Swirling Vortex"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
-		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
-		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Arcanist Doan"] = {
 			"Charge Stun", -- [1]
@@ -123,12 +94,32 @@ xVerminSavedData = {
 			"Wing Clip", -- [15]
 			"Starsurge", -- [16]
 		},
-		["Glutton"] = {
-			"Starfire Stun", -- [1]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
-		["High Inquisitor Whitemane"] = {
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
+		},
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
+		},
+		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]
-			"Intercept Stun", -- [2]
+		},
+		["Evolving Ectoplasm"] = {
+			"Frost Shock", -- [1]
+			"Frostbolt", -- [2]
+			"Chilled", -- [3]
+			"Living Bomb", -- [4]
+			"Molten Blast", -- [5]
+			"Incinerate", -- [6]
+			"Firebolt", -- [7]
 		},
 		["Mutanus the Devourer"] = {
 			"Shadow Word: Pain", -- [1]
@@ -136,15 +127,31 @@ xVerminSavedData = {
 		["Bloodmage Thalnos"] = {
 			"Intimidation", -- [1]
 		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
+		["Herod"] = {
+			"Searing Pain", -- [1]
+			"Intimidation", -- [2]
+			"Flametongue Attack", -- [3]
+			"Firebolt", -- [4]
+			"Attack", -- [5]
+			"Flame Shock", -- [6]
+			"Arcane Shot", -- [7]
+			"Drain Life", -- [8]
+			"Molten Blast", -- [9]
+			"Fire Nova", -- [10]
+			"Serpent Sting", -- [11]
+			"Wrath", -- [12]
+			"Instant Poison", -- [13]
+			"Instant Poison III", -- [14]
+			"Corruption", -- [15]
+			"Chaos Bolt", -- [16]
+			"Shadow Bolt", -- [17]
 		},
-		["Burning Destroyer"] = {
+		["Bristleback Geomancer"] = {
+			"Incinerate", -- [1]
+			"Firebolt", -- [2]
+		},
+		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
-		},
-		["Boiling Elemental"] = {
-			"Instant Poison", -- [1]
 		},
 	},
 }

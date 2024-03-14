@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 1.15.21 (6th March 2024)
+-- 	Leatrix Plus 1.15.22 (13th March 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.15.21"
+	LeaPlusLC["AddonVer"] = "1.15.22"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -4982,6 +4982,16 @@
 							-- Show button frame
 							local x, y, row, col = 0, 0, 0, 0
 							local buttons = LibDBIconStub:GetButtonList()
+							-- Sort the button table
+							table.sort(buttons, function(a, b)
+								if string.find(a, "LeaPlusCustomIcon_") then
+									a = string.gsub(a, "LeaPlusCustomIcon_", "")
+								end
+								if string.find(b, "LeaPlusCustomIcon_") then
+									b = string.gsub(b, "LeaPlusCustomIcon_", "")
+								end
+								return a:lower() < b:lower()
+							end)
 							-- Calculate buttons per row
 							local buttonsPerRow
 							local totalButtons = #buttons
@@ -5012,9 +5022,9 @@
 												button:SetPoint("TOPLEFT", bFrame, "TOPLEFT", x, y)
 												col = col + 1; if col >= buttonsPerRow then col = 0; row = row + 1; x = 0; y = y - 30 else x = x + 30 end
 											else
-												-- Minimap is on right side of screen
-												button:SetPoint("TOPRIGHT", bFrame, "TOPRIGHT", x, y)
-												col = col + 1; if col >= buttonsPerRow then col = 0; row = row + 1; x = 0; y = y - 30 else x = x - 30 end
+												-- Minimap is on right side of screen (changed from TOPRIGHT to TOPLEFT and x - 30 to x + 30 to make sorting work)
+												button:SetPoint("TOPLEFT", bFrame, "TOPLEFT", x, y)
+												col = col + 1; if col >= buttonsPerRow then col = 0; row = row + 1; x = 0; y = y - 30 else x = x + 30 end
 											end
 											if totalButtons <= buttonsPerRow then
 												bFrame:SetWidth(totalButtons * 30)

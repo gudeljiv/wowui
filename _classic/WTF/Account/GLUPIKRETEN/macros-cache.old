@@ -13,11 +13,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:11584
+/use item:3771
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
