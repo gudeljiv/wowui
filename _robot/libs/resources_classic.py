@@ -126,6 +126,8 @@ data = {
             {"name": "chimera shot", "type": "GetSpellTexture", "id": 409433, "key": "4", "modifier": "lshift"},
             {"name": "flanking strike", "type": "GetSpellTexture", "id": 415320, "key": "5", "modifier": "lshift"},
             {"name": "kill command", "type": "GetSpellTexture", "id": 409379, "key": "5", "modifier": "lshift"},
+            {"name": "intimidation", "type": "GetSpellTexture", "id": 19577, "key": "t", "modifier": "lshift"},
+            {"name": "bestial wrath", "type": "GetSpellTexture", "id": 19574, "key": "5"},
         ],
         "secondary": [
             # {"name": "aspect of the hawk", "type": "GetSpellTexture", "id": 13165, "key": "f1"},
