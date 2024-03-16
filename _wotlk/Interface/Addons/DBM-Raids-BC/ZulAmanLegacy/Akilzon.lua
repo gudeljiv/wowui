@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Akilzon", "DBM-Raids-BC", 9)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 mod:SetCreatureID(23574)
 mod:SetEncounterID(1189, 2482)
 mod:SetZone()

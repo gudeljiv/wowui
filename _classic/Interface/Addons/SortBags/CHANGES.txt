@@ -1,16 +1,10 @@
-lightweight tag b10047ee6d01fe459c888a0ab362165b72264124 v1.3.1
+lightweight tag a1a7dd0e98c611baa8c7e4732bf4a51e2f7e6230 v1.3.2
 Author:	Simon Hirsig <simon.hirsig@gmail.com>
-Date:	Sat Dec 9 08:19:13 2023 +0100
+Date:	Sat Mar 16 07:39:17 2024 +0100
 
-commit b10047ee6d01fe459c888a0ab362165b72264124
+commit a1a7dd0e98c611baa8c7e4732bf4a51e2f7e6230
 Author: Simon Hirsig <simon.hirsig@gmail.com>
-Date:   Sat Dec 9 08:19:13 2023 +0100
-
-    client version change
-
-commit 3b404601840d40a99bc586333c049ad03aa13856
-Author: Simon Hirsig <simon.hirsig@gmail.com>
-Date:   Wed Oct 18 19:29:28 2023 +0200
+Date:   Sat Mar 16 07:39:17 2024 +0100
 
     client version bump
 

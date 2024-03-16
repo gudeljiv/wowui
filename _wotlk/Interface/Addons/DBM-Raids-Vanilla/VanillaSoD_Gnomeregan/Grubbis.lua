@@ -1,11 +1,11 @@
 local mod	= DBM:NewMod("GrubbisSoD", "DBM-Raids-Vanilla", 8)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 mod:SetCreatureID(217280)--217956 Chomper, 217216 Grubbis Controller
 mod:SetEncounterID(2925)
 mod:SetHotfixNoticeRev(20240212000000)
-mod:SetMinSyncRevision(20240212000000)
+mod:SetMinSyncRevision(20240313000000)
 
 mod:RegisterCombat("combat")
 mod:SetWipeTime(30)--Combat drops between adds waves

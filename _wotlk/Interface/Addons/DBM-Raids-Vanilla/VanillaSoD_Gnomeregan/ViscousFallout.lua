@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ViscousFalloutSoD", "DBM-Raids-Vanilla", 8)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 mod:SetCreatureID(220007)--217308 Irradiated Goo adds
 mod:SetEncounterID(2928)
 mod:SetUsedIcons(8, 7, 6)

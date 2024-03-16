@@ -9,7 +9,7 @@ end
 local mod	= DBM:NewMod("AQ40Trash", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 --mod:SetModelID(47785)
 mod:SetMinSyncRevision(20200710000000)--2020, 7, 10
 
@@ -63,6 +63,9 @@ do-- Anubisath Plague/Explode - keep in sync - AQ40/AQ40Trash.lua AQ20/AQ20Trash
 				if self.Options.RangeFrame then
 					DBM.RangeCheck:Show(10)
 				end
+			elseif UnitGUID("pet") and UnitGUID("pet") == args.destGUID then
+				specWarnPlague:Show()
+				specWarnPlague:Play("runout")
 			else
 				warnPlague:Show(args.destName)
 			end

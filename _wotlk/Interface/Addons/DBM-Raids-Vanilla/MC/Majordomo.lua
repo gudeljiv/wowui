@@ -12,7 +12,7 @@ end
 local mod	= DBM:NewMod("Majordomo", "DBM-Raids-Vanilla", catID)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 mod:SetCreatureID(12018, 11663, 11664)
 mod:SetEncounterID(671)
 mod:SetModelID(12029)

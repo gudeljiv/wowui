@@ -176,10 +176,11 @@ L:SetOptionLocalization{
 }
 L:SetMiscLocalization{
 	Wave12		= "Hier kommen sie. Bleibt am Leben, Welpen.",
-	Wave3		= "Die Zeit der Vergeltung ist gekommen! Lasst uns die Herzen unserer Feinde mit Dunkelheit erfüllen!",
+	Wave12Alt	= "Erinnerst du dich daran, Rajaxx, wann ich dir das letzte Mal sagte, ich würde dich töten?",
+	Wave3		= "Die Zeit der Vergeltung ist gekommen! Lasst uns die Herzen unserer Feinde mit Dunkelheit füllen!",
 	Wave4		= "Wir werden nicht länger hinter verbarrikadierten Toren und Mauern aus Stein ausharren! Die Rache wird unser sein! Selbst die Drachen werden im Angesicht unseres Zornes erzittern!",
 	Wave5		= "Wir kennen keine Furcht! Und wir werden unseren Feinden den Tod bringen!",
-	Wave6		= "Hirschhaupt wird winseln und um sein Leben betteln, genau wie sein räudiger Sohn! Eintausend Jahre der Ungerechtigkeit werden heute enden!",
+	Wave6		= "Staghelm wird winseln und um sein Leben betteln, genau wie sein räudiger Sohn! Eintausend Jahre der Ungerechtigkeit werden heute enden!",
 	Wave7		= "Fandral! Deine Zeit ist gekommen! Geh und verstecke dich im Smaragdgrünen Traum, und bete, dass wir dich nie finden werden!",
 	Wave8		= "Unverschämter Narr! Ich werde Euch höchstpersönlich töten!"
 }
@@ -1171,12 +1172,7 @@ L:SetGeneralLocalization({
 
 L:SetMiscLocalization({
 	FirstPull = "In ganz Gnomeregan speien Lüftungsschächten noch immer aktiv radioaktives Material aus.",
-	-- No clue about the second message, the RP looks like this in deDE, the last message seems to be missing?
-	-- enUS has the other message for both first pulls and after wipes, dunno what is going on.
-	-- "<63.24 19:05:04> [CHAT_MSG_MONSTER_SAY] In ganz Gnomeregan speien Lüftungsschächten noch immer aktiv radioaktives Material aus.#Sprengmeisterin Emi Shortfuse###Tandanu##0#0##0#554#nil#0#false#false#false#false",
-	-- "<68.94 19:05:10> [CHAT_MSG_MONSTER_SAY] Wenn mein Volk eine Chance haben soll, zurückzukehren...#Sprengmeisterin Emi Shortfuse###Tandanu##0#0##0#566#nil#0#false#false#false#false",
-	-- "<75.40 19:05:17> [CHAT_MSG_MONSTER_SAY] in diese Stadt...#Sprengmeisterin Emi Shortfuse###Tandanu##0#0##0#583#nil#0#false#false#false#false",
-	--Pull = "Oh no! Tremors like these can only mean one thing..."
+	Pull = "Oh nein! Solche Erschütterungen können nur eins bedeuten...",
 })
 
 ----------------------------

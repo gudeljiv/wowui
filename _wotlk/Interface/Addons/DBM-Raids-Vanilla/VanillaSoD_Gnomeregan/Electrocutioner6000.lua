@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ElectrocutionerSoD", "DBM-Raids-Vanilla", 8)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20240305170219")
+mod:SetRevision("20240314215647")
 mod:SetCreatureID(220072)
 mod:SetEncounterID(2927)
 mod:SetUsedIcons(8)

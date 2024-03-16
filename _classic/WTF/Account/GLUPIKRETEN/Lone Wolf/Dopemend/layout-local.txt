@@ -27,6 +27,13 @@ X: 3
 Y: -87
 W: 784
 H: 260
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 12
+Y: -133
+W: 920
+H: 724
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -258,10 +265,3 @@ X: -488
 Y: -327
 W: 330
 H: 113
-Frame: SettingsPanel
-FrameLevel: 1
-Anchor: TOP
-X: 12
-Y: -133
-W: 920
-H: 724
