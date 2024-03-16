@@ -1,103 +1,9 @@
 
 xVerminSavedData = {
 	["SpellImmuneData"] = {
-		["Burning Ravager"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Whirlwind Ripper"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Splinterbone Centurion"] = {
-			"Intimidating Shout", -- [1]
-		},
-		["Rock Elemental"] = {
-			"Serpent Sting", -- [1]
-		},
 		["Searing Totem II"] = {
 			"Rend", -- [1]
 			"Sunder Armor", -- [2]
-		},
-		["Furious Stone Spirit"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Bristleback Geomancer"] = {
-			"Incinerate", -- [1]
-			"Firebolt", -- [2]
-		},
-		["Bound Elemental"] = {
-			"Rend", -- [1]
-		},
-		["Dark Rider"] = {
-			"Intimidation", -- [1]
-			"Charge Stun", -- [2]
-			"Concussive Shot", -- [3]
-			"Starfire Stun", -- [4]
-			"Frostbite", -- [5]
-			"Intercept Stun", -- [6]
-		},
-		["Nelyz"] = {
-			"Concussive Shot", -- [1]
-		},
-		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Skum"] = {
-			"Earthbind", -- [1]
-			"Earth Shock", -- [2]
-		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Lesser Rock Elemental"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Stormstrike", -- [2]
-			"Wing Clip", -- [3]
-			"Sunder Armor", -- [4]
-			"Raptor Strike", -- [5]
-			"Earth Shock", -- [6]
-			"Serpent Sting", -- [7]
-			"Quick Strike", -- [8]
-		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
-		},
-		["Fire Elemental"] = {
-			"Magma Totem", -- [1]
-			"Flametongue Attack", -- [2]
-			"Serpent Sting", -- [3]
-		},
-		["Evolving Ectoplasm"] = {
-			"Frost Shock", -- [1]
-			"Frostbolt", -- [2]
-			"Chilled", -- [3]
-			"Living Bomb", -- [4]
-			"Molten Blast", -- [5]
-			"Incinerate", -- [6]
-			"Firebolt", -- [7]
-		},
-		["Amnennar the Coldbringer"] = {
-			"Intimidation", -- [1]
-		},
-		["Swirling Vortex"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
-		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
-		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
 		},
 		["Arcanist Doan"] = {
 			"Charge Stun", -- [1]
@@ -116,23 +22,100 @@ xVerminSavedData = {
 			"Starfire Stun", -- [14]
 			"Wing Clip", -- [15]
 			"Starsurge", -- [16]
+			"Magma Totem", -- [17]
+			"Lightning Shield", -- [18]
+			"Mutilate", -- [19]
+			"Searing Pain", -- [20]
+			"Mind Flay", -- [21]
+		},
+		["Skum"] = {
+			"Earthbind", -- [1]
+			"Earth Shock", -- [2]
+		},
+		["Thepalalol"] = {
+			"Cheap Shot", -- [1]
+			"Mutilate", -- [2]
+		},
+		["Swirling Vortex"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Evolving Ectoplasm"] = {
+			"Frost Shock", -- [1]
+			"Frostbolt", -- [2]
+			"Chilled", -- [3]
+			"Living Bomb", -- [4]
+			"Molten Blast", -- [5]
+			"Incinerate", -- [6]
+			"Firebolt", -- [7]
+		},
+		["Mutanus the Devourer"] = {
+			"Shadow Word: Pain", -- [1]
+		},
+		["Bristleback Geomancer"] = {
+			"Incinerate", -- [1]
+			"Firebolt", -- [2]
+		},
+		["Whirlwind Ripper"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Splinterbone Centurion"] = {
+			"Intimidating Shout", -- [1]
+		},
+		["Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Bound Elemental"] = {
+			"Rend", -- [1]
+		},
+		["Nelyz"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Thundering Boulderkin"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
+		},
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
+		},
+		["Burning Ravager"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
+		},
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
+		},
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Stormstrike", -- [2]
+			"Wing Clip", -- [3]
+			"Sunder Armor", -- [4]
+			"Raptor Strike", -- [5]
+			"Earth Shock", -- [6]
+			"Serpent Sting", -- [7]
+			"Quick Strike", -- [8]
 		},
 		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]
 			"Intercept Stun", -- [2]
 		},
-		["Mutanus the Devourer"] = {
-			"Shadow Word: Pain", -- [1]
-		},
-		["Bloodmage Thalnos"] = {
-			"Intimidation", -- [1]
-		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
+		["Fire Elemental"] = {
+			"Magma Totem", -- [1]
+			"Flametongue Attack", -- [2]
+			"Serpent Sting", -- [3]
 		},
 		["Herod"] = {
 			"Searing Pain", -- [1]
@@ -153,8 +136,37 @@ xVerminSavedData = {
 			"Chaos Bolt", -- [16]
 			"Shadow Bolt", -- [17]
 		},
-		["Boiling Elemental"] = {
-			"Instant Poison", -- [1]
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
+		},
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
+		},
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
+		},
+		["Bloodmage Thalnos"] = {
+			"Intimidation", -- [1]
+		},
+		["Dark Rider"] = {
+			"Intimidation", -- [1]
+			"Charge Stun", -- [2]
+			"Concussive Shot", -- [3]
+			"Starfire Stun", -- [4]
+			"Frostbite", -- [5]
+			"Intercept Stun", -- [6]
+		},
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
+		},
+		["Furious Stone Spirit"] = {
+			"Serpent Sting", -- [1]
 		},
 	},
 }

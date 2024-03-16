@@ -127,6 +127,7 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [79535] = 2, -- Mage Icy Veins/Spell Power
     [79536] = 2, -- Mage Icy Veins/Spell Power
     [79677] = 2, -- A Quick Grocery Run
+    [79731] = 2, -- Priest Dispersion
     [79939] = 2, -- Paladin Sheath of Light Part 1
     [79940] = 2, -- Paladin Sheath of Light Part 2
     [79945] = 2, -- Paladin Sheath of Light Part 3
@@ -408,6 +409,16 @@ local runeQuestsInSoD = {-- List quests here to have them flagged as Rune quests
     [90252] = 2, -- Hunter Invigoration
     [90253] = 2, -- Hunter Invigoration
     [90254] = 2, -- Hunter Invigoration
+    [90255] = 2, -- Warlock Invocation
+    [90256] = 2, -- Warlock Shadowflame
+    [90257] = 2, -- Warlock Dance of the Wicked
+    [90258] = 2, -- Priest Pain Suppression
+    [90259] = 2, -- Priest Pain Suppression
+    [90260] = 2, -- Priest Pain Suppression
+    [90261] = 2, -- Priest Pain Suppression
+    [90262] = 2, -- Priest Pain Suppression
+    [90263] = 2, -- Rogue Shuriken Toss
+    [90264] = 2, -- Rogue Master of Subtlety
 }
 
 --- "automatic" phase detection for the first few phases;

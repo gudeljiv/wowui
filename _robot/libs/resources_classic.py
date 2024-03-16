@@ -148,6 +148,7 @@ data = {
             {"name": "envenom", "type": "GetSpellTexture", "id": 399963, "key": "7"},
             {"name": "riposte", "type": "GetSpellTexture", "id": 14251, "key": "1", "modifier": "lalt"},
             {"name": "shuriken toss", "type": "GetSpellTexture", "id": 399986, "key": "3", "modifier": "lshift"},
+            {"name": "blade flurry", "type": "GetSpellTexture", "id": 13877, "key": "2", "modifier": "lalt"},
         ],
         "secondary": [
             {"name": "pick pocket", "type": "GetSpellTexture", "id": 921, "key": "5", "modifier": "lshift"},
