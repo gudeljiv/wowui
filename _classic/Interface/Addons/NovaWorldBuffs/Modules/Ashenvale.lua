@@ -13,17 +13,16 @@ function SlashCmdList.NWBASHVCMD(msg, editBox)
 	WorldMapFrame:SetMapID(1440);
 end
 
---This may need to adjusted for DST we'll see whe it ticks over.
+--These times are adjusted if DST is active in the getTimeLeft() func.
 local isUS;
 local region = GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
-	calcStart = 1707260400; --Date and time (GMT): Tuesday, February 6, 2024 11:00:00 PM
+	calcStart = 1707267600; --Date and time (GMT): Wednesday, February 7, 2024 1:00:00 AM
 elseif (region == 1) then
 	--US.
-	--Temp hardcoded adjust for dst change, will be fixed properly soon.
 	isUS = true;
-	calcStart = 1707256800; --OCE and US are the same? (unlike dmf)
+	calcStart = 1707264000; --Date and time (GMT):Wednesday, February 7, 2024 12:00:00 AM; --OCE and US different.
 elseif (region == 2) then
 	--Korea.
 	calcStart = 1707256800; --Date and time (GMT): Tuesday, February 6, 2024 10:00:00 PM --KR starts 1h before OCE/US.
@@ -39,12 +38,19 @@ elseif (region == 5) then
 end
 region = nil;
 
+_G["calcStart"] = calcStart;
+
 local function getTimeLeft()
 	local timeLeft, type;
 	if (calcStart) then
-		local utc = time(date("*t"));
-		local secondsSinceFirstReset = utc - calcStart;
-		local timestamp = calcStart + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
+		local start = calcStart;
+		local isDST = NWB:isDST();
+		if (isDST) then
+			start = start + 3600;
+		end
+		local utc = GetServerTime();
+		local secondsSinceFirstReset = utc - start;
+		local timestamp = start + ((math.floor(secondsSinceFirstReset / 10800) + 1) * 10800);
 		local timeLeft = timestamp - utc;
 		--Commented out, no static end time for ashenvale so don't show "is running" timer.
 		--if (timeLeft > 9000) then
@@ -155,10 +161,24 @@ if (NWB.isSOD) then
 	};
 end
 
+local isCityMap;
 --Update timers for worldmap when the map is open.
 function NWB:updateAshenvaleMarkers(type)
-	local text = NWB:getAshenvaleTimeString(true);
-	_G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. text);
+	if (isCityMap) then
+		local text = NWB:getAshenvaleTimeString(true);
+		text = L["Ashenvale"] .. " " .. string.lower(text);
+		_G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. text);
+		local text2, _, _, _, type2 = NWB:getStranglethornTimeString(true);
+		if (type2 ~= "running") then
+			text2 = L["Stranglethorn"] .. " " .. string.lower(text2);
+		end
+		_G["AllianceNWBAshenvaleMap"].timerFrame2.fs:SetText("|cFFFFFF00" .. text2);
+	else
+		local text = NWB:getAshenvaleTimeString(true);
+		_G["AllianceNWBAshenvaleMap"].timerFrame.fs:SetText("|cFFFFFF00" .. text);
+		local text2 = NWB:getStranglethornTimeString(true);
+		_G["AllianceNWBAshenvaleMap"].timerFrame2.fs:SetText("|cFFFFFF00" .. text2);
+	end
 end
 
 local function createAshenvaleMarkers()
@@ -207,7 +227,9 @@ function NWB:createAshenvaleMarker(type, data)
 		obj.tooltip:SetHeight(obj.tooltip.fs:GetStringHeight() + 12);
 		obj.tooltip:Hide();
 		obj:SetScript("OnEnter", function(self)
-			obj.tooltip:Show();
+			if (WorldMapFrame and (WorldMapFrame:GetMapID() ~= 1454 and WorldMapFrame:GetMapID() ~= 1453)) then
+				obj.tooltip:Show();
+			end
 		end)
 		obj:SetScript("OnLeave", function(self)
 			obj.tooltip:Hide();
@@ -225,6 +247,26 @@ function NWB:createAshenvaleMarker(type, data)
 			obj.timerFrame.fs:SetFont("Fonts\\FRIZQT__.ttf", 13);
 			obj.timerFrame:SetWidth(54);
 			obj.timerFrame:SetHeight(24);
+			obj.resetType = L["Ashenvale Towers"];
+			obj.timerFrame:SetScript("OnEnter", function(self)
+				if (WorldMapFrame and (WorldMapFrame:GetMapID() ~= 1454 and WorldMapFrame:GetMapID() ~= 1453)) then
+					obj.tooltip:Show();
+				end
+			end)
+			obj.timerFrame:SetScript("OnLeave", function(self)
+				obj.tooltip:Hide();
+			end)
+			
+			obj.timerFrame2 = CreateFrame("Frame", type .. "AshenvaleTimerFrame2", obj, "TooltipBorderedFrameTemplate");
+			obj.timerFrame2:SetPoint("CENTER", obj, "CENTER",  26, -43);
+			obj.timerFrame2:SetFrameStrata("FULLSCREEN");
+			obj.timerFrame2:SetFrameLevel(9);
+			obj.timerFrame2.fs = obj.timerFrame2:CreateFontString(type .. "NWBAshenvaletimerFrame22FS", "ARTWORK");
+			obj.timerFrame2.fs:SetPoint("CENTER", 0, 0);
+			obj.timerFrame2.fs:SetFont("Fonts\\FRIZQT__.ttf", 13);
+			obj.timerFrame2:SetWidth(54);
+			obj.timerFrame2:SetHeight(24);
+			
 			obj.lastUpdate = 0;
 			obj.resetType = L["Ashenvale Towers"];
 			obj:SetScript("OnUpdate", function(self)
@@ -234,14 +276,11 @@ function NWB:createAshenvaleMarker(type, data)
 					NWB:updateAshenvaleMarkers(type);
 					obj.timerFrame:SetWidth(obj.timerFrame.fs:GetStringWidth() + 18);
 					obj.timerFrame:SetHeight(obj.timerFrame.fs:GetStringHeight() + 12);
+					obj.timerFrame2:SetWidth(obj.timerFrame2.fs:GetStringWidth() + 18);
+					obj.timerFrame2:SetHeight(obj.timerFrame2.fs:GetStringHeight() + 12);
 				end
 			end)
-				obj.timerFrame:SetScript("OnEnter", function(self)
-				obj.tooltip:Show();
-			end)
-			obj.timerFrame:SetScript("OnLeave", function(self)
-				obj.tooltip:Hide();
-			end)
+			
 			--Make it act like pin is the parent and not WorldMapFrame.
 			obj:SetScript("OnHide", function(self)
 				obj.timerFrame:Hide();
@@ -265,22 +304,32 @@ function NWB:refreshAshenvaleMarkers(updateOnly)
 			["Alliance"] = {x = 15, y = 80, mapID = 1454, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 20, y = 80, mapID = 1454, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		--If the marker is showing in capital city then it's a combined world events marker not just ashenvale anymore.
+		isCityMap = true;
 		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
 		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("BOTTOM", 28, -45);
+		_G["AllianceNWBAshenvaleMap"].timerFrame2:Show();
+		_G["AllianceNWBAshenvaleMap"].fsTitle:SetText("|cFFFFFF00" .. L["World Events"]);
 	elseif (NWB.faction == "Alliance" and WorldMapFrame and WorldMapFrame:GetMapID() == 1453) then
 		mapMarkerTypes = {
 			["Alliance"] = {x = 14, y = 80, mapID = 1453, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 19, y = 80, mapID = 1453, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		isCityMap = true;
 		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
 		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("BOTTOM", 28, -45);
+		_G["AllianceNWBAshenvaleMap"].timerFrame2:Show();
+		_G["AllianceNWBAshenvaleMap"].fsTitle:SetText("|cFFFFFF00" .. L["World Events"]);
 	else
 		mapMarkerTypes = {
 			["Alliance"] = {x = 88, y = 90, mapID = 1440, icon = "Interface\\worldstateframe\\alliancetower.blp"},
 			["Horde"] = {x = 93, y = 90, mapID = 1440, icon = "Interface\\worldstateframe\\hordetower.blp"},
 		};
+		isCityMap = nil;
 		_G["AllianceNWBAshenvaleMap"].fsBottom:ClearAllPoints();
 		_G["AllianceNWBAshenvaleMap"].fsBottom:SetPoint("TOPRIGHT", _G["AllianceNWBAshenvaleMap"], "TOPRIGHT", 70, -50);
+		_G["AllianceNWBAshenvaleMap"].timerFrame2:Hide();
+		_G["AllianceNWBAshenvaleMap"].fsTitle:SetText("|cFFFFFF00" .. L["Ashenvale"]);
 	end
 	if (WorldMapFrame and hookWorldMap) then
 		hooksecurefunc(WorldMapFrame, "OnMapChanged", function()

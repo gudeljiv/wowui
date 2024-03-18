@@ -31,6 +31,7 @@ xVerminSavedData = {
 		["Skum"] = {
 			"Earthbind", -- [1]
 			"Earth Shock", -- [2]
+			"Serpent Sting", -- [3]
 		},
 		["Thepalalol"] = {
 			"Cheap Shot", -- [1]
@@ -47,6 +48,12 @@ xVerminSavedData = {
 			"Molten Blast", -- [5]
 			"Incinerate", -- [6]
 			"Firebolt", -- [7]
+			"Attack", -- [8]
+			"Flametongue Attack", -- [9]
+			"Lava Lash", -- [10]
+			"Earthbind", -- [11]
+			"Lightning Shield", -- [12]
+			"Earth Shock", -- [13]
 		},
 		["Mutanus the Devourer"] = {
 			"Shadow Word: Pain", -- [1]

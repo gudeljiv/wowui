@@ -155,6 +155,38 @@ end
 NWB:setRegionFont();
 NWB.LSM:Register("font", "NWB Default", NWB.regionFont);
 
+--Only works for SoD realms since all set to same timezone.
+--Could easily be adjusted for all realms later with a list of server timezone offsets.
+--But for now we only need to adjust SoD timers with this, this is only called in SoD related funcs.
+function NWB:isDST()
+	local region = GetCurrentRegion();
+	local standardOffset;
+	if (region == 1 and string.match(NWB.realm, "(AU)")) then
+		--OCE UTC +10 (AEST).
+		standardOffset = 10;
+	elseif (region == 1) then
+		--US UTC -7 (MST).
+		standardOffset = -7;
+	elseif (region == 2) then
+		--Korea no DST.
+	elseif (region == 3) then
+		--EU UTC +1 (CET).
+		standardOffset = 1;
+	elseif (region == 4) then
+		--Taiwan no DST.
+	elseif (region == 5) then
+		--China no DST.
+	end
+	if (standardOffset) then
+		local diff = (C_DateAndTime.GetServerTimeLocal() - GetServerTime()) / 3600;
+		local offset = math.floor(diff + 0.5);
+		--print("Standard offset:", standardOffset, "Current offset:", offset);
+		if (offset ~= standardOffset) then
+			return offset;
+		end
+	end
+end
+
 --Print current buff timers to chat window.
 local npcRespawnTime = 360;
 function NWB:printBuffTimers(isLogon)
@@ -8241,7 +8273,7 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 		--if (NWB.realm == "Shadowstrike (AU)" or NWB.realm == "Penance (AU)") then
 		if (region == 1 and string.match(NWB.realm, "(AU)")) then
 			--OCE Sunday 5pm UTC reset time (4am monday server time).
-			calcStart = 1700413200; --Sunday, November 19, 2023 5:00:00 PM UTC.
+			calcStart = 1700416800; --Sunday, November 19, 2023 6:00:00 PM.
 		elseif (region == 1) then
 			--US Sunday 11pm UTC reset time (4am monday server time).
 			--Unlike normal classic, in SoD it seems all US realms use the same timezone MST?
@@ -8262,27 +8294,30 @@ function NWB:getDmfStartEnd(month, nextYear, recalc)
 			calcStart = 1702843200; --Sunday, December 17, 2023 8:00:00 PM UTC.
 		end
 		if (calcStart) then
-			--local dataLocalTime = date("*t", GetServerTime());
-			--Spawns change with DST by 1 hour UTC to stay the same server time.
-			--if (dataLocalTime.isdst) then
-			--	calcStart = calcStart - 604800;
-			--end
+			--Spawns change with DST by 1 hour UTC.
+			local start = calcStart;
+			local isDST = NWB:isDST();
+			if (isDST) then
+				--World event timers go forward but dmf goes backwards..?
+				start = start - 3600;
+			end
 			--2 week cycle.
-			local utc = time(date("*t"));
-			local secondsSinceFirstReset = utc - calcStart;
+			--local utc = time(date("*t"));
+			local utc = GetServerTime();
+			local secondsSinceFirstReset = utc - start;
 			--Divide seconds elapsed since our static timestamp in the past by the cycle time (3.5h).
 			--Get the floor of secondsSinceFirstReset / cycle time
 			--Divide seconds elapsed since our static timestamp in the past by the cycle time (3.5h).
 			--Get the floor of that result (which would be last reset if multipled by cycle time) then add 1 for next reset, then multiply by cycle time.
 			--This calc gets the next dmf start in the future and not the last start.
-			local dmfStart = calcStart + ((math.floor(secondsSinceFirstReset / 1209600) + 1) * 1209600);
+			local dmfStart = start + ((math.floor(secondsSinceFirstReset / 1209600) + 1) * 1209600);
 			if (utc < dmfStart - 604800) then
 				--If next future dmf start is more than 1 week away then the previous dmf is still up so remove 2 weeks and calc for that instead.
 				dmfStart = dmfStart - 1209600;
 			end
 			local dmfEnd = dmfStart + 604800;
 			local timeLeft = dmfStart - utc;
-			return dmfStart, dmfEnd, calcStart;
+			return dmfStart, dmfEnd, start;
 		end
 	else
 		local startOffset, endOffset, validRegion, isDst;
@@ -8619,6 +8654,11 @@ function NWB:checkDmfBuffReset(isLogon)
 							lastOnline = NWB.lastOnlineCache;
 						else
 							lastOnline = charData.lo;
+						end
+						if (charData.dmfCooldown and lastOnline and charData.dmfCooldown > 0 and GetServerTime() - lastOnline > 691200) then
+							--If been offline over a week just reset it, the cooldown doesn't seem to persist betwee dmf even if offline the whole time and not rested?
+							--Reset dmf buff cooldown data, needs to still be a number and lower than -99990.
+							charData.dmfCooldown = -99999;
 						end
 						if (charData.dmfCooldown and lastOnline and charData.resting and charData.dmfCooldown > 0 and GetServerTime() - lastOnline > 28800) then
 							--If 8+ hours offline and in rested area and have dmf buff cooldwn.

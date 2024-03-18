@@ -6,11 +6,11 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Dopeclaw"] = {
-			["GOLD"] = 160777,
+			["GOLD"] = 161110,
 			["CLASS"] = "DRUID",
 		},
 		["Dopesnare"] = {
-			["GOLD"] = 675384,
+			["GOLD"] = 687599,
 			["CLASS"] = "HUNTER",
 		},
 		["Dopedot"] = {
@@ -18,7 +18,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Jutarnjedrvo"] = {
-			["GOLD"] = 20809,
+			["GOLD"] = 33762,
 			["CLASS"] = "SHAMAN",
 		},
 		["Dopecoil"] = {
@@ -34,11 +34,11 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Dopemend"] = {
-			["GOLD"] = 90378,
+			["GOLD"] = 121539,
 			["CLASS"] = "PRIEST",
 		},
 		["Doperage"] = {
-			["GOLD"] = 38261,
+			["GOLD"] = 17255,
 			["CLASS"] = "WARRIOR",
 		},
 	},
