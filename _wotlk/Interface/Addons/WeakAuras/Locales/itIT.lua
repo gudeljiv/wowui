@@ -94,9 +94,10 @@ L["AbbreviateLargeNumbers (Blizzard)"] = "AbbreviateLargeNumbers (Blizzard)"
 --[[Translation missing --]]
 L["AbbreviateNumbers (Blizzard)"] = "AbbreviateNumbers (Blizzard)"
 L["Absorb"] = "Assorbimento"
-L["Absorb Display"] = "Mostra Assorbimento"
 --[[Translation missing --]]
-L["Absorb Heal Display"] = "Absorb Heal Display"
+L["Absorb Heal Overlay"] = "Absorb Heal Overlay"
+--[[Translation missing --]]
+L["Absorb Overlay"] = "Absorb Overlay"
 L["Absorbed"] = "Assorbito"
 L["Action Button Glow"] = "Bagliore Pulsante Azioni"
 L["Action Usable"] = "Azione utilizzabile"
@@ -213,6 +214,8 @@ L["Aura Applied"] = "Aura applicata"
 L["Aura Applied Dose"] = "Parte di aura applicata"
 L["Aura Broken"] = "Aura finita"
 L["Aura Broken Spell"] = "Aura di magia finita"
+--[[Translation missing --]]
+L["Aura is using deprecated SetDurationInfo"] = "Aura is using deprecated SetDurationInfo"
 --[[Translation missing --]]
 L["Aura loaded"] = "Aura loaded"
 L["Aura Name"] = "Nome Aura"
@@ -682,8 +685,6 @@ L["Duration Function"] = "Duration Function"
 --[[Translation missing --]]
 L["Duration Function (fallback state)"] = "Duration Function (fallback state)"
 --[[Translation missing --]]
-L["Dynamic Information"] = "Dynamic Information"
---[[Translation missing --]]
 L["Ease In"] = "Ease In"
 --[[Translation missing --]]
 L["Ease In and Out"] = "Ease In and Out"
@@ -751,8 +752,6 @@ L["Energize"] = "Energize"
 L["Enrage"] = "Enrage"
 --[[Translation missing --]]
 L["Enter a name or a spellId"] = "Enter a name or a spellId"
---[[Translation missing --]]
-L["Enter static or relative values with %"] = "Enter static or relative values with %"
 --[[Translation missing --]]
 L["Entering"] = "Entering"
 --[[Translation missing --]]
@@ -854,10 +853,6 @@ L["Fade Out"] = "Fade Out"
 --[[Translation missing --]]
 L["Fail Alert"] = "Fail Alert"
 --[[Translation missing --]]
-L["Fallback"] = "Fallback"
---[[Translation missing --]]
-L["Fallback Icon"] = "Fallback Icon"
---[[Translation missing --]]
 L["False"] = "False"
 --[[Translation missing --]]
 L["Fankriss the Unyielding"] = "Fankriss the Unyielding"
@@ -867,6 +862,10 @@ L["Feature %q is already disabled"] = "Feature %q is already disabled"
 L["Feature %q is already enabled"] = "Feature %q is already enabled"
 --[[Translation missing --]]
 L["Festergut"] = "Festergut"
+--[[Translation missing --]]
+L["Fetch Absorb"] = "Fetch Absorb"
+--[[Translation missing --]]
+L["Fetch Heal Absorb"] = "Fetch Heal Absorb"
 --[[Translation missing --]]
 L["Fetch Legendary Power"] = "Fetch Legendary Power"
 --[[Translation missing --]]
@@ -1105,9 +1104,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["Id"] = "Id"
---[[Translation missing --]]
 L["ID"] = "ID"
+--[[Translation missing --]]
+L["Id"] = "Id"
 --[[Translation missing --]]
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"
 --[[Translation missing --]]
@@ -1361,6 +1360,10 @@ L["Malformed WeakAuras link"] = "Malformed WeakAuras link"
 --[[Translation missing --]]
 L["Malygos"] = "Malygos"
 --[[Translation missing --]]
+L["Manual"] = "Manual"
+--[[Translation missing --]]
+L["Manual Icon"] = "Manual Icon"
+--[[Translation missing --]]
 L["Manual Rotation"] = "Manual Rotation"
 --[[Translation missing --]]
 L["Marked First"] = "Marked First"
@@ -1395,9 +1398,9 @@ L["Max Power"] = "Max Power"
 --[[Translation missing --]]
 L["Max Quantity"] = "Max Quantity"
 --[[Translation missing --]]
-L["Maximum"] = "Maximum"
---[[Translation missing --]]
 L["Maximum Estimate"] = "Maximum Estimate"
+--[[Translation missing --]]
+L["Maximum Progress"] = "Maximum Progress"
 --[[Translation missing --]]
 L["Media"] = "Media"
 --[[Translation missing --]]
@@ -1419,9 +1422,9 @@ L["Mimiron"] = "Mimiron"
 --[[Translation missing --]]
 L["Mine"] = "Mine"
 --[[Translation missing --]]
-L["Minimum"] = "Minimum"
---[[Translation missing --]]
 L["Minimum Estimate"] = "Minimum Estimate"
+--[[Translation missing --]]
+L["Minimum Progress"] = "Minimum Progress"
 --[[Translation missing --]]
 L["Minus (Small Nameplate)"] = "Minus (Small Nameplate)"
 --[[Translation missing --]]
@@ -1442,6 +1445,8 @@ L["Moam"] = "Moam"
 L["Model"] = "Model"
 --[[Translation missing --]]
 L["Modern Blizzard (1h 3m | 3m 7s | 10s | 2.4)"] = "Modern Blizzard (1h 3m | 3m 7s | 10s | 2.4)"
+--[[Translation missing --]]
+L["Modernize"] = "Modernize"
 --[[Translation missing --]]
 L["Molten Core"] = "Molten Core"
 --[[Translation missing --]]
@@ -1741,6 +1746,8 @@ L["Pixel Glow"] = "Pixel Glow"
 --[[Translation missing --]]
 L["Placement"] = "Placement"
 --[[Translation missing --]]
+L["Placement %i"] = "Placement %i"
+--[[Translation missing --]]
 L["Placement Mode"] = "Placement Mode"
 --[[Translation missing --]]
 L["Play"] = "Play"
@@ -1811,6 +1818,8 @@ L["Profiling stopped."] = "Profiling stopped."
 --[[Translation missing --]]
 L["Progress"] = "Progress"
 --[[Translation missing --]]
+L["Progress Source"] = "Progress Source"
+--[[Translation missing --]]
 L["Progress Total"] = "Progress Total"
 --[[Translation missing --]]
 L["Progress Value"] = "Progress Value"
@@ -1821,9 +1830,9 @@ L["PvP Flagged"] = "PvP Flagged"
 --[[Translation missing --]]
 L["PvP Talent %i"] = "PvP Talent %i"
 --[[Translation missing --]]
-L["PvP Talent selected"] = "PvP Talent selected"
---[[Translation missing --]]
 L["PvP Talent Selected"] = "PvP Talent Selected"
+--[[Translation missing --]]
+L["PvP Talent selected"] = "PvP Talent selected"
 --[[Translation missing --]]
 L["Quality Id"] = "Quality Id"
 --[[Translation missing --]]
@@ -2033,13 +2042,11 @@ L["Separator"] = "Separator"
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as classic.wowhead.com/item-sets"] = "Set IDs can be found on websites such as classic.wowhead.com/item-sets"
 --[[Translation missing --]]
+L["Set IDs can be found on websites such as wowhead.com/cata/item-sets"] = "Set IDs can be found on websites such as wowhead.com/cata/item-sets"
+--[[Translation missing --]]
 L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "Set IDs can be found on websites such as wowhead.com/item-sets"
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"
---[[Translation missing --]]
-L["Set Maximum Progress"] = "Set Maximum Progress"
---[[Translation missing --]]
-L["Set Minimum Progress"] = "Set Minimum Progress"
 --[[Translation missing --]]
 L["Shadow Resistance"] = "Shadow Resistance"
 --[[Translation missing --]]
@@ -2055,8 +2062,6 @@ L["Shift-Click to resume addon execution."] = "Shift-Click to resume addon execu
 --[[Translation missing --]]
 L["Show"] = "Show"
 --[[Translation missing --]]
-L["Show Absorb"] = "Show Absorb"
---[[Translation missing --]]
 L["Show CD of Charge"] = "Show CD of Charge"
 --[[Translation missing --]]
 L["Show charged duration for empowered casts"] = "Show charged duration for empowered casts"
@@ -2064,8 +2069,6 @@ L["Show charged duration for empowered casts"] = "Show charged duration for empo
 L["Show GCD"] = "Show GCD"
 --[[Translation missing --]]
 L["Show Global Cooldown"] = "Show Global Cooldown"
---[[Translation missing --]]
-L["Show Heal Absorb"] = "Show Heal Absorb"
 --[[Translation missing --]]
 L["Show Incoming Heal"] = "Show Incoming Heal"
 --[[Translation missing --]]
@@ -2309,9 +2312,9 @@ L["Talent |cFFFF0000Not|r Selected"] = "Talent |cFFFF0000Not|r Selected"
 --[[Translation missing --]]
 L["Talent Known"] = "Talent Known"
 --[[Translation missing --]]
-L["Talent Selected"] = "Talent Selected"
---[[Translation missing --]]
 L["Talent selected"] = "Talent selected"
+--[[Translation missing --]]
+L["Talent Selected"] = "Talent Selected"
 --[[Translation missing --]]
 L["Talent Specialization"] = "Talent Specialization"
 --[[Translation missing --]]
@@ -2330,6 +2333,8 @@ L["Text"] = "Text"
 L["Text To Speech"] = "Text To Speech"
 --[[Translation missing --]]
 L["Text-to-speech"] = "Text-to-speech"
+--[[Translation missing --]]
+L["Texture"] = "Texture"
 --[[Translation missing --]]
 L["Texture Function"] = "Texture Function"
 --[[Translation missing --]]
@@ -2397,7 +2402,17 @@ L["Time Format"] = "Time Format"
 --[[Translation missing --]]
 L["Time in GCDs"] = "Time in GCDs"
 --[[Translation missing --]]
+L["Time since initial application"] = "Time since initial application"
+--[[Translation missing --]]
+L["Time since last refresh"] = "Time since last refresh"
+--[[Translation missing --]]
+L["Time since stack gain"] = "Time since stack gain"
+--[[Translation missing --]]
+L["Time since stack lost"] = "Time since stack lost"
+--[[Translation missing --]]
 L["Timed"] = "Timed"
+--[[Translation missing --]]
+L["Timed Progress"] = "Timed Progress"
 --[[Translation missing --]]
 L["Timer Id"] = "Timer Id"
 --[[Translation missing --]]
@@ -2410,6 +2425,12 @@ L["Toggle Options Window"] = "Toggle Options Window"
 L["Toggle Performance Profiling Window"] = "Toggle Performance Profiling Window"
 --[[Translation missing --]]
 L["Tooltip"] = "Tooltip"
+--[[Translation missing --]]
+L["Tooltip 1"] = "Tooltip 1"
+--[[Translation missing --]]
+L["Tooltip 2"] = "Tooltip 2"
+--[[Translation missing --]]
+L["Tooltip 3"] = "Tooltip 3"
 --[[Translation missing --]]
 L["Tooltip Value 1"] = "Tooltip Value 1"
 --[[Translation missing --]]
@@ -2571,6 +2592,8 @@ L["Use Custom Color"] = "Use Custom Color"
 --[[Translation missing --]]
 L["Use Legacy floor rounding"] = "Use Legacy floor rounding"
 --[[Translation missing --]]
+L["Use Texture"] = "Use Texture"
+--[[Translation missing --]]
 L["Use Watched Faction"] = "Use Watched Faction"
 --[[Translation missing --]]
 L["Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."] = "Uses UnitInRange() to check if in range. Matches default raid frames out of range behavior, which is between 25 to 40 yards depending on your class and spec."
@@ -2586,10 +2609,6 @@ L["Valithria Dreamwalker"] = "Valithria Dreamwalker"
 L["Val'kyr Twins"] = "Val'kyr Twins"
 --[[Translation missing --]]
 L["Value"] = "Value"
---[[Translation missing --]]
-L["Values/Remaining Time above this value are displayed as full progress."] = "Values/Remaining Time above this value are displayed as full progress."
---[[Translation missing --]]
-L["Values/Remaining Time below this value are displayed as no progress."] = "Values/Remaining Time below this value are displayed as no progress."
 --[[Translation missing --]]
 L["Vault of Archavon"] = "Vault of Archavon"
 --[[Translation missing --]]

@@ -1,5 +1,3 @@
-local _, xVermin = ...
-
 RUNE_BUTTON_HEIGHT = 40;
 RUNE_HEADER_BUTTON_HEIGHT = 23;
 
@@ -38,14 +36,6 @@ local function GetEquippedRunes()
 end
 
 local function UpdateButtons()
-
-	for i = 1, 50 do
-		local buttonHighlight = _G["EngravingFrameScrollFrameButton" .. i .. "Highlight"]
-		if buttonHighlight then
-			buttonHighlight:Hide()
-		end
-	end
-
 	local scrollFrame = EngravingFrame.scrollFrame;
 	local buttons = scrollFrame.buttons;
 	local offset = HybridScrollFrame_GetOffset(scrollFrame);
@@ -55,7 +45,7 @@ local function UpdateButtons()
 	local categories = C_Engraving.GetRuneCategories(true, true);
 	local numHeaders = #categories;
 
-	local numRunes = 0;
+	local numRows = 0;
 	local currentOffset = 0;
 	local currentHeader = 1;
 	local currentButton = 1;
@@ -67,7 +57,7 @@ local function UpdateButtons()
 		else
 			local button = buttons[currentButton];
 			if button then
-				header = _G["EngravingFrameHeader"..currentHeader];
+				header = _G["EngravingFrameHeader" .. currentHeader];
 				if header then
 					if prevRowStart > 1 then
 						button:ClearAllPoints();
@@ -75,7 +65,7 @@ local function UpdateButtons()
 					end
 					prevRowStart = currentButton;
 					header:ClearAllPoints();
-					header:SetPoint("BOTTOMLEFT", button, 0 , 0);
+					header:SetPoint("BOTTOMLEFT", button, 0, 0);
 					header:Show();
 					currentHeader = currentHeader + 1;
 					currentButton = currentButton + 1;
@@ -84,19 +74,19 @@ local function UpdateButtons()
 		end
 
 		local runes = C_Engraving.GetRunesForCategory(category, true);
-		numRunes = numRunes + #runes;
 		for runeIndex, rune in ipairs(runes) do
 			if currentOffset < offset then
 				currentOffset = currentOffset + 1;
 			else
 				local button = buttons[currentButton];
 				if button then
-
 					button:CreateBeautyBorder(8)
+					-- _G[button:GetName() .. 'Highlight']:Hide()
 
 					button:SetScript("OnClick", function(_, mouseButton)
 						RuneButtonOnClick(mouseButton, rune.skillLineAbilityID, rune.equipmentSlot);
 					end);
+
 					button.name:Hide();
 					button.typeName:Hide();
 					button:SetWidth(RUNE_BUTTON_HEIGHT);
@@ -132,6 +122,15 @@ local function UpdateButtons()
 					end
 					button:Show();
 
+					-- button:SetScript('OnEnter', function() 
+					-- 	button:SetBeautyBorderColor(0, 1, 0) 
+					-- 	button.texture:SetDrawLayer("ARTWORK", 7)
+					-- end)
+					-- button:SetScript('OnLeave', function() 
+					-- 	button:SetBeautyBorderColor(1, 1, 0) 
+					-- 	button.texture:SetDrawLayer("ARTWORK", 7)
+					-- end)
+					
 					currentButton = currentButton + 1;
 				end
 			end
@@ -143,9 +142,9 @@ local function UpdateButtons()
 		currentButton = currentButton + 1;
 	end
 
-	local totalHeight = math.floor(numRunes / 4) * RUNE_BUTTON_HEIGHT;
+	local totalHeight = numRows * RUNE_BUTTON_HEIGHT;
 	totalHeight = totalHeight + (numHeaders * RUNE_HEADER_BUTTON_HEIGHT);
-	HybridScrollFrame_Update(scrollFrame, totalHeight+10, 348);
+	HybridScrollFrame_Update(scrollFrame, totalHeight, 348);
 end
 
 local function AddMoreButtons()
@@ -154,8 +153,12 @@ local function AddMoreButtons()
 	local parentName = scrollFrame:GetName();
 	local buttonName = parentName and (parentName .. "Button") or nil;
 
-	for i = #buttons, 15 do
-		local button = CreateFrame("BUTTON", buttonName and (buttonName..1) or nil, scrollFrame.scrollChild, "RuneSpellButtonTemplate");
+	for i = #buttons, 25 do
+		local button = CreateFrame("BUTTON", buttonName and (buttonName .. 1) or nil, scrollFrame.scrollChild,
+			"RuneSpellButtonTemplate");
+		button.disabledBG:Hide();
+		button.selectedTex:Hide();
+		button:Hide();
 		tinsert(buttons, button);
 	end
 end
@@ -187,3 +190,4 @@ local frame = CreateFrame("Frame");
 frame:RegisterEvent("ADDON_LOADED");
 frame:RegisterEvent("RUNE_UPDATED");
 frame:SetScript("OnEvent", EventHandler);
+

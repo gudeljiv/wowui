@@ -40,6 +40,9 @@ xVerminSavedData = {
 		["Swirling Vortex"] = {
 			"Serpent Sting", -- [1]
 		},
+		["Greater Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
 		["Evolving Ectoplasm"] = {
 			"Frost Shock", -- [1]
 			"Frostbolt", -- [2]
@@ -80,8 +83,16 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Boiling Elemental"] = {
-			"Instant Poison", -- [1]
+		["Furious Stone Spirit"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -92,37 +103,29 @@ xVerminSavedData = {
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
 		},
+		["Dark Rider"] = {
+			"Intimidation", -- [1]
+			"Charge Stun", -- [2]
+			"Concussive Shot", -- [3]
+			"Starfire Stun", -- [4]
+			"Frostbite", -- [5]
+			"Intercept Stun", -- [6]
+		},
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
-		},
-		["Scalding Elemental"] = {
+		["Enraged Stone Spirit"] = {
 			"Rend", -- [1]
 		},
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Stormstrike", -- [2]
-			"Wing Clip", -- [3]
-			"Sunder Armor", -- [4]
-			"Raptor Strike", -- [5]
-			"Earth Shock", -- [6]
-			"Serpent Sting", -- [7]
-			"Quick Strike", -- [8]
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
 		},
-		["High Inquisitor Whitemane"] = {
+		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]
-			"Intercept Stun", -- [2]
-		},
-		["Fire Elemental"] = {
-			"Magma Totem", -- [1]
-			"Flametongue Attack", -- [2]
-			"Serpent Sting", -- [3]
 		},
 		["Herod"] = {
 			"Searing Pain", -- [1]
@@ -143,37 +146,40 @@ xVerminSavedData = {
 			"Chaos Bolt", -- [16]
 			"Shadow Bolt", -- [17]
 		},
-		["Amnennar the Coldbringer"] = {
+		["Fire Elemental"] = {
+			"Magma Totem", -- [1]
+			"Flametongue Attack", -- [2]
+			"Serpent Sting", -- [3]
+		},
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Stormstrike", -- [2]
+			"Wing Clip", -- [3]
+			"Sunder Armor", -- [4]
+			"Raptor Strike", -- [5]
+			"Earth Shock", -- [6]
+			"Serpent Sting", -- [7]
+			"Quick Strike", -- [8]
+		},
+		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]
+			"Intercept Stun", -- [2]
 		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
-		},
-		["Enraged Stone Spirit"] = {
+		["Scalding Elemental"] = {
 			"Rend", -- [1]
 		},
 		["Bloodmage Thalnos"] = {
 			"Intimidation", -- [1]
 		},
-		["Dark Rider"] = {
-			"Intimidation", -- [1]
-			"Charge Stun", -- [2]
-			"Concussive Shot", -- [3]
-			"Starfire Stun", -- [4]
-			"Frostbite", -- [5]
-			"Intercept Stun", -- [6]
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
 		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
 		},
-		["Furious Stone Spirit"] = {
-			"Serpent Sting", -- [1]
+		["Boiling Elemental"] = {
+			"Instant Poison", -- [1]
 		},
 	},
 }

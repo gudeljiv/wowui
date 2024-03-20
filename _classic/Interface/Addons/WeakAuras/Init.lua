@@ -14,6 +14,18 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 --- @field cloneId string?
 --- @field show boolean?
 --- @field changed boolean?
+--- @field paused boolean?
+--- @field remaining number?
+--- @field autoHide boolean|string|nil
+--- @field progressType "timed"|"static"|nil
+--- @field expirationTime number?
+--- @field duration number?
+--- @field name any?
+--- @field icon any?
+--- @field value number?
+--- @field total number?
+--- @field inverse boolean?
+
 
 --- @alias non_transmissable_field table<string, non_transmissable_field|boolean>
 
@@ -26,6 +38,11 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 --- @field raid table<string, boolean>
 
 --- @alias traverseFunction fun(): auraData
+
+---@class WARegion : Frame
+---@field state state
+---@field states state[]
+---@field regionType string
 
 --- @class Private
 --- @field ActivateAuraEnvironment fun(id: auraId?, cloneId: string?, state: state?, states: state[]?, config: boolean?)
@@ -50,7 +67,7 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 --- @field DebugLog debugLog
 --- @field dynamic_texts table<string, table>
 --- @field EndEvent fun(state: state): boolean?
---- @field EnsureRegion fun(id: auraId, cloneId: string?): Frame
+--- @field EnsureRegion fun(id: auraId, cloneId: string?): WARegion
 --- @field ExecEnv table
 --- @field event_prototypes table<string, prototypeData>
 --- @field event_categories table<string, {name: string, default: string }>
@@ -179,6 +196,7 @@ local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetad
 ---@field internal_events (fun(tigger: triggerData): table)|nil
 ---@field name string
 ---@field statesParamater "unit"|"one"|"all"|nil
+---@field progressType "timed"|"static"|"none"
 
 --- @class triggerUntriggerData
 --- @field trigger triggerData
@@ -356,14 +374,15 @@ WeakAuras.normalWidth = 1.3
 WeakAuras.halfWidth = WeakAuras.normalWidth / 2
 WeakAuras.doubleWidth = WeakAuras.normalWidth * 2
 local versionStringFromToc = GetAddOnMetadata("WeakAuras", "Version")
-local versionString = "5.11.3"
-local buildTime = "20240306131028"
+local versionString = "5.12.0"
+local buildTime = "20240319231253"
 
 local flavorFromToc = GetAddOnMetadata("WeakAuras", "X-Flavor")
 local flavorFromTocToNumber = {
   Vanilla = 1,
   TBC = 2,
   Wrath = 3,
+  Cata = 4,
   Mainline = 10
 }
 local flavor = flavorFromTocToNumber[flavorFromToc]
@@ -384,7 +403,7 @@ WeakAuras.buildType = "pr"
 --@end-experimental@]=====]
 
 --[==[@debug@
-if versionStringFromToc == "5.11.3" then
+if versionStringFromToc == "5.12.0" then
   versionStringFromToc = "Dev"
   buildTime = "Dev"
   WeakAuras.buildType = "dev"
@@ -406,6 +425,10 @@ function WeakAuras.IsWrathClassic()
   return flavor == 3
 end
 
+function WeakAuras.IsCataClassic()
+  return flavor == 4
+end
+
 function WeakAuras.IsRetail()
   return flavor == 10
 end
@@ -414,8 +437,20 @@ function WeakAuras.IsClassicEraOrWrath()
   return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic()
 end
 
-function WeakAuras.IsWrathOrRetail()
-  return WeakAuras.IsRetail() or WeakAuras.IsWrathClassic()
+function WeakAuras.IsWrathOrCataOrRetail()
+  return WeakAuras.IsRetail() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
+end
+
+function WeakAuras.IsWrathOrCata()
+  return WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
+end
+
+function WeakAuras.IsCataOrRetail()
+  return WeakAuras.IsCataClassic() or WeakAuras.IsRetail()
+end
+
+function WeakAuras.IsClassicEraOrWrathOrCata()
+  return WeakAuras.IsClassicEra() or WeakAuras.IsWrathClassic() or WeakAuras.IsCataClassic()
 end
 
 WeakAuras.prettyPrint = function(...)
