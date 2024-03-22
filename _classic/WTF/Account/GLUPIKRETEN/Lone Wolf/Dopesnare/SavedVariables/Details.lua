@@ -21,8 +21,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2613.004653,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -43,7 +42,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 76,
 										["targets"] = {
 											["Scalding Whelp"] = 418,
 										},
@@ -52,12 +51,12 @@ _detalhes_database = {
 										["g_dmg"] = 109,
 										["counter"] = 9,
 										["MISS"] = 2,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 418,
+										["c_max"] = 132,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 132,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -66,14 +65,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 132,
 										["n_amt"] = 3,
-										["n_max"] = 76,
-										["total"] = 418,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 139,
 										["targets"] = {
 											["Scalding Whelp"] = 394,
 										},
@@ -94,14 +93,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 139,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 93,
 										["targets"] = {
 											["Scalding Whelp"] = 362,
 										},
@@ -122,14 +121,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 93,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 86,
 										},
@@ -150,14 +149,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 15,
 										["targets"] = {
 											["Scalding Whelp"] = 30,
 										},
@@ -178,14 +177,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 15,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 81,
 										["targets"] = {
 											["Scalding Whelp"] = 81,
 										},
@@ -206,14 +205,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 81,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016416,
@@ -233,8 +233,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1242.001398,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -256,7 +255,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["targets"] = {
 											["Scalding Whelp"] = 641,
 										},
@@ -278,14 +277,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 332,
 										["n_amt"] = 2,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 98,
 										["targets"] = {
 											["Scalding Whelp"] = 467,
 										},
@@ -306,14 +305,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["n_max"] = 98,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 134,
 										["targets"] = {
 											["Scalding Whelp"] = 134,
 										},
@@ -334,14 +333,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 134,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -363,14 +362,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016416,
@@ -386,10 +386,9 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 687.005083,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = true,
 							["total"] = 687.005083,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = true,
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5253-0-4524-2725-00017C09B9",
 							["damage_from"] = {
@@ -405,7 +404,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["dps_started"] = true,
+							["monster"] = true,
 							["fight_component"] = true,
 							["totalabsorbed"] = 0.005083,
 							["aID"] = "2725",
@@ -416,7 +415,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 102,
 										},
@@ -437,14 +436,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 253,
 										["targets"] = {
 											["Tuzak"] = 253,
 											["Dopecat <Dopesnare>"] = 332,
@@ -465,13 +464,14 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 253,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = true,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016434,
@@ -493,7 +493,7 @@ _detalhes_database = {
 					["combatId"] = 493,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 531.0046,
 							["resource"] = 0.0046,
 							["targets"] = {
 								["Dopesnare"] = 531,
@@ -502,15 +502,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.0046,
+							["totalover"] = 263.0046,
 							["total"] = 531.0046,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 131,
-										["totalover"] = 263,
 										["id"] = 415424,
+										["totalover"] = 263,
 										["targets"] = {
 											["Dopesnare"] = 131,
 										},
@@ -518,8 +518,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 400,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 400,
 										},
@@ -529,13 +529,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 531.0046,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016417,
-							["totalover"] = 263.0046,
+							["tipo"] = 3,
+							["passiveover"] = 0.0046,
 							["alternatepower"] = 0.0046,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016417,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -572,10 +572,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 54,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 54,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -638,14 +638,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 18,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016417,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016417,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -653,27 +653,27 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["last_event"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00017C09B9",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00017C09B9",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -683,7 +683,9 @@ _detalhes_database = {
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 1,
+				["raid_roster"] = {
+					["Dopesnare"] = "Player-5826-022772AA",
+				},
 				["CombatStartedAt"] = 3105966.728,
 				["tempo_start"] = 1711016404,
 				["last_events_tables"] = {
@@ -692,7 +694,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7691,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -759,11 +763,10 @@ _detalhes_database = {
 				["playing_solo"] = true,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7691,
 				["totals_grupo"] = {
 					2613, -- [1]
 					0, -- [2]
@@ -785,9 +788,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["raid_roster"] = {
-					["Dopesnare"] = "Player-5826-022772AA",
-				},
+				["boss_hp"] = 1,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -810,8 +811,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105966.728,
 				["contra"] = "Scalding Whelp",
-				["frags"] = {
-					["Scalding Whelp"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [1]
 			{
@@ -830,8 +830,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2464.003449,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -852,7 +851,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 65,
 										["targets"] = {
 											["Scalding Whelp"] = 226,
 										},
@@ -874,42 +873,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 65,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[415341] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 425,
-										},
-										["n_total"] = 425,
-										["n_min"] = 137,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 425,
-										["c_max"] = 0,
-										["id"] = 415341,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 147,
-										["r_amt"] = 0,
-									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 76,
 										},
@@ -930,14 +901,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[415341] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 147,
+										["targets"] = {
+											["Scalding Whelp"] = 425,
+										},
+										["n_total"] = 425,
+										["n_min"] = 137,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 425,
+										["c_max"] = 0,
+										["id"] = 415341,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 109,
 										["targets"] = {
 											["Scalding Whelp"] = 398,
 										},
@@ -958,14 +957,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 193,
 										["n_amt"] = 2,
-										["n_max"] = 109,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 89,
 										["targets"] = {
 											["Scalding Whelp"] = 175,
 										},
@@ -986,14 +985,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 89,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016384,
@@ -1013,8 +1013,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1164.008544,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -1036,7 +1035,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 760,
 										},
@@ -1057,14 +1056,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 347,
 										["n_amt"] = 3,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 93,
 										["targets"] = {
 											["Scalding Whelp"] = 183,
 										},
@@ -1086,14 +1085,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 93,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 143,
 										["targets"] = {
 											["Scalding Whelp"] = 143,
 										},
@@ -1114,14 +1113,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 143,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 78,
 										["targets"] = {
 											["Scalding Whelp"] = 78,
 										},
@@ -1142,14 +1141,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 78,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016384,
@@ -1165,7 +1165,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 127.001447,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 127.001447,
 							["friendlyfire"] = {
 							},
@@ -1193,7 +1193,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 127,
@@ -1216,13 +1216,13 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 82,
 										["n_amt"] = 1,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016381,
@@ -1244,7 +1244,7 @@ _detalhes_database = {
 					["combatId"] = 492,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 445.00312,
 							["resource"] = 0.00312,
 							["targets"] = {
 								["Dopesnare"] = 445,
@@ -1253,15 +1253,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.00312,
+							["totalover"] = 116.00312,
 							["total"] = 445.00312,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 147,
-										["totalover"] = 116,
 										["id"] = 415424,
+										["totalover"] = 116,
 										["targets"] = {
 											["Dopesnare"] = 147,
 										},
@@ -1269,8 +1269,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 298,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 298,
 										},
@@ -1280,13 +1280,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 445.00312,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016384,
-							["totalover"] = 116.00312,
+							["tipo"] = 3,
+							["passiveover"] = 0.00312,
 							["alternatepower"] = 0.00312,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016384,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -1312,7 +1312,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 47,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -1325,7 +1327,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -1388,19 +1390,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 7,
 							["cc_done"] = 1.006831,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 47,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711016385,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -1421,16 +1421,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["cc_done"] = 1.006571,
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["cc_done"] = 1.006571,
+							["ownerName"] = "Dopesnare",
 							["last_event"] = 1711016376,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -1442,7 +1442,9 @@ _detalhes_database = {
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 1,
+				["raid_roster"] = {
+					["Dopesnare"] = "Player-5826-022772AA",
+				},
 				["CombatStartedAt"] = 3105937.06,
 				["tempo_start"] = 1711016375,
 				["last_events_tables"] = {
@@ -1451,7 +1453,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7690,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -1516,11 +1520,10 @@ _detalhes_database = {
 				["playing_solo"] = true,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7690,
 				["totals_grupo"] = {
 					2464, -- [1]
 					0, -- [2]
@@ -1542,9 +1545,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["raid_roster"] = {
-					["Dopesnare"] = "Player-5826-022772AA",
-				},
+				["boss_hp"] = 1,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1567,8 +1568,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105937.06,
 				["contra"] = "Scalding Whelp",
-				["frags"] = {
-					["Scalding Whelp"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [2]
 			{
@@ -1587,8 +1587,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2569.004732,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -1609,7 +1608,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 85,
 										["targets"] = {
 											["Scalding Whelp"] = 192,
 										},
@@ -1618,12 +1617,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 7,
 										["MISS"] = 3,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 192,
+										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1632,42 +1631,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 85,
-										["total"] = 192,
-									}, -- [1]
-									[13552] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
 										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 114,
-										},
-										["n_total"] = 114,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 114,
-										["c_max"] = 0,
-										["id"] = 13552,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 38,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 80,
 										["targets"] = {
 											["Scalding Whelp"] = 80,
 										},
@@ -1688,14 +1659,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 80,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[13552] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 38,
+										["targets"] = {
+											["Scalding Whelp"] = 114,
+										},
+										["n_total"] = 114,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 114,
+										["c_max"] = 0,
+										["id"] = 13552,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 143,
 										["targets"] = {
 											["Scalding Whelp"] = 672,
 										},
@@ -1717,14 +1716,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 258,
 										["n_amt"] = 3,
-										["n_max"] = 143,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 107,
 										["targets"] = {
 											["Scalding Whelp"] = 490,
 										},
@@ -1745,14 +1744,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["n_max"] = 107,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016349,
@@ -1772,8 +1772,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1021.001778,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -1795,7 +1794,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 340,
 										},
@@ -1804,12 +1803,12 @@ _detalhes_database = {
 										["g_dmg"] = 76,
 										["counter"] = 6,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 340,
+										["c_max"] = 177,
 										["MISS"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 177,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -1818,14 +1817,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 177,
 										["n_amt"] = 1,
-										["n_max"] = 87,
-										["total"] = 340,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 93,
 										["targets"] = {
 											["Scalding Whelp"] = 369,
 										},
@@ -1847,14 +1846,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 184,
 										["n_amt"] = 2,
-										["n_max"] = 93,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 135,
 										["targets"] = {
 											["Scalding Whelp"] = 135,
 										},
@@ -1875,14 +1874,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 135,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 177,
 										},
@@ -1903,14 +1902,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 177,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016347,
@@ -1926,7 +1926,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 711.006731,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 711.006731,
 							["friendlyfire"] = {
 							},
@@ -1956,7 +1956,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 52,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 283,
 										},
@@ -1977,14 +1977,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["n_max"] = 52,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 234,
 										["targets"] = {
 											["Cuteipie"] = 194,
 											["Dopecat <Dopesnare>"] = 234,
@@ -2006,13 +2006,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 234,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016348,
@@ -2034,7 +2034,7 @@ _detalhes_database = {
 					["combatId"] = 491,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 531.00244,
 							["resource"] = 0.00244,
 							["targets"] = {
 								["Dopesnare"] = 531,
@@ -2043,15 +2043,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.00244,
+							["totalover"] = 1.00244,
 							["total"] = 531.00244,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 330,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 330,
 										},
@@ -2059,8 +2059,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 201,
-										["totalover"] = 1,
 										["id"] = 415424,
+										["totalover"] = 1,
 										["targets"] = {
 											["Dopesnare"] = 201,
 										},
@@ -2070,13 +2070,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 531.00244,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016349,
-							["totalover"] = 1.00244,
+							["tipo"] = 3,
+							["passiveover"] = 0.00244,
 							["alternatepower"] = 0.00244,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016349,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -2102,10 +2102,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 66,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 66,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -2168,14 +2168,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 11,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016351,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016351,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -2183,27 +2183,27 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["last_event"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C097F",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C097F",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -2213,7 +2213,9 @@ _detalhes_database = {
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 1,
+				["raid_roster"] = {
+					["Dopesnare"] = "Player-5826-022772AA",
+				},
 				["CombatStartedAt"] = 3105899.075,
 				["tempo_start"] = 1711016337,
 				["last_events_tables"] = {
@@ -2222,7 +2224,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7689,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -2289,11 +2293,10 @@ _detalhes_database = {
 				["playing_solo"] = true,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7689,
 				["totals_grupo"] = {
 					2569, -- [1]
 					0, -- [2]
@@ -2315,9 +2318,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["raid_roster"] = {
-					["Dopesnare"] = "Player-5826-022772AA",
-				},
+				["boss_hp"] = 1,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2340,8 +2341,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105899.075,
 				["contra"] = "Scalding Whelp",
-				["frags"] = {
-					["Scalding Whelp"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [3]
 			{
@@ -2360,8 +2360,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2564.004671,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -2383,7 +2382,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["targets"] = {
 											["Scalding Whelp"] = 358,
 										},
@@ -2405,42 +2404,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 104,
 										["n_amt"] = 1,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[409752] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 211,
-										},
-										["n_total"] = 211,
-										["n_min"] = 103,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 211,
-										["c_max"] = 0,
-										["id"] = 409752,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 108,
-										["r_amt"] = 0,
-									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 37,
 										["targets"] = {
 											["Scalding Whelp"] = 74,
 										},
@@ -2461,14 +2432,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 37,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[409752] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 108,
+										["targets"] = {
+											["Scalding Whelp"] = 211,
+										},
+										["n_total"] = 211,
+										["n_min"] = 103,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 211,
+										["c_max"] = 0,
+										["id"] = 409752,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 166,
 										["targets"] = {
 											["Scalding Whelp"] = 166,
 										},
@@ -2490,14 +2489,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 166,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 158,
 										},
@@ -2518,14 +2517,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016320,
@@ -2545,8 +2545,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1597.005545,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -2568,7 +2567,7 @@ _detalhes_database = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 89,
 										["targets"] = {
 											["Scalding Whelp"] = 922,
 										},
@@ -2590,14 +2589,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 491,
 										["n_amt"] = 2,
-										["n_max"] = 89,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[14919] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -2619,14 +2618,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409372] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -2648,14 +2647,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 172,
 										},
@@ -2676,14 +2675,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 358,
 										},
@@ -2705,14 +2704,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 176,
 										["n_amt"] = 2,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 145,
 										["targets"] = {
 											["Scalding Whelp"] = 145,
 										},
@@ -2733,14 +2732,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 145,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016337,
@@ -2756,7 +2756,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 289.005161,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 289.005161,
 							["friendlyfire"] = {
 							},
@@ -2784,7 +2784,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 46,
 										["targets"] = {
 											["Dopecat"] = 0,
 											["Dopecat <Dopesnare>"] = 46,
@@ -2807,14 +2807,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 46,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 243,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 243,
 										},
@@ -2834,13 +2834,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 243,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016315,
@@ -2862,7 +2862,7 @@ _detalhes_database = {
 					["combatId"] = 490,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 375.004163,
 							["resource"] = 0.004163,
 							["targets"] = {
 								["Dopesnare"] = 375,
@@ -2871,15 +2871,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.004163,
+							["totalover"] = 193.004163,
 							["total"] = 375.004163,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 235,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 235,
 										},
@@ -2887,8 +2887,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 140,
-										["totalover"] = 193,
 										["id"] = 415424,
+										["totalover"] = 193,
 										["targets"] = {
 											["Dopesnare"] = 140,
 										},
@@ -2898,13 +2898,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 375.004163,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016321,
-							["totalover"] = 193.004163,
+							["tipo"] = 3,
+							["passiveover"] = 0.004163,
 							["alternatepower"] = 0.004163,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016321,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -2930,7 +2930,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 61,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -2943,7 +2945,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -3006,19 +3008,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 6,
 							["cc_done"] = 1.002163,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 61,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711016320,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -3039,16 +3039,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["cc_done"] = 1.004869,
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["cc_done"] = 1.004869,
+							["ownerName"] = "Dopesnare",
 							["last_event"] = 1711016312,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -3057,13 +3057,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C07FD",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C07FD",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -3083,8 +3083,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7688,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					2859, -- [1]
 					0, -- [2]
@@ -3230,9 +3233,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7688,
 				["totals_grupo"] = {
 					2564, -- [1]
 					0, -- [2]
@@ -3278,8 +3279,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105868.258,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [4]
 			{
 				{
@@ -3297,8 +3297,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2516.001142,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -3320,7 +3319,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["b_dmg"] = 65,
+										["n_max"] = 70,
 										["targets"] = {
 											["Scalding Whelp"] = 390,
 										},
@@ -3342,14 +3341,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 148,
 										["n_amt"] = 4,
-										["n_max"] = 70,
+										["b_dmg"] = 65,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 77,
 										["targets"] = {
 											["Scalding Whelp"] = 77,
 										},
@@ -3370,14 +3369,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 77,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 109,
 										["targets"] = {
 											["Scalding Whelp"] = 427,
 										},
@@ -3398,14 +3397,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 210,
 										["n_amt"] = 2,
-										["n_max"] = 109,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 95,
 										},
@@ -3426,14 +3425,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 15,
 										["targets"] = {
 											["Scalding Whelp"] = 15,
 										},
@@ -3454,14 +3453,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 15,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 151,
 										["targets"] = {
 											["Scalding Whelp"] = 439,
 										},
@@ -3482,14 +3481,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 151,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016281,
@@ -3509,8 +3509,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1073.007943,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -3532,7 +3531,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 659,
 										},
@@ -3553,14 +3552,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 337,
 										["n_amt"] = 3,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 95,
 										["targets"] = {
 											["Scalding Whelp"] = 185,
 										},
@@ -3569,12 +3568,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 5,
 										["MISS"] = 1,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 185,
+										["c_max"] = 0,
 										["DODGE"] = 2,
 										["id"] = 16832,
 										["r_dmg"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -3583,14 +3582,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 95,
-										["total"] = 185,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 144,
 										["targets"] = {
 											["Scalding Whelp"] = 144,
 										},
@@ -3611,14 +3610,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 144,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 85,
 										["targets"] = {
 											["Scalding Whelp"] = 85,
 										},
@@ -3639,14 +3638,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 85,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016281,
@@ -3662,7 +3662,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 432.008586,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 432.008586,
 							["friendlyfire"] = {
 							},
@@ -3691,7 +3691,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 39,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 39,
 										},
@@ -3712,14 +3712,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 39,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 199,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 194,
 											["Dopesnare"] = 199,
@@ -3740,13 +3740,13 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 199,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016281,
@@ -3768,7 +3768,7 @@ _detalhes_database = {
 					["combatId"] = 489,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 451.008543,
 							["resource"] = 0.008543,
 							["targets"] = {
 								["Dopesnare"] = 451,
@@ -3777,15 +3777,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.008543,
+							["totalover"] = 179.008543,
 							["total"] = 451.008543,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 295,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 295,
 										},
@@ -3793,8 +3793,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 156,
-										["totalover"] = 179,
 										["id"] = 415424,
+										["totalover"] = 179,
 										["targets"] = {
 											["Dopesnare"] = 156,
 										},
@@ -3804,13 +3804,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 451.008543,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016282,
-							["totalover"] = 179.008543,
+							["tipo"] = 3,
+							["passiveover"] = 0.008543,
 							["alternatepower"] = 0.008543,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016282,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -3847,10 +3847,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 54,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 54,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -3913,14 +3913,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 9,
-							["nome"] = "Dopesnare",
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016283,
 							["buff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016283,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -3928,27 +3928,27 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["last_event"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC08B9",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC08B9",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -3969,8 +3969,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7687,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					2948, -- [1]
 					0, -- [2]
@@ -4039,9 +4042,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7687,
 				["totals_grupo"] = {
 					2516, -- [1]
 					0, -- [2]
@@ -4087,8 +4088,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105834.123,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [5]
 			{
 				{
@@ -4106,8 +4106,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2448.006867,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -4129,7 +4128,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 72,
 										["targets"] = {
 											["Scalding Whelp"] = 437,
 										},
@@ -4150,70 +4149,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 72,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[415341] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 568,
-										},
-										["n_total"] = 295,
-										["n_min"] = 146,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 568,
-										["c_max"] = 273,
-										["id"] = 415341,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 273,
-										["successful_casted"] = 0,
-										["c_total"] = 273,
-										["n_amt"] = 2,
-										["n_max"] = 149,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 16,
-										["r_amt"] = 0,
-									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 95,
 										["targets"] = {
 											["Scalding Whelp"] = 190,
 										},
@@ -4235,14 +4178,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 95,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scalding Whelp"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 87,
 										},
@@ -4263,14 +4234,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[415341] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 149,
+										["targets"] = {
+											["Scalding Whelp"] = 568,
+										},
+										["n_total"] = 295,
+										["n_min"] = 146,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 568,
+										["c_max"] = 273,
+										["id"] = 415341,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 273,
+										["successful_casted"] = 0,
+										["c_total"] = 273,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016248,
@@ -4283,13 +4283,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1150.001974,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1150.001974,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -4301,7 +4300,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016250,
 							["totalabsorbed"] = 0.001974,
 							["ownerName"] = "Dopesnare",
@@ -4312,7 +4311,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 91,
 										["targets"] = {
 											["Scalding Whelp"] = 511,
 										},
@@ -4333,14 +4332,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 91,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 92,
 										["targets"] = {
 											["Scalding Whelp"] = 268,
 										},
@@ -4361,14 +4360,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 92,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 282,
 										},
@@ -4389,14 +4388,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 282,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 89,
 										["targets"] = {
 											["Scalding Whelp"] = 89,
 										},
@@ -4417,13 +4416,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 89,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016248,
@@ -4439,7 +4439,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 401.003063,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 401.003063,
 							["friendlyfire"] = {
 							},
@@ -4468,7 +4468,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 226,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 175,
 											["Dopesnare"] = 226,
@@ -4489,13 +4489,13 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 226,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016248,
@@ -4517,7 +4517,7 @@ _detalhes_database = {
 					["combatId"] = 488,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 336.00322,
 							["resource"] = 0.00322,
 							["targets"] = {
 								["Dopesnare"] = 336,
@@ -4526,15 +4526,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.00322,
+							["totalover"] = 260.00322,
 							["total"] = 336.00322,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 206,
-										["totalover"] = 260,
 										["id"] = 415424,
+										["totalover"] = 260,
 										["targets"] = {
 											["Dopesnare"] = 206,
 										},
@@ -4542,8 +4542,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 130,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 130,
 										},
@@ -4553,13 +4553,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 336.00322,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016249,
-							["totalover"] = 260.00322,
+							["tipo"] = 3,
+							["passiveover"] = 0.00322,
 							["alternatepower"] = 0.00322,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016249,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -4585,10 +4585,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 48,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 48,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -4651,14 +4651,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 3,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016250,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016250,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -4669,8 +4669,8 @@ _detalhes_database = {
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["classe"] = "PET",
 						}, -- [2]
@@ -4679,13 +4679,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C092C",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C092C",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -4707,7 +4707,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7686,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -4733,26 +4735,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					1298, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 336,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -4796,9 +4779,7 @@ _detalhes_database = {
 				},
 				["TimeData"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7686,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4822,7 +4803,26 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105801.855,
 				["contra"] = "Scalding Whelp",
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1298, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 336,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 			}, -- [6]
 			{
@@ -4841,8 +4841,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2568.007786,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -4864,7 +4863,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 77,
 										["targets"] = {
 											["Scalding Whelp"] = 424,
 										},
@@ -4886,70 +4885,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 146,
 										["n_amt"] = 3,
-										["n_max"] = 77,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[415320] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 82,
-										},
-										["n_total"] = 82,
-										["n_min"] = 82,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 82,
-										["c_max"] = 0,
-										["id"] = 415320,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 82,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 15,
-										},
-										["n_total"] = 15,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 15,
-										["r_amt"] = 0,
-									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 145,
 										["targets"] = {
 											["Scalding Whelp"] = 526,
 										},
@@ -4970,14 +4913,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 145,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Scalding Whelp"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 108,
 										["targets"] = {
 											["Scalding Whelp"] = 298,
 										},
@@ -4999,14 +4970,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 108,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[415320] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 82,
+										["targets"] = {
+											["Scalding Whelp"] = 82,
+										},
+										["n_total"] = 82,
+										["n_min"] = 82,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 82,
+										["c_max"] = 0,
+										["id"] = 415320,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016240,
@@ -5019,13 +5019,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1223.005463,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1223.005463,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -5037,7 +5036,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016227,
 							["totalabsorbed"] = 0.005463,
 							["ownerName"] = "Dopesnare",
@@ -5048,7 +5047,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["targets"] = {
 											["Scalding Whelp"] = 501,
 										},
@@ -5070,14 +5069,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 174,
 										["n_amt"] = 4,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 88,
 										["targets"] = {
 											["Scalding Whelp"] = 362,
 										},
@@ -5099,14 +5098,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 189,
 										["n_amt"] = 2,
-										["n_max"] = 88,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 283,
 										},
@@ -5127,14 +5126,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 283,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 77,
 										["targets"] = {
 											["Scalding Whelp"] = 77,
 										},
@@ -5155,13 +5154,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 77,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016224,
@@ -5177,7 +5177,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 436.002749,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 436.002749,
 							["friendlyfire"] = {
 							},
@@ -5206,7 +5206,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 69,
 										["targets"] = {
 											["Dopesnare"] = 69,
 											["Dopecat <Dopesnare>"] = 141,
@@ -5228,14 +5228,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 69,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 226,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 226,
 										},
@@ -5255,13 +5255,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 226,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016240,
@@ -5283,7 +5283,7 @@ _detalhes_database = {
 					["combatId"] = 487,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 444.006323,
 							["resource"] = 0.006323,
 							["targets"] = {
 								["Dopesnare"] = 444,
@@ -5292,15 +5292,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.006323,
+							["totalover"] = 133.006323,
 							["total"] = 444.006323,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 261,
-										["totalover"] = 133,
 										["id"] = 415424,
+										["totalover"] = 133,
 										["targets"] = {
 											["Dopesnare"] = 261,
 										},
@@ -5308,8 +5308,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 183,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 183,
 										},
@@ -5319,13 +5319,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 444.006323,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016228,
-							["totalover"] = 133.006323,
+							["tipo"] = 3,
+							["passiveover"] = 0.006323,
 							["alternatepower"] = 0.006323,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016228,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -5351,7 +5351,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 54,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -5364,7 +5366,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -5427,19 +5429,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 2,
 							["cc_done"] = 1.004691,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 54,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711016227,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -5460,7 +5460,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["cc_done_targets"] = {
@@ -5468,7 +5468,7 @@ _detalhes_database = {
 							},
 							["cc_done"] = 1.001204,
 							["last_event"] = 1711016216,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -5477,13 +5477,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C0912",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C0912",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -5505,7 +5505,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7685,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -5531,95 +5533,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					1345, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 444,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["amountCasts"] = {
-					["Scalding Whelp"] = {
-						["Fireball"] = 1,
-					},
-					["Dopesnare"] = {
-						["Flanking Strike"] = 1,
-						["Raptor Strike"] = 4,
-						["Wing Clip"] = 1,
-						["Intimidation"] = 1,
-					},
-					["Dopecat"] = {
-						["Growl"] = 2,
-						["Claw"] = 4,
-					},
-					["Dopecat <Dopesnare>"] = {
-						["Bite"] = 1,
-					},
-				},
-				["instance_type"] = "none",
-				["zoneName"] = "Eastern Kingdoms",
-				["data_fim"] = "11:17:07",
-				["bIsClosed"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scalding Whelp",
-				["trinketProcs"] = {
-				},
-				["TotalElapsedCombatTime"] = 11.23499999986962,
-				["CombatEndedAt"] = 3105787.838,
-				["aura_timeline"] = {
-				},
-				["data_inicio"] = "11:16:55",
-				["end_time"] = 3105788.621,
-				["mapId"] = 0,
-				["combat_id"] = 487,
-				["boss_hp"] = 1,
-				["frags"] = {
-					["Scalding Whelp"] = 1,
-				},
-				["TimeData"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 2568.007786,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 3105776.603,
-				["contra"] = "Scalding Whelp",
 				["player_last_events"] = {
 					["Dopesnare"] = {
 						{
@@ -5701,6 +5614,93 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
+				["frags_need_refresh"] = true,
+				["amountCasts"] = {
+					["Scalding Whelp"] = {
+						["Fireball"] = 1,
+					},
+					["Dopesnare"] = {
+						["Flanking Strike"] = 1,
+						["Raptor Strike"] = 4,
+						["Wing Clip"] = 1,
+						["Intimidation"] = 1,
+					},
+					["Dopecat"] = {
+						["Growl"] = 2,
+						["Claw"] = 4,
+					},
+					["Dopecat <Dopesnare>"] = {
+						["Bite"] = 1,
+					},
+				},
+				["instance_type"] = "none",
+				["zoneName"] = "Eastern Kingdoms",
+				["data_fim"] = "11:17:07",
+				["bIsClosed"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scalding Whelp",
+				["trinketProcs"] = {
+				},
+				["TotalElapsedCombatTime"] = 11.23499999986962,
+				["CombatEndedAt"] = 3105787.838,
+				["aura_timeline"] = {
+				},
+				["data_inicio"] = "11:16:55",
+				["end_time"] = 3105788.621,
+				["mapId"] = 0,
+				["combat_id"] = 487,
+				["boss_hp"] = 1,
+				["frags"] = {
+					["Scalding Whelp"] = 1,
+				},
+				["TimeData"] = {
+				},
+				["combat_counter"] = 7685,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopesnare"] = 2568.007786,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 3105776.603,
+				["contra"] = "Scalding Whelp",
+				["totals_grupo"] = {
+					1345, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 444,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
 			}, -- [7]
 			{
 				{
@@ -5718,8 +5718,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2608.00205,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -5740,7 +5739,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 80,
 										["targets"] = {
 											["Scalding Whelp"] = 495,
 										},
@@ -5749,12 +5748,12 @@ _detalhes_database = {
 										["g_dmg"] = 198,
 										["counter"] = 10,
 										["DODGE"] = 1,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 495,
+										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5763,14 +5762,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["n_max"] = 80,
-										["total"] = 495,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 141,
 										["targets"] = {
 											["Scalding Whelp"] = 388,
 										},
@@ -5791,14 +5790,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 141,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 94,
 										["targets"] = {
 											["Scalding Whelp"] = 94,
 										},
@@ -5807,12 +5806,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["MISS"] = 1,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 94,
+										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 409752,
 										["r_dmg"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5821,14 +5820,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 94,
-										["total"] = 94,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 143,
 										},
@@ -5849,14 +5848,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 15,
 										["targets"] = {
 											["Scalding Whelp"] = 15,
 										},
@@ -5877,14 +5876,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 15,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 74,
 										["targets"] = {
 											["Scalding Whelp"] = 219,
 										},
@@ -5905,14 +5904,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 145,
 										["n_amt"] = 1,
-										["n_max"] = 74,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016215,
@@ -5925,13 +5925,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1254.002219,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1254.002219,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -5943,7 +5942,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016215,
 							["totalabsorbed"] = 0.002219,
 							["ownerName"] = "Dopesnare",
@@ -5954,7 +5953,7 @@ _detalhes_database = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 91,
 										["targets"] = {
 											["Scalding Whelp"] = 898,
 										},
@@ -5963,12 +5962,12 @@ _detalhes_database = {
 										["g_dmg"] = 214,
 										["counter"] = 10,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 898,
+										["c_max"] = 182,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 182,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5977,14 +5976,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 509,
 										["n_amt"] = 2,
-										["n_max"] = 91,
-										["total"] = 898,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 96,
 										["targets"] = {
 											["Scalding Whelp"] = 277,
 										},
@@ -5993,12 +5992,12 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 5,
 										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 277,
+										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 16832,
 										["r_dmg"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6007,14 +6006,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 96,
-										["total"] = 277,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -6036,14 +6035,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 79,
 										["targets"] = {
 											["Scalding Whelp"] = 79,
 										},
@@ -6064,13 +6063,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 79,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016215,
@@ -6086,7 +6086,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1006.005677,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 1006.005677,
 							["friendlyfire"] = {
 							},
@@ -6117,7 +6117,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 109,
 										["targets"] = {
 											["Tuzak"] = 183,
 											["Dopecat <Dopesnare>"] = 173,
@@ -6139,14 +6139,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["n_max"] = 109,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 225,
 										["targets"] = {
 											["Tuzak"] = 225,
 											["Dopecat <Dopesnare>"] = 425,
@@ -6167,13 +6167,13 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 225,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016190,
@@ -6195,7 +6195,7 @@ _detalhes_database = {
 					["combatId"] = 486,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 417.002618,
 							["resource"] = 0.002618,
 							["targets"] = {
 								["Dopesnare"] = 417,
@@ -6204,15 +6204,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.002618,
+							["totalover"] = 369.002618,
 							["total"] = 417.002618,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 270,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 270,
 										},
@@ -6220,8 +6220,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 147,
-										["totalover"] = 369,
 										["id"] = 415424,
+										["totalover"] = 369,
 										["targets"] = {
 											["Dopesnare"] = 147,
 										},
@@ -6231,13 +6231,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 417.002618,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016192,
-							["totalover"] = 369.002618,
+							["tipo"] = 3,
+							["passiveover"] = 0.002618,
 							["alternatepower"] = 0.002618,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016192,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -6275,10 +6275,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 64,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 64,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -6341,14 +6341,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 8,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016192,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016192,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -6359,8 +6359,8 @@ _detalhes_database = {
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["classe"] = "PET",
 						}, -- [2]
@@ -6369,13 +6369,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC08CE",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC08CE",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -6396,7 +6396,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7684,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -6456,25 +6458,7 @@ _detalhes_database = {
 				["CombatEndedAt"] = 3105753.437,
 				["aura_timeline"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Dopesnare"] = 2543.00205,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "11:16:17",
 				["end_time"] = 3105753.653,
 				["mapId"] = 0,
 				["combat_id"] = 486,
@@ -6483,9 +6467,6 @@ _detalhes_database = {
 					["Scalding Whelp"] = 2,
 				},
 				["TimeData"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
 				},
 				["totals_grupo"] = {
 					1354, -- [1]
@@ -6510,9 +6491,28 @@ _detalhes_database = {
 				},
 				["spells_cast_timeline"] = {
 				},
+				["combat_counter"] = 7684,
 				["start_time"] = 3105738.569,
 				["contra"] = "Scalding Whelp",
-				["data_inicio"] = "11:16:17",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Dopesnare"] = 2543.00205,
+						}, -- [1]
+					},
+				},
 			}, -- [8]
 			{
 				{
@@ -6530,8 +6530,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2364.006886,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -6552,7 +6551,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 500,
 										},
@@ -6574,71 +6573,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 7,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[409752] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 303,
-										},
-										["n_total"] = 303,
-										["n_min"] = 94,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 303,
-										["c_max"] = 0,
-										["id"] = 409752,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 105,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 15,
-										},
-										["n_total"] = 15,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 15,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 15,
-										["r_amt"] = 0,
-									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 149,
 										["targets"] = {
 											["Scalding Whelp"] = 285,
 										},
@@ -6660,14 +6602,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 149,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Scalding Whelp"] = 15,
+										},
+										["n_total"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 15,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 89,
 										["targets"] = {
 											["Scalding Whelp"] = 89,
 										},
@@ -6688,14 +6659,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 89,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[409752] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 105,
+										["targets"] = {
+											["Scalding Whelp"] = 303,
+										},
+										["n_total"] = 303,
+										["n_min"] = 94,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 303,
+										["c_max"] = 0,
+										["id"] = 409752,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016164,
@@ -6708,13 +6708,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1172.006841,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1172.006841,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -6726,7 +6725,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016165,
 							["totalabsorbed"] = 0.006841,
 							["ownerName"] = "Dopesnare",
@@ -6737,7 +6736,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 82,
 										["targets"] = {
 											["Scalding Whelp"] = 409,
 										},
@@ -6759,14 +6758,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 173,
 										["n_amt"] = 2,
-										["n_max"] = 82,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 100,
 										["targets"] = {
 											["Scalding Whelp"] = 386,
 										},
@@ -6787,14 +6786,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 100,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 291,
 										},
@@ -6815,14 +6814,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 291,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["targets"] = {
 											["Scalding Whelp"] = 86,
 										},
@@ -6843,14 +6842,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14919] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -6872,13 +6871,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016163,
@@ -6894,7 +6894,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 128.002436,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 128.002436,
 							["friendlyfire"] = {
 							},
@@ -6922,7 +6922,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 128,
 										},
@@ -6943,13 +6943,13 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016163,
@@ -6971,7 +6971,7 @@ _detalhes_database = {
 					["combatId"] = 485,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 434.008418,
 							["resource"] = 0.008418,
 							["targets"] = {
 								["Dopesnare"] = 434,
@@ -6980,15 +6980,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.008418,
+							["totalover"] = 293.008418,
 							["total"] = 434.008418,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 235,
-										["totalover"] = 293,
 										["id"] = 415424,
+										["totalover"] = 293,
 										["targets"] = {
 											["Dopesnare"] = 235,
 										},
@@ -6996,8 +6996,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 199,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 199,
 										},
@@ -7007,13 +7007,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 434.008418,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016164,
-							["totalover"] = 293.008418,
+							["tipo"] = 3,
+							["passiveover"] = 0.008418,
 							["alternatepower"] = 0.008418,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016164,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -7039,7 +7039,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 48,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -7052,7 +7054,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -7115,19 +7117,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 0,
 							["cc_done"] = 1.001285,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 48,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711016165,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -7148,7 +7148,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["cc_done_targets"] = {
@@ -7156,7 +7156,7 @@ _detalhes_database = {
 							},
 							["cc_done"] = 1.001479,
 							["last_event"] = 1711016156,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -7180,7 +7180,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7683,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -7206,26 +7208,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					1192, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 434,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -7267,9 +7250,7 @@ _detalhes_database = {
 				},
 				["TimeData"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7683,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -7293,7 +7274,26 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105717.052,
 				["contra"] = "Scalding Whelp",
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1192, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 434,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 			}, -- [9]
 			{
@@ -7312,8 +7312,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2663.005352,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -7335,7 +7334,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 64,
 										["targets"] = {
 											["Scalding Whelp"] = 252,
 										},
@@ -7357,14 +7356,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 64,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 139,
 										["targets"] = {
 											["Scalding Whelp"] = 548,
 										},
@@ -7385,14 +7384,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 139,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 494,
 										},
@@ -7413,14 +7412,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 207,
 										["n_amt"] = 3,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[781] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -7442,14 +7441,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["targets"] = {
 											["Scalding Whelp"] = 16,
 										},
@@ -7470,14 +7469,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 91,
 										["targets"] = {
 											["Scalding Whelp"] = 91,
 										},
@@ -7498,14 +7497,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 91,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016154,
@@ -7518,13 +7518,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1262.006055,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1262.006055,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -7536,7 +7535,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016155,
 							["totalabsorbed"] = 0.006055,
 							["ownerName"] = "Dopesnare",
@@ -7547,7 +7546,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 5,
-										["b_dmg"] = 0,
+										["n_max"] = 80,
 										["targets"] = {
 											["Scalding Whelp"] = 625,
 										},
@@ -7569,14 +7568,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 173,
 										["n_amt"] = 1,
-										["n_max"] = 80,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 92,
 										["targets"] = {
 											["Scalding Whelp"] = 270,
 										},
@@ -7598,14 +7597,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 178,
 										["n_amt"] = 1,
-										["n_max"] = 92,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 148,
 										["targets"] = {
 											["Scalding Whelp"] = 290,
 										},
@@ -7626,14 +7625,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 148,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 77,
 										["targets"] = {
 											["Scalding Whelp"] = 77,
 										},
@@ -7654,13 +7653,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 77,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016154,
@@ -7676,7 +7676,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 706.006741,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 706.006741,
 							["friendlyfire"] = {
 							},
@@ -7705,7 +7705,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 46,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 46,
 											["Dopecat"] = 0,
@@ -7728,14 +7728,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 46,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 243,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 417,
 											["Dopesnare"] = 243,
@@ -7756,13 +7756,13 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 243,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016154,
@@ -7784,7 +7784,7 @@ _detalhes_database = {
 					["combatId"] = 484,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 456.005403,
 							["resource"] = 0.005403,
 							["targets"] = {
 								["Dopesnare"] = 456,
@@ -7793,15 +7793,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.005403,
+							["totalover"] = 192.005403,
 							["total"] = 456.005403,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 325,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 325,
 										},
@@ -7809,8 +7809,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 131,
-										["totalover"] = 192,
 										["id"] = 415424,
+										["totalover"] = 192,
 										["targets"] = {
 											["Dopesnare"] = 131,
 										},
@@ -7820,13 +7820,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 456.005403,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016093,
-							["totalover"] = 192.005403,
+							["tipo"] = 3,
+							["passiveover"] = 0.005403,
 							["alternatepower"] = 0.005403,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016093,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -7852,10 +7852,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 57,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 57,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -7918,14 +7918,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 5,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016092,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016092,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -7936,8 +7936,8 @@ _detalhes_database = {
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["classe"] = "PET",
 						}, -- [2]
@@ -7946,13 +7946,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C0875",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C0875",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -7974,7 +7974,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7682,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -8000,26 +8002,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					1401, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 456,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -8064,9 +8047,7 @@ _detalhes_database = {
 				},
 				["TimeData"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7682,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -8090,7 +8071,26 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105641.781,
 				["contra"] = "Scalding Whelp",
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1401, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 456,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 			}, -- [10]
 			{
@@ -8109,8 +8109,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2543.003397,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -8131,7 +8130,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 57,
 										["targets"] = {
 											["Scalding Whelp"] = 302,
 										},
@@ -8153,42 +8152,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 112,
 										["n_amt"] = 2,
-										["n_max"] = 57,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[409752] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 215,
-										},
-										["n_total"] = 215,
-										["n_min"] = 105,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 215,
-										["c_max"] = 0,
-										["id"] = 409752,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 110,
-										["r_amt"] = 0,
-									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 156,
 										["targets"] = {
 											["Scalding Whelp"] = 288,
 										},
@@ -8209,14 +8180,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 156,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[409752] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 110,
+										["targets"] = {
+											["Scalding Whelp"] = 215,
+										},
+										["n_total"] = 215,
+										["n_min"] = 105,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 215,
+										["c_max"] = 0,
+										["id"] = 409752,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 113,
 										},
@@ -8237,14 +8236,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 78,
 										["targets"] = {
 											["Scalding Whelp"] = 78,
 										},
@@ -8265,14 +8264,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 78,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016078,
@@ -8285,13 +8285,12 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["total_without_pet"] = 1547.003498,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1547.003498,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -8303,7 +8302,7 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["end_time"] = 1711016080,
 							["totalabsorbed"] = 0.003498,
 							["ownerName"] = "Dopesnare",
@@ -8314,7 +8313,7 @@ _detalhes_database = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 925,
 										},
@@ -8335,14 +8334,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 502,
 										["n_amt"] = 5,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 95,
 										["targets"] = {
 											["Scalding Whelp"] = 541,
 										},
@@ -8363,14 +8362,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 174,
 										["n_amt"] = 4,
-										["n_max"] = 95,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 81,
 										["targets"] = {
 											["Scalding Whelp"] = 81,
 										},
@@ -8391,13 +8390,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 81,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016078,
@@ -8413,7 +8413,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 387.003297,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 387.003297,
 							["friendlyfire"] = {
 							},
@@ -8441,7 +8441,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 48,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 164,
 										},
@@ -8462,14 +8462,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 78,
 										["n_amt"] = 2,
-										["n_max"] = 48,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 223,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 223,
 										},
@@ -8489,13 +8489,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 223,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016060,
@@ -8518,7 +8518,7 @@ _detalhes_database = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["totalover"] = 0.002265,
 							["total_without_pet"] = 412.002265,
 							["total"] = 412.002265,
@@ -8536,7 +8536,7 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.002265,
 							["healing_taken"] = 0.002265,
-							["classe"] = "HUNTER",
+							["heal_enemy_amt"] = 0,
 							["end_time"] = 1711016062,
 							["healing_from"] = {
 							},
@@ -8557,12 +8557,12 @@ _detalhes_database = {
 										["counter"] = 4,
 										["overheal"] = 0,
 										["total"] = 412,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["id"] = 3662,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 4,
@@ -8573,21 +8573,22 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["start_time"] = 1711016057,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-022772AA",
 							["custom"] = 0,
-							["last_event"] = 1711016062,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002265,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1711016062,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["totalover"] = 0.006206,
 							["total_without_pet"] = 0.006206,
 							["total"] = 0.006206,
@@ -8601,8 +8602,7 @@ _detalhes_database = {
 							["last_hps"] = 0,
 							["targets"] = {
 							},
-							["healing_from"] = {
-								["Dopesnare"] = true,
+							["targets_overheal"] = {
 							},
 							["totalover_without_pet"] = 0.006206,
 							["tipo"] = 2,
@@ -8617,12 +8617,12 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["start_time"] = 1711016062,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["custom"] = 0,
 							["last_event"] = 0,
 							["totaldenied"] = 0.006206,
 							["delay"] = 0,
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 						}, -- [2]
 					},
 				}, -- [2]
@@ -8631,7 +8631,7 @@ _detalhes_database = {
 					["combatId"] = 483,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 721.001808,
 							["resource"] = 0.001808,
 							["targets"] = {
 								["Dopesnare"] = 721,
@@ -8640,15 +8640,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.001808,
+							["totalover"] = 61.001808,
 							["total"] = 721.001808,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 192,
-										["totalover"] = 61,
 										["id"] = 415424,
+										["totalover"] = 61,
 										["targets"] = {
 											["Dopesnare"] = 192,
 										},
@@ -8656,8 +8656,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 529,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 529,
 										},
@@ -8667,13 +8667,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 721.001808,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016063,
-							["totalover"] = 61.001808,
+							["tipo"] = 3,
+							["passiveover"] = 0.001808,
 							["alternatepower"] = 0.001808,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016063,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -8700,10 +8700,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 53,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 53,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -8766,14 +8766,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 0,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016062,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016062,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -8785,23 +8785,23 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC0860",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC0860",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -8823,7 +8823,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7681,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -8849,26 +8851,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					996, -- [1]
-					412, -- [2]
-					{
-						0, -- [1]
-						[0] = 721,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["amountCasts"] = {
@@ -8911,9 +8894,7 @@ _detalhes_database = {
 				},
 				["TimeData"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7681,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -8938,7 +8919,26 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105613.464,
 				["contra"] = "Scalding Whelp",
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					996, -- [1]
+					412, -- [2]
+					{
+						0, -- [1]
+						[0] = 721,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 			}, -- [11]
 			{
@@ -8957,8 +8957,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1559.007413,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -8979,7 +8978,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 68,
 										["targets"] = {
 											["Scalding Whelp"] = 220,
 										},
@@ -9000,14 +8999,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 68,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 86,
 										["targets"] = {
 											["Scalding Whelp"] = 86,
 										},
@@ -9028,14 +9027,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 86,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 198,
 										},
@@ -9056,14 +9055,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 198,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 76,
 										},
@@ -9084,14 +9083,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14284] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 56,
 										["targets"] = {
 											["Scalding Whelp"] = 56,
 										},
@@ -9112,14 +9111,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 56,
+										["b_dmg"] = 0,
 										["r_amt"] = 1,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 131,
 										["targets"] = {
 											["Scalding Whelp"] = 131,
 										},
@@ -9140,14 +9139,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 131,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016043,
@@ -9167,8 +9167,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 792.005569,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -9190,7 +9189,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 477,
 										},
@@ -9199,12 +9198,12 @@ _detalhes_database = {
 										["g_dmg"] = 154,
 										["counter"] = 7,
 										["MISS"] = 1,
-										["r_amt"] = 0,
-										["spellschool"] = 1,
+										["total"] = 477,
+										["c_max"] = 166,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["c_max"] = 166,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -9213,14 +9212,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 323,
 										["n_amt"] = 0,
-										["n_max"] = 0,
-										["total"] = 477,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 90,
 										},
@@ -9242,14 +9241,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 141,
 										["targets"] = {
 											["Scalding Whelp"] = 141,
 										},
@@ -9270,14 +9269,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 141,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[24394] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -9299,14 +9298,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 84,
 										["targets"] = {
 											["Scalding Whelp"] = 84,
 										},
@@ -9327,14 +9326,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 84,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016043,
@@ -9350,7 +9350,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 604.004442,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 604.004442,
 							["friendlyfire"] = {
 							},
@@ -9378,7 +9378,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 67,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 122,
 										},
@@ -9399,14 +9399,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 67,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 247,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 482,
 										},
@@ -9426,13 +9426,13 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 247,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016042,
@@ -9449,7 +9449,7 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
@@ -9472,11 +9472,11 @@ _detalhes_database = {
 								["Dopecat <Dopesnare>"] = 103,
 							},
 							["totalover_without_pet"] = 0.006162,
-							["aID"] = "5826-022772AA",
+							["tipo"] = 2,
 							["healing_taken"] = 0.006162,
 							["fight_component"] = true,
 							["end_time"] = 1711016044,
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
 							["nome"] = "Dopesnare",
 							["spells"] = {
@@ -9495,12 +9495,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["overheal"] = 0,
 										["total"] = 103,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["id"] = 3662,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
@@ -9513,19 +9513,20 @@ _detalhes_database = {
 							["start_time"] = 1711016042,
 							["classe"] = "HUNTER",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1711016042,
 							["totaldenied"] = 0.006162,
 							["delay"] = 0,
-							["last_event"] = 1711016042,
+							["aID"] = "5826-022772AA",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.002117,
 							["total_without_pet"] = 0.002117,
 							["total"] = 0.002117,
@@ -9554,15 +9555,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["last_event"] = 0,
-							["healing_from"] = {
-								["Dopesnare"] = true,
+							["tipo"] = 2,
+							["targets_overheal"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 0,
 							["totaldenied"] = 0.002117,
 							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [2]
@@ -9575,8 +9575,8 @@ _detalhes_database = {
 							["resource"] = 0.005606,
 							["pets"] = {
 							},
-							["aID"] = "5826-022772AA",
-							["totalover"] = 116.005606,
+							["classe"] = "HUNTER",
+							["passiveover"] = 0.005606,
 							["total"] = 619.005606,
 							["serial"] = "Player-5826-022772AA",
 							["received"] = 619.005606,
@@ -9590,8 +9590,8 @@ _detalhes_database = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 471,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 471,
 										},
@@ -9599,8 +9599,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 148,
-										["totalover"] = 116,
 										["id"] = 415424,
+										["totalover"] = 116,
 										["targets"] = {
 											["Dopesnare"] = 148,
 										},
@@ -9610,10 +9610,10 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.005606,
-							["tipo"] = 3,
+							["aID"] = "5826-022772AA",
+							["totalover"] = 116.005606,
 							["last_event"] = 1711016045,
+							["tipo"] = 3,
 							["fight_component"] = true,
 						}, -- [1]
 					},
@@ -9640,8 +9640,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 48,
-							["classe"] = "HUNTER",
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["aID"] = "5826-022772AA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -9704,32 +9706,30 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 7,
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["last_event"] = 1711016044,
+							["buff_uptime"] = 48,
+							["tipo"] = 4,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["grupo"] = true,
+							["last_event"] = 1711016044,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-5826-022772AA",
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["aID"] = "5826-022772AA",
-							["serial"] = "Player-5826-022772AA",
-							["nome"] = "Dopesnare",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC083B",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC083B",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -9740,10 +9740,10 @@ _detalhes_database = {
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -9764,8 +9764,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7680,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					2163, -- [1]
 					103, -- [2]
@@ -9835,9 +9838,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7680,
 				["totals_grupo"] = {
 					1559, -- [1]
 					103, -- [2]
@@ -9885,8 +9886,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105594.813,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [12]
 			{
 				{
@@ -9904,8 +9904,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2621.004109,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -9927,7 +9926,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 416,
 										},
@@ -9949,70 +9948,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[13552] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 114,
-										},
-										["n_total"] = 114,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 114,
-										["c_max"] = 0,
-										["id"] = 13552,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 38,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 31,
-										},
-										["n_total"] = 31,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 16,
-										["r_amt"] = 0,
-									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 98,
 										["targets"] = {
 											["Scalding Whelp"] = 378,
 										},
@@ -10033,14 +9976,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 98,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scalding Whelp"] = 31,
+										},
+										["n_total"] = 31,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 134,
 										["targets"] = {
 											["Scalding Whelp"] = 385,
 										},
@@ -10062,14 +10033,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 134,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[13552] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 38,
+										["targets"] = {
+											["Scalding Whelp"] = 114,
+										},
+										["n_total"] = 114,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 114,
+										["c_max"] = 0,
+										["id"] = 13552,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016001,
@@ -10089,8 +10089,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1297.008423,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -10112,7 +10111,7 @@ _detalhes_database = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 84,
 										["targets"] = {
 											["Scalding Whelp"] = 803,
 										},
@@ -10134,14 +10133,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 491,
 										["n_amt"] = 2,
-										["n_max"] = 84,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 360,
 										},
@@ -10162,14 +10161,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 171,
 										["n_amt"] = 2,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 134,
 										["targets"] = {
 											["Scalding Whelp"] = 134,
 										},
@@ -10190,14 +10189,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 134,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016001,
@@ -10213,7 +10213,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 703.003502,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 703.003502,
 							["friendlyfire"] = {
 							},
@@ -10242,7 +10242,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 243,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 469,
 											["Dopesnare"] = 234,
@@ -10263,13 +10263,13 @@ _detalhes_database = {
 										["successful_casted"] = 3,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 243,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711016000,
@@ -10291,7 +10291,7 @@ _detalhes_database = {
 					["combatId"] = 481,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 515.003693,
 							["resource"] = 0.003693,
 							["targets"] = {
 								["Dopesnare"] = 515,
@@ -10300,15 +10300,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.003693,
+							["totalover"] = 144.003693,
 							["total"] = 515.003693,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 194,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 194,
 										},
@@ -10316,8 +10316,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 321,
-										["totalover"] = 144,
 										["id"] = 415424,
+										["totalover"] = 144,
 										["targets"] = {
 											["Dopesnare"] = 321,
 										},
@@ -10327,13 +10327,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 515.003693,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711016003,
-							["totalover"] = 144.003693,
+							["tipo"] = 3,
+							["passiveover"] = 0.003693,
 							["alternatepower"] = 0.003693,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711016003,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -10370,10 +10370,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 44,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 44,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -10425,14 +10425,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 17,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711016002,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711016002,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -10440,27 +10440,27 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["last_event"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC0821",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC0821",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -10481,8 +10481,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7679,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					3324, -- [1]
 					0, -- [2]
@@ -10550,9 +10553,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7679,
 				["totals_grupo"] = {
 					2621, -- [1]
 					0, -- [2]
@@ -10598,8 +10599,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105552.394,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [13]
 			{
 				{
@@ -10617,8 +10617,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2671.005636,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -10640,7 +10639,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 72,
 										["targets"] = {
 											["Scalding Whelp"] = 383,
 										},
@@ -10662,70 +10661,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 72,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[415341] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 527,
-										},
-										["n_total"] = 527,
-										["n_min"] = 170,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 527,
-										["c_max"] = 0,
-										["id"] = 415341,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 180,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 30,
-										},
-										["n_total"] = 30,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 30,
-										["c_max"] = 0,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 2,
-										["n_max"] = 15,
-										["r_amt"] = 0,
-									},
 									[409752] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 122,
 										["targets"] = {
 											["Scalding Whelp"] = 474,
 										},
@@ -10746,14 +10689,42 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 239,
 										["n_amt"] = 2,
-										["n_max"] = 122,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Scalding Whelp"] = 30,
+										},
+										["n_total"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 83,
 										["targets"] = {
 											["Scalding Whelp"] = 83,
 										},
@@ -10774,14 +10745,43 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 83,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[415341] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 180,
+										["targets"] = {
+											["Scalding Whelp"] = 527,
+										},
+										["n_total"] = 527,
+										["n_min"] = 170,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 527,
+										["c_max"] = 0,
+										["id"] = 415341,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015983,
@@ -10801,8 +10801,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1174.008508,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -10824,7 +10823,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 2,
 										["g_amt"] = 1,
-										["b_dmg"] = 123,
+										["n_max"] = 85,
 										["targets"] = {
 											["Scalding Whelp"] = 598,
 										},
@@ -10846,14 +10845,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 315,
 										["n_amt"] = 3,
-										["n_max"] = 85,
+										["b_dmg"] = 123,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 96,
 										["targets"] = {
 											["Scalding Whelp"] = 353,
 										},
@@ -10874,14 +10873,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 173,
 										["n_amt"] = 2,
-										["n_max"] = 96,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 141,
 										["targets"] = {
 											["Scalding Whelp"] = 141,
 										},
@@ -10902,14 +10901,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 141,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 82,
 										["targets"] = {
 											["Scalding Whelp"] = 82,
 										},
@@ -10930,14 +10929,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 82,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015983,
@@ -10953,7 +10953,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 675.00712,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 675.00712,
 							["friendlyfire"] = {
 							},
@@ -10984,7 +10984,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 93,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 141,
 											["Dopesnare"] = 93,
@@ -11006,14 +11006,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 93,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 244,
 										["targets"] = {
 											["Kohlschtälz"] = 244,
 											["Dopesnare"] = 197,
@@ -11034,13 +11034,13 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 244,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015982,
@@ -11062,7 +11062,7 @@ _detalhes_database = {
 					["combatId"] = 480,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 396.001531,
 							["resource"] = 0.001531,
 							["targets"] = {
 								["Dopesnare"] = 396,
@@ -11071,15 +11071,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.001531,
+							["totalover"] = 139.001531,
 							["total"] = 396.001531,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 318,
-										["totalover"] = 139,
 										["id"] = 415424,
+										["totalover"] = 139,
 										["targets"] = {
 											["Dopesnare"] = 318,
 										},
@@ -11087,8 +11087,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 78,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 78,
 										},
@@ -11098,13 +11098,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 396.001531,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711015985,
-							["totalover"] = 139.001531,
+							["tipo"] = 3,
+							["passiveover"] = 0.001531,
 							["alternatepower"] = 0.001531,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711015985,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -11130,10 +11130,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
+							["buff_uptime"] = 64,
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
 							},
-							["buff_uptime"] = 64,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -11196,14 +11196,14 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 5,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
+							["tipo"] = 4,
+							["last_event"] = 1711015986,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1711015986,
-							["tipo"] = 4,
 							["serial"] = "Player-5826-022772AA",
 							["aID"] = "5826-022772AA",
 						}, -- [1]
@@ -11211,27 +11211,27 @@ _detalhes_database = {
 							["flag_original"] = 4369,
 							["pets"] = {
 							},
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["last_event"] = 0,
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00017C0821",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00017C0821",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -11241,7 +11241,9 @@ _detalhes_database = {
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 1,
+				["raid_roster"] = {
+					["Dopesnare"] = "Player-5826-022772AA",
+				},
 				["CombatStartedAt"] = 3105552.277,
 				["tempo_start"] = 1711015973,
 				["last_events_tables"] = {
@@ -11250,7 +11252,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7678,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -11317,11 +11321,11 @@ _detalhes_database = {
 				["playing_solo"] = true,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Cuteipie"] = 1,
+					["Scalding Whelp"] = 2,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7678,
 				["totals_grupo"] = {
 					2671, -- [1]
 					0, -- [2]
@@ -11343,9 +11347,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["raid_roster"] = {
-					["Dopesnare"] = "Player-5826-022772AA",
-				},
+				["boss_hp"] = 1,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -11368,9 +11370,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105534.66,
 				["contra"] = "Scalding Whelp",
-				["frags"] = {
-					["Cuteipie"] = 1,
-					["Scalding Whelp"] = 2,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [14]
 			{
@@ -11389,8 +11389,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2574.008669,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -11411,7 +11410,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 76,
 										["targets"] = {
 											["Scalding Whelp"] = 360,
 										},
@@ -11433,14 +11432,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 76,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 90,
 										["targets"] = {
 											["Scalding Whelp"] = 163,
 										},
@@ -11461,14 +11460,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 90,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 105,
 										["targets"] = {
 											["Scalding Whelp"] = 300,
 										},
@@ -11489,14 +11488,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 105,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 76,
 										},
@@ -11517,14 +11516,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["targets"] = {
 											["Scalding Whelp"] = 16,
 										},
@@ -11545,14 +11544,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 144,
 										["targets"] = {
 											["Scalding Whelp"] = 276,
 										},
@@ -11573,14 +11572,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 144,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015967,
@@ -11600,8 +11600,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1383.001834,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -11623,7 +11622,7 @@ _detalhes_database = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 3,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 624,
 										},
@@ -11645,14 +11644,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 154,
 										["n_amt"] = 3,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 359,
 										},
@@ -11674,14 +11673,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 173,
 										["n_amt"] = 2,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 144,
 										["targets"] = {
 											["Scalding Whelp"] = 144,
 										},
@@ -11702,14 +11701,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 144,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 82,
 										["targets"] = {
 											["Scalding Whelp"] = 256,
 										},
@@ -11730,14 +11729,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 174,
 										["n_amt"] = 1,
-										["n_max"] = 82,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409372] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -11759,14 +11758,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015967,
@@ -11782,7 +11782,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 716.006513,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 716.006513,
 							["friendlyfire"] = {
 							},
@@ -11812,7 +11812,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 45,
 										},
@@ -11833,14 +11833,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 250,
 										["targets"] = {
 											["Cuteipie"] = 485,
 											["Dopecat <Dopesnare>"] = 186,
@@ -11861,13 +11861,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 250,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015972,
@@ -11889,7 +11889,7 @@ _detalhes_database = {
 					["combatId"] = 479,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 505.002736,
 							["resource"] = 0.002736,
 							["targets"] = {
 								["Dopesnare"] = 505,
@@ -11898,15 +11898,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.002736,
+							["totalover"] = 207.002736,
 							["total"] = 505.002736,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 317,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 317,
 										},
@@ -11914,8 +11914,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 188,
-										["totalover"] = 207,
 										["id"] = 415424,
+										["totalover"] = 207,
 										["targets"] = {
 											["Dopesnare"] = 188,
 										},
@@ -11925,13 +11925,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 505.002736,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711015970,
-							["totalover"] = 207.002736,
+							["tipo"] = 3,
+							["passiveover"] = 0.002736,
 							["alternatepower"] = 0.002736,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711015970,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -11968,7 +11968,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 55,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -11981,7 +11983,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -12044,19 +12046,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 13,
 							["cc_done"] = 1.004019,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 55,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711015967,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -12077,16 +12077,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["cc_done"] = 1.002164,
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["cc_done"] = 1.002164,
+							["ownerName"] = "Dopesnare",
 							["last_event"] = 1711015957,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -12095,13 +12095,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C0807",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C0807",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -12121,8 +12121,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7677,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					5902, -- [1]
 					0, -- [2]
@@ -12192,9 +12195,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7677,
 				["totals_grupo"] = {
 					2574, -- [1]
 					0, -- [2]
@@ -12240,8 +12241,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105516.794,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [15]
 			{
 				{
@@ -12259,8 +12259,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 5247.005811,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -12282,7 +12281,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 9,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 814,
 										},
@@ -12304,14 +12303,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 160,
 										["targets"] = {
 											["Scalding Whelp"] = 883,
 										},
@@ -12333,14 +12332,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 6,
-										["n_max"] = 160,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 119,
 										["targets"] = {
 											["Scalding Whelp"] = 720,
 										},
@@ -12362,14 +12361,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 7,
-										["n_max"] = 119,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 171,
 										},
@@ -12390,14 +12389,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 2,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 15,
 										["targets"] = {
 											["Scalding Whelp"] = 30,
 										},
@@ -12418,14 +12417,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 15,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[781] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -12447,14 +12446,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 84,
 										["targets"] = {
 											["Scalding Whelp"] = 158,
 										},
@@ -12475,14 +12474,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 84,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015902,
@@ -12502,8 +12502,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2471.006505,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -12525,7 +12524,7 @@ _detalhes_database = {
 										["c_amt"] = 3,
 										["b_amt"] = 0,
 										["g_amt"] = 7,
-										["b_dmg"] = 0,
+										["n_max"] = 88,
 										["targets"] = {
 											["Scalding Whelp"] = 1378,
 										},
@@ -12547,14 +12546,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 476,
 										["n_amt"] = 6,
-										["n_max"] = 88,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 376,
 										},
@@ -12576,14 +12575,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 137,
 										["targets"] = {
 											["Scalding Whelp"] = 558,
 										},
@@ -12604,14 +12603,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 287,
 										["n_amt"] = 2,
-										["n_max"] = 137,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 80,
 										["targets"] = {
 											["Scalding Whelp"] = 159,
 										},
@@ -12632,14 +12631,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 80,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409372] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -12661,14 +12660,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015902,
@@ -12684,7 +12684,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1559.006711,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 1559.006711,
 							["friendlyfire"] = {
 							},
@@ -12713,7 +12713,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Dopecat"] = 0,
 										},
@@ -12735,14 +12735,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 263,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 1079,
 											["Dopesnare"] = 480,
@@ -12763,13 +12763,13 @@ _detalhes_database = {
 										["successful_casted"] = 7,
 										["c_total"] = 0,
 										["n_amt"] = 7,
-										["n_max"] = 263,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015898,
@@ -12786,7 +12786,7 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["pets"] = {
 								"Dopecat <Dopesnare>", -- [1]
@@ -12809,11 +12809,11 @@ _detalhes_database = {
 								["Dopecat <Dopesnare>"] = 103,
 							},
 							["totalover_without_pet"] = 0.007231,
-							["aID"] = "5826-022772AA",
+							["tipo"] = 2,
 							["healing_taken"] = 0.007231,
 							["fight_component"] = true,
 							["end_time"] = 1711015903,
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
 							["nome"] = "Dopesnare",
 							["spells"] = {
@@ -12832,12 +12832,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["overheal"] = 0,
 										["total"] = 103,
-										["spellschool"] = 8,
+										["c_max"] = 0,
 										["id"] = 3662,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
-										["c_max"] = 0,
+										["spellschool"] = 8,
 										["c_total"] = 0,
 										["totaldenied"] = 0,
 										["n_amt"] = 1,
@@ -12850,19 +12850,20 @@ _detalhes_database = {
 							["start_time"] = 1711015901,
 							["classe"] = "HUNTER",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1711015901,
 							["totaldenied"] = 0.007231,
 							["delay"] = 0,
-							["last_event"] = 1711015901,
+							["aID"] = "5826-022772AA",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Dopesnare"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "PET",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.006766,
 							["total_without_pet"] = 0.006766,
 							["total"] = 0.006766,
@@ -12891,15 +12892,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["last_event"] = 0,
-							["healing_from"] = {
-								["Dopesnare"] = true,
+							["tipo"] = 2,
+							["targets_overheal"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 0,
 							["totaldenied"] = 0.006766,
 							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "PET",
 						}, -- [2]
 					},
 				}, -- [2]
@@ -12912,8 +12912,8 @@ _detalhes_database = {
 							["resource"] = 0.001744,
 							["pets"] = {
 							},
-							["aID"] = "5826-022772AA",
-							["totalover"] = 379.001744,
+							["classe"] = "HUNTER",
+							["passiveover"] = 0.001744,
 							["total"] = 1327.001744,
 							["serial"] = "Player-5826-022772AA",
 							["received"] = 1327.001744,
@@ -12927,8 +12927,8 @@ _detalhes_database = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 713,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 713,
 										},
@@ -12936,8 +12936,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 614,
-										["totalover"] = 379,
 										["id"] = 415424,
+										["totalover"] = 379,
 										["targets"] = {
 											["Dopesnare"] = 614,
 										},
@@ -12947,10 +12947,10 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["classe"] = "HUNTER",
-							["passiveover"] = 0.001744,
-							["tipo"] = 3,
+							["aID"] = "5826-022772AA",
+							["totalover"] = 379.001744,
 							["last_event"] = 1711015910,
+							["tipo"] = 3,
 							["fight_component"] = true,
 						}, -- [1]
 					},
@@ -12988,8 +12988,10 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 143,
-							["classe"] = "HUNTER",
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
+							["aID"] = "5826-022772AA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -13052,19 +13054,17 @@ _detalhes_database = {
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 23,
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["last_event"] = 1711015903,
+							["buff_uptime"] = 143,
+							["tipo"] = 4,
+							["nome"] = "Dopesnare",
+							["grupo"] = true,
 							["debuff_uptime_targets"] = {
 							},
-							["grupo"] = true,
+							["last_event"] = 1711015903,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-5826-022772AA",
 							["buff_uptime_targets"] = {
 							},
-							["tipo"] = 4,
-							["aID"] = "5826-022772AA",
-							["serial"] = "Player-5826-022772AA",
-							["nome"] = "Dopesnare",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -13075,23 +13075,23 @@ _detalhes_database = {
 							["ownerName"] = "Dopesnare",
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
-							["tipo"] = 4,
 							["last_event"] = 0,
-							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0000FC07AE",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0000FC07AE",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -13112,8 +13112,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7676,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					6806, -- [1]
 					103, -- [2]
@@ -13154,8 +13157,8 @@ _detalhes_database = {
 					},
 					["Dopesnare"] = {
 						["Disengage"] = 1,
-						["Flanking Strike"] = 2,
 						["Raptor Strike"] = 8,
+						["Flanking Strike"] = 2,
 						["Mend Pet"] = 1,
 						["Wing Clip"] = 2,
 						["Serpent Sting"] = 1,
@@ -13184,9 +13187,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 2,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7676,
 				["totals_grupo"] = {
 					5247, -- [1]
 					103, -- [2]
@@ -13234,8 +13235,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105434.456,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [16]
 			{
 				{
@@ -13253,8 +13253,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2612.007225,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -13275,7 +13274,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 2,
-										["b_dmg"] = 0,
+										["n_max"] = 82,
 										["targets"] = {
 											["Scalding Whelp"] = 337,
 										},
@@ -13297,14 +13296,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 4,
-										["n_max"] = 82,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[415320] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -13326,14 +13325,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[409752] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 99,
 										["targets"] = {
 											["Scalding Whelp"] = 288,
 										},
@@ -13354,14 +13353,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 99,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[13552] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 38,
 										["targets"] = {
 											["Scalding Whelp"] = 112,
 										},
@@ -13382,14 +13381,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 38,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14267] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 16,
 										["targets"] = {
 											["Scalding Whelp"] = 31,
 										},
@@ -13410,14 +13409,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 16,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 152,
 										["targets"] = {
 											["Scalding Whelp"] = 425,
 										},
@@ -13438,14 +13437,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 152,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015865,
@@ -13465,8 +13465,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1419.007812,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -13488,7 +13487,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 1,
-										["b_dmg"] = 0,
+										["n_max"] = 88,
 										["targets"] = {
 											["Scalding Whelp"] = 652,
 										},
@@ -13509,14 +13508,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 320,
 										["n_amt"] = 3,
-										["n_max"] = 88,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 540,
 										},
@@ -13537,14 +13536,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 168,
 										["n_amt"] = 4,
-										["n_max"] = 97,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 147,
 										["targets"] = {
 											["Scalding Whelp"] = 147,
 										},
@@ -13565,14 +13564,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 147,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 80,
 										["targets"] = {
 											["Scalding Whelp"] = 80,
 										},
@@ -13593,14 +13592,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 80,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015865,
@@ -13616,7 +13616,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 271.00312,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 271.00312,
 							["friendlyfire"] = {
 							},
@@ -13644,7 +13644,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 45,
 										},
@@ -13665,14 +13665,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 226,
 										["targets"] = {
 											["Dopecat <Dopesnare>"] = 226,
 										},
@@ -13692,13 +13692,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 226,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015862,
@@ -13720,7 +13720,7 @@ _detalhes_database = {
 					["combatId"] = 477,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 599.005709,
 							["resource"] = 0.005709,
 							["targets"] = {
 								["Dopesnare"] = 599,
@@ -13729,15 +13729,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.005709,
+							["totalover"] = 195.005709,
 							["total"] = 599.005709,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415423] = {
 										["total"] = 399,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 399,
 										},
@@ -13745,8 +13745,8 @@ _detalhes_database = {
 									},
 									[415424] = {
 										["total"] = 200,
-										["totalover"] = 195,
 										["id"] = 415424,
+										["totalover"] = 195,
 										["targets"] = {
 											["Dopesnare"] = 200,
 										},
@@ -13756,13 +13756,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 599.005709,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711015868,
-							["totalover"] = 195.005709,
+							["tipo"] = 3,
+							["passiveover"] = 0.005709,
 							["alternatepower"] = 0.005709,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711015868,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -13800,7 +13800,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 52,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -13813,7 +13815,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["aID"] = "5826-022772AA",
+							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -13876,19 +13878,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 4,
 							["cc_done"] = 1.002236,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 52,
+							["aID"] = "5826-022772AA",
 							["last_event"] = 1711015866,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -13909,16 +13909,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["cc_done"] = 1.003162,
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["cc_done"] = 1.003162,
+							["ownerName"] = "Dopesnare",
 							["last_event"] = 1711015855,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -13927,13 +13927,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-00007C079F",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-00007C079F",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -13954,8 +13954,11 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7675,
-				["playing_solo"] = true,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playerTalents"] = {
+				},
 				["totals"] = {
 					2883, -- [1]
 					0, -- [2]
@@ -14024,9 +14027,7 @@ _detalhes_database = {
 				["frags"] = {
 					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7675,
 				["totals_grupo"] = {
 					2612, -- [1]
 					0, -- [2]
@@ -14072,8 +14073,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105417.357,
 				["contra"] = "Scalding Whelp",
-				["playerTalents"] = {
-				},
+				["playing_solo"] = true,
 			}, -- [17]
 			{
 				{
@@ -14091,8 +14091,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2592.00136,
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-022772AA",
 							["damage_from"] = {
@@ -14113,7 +14112,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 4,
-										["b_dmg"] = 0,
+										["n_max"] = 45,
 										["targets"] = {
 											["Scalding Whelp"] = 561,
 										},
@@ -14135,14 +14134,98 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 254,
 										["n_amt"] = 1,
-										["n_max"] = 45,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[409752] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 106,
+										["targets"] = {
+											["Scalding Whelp"] = 310,
+										},
+										["n_total"] = 310,
+										["n_min"] = 99,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 310,
+										["c_max"] = 0,
+										["id"] = 409752,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[14267] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scalding Whelp"] = 16,
+										},
+										["n_total"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 14267,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[415320] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scalding Whelp"] = 84,
+										},
+										["n_total"] = 84,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 415320,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[415341] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 136,
 										["targets"] = {
 											["Scalding Whelp"] = 271,
 										},
@@ -14164,98 +14247,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 2,
-										["n_max"] = 136,
-										["r_amt"] = 0,
-									},
-									[14267] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
 										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 16,
-										},
-										["n_total"] = 16,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 14267,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 16,
-										["r_amt"] = 0,
-									},
-									[409752] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 310,
-										},
-										["n_total"] = 310,
-										["n_min"] = 99,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 310,
-										["c_max"] = 0,
-										["id"] = 409752,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 3,
-										["n_max"] = 106,
-										["r_amt"] = 0,
-									},
-									[415320] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["b_dmg"] = 0,
-										["targets"] = {
-											["Scalding Whelp"] = 84,
-										},
-										["n_total"] = 84,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = 415320,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 1,
-										["n_max"] = 84,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015759,
@@ -14275,8 +14275,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 1350.005468,
 							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["damage_from"] = {
@@ -14298,7 +14297,7 @@ _detalhes_database = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 87,
 										["targets"] = {
 											["Scalding Whelp"] = 667,
 										},
@@ -14320,14 +14319,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 327,
 										["n_amt"] = 4,
-										["n_max"] = 87,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[16832] = {
 										["c_amt"] = 1,
 										["b_amt"] = 1,
 										["g_amt"] = 0,
-										["b_dmg"] = 76,
+										["n_max"] = 97,
 										["targets"] = {
 											["Scalding Whelp"] = 458,
 										},
@@ -14348,14 +14347,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 191,
 										["n_amt"] = 3,
-										["n_max"] = 97,
+										["b_dmg"] = 76,
 										["r_amt"] = 0,
 									},
 									[17259] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 137,
 										["targets"] = {
 											["Scalding Whelp"] = 137,
 										},
@@ -14376,14 +14375,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 137,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[415326] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 88,
 										["targets"] = {
 											["Scalding Whelp"] = 88,
 										},
@@ -14404,14 +14403,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 1,
-										["n_max"] = 88,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[14919] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 0,
 										["targets"] = {
 											["Scalding Whelp"] = 0,
 										},
@@ -14433,14 +14432,15 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 0,
-										["n_max"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015855,
@@ -14456,7 +14456,7 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["total_without_pet"] = 1217.002641,
 							["last_dps_realtime"] = 0,
-							["monster"] = true,
+							["dps_started"] = false,
 							["total"] = 1217.002641,
 							["friendlyfire"] = {
 							},
@@ -14487,7 +14487,7 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 51,
 										["targets"] = {
 											["Cat"] = 146,
 											["Dopesnare"] = 0,
@@ -14510,14 +14510,14 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 3,
-										["n_max"] = 51,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[9053] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["b_dmg"] = 0,
+										["n_max"] = 232,
 										["targets"] = {
 											["Cat"] = 842,
 											["Dopecat <Dopesnare>"] = 229,
@@ -14538,13 +14538,13 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["c_total"] = 0,
 										["n_amt"] = 5,
-										["n_max"] = 232,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
+							["monster"] = true,
 							["tipo"] = 1,
 							["custom"] = 0,
 							["last_event"] = 1711015801,
@@ -14566,7 +14566,7 @@ _detalhes_database = {
 					["combatId"] = 476,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
+							["received"] = 424.003369,
 							["resource"] = 0.003369,
 							["targets"] = {
 								["Dopesnare"] = 424,
@@ -14575,15 +14575,15 @@ _detalhes_database = {
 							},
 							["powertype"] = 0,
 							["aID"] = "5826-022772AA",
-							["passiveover"] = 0.003369,
+							["totalover"] = 255.003369,
 							["total"] = 424.003369,
 							["nome"] = "Dopesnare",
 							["spells"] = {
 								["_ActorTable"] = {
 									[415424] = {
 										["total"] = 200,
-										["totalover"] = 255,
 										["id"] = 415424,
+										["totalover"] = 255,
 										["targets"] = {
 											["Dopesnare"] = 200,
 										},
@@ -14591,8 +14591,8 @@ _detalhes_database = {
 									},
 									[415423] = {
 										["total"] = 224,
-										["totalover"] = 0,
 										["id"] = 415423,
+										["totalover"] = 0,
 										["targets"] = {
 											["Dopesnare"] = 224,
 										},
@@ -14602,13 +14602,13 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 424.003369,
+							["flag_original"] = 1297,
 							["classe"] = "HUNTER",
-							["last_event"] = 1711015760,
-							["totalover"] = 255.003369,
+							["tipo"] = 3,
+							["passiveover"] = 0.003369,
 							["alternatepower"] = 0.003369,
 							["serial"] = "Player-5826-022772AA",
-							["tipo"] = 3,
+							["last_event"] = 1711015760,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -14634,7 +14634,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 48,
+							["pets"] = {
+								"Dopecat <Dopesnare>", -- [1]
+							},
 							["cc_done_spells"] = {
 								["_ActorTable"] = {
 									[24394] = {
@@ -14647,7 +14649,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-022772AA",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[409580] = {
@@ -14710,19 +14712,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime"] = 4,
 							["cc_done"] = 1.005364,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Dopesnare",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["pets"] = {
-								"Dopecat <Dopesnare>", -- [1]
-							},
-							["aID"] = "5826-022772AA",
+							["buff_uptime"] = 48,
+							["classe"] = "HUNTER",
 							["last_event"] = 1711015760,
-							["nome"] = "Dopesnare",
 							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-5826-022772AA",
 							["tipo"] = 4,
@@ -14743,16 +14743,16 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["classe"] = "PET",
-							["ownerName"] = "Dopesnare",
+							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["cc_done"] = 1.001151,
 							["nome"] = "Dopecat <Dopesnare>",
 							["grupo"] = true,
 							["cc_done_targets"] = {
 								["Scalding Whelp"] = 1,
 							},
-							["cc_done"] = 1.001151,
+							["ownerName"] = "Dopesnare",
 							["last_event"] = 1711015756,
-							["aID"] = "Pet-0-5253-0-4524-3475-01009673B7",
+							["classe"] = "PET",
 							["serial"] = "Pet-0-5253-0-4524-3475-01009673B7",
 							["tipo"] = 4,
 						}, -- [2]
@@ -14761,13 +14761,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["aID"] = "2725",
-							["monster"] = true,
-							["nome"] = "Scalding Whelp",
 							["fight_component"] = true,
-							["tipo"] = 4,
+							["nome"] = "Scalding Whelp",
+							["monster"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-5253-0-4524-2725-0002FC0741",
 							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5253-0-4524-2725-0002FC0741",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -14777,7 +14777,9 @@ _detalhes_database = {
 					["_ActorTable"] = {
 					},
 				}, -- [5]
-				["boss_hp"] = 1,
+				["raid_roster"] = {
+					["Dopesnare"] = "Player-5826-022772AA",
+				},
 				["CombatStartedAt"] = 3105414.939,
 				["tempo_start"] = 1711015750,
 				["last_events_tables"] = {
@@ -14786,7 +14788,9 @@ _detalhes_database = {
 				},
 				["bossTimers"] = {
 				},
-				["combat_counter"] = 7674,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -14829,8 +14833,8 @@ _detalhes_database = {
 					},
 					["Dopesnare"] = {
 						["Disengage"] = 1,
-						["Flanking Strike"] = 1,
 						["Raptor Strike"] = 3,
+						["Flanking Strike"] = 1,
 						["Wing Clip"] = 1,
 						["Intimidation"] = 1,
 					},
@@ -14855,11 +14859,10 @@ _detalhes_database = {
 				["playing_solo"] = true,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Scalding Whelp"] = 1,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7674,
 				["totals_grupo"] = {
 					2592, -- [1]
 					0, -- [2]
@@ -14881,9 +14884,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["raid_roster"] = {
-					["Dopesnare"] = "Player-5826-022772AA",
-				},
+				["boss_hp"] = 1,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -14906,8 +14907,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 3105311.835,
 				["contra"] = "Scalding Whelp",
-				["frags"] = {
-					["Scalding Whelp"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -14918,7 +14918,7 @@ _detalhes_database = {
 		},
 		["group_frames"] = true,
 		["lines_per_column"] = 12,
-		["width"] = 120,
+		["show_options"] = false,
 		["frames"] = {
 			["defensive-raid"] = {
 			},
@@ -14933,13 +14933,8 @@ _detalhes_database = {
 			["defensive-personal"] = {
 			},
 		},
-		["show_options"] = false,
-		["own_frame"] = {
-			["defensive-raid"] = false,
-			["ofensive"] = false,
-			["defensive-target"] = false,
-			["utility"] = false,
-			["defensive-personal"] = false,
+		["width"] = 120,
+		["ignored_cooldowns"] = {
 		},
 		["show_title"] = true,
 		["framme_locked"] = false,
@@ -14950,7 +14945,12 @@ _detalhes_database = {
 			["only_inside_instance"] = true,
 			["only_in_group"] = true,
 		},
-		["ignored_cooldowns"] = {
+		["own_frame"] = {
+			["defensive-raid"] = false,
+			["ofensive"] = false,
+			["defensive-target"] = false,
+			["utility"] = false,
+			["defensive-personal"] = false,
 		},
 		["filters"] = {
 			["itemutil"] = false,
@@ -14987,10 +14987,10 @@ _detalhes_database = {
 	["data_harvest_for_charsts"] = {
 		["players"] = {
 			{
-				["playerKey"] = "total",
-				["combatObjectContainer"] = 1,
 				["name"] = "Damage of Each Individual Player",
 				["playerOnly"] = true,
+				["playerKey"] = "total",
+				["combatObjectContainer"] = 1,
 			}, -- [1]
 		},
 		["totals"] = {
@@ -15023,9 +15023,14 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_mplus"] = false,
 	},
-	["cached_talents"] = {
+	["character_data"] = {
+		["logons"] = 453,
 	},
 	["mythic_plus_log"] = {
+	},
+	["cached_talents"] = {
+	},
+	["cached_roles"] = {
 	},
 	["local_instances_config"] = {
 		{
@@ -15099,112 +15104,22 @@ _detalhes_database = {
 			},
 		}, -- [2]
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["last_day"] = "22",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
 	},
-	["last_day"] = "21",
-	["data_harvested_for_charts"] = {
-	},
-	["plugin_database"] = {
-		["DETAILS_PLUGIN_TINY_THREAT"] = {
-			["enabled"] = true,
-			["animate"] = false,
-			["hide_pull_bar"] = false,
-			["author"] = "Terciob",
-			["playercolor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["usefocus"] = false,
-			["updatespeed"] = 1,
-			["useclasscolors"] = false,
-			["showamount"] = false,
-			["useplayercolor"] = false,
-			["absolute_mode"] = false,
-			["playSound"] = false,
-			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["disable_gouge"] = false,
-		},
-		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-			["enabled"] = true,
-			["author"] = "Terciob",
-			["max_compares"] = 4,
-			["compare_type"] = 1,
-		},
-		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["is_first_run"] = false,
-			["grow_direction"] = "right",
-			["arrow_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
-			},
-			["arrow_anchor_y"] = 0,
-			["minimap"] = {
-				["minimapPos"] = 160,
-				["radius"] = 160,
-				["hide"] = true,
-			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_x"] = 0,
-			["scale"] = 1,
-			["row_texture"] = "xVerminClean",
-			["square_grow_direction"] = "right",
-			["use_spark"] = false,
-			["main_frame_strata"] = "LOW",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["point"] = "RIGHT",
-			["row_height"] = 18,
-			["use_square_mode"] = false,
+	["benchmark_db"] = {
+		["frame"] = {
 		},
 	},
-	["force_font_outline"] = "",
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -15230,7 +15145,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -15410,13 +15325,13 @@ _detalhes_database = {
 				},
 			},
 			["micro_displays_side"] = 2,
-			["version"] = 3,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -15439,7 +15354,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -15455,11 +15370,15 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
-			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -15476,13 +15395,9 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
+			["bars_grow_direction"] = 1,
 			["auto_current"] = true,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["row_info"] = {
 				["show_arena_role_icon"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -15595,7 +15510,7 @@ _detalhes_database = {
 				["textR_separator"] = "NONE",
 				["texture_custom_file"] = "Interface\\",
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["hide_in_combat"] = false,
 			["switch_damager"] = {
 				1, -- [1]
@@ -15673,10 +15588,10 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["resource"] = 1.655469000000001,
+					["resource"] = 1.730513000000001,
 					["pets"] = {
 					},
-					["aID"] = "5826-022772AA",
+					["classe"] = "HUNTER",
 					["passiveover"] = 0.007422,
 					["total"] = 0.007422,
 					["serial"] = "Player-5826-022772AA",
@@ -15691,8 +15606,8 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[415424] = {
 								["total"] = 0,
-								["id"] = 415424,
 								["totalover"] = 0,
+								["id"] = 415424,
 								["targets"] = {
 									["Dopesnare"] = 0,
 								},
@@ -15700,8 +15615,8 @@ _detalhes_database = {
 							},
 							[415423] = {
 								["total"] = 0,
-								["id"] = 415423,
 								["totalover"] = 0,
+								["id"] = 415423,
 								["targets"] = {
 									["Dopesnare"] = 0,
 								},
@@ -15710,10 +15625,10 @@ _detalhes_database = {
 						},
 						["tipo"] = 7,
 					},
-					["classe"] = "HUNTER",
-					["last_event"] = 0,
-					["totalover"] = 0.007422,
+					["aID"] = "5826-022772AA",
 					["tipo"] = 3,
+					["totalover"] = 0.007422,
+					["last_event"] = 0,
 					["grupo"] = true,
 				}, -- [1]
 			},
@@ -15758,7 +15673,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
 							[24394] = {
@@ -15782,7 +15698,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["classe"] = "HUNTER",
+					["aID"] = "5826-022772AA",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							[5118] = {
@@ -15844,7 +15760,8 @@ _detalhes_database = {
 					},
 					["debuff_uptime"] = 0,
 					["cc_done"] = 0,
-					["nome"] = "Dopesnare",
+					["debuff_uptime_targets"] = {
+					},
 					["grupo"] = true,
 					["cc_done_targets"] = {
 						["Fridolina"] = 0,
@@ -15860,14 +15777,12 @@ _detalhes_database = {
 						["Galak Stormer"] = 0,
 						["Scalding Whelp"] = 0,
 					},
-					["pets"] = {
-					},
-					["aID"] = "5826-022772AA",
+					["buff_uptime"] = 0,
+					["classe"] = "HUNTER",
 					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
 					["buff_uptime_targets"] = {
 					},
+					["nome"] = "Dopesnare",
 					["serial"] = "Player-5826-022772AA",
 					["last_event"] = 0,
 				}, -- [1]
@@ -15916,153 +15831,153 @@ _detalhes_database = {
 						["Galak Stormer"] = 0,
 						["Scalding Whelp"] = 0,
 					},
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["serial"] = "Pet-0-5251-1-23315-3475-03009673B7",
 					["aID"] = "Pet-0-5251-1-23315-3475-03009673B7",
+					["serial"] = "Pet-0-5251-1-23315-3475-03009673B7",
+					["tipo"] = 4,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Stormer",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4097",
-					["serial"] = "Creature-0-5251-1-23315-4097-000072F9D6",
+					["monster"] = true,
+					["nome"] = "Galak Stormer",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5251-1-23315-4097-000072F9D6",
+					["classe"] = "UNKNOW",
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Mauler",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4095",
-					["serial"] = "Creature-0-5251-1-23315-4095-000072FADB",
+					["monster"] = true,
+					["nome"] = "Galak Mauler",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5251-1-23315-4095-000072FADB",
+					["classe"] = "UNKNOW",
 				}, -- [4]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Galak Marauder",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "4099",
-					["serial"] = "Creature-0-5251-1-23315-4099-000072FBDB",
+					["monster"] = true,
+					["nome"] = "Galak Marauder",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5251-1-23315-4099-000072FBDB",
+					["classe"] = "UNKNOW",
 				}, -- [5]
 				{
 					["flag_original"] = 66888,
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["aID"] = "5826-024E8F68",
+					["classe"] = "UNGROUPPLAYER",
 					["fight_component"] = true,
 					["nome"] = "Blindson",
-					["tipo"] = 4,
-					["classe"] = "UNGROUPPLAYER",
-					["serial"] = "Player-5826-024E8F68",
 					["last_event"] = 0,
+					["aID"] = "5826-024E8F68",
+					["serial"] = "Player-5826-024E8F68",
+					["tipo"] = 4,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dunemaul Enforcer",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dunemaul Enforcer",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-1-32269-5472-0001735DA9",
 					["aID"] = "5472",
+					["serial"] = "Creature-0-5208-1-32269-5472-0001735DA9",
+					["tipo"] = 4,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Fire Roc",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Fire Roc",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-1-32269-5429-0001735DAB",
 					["aID"] = "5429",
+					["serial"] = "Creature-0-5208-1-32269-5429-0001735DAB",
+					["tipo"] = 4,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "5232",
-					["fight_component"] = true,
-					["nome"] = "Gordunni Brute",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-1-5957-5232-000074602E",
+					["monster"] = true,
+					["nome"] = "Gordunni Brute",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-1-5957-5232-000074602E",
+					["aID"] = "5232",
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "5234",
-					["fight_component"] = true,
-					["nome"] = "Gordunni Mauler",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-1-5957-5234-000074604D",
+					["monster"] = true,
+					["nome"] = "Gordunni Mauler",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-1-5957-5234-000074604D",
+					["aID"] = "5234",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "5240",
-					["fight_component"] = true,
-					["nome"] = "Gordunni Warlock",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-1-5957-5240-0000744AED",
+					["monster"] = true,
+					["nome"] = "Gordunni Warlock",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-1-5957-5240-0000744AED",
+					["aID"] = "5240",
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "5295",
-					["fight_component"] = true,
-					["nome"] = "Enraged Feral Scar",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5253-1-5957-5295-00007461EA",
+					["monster"] = true,
+					["nome"] = "Enraged Feral Scar",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5253-1-5957-5295-00007461EA",
+					["aID"] = "5295",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Wastewander Rogue",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "5615",
-					["serial"] = "Creature-0-5211-1-26987-5615-000076B5F2",
+					["monster"] = true,
+					["nome"] = "Wastewander Rogue",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-1-26987-5615-000076B5F2",
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 4369,
@@ -16080,40 +15995,40 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["fight_component"] = true,
-					["nome"] = "Wastewander Bandit",
-					["monster"] = true,
-					["last_event"] = 0,
 					["aID"] = "5618",
-					["serial"] = "Creature-0-5211-1-26987-5618-000076BF41",
+					["monster"] = true,
+					["nome"] = "Wastewander Bandit",
+					["fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5211-1-26987-5618-000076BF41",
+					["classe"] = "UNKNOW",
 				}, -- [15]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Wastewander Shadow Mage",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Wastewander Shadow Mage",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5250-1-5894-5617-0000770F0D",
 					["aID"] = "5617",
+					["serial"] = "Creature-0-5250-1-5894-5617-0000770F0D",
+					["tipo"] = 4,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Wastewander Thief",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Wastewander Thief",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5250-1-5894-5616-0000F70D1D",
 					["aID"] = "5616",
+					["serial"] = "Creature-0-5250-1-5894-5616-0000F70D1D",
+					["tipo"] = 4,
 				}, -- [17]
 				{
 					["flag_original"] = 1352,
@@ -16134,7 +16049,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["aID"] = "5826-025E3F03",
 					["fight_component"] = true,
 					["cc_done"] = 0,
 					["nome"] = "Pyroblaste",
@@ -16144,7 +16059,7 @@ _detalhes_database = {
 						["Shotlird"] = 0,
 					},
 					["last_event"] = 0,
-					["aID"] = "5826-025E3F03",
+					["classe"] = "UNGROUPPLAYER",
 					["serial"] = "Player-5826-025E3F03",
 					["tipo"] = 4,
 				}, -- [18]
@@ -16153,221 +16068,221 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dustbelcher Shaman",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dustbelcher Shaman",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-0-107-2718-00007A851E",
 					["aID"] = "2718",
+					["serial"] = "Creature-0-5208-0-107-2718-00007A851E",
+					["tipo"] = 4,
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dustbelcher Wyrmhunter",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dustbelcher Wyrmhunter",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-0-107-2716-00007A84C6",
 					["aID"] = "2716",
+					["serial"] = "Creature-0-5208-0-107-2716-00007A84C6",
+					["tipo"] = 4,
 				}, -- [20]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dustbelcher Mauler",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dustbelcher Mauler",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-0-107-2717-00007A7B29",
 					["aID"] = "2717",
+					["serial"] = "Creature-0-5208-0-107-2717-00007A7B29",
+					["tipo"] = 4,
 				}, -- [21]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dustbelcher Ogre Mage",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dustbelcher Ogre Mage",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-0-107-2720-00007A8458",
 					["aID"] = "2720",
+					["serial"] = "Creature-0-5208-0-107-2720-00007A8458",
+					["tipo"] = 4,
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Dustbelcher Lord",
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["nome"] = "Dustbelcher Lord",
+					["monster"] = true,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-5208-0-107-2719-00007A8443",
 					["aID"] = "2719",
+					["serial"] = "Creature-0-5208-0-107-2719-00007A8443",
+					["tipo"] = 4,
 				}, -- [23]
 				{
 					["flag_original"] = 1352,
 					["enemy"] = true,
 					["pets"] = {
 					},
-					["aID"] = "5826-020CDD64",
+					["classe"] = "UNGROUPPLAYER",
 					["fight_component"] = true,
 					["nome"] = "Rechtsträger",
-					["tipo"] = 4,
-					["classe"] = "UNGROUPPLAYER",
-					["serial"] = "Player-5826-020CDD64",
 					["last_event"] = 0,
+					["aID"] = "5826-020CDD64",
+					["serial"] = "Player-5826-020CDD64",
+					["tipo"] = 4,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "694",
-					["fight_component"] = true,
-					["nome"] = "Bloodscalp Axe Thrower",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-0-118-694-0000FABCC6",
+					["monster"] = true,
+					["nome"] = "Bloodscalp Axe Thrower",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-118-694-0000FABCC6",
+					["aID"] = "694",
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "697",
-					["fight_component"] = true,
-					["nome"] = "Bloodscalp Shaman",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-0-118-697-00007AC29F",
+					["monster"] = true,
+					["nome"] = "Bloodscalp Shaman",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-118-697-00007AC29F",
+					["aID"] = "697",
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "1097",
-					["fight_component"] = true,
-					["nome"] = "Venture Co. Mechanic",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-0-118-1097-00007ABF4D",
+					["monster"] = true,
+					["nome"] = "Venture Co. Mechanic",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-118-1097-00007ABF4D",
+					["aID"] = "1097",
 				}, -- [27]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "1096",
-					["fight_component"] = true,
-					["nome"] = "Venture Co. Geologist",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-0-118-1096-0000FABF71",
+					["monster"] = true,
+					["nome"] = "Venture Co. Geologist",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-118-1096-0000FABF71",
+					["aID"] = "1096",
 				}, -- [28]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "4723",
-					["fight_component"] = true,
-					["nome"] = "Foreman Cozzle",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5211-0-118-4723-00007ABF81",
+					["monster"] = true,
+					["nome"] = "Foreman Cozzle",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5211-0-118-4723-00007ABF81",
+					["aID"] = "4723",
 				}, -- [29]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "4403",
-					["fight_component"] = true,
-					["nome"] = "Muckshell Pincer",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-1-108-4403-00007AA8D5",
+					["monster"] = true,
+					["nome"] = "Muckshell Pincer",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5251-1-108-4403-00007AA8D5",
+					["aID"] = "4403",
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "4345",
-					["fight_component"] = true,
-					["nome"] = "Drywallow Daggermaw",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-1-108-4345-00007AD018",
+					["monster"] = true,
+					["nome"] = "Drywallow Daggermaw",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5251-1-108-4345-00007AD018",
+					["aID"] = "4345",
 				}, -- [31]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "4334",
-					["fight_component"] = true,
-					["nome"] = "Firemane Flamecaller",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-1-108-4334-00007AD07B",
+					["monster"] = true,
+					["nome"] = "Firemane Flamecaller",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5251-1-108-4334-00007AD07B",
+					["aID"] = "4334",
 				}, -- [32]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "4328",
-					["fight_component"] = true,
-					["nome"] = "Firemane Scalebane",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-1-108-4328-00007ACF33",
+					["monster"] = true,
+					["nome"] = "Firemane Scalebane",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5251-1-108-4328-00007ACF33",
+					["aID"] = "4328",
 				}, -- [33]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "4324",
-					["fight_component"] = true,
-					["nome"] = "Searing Whelp",
-					["monster"] = true,
-					["tipo"] = 4,
 					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5251-1-108-4324-00007AD23B",
+					["monster"] = true,
+					["nome"] = "Searing Whelp",
+					["fight_component"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5251-1-108-4324-00007AD23B",
+					["aID"] = "4324",
 				}, -- [34]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
 					["aID"] = "2725",
-					["monster"] = true,
-					["nome"] = "Scalding Whelp",
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["nome"] = "Scalding Whelp",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5252-0-6838-2725-00007B1F0B",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5252-0-6838-2725-00007B1F0B",
+					["last_event"] = 0,
 				}, -- [35]
 			},
 		}, -- [4]
@@ -16448,9 +16363,9 @@ _detalhes_database = {
 			["n"] = 1,
 		},
 		["boss_hp"] = 1,
-		["segments_added"] = {
-		},
 		["frags"] = {
+		},
+		["segments_added"] = {
 		},
 		["data_fim"] = 0,
 		["cleu_timeline"] = {
@@ -16476,28 +16391,111 @@ _detalhes_database = {
 		},
 		["combat_counter"] = 7333,
 	},
-	["benchmark_db"] = {
-		["frame"] = {
+	["force_font_outline"] = "",
+	["plugin_database"] = {
+		["DETAILS_PLUGIN_TINY_THREAT"] = {
+			["enabled"] = true,
+			["animate"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Terciob",
+			["playercolor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["usefocus"] = false,
+			["updatespeed"] = 1,
+			["disable_gouge"] = false,
+			["showamount"] = false,
+			["useplayercolor"] = false,
+			["absolute_mode"] = false,
+			["playSound"] = false,
+			["playSoundFile"] = "Details Threat Warning Volume 3",
+			["useclasscolors"] = false,
+		},
+		["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+			["enabled"] = true,
+			["author"] = "Terciob",
+			["max_compares"] = 4,
+			["compare_type"] = 1,
+		},
+		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["is_first_run"] = false,
+			["grow_direction"] = "right",
+			["arrow_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["use_square_mode"] = false,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
+			["minimap"] = {
+				["minimapPos"] = 160,
+				["radius"] = 160,
+				["hide"] = true,
+			},
+			["row_height"] = 18,
+			["arrow_anchor_x"] = 0,
+			["point"] = "RIGHT",
+			["row_texture"] = "xVerminClean",
+			["square_grow_direction"] = "right",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["author"] = "Details! Team",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["font_size"] = 10,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["use_spark"] = false,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["y"] = -183.107162475586,
+			["scale"] = 1,
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["character_data"] = {
-		["logons"] = 452,
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["data_harvested_for_charts"] = {
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -16505,7 +16503,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["cached_roles"] = {
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
 	},
