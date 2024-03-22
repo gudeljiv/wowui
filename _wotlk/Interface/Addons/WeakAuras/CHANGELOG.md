@@ -1,22 +1,17 @@
-# [5.12.1](https://github.com/WeakAuras/WeakAuras2/tree/5.12.1) (2024-03-20)
+# [5.12.3](https://github.com/WeakAuras/WeakAuras2/tree/5.12.3) (2024-03-22)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.0...5.12.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.1...5.12.3)
 
 ## Highlights
 
- For tracking a specific charge, don't use static progress 
+ - Fixes a few issues from the last release 
 
 ## Commits
 
-InfusOnWoW (5):
+InfusOnWoW (4):
 
-- For tracking a specific charge, don't use static progress
-- ProgressTexture: Fix switching from timed to static progress
-- Change EnsureRegion to not create child regions for dynamic groups
-- Progress Source: Ignore max progress setting for no duration timers
-- Icon: Fix inverse not probably being effective
-
-mrbuds (1):
-
-- make sure deferred group's custom anchors are actually anchored
+- AutoHide: Automatically set expirationTime
+- Fix ordering of region creation
+- Cast Trigger: Fix inverse setting autoHide
+- Item Cooldowns: Adjust to changed retail api
 

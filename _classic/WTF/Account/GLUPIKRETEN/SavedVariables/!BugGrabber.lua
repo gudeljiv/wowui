@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11984,
+	["session"] = 11988,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3072,16 +3072,24 @@ BugGrabberDB = {
 			["time"] = "2024/03/17 21:00:11",
 			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")\"\n",
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
-			["session"] = 11984,
-			["counter"] = 3,
+			["session"] = 11985,
+			["counter"] = 4,
 		}, -- [397]
 		{
 			["message"] = "[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
 			["time"] = "2024/03/17 21:40:20",
 			["locals"] = "",
 			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"\"]:1: in function `LF_000002CB534E5180'\n[string \"Condition_OFFHAND_LUA\"]:4: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2640: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2602>",
-			["session"] = 11984,
-			["counter"] = 18,
+			["session"] = 11985,
+			["counter"] = 26,
 		}, -- [398]
+		{
+			["message"] = "...TradeSkillMaster/Core/UI/Components/Display/Text.lua:139: assertion failed!",
+			["time"] = "2024/03/22 19:51:26",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/Components/Display/Text.lua\"]:139: in function <...TradeSkillMaster/Core/UI/Components/Display/Text.lua:135>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `SetText'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/MailingUI/Inbox.lua\"]:640: in function `UpdateInboxItemsFrame'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/MailingUI/Inbox.lua\"]:519: in function <.../AddOns/TradeSkillMaster/Core/UI/MailingUI/Inbox.lua:347>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/Components/Containers/ViewContainer.lua\"]:103: in function <...ster/Core/UI/Components/Containers/ViewContainer.lua:98>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `SetPath'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/MailingUI/Inbox.lua\"]:807: in function `_onRowClickHandler'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/Elements/QueryScrollingTable.lua\"]:245: in function <...SkillMaster/Core/UI/Elements/QueryScrollingTable.lua:243>\n[string \"@Interface/AddOns/TradeSkillMaster/External/LibTSMClass-2/LibTSMClass.lua\"]:332: in function `_HandleRowClick'\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/Util/TableRow.lua\"]:1210: in function `?'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua\"]:37: in function <...ddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua:36>\n[string \"@Interface/AddOns/TradeSkillMaster/Core/UI/Util/TableRow.lua\"]:1387: in function `?'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface/AddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua\"]:37: in function <...ddOns/TradeSkillMaster/LibTSM/Util/ScriptWrapper.lua:36>",
+			["session"] = 11987,
+			["counter"] = 1,
+		}, -- [399]
 	},
 }
