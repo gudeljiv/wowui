@@ -25,7 +25,8 @@ data = {
             {"name": "water shield", "type": "GetSpellTexture", "id": 408510, "key": "h"},
             {"name": "molten blast", "type": "GetSpellTexture", "id": 425339, "key": "3"},
             {"name": "flame shock", "type": "GetSpellTexture", "id": 8050, "key": "4"},
-            {"name": "earth shock", "type": "GetSpellTexture", "id": 8045, "key": "5"},
+            {"name": "frost shock", "type": "GetSpellTexture", "id": 8056, "key": "5"},
+            {"name": "earth shock", "type": "GetSpellTexture", "id": 8045, "key": "6"},
             {"name": "cure toxins", "type": "GetSpellTexture", "id": 526, "key": "t"},
             {"name": "lava lash", "type": "GetSpellTexture", "id": 408507, "key": "3"},
             {"name": "rockbiter weapon mh", "type": "GetSpellTexture", "id": 8017, "key": "f1"},
@@ -38,6 +39,7 @@ data = {
         "secondary": [
             {"name": "totem fire nova", "type": "GetSpellTexture", "id": 1535, "modifier": "lshift", "key": "2"},
             {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "modifier": "lshift", "key": "1"},
+            {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "modifier": "lalt", "key": "3"},
         ],
     },
     "warrior": {

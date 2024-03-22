@@ -792,9 +792,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["ID"] = "ID"
---[[Translation missing --]]
 L["Id"] = "Id"
+--[[Translation missing --]]
+L["ID"] = "ID"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "추가 지원이 필요한 경우, GitHub에서 티켓을 열거나 Discord( https://discord.gg/weakauras )를 방문해 주세요!"
 L["Ignis the Furnace Master"] = "용광로 군주 이그니스"
 L["Ignore Dead"] = "죽음 무시"
@@ -1254,8 +1254,8 @@ L["Progress Value"] = "진행 수치"
 L["Pulse"] = "맥박"
 L["PvP Flagged"] = "PvP 활성"
 L["PvP Talent %i"] = "PvP 특성 %i"
-L["PvP Talent Selected"] = "선택된 명예 특성"
 L["PvP Talent selected"] = "선택된 명예 특성"
+L["PvP Talent Selected"] = "선택된 명예 특성"
 --[[Translation missing --]]
 L["Quality Id"] = "Quality Id"
 --[[Translation missing --]]

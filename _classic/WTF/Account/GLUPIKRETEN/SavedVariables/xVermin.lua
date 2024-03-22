@@ -94,6 +94,7 @@ xVerminSavedData = {
 		},
 		["Burning Destroyer"] = {
 			"Serpent Sting", -- [1]
+			"Lava Lash", -- [2]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -101,9 +102,11 @@ xVerminSavedData = {
 		["Rogue Flame Spirit"] = {
 			"Rend", -- [1]
 			"Serpent Sting", -- [2]
+			"Lava Lash", -- [3]
 		},
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
+			"Lava Lash", -- [2]
 		},
 		["Scalding Elemental"] = {
 			"Rend", -- [1]
@@ -180,6 +183,7 @@ xVerminSavedData = {
 		},
 		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
+			"Lightning Shield", -- [2]
 		},
 	},
 }

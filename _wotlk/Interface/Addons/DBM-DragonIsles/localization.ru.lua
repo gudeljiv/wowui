@@ -45,3 +45,13 @@ local L
 --L:SetMiscLocalization({
 --	Pull	= ""
 --})
+
+-----------------------
+-- Ауростор Пережидающий Зиму --
+-----------------------
+L= DBM:GetModLocalization(2562)
+
+L:SetMiscLocalization({
+--	Pull	= "",
+	Win		= "Спасибо... так устал... наконец-то... посплю..."
+})

@@ -1,0 +1,10 @@
+## Interface: 11501
+## Title: Waylaid Supplies Tooltip
+## Author: Shala - Wild Growth US
+## Notes: Displays in tooltip if a Waylaid Shipment will grant you reputation and money reward.
+## Version: 1.4.6.2
+## X-Category: Tooltip
+
+WaylaidSupplyCrates.lua
+CrateItems.lua
+FilledCrates.lua

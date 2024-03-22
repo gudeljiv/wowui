@@ -48,11 +48,11 @@ ChocolateBarDB = {
 		["Dopedot - Lone Wolf"] = "Default",
 		["Dopebolt - Lone Wolf"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
-		["Tukac - Genesis"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
-		["Pitchwise - Golemagg"] = "Default",
 		["Dopetrap - Lone Wolf"] = "Default",
+		["Tukac - Genesis"] = "Default",
+		["Pitchwise - Golemagg"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -822,9 +822,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 3794,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 282247,
-		["timeAtThisLevel"] = 29046,
-		["timeStamp"] = 3025079.402,
+		["total"] = 287540,
+		["timeAtThisLevel"] = 34339,
+		["timeStamp"] = 3111613.67,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -849,9 +849,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 152384,
-		["timeStamp"] = 2968786.515,
-		["timeAtThisLevel"] = 276,
+		["total"] = 154869,
+		["timeStamp"] = 3111648.015,
+		["timeAtThisLevel"] = 2761,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -927,9 +927,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 1,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 73787,
-		["timeAtThisLevel"] = 2795,
-		["timeStamp"] = 2793297.439,
+		["total"] = 86993,
+		["timeAtThisLevel"] = 2147,
+		["timeStamp"] = 3108080.785,
 	},
 	["Battledog-Gehennas"] = {
 		["total"] = 332,
@@ -948,9 +948,9 @@ CB_PlayedTime = {
 		["total"] = 425995,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 114187,
-		["timeStamp"] = 2881470.806,
-		["timeAtThisLevel"] = 6325,
+		["total"] = 115576,
+		["timeStamp"] = 3112705.234,
+		["timeAtThisLevel"] = 570,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
@@ -961,9 +961,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 230426,
-		["timeStamp"] = 2882870.224,
-		["timeAtThisLevel"] = 2482,
+		["total"] = 230435,
+		["timeStamp"] = 3111750.081,
+		["timeAtThisLevel"] = 2491,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,

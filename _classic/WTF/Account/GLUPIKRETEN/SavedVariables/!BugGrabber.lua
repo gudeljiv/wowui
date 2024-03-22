@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11960,
+	["session"] = 11978,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3060,28 +3060,28 @@ BugGrabberDB = {
 			["counter"] = 73,
 		}, -- [395]
 		{
-			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2680: [string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
-			["time"] = "2024/03/17 21:00:11",
-			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")\"\n",
-			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
-			["session"] = 11936,
-			["counter"] = 1,
-		}, -- [396]
-		{
-			["message"] = "[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
-			["time"] = "2024/03/17 21:40:20",
-			["locals"] = "",
-			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"\"]:1: in function `LF_000002CB534E5180'\n[string \"Condition_OFFHAND_LUA\"]:4: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2640: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2602>",
-			["session"] = 11936,
-			["counter"] = 9,
-		}, -- [397]
-		{
 			["message"] = "Interface/AddOns/xVermin/Frames/BetterRunesFrame.lua:109: attempt to perform arithmetic on a string value",
 			["time"] = "2024/03/20 12:48:14",
 			["locals"] = "scrollFrame = EngravingFrameScrollFrame {\n 0 = <userdata>\n dynamic = <function> defined @Interface/AddOns/Blizzard_EngravingUI/Blizzard_EngravingUI.lua:171\n scrollChild = EngravingFrameScrollFrameScrollChild {\n }\n emptyText = EngravingFrameScrollFrameEmptyLabel {\n }\n scrollUp = EngravingFrameScrollFrameScrollBarScrollUpButton {\n }\n totalHeight = 725\n range = 387\n offset = 0\n scrollDown = EngravingFrameScrollFrameScrollBarScrollDownButton {\n }\n buttons = <table> {\n }\n scrollBar = EngravingFrameScrollFrameScrollBar {\n }\n buttonHeight = 31\n update = <function> defined @Interface/AddOns/Blizzard_EngravingUI/Blizzard_EngravingUI.lua:8\n ScrollChild = EngravingFrameScrollFrameScrollChild {\n }\n}\nbuttons = <table> {\n 1 = EngravingFrameScrollFrameButton1 {\n }\n 2 = EngravingFrameScrollFrameButton2 {\n }\n 3 = EngravingFrameScrollFrameButton3 {\n }\n 4 = EngravingFrameScrollFrameButton4 {\n }\n 5 = EngravingFrameScrollFrameButton5 {\n }\n 6 = EngravingFrameScrollFrameButton6 {\n }\n 7 = EngravingFrameScrollFrameButton7 {\n }\n 8 = EngravingFrameScrollFrameButton8 {\n }\n 9 = EngravingFrameScrollFrameButton9 {\n }\n 10 = EngravingFrameScrollFrameButton10 {\n }\n 11 = EngravingFrameScrollFrameButton11 {\n }\n 12 = EngravingFrameScrollFrameButton12 {\n }\n 13 = EngravingFrameScrollFrameButton13 {\n }\n 14 = EngravingFrameScrollFrameButton1 {\n }\n 15 = EngravingFrameScrollFrameButton1 {\n }\n 16 = EngravingFrameScrollFrameButton1 {\n }\n 17 = EngravingFrameScrollFrameButton1 {\n }\n 18 = EngravingFrameScrollFrameButton1 {\n }\n 19 = EngravingFrameScrollFrameButton1 {\n }\n 20 = EngravingFrameScrollFrameButton1 {\n }\n 21 = EngravingFrameScrollFrameButton1 {\n }\n 22 = EngravingFrameScrollFrameButton1 {\n }\n 23 = EngravingFrameScrollFrameButton1 {\n }\n 24 = EngravingFrameScrollFrameButton1 {\n }\n 25 = EngravingFrameScrollFrameButton1 {\n }\n 26 = EngravingFrameScrollFrameButton1 {\n }\n}\noffset = 0\nequippedRunes = <table> {\n 48656 = true\n 49218 = true\n 48657 = true\n 48661 = true\n 48833 = true\n}\ncategories = <table> {\n 1 = 5\n 2 = 6\n 3 = 7\n 4 = 8\n 5 = 10\n}\nnumHeaders = 5\nnumRows = 0\ncurrentOffset = 0\ncurrentHeader = 2\ncurrentButton = 2\nprevRowStart = 1\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = 5\n 2 = 6\n 3 = 7\n 4 = 8\n 5 = 10\n}\n(for control) = 1\n_ = 1\ncategory = 5\nrunes = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\n(for control) = 1\nruneIndex = 1\nrune = <table> {\n equipmentSlot = 5\n learnedAbilitySpellIDs = <table> {\n }\n name = \"Heart of the Lion\"\n level = 1\n skillLineAbilityID = 48656\n iconTexture = 132185\n itemEnchantmentID = 6891\n}\nbutton = EngravingFrameScrollFrameButton2 {\n disabledBG = Texture {\n }\n beautyShadow = <table> {\n }\n checkedTexture = Texture {\n }\n icon = EngravingFrameScrollFrameButton2Icon {\n }\n beautyBorder = <table> {\n }\n tooltipName = \"Heart of the Lion\"\n name = EngravingFrameScrollFrameButton2Name {\n }\n selectedTex = Texture {\n }\n 0 = <userdata>\n skillLineAbilityID = 48656\n typeName = EngravingFrameScrollFrameButton2TypeName {\n }\n texture = Texture {\n }\n}\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface/FrameXML/ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n SettingsSliderOptionsMixin = <table> {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 793\n ony120NWBWorldMapTooltipFS = ony120NWBWorldMapTooltipFS {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 410\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n AudioOptionsV",
 			["stack"] = "[string \"@Interface/AddOns/xVermin/Frames/BetterRunesFrame.lua\"]:109: in function <Interface/AddOns/xVermin/Frames/BetterRunesFrame.lua:38>\n[string \"=[C]\"]: in function `EngravingFrame_UpdateRuneList'\n[string \"@Interface/AddOns/Blizzard_EngravingUI/Blizzard_EngravingUI.lua\"]:23: in function <...AddOns/Blizzard_EngravingUI/Blizzard_EngravingUI.lua:16>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2168: in function `SetUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2013: in function `ShowUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1881: in function <Interface_Vanilla/FrameXML/UIParent.lua:1877>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2660: in function `ShowUIPanel'\n[string \"@Interface_Vanilla/FrameXML/CharacterFrame.lua\"]:26: in function <Interface_Vanilla/FrameXML/CharacterFrame.lua:4>\n[string \"=[C]\"]: in function `ToggleCharacter'\n[string \"TOGGLECHARACTER0\"]:1: in function <[string \"TOGGLECHARACTER0\"]:1>",
 			["session"] = 11954,
 			["counter"] = 1,
+		}, -- [396]
+		{
+			["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2680: [string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
+			["time"] = "2024/03/17 21:00:11",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
+			["session"] = 11973,
+			["counter"] = 2,
+		}, -- [397]
+		{
+			["message"] = "[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
+			["time"] = "2024/03/17 21:40:20",
+			["locals"] = "",
+			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"\"]:1: in function `LF_000002CB534E5180'\n[string \"Condition_OFFHAND_LUA\"]:4: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2640: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2602>",
+			["session"] = 11973,
+			["counter"] = 15,
 		}, -- [398]
 	},
 }

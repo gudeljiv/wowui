@@ -79,7 +79,7 @@ end
 
 ---@class DBM
 local DBM = {
-	Revision = parseCurseDate("20240319130700"),
+	Revision = parseCurseDate("20240321020130"),
 }
 _G.DBM = DBM
 
@@ -87,9 +87,9 @@ local fakeBWVersion, fakeBWHash = 324, "a4b080f"--324.4
 local bwVersionResponseString = "V^%d^%s"
 local PForceDisable
 -- The string that is shown as version
-DBM.DisplayVersion = "10.2.30 alpha"--Core version
+DBM.DisplayVersion = "10.2.31"--Core version
 DBM.classicSubVersion = 0
-DBM.ReleaseRevision = releaseDate(2024, 3, 15) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+DBM.ReleaseRevision = releaseDate(2024, 3, 20) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 PForceDisable = 10--When this is incremented, trigger force disable regardless of major patch
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -384,7 +384,7 @@ DBM.DefaultOptions = {
 	LatencyThreshold = 250,
 	oRA3AnnounceConsumables = false,
 	SettingsMessageShown = false,
-	NewsMessageShown2 = 1,--Apparently varaible without 2 can still exist in some configs (config cleanup of no longer existing variables not working?)
+	NewsMessageShown2 = 2,--Apparently varaible without 2 can still exist in some configs (config cleanup of no longer existing variables not working?)
 	AlwaysShowSpeedKillTimer2 = false,
 	ShowRespawn = true,
 	ShowQueuePop = true,
@@ -1661,7 +1661,7 @@ do
 				local version = C_AddOns.GetAddOnMetadata(checkedSubmodule, "Version") or "r0"
 				DBM.classicSubVersion = tonumber(string.sub(version, 2, 4)) or 0
 			end
-			dbmToc = tonumber(C_AddOns.GetAddOnMetadata("DBM-Core", "X-Min-Interface" .. (isClassic and "-Classic" or isBCC and "-BCC" or isCata and "-Cata" or isWrath and "-Wrath" or ""))) or 0
+			dbmToc = tonumber(C_AddOns.GetAddOnMetadata("DBM-Core", "X-Min-Interface")) or 0
 			isLoaded = true
 			for _, v in ipairs(onLoadCallbacks) do
 				xpcall(v, geterrorhandler())
@@ -3707,6 +3707,7 @@ end
 do
 	local pvpShown = false
 	local dungeonShown = false
+	local sodRaids = {[48] = true, [90] = true}
 	local classicZones = {[509] = true, [531] = true, [469] = true, [409] = true}
 	local bcZones = {[564] = true, [534] = true, [532] = true, [565] = true, [544] = true, [548] = true, [580] = true, [550] = true}
 	local wrathZones = {[615] = true, [724] = true, [649] = true, [616] = true, [631] = true, [533] = true, [249] = true, [603] = true, [624] = true}
@@ -3729,7 +3730,9 @@ do
 			if (seasonalZones[LastInstanceMapID] or instanceDifficultyBylevel[LastInstanceMapID] and instanceDifficultyBylevel[LastInstanceMapID][2] == 2) and not C_AddOns.DoesAddOnExist(checkedDungeon) and not dungeonShown then
 				AddMsg(self, L.MOD_AVAILABLE:format("DBM Dungeon mods"))
 				dungeonShown = true
-			elseif (classicZones[LastInstanceMapID] or bcZones[LastInstanceMapID]) and not C_AddOns.DoesAddOnExist("DBM-Raids-BC") then
+			elseif (self:IsSeasonal("SeasonOfDiscovery") and sodRaids[LastInstanceMapID] or classicZones[LastInstanceMapID]) and not C_AddOns.DoesAddOnExist("DBM-Raids-Vanilla") then
+				AddMsg(self, L.MOD_AVAILABLE:format("DBM BC/Vanilla mods"))
+			elseif bcZones[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-Raids-BC") then
 				AddMsg(self, L.MOD_AVAILABLE:format("DBM BC/Vanilla mods"))
 			elseif wrathZones[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-Raids-WoTLK") then
 				AddMsg(self, L.MOD_AVAILABLE:format("DBM Wrath of the Lich King mods"))
@@ -3746,7 +3749,8 @@ do
 			elseif shadowlandsZones[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-Raids-Shadowlands") then
 				AddMsg(self, L.MOD_AVAILABLE:format("DBM Shadowlands mods"))
 			end
-		elseif challengeScenarios[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-Challenges") then--No trivial check on challenge scenarios
+		end
+		if challengeScenarios[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-Challenges") then--No trivial check on challenge scenarios
 			AddMsg(self, L.MOD_AVAILABLE:format("DBM-Challenges"))
 		end
 		if pvpZones[LastInstanceMapID] and not C_AddOns.DoesAddOnExist("DBM-PvP") and not pvpShown then
@@ -4070,6 +4074,7 @@ end
 --NOTE. Don't ever try to move this out of core. My testing showed it required storing nearly every local variable in core in private, gravely poluting and inflating it beyond any kind of rational
 
 do
+	local GetItemInfo = C_Item and C_Item.GetItemInfo or GetItemInfo
 	local function checkForActualPull()
 		if (DBM.Options.RecordOnlyBosses and #inCombat == 0) or (not isRetail and difficultyIndex ~= 8) then
 			DBM:StopLogging()
@@ -6829,7 +6834,9 @@ do
 		if self.Options.ShowReminders then
 			C_TimerAfter(25, function() if self.Options.SilentMode then self:AddMsg(L.SILENT_REMINDER) end end)
 			C_TimerAfter(30, function() if not self.Options.SettingsMessageShown then self.Options.SettingsMessageShown = true self:AddMsg(L.HOW_TO_USE_MOD) end end)
---			C_TimerAfter(35, function() if self.Options.NewsMessageShown2 < 2 then self.Options.NewsMessageShown2 = 2 self:AddMsg(L.NEWS_UPDATE) end end)
+			if not isRetail then
+				C_TimerAfter(35, function() if self.Options.NewsMessageShown2 < 3 then self.Options.NewsMessageShown2 = 3 self:AddMsg(L.NEWS_UPDATE) end end)
+			end
 		end
 		if type(C_ChatInfo.RegisterAddonMessagePrefix) == "function" then
 			if not C_ChatInfo.RegisterAddonMessagePrefix(DBMPrefix) then -- main prefix for DBM4
@@ -7859,6 +7866,7 @@ end
 do
 	local rangeCache = {}
 	local rangeUpdated = {}
+	local IsItemInRange = C_Item and C_Item.IsItemInRange or IsItemInRange
 
 	function bossModPrototype:CheckBossDistance(cidOrGuid, onlyBoss, itemId, distance, defaultReturn)
 		if not DBM.Options.DontShowFarWarnings then return true end--Global disable.
