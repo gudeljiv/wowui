@@ -1,7 +1,7 @@
 # TomTom
 
-## [v3.5.5-release](https://github.com/jnwhiteh/TomTom/tree/v3.5.5-release) (2024-01-17)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.5.5-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v3.5.6-release](https://github.com/jnwhiteh/TomTom/tree/v3.5.6-release) (2024-01-17)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v3.5.6-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
 - Update toc for 10.2.5 and 1.15.0  
 - Update TOC for 10.2.0  
