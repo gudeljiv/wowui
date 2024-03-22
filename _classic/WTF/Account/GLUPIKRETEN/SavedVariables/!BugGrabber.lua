@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 11982,
+	["session"] = 11984,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3072,16 +3072,16 @@ BugGrabberDB = {
 			["time"] = "2024/03/17 21:00:11",
 			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")\"\n",
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2680: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2669>",
-			["session"] = 11973,
-			["counter"] = 2,
+			["session"] = 11984,
+			["counter"] = 3,
 		}, -- [397]
 		{
 			["message"] = "[string \"return select(7,GetItemInfo(GetInventoryIte...\"]:1: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
 			["time"] = "2024/03/17 21:40:20",
 			["locals"] = "",
 			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"\"]:1: in function `LF_000002CB534E5180'\n[string \"Condition_OFFHAND_LUA\"]:4: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:770: in function <Interface/AddOns/TellMeWhen/Components/Core/Icon.lua:741>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/TellMeWhen.lua\"]:2640: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2602>",
-			["session"] = 11973,
-			["counter"] = 15,
+			["session"] = 11984,
+			["counter"] = 18,
 		}, -- [398]
 	},
 }
