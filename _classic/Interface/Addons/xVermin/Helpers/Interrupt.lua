@@ -88,6 +88,8 @@ local HandleUnit = function(unit)
 		if xVermin.Class == 'SHAMAN' and xVermin.GetSpellID("Earth Shock") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock")) then
 			if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
 				HandleRotationFrame(true)
+			else 
+				HandleRotationFrame(false)
 			end
 		end
 

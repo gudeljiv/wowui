@@ -65,3 +65,15 @@ VER 3 000000000100000C "rock II" "134400"
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
+VER 3 000000000100000F "wf I" "134400"
+#showtooltip
+/cast [@none, mod:shift] Windfury Weapon; [@none] Windfury Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000010 "wf II" "134400"
+#showtooltip
+/cast [@none, button:2] Windfury Weapon; [@none] Windfury Weapon
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
