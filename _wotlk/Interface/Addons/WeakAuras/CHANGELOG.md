@@ -1,20 +1,16 @@
-# [5.12.4](https://github.com/WeakAuras/WeakAuras2/tree/5.12.4) (2024-03-23)
+# [5.12.5](https://github.com/WeakAuras/WeakAuras2/tree/5.12.5) (2024-03-24)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.3...5.12.4)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.4...5.12.5)
 
 ## Highlights
 
- - Rework Profiling windows
-- Bug fixes 
+ - bug fixes 
 
 ## Commits
 
-InfusOnWoW (2):
+InfusOnWoW (3):
 
-- Fix Relative Progress Animations not running in certain cases
-- Fix border of dynamic groups with animated position childd auras
-
-mrbuds (1):
-
-- Rework Profiling window (#4906)
+- ProgressTexture: Fix logic in UpdateTime for inversing
+- Type check various special state progress values
+- Fix Ticks positioned relative to static progress
 
