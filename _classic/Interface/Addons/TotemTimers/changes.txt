@@ -1,0 +1,84 @@
+3.2.15
+    - Added option to toggle Power Surge
+3.2.14
+    - Fixed overlay glow for spells affected by Maelstrom Weapon
+3.2.13
+    - Fixed Earth Shock cooldown for Way of Earth
+3.2.12
+    - Fixed max durations for weapon tracker
+    - Fixed stop pulse animations on long cooldowns triggering too often
+    - Added texture for Power Surge proc to git
+3.2.11
+    - Added combat cooldowns for SOD
+    - Added Maelstrom Weapon and Power Surge to SOD
+    - Added overlay glows for action buttons for Maelstrom and Power Surge
+    - Added longer cooldowns like Shamanistic Rage and Ancestral Guidance to SOD
+    - Added Spirit of the Alpha tracker
+    - Fixed Fire Nova in SOD
+    - Added overlay glow for missing weapon enchants as Enhancement
+    - Fixed Masque for weapon tracker
+3.2.10
+    - Added Decoy Totem
+3.2.9
+    - Added WF/RB as option for leftclick on weapon timer in SoD
+3.2.8
+    - Added Dual Wield for weapon timer in SOD
+3.2.7
+    - Added Earth Shield for SoD
+3.2.6
+    - Added Water Shield for SoD
+3.2.5
+    - Fixed weapon tracker spells not showing and tooltip error in SoD
+3.2.4
+    - Revert SoD fix for WOTLK
+3.2.3
+    - Fixed wonky menus when Rockbiter and Way of Earth are both active
+3.2.2
+    - TOC update for SoD and ICC
+3.2.1
+    - Small fix for lua error on load
+3.2
+    - Added option to hide Multicast button while still being able to select totems for Call of Elements
+3.1.15
+    - Fixed combat cooldown buff timer transparency
+3.1.14
+    - Non-Totem spells set to multicast slots are replaced with totems
+3.1.13
+    - Remove CheckButton border from timer buttons
+3.1.12
+    - Load correct specialization on startup
+    - Several fixes for Ulduar ptr
+3.1.11
+    - Collect more debug info
+3.1.10
+    - Small fix for weapon tracker
+    - Added Chain Lightning to Enhancement cooldowns
+    - Fixed combat cooldowns layout if more than 8 are active
+3.1.9
+    - Fix hiding blizzard totem bar
+3.1.8
+    - Update ranks for totems assigned to multicast spells
+    - When switching/resetting talents, not available totems are replace with first in menu
+3.1.7
+    - Hide multicast button when in vehicle with an override bar
+3.1.6
+    - Added some info about the hidden blizzard totem bar to options
+3.1.5
+    - Maelstrom timer button now casts max rank Lightning Bolt and Chain Lightning
+3.1.4
+    - Fix disabling/enabling a slot for the multicast button
+    - Maelstrom timer lightning bolts will fade out of combat if enabled
+    - Added option for Maelstrom timer to show number instead of lightning bolts
+    - Default totem bar always hides when multicast button is enabled
+3.1.3
+    - Changed scaling for Flameshock and Maelstrom timers
+    - Added stop pulse animations for Flameshock and Maelstrom timers
+3.1.2
+    - Long cooldowns can be moved, hold modifier (shift/ctrl/alt) to not trigger button
+    - Combat cooldowns can be moved without triggering by holding ctrl/alt
+3.1.1
+    - Hide lightning bolt cast button when maelstrom counter is hidden
+3.1
+    - Added timers for longer cooldowns
+    - Fixed weapon tracker double spell buttons, now first click again targets main hand specifically, second click offhand
+

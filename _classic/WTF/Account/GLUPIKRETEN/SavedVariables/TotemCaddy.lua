@@ -5,8 +5,8 @@ TOCADB = {
 			["Default"] = {
 				["TOCA_AIR"] = "Grace of Air Totem",
 				["TOCA_WATER"] = "Disease Cleansing Totem",
-				["TOCA_EARTH"] = "Earthbind Totem",
 				["TOCA_FIRE"] = "Fire Nova Totem",
+				["TOCA_EARTH"] = "Earthbind Totem",
 			},
 		},
 		["LASTSAVED"] = "Default",
@@ -22,8 +22,8 @@ TOCADB = {
 			["Default"] = {
 				["TOCA_AIR"] = "Grace of Air Totem",
 				["TOCA_WATER"] = "Disease Cleansing Totem",
-				["TOCA_EARTH"] = "Earthbind Totem",
 				["TOCA_FIRE"] = "Fire Nova Totem",
+				["TOCA_EARTH"] = "Earthbind Totem",
 			},
 		},
 		["LASTSAVED"] = "Default",
@@ -35,7 +35,7 @@ TOCADB = {
 			["REINC"] = "OFF",
 			["NOTIFYCOMBAT"] = "OFF",
 			["SHIELD"] = "OFF",
-			["MAINPOS"] = "CENTER,228.5715637207,30.158996582031",
+			["MAINPOS"] = "CENTER,420.31686401367,-110.15812683105",
 			["ESASSIGNMENTS"] = "OFF",
 			["TOOLON"] = "OFF",
 			["MINIMAP_ICON"] = "OFF",

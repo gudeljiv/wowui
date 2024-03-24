@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 324,
-		["totaltotal"] = 433629,
+		["pulltotal"] = 0,
+		["totaltotal"] = 549103,
 	},
 	["killLog"] = {
 		["Devouring Ectoplasm"] = {

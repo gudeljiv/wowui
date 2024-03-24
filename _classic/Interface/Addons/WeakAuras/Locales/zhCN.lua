@@ -62,6 +62,10 @@ L["25 Player Raid (Normal)"] = "25人团队副本（普通）"
 L["40 Man Raid"] = "40人团队"
 L["40 Player Raid"] = "40人团队副本"
 L["5 Man Dungeon"] = "5人地下城"
+--[[Translation missing --]]
+L[ [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=] ] = [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=]
 L["A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."] = "此光环的触发器追踪了软目标单位，但是你还未启用软目标CVar。考虑更改追踪的单位，或启用软目标CVar。"
 L["Abbreviate"] = "缩写"
 L["AbbreviateLargeNumbers (Blizzard)"] = "缩写大数字（暴雪）"
@@ -171,6 +175,8 @@ L["Aura Version: %s"] = "光环版本：%s"
 L["Aura(s) Found"] = "光环被找到"
 L["Aura(s) Missing"] = "光环未找到"
 L["Aura:"] = "光环："
+--[[Translation missing --]]
+L["Auras"] = "Auras"
 L["Auras:"] = "光环："
 L["Auriaya"] = "欧尔莉亚"
 L["Author Options"] = "作者选项"
@@ -338,6 +344,8 @@ L["Critical Rating"] = "暴击等级"
 L["Crowd Controlled"] = "被控制"
 L["Crushing"] = "碾压"
 L["C'thun"] = "克苏恩"
+--[[Translation missing --]]
+L["Cumulated time used during profiling"] = "Cumulated time used during profiling"
 L["Currency"] = "货币"
 L["Current Combo Point charged"] = "当前连击点已充能"
 L["Current Essence"] = "当前精华"
@@ -815,6 +823,8 @@ L["Max Quantity"] = "最大数量"
 L["Maximum Estimate"] = "最大预估"
 --[[Translation missing --]]
 L["Maximum Progress"] = "Maximum Progress"
+--[[Translation missing --]]
+L["Maximum time used on a single frame"] = "Maximum time used on a single frame"
 L["Media"] = "媒体"
 L["Medium"] = "中"
 L["Melee"] = "近战"
@@ -1263,6 +1273,8 @@ L["Spell Peneration Percent"] = "法术穿透百分比"
 L["Spell School"] = "法术派系"
 L["Spell Usable"] = "法术可用"
 L["Spellname"] = "法术名称"
+--[[Translation missing --]]
+L["Spike"] = "Spike"
 L["Spin"] = "旋转"
 L["Spiral"] = "螺旋"
 L["Spiral In And Out"] = "螺旋进入和退出"
@@ -1282,6 +1294,8 @@ L["Standing"] = "级别"
 L["Star Shake"] = "摇动"
 L["Start Animation"] = "开始动画"
 L["Start Now"] = "现在开始"
+--[[Translation missing --]]
+L["Start Profiling"] = "Start Profiling"
 L["Status"] = "状态"
 L["Status Bar"] = "状态条"
 L["Stolen"] = "偷取"
@@ -1312,6 +1326,8 @@ L["Swipe"] = "旋转动画"
 --[[Translation missing --]]
 L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "系统"
+--[[Translation missing --]]
+L["Systems"] = "Systems"
 L["Tab "] = "标签页 "
 L["Talent"] = "天赋"
 L["Talent |cFFFF0000Not|r Known"] = "天赋|cFFFF0000不|r可用"
@@ -1365,6 +1381,8 @@ L["Threat Percent"] = "仇恨百分比"
 L["Threat Situation"] = "仇恨状况"
 L["Threat Value"] = "仇恨值"
 L["Tick"] = "进度指示"
+--[[Translation missing --]]
+L["Time"] = "Time"
 L["Time Format"] = "时间格式"
 L["Time in GCDs"] = "GCD 时间"
 --[[Translation missing --]]

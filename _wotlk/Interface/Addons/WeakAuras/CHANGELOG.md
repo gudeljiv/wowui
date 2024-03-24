@@ -1,17 +1,20 @@
-# [5.12.3](https://github.com/WeakAuras/WeakAuras2/tree/5.12.3) (2024-03-22)
+# [5.12.4](https://github.com/WeakAuras/WeakAuras2/tree/5.12.4) (2024-03-23)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.1...5.12.3)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.12.3...5.12.4)
 
 ## Highlights
 
- - Fixes a few issues from the last release 
+ - Rework Profiling windows
+- Bug fixes 
 
 ## Commits
 
-InfusOnWoW (4):
+InfusOnWoW (2):
 
-- AutoHide: Automatically set expirationTime
-- Fix ordering of region creation
-- Cast Trigger: Fix inverse setting autoHide
-- Item Cooldowns: Adjust to changed retail api
+- Fix Relative Progress Animations not running in certain cases
+- Fix border of dynamic groups with animated position childd auras
+
+mrbuds (1):
+
+- Rework Profiling window (#4906)
 

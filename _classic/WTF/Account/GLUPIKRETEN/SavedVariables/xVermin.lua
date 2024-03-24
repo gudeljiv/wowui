@@ -37,6 +37,9 @@ xVerminSavedData = {
 			"Cheap Shot", -- [1]
 			"Mutilate", -- [2]
 		},
+		["Stone Rumbler"] = {
+			"Lightning Shield", -- [1]
+		},
 		["Swirling Vortex"] = {
 			"Serpent Sting", -- [1]
 		},
@@ -67,6 +70,7 @@ xVerminSavedData = {
 		},
 		["Whirlwind Ripper"] = {
 			"Serpent Sting", -- [1]
+			"Lightning Shield", -- [2]
 		},
 		["Splinterbone Centurion"] = {
 			"Intimidating Shout", -- [1]
@@ -74,12 +78,29 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Bound Elemental"] = {
-			"Rend", -- [1]
-		},
 		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
 			"Lightning Shield", -- [2]
+		},
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
+		},
+		["Charlga Razorflank"] = {
+			"Charge Stun", -- [1]
+			"Earth Shock", -- [2]
+			"Mangle", -- [3]
+		},
+		["Bound Elemental"] = {
+			"Rend", -- [1]
+		},
+		["Dark Rider"] = {
+			"Intimidation", -- [1]
+			"Charge Stun", -- [2]
+			"Concussive Shot", -- [3]
+			"Starfire Stun", -- [4]
+			"Frostbite", -- [5]
+			"Intercept Stun", -- [6]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
@@ -95,13 +116,8 @@ xVerminSavedData = {
 			"Flanking Strike", -- [5]
 			"Big Bronze Bomb", -- [6]
 		},
-		["Dark Rider"] = {
-			"Intimidation", -- [1]
-			"Charge Stun", -- [2]
-			"Concussive Shot", -- [3]
-			"Starfire Stun", -- [4]
-			"Frostbite", -- [5]
-			"Intercept Stun", -- [6]
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -113,16 +129,17 @@ xVerminSavedData = {
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
 		},
-		["Healing Ward"] = {
-			"Faerie Fire (Feral)", -- [1]
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
 		},
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
+		["Agathelos the Raging"] = {
+			"Charge Stun", -- [1]
+			"Entrapment", -- [2]
 		},
 		["Glutton"] = {
 			"Starfire Stun", -- [1]

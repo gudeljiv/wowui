@@ -63,6 +63,10 @@ L["40 Man Raid"] = "Raid 40 Personnes"
 L["40 Player Raid"] = "Raid 40 Joueurs"
 L["5 Man Dungeon"] = "Donjon 5 joueurs"
 --[[Translation missing --]]
+L[ [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=] ] = [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=]
+--[[Translation missing --]]
 L["A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."] = "A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."
 L["Abbreviate"] = "Abréger"
 --[[Translation missing --]]
@@ -195,6 +199,8 @@ L["Aura Version: %s"] = "Aura Version: %s"
 L["Aura(s) Found"] = "Aura(s) Trouvée(s)"
 L["Aura(s) Missing"] = "Aura(s) Manquante"
 L["Aura:"] = "Aura:"
+--[[Translation missing --]]
+L["Auras"] = "Auras"
 L["Auras:"] = "Auras:"
 --[[Translation missing --]]
 L["Auriaya"] = "Auriaya"
@@ -414,6 +420,8 @@ L["Critical Rating"] = "Évaluation Critique"
 L["Crowd Controlled"] = "Contrôlé"
 L["Crushing"] = "Ecrasant"
 L["C'thun"] = "C'thun"
+--[[Translation missing --]]
+L["Cumulated time used during profiling"] = "Cumulated time used during profiling"
 --[[Translation missing --]]
 L["Currency"] = "Currency"
 --[[Translation missing --]]
@@ -1096,6 +1104,8 @@ L["Maximum Estimate"] = "Estimation Maximale"
 --[[Translation missing --]]
 L["Maximum Progress"] = "Maximum Progress"
 --[[Translation missing --]]
+L["Maximum time used on a single frame"] = "Maximum time used on a single frame"
+--[[Translation missing --]]
 L["Media"] = "Media"
 L["Medium"] = "Moyen"
 --[[Translation missing --]]
@@ -1667,6 +1677,8 @@ L["Spell School"] = "Spell School"
 L["Spell Usable"] = "Sort Utilisable"
 --[[Translation missing --]]
 L["Spellname"] = "Spellname"
+--[[Translation missing --]]
+L["Spike"] = "Spike"
 L["Spin"] = "Tourne"
 L["Spiral"] = "Spirale"
 L["Spiral In And Out"] = "Spirale entrante et sortante"
@@ -1697,6 +1709,8 @@ L["Star Shake"] = "Star Shake"
 L["Start Animation"] = "Start Animation"
 --[[Translation missing --]]
 L["Start Now"] = "Start Now"
+--[[Translation missing --]]
+L["Start Profiling"] = "Start Profiling"
 L["Status"] = "Statut"
 --[[Translation missing --]]
 L["Status Bar"] = "Status Bar"
@@ -1734,6 +1748,8 @@ L["Swipe"] = "Balayage"
 --[[Translation missing --]]
 L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "Système"
+--[[Translation missing --]]
+L["Systems"] = "Systems"
 L["Tab "] = "Onglet"
 --[[Translation missing --]]
 L["Talent"] = "Talent"
@@ -1813,6 +1829,8 @@ L["Threat Situation"] = "Situation de Menace"
 --[[Translation missing --]]
 L["Threat Value"] = "Threat Value"
 L["Tick"] = "Coche"
+--[[Translation missing --]]
+L["Time"] = "Time"
 --[[Translation missing --]]
 L["Time Format"] = "Time Format"
 --[[Translation missing --]]

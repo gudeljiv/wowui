@@ -1010,9 +1010,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 102575,
-		["timeStamp"] = 3302149.122,
-		["timeAtThisLevel"] = 1239,
+		["total"] = 121640,
+		["timeStamp"] = 3393198.048,
+		["timeAtThisLevel"] = 6019,
 	},
 	["Dopebolt-LoneWolf"] = {
 		["total"] = 1080,

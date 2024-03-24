@@ -927,9 +927,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 1,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 102599,
-		["timeAtThisLevel"] = 1263,
-		["timeStamp"] = 3302172.285,
+		["total"] = 122371,
+		["timeAtThisLevel"] = 6750,
+		["timeStamp"] = 3393929.295,
 	},
 	["Battledog-Gehennas"] = {
 		["total"] = 332,

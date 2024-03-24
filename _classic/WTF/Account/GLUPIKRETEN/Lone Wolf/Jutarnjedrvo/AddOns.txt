@@ -49,7 +49,7 @@ unitscan: disabled
 !BugGrabber: enabled
 BugSack: enabled
 Drift: disabled
-TotemCaddy: disabled
+TotemCaddy: enabled
 TotemPlates: disabled
 Bagnon_ItemLevel_Vermin: disabled
 nBuff: enabled

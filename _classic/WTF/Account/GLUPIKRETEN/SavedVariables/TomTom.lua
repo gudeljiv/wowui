@@ -21,15 +21,15 @@ TomTomDB = {
 		["Lonac - Stitches"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Provokator - Jin'do"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Doperage - Lone Wolf"] = "Default",
-		["Dopesnare - Lone Wolf"] = "Default",
 		["Dopebolt - Lone Wolf"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Dopesick - Stitches"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
@@ -115,15 +115,15 @@ TomTomWaypointsM = {
 		["Lonac - Stitches"] = "Lonac - Stitches",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 		["Handrmandr - Golemagg"] = "Handrmandr - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Dopesick - Stitches"] = "Dopesick - Stitches",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
@@ -218,9 +218,9 @@ TomTomWaypointsM = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Doperage - Lone Wolf"] = {
+		["Dopetrap - Lone Wolf"] = {
 		},
-		["Dopesnare - Lone Wolf"] = {
+		["Doperage - Lone Wolf"] = {
 		},
 		["Dopebolt - Lone Wolf"] = {
 		},
@@ -234,7 +234,7 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Dopesnare - Lone Wolf"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
 		},

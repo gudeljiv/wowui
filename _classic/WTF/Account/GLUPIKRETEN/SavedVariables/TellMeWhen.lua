@@ -5744,7 +5744,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -5754,6 +5753,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -5880,7 +5880,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -5890,6 +5889,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -6193,7 +6193,6 @@ TellMeWhenDB = {
 		},
 		["PALADIN"] = {
 			["Locked"] = true,
-			["Version"] = 100900,
 			["NumGroups"] = 5,
 			["Groups"] = {
 				{
@@ -7881,6 +7880,7 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
+			["Version"] = 100900,
 		},
 		["Dopesick - Stitches"] = {
 			["Version"] = 101600,
@@ -7969,7 +7969,6 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1Zi_P9LYFYqt",
 							["States"] = {
 								{
-									["Alpha"] = 0,
 								}, -- [1]
 								nil, -- [2]
 								{
@@ -8108,6 +8107,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1bhCUZbAne4p",
 							["States"] = {
 								{
+									["Alpha"] = 0,
 								}, -- [1]
 								nil, -- [2]
 								{
@@ -8296,7 +8296,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "LUA",
-									["Name"] = "select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"",
+									["Name"] = "-- C_Timer.After(1,function() return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\" end)",
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -8349,7 +8349,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "LUA",
-									["Name"] = "select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"",
+									["Name"] = "-- C_Timer.After(1,function() return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\" end)",
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -8402,7 +8402,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "LUA",
-									["Name"] = "select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"",
+									["Name"] = "-- C_Timer.After(1,function() return select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\" end)",
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -8441,11 +8441,7 @@ TellMeWhenDB = {
 									["Operator"] = "<=",
 									["Level"] = 10,
 								}, -- [1]
-								{
-									["Type"] = "LUA",
-									["Name"] = "select(7,GetItemInfo(GetInventoryItemLink(\"player\", 17))) ~= \"Shields\"",
-								}, -- [2]
-								["n"] = 2,
+								["n"] = 1,
 							},
 							["GUID"] = "TMW:icon:1biD7YNstx0_",
 							["SettingsPerView"] = {
@@ -8774,17 +8770,14 @@ TellMeWhenDB = {
 								{
 									["Type"] = "HEALTH",
 									["Operator"] = "<=",
-									["Level"] = 25,
+									["Level"] = 80,
 								}, -- [1]
 								{
-									["Type"] = "SPEED",
+									["Type"] = "BUFFSTACKS",
+									["Name"] = "Maelstrom Weapon",
+									["Level"] = 5,
 								}, -- [2]
-								{
-									["Type"] = "CURRENTSPELL",
-									["Name"] = "Healing Wave",
-									["Level"] = 1,
-								}, -- [3]
-								["n"] = 3,
+								["n"] = 2,
 							},
 							["States"] = {
 								{
@@ -8880,6 +8873,23 @@ TellMeWhenDB = {
 							},
 						}, -- [45]
 						{
+							["Type"] = "cooldown",
+							["Name"] = "Chain Lightning",
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Operator"] = ">",
+									["Level"] = 80,
+								}, -- [1]
+								{
+									["Type"] = "BUFFSTACKS",
+									["Level"] = 5,
+									["Name"] = "Maelstrom Weapon",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1c06wqPbwWum",
 							["States"] = {
 								{
 								}, -- [1]
@@ -9328,19 +9338,20 @@ TellMeWhenDB = {
 								"TMW:icon:1a3BehMeWjaB", -- [3]
 								"TMW:icon:1biK78mkzXeo", -- [4]
 								"TMW:icon:1Zhjpe9Lw_WF", -- [5]
-								"TMW:icon:1b_18Nq2vIuM", -- [6]
-								"TMW:icon:1az3vfr0teCJ", -- [7]
-								"TMW:icon:1biD7YNstx0_", -- [8]
-								"TMW:icon:1Zi_P9NDuquZ", -- [9]
-								"TMW:icon:1bhuQwl8Qyyf", -- [10]
-								"TMW:icon:1b_lp7goF64O", -- [11]
-								"TMW:icon:1b_lp7gtOeie", -- [12]
-								"TMW:icon:1bhfVRMJ6c4p", -- [13]
-								"TMW:icon:1bhfVRNgDzW5", -- [14]
-								"TMW:icon:1Zi=Lf3qDCmn", -- [15]
-								"TMW:icon:1Zi_P9LYFYqt", -- [16]
-								"TMW:icon:1bhCUZbAne4p", -- [17]
-								"TMW:icon:1TeVAjjXQ0WB", -- [18]
+								"TMW:icon:1c06wqPbwWum", -- [6]
+								"TMW:icon:1b_18Nq2vIuM", -- [7]
+								"TMW:icon:1az3vfr0teCJ", -- [8]
+								"TMW:icon:1biD7YNstx0_", -- [9]
+								"TMW:icon:1Zi_P9NDuquZ", -- [10]
+								"TMW:icon:1bhuQwl8Qyyf", -- [11]
+								"TMW:icon:1b_lp7goF64O", -- [12]
+								"TMW:icon:1b_lp7gtOeie", -- [13]
+								"TMW:icon:1bhfVRMJ6c4p", -- [14]
+								"TMW:icon:1bhfVRNgDzW5", -- [15]
+								"TMW:icon:1Zi=Lf3qDCmn", -- [16]
+								"TMW:icon:1Zi_P9LYFYqt", -- [17]
+								"TMW:icon:1bhCUZbAne4p", -- [18]
+								"TMW:icon:1TeVAjjXQ0WB", -- [19]
 							},
 							["Enabled"] = true,
 							["Conditions"] = {
@@ -9414,19 +9425,20 @@ TellMeWhenDB = {
 								"TMW:icon:1a3BehMeWjaB", -- [3]
 								"TMW:icon:1biK78mkzXeo", -- [4]
 								"TMW:icon:1Zhjpe9Lw_WF", -- [5]
-								"TMW:icon:1b_18Nq2vIuM", -- [6]
-								"TMW:icon:1az3vfr0teCJ", -- [7]
-								"TMW:icon:1biD7YNstx0_", -- [8]
-								"TMW:icon:1Zi_P9NDuquZ", -- [9]
-								"TMW:icon:1bhuQwl8Qyyf", -- [10]
-								"TMW:icon:1b_lp7goF64O", -- [11]
-								"TMW:icon:1b_lp7gtOeie", -- [12]
-								"TMW:icon:1bhfVRMJ6c4p", -- [13]
-								"TMW:icon:1bhfVRNgDzW5", -- [14]
-								"TMW:icon:1Zi=Lf3qDCmn", -- [15]
-								"TMW:icon:1Zi_P9LYFYqt", -- [16]
-								"TMW:icon:1bhCUZbAne4p", -- [17]
-								"TMW:icon:1TeVAjjXQ0WB", -- [18]
+								"TMW:icon:1c06wqPbwWum", -- [6]
+								"TMW:icon:1b_18Nq2vIuM", -- [7]
+								"TMW:icon:1az3vfr0teCJ", -- [8]
+								"TMW:icon:1biD7YNstx0_", -- [9]
+								"TMW:icon:1Zi_P9NDuquZ", -- [10]
+								"TMW:icon:1bhuQwl8Qyyf", -- [11]
+								"TMW:icon:1b_lp7goF64O", -- [12]
+								"TMW:icon:1b_lp7gtOeie", -- [13]
+								"TMW:icon:1bhfVRMJ6c4p", -- [14]
+								"TMW:icon:1bhfVRNgDzW5", -- [15]
+								"TMW:icon:1Zi=Lf3qDCmn", -- [16]
+								"TMW:icon:1Zi_P9LYFYqt", -- [17]
+								"TMW:icon:1bhCUZbAne4p", -- [18]
+								"TMW:icon:1TeVAjjXQ0WB", -- [19]
 							},
 							["Enabled"] = true,
 							["Conditions"] = {
@@ -9567,7 +9579,6 @@ TellMeWhenDB = {
 		},
 		["DRUID"] = {
 			["Locked"] = true,
-			["Version"] = 102401,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -11836,6 +11847,7 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["NumGroups"] = 5,
+			["Version"] = 102401,
 		},
 		["Dopeclaw - Lone Wolf"] = {
 			["Version"] = 102000,
@@ -11844,7 +11856,6 @@ TellMeWhenDB = {
 			["Version"] = 102000,
 		},
 		["DEATHKNIGHT"] = {
-			["NumGroups"] = 5,
 			["Version"] = 101600,
 			["Groups"] = {
 				{
@@ -15265,6 +15276,7 @@ TellMeWhenDB = {
 					},
 				}, -- [15]
 			},
+			["NumGroups"] = 5,
 		},
 		["Dopesnare - Stitches"] = {
 			["Version"] = 101600,
@@ -15274,7 +15286,6 @@ TellMeWhenDB = {
 		},
 		["SHAMAN test"] = {
 			["Locked"] = true,
-			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -16626,6 +16637,7 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["Version"] = 101600,
+			["NumGroups"] = 5,
 		},
 		["Dopedot - Lone Wolf"] = {
 			["Version"] = 102000,
@@ -17305,7 +17317,6 @@ TellMeWhenDB = {
 		},
 		["ROGUE"] = {
 			["Locked"] = true,
-			["Version"] = 102401,
 			["NumGroups"] = 5,
 			["Groups"] = {
 				{
@@ -18551,6 +18562,7 @@ TellMeWhenDB = {
 					},
 				}, -- [5]
 			},
+			["Version"] = 102401,
 		},
 		["Dopecoil - Lone Wolf"] = {
 			["Version"] = 102000,
@@ -19964,7 +19976,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -19974,6 +19985,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -20062,7 +20074,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -20072,6 +20083,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -20182,6 +20194,8 @@ TellMeWhenDB = {
 		},
 		["WARLOCK"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
+			["Version"] = 102301,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -23258,8 +23272,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
-			["Version"] = 102301,
 		},
 		["Dopestab - Lone Wolf"] = {
 			["Version"] = 102000,
