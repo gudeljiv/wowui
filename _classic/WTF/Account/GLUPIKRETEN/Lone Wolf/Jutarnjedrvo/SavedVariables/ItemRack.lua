@@ -7,7 +7,8 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["CurrentSet"] = "dw",
+	["Queues"] = {
+	},
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
@@ -18,8 +19,10 @@ ItemRackUser = {
 				[16] = "6692::::::::31:::::::::",
 				[17] = "6725::::::::32:::::::::",
 			},
+			["oldset"] = "dw",
 			["icon"] = 134955,
 			["old"] = {
+				[17] = "6691::::::::33:::::::::",
 			},
 		},
 		["dw"] = {
@@ -40,8 +43,7 @@ ItemRackUser = {
 	},
 	["EnableQueues"] = "ON",
 	["EnablePerSetQueues"] = "OFF",
-	["Buttons"] = {
-	},
+	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
 	},
 	["Events"] = {
@@ -50,11 +52,11 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
-	["MenuScale"] = 1.200000047683716,
-	["Queues"] = {
+	["Alpha"] = 1,
+	["Buttons"] = {
 	},
+	["MenuScale"] = 1.200000047683716,
+	["CurrentSet"] = "tank",
 }

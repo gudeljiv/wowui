@@ -78,6 +78,9 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
+		["Burning Exile"] = {
+			"Serpent Sting", -- [1]
+		},
 		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
 			"Lightning Shield", -- [2]

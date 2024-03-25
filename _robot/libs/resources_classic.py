@@ -20,6 +20,7 @@ data = {
     "shaman": {
         "main": [
             {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "2"},
+            {"name": "chain ligtning", "type": "GetSpellTexture", "id": 421, "key": "3"},
             {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
             {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "v"},
             {"name": "water shield", "type": "GetSpellTexture", "id": 408510, "key": "h"},
@@ -28,7 +29,7 @@ data = {
             {"name": "frost shock", "type": "GetSpellTexture", "id": 8056, "key": "5"},
             {"name": "earth shock", "type": "GetSpellTexture", "id": 8045, "key": "6"},
             {"name": "cure toxins", "type": "GetSpellTexture", "id": 526, "key": "t"},
-            {"name": "lava lash", "type": "GetSpellTexture", "id": 408507, "key": "3"},
+            {"name": "lava lash", "type": "GetSpellTexture", "id": 408507, "key": "7"},
             {"name": "rockbiter weapon mh", "type": "GetSpellTexture", "id": 8017, "key": "f1"},
             {"name": "rockbiter weapon oh", "type": "GetItemIcon", "id": 1483, "modifier": "lshift", "key": "f1"},
             {"name": "windfury weapon mh", "type": "GetSpellTexture", "id": 8232, "key": "f2"},
@@ -128,6 +129,7 @@ data = {
             {"name": "mongoose bite", "type": "GetSpellTexture", "id": 1495, "key": "5", "modifier": "lalt"},
             {"name": "explosive shot", "type": "GetSpellTexture", "id": 409552, "key": "4", "modifier": "lshift"},
             {"name": "chimera shot", "type": "GetSpellTexture", "id": 409433, "key": "4", "modifier": "lshift"},
+            {"name": "carve", "type": "GetSpellTexture", "id": 425711, "key": "4", "modifier": "lshift"},
             {"name": "flanking strike", "type": "GetSpellTexture", "id": 415320, "key": "5", "modifier": "lshift"},
             {"name": "kill command", "type": "GetSpellTexture", "id": 409379, "key": "5", "modifier": "lshift"},
             {"name": "intimidation", "type": "GetSpellTexture", "id": 19577, "key": "t", "modifier": "lshift"},

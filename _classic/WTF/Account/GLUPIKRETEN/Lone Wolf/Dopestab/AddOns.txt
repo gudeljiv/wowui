@@ -251,3 +251,4 @@ Scrap: enabled
 BrainDead: enabled
 SyLevel: enabled
 BetterBags: disabled
+Blizzard_CombatText: enabled

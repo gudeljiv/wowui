@@ -124,3 +124,4 @@ TomPoints: enabled
 TomTom: enabled
 TotemCaddy: enabled
 ConsolePort: enabled
+Blizzard_CombatText: enabled

@@ -121,3 +121,4 @@ WhatsTraining: enabled
 xVermin: enabled
 SkillInfoPlus: enabled
 RXPGuides: enabled
+Blizzard_CombatText: enabled

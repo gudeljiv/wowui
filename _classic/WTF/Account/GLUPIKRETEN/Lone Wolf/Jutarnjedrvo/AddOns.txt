@@ -128,3 +128,4 @@ AuctionDB: enabled
 FloTotemBar: disabled
 SkillInfoPlus: enabled
 RXPGuides: enabled
+Blizzard_CombatText: enabled

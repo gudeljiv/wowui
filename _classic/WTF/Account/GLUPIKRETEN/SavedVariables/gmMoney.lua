@@ -10,7 +10,7 @@ GMMONEY = {
 			["CLASS"] = "DRUID",
 		},
 		["Dopesnare"] = {
-			["GOLD"] = 765308,
+			["GOLD"] = 696412,
 			["CLASS"] = "HUNTER",
 		},
 		["Dopedot"] = {
@@ -18,7 +18,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Jutarnjedrvo"] = {
-			["GOLD"] = 96776,
+			["GOLD"] = 97577,
 			["CLASS"] = "SHAMAN",
 		},
 		["Dopecoil"] = {

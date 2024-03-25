@@ -137,3 +137,4 @@ BrainDead: enabled
 SyLevel: enabled
 Baganator: disabled
 RXPGuides_Themes: enabled
+Blizzard_CombatText: enabled

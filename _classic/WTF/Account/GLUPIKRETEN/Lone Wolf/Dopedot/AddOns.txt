@@ -112,3 +112,4 @@ TotemCaddy: enabled
 SkillInfoPlus: enabled
 HandyNotes: disabled
 HandyNotes_Runes: disabled
+Blizzard_CombatText: enabled

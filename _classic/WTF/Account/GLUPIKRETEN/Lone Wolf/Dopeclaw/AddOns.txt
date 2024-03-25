@@ -247,3 +247,4 @@ SigmaHelmAndCloak: enabled
 TomPoints: enabled
 TotemCaddy: enabled
 SkillInfoPlus: enabled
+Blizzard_CombatText: enabled
