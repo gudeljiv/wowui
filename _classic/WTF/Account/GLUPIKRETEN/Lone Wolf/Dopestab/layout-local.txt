@@ -188,13 +188,6 @@ X: -286
 Y: -25
 W: 1
 H: 1
-Frame: WorldMapFrame
-FrameLevel: 1
-Anchor: TOP
-X: 112
-Y: -35
-W: 1024
-H: 740
 Frame: ACP_AddonList
 FrameLevel: 0
 Anchor: CENTER
@@ -254,7 +247,7 @@ H: 690
 Frame: scanner_button
 FrameLevel: 200
 Anchor: RIGHT
-X: -268
+X: -353
 Y: 155
 W: 200
 H: 50
@@ -286,6 +279,13 @@ X: -26
 Y: -275
 W: 330
 H: 113
+Frame: WorldMapFrame
+FrameLevel: 1
+Anchor: TOP
+X: 112
+Y: -35
+W: 1024
+H: 740
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

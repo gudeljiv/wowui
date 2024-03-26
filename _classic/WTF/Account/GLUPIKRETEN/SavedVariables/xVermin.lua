@@ -27,6 +27,10 @@ xVerminSavedData = {
 			"Mutilate", -- [19]
 			"Searing Pain", -- [20]
 			"Mind Flay", -- [21]
+			"Carve", -- [22]
+			"Scorch", -- [23]
+			"Living Bomb", -- [24]
+			"Earth Shock", -- [25]
 		},
 		["Skum"] = {
 			"Earthbind", -- [1]
@@ -78,9 +82,6 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Exile"] = {
-			"Serpent Sting", -- [1]
-		},
 		["Furious Stone Spirit"] = {
 			"Serpent Sting", -- [1]
 			"Lightning Shield", -- [2]
@@ -88,14 +89,6 @@ xVerminSavedData = {
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
 			"Entrapment", -- [2]
-		},
-		["Charlga Razorflank"] = {
-			"Charge Stun", -- [1]
-			"Earth Shock", -- [2]
-			"Mangle", -- [3]
-		},
-		["Bound Elemental"] = {
-			"Rend", -- [1]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]
@@ -105,11 +98,13 @@ xVerminSavedData = {
 			"Frostbite", -- [5]
 			"Intercept Stun", -- [6]
 		},
-		["Nelyz"] = {
-			"Concussive Shot", -- [1]
+		["Charlga Razorflank"] = {
+			"Charge Stun", -- [1]
+			"Earth Shock", -- [2]
+			"Mangle", -- [3]
 		},
-		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
+		["Bound Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Klaxxi"] = {
 			"Void Plague", -- [1]
@@ -119,8 +114,18 @@ xVerminSavedData = {
 			"Flanking Strike", -- [5]
 			"Big Bronze Bomb", -- [6]
 		},
-		["Healing Ward"] = {
-			"Faerie Fire (Feral)", -- [1]
+		["Nelyz"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Thundering Boulderkin"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Burning Exile"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Arclector"] = {
+			"Shadowburn", -- [1]
+			"Firebolt", -- [2]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -132,9 +137,8 @@ xVerminSavedData = {
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
 		},
-		["Arclector"] = {
-			"Shadowburn", -- [1]
-			"Firebolt", -- [2]
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Serpent Sting", -- [1]

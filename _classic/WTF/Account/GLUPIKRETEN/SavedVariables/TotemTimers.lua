@@ -232,7 +232,7 @@ TotemTimers_Profiles = {
 				nil, -- [2]
 				"CENTER", -- [3]
 				-34.66678619384766, -- [4]
-				-116.97802734375, -- [5]
+				-116.9780426025391, -- [5]
 			},
 			["TotemTimers_CastBar3"] = {
 				"CENTER", -- [1]
@@ -283,20 +283,15 @@ TotemTimers_Profiles = {
 		["ShowRaidRangeTooltip"] = true,
 		["TrackerArrange"] = "horizontal",
 		["Tracker_Clickthrough"] = false,
-		["OpenOnRightclick"] = false,
-		["TimerBarColor"] = {
-			["a"] = 1,
-			["b"] = 1,
-			["g"] = 0.5,
-			["r"] = 0.5,
-		},
+		["EnhanceCDsTotemTwisting"] = true,
+		["TrackerStopPulse"] = false,
 		["StopPulse"] = false,
 		["EnhanceCDsMaelstromHeight"] = 14,
 		["EarthShieldTracker"] = false,
 		["AnkhTracker"] = false,
 		["LongCooldownSpells"] = {
 		},
-		["CheckPlayerRange"] = true,
+		["OpenOnRightclick"] = false,
 		["LongCooldowns"] = false,
 		["ProcFlash"] = true,
 		["EarthShieldButton4"] = "player",
@@ -308,11 +303,16 @@ TotemTimers_Profiles = {
 		["CrowdControlClickthrough"] = false,
 		["LavaSurgeGlow"] = true,
 		["TotemMenuSpacing"] = 0,
-		["EnhanceCDsTotemTwisting"] = true,
+		["CheckPlayerRange"] = true,
 		["TrackerTimeHeight"] = 12,
 		["ShowKeybinds"] = true,
 		["TimerBarTexture"] = "xVerminClean",
-		["TrackerStopPulse"] = false,
+		["TimerBarColor"] = {
+			["a"] = 1,
+			["b"] = 1,
+			["g"] = 0.5,
+			["r"] = 0.5,
+		},
 		["ShowCooldowns"] = true,
 		["EnhanceCDsFlameShockDuration_Specialization"] = {
 			true, -- [1]
@@ -429,12 +429,12 @@ TotemTimers_Profiles = {
 		},
 		["MiniIcons"] = true,
 		["ShieldButton4"] = 408514,
-		["EnhanceCDsSize"] = 30,
+		["CrowdControlEnable"] = true,
 		["EnhanceCDsFlameShockDuration"] = true,
 		["MenusAlwaysVisible"] = false,
 		["WeaponTracker"] = false,
 		["TimersOnButtons"] = true,
-		["CrowdControlEnable"] = true,
+		["EnhanceCDsSize"] = 30,
 		["WeaponMenuOnRightclick"] = false,
 		["CheckRaidRange"] = true,
 		["WeaponBarDirection"] = "auto",
@@ -448,8 +448,8 @@ TotemTimers_Profiles = {
 		["BarBindings"] = true,
 		["MultiCast"] = true,
 		["LastTotems"] = {
-			3599, -- [1]
-			8075, -- [2]
+			6364, -- [1]
+			8160, -- [2]
 			5675, -- [3]
 			8512, -- [4]
 		},

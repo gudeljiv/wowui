@@ -27,6 +27,10 @@ xVerminSavedData = {
 			"Mutilate", -- [19]
 			"Searing Pain", -- [20]
 			"Mind Flay", -- [21]
+			"Carve", -- [22]
+			"Scorch", -- [23]
+			"Living Bomb", -- [24]
+			"Earth Shock", -- [25]
 		},
 		["Skum"] = {
 			"Earthbind", -- [1]
@@ -84,6 +88,11 @@ xVerminSavedData = {
 		["Enraged Stone Spirit"] = {
 			"Rend", -- [1]
 		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
+			"Lava Lash", -- [3]
+		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
@@ -91,17 +100,6 @@ xVerminSavedData = {
 		},
 		["Bound Elemental"] = {
 			"Rend", -- [1]
-		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
-			"Lava Lash", -- [3]
-		},
-		["Nelyz"] = {
-			"Concussive Shot", -- [1]
-		},
-		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
 		},
 		["Klaxxi"] = {
 			"Void Plague", -- [1]
@@ -111,8 +109,21 @@ xVerminSavedData = {
 			"Flanking Strike", -- [5]
 			"Big Bronze Bomb", -- [6]
 		},
-		["Healing Ward"] = {
-			"Faerie Fire (Feral)", -- [1]
+		["Nelyz"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Thundering Boulderkin"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Cyclonian"] = {
+			"Wrath", -- [1]
+			"Sunfire", -- [2]
+			"Starfire Stun", -- [3]
+			"War Stomp", -- [4]
+		},
+		["High Inquisitor Whitemane"] = {
+			"Intimidation", -- [1]
+			"Intercept Stun", -- [2]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -124,19 +135,8 @@ xVerminSavedData = {
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
 		},
-		["High Inquisitor Whitemane"] = {
-			"Intimidation", -- [1]
-			"Intercept Stun", -- [2]
-		},
 		["Scalding Elemental"] = {
 			"Rend", -- [1]
-		},
-		["Agathelos the Raging"] = {
-			"Charge Stun", -- [1]
-			"Entrapment", -- [2]
-		},
-		["Glutton"] = {
-			"Starfire Stun", -- [1]
 		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
@@ -147,6 +147,13 @@ xVerminSavedData = {
 			"Earth Shock", -- [6]
 			"Serpent Sting", -- [7]
 			"Quick Strike", -- [8]
+		},
+		["Agathelos the Raging"] = {
+			"Charge Stun", -- [1]
+			"Entrapment", -- [2]
+		},
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Fire Elemental"] = {
 			"Magma Totem", -- [1]
@@ -179,15 +186,15 @@ xVerminSavedData = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
+		},
 		["Arclector"] = {
 			"Shadowburn", -- [1]
 			"Firebolt", -- [2]
 		},
-		["Cyclonian"] = {
-			"Wrath", -- [1]
-			"Sunfire", -- [2]
-			"Starfire Stun", -- [3]
-			"War Stomp", -- [4]
+		["Burning Exile"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Bloodmage Thalnos"] = {
 			"Intimidation", -- [1]

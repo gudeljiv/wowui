@@ -12,6 +12,7 @@ ItemRackUser = {
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
+				[17] = "6691::::::::34:::::::::",
 			},
 		},
 		["tank"] = {
@@ -33,7 +34,7 @@ ItemRackUser = {
 			},
 			["icon"] = 133045,
 			["old"] = {
-				[17] = "5357::::::::31:::::::::",
+				[17] = "6725::::::::33:::::::::",
 			},
 		},
 		["~Unequip"] = {
@@ -58,5 +59,5 @@ ItemRackUser = {
 	["Buttons"] = {
 	},
 	["MenuScale"] = 1.200000047683716,
-	["CurrentSet"] = "tank",
+	["CurrentSet"] = "dw",
 }
