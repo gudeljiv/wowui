@@ -104,8 +104,7 @@ function Stats.CreateWindow()
             C_Timer.After(0.3, function ()
                 if EngravingFrame then
                     mainFrame:ClearAllPoints()
-                    -- mainFrame:SetPoint("LEFT", EngravingFrame, "RIGHT", 10, 19)
-					mainFrame:SetPoint("TOPLEFT", EngravingFrameSearchBox, "TOPRIGHT", 18, 5)
+                    mainFrame:SetPoint("LEFT", EngravingFrame, "RIGHT", 10, 19)
                 end
             end)
         end
@@ -207,6 +206,12 @@ _CreateStatInfos = function()
     if category.display then
         category = category.hit
         _CreateStatInfo(category, category.rating, category.bonus, category.sameLevel, category.bossLevel)
+
+        if(ECS.IsClassic) then
+            category = profile.melee.glance
+            _CreateStatInfo(category, category.sameLevel, category.damageSameLevel, category.bossLevel,  category.damageBossLevel)
+        end
+
         category = profile.melee.attackSpeed
         _CreateStatInfo(category, category.mainHand, category.offHand)
     end
