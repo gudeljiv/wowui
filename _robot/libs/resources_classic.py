@@ -23,7 +23,7 @@ data = {
             {"name": "chain ligtning", "type": "GetSpellTexture", "id": 421, "key": "3"},
             {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
             {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "v"},
-            {"name": "water shield", "type": "GetSpellTexture", "id": 408510, "key": "h"},
+            {"name": "water shield", "type": "GetSpellTexture", "id": 408510, "key": "7"},
             {"name": "molten blast", "type": "GetSpellTexture", "id": 425339, "key": "3"},
             {"name": "flame shock", "type": "GetSpellTexture", "id": 8050, "key": "4"},
             {"name": "frost shock", "type": "GetSpellTexture", "id": 8056, "key": "5"},

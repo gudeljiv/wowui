@@ -31,6 +31,12 @@ xVerminSavedData = {
 			"Scorch", -- [23]
 			"Living Bomb", -- [24]
 			"Earth Shock", -- [25]
+			"Flame Shock", -- [26]
+			"Impact", -- [27]
+			"Sunder Armor", -- [28]
+			"Ignite", -- [29]
+			"Arcane Shot", -- [30]
+			"Windfury Weapon", -- [31]
 		},
 		["Skum"] = {
 			"Earthbind", -- [1]
@@ -123,8 +129,8 @@ xVerminSavedData = {
 			"Intimidation", -- [1]
 			"Intercept Stun", -- [2]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -133,8 +139,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
@@ -176,6 +182,10 @@ xVerminSavedData = {
 			"Corruption", -- [15]
 			"Chaos Bolt", -- [16]
 			"Shadow Bolt", -- [17]
+			"Earth Shock", -- [18]
+			"Lightning Bolt", -- [19]
+			"Lava Lash", -- [20]
+			"Explosive Shot", -- [21]
 		},
 		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]

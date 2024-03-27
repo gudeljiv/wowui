@@ -31,6 +31,12 @@ xVerminSavedData = {
 			"Scorch", -- [23]
 			"Living Bomb", -- [24]
 			"Earth Shock", -- [25]
+			"Flame Shock", -- [26]
+			"Impact", -- [27]
+			"Sunder Armor", -- [28]
+			"Ignite", -- [29]
+			"Arcane Shot", -- [30]
+			"Windfury Weapon", -- [31]
 		},
 		["Skum"] = {
 			"Earthbind", -- [1]
@@ -46,6 +52,7 @@ xVerminSavedData = {
 		},
 		["Swirling Vortex"] = {
 			"Serpent Sting", -- [1]
+			"Lightning Shield", -- [2]
 		},
 		["Greater Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -109,6 +116,7 @@ xVerminSavedData = {
 		},
 		["Bound Elemental"] = {
 			"Rend", -- [1]
+			"Lightning Shield", -- [2]
 		},
 		["Burning Exile"] = {
 			"Serpent Sting", -- [1]
@@ -138,8 +146,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Healing Ward"] = {
 			"Faerie Fire (Feral)", -- [1]
@@ -176,6 +184,10 @@ xVerminSavedData = {
 			"Corruption", -- [15]
 			"Chaos Bolt", -- [16]
 			"Shadow Bolt", -- [17]
+			"Earth Shock", -- [18]
+			"Lightning Bolt", -- [19]
+			"Lava Lash", -- [20]
+			"Explosive Shot", -- [21]
 		},
 		["Fire Elemental"] = {
 			"Magma Totem", -- [1]
@@ -192,8 +204,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [7]
 			"Quick Strike", -- [8]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]
