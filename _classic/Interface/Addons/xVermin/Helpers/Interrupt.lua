@@ -28,6 +28,8 @@ end
 
 local HandleUnit = function(unit)
 
+	local HRF = false
+
 	if _G.UnitCastingInteruptible then
 
 		-- WARRIOR INTERRUPT
@@ -36,30 +38,28 @@ local HandleUnit = function(unit)
 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 			if defensive and IsEquippedItemType('Shields') then
-			-- if defensive then
 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
+					HRF = true
 				end
 			end
 			if berserker then
 				if IsSpellInRange('Pummel', unit) == 1 and select(2, GetSpellCooldown('Pummel')) == 0 then
-					HandleRotationFrame(true)
+					HRF = true
 				end
 			end
 			if battle and IsEquippedItemType('Shields') then
-			-- if battle then
 				if IsSpellInRange('Shield Bash', unit) == 1 and select(2, GetSpellCooldown('Shield Bash')) == 0 then
-					HandleRotationFrame(true)
+					HRF = true
 				end
 			end
 		end
 
 		-- PALADIN INTERRUPT
-		if (xVermin.Class == 'PALADIN') then
-			if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
-				HandleRotationFrame(true)
-			end
-		end
+		-- if (xVermin.Class == 'PALADIN') then
+		-- 	if select(2, GetSpellCooldown('Arcane Torrent')) == 0 and CheckInteractDistance(unit, 3) then
+		-- 		HRF = true
+		-- 	end
+		-- end
 
 		-- DRUID INTERRUPT
 		if (xVermin.Class == 'DRUID') then
@@ -69,34 +69,32 @@ local HandleUnit = function(unit)
 			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-			if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
-				HandleRotationFrame(true)
-			end
-		-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
-		-- 	HandleRotationFrame(true)
-		-- end
+			-- if bear and select(2, GetSpellCooldown('Bash')) == 0 and CheckInteractDistance(unit, 3) then
+			-- 	HRF = true
+			-- end
+			-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
+			-- 	HRF = true
+			-- end
 		end
 
 		-- DEATHKNIGHT INTERRUPT
 		if xVermin.Class == 'DEATHKNIGHT' then
 			if select(2, GetSpellCooldown('Mind Freeze')) == 0 and IsSpellInRange('Mind Freeze', unit) == 1 then
-				HandleRotationFrame(true)
+				HRF = true
 			end
 		end
 
 		-- SHAMAN INTERRUPT
 		if xVermin.Class == 'SHAMAN' and xVermin.GetSpellID("Earth Shock") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock")) then
 			if select(2, GetSpellCooldown('Earth Shock')) == 0 and IsSpellInRange('Earth Shock', unit) == 1 then
-				HandleRotationFrame(true)
-			else 
-				HandleRotationFrame(false)
+				HRF = true
 			end
 		end
 
 		-- ROGUE INTERRUPT
 		if xVermin.Class == 'ROGUE' and xVermin.GetSpellID("Kick") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Kick")) then
 			if select(2, GetSpellCooldown('Kick')) == 0 and IsSpellInRange('Kick', unit) == 1 then
-				HandleRotationFrame(true)
+				HRF = true
 			end
 		end
 
@@ -104,16 +102,20 @@ local HandleUnit = function(unit)
 		if xVermin.Class == 'HUNTER' then
 			if xVermin.GetSpellID("Silencing Shot") ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Silencing Shot")) then 
 				if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', unit) == 1 then
-					HandleRotationFrame(true)
+					HRF = true
 				end
 			end
 			if xVermin.GetSpellID("Intimidation", true) ~= nil and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Intimidation")) then 
 				if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', unit) == 1 then
-					HandleRotationFrame(true)
+					HRF = true
 				end
 			end
 		end
-	else
+	end
+
+	if HRF then 
+		HandleRotationFrame(true)
+	else 
 		HandleRotationFrame(false)
 	end
 end
@@ -275,3 +277,4 @@ UIParent:HookScript(
 -- )
 
 
+-- print(C_Timer.After(2,function() return select(7,GetItemInfo(GetInventoryItemLink("player", 17))) ~= "Shields" end ) )

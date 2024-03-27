@@ -822,9 +822,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 3794,
 	},
 	["Dopesnare-LoneWolf"] = {
-		["total"] = 287843,
-		["timeAtThisLevel"] = 34642,
-		["timeStamp"] = 3468858.893,
+		["total"] = 291604,
+		["timeAtThisLevel"] = 38403,
+		["timeStamp"] = 3627765.462,
 	},
 	["Miqa-Golemagg"] = {
 		["total"] = 58503,
@@ -871,9 +871,9 @@ CB_PlayedTime = {
 		["total"] = 271466,
 	},
 	["Dopemend-LoneWolf"] = {
-		["total"] = 28037,
-		["timeStamp"] = 2882885.384,
-		["timeAtThisLevel"] = 2241,
+		["total"] = 28048,
+		["timeStamp"] = 3628951.385,
+		["timeAtThisLevel"] = 2252,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -927,9 +927,9 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 1,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 129083,
-		["timeAtThisLevel"] = 2750,
-		["timeStamp"] = 3571825.978,
+		["total"] = 132258,
+		["timeAtThisLevel"] = 5925,
+		["timeStamp"] = 3627795.286,
 	},
 	["Battledog-Gehennas"] = {
 		["total"] = 332,
@@ -948,9 +948,9 @@ CB_PlayedTime = {
 		["total"] = 425995,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 126826,
-		["timeStamp"] = 3468846.605,
-		["timeAtThisLevel"] = 8744,
+		["total"] = 126831,
+		["timeStamp"] = 3628023.867,
+		["timeAtThisLevel"] = 8749,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
@@ -961,9 +961,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Dopestab-LoneWolf"] = {
-		["total"] = 231391,
-		["timeStamp"] = 3548801.098,
-		["timeAtThisLevel"] = 3447,
+		["total"] = 232047,
+		["timeStamp"] = 3612703.016,
+		["timeAtThisLevel"] = 4103,
 	},
 	["Mxzq-"] = {
 		["total"] = 356150,

@@ -209,7 +209,7 @@ TotemTimers_Profiles = {
 		["LavaSurgeAura"] = true,
 		["CrowdControlArrange"] = "horizontal",
 		["ShowRaidRangeTooltip"] = true,
-		["EnhanceCDsMaelstromHeight"] = 14,
+		["StopPulse"] = false,
 		["Tracker_Clickthrough"] = false,
 		["LongCooldownSpells"] = {
 		},
@@ -243,12 +243,12 @@ TotemTimers_Profiles = {
 				40, -- [5]
 			}, -- [4]
 		},
-		["StopPulse"] = false,
-		["TrackerArrange"] = "horizontal",
+		["TrackerStopPulse"] = false,
+		["EnhanceCDsMaelstromHeight"] = 14,
 		["EarthShieldTracker"] = false,
 		["AnkhTracker"] = false,
 		["CheckRaidRange"] = true,
-		["TrackerStopPulse"] = false,
+		["OpenOnRightclick"] = false,
 		["LongCooldowns"] = false,
 		["ProcFlash"] = true,
 		["EarthShieldButton4"] = "player",
@@ -259,20 +259,20 @@ TotemTimers_Profiles = {
 		["CrowdControlSize"] = 30,
 		["CrowdControlClickthrough"] = false,
 		["LavaSurgeGlow"] = true,
-		["EnhanceCDsSize"] = 30,
-		["CheckPlayerRange"] = true,
-		["TrackerTimeHeight"] = 12,
-		["ShowKeybinds"] = true,
-		["TimersOnButtons"] = true,
-		["TotemMenuSpacing"] = 0,
-		["ShowCooldowns"] = true,
 		["TimerBarColor"] = {
 			["a"] = 1,
 			["r"] = 0.5,
 			["g"] = 0.5,
 			["b"] = 1,
 		},
+		["EnhanceCDsTotemTwisting"] = true,
+		["TrackerTimeHeight"] = 12,
+		["ShowKeybinds"] = true,
+		["TimersOnButtons"] = true,
+		["EnhanceCDsSize"] = 30,
+		["ShowCooldowns"] = true,
 		["CrowdControlEnable"] = true,
+		["TotemMenuSpacing"] = 0,
 		["ESMainTankMenu"] = true,
 		["ShieldButton4"] = 408514,
 		["WindfuryDownrank"] = false,
@@ -362,9 +362,9 @@ TotemTimers_Profiles = {
 		["MenusAlwaysVisible"] = false,
 		["HideBlizzTimers"] = true,
 		["LongCooldownsArrange"] = "horizontal",
-		["OpenOnRightclick"] = false,
+		["CheckPlayerRange"] = true,
 		["WeaponMenuOnRightclick"] = false,
-		["EnhanceCDsTotemTwisting"] = true,
+		["TrackerArrange"] = "horizontal",
 		["WeaponBarDirection"] = "auto",
 		["LongCooldownsStopPulse"] = false,
 		["HideInVehicle"] = true,
@@ -404,7 +404,7 @@ TotemTimers_Profiles = {
 				nil, -- [2]
 				"CENTER", -- [3]
 				-34.66678619384766, -- [4]
-				-116.9780349731445, -- [5]
+				-116.9780426025391, -- [5]
 			},
 			["TotemTimers_CastBar3"] = {
 				"CENTER", -- [1]

@@ -68,6 +68,10 @@ xVerminSavedData = {
 		["Mutanus the Devourer"] = {
 			"Shadow Word: Pain", -- [1]
 		},
+		["Furious Stone Spirit"] = {
+			"Serpent Sting", -- [1]
+			"Lightning Shield", -- [2]
+		},
 		["Bristleback Geomancer"] = {
 			"Incinerate", -- [1]
 			"Firebolt", -- [2]
@@ -82,13 +86,9 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Furious Stone Spirit"] = {
+		["Thundering Exile"] = {
 			"Serpent Sting", -- [1]
-			"Lightning Shield", -- [2]
-		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
+			"Chimera Shot", -- [2]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]
@@ -98,6 +98,10 @@ xVerminSavedData = {
 			"Frostbite", -- [5]
 			"Intercept Stun", -- [6]
 		},
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
+		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
@@ -106,13 +110,8 @@ xVerminSavedData = {
 		["Bound Elemental"] = {
 			"Rend", -- [1]
 		},
-		["Klaxxi"] = {
-			"Void Plague", -- [1]
-			"Psychic Scream", -- [2]
-			"Raptor Strike", -- [3]
-			"Penance", -- [4]
-			"Flanking Strike", -- [5]
-			"Big Bronze Bomb", -- [6]
+		["Burning Exile"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
@@ -120,12 +119,17 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Exile"] = {
-			"Serpent Sting", -- [1]
-		},
 		["Arclector"] = {
 			"Shadowburn", -- [1]
 			"Firebolt", -- [2]
+		},
+		["Klaxxi"] = {
+			"Void Plague", -- [1]
+			"Psychic Scream", -- [2]
+			"Raptor Strike", -- [3]
+			"Penance", -- [4]
+			"Flanking Strike", -- [5]
+			"Big Bronze Bomb", -- [6]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]

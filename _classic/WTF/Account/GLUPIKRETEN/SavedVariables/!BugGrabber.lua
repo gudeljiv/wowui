@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12015,
+	["session"] = 12023,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3147,5 +3147,13 @@ BugGrabberDB = {
 			["session"] = 12014,
 			["counter"] = 4,
 		}, -- [406]
+		{
+			["message"] = "...face/AddOns/ExtendedCharacterStats/Modules/Stats.lua:212: attempt to index local 'category' (a nil value)",
+			["time"] = "2024/03/27 07:59:46",
+			["locals"] = "profile = <table> {\n ranged = <table> {\n }\n defense = <table> {\n }\n general = <table> {\n }\n melee = <table> {\n }\n regen = <table> {\n }\n spellBonus = <table> {\n }\n spell = <table> {\n }\n}\ncategory = nil\n(*temporary) = <function> defined @Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua:161\n(*temporary) = nil\n(*temporary) = <table> {\n isTbcOnly = true\n statColor = \"558b2f\"\n display = true\n text = \"Rating\"\n refName = \"MeleeHitRating\"\n textColor = \"85bb5c\"\n}\n(*temporary) = <table> {\n statColor = \"558b2f\"\n display = true\n text = \"Bonus\"\n refName = \"MeleeHitBonus\"\n textColor = \"85bb5c\"\n}\n(*temporary) = <table> {\n statColor = \"558b2f\"\n display = true\n text = \"Miss\"\n refName = \"MeleeHitSameLevel\"\n textColor = \"85bb5c\"\n}\n(*temporary) = <table> {\n statColor = \"558b2f\"\n display = true\n text = \"Miss (Lvl + 3)\"\n refName = \"MeleeHitBossLevel\"\n textColor = \"85bb5c\"\n}\n(*temporary) = <table> {\n bossLevel = <table> {\n }\n isSubGroup = true\n display = true\n text = \"Hit\"\n sameLevel = <table> {\n }\n rating = <table> {\n }\n refName = \"MeleeHitHeader\"\n bonus = <table> {\n }\n}\n(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\n(*temporary) = 4\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"MeleeHitBossLevel\"\n(*temporary) = \"|cFF85bb5cMiss (Lvl + 3): |r|cFF558b2f23.2%|r\"\n(*temporary) = true\n(*temporary) = \"attempt to index local 'category' (a nil value)\"\n_CreateStatInfo = <function> defined @Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua:161\n",
+			["stack"] = "[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua\"]:212: in function <...face/AddOns/ExtendedCharacterStats/Modules/Stats.lua:193>\n[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua\"]:113: in function `CreateWindow'\n[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Init.lua\"]:31: in function `OnPlayerLogin'\n[string \"@Interface/AddOns/ExtendedCharacterStats/ECS.lua\"]:36: in function <Interface/AddOns/ExtendedCharacterStats/ECS.lua:29>",
+			["session"] = 12017,
+			["counter"] = 2,
+		}, -- [407]
 	},
 }
