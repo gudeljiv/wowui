@@ -333,3 +333,22 @@ xVermin.GetSpellID = function(name)
 	return spellID
 end
 xSpellID = xVermin.GetSpellID
+
+xVermin.MHWF = function()
+	local hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID = GetWeaponEnchantInfo()
+	if hasMainHandEnchant then
+		local enchantIDs = {
+			1783, -- Windfury Totem I
+			563, -- Windfury Totem II
+			564, -- Windfury Totem III
+			7141, -- Wild Strikes
+		}
+		for _, id in ipairs(enchantIDs) do
+			if mainHandEnchantID == id then
+				return true
+			end
+		end
+	end
+	return false
+end
+xMHWF = xVermin.MHWF

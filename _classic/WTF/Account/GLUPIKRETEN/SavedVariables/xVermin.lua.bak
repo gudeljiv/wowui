@@ -47,6 +47,9 @@ xVerminSavedData = {
 			"Cheap Shot", -- [1]
 			"Mutilate", -- [2]
 		},
+		["Wind Howler"] = {
+			"Deep Wound", -- [1]
+		},
 		["Stone Rumbler"] = {
 			"Lightning Shield", -- [1]
 		},
@@ -113,6 +116,7 @@ xVerminSavedData = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
 			"Mangle", -- [3]
+			"War Stomp", -- [4]
 		},
 		["Bound Elemental"] = {
 			"Rend", -- [1]
@@ -146,8 +150,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["Healing Ward"] = {
 			"Faerie Fire (Feral)", -- [1]
@@ -204,8 +208,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [7]
 			"Quick Strike", -- [8]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]

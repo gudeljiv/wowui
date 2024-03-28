@@ -47,6 +47,9 @@ xVerminSavedData = {
 			"Cheap Shot", -- [1]
 			"Mutilate", -- [2]
 		},
+		["Wind Howler"] = {
+			"Deep Wound", -- [1]
+		},
 		["Stone Rumbler"] = {
 			"Lightning Shield", -- [1]
 		},
@@ -108,6 +111,7 @@ xVerminSavedData = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
 			"Mangle", -- [3]
+			"War Stomp", -- [4]
 		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
@@ -129,8 +133,8 @@ xVerminSavedData = {
 			"Intimidation", -- [1]
 			"Intercept Stun", -- [2]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -139,8 +143,8 @@ xVerminSavedData = {
 			"Serpent Sting", -- [1]
 			"Lava Lash", -- [2]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
