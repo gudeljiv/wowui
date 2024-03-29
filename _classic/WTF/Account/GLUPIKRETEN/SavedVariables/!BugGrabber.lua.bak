@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12035,
+	["session"] = 12043,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3056,57 +3056,49 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [393]
 		{
-			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
-			["time"] = "2023/09/09 16:52:16",
-			["locals"] = "(*temporary) = \"bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))\"\n",
-			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-			["session"] = 12006,
-			["counter"] = 75,
-		}, -- [394]
-		{
 			["message"] = "...ace/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua:156: attempt to index field 'key1Button' (a nil value)",
 			["time"] = "2024/01/21 08:27:16",
 			["locals"] = "self = KeyBindingFrame {\n 0 = <userdata>\n commandLabel = FontString {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n cancelButton = Button {\n }\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n unbindButton = Button {\n }\n defaultsButton = Button {\n }\n okayButton = Button {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n cntCategory = <table> {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n BottomEdge = Texture {\n }\n scrollOffset = 0\n Center = Texture {\n }\n LeftEdge = Texture {\n }\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n topSeparator = Texture {\n }\n TopLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n scrollFrame = KeyBindingFrameScrollFrame {\n }\n BottomLeftCorner = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n TopRightCorner = Texture {\n }\n characterSpecificButton = CheckButton {\n }\n TopEdge = Texture {\n }\n key2Label = FontString {\n }\n bindingsContainer = Frame {\n }\n backdropInfo = <table> {\n }\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n outputText = FontString {\n }\n header = Frame {\n }\n key1Label = FontString {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n categoryList = KeyBindingFrameCategoryList {\n }\n bottomSeparator = Texture {\n }\n}\npreviousRow = KeyBindingFrameKeyBinding1 {\n 0 = <userdata>\n OnLeave = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:354\n Highlight = Texture {\n }\n UnparentBindingsToInputBlocker = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:468\n ReparentBindingsToInputBlocker = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:454\n OnHighlightBinding = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:302\n cbrHandles = <table> {\n }\n ClearSelections = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:497\n UpdateBindingState = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:361\n OnShow = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:288\n Init = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:379\n OnHide = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:292\n RenewBindings = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:492\n OnEvent = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:296\n Button2 = Button {\n }\n Buttons = <table> {\n }\n Button1 = Button {\n }\n DetermineHighlightFrame = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:306\n Release = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:476\n Label = FontString {\n }\n OnEnter = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:346\n OnLoad = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:270\n}\n(*temporary) = nil\n(*temporary) = KeyBindingFrameKeyBinding1 {\n 0 = <userdata>\n OnLeave = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:354\n Highlight = Texture {\n }\n UnparentBindingsToInputBlocker = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:468\n ReparentBindingsToInputBlocker = <function> defined @Interface/SharedXML/Settings/Blizzard_Keybindings.lua:454\n OnHighlightBinding = <f",
 			["stack"] = "[string \"@Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua\"]:156: in function `KeyBindingFrame_LoadKeyBindingButtons'\n[string \"@Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua\"]:64: in function <...ace/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua:59>\n[string \"=[C]\"]: ?",
 			["session"] = 12007,
 			["counter"] = 10,
-		}, -- [395]
+		}, -- [394]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [396]
+		}, -- [395]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [397]
+		}, -- [396]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [398]
+		}, -- [397]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [399]
+		}, -- [398]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [400]
+		}, -- [399]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
 			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
 			["counter"] = 10,
-		}, -- [401]
+		}, -- [400]
 		{
 			["message"] = "...ace/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua:279: attempt to index field 'keyBindingRows' (a nil value)",
 			["time"] = "2024/01/21 17:35:58",
@@ -3114,7 +3106,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua\"]:279: in function `KeyBindingFrame_Update'\n[string \"@Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua\"]:177: in function <...ace/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.lua:175>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2160: in function `SetUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1966: in function `ShowUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1873: in function <Interface_Vanilla/FrameXML/UIParent.lua:1869>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2652: in function `ShowUIPanel'\n[string \"@Interface/AddOns/TotemCaddy/core/TotemOptions.lua\"]:86: in function <Interface/AddOns/TotemCaddy/core/TotemOptions.lua:76>",
 			["session"] = 12007,
 			["counter"] = 8,
-		}, -- [402]
+		}, -- [401]
 		{
 			["message"] = "...nterface/SharedXML/Settings/Blizzard_Keybindings.lua:307: attempt to index field 'initializer' (a nil value)",
 			["time"] = "2024/01/21 17:35:58",
@@ -3122,7 +3114,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/SharedXML/Settings/Blizzard_Keybindings.lua\"]:307: in function `DetermineHighlightFrame'\n[string \"@Interface/SharedXML/Settings/Blizzard_Keybindings.lua\"]:347: in function <...nterface/SharedXML/Settings/Blizzard_Keybindings.lua:346>",
 			["session"] = 12007,
 			["counter"] = 8,
-		}, -- [403]
+		}, -- [402]
 		{
 			["message"] = "Interface/AddOns/TotemTimers/GUI/EnhanceCDs.lua:217: attempt to index local 'timer' (a nil value)",
 			["time"] = "2024/03/25 15:41:12",
@@ -3130,7 +3122,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/TotemTimers/GUI/EnhanceCDs.lua\"]:217: in function <Interface/AddOns/TotemTimers/GUI/EnhanceCDs.lua:209>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-Button.lua\"]:22: in function <...sque/Libs/AceGUI-3.0/widgets/AceGUIWidget-Button.lua:19>",
 			["session"] = 12008,
 			["counter"] = 1,
-		}, -- [404]
+		}, -- [403]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '*** ForceTaint_Strong ***' tried to call the protected function 'CheckInteractDistance()'.",
 			["time"] = "2024/02/15 13:27:27",
@@ -3138,7 +3130,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"return function() \"]:6: in function <[string \"return function() \"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:714: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:623>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:863: in function `ScanEventsInternal'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:817: in function `ScanEvents'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1774: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:1772>",
 			["session"] = 12014,
 			["counter"] = 4,
-		}, -- [405]
+		}, -- [404]
 		{
 			["message"] = "...face/AddOns/ExtendedCharacterStats/Modules/Stats.lua:212: attempt to index local 'category' (a nil value)",
 			["time"] = "2024/03/27 07:59:46",
@@ -3146,7 +3138,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua\"]:212: in function <...face/AddOns/ExtendedCharacterStats/Modules/Stats.lua:193>\n[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Stats.lua\"]:113: in function `CreateWindow'\n[string \"@Interface/AddOns/ExtendedCharacterStats/Modules/Init.lua\"]:31: in function `OnPlayerLogin'\n[string \"@Interface/AddOns/ExtendedCharacterStats/ECS.lua\"]:36: in function <Interface/AddOns/ExtendedCharacterStats/ECS.lua:29>",
 			["session"] = 12017,
 			["counter"] = 2,
-		}, -- [406]
+		}, -- [405]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'CancelUnitBuff()'.",
 			["time"] = "2024/01/07 13:05:12",
@@ -3154,7 +3146,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:481: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:481>\n[string \"=[C]\"]: in function `CancelUnitBuff'\n[string \"@Interface/FrameXML/BuffFrame.lua\"]:309: in function `BuffButton_OnClick'\n[string \"*BuffFrame.xml:41_OnClick\"]:1: in function <[string \"*BuffFrame.xml:41_OnClick\"]:1>",
 			["session"] = 12034,
 			["counter"] = 2,
-		}, -- [407]
+		}, -- [406]
 		{
 			["message"] = "[string \"Condition_ISPLAYER_DEBUFFDUR_STANCE_SPEED_I...\"]:8: [string \"local hasMainHandEnchant,mainHandExpiration,mainHandCharges,mai...\"]:3: 'then' expected near '='",
 			["time"] = "2024/03/28 21:15:04",
@@ -3162,6 +3154,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"Condition_ISPLAYER_DEBUFFDUR_STANCE_SPEED_INSTANCE2_LUA\"]:8: in function `CheckFunction'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:266: in function <...eWhen/Components/Core/Conditions/ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Conditions/ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface/AddOns/TellMeWhen/Components/Core/Icon.lua\"]:1051: in function `Setup'\n[string \"@Interface/AddOns/TellMeWhen/Options/IconConfig.lua\"]:71: in function <Interface/AddOns/TellMeWhen/Options/IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1123: in function `CScriptCall'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:974: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:962>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1034: in function `CScriptBubble'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:1463: in function `OnSettingSaved'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2051: in function `SaveSetting'\n[string \"@Interface/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua\"]:2023: in function <...ace/AddOns/TellMeWhen/Options/TellMeWhen_Options.lua:2020>",
 			["session"] = 12034,
 			["counter"] = 1,
+		}, -- [407]
+		{
+			["message"] = "Interface/AddOns/ItemRack/ItemRack.lua:1325: calling 'GetName' on bad self (Usage: local name = self:GetName())",
+			["time"] = "2024/03/28 21:35:56",
+			["locals"] = "(*temporary) = SecureTransferDialog {\n 0 = <userdata>\n Button2 = Button {\n }\n MoneyLabel = FontString {\n }\n CautionIcon = Texture {\n }\n Text = FontString {\n }\n Border = Frame {\n }\n Button1 = Button {\n }\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetName'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:1325: in function `func'\n[string \"@Interface/AddOns/ItemRack/ItemRack.lua\"]:1011: in function `OnUpdate'\n[string \"*ItemRack.xml:7_OnUpdate\"]:1: in function <[string \"*ItemRack.xml:7_OnUpdate\"]:1>",
+			["session"] = 12036,
+			["counter"] = 22,
 		}, -- [408]
+		{
+			["message"] = "bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))",
+			["time"] = "2023/09/09 16:52:16",
+			["locals"] = "(*temporary) = \"bad argument #2 to '?' (Usage: self:SetVertexColor(color [, a]))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetVertexColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-ColorPicker.lua\"]:105: in function `SetColor'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1377: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1137: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1110>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1639: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...face/AddOns/BlizzMove/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TabGroup.lua\"]:342: in function `SelectTab'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1675: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1564: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:1548>\n...\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:522: in function `Select'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceGUI-3.0-41/widgets/AceGUIContainer-TreeGroup.lua\"]:530: in function `SelectByValue'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1735: in function `FeedGroup'\n[string \"@Interface/AddOns/BlizzMove/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:1919: in function `Open'\n[string \"@Interface/AddOns/ShadowedUF_Options/config.lua\"]:6686: in function `Open'\n[string \"@Interface/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua\"]:899: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4966: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4629: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4665: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 12042,
+			["counter"] = 77,
+		}, -- [409]
 	},
 }

@@ -336,6 +336,7 @@ xSpellID = xVermin.GetSpellID
 
 xVermin.MHWF = function()
 	local hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID = GetWeaponEnchantInfo()
+	-- print(hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID)
 	if hasMainHandEnchant then
 		local enchantIDs = {
 			1783, -- Windfury Totem I
