@@ -50,7 +50,6 @@ local HandleUnit = function(unit)
 
 	if xVermin.IfUnitIsCastingClassic(unit) and not immune then
 		-- WARRIOR INTERRUPT
-		-- WARRIOR INTERRUPT
 		if (xVermin.Class == 'WARRIOR') then
 			local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
