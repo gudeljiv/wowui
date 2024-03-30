@@ -73,7 +73,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(xMHWF())
+/run print("casting", UnitCastingInfo("target"))
+/run print("channel", UnitChannelInfo("target"))
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

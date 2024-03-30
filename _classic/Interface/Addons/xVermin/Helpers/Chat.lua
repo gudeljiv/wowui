@@ -98,12 +98,12 @@ xVermin.SetChatChannels = function()
 	ChatFrame_AddMessageGroup(ChatFrame7, 'COMBAT_FACTION_CHANGE')
 
 	for i = 1, 50 do
-		-- ToggleChatColorNamesByClassGroup(true, 'CHANNEL' .. i)
+		ToggleChatColorNamesByClassGroup(true, 'CHANNEL' .. i)
 	end
 
 	for i = 1, 18 do
 		if _G['ChatConfigChatSettingsLeftCheckBox' .. i .. 'Check'] then
-			-- ToggleChatColorNamesByClassGroup(true, _G['ChatConfigChatSettingsLeftCheckBox' .. i .. 'Check']:GetParent().type)
+			ToggleChatColorNamesByClassGroup(true, _G['ChatConfigChatSettingsLeftCheckBox' .. i .. 'Check']:GetParent().type)
 			-- LeaPlusLC:LockItem(_G["ChatConfigChatSettingsLeftCheckBox" .. i .. "ColorClasses"], true)
 		end
 	end

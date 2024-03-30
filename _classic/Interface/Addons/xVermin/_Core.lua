@@ -224,17 +224,14 @@ xVermin.IfUnitIsCastingInteruptible = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
 	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 
-	-- print("1. ", CastingInfo(unit))
-	-- print("2.", ChannelInfo(unit))
-
 	if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
 		return true
 	end
 	return false
 end
-xUnitCastingInteruptable = xVermin.IfUnitIsCastingInteruptible
+xUnitCastingInteruptible = xVermin.IfUnitIsCastingInteruptible
 
-xVermin.IfUnitIsCastingNonInteruptable = function(unit)
+xVermin.IfUnitIsCastingNonInteruptible = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
 	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 	if (name_casting ~= nil and notInterruptible_casting) or (name_channeling ~= nil and notInterruptible_chanelling) then
@@ -242,17 +239,29 @@ xVermin.IfUnitIsCastingNonInteruptable = function(unit)
 	end
 	return false
 end
-xUnitCastingNonInteruptable = xVermin.IfUnitIsCastingNonInteruptable
+xUnitCastingNonInteruptible = xVermin.IfUnitIsCastingNonInteruptible
 
 xVermin.IfUnitIsCasting = function(unit)
 	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = CastingInfo(unit)
 	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = ChannelInfo(unit)
 	if name_casting ~= nil or name_channeling ~= nil then
-		return true
+		local name = UnitName(unit)
+		return true, name, name_casting, spellid
 	end
 	return false
 end
 xUnitCasting = xVermin.IfUnitIsCasting
+
+xVermin.IfUnitIsCastingClassic = function(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitCastingInfo(unit)
+	if name_casting ~= nil or name_channeling ~= nil then
+		local name = UnitName(unit)
+		return true, name, name_casting, spellid
+	end
+	return false
+end
+IfUnitIsCastingClassic = xVermin.IfUnitIsCastingClassic
 
 xVermin.GetRange = function(unit)
 	unit = unit or 'target'
@@ -334,16 +343,16 @@ xVermin.GetSpellID = function(name)
 end
 xSpellID = xVermin.GetSpellID
 
+
+local enchantIDs = {
+	1783, -- Windfury Totem I
+	563, -- Windfury Totem II
+	564, -- Windfury Totem III
+	7141, -- Wild Strikes
+}
 xVermin.MHWF = function()
 	local hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID = GetWeaponEnchantInfo()
-	-- print(hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID)
 	if hasMainHandEnchant then
-		local enchantIDs = {
-			1783, -- Windfury Totem I
-			563, -- Windfury Totem II
-			564, -- Windfury Totem III
-			7141, -- Wild Strikes
-		}
 		for _, id in ipairs(enchantIDs) do
 			if mainHandEnchantID == id then
 				return true

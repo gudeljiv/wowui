@@ -61,29 +61,29 @@ local _, xVermin = ...
 -- end)
 
 
-local function HandleCast(data, castbar, unitID)
-	-- print("start cast", unitID, castbar, not castbar.isUninterruptible)
-	if unitID == "target" then
-		if not castbar.isUninterruptible then
-			_G.UnitCastingInteruptible = true
-		else
-			_G.UnitCastingInteruptible = false
-		end
-	end
-end
+-- local function HandleCast(data, castbar, unitID)
+-- 	-- print("start cast", unitID, castbar, not castbar.isUninterruptible)
+-- 	if unitID == "target" then
+-- 		if not castbar.isUninterruptible then
+-- 			_G.UnitCastingInteruptible = true
+-- 		else
+-- 			_G.UnitCastingInteruptible = false
+-- 		end
+-- 	end
+-- end
 
-xVermin.CheckIfLoadedWithTimer(
-	'ClassicCastbars',
-	function()
-		hooksecurefunc(ClassicCastbars, "DisplayCastbar", HandleCast)
-		hooksecurefunc(ClassicCastbars, "HideCastbar", function() 
-			-- print("stop cast")
-			_G.UnitCastingInteruptible = false 
-		end)
-	end
-)
+-- xVermin.CheckIfLoadedWithTimer(
+-- 	'ClassicCastbars',
+-- 	function()
+-- 		hooksecurefunc(ClassicCastbars, "DisplayCastbar", HandleCast)
+-- 		hooksecurefunc(ClassicCastbars, "HideCastbar", function() 
+-- 			-- print("stop cast")
+-- 			_G.UnitCastingInteruptible = false 
+-- 		end)
+-- 	end
+-- )
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('PLAYER_REGEN_ENABLED')
--- f:RegisterEvent('PLAYER_TARGET_CHANGED')
-f:SetScript('OnEvent', function() _G.UnitCastingInteruptible = false end)
+-- local f = CreateFrame('Frame')
+-- f:RegisterEvent('PLAYER_REGEN_ENABLED')
+-- -- f:RegisterEvent('PLAYER_TARGET_CHANGED')
+-- f:SetScript('OnEvent', function() _G.UnitCastingInteruptible = false end)
