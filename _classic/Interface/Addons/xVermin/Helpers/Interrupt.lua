@@ -36,6 +36,11 @@ local ClassInterruptSpells = {
 local HandleUnit = function(unit)
 
 	local HRF = false
+	if not ClassInterruptSpells[xVermin.Class] then
+		HandleRotationFrame(false)
+		return false
+	end
+
 
 	local spellsToCheck = ClassInterruptSpells[xVermin.Class]
 	local immune = false

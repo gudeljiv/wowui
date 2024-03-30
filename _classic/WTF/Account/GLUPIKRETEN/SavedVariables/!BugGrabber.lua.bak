@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 12058,
+	["session"] = 12060,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3187,5 +3187,13 @@ BugGrabberDB = {
 			["session"] = 12058,
 			["counter"] = 5,
 		}, -- [411]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:43: bad argument #1 to 'ipairs' (table expected, got nil)",
+			["time"] = "2024/03/30 11:46:58",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"table expected, got nil\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `ipairs'\n[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:43: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:36>\n[string \"@Interface/AddOns/xVermin/Helpers/Interrupt.lua\"]:150: in function <Interface/AddOns/xVermin/Helpers/Interrupt.lua:146>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 12060,
+			["counter"] = 1772,
+		}, -- [412]
 	},
 }
