@@ -28,7 +28,6 @@ local ClassInterruptSpells = {
 	["PALADIN"] = {"Arcane Torrent"},
 	["DRUID"] = {"Bash"},
 	["DEATHKNIGHT"] = {"Mind Freeze"},
-	["DEATHKNIGHT"] = {"Mind Freeze"},
 	["SHAMAN"] = {"Earth Shock"},
 	["ROGUE"] = {"Kick"},
 	["HUNTER"] = {"Silencing Shot", "Intimidation"},
