@@ -39,7 +39,6 @@ elseif (region == 5) then
 	--China.
 	calcStart = 1707260400; --CN same as OCE/US.
 end
-region = nil;
 calcStart = calcStart - 3600; --Stv runs 1 hour before ashenvale.
 
 local function getTimeLeft()
@@ -48,7 +47,12 @@ local function getTimeLeft()
 		local start = calcStart;
 		local isDST = NWB:isDST();
 		if (isDST) then
-			start = start + 3600;
+			--wtf...
+			if (region == 3) then
+				start = start - 3600;
+			else
+				start = start + 3600;
+			end
 		end
 		local utc = GetServerTime();
 		local secondsSinceFirstReset = utc - start;
@@ -415,8 +419,8 @@ local function chatMsgLoot(...)
  		--Self receive single loot "You create: [Item]"
     	local itemLink, amount = strmatch(msg, string.gsub(LOOT_ITEM_CREATED_SELF, "%%s", "(.+)"));
     end
-    if (itemLink) then
-    	if (string.match(itemLink, "item:213168")) then
+    if (itemLink) then --Copper Blood Coin and Copper Massacre Coin.
+    	if (string.match(itemLink, "item:213168") or string.match(itemLink, "item:221364")) then
     		if (amount) then
 	    		amount = tonumber(amount);
 	    	end

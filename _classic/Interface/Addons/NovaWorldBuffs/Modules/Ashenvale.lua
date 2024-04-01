@@ -36,7 +36,6 @@ elseif (region == 5) then
 	--China.
 	calcStart = 1707260400; --CN same as OCE/US.
 end
-region = nil;
 
 _G["calcStart"] = calcStart;
 
@@ -46,7 +45,12 @@ local function getTimeLeft()
 		local start = calcStart;
 		local isDST = NWB:isDST();
 		if (isDST) then
-			start = start + 3600;
+			--wtf...
+			if (region == 3) then
+				start = start - 3600;
+			else
+				start = start + 3600;
+			end
 		end
 		local utc = GetServerTime();
 		local secondsSinceFirstReset = utc - start;
