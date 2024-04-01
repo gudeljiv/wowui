@@ -84,12 +84,12 @@ xVerminSavedData = {
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]
 		},
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
+		},
 		["Bristleback Geomancer"] = {
 			"Incinerate", -- [1]
 			"Firebolt", -- [2]
-		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
 		},
 		["Whirlwind Ripper"] = {
 			"Serpent Sting", -- [1]
@@ -136,16 +136,6 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
-			"Lava Lash", -- [2]
-		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
-		},
-		["Lesser Rock Elemental"] = {
-			"Serpent Sting", -- [1]
-		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
 			"Stormstrike", -- [2]
@@ -158,6 +148,16 @@ xVerminSavedData = {
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
+		},
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
+			"Lava Lash", -- [2]
+		},
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Fire Elemental"] = {
 			"Magma Totem", -- [1]

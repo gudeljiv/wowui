@@ -88,9 +88,8 @@ xVerminSavedData = {
 		["Unfettered Spirit"] = {
 			"Deep Wound", -- [1]
 		},
-		["Bristleback Geomancer"] = {
-			"Incinerate", -- [1]
-			"Firebolt", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Whirlwind Ripper"] = {
 			"Serpent Sting", -- [1]
@@ -152,12 +151,18 @@ xVerminSavedData = {
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
-			"Lava Lash", -- [2]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Stormstrike", -- [2]
+			"Wing Clip", -- [3]
+			"Sunder Armor", -- [4]
+			"Raptor Strike", -- [5]
+			"Earth Shock", -- [6]
+			"Serpent Sting", -- [7]
+			"Quick Strike", -- [8]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["Healing Ward"] = {
 			"Faerie Fire (Feral)", -- [1]
@@ -204,18 +209,12 @@ xVerminSavedData = {
 			"Flametongue Attack", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Stormstrike", -- [2]
-			"Wing Clip", -- [3]
-			"Sunder Armor", -- [4]
-			"Raptor Strike", -- [5]
-			"Earth Shock", -- [6]
-			"Serpent Sting", -- [7]
-			"Quick Strike", -- [8]
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
+			"Lava Lash", -- [2]
 		},
 		["High Inquisitor Whitemane"] = {
 			"Intimidation", -- [1]
@@ -236,8 +235,9 @@ xVerminSavedData = {
 			"Serpent Sting", -- [2]
 			"Lava Lash", -- [3]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Incinerate", -- [1]
+			"Firebolt", -- [2]
 		},
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]
