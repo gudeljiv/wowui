@@ -73,10 +73,6 @@ L["40 Man Raid"] = "40인 공격대"
 L["40 Player Raid"] = "40인 공격대"
 L["5 Man Dungeon"] = "5인 던전"
 --[[Translation missing --]]
-L[ [=[A detailed overview of your auras and WeakAuras systems
-Copy the whole text to Weakaura's Discord if you need assistance.]=] ] = [=[A detailed overview of your auras and WeakAuras systems
-Copy the whole text to Weakaura's Discord if you need assistance.]=]
---[[Translation missing --]]
 L["A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."] = "A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."
 L["Abbreviate"] = "축약"
 L["AbbreviateLargeNumbers (Blizzard)"] = "큰 숫자 축약 (블리자드)"
@@ -196,8 +192,6 @@ L["Aura Version: %s"] = "효과 버전: %s"
 L["Aura(s) Found"] = "효과 발견"
 L["Aura(s) Missing"] = "효과 누락"
 L["Aura:"] = "효과:"
---[[Translation missing --]]
-L["Auras"] = "Auras"
 L["Auras:"] = "효과들:"
 L["Auriaya"] = "아우리아야"
 L["Author Options"] = "작성자 옵션"
@@ -404,8 +398,6 @@ L["Critical Rating"] = "치명타 및 극대화"
 L["Crowd Controlled"] = "군중 제어됨"
 L["Crushing"] = "강타"
 L["C'thun"] = "쑨"
---[[Translation missing --]]
-L["Cumulated time used during profiling"] = "Cumulated time used during profiling"
 --[[Translation missing --]]
 L["Currency"] = "Currency"
 --[[Translation missing --]]
@@ -800,9 +792,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["Id"] = "Id"
---[[Translation missing --]]
 L["ID"] = "ID"
+--[[Translation missing --]]
+L["Id"] = "Id"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "추가 지원이 필요한 경우, GitHub에서 티켓을 열거나 Discord( https://discord.gg/weakauras )를 방문해 주세요!"
 L["Ignis the Furnace Master"] = "용광로 군주 이그니스"
 L["Ignore Dead"] = "죽음 무시"
@@ -978,8 +970,6 @@ L["Max Quantity"] = "Max Quantity"
 L["Maximum Estimate"] = "최대 예상치"
 --[[Translation missing --]]
 L["Maximum Progress"] = "Maximum Progress"
---[[Translation missing --]]
-L["Maximum time used on a single frame"] = "Maximum time used on a single frame"
 --[[Translation missing --]]
 L["Media"] = "Media"
 L["Medium"] = "중간"
@@ -1503,8 +1493,6 @@ L["Spell School"] = "주문 갈래"
 L["Spell Usable"] = "주문 사용 가능"
 --[[Translation missing --]]
 L["Spellname"] = "Spellname"
---[[Translation missing --]]
-L["Spike"] = "Spike"
 L["Spin"] = "회전"
 L["Spiral"] = "소용돌이"
 L["Spiral In And Out"] = "회전 소용돌이"
@@ -1532,8 +1520,6 @@ L["Star Shake"] = "별모양 흔들림"
 --[[Translation missing --]]
 L["Start Animation"] = "Start Animation"
 L["Start Now"] = "지금 시작"
---[[Translation missing --]]
-L["Start Profiling"] = "Start Profiling"
 L["Status"] = "상태"
 --[[Translation missing --]]
 L["Status Bar"] = "Status Bar"
@@ -1570,8 +1556,6 @@ L["Swipe"] = "Swipe"
 --[[Translation missing --]]
 L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "시스템"
---[[Translation missing --]]
-L["Systems"] = "Systems"
 --[[Translation missing --]]
 L["Tab "] = "Tab "
 L["Talent"] = "특성"
@@ -1633,8 +1617,6 @@ L["Threat Percent"] = "위협 수준 백분율"
 L["Threat Situation"] = "위협 수준 상황"
 L["Threat Value"] = "위협 수준 수치"
 L["Tick"] = "틱"
---[[Translation missing --]]
-L["Time"] = "Time"
 L["Time Format"] = "시간 형식"
 --[[Translation missing --]]
 L["Time in GCDs"] = "Time in GCDs"
@@ -1672,7 +1654,8 @@ L["Top Right"] = "오른쪽 위"
 L["Top to Bottom"] = "위에서 아래로"
 L["Toravon the Ice Watcher"] = "얼음 감시자 토라본"
 L["Torghast"] = "토르가스트"
-L["Total"] = "전체"
+--[[Translation missing --]]
+L["Total"] = "Total"
 L["Total Duration"] = "총 지속시간"
 --[[Translation missing --]]
 L["Total Earned in this Season"] = "Total Earned in this Season"
@@ -1772,7 +1755,8 @@ L["Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."]
 L["Vaelastrasz the Corrupt"] = "타락한 밸라스트라즈"
 L["Valithria Dreamwalker"] = "발리스리아 드림워커"
 L["Val'kyr Twins"] = "발키르 쌍둥이"
-L["Value"] = "값"
+--[[Translation missing --]]
+L["Value"] = "Value"
 L["Vault of Archavon"] = "아카본 석실"
 L["Versatility (%)"] = "유연성 (%)"
 L["Versatility Rating"] = "유연성"

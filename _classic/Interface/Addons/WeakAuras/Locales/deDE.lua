@@ -87,10 +87,6 @@ L["40 Man Raid"] = "40-Mann-Schlachtzug"
 L["40 Player Raid"] = "40 Spieler Schlachtzug"
 L["5 Man Dungeon"] = "5-Mann-Dungeon"
 --[[Translation missing --]]
-L[ [=[A detailed overview of your auras and WeakAuras systems
-Copy the whole text to Weakaura's Discord if you need assistance.]=] ] = [=[A detailed overview of your auras and WeakAuras systems
-Copy the whole text to Weakaura's Discord if you need assistance.]=]
---[[Translation missing --]]
 L["A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."] = "A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."
 --[[Translation missing --]]
 L["Abbreviate"] = "Abbreviate"
@@ -231,8 +227,6 @@ L["Aura Version: %s"] = "Aura Version: %s"
 L["Aura(s) Found"] = "Auren gefunden"
 L["Aura(s) Missing"] = "Auren fehlend"
 L["Aura:"] = "Aura:"
---[[Translation missing --]]
-L["Auras"] = "Auras"
 L["Auras:"] = "Auren:"
 --[[Translation missing --]]
 L["Auriaya"] = "Auriaya"
@@ -486,8 +480,6 @@ L["Crowd Controlled"] = "Kontrollverlust"
 L["Crushing"] = "Zerschmettern"
 --[[Translation missing --]]
 L["C'thun"] = "C'thun"
---[[Translation missing --]]
-L["Cumulated time used during profiling"] = "Cumulated time used during profiling"
 --[[Translation missing --]]
 L["Currency"] = "Currency"
 --[[Translation missing --]]
@@ -969,9 +961,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["Id"] = "Id"
---[[Translation missing --]]
 L["ID"] = "ID"
+--[[Translation missing --]]
+L["Id"] = "Id"
 --[[Translation missing --]]
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"
 --[[Translation missing --]]
@@ -1214,8 +1206,6 @@ L["Max Quantity"] = "Max Quantity"
 L["Maximum Estimate"] = "Maximum Estimate"
 --[[Translation missing --]]
 L["Maximum Progress"] = "Maximum Progress"
---[[Translation missing --]]
-L["Maximum time used on a single frame"] = "Maximum time used on a single frame"
 --[[Translation missing --]]
 L["Media"] = "Media"
 --[[Translation missing --]]
@@ -1566,9 +1556,9 @@ L["Pulse"] = "Pulsieren"
 L["PvP Flagged"] = "PvP aktiv"
 --[[Translation missing --]]
 L["PvP Talent %i"] = "PvP Talent %i"
-L["PvP Talent selected"] = "Gewähltes PvP-Talent"
 --[[Translation missing --]]
 L["PvP Talent Selected"] = "PvP Talent Selected"
+L["PvP Talent selected"] = "Gewähltes PvP-Talent"
 --[[Translation missing --]]
 L["Quality Id"] = "Quality Id"
 --[[Translation missing --]]
@@ -1870,8 +1860,6 @@ L["Spell School"] = "Spell School"
 L["Spell Usable"] = "Zauber benutzbar"
 --[[Translation missing --]]
 L["Spellname"] = "Spellname"
---[[Translation missing --]]
-L["Spike"] = "Spike"
 L["Spin"] = "Drehen"
 L["Spiral"] = "Winden"
 L["Spiral In And Out"] = "Ein- und Auswinden"
@@ -1904,8 +1892,6 @@ L["Star Shake"] = "Star Shake"
 L["Start Animation"] = "Start Animation"
 --[[Translation missing --]]
 L["Start Now"] = "Start Now"
---[[Translation missing --]]
-L["Start Profiling"] = "Start Profiling"
 L["Status"] = "Status"
 --[[Translation missing --]]
 L["Status Bar"] = "Status Bar"
@@ -1949,8 +1935,6 @@ L["Swipe"] = "Swipe"
 L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "System"
 --[[Translation missing --]]
-L["Systems"] = "Systems"
---[[Translation missing --]]
 L["Tab "] = "Tab "
 --[[Translation missing --]]
 L["Talent"] = "Talent"
@@ -1960,8 +1944,8 @@ L["Talent |cFFFF0000Not|r Known"] = "Talent |cFFFF0000Not|r Known"
 L["Talent |cFFFF0000Not|r Selected"] = "Talent |cFFFF0000Not|r Selected"
 --[[Translation missing --]]
 L["Talent Known"] = "Talent Known"
-L["Talent Selected"] = "Talent gewählt"
 L["Talent selected"] = "Gewähltes Talent"
+L["Talent Selected"] = "Talent gewählt"
 L["Talent Specialization"] = "Talentspezialisierung"
 L["Tanking And Highest"] = "Höchster und Aggro"
 L["Tanking But Not Highest"] = "Aggro aber nicht höchste"
@@ -2036,8 +2020,6 @@ L["Threat Situation"] = "Bedrohungssituation"
 L["Threat Value"] = "Threat Value"
 --[[Translation missing --]]
 L["Tick"] = "Tick"
---[[Translation missing --]]
-L["Time"] = "Time"
 --[[Translation missing --]]
 L["Time Format"] = "Time Format"
 --[[Translation missing --]]
@@ -2213,7 +2195,8 @@ L["Vaelastrasz the Corrupt"] = "Vaelastrasz the Corrupt"
 L["Valithria Dreamwalker"] = "Valithria Dreamwalker"
 --[[Translation missing --]]
 L["Val'kyr Twins"] = "Val'kyr Twins"
-L["Value"] = "Wert"
+--[[Translation missing --]]
+L["Value"] = "Value"
 --[[Translation missing --]]
 L["Vault of Archavon"] = "Vault of Archavon"
 L["Versatility (%)"] = "Vielseitigkeit (%)"
