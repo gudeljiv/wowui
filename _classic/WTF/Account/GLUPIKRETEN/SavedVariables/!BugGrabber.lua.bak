@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 12142,
 	["lastSanitation"] = 3,
-	["session"] = 12105,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -53,14 +53,14 @@ BugGrabberDB = {
 		}, -- [6]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [7]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:108: unexpected symbol near 'Â'",
-			["session"] = 10254,
 			["time"] = "2023/09/07 16:02:46",
+			["session"] = 10254,
 			["counter"] = 1,
 		}, -- [8]
 		{
@@ -81,14 +81,14 @@ BugGrabberDB = {
 		}, -- [10]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [11]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:1 Interface/AddOns/xVermin/Helpers/QuestRewardMostValueItem.lua:107: unexpected symbol near 'Â'",
-			["session"] = 10256,
 			["time"] = "2023/09/07 16:04:17",
+			["session"] = 10256,
 			["counter"] = 1,
 		}, -- [12]
 		{
@@ -173,14 +173,14 @@ BugGrabberDB = {
 		}, -- [22]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [23]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 (null)",
-			["session"] = 10304,
 			["time"] = "2023/09/08 20:53:46",
+			["session"] = 10304,
 			["counter"] = 1,
 		}, -- [24]
 		{
@@ -289,14 +289,14 @@ BugGrabberDB = {
 		}, -- [37]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [38]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/DefaultFramesCustomScale.lua:1 (null)",
-			["time"] = "2023/09/09 20:42:15",
 			["session"] = 10351,
+			["time"] = "2023/09/09 20:42:15",
 			["counter"] = 1,
 		}, -- [39]
 		{
@@ -477,14 +477,14 @@ BugGrabberDB = {
 		}, -- [61]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [62]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:127: ')' expected (to close '(' at line 85) near 'end'",
-			["session"] = 10438,
 			["time"] = "2023/09/15 14:05:59",
+			["session"] = 10438,
 			["counter"] = 1,
 		}, -- [63]
 		{
@@ -529,14 +529,14 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [69]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:139: unexpected symbol near ')'",
-			["session"] = 10456,
 			["time"] = "2023/09/16 12:30:04",
+			["session"] = 10456,
 			["counter"] = 1,
 		}, -- [70]
 		{
@@ -677,14 +677,14 @@ BugGrabberDB = {
 		}, -- [87]
 		{
 			["message"] = "Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [88]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/QuickGuildInvite/main.lua:1 (null)",
-			["time"] = "2023/09/25 11:41:10",
 			["session"] = 10571,
+			["time"] = "2023/09/25 11:41:10",
 			["counter"] = 1,
 		}, -- [89]
 		{
@@ -761,14 +761,14 @@ BugGrabberDB = {
 		}, -- [98]
 		{
 			["message"] = "Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [99]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Frames/GameTooltip.lua:1 (null)",
-			["session"] = 10630,
 			["time"] = "2023/09/29 10:14:29",
+			["session"] = 10630,
 			["counter"] = 1,
 		}, -- [100]
 		{
@@ -781,14 +781,14 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [102]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/nMainbar/modules/petbar.lua:1 (null)",
-			["session"] = 10634,
 			["time"] = "2023/09/29 10:40:13",
+			["session"] = 10634,
 			["counter"] = 1,
 		}, -- [103]
 		{
@@ -969,38 +969,38 @@ BugGrabberDB = {
 		}, -- [125]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [126]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [127]
 		{
 			["message"] = "Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [128]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [129]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/ReplaceFunctions.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [130]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-			["session"] = 10752,
 			["time"] = "2023/10/11 10:26:33",
+			["session"] = 10752,
 			["counter"] = 2,
 		}, -- [131]
 		{
@@ -1013,14 +1013,14 @@ BugGrabberDB = {
 		}, -- [132]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-			["session"] = 10768,
 			["time"] = "2023/10/12 13:05:29",
+			["session"] = 10768,
 			["counter"] = 1,
 		}, -- [133]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/Interrupt.lua:1 (null)",
-			["session"] = 10768,
 			["time"] = "2023/10/12 13:05:29",
+			["session"] = 10768,
 			["counter"] = 1,
 		}, -- [134]
 		{
@@ -1153,14 +1153,14 @@ BugGrabberDB = {
 		}, -- [150]
 		{
 			["message"] = "Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-			["session"] = 10843,
 			["time"] = "2023/10/24 10:11:42",
+			["session"] = 10843,
 			["counter"] = 2,
 		}, -- [151]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/MapLine/MapLine.lua:1 (null)",
-			["session"] = 10843,
 			["time"] = "2023/10/24 10:11:42",
+			["session"] = 10843,
 			["counter"] = 2,
 		}, -- [152]
 		{
@@ -1237,14 +1237,14 @@ BugGrabberDB = {
 		}, -- [161]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
+			["session"] = 10877,
 			["counter"] = 2,
 		}, -- [162]
 		{
 			["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/xVermin/Helpers/TimeToDie.lua:1 (null)",
-			["session"] = 10877,
 			["time"] = "2023/10/27 10:26:52",
+			["session"] = 10877,
 			["counter"] = 2,
 		}, -- [163]
 		{
@@ -1321,14 +1321,14 @@ BugGrabberDB = {
 		}, -- [172]
 		{
 			["message"] = "Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0-3/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-			["session"] = 10932,
 			["time"] = "2023/11/18 11:01:21",
+			["session"] = 10932,
 			["counter"] = 1,
 		}, -- [173]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua:1 Error loading Interface/AddOns/xVermin/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua",
-			["session"] = 10932,
 			["time"] = "2023/11/18 11:01:21",
+			["session"] = 10932,
 			["counter"] = 1,
 		}, -- [174]
 		{
@@ -1389,14 +1389,14 @@ BugGrabberDB = {
 		}, -- [181]
 		{
 			["message"] = "Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-			["session"] = 11014,
 			["time"] = "2023/12/15 11:10:59",
+			["session"] = 11014,
 			["counter"] = 1,
 		}, -- [182]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/ClassicCastbars/ClassicCastbars.lua:1 File Interface/AddOns/ClassicCastbars/ClassicCastbars.lua is empty.",
-			["session"] = 11014,
 			["time"] = "2023/12/15 11:10:59",
+			["session"] = 11014,
 			["counter"] = 1,
 		}, -- [183]
 		{
@@ -2153,14 +2153,14 @@ BugGrabberDB = {
 		}, -- [277]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-			["time"] = "2024/01/19 11:37:15",
 			["session"] = 11383,
+			["time"] = "2024/01/19 11:37:15",
 			["counter"] = 1,
 		}, -- [278]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-			["time"] = "2024/01/19 11:37:15",
 			["session"] = 11383,
+			["time"] = "2024/01/19 11:37:15",
 			["counter"] = 1,
 		}, -- [279]
 		{
@@ -2357,14 +2357,14 @@ BugGrabberDB = {
 		}, -- [303]
 		{
 			["message"] = "Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-			["time"] = "2024/01/21 18:11:39",
 			["session"] = 11425,
+			["time"] = "2024/01/21 18:11:39",
 			["counter"] = 1,
 		}, -- [304]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-			["time"] = "2024/01/21 18:11:39",
 			["session"] = 11425,
+			["time"] = "2024/01/21 18:11:39",
 			["counter"] = 1,
 		}, -- [305]
 		{
@@ -2609,14 +2609,14 @@ BugGrabberDB = {
 		}, -- [335]
 		{
 			["message"] = "Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-			["time"] = "2024/01/27 20:37:53",
 			["session"] = 11521,
+			["time"] = "2024/01/27 20:37:53",
 			["counter"] = 1,
 		}, -- [336]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-			["time"] = "2024/01/27 20:37:53",
 			["session"] = 11521,
+			["time"] = "2024/01/27 20:37:53",
 			["counter"] = 1,
 		}, -- [337]
 		{
@@ -2693,14 +2693,14 @@ BugGrabberDB = {
 		}, -- [346]
 		{
 			["message"] = "Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-			["time"] = "2024/02/24 19:15:41",
 			["session"] = 11661,
+			["time"] = "2024/02/24 19:15:41",
 			["counter"] = 1,
 		}, -- [347]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-			["time"] = "2024/02/24 19:15:41",
 			["session"] = 11661,
+			["time"] = "2024/02/24 19:15:41",
 			["counter"] = 1,
 		}, -- [348]
 		{
@@ -2905,14 +2905,14 @@ BugGrabberDB = {
 		}, -- [373]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-			["time"] = "2024/03/07 11:31:22",
 			["session"] = 11847,
+			["time"] = "2024/03/07 11:31:22",
 			["counter"] = 1,
 		}, -- [374]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-			["time"] = "2024/03/07 11:31:22",
 			["session"] = 11847,
+			["time"] = "2024/03/07 11:31:22",
 			["counter"] = 1,
 		}, -- [375]
 		{
@@ -2957,14 +2957,14 @@ BugGrabberDB = {
 		}, -- [380]
 		{
 			["message"] = "Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-			["session"] = 11923,
 			["time"] = "2024/03/16 18:39:55",
+			["session"] = 11923,
 			["counter"] = 2,
 		}, -- [381]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-			["session"] = 11923,
 			["time"] = "2024/03/16 18:39:55",
+			["session"] = 11923,
 			["counter"] = 2,
 		}, -- [382]
 		{
@@ -3065,38 +3065,38 @@ BugGrabberDB = {
 		}, -- [394]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [395]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [396]
 		{
 			["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [397]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [398]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [399]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-			["session"] = 12007,
 			["time"] = "2024/01/21 08:27:20",
+			["session"] = 12007,
 			["counter"] = 10,
 		}, -- [400]
 		{
@@ -3237,14 +3237,14 @@ BugGrabberDB = {
 		}, -- [417]
 		{
 			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-			["time"] = "2024/04/02 13:37:38",
 			["session"] = 12085,
+			["time"] = "2024/04/02 13:37:38",
 			["counter"] = 1,
 		}, -- [418]
 		{
 			["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-			["time"] = "2024/04/02 13:37:38",
 			["session"] = 12085,
+			["time"] = "2024/04/02 13:37:38",
 			["counter"] = 1,
 		}, -- [419]
 		{
@@ -3335,5 +3335,141 @@ BugGrabberDB = {
 			["session"] = 12095,
 			["counter"] = 1,
 		}, -- [430]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:162: attempt to index global 'xVerminSavedData' (a nil value)",
+			["time"] = "2024/04/02 14:54:31",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVerminSavedData' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:162: in function `SortData'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:216: in main chunk",
+			["session"] = 12107,
+			["counter"] = 1,
+		}, -- [431]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:215: attempt to index global 'xVerminSavedData' (a nil value)",
+			["time"] = "2024/04/02 14:55:58",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n WaitTimeUntillAddonLoaded = 30\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:223\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:319\n IsClassic = true\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n R6_Occupied = false\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:339\n IfUnitIsCastingNonInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:234\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IfUnitIsCastingClassic = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n MHWF = <function> defined @Interface/AddOns/xVermin/_Core.lua:353\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:277\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:304\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:211\n IsWotlk = false\n IsTBC = false\n Class = \"PRIEST\"\n IsSoD = true\n MaxPlayerLevel = 40\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:244\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n}\nal_frame = Frame {\n 0 = <userdata>\n}\nframe = Frame {\n 0 = <userdata>\n}\nCheckTargetImmunity = <function> defined @Interface/AddOns/xVermin/Helpers/ImmuneData.lua:18\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_title = ImmuneDataTitle {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Int",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:215: in main chunk",
+			["session"] = 12108,
+			["counter"] = 1,
+		}, -- [432]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:86: attempt to compare two nil values",
+			["time"] = "2024/04/02 14:59:51",
+			["locals"] = "a = <table> {\n}\nb = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare two nil values\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:86: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:85>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:83: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:72>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:144: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:137>",
+			["session"] = 12116,
+			["counter"] = 5,
+		}, -- [433]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:87: attempt to compare two nil values",
+			["time"] = "2024/04/02 15:00:23",
+			["locals"] = "a = <table> {\n}\nb = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = \"attempt to compare two nil values\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:87: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:85>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:83: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:72>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:144: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:138>",
+			["session"] = 12117,
+			["counter"] = 5,
+		}, -- [434]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:107: attempt to concatenate local 'name' (a table value)",
+			["time"] = "2024/04/02 15:01:24",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n}\n(for control) = 1\nk = 1\nname = <table> {\n}\nnames = \"\"\nspells = \"\"\n(*temporary) = \"\"\n(*temporary) = <table> {\n}\n(*temporary) = \"\n\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate local 'name' (a table value)\"\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n GetBack",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:107: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:93>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:146: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:139>",
+			["session"] = 12118,
+			["counter"] = 5,
+		}, -- [435]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:98: attempt to concatenate local 'name' (a table value)",
+			["time"] = "2024/04/02 15:02:11",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Searing Totem II = <table> {\n }\n Arcanist Doan = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Dark Rider = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Thundering Exile = <table> {\n }\n Burning Exile = <table> {\n }\n Arclector = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Bound Elemental = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Klaxxi = <table> {\n }\n Healing Ward = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Burning Ravager = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Glutton = <table> {\n }\n Herod = <table> {\n }\n Fire Elemental = <table> {\n }\n Scalding Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Cyclonian = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\n(for control) = \"Searing Totem II\"\nk = \"Searing Totem II\"\nname = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\nnames = \"\"\nspells = \"\"\n(*temporary) = \"\"\n(*temporary) = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\n(*temporary) = \"\n\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate local 'name' (a table value)\"\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:98: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:84>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:137: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:130>",
+			["session"] = 12119,
+			["counter"] = 5,
+		}, -- [436]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:99: attempt to concatenate local 'name' (a table value)",
+			["time"] = "2024/04/02 15:02:45",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Searing Totem II = <table> {\n }\n Arcanist Doan = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Boiling Elemental = <table> {\n }\n Ironspine = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Thundering Exile = <table> {\n }\n Cyclonian = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Fire Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Glutton = <table> {\n }\n Burning Ravager = <table> {\n }\n Healing Ward = <table> {\n }\n Klaxxi = <table> {\n }\n Bound Elemental = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n}\n(for control) = \"Searing Totem II\"\nk = \"Searing Totem II\"\nname = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\nnames = \"\"\nspells = \"\"\n(*temporary) = \"\"\n(*temporary) = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\n(*temporary) = \"\n\"\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to concatenate local 'name' (a table value)\"\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:99: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:84>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:138: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:131>",
+			["session"] = 12120,
+			["counter"] = 5,
+		}, -- [437]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:87: attempt to index global 'xVerminSavedData' (a nil value)",
+			["time"] = "2024/04/02 15:06:00",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n WaitTimeUntillAddonLoaded = 30\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:223\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:319\n IsClassic = true\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n R6_Occupied = false\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:339\n IfUnitIsCastingNonInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:234\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IfUnitIsCastingClassic = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n MHWF = <function> defined @Interface/AddOns/xVermin/_Core.lua:353\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:277\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:304\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:211\n IsWotlk = false\n IsTBC = false\n Class = \"PRIEST\"\n IsSoD = true\n MaxPlayerLevel = 40\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:244\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_title = ImmuneDataTitle {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n ApplyBackdrop = <function> defined @Interface/Shared",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:87: in main chunk",
+			["session"] = 12122,
+			["counter"] = 2,
+		}, -- [438]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:92: attempt to index local 'data' (a nil value)",
+			["time"] = "2024/04/02 15:08:03",
+			["locals"] = "data = nil\nsortTableKeys = <function> defined @Interface/AddOns/xVermin/Helpers/ImmuneData.lua:75\nsortSpells = <function> defined @Interface/AddOns/xVermin/Helpers/ImmuneData.lua:85\nsortedTable = <table> {\n}\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/ImmuneData.lua:75\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'data' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:92: in function `sortSpellImmuneData'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:101: in main chunk",
+			["session"] = 12123,
+			["counter"] = 1,
+		}, -- [439]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:101: bad argument #1 to 'pairs' (table expected, got nil)",
+			["time"] = "2024/04/02 15:09:30",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"table expected, got nil\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:101: in main chunk",
+			["session"] = 12124,
+			["counter"] = 1,
+		}, -- [440]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:123: attempt to concatenate local 'name' (a table value)",
+			["time"] = "2024/04/02 15:09:52",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\n(for control) = \"Searing Totem II\"\nk = \"Searing Totem II\"\nname = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\nnames = \"\"\nspells = \"\"\n(*temporary) = \"\"\n(*temporary) = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\n(*temporary) = \"\n\"\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to concatenate local 'name' (a table value)\"\nsortedTable = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackd",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:123: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:108>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:162: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:155>",
+			["session"] = 12125,
+			["counter"] = 5,
+		}, -- [441]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:125: attempt to concatenate local 'name' (a table value)",
+			["time"] = "2024/04/02 15:10:35",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\n(for control) = \"Searing Totem II\"\nk = \"Searing Totem II\"\nname = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\nnames = \"\"\nspells = \"\"\n(*temporary) = \"\"\n(*temporary) = <table> {\n 1 = \"Rend\"\n 2 = \"Sunder Armor\"\n}\n(*temporary) = \"\n\"\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to concatenate local 'name' (a table value)\"\nsortedTable = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackd",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:125: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:110>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:164: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:157>",
+			["session"] = 12126,
+			["counter"] = 5,
+		}, -- [442]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:125: bad argument #1 to 'pairs' (table expected, got string)",
+			["time"] = "2024/04/02 15:12:16",
+			["locals"] = "(*temporary) = \"\"\n(*temporary) = \"table expected, got string\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:125: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:110>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:163: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:156>",
+			["session"] = 12127,
+			["counter"] = 5,
+		}, -- [443]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:126: bad argument #1 to 'pairs' (table expected, got string)",
+			["time"] = "2024/04/02 15:12:51",
+			["locals"] = "(*temporary) = \"\"\n(*temporary) = \"table expected, got string\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:126: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:110>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:164: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:157>",
+			["session"] = 12129,
+			["counter"] = 10,
+		}, -- [444]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:141: attempt to perform arithmetic on global 'xppadding' (a nil value)",
+			["time"] = "2024/04/02 15:14:00",
+			["locals"] = "w = 40\n(*temporary) = 86\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = \"\"\n(*temporary) = true\n(*temporary) = \"attempt to perform arithmetic on global 'xppadding' (a nil value)\"\nsortedTable = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n ClearBackdrop = <function",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:141: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:110>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:164: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:157>",
+			["session"] = 12130,
+			["counter"] = 5,
+		}, -- [445]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:143: attempt to perform arithmetic on global 'xppadding' (a nil value)",
+			["time"] = "2024/04/02 15:14:49",
+			["locals"] = "w = 40\n(*temporary) = 86\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = \"\"\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"\"\n(*temporary) = \"Searing Totem II\nFire Elemental\nSkum\nThepalalol\nWind Howler\nStone Rumbler\nSwirling Vortex\nGreater Rock Elemental\nEvolving Ectoplasm\nMutanus the Devourer\nWhirlwind Ripper\nIronspine\nUnfettered Spirit\nThundering Exile\nEnraged Stone Spirit\nHealing Ward\nSplinterbone Centurion\nRock Elemental\nBurning Ravager\nScarlet Commander Mograine\nScarlet Chaplain\nCharlga Razorflank\nDopemend\nKlaxxi\nNelyz\nThundering Boulderkin\nRogue Flame Spirit\nOverlord Ramtusk\nLesser Rock Elemental\nBurning Destroyer\nScalding Elemental\nBound Elemental\nHerod\nAgathelos the Raging\nAmnennar the Coldbringer\nArcanist Doan\nHigh Inquisitor Whitemane\nGlutton\nFurious Stone Spirit\nBristleback Geomancer\nArclector\nBurning Exile\nBloodmage Thalnos\nDark Rider\nCyclonian\nBoiling Elemental\n \"\n(*temporary) = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:34\n(*temporary) = \"attempt to perform arithmetic on global 'xppadding' (a nil value)\"\nsortedTable = <table> {\n Searing Totem II = <table> {\n }\n Fire Elemental = <table> {\n }\n Skum = <table> {\n }\n Thepalalol = <table> {\n }\n Wind Howler = <table> {\n }\n Stone Rumbler = <table> {\n }\n Swirling Vortex = <table> {\n }\n Greater Rock Elemental = <table> {\n }\n Evolving Ectoplasm = <table> {\n }\n Mutanus the Devourer = <table> {\n }\n Whirlwind Ripper = <table> {\n }\n Ironspine = <table> {\n }\n Unfettered Spirit = <table> {\n }\n Thundering Exile = <table> {\n }\n Enraged Stone Spirit = <table> {\n }\n Healing Ward = <table> {\n }\n Splinterbone Centurion = <table> {\n }\n Rock Elemental = <table> {\n }\n Burning Ravager = <table> {\n }\n Scarlet Commander Mograine = <table> {\n }\n Scarlet Chaplain = <table> {\n }\n Charlga Razorflank = <table> {\n }\n Dopemend = <table> {\n }\n Klaxxi = <table> {\n }\n Nelyz = <table> {\n }\n Thundering Boulderkin = <table> {\n }\n Rogue Flame Spirit = <table> {\n }\n Overlord Ramtusk = <table> {\n }\n Lesser Rock Elemental = <table> {\n }\n Burning Destroyer = <table> {\n }\n Scalding Elemental = <table> {\n }\n Bound Elemental = <table> {\n }\n Herod = <table> {\n }\n Agathelos the Raging = <table> {\n }\n Amnennar the Coldbringer = <table> {\n }\n Arcanist Doan = <table> {\n }\n High Inquisitor Whitemane = <table> {\n }\n Glutton = <table> {\n }\n Furious Stone Spirit = <table> {\n }\n Bristleback Geomancer = <table> {\n }\n Arclector = <table> {\n }\n Burning Exile = <table> {\n }\n Bloodmage Thalnos = <table> {\n }\n Dark Rider = <table> {\n }\n Cyclonian = <table> {\n }\n Boiling Elemental = <table> {\n }\n}\nimmune_data_list = ImmuneDataList {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_list_spells = ImmuneDataListValues {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Back",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:143: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:110>\n[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:166: in function <Interface/AddOns/xVermin/Helpers/ImmuneData.lua:159>",
+			["session"] = 12131,
+			["counter"] = 5,
+		}, -- [446]
+		{
+			["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:81: attempt to index global 'immune_datakc' (a nil value)",
+			["time"] = "2024/04/02 15:17:17",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n WaitTimeUntillAddonLoaded = 30\n IfUnitIsCastingInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:223\n FormatValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:63\n Immune = <function> defined @Interface/AddOns/xVermin/_Core.lua:319\n IsClassic = true\n LogBreak = <function> defined @Interface/AddOns/xVermin/_Debug.lua:56\n R6_Occupied = false\n GetRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:266\n GetSpellID = <function> defined @Interface/AddOns/xVermin/_Core.lua:339\n IfUnitIsCastingNonInteruptible = <function> defined @Interface/AddOns/xVermin/_Core.lua:234\n ClassColor = <table> {\n }\n Config = <table> {\n }\n IfUnitIsCastingClassic = <function> defined @Interface/AddOns/xVermin/_Core.lua:255\n MHWF = <function> defined @Interface/AddOns/xVermin/_Core.lua:353\n Log = <function> defined @Interface/AddOns/xVermin/_Debug.lua:41\n Color = <table> {\n }\n ColorGradient = <function> defined @Interface/AddOns/xVermin/_Core.lua:111\n InRange = <function> defined @Interface/AddOns/xVermin/_Core.lua:277\n Round = <function> defined @Interface/AddOns/xVermin/_Core.lua:100\n RGB2HEX = <function> defined @Interface/AddOns/xVermin/_Core.lua:146\n CheckIfLoadedWithTimer = <function> defined @Interface/AddOns/xVermin/_Core.lua:155\n SetChatChannels = <function> defined @Interface/AddOns/xVermin/Helpers/Chat.lua:67\n Enraged = <function> defined @Interface/AddOns/xVermin/_Core.lua:304\n FormatNumber = <function> defined @Interface/AddOns/xVermin/_Core.lua:83\n TimeFormat = <function> defined @Interface/AddOns/xVermin/_Core.lua:126\n Debug = <function> defined @Interface/AddOns/xVermin/_Debug.lua:14\n HasValue = <function> defined @Interface/AddOns/xVermin/_Core.lua:211\n IsWotlk = false\n IsTBC = false\n Class = \"PRIEST\"\n IsSoD = true\n MaxPlayerLevel = 40\n IfUnitIsCasting = <function> defined @Interface/AddOns/xVermin/_Core.lua:244\n HEX2RGB = <function> defined @Interface/AddOns/xVermin/_Core.lua:138\n}\nxppadding = 45\nimmune_data = ImmuneData {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n Center = Texture {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n isMoving = false\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\nimmune_data_title = ImmuneDataTitle {\n 0 = <userdata>\n text = FontString {\n }\n}\nimmune_data_wrapper = ImmuneDataWrapper {\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n ApplyBackdrop = <function> defined @I",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/Helpers/ImmuneData.lua\"]:81: in main chunk",
+			["session"] = 12134,
+			["counter"] = 1,
+		}, -- [447]
 	},
 }
