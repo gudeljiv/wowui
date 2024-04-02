@@ -2,16 +2,19 @@
 xKillCount = {
 	["show"] = false,
 	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
+		["y"] = 131.5397186279297,
+		["x"] = 307.8729553222656,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 	["experience"] = {
 		["pulltotal"] = 0,
 		["totaltotal"] = 85077,
 	},
 	["killLog"] = {
+		["Gamon"] = {
+			["name"] = "Gamon",
+			["count"] = 1,
+		},
 	},
 }

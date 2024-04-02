@@ -7,12 +7,11 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 46,
 					["tipo"] = 2,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002135,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
@@ -20,6 +19,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 5440.002135,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
@@ -30,16 +30,14 @@ _detalhes_database = {
 								["Scarlet Gallant"] = 3316,
 								["Scarlet Monk"] = 2124,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.002135,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -56,7 +54,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 31,
 										["MISS"] = 2,
-										["total"] = 2868,
+										["r_amt"] = 0,
 										["c_max"] = 360,
 										["DODGE"] = 1,
 										["id"] = 1,
@@ -71,7 +69,7 @@ _detalhes_database = {
 										["c_total"] = 647,
 										["n_amt"] = 22,
 										["b_dmg"] = 271,
-										["r_amt"] = 0,
+										["total"] = 2868,
 									}, -- [1]
 									[421] = {
 										["c_amt"] = 0,
@@ -246,20 +244,21 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 108.598050326407,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993226,
 							["damage_taken"] = 721.002135,
 							["start_time"] = 1711993216,
 							["delay"] = 1711993226,
-							["last_event"] = 1711993226,
+							["last_dps"] = 108.598050326407,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007169,
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
@@ -267,6 +266,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3715.007169,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
@@ -277,16 +277,14 @@ _detalhes_database = {
 								["Scarlet Gallant"] = 860,
 								["Scarlet Monk"] = 2855,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.007169,
+							["aID"] = "5826-020ECE5B",
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -403,20 +401,21 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 74.1622016848758,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993227,
 							["damage_taken"] = 432.007169,
 							["start_time"] = 1711993229,
 							["delay"] = 1711993227,
-							["last_event"] = 1711993227,
+							["last_dps"] = 74.1622016848758,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003987,
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
@@ -425,6 +424,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 703.003987,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-02653B9F",
@@ -433,16 +433,14 @@ _detalhes_database = {
 							["targets"] = {
 								["Scarlet Monk"] = 703,
 							},
-							["colocacao"] = 3,
-							["aID"] = "5826-02653B9F",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.003987,
+							["aID"] = "5826-02653B9F",
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -557,20 +555,21 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 14.03397654363068,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993226,
 							["damage_taken"] = 0.003987,
 							["start_time"] = 1711993238,
 							["delay"] = 1711993226,
-							["last_event"] = 1711993226,
+							["last_dps"] = 14.03397654363068,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.005054,
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
@@ -579,6 +578,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 34.005054,
+							["colocacao"] = 4,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-01FF4ABA",
@@ -589,32 +589,31 @@ _detalhes_database = {
 							["targets"] = {
 								["Scarlet Monk"] = 34,
 							},
-							["colocacao"] = 4,
-							["aID"] = "5826-01FF4ABA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.005054,
+							["aID"] = "5826-01FF4ABA",
 							["nome"] = "Kragus",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0.6788384405007571,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993237,
 							["damage_taken"] = 727.005054,
 							["start_time"] = 1711993237,
 							["delay"] = 0,
-							["last_event"] = 1711993237,
+							["last_dps"] = 0.6788384405007571,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004602,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
@@ -622,6 +621,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 25.004602,
+							["colocacao"] = 5,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-021E30C3",
@@ -631,16 +631,14 @@ _detalhes_database = {
 							["targets"] = {
 								["Scarlet Monk"] = 25,
 							},
-							["colocacao"] = 5,
-							["aID"] = "5826-021E30C3",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.004602,
+							["aID"] = "5826-021E30C3",
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8926] = {
 										["c_amt"] = 0,
@@ -656,12 +654,12 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 25,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 64,
 										["id"] = 8926,
 										["r_dmg"] = 25,
-										["spellschool"] = 64,
 										["extra"] = {
 										},
+										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -672,20 +670,21 @@ _detalhes_database = {
 										["r_amt"] = 2,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0.4991635957120407,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993226,
 							["damage_taken"] = 86.004602,
 							["start_time"] = 1711993242,
 							["delay"] = 1711993226,
-							["last_event"] = 1711993226,
+							["last_dps"] = 0.4991635957120407,
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006016,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
@@ -693,11 +692,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1396.006016,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28813-4540-00008AF132",
-							["aID"] = "4540",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Beltai <Kragus>"] = true,
 								["Chengmo"] = true,
@@ -711,14 +710,15 @@ _detalhes_database = {
 								["Kragus"] = 523,
 								["Chengmo"] = 432,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.006016,
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
+							["aID"] = "4540",
 							["nome"] = "Scarlet Monk",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -781,20 +781,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993240,
 							["damage_taken"] = 5741.006016,
 							["start_time"] = 1711993217,
 							["delay"] = 0,
-							["last_event"] = 1711993240,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002328,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
@@ -802,11 +801,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 807.002328,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28813-4287-00048AEDAF",
-							["aID"] = "4287",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Chengmo"] = true,
 								["Jutarnjedrvo"] = true,
@@ -815,14 +814,15 @@ _detalhes_database = {
 								["Mastourix"] = 86,
 								["Jutarnjedrvo"] = 721,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.002328,
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
+							["aID"] = "4287",
 							["nome"] = "Scarlet Gallant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -897,10 +897,10 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 5589,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
@@ -910,23 +910,22 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993213,
 							["damage_taken"] = 4176.002328000001,
 							["start_time"] = 1711993228,
 							["delay"] = 1711993213,
-							["last_event"] = 1711993213,
+							["last_dps"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.007784,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["total_without_pet"] = 351.007784,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
@@ -934,7 +933,6 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -943,11 +941,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["classe"] = "PET",
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.007784,
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -1006,23 +1005,23 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993226,
 							["damage_taken"] = 0.007784,
 							["start_time"] = 1711993242,
 							["delay"] = 1711993226,
-							["last_event"] = 1711993226,
+							["last_dps"] = 0,
 						}, -- [8]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.008518,
 							["pets"] = {
 							},
-							["classe"] = "PET",
+							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["total_without_pet"] = 34.008518,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
@@ -1030,7 +1029,6 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["damage_from"] = {
 								["Scarlet Monk"] = true,
 							},
@@ -1040,11 +1038,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["classe"] = "PET",
 							["end_time"] = 1711993246,
+							["totalabsorbed"] = 0.008518,
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[7800] = {
 										["c_amt"] = 0,
@@ -1060,12 +1059,12 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 34,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 4,
 										["id"] = 7800,
 										["r_dmg"] = 34,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
+										["RESIST"] = 2,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -1076,25 +1075,29 @@ _detalhes_database = {
 										["r_amt"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993241,
 							["damage_taken"] = 441.008518,
 							["start_time"] = 1711993237,
 							["delay"] = 0,
-							["last_event"] = 1711993241,
+							["last_dps"] = 0,
 						}, -- [9]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 46,
 					["tipo"] = 3,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1106,36 +1109,29 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.005942,
 							["last_hps"] = 22.05908893458455,
-							["aID"] = "5826-021E30C3",
-							["fight_component"] = true,
 							["targets"] = {
 								["Mastourix"] = 49,
 								["Kragus"] = 122,
 								["Chengmo"] = 519,
 								["Jutarnjedrvo"] = 415,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.005942,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 1711993244,
 							["healing_taken"] = 49.005942,
-							["grupo"] = true,
-							["classe"] = "DRUID",
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
 							["targets_overheal"] = {
 								["Mastourix"] = 471,
 								["Pipcek"] = 521,
 								["Jutarnjedrvo"] = 895,
 							},
-							["start_time"] = 1711993199,
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408124] = {
 										["c_amt"] = 0,
@@ -1246,15 +1242,23 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711993199,
+							["classe"] = "DRUID",
 							["custom"] = 0,
-							["last_event"] = 1711993244,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005942,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "5826-021E30C3",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Mastourix"] = true,
+								["Jutarnjedrvo"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1266,32 +1270,24 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.007542,
 							["last_hps"] = 5.709531112132178,
-							["aID"] = "5826-0235A66A",
-							["fight_component"] = true,
 							["targets"] = {
 								["Jutarnjedrvo"] = 286,
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.007542,
-							["healing_from"] = {
-								["Mastourix"] = true,
-								["Jutarnjedrvo"] = true,
-							},
+							["last_event"] = 1711993205,
 							["healing_taken"] = 701.0075420000001,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
 							["targets_overheal"] = {
 								["Jutarnjedrvo"] = 293,
 							},
-							["start_time"] = 1711993245,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[959] = {
 										["c_amt"] = 0,
@@ -1320,15 +1316,22 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711993245,
+							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1711993205,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007542,
 							["delay"] = 1711993205,
-							["tipo"] = 2,
+							["aID"] = "5826-0235A66A",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1340,40 +1343,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-020ECE5B",
 							["totalabsorb"] = 0.008704,
 							["last_hps"] = 0.0001806783742267648,
-							["aID"] = "5826-020ECE5B",
-							["fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-020ECE5B",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.008704,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 519.008704,
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993246,
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711993246,
+							["classe"] = "WARRIOR",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008704,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "5826-020ECE5B",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1385,38 +1387,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-02653B9F",
 							["totalabsorb"] = 0.007752,
 							["last_hps"] = 0.0001609166770457124,
-							["aID"] = "5826-02653B9F",
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["colocacao"] = 4,
 							["totalover_without_pet"] = 0.007752,
+							["healing_taken"] = 0.007752,
+							["tipo"] = 2,
+							["end_time"] = 1711993246,
 							["healing_from"] = {
 							},
-							["healing_taken"] = 0.007752,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
-							["end_time"] = 1711993246,
-							["targets_overheal"] = {
-							},
-							["start_time"] = 1711993246,
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711993246,
+							["classe"] = "HUNTER",
 							["custom"] = 0,
 							["last_event"] = 0,
 							["totaldenied"] = 0.007752,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "5826-02653B9F",
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -1428,60 +1431,58 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 5,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-01FF4ABA",
 							["totalabsorb"] = 0.005456,
 							["last_hps"] = 0.0001132561132561154,
-							["aID"] = "5826-01FF4ABA",
-							["fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-01FF4ABA",
-							["colocacao"] = 5,
 							["totalover_without_pet"] = 0.005456,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 122.005456,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
+							["fight_component"] = true,
 							["end_time"] = 1711993246,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993246,
 							["nome"] = "Kragus",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711993246,
+							["classe"] = "WARLOCK",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005456,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["aID"] = "5826-01FF4ABA",
 						}, -- [5]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 46,
 					["tipo"] = 7,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.0059,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["passiveover"] = 0.0059,
+							["total"] = 176.0059,
+							["serial"] = "Player-5826-021E30C3",
+							["received"] = 176.0059,
 							["targets"] = {
 								["Mastourix"] = 176,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 0.0059,
-							["fight_component"] = true,
 							["alternatepower"] = 0.0059,
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[408246] = {
 										["total"] = 176,
@@ -1493,32 +1494,32 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 176.0059,
 							["aID"] = "5826-021E30C3",
-							["last_event"] = 1711993219,
-							["total"] = 176.0059,
 							["totalover"] = 0.0059,
-							["serial"] = "Player-5826-021E30C3",
+							["last_event"] = 1711993219,
 							["tipo"] = 3,
+							["fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.006485,
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.006485,
+							["total"] = 32.006485,
+							["serial"] = "Player-5826-020ECE5B",
+							["received"] = 32.006485,
 							["targets"] = {
 								["Chengmo"] = 32,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.006485,
-							["fight_component"] = true,
 							["alternatepower"] = 0.006485,
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[6178] = {
 										["total"] = 12,
@@ -1548,34 +1549,29 @@ _detalhes_database = {
 										["counter"] = 10,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 32.006485,
 							["aID"] = "5826-020ECE5B",
-							["last_event"] = 1711993228,
-							["total"] = 32.006485,
 							["totalover"] = 0.006485,
-							["serial"] = "Player-5826-020ECE5B",
+							["last_event"] = 1711993228,
 							["tipo"] = 3,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 46,
 					["tipo"] = 9,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-01FF4ABA",
+							["nome"] = "Kragus",
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARLOCK",
-							["fight_component"] = true,
+							["aID"] = "5826-01FF4ABA",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[7804] = {
 										["activedamt"] = 1,
@@ -1614,66 +1610,62 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 0,
-							["grupo"] = true,
-							["aID"] = "5826-01FF4ABA",
-							["nome"] = "Kragus",
-							["last_event"] = 1711993258,
 							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["fight_component"] = true,
+							["last_event"] = 1711993258,
+							["buff_uptime"] = 0,
+							["serial"] = "Player-5826-01FF4ABA",
+							["classe"] = "WARLOCK",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-020ECE5B",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[12294] = {
-										["activedamt"] = 0,
-										["id"] = 12294,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 12294,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[7922] = {
-										["activedamt"] = 0,
-										["id"] = 7922,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 7922,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[412609] = {
-										["activedamt"] = 0,
-										["id"] = 412609,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = 412609,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["grupo"] = true,
+							["aID"] = "5826-020ECE5B",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[11549] = {
 										["activedamt"] = 1,
@@ -1700,23 +1692,23 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[2458] = {
-										["activedamt"] = 1,
-										["id"] = 2458,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 2458,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[29131] = {
-										["activedamt"] = 1,
-										["id"] = 29131,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 29131,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1734,66 +1726,66 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[402906] = {
-										["activedamt"] = 1,
-										["id"] = 402906,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 402906,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 57,
+							["fight_component"] = true,
 							["debuff_uptime"] = 12,
-							["aID"] = "5826-020ECE5B",
+							["buff_uptime"] = 57,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Chengmo",
 							["last_event"] = 1711993230,
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-5826-020ECE5B",
+							["classe"] = "WARRIOR",
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[770] = {
-										["activedamt"] = 0,
-										["id"] = 770,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 770,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8926] = {
-										["activedamt"] = 0,
-										["id"] = 8926,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 8926,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "DRUID",
-							["grupo"] = true,
+							["aID"] = "5826-021E30C3",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5234] = {
 										["activedamt"] = 1,
@@ -1808,12 +1800,12 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[408120] = {
-										["activedamt"] = 1,
-										["id"] = 408120,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 408120,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1831,62 +1823,64 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 7,
+							["fight_component"] = true,
 							["debuff_uptime"] = 12,
-							["aID"] = "5826-021E30C3",
+							["buff_uptime"] = 7,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Mastourix",
 							["last_event"] = 1711993232,
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-5826-021E30C3",
+							["classe"] = "DRUID",
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409552] = {
-										["activedamt"] = 0,
-										["id"] = 409552,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 409552,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14323] = {
-										["activedamt"] = 0,
-										["id"] = 14323,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = 14323,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["buff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 10,
 							["pets"] = {
 							},
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[415320] = {
-										["activedamt"] = 1,
-										["id"] = 415320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 415320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1940,55 +1934,53 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 10,
 							["debuff_uptime"] = 8,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["aID"] = "5826-02653B9F",
-							["nome"] = "Pipcek",
-							["last_event"] = 1711993234,
 							["tipo"] = 4,
+							["last_event"] = 1711993234,
+							["serial"] = "Player-5826-02653B9F",
+							["nome"] = "Pipcek",
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-0235A66A",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8058] = {
-										["activedamt"] = 0,
-										["id"] = 8058,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 2,
+										["id"] = 8058,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8053] = {
-										["activedamt"] = 0,
-										["id"] = 8053,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 8053,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
 										["activedamt"] = 1,
@@ -2015,12 +2007,12 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[408501] = {
-										["activedamt"] = 2,
-										["id"] = 408501,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 1,
-										["appliedamt"] = 2,
+										["id"] = 408501,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2050,68 +2042,76 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[16280] = {
-										["activedamt"] = 2,
-										["id"] = 16280,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 8,
-										["appliedamt"] = 2,
+										["id"] = 16280,
 										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 90,
+							["fight_component"] = true,
 							["debuff_uptime"] = 25,
-							["aID"] = "5826-0235A66A",
+							["buff_uptime"] = 90,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
 							["last_event"] = 1711993240,
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28813-4287-00048AEDAF",
 							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "4287",
 							["nome"] = "Scarlet Gallant",
-							["last_event"] = 0,
+							["monster"] = true,
 							["tipo"] = 4,
+							["aID"] = "4287",
+							["serial"] = "Creature-0-5252-189-28813-4287-00048AEDAF",
+							["last_event"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28813-4540-00008AF132",
 							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "4540",
 							["nome"] = "Scarlet Monk",
-							["last_event"] = 0,
+							["monster"] = true,
 							["tipo"] = 4,
+							["aID"] = "4540",
+							["serial"] = "Creature-0-5252-189-28813-4540-00008AF132",
+							["last_event"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 4370,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+							["classe"] = "PET",
 						}, -- [8]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 46,
 					["tipo"] = 2,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2136,11 +2136,11 @@ _detalhes_database = {
 				["playerTalents"] = {
 				},
 				["totals"] = {
-					21338, -- [1]
+					95300, -- [1]
 					1391, -- [2]
 					{
-						32, -- [1]
-						[0] = 1610,
+						124, -- [1]
+						[0] = 10585,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -2148,10 +2148,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 6,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -2282,12 +2282,12 @@ _detalhes_database = {
 					["Chengmo"] = {
 						["Battle Shout"] = 1,
 						["Charge"] = 1,
-						["Whirlwind"] = 1,
 						["Mortal Strike"] = 1,
+						["Berserker Stance"] = 1,
 						["Slam"] = 3,
+						["Whirlwind"] = 1,
 						["Battle Stance"] = 2,
 						["Bloodrage"] = 1,
-						["Berserker Stance"] = 1,
 					},
 					["Scarlet Monk"] = {
 						["Kick"] = 2,
@@ -2321,7 +2321,41 @@ _detalhes_database = {
 					["Scarlet Gallant"] = 1,
 					["Scarlet Monk"] = 1,
 				},
+				["TimeData"] = {
+				},
 				["combat_counter"] = 3665,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Chengmo"] = 0.008704,
+							["Pipcek"] = 0.007752,
+							["Kragus"] = 0.005456,
+							["Mastourix"] = 1105.005942,
+							["Jutarnjedrvo"] = 286.007542,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Kragus"] = 34.005054,
+							["Pipcek"] = 703.003987,
+							["Chengmo"] = 3715.007169,
+							["Mastourix"] = 25.004602,
+							["Jutarnjedrvo"] = 5440.002135,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 271404.634,
+				["contra"] = "Scarlet Gallant",
 				["totals_grupo"] = {
 					9532, -- [1]
 					1391, -- [2]
@@ -2335,84 +2369,49 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Chengmo"] = 0.008704,
-							["Pipcek"] = 0.007752,
-							["Kragus"] = 0.005456,
-							["Mastourix"] = 1105.005942,
-							["Jutarnjedrvo"] = 286.007542,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Chengmo"] = 3715.007169,
-							["Pipcek"] = 703.003987,
-							["Mastourix"] = 25.004602,
-							["Kragus"] = 34.005054,
-							["Jutarnjedrvo"] = 5440.002135,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 271404.634,
-				["TimeData"] = {
-				},
-				["contra"] = "Scarlet Gallant",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 45,
 					["tipo"] = 2,
+					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.008198,
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
+							["aID"] = "5826-020ECE5B",
 							["total_without_pet"] = 8216.008198,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 8216.008198,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 8216,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -2615,47 +2614,47 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 351.5020192519995,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993137,
 							["damage_taken"] = 1232.008198,
 							["start_time"] = 1711993116,
 							["delay"] = 0,
-							["last_event"] = 1711993137,
+							["last_dps"] = 351.5020192519995,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.003841,
 							["pets"] = {
 							},
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 							["total_without_pet"] = 4080.003841,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 4080.003841,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 4080,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 5,
@@ -2828,16 +2827,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 174.5530863779469,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993136,
 							["damage_taken"] = 726.003841,
 							["start_time"] = 1711993115,
 							["delay"] = 0,
-							["last_event"] = 1711993136,
+							["last_dps"] = 174.5530863779469,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -2845,30 +2845,29 @@ _detalhes_database = {
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-02653B9F",
 							["total_without_pet"] = 706.0061519999999,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 885.0061519999999,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-02653B9F",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 885,
 							},
-							["colocacao"] = 3,
-							["aID"] = "5826-02653B9F",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409552] = {
 										["c_amt"] = 0,
@@ -3042,58 +3041,59 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 37.8628455548727,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "HUNTER",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993137,
 							["damage_taken"] = 0.006152,
 							["start_time"] = 1711993117,
 							["delay"] = 0,
-							["last_event"] = 1711993137,
+							["last_dps"] = 37.8628455548727,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.005216,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
+							["aID"] = "5826-021E30C3",
 							["total_without_pet"] = 0.005216,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.005216,
+							["colocacao"] = 4,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-021E30C3",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 							},
-							["colocacao"] = 4,
-							["aID"] = "5826-021E30C3",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993137,
-							["nome"] = "Mastourix",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
+							["boss_fight_component"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0.0002363603407646042,
-							["custom"] = 0,
+							["nome"] = "Mastourix",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["classe"] = "DRUID",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
 							["damage_taken"] = 252.005216,
 							["start_time"] = 1711993137,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_dps"] = 0.0002363603407646042,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
@@ -3101,58 +3101,57 @@ _detalhes_database = {
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
-							["classe"] = "WARLOCK",
+							["aID"] = "5826-01FF4ABA",
 							["total_without_pet"] = 0.003908,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.003908,
+							["colocacao"] = 5,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 							},
-							["colocacao"] = 5,
-							["aID"] = "5826-01FF4ABA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711993137,
-							["nome"] = "Kragus",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
+							["boss_fight_component"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0.000177088997643419,
-							["custom"] = 0,
+							["nome"] = "Kragus",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
 							["damage_taken"] = 896.003908,
 							["start_time"] = 1711993137,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_dps"] = 0.000177088997643419,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008911,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "6487",
 							["total_without_pet"] = 3255.008911,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3255.008911,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28813-6487-00000AEDAE",
-							["aID"] = "6487",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Pipcek"] = true,
 								["Kefir <Pipcek>"] = true,
@@ -3166,14 +3165,15 @@ _detalhes_database = {
 								["Kragus"] = 896,
 								["Jutarnjedrvo"] = 726,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008911,
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Arcanist Doan",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3316,20 +3316,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993136,
 							["damage_taken"] = 13181.008911,
 							["start_time"] = 1711993116,
 							["delay"] = 0,
-							["last_event"] = 1711993136,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.00737,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -3341,7 +3340,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
@@ -3351,11 +3349,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00737,
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3388,20 +3387,20 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993134,
 							["damage_taken"] = 149.00737,
 							["start_time"] = 1711993122,
 							["delay"] = 0,
-							["last_event"] = 1711993134,
+							["last_dps"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.008103,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -3413,7 +3412,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -3421,11 +3419,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.008103,
 							["end_time"] = 1711993137,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[7800] = {
 										["c_amt"] = 0,
@@ -3441,12 +3440,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 4,
 										["id"] = 7800,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
+										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -3457,29 +3456,33 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711993136,
 							["damage_taken"] = 0.008103,
 							["start_time"] = 1711993137,
 							["delay"] = 0,
-							["last_event"] = 1711993136,
+							["last_dps"] = 0,
 						}, -- [8]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 45,
 					["tipo"] = 3,
+					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-021E30C3",
 							["totalover"] = 3033.005641,
 							["total_without_pet"] = 2231.005641,
 							["total"] = 2231.005641,
@@ -3487,11 +3490,11 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.005641,
 							["last_hps"] = 95.44817493792151,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Chengmo"] = 1105,
 								["Mastourix"] = 252,
@@ -3499,16 +3502,11 @@ _detalhes_database = {
 								["Kragus"] = 106,
 								["Jutarnjedrvo"] = 726,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.005641,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 1711993136,
 							["healing_taken"] = 252.005641,
-							["grupo"] = true,
-							["classe"] = "DRUID",
 							["end_time"] = 1711993137,
+							["start_time"] = 1711993119,
 							["targets_overheal"] = {
 								["Beltai <Kragus>"] = 106,
 								["Pipcek"] = 1108,
@@ -3516,10 +3514,8 @@ _detalhes_database = {
 								["Mastourix"] = 855,
 								["Jutarnjedrvo"] = 380,
 							},
-							["start_time"] = 1711993119,
-							["nome"] = "Mastourix",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408120] = {
 										["c_amt"] = 0,
@@ -3558,19 +3554,26 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1711993136,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005641,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Mastourix",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-020ECE5B",
 							["totalover"] = 0.00743,
 							["total_without_pet"] = 0.00743,
 							["total"] = 0.00743,
@@ -3578,45 +3581,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-020ECE5B",
 							["totalabsorb"] = 0.00743,
 							["last_hps"] = 0.0003366866050385371,
-							["aID"] = "5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-020ECE5B",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.00743,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 1105.00743,
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
 							["end_time"] = 1711993137,
+							["start_time"] = 1711993137,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993137,
-							["nome"] = "Chengmo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.00743,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Chengmo",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-02653B9F",
 							["totalover"] = 0.006537,
 							["total_without_pet"] = 0.006537,
 							["total"] = 0.006537,
@@ -3624,44 +3626,45 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-02653B9F",
 							["totalabsorb"] = 0.006537,
 							["last_hps"] = 0.0002962207721584007,
-							["aID"] = "5826-02653B9F",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.006537,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.006537,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
 							["end_time"] = 1711993137,
+							["start_time"] = 1711993137,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993137,
-							["nome"] = "Pipcek",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "HUNTER",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006537,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Pipcek",
 						}, -- [3]
 						{
 							["flag_original"] = 1300,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-01FF4ABA",
 							["totalover"] = 0.005432,
 							["total_without_pet"] = 0.005432,
 							["total"] = 0.005432,
@@ -3669,44 +3672,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-01FF4ABA",
 							["totalabsorb"] = 0.005432,
 							["last_hps"] = 0.0002461482689864514,
-							["aID"] = "5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-01FF4ABA",
-							["colocacao"] = 4,
 							["totalover_without_pet"] = 0.005432,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 106.005432,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
 							["end_time"] = 1711993137,
+							["start_time"] = 1711993137,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993137,
-							["nome"] = "Kragus",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005432,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Kragus",
 						}, -- [4]
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-0235A66A",
 							["totalover"] = 0.001526,
 							["total_without_pet"] = 0.001526,
 							["total"] = 0.001526,
@@ -3714,40 +3717,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 5,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.001526,
 							["last_hps"] = 6.914990030804948e-05,
-							["aID"] = "5826-0235A66A",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 5,
 							["totalover_without_pet"] = 0.001526,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 726.001526,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
 							["end_time"] = 1711993137,
+							["start_time"] = 1711993137,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711993137,
-							["nome"] = "Jutarnjedrvo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001526,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Jutarnjedrvo",
 						}, -- [5]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -3760,38 +3762,38 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalabsorb"] = 0.005389,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalover_without_pet"] = 0.005389,
+							["last_event"] = 0,
+							["healing_taken"] = 42.005389,
+							["end_time"] = 1711993137,
 							["healing_from"] = {
 								["Mastourix"] = true,
-							},
-							["healing_taken"] = 42.005389,
-							["start_time"] = 1711993137,
-							["classe"] = "PET",
-							["end_time"] = 1711993137,
-							["targets_overheal"] = {
 							},
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711993137,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005389,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -3804,56 +3806,56 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["totalabsorb"] = 0.004174,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["totalover_without_pet"] = 0.004174,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.004174,
-							["start_time"] = 1711993137,
-							["classe"] = "PET",
 							["end_time"] = 1711993137,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711993137,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004174,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [7]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 45,
 					["tipo"] = 7,
+					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.003246,
+							["pets"] = {
+							},
+							["aID"] = "5826-020ECE5B",
+							["passiveover"] = 0.003246,
+							["total"] = 20.003246,
+							["serial"] = "Player-5826-020ECE5B",
+							["received"] = 20.003246,
 							["targets"] = {
 								["Chengmo"] = 20,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.003246,
 							["alternatepower"] = 0.003246,
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[2687] = {
 										["total"] = 10,
@@ -3874,247 +3876,237 @@ _detalhes_database = {
 										["counter"] = 10,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 20.003246,
-							["aID"] = "5826-020ECE5B",
-							["boss_fight_component"] = true,
-							["last_event"] = 1711993126,
+							["classe"] = "WARRIOR",
 							["totalover"] = 0.003246,
-							["total"] = 20.003246,
-							["serial"] = "Player-5826-020ECE5B",
+							["last_event"] = 1711993126,
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 45,
 					["tipo"] = 9,
+					["combatId"] = 45,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime"] = 123,
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "SHAMAN",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
-										["activedamt"] = 1,
-										["id"] = 443320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 443320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[945] = {
-										["activedamt"] = 1,
-										["id"] = 945,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 945,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408501] = {
-										["activedamt"] = 1,
-										["id"] = 408501,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 408501,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408505] = {
-										["activedamt"] = 2,
-										["id"] = 408505,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 18,
-										["appliedamt"] = 2,
+										["id"] = 408505,
 										["refreshamt"] = 14,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16280] = {
-										["activedamt"] = 4,
-										["id"] = 16280,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 17,
-										["appliedamt"] = 4,
+										["id"] = 16280,
 										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8162] = {
-										["activedamt"] = 1,
-										["id"] = 8162,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 8162,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 123,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
 							["last_event"] = 1711993137,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-01FF4ABA",
+							["buff_uptime"] = 45,
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[412758] = {
-										["activedamt"] = 1,
-										["id"] = 412758,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 412758,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[706] = {
-										["activedamt"] = 1,
-										["id"] = 706,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 706,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 45,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-01FF4ABA",
-							["nome"] = "Kragus",
 							["last_event"] = 1711993137,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-01FF4ABA",
+							["nome"] = "Kragus",
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-020ECE5B",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[412609] = {
-										["activedamt"] = 0,
-										["id"] = 412609,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 2,
+										["id"] = 412609,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[12294] = {
-										["activedamt"] = 0,
-										["id"] = 12294,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = 12294,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARRIOR",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[18499] = {
-										["activedamt"] = 1,
-										["id"] = 18499,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 18499,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[11549] = {
-										["activedamt"] = 1,
-										["id"] = 11549,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 11549,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[402906] = {
-										["activedamt"] = 2,
-										["id"] = 402906,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 16,
-										["appliedamt"] = 2,
+										["id"] = 402906,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -4132,257 +4124,265 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[29131] = {
-										["activedamt"] = 1,
-										["id"] = 29131,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 29131,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436351] = {
-										["activedamt"] = 1,
-										["id"] = 436351,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 436351,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2457] = {
-										["activedamt"] = 0,
-										["id"] = 2457,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 2457,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8516] = {
-										["activedamt"] = 3,
-										["id"] = 8516,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 3,
-										["appliedamt"] = 3,
+										["id"] = 8516,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 77,
 							["debuff_uptime"] = 37,
-							["aID"] = "5826-020ECE5B",
-							["nome"] = "Chengmo",
-							["last_event"] = 1711993137,
+							["buff_uptime"] = 77,
 							["tipo"] = 4,
+							["nome"] = "Chengmo",
+							["grupo"] = true,
+							["aID"] = "5826-020ECE5B",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711993137,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-020ECE5B",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[770] = {
-										["activedamt"] = 0,
-										["id"] = 770,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 770,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "DRUID",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5234] = {
-										["activedamt"] = 1,
-										["id"] = 5234,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 5234,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408120] = {
-										["activedamt"] = 2,
-										["id"] = 408120,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 16,
-										["appliedamt"] = 2,
+										["id"] = 408120,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 60,
 							["debuff_uptime"] = 21,
-							["aID"] = "5826-021E30C3",
-							["nome"] = "Mastourix",
-							["last_event"] = 1711993137,
+							["buff_uptime"] = 60,
 							["tipo"] = 4,
+							["nome"] = "Mastourix",
+							["grupo"] = true,
+							["aID"] = "5826-021E30C3",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711993137,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-021E30C3",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-02653B9F",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[14323] = {
-										["activedamt"] = 0,
-										["id"] = 14323,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = 14323,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409552] = {
-										["activedamt"] = 0,
-										["id"] = 409552,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 409552,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8116] = {
-										["activedamt"] = 1,
-										["id"] = 8116,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 8116,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[429959] = {
-										["activedamt"] = 1,
-										["id"] = 429959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 429959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 5118,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 88,
 							["debuff_uptime"] = 21,
-							["aID"] = "5826-02653B9F",
-							["nome"] = "Pipcek",
-							["last_event"] = 1711993137,
+							["buff_uptime"] = 88,
 							["tipo"] = 4,
+							["nome"] = "Pipcek",
+							["grupo"] = true,
+							["aID"] = "5826-02653B9F",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711993137,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-02653B9F",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28813-6487-00000AEDAE",
 							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "6487",
 							["nome"] = "Arcanist Doan",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
+							["aID"] = "6487",
+							["serial"] = "Creature-0-5252-189-28813-6487-00000AEDAE",
+							["last_event"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["ownerName"] = "Kragus",
+							["boss_fight_component"] = true,
 							["nome"] = "Beltai <Kragus>",
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 45,
 					["tipo"] = 2,
+					["combatId"] = 45,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4401,9 +4401,7 @@ _detalhes_database = {
 				["bossIcon"] = "",
 				["bossTimers"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 3664,
 				["playerTalents"] = {
 				},
 				["totals"] = {
@@ -4419,10 +4417,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -4493,29 +4491,13 @@ _detalhes_database = {
 				["mapId"] = 189,
 				["combat_id"] = 45,
 				["overall_added"] = true,
-				["totals_grupo"] = {
-					13002, -- [1]
-					2231, -- [2]
-					{
-						20, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["TimeData"] = {
 				},
-				["boss_hp"] = 1,
-				["combat_counter"] = 3664,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 				},
 				["is_boss"] = {
@@ -4538,6 +4520,8 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4549,8 +4533,6 @@ _detalhes_database = {
 							["Jutarnjedrvo"] = 0.001526,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Chengmo"] = 8216.008198,
@@ -4561,32 +4543,50 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["spells_cast_timeline"] = {
-				},
+				["boss_hp"] = 1,
 				["start_time"] = 271321.809,
-				["TimeData"] = {
-				},
 				["contra"] = "Arcanist Doan",
+				["totals_grupo"] = {
+					13002, -- [1]
+					2231, -- [2]
+					{
+						20, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
 			}, -- [2]
 			{
 				{
-					["combatId"] = 30,
 					["tipo"] = 2,
+					["combatId"] = 30,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.006897,
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
+							["aID"] = "5826-020ECE5B",
 							["total_without_pet"] = 12550.006897,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 12550.006897,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Scarlet Tracking Hound"] = true,
 								["Houndmaster Loksey"] = true,
@@ -4595,16 +4595,15 @@ _detalhes_database = {
 								["Scarlet Tracking Hound"] = 6973,
 								["Houndmaster Loksey"] = 5577,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -4820,12 +4819,12 @@ _detalhes_database = {
 										["counter"] = 42,
 										["total"] = 288,
 										["c_max"] = 0,
-										["RESIST"] = 10,
+										["spellschool"] = 8,
 										["id"] = 1075,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 10,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -4865,47 +4864,47 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 663.98639738594,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992559,
 							["damage_taken"] = 2672.006897,
 							["start_time"] = 1711992541,
 							["delay"] = 0,
-							["last_event"] = 1711992559,
+							["last_dps"] = 663.98639738594,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.00302,
 							["pets"] = {
 							},
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 							["total_without_pet"] = 3473.00302,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3473.00302,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Houndmaster Loksey"] = 3122,
 								["Scarlet Tracking Hound"] = 351,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -4960,6 +4959,35 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 0,
 										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[421] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 207,
+										["targets"] = {
+											["Scarlet Tracking Hound"] = 351,
+											["Houndmaster Loksey"] = 207,
+										},
+										["n_total"] = 321,
+										["n_min"] = 114,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 558,
+										["c_max"] = 237,
+										["id"] = 421,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 237,
+										["successful_casted"] = 0,
+										["c_total"] = 237,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5019,46 +5047,18 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[421] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 207,
-										["targets"] = {
-											["Scarlet Tracking Hound"] = 351,
-											["Houndmaster Loksey"] = 207,
-										},
-										["n_total"] = 321,
-										["n_min"] = 114,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 558,
-										["c_max"] = 237,
-										["id"] = 421,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 237,
-										["successful_casted"] = 0,
-										["c_total"] = 237,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 183.7470514786355,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992559,
 							["damage_taken"] = 0.00302,
 							["start_time"] = 1711992543,
 							["delay"] = 0,
-							["last_event"] = 1711992559,
+							["last_dps"] = 183.7470514786355,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -5066,31 +5066,30 @@ _detalhes_database = {
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-02653B9F",
 							["total_without_pet"] = 2766.007747,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3328.007747,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-02653B9F",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Houndmaster Loksey"] = 1886,
 								["Scarlet Tracking Hound"] = 1442,
 							},
-							["colocacao"] = 3,
-							["aID"] = "5826-02653B9F",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409552] = {
 										["c_amt"] = 0,
@@ -5267,46 +5266,46 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 176.0757498014807,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "HUNTER",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992559,
 							["damage_taken"] = 0.007747,
 							["start_time"] = 1711992542,
 							["delay"] = 0,
-							["last_event"] = 1711992559,
+							["last_dps"] = 176.0757498014807,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.008666,
 							["pets"] = {
 							},
-							["classe"] = "WARLOCK",
+							["aID"] = "5826-01FF4ABA",
 							["total_without_pet"] = 411.008666,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 411.008666,
+							["colocacao"] = 4,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Scarlet Tracking Hound"] = 411,
 							},
-							["colocacao"] = 4,
-							["aID"] = "5826-01FF4ABA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Kragus",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[5019] = {
 										["c_amt"] = 2,
@@ -5350,12 +5349,12 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 3,
+										["spellschool"] = 1,
 										["id"] = 2,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["RESIST"] = 3,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -5366,32 +5365,32 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 21.7453397174608,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992556,
 							["damage_taken"] = 0.008666,
 							["start_time"] = 1711992543,
 							["delay"] = 0,
-							["last_event"] = 1711992556,
+							["last_dps"] = 21.7453397174608,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00872,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "4304",
 							["total_without_pet"] = 1801.00872,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1801.00872,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28813-4304-00010AEDAE",
-							["aID"] = "4304",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Pipcek"] = true,
 								["Chengmo"] = true,
@@ -5401,14 +5400,15 @@ _detalhes_database = {
 							["targets"] = {
 								["Chengmo"] = 1801,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00872,
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Scarlet Tracking Hound",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -5421,12 +5421,12 @@ _detalhes_database = {
 										["n_total"] = 1701,
 										["a_amt"] = 0,
 										["n_min"] = 45,
-										["g_dmg"] = 0,
+										["MISS"] = 1,
 										["counter"] = 36,
 										["DODGE"] = 2,
 										["total"] = 1801,
 										["c_max"] = 100,
-										["MISS"] = 1,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -5438,36 +5438,35 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 100,
 										["n_amt"] = 31,
-										["b_dmg"] = 0,
 										["r_amt"] = 0,
+										["g_dmg"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992559,
 							["damage_taken"] = 9177.00872,
 							["start_time"] = 1711992541,
 							["delay"] = 0,
-							["last_event"] = 1711992559,
+							["last_dps"] = 0,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005786,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "3974",
 							["total_without_pet"] = 871.005786,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 871.005786,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28813-3974-00000AEDAE",
-							["aID"] = "3974",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Pipcek"] = true,
 								["Kefir <Pipcek>"] = true,
@@ -5477,14 +5476,15 @@ _detalhes_database = {
 							["targets"] = {
 								["Chengmo"] = 871,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005786,
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Houndmaster Loksey",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -5500,7 +5500,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 17,
 										["MISS"] = 4,
-										["total"] = 871,
+										["r_amt"] = 0,
 										["c_max"] = 207,
 										["DODGE"] = 2,
 										["id"] = 1,
@@ -5515,7 +5515,7 @@ _detalhes_database = {
 										["c_total"] = 207,
 										["n_amt"] = 9,
 										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 871,
 									}, -- [1]
 									[6742] = {
 										["c_amt"] = 0,
@@ -5544,20 +5544,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992558,
 							["damage_taken"] = 10585.005786,
 							["start_time"] = 1711992541,
 							["delay"] = 0,
-							["last_event"] = 1711992558,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.001543,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -5569,7 +5568,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -5578,11 +5576,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001543,
 							["end_time"] = 1711992559,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -5614,29 +5613,32 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992559,
 							["damage_taken"] = 0.001543,
 							["start_time"] = 1711992545,
 							["delay"] = 0,
-							["last_event"] = 1711992559,
+							["last_dps"] = 0,
 						}, -- [7]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 30,
 					["tipo"] = 3,
+					["combatId"] = 30,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-021E30C3",
 							["totalover"] = 1436.001624,
 							["total_without_pet"] = 1332.001624,
 							["total"] = 1332.001624,
@@ -5644,23 +5646,19 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.001624,
 							["last_hps"] = 70.47254769584222,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Chengmo"] = 1332,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.001624,
-							["healing_from"] = {
-							},
+							["last_event"] = 1711992559,
 							["healing_taken"] = 0.001624,
-							["grupo"] = true,
-							["classe"] = "DRUID",
 							["end_time"] = 1711992559,
+							["start_time"] = 1711992544,
 							["targets_overheal"] = {
 								["Kragus"] = 288,
 								["Pipcek"] = 288,
@@ -5668,10 +5666,8 @@ _detalhes_database = {
 								["Mastourix"] = 287,
 								["Jutarnjedrvo"] = 286,
 							},
-							["start_time"] = 1711992544,
-							["nome"] = "Mastourix",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408124] = {
 										["c_amt"] = 0,
@@ -5784,19 +5780,25 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1711992559,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001624,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Mastourix",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-0235A66A",
 							["totalover"] = 0.008063,
 							["total_without_pet"] = 0.008063,
 							["total"] = 0.008063,
@@ -5804,43 +5806,43 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.008063,
 							["last_hps"] = 0.0004544583474234875,
-							["aID"] = "5826-0235A66A",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.008063,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.008063,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
 							["end_time"] = 1711992559,
+							["start_time"] = 1711992559,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992559,
-							["nome"] = "Jutarnjedrvo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.008063,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Jutarnjedrvo",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-01FF4ABA",
 							["totalover"] = 0.005931,
 							["total_without_pet"] = 0.005931,
 							["total"] = 0.005931,
@@ -5848,43 +5850,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-01FF4ABA",
 							["totalabsorb"] = 0.005931,
 							["last_hps"] = 0.0003342915116667126,
-							["aID"] = "5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-01FF4ABA",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.005931,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.005931,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
 							["end_time"] = 1711992559,
+							["start_time"] = 1711992559,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992559,
-							["nome"] = "Kragus",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005931,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Kragus",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-020ECE5B",
 							["totalover"] = 0.003597,
 							["total_without_pet"] = 0.003597,
 							["total"] = 0.003597,
@@ -5892,45 +5895,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-020ECE5B",
 							["totalabsorb"] = 0.003597,
 							["last_hps"] = 0.0002027392627660033,
-							["aID"] = "5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-020ECE5B",
-							["colocacao"] = 4,
 							["totalover_without_pet"] = 0.003597,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 1332.003597,
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
 							["end_time"] = 1711992559,
+							["start_time"] = 1711992559,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992559,
-							["nome"] = "Chengmo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.003597,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Chengmo",
 						}, -- [4]
 						{
 							["flag_original"] = 1300,
+							["healing_from"] = {
+							},
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-02653B9F",
 							["totalover"] = 0.003428,
 							["total_without_pet"] = 0.003428,
 							["total"] = 0.003428,
@@ -5938,39 +5940,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 5,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-02653B9F",
 							["totalabsorb"] = 0.003428,
 							["last_hps"] = 0.0001932138428584541,
-							["aID"] = "5826-02653B9F",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["colocacao"] = 5,
 							["totalover_without_pet"] = 0.003428,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.003428,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
 							["end_time"] = 1711992559,
+							["start_time"] = 1711992559,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992559,
-							["nome"] = "Pipcek",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "HUNTER",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.003428,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Pipcek",
 						}, -- [5]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -5983,235 +5985,225 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalabsorb"] = 0.004457,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalover_without_pet"] = 0.004457,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.004457,
-							["start_time"] = 1711992559,
-							["classe"] = "PET",
 							["end_time"] = 1711992559,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711992559,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.004457,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [6]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 30,
 					["tipo"] = 7,
+					["combatId"] = 30,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 30,
 					["tipo"] = 9,
+					["combatId"] = 30,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-01FF4ABA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5740] = {
-										["activedamt"] = 0,
-										["id"] = 5740,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 4,
+										["id"] = 5740,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[403650] = {
-										["activedamt"] = 3,
-										["id"] = 403650,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 1,
-										["appliedamt"] = 4,
+										["id"] = 403650,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[706] = {
-										["activedamt"] = 1,
-										["id"] = 706,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 706,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 36,
 							["debuff_uptime"] = 1,
-							["aID"] = "5826-01FF4ABA",
-							["nome"] = "Kragus",
-							["last_event"] = 1711992559,
+							["buff_uptime"] = 36,
 							["tipo"] = 4,
+							["nome"] = "Kragus",
+							["grupo"] = true,
+							["aID"] = "5826-01FF4ABA",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992559,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-01FF4ABA",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-020ECE5B",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[412609] = {
-										["activedamt"] = 2,
-										["id"] = 412609,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 14,
-										["appliedamt"] = 3,
+										["id"] = 412609,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[12294] = {
-										["activedamt"] = 0,
-										["id"] = 12294,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = 12294,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARRIOR",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[402906] = {
-										["activedamt"] = 1,
-										["id"] = 402906,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 402906,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[11549] = {
-										["activedamt"] = 1,
-										["id"] = 11549,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 11549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2457] = {
-										["activedamt"] = 0,
-										["id"] = 2457,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 2457,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[12292] = {
-										["activedamt"] = 1,
-										["id"] = 12292,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 12292,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8516] = {
-										["activedamt"] = 2,
-										["id"] = 8516,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 1,
-										["appliedamt"] = 2,
+										["id"] = 8516,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436351] = {
-										["activedamt"] = 1,
-										["id"] = 436351,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 436351,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[18499] = {
-										["activedamt"] = 1,
-										["id"] = 18499,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 18499,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -6229,319 +6221,325 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 63,
 							["debuff_uptime"] = 23,
-							["aID"] = "5826-020ECE5B",
-							["nome"] = "Chengmo",
-							["last_event"] = 1711992559,
+							["buff_uptime"] = 63,
 							["tipo"] = 4,
+							["nome"] = "Chengmo",
+							["grupo"] = true,
+							["aID"] = "5826-020ECE5B",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992559,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-020ECE5B",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
+							["buff_uptime"] = 40,
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "DRUID",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5234] = {
-										["activedamt"] = 1,
-										["id"] = 5234,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 5234,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408120] = {
-										["activedamt"] = 1,
-										["id"] = 408120,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = 408120,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 40,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-021E30C3",
-							["nome"] = "Mastourix",
 							["last_event"] = 1711992559,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-021E30C3",
+							["nome"] = "Mastourix",
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-02653B9F",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[409552] = {
-										["activedamt"] = 0,
-										["id"] = 409552,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 2,
+										["id"] = 409552,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14323] = {
-										["activedamt"] = 0,
-										["id"] = 14323,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = 14323,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[13551] = {
-										["activedamt"] = 0,
-										["id"] = 13551,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = 13551,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[429959] = {
-										["activedamt"] = 1,
-										["id"] = 429959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 429959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 5118,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 54,
 							["debuff_uptime"] = 29,
-							["aID"] = "5826-02653B9F",
-							["nome"] = "Pipcek",
-							["last_event"] = 1711992559,
+							["buff_uptime"] = 54,
 							["tipo"] = 4,
+							["nome"] = "Pipcek",
+							["grupo"] = true,
+							["aID"] = "5826-02653B9F",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992559,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-02653B9F",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-0235A66A",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[20549] = {
-										["activedamt"] = 0,
-										["id"] = 20549,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 4,
+										["id"] = 20549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8058] = {
-										["activedamt"] = 0,
-										["id"] = 8058,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 8058,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8053] = {
-										["activedamt"] = 0,
-										["id"] = 8053,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 8053,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "SHAMAN",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
-										["activedamt"] = 1,
-										["id"] = 443320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 443320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[945] = {
-										["activedamt"] = 1,
-										["id"] = 945,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 945,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408501] = {
-										["activedamt"] = 1,
-										["id"] = 408501,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 408501,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408505] = {
-										["activedamt"] = 2,
-										["id"] = 408505,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 13,
-										["appliedamt"] = 2,
+										["id"] = 408505,
 										["refreshamt"] = 12,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8162] = {
-										["activedamt"] = 1,
-										["id"] = 8162,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 18,
-										["appliedamt"] = 1,
+										["id"] = 8162,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16280] = {
-										["activedamt"] = 1,
-										["id"] = 16280,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 16280,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 92,
 							["debuff_uptime"] = 14,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1711992559,
+							["buff_uptime"] = 92,
 							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992559,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["aID"] = "4304",
 							["boss_debuff"] = true,
+							["damage_spellid"] = 1604,
 							["monster"] = true,
 							["debuff_uptime"] = 9,
 							["spellschool"] = 1,
-							["nome"] = "Dazed",
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Chengmo"] = {
 									["uptime"] = 9,
@@ -6551,9 +6549,11 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
 							["damage_twin"] = "Scarlet Tracking Hound",
-							["damage_spellid"] = 1604,
+							["nome"] = "Dazed",
 							["serial"] = "Creature-0-5252-189-28813-4304-00010AEDAE",
 							["last_event"] = 1711992556,
 						}, -- [6]
@@ -6561,20 +6561,20 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28813-3974-00000AEDAE",
 							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "3974",
 							["nome"] = "Houndmaster Loksey",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
+							["aID"] = "3974",
+							["serial"] = "Creature-0-5252-189-28813-3974-00000AEDAE",
+							["last_event"] = 0,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 30,
 					["tipo"] = 2,
+					["combatId"] = 30,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6612,10 +6612,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6675,13 +6675,41 @@ _detalhes_database = {
 				},
 				["aura_timeline"] = {
 				},
-				["data_inicio"] = "19:29:01",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Chengmo"] = 0.003597,
+							["Mastourix"] = 1332.001624,
+							["Kragus"] = 0.005931,
+							["Pipcek"] = 0.003428,
+							["Jutarnjedrvo"] = 0.008063,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Pipcek"] = 3328.007747,
+							["Kragus"] = 411.008666,
+							["Chengmo"] = 12550.006897,
+							["Jutarnjedrvo"] = 3473.00302,
+						}, -- [1]
+					},
+				},
 				["end_time"] = 270766.921,
 				["mapId"] = 189,
 				["combat_id"] = 30,
 				["overall_added"] = true,
-				["combat_counter"] = 3649,
-				["boss_hp"] = 1,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
 				["EncounterName"] = "Houndmaster Loksey",
 				["frags"] = {
 				},
@@ -6712,56 +6740,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kragus"] = 0.005931,
-							["Mastourix"] = 1332.001624,
-							["Pipcek"] = 0.003428,
-							["Chengmo"] = 0.003597,
-							["Jutarnjedrvo"] = 0.008063,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Pipcek"] = 3328.007747,
-							["Kragus"] = 411.008666,
-							["Chengmo"] = 12550.006897,
-							["Jutarnjedrvo"] = 3473.00302,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
+				["boss_hp"] = 1,
+				["combat_counter"] = 3649,
 				["start_time"] = 270748.02,
-				["TimeData"] = {
-				},
 				["contra"] = "Scarlet Tracking Hound",
+				["data_inicio"] = "19:29:01",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 25,
 					["tipo"] = 2,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001317,
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
@@ -6769,6 +6768,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1645.001317,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
@@ -6778,16 +6778,14 @@ _detalhes_database = {
 							["targets"] = {
 								["Scarlet Monk"] = 1645,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992174,
+							["totalabsorbed"] = 0.001317,
+							["aID"] = "5826-0235A66A",
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6817,23 +6815,24 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[8058] = {
+									[408507] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 222,
+										["n_max"] = 0,
 										["targets"] = {
-											["Scarlet Monk"] = 442,
+											["Scarlet Monk"] = 0,
 										},
-										["n_total"] = 442,
-										["n_min"] = 220,
+										["n_total"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 442,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = 8058,
+										["DODGE"] = 1,
+										["id"] = 408507,
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
+										["spellschool"] = 4,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6841,7 +6840,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["c_total"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -6873,6 +6872,34 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[8058] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 222,
+										["targets"] = {
+											["Scarlet Monk"] = 442,
+										},
+										["n_total"] = 442,
+										["n_min"] = 220,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 442,
+										["c_max"] = 0,
+										["id"] = 8058,
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["c_total"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[439440] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -6901,50 +6928,22 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[408507] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Monk"] = 0,
-										},
-										["n_total"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 408507,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["c_total"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 44.20620544448083,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992168,
 							["damage_taken"] = 771.001317,
 							["start_time"] = 1711992159,
 							["delay"] = 1711992145,
-							["last_event"] = 1711992168,
+							["last_dps"] = 44.20620544448083,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.006642,
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
@@ -6952,6 +6951,7 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 27.006642,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
@@ -6961,16 +6961,14 @@ _detalhes_database = {
 							["targets"] = {
 								["Scarlet Monk"] = 27,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992174,
+							["totalabsorbed"] = 0.006642,
+							["aID"] = "5826-020ECE5B",
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[1075] = {
 										["c_amt"] = 0,
@@ -6986,12 +6984,12 @@ _detalhes_database = {
 										["counter"] = 5,
 										["total"] = 27,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 8,
 										["id"] = 1075,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 2,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -7002,20 +7000,21 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0.7257508868107153,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992164,
 							["damage_taken"] = 728.006642,
 							["start_time"] = 1711992167,
 							["delay"] = 1711992164,
-							["last_event"] = 1711992164,
+							["last_dps"] = 0.7257508868107153,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003936,
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
@@ -7023,11 +7022,11 @@ _detalhes_database = {
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1499.003936,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28211-4540-00000AED07",
-							["aID"] = "4540",
-							["fight_component"] = true,
+							["on_hold"] = false,
 							["damage_from"] = {
 								["Chengmo"] = true,
 								["Jutarnjedrvo"] = true,
@@ -7036,14 +7035,15 @@ _detalhes_database = {
 								["Chengmo"] = 728,
 								["Jutarnjedrvo"] = 771,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.003936,
+							["fight_component"] = true,
 							["end_time"] = 1711992174,
+							["aID"] = "4540",
 							["nome"] = "Scarlet Monk",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -7128,25 +7128,29 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992168,
 							["damage_taken"] = 1672.003936,
 							["start_time"] = 1711992151,
 							["delay"] = 1711992144,
-							["last_event"] = 1711992168,
+							["last_dps"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 25,
 					["tipo"] = 3,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Mastourix"] = true,
+								["Jutarnjedrvo"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -7158,32 +7162,24 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.007204,
 							["last_hps"] = 18.2201226486082,
-							["aID"] = "5826-0235A66A",
-							["fight_component"] = true,
 							["targets"] = {
 								["Jutarnjedrvo"] = 678,
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.007204,
-							["healing_from"] = {
-								["Mastourix"] = true,
-								["Jutarnjedrvo"] = true,
-							},
+							["last_event"] = 1711992174,
 							["healing_taken"] = 752.007204,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
+							["fight_component"] = true,
 							["end_time"] = 1711992174,
 							["targets_overheal"] = {
 								["Jutarnjedrvo"] = 50,
 							},
-							["start_time"] = 1711992173,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[8010] = {
 										["c_amt"] = 0,
@@ -7212,15 +7208,21 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711992173,
+							["classe"] = "SHAMAN",
 							["custom"] = 0,
-							["last_event"] = 1711992174,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007204,
 							["delay"] = 1711992156,
-							["tipo"] = 2,
+							["aID"] = "5826-0235A66A",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -7232,29 +7234,23 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.002057,
 							["last_hps"] = 1.988661103944989,
-							["aID"] = "5826-021E30C3",
-							["fight_component"] = true,
 							["targets"] = {
 								["Jutarnjedrvo"] = 74,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.002057,
-							["healing_from"] = {
-							},
+							["last_event"] = 1711992138,
 							["healing_taken"] = 0.002057,
-							["grupo"] = true,
-							["classe"] = "DRUID",
+							["fight_component"] = true,
 							["end_time"] = 1711992174,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992173,
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408120] = {
 										["c_amt"] = 0,
@@ -7282,35 +7278,40 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["start_time"] = 1711992173,
+							["classe"] = "DRUID",
 							["custom"] = 0,
-							["last_event"] = 1711992138,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002057,
 							["delay"] = 1711992138,
-							["tipo"] = 2,
+							["aID"] = "5826-021E30C3",
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 25,
 					["tipo"] = 7,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["resource"] = 0.004227,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["passiveover"] = 0.004227,
+							["total"] = 844.004227,
+							["serial"] = "Player-5826-0235A66A",
+							["received"] = 844.004227,
 							["targets"] = {
 								["Jutarnjedrvo"] = 844,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 0,
-							["classe"] = "SHAMAN",
-							["passiveover"] = 0.004227,
-							["fight_component"] = true,
 							["alternatepower"] = 0.004227,
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[425336] = {
 										["total"] = 844,
@@ -7322,128 +7323,124 @@ _detalhes_database = {
 										["counter"] = 10,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 844.004227,
 							["aID"] = "5826-0235A66A",
-							["last_event"] = 1711992156,
-							["total"] = 844.004227,
 							["totalover"] = 0.004227,
-							["serial"] = "Player-5826-0235A66A",
+							["last_event"] = 1711992156,
 							["tipo"] = 3,
+							["fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 25,
 					["tipo"] = 9,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["serial"] = "Player-5826-0235A66A",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8058] = {
-										["activedamt"] = 2,
-										["id"] = 8058,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 30,
-										["appliedamt"] = 2,
+										["id"] = 8058,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Earthbind Totem <Jutarnjedrvo>", -- [1]
 							},
-							["fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
-										["activedamt"] = 4,
-										["id"] = 443320,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 5,
-										["appliedamt"] = 4,
+										["id"] = 443320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[945] = {
-										["activedamt"] = 4,
-										["id"] = 945,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 5,
-										["appliedamt"] = 4,
+										["id"] = 945,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[425336] = {
-										["activedamt"] = 3,
-										["id"] = 425336,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 4,
-										["appliedamt"] = 3,
+										["id"] = 425336,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 4,
-										["id"] = 436412,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 4,
 										["uptime"] = 5,
-										["appliedamt"] = 4,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408505] = {
-										["activedamt"] = 3,
-										["id"] = 408505,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 4,
-										["appliedamt"] = 3,
+										["id"] = 408505,
 										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 23,
+							["fight_component"] = true,
 							["debuff_uptime"] = 30,
-							["aID"] = "5826-0235A66A",
+							["buff_uptime"] = 23,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
 							["nome"] = "Jutarnjedrvo",
 							["last_event"] = 1711992174,
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-5826-0235A66A",
+							["classe"] = "SHAMAN",
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-01FF4ABA",
+							["buff_uptime"] = 0,
 							["buff_uptime_targets"] = {
 							},
-							["classe"] = "WARLOCK",
+							["aID"] = "5826-01FF4ABA",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[7804] = {
 										["activedamt"] = 2,
@@ -7482,32 +7479,32 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 0,
-							["grupo"] = true,
-							["aID"] = "5826-01FF4ABA",
 							["nome"] = "Kragus",
-							["last_event"] = 1711992179,
+							["grupo"] = true,
+							["pets"] = {
+							},
 							["tipo"] = 4,
+							["classe"] = "WARLOCK",
+							["serial"] = "Player-5826-01FF4ABA",
+							["last_event"] = 1711992179,
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-020ECE5B",
+							["buff_uptime"] = 5,
 							["buff_uptime_targets"] = {
 							},
-							["classe"] = "WARRIOR",
+							["aID"] = "5826-020ECE5B",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436351] = {
-										["activedamt"] = 3,
-										["id"] = 436351,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 5,
-										["appliedamt"] = 3,
+										["id"] = 436351,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -7525,56 +7522,56 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 5,
-							["grupo"] = true,
-							["aID"] = "5826-020ECE5B",
 							["nome"] = "Chengmo",
-							["last_event"] = 1711992174,
+							["grupo"] = true,
+							["pets"] = {
+							},
 							["tipo"] = 4,
+							["classe"] = "WARRIOR",
+							["serial"] = "Player-5826-020ECE5B",
+							["last_event"] = 1711992174,
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
+							["nome"] = "Mastourix",
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "DRUID",
-							["fight_component"] = true,
+							["aID"] = "5826-021E30C3",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 37,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 37,
-							["grupo"] = true,
-							["aID"] = "5826-021E30C3",
-							["nome"] = "Mastourix",
-							["last_event"] = 1711992174,
 							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["fight_component"] = true,
+							["last_event"] = 1711992174,
+							["buff_uptime"] = 37,
+							["serial"] = "Player-5826-021E30C3",
+							["classe"] = "DRUID",
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["pets"] = {
-							},
-							["serial"] = "Player-5826-02653B9F",
+							["buff_uptime"] = 3,
 							["buff_uptime_targets"] = {
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-02653B9F",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[429959] = {
 										["activedamt"] = 2,
@@ -7589,12 +7586,12 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 2,
-										["id"] = 14318,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -7636,44 +7633,47 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 3,
-							["grupo"] = true,
-							["aID"] = "5826-02653B9F",
 							["nome"] = "Pipcek",
-							["last_event"] = 1711992158,
+							["grupo"] = true,
+							["pets"] = {
+							},
 							["tipo"] = 4,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-5826-02653B9F",
+							["last_event"] = 1711992158,
 						}, -- [5]
 						{
 							["flag_original"] = 8465,
 							["pets"] = {
 							},
-							["classe"] = "PET",
 							["aID"] = "2630",
-							["serial"] = "Creature-0-5252-189-28211-2630-00000AED4C",
 							["ownerName"] = "Jutarnjedrvo",
 							["nome"] = "Earthbind Totem <Jutarnjedrvo>",
-							["last_event"] = 0,
 							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Creature-0-5252-189-28211-2630-00000AED4C",
+							["classe"] = "PET",
 						}, -- [6]
 						{
 							["flag_original"] = 2632,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28211-4540-00000AED07",
 							["classe"] = "UNKNOW",
 							["fight_component"] = true,
-							["monster"] = true,
-							["aID"] = "4540",
 							["nome"] = "Scarlet Monk",
-							["last_event"] = 0,
+							["monster"] = true,
 							["tipo"] = 4,
+							["aID"] = "4540",
+							["serial"] = "Creature-0-5252-189-28211-4540-00000AED07",
+							["last_event"] = 0,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 25,
 					["tipo"] = 2,
+					["combatId"] = 25,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7710,10 +7710,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -7731,6 +7731,9 @@ _detalhes_database = {
 						["Thrash"] = 1,
 						["Kick"] = 1,
 					},
+					["Earthbind Totem <Jutarnjedrvo>"] = {
+						["Earthbind"] = 1,
+					},
 					["Jutarnjedrvo"] = {
 						["Lesser Healing Wave"] = 2,
 						["Lightning Shield"] = 1,
@@ -7738,9 +7741,6 @@ _detalhes_database = {
 						["Lava Lash"] = 1,
 						["Shamanistic Rage"] = 1,
 						["Earthbind Totem"] = 1,
-					},
-					["Earthbind Totem <Jutarnjedrvo>"] = {
-						["Earthbind"] = 1,
 					},
 				},
 				["instance_type"] = "none",
@@ -7764,7 +7764,35 @@ _detalhes_database = {
 				["frags"] = {
 					["Celoabdi"] = 1,
 				},
+				["TimeData"] = {
+				},
 				["combat_counter"] = 3643,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mastourix"] = 74.002057,
+							["Jutarnjedrvo"] = 678.007204,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Chengmo"] = 27.006642,
+							["Jutarnjedrvo"] = 1645.001317,
+						}, -- [1]
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 270345.535,
+				["contra"] = "Scarlet Monk",
 				["totals_grupo"] = {
 					1672, -- [1]
 					752, -- [2]
@@ -7778,78 +7806,49 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mastourix"] = 74.002057,
-							["Jutarnjedrvo"] = 678.007204,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Chengmo"] = 27.006642,
-							["Jutarnjedrvo"] = 1645.001317,
-						}, -- [1]
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 270345.535,
-				["TimeData"] = {
-				},
-				["contra"] = "Scarlet Monk",
 			}, -- [4]
 			{
 				{
-					["combatId"] = 24,
 					["tipo"] = 2,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.008083,
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
+							["aID"] = "5826-020ECE5B",
 							["total_without_pet"] = 8255.008083,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 8255.008083,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 8255,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -8065,12 +8064,12 @@ _detalhes_database = {
 										["counter"] = 6,
 										["total"] = 36,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 8,
 										["id"] = 1075,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 2,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -8081,47 +8080,47 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 333.616556862188,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992069,
 							["damage_taken"] = 841.0080829999999,
 							["start_time"] = 1711992045,
 							["delay"] = 0,
-							["last_event"] = 1711992069,
+							["last_dps"] = 333.616556862188,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.008566,
 							["pets"] = {
 							},
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 							["total_without_pet"] = 3418.008566,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3418.008566,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 3418,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -8133,15 +8132,15 @@ _detalhes_database = {
 											["Arcanist Doan"] = 2134,
 										},
 										["n_total"] = 687,
-										["EVADE"] = 1,
 										["DODGE"] = 2,
-										["n_min"] = 80,
 										["g_dmg"] = 988,
-										["counter"] = 21,
+										["n_min"] = 80,
 										["MISS"] = 1,
-										["total"] = 2134,
+										["counter"] = 21,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 157,
-										["IMMUNE"] = 1,
+										["EVADE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -8153,8 +8152,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["c_total"] = 459,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 2134,
+										["IMMUNE"] = 1,
 									}, -- [1]
 									[8058] = {
 										["c_amt"] = 0,
@@ -8300,16 +8299,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 138.134843436759,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992137,
 							["damage_taken"] = 476.008566,
 							["start_time"] = 1711992049,
 							["delay"] = 0,
-							["last_event"] = 1711992137,
+							["last_dps"] = 138.134843436759,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -8317,30 +8317,29 @@ _detalhes_database = {
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-02653B9F",
 							["total_without_pet"] = 401.008414,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 865.008414,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-02653B9F",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 865,
 							},
-							["colocacao"] = 3,
-							["aID"] = "5826-02653B9F",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[409552] = {
 										["c_amt"] = 0,
@@ -8516,16 +8515,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 34.95830965081589,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "HUNTER",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992070,
 							["damage_taken"] = 0.008414,
 							["start_time"] = 1711992049,
 							["delay"] = 0,
-							["last_event"] = 1711992070,
+							["last_dps"] = 34.95830965081589,
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
@@ -8533,31 +8533,30 @@ _detalhes_database = {
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
-							["classe"] = "WARLOCK",
+							["aID"] = "5826-01FF4ABA",
 							["total_without_pet"] = 619.00701,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 708.00701,
+							["colocacao"] = 4,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 708,
 							},
-							["colocacao"] = 4,
-							["aID"] = "5826-01FF4ABA",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Kragus",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[412758] = {
 										["c_amt"] = 0,
@@ -8658,12 +8657,12 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 4,
 										["id"] = 403650,
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["extra"] = {
 										},
+										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -8703,46 +8702,46 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 28.61328039119895,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992070,
 							["damage_taken"] = 474.00701,
 							["start_time"] = 1711992050,
 							["delay"] = 0,
-							["last_event"] = 1711992070,
+							["last_dps"] = 28.61328039119895,
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.001018,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
+							["aID"] = "5826-021E30C3",
 							["total_without_pet"] = 15.001018,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 15.001018,
+							["colocacao"] = 5,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-021E30C3",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Arcanist Doan"] = 15,
 							},
-							["colocacao"] = 5,
-							["aID"] = "5826-021E30C3",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[770] = {
 										["c_amt"] = 0,
@@ -8758,12 +8757,12 @@ _detalhes_database = {
 										["counter"] = 2,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 8,
 										["id"] = 770,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 2,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -8802,32 +8801,32 @@ _detalhes_database = {
 										["r_amt"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0.6062487067570453,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "DRUID",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992068,
 							["damage_taken"] = 0.001018,
 							["start_time"] = 1711992068,
 							["delay"] = 0,
-							["last_event"] = 1711992068,
+							["last_dps"] = 0.6062487067570453,
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001551,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "6487",
 							["total_without_pet"] = 2047.001551,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 2047.001551,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
-							["aID"] = "6487",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Beltai <Kragus>"] = true,
 								["Chengmo"] = true,
@@ -8844,14 +8843,15 @@ _detalhes_database = {
 								["Kragus"] = 474,
 								["Jutarnjedrvo"] = 476,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.001551,
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Arcanist Doan",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -8969,20 +8969,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992069,
 							["damage_taken"] = 13261.001551,
 							["start_time"] = 1711992046,
 							["delay"] = 0,
-							["last_event"] = 1711992069,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.006251,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -8994,7 +8993,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
@@ -9004,11 +9002,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.006251,
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 4,
@@ -9041,20 +9040,20 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992069,
 							["damage_taken"] = 115.006251,
 							["start_time"] = 1711992052,
 							["delay"] = 0,
-							["last_event"] = 1711992069,
+							["last_dps"] = 0,
 						}, -- [7]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.003059,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -9066,7 +9065,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Arcanist Doan"] = true,
 							},
@@ -9076,11 +9074,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.003059,
 							["end_time"] = 1711992070,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[7800] = {
 										["c_amt"] = 0,
@@ -9097,10 +9096,10 @@ _detalhes_database = {
 										["IMMUNE"] = 1,
 										["total"] = 89,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 4,
 										["id"] = 7800,
 										["r_dmg"] = 89,
-										["spellschool"] = 4,
+										["RESIST"] = 2,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -9113,29 +9112,32 @@ _detalhes_database = {
 										["r_amt"] = 4,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711992068,
 							["damage_taken"] = 141.003059,
 							["start_time"] = 1711992061,
 							["delay"] = 1711992056,
-							["last_event"] = 1711992068,
+							["last_dps"] = 0,
 						}, -- [8]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 24,
 					["tipo"] = 3,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-021E30C3",
 							["totalover"] = 2580.003496,
 							["total_without_pet"] = 2058.003496,
 							["total"] = 2058.003496,
@@ -9143,11 +9145,11 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.003496,
 							["last_hps"] = 83.17181926929747,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Beltai <Kragus>"] = 49,
 								["Chengmo"] = 1048,
@@ -9155,15 +9157,11 @@ _detalhes_database = {
 								["Kragus"] = 460,
 								["Jutarnjedrvo"] = 476,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.003496,
-							["healing_from"] = {
-							},
+							["last_event"] = 1711992064,
 							["healing_taken"] = 0.003496,
-							["grupo"] = true,
-							["classe"] = "DRUID",
 							["end_time"] = 1711992070,
+							["start_time"] = 1711992045,
 							["targets_overheal"] = {
 								["Beltai <Kragus>"] = 472,
 								["Chengmo"] = 270,
@@ -9173,10 +9171,8 @@ _detalhes_database = {
 								["Mastourix"] = 524,
 								["Jutarnjedrvo"] = 46,
 							},
-							["start_time"] = 1711992045,
-							["nome"] = "Mastourix",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408124] = {
 										["c_amt"] = 0,
@@ -9299,20 +9295,26 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1711992064,
+							["tipo"] = 2,
 							["totaldenied"] = 0.003496,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Mastourix",
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-02653B9F",
 							["totalover"] = 0.007149,
 							["total_without_pet"] = 0.007149,
 							["total"] = 0.007149,
@@ -9320,43 +9322,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-02653B9F",
 							["totalabsorb"] = 0.007149,
 							["last_hps"] = 0.0003875006775442514,
-							["aID"] = "5826-02653B9F",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.007149,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.007149,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
 							["end_time"] = 1711992070,
+							["start_time"] = 1711992070,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992070,
-							["nome"] = "Pipcek",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "HUNTER",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.007149,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Pipcek",
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-0235A66A",
 							["totalover"] = 0.006646,
 							["total_without_pet"] = 0.006646,
 							["total"] = 0.006646,
@@ -9364,45 +9367,45 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.006646,
 							["last_hps"] = 0.0003602363271729046,
-							["aID"] = "5826-0235A66A",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.006646,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 476.006646,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
 							["end_time"] = 1711992070,
+							["start_time"] = 1711992070,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992070,
-							["nome"] = "Jutarnjedrvo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006646,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Jutarnjedrvo",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-01FF4ABA",
 							["totalover"] = 0.006199,
 							["total_without_pet"] = 0.006199,
 							["total"] = 0.006199,
@@ -9410,44 +9413,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-01FF4ABA",
 							["totalabsorb"] = 0.006199,
 							["last_hps"] = 0.0003360073716739145,
-							["aID"] = "5826-01FF4ABA",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-01FF4ABA",
-							["colocacao"] = 4,
 							["totalover_without_pet"] = 0.006199,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 460.006199,
-							["grupo"] = true,
-							["classe"] = "WARLOCK",
 							["end_time"] = 1711992070,
+							["start_time"] = 1711992070,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992070,
-							["nome"] = "Kragus",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006199,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Kragus",
 						}, -- [4]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-020ECE5B",
 							["totalover"] = 0.001419,
 							["total_without_pet"] = 0.001419,
 							["total"] = 0.001419,
@@ -9455,40 +9458,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 5,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-020ECE5B",
 							["totalabsorb"] = 0.001419,
 							["last_hps"] = 7.691473792632434e-05,
-							["aID"] = "5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-020ECE5B",
-							["colocacao"] = 5,
 							["totalover_without_pet"] = 0.001419,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 1048.001419,
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
 							["end_time"] = 1711992070,
+							["start_time"] = 1711992070,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711992070,
-							["nome"] = "Chengmo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001419,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Chengmo",
 						}, -- [5]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -9501,38 +9503,38 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["totalabsorb"] = 0.006934,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["totalover_without_pet"] = 0.006934,
+							["last_event"] = 0,
+							["healing_taken"] = 49.006934,
+							["end_time"] = 1711992070,
 							["healing_from"] = {
 								["Mastourix"] = true,
-							},
-							["healing_taken"] = 49.006934,
-							["start_time"] = 1711992070,
-							["classe"] = "PET",
-							["end_time"] = 1711992070,
-							["targets_overheal"] = {
 							},
 							["ownerName"] = "Kragus",
 							["nome"] = "Beltai <Kragus>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711992070,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006934,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [6]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -9545,57 +9547,57 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalabsorb"] = 0.006524,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalover_without_pet"] = 0.006524,
+							["last_event"] = 0,
+							["healing_taken"] = 25.006524,
+							["end_time"] = 1711992070,
 							["healing_from"] = {
 								["Mastourix"] = true,
-							},
-							["healing_taken"] = 25.006524,
-							["start_time"] = 1711992070,
-							["classe"] = "PET",
-							["end_time"] = 1711992070,
-							["targets_overheal"] = {
 							},
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711992070,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006524,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [7]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 24,
 					["tipo"] = 7,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.00291,
+							["pets"] = {
+							},
+							["aID"] = "5826-021E30C3",
+							["passiveover"] = 0.00291,
+							["total"] = 220.00291,
+							["serial"] = "Player-5826-021E30C3",
+							["received"] = 220.00291,
 							["targets"] = {
 								["Mastourix"] = 220,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 0.00291,
 							["alternatepower"] = 0.00291,
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[408246] = {
 										["total"] = 220,
@@ -9607,83 +9609,73 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 220.00291,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
-							["last_event"] = 1711992064,
+							["classe"] = "DRUID",
 							["totalover"] = 0.00291,
-							["total"] = 220.00291,
-							["serial"] = "Player-5826-021E30C3",
+							["last_event"] = 1711992064,
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 24,
 					["tipo"] = 9,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["serial"] = "Player-5826-020ECE5B",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[12294] = {
-										["activedamt"] = 0,
-										["id"] = 12294,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 2,
+										["id"] = 12294,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[412609] = {
-										["activedamt"] = 0,
-										["id"] = 412609,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 412609,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARRIOR",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[11549] = {
-										["activedamt"] = 1,
-										["id"] = 11549,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 11549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2457] = {
-										["activedamt"] = 0,
-										["id"] = 2457,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 2457,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -9713,429 +9705,437 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									[436351] = {
-										["activedamt"] = 1,
-										["id"] = 436351,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 436351,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 52,
 							["debuff_uptime"] = 41,
-							["aID"] = "5826-020ECE5B",
-							["nome"] = "Chengmo",
-							["last_event"] = 1711992070,
+							["buff_uptime"] = 52,
 							["tipo"] = 4,
+							["nome"] = "Chengmo",
+							["grupo"] = true,
+							["aID"] = "5826-020ECE5B",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992070,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-020ECE5B",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-01FF4ABA",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[5740] = {
-										["activedamt"] = 0,
-										["id"] = 5740,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["id"] = 5740,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[18867] = {
-										["activedamt"] = 1,
-										["id"] = 18867,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 18867,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[403650] = {
-										["activedamt"] = 0,
-										["id"] = 403650,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 3,
+										["id"] = 403650,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 								"Beltai <Kragus>", -- [1]
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[706] = {
-										["activedamt"] = 1,
-										["id"] = 706,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 706,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[412758] = {
-										["activedamt"] = 2,
-										["id"] = 412758,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 16,
-										["appliedamt"] = 2,
+										["id"] = 412758,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 66,
 							["debuff_uptime"] = 7,
-							["aID"] = "5826-01FF4ABA",
-							["nome"] = "Kragus",
-							["last_event"] = 1711992070,
+							["buff_uptime"] = 66,
 							["tipo"] = 4,
+							["nome"] = "Kragus",
+							["grupo"] = true,
+							["aID"] = "5826-01FF4ABA",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992070,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-01FF4ABA",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[770] = {
-										["activedamt"] = 0,
-										["id"] = 770,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 1,
+										["id"] = 770,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8926] = {
-										["activedamt"] = 0,
-										["id"] = 8926,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 8926,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "DRUID",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[408953] = {
-										["activedamt"] = 1,
-										["id"] = 408953,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 408953,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408120] = {
-										["activedamt"] = 1,
-										["id"] = 408120,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = 408120,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5234] = {
-										["activedamt"] = 1,
-										["id"] = 5234,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 5234,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 82,
 							["debuff_uptime"] = 22,
-							["aID"] = "5826-021E30C3",
-							["nome"] = "Mastourix",
-							["last_event"] = 1711992070,
+							["buff_uptime"] = 82,
 							["tipo"] = 4,
+							["nome"] = "Mastourix",
+							["grupo"] = true,
+							["aID"] = "5826-021E30C3",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992070,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-021E30C3",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-02653B9F",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[14323] = {
-										["activedamt"] = 0,
-										["id"] = 14323,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 1,
+										["id"] = 14323,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409552] = {
-										["activedamt"] = 0,
-										["id"] = 409552,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = 409552,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[14318] = {
-										["activedamt"] = 1,
-										["id"] = 14318,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 14318,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[429959] = {
-										["activedamt"] = 1,
-										["id"] = 429959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 429959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 75,
 							["debuff_uptime"] = 24,
-							["aID"] = "5826-02653B9F",
-							["nome"] = "Pipcek",
-							["last_event"] = 1711992070,
+							["buff_uptime"] = 75,
 							["tipo"] = 4,
+							["nome"] = "Pipcek",
+							["grupo"] = true,
+							["aID"] = "5826-02653B9F",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711992070,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-02653B9F",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime"] = 111,
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "SHAMAN",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
-										["activedamt"] = 1,
-										["id"] = 443320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 443320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[945] = {
-										["activedamt"] = 1,
-										["id"] = 945,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 945,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408501] = {
-										["activedamt"] = 1,
-										["id"] = 408501,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = 408501,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408505] = {
-										["activedamt"] = 2,
-										["id"] = 408505,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 18,
-										["appliedamt"] = 2,
+										["id"] = 408505,
 										["refreshamt"] = 14,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16280] = {
-										["activedamt"] = 2,
-										["id"] = 16280,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = 16280,
 										["refreshamt"] = 2,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8162] = {
-										["activedamt"] = 0,
-										["id"] = 8162,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 8162,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 111,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
 							["last_event"] = 1711992070,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-0235A66A",
+							["nome"] = "Jutarnjedrvo",
 						}, -- [5]
 						{
 							["flag_original"] = 4370,
 							["pets"] = {
 							},
 							["classe"] = "PET",
-							["boss_fight_component"] = true,
-							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 							["ownerName"] = "Kragus",
+							["boss_fight_component"] = true,
 							["nome"] = "Beltai <Kragus>",
 							["last_event"] = 0,
 							["tipo"] = 4,
+							["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+							["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 						}, -- [6]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
 							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "6487",
 							["nome"] = "Arcanist Doan",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
+							["aID"] = "6487",
+							["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
+							["last_event"] = 0,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 24,
 					["tipo"] = 2,
+					["combatId"] = 24,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10147,7 +10147,7 @@ _detalhes_database = {
 					["Jutarnjedrvo"] = "Player-5826-0235A66A",
 				},
 				["CombatStartedAt"] = 270345.201,
-				["tempo_start"] = 1711992045,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -10173,10 +10173,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -10242,8 +10242,8 @@ _detalhes_database = {
 				["enemy"] = "Arcanist Doan",
 				["trinketProcs"] = {
 				},
-				["combat_counter"] = 3641,
 				["TotalElapsedCombatTime"] = 22.69300000002841,
+				["combat_counter"] = 3641,
 				["CombatEndedAt"] = 270278.906,
 				["aura_timeline"] = {
 				},
@@ -10251,7 +10251,8 @@ _detalhes_database = {
 				["end_time"] = 270278.06,
 				["mapId"] = 189,
 				["combat_id"] = 24,
-				["overall_added"] = true,
+				["TimeData"] = {
+				},
 				["resincked"] = true,
 				["boss_hp"] = 1,
 				["EncounterName"] = "Arcanist Doan",
@@ -10285,10 +10286,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -10298,6 +10299,8 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10309,14 +10312,12 @@ _detalhes_database = {
 							["Jutarnjedrvo"] = 0.006646,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
-							["Chengmo"] = 8255.008083,
-							["Pipcek"] = 865.008414,
-							["Mastourix"] = 15.001018,
 							["Kragus"] = 708.00701,
+							["Pipcek"] = 865.008414,
+							["Chengmo"] = 8255.008083,
+							["Mastourix"] = 15.001018,
 							["Jutarnjedrvo"] = 3418.008566,
 						}, -- [1]
 					},
@@ -10324,29 +10325,28 @@ _detalhes_database = {
 				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 270253.316,
-				["TimeData"] = {
-				},
 				["contra"] = "Arcanist Doan",
+				["tempo_start"] = 1711992045,
 			}, -- [5]
 			{
 				{
-					["combatId"] = 6,
 					["tipo"] = 2,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.001525,
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
+							["aID"] = "5826-020ECE5B",
 							["total_without_pet"] = 15147.001525,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 15147.001525,
+							["colocacao"] = 1,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Scarlet Tracking Hound"] = true,
 							},
@@ -10354,16 +10354,15 @@ _detalhes_database = {
 								["Scarlet Tracking Hound"] = 12314,
 								["Houndmaster Loksey"] = 2833,
 							},
-							["colocacao"] = 1,
-							["aID"] = "5826-020ECE5B",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Chengmo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -10578,12 +10577,12 @@ _detalhes_database = {
 										["counter"] = 36,
 										["total"] = 288,
 										["c_max"] = 0,
-										["RESIST"] = 4,
+										["spellschool"] = 8,
 										["id"] = 1075,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 4,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -10623,16 +10622,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 495.032404895775,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991510,
 							["damage_taken"] = 2175.001525,
 							["start_time"] = 1711991482,
 							["delay"] = 0,
-							["last_event"] = 1711991510,
+							["last_dps"] = 495.032404895775,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -10640,15 +10640,15 @@ _detalhes_database = {
 							["pets"] = {
 								"Windfury Totem <Jutarnjedrvo>", -- [1]
 							},
-							["classe"] = "SHAMAN",
+							["aID"] = "5826-0235A66A",
 							["total_without_pet"] = 6168.005167,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 6168.005167,
+							["colocacao"] = 2,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-0235A66A",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Houndmaster Loksey"] = true,
 							},
@@ -10656,16 +10656,15 @@ _detalhes_database = {
 								["Houndmaster Loksey"] = 5814,
 								["Scarlet Tracking Hound"] = 354,
 							},
-							["colocacao"] = 2,
-							["aID"] = "5826-0235A66A",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Jutarnjedrvo",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 6,
@@ -10852,12 +10851,12 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 117,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 8,
 										["id"] = 1075,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 2,
 										["a_dmg"] = 0,
 										["a_amt"] = 0,
 										["c_min"] = 0,
@@ -10868,16 +10867,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 201.5819715994632,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991510,
 							["damage_taken"] = 1586.005167,
 							["start_time"] = 1711991483,
 							["delay"] = 0,
-							["last_event"] = 1711991510,
+							["last_dps"] = 201.5819715994632,
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
@@ -10885,31 +10885,30 @@ _detalhes_database = {
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["aID"] = "5826-02653B9F",
 							["total_without_pet"] = 2968.005834,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 3781.005834,
+							["colocacao"] = 3,
 							["on_hold"] = false,
 							["total_extra"] = 0,
 							["serial"] = "Player-5826-02653B9F",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Scarlet Tracking Hound"] = 1289,
 								["Houndmaster Loksey"] = 2492,
 							},
-							["colocacao"] = 3,
-							["aID"] = "5826-02653B9F",
-							["grupo"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Pipcek",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[14283] = {
 										["c_amt"] = 0,
@@ -11028,32 +11027,32 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 123.5703586508997,
-							["custom"] = 0,
+							["grupo"] = true,
+							["classe"] = "HUNTER",
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991510,
 							["damage_taken"] = 0.005834,
 							["start_time"] = 1711991491,
 							["delay"] = 0,
-							["last_event"] = 1711991510,
+							["last_dps"] = 123.5703586508997,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006589,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "4304",
 							["total_without_pet"] = 2175.006589,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 2175.006589,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28211-4304-00000AE85E",
-							["aID"] = "4304",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Pipcek"] = true,
 								["Chengmo"] = true,
@@ -11062,14 +11061,15 @@ _detalhes_database = {
 							["targets"] = {
 								["Chengmo"] = 2175,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.006589,
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Scarlet Tracking Hound",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -11085,7 +11085,7 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 46,
 										["a_amt"] = 0,
-										["total"] = 2175,
+										["r_amt"] = 0,
 										["c_max"] = 115,
 										["DODGE"] = 7,
 										["id"] = 1,
@@ -11100,35 +11100,34 @@ _detalhes_database = {
 										["c_total"] = 225,
 										["n_amt"] = 34,
 										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["total"] = 2175,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991510,
 							["damage_taken"] = 13957.006589,
 							["start_time"] = 1711991482,
 							["delay"] = 0,
-							["last_event"] = 1711991510,
+							["last_dps"] = 0,
 						}, -- [4]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005483,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["aID"] = "3974",
 							["total_without_pet"] = 1590.005483,
 							["last_dps_realtime"] = 0,
 							["dps_started"] = false,
 							["total"] = 1590.005483,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
-							["aID"] = "3974",
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["damage_from"] = {
 								["Pipcek"] = true,
 								["Kefir <Pipcek>"] = true,
@@ -11139,14 +11138,15 @@ _detalhes_database = {
 								["Windfury Totem <Jutarnjedrvo>"] = 4,
 								["Jutarnjedrvo"] = 1586,
 							},
-							["monster"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.005483,
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Houndmaster Loksey",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -11232,20 +11232,19 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
+							["monster"] = true,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991510,
 							["damage_taken"] = 11139.005483,
 							["start_time"] = 1711991482,
 							["delay"] = 0,
-							["last_event"] = 1711991510,
+							["last_dps"] = 0,
 						}, -- [5]
 						{
 							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.004933,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -11257,7 +11256,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 							},
 							["targets"] = {
@@ -11266,11 +11264,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.004933,
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 3,
@@ -11302,20 +11301,20 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1711991509,
 							["damage_taken"] = 0.004933,
 							["start_time"] = 1711991491,
 							["delay"] = 0,
-							["last_event"] = 1711991509,
+							["last_dps"] = 0,
 						}, -- [6]
 						{
 							["flag_original"] = 8465,
-							["totalabsorbed"] = 0.00518,
 							["pets"] = {
 							},
 							["classe"] = "PET",
@@ -11327,7 +11326,6 @@ _detalhes_database = {
 							["total_extra"] = 0,
 							["serial"] = "Creature-0-5252-189-28211-6112-00000AEA8B",
 							["aID"] = "6112",
-							["boss_fight_component"] = true,
 							["damage_from"] = {
 								["Houndmaster Loksey"] = true,
 							},
@@ -11336,36 +11334,40 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
+							["totalabsorbed"] = 0.00518,
 							["end_time"] = 1711991510,
+							["boss_fight_component"] = true,
 							["ownerName"] = "Jutarnjedrvo",
 							["nome"] = "Windfury Totem <Jutarnjedrvo>",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 0,
 							["damage_taken"] = 4.00518,
 							["start_time"] = 1711991510,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_dps"] = 0,
 						}, -- [7]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 6,
 					["tipo"] = 3,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-021E30C3",
 							["totalover"] = 3209.005946,
 							["total_without_pet"] = 2623.005946,
 							["total"] = 2623.005946,
@@ -11373,24 +11375,20 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-021E30C3",
 							["totalabsorb"] = 0.005946,
 							["last_hps"] = 85.72475148703052,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Chengmo"] = 1657,
 								["Jutarnjedrvo"] = 966,
 							},
-							["serial"] = "Player-5826-021E30C3",
-							["colocacao"] = 1,
 							["totalover_without_pet"] = 0.005946,
-							["healing_from"] = {
-							},
+							["last_event"] = 1711991507,
 							["healing_taken"] = 0.005946,
-							["grupo"] = true,
-							["classe"] = "DRUID",
 							["end_time"] = 1711991510,
+							["start_time"] = 1711991486,
 							["targets_overheal"] = {
 								["Chengmo"] = 216,
 								["Mastourix"] = 1044,
@@ -11398,10 +11396,8 @@ _detalhes_database = {
 								["Pipcek"] = 523,
 								["Jutarnjedrvo"] = 905,
 							},
-							["start_time"] = 1711991486,
-							["nome"] = "Mastourix",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[408124] = {
 										["c_amt"] = 0,
@@ -11520,19 +11516,27 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "DRUID",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1711991507,
+							["tipo"] = 2,
 							["totaldenied"] = 0.005946,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Mastourix",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
+							["healing_from"] = {
+								["Mastourix"] = true,
+								["Jutarnjedrvo"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-0235A66A",
 							["totalover"] = 226.001481,
 							["total_without_pet"] = 357.001481,
 							["total"] = 357.001481,
@@ -11540,32 +11544,24 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 2,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-0235A66A",
 							["totalabsorb"] = 0.001481,
 							["last_hps"] = 11.66747764559846,
-							["aID"] = "5826-0235A66A",
-							["boss_fight_component"] = true,
 							["targets"] = {
 								["Jutarnjedrvo"] = 357,
 							},
-							["serial"] = "Player-5826-0235A66A",
-							["colocacao"] = 2,
 							["totalover_without_pet"] = 0.001481,
-							["healing_from"] = {
-								["Mastourix"] = true,
-								["Jutarnjedrvo"] = true,
-							},
+							["last_event"] = 1711991494,
 							["healing_taken"] = 1323.001481,
-							["grupo"] = true,
-							["classe"] = "SHAMAN",
 							["end_time"] = 1711991510,
+							["start_time"] = 1711991509,
 							["targets_overheal"] = {
 								["Jutarnjedrvo"] = 226,
 							},
-							["start_time"] = 1711991509,
-							["nome"] = "Jutarnjedrvo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[959] = {
 										["c_amt"] = 0,
@@ -11594,19 +11590,26 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "SHAMAN",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1711991494,
+							["tipo"] = 2,
 							["totaldenied"] = 0.001481,
 							["delay"] = 1711991494,
-							["tipo"] = 2,
+							["nome"] = "Jutarnjedrvo",
 						}, -- [2]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Mastourix"] = true,
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-020ECE5B",
 							["totalover"] = 0.002944,
 							["total_without_pet"] = 0.002944,
 							["total"] = 0.002944,
@@ -11614,45 +11617,44 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 3,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-020ECE5B",
 							["totalabsorb"] = 0.002944,
 							["last_hps"] = 0.000113043812157048,
-							["aID"] = "5826-020ECE5B",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-020ECE5B",
-							["colocacao"] = 3,
 							["totalover_without_pet"] = 0.002944,
-							["healing_from"] = {
-								["Mastourix"] = true,
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 1657.002944,
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
 							["end_time"] = 1711991510,
+							["start_time"] = 1711991510,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711991510,
-							["nome"] = "Chengmo",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002944,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Chengmo",
 						}, -- [3]
 						{
 							["flag_original"] = 1298,
+							["healing_from"] = {
+							},
 							["pets"] = {
 								"Kefir <Pipcek>", -- [1]
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "5826-02653B9F",
 							["totalover"] = 0.002121,
 							["total_without_pet"] = 0.002121,
 							["total"] = 0.002121,
@@ -11660,39 +11662,39 @@ _detalhes_database = {
 							},
 							["heal_enemy"] = {
 							},
+							["colocacao"] = 4,
 							["on_hold"] = false,
+							["serial"] = "Player-5826-02653B9F",
 							["totalabsorb"] = 0.002121,
 							["last_hps"] = 8.144223015798193e-05,
-							["aID"] = "5826-02653B9F",
-							["boss_fight_component"] = true,
 							["targets"] = {
 							},
-							["serial"] = "Player-5826-02653B9F",
-							["colocacao"] = 4,
 							["totalover_without_pet"] = 0.002121,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.002121,
-							["grupo"] = true,
-							["classe"] = "HUNTER",
 							["end_time"] = 1711991510,
+							["start_time"] = 1711991510,
 							["targets_overheal"] = {
 							},
-							["start_time"] = 1711991510,
-							["nome"] = "Pipcek",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["grupo"] = true,
+							["classe"] = "HUNTER",
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.002121,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["nome"] = "Pipcek",
 						}, -- [4]
 						{
 							["flag_original"] = 4370,
+							["targets_overheal"] = {
+							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
@@ -11705,56 +11707,56 @@ _detalhes_database = {
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
+							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalabsorb"] = 0.006919,
 							["last_hps"] = 0,
-							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["targets"] = {
 							},
-							["boss_fight_component"] = true,
-							["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+							["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 							["totalover_without_pet"] = 0.006919,
-							["healing_from"] = {
-							},
+							["last_event"] = 0,
 							["healing_taken"] = 0.006919,
-							["start_time"] = 1711991510,
-							["classe"] = "PET",
 							["end_time"] = 1711991510,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["ownerName"] = "Pipcek",
 							["nome"] = "Kefir <Pipcek>",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
+							["start_time"] = 1711991510,
+							["classe"] = "PET",
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 2,
 							["totaldenied"] = 0.006919,
 							["delay"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 						}, -- [5]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 6,
 					["tipo"] = 7,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
 							["resource"] = 0.00853,
+							["pets"] = {
+							},
+							["aID"] = "5826-021E30C3",
+							["passiveover"] = 0.00853,
+							["total"] = 264.00853,
+							["serial"] = "Player-5826-021E30C3",
+							["received"] = 264.00853,
 							["targets"] = {
 								["Mastourix"] = 264,
 							},
-							["pets"] = {
-							},
 							["powertype"] = 0,
-							["classe"] = "DRUID",
-							["passiveover"] = 0.00853,
 							["alternatepower"] = 0.00853,
 							["nome"] = "Mastourix",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[408246] = {
 										["total"] = 264,
@@ -11766,40 +11768,36 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["received"] = 264.00853,
-							["aID"] = "5826-021E30C3",
-							["boss_fight_component"] = true,
-							["last_event"] = 1711991500,
+							["classe"] = "DRUID",
 							["totalover"] = 0.00853,
-							["total"] = 264.00853,
-							["serial"] = "Player-5826-021E30C3",
+							["last_event"] = 1711991500,
+							["boss_fight_component"] = true,
 							["tipo"] = 3,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 6,
 					["tipo"] = 9,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
 							["aID"] = "4287",
 							["boss_debuff"] = true,
+							["damage_spellid"] = 14517,
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 1,
-							["nome"] = "Crusader Strike",
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Chengmo"] = {
 									["uptime"] = 0,
@@ -11810,127 +11808,121 @@ _detalhes_database = {
 									["refreshamt"] = 0,
 								},
 							},
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
 							["damage_twin"] = "Scarlet Gallant",
-							["damage_spellid"] = 14517,
+							["nome"] = "Crusader Strike",
 							["serial"] = "Creature-0-5252-189-28211-4287-00078AE85E",
 							["last_event"] = 1711991482,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
-							["serial"] = "Player-5826-020ECE5B",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[412609] = {
-										["activedamt"] = 0,
-										["id"] = 412609,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 23,
-										["appliedamt"] = 4,
+										["id"] = 412609,
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[12294] = {
-										["activedamt"] = 0,
-										["id"] = 12294,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = 12294,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "WARRIOR",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[402906] = {
-										["activedamt"] = 1,
-										["id"] = 402906,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = 402906,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[11549] = {
-										["activedamt"] = 1,
-										["id"] = 11549,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = 11549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[2457] = {
-										["activedamt"] = 0,
-										["id"] = 2457,
+										["appliedamt"] = 0,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["id"] = 2457,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[12292] = {
-										["activedamt"] = 1,
-										["id"] = 12292,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = 12292,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8516] = {
-										["activedamt"] = 3,
-										["id"] = 8516,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 4,
-										["appliedamt"] = 3,
+										["id"] = 8516,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436351] = {
-										["activedamt"] = 1,
-										["id"] = 436351,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 436351,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[18499] = {
-										["activedamt"] = 1,
-										["id"] = 18499,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = 18499,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -11948,319 +11940,327 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 70,
 							["debuff_uptime"] = 25,
-							["aID"] = "5826-020ECE5B",
-							["nome"] = "Chengmo",
-							["last_event"] = 1711991510,
+							["buff_uptime"] = 70,
 							["tipo"] = 4,
+							["nome"] = "Chengmo",
+							["grupo"] = true,
+							["aID"] = "5826-020ECE5B",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711991510,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-020ECE5B",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-01FF4ABA",
+							["buff_uptime"] = 28,
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "WARLOCK",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 28,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-01FF4ABA",
-							["nome"] = "Kragus",
 							["last_event"] = 1711991510,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-01FF4ABA",
+							["nome"] = "Kragus",
 						}, -- [3]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-021E30C3",
+							["buff_uptime"] = 70,
 							["pets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
 							["classe"] = "DRUID",
-							["boss_fight_component"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408120] = {
-										["activedamt"] = 2,
-										["id"] = 408120,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 14,
-										["appliedamt"] = 2,
+										["id"] = 408120,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[5234] = {
-										["activedamt"] = 1,
-										["id"] = 5234,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 5234,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 70,
+							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["aID"] = "5826-021E30C3",
-							["nome"] = "Mastourix",
 							["last_event"] = 1711991510,
 							["tipo"] = 4,
+							["serial"] = "Player-5826-021E30C3",
+							["nome"] = "Mastourix",
 						}, -- [4]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-02653B9F",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[14323] = {
-										["activedamt"] = 0,
-										["id"] = 14323,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = 14323,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[409552] = {
-										["activedamt"] = 0,
-										["id"] = 409552,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 4,
+										["id"] = 409552,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "HUNTER",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[429959] = {
-										["activedamt"] = 1,
-										["id"] = 429959,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 429959,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 56,
 							["debuff_uptime"] = 27,
-							["aID"] = "5826-02653B9F",
-							["nome"] = "Pipcek",
-							["last_event"] = 1711991510,
+							["buff_uptime"] = 56,
 							["tipo"] = 4,
+							["nome"] = "Pipcek",
+							["grupo"] = true,
+							["aID"] = "5826-02653B9F",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711991510,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-02653B9F",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [5]
 						{
 							["flag_original"] = 1047,
-							["serial"] = "Player-5826-0235A66A",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8053] = {
-										["activedamt"] = 0,
-										["id"] = 8053,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 2,
+										["id"] = 8053,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[20549] = {
-										["activedamt"] = 0,
-										["id"] = 20549,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 3,
+										["id"] = 20549,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-							},
-							["buff_uptime_targets"] = {
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
 							["classe"] = "SHAMAN",
-							["grupo"] = true,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[443320] = {
-										["activedamt"] = 1,
-										["id"] = 443320,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 443320,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[945] = {
-										["activedamt"] = 3,
-										["id"] = 945,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 26,
-										["appliedamt"] = 3,
+										["id"] = 945,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408501] = {
-										["activedamt"] = 2,
-										["id"] = 408501,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 1,
-										["appliedamt"] = 2,
+										["id"] = 408501,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[436412] = {
-										["activedamt"] = 1,
-										["id"] = 436412,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 436412,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[408505] = {
-										["activedamt"] = 3,
-										["id"] = 408505,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 22,
-										["appliedamt"] = 3,
+										["id"] = 408505,
 										["refreshamt"] = 22,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[16280] = {
-										["activedamt"] = 5,
-										["id"] = 16280,
+										["appliedamt"] = 5,
 										["targets"] = {
 										},
+										["activedamt"] = 5,
 										["uptime"] = 13,
-										["appliedamt"] = 5,
+										["id"] = 16280,
 										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									[8162] = {
-										["activedamt"] = 1,
-										["id"] = 8162,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 28,
-										["appliedamt"] = 1,
+										["id"] = 8162,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 146,
 							["debuff_uptime"] = 26,
-							["aID"] = "5826-0235A66A",
-							["nome"] = "Jutarnjedrvo",
-							["last_event"] = 1711991510,
+							["buff_uptime"] = 146,
 							["tipo"] = 4,
+							["nome"] = "Jutarnjedrvo",
+							["grupo"] = true,
+							["aID"] = "5826-0235A66A",
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1711991510,
+							["boss_fight_component"] = true,
+							["serial"] = "Player-5826-0235A66A",
+							["buff_uptime_targets"] = {
+							},
 						}, -- [6]
 						{
 							["flag_original"] = 68168,
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
 							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
 							["monster"] = true,
-							["aID"] = "3974",
 							["nome"] = "Houndmaster Loksey",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
+							["aID"] = "3974",
+							["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
+							["last_event"] = 0,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 6,
 					["tipo"] = 2,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12298,10 +12298,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -12339,9 +12339,9 @@ _detalhes_database = {
 					},
 					["Jutarnjedrvo"] = {
 						["Lightning Shield"] = 2,
-						["Chain Lightning"] = 1,
-						["Healing Wave"] = 1,
 						["Windfury Totem"] = 1,
+						["Healing Wave"] = 1,
+						["Chain Lightning"] = 1,
 						["Lava Lash"] = 5,
 						["War Stomp"] = 1,
 						["Flame Shock"] = 2,
@@ -12369,10 +12369,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -12383,9 +12383,10 @@ _detalhes_database = {
 				["end_time"] = 269718.303,
 				["mapId"] = 189,
 				["combat_id"] = 6,
-				["overall_added"] = true,
+				["TimeData"] = {
+				},
 				["resincked"] = true,
-				["boss_hp"] = 1,
+				["overall_added"] = true,
 				["combat_counter"] = 3622,
 				["frags"] = {
 					["Scarlet Tracking Hound"] = 2,
@@ -12410,6 +12411,8 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -12420,8 +12423,6 @@ _detalhes_database = {
 							["Jutarnjedrvo"] = 357.001481,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Pipcek"] = 3781.005834,
@@ -12430,12 +12431,11 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["boss_hp"] = 1,
+				["start_time"] = 269687.705,
+				["contra"] = "Scarlet Tracking Hound",
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 269687.705,
-				["TimeData"] = {
-				},
-				["contra"] = "Scarlet Tracking Hound",
 			}, -- [6]
 		},
 	},
@@ -12667,6 +12667,10 @@ _detalhes_database = {
 		["evoker_show_realtimedps"] = false,
 		["inverse_deathlog_overalldata"] = false,
 	},
+	["nick_tag_cache"] = {
+		["nextreset"] = 1713286779,
+		["last_version"] = 16,
+	},
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
@@ -12719,7 +12723,10 @@ _detalhes_database = {
 				0.5, -- [4]
 			},
 			["scale"] = 1,
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -12740,22 +12747,6 @@ _detalhes_database = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -12767,21 +12758,32 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
+			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["font_size"] = 10,
-			["author"] = "Details! Team",
-			["main_frame_locked"] = true,
-			["main_frame_size"] = {
-				249.999740600586, -- [1]
-				89.9999694824219, -- [2]
+			["use_spark"] = false,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
 			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["mythic_plus_log"] = {
-	},
-	["force_font_outline"] = "",
+	["last_instance_time"] = 1711992244,
 	["cached_roles"] = {
 		["Player-4465-04243C1F"] = "DAMAGER",
 		["Player-4465-030F80BE"] = "DAMAGER",
@@ -12793,21 +12795,16 @@ _detalhes_database = {
 		["Player-4465-042617A5"] = "TANK",
 		["Player-4465-045F44E8"] = "HEALER",
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["mythic_plus_log"] = {
 	},
+	["force_font_outline"] = "",
 	["combat_counter"] = 3665,
-	["nick_tag_cache"] = {
-		["nextreset"] = 1713286779,
-		["last_version"] = 16,
-	},
-	["last_day"] = "01",
+	["last_day"] = "02",
 	["on_death_menu"] = false,
 	["combat_id"] = 46,
 	["savedStyles"] = {
 		{
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -12825,7 +12822,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -12837,43 +12834,31 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["attribute_text"] = {
-				["enabled"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["show_timer"] = false,
-			},
+			["clickthrough_rows"] = false,
 			["titlebar_texture"] = "xVerminClean",
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -12960,12 +12945,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -13004,14 +12989,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["micro_displays_side"] = 2,
-			["name"] = "vermin",
+			["show_sidebars"] = false,
+			["bg_alpha"] = 0,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["name"] = "vermin",
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -13022,7 +13007,26 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -13034,7 +13038,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -13050,45 +13054,49 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
-			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
 			},
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["switch_healer_in_combat"] = {
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
+			["auto_current"] = true,
+			["bars_sort_direction"] = 1,
+			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bars_grow_direction"] = 1,
-			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["version"] = 3,
+			["hide_in_combat"] = false,
 			["row_info"] = {
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["percent_type"] = 1,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -13100,12 +13108,7 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -13119,6 +13122,8 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -13127,13 +13132,16 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -13141,14 +13149,18 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textL_outline_small"] = true,
-				["textR_outline_small"] = true,
-				["arena_role_icon_size_offset"] = -10,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
 				["icon_grayscale"] = false,
-				["textR_bracket"] = "(",
 				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
 				["texture_custom"] = "",
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -13182,33 +13194,23 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["icon_file"] = "",
+				["arena_role_icon_size_offset"] = -10,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 			},
-			["bg_alpha"] = 0,
-			["hide_in_combat"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["wallpaper"] = {
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -13220,12 +13222,7 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -13255,18 +13252,17 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["totalabsorbed"] = 2830.198129000001,
 					["pets"] = {
 						"Windfury Totem <Jutarnjedrvo>", -- [1]
 						"Grounding Totem <Jutarnjedrvo>", -- [2]
 					},
-					["classe"] = "SHAMAN",
+					["aID"] = "5826-0235A66A",
 					["total_without_pet"] = 216693.1981290001,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 216693.1981290001,
+					["on_hold"] = false,
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
 					["serial"] = "Player-5826-0235A66A",
 					["damage_from"] = {
 						["Scarlet Chaplain"] = true,
@@ -13290,18 +13286,16 @@ _detalhes_database = {
 						["Scarlet Adept"] = 15718,
 						["Scarlet Beastmaster"] = 13048,
 					},
-					["aID"] = "5826-0235A66A",
-					["friendlyfire"] = {
-					},
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["on_hold"] = false,
+					["totalabsorbed"] = 2830.198129000001,
 					["end_time"] = 1711991300,
-					["grupo"] = true,
-					["nome"] = "Jutarnjedrvo",
+					["friendlyfire"] = {
+					},
+					["classe"] = "SHAMAN",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 145,
@@ -13323,9 +13317,9 @@ _detalhes_database = {
 								["IMMUNE"] = 3,
 								["a_amt"] = 4,
 								["n_min"] = 0,
-								["g_dmg"] = 1461,
-								["counter"] = 1129,
 								["MISS"] = 122,
+								["counter"] = 1129,
+								["b_dmg"] = 2721,
 								["total"] = 110540,
 								["c_max"] = 385,
 								["DODGE"] = 35,
@@ -13340,8 +13334,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 31239,
 								["n_amt"] = 780,
-								["b_dmg"] = 2721,
 								["r_amt"] = 0,
+								["g_dmg"] = 1461,
 							}, -- [1]
 							[8042] = {
 								["c_amt"] = 2,
@@ -13432,12 +13426,12 @@ _detalhes_database = {
 								["counter"] = 131,
 								["total"] = 11467,
 								["c_max"] = 0,
-								["RESIST"] = 2,
+								["spellschool"] = 8,
 								["id"] = 26367,
 								["r_dmg"] = 0,
-								["spellschool"] = 8,
 								["extra"] = {
 								},
+								["RESIST"] = 2,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -13506,12 +13500,12 @@ _detalhes_database = {
 								["counter"] = 109,
 								["total"] = 801,
 								["c_max"] = 0,
-								["RESIST"] = 20,
+								["spellschool"] = 8,
 								["id"] = 1075,
 								["r_dmg"] = 0,
-								["spellschool"] = 8,
 								["extra"] = {
 								},
+								["RESIST"] = 20,
 								["a_dmg"] = 9,
 								["a_amt"] = 1,
 								["c_min"] = 0,
@@ -13540,12 +13534,12 @@ _detalhes_database = {
 								["n_total"] = 19147,
 								["IMMUNE"] = 1,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["a_amt"] = 0,
 								["counter"] = 171,
 								["DODGE"] = 2,
 								["total"] = 24725,
 								["c_max"] = 314,
-								["a_amt"] = 0,
+								["b_dmg"] = 494,
 								["id"] = 408507,
 								["r_dmg"] = 0,
 								["spellschool"] = 4,
@@ -13557,8 +13551,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 5578,
 								["n_amt"] = 142,
-								["b_dmg"] = 494,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							},
 							[6041] = {
 								["c_amt"] = 0,
@@ -13610,12 +13604,12 @@ _detalhes_database = {
 								["counter"] = 133,
 								["total"] = 24213,
 								["c_max"] = 242,
-								["RESIST"] = 1,
+								["spellschool"] = 8,
 								["id"] = 421,
 								["r_dmg"] = 0,
-								["spellschool"] = 8,
 								["extra"] = {
 								},
+								["RESIST"] = 1,
 								["a_dmg"] = 222,
 								["a_amt"] = 1,
 								["c_min"] = 0,
@@ -13661,30 +13655,32 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Jutarnjedrvo",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 27859.19812900001,
 					["start_time"] = 1711990152,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.035652,
 					["pets"] = {
 					},
-					["serial"] = "Creature-0-5252-189-28211-4296-00000AE85E",
 					["classe"] = "UNKNOW",
-					["aID"] = "4296",
 					["total_without_pet"] = 2280.035652,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 2280.035652,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-4296-00000AE85E",
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -13697,14 +13693,15 @@ _detalhes_database = {
 						["Chengmo"] = 851,
 						["Jutarnjedrvo"] = 1429,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.035652,
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["aID"] = "4296",
 					["nome"] = "Scarlet Adept",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -13747,7 +13744,6 @@ _detalhes_database = {
 									["Jutarnjedrvo"] = 816,
 								},
 								["n_total"] = 1506,
-								["RESIST"] = 3,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 17,
@@ -13758,6 +13754,7 @@ _detalhes_database = {
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 3,
 								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 17,
@@ -13767,16 +13764,16 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["monster"] = true,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 32139.035652,
 					["start_time"] = 1711991196,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
@@ -13785,12 +13782,13 @@ _detalhes_database = {
 					["aID"] = "4287",
 					["total_without_pet"] = 18165.0967,
 					["last_dps_realtime"] = 0,
+					["dps_started"] = false,
 					["total"] = 18165.0967,
-					["fight_component"] = true,
 					["friendlyfire"] = {
 					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5252-189-28211-4287-00070AE85E",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -13807,18 +13805,15 @@ _detalhes_database = {
 						["Kragus"] = 727,
 						["Jutarnjedrvo"] = 6137,
 					},
-					["totalabsorbed"] = 0.09670000000000001,
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["monster"] = true,
+					["totalabsorbed"] = 0.09670000000000001,
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["monster"] = true,
 					["nome"] = "Scarlet Gallant",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 12,
@@ -13837,12 +13832,12 @@ _detalhes_database = {
 								["n_total"] = 15073,
 								["a_amt"] = 0,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 13,
 								["counter"] = 267,
 								["DODGE"] = 26,
 								["total"] = 16745,
 								["c_max"] = 183,
-								["MISS"] = 13,
+								["b_dmg"] = 56,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -13854,8 +13849,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 1672,
 								["n_amt"] = 210,
-								["b_dmg"] = 56,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							}, -- [1]
 							[14517] = {
 								["DODGE"] = 3,
@@ -13909,37 +13904,38 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
-								["g_dmg"] = 0,
+								["n_amt"] = 0,
 								["total"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 20,
 								["c_total"] = 0,
-								["n_amt"] = 0,
 								["RESIST"] = 8,
+								["g_dmg"] = 0,
 								["id"] = 5589,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 162304.0967,
 					["start_time"] = 1711990929,
 					["delay"] = 0,
-					["tipo"] = 1,
+					["last_dps"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 2592.259293,
 					["pets"] = {
 					},
-					["classe"] = "WARRIOR",
+					["aID"] = "5826-020ECE5B",
 					["total_without_pet"] = 380978.259293,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 380978.259293,
+					["on_hold"] = false,
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
 					["serial"] = "Player-5826-020ECE5B",
 					["damage_from"] = {
 						["Scarlet Chaplain"] = true,
@@ -13963,18 +13959,16 @@ _detalhes_database = {
 						["Scarlet Monk"] = 86416,
 						["Scarlet Beastmaster"] = 22069,
 					},
-					["aID"] = "5826-020ECE5B",
-					["friendlyfire"] = {
-					},
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["on_hold"] = false,
+					["totalabsorbed"] = 2592.259293,
 					["end_time"] = 1711991300,
-					["grupo"] = true,
-					["nome"] = "Chengmo",
+					["friendlyfire"] = {
+					},
+					["classe"] = "WARRIOR",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 83,
@@ -13996,12 +13990,12 @@ _detalhes_database = {
 								["DODGE"] = 4,
 								["IMMUNE"] = 2,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 365,
 								["MISS"] = 1,
+								["counter"] = 365,
+								["r_amt"] = 0,
 								["total"] = 115533,
 								["c_max"] = 798,
-								["a_amt"] = 2,
+								["b_dmg"] = 1759,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -14013,8 +14007,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 43927,
 								["n_amt"] = 268,
-								["b_dmg"] = 1759,
-								["r_amt"] = 0,
+								["a_amt"] = 2,
+								["g_dmg"] = 0,
 							}, -- [1]
 							[8820] = {
 								["c_amt"] = 24,
@@ -14038,7 +14032,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 110,
 								["a_amt"] = 1,
-								["total"] = 39415,
+								["r_amt"] = 0,
 								["c_max"] = 876,
 								["DODGE"] = 2,
 								["id"] = 8820,
@@ -14053,44 +14047,7 @@ _detalhes_database = {
 								["c_total"] = 14955,
 								["n_amt"] = 80,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[12294] = {
-								["c_amt"] = 23,
-								["b_amt"] = 1,
-								["g_amt"] = 0,
-								["n_max"] = 442,
-								["targets"] = {
-									["Scarlet Chaplain"] = 5730,
-									["Scarlet Gallant"] = 7239,
-									["Houndmaster Loksey"] = 837,
-									["Scarlet Diviner"] = 3002,
-									["Arcanist Doan"] = 2195,
-									["Scarlet Tracking Hound"] = 1974,
-									["Scarlet Monk"] = 6618,
-									["Scarlet Adept"] = 1401,
-									["Scarlet Beastmaster"] = 1430,
-								},
-								["n_total"] = 15659,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 73,
-								["total"] = 30426,
-								["c_max"] = 926,
-								["DODGE"] = 2,
-								["id"] = 12294,
-								["r_dmg"] = 0,
-								["spellschool"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 14767,
-								["n_amt"] = 48,
-								["b_dmg"] = 241,
-								["r_amt"] = 0,
+								["total"] = 39415,
 							},
 							[11565] = {
 								["c_amt"] = 0,
@@ -14117,43 +14074,6 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 0,
 								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[1075] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 9,
-								["targets"] = {
-									["Scarlet Chaplain"] = 468,
-									["Scarlet Gallant"] = 1359,
-									["Houndmaster Loksey"] = 63,
-									["Scarlet Diviner"] = 99,
-									["Arcanist Doan"] = 36,
-									["Scarlet Tracking Hound"] = 909,
-									["Scarlet Monk"] = 549,
-									["Scarlet Adept"] = 36,
-									["Scarlet Beastmaster"] = 270,
-								},
-								["n_total"] = 3789,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 519,
-								["total"] = 3789,
-								["c_max"] = 0,
-								["RESIST"] = 98,
-								["id"] = 1075,
-								["r_dmg"] = 0,
-								["spellschool"] = 8,
-								["extra"] = {
-								},
-								["a_dmg"] = 9,
-								["a_amt"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["c_total"] = 0,
-								["n_amt"] = 421,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -14186,37 +14106,40 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[12723] = {
+							[1075] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1117,
+								["n_max"] = 9,
 								["targets"] = {
-									["Scarlet Chaplain"] = 12166,
-									["Scarlet Diviner"] = 5847,
-									["Scarlet Gallant"] = 11823,
-									["Scarlet Tracking Hound"] = 5245,
-									["Scarlet Monk"] = 10935,
-									["Scarlet Adept"] = 1067,
-									["Scarlet Beastmaster"] = 2073,
+									["Scarlet Chaplain"] = 468,
+									["Scarlet Gallant"] = 1359,
+									["Houndmaster Loksey"] = 63,
+									["Scarlet Diviner"] = 99,
+									["Arcanist Doan"] = 36,
+									["Scarlet Tracking Hound"] = 909,
+									["Scarlet Monk"] = 549,
+									["Scarlet Adept"] = 36,
+									["Scarlet Beastmaster"] = 270,
 								},
-								["n_total"] = 49156,
+								["n_total"] = 3789,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 113,
-								["total"] = 49156,
+								["counter"] = 519,
+								["total"] = 3789,
 								["c_max"] = 0,
-								["id"] = 12723,
+								["spellschool"] = 8,
+								["id"] = 1075,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
+								["RESIST"] = 98,
+								["a_dmg"] = 9,
+								["a_amt"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["c_total"] = 0,
-								["n_amt"] = 113,
+								["n_amt"] = 421,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -14255,6 +14178,77 @@ _detalhes_database = {
 								["c_total"] = 0,
 								["n_amt"] = 250,
 								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[12723] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 1117,
+								["targets"] = {
+									["Scarlet Chaplain"] = 12166,
+									["Scarlet Diviner"] = 5847,
+									["Scarlet Gallant"] = 11823,
+									["Scarlet Tracking Hound"] = 5245,
+									["Scarlet Monk"] = 10935,
+									["Scarlet Adept"] = 1067,
+									["Scarlet Beastmaster"] = 2073,
+								},
+								["n_total"] = 49156,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 113,
+								["total"] = 49156,
+								["c_max"] = 0,
+								["id"] = 12723,
+								["r_dmg"] = 0,
+								["spellschool"] = 1,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 0,
+								["n_amt"] = 113,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[12294] = {
+								["c_amt"] = 23,
+								["b_amt"] = 1,
+								["g_amt"] = 0,
+								["n_max"] = 442,
+								["targets"] = {
+									["Scarlet Chaplain"] = 5730,
+									["Scarlet Gallant"] = 7239,
+									["Houndmaster Loksey"] = 837,
+									["Scarlet Diviner"] = 3002,
+									["Arcanist Doan"] = 2195,
+									["Scarlet Tracking Hound"] = 1974,
+									["Scarlet Monk"] = 6618,
+									["Scarlet Adept"] = 1401,
+									["Scarlet Beastmaster"] = 1430,
+								},
+								["n_total"] = 15659,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 73,
+								["total"] = 30426,
+								["c_max"] = 926,
+								["DODGE"] = 2,
+								["id"] = 12294,
+								["r_dmg"] = 0,
+								["spellschool"] = 1,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["c_total"] = 14767,
+								["n_amt"] = 48,
+								["b_dmg"] = 241,
 								["r_amt"] = 0,
 							},
 							[7887] = {
@@ -14374,12 +14368,12 @@ _detalhes_database = {
 								["n_total"] = 32345,
 								["DODGE"] = 1,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 1,
 								["counter"] = 157,
 								["a_amt"] = 3,
 								["total"] = 56029,
 								["c_max"] = 911,
-								["MISS"] = 1,
+								["b_dmg"] = 1358,
 								["id"] = 11608,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -14391,8 +14385,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 23684,
 								["n_amt"] = 113,
-								["b_dmg"] = 1358,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							},
 							[26654] = {
 								["c_amt"] = 7,
@@ -14428,18 +14422,20 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Chengmo",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 51864.25929300001,
 					["start_time"] = 1711990105,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 728.2354410000002,
 					["pets"] = {
 						"Kefir <Pipcek>", -- [1]
 					},
@@ -14448,6 +14444,7 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 101540.235441,
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Player-5826-02653B9F",
 					["damage_from"] = {
@@ -14468,19 +14465,16 @@ _detalhes_database = {
 						["Scarlet Monk"] = 16586,
 						["Scarlet Beastmaster"] = 4968,
 					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "5826-02653B9F",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["boss_fight_component"] = true,
+					["totalabsorbed"] = 728.2354410000002,
 					["end_time"] = 1711991300,
-					["on_hold"] = false,
-					["grupo"] = true,
-					["nome"] = "Pipcek",
+					["aID"] = "5826-02653B9F",
+					["friendlyfire"] = {
+					},
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -14853,28 +14847,31 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Pipcek",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 1228.235441,
 					["start_time"] = 1711990405,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [5]
 				{
 					["flag_original"] = 4370,
-					["totalabsorbed"] = 101.216737,
 					["pets"] = {
 					},
-					["classe"] = "PET",
+					["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 					["total_without_pet"] = 26319.216737,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 26319.216737,
-					["total_extra"] = 0,
 					["on_hold"] = false,
+					["total_extra"] = 0,
 					["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+					["classe"] = "PET",
 					["damage_from"] = {
 						["Scarlet Chaplain"] = true,
 						["Scarlet Diviner"] = true,
@@ -14895,18 +14892,16 @@ _detalhes_database = {
 						["Scarlet Adept"] = 137,
 						["Scarlet Beastmaster"] = 1016,
 					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["boss_fight_component"] = true,
+					["totalabsorbed"] = 101.216737,
 					["end_time"] = 1711991300,
+					["friendlyfire"] = {
+					},
 					["ownerName"] = "Pipcek",
-					["nome"] = "Kefir <Pipcek>",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 136,
@@ -14928,12 +14923,12 @@ _detalhes_database = {
 								["IMMUNE"] = 12,
 								["DODGE"] = 16,
 								["n_min"] = 0,
-								["g_dmg"] = 480,
-								["counter"] = 497,
 								["MISS"] = 19,
+								["counter"] = 497,
+								["r_amt"] = 0,
 								["total"] = 26161,
 								["c_max"] = 133,
-								["a_amt"] = 1,
+								["b_dmg"] = 332,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -14945,8 +14940,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 12445,
 								["n_amt"] = 293,
-								["b_dmg"] = 332,
-								["r_amt"] = 0,
+								["a_amt"] = 1,
+								["g_dmg"] = 480,
 							}, -- [1]
 							[415326] = {
 								["c_amt"] = 2,
@@ -14978,31 +14973,32 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["nome"] = "Kefir <Pipcek>",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 1433.216737,
 					["start_time"] = 1711990588,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
 					["totalabsorbed"] = 0.04659600000000001,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-5252-189-28211-4304-00030AE85E",
-					["total_without_pet"] = 9861.046596,
 					["aID"] = "4304",
+					["total_without_pet"] = 9861.046596,
 					["last_dps_realtime"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 9861.046596,
-					["boss_fight_component"] = true,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-4304-00030AE85E",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -15017,14 +15013,15 @@ _detalhes_database = {
 						["Chengmo"] = 6610,
 						["Jutarnjedrvo"] = 2783,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["fight_component"] = true,
 					["end_time"] = 1711991324,
+					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Tracking Hound",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 6,
@@ -15044,7 +15041,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 205,
 								["MISS"] = 12,
-								["total"] = 9861,
+								["r_amt"] = 0,
 								["c_max"] = 115,
 								["DODGE"] = 23,
 								["id"] = 1,
@@ -15059,35 +15056,34 @@ _detalhes_database = {
 								["c_total"] = 626,
 								["n_amt"] = 160,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 9861,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["dps_started"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 62226.046596,
 					["start_time"] = 1711991100,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.027502,
 					["pets"] = {
 					},
 					["classe"] = "UNKNOW",
 					["total_without_pet"] = 6187.027502,
-					["serial"] = "Creature-0-5252-189-28211-4288-00018AE85E",
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 6187.027502,
-					["aID"] = "4288",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-4288-00018AE85E",
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -15104,14 +15100,15 @@ _detalhes_database = {
 						["Kragus"] = 305,
 						["Jutarnjedrvo"] = 2151,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.027502,
+					["fight_component"] = true,
 					["end_time"] = 1711991324,
+					["aID"] = "4288",
 					["nome"] = "Scarlet Beastmaster",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 3,
@@ -15126,12 +15123,12 @@ _detalhes_database = {
 								["n_total"] = 4487,
 								["a_amt"] = 0,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 4,
 								["counter"] = 74,
 								["DODGE"] = 5,
 								["total"] = 4961,
 								["c_max"] = 166,
-								["MISS"] = 4,
+								["b_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -15143,8 +15140,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 474,
 								["n_amt"] = 57,
-								["b_dmg"] = 0,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							}, -- [1]
 							[6660] = {
 								["c_amt"] = 0,
@@ -15162,11 +15159,11 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 16,
-								["MISS"] = 2,
 								["total"] = 927,
 								["c_max"] = 0,
 								["id"] = 6660,
 								["r_dmg"] = 0,
+								["MISS"] = 2,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -15208,22 +15205,19 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["monster"] = true,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 41145.027502,
 					["start_time"] = 1711991133,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 0.050023,
-					["serial"] = "Player-5826-021E30C3",
-					["aID"] = "5826-021E30C3",
 					["pets"] = {
 					},
 					["classe"] = "DRUID",
@@ -15231,9 +15225,9 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 15.050023,
-					["boss_fight_component"] = true,
 					["on_hold"] = false,
 					["total_extra"] = 0,
+					["serial"] = "Player-5826-021E30C3",
 					["damage_from"] = {
 						["Scarlet Chaplain"] = true,
 						["Scarlet Diviner"] = true,
@@ -15245,14 +15239,15 @@ _detalhes_database = {
 					["targets"] = {
 						["Arcanist Doan"] = 15,
 					},
-					["grupo"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.050023,
 					["end_time"] = 1711991415,
+					["boss_fight_component"] = true,
+					["aID"] = "5826-021E30C3",
 					["nome"] = "Mastourix",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -15325,12 +15320,12 @@ _detalhes_database = {
 								["counter"] = 2,
 								["total"] = 0,
 								["c_max"] = 0,
-								["RESIST"] = 2,
+								["spellschool"] = 8,
 								["id"] = 770,
 								["r_dmg"] = 0,
-								["spellschool"] = 8,
 								["extra"] = {
 								},
+								["RESIST"] = 2,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -15341,32 +15336,33 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
+					["grupo"] = true,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 4035.050023,
 					["start_time"] = 1711991410,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.01277,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "3974",
 					["total_without_pet"] = 2461.01277,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 2461.01277,
-					["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
-					["aID"] = "3974",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Pipcek"] = true,
 						["Kefir <Pipcek>"] = true,
@@ -15378,14 +15374,15 @@ _detalhes_database = {
 						["Chengmo"] = 871,
 						["Jutarnjedrvo"] = 1586,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.01277,
 					["end_time"] = 1711991511,
+					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["nome"] = "Houndmaster Loksey",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 2,
@@ -15403,7 +15400,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 43,
 								["MISS"] = 13,
-								["total"] = 2461,
+								["r_amt"] = 0,
 								["c_max"] = 237,
 								["DODGE"] = 3,
 								["id"] = 1,
@@ -15418,7 +15415,7 @@ _detalhes_database = {
 								["c_total"] = 444,
 								["n_amt"] = 24,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 2461,
 							}, -- [1]
 							[6192] = {
 								["c_amt"] = 0,
@@ -15473,20 +15470,19 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["monster"] = true,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 21724.01277,
 					["start_time"] = 1711991462,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [10]
 				{
 					["flag_original"] = 8465,
-					["totalabsorbed"] = 0.01049,
 					["pets"] = {
 					},
 					["classe"] = "PET",
@@ -15494,11 +15490,10 @@ _detalhes_database = {
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 0.01049,
-					["serial"] = "Creature-0-5252-189-28211-6112-00000AEA8B",
-					["aID"] = "6112",
 					["on_hold"] = false,
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-6112-00000AEA8B",
+					["aID"] = "6112",
 					["damage_from"] = {
 						["Houndmaster Loksey"] = true,
 						["Scarlet Diviner"] = true,
@@ -15508,37 +15503,40 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.01049,
 					["end_time"] = 1711991511,
+					["boss_fight_component"] = true,
 					["ownerName"] = "Jutarnjedrvo",
 					["nome"] = "Windfury Totem <Jutarnjedrvo>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 8.01049,
 					["start_time"] = 1711991508,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["aID"] = "4299",
 					["total_without_pet"] = 13824.087051,
 					["last_dps_realtime"] = 0,
+					["dps_started"] = false,
 					["total"] = 13824.087051,
 					["friendlyfire"] = {
 					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5252-189-28211-4299-00018AE85F",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Kragus"] = true,
@@ -15555,18 +15553,15 @@ _detalhes_database = {
 						["Chengmo"] = 10544,
 						["Jutarnjedrvo"] = 2655,
 					},
-					["totalabsorbed"] = 0.08705100000000002,
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["monster"] = true,
+					["totalabsorbed"] = 0.08705100000000002,
+					["fight_component"] = true,
 					["end_time"] = 1711991586,
+					["monster"] = true,
 					["nome"] = "Scarlet Chaplain",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 11,
@@ -15584,12 +15579,12 @@ _detalhes_database = {
 								["n_total"] = 12279,
 								["a_amt"] = 0,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 14,
 								["counter"] = 221,
 								["DODGE"] = 23,
 								["total"] = 13824,
 								["c_max"] = 170,
-								["MISS"] = 14,
+								["b_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -15601,8 +15596,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 1545,
 								["n_amt"] = 165,
-								["b_dmg"] = 0,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							}, -- [1]
 							[1006] = {
 								["c_amt"] = 0,
@@ -15683,28 +15678,31 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 136358.087051,
 					["start_time"] = 1711991179,
 					["delay"] = 0,
-					["tipo"] = 1,
+					["last_dps"] = 0,
 				}, -- [12]
 				{
 					["flag_original"] = 2632,
-					["fight_component"] = true,
 					["pets"] = {
 					},
 					["aID"] = "4540",
 					["total_without_pet"] = 27646.103418,
 					["last_dps_realtime"] = 0,
+					["dps_started"] = false,
 					["total"] = 27646.103418,
 					["friendlyfire"] = {
 					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5252-189-28211-4540-00018AE85F",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -15721,18 +15719,15 @@ _detalhes_database = {
 						["Chengmo"] = 13911,
 						["Jutarnjedrvo"] = 7346,
 					},
-					["totalabsorbed"] = 0.103418,
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["monster"] = true,
+					["totalabsorbed"] = 0.103418,
+					["fight_component"] = true,
 					["end_time"] = 1711991679,
+					["monster"] = true,
 					["nome"] = "Scarlet Monk",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 10,
@@ -15753,7 +15748,7 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 292,
 								["MISS"] = 17,
-								["total"] = 27054,
+								["r_amt"] = 0,
 								["c_max"] = 250,
 								["DODGE"] = 41,
 								["id"] = 1,
@@ -15768,7 +15763,7 @@ _detalhes_database = {
 								["c_total"] = 2182,
 								["n_amt"] = 215,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 27054,
 							}, -- [1]
 							[11978] = {
 								["c_amt"] = 0,
@@ -15831,14 +15826,16 @@ _detalhes_database = {
 								["id"] = 3391,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 162450.103418,
 					["start_time"] = 1711991295,
 					["delay"] = 0,
-					["tipo"] = 1,
+					["last_dps"] = 0,
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
@@ -15847,12 +15844,13 @@ _detalhes_database = {
 					["aID"] = "4291",
 					["total_without_pet"] = 9652.073643000002,
 					["last_dps_realtime"] = 0,
+					["dps_started"] = false,
 					["total"] = 9652.073643000002,
-					["fight_component"] = true,
 					["friendlyfire"] = {
 					},
 					["total_extra"] = 0,
 					["serial"] = "Creature-0-5252-189-28211-4291-00038AE85E",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Kragus"] = true,
@@ -15872,18 +15870,15 @@ _detalhes_database = {
 						["Grounding Totem <Jutarnjedrvo>"] = 8,
 						["Pipcek"] = 801,
 					},
-					["totalabsorbed"] = 0.073643,
-					["classe"] = "UNKNOW",
-					["dps_started"] = false,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["monster"] = true,
+					["totalabsorbed"] = 0.073643,
+					["fight_component"] = true,
 					["end_time"] = 1711991679,
+					["monster"] = true,
 					["nome"] = "Scarlet Diviner",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 1,
@@ -15898,12 +15893,12 @@ _detalhes_database = {
 								["n_total"] = 1772,
 								["a_amt"] = 0,
 								["n_min"] = 0,
-								["g_dmg"] = 0,
+								["MISS"] = 4,
 								["counter"] = 50,
 								["DODGE"] = 3,
 								["total"] = 1844,
 								["c_max"] = 72,
-								["MISS"] = 4,
+								["b_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["spellschool"] = 1,
@@ -15915,8 +15910,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["c_total"] = 72,
 								["n_amt"] = 40,
-								["b_dmg"] = 0,
 								["r_amt"] = 0,
+								["g_dmg"] = 0,
 							}, -- [1]
 							[9053] = {
 								["c_amt"] = 0,
@@ -15943,13 +15938,13 @@ _detalhes_database = {
 								["r_dmg"] = 497,
 								["g_amt"] = 0,
 								["n_max"] = 199,
-								["g_dmg"] = 0,
+								["n_amt"] = 34,
 								["total"] = 4566,
 								["c_min"] = 0,
 								["successful_casted"] = 40,
 								["c_total"] = 0,
-								["n_amt"] = 34,
 								["RESIST"] = 6,
+								["g_dmg"] = 0,
 								["id"] = 9053,
 							},
 							[8131] = {
@@ -15984,29 +15979,29 @@ _detalhes_database = {
 								["id"] = 8131,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["on_hold"] = false,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 101686.073643,
 					["start_time"] = 1711991419,
 					["delay"] = 0,
-					["tipo"] = 1,
+					["last_dps"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 8465,
-					["totalabsorbed"] = 0.005425,
 					["pets"] = {
 					},
-					["classe"] = "PET",
+					["aID"] = "5925",
 					["total_without_pet"] = 0.005425,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 0.005425,
-					["serial"] = "Creature-0-5252-189-28211-5925-00000AEB5F",
-					["aID"] = "5925",
 					["on_hold"] = false,
 					["total_extra"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-5925-00000AEB5F",
 					["damage_from"] = {
 						["Scarlet Diviner"] = true,
 					},
@@ -16015,36 +16010,39 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["classe"] = "PET",
 					["end_time"] = 1711991679,
+					["totalabsorbed"] = 0.005425,
 					["ownerName"] = "Jutarnjedrvo",
 					["nome"] = "Grounding Totem <Jutarnjedrvo>",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 2,
 					},
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 8.005424999999999,
 					["start_time"] = 1711991676,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 0.16682,
 					["pets"] = {
 						"Beltai <Kragus>", -- [1]
 					},
-					["classe"] = "WARLOCK",
+					["aID"] = "5826-01FF4ABA",
 					["total_without_pet"] = 40023.16681999999,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 47248.16681999998,
+					["on_hold"] = false,
 					["total_extra"] = 0,
+					["serial"] = "Player-5826-01FF4ABA",
 					["damage_from"] = {
 						["Scarlet Chaplain"] = true,
 						["Scarlet Diviner"] = true,
@@ -16063,20 +16061,16 @@ _detalhes_database = {
 						["Scarlet Adept"] = 1502,
 						["Scarlet Beastmaster"] = 1060,
 					},
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
-					["aID"] = "5826-01FF4ABA",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["serial"] = "Player-5826-01FF4ABA",
+					["totalabsorbed"] = 0.16682,
 					["end_time"] = 1711991679,
+					["classe"] = "WARLOCK",
+					["friendlyfire"] = {
+					},
 					["boss_fight_component"] = true,
-					["grupo"] = true,
-					["nome"] = "Kragus",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -16127,13 +16121,13 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 28,
-								["RESIST"] = 27,
+								["IMMUNE"] = 1,
 								["total"] = 0,
 								["c_max"] = 0,
-								["IMMUNE"] = 1,
+								["spellschool"] = 1,
 								["id"] = 2,
 								["r_dmg"] = 0,
-								["spellschool"] = 1,
+								["RESIST"] = 27,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -16166,12 +16160,12 @@ _detalhes_database = {
 								["counter"] = 54,
 								["total"] = 14896,
 								["c_max"] = 636,
-								["RESIST"] = 10,
+								["spellschool"] = 4,
 								["id"] = 412758,
 								["r_dmg"] = 0,
-								["spellschool"] = 4,
 								["extra"] = {
 								},
+								["RESIST"] = 10,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -16199,12 +16193,12 @@ _detalhes_database = {
 								["counter"] = 19,
 								["total"] = 2789,
 								["c_max"] = 0,
-								["RESIST"] = 3,
+								["spellschool"] = 32,
 								["id"] = 18867,
 								["r_dmg"] = 0,
-								["spellschool"] = 32,
 								["extra"] = {
 								},
+								["RESIST"] = 3,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -16232,12 +16226,12 @@ _detalhes_database = {
 								["counter"] = 10,
 								["total"] = 0,
 								["c_max"] = 0,
-								["RESIST"] = 10,
+								["spellschool"] = 4,
 								["id"] = 403650,
 								["r_dmg"] = 0,
-								["spellschool"] = 4,
 								["extra"] = {
 								},
+								["RESIST"] = 10,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -16262,12 +16256,12 @@ _detalhes_database = {
 								["counter"] = 4,
 								["total"] = 27,
 								["c_max"] = 0,
-								["RESIST"] = 1,
+								["spellschool"] = 8,
 								["id"] = 1075,
 								["r_dmg"] = 0,
-								["spellschool"] = 8,
 								["extra"] = {
 								},
+								["RESIST"] = 1,
 								["a_dmg"] = 0,
 								["a_amt"] = 0,
 								["c_min"] = 0,
@@ -16355,10 +16349,10 @@ _detalhes_database = {
 								["IMMUNE"] = 1,
 								["total"] = 14638,
 								["c_max"] = 741,
-								["RESIST"] = 3,
+								["spellschool"] = 4,
 								["id"] = 403629,
 								["r_dmg"] = 539,
-								["spellschool"] = 4,
+								["RESIST"] = 3,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -16434,14 +16428,17 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["grupo"] = true,
 					["tipo"] = 1,
+					["nome"] = "Kragus",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 7621.166820000001,
 					["start_time"] = 1711991005,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 4370,
@@ -16450,12 +16447,13 @@ _detalhes_database = {
 					["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 					["total_without_pet"] = 7225.083868000001,
 					["last_dps_realtime"] = 0,
+					["dps_started"] = false,
 					["total"] = 7225.083868000001,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["total_extra"] = 0,
 					["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
-					["totalabsorbed"] = 220.083868,
+					["friendlyfire"] = {
+					},
 					["damage_from"] = {
 						["Scarlet Diviner"] = true,
 						["Scarlet Monk"] = true,
@@ -16471,18 +16469,15 @@ _detalhes_database = {
 						["Scarlet Adept"] = 306,
 						["Scarlet Beastmaster"] = 197,
 					},
-					["classe"] = "PET",
-					["dps_started"] = false,
-					["boss_fight_component"] = true,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 220.083868,
 					["end_time"] = 1711991956,
+					["classe"] = "PET",
 					["ownerName"] = "Kragus",
-					["nome"] = "Beltai <Kragus>",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[7800] = {
 								["c_amt"] = 3,
@@ -16506,10 +16501,10 @@ _detalhes_database = {
 								["IMMUNE"] = 1,
 								["total"] = 7225,
 								["c_max"] = 100,
-								["RESIST"] = 19,
+								["spellschool"] = 4,
 								["id"] = 7800,
 								["r_dmg"] = 880,
-								["spellschool"] = 4,
+								["RESIST"] = 19,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -16522,30 +16517,31 @@ _detalhes_database = {
 								["r_amt"] = 23,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["nome"] = "Beltai <Kragus>",
+					["custom"] = 0,
+					["tipo"] = 1,
 					["damage_taken"] = 1322.083868,
 					["start_time"] = 1711991690,
 					["delay"] = 0,
-					["tipo"] = 1,
+					["last_dps"] = 0,
 				}, -- [17]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.017524,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["aID"] = "6487",
 					["total_without_pet"] = 5302.017524,
 					["last_dps_realtime"] = 0,
 					["dps_started"] = false,
 					["total"] = 5302.017524,
-					["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
-					["aID"] = "6487",
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total_extra"] = 0,
-					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
+					["classe"] = "UNKNOW",
 					["damage_from"] = {
 						["Beltai <Kragus>"] = true,
 						["Chengmo"] = true,
@@ -16563,14 +16559,15 @@ _detalhes_database = {
 						["Chengmo"] = 2073,
 						["Jutarnjedrvo"] = 1202,
 					},
-					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
+					["totalabsorbed"] = 0.017524,
 					["end_time"] = 1711992070,
+					["boss_fight_component"] = true,
+					["on_hold"] = false,
 					["nome"] = "Arcanist Doan",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -16717,16 +16714,16 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["custom"] = 0,
+					["monster"] = true,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 26442.017524,
 					["start_time"] = 1711992022,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["last_dps"] = 0,
 				}, -- [18]
 			},
 		}, -- [1]
@@ -16735,26 +16732,24 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 86647.21428099998,
-					["total_without_pet"] = 77036.21428099998,
-					["total"] = 77036.21428099998,
-					["aID"] = "5826-021E30C3",
-					["targets_absorbs"] = {
-					},
 					["healing_from"] = {
 						["Mastourix"] = true,
 					},
-					["boss_fight_component"] = true,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "DRUID",
+					["totalover"] = 86647.21428099998,
+					["total_without_pet"] = 77036.21428099998,
+					["total"] = 77036.21428099998,
+					["targets_absorbs"] = {
+					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
+					["serial"] = "Player-5826-021E30C3",
 					["totalabsorb"] = 0.214281,
 					["last_hps"] = 0,
-					["fight_component"] = true,
 					["targets"] = {
 						["Beltai <Kragus>"] = 1271,
 						["Chengmo"] = 40725,
@@ -16764,12 +16759,12 @@ _detalhes_database = {
 						["Kragus"] = 10657,
 						["Jutarnjedrvo"] = 18406,
 					},
-					["serial"] = "Player-5826-021E30C3",
+					["nome"] = "Mastourix",
 					["totalover_without_pet"] = 0.214281,
 					["healing_taken"] = 4083.214281,
-					["grupo"] = true,
-					["classe"] = "DRUID",
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["start_time"] = 1711990384,
 					["targets_overheal"] = {
 						["Beltai <Kragus>"] = 7903,
 						["Chengmo"] = 3134,
@@ -16779,10 +16774,8 @@ _detalhes_database = {
 						["Pipcek"] = 17768,
 						["Jutarnjedrvo"] = 12735,
 					},
-					["start_time"] = 1711990384,
-					["nome"] = "Mastourix",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[2091] = {
 								["c_amt"] = 0,
@@ -16995,55 +16988,55 @@ _detalhes_database = {
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["heal_enemy_amt"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.214281,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["aID"] = "5826-021E30C3",
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 3927.169305,
-					["total_without_pet"] = 9674.169305,
-					["total"] = 9674.169305,
-					["aID"] = "5826-0235A66A",
-					["targets_absorbs"] = {
-					},
 					["healing_from"] = {
 						["Mastourix"] = true,
 						["Jutarnjedrvo"] = true,
 					},
-					["boss_fight_component"] = true,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "SHAMAN",
+					["totalover"] = 3927.169305,
+					["total_without_pet"] = 9674.169305,
+					["total"] = 9674.169305,
+					["targets_absorbs"] = {
+					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
+					["serial"] = "Player-5826-0235A66A",
 					["totalabsorb"] = 0.1693050000000001,
 					["last_hps"] = 0,
-					["fight_component"] = true,
 					["targets"] = {
 						["Chengmo"] = 1826,
 						["Jutarnjedrvo"] = 7848,
 					},
-					["serial"] = "Player-5826-0235A66A",
+					["nome"] = "Jutarnjedrvo",
 					["totalover_without_pet"] = 0.1693050000000001,
 					["healing_taken"] = 26254.16930500001,
-					["grupo"] = true,
-					["classe"] = "SHAMAN",
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["start_time"] = 1711991241,
 					["targets_overheal"] = {
 						["Mastourix"] = 345,
 						["Chengmo"] = 12,
 						["Jutarnjedrvo"] = 3570,
 					},
-					["start_time"] = 1711991241,
-					["nome"] = "Jutarnjedrvo",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[959] = {
 								["c_amt"] = 1,
@@ -17101,58 +17094,62 @@ _detalhes_database = {
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["heal_enemy_amt"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.1693050000000001,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["aID"] = "5826-0235A66A",
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["aID"] = "5826-02653B9F",
+					["healing_from"] = {
+						["Mastourix"] = true,
+					},
 					["pets"] = {
 						"Kefir <Pipcek>", -- [1]
 					},
 					["iniciar_hps"] = false,
-					["healing_from"] = {
-						["Mastourix"] = true,
-					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "HUNTER",
 					["totalover"] = 0.141815,
 					["total_without_pet"] = 0.141815,
-					["fight_component"] = true,
 					["total"] = 0.141815,
-					["boss_fight_component"] = true,
 					["targets_absorbs"] = {
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
+					["serial"] = "Player-5826-02653B9F",
 					["totalabsorb"] = 0.141815,
 					["last_hps"] = 0,
 					["targets"] = {
 					},
-					["serial"] = "Player-5826-02653B9F",
+					["nome"] = "Pipcek",
 					["totalover_without_pet"] = 0.141815,
 					["healing_taken"] = 947.1418149999998,
-					["grupo"] = true,
-					["classe"] = "HUNTER",
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["start_time"] = 1711991297,
 					["targets_overheal"] = {
 					},
-					["start_time"] = 1711991297,
-					["nome"] = "Pipcek",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["aID"] = "5826-02653B9F",
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.141815,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["heal_enemy_amt"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 4370,
@@ -17168,86 +17165,85 @@ _detalhes_database = {
 					["total"] = 0.144027,
 					["targets_absorbs"] = {
 					},
-					["boss_fight_component"] = true,
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
+					["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 					["totalabsorb"] = 0.144027,
 					["last_hps"] = 0,
 					["targets_overheal"] = {
 					},
 					["targets"] = {
 					},
-					["classe"] = "PET",
+					["boss_fight_component"] = true,
 					["totalover_without_pet"] = 0.144027,
-					["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 					["healing_taken"] = 947.1440270000002,
 					["fight_component"] = true,
-					["heal_enemy_amt"] = 0,
 					["end_time"] = 1711991300,
 					["start_time"] = 1711991297,
 					["ownerName"] = "Pipcek",
 					["nome"] = "Kefir <Pipcek>",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["heal_enemy_amt"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.144027,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["classe"] = "PET",
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.21391,
-					["total_without_pet"] = 0.21391,
-					["total"] = 0.21391,
-					["aID"] = "5826-020ECE5B",
-					["targets_absorbs"] = {
-					},
 					["healing_from"] = {
 						["Mastourix"] = true,
 						["Jutarnjedrvo"] = true,
 					},
-					["boss_fight_component"] = true,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "WARRIOR",
+					["totalover"] = 0.21391,
+					["total_without_pet"] = 0.21391,
+					["total"] = 0.21391,
+					["targets_absorbs"] = {
+					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
+					["serial"] = "Player-5826-020ECE5B",
 					["totalabsorb"] = 0.21391,
 					["last_hps"] = 0,
-					["fight_component"] = true,
 					["targets"] = {
 					},
-					["serial"] = "Player-5826-020ECE5B",
+					["nome"] = "Chengmo",
 					["totalover_without_pet"] = 0.21391,
 					["healing_taken"] = 42551.21390999999,
-					["grupo"] = true,
-					["classe"] = "WARRIOR",
+					["fight_component"] = true,
 					["end_time"] = 1711991300,
+					["start_time"] = 1711991297,
 					["targets_overheal"] = {
 					},
-					["start_time"] = 1711991297,
-					["nome"] = "Chengmo",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["heal_enemy_amt"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.21391,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["aID"] = "5826-020ECE5B",
 				}, -- [5]
 				{
 					["flag_original"] = 1298,
-					["aID"] = "5826-01FF4ABA",
 					["healing_from"] = {
 						["Mastourix"] = true,
 						["Kragus"] = true,
@@ -17256,8 +17252,7 @@ _detalhes_database = {
 						"Beltai <Kragus>", -- [1]
 					},
 					["iniciar_hps"] = false,
-					["boss_fight_component"] = true,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "WARLOCK",
 					["totalover"] = 0.142861,
 					["total_without_pet"] = 304.142861,
 					["total"] = 304.142861,
@@ -17266,24 +17261,22 @@ _detalhes_database = {
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
-					["fight_component"] = true,
+					["serial"] = "Player-5826-01FF4ABA",
 					["totalabsorb"] = 0.142861,
 					["last_hps"] = 0,
 					["targets"] = {
 						["Kragus"] = 304,
 					},
-					["serial"] = "Player-5826-01FF4ABA",
+					["nome"] = "Kragus",
 					["totalover_without_pet"] = 0.142861,
 					["healing_taken"] = 10961.142861,
-					["grupo"] = true,
-					["classe"] = "WARLOCK",
+					["fight_component"] = true,
 					["end_time"] = 1711991679,
+					["start_time"] = 1711991675,
 					["targets_overheal"] = {
 					},
-					["start_time"] = 1711991675,
-					["nome"] = "Kragus",
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 							[441] = {
 								["c_amt"] = 0,
@@ -17311,12 +17304,16 @@ _detalhes_database = {
 								["absorbed"] = 0,
 							},
 						},
+						["tipo"] = 3,
 					},
-					["custom"] = 0,
+					["grupo"] = true,
+					["aID"] = "5826-01FF4ABA",
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.142861,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["heal_enemy_amt"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 4370,
@@ -17325,7 +17322,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "PET",
+					["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 					["totalover"] = 0.06913299999999999,
 					["total_without_pet"] = 0.06913299999999999,
 					["total"] = 0.06913299999999999,
@@ -17333,35 +17330,35 @@ _detalhes_database = {
 					},
 					["heal_enemy"] = {
 					},
+					["on_hold"] = false,
 					["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
+					["totalabsorb"] = 0.06913299999999999,
+					["last_hps"] = 0,
 					["healing_from"] = {
 						["Mastourix"] = true,
 					},
-					["totalabsorb"] = 0.06913299999999999,
-					["last_hps"] = 0,
-					["fight_component"] = true,
 					["targets"] = {
 					},
-					["heal_enemy_amt"] = 0,
-					["boss_fight_component"] = true,
+					["classe"] = "PET",
 					["totalover_without_pet"] = 0.06913299999999999,
-					["on_hold"] = false,
 					["healing_taken"] = 1271.069133,
-					["start_time"] = 1711991953,
+					["fight_component"] = true,
 					["end_time"] = 1711991956,
+					["start_time"] = 1711991953,
 					["ownerName"] = "Kragus",
 					["nome"] = "Beltai <Kragus>",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
-					["custom"] = 0,
+					["heal_enemy_amt"] = 0,
 					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["totaldenied"] = 0.06913299999999999,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["boss_fight_component"] = true,
 				}, -- [7]
 			},
 		}, -- [2]
@@ -17370,7 +17367,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.174811,
+					["resource"] = 0.209491,
 					["pets"] = {
 					},
 					["aID"] = "5826-021E30C3",
@@ -17379,61 +17376,58 @@ _detalhes_database = {
 					["serial"] = "Player-5826-021E30C3",
 					["received"] = 10490.174811,
 					["targets"] = {
-						["Mastourix"] = 5856,
+						["Mastourix"] = 0,
 					},
 					["powertype"] = 0,
-					["fight_component"] = true,
 					["alternatepower"] = 0.174811,
-					["classe"] = "DRUID",
-					["totalover"] = 0.005876,
+					["fight_component"] = true,
 					["nome"] = "Mastourix",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[408246] = {
 								["total"] = 5856,
 								["id"] = 408246,
 								["totalover"] = 0,
 								["targets"] = {
-									["Mastourix"] = 5856,
+									["Mastourix"] = 0,
 								},
 								["counter"] = 70,
 							},
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["boss_fight_component"] = true,
+					["classe"] = "DRUID",
+					["totalover"] = 0.005876,
 					["tipo"] = 3,
+					["boss_fight_component"] = true,
 					["last_event"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
-					["resource"] = 0.124882,
+					["resource"] = 0.144344,
 					["pets"] = {
 					},
 					["aID"] = "5826-020ECE5B",
 					["passiveover"] = 0.001898,
 					["total"] = 519.0248820953675,
-					["boss_fight_component"] = true,
 					["serial"] = "Player-5826-020ECE5B",
 					["received"] = 519.0248820953675,
 					["targets"] = {
-						["Chengmo"] = 518.9000000953674,
+						["Chengmo"] = 0,
 					},
 					["powertype"] = 1,
-					["fight_component"] = true,
 					["alternatepower"] = 0.124882,
-					["classe"] = "WARRIOR",
-					["nome"] = "Chengmo",
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[6178] = {
 								["total"] = 36,
 								["id"] = 6178,
 								["totalover"] = 0,
 								["targets"] = {
-									["Chengmo"] = 36,
+									["Chengmo"] = 0,
 								},
 								["counter"] = 3,
 							},
@@ -17442,7 +17436,7 @@ _detalhes_database = {
 								["id"] = 2687,
 								["totalover"] = 0,
 								["targets"] = {
-									["Chengmo"] = 242.9000000953674,
+									["Chengmo"] = 0,
 								},
 								["counter"] = 25,
 							},
@@ -17451,20 +17445,23 @@ _detalhes_database = {
 								["id"] = 29131,
 								["totalover"] = 0,
 								["targets"] = {
-									["Chengmo"] = 240,
+									["Chengmo"] = 0,
 								},
 								["counter"] = 240,
 							},
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
+					["classe"] = "WARRIOR",
 					["totalover"] = 0.001898,
 					["tipo"] = 3,
+					["nome"] = "Chengmo",
 					["last_event"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 1297,
-					["resource"] = 0.119248,
+					["resource"] = 0.127702,
 					["pets"] = {
 					},
 					["aID"] = "5826-0235A66A",
@@ -17476,15 +17473,12 @@ _detalhes_database = {
 						["Pipcek"] = 4166,
 						["Mastourix"] = 4634,
 						["Kragus"] = 2837,
-						["Jutarnjedrvo"] = 22851,
+						["Jutarnjedrvo"] = 0,
 					},
 					["powertype"] = 0,
-					["fight_component"] = true,
 					["alternatepower"] = 0.119248,
-					["classe"] = "SHAMAN",
 					["nome"] = "Jutarnjedrvo",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[433255] = {
 								["total"] = 11637,
@@ -17502,16 +17496,19 @@ _detalhes_database = {
 								["id"] = 425336,
 								["totalover"] = 0,
 								["targets"] = {
-									["Jutarnjedrvo"] = 22851,
+									["Jutarnjedrvo"] = 0,
 								},
 								["counter"] = 241,
 							},
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
+					["classe"] = "SHAMAN",
 					["totalover"] = 0.003177,
 					["tipo"] = 3,
 					["last_event"] = 0,
+					["fight_component"] = true,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
@@ -17521,24 +17518,24 @@ _detalhes_database = {
 					["aID"] = "5826-02653B9F",
 					["passiveover"] = 0.00626,
 					["total"] = 0.09032500000000002,
+					["serial"] = "Player-5826-02653B9F",
 					["received"] = 4166.090325,
 					["targets"] = {
 					},
 					["powertype"] = 0,
 					["alternatepower"] = 0.09032500000000002,
-					["fight_component"] = true,
 					["nome"] = "Pipcek",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 7,
 					},
-					["totalover"] = 0.00626,
-					["classe"] = "HUNTER",
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-5826-02653B9F",
+					["classe"] = "HUNTER",
+					["totalover"] = 0.00626,
 					["tipo"] = 3,
+					["last_event"] = 0,
+					["fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -17548,16 +17545,15 @@ _detalhes_database = {
 					["classe"] = "WARLOCK",
 					["totalover"] = 0.003133,
 					["total"] = 3917.072978000001,
+					["serial"] = "Player-5826-01FF4ABA",
 					["received"] = 6754.072978000001,
 					["targets"] = {
 						["Kragus"] = 3917,
 					},
 					["powertype"] = 0,
 					["alternatepower"] = 0.072978,
-					["fight_component"] = true,
 					["nome"] = "Kragus",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[31818] = {
 								["total"] = 3917,
@@ -17569,13 +17565,14 @@ _detalhes_database = {
 								["counter"] = 18,
 							},
 						},
+						["tipo"] = 7,
 					},
-					["passiveover"] = 0.003133,
-					["aID"] = "5826-01FF4ABA",
-					["last_event"] = 0,
 					["grupo"] = true,
-					["serial"] = "Player-5826-01FF4ABA",
+					["aID"] = "5826-01FF4ABA",
+					["passiveover"] = 0.003133,
 					["tipo"] = 3,
+					["last_event"] = 0,
+					["fight_component"] = true,
 				}, -- [5]
 			},
 		}, -- [3]
@@ -17585,7 +17582,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[20549] = {
 								["refreshamt"] = 0,
@@ -17619,13 +17615,13 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["dispell"] = 4.013761000000001,
 					["pets"] = {
 					},
-					["classe"] = "SHAMAN",
+					["aID"] = "5826-0235A66A",
 					["interrupt_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[8042] = {
 								["id"] = 8042,
@@ -17640,9 +17636,9 @@ _detalhes_database = {
 								["counter"] = 29,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[443320] = {
 								["refreshamt"] = 0,
@@ -17727,6 +17723,7 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
 						[0] = 29,
@@ -17739,33 +17736,15 @@ _detalhes_database = {
 						["Scarlet Adept"] = 9,
 						["Scarlet Diviner"] = 16,
 					},
+					["serial"] = "Player-5826-0235A66A",
 					["ress_targets"] = {
 						["Mastourix"] = 1,
 					},
-					["interrupt"] = 29.089285,
 					["buff_uptime"] = 6382,
-					["ress_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[20610] = {
-								["id"] = 20610,
-								["ress"] = 1,
-								["targets"] = {
-									["Mastourix"] = 1,
-								},
-								["counter"] = 0,
-							},
-						},
-					},
-					["boss_fight_component"] = true,
-					["dispell_targets"] = {
-						["Scarlet Chaplain"] = 4,
-					},
 					["dispell_oque"] = {
 						[0] = 4,
 					},
 					["dispell_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[8012] = {
 								["dispell"] = 4,
@@ -17779,22 +17758,39 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
+					["classe"] = "SHAMAN",
 					["fight_component"] = true,
 					["ress"] = 1.008939,
-					["tipo"] = 4,
 					["nome"] = "Jutarnjedrvo",
+					["grupo"] = true,
+					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
-					["grupo"] = true,
+					["ress_spells"] = {
+						["_ActorTable"] = {
+							[20610] = {
+								["id"] = 20610,
+								["ress"] = 1,
+								["targets"] = {
+									["Mastourix"] = 1,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
 					["last_event"] = 0,
-					["aID"] = "5826-0235A66A",
-					["serial"] = "Player-5826-0235A66A",
+					["dispell_targets"] = {
+						["Scarlet Chaplain"] = 4,
+					},
+					["boss_fight_component"] = true,
+					["interrupt"] = 29.089285,
 				}, -- [1]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[1094] = {
 								["refreshamt"] = 0,
@@ -17816,22 +17812,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[5782] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 5782,
-								["uptime"] = 5,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[8288] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 7,
 								["appliedamt"] = 10,
 								["id"] = 8288,
 								["uptime"] = 139,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[5782] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 1,
+								["id"] = 5782,
+								["uptime"] = 5,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -17857,14 +17853,38 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
-					},
-					["pets"] = {
-						"Beltai <Kragus>", -- [1]
-					},
-					["aID"] = "5826-01FF4ABA",
-					["buff_uptime_spells"] = {
 						["tipo"] = 9,
+					},
+					["buff_uptime"] = 2561,
+					["classe"] = "WARLOCK",
+					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
+							[412758] = {
+								["refreshamt"] = 29,
+								["activedamt"] = 35,
+								["appliedamt"] = 35,
+								["id"] = 412758,
+								["uptime"] = 461,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[7804] = {
+								["id"] = 7804,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[8288] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 10,
+								["appliedamt"] = 10,
+								["id"] = 8288,
+								["uptime"] = 22,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[706] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 23,
@@ -17885,47 +17905,29 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[412758] = {
-								["refreshamt"] = 29,
-								["activedamt"] = 35,
-								["appliedamt"] = 35,
-								["id"] = 412758,
-								["uptime"] = 461,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[8288] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 10,
-								["appliedamt"] = 10,
-								["id"] = 8288,
-								["uptime"] = 22,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 642,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
-					["tipo"] = 4,
-					["buff_uptime"] = 2561,
-					["classe"] = "WARLOCK",
-					["last_event"] = 0,
+					["nome"] = "Kragus",
 					["debuff_uptime_targets"] = {
 					},
+					["grupo"] = true,
 					["boss_fight_component"] = true,
+					["aID"] = "5826-01FF4ABA",
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Player-5826-01FF4ABA",
-					["nome"] = "Kragus",
+					["pets"] = {
+						"Beltai <Kragus>", -- [1]
+					},
 				}, -- [2]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[12294] = {
 								["refreshamt"] = 4,
@@ -17970,11 +17972,11 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["buff_uptime"] = 4168,
 					["aID"] = "5826-020ECE5B",
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[18499] = {
 								["refreshamt"] = 0,
@@ -18070,27 +18072,27 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
+					},
+					["buff_uptime_targets"] = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 1017,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
 					["classe"] = "WARRIOR",
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
 					["debuff_uptime_targets"] = {
 					},
+					["grupo"] = true,
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["serial"] = "Player-5826-020ECE5B",
 					["nome"] = "Chengmo",
+					["serial"] = "Player-5826-020ECE5B",
+					["pets"] = {
+					},
 				}, -- [3]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[770] = {
 								["refreshamt"] = 0,
@@ -18123,17 +18125,12 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 					},
-					["buff_uptime"] = 3054,
-					["debuff_uptime_targets"] = {
-					},
-					["fight_component"] = true,
 					["classe"] = "DRUID",
-					["boss_fight_component"] = true,
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[408124] = {
 								["refreshamt"] = 0,
@@ -18209,21 +18206,26 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["aID"] = "5826-021E30C3",
+					["debuff_uptime_targets"] = {
+					},
+					["fight_component"] = true,
 					["debuff_uptime"] = 70,
+					["buff_uptime"] = 3054,
+					["boss_fight_component"] = true,
+					["grupo"] = true,
+					["aID"] = "5826-021E30C3",
+					["nome"] = "Mastourix",
+					["last_event"] = 0,
 					["tipo"] = 4,
+					["serial"] = "Player-5826-021E30C3",
 					["buff_uptime_targets"] = {
 					},
-					["nome"] = "Mastourix",
-					["grupo"] = true,
-					["serial"] = "Player-5826-021E30C3",
-					["last_event"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[409552] = {
 								["refreshamt"] = 0,
@@ -18235,12 +18237,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[13551] = {
+							[13810] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 4,
-								["id"] = 13551,
-								["uptime"] = 35,
+								["appliedamt"] = 7,
+								["id"] = 13810,
+								["uptime"] = 30,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -18287,22 +18289,22 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[13810] = {
+							[13551] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 7,
-								["id"] = 13810,
-								["uptime"] = 30,
+								["appliedamt"] = 4,
+								["id"] = 13551,
+								["uptime"] = 35,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["buff_uptime"] = 3755,
-					["aID"] = "5826-02653B9F",
+					["classe"] = "HUNTER",
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[8116] = {
 								["refreshamt"] = 0,
@@ -18399,86 +18401,88 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
+					["nome"] = "Pipcek",
 					["fight_component"] = true,
 					["debuff_uptime"] = 815,
-					["nome"] = "Pipcek",
-					["grupo"] = true,
 					["buff_uptime_targets"] = {
 					},
-					["classe"] = "HUNTER",
+					["debuff_uptime_targets"] = {
+					},
+					["grupo"] = true,
 					["pets"] = {
 						"Kefir <Pipcek>", -- [1]
 					},
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["debuff_uptime_targets"] = {
-					},
-					["serial"] = "Player-5826-02653B9F",
+					["aID"] = "5826-02653B9F",
 					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Player-5826-02653B9F",
+					["boss_fight_component"] = true,
 				}, -- [5]
 				{
 					["flag_original"] = 4370,
 					["pets"] = {
 					},
-					["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
-					["tipo"] = 4,
 					["classe"] = "PET",
 					["ownerName"] = "Pipcek",
 					["nome"] = "Kefir <Pipcek>",
-					["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
+					["aID"] = "Pet-0-5252-189-28211-208124-0100A4A92B",
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
-					["serial"] = "Creature-0-5252-189-28211-4296-00000AE85E",
 					["pets"] = {
 					},
-					["aID"] = "4296",
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["tipo"] = 4,
+					["fight_component"] = true,
 					["nome"] = "Scarlet Adept",
 					["monster"] = true,
 					["last_event"] = 0,
+					["aID"] = "4296",
+					["serial"] = "Creature-0-5252-189-28211-4296-00000AE85E",
+					["tipo"] = 4,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["tipo"] = 4,
 					["aID"] = "4287",
-					["classe"] = "UNKNOW",
-					["monster"] = true,
 					["fight_component"] = true,
 					["nome"] = "Scarlet Gallant",
-					["serial"] = "Creature-0-5252-189-28211-4287-00070AE85E",
+					["monster"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-4287-00070AE85E",
+					["classe"] = "UNKNOW",
 				}, -- [8]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["aID"] = "4288",
-					["serial"] = "Creature-0-5252-189-28211-4288-00000AE85E",
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["tipo"] = 4,
+					["fight_component"] = true,
 					["nome"] = "Scarlet Beastmaster",
 					["monster"] = true,
 					["last_event"] = 0,
+					["aID"] = "4288",
+					["serial"] = "Creature-0-5252-189-28211-4288-00000AE85E",
+					["tipo"] = 4,
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 					},
-					["aID"] = "4287",
+					["classe"] = "UNKNOW",
 					["boss_debuff"] = true,
+					["damage_spellid"] = 14517,
 					["monster"] = true,
 					["debuff_uptime"] = 141,
 					["spellschool"] = 1,
@@ -18506,49 +18510,45 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["last_event"] = 0,
 					["damage_twin"] = "Scarlet Gallant",
-					["damage_spellid"] = 14517,
-					["serial"] = "Creature-0-5252-189-28211-4287-00078AE85E",
 					["tipo"] = 4,
+					["serial"] = "Creature-0-5252-189-28211-4287-00078AE85E",
+					["aID"] = "4287",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "3974",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
-					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["nome"] = "Houndmaster Loksey",
 					["monster"] = true,
+					["nome"] = "Houndmaster Loksey",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["aID"] = "3974",
+					["serial"] = "Creature-0-5252-189-28211-3974-00000AE85E",
 					["last_event"] = 0,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["tipo"] = 4,
 					["aID"] = "4299",
-					["classe"] = "UNKNOW",
-					["monster"] = true,
 					["fight_component"] = true,
 					["nome"] = "Scarlet Chaplain",
-					["serial"] = "Creature-0-5252-189-28211-4299-00018AE85F",
+					["monster"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-4299-00018AE85F",
+					["classe"] = "UNKNOW",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
-					["interrupt"] = 3.010129,
 					["pets"] = {
 					},
 					["aID"] = "4540",
-					["classe"] = "UNKNOW",
 					["interrupt_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[11978] = {
 								["id"] = 11978,
@@ -18562,45 +18562,48 @@ _detalhes_database = {
 								["counter"] = 3,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["interrompeu_oque"] = {
 						[0] = 3,
 					},
 					["fight_component"] = true,
-					["monster"] = true,
-					["nome"] = "Scarlet Monk",
+					["interrupt"] = 3.010129,
 					["interrupt_targets"] = {
 						["Kragus"] = 2,
 						["Beltai"] = 1,
 					},
+					["nome"] = "Scarlet Monk",
+					["monster"] = true,
 					["tipo"] = 4,
-					["serial"] = "Creature-0-5252-189-28211-4540-00018AE85F",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-4540-00018AE85F",
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["tipo"] = 4,
 					["aID"] = "4291",
-					["classe"] = "UNKNOW",
-					["monster"] = true,
 					["fight_component"] = true,
 					["nome"] = "Scarlet Diviner",
-					["serial"] = "Creature-0-5252-189-28211-4291-00038AE85E",
+					["monster"] = true,
+					["tipo"] = 4,
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-4291-00038AE85E",
+					["classe"] = "UNKNOW",
 				}, -- [14]
 				{
 					["flag_original"] = 4370,
 					["pets"] = {
 					},
-					["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 					["classe"] = "PET",
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
 					["fight_component"] = true,
 					["ownerName"] = "Kragus",
 					["nome"] = "Beltai <Kragus>",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["aID"] = "Pet-0-5252-189-28211-416-01008D59C7",
 					["serial"] = "Pet-0-5252-189-28211-416-01008D59C7",
 					["last_event"] = 0,
 				}, -- [15]
@@ -18608,35 +18611,32 @@ _detalhes_database = {
 					["flag_original"] = 68168,
 					["pets"] = {
 					},
-					["aID"] = "6487",
-					["tipo"] = 4,
-					["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
-					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["nome"] = "Arcanist Doan",
 					["monster"] = true,
+					["nome"] = "Arcanist Doan",
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["aID"] = "6487",
+					["serial"] = "Creature-0-5252-189-28211-6487-00000AE85E",
 					["last_event"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
-					["nome"] = "Dazed",
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 9,
 					},
-					["aID"] = "4540",
 					["pets"] = {
 					},
-					["boss_fight_component"] = true,
-					["damage_spellid"] = 1604,
-					["classe"] = "UNKNOW",
+					["aID"] = "4540",
 					["boss_debuff"] = true,
-					["damage_twin"] = "Scarlet Monk",
+					["damage_spellid"] = 1604,
 					["monster"] = true,
 					["debuff_uptime"] = 81,
 					["spellschool"] = 1,
-					["serial"] = "Creature-0-5252-189-28211-4540-00000AED07",
+					["nome"] = "Dazed",
+					["boss_fight_component"] = true,
 					["debuff_uptime_targets"] = {
 						["Chengmo"] = {
 							["uptime"] = 47,
@@ -18661,7 +18661,10 @@ _detalhes_database = {
 						},
 					},
 					["tipo"] = 4,
+					["damage_twin"] = "Scarlet Monk",
 					["last_event"] = 0,
+					["serial"] = "Creature-0-5252-189-28211-4540-00000AED07",
+					["classe"] = "UNKNOW",
 				}, -- [17]
 			},
 		}, -- [4]
@@ -18670,13 +18673,15 @@ _detalhes_database = {
 			["_ActorTable"] = {
 			},
 		}, -- [5]
-		["boss_hp"] = 1,
+		["raid_roster"] = {
+		},
 		["tempo_start"] = 1711991254,
 		["cleu_timeline"] = {
 		},
 		["alternate_power"] = {
 		},
-		["end_time"] = 271345.183,
+		["last_events_tables"] = {
+		},
 		["bossTimers"] = {
 		},
 		["combat_counter"] = 3616,
@@ -18695,10 +18700,10 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 1.008939,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 32.099414,
 				["dispell"] = 4.013761000000001,
+				["interrupt"] = 32.099414,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
@@ -18718,151 +18723,37 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 1.008939,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 29.089285,
 				["dispell"] = 4.013761000000001,
+				["interrupt"] = 29.089285,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 		},
-		["raid_roster"] = {
-		},
+		["boss_hp"] = 1,
 		["frags_need_refresh"] = false,
 		["aura_timeline"] = {
 		},
+		["overall_refreshed"] = true,
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
+			["damage_section"] = {
+			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage_section"] = {
-			},
 			["damage"] = {
 			},
 		},
-		["amountCasts"] = {
-			["Kragus"] = {
-				["Create Healthstone (Lesser)"] = 1,
-				["Life Tap"] = 18,
-				["Drain Soul"] = 10,
-				["Immolate"] = 1,
-				["Shoot"] = 171,
-				["Chaos Bolt"] = 25,
-				["Shadowburn"] = 19,
-				["Fear"] = 1,
-				["Healing Potion"] = 1,
-				["Incinerate"] = 56,
-				["Rain of Fire"] = 31,
-			},
-			["Kefir <Pipcek>"] = {
-				["Growl"] = 4,
-			},
-			["Beltai <Kragus>"] = {
-				["Firebolt"] = 15,
-			},
-			["Chengmo"] = {
-				["Battle Shout"] = 17,
-				["Charge"] = 3,
-				["Cleave"] = 83,
-				["Slam"] = 110,
-				["Whirlwind"] = 73,
-				["Intercept"] = 8,
-				["Mortal Strike"] = 73,
-				["Berserker Rage"] = 27,
-				["Overpower"] = 1,
-				["Bloodrage"] = 25,
-				["Sweeping Strikes"] = 27,
-				["Battle Stance"] = 22,
-				["Berserker Stance"] = 36,
-				["Heroic Strike"] = 1,
-			},
-			["Arcanist Doan"] = {
-				["Polymorph"] = 1,
-				["Detonation"] = 2,
-				["Arcane Explosion"] = 6,
-				["Arcane Bubble"] = 2,
-			},
-			["Scarlet Beastmaster"] = {
-				["Shoot"] = 16,
-				["Exploding Shot"] = 3,
-			},
-			["Kefir"] = {
-				["Growl"] = 8,
-			},
-			["Scarlet Gallant"] = {
-				["Hammer of Justice"] = 20,
-				["Crusader Strike"] = 45,
-			},
-			["Mastourix"] = {
-				["Healing Touch"] = 1,
-				["Faerie Fire"] = 8,
-				["Regrowth"] = 2,
-				["Healing Potion"] = 1,
-				["Wild Growth"] = 48,
-				["Mark of the Wild"] = 1,
-				["Lifebloom"] = 151,
-				["Moonfire"] = 1,
-				["Rejuvenation"] = 23,
-				["War Stomp"] = 1,
-				["Thorns"] = 1,
-			},
-			["Beltai"] = {
-				["Phase Shift"] = 7,
-				["Firebolt"] = 139,
-			},
-			["Jutarnjedrvo"] = {
-				["Healing Wave"] = 21,
-				["Windfury Totem"] = 10,
-				["Flame Shock"] = 26,
-				["Lesser Healing Wave"] = 2,
-				["Totemic Projection"] = 18,
-				["Windfury Weapon"] = 4,
-				["Shamanistic Rage"] = 18,
-				["Frost Shock"] = 60,
-				["Ancestral Spirit"] = 1,
-				["Purge"] = 3,
-				["Rockbiter Weapon"] = 3,
-				["Lightning Shield"] = 42,
-				["Grounding Totem"] = 3,
-				["War Stomp"] = 8,
-				["Lava Lash"] = 170,
-				["Strength of Earth Totem"] = 8,
-				["Chain Lightning"] = 70,
-				["Earth Shock"] = 29,
-			},
-			["Houndmaster Loksey"] = {
-				["Battle Shout"] = 1,
-				["Bloodlust"] = 2,
-			},
-			["Pipcek"] = {
-				["Feed Pet"] = 2,
-				["Raptor Strike"] = 3,
-				["Agility"] = 1,
-				["Wing Clip"] = 1,
-				["Auto Shot"] = 335,
-				["Aspect of the Hawk"] = 1,
-				["Flanking Strike"] = 3,
-				["Serpent Sting"] = 4,
-				["Explosive Shot"] = 118,
-				["Frost Trap"] = 1,
-				["Track Beasts"] = 1,
-				["Explosive Trap"] = 1,
-				["Hunter's Mark"] = 59,
-				["Concussive Shot"] = 4,
-				["Multi-Shot"] = 57,
-				["Arcane Shot"] = 76,
-			},
-			["Scarlet Adept"] = {
-				["Holy Smite"] = 17,
-			},
-		},
+		["end_time"] = 271345.183,
 		["mapId"] = 189,
-		["last_events_tables"] = {
+		["cleu_events"] = {
+			["n"] = 1,
 		},
 		["zoneName"] = "Scarlet Monastery",
 		["trinketProcs"] = {
@@ -19115,21 +19006,137 @@ _detalhes_database = {
 		},
 		["data_fim"] = "19:38:58",
 		["overall_enemy_name"] = "-- x -- x --",
-		["data_inicio"] = "19:07:35",
-		["cleu_events"] = {
-			["n"] = 1,
+		["frags"] = {
 		},
+		["data_inicio"] = "19:07:35",
 		["start_time"] = 270044.2990000003,
 		["TimeData"] = {
 		},
-		["frags"] = {
+		["amountCasts"] = {
+			["Kefir"] = {
+				["Growl"] = 8,
+			},
+			["Kragus"] = {
+				["Create Healthstone (Lesser)"] = 1,
+				["Life Tap"] = 18,
+				["Drain Soul"] = 10,
+				["Immolate"] = 1,
+				["Shoot"] = 171,
+				["Chaos Bolt"] = 25,
+				["Shadowburn"] = 19,
+				["Fear"] = 1,
+				["Healing Potion"] = 1,
+				["Incinerate"] = 56,
+				["Rain of Fire"] = 31,
+			},
+			["Mastourix"] = {
+				["Healing Touch"] = 1,
+				["Faerie Fire"] = 8,
+				["Regrowth"] = 2,
+				["Healing Potion"] = 1,
+				["Wild Growth"] = 48,
+				["Mark of the Wild"] = 1,
+				["Lifebloom"] = 151,
+				["Moonfire"] = 1,
+				["Rejuvenation"] = 23,
+				["War Stomp"] = 1,
+				["Thorns"] = 1,
+			},
+			["Kefir <Pipcek>"] = {
+				["Growl"] = 4,
+			},
+			["Beltai"] = {
+				["Phase Shift"] = 7,
+				["Firebolt"] = 139,
+			},
+			["Jutarnjedrvo"] = {
+				["Healing Wave"] = 21,
+				["Rockbiter Weapon"] = 3,
+				["Flame Shock"] = 26,
+				["Lesser Healing Wave"] = 2,
+				["Totemic Projection"] = 18,
+				["Windfury Weapon"] = 4,
+				["Shamanistic Rage"] = 18,
+				["Frost Shock"] = 60,
+				["Grounding Totem"] = 3,
+				["War Stomp"] = 8,
+				["Purge"] = 3,
+				["Lightning Shield"] = 42,
+				["Lava Lash"] = 170,
+				["Windfury Totem"] = 10,
+				["Ancestral Spirit"] = 1,
+				["Strength of Earth Totem"] = 8,
+				["Chain Lightning"] = 70,
+				["Earth Shock"] = 29,
+			},
+			["Beltai <Kragus>"] = {
+				["Firebolt"] = 15,
+			},
+			["Houndmaster Loksey"] = {
+				["Battle Shout"] = 1,
+				["Bloodlust"] = 2,
+			},
+			["Chengmo"] = {
+				["Battle Shout"] = 17,
+				["Charge"] = 3,
+				["Cleave"] = 83,
+				["Slam"] = 110,
+				["Whirlwind"] = 73,
+				["Intercept"] = 8,
+				["Mortal Strike"] = 73,
+				["Berserker Rage"] = 27,
+				["Bloodrage"] = 25,
+				["Sweeping Strikes"] = 27,
+				["Overpower"] = 1,
+				["Battle Stance"] = 22,
+				["Berserker Stance"] = 36,
+				["Heroic Strike"] = 1,
+			},
+			["Arcanist Doan"] = {
+				["Polymorph"] = 1,
+				["Detonation"] = 2,
+				["Arcane Explosion"] = 6,
+				["Arcane Bubble"] = 2,
+			},
+			["Scarlet Gallant"] = {
+				["Hammer of Justice"] = 20,
+				["Crusader Strike"] = 45,
+			},
+			["Scarlet Adept"] = {
+				["Holy Smite"] = 17,
+			},
+			["Pipcek"] = {
+				["Feed Pet"] = 2,
+				["Raptor Strike"] = 3,
+				["Wing Clip"] = 1,
+				["Agility"] = 1,
+				["Auto Shot"] = 335,
+				["Aspect of the Hawk"] = 1,
+				["Explosive Trap"] = 1,
+				["Serpent Sting"] = 4,
+				["Explosive Shot"] = 118,
+				["Flanking Strike"] = 3,
+				["Track Beasts"] = 1,
+				["Frost Trap"] = 1,
+				["Hunter's Mark"] = 59,
+				["Concussive Shot"] = 4,
+				["Multi-Shot"] = 57,
+				["Arcane Shot"] = 76,
+			},
+			["Scarlet Beastmaster"] = {
+				["Shoot"] = 16,
+				["Exploding Shot"] = 3,
+			},
 		},
 	},
 	["character_data"] = {
-		["logons"] = 241,
+		["logons"] = 243,
 	},
-	["last_instance_time"] = 1711992244,
 	["last_realversion"] = 156,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

@@ -84,7 +84,6 @@ kctimer:SetHeight(kctimer.text:GetStringHeight())
 ----------------------------
 -- Kill list wrapper
 ----------------------------
-
 local killlist_wrapper = CreateFrame('Frame', 'WrapperKillListFrame', kc, BackdropTemplateMixin and 'BackdropTemplate')
 killlist_wrapper:SetPoint('TOPLEFT', kc, 'TOPLEFT', 0, -55)
 killlist_wrapper:SetFrameStrata('LOW')

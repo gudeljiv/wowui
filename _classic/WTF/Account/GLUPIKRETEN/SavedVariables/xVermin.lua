@@ -88,12 +88,20 @@ xVerminSavedData = {
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]
 		},
-		["Bristleback Geomancer"] = {
-			"Incinerate", -- [1]
-			"Firebolt", -- [2]
+		["Ironspine"] = {
+			"Rend", -- [1]
 		},
 		["Enraged Stone Spirit"] = {
 			"Rend", -- [1]
+		},
+		["Rogue Flame Spirit"] = {
+			"Rend", -- [1]
+			"Serpent Sting", -- [2]
+			"Lava Lash", -- [3]
+		},
+		["Bristleback Geomancer"] = {
+			"Incinerate", -- [1]
+			"Firebolt", -- [2]
 		},
 		["Whirlwind Ripper"] = {
 			"Serpent Sting", -- [1]
@@ -105,11 +113,6 @@ xVerminSavedData = {
 		["Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Rogue Flame Spirit"] = {
-			"Rend", -- [1]
-			"Serpent Sting", -- [2]
-			"Lava Lash", -- [3]
-		},
 		["Thundering Exile"] = {
 			"Serpent Sting", -- [1]
 			"Chimera Shot", -- [2]
@@ -120,34 +123,26 @@ xVerminSavedData = {
 			"Starfire Stun", -- [3]
 			"War Stomp", -- [4]
 		},
+		["High Inquisitor Whitemane"] = {
+			"Intimidation", -- [1]
+			"Intercept Stun", -- [2]
+		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
 			"Mangle", -- [3]
 			"War Stomp", -- [4]
 		},
+		["Dopemend"] = {
+		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
 			"Entrapment", -- [2]
-		},
-		["High Inquisitor Whitemane"] = {
-			"Intimidation", -- [1]
-			"Intercept Stun", -- [2]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
 		},
 		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Burning Destroyer"] = {
-			"Serpent Sting", -- [1]
-			"Lava Lash", -- [2]
-		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
-		},
-		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
 		["Scarlet Commander Mograine"] = {
@@ -162,6 +157,16 @@ xVerminSavedData = {
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
+		},
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Serpent Sting", -- [1]
+			"Lava Lash", -- [2]
+		},
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Fire Elemental"] = {
 			"Magma Totem", -- [1]
@@ -230,6 +235,8 @@ xVerminSavedData = {
 		["Bloodmage Thalnos"] = {
 			"Intimidation", -- [1]
 			"Deep Wound", -- [2]
+			"Charge Stun", -- [3]
+			"Starfire Stun", -- [4]
 		},
 		["Dark Rider"] = {
 			"Intimidation", -- [1]
