@@ -1,4 +1,7 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("NovaInstanceTracker", "enUS", true, true);
+if (not L) then
+	return;
+end
 
 L["noTimer"] = "No timer"; --No timer
 L["noCurrentTimer"] = "No current timer"; --No current timer
@@ -296,7 +299,7 @@ L["noProfessions"] = "No professions found.";
 L["cooldowns"] = "Cooldowns";
 L["left"] = "left"; -- This is left as in "time left";
 L["ready"] = "Ready.";
-L["pvp"] = "PvP";
+L["pvp"] = "PvP"; --Must be 3 letters max to fit.
 L["rank"] = "Rank";
 L["lastWeek"] = "Last week";
 L["attunements"] = "Attunements";
@@ -313,19 +316,19 @@ L["instanceWindowWidthTitle"] = "Instance Window Width";
 L["instanceWindowWidthDesc"] = "How wide should the instance window be.";
 
 L["instanceWindowHeightTitle"] = "Instance Window Height";
-L["instanceWindowHeghtDesc"] = "How high should the instance window be.";
+L["instanceWindowHeightDesc"] = "How high should the instance window be.";
 
 L["charsWindowWidthTitle"] = "Characters Window Width";
 L["charsWindowWidthDesc"] = "How wide should the characters info window be.";
 
 L["charsWindowHeightTitle"] = "Characters Window Height";
-L["charsWindowHeghtDesc"] = "How high should the characters info window be.";
+L["charsWindowHeightDesc"] = "How high should the characters info window be.";
 
 L["tradeWindowWidthTitle"] = "Trade Window Width";
 L["tradeWindowWidthDesc"] = "How wide should the trade window be.";
 
 L["tradeWindowHeightTitle"] = "Trade Window Height";
-L["tradeWindowHeghtDesc"] = "How high should the trade window be.";
+L["tradeWindowHeightDesc"] = "How high should the trade window be.";
 
 L["resetFramesTitle"] = "Reset Windows";
 L["resetFramesDesc"] = "Reset all windows back to the middle of screen and sizes back to default.";
@@ -409,4 +412,118 @@ L["gammaConfigWarning"] = "Gamma buff choice is character specific, if you chang
 L["autoGammaBuffReminder"] = "Get Gamma Dungeon buff from %s.";
 L["Sunreaver Warden"] = "Sunreaver Warden";
 L["Silver Covenant Warden"] = "Silver Covenant Warden";
-L["note"] = "Note:"
+L["note"] = "Note:";
+L["Click an entry to post stats."] = "Click an entry to post stats.";
+L["Show Alts"] = "Show Alts";
+L["showAltsTooltip"] = "Show all alts in the instance log? (Lockouts are per character)";
+L["PvE"] = "PvE"; --Must be 3 letters max to fit. (PvP already exists further up)
+L["Hold to drag"] = "Hold to drag";
+L["Raid Lockouts (Including Alts)"] = "Raid Lockouts (Including Alts)";
+L["No trade logs found."] = "No trade logs found.";
+L["Today"] = "Today";
+L["Yesterday"] = "Yesterday";
+
+L["Level Log"] = "Level Log";
+L["Mouseover log entry for more info"] = "Mouseover log entry for more info";
+L["Current Level"] = "Current Level";
+L["Leveling history for"] = "Leveling history for";
+L["Unknown Time"] = "Unknown Time";
+L["Unknown Zone"] = "Unknown Zone";
+L["Zone"] = "Zone";
+L["SubZone"] = "SubZone";
+L["Ding"] = "Ding"; --Level up.
+L["Map coords"] = "Map coords";
+L["Gold owned at start of level"] = "Gold owned at start of level";
+L["Gold change during this level"] = "Gold change during this level";
+L["Quests completed during this level"] = "Quests completed during this level";
+L["Mobs that gave exp during this level"] = "Mobs that gave exp during this level";
+L["Played time this level"] = "Played time this level";
+L["Total Played"] = "Total Played";
+L["firstTimeSeeingCharPlayed"] = "First time seeing this character was at this level, played time for this level is likely wrong.";
+
+L["Left-Click"] = "Left-Click";
+L["Right-Click"] = "Right-Click";
+L["Shift Left-Click"] = "Shift Left-Click";
+L["Shift Right-Click"] = "Shift Right-Click";
+L["Middle-Click"] = "Middle-Click";
+L["Control Left-Click"] = "Ctrl Left-Click";
+
+L["Lockouts"] = "Lockouts";
+L["Instance"] = "Instance";
+L["ZoneID"] = "ZoneID";
+L["Show dungeons and raids?"] = "Show dungeons and raids?";
+L["Show battleground and arena instances?"] = "Show battleground and arena instances?";
+L["Party"] = "Party";
+L["Guild"] = "Guild";
+L["Copy Paste"] = "Copy Paste";
+L["Print"] = "Print";
+L["Post Stats for log"] = "Post Stats for log";
+L["Alts (Mouseover names for info)"] = "Alts (Mouseover names for info)";
+L["Min Level"] = "Min Level";
+L["No guild"] = "No guild";
+L["No guild rank"] = "No guild rank";
+L["Show leveling history for"] = "Show leveling history for";
+L["Test Instance"] = "Test Instance";
+L["Long"] = "Long";
+L["Medium"] = "Medium";
+L["Short"] = "Short";
+L["Chat Window"] = "Chat Window";
+L["Group Chat (Party/Raid)"] = "Group Chat (Party/Raid)";
+L["12 hour"] = "12 hour";
+L["24 hour"] = "24 hour";
+
+L["Molten Core"] = "Molten Core";
+L["Onyxia's Lair"] = "Onyxia's Lair";
+L["Blackwing Lair"] = "Blackwing Lair";
+L["Naxxramas"] = "Naxxramas";
+L["Karazhan"] = "Karazhan";
+L["The Shattered Halls"] = "The Shattered Halls";
+L["Serpentshrine Cavern"] = "Serpentshrine Cavern";
+L["The Arcatraz"] = "The Arcatraz";
+L["Black Morass"] = "Black Morass";
+L["Battle of Mount Hyjal"] = "Battle of Mount Hyjal";
+L["Black Temple"] = "Black Temple";
+L["Hellfire Citadel"] = "Hellfire Citadel";
+L["Coilfang Reservoir"] = "Coilfang Reservoir";
+L["Shadow Labyrinth"] = "Shadow Labyrinth";
+L["Auchindoun"] = "Auchindoun";
+L["Tempest Keep"] = "Tempest Keep";
+L["Caverns of Time"] = "Caverns of Time";
+L["deletedCharOnRealm"] = "Deleted character %s on realm [%s].";
+L["deletedCharOnRealmNewInfo"] = "Deleted character %s on realm [%s], recording new info.";
+
+L["Time"] = "Time";
+L["Show time?"] = "Show time?";
+L["Show Zone where trade happened?"] = "Show Zone where trade happened?";
+L["Time Ago"] = "Time Ago";
+L["Show how long ago?"] = "Show how long ago?";
+L["Records"] = "Records";
+L["How many trade records to show?"] = "How many trade records to show?";
+L["Current Hour Lockouts"] = "Current Hour Lockouts";
+L["Current Dungeon Stats"] = "Current Dungeon Stats";
+L["Log Entry"] = "Log Entry";
+L["Local Time"] = "Local Time";
+L["Server Time"] = "Server Time";
+L["Example"] = "Example";
+
+--Abbreviated days/months.
+L["Mon"] = "Mon";
+L["Tue"] = "Tue";
+L["Wed"] = "Wed";
+L["Thu"] = "Thu";
+L["Fri"] = "Fri";
+L["Sat"] = "Sat";
+L["Sun"] = "Sun";
+
+L["Jan"] = "Jan";
+L["Feb"] = "Feb";
+L["Mar"] = "Mar";
+L["Apr"] = "Apr";
+L["May"] = "May";
+L["Jun"] = "Jun";
+L["Jul"] = "Jul";
+L["Aug"] = "Aug";
+L["Sep"] = "Sep";
+L["Oct"] = "Oct";
+L["Nov"] = "Nov";
+L["Dec"] = "Dec";

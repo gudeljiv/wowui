@@ -461,4 +461,5 @@ private.NPC_INFO = {
 	[11497] = { zoneID = 100013, displayID = 12683 }; --The Razza
 	[11498] = { zoneID = 100013, displayID = 10169 }; --Skarr the Unbreakable
 	[12237] = { zoneID = 100015, displayID = 9014 }; --Meshlok the Harvester
+	[221263] = { zoneID = 0, displayID = 118592, season = 2 }; --Vengeful Ancient
 }

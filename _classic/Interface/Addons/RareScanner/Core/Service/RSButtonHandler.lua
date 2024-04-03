@@ -181,7 +181,7 @@ local function ShowAlert(button, vignetteInfo, isNavigating)
 		RSRecentlySeenTracker.AddRecentlySeen(entityID, vignetteInfo.atlasName, false)
 		return true
 	-- disable alerts for filtered zones
-	elseif (RSConfigDB.IsZoneFiltered(mapID) or RSConfigDB.IsZoneFilteredOnlyAlerts(mapID) or RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, vignetteInfo.atlasName)) then
+	elseif (RSConfigDB.IsZoneFiltered(mapID) or RSConfigDB.IsZoneFilteredOnlyAlerts(mapID) or RSConfigDB.IsEntityZoneFilteredOnlyAlerts(entityID, vignetteInfo.atlasName, mapID)) then
 		RSLogger:PrintDebugMessage(string.format("La entidad [%s] se ignora por pertenecer a una zona [%s] filtrada", entityID, mapID))
 		return
 	-- extra checkings for containers

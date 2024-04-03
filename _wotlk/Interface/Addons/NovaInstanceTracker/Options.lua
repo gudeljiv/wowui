@@ -189,8 +189,8 @@ NIT.options = {
 			name = L["timeStampFormatTitle"],
 			desc = L["timeStampFormatDesc"],
 			values = {
-				[12] = "12 hour",
-				[24] = "24 hour",
+				[12] = L["12 hour"],
+				[24] = L["24 hour"],
 			},
 			sorting = {
 				[1] = 12,
@@ -205,8 +205,8 @@ NIT.options = {
 			name = L["timeStampZoneTitle"],
 			desc = L["timeStampZoneDesc"],
 			values = {
-				["local"] = "Local Time",
-				["server"] = "Server Time",
+				["local"] = L["Local Time"],
+				["server"] = L["Server Time"],
 			},
 			sorting = {
 				[1] = "local",
@@ -377,9 +377,9 @@ NIT.options = {
 			name = L["timeStringTypeTitle"],
 			desc = L["timeStringTypeDesc"],
 			values = {
-				["long"] = "Long",
-				["medium"] = "Medium",
-				["short"] = "Short",
+				["long"] = L["Long"],
+				["medium"] = L["Medium"],
+				["short"] = L["Short"],
 			},
 			sorting = {
 				[1] = "long",
@@ -414,8 +414,8 @@ NIT.options = {
 			name = L["instanceStatsOutputWhereTitle"],
 			desc = L["instanceStatsOutputWhereDesc"],
 			values = {
-				["self"] = "Chat Window",
-				["group"] = "Group Chat (Party/Raid)",
+				["self"] = L["Chat Window"],
+				["group"] = L["Group Chat (Party/Raid)"],
 			},
 			sorting = {
 				[1] = "self",
@@ -684,12 +684,12 @@ function NIT:getLogExample()
 	local v = {
 		playerName = UnitName("player"),
 		classEnglish = classEnglish,
-		instanceName = "Test Instance",
+		instanceName = L["Test Instance"],
 		enteredTime = GetServerTime() - 600,
 		leftTime = GetServerTime() - 300,
 	}
 	local line = NIT:buildInstanceLineFrameString(v, 1);
-	return "Example: " .. line;
+	return L["Example"] .. ": " .. line;
 end
 
 ------------------------
@@ -744,8 +744,8 @@ NIT.optionDefaults = {
 		instanceStatsOutputRunsNextLevel = false,
 		instanceWindowWidth = 620,
 		instanceWindowHeight = 501,
-		charsWindowWidth = 550,
-		charsWindowHeight = 320,
+		charsWindowWidth = 600,
+		charsWindowHeight = 350,
 		tradeWindowWidth = 580,
 		tradeWindowHeight = 320,
 		copyTradeTime = true,
@@ -793,6 +793,9 @@ function NIT:buildDatabase()
 	if (not self.db.global[NIT.realm].myChars[UnitName("player")]) then
 		self.db.global[NIT.realm].myChars[UnitName("player")] = {};
 	end
+	--if (not self.db.global[NIT.realm].myChars[UnitName("player")].levelLog) then
+	--	self.db.global[NIT.realm].myChars[UnitName("player")].levelLog = {};
+	--end
 	if (not self.db.global[NIT.realm].gammaBuffSettings) then
 		self.db.global[NIT.realm].gammaBuffSettings = {};
 	end

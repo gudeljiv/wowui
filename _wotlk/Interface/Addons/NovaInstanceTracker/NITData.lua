@@ -241,6 +241,7 @@ if (NIT.isRetail) then
 	f:RegisterEvent("WEEKLY_REWARDS_UPDATE");
 end
 f:RegisterEvent("UPDATE_INSTANCE_INFO");
+f:RegisterEvent("PLAYER_GUILD_UPDATE");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_LEAVING_WORLD" ) then
 		doGUID = nil;
@@ -472,6 +473,8 @@ f:SetScript('OnEvent', function(self, event, ...)
 		C_Timer.After(1, function()
 			NIT:recordLockoutData();
 		end)
+	elseif (event == "PLAYER_GUILD_UPDATE") then
+		NIT:throddleEventByFunc(event, 1, "recordGuildInfo");
 	end
 end)
 
@@ -614,9 +617,6 @@ function NIT:chatMsgMoney(...)
 		if (NIT.data.instances[1].isPvp) then
 			return;
 		end
-		--local copperGained = string.match(text, "(%d+) Copper") or 0;
-		--local silverGained = string.match(text, "(%d+) Silver") or 0;
-		--local goldGained = string.match(text, "(%d+) Gold") or 0;
 		local copperGained = string.match(text, string.gsub(COPPER_AMOUNT, "%%d", "(%%d+)")) or 0;
 		local silverGained = string.match(text, string.gsub(SILVER_AMOUNT, "%%d", "(%%d+)")) or 0;
 		local goldGained = string.match(text, string.gsub(GOLD_AMOUNT, "%%d", "(%%d+)")) or 0;
@@ -754,26 +754,28 @@ function NIT:recordBgStats()
 				instance.damage = damage;
 				instance.healing = healing;
 				local objectives = {};
-				for j = 1, GetNumBattlefieldStats() do
-					local score = GetBattlefieldStatData(i, j);
-					if (score and score > 0) then
-						local text, icon = GetBattlefieldStatInfo(j);
-						--Icons textures end in 0 or 1 for each faction.
-						--We want to display the right color for our real faction and not same faction vs same faction wrong side.
-						--[[if (NIT.faction == "Horde") then
-							icon = icon .. "1";
-						else
-							icon = icon .. "0";
-						end]]
-						icon = icon .. faction;
-						local t = {
-							score = score,
-							text = text,
-							icon = icon,
-						};
-						table.insert(objectives, t);
-						--/run NIT.data.instances[1].objectives = {}
-						--/run NIT.data.instances[1].objectives[1] = {score = 3,text = "Flag Captures",icon = "Interface\\WorldStateFrame\\ColumnIcon-FlagCapture0"};
+				if (GetNumBattlefieldStats) then
+					for j = 1, GetNumBattlefieldStats() do
+						local score = GetBattlefieldStatData(i, j);
+						if (score and score > 0) then
+							local text, icon = GetBattlefieldStatInfo(j);
+							--Icons textures end in 0 or 1 for each faction.
+							--We want to display the right color for our real faction and not same faction vs same faction wrong side.
+							--[[if (NIT.faction == "Horde") then
+								icon = icon .. "1";
+							else
+								icon = icon .. "0";
+							end]]
+							icon = icon .. faction;
+							local t = {
+								score = score,
+								text = text,
+								icon = icon,
+							};
+							table.insert(objectives, t);
+							--/run NIT.data.instances[1].objectives = {}
+							--/run NIT.data.instances[1].objectives[1] = {score = 3,text = "Flag Captures",icon = "Interface\\WorldStateFrame\\ColumnIcon-FlagCapture0"};
+						end
 					end
 				end
 				if (next(objectives)) then
@@ -1129,7 +1131,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 						msg = string.gsub(msg, " , ", ", ")
 						C_Timer.After(0.5, function()
 							--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
-							NIT:print("|HNITCustomLink:instancelog|h" .. msg .. "|h"
+							NIT:print("|HNITCustomLink:instancelog|h" .. msg .. "|h "
 									.. "|HNITCustomLink:deletelast|h" .. texture
 									.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
 						end)
@@ -1143,7 +1145,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 				elseif (isLogon) then
 					C_Timer.After(3, function()
 						--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
-						NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["loggedInDungeon"], instanceNameMsg, countMsg) .. "|h"
+						NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["loggedInDungeon"], instanceNameMsg, countMsg) .. "|h "
 								.. " |HNITCustomLink:deletelast|h" .. texture
 								.. "|h |HNITCustomLink:instancelog|h " .. L["loggedInDungeon2"] .. "|h");
 					end)
@@ -1151,7 +1153,7 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 					if (NIT.db.global.enteredMsg) then
 						C_Timer.After(0.5, function()
 							--local hourCount, hourCount24, hourTimestamp, hourTimestamp24 = NIT:getInstanceLockoutInfo();
-							NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredDungeon"], instanceNameMsg, countMsg) .. "|h"
+							NIT:print("|HNITCustomLink:instancelog|h" .. string.format(L["enteredDungeon"], instanceNameMsg, countMsg) .. "|h "
 									.. "|HNITCustomLink:deletelast|h" .. texture
 									.. "|h |HNITCustomLink:instancelog|h" .. L["enteredDungeon2"] .. "|h");
 						end)
@@ -1646,7 +1648,7 @@ function NIT:addToGroupData(unit)
 		return 0;
 	end
 	local class, classEnglish = UnitClass(unit);
-	local guildName, guildRankName, guildRankIndex = GetGuildInfo(unit);
+	local guildName, guildRankName = GetGuildInfo(unit);
 	if (level and name) then
 		--[[NIT.data.instances[1].group[name] = {
 			level = level,
@@ -1703,12 +1705,12 @@ function NIT:deleteCharacter(realm, char)
 	if (data) then
 		if (char == UnitName("player")) then
 			NIT.db.global[realm].myChars[char] = nil;
-			NIT:print("Deleted character " .. char .. " on realm [" .. realm .. "], recording new info.")
+			NIT:print(string.format(L["deletedCharOnRealmNewInfo"], char, realm));
 			NIT:recalcAltsLineFrames();
 			NIT:recordCharacterData();
 		else
 			NIT.db.global[realm].myChars[char] = nil;
-			NIT:print("Deleted character " .. char .. " on realm [" .. realm .. "].")
+			NIT:print(string.format(L["deletedCharOnRealm"], char, realm));
 			NIT:recalcAltsLineFrames();
 		end
 	else
@@ -1819,7 +1821,7 @@ function NIT:recordCharacterData()
 		gender = "Female";
 	end
 	NIT.data.myChars[char].gender = gender;
-	local guild, guildRankName, guildRankIndex = GetGuildInfo("player");
+	local guild, guildRankName = GetGuildInfo("player");
 	if (not guild) then
 		guild = "No guild";
 	end
@@ -1976,6 +1978,22 @@ function NIT:recordCharacterData()
 	NIT:recordQuests();
 end
 
+function NIT:recordGuildInfo()
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	local guild, guildRankName = GetGuildInfo("player");
+	if (not guild) then
+		guild = "No guild";
+	end
+	if (not guildRankName) then
+		guildRankName = "No guild rank";
+	end
+	NIT.data.myChars[char].guild = guild;
+	NIT.data.myChars[char].guildRankName = guildRankName;
+end
+
 --Weeklys.
 local recordQuests = {};
 if (NIT.isRetail) then
@@ -2004,6 +2022,10 @@ if (NIT.isWrath) then
 	recordQuests[24586] = "Razorscale Must Die!";
 	recordQuests[24579] = "Sartharion Must Die!";
 	recordQuests[24588] = "XT-002 Deconstructor Must Die!";
+end
+if (NIT.isSOD) then
+	recordQuests[79098] = "Clear the Forest!";
+	recordQuests[79090] = "Repelling Invaders";
 end
 
 --Dailys.

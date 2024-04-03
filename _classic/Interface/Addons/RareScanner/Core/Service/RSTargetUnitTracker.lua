@@ -107,7 +107,7 @@ local function KeepRunningRoutine(rareScannerButton, npcIDs, mapID)
 		if (RSConfigDB.IsNpcFiltered(npcID)) then
 			RSLogger:PrintDebugMessage(string.format("Desactivado TargetUnit para este NPC [%s] por estar filtrando (completo)", npcID))
 		-- If NPC zone is filtered
-		elseif (RSConfigDB.IsEntityZoneFilteredOnlyAlerts(npcID, RSConstants.NPC_VIGNETTE)) then
+		elseif (RSConfigDB.IsEntityZoneFilteredOnlyAlerts(npcID, RSConstants.NPC_VIGNETTE, mapID)) then
 			RSLogger:PrintDebugMessage(string.format("Desactivado TargetUnit para este NPC [%s] por estar filtrando su zona [%s]", npcID, mapID))
 		-- If NPC is recently seen
 		elseif (recentlySeen[npcID]) then

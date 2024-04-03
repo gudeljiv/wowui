@@ -316,19 +316,19 @@ L["instanceWindowWidthTitle"] = "인스턴스 창 너비";
 L["instanceWindowWidthDesc"] = "인스턴스 창 너비 설정.";
 
 L["instanceWindowHeightTitle"] = "인스턴스 창 높이";
-L["instanceWindowHeghtDesc"] = "인스턴스 창 높이 설정.";
+L["instanceWindowHeightDesc"] = "인스턴스 창 높이 설정.";
 
 L["charsWindowWidthTitle"] = "캐릭터 창 너비";
 L["charsWindowWidthDesc"] = "캐릭터 창 너비 설정.";
 
 L["charsWindowHeightTitle"] = "캐릭터 창 높이";
-L["charsWindowHeghtDesc"] = "캐릭터 창 높이 설정.";
+L["charsWindowHeightDesc"] = "캐릭터 창 높이 설정.";
 
 L["tradeWindowWidthTitle"] = "거래 기록 창 너비";
 L["tradeWindowWidthDesc"] = "거래 기록 창 너비 설정.";
 
 L["tradeWindowHeightTitle"] = "거래 기록 창 높이";
-L["tradeWindowHeghtDesc"] = "거래 기록 창 높이 설정.";
+L["tradeWindowHeightDesc"] = "거래 기록 창 높이 설정.";
 
 L["resetFramesTitle"] = "창 초기화";
 L["resetFramesDesc"] = "모든 창을 화면 중앙으로 재설정하고 크기를 기본값으로 되돌립니다.";

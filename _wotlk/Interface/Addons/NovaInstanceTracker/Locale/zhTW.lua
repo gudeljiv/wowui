@@ -310,19 +310,19 @@ L["instanceWindowWidthTitle"] = "事件視窗寬度";
 L["instanceWindowWidthDesc"] = "副本追蹤視窗要多寬。";
 
 L["instanceWindowHeightTitle"] = "事件視窗高度";
-L["instanceWindowHeghtDesc"] = "副本追蹤視窗要多高。";
+L["instanceWindowHeightDesc"] = "副本追蹤視窗要多高。";
 
 L["charsWindowWidthTitle"] = "角色視窗寬度";
 L["charsWindowWidthDesc"] = "角色資訊視窗要多寬。";
 
 L["charsWindowHeightTitle"] = "角色視窗高度";
-L["charsWindowHeghtDesc"] = "角色資訊視窗要多高。";
+L["charsWindowHeightDesc"] = "角色資訊視窗要多高。";
 
 L["tradeWindowWidthTitle"] = "交易視窗寬度";
 L["tradeWindowWidthDesc"] = "交易視窗的寬度。";
 
 L["tradeWindowHeightTitle"] = "交易視窗高度";
-L["tradeWindowHeghtDesc"] = "交易視窗的寬度。";
+L["tradeWindowHeightDesc"] = "交易視窗的寬度。";
 
 L["resetFramesTitle"] = "視窗預設值";
 L["resetFramesDesc"] = "重置所有視窗及大小回到預設值。";
