@@ -103,8 +103,9 @@ xVerminSavedData = {
 			"Intimidation", -- [5]
 			"Starfire Stun", -- [6]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Whirlwind Ripper"] = {
 			"Lightning Shield", -- [1]
@@ -159,32 +160,26 @@ xVerminSavedData = {
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Earth Shock", -- [2]
-			"Quick Strike", -- [3]
-			"Raptor Strike", -- [4]
-			"Serpent Sting", -- [5]
-			"Stormstrike", -- [6]
-			"Sunder Armor", -- [7]
-			"Wing Clip", -- [8]
+		["Burning Destroyer"] = {
+			"Lava Lash", -- [1]
+			"Serpent Sting", -- [2]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Amnennar the Coldbringer"] = {
-			"Intimidation", -- [1]
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Agathelos the Raging"] = {
 			"Charge Stun", -- [1]
 			"Entrapment", -- [2]
 		},
-		["Glutton"] = {
-			"Starfire Stun", -- [1]
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
 		},
 		["Herod"] = {
 			"Arcane Shot", -- [1]
@@ -214,12 +209,27 @@ xVerminSavedData = {
 			"Magma Totem", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Lava Lash", -- [1]
-			"Serpent Sting", -- [2]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Earth Shock", -- [2]
+			"Quick Strike", -- [3]
+			"Raptor Strike", -- [4]
+			"Serpent Sting", -- [5]
+			"Stormstrike", -- [6]
+			"Sunder Armor", -- [7]
+			"Wing Clip", -- [8]
+			"Crippling Poison", -- [9]
+			"Multi-Shot", -- [10]
+			"Arcane Shot", -- [11]
+			"Smite", -- [12]
+			"Firebolt", -- [13]
+			"Flame Shock", -- [14]
+			"Mutilate", -- [15]
+			"Lava Lash", -- [16]
+			"Explosive Shot", -- [17]
 		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
@@ -228,6 +238,7 @@ xVerminSavedData = {
 		["High Inquisitor Whitemane"] = {
 			"Intercept Stun", -- [1]
 			"Intimidation", -- [2]
+			"Crippling Poison", -- [3]
 		},
 		["Cyclonian"] = {
 			"Starfire Stun", -- [1]
@@ -240,16 +251,15 @@ xVerminSavedData = {
 			"Deep Wound", -- [2]
 			"Intimidation", -- [3]
 			"Starfire Stun", -- [4]
-			"Rake", -- [5]
+			"Rend", -- [5]
 		},
 		["Rogue Flame Spirit"] = {
 			"Lava Lash", -- [1]
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]

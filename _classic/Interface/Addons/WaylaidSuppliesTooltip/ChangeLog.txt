@@ -114,3 +114,9 @@ v1.4.6.1 Release - 11 MAR 2024
 v1.4.6.2 Release - 12 MAR 2024
 	Fixed:
 		CrateItems lua table key values again.
+		
+v1.4.7 Release - 03 APR 2024
+	Added:
+		Phase 3 madness!
+	Known Issues:
+		Values in phase 3

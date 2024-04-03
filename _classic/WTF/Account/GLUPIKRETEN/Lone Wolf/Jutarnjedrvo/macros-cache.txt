@@ -67,7 +67,7 @@ VER 3 000000000100000C "rock II" "134400"
 END
 VER 3 0000000001000011 "TT Cast" "INV_MISC_QUESTIONMARK"
 #showtooltips
-/castsequence reset=combat/15 Searing Totem(Rank 3), Strength of Earth Totem(Rank 2), Mana Spring Totem(Rank 2), Windfury Totem(Rank 1)
+/castsequence reset=combat/15 Frost Resistance Totem(Rank 1), Stoneclaw Totem(Rank 3), Poison Cleansing Totem(), Nature Resistance Totem(Rank 1)
 END
 VER 3 000000000100000F "wf I" "134400"
 #showtooltip

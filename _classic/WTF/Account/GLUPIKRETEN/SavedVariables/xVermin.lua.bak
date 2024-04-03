@@ -91,17 +91,17 @@ xVerminSavedData = {
 		["Ironspine"] = {
 			"Rend", -- [1]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Rogue Flame Spirit"] = {
 			"Lava Lash", -- [1]
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Whirlwind Ripper"] = {
 			"Lightning Shield", -- [1]
@@ -126,6 +126,7 @@ xVerminSavedData = {
 		["High Inquisitor Whitemane"] = {
 			"Intercept Stun", -- [1]
 			"Intimidation", -- [2]
+			"Crippling Poison", -- [3]
 		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
@@ -145,6 +146,16 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
+		["Burning Destroyer"] = {
+			"Lava Lash", -- [1]
+			"Serpent Sting", -- [2]
+		},
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
+		},
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
@@ -154,19 +165,18 @@ xVerminSavedData = {
 			"Stormstrike", -- [6]
 			"Sunder Armor", -- [7]
 			"Wing Clip", -- [8]
+			"Crippling Poison", -- [9]
+			"Multi-Shot", -- [10]
+			"Arcane Shot", -- [11]
+			"Smite", -- [12]
+			"Firebolt", -- [13]
+			"Flame Shock", -- [14]
+			"Mutilate", -- [15]
+			"Lava Lash", -- [16]
+			"Explosive Shot", -- [17]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
-		},
-		["Lesser Rock Elemental"] = {
-			"Serpent Sting", -- [1]
-		},
-		["Burning Destroyer"] = {
-			"Lava Lash", -- [1]
-			"Serpent Sting", -- [2]
-		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
 		},
 		["Fire Elemental"] = {
 			"Flametongue Attack", -- [1]
@@ -200,11 +210,11 @@ xVerminSavedData = {
 			"Charge Stun", -- [1]
 			"Entrapment", -- [2]
 		},
-		["Glutton"] = {
-			"Starfire Stun", -- [1]
-		},
 		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]
+		},
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]
@@ -237,6 +247,7 @@ xVerminSavedData = {
 			"Deep Wound", -- [2]
 			"Intimidation", -- [3]
 			"Starfire Stun", -- [4]
+			"Rend", -- [5]
 		},
 		["Dark Rider"] = {
 			"Charge Stun", -- [1]

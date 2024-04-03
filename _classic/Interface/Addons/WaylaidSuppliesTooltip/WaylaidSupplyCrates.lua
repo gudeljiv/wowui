@@ -29,17 +29,17 @@ local reputationItems = {
     ["Waylaid Supplies: Rough Boomsticks"] = 			{ 450, 1500, 100, 90,  10, 12 },
     ["Waylaid Supplies: Rough Copper Bombs"] = 			{ 450, 1500, 100, 90,  10, 12 },
     ["Waylaid Supplies: Bronze Bars"] = 				{ 500, 1500, 500, 140, 25, 18 },
-    ["Waylaid Supplies: Bruiseweed"] = 					{ 500, 1500, 500, 140, 25, 18 },
+    ["Waylaid Supplies: Bruiseweed"] = 					{ 500, 1500, 500, 140, 25, 18 }, --L28 Human, 30xp, 15s, 550rep
     ["Waylaid Supplies: Goblin Deviled Clams"] = 		{ 500, 1500, 500, 140, 25, 18 },
-    ["Waylaid Supplies: Heavy Wool Bandages"] = 		{ 500, 1500, 500, 140, 25, 18 }, --l25 troll, 160xp, 500rep, 15s
-    ["Waylaid Supplies: Medium Leather"] = 				{ 500, 1500, 500, 140, 25, 18 },
-    ["Waylaid Supplies: Silver Bars"] = 				{ 500, 1500, 500, 140, 25, 18 },
+    ["Waylaid Supplies: Heavy Wool Bandages"] = 		{ 500, 1500, 500, 140, 25, 18 }, --l25 Troll, 160xp, 500rep, 15s
+    ["Waylaid Supplies: Medium Leather"] = 				{ 500, 1500, 500, 140, 25, 18 }, --L28 Human, 30xp, 15s, 550rep
+    ["Waylaid Supplies: Silver Bars"] = 				{ 500, 1500, 500, 140, 25, 18 }, --L28 Human, 30xp, 15s, 550rep
     ["Waylaid Supplies: Smoked Bear Meat"] = 			{ 500, 1500, 500, 140, 25, 18 },
     ["Waylaid Supplies: Smoked Sagefish"] = 			{ 500, 1500, 500, 140, 25, 18 }, --L23 Troll, 2680 xp. 500rep, 15s.
     ["Waylaid Supplies: Swiftthistle"] = 				{ 500, 1500, 500, 140, 25, 18 },
     ["Waylaid Supplies: Dark Leather Cloaks"] = 		{ 650, 2000, 500, 180, 25, 22 },
     ["Waylaid Supplies: Gray Woolen Shirts"] = 			{ 650, 2000, 500, 180, 25, 22 },
-    ["Waylaid Supplies: Lesser Mana Potions"] = 		{ 650, 2000, 500, 180, 25, 22 }, --L25 Troll, 360 xp, 650rep, 20s
+    ["Waylaid Supplies: Lesser Mana Potions"] = 		{ 650, 2000, 500, 180, 25, 22 }, --L25 Troll, 360 xp, 650rep, 20s. L28 Human, 280xp, 20s, 715rep
     ["Waylaid Supplies: Minor Mana Oil"] = 				{ 650, 2000, 500, 180, 25, 22 },
     ["Waylaid Supplies: Rough Bronze Boots"] = 			{ 650, 2000, 500, 180, 25, 22 },
     ["Waylaid Supplies: Small Bronze Bombs"] = 			{ 650, 2000, 500, 180, 25, 22 },
@@ -48,7 +48,7 @@ local reputationItems = {
     ["Waylaid Supplies: Ornate Spyglasses"] = 			{ 800, 3000, 500, 200, 25, 25 },
     ["Waylaid Supplies: Pearl-clasped Cloaks"] = 		{ 800, 3000, 500, 200, 25, 25 }, --L23 Troll, 6800xp (200base x 100%), 30s, 800Rep. (XP = Base XP x 2(if disc buff) + (Base XP x 16)) + x 2 if Discover Buff?)
     ["Waylaid Supplies: Runed Silver Rods"] = 			{ 800, 3000, 500, 200, 25, 25 },
-    ["Waylaid Supplies: Silver Skeleton Keys"] = 		{ 800, 3000, 500, 200, 25, 25 },
+    ["Waylaid Supplies: Silver Skeleton Keys"] = 		{ 800, 3000, 500, 200, 25, 25 }, --L28 Human, 400p, 30s, 
 --Phase 2 
 	--700 Rep Crates			                   		{ Rep,  f$,    u$,  XP, iLvl, qLvl}	Turn in notes
 	["Waylaid Supplies: Fadeleaf"] = 					{ 700, 20000, 2000, 800, 30, 28 },
@@ -91,6 +91,32 @@ local reputationItems = {
 	--["Waylaid Supplies: Gnomish Rocket Boots"] = 		{ 1000, 25000, 2000, 2500, 40, 40 },
     --["Waylaid Supplies: Goblin Mortars"] = 			{ 1000, 25000, 2000, 2500, 40, 40 },
     --["Waylaid Supplies: Lesser Stoneshield Potions"] ={ 1000, 25000, 2000, 2500, 40, 40 },
+--Phase 3
+    ["Waylaid Supplies: Dreamfoil"] = 					{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Heavy Mageweave Bandages"] = 	{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Nightfin Soup"] = 				{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Rugged Leather"] = 				{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Sungrass"] = 					{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Tender Wolf Steaks"] = 			{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Thick Hide"] = 					{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Thorium Bars"] = 				{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Truesilver Bars"] = 			{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Undermine Clam Chowder"] = 		{950,  690000, 6969, 1700, 50, 45},
+    ["Waylaid Supplies: Black Mageweave Headbands"] = 	{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Enchanted Thorium Bars"] = 		{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Hi-Explosive Bombs"] = 			{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Major Healing Potions"] = 		{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Mithril Coifs"] = 				{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Rugged Armor Kits"] = 			{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Superior Mana Potions"] = 		{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Thorium Belts"] = 				{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Thorium Grenades"] = 			{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Tuxedo Shirts"] = 				{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Wicked Leather Bracers"] = 		{1300, 690000, 6969, 2850, 50, 45},
+    ["Waylaid Supplies: Runecloth Belts"] = 			{1850, 690000, 6969, 4650, 50, 45},
+    ["Waylaid Supplies: Runic Leather Bracers"] = 		{1850, 690000, 6969, 4650, 50, 45},
+    ["Waylaid Supplies: Thorium Rifles"] = 				{1850, 690000, 6969, 4650, 50, 45},
+    ["Waylaid Supplies: Truesilver Gauntlets"] = 		{1850, 690000, 6969, 4650, 50, 45},
 }
 
 local function Add_Waylaid_Supplies_Tooltip(tooltip)
@@ -110,7 +136,7 @@ local function Add_Waylaid_Supplies_Tooltip(tooltip)
             elseif standingID < 7 then
                 threshold = 29
             elseif standingID < 8 then
-                threshold = 60
+                threshold = 41
             end
 			
             local reputationAmounts = reputationItems[itemName]
@@ -169,9 +195,9 @@ function frame:OnEvent(event, itemID, success)
         end
     end
 end
-print("WST: Welcome to Waylaid Supplies Tooltip v1.4.4.3")
-print("WST: Known Issue: Info needed for correct quest xp values")
-print("WST: Coming Soon: Auction house addon integrations")
+print("WST: Welcome to Waylaid Supplies Tooltip v1.4.7")
+print("WST: Known Issue: Phase 3 values are incomplete, update incoming")
+print("WST: Coming Soon: Auction house addon integrations and localization")
 frame:SetScript("OnEvent", frame.OnEvent)
 GameTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)
 ItemRefTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)

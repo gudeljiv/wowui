@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12143,
+	["session"] = 12157,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3471,5 +3471,13 @@ BugGrabberDB = {
 			["session"] = 12134,
 			["counter"] = 1,
 		}, -- [447]
+		{
+			["message"] = "FontString:SetText(): Font not set\nLua Taint: ShadowedUnitFrames",
+			["time"] = "2024/04/03 20:39:40",
+			["locals"] = "(*temporary) = FontString {\n 0 = <userdata>\n}\n(*temporary) = \"128\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/auras.lua\"]:608: in function <...nterface/AddOns/ShadowedUnitFrames/modules/auras.lua:539>\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/auras.lua\"]:626: in function <...nterface/AddOns/ShadowedUnitFrames/modules/auras.lua:614>\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/auras.lua\"]:680: in function <...nterface/AddOns/ShadowedUnitFrames/modules/auras.lua:675>\n[string \"@Interface/AddOns/ShadowedUFFacade/ShadowedUFFacade.lua\"]:67: in function `?'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:21: in function `FullUpdate'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:295: in function `CheckUnitStatus'\n[string \"@Interface/AddOns/ShadowedUnitFrames/modules/units.lua\"]:211: in function <...nterface/AddOns/ShadowedUnitFrames/modules/units.lua:208>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface/FrameXML/SecureStateDriver.lua\"]:83: in function <Interface/FrameXML/SecureStateDriver.lua:73>\n[string \"@Interface/FrameXML/SecureStateDriver.lua\"]:137: in function <Interface/FrameXML/SecureStateDriver.lua:119>",
+			["session"] = 12148,
+			["counter"] = 7,
+		}, -- [448]
 	},
 }

@@ -13,6 +13,12 @@ VER 3 0000000001000016 "cat" "134400"
 /cast [form:2] Cat Form
 /cast [noform:2] !Cat Form
 END
+VER 3 000000000100001B "charge" "134400"
+#showtooltip Feral Charge
+/cast [noform:1] Bear Form 
+/cast Enrage
+/cast Feral Charge
+END
 VER 3 0000000001000007 "dash" "134400"
 #showtooltip Dash
 /cancelform [noform:3] 

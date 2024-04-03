@@ -7,6 +7,7 @@ local addonName, addon = ...
 -- List of items and their corresponding amounts needed to fill a waylaid supply crate.
 -- [itemID] = {numberReq, moneyReward, itemName, pluralizedName}
 local supplyShipment = {
+--Phase 1
     [6290]  =  {20, 600,    "Brilliant Smallfish", "Brilliant Smallfish"},
     [2840]  =  {20, 600,    "Copper Bar", "Copper Bars"},
     [2581]  =  {10, 600,    "Heavy Linen Bandage", "Heavy Linen Bandages"},
@@ -49,6 +50,7 @@ local supplyShipment = {
     [5542]  =  {3,  3000,   "Pearl-clasped Cloak", "Pearl-clasped Cloaks"},
     [6339]  =  {1,  3000,   "Runed Silver Rod", "Runed Silver Rods"},
     [15869] =  {14, 3000,   "Silver Skeleton Key", "Silver Skeleton Keys"},
+--Phase 2
     [3818]  =  {16, 20000,  "Fadeleaf", "Fadeleaf"},
     [6371]  =  {7,  20000,  "Fire Oil", "Fire Oil"},
     [4334]  =  {3,  20000,  "Formal White Shirt", "Formal White Shirts"},
@@ -81,6 +83,32 @@ local supplyShipment = {
     [10508] =  {2,  120000, "Mithril Blunderbus", "Mithril Blunderbuss"},
     [8198]  =  {2,  120000, "Turtle Scale Bracer", "Turtle Scale Bracers"},
     [10008] =  {3,  120000, "White Bandit Mask", "White Bandit Masks"},
+--Phase 3
+    [13463] = {6, 690000, "Dreamfoil", "Dreamfoil"},
+    [8545]  = {14, 690000, "Heavy Mageweave Bandage", "Heavy Mageweave Bandages"},
+    [13931] = {8, 690000, "Nightfin Soup", "Nightfin Soup"},
+    [8170]  = {14, 690000, "Rugged Leather", "Rugged Leather"},
+    [8838]  = {15, 690000, "Sungrass", "Sungrass"},
+    [18045] = {12, 690000, "Tender Wolf Steak", "Tender Wolf Steaks"},
+    [8169]  = {8, 690000, "Thick Hide", "Thick Hide"},
+    [12359] = {16, 690000, "Thorium Bar", "Thorium Bars"},
+    [6037]  = {12, 690000, "Truesilver Bar", "Truesilver Bars"},
+    [16766] = {16, 690000, "Undermine Clam Chowder", "Undermine Clam Chowder"},
+    [10024] = {5, 690000, "Black Mageweave Headband", "Black Mageweave Headbands"},
+    [12655] = {4, 690000, "Enchanted Thorium Bar", "Enchanted Thorium Bars"},
+    [10562] = {16, 690000, "Hi-Explosive Bomb", "Hi-Explosive Bombs"},
+    [13446] = {8, 690000, "Major Healing Potion", "Major Healing Potions"},
+    [7931]  = {3, 690000, "Mithril Coif", "Mithril Coifs"},
+    [15564] = {12, 690000, "Rugged Armor Kit", "Rugged Armor Kits"},
+    [13443] = {6, 690000, "Superior Mana Potion", "Superior Mana Potions"},
+    [12406] = {5, 690000, "Thorium Belt", "Thorium Belts"},
+    [15993] = {3, 690000, "Thorium Grenade", "Thorium Grenades"},
+    [10034] = {4, 690000, "Tuxedo Shirt", "Tuxedo Shirts"},
+    [15084] = {6, 690000, "Wicked Leather Bracer", "Wicked Leather Bracers"},
+    [13856] = {6, 690000, "Runecloth Belt", "Runecloth Belts"},
+    [15092] = {5, 690000, "Runic Leather Bracer", "Runic Leather Bracers"},
+    [15995] = {2, 690000, "Thorium Rifle", "Thorium Rifles"},
+    [7938]  = {2, 690000, "Truesilver Gauntlet", "Truesilver Gauntlets"},
 }
 
 local function AddTooltipInfo(tooltip, itemID)

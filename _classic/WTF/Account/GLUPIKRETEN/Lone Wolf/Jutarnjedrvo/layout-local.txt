@@ -92,9 +92,9 @@ W: 344
 H: 446
 Frame: LootFrame
 FrameLevel: 2
-Anchor: CENTER
-X: 480
-Y: 254
+Anchor: TOPLEFT
+X: 16
+Y: -116
 W: 170
 H: 240
 Frame: ItemTextFrame
@@ -244,6 +244,13 @@ X: -368
 Y: -93
 W: 36
 H: 36
+Frame: AtlasLoot_GUI-Frame
+FrameLevel: 1
+Anchor: CENTER
+X: -92
+Y: 18
+W: 920
+H: 600
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: RIGHT
