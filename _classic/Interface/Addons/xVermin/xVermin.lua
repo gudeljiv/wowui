@@ -38,6 +38,10 @@ local function xInstallAddon()
 	C_CVar.SetCVar('showArenaEnemyCastbar', '0')
 	C_CVar.SetCVar('showArenaEnemyPets', '0')
 
+	if not SHOW_INSCRIPTION_LEVEL then 
+		SHOW_INSCRIPTION_LEVEL=15
+	end
+
 	if Grid2 then
 		Grid2.db:SetProfile('xVermin')
 	end

@@ -849,9 +849,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 168606,
-		["timeAtThisLevel"] = 174,
-		["timeStamp"] = 501507.847,
+		["total"] = 177172,
+		["timeAtThisLevel"] = 287,
+		["timeStamp"] = 525638.422,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -999,9 +999,9 @@ CB_PlayedTime = {
 		["total"] = 8794,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 133533,
-		["timeAtThisLevel"] = 2763,
-		["timeStamp"] = 69651.861,
+		["total"] = 134039,
+		["timeAtThisLevel"] = 3269,
+		["timeStamp"] = 525825.74,
 	},
 	["Augustin-"] = {
 		["total"] = 425995,

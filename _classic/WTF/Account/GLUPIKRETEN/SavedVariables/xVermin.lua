@@ -54,6 +54,9 @@ xVerminSavedData = {
 			"Cheap Shot", -- [1]
 			"Mutilate", -- [2]
 		},
+		["Üranus"] = {
+			"Sunder Armor", -- [1]
+		},
 		["Wind Howler"] = {
 			"Deep Wound", -- [1]
 		},
@@ -206,12 +209,16 @@ xVerminSavedData = {
 			"Instant Poison II", -- [22]
 			"Poison", -- [23]
 			"Frost Shock", -- [24]
+			"Faerie Fire (Feral)", -- [25]
+			"Immolation Trap Effect", -- [26]
 		},
 		["Fire Elemental"] = {
 			"Flametongue Attack", -- [1]
 			"Magma Totem", -- [2]
 			"Serpent Sting", -- [3]
 			"Lava Lash", -- [4]
+			"Deep Wound", -- [5]
+			"Explosive Trap Effect", -- [6]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -236,6 +243,9 @@ xVerminSavedData = {
 			"Explosive Shot", -- [17]
 			"Earthbind", -- [18]
 			"Magma Totem", -- [19]
+			"Faerie Fire (Feral)", -- [20]
+			"Mortal Strike", -- [21]
+			"Mangle", -- [22]
 		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
@@ -258,6 +268,8 @@ xVerminSavedData = {
 			"Intimidation", -- [3]
 			"Starfire Stun", -- [4]
 			"Rend", -- [5]
+			"rake", -- [6]
+			"Crippling Poison", -- [7]
 		},
 		["Rogue Flame Spirit"] = {
 			"Lava Lash", -- [1]

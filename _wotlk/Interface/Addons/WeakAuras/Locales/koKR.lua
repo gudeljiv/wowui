@@ -73,6 +73,10 @@ L["40 Man Raid"] = "40인 공격대"
 L["40 Player Raid"] = "40인 공격대"
 L["5 Man Dungeon"] = "5인 던전"
 --[[Translation missing --]]
+L[ [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=] ] = [=[A detailed overview of your auras and WeakAuras systems
+Copy the whole text to Weakaura's Discord if you need assistance.]=]
+--[[Translation missing --]]
 L["A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."] = "A trigger in this aura is set up to track a soft target unit, but you don't have the CVars set up for this to work correctly. Consider either changing the unit tracked, or configuring the Soft Target CVars."
 L["Abbreviate"] = "축약"
 L["AbbreviateLargeNumbers (Blizzard)"] = "큰 숫자 축약 (블리자드)"
@@ -167,6 +171,8 @@ L["At missing Value"] = "At missing Value"
 L["At Percent"] = "At Percent"
 --[[Translation missing --]]
 L["At Value"] = "At Value"
+--[[Translation missing --]]
+L["At War"] = "At War"
 L["Attach to End"] = "끝에 붙이기"
 L["Attach to Start"] = "시작에 붙이기"
 L["Attack Power"] = "공격력"
@@ -192,6 +198,8 @@ L["Aura Version: %s"] = "효과 버전: %s"
 L["Aura(s) Found"] = "효과 발견"
 L["Aura(s) Missing"] = "효과 누락"
 L["Aura:"] = "효과:"
+--[[Translation missing --]]
+L["Auras"] = "Auras"
 L["Auras:"] = "효과들:"
 L["Auriaya"] = "아우리아야"
 L["Author Options"] = "작성자 옵션"
@@ -245,6 +253,8 @@ L["Blood Rune #1"] = "혈기 룬 #1"
 L["Blood Rune #2"] = "혈기 룬 #2"
 L["Bloodlord Mandokir"] = "혈군주 만도키르"
 L["Blood-Queen Lana'thel"] = "피의 여왕 라나텔"
+--[[Translation missing --]]
+L["Bonus Reputation Gain"] = "Bonus Reputation Gain"
 L["Border"] = "테두리"
 L["Boss"] = "우두머리"
 L["Boss Emote"] = "우두머리 감정 표현"
@@ -399,6 +409,8 @@ L["Crowd Controlled"] = "군중 제어됨"
 L["Crushing"] = "강타"
 L["C'thun"] = "쑨"
 --[[Translation missing --]]
+L["Cumulated time used during profiling"] = "Cumulated time used during profiling"
+--[[Translation missing --]]
 L["Currency"] = "Currency"
 --[[Translation missing --]]
 L["Current Combo Point charged"] = "Current Combo Point charged"
@@ -520,6 +532,10 @@ L["Ease In and Out"] = "Ease In and Out"
 --[[Translation missing --]]
 L["Ease Out"] = "Ease Out"
 L["Ebonroc"] = "에본로크"
+--[[Translation missing --]]
+L["Eclipse"] = "Eclipse"
+--[[Translation missing --]]
+L["Eclipse Direction"] = "Eclipse Direction"
 L["Edge"] = "경계"
 L["Edge of Madness"] = "광란의 경계"
 L["Elide"] = "생략"
@@ -792,9 +808,9 @@ L["Icon Function"] = "Icon Function"
 --[[Translation missing --]]
 L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 --[[Translation missing --]]
-L["ID"] = "ID"
---[[Translation missing --]]
 L["Id"] = "Id"
+--[[Translation missing --]]
+L["ID"] = "ID"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "추가 지원이 필요한 경우, GitHub에서 티켓을 열거나 Discord( https://discord.gg/weakauras )를 방문해 주세요!"
 L["Ignis the Furnace Master"] = "용광로 군주 이그니스"
 L["Ignore Dead"] = "죽음 무시"
@@ -826,8 +842,6 @@ L["Increase Precision Below"] = "Increase Precision Below"
 L["Increases by one per stage or intermission."] = "단계 또는 사잇단계당 1씩 증가합니다."
 L["Information"] = "정보"
 L["Inherited"] = "상속"
---[[Translation missing --]]
-L["Instace Id"] = "Instace Id"
 L["Instakill"] = "죽임"
 --[[Translation missing --]]
 L["Install the addons BugSack and BugGrabber for detailed error logs."] = "Install the addons BugSack and BugGrabber for detailed error logs."
@@ -856,8 +870,12 @@ L["Is Exactly"] = "정확할 때"
 L["Is Moving"] = "이동 중일 때"
 L["Is Off Hand"] = "보조장비일 때"
 --[[Translation missing --]]
+L["Is Paragon Reputation"] = "Is Paragon Reputation"
+--[[Translation missing --]]
 L["Is Paused"] = "Is Paused"
 L["is useable"] = "사용 가능할 때"
+--[[Translation missing --]]
+L["Is Weekly Renown Capped"] = "Is Weekly Renown Capped"
 L["Island Expedition (Heroic)"] = "군도 탐험 (영웅)"
 L["Island Expedition (Mythic)"] = "군도 탐험 (신화)"
 L["Island Expedition (Normal)"] = "군도 탐험 (일반)"
@@ -971,6 +989,8 @@ L["Maximum Estimate"] = "최대 예상치"
 --[[Translation missing --]]
 L["Maximum Progress"] = "Maximum Progress"
 --[[Translation missing --]]
+L["Maximum time used on a single frame"] = "Maximum time used on a single frame"
+--[[Translation missing --]]
 L["Media"] = "Media"
 L["Medium"] = "중간"
 --[[Translation missing --]]
@@ -1009,6 +1029,8 @@ L["Monster Party"] = "몬스터 파티"
 L["Monster Say"] = "몬스터 일반 대화"
 L["Monster Whisper"] = "몬스터 귓속말"
 L["Monster Yell"] = "몬스터 외침"
+--[[Translation missing --]]
+L["Moon"] = "Moon"
 L["Most remaining time"] = "최대 남은 시간"
 L["Mounted"] = "탈것 탑승 중"
 L["Mouse Cursor"] = "마우스 커서"
@@ -1182,6 +1204,8 @@ L["Overlay Cost of Casts"] = "주문의 오버레이 수치"
 --[[Translation missing --]]
 L["Overlay Latency"] = "Overlay Latency"
 --[[Translation missing --]]
+L["Paragon Reward Pending"] = "Paragon Reward Pending"
+--[[Translation missing --]]
 L["Parent Zone"] = "Parent Zone"
 L["Parry"] = "막음"
 L["Parry (%)"] = "무기 막기 (%)"
@@ -1309,9 +1333,17 @@ L["Remaining Duration"] = "남은 지속시간"
 L["Remaining Time"] = "남은 시간"
 L["Remove Obsolete Auras"] = "쓸모없는 효과를 제거"
 --[[Translation missing --]]
+L["Renown Level"] = "Renown Level"
+--[[Translation missing --]]
+L["Renown Max Level"] = "Renown Max Level"
+--[[Translation missing --]]
 L["Repair"] = "Repair"
 L["Repeat"] = "반복"
 L["Report Summary"] = "보고서 요약"
+--[[Translation missing --]]
+L["Reputation"] = "Reputation"
+--[[Translation missing --]]
+L["Reputation (%)"] = "Reputation (%)"
 L["Requested display does not exist"] = "요청한 디스플레이가 존재하지 않습니다"
 L["Requested display not authorized"] = "요청한 디스플레이가 올바르지 않습니다"
 L["Requesting display information from %s ..."] = "%s의 디스플레이 정보 요청 중 ..."
@@ -1493,6 +1525,8 @@ L["Spell School"] = "주문 갈래"
 L["Spell Usable"] = "주문 사용 가능"
 --[[Translation missing --]]
 L["Spellname"] = "Spellname"
+--[[Translation missing --]]
+L["Spike"] = "Spike"
 L["Spin"] = "회전"
 L["Spiral"] = "소용돌이"
 L["Spiral In And Out"] = "회전 소용돌이"
@@ -1520,6 +1554,8 @@ L["Star Shake"] = "별모양 흔들림"
 --[[Translation missing --]]
 L["Start Animation"] = "Start Animation"
 L["Start Now"] = "지금 시작"
+--[[Translation missing --]]
+L["Start Profiling"] = "Start Profiling"
 L["Status"] = "상태"
 --[[Translation missing --]]
 L["Status Bar"] = "Status Bar"
@@ -1537,6 +1573,8 @@ L["Subtract GCD"] = "Subtract GCD"
 L["Success"] = "Success"
 L["Sulfuron Harbinger"] = "설퍼론 사자"
 L["Summon"] = "소환"
+--[[Translation missing --]]
+L["Sun"] = "Sun"
 L["Supports multiple entries, separated by commas"] = "쉼표로 구분된 여러 항목을 지원합니다"
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "쉼표로 구분된 여러 항목을 지원합니다"
@@ -1556,6 +1594,8 @@ L["Swipe"] = "Swipe"
 --[[Translation missing --]]
 L["Syntax /wa feature <toggle|on|enable|disable|off> <feature>"] = "Syntax /wa feature <toggle|on|enable|disable|off> <feature>"
 L["System"] = "시스템"
+--[[Translation missing --]]
+L["Systems"] = "Systems"
 --[[Translation missing --]]
 L["Tab "] = "Tab "
 L["Talent"] = "특성"
@@ -1617,6 +1657,8 @@ L["Threat Percent"] = "위협 수준 백분율"
 L["Threat Situation"] = "위협 수준 상황"
 L["Threat Value"] = "위협 수준 수치"
 L["Tick"] = "틱"
+--[[Translation missing --]]
+L["Time"] = "Time"
 L["Time Format"] = "시간 형식"
 --[[Translation missing --]]
 L["Time in GCDs"] = "Time in GCDs"
@@ -1654,8 +1696,6 @@ L["Top Right"] = "오른쪽 위"
 L["Top to Bottom"] = "위에서 아래로"
 L["Toravon the Ice Watcher"] = "얼음 감시자 토라본"
 L["Torghast"] = "토르가스트"
---[[Translation missing --]]
-L["Total"] = "Total"
 L["Total Duration"] = "총 지속시간"
 --[[Translation missing --]]
 L["Total Earned in this Season"] = "Total Earned in this Season"
@@ -1663,6 +1703,8 @@ L["Total Earned in this Season"] = "Total Earned in this Season"
 L["Total Essence"] = "Total Essence"
 L["Total Experience"] = "전체 경험치"
 L["Total Match Count"] = "총 일치 횟수"
+--[[Translation missing --]]
+L["Total Reputation"] = "Total Reputation"
 L["Total Stacks"] = "총 중첩"
 --[[Translation missing --]]
 L["Total stacks over all matches"] = "Total stacks over all matches"
@@ -1755,8 +1797,6 @@ L["Using WeakAuras.regions is deprecated. Use WeakAuras.GetRegion(id) instead."]
 L["Vaelastrasz the Corrupt"] = "타락한 밸라스트라즈"
 L["Valithria Dreamwalker"] = "발리스리아 드림워커"
 L["Val'kyr Twins"] = "발키르 쌍둥이"
---[[Translation missing --]]
-L["Value"] = "Value"
 L["Vault of Archavon"] = "아카본 석실"
 L["Versatility (%)"] = "유연성 (%)"
 L["Versatility Rating"] = "유연성"

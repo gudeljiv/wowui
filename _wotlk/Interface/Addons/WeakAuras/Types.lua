@@ -2814,7 +2814,7 @@ end
 ---@field instance_difficulty_types table
 Private.instance_difficulty_types = {}
 
-do
+if WeakAuras.IsRetail() then
   -- Fill out instance_difficulty_types automatically.
   -- Unfortunately the names BLizzard gives are not entirely unique,
   -- so try hard to disambiguate them via the type, and if nothing works by

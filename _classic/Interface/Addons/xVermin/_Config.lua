@@ -8,7 +8,7 @@ local width, height = GetPhysicalScreenSize()
 -- 	scale = 0.55
 -- end
 
-scale = 1232 / height
+local scale = 1232 / height
 -- local resolution_width = string.match(resolution, "%d+x(%d+)")
 -- local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
 

@@ -176,6 +176,9 @@ xVerminSavedData = {
 			"Explosive Shot", -- [17]
 			"Earthbind", -- [18]
 			"Magma Totem", -- [19]
+			"Faerie Fire (Feral)", -- [20]
+			"Mortal Strike", -- [21]
+			"Mangle", -- [22]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -185,6 +188,8 @@ xVerminSavedData = {
 			"Magma Totem", -- [2]
 			"Serpent Sting", -- [3]
 			"Lava Lash", -- [4]
+			"Deep Wound", -- [5]
+			"Explosive Trap Effect", -- [6]
 		},
 		["Herod"] = {
 			"Arcane Shot", -- [1]
@@ -211,6 +216,8 @@ xVerminSavedData = {
 			"Instant Poison II", -- [22]
 			"Poison", -- [23]
 			"Frost Shock", -- [24]
+			"Faerie Fire (Feral)", -- [25]
+			"Immolation Trap Effect", -- [26]
 		},
 		["Agathelos the Raging"] = {
 			"Charge Stun", -- [1]
@@ -254,6 +261,8 @@ xVerminSavedData = {
 			"Intimidation", -- [3]
 			"Starfire Stun", -- [4]
 			"Rend", -- [5]
+			"rake", -- [6]
+			"Crippling Poison", -- [7]
 		},
 		["Dark Rider"] = {
 			"Charge Stun", -- [1]

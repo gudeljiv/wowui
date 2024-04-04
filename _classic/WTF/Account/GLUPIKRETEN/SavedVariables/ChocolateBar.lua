@@ -849,9 +849,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 169100,
-		["timeStamp"] = 502002.069,
-		["timeAtThisLevel"] = 668,
+		["total"] = 177172,
+		["timeStamp"] = 525638.422,
+		["timeAtThisLevel"] = 287,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -948,9 +948,9 @@ CB_PlayedTime = {
 		["total"] = 425995,
 	},
 	["Doperage-LoneWolf"] = {
-		["total"] = 133533,
-		["timeStamp"] = 69651.861,
-		["timeAtThisLevel"] = 2763,
+		["total"] = 134055,
+		["timeStamp"] = 525841.71,
+		["timeAtThisLevel"] = 3285,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,
