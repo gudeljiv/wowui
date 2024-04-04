@@ -203,11 +203,15 @@ xVerminSavedData = {
 			"Serpent Sting", -- [19]
 			"Shadow Bolt", -- [20]
 			"Wrath", -- [21]
+			"Instant Poison II", -- [22]
+			"Poison", -- [23]
+			"Frost Shock", -- [24]
 		},
 		["Fire Elemental"] = {
 			"Flametongue Attack", -- [1]
 			"Magma Totem", -- [2]
 			"Serpent Sting", -- [3]
+			"Lava Lash", -- [4]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -230,6 +234,8 @@ xVerminSavedData = {
 			"Mutilate", -- [15]
 			"Lava Lash", -- [16]
 			"Explosive Shot", -- [17]
+			"Earthbind", -- [18]
+			"Magma Totem", -- [19]
 		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]

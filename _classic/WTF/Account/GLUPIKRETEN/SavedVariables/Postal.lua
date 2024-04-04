@@ -26,7 +26,7 @@ Postal3DB = {
 			["alts"] = {
 				"Dopeah|Stitches|Horde|1|SHAMAN", -- [1]
 				"Dopebolt|Lone Wolf|Horde|2|MAGE", -- [2]
-				"Dopeclaw|Lone Wolf|Horde|33|DRUID", -- [3]
+				"Dopeclaw|Lone Wolf|Horde|34|DRUID", -- [3]
 				"Dopeclaw|Stitches|Horde|1|DRUID", -- [4]
 				"Dopecoil|Lone Wolf|Horde|9|SHAMAN", -- [5]
 				"Dopecure|Stitches|Horde|11|PRIEST", -- [6]
@@ -39,7 +39,7 @@ Postal3DB = {
 				"Dopesnare|Stitches|Horde|40|HUNTER", -- [13]
 				"Dopestab|Lone Wolf|Horde|35|ROGUE", -- [14]
 				"Dopetrap|Lone Wolf|Horde|1|HUNTER", -- [15]
-				"Jutarnjedrvo|Lone Wolf|Horde|39|SHAMAN", -- [16]
+				"Jutarnjedrvo|Lone Wolf|Horde|40|SHAMAN", -- [16]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [17]
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [18]
 				"Vermins|Stitches|Horde|26|WARRIOR", -- [19]

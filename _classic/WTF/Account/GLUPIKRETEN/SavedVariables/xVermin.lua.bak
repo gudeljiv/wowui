@@ -174,6 +174,8 @@ xVerminSavedData = {
 			"Mutilate", -- [15]
 			"Lava Lash", -- [16]
 			"Explosive Shot", -- [17]
+			"Earthbind", -- [18]
+			"Magma Totem", -- [19]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -182,6 +184,7 @@ xVerminSavedData = {
 			"Flametongue Attack", -- [1]
 			"Magma Totem", -- [2]
 			"Serpent Sting", -- [3]
+			"Lava Lash", -- [4]
 		},
 		["Herod"] = {
 			"Arcane Shot", -- [1]
@@ -205,6 +208,9 @@ xVerminSavedData = {
 			"Serpent Sting", -- [19]
 			"Shadow Bolt", -- [20]
 			"Wrath", -- [21]
+			"Instant Poison II", -- [22]
+			"Poison", -- [23]
+			"Frost Shock", -- [24]
 		},
 		["Agathelos the Raging"] = {
 			"Charge Stun", -- [1]

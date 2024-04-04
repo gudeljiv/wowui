@@ -38,6 +38,7 @@ local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
+local FACTIONS3_CONTENT = data:AddContentType(AL["SoD Factions"], ATLASLOOT_RAID20_COLOR)
 local FACTIONS_CONTENT = data:AddContentType(AL["Factions"], ATLASLOOT_FACTION_COLOR)
 local FACTIONS2_CONTENT = data:AddContentType(AL["Secondary factions"], {0.1, 0.3, 0.1, 1})
 
@@ -471,9 +472,10 @@ data["WintersaberTrainers"] = {
 		},
 	},
 }
+
 data["AzerothCommerceAuthority"] = {
 	FactionID = 2586,
-	ContentType = FACTIONS_ALLI_CONTENT,
+	ContentType = FACTIONS3_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	items = {
 		{ -- Exalted
@@ -532,7 +534,7 @@ data["AzerothCommerceAuthority"] = {
 
 data["DurotarSupplyAndLogistics"] = {
 	FactionID = 2587,
-	ContentType = FACTIONS_HORDE_CONTENT,
+	ContentType = FACTIONS3_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	items = {
 		{ -- Exalted
@@ -587,6 +589,133 @@ data["DurotarSupplyAndLogistics"] = {
 		},
 	},
 }
+
+data["Emerald Wardens"] = {
+	FactionID = 2641,
+	ContentType = FACTIONS3_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	items = {
+		{ -- Exalted
+			name = ALIL["Exalted"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep8" },
+				{ 2, 221442 }, -- Roar of the Guardian
+				{ 3, 220621 }, -- Nightmare Resonance Crystal
+				{ 4, 221440 }, -- Roar of the Dream
+				{ 5, 221443 }, -- Roar of the Grove
+			},
+		},
+		{ -- Revered
+			name = ALIL["Revered"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep7" },
+				{ 2, 221441 }, -- Warden of the Dream
+				{ 3, 220649 }, -- Merithra's Inheritence
+				{ 4, 221439 }, -- Armor of the Emerald Slumber
+				
+			},
+		},
+		{ -- Honored2
+			name = ALIL["Honored (2)"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep6" },
+				{ 2, "INV_Box_01", nil, AL["Mail"], nil },
+				{ 3, 221391 }, --Emerald Scalemail Helmet
+				{ 4, 221390 }, --Emerald Scalemail Breastplate
+				{ 5, 221388 }, --Emerald Scalemail Leggings
+				{ 7, 221402 }, --Emerald Chain Helmet
+				{ 8, 221404 }, --Emerald Chain Breastplate
+				{ 9, 221401 }, --Emerald Chain Leggings
+				{ 11, 221397 }, --Emerald Laden Helmet
+				{ 12, 221395 }, --Emerald Laden Breastplate
+				{ 13, 221398 }, --Emerald Laden Leggings
+				{ 16, "INV_Box_01", nil, AL["Plate"], nil },
+				{ 17, 221376 }, --Emerald Dream Helm
+				{ 18, 221380 }, --Emerald Dream Breastplate
+				{ 19, 221377 }, --Emerald Dream Legplates
+				{ 21, 221384 }, --Emerald Encrusted Helmet
+				{ 22, 221382 }, --Emerald Encrusted Battleplate
+				{ 23, 221385 }, --Emerald Encrusted Legplates
+			},
+		},
+		{ -- Honored
+			name = ALIL["Honored"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep6" },
+				{ 2, 213407 }, -- Catnip
+				{ 3, 221193 }, --Emerald Ring
+				{ 5, "INV_Box_01", nil, AL["Cloth"], nil },
+				{ 6, 221425 }, --Emerald Enchanted Circlet
+				{ 7, 221430 }, --Emerald Enchanted Robes
+				{ 8, 221429 }, --Emerald Enchanted Pants
+				{ 10, 221437 }, --Emerald Woven Circlet
+				{ 11, 221434 }, --Emerald Woven Robes
+				{ 12, 221435 }, --Emerald Woven Pants
+				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
+				{ 17, 221408 }, --Emerald Leather Helm
+				{ 18, 221406 }, --Emerald Leather Vest
+				{ 19, 221410 }, --Emerald Leather Pants
+				{ 21, 221413 }, --Emerald Dreamkeeper Helm
+				{ 22, 221417 }, --Emerald Dreamkeeper Chest
+				{ 23, 221414 }, --Emerald Dreamkeeper Pants
+				{ 25, 221422 }, --Emerald Watcher Helm
+				{ 26, 221419 }, --Emerald Watcher Vest
+				{ 27, 221423 }, --Emerald Watcher Leggings
+			},
+		},
+		{ -- Friendly2
+			name = ALIL["Friendly (2)"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep5" },
+				{ 2, "INV_Box_01", nil, AL["Mail"], nil },
+				{ 3, 221392 }, --Emerald Scalemail Shoudlers
+				{ 4, 221389 }, --Emerald Scalemail Gauntlets
+				{ 5, 221393 }, --Emerald Scalemail Boots
+				{ 7, 221399 }, --Emerald Laden Shoulders
+				{ 8, 221396 }, --Emerald Laden Gauntlets
+				{ 9, 221394 }, --Emerald Laden Boots
+				{ 11, 221400 }, --Emerald Chain Shoudlers
+				{ 12, 221403 }, --Emerald Chain Gauntlets
+				{ 13, 221405 }, --Emerald Chain Boots
+				{ 16, "INV_Box_01", nil, AL["Plate"], nil },
+				{ 17, 221386 }, --Emerald Encrusted Spaulders
+				{ 18, 221383 }, --Emerald Encrusted Handguards
+				{ 19, 221387 }, --Emerald Encrusted Plate Boots
+				{ 21, 221381 }, --Emerald Dream Pauldrons
+				{ 22, 221378 }, --Emerald Dream Gauntlets
+				{ 23, 221379 }, --Emerald Dream Sabatons
+			},
+		},
+		{ -- Friendly
+			name = ALIL["Friendly"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep5" },
+				{ 2, 221369 }, -- Nightmare Siphon
+				{ 3, 221374 }, -- Anguish of the Dream
+				{ 4, 221362 }, -- Weapon Cleaning Cloth
+				{ 5, 223648 }, -- Dream Imbued Arrow
+				{ 7, "INV_Box_01", nil, AL["Cloth"], nil },
+				{ 8, 221431 }, --Emerald Enchanted Shoulders
+				{ 9, 221427 }, --Emerald Enchanted Gloves
+				{ 10, 221426 }, --Emerald Enchanted Boots
+				{ 12, 221432 }, --Emerald Woven Mantle
+				{ 13, 221436 }, --Emerald Woven Gloves
+				{ 14, 221438 }, --Emerald Woven Boots
+				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
+				{ 17, 221411 }, --Emerald Leather Shoulders
+				{ 18, 221407 }, --Emerald Leather Gloves
+				{ 19, 221409 }, --Emerald Leather Sabatons
+				{ 21, 221416 }, --Emerald Dreamkeeper Shoulders
+				{ 22, 221412 }, --Emerald Dreamkeeper Gloves
+				{ 23, 221415 }, --Emerald Dreamkeeper Boots
+				{ 25, 221424 }, --Emerald Watcher Shoulders
+				{ 26, 221421 }, --Emerald Watcher Gloves
+				{ 27, 221420 }, --Emerald Watcher Boots
+			},
+		},
+	},
+}
+
 --[[
 	data["Timbermaw"] = {
 	FactionID = 59,

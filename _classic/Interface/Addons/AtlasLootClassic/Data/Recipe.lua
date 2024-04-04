@@ -995,6 +995,7 @@ RECIPE_DATA.CLASSIC = {
 	[217249] = {8,195,439091}, -- Pattern: Earthen Silk Belt
 	[217258] = {8,165,439102}, -- Pattern: Enchanter's Cowl
 	[217399] = {4,190,439960}, -- Recipe: Lesser Arcane Elixir
+	[223163] = {10,190,448624}, -- Formula: Scroll of Spatial Mending
 }
 
 if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then

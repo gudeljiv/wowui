@@ -19,9 +19,12 @@ data = {
     ],
     "shaman": {
         "main": [
-            {"name": "lighning bolt", "type": "GetSpellTexture", "id": 403, "key": "2"},
+            {"name": "stormstrike", "type": "GetSpellTexture", "id": 17364, "key": "1"},
+            {"name": "lightning bolt", "type": "GetSpellTexture", "id": 403, "key": "2"},
             {"name": "chain ligtning", "type": "GetSpellTexture", "id": 421, "key": "3"},
-            {"name": "healing wave", "type": "GetSpellTexture", "id": 331, "key": "e"},
+            {"name": "healing wave mouseover", "type": "GetSpellTexture", "id": 443464, "key": "e"},
+            {"name": "healing wave player", "type": "GetSpellTexture", "id": 331, "key": "2", "modifier": "lshift"},
+            {"name": "healing wave tot", "type": "GetSpellTexture", "id": 14913, "key": "3", "modifier": "lshift"},
             {"name": "lightning shield", "type": "GetSpellTexture", "id": 324, "key": "v"},
             {"name": "water shield", "type": "GetSpellTexture", "id": 408510, "key": "7"},
             {"name": "molten blast", "type": "GetSpellTexture", "id": 425339, "key": "3"},
@@ -36,13 +39,11 @@ data = {
             {"name": "rockbiter weapon oh", "type": "GetItemIcon", "id": 1483, "modifier": "lshift", "key": "f1"},
             {"name": "windfury weapon oh", "type": "GetItemIcon", "id": 215373, "modifier": "lshift", "key": "f2"},
             {"name": "flametongue weapon oh", "type": "GetItemIcon", "id": 924, "modifier": "lshift", "key": "f3"},
-            # {"name": "frostbrand weapon mh", "type": "GetSpellTexture", "id": 8033, "key": "f3"},
-            # {"name": "frostbrand weapon oh", "type": "GetItemIcon", "id": 2194, "modifier": "lshift", "key": "f3"},
         ],
         "secondary": [
+            {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "modifier": "lalt", "key": "3"},
             # {"name": "totem fire nova", "type": "GetSpellTexture", "id": 1535, "modifier": "lshift", "key": "2"},
             # {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "modifier": "lshift", "key": "1"},
-            {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "modifier": "lalt", "key": "3"},
         ],
     },
     "warrior": {

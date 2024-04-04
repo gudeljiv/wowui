@@ -1910,6 +1910,96 @@ data["Sod Exclusives"] = {
 				{ 102, 215409 },
 				{ 103, 215416 }, -- Waylaid Supplies: White Bandit Masks
 			},
-		}
+		},
+				{
+			name = AL["Level 50: Phase 3"],
+			[NORMAL_DIFF] = {
+				{ 1, 220927 }, -- Waylaid Supplies: Thick Hide
+				{ 2, 220926 }, --Waylaid Supplies: Rugged Leather
+				{ 3, 220925 }, --Waylaid Supplies: Thorium Bars
+				{ 4, 220924 }, --Waylaid Supplies: Truesilver Bars
+				{ 5, 220923 }, --Waylaid Supplies: Dreamfoil
+				{ 6, 220922 }, --Waylaid Supplies: Sungrass
+				{ 7, 220921 }, --Waylaid Supplies: Heavy Mageweave Bandages
+				{ 8, 220920 }, --Waylaid Supplies: Tender Wolf Steaks
+				{ 9, 220919 }, --Waylaid Supplies: Nightfin Soup
+				{ 10, 220918 }, --Waylaid Supplies: Undermine Clam Chowder
+				{ 11, 220942 }, --Waylaid Supplies: Tuxedo Shirts
+				{ 12, 220941 }, --Waylaid Supplies: Runecloth Belts
+				{ 13, 220940 }, --Waylaid Supplies: Black Mageweave Headbands
+				{ 14, 220939 }, --Waylaid Supplies: Runic Leather Bracers
+				{ 15, 220938 }, --Waylaid Supplies: Wicked Leather Bracers
+				{ 16, 220937 }, --Waylaid Supplies: Rugged Armor Kits
+				{ 17, 220936 }, --Waylaid Supplies: Truesilver Gauntlets
+				{ 18, 220935 }, --Waylaid Supplies: Thorium Belts
+				{ 19, 220934 }, --Waylaid Supplies: Mithril Coifs
+				{ 20, 220933 }, --Waylaid Supplies: Thorium Rifles
+				{ 21, 220932 }, --Waylaid Supplies: Thorium Grenades
+				{ 22, 220931 }, --Waylaid Supplies: Hi-Explosive Bombs
+				{ 23, 220930 }, --Waylaid Supplies: Major Healing Potions
+				{ 24, 220929 }, -- Waylaid Supplies: Superior Mana Potions
+				{ 25, 220928 }, -- Waylaid Supplies: Enchanted Thorium Bars
+			},
+		},
+	},
+}
+
+data["NightmareIncursion"] = {
+	name = AL["Nightmare Incursion"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Non-Set Items"],
+			[NORMAL_DIFF] = {
+				{ 1, 220595 }, -- Nightmare Focus Staff
+				{ 2, 221440 }, -- Roar of the Dream
+				{ 3, 221442 }, -- Roar of the Guardian
+				{ 4, 221443 }, -- Roar of the Grove
+				{ 5, 221439 }, -- Armor of the Emerald Slumber
+				{ 6, 220649 }, -- Merithra's Inheritence
+				{ 7, 221193 }, -- Emerald Ring
+				{ 8, 219326 }, -- Seed of Renewal
+				{ 9, 221374 }, -- Anguish of the Dream
+				{ 10, 221369 }, -- Nightmare Siphon
+				{ 11, 213407 }, -- Nightmare Siphon
+			},
+		},
+		{
+			name = AL["Set Items"],
+			TableType = SET_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, 1652 },
+				{ 2, 1653 },
+				{ 4, 1654 },
+				{ 5, 1655 },
+				{ 6, 1656 },
+				{ 8, 1657 },
+				{ 9, 1658 },
+				{ 10, 1659 },
+				{ 12, 1660 },
+				{ 13, 1661 },
+			},
+		},
+	},
+}
+data["DarkMoon Cards"] = {
+	name = AL["Darkmoon Cards"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Level 50 Cards"],
+			[NORMAL_DIFF] = {
+				{ 1, 221272 }, -- Wilds Deck
+				{ 2, 221280 }, -- Plagues Deck
+				{ 3, 221289 }, -- Dunes Deck
+				{ 4, 221299 }, -- Nightmares Deck
+			},
+		},
 	},
 }

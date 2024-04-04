@@ -953,6 +953,7 @@ data["Insignia"] = {
 		PVP_RANKS,
 	},
 }
+
 data["SoD Level 25"] = {
 	name = AL["SoD Level 25"],
 	ContentType = SOD_CONTENT,
@@ -991,7 +992,6 @@ data["SoD Level 25"] = {
 		PVP_RANKS,
 	},
 }
-
 
 data["SoD Level 40"] = {
 	name = AL["SoD Level 40"],
@@ -1057,6 +1057,89 @@ data["SoD Level 40"] = {
 				{ 17, 216495 }, -- Sanguine Crusher 
 				{ 18, 216496 }, -- Sanguine Skullcrusher 
 				{ 19, 216497 }, -- Exsanguinar 
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["SoD Level 50"] = {
+	name = AL["SoD Level 50"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 1,
+	items = {
+		{
+		name = AL["STV Blood Moon Epics 1"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Druid"], nil },
+				{ 2, 221447 }, -- Ritualist's Bloodmoon Grimoire
+				{ 3, 221446 }, -- Ritualist's Hammer
+				{ 4, 221448 }, -- Talisman of the Corrupted Grove
+				{ 6, "INV_Box_01", nil, AL["Hunter"], nil },
+				{ 7, 221451 }, -- Bloodthirst Crossbow
+				{ 8, 221450 }, -- Gurubashi Pit Fighter's Bow
+				{ 10, "INV_Box_01", nil, AL["Mage"], nil },
+				{ 11, 221452 }, -- Bloodfocused Arcane Band
+				{ 12, 221453 }, -- Band of Boiling Blood 
+				{ 13, 221454 }, -- Glacial Blood Band
+				{ 16, "INV_Box_01", nil, AL["Paladin"], nil },
+				{ 17, 221457 }, -- Libram of Draconic Destruction
+				{ 18, 221455 }, -- Bloodlight Reverence
+				{ 19, 221456 }, -- Eclipsed Sanguine Saber
+				{ 20, 220173 }, -- Parasomnia
+				{ 22, "INV_Box_01", nil, AL["Priest"], nil },
+				{ 23, 221459 }, -- Seal of the Sacrificed
+				{ 24, 221458 }, -- Shadowy Band of Victory
+			},
+		},
+		{
+		name = AL["STV Blood Moon Epics 2"],
+		TableType = NORMAL_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Rogue"], nil },
+				{ 2, 221460 }, -- Gurubashi Backstabber
+				{ 3, 221462 }, -- Bloodied Sword of Speed
+				{ 5, "INV_Box_01", nil, AL["Shaman"], nil },
+				{ 6, 221464 }, -- Totem of Fiery Precision
+				{ 7, 221463 }, -- Ancestral Voodoo Doll
+				{ 8, 221465 }, -- Corrupted Smashbringer
+				{ 10, "INV_Box_01", nil, AL["Warlock"], nil },
+				{ 11, 221466 }, -- Loop of Burning Blood
+				{ 12, 221467 }, -- Eye of the Bloodmoon
+				{ 16, "INV_Box_01", nil, AL["Warrior"], nil },
+				{ 17, 221469 }, -- Headhunter's Barbed Spear
+				{ 18, 221468 }, -- Wall of Whispers
+				{ 19, 220173 }, -- Parasomnia
+			},
+		},
+		{
+		name = AL["Level 50 PvP Sets"],
+		TableType = SET_ITTYPE,
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Horde"], nil },
+				{ 2, 1618 }, --Blood Guard's Plate
+				{ 4, 1624 },
+				{ 5, 1623 },
+				{ 6, 1622 },
+				{ 7, 1625 },
+				{ 9, 1627 },
+				{ 10, 1631 },
+				{ 11, 1629 },
+				{ 13, 1633 },
+				{ 14, 1635 },
+				{ 16, "INV_Box_01", nil, AL["Alliance"], nil },
+				{ 17, 1619 },
+				{ 18, 1620 },
+				{ 19, 1621 },
+				{ 21, 1665 },
+				{ 22, 1626 },
+				{ 24, 1628 },
+				{ 25, 1630 },
+				{ 26, 1632 },
+				{ 28, 1634 },
+				{ 29, 1636 },
 			},
 		},
 		PVP_RANKS,

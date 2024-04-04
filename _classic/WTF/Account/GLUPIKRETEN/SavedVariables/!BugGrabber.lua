@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12157,
+	["session"] = 12161,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3479,5 +3479,21 @@ BugGrabberDB = {
 			["session"] = 12148,
 			["counter"] = 7,
 		}, -- [448]
+		{
+			["message"] = "...rface/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua:761: attempt to perform arithmetic on global 'SHOW_INSCRIPTION_LEVEL' (a nil value)",
+			["time"] = "2024/04/04 11:02:38",
+			["locals"] = "self = PlayerTalentFrameTab4 {\n 0 = <userdata>\n textWidth = 35.555557\n selectedTextY = 4\n}\nevent = \"PLAYER_LEVEL_UP\"\n(*temporary) = 39\n(*temporary) = nil\n(*temporary) = 39\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on global 'SHOW_INSCRIPTION_LEVEL' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface/AddOns/Blizzard_TalentUI/Blizzard_TalentUI.lua\"]:761: in function `PlayerGlyphTab_OnEvent'\n[string \"*Blizzard_TalentUI.xml:58_OnEvent\"]:1: in function <[string \"*Blizzard_TalentUI.xml:58_OnEvent\"]:1>",
+			["session"] = 12158,
+			["counter"] = 1,
+		}, -- [449]
+		{
+			["message"] = "[string \"xRTF(1,1,17364)/run xRTF(1,1,17364)/run xRTF(1,1,17364)\"]:1: unexpected symbol near '/'",
+			["time"] = "2024/04/04 11:12:18",
+			["locals"] = "(*temporary) = \"xRTF(1,1,17364)/run xRTF(1,1,17364)/run xRTF(1,1,17364)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2230: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4971: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4634: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4670: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
+			["session"] = 12159,
+			["counter"] = 1,
+		}, -- [450]
 	},
 }

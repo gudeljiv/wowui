@@ -49,10 +49,16 @@ data["Alchemy"] = {
 		{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-				{ 1, 426607 }, --Elixir of Coalesced Regret
-				{ 3, 435969 }, --Insulating Gniodine
-				{ 4, 435971 }, --Mildly Irradiated Rejuvenation Potion
-				{ 5, 439960 }, --Recipe: Lesser Arcane Elixir
+				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+				{ 2, 426607 }, --Elixir of Coalesced Regret
+				{ 4, "INV_Box_01", nil, AL["Phase 2"], nil },
+				{ 5, 435969 }, --Insulating Gniodine
+				{ 6, 435971 }, --Mildly Irradiated Rejuvenation Potion
+				{ 7, 439960 }, --Recipe: Lesser Arcane Elixir
+				{ 9, "INV_Box_01", nil, AL["Phase 3"], nil },
+				{ 10, 448085 }, --Flask of Restless Dreams
+				{ 11, 446226 }, --Flask of Everlasting Nightmares
+				{ 12, 446851 }, --Flask of Nightmarish Mojo
 			},
 		},
 		{
@@ -226,12 +232,18 @@ data["Blacksmithing"] = {
 			{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-				{ 1, 429348 }, --Shifting Silver Breastplate
-				{ 2, 430397 }, --Blackfathom Sharpening Stone
-				{ 3, 427063 }, --Mantle of the Second War
-				{ 5, 435910 }, --Low-Background Truesilver Plates
-				{ 6, 435906 }, --Reflective Truesilver Braincage
-				{ 7, 435908 }, --Tempered Interference-Negating Helmet
+				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+				{ 2, 429348 }, --Shifting Silver Breastplate
+				{ 3, 430397 }, --Blackfathom Sharpening Stone
+				{ 4, 427063 }, --Mantle of the Second War
+				{ 6, "INV_Box_01", nil, AL["Phase 2"], nil },
+				{ 7, 435910 }, --Low-Background Truesilver Plates
+				{ 8, 435906 }, --Reflective Truesilver Braincage
+				{ 9, 435908 }, --Tempered Interference-Negating Helmet
+				{ 11, "INV_Box_01", nil, AL["Phase 3"], nil },
+				{ 12, 446179 }, --Shoulderplates of Dread
+				{ 13, 446188 }, --Fearmonger's Shoulderguards
+				{ 14, 446191 }, --Baleful Pauldrons
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 439122 }, --Golden Scale Boots
 				{ 18, 439126 }, --Golden Scale Coif
@@ -602,10 +614,15 @@ data["Enchanting"] = {
 		{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-				{ 1, 430409 }, --Brilliant Mana Oil / 310
-				{ 3, 435903 }, --Enchant Chest - Retricutioner
-				{ 4, 435481 }, -- Enchant Weapon - Dismantle
-				{ 5, 439156 }, -- Sigil of Innovation
+				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+				{ 2, 430409 }, --Brilliant Mana Oil / 310
+				{ 4, "INV_Box_01", nil, AL["Phase 2"], nil },
+				{ 5, 435903 }, --Enchant Chest - Retricutioner
+				{ 6, 435481 }, -- Enchant Weapon - Dismantle
+				{ 7, 439156 }, -- Sigil of Innovation
+				{ 9, "INV_Box_01", nil, AL["Phase 3"], nil },
+				{ 10, 446243 }, -- Sigil of Living Dreams
+				{ 11, 448624 }, -- Scroll of Spatial Mending
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 439134 }, -- Greater Mystic Wand
 			}
@@ -829,13 +846,19 @@ data["Engineering"] = {
 			{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-				{ 1, 424641 }, --Shredder Autosalvage Unit
-				{ 3, 435956 }, --Polished Truesilver Gears
-				{ 4, 431362 }, -- Soul Vessel
-				{ 5, 435966 }, -- Ez-Thro Radiation Bomb 
-				{ 6, 435964 }, -- High-Yield Radiation Bomb
-				{ 7, 435960 }, -- Hyperconductive Goldwrap
-				{ 8, 435958 }, -- Whirling Truesilver Gearwall
+				{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+				{ 2, 424641 }, --Shredder Autosalvage Unit
+				{ 4, "INV_Box_01", nil, AL["Phase 2"], nil },
+				{ 5, 435956 }, --Polished Truesilver Gears
+				{ 6, 431362 }, -- Soul Vessel
+				{ 7, 435966 }, -- Ez-Thro Radiation Bomb 
+				{ 8, 435964 }, -- High-Yield Radiation Bomb
+				{ 9, 435960 }, -- Hyperconductive Goldwrap
+				{ 10, 435958 }, -- Whirling Truesilver Gearwall
+				{ 12, "INV_Box_01", nil, AL["Phase 3"], nil },
+				{ 13, 446236 }, -- Void-Powered Invoker's Vambraces
+				{ 14, 446238 }, -- Void-Powered Protector's Vambraces
+				{ 15, 446237 }, -- Void-Powered Slayer's Vambraces
 			}
 		},
 		{
@@ -1067,12 +1090,18 @@ data["Tailoring"] = {
 		{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-			{ 1, 429351 }, --Extraplanar Spidersilk Boots
-			{ 2, 428424 }, --Phoenix Bindings
-			{ 3, 435841 }, --Invoker's Cord
-			{ 4, 435848 }, --Invoker's Mantle
-			{ 6, 435827 }, -- Hyperconductive Arcano-Filament
-			{ 7, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
+			{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+			{ 2, 429351 }, --Extraplanar Spidersilk Boots
+			{ 3, 428424 }, --Phoenix Bindings
+			{ 4, 435841 }, --Invoker's Cord
+			{ 5, 435848 }, --Invoker's Mantle
+			{ 7, "INV_Box_01", nil, AL["Phase 2"], nil },
+			{ 8, 435827 }, -- Hyperconductive Arcano-Filament
+			{ 9, 435610 }, -- Gneuro-Linked Arcano-Filament Monocle
+			{ 11, "INV_Box_01", nil, AL["Phase 3"], nil },
+			{ 12, 446194 }, --Invoker's Cord
+			{ 13, 446195 }, --Invoker's Cord
+			{ 14, 446193 }, --Invoker's Cord
 			{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 			{ 17, 439105 }, -- Big Voodoo Mask
 			{ 18, 439108 }, -- Big Voodoo Robe
@@ -1386,19 +1415,34 @@ data["Leatherworking"] = {
 			{
 			name = AL["SoD Exclusives"],
 			[NORMAL_DIFF] = {
-			{ 1, 429869 }, --Void-Touched Leather Gauntlets
-			{ 2, 429354 }, --Void-Touched Leather Gloves
-			{ 4, 435819 }, -- Faintly Glowing Leather
-			{ 5, 435904 }, -- Glowing Gneuro-Linked Cowl
-			{ 6, 435949 }, -- Glowing Hyperconductive Scale Coif
-			{ 7, 435951 }, -- Gneuro-Conductive Channeler's Hood
-			{ 8, 435953 }, -- Rad-Resistant Scale Hood
+			{ 1, "INV_Box_01", nil, AL["Phase 1"], nil },
+			{ 2, 429869 }, --Void-Touched Leather Gauntlets
+			{ 3, 429354 }, --Void-Touched Leather Gloves
+			{ 5, "INV_Box_01", nil, AL["Phase 2"], nil },
+			{ 6, 435819 }, -- Faintly Glowing Leather
+			{ 7, 435904 }, -- Glowing Gneuro-Linked Cowl
+			{ 8, 435949 }, -- Glowing Hyperconductive Scale Coif
+			{ 9, 435951 }, -- Gneuro-Conductive Channeler's Hood
+			{ 10, 435953 }, -- Rad-Resistant Scale Hood
 			{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 			{ 17, 439112 }, -- Guardian Belt
 			{ 18, 439110 }, -- Guardian Leather Bracers
 			{ 19, 439114 }, -- Guardian Pants
 			{ 20, 439116 }, -- Turtle Scale Breastplate
 			{ 21, 439118 }, -- Turtle Scale Gloves
+			}
+		},
+		{
+			name = AL["SoD Exclusives 2"],
+			[NORMAL_DIFF] = {
+			{ 1, "INV_Box_01", nil, AL["Phase 3"], nil },
+			{ 2, 446183 }, --Paranoia Mantle
+			{ 3, 446185 }, --Shrieking Spaulders
+			{ 4, 446190 }, --Wailing Chain Mantle
+			{ 5, 446189 }, --Shoulderpads of Obsession
+			{ 6, 446192 }, --Membrane of Dark Neurosis
+			{ 7, 446186 }, --Cacophonous Chain Shoulderguards
+
 			}
 		},
 		{

@@ -118,7 +118,7 @@ def print_debug(no, xclass, skill, id, image):
 
 classes = {"warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"}
 
-time1 = 0.25
+time1 = 0.75
 time2 = 0.75
 
 count = 0
@@ -222,7 +222,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
                     time.sleep(time1)
-                    time.sleep(time1)
 
                     m_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " M.png".format(**p_main)
                     main_image = sct.grab(p_main)
@@ -248,7 +247,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
                     time.sleep(time1)
-                    time.sleep(time1)
 
                     o_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " O.png".format(**p_offgcd)
                     offgcd_image = sct.grab(p_offgcd)
@@ -271,7 +269,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                         pyautogui.hotkey("ctrl", "v")
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
-                    time.sleep(time1)
                     time.sleep(time1)
 
                     m_image = abilities_folder + slash + "healing" + slash + str(skill["name"]) + " H.png".format(**p_main)
@@ -297,7 +294,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                         pyautogui.hotkey("ctrl", "v")
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
-                    time.sleep(time1)
                     time.sleep(time1)
 
                     m_image = abilities_folder + slash + "globals" + slash + str(skill["name"]) + " G.png".format(**p_main)

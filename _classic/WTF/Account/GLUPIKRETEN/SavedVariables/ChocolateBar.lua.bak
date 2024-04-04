@@ -849,9 +849,9 @@ CB_PlayedTime = {
 		["total"] = 17358,
 	},
 	["Dopeclaw-LoneWolf"] = {
-		["total"] = 167302,
-		["timeAtThisLevel"] = 2766,
-		["timeStamp"] = 445931.867,
+		["total"] = 168606,
+		["timeAtThisLevel"] = 174,
+		["timeStamp"] = 501507.847,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -1010,9 +1010,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Jutarnjedrvo-LoneWolf"] = {
-		["total"] = 158760,
-		["timeStamp"] = 450764.444,
-		["timeAtThisLevel"] = 981,
+		["total"] = 164530,
+		["timeStamp"] = 500003.715,
+		["timeAtThisLevel"] = 442,
 	},
 	["Dopebolt-LoneWolf"] = {
 		["total"] = 1080,
