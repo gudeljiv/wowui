@@ -30,7 +30,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:1710
+/use item:0
 END
 VER 3 000000000000002B "rune b" "134400"
 #showtooltip Feet Rune Ability

@@ -1955,16 +1955,20 @@ data["NightmareIncursion"] = {
 			name = AL["Non-Set Items"],
 			[NORMAL_DIFF] = {
 				{ 1, 220595 }, -- Nightmare Focus Staff
-				{ 2, 221440 }, -- Roar of the Dream
-				{ 3, 221442 }, -- Roar of the Guardian
-				{ 4, 221443 }, -- Roar of the Grove
-				{ 5, 221439 }, -- Armor of the Emerald Slumber
-				{ 6, 220649 }, -- Merithra's Inheritence
-				{ 7, 221193 }, -- Emerald Ring
-				{ 8, 219326 }, -- Seed of Renewal
-				{ 9, 221374 }, -- Anguish of the Dream
-				{ 10, 221369 }, -- Nightmare Siphon
-				{ 11, 213407 }, -- Nightmare Siphon
+				{ 2, 220621 }, -- Nightmare Resonance Crystal
+				{ 3, 221440 }, -- Roar of the Dream
+				{ 4, 221442 }, -- Roar of the Guardian
+				{ 5, 221443 }, -- Roar of the Grove
+				{ 6, 221439 }, -- Armor of the Emerald Slumber
+				{ 7, 220649 }, -- Merithra's Inheritence
+				{ 8, 224005 }, -- Emerald Ring
+				{ 9, 224004 }, -- Emerald Ring
+				{ 10, 221193 }, -- Emerald Ring
+				{ 11, 224006 }, --Emerald Ring
+				{ 12, 221374 }, -- Anguish of the Dream
+				{ 13, 221369 }, -- Nightmare Siphon
+				{ 14, 212568 }, -- Wolfshead Trophy
+				{ 15, 213407 }, -- Catnip
 			},
 		},
 		{

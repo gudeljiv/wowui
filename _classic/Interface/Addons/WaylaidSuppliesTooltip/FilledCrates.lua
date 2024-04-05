@@ -17,7 +17,7 @@ addon.supplyShipment = {
     [217339] = {1000, 120000, 2500, 40, 40}, --Turt Brac, L37 Troll, 8111xp, 1000rep, 12g
 	[221008] = {950,  38500,  1700, 45, 42},
 	[221009] = {1300, 84500,  2850, 45, 45},
-	[221010] = {1850, 160000, 4650, 45, 50},
+	[221010] = {1850, 154000, 4650, 45, 50},
 }
 
 local function AddTooltipInfo(tooltip, itemID)
@@ -38,7 +38,7 @@ local function AddTooltipInfo(tooltip, itemID)
             threshold = 9
         elseif standingID == 5 then
             threshold = 18
-        elseif standingID < 7 then -- New reputation levels introduced in phase 2
+        elseif standingID < 7 then
             threshold = 28
         elseif standingID < 8 then
             threshold = 41

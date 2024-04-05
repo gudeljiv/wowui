@@ -550,6 +550,7 @@ data["DurotarSupplyAndLogistics"] = {
 				{ 1, "f2587rep7" },
 				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
 				{ 3, 219021 }, -- Hefty Courier Pack
+				{ 5, 223161 }, -- Empty Supply Crate
 				{ 16, 219135 }, -- Curiosity Pendant
 				{ 17, 219136 }, -- Tenacity Pendant
 				{ 18, 219137 }, -- Initiative Pendant
@@ -563,6 +564,7 @@ data["DurotarSupplyAndLogistics"] = {
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 				{ 6, 212230 }, -- Schematic: Soul Vessel
+				{ 8, 223160 }, -- Bargain Bush
 				{ 16, 219022 }, -- Hauler's Ring
 				{ 17, 219023 }, -- Clerk's Ring
 				{ 18, 219024 }, -- Messenger's Ring
@@ -615,8 +617,8 @@ data["Emerald Wardens"] = {
 				
 			},
 		},
-		{ -- Honored2
-			name = ALIL["Honored (2)"],
+		{ -- Honored3
+			name = ALIL["Honored (Mail/Plate)"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep6" },
 				{ 2, "INV_Box_01", nil, AL["Mail"], nil },
@@ -638,19 +640,17 @@ data["Emerald Wardens"] = {
 				{ 23, 221385 }, --Emerald Encrusted Legplates
 			},
 		},
-		{ -- Honored
-			name = ALIL["Honored"],
+		{ -- Honored2
+			name = ALIL["Honored (Cloth/Leather)"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep6" },
-				{ 2, 213407 }, -- Catnip
-				{ 3, 221193 }, --Emerald Ring
-				{ 5, "INV_Box_01", nil, AL["Cloth"], nil },
-				{ 6, 221425 }, --Emerald Enchanted Circlet
-				{ 7, 221430 }, --Emerald Enchanted Robes
-				{ 8, 221429 }, --Emerald Enchanted Pants
-				{ 10, 221437 }, --Emerald Woven Circlet
-				{ 11, 221434 }, --Emerald Woven Robes
-				{ 12, 221435 }, --Emerald Woven Pants
+				{ 2, "INV_Box_01", nil, AL["Cloth"], nil },
+				{ 3, 221425 }, --Emerald Enchanted Circlet
+				{ 4, 221430 }, --Emerald Enchanted Robes
+				{ 5, 221429 }, --Emerald Enchanted Pants
+				{ 6, 221437 }, --Emerald Woven Circlet
+				{ 7, 221434 }, --Emerald Woven Robes
+				{ 8, 221435 }, --Emerald Woven Pants
 				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
 				{ 17, 221408 }, --Emerald Leather Helm
 				{ 18, 221406 }, --Emerald Leather Vest
@@ -663,8 +663,17 @@ data["Emerald Wardens"] = {
 				{ 27, 221423 }, --Emerald Watcher Leggings
 			},
 		},
+		{ -- Honored
+			name = ALIL["Honored"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep6" },
+				{ 2, 213407 }, -- Catnip
+				{ 3, 221193 }, --Emerald Ring
+				{ 4, 224006 }, --Emerald Ring
+			},
+		},
 		{ -- Friendly2
-			name = ALIL["Friendly (2)"],
+			name = ALIL["Friendly (Mail/Plate)"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep5" },
 				{ 2, "INV_Box_01", nil, AL["Mail"], nil },
@@ -686,21 +695,17 @@ data["Emerald Wardens"] = {
 				{ 23, 221379 }, --Emerald Dream Sabatons
 			},
 		},
-		{ -- Friendly
-			name = ALIL["Friendly"],
+		{ -- Friendly2
+			name = ALIL["Friendly (Cloth/Leather)"],
 			[NORMAL_DIFF] = {
 				{ 1, "f2641rep5" },
-				{ 2, 221369 }, -- Nightmare Siphon
-				{ 3, 221374 }, -- Anguish of the Dream
-				{ 4, 221362 }, -- Weapon Cleaning Cloth
-				{ 5, 223648 }, -- Dream Imbued Arrow
-				{ 7, "INV_Box_01", nil, AL["Cloth"], nil },
-				{ 8, 221431 }, --Emerald Enchanted Shoulders
-				{ 9, 221427 }, --Emerald Enchanted Gloves
-				{ 10, 221426 }, --Emerald Enchanted Boots
-				{ 12, 221432 }, --Emerald Woven Mantle
-				{ 13, 221436 }, --Emerald Woven Gloves
-				{ 14, 221438 }, --Emerald Woven Boots
+				{ 2, "INV_Box_01", nil, AL["Cloth"], nil },
+				{ 3, 221431 }, --Emerald Enchanted Shoulders
+				{ 4, 221427 }, --Emerald Enchanted Gloves
+				{ 5, 221426 }, --Emerald Enchanted Boots
+				{ 6, 221432 }, --Emerald Woven Mantle
+				{ 7, 221436 }, --Emerald Woven Gloves
+				{ 8, 221438 }, --Emerald Woven Boots
 				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
 				{ 17, 221411 }, --Emerald Leather Shoulders
 				{ 18, 221407 }, --Emerald Leather Gloves
@@ -711,6 +716,39 @@ data["Emerald Wardens"] = {
 				{ 25, 221424 }, --Emerald Watcher Shoulders
 				{ 26, 221421 }, --Emerald Watcher Gloves
 				{ 27, 221420 }, --Emerald Watcher Boots
+			},
+		},
+		{ -- Friendly
+			name = ALIL["Friendly"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep5" },
+				{ 2, 221369 }, -- Nightmare Siphon
+				{ 3, 221374 }, -- Anguish of the Dream
+				{ 4, 221362 }, -- Weapon Cleaning Cloth
+				{ 5, 223648 }, -- Dream Imbued Arrow
+				{ 6, 224005 }, -- Emerald Ring
+				{ 7, 224004 }, -- Emerald Ring
+				{ 16, 221480 }, -- Spell Notes: Molten Armor
+				{ 17, 221481 }, -- 	Nihilist Epiphany
+				{ 18, 221482 }, -- 	Rune of Affliction
+				{ 19, 221483 }, -- 	Rune of Burn
+				{ 20, 221511 }, -- 	Rune of the Protector
+				{ 21, 221512 }, -- 	Rune of Alacrity
+				{ 22, 221515 }, -- 	Rune of Detonation
+				{ 23, 221517 }, -- 	Rune of Bloodshed
+				{ 24, 223288 }, -- 	Rune of the Hammer
+			},
+		},
+		{ -- Friendly
+			name = ALIL["Neutral"],
+			[NORMAL_DIFF] = {
+				{ 1, "f2641rep4" },
+				{ 2, 212568 }, -- Wolfshead Trophy
+				{ 3, 223912 }, -- Purification Potion
+				{ 4, 223913 }, -- Major Healing Potion
+				{ 5, 223914 }, -- Greater Healing Potion
+
+
 			},
 		},
 	},

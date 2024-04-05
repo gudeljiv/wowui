@@ -32,6 +32,8 @@ local castEvents = {
     "UNIT_SPELLCAST_EMPOWER_UPDATE",
 }
 
+-- Note: don't add any major code reworks here, this codebase will soon be replaced with the player-castbar-v2 branch
+
 local GetBuffDataByIndex = _G.C_UnitAuras and _G.C_UnitAuras.GetBuffDataByIndex
 local next = _G.next
 local gsub = _G.string.gsub
@@ -539,7 +541,7 @@ ClassicCastbars:SetScript("OnUpdate", function(self, elapsed)
             castbar.Timer:SetFormattedText("%.1f", castbar.isChanneled and castbar.value or not castbar.isChanneled and castbar.maxValue - castbar.value)
 
             local sparkPosition = (castbar.value / castbar.maxValue) * (castbar.currWidth or castbar:GetWidth())
-            castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, 0)
+            castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, castbar.BorderShield:IsShown() and 3 or 0)
 
             -- Check if cast is complete
             if (castbar.isChanneled and castbar.value <= 0) or (not castbar.isChanneled and castbar.value >= castbar.maxValue) then

@@ -105,10 +105,10 @@ local supplyShipment = {
     [15993] = {3,  84500, "Thorium Grenade", "Thorium Grenades"},
     [10034] = {4,  84500, "Tuxedo Shirt", "Tuxedo Shirts"},
     [15084] = {6,  84500, "Wicked Leather Bracer", "Wicked Leather Bracers"},
-    [13856] = {6,  160000, "Runecloth Belt", "Runecloth Belts"},
-    [15092] = {5,  160000, "Runic Leather Bracer", "Runic Leather Bracers"},
-    [15995] = {2,  160000, "Thorium Rifle", "Thorium Rifles"},
-    [7938]  = {2,  160000, "Truesilver Gauntlet", "Truesilver Gauntlets"},
+    [13856] = {6,  154000, "Runecloth Belt", "Runecloth Belts"},
+    [15092] = {5,  154000, "Runic Leather Bracer", "Runic Leather Bracers"},
+    [15995] = {2,  154000, "Thorium Rifle", "Thorium Rifles"},
+    [7938]  = {2,  154000, "Truesilver Gauntlet", "Truesilver Gauntlets"},
 }
 
 local function AddTooltipInfo(tooltip, itemID)

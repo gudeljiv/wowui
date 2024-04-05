@@ -53,11 +53,11 @@ local reputationItems = {
 	--700 Rep Crates			                   		{ Rep,  f$,    u$,  XP, iLvl, qLvl}	Turn in notes
 	["Waylaid Supplies: Fadeleaf"] = 					{ 700, 20000, 2000, 800, 30, 28 },
 	["Waylaid Supplies: Fire Oil"] =  					{ 700, 20000, 2000, 800, 30, 28 }, 	-- turned into Filled Crate 217337, 700rep, 853xp (level 32), 50 silver.  L28 Human: 50s 804xp, 770 rep
-	["Waylaid Supplies: Formal White Shirts"] =  		{ 700, 20000, 2000, 800, 30, 28 }, 	--GOLD REWARD NEEDS VERIFIED, 3 to fill,810 exp.
+	["Waylaid Supplies: Formal White Shirts"] =  		{ 700, 20000, 2000, 800, 30, 28 }, 	--3 to fill,810 exp.
 	["Waylaid Supplies: Heavy Hide"] = 					{ 700, 20000, 2000, 800, 30, 28 },
     ["Waylaid Supplies: Heavy Silk Bandages"] =  		{ 700, 20000, 2000, 800, 35, 28 },
-    ["Waylaid Supplies: Khadgar's Whisker"] = 			{ 700, 20000, 2000, 800, 35, 28 }, 	--GOLD REWARD NEEDS VERIFIED L28 Human: 853xp, 50s, 770 rep
-    ["Waylaid Supplies: Mithril Bars"] = 				{ 700, 20000, 2000, 800, 35, 28 },	--GOLD REWARD NEEDS VERIFIED
+    ["Waylaid Supplies: Khadgar's Whisker"] = 			{ 700, 20000, 2000, 800, 35, 28 }, 	--L28 Human: 853xp, 50s, 770 rep
+    ["Waylaid Supplies: Mithril Bars"] = 				{ 700, 20000, 2000, 800, 35, 28 },
     ["Waylaid Supplies: Purple Lotus"] = 				{ 700, 20000, 2000, 800, 35, 28 },
 	["Waylaid Supplies: Rockscale Cod"] =  				{ 700, 20000, 2000, 800, 30, 28 }, 	--L34 Human: 812 xp, 770rep, 50s, L37Human: 828xp, 770rep, 50s
 	["Waylaid Supplies: Solid Grinding Stones"] = 		{ 700, 20000, 2000, 800, 30, 28 },	--L29 Troll: 2512xp, 700rep, 2g.
@@ -72,9 +72,9 @@ local reputationItems = {
     ["Waylaid Supplies: Crimson Silk Pantaloons"] =  	{ 850, 55000, 2000, 1500, 35, 35 },	--L35 Human: 1525xp, 935rep, 1.5g. L37Human:1591xp, 935rep, 1.5g
 	["Waylaid Supplies: Elixirs of Agility"] = 			{ 850, 55000, 2000, 1500, 35, 35 },
 	["Waylaid Supplies: Frost Leather Cloaks"] =  		{ 850, 55000, 2000, 1500, 30, 35 }, --L25 Troll, 8800XP, 850 rep. 5g50s
-    ["Waylaid Supplies: Gold Bars"] = 					{ 850, 55000, 2000, 1500, 35, 35 }, --GOLD REWARD NEEDS VERIFIED
-    ["Waylaid Supplies: Greater Healing Potions"] = 	{ 850, 55000, 2000, 1500, 35, 35 }, --GOLD REWARD NEEDS VERIFIED
-	["Waylaid Supplies: Green Iron Bracers"] = 			{ 850, 55000, 2000, 1500, 30, 35 },	--GOLD REWARD NEEDS VERIFIED L30 Gnome: 1519xp @ level 30 gnome 
+    ["Waylaid Supplies: Gold Bars"] = 					{ 850, 55000, 2000, 1500, 35, 35 },
+    ["Waylaid Supplies: Greater Healing Potions"] = 	{ 850, 55000, 2000, 1500, 35, 35 },
+	["Waylaid Supplies: Green Iron Bracers"] = 			{ 850, 55000, 2000, 1500, 30, 35 },	--L30 Gnome: 1519xp @ level 30 gnome 
  	["Waylaid Supplies: Guardian Gloves"] =  			{ 850, 55000, 2000, 1500, 30, 35 },
     ["Waylaid Supplies: Heavy Mithril Gauntlets"] = 	{ 850, 55000, 2000, 1500, 35, 35 },
 	-- 12g, 1000 Rep Crates
@@ -108,15 +108,15 @@ local reputationItems = {
     ["Waylaid Supplies: Major Healing Potions"] = 		{1300, 84500,  5000, 2850, 45, 45},
     ["Waylaid Supplies: Mithril Coifs"] = 				{1300, 84500,  5000, 2850, 45, 45},
     ["Waylaid Supplies: Rugged Armor Kits"] = 			{1300, 84500,  5000, 2850, 45, 45},
-    ["Waylaid Supplies: Superior Mana Potions"] = 		{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Superior Mana Potions"] = 		{1300, 84500,  5000, 2850, 45, 45},	--l49, 4299exp
     ["Waylaid Supplies: Thorium Belts"] = 				{1300, 84500,  5000, 2850, 45, 45},
     ["Waylaid Supplies: Thorium Grenades"] = 			{1300, 84500,  5000, 2850, 45, 45},
     ["Waylaid Supplies: Tuxedo Shirts"] = 				{1300, 84500,  5000, 2850, 45, 45},
     ["Waylaid Supplies: Wicked Leather Bracers"] = 		{1300, 84500,  5000, 2850, 45, 45},
-    ["Waylaid Supplies: Runecloth Belts"] = 			{1850, 160000, 5000, 4650, 45, 50},
-    ["Waylaid Supplies: Runic Leather Bracers"] = 		{1850, 160000, 5000, 4650, 45, 50},
-    ["Waylaid Supplies: Thorium Rifles"] = 				{1850, 160000, 5000, 4650, 45, 50},
-    ["Waylaid Supplies: Truesilver Gauntlets"] = 		{1850, 160000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Runecloth Belts"] = 			{1850, 154000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Runic Leather Bracers"] = 		{1850, 154000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Thorium Rifles"] = 				{1850, 154000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Truesilver Gauntlets"] = 		{1850, 154000, 5000, 4650, 45, 50},
 }
 
 local function Add_Waylaid_Supplies_Tooltip(tooltip)
@@ -195,7 +195,7 @@ function frame:OnEvent(event, itemID, success)
         end
     end
 end
-print("WST: Welcome to Waylaid Supplies Tooltip v1.4.7.2")
+print("WST: Welcome to Waylaid Supplies Tooltip v1.4.7.3")
 --print("WST: Known Issue: Phase 3 values are incomplete, update incoming")
 print("WST: Coming Soon: Auction house addon integrations and localization")
 frame:SetScript("OnEvent", frame.OnEvent)

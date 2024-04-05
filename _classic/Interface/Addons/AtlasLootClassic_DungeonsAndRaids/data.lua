@@ -2296,6 +2296,7 @@ data["Maraudon"] = {
 				{ 18, 223541 }, -- Gemshard Heart
 				{ 19, 223518 }, -- Charstone Dirk
 				{ 20, 221780 }, -- Princess Theradras' Scepter
+				{ 21, 223964 }, -- Blade of Eternal Darkness
 			},
 		},
 		{ -- MaraNamelesProphet
@@ -2616,6 +2617,7 @@ data["BlackrockDepths"] = {
 				{ 4,  11629 }, -- Houndmaster's Rifle
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223540 }, -- Houndmaster's Bow
+				{ 18, 223982 }, -- Houndmaster's Rifle
 			},
 		},
 		-- ## RING START
@@ -2664,6 +2666,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11679 }, -- Rubicund Armguards
 				{ 4,  11686 }, -- Girdle of Beastial Fury
 				{ 5,  11730 }, -- Savage Gladiator Grips
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223987 }, -- Splinthide Shoulders
 			},
 		},
 		{ -- BRDOkthor
@@ -2678,6 +2682,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11662 }, -- Ban'thok Sash
 				{ 3,  11728 }, -- Savage Gladiator Leggings
 				{ 4,  11824 }, -- Cyclopean Band
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223985 }, -- Cyclopean Band
 			},
 		},
 		{ -- BRDAnubshiah
@@ -2692,6 +2698,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11677 }, -- Graverot Cape
 				{ 3,  11675 }, -- Shadefiend Boots
 				{ 4,  11731 }, -- Savage Gladiator Greaves
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223986 }, -- Graverot Cape
 			},
 		},
 		{ -- BRDHedrum
@@ -2706,6 +2714,9 @@ data["BlackrockDepths"] = {
 				{ 2,  11634 }, -- Silkweb Gloves
 				{ 3,  11635 }, -- Hookfang Shanker
 				{ 4,  11729 }, -- Savage Gladiator Helm
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223984 }, -- Silkweb Gloves
+
 			},
 		},
 		-- ## RING END
@@ -2724,7 +2735,9 @@ data["BlackrockDepths"] = {
 				{ 4,  11750 }, -- Kindling Stave
 				{ 6,  11207 }, -- Formula: Enchant Weapon - Fiery Weapon
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
-				{ 17, 223538 }, -- Kindling Stave
+				{ 17, 223981 }, -- Flamestrider Robes
+				{ 18, 223538 }, -- Kindling Stave
+				{ 19, 223980 }, -- Searingscale Leggings
 			},
 		},
 		{ -- BRDTheVault
@@ -2763,6 +2776,9 @@ data["BlackrockDepths"] = {
 				{ 2,  22241 }, -- Dark Warder's Pauldrons
 				{ 3,  11783 }, -- Chillsteel Girdle
 				{ 4,  11784 }, -- Arbiter's Blade
+				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
+				{ 17, 223983 }, -- Arbiter's Blade
+				
 			},
 		},
 		{ -- BRDVerek
@@ -7550,7 +7566,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 10, 220596 }, -- Ancient Divining Rod
 				{ 11, 220686 }, -- Chieftain's Bane
 				{ 12, 220590 }, -- Spire of Hakkari Worship
-				{ 13, 218083 }, -- Tail of Eranikus
+				{ 15, "INV_Box_01", nil, AL["Boss drop tables not yet known"], nil },
 				{ 16, "INV_Box_01", nil, AL["1H Weapons"], nil },
 				{ 17, 220576 }, -- Axe of the Atal'ai Executioner
 				{ 18, 220674 }, -- Debased Stealthblade
@@ -7564,6 +7580,7 @@ data["TheTempleOfAtal'Hakkar2"] = {
 				{ 26, 220583 }, -- Vile Blade of the Wretched
 				{ 27, 220585 }, -- Degraded Dire Nail
 				{ 28, 220582 }, -- Dragon's Cry
+				{ 30, "INV_Box_01", nil, AL["Stay tuned for updates"], nil },
 			},
 		},
 		{

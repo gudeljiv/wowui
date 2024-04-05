@@ -130,3 +130,7 @@ v1.4.7.1 Release - 04 APR 2024
 v1.4.7.2 Release - 04 APR 2024
 	Fixed:
 		Level 50 crate gold values.
+		
+v1.4.7.3 Release - 05 APR 2024
+	Fixed:
+		Level 50 crate gold values corrected from wowhead

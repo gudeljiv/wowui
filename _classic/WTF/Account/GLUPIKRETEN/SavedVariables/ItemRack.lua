@@ -14,21 +14,21 @@ ItemRackSettings = {
 	["TrinketMenuMode"] = "OFF",
 	["EventsVersion"] = 18,
 	["HidePetBattle"] = "ON",
-	["AllowEmpty"] = "ON",
+	["TinyTooltips"] = "OFF",
 	["DisableAltClick"] = "OFF",
-	["MinimapTooltip"] = "ON",
+	["CooldownCount"] = "OFF",
 	["MenuOnRight"] = "OFF",
-	["CharacterSheetMenus"] = "ON",
+	["LargeNumbers"] = "OFF",
 	["NotifyThirty"] = "OFF",
 	["TooltipFollow"] = "OFF",
 	["ShowTooltips"] = "ON",
-	["ShowHotKeys"] = "OFF",
-	["EquipToggle"] = "OFF",
 	["AnotherOther"] = "OFF",
+	["EquipToggle"] = "OFF",
+	["ShowHotKeys"] = "OFF",
 	["EquipOnSetPick"] = "OFF",
-	["LargeNumbers"] = "OFF",
-	["CooldownCount"] = "OFF",
-	["TinyTooltips"] = "OFF",
+	["CharacterSheetMenus"] = "ON",
+	["MinimapTooltip"] = "ON",
+	["AllowEmpty"] = "ON",
 }
 ItemRackItems = {
 	["12846"] = {
@@ -81,10 +81,10 @@ ItemRackEvents = {
 			["Nagrand Arena"] = 1,
 		},
 	},
-	["Drinking"] = {
+	["Mounted"] = {
 		["Unequip"] = 1,
 		["Type"] = "Buff",
-		["Buff"] = "Drink",
+		["Anymount"] = 1,
 	},
 	["Nefarian's Lair"] = {
 		["Unequip"] = 1,
@@ -93,15 +93,15 @@ ItemRackEvents = {
 			["Nefarian's Lair"] = 1,
 		},
 	},
-	["Druid Travel"] = {
-		["Class"] = "DRUID",
-		["Type"] = "Stance",
-		["Stance"] = 4,
-	},
 	["After Cast"] = {
 		["Trigger"] = "UNIT_SPELLCAST_SUCCEEDED",
 		["Type"] = "Script",
 		["Script"] = "local spell = \"Name of spell\"\nlocal set = \"Name of set\"\nif arg1==\"player\" and arg2==spell then\n  EquipSet(set)\nend\n\n--[[This event will equip \"Name of set\" when \"Name of spell\" has finished casting.  Change the names for your own use.]]",
+	},
+	["Druid Travel"] = {
+		["Class"] = "DRUID",
+		["Type"] = "Stance",
+		["Stance"] = 4,
 	},
 	["City"] = {
 		["Unequip"] = 1,
@@ -110,13 +110,13 @@ ItemRackEvents = {
 			["Undercity"] = 1,
 			["The Exodar"] = 1,
 			["Stormwind City"] = 1,
-			["Darnassus"] = 1,
-			["Ironforge"] = 1,
-			["Shattrath City"] = 1,
-			["Thunder Bluff"] = 1,
-			["Dalaran"] = 1,
-			["Silvermoon City"] = 1,
 			["Orgrimmar"] = 1,
+			["Thunder Bluff"] = 1,
+			["Shattrath City"] = 1,
+			["Silvermoon City"] = 1,
+			["Dalaran"] = 1,
+			["Ironforge"] = 1,
+			["Darnassus"] = 1,
 		},
 	},
 	["Buffs Gained"] = {
@@ -139,9 +139,9 @@ ItemRackEvents = {
 		["Type"] = "Stance",
 		["Stance"] = 1,
 	},
-	["Mounted"] = {
+	["Drinking"] = {
 		["Unequip"] = 1,
 		["Type"] = "Buff",
-		["Anymount"] = 1,
+		["Buff"] = "Drink",
 	},
 }

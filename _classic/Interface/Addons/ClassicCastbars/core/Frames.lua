@@ -18,6 +18,8 @@ local nonLSMBorders = {
     [130874] = true,
 }
 
+-- Note: don't add any major code reworks here, this codebase will soon be replaced with the player-castbar-v2 branch
+
 local function GetStatusBarBackgroundTexture(statusbar)
     if statusbar.Background then return statusbar.Background end
 
@@ -208,10 +210,10 @@ function ClassicCastbars:SetCastbarStyle(castbar, db, unitID)
         castbar.Icon:SetTexCoord(0, 1, 0, 1)
     end
 
-    castbar.Spark:SetHeight(db.height * 2.1)
+    castbar.Spark:SetHeight(db.height * 2.39)
     castbar.Icon:SetShown(db.showIcon)
     castbar.Icon:SetSize(db.iconSize, db.iconSize)
-    castbar.Border:SetVertexColor(unpack(db.borderColor))
+    castbar.Border:SetVertexColor(unpack(db.borderColor, 1, 3))
 
     castbar.Flash:ClearAllPoints()
     if castbar.isUninterruptible then
@@ -271,7 +273,7 @@ function ClassicCastbars:SetLSMBorders(castbar, db)
     castbar.Border:SetAlpha(0) -- hide default border
     castbar.BorderFrameLSM:SetAlpha(db.borderColor[4])
     castbar.BorderFrameLSM:SetFrameLevel(textureFrameLevels[db.castBorder] or castbar:GetFrameLevel() + 1)
-    castbar.BorderFrameLSM:SetBackdropBorderColor(unpack(db.borderColor))
+    castbar.BorderFrameLSM:SetBackdropBorderColor(unpack(db.borderColor, 1, 3))
 end
 
 function ClassicCastbars:SetCastbarFonts(castbar, db)
@@ -420,7 +422,7 @@ function ClassicCastbars:DisplayCastbar(castbar, unitID)
     end
 
     local sparkPosition = (castbar.value / castbar.maxValue) * (castbar.currWidth or castbar:GetWidth())
-    castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, 0)
+    castbar.Spark:SetPoint("CENTER", castbar, "LEFT", sparkPosition, castbar.BorderShield:IsShown() and 3 or 0)
     castbar:SetMinMaxValues(0, castbar.maxValue)
     castbar:SetValue(castbar.value)
     castbar:SetParent(parentFrame)
@@ -560,6 +562,15 @@ function ClassicCastbars:SkinPlayerCastbar()
                 CastingBarFrame:SetPoint(db.position[1], UIParent, db.position[2], db.position[3])
             end
         end)
+
+        -- Temp fix for pixel perfect spark position
+        hooksecurefunc(CastingBarFrame.Spark, "SetPoint", function(_, point, _, relativePoint, _, ofsY)
+            if point == "CENTER" and relativePoint == "LEFT" and ofsY == 2 then
+                local sparkPosition = (CastingBarFrame.value / CastingBarFrame.maxValue) * CastingBarFrame:GetWidth()
+                CastingBarFrame.Spark:SetPoint("CENTER", CastingBarFrame, "LEFT", sparkPosition, 0)
+            end
+        end)
+
         CastingBarFrame.CC_isHooked = true
     end
 
@@ -576,6 +587,7 @@ function ClassicCastbars:SkinPlayerCastbar()
     CastingBarFrame.Text:SetJustifyH(db.textPoint)
     CastingBarFrame.Icon:ClearAllPoints()
     CastingBarFrame.Icon:SetShown(db.showIcon)
+    CastingBarFrame.Spark:ClearAllPoints()
 
     if not db.autoPosition then
         CastingBarFrame.ignoreFramePositionManager = true
