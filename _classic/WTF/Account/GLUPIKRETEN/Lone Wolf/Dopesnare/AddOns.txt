@@ -107,7 +107,7 @@ LibSharedMedia-3.0: enabled
 LibStub: enabled
 LibUIDropDownMenu: enabled
 SkillInfoPlus: enabled
-AdiBags-BetterCategories: enabled
+AdiBags-BetterCategories: disabled
 ClassicProfessionFilter: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
@@ -125,3 +125,4 @@ TomTom: enabled
 TotemCaddy: enabled
 ConsolePort: enabled
 Blizzard_CombatText: enabled
+BetterRunesFrame: disabled

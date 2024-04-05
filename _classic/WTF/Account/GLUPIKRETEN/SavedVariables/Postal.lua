@@ -1,26 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
-		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
-		["Dopesick - Stitches"] = "Dopesick - Stitches",
-		["Dopede - Stitches"] = "Dopede - Stitches",
-		["Vermins - Stitches"] = "Vermins - Stitches",
-		["Dopecure - Stitches"] = "Dopecure - Stitches",
-		["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
-		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
-		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
-		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
-		["Lonac - Stitches"] = "Lonac - Stitches",
-		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
-		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-		["Dopeah - Stitches"] = "Dopeah - Stitches",
-		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
-		["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
-		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -35,7 +14,7 @@ Postal3DB = {
 				"Dopemend|Lone Wolf|Horde|12|PRIEST", -- [9]
 				"Doperage|Lone Wolf|Horde|32|WARRIOR", -- [10]
 				"Dopesick|Stitches|Horde|3|WARRIOR", -- [11]
-				"Dopesnare|Lone Wolf|Horde|40|HUNTER", -- [12]
+				"Dopesnare|Lone Wolf|Horde|41|HUNTER", -- [12]
 				"Dopesnare|Stitches|Horde|40|HUNTER", -- [13]
 				"Dopestab|Lone Wolf|Horde|35|ROGUE", -- [14]
 				"Dopetrap|Lone Wolf|Horde|1|HUNTER", -- [15]
@@ -45,6 +24,27 @@ Postal3DB = {
 				"Vermins|Stitches|Horde|26|WARRIOR", -- [19]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Dopeclaw - Lone Wolf"] = "Dopeclaw - Lone Wolf",
+		["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
+		["Dopesick - Stitches"] = "Dopesick - Stitches",
+		["Dopede - Stitches"] = "Dopede - Stitches",
+		["Vermins - Stitches"] = "Vermins - Stitches",
+		["Dopecure - Stitches"] = "Dopecure - Stitches",
+		["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
+		["Dopesnare - Stitches"] = "Dopesnare - Stitches",
+		["Dopedot - Lone Wolf"] = "Dopedot - Lone Wolf",
+		["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
+		["Dopecoil - Lone Wolf"] = "Dopecoil - Lone Wolf",
+		["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
+		["Lonac - Stitches"] = "Lonac - Stitches",
+		["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
+		["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+		["Dopeah - Stitches"] = "Dopeah - Stitches",
+		["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+		["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
 	["profiles"] = {
 		["Dopeclaw - Lone Wolf"] = {
@@ -99,7 +99,7 @@ Postal3DB = {
 		},
 		["Dopedot - Lone Wolf"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Dopetrap - Lone Wolf"] = {
 		},
 		["Dopecoil - Lone Wolf"] = {
 			["BlackBook"] = {
@@ -110,14 +110,14 @@ Postal3DB = {
 		},
 		["Dopesnare - Lone Wolf"] = {
 			["BlackBook"] = {
-				["contacts"] = {
-					"Dopemend", -- [1]
-				},
 				["recent"] = {
 					"Dopestab|Lone Wolf|Horde", -- [1]
 					"Sulfuraddict|Lone Wolf|Horde", -- [2]
 					"Dopemend|Lone Wolf|Horde", -- [3]
 					"Dopedot|Lone Wolf|Horde", -- [4]
+				},
+				["contacts"] = {
+					"Dopemend", -- [1]
 				},
 			},
 		},
@@ -155,7 +155,7 @@ Postal3DB = {
 		},
 		["Dopebolt - Lone Wolf"] = {
 		},
-		["Dopetrap - Lone Wolf"] = {
+		["Mxzq - Golemagg"] = {
 		},
 	},
 }
