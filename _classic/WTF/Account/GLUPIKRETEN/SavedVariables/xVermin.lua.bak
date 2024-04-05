@@ -54,6 +54,9 @@ xVerminSavedData = {
 			"Cheap Shot", -- [1]
 			"Mutilate", -- [2]
 		},
+		["Üranus"] = {
+			"Sunder Armor", -- [1]
+		},
 		["Wind Howler"] = {
 			"Deep Wound", -- [1]
 		},
@@ -91,17 +94,17 @@ xVerminSavedData = {
 		["Ironspine"] = {
 			"Rend", -- [1]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Rogue Flame Spirit"] = {
 			"Lava Lash", -- [1]
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Whirlwind Ripper"] = {
 			"Lightning Shield", -- [1]
@@ -146,16 +149,6 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Lava Lash", -- [1]
-			"Serpent Sting", -- [2]
-		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
-		},
-		["Lesser Rock Elemental"] = {
-			"Serpent Sting", -- [1]
-		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
 			"Earth Shock", -- [2]
@@ -182,6 +175,16 @@ xVerminSavedData = {
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
+		},
+		["Lesser Rock Elemental"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Burning Destroyer"] = {
+			"Lava Lash", -- [1]
+			"Serpent Sting", -- [2]
+		},
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
 		["Fire Elemental"] = {
 			"Flametongue Attack", -- [1]
@@ -223,11 +226,11 @@ xVerminSavedData = {
 			"Charge Stun", -- [1]
 			"Entrapment", -- [2]
 		},
-		["Amnennar the Coldbringer"] = {
-			"Intimidation", -- [1]
-		},
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
+		},
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]

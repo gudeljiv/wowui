@@ -78,7 +78,7 @@ local reputationItems = {
  	["Waylaid Supplies: Guardian Gloves"] =  			{ 850, 55000, 2000, 1500, 30, 35 },
     ["Waylaid Supplies: Heavy Mithril Gauntlets"] = 	{ 850, 55000, 2000, 1500, 35, 35 },
 	-- 12g, 1000 Rep Crates
-	["Waylaid Supplies: Deadly Scopes"] =  				{ 1000, 120000, 2000, 1500, 30, 40 },	--WOWHEAD UPDATE 10 MAR  	
+	["Waylaid Supplies: Deadly Scopes"] =  				{ 1000, 120000, 2000, 1500, 30, 40 },	--13800xp, rested, L28NE,  	
 	["Waylaid Supplies: Rich Purple Silk Shirts"] =  	{ 1000, 120000, 2000, 1500, 35, 40 },	--WOWHEAD UPDATE 10 MAR
 	["Waylaid Supplies: Elixirs of Greater Defense"] =	{ 1000, 120000, 2000, 3450, 40, 40 },
     ["Waylaid Supplies: Massive Iron Axes"] = 			{ 1000, 120000, 2000, 3450, 40, 40 },
@@ -92,31 +92,31 @@ local reputationItems = {
     --["Waylaid Supplies: Goblin Mortars"] = 			{ 1000, 25000, 2000, 2500, 40, 40 },
     --["Waylaid Supplies: Lesser Stoneshield Potions"] ={ 1000, 25000, 2000, 2500, 40, 40 },
 --Phase 3
-    ["Waylaid Supplies: Dreamfoil"] = 					{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Heavy Mageweave Bandages"] = 	{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Nightfin Soup"] = 				{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Rugged Leather"] = 				{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Sungrass"] = 					{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Tender Wolf Steaks"] = 			{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Thick Hide"] = 					{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Thorium Bars"] = 				{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Truesilver Bars"] = 			{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Undermine Clam Chowder"] = 		{950,  690000, 6969, 1700, 50, 45},
-    ["Waylaid Supplies: Black Mageweave Headbands"] = 	{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Enchanted Thorium Bars"] = 		{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Hi-Explosive Bombs"] = 			{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Major Healing Potions"] = 		{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Mithril Coifs"] = 				{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Rugged Armor Kits"] = 			{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Superior Mana Potions"] = 		{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Thorium Belts"] = 				{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Thorium Grenades"] = 			{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Tuxedo Shirts"] = 				{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Wicked Leather Bracers"] = 		{1300, 690000, 6969, 2850, 50, 45},
-    ["Waylaid Supplies: Runecloth Belts"] = 			{1850, 690000, 6969, 4650, 50, 45},
-    ["Waylaid Supplies: Runic Leather Bracers"] = 		{1850, 690000, 6969, 4650, 50, 45},
-    ["Waylaid Supplies: Thorium Rifles"] = 				{1850, 690000, 6969, 4650, 50, 45},
-    ["Waylaid Supplies: Truesilver Gauntlets"] = 		{1850, 690000, 6969, 4650, 50, 45},
+    ["Waylaid Supplies: Dreamfoil"] = 					{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Heavy Mageweave Bandages"] = 	{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Nightfin Soup"] = 				{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Rugged Leather"] = 				{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Sungrass"] = 					{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Tender Wolf Steaks"] = 			{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Thick Hide"] = 					{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Thorium Bars"] = 				{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Truesilver Bars"] = 			{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Undermine Clam Chowder"] = 		{950,  38500,  5000, 1700, 45, 42},
+    ["Waylaid Supplies: Black Mageweave Headbands"] = 	{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Enchanted Thorium Bars"] = 		{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Hi-Explosive Bombs"] = 			{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Major Healing Potions"] = 		{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Mithril Coifs"] = 				{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Rugged Armor Kits"] = 			{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Superior Mana Potions"] = 		{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Thorium Belts"] = 				{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Thorium Grenades"] = 			{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Tuxedo Shirts"] = 				{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Wicked Leather Bracers"] = 		{1300, 84500,  5000, 2850, 45, 45},
+    ["Waylaid Supplies: Runecloth Belts"] = 			{1850, 160000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Runic Leather Bracers"] = 		{1850, 160000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Thorium Rifles"] = 				{1850, 160000, 5000, 4650, 45, 50},
+    ["Waylaid Supplies: Truesilver Gauntlets"] = 		{1850, 160000, 5000, 4650, 45, 50},
 }
 
 local function Add_Waylaid_Supplies_Tooltip(tooltip)
@@ -195,8 +195,8 @@ function frame:OnEvent(event, itemID, success)
         end
     end
 end
-print("WST: Welcome to Waylaid Supplies Tooltip v1.4.7")
-print("WST: Known Issue: Phase 3 values are incomplete, update incoming")
+print("WST: Welcome to Waylaid Supplies Tooltip v1.4.7.2")
+--print("WST: Known Issue: Phase 3 values are incomplete, update incoming")
 print("WST: Coming Soon: Auction house addon integrations and localization")
 frame:SetScript("OnEvent", frame.OnEvent)
 GameTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)

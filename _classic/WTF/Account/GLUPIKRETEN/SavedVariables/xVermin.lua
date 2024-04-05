@@ -106,9 +106,8 @@ xVerminSavedData = {
 			"Intimidation", -- [5]
 			"Starfire Stun", -- [6]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Whirlwind Ripper"] = {
 			"Lightning Shield", -- [1]
@@ -163,26 +162,46 @@ xVerminSavedData = {
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Lava Lash", -- [1]
-			"Serpent Sting", -- [2]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Earth Shock", -- [2]
+			"Quick Strike", -- [3]
+			"Raptor Strike", -- [4]
+			"Serpent Sting", -- [5]
+			"Stormstrike", -- [6]
+			"Sunder Armor", -- [7]
+			"Wing Clip", -- [8]
+			"Crippling Poison", -- [9]
+			"Multi-Shot", -- [10]
+			"Arcane Shot", -- [11]
+			"Smite", -- [12]
+			"Firebolt", -- [13]
+			"Flame Shock", -- [14]
+			"Mutilate", -- [15]
+			"Lava Lash", -- [16]
+			"Explosive Shot", -- [17]
+			"Earthbind", -- [18]
+			"Magma Totem", -- [19]
+			"Faerie Fire (Feral)", -- [20]
+			"Mortal Strike", -- [21]
+			"Mangle", -- [22]
 		},
-		["Scalding Elemental"] = {
-			"Rend", -- [1]
+		["Scarlet Chaplain"] = {
+			"Weakened Soul", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Glutton"] = {
-			"Starfire Stun", -- [1]
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
 		},
 		["Agathelos the Raging"] = {
 			"Charge Stun", -- [1]
 			"Entrapment", -- [2]
 		},
-		["Amnennar the Coldbringer"] = {
-			"Intimidation", -- [1]
+		["Glutton"] = {
+			"Starfire Stun", -- [1]
 		},
 		["Herod"] = {
 			"Arcane Shot", -- [1]
@@ -220,32 +239,12 @@ xVerminSavedData = {
 			"Deep Wound", -- [5]
 			"Explosive Trap Effect", -- [6]
 		},
-		["Scarlet Chaplain"] = {
-			"Weakened Soul", -- [1]
+		["Scalding Elemental"] = {
+			"Rend", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Earth Shock", -- [2]
-			"Quick Strike", -- [3]
-			"Raptor Strike", -- [4]
-			"Serpent Sting", -- [5]
-			"Stormstrike", -- [6]
-			"Sunder Armor", -- [7]
-			"Wing Clip", -- [8]
-			"Crippling Poison", -- [9]
-			"Multi-Shot", -- [10]
-			"Arcane Shot", -- [11]
-			"Smite", -- [12]
-			"Firebolt", -- [13]
-			"Flame Shock", -- [14]
-			"Mutilate", -- [15]
-			"Lava Lash", -- [16]
-			"Explosive Shot", -- [17]
-			"Earthbind", -- [18]
-			"Magma Totem", -- [19]
-			"Faerie Fire (Feral)", -- [20]
-			"Mortal Strike", -- [21]
-			"Mangle", -- [22]
+		["Burning Destroyer"] = {
+			"Lava Lash", -- [1]
+			"Serpent Sting", -- [2]
 		},
 		["Overlord Ramtusk"] = {
 			"Concussive Shot", -- [1]
@@ -276,8 +275,9 @@ xVerminSavedData = {
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]

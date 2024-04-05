@@ -120,3 +120,13 @@ v1.4.7 Release - 03 APR 2024
 		Phase 3 madness!
 	Known Issues:
 		Values in phase 3
+
+v1.4.7.1 Release - 04 APR 2024
+	Fixed:
+		P3 values via wowhead for level 42 and 45 crates.
+	Known Issues:
+		Level 50 crate filled gold values are unknown.
+		
+v1.4.7.2 Release - 04 APR 2024
+	Fixed:
+		Level 50 crate gold values.
