@@ -31,6 +31,7 @@ L["Mol'dar's Moxie"] = "Mol'Dars Mut";
 L["Boon of Blackfathom"] = "Segen von Blackfathom";
 L["Ashenvale Rallying Cry"] = "Anspornender Schrei von Ashenvale";
 L["Spark of Inspiration"] = "Funke der wahnsinnigen Inspiration"; --Phase 2 SoD world buff.
+L["Fervor of the Temple Explorer"] = "Eifer des Tempelforschers";
 
 ---=====---
 ---Horde---

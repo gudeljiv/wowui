@@ -125,7 +125,7 @@ L["onyxia"] = "Onyxia"; --Onyxia
 L["nefarian"] = "Nefarian"; --Nefarian
 L["dmf"] = "Feria de la Luna Negra"; --Darkmoon Faire
 L["noTimer"] = "Sin temporizador"; --No timer
-L["noCurrentTimer"] = "No hay temporizador actual"; --No current timer
+L["noCurrentTimer"] = "Sin temporizador actual"; --No current timer
 L["noActiveTimers"] = "Sin temporizador actual"; --No active timers
 L["newBuffCanBeDropped"] = "Ahora se puede obtener un nuevo beneficio de %s";
 L["buffResetsIn"] = "%s reiniciará en %s";
@@ -464,7 +464,7 @@ L["soundsFirstYellTitle"] = "Beneficio entrante";
 L["soundsFirstYellDesc"] = "Suena cuando se entrega la cabeza y tienes unos segundos antes de que empieza el beneficio (primer grito de PNJ).";
 
 L["soundsOneMinuteTitle"] = "Anuncio de un minuto";
-L["soundsOneMinuteDesc"] = "Se reproducirá un sonido durante el anuncio del temporizador restante de 1 minuto.";
+L["soundsOneMinuteDesc"] = "Se reproducirá un sonido durante el anuncio del temporizador restantes de 1 minuto.";
 
 L["soundsRendDropTitle"] = "Beneficio de Rend";
 L["soundsRendDropDesc"] = "Sonido para reproducir para Rend cuando obtienes el beneficio.";
@@ -925,7 +925,6 @@ L["Hold to drag"] = "Mantén presionado para arrastrar";
 
 L["Can't find current layer or no timers active for this layer."] = "No se puede encontrar la capa actual o no hay temporizadores activos para esta capa.";
 L["No guild members online sharing layer data found."] = "No se encontraron miembros de la hermandad en línea compartiendo datos de capa.";
-L["You have no guild, this command shows guild members only."] = "No tienes hermandad, este comando muestra solo a los miembros de la hermandad.";
 
 --New.
 
@@ -946,8 +945,8 @@ L["Copy Frame"] = "Copiar marco";
 L["Show how many times you got each buff."] = "Muestra cuántas veces obtuviste cada beneficio.";
 L["Show all alts that have buff stats? (stats must be enabled)."] = "¿Muestra todos los alts que tienen estadísticas de beneficio? (las estadísticas deben estar activadas).";
 L["No timer logs found."] = "No se encontraron registros del temporizador.";
-L["Merge Layers"] = "Fusionar capas";
-L["mergeLayersTooltip"] = "Si varias capas tienen el mismo temporizador, se fusionarán en [Todas las capas] en lugar de mostrarlas por separado.";
+L["Merge Layers"] = "Juntar capas";
+L["mergeLayersTooltip"] = "Si varias capas tienen el mismo temporizador, se juntarán en [Todas las capas] en lugar de mostrarlas por separado.";
 L["Ready"] = "Listo";
 L["Chronoboon"] = "Desplazador de cronobeneficios";
 L["Local Time"] = "Hora local";
@@ -964,8 +963,8 @@ L["All characters are using default"] = "Todos los personajes usando la configur
 L["Orgrimmar"] = "Orgrimmar";
 L["Stormwind"] = "Ventormenta";
 L["Dalaran"] = "Dalaran";
-L["left"] = "restante";
-L["remaining"] = "restante";
+L["left"] = "restantes";
+L["remaining"] = "restantes";
 
 L["Online"] = "Conectado";
 L["Offline"] = "Desconectado";
@@ -1009,3 +1008,8 @@ L["Boss"] = "Jefe"; --Abbreviate if too long, this text sits below a map marker.
 L["stvBossSpotted"] = "¡Jefe Loa avistado! Mira el mapa para la ubicación.";
 L["Total coins this event"] = "Moneda total en este evento"; --Keep it short, it prints to chat when you hand in coins.
 L["Last seen"] = "Última vez visto";
+L["World Events"] = "Eventos mundiales";
+L["layersNoGuild"] = "No tienes hermandad, este comando muestra solo miembros de la hermandad.";
+
+L["Fervor of the Temple Explorer"] = "Fervor del explorador de templo";
+L["No guild"] = "Sin hermandad";

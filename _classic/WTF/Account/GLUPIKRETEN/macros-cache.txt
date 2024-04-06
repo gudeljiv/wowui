@@ -17,7 +17,7 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:3927
+/use item:4599
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -73,9 +73,8 @@ VER 3 000000000000000F "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/run print(xImmune("Bloodmage Thalnos", "Rake"))
-/run print(xImmune("Arcanist Doan", "Ignite"))
-/run print(UnitCastingInfo("player"))
+/run ECS_StatsFrame:ClearAllPoints()
+/run ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrame, "TOPRIGHT", 15, 45)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

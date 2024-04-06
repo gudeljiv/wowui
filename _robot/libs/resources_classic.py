@@ -39,6 +39,7 @@ data = {
             {"name": "rockbiter weapon oh", "type": "GetItemIcon", "id": 1483, "modifier": "lshift", "key": "f1"},
             {"name": "windfury weapon oh", "type": "GetItemIcon", "id": 215373, "modifier": "lshift", "key": "f2"},
             {"name": "flametongue weapon oh", "type": "GetItemIcon", "id": 924, "modifier": "lshift", "key": "f3"},
+            {"name": "purge", "type": "GetSpellTexture", "id": 370, "key": "8"},
         ],
         "secondary": [
             {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "modifier": "lalt", "key": "3"},

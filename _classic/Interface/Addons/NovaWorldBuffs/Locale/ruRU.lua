@@ -31,6 +31,7 @@ L["Mol'dar's Moxie"] = "Дерзость Мол'дара";
 L["Boon of Blackfathom"] = "Дар Непроглядной Пучины";
 L["Ashenvale Rallying Cry"] = "Ободряющий клич Ясеневого леса";
 L["Spark of Inspiration"] = "Искра безумного вдохновения"; --Phase 2 SoD world buff.
+L["Fervor of the Temple Explorer"] = "Рвение исследователя храма";
 
 ---=====---
 ---Horde---

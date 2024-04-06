@@ -187,6 +187,11 @@ function NWB:isDST()
 	end
 end
 
+function NWB_isDST()
+	--For easy user debugging reasons.
+	return NWB:isDST();
+end
+
 --Print current buff timers to chat window.
 local npcRespawnTime = 360;
 function NWB:printBuffTimers(isLogon)
@@ -1668,6 +1673,7 @@ local waitingCombatEnd, hideSummonPopup;
 local lastRendHandIn, lastOnyHandIn, lastNefHandIn, lastZanHandIn = 0, 0, 0, 0;
 NWB.lastBlackfathomBoon = 0;
 NWB.lastSparkOfInspiration = 0;
+NWB.lastFervorTempleExplorer = 0;
 local unitDamageFrame = CreateFrame("Frame");
 function NWB:combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
@@ -2132,6 +2138,16 @@ function NWB:combatLogEventUnfiltered(...)
 					NWB.lastSparkOfInspiration = GetServerTime();
 					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
 					NWB:print(string.format(L["specificBuffDropped"], L["Spark of Inspiration"]));
+				end
+			end
+		elseif (destName == UnitName("player") and spellName == L["Fervor of the Temple Explorer"]) then
+			local expirationTime = NWB:getBuffDuration(spellName, 0);
+			if (expirationTime >= 7199) then
+				NWB:trackNewBuff(spellName, "fervorTempleExplorer");
+				if (GetServerTime() - NWB.lastFervorTempleExplorer > 300) then
+					NWB.lastFervorTempleExplorer = GetServerTime();
+					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
+					NWB:print(string.format(L["specificBuffDropped"], L["Fervor of the Temple Explorer"]));
 				end
 			end
 		elseif (destName == UnitName("player") and spellName == L["Stealth"]) then
@@ -3012,6 +3028,7 @@ local spellTypes = {
 	[430352] = "ashenvaleRallyingCry",
 	[438536] = "sparkOfInspiration", --Why is there 2 the same? Horde and Alliance perhaps?
 	[438537] = "sparkOfInspiration",
+	[446695] = "fervorTempleExplorer",
 }; 
 		
 local buffTable = {
@@ -3237,6 +3254,11 @@ local buffTable = {
 	["sparkOfInspiration"] = {
 		icon = "|TInterface\\Icons\\achievement_boss_mekgineer_thermaplugg-:12:12:0:0|t",
 		fullName = "Spark of Inspiration",
+		maxDuration = 7200,
+	},
+	["fervorTempleExplorer"] = {
+		icon = "|TInterface\\Icons\\achievement_bg_killxenemies_generalsroom:12:12:0:0|t",
+		fullName = "Fervor of the Temple Explorer",
 		maxDuration = 7200,
 	},
 };
@@ -3467,7 +3489,7 @@ function NWB:storeBuffs()
 						or k == L["Sayge's Dark Fortune of Stamina"] or k == L["Sayge's Dark Fortune of Strength"]
 						or k == L["Sayge's Dark Fortune of Armor"] or k == L["Sayge's Dark Fortune of Resistance"]
 						or k == L["Sayge's Dark Fortune of Damage"] or k == L["Boon of Blackfathom"]
-						or k == L["Spark of Inspiration"]) then
+						or k == L["Spark of Inspiration"] or k == L["Fervor of the Temple Explorer"]) then
 					tempStoredBuffs[k] = {};
 					for kk, vv in pairs(v) do
 						tempStoredBuffs[k][kk] = vv;
@@ -3593,11 +3615,11 @@ function NWB:timePlayedMsg(...)
 		NWB.currentTrackBuff = nil;
 	end
 	--Reregister the chat frame event after we're done.
-	--C_Timer.After(5, function()
+	C_Timer.After(2, function()
 		if (reregisterPlayedEvent) then
 			DEFAULT_CHAT_FRAME:RegisterEvent("TIME_PLAYED_MSG");
 		end
-	--end)
+	end)
 	NWB:syncBuffsWithCurrentDuration();
 	NWB:recalcBuffTimers();
 end
@@ -9772,7 +9794,17 @@ function NWB:recalcBuffsLineFramesTooltip(obj)
 				else
 					text = "|c" .. classColorHex .. player .. "|r";
 				end
-				text = text .. "\n" .. color1 .. L["guild"] .. ":|r " .. color2 .. (data.guild or "none") .. "|r";
+				local guildString;
+				if (data.guild) then
+					if (data.guild == "No guild") then
+						guildString = L["No guild"];
+					else
+						guildString = data.guild;
+					end
+				else
+					guildString = "unknown";
+				end
+				text = text .. "\n" .. color1 .. L["guild"] .. ":|r " .. color2 .. guildString .. "|r";
 				text = text .. "\n" .. color1 .. L["level"] .. ":|r " .. color2 .. data.level .. "|r";
 				if (data.freeBagSlots and data.totalBagSlots) then
 					local displayFreeSlots = color2 .. data.freeBagSlots .. "|r";
@@ -13091,7 +13123,7 @@ end
 function NWB:recalcVersionFrame()
 	NWBVersionFrame.EditBox:SetText("\n\n");
 	if (not IsInGuild()) then
-		NWBVersionFrame.EditBox:Insert("|cffFFFF00You have no guild, this command shows guild members only.|r\n");
+		NWBVersionFrame.EditBox:Insert("|cffFFFF00" .. L["layersNoGuild"] .. "|r\n");
 	else
 		GuildRoster();
 		local numTotalMembers = GetNumGuildMembers();

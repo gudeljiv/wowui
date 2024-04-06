@@ -36,6 +36,7 @@ local function GetEquippedRunes()
 end
 
 local function UpdateButtons()
+	print("update buttons")
     local scrollFrame = EngravingFrame.scrollFrame;
     local buttons = scrollFrame.buttons;
     local offset = HybridScrollFrame_GetOffset(scrollFrame);
@@ -118,6 +119,7 @@ local function UpdateButtons()
 
     local totalHeight = numRows * RUNE_BUTTON_HEIGHT;
     totalHeight = totalHeight + (numHeaders * RUNE_HEADER_BUTTON_HEIGHT);
+	print(totalHeight)
     HybridScrollFrame_Update(scrollFrame, totalHeight, 348);
 end
 

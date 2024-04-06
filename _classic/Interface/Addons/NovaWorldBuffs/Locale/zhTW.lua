@@ -33,6 +33,7 @@ L["Mol'dar's Moxie"] = "摩爾達的勇氣";
 L["Boon of Blackfathom"] = "黑澗深淵的恩賜";
 L["Ashenvale Rallying Cry"] = "梣谷振奮咆哮";
 L["Spark of Inspiration"] = "鼓舞火花"; --Phase 2 SoD world buff.
+L["Fervor of the Temple Explorer"] = "神廟探險者狂熱";
 
 ---=====---
 ---Horde---

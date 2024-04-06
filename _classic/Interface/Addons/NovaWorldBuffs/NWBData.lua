@@ -70,13 +70,22 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 		return;
 	end
 	local _, realm = strsplit("-", sender, 2);
-	if (not NWB.isClassic) then
+	--[[if (not NWB.isClassic) then
 		--Ignore this check on classic era, there's no crossrealm (only linked realms) there except in bgs and we ignore bgs already.
 		--If realm found then it's not my realm.
 		--If acecomm changes and starts supplying realm for own realm then this needs to be changed.
 		--if (realm and (realm ~= GetRealmName() and realm ~= GetNormalizedRealmName())) then
 		if (realm and not connectedRealms[realm]) then
 			--Ignore data from other realms (in bgs and lfg now it's been added to wrath).
+			return;
+		end
+	end]]
+	--Now checking connected realms in all versions of the game instead, connected realms are coming with cata.
+	if (realm) then
+		NWB:debug("Realm data received:", realm);
+		--Realm name is only supplied by ace if not our realm.
+		if (realm ~= GetRealmName() and not connectedRealms[realm]) then
+			--Ignore data from other realms.
 			return;
 		end
 	end
@@ -1915,7 +1924,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 		end
 	end
 	--If new flower data received and not freshly picked by guild member (that sends a msg to guild chat already)
-	if (newFlowerData and NWB.db.global.showNewFlower) then
+	if (newFlowerData and NWB.db.global.showNewFlower and not NWB.isLayered) then
 		--local string = "New songflower timer received:";
 		local string = L["newSongflowerReceived"] .. ":";
 		local found;
@@ -3519,7 +3528,7 @@ end
 function NWB:recalcLFrame()
 	NWBLFrame.EditBox:SetText("\n\n");
 	if (not IsInGuild()) then
-		NWBLFrame.EditBox:Insert("|cffFFFF00You have no guild, this command shows guild members only.\n");
+		NWBLFrame.EditBox:Insert("|cffFFFF00" .. L["layersNoGuild"] .. "\n");
 	else
 		GuildRoster();
 		local numTotalMembers = GetNumGuildMembers();

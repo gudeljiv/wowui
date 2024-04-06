@@ -316,6 +316,21 @@ xVermin.Enraged = function(unit)
 end
 xEnraged = xVermin.Enraged
 
+xVermin.Magic = function(unit)
+	unit = unit and unit or 'player'
+
+	local magic = 0
+	for i = 1, MAX_TARGET_BUFFS do
+		local name, _, _, buffType = UnitAura(unit, i)
+		if name and buffType == 'Magic' then
+			magic = magic + 1
+		end
+	end
+
+	return magic > 0 and true or false
+end
+xMagic = xVermin.Magic
+
 xVermin.Immune = function(name, spellName)
 	if not name or not spellName then
 		return false
