@@ -32,37 +32,3 @@ xVermin.CheckIfLoadedWithTimer(
 
 CharacterRangedSlotCount:SetScale(0.75)
 
-
-
-CharacterFrame:HookScript(
-	"OnShow",
-	function()
-		ECS_StatsFrame:ClearAllPoints()
-		ECS_StatsFrame:HookScript(
-			"OnUpdate",
-			function()
-				if EngravingFrame:IsVisible() then
-					ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrame, "TOPRIGHT", 15, 45)
-				else
-					ECS_StatsFrame:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", -25, -15)
-				end
-			end
-		)
-	end
-)
-
--- EngravingFrame:HookScript(
--- 	"OnShow",
--- 	function()
--- 		ECS_StatsFrame:ClearAllPoints()
--- 		ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrame, "TOPRIGHT", 15, 45)
--- 	end
--- )
-
--- EngravingFrame:HookScript(
--- 	"OnHide",
--- 	function()
--- 		ECS_StatsFrame:ClearAllPoints()
--- 		ECS_StatsFrame:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", -25, -15)
--- 	end
--- )

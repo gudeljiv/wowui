@@ -5,28 +5,22 @@ xVermin.CheckIfLoadedWithTimer(
 	function()
 		ECS_StatsFrame:SetWidth(200)
 
-		-- xVermin.CheckIfLoadedWithTimer(
-		-- 	'EngravingFrame',
-		-- 	function()
-
-		-- 		EngravingFrame:HookScript(
-		-- 			'OnShow',
-		-- 			function(self)
-		-- 				ECS_StatsFrame:ClearAllPoints()
-		-- 				ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrameSearchBox, "TOPRIGHT", 18, 5)
-		-- 			end
-		-- 		)
-
-		-- 		EngravingFrame:HookScript(
-		-- 			'OnHide',
-		-- 			function(self)
-		-- 				ECS_StatsFrame:ClearAllPoints()
-		-- 				ECS_StatsFrame:SetPoint("TOPLEFT", PaperDollFrame, "TOPRIGHT", -25, -14)
-		-- 			end
-		-- 		)
-
-		-- 	end
-		-- )
+		CharacterFrame:HookScript(
+			"OnShow",
+			function()
+				ECS_StatsFrame:ClearAllPoints()
+				ECS_StatsFrame:HookScript(
+					"OnUpdate",
+					function()
+						if EngravingFrame:IsVisible() then
+							ECS_StatsFrame:SetPoint("TOPLEFT", EngravingFrame, "TOPRIGHT", 15, 45)
+						else
+							ECS_StatsFrame:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", -25, -15)
+						end
+					end
+				)
+			end
+		)
 
 	end
 )

@@ -321,7 +321,7 @@ xVermin.Magic = function(unit)
 
 	local magic = 0
 	for i = 1, MAX_TARGET_BUFFS do
-		local name, _, _, buffType = UnitAura(unit, i)
+		local name, _, _, buffType = UnitBuff(unit, i)
 		if name and buffType == 'Magic' then
 			magic = magic + 1
 		end
