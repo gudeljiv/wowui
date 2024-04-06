@@ -215,7 +215,7 @@ ThreatClassic2: enabled
 unitscan: disabled
 WideQuestLogPlus: enabled
 Deathlog: disabled
-RareScanner: enabled
+RareScanner: disabled
 SortBags: enabled
 Ace3: enabled
 AceGUI-3.0_SFX-Widgets: enabled
