@@ -33,6 +33,7 @@ local function xInstallAddon()
 	C_CVar.SetCVar('AutoInteract', 0)
 	C_CVar.SetCVar('cursorsizepreferred', 0)
 	C_CVar.SetCVar("autoLootDefault", "1")
+	C_CVar.SetCVar("floatingCombatTextCombatHealing", 1)
 
 	C_CVar.SetCVar('showArenaEnemyFrames', '0')
 	C_CVar.SetCVar('showArenaEnemyCastbar', '0')
