@@ -5283,33 +5283,6 @@ function NWB:updateMinimapButton(tooltip, frame)
 				tooltip["NWBSeparator" .. i]:Hide();
 			end
 		end
-		--[[if (tooltip.NWBSeparator2) then
-			tooltip.NWBSeparator2:Hide();
-		end
-		if (tooltip.NWBSeparator3) then
-			tooltip.NWBSeparator3:Hide();
-		end
-		if (tooltip.NWBSeparator4) then
-			tooltip.NWBSeparator4:Hide();
-		end
-		if (tooltip.NWBSeparator5) then
-			tooltip.NWBSeparator5:Hide();
-		end
-		if (tooltip.NWBSeparator6) then
-			tooltip.NWBSeparator6:Hide();
-		end
-		if (tooltip.NWBSeparator7) then
-			tooltip.NWBSeparator7:Hide();
-		end
-		if (tooltip.NWBSeparator8) then
-			tooltip.NWBSeparator8:Hide();
-		end
-		if (tooltip.NWBSeparator9) then
-			tooltip.NWBSeparator9:Hide();
-		end
-		if (tooltip.NWBSeparator10) then
-			tooltip.NWBSeparator10:Hide();
-		end]]
 		return;
 	end
 	tooltip:ClearLines();
@@ -6909,6 +6882,7 @@ function NWB:updateFelwoodMinimapMarker(type)
 					frame.fs:SetText("|Cffff2500-" .. minutes .. ":" .. seconds);
 					frame:SetWidth(frame.fs:GetStringWidth() + 14);
 					frame:SetHeight(frame.fs:GetStringHeight() + 9);
+					frame.hasTimer = true;
 					hasTimer = count;
 			  	elseif (time > 0) then
 					--If timer is less than 25 minutes old then return time left.
@@ -6922,6 +6896,7 @@ function NWB:updateFelwoodMinimapMarker(type)
 					frame:SetWidth(frame.fs:GetStringWidth() + 14);
 					frame:SetHeight(frame.fs:GetStringHeight() + 9);
 					hasTimer = count;
+					frame.hasTimer = true;
 			  	else
 			  		--tooltipText = tooltipText .. "\n" .. L["noTimer"] .. " (Layer " .. count .. ")";
 			  		tooltipText = L["noTimer"] .. " (" .. L["Layer"] .. " " .. count .. ")\n" .. tooltipText;
@@ -6929,19 +6904,38 @@ function NWB:updateFelwoodMinimapMarker(type)
 					frame.fs:SetText(L["noTimer"]);
 					frame:SetWidth(frame.fs:GetStringWidth() + 14);
 					frame:SetHeight(frame.fs:GetStringHeight() + 9);
+					frame.hasTimer = false;
 				end
 			end
 		end
 		if (hasTimer) then
 			--Show all frames if any have an active timer.
-			for i = 1, count do
+			--[[for i = 1, count do
 				if (i == 1) then
 					_G[type .. "NWBMini"]["timerFrame"]:Show();
 				elseif (_G[type .. "NWBMini"]["timerFrame" .. i]) then
 					_G[type .. "NWBMini"]["timerFrame" .. i]:SetPoint("CENTER", 0, i * 18);
 					_G[type .. "NWBMini"]["timerFrame" .. i]:Show();
 				end
+			end]]
+			
+			--Now we only show layers that have a timer instead.
+			local offset = 0;
+			for i = 1, count do
+				if (i == 1) then
+					if (_G[type .. "NWBMini"]["timerFrame"].hasTimer) then
+						offset = offset + 18;
+						_G[type .. "NWBMini"]["timerFrame"]:Show();
+					end
+				elseif (_G[type .. "NWBMini"]["timerFrame" .. i]) then
+					if (_G[type .. "NWBMini"]["timerFrame" .. i].hasTimer) then
+						offset = offset + 18;
+						_G[type .. "NWBMini"]["timerFrame" .. i]:SetPoint("CENTER", 0, offset);
+						_G[type .. "NWBMini"]["timerFrame" .. i]:Show();
+					end
+				end
 			end
+			
 			--_G[type .. "NWBMini"].tooltip.fs:SetText("|CffDEDE42" .. _G[type .. "NWB"].name .. "|r\n" .. _G[type .. "NWB"].subZone .. tooltipText);
 			_G[type .. "NWBMini"].tooltip.fs:SetText("|CffDEDE42" .. _G[type .. "NWB"].name .. "|r\n" .. _G[type .. "NWB"].subZone .. "\n" .. tooltipText);
 		else

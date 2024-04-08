@@ -15,7 +15,7 @@ else:
     from libs.resources_classic import keyCodeMap
 
 
-from libs.interception import *
+# from libs.interception import *
 from libs.ctypes_custom import KeyPress as cKeyPress
 from win32api import GetSystemMetrics
 import win32gui
@@ -39,7 +39,7 @@ from os.path import isfile, join
 from pyautogui import *
 from pynput import keyboard
 
-driver = interception()
+# driver = interception()
 
 combat = False
 dprint = False
@@ -103,13 +103,14 @@ def ReleaseKey(interception_press):
 
 
 def press_interception_key(key, modifier=False):
-    m = modifier and toKeyCode(modifier.upper())
-    if m:
-        rm = PressKey(m)
-    r = PressKey(toKeyCode(key.upper()))
-    ReleaseKey(r)
-    if m:
-        ReleaseKey(rm)
+    cKeyPress(key, modifier)
+    # m = modifier and toKeyCode(modifier.upper())
+    # if m:
+    #     rm = PressKey(m)
+    # r = PressKey(toKeyCode(key.upper()))
+    # ReleaseKey(r)
+    # if m:
+    #     ReleaseKey(rm)
 
 
 def on_press(key):

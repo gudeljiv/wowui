@@ -11,6 +11,7 @@ local IS_WOW_PROJECT_NOT_MAINLINE = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_CLASSIC_ERA = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local IS_WOW_PROJECT_CLASSIC_TBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 local IS_WOW_PROJECT_CLASSIC_WRATH = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_WRATH_OF_THE_LICH_KING and ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING)
+--local IS_WOW_PROJECT_CLASSIC_CATACLYSM = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_CATACLYSM and ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM)
 
 local PixelUtil = PixelUtil or DFPixelUtil
 
@@ -2646,6 +2647,20 @@ local debuff_options = {
 		desc = "If enabled the swipe closure texture is applied as the swipe moves instead.",
 	},
 }
+
+if IS_WOW_PROJECT_CLASSIC_ERA then
+	tinsert(debuff_options, 5, {
+		type = "toggle",
+		boxfirst = true,
+		get = function() return Plater.db.profile.auras_experimental_update_classic_era end,
+		set = function (self, fixedparam, value) 
+			Plater.db.profile.auras_experimental_update_classic_era = value
+			Plater.RefreshAuraCache()
+		end,
+		name = "Enable experimental aura updates",
+		desc = "Enable experimental aura updates for classic era.\nMight help in tracking enemy buffs that are applied while the nameplate is visible.",
+	})
+end
 
 _G.C_Timer.After(0.850, function() --~delay
 	debuff_options.always_boxfirst = true
@@ -6807,6 +6822,17 @@ local relevance_options = {
 			name = "OPTIONS_EXECUTERANGE_HIGH_HEALTH",
 			desc = "OPTIONS_EXECUTERANGE_HIGH_HEALTH_DESC",
 			hidden = IS_WOW_PROJECT_NOT_MAINLINE,
+		},
+		
+		{
+			type = "toggle",
+			get = function() return Plater.db.profile.health_cutoff_extra_glow end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.health_cutoff_extra_glow = value
+				Plater.UpdateAllPlates()
+			end,
+			name = "Add Extra Glow to Execute Range",
+			desc = "Add Extra Glow to Execute Range",
 		},
 
 		{
@@ -11454,7 +11480,7 @@ end
 				Plater.RefreshAutoToggle()
 			end,
 			name = L["OPTIONS_ENABLED"],
-			desc = "When enabled, Plater will enable or disable stacking nameplates based on the settings below.\n\n" .. ImportantText .. "only toggle on if 'Stacking Nameplates' is enabled in the General Settings tab.",
+			desc = "When enabled, Plater will enable or disable nameplates and healthbars based on the settings below, when the player enters or leaves combat.",
 		},
 		{
 			type = "toggle",
@@ -13303,16 +13329,6 @@ end
 			name = "Show Shield Prediction",
 			desc = "Show an extra bar for shields (e.g. Power Word: Shield from priests) absorption.",
 		},
-		{
-			type = "toggle",
-			get = function() return Plater.db.profile.health_cutoff_extra_glow end,
-			set = function (self, fixedparam, value) 
-				Plater.db.profile.health_cutoff_extra_glow = value
-				Plater.UpdateAllPlates()
-			end,
-			name = "Add Extra Glow to Execute Range",
-			desc = "Add Extra Glow to Execute Range",
-		},
 		
 		{
 			type = "toggle",
@@ -13355,6 +13371,16 @@ end
 			end,
 			name = "Opt-Out of automatically accepting NPC Colors",
 			desc = "Will not automatically accepd npc colors sent by raid-leaders but prompt instead.",
+		},
+		{
+			type = "toggle",
+			get = function() return Plater.db.profile.auto_translate_npc_names end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.auto_translate_npc_names = value
+				Plater.TranslateNPCCache()
+			end,
+			name = "Automatically translate NPC names on the NPC Colors tab.",
+			desc = "Will automatically translate the names to the current game locale.",
 		},
 	
 		{type = "blank"},

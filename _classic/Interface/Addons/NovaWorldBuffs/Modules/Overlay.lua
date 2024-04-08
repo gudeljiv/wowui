@@ -61,9 +61,6 @@ local function loadOverlay()
 			if (button == "LeftButton" and not self.isMoving) then
 				self:StartMoving();
 				self.isMoving = true;
-				if (notSpecialFrames) then
-					self:SetUserPlaced(false);
-				end
 			end
 		end)
 		frame:SetScript("OnMouseUp", function(self, button)

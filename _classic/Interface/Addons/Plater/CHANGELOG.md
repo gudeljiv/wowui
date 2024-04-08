@@ -1,6 +1,14 @@
 @cont1nuity:
-- Fixing interrupt animation being enabled to break following cast bars.
-- Fixing consolidated auras sometimes not showing properly when sorting for longest duration.
-- Fixing DK rune visuals not updating properly when on cooldown (for real this time).
-- Fixing backup range check error in SoD.
+- Adding option to automatically translate NPC names on the 'NPC Colors and Names' tab.
+- Maintenance on libraries.
+- Adding support for Cataclysm classic.
+- Reworking aura updates for classic era.
+- Fixing an issue with aura updates in classic era.
+- Fixing an issue with Ghost Auras on performance units.
+
+@Thunderz:
+- Adding tank states for Rogues on SoD.
+
+@Terciob:
+- Maintenance on libraries.
 

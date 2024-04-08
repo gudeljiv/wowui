@@ -68,6 +68,7 @@ local IS_WOW_PROJECT_MAINLINE = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_NOT_MAINLINE = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_CLASSIC_ERA = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 local IS_WOW_PROJECT_CLASSIC_WRATH = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_WRATH_OF_THE_LICH_KING and ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING)
+--local IS_WOW_PROJECT_CLASSIC_CATACLYSM = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_CATACLYSM and ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM)
 
 local PixelUtil = PixelUtil or DFPixelUtil
 
@@ -1121,6 +1122,13 @@ Plater.AnchorNamesByPhraseId = {
 						playerIsTank = true
 					  end
 					end
+				elseif playerClass == "ROGUE" then
+					for i=1,40 do
+					  local spellId = select(10, UnitBuff("player",i))
+					  if spellId == 400015 or spellId == 400016 then
+						playerIsTank = true
+					  end
+					end
 				elseif playerClass == "WARLOCK" then
 					for i=1,40 do
 					  local spellId = select(10, UnitBuff("player",i))
@@ -1136,6 +1144,7 @@ Plater.AnchorNamesByPhraseId = {
 					  end
 					end
 				end
+				
 			end
 			
 			-- if the player is assigned as MAINTANK, then treat him as one:
@@ -2461,7 +2470,7 @@ Plater.AnchorNamesByPhraseId = {
 			C_Timer.After (3, Plater.Resources.OnSpecChanged)
 			
 			-- translate NPC_CACHE entries if needed
-			--C_Timer.After (5, Plater.TranslateNPCCache)
+			C_Timer.After (10, Plater.TranslateNPCCache)
 
 		end,
 		
@@ -5641,7 +5650,9 @@ end
 			---@cast plateFrame plateframe
 			if plateFrame.unitFrame and plateFrame.unitFrame.PlaterOnScreen then
 				if not plateFrame.unitFrame.isPerformanceUnit then
-					Plater.AddToAuraUpdate(plateFrame.unitFrame.unit) -- force aura update
+					if not IS_WOW_PROJECT_CLASSIC_ERA or (IS_WOW_PROJECT_CLASSIC_ERA and plateFrame.actorType ~= ACTORTYPE_ENEMY_PLAYER) then -- don't force update in classic
+						Plater.AddToAuraUpdate(plateFrame.unitFrame.unit) -- force aura update
+					end
 				end
 				
 				Plater.UpdatePlateFrame (plateFrame, nil, forceUpdate, justAdded, regenDisabled)
@@ -9046,8 +9057,11 @@ end
 	
 	-- tanslate the npc cache entries if needed, do so. can translate names only, but not zones.
 	function Plater.TranslateNPCCache()
+		if not Plater.db.profile.auto_translate_npc_names then return end
 		if Plater.TranslateNPCCacheIsRunning then return end
 		Plater.TranslateNPCCacheIsRunning = true
+		local maxPerFrame = 10
+		local translateTimer = 0.1
 		
 		local function GetCreatureNameFromID(npcID)
 			if C_TooltipInfo then
@@ -9065,34 +9079,39 @@ end
 			end
 		end
 		
-		local translate_npc_cache = function()
-			if PLAYER_IN_COMBAT or not IS_IN_OPEN_WORLD then
+		local translate_npc_cache
+		translate_npc_cache	= function()
+			if not Plater.db.profile.auto_translate_npc_names then return end
+			if PLAYER_IN_COMBAT then --or not IS_IN_OPEN_WORLD then
 				C_Timer.After(5, translate_npc_cache)
 			end
 			
 			local count = 0
 			local leftOvers = false
 			for id, entry in pairs(DB_NPCIDS_CACHE) do
-				leftOvers = false
 				
 				if entry[3] ~= Plater.Locale then
 					local npcName = GetCreatureNameFromID(id)
 					if npcName then
+						--DevTool:AddData(npcName, "translated")
 						entry[1] = npcName
 						entry[3] = Plater.Locale
 						count = count + 1
+					else
+						--DevTool:AddData(id .. " - " .. entry[1], "not translated")
 					end
 				end
 				
-				if count > 10 then
+				if count >= maxPerFrame then
 					leftOvers = true
 					break
-				else 
 				end
 			end
 			
 			if leftOvers and Plater.TranslateNPCCacheIsRunning then
-				C_Timer.After(1, translate_npc_cache)
+				C_Timer.After(translateTimer, translate_npc_cache)
+			else
+				Plater.TranslateNPCCacheIsRunning = false
 			end
 		end
 		translate_npc_cache()

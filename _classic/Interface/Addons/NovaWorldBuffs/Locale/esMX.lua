@@ -563,7 +563,7 @@ L["enableLayerButtonTooltip"] = "Haz clic para volver a activar esta capa,\nSe v
 L["disableLayerButtonTooltip"] = "Haz clic para desactivar la capa antigua tras reiniciar el servidor.\nEl addon lo ignorará y lo eliminará más tarde.";
 
 L["minimapLayerHoverTitle"] = "Pasar el ratón";
-L["minimapLayerHoverDesc"] = "¿Muestra sólo el marco numérico de la capa del minimapa cuando pasa el ratón sobre el minimapa?";
+L["minimapLayerHoverDesc"] = "¿Muestra sólo el marco numérico de la capa del minimapa cuando pasas el ratón sobre el minimapa?";
 
 L["Blackrock Mountain"] = "Montaña Roca Negra";
 

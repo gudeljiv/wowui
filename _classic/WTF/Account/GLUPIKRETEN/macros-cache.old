@@ -24,9 +24,9 @@ VER 3 0000000000000011 "inspect" "136106"
 /run SortBags()
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12203
+#showtooltip item:4599
 /cast feed pet
-/use item:12203
+/use item:4599
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip

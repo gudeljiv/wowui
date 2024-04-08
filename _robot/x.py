@@ -57,5 +57,5 @@ time.sleep(1)
 for i in range(500):
     time.sleep(2)
     print("press X")
-    press_interception_key(X)
-    # cKeyPress("x")
+    # press_interception_key(X)
+    cKeyPress("x")

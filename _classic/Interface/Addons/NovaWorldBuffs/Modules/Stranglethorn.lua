@@ -21,7 +21,7 @@ local isUS;
 local region = GetCurrentRegion();
 if (region == 1 and string.match(NWB.realm, "(AU)")) then
 	--OCE.
-	calcStart = 1707267600; --Date and time (GMT): Wednesday, February 7, 2024 1:00:00 AM
+	calcStart = 1707264000; --Date and time (GMT): Wednesday, February 7, 2024 12:00:00 AM
 elseif (region == 1) then
 	--US.
 	isUS = true;
@@ -47,11 +47,10 @@ local function getTimeLeft()
 		local start = calcStart;
 		local isDST = NWB:isDST();
 		if (isDST) then
-			--wtf...
-			if (region == 3) then
-				start = start - 3600;
-			else
+			if (isUS) then
 				start = start + 3600;
+			else
+				start = start - 3600;
 			end
 		end
 		local utc = GetServerTime();

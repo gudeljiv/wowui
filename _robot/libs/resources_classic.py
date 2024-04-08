@@ -42,7 +42,7 @@ data = {
             {"name": "purge", "type": "GetSpellTexture", "id": 370, "key": "8"},
         ],
         "secondary": [
-            {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "modifier": "lalt", "key": "3"},
+            {"name": "shamanistic rage", "type": "GetSpellTexture", "id": 425336, "key": "6"},
             # {"name": "totem fire nova", "type": "GetSpellTexture", "id": 1535, "modifier": "lshift", "key": "2"},
             # {"name": "totem searing", "type": "GetSpellTexture", "id": 3599, "modifier": "lshift", "key": "1"},
         ],

@@ -129,3 +129,11 @@ FloTotemBar: disabled
 SkillInfoPlus: enabled
 RXPGuides: enabled
 Blizzard_CombatText: enabled
+Baganator: disabled
+LibStub: enabled
+CallbackHandler-1.0: enabled
+Ace3: enabled
+LibSharedMedia-3.0: enabled
+Scrap: enabled
+BrainDead: enabled
+SyLevel: enabled

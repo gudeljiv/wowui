@@ -94,7 +94,7 @@ function NWB:getThreeDayReset()
 		return;
 	end
 	--Get current epoch.
-	local utc = time(date("*t"));
+	local utc = GetServerTime();
 	local secondsSinceFirstReset = utc - staticPastResetTime;
 	--Divide seconds elapsed since our static timestamp in the past by the cycle time (3 days).
 	--Get the floor of secondsSinceFirstReset / cycle time
