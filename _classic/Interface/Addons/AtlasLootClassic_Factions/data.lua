@@ -482,6 +482,12 @@ data["AzerothCommerceAuthority"] = {
 			name = ALIL["Exalted"],
 			[ALLIANCE_DIFF] = {
 				{ 1, "f2586rep8" },
+				{ 2, 223164 }, -- Curiosity Cowl
+				{ 3, 223169 }, -- Tenacity Cap
+				{ 4, 223172 }, -- Tenacity Chain
+				{ 6, 223186 }, -- Supply Expediter
+				{ 7, 223162 }, -- Handy Courier Haversack
+				{ 8, 220639 }, -- Lledra's Inanimator
 
 			},
 		},
@@ -491,6 +497,7 @@ data["AzerothCommerceAuthority"] = {
 				{ 1, "f2586rep7" },
 				{ 2, 217399 }, -- Recipe: Lesser Arcane Elixir
 				{ 3, 219021 }, -- Hefty Courier Pack
+				{ 5, 223161 }, -- Empty Supply Crate
 				{ 16, 219135 }, -- Curiosity Pendant
 				{ 17, 219136 }, -- Tenacity Pendant
 				{ 18, 219137 }, -- Initiative Pendant
@@ -504,6 +511,7 @@ data["AzerothCommerceAuthority"] = {
 				{ 4, 210779 }, -- Plans: Mantle of the Second War
 				{ 5, 211247 }, -- Pattern: Phoenix Bindings
 				{ 6, 212230 }, -- Schematic: Soul Vessel
+				{ 8, 223160 }, -- Bargain Bush
 				{ 16, 219022 }, -- Hauler's Ring
 				{ 17, 219023 }, -- Clerk's Ring
 				{ 18, 219024 }, -- Messenger's Ring
@@ -541,6 +549,12 @@ data["DurotarSupplyAndLogistics"] = {
 			name = ALIL["Exalted"],
 			[HORDE_DIFF] = {
 				{ 1, "f2587rep8" },
+				{ 2, 223164 }, -- Curiosity Cowl
+				{ 3, 223169 }, -- Tenacity Cap
+				{ 4, 223172 }, -- Tenacity Chain
+				{ 6, 223186 }, -- Supply Expediter
+				{ 7, 223162 }, -- Handy Courier Haversack
+				{ 8, 220639 }, -- Lledra's Inanimator
 
 			},
 		},
@@ -648,9 +662,9 @@ data["Emerald Wardens"] = {
 				{ 3, 221425 }, --Emerald Enchanted Circlet
 				{ 4, 221430 }, --Emerald Enchanted Robes
 				{ 5, 221429 }, --Emerald Enchanted Pants
-				{ 6, 221437 }, --Emerald Woven Circlet
-				{ 7, 221434 }, --Emerald Woven Robes
-				{ 8, 221435 }, --Emerald Woven Pants
+				{ 7, 221437 }, --Emerald Woven Circlet
+				{ 8, 221434 }, --Emerald Woven Robes
+				{ 9, 221435 }, --Emerald Woven Pants
 				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
 				{ 17, 221408 }, --Emerald Leather Helm
 				{ 18, 221406 }, --Emerald Leather Vest
@@ -703,9 +717,9 @@ data["Emerald Wardens"] = {
 				{ 3, 221431 }, --Emerald Enchanted Shoulders
 				{ 4, 221427 }, --Emerald Enchanted Gloves
 				{ 5, 221426 }, --Emerald Enchanted Boots
-				{ 6, 221432 }, --Emerald Woven Mantle
-				{ 7, 221436 }, --Emerald Woven Gloves
-				{ 8, 221438 }, --Emerald Woven Boots
+				{ 7, 221432 }, --Emerald Woven Mantle
+				{ 8, 221436 }, --Emerald Woven Gloves
+				{ 9, 221438 }, --Emerald Woven Boots
 				{ 16, "INV_Box_01", nil, AL["Leather"], nil },
 				{ 17, 221411 }, --Emerald Leather Shoulders
 				{ 18, 221407 }, --Emerald Leather Gloves
