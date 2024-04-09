@@ -8,24 +8,12 @@ xVerminSavedData = {
 			"Rend", -- [1]
 			"Sunder Armor", -- [2]
 		},
-		["Delirious Ancient"] = {
-			"Impact", -- [1]
-		},
 		["Furious Stone Spirit"] = {
 			"Lightning Shield", -- [1]
 			"Serpent Sting", -- [2]
 		},
 		["Unfettered Spirit"] = {
 			"Deep Wound", -- [1]
-		},
-		["Skum"] = {
-			"Earth Shock", -- [1]
-			"Earthbind", -- [2]
-			"Serpent Sting", -- [3]
-		},
-		["Thepalalol"] = {
-			"Cheap Shot", -- [1]
-			"Mutilate", -- [2]
 		},
 		["Arcanist Doan"] = {
 			"Arcane Blast", -- [1]
@@ -67,6 +55,23 @@ xVerminSavedData = {
 			"Wing Clip", -- [37]
 			"Wrath", -- [38]
 		},
+		["Skum"] = {
+			"Earth Shock", -- [1]
+			"Earthbind", -- [2]
+			"Serpent Sting", -- [3]
+		},
+		["Thepalalol"] = {
+			"Cheap Shot", -- [1]
+			"Mutilate", -- [2]
+		},
+		["Dark Rider"] = {
+			"Charge Stun", -- [1]
+			"Concussive Shot", -- [2]
+			"Frostbite", -- [3]
+			"Intercept Stun", -- [4]
+			"Intimidation", -- [5]
+			"Starfire Stun", -- [6]
+		},
 		["Sea Spray"] = {
 			"Frost Shock", -- [1]
 		},
@@ -78,6 +83,7 @@ xVerminSavedData = {
 			"Earth Shock", -- [2]
 			"Chain Lightning", -- [3]
 			"Lightning Bolt", -- [4]
+			"Serpent Sting", -- [5]
 		},
 		["Wind Howler"] = {
 			"Deep Wound", -- [1]
@@ -97,18 +103,11 @@ xVerminSavedData = {
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Dark Rider"] = {
-			"Charge Stun", -- [1]
-			"Concussive Shot", -- [2]
-			"Frostbite", -- [3]
-			"Intercept Stun", -- [4]
-			"Intimidation", -- [5]
-			"Starfire Stun", -- [6]
+		["Delirious Ancient"] = {
+			"Impact", -- [1]
 		},
-		["Rogue Flame Spirit"] = {
-			"Lava Lash", -- [1]
-			"Rend", -- [2]
-			"Serpent Sting", -- [3]
+		["Burning Exile"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Greater Rock Elemental"] = {
 			"Serpent Sting", -- [1]
@@ -131,15 +130,17 @@ xVerminSavedData = {
 		["Mutanus the Devourer"] = {
 			"Shadow Word: Pain", -- [1]
 		},
-		["Burning Exile"] = {
-			"Serpent Sting", -- [1]
+		["Arclector"] = {
+			"Firebolt", -- [1]
+			"Shadowburn", -- [2]
 		},
 		["Ironspine"] = {
 			"Rend", -- [1]
 		},
-		["Arclector"] = {
-			"Firebolt", -- [1]
-			"Shadowburn", -- [2]
+		["Rogue Flame Spirit"] = {
+			"Lava Lash", -- [1]
+			"Rend", -- [2]
+			"Serpent Sting", -- [3]
 		},
 		["Sea Elemental"] = {
 			"Frost Shock", -- [1]
@@ -168,9 +169,9 @@ xVerminSavedData = {
 			"Raptor Strike", -- [5]
 			"Void Plague", -- [6]
 		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
 		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
@@ -178,12 +179,10 @@ xVerminSavedData = {
 			"Mangle", -- [3]
 			"War Stomp", -- [4]
 		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
+		["Dopemend"] = {
 		},
-		["Healing Ward"] = {
-			"Faerie Fire (Feral)", -- [1]
+		["Amnennar the Coldbringer"] = {
+			"Intimidation", -- [1]
 		},
 		["Nelyz"] = {
 			"Concussive Shot", -- [1]
@@ -191,8 +190,9 @@ xVerminSavedData = {
 		["Thundering Boulderkin"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Amnennar the Coldbringer"] = {
-			"Intimidation", -- [1]
+		["Burning Destroyer"] = {
+			"Lava Lash", -- [1]
+			"Serpent Sting", -- [2]
 		},
 		["Scalding Elemental"] = {
 			"Rend", -- [1]
@@ -200,9 +200,29 @@ xVerminSavedData = {
 		["Lesser Rock Elemental"] = {
 			"Serpent Sting", -- [1]
 		},
-		["Burning Destroyer"] = {
-			"Lava Lash", -- [1]
-			"Serpent Sting", -- [2]
+		["Scarlet Commander Mograine"] = {
+			"Charge Stun", -- [1]
+			"Earth Shock", -- [2]
+			"Quick Strike", -- [3]
+			"Raptor Strike", -- [4]
+			"Serpent Sting", -- [5]
+			"Stormstrike", -- [6]
+			"Sunder Armor", -- [7]
+			"Wing Clip", -- [8]
+			"Crippling Poison", -- [9]
+			"Multi-Shot", -- [10]
+			"Arcane Shot", -- [11]
+			"Smite", -- [12]
+			"Firebolt", -- [13]
+			"Flame Shock", -- [14]
+			"Mutilate", -- [15]
+			"Lava Lash", -- [16]
+			"Explosive Shot", -- [17]
+			"Earthbind", -- [18]
+			"Magma Totem", -- [19]
+			"Faerie Fire (Feral)", -- [20]
+			"Mortal Strike", -- [21]
+			"Mangle", -- [22]
 		},
 		["Scarlet Chaplain"] = {
 			"Weakened Soul", -- [1]
@@ -229,43 +249,24 @@ xVerminSavedData = {
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
 		},
-		["Scarlet Commander Mograine"] = {
-			"Charge Stun", -- [1]
-			"Earth Shock", -- [2]
-			"Quick Strike", -- [3]
-			"Raptor Strike", -- [4]
-			"Serpent Sting", -- [5]
-			"Stormstrike", -- [6]
-			"Sunder Armor", -- [7]
-			"Wing Clip", -- [8]
-			"Crippling Poison", -- [9]
-			"Multi-Shot", -- [10]
-			"Arcane Shot", -- [11]
-			"Smite", -- [12]
-			"Firebolt", -- [13]
-			"Flame Shock", -- [14]
-			"Mutilate", -- [15]
-			"Lava Lash", -- [16]
-			"Explosive Shot", -- [17]
-			"Earthbind", -- [18]
-			"Magma Totem", -- [19]
-			"Faerie Fire (Feral)", -- [20]
-			"Mortal Strike", -- [21]
-			"Mangle", -- [22]
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
-		["Dopemend"] = {
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Thundering Exile"] = {
-			"Chimera Shot", -- [1]
-			"Serpent Sting", -- [2]
-		},
 		["Bristleback Geomancer"] = {
 			"Firebolt", -- [1]
 			"Incinerate", -- [2]
+		},
+		["Thundering Exile"] = {
+			"Chimera Shot", -- [1]
+			"Serpent Sting", -- [2]
 		},
 		["High Inquisitor Whitemane"] = {
 			"Intercept Stun", -- [1]

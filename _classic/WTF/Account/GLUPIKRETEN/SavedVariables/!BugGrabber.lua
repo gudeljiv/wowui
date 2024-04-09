@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12213,
+	["session"] = 12221,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3519,5 +3519,29 @@ BugGrabberDB = {
 			["session"] = 12201,
 			["counter"] = 1,
 		}, -- [453]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CheckInteractDistance()'.",
+			["time"] = "2024/04/09 08:39:15",
+			["locals"] = "_ = Frame {\n RegisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n 0 = <userdata>\n UnregisterEvent = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n SetScript = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:491\n}\nevent = \"ADDON_ACTION_BLOCKED\"\nevents = <table> {\n ADDON_ACTION_BLOCKED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n ADDON_ACTION_FORBIDDEN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:557\n PLAYER_LOGIN = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:551\n LUA_WARNING = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:566\n ADDON_LOADED = <function> defined @Interface/AddOns/!BugGrabber/BugGrabber.lua:511\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/!BugGrabber/BugGrabber.lua\"]:485: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:485>\n[string \"=[C]\"]: in function `CheckInteractDistance'\n[string \"@Interface/SharedXML/UnitPopupSharedUtils.lua\"]:170: in function `IsEnabled'\n[string \"@Interface/SharedXML/UnitPopupShared.lua\"]:222: in function `AddDropDownButton'\n[string \"@Interface/SharedXML/UnitPopupShared.lua\"]:102: in function `ShowMenu'\n[string \"@Interface/SharedXML/UnitPopupShared.lua\"]:282: in function `UnitPopup_ShowMenu'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:240: in function `initFunction'\n[string \"@Interface/FrameXML/UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface/FrameXML/UIDropDownMenu.lua\"]:1124: in function `ToggleDropDownMenu'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:311: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:665: in function <Interface/FrameXML/SecureTemplates.lua:657>",
+			["session"] = 12218,
+			["counter"] = 1,
+		}, -- [454]
+		{
+			["message"] = "[string \"print(xEnranged(\"target\"))\"]:1: attempt to call global 'xEnranged' (a nil value)",
+			["time"] = "2024/04/09 09:39:57",
+			["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:123\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xEnranged' (a nil value)\"\n",
+			["stack"] = "[string \"print(xEnranged(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2230: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4971: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4634: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:3011: in function <Interface/FrameXML/ChatFrame.lua:3005>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface/FrameXML/SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*ActionBarFrame.xml:15_OnClick\"]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
+			["session"] = 12218,
+			["counter"] = 2,
+		}, -- [455]
+		{
+			["message"] = "Lua error in aura '__ ENRAGE BUFF TARGET': Trigger 1\nWeakAuras Version: 5.12.7\n[string \"return function()\"]:2: attempt to call global 'xEnrage' (a nil value)",
+			["time"] = "2024/04/09 09:44:13",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'xEnrage' (a nil value)\"\n",
+			["stack"] = "[string \"return function()\"]:2: in function <[string \"return function()\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:711: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:620>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:860: in function `ScanEventsInternal'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:814: in function `ScanEvents'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1808: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:1806>",
+			["session"] = 12218,
+			["counter"] = 153,
+		}, -- [456]
 	},
 }
