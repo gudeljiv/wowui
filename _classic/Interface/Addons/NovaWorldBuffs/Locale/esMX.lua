@@ -902,7 +902,7 @@ L["Guild Layers"] = "Hermandad";
 L["Timers"] = "Temporizadores";
 L["Buffs"] = "Beneficios";
 L["Felwood Map"] = "Mapa de Frondavil";
-L["Config"] = "Configuración";
+L["Config"] = "Opciones";
 L["Resources"] = "Progreso";
 L["Layer"] = "Capa";
 L["Layer Map"] = "Mapa de capa";
@@ -1013,3 +1013,5 @@ L["layersNoGuild"] = "No tienes hermandad, este comando muestra solo miembros de
 
 L["Fervor of the Temple Explorer"] = "Fervor del explorador de templo";
 L["No guild"] = "Sin hermandad";
+
+L["Temple of Atal'Hakkar"] = "Templo de Atal'Hakkar";

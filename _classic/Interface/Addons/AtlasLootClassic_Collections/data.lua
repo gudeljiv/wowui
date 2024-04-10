@@ -1944,36 +1944,57 @@ data["Sod Exclusives"] = {
 	},
 }
 
-data["NightmareIncursion"] = {
-	name = AL["Nightmare Incursion"],
+data["SoD Set Items"] = {
+	name = AL["Set Items"],
 	ContentType = SOD_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
-	TableType = NORMAL_ITTYPE,
+	TableType = SET_ITTYPE,
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{
-			name = AL["Non-Set Items"],
+			name = AL["Level 25 Raid"],
 			[NORMAL_DIFF] = {
-				{ 1, 220595 }, -- Nightmare Focus Staff
-				{ 2, 220621 }, -- Nightmare Resonance Crystal
-				{ 3, 221440 }, -- Roar of the Dream
-				{ 4, 221442 }, -- Roar of the Guardian
-				{ 5, 221443 }, -- Roar of the Grove
-				{ 6, 221439 }, -- Armor of the Emerald Slumber
-				{ 7, 220649 }, -- Merithra's Inheritence
-				{ 8, 224005 }, -- Emerald Ring
-				{ 9, 224004 }, -- Emerald Ring
-				{ 10, 221193 }, -- Emerald Ring
-				{ 11, 224006 }, --Emerald Ring
-				{ 12, 221374 }, -- Anguish of the Dream
-				{ 13, 221369 }, -- Nightmare Siphon
-				{ 14, 212568 }, -- Wolfshead Trophy
-				{ 15, 213407 }, -- Catnip
+				{ 1, 1570 }, -- Twilight Invoker's Vestments
+				{ 3, 1578 }, -- 
+				{ 4, 1579 }, -- 
+				{ 6, 1577 }, -- 
 			},
 		},
 		{
-			name = AL["Set Items"],
-			TableType = SET_ITTYPE,
+			name = AL["Level 40 Raid"],
+			[NORMAL_DIFF] = {
+				{ 1, 1584 },
+				{ 2, 1587 },
+				{ 3, 1588 },
+				{ 5, 1585 },
+				{ 6, 1586 },
+				{ 8, 1590 },
+				{ 9, 1591 },
+				{ 11, 1589 },
+				{ 12, 1592 },
+			},
+		},
+		{
+			name = AL["Level 50 Raid"],
+			[NORMAL_DIFF] = {
+				{ 1, 1637 }, 
+				{ 2, 1638 }, 
+				{ 3, 1639 }, 
+				{ 5, 1640 }, 
+				{ 6, 1641 }, 
+				{ 7, 1642 }, 
+				{ 8, 1643 }, 
+				{ 10, 1644 }, 
+				{ 11, 1645 }, 
+				{ 12, 1646 }, 
+				{ 13, 1647 }, 
+				{ 16, 1648 }, 
+				{ 17, 1649 },
+				{ 18, 1650 },
+			},
+		},
+		{
+			name = AL["Level 50 Emerald Sets"],
 			[NORMAL_DIFF] = {
 				{ 1, 1652 },
 				{ 2, 1653 },
@@ -1987,8 +2008,36 @@ data["NightmareIncursion"] = {
 				{ 13, 1661 },
 			},
 		},
+		{
+			name = AL["Level 50 PvP Sets"],
+			[NORMAL_DIFF] = {
+				{ 1, "INV_Box_01", nil, AL["Horde"], nil },
+				{ 2, 1618 }, --Blood Guard's Plate
+				{ 4, 1624 },
+				{ 5, 1623 },
+				{ 6, 1622 },
+				{ 7, 1625 },
+				{ 9, 1627 },
+				{ 10, 1631 },
+				{ 11, 1629 },
+				{ 13, 1633 },
+				{ 14, 1635 },
+				{ 16, "INV_Box_01", nil, AL["Alliance"], nil },
+				{ 17, 1619 },
+				{ 18, 1620 },
+				{ 19, 1621 },
+				{ 21, 1665 },
+				{ 22, 1626 },
+				{ 24, 1628 },
+				{ 25, 1630 },
+				{ 26, 1632 },
+				{ 28, 1634 },
+				{ 29, 1636 },
+			},
+		},
 	},
 }
+
 data["DarkMoon Cards"] = {
 	name = AL["Darkmoon Cards"],
 	ContentType = SOD_CONTENT,
@@ -2003,6 +2052,28 @@ data["DarkMoon Cards"] = {
 				{ 2, 221280 }, -- Plagues Deck
 				{ 3, 221289 }, -- Dunes Deck
 				{ 4, 221299 }, -- Nightmares Deck
+			},
+		},
+	},
+}
+
+data["Wild Offerings"] = {
+	name = AL["Wild Offerings"],
+	ContentType = SOD_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
+	items = {
+		{
+			name = AL["Wild Offering Rewards"],
+			[NORMAL_DIFF] = {
+				{ 1, 223194 }, -- Band of the Wilds
+				{ 2, 223195 }, -- Breadth of the Beast
+				{ 3, 223197 }, -- Defender of the Wilds
+				{ 4, 223192 }, -- Cord of the Untamed
+				{ 5, 223193 }, -- Crown of the Dreamweaver
+				{ 6, 223196 }, -- Godslayer's Greaves
+				{ 7, 221491 }, -- Shadowtooth Bag
 			},
 		},
 	},

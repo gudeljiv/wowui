@@ -580,6 +580,14 @@ end
 
 --Send first yell msg.
 function NWB:sendYell(distribution, type, target, layer, arg)
+	if (type == "zan") then
+		--They reused the same NPC and drop msg as ZF buff in SoD for the Sunken Temple buff.
+		--So block it from announcing during phase 3 until everyone updates the addon and it's blocked in yell detection.
+		--6 second drop time like the other SoD buffs, no reason to announce.
+		if (NWB.isSOD and NWB.sodPhase == 3) then
+			return;
+		end
+	end
 	if (NWB.sharedLayerBuffs) then
 		layer = nil;
 	end

@@ -7551,228 +7551,195 @@ data["TheTempleOfAtal'Hakkar2"] = {
 	LoadDifficulty = NORMAL_DIFF,
 	LevelRange = GetForVersion({50, 50, 50},{50, 50, 50}),
 	items = {
-		{
-			name = AL["Weapons 1"],
+		{ -- STAtalalarion
+			name = AL["Atal'alarion"],
+			npcID = 218624,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{7873}},
+			AtlasMapBossID = 1,
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["2H Weapons"], nil },
-				{ 2, 220569 }, -- Blistering Ragehammer
-				{ 3, 220567 }, -- Bloodied Headspike
-				{ 4, 220591 }, -- Mijan's Restorative Rod
-				{ 5, 220965 }, -- Scalebane Greataxe
-				{ 6, 220594 }, -- Scythe of the Dream
-				{ 7, 220566 }, -- Smolder Claw
-				{ 8, 220568 }, -- Temple Explorer's Gun Axe
-				{ 9, 221518 }, -- Whisper
-				{ 10, 220596 }, -- Ancient Divining Rod
-				{ 11, 220686 }, -- Chieftain's Bane
-				{ 12, 220590 }, -- Spire of Hakkari Worship
-				{ 15, "INV_Box_01", nil, AL["Boss drop tables not yet known"], nil },
-				{ 16, "INV_Box_01", nil, AL["1H Weapons"], nil },
-				{ 17, 220576 }, -- Axe of the Atal'ai Executioner
-				{ 18, 220674 }, -- Debased Stealthblade
-				{ 19, 220575 }, -- Eater of the Damned
-				{ 20, 220578 }, -- Fist of the Forsaken
-				{ 21, 220584 }, -- Flamebreath Blade
-				{ 22, 223329 }, -- Lifeforce Dirk
-				{ 23, 220577 }, -- Might of the Blood Loa
-				{ 24, 220574 }, -- Sharpened Tooth of Eranikus
-				{ 25, 220581 }, -- Snake Clobberer
-				{ 26, 220583 }, -- Vile Blade of the Wretched
-				{ 27, 220585 }, -- Degraded Dire Nail
-				{ 28, 220582 }, -- Dragon's Cry
-				{ 30, "INV_Box_01", nil, AL["Stay tuned for updates"], nil },
+				{ 1,  220539 }, -- Warbands of Sacrifice
+				{ 2,  220529 }, -- Spaulders of Fanaticism
+				{ 3,  220527 }, -- Atal'ai Berserker's Mantle
+				{ 4,  220602 }, -- Sewer Turtle Half-Shell
+				{ 5,  220568 }, -- Temple Explorer's Gun Axe
+				{ 6,  220567 }, -- Bloodied Headspike
+				{ 7,  220615 }, -- Panther Fur Cloak
+				{ 8,  220554 }, -- Atal'alarion's Tusk Band
+				{ 9,  220511 }, -- Greathelm of the Nightmare
+				{ 10,  220561 }, -- Tenacious Troll Kickers
+				{ 11,  220537 }, -- Dreamer's Darkwater Bracers
+				{ 12,  220580 }, -- Madness of the Avatar
+				{ 13,  220635 }, -- Atal'alarion's Enchanted Boulder
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
 			},
 		},
-		{
-			name = AL["Weapons 2"],
+		{ -- STFesteringRotslime
+			name = AL["Festering Rotslime"],
+			npcID = 218819,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{119351}},
 			[NORMAL_DIFF] = {
-				{ 1, "INV_Box_01", nil, AL["Main Hand"], nil },
-				{ 2, 220580 }, -- Madness of the Avatar
+				{ 1, 220542 }, -- Polluted Murkwater Gauntlets
+				{ 2, 220552 }, -- Waistguard of Pain
+				{ 3, 220538 }, -- Cursed Slimescale Bracers
+				{ 4, 220545 }, -- Foul Smelling Fighter's Gloves
+				{ 5, 220546 }, -- Hands of the Tormented
+				{ 6, 220540 }, -- Corruption Laden Handguards
+				{ 7, 220569 }, -- Blistering Ragehammer
+				{ 8, 220550 }, -- Temple Looter's Waistband
+				{ 9, 220518 }, -- Ba'ham's Dusty Hat
+				{ 10, 220541 }, -- Disease-Ridden Plate Fists
+				{ 11, 220571 }, -- Stinging Longbow
+				{ 12, 220565 }, -- Ethereal Mistwalker Boots
+				{ 13, 221484 }, -- Witch Doctor's Hex Stick
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STAtalaiDefenders
+			name = AL["Atal'ai Defenders"],
+			npcID = 221637,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{118789}},
+			[NORMAL_DIFF] = {
+				{ 1,  220555 }, -- Atal'ai Serpentscale Girdle
+				{ 2,  220532 }, -- Reinforced Atal'ai Spaulders
+				{ 3,  220516 }, -- Gasher's Forgotten Visor
+				{ 4,  220591 }, -- Mijan's Restorative Rod
+				{ 5,  220558 }, -- Atal'ai Assassin's Leggings
+				{ 6,  220572 }, -- Rinzo's Rapid Repeater
+				{ 7,  220528 }, -- Atal'ai Huntsman's Shoulders
+				{ 8,  220611 }, -- Hukku's Hex Cape
+				{ 9,  220533 }, -- Reforged Atal'ai Breastplate
+				{ 10,  220522 }, -- Soulcatcher Crown
+				{ 11,  220674 }, -- Debased Stealthblade
+				{ 12,  220548 }, -- Atal'ai Hexxer's Gloves
+				{ 13,  220560 }, -- Silvershell Legplates
+				{ 14,  220638 }, -- Unorthodox Hex Stick
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+			},
+		},
+		{ -- STDreamscytheandWeaver
+			name = AL["Dreamscythe and Weaver"],
+			npcID = 220833,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{6379}},
+			[NORMAL_DIFF] = {
+				{ 1, 220549 }, -- Dawnspire Strap
+				{ 2, 220521 }, -- Hakkari Ritualist's Headdress
 				{ 3, 220587 }, -- Sacrificial Dream Dagger
-				{ 4, 220588 }, -- Cobra Fang Claw
-				{ 5, 220586 }, -- Hubris, the Bandit Brander
-				{ 6, 223198 }, -- Modas Karkun
-				{ 7, 220579 }, -- Witch Doctor's Stick of Mojo
-				{ 16, "INV_Box_01", nil, AL["Ranged"], nil },
-				{ 17, 220604 }, -- Nightmare Trophy
-				{ 18, 220572 }, -- Rinzo's Rapid Repeater
-				{ 19, 220603 }, -- Rod of Irreversible Corrosion
-				{ 20, 220571 }, -- Stinging Longbow
-				{ 21, 220573 }, -- Dreadstalker's Hunting Bow
+				{ 4, 220536 }, -- Atal'ai Medicine Man's Wrists
+				{ 5, 220581 }, -- Snake Clobberer
+				{ 6, 220566 }, -- Smolder Claw
+				{ 7, 220551 }, -- Devotee's Sash of the Emerald Dream
+				{ 8, 220584 }, -- Flamebreath Blade
+				{ 9, 220519 }, -- Voodoo Feathered Headdress
+				{ 10, 220544 }, -- Bloodflare Talons
+				{ 11, 220594 }, -- Scythe of the Dream
+				{ 12, 220609 }, -- Drape of Nightfall
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
 			},
 		},
-		{
-			name = AL["Cloth"],
+		{ -- STJammalanandOgom
+			name = AL["Jammal'an and Ogom"],
+			npcID = 218721,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{6708}},
 			[NORMAL_DIFF] = {
-				{ 1, 223256 }, -- Fel Cloth Robes
-				{ 2, 220783 }, -- Nightmare Prophet's Vestments
-				{ 3, 220683 }, -- Benevolent Prophet's Vest
-				{ 4, 220680 }, -- Malevolent Prophet's Vest
-				{ 5, 220535 }, -- Garments of the Atal'ai Prophet
-				{ 6, 220534 }, -- Eternal Embrace of the Wind Serpent
-				{ 8, 220784 }, -- Nightmare Prophet's Sandals
-				{ 9, 220685 }, -- Benevolent Prophet's Sandals
-				{ 10, 220681 }, -- Malevolent Prophet's Sandals
-				{ 11, 220565 }, -- Ethereal Mistwalker Boots
-				{ 13, 220548 }, -- Atal'ai Hexxer's Gloves
-				{ 14, 220547 }, -- Gloves of the Fallen Atal'ai Prophet
-				{ 16, 223328 }, -- Gemburst Circlet
-				{ 17, 223326 }, -- Hakkari Shroud
-				{ 18, 223193 }, -- Crown of the Dreamweaver
-				{ 19, 220523 }, -- Visage of the Exiled
-				{ 20, 220522 }, -- Soulcatcher Crown
-				{ 22, 223324 }, -- Rainstrider Leggings
-				{ 23, 220781 }, -- Nightmare Prophet's Leggings
-				{ 24, 220684 }, -- Benevolent Prophet's Leggings
-				{ 25, 220679 }, -- Malevolent Prophet's Leggings
-				{ 26, 220556 }, -- Kilt of the Fallen Atal'ai Prophet
-				{ 28, 223192 }, -- Cord of the Untamed
-				{ 29, 220549 }, -- Dawnspire Strap
-				{ 30, 220536 }, -- Atal'ai Medicine Man's Wrists
-			},
-		},
-		{
-			name = AL["Leather"],
-			[NORMAL_DIFF] = {
-				{ 1, 220669 }, -- Exiled Prophet's Jerkin
-				{ 2, 220672 }, -- Lost Worshipper's Harness
-				{ 3, 220676 }, -- Blood Corrupted Tunic
-				{ 4, 220779 }, -- Coagulated Bloodguard Tunic
-				{ 5, 223261 }, -- Fel Leather Chest
-				{ 6, 223325 }, -- Hakkari Breastplate
-				{ 7, 220564 }, -- Restored Slitherscale Boots
-				{ 8, 220670 }, -- Exiled Prophet's Slippers
-				{ 9, 220675 }, -- Lost Worshipper's Treads
-				{ 10, 220677 }, -- Blood Corrupted Boots
-				{ 11, 220780 }, -- Coagulated Bloodguard Boots
-				{ 13, 220544 }, -- Bloodflare Talons
-				{ 14, 220545 }, -- Foul Smelling Fighter's Gloves
-				{ 15, 220546 }, -- Hands of the Tormented
-				{ 16, 220518 }, -- Ba'ham's Dusty Hat
-				{ 17, 220519 }, -- Voodoo Feathered Headdress
-				{ 18, 220521 }, -- Hakkari Ritualist's Headdress
-				{ 19, 220577 }, -- Cursed Windscale Sarong
-				{ 20, 220558 }, -- Atal'ai Assassin's Leggings
-				{ 21, 220671 }, -- Exiled Prophet's Leather Pants
-				{ 22, 220673 }, -- Lost Worshipper's Leggings
-				{ 23, 220678 }, -- Blood Corrupted Pants
-				{ 24, 220778 }, -- Coagulated Bloodguard Pants
-				{ 26, 220532 }, -- Reinforced Atal'ai Spaulders
-				{ 27, 220550 }, -- Temple Looter's Waistband
-				{ 28, 220551 }, -- Devotee's Sash of the Emerald Dream
-				{ 30, 220537 }, -- Dreamer's Darkwater Bracers
-			},
-		},
-		{
-			name = AL["Mail"],
-			[NORMAL_DIFF] = {
-				{ 1, 223262 }, -- Fel Mail Chest
-				{ 2, 220666 }, -- Dread Hunter's Chainmail
-				{ 3, 220665 }, -- Corrupted Spiritweaver's Breastplate
-				{ 4, 220660 }, -- Shunned Devotee's Chainshirt
-				{ 5, 220657 }, -- Ostracized Berserk's Hauberk
-				{ 6, 220533 }, -- Reforged Atal'ai Breastplate
-				{ 7, 220668 }, -- Dread Hunter's Greaves
-				{ 8, 220664 }, -- Corrupted Spiritweaver's Sabatons
-				{ 9, 220662 }, -- Shunned Devotee's Scale Boots
-				{ 10, 220659 }, -- Ostracized Berserk's Chain Greaves
-				{ 11, 220563 }, -- Boots of the Atal'ai Blood Shaman
-				{ 12, 220562 }, -- Bloodshot Battle Greaves
-				{ 14, 220543 }, -- Emerald Scalemail Gloves
-				{ 15, 220542 }, -- Polluted Murkwater Gauntlets
-				{ 16, 221782 }, -- Helm of Exile
-				{ 17, 220516 }, -- Gasher's Forgotten Visor
-				{ 18, 220515 }, -- Enchanted Emerald Helmet
-				{ 19, 220514 }, -- Visor of Verdant Feathers
-				{ 20, 220559 }, -- Revitalized Drake Scale Leggings
-				{ 21, 220658 }, -- Ostracized Berserk's Legplates
-				{ 22, 220661 }, -- Shunned Devotee's Legguards
-				{ 23, 220663 }, -- Corrupted Spiritweaver's Leggings
-				{ 24, 220667 }, -- Dread Hunter's Chausses
-				{ 25, 220741 }, -- Screaming Chain Pauldrons
-				{ 26, 220527 }, -- Atal'ai Berserker's Mantle
-				{ 27, 220528 }, -- Atal'ai Huntsman's Shoulders
-				{ 28, 220552 }, -- Waistguard of Pain
-				{ 29, 220553 }, -- Belt of the Forsaken Worshipper
-				{ 30, 220538 }, -- Cursed Slimescale Bracers
-			},
-		},
-		{
-			name = AL["Plate"],
-			[NORMAL_DIFF] = {
-				{ 1, 223263 }, -- Fel Plate Chest
-				{ 2, 220653 }, -- Wailing Berserker's Chestplate
-				{ 3, 220650 }, -- Obsessed Prophet's Chestplate
-				{ 4, 220642 }, -- Banished Martyr's Plate Armor
-				{ 5, 220530 }, -- Will of the Atal'ai Warrior
-				{ 7, 220648 }, -- Banished Martyr's Plate Boots
-				{ 8, 223196 }, -- Godslayer's Greaves
-				{ 9, 220652 }, -- Obsessed Prophet's Ornate Boots
-				{ 10, 220561 }, -- Tenacious Troll Kickers
-				{ 11, 220656 }, -- Wailing Berserker's Battleboots
-				{ 13, 220541 },
-				{ 14, 220540 }, -- Corruption Laden Handguards
-				{ 16, 221781 }, -- Avenguard Helm
-				{ 17, 220511 }, -- Greathelm of the Nightmare
-				{ 18, 220512 }, -- Immaculate Goldsteel Helmet
-				{ 20, 220643 }, -- Banished Martyr's Plate Legguards
-				{ 21, 220651 }, -- Obsessed Prophet's Legguards
-				{ 22, 220560 }, -- Silvershell Legplates
-				{ 23, 220654 }, -- Wailing Berserker's Legplates
-				{ 25, 220529 }, -- Spaulders of Fanaticism
-				{ 27, 220554 }, -- Atal'alarion's Tusk Band
-				{ 28, 220555 }, -- Atal'ai Serpentscale Girdle
-				{ 30, 220539 }, -- Warbands of Sacrifice
-			},
-		},
-		{
-			name = AL["Accessories"],
-			[NORMAL_DIFF] = {
-				{ 1, 223194 }, -- Band of the Wilds
-				{ 2, 220626 }, -- Drakeclaw Band of the Berserker
-				{ 3, 220629 }, -- Drakeclaw Band of the Blood Prophet
-				{ 4, 220628 }, -- Drakeclaw Band of the Harbinger
-				{ 5, 220630 }, -- Drakeclaw Band of the Juggernaut
-				{ 6, 220627 }, -- Drakeclaw Band of the Stalker
-				{ 7, 223327 }, -- Mark of Hakkar
+				{ 1, 220578 }, -- Fist of the Forsaken
+				{ 2, 220556 }, -- Kilt of the Fallen Atal'ai Prophet
+				{ 3, 220601 }, -- Hakkari Witch Doctor's Guard
+				{ 4, 220575 }, -- Eater of the Damned
+				{ 5, 220547 }, -- Gloves of the Fallen Atal'ai Prophet
+				{ 6, 220583 }, -- Vile Blade of the Wretched
+				{ 7, 220576 }, -- Axe of the Atal'ai Executioner
+				{ 8, 220625 }, -- Resilience of the Exiled
 				{ 9, 220624 }, -- Bloodstained Charm of Valor
-				{ 10, 220623 }, -- Jin'do's Lost Locket
-				{ 11, 220622 }, -- Perfectly Preserved Dragon's Eye
-				{ 12, 220625 }, -- Resilience of the Exiled
-				{ 16, 220609 }, -- Drape of Nightfall
-				{ 17, 220608 }, -- Featherskin Drape
-				{ 18, 220611 }, -- Hukku's Hex Cape
-				{ 19, 220615 }, -- Panther Fur Cloak
-				{ 21, 220606 }, -- Idol of the Dream
-				{ 22, 220605 }, -- Libram of Sacrilege
-				{ 23, 220607 }, -- Totem of Tormented Ancestry
+				{ 10, 220535 }, -- Garments of the Atal'ai Prophet
+				{ 11, 220623 }, -- Jin'do's Lost Locket
+				{ 12, 220605 }, -- Libram of Sacrilege
+				{ 13, 220515 }, -- Enchanted Emerald Helmet
+				{ 14, 220586 }, -- Hubris, the Bandit Brander
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
 			},
 		},
-		{
-			name = AL["Trinkets"],
+		{ -- STMorphazandHazzas
+			name = AL["Morphaz and Hazzas"],
+			npcID = 221943,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{9584}},
+			AtlasMapBossID = 7,
 			[NORMAL_DIFF] = {
-				{ 1, 223195 }, -- Breadth of the Beast
-				{ 2, 221474 }, -- Chained Essence of Eranikus
-				{ 3, 223214 }, -- Zila Gular
-				{ 4, 220619 }, -- Atal'ai Blood Ceremony
-				{ 5, 220633 }, -- Atal'ai Blood Ritual Badge
-				{ 6, 220634 }, -- Atal'ai Blood Ritual Charm
-				{ 7, 220632 }, -- Atal'ai Blood Ritual Medallion
-				{ 8, 220635 }, -- Atal'alarion's Enchanted Boulder
-				{ 9, 220639 }, -- Lledra's Inanimator
-				{ 10, 220638 }, -- Unorthodox Hex Stick
-				{ 11, 221484 }, -- Witch Doctor's Hex Stick
+				{ 1, 220965 }, -- Scalebane Greataxe
+				{ 2, 220514 }, -- Visor of Verdant Feathers
+				{ 3, 220553 }, -- Belt of the Forsaken Worshipper
+				{ 4, 220543 }, -- Emerald Scalemail Gloves
+				{ 5, 220563 }, -- Boots of the Atal'ai Blood Shaman
+				{ 6, 220599 }, -- Drakestone of the Blood Prophet
+				{ 7, 220598 }, -- Drakestone of the Nightmare Harbinger
+				{ 8, 220559 }, -- Revitalized Drake Scale Leggings
+				{ 9, 220606 }, -- Idol of the Dream
+				{ 10, 220607 }, -- Totem of Tormented Ancestry
+				{ 11, 220597 }, -- Drakestone of the Dream Harbinger
+				{ 12, 220512 }, -- Immaculate Goldsteel Helmet
+				{ 13, 220589 }, -- Serpent's Striker
+				{ 14, 220596 }, -- Ancient Divining Rod
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
 			},
 		},
-		{
-			name = AL["Consumables"],
+		{ -- STEranikus
+			name = AL["Shade of Eranikus"],
+			npcID = 218571,
+			Level = GetForVersion(50,50),
+			DisplayIDs = {{117504}},
 			[NORMAL_DIFF] = {
-				{ 1, 221196 }, -- Atal'ai Mojo of War
-				{ 2, 221030 }, -- Atal'ai Mojo of Forbidden Magic
-				{ 3, 221311 }, -- Atal'ai Mojo of Life
-				{ 5, 221321 }, -- Atal'ai Signet of Might
-				{ 6, 221322 }, -- Atal'ai Signet of Mojo
-				{ 7, 221323 }, -- Atal'ai Signet of Serenity
+				{ 1, 220604 }, -- Nightmare Trophy
+				{ 2, 220622 }, -- Perfectly Preserved Dragon's Eye
+				{ 3, 220564 }, -- Restored Slitherscale Boots
+				{ 4, 220603 }, -- Rod of Irreversible Corrosion
+				{ 5, 220523 }, -- Visage of the Exiled
+				{ 6, 220600 }, -- Crest of Preeminence
+				{ 7, 220574 }, -- Sharpened Tooth of Eranikus
+				{ 8, 220573 }, -- Dreadstalker's Hunting Bow
+				{ 9, 220595 }, -- Nightmare Focus Staff
+				{ 10, 220579 }, -- Witch Doctor's Stick of Mojo
+				{ 11, 220585 }, -- Degraded Dire Nail
+				{ 12, 220582 }, -- Dragon's Cry
+				{ 16,  220636 }, -- Atal'ai Blood Icon
+				{ 17,  220637 }, -- Atal'ai Ritual Token
+				{ 19,  221475 }, -- Essence of Eranikus
+			},
+		},
+		{ -- STAvatarofHakkar
+			name = AL["Avatar of Hakkar"],
+			npcID = 221394,
+			DisplayIDs = {{8053}},
+			AtlasMapBossID = 3,
+			Level = 48,
+			[NORMAL_DIFF] = {
+				{ 1, 221363 }, -- Scapula of the Fallen Avatar
+				{ 2, 221346 }, -- Scapula of the Fallen Avatar
+				{ 4, 220608 }, -- Featherskin Drape
+				{ 5, 220530 }, -- Will of the Atal'ai Warrior
+				{ 6, 220577 }, -- Might of the Blood Loa
+				{ 7, 220557 }, -- Cursed Windscale Sarong
+				{ 8, 220562 }, -- Bloodshot Battle Greaves
+				{ 9,  220636 }, -- Atal'ai Blood Icon
+				{ 10,  220637 }, -- Atal'ai Ritual Token
+				{ 12, 220634 }, -- Atal'ai Blood Ritual Charm
+				{ 13, 220633 }, -- Atal'ai Blood Ritual Badge
+				{ 14, 220632 }, -- Atal'ai Blood Ritual Medallion
+				{ 16, 220590 }, -- Spire of Hakkari Worship
+				{ 17, 220620 }, -- Wind Serpent Skull
+				{ 18, 220534 }, -- Eternal Embrace of the Wind Serpent
+				{ 19, 220686 }, -- Chieftain's Bane
+				{ 20, 220588 }, -- Cobra Fang Claw
 			},
 		},
 		{ -- STTrash

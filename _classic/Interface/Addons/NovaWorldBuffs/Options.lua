@@ -2187,12 +2187,13 @@ local function loadNewVersionFrame()
 		frame:Hide();
 		newVersionFrame = frame;
 	end
-	linesVersion = 2.69;
+	linesVersion = 2.74;
 	local lines = {
 		" ",
-		"Fix for STV/Ashenvale timers issue with daylight savings time on US realms.",
-		" ",
-		"|cFF00FF00PLEASE NOTE:|r |cFF9CD6DEYour guild members need to update the addon asap or you will see duplicate msgs with the old wrong timer in your guild chat, sorry about that but I wasn't sure if daylight savings time would effect the timers or not when it was written (also waiting to see if the new DMF spawn time rotation is effect by DST changes this week and that will be updated next if needed).|r",
+		"Fixed Gnomeregan msg/sound playing when it drops on a lvl 50 char that can't get it.",
+		"Fix for new Sunken Temple buff being announced to guild chat as 50 seconds until drop, Blizzard has reused the same NPC and same yell msg in Booty Bay as the level 60 ZG buff from original classic and it's triggering the wrong buff drop msg.",
+		"The new Sunken Temple buff only has a 6 second warning yell all other SoD buffs so a drop msg isn't worth.",
+		"|cFF00FF00Please note:|r |cFF9CD6DEYour guild members need to update to properly stop getting the zandalar drop guild msg.|r",
 	};
 	local text = "";
 	--Seperator lines couldn't be used because the wow client won't render 1 pixel frames if they are in certain posotions.
@@ -2227,9 +2228,9 @@ function NWB:checkNewVersion()
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isSOD) then
 				--Only show this update notes on US realms where they need a DST timer fix.
-				if (GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
+				--if (GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					loadNewVersionFrame();
-				end
+				--end
 			end
 			--Wipe old data.
 			NWB.db.global.versions = {};

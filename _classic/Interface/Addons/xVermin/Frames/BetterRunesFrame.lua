@@ -117,6 +117,7 @@ local function UpdateButtons()
 					if runeIndex % 4 == 1 then
 						button:SetPoint("TOPLEFT", buttons[prevRowStart], "BOTTOMLEFT");
 						prevRowStart = currentButton;
+						numRows = numRows + 1;
 					else
 						button:SetPoint("LEFT", buttons[currentButton - 1], "RIGHT");
 					end
@@ -144,7 +145,7 @@ local function UpdateButtons()
 
 	local totalHeight = numRows * RUNE_BUTTON_HEIGHT;
 	totalHeight = totalHeight + (numHeaders * RUNE_HEADER_BUTTON_HEIGHT);
-	HybridScrollFrame_Update(scrollFrame, totalHeight, 348);
+	HybridScrollFrame_Update(scrollFrame, totalHeight, 20);
 end
 
 local function AddMoreButtons()

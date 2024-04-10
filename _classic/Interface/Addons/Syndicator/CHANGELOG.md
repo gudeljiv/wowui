@@ -1,6 +1,6 @@
 # Syndicator
 
-## [22](https://github.com/Baganator/Syndicator/tree/22) (2024-04-03)
-[Full Changelog](https://github.com/Baganator/Syndicator/compare/21...22) 
+## [23](https://github.com/Baganator/Syndicator/tree/23) (2024-04-09)
+[Full Changelog](https://github.com/Baganator/Syndicator/compare/22...23) 
 
-- Update toc for 1.15.2  
+- Retail: Fix /syns search for items with crafted quality showing weird results  

@@ -246,7 +246,7 @@ L["The Blood God"] = "El Dios de la Sangre"; --First Booty bay yell from Zandala
 
 L["Spirit of Zandalar"] = "Espíritu de Zandalar";
 L["Molthor"] = "Molthor";
-L["Zandalarian Emissary"] = "Emisario Zandalariano";
+L["Zandalarian Emissary"] = "Emisario Zandalar";
 L["Whipper Root Tuber"] = "Tubérculo de blancoria";
 L["Night Dragon's Breath"] = "Aliento de Dragón nocturno";
 L["Resist Fire"] = "Resistir al Fuego"; -- LBRS fire resist buff.
@@ -967,7 +967,7 @@ L["Guild Layers"] = "Hermandad";
 L["Timers"] = "Temporizadores";
 L["Buffs"] = "Beneficios";
 L["Felwood Map"] = "Mapa de Frondavil";
-L["Config"] = "Configuración";
+L["Config"] = "Opciones";
 L["Resources"] = "Progreso";
 L["Layer"] = "Capa";
 L["Layer Map"] = "Mapa de capa";
@@ -1078,3 +1078,5 @@ L["layersNoGuild"] = "No tienes hermandad, este comando muestra solo miembros de
 
 L["Fervor of the Temple Explorer"] = "Fervor del expedicionario del templo";
 L["No guild"] = "Sin hermandad";
+
+L["Temple of Atal'Hakkar"] = "Templo de Atal'Hakkar";

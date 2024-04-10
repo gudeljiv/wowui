@@ -25,8 +25,6 @@ elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 end
 if (NWB.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
 	NWB.isSOD = true;
-	--local sodPhases = {[25]=1,[40]=2,[50]=3,[60]=4};
-	--NWB.sodPhase = sodPhases[(GetEffectivePlayerMaxLevel())];
 end
 --Temporary until actual launch.
 --if (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
@@ -66,7 +64,13 @@ NWB.prefixColor = "|cFFFF6900";
 local terokOffset = 2.7507;
 local GetGossipOptions = GetGossipOptions or C_GossipInfo.GetOptions;
 NWB.wgExpire = 259200;
-
+function NWB:loadSODPhases()
+	--Has to be done after PEW.
+	if (NWB.isClassic and C_Engraving and C_Engraving.IsEngravingEnabled()) then
+		local sodPhases = {[25]=1,[40]=2,[50]=3,[60]=4};
+		NWB.sodPhase = sodPhases[(GetEffectivePlayerMaxLevel())];
+	end
+end
 --Some notes on the change Blizzard just implemented to make layers share buffs.
 --The buff drop only works on both layers if each layer NPC is reset.
 --If a NPC dies on one layer and drop a buff it breaks thr sync for the rest of the week or until no buffs are dropped for a long time on both.
@@ -1037,6 +1041,15 @@ end
 --Only one person online at a time sends guild msgs so there's no spam, chosen by alphabetical order.
 --Can also specify zone so only 1 person from that zone will send the msg (like orgrimmar when npc yell goes out).
 function NWB:sendGuildMsg(msg, type, zoneName, prefix, minVersion)
+	local isZan = strfind(msg, string.gsub(L["zanFirstYellMsg"], "%%s", "(.+)"));
+	if (isZan) then
+		--They reused the same NPC and drop msg as ZF buff in SoD for the Sunken Temple buff.
+		--So block it from announcing during phase 3 until everyone updates the addon and it's blocked in yell detection.
+		--6 second drop time like the other SoD buffs, no reason to announce.
+		if (NWB.isSOD and NWB.sodPhase == 3) then
+			return;
+		end
+	end
 	if (not NWB.isClassic and type ~= "guildTerok10" and type ~= "guildWintergrasp10") then
 		return;
 	end
@@ -1362,6 +1375,11 @@ function NWB:monsterYell(...)
 		NWB.data.nefYell2 = GetServerTime();
 	elseif ((name == L["Molthor"] or name == L["Zandalarian Emissary"])
 			and (string.match(msg, L["Begin the ritual"]) or string.match(msg, L["The Blood God"]) or skipStringCheck)) then
+		if (string.match(msg, L["Temple of Atal'Hakkar"])) then
+			--They reused the same NPC and drop msg as ZF buff in SoD for the Sunken Temple buff.
+			--So block it from announcing, 6 second drop time like the other buffs, no reason to announce.
+			return;
+		end
 		--See the notes in NWB:doFirstYell() for exact buff drop timings info.
 		--Booty Bay yell (Zandalarian Emissary yells: The Blood God, the Soulflayer, has been defeated!  We are imperiled no longer!)
 		NWB.data.zanYell = GetServerTime();
@@ -1377,6 +1395,11 @@ function NWB:monsterYell(...)
 			NWB:sendYell("PARTY", "zan", nil, layerNum, delay);
 		end
 	elseif ((name == L["Molthor"] or name == L["Zandalarian Emissary"]) and string.match(msg, L["slayer of Hakkar"])) then
+		if (string.match(msg, L["Temple of Atal'Hakkar"])) then
+			--They reused the same NPC and drop msg as ZF buff in SoD for the Sunken Temple buff.
+			--So block it from announcing, 6 second drop time like the other buffs, no reason to announce.
+			return;
+		end
 		--Second yell right before drops "All Hail <name>, slayer of Hakkar, and hero of Azeroth!".
 		--Booty Bay yell (Zandalarian Emissary yells: All Hail <name>, slayer of Hakkar, and hero of Azeroth!)
 		NWB.data.zanYell2 = GetServerTime();
@@ -1491,6 +1514,12 @@ function NWB:doFirstYell(type, layer, source, distribution, arg)
 			NWB:sendBigWigs(15, "[NWB] " .. L["Rallying Cry of the Dragonslayer"]);
 		end
 	elseif (type == "zan") then
+		--They reused the same NPC and drop msg as ZF buff in SoD for the Sunken Temple buff.
+		--So block it from announcing during phase 3 until everyone updates the addon and it's blocked in yell detection.
+		--6 second drop time like the other SoD buffs, no reason to announce.
+		if (NWB.isSOD and NWB.sodPhase == 3) then
+			return;
+		end
 		if ((GetServerTime() - zanFirstYell) > 60) then
 			--I checked this on the test realm right before the Zandalar buff came out and the results were:
 			--27ish seconds between first zan yell and buff applied if on island.
@@ -2132,7 +2161,7 @@ function NWB:combatLogEventUnfiltered(...)
 			end
 		elseif (destName == UnitName("player") and spellName == L["Spark of Inspiration"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
+			if (expirationTime >= 7199 and UnitLevel("player") < 50) then
 				NWB:trackNewBuff(spellName, "sparkOfInspiration");
 				if (GetServerTime() - NWB.lastSparkOfInspiration > 300) then
 					NWB.lastSparkOfInspiration = GetServerTime();
@@ -2142,7 +2171,7 @@ function NWB:combatLogEventUnfiltered(...)
 			end
 		elseif (destName == UnitName("player") and spellName == L["Fervor of the Temple Explorer"]) then
 			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
+			if (expirationTime >= 7199 and UnitLevel("player") < 60) then
 				NWB:trackNewBuff(spellName, "fervorTempleExplorer");
 				if (GetServerTime() - NWB.lastFervorTempleExplorer > 300) then
 					NWB.lastFervorTempleExplorer = GetServerTime();
@@ -3990,6 +4019,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 			NWB.db.global[NWB.realm][NWB.faction].myChars[UnitName("player")].resting = IsResting();
 		end)
 		if (doLogon) then
+			NWB:loadSODPhases();
 			NWB:refreshMinimapLayerFrame();
 			NWB:refreshOverlay();
 			--Refresh map stuff after login, loading them at initialize creates a bug with them not showing up until you move sometimes.
@@ -11657,7 +11687,7 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 		--Remove newline chars from start and end of string.
 		text = string.gsub(text, "^%s*(.-)%s*$", "%1");
 		if (not foundTimers) then
-			return NWB.chatColor .. "No current timers found.";
+			return NWB.chatColor .. L["noActiveTimers"] .. ".";
 		else
 			return NWB.chatColor .. text;
 		end
@@ -11725,7 +11755,7 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 				text = msg .. text;
 				NWBlayerFrame.EditBox:Insert(NWB.chatColor .. text);
 			else
-				NWBlayerFrame.EditBox:Insert(NWB.chatColor .. "\n\n\nNo current timers found.");
+				NWBlayerFrame.EditBox:Insert(NWB.chatColor .. "\n\n\n" .. L["noActiveTimers"] .. ".");
 			end
 		else
 			NWBlayerFrame.EditBox:Insert(NWB.chatColor .. text);

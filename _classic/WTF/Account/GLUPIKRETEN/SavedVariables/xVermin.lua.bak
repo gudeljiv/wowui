@@ -11,55 +11,6 @@ xVerminSavedData = {
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]
 		},
-		["Thepalalol"] = {
-			"Cheap Shot", -- [1]
-			"Mutilate", -- [2]
-		},
-		["Arcanist Doan"] = {
-			"Arcane Blast", -- [1]
-			"Arcane Missiles", -- [2]
-			"Arcane Shot", -- [3]
-			"Attack", -- [4]
-			"Carve", -- [5]
-			"Chaos Bolt", -- [6]
-			"Charge Stun", -- [7]
-			"Concussive Shot", -- [8]
-			"Deep Wound", -- [9]
-			"Earth Shock", -- [10]
-			"Explosive Shot", -- [11]
-			"Firebolt", -- [12]
-			"Flame Shock", -- [13]
-			"Ignite", -- [14]
-			"Impact", -- [15]
-			"Intercept Stun", -- [16]
-			"Intimidation", -- [17]
-			"Lava Lash", -- [18]
-			"Lightning Shield", -- [19]
-			"Living Bomb", -- [20]
-			"Living Flame", -- [21]
-			"Magma Totem", -- [22]
-			"Mind Flay", -- [23]
-			"Multi-Shot", -- [24]
-			"Mutilate", -- [25]
-			"Raptor Strike", -- [26]
-			"Scorch", -- [27]
-			"Searing Pain", -- [28]
-			"Serpent Sting", -- [29]
-			"Shadow Bolt", -- [30]
-			"Shadow Cleave", -- [31]
-			"Slam", -- [32]
-			"Starfire Stun", -- [33]
-			"Starsurge", -- [34]
-			"Sunder Armor", -- [35]
-			"Windfury Weapon", -- [36]
-			"Wing Clip", -- [37]
-			"Wrath", -- [38]
-		},
-		["Skum"] = {
-			"Earth Shock", -- [1]
-			"Earthbind", -- [2]
-			"Serpent Sting", -- [3]
-		},
 		["Larsera"] = {
 			"Serpent Sting", -- [1]
 			"Intimidation", -- [2]
@@ -71,6 +22,18 @@ xVerminSavedData = {
 			"Starfire Stun", -- [8]
 			"Electrocutioner's Shock", -- [9]
 			"Chimera Shot", -- [10]
+		},
+		["Unfettered Spirit"] = {
+			"Deep Wound", -- [1]
+		},
+		["Skum"] = {
+			"Earth Shock", -- [1]
+			"Earthbind", -- [2]
+			"Serpent Sting", -- [3]
+		},
+		["Thepalalol"] = {
+			"Cheap Shot", -- [1]
+			"Mutilate", -- [2]
 		},
 		["Herod"] = {
 			"Arcane Shot", -- [1]
@@ -179,12 +142,12 @@ xVerminSavedData = {
 			"Chimera Shot", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
-		},
 		["Bristleback Geomancer"] = {
 			"Firebolt", -- [1]
 			"Incinerate", -- [2]
+		},
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Enraged Voidwalker"] = {
 			"Poison Cloud", -- [1]
@@ -192,8 +155,8 @@ xVerminSavedData = {
 		["Splinterbone Centurion"] = {
 			"Intimidating Shout", -- [1]
 		},
-		["Rock Elemental"] = {
-			"Serpent Sting", -- [1]
+		["Sea Elemental"] = {
+			"Frost Shock", -- [1]
 		},
 		["Burning Ravager"] = {
 			"Lava Lash", -- [1]
@@ -202,7 +165,9 @@ xVerminSavedData = {
 		["Healing Ward"] = {
 			"Faerie Fire (Feral)", -- [1]
 		},
-		["Dopemend"] = {
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
@@ -210,9 +175,9 @@ xVerminSavedData = {
 			"Mangle", -- [3]
 			"War Stomp", -- [4]
 		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
 		},
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
@@ -282,9 +247,7 @@ xVerminSavedData = {
 		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]
 		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
+		["Dopemend"] = {
 		},
 		["Klaxxi"] = {
 			"Big Bronze Bomb", -- [1]
@@ -298,8 +261,8 @@ xVerminSavedData = {
 			"Lightning Shield", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Sea Elemental"] = {
-			"Frost Shock", -- [1]
+		["Rock Elemental"] = {
+			"Serpent Sting", -- [1]
 		},
 		["Rogue Flame Spirit"] = {
 			"Lava Lash", -- [1]
@@ -324,8 +287,45 @@ xVerminSavedData = {
 			"Intimidation", -- [5]
 			"Starfire Stun", -- [6]
 		},
-		["Unfettered Spirit"] = {
-			"Deep Wound", -- [1]
+		["Arcanist Doan"] = {
+			"Arcane Blast", -- [1]
+			"Arcane Missiles", -- [2]
+			"Arcane Shot", -- [3]
+			"Attack", -- [4]
+			"Carve", -- [5]
+			"Chaos Bolt", -- [6]
+			"Charge Stun", -- [7]
+			"Concussive Shot", -- [8]
+			"Deep Wound", -- [9]
+			"Earth Shock", -- [10]
+			"Explosive Shot", -- [11]
+			"Firebolt", -- [12]
+			"Flame Shock", -- [13]
+			"Ignite", -- [14]
+			"Impact", -- [15]
+			"Intercept Stun", -- [16]
+			"Intimidation", -- [17]
+			"Lava Lash", -- [18]
+			"Lightning Shield", -- [19]
+			"Living Bomb", -- [20]
+			"Living Flame", -- [21]
+			"Magma Totem", -- [22]
+			"Mind Flay", -- [23]
+			"Multi-Shot", -- [24]
+			"Mutilate", -- [25]
+			"Raptor Strike", -- [26]
+			"Scorch", -- [27]
+			"Searing Pain", -- [28]
+			"Serpent Sting", -- [29]
+			"Shadow Bolt", -- [30]
+			"Shadow Cleave", -- [31]
+			"Slam", -- [32]
+			"Starfire Stun", -- [33]
+			"Starsurge", -- [34]
+			"Sunder Armor", -- [35]
+			"Windfury Weapon", -- [36]
+			"Wing Clip", -- [37]
+			"Wrath", -- [38]
 		},
 		["Furious Stone Spirit"] = {
 			"Lightning Shield", -- [1]

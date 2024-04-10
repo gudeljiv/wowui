@@ -1006,3 +1006,5 @@ L["layersNoGuild"] = "You have no guild, this command shows guild members only."
 
 L["Fervor of the Temple Explorer"] = "Fervor of the Temple Explorer";
 L["No guild"] = "No guild";
+
+L["Temple of Atal'Hakkar"] = "Temple of Atal'Hakkar"; --Not necessarily the dungeon name, need to match what Zandalarian Emissary shouts calls it for sunken temple buff in SoD.

@@ -1032,3 +1032,5 @@ L["layersNoGuild"] = "Você não tem uma guilda, este comando mostra apenas memb
 
 L["Fervor of the Temple Explorer"] = "Fervor do Explorador do Templo";
 L["No guild"] = "Sem guilda";
+
+L["Temple of Atal'Hakkar"] = "Templo de Atal'hakkar";

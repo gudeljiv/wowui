@@ -12,9 +12,6 @@ xVerminSavedData = {
 			"Lightning Shield", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Unfettered Spirit"] = {
-			"Deep Wound", -- [1]
-		},
 		["Arcanist Doan"] = {
 			"Arcane Blast", -- [1]
 			"Arcane Missiles", -- [2]
@@ -55,14 +52,25 @@ xVerminSavedData = {
 			"Wing Clip", -- [37]
 			"Wrath", -- [38]
 		},
+		["Unfettered Spirit"] = {
+			"Deep Wound", -- [1]
+		},
 		["Skum"] = {
 			"Earth Shock", -- [1]
 			"Earthbind", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Thepalalol"] = {
-			"Cheap Shot", -- [1]
-			"Mutilate", -- [2]
+		["Larsera"] = {
+			"Serpent Sting", -- [1]
+			"Intimidation", -- [2]
+			"Earth Shock", -- [3]
+			"Impact", -- [4]
+			"Sunfire", -- [5]
+			"Wrath", -- [6]
+			"Charge Stun", -- [7]
+			"Starfire Stun", -- [8]
+			"Electrocutioner's Shock", -- [9]
+			"Chimera Shot", -- [10]
 		},
 		["Dark Rider"] = {
 			"Charge Stun", -- [1]
@@ -142,11 +150,12 @@ xVerminSavedData = {
 			"Rend", -- [2]
 			"Serpent Sting", -- [3]
 		},
-		["Sea Elemental"] = {
-			"Frost Shock", -- [1]
+		["Rock Elemental"] = {
+			"Serpent Sting", -- [1]
 		},
-		["Enraged Stone Spirit"] = {
-			"Rend", -- [1]
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Enraged Voidwalker"] = {
 			"Poison Cloud", -- [1]
@@ -154,8 +163,8 @@ xVerminSavedData = {
 		["Splinterbone Centurion"] = {
 			"Intimidating Shout", -- [1]
 		},
-		["Rock Elemental"] = {
-			"Serpent Sting", -- [1]
+		["Sea Elemental"] = {
+			"Frost Shock", -- [1]
 		},
 		["Whirlwind Ripper"] = {
 			"Lightning Shield", -- [1]
@@ -169,9 +178,7 @@ xVerminSavedData = {
 			"Raptor Strike", -- [5]
 			"Void Plague", -- [6]
 		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
+		["Dopemend"] = {
 		},
 		["Charlga Razorflank"] = {
 			"Charge Stun", -- [1]
@@ -179,7 +186,9 @@ xVerminSavedData = {
 			"Mangle", -- [3]
 			"War Stomp", -- [4]
 		},
-		["Dopemend"] = {
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
 		["Amnennar the Coldbringer"] = {
 			"Intimidation", -- [1]
@@ -249,9 +258,9 @@ xVerminSavedData = {
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
 		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
 		},
 		["Healing Ward"] = {
 			"Faerie Fire (Feral)", -- [1]
@@ -260,9 +269,8 @@ xVerminSavedData = {
 			"Lava Lash", -- [1]
 			"Serpent Sting", -- [2]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
+		["Enraged Stone Spirit"] = {
+			"Rend", -- [1]
 		},
 		["Thundering Exile"] = {
 			"Chimera Shot", -- [1]
@@ -316,17 +324,9 @@ xVerminSavedData = {
 			"Faerie Fire (Feral)", -- [25]
 			"Immolation Trap Effect", -- [26]
 		},
-		["Larsera"] = {
-			"Serpent Sting", -- [1]
-			"Intimidation", -- [2]
-			"Earth Shock", -- [3]
-			"Impact", -- [4]
-			"Sunfire", -- [5]
-			"Wrath", -- [6]
-			"Charge Stun", -- [7]
-			"Starfire Stun", -- [8]
-			"Electrocutioner's Shock", -- [9]
-			"Chimera Shot", -- [10]
+		["Thepalalol"] = {
+			"Cheap Shot", -- [1]
+			"Mutilate", -- [2]
 		},
 		["Boiling Elemental"] = {
 			"Instant Poison", -- [1]

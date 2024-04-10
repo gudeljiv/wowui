@@ -656,3 +656,5 @@ L["ammunition"] = "Ammo";
 L["attunements"] = "Attunements";
 L["currentRaidLockouts"] = "Current Raid Lockouts";
 L["none"] = "None.";
+
+L["Temple of Atal'Hakkar"] = "Tempel von Atal'Hakkar";
