@@ -64,14 +64,14 @@ local function AddTooltipInfo(tooltip, itemID)
         if canGainReputation then
             tooltip:AddDoubleLine(" ", " ")
             tooltip:AddLine("Grants reputation with " .. factionName, 0, 1, 0) -- Green color
-			tooltip:AddDoubleLine("Base XP: "..questXP, "Money: "..GetMoneyString(filledMoney))
+			tooltip:AddDoubleLine("Rep: " .. rep .. "              Base XP: "..questXP, "Money: "..GetMoneyString(filledMoney))
             tooltip:AddDoubleLine("Quest Level: "..questLevel, "Item Level: "..itemLevel)
             tooltip:Show()
 		elseif questLevel <= threshold then
 			--print("No shipment data found for itemID:", itemID)
             tooltip:AddDoubleLine(" ", " ")
             tooltip:AddLine("No longer gives reputation with " .. factionName, 1, 0, 0) -- Red color
-			tooltip:AddDoubleLine("Base XP: "..questXP, "Money: "..GetMoneyString(filledMoney))
+			tooltip:AddDoubleLine("Rep: " .. rep.. "              Base XP: "..questXP, "Money: "..GetMoneyString(filledMoney))
             tooltip:AddDoubleLine("Quest Level: "..questLevel, "Item Level: "..itemLevel)
             tooltip:Show()
 		else

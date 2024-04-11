@@ -152,6 +152,10 @@ L["At Percent"] = "于百分比"
 L["At Value"] = "于值"
 --[[Translation missing --]]
 L["At War"] = "At War"
+--[[Translation missing --]]
+L["Atal'ai Defenders"] = "Atal'ai Defenders"
+--[[Translation missing --]]
+L["Atal'alarion"] = "Atal'alarion"
 L["Attach to End"] = "依附到末尾"
 L["Attach to Start"] = "依附到开头"
 L["Attack Power"] = "攻击强度"
@@ -189,6 +193,8 @@ L["Automatic Length"] = "自动长度"
 L["Automatic Rotation"] = "自动旋转"
 --[[Translation missing --]]
 L["Available features: %s"] = "Available features: %s"
+--[[Translation missing --]]
+L["Avatar of Hakkar"] = "Avatar of Hakkar"
 L["Avoidance (%)"] = "闪避 (%)"
 L["Avoidance Rating"] = "闪避等级"
 L["Ayamiss the Hunter"] = "狩猎者阿亚米斯"
@@ -433,6 +439,8 @@ L["Down, then Right"] = "向下，然后向右"
 L["Dragonflight"] = "巨龙时代"
 L["Dragonriding"] = "驭龙术"
 L["Drain"] = "引导性吸取"
+--[[Translation missing --]]
+L["Dreamscythe and Weaver"] = "Dreamscythe and Weaver"
 L["Dropdown Menu"] = "下拉菜单"
 L["Dumping table"] = "转存表"
 L["Dungeon (Heroic)"] = "地下城（英雄）"
@@ -543,6 +551,8 @@ L["Feature %q is already disabled"] = "Feature %q is already disabled"
 --[[Translation missing --]]
 L["Feature %q is already enabled"] = "Feature %q is already enabled"
 L["Festergut"] = "烂肠"
+--[[Translation missing --]]
+L["Festering Rotslime"] = "Festering Rotslime"
 --[[Translation missing --]]
 L["Fetch Absorb"] = "Fetch Absorb"
 --[[Translation missing --]]
@@ -749,6 +759,8 @@ L["Item Slot"] = "物品栏"
 L["Item Slot String"] = "物品栏名称"
 L["Item Type"] = "物品类型"
 L["Item Type Equipped"] = "已装备物品类型"
+--[[Translation missing --]]
+L["Jammal'an and Ogom"] = "Jammal'an and Ogom"
 L["Jin'do the Hexxer"] = "妖术师金度"
 L["Journal Stage"] = "指南阶段"
 L["Keep Inside"] = "保持在内"
@@ -871,6 +883,8 @@ L["Monster Whisper"] = "怪物密语"
 L["Monster Yell"] = "怪物大喊"
 --[[Translation missing --]]
 L["Moon"] = "Moon"
+--[[Translation missing --]]
+L["Morphaz and Hazzas"] = "Morphaz and Hazzas"
 L["Most remaining time"] = "最大剩余时间"
 L["Mounted"] = "在坐骑上"
 L["Mouse Cursor"] = "鼠标"
@@ -1212,6 +1226,8 @@ L["Set IDs can be found on websites such as classic.wowhead.com/item-sets"] = "�
 L["Set IDs can be found on websites such as wowhead.com/cata/item-sets"] = "Set IDs can be found on websites such as wowhead.com/cata/item-sets"
 L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "套装 ID 可以在一些数据网站上找到（例如：wowhead.com/item-sets）"
 L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "套装 ID 可以在一些数据网站上找到（例如：wowhead.com/wotlk/item-sets）"
+--[[Translation missing --]]
+L["Shade of Eranikus"] = "Shade of Eranikus"
 L["Shadow Resistance"] = "暗影抗性"
 L["Shadowlands"] = "暗影国度"
 L["Shadron"] = "沙德隆"
@@ -1332,6 +1348,8 @@ L["Sulfuron Harbinger"] = "萨弗隆先驱者"
 L["Summon"] = "召唤"
 --[[Translation missing --]]
 L["Sun"] = "Sun"
+--[[Translation missing --]]
+L["Sunken Temple"] = "Sunken Temple"
 L["Supports multiple entries, separated by commas"] = "支持多个条目，由英文逗号分隔"
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "支持多个条目，由英文逗号分隔"

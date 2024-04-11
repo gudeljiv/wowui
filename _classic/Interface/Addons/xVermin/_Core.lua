@@ -331,8 +331,17 @@ xVermin.Magic = function(unit)
 end
 xMagic = xVermin.Magic
 
-xVermin.Immune = function(name, spellName)
-	if not name or not spellName then
+xVermin.Immune = function(spellName, name)
+
+	if not name then 
+		name = UnitExists("target") and UnitName("target") or ""
+	end
+
+	if not name then
+		return false
+	end
+
+	if not spellName then
 		return false
 	end
 

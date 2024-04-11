@@ -418,7 +418,7 @@ Can use \ to escape -.]=] ] = "Formatos de filtro: 'Nombre', 'Nombre-Reino', '-R
 	L["Format"] = "Formato"
 	L["Format for %s"] = "Formato para %s"
 	L["Found a Bug?"] = "¿Has encontrado un error?"
-	L["Frame"] = "Macro"
+	L["Frame"] = "Marco"
 	L["Frame Count"] = "Recuento de fotogramas"
 	L["Frame Height"] = "Altura de marco"
 	L["Frame Rate"] = "Cuadros por segundo"

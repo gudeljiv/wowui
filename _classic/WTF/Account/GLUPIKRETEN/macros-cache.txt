@@ -13,11 +13,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:1645
+/use item:0
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4599
+/use item:17222
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
@@ -31,6 +31,12 @@ END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
+END
+VER 3 000000000000002C "r aa" "134400"
+#showtooltip Legs Rune Ability
+/startattack
+/petattack
+/use Legs Rune Ability
 END
 VER 3 000000000000002B "rune b" "134400"
 #showtooltip Feet Rune Ability
@@ -52,8 +58,7 @@ VER 3 0000000000000027 "rune h" "134400"
 END
 VER 3 0000000000000026 "rune l" "134400"
 #showtooltip Legs Rune Ability
-/startattack
-/petattack
+/atartattack
 /use Legs Rune Ability
 END
 VER 3 000000000000002A "rune w" "134400"

@@ -173,6 +173,10 @@ L["At Percent"] = "At Percent"
 L["At Value"] = "At Value"
 --[[Translation missing --]]
 L["At War"] = "At War"
+--[[Translation missing --]]
+L["Atal'ai Defenders"] = "Atal'ai Defenders"
+--[[Translation missing --]]
+L["Atal'alarion"] = "Atal'alarion"
 L["Attach to End"] = "끝에 붙이기"
 L["Attach to Start"] = "시작에 붙이기"
 L["Attack Power"] = "공격력"
@@ -210,6 +214,8 @@ L["Automatic Length"] = "자동 길이"
 L["Automatic Rotation"] = "자동 회전"
 --[[Translation missing --]]
 L["Available features: %s"] = "Available features: %s"
+--[[Translation missing --]]
+L["Avatar of Hakkar"] = "Avatar of Hakkar"
 L["Avoidance (%)"] = "광역회피(%)"
 L["Avoidance Rating"] = "광역회피"
 L["Ayamiss the Hunter"] = "사냥꾼 아야미스"
@@ -508,6 +514,8 @@ L["Down, then Right"] = "아래로, 오른쪽으로"
 L["Dragonflight"] = "용군단"
 L["Dragonriding"] = "용 조련술"
 L["Drain"] = "마력 소진"
+--[[Translation missing --]]
+L["Dreamscythe and Weaver"] = "Dreamscythe and Weaver"
 L["Dropdown Menu"] = "드롭다운 메뉴"
 --[[Translation missing --]]
 L["Dumping table"] = "Dumping table"
@@ -656,6 +664,8 @@ L["Feature %q is already disabled"] = "Feature %q is already disabled"
 --[[Translation missing --]]
 L["Feature %q is already enabled"] = "Feature %q is already enabled"
 L["Festergut"] = "구린속"
+--[[Translation missing --]]
+L["Festering Rotslime"] = "Festering Rotslime"
 --[[Translation missing --]]
 L["Fetch Absorb"] = "Fetch Absorb"
 --[[Translation missing --]]
@@ -894,6 +904,8 @@ L["Item Slot"] = "아이템 칸"
 L["Item Slot String"] = "아이템 칸 문자열"
 L["Item Type"] = "아이템 유형"
 L["Item Type Equipped"] = "착용한 아이템 유형"
+--[[Translation missing --]]
+L["Jammal'an and Ogom"] = "Jammal'an and Ogom"
 L["Jin'do the Hexxer"] = "주술사 진도"
 L["Journal Stage"] = "도감 단계"
 L["Keep Inside"] = "내부에 보관"
@@ -1031,6 +1043,8 @@ L["Monster Whisper"] = "몬스터 귓속말"
 L["Monster Yell"] = "몬스터 외침"
 --[[Translation missing --]]
 L["Moon"] = "Moon"
+--[[Translation missing --]]
+L["Morphaz and Hazzas"] = "Morphaz and Hazzas"
 L["Most remaining time"] = "최대 남은 시간"
 L["Mounted"] = "탈것 탑승 중"
 L["Mouse Cursor"] = "마우스 커서"
@@ -1421,6 +1435,8 @@ L["Set IDs can be found on websites such as classic.wowhead.com/item-sets"] = "�
 L["Set IDs can be found on websites such as wowhead.com/cata/item-sets"] = "Set IDs can be found on websites such as wowhead.com/cata/item-sets"
 L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "세트 ID는 Wowhead.com/item-sets와 같은 웹사이트에서 찾을 수 있습니다."
 L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "세트 ID는 Wowhead.com/wotlk/item-sets와 같은 웹사이트에서 찾을 수 있습니다."
+--[[Translation missing --]]
+L["Shade of Eranikus"] = "Shade of Eranikus"
 L["Shadow Resistance"] = "암흑 저항"
 L["Shadowlands"] = "어둠땅"
 L["Shadron"] = "샤드론"
@@ -1575,6 +1591,8 @@ L["Sulfuron Harbinger"] = "설퍼론 사자"
 L["Summon"] = "소환"
 --[[Translation missing --]]
 L["Sun"] = "Sun"
+--[[Translation missing --]]
+L["Sunken Temple"] = "Sunken Temple"
 L["Supports multiple entries, separated by commas"] = "쉼표로 구분된 여러 항목을 지원합니다"
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "쉼표로 구분된 여러 항목을 지원합니다"

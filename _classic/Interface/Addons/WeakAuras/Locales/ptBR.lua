@@ -193,6 +193,10 @@ L["At Percent"] = "Na porcentagem"
 L["At Value"] = "Em valor"
 --[[Translation missing --]]
 L["At War"] = "At War"
+--[[Translation missing --]]
+L["Atal'ai Defenders"] = "Atal'ai Defenders"
+--[[Translation missing --]]
+L["Atal'alarion"] = "Atal'alarion"
 L["Attach to End"] = "Anexar ao final"
 L["Attach to Start"] = "Anexar ao inicio"
 L["Attack Power"] = "Poder de ataque"
@@ -234,6 +238,8 @@ L["Automatic Length"] = "Comprimento Automático"
 L["Automatic Rotation"] = "Rotação Automática"
 --[[Translation missing --]]
 L["Available features: %s"] = "Available features: %s"
+--[[Translation missing --]]
+L["Avatar of Hakkar"] = "Avatar of Hakkar"
 --[[Translation missing --]]
 L["Avoidance (%)"] = "Avoidance (%)"
 --[[Translation missing --]]
@@ -615,6 +621,8 @@ L["Dragonriding"] = "Dragonriding"
 --[[Translation missing --]]
 L["Drain"] = "Drain"
 --[[Translation missing --]]
+L["Dreamscythe and Weaver"] = "Dreamscythe and Weaver"
+--[[Translation missing --]]
 L["Dropdown Menu"] = "Dropdown Menu"
 --[[Translation missing --]]
 L["Dumping table"] = "Dumping table"
@@ -818,6 +826,8 @@ L["Feature %q is already disabled"] = "Feature %q is already disabled"
 L["Feature %q is already enabled"] = "Feature %q is already enabled"
 --[[Translation missing --]]
 L["Festergut"] = "Festergut"
+--[[Translation missing --]]
+L["Festering Rotslime"] = "Festering Rotslime"
 --[[Translation missing --]]
 L["Fetch Absorb"] = "Fetch Absorb"
 --[[Translation missing --]]
@@ -1190,6 +1200,8 @@ L["Item Slot String"] = "Item Slot String"
 L["Item Type"] = "Item Type"
 L["Item Type Equipped"] = "Tipo de Item Equipado"
 --[[Translation missing --]]
+L["Jammal'an and Ogom"] = "Jammal'an and Ogom"
+--[[Translation missing --]]
 L["Jin'do the Hexxer"] = "Jin'do the Hexxer"
 --[[Translation missing --]]
 L["Journal Stage"] = "Journal Stage"
@@ -1395,6 +1407,8 @@ L["Monster Whisper"] = "Monster Whisper"
 L["Monster Yell"] = "Grito do monstro"
 --[[Translation missing --]]
 L["Moon"] = "Moon"
+--[[Translation missing --]]
+L["Morphaz and Hazzas"] = "Morphaz and Hazzas"
 --[[Translation missing --]]
 L["Most remaining time"] = "Most remaining time"
 L["Mounted"] = "Montado"
@@ -1927,6 +1941,8 @@ L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "Set IDs c
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"
 --[[Translation missing --]]
+L["Shade of Eranikus"] = "Shade of Eranikus"
+--[[Translation missing --]]
 L["Shadow Resistance"] = "Shadow Resistance"
 --[[Translation missing --]]
 L["Shadowlands"] = "Shadowlands"
@@ -2133,6 +2149,8 @@ L["Sulfuron Harbinger"] = "Sulfuron Harbinger"
 L["Summon"] = "Invocar"
 --[[Translation missing --]]
 L["Sun"] = "Sun"
+--[[Translation missing --]]
+L["Sunken Temple"] = "Sunken Temple"
 --[[Translation missing --]]
 L["Supports multiple entries, separated by commas"] = "Supports multiple entries, separated by commas"
 --[[Translation missing --]]

@@ -134,3 +134,10 @@ v1.4.7.2 Release - 04 APR 2024
 v1.4.7.3 Release - 05 APR 2024
 	Fixed:
 		Level 50 crate gold values corrected from wowhead
+
+v1.4.8 Release - 09 APR 2024
+	Added:
+		New Feature - TSM pricing integration
+	Coming Soon:
+		New Feature - Auctionator integration
+		New Feature - Localization
