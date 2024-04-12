@@ -6,7 +6,7 @@ local frame = CreateFrame("Frame")
 frame:RegisterEvent("GET_ITEM_INFO_RECEIVED")
 
 -- [itemName] = {filledRep, filledMoney, unfilledMoney, questXP, itemLevel, questLevel}
-local reputationItems = {
+local waylaidCrates = {
 --Phase 1
     ["Waylaid Supplies: Brilliant Smallfish"] = {300, 600, 100, 80, 10, 9, 6290, 20},
     ["Waylaid Supplies: Copper Bars"] = {300, 600, 100, 80, 10, 9, 2840, 20},
@@ -111,6 +111,75 @@ local reputationItems = {
     ["Waylaid Supplies: Truesilver Gauntlets"] = {1850, 154000, 5000, 4650, 45, 50, 7938, 2},
 }
 
+local function  AddTooltipInfo(tooltip)
+    local _, itemLink = tooltip:GetItem()
+    if (itemLink ~= nil) then
+        local itemName, _, _, itemLevel = GetItemInfo(itemLink)
+        if itemName and string.sub(itemName, 1,  16) == "Waylaid Supplies" then
+            local supplyFactionID = (UnitFactionGroup("player") == "Horde") and 2587 or 2586
+            local _, _, standingID = GetFactionInfoByID(supplyFactionID)
+            
+            -- Updated threshold logic starts here
+            local threshold
+            if standingID < 5 then
+                threshold = 9
+            elseif standingID == 5 then
+                threshold = 24
+            elseif standingID < 7 then
+                threshold = 29
+            elseif standingID < 8 then
+                threshold = 41
+            end
+            
+            local reputationAmounts = waylaidCrates[itemName]
+            if reputationAmounts then
+                -- Apply a 10% reputation bonus for humans
+                local isHuman = (UnitRace("player") == "Human")
+                local reputationBonus = isHuman and 0.1 or 0
+                local modifiedReputation1 = reputationAmounts[1] + (reputationAmounts[1] * reputationBonus)
+                
+                --Money Reward
+                local copperReward = reputationAmounts[2]
+                local copperReward2 = reputationAmounts[3]
+                
+                --Reputation allowance check and display            green                red
+                local colorCode = (itemLevel >= threshold) and "\124cFF00FF00" or "\124cFFFF0000"
+                local reputationStatus = (itemLevel < threshold) and "\124cFFFF0000No longer grants rep with " or colorCode .. "Will grant reputation with "
+                
+				-- Checks the player's faction to display the Supply Crate faction
+                local factionName = (UnitFactionGroup("player") == "Horde") and "Durotar Supply and Logistics" or "Azeroth Commerce Authority"
+                
+                --Experience, Quest Level and Item Level
+                local questXP = reputationAmounts[4]
+                local itemLevel = reputationAmounts[5]
+                local questLevel = reputationAmounts[6]
+                                
+                --Tooltip text
+                if itemLevel <= threshold then --Tooltip if the item doesn't give rep
+                    local reputationText1 =	"REP: " .. modifiedReputation1 .. "                " .. "Base XP: " .. questXP
+                    local reputationText2 =	"Filled: " .. GetMoneyString(copperReward)
+					local reputationText3 =	("ILVl:  " .. itemLevel .. " " .. "                 " .. "Quest Level: " .. questLevel)
+					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
+					tooltip:AddDoubleLine(" ", " ")
+                    tooltip:AddLine(reputationStatus .. factionName)
+					tooltip:AddDoubleLine(reputationText1, reputationText2)
+                    tooltip:AddDoubleLine(reputationText3, reputationText4)
+                else --Tooltip if the item does give rep
+                    local reputationText1 =	"REP: " .. modifiedReputation1 .. "                " .. "Base XP: " .. questXP
+                    local reputationText2 =	"Filled: " .. GetMoneyString(copperReward)
+					local reputationText3 =	("ILVl:  " .. itemLevel .. " " .. "                 " .. "Quest Level: " .. questLevel)
+					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
+					tooltip:AddDoubleLine(" ", " ")
+                    tooltip:AddLine(reputationStatus .. factionName)
+                    tooltip:AddDoubleLine(reputationText1, reputationText2)
+                    tooltip:AddDoubleLine(reputationText3, reputationText4)
+                    return
+                end
+            end
+        end
+    end
+end
+
 -- Function to get market value for an item
 local function GetMarketValue(itemLink)
     -- Extract itemID from itemLink
@@ -153,83 +222,6 @@ local function GetMinBuyout(itemLink)
     end
 end
 
-local function Add_Waylaid_Supplies_Tooltip(tooltip)
-    local _, itemLink = tooltip:GetItem()
-    if (itemLink ~= nil) then
-        local itemName, _, _, itemLevel = GetItemInfo(itemLink)
-        if itemName and string.sub(itemName, 1,  16) == "Waylaid Supplies" then
-            local supplyFactionID = (UnitFactionGroup("player") == "Horde") and 2587 or 2586
-            local _, _, standingID = GetFactionInfoByID(supplyFactionID)
-            
-            -- Updated threshold logic starts here
-            local threshold
-            if standingID < 5 then
-                threshold = 9
-            elseif standingID == 5 then
-                threshold = 24
-            elseif standingID < 7 then
-                threshold = 29
-            elseif standingID < 8 then
-                threshold = 41
-            end
-            
-            local reputationAmounts = reputationItems[itemName]
-            if reputationAmounts then
-                -- Apply a 10% reputation bonus for humans
-                local isHuman = (UnitRace("player") == "Human")
-                local reputationBonus = isHuman and 0.1 or 0
-                local modifiedReputation1 = reputationAmounts[1] + (reputationAmounts[1] * reputationBonus)
-                
-                --Money Reward
-                local copperReward = reputationAmounts[2]
-                local copperReward2 = reputationAmounts[3]
-                
-                --Reputation allowance check and display            green                red
-                local colorCode = (itemLevel >= threshold) and "\124cFF00FF00" or "\124cFFFF0000"
-                local reputationStatus = (itemLevel < threshold) and "\124cFFFF0000No longer grants rep with " or colorCode .. "Will grant reputation with "
-                
-                --Experience, Quest Level and Item Level
-                local questXP = reputationAmounts[4]
-                local itemLevel = reputationAmounts[5]
-                local questLevel = reputationAmounts[6]
-                
-                -- Checks the player's faction to display the Supply Crate faction
-                local factionName = (UnitFactionGroup("player") == "Horde") and "Durotar Supply and Logistics" or "Azeroth Commerce Authority"
-                
-                --Tooltip text
-                if itemLevel <= threshold then --Tooltip if the item doesn't give rep
-                    local reputationText1 =	"REP: " .. modifiedReputation1 .. "                " .. "Base XP: " .. questXP
-                    local reputationText2 =	"Filled: " .. GetMoneyString(copperReward)
-					local reputationText3 =	("ILVl:  " .. itemLevel .. " " .. "                 " .. "Quest Level: " .. questLevel)
-					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
-					tooltip:AddDoubleLine(" ", " ")
-                    tooltip:AddLine(reputationStatus .. factionName)
-					tooltip:AddDoubleLine(reputationText1, reputationText2)
-                    tooltip:AddDoubleLine(reputationText3, reputationText4)
-                    --local copperRewardText = "Filled: " .. GetMoneyString(reputationAmounts[2]) 
-                    --local copperRewardText2 = "Vendor: " .. GetMoneyString(reputationAmounts[3])
-                    --tooltip:AddDoubleLine(copperRewardText,copperRewardText2)
-                    --tooltip:AddDoubleLine("ILVl:  " .. itemLevel .. "          " .. "|Quest Level: " .. questLevel, "Base XP: " .. questXP)
-                else --Tooltip if the item does give rep
-                    --local reputationText1 = "Rep: " .. modifiedReputation1 .. "                   " .. "Filled: " .. GetMoneyString(copperReward)  
-                    --local reputationText2 = "Vendor: " .. GetMoneyString(copperReward2)
-					--local reputationText3 = ("Item Level: " .. itemLevel .. "            " .. "Quest Level: " .. questLevel, "Base XP: " .. questXP)
-					--local reputationText4 = 
-                    local reputationText1 =	"REP: " .. modifiedReputation1 .. "                " .. "Base XP: " .. questXP
-                    local reputationText2 =	"Filled: " .. GetMoneyString(copperReward)
-					local reputationText3 =	("ILVl:  " .. itemLevel .. " " .. "                 " .. "Quest Level: " .. questLevel)
-					local reputationText4 = "Vendor: " .. GetMoneyString(copperReward2)
-					tooltip:AddDoubleLine(" ", " ")
-                    tooltip:AddLine(reputationStatus .. factionName)
-                    tooltip:AddDoubleLine(reputationText1, reputationText2)
-                    tooltip:AddDoubleLine(reputationText3, reputationText4)
-                    return
-                end
-            end
-        end
-    end
-end
-
 -- Function to display tooltip information for associated item
 local function DisplayAssociatedItemTooltip(tooltip, itemID, reputationItem)
     local itemLink = select(2, GetItemInfo(itemID))
@@ -252,7 +244,7 @@ local function OnTooltipSetItem(tooltip)
     local itemLink = select(2, tooltip:GetItem())
     if itemLink then
         local itemName = GetItemInfo(itemLink)
-        local reputationItem = reputationItems[itemName]
+        local reputationItem = waylaidCrates[itemName]
         if reputationItem then
             local associatedItemID = reputationItem[7]  -- Get the item ID of the associated item
             DisplayAssociatedItemTooltip(tooltip, associatedItemID, reputationItem)
@@ -261,12 +253,12 @@ local function OnTooltipSetItem(tooltip)
     end
 end
 
-print("WST: Welcome to Waylaid Supplies Tooltip v1.5")
+print("WST: Welcome to Waylaid Supplies Tooltip v1.4.8")
 print("WST: Added: New Feature - TSM pricing integration")
 print("WST: Coming Soon: Auctionator integration and localization")
 
 -- Hook the function to tooltip events
-GameTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)
-ItemRefTooltip:HookScript("OnTooltipSetItem", Add_Waylaid_Supplies_Tooltip)
+GameTooltip:HookScript("OnTooltipSetItem", AddTooltipInfo)
+ItemRefTooltip:HookScript("OnTooltipSetItem", AddTooltipInfo)
 GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
 ItemRefTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)

@@ -39,7 +39,7 @@ Postal3DB = {
 				"Dopesnare|Stitches|Horde|40|HUNTER", -- [13]
 				"Dopestab|Lone Wolf|Horde|35|ROGUE", -- [14]
 				"Dopetrap|Lone Wolf|Horde|1|HUNTER", -- [15]
-				"Jutarnjedrvo|Lone Wolf|Horde|45|SHAMAN", -- [16]
+				"Jutarnjedrvo|Lone Wolf|Horde|47|SHAMAN", -- [16]
 				"Lonac|Stitches|Horde|1|WARRIOR", -- [17]
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [18]
 				"Vermins|Stitches|Horde|26|WARRIOR", -- [19]
@@ -59,7 +59,9 @@ Postal3DB = {
 		["Jutarnjedrvo - Lone Wolf"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Doperage|Lone Wolf|Horde", -- [1]
+					"Dopestab|Lone Wolf|Horde", -- [1]
+					"Dopemend|Lone Wolf|Horde", -- [2]
+					"Doperage|Lone Wolf|Horde", -- [3]
 				},
 			},
 		},
@@ -111,14 +113,14 @@ Postal3DB = {
 		},
 		["Dopesnare - Lone Wolf"] = {
 			["BlackBook"] = {
-				["contacts"] = {
-					"Dopemend", -- [1]
-				},
 				["recent"] = {
 					"Dopemend|Lone Wolf|Horde", -- [1]
 					"Dopestab|Lone Wolf|Horde", -- [2]
 					"Sulfuraddict|Lone Wolf|Horde", -- [3]
 					"Dopedot|Lone Wolf|Horde", -- [4]
+				},
+				["contacts"] = {
+					"Dopemend", -- [1]
 				},
 			},
 		},

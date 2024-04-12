@@ -6,7 +6,7 @@ local addonName, addon = ...
 
 -- List of items and their corresponding amounts needed to fill a waylaid supply crate.
 -- [itemID] = {numberReq, moneyReward, itemName, pluralizedName}
-local supplyShipment = {
+local waylaidItems = {
 --Phase 1
     [6290]  =  {20, 600,    "Brilliant Smallfish", "Brilliant Smallfish"},
     [2840]  =  {20, 600,    "Copper Bar", "Copper Bars"},
@@ -112,15 +112,12 @@ local supplyShipment = {
 }
 
 local function AddTooltipInfo(tooltip, itemID)
-    --print("OnTooltipSetItem called", itemID)
-    --print("AddTooltipInfo function called with itemID:", itemID)
-    local shipmentData = supplyShipment[itemID]
-    if shipmentData then
-        local numberReq, moneyReward, itemName, pluralizedName = unpack(shipmentData)
+    local itemsData = waylaidItems[itemID]
+    if itemsData then
+        local numberReq, moneyReward, itemName, pluralizedName = unpack(itemsData)
         tooltip:AddDoubleLine(" ", " ")
         tooltip:AddLine("|cFF00FF00Requires " ..numberReq.. " to fill Waylaid Supplies: " ..pluralizedName.. " for " ..GetMoneyString(moneyReward).. "|r")
         tooltip:Show()
-        --print("Tooltip info added successfully")
     else
         --print("No shipment data found for itemID:", itemID)
     end

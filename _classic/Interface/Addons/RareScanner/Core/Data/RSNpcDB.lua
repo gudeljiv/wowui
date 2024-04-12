@@ -496,7 +496,7 @@ function RSNpcDB.IsSeasonDisabled(npcID)
 				return false
 			else
 				local activeSeason = C_Seasons.GetActiveSeason()
-				if (not activeSeason or npcInfo.season ~= Enum.SeasonID.SeasonOfDiscovery) then
+				if (not activeSeason or npcInfo.season ~= activeSeason) then
 					return true
 				end
 			end

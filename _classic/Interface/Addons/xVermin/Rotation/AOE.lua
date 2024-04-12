@@ -154,7 +154,7 @@ UIParent:HookScript(
 		aoe_number = 0
 		aoe_casting_number = 0
 
-		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
+		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff or _G.ShowTotemBars then
 			RotationFrame2:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then

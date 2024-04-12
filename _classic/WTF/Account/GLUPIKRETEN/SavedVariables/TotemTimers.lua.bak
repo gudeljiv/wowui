@@ -78,7 +78,7 @@ TotemTimers_Profiles = {
 		},
 		["WindfuryDownrank"] = false,
 		["TimerSize"] = 36,
-		["ActivateHiddenTimers"] = false,
+		["ActivateHiddenTimers"] = true,
 		["CrowdControlTimePos"] = "BOTTOM",
 		["ESMainTankMenuDirection"] = "auto",
 		["LastMainEnchants"] = {
@@ -284,8 +284,8 @@ TotemTimers_Profiles = {
 		["Warnings"] = {
 			["TotemWarning"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Totem Expiring",
 				["sound"] = "",
@@ -293,17 +293,17 @@ TotemTimers_Profiles = {
 			},
 			["PowerSurge"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Power Surge",
 				["sound"] = "",
-				["enabled"] = true,
+				["enabled"] = false,
 			},
 			["TotemDestroyed"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Totem Destroyed",
 				["sound"] = "",
@@ -311,8 +311,8 @@ TotemTimers_Profiles = {
 			},
 			["TotemExpiration"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Totem Expired",
 				["sound"] = "",
@@ -320,39 +320,39 @@ TotemTimers_Profiles = {
 			},
 			["Shield"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
-				["enabled"] = true,
+				["enabled"] = false,
 			},
 			["EarthShield"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
-				["enabled"] = true,
+				["enabled"] = false,
 			},
 			["Maelstrom"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Maelstrom",
 				["sound"] = "",
-				["enabled"] = true,
+				["enabled"] = false,
 			},
 			["Weapon"] = {
 				["a"] = 1,
-				["b"] = 0,
 				["r"] = 1,
+				["b"] = 0,
 				["g"] = 0,
 				["text"] = "Shield removed",
 				["sound"] = "",
-				["enabled"] = true,
+				["enabled"] = false,
 			},
 		},
 		["EarthShieldTargetName"] = true,
@@ -394,7 +394,11 @@ TotemTimers_Profiles = {
 		["TrackerTimeHeight"] = 12,
 		["TotemTimerBarWidth"] = 36,
 		["EarthShieldRightButton"] = "target",
-		["Tooltips"] = true,
+		["EnhanceCDsFlameShockDuration_Specialization"] = {
+			true, -- [1]
+			false, -- [2]
+			true, -- [3]
+		},
 		["ShieldButton4"] = 408514,
 		["TimerTimePos"] = "BOTTOM",
 		["EnhanceCDsFlameShockDuration"] = true,
@@ -443,17 +447,13 @@ TotemTimers_Profiles = {
 		["TotemMenuSpacing"] = 0,
 		["OpenOnRightclick"] = false,
 		["OverlayGlow"] = true,
-		["EnhanceCDsFlameShockDuration_Specialization"] = {
-			true, -- [1]
-			false, -- [2]
-			true, -- [3]
-		},
+		["Tooltips"] = true,
 		["CDTimersOnButtons"] = true,
 		["LastTotems"] = {
-			10478, -- [1]
-			6392, -- [2]
-			8166, -- [3]
-			10600, -- [4]
+			6365, -- [1]
+			8161, -- [2]
+			10496, -- [3]
+			10613, -- [4]
 		},
 		["TrackerSize"] = 30,
 		["EnhanceCDsSize"] = 30,

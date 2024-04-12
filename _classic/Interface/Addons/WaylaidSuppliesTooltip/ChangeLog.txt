@@ -141,3 +141,14 @@ v1.4.8 Release - 09 APR 2024
 	Coming Soon:
 		New Feature - Auctionator integration
 		New Feature - Localization
+
+v1.4.9 Release - 11 APR 2024
+	Changed:
+		Waylaid Supply Crate lua table keys converted to an itemID instead of the itemName text string.
+		This should allow the addon to work for non-english clients.
+	Coming Soon:
+		New Feature - Auctionator integration
+		
+v1.5 Release - 12 APR 2024
+	Added:
+		New Feature - Auctionator pricing integration
