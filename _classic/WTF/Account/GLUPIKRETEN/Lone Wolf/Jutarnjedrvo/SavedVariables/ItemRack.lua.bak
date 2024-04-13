@@ -7,18 +7,19 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["CurrentSet"] = "dw",
+	["Queues"] = {
+	},
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
 			},
 		},
 		["tank"] = {
+			["oldset"] = "dw",
 			["equip"] = {
 				[16] = "9478::::::::47:::::::::",
 				[17] = "9661::::::::47:::::::::",
 			},
-			["oldset"] = "dw",
 			["icon"] = 134955,
 			["old"] = {
 				[17] = "6692::::::::47:::::::::",
@@ -26,13 +27,11 @@ ItemRackUser = {
 		},
 		["dw"] = {
 			["equip"] = {
-				[16] = "9478::::::::47:::::::::",
-				[17] = "6692::::::::47:::::::::",
+				[16] = "9478::::::::48:::::::::",
+				[17] = "223527::::::::48:::::::::",
 			},
-			["oldset"] = "tank",
 			["icon"] = 133045,
 			["old"] = {
-				[17] = "9661::::::::47:::::::::",
 			},
 		},
 		["~Unequip"] = {
@@ -42,8 +41,7 @@ ItemRackUser = {
 	},
 	["EnableQueues"] = "ON",
 	["EnablePerSetQueues"] = "OFF",
-	["Buttons"] = {
-	},
+	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
 	},
 	["Events"] = {
@@ -52,11 +50,11 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
-	["MenuScale"] = 1.200000047683716,
-	["Queues"] = {
+	["Alpha"] = 1,
+	["Buttons"] = {
 	},
+	["MenuScale"] = 1.200000047683716,
+	["CurrentSet"] = "dw",
 }
