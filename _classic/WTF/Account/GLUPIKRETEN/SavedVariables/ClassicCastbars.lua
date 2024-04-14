@@ -52,7 +52,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["width"] = 106,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["frameStrata"] = "HIGH",
 		["showInterruptSchool"] = true,
 		["position"] = {
@@ -60,22 +60,22 @@ ClassicCastbarsDB = {
 			7.3, -- [2]
 			-23.1, -- [3]
 		},
-		["textOutline"] = "",
-		["showBorderShield"] = true,
+		["iconPositionY"] = 0,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showBorderShield"] = true,
+		["textOutline"] = "",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["width"] = 106,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -135,30 +135,30 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
-		["showInterruptSchool"] = true,
-		["frameStrata"] = "HIGH",
 		["width"] = 120,
-		["borderPaddingWidth"] = 1.17,
+		["frameStrata"] = "HIGH",
+		["showInterruptSchool"] = true,
+		["position"] = {
+			"CENTER", -- [1]
+			141, -- [2]
+			6, -- [3]
+		},
 		["textOutline"] = "",
-		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["iconPositionX"] = -5,
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			141, -- [2]
-			6, -- [3]
-		},
+		["borderPaddingWidth"] = 1.17,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -217,30 +217,30 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-		["showInterruptSchool"] = true,
-		["frameStrata"] = "HIGH",
 		["width"] = 150,
-		["borderPaddingWidth"] = 1.17,
+		["frameStrata"] = "HIGH",
+		["showInterruptSchool"] = true,
+		["position"] = {
+			"TOPLEFT", -- [1]
+			275, -- [2]
+			-260, -- [3]
+		},
 		["textOutline"] = "",
-		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["iconPositionX"] = -5,
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"TOPLEFT", -- [1]
-			275, -- [2]
-			-260, -- [3]
-		},
+		["borderPaddingWidth"] = 1.17,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -298,30 +298,30 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "",
-		["showInterruptSchool"] = true,
-		["frameStrata"] = "HIGH",
 		["width"] = 500,
-		["borderPaddingWidth"] = 1.205,
+		["frameStrata"] = "HIGH",
+		["showInterruptSchool"] = true,
+		["position"] = {
+			"CENTER", -- [1]
+			-215.4, -- [2]
+			598.1, -- [3]
+		},
 		["textOutline"] = "",
-		["iconPositionX"] = -10,
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
+		["iconPositionX"] = -10,
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			-215.4, -- [2]
-			598.1, -- [3]
-		},
+		["borderPaddingWidth"] = 1.205,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -379,30 +379,30 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-		["showInterruptSchool"] = true,
-		["frameStrata"] = "HIGH",
 		["width"] = 150,
-		["borderPaddingWidth"] = 1.17,
+		["frameStrata"] = "HIGH",
+		["showInterruptSchool"] = true,
+		["position"] = {
+			"CENTER", -- [1]
+			-149, -- [2]
+			-5, -- [3]
+		},
 		["textOutline"] = "",
-		["iconPositionX"] = -5,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["iconPositionX"] = -5,
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			-149, -- [2]
-			-5, -- [3]
-		},
+		["borderPaddingWidth"] = 1.17,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -461,30 +461,30 @@ ClassicCastbarsDB = {
 		},
 		["frameLevel"] = 10,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
-		["showInterruptSchool"] = false,
-		["frameStrata"] = "HIGH",
 		["width"] = 190,
-		["borderPaddingWidth"] = 1.17,
+		["frameStrata"] = "HIGH",
+		["showInterruptSchool"] = false,
+		["position"] = {
+			"CENTER", -- [1]
+			-18, -- [2]
+			-87, -- [3]
+		},
 		["iconPositionY"] = 0,
-		["textOutline"] = "",
-		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
+		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+		["textOutline"] = "",
 		["statusBackgroundColor"] = {
 			0, -- [1]
 			0, -- [2]
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["position"] = {
-			"CENTER", -- [1]
-			-18, -- [2]
-			-87, -- [3]
-		},
+		["borderPaddingWidth"] = 1.17,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]

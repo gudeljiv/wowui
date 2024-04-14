@@ -47,7 +47,7 @@ VER 3 0000000001000004 "poison" "134400"
 END
 VER 3 0000000001000015 "project" "134400"
 #showtooltip
-/cast [@player]Totemic Projection
+/cast [@cursor] Totemic Projection
 END
 VER 3 0000000001000009 "rock I" "134400"
 #showtooltip
@@ -71,7 +71,7 @@ VER 3 0000000001000013 "tot H" "134400"
 END
 VER 3 0000000001000011 "TT Cast" "INV_MISC_QUESTIONMARK"
 #showtooltips
-/castsequence reset=combat/15 Searing Totem(Rank 4), Strength of Earth Totem(Rank 3), Mana Spring Totem(Rank 3), Windfury Totem(Rank 2)
+/castsequence reset=combat/15 Frost Resistance Totem(Rank 2), Stoneclaw Totem(Rank 5), Healing Stream Totem(Rank 3), Windfury Totem(Rank 2)
 END
 VER 3 000000000100000F "wf I" "134400"
 #showtooltip
