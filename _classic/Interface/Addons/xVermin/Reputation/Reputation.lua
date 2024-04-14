@@ -95,18 +95,18 @@ local function UpdateBarPosition()
 		if not value.hidden then
 			if value.isWatched then
 				anchor = _G[value.frameStatusBar .. '_wrap']
-				_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
+				anchor:ClearAllPoints()
 				if _G['PlayerXPFrameStatusBar'] and _G['PlayerXPFrameStatusBar']:GetAlpha() > 0 then
 					if pet then
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
+						anchor:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
 					else
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30)
+						anchor:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30)
 					end
 				else
 					if pet then
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
+						anchor:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30)
 					else
-						_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
+						anchor:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 0)
 					end
 				end
 			end
@@ -114,24 +114,26 @@ local function UpdateBarPosition()
 	end
 
 	local counter = 1
+	local child
 	for key, value in pairs(bars) do
 		if not value.hidden then
 			if not value.isWatched then
-				_G[value.frameStatusBar .. '_wrap']:ClearAllPoints()
-				if anchor then
-					_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', anchor, 'TOP', 0, 30 * counter)
+				child = _G[value.frameStatusBar .. '_wrap']
+				child:ClearAllPoints()
+				if anchor and anchor ~= child then
+					child:SetPoint('BOTTOM', anchor, 'TOP', 0, 30 * counter)
 				else
 					if _G['PlayerXPFrameStatusBar'] and _G['PlayerXPFrameStatusBar']:GetAlpha() > 0 then
 						if pet then
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
+							child:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						else
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30 * counter)
+							child:SetPoint('BOTTOM', PlayerXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						end
 					else
 						if pet then
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
+							child:SetPoint('BOTTOM', PetXPFrameStatusBar, 'TOP', 0, 30 * counter)
 						else
-							_G[value.frameStatusBar .. '_wrap']:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
+							child:SetPoint('BOTTOMLEFT', ChatFrame1, 'BOTTOMRIGHT', 5, 30 * (counter - 1))
 						end
 					end
 				end
