@@ -142,8 +142,8 @@ function LBIS.BrowserWindow:UpdateItemsForSpec(rowFunc)
     local topl = window.Container:CreateLine();
     topl:SetColorTexture(1,1,1,0.5);
     topl:SetThickness(1);
-    topl:SetStartPoint("TOPLEFT",5, 0);
-    topl:SetEndPoint("TOPRIGHT",-5, 0);
+    topl:SetStartPoint("TOPLEFT", 5, 0);
+    topl:SetEndPoint("TOPRIGHT", -5, 0);
     
     failedLoad = false;
 
@@ -272,7 +272,7 @@ local function createDropDowns(window)
         ['name']='phase',
         ['parent']=window,
         ['title']='Phase:',
-        ['items']= { LBIS.L["All"], LBIS.L["Phase 1"], LBIS.L["Phase 2"], "BIS" }, --LBIS.L["Phase 3"], LBIS.L["Phase 4"], "BIS" }, --LBIS.L["Phase 5"],
+        ['items']= { LBIS.L["All"], LBIS.L["Phase 1"], LBIS.L["Phase 2"], LBIS.L["Phase 3"], "BIS" }, --LBIS.L["Phase 4"], LBIS.L["Phase 5"],
         ['defaultVal']=LBISSettings.SelectedPhase,
         ['changeFunc']=function(dropdown_frame, dropdown_val)
             LBISSettings.SelectedPhase = dropdown_val;
@@ -317,7 +317,7 @@ local function createDropDowns(window)
         ['title']='Zone:',
         ['items']= { LBIS.L["All"], LBIS.L["Ragefire Chasm"], LBIS.L["Wailing Caverns"], LBIS.L["The Deadmines"], LBIS.L["Shadowfang Keep"], 
             LBIS.L["Blackfathom Deeps"], LBIS.L["The Stockade"], LBIS.L["Razorfen Kraul"], LBIS.L["Scarlet Monastery"], LBIS.L["Razorfen Downs"], 
-            LBIS.L["Uldaman"], LBIS.L["Gnomeregan"] },
+            LBIS.L["Uldaman"], LBIS.L["Gnomeregan"], LBIS.L["Zul'Farrak"], LBIS.L["Maraudon"], LBIS.L["Blackrock Depths"], LBIS.L["Sunken Temple"] },
         ['defaultVal']= LBISSettings.SelectedZone,
         ['changeFunc']=function(dropdown_frame, dropdown_val)
             LBISSettings.SelectedZone = dropdown_val;
@@ -402,8 +402,8 @@ function LBIS.BrowserWindow:CreateBrowserWindow()
     local topLine = window:CreateLine();
     topLine:SetColorTexture(1,1,1,0.5);
     topLine:SetThickness(2);
-    topLine:SetStartPoint("TOPLEFT",10, -59);
-    topLine:SetEndPoint("TOPRIGHT",-25, -59);
+    topLine:SetStartPoint("TOPLEFT", 10, -59);
+    topLine:SetEndPoint("TOPRIGHT", -25, -59);
 
     scrollframe:SetPoint("TOPLEFT", 10, -60);
     scrollframe:SetPoint("BOTTOMRIGHT", -25, 10);

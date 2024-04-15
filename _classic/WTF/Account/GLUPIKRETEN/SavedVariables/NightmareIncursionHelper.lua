@@ -1,7 +1,8 @@
 
 NIHdatabase = {
 	["profileKeys"] = {
-		["Jutarnjedrvo - Lone Wolf"] = "Default",
+		["Dopesnare - Lone Wolf"] = "Default",
 		["Dopemend - Lone Wolf"] = "Default",
+		["Jutarnjedrvo - Lone Wolf"] = "Default",
 	},
 }
