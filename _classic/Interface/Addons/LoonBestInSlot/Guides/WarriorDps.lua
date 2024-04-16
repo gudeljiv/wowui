@@ -2,13 +2,14 @@ local spec1 = LBIS:RegisterSpec(LBIS.L["Warrior"], LBIS.L["Dps"], "1")
 local spec2 = LBIS:RegisterSpec(LBIS.L["Warrior"], LBIS.L["Dps"], "2")
 local spec3 = LBIS:RegisterSpec(LBIS.L["Warrior"], LBIS.L["Dps"], "3")
 
+LBIS:AddEnchant(spec3, "446451", LBIS.L["Shoulder"]) --Atal'ai Signet of Might
 LBIS:AddEnchant(spec3, "13882", LBIS.L["Back"]) --Enchant Cloak - Lesser Agility
-LBIS:AddEnchant(spec3, "13700", LBIS.L["Chest"]) --Enchant Chest - Lesser Stats
+LBIS:AddEnchant(spec3, "13941", LBIS.L["Chest"]) --Enchant Chest - Stats
 LBIS:AddEnchant(spec3, "13661", LBIS.L["Wrist"]) --Enchant Bracer - Strength
 LBIS:AddEnchant(spec3, "13887", LBIS.L["Hands"]) --Enchant Gloves - Strength
 LBIS:AddEnchant(spec3, "7867", LBIS.L["Feet"]) --Enchant Boots - Minor Agility
-LBIS:AddEnchant(spec3, "13693", LBIS.L["Main Hand"]) --Enchant Weapon - Striking
-LBIS:AddEnchant(spec3, "13695", LBIS.L["Two Hand"]) --Enchant 2H Weapon - Impact
+LBIS:AddEnchant(spec3, "23799", LBIS.L["Main Hand"]) --Enchant Weapon - Strength
+LBIS:AddEnchant(spec3, "27837", LBIS.L["Two Hand"]) --Enchant 2H Weapon - Agility
 
 LBIS:AddItem(spec1, "211505", LBIS.L["Head"], "BIS") --Twilight Avenger's Helm
 LBIS:AddItem(spec1, "1282", LBIS.L["Head"], "Alt") --Sparkmetal Coif
@@ -146,7 +147,6 @@ LBIS:AddItem(spec3, "220801", LBIS.L["Chest"], "Alt") --Stone Guard's Plate Armo
 LBIS:AddItem(spec3, "213313", LBIS.L["Chest"], "Alt") --Insulated Chestguard
 LBIS:AddItem(spec3, "221026", LBIS.L["Wrist"], "BIS") --Void-Powered Slayer's Vambraces
 LBIS:AddItem(spec3, "19580", LBIS.L["Wrist"], "BIS") --Berserker Bracers
-LBIS:AddItem(spec3, "4438", LBIS.L["Wrist"], "BIS") --Pugilist Bracers
 LBIS:AddItem(spec3, "19589", LBIS.L["Wrist"], "Alt") --Forest Stalker's Bracers
 LBIS:AddItem(spec3, "213317", LBIS.L["Wrist"], "Alt") --Experimental Aim Stabilizers
 LBIS:AddItem(spec3, "220540", LBIS.L["Hands"], "Alt") --Corruption Laden Handguards
@@ -190,6 +190,7 @@ LBIS:AddItem(spec3, "220173", LBIS.L["Two Hand"], "BIS") --Parasomnia
 LBIS:AddItem(spec3, "213416", LBIS.L["Two Hand"], "Alt") --Thermaplugg's Rocket Cleaver
 LBIS:AddItem(spec3, "9425", LBIS.L["Two Hand"], "Alt") --Pendulum of Doom
 LBIS:AddItem(spec3, "220571", LBIS.L["Ranged/Relic"], "BIS") --Stinging Longbow
+LBIS:AddItem(spec3, "13039", LBIS.L["Ranged/Relic"], "BIS") --Skull Splitting Crossbow
 LBIS:AddItem(spec3, "2100", LBIS.L["Ranged/Relic"], "Alt") --Precisely Calibrated Boomstick
 LBIS:AddItem(spec3, "13139", LBIS.L["Ranged/Relic"], "Alt") --Guttbuster
 LBIS:AddItem(spec3, "9426", LBIS.L["Ranged/Relic"], "Alt") --Monolithic Bow

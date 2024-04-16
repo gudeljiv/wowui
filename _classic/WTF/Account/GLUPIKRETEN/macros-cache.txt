@@ -17,20 +17,20 @@ VER 3 0000000000000015 "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use item:4602
+/use item:3927
 END
 VER 3 0000000000000011 "inspect" "136106"
 /inspect
 /run SortBags()
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12203
+#showtooltip item:12037
 /cast feed pet
-/use item:12203
+/use item:12037
 END
 VER 3 0000000000000018 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:1710
 END
 VER 3 000000000000002C "r aa" "134400"
 #showtooltip Legs Rune Ability

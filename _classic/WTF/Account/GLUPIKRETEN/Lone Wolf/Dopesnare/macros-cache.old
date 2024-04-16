@@ -4,17 +4,17 @@ VER 3 0000000001000016 "a-pet" "134400"
 /startattack
 /cast !Auto Shot
 END
-VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
-#showtooltip
-/startattack
-/use Sinister Strike
-END
 VER 3 0000000001000011 "attack" "132152"
 #showtooltip
 /petfollow
 /petpassive
 /petattack [@mouseover,harm][]
 /petdefensive
+END
+VER 3 0000000001000017 "attack" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Sinister Strike
 END
 VER 3 0000000001000014 "auto" "134400"
 #showtooltip
@@ -56,6 +56,7 @@ VER 3 0000000001000002 "mp" "134400"
 #showtooltip
 /cast [@pet,dead] Revive Pet
 /cast [nopet] Call Pet
+/cast [mod] Revive Pet 
 /cast Mend Pet
 END
 VER 3 0000000001000006 "multi" "134400"

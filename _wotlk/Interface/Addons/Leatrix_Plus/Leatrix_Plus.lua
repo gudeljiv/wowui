@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 3.0.188 (10th April 2024)
+-- 	Leatrix Plus 3.0.189 (16th April 2024)
 ----------------------------------------------------------------------
 
 --	01:Functns, 02:Locks, 03:Restart, 20:Live, 30:Isolated, 40:Player
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "3.0.188"
+	LeaPlusLC["AddonVer"] = "3.0.189"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -35,7 +35,7 @@
 			end)
 			return
 		end
-		if gametocversion and gametocversion == 30403 then -- 3.4.3
+		if gametocversion and gametocversion == 40400 then -- 4.4.0
 			LeaPlusLC.NewPatch = true
 		end
 	end
@@ -630,6 +630,7 @@
 		-- System
 		or	(LeaPlusLC["ViewPortEnable"]		~= LeaPlusDB["ViewPortEnable"])			-- Enable viewport
 		or	(LeaPlusLC["NoRestedEmotes"]		~= LeaPlusDB["NoRestedEmotes"])			-- Silence rested emotes
+		or	(LeaPlusLC["KeepAudioSynced"]		~= LeaPlusDB["KeepAudioSynced"])		-- Keep audio synced
 		or	(LeaPlusLC["NoBagAutomation"]		~= LeaPlusDB["NoBagAutomation"])		-- Disable bag automation
 		or	(LeaPlusLC["CharAddonList"]			~= LeaPlusDB["CharAddonList"])			-- Show character addons
 		or	(LeaPlusLC["FasterLooting"]			~= LeaPlusDB["FasterLooting"])			-- Faster auto loot
@@ -3207,6 +3208,12 @@
 			cButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
 			cButton:SetSize(32, 32)
 
+			-- For Cataclysm Classic, there is an expand button
+			if LeaPlusLC.NewPatch then
+				cButton:Hide()
+				cButton = CharacterFrameExpandButton
+			end
+
 			-- Create durability tables
 			local Slots = {"HeadSlot", "ShoulderSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot", "LegsSlot", "FeetSlot", "MainHandSlot", "SecondaryHandSlot", "RangedSlot"}
 			local SlotsFriendly = {INVTYPE_HEAD, INVTYPE_SHOULDER, INVTYPE_CHEST, INVTYPE_WRIST, INVTYPE_HAND, INVTYPE_WAIST, INVTYPE_LEGS, INVTYPE_FEET, INVTYPE_WEAPONMAINHAND, INVTYPE_WEAPONOFFHAND, INVTYPE_RANGED}
@@ -3463,6 +3470,22 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		-- Keep audio synced
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["KeepAudioSynced"] == "On" then
+
+			SetCVar("Sound_OutputDriverIndex", "0")
+			local event = CreateFrame("FRAME")
+			event:RegisterEvent("VOICE_CHAT_OUTPUT_DEVICES_UPDATED")
+			event:SetScript("OnEvent", function()
+				SetCVar("Sound_OutputDriverIndex", "0")
+				Sound_GameSystem_RestartSoundSystem()
+			end)
+
+		end
 
 		----------------------------------------------------------------------
 		-- Mute custom sounds (no reload required)
@@ -5989,6 +6012,9 @@
 							local timeTaken = timeEnd - timeStart
 							debugString = gsub(debugString, "TimeTakenPlaceHolder", string.format("%0.0f", timeTaken))
 							local flightMsg = L["Flight details"] .. " (" .. L["WRATH"].. "): " .. nodeName .. " (" .. currentNode .. ") " .. L["to"] .. " " .. barName .. " (" .. destination .. ") (" .. faction .. ") " .. L["took"] .. " " .. string.format("%0.0f", timeTaken) .. " " .. L["seconds"] .. " (" .. numHops .. " " .. L["hop"] ..").|n|n" .. debugString .. "|n|n"
+							if LeaPlusLC.NewPatch then
+								flightMsg = L["Flight details"] .. " (" .. L["CATA"].. "): " .. nodeName .. " (" .. currentNode .. ") " .. L["to"] .. " " .. barName .. " (" .. destination .. ") (" .. faction .. ") " .. L["took"] .. " " .. string.format("%0.0f", timeTaken) .. " " .. L["seconds"] .. " (" .. numHops .. " " .. L["hop"] ..").|n|n" .. debugString .. "|n|n"
+							end
 							if destination and data[faction] and data[faction][continent] and data[faction][continent][routeString] then
 								local savedDuration = data[faction][continent][routeString]
 								if savedDuration then
@@ -6810,8 +6836,14 @@
 				if LeaPlusLC["VanityAltLayout"] == "On" then
 					-- Alternative layout
 					LeaPlusCB["ShowHelm"].f:SetText(L["H"])
-					LeaPlusCB["ShowHelm"]:ClearAllPoints()
-					LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 275, -224)
+
+					if LeaPlusLC.NewPatch then
+						LeaPlusCB["ShowHelm"]:ClearAllPoints()
+						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 264, -348)
+					else
+						LeaPlusCB["ShowHelm"]:ClearAllPoints()
+						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 275, -224)
+					end
 					LeaPlusCB["ShowHelm"]:SetHitRectInsets(-LeaPlusCB["ShowHelm"].f:GetStringWidth() + 4, 3, 0, 0)
 					LeaPlusCB["ShowHelm"].f:ClearAllPoints()
 					LeaPlusCB["ShowHelm"].f:SetPoint("RIGHT", LeaPlusCB["ShowHelm"], "LEFT", 4, 0)
@@ -6824,16 +6856,28 @@
 					LeaPlusCB["ShowCloak"]:SetHitRectInsets(-LeaPlusCB["ShowCloak"].f:GetStringWidth() + 4, 3, 0, 0)
 				else
 					-- Default layout
-					LeaPlusCB["ShowHelm"].f:SetText(L["Helm"])
-					LeaPlusCB["ShowHelm"]:ClearAllPoints()
-					LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 65, -246)
+					if LeaPlusLC.NewPatch then
+						LeaPlusCB["ShowHelm"].f:SetText(L["H"])
+						LeaPlusCB["ShowHelm"]:ClearAllPoints()
+						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 52, -366)
+					else
+						LeaPlusCB["ShowHelm"].f:SetText(L["Helm"])
+						LeaPlusCB["ShowHelm"]:ClearAllPoints()
+						LeaPlusCB["ShowHelm"]:SetPoint("TOPLEFT", 65, -246)
+					end
 					LeaPlusCB["ShowHelm"]:SetHitRectInsets(3, -LeaPlusCB["ShowHelm"].f:GetStringWidth(), 0, 0)
 					LeaPlusCB["ShowHelm"].f:ClearAllPoints()
 					LeaPlusCB["ShowHelm"].f:SetPoint("LEFT", LeaPlusCB["ShowHelm"], "RIGHT", 0, 0)
 
-					LeaPlusCB["ShowCloak"].f:SetText(L["Cloak"])
-					LeaPlusCB["ShowCloak"]:ClearAllPoints()
-					LeaPlusCB["ShowCloak"]:SetPoint("TOPLEFT", 275, -246)
+					if LeaPlusLC.NewPatch then
+						LeaPlusCB["ShowCloak"].f:SetText(L["C"])
+						LeaPlusCB["ShowCloak"]:ClearAllPoints()
+						LeaPlusCB["ShowCloak"]:SetPoint("LEFT", LeaPlusCB["ShowHelm"].f, "RIGHT", 10, 0)
+					else
+						LeaPlusCB["ShowCloak"].f:SetText(L["Cloak"])
+						LeaPlusCB["ShowCloak"]:ClearAllPoints()
+						LeaPlusCB["ShowCloak"]:SetPoint("TOPLEFT", 275, -246)
+					end
 					LeaPlusCB["ShowCloak"]:SetHitRectInsets(-LeaPlusCB["ShowCloak"].f:GetStringWidth(), 3, 0, 0)
 					LeaPlusCB["ShowCloak"].f:ClearAllPoints()
 					LeaPlusCB["ShowCloak"].f:SetPoint("RIGHT", LeaPlusCB["ShowCloak"], "LEFT", 0, 0)
@@ -6929,6 +6973,30 @@
 			LeaPlusLC:MakeCB(DressupPanel, "DressupItemButtons", "Show item buttons", 16, -92, false, "If checked, item buttons will be shown in the dressing room.  You can click the item buttons to remove individual items from the model.")
 			LeaPlusLC:MakeCB(DressupPanel, "DressupAnimControl", "Show animation slider", 16, -112, false, "If checked, an animation slider will be shown in the dressing room.")
 
+			LeaPlusLC:MakeTx(DressupPanel, "Zoom speed", 356, -72)
+			LeaPlusLC:MakeSL(DressupPanel, "DressupFasterZoom", "Drag to set the character model zoom speed.", 1, 10, 1, 356, -92, "%.0f")
+
+			-- Refresh zoom speed slider when changed
+			LeaPlusCB["DressupFasterZoom"]:HookScript("OnValueChanged", function()
+				LeaPlusCB["DressupFasterZoom"].f:SetFormattedText("%.0f%%", LeaPlusLC["DressupFasterZoom"] * 100)
+			end)
+
+			-- Hide zoom slider control if not Cataclysm Classic
+			if not LeaPlusLC.NewPatch then
+				LeaPlusCB["DressupFasterZoom"]:Hide()
+			end
+
+			-- Set zoom speed when character frame model is zoomed
+			if LeaPlusLC.NewPatch then
+				CharacterModelScene:SetScript("OnMouseWheel", function(self, delta)
+					for i = 1, LeaPlusLC["DressupFasterZoom"] do
+						if CharacterModelScene.activeCamera then
+							CharacterModelScene.activeCamera:OnMouseWheel(delta)
+						end
+					end
+				end)
+			end
+
 			-- Help button hidden
 			DressupPanel.h:Hide()
 
@@ -6941,6 +7009,9 @@
 			-- Reset button handler
 			DressupPanel.r:SetScript("OnClick", function()
 
+				-- Reset controls
+				LeaPlusLC["DressupFasterZoom"] = 3
+
 				-- Refresh configuration panel
 				DressupPanel:Hide(); DressupPanel:Show()
 
@@ -6950,6 +7021,7 @@
 			LeaPlusCB["EnhanceDressupBtn"]:SetScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
+					LeaPlusLC["DressupFasterZoom"] = 3
 				else
 					DressupPanel:Show()
 					LeaPlusLC:HideFrames()
@@ -7288,128 +7360,150 @@
 			----------------------------------------------------------------------
 
 			-- Hide model rotation controls
-			CharacterModelFrameRotateLeftButton:HookScript("OnShow", CharacterModelFrameRotateLeftButton.Hide)
-			CharacterModelFrameRotateRightButton:HookScript("OnShow", CharacterModelFrameRotateRightButton.Hide)
-			DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
-			DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
-			SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
+			if LeaPlusLC.NewPatch then
+				-- Hide character frame controls
+				CharacterModelScene.ControlFrame:HookScript("OnShow", function()
+					CharacterModelScene.ControlFrame:Hide()
+				end)
+				-- Hide controls for dressing room
+				DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
+				DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
+				SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
+			else
+				CharacterModelFrameRotateLeftButton:HookScript("OnShow", CharacterModelFrameRotateLeftButton.Hide)
+				CharacterModelFrameRotateRightButton:HookScript("OnShow", CharacterModelFrameRotateRightButton.Hide)
+				DressUpModelFrameRotateLeftButton:HookScript("OnShow", DressUpModelFrameRotateLeftButton.Hide)
+				DressUpModelFrameRotateRightButton:HookScript("OnShow", DressUpModelFrameRotateRightButton.Hide)
+				SideDressUpModelControlFrame:HookScript("OnShow", SideDressUpModelControlFrame.Hide)
+			end
 
 			----------------------------------------------------------------------
 			-- Hide dressup stats button
 			----------------------------------------------------------------------
 
-			local function ToggleStats(startup)
+			if LeaPlusLC.NewPatch then
+			else
 
-				-- ElvUI_WrathArmory: Make character model full size
-				if LeaPlusLC.ElvUI then
-					local E = LeaPlusLC.ElvUI:GetModule("ElvUI_WrathArmory", true)
-					if E then
+				local function ToggleStats(startup)
+
+					-- ElvUI_WrathArmory: Make character model full size
+					if LeaPlusLC.ElvUI then
+						local E = LeaPlusLC.ElvUI:GetModule("ElvUI_WrathArmory", true)
+						if E then
+							CharacterModelFrame:ClearAllPoints()
+							CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
+							CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
+							return
+						end
+					end
+
+					-- Toggle dressup stats
+					if LeaPlusLC["HideDressupStats"] == "On" then
+						CharacterResistanceFrame:Hide()
+						if CSC_HideStatsPanel then
+							-- CharacterStatsWRATH is installed
+							RunScript('CSC_HideStatsPanel()')
+							if startup then
+								C_Timer.After(0.1, function()
+									CharacterModelFrame:ClearAllPoints()
+									CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
+									CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
+								end)
+							end
+						else
+							-- CharacterStatsWRATH is not installed
+							CharacterAttributesFrame:Hide()
+						end
 						CharacterModelFrame:ClearAllPoints()
 						CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
 						CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-						return
+						if LeaPlusLC["ShowVanityControls"] == "On" then
+							LeaPlusCB["ShowHelm"]:Hide()
+							LeaPlusCB["ShowCloak"]:Hide()
+						end
+
+					else
+
+						CharacterResistanceFrame:Show()
+						if CSC_ShowStatsPanel then
+							-- CharacterStatsWRATH is installed
+							RunScript('CSC_ShowStatsPanel()')
+							if startup then
+								C_Timer.After(0.1, function()
+									CharacterModelFrame:ClearAllPoints()
+									CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
+									CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
+								end)
+							end
+						else
+							-- CharacterStatsWRATH is not installed
+							CharacterAttributesFrame:Show()
+						end
+						CharacterModelFrame:ClearAllPoints()
+						CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
+						CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
+						if LeaPlusLC["ShowVanityControls"] == "On" then
+							LeaPlusCB["ShowHelm"]:Show()
+							LeaPlusCB["ShowCloak"]:Show()
+						end
 					end
+
 				end
 
-				-- Toggle dressup stats
-				if LeaPlusLC["HideDressupStats"] == "On" then
-					CharacterResistanceFrame:Hide()
-					if CSC_HideStatsPanel then
-						-- CharacterStatsWRATH is installed
-						RunScript('CSC_HideStatsPanel()')
-						if startup then
-							C_Timer.After(0.1, function()
-								CharacterModelFrame:ClearAllPoints()
-								CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-								CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-							end)
-						end
-					else
-						-- CharacterStatsWRATH is not installed
-						CharacterAttributesFrame:Hide()
+				-- Toggle stats with middle mouse button
+				CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
+					if btn == "MiddleButton" then
+						if LeaPlusLC["HideDressupStats"] == "On" then LeaPlusLC["HideDressupStats"] = "Off" else LeaPlusLC["HideDressupStats"] = "On" end
+						ToggleStats()
 					end
-					CharacterModelFrame:ClearAllPoints()
-					CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-					CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 134)
-					if LeaPlusLC["ShowVanityControls"] == "On" then
-						LeaPlusCB["ShowHelm"]:Hide()
-						LeaPlusCB["ShowCloak"]:Hide()
-					end
+				end)
+				ToggleStats(true)
 
-				else
-
-					CharacterResistanceFrame:Show()
-					if CSC_ShowStatsPanel then
-						-- CharacterStatsWRATH is installed
-						RunScript('CSC_ShowStatsPanel()')
-						if startup then
-							C_Timer.After(0.1, function()
-								CharacterModelFrame:ClearAllPoints()
-								CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-								CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
-							end)
-						end
-					else
-						-- CharacterStatsWRATH is not installed
-						CharacterAttributesFrame:Show()
-					end
-					CharacterModelFrame:ClearAllPoints()
-					CharacterModelFrame:SetPoint("TOPLEFT", PaperDollFrame, 66, -76)
-					CharacterModelFrame:SetPoint("BOTTOMRIGHT", PaperDollFrame, -86, 243)
-					if LeaPlusLC["ShowVanityControls"] == "On" then
-						LeaPlusCB["ShowHelm"]:Show()
-						LeaPlusCB["ShowCloak"]:Show()
-					end
-				end
-
-			end
-
-			-- Toggle stats with middle mouse button
-			CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
-				if btn == "MiddleButton" then
+				-- Create toggle stats button
+				local toggleButton = CreateFrame("Button", nil, PaperDollFrame)
+				toggleButton:SetSize(36, 36)
+				toggleButton:SetPoint("TOPLEFT", PaperDollFrame, "TOPLEFT", 64, -45)
+				toggleButton:SetNormalTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
+				toggleButton:SetHighlightTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
+				toggleButton:SetPushedTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
+				toggleButton:SetScript("OnEnter", function()
+					GameTooltip:SetOwner(toggleButton, "ANCHOR_NONE")
+					GameTooltip:SetPoint("BOTTOMLEFT", toggleButton, "BOTTOMRIGHT", 0, 0)
+					GameTooltip:SetText(L["Toggle character stats"], nil, nil, nil, nil, true)
+					GameTooltip:Show()
+				end)
+				toggleButton:SetScript("OnLeave", GameTooltip_Hide)
+				toggleButton:SetScript("OnClick", function()
 					if LeaPlusLC["HideDressupStats"] == "On" then LeaPlusLC["HideDressupStats"] = "Off" else LeaPlusLC["HideDressupStats"] = "On" end
 					ToggleStats()
-				end
-			end)
-			ToggleStats(true)
+				end)
 
-			-- Create toggle stats button
-			local toggleButton = CreateFrame("Button", nil, PaperDollFrame)
-			toggleButton:SetSize(36, 36)
-			toggleButton:SetPoint("TOPLEFT", PaperDollFrame, "TOPLEFT", 64, -45)
-			toggleButton:SetNormalTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-			toggleButton:SetHighlightTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-			toggleButton:SetPushedTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-RotationRight-Big-Up")
-			toggleButton:SetScript("OnEnter", function()
-				GameTooltip:SetOwner(toggleButton, "ANCHOR_NONE")
-				GameTooltip:SetPoint("BOTTOMLEFT", toggleButton, "BOTTOMRIGHT", 0, 0)
-				GameTooltip:SetText(L["Toggle character stats"], nil, nil, nil, nil, true)
-				GameTooltip:Show()
-			end)
-			toggleButton:SetScript("OnLeave", GameTooltip_Hide)
-			toggleButton:SetScript("OnClick", function()
-				if LeaPlusLC["HideDressupStats"] == "On" then LeaPlusLC["HideDressupStats"] = "Off" else LeaPlusLC["HideDressupStats"] = "On" end
-				ToggleStats()
-			end)
+			end
 
 			----------------------------------------------------------------------
 			-- Enable zooming and panning
 			----------------------------------------------------------------------
 
 			-- Enable zooming for character frame and dressup frame
-			CharacterModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
+			if LeaPlusLC.NewPatch then
+			else
+				CharacterModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
+			end
 			DressUpModelFrame:HookScript("OnMouseWheel", Model_OnMouseWheel)
 
 			-- Enable panning for character frame
-			CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
-				if btn == "RightButton" then
-					Model_StartPanning(self)
-				end
-			end)
+			if LeaPlusLC.NewPatch then
+			else
+				CharacterModelFrame:HookScript("OnMouseDown", function(self, btn)
+					if btn == "RightButton" then
+						Model_StartPanning(self)
+					end
+				end)
 
-			CharacterModelFrame:HookScript("OnMouseUp", function(self, btn)
-				Model_StopPanning(self)
-			end)
+				CharacterModelFrame:HookScript("OnMouseUp", function(self, btn)
+					Model_StopPanning(self)
+				end)
+			end
 
 			-- Enable panning for dressup frame
 			DressUpModelFrame:HookScript("OnMouseDown", function(self, btn)
@@ -9018,8 +9112,12 @@
 			end
 
 			-- Create slider control
-			LeaPlusLC["LeaPlusMaxVol"] = tonumber(GetCVar("Sound_MasterVolume"));
-			LeaPlusLC:MakeSL(CharacterModelFrame, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
+			LeaPlusLC["LeaPlusMaxVol"] = tonumber(GetCVar("Sound_MasterVolume"))
+			if LeaPlusLC.NewPatch then
+				LeaPlusLC:MakeSL(CharacterModelScene, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
+			else
+				LeaPlusLC:MakeSL(CharacterModelFrame, "LeaPlusMaxVol", "",	0, 1, 0.05, -42, -328, "%.2f")
+			end
 			LeaPlusCB["LeaPlusMaxVol"]:SetWidth(64)
 			LeaPlusCB["LeaPlusMaxVol"].f:ClearAllPoints()
 			LeaPlusCB["LeaPlusMaxVol"].f:SetPoint("LEFT", LeaPlusCB["LeaPlusMaxVol"], "RIGHT", 6, 0)
@@ -11719,7 +11817,7 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
-			local expTitle = LeaPlusLC:MakeTx(interPanel, "Wrath of the Lich King Classic", 0, 0)
+			local expTitle = LeaPlusLC:MakeTx(interPanel, "Wrath Classic & Cataclysm Classic", 0, 0)
 			expTitle:SetFont(expTitle:GetFont(), 32)
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
@@ -12965,6 +13063,7 @@
 				LeaPlusLC:LoadVarChk("EnhanceDressup", "Off")				-- Enhance dressup
 				LeaPlusLC:LoadVarChk("DressupItemButtons", "On")			-- Dressup item buttons
 				LeaPlusLC:LoadVarChk("DressupAnimControl", "On")			-- Dressup animation control
+				LeaPlusLC:LoadVarNum("DressupFasterZoom", 3, 1, 10)			-- Dressup zoom speed
 				LeaPlusLC:LoadVarChk("HideDressupStats", "Off")				-- Hide dressup stats
 				LeaPlusLC:LoadVarChk("EnhanceQuestLog", "Off")				-- Enhance quest log
 				LeaPlusLC:LoadVarChk("EnhanceQuestHeaders", "On")			-- Enhance quest log toggle headers
@@ -13077,6 +13176,7 @@
 				LeaPlusLC:LoadVarNum("ViewPortAlpha", 0, 0, 0.9)			-- Border alpha
 
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
+				LeaPlusLC:LoadVarChk("KeepAudioSynced", "Off")				-- Keep audio synced
 				LeaPlusLC:LoadVarChk("MuteGameSounds", "Off")				-- Mute game sounds
 				LeaPlusLC:LoadVarChk("MuteCustomSounds", "Off")				-- Mute custom sounds
 				LeaPlusLC:LoadVarStr("MuteCustomList", "")					-- Mute custom sounds list
@@ -13375,6 +13475,7 @@
 			LeaPlusDB["EnhanceDressup"]			= LeaPlusLC["EnhanceDressup"]
 			LeaPlusDB["DressupItemButtons"]		= LeaPlusLC["DressupItemButtons"]
 			LeaPlusDB["DressupAnimControl"]		= LeaPlusLC["DressupAnimControl"]
+			LeaPlusDB["DressupFasterZoom"]		= LeaPlusLC["DressupFasterZoom"]
 			LeaPlusDB["HideDressupStats"]		= LeaPlusLC["HideDressupStats"]
 			LeaPlusDB["EnhanceQuestLog"]		= LeaPlusLC["EnhanceQuestLog"]
 			LeaPlusDB["EnhanceQuestHeaders"]	= LeaPlusLC["EnhanceQuestHeaders"]
@@ -13488,6 +13589,7 @@
 			LeaPlusDB["ViewPortAlpha"]			= LeaPlusLC["ViewPortAlpha"]
 
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
+			LeaPlusDB["KeepAudioSynced"]		= LeaPlusLC["KeepAudioSynced"]
 			LeaPlusDB["MuteGameSounds"]			= LeaPlusLC["MuteGameSounds"]
 			LeaPlusDB["MuteCustomSounds"]		= LeaPlusLC["MuteCustomSounds"]
 			LeaPlusDB["MuteCustomList"]			= LeaPlusLC["MuteCustomList"]
@@ -15552,6 +15654,7 @@
 				LeaPlusDB["TipCursorX"] = 0						-- X offset
 				LeaPlusDB["TipCursorY"] = 0						-- Y offset
 				LeaPlusDB["EnhanceDressup"] = "On"				-- Enhance dressup
+				LeaPlusDB["DressupFasterZoom"] = 3				-- Dressup zoom speed
 				LeaPlusDB["HideDressupStats"] = "On"			-- Hide dressup stats
 				LeaPlusDB["EnhanceQuestLog"] = "On"				-- Enhance quest log
 				LeaPlusDB["EnhanceQuestHeaders"] = "On"			-- Enhance quest log toggle headers
@@ -15655,6 +15758,7 @@
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
+				LeaPlusDB["KeepAudioSynced"] = "On"				-- Keep audio synced
 				LeaPlusDB["MuteGameSounds"] = "On"				-- Mute game sounds
 				LeaPlusDB["MuteCustomSounds"] = "On"			-- Mute custom sounds
 				LeaPlusDB["MuteCustomList"] = ""				-- Mute custom sounds list
@@ -16046,8 +16150,9 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -152, 	false,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -172, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.|n|nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -192, 	true,	"If checked, emote sounds will be silenced while your character is resting or at the Grim Guzzler.|n|nEmote sounds will be enabled at all other times.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -212, 	false,	"If checked, you will be able to mute a selection of game sounds.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -232, 	false,	"If checked, you will be able to mute your own choice of sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "KeepAudioSynced"			, 	"Keep audio synced"				,	146, -212, 	true,	"If checked, when you change the audio output device in your operating system, the game audio output device will change automatically.|n|nFor this to work, the game audio output device will be set to system default.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -232, 	false,	"If checked, you will be able to mute a selection of game sounds.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteCustomSounds"			, 	"Mute custom sounds"			,	146, -252, 	false,	"If checked, you will be able to mute your own choice of sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant or bank.")

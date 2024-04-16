@@ -1691,6 +1691,7 @@
 				["0.65:0.50:0.54:0.57:0.23:0.50:0.38:0.32:0.58:0.27"] = 424, -- Thrallmar, Falcon Watch, Zabra'jin, Thunderlord Stronghold, Area 52
 				["0.65:0.50:0.44:0.67:0.44:0.51:0.49:0.36:0.58:0.27"] = 326, -- Thrallmar, Shattrath, Swamprat Post, Mok'Nathal Village, Area 52
 				["0.65:0.50:0.44:0.67:0.29:0.62"] = 202, -- Thrallmar, Shattrath, Garadar
+				["0.65:0.50:0.44:0.67:0.44:0.51"] = 200, -- Thrallmar, Shattrath, Swamprat Post
 
 				-- Horde: Thunderlord Stronghold (Blade's Edge Mountains)
 				["0.38:0.32:0.44:0.51:0.44:0.67:0.51:0.73:0.66:0.77"] = 335, -- Thunderlord Stronghold, Swamprat Post, Shattrath, Stonebreaker Hold, Shadowmoon Village
@@ -2539,6 +2540,7 @@
 				["0.45:0.51:0.54:0.52:0.52:0.38:0.62:0.36"] = 189, -- Agmar's Hammer, Wyrmrest Temple, Dalaran, K3
 				["0.45:0.51:0.49:0.58:0.74:0.71:0.74:0.62:0.84:0.59:0.95:0.63"] = 435, -- Agmar's Hammer, Moa'ki, Kamagua, Apothecary Camp, Camp Winterhoof, Vengeance Landing
 				["0.45:0.51:0.48:0.44:0.64:0.42:0.72:0.40:0.84:0.51"] = 333, -- Молот Агмара, Стоянка отряда Кор'крона, Черная застава, Серебряная застава, Лагерь Уанква
+				["0.45:0.51:0.54:0.52:0.52:0.38:0.60:0.40"] = 190, -- Agmar's Hammer, Wyrmrest Temple, Dalaran, Sunreaver's Command
 
 				-- Horde: Dragonblight: Kor'koron Vanguard
 				["0.48:0.44:0.52:0.38"] = 56, -- Kor'koron Vanguard, Dalaran
