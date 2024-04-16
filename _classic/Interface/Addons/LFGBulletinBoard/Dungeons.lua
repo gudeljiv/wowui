@@ -113,7 +113,7 @@ function GBB.GetDungeonNames()
 		["BAD"] =	"DEBUG BAD WORDS - REJECTED",
 		["BREW"] =  "Brewfest - Coren Direbrew",
 		["HOLLOW"] =  "Hallow's End - Headless Horseman",
-    ["TRAVEL"] = "Travel services - Summons/Portals",
+		["TRAVEL"] = "Travel services - Summons/Portals",
 		}
 
 	local dungeonNamesLocales={
