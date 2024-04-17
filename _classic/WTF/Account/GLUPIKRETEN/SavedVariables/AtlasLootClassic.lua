@@ -518,14 +518,14 @@ AtlasLootClassicDB = {
 			[32993] = "honor:3800",
 			[28443] = "honor:3800",
 			[28381] = "honor:4750",
-			[35152] = "honor:7600",
+			[41290] = "EmblemOfHeroism:30",
 			[34576] = "honor:3990",
 			[42025] = "honor:16590",
 			[28445] = "honor:4750",
 			[28130] = "honor:4750",
 			[35024] = "honor:9500",
 			[35088] = "honor:9500",
-			[40267] = "EmblemOfValor:25",
+			[34129] = "honor:16650",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
 			[40714] = "EmblemOfHeroism:15",
@@ -545,8 +545,8 @@ AtlasLootClassicDB = {
 			[44231] = "EmblemOfHeroism:200",
 			[34033] = "honor:4275",
 			[28813] = "honor:3800",
-			[41290] = "EmblemOfHeroism:30",
-			[34129] = "honor:16650",
+			[35152] = "honor:7600",
+			[40267] = "EmblemOfValor:25",
 			[28861] = "honor:3800",
 			[40723] = "EmblemOfValor:25",
 			[31962] = "honor:6650",
@@ -1268,19 +1268,19 @@ AtlasLootClassicDB = {
 			},
 			["GUI"] = {
 				["classFilter"] = true,
+				["selected"] = {
+					nil, -- [1]
+					"Maraudon", -- [2]
+					9, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 				["point"] = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					261.9998474121094, -- [4]
-					68, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"Zul'Farrak", -- [2]
-					12, -- [3]
-					1, -- [4]
-					0, -- [5]
+					155.9683074951172, -- [4]
+					71.1745376586914, -- [5]
 				},
 			},
 		},
@@ -1432,10 +1432,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopemend - Lone Wolf"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1444,6 +1440,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Konac - Dreadnaught"] = {
@@ -1520,6 +1520,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1535,10 +1539,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Pitchwise - Golemagg"] = {

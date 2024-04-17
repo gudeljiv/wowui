@@ -617,7 +617,7 @@ AtlasLootClassicDB = {
 			[34033] = "honor:4275",
 			[35088] = "honor:9500",
 			[34577] = "honor:3990",
-			[34129] = "honor:16650",
+			[40267] = "EmblemOfValor:25",
 			[28861] = "honor:3800",
 			[45838] = "EmblemOfConquest:28",
 			[31962] = "honor:6650",
@@ -888,14 +888,14 @@ AtlasLootClassicDB = {
 			[41770] = "EmblemOfHeroism:30",
 			[40691] = "EmblemOfHeroism:40",
 			[40723] = "EmblemOfValor:25",
-			[41290] = "EmblemOfHeroism:30",
-			[40267] = "EmblemOfValor:25",
+			[35152] = "honor:7600",
+			[34129] = "honor:16650",
 			[40819] = "EmblemOfValor:45",
 			[33690] = "honor:6840",
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
 			[34576] = "honor:3990",
-			[35152] = "honor:7600",
+			[41290] = "EmblemOfHeroism:30",
 			[28443] = "honor:3800",
 			[42066] = "honor:33180",
 			[32814] = "honor:3990",
@@ -1266,8 +1266,8 @@ AtlasLootClassicDB = {
 				["classFilter"] = true,
 				["selected"] = {
 					nil, -- [1]
-					"Zul'Farrak", -- [2]
-					12, -- [3]
+					"Maraudon", -- [2]
+					9, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
@@ -1275,8 +1275,8 @@ AtlasLootClassicDB = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					261.9998474121094, -- [4]
-					68, -- [5]
+					155.9683074951172, -- [4]
+					71.1745376586914, -- [5]
 				},
 			},
 			["minimap"] = {
@@ -1432,6 +1432,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopemend - Lone Wolf"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1440,10 +1444,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Konac - Dreadnaught"] = {
@@ -1507,10 +1507,6 @@ AtlasLootClassicDB = {
 		["Whatevs - Stonespine"] = {
 		},
 		["Jutarnjedrvo - Lone Wolf"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -1526,6 +1522,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Pitchwise - Golemagg"] = {

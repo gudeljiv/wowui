@@ -304,32 +304,62 @@ xInRange = xVermin.InRange
 xVermin.Enraged = function(unit)
 	unit = unit and unit or 'player'
 
-	local enraged = 0
+	local count = 0
 	for i = 1, MAX_TARGET_BUFFS + MAX_TARGET_DEBUFFS do
-		local name, _, _, debuffType = UnitAura(unit, i)
-		if name and debuffType == '' then
-			enraged = enraged + 1
+		local name, _, _, type = UnitAura(unit, i)
+		if name and type == '' then
+			count = count + 1
 		end
 	end
 
-	return enraged > 0 and true or false
+	return count > 0 and true or false
 end
 xEnraged = xVermin.Enraged
 
 xVermin.Magic = function(unit)
 	unit = unit and unit or 'player'
 
-	local magic = 0
+	local count = 0
 	for i = 1, MAX_TARGET_BUFFS do
-		local name, _, _, buffType = UnitBuff(unit, i)
-		if name and buffType == 'Magic' then
-			magic = magic + 1
+		local name, _, _, type = UnitBuff(unit, i)
+		if name and type == 'Magic' then
+			count = count + 1
 		end
 	end
 
-	return magic > 0 and true or false
+	return count > 0 and true or false
 end
 xMagic = xVermin.Magic
+
+xVermin.Poison = function(unit)
+	unit = unit and unit or 'player'
+
+	local count = 0
+	for i = 1, MAX_TARGET_DEBUFFS do
+		local name, _, _, type = UnitDebuff(unit, i)
+		if name and type == 'Poison' then
+			count = count + 1
+		end
+	end
+
+	return count > 0 and true or false
+end
+xPoison = xVermin.Poison
+
+xVermin.Disease = function(unit)
+	unit = unit and unit or 'player'
+
+	local count = 0
+	for i = 1, MAX_TARGET_DEBUFFS do
+		local name, _, _, type = UnitDebuff(unit, i)
+		if name and type == 'Disease' then
+			count = count + 1
+		end
+	end
+
+	return count > 0 and true or false
+end
+xDisease = xVermin.Disease
 
 xVermin.Immune = function(spellName, name)
 

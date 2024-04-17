@@ -127,7 +127,7 @@ AdiBagsDB = {
 						[12365] = "Trade Goods#Ores",
 						[207731] = "Quest#Quest",
 						[6450] = "Trade Goods#Bandages",
-						[17057] = "Junk#Junk",
+						[17057] = "Reagent#Reagent",
 						[211293] = "Quest#Quest",
 						[3013] = "Consumable#Scrolls",
 						[46378] = "Consumable#Potions",
@@ -191,7 +191,7 @@ AdiBagsDB = {
 						[11175] = "Trade Goods#Enchanting",
 						[16202] = "Trade Goods#Enchanting",
 						[8545] = "Trade Goods#Bandages",
-						[17058] = "Junk#Junk",
+						[17058] = "Reagent#Reagent",
 						[34222] = "Quest#Quest",
 						[46376] = "Consumable#Potions",
 						[954] = "Consumable#Scrolls",
@@ -499,13 +499,11 @@ AdiBagsDB = {
 					["include"] = {
 						[22526] = true,
 						[4337] = true,
-						[5134] = true,
 						[6530] = true,
 						[19441] = true,
+						[5134] = true,
 						[7972] = true,
-						[17057] = true,
 						[22525] = true,
-						[17058] = true,
 						[10285] = true,
 					},
 					["exclude"] = {
@@ -522,16 +520,18 @@ AdiBagsDB = {
 						[34222] = true,
 						[29590] = true,
 						[17056] = true,
+						[17057] = true,
+						[17058] = true,
 						[24558] = true,
 						[207732] = true,
 						[9259] = true,
+						[209874] = true,
 						[209819] = true,
-						[213566] = true,
 						[213568] = true,
 						[24504] = true,
 						[17008] = true,
 						[207733] = true,
-						[213563] = true,
+						[213566] = true,
 						[28478] = true,
 						[211293] = true,
 						[34223] = true,
@@ -543,8 +543,8 @@ AdiBagsDB = {
 						[207731] = true,
 						[213562] = true,
 						[34225] = true,
-						[209874] = true,
 						[213567] = true,
+						[213563] = true,
 					},
 				},
 			},
@@ -633,22 +633,6 @@ AdiBagsDB = {
 				["ItemLevel"] = false,
 				["Masque"] = false,
 			},
-			["positions"] = {
-				["anchor"] = {
-					["xOffset"] = -177.833374023438,
-					["yOffset"] = 386.666717529297,
-				},
-				["Backpack"] = {
-					["xOffset"] = -403.3033447265625,
-					["point"] = "TOPRIGHT",
-					["yOffset"] = -399.2545166015625,
-				},
-				["Bank"] = {
-					["xOffset"] = 845.9966430664062,
-					["yOffset"] = -319.345947265625,
-				},
-			},
-			["dimJunk"] = false,
 			["theme"] = {
 				["reagentBank"] = {
 					["sectionFont"] = {
@@ -767,8 +751,24 @@ AdiBagsDB = {
 					["insets"] = 2,
 				},
 			},
-			["filterPriorities"] = {
-				["Quest"] = 100,
+			["dimJunk"] = false,
+			["positions"] = {
+				["anchor"] = {
+					["xOffset"] = -177.833374023438,
+					["yOffset"] = 386.666717529297,
+				},
+				["Backpack"] = {
+					["xOffset"] = -403.3033447265625,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -399.2545166015625,
+				},
+				["Bank"] = {
+					["xOffset"] = 845.9966430664062,
+					["yOffset"] = -319.345947265625,
+				},
+			},
+			["filters"] = {
+				["NewItem"] = false,
 			},
 			["experiments"] = {
 				["Bag Lag Fix"] = {
@@ -779,8 +779,8 @@ AdiBagsDB = {
 				},
 			},
 			["rightClickConfig"] = false,
-			["filters"] = {
-				["NewItem"] = false,
+			["filterPriorities"] = {
+				["Quest"] = 100,
 			},
 			["sortingOrder"] = "byQualityAndLevel",
 			["deprecationPhase"] = 2,
