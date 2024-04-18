@@ -433,3 +433,75 @@ f:SetScript(
 
 
 
+-- local lastHitTimes = {}
+-- local mobGUIDs = {}
+
+-- local function EventHandler(_, event, ...)
+-- 	print("event", event)
+--     if event == "COMBAT_LOG_EVENT_UNFILTERED" then
+--         local timestamp, eventType, _, sourceGUID, _, _, _, _, _, _, _, spellID = ...
+--         if eventType == "SPELL_DAMAGE" or eventType == "SPELL_PERIODIC_DAMAGE" then
+--             if sourceGUID == UnitGUID("player") or (UnitExists("pet") and sourceGUID == UnitGUID("pet")) then
+--                 local spellName = GetSpellInfo(spellID)
+--                 if spellName then
+--                     for _, mobGUID in ipairs(mobGUIDs) do
+--                         if not lastHitTimes[mobGUID] then
+--                             lastHitTimes[mobGUID] = {}
+--                         end
+--                         lastHitTimes[mobGUID][sourceGUID] = timestamp
+--                     end
+--                 end
+--             end
+--         end
+--     elseif event == "PLAYER_TARGET_CHANGED" then
+--         local targetGUID = UnitGUID("target")
+--         if targetGUID then
+--             mobGUIDs[#mobGUIDs + 1] = targetGUID
+--         end
+--     end
+-- end
+
+-- local frame = CreateFrame("Frame")
+-- frame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+-- frame:RegisterEvent("PLAYER_TARGET_CHANGED")
+-- frame:SetScript("OnEvent", EventHandler)
+
+-- local timer = 0
+-- local interval = 0.5 -- interval in seconds
+
+-- -- Function to get last hit time for a specific mob
+-- local function GetLastHitTime(mobGUID)
+--     local lastHitTime = nil
+--     if lastHitTimes[mobGUID] then
+--         for _, time in pairs(lastHitTimes[mobGUID]) do
+--             if GetTime() - time <= 30 then -- Adjust the time window as needed
+--                 if not lastHitTime or time > lastHitTime then
+--                     lastHitTime = time
+--                 end
+--             end
+--         end
+--     end
+--     return lastHitTime
+-- end
+
+-- -- Function to print last hit times
+-- local function PrintLastHitTimes()
+--     timer = timer + interval
+--     if timer >= 0.5 then
+--         for _, mobGUID in ipairs(mobGUIDs) do
+--             local lastHitTime = GetLastHitTime(mobGUID)
+--             if lastHitTime then
+--                 print("Mob with GUID " .. mobGUID .. " last hit time:", lastHitTime)
+--             else
+--                 print("Mob with GUID " .. mobGUID .. " is no longer valid.")
+--                 table.remove(mobGUIDs, _)
+--             end
+--         end
+--         timer = 0
+--     end
+-- end
+
+-- -- Timer to print every half second
+-- local printTimer = C_Timer.NewTicker(interval, PrintLastHitTimes)
+
+

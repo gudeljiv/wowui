@@ -223,18 +223,21 @@ SpellActivationOverlayDB = {
 		},
 		["PRIEST"] = {
 			["alert"] = {
-				[63734] = {
-					[3] = true,
+				[60514] = {
 					[0] = false,
-				},
-				[33151] = {
-					[0] = true,
 				},
 				[413247] = {
 					[3] = true,
 					[0] = false,
 				},
-				[60514] = {
+				[431666] = {
+					[0] = true,
+				},
+				[33151] = {
+					[0] = true,
+				},
+				[63734] = {
+					[3] = true,
 					[0] = false,
 				},
 			},
@@ -252,6 +255,10 @@ SpellActivationOverlayDB = {
 					[2050] = true,
 					[2054] = true,
 					[2060] = true,
+				},
+				[431666] = {
+					[585] = true,
+					[2061] = true,
 				},
 			},
 		},
@@ -313,6 +320,9 @@ SpellActivationOverlayDB = {
 					[879] = true,
 					[19750] = true,
 				},
+				[879] = {
+					[879] = false,
+				},
 				[54149] = {
 					[19750] = true,
 					[635] = true,
@@ -329,6 +339,9 @@ SpellActivationOverlayDB = {
 				},
 				[48518] = {
 					[0] = false,
+				},
+				[408255] = {
+					[0] = true,
 				},
 				[60512] = {
 					[0] = false,
@@ -347,6 +360,9 @@ SpellActivationOverlayDB = {
 				},
 				[64823] = {
 					[0] = false,
+				},
+				[408250] = {
+					[0] = true,
 				},
 			},
 			["glow"] = {

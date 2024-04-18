@@ -518,14 +518,14 @@ AtlasLootClassicDB = {
 			[32993] = "honor:3800",
 			[28443] = "honor:3800",
 			[28381] = "honor:4750",
-			[41290] = "EmblemOfHeroism:30",
+			[35152] = "honor:7600",
 			[34576] = "honor:3990",
 			[42025] = "honor:16590",
 			[28445] = "honor:4750",
 			[28130] = "honor:4750",
 			[35024] = "honor:9500",
 			[35088] = "honor:9500",
-			[34129] = "honor:16650",
+			[40267] = "EmblemOfValor:25",
 			[31594] = "honor:3800",
 			[40682] = "EmblemOfHeroism:40",
 			[40714] = "EmblemOfHeroism:15",
@@ -545,8 +545,8 @@ AtlasLootClassicDB = {
 			[44231] = "EmblemOfHeroism:200",
 			[34033] = "honor:4275",
 			[28813] = "honor:3800",
-			[35152] = "honor:7600",
-			[40267] = "EmblemOfValor:25",
+			[41290] = "EmblemOfHeroism:30",
+			[34129] = "honor:16650",
 			[28861] = "honor:3800",
 			[40723] = "EmblemOfValor:25",
 			[31962] = "honor:6650",
@@ -1262,10 +1262,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopesnare - Lone Wolf"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["classFilter"] = true,
 				["selected"] = {
@@ -1282,6 +1278,10 @@ AtlasLootClassicDB = {
 					155.9683074951172, -- [4]
 					71.1745376586914, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Battlearm - Golemagg"] = {
@@ -1432,6 +1432,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopemend - Lone Wolf"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -1440,10 +1444,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Konac - Dreadnaught"] = {

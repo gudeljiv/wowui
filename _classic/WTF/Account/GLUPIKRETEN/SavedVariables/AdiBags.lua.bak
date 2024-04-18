@@ -506,13 +506,13 @@ AdiBagsDB = {
 						[24558] = true,
 						[207732] = true,
 						[9259] = true,
+						[213566] = true,
 						[213563] = true,
-						[213567] = true,
 						[213568] = true,
 						[24504] = true,
 						[17008] = true,
 						[207733] = true,
-						[209874] = true,
+						[213567] = true,
 						[28478] = true,
 						[211293] = true,
 						[213562] = true,
@@ -524,8 +524,8 @@ AdiBagsDB = {
 						[209841] = true,
 						[34223] = true,
 						[34225] = true,
-						[213566] = true,
 						[209819] = true,
+						[209874] = true,
 					},
 				},
 			},
@@ -635,29 +635,6 @@ AdiBagsDB = {
 				["TooltipInfo"] = false,
 			},
 			["dimJunk"] = false,
-			["positions"] = {
-				["anchor"] = {
-					["xOffset"] = -177.833374023438,
-					["yOffset"] = 386.666717529297,
-				},
-				["Bank"] = {
-					["xOffset"] = 845.9966430664062,
-					["yOffset"] = -319.345947265625,
-				},
-				["Backpack"] = {
-					["xOffset"] = -403.3033447265625,
-					["point"] = "TOPRIGHT",
-					["yOffset"] = -399.2545166015625,
-				},
-			},
-			["filters"] = {
-				["NewItem"] = false,
-			},
-			["qualityOpacity"] = 0.05,
-			["deprecationPhase"] = 2,
-			["questIndicator"] = false,
-			["sortingOrder"] = "byQualityAndLevel",
-			["rightClickConfig"] = false,
 			["theme"] = {
 				["reagentBank"] = {
 					["sectionFont"] = {
@@ -776,6 +753,29 @@ AdiBagsDB = {
 					},
 				},
 			},
+			["filterPriorities"] = {
+				["Quest"] = 100,
+			},
+			["qualityOpacity"] = 0.05,
+			["deprecationPhase"] = 2,
+			["questIndicator"] = false,
+			["sortingOrder"] = "byQualityAndLevel",
+			["rightClickConfig"] = false,
+			["positions"] = {
+				["anchor"] = {
+					["xOffset"] = -177.833374023438,
+					["yOffset"] = 386.666717529297,
+				},
+				["Bank"] = {
+					["xOffset"] = 845.9966430664062,
+					["yOffset"] = -319.345947265625,
+				},
+				["Backpack"] = {
+					["xOffset"] = -403.3033447265625,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -399.2545166015625,
+				},
+			},
 			["experiments"] = {
 				["Bag Lag Fix"] = {
 					["Enabled"] = false,
@@ -784,8 +784,8 @@ AdiBagsDB = {
 					["Name"] = "Bag Lag Fix",
 				},
 			},
-			["filterPriorities"] = {
-				["Quest"] = 100,
+			["filters"] = {
+				["NewItem"] = false,
 			},
 		},
 	},

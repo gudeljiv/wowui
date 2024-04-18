@@ -617,7 +617,7 @@ AtlasLootClassicDB = {
 			[34033] = "honor:4275",
 			[35088] = "honor:9500",
 			[34577] = "honor:3990",
-			[40267] = "EmblemOfValor:25",
+			[34129] = "honor:16650",
 			[28861] = "honor:3800",
 			[45838] = "EmblemOfConquest:28",
 			[31962] = "honor:6650",
@@ -888,14 +888,14 @@ AtlasLootClassicDB = {
 			[41770] = "EmblemOfHeroism:30",
 			[40691] = "EmblemOfHeroism:40",
 			[40723] = "EmblemOfValor:25",
-			[35152] = "honor:7600",
-			[34129] = "honor:16650",
+			[41290] = "EmblemOfHeroism:30",
+			[40267] = "EmblemOfValor:25",
 			[40819] = "EmblemOfValor:45",
 			[33690] = "honor:6840",
 			[28130] = "honor:4750",
 			[33754] = "honor:8550",
 			[34576] = "honor:3990",
-			[41290] = "EmblemOfHeroism:30",
+			[35152] = "honor:7600",
 			[28443] = "honor:3800",
 			[42066] = "honor:33180",
 			[32814] = "honor:3990",
@@ -1262,15 +1262,12 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Dopesnare - Lone Wolf"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["classFilter"] = true,
-				["selected"] = {
-					nil, -- [1]
-					"Maraudon", -- [2]
-					9, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
 				["point"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -1278,10 +1275,13 @@ AtlasLootClassicDB = {
 					155.9683074951172, -- [4]
 					71.1745376586914, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+				["selected"] = {
+					nil, -- [1]
+					"Maraudon", -- [2]
+					9, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Battlearm - Golemagg"] = {

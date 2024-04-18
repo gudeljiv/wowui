@@ -150,7 +150,7 @@ GroupBulletinBoardDB = {
 	},
 	["ColorOnLevel"] = true,
 	["ShowClassIcon"] = false,
-	["Width"] = 620,
+	["Width"] = 616,
 	["widthNames"] = 93,
 	["InviteRole"] = "DPS",
 	["CustomLocalesDungeon"] = {
@@ -295,8 +295,8 @@ GroupBulletinBoardDB = {
 		["g"] = 1,
 		["r"] = 1,
 	},
-	["Y"] = 1130.015869140625,
-	["X"] = 1513.762084960938,
+	["Y"] = 811.5159912109375,
+	["X"] = 1690.90478515625,
 	["HistoryColor"] = {
 		["a"] = 1,
 		["r"] = 0.6,
@@ -304,7 +304,7 @@ GroupBulletinBoardDB = {
 		["b"] = 0.6,
 	},
 	["AnnounceChannel"] = "LookingForGroup",
-	["Height"] = 670,
+	["Height"] = 529,
 	["Custom"] = {
 		["OS"] = "",
 		["ARENA"] = "",

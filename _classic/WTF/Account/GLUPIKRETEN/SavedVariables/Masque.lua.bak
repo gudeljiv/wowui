@@ -298,6 +298,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Plater Nameplates_Boss Mod Icons"] = {
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_NZSelObfxyW"] = {
@@ -458,6 +459,10 @@ MasqueDB = {
 					["Upgraded"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Brownstone",
+				},
+				["Plater Nameplates_Cast Bar Icons"] = {
+					["SkinID"] = "Brownstone",
+					["Inherit"] = false,
 				},
 				["WeakAuras_GGbwha21E8F"] = {
 					["Upgraded"] = true,
@@ -3101,6 +3106,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Plater Nameplates_Aura Frame 1"] = {
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_NSnLrq4j0v0"] = {
@@ -5677,6 +5683,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Plater Nameplates_Buff Special"] = {
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_EXtGCsisbff"] = {
@@ -6716,6 +6723,7 @@ MasqueDB = {
 					["SkinID"] = "Brownstone",
 				},
 				["Plater Nameplates_Aura Frame 2"] = {
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_yvF4er45fsS"] = {
@@ -7522,6 +7530,7 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Plater Nameplates"] = {
+					["SkinID"] = "Brownstone",
 					["Inherit"] = false,
 				},
 				["WeakAuras_QdrVWzVpDS5"] = {

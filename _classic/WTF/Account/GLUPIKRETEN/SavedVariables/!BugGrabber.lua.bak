@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 12345,
+	["session"] = 12357,
 	["errors"] = {
 		{
 			["message"] = "[string \"QuestInfoRewardsFrameQuestInfoItem1Icon:Set...\"]:1: attempt to index global 'QuestInfoRewardsFrameQuestInfoItem1Icon' (a nil value)",
@@ -3679,5 +3679,21 @@ BugGrabberDB = {
 			["session"] = 12343,
 			["counter"] = 7,
 		}, -- [473]
+		{
+			["message"] = "Interface/AddOns/xVermin/xVermin.lua:477: attempt to call global 'GetLastHitTime' (a nil value)",
+			["time"] = "2024/04/18 11:06:36",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"Pet-0-5252-1-878-3475-01009673B7\"\n}\n(for control) = 1\n_ = 1\nmobGUID = \"Pet-0-5252-1-878-3475-01009673B7\"\n(*temporary) = nil\n(*temporary) = \"Pet-0-5252-1-878-3475-01009673B7\"\n(*temporary) = \"attempt to call global 'GetLastHitTime' (a nil value)\"\ntimer = 0.500000\ninterval = 0.500000\nmobGUIDs = <table> {\n 1 = \"Pet-0-5252-1-878-3475-01009673B7\"\n}\n",
+			["stack"] = "[string \"@Interface/AddOns/xVermin/xVermin.lua\"]:477: in function <Interface/AddOns/xVermin/xVermin.lua:473>",
+			["session"] = 12352,
+			["counter"] = 54,
+		}, -- [474]
+		{
+			["message"] = "Lua error in aura 'Threat Differential on Nameplates': Trigger 1\nWeakAuras Version: 5.12.8\nAura Version: 1.0.14\n[string \"return function(allstates, event, unitId)\"]:46: bad argument #1 to 'abs' (number expected, got nil)",
+			["time"] = "2024/04/18 13:19:47",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"number expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `abs'\n[string \"return function(allstates, event, unitId)\"]:46: in function <[string \"return function(allstates, event, unitId)\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:643: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:628>\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:880: in function `ScanEventsInternal'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:826: in function `ScanEvents'\n[string \"@Interface/AddOns/WeakAuras/GenericTrigger.lua\"]:1110: in function <Interface/AddOns/WeakAuras/GenericTrigger.lua:1095>",
+			["session"] = 12355,
+			["counter"] = 1,
+		}, -- [475]
 	},
 }
