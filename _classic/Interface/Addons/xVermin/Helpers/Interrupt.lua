@@ -154,7 +154,7 @@ UIParent:HookScript(
 		elseif UnitExists('target') then
 			HandleUnit('target')
 		else
-			return
+			HandleRotationFrame(false)
 		end
 	end
 )

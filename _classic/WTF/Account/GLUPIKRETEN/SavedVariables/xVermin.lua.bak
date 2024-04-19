@@ -173,6 +173,14 @@ xVerminSavedData = {
 		["Ambershard Destroyer"] = {
 			"Lightning Shield", -- [1]
 		},
+		["Dark Rider"] = {
+			"Charge Stun", -- [1]
+			"Concussive Shot", -- [2]
+			"Frostbite", -- [3]
+			"Intercept Stun", -- [4]
+			"Intimidation", -- [5]
+			"Starfire Stun", -- [6]
+		},
 		["Fire Elemental"] = {
 			"Flametongue Attack", -- [1]
 			"Magma Totem", -- [2]
@@ -181,13 +189,8 @@ xVerminSavedData = {
 			"Deep Wound", -- [5]
 			"Explosive Trap Effect", -- [6]
 		},
-		["Dark Rider"] = {
-			"Charge Stun", -- [1]
-			"Concussive Shot", -- [2]
-			"Frostbite", -- [3]
-			"Intercept Stun", -- [4]
-			"Intimidation", -- [5]
-			"Starfire Stun", -- [6]
+		["Entropic Beast"] = {
+			"Lava Lash", -- [1]
 		},
 		["Larsera"] = {
 			"Serpent Sting", -- [1]
@@ -201,18 +204,19 @@ xVerminSavedData = {
 			"Electrocutioner's Shock", -- [9]
 			"Chimera Shot", -- [10]
 		},
-		["Entropic Beast"] = {
-			"Lava Lash", -- [1]
+		["Constrictor Vine"] = {
+			"Earthbind", -- [1]
 		},
 		["Sea Spray"] = {
 			"Frost Shock", -- [1]
 		},
-		["Constrictor Vine"] = {
-			"Earthbind", -- [1]
-		},
 		["Arclector"] = {
 			"Firebolt", -- [1]
 			"Shadowburn", -- [2]
+		},
+		["Bristleback Geomancer"] = {
+			"Firebolt", -- [1]
+			"Incinerate", -- [2]
 		},
 		["Gahz'rilla"] = {
 			"Impact", -- [1]
@@ -231,20 +235,9 @@ xVerminSavedData = {
 		["Galgann Firehammer"] = {
 			"War Stomp", -- [1]
 		},
-		["Bristleback Geomancer"] = {
-			"Firebolt", -- [1]
-			"Incinerate", -- [2]
-		},
 		["Ambershard Crusher"] = {
 			"Chain Lightning", -- [1]
 			"Serpent Sting", -- [2]
-		},
-		["Sandfury Shadowcaster"] = {
-			"Earthbind", -- [1]
-		},
-		["Mordresh Fire Eye"] = {
-			"Rend", -- [1]
-			"Deep Wound", -- [2]
 		},
 		["Evolving Ectoplasm"] = {
 			"Attack", -- [1]
@@ -261,6 +254,16 @@ xVerminSavedData = {
 			"Living Bomb", -- [12]
 			"Molten Blast", -- [13]
 		},
+		["Jade Sludge"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Mordresh Fire Eye"] = {
+			"Rend", -- [1]
+			"Deep Wound", -- [2]
+		},
+		["Sandfury Shadowcaster"] = {
+			"Earthbind", -- [1]
+		},
 		["Mutanus the Devourer"] = {
 			"Shadow Word: Pain", -- [1]
 		},
@@ -268,8 +271,9 @@ xVerminSavedData = {
 			"Stormstrike", -- [1]
 			"Mutilate", -- [2]
 		},
-		["Ironspine"] = {
-			"Rend", -- [1]
+		["Entropic Horror"] = {
+			"Lava Lash", -- [1]
+			"Flame Shock", -- [2]
 		},
 		["Ruuzlu"] = {
 			"Charge Stun", -- [1]
@@ -316,18 +320,9 @@ xVerminSavedData = {
 			"Lightning Bolt", -- [4]
 			"Serpent Sting", -- [5]
 		},
-		["Overlord Ramtusk"] = {
-			"Concussive Shot", -- [1]
-			"Entrapment", -- [2]
-		},
-		["Healing Ward"] = {
-			"Faerie Fire (Feral)", -- [1]
-		},
-		["Nelyz"] = {
-			"Concussive Shot", -- [1]
-		},
-		["Thundering Boulderkin"] = {
-			"Serpent Sting", -- [1]
+		["Bound Elemental"] = {
+			"Lightning Shield", -- [1]
+			"Rend", -- [2]
 		},
 		["Scarlet Commander Mograine"] = {
 			"Charge Stun", -- [1]
@@ -356,6 +351,15 @@ xVerminSavedData = {
 			"Wrath", -- [24]
 			"Lightning Shield", -- [25]
 		},
+		["Nelyz"] = {
+			"Concussive Shot", -- [1]
+		},
+		["Thundering Boulderkin"] = {
+			"Serpent Sting", -- [1]
+		},
+		["Healing Ward"] = {
+			"Faerie Fire (Feral)", -- [1]
+		},
 		["Enraged Voidwalker"] = {
 			"Poison Cloud", -- [1]
 		},
@@ -366,12 +370,12 @@ xVerminSavedData = {
 			"Blackout", -- [1]
 			"Impact", -- [2]
 		},
+		["Overlord Ramtusk"] = {
+			"Concussive Shot", -- [1]
+			"Entrapment", -- [2]
+		},
 		["Sea Elemental"] = {
 			"Frost Shock", -- [1]
-		},
-		["Bound Elemental"] = {
-			"Lightning Shield", -- [1]
-			"Rend", -- [2]
 		},
 		["Klaxxi"] = {
 			"Big Bronze Bomb", -- [1]
@@ -388,12 +392,11 @@ xVerminSavedData = {
 		["Glutton"] = {
 			"Starfire Stun", -- [1]
 		},
+		["Ironspine"] = {
+			"Rend", -- [1]
+		},
 		["Unfettered Spirit"] = {
 			"Deep Wound", -- [1]
-		},
-		["Entropic Horror"] = {
-			"Lava Lash", -- [1]
-			"Flame Shock", -- [2]
 		},
 		["Princess Theradras"] = {
 			"Lightning Shield", -- [1]

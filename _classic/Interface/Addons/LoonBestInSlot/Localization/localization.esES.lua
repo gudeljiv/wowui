@@ -459,6 +459,7 @@ if GetLocale() == "esES" then
 --  LBIS.L["Shadow Hunter Vosh’gajin"] = "";
   LBIS.L["Shadoweaver"] = "Las tejedoras de sombra";
   LBIS.L["Shadowfang Keep"] = "Castillo de Colmillo Oscuro";
+  LBIS.L["Shadowpriest Sezz'ziz"] = "Sacerdote oscuro Sezz'ziz";
   LBIS.L["Shadowshard Fragments"] = "Trozos Oscuros";
 --  LBIS.L["Shadowtooth Emissary"] = "";
 --  LBIS.L["Shifting Scale Talisman"] = "";
@@ -558,7 +559,7 @@ if GetLocale() == "esES" then
 --  LBIS.L["Timbermaw Hold - Friendly"] = "";
 --  LBIS.L["Timbermaw Hold - Honored"] = "";
   LBIS.L["Tinkerer Gizlock"] = "Manitas Gizlock";
-  LBIS.L["Dungeon Token"] = "Ficha";
+  LBIS.L["Token"] = "Ficha";
   LBIS.L["Tooga's Quest"] = "La misión de Tooga";
 --  LBIS.L["Trade Vendors"] = "";
   LBIS.L["Transmute"] = "Transmutar";
@@ -613,7 +614,6 @@ if GetLocale() == "esES" then
   LBIS.L["Wetlands"] = "Los Humedales";
   LBIS.L["What Comes Around..."] = "Lo que sucede alrededor...";
   LBIS.L["Whirlwind Weapon"] = "Arma torbellino";
---  LBIS.L["Wild Offering"] = "";
   LBIS.L["Willix the Importer"] = "Willix el Importador";
 --  LBIS.L["Winter Veil (Seasonal)"] = "";
   LBIS.L["Winterfall Activity"] = "Actividad de los Nevada";

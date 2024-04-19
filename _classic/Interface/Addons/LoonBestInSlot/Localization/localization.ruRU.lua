@@ -155,7 +155,7 @@ if GetLocale() == "ruRU" then
 --  LBIS.L["Dun Garok Priest"] = "";
 --  LBIS.L["Dun Garok Rifleman"] = "";
   LBIS.L["Dun Morogh"] = "Дун Морог";
---  LBIS.L["Dungeon Token"] = "";
+  LBIS.L["Dungeon Token"] = "Фрагмент";
   LBIS.L["Duskwood"] = "Сумеречный лес";
 --  LBIS.L["Duskwood, Elwynn Forest"] = "";
   LBIS.L["Dustwallow Marsh"] = "Пылевые топи";
@@ -459,6 +459,7 @@ if GetLocale() == "ruRU" then
 --  LBIS.L["Shadow Hunter Vosh’gajin"] = "";
   LBIS.L["Shadoweaver"] = "Мастер по тенеткани";
   LBIS.L["Shadowfang Keep"] = "Крепость Темного Клыка";
+  LBIS.L["Shadowpriest Sezz'ziz"] = "Темный жрец Шезз'зиз";
   LBIS.L["Shadowshard Fragments"] = "Фрагменты осколка сумрака";
 --  LBIS.L["Shadowtooth Emissary"] = "";
 --  LBIS.L["Shifting Scale Talisman"] = "";
@@ -558,7 +559,7 @@ if GetLocale() == "ruRU" then
 --  LBIS.L["Timbermaw Hold - Friendly"] = "";
 --  LBIS.L["Timbermaw Hold - Honored"] = "";
   LBIS.L["Tinkerer Gizlock"] = "Ремонтник Гизлок";
-  LBIS.L["Dungeon Token"] = "Фрагмент";
+  LBIS.L["Token"] = "Фрагмент";
   LBIS.L["Tooga's Quest"] = "Задание Туги";
 --  LBIS.L["Trade Vendors"] = "";
 --  LBIS.L["Transmute"] = "";
@@ -613,7 +614,6 @@ if GetLocale() == "ruRU" then
   LBIS.L["Wetlands"] = "Болотина";
   LBIS.L["What Comes Around..."] = "Что происходит?";
   LBIS.L["Whirlwind Weapon"] = "Оружие вихря";
---  LBIS.L["Wild Offering"] = "";
   LBIS.L["Willix the Importer"] = "Импортер Вилликс";
 --  LBIS.L["Winter Veil (Seasonal)"] = "";
   LBIS.L["Winterfall Activity"] = "Боевые действия в деревне Зимней Спячки";

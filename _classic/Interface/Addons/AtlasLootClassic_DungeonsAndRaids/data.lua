@@ -2098,6 +2098,7 @@ data["Zul'Farrak"] = {
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223531 }, -- Big Bad Pauldrons
 				{ 18, 223526 }, -- Sul'thraze the Lasher
+				{ 19, 223963 }, -- Embrace of the Lycan
 			},
 		},
 		{ -- ZFZerillis

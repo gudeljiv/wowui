@@ -1,10 +1,12 @@
 local _, xVermin = ...
 
-xVermin.Threat = function()
-	local isTanking, status, scaledPercentage, rawPercentage, threatValue = UnitDetailedThreatSituation("player", "target")
+xVermin.Threat = function(unit)
+	unit = unit and unit or 'target'
 
-	if InCombatLockdown() and UnitExists("target") then 
-		return xVermin.Round(scaledPercentage,0)
+	local isTanking, status, scaledPercentage, rawPercentage, threatValue = UnitDetailedThreatSituation("player", unit)
+
+	if InCombatLockdown() and UnitExists(unit) then 
+		return xVermin.Round(scaledPercentage, 0)
 	else
 		return 0
 	end

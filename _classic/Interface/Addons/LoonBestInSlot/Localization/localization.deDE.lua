@@ -459,6 +459,7 @@ if GetLocale() == "deDE" then
 --  LBIS.L["Shadow Hunter Vosh’gajin"] = "";
   LBIS.L["Shadoweaver"] = "Schattenweber";
   LBIS.L["Shadowfang Keep"] = "Burg Schattenfang";
+  LBIS.L["Shadowpriest Sezz'ziz"] = "Schattenpriester Sezz'ziz";
   LBIS.L["Shadowshard Fragments"] = "Schattensplitter";
 --  LBIS.L["Shadowtooth Emissary"] = "";
 --  LBIS.L["Shifting Scale Talisman"] = "";
@@ -558,7 +559,7 @@ if GetLocale() == "deDE" then
 --  LBIS.L["Timbermaw Hold - Friendly"] = "";
 --  LBIS.L["Timbermaw Hold - Honored"] = "";
   LBIS.L["Tinkerer Gizlock"] = "Tüftler Gizlock";
-  LBIS.L["Dungeon Token"] = "Token";
+  LBIS.L["Token"] = "Token";
   LBIS.L["Tooga's Quest"] = "Toogas Bitte";
 --  LBIS.L["Trade Vendors"] = "";
   LBIS.L["Transmute"] = "Transmutieren";
@@ -613,7 +614,6 @@ if GetLocale() == "deDE" then
   LBIS.L["Wetlands"] = "Sumpfland";
   LBIS.L["What Comes Around..."] = "Verbrechen lohnt sich nicht";
   LBIS.L["Whirlwind Weapon"] = "Wirbelwaffe";
---  LBIS.L["Wild Offering"] = "";
   LBIS.L["Willix the Importer"] = "Willix der Importeur";
 --  LBIS.L["Winter Veil (Seasonal)"] = "";
   LBIS.L["Winterfall Activity"] = "Aktivität der Winterfelle";

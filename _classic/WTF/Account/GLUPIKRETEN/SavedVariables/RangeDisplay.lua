@@ -32,7 +32,7 @@ RangeDisplayDB3 = {
 		["Vermina - Golemagg"] = "Default",
 		["Jutarnjedrvo - Lone Wolf"] = "Default",
 		["Dopeclaw - Lone Wolf"] = "Default",
-		["Dopetrap - Lone Wolf"] = "Default",
+		["Doperage - Lone Wolf"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Dopesnare - Lone Wolf"] = "Default",
 		["Vermin - Golemagg"] = "Default",
@@ -58,7 +58,7 @@ RangeDisplayDB3 = {
 		["Dopestab - Lone Wolf"] = "Default",
 		["Dopeah - Stitches"] = "Default",
 		["Dopeclaw - Stitches"] = "Default",
-		["Doperage - Lone Wolf"] = "Default",
+		["Dopetrap - Lone Wolf"] = "Default",
 		["Dopedot - Lone Wolf"] = "Default",
 	},
 	["profiles"] = {

@@ -155,7 +155,7 @@ if GetLocale() == "zhTW" then
 --  LBIS.L["Dun Garok Priest"] = "";
 --  LBIS.L["Dun Garok Rifleman"] = "";
   LBIS.L["Dun Morogh"] = "丹莫洛";
---  LBIS.L["Dungeon Token"] = "";
+  LBIS.L["Dungeon Token"] = "代幣";
   LBIS.L["Duskwood"] = "暮色森林";
 --  LBIS.L["Duskwood, Elwynn Forest"] = "";
   LBIS.L["Dustwallow Marsh"] = "塵泥沼澤";
@@ -459,6 +459,7 @@ if GetLocale() == "zhTW" then
 --  LBIS.L["Shadow Hunter Vosh’gajin"] = "";
   LBIS.L["Shadoweaver"] = "暗影蛛絲";
   LBIS.L["Shadowfang Keep"] = "影牙城堡";
+  LBIS.L["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯";
   LBIS.L["Shadowshard Fragments"] = "裂影碎片";
 --  LBIS.L["Shadowtooth Emissary"] = "";
 --  LBIS.L["Shifting Scale Talisman"] = "";
@@ -558,7 +559,7 @@ if GetLocale() == "zhTW" then
 --  LBIS.L["Timbermaw Hold - Friendly"] = "";
 --  LBIS.L["Timbermaw Hold - Honored"] = "";
   LBIS.L["Tinkerer Gizlock"] = "技工吉茲洛克";
-  LBIS.L["Dungeon Token"] = "代幣";
+  LBIS.L["Token"] = "代幣";
   LBIS.L["Tooga's Quest"] = "圖加的任務";
 --  LBIS.L["Trade Vendors"] = "";
 --  LBIS.L["Transmute"] = "";
@@ -613,7 +614,6 @@ if GetLocale() == "zhTW" then
   LBIS.L["Wetlands"] = "濕地";
   LBIS.L["What Comes Around..."] = "伸張正義";
   LBIS.L["Whirlwind Weapon"] = "旋風武器";
---  LBIS.L["Wild Offering"] = "";
   LBIS.L["Willix the Importer"] = "進口商威利克斯";
 --  LBIS.L["Winter Veil (Seasonal)"] = "";
   LBIS.L["Winterfall Activity"] = "冬泉熊怪的活動";

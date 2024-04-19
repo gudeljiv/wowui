@@ -186,7 +186,7 @@ if GetLocale() == "koKR" then
   LBIS.L["Fallen Champion"] = "타락한 용사";
   LBIS.L["Fallen Champion (Rare)"] = "타락한 용사 (희귀)";
   LBIS.L["Fallen Sky Lake"] = "유성 호수";
-  LBIS.L["Feet"] = "발";
+  LBIS.L["Feet"] = "신발";
 --  LBIS.L["Fel Interloper"] = "";
 --  LBIS.L["Fel Steeds"] = "";
   LBIS.L["Felwood"] = "악령숲";
@@ -234,7 +234,7 @@ if GetLocale() == "koKR" then
   LBIS.L["Gyrodrillmatic Excavationators"] = "회전천공식 발굴기";
   LBIS.L["Halycon"] = "할리콘";
 --  LBIS.L["Handor"] = "";
-  LBIS.L["Hands"] = "손";
+  LBIS.L["Hands"] = "장갑";
   LBIS.L["Hazzas"] = "하자스";
 --  LBIS.L["Hazzas and Morphaz"] = "";
   LBIS.L["Head"] = "머리";
@@ -350,7 +350,7 @@ if GetLocale() == "koKR" then
   LBIS.L["Mythology of the Titans"] = "티탄 신화";
 --  LBIS.L["Mythrin'dir"] = "";
 --  LBIS.L["N'ora Anyheart"] = "";
-  LBIS.L["Neck"] = "목";
+  LBIS.L["Neck"] = "목걸이";
   LBIS.L["Necklace Recovery, Take 3"] = "목걸이 회수 - 3차 시도";
 --  LBIS.L["Nekrum Gutchewer and Shadowpriest Sezz'ziz"] = "";
 --  LBIS.L["Nether Sorceress"] = "";
@@ -459,6 +459,7 @@ if GetLocale() == "koKR" then
 --  LBIS.L["Shadow Hunter Vosh’gajin"] = "";
   LBIS.L["Shadoweaver"] = "그림자매듭";
   LBIS.L["Shadowfang Keep"] = "그림자송곳니 성채";
+  LBIS.L["Shadowpriest Sezz'ziz"] = "어둠의사제 세즈지즈";
   LBIS.L["Shadowshard Fragments"] = "음영석 조각";
 --  LBIS.L["Shadowtooth Emissary"] = "";
 --  LBIS.L["Shifting Scale Talisman"] = "";
@@ -558,7 +559,7 @@ if GetLocale() == "koKR" then
 --  LBIS.L["Timbermaw Hold - Friendly"] = "";
 --  LBIS.L["Timbermaw Hold - Honored"] = "";
   LBIS.L["Tinkerer Gizlock"] = "땜장이 기즐록";
-  LBIS.L["Dungeon Token"] = "토큰";
+  LBIS.L["Token"] = "토큰";
   LBIS.L["Tooga's Quest"] = "길 잃은 투가";
 --  LBIS.L["Trade Vendors"] = "";
   LBIS.L["Transmute"] = "변환식";
@@ -613,7 +614,6 @@ if GetLocale() == "koKR" then
   LBIS.L["Wetlands"] = "저습지";
   LBIS.L["What Comes Around..."] = "사필귀정";
   LBIS.L["Whirlwind Weapon"] = "소용돌이 무기";
---  LBIS.L["Wild Offering"] = "";
   LBIS.L["Willix the Importer"] = "수입업자 윌릭스";
 --  LBIS.L["Winter Veil (Seasonal)"] = "";
   LBIS.L["Winterfall Activity"] = "눈사태일족의 동태";
