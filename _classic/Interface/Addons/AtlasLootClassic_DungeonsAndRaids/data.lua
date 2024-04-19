@@ -2599,7 +2599,8 @@ data["BlackrockDepths"] = {
 				{ 2,  11624 }, -- Kentic Amice
 				{ 3,  22240 }, -- Greaves of Withering Despair
 				{ 4,  11625 }, -- Enthralled Sphere
-				{ 6,  11140 }, -- Prison Cell Key
+				{ 5,  11623 }, -- Spritecaster Cape
+				{ 7,  11140 }, -- Prison Cell Key
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223539 }, -- Enthralled Sphere
 			},
@@ -2616,6 +2617,7 @@ data["BlackrockDepths"] = {
 				{ 2,  11627 }, -- Fleetfoot Greaves
 				{ 3,  11628 }, -- Houndmaster's Bow
 				{ 4,  11629 }, -- Houndmaster's Rifle
+				{ 5,  11626 }, -- Blackveil Cape
 				{ 16, "INV_Box_01", nil, AL["Updated in SoD"], nil },
 				{ 17, 223540 }, -- Houndmaster's Bow
 				{ 18, 223982 }, -- Houndmaster's Rifle

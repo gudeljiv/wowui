@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 3.0.189 (16th April 2024)
+	-- 	Leatrix Maps 3.0.190 (19th April 2024)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList, LeaLockList = {}, {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "3.0.189"
+	LeaMapsLC["AddonVer"] = "3.0.190"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -225,6 +225,7 @@
 			L["Kalimdor"] = POSTMASTER_PIPE_KALIMDOR
 			L["Outland"] = POSTMASTER_PIPE_OUTLAND
 			L["Northrend"] = POSTMASTER_PIPE_NORTHREND
+			L["The Maelstrom"] = DUNGEON_FLOOR_DRAGONSOUL6
 			L["Azeroth"] = AZEROTH
 
 			-- Create outer frame for dropdown menus
@@ -348,6 +349,36 @@
 				WorldMapFrame:SetMapID(mapNorthrendTable[LeaMapsLC["ZoneMapNorthrendMenu"]].mapid)
 			end)
 
+			-- Create The Maelstrom dropdown menu
+			LeaMapsLC["ZoneMapTheMaelstromMenu"] = 1
+
+			local mapTheMaelstromTable, mapTheMaelstromString = {}, {}
+			local zones = C_Map.GetMapChildrenInfo(948)
+			if (zones) then
+				for i, zoneInfo in ipairs(zones) do
+					if zoneInfo.mapID ~= 276 then
+						tinsert(mapTheMaelstromTable, {zonename = zoneInfo.name, mapid = zoneInfo.mapID})
+						tinsert(mapTheMaelstromString, zoneInfo.name)
+					end
+				end
+			end
+
+			table.sort(mapTheMaelstromString, function(k, v) return k < v end)
+			table.sort(mapTheMaelstromTable, function(k, v) return k.zonename < v.zonename end)
+
+			if LeaMapsLC.NewPatch then
+				tinsert(mapTheMaelstromString, 1, L["The Maelstrom"])
+				tinsert(mapTheMaelstromTable, 1, {zonename = L["The Maelstrom"], mapid = 948})
+			end
+
+			local msdd = LeaMapsLC:CreateDropDown("ZoneMapTheMaelstromMenu", "", WorldMapFrame, 180, "TOP", -80, -35, mapTheMaelstromString, "")
+			msdd:ClearAllPoints()
+			msdd:SetPoint("TOPRIGHT", outerFrame, "TOPRIGHT", 0, 0)
+
+			LeaMapsCB["ListFrameZoneMapTheMaelstromMenu"]:HookScript("OnHide", function()
+				WorldMapFrame:SetMapID(mapTheMaelstromTable[LeaMapsLC["ZoneMapTheMaelstromMenu"]].mapid)
+			end)
+
 			-- Create continent dropdown menu
 			LeaMapsLC["ZoneMapContinentMenu"] = 1
 
@@ -360,10 +391,12 @@
 			tinsert(mapContinentTable, 3, {zonename = L["Outland"], mapid = 1945})
 			tinsert(mapContinentString, 4, L["Northrend"])
 			tinsert(mapContinentTable, 4, {zonename = L["Northrend"], mapid = 113})
-			tinsert(mapContinentString, 5, L["Azeroth"])
-			tinsert(mapContinentTable, 5, {zonename = L["Azeroth"], mapid = 947})
-			tinsert(mapContinentString, 6, L["Cosmic"])
-			tinsert(mapContinentTable, 6, {zonename = L["Cosmic"], mapid = 946})
+			tinsert(mapContinentString, 5, L["The Maelstrom"])
+			tinsert(mapContinentTable, 5, {zonename = L["The Maelstrom"], mapid = 948})
+			tinsert(mapContinentString, 6, L["Azeroth"])
+			tinsert(mapContinentTable, 6, {zonename = L["Azeroth"], mapid = 947})
+			tinsert(mapContinentString, 7, L["Cosmic"])
+			tinsert(mapContinentTable, 7, {zonename = L["Cosmic"], mapid = 946})
 
 			local cond = LeaMapsLC:CreateDropDown("ZoneMapContinentMenu", "", WorldMapFrame, 180, "TOP", -80, -35, mapContinentString, "")
 			cond:ClearAllPoints()
@@ -395,9 +428,14 @@
 					nrdd:Show()
 					WorldMapFrame:SetMapID(mapNorthrendTable[LeaMapsLC["ZoneMapNorthrendMenu"]].mapid)
 				elseif LeaMapsLC["ZoneMapContinentMenu"] == 5 then
+					msdd:Show()
+					if LeaMapsLC.NewPatch then
+						WorldMapFrame:SetMapID(mapTheMaelstromTable[LeaMapsLC["ZoneMapTheMaelstromMenu"]].mapid)
+					end
+				elseif LeaMapsLC["ZoneMapContinentMenu"] == 6 then
 					nodd:Show()
 					WorldMapFrame:SetMapID(947)
-				elseif LeaMapsLC["ZoneMapContinentMenu"] == 6 then
+				elseif LeaMapsLC["ZoneMapContinentMenu"] == 7 then
 					nodd:Show()
 					WorldMapFrame:SetMapID(946)
 				end
@@ -407,13 +445,14 @@
 			local function SetMapControls()
 
 				-- Hide dropdown menus
-				ekdd:Hide(); kmdd:Hide(); otdd:Hide(); nodd:Hide(); nrdd:Hide(); cond:Hide()
+				ekdd:Hide(); kmdd:Hide(); otdd:Hide(); nodd:Hide(); nrdd:Hide(); msdd:Hide(); cond:Hide()
 
 				-- Hide dropdown menu list items
 				LeaMapsCB["ListFrameZoneMapEasternMenu"]:Hide()
 				LeaMapsCB["ListFrameZoneMapKalimdorMenu"]:Hide()
 				LeaMapsCB["ListFrameZoneMapOutlandMenu"]:Hide()
 				LeaMapsCB["ListFrameZoneMapNorthrendMenu"]:Hide()
+				LeaMapsCB["ListFrameZoneMapTheMaelstromMenu"]:Hide()
 				LeaMapsCB["ListFrameZoneMapContinentMenu"]:Hide()
 				LeaMapsCB["ListFrameZoneMapNoneMenu"]:Hide()
 
@@ -457,17 +496,26 @@
 					end
 				end
 
+				-- The Maelstrom
+				for k, v in pairs(mapTheMaelstromTable) do
+					if v.mapid == WorldMapFrame.mapID then
+						LeaMapsLC["ZoneMapTheMaelstromMenu"] = k
+						msdd:Show()
+						LeaMapsLC["ZoneMapContinentMenu"] = 5; cond:Show()
+						return
+					end
+				end
 				-- Azeroth
 				if WorldMapFrame.mapID == 947 then
 					nodd:Show()
-					LeaMapsLC["ZoneMapContinentMenu"] = 5; cond:Show()
+					LeaMapsLC["ZoneMapContinentMenu"] = 6; cond:Show()
 					return
 				end
 
 				-- Cosmic
 				if WorldMapFrame.mapID == 946 then
 					nodd:Show()
-					LeaMapsLC["ZoneMapContinentMenu"] = 6; cond:Show()
+					LeaMapsLC["ZoneMapContinentMenu"] = 7; cond:Show()
 					return
 				end
 
@@ -1489,7 +1537,7 @@
 							minFish = mapTable[positionMapInfo.mapID]["minFish"]
 						end
 						-- Show level range if map zone exists in table
-						if name and playerMinLevel and playerMaxLevel and playerMinLevel > 0 and playerMaxLevel > 0 then
+						if NoLongerUsingThis and name and playerMinLevel and playerMaxLevel and playerMinLevel > 0 and playerMaxLevel > 0 then
 							local playerLevel = UnitLevel("player")
 							local color
 							if playerLevel < playerMinLevel then
@@ -2046,7 +2094,7 @@
 								myPOI["description"] = pinInfo[5]
 
 								-- Show dungeon required level
-								if LeaMapsLC["ShowZoneLevels"] == "On" and pinInfo[9] then
+								if NoLongerUsingThis and LeaMapsLC["ShowZoneLevels"] == "On" and pinInfo[9] then
 									local playerLevel = UnitLevel("player")
 									local color
 									local dungeonReqLevel = pinInfo[9]
@@ -2152,6 +2200,30 @@
 			LeaMapsLC:MakeCB(poiFrame, "ShowTravelOpposing", "Show travel points for opposing faction", 16, -132, false, "If checked, travel points for the opposing faction will be shown.|n|nThis includes flight points, boat harbors, zeppelin towers and tram stations.")
 			LeaMapsLC:MakeCB(poiFrame, "ShowZoneCrossings", "Show zone crossings", 16, -152, false, "If checked, zone crossings will be shown.|n|nThese are clickable arrows that indicate the zone exit pathways.")
 			LeaMapsLC:MakeCB(poiFrame, "ShowSpiritHealers", "Show spirit healers", 16, -172, false, "If checked, spirit healers will be shown.")
+
+			-- Disable Show zone crossings for Cataclysm Classic Beta
+			if LeaMapsLC.NewPatch then
+				-- Function to disable and lock an option and add a note to the tooltip
+				local function Lock(option, reason, optmodule)
+					LeaLockList[option] = LeaMapsLC[option]
+					LeaMapsLC:LockItem(LeaMapsCB[option], true)
+					LeaMapsCB[option].tiptext = LeaMapsCB[option].tiptext .. "|n|n|cff00AAFF" .. reason
+					if optmodule then
+						LeaMapsCB[option].tiptext = LeaMapsCB[option].tiptext .. " " .. optmodule .. " " .. L["module"]
+					end
+					LeaMapsCB[option].tiptext = LeaMapsCB[option].tiptext .. "."
+					-- Remove hover from configuration button if there is one
+					local temp = {LeaMapsCB[option]:GetChildren()}
+					if temp and temp[1] and temp[1].t and temp[1].t:GetTexture() == "Interface\\WorldMap\\Gear_64.png" then
+						temp[1]:SetHighlightTexture(0)
+						temp[1]:SetScript("OnEnter", nil)
+					end
+				end
+
+				LeaMapsLC["ShowZoneCrossings"] = "Off"
+				Lock("ShowZoneCrossings", "Not currently available for Cataclysm Classic") -- Set map opacity
+			end
+
 
 			-- Hide spirit healers option for now
 			LeaMapsLC["ShowSpiritHealers"] = "Off"
@@ -2663,7 +2735,7 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
-			local expTitle = LeaMapsLC:MakeTx(interPanel, "Wrath of the Lich King Classic", 0, 0)
+			local expTitle = LeaMapsLC:MakeTx(interPanel, "Wrath Classic & Cataclysm Classic", 0, 0)
 			expTitle:SetFont(expTitle:GetFont(), 32)
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
@@ -3691,8 +3763,16 @@
 				end
 
 				if LeaMapsLC.NewPatch then
-					LeaMapsLC["ShowPointsOfInterest"] = "Off"
-					Lock("ShowPointsOfInterest", "Not currently available for Cataclysm Classic") -- Set map opacity
+					LeaMapsLC["ShowZoneLevels"] = "Off"
+					Lock("ShowZoneLevels", "Not available for Cataclysm Classic") -- Set map opacity
+					local debug = nil
+					if debug then
+						TaxiFrame:SetScale(1.8)
+						TaxiFrame:HookScript("OnShow", function()
+							TaxiFrame:ClearAllPoints()
+							TaxiFrame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 20, 0)
+						end)
+					end
 				end
 
 				-- Disable items that conflict with ElvUI
